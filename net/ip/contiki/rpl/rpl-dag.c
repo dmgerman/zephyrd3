@@ -26,6 +26,7 @@ DECL|rpl_find_parent|function|rpl_find_parent(rpl_dag_t *dag, uip_ipaddr_t *addr
 DECL|rpl_free_dag|function|rpl_free_dag(struct net_buf *buf, rpl_dag_t *dag)
 DECL|rpl_free_instance|function|rpl_free_instance(struct net_buf *buf, rpl_instance_t *instance)
 DECL|rpl_get_any_dag|function|rpl_get_any_dag(void)
+DECL|rpl_get_default_instance|function|rpl_get_default_instance(void)
 DECL|rpl_get_instance|function|rpl_get_instance(uint8_t instance_id)
 DECL|rpl_get_nbr|function|rpl_get_nbr(rpl_parent_t *parent)
 DECL|rpl_get_parent_ipaddr|function|rpl_get_parent_ipaddr(rpl_parent_t *p)
