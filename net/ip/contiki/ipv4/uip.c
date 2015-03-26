@@ -48,7 +48,7 @@ DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(uint16_t n)
 DECL|uip_all_zeroes_addr|variable|uip_all_zeroes_addr
 DECL|uip_broadcast_addr|variable|uip_broadcast_addr
 DECL|uip_chksum|function|uip_chksum(uint16_t *data, uint16_t len)
-DECL|uip_connect|function|uip_connect(uip_ipaddr_t *ripaddr, uint16_t rport)
+DECL|uip_connect|function|uip_connect(const uip_ipaddr_t *ripaddr, uint16_t rport)
 DECL|uip_conns|variable|uip_conns
 DECL|uip_draddr|variable|uip_draddr
 DECL|uip_draddr|variable|uip_draddr

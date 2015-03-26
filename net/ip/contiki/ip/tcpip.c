@@ -24,7 +24,7 @@ DECL|p|member|struct process *p;
 DECL|start_periodic_tcp_timer|function|start_periodic_tcp_timer(void)
 DECL|s|variable|s
 DECL|tcp_attach|function|tcp_attach(struct uip_conn *conn, void *appstate)
-DECL|tcp_connect|function|tcp_connect(uip_ipaddr_t *ripaddr, uint16_t port, void *appstate)
+DECL|tcp_connect|function|tcp_connect(const uip_ipaddr_t *ripaddr, uint16_t port, void *appstate)
 DECL|tcp_listen|function|tcp_listen(uint16_t port)
 DECL|tcp_unlisten|function|tcp_unlisten(uint16_t port)
 DECL|tcpip_event|variable|tcpip_event

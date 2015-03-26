@@ -44,7 +44,7 @@ DECL|uip_acc32|variable|uip_acc32
 DECL|uip_add32|function|uip_add32(uint8_t *op32, uint16_t op16)
 DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(uint16_t n)
 DECL|uip_chksum|function|uip_chksum(uint16_t *data, uint16_t len)
-DECL|uip_connect|function|uip_connect(uip_ipaddr_t *ripaddr, uint16_t rport)
+DECL|uip_connect|function|uip_connect(const uip_ipaddr_t *ripaddr, uint16_t rport)
 DECL|uip_conns|variable|uip_conns
 DECL|uip_htonl|function|uip_htonl(uint32_t val)
 DECL|uip_htons|function|uip_htons(uint16_t val)
