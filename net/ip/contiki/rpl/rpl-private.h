@@ -80,6 +80,7 @@ DECL|forward_errors|member|uint16_t forward_errors;
 DECL|global_repairs|member|uint16_t global_repairs;
 DECL|grounded|member|uint8_t grounded;
 DECL|instance_id|member|uint8_t instance_id;
+DECL|join_callback_t|typedef|typedef int (*join_callback_t) (rpl_dio_t* dio);
 DECL|lifetime_unit|member|uint16_t lifetime_unit;
 DECL|local_repairs|member|uint16_t local_repairs;
 DECL|loop_errors|member|uint16_t loop_errors;
