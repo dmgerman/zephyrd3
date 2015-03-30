@@ -3,7 +3,7 @@ DECL|PRINTADDR|macro|PRINTADDR
 DECL|PRINTADDR|macro|PRINTADDR
 DECL|PRINTF|macro|PRINTF
 DECL|PRINTF|macro|PRINTF
-DECL|create_frame|function|create_frame(struct net_mbuf *buf, int type, int do_create)
+DECL|create_frame|function|create_frame(struct net_mbuf *buf, int do_create)
 DECL|create|function|create(struct net_mbuf *buf)
 DECL|framer_802154|variable|framer_802154
 DECL|hdr_length|function|hdr_length(struct net_mbuf *buf)
