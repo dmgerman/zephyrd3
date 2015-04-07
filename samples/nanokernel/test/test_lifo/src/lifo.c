@@ -7,7 +7,7 @@ DECL|_trigger_nano_isr_lifo_get|variable|_trigger_nano_isr_lifo_get
 DECL|_trigger_nano_isr_lifo_put|variable|_trigger_nano_isr_lifo_put
 DECL|channel|member|struct nano_lifo *channel; /* LIFO channel */
 DECL|data|member|uint32_t data; /* miscellaneous data put on LIFO (not important) */
-DECL|data|member|void * data; /* pointer to data to add */
+DECL|data|member|void *data; /* pointer to data to add */
 DECL|fiberDetectedFailure|variable|fiberDetectedFailure
 DECL|fiberEntry|function|static void fiberEntry(int arg1, int arg2)
 DECL|fiberLifoNonWaitTest|function|int fiberLifoNonWaitTest(void)

@@ -10,7 +10,7 @@ DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
 DECL|_trigger_isrHandler|variable|_trigger_isrHandler
 DECL|command|member|int command; /* command to process */
-DECL|data|member|void * data; /* pointer to data to use or return */
+DECL|data|member|void *data; /* pointer to data to use or return */
 DECL|disable_interrupt_func|typedef|typedef int (* disable_interrupt_func)(int);
 DECL|enable_interrupt_func|typedef|typedef void (* enable_interrupt_func)(int);
 DECL|error|member|int error; /* error value (if any) */

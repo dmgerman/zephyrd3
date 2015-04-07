@@ -14,7 +14,7 @@ DECL|close_files|function|static void close_files(void)
 DECL|dpl|member|unsigned int dpl;
 DECL|fds|variable|fds
 DECL|filenames|variable|filenames
-DECL|fnc|member|void * fnc;
+DECL|fnc|member|void *fnc;
 DECL|genIdt|function|static void genIdt(void)
 DECL|get_exec_name|function|static void get_exec_name(char *pathname)
 DECL|get_options|function|static void get_options(int argc, char *argv[])

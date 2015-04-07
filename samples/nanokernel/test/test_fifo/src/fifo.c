@@ -9,7 +9,7 @@ DECL|TCERR3|macro|TCERR3
 DECL|_trigger_nano_isr_fifo_get|variable|_trigger_nano_isr_fifo_get
 DECL|_trigger_nano_isr_fifo_put|variable|_trigger_nano_isr_fifo_put
 DECL|channel|member|struct nano_fifo *channel; /* FIFO channel */
-DECL|data|member|void * data; /* pointer to data to add */
+DECL|data|member|void *data; /* pointer to data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)
 DECL|fiber3|function|void fiber3(void)
