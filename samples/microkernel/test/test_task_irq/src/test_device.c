@@ -1,0 +1,15 @@
+DECL|DEV1_ID|macro|DEV1_ID
+DECL|DEV1_IRQ|macro|DEV1_IRQ
+DECL|DEV1_IRQ|macro|DEV1_IRQ
+DECL|DEV2_ID|macro|DEV2_ID
+DECL|DEV2_IRQ|macro|DEV2_IRQ
+DECL|DEV2_IRQ|macro|DEV2_IRQ
+DECL|DEV3_ID|macro|DEV3_ID
+DECL|DEV3_IRQ|macro|DEV3_IRQ
+DECL|DEV3_IRQ|macro|DEV3_IRQ
+DECL|DEV4_ID|macro|DEV4_ID
+DECL|DEV4_IRQ|macro|DEV4_IRQ
+DECL|DEV4_IRQ|macro|DEV4_IRQ
+DECL|DEV5_ID|macro|DEV5_ID
+DECL|taskA|function|int taskA(ksem_t semRdy)
+DECL|taskB|function|int taskB(ksem_t semRdy)

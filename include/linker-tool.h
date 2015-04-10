@@ -1,0 +1,1 @@
+DECL|__LINKER_TOOL_H|macro|__LINKER_TOOL_H

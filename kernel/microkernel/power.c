@@ -1,0 +1,4 @@
+DECL|_SysIdleThresholdTicks|variable|_SysIdleThresholdTicks
+DECL|_SysPowerSaveFlag|variable|_SysPowerSaveFlag
+DECL|_SysPowerSaveIdleExit|function|void _SysPowerSaveIdleExit(int32_t ticks)
+DECL|_SysPowerSaveIdle|function|void _SysPowerSaveIdle(int32_t ticks)

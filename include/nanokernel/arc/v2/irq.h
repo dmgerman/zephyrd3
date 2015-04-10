@@ -1,0 +1,2 @@
+DECL|_ARCH_ARC_V2_IRQ__H_|macro|_ARCH_ARC_V2_IRQ__H_
+DECL|_irq_exit|variable|_irq_exit

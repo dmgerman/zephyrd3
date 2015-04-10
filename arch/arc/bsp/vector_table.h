@@ -1,0 +1,1 @@
+DECL|_VECTOR_TABLE__H_|macro|_VECTOR_TABLE__H_

@@ -1,0 +1,1 @@
+DECL|_UART_CONSOLE__H_|macro|_UART_CONSOLE__H_

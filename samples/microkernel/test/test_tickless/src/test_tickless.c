@@ -1,0 +1,13 @@
+DECL|CAL_REPS|macro|CAL_REPS
+DECL|SLEEP_TICKS|macro|SLEEP_TICKS
+DECL|_TIMER_ZERO|macro|_TIMER_ZERO
+DECL|_TIMER_ZERO|macro|_TIMER_ZERO
+DECL|_TIMESTAMP_CLOSE|macro|_TIMESTAMP_CLOSE
+DECL|_TIMESTAMP_CLOSE|macro|_TIMESTAMP_CLOSE
+DECL|_TIMESTAMP_OPEN|macro|_TIMESTAMP_OPEN
+DECL|_TIMESTAMP_OPEN|macro|_TIMESTAMP_OPEN
+DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
+DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
+DECL|_timer_res_t|typedef|typedef uint32_t _timer_res_t;
+DECL|_timer_res_t|typedef|typedef uint64_t _timer_res_t;
+DECL|ticklessTestTask|function|void ticklessTestTask (void)

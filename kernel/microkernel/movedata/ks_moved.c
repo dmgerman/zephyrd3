@@ -1,0 +1,1 @@
+DECL|KS__MemCpy|function|void KS__MemCpy(void *destination, /* destination buffer */void *source, /* source buffer */ uint32_t size, /* bytes to transfer */ ksem_t sema/* semaphore to signal upon completion */ )

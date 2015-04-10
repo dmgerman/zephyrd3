@@ -1,0 +1,10 @@
+DECL|AddHead|function|INLINE void AddHead(struct list_head *list, struct list_elem *elem)
+DECL|AddTail|function|INLINE void AddTail(struct list_head *list, struct list_elem *elem)
+DECL|InitList|function|INLINE void InitList(struct list_head *list)
+DECL|InsertPrio|function|INLINE void InsertPrio(struct list_head *list, struct list_elem *newelem)
+DECL|Insert_Elem|function|INLINE void Insert_Elem(struct list_elem *elem, struct list_elem *pred)
+DECL|RemoveElem|function|INLINE void RemoveElem(struct list_elem *elem)
+DECL|RemoveHead|function|INLINE struct list_elem *RemoveHead(struct list_head *list)
+DECL|RemoveTail|function|INLINE struct list_elem *RemoveTail(struct list_head *list)
+DECL|TestListEmpty|function|INLINE unsigned int TestListEmpty(struct list_head *list)
+DECL|_LISTS_C_H|macro|_LISTS_C_H

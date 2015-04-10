@@ -1,0 +1,17 @@
+DECL|GROUP_TASK_ABORT|macro|GROUP_TASK_ABORT
+DECL|GROUP_TASK_RESUME|macro|GROUP_TASK_RESUME
+DECL|GROUP_TASK_START|macro|GROUP_TASK_START
+DECL|GROUP_TASK_SUSPEND|macro|GROUP_TASK_SUSPEND
+DECL|TASK_ABORT|macro|TASK_ABORT
+DECL|TASK_RESUME|macro|TASK_RESUME
+DECL|TASK_START|macro|TASK_START
+DECL|TASK_SUSPEND|macro|TASK_SUSPEND
+DECL|_task_api_export__h_|macro|_task_api_export__h_
+DECL|task_abort|macro|task_abort
+DECL|task_group_abort|macro|task_group_abort
+DECL|task_group_resume|macro|task_group_resume
+DECL|task_group_start|macro|task_group_start
+DECL|task_group_suspend|macro|task_group_suspend
+DECL|task_resume|macro|task_resume
+DECL|task_start|macro|task_start
+DECL|task_suspend|macro|task_suspend

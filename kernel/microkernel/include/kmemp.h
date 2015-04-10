@@ -1,0 +1,1 @@
+DECL|KMEMP_H|macro|KMEMP_H

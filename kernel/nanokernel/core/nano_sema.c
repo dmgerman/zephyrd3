@@ -1,0 +1,6 @@
+DECL|_SemGive|function|void _SemGive(struct nano_sem *chan /* semaphore on which to signal */ )
+DECL|_SemTake|function|int _SemTake(struct nano_sem *chan /* semaphore on which to test */ )
+DECL|nano_fiber_sem_take_wait|function|void nano_fiber_sem_take_wait(struct nano_sem *chan /* semaphore on which to wait */ )
+DECL|nano_sem_init|function|void nano_sem_init(struct nano_sem *chan /* semaphore object to initialize */ )
+DECL|nano_task_sem_give|function|void nano_task_sem_give(struct nano_sem *chan /* semaphore on which to signal */ )
+DECL|nano_task_sem_take_wait|function|void nano_task_sem_take_wait(struct nano_sem *chan /* semaphore on which to wait */ )

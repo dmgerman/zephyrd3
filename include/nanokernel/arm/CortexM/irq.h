@@ -1,0 +1,2 @@
+DECL|_ARCH_ARM_CORTEXM_IRQ_H_|macro|_ARCH_ARM_CORTEXM_IRQ_H_
+DECL|_IntExit|variable|_IntExit

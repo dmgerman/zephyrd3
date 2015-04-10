@@ -1,0 +1,1 @@
+DECL|_ARC_ARCH__H_|macro|_ARC_ARCH__H_

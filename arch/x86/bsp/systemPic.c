@@ -1,0 +1,1 @@
+DECL|_SysIntVecAlloc|function|int _SysIntVecAlloc(unsigned int irq, /* virtualized IRQ */ unsigned int priority, /* get vector from <priority> group */ NANO_EOI_GET_FUNC * boiRtn, /* ptr to BOI routine

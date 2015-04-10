@@ -1,0 +1,14 @@
+DECL|NB_CACHE_WARMING_DRY_RUN|macro|NB_CACHE_WARMING_DRY_RUN
+DECL|_HwIntToCHandlerLatency|variable|_HwIntToCHandlerLatency
+DECL|_IntLatencyStart|function|void _IntLatencyStart(void)
+DECL|_IntLatencyStop|function|void _IntLatencyStop(void)
+DECL|initialStartDelay|variable|initialStartDelay
+DECL|intLatencyBenchRdy|variable|intLatencyBenchRdy
+DECL|intLatencyInit|function|void intLatencyInit(void)
+DECL|intLatencyShow|function|void intLatencyShow(void)
+DECL|intLockUnlockNest|variable|intLockUnlockNest
+DECL|intLockedTimestamp|variable|intLockedTimestamp
+DECL|intLockingLatencyMax|variable|intLockingLatencyMax
+DECL|intLockingLatencyMin|variable|intLockingLatencyMin
+DECL|nestingDelay|variable|nestingDelay
+DECL|stopDelay|variable|stopDelay

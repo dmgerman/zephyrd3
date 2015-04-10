@@ -1,0 +1,3 @@
+DECL|_CLOCK_VARS__H_|macro|_CLOCK_VARS__H_
+DECL|sys_clock_hw_cycles_per_sec|macro|sys_clock_hw_cycles_per_sec
+DECL|sys_clock_ticks_per_sec|macro|sys_clock_ticks_per_sec

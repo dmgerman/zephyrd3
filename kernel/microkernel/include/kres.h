@@ -1,0 +1,1 @@
+DECL|KRES_H|macro|KRES_H

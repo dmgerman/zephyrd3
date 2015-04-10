@@ -1,0 +1,2 @@
+DECL|K_ChProcWR|function|void K_ChProcWR(struct pipe_struct *pPipe, /* ptr to channel structure */ struct k_args *pNewWriter, /* ptr to new writer struct k_args */ struct k_args *pNewReader /* ptr to new reader struct k_args */ )
+DECL|_UpdateChannelXferStatus|function|static void _UpdateChannelXferStatus(struct k_args *pActor, /* ptr to struct k_args to be used by actor */ struct k_chproc *pActorArgs, /* ptr to actor's channel process structure */ int bytesXferred /* # of bytes transferred */ )
