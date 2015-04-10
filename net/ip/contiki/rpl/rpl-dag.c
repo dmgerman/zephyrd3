@@ -52,6 +52,7 @@ DECL|rpl_set_default_route|function|rpl_set_default_route(rpl_instance_t *instan
 DECL|rpl_set_join_callback|function|rpl_set_join_callback(join_callback_t callback)
 DECL|rpl_set_preferred_parent|function|rpl_set_preferred_parent(rpl_dag_t *dag, rpl_parent_t *p)
 DECL|rpl_set_prefix|function|rpl_set_prefix(rpl_dag_t *dag, uip_ipaddr_t *prefix, unsigned len)
+DECL|rpl_set_root_with_version|function|rpl_set_root_with_version(struct net_buf *buf, uint8_t instance_id, uip_ipaddr_t *dag_id, uint8_t version)
 DECL|rpl_set_root|function|rpl_set_root(struct net_buf *buf, uint8_t instance_id, uip_ipaddr_t *dag_id)
 DECL|set_ip_from_prefix|function|set_ip_from_prefix(uip_ipaddr_t *ipaddr, rpl_prefix_t *prefix)
 DECL|should_send_dao|function|should_send_dao(rpl_instance_t *instance, rpl_dio_t *dio, rpl_parent_t *p)
