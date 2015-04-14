@@ -59,7 +59,6 @@ DECL|UART_IOAPIC_FLAGS|macro|UART_IOAPIC_FLAGS
 DECL|UART_IOAPIC_FLAGS|macro|UART_IOAPIC_FLAGS
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_XTAL_FREQ|macro|UART_XTAL_FREQ
-DECL|VIRT_ADDR_START|macro|VIRT_ADDR_START
 DECL|__INCboardh|macro|__INCboardh
 DECL|inByte|function|__asm volatile unsigned char inByte(unsigned int port)
 DECL|inByte|function|static inline unsigned char inByte(unsigned int port)

@@ -41,7 +41,6 @@ DECL|SYS_INT_REGISTER|macro|SYS_INT_REGISTER
 DECL|UART_IOAPIC_FLAGS|macro|UART_IOAPIC_FLAGS
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_XTAL_FREQ|macro|UART_XTAL_FREQ
-DECL|VIRT_ADDR_START|macro|VIRT_ADDR_START
 DECL|__INCboardh|macro|__INCboardh
 DECL|inByte|function|static inline uint8_t inByte(uint32_t addr)
 DECL|inLong|function|static inline uint32_t inLong(uint32_t addr)
