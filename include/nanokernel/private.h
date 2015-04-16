@@ -1,7 +1,7 @@
 DECL|_ContextArg|typedef|typedef void *_ContextArg;
 DECL|_ContextEntry|typedef|typedef void (*_ContextEntry)(_ContextArg arg1,
-DECL|_ContextExitRtn|macro|_ContextExitRtn
 DECL|__NANOPRIVATE_H__|macro|__NANOPRIVATE_H__
+DECL|_context_exit|macro|_context_exit
 DECL|base|member|uint32_t *base;
 DECL|head|member|void *head;
 DECL|lifo|member|struct nano_lifo lifo;
