@@ -11,19 +11,19 @@ DECL|_trigger_nano_isr_sem_give|variable|_trigger_nano_isr_sem_give
 DECL|_trigger_nano_isr_sem_take|variable|_trigger_nano_isr_sem_take
 DECL|data|member|int data; /* data */
 DECL|fiberDetectedFailure|variable|fiberDetectedFailure
-DECL|fiberEntry|function|static void fiberEntry( int arg1, /* unused */ int arg2 /* unused */ )
+DECL|fiberEntry|function|static void fiberEntry(int arg1, int arg2)
 DECL|fiberStack|variable|fiberStack
-DECL|initNanoObjects|function|void initNanoObjects (void)
+DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrSemInfo|variable|isrSemInfo
-DECL|isr_sem_give|function|void isr_sem_give( void * data /* ptr to ISR handler parameter */ )
-DECL|isr_sem_take|function|void isr_sem_take( void * data /* ptr to ISR handler parameter */ )
-DECL|main|function|void main (void)
+DECL|isr_sem_give|function|void isr_sem_give(void *data)
+DECL|isr_sem_take|function|void isr_sem_take(void *data)
+DECL|main|function|void main(void)
 DECL|semTestState|variable|semTestState
 DECL|sem|member|struct nano_sem *sem; /* ptr to semaphore */
-DECL|testSemFiberNoWait|function|int testSemFiberNoWait (void)
-DECL|testSemIsrNoWait|function|int testSemIsrNoWait (void)
-DECL|testSemTaskNoWait|function|int testSemTaskNoWait (void)
-DECL|testSemWait|function|int testSemWait (void)
+DECL|testSemFiberNoWait|function|int testSemFiberNoWait(void)
+DECL|testSemIsrNoWait|function|int testSemIsrNoWait(void)
+DECL|testSemTaskNoWait|function|int testSemTaskNoWait(void)
+DECL|testSemWait|function|int testSemWait(void)
 DECL|testSem|variable|testSem
 DECL|timerData|variable|timerData
 DECL|timer|variable|timer

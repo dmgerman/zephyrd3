@@ -7,24 +7,24 @@ DECL|MID_TIMEOUT|macro|MID_TIMEOUT
 DECL|SHORT_TIMEOUT|macro|SHORT_TIMEOUT
 DECL|SIX_SECONDS|macro|SIX_SECONDS
 DECL|TWO_SECONDS|macro|TWO_SECONDS
-DECL|basicTimerWait|function|int basicTimerWait( timer_start_func startRtn, /* routine to start the timer */ timer_getw_func waitRtn, /* routine to get and wait for the timer */ timer_get_func getRtn, /* routine to get the timer (no waiting) */
-DECL|busyWaitTimers|function|int busyWaitTimers( timer_get_func getRtn /* timer get routine (fiber or task) */ )
-DECL|fiber2Entry|function|static void fiber2Entry( int arg1, /* unused */ int arg2 /* unused */ )
+DECL|basicTimerWait|function|int basicTimerWait(timer_start_func startRtn, timer_getw_func waitRtn, timer_get_func getRtn, struct nano_timer *pTimer, void *pTimerData, int ticks)
+DECL|busyWaitTimers|function|int busyWaitTimers(timer_get_func getRtn)
+DECL|fiber2Entry|function|static void fiber2Entry(int arg1, int arg2)
 DECL|fiber2Stack|variable|fiber2Stack
 DECL|fiberDetectedError|variable|fiberDetectedError
-DECL|fiberEntry|function|static void fiberEntry( int arg1, /* unused */ int arg2 /* unused */ )
+DECL|fiberEntry|function|static void fiberEntry(int arg1, int arg2)
 DECL|fiberStack|variable|fiberStack
-DECL|initNanoObjects|function|void initNanoObjects (void)
+DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|longTimerData|variable|longTimerData
 DECL|longTimer|variable|longTimer
-DECL|main|function|void main (void)
+DECL|main|function|void main(void)
 DECL|midTimerData|variable|midTimerData
 DECL|midTimer|variable|midTimer
-DECL|nano_node_cycle_get_32Test|function|int nano_node_cycle_get_32Test (void)
+DECL|nano_node_cycle_get_32Test|function|int nano_node_cycle_get_32Test(void)
 DECL|shortTimerData|variable|shortTimerData
 DECL|shortTimer|variable|shortTimer
-DECL|startTimers|function|void startTimers( timer_start_func startRtn /* routine to start the timers */ )
-DECL|stopTimers|function|int stopTimers( timer_stop_func stopRtn, /* routine to stop timer (fiber or task) */ timer_get_func getRtn /* timer get routine (fiber or task) */ )
+DECL|startTimers|function|void startTimers(timer_start_func startRtn)
+DECL|stopTimers|function|int stopTimers(timer_stop_func stopRtn, timer_get_func getRtn)
 DECL|timerData|variable|timerData
 DECL|timer_get_func|typedef|typedef void* (* timer_get_func)(struct nano_timer *);
 DECL|timer_getw_func|typedef|typedef void* (* timer_getw_func)(struct nano_timer *);

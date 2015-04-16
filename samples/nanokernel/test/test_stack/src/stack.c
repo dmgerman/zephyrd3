@@ -15,16 +15,16 @@ DECL|channel|member|struct nano_stack *channel; /* STACK channel */
 DECL|data|member|uint32_t data; /* data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)
-DECL|fiber3|function|void fiber3 (void)
+DECL|fiber3|function|void fiber3(void)
 DECL|fiberStack1|variable|fiberStack1
 DECL|fiberStack2|variable|fiberStack2
 DECL|fiberStack3|variable|fiberStack3
 DECL|initData|function|void initData(void)
 DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrStackInfo|variable|isrStackInfo
-DECL|isr_stack_pop|function|void isr_stack_pop( void * parameter /* ptr to ISR handler parameter */ )
-DECL|isr_stack_push|function|void isr_stack_push( void * parameter /* ptr to ISR handler parameter */ )
-DECL|main|function|void main (void)
+DECL|isr_stack_pop|function|void isr_stack_pop(void *parameter)
+DECL|isr_stack_push|function|void isr_stack_push(void *parameter)
+DECL|main|function|void main(void)
 DECL|myData|variable|myData
 DECL|myIsrData|variable|myIsrData
 DECL|nanoSemObj|variable|nanoSemObj

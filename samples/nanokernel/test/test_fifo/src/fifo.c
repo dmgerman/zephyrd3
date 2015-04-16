@@ -12,15 +12,15 @@ DECL|channel|member|struct nano_fifo *channel; /* FIFO channel */
 DECL|data|member|void * data; /* pointer to data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)
-DECL|fiber3|function|void fiber3 (void)
+DECL|fiber3|function|void fiber3(void)
 DECL|fiberStack1|variable|fiberStack1
 DECL|fiberStack2|variable|fiberStack2
 DECL|fiberStack3|variable|fiberStack3
 DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrFifoInfo|variable|isrFifoInfo
-DECL|isr_fifo_get|function|void isr_fifo_get( void * parameter /* ptr to ISR handler parameter */ )
-DECL|isr_fifo_put|function|void isr_fifo_put( void * parameter /* ptr to ISR handler parameter */ )
-DECL|main|function|void main (void)
+DECL|isr_fifo_get|function|void isr_fifo_get(void *parameter)
+DECL|isr_fifo_put|function|void isr_fifo_put(void *parameter)
+DECL|main|function|void main(void)
 DECL|myFifoData1|variable|myFifoData1
 DECL|myFifoData2|variable|myFifoData2
 DECL|myFifoData3|variable|myFifoData3

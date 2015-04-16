@@ -3,8 +3,8 @@ DECL|ISR_INFO|typedef|} ISR_INFO;
 DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|RegressionTask|function|void RegressionTask(void)
 DECL|_trigger_isrEventSignal|variable|_trigger_isrEventSignal
-DECL|altEventHandler|function|int altEventHandler( int event /* signalled event */ )
-DECL|eventHandler|function|int eventHandler( int event /* signalled event */ )
+DECL|altEventHandler|function|int altEventHandler(int event)
+DECL|eventHandler|function|int eventHandler(int event)
 DECL|eventNoWaitTest|function|int eventNoWaitTest(void)
 DECL|eventSignalHandlerTest|function|int eventSignalHandlerTest(void)
 DECL|eventTimeoutTest|function|int eventTimeoutTest(void)
@@ -15,6 +15,6 @@ DECL|fiberEventSignalTest|function|int fiberEventSignalTest(void)
 DECL|handlerRetVal|variable|handlerRetVal
 DECL|isrEventSignalTest|function|int isrEventSignalTest(void)
 DECL|isrInfo|variable|isrInfo
-DECL|isr_event_signal_handler|function|void isr_event_signal_handler( void *data )
+DECL|isr_event_signal_handler|function|void isr_event_signal_handler(void *data)
 DECL|microObjectsInit|function|void microObjectsInit(void)
 DECL|releaseTestFiber|function|void releaseTestFiber(void)
