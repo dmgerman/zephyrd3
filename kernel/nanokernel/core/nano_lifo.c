@@ -1,5 +1,5 @@
 DECL|_LifoGet|function|void *_LifoGet(struct nano_lifo *chan /* channel on which to receive */ )
-DECL|_LifoPut|function|void _LifoPut(struct nano_lifo *chan, /* channel on which to put */ void *data /* data to insert */ )
+DECL|_lifo_put|function|void _lifo_put(struct nano_lifo *chan, /* channel on which to put */ void *data /* data to insert */ )
 DECL|nano_fiber_lifo_get_wait|function|void *nano_fiber_lifo_get_wait(struct nano_lifo *chan /* channel on which to receive */ )
 DECL|nano_lifo_init|function|void nano_lifo_init(struct nano_lifo *chan /* channel to initialize */)
 DECL|nano_task_lifo_get_wait|function|void *nano_task_lifo_get_wait(struct nano_lifo *chan /* channel on which to interact */ )
