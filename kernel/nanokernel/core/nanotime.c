@@ -1,9 +1,9 @@
-DECL|__ctor_nanoTimeInit|variable|__ctor_nanoTimeInit
+DECL|__ctor_nano_time_init|variable|__ctor_nano_time_init
 DECL|nanoTicks|variable|nanoTicks
-DECL|nanoTimeInit|function|NANO_INIT_SYS_NORMAL void nanoTimeInit(void)
 DECL|nanoTimerList|variable|nanoTimerList
 DECL|nano_node_cycle_get_32|function|uint32_t nano_node_cycle_get_32(void)
 DECL|nano_node_tick_delta|function|uint32_t nano_node_tick_delta(uint64_t *reftime)
 DECL|nano_node_tick_get_32|function|uint32_t nano_node_tick_get_32(void)
+DECL|nano_time_init|function|NANO_INIT_SYS_NORMAL void nano_time_init(void)
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
