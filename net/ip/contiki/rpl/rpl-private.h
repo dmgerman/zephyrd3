@@ -1,0 +1,104 @@
+DECL|BASE_RANK|macro|BASE_RANK
+DECL|DAG_RANK|macro|DAG_RANK
+DECL|DAO_EXPIRATION_TIMEOUT|macro|DAO_EXPIRATION_TIMEOUT
+DECL|INFINITE_RANK|macro|INFINITE_RANK
+DECL|ROOT_RANK|macro|ROOT_RANK
+DECL|RPL_CODE_DAO_ACK|macro|RPL_CODE_DAO_ACK
+DECL|RPL_CODE_DAO|macro|RPL_CODE_DAO
+DECL|RPL_CODE_DIO|macro|RPL_CODE_DIO
+DECL|RPL_CODE_DIS|macro|RPL_CODE_DIS
+DECL|RPL_CODE_SEC_DAO_ACK|macro|RPL_CODE_SEC_DAO_ACK
+DECL|RPL_CODE_SEC_DAO|macro|RPL_CODE_SEC_DAO
+DECL|RPL_CODE_SEC_DIO|macro|RPL_CODE_SEC_DIO
+DECL|RPL_CODE_SEC_DIS|macro|RPL_CODE_SEC_DIS
+DECL|RPL_DAG_MC_ETX_DIVISOR|macro|RPL_DAG_MC_ETX_DIVISOR
+DECL|RPL_DAO_D_FLAG|macro|RPL_DAO_D_FLAG
+DECL|RPL_DAO_K_FLAG|macro|RPL_DAO_K_FLAG
+DECL|RPL_DAO_LATENCY|macro|RPL_DAO_LATENCY
+DECL|RPL_DAO_LATENCY|macro|RPL_DAO_LATENCY
+DECL|RPL_DIS_INTERVAL|macro|RPL_DIS_INTERVAL
+DECL|RPL_DIS_INTERVAL|macro|RPL_DIS_INTERVAL
+DECL|RPL_DIS_SEND|macro|RPL_DIS_SEND
+DECL|RPL_DIS_START_DELAY|macro|RPL_DIS_START_DELAY
+DECL|RPL_HDR_OPT_DOWN_SHIFT|macro|RPL_HDR_OPT_DOWN_SHIFT
+DECL|RPL_HDR_OPT_DOWN|macro|RPL_HDR_OPT_DOWN
+DECL|RPL_HDR_OPT_FWD_ERR_SHIFT|macro|RPL_HDR_OPT_FWD_ERR_SHIFT
+DECL|RPL_HDR_OPT_FWD_ERR|macro|RPL_HDR_OPT_FWD_ERR
+DECL|RPL_HDR_OPT_LEN|macro|RPL_HDR_OPT_LEN
+DECL|RPL_HDR_OPT_RANK_ERR_SHIFT|macro|RPL_HDR_OPT_RANK_ERR_SHIFT
+DECL|RPL_HDR_OPT_RANK_ERR|macro|RPL_HDR_OPT_RANK_ERR
+DECL|RPL_HOP_BY_HOP_LEN|macro|RPL_HOP_BY_HOP_LEN
+DECL|RPL_INSTANCE_D_FLAG|macro|RPL_INSTANCE_D_FLAG
+DECL|RPL_INSTANCE_LOCAL_FLAG|macro|RPL_INSTANCE_LOCAL_FLAG
+DECL|RPL_LIFETIME|macro|RPL_LIFETIME
+DECL|RPL_LOLLIPOP_CIRCULAR_REGION|macro|RPL_LOLLIPOP_CIRCULAR_REGION
+DECL|RPL_LOLLIPOP_INCREMENT|macro|RPL_LOLLIPOP_INCREMENT
+DECL|RPL_LOLLIPOP_INIT|macro|RPL_LOLLIPOP_INIT
+DECL|RPL_LOLLIPOP_IS_INIT|macro|RPL_LOLLIPOP_IS_INIT
+DECL|RPL_LOLLIPOP_MAX_VALUE|macro|RPL_LOLLIPOP_MAX_VALUE
+DECL|RPL_LOLLIPOP_SEQUENCE_WINDOWS|macro|RPL_LOLLIPOP_SEQUENCE_WINDOWS
+DECL|RPL_MAX_RANKINC|macro|RPL_MAX_RANKINC
+DECL|RPL_MCAST_LIFETIME|macro|RPL_MCAST_LIFETIME
+DECL|RPL_MCAST_LIFETIME|macro|RPL_MCAST_LIFETIME
+DECL|RPL_MIN_HOPRANKINC|macro|RPL_MIN_HOPRANKINC
+DECL|RPL_MIN_HOPRANKINC|macro|RPL_MIN_HOPRANKINC
+DECL|RPL_MOP_DEFAULT|macro|RPL_MOP_DEFAULT
+DECL|RPL_MOP_DEFAULT|macro|RPL_MOP_DEFAULT
+DECL|RPL_MOP_DEFAULT|macro|RPL_MOP_DEFAULT
+DECL|RPL_MOP_NON_STORING|macro|RPL_MOP_NON_STORING
+DECL|RPL_MOP_NO_DOWNWARD_ROUTES|macro|RPL_MOP_NO_DOWNWARD_ROUTES
+DECL|RPL_MOP_STORING_MULTICAST|macro|RPL_MOP_STORING_MULTICAST
+DECL|RPL_MOP_STORING_NO_MULTICAST|macro|RPL_MOP_STORING_NO_MULTICAST
+DECL|RPL_OPTION_DAG_CONF|macro|RPL_OPTION_DAG_CONF
+DECL|RPL_OPTION_DAG_METRIC_CONTAINER|macro|RPL_OPTION_DAG_METRIC_CONTAINER
+DECL|RPL_OPTION_PAD1|macro|RPL_OPTION_PAD1
+DECL|RPL_OPTION_PADN|macro|RPL_OPTION_PADN
+DECL|RPL_OPTION_PREFIX_INFO|macro|RPL_OPTION_PREFIX_INFO
+DECL|RPL_OPTION_ROUTE_INFO|macro|RPL_OPTION_ROUTE_INFO
+DECL|RPL_OPTION_SOLICITED_INFO|macro|RPL_OPTION_SOLICITED_INFO
+DECL|RPL_OPTION_TARGET_DESC|macro|RPL_OPTION_TARGET_DESC
+DECL|RPL_OPTION_TARGET|macro|RPL_OPTION_TARGET
+DECL|RPL_OPTION_TRANSIT|macro|RPL_OPTION_TRANSIT
+DECL|RPL_PRIVATE_H|macro|RPL_PRIVATE_H
+DECL|RPL_ROUTE_FROM_DIO|macro|RPL_ROUTE_FROM_DIO
+DECL|RPL_ROUTE_FROM_INTERNAL|macro|RPL_ROUTE_FROM_INTERNAL
+DECL|RPL_ROUTE_FROM_MULTICAST_DAO|macro|RPL_ROUTE_FROM_MULTICAST_DAO
+DECL|RPL_ROUTE_FROM_UNICAST_DAO|macro|RPL_ROUTE_FROM_UNICAST_DAO
+DECL|RPL_STAT|macro|RPL_STAT
+DECL|RPL_STAT|macro|RPL_STAT
+DECL|RPL_ZERO_LIFETIME|macro|RPL_ZERO_LIFETIME
+DECL|dag_id|member|uip_ipaddr_t dag_id;
+DECL|dag_intdoubl|member|uint8_t dag_intdoubl;
+DECL|dag_intmin|member|uint8_t dag_intmin;
+DECL|dag_max_rankinc|member|rpl_rank_t dag_max_rankinc;
+DECL|dag_min_hoprankinc|member|rpl_rank_t dag_min_hoprankinc;
+DECL|dag_redund|member|uint8_t dag_redund;
+DECL|default_lifetime|member|uint8_t default_lifetime;
+DECL|destination_prefix|member|rpl_prefix_t destination_prefix;
+DECL|dtsn|member|uint8_t dtsn;
+DECL|forward_errors|member|uint16_t forward_errors;
+DECL|global_repairs|member|uint16_t global_repairs;
+DECL|grounded|member|uint8_t grounded;
+DECL|instance_id|member|uint8_t instance_id;
+DECL|lifetime_unit|member|uint16_t lifetime_unit;
+DECL|local_repairs|member|uint16_t local_repairs;
+DECL|loop_errors|member|uint16_t loop_errors;
+DECL|loop_warnings|member|uint16_t loop_warnings;
+DECL|malformed_msgs|member|uint16_t malformed_msgs;
+DECL|mc|member|struct rpl_metric_container mc;
+DECL|mem_overflows|member|uint16_t mem_overflows;
+DECL|mop|member|uint8_t mop;
+DECL|ocp|member|rpl_ocp_t ocp;
+DECL|parent_switch|member|uint16_t parent_switch;
+DECL|preference|member|uint8_t preference;
+DECL|prefix_info|member|rpl_prefix_t prefix_info;
+DECL|rank|member|rpl_rank_t rank;
+DECL|resets|member|uint16_t resets;
+DECL|root_repairs|member|uint16_t root_repairs;
+DECL|rpl_dio_t|typedef|typedef struct rpl_dio rpl_dio_t;
+DECL|rpl_dio|struct|struct rpl_dio {
+DECL|rpl_stats_t|typedef|typedef struct rpl_stats rpl_stats_t;
+DECL|rpl_stats|struct|struct rpl_stats {
+DECL|uip_create_linklocal_rplnodes_mcast|macro|uip_create_linklocal_rplnodes_mcast
+DECL|uip_is_addr_linklocal_rplnodes_mcast|macro|uip_is_addr_linklocal_rplnodes_mcast
+DECL|version|member|uint8_t version;

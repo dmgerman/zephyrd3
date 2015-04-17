@@ -1,0 +1,1 @@
+DECL|CONTIKI_H_|macro|CONTIKI_H_

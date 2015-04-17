@@ -1,0 +1,1 @@
+DECL|framer_canonical_create_and_secure|function|framer_canonical_create_and_secure(void)

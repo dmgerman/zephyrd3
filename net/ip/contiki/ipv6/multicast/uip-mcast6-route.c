@@ -1,0 +1,10 @@
+DECL|UIP_MCAST6_ROUTE_ROUTES|macro|UIP_MCAST6_ROUTE_ROUTES
+DECL|UIP_MCAST6_ROUTE_ROUTES|macro|UIP_MCAST6_ROUTE_ROUTES
+DECL|locmcastrt|variable|locmcastrt
+DECL|mcast_route_list|variable|mcast_route_list
+DECL|uip_mcast6_route_add|function|uip_mcast6_route_add(uip_ipaddr_t *group)
+DECL|uip_mcast6_route_count|function|uip_mcast6_route_count(void)
+DECL|uip_mcast6_route_init|function|uip_mcast6_route_init()
+DECL|uip_mcast6_route_list_head|function|uip_mcast6_route_list_head(void)
+DECL|uip_mcast6_route_lookup|function|uip_mcast6_route_lookup(uip_ipaddr_t *group)
+DECL|uip_mcast6_route_rm|function|uip_mcast6_route_rm(uip_mcast6_route_t *route)

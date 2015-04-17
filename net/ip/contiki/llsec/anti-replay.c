@@ -1,0 +1,5 @@
+DECL|anti_replay_get_counter|function|anti_replay_get_counter(void)
+DECL|anti_replay_init_info|function|anti_replay_init_info(struct anti_replay_info *info)
+DECL|anti_replay_set_counter|function|anti_replay_set_counter(void)
+DECL|anti_replay_was_replayed|function|anti_replay_was_replayed(struct anti_replay_info *info)
+DECL|counter|variable|counter

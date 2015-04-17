@@ -1,0 +1,2 @@
+DECL|uip_mcast6_stats_init|function|uip_mcast6_stats_init(void *stats)
+DECL|uip_mcast6_stats|variable|uip_mcast6_stats

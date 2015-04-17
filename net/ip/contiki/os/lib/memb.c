@@ -1,0 +1,5 @@
+DECL|memb_alloc|function|memb_alloc(struct memb *m)
+DECL|memb_free|function|memb_free(struct memb *m, void *ptr)
+DECL|memb_init|function|memb_init(struct memb *m)
+DECL|memb_inmemb|function|memb_inmemb(struct memb *m, void *ptr)
+DECL|memb_numfree|function|memb_numfree(struct memb *m)

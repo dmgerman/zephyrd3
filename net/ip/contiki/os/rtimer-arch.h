@@ -1,0 +1,1 @@
+DECL|__RTIMER_ARCH_H__|macro|__RTIMER_ARCH_H__
