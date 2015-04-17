@@ -1,6 +1,7 @@
 DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
 DECL|NUM_BUFS|macro|NUM_BUFS
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
+DECL|adv_enable|member|uint8_t adv_enable;
 DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_buf_add|function|uint8_t *bt_buf_add(struct bt_buf *buf, size_t len)
 DECL|bt_buf_get_reserve|function|struct bt_buf *bt_buf_get_reserve(size_t reserve_head)
@@ -19,6 +20,7 @@ DECL|bt_hci_cmd_send|function|static int bt_hci_cmd_send(uint16_t opcode, struct
 DECL|bt_hci_reset|function|int bt_hci_reset(void)
 DECL|bt_init|function|int bt_init(void)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
+DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const char *name, uint8_t name_len)
 DECL|buffers|variable|buffers
 DECL|cmd_fiber_stack|variable|cmd_fiber_stack
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
