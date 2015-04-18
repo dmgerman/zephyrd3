@@ -39,6 +39,7 @@ DECL|hci_event|function|static void hci_event(struct bt_buf *buf)
 DECL|hci_init|function|static int hci_init(void)
 DECL|hci_le_read_buffer_size_complete|function|static void hci_le_read_buffer_size_complete(struct bt_buf *buf)
 DECL|hci_le_read_features_complete|function|static void hci_le_read_features_complete(struct bt_buf *buf)
+DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct bt_buf *buf)
 DECL|hci_read_bdaddr_complete|function|static void hci_read_bdaddr_complete(struct bt_buf *buf)
 DECL|hci_read_buffer_size_complete|function|static void hci_read_buffer_size_complete(struct bt_buf *buf)
 DECL|hci_read_features_complete|function|static void hci_read_features_complete(struct bt_buf *buf)
@@ -49,6 +50,7 @@ DECL|hci_rx_fiber|function|static void hci_rx_fiber(void)
 DECL|hci_version|member|uint8_t hci_version;
 DECL|le_features|member|uint8_t le_features[8];
 DECL|le_mtu|member|uint16_t le_mtu;
+DECL|le_pkts_sem|member|struct nano_sem le_pkts_sem;
 DECL|le_pkts|member|uint8_t le_pkts;
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable

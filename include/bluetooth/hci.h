@@ -2,6 +2,7 @@ DECL|BT_EIR_FLAGS|macro|BT_EIR_FLAGS
 DECL|BT_EIR_NAME_COMPLETE|macro|BT_EIR_NAME_COMPLETE
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
+DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
@@ -26,6 +27,8 @@ DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
 DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OP|macro|BT_OP
+DECL|PACK_STRUCT|member|} h[0] PACK_STRUCT;
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -58,6 +61,7 @@ DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
+DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
@@ -65,6 +69,7 @@ DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
 DECL|channel_map|member|uint8_t channel_map;
+DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
@@ -75,6 +80,7 @@ DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
@@ -93,6 +99,7 @@ DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
+DECL|num_handles|member|uint8_t num_handles;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
