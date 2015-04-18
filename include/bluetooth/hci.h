@@ -2,6 +2,7 @@ DECL|BT_EIR_FLAGS|macro|BT_EIR_FLAGS
 DECL|BT_EIR_NAME_COMPLETE|macro|BT_EIR_NAME_COMPLETE
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
+DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
@@ -46,6 +47,7 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
@@ -61,6 +63,7 @@ DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
+DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {
@@ -115,4 +118,5 @@ DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
+DECL|subevent|member|uint8_t subevent;
 DECL|type|member|uint8_t type;
