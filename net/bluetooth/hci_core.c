@@ -49,6 +49,7 @@ DECL|hci_reset_complete|function|static void hci_reset_complete(struct bt_buf *b
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(void)
 DECL|hci_version|member|uint8_t hci_version;
+DECL|le_conn_complete|function|static void le_conn_complete(struct bt_buf *buf)
 DECL|le_features|member|uint8_t le_features[8];
 DECL|le_mtu|member|uint16_t le_mtu;
 DECL|le_pkts_sem|member|struct nano_sem le_pkts_sem;
