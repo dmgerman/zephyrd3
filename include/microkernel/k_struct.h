@@ -36,7 +36,6 @@ DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
-DECL|Cont|member|struct k_args *Cont;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
@@ -55,7 +54,6 @@ DECL|DEQ_TMO|enumerator|DEQ_TMO,
 DECL|Deqp|member|char *Deqp;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
-DECL|Dummy|member|uint32_t Dummy;
 DECL|Dummy|member|uint32_t Dummy;
 DECL|ELAPSE|enumerator|ELAPSE,
 DECL|ENQ_REQ|enumerator|ENQ_REQ,
@@ -143,7 +141,6 @@ DECL|REMREPLY|enumerator|REMREPLY,
 DECL|REQ_TYPE|typedef|typedef uint32_t REQ_TYPE;
 DECL|RESETM|enumerator|RESETM,
 DECL|RESETS|enumerator|RESETS,
-DECL|Rcv|member|struct moved_req_args_rcv Rcv;
 DECL|Readers|member|struct k_args *Readers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -268,7 +265,6 @@ DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
-DECL|iDone|member|uint32_t iDone;
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal;
@@ -277,7 +273,6 @@ DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
-DECL|iXferID|member|int iXferID;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
 DECL|k_chack|struct|struct k_chack {
@@ -301,7 +296,6 @@ DECL|min_nr_blocks|member|int min_nr_blocks;
 DECL|minblock_size|member|int minblock_size;
 DECL|mmap|member|kmemory_map_t mmap;
 DECL|mon_struct|struct|struct mon_struct {
-DECL|moved_req_args_rcv|struct|struct moved_req_args_rcv {
 DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
