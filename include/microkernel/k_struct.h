@@ -37,7 +37,6 @@ DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
 DECL|Cont|member|struct k_args *Cont;
-DECL|Cont|member|struct k_args *Cont;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
@@ -162,7 +161,6 @@ DECL|SLEEP|enumerator|SLEEP,
 DECL|SPRIO|enumerator|SPRIO,
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
-DECL|Snd|member|struct moved_req_args_snd Snd;
 DECL|State|member|uint32_t State;
 DECL|Status|member|CHREQ_STATUS Status; /* status of processing of request */
 DECL|Sync|member|struct sync_req Sync;
@@ -271,7 +269,6 @@ DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|iDone|member|uint32_t iDone;
-DECL|iDone|member|uint32_t iDone;
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal;
@@ -280,7 +277,6 @@ DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
-DECL|iXferID|member|int iXferID;
 DECL|iXferID|member|int iXferID;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
@@ -307,13 +303,11 @@ DECL|mmap|member|kmemory_map_t mmap;
 DECL|mon_struct|struct|struct mon_struct {
 DECL|moved_req_args_rcv|struct|struct moved_req_args_rcv {
 DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
-DECL|moved_req_args_snd|struct|struct moved_req_args_snd {
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
 DECL|mrec|member|struct k_mrec mrec;
 DECL|mutex_struct|struct|struct mutex_struct {
 DECL|mutex|member|kmutex_t mutex;
-DECL|nAck|member|unsigned nAck;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
