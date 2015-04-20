@@ -130,7 +130,6 @@ DECL|RECV_REQ|enumerator|RECV_REQ,
 DECL|RECV_TMO|enumerator|RECV_TMO,
 DECL|REL_BLOCK|enumerator|REL_BLOCK,
 DECL|REMREPLY|enumerator|REMREPLY,
-DECL|REQ_TYPE|typedef|typedef uint32_t REQ_TYPE;
 DECL|RESETM|enumerator|RESETM,
 DECL|RESETS|enumerator|RESETS,
 DECL|Readers|member|struct k_args *Readers;
@@ -196,12 +195,8 @@ DECL|XFER_W2B|enumerator|XFER_W2B,
 DECL|XFER_W2R|enumerator|XFER_W2R
 DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
 DECL|YIELD|enumerator|YIELD,
-DECL|_ALLREQ|macro|_ALLREQ
 DECL|_ALLTIME|macro|_ALLTIME
-DECL|_ASYNCREQ|macro|_ASYNCREQ
 DECL|_K_STRUCT_H|macro|_K_STRUCT_H
-DECL|_SYNCREQL|macro|_SYNCREQL
-DECL|_SYNCREQ|macro|_SYNCREQ
 DECL|_TIME_BT|macro|_TIME_BT
 DECL|_TIME_B|macro|_TIME_B
 DECL|_TIME_NB|macro|_TIME_NB
