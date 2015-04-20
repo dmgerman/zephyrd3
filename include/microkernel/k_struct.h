@@ -158,7 +158,6 @@ DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
-DECL|TIME_TYPE|typedef|typedef uint32_t TIME_TYPE;
 DECL|TSKOP|enumerator|TSKOP,
 DECL|TSTART|enumerator|TSTART,
 DECL|TSTOP|enumerator|TSTOP,
@@ -195,11 +194,7 @@ DECL|XFER_W2B|enumerator|XFER_W2B,
 DECL|XFER_W2R|enumerator|XFER_W2R
 DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
 DECL|YIELD|enumerator|YIELD,
-DECL|_ALLTIME|macro|_ALLTIME
 DECL|_K_STRUCT_H|macro|_K_STRUCT_H
-DECL|_TIME_BT|macro|_TIME_BT
-DECL|_TIME_B|macro|_TIME_B
-DECL|_TIME_NB|macro|_TIME_NB
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
 DECL|_e1arg|struct|struct _e1arg {
