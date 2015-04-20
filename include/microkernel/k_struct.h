@@ -29,7 +29,6 @@ DECL|ChRef|member|} ChRef;
 DECL|ChReq|member|struct k_chreq ChReq;
 DECL|Comm|member|K_COMM Comm;
 DECL|Comm|member|int Comm;
-DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
@@ -90,10 +89,8 @@ DECL|K_TIMER|typedef|typedef struct k_timer K_TIMER;
 DECL|LOCK_REQ|enumerator|LOCK_REQ,
 DECL|LOCK_RPL|enumerator|LOCK_RPL,
 DECL|LOCK_TMO|enumerator|LOCK_TMO,
-DECL|Laddr|member|int Laddr;
 DECL|Level|member|int Level;
 DECL|Level|member|int Level;
-DECL|Lsize|member|int Lsize;
 DECL|MEMCPY_REQ|enumerator|MEMCPY_REQ,
 DECL|MEMCPY_RPL|enumerator|MEMCPY_RPL,
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
@@ -114,7 +111,6 @@ DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|NOP|enumerator|NOP,
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
-DECL|Nitem|member|int Nitem;
 DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
 DECL|OFFLOAD|enumerator|OFFLOAD,
@@ -220,7 +216,6 @@ DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
-DECL|_z1arg|struct|struct _z1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|int action;
@@ -348,5 +343,4 @@ DECL|val|member|int val;
 DECL|waiter|member|struct k_args *waiter;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
-DECL|z1|member|struct _z1arg z1;
 DECL|z4|member|struct _z4arg z4;
