@@ -30,7 +30,6 @@ DECL|ChReq|member|struct k_chreq ChReq;
 DECL|Comm|member|K_COMM Comm;
 DECL|Comm|member|int Comm;
 DECL|Comm|member|int Comm;
-DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
@@ -169,7 +168,6 @@ DECL|TSKOP|enumerator|TSKOP,
 DECL|TSTART|enumerator|TSTART,
 DECL|TSTOP|enumerator|TSTOP,
 DECL|Tail|member|struct k_proc *Tail;
-DECL|Task|member|ktask_t Task;
 DECL|Time|member|} Time;
 DECL|Ti|member|int32_t Ti;
 DECL|Tr|member|int32_t Tr;
@@ -191,11 +189,8 @@ DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
-DECL|Wmark|member|int Wmark;
 DECL|Writers|member|struct k_args *Writers;
 DECL|Writers|member|struct k_args *Writers;
-DECL|Wsize|member|int Wsize;
-DECL|Wused|member|int Wused;
 DECL|XFER_B2R|enumerator|XFER_B2R,
 DECL|XFER_BUSY|enumerator|XFER_BUSY = 0x0002,
 DECL|XFER_IDLE|enumerator|XFER_IDLE = 0x0001,
@@ -226,7 +221,6 @@ DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z1arg|struct|struct _z1arg {
-DECL|_z2arg|struct|struct _z2arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|int action;
@@ -355,5 +349,4 @@ DECL|waiter|member|struct k_args *waiter;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
 DECL|z1|member|struct _z1arg z1;
-DECL|z2|member|struct _z2arg z2;
 DECL|z4|member|struct _z4arg z4;
