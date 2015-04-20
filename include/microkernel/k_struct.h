@@ -56,7 +56,6 @@ DECL|DEQ_RPL|enumerator|DEQ_RPL,
 DECL|DEQ_TMO|enumerator|DEQ_TMO,
 DECL|DataNode|member|knode_t DataNode;
 DECL|Deqp|member|char *Deqp;
-DECL|Dest|member|knode_t Dest;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
