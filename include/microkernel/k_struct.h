@@ -230,7 +230,6 @@ DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
-DECL|_x1arg|struct|struct _x1arg {
 DECL|_z1arg|struct|struct _z1arg {
 DECL|_z2arg|struct|struct _z2arg {
 DECL|_z3arg|struct|struct _z3arg {
@@ -247,7 +246,6 @@ DECL|blocktable|member|struct block_stat *blocktable;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
 DECL|c1|member|struct _c1arg c1;
-DECL|chan|member|struct nano_lifo *chan;
 DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data|member|char *data;
@@ -316,7 +314,6 @@ DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
-DECL|parm|member|int parm[7];
 DECL|pipe_struct|struct|struct pipe_struct {
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
@@ -363,7 +360,6 @@ DECL|val|member|int val;
 DECL|waiter|member|struct k_args *waiter;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
-DECL|x1|member|struct _x1arg x1;
 DECL|z1|member|struct _z1arg z1;
 DECL|z2|member|struct _z2arg z2;
 DECL|z3|member|struct _z3arg z3;
