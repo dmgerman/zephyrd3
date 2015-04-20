@@ -29,10 +29,6 @@ DECL|poolBlockGetWork|function|int poolBlockGetWork(char *string, poolBlockGetFu
 DECL|poolDefragTest|function|int poolDefragTest(void)
 DECL|poolId|member|kmemory_pool_t poolId; /* pool ID */
 DECL|poolMoveBlockFunc_t|typedef|typedef int (*poolMoveBlockFunc_t)(struct k_block *, kmemory_pool_t);
-DECL|poolMoveBlockTests|function|int poolMoveBlockTests(void)
-DECL|poolMoveBlockWT|function|int poolMoveBlockWT(struct k_block *block, kmemory_pool_t pool)
-DECL|poolMoveBlockW|function|int poolMoveBlockW(struct k_block *block, kmemory_pool_t pool)
-DECL|poolMoveBlock|function|int poolMoveBlock(struct k_block *block, kmemory_pool_t pool)
 DECL|rcode|member|int rcode; /* expected return code */
 DECL|size|member|int size; /* request size in bytes */
 DECL|timeout|member|int32_t timeout; /* # of ticks to wait */
