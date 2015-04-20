@@ -55,7 +55,6 @@ DECL|DEQ_REQ|enumerator|DEQ_REQ,
 DECL|DEQ_RPL|enumerator|DEQ_RPL,
 DECL|DEQ_TMO|enumerator|DEQ_TMO,
 DECL|DataNode|member|knode_t DataNode;
-DECL|Data|member|int Data[5];
 DECL|Deqp|member|char *Deqp;
 DECL|Dest|member|knode_t Dest;
 DECL|Dummy|member|int Dummy;
@@ -171,8 +170,6 @@ DECL|Snd|member|struct moved_req_args_snd Snd;
 DECL|Srce|member|knode_t Srce;
 DECL|State|member|uint32_t State;
 DECL|Status|member|CHREQ_STATUS Status; /* status of processing of request */
-DECL|SyncLocal|member|struct sync_req_l SyncLocal;
-DECL|SyncLocal|member|struct sync_req_l SyncLocal;
 DECL|Sync|member|struct sync_req Sync;
 DECL|TALLOC|enumerator|TALLOC,
 DECL|TDEALLOC|enumerator|TDEALLOC,
@@ -285,7 +282,6 @@ DECL|iDone|member|uint32_t iDone;
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal;
-DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal; /* total size of data/free space */
 DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
@@ -372,7 +368,6 @@ DECL|source|member|void *source;
 DECL|source|member|void *source;
 DECL|srcnode|member|knode_t srcnode;
 DECL|status|member|int status;
-DECL|sync_req_l|struct|struct sync_req_l {
 DECL|sync_req|struct|struct sync_req {
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
