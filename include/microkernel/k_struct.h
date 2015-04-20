@@ -1,7 +1,6 @@
 DECL|ALLOCTMO|enumerator|ALLOCTMO,
 DECL|ALLOC|enumerator|ALLOC,
 DECL|Action|member|MovedAction Action;
-DECL|Action|member|MovedAction Action;
 DECL|Args|member|K_ARGS_ARGS Args;
 DECL|Args|member|struct k_args *Args;
 DECL|Args|member|struct k_args *Args;
@@ -145,7 +144,6 @@ DECL|REMREPLY|enumerator|REMREPLY,
 DECL|REQ_TYPE|typedef|typedef uint32_t REQ_TYPE;
 DECL|RESETM|enumerator|RESETM,
 DECL|RESETS|enumerator|RESETS,
-DECL|RawData|member|struct raw_data RawData;
 DECL|Rcv|member|struct moved_req_args_rcv Rcv;
 DECL|Readers|member|struct k_args *Readers;
 DECL|Readers|member|struct k_args *Readers;
@@ -259,8 +257,6 @@ DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
-DECL|data|member|void *data;
-DECL|destination|member|void *destination;
 DECL|destination|member|void *destination;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
@@ -283,9 +279,7 @@ DECL|iSizeTotal|member|int iSizeTotal; /* total size of data/free space */
 DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
-DECL|iSize|member|uint32_t iSize;
 DECL|iTotalSize|member|uint32_t iTotalSize;
-DECL|iXferID|member|int iXferID;
 DECL|iXferID|member|int iXferID;
 DECL|iXferID|member|int iXferID;
 DECL|k_args_args|union|union k_args_args {
@@ -346,7 +340,6 @@ DECL|q2|member|struct _q2arg q2;
 DECL|que_struct|struct|struct que_struct {
 DECL|queue|member|kfifo_t queue;
 DECL|queue|member|kfifo_t queue;
-DECL|raw_data|struct|struct raw_data {
 DECL|rcode|member|int rcode;
 DECL|rep_dataptr|member|void *rep_dataptr;
 DECL|rep_poolptr|member|void *rep_poolptr;
@@ -361,7 +354,6 @@ DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|size|member|int size;
 DECL|size|member|int size;
-DECL|source|member|void *source;
 DECL|source|member|void *source;
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
