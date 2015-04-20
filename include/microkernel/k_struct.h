@@ -4,7 +4,6 @@ DECL|Action|member|MovedAction Action;
 DECL|Args|member|K_ARGS_ARGS Args;
 DECL|Args|member|struct k_args *Args;
 DECL|Args|member|struct k_args *Args;
-DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
 DECL|Back|member|K_TIMER *Back;
@@ -29,7 +28,6 @@ DECL|ChProc|member|struct k_chproc ChProc;
 DECL|ChRef|member|} ChRef;
 DECL|ChReq|member|struct k_chreq ChReq;
 DECL|Comm|member|K_COMM Comm;
-DECL|Comm|member|int Comm;
 DECL|Comm|member|int Comm;
 DECL|Comm|member|int Comm;
 DECL|Comm|member|int Comm;
@@ -86,7 +84,6 @@ DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|INQSEMA|enumerator|INQSEMA,
 DECL|Ident|member|ktask_t Ident;
 DECL|Id|member|kpipe_t Id;
-DECL|Ind|member|int Ind;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_COMM|typedef|} K_COMM;
 DECL|K_CREF|typedef|} K_CREF;
@@ -174,9 +171,7 @@ DECL|TSTOP|enumerator|TSTOP,
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Task|member|ktask_t Task;
 DECL|Time|member|} Time;
-DECL|Ti|member|int Ti;
 DECL|Ti|member|int32_t Ti;
-DECL|Tr|member|int Tr;
 DECL|Tr|member|int32_t Tr;
 DECL|UNDEFINED|enumerator|UNDEFINED = -1
 DECL|UNLOCK|enumerator|UNLOCK,
@@ -232,7 +227,6 @@ DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z1arg|struct|struct _z1arg {
 DECL|_z2arg|struct|struct _z2arg {
-DECL|_z3arg|struct|struct _z3arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|int action;
@@ -362,5 +356,4 @@ DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
 DECL|z1|member|struct _z1arg z1;
 DECL|z2|member|struct _z2arg z2;
-DECL|z3|member|struct _z3arg z3;
 DECL|z4|member|struct _z4arg z4;
