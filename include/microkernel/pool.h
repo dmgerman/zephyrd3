@@ -2,6 +2,3 @@ DECL|POOL_H|macro|POOL_H
 DECL|task_mem_pool_alloc_wait_timeout|macro|task_mem_pool_alloc_wait_timeout
 DECL|task_mem_pool_alloc_wait|macro|task_mem_pool_alloc_wait
 DECL|task_mem_pool_alloc|macro|task_mem_pool_alloc
-DECL|task_mem_pool_move_wait_timeout|macro|task_mem_pool_move_wait_timeout
-DECL|task_mem_pool_move_wait|macro|task_mem_pool_move_wait
-DECL|task_mem_pool_move|macro|task_mem_pool_move
