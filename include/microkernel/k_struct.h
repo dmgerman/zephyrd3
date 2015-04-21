@@ -364,7 +364,6 @@ DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|source|member|void *source;
 DECL|source|member|void *source;
-DECL|srcnode|member|knode_t srcnode;
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
 DECL|task|member|ktask_t task;
