@@ -12,4 +12,6 @@ DECL|slice_count|variable|slice_count
 DECL|slice_prio|variable|slice_prio
 DECL|slice_time|variable|slice_time
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
+DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
+DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
