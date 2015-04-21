@@ -166,7 +166,6 @@ DECL|SPRIO|enumerator|SPRIO,
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|Snd|member|struct moved_req_args_snd Snd;
-DECL|Srce|member|knode_t Srce;
 DECL|State|member|uint32_t State;
 DECL|Status|member|CHREQ_STATUS Status; /* status of processing of request */
 DECL|Sync|member|struct sync_req Sync;
@@ -246,6 +245,7 @@ DECL|_z3arg|struct|struct _z3arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|int action;
+DECL|alloc|member|bool alloc; /* true if allocated via GETARGS(); else false */
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
