@@ -263,7 +263,6 @@ DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
 DECL|data|member|void *data;
 DECL|destination|member|void *destination;
 DECL|destination|member|void *destination;
-DECL|destnode|member|knode_t destnode;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|evstr|struct|struct evstr {
