@@ -1,5 +1,4 @@
 DECL|CHAN_H|macro|CHAN_H
-DECL|ENABLE_DEVICE_CHANNEL|macro|ENABLE_DEVICE_CHANNEL
 DECL|KS__ChannelGetWT|macro|KS__ChannelGetWT
 DECL|KS__ChannelPutWT|macro|KS__ChannelPutWT
 DECL|PFN_CHANNEL_RWT|typedef|typedef int (*PFN_CHANNEL_RWT)(kpipe_t,
