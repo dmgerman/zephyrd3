@@ -1,4 +1,4 @@
-DECL|_SpuriousIRQ|function|void _SpuriousIRQ(void *unused)
+DECL|_irq_spurious|function|void _irq_spurious(void *unused)
 DECL|irq_connect|function|int irq_connect(unsigned int irq, unsigned int prio, void (*isr)(void *arg), void *arg)
 DECL|irq_disable|function|void irq_disable(unsigned int irq)
 DECL|irq_disconnect|function|void irq_disconnect(unsigned int irq)
