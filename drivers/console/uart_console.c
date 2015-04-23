@@ -9,7 +9,7 @@ DECL|handler|variable|handler
 DECL|rcv_data|variable|rcv_data
 DECL|rcv_pos|variable|rcv_pos
 DECL|read_uart|function|static int read_uart(int uart, uint8_t *buf, unsigned int size)
-DECL|uartConsoleInit|function|void uartConsoleInit(void)
+DECL|uart_console_init|function|void uart_console_init(void)
 DECL|uart_console_isr|function|void uart_console_isr(void *unused)
 DECL|uart_register_handler|function|void uart_register_handler(void (*cb) (const char *string))
 DECL|uart_register_handler|macro|uart_register_handler
