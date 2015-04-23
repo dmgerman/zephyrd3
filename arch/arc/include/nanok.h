@@ -18,7 +18,6 @@ DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
 DECL|_IS_IN_ISR|function|static ALWAYS_INLINE int _IS_IN_ISR(void)
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANOK__H_|macro|_NANOK__H_
-DECL|activeLink|member|struct s_CCS *activeLink; /* link to next context in the active list */
 DECL|blink|member|uint32_t blink;
 DECL|callee_saved|struct|struct callee_saved {
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
@@ -47,6 +46,7 @@ DECL|lp_end|member|uint32_t lp_end;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
+DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pc|member|uint32_t pc;
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {

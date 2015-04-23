@@ -12,7 +12,6 @@ DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_NANOK__H_|macro|_NANOK__H_
-DECL|activeLink|member|struct s_CCS *activeLink; /* link to next context in the active list */
 DECL|basepri|member|uint32_t basepri;
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopReg|member|struct coop coopReg;
@@ -27,6 +26,7 @@ DECL|flags|member|uint32_t flags;
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
 DECL|link|member|struct s_CCS *link; /* singly-linked list in _NanoKernel.fibers */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
+DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
 DECL|prio|member|int prio;

@@ -324,7 +324,6 @@ DECL|_EXC_STUB_SIZE|macro|_EXC_STUB_SIZE
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANOK_H|macro|_NANOK_H
-DECL|activeLink|member|struct s_CCS *activeLink; /* link to next context in the active list */
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
@@ -365,6 +364,7 @@ DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
 DECL|nanoArchInit|function|static inline void nanoArchInit(void)
 DECL|nested|member|unsigned nested; /* nested interrupt count */
+DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
 DECL|pad2|member|unsigned short pad2; /* 2 : N/A */
 DECL|pad3|member|unsigned short pad3; /* 2 : N/A */
