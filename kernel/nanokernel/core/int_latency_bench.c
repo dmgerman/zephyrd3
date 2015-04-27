@@ -6,9 +6,9 @@ DECL|initial_start_delay|variable|initial_start_delay
 DECL|intLatencyBenchRdy|variable|intLatencyBenchRdy
 DECL|intLockUnlockNest|variable|intLockUnlockNest
 DECL|intLockedTimestamp|variable|intLockedTimestamp
-DECL|intLockingLatencyMax|variable|intLockingLatencyMax
 DECL|intLockingLatencyMin|variable|intLockingLatencyMin
 DECL|int_latency_init|function|void int_latency_init(void)
 DECL|int_latency_show|function|void int_latency_show(void)
+DECL|int_locked_latency_max|variable|int_locked_latency_max
 DECL|nestingDelay|variable|nestingDelay
 DECL|stopDelay|variable|stopDelay
