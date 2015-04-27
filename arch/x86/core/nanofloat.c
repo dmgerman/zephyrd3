@@ -1,8 +1,4 @@
-DECL|_FpAccessDisable|function|__asm volatile void _FpAccessDisable(void)
-DECL|_FpAccessDisable|function|static void _FpAccessDisable(void)
-DECL|_FpCtxInit|function|__asm volatile void _FpCtxInit(tCCS *ccs)
 DECL|_FpCtxInit|function|static inline void _FpCtxInit(tCCS *ccs)
-DECL|_FpCtxSave|function|__asm volatile void _FpCtxSave(tCCS *ccs)
 DECL|_FpCtxSave|function|static void _FpCtxSave(tCCS *ccs)
 DECL|_FpDisable|function|void _FpDisable(tCCS *ccs)
 DECL|_FpEnable|function|void _FpEnable(tCCS *ccs, unsigned int options /* USE_FP or USE_SSE */ )

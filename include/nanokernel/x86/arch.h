@@ -19,8 +19,6 @@ DECL|_NANO_ERR_INVALID_TASK_EXIT|macro|_NANO_ERR_INVALID_TASK_EXIT
 DECL|_NANO_ERR_PAGE_FAULT|macro|_NANO_ERR_PAGE_FAULT
 DECL|_NANO_ERR_SPURIOUS_INT|macro|_NANO_ERR_SPURIOUS_INT
 DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
-DECL|_NanoTscRead|function|__asm volatile uint64_t _NanoTscRead (void)
-DECL|_NanoTscRead|function|static inline uint64_t _NanoTscRead(void)
 DECL|cr2|member|unsigned int cr2; /* putting cr2 here allows discarding it and pEsf in
 DECL|cs|member|unsigned int cs;
 DECL|cs|member|unsigned int cs;
@@ -42,17 +40,11 @@ DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
 DECL|esp|member|unsigned int esp;
-DECL|find_first_set_inline|function|__asm volatile unsigned int find_first_set_inline( unsigned int op )
-DECL|find_first_set_inline|function|static inline unsigned int find_first_set_inline (unsigned int op)
-DECL|find_last_set_inline|function|__asm volatile unsigned int find_last_set_inline( unsigned int op )
-DECL|find_last_set_inline|function|static inline unsigned int find_last_set_inline (unsigned int op)
 DECL|fnc|member|void *fnc; /* Address of ISR/stub */
-DECL|irq_lock_inline|function|__asm volatile unsigned int irq_lock_inline (void)
-DECL|irq_lock_inline|function|unsigned int irq_lock_inline( void )
+DECL|irq_lock_inline|function|unsigned int irq_lock_inline(void)
 DECL|irq_lock_inline|macro|irq_lock_inline
 DECL|irq_lock|function|static inline unsigned int irq_lock(void) {return 1;}
-DECL|irq_unlock_inline|function|__asm volatile void irq_unlock_inline( unsigned int key )
-DECL|irq_unlock_inline|function|void irq_unlock_inline( unsigned int key )
+DECL|irq_unlock_inline|function|void irq_unlock_inline(unsigned int key)
 DECL|irq_unlock_inline|macro|irq_unlock_inline
 DECL|irq_unlock|function|static inline void irq_unlock(unsigned int key) {}
 DECL|nanoEsf|struct|typedef struct nanoEsf {

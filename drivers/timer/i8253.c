@@ -26,8 +26,6 @@ DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unusedArg /* not used */ )
 DECL|accumulatedCount|variable|accumulatedCount
 DECL|counterLoadVal|variable|counterLoadVal
-DECL|intLock_inline|function|__asm volatile unsigned int intLock_inline(void)
-DECL|intUnlock_inline|function|__asm volatile void intUnlock_inline(unsigned int key)
 DECL|oldAcc|variable|oldAcc
 DECL|oldCount|variable|oldCount
 DECL|timer_disable|function|void timer_disable(void)

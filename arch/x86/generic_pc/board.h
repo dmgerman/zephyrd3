@@ -66,15 +66,5 @@ DECL|UART_IOAPIC_FLAGS|macro|UART_IOAPIC_FLAGS
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_XTAL_FREQ|macro|UART_XTAL_FREQ
 DECL|__INCboardh|macro|__INCboardh
-DECL|inByte|function|__asm volatile unsigned char inByte(unsigned int port)
-DECL|inByte|function|static inline unsigned char inByte(unsigned int port)
-DECL|inLong|function|__asm volatile unsigned long inLong(unsigned int port)
-DECL|inLong|function|static inline unsigned long inLong(unsigned int port)
-DECL|inWord|function|__asm volatile unsigned short inWord(unsigned int port)
-DECL|inWord|function|static inline unsigned short inWord(unsigned int port)
-DECL|outByte|function|__asm volatile void outByte(unsigned char data, unsigned int port)
-DECL|outByte|function|static inline void outByte(unsigned char data, unsigned int port)
-DECL|outLong|function|__asm volatile void outLong(unsigned int data, unsigned int port)
-DECL|outLong|function|static inline void outLong(unsigned int data, unsigned int port)
-DECL|outWord|function|__asm volatile void outWord(unsigned short data, unsigned int port)
-DECL|outWord|function|static inline void outWord(unsigned short data, unsigned int port)
+DECL|inByte|macro|inByte
+DECL|outByte|macro|outByte

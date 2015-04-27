@@ -5,8 +5,6 @@ DECL|EFLAGS_INITIAL|macro|EFLAGS_INITIAL
 DECL|EFLAGS_MASK|macro|EFLAGS_MASK
 DECL|ESSENTIAL|macro|ESSENTIAL
 DECL|EXC_ACTIVE|macro|EXC_ACTIVE
-DECL|EflagsGet|function|__asm volatile unsigned int EflagsGet(void)
-DECL|EflagsGet|function|static inline unsigned int EflagsGet(void)
 DECL|FIBER|macro|FIBER
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
