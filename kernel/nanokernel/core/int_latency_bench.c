@@ -1,5 +1,5 @@
 DECL|NB_CACHE_WARMING_DRY_RUN|macro|NB_CACHE_WARMING_DRY_RUN
-DECL|_HwIntToCHandlerLatency|variable|_HwIntToCHandlerLatency
+DECL|_hw_irq_to_c_handler_latency|variable|_hw_irq_to_c_handler_latency
 DECL|_int_latency_start|function|void _int_latency_start(void)
 DECL|_int_latency_stop|function|void _int_latency_stop(void)
 DECL|initial_start_delay|variable|initial_start_delay
