@@ -1,5 +1,5 @@
 DECL|K_Args|variable|K_Args
 DECL|K_DebugHalt|variable|K_DebugHalt
-DECL|K_PrioBitMap|variable|K_PrioBitMap
 DECL|_k_server_command_stack_storage|variable|_k_server_command_stack_storage
+DECL|_k_task_priority_bitmap|variable|_k_task_priority_bitmap
 DECL|kernel_init|function|void kernel_init(void)
