@@ -1,12 +1,12 @@
 DECL|K_workload|function|void K_workload(struct k_args *P)
 DECL|K_workload|function|void K_workload(struct k_args *P)
 DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
-DECL|WldTDelta|variable|WldTDelta
 DECL|WldT_end|variable|WldT_end
 DECL|WldT_start|variable|WldT_start
 DECL|_GetNextTimerExpiry|function|static inline int32_t _GetNextTimerExpiry(void)
 DECL|_PowerSave|function|static void _PowerSave(void)
 DECL|_WlLoop|function|static void _WlLoop(void)
+DECL|_k_workload_delta|variable|_k_workload_delta
 DECL|_k_workload_i0|variable|_k_workload_i0
 DECL|_k_workload_i|variable|_k_workload_i
 DECL|_k_workload_n0|variable|_k_workload_n0
