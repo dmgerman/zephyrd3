@@ -1,6 +1,6 @@
 DECL|__ctor_nano_time_init|variable|__ctor_nano_time_init
 DECL|_nano_ticks|variable|_nano_ticks
-DECL|nanoTimerList|variable|nanoTimerList
+DECL|_nano_timer_list|variable|_nano_timer_list
 DECL|nano_node_cycle_get_32|function|uint32_t nano_node_cycle_get_32(void)
 DECL|nano_node_tick_delta|function|uint32_t nano_node_tick_delta(uint64_t *reftime)
 DECL|nano_node_tick_get_32|function|uint32_t nano_node_tick_get_32(void)
