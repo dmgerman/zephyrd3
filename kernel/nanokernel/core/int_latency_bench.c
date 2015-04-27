@@ -11,4 +11,4 @@ DECL|int_latency_init|function|void int_latency_init(void)
 DECL|int_latency_show|function|void int_latency_show(void)
 DECL|int_locked_latency_max|variable|int_locked_latency_max
 DECL|nesting_delay|variable|nesting_delay
-DECL|stopDelay|variable|stopDelay
+DECL|stop_delay|variable|stop_delay
