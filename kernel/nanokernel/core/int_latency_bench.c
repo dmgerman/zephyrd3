@@ -3,10 +3,10 @@ DECL|_hw_irq_to_c_handler_latency|variable|_hw_irq_to_c_handler_latency
 DECL|_int_latency_start|function|void _int_latency_start(void)
 DECL|_int_latency_stop|function|void _int_latency_stop(void)
 DECL|initial_start_delay|variable|initial_start_delay
-DECL|intLatencyBenchRdy|variable|intLatencyBenchRdy
 DECL|intLockUnlockNest|variable|intLockUnlockNest
 DECL|intLockedTimestamp|variable|intLockedTimestamp
 DECL|intLockingLatencyMin|variable|intLockingLatencyMin
+DECL|int_latency_bench_ready|variable|int_latency_bench_ready
 DECL|int_latency_init|function|void int_latency_init(void)
 DECL|int_latency_show|function|void int_latency_show(void)
 DECL|int_locked_latency_max|variable|int_locked_latency_max
