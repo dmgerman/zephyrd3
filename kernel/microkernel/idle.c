@@ -9,13 +9,13 @@ DECL|WldT1|variable|WldT1
 DECL|WldTDelta|variable|WldTDelta
 DECL|WldT_end|variable|WldT_end
 DECL|WldT_start|variable|WldT_start
-DECL|WldTicks|variable|WldTicks
 DECL|Wld_i0|variable|Wld_i0
 DECL|Wld_i|variable|Wld_i
 DECL|_GetNextTimerExpiry|function|static inline int32_t _GetNextTimerExpiry(void)
 DECL|_PowerSave|function|static void _PowerSave(void)
 DECL|_WlLoop|function|static void _WlLoop(void)
 DECL|_k_workload_slice|variable|_k_workload_slice
+DECL|_k_workload_ticks|variable|_k_workload_ticks
 DECL|kernel_idle|function|int kernel_idle(void)
 DECL|task_node_workload_get|function|int task_node_workload_get(void)
 DECL|wlMonitorCalibrate|function|void wlMonitorCalibrate(void)
