@@ -18,5 +18,5 @@ DECL|_k_workload_ticks|variable|_k_workload_ticks
 DECL|_workload_loop|function|static void _workload_loop(void)
 DECL|kernel_idle|function|int kernel_idle(void)
 DECL|task_node_workload_get|function|int task_node_workload_get(void)
-DECL|wlMonitorCalibrate|function|void wlMonitorCalibrate(void)
+DECL|workload_monitor_calibrate|function|void workload_monitor_calibrate(void)
 DECL|workload_time_slice_set|function|void workload_time_slice_set(int32_t t)
