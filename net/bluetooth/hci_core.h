@@ -1,3 +1,4 @@
+DECL|acl_pend|member|struct nano_fifo acl_pend;
 DECL|adv_enable|member|uint8_t adv_enable;
 DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_dev|struct|struct bt_dev {
