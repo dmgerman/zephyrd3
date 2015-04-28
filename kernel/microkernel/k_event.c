@@ -1,5 +1,5 @@
 DECL|K_event_signal|function|void K_event_signal(struct k_args *A)
-DECL|K_sigevent|function|void K_sigevent(kevent_t event)
+DECL|_k_do_event_signal|function|void _k_do_event_signal(kevent_t event)
 DECL|_k_event_handler_set|function|void _k_event_handler_set(struct k_args *A)
 DECL|_k_event_test_timeout|function|void _k_event_test_timeout(struct k_args *A)
 DECL|_k_event_test|function|void _k_event_test(struct k_args *A)
