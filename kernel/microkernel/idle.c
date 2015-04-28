@@ -1,7 +1,7 @@
-DECL|K_workload|function|void K_workload(struct k_args *P)
-DECL|K_workload|function|void K_workload(struct k_args *P)
 DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
 DECL|_get_next_timer_expiry|function|static inline int32_t _get_next_timer_expiry(void)
+DECL|_k_node_workload_get|function|void _k_node_workload_get(struct k_args *P)
+DECL|_k_node_workload_get|function|void _k_node_workload_get(struct k_args *P)
 DECL|_k_workload_delta|variable|_k_workload_delta
 DECL|_k_workload_end_time|variable|_k_workload_end_time
 DECL|_k_workload_i0|variable|_k_workload_i0
