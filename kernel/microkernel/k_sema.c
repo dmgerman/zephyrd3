@@ -1,4 +1,3 @@
-DECL|K_inqsema|function|void K_inqsema(struct k_args *A)
 DECL|_k_sem_group_ready|function|void _k_sem_group_ready(struct k_args *R)
 DECL|_k_sem_group_reset|function|void _k_sem_group_reset(struct k_args *A)
 DECL|_k_sem_group_signal|function|void _k_sem_group_signal(struct k_args *A)
@@ -8,6 +7,7 @@ DECL|_k_sem_group_wait_cancel|function|void _k_sem_group_wait_cancel(struct k_ar
 DECL|_k_sem_group_wait_request|function|void _k_sem_group_wait_request(struct k_args *A)
 DECL|_k_sem_group_wait_timeout|function|void _k_sem_group_wait_timeout(struct k_args *A)
 DECL|_k_sem_group_wait|function|void _k_sem_group_wait(struct k_args *R)
+DECL|_k_sem_inquiry|function|void _k_sem_inquiry(struct k_args *A)
 DECL|_k_sem_reset|function|void _k_sem_reset(struct k_args *A)
 DECL|_k_sem_signal|function|void _k_sem_signal(struct k_args *A)
 DECL|_k_sem_wait_reply|function|void _k_sem_wait_reply(struct k_args *A)
