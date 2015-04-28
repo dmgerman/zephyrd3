@@ -1,6 +1,6 @@
-DECL|K_recvdata|function|void K_recvdata(struct k_args *Starter)
 DECL|K_senddata|function|void K_senddata(struct k_args *Starter)
 DECL|_k_mbox_receive_ack|function|void _k_mbox_receive_ack(struct k_args *pCopyReader)
+DECL|_k_mbox_receive_data|function|void _k_mbox_receive_data(struct k_args *Starter)
 DECL|_k_mbox_receive_reply|function|void _k_mbox_receive_reply(struct k_args *pCopyReader)
 DECL|_k_mbox_receive_request|function|void _k_mbox_receive_request(struct k_args *Reader)
 DECL|_k_mbox_send_ack|function|void _k_mbox_send_ack(struct k_args *pCopyWriter)
