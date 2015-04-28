@@ -1,10 +1,10 @@
 DECL|INVALID_TASK|macro|INVALID_TASK
 DECL|IRQ_STUB|macro|IRQ_STUB
 DECL|IRQ_STUB|macro|IRQ_STUB
-DECL|K_taskirqalloc|function|static int K_taskirqalloc(void *arg /* ptr to registration request arguments */ )
 DECL|MAX_TASK_IRQS|macro|MAX_TASK_IRQS
 DECL|RELEASE_VECTOR|macro|RELEASE_VECTOR
 DECL|RELEASE_VECTOR|macro|RELEASE_VECTOR
+DECL|_k_task_irq_alloc|function|static int _k_task_irq_alloc(void *arg /* ptr to registration request arguments */ )
 DECL|_task_irq_test|function|int _task_irq_test(kirq_t irq_obj, /* IRQ object identifier */ int32_t time /* time to wait (in ticks) */ )
 DECL|irq_obj_mem_stub|variable|irq_obj_mem_stub
 DECL|irq_obj_reg_arg|struct|struct irq_obj_reg_arg {
