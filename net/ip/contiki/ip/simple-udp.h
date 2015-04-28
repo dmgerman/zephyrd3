@@ -9,3 +9,4 @@ DECL|simple_udp_callback|typedef|typedef void (* simple_udp_callback)(struct sim
 DECL|simple_udp_connection|struct|struct simple_udp_connection {
 DECL|simple_udp_process|variable|simple_udp_process
 DECL|udp_conn|member|struct uip_udp_conn *udp_conn;
+DECL|user_data|member|void *user_data;
