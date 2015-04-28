@@ -1,7 +1,6 @@
 DECL|K_workload|function|void K_workload(struct k_args *P)
 DECL|K_workload|function|void K_workload(struct k_args *P)
 DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
-DECL|_PowerSave|function|static void _PowerSave(void)
 DECL|_get_next_timer_expiry|function|static inline int32_t _get_next_timer_expiry(void)
 DECL|_k_workload_delta|variable|_k_workload_delta
 DECL|_k_workload_end_time|variable|_k_workload_end_time
@@ -15,6 +14,7 @@ DECL|_k_workload_start_time|variable|_k_workload_start_time
 DECL|_k_workload_t0|variable|_k_workload_t0
 DECL|_k_workload_t1|variable|_k_workload_t1
 DECL|_k_workload_ticks|variable|_k_workload_ticks
+DECL|_power_save|function|static void _power_save(void)
 DECL|_workload_loop|function|static void _workload_loop(void)
 DECL|kernel_idle|function|int kernel_idle(void)
 DECL|task_node_workload_get|function|int task_node_workload_get(void)
