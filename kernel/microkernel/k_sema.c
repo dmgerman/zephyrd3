@@ -1,6 +1,6 @@
 DECL|K_inqsema|function|void K_inqsema(struct k_args *A)
-DECL|K_resetm|function|void K_resetm(struct k_args *A)
 DECL|_k_sem_group_ready|function|void _k_sem_group_ready(struct k_args *R)
+DECL|_k_sem_group_reset|function|void _k_sem_group_reset(struct k_args *A)
 DECL|_k_sem_group_signal|function|void _k_sem_group_signal(struct k_args *A)
 DECL|_k_sem_group_wait_accept|function|void _k_sem_group_wait_accept(struct k_args *A)
 DECL|_k_sem_group_wait_any|function|void _k_sem_group_wait_any(struct k_args *A)
