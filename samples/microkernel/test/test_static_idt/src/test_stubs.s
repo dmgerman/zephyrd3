@@ -46,6 +46,7 @@ testing.
 #include <nanok.h>
 #include <nanokernel/x86/asm.h>
 #include <asmPrv.h>
+#include <asm_inline.h>
 
 	/* exports (internal APIs) */
 
@@ -56,14 +57,7 @@ testing.
 
 
 /* Static exception handler stubs */
-#if defined(__GNUC__)
-NANO_CPU_EXC_CONNECT_NO_ERR(exc_divide_error_handler,IV_DIVIDE_ERROR,0)
-#elif defined(__DCC__)
-	NANO_CPU_INT_REGISTER_ASM(exc_divide_error_handler,IV_DIVIDE_ERROR,0)
-	GTEXT(MK_STUB_NAME(exc_divide_error_handler))
-SECTION_FUNC(TEXT, MK_STUB_NAME(exc_divide_error_handler))
-	NANO_CPU_EXC_CONNECT_NO_ERR_CODE(exc_divide_error_handler)
-#endif
+SYS_NANO_CPU_EXC_CONNECT(exc_divide_error_handler,IV_DIVIDE_ERROR)
 
 /* Static interrupt handler stubs */
 

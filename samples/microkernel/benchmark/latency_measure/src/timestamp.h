@@ -10,7 +10,6 @@ DECL|TICK_TYPE|typedef|typedef int64_t TICK_TYPE;
 DECL|TICK_TYPE|typedef|typedef uint64_t TICK_TYPE;
 DECL|TIME_STAMP_DELTA_GET|function|static inline uint32_t TIME_STAMP_DELTA_GET (uint32_t ts)
 DECL|_TIMESTAMP_H_|macro|_TIMESTAMP_H_
-DECL|_TIME_STAMP_DELTA_GET_inline|function|__asm volatile void _TIME_STAMP_DELTA_GET_inline (void)
 DECL|bench_test_end|function|static inline int bench_test_end (void)
 DECL|bench_test_init|function|static inline void bench_test_init (void)
 DECL|bench_test_start|function|static inline void bench_test_start (void)

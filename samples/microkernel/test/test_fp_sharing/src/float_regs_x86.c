@@ -1,7 +1,0 @@
-DECL|_LoadAllFloatRegisters_inline|function|__asm volatile void _LoadAllFloatRegisters_inline(FP_REG_SET *pFromBuffer)
-DECL|_LoadAllFloatRegisters|function|void _LoadAllFloatRegisters (FP_REG_SET *pFromBuffer)
-DECL|_LoadThenStoreAllFloatRegisters_inline|function|__asm volatile void _LoadThenStoreAllFloatRegisters_inline(FP_REG_SET *pFromToBuffer)
-DECL|_LoadThenStoreAllFloatRegisters|function|void _LoadThenStoreAllFloatRegisters (FP_REG_SET *pFromToBuffer)
-DECL|_StoreAllFloatRegisters_inline|function|__asm volatile void _StoreAllFloatRegisters_inline(FP_REG_SET *pToBuffer)
-DECL|_StoreAllFloatRegisters|function|void _StoreAllFloatRegisters (FP_REG_SET *pToBuffer)
-DECL|_StoreNonVolatileFloatRegisters|function|void _StoreNonVolatileFloatRegisters (FP_NONVOLATILE_REG_SET *pToBuffer)
