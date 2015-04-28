@@ -1,7 +1,7 @@
-DECL|InitMap|function|void InitMap(void)
 DECL|K_alloctmo|function|void K_alloctmo(struct k_args *A)
 DECL|K_alloc|function|void K_alloc(struct k_args *A)
 DECL|K_dealloc|function|void K_dealloc(struct k_args *A)
+DECL|_mem_map_init|function|void _mem_map_init(void)
 DECL|_task_mem_map_alloc|function|int _task_mem_map_alloc(kmemory_map_t mmap, /* memory map from which to request block */ void **mptr, /* pointer to requested block of memory */ int32_t time /* maximum # of ticks for which to wait */ )
 DECL|_task_mem_map_free|function|void _task_mem_map_free(kmemory_map_t mmap, /* memory map */ void **mptr /* block of memory to return */ )
 DECL|task_mem_map_used_get|function|int task_mem_map_used_get(kmemory_map_t mmap /* memory map */ )
