@@ -1,7 +1,7 @@
-DECL|K_set_prio|function|void K_set_prio(struct k_args *A)
 DECL|K_yield|function|void K_yield(struct k_args *A)
 DECL|_k_task_group_op|function|void _k_task_group_op(struct k_args *A)
 DECL|_k_task_op|function|void _k_task_op(struct k_args *A)
+DECL|_k_task_priority_set|function|void _k_task_priority_set(struct k_args *A)
 DECL|_task_group_ioctl|function|void _task_group_ioctl(ktask_group_t group, /* task group */ int opt /* operation */ )
 DECL|_task_ioctl|function|void _task_ioctl(ktask_t task, /* task on which to operate */ int opt /* task operation */ )
 DECL|abort_task|function|void abort_task(struct k_proc *X)
