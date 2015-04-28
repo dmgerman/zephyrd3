@@ -5,12 +5,15 @@ DECL|BT_CMD|enumerator|BT_CMD, /* HCI command */
 DECL|BT_EVT|enumerator|BT_EVT, /* HCI event */
 DECL|__BT_BUF_H|macro|__BT_BUF_H
 DECL|__unused|member|int __unused;
+DECL|acl|member|struct bt_buf_acl_data acl;
+DECL|bt_buf_acl_data|struct|struct bt_buf_acl_data {
 DECL|bt_buf_hci_data|struct|struct bt_buf_hci_data {
 DECL|bt_buf_tail|macro|bt_buf_tail
 DECL|bt_buf_type|enum|enum bt_buf_type {
 DECL|bt_buf|struct|struct bt_buf {
 DECL|buf|member|uint8_t buf[BT_BUF_MAX_DATA];
 DECL|data|member|uint8_t *data;
+DECL|handle|member|uint16_t handle;
 DECL|hci|member|struct bt_buf_hci_data hci;
 DECL|len|member|uint8_t len;
 DECL|opcode|member|uint16_t opcode;
