@@ -4,7 +4,7 @@ DECL|AD_NONE|macro|AD_NONE
 DECL|AUTODEFRAG|macro|AUTODEFRAG
 DECL|K_GetBlock|function|void K_GetBlock(struct k_args *A)
 DECL|K_RelBlock|function|void K_RelBlock(struct k_args *A)
-DECL|K_gtbltmo|function|void K_gtbltmo(struct k_args *A)
+DECL|_k_block_get_timeout_handle|function|void _k_block_get_timeout_handle(struct k_args *A)
 DECL|_k_block_waiters_get|function|void _k_block_waiters_get(struct k_args *A)
 DECL|_k_defrag|function|void _k_defrag(struct k_args *A)
 DECL|_mem_pools_init|function|void _mem_pools_init(void)
