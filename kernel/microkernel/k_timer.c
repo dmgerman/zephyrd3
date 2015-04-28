@@ -1,5 +1,5 @@
 DECL|K_elapse|function|void K_elapse(struct k_args *P)
-DECL|K_sleep|function|void K_sleep(struct k_args *P)
+DECL|_k_task_sleep|function|void _k_task_sleep(struct k_args *P)
 DECL|_k_task_wakeup|function|void _k_task_wakeup(struct k_args *P)
 DECL|_k_timer_alloc|function|void _k_timer_alloc(struct k_args *P /* pointer to timer allocation request arguments */ )
 DECL|_k_timer_dealloc|function|void _k_timer_dealloc(struct k_args *P)
