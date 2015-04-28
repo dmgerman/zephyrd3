@@ -8,6 +8,7 @@ DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
+DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_LE_SET_ADV_DATA|macro|BT_HCI_OP_LE_SET_ADV_DATA
@@ -32,7 +33,8 @@ DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
 DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OP|macro|BT_OP
-DECL|PACK_STRUCT|member|} h[0] PACK_STRUCT;
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -65,6 +67,7 @@ DECL|bt_acl_handle|macro|bt_acl_handle
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
+DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
@@ -77,6 +80,7 @@ DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
+DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
@@ -103,6 +107,8 @@ DECL|handle|member|uint16_t handle;
 DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
+DECL|h|member|struct bt_hci_handle_count h[0];
+DECL|h|member|struct bt_hci_handle_count h[0];
 DECL|interval|member|uint16_t interval;
 DECL|latency|member|uint16_t latency;
 DECL|le_max_len|member|uint16_t le_max_len;
@@ -119,6 +125,7 @@ DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
+DECL|num_handles|member|uint8_t num_handles;
 DECL|num_handles|member|uint8_t num_handles;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
