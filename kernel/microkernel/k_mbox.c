@@ -11,7 +11,7 @@ DECL|_task_mbox_data_get|function|void _task_mbox_data_get(struct k_msg *M /* me
 DECL|_task_mbox_get|function|int _task_mbox_get(kmbox_t mbox, /* mailbox */ struct k_msg *M, /* pointer to message */ int32_t time /* maximum number of ticks to wait */ )
 DECL|_task_mbox_put_async|function|void _task_mbox_put_async(kmbox_t mbox, /* mailbox to which to send message */ kpriority_t prio, /* priority of data transfer */ struct k_msg *M, /* pointer to message to send */ ksem_t sema /* semaphore to signal when transfer is complete */ )
 DECL|_task_mbox_put|function|int _task_mbox_put(kmbox_t mbox, /* mailbox */ kpriority_t prio, /* priority of data transfer */ struct k_msg *M, /* pointer to message to send */ int32_t time /* maximum number of ticks to wait */ )
-DECL|copypacket|function|static void copypacket(struct k_args **out, struct k_args *in)
+DECL|copy_packet|function|static void copy_packet(struct k_args **out, struct k_args *in)
 DECL|match|function|static int match(struct k_args *Reader, struct k_args *Writer)
 DECL|prepare_transfer|function|static BOOL prepare_transfer(struct k_args *move, struct k_args *reader, struct k_args *writer)
 DECL|transfer|function|static void transfer(struct k_args *pMvdReq)
