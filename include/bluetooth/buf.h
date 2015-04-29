@@ -2,6 +2,7 @@ DECL|BT_ACL_IN|enumerator|BT_ACL_IN, /* Incoming ACL data */
 DECL|BT_ACL_OUT|enumerator|BT_ACL_OUT, /* Outgoing ACL data */
 DECL|BT_BUF_MAX_DATA|macro|BT_BUF_MAX_DATA
 DECL|BT_CMD|enumerator|BT_CMD, /* HCI command */
+DECL|BT_DUMMY|enumerator|BT_DUMMY = BT_CMD, /* Only used for waking up fibers */
 DECL|BT_EVT|enumerator|BT_EVT, /* HCI event */
 DECL|__BT_BUF_H|macro|__BT_BUF_H
 DECL|__unused|member|int __unused;
