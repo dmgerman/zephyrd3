@@ -322,7 +322,7 @@ DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
 DECL|ticks|member|int32_t ticks;
 DECL|time1|member|int64_t time1;
-DECL|time2|member|int32_t time2;
+DECL|time2|member|int64_t time2;
 DECL|timer|member|K_TIMER *timer;
 DECL|timer|member|K_TIMER *timer;
 DECL|timer|member|int timer;

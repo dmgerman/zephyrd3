@@ -1,9 +1,12 @@
 DECL|__ctor_nano_time_init|variable|__ctor_nano_time_init
+DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_nano_ticks|variable|_nano_ticks
 DECL|_nano_timer_list|variable|_nano_timer_list
 DECL|nano_cycle_get_32|function|uint32_t nano_cycle_get_32(void)
-DECL|nano_tick_delta|function|uint32_t nano_tick_delta(uint64_t *reftime)
+DECL|nano_tick_delta_32|function|uint32_t nano_tick_delta_32(int64_t *reftime)
+DECL|nano_tick_delta|function|int64_t nano_tick_delta(int64_t *reftime)
 DECL|nano_tick_get_32|function|uint32_t nano_tick_get_32(void)
+DECL|nano_tick_get|function|int64_t nano_tick_get(void)
 DECL|nano_time_init|function|NANO_INIT_SYS_NORMAL void nano_time_init(void)
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick

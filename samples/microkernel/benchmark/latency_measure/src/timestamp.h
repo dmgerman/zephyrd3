@@ -7,7 +7,7 @@ DECL|TICK_GET|macro|TICK_GET
 DECL|TICK_SYNCH|function|static inline void TICK_SYNCH (void)
 DECL|TICK_SYNCH|macro|TICK_SYNCH
 DECL|TICK_TYPE|typedef|typedef int64_t TICK_TYPE;
-DECL|TICK_TYPE|typedef|typedef uint64_t TICK_TYPE;
+DECL|TICK_TYPE|typedef|typedef int64_t TICK_TYPE;
 DECL|TIME_STAMP_DELTA_GET|function|static inline uint32_t TIME_STAMP_DELTA_GET (uint32_t ts)
 DECL|_TIMESTAMP_H_|macro|_TIMESTAMP_H_
 DECL|bench_test_end|function|static inline int bench_test_end (void)

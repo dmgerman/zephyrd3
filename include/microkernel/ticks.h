@@ -4,3 +4,4 @@ DECL|_timer_ptr_to_id|function|static inline ktimer_t _timer_ptr_to_id(K_TIMER *
 DECL|isr_cycle_get_32|macro|isr_cycle_get_32
 DECL|isr_tick_get_32|macro|isr_tick_get_32
 DECL|isr_tick_get|macro|isr_tick_get
+DECL|task_tick_delta_32|function|static inline int32_t task_tick_delta_32(int64_t *reftime)
