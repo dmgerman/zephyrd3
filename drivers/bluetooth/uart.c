@@ -10,7 +10,7 @@ DECL|bt_uart_evt_recv|function|static struct bt_buf *bt_uart_evt_recv(int *remai
 DECL|bt_uart_init|function|void bt_uart_init(void)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
 DECL|bt_uart_open|function|static int bt_uart_open()
-DECL|bt_uart_read|function|static int bt_uart_read(int uart, uint8_t *buf, size_t len)
+DECL|bt_uart_read|function|static int bt_uart_read(int uart, uint8_t *buf, size_t len, size_t min)
 DECL|bt_uart_send|function|static int bt_uart_send(struct bt_buf *buf)
 DECL|bt_uart_setup|function|static void bt_uart_setup(int uart, struct uart_init_info *info)
 DECL|drv|variable|drv
