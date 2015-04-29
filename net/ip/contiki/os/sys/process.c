@@ -1,9 +1,9 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
 DECL|PROCESS_STATE_CALLED|macro|PROCESS_STATE_CALLED
 DECL|PROCESS_STATE_NONE|macro|PROCESS_STATE_NONE
 DECL|PROCESS_STATE_RUNNING|macro|PROCESS_STATE_RUNNING
+DECL|UIP_LOG|macro|UIP_LOG
+DECL|UIP_LOG|macro|UIP_LOG
 DECL|call_process|function|call_process(struct process *p, process_event_t ev, process_data_t data,struct net_buf *buf)
 DECL|data|member|process_data_t data;
 DECL|do_event|function|do_event(struct net_buf *buf)

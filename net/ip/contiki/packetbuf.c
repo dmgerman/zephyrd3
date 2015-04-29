@@ -1,6 +1,7 @@
+DECL|DEBUG_LEVEL|macro|DEBUG_LEVEL
 DECL|DEBUG|macro|DEBUG
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
+DECL|UIP_LOG|macro|UIP_LOG
+DECL|UIP_LOG|macro|UIP_LOG
 DECL|packetbuf_addr|function|packetbuf_addr(struct net_buf *buf, uint8_t type)
 DECL|packetbuf_attr_clear|function|packetbuf_attr_clear(struct net_buf *buf)
 DECL|packetbuf_attr_copyfrom|function|packetbuf_attr_copyfrom(struct net_buf *buf, struct packetbuf_attr *attrs, struct packetbuf_addr *addrs)

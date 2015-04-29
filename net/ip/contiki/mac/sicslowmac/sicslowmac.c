@@ -3,6 +3,8 @@ DECL|PRINTADDR|macro|PRINTADDR
 DECL|PRINTADDR|macro|PRINTADDR
 DECL|PRINTF|macro|PRINTF
 DECL|PRINTF|macro|PRINTF
+DECL|UIP_LOG|macro|UIP_LOG
+DECL|UIP_LOG|macro|UIP_LOG
 DECL|channel_check_interval|function|channel_check_interval(void)
 DECL|init|function|init(void)
 DECL|input_packet|function|input_packet(struct net_buf *buf)

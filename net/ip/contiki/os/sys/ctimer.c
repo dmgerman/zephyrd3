@@ -1,7 +1,7 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
 DECL|PROCESS_THREAD|function|PROCESS_THREAD(ctimer_process, ev, data, buf)
+DECL|UIP_LOG|macro|UIP_LOG
+DECL|UIP_LOG|macro|UIP_LOG
 DECL|ctimer_expired|function|ctimer_expired(struct ctimer *c)
 DECL|ctimer_init|function|ctimer_init(void)
 DECL|ctimer_list|variable|ctimer_list
