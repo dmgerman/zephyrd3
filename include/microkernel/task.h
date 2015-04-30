@@ -6,7 +6,6 @@ DECL|TASK_GROUP_UNBLOCK|macro|TASK_GROUP_UNBLOCK
 DECL|TASK_H|macro|TASK_H
 DECL|TASK_UNBLOCK|macro|TASK_UNBLOCK
 DECL|USR_GROUP|macro|USR_GROUP
-DECL|isr_node_id_get|macro|isr_node_id_get
 DECL|isr_task_group_mask_get|macro|isr_task_group_mask_get
 DECL|isr_task_id_get|macro|isr_task_id_get
 DECL|isr_task_priority_get|macro|isr_task_priority_get
