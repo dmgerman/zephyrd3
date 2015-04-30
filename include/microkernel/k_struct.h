@@ -163,7 +163,6 @@ DECL|TSTART|enumerator|TSTART,
 DECL|TSTOP|enumerator|TSTOP,
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Tr|member|int32_t Tr;
 DECL|UNDEFINED|enumerator|UNDEFINED = -1
 DECL|UNLOCK|enumerator|UNLOCK,
 DECL|WAITMACC|enumerator|WAITMACC,
@@ -287,6 +286,7 @@ DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
+DECL|period|member|int32_t period;
 DECL|pipe_struct|struct|struct pipe_struct {
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
