@@ -13,5 +13,4 @@ DECL|task_group_join|macro|task_group_join
 DECL|task_group_leave|macro|task_group_leave
 DECL|task_group_mask_get|macro|task_group_mask_get
 DECL|task_id_get|macro|task_id_get
-DECL|task_node_id_get|macro|task_node_id_get
 DECL|task_priority_get|macro|task_priority_get
