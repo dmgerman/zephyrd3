@@ -18,5 +18,6 @@ DECL|handle|member|uint16_t handle;
 DECL|hci|member|struct bt_buf_hci_data hci;
 DECL|len|member|uint8_t len;
 DECL|opcode|member|uint16_t opcode;
+DECL|ref|member|uint8_t ref;
 DECL|sync|member|struct nano_sem *sync;
 DECL|type|member|uint8_t type;
