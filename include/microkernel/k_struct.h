@@ -163,7 +163,6 @@ DECL|TSTART|enumerator|TSTART,
 DECL|TSTOP|enumerator|TSTOP,
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Ti|member|int32_t Ti;
 DECL|Tr|member|int32_t Tr;
 DECL|UNDEFINED|enumerator|UNDEFINED = -1
 DECL|UNLOCK|enumerator|UNLOCK,
@@ -224,6 +223,7 @@ DECL|data2|member|uint32_t data2;
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
 DECL|destination|member|void *destination;
+DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|evstr|struct|struct evstr {
