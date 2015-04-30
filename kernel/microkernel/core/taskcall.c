@@ -1,1 +1,1 @@
-DECL|K_taskcall|function|void K_taskcall(struct k_args *cmdpacket)
+DECL|_k_task_call|function|void _k_task_call(struct k_args *cmdpacket)
