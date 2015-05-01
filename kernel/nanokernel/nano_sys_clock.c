@@ -1,7 +1,9 @@
 DECL|__ctor_nano_time_init|variable|__ctor_nano_time_init
+DECL|_do_sys_clock_tick_announce|function|void _do_sys_clock_tick_announce(uint32_t ticks)
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_nano_ticks|variable|_nano_ticks
 DECL|_nano_timer_list|variable|_nano_timer_list
+DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
 DECL|nano_cycle_get_32|function|uint32_t nano_cycle_get_32(void)
 DECL|nano_tick_delta_32|function|uint32_t nano_tick_delta_32(int64_t *reftime)
 DECL|nano_tick_delta|function|int64_t nano_tick_delta(int64_t *reftime)
