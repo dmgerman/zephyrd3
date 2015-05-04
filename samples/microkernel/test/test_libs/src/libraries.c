@@ -5,6 +5,7 @@ DECL|limitsTest|function|int limitsTest(void)
 DECL|longMax|variable|longMax
 DECL|longOne|variable|longOne
 DECL|longVariable|variable|longVariable
+DECL|memset_test|function|int memset_test(void)
 DECL|sizeOfLongVariable|variable|sizeOfLongVariable
 DECL|stdboolTest|function|int stdboolTest(void)
 DECL|stddefTest|function|int stddefTest(void)
