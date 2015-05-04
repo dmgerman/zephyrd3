@@ -31,7 +31,6 @@ DECL|kmbox_t|typedef|typedef uint32_t kmbox_t;
 DECL|kmemory_map_t|typedef|typedef uint32_t kmemory_map_t;
 DECL|kmemory_pool_t|typedef|typedef uint32_t kmemory_pool_t;
 DECL|kmutex_t|typedef|typedef uint32_t kmutex_t;
-DECL|knode_t|typedef|typedef uint32_t knode_t;
 DECL|kpipe_t|typedef|typedef uint32_t kpipe_t;
 DECL|kpriority_t|typedef|typedef uint32_t kpriority_t;
 DECL|ksem_t|typedef|typedef int32_t ksem_t;
