@@ -20,7 +20,7 @@ DECL|longTimer|variable|longTimer
 DECL|main|function|void main(void)
 DECL|midTimerData|variable|midTimerData
 DECL|midTimer|variable|midTimer
-DECL|nano_node_cycle_get_32Test|function|int nano_node_cycle_get_32Test(void)
+DECL|nano_cycle_get_32Test|function|int nano_cycle_get_32Test(void)
 DECL|shortTimerData|variable|shortTimerData
 DECL|shortTimer|variable|shortTimer
 DECL|startTimers|function|void startTimers(timer_start_func startRtn)
