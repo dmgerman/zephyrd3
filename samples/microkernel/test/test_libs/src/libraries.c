@@ -14,5 +14,6 @@ DECL|strcmp_test|function|int strcmp_test (void)
 DECL|strcpy_test|function|int strcpy_test (void)
 DECL|stringTest|function|int stringTest(void)
 DECL|strlen_test|function|int strlen_test(void)
+DECL|strncpy_test|function|int strncpy_test (void)
 DECL|unsignedByte|variable|unsignedByte
 DECL|unsignedInt|variable|unsignedInt
