@@ -19,4 +19,5 @@ DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_queue|member|struct nano_fifo tx_queue;
-DECL|udp_packet_recv|function|static void udp_packet_recv(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
+DECL|udp_packet_receive|function|static void udp_packet_receive(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
+DECL|udp_packet_reply|function|static void udp_packet_reply(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
