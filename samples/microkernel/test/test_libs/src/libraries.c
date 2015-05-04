@@ -10,6 +10,7 @@ DECL|sizeOfLongVariable|variable|sizeOfLongVariable
 DECL|stdboolTest|function|int stdboolTest(void)
 DECL|stddefTest|function|int stddefTest(void)
 DECL|stdintTest|function|int stdintTest(void)
+DECL|strcmp_test|function|int strcmp_test (void)
 DECL|stringTest|function|int stringTest(void)
 DECL|strlen_test|function|int strlen_test(void)
 DECL|unsignedByte|variable|unsignedByte
