@@ -3,7 +3,7 @@ DECL|_nano_ticks|variable|_nano_ticks
 DECL|_nano_timer_list|variable|_nano_timer_list
 DECL|nano_node_cycle_get_32|function|uint32_t nano_node_cycle_get_32(void)
 DECL|nano_node_tick_delta|function|uint32_t nano_node_tick_delta(uint64_t *reftime)
-DECL|nano_node_tick_get_32|function|uint32_t nano_node_tick_get_32(void)
+DECL|nano_tick_get_32|function|uint32_t nano_tick_get_32(void)
 DECL|nano_time_init|function|NANO_INIT_SYS_NORMAL void nano_time_init(void)
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
