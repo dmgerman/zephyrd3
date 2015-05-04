@@ -27,6 +27,8 @@ DECL|pkt_packetbuf_attrs|member|struct packetbuf_attr pkt_packetbuf_attrs[PACKET
 DECL|pkt_packetbufptr|member|uint8_t *pkt_packetbufptr;
 DECL|pkt_packetbuf|member|uint8_t pkt_packetbuf[PACKETBUF_SIZE + PACKETBUF_HDR_SIZE];
 DECL|uip_addr|macro|uip_addr
+DECL|uip_appdatalen|macro|uip_appdatalen
+DECL|uip_appdatalen|member|uint16_t uip_appdatalen;
 DECL|uip_appdata|macro|uip_appdata
 DECL|uip_appdata|member|void *uip_appdata; /* application data */
 DECL|uip_buf|macro|uip_buf
