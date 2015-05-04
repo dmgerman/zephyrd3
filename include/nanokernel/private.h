@@ -25,3 +25,4 @@ DECL|tail|member|void *tail;
 DECL|tail|member|void *tail;
 DECL|ticks|member|uint32_t ticks;
 DECL|userData|member|void *userData;
+DECL|wait_q|member|struct _nano_queue wait_q;
