@@ -1,3 +1,5 @@
+DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
+DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
 DECL|NET_BUF_MAX_DATA|macro|NET_BUF_MAX_DATA
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__unused|member|int __unused;
@@ -14,6 +16,9 @@ DECL|nd6_opt_llao|member|uint8_t *nd6_opt_llao;
 DECL|nd6_opt_offset|member|uint8_t nd6_opt_offset;
 DECL|nd6_opt_prefix_info|member|void *nd6_opt_prefix_info;
 DECL|nd6_prefix|member|void *nd6_prefix;
+DECL|net_buf_get_reserve|macro|net_buf_get_reserve
+DECL|net_buf_get|macro|net_buf_get
+DECL|net_buf_put|macro|net_buf_put
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf|struct|struct net_buf {
 DECL|packetbuf_hdr_len|member|uint8_t packetbuf_hdr_len;
