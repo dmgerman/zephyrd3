@@ -63,6 +63,7 @@ DECL|grounded|member|uint8_t grounded;
 DECL|instance_id|member|uint8_t instance_id;
 DECL|instance|member|struct rpl_instance *instance;
 DECL|joined|member|uint8_t joined;
+DECL|last_tx_time|member|clock_time_t last_tx_time;
 DECL|length|member|uint8_t length;
 DECL|length|member|uint8_t length;
 DECL|lifetime_unit|member|uint16_t lifetime_unit; /* lifetime in seconds = l_u * d_l */
@@ -84,6 +85,7 @@ DECL|preference|member|uint8_t preference;
 DECL|preferred_parent|member|rpl_parent_t *preferred_parent;
 DECL|prefix_info|member|rpl_prefix_t prefix_info;
 DECL|prefix|member|uip_ipaddr_t prefix;
+DECL|probing_timer|member|struct ctimer probing_timer;
 DECL|rank|member|rpl_rank_t rank;
 DECL|rank|member|rpl_rank_t rank;
 DECL|reset|member|void (*reset)(struct rpl_dag *);
@@ -99,6 +101,7 @@ DECL|rpl_ocp_t|typedef|typedef uint16_t rpl_ocp_t;
 DECL|rpl_of_t|typedef|typedef struct rpl_of rpl_of_t;
 DECL|rpl_of|struct|struct rpl_of {
 DECL|rpl_parent_t|typedef|typedef struct rpl_parent rpl_parent_t;
+DECL|rpl_parents|variable|rpl_parents
 DECL|rpl_parent|struct|struct rpl_parent {
 DECL|rpl_prefix_t|typedef|typedef struct rpl_prefix rpl_prefix_t;
 DECL|rpl_prefix|struct|struct rpl_prefix {
