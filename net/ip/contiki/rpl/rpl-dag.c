@@ -37,6 +37,7 @@ DECL|rpl_local_repair|function|rpl_local_repair(struct net_buf *buf, rpl_instanc
 DECL|rpl_lock_parent|function|rpl_lock_parent(rpl_parent_t *p)
 DECL|rpl_move_parent|function|rpl_move_parent(rpl_dag_t *dag_src, rpl_dag_t *dag_dst, rpl_parent_t *parent)
 DECL|rpl_nullify_parent|function|rpl_nullify_parent(struct net_buf *buf, rpl_parent_t *parent)
+DECL|rpl_print_neighbor_list|function|rpl_print_neighbor_list()
 DECL|rpl_process_dio|function|rpl_process_dio(struct net_buf *buf, uip_ipaddr_t *from, rpl_dio_t *dio)
 DECL|rpl_process_parent_event|function|rpl_process_parent_event(struct net_buf *buf, rpl_instance_t *instance, rpl_parent_t *p)
 DECL|rpl_recalculate_ranks|function|rpl_recalculate_ranks(struct net_buf *buf)
