@@ -1,4 +1,0 @@
-DECL|_sys_idle_threshold_ticks|variable|_sys_idle_threshold_ticks
-DECL|_sys_power_save_flag|variable|_sys_power_save_flag
-DECL|_sys_power_save_idle_exit|function|void _sys_power_save_idle_exit(int32_t ticks)
-DECL|_sys_power_save_idle|function|void _sys_power_save_idle(int32_t ticks)
