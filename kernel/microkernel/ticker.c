@@ -1,5 +1,4 @@
 DECL|K_ticker|function|int K_ticker(int event)
-DECL|_HandleExpiredTimers|function|static inline void _HandleExpiredTimers(int ticks)
 DECL|_SysIdleElapsedTicksGet|function|static inline int32_t _SysIdleElapsedTicksGet(void)
 DECL|_TimeSliceUpdate|function|static inline void _TimeSliceUpdate(void)
 DECL|_TlDebugUpdate|function|static inline int _TlDebugUpdate(int32_t ticks)
