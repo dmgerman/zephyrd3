@@ -1,3 +1,5 @@
+DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
+DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
 DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
 DECL|_get_next_timer_expiry|function|static inline int32_t _get_next_timer_expiry(void)
 DECL|_k_node_workload_get|function|void _k_node_workload_get(struct k_args *P)
