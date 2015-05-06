@@ -3,6 +3,8 @@ DECL|_k_task_wakeup|function|void _k_task_wakeup(struct k_args *P)
 DECL|_k_time_elapse|function|void _k_time_elapse(struct k_args *P)
 DECL|_k_timer_alloc|function|void _k_timer_alloc(struct k_args *P /* pointer to timer allocation request arguments */ )
 DECL|_k_timer_dealloc|function|void _k_timer_dealloc(struct k_args *P)
+DECL|_k_timer_list_head|variable|_k_timer_list_head
+DECL|_k_timer_list_tail|variable|_k_timer_list_tail
 DECL|_k_timer_start|function|void _k_timer_start(struct k_args *P /* pointer to timer start request arguments */ )
 DECL|_k_timer_stop|function|void _k_timer_stop(struct k_args *P)
 DECL|delist_timeout|function|void delist_timeout(K_TIMER *T)

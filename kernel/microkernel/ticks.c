@@ -1,5 +1,0 @@
-DECL|_LowTimeGet|function|int64_t _LowTimeGet(void)
-DECL|_LowTimeInc|function|void _LowTimeInc(int inc)
-DECL|_k_sys_clock_tick_count|variable|_k_sys_clock_tick_count
-DECL|_k_timer_list_head|variable|_k_timer_list_head
-DECL|_k_timer_list_tail|variable|_k_timer_list_tail
