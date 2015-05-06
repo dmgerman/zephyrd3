@@ -6,8 +6,8 @@ DECL|Args|member|struct k_args *Args;
 DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
-DECL|Back|member|K_TIMER *Back;
 DECL|Back|member|struct k_proc *Back;
+DECL|Back|member|struct k_timer *Back;
 DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
@@ -65,9 +65,9 @@ DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
 DECL|Esize|member|int Esize;
 DECL|Extra|member|} Extra;
-DECL|Forw|member|K_TIMER *Forw;
 DECL|Forw|member|struct k_args *Forw;
 DECL|Forw|member|struct k_proc *Forw;
+DECL|Forw|member|struct k_timer *Forw;
 DECL|Free|member|char *Free;
 DECL|GET_BLOCK_WAIT|enumerator|GET_BLOCK_WAIT,
 DECL|GET_BLOCK|enumerator|GET_BLOCK,
@@ -251,7 +251,7 @@ DECL|k_chproc|struct|struct k_chproc {
 DECL|k_chreq|struct|struct k_chreq {
 DECL|k_mrec|struct|struct k_mrec {
 DECL|k_proc|struct|struct k_proc {
-DECL|k_timer|struct|struct k_timer { /* For pointer declarations only !! */
+DECL|k_timer|struct|struct k_timer {
 DECL|k_tqhd|struct|struct k_tqhd {
 DECL|l1|member|struct _l1arg l1;
 DECL|list|member|ksemg_t list;
