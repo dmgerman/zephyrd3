@@ -1,4 +1,4 @@
-DECL|_sem_give|function|void _sem_give(struct nano_sem *sem /* semaphore on which to signal */ )
+DECL|_sem_give_non_preemptible|function|void _sem_give_non_preemptible(struct nano_sem *sem /* semaphore on which to signal */ )
 DECL|_sem_take|function|int _sem_take(struct nano_sem *sem /* semaphore on which to test */ )
 DECL|nano_fiber_sem_take_wait|function|void nano_fiber_sem_take_wait(struct nano_sem *sem /* semaphore on which to wait */ )
 DECL|nano_sem_give|function|void nano_sem_give(struct nano_sem *sem)
