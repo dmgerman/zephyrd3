@@ -28,12 +28,16 @@ DECL|BT_ATT_OP_MTU_REQ|macro|BT_ATT_OP_MTU_REQ
 DECL|BT_ATT_OP_MTU_RSP|macro|BT_ATT_OP_MTU_RSP
 DECL|BT_ATT_OP_READ_BLOB_REQ|macro|BT_ATT_OP_READ_BLOB_REQ
 DECL|BT_ATT_OP_READ_BLOB_RSP|macro|BT_ATT_OP_READ_BLOB_RSP
+DECL|BT_ATT_OP_READ_MULT_REQ|macro|BT_ATT_OP_READ_MULT_REQ
+DECL|BT_ATT_OP_READ_MULT_RSP|macro|BT_ATT_OP_READ_MULT_RSP
 DECL|BT_ATT_OP_READ_REQ|macro|BT_ATT_OP_READ_REQ
 DECL|BT_ATT_OP_READ_RSP|macro|BT_ATT_OP_READ_RSP
 DECL|BT_ATT_OP_READ_TYPE_REQ|macro|BT_ATT_OP_READ_TYPE_REQ
 DECL|BT_ATT_OP_READ_TYPE_RSP|macro|BT_ATT_OP_READ_TYPE_RSP
 DECL|BT_UUID_128|macro|BT_UUID_128
 DECL|BT_UUID_16|macro|BT_UUID_16
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -66,6 +70,8 @@ DECL|bt_att_info_1|struct|struct bt_att_info_1 {
 DECL|bt_att_info_2|struct|struct bt_att_info_2 {
 DECL|bt_att_read_blob_req|struct|struct bt_att_read_blob_req {
 DECL|bt_att_read_blob_rsp|struct|struct bt_att_read_blob_rsp {
+DECL|bt_att_read_mult_req|struct|struct bt_att_read_mult_req {
+DECL|bt_att_read_mult_rsp|struct|struct bt_att_read_mult_rsp {
 DECL|bt_att_read_req|struct|struct bt_att_read_req {
 DECL|bt_att_read_rsp|struct|struct bt_att_read_rsp {
 DECL|bt_att_read_type_req|struct|struct bt_att_read_type_req {
@@ -79,6 +85,9 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|error|member|uint8_t error;
 DECL|format|member|uint8_t format;
+DECL|handle1|member|uint16_t handle1;
+DECL|handle2|member|uint16_t handle2;
+DECL|handles|member|uint16_t handles[0];
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -103,6 +112,7 @@ DECL|u16|member|uint16_t u16;
 DECL|uuid|member|uint16_t uuid;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[16];
+DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
