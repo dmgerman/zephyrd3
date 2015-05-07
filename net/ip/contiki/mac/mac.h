@@ -13,4 +13,4 @@ DECL|mac_driver|struct|struct mac_driver {
 DECL|name|member|char *name;
 DECL|off|member|int (* off)(int keep_radio_on);
 DECL|on|member|int (* on)(void);
-DECL|send|member|void (* send)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr);
+DECL|send|member|uint8_t (* send)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr);

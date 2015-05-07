@@ -12,5 +12,5 @@ DECL|on|member|int (* on)(void);
 DECL|ptr|member|void *ptr;
 DECL|rdc_buf_list|struct|struct rdc_buf_list {
 DECL|rdc_driver|struct|struct rdc_driver {
-DECL|send_list|member|void (* send_list)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr, struct rdc_buf_list *list);
-DECL|send|member|void (* send)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr);
+DECL|send_list|member|uint8_t (* send_list)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr, struct rdc_buf_list *list);
+DECL|send|member|uint8_t (* send)(struct net_buf *buf, mac_callback_t sent_callback, void *ptr);
