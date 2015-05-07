@@ -2,6 +2,7 @@ DECL|att_find_info_req|function|static void att_find_info_req(struct bt_conn *co
 DECL|att_find_type_req|function|static void att_find_type_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_mtu_req|function|static void att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_blob_req|function|static void att_read_blob_req(struct bt_conn *conn, struct bt_buf *data)
+DECL|att_read_group_req|function|static void att_read_group_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_mult_req|function|static void att_read_mult_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_req|function|static void att_read_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_type_req|function|static void att_read_type_req(struct bt_conn *conn, struct bt_buf *data)
