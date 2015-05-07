@@ -1,3 +1,4 @@
+DECL|_TaskAbort|function|FUNC_NORETURN void _TaskAbort(void)
 DECL|_k_task_group_op|function|void _k_task_group_op(struct k_args *A)
 DECL|_k_task_op|function|void _k_task_op(struct k_args *A)
 DECL|_k_task_priority_set|function|void _k_task_priority_set(struct k_args *A)
