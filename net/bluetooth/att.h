@@ -26,10 +26,14 @@ DECL|BT_ATT_OP_FIND_TYPE_REQ|macro|BT_ATT_OP_FIND_TYPE_REQ
 DECL|BT_ATT_OP_FIND_TYPE_RSP|macro|BT_ATT_OP_FIND_TYPE_RSP
 DECL|BT_ATT_OP_MTU_REQ|macro|BT_ATT_OP_MTU_REQ
 DECL|BT_ATT_OP_MTU_RSP|macro|BT_ATT_OP_MTU_RSP
+DECL|BT_ATT_OP_READ_REQ|macro|BT_ATT_OP_READ_REQ
+DECL|BT_ATT_OP_READ_RSP|macro|BT_ATT_OP_READ_RSP
 DECL|BT_ATT_OP_READ_TYPE_REQ|macro|BT_ATT_OP_READ_TYPE_REQ
 DECL|BT_ATT_OP_READ_TYPE_RSP|macro|BT_ATT_OP_READ_TYPE_RSP
 DECL|BT_UUID_128|macro|BT_UUID_128
 DECL|BT_UUID_16|macro|BT_UUID_16
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -56,6 +60,8 @@ DECL|bt_att_handle_group|struct|struct bt_att_handle_group {
 DECL|bt_att_hdr|struct|struct bt_att_hdr {
 DECL|bt_att_info_1|struct|struct bt_att_info_1 {
 DECL|bt_att_info_2|struct|struct bt_att_info_2 {
+DECL|bt_att_read_req|struct|struct bt_att_read_req {
+DECL|bt_att_read_rsp|struct|struct bt_att_read_rsp {
 DECL|bt_att_read_type_req|struct|struct bt_att_read_type_req {
 DECL|bt_att_read_type_rsp|struct|struct bt_att_read_type_rsp {
 DECL|bt_uuid|struct|struct bt_uuid {
@@ -67,6 +73,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|error|member|uint8_t error;
 DECL|format|member|uint8_t format;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -88,5 +95,6 @@ DECL|u16|member|uint16_t u16;
 DECL|uuid|member|uint16_t uuid;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[16];
+DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
