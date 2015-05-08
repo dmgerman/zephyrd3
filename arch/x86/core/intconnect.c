@@ -8,5 +8,5 @@ DECL|_SpuriousIntHandler|variable|_SpuriousIntHandler
 DECL|_SpuriousIntNoErrCodeHandler|variable|_SpuriousIntNoErrCodeHandler
 DECL|_VectorsAllocated|variable|_VectorsAllocated
 DECL|__DummyExcEnt|variable|__DummyExcEnt
-DECL|__DummySpur|variable|__DummySpur
+DECL|_dummy_spurious_interrupt|variable|_dummy_spurious_interrupt
 DECL|irq_connect|function|int irq_connect(unsigned int irq, /* virtualized IRQ to connect to */ unsigned int priority, /* requested priority of interrupt */ void (*routine)(void *parameter), /* C interrupt handler */ void *parameter, /* parameter passed to C routine */
