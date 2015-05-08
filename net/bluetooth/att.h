@@ -16,10 +16,14 @@ DECL|BT_ATT_ERR_READ_NOT_PERMITTED|macro|BT_ATT_ERR_READ_NOT_PERMITTED
 DECL|BT_ATT_ERR_UNLIKELY|macro|BT_ATT_ERR_UNLIKELY
 DECL|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE|macro|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE
 DECL|BT_ATT_ERR_WRITE_NOT_PERMITTED|macro|BT_ATT_ERR_WRITE_NOT_PERMITTED
+DECL|BT_ATT_FLAG_CANCEL|macro|BT_ATT_FLAG_CANCEL
+DECL|BT_ATT_FLAG_EXEC|macro|BT_ATT_FLAG_EXEC
 DECL|BT_ATT_INFO_1|macro|BT_ATT_INFO_1
 DECL|BT_ATT_INFO_2|macro|BT_ATT_INFO_2
 DECL|BT_ATT_MAX_LE_MTU|macro|BT_ATT_MAX_LE_MTU
 DECL|BT_ATT_OP_ERROR_RSP|macro|BT_ATT_OP_ERROR_RSP
+DECL|BT_ATT_OP_EXEC_WRITE_REQ|macro|BT_ATT_OP_EXEC_WRITE_REQ
+DECL|BT_ATT_OP_EXEC_WRITE_RSP|macro|BT_ATT_OP_EXEC_WRITE_RSP
 DECL|BT_ATT_OP_FIND_INFO_REQ|macro|BT_ATT_OP_FIND_INFO_REQ
 DECL|BT_ATT_OP_FIND_INFO_RSP|macro|BT_ATT_OP_FIND_INFO_RSP
 DECL|BT_ATT_OP_FIND_TYPE_REQ|macro|BT_ATT_OP_FIND_TYPE_REQ
@@ -73,10 +77,12 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|bt_att_data|struct|struct bt_att_data {
 DECL|bt_att_error_rsp|struct|struct bt_att_error_rsp {
 DECL|bt_att_exchange_mtu_req|struct|struct bt_att_exchange_mtu_req {
 DECL|bt_att_exchange_mtu_rsp|struct|struct bt_att_exchange_mtu_rsp {
+DECL|bt_att_exec_write_req|struct|struct bt_att_exec_write_req {
 DECL|bt_att_find_info_req|struct|struct bt_att_find_info_req {
 DECL|bt_att_find_info_rsp|struct|struct bt_att_find_info_rsp {
 DECL|bt_att_find_type_req|struct|struct bt_att_find_type_req {
@@ -113,6 +119,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|error|member|uint8_t error;
+DECL|flags|member|uint8_t flags;
 DECL|format|member|uint8_t format;
 DECL|handle1|member|uint16_t handle1;
 DECL|handle2|member|uint16_t handle2;
