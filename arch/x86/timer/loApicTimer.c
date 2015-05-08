@@ -15,7 +15,6 @@ DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
 DECL|_REG_TIMER_CFG|macro|_REG_TIMER_CFG
 DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
-DECL|_TimerIdleSkew|variable|_TimerIdleSkew
 DECL|_TimerMode|variable|_TimerMode
 DECL|_loApicTimerGetCount|function|static inline uint32_t _loApicTimerGetCount(void)
 DECL|_loApicTimerGetRemaining|function|static inline uint32_t _loApicTimerGetRemaining(void)
@@ -40,4 +39,5 @@ DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_driver|function|void timer_driver(int priority /* priority parameter ignored by this driver */ )
+DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_read|function|uint32_t timer_read(void)
