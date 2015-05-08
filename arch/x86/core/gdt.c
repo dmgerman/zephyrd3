@@ -1,4 +1,4 @@
 DECL|MAX_GDT_ENTRIES|macro|MAX_GDT_ENTRIES
 DECL|NUM_BASE_GDT_ENTRIES|macro|NUM_BASE_GDT_ENTRIES
-DECL|_GdtEntries|variable|_GdtEntries
+DECL|_gdt_entries|variable|_gdt_entries
 DECL|_gdt|variable|_gdt
