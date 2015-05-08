@@ -9,7 +9,7 @@ DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system t
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|default_load_value|variable|default_load_value
-DECL|idleMode|variable|idleMode
+DECL|idle_mode|variable|idle_mode
 DECL|idle_original_count|variable|idle_original_count
 DECL|idle_original_ticks|variable|idle_original_ticks
 DECL|max_load_value|variable|max_load_value
