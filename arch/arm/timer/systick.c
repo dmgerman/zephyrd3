@@ -13,7 +13,7 @@ DECL|idleMode|variable|idleMode
 DECL|idleOrigTicks|variable|idleOrigTicks
 DECL|idle_original_count|variable|idle_original_count
 DECL|maxLoadValue|variable|maxLoadValue
-DECL|maxSysTicks|variable|maxSysTicks
+DECL|max_system_ticks|variable|max_system_ticks
 DECL|sysTickCurrentGet|function|static ALWAYS_INLINE uint32_t sysTickCurrentGet(void)
 DECL|sysTickReloadGet|function|static ALWAYS_INLINE uint32_t sysTickReloadGet(void)
 DECL|sysTickReloadSet|function|static ALWAYS_INLINE void sysTickReloadSet(uint32_t count /* count from which timer is to count down */ )
