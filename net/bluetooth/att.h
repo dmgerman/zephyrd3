@@ -21,6 +21,7 @@ DECL|BT_ATT_FLAG_EXEC|macro|BT_ATT_FLAG_EXEC
 DECL|BT_ATT_INFO_1|macro|BT_ATT_INFO_1
 DECL|BT_ATT_INFO_2|macro|BT_ATT_INFO_2
 DECL|BT_ATT_MAX_LE_MTU|macro|BT_ATT_MAX_LE_MTU
+DECL|BT_ATT_OP_CONFIRM|macro|BT_ATT_OP_CONFIRM
 DECL|BT_ATT_OP_ERROR_RSP|macro|BT_ATT_OP_ERROR_RSP
 DECL|BT_ATT_OP_EXEC_WRITE_REQ|macro|BT_ATT_OP_EXEC_WRITE_REQ
 DECL|BT_ATT_OP_EXEC_WRITE_RSP|macro|BT_ATT_OP_EXEC_WRITE_RSP
@@ -28,8 +29,10 @@ DECL|BT_ATT_OP_FIND_INFO_REQ|macro|BT_ATT_OP_FIND_INFO_REQ
 DECL|BT_ATT_OP_FIND_INFO_RSP|macro|BT_ATT_OP_FIND_INFO_RSP
 DECL|BT_ATT_OP_FIND_TYPE_REQ|macro|BT_ATT_OP_FIND_TYPE_REQ
 DECL|BT_ATT_OP_FIND_TYPE_RSP|macro|BT_ATT_OP_FIND_TYPE_RSP
+DECL|BT_ATT_OP_INDICATE|macro|BT_ATT_OP_INDICATE
 DECL|BT_ATT_OP_MTU_REQ|macro|BT_ATT_OP_MTU_REQ
 DECL|BT_ATT_OP_MTU_RSP|macro|BT_ATT_OP_MTU_RSP
+DECL|BT_ATT_OP_NOTIFY|macro|BT_ATT_OP_NOTIFY
 DECL|BT_ATT_OP_PREPARE_WRITE_REQ|macro|BT_ATT_OP_PREPARE_WRITE_REQ
 DECL|BT_ATT_OP_PREPARE_WRITE_RSP|macro|BT_ATT_OP_PREPARE_WRITE_RSP
 DECL|BT_ATT_OP_READ_BLOB_REQ|macro|BT_ATT_OP_READ_BLOB_REQ
@@ -78,6 +81,8 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|bt_att_data|struct|struct bt_att_data {
 DECL|bt_att_error_rsp|struct|struct bt_att_error_rsp {
 DECL|bt_att_exchange_mtu_req|struct|struct bt_att_exchange_mtu_req {
@@ -90,8 +95,10 @@ DECL|bt_att_find_type_rsp|struct|struct bt_att_find_type_rsp {
 DECL|bt_att_group_data|struct|struct bt_att_group_data {
 DECL|bt_att_handle_group|struct|struct bt_att_handle_group {
 DECL|bt_att_hdr|struct|struct bt_att_hdr {
+DECL|bt_att_indicate|struct|struct bt_att_indicate {
 DECL|bt_att_info_1|struct|struct bt_att_info_1 {
 DECL|bt_att_info_2|struct|struct bt_att_info_2 {
+DECL|bt_att_notify|struct|struct bt_att_notify {
 DECL|bt_att_prepare_write_req|struct|struct bt_att_prepare_write_req {
 DECL|bt_att_prepare_write_rsp|struct|struct bt_att_prepare_write_rsp {
 DECL|bt_att_read_blob_req|struct|struct bt_att_read_blob_req {
@@ -135,6 +142,8 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|info|member|uint8_t info[0];
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
@@ -159,6 +168,8 @@ DECL|uuid|member|uint16_t uuid;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[16];
+DECL|value|member|uint8_t value[0];
+DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
