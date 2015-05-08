@@ -43,7 +43,7 @@ DECL|_hpetMainCounterAtomic|function|static uint64_t _hpetMainCounterAtomic(void
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
-DECL|counterLastValue|variable|counterLastValue
+DECL|counter_last_value|variable|counter_last_value
 DECL|counter_load_value|variable|counter_load_value
 DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
