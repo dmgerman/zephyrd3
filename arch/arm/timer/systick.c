@@ -12,7 +12,7 @@ DECL|default_load_value|variable|default_load_value
 DECL|idleMode|variable|idleMode
 DECL|idle_original_count|variable|idle_original_count
 DECL|idle_original_ticks|variable|idle_original_ticks
-DECL|maxLoadValue|variable|maxLoadValue
+DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|sysTickCurrentGet|function|static ALWAYS_INLINE uint32_t sysTickCurrentGet(void)
 DECL|sysTickReloadGet|function|static ALWAYS_INLINE uint32_t sysTickReloadGet(void)
