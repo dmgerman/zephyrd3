@@ -1,2 +1,2 @@
 DECL|_TaskAbort|function|void _TaskAbort(void)
-DECL|cmdpacket|variable|cmdpacket
+DECL|cmd_packet|variable|cmd_packet
