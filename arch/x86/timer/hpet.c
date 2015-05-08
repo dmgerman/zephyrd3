@@ -46,7 +46,7 @@ DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|counterLastValue|variable|counterLastValue
 DECL|counterLoadValue|variable|counterLoadValue
 DECL|expectedMainCountValue|variable|expectedMainCountValue
-DECL|firstIntMainCountValue|variable|firstIntMainCountValue
+DECL|main_count_first_irq_value|variable|main_count_first_irq_value
 DECL|programmedTicks|variable|programmedTicks
 DECL|staleIntCheck|variable|staleIntCheck
 DECL|timer_disable|function|void timer_disable(void)
