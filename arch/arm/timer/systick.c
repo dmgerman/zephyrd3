@@ -10,8 +10,8 @@ DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|default_load_value|variable|default_load_value
 DECL|idleMode|variable|idleMode
-DECL|idleOrigCount|variable|idleOrigCount
 DECL|idleOrigTicks|variable|idleOrigTicks
+DECL|idle_original_count|variable|idle_original_count
 DECL|maxLoadValue|variable|maxLoadValue
 DECL|maxSysTicks|variable|maxSysTicks
 DECL|sysTickCurrentGet|function|static ALWAYS_INLINE uint32_t sysTickCurrentGet(void)
