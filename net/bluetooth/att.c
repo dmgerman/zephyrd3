@@ -6,6 +6,7 @@ DECL|att_read_group_req|function|static void att_read_group_req(struct bt_conn *
 DECL|att_read_mult_req|function|static void att_read_mult_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_req|function|static void att_read_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_type_req|function|static void att_read_type_req(struct bt_conn *conn, struct bt_buf *data)
+DECL|att_signed_write_cmd|function|static void att_signed_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_cmd|function|static void att_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_req|function|static void att_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|bt_att_create_pdu|function|struct bt_buf *bt_att_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)

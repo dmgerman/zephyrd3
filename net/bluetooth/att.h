@@ -36,11 +36,14 @@ DECL|BT_ATT_OP_READ_REQ|macro|BT_ATT_OP_READ_REQ
 DECL|BT_ATT_OP_READ_RSP|macro|BT_ATT_OP_READ_RSP
 DECL|BT_ATT_OP_READ_TYPE_REQ|macro|BT_ATT_OP_READ_TYPE_REQ
 DECL|BT_ATT_OP_READ_TYPE_RSP|macro|BT_ATT_OP_READ_TYPE_RSP
+DECL|BT_ATT_OP_SIGNED_WRITE_CMD|macro|BT_ATT_OP_SIGNED_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_CMD|macro|BT_ATT_OP_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_REQ|macro|BT_ATT_OP_WRITE_REQ
 DECL|BT_ATT_OP_WRITE_RSP|macro|BT_ATT_OP_WRITE_RSP
 DECL|BT_UUID_128|macro|BT_UUID_128
 DECL|BT_UUID_16|macro|BT_UUID_16
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -89,6 +92,8 @@ DECL|bt_att_read_req|struct|struct bt_att_read_req {
 DECL|bt_att_read_rsp|struct|struct bt_att_read_rsp {
 DECL|bt_att_read_type_req|struct|struct bt_att_read_type_req {
 DECL|bt_att_read_type_rsp|struct|struct bt_att_read_type_rsp {
+DECL|bt_att_signature|struct|struct bt_att_signature {
+DECL|bt_att_signed_write_req|struct|struct bt_att_signed_write_req {
 DECL|bt_att_write_cmd|struct|struct bt_att_write_cmd {
 DECL|bt_att_write_req|struct|struct bt_att_write_req {
 DECL|bt_uuid|struct|struct bt_uuid {
@@ -106,6 +111,7 @@ DECL|format|member|uint8_t format;
 DECL|handle1|member|uint16_t handle1;
 DECL|handle2|member|uint16_t handle2;
 DECL|handles|member|uint16_t handles[0];
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -144,3 +150,5 @@ DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
+DECL|value|member|uint8_t value[0];
+DECL|value|member|uint8_t value[12];
