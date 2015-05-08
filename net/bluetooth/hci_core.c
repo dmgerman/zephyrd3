@@ -4,6 +4,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
+DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bdaddr[6])
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
@@ -31,6 +32,7 @@ DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(st
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct bt_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(void)
 DECL|host_buffer_size_complete|function|static void host_buffer_size_complete(struct bt_buf *buf)
+DECL|le_adv_report|function|static void le_adv_report(struct bt_buf *buf)
 DECL|le_conn_complete|function|static void le_conn_complete(struct bt_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct bt_buf *buf)
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct bt_buf *buf)

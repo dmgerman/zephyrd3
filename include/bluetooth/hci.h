@@ -1,3 +1,5 @@
+DECL|BT_ADDR_LE_DEV_PUBLIC|macro|BT_ADDR_LE_DEV_PUBLIC
+DECL|BT_ADDR_LE_DEV_RANDOM|macro|BT_ADDR_LE_DEV_RANDOM
 DECL|BT_EIR_FLAGS|macro|BT_EIR_FLAGS
 DECL|BT_EIR_GAP_APPEARANCE|macro|BT_EIR_GAP_APPEARANCE
 DECL|BT_EIR_MANUFACTURER_DATA|macro|BT_EIR_MANUFACTURER_DATA
@@ -18,6 +20,7 @@ DECL|BT_EIR_UUID32_SOME|macro|BT_EIR_UUID32_SOME
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
+DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
@@ -45,6 +48,7 @@ DECL|BT_LE_ADV_DIRECT_IND|macro|BT_LE_ADV_DIRECT_IND
 DECL|BT_LE_ADV_IND|macro|BT_LE_ADV_IND
 DECL|BT_LE_ADV_NONCONN_IND|macro|BT_LE_ADV_NONCONN_IND
 DECL|BT_LE_ADV_SCAN_IND|macro|BT_LE_ADV_SCAN_IND
+DECL|BT_LE_ADV_SCAN_RSP|macro|BT_LE_ADV_SCAN_RSP
 DECL|BT_LE_AD_GENERAL|macro|BT_LE_AD_GENERAL
 DECL|BT_LE_AD_NO_BREDR|macro|BT_LE_AD_NO_BREDR
 DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
@@ -87,12 +91,15 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
+DECL|bdaddr_type|member|uint8_t bdaddr_type;
+DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_acl_handle|macro|bt_acl_handle
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
@@ -108,6 +115,7 @@ DECL|bt_hci_cp_le_set_scan_params|struct|struct bt_hci_cp_le_set_scan_params {
 DECL|bt_hci_cp_le_set_scan_rsp_data|struct|struct bt_hci_cp_le_set_scan_rsp_data {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
+DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
@@ -125,6 +133,7 @@ DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_versio
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
 DECL|count|member|uint16_t count;
+DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
@@ -133,6 +142,7 @@ DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
 DECL|events|member|uint8_t events[8];
+DECL|evt_type|member|uint8_t evt_type;
 DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
@@ -154,6 +164,7 @@ DECL|key|member|uint8_t key[16];
 DECL|latency|member|uint16_t latency;
 DECL|le_max_len|member|uint16_t le_max_len;
 DECL|le_max_num|member|uint8_t le_max_num;
+DECL|length|member|uint8_t length;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
