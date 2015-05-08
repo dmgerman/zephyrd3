@@ -24,6 +24,7 @@ DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
+DECL|BT_HCI_OP_LE_ENCRYPT|macro|BT_HCI_OP_LE_ENCRYPT
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_LE_SET_ADV_DATA|macro|BT_HCI_OP_LE_SET_ADV_DATA
@@ -74,6 +75,8 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
@@ -85,6 +88,7 @@ DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
 DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
+DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
@@ -98,6 +102,7 @@ DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
+DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
@@ -112,6 +117,7 @@ DECL|data|member|uint8_t data[31];
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
 DECL|direct_addr|member|uint8_t direct_addr[6];
 DECL|enable|member|uint8_t enable;
+DECL|enc_data|member|uint8_t enc_data[16];
 DECL|events|member|uint8_t events[8];
 DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
@@ -127,6 +133,7 @@ DECL|hci_version|member|uint8_t hci_version;
 DECL|h|member|struct bt_hci_handle_count h[0];
 DECL|h|member|struct bt_hci_handle_count h[0];
 DECL|interval|member|uint16_t interval;
+DECL|key|member|uint8_t key[16];
 DECL|latency|member|uint16_t latency;
 DECL|le_max_len|member|uint16_t le_max_len;
 DECL|le_max_num|member|uint8_t le_max_num;
@@ -151,6 +158,7 @@ DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|param_len|member|uint8_t param_len;
 DECL|peer_addr_type|member|uint8_t peer_addr_type;
 DECL|peer_addr|member|uint8_t peer_addr[6];
+DECL|plaintext|member|uint8_t plaintext[16];
 DECL|reason|member|uint8_t reason;
 DECL|role|member|uint8_t role;
 DECL|sco_max_len|member|uint8_t sco_max_len;
@@ -158,6 +166,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
