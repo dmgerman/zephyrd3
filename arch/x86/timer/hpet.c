@@ -44,7 +44,7 @@ DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system t
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|counterLastValue|variable|counterLastValue
-DECL|counterLoadValue|variable|counterLoadValue
+DECL|counter_load_value|variable|counter_load_value
 DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
 DECL|programmedTicks|variable|programmedTicks
