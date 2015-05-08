@@ -22,8 +22,8 @@ DECL|_sys_idle_threshold_ticks|variable|_sys_idle_threshold_ticks
 DECL|_sys_power_save_flag|variable|_sys_power_save_flag
 DECL|_sys_power_save_idle_exit|function|void _sys_power_save_idle_exit(int32_t ticks)
 DECL|_sys_power_save_idle|function|void _sys_power_save_idle(int32_t ticks)
-DECL|_workload_loop|function|static void _workload_loop(void)
 DECL|kernel_idle|function|int kernel_idle(void)
 DECL|task_workload_get|function|int task_workload_get(void)
+DECL|workload_loop|function|static void workload_loop(void)
 DECL|workload_monitor_calibrate|function|void workload_monitor_calibrate(void)
 DECL|workload_time_slice_set|function|void workload_time_slice_set(int32_t t)
