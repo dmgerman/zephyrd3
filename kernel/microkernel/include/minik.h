@@ -37,3 +37,4 @@ DECL|TF_SUSP|macro|TF_SUSP
 DECL|TF_TERM|macro|TF_TERM
 DECL|TF_TIME|macro|TF_TIME
 DECL|TO_ALIST|macro|TO_ALIST
+DECL|_k_workload_monitor_update|macro|_k_workload_monitor_update

@@ -8,6 +8,7 @@ DECL|_k_workload_get|function|void _k_workload_get(struct k_args *P)
 DECL|_k_workload_get|function|void _k_workload_get(struct k_args *P)
 DECL|_k_workload_i0|variable|_k_workload_i0
 DECL|_k_workload_i|variable|_k_workload_i
+DECL|_k_workload_monitor_update|function|void _k_workload_monitor_update(void)
 DECL|_k_workload_n0|variable|_k_workload_n0
 DECL|_k_workload_n1|variable|_k_workload_n1
 DECL|_k_workload_ref_time|variable|_k_workload_ref_time
