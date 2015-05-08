@@ -26,6 +26,8 @@ DECL|BT_ATT_OP_FIND_TYPE_REQ|macro|BT_ATT_OP_FIND_TYPE_REQ
 DECL|BT_ATT_OP_FIND_TYPE_RSP|macro|BT_ATT_OP_FIND_TYPE_RSP
 DECL|BT_ATT_OP_MTU_REQ|macro|BT_ATT_OP_MTU_REQ
 DECL|BT_ATT_OP_MTU_RSP|macro|BT_ATT_OP_MTU_RSP
+DECL|BT_ATT_OP_PREPARE_WRITE_REQ|macro|BT_ATT_OP_PREPARE_WRITE_REQ
+DECL|BT_ATT_OP_PREPARE_WRITE_RSP|macro|BT_ATT_OP_PREPARE_WRITE_RSP
 DECL|BT_ATT_OP_READ_BLOB_REQ|macro|BT_ATT_OP_READ_BLOB_REQ
 DECL|BT_ATT_OP_READ_BLOB_RSP|macro|BT_ATT_OP_READ_BLOB_RSP
 DECL|BT_ATT_OP_READ_GROUP_REQ|macro|BT_ATT_OP_READ_GROUP_REQ
@@ -69,6 +71,8 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|bt_att_data|struct|struct bt_att_data {
 DECL|bt_att_error_rsp|struct|struct bt_att_error_rsp {
 DECL|bt_att_exchange_mtu_req|struct|struct bt_att_exchange_mtu_req {
@@ -82,6 +86,8 @@ DECL|bt_att_handle_group|struct|struct bt_att_handle_group {
 DECL|bt_att_hdr|struct|struct bt_att_hdr {
 DECL|bt_att_info_1|struct|struct bt_att_info_1 {
 DECL|bt_att_info_2|struct|struct bt_att_info_2 {
+DECL|bt_att_prepare_write_req|struct|struct bt_att_prepare_write_req {
+DECL|bt_att_prepare_write_rsp|struct|struct bt_att_prepare_write_rsp {
 DECL|bt_att_read_blob_req|struct|struct bt_att_read_blob_req {
 DECL|bt_att_read_blob_rsp|struct|struct bt_att_read_blob_rsp {
 DECL|bt_att_read_group_req|struct|struct bt_att_read_group_req {
@@ -120,12 +126,16 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|info|member|uint8_t info[0];
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|list|member|struct bt_att_handle_group list[0];
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
+DECL|offset|member|uint16_t offset;
+DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
 DECL|request|member|uint8_t request;
 DECL|start_handle|member|uint16_t start_handle;
@@ -142,6 +152,8 @@ DECL|uuid|member|uint16_t uuid;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[16];
+DECL|value|member|uint8_t value[0];
+DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
 DECL|value|member|uint8_t value[0];
