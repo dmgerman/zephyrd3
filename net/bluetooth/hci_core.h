@@ -16,4 +16,5 @@ DECL|manufacturer|member|uint16_t manufacturer;
 DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
+DECL|scan_enable|member|uint8_t scan_enable;
 DECL|sent_cmd|member|struct bt_buf *sent_cmd;

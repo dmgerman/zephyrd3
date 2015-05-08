@@ -30,6 +30,8 @@ DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_LE_SET_ADV_DATA|macro|BT_HCI_OP_LE_SET_ADV_DATA
 DECL|BT_HCI_OP_LE_SET_ADV_ENABLE|macro|BT_HCI_OP_LE_SET_ADV_ENABLE
 DECL|BT_HCI_OP_LE_SET_ADV_PARAMETERS|macro|BT_HCI_OP_LE_SET_ADV_PARAMETERS
+DECL|BT_HCI_OP_LE_SET_SCAN_ENABLE|macro|BT_HCI_OP_LE_SET_SCAN_ENABLE
+DECL|BT_HCI_OP_LE_SET_SCAN_PARAMS|macro|BT_HCI_OP_LE_SET_SCAN_PARAMS
 DECL|BT_HCI_OP_LE_SET_SCAN_RSP_DATA|macro|BT_HCI_OP_LE_SET_SCAN_RSP_DATA
 DECL|BT_HCI_OP_LE_WRITE_LE_HOST_SUPP|macro|BT_HCI_OP_LE_WRITE_LE_HOST_SUPP
 DECL|BT_HCI_OP_READ_BD_ADDR|macro|BT_HCI_OP_READ_BD_ADDR
@@ -45,6 +47,12 @@ DECL|BT_LE_ADV_NONCONN_IND|macro|BT_LE_ADV_NONCONN_IND
 DECL|BT_LE_ADV_SCAN_IND|macro|BT_LE_ADV_SCAN_IND
 DECL|BT_LE_AD_GENERAL|macro|BT_LE_AD_GENERAL
 DECL|BT_LE_AD_NO_BREDR|macro|BT_LE_AD_NO_BREDR
+DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
+DECL|BT_LE_SCAN_DISABLE|macro|BT_LE_SCAN_DISABLE
+DECL|BT_LE_SCAN_ENABLE|macro|BT_LE_SCAN_ENABLE
+DECL|BT_LE_SCAN_FILTER_DUP_DISABLE|macro|BT_LE_SCAN_FILTER_DUP_DISABLE
+DECL|BT_LE_SCAN_FILTER_DUP_ENABLE|macro|BT_LE_SCAN_FILTER_DUP_ENABLE
+DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|BT_LMP_LE|macro|BT_LMP_LE
 DECL|BT_LMP_NO_BREDR|macro|BT_LMP_NO_BREDR
 DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
@@ -77,11 +85,14 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
+DECL|addr_type|member|uint8_t addr_type;
 DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_acl_handle|macro|bt_acl_handle
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
@@ -92,6 +103,8 @@ DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
+DECL|bt_hci_cp_le_set_scan_enable|struct|struct bt_hci_cp_le_set_scan_enable {
+DECL|bt_hci_cp_le_set_scan_params|struct|struct bt_hci_cp_le_set_scan_params {
 DECL|bt_hci_cp_le_set_scan_rsp_data|struct|struct bt_hci_cp_le_set_scan_rsp_data {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
@@ -117,11 +130,14 @@ DECL|data|member|uint8_t data[31];
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
 DECL|direct_addr|member|uint8_t direct_addr[6];
 DECL|enable|member|uint8_t enable;
+DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
 DECL|events|member|uint8_t events[8];
 DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
+DECL|filter_dup|member|uint8_t filter_dup;
+DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -132,6 +148,7 @@ DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|h|member|struct bt_hci_handle_count h[0];
 DECL|h|member|struct bt_hci_handle_count h[0];
+DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|key|member|uint8_t key[16];
 DECL|latency|member|uint16_t latency;
@@ -161,6 +178,7 @@ DECL|peer_addr|member|uint8_t peer_addr[6];
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|reason|member|uint8_t reason;
 DECL|role|member|uint8_t role;
+DECL|scan_type|member|uint8_t scan_type;
 DECL|sco_max_len|member|uint8_t sco_max_len;
 DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
@@ -179,3 +197,4 @@ DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
 DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|type|member|uint8_t type;
+DECL|window|member|uint16_t window;
