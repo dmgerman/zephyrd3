@@ -25,7 +25,7 @@ DECL|idle_original_ticks|variable|idle_original_ticks
 DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|oldAcc|variable|oldAcc
-DECL|oldCount|variable|oldCount
+DECL|old_count|variable|old_count
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_driver|function|void timer_driver(int priority /* priority parameter ignored by this driver */ )
 DECL|timer_idle_skew|variable|timer_idle_skew
