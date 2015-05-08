@@ -8,7 +8,7 @@ DECL|_TIMER_INT_HANDLER|macro|_TIMER_INT_HANDLER
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|clock_accumulated_count|variable|clock_accumulated_count
-DECL|defaultLoadVal|variable|defaultLoadVal
+DECL|default_load_value|variable|default_load_value
 DECL|idleMode|variable|idleMode
 DECL|idleOrigCount|variable|idleOrigCount
 DECL|idleOrigTicks|variable|idleOrigTicks
