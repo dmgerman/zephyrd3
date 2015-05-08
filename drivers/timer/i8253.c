@@ -8,7 +8,6 @@ DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|TIMER_SUPPORTS_TICKLESS|macro|TIMER_SUPPORTS_TICKLESS
 DECL|_IdleOrigTicks|variable|_IdleOrigTicks
 DECL|_MaxLoadValue|variable|_MaxLoadValue
-DECL|_MaxSysTicks|variable|_MaxSysTicks
 DECL|_TimerIdleSkew|variable|_TimerIdleSkew
 DECL|_TimerMode|variable|_TimerMode
 DECL|_currentLoadVal|variable|_currentLoadVal
@@ -26,6 +25,7 @@ DECL|_timer_int_handler|function|void _timer_int_handler(void *unusedArg /* not 
 DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|counterLoadVal|variable|counterLoadVal
 DECL|idle_original_count|variable|idle_original_count
+DECL|max_system_ticks|variable|max_system_ticks
 DECL|oldAcc|variable|oldAcc
 DECL|oldCount|variable|oldCount
 DECL|timer_disable|function|void timer_disable(void)

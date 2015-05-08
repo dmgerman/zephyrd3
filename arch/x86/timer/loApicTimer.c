@@ -13,7 +13,6 @@ DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|TIMER_SUPPORTS_TICKLESS|macro|TIMER_SUPPORTS_TICKLESS
 DECL|_IdleOrigTicks|variable|_IdleOrigTicks
 DECL|_MaxLoadValue|variable|_MaxLoadValue
-DECL|_MaxSysTicks|variable|_MaxSysTicks
 DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
 DECL|_REG_TIMER_CFG|macro|_REG_TIMER_CFG
 DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
@@ -38,6 +37,7 @@ DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* paramet
 DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|counterLoadVal|variable|counterLoadVal
 DECL|idle_original_count|variable|idle_original_count
+DECL|max_system_ticks|variable|max_system_ticks
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_driver|function|void timer_driver(int priority /* priority parameter ignored by this driver */ )
 DECL|timer_read|function|uint32_t timer_read(void)
