@@ -11,7 +11,7 @@ DECL|LSPCI_MAX_DEV|macro|LSPCI_MAX_DEV
 DECL|LSPCI_MAX_FUNC|macro|LSPCI_MAX_FUNC
 DECL|LSPCI_MAX_REG|macro|LSPCI_MAX_REG
 DECL|MAX_BARS|macro|MAX_BARS
-DECL|dev_info_idx|variable|dev_info_idx
+DECL|dev_info_index|variable|dev_info_index
 DECL|dev_info|variable|dev_info
 DECL|pci_bar_config_get|function|static int pci_bar_config_get(uint32_t bus, uint32_t dev, uint32_t func, uint32_t bar, uint32_t *config)
 DECL|pci_bar_params_get|function|static inline int pci_bar_params_get(uint32_t bus, uint32_t dev, uint32_t func, uint32_t bar, struct pci_dev_info *dev_info)
