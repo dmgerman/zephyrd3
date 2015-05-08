@@ -6,7 +6,6 @@ DECL|PIT_CNT2|macro|PIT_CNT2
 DECL|TIMER_MODE_PERIODIC_ENT|macro|TIMER_MODE_PERIODIC_ENT
 DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|TIMER_SUPPORTS_TICKLESS|macro|TIMER_SUPPORTS_TICKLESS
-DECL|_TimerMode|variable|_TimerMode
 DECL|_currentLoadVal|variable|_currentLoadVal
 DECL|_i8253CounterOneShot|function|static inline void _i8253CounterOneShot(uint16_t count /* value from which the counter will decrement */ )
 DECL|_i8253CounterPeriodic|function|static inline void _i8253CounterPeriodic(uint16_t count /* value from which the counter will decrement */ )
@@ -30,4 +29,5 @@ DECL|oldCount|variable|oldCount
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_driver|function|void timer_driver(int priority /* priority parameter ignored by this driver */ )
 DECL|timer_idle_skew|variable|timer_idle_skew
+DECL|timer_mode|variable|timer_mode
 DECL|timer_read|function|uint32_t timer_read(void)
