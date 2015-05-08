@@ -47,7 +47,7 @@ DECL|counter_last_value|variable|counter_last_value
 DECL|counter_load_value|variable|counter_load_value
 DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
-DECL|programmedTicks|variable|programmedTicks
+DECL|programmed_ticks|variable|programmed_ticks
 DECL|staleIntCheck|variable|staleIntCheck
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_driver|function|void timer_driver(int priority /* priority parameter is ignored by this driver */ )
