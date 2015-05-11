@@ -1,3 +1,4 @@
+DECL|ISASYNCMSG|macro|ISASYNCMSG
 DECL|_k_mbox_receive_ack|function|void _k_mbox_receive_ack(struct k_args *pCopyReader)
 DECL|_k_mbox_receive_data|function|void _k_mbox_receive_data(struct k_args *Starter)
 DECL|_k_mbox_receive_reply|function|void _k_mbox_receive_reply(struct k_args *pCopyReader)

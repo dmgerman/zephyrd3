@@ -1,1 +1,0 @@
-DECL|KSEMA_H|macro|KSEMA_H
