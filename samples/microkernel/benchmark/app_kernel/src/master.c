@@ -5,7 +5,7 @@ DECL|WAIT_FOR_USER|macro|WAIT_FOR_USER
 DECL|dashline|variable|dashline
 DECL|data_bench|variable|data_bench
 DECL|dummy_test|function|void dummy_test (void)
-DECL|init_output|function|void init_output ( int *continuously, /* run test till the user presses the key */ int *autorun /* expect user input */ )
+DECL|init_output|function|void init_output (int *continuously, /* run test till the user presses the key */ int *autorun /* expect user input */ )
 DECL|kbhit|function|int kbhit (void)
 DECL|newline|variable|newline
 DECL|output_close|function|void output_close (void)
