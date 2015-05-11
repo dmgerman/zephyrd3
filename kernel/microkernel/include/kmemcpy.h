@@ -1,1 +1,0 @@
-DECL|KMEMCPY_H|macro|KMEMCPY_H
