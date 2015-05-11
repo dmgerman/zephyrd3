@@ -1,5 +1,0 @@
-DECL|_mutex_api_export__h_|macro|_mutex_api_export__h_
-DECL|task_mutex_lock_wait_timeout|macro|task_mutex_lock_wait_timeout
-DECL|task_mutex_lock_wait|macro|task_mutex_lock_wait
-DECL|task_mutex_lock|macro|task_mutex_lock
-DECL|task_mutex_unlock|macro|task_mutex_unlock

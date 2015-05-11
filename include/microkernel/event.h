@@ -1,1 +1,4 @@
 DECL|EVENT_H|macro|EVENT_H
+DECL|task_event_recv_wait_timeout|macro|task_event_recv_wait_timeout
+DECL|task_event_recv_wait|macro|task_event_recv_wait
+DECL|task_event_recv|macro|task_event_recv

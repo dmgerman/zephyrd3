@@ -1,6 +1,0 @@
-DECL|_sema_api_export__h_|macro|_sema_api_export__h_
-DECL|task_sem_group_take_wait_timeout|macro|task_sem_group_take_wait_timeout
-DECL|task_sem_group_take_wait|macro|task_sem_group_take_wait
-DECL|task_sem_take_wait_timeout|macro|task_sem_take_wait_timeout
-DECL|task_sem_take_wait|macro|task_sem_take_wait
-DECL|task_sem_take|macro|task_sem_take
