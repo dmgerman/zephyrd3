@@ -85,7 +85,6 @@ DECL|Id|member|kpipe_t Id;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_COMM|typedef|} K_COMM;
 DECL|K_CREF|typedef|} K_CREF;
-DECL|K_TIMER|typedef|typedef struct k_timer K_TIMER;
 DECL|LOCK_REQ|enumerator|LOCK_REQ,
 DECL|LOCK_RPL|enumerator|LOCK_RPL,
 DECL|LOCK_TMO|enumerator|LOCK_TMO,
@@ -323,9 +322,9 @@ DECL|task|member|ktask_t task;
 DECL|ticks|member|int32_t ticks;
 DECL|time1|member|int64_t time1;
 DECL|time2|member|int64_t time2;
-DECL|timer|member|K_TIMER *timer;
-DECL|timer|member|K_TIMER *timer;
 DECL|timer|member|int timer;
+DECL|timer|member|struct k_timer *timer;
+DECL|timer|member|struct k_timer *timer;
 DECL|time|member|uint32_t time;
 DECL|total_mem|member|int total_mem;
 DECL|u1|member|struct _u1arg u1;

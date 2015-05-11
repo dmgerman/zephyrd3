@@ -14,4 +14,4 @@ DECL|ChxxxSetReqType|function|void ChxxxSetReqType(K_ARGS_ARGS *pChxxx, REQ_TYPE
 DECL|ChxxxSetTimeType|function|void ChxxxSetTimeType(K_ARGS_ARGS *pChxxx, TIME_TYPE TimeType)
 DECL|DeListWaiter|function|void DeListWaiter(struct k_args *pReqProc)
 DECL|mycopypacket|function|void mycopypacket(struct k_args **out, struct k_args *in)
-DECL|myfreetimer|function|void myfreetimer(K_TIMER * *ppTimer)
+DECL|myfreetimer|function|void myfreetimer(struct k_timer * *ppTimer)
