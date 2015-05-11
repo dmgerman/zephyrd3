@@ -49,7 +49,7 @@ DECL|irq_unlock_inline|macro|irq_unlock_inline
 DECL|irq_unlock|function|static inline void irq_unlock(unsigned int key) {}
 DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
-DECL|s_isrList|struct|typedef struct s_isrList
+DECL|s_isrList|struct|typedef struct s_isrList {
 DECL|ss|member|unsigned int ss;
 DECL|ss|member|unsigned int ss;
 DECL|vec|member|unsigned int vec; /* Vector number associated with ISR/stub */

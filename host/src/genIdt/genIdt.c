@@ -22,6 +22,6 @@ DECL|idt|variable|idt
 DECL|main|function|int main(int argc, char *argv[])
 DECL|numVecs|variable|numVecs
 DECL|open_files|function|static void open_files(void)
-DECL|s_isrList|struct|typedef struct s_isrList
+DECL|s_isrList|struct|typedef struct s_isrList {
 DECL|usage|function|static void usage(const int len)
 DECL|version|variable|version
