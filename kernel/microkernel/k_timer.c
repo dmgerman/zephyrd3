@@ -7,6 +7,8 @@ DECL|_k_timer_list_tail|variable|_k_timer_list_tail
 DECL|_k_timer_list_update|function|void _k_timer_list_update(int ticks)
 DECL|_k_timer_start|function|void _k_timer_start(struct k_args *P /* pointer to timer start request arguments */ )
 DECL|_k_timer_stop|function|void _k_timer_stop(struct k_args *P)
+DECL|_timer_id_to_ptr|function|static inline K_TIMER *_timer_id_to_ptr(ktimer_t timer)
+DECL|_timer_ptr_to_id|function|static inline ktimer_t _timer_ptr_to_id(K_TIMER *timer)
 DECL|delist_timeout|function|void delist_timeout(K_TIMER *T)
 DECL|delist_timer|function|void delist_timer(K_TIMER *T)
 DECL|enlist_timeout|function|void enlist_timeout(struct k_args *P)
