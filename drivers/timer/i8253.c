@@ -24,7 +24,7 @@ DECL|_i8253TicklessIdleSkew|macro|_i8253TicklessIdleSkew
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unusedArg /* not used */ )
-DECL|accumulatedCount|variable|accumulatedCount
+DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|counterLoadVal|variable|counterLoadVal
 DECL|oldAcc|variable|oldAcc
 DECL|oldCount|variable|oldCount

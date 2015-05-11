@@ -3,7 +3,7 @@ DECL|_ARC_V2_TMR_CTRL_IP|macro|_ARC_V2_TMR_CTRL_IP
 DECL|_ARC_V2_TMR_CTRL_NH|macro|_ARC_V2_TMR_CTRL_NH
 DECL|_ARC_V2_TMR_CTRL_W|macro|_ARC_V2_TMR_CTRL_W
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
-DECL|accumulatedCount|variable|accumulatedCount
+DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|count_get|function|static ALWAYS_INLINE uint32_t count_get(void)
 DECL|enable|function|static ALWAYS_INLINE void enable(uint32_t count /* interrupt triggers when up-counter reaches this value */ )
 DECL|limit_get|function|static ALWAYS_INLINE uint32_t limit_get(void)
