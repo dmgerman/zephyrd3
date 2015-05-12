@@ -1,1 +1,1 @@
-DECL|waittask|function|void waittask (void)
+DECL|waittask|function|void waittask(void)

@@ -10,4 +10,4 @@ DECL|TAKE|macro|TAKE
 DECL|forks|variable|forks
 DECL|myDelay|function|static void myDelay( int ticks /* # of ticks to delay */ )
 DECL|myPrint|function|static void myPrint( int id, /* philosopher ID */ char *str /* EATING or THINKING */ )
-DECL|philEntry|function|void philEntry (void)
+DECL|philEntry|function|void philEntry(void)

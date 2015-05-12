@@ -1,6 +1,6 @@
-DECL|MonitorTaskEntry|function|void MonitorTaskEntry (void)
-DECL|MsgRcvrTaskEntry|function|void MsgRcvrTaskEntry (void)
-DECL|MsgSenderTaskEntry|function|void MsgSenderTaskEntry (void)
+DECL|MonitorTaskEntry|function|void MonitorTaskEntry(void)
+DECL|MsgRcvrTaskEntry|function|void MsgRcvrTaskEntry(void)
+DECL|MsgSenderTaskEntry|function|void MsgSenderTaskEntry(void)
 DECL|NUM_TEST_TASKS|macro|NUM_TEST_TASKS
 DECL|TIMEOUT|macro|TIMEOUT
 DECL|msgRcvrTask|variable|msgRcvrTask

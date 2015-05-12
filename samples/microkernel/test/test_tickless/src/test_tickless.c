@@ -10,4 +10,4 @@ DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
 DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
 DECL|_timer_res_t|typedef|typedef uint32_t _timer_res_t;
 DECL|_timer_res_t|typedef|typedef uint64_t _timer_res_t;
-DECL|ticklessTestTask|function|void ticklessTestTask (void)
+DECL|ticklessTestTask|function|void ticklessTestTask(void)

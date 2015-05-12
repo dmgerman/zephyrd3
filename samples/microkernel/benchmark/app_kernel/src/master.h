@@ -1,4 +1,4 @@
-DECL|BENCH_START|function|static inline uint32_t BENCH_START (void)
+DECL|BENCH_START|function|static inline uint32_t BENCH_START(void)
 DECL|FORMAT|macro|FORMAT
 DECL|NR_OF_EVENT_RUNS|macro|NR_OF_EVENT_RUNS
 DECL|NR_OF_FIFO_RUNS|macro|NR_OF_FIFO_RUNS

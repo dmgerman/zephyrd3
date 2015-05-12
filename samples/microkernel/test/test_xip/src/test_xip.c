@@ -1,1 +1,1 @@
-DECL|main|function|void main (void)
+DECL|main|function|void main(void)

@@ -30,9 +30,9 @@ DECL|_TIMESTAMP_STATUS|macro|_TIMESTAMP_STATUS
 DECL|_TIMESTAMP_VAL|macro|_TIMESTAMP_VAL
 DECL|_TIMESTAMP_VAL|macro|_TIMESTAMP_VAL
 DECL|_TIMESTAMP_WACCESS|macro|_TIMESTAMP_WACCESS
-DECL|_TimestampClose|function|void _TimestampClose (void)
-DECL|_TimestampClose|function|void _TimestampClose (void)
-DECL|_TimestampOpen|function|void _TimestampOpen (void)
-DECL|_TimestampOpen|function|void _TimestampOpen (void)
-DECL|_TimestampRead|function|uint32_t _TimestampRead (void)
-DECL|_TimestampRead|function|uint32_t _TimestampRead (void)
+DECL|_TimestampClose|function|void _TimestampClose(void)
+DECL|_TimestampClose|function|void _TimestampClose(void)
+DECL|_TimestampOpen|function|void _TimestampOpen(void)
+DECL|_TimestampOpen|function|void _TimestampOpen(void)
+DECL|_TimestampRead|function|uint32_t _TimestampRead(void)
+DECL|_TimestampRead|function|uint32_t _TimestampRead(void)

@@ -9,5 +9,5 @@ DECL|PRINT_OVERFLOW_ERROR|macro|PRINT_OVERFLOW_ERROR
 DECL|PRINT_TIME_BANNER|macro|PRINT_TIME_BANNER
 DECL|PRINT|macro|PRINT
 DECL|TMP_STRING_SIZE|macro|TMP_STRING_SIZE
-DECL|printDashLine|function|static inline void printDashLine (void)
+DECL|printDashLine|function|static inline void printDashLine(void)
 DECL|ptestIsr|typedef|typedef void (*ptestIsr) (void *unused);

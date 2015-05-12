@@ -1,3 +1,3 @@
-DECL|bootTimeTask|function|void bootTimeTask (void)
+DECL|bootTimeTask|function|void bootTimeTask(void)
 DECL|fiberStack|variable|fiberStack
-DECL|main|function|void main (void)
+DECL|main|function|void main(void)

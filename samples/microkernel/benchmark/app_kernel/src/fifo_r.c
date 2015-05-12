@@ -1,1 +1,1 @@
-DECL|dequtask|function|void dequtask (void)
+DECL|dequtask|function|void dequtask(void)

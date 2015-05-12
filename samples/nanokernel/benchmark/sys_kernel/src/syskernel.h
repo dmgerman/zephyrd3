@@ -1,4 +1,4 @@
-DECL|BENCH_START|function|static inline uint32_t BENCH_START (void)
+DECL|BENCH_START|function|static inline uint32_t BENCH_START(void)
 DECL|NUMBER_OF_LOOPS|macro|NUMBER_OF_LOOPS
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYSKERNEK_H|macro|SYSKERNEK_H

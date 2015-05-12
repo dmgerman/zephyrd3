@@ -1,2 +1,2 @@
 DECL|data_recv|variable|data_recv
-DECL|recvtask|function|void recvtask (void)
+DECL|recvtask|function|void recvtask(void)

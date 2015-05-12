@@ -1,5 +1,5 @@
 DECL|_FLOAT_REGS_X86_GCC_H|macro|_FLOAT_REGS_X86_GCC_H
-DECL|_LoadAllFloatRegisters|function|static inline void _LoadAllFloatRegisters (FP_REG_SET *pFromBuffer)
-DECL|_LoadThenStoreAllFloatRegisters|function|static inline void _LoadThenStoreAllFloatRegisters (FP_REG_SET *pFromToBuffer)
-DECL|_StoreAllFloatRegisters|function|static inline void _StoreAllFloatRegisters (FP_REG_SET *pToBuffer)
-DECL|_StoreNonVolatileFloatRegisters|function|void _StoreNonVolatileFloatRegisters (FP_NONVOLATILE_REG_SET *pToBuffer)
+DECL|_LoadAllFloatRegisters|function|static inline void _LoadAllFloatRegisters(FP_REG_SET *pFromBuffer)
+DECL|_LoadThenStoreAllFloatRegisters|function|static inline void _LoadThenStoreAllFloatRegisters(FP_REG_SET *pFromToBuffer)
+DECL|_StoreAllFloatRegisters|function|static inline void _StoreAllFloatRegisters(FP_REG_SET *pToBuffer)
+DECL|_StoreNonVolatileFloatRegisters|function|void _StoreNonVolatileFloatRegisters(FP_NONVOLATILE_REG_SET *pToBuffer)
