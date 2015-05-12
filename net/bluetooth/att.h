@@ -18,8 +18,8 @@ DECL|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE|macro|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE
 DECL|BT_ATT_ERR_WRITE_NOT_PERMITTED|macro|BT_ATT_ERR_WRITE_NOT_PERMITTED
 DECL|BT_ATT_FLAG_CANCEL|macro|BT_ATT_FLAG_CANCEL
 DECL|BT_ATT_FLAG_EXEC|macro|BT_ATT_FLAG_EXEC
-DECL|BT_ATT_INFO_1|macro|BT_ATT_INFO_1
-DECL|BT_ATT_INFO_2|macro|BT_ATT_INFO_2
+DECL|BT_ATT_INFO_128|macro|BT_ATT_INFO_128
+DECL|BT_ATT_INFO_16|macro|BT_ATT_INFO_16
 DECL|BT_ATT_MAX_LE_MTU|macro|BT_ATT_MAX_LE_MTU
 DECL|BT_ATT_OP_CONFIRM|macro|BT_ATT_OP_CONFIRM
 DECL|BT_ATT_OP_ERROR_RSP|macro|BT_ATT_OP_ERROR_RSP
@@ -96,8 +96,8 @@ DECL|bt_att_group_data|struct|struct bt_att_group_data {
 DECL|bt_att_handle_group|struct|struct bt_att_handle_group {
 DECL|bt_att_hdr|struct|struct bt_att_hdr {
 DECL|bt_att_indicate|struct|struct bt_att_indicate {
-DECL|bt_att_info_1|struct|struct bt_att_info_1 {
-DECL|bt_att_info_2|struct|struct bt_att_info_2 {
+DECL|bt_att_info_128|struct|struct bt_att_info_128 {
+DECL|bt_att_info_16|struct|struct bt_att_info_16 {
 DECL|bt_att_notify|struct|struct bt_att_notify {
 DECL|bt_att_prepare_write_req|struct|struct bt_att_prepare_write_req {
 DECL|bt_att_prepare_write_rsp|struct|struct bt_att_prepare_write_rsp {
