@@ -1,6 +1,5 @@
 DECL|AlternateTask|function|int AlternateTask(void)
 DECL|IRQ_PRIORITY|macro|IRQ_PRIORITY
-DECL|NELEMENTS|macro|NELEMENTS
 DECL|ONE_SECOND|macro|ONE_SECOND
 DECL|PIPE_SIZE|macro|PIPE_SIZE
 DECL|RegressionTask|function|int RegressionTask(void)

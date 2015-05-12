@@ -2,7 +2,6 @@ DECL|AlternateTask|function|void AlternateTask(void)
 DECL|DEFRAG_BLK_TEST|macro|DEFRAG_BLK_TEST
 DECL|DefragTask|function|void DefragTask(void)
 DECL|HelperTask|function|void HelperTask(void)
-DECL|NELEMENTS|macro|NELEMENTS
 DECL|NUM_BLOCKS|macro|NUM_BLOCKS
 DECL|ONE_SECOND|macro|ONE_SECOND
 DECL|RegressionTask|function|void RegressionTask(void)
