@@ -10,5 +10,5 @@ DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|_interrupt_stack|variable|_interrupt_stack
 DECL|_k_init_and_idle_task_stack|variable|_k_init_and_idle_task_stack
-DECL|_nano_init|function|void _nano_init(tCCS *dummyOutContext, int argc, char *argv[], char *envp[])
+DECL|_nano_init|function|void _nano_init(tCCS *dummyOutContext)
 DECL|build_timestamp|variable|build_timestamp
