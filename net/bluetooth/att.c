@@ -17,4 +17,4 @@ DECL|bt_att_create_pdu|function|struct bt_buf *bt_att_create_pdu(struct bt_conn 
 DECL|bt_att_recv|function|void bt_att_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
-DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, uint8_t *data, uint8_t len)
+DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct bt_buf *data)
