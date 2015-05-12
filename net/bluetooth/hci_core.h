@@ -9,6 +9,7 @@ DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|le_features|member|uint8_t le_features[8];
 DECL|le_mtu|member|uint16_t le_mtu;
+DECL|le_pkts_sem|member|struct nano_sem le_pkts_sem;
 DECL|le_pkts|member|uint8_t le_pkts;
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable
