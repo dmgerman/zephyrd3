@@ -112,7 +112,7 @@ DECL|bt_att_read_rsp|struct|struct bt_att_read_rsp {
 DECL|bt_att_read_type_req|struct|struct bt_att_read_type_req {
 DECL|bt_att_read_type_rsp|struct|struct bt_att_read_type_rsp {
 DECL|bt_att_signature|struct|struct bt_att_signature {
-DECL|bt_att_signed_write_req|struct|struct bt_att_signed_write_req {
+DECL|bt_att_signed_write_cmd|struct|struct bt_att_signed_write_cmd {
 DECL|bt_att_write_cmd|struct|struct bt_att_write_cmd {
 DECL|bt_att_write_req|struct|struct bt_att_write_req {
 DECL|bt_uuid|struct|struct bt_uuid {
