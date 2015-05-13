@@ -205,7 +205,6 @@ DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
-DECL|action|member|int action;
 DECL|alloc|member|bool alloc; /* true if allocated via GETARGS(); else false */
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
@@ -264,7 +263,6 @@ DECL|mess|member|struct k_msg mess;
 DECL|min_nr_blocks|member|int min_nr_blocks;
 DECL|minblock_size|member|int minblock_size;
 DECL|mmap|member|kmemory_map_t mmap;
-DECL|mon_struct|struct|struct mon_struct {
 DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
@@ -318,11 +316,9 @@ DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
-DECL|task|member|ktask_t task;
 DECL|ticks|member|int32_t ticks;
 DECL|time1|member|int64_t time1;
 DECL|time2|member|int64_t time2;
-DECL|timer|member|int timer;
 DECL|timer|member|struct k_timer *timer;
 DECL|timer|member|struct k_timer *timer;
 DECL|time|member|uint32_t time;
