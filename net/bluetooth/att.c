@@ -1,3 +1,5 @@
+DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG|macro|BT_DBG
 DECL|att_exec_write_req|function|static void att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_req|function|static void att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_type_req|function|static void att_find_type_req(struct bt_conn *conn, struct bt_buf *data)
