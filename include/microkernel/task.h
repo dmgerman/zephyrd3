@@ -19,14 +19,9 @@ DECL|isr_task_id_get|macro|isr_task_id_get
 DECL|isr_task_priority_get|macro|isr_task_priority_get
 DECL|task_abort|macro|task_abort
 DECL|task_group_abort|macro|task_group_abort
-DECL|task_group_join|macro|task_group_join
-DECL|task_group_leave|macro|task_group_leave
-DECL|task_group_mask_get|macro|task_group_mask_get
 DECL|task_group_resume|macro|task_group_resume
 DECL|task_group_start|macro|task_group_start
 DECL|task_group_suspend|macro|task_group_suspend
-DECL|task_id_get|macro|task_id_get
-DECL|task_priority_get|macro|task_priority_get
 DECL|task_resume|macro|task_resume
 DECL|task_start|macro|task_start
 DECL|task_suspend|macro|task_suspend
