@@ -1,13 +1,18 @@
 DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
 DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
 DECL|NET_BUF_MAX_DATA|macro|NET_BUF_MAX_DATA
+DECL|NET_MAC_BUF_MAX_SIZE|macro|NET_MAC_BUF_MAX_SIZE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__unused|member|int __unused;
+DECL|__unused|member|int __unused;
 DECL|buf|member|uint8_t buf[NET_BUF_MAX_DATA];
+DECL|buf|member|uint8_t buf[NET_MAC_BUF_MAX_SIZE];
 DECL|context|member|struct net_context *context;
 DECL|data|member|uint8_t *data;
+DECL|data|member|uint8_t *data; /* this points to user data */
 DECL|ipaddr|member|uip_ipaddr_t ipaddr;
 DECL|last_tx_status|member|int last_tx_status;
+DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|nd6_defrt|member|void *nd6_defrt;
 DECL|nd6_ifaddr|member|void *nd6_ifaddr;
@@ -21,6 +26,8 @@ DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_put|macro|net_buf_put
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf|struct|struct net_buf {
+DECL|net_mbuf_tail|macro|net_mbuf_tail
+DECL|net_mbuf|struct|struct net_mbuf {
 DECL|packetbuf_hdr_len|member|uint8_t packetbuf_hdr_len;
 DECL|packetbuf_payload_len|member|int packetbuf_payload_len;
 DECL|packetbuf_ptr|member|uint8_t *packetbuf_ptr;
