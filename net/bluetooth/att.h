@@ -49,8 +49,6 @@ DECL|BT_ATT_OP_SIGNED_WRITE_CMD|macro|BT_ATT_OP_SIGNED_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_CMD|macro|BT_ATT_OP_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_REQ|macro|BT_ATT_OP_WRITE_REQ
 DECL|BT_ATT_OP_WRITE_RSP|macro|BT_ATT_OP_WRITE_RSP
-DECL|BT_UUID_128|macro|BT_UUID_128
-DECL|BT_UUID_16|macro|BT_UUID_16
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
@@ -115,7 +113,6 @@ DECL|bt_att_signature|struct|struct bt_att_signature {
 DECL|bt_att_signed_write_cmd|struct|struct bt_att_signed_write_cmd {
 DECL|bt_att_write_cmd|struct|struct bt_att_write_cmd {
 DECL|bt_att_write_req|struct|struct bt_att_write_req {
-DECL|bt_uuid|struct|struct bt_uuid {
 DECL|code|member|uint8_t code;
 DECL|data|member|struct bt_att_data data[0];
 DECL|data|member|struct bt_att_group_data data[0];
@@ -161,9 +158,6 @@ DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|type|member|uint16_t type;
-DECL|type|member|uint8_t type;
-DECL|u128|member|uint8_t u128[16];
-DECL|u16|member|uint16_t u16;
 DECL|uuid|member|uint16_t uuid;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
