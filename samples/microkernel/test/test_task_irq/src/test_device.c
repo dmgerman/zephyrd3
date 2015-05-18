@@ -11,5 +11,7 @@ DECL|DEV4_ID|macro|DEV4_ID
 DECL|DEV4_IRQ|macro|DEV4_IRQ
 DECL|DEV4_IRQ|macro|DEV4_IRQ
 DECL|DEV5_ID|macro|DEV5_ID
+DECL|NUM_OBJECTS|macro|NUM_OBJECTS
+DECL|irq_vectors|variable|irq_vectors
 DECL|taskA|function|int taskA(ksem_t semRdy)
 DECL|taskB|function|int taskB(ksem_t semRdy)

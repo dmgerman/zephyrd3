@@ -1,4 +1,5 @@
 DECL|MonitorTaskEntry|function|void MonitorTaskEntry(void)
+DECL|NUM_OBJECTS|macro|NUM_OBJECTS
 DECL|NUM_TASK_IRQS|macro|NUM_TASK_IRQS
 DECL|NUM_TEST_TASKS|macro|NUM_TEST_TASKS
 DECL|TIMEOUT|macro|TIMEOUT
