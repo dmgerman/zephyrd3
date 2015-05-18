@@ -32,6 +32,7 @@ DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
+DECL|BT_HCI_OP_LE_CREATE_CONN|macro|BT_HCI_OP_LE_CREATE_CONN
 DECL|BT_HCI_OP_LE_ENCRYPT|macro|BT_HCI_OP_LE_ENCRYPT
 DECL|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY
 DECL|BT_HCI_OP_LE_LTK_REQ_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_REPLY
@@ -109,6 +110,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -123,6 +125,7 @@ DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
 DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
+DECL|bt_hci_cp_le_create_conn|struct|struct bt_hci_cp_le_create_conn {
 DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
 DECL|bt_hci_cp_le_ltk_req_neg_reply|struct|struct bt_hci_cp_le_ltk_req_neg_reply {
 DECL|bt_hci_cp_le_ltk_req_reply|struct|struct bt_hci_cp_le_ltk_req_reply {
@@ -155,6 +158,9 @@ DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
+DECL|conn_interval_max|member|uint16_t conn_interval_max;
+DECL|conn_interval_min|member|uint16_t conn_interval_min;
+DECL|conn_latency|member|uint16_t conn_latency;
 DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
@@ -171,6 +177,7 @@ DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
 DECL|filter_dup|member|uint8_t filter_dup;
+DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|handle|member|uint16_t handle;
@@ -203,7 +210,9 @@ DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
 DECL|ltk|member|uint8_t ltk[16];
 DECL|manufacturer|member|uint16_t manufacturer;
+DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_interval|member|uint16_t max_interval;
+DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
@@ -213,14 +222,18 @@ DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
 DECL|own_addr_type|member|uint8_t own_addr_type;
+DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|param_len|member|uint8_t param_len;
+DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
 DECL|reason|member|uint8_t reason;
 DECL|role|member|uint8_t role;
+DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_type|member|uint8_t scan_type;
+DECL|scan_window|member|uint16_t scan_window;
 DECL|sco_max_len|member|uint8_t sco_max_len;
 DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
@@ -240,6 +253,7 @@ DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
+DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
