@@ -22,6 +22,8 @@ DECL|bt_att_recv|function|static void bt_att_recv(struct bt_conn *conn, struct b
 DECL|bt_att|struct|struct bt_att {
 DECL|conn|member|struct bt_conn *conn;
 DECL|mtu|member|uint16_t mtu;
+DECL|primary_uuid|variable|primary_uuid
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
+DECL|secondary_uuid|variable|secondary_uuid
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct bt_buf *data)
