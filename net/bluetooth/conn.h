@@ -14,6 +14,7 @@ DECL|handle|member|uint16_t handle;
 DECL|ident|member|uint8_t ident;
 DECL|l2cap|member|struct bt_conn_l2cap l2cap;
 DECL|le_conn_interval|member|uint8_t le_conn_interval;
+DECL|prnd|member|uint8_t prnd[16];
 DECL|ref|member|uint8_t ref;
 DECL|rx_len|member|uint16_t rx_len;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
