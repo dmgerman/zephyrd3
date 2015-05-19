@@ -1,5 +1,6 @@
 DECL|BT_SMP_CMD_PAIRING_CONFIRM|macro|BT_SMP_CMD_PAIRING_CONFIRM
 DECL|BT_SMP_CMD_PAIRING_FAIL|macro|BT_SMP_CMD_PAIRING_FAIL
+DECL|BT_SMP_CMD_PAIRING_RANDOM|macro|BT_SMP_CMD_PAIRING_RANDOM
 DECL|BT_SMP_CMD_PAIRING_REQ|macro|BT_SMP_CMD_PAIRING_REQ
 DECL|BT_SMP_CMD_PAIRING_RSP|macro|BT_SMP_CMD_PAIRING_RSP
 DECL|BT_SMP_ERR_AUTH_REQUIREMENTS|macro|BT_SMP_ERR_AUTH_REQUIREMENTS
@@ -29,10 +30,12 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|auth_req|member|uint8_t auth_req;
 DECL|bt_smp_hdr|struct|struct bt_smp_hdr {
 DECL|bt_smp_pairing_confirm|struct|struct bt_smp_pairing_confirm {
 DECL|bt_smp_pairing_fail|struct|struct bt_smp_pairing_fail {
+DECL|bt_smp_pairing_random|struct|struct bt_smp_pairing_random {
 DECL|bt_smp_pairing|struct|struct bt_smp_pairing {
 DECL|code|member|uint8_t code;
 DECL|init_key_dist|member|uint8_t init_key_dist;
@@ -41,4 +44,5 @@ DECL|max_key_size|member|uint8_t max_key_size;
 DECL|oob_flag|member|uint8_t oob_flag;
 DECL|reason|member|uint8_t reason;
 DECL|resp_key_dist|member|uint8_t resp_key_dist;
+DECL|val|member|uint8_t val[16];
 DECL|val|member|uint8_t val[16];
