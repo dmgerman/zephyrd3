@@ -13,10 +13,13 @@ DECL|BT_GATT_CHRC_WRITE_WITHOUT_RESP|macro|BT_GATT_CHRC_WRITE_WITHOUT_RESP
 DECL|BT_GATT_CHRC_WRITE|macro|BT_GATT_CHRC_WRITE
 DECL|BT_GATT_DESCRIPTOR|macro|BT_GATT_DESCRIPTOR
 DECL|BT_GATT_INCLUDE_SERVICE|macro|BT_GATT_INCLUDE_SERVICE
+DECL|BT_GATT_ITER_CONTINUE|enumerator|BT_GATT_ITER_CONTINUE,
+DECL|BT_GATT_ITER_STOP|enumerator|BT_GATT_ITER_STOP = 0,
 DECL|BT_GATT_PRIMARY_SERVICE|macro|BT_GATT_PRIMARY_SERVICE
 DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
 DECL|__BT_GATT_H|macro|__BT_GATT_H
+DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
 DECL|bt_gatt_attr|struct|struct bt_gatt_attr {
 DECL|bt_gatt_ccc|struct|struct bt_gatt_ccc {
 DECL|bt_gatt_cep|struct|struct bt_gatt_cep {
