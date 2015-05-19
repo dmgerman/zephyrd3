@@ -1,3 +1,4 @@
+DECL|memcmp|function|int memcmp(const void *m1, const void *m2, size_t n)
 DECL|memcpy|function|void *memcpy(void *restrict d, const void *restrict s, size_t n)
 DECL|memmove|function|void *memmove(void *d, const void *s, size_t n)
 DECL|memset|function|void *memset(void *s, int c, size_t n)
