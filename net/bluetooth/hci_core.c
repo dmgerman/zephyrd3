@@ -3,6 +3,8 @@ DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
+DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
+DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bdaddr[6])
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
