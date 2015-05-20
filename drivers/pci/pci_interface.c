@@ -3,6 +3,6 @@ DECL|pci_ctrl_data_read|function|static int pci_ctrl_data_read(uint32_t controll
 DECL|pci_ctrl_data_write|function|static int pci_ctrl_data_write(uint32_t controller, /* controller number */uint32_t offset, /* offset within address register */ uint32_t data, /* data to write */ uint32_t size /* size of data */ )
 DECL|pci_ctrl_read|function|static void pci_ctrl_read(uint32_t reg, /* PCI register to read */ uint32_t *data, /* where to put the data */ uint32_t size /* size of the data to read (8/16/32 bits) */ )
 DECL|pci_ctrl_write|function|static void pci_ctrl_write(uint32_t reg, /* PCI register to write */ uint32_t data, /* data to write */ uint32_t size /* size of the data to write (8/16/32 bits) */ )
-DECL|pci_header_get|function|void pci_header_get(uint32_t controller, /* controller to use */ uint32_t bus,/* PCI bus number */ uint32_t dev,/* PCI device number */ uint32_t func,/* PCI function number */ union pci_dev *pci_dev_header /* output: device header */
+DECL|pci_header_get|function|void pci_header_get(uint32_t controller,union pci_addr_reg pci_ctrl_addr, union pci_dev *pci_dev_header)
 DECL|pci_read|function|void pci_read(uint32_t controller, /* PCI controller to use */ union pci_addr_reg addr, /* PCI address to read */ uint32_t size, /* size of data in bytes */ uint32_t *data /* data read from device */ )
 DECL|pci_write|function|void pci_write(uint32_t controller, /* controller to use */ union pci_addr_reg addr, /* PCI address to read */ uint32_t size, /* size in bytes */ uint32_t data/* data to write */ )

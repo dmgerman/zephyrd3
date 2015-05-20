@@ -11,12 +11,24 @@ DECL|LSPCI_MAX_DEV|macro|LSPCI_MAX_DEV
 DECL|LSPCI_MAX_FUNC|macro|LSPCI_MAX_FUNC
 DECL|LSPCI_MAX_REG|macro|LSPCI_MAX_REG
 DECL|MAX_BARS|macro|MAX_BARS
-DECL|dev_info_index|variable|dev_info_index
-DECL|dev_info|variable|dev_info
-DECL|pci_bar_config_get|function|static int pci_bar_config_get(uint32_t bus,uint32_t dev, uint32_t func, uint32_t bar, uint32_t *config)
-DECL|pci_bar_params_get|function|static inline int pci_bar_params_get(uint32_t bus,uint32_t dev, uint32_t func, uint32_t bar, struct pci_dev_info *dev_info)
-DECL|pci_bus_scan|function|void pci_bus_scan(uint32_t class_mask)
-DECL|pci_dev_find|function|int pci_dev_find(int class, int idx, uint32_t *addr, uint32_t *size, int *irq)
-DECL|pci_dev_scan|function|static void pci_dev_scan(uint32_t bus,uint32_t dev, uint32_t class_mask)
-DECL|pci_info_get|function|struct pci_dev_info *pci_info_get(void)
-DECL|pci_show|function|void pci_show(void)
+DECL|PCI_CLASS_MAX|macro|PCI_CLASS_MAX
+DECL|bar|member|uint32_t bar:4;
+DECL|bus_dev|struct|struct bus_dev {
+DECL|bus|member|uint16_t bus:8;
+DECL|bus|member|uint32_t bus:9;
+DECL|class_bd|variable|class_bd
+DECL|dev|member|uint16_t dev:5;
+DECL|dev|member|uint32_t dev:6;
+DECL|func|member|uint32_t func:4;
+DECL|info|member|struct pci_dev_info info;
+DECL|lookup_data|struct|struct lookup_data {
+DECL|lookup|variable|lookup
+DECL|pci_bar_config_get|function|static inline int pci_bar_config_get(union pci_addr_reg pci_ctrl_addr,uint32_t *config)
+DECL|pci_bar_params_get|function|static inline int pci_bar_params_get(union pci_addr_reg pci_ctrl_addr,struct pci_dev_info *dev_info)
+DECL|pci_bus_scan_init|function|void pci_bus_scan_init(void)
+DECL|pci_bus_scan|function|int pci_bus_scan(struct pci_dev_info *dev_info)
+DECL|pci_dev_scan|function|static inline int pci_dev_scan(union pci_addr_reg pci_ctrl_addr,struct pci_dev_info *dev_info)
+DECL|pci_show|function|void pci_show(struct pci_dev_info *dev_info)
+DECL|set|member|uint16_t set:1;
+DECL|unused|member|uint16_t unused:2;
+DECL|unused|member|uint32_t unused:9;
