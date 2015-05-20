@@ -6,10 +6,15 @@ DECL|Args|member|struct k_args *Args;
 DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
+DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
+DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
+DECL|BUFF_OTHER|enumerator|BUFF_OTHER
+DECL|BUFF_STATE|typedef|} BUFF_STATE;
 DECL|Back|member|struct k_proc *Back;
 DECL|Back|member|struct k_timer *Back;
 DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
+DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Buff|member|struct chbuff Buff;
 DECL|CHDEQ_ACK|enumerator|CHDEQ_ACK,
@@ -90,6 +95,7 @@ DECL|LOCK_RPL|enumerator|LOCK_RPL,
 DECL|LOCK_TMO|enumerator|LOCK_TMO,
 DECL|Level|member|int Level;
 DECL|Level|member|int Level;
+DECL|MAXNBR_MARKERS|macro|MAXNBR_MARKERS
 DECL|MEMCPY_REQ|enumerator|MEMCPY_REQ,
 DECL|MEMCPY_RPL|enumerator|MEMCPY_RPL,
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
@@ -110,6 +116,7 @@ DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|NOP|enumerator|NOP,
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
+DECL|Next|member|int Next; /* -1 == no successor */
 DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
 DECL|OFFLOAD|enumerator|OFFLOAD,
@@ -118,6 +125,7 @@ DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Owner|member|ktask_t Owner;
 DECL|POOL_DEFRAG|enumerator|POOL_DEFRAG,
 DECL|Params|member|int Params;
+DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|Prio|member|kpriority_t Prio;
 DECL|Prio|member|kpriority_t Prio;
 DECL|QUEUE|enumerator|QUEUE,
@@ -131,6 +139,7 @@ DECL|REL_BLOCK|enumerator|REL_BLOCK,
 DECL|REMREPLY|enumerator|REMREPLY,
 DECL|RESETM|enumerator|RESETM,
 DECL|RESETS|enumerator|RESETS,
+DECL|ReadMarkers|member|struct marker_list ReadMarkers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -180,6 +189,7 @@ DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
+DECL|WriteMarkers|member|struct marker_list WriteMarkers;
 DECL|Writers|member|struct k_args *Writers;
 DECL|Writers|member|struct k_args *Writers;
 DECL|XFER_B2R|enumerator|XFER_B2R,
@@ -205,16 +215,21 @@ DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
+DECL|aMarkers|member|struct marker aMarkers[MAXNBR_MARKERS];
 DECL|alloc|member|bool alloc; /* true if allocated via GETARGS(); else false */
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
+DECL|bReadWA|member|BOOL bReadWA;
+DECL|bWriteWA|member|BOOL bWriteWA;
+DECL|bXferBusy|member|BOOL bXferBusy;
 DECL|block_size|member|int block_size;
 DECL|block_stat|struct|struct block_stat {
 DECL|blocktable|member|struct block_stat *blocktable;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
 DECL|c1|member|struct _c1arg c1;
+DECL|chbuff|struct|struct chbuff {
 DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data|member|char *data;
@@ -232,8 +247,19 @@ DECL|func|member|kevent_handler_t func;
 DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
+DECL|iAWAMarker|member|int iAWAMarker; /* -1 means no AWAMarkers */
+DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
+DECL|iAvailDataCont|member|int iAvailDataCont;
+DECL|iBuffSize|member|int iBuffSize;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
+DECL|iFirstMarker|member|int iFirstMarker;
+DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
+DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
+DECL|iLastMarker|member|int iLastMarker;
+DECL|iNbrMarkers|member|int iNbrMarkers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
+DECL|iNbrPendingReads|member|int iNbrPendingReads;
+DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal; /* total size of data/free space */
@@ -255,6 +281,8 @@ DECL|l1|member|struct _l1arg l1;
 DECL|list|member|ksemg_t list;
 DECL|m1|member|struct _m1arg m1;
 DECL|map_struct|struct|struct map_struct {
+DECL|marker_list|struct|struct marker_list {
+DECL|marker|struct|struct marker {
 DECL|maxblock_size|member|int maxblock_size;
 DECL|mbx_struct|struct|struct mbx_struct {
 DECL|mem_blocks|member|char *mem_blocks;
@@ -277,14 +305,22 @@ DECL|nsem|member|int nsem;
 DECL|opt|member|int opt;
 DECL|opt|member|int opt;
 DECL|p1|member|struct _p1arg p1;
+DECL|pBegin|member|unsigned char *pBegin;
 DECL|pData|member|void *pData;
 DECL|pData|member|void *pData; /* if NULL, data is embedded in
+DECL|pEndOrig|member|unsigned char *pEndOrig;
+DECL|pEnd|member|unsigned char *pEnd;
 DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pPipe|member|struct pipe_struct *pPipe;
+DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
+DECL|pRead|member|unsigned char *pRead;
+DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid */
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
+DECL|pWrite|member|unsigned char *pWrite;
 DECL|period|member|int32_t period;
 DECL|pipe_struct|struct|struct pipe_struct {
+DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
 DECL|poolid|member|kmemory_pool_t poolid;
@@ -307,6 +343,7 @@ DECL|sem_struct|struct|struct sem_struct {
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
+DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|source|member|void *source;
