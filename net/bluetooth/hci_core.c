@@ -6,7 +6,7 @@ DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
 DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
-DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bdaddr[6])
+DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bda[6])
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
