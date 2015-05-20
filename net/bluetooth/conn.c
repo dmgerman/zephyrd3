@@ -2,7 +2,6 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|MAX_CONN_COUNT|macro|MAX_CONN_COUNT
 DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(struct bt_dev *dev, uint16_t handle)
-DECL|bt_conn_create_pdu|function|struct bt_buf *bt_conn_create_pdu(struct bt_conn *conn)
 DECL|bt_conn_del|function|void bt_conn_del(struct bt_conn *conn)
 DECL|bt_conn_get|function|struct bt_conn *bt_conn_get(struct bt_conn *conn)
 DECL|bt_conn_lookup|function|struct bt_conn *bt_conn_lookup(uint16_t handle)
