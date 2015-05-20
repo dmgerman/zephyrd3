@@ -84,7 +84,6 @@ DECL|lcrh|member|uint32_t lcrh;
 DECL|lineControlDefaultsSet|function|static inline void lineControlDefaultsSet(int port)
 DECL|mis|member|uint32_t mis;
 DECL|pollTxReady|function|static int pollTxReady(int port)
-DECL|ports|variable|ports
 DECL|ris|member|uint32_t ris;
 DECL|sr|macro|sr
 DECL|u1|member|} u1;

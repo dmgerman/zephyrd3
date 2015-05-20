@@ -18,4 +18,3 @@ DECL|uart_irq_tx_ready|function|int uart_irq_tx_ready(int port /* UART to check 
 DECL|uart_irq_update|function|int uart_irq_update(int port)
 DECL|uart_poll_in|function|int uart_poll_in(int port, /* UART channel to select for input */ unsigned char *pChar /* pointer to char */ )
 DECL|uart_poll_out|function|unsigned char uart_poll_out(int port, /* UART channel to select for output */ unsigned char outChar /* char to send */ )
-DECL|uart|variable|uart
