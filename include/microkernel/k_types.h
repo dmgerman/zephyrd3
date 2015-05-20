@@ -14,9 +14,7 @@ DECL|TICKS_NONE|macro|TICKS_NONE
 DECL|TICKS_UNLIMITED|macro|TICKS_UNLIMITED
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
-DECL|_ALL_N|enumerator|_ALL_N = 0x00000004,
-DECL|_ALL_OPT|enumerator|_ALL_OPT = 0x000000FF,
-DECL|_X_TO_N|enumerator|_X_TO_N = _0_TO_N | _1_TO_N
+DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|extra|member|} extra;
 DECL|info|member|uint32_t info; /* information field, free for user */
