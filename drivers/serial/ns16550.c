@@ -80,6 +80,8 @@ DECL|THR|macro|THR
 DECL|iirCache|member|uint8_t iirCache; /* cache of IIR since it clears when read */
 DECL|intPri|member|uint8_t intPri; /* interrupt priority */
 DECL|irq|member|uint8_t irq; /* interrupt request level */
+DECL|ns16550_uart_init|function|static inline void ns16550_uart_init()
+DECL|ns16550_uart_init|macro|ns16550_uart_init
 DECL|ns16550|struct|struct ns16550 {
 DECL|port|member|uint32_t port; /* base port number or MM base address */
 DECL|uart_fifo_fill|function|int uart_fifo_fill(int port, /* UART on port to send */ const uint8_t *txData, /* data to transmit */ int size /* number of bytes to send */ )
