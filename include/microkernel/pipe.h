@@ -1,4 +1,4 @@
-DECL|CHAN_H|macro|CHAN_H
+DECL|PIPE_H|macro|PIPE_H
 DECL|task_pipe_get_wait_timeout|macro|task_pipe_get_wait_timeout
 DECL|task_pipe_get_wait|macro|task_pipe_get_wait
 DECL|task_pipe_get|macro|task_pipe_get
