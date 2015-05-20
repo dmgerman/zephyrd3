@@ -3,6 +3,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|att_exec_write_req|function|static void att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_req|function|static void att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_type_req|function|static void att_find_type_req(struct bt_conn *conn, struct bt_buf *data)
+DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
 DECL|att_mtu_req|function|static void att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_prepare_write_req|function|static void att_prepare_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_blob_req|function|static void att_read_blob_req(struct bt_conn *conn, struct bt_buf *data)
@@ -24,10 +25,15 @@ DECL|bt_att_recv|function|static void bt_att_recv(struct bt_conn *conn, struct b
 DECL|bt_att|struct|struct bt_att {
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
+DECL|buf|member|struct bt_buf *buf;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
+DECL|conn|member|struct bt_conn *conn;
+DECL|find_type_cb|function|static uint8_t find_type_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|find_type_data|struct|struct find_type_data {
 DECL|group|member|struct bt_att_group_data *group;
+DECL|group|member|struct bt_att_handle_group *group;
 DECL|item|member|struct bt_att_data *item;
 DECL|mtu|member|uint16_t mtu;
 DECL|primary_uuid|variable|primary_uuid
@@ -43,3 +49,5 @@ DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct bt_buf *data)
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
+DECL|value_len|member|uint8_t value_len;
+DECL|value|member|const void *value;
