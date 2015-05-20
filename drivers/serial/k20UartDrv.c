@@ -1,5 +1,5 @@
 DECL|_k20Uart_t|typedef|} _k20Uart_t;
-DECL|baseAddr|member|uint8_t *baseAddr; /* base address of registers */
+DECL|base|member|uint8_t *base; /* base address of registers */
 DECL|intPri|member|uint8_t intPri; /* interrupt priority */
 DECL|irq|member|uint8_t irq; /* interrupt request level */
 DECL|uart_fifo_fill|function|int uart_fifo_fill(int port, /* UART on port to send */ const uint8_t *txData, /* data to transmit */ int len /* number of bytes to send */ )
