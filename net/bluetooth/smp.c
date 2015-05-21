@@ -2,7 +2,8 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|a|member|uint64_t a;
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
-DECL|bt_smp_recv|function|void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
+DECL|bt_smp_init|function|void bt_smp_init(void)
+DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|b|member|uint64_t b;
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
