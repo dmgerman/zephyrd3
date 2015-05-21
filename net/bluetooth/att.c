@@ -2,6 +2,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|att_exec_write_req|function|static void att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_req|function|static void att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
+DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle)
 DECL|att_find_type_req|function|static void att_find_type_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
 DECL|att_mtu_req|function|static void att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
@@ -28,15 +29,21 @@ DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
+DECL|buf|member|struct bt_buf *buf;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
+DECL|conn|member|struct bt_conn *conn;
+DECL|find_info_cb|function|static uint8_t find_info_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|find_info_data|struct|struct find_info_data {
 DECL|find_type_cb|function|static uint8_t find_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_type_data|struct|struct find_type_data {
 DECL|group|member|struct bt_att_group_data *group;
 DECL|group|member|struct bt_att_handle_group *group;
+DECL|info128|member|struct bt_att_info_128 *info128;
+DECL|info16|member|struct bt_att_info_16 *info16;
 DECL|item|member|struct bt_att_data *item;
 DECL|mtu|member|uint16_t mtu;
 DECL|offset|member|uint16_t offset;
@@ -48,6 +55,7 @@ DECL|read_group_cb|function|static uint8_t read_group_cb(const struct bt_gatt_at
 DECL|read_group_data|struct|struct read_group_data {
 DECL|read_type_cb|function|static uint8_t read_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|read_type_data|struct|struct read_type_data {
+DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
