@@ -12,6 +12,7 @@ DECL|bt_conn|struct|struct bt_conn {
 DECL|dev|member|struct bt_dev *dev;
 DECL|dst_type|member|uint8_t dst_type;
 DECL|dst|member|uint8_t dst[6];
+DECL|encrypt|member|uint8_t encrypt;
 DECL|handle|member|uint16_t handle;
 DECL|ident|member|uint8_t ident;
 DECL|l2cap|member|struct bt_conn_l2cap l2cap;

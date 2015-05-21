@@ -31,6 +31,7 @@ DECL|hci_cmd_done|function|static void hci_cmd_done(uint16_t opcode, uint8_t sta
 DECL|hci_cmd_fiber|function|static void hci_cmd_fiber(void)
 DECL|hci_cmd_status|function|static void hci_cmd_status(struct bt_buf *buf)
 DECL|hci_disconn_complete|function|static void hci_disconn_complete(struct bt_buf *buf)
+DECL|hci_encrypt_change|function|static void hci_encrypt_change(struct bt_buf *buf)
 DECL|hci_event|function|static void hci_event(struct bt_buf *buf)
 DECL|hci_init|function|static int hci_init(void)
 DECL|hci_le_meta_event|function|static void hci_le_meta_event(struct bt_buf *buf)
