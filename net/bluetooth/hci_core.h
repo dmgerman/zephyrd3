@@ -1,6 +1,9 @@
 DECL|adv_enable|member|uint8_t adv_enable;
+DECL|bdaddr_type|member|uint8_t bdaddr_type;
+DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_dev|struct|struct bt_dev {
+DECL|bt_keys|struct|struct bt_keys {
 DECL|cmd_queue|member|struct nano_fifo cmd_queue;
 DECL|drv|member|struct bt_driver *drv;
 DECL|features|member|uint8_t features[8];
@@ -18,3 +21,4 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|scan_enable|member|uint8_t scan_enable;
 DECL|sent_cmd|member|struct bt_buf *sent_cmd;
+DECL|slave_ltk|member|uint8_t slave_ltk[16];

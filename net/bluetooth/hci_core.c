@@ -1,5 +1,6 @@
 DECL|ACL_IN_MAX|macro|ACL_IN_MAX
 DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
+DECL|BDADDR_ANY|variable|BDADDR_ANY
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
@@ -14,6 +15,9 @@ DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, str
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct bt_buf *buf)
 DECL|bt_hci_reset|function|int bt_hci_reset(void)
 DECL|bt_init|function|int bt_init(void)
+DECL|bt_keys_clear|function|void bt_keys_clear(struct bt_keys *keys)
+DECL|bt_keys_create|function|struct bt_keys *bt_keys_create(uint8_t bdaddr[6], uint8_t bdaddr_type)
+DECL|bt_keys_find|function|struct bt_keys *bt_keys_find(uint8_t bdaddr[6], uint8_t bdaddr_type)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
@@ -33,6 +37,7 @@ DECL|hci_le_meta_event|function|static void hci_le_meta_event(struct bt_buf *buf
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct bt_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct bt_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(void)
+DECL|key_list|variable|key_list
 DECL|le_adv_report|function|static void le_adv_report(struct bt_buf *buf)
 DECL|le_conn_complete|function|static void le_conn_complete(struct bt_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct bt_buf *buf)
