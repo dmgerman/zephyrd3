@@ -22,7 +22,10 @@ DECL|bt_l2cap_sig_hdr|struct|struct bt_l2cap_sig_hdr {
 DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
 DECL|code|member|uint8_t code;
+DECL|connected|member|void (*connected)(struct bt_conn *conn);
 DECL|data|member|uint8_t data[0];
+DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn);
+DECL|encrypt_change|member|void (*encrypt_change)(struct bt_conn *conn);
 DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
