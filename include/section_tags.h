@@ -6,7 +6,6 @@ DECL|__isr_table_section|macro|__isr_table_section
 DECL|__noinit|macro|__noinit
 DECL|__scp_section|macro|__scp_section
 DECL|__scs_section|macro|__scs_section
-DECL|__section_stringify|macro|__section_stringify
 DECL|__section|macro|__section
 DECL|__security_frdm_k64f_section|macro|__security_frdm_k64f_section
 DECL|_section_tags__h_|macro|_section_tags__h_
