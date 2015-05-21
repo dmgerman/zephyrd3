@@ -22,12 +22,15 @@ DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
+DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_OP_LE_ENCRYPT|macro|BT_HCI_OP_LE_ENCRYPT
+DECL|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY
+DECL|BT_HCI_OP_LE_LTK_REQ_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_REPLY
 DECL|BT_HCI_OP_LE_RAND|macro|BT_HCI_OP_LE_RAND
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
@@ -94,6 +97,9 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
@@ -109,6 +115,8 @@ DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
 DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
 DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
+DECL|bt_hci_cp_le_ltk_req_neg_reply|struct|struct bt_hci_cp_le_ltk_req_neg_reply {
+DECL|bt_hci_cp_le_ltk_req_reply|struct|struct bt_hci_cp_le_ltk_req_reply {
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
@@ -122,6 +130,7 @@ DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
+DECL|bt_hci_evt_le_ltk_request|struct|struct bt_hci_evt_le_ltk_request {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
@@ -141,6 +150,7 @@ DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
 DECL|direct_addr|member|uint8_t direct_addr[6];
+DECL|ediv|member|uint16_t ediv;
 DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
@@ -152,6 +162,9 @@ DECL|features|member|uint8_t features[8];
 DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -175,6 +188,7 @@ DECL|len|member|uint8_t len;
 DECL|le|member|uint8_t le;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
+DECL|ltk|member|uint8_t ltk[16];
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
@@ -190,6 +204,7 @@ DECL|param_len|member|uint8_t param_len;
 DECL|peer_addr_type|member|uint8_t peer_addr_type;
 DECL|peer_addr|member|uint8_t peer_addr[6];
 DECL|plaintext|member|uint8_t plaintext[16];
+DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
 DECL|reason|member|uint8_t reason;
 DECL|role|member|uint8_t role;

@@ -40,6 +40,7 @@ DECL|hci_rx_fiber|function|static void hci_rx_fiber(void)
 DECL|key_list|variable|key_list
 DECL|le_adv_report|function|static void le_adv_report(struct bt_buf *buf)
 DECL|le_conn_complete|function|static void le_conn_complete(struct bt_buf *buf)
+DECL|le_ltk_request|function|static void le_ltk_request(struct bt_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct bt_buf *buf)
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct bt_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct bt_buf *buf)
