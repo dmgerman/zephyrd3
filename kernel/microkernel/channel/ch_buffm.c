@@ -1,6 +1,0 @@
-DECL|MarkerAddLast|function|int MarkerAddLast(struct marker_list *pMarkerList, unsigned char *pointer, int iSize, BOOL bXferBusy)
-DECL|MarkerDelete|function|void MarkerDelete(struct marker_list *pMarkerList, int index)
-DECL|MarkerFindFree|function|int MarkerFindFree(struct marker aMarkers[])
-DECL|MarkerLinkToListAfter|function|void MarkerLinkToListAfter(struct marker aMarkers[], int iMarker, int iNewMarker)
-DECL|MarkerUnlinkFromList|function|void MarkerUnlinkFromList(struct marker aMarkers[], int iMarker, int *piPredecessor, int *piSuccessor)
-DECL|MarkersClear|function|void MarkersClear(struct marker_list *pMarkerList)
