@@ -1,3 +1,4 @@
+DECL|CANCEL_TIMERS|macro|CANCEL_TIMERS
 DECL|KCHAN_H|macro|KCHAN_H
 DECL|REQ_TYPE|typedef|typedef uint32_t REQ_TYPE;
 DECL|TIME_TYPE|typedef|typedef uint32_t TIME_TYPE;
