@@ -1,3 +1,4 @@
+DECL|AreasCheck4Intrusion|function|static BOOL AreasCheck4Intrusion(unsigned char *pBegin1, int iSize1, unsigned char *pBegin2, int iSize2)
 DECL|AsyncDeQFinished|function|static void AsyncDeQFinished(struct chbuff *pChBuff, int iTransferID)
 DECL|AsyncDeQRegstr|function|static int AsyncDeQRegstr(struct chbuff *pChBuff, int iSize)
 DECL|AsyncEnQFinished|function|static void AsyncEnQFinished(struct chbuff *pChBuff, int iTransferID)
@@ -18,10 +19,12 @@ DECL|BuffInit|function|void BuffInit(unsigned char *pBuffer, int *piBuffSize, st
 DECL|CHECK_CHBUFF_POINTER|macro|CHECK_CHBUFF_POINTER
 DECL|CalcAvailData|function|int CalcAvailData(struct chbuff *pChBuff, int *piAvailDataCont, int *piAvailDataAWA)
 DECL|CalcFreeSpace|function|int CalcFreeSpace(struct chbuff *pChBuff, int *piFreeSpaceCont, int *piFreeSpaceAWA)
+DECL|ChannelCheck4Intrusion|function|void ChannelCheck4Intrusion(struct chbuff *pChBuff,unsigned char *pBegin, int iSize)
 DECL|MarkerAddLast|function|static int MarkerAddLast(struct marker_list *pMarkerList, unsigned char *pointer, int iSize, BOOL bXferBusy)
 DECL|MarkerDelete|function|static void MarkerDelete(struct marker_list *pMarkerList, int index)
 DECL|MarkerFindFree|function|static int MarkerFindFree(struct marker aMarkers[])
 DECL|MarkerLinkToListAfter|function|static void MarkerLinkToListAfter(struct marker aMarkers[], int iMarker, int iNewMarker)
 DECL|MarkerUnlinkFromList|function|static void MarkerUnlinkFromList(struct marker aMarkers[], int iMarker, int *piPredecessor, int *piSuccessor)
 DECL|MarkersClear|function|static void MarkersClear(struct marker_list *pMarkerList)
+DECL|STORE_NBR_MARKERS|macro|STORE_NBR_MARKERS
 DECL|ScanMarkers|function|static int ScanMarkers(struct marker_list *pMarkerList, int *piSizeBWA, int *piSizeAWA, int *piNbrPendingXfers)
