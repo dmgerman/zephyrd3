@@ -12,7 +12,7 @@ DECL|b|member|uint64_t b;
 DECL|conn|member|struct bt_conn *conn;
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
-DECL|le_rand|function|static int le_rand(uint8_t rand[16])
+DECL|le_rand|function|static int le_rand(void *buf, size_t len)
 DECL|pcnf|member|uint8_t pcnf[16];
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
