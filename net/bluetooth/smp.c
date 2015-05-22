@@ -4,19 +4,24 @@ DECL|a|member|uint64_t a;
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_conn *conn)
+DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_conn *conn)
 DECL|bt_smp_init|function|void bt_smp_init(void)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|conn|member|struct bt_conn *conn;
+DECL|ediv|member|uint16_t ediv;
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_rand|function|static int le_rand(void *buf, size_t len)
+DECL|local_dist|member|uint8_t local_dist;
+DECL|ltk|member|uint8_t ltk[16];
 DECL|pcnf|member|uint8_t pcnf[16];
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
+DECL|rand|member|uint64_t rand;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], uint8_t iat, const uint8_t ia[6], uint8_t rat, const uint8_t ra[6], uint8_t enc_data[16])
