@@ -48,5 +48,6 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct bt_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct bt_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct bt_buf *buf)
+DECL|rx_fiber_id|variable|rx_fiber_id
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue_init|function|static void rx_queue_init(void)
