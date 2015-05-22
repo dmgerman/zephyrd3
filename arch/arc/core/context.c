@@ -1,6 +1,6 @@
 DECL|CONTEXT_MONITOR_INIT|macro|CONTEXT_MONITOR_INIT
 DECL|CONTEXT_MONITOR_INIT|macro|CONTEXT_MONITOR_INIT
-DECL|_NewContext|function|void *_NewContext(char *pStackMem, /* pointer to stack memory */ unsigned stackSize, /* stack size in bytes */ _ContextEntry pEntry, /* context (thread) entry point routine */ void *parameter1, /* first param to entry point */
+DECL|_NewContext|function|void *_NewContext(char *pStackMem, /* pointer to aligned stack memory */ unsigned stackSize, /* stack size in bytes */ _ContextEntry pEntry, /* context (thread) entry point routine */ void *parameter1, /* first param to entry point */
 DECL|_nanokernel|variable|_nanokernel
 DECL|context_monitor_init|function|static ALWAYS_INLINE void context_monitor_init(struct s_CCS *pCcs /* context */ )
 DECL|init_stack_frame|struct|struct init_stack_frame {
