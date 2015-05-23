@@ -3,8 +3,8 @@ DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|BDADDR_ANY|variable|BDADDR_ANY
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
-DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
-DECL|CMD_STACK_SIZE|macro|CMD_STACK_SIZE
+DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
+DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bda[6])
@@ -22,14 +22,14 @@ DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
 DECL|bt_stop_scanning|function|int bt_stop_scanning()
-DECL|cmd_fiber_stack|variable|cmd_fiber_stack
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
+DECL|cmd_tx_fiber_stack|variable|cmd_tx_fiber_stack
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
 DECL|hci_cmd_done|function|static void hci_cmd_done(uint16_t opcode, uint8_t status, struct bt_buf *buf)
-DECL|hci_cmd_fiber|function|static void hci_cmd_fiber(void)
 DECL|hci_cmd_status|function|static void hci_cmd_status(struct bt_buf *buf)
+DECL|hci_cmd_tx_fiber|function|static void hci_cmd_tx_fiber(void)
 DECL|hci_disconn_complete|function|static void hci_disconn_complete(struct bt_buf *buf)
 DECL|hci_encrypt_change|function|static void hci_encrypt_change(struct bt_buf *buf)
 DECL|hci_event|function|static void hci_event(struct bt_buf *buf)
