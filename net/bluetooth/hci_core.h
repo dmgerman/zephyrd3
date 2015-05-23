@@ -5,6 +5,7 @@ DECL|bdaddr|member|uint8_t bdaddr[6];
 DECL|bt_dev|struct|struct bt_dev {
 DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
+DECL|cmd_rx_queue|member|struct nano_fifo cmd_rx_queue;
 DECL|cmd_tx_queue|member|struct nano_fifo cmd_tx_queue;
 DECL|drv|member|struct bt_driver *drv;
 DECL|ediv|member|uint16_t ediv;

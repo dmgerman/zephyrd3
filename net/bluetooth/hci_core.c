@@ -3,6 +3,8 @@ DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|BDADDR_ANY|variable|BDADDR_ANY
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|CMD_RX_STACK_SIZE|macro|CMD_RX_STACK_SIZE
+DECL|CMD_RX_STACK_SIZE|macro|CMD_RX_STACK_SIZE
 DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
 DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
@@ -23,6 +25,9 @@ DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const 
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
 DECL|bt_stop_scanning|function|int bt_stop_scanning()
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
+DECL|cmd_rx_fiber_id|variable|cmd_rx_fiber_id
+DECL|cmd_rx_fiber_stack|variable|cmd_rx_fiber_stack
+DECL|cmd_rx_fiber|function|static void cmd_rx_fiber(void)
 DECL|cmd_tx_fiber_stack|variable|cmd_tx_fiber_stack
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
@@ -48,6 +53,5 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct bt_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct bt_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct bt_buf *buf)
-DECL|rx_fiber_id|variable|rx_fiber_id
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue_init|function|static void rx_queue_init(void)
