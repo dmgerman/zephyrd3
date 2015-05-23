@@ -1,7 +1,5 @@
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
-DECL|BT_CONN_RX_STACK_SIZE|macro|BT_CONN_RX_STACK_SIZE
-DECL|BT_CONN_RX_STACK_SIZE|macro|BT_CONN_RX_STACK_SIZE
 DECL|BT_CONN_TX_STACK_SIZE|macro|BT_CONN_TX_STACK_SIZE
 DECL|BT_CONN_TX_STACK_SIZE|macro|BT_CONN_TX_STACK_SIZE
 DECL|att|member|void *att;
@@ -17,8 +15,6 @@ DECL|l2cap|member|struct bt_conn_l2cap l2cap;
 DECL|le_conn_interval|member|uint8_t le_conn_interval;
 DECL|ref|member|uint8_t ref;
 DECL|rx_len|member|uint16_t rx_len;
-DECL|rx_queue|member|struct nano_fifo rx_queue;
-DECL|rx_stack|member|char rx_stack[BT_CONN_RX_STACK_SIZE];
 DECL|rx|member|struct bt_buf *rx;
 DECL|smp|member|void *smp;
 DECL|state|member|uint8_t state;
