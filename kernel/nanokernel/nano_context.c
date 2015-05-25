@@ -1,5 +1,7 @@
 DECL|_context_entry|function|FUNC_NORETURN void _context_entry(_ContextEntry pEntry, /* address of app entry point function */ _ContextArg parameter1, /* 1st arg to app entry point function */ _ContextArg parameter2, /* 2nd arg to app entry point function */ _ContextArg parameter3 /* 3rd arg to app entry point function */
 DECL|_context_essential_check|function|int _context_essential_check(tCCS *pCtx /* pointer to context */ )
+DECL|_context_essential_clear|function|void _context_essential_clear(void)
+DECL|_context_essential_set|function|void _context_essential_set(void)
 DECL|_context_exit|function|void _context_exit(tCCS *pContext)
 DECL|_insert_ccs|function|void _insert_ccs(tCCS **queue, tCCS *ccs)
 DECL|context_custom_data_get|function|void *context_custom_data_get(void)
