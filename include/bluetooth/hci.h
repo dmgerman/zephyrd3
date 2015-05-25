@@ -1,5 +1,7 @@
-DECL|BT_ADDR_LE_DEV_PUBLIC|macro|BT_ADDR_LE_DEV_PUBLIC
-DECL|BT_ADDR_LE_DEV_RANDOM|macro|BT_ADDR_LE_DEV_RANDOM
+DECL|BT_ADDR_ANY|macro|BT_ADDR_ANY
+DECL|BT_ADDR_LE_ANY|macro|BT_ADDR_LE_ANY
+DECL|BT_ADDR_LE_PUBLIC|macro|BT_ADDR_LE_PUBLIC
+DECL|BT_ADDR_LE_RANDOM|macro|BT_ADDR_LE_RANDOM
 DECL|BT_EIR_FLAGS|macro|BT_EIR_FLAGS
 DECL|BT_EIR_GAP_APPEARANCE|macro|BT_EIR_GAP_APPEARANCE
 DECL|BT_EIR_MANUFACTURER_DATA|macro|BT_EIR_MANUFACTURER_DATA
@@ -108,10 +110,11 @@ DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
-DECL|bdaddr_type|member|uint8_t bdaddr_type;
-DECL|bdaddr|member|uint8_t bdaddr[6];
-DECL|bdaddr|member|uint8_t bdaddr[6];
+DECL|addr|member|bt_addr_le_t addr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_handle|macro|bt_acl_handle
+DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
+DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
@@ -151,8 +154,7 @@ DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
-DECL|direct_addr_type|member|uint8_t direct_addr_type;
-DECL|direct_addr|member|uint8_t direct_addr[6];
+DECL|direct_addr|member|bt_addr_le_t direct_addr;
 DECL|ediv|member|uint16_t ediv;
 DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
@@ -206,8 +208,7 @@ DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
 DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|param_len|member|uint8_t param_len;
-DECL|peer_addr_type|member|uint8_t peer_addr_type;
-DECL|peer_addr|member|uint8_t peer_addr[6];
+DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
@@ -234,4 +235,7 @@ DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
 DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|type|member|uint8_t type;
+DECL|type|member|uint8_t type;
+DECL|val|member|uint8_t val[6];
+DECL|val|member|uint8_t val[6];
 DECL|window|member|uint16_t window;

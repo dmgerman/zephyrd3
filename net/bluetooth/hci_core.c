@@ -9,7 +9,8 @@ DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
 DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
-DECL|bt_bdaddr_str|function|const char *bt_bdaddr_str(const uint8_t bda[6])
+DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
+DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
@@ -18,8 +19,8 @@ DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct bt_buf
 DECL|bt_hci_reset|function|int bt_hci_reset(void)
 DECL|bt_init|function|int bt_init(void)
 DECL|bt_keys_clear|function|void bt_keys_clear(struct bt_keys *keys)
-DECL|bt_keys_create|function|struct bt_keys *bt_keys_create(uint8_t bdaddr[6], uint8_t bdaddr_type)
-DECL|bt_keys_find|function|struct bt_keys *bt_keys_find(uint8_t bdaddr[6], uint8_t bdaddr_type)
+DECL|bt_keys_create|function|struct bt_keys *bt_keys_create(const bt_addr_le_t *addr)
+DECL|bt_keys_find|function|struct bt_keys *bt_keys_find(const bt_addr_le_t *addr)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)

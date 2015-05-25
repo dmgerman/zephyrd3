@@ -21,7 +21,7 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
-DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], uint8_t iat, const uint8_t ia[6], uint8_t rat, const uint8_t ra[6], uint8_t enc_data[16])
+DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_pairing_confirm|function|static int smp_pairing_confirm(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_random|function|static int smp_pairing_random(struct bt_conn *conn, struct bt_buf *buf)

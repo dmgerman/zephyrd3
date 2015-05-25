@@ -1,7 +1,10 @@
+DECL|addr|member|bt_addr_le_t addr;
 DECL|adv_enable|member|uint8_t adv_enable;
-DECL|bdaddr_type|member|uint8_t bdaddr_type;
-DECL|bdaddr|member|uint8_t bdaddr[6];
-DECL|bdaddr|member|uint8_t bdaddr[6];
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bt_addr_cmp|function|static inline int bt_addr_cmp(const bt_addr_t *a, const bt_addr_t *b)
+DECL|bt_addr_copy|function|static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
+DECL|bt_addr_le_cmp|function|static inline int bt_addr_le_cmp(const bt_addr_le_t *a, const bt_addr_le_t *b)
+DECL|bt_addr_le_copy|function|static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 DECL|bt_dev|struct|struct bt_dev {
 DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
