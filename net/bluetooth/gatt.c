@@ -1,3 +1,5 @@
+DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG|macro|BT_DBG
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|attr_count|variable|attr_count
