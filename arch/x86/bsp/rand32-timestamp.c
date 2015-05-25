@@ -1,2 +1,2 @@
-DECL|_Rand32Get|function|uint32_t _Rand32Get(void)
-DECL|_Rand32Init|function|void _Rand32Init(void)
+DECL|sys_rand32_get|function|uint32_t sys_rand32_get(void)
+DECL|sys_rand32_init|function|void sys_rand32_init(void)
