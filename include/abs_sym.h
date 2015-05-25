@@ -1,1 +1,0 @@
-DECL|_ABSSYM_H_|macro|_ABSSYM_H_
