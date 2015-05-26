@@ -2,9 +2,6 @@ DECL|ACL_IN_MAX|macro|ACL_IN_MAX
 DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
-DECL|CMD_RX_STACK_SIZE|macro|CMD_RX_STACK_SIZE
-DECL|CMD_TX_STACK_SIZE|macro|CMD_TX_STACK_SIZE
-DECL|RX_STACK_SIZE|macro|RX_STACK_SIZE
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
 DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
 DECL|analyze_stacks|function|static void analyze_stacks(struct bt_conn *conn, struct bt_conn **ref)
@@ -28,9 +25,7 @@ DECL|bt_stop_scanning|function|int bt_stop_scanning()
 DECL|calculate_unused|function|static unsigned calculate_unused(const char *stack, unsigned size, int stack_growth)
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|cmd_rx_fiber_id|variable|cmd_rx_fiber_id
-DECL|cmd_rx_fiber_stack|variable|cmd_rx_fiber_stack
 DECL|cmd_rx_fiber|function|static void cmd_rx_fiber(void)
-DECL|cmd_tx_fiber_stack|variable|cmd_tx_fiber_stack
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
@@ -55,5 +50,4 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct bt_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct bt_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct bt_buf *buf)
-DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue_init|function|static void rx_queue_init(void)

@@ -1,5 +1,7 @@
 DECL|BT_STACK_DEBUG_EXTRA|macro|BT_STACK_DEBUG_EXTRA
 DECL|BT_STACK_DEBUG_EXTRA|macro|BT_STACK_DEBUG_EXTRA
+DECL|BT_STACK_NOINIT|macro|BT_STACK_NOINIT
+DECL|BT_STACK|macro|BT_STACK
 DECL|addr|member|bt_addr_le_t addr;
 DECL|adv_enable|member|uint8_t adv_enable;
 DECL|bdaddr|member|bt_addr_t bdaddr;
