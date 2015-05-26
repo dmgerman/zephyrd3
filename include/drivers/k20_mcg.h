@@ -127,17 +127,17 @@ DECL|c6|member|uint8_t c6; /* 0x5 */
 DECL|c7|member|uint8_t c7; /* 0xC */
 DECL|c8|member|uint8_t c8; /* 0xD */
 DECL|cr|member|uint8_t cr; /* 0x0 */
-DECL|erclken|member|uint8_t erclken : 1 __attribute__((packed));
-DECL|erefsten|member|uint8_t erefsten : 1 __attribute__((packed));
+DECL|erclken|member|uint8_t erclken : 1 __packed;
+DECL|erefsten|member|uint8_t erefsten : 1 __packed;
 DECL|field|member|} field;
-DECL|res_4|member|uint8_t res_4 : 1 __attribute__((packed));
-DECL|res_6|member|uint8_t res_6 : 1 __attribute__((packed));
+DECL|res_4|member|uint8_t res_4 : 1 __packed;
+DECL|res_6|member|uint8_t res_6 : 1 __packed;
 DECL|res_7|member|uint8_t res_7;
 DECL|res_9|member|uint8_t res_9;
-DECL|sc16p|member|uint8_t sc16p : 1 __attribute__((packed));
-DECL|sc2p|member|uint8_t sc2p : 1 __attribute__((packed));
-DECL|sc4p|member|uint8_t sc4p : 1 __attribute__((packed));
-DECL|sc8p|member|uint8_t sc8p : 1 __attribute__((packed));
+DECL|sc16p|member|uint8_t sc16p : 1 __packed;
+DECL|sc2p|member|uint8_t sc2p : 1 __packed;
+DECL|sc4p|member|uint8_t sc4p : 1 __packed;
+DECL|sc8p|member|uint8_t sc8p : 1 __packed;
 DECL|sc|member|uint8_t sc; /* 0x8 */
 DECL|s|member|uint8_t s; /* 0x6 */
 DECL|value|member|uint32_t value; /* reset 0x00 */

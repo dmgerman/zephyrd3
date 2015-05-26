@@ -18,15 +18,15 @@ DECL|errDetail2|member|uint32_t errDetail2; /* 0x0024 */
 DECL|errDetail3|member|uint32_t errDetail3; /* 0x002C */
 DECL|errDetail4|member|uint32_t errDetail4; /* 0x0034 */
 DECL|field|member|} field;
-DECL|hwRevLvl|member|uint8_t hwRevLvl : 4
-DECL|numRgnDescs|member|uint8_t numRgnDescs : 4
-DECL|numSlvPorts|member|uint8_t numSlvPorts : 4
-DECL|res_1|member|uint8_t res_1 : 7 __attribute__((packed)); /* RAZ/WI */
-DECL|res_20|member|uint8_t res_20 : 3 __attribute__((packed)); /* RAZ/WI */
-DECL|res_23|member|uint8_t res_23 : 1 __attribute__((packed)); /* RAO/WI */
-DECL|res_24|member|uint8_t res_24 : 3 __attribute__((packed)); /* RAZ/WI */
+DECL|hwRevLvl|member|uint8_t hwRevLvl : 4 __packed; /* Hardware revision */
+DECL|numRgnDescs|member|uint8_t numRgnDescs : 4 __packed; /* # of regions */
+DECL|numSlvPorts|member|uint8_t numSlvPorts : 4 __packed; /* # of slave ports */
+DECL|res_1|member|uint8_t res_1 : 7 __packed; /* RAZ/WI */
+DECL|res_20|member|uint8_t res_20 : 3 __packed; /* RAZ/WI */
+DECL|res_23|member|uint8_t res_23 : 1 __packed; /* RAO/WI */
+DECL|res_24|member|uint8_t res_24 : 3 __packed; /* RAZ/WI */
 DECL|rgnDescAltAccCtrl|member|uint32_t rgnDescAltAccCtrl[MPU_NUM_REGIONS]; /* 0x0800 */
 DECL|rgnDesc|member|uint32_t rgnDesc[MPU_NUM_REGIONS][MPU_NUM_WORDS_PER_REGION]; /* 0x0400
-DECL|slvPortNErr|member|uint8_t slvPortNErr : 5
-DECL|valid|member|uint8_t valid : 1
+DECL|slvPortNErr|member|uint8_t slvPortNErr : 5 __packed; /* slave port N err */
+DECL|valid|member|uint8_t valid : 1 __packed; /* MPU valid/enable */
 DECL|value|member|uint32_t value;

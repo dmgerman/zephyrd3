@@ -1,4 +1,4 @@
-DECL|IDT_ENTRY|typedef|} __attribute__ ((packed)) IDT_ENTRY;
+DECL|IDT_ENTRY|typedef|} __packed IDT_ENTRY;
 DECL|_EXC_ERROR_CODE_FAULTS|macro|_EXC_ERROR_CODE_FAULTS
 DECL|_IDTENT_H|macro|_IDTENT_H
 DECL|_IdtEntCreate|function|static inline void _IdtEntCreate( unsigned long long *pIdtEntry, /* Pointer to where the entry is be built */ void (*routine)(void *), /* Routine to call when interrupt occurs */ unsigned int dpl /* priv level for interrupt descriptor */
