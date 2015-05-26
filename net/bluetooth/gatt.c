@@ -10,12 +10,18 @@ DECL|bt_gatt_attr_read_service|function|int bt_gatt_attr_read_service(const bt_a
 DECL|bt_gatt_attr_read|function|int bt_gatt_attr_read(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t buf_len, uint16_t offset, const void *value, uint8_t value_len)
 DECL|bt_gatt_attr_write_ccc|function|int bt_gatt_attr_write_ccc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
 DECL|bt_gatt_foreach_attr|function|void bt_gatt_foreach_attr(uint16_t start_handle, uint16_t end_handle, bt_gatt_attr_func_t func, void *user_data)
+DECL|bt_gatt_notify|function|void bt_gatt_notify(uint16_t handle, const void *data, size_t len)
 DECL|bt_gatt_register|function|void bt_gatt_register(const struct bt_gatt_attr *attrs, size_t count)
+DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|end_handle|member|uint16_t end_handle;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_incl|struct|struct gatt_incl {
+DECL|handle|member|uint8_t handle;
+DECL|len|member|size_t len;
+DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|notify_data|struct|struct notify_data {
 DECL|properties|member|uint8_t properties;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|uuid16|member|uint16_t uuid16;
