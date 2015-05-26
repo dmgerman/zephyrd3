@@ -8,5 +8,5 @@ DECL|limitUpperByte|member|uint8_t limitUpperByte; /* bits 16:19 of limit + more
 DECL|limit|member|uint16_t limit; /* GDT limit */
 DECL|pEntries|member|tGdtDesc *pEntries; /* pointer to the GDT entries */
 DECL|s_gdtDesc|struct|typedef struct s_gdtDesc {
-DECL|s_gdtHeader|struct|typedef struct PACK_STRUCT s_gdtHeader
+DECL|s_gdtHeader|struct|typedef struct __packed s_gdtHeader
 DECL|tGdtDesc|typedef|} tGdtDesc;
