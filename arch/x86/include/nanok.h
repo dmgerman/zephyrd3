@@ -303,7 +303,7 @@ DECL|IV_SIMD_FP|macro|IV_SIMD_FP
 DECL|IV_STACK_FAULT|macro|IV_STACK_FAULT
 DECL|IV_X87_FPU_FP_ERROR|macro|IV_X87_FPU_FP_ERROR
 DECL|NANO_CPU_EXC_STUB_DECL|macro|NANO_CPU_EXC_STUB_DECL
-DECL|NANO_EXC_STUB|typedef|__attribute__((aligned(_EXC_STUB_ALIGN))) NANO_EXC_STUB[_EXC_STUB_SIZE];
+DECL|NANO_EXC_STUB|typedef|typedef unsigned char __aligned(_EXC_STUB_ALIGN) NANO_EXC_STUB[_EXC_STUB_SIZE];
 DECL|NO_METRICS_BIT_OFFSET|macro|NO_METRICS_BIT_OFFSET
 DECL|NO_METRICS|macro|NO_METRICS
 DECL|NULL|macro|NULL
@@ -322,6 +322,8 @@ DECL|_EXC_STUB_SIZE|macro|_EXC_STUB_SIZE
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANOK_H|macro|_NANOK_H
+DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
+DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
@@ -396,10 +398,8 @@ DECL|s_preempReg|struct|typedef struct s_preempReg {
 DECL|tCoopFloatReg|typedef|} tCoopFloatReg;
 DECL|tCoopReg|typedef|} tCoopReg;
 DECL|tFpRegEx|typedef|} tFpRegEx;
-DECL|tFpRegSetEx|typedef|} tFpRegSetEx __attribute__((aligned(FP_REG_SET_ALIGN)));
 DECL|tFpRegSetEx|typedef|} tFpRegSetEx;
 DECL|tFpRegSetEx|typedef|} tFpRegSetEx;
-DECL|tFpRegSet|typedef|} tFpRegSet __attribute__((aligned(FP_REG_SET_ALIGN)));
 DECL|tFpRegSet|typedef|} tFpRegSet;
 DECL|tFpReg|typedef|} tFpReg;
 DECL|tNANO|typedef|} tNANO;

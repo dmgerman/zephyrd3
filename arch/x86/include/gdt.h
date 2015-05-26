@@ -10,4 +10,3 @@ DECL|pEntries|member|tGdtDesc *pEntries; /* pointer to the GDT entries */
 DECL|s_gdtDesc|struct|typedef struct s_gdtDesc {
 DECL|s_gdtHeader|struct|typedef struct PACK_STRUCT s_gdtHeader
 DECL|tGdtDesc|typedef|} tGdtDesc;
-DECL|tGdtHeader|typedef|} tGdtHeader __attribute__((aligned(4)));
