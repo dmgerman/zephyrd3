@@ -1,7 +1,6 @@
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_TX_STACK_SIZE|macro|BT_CONN_TX_STACK_SIZE
-DECL|BT_CONN_TX_STACK_SIZE|macro|BT_CONN_TX_STACK_SIZE
 DECL|att|member|void *att;
 DECL|bt_conn_l2cap|struct|struct bt_conn_l2cap {
 DECL|bt_conn|struct|struct bt_conn {
