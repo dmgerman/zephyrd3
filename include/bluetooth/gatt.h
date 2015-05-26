@@ -32,7 +32,7 @@ DECL|flags|member|uint16_t flags;
 DECL|handle|member|uint16_t handle;
 DECL|properties|member|uint8_t properties;
 DECL|properties|member|uint8_t properties;
-DECL|read|member|int (*read)(const struct bt_gatt_attr *attr,
+DECL|read|member|int (*read)(const bt_addr_le_t *peer,
 DECL|start_handle|member|uint16_t start_handle;
 DECL|string|member|char *string;
 DECL|user_data|member|void *user_data;
@@ -41,4 +41,4 @@ DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|value_handle|member|uint16_t value_handle;
-DECL|write|member|int (*write)(const struct bt_gatt_attr *attr,
+DECL|write|member|int (*write)(const bt_addr_le_t *peer,

@@ -26,11 +26,11 @@ DECL|hrmc_uuid|variable|hrmc_uuid
 DECL|hrs_uuid|variable|hrs_uuid
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
-DECL|read_appearance|function|static int read_appearance(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_blsc|function|static int read_blsc(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_blvl|function|static int read_blvl(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_ccc|function|static int read_ccc(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_ct|function|static int read_ct(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_name|function|static int read_name(const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_appearance|function|static int read_appearance(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_blsc|function|static int read_blsc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_blvl|function|static int read_blvl(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_ccc|function|static int read_ccc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_ct|function|static int read_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|sd|variable|sd
-DECL|write_ccc|function|static int write_ccc(const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
+DECL|write_ccc|function|static int write_ccc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
