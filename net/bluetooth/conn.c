@@ -4,7 +4,7 @@ DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(struct bt_dev *dev, uint16
 DECL|bt_conn_del|function|void bt_conn_del(struct bt_conn *conn)
 DECL|bt_conn_get|function|struct bt_conn *bt_conn_get(struct bt_conn *conn)
 DECL|bt_conn_lookup_by_addr_le|function|struct bt_conn *bt_conn_lookup_by_addr_le(const bt_addr_le_t *peer)
-DECL|bt_conn_lookup|function|struct bt_conn *bt_conn_lookup(uint16_t handle)
+DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
 DECL|bt_conn_put|function|void bt_conn_put(struct bt_conn *conn)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct bt_buf *buf, uint8_t flags)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
