@@ -1,7 +1,6 @@
 DECL|BAR_SPACE_IO|macro|BAR_SPACE_IO
 DECL|BAR_SPACE_MEM|macro|BAR_SPACE_MEM
 DECL|PCI_BAR_ANY|macro|PCI_BAR_ANY
-DECL|PCI_DEBUG|macro|PCI_DEBUG
 DECL|PCI_MAX_BARS|macro|PCI_MAX_BARS
 DECL|_PCI_H_|macro|_PCI_H_
 DECL|addr|member|uint32_t addr; /* I/O or memory region address */
