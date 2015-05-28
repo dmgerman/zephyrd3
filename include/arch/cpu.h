@@ -1,0 +1,1 @@
+DECL|__ARCHCPU_H__|macro|__ARCHCPU_H__
