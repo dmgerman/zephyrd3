@@ -1,10 +1,8 @@
 DECL|DOUBLE|macro|DOUBLE
 DECL|EOF|macro|EOF
-DECL|FALSE|macro|FALSE
 DECL|MAXFLD|macro|MAXFLD
 DECL|MAXFP1|macro|MAXFP1
 DECL|MAXFP2|macro|MAXFP2
-DECL|TRUE|macro|TRUE
 DECL|_atoi|function|static int _atoi(char **sptr)
 DECL|_get_digit|function|static char _get_digit(uint32_t fract[], int *digit_count)
 DECL|_isdigit|function|static inline int _isdigit(int c)

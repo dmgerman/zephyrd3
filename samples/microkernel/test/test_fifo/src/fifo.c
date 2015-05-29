@@ -11,4 +11,4 @@ DECL|myData|variable|myData
 DECL|printMyData|function|void printMyData(void)
 DECL|tcRC|variable|tcRC
 DECL|verifyQueueData|function|int verifyQueueData(int loopCnt)
-DECL|verifyRetValue|function|BOOL verifyRetValue(int expectRetValue, int currentRetValue)
+DECL|verifyRetValue|function|bool verifyRetValue(int expectRetValue, int currentRetValue)

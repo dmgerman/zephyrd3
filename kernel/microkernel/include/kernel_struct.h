@@ -220,9 +220,9 @@ DECL|alloc|member|bool alloc; /* true if allocated via GETARGS(); else false */
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
-DECL|bReadWA|member|BOOL bReadWA;
-DECL|bWriteWA|member|BOOL bWriteWA;
-DECL|bXferBusy|member|BOOL bXferBusy;
+DECL|bReadWA|member|bool bReadWA;
+DECL|bWriteWA|member|bool bWriteWA;
+DECL|bXferBusy|member|bool bXferBusy;
 DECL|block_size|member|int block_size;
 DECL|block_stat|struct|struct block_stat {
 DECL|blocktable|member|struct block_stat *blocktable;

@@ -5,4 +5,4 @@ DECL|printPointers|function|void printPointers(void **pointer)
 DECL|tcRC|variable|tcRC
 DECL|testMapFreeAllBlocks|function|int testMapFreeAllBlocks(void **p)
 DECL|testMapGetAllBlocks|function|int testMapGetAllBlocks(void **p)
-DECL|verifyRetValue|function|BOOL verifyRetValue(int expectRetValue, int currentRetValue)
+DECL|verifyRetValue|function|bool verifyRetValue(int expectRetValue, int currentRetValue)
