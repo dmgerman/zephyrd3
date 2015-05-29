@@ -1,7 +1,6 @@
 DECL|Elem|struct|struct Elem {
 DECL|Head|member|struct list_elem *Head;
 DECL|List|struct|struct List {
-DECL|NULL|macro|NULL
 DECL|Next|member|struct Elem *Next;
 DECL|Prev|member|struct Elem *Prev;
 DECL|Prio|member|unsigned int Prio;
