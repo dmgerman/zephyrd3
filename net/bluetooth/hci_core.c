@@ -23,6 +23,7 @@ DECL|bt_stop_scanning|function|int bt_stop_scanning()
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|cmd_rx_fiber_id|variable|cmd_rx_fiber_id
 DECL|cmd_rx_fiber|function|static void cmd_rx_fiber(void)
+DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
