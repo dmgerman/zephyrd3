@@ -18,6 +18,7 @@ DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint
 DECL|le_rand|function|static int le_rand(void *buf, size_t len)
 DECL|local_dist|member|uint8_t local_dist;
 DECL|pcnf|member|uint8_t pcnf[16];
+DECL|pending_encrypt|member|bool pending_encrypt;
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
