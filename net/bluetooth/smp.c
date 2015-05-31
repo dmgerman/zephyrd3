@@ -8,6 +8,7 @@ DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn 
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_conn *conn)
 DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_conn *conn)
 DECL|bt_smp_init|function|void bt_smp_init(void)
+DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp|struct|struct bt_smp {
@@ -24,6 +25,7 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
+DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_ident_addr_info|function|static int smp_ident_addr_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_ident_info|function|static int smp_ident_info(struct bt_conn *conn, struct bt_buf *buf)
