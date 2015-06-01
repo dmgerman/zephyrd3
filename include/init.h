@@ -1,0 +1,10 @@
+DECL|_INIT_H_|macro|_INIT_H_
+DECL|__define_initconfig|macro|__define_initconfig
+DECL|__used|macro|__used
+DECL|late_initconfig|macro|late_initconfig
+DECL|micro_early_init|macro|micro_early_init
+DECL|micro_late_init|macro|micro_late_init
+DECL|nano_early_init|macro|nano_early_init
+DECL|nano_late_init|macro|nano_late_init
+DECL|pre_app_init|macro|pre_app_init
+DECL|pure_init|macro|pure_init
