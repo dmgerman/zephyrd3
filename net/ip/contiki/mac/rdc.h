@@ -4,7 +4,7 @@ DECL|RDC_WITH_DUPLICATE_DETECTION|macro|RDC_WITH_DUPLICATE_DETECTION
 DECL|buf|member|struct queuebuf *buf;
 DECL|channel_check_interval|member|unsigned short (* channel_check_interval)(void);
 DECL|init|member|void (* init)(void);
-DECL|input|member|void (* input)(struct net_buf *buf);
+DECL|input|member|uint8_t (* input)(struct net_buf *buf);
 DECL|name|member|char *name;
 DECL|next|member|struct rdc_buf_list *next;
 DECL|off|member|int (* off)(int keep_radio_on);

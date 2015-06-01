@@ -14,6 +14,6 @@ DECL|NETSTACK_RDC_CHANNEL_CHECK_RATE|macro|NETSTACK_RDC_CHANNEL_CHECK_RATE
 DECL|NETSTACK_RDC|macro|NETSTACK_RDC
 DECL|NETSTACK_RDC|macro|NETSTACK_RDC
 DECL|init|member|void (* init)(void);
-DECL|input|member|void (* input)(struct net_buf *buf);
+DECL|input|member|uint8_t (* input)(struct net_buf *buf);
 DECL|name|member|char *name;
 DECL|network_driver|struct|struct network_driver {

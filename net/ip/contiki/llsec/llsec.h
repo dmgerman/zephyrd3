@@ -1,7 +1,7 @@
 DECL|LLSEC_H_|macro|LLSEC_H_
 DECL|bootstrap|member|void (* bootstrap)(llsec_on_bootstrapped_t on_bootstrapped);
 DECL|get_overhead|member|uint8_t (* get_overhead)(void);
-DECL|input|member|void (* input)(struct net_buf *buf);
+DECL|input|member|uint8_t (* input)(struct net_buf *buf);
 DECL|llsec_driver|struct|struct llsec_driver {
 DECL|llsec_on_bootstrapped_t|typedef|typedef void (* llsec_on_bootstrapped_t)(void);
 DECL|name|member|char *name;
