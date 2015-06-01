@@ -43,6 +43,6 @@ DECL|type|member|uint8_t type;
 DECL|uip_icmp6_echo_reply_callback_t|typedef|typedef void (* uip_icmp6_echo_reply_callback_t)(uip_ipaddr_t *source,
 DECL|uip_icmp6_echo_reply_notification|struct|struct uip_icmp6_echo_reply_notification {
 DECL|uip_icmp6_error|struct|typedef struct uip_icmp6_error{
-DECL|uip_icmp6_error|typedef|} uip_icmp6_error;
+DECL|uip_icmp6_error|typedef|} PACK_ALIAS_STRUCT uip_icmp6_error;
 DECL|uip_icmp6_input_handler_t|typedef|} uip_icmp6_input_handler_t;
 DECL|uip_icmp6_input_handler|struct|typedef struct uip_icmp6_input_handler {

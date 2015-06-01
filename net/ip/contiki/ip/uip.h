@@ -1,3 +1,8 @@
+DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
+DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
+DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
+DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
+DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
 DECL|UIP_ABORT|macro|UIP_ABORT
 DECL|UIP_ACKDATA|macro|UIP_ACKDATA
 DECL|UIP_APPDATA_PTR|macro|UIP_APPDATA_PTR
@@ -228,13 +233,13 @@ DECL|uip_datalen|macro|uip_datalen
 DECL|uip_desto_hdr|struct|typedef struct uip_desto_hdr {
 DECL|uip_desto_hdr|typedef|} uip_desto_hdr;
 DECL|uip_ext_hdr_opt_padn|struct|typedef struct uip_ext_hdr_opt_padn {
-DECL|uip_ext_hdr_opt_padn|typedef|} uip_ext_hdr_opt_padn;
+DECL|uip_ext_hdr_opt_padn|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr_opt_padn;
 DECL|uip_ext_hdr_opt_rpl|struct|typedef struct uip_ext_hdr_opt_rpl {
 DECL|uip_ext_hdr_opt_rpl|typedef|} uip_ext_hdr_opt_rpl;
 DECL|uip_ext_hdr_opt|struct|typedef struct uip_ext_hdr_opt {
-DECL|uip_ext_hdr_opt|typedef|} uip_ext_hdr_opt;
+DECL|uip_ext_hdr_opt|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr_opt;
 DECL|uip_ext_hdr|struct|typedef struct uip_ext_hdr {
-DECL|uip_ext_hdr|typedef|} uip_ext_hdr;
+DECL|uip_ext_hdr|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr;
 DECL|uip_fallback_interface|struct|struct uip_fallback_interface {
 DECL|uip_frag_hdr|struct|typedef struct uip_frag_hdr {
 DECL|uip_frag_hdr|typedef|} uip_frag_hdr;
@@ -298,7 +303,7 @@ DECL|uip_poll|macro|uip_poll
 DECL|uip_restart|macro|uip_restart
 DECL|uip_rexmit|macro|uip_rexmit
 DECL|uip_routing_hdr|struct|typedef struct uip_routing_hdr {
-DECL|uip_routing_hdr|typedef|} uip_routing_hdr;
+DECL|uip_routing_hdr|typedef|} PACK_ALIAS_STRUCT uip_routing_hdr;
 DECL|uip_setdraddr|macro|uip_setdraddr
 DECL|uip_sethostaddr|macro|uip_sethostaddr
 DECL|uip_setnetmask|macro|uip_setnetmask

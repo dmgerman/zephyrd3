@@ -22,7 +22,7 @@ DECL|uip_eth_addr|struct|typedef struct uip_eth_addr {
 DECL|uip_eth_addr|typedef|} uip_eth_addr;
 DECL|uip_ip4addr_t|typedef|} uip_ip4addr_t;
 DECL|uip_ip4addr_t|union|typedef union uip_ip4addr_t {
-DECL|uip_ip6addr_t|typedef|} uip_ip6addr_t;
+DECL|uip_ip6addr_t|typedef|} PACK_ALIAS_STRUCT uip_ip6addr_t;
 DECL|uip_ip6addr_t|union|typedef union uip_ip6addr_t {
 DECL|uip_ipaddr_t|typedef|typedef uip_ip4addr_t uip_ipaddr_t;
 DECL|uip_ipaddr_t|typedef|typedef uip_ip6addr_t uip_ipaddr_t;

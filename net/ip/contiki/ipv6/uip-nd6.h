@@ -102,21 +102,21 @@ DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|uip_nd6_na|struct|typedef struct uip_nd6_na {
-DECL|uip_nd6_na|typedef|} uip_nd6_na;
+DECL|uip_nd6_na|typedef|} PACK_ALIAS_STRUCT uip_nd6_na;
 DECL|uip_nd6_ns|struct|typedef struct uip_nd6_ns {
-DECL|uip_nd6_ns|typedef|} uip_nd6_ns;
+DECL|uip_nd6_ns|typedef|} PACK_ALIAS_STRUCT uip_nd6_ns;
 DECL|uip_nd6_opt_dns|struct|typedef struct uip_nd6_opt_dns {
 DECL|uip_nd6_opt_dns|typedef|} uip_nd6_opt_dns;
 DECL|uip_nd6_opt_hdr|struct|typedef struct uip_nd6_opt_hdr {
-DECL|uip_nd6_opt_hdr|typedef|} uip_nd6_opt_hdr;
+DECL|uip_nd6_opt_hdr|typedef|} PACK_ALIAS_STRUCT uip_nd6_opt_hdr;
 DECL|uip_nd6_opt_mtu|struct|typedef struct uip_nd6_opt_mtu {
-DECL|uip_nd6_opt_mtu|typedef|} uip_nd6_opt_mtu;
+DECL|uip_nd6_opt_mtu|typedef|} PACK_ALIAS_STRUCT uip_nd6_opt_mtu;
 DECL|uip_nd6_opt_prefix_info|struct|typedef struct uip_nd6_opt_prefix_info {
 DECL|uip_nd6_opt_prefix_info|typedef|} uip_nd6_opt_prefix_info ;
 DECL|uip_nd6_opt_redirected_hdr|struct|typedef struct uip_nd6_opt_redirected_hdr {
 DECL|uip_nd6_opt_redirected_hdr|typedef|} uip_nd6_opt_redirected_hdr;
 DECL|uip_nd6_ra|struct|typedef struct uip_nd6_ra {
-DECL|uip_nd6_ra|typedef|} uip_nd6_ra;
+DECL|uip_nd6_ra|typedef|} PACK_ALIAS_STRUCT uip_nd6_ra;
 DECL|uip_nd6_redirect|struct|typedef struct uip_nd6_redirect {
 DECL|uip_nd6_redirect|typedef|} uip_nd6_redirect;
 DECL|uip_nd6_rs|struct|typedef struct uip_nd6_rs {
