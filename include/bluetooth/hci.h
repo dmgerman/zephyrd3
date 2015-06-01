@@ -23,6 +23,7 @@ DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
+DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE
 DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
@@ -104,6 +105,7 @@ DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_HCI_H|macro|__BT_HCI_H
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
@@ -134,6 +136,7 @@ DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
+DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_key_refresh_complete {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_ltk_request|struct|struct bt_hci_evt_le_ltk_request {
@@ -168,6 +171,7 @@ DECL|features|member|uint8_t features[8];
 DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -220,6 +224,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
