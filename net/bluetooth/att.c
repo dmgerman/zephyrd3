@@ -1,5 +1,9 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
+DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
+DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
+DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
 DECL|att_exec_write_req|function|static void att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_req|function|static void att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle)
@@ -32,6 +36,7 @@ DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
+DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
@@ -39,6 +44,7 @@ DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
+DECL|err|member|uint8_t err;
 DECL|err|member|uint8_t err;
 DECL|find_info_cb|function|static uint8_t find_info_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_info_data|struct|struct find_info_data {
