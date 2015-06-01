@@ -16,6 +16,7 @@ DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_chrc|variable|ct_chrc
 DECL|ct_uuid|variable|ct_uuid
 DECL|cts_uuid|variable|cts_uuid
+DECL|ct|variable|ct
 DECL|device_name_uuid|variable|device_name_uuid
 DECL|dis_uuid|variable|dis_uuid
 DECL|gap_uuid|variable|gap_uuid
@@ -45,4 +46,5 @@ DECL|vnd_enc_chrc|variable|vnd_enc_chrc
 DECL|vnd_enc_uuid|variable|vnd_enc_uuid
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
+DECL|write_ct|function|static int write_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
 DECL|write_vnd|function|static int write_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
