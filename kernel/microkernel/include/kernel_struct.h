@@ -32,7 +32,6 @@ DECL|ChMovedAck|member|struct k_chmovedack ChMovedAck;
 DECL|ChProc|member|struct k_chproc ChProc;
 DECL|ChRef|member|} ChRef;
 DECL|ChReq|member|struct k_chreq ChReq;
-DECL|Comm|member|K_COMM Comm;
 DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
@@ -202,6 +201,7 @@ DECL|XFER_W2R|enumerator|XFER_W2R
 DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
 DECL|YIELD|enumerator|YIELD,
 DECL|_KERNEL_STRUCT_H|macro|_KERNEL_STRUCT_H
+DECL|__packed|variable|__packed
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
 DECL|_e1arg|struct|struct _e1arg {
@@ -216,7 +216,6 @@ DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|aMarkers|member|struct marker aMarkers[MAXNBR_MARKERS];
-DECL|alloc|member|bool alloc; /* true if allocated via GETARGS(); else false */
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
