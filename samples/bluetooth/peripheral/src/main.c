@@ -11,6 +11,8 @@ DECL|blvl_chrc|variable|blvl_chrc
 DECL|blvl_uuid|variable|blvl_uuid
 DECL|bslc_chrc|variable|bslc_chrc
 DECL|bslc_uuid|variable|bslc_uuid
+DECL|conn_callbacks|variable|conn_callbacks
+DECL|connected|function|static void connected(const bt_addr_le_t *addr)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_chrc|variable|ct_chrc
@@ -20,6 +22,7 @@ DECL|cts_uuid|variable|cts_uuid
 DECL|ct|variable|ct
 DECL|device_name_uuid|variable|device_name_uuid
 DECL|dis_uuid|variable|dis_uuid
+DECL|disconnected|function|static void disconnected(const bt_addr_le_t *addr)
 DECL|gap_uuid|variable|gap_uuid
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
 DECL|hrcpc_chrc|variable|hrcpc_chrc
