@@ -37,4 +37,12 @@ DECL|read_blvl|function|static int read_blvl(const bt_addr_le_t *peer, const str
 DECL|read_ct|function|static int read_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_model|function|static int read_model(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_vnd|function|static int read_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|sd|variable|sd
+DECL|vnd_auth_chrc|variable|vnd_auth_chrc
+DECL|vnd_auth_uuid|variable|vnd_auth_uuid
+DECL|vnd_enc_chrc|variable|vnd_enc_chrc
+DECL|vnd_enc_uuid|variable|vnd_enc_uuid
+DECL|vnd_uuid|variable|vnd_uuid
+DECL|vnd_value|variable|vnd_value
+DECL|write_vnd|function|static int write_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
