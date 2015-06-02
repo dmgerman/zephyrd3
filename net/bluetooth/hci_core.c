@@ -9,6 +9,9 @@ DECL|analyze_stacks|macro|analyze_stacks
 DECL|analyze_stack|function|static void analyze_stack(const char *name, const char *stack, unsigned size, int stack_growth)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
+DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
+DECL|bt_connected|function|static void bt_connected(struct bt_conn *conn)
+DECL|bt_disconnected|function|static void bt_disconnected(struct bt_conn *conn)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
@@ -20,6 +23,7 @@ DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
 DECL|bt_stop_scanning|function|int bt_stop_scanning()
+DECL|callback_list|variable|callback_list
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
 DECL|dev|variable|dev
