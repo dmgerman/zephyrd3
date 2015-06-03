@@ -3,7 +3,6 @@ DECL|_context_essential_check|function|int _context_essential_check(tCCS *pCtx /
 DECL|_context_essential_clear|function|void _context_essential_clear(void)
 DECL|_context_essential_set|function|void _context_essential_set(void)
 DECL|_context_exit|function|void _context_exit(tCCS *pContext)
-DECL|_insert_ccs|function|void _insert_ccs(tCCS **queue, tCCS *ccs)
 DECL|context_custom_data_get|function|void *context_custom_data_get(void)
 DECL|context_custom_data_set|function|void context_custom_data_set(void *value /* new value */ )
 DECL|context_self_get|function|nano_context_id_t context_self_get(void)
