@@ -11,7 +11,6 @@ DECL|bt_addr_le_copy|function|static inline void bt_addr_le_copy(bt_addr_le_t *d
 DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
 DECL|bt_dev|struct|struct bt_dev {
-DECL|cmd_rx_queue|member|struct nano_fifo cmd_rx_queue;
 DECL|cmd_tx_queue|member|struct nano_fifo cmd_tx_queue;
 DECL|drv|member|struct bt_driver *drv;
 DECL|features|member|uint8_t features[8];
@@ -26,6 +25,7 @@ DECL|lmp_le_capable|macro|lmp_le_capable
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
+DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|scan_enable|member|uint8_t scan_enable;
 DECL|sent_cmd|member|struct bt_buf *sent_cmd;

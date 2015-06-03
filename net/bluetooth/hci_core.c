@@ -21,8 +21,6 @@ DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const 
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
 DECL|bt_stop_scanning|function|int bt_stop_scanning()
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
-DECL|cmd_rx_fiber_id|variable|cmd_rx_fiber_id
-DECL|cmd_rx_fiber|function|static void cmd_rx_fiber(void)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
@@ -48,4 +46,6 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct bt_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct bt_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct bt_buf *buf)
+DECL|rx_prio_fiber_id|variable|rx_prio_fiber_id
+DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|rx_queue_init|function|static void rx_queue_init(void)
