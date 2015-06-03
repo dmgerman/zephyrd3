@@ -31,7 +31,7 @@ DECL|off|function|off(int keep_radio_on)
 DECL|on|function|on(void)
 DECL|packet_sent|function|packet_sent(struct net_mbuf *buf, void *ptr, int status, int num_transmissions)
 DECL|qbuf_metadata|struct|struct qbuf_metadata {
-DECL|send_packet|function|send_packet(struct net_mbuf *buf, mac_callback_t sent, void *ptr)
+DECL|send_packet|function|send_packet(struct net_mbuf *buf, mac_callback_t sent, bool last_fragment, void *ptr)
 DECL|sent|member|mac_callback_t sent;
 DECL|transmissions|member|uint8_t transmissions;
 DECL|transmit_packet_list|function|transmit_packet_list(struct net_mbuf *buf, void *ptr)

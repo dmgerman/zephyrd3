@@ -53,7 +53,7 @@ DECL|compress_addr_64|function|compress_addr_64(uint8_t bitpos, uip_ipaddr_t *ip
 DECL|compress_hdr_hc06|function|compress_hdr_hc06(struct net_buf *mbuf, struct net_buf *buf, linkaddr_t *link_destaddr)
 DECL|compress_hdr_hc1|function|compress_hdr_hc1(struct net_mbuf *mbuf, struct net_buf *buf, linkaddr_t *link_destaddr)
 DECL|compress_hdr_ipv6|function|compress_hdr_ipv6(struct net_mbuf *mbuf, struct net_buf *buf, linkaddr_t *link_destaddr)
-DECL|compress|function|static uint8_t compress(struct net_buf *buf, const uip_lladdr_t *localdest)
+DECL|compress|function|static int compress(struct net_buf *buf)
 DECL|context|variable|context
 DECL|hc06_ptr|variable|hc06_ptr
 DECL|init|function|static void init(void)

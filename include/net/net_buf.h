@@ -10,6 +10,7 @@ DECL|buf|member|uint8_t buf[NET_MAC_BUF_MAX_SIZE];
 DECL|context|member|struct net_context *context;
 DECL|data|member|uint8_t *data;
 DECL|data|member|uint8_t *data; /* this points to user data */
+DECL|dest|member|linkaddr_t dest;
 DECL|ipaddr|member|uip_ipaddr_t ipaddr;
 DECL|last_tx_status|member|int last_tx_status;
 DECL|len|member|uint16_t len;

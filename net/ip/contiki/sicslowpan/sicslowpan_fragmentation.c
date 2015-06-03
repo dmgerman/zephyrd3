@@ -27,14 +27,14 @@ DECL|UIP_TCP_BUF|macro|UIP_TCP_BUF
 DECL|UIP_UDP_BUF|macro|UIP_UDP_BUF
 DECL|USE_FRAMER_HDRLEN|macro|USE_FRAMER_HDRLEN
 DECL|frag_sender|variable|frag_sender
-DECL|fragment|function|static int fragment(struct net_buf *buf, const uip_lladdr_t *localdest, void *ptr)
+DECL|fragment|function|static int fragment(struct net_buf *buf, void *ptr)
 DECL|my_tag|variable|my_tag
 DECL|packet_sent|function|packet_sent(struct net_mbuf *buf, void *ptr, int status, int transmissions)
 DECL|processed_ip_in_len|variable|processed_ip_in_len
 DECL|p|variable|p
 DECL|reass_tag|variable|reass_tag
 DECL|reassemble|function|static int reassemble(struct net_mbuf *mbuf)
-DECL|send_packet|function|send_packet(struct net_mbuf *buf, linkaddr_t *dest, void *ptr)
+DECL|send_packet|function|send_packet(struct net_mbuf *buf, linkaddr_t *dest, bool last_fragment, void *ptr)
 DECL|sicslowpan_buf|macro|sicslowpan_buf
 DECL|sicslowpan_buf|macro|sicslowpan_buf
 DECL|sicslowpan_fragmentation|variable|sicslowpan_fragmentation

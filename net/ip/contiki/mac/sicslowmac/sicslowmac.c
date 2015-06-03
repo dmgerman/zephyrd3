@@ -1,6 +1,4 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINTADDR|macro|PRINTADDR
-DECL|PRINTADDR|macro|PRINTADDR
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|channel_check_interval|function|channel_check_interval(void)
