@@ -18,6 +18,6 @@ DECL|handle|member|uint16_t handle;
 DECL|hci|member|struct bt_buf_hci_data hci;
 DECL|len|member|uint8_t len;
 DECL|opcode|member|uint16_t opcode;
-DECL|ref|member|uint8_t ref;
+DECL|ref|member|uint8_t ref:5, /* Reference count */
 DECL|sync|member|void *sync;
-DECL|type|member|uint8_t type;
+DECL|type|member|type:3; /* Type of data contained in the buffer */
