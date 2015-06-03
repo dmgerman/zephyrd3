@@ -1,4 +1,5 @@
 DECL|IPC_MTU|macro|IPC_MTU
+DECL|OP_GAP_START_ADV|macro|OP_GAP_START_ADV
 DECL|OP_REGISTER_SERVICE|macro|OP_REGISTER_SERVICE
 DECL|OP_STATUS|macro|OP_STATUS
 DECL|SERVICE_ID_CORE|macro|SERVICE_ID_CORE
@@ -10,7 +11,10 @@ DECL|STATUS_UNKNOWN_CMD|macro|STATUS_UNKNOWN_CMD
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|adv_type|member|uint8_t adv_type;
 DECL|cmd_register_service|struct|struct cmd_register_service {
+DECL|cmd_start_advertising|struct|struct cmd_start_advertising {
 DECL|code|member|uint8_t code;
 DECL|data|member|uint8_t data[0];
 DECL|id|member|uint8_t id;
