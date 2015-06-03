@@ -14,6 +14,7 @@ DECL|bslc_uuid|variable|bslc_uuid
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_chrc|variable|ct_chrc
+DECL|ct_update|variable|ct_update
 DECL|ct_uuid|variable|ct_uuid
 DECL|cts_uuid|variable|cts_uuid
 DECL|ct|variable|ct
