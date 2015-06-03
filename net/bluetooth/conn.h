@@ -19,4 +19,4 @@ DECL|smp|member|void *smp;
 DECL|src|member|bt_addr_le_t src;
 DECL|state|member|uint8_t state;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
-DECL|tx_stack|member|char tx_stack[BT_CONN_TX_STACK_SIZE];
+DECL|tx_stack|member|char __stack tx_stack[BT_CONN_TX_STACK_SIZE];
