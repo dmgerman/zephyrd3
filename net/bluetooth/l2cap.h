@@ -7,11 +7,11 @@ DECL|BT_L2CAP_CONN_PARAM_RSP|macro|BT_L2CAP_CONN_PARAM_RSP
 DECL|BT_L2CAP_REJ_INVALID_CID|macro|BT_L2CAP_REJ_INVALID_CID
 DECL|BT_L2CAP_REJ_MTU_EXCEEDED|macro|BT_L2CAP_REJ_MTU_EXCEEDED
 DECL|BT_L2CAP_REJ_NOT_UNDERSTOOD|macro|BT_L2CAP_REJ_NOT_UNDERSTOOD
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_chan *_next;
 DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {

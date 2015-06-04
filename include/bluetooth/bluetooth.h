@@ -6,8 +6,8 @@ DECL|BT_INFO|macro|BT_INFO
 DECL|BT_INFO|macro|BT_INFO
 DECL|BT_WARN|macro|BT_WARN
 DECL|BT_WARN|macro|BT_WARN
-DECL|PACK_STRUCT|variable|PACK_STRUCT
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
+DECL|__packed|variable|__packed
 DECL|bt_driver|struct|struct bt_driver {
 DECL|bt_eir|struct|struct bt_eir {
 DECL|data|member|uint8_t data[29];

@@ -41,15 +41,15 @@ DECL|BT_SMP_MAX_ENC_KEY_SIZE|macro|BT_SMP_MAX_ENC_KEY_SIZE
 DECL|BT_SMP_MIN_ENC_KEY_SIZE|macro|BT_SMP_MIN_ENC_KEY_SIZE
 DECL|BT_SMP_OOB_NOT_PRESENT|macro|BT_SMP_OOB_NOT_PRESENT
 DECL|BT_SMP_OOB_PRESENT|macro|BT_SMP_OOB_PRESENT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
-DECL|PACK_STRUCT|variable|PACK_STRUCT
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_req|member|uint8_t auth_req;
 DECL|bt_smp_encrypt_info|struct|struct bt_smp_encrypt_info {
