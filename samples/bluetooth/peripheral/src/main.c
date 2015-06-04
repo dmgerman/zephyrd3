@@ -5,6 +5,7 @@ DECL|appearance_chrc|variable|appearance_chrc
 DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
 DECL|bas_uuid|variable|bas_uuid
+DECL|battery|variable|battery
 DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
 DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
 DECL|blvl_chrc|variable|blvl_chrc
@@ -47,6 +48,7 @@ DECL|read_model|function|static int read_model(const bt_addr_le_t *peer, const s
 DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_vnd|function|static int read_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|sd|variable|sd
+DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_hrm|variable|simulate_hrm
 DECL|vnd_auth_chrc|variable|vnd_auth_chrc
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
