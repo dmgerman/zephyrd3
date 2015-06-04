@@ -33,6 +33,8 @@ DECL|hrmc_chrc|variable|hrmc_chrc
 DECL|hrmc_uuid|variable|hrmc_uuid
 DECL|hrs_uuid|variable|hrs_uuid
 DECL|mainloop|function|void mainloop(void)
+DECL|manuf_chrc|variable|manuf_chrc
+DECL|manuf_uuid|variable|manuf_uuid
 DECL|model_chrc|variable|model_chrc
 DECL|model_uuid|variable|model_uuid
 DECL|name_chrc|variable|name_chrc
@@ -40,6 +42,7 @@ DECL|read_appearance|function|static int read_appearance(const bt_addr_le_t *pee
 DECL|read_blsc|function|static int read_blsc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_blvl|function|static int read_blvl(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_ct|function|static int read_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_manuf|function|static int read_manuf(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_model|function|static int read_model(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_vnd|function|static int read_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
