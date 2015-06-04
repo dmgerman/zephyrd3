@@ -9,8 +9,8 @@ DECL|net_driver_15_4_recv_from_hw|function|int net_driver_15_4_recv_from_hw(stru
 DECL|net_driver_15_4_recv|function|int net_driver_15_4_recv(struct net_buf *buf)
 DECL|net_driver_15_4_send|function|static int net_driver_15_4_send(struct net_buf *buf)
 DECL|net_driver_15_4|variable|net_driver_15_4
-DECL|net_rx_fiber|function|static void net_rx_fiber(void)
-DECL|net_tx_fiber|function|static void net_tx_fiber(void)
+DECL|net_rx_15_4_fiber|function|static void net_rx_15_4_fiber(void)
+DECL|net_tx_15_4_fiber|function|static void net_tx_15_4_fiber(void)
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|variable|rx_queue
 DECL|tx_fiber_stack|variable|tx_fiber_stack
