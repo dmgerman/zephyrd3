@@ -44,3 +44,4 @@ DECL|TF_TERM|macro|TF_TERM
 DECL|TF_TIME|macro|TF_TIME
 DECL|TO_ALIST|macro|TO_ALIST
 DECL|_k_workload_monitor_update|macro|_k_workload_monitor_update
+DECL|k_task_monitor_hook_t|typedef|typedef void (*k_task_monitor_hook_t)(ktask_t taskid, uint32_t timestamp);

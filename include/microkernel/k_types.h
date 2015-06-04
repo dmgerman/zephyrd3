@@ -40,7 +40,6 @@ DECL|rx_data|member|void *rx_data; /* pointer to message data at receiver */
 DECL|rx_task|member|ktask_t rx_task; /* receiving task */
 DECL|sema|member|ksem_t sema; /* semaphore to signal when asynchr. call */
 DECL|size|member|uint32_t size; /* size of message (bytes) */
-DECL|taskswitchcallbackfunc|typedef|typedef void (*taskswitchcallbackfunc)(ktask_t taskid, uint32_t timestamp);
 DECL|transfer|member|struct k_args *transfer; /* for 2-steps data transfer operation
 DECL|tx_block|member|struct k_block tx_block; /* for async message posting */
 DECL|tx_data|member|void *tx_data; /* pointer to message data at sender side */
