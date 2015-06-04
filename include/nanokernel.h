@@ -6,7 +6,7 @@ DECL|__NANOKERNEL_H__|macro|__NANOKERNEL_H__
 DECL|_nano_queue|struct|struct _nano_queue {
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
-DECL|fiber|member|tCCS *fiber;
+DECL|fiber|member|nano_context_id_t fiber;
 DECL|head|member|void *head;
 DECL|lifo|member|struct nano_lifo lifo;
 DECL|link|member|struct nano_timer *link;
@@ -22,7 +22,6 @@ DECL|nano_timer|struct|struct nano_timer {
 DECL|next|member|uint32_t *next;
 DECL|nsig|member|int nsig;
 DECL|stat|member|int stat;
-DECL|tCCS|typedef|typedef struct s_CCS tCCS;
 DECL|tail|member|void *tail;
 DECL|ticks|member|uint32_t ticks;
 DECL|userData|member|void *userData;
