@@ -20,6 +20,7 @@ DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANOK__H_|macro|_NANOK__H_
 DECL|blink|member|uint32_t blink;
 DECL|callee_saved|struct|struct callee_saved {
+DECL|ccs|struct|struct ccs {
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
@@ -38,7 +39,7 @@ DECL|intlock_key|member|uint32_t intlock_key; /* interrupt key when relinquishin
 DECL|irq_stack_frame|struct|struct irq_stack_frame {
 DECL|jli_base|member|uint32_t jli_base;
 DECL|ldi_base|member|uint32_t ldi_base;
-DECL|link|member|struct s_CCS *link; /* node in singly-linked list
+DECL|link|member|struct ccs *link; /* node in singly-linked list
 DECL|lp_count|member|uint32_t lp_count;
 DECL|lp_count|member|uint32_t lp_count;
 DECL|lp_end|member|uint32_t lp_end;
@@ -46,7 +47,7 @@ DECL|lp_end|member|uint32_t lp_end;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
-DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pc|member|uint32_t pc;
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
@@ -83,7 +84,6 @@ DECL|r9|member|uint32_t r9;
 DECL|relinquish_cause|member|int relinquish_cause; /* one of the _CAUSE_xxxx definitions above */
 DECL|return_value|member|unsigned int return_value; /* return value from _Swap */
 DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
-DECL|s_CCS|struct|struct s_CCS {
 DECL|s_NANO|struct|struct s_NANO {
 DECL|sp|member|uint32_t sp; /* r28 */
 DECL|status32|member|uint32_t status32;

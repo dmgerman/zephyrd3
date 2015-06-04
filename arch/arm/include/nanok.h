@@ -13,6 +13,7 @@ DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_NANOK__H_|macro|_NANOK__H_
 DECL|basepri|member|uint32_t basepri;
+DECL|ccs|struct|struct ccs {
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
@@ -24,14 +25,13 @@ DECL|fiber|member|tCCS *fiber; /* singly linked list of runnable fiber contexts 
 DECL|flags|member|int flags; /* tCCS->flags of 'current' context */
 DECL|flags|member|uint32_t flags;
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|link|member|struct s_CCS *link; /* singly-linked list in _nanokernel.fibers */
+DECL|link|member|struct ccs *link; /* singly-linked list in _nanokernel.fibers */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
-DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
 DECL|prio|member|int prio;
 DECL|psp|member|uint32_t psp; /* r13 */
-DECL|s_CCS|struct|struct s_CCS {
 DECL|s_NANO|struct|struct s_NANO {
 DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;

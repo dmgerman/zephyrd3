@@ -11,7 +11,7 @@ DECL|head|member|void *head;
 DECL|lifo|member|struct nano_lifo lifo;
 DECL|link|member|struct nano_timer *link;
 DECL|list|member|void *list;
-DECL|nano_context_id_t|typedef|typedef struct s_CCS *nano_context_id_t;
+DECL|nano_context_id_t|typedef|typedef struct ccs *nano_context_id_t;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
 DECL|nano_fiber_entry_t|typedef|typedef void (*nano_fiber_entry_t)(int i1, int i2);
 DECL|nano_fifo|struct|struct nano_fifo {

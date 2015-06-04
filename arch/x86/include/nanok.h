@@ -320,6 +320,7 @@ DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANOK_H|macro|_NANOK_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
 DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
+DECL|ccs|struct|struct ccs {
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
@@ -355,12 +356,12 @@ DECL|fsw|member|unsigned short fsw; /* 2 : x87 FPU status word */
 DECL|ftw|member|unsigned char ftw; /* 1 : x87 FPU abridged tag word */
 DECL|ftw|member|unsigned short ftw; /* 2 : x87 FPU tag word */
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|link|member|struct s_CCS *link;
+DECL|link|member|struct ccs *link;
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
 DECL|nanoArchInit|function|static inline void nanoArchInit(void)
 DECL|nested|member|unsigned nested; /* nested interrupt count */
-DECL|next_context|member|struct s_CCS *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
 DECL|pad2|member|unsigned short pad2; /* 2 : N/A */
 DECL|pad3|member|unsigned short pad3; /* 2 : N/A */
@@ -377,7 +378,6 @@ DECL|rsrvd1|member|unsigned short rsrvd1; /* 2 : reserved */
 DECL|rsrvd2|member|unsigned short rsrvd2; /* 2 : reserved */
 DECL|rsrvd3|member|unsigned char rsrvd3[176]; /* 176 : reserved */
 DECL|rsrvd|member|unsigned char rsrvd[6]; /* 48 bits: reserved */
-DECL|s_CCS|struct|struct s_CCS {
 DECL|s_FpRegEx|struct|typedef struct s_FpRegEx {
 DECL|s_FpRegSetEx|struct|typedef struct s_FpRegSetEx /* # of bytes: name of register */
 DECL|s_FpRegSetEx|struct|typedef struct s_FpRegSetEx {
