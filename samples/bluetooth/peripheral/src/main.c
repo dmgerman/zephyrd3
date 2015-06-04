@@ -44,6 +44,7 @@ DECL|read_model|function|static int read_model(const bt_addr_le_t *peer, const s
 DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|read_vnd|function|static int read_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|sd|variable|sd
+DECL|simulate_hrm|variable|simulate_hrm
 DECL|vnd_auth_chrc|variable|vnd_auth_chrc
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
 DECL|vnd_enc_chrc|variable|vnd_enc_chrc
