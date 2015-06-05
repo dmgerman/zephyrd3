@@ -1,5 +1,5 @@
-DECL|NUM_BUFS|macro|NUM_BUFS
-DECL|NUM_MAC_BUFS|macro|NUM_MAC_BUFS
+DECL|NET_NUM_BUFS|macro|NET_NUM_BUFS
+DECL|NET_NUM_MAC_BUFS|macro|NET_NUM_MAC_BUFS
 DECL|buffers|variable|buffers
 DECL|free_bufs|variable|free_bufs
 DECL|free_mbufs|variable|free_mbufs
