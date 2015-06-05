@@ -1,9 +1,9 @@
 DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
-DECL|STACKSIZE|macro|STACKSIZE
+DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
 DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
-DECL|analyze_stacks|function|static void analyze_stacks(struct net_buf *buf, struct net_buf **ref)
+DECL|analyze_stacks|function|void analyze_stacks(struct net_buf *buf, struct net_buf **ref)
 DECL|analyze_stacks|macro|analyze_stacks
 DECL|calculate_unused|function|static unsigned calculate_unused(const char *stack, unsigned size, int stack_growth)
 DECL|init_rx_queue|function|static void init_rx_queue(void)
