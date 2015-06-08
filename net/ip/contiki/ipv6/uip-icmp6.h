@@ -34,7 +34,7 @@ DECL|UIP_ICMP6_HANDLER|macro|UIP_ICMP6_HANDLER
 DECL|UIP_ICMP6_INPUT_ERROR|macro|UIP_ICMP6_INPUT_ERROR
 DECL|UIP_ICMP6_INPUT_SUCCESS|macro|UIP_ICMP6_INPUT_SUCCESS
 DECL|callback|member|uip_icmp6_echo_reply_callback_t callback;
-DECL|handler|member|void (*handler)(void);
+DECL|handler|member|void (*handler)(struct net_buf *buf);
 DECL|icode|member|uint8_t icode;
 DECL|next|member|struct uip_icmp6_echo_reply_notification *next;
 DECL|next|member|struct uip_icmp6_input_handler *next;

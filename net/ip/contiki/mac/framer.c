@@ -1,1 +1,1 @@
-DECL|framer_canonical_create_and_secure|function|framer_canonical_create_and_secure(void)
+DECL|framer_canonical_create_and_secure|function|framer_canonical_create_and_secure(struct net_buf *buf)

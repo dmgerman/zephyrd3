@@ -40,7 +40,7 @@ DECL|radio_result_t|typedef|} radio_result_t;
 DECL|radio_value_t|typedef|typedef int radio_value_t;
 DECL|read|member|int (* read)(void *buf, unsigned short buf_len);
 DECL|receiving_packet|member|int (* receiving_packet)(void);
-DECL|send|member|int (* send)(const void *payload, unsigned short payload_len);
+DECL|send|member|int (* send)(struct net_buf *buf, const void *payload, unsigned short payload_len);
 DECL|set_object|member|radio_result_t (* set_object)(radio_param_t param, const void *src,
 DECL|set_value|member|radio_result_t (* set_value)(radio_param_t param, radio_value_t value);
-DECL|transmit|member|int (* transmit)(unsigned short transmit_len);
+DECL|transmit|member|int (* transmit)(struct net_buf *buf, unsigned short transmit_len);

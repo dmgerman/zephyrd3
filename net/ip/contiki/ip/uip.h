@@ -73,6 +73,9 @@ DECL|ackno|member|uint8_t ackno[4];
 DECL|appstate|member|uip_icmp6_appstate_t appstate;
 DECL|appstate|member|uip_tcp_appstate_t appstate;
 DECL|appstate|member|uip_udp_appstate_t appstate;
+DECL|buf|member|struct net_buf *buf;
+DECL|buf|member|struct net_buf *buf;
+DECL|buf|member|struct net_buf *buf;
 DECL|chkerr|member|uip_stats_t chkerr; /**< Number of ICMP packets with a bad
 DECL|chkerr|member|uip_stats_t chkerr; /**< Number of TCP segments with a bad
 DECL|chkerr|member|uip_stats_t chkerr; /**< Number of UDP segments with a bad
@@ -218,7 +221,6 @@ DECL|uip_abort|macro|uip_abort
 DECL|uip_acked|macro|uip_acked
 DECL|uip_are_solicited_bytes_equal|macro|uip_are_solicited_bytes_equal
 DECL|uip_buf_t|typedef|} uip_buf_t;
-DECL|uip_buf|macro|uip_buf
 DECL|uip_closed|macro|uip_closed
 DECL|uip_close|macro|uip_close
 DECL|uip_conn_active|macro|uip_conn_active
