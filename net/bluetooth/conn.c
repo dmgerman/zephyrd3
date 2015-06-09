@@ -1,6 +1,6 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
-DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(struct bt_dev *dev, uint16_t handle)
+DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(struct bt_dev *dev, uint16_t handle, uint8_t role)
 DECL|bt_conn_del|function|void bt_conn_del(struct bt_conn *conn)
 DECL|bt_conn_get|function|struct bt_conn *bt_conn_get(struct bt_conn *conn)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
