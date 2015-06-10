@@ -1,4 +1,4 @@
-DECL|_do_sys_clock_tick_announce|function|void _do_sys_clock_tick_announce(uint32_t ticks)
+DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(uint32_t ticks)
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_nano_ticks|variable|_nano_ticks
 DECL|_nano_timer_list|variable|_nano_timer_list
