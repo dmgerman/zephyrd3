@@ -36,6 +36,7 @@ DECL|_GENERIC_SECTION|macro|_GENERIC_SECTION
 DECL|_NODATA_SECTION|macro|_NODATA_SECTION
 DECL|_NODATA_SECTION|macro|_NODATA_SECTION
 DECL|__aligned|macro|__aligned
+DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
 DECL|__prekernel_init_level|macro|__prekernel_init_level
 DECL|likely|macro|likely
