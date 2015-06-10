@@ -23,7 +23,7 @@ DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_conn 
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_cmd|function|static uint8_t att_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_req|function|static uint8_t att_write_req(struct bt_conn *conn, struct bt_buf *data)
-DECL|att_write_rsp|function|static uint8_t att_write_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t handle, const void *value, uint8_t len)
+DECL|att_write_rsp|function|static uint8_t att_write_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
 DECL|bt_att_connected|function|static void bt_att_connected(struct bt_conn *conn)
 DECL|bt_att_create_pdu|function|struct bt_buf *bt_att_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_att_disconnected|function|static void bt_att_disconnected(struct bt_conn *conn)
