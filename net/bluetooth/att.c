@@ -6,6 +6,7 @@ DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
 DECL|att_exec_write_req|function|static uint8_t att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
+DECL|att_exec_write_rsp|function|static uint8_t att_exec_write_rsp(struct bt_conn *conn, uint8_t flags)
 DECL|att_find_info_req|function|static uint8_t att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_find_info_rsp|function|static uint8_t att_find_info_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle)
 DECL|att_find_type_req|function|static uint8_t att_find_type_req(struct bt_conn *conn, struct bt_buf *data)
@@ -37,7 +38,9 @@ DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
+DECL|buf|member|struct bt_buf *buf;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
+DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
@@ -48,11 +51,15 @@ DECL|conn|member|struct bt_conn *conn;
 DECL|err_to_att|function|static uint8_t err_to_att(int err)
 DECL|err|member|uint8_t err;
 DECL|err|member|uint8_t err;
+DECL|err|member|uint8_t err;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|find_info_cb|function|static uint8_t find_info_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_info_data|struct|struct find_info_data {
 DECL|find_type_cb|function|static uint8_t find_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_type_data|struct|struct find_type_data {
+DECL|flags|member|uint8_t flags;
+DECL|flush_cb|function|static uint8_t flush_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|flush_data|struct|struct flush_data {
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
 DECL|group|member|struct bt_att_group_data *group;
 DECL|group|member|struct bt_att_handle_group *group;
@@ -64,6 +71,7 @@ DECL|len|member|uint8_t len;
 DECL|mtu|member|uint16_t mtu;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
+DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|primary_uuid|variable|primary_uuid
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)

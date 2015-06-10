@@ -13,6 +13,8 @@ DECL|BT_GATT_CHRC_READ|macro|BT_GATT_CHRC_READ
 DECL|BT_GATT_CHRC_WRITE_WITHOUT_RESP|macro|BT_GATT_CHRC_WRITE_WITHOUT_RESP
 DECL|BT_GATT_CHRC_WRITE|macro|BT_GATT_CHRC_WRITE
 DECL|BT_GATT_DESCRIPTOR|macro|BT_GATT_DESCRIPTOR
+DECL|BT_GATT_FLUSH_DISCARD|macro|BT_GATT_FLUSH_DISCARD
+DECL|BT_GATT_FLUSH_SYNC|macro|BT_GATT_FLUSH_SYNC
 DECL|BT_GATT_INCLUDE_SERVICE|macro|BT_GATT_INCLUDE_SERVICE
 DECL|BT_GATT_ITER_CONTINUE|enumerator|BT_GATT_ITER_CONTINUE,
 DECL|BT_GATT_ITER_STOP|enumerator|BT_GATT_ITER_STOP = 0,
@@ -42,6 +44,7 @@ DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint16_t flags;
+DECL|flush|member|int (*flush)(const bt_addr_le_t *peer,
 DECL|handle|member|uint16_t handle;
 DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;
