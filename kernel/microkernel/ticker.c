@@ -1,10 +1,10 @@
-DECL|K_ticker|function|int K_ticker(int event)
 DECL|_SysIdleElapsedTicksGet|function|static inline int32_t _SysIdleElapsedTicksGet(void)
 DECL|_TimeSliceUpdate|function|static inline void _TimeSliceUpdate(void)
 DECL|_TlDebugUpdate|function|static inline int _TlDebugUpdate(int32_t ticks)
 DECL|_TlDebugUpdate|macro|_TlDebugUpdate
 DECL|_k_debug_sys_clock_tick_count|variable|_k_debug_sys_clock_tick_count
 DECL|_k_sys_clock_tick_count|variable|_k_sys_clock_tick_count
+DECL|_k_ticker|function|int _k_ticker(int event)
 DECL|_k_time_elapse|function|void _k_time_elapse(struct k_args *P)
 DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
 DECL|scheduler_time_slice_set|function|void scheduler_time_slice_set(int32_t t, /* time slice in ticks */kpriority_t p /* beginning priority level to which time slicing applies */ )
