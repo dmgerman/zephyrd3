@@ -48,7 +48,7 @@ DECL|flush|member|int (*flush)(const bt_addr_le_t *peer,
 DECL|handle|member|uint16_t handle;
 DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;
-DECL|properties|member|uint8_t properties;
+DECL|properties|member|uint16_t properties;
 DECL|properties|member|uint8_t properties;
 DECL|read|member|int (*read)(const bt_addr_le_t *peer,
 DECL|start_handle|member|uint16_t start_handle;
