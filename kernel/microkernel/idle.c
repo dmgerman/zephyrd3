@@ -8,6 +8,7 @@ DECL|_k_workload_get|function|void _k_workload_get(struct k_args *P)
 DECL|_k_workload_get|function|void _k_workload_get(struct k_args *P)
 DECL|_k_workload_i0|variable|_k_workload_i0
 DECL|_k_workload_i|variable|_k_workload_i
+DECL|_k_workload_monitor_calibrate|function|void _k_workload_monitor_calibrate(void)
 DECL|_k_workload_monitor_idle_end|function|void _k_workload_monitor_idle_end(void)
 DECL|_k_workload_monitor_idle_start|function|void _k_workload_monitor_idle_start(void)
 DECL|_k_workload_monitor_update|function|void _k_workload_monitor_update(void)
@@ -28,4 +29,3 @@ DECL|kernel_idle|function|int kernel_idle(void)
 DECL|sys_workload_time_slice_set|function|void sys_workload_time_slice_set(int32_t t)
 DECL|task_workload_get|function|int task_workload_get(void)
 DECL|workload_loop|function|static void workload_loop(void)
-DECL|workload_monitor_calibrate|function|void workload_monitor_calibrate(void)
