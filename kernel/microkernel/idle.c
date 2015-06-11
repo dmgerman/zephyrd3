@@ -2,6 +2,7 @@ DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
 DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
 DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
 DECL|_get_next_timer_expiry|function|static inline int32_t _get_next_timer_expiry(void)
+DECL|_k_kernel_idle|function|int _k_kernel_idle(void)
 DECL|_k_workload_delta|variable|_k_workload_delta
 DECL|_k_workload_end_time|variable|_k_workload_end_time
 DECL|_k_workload_get|function|void _k_workload_get(struct k_args *P)
@@ -25,7 +26,6 @@ DECL|_sys_idle_threshold_ticks|variable|_sys_idle_threshold_ticks
 DECL|_sys_power_save_flag|variable|_sys_power_save_flag
 DECL|_sys_power_save_idle_exit|function|void _sys_power_save_idle_exit(int32_t ticks)
 DECL|_sys_power_save_idle|function|void _sys_power_save_idle(int32_t ticks)
-DECL|kernel_idle|function|int kernel_idle(void)
 DECL|sys_workload_time_slice_set|function|void sys_workload_time_slice_set(int32_t t)
 DECL|task_workload_get|function|int task_workload_get(void)
 DECL|workload_loop|function|static void workload_loop(void)
