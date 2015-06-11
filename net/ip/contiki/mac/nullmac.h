@@ -1,0 +1,1 @@
+DECL|NULLMAC_H_|macro|NULLMAC_H_
