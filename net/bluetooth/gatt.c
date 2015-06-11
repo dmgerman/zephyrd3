@@ -4,6 +4,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|attr_count|variable|attr_count
 DECL|bt_gatt_attr_read_ccc|function|int bt_gatt_attr_read_ccc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|bt_gatt_attr_read_cep|function|int bt_gatt_attr_read_cep(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|bt_gatt_attr_read_chrc|function|int bt_gatt_attr_read_chrc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|bt_gatt_attr_read_include|function|int bt_gatt_attr_read_include(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|bt_gatt_attr_read_service|function|int bt_gatt_attr_read_service(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
