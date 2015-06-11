@@ -1,2 +1,0 @@
-DECL|_sw_isr_table|variable|_sw_isr_table
-DECL|_sw_isr_table|variable|_sw_isr_table
