@@ -30,6 +30,7 @@ DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
+DECL|BT_HCI_OP_DISCONNECT|macro|BT_HCI_OP_DISCONNECT
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_OP_LE_CREATE_CONN|macro|BT_HCI_OP_LE_CREATE_CONN
@@ -73,8 +74,10 @@ DECL|BT_LMP_NO_BREDR|macro|BT_LMP_NO_BREDR
 DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
 DECL|BT_OGF_LE|macro|BT_OGF_LE
+DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -123,6 +126,7 @@ DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
 DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
+DECL|bt_hci_cp_disconnect|struct|struct bt_hci_cp_disconnect {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
 DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
 DECL|bt_hci_cp_le_create_conn|struct|struct bt_hci_cp_le_create_conn {
@@ -189,6 +193,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
@@ -229,6 +234,7 @@ DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
+DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|role|member|uint8_t role;
 DECL|scan_interval|member|uint16_t scan_interval;

@@ -13,6 +13,7 @@ DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb
 DECL|bt_connect_le|function|int bt_connect_le(const bt_addr_le_t *peer)
 DECL|bt_connected|function|static void bt_connected(struct bt_conn *conn)
 DECL|bt_disconnected|function|static void bt_disconnected(struct bt_conn *conn)
+DECL|bt_disconnect|function|int bt_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
