@@ -38,6 +38,7 @@ DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_DISCONNECT|macro|BT_HCI_OP_DISCONNECT
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
+DECL|BT_HCI_OP_LE_CONN_UPDATE|macro|BT_HCI_OP_LE_CONN_UPDATE
 DECL|BT_HCI_OP_LE_CREATE_CONN|macro|BT_HCI_OP_LE_CREATE_CONN
 DECL|BT_HCI_OP_LE_ENCRYPT|macro|BT_HCI_OP_LE_ENCRYPT
 DECL|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY
@@ -82,6 +83,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -168,7 +170,10 @@ DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_versio
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
 DECL|conn_interval_max|member|uint16_t conn_interval_max;
+DECL|conn_interval_max|member|uint16_t conn_interval_max;
 DECL|conn_interval_min|member|uint16_t conn_interval_min;
+DECL|conn_interval_min|member|uint16_t conn_interval_min;
+DECL|conn_latency|member|uint16_t conn_latency;
 DECL|conn_latency|member|uint16_t conn_latency;
 DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
@@ -199,6 +204,8 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
 DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
@@ -221,7 +228,9 @@ DECL|lmp_version|member|uint8_t lmp_version;
 DECL|ltk|member|uint8_t ltk[16];
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|max_ce_len|member|uint16_t max_ce_len;
+DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_interval|member|uint16_t max_interval;
+DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|ncmd|member|uint8_t ncmd;
@@ -264,6 +273,7 @@ DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
+DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|type|member|uint8_t type;
