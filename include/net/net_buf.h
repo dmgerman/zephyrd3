@@ -39,6 +39,7 @@ DECL|pkt_packetbuf_addrs|member|struct packetbuf_addr pkt_packetbuf_addrs[PACKET
 DECL|pkt_packetbuf_attrs|member|struct packetbuf_attr pkt_packetbuf_attrs[PACKETBUF_NUM_ATTRS];
 DECL|pkt_packetbufptr|member|uint8_t *pkt_packetbufptr;
 DECL|pkt_packetbuf|member|uint8_t pkt_packetbuf[PACKETBUF_SIZE + PACKETBUF_HDR_SIZE];
+DECL|src|member|linkaddr_t src;
 DECL|uip_addr|macro|uip_addr
 DECL|uip_appdatalen|macro|uip_appdatalen
 DECL|uip_appdatalen|member|uint16_t uip_appdatalen;
