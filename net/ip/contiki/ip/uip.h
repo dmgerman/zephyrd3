@@ -237,7 +237,7 @@ DECL|uip_desto_hdr|typedef|} uip_desto_hdr;
 DECL|uip_ext_hdr_opt_padn|struct|typedef struct uip_ext_hdr_opt_padn {
 DECL|uip_ext_hdr_opt_padn|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr_opt_padn;
 DECL|uip_ext_hdr_opt_rpl|struct|typedef struct uip_ext_hdr_opt_rpl {
-DECL|uip_ext_hdr_opt_rpl|typedef|} uip_ext_hdr_opt_rpl;
+DECL|uip_ext_hdr_opt_rpl|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr_opt_rpl;
 DECL|uip_ext_hdr_opt|struct|typedef struct uip_ext_hdr_opt {
 DECL|uip_ext_hdr_opt|typedef|} PACK_ALIAS_STRUCT uip_ext_hdr_opt;
 DECL|uip_ext_hdr|struct|typedef struct uip_ext_hdr {
@@ -249,7 +249,7 @@ DECL|uip_getdraddr|macro|uip_getdraddr
 DECL|uip_gethostaddr|macro|uip_gethostaddr
 DECL|uip_getnetmask|macro|uip_getnetmask
 DECL|uip_hbho_hdr|struct|typedef struct uip_hbho_hdr {
-DECL|uip_hbho_hdr|typedef|} uip_hbho_hdr;
+DECL|uip_hbho_hdr|typedef|} PACK_ALIAS_STRUCT uip_hbho_hdr;
 DECL|uip_icmp6_conn|struct|struct uip_icmp6_conn {
 DECL|uip_icmp_hdr|struct|struct uip_icmp_hdr {
 DECL|uip_icmpip_hdr|struct|struct uip_icmpip_hdr {

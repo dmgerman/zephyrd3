@@ -17,7 +17,7 @@ DECL|UIP_MCAST6_SCOPE_SITE_LOCAL|macro|UIP_MCAST6_SCOPE_SITE_LOCAL
 DECL|UIP_MCAST6|macro|UIP_MCAST6
 DECL|UIP_MCAST6|macro|UIP_MCAST6
 DECL|init|member|void (* init)(void);
-DECL|in|member|uint8_t (* in)(void);
+DECL|in|member|uint8_t (* in)(struct net_buf *buf);
 DECL|name|member|char *name;
 DECL|out|member|void (* out)(void);
 DECL|uip_mcast6_driver|struct|struct uip_mcast6_driver {
