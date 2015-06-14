@@ -1,0 +1,10 @@
+DECL|SHORT_TIMEOUTS|macro|SHORT_TIMEOUTS
+DECL|TIMEOUT_BASE|macro|TIMEOUT_BASE
+DECL|TIMEOUT_BASE|macro|TIMEOUT_BASE
+DECL|TIMEOUT_INCREMENT|macro|TIMEOUT_INCREMENT
+DECL|TIMEOUT_INCREMENT|macro|TIMEOUT_INCREMENT
+DECL|TIMEOUT_TEN_INTERVALS|macro|TIMEOUT_TEN_INTERVALS
+DECL|TIMEOUT_TWO_INTERVALS|macro|TIMEOUT_TWO_INTERVALS
+DECL|TIMEOUT|macro|TIMEOUT
+DECL|_samples_include_tc_nano_timeout_common__h_|macro|_samples_include_tc_nano_timeout_common__h_
+DECL|is_timeout_in_range|function|static inline int is_timeout_in_range(int32_t orig_ticks, int32_t expected)
