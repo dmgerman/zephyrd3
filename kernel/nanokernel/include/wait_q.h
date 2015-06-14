@@ -1,4 +1,8 @@
 DECL|_kernel_nanokernel_include_wait_q__h_|macro|_kernel_nanokernel_include_wait_q__h_
+DECL|_nano_get_earliest_timeouts_deadline|macro|_nano_get_earliest_timeouts_deadline
+DECL|_nano_timeout_abort|macro|_nano_timeout_abort
+DECL|_nano_timeout_ccs_init|macro|_nano_timeout_ccs_init
+DECL|_nano_timeout_remove_ccs_from_wait_q|function|static inline void _nano_timeout_remove_ccs_from_wait_q(struct ccs *ccs)
 DECL|_nano_wait_q_init|function|static inline void _nano_wait_q_init(struct _nano_queue *wait_q)
 DECL|_nano_wait_q_put|function|static inline void _nano_wait_q_put(struct _nano_queue *wait_q)
 DECL|_nano_wait_q_remove_no_check|function|static inline tCCS *_nano_wait_q_remove_no_check(struct _nano_queue *wait_q)
