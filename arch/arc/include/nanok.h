@@ -47,6 +47,7 @@ DECL|lp_end|member|uint32_t lp_end;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
+DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pc|member|uint32_t pc;
 DECL|preempReg|member|struct preempt preempReg;
@@ -93,3 +94,4 @@ DECL|tISF|typedef|typedef struct irq_stack_frame tISF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
 DECL|task|member|tCCS *task; /* current task the nanokernel knows about */
+DECL|timeout_q|member|sys_dlist_t timeout_q;

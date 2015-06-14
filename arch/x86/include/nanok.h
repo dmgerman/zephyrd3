@@ -360,6 +360,7 @@ DECL|link|member|struct ccs *link;
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
 DECL|nanoArchInit|function|static inline void nanoArchInit(void)
+DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|nested|member|unsigned nested; /* nested interrupt count */
 DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
@@ -403,4 +404,5 @@ DECL|tPreempFloatReg|typedef|} tPreempFloatReg;
 DECL|tPreempReg|typedef|} tPreempReg;
 DECL|tXmmReg|typedef|} tXmmReg;
 DECL|task|member|tCCS *task; /* pointer to runnable task context */
+DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|xmmReg|member|tXmmReg xmmReg[8]; /* 128 : XMM registers */

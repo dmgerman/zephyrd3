@@ -27,6 +27,7 @@ DECL|flags|member|uint32_t flags;
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
 DECL|link|member|struct ccs *link; /* singly-linked list in _nanokernel.fibers */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
+DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
@@ -37,6 +38,7 @@ DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
 DECL|task|member|tCCS *task; /* pointer to runnable task context */
+DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
 DECL|v3|member|uint32_t v3; /* r6 */

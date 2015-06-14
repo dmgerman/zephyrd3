@@ -12,5 +12,7 @@ DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|_interrupt_stack|variable|_interrupt_stack
 DECL|build_timestamp|variable|build_timestamp
+DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
+DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
 DECL|main_task_stack|variable|main_task_stack
 DECL|nano_init|function|static void nano_init(tCCS *dummyOutContext)
