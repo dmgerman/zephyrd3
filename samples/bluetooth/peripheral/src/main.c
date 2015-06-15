@@ -14,7 +14,7 @@ DECL|bslc_chrc|variable|bslc_chrc
 DECL|bslc_uuid|variable|bslc_uuid
 DECL|buf|member|uint8_t buf[BT_BUF_MAX_DATA];
 DECL|conn_callbacks|variable|conn_callbacks
-DECL|connected|function|static void connected(const bt_addr_le_t *addr)
+DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_chrc|variable|ct_chrc
@@ -25,7 +25,7 @@ DECL|ct|variable|ct
 DECL|data|member|uint8_t data[BT_BUF_MAX_DATA];
 DECL|device_name_uuid|variable|device_name_uuid
 DECL|dis_uuid|variable|dis_uuid
-DECL|disconnected|function|static void disconnected(const bt_addr_le_t *addr)
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
 DECL|flush_long_vnd|function|static int flush_long_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gap_uuid|variable|gap_uuid
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
