@@ -18,5 +18,6 @@ DECL|main|function|void main(void)
 DECL|my_addr|variable|my_addr
 DECL|nanoSemFiber|variable|nanoSemFiber
 DECL|nanoSemTask|variable|nanoSemTask
+DECL|set_mac|function|static void set_mac(void)
 DECL|taskA|function|void taskA(void)
 DECL|taskB|function|void taskB(void)
