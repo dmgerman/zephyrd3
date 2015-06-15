@@ -18,7 +18,7 @@ DECL|att_read_group_req|function|static uint8_t att_read_group_req(struct bt_con
 DECL|att_read_group_rsp|function|static uint8_t att_read_group_rsp(struct bt_conn *conn, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
 DECL|att_read_mult_req|function|static uint8_t att_read_mult_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_req|function|static uint8_t att_read_req(struct bt_conn *conn, struct bt_buf *data)
-DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset)
+DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t *handles, size_t len, uint16_t offset)
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_conn *conn, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_conn *conn, struct bt_buf *data)
