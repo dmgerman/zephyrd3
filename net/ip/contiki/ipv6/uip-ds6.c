@@ -39,6 +39,7 @@ DECL|uip_ds6_send_ra_periodic|function|uip_ds6_send_ra_periodic(void)
 DECL|uip_ds6_send_ra_sollicited|function|uip_ds6_send_ra_sollicited(void)
 DECL|uip_ds6_send_rs|function|uip_ds6_send_rs(struct net_buf *buf)
 DECL|uip_ds6_set_addr_iid|function|uip_ds6_set_addr_iid(uip_ipaddr_t *ipaddr, uip_lladdr_t *lladdr)
+DECL|uip_ds6_set_lladdr|function|void uip_ds6_set_lladdr(uip_lladdr_t *lladdr)
 DECL|uip_ds6_timer_periodic|variable|uip_ds6_timer_periodic
 DECL|uip_ds6_timer_ra|variable|uip_ds6_timer_ra
 DECL|uip_ds6_timer_rs|variable|uip_ds6_timer_rs
