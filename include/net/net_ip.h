@@ -8,7 +8,6 @@ DECL|PF_INET6|macro|PF_INET6
 DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|__NET_IP_H|macro|__NET_IP_H
-DECL|addr|member|} addr;
 DECL|family|member|sa_family_t family;
 DECL|in4_u|member|} in4_u;
 DECL|in6_addr|member|struct in6_addr in6_addr;
