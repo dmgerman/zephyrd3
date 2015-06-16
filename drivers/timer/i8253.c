@@ -27,7 +27,7 @@ DECL|max_system_ticks|variable|max_system_ticks
 DECL|old_accumulated_count|variable|old_accumulated_count
 DECL|old_count|variable|old_count
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_driver|function|void timer_driver(int priority /* priority parameter ignored by this driver */ )
+DECL|timer_driver|function|void timer_driver(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
 DECL|timer_read|function|uint32_t timer_read(void)

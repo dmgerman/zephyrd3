@@ -50,5 +50,5 @@ DECL|main_count_first_irq_value|variable|main_count_first_irq_value
 DECL|programmed_ticks|variable|programmed_ticks
 DECL|stale_irq_check|variable|stale_irq_check
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_driver|function|void timer_driver(int priority /* priority parameter is ignored by this driver */ )
+DECL|timer_driver|function|void timer_driver(void)
 DECL|timer_read|function|uint32_t timer_read(void)
