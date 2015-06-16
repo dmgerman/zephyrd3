@@ -24,7 +24,7 @@ DECL|bt_init|function|int bt_init(void)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_type, uint8_t scan_filter)
-DECL|bt_stop_scanning|function|int bt_stop_scanning()
+DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
 DECL|callback_list|variable|callback_list
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
