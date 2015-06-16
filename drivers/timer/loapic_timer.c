@@ -27,6 +27,7 @@ DECL|_loApicTimerTicklessIdleInit|function|static void _loApicTimerTicklessIdleI
 DECL|_loApicTimerTicklessIdleInit|macro|_loApicTimerTicklessIdleInit
 DECL|_loApicTimerTicklessIdleSkew|function|static void _loApicTimerTicklessIdleSkew(void)
 DECL|_loApicTimerTicklessIdleSkew|macro|_loApicTimerTicklessIdleSkew
+DECL|_sys_clock_driver_init|function|void _sys_clock_driver_init(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* parameter is not used */ )
@@ -37,7 +38,6 @@ DECL|idle_original_ticks|variable|idle_original_ticks
 DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_driver|function|void timer_driver(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
 DECL|timer_read|function|uint32_t timer_read(void)

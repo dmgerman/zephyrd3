@@ -5,6 +5,7 @@ DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|_TIMER_INT_HANDLER|function|void _TIMER_INT_HANDLER(void *unused)
 DECL|_TIMER_INT_HANDLER|macro|_TIMER_INT_HANDLER
 DECL|_TIMER_INT_HANDLER|macro|_TIMER_INT_HANDLER
+DECL|_sys_clock_driver_init|function|void _sys_clock_driver_init(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|clock_accumulated_count|variable|clock_accumulated_count
@@ -21,7 +22,6 @@ DECL|sysTickStart|function|static ALWAYS_INLINE void sysTickStart(void)
 DECL|sysTickStop|function|static ALWAYS_INLINE void sysTickStop(void)
 DECL|sysTickTicklessIdleInit|function|static void sysTickTicklessIdleInit(void)
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_driver|function|void timer_driver(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
 DECL|timer_read|function|uint32_t timer_read(void)

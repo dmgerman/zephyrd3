@@ -15,6 +15,7 @@ DECL|_i8253TicklessIdleInit|function|static void _i8253TicklessIdleInit(void)
 DECL|_i8253TicklessIdleInit|macro|_i8253TicklessIdleInit
 DECL|_i8253TicklessIdleSkew|function|static void _i8253TicklessIdleSkew(void)
 DECL|_i8253TicklessIdleSkew|macro|_i8253TicklessIdleSkew
+DECL|_sys_clock_driver_init|function|void _sys_clock_driver_init(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unusedArg /* not used */ )
@@ -27,7 +28,6 @@ DECL|max_system_ticks|variable|max_system_ticks
 DECL|old_accumulated_count|variable|old_accumulated_count
 DECL|old_count|variable|old_count
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_driver|function|void timer_driver(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
 DECL|timer_read|function|uint32_t timer_read(void)
