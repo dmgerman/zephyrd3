@@ -18,5 +18,5 @@ DECL|prompt|variable|prompt
 DECL|shell_cmd_register|function|void shell_cmd_register(const char *string, cmd_function_t cb)
 DECL|shell_init|function|void shell_init(const char *str)
 DECL|shell|function|static void shell(int arg1, int arg2)
-DECL|show_commands|function|static int show_commands(int argc, char *argv[])
+DECL|show_commands|function|static void show_commands(int argc, char *argv[])
 DECL|stack|variable|stack
