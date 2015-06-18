@@ -19,6 +19,7 @@ DECL|conf_set_all_new_symbols|function|bool conf_set_all_new_symbols(enum conf_d
 DECL|conf_set_changed_callback|function|void conf_set_changed_callback(void (*fn)(void))
 DECL|conf_set_message_callback|function|void conf_set_message_callback(void (*fn) (const char *fmt, va_list ap))
 DECL|conf_set_sym_val|function|static int conf_set_sym_val(struct symbol *sym, int def, int def_flags, char *p)
+DECL|conf_split_config|function|static int conf_split_config(void)
 DECL|conf_unsaved|variable|conf_unsaved
 DECL|conf_warnings|variable|conf_warnings
 DECL|conf_warning|function|static void conf_warning(const char *fmt, ...)
