@@ -1,7 +1,7 @@
 DECL|CMD_PKT_SET_INSTANCE|macro|CMD_PKT_SET_INSTANCE
 DECL|CMD_PKT_SET|macro|CMD_PKT_SET
 DECL|CMD_PKT_SIZE_IN_WORDS|macro|CMD_PKT_SIZE_IN_WORDS
-DECL|__INCcmdPkth|macro|__INCcmdPkth
+DECL|_COMMAND_PACKET_H|macro|_COMMAND_PACKET_H
 DECL|cmdPkt_t|typedef|typedef uint32_t cmdPkt_t[CMD_PKT_SIZE_IN_WORDS];
 DECL|cmdPkt|member|cmdPkt_t cmdPkt[]; /* array of command packets */
 DECL|cmd_pkt_set|struct|struct cmd_pkt_set {
