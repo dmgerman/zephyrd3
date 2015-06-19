@@ -1,5 +1,7 @@
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
+DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
+DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
 DECL|att|member|void *att;
 DECL|bt_conn_l2cap|struct|struct bt_conn_l2cap {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
