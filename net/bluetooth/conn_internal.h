@@ -2,6 +2,7 @@ DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|att|member|void *att;
 DECL|bt_conn_l2cap|struct|struct bt_conn_l2cap {
+DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
 DECL|dev|member|struct bt_dev *dev;
 DECL|dst|member|bt_addr_le_t dst;
@@ -17,5 +18,5 @@ DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct bt_buf *rx;
 DECL|smp|member|void *smp;
 DECL|src|member|bt_addr_le_t src;
-DECL|state|member|uint8_t state;
+DECL|state|member|bt_conn_state_t state;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
