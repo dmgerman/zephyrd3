@@ -1,7 +1,6 @@
 DECL|ANYTASK|macro|ANYTASK
 DECL|ENDLIST|macro|ENDLIST
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
-DECL|K_TYPES_H|macro|K_TYPES_H
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
@@ -10,6 +9,7 @@ DECL|RC_TIME|macro|RC_TIME
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
+DECL|_BASE_API_H|macro|_BASE_API_H
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|extra|member|} extra;
 DECL|info|member|uint32_t info; /* information field, free for user */
