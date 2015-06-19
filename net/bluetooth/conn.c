@@ -12,3 +12,4 @@ DECL|bt_conn_send|function|void bt_conn_send(struct bt_conn *conn, struct bt_buf
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
 DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
 DECL|conns|variable|conns
+DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
