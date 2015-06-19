@@ -200,7 +200,7 @@ DECL|XFER_W2B|enumerator|XFER_W2B,
 DECL|XFER_W2R|enumerator|XFER_W2R
 DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
 DECL|YIELD|enumerator|YIELD,
-DECL|_KERNEL_STRUCT_H|macro|_KERNEL_STRUCT_H
+DECL|_MICRO_PRIVATE_TYPES_H|macro|_MICRO_PRIVATE_TYPES_H
 DECL|__packed|variable|__packed
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
