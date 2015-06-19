@@ -17,7 +17,7 @@ DECL|_CAUSE_NONE|macro|_CAUSE_NONE
 DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
 DECL|_IS_IN_ISR|function|static ALWAYS_INLINE int _IS_IN_ISR(void)
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
-DECL|_NANOK__H_|macro|_NANOK__H_
+DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|blink|member|uint32_t blink;
 DECL|callee_saved|struct|struct callee_saved {
 DECL|ccs|struct|struct ccs {

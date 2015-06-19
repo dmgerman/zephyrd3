@@ -11,7 +11,7 @@ DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
 DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
-DECL|_NANOK__H_|macro|_NANOK__H_
+DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|basepri|member|uint32_t basepri;
 DECL|ccs|struct|struct ccs {
 DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */

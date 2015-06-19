@@ -317,7 +317,7 @@ DECL|_EXC_STUB_ALIGN|macro|_EXC_STUB_ALIGN
 DECL|_EXC_STUB_SIZE|macro|_EXC_STUB_SIZE
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
-DECL|_NANOK_H|macro|_NANOK_H
+DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
 DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
 DECL|ccs|struct|struct ccs {
