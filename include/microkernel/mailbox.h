@@ -1,4 +1,4 @@
-DECL|MAIL_H|macro|MAIL_H
+DECL|_MAILBOX_H|macro|_MAILBOX_H
 DECL|task_mbox_data_get_async_block_wait_timeout|macro|task_mbox_data_get_async_block_wait_timeout
 DECL|task_mbox_data_get_async_block_wait|macro|task_mbox_data_get_async_block_wait
 DECL|task_mbox_data_get_async_block|macro|task_mbox_data_get_async_block
