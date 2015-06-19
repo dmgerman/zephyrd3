@@ -1,4 +1,4 @@
-DECL|MMAP_H|macro|MMAP_H
+DECL|_MEMORY_MAP_H|macro|_MEMORY_MAP_H
 DECL|task_mem_map_alloc_wait_timeout|macro|task_mem_map_alloc_wait_timeout
 DECL|task_mem_map_alloc_wait|macro|task_mem_map_alloc_wait
 DECL|task_mem_map_alloc|macro|task_mem_map_alloc
