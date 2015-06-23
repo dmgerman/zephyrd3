@@ -10,6 +10,6 @@ DECL|loapicInit|function|static inline void loapicInit(void)
 DECL|loapicInit|macro|loapicInit
 DECL|picInit|macro|picInit
 DECL|picInit|macro|picInit
-DECL|uartGenericInfoInit|function|void uartGenericInfoInit(struct uart_init_info *p_info)
 DECL|uartIrqProg|macro|uartIrqProg
 DECL|uartIrqProg|macro|uartIrqProg
+DECL|uart_generic_info_init|function|void uart_generic_info_init(struct uart_init_info *p_info)

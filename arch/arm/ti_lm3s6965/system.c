@@ -10,4 +10,4 @@ DECL|bluetooth_init|function|static void bluetooth_init(void)
 DECL|bluetooth_init|macro|bluetooth_init
 DECL|consoleInit|function|static void consoleInit(void)
 DECL|consoleInit|macro|consoleInit
-DECL|uartGenericInfoInit|function|inline void uartGenericInfoInit(struct uart_init_info *pInfo)
+DECL|uart_generic_info_init|function|inline void uart_generic_info_init(struct uart_init_info *pInfo)
