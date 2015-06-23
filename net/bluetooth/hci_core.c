@@ -10,7 +10,7 @@ DECL|analyze_stack|function|static void analyze_stack(const char *name, const ch
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
-DECL|bt_connect_le|function|int bt_connect_le(const bt_addr_le_t *peer)
+DECL|bt_connect_le|function|struct bt_conn *bt_connect_le(const bt_addr_le_t *peer)
 DECL|bt_connected|function|static void bt_connected(struct bt_conn *conn)
 DECL|bt_disconnected|function|static void bt_disconnected(struct bt_conn *conn)
 DECL|bt_disconnect|function|int bt_disconnect(struct bt_conn *conn, uint8_t reason)
