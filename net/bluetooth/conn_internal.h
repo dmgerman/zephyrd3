@@ -14,7 +14,7 @@ DECL|ident|member|uint8_t ident;
 DECL|keys|member|struct bt_keys *keys;
 DECL|l2cap|member|struct bt_conn_l2cap l2cap;
 DECL|le_conn_interval|member|uint8_t le_conn_interval;
-DECL|ref|member|uint8_t ref;
+DECL|ref|member|atomic_t ref;
 DECL|role|member|uint8_t role;
 DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct bt_buf *rx;
