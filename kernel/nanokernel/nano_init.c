@@ -14,6 +14,8 @@ DECL|__idle_tsc|variable|__idle_tsc
 DECL|__main_tsc|variable|__main_tsc
 DECL|__start_tsc|variable|__start_tsc
 DECL|_interrupt_stack|variable|_interrupt_stack
+DECL|_main|function|static void _main(void)
+DECL|_main|function|static void _main(void)
 DECL|build_timestamp|variable|build_timestamp
 DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
 DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
