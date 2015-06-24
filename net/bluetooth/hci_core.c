@@ -19,6 +19,8 @@ DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *d
 DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct bt_buf *buf, struct bt_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct bt_buf *buf)
+DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
+DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_hci_le_conn_update|function|int bt_hci_le_conn_update(uint16_t handle, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|bt_hci_le_start_encryption|function|int bt_hci_le_start_encryption(uint16_t handle, uint64_t rand, uint16_t ediv, const uint8_t *ltk)
 DECL|bt_init|function|int bt_init(void)
