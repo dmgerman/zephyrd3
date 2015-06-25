@@ -19,7 +19,6 @@ DECL|BuffInit|function|void BuffInit(unsigned char *pBuffer, int *piBuffSize, st
 DECL|CHECK_CHBUFF_POINTER|macro|CHECK_CHBUFF_POINTER
 DECL|CalcAvailData|function|int CalcAvailData(struct chbuff *pChBuff, int *piAvailDataCont, int *piAvailDataAWA)
 DECL|CalcFreeSpace|function|int CalcFreeSpace(struct chbuff *pChBuff, int *piFreeSpaceCont, int *piFreeSpaceAWA)
-DECL|ChannelCheck4Intrusion|function|static void ChannelCheck4Intrusion(struct chbuff *pChBuff, unsigned char *pBegin, int iSize)
 DECL|MarkerAddLast|function|static int MarkerAddLast(struct marker_list *pMarkerList, unsigned char *pointer, int iSize, bool bXferBusy)
 DECL|MarkerDelete|function|static void MarkerDelete(struct marker_list *pMarkerList, int index)
 DECL|MarkerFindFree|function|static int MarkerFindFree(struct marker aMarkers[])
@@ -28,3 +27,4 @@ DECL|MarkerUnlinkFromList|function|static void MarkerUnlinkFromList(struct marke
 DECL|MarkersClear|function|static void MarkersClear(struct marker_list *pMarkerList)
 DECL|STORE_NBR_MARKERS|macro|STORE_NBR_MARKERS
 DECL|ScanMarkers|function|static int ScanMarkers(struct marker_list *pMarkerList, int *piSizeBWA, int *piSizeAWA, int *piNbrPendingXfers)
+DECL|pipe_intrusion_check|function|static void pipe_intrusion_check(struct chbuff *pChBuff, unsigned char *pBegin, int iSize)
