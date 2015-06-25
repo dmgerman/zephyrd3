@@ -1,6 +1,5 @@
 DECL|CalcAvailWriterData|function|int CalcAvailWriterData(struct k_args *pWriterList)
 DECL|CalcFreeReaderSpace|function|int CalcFreeReaderSpace(struct k_args *pReaderList)
-DECL|ChReqGetStatus|function|CHREQ_STATUS ChReqGetStatus(struct k_chproc *pChProc)
 DECL|ChReqSizeLeft|function|int ChReqSizeLeft(struct k_chproc *pChProc)
 DECL|ChReqSizeXferred|function|int ChReqSizeXferred(struct k_chproc *pChProc)
 DECL|ChxxxGetTimeType|function|TIME_TYPE ChxxxGetTimeType(K_ARGS_ARGS *pChxxx)
