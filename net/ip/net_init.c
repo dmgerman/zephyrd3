@@ -2,6 +2,8 @@ DECL|DEBUG|macro|DEBUG
 DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
 DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
+DECL|UIP_IP_BUF|macro|UIP_IP_BUF
+DECL|UIP_UDP_BUF|macro|UIP_UDP_BUF
 DECL|analyze_stacks|function|static void analyze_stacks(struct net_buf *buf, struct net_buf **ref)
 DECL|analyze_stacks|macro|analyze_stacks
 DECL|calculate_unused|function|static unsigned calculate_unused(const char *stack, unsigned size, int stack_growth)
@@ -14,6 +16,7 @@ DECL|net_init|function|int net_init(void)
 DECL|net_receive|function|struct net_buf *net_receive(struct net_context *context)
 DECL|net_recv|function|int net_recv(struct net_buf *buf)
 DECL|net_register_driver|function|int net_register_driver(struct net_driver *drv)
+DECL|net_reply|function|int net_reply(struct net_context *context, struct net_buf *buf)
 DECL|net_rx_fiber|function|static void net_rx_fiber(void)
 DECL|net_send|function|int net_send(struct net_buf *buf)
 DECL|net_set_mac|function|int net_set_mac(uint8_t *mac, uint8_t len)
@@ -28,3 +31,4 @@ DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|udp_packet_receive|function|static void udp_packet_receive(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
 DECL|udp_packet_reply|function|static void udp_packet_reply(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
+DECL|udp_prepare_and_send|function|static inline int udp_prepare_and_send(struct net_context *context, struct net_buf *buf)
