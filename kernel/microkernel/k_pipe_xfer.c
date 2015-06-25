@@ -1,5 +1,4 @@
 DECL|FORCE_XFER_ON_STALL|macro|FORCE_XFER_ON_STALL
-DECL|K_ChMovedAck|function|void K_ChMovedAck(struct k_args *pEOXfer)
 DECL|K_ChProcRO|function|static void K_ChProcRO(struct pipe_struct *pPipe, struct k_args *pNewReader)
 DECL|K_ChProcWO|function|static void K_ChProcWO(struct pipe_struct *pPipe, struct k_args *pNewWriter)
 DECL|K_ChProcWR|function|static void K_ChProcWR(struct pipe_struct *pPipe, /* ptr to channel structure */ struct k_args *pNewWriter, /* ptr to new writer struct k_args */ struct k_args *pNewReader /* ptr to new reader struct k_args */ )
@@ -8,5 +7,6 @@ DECL|ReaderInProgressIsBlocked|function|static int ReaderInProgressIsBlocked(str
 DECL|WriterInProgressIsBlocked|function|static int WriterInProgressIsBlocked(struct pipe_struct *pPipe, struct k_args *pWriter)
 DECL|_UpdateChannelXferStatus|function|static void _UpdateChannelXferStatus(struct k_args *pActor, /* ptr to struct k_args to be used by actor */ struct k_chproc *pActorArgs, /* ptr to actor's channel process structure */ int bytesXferred /* # of bytes transferred */ )
 DECL|_X_TO_N|macro|_X_TO_N
+DECL|_k_pipe_movedata_ack|function|void _k_pipe_movedata_ack(struct k_args *pEOXfer)
 DECL|move_priority_compute|function|static kpriority_t move_priority_compute(struct k_args *pWriter, struct k_args *pReader)
 DECL|setup_movedata|function|static void setup_movedata(struct k_args *A, struct pipe_struct *pPipe, XFER_TYPE XferType, struct k_args *pWriter, struct k_args *pReader, void *destination, void *source, uint32_t size, int XferID)
