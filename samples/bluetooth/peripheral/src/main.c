@@ -26,7 +26,7 @@ DECL|data|member|uint8_t data[BT_BUF_MAX_DATA];
 DECL|device_name_uuid|variable|device_name_uuid
 DECL|dis_uuid|variable|dis_uuid
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
-DECL|flush_long_vnd|function|static int flush_long_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, uint8_t flags)
+DECL|flush_long_vnd|function|static int flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gap_uuid|variable|gap_uuid
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
 DECL|hrcpc_chrc|variable|hrcpc_chrc
@@ -42,15 +42,15 @@ DECL|manuf_uuid|variable|manuf_uuid
 DECL|model_chrc|variable|model_chrc
 DECL|model_uuid|variable|model_uuid
 DECL|name_chrc|variable|name_chrc
-DECL|read_appearance|function|static int read_appearance(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_blsc|function|static int read_blsc(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_blvl|function|static int read_blvl(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_ct|function|static int read_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_long_vnd|function|static int read_long_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_manuf|function|static int read_manuf(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_model|function|static int read_model(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_name|function|static int read_name(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
-DECL|read_vnd|function|static int read_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_blsc|function|static int read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_blvl|function|static int read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_ct|function|static int read_ct(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_long_vnd|function|static int read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_manuf|function|static int read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_model|function|static int read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_name|function|static int read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
+DECL|read_vnd|function|static int read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_hrm|variable|simulate_hrm
@@ -65,6 +65,6 @@ DECL|vnd_long_value|struct|static struct vnd_long_value {
 DECL|vnd_long_value|variable|vnd_long_value
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
-DECL|write_ct|function|static int write_ct(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
-DECL|write_long_vnd|function|static int write_long_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
-DECL|write_vnd|function|static int write_vnd(const bt_addr_le_t *peer, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
+DECL|write_ct|function|static int write_ct(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
+DECL|write_long_vnd|function|static int write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)
+DECL|write_vnd|function|static int write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint8_t len, uint16_t offset)

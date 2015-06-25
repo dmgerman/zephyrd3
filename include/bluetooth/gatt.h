@@ -46,13 +46,13 @@ DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint16_t flags;
-DECL|flush|member|int (*flush)(const bt_addr_le_t *peer,
+DECL|flush|member|int (*flush)(struct bt_conn *conn,
 DECL|handle|member|uint16_t handle;
 DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;
 DECL|properties|member|uint16_t properties;
 DECL|properties|member|uint8_t properties;
-DECL|read|member|int (*read)(const bt_addr_le_t *peer,
+DECL|read|member|int (*read)(struct bt_conn *conn,
 DECL|start_handle|member|uint16_t start_handle;
 DECL|string|member|char *string;
 DECL|user_data|member|void *user_data;
@@ -65,4 +65,4 @@ DECL|value_handle|member|uint16_t value_handle;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
-DECL|write|member|int (*write)(const bt_addr_le_t *peer,
+DECL|write|member|int (*write)(struct bt_conn *conn,
