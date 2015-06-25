@@ -4,7 +4,6 @@ DECL|ChReqGetStatus|function|CHREQ_STATUS ChReqGetStatus(struct k_chproc *pChPro
 DECL|ChReqSetStatus|function|void ChReqSetStatus(struct k_chproc *pChProc, CHREQ_STATUS Status)
 DECL|ChReqSizeLeft|function|int ChReqSizeLeft(struct k_chproc *pChProc)
 DECL|ChReqSizeXferred|function|int ChReqSizeXferred(struct k_chproc *pChProc)
-DECL|ChxxxGetChOpt|function|K_PIPE_OPTION ChxxxGetChOpt(K_ARGS_ARGS *pChxxx)
 DECL|ChxxxGetReqType|function|REQ_TYPE ChxxxGetReqType(K_ARGS_ARGS *pChxxx)
 DECL|ChxxxGetTimeType|function|TIME_TYPE ChxxxGetTimeType(K_ARGS_ARGS *pChxxx)
 DECL|ChxxxSetChOpt|function|void ChxxxSetChOpt(K_ARGS_ARGS *pChxxx, K_PIPE_OPTION option)
@@ -12,5 +11,6 @@ DECL|ChxxxSetReqType|function|void ChxxxSetReqType(K_ARGS_ARGS *pChxxx, REQ_TYPE
 DECL|ChxxxSetTimeType|function|void ChxxxSetTimeType(K_ARGS_ARGS *pChxxx, TIME_TYPE TimeType)
 DECL|DeListWaiter|function|void DeListWaiter(struct k_args *pReqProc)
 DECL|_ALL_OPT|macro|_ALL_OPT
+DECL|_k_pipe_option_get|function|K_PIPE_OPTION _k_pipe_option_get(K_ARGS_ARGS *pChxxx)
 DECL|mycopypacket|function|void mycopypacket(struct k_args **out, struct k_args *in)
 DECL|myfreetimer|function|void myfreetimer(struct k_timer **ppTimer)
