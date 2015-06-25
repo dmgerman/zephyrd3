@@ -17,16 +17,7 @@ DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Buff|member|struct chbuff Buff;
-DECL|CHDEQ_ACK|enumerator|CHDEQ_ACK,
-DECL|CHDEQ_REQ|enumerator|CHDEQ_REQ,
-DECL|CHDEQ_RPL|enumerator|CHDEQ_RPL,
-DECL|CHDEQ_TMO|enumerator|CHDEQ_TMO,
-DECL|CHENQ_ACK|enumerator|CHENQ_ACK,
-DECL|CHENQ_REQ|enumerator|CHENQ_REQ,
-DECL|CHENQ_RPL|enumerator|CHENQ_RPL,
-DECL|CHENQ_TMO|enumerator|CHENQ_TMO,
 DECL|CHREQ_STATUS|typedef|} CHREQ_STATUS;
-DECL|CH_MOVED_ACK|enumerator|CH_MOVED_ACK,
 DECL|ChAck|member|struct k_chack ChAck;
 DECL|ChMovedAck|member|struct k_chmovedack ChMovedAck;
 DECL|ChProc|member|struct k_chproc ChProc;
@@ -122,6 +113,15 @@ DECL|OFFLOAD|enumerator|OFFLOAD,
 DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Owner|member|ktask_t Owner;
+DECL|PIPE_GET_ACK|enumerator|PIPE_GET_ACK,
+DECL|PIPE_GET_REPLY|enumerator|PIPE_GET_REPLY,
+DECL|PIPE_GET_REQUEST|enumerator|PIPE_GET_REQUEST,
+DECL|PIPE_GET_TIMEOUT|enumerator|PIPE_GET_TIMEOUT,
+DECL|PIPE_MOVEDATA_ACK|enumerator|PIPE_MOVEDATA_ACK,
+DECL|PIPE_PUT_ACK|enumerator|PIPE_PUT_ACK,
+DECL|PIPE_PUT_REPLY|enumerator|PIPE_PUT_REPLY,
+DECL|PIPE_PUT_REQUEST|enumerator|PIPE_PUT_REQUEST,
+DECL|PIPE_PUT_TIMEOUT|enumerator|PIPE_PUT_TIMEOUT,
 DECL|POOL_DEFRAG|enumerator|POOL_DEFRAG,
 DECL|Params|member|int Params;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
