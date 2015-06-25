@@ -20,6 +20,7 @@ DECL|bt_hci_cmd_create|function|struct bt_buf *bt_hci_cmd_create(uint16_t opcode
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct bt_buf *buf, struct bt_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct bt_buf *buf)
 DECL|bt_hci_le_conn_update|function|int bt_hci_le_conn_update(uint16_t handle, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
+DECL|bt_hci_le_start_encryption|function|int bt_hci_le_start_encryption(uint16_t handle, uint64_t rand, uint16_t ediv, const uint8_t *ltk)
 DECL|bt_init|function|int bt_init(void)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
