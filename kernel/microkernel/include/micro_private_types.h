@@ -20,7 +20,7 @@ DECL|Buff|member|struct pipe_desc Buff;
 DECL|CHREQ_STATUS|typedef|} CHREQ_STATUS;
 DECL|ChAck|member|struct _pipe_ack_arg ChAck;
 DECL|ChMovedAck|member|struct _pipe_xfer_ack_arg ChMovedAck;
-DECL|ChProc|member|struct k_chproc ChProc;
+DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
 DECL|ChRef|member|} ChRef;
 DECL|ChReq|member|struct _pipe_req_arg ChReq;
 DECL|Comm|member|int Comm;
@@ -212,6 +212,7 @@ DECL|_p1arg|struct|struct _p1arg {
 DECL|_pipe_ack_arg|struct|struct _pipe_ack_arg {
 DECL|_pipe_req_arg|struct|struct _pipe_req_arg {
 DECL|_pipe_xfer_ack_arg|struct|struct _pipe_xfer_ack_arg {
+DECL|_pipe_xfer_req_arg|struct|struct _pipe_xfer_req_arg {
 DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
@@ -270,7 +271,6 @@ DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
-DECL|k_chproc|struct|struct k_chproc {
 DECL|k_mrec|struct|struct k_mrec {
 DECL|k_proc|struct|struct k_proc {
 DECL|k_timer|struct|struct k_timer {
