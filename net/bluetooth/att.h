@@ -82,6 +82,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|bt_att_data|struct|struct bt_att_data {
+DECL|bt_att_destroy_t|typedef|typedef void (*bt_att_destroy_t)(void *user_data);
 DECL|bt_att_error_rsp|struct|struct bt_att_error_rsp {
 DECL|bt_att_exchange_mtu_req|struct|struct bt_att_exchange_mtu_req {
 DECL|bt_att_exchange_mtu_rsp|struct|struct bt_att_exchange_mtu_rsp {
@@ -90,6 +91,7 @@ DECL|bt_att_find_info_req|struct|struct bt_att_find_info_req {
 DECL|bt_att_find_info_rsp|struct|struct bt_att_find_info_rsp {
 DECL|bt_att_find_type_req|struct|struct bt_att_find_type_req {
 DECL|bt_att_find_type_rsp|struct|struct bt_att_find_type_rsp {
+DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(uint8_t err, const void *pdu, uint16_t length,
 DECL|bt_att_group_data|struct|struct bt_att_group_data {
 DECL|bt_att_handle_group|struct|struct bt_att_handle_group {
 DECL|bt_att_hdr|struct|struct bt_att_hdr {
