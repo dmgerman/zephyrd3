@@ -1,5 +1,9 @@
 DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
 DECL|DEBUG_NET_BUFS|macro|DEBUG_NET_BUFS
+DECL|NET_BUF_CHECK_IF_IN_USE|macro|NET_BUF_CHECK_IF_IN_USE
+DECL|NET_BUF_CHECK_IF_IN_USE|macro|NET_BUF_CHECK_IF_IN_USE
+DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
+DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_MAX_DATA|macro|NET_BUF_MAX_DATA
 DECL|NET_MAC_BUF_MAX_SIZE|macro|NET_MAC_BUF_MAX_SIZE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
@@ -9,6 +13,7 @@ DECL|buf|member|uint8_t buf[NET_BUF_MAX_DATA];
 DECL|context|member|struct net_context *context;
 DECL|data|member|uint8_t *data;
 DECL|dest|member|linkaddr_t dest;
+DECL|in_use|member|bool in_use;
 DECL|ipaddr|member|uip_ipaddr_t ipaddr;
 DECL|last_tx_status|member|int last_tx_status;
 DECL|len|member|uint16_t len;
