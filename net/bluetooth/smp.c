@@ -34,6 +34,7 @@ DECL|smp_ident_addr_info|function|static uint8_t smp_ident_addr_info(struct bt_c
 DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_pairing_confirm|function|static uint8_t smp_pairing_confirm(struct bt_conn *conn, struct bt_buf *buf)
+DECL|smp_pairing_encrypt|function|static uint8_t smp_pairing_encrypt(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_random|function|static uint8_t smp_pairing_random(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_conn *conn, struct bt_buf *buf)
