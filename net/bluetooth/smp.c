@@ -40,6 +40,7 @@ DECL|smp_pairing_random|function|static uint8_t smp_pairing_random(struct bt_con
 DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
+DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_send_pairing_confirm|function|static uint8_t smp_send_pairing_confirm(struct bt_conn *conn)
 DECL|smp_send_pairing_random|function|static uint8_t smp_send_pairing_random(struct bt_conn *conn)
 DECL|smp_send_pairing_req|function|int smp_send_pairing_req(struct bt_conn *conn)
