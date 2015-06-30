@@ -5,6 +5,7 @@ DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
 DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
+DECL|att_error_rsp|function|static uint8_t att_error_rsp(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_exec_write_req|function|static uint8_t att_exec_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_exec_write_rsp|function|static uint8_t att_exec_write_rsp(struct bt_conn *conn, uint8_t flags)
 DECL|att_find_info_req|function|static uint8_t att_find_info_req(struct bt_conn *conn, struct bt_buf *data)
@@ -21,7 +22,7 @@ DECL|att_read_req|function|static uint8_t att_read_req(struct bt_conn *conn, str
 DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t *handles, size_t len, uint16_t offset)
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_conn *conn, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
-DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att *att)
+DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req)
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_cmd|function|static uint8_t att_write_cmd(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_write_req|function|static uint8_t att_write_req(struct bt_conn *conn, struct bt_buf *data)
@@ -77,6 +78,7 @@ DECL|len|member|uint8_t len;
 DECL|mtu|member|uint16_t mtu;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
+DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|primary_uuid|variable|primary_uuid
