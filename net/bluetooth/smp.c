@@ -2,6 +2,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
+DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|a|member|uint64_t a;
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
