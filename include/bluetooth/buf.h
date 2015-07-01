@@ -1,9 +1,9 @@
-DECL|BT_ACL_IN|enumerator|BT_ACL_IN, /*! Incoming ACL data */
-DECL|BT_ACL_OUT|enumerator|BT_ACL_OUT, /*! Outgoing ACL data */
+DECL|BT_ACL_IN|enumerator|BT_ACL_IN, /** Incoming ACL data */
+DECL|BT_ACL_OUT|enumerator|BT_ACL_OUT, /** Outgoing ACL data */
 DECL|BT_BUF_MAX_DATA|macro|BT_BUF_MAX_DATA
-DECL|BT_CMD|enumerator|BT_CMD, /*! HCI command */
-DECL|BT_DUMMY|enumerator|BT_DUMMY = BT_CMD, /*! Only used for waking up fibers */
-DECL|BT_EVT|enumerator|BT_EVT, /*! HCI event */
+DECL|BT_CMD|enumerator|BT_CMD, /** HCI command */
+DECL|BT_DUMMY|enumerator|BT_DUMMY = BT_CMD, /** Only used for waking up fibers */
+DECL|BT_EVT|enumerator|BT_EVT, /** HCI event */
 DECL|__BT_BUF_H|macro|__BT_BUF_H
 DECL|__unused|member|int __unused;
 DECL|acl|member|struct bt_buf_acl_data acl;
@@ -18,6 +18,6 @@ DECL|handle|member|uint16_t handle;
 DECL|hci|member|struct bt_buf_hci_data hci;
 DECL|len|member|uint8_t len;
 DECL|opcode|member|uint16_t opcode;
-DECL|ref|member|uint8_t ref:5, /*! Reference count */
+DECL|ref|member|uint8_t ref:5, /** Reference count */
 DECL|sync|member|void *sync;
-DECL|type|member|type:3; /*! Type of data contained in the buffer */
+DECL|type|member|type:3; /** Type of data contained in the buffer */
