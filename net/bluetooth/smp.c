@@ -6,6 +6,7 @@ DECL|a|member|uint64_t a;
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_conn *conn)
+DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_conn *conn)
 DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_conn *conn)
 DECL|bt_smp_init|function|void bt_smp_init(void)
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
