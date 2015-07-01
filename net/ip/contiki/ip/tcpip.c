@@ -16,7 +16,6 @@ DECL|internal_state|struct|static struct internal_state {
 DECL|listenports|member|struct listenport listenports[UIP_LISTENPORTS];
 DECL|listenport|struct|struct listenport {
 DECL|outputfunc|variable|outputfunc
-DECL|outputfunc|variable|outputfunc
 DECL|packet_input|function|packet_input(struct net_buf *buf)
 DECL|periodic|variable|periodic
 DECL|port|member|uint16_t port;
@@ -35,11 +34,9 @@ DECL|tcpip_input|function|tcpip_input(struct net_buf *buf)
 DECL|tcpip_ipv6_output|function|tcpip_ipv6_output(struct net_buf *buf)
 DECL|tcpip_is_forwarding|variable|tcpip_is_forwarding
 DECL|tcpip_output|function|tcpip_output(struct net_buf *buf, const uip_lladdr_t *a)
-DECL|tcpip_output|function|tcpip_output(void)
 DECL|tcpip_poll_tcp|function|tcpip_poll_tcp(struct uip_conn *conn)
 DECL|tcpip_poll_udp|function|tcpip_poll_udp(struct uip_udp_conn *conn)
 DECL|tcpip_set_outputfunc|function|tcpip_set_outputfunc(uint8_t (*f)(struct net_buf *buf, const uip_lladdr_t *))
-DECL|tcpip_set_outputfunc|function|tcpip_set_outputfunc(uint8_t (*f)(void))
 DECL|tcpip_uipcall|function|tcpip_uipcall(struct net_buf *buf)
 DECL|udp_attach|function|udp_attach(struct uip_udp_conn *conn, void *appstate)
 DECL|udp_broadcast_new|function|udp_broadcast_new(uint16_t port, void *appstate)
