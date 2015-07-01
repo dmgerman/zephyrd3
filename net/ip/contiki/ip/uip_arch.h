@@ -1,1 +1,0 @@
-DECL|UIP_ARCH_H_|macro|UIP_ARCH_H_
