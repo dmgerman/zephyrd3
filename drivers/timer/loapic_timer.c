@@ -25,6 +25,7 @@ DECL|current_count_register_get|function|static inline uint32_t current_count_re
 DECL|cycles_per_max_ticks|variable|cycles_per_max_ticks
 DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
+DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
 DECL|initial_count_register_get|function|static inline uint32_t initial_count_register_get(void)
 DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count /* count from which timer is to count down */ )
 DECL|max_system_ticks|variable|max_system_ticks
