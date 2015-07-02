@@ -28,4 +28,5 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|scan_enable|member|uint8_t scan_enable;
+DECL|scan_filter|member|uint8_t scan_filter;
 DECL|sent_cmd|member|struct bt_buf *sent_cmd;

@@ -33,6 +33,7 @@ DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
 DECL|callback_list|variable|callback_list
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
+DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
 DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
@@ -62,3 +63,4 @@ DECL|rx_prio_fiber_id|variable|rx_prio_fiber_id
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|rx_queue_init|function|static void rx_queue_init(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
+DECL|trigger_scan|function|static void trigger_scan(void)
