@@ -1,4 +1,5 @@
 DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
 DECL|MY_PORT|macro|MY_PORT
 DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
@@ -11,7 +12,7 @@ DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|fiberEntry|function|void fiberEntry(void)
 DECL|fiberStack|variable|fiberStack
-DECL|get_context|function|static inline struct net_context *get_context(const struct net_addr *addr)
+DECL|get_context|function|static inline struct net_context *get_context(void)
 DECL|helloLoop|function|void helloLoop(const char *taskname, ksem_t mySem, ksem_t otherSem)
 DECL|init_server|function|static inline void init_server()
 DECL|main|function|void main(void)
