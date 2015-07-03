@@ -14,6 +14,7 @@ DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], 
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
+DECL|bt_smp_send_security_req|function|int bt_smp_send_security_req(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|conn|member|struct bt_conn *conn;
