@@ -15,7 +15,7 @@ DECL|_i8253TicklessIdleInit|function|static void _i8253TicklessIdleInit(void)
 DECL|_i8253TicklessIdleInit|macro|_i8253TicklessIdleInit
 DECL|_i8253TicklessIdleSkew|function|static void _i8253TicklessIdleSkew(void)
 DECL|_i8253TicklessIdleSkew|macro|_i8253TicklessIdleSkew
-DECL|_sys_clock_driver_init|function|void _sys_clock_driver_init(void)
+DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unusedArg /* not used */ )

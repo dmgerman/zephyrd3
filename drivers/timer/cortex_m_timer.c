@@ -5,7 +5,7 @@ DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|_TIMER_INT_HANDLER|function|void _TIMER_INT_HANDLER(void *unused)
 DECL|_TIMER_INT_HANDLER|macro|_TIMER_INT_HANDLER
 DECL|_TIMER_INT_HANDLER|macro|_TIMER_INT_HANDLER
-DECL|_sys_clock_driver_init|function|void _sys_clock_driver_init(void)
+DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|clock_accumulated_count|variable|clock_accumulated_count
