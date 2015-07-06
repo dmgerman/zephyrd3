@@ -13,6 +13,7 @@ DECL|bt_smp_init|function|void bt_smp_init(void)
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
+DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|conn|member|struct bt_conn *conn;
@@ -47,7 +48,6 @@ DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16]
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_send_pairing_confirm|function|static uint8_t smp_send_pairing_confirm(struct bt_conn *conn)
 DECL|smp_send_pairing_random|function|static uint8_t smp_send_pairing_random(struct bt_conn *conn)
-DECL|smp_send_pairing_req|function|int smp_send_pairing_req(struct bt_conn *conn)
 DECL|tk|member|uint8_t tk[16];
 DECL|uint128_t|typedef|} uint128_t;
 DECL|xor_128|function|static void xor_128(const uint128_t *p, const uint128_t *q, uint128_t *r)
