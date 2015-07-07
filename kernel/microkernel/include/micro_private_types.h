@@ -16,7 +16,6 @@ DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|ChAck|member|struct _pipe_ack_arg ChAck;
 DECL|ChMovedAck|member|struct _pipe_xfer_ack_arg ChMovedAck;
 DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
 DECL|ChRef|member|} ChRef;
@@ -316,6 +315,7 @@ DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid *
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
 DECL|pWrite|member|unsigned char *pWrite;
 DECL|period|member|int32_t period;
+DECL|pipe_ack|member|struct _pipe_ack_arg pipe_ack;
 DECL|pipe_desc|struct|struct pipe_desc {
 DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_struct|struct|struct pipe_struct {
