@@ -152,7 +152,6 @@ DECL|SPRIO|enumerator|SPRIO,
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|State|member|uint32_t State;
-DECL|Status|member|PIPE_REQUEST_STATUS Status; /* status of processing of request */
 DECL|Sync|member|struct sync_req Sync;
 DECL|TALLOC|enumerator|TALLOC,
 DECL|TDEALLOC|enumerator|TDEALLOC,
@@ -346,6 +345,7 @@ DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|source|member|void *source;
+DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
 DECL|task|member|ktask_t task;

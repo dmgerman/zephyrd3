@@ -4,7 +4,7 @@ DECL|DeListWaiter|function|void DeListWaiter(struct k_args *pReqProc)
 DECL|_ALL_OPT|macro|_ALL_OPT
 DECL|_k_pipe_option_get|function|K_PIPE_OPTION _k_pipe_option_get(K_ARGS_ARGS *pChxxx)
 DECL|_k_pipe_option_set|function|void _k_pipe_option_set(K_ARGS_ARGS *pChxxx, K_PIPE_OPTION option)
-DECL|_k_pipe_request_status_set|function|void _k_pipe_request_status_set(struct _pipe_xfer_req_arg *pipe_xfer_req,PIPE_REQUEST_STATUS Status)
+DECL|_k_pipe_request_status_set|function|void _k_pipe_request_status_set(struct _pipe_xfer_req_arg *pipe_xfer_req,PIPE_REQUEST_STATUS status)
 DECL|_k_pipe_request_type_get|function|REQ_TYPE _k_pipe_request_type_get(K_ARGS_ARGS *pChxxx)
 DECL|_k_pipe_request_type_set|function|void _k_pipe_request_type_set(K_ARGS_ARGS *pChxxx, REQ_TYPE ReqType)
 DECL|_k_pipe_time_type_get|function|TIME_TYPE _k_pipe_time_type_get(K_ARGS_ARGS *pChxxx)
