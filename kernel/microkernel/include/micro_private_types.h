@@ -20,7 +20,6 @@ DECL|ChAck|member|struct _pipe_ack_arg ChAck;
 DECL|ChMovedAck|member|struct _pipe_xfer_ack_arg ChMovedAck;
 DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
 DECL|ChRef|member|} ChRef;
-DECL|ChReq|member|struct _pipe_req_arg ChReq;
 DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
@@ -318,6 +317,7 @@ DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
 DECL|pWrite|member|unsigned char *pWrite;
 DECL|period|member|int32_t period;
 DECL|pipe_desc|struct|struct pipe_desc {
+DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_struct|struct|struct pipe_struct {
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_block|struct|struct pool_block {
