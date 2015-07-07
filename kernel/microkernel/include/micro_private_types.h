@@ -16,7 +16,6 @@ DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|Buff|member|struct pipe_desc Buff;
 DECL|ChAck|member|struct _pipe_ack_arg ChAck;
 DECL|ChMovedAck|member|struct _pipe_xfer_ack_arg ChMovedAck;
 DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
@@ -236,6 +235,7 @@ DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
+DECL|desc|member|struct pipe_desc desc;
 DECL|destination|member|void *destination;
 DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
