@@ -16,7 +16,6 @@ DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
 DECL|ChRef|member|} ChRef;
 DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
@@ -319,6 +318,7 @@ DECL|pipe_desc|struct|struct pipe_desc {
 DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_struct|struct|struct pipe_struct {
 DECL|pipe_xfer_ack|member|struct _pipe_xfer_ack_arg pipe_xfer_ack;
+DECL|pipe_xfer_req|member|struct _pipe_xfer_req_arg pipe_xfer_req;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
