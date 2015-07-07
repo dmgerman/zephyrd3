@@ -42,7 +42,7 @@ DECL|remove_ext_hdr|function|remove_ext_hdr(struct net_buf *buf)
 DECL|tmp16|variable|tmp16
 DECL|uip_acc32|variable|uip_acc32
 DECL|uip_add32|function|uip_add32(uint8_t *op32, uint16_t op16)
-DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(uint16_t n)
+DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(struct net_buf *buf, uint16_t n)
 DECL|uip_chksum|function|uip_chksum(uint16_t *data, uint16_t len)
 DECL|uip_connect|function|uip_connect(const uip_ipaddr_t *ripaddr, uint16_t rport)
 DECL|uip_conns|variable|uip_conns
@@ -69,7 +69,7 @@ DECL|uip_reass|function|uip_reass(void)
 DECL|uip_send|function|uip_send(struct net_buf *buf, const void *data, int len)
 DECL|uip_stat|variable|uip_stat
 DECL|uip_surglen|variable|uip_surglen
-DECL|uip_tcpchksum|function|uip_tcpchksum(void)
+DECL|uip_tcpchksum|function|uip_tcpchksum(struct net_buf *buf)
 DECL|uip_udp_conns|variable|uip_udp_conns
 DECL|uip_udp_new|function|uip_udp_new(const uip_ipaddr_t *ripaddr, uint16_t rport)
 DECL|uip_udpchksum|function|uip_udpchksum(struct net_buf *buf)
