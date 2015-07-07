@@ -22,7 +22,7 @@ DECL|ChAck|member|struct k_chack ChAck;
 DECL|ChMovedAck|member|struct k_chmovedack ChMovedAck;
 DECL|ChProc|member|struct k_chproc ChProc;
 DECL|ChRef|member|} ChRef;
-DECL|ChReq|member|struct k_chreq ChReq;
+DECL|ChReq|member|struct _pipe_req_arg ChReq;
 DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
@@ -209,6 +209,7 @@ DECL|_g1arg|struct|struct _g1arg {
 DECL|_l1arg|struct|struct _l1arg {
 DECL|_m1arg|struct|struct _m1arg {
 DECL|_p1arg|struct|struct _p1arg {
+DECL|_pipe_req_arg|struct|struct _pipe_req_arg {
 DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
@@ -270,7 +271,6 @@ DECL|k_args|struct|struct k_args {
 DECL|k_chack|struct|struct k_chack {
 DECL|k_chmovedack|struct|struct k_chmovedack {
 DECL|k_chproc|struct|struct k_chproc {
-DECL|k_chreq|struct|struct k_chreq {
 DECL|k_mrec|struct|struct k_mrec {
 DECL|k_proc|struct|struct k_proc {
 DECL|k_timer|struct|struct k_timer {
