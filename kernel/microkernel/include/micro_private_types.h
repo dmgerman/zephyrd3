@@ -17,7 +17,6 @@ DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Buff|member|struct pipe_desc Buff;
-DECL|CHREQ_STATUS|typedef|} CHREQ_STATUS;
 DECL|ChAck|member|struct _pipe_ack_arg ChAck;
 DECL|ChMovedAck|member|struct _pipe_xfer_ack_arg ChMovedAck;
 DECL|ChProc|member|struct _pipe_xfer_req_arg ChProc;
@@ -122,6 +121,7 @@ DECL|PIPE_PUT_ACK|enumerator|PIPE_PUT_ACK,
 DECL|PIPE_PUT_REPLY|enumerator|PIPE_PUT_REPLY,
 DECL|PIPE_PUT_REQUEST|enumerator|PIPE_PUT_REQUEST,
 DECL|PIPE_PUT_TIMEOUT|enumerator|PIPE_PUT_TIMEOUT,
+DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|POOL_DEFRAG|enumerator|POOL_DEFRAG,
 DECL|Params|member|int Params;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
@@ -157,7 +157,7 @@ DECL|SPRIO|enumerator|SPRIO,
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|State|member|uint32_t State;
-DECL|Status|member|CHREQ_STATUS Status; /* status of processing of request */
+DECL|Status|member|PIPE_REQUEST_STATUS Status; /* status of processing of request */
 DECL|Sync|member|struct sync_req Sync;
 DECL|TALLOC|enumerator|TALLOC,
 DECL|TDEALLOC|enumerator|TDEALLOC,
