@@ -28,5 +28,5 @@ DECL|process_poll|function|process_poll(struct process *p)
 DECL|process_post_synch|function|process_post_synch(struct process *p, process_event_t ev, process_data_t data, struct net_buf *buf)
 DECL|process_post|function|process_post(struct process *p, process_event_t ev, process_data_t data)
 DECL|process_run|function|process_run(struct net_buf *buf)
-DECL|process_start|function|process_start(struct process *p, process_data_t data)
+DECL|process_start|function|process_start(struct process *p, process_data_t data, void *user_data)
 DECL|p|member|struct process *p;

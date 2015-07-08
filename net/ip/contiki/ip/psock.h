@@ -19,6 +19,7 @@ DECL|bufptr|member|uint8_t *bufptr; /* Pointer to the buffer used for buffering
 DECL|bufsize|member|unsigned int bufsize; /* The size of the input buffer. */
 DECL|buf|member|struct psock_buf buf; /* The structure holding the state of the
 DECL|left|member|unsigned short left;
+DECL|net_buf|member|struct net_buf *net_buf; /* contains conn state etc. */
 DECL|psock_buf|struct|struct psock_buf {
 DECL|psockpt|member|struct pt pt, psockpt; /* Protothreads - one that's using the psock
 DECL|psock|struct|struct psock {

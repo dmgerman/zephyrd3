@@ -1,4 +1,4 @@
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(udp_socket_process, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(udp_socket_process, ev, data, buf, user_data)
 DECL|UIP_IP_BUF|macro|UIP_IP_BUF
 DECL|init|function|init(void)
 DECL|udp_socket_bind|function|udp_socket_bind(struct udp_socket *c, uint16_t local_port)

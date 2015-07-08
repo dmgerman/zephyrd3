@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(ctimer_process, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(ctimer_process, ev, data, buf, user_data)
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|ctimer_expired|function|ctimer_expired(struct ctimer *c)

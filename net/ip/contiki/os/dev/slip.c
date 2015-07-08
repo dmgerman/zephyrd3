@@ -2,7 +2,7 @@ DECL|BUF|macro|BUF
 DECL|IP_DF|macro|IP_DF
 DECL|NET_DBG|macro|NET_DBG
 DECL|NET_DBG|macro|NET_DBG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(slip_process, ev, data, not_used)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(slip_process, ev, data, not_used, user_data)
 DECL|RX_BUFSIZE|macro|RX_BUFSIZE
 DECL|SLIP_END|macro|SLIP_END
 DECL|SLIP_ESC_END|macro|SLIP_ESC_END

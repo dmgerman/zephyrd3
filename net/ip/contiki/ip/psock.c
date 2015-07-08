@@ -2,6 +2,7 @@ DECL|BUF_FOUND|macro|BUF_FOUND
 DECL|BUF_FULL|macro|BUF_FULL
 DECL|BUF_NOT_FOUND|macro|BUF_NOT_FOUND
 DECL|BUF_NOT_FULL|macro|BUF_NOT_FULL
+DECL|DEBUG|macro|DEBUG
 DECL|STATE_ACKED|macro|STATE_ACKED
 DECL|STATE_BLOCKED_CLOSE|macro|STATE_BLOCKED_CLOSE
 DECL|STATE_BLOCKED_NEWDATA|macro|STATE_BLOCKED_NEWDATA
@@ -15,8 +16,8 @@ DECL|buf_setup|function|buf_setup(struct psock_buf *buf, uint8_t *bufptr, uint16
 DECL|data_is_sent_and_acked|function|data_is_sent_and_acked(CC_REGISTER_ARG struct psock *s)
 DECL|psock_datalen|function|psock_datalen(struct psock *psock)
 DECL|psock_generator_send|function|PT_THREAD(psock_generator_send(CC_REGISTER_ARG struct psock *s, unsigned short (*generate)(void *), void *arg))
-DECL|psock_init|function|psock_init(CC_REGISTER_ARG struct psock *psock, uint8_t *buffer, unsigned int buffersize)
+DECL|psock_init|function|psock_init(CC_REGISTER_ARG struct psock *psock, struct net_buf *net_buf)
 DECL|psock_newdata|function|psock_newdata(struct psock *s)
 DECL|psock_readbuf_len|function|PT_THREAD(psock_readbuf_len(CC_REGISTER_ARG struct psock *psock, uint16_t len))
 DECL|psock_readto|function|PT_THREAD(psock_readto(CC_REGISTER_ARG struct psock *psock, unsigned char c))
-DECL|psock_send|function|PT_THREAD(psock_send(CC_REGISTER_ARG struct psock *s, const uint8_t *buf, unsigned int len))
+DECL|psock_send|function|PT_THREAD(psock_send(CC_REGISTER_ARG struct psock *s, struct net_buf *net_buf))

@@ -44,7 +44,7 @@ DECL|opt|variable|opt
 DECL|tmp16|variable|tmp16
 DECL|uip_acc32|variable|uip_acc32
 DECL|uip_add32|function|uip_add32(uint8_t *op32, uint16_t op16)
-DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(uint16_t n)
+DECL|uip_add_rcv_nxt|function|uip_add_rcv_nxt(struct net_buf *buf, uint16_t n)
 DECL|uip_all_zeroes_addr|variable|uip_all_zeroes_addr
 DECL|uip_broadcast_addr|variable|uip_broadcast_addr
 DECL|uip_chksum|function|uip_chksum(uint16_t *data, uint16_t len)

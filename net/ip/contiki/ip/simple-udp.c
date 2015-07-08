@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(simple_udp_process, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(simple_udp_process, ev, data, buf, user_data)
 DECL|UIP_IP_BUF|macro|UIP_IP_BUF
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|UIP_LOG|macro|UIP_LOG

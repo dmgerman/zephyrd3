@@ -11,6 +11,8 @@ DECL|IPPROTO_UDP|enumerator|IPPROTO_UDP = 17,
 DECL|PF_INET6|macro|PF_INET6
 DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
+DECL|TCP_READ_EVENT|enumerator|TCP_READ_EVENT = 1,
+DECL|TCP_WRITE_EVENT|enumerator|TCP_WRITE_EVENT,
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|family|member|sa_family_t family;
 DECL|in4_u|member|} in4_u;
@@ -35,6 +37,7 @@ DECL|s6_addr32|macro|s6_addr32
 DECL|s6_addr|macro|s6_addr
 DECL|s_addr|macro|s_addr
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|tcp_event_type|enum|enum tcp_event_type {
 DECL|u4_addr16|member|uint16_t u4_addr16[2]; /* In big endian */
 DECL|u4_addr32|member|uint32_t u4_addr32[1]; /* In big endian */
 DECL|u4_addr8|member|uint8_t u4_addr8[4];

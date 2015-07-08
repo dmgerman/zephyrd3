@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(etimer_process, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(etimer_process, ev, data, buf, user_data)
 DECL|add_timer|function|add_timer(struct etimer *timer)
 DECL|etimer_adjust|function|etimer_adjust(struct etimer *et, int timediff)
 DECL|etimer_expiration_time|function|etimer_expiration_time(struct etimer *et)

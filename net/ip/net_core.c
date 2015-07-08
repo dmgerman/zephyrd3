@@ -37,6 +37,7 @@ DECL|network_initialization|function|static int network_initialization(void)
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|stats|function|static void stats(void)
+DECL|tcp_prepare_and_send|function|static inline int tcp_prepare_and_send(struct net_context *context, struct net_buf *buf)
 DECL|timer_fiber_id|variable|timer_fiber_id
 DECL|timer_fiber_stack|variable|timer_fiber_stack
 DECL|tx_fiber_stack|variable|tx_fiber_stack

@@ -1,6 +1,7 @@
 DECL|DEBUG|macro|DEBUG
 DECL|PACKET_INPUT|enumerator|PACKET_INPUT
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(tcpip_process, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(tcpip_process, ev, data, buf, user_data)
+DECL|TCPIP_CONF_ANNOTATE_TRANSMISSIONS|macro|TCPIP_CONF_ANNOTATE_TRANSMISSIONS
 DECL|TCP_POLL|enumerator|TCP_POLL,
 DECL|TCP_SYN|macro|TCP_SYN
 DECL|UDP_POLL|enumerator|UDP_POLL,
@@ -24,9 +25,9 @@ DECL|p|member|struct process *p;
 DECL|start_periodic_tcp_timer|function|start_periodic_tcp_timer(void)
 DECL|s|variable|s
 DECL|tcp_attach|function|tcp_attach(struct uip_conn *conn, void *appstate)
-DECL|tcp_connect|function|tcp_connect(const uip_ipaddr_t *ripaddr, uint16_t port, void *appstate)
-DECL|tcp_listen|function|tcp_listen(uint16_t port)
-DECL|tcp_unlisten|function|tcp_unlisten(uint16_t port)
+DECL|tcp_connect|function|tcp_connect(const uip_ipaddr_t *ripaddr, uint16_t port, void *appstate, struct process *process)
+DECL|tcp_listen|function|tcp_listen(uint16_t port, struct process *handler)
+DECL|tcp_unlisten|function|tcp_unlisten(uint16_t port, struct process *handler)
 DECL|tcpip_event|variable|tcpip_event
 DECL|tcpip_icmp6_call|function|tcpip_icmp6_call(uint8_t type)
 DECL|tcpip_icmp6_event|variable|tcpip_icmp6_event

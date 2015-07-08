@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(coap_engine, ev, data, buf)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(coap_engine, ev, data, buf, user_data)
 DECL|coap_blocking_request_callback|function|coap_blocking_request_callback(void *callback_data, void *response)
 DECL|coap_blocking_request|function|PT_THREAD(coap_blocking_request (struct request_state_t *state, process_event_t ev, coap_context_t *coap_ctx, uip_ipaddr_t *remote_ipaddr, uint16_t remote_port, coap_packet_t *request,
 DECL|coap_engine_receive|function|coap_engine_receive(coap_context_t *coap_ctx)

@@ -48,3 +48,4 @@ DECL|process_num_events_t|typedef|typedef unsigned char process_num_events_t;
 DECL|process|struct|struct process {
 DECL|pt|member|struct pt pt;
 DECL|state|member|unsigned char state, needspoll;
+DECL|user_data|member|void *user_data;
