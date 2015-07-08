@@ -16,7 +16,6 @@ DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|ChRef|member|} ChRef;
 DECL|Comm|member|int Comm;
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
@@ -70,7 +69,6 @@ DECL|Hmark|member|int Hmark;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|INQSEMA|enumerator|INQSEMA,
 DECL|Ident|member|ktask_t Ident;
-DECL|Id|member|kpipe_t Id;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_COMM|typedef|} K_COMM;
 DECL|K_CREF|typedef|} K_CREF;
@@ -264,6 +262,7 @@ DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
+DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
 DECL|k_mrec|struct|struct k_mrec {
@@ -304,7 +303,6 @@ DECL|pData|member|void *pData; /* if NULL, data is embedded in
 DECL|pEndOrig|member|unsigned char *pEndOrig;
 DECL|pEnd|member|unsigned char *pEnd;
 DECL|pPipe|member|struct pipe_struct *pPipe;
-DECL|pPipe|member|struct pipe_struct *pPipe;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pRead|member|unsigned char *pRead;
@@ -318,12 +316,14 @@ DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_struct|struct|struct pipe_struct {
 DECL|pipe_xfer_ack|member|struct _pipe_xfer_ack_arg pipe_xfer_ack;
 DECL|pipe_xfer_req|member|struct _pipe_xfer_req_arg pipe_xfer_req;
+DECL|pipe|member|} pipe;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
 DECL|poolid|member|kmemory_pool_t poolid;
 DECL|prio|member|kpriority_t prio;
 DECL|proc|member|struct k_proc *proc;
+DECL|ptr|member|struct pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
 DECL|que_struct|struct|struct que_struct {
