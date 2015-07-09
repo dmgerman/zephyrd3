@@ -15,6 +15,7 @@ DECL|att_find_type_rsp|function|static uint8_t att_find_type_rsp(struct bt_conn 
 DECL|att_handle_find_info_rsp|function|static uint8_t att_handle_find_info_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_find_type_rsp|function|static uint8_t att_handle_find_type_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_read_blob_rsp|function|static uint8_t att_handle_read_blob_rsp(struct bt_conn *conn,struct bt_buf *buf)
+DECL|att_handle_read_mult_rsp|function|static uint8_t att_handle_read_mult_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_read_rsp|function|static uint8_t att_handle_read_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_handle_read_type_rsp|function|static uint8_t att_handle_read_type_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_conn *conn, void *pdu, uint16_t len, uint8_t err)
