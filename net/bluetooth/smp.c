@@ -40,6 +40,7 @@ DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
+DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
 DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
@@ -60,6 +61,8 @@ DECL|smp_self_test|function|static inline int smp_self_test(void)
 DECL|smp_self_test|function|static int smp_self_test(void)
 DECL|smp_send_pairing_confirm|function|static uint8_t smp_send_pairing_confirm(struct bt_conn *conn)
 DECL|smp_send_pairing_random|function|static uint8_t smp_send_pairing_random(struct bt_conn *conn)
+DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *msg, uint16_t len)
+DECL|smp_sign_test|function|static int smp_sign_test(void)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|swap_buf|function|static void swap_buf(const uint8_t *src, uint8_t *dst, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
