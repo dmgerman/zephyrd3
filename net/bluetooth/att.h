@@ -49,6 +49,7 @@ DECL|BT_ATT_OP_SIGNED_WRITE_CMD|macro|BT_ATT_OP_SIGNED_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_CMD|macro|BT_ATT_OP_WRITE_CMD
 DECL|BT_ATT_OP_WRITE_REQ|macro|BT_ATT_OP_WRITE_REQ
 DECL|BT_ATT_OP_WRITE_RSP|macro|BT_ATT_OP_WRITE_RSP
+DECL|BT_ATT_READ_MULT_MIN_LEN_REQ|macro|BT_ATT_READ_MULT_MIN_LEN_REQ
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -127,8 +128,6 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|error|member|uint8_t error;
 DECL|flags|member|uint8_t flags;
 DECL|format|member|uint8_t format;
-DECL|handle1|member|uint16_t handle1;
-DECL|handle2|member|uint16_t handle2;
 DECL|handles|member|uint16_t handles[0];
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
