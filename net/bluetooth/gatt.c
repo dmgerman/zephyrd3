@@ -4,6 +4,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|att_read_rsp|function|static void att_read_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_read_type_rsp|function|static void att_read_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|attr_count|variable|attr_count
 DECL|bt_gatt_attr_read_ccc|function|int bt_gatt_attr_read_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint8_t len, uint16_t offset)
@@ -22,6 +23,7 @@ DECL|bt_gatt_discover|function|int bt_gatt_discover(struct bt_conn *conn, struct
 DECL|bt_gatt_exchange_mtu|function|int bt_gatt_exchange_mtu(struct bt_conn *conn, bt_gatt_rsp_func_t func)
 DECL|bt_gatt_foreach_attr|function|void bt_gatt_foreach_attr(uint16_t start_handle, uint16_t end_handle, bt_gatt_attr_func_t func, void *user_data)
 DECL|bt_gatt_notify|function|void bt_gatt_notify(uint16_t handle, const void *data, size_t len)
+DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
 DECL|bt_gatt_register|function|void bt_gatt_register(const struct bt_gatt_attr *attrs, size_t count)
 DECL|connected_cb|function|static uint8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|data|member|const void *data;
@@ -32,6 +34,7 @@ DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc 
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_incl|struct|struct gatt_incl {
 DECL|gatt_mtu_rsp|function|static void gatt_mtu_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
 DECL|handle|member|uint8_t handle;
 DECL|len|member|size_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)

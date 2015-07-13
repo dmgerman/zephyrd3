@@ -41,6 +41,7 @@ DECL|bt_gatt_chrc|struct|struct bt_gatt_chrc {
 DECL|bt_gatt_cud|struct|struct bt_gatt_cud {
 DECL|bt_gatt_discover_params|struct|struct bt_gatt_discover_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
+DECL|bt_gatt_read_func_t|typedef|typedef void (*bt_gatt_read_func_t)(struct bt_conn *conn, int err,
 DECL|bt_gatt_rsp_func_t|typedef|typedef void (*bt_gatt_rsp_func_t)(struct bt_conn *conn, uint8_t err);
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
