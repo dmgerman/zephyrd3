@@ -1,3 +1,4 @@
+DECL|BT_CONN_AUTO_CONNECT|enumerator|BT_CONN_AUTO_CONNECT,
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
 DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
@@ -10,6 +11,7 @@ DECL|bt_conn|struct|struct bt_conn {
 DECL|dev|member|struct bt_dev *dev;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|encrypt|member|uint8_t encrypt;
+DECL|flags|member|atomic_t flags[1];
 DECL|handle|member|uint16_t handle;
 DECL|ident|member|uint8_t ident;
 DECL|keys|member|struct bt_keys *keys;
