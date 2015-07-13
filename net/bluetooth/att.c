@@ -14,6 +14,7 @@ DECL|att_find_type_req|function|static uint8_t att_find_type_req(struct bt_conn 
 DECL|att_find_type_rsp|function|static uint8_t att_find_type_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
 DECL|att_handle_find_info_rsp|function|static uint8_t att_handle_find_info_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_find_type_rsp|function|static uint8_t att_handle_find_type_rsp(struct bt_conn *conn,struct bt_buf *buf)
+DECL|att_handle_read_rsp|function|static uint8_t att_handle_read_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_handle_read_type_rsp|function|static uint8_t att_handle_read_type_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_conn *conn, void *pdu, uint16_t len, uint8_t err)
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
