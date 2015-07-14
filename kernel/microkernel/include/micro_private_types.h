@@ -24,7 +24,6 @@ DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|Count|member|int Count;
 DECL|Deqp|member|char *Deqp;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
@@ -47,7 +46,6 @@ DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|Ident|member|ktask_t Ident;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
-DECL|Level|member|int Level;
 DECL|MAXNBR_MARKERS|macro|MAXNBR_MARKERS
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
 DECL|MVDACT_NONE|macro|MVDACT_NONE
@@ -86,7 +84,6 @@ DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -316,7 +313,6 @@ DECL|req_size|member|int req_size;
 DECL|rind|member|int rind;
 DECL|rval|member|int rval;
 DECL|s1|member|struct _s1arg s1;
-DECL|sem_struct|struct|struct sem_struct {
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
