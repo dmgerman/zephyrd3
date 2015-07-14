@@ -16,7 +16,7 @@ DECL|BuffGetAvailData|function|void BuffGetAvailData(struct pipe_desc *desc, int
 DECL|BuffGetFreeSpaceTotal|function|void BuffGetFreeSpaceTotal(struct pipe_desc *desc, int *piFreeSpaceTotal)
 DECL|BuffGetFreeSpace|function|void BuffGetFreeSpace(struct pipe_desc *desc, int *piFreeSpaceTotal, int *piFreeSpaceCont, int *piFreeSpaceAWA)
 DECL|BuffInit|function|void BuffInit(unsigned char *pBuffer, int *piBuffSize, struct pipe_desc *desc)
-DECL|CHECK_CHBUFF_POINTER|macro|CHECK_CHBUFF_POINTER
+DECL|CHECK_BUFFER_POINTER|macro|CHECK_BUFFER_POINTER
 DECL|CalcAvailData|function|int CalcAvailData(struct pipe_desc *desc, int *piAvailDataCont, int *piAvailDataAWA)
 DECL|CalcFreeSpace|function|int CalcFreeSpace(struct pipe_desc *desc, int *piFreeSpaceCont, int *piFreeSpaceAWA)
 DECL|MarkerAddLast|function|static int MarkerAddLast(struct marker_list *pMarkerList, unsigned char *pointer, int iSize, bool bXferBusy)
