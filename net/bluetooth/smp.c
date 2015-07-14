@@ -60,6 +60,7 @@ DECL|smp_self_test|function|static int smp_self_test(void)
 DECL|smp_send_pairing_confirm|function|static uint8_t smp_send_pairing_confirm(struct bt_conn *conn)
 DECL|smp_send_pairing_random|function|static uint8_t smp_send_pairing_random(struct bt_conn *conn)
 DECL|swap_buf|function|static void swap_buf(const uint8_t *src, uint8_t *dst, uint16_t len)
+DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
 DECL|tk|member|uint8_t tk[16];
 DECL|uint128_t|typedef|} uint128_t;
 DECL|xor_128|function|static void xor_128(const uint128_t *p, const uint128_t *q, uint128_t *r)
