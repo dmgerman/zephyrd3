@@ -1,15 +1,23 @@
 DECL|ANYTASK|macro|ANYTASK
+DECL|Confl|member|int Confl;
+DECL|Count|member|int Count;
 DECL|ENDLIST|macro|ENDLIST
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
+DECL|Level|member|int Level;
+DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
+DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
+DECL|Owner|member|ktask_t Owner;
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
+DECL|Waiters|member|struct k_args *Waiters;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
 DECL|_BASE_API_H|macro|_BASE_API_H
+DECL|_k_mutex_struct|struct|struct _k_mutex_struct {
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|extra|member|} extra;
 DECL|info|member|uint32_t info;

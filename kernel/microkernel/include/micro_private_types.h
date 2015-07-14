@@ -16,10 +16,8 @@ DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Comm|member|int Comm;
 DECL|Comm|member|void (*Comm)(struct k_args *);
-DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
-DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
@@ -50,7 +48,6 @@ DECL|Ident|member|ktask_t Ident;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
 DECL|Level|member|int Level;
-DECL|Level|member|int Level;
 DECL|MAXNBR_MARKERS|macro|MAXNBR_MARKERS
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
 DECL|MVDACT_NONE|macro|MVDACT_NONE
@@ -66,9 +63,6 @@ DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
 DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
-DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
-DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
-DECL|Owner|member|ktask_t Owner;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|Params|member|int Params;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
@@ -92,7 +86,6 @@ DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -274,7 +267,6 @@ DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
 DECL|mrec|member|struct k_mrec mrec;
-DECL|mutex_struct|struct|struct mutex_struct {
 DECL|mutex|member|kmutex_t mutex;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
