@@ -1,5 +1,5 @@
-DECL|nanoChannel1|variable|nanoChannel1
-DECL|nanoChannel2|variable|nanoChannel2
+DECL|nano_stack_1|variable|nano_stack_1
+DECL|nano_stack_2|variable|nano_stack_2
 DECL|stack1|variable|stack1
 DECL|stack2|variable|stack2
 DECL|stack_fiber1|function|void stack_fiber1(int par1, int par2)

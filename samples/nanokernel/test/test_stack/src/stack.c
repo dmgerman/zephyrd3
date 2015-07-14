@@ -11,7 +11,6 @@ DECL|TCERR2|macro|TCERR2
 DECL|TCERR3|macro|TCERR3
 DECL|_trigger_nano_isr_stack_pop|variable|_trigger_nano_isr_stack_pop
 DECL|_trigger_nano_isr_stack_push|variable|_trigger_nano_isr_stack_push
-DECL|channel|member|struct nano_stack *channel; /* STACK channel */
 DECL|data|member|uint32_t data; /* data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)
@@ -33,6 +32,7 @@ DECL|nanoStackObj|variable|nanoStackObj
 DECL|retCode|variable|retCode
 DECL|stack1|variable|stack1
 DECL|stack2|variable|stack2
+DECL|stack_ptr|member|struct nano_stack *stack_ptr; /* STACK */
 DECL|testFiberStackPopW|function|void testFiberStackPopW(void)
 DECL|testIsrStackFromFiber|function|void testIsrStackFromFiber(void)
 DECL|testIsrStackFromTask|function|void testIsrStackFromTask(void)

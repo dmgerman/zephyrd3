@@ -8,7 +8,6 @@ DECL|NUM_WAITERS|macro|NUM_WAITERS
 DECL|TIMEOUT_ORDER_NUM_FIBERS|macro|TIMEOUT_ORDER_NUM_FIBERS
 DECL|_trigger_nano_isr_lifo_get|variable|_trigger_nano_isr_lifo_get
 DECL|_trigger_nano_isr_lifo_put|variable|_trigger_nano_isr_lifo_put
-DECL|channel|member|struct nano_lifo *channel; /* LIFO channel */
 DECL|data_if_needed|member|void *data_if_needed;
 DECL|data|member|uint32_t data; /* miscellaneous data put on LIFO (not important) */
 DECL|data|member|void *data; /* pointer to data to add */
@@ -26,8 +25,8 @@ DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrLifoInfo|variable|isrLifoInfo
 DECL|isr_lifo_get|function|void isr_lifo_get(void *data)
 DECL|isr_lifo_put|function|void isr_lifo_put(void *data)
-DECL|lifoChannel|variable|lifoChannel
 DECL|lifoItem|variable|lifoItem
+DECL|lifo_ptr|member|struct nano_lifo *lifo_ptr; /* LIFO */
 DECL|lifo_timeout|variable|lifo_timeout
 DECL|lifo|member|struct nano_lifo *lifo;
 DECL|link_in_fifo|member|void *link_in_fifo;
@@ -52,6 +51,7 @@ DECL|test_fiber_pend_and_get_data|function|static void test_fiber_pend_and_get_d
 DECL|test_fiber_pend_and_timeout|function|static void test_fiber_pend_and_timeout(int data, int unused)
 DECL|test_fiber_put_timeout|function|static void test_fiber_put_timeout(int lifo, int timeout)
 DECL|test_fiber_ticks_special_values|function|static void test_fiber_ticks_special_values(int packet, int special_value)
+DECL|test_lifo|variable|test_lifo
 DECL|test_multiple_fibers_get_data|function|static int test_multiple_fibers_get_data(struct timeout_order_data *test_data,int test_data_size)
 DECL|test_multiple_fibers_pending|function|static int test_multiple_fibers_pending(struct timeout_order_data *test_data,int test_data_size)
 DECL|test_multiple_waiters|function|static int test_multiple_waiters(void)
