@@ -23,7 +23,7 @@ DECL|bt_hci_le_start_encryption|function|int bt_hci_le_start_encryption(uint16_t
 DECL|bt_hci_start_scanning|function|static int bt_hci_start_scanning(uint8_t scan_type, uint8_t scan_filter)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|int bt_init(void)
-DECL|bt_le_scan_update|function|void bt_le_scan_update(void)
+DECL|bt_le_scan_update|function|int bt_le_scan_update(void)
 DECL|bt_recv|function|void bt_recv(struct bt_buf *buf)
 DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_start_scanning|function|int bt_start_scanning(uint8_t scan_filter, bt_le_scan_cb_t cb)
