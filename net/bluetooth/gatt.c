@@ -35,6 +35,7 @@ DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_incl|struct|struct gatt_incl {
 DECL|gatt_mtu_rsp|function|static void gatt_mtu_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
+DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct bt_buf *buf, bt_att_func_t func, void *user_data, bt_att_destroy_t destroy)
 DECL|handle|member|uint8_t handle;
 DECL|len|member|size_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
