@@ -1,4 +1,6 @@
+DECL|DEFINE_SEMAPHORE|macro|DEFINE_SEMAPHORE
 DECL|_SEMAPHORE_H|macro|_SEMAPHORE_H
+DECL|__K_SEMAPHORE_DEFAULT|macro|__K_SEMAPHORE_DEFAULT
 DECL|task_sem_group_take_wait_timeout|macro|task_sem_group_take_wait_timeout
 DECL|task_sem_group_take_wait|macro|task_sem_group_take_wait
 DECL|task_sem_take_wait_timeout|macro|task_sem_take_wait_timeout
