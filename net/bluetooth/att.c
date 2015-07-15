@@ -19,6 +19,7 @@ DECL|att_handle_read_mult_rsp|function|static uint8_t att_handle_read_mult_rsp(s
 DECL|att_handle_read_rsp|function|static uint8_t att_handle_read_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_handle_read_type_rsp|function|static uint8_t att_handle_read_type_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_conn *conn, void *pdu, uint16_t len, uint8_t err)
+DECL|att_handle_write_rsp|function|static uint8_t att_handle_write_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_prepare_write_req|function|static uint8_t att_prepare_write_req(struct bt_conn *conn, struct bt_buf *data)
