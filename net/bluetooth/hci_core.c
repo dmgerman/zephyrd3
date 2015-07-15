@@ -12,6 +12,7 @@ DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
 DECL|bt_connect_le|function|struct bt_conn *bt_connect_le(const bt_addr_le_t *peer)
 DECL|bt_connected|function|static void bt_connected(struct bt_conn *conn)
+DECL|bt_dev|variable|bt_dev
 DECL|bt_disconnected|function|static void bt_disconnected(struct bt_conn *conn)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
@@ -33,7 +34,6 @@ DECL|callback_list|variable|callback_list
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *addr, uint8_t evtype, struct bt_keys *keys)
 DECL|cmd_queue_init|function|static void cmd_queue_init(void)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
-DECL|dev|variable|dev
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
 DECL|hci_cmd_done|function|static void hci_cmd_done(uint16_t opcode, uint8_t status, struct bt_buf *buf)
