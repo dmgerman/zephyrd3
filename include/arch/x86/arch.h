@@ -26,10 +26,10 @@ DECL|_NANO_ERR_INVALID_TASK_EXIT|macro|_NANO_ERR_INVALID_TASK_EXIT
 DECL|_NANO_ERR_PAGE_FAULT|macro|_NANO_ERR_PAGE_FAULT
 DECL|_NANO_ERR_SPURIOUS_INT|macro|_NANO_ERR_SPURIOUS_INT
 DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
-DECL|cr2|member|unsigned int cr2; /* putting cr2 here allows discarding it and pEsf in
+DECL|cr2|member|unsigned int cr2;
 DECL|cs|member|unsigned int cs;
 DECL|cs|member|unsigned int cs;
-DECL|dpl|member|unsigned int dpl; /* Privilege level associated with ISR/stub */
+DECL|dpl|member|unsigned int dpl;
 DECL|eax|member|unsigned int eax;
 DECL|eax|member|unsigned int eax;
 DECL|ebp|member|unsigned int ebp;
@@ -47,7 +47,7 @@ DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
 DECL|esp|member|unsigned int esp;
-DECL|fnc|member|void *fnc; /* Address of ISR/stub */
+DECL|fnc|member|void *fnc;
 DECL|irq_lock_inline|function|unsigned int irq_lock_inline(void)
 DECL|irq_lock_inline|macro|irq_lock_inline
 DECL|irq_lock|function|static inline unsigned int irq_lock(void) {return 1;}
@@ -59,4 +59,4 @@ DECL|nanoIsf|struct|typedef struct nanoIsf {
 DECL|s_isrList|struct|typedef struct s_isrList {
 DECL|ss|member|unsigned int ss;
 DECL|ss|member|unsigned int ss;
-DECL|vec|member|unsigned int vec; /* Vector number associated with ISR/stub */
+DECL|vec|member|unsigned int vec;
