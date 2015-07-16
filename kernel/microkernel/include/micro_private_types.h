@@ -11,7 +11,6 @@ DECL|BUFF_STATE|typedef|} BUFF_STATE;
 DECL|Back|member|struct k_proc *Back;
 DECL|Back|member|struct k_timer *Back;
 DECL|Base|member|char *Base;
-DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Comm|member|int Comm;
@@ -23,14 +22,9 @@ DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|Count|member|int Count;
-DECL|Deqp|member|char *Deqp;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
-DECL|Endp|member|char *Endp;
-DECL|Enqp|member|char *Enqp;
-DECL|Esize|member|int Esize;
 DECL|Esize|member|int Esize;
 DECL|Extra|member|} Extra;
 DECL|Forw|member|struct k_args *Forw;
@@ -40,7 +34,6 @@ DECL|Free|member|char *Free;
 DECL|Group|member|uint32_t Group;
 DECL|Head|member|struct k_args **Head;
 DECL|Head|member|struct k_proc *Head;
-DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|Ident|member|ktask_t Ident;
@@ -57,9 +50,7 @@ DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|Nelms|member|int Nelms;
-DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
-DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|Params|member|int Params;
@@ -84,7 +75,6 @@ DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|WriteMarkers|member|struct marker_list WriteMarkers;
@@ -302,7 +292,6 @@ DECL|proc|member|struct k_proc *proc;
 DECL|ptr|member|struct pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
-DECL|que_struct|struct|struct que_struct {
 DECL|queue|member|kfifo_t queue;
 DECL|queue|member|kfifo_t queue;
 DECL|rcode|member|int rcode;
