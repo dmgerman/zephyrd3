@@ -1,4 +1,6 @@
+DECL|DEFINE_FIFO|macro|DEFINE_FIFO
 DECL|FIFO_H|macro|FIFO_H
+DECL|__K_FIFO_DEFAULT|macro|__K_FIFO_DEFAULT
 DECL|task_fifo_get_wait_timeout|macro|task_fifo_get_wait_timeout
 DECL|task_fifo_get_wait|macro|task_fifo_get_wait
 DECL|task_fifo_get|macro|task_fifo_get
