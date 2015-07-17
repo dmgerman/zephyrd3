@@ -23,4 +23,5 @@ DECL|rx|member|struct bt_buf *rx;
 DECL|smp|member|void *smp;
 DECL|src|member|bt_addr_le_t src;
 DECL|state|member|bt_conn_state_t state;
+DECL|timeout|member|void *timeout;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
