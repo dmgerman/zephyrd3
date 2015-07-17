@@ -21,7 +21,6 @@ DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|Count|member|int Count;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
@@ -59,7 +58,6 @@ DECL|Prio|member|kpriority_t Prio;
 DECL|Prio|member|kpriority_t Prio;
 DECL|ReadMarkers|member|struct marker_list ReadMarkers;
 DECL|Readers|member|struct k_args *Readers;
-DECL|Readers|member|struct k_args *Readers;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -78,7 +76,6 @@ DECL|Time|member|} Time;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|WriteMarkers|member|struct marker_list WriteMarkers;
-DECL|Writers|member|struct k_args *Writers;
 DECL|Writers|member|struct k_args *Writers;
 DECL|XFER_B2R|enumerator|XFER_B2R,
 DECL|XFER_BUSY|enumerator|XFER_BUSY = 0x0002,
@@ -243,7 +240,6 @@ DECL|map_struct|struct|struct map_struct {
 DECL|marker_list|struct|struct marker_list {
 DECL|marker|struct|struct marker {
 DECL|maxblock_size|member|int maxblock_size;
-DECL|mbx_struct|struct|struct mbx_struct {
 DECL|mem_blocks|member|char *mem_blocks;
 DECL|mem_status|member|uint32_t mem_status;
 DECL|mess|member|struct k_msg mess;

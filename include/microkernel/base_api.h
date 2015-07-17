@@ -4,6 +4,7 @@ DECL|Confl|member|int Confl;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
+DECL|Count|member|int Count;
 DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
@@ -23,14 +24,17 @@ DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
+DECL|Readers|member|struct k_args *Readers;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
+DECL|Writers|member|struct k_args *Writers;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
 DECL|_BASE_API_H|macro|_BASE_API_H
 DECL|_k_fifo_struct|struct|struct _k_fifo_struct {
+DECL|_k_mbox_struct|struct|struct _k_mbox_struct {
 DECL|_k_mutex_struct|struct|struct _k_mutex_struct {
 DECL|_k_sem_struct|struct|struct _k_sem_struct {
 DECL|address_in_pool|member|void *address_in_pool;
