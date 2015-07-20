@@ -12,8 +12,6 @@ DECL|_k_timer_list_tail|variable|_k_timer_list_tail
 DECL|_k_timer_list_update|function|void _k_timer_list_update(int ticks)
 DECL|_k_timer_start|function|void _k_timer_start(struct k_args *P)
 DECL|_k_timer_stop|function|void _k_timer_stop(struct k_args *P)
-DECL|_timer_id_to_ptr|function|static inline struct k_timer *_timer_id_to_ptr(ktimer_t timer)
-DECL|_timer_ptr_to_id|function|static inline ktimer_t _timer_ptr_to_id(struct k_timer *timer)
 DECL|task_sleep|function|void task_sleep(int32_t ticks)
 DECL|task_timer_alloc|function|ktimer_t task_timer_alloc(void)
 DECL|task_timer_free|function|void task_timer_free(ktimer_t timer)
