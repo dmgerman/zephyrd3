@@ -1,14 +1,12 @@
 DECL|Action|member|MovedAction Action;
 DECL|Args|member|K_ARGS_ARGS Args;
 DECL|Args|member|struct k_args *Args;
-DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
 DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
 DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
 DECL|BUFF_STATE|typedef|} BUFF_STATE;
-DECL|Back|member|struct k_proc *Back;
 DECL|Back|member|struct k_timer *Back;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
@@ -27,15 +25,12 @@ DECL|Dummy|member|uint32_t Dummy;
 DECL|Esize|member|int Esize;
 DECL|Extra|member|} Extra;
 DECL|Forw|member|struct k_args *Forw;
-DECL|Forw|member|struct k_proc *Forw;
 DECL|Forw|member|struct k_timer *Forw;
 DECL|Free|member|char *Free;
-DECL|Group|member|uint32_t Group;
 DECL|Head|member|struct k_args **Head;
 DECL|Head|member|struct k_proc *Head;
 DECL|Hmark|member|int Hmark;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
-DECL|Ident|member|ktask_t Ident;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
 DECL|MAXNBR_MARKERS|macro|MAXNBR_MARKERS
@@ -55,7 +50,6 @@ DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|Params|member|int Params;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|Prio|member|kpriority_t Prio;
-DECL|Prio|member|kpriority_t Prio;
 DECL|ReadMarkers|member|struct marker_list ReadMarkers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -65,7 +59,6 @@ DECL|ReqType|member|} ReqType;
 DECL|ReqType|member|} ReqType;
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
-DECL|State|member|uint32_t State;
 DECL|Sync|member|struct sync_req Sync;
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
@@ -198,9 +191,7 @@ DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|evstr|struct|struct evstr {
-DECL|fabort|member|void (*fabort)(void);
 DECL|frag_tab|member|struct pool_block *frag_tab;
-DECL|fstart|member|void (*fstart)(void);
 DECL|func|member|int (*func)();
 DECL|func|member|kevent_handler_t func;
 DECL|func|member|kevent_handler_t func;
@@ -230,7 +221,6 @@ DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
 DECL|k_mrec|struct|struct k_mrec {
-DECL|k_proc|struct|struct k_proc {
 DECL|k_timer|struct|struct k_timer {
 DECL|k_tqhd|struct|struct k_tqhd {
 DECL|l1|member|struct _l1arg l1;
@@ -322,6 +312,4 @@ DECL|total_mem|member|int total_mem;
 DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiter|member|struct k_args *waiter;
-DECL|worksize|member|int worksize;
-DECL|workspace|member|char *workspace;
 DECL|z4|member|struct _z4arg z4;

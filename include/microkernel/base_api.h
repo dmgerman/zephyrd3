@@ -1,4 +1,6 @@
 DECL|ANYTASK|macro|ANYTASK
+DECL|Args|member|struct k_args *Args;
+DECL|Back|member|struct k_proc *Back;
 DECL|Base|member|char *Base;
 DECL|Confl|member|int Confl;
 DECL|Count|member|int Count;
@@ -10,7 +12,10 @@ DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
 DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
+DECL|Forw|member|struct k_proc *Forw;
+DECL|Group|member|uint32_t Group;
 DECL|Hmark|member|int Hmark;
+DECL|Ident|member|ktask_t Ident;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
 DECL|Level|member|int Level;
 DECL|Level|member|int Level;
@@ -19,12 +24,14 @@ DECL|Nused|member|int Nused;
 DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Owner|member|ktask_t Owner;
+DECL|Prio|member|kpriority_t Prio;
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
 DECL|Readers|member|struct k_args *Readers;
+DECL|State|member|uint32_t State;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -39,9 +46,12 @@ DECL|_k_mutex_struct|struct|struct _k_mutex_struct {
 DECL|_k_sem_struct|struct|struct _k_sem_struct {
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|extra|member|} extra;
+DECL|fabort|member|void (*fabort)(void);
+DECL|fstart|member|void (*fstart)(void);
 DECL|info|member|uint32_t info;
 DECL|k_block|struct|struct k_block {
 DECL|k_msg|struct|struct k_msg {
+DECL|k_proc|struct|struct k_proc {
 DECL|kevent_handler_t|typedef|typedef int (*kevent_handler_t)(int event);
 DECL|kevent_t|typedef|typedef unsigned int kevent_t;
 DECL|kfifo_t|typedef|typedef uint32_t kfifo_t;
@@ -69,3 +79,5 @@ DECL|transfer|member|struct k_args *transfer;
 DECL|tx_block|member|struct k_block tx_block;
 DECL|tx_data|member|void *tx_data;
 DECL|tx_task|member|ktask_t tx_task;
+DECL|worksize|member|int worksize;
+DECL|workspace|member|char *workspace;
