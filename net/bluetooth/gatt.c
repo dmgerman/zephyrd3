@@ -30,6 +30,7 @@ DECL|bt_gatt_read_multiple|function|int bt_gatt_read_multiple(struct bt_conn *co
 DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
 DECL|bt_gatt_register|function|void bt_gatt_register(const struct bt_gatt_attr *attrs, size_t count)
 DECL|bt_gatt_subscribe|function|int bt_gatt_subscribe(struct bt_conn *conn, uint16_t handle, struct bt_gatt_subscribe_params *params)
+DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn, uint16_t handle,struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length, bt_gatt_rsp_func_t func)
 DECL|connected_cb|function|static uint8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|data|member|const void *data;
