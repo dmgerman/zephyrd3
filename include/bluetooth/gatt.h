@@ -32,6 +32,8 @@ DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
+DECL|_next|member|struct bt_gatt_subscribe_params *_next;
+DECL|_peer|member|bt_addr_le_t _peer;
 DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
 DECL|bt_gatt_attr|struct|struct bt_gatt_attr {
 DECL|bt_gatt_ccc_cfg|struct|struct bt_gatt_ccc_cfg {
@@ -44,15 +46,18 @@ DECL|bt_gatt_include|struct|struct bt_gatt_include {
 DECL|bt_gatt_read_func_t|typedef|typedef void (*bt_gatt_read_func_t)(struct bt_conn *conn, int err,
 DECL|bt_gatt_rsp_func_t|typedef|typedef void (*bt_gatt_rsp_func_t)(struct bt_conn *conn, uint8_t err);
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
+DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
 DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
+DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint16_t flags;
 DECL|flush|member|int (*flush)(struct bt_conn *conn,
 DECL|func|member|bt_gatt_attr_func_t func;
+DECL|func|member|bt_gatt_read_func_t func;
 DECL|handle|member|uint16_t handle;
 DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;
@@ -69,6 +74,7 @@ DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|valid|member|uint8_t valid;
+DECL|value_handle|member|uint16_t value_handle;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint16_t value;
