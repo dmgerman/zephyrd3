@@ -22,6 +22,7 @@ DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_conn *conn,
 DECL|att_handle_write_rsp|function|static uint8_t att_handle_write_rsp(struct bt_conn *conn,struct bt_buf *buf)
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_conn *conn, struct bt_buf *buf)
+DECL|att_notify|function|static uint8_t att_notify(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_prepare_write_req|function|static uint8_t att_prepare_write_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_blob_req|function|static uint8_t att_read_blob_req(struct bt_conn *conn, struct bt_buf *data)
 DECL|att_read_group_req|function|static uint8_t att_read_group_req(struct bt_conn *conn, struct bt_buf *data)
