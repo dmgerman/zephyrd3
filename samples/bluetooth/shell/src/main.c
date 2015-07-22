@@ -8,6 +8,7 @@ DECL|cmd_gatt_exchange_mtu|function|static void cmd_gatt_exchange_mtu(int argc, 
 DECL|cmd_gatt_mread|function|void cmd_gatt_mread(int argc, char *argv[])
 DECL|cmd_gatt_read|function|static void cmd_gatt_read(int argc, char *argv[])
 DECL|cmd_gatt_subscribe|function|static void cmd_gatt_subscribe(int argc, char *argv[])
+DECL|cmd_gatt_unsubscribe|function|static void cmd_gatt_unsubscribe(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static void cmd_gatt_write(int argc, char *argv[])
 DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
