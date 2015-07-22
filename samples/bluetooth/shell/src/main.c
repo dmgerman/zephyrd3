@@ -7,6 +7,7 @@ DECL|cmd_gatt_discover|function|static void cmd_gatt_discover(int argc, char *ar
 DECL|cmd_gatt_exchange_mtu|function|static void cmd_gatt_exchange_mtu(int argc, char *argv[])
 DECL|cmd_gatt_mread|function|void cmd_gatt_mread(int argc, char *argv[])
 DECL|cmd_gatt_read|function|static void cmd_gatt_read(int argc, char *argv[])
+DECL|cmd_gatt_subscribe|function|static void cmd_gatt_subscribe(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static void cmd_gatt_write(int argc, char *argv[])
 DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
@@ -25,6 +26,9 @@ DECL|mainloop|function|void mainloop(void)
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|sd|variable|sd
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
+DECL|subscribe_destroy|function|static void subscribe_destroy(void *user_data)
+DECL|subscribe_func|function|static void subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
 DECL|xtoi|function|static int xtoi(const char *str)
