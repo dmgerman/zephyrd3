@@ -1,6 +1,5 @@
 DECL|ACL_IN_MAX|macro|ACL_IN_MAX
 DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
-DECL|BT_CREATE_CONN_TIMEOUT|macro|BT_CREATE_CONN_TIMEOUT
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
@@ -60,4 +59,3 @@ DECL|rx_prio_fiber_id|variable|rx_prio_fiber_id
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|rx_queue_init|function|static void rx_queue_init(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
-DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
