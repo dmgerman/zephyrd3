@@ -1,3 +1,4 @@
+DECL|DEFINE_TASK|macro|DEFINE_TASK
 DECL|EXE_GROUP|macro|EXE_GROUP
 DECL|FPU_GROUP|macro|FPU_GROUP
 DECL|TASK_ABORT|macro|TASK_ABORT
@@ -14,6 +15,7 @@ DECL|TASK_START|macro|TASK_START
 DECL|TASK_SUSPEND|macro|TASK_SUSPEND
 DECL|TASK_UNBLOCK|macro|TASK_UNBLOCK
 DECL|USR_GROUP|macro|USR_GROUP
+DECL|__K_TASK_INITIALIZER|macro|__K_TASK_INITIALIZER
 DECL|isr_task_group_mask_get|macro|isr_task_group_mask_get
 DECL|isr_task_id_get|macro|isr_task_id_get
 DECL|isr_task_priority_get|macro|isr_task_priority_get
