@@ -28,7 +28,6 @@ DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|Ctxt|member|K_CREF Ctxt;
 DECL|DEALLOC|enumerator|DEALLOC,
 DECL|DEBUG_ACK|enumerator|DEBUG_ACK,
 DECL|DEBUG_REQ|enumerator|DEBUG_REQ,
