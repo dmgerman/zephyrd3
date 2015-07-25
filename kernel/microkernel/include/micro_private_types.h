@@ -1,5 +1,3 @@
-DECL|ALLOCTMO|enumerator|ALLOCTMO,
-DECL|ALLOC|enumerator|ALLOC,
 DECL|Action|member|MovedAction Action;
 DECL|Args|member|K_ARGS_ARGS Args;
 DECL|Args|member|struct k_args *Args;
@@ -17,6 +15,7 @@ DECL|Base|member|char *Base;
 DECL|BuffState|member|BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Comm|member|int Comm;
+DECL|Comm|member|void (*Comm)(struct k_args *);
 DECL|Confl|member|int Confl;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
@@ -28,25 +27,10 @@ DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|DEALLOC|enumerator|DEALLOC,
-DECL|DEBUG_ACK|enumerator|DEBUG_ACK,
-DECL|DEBUG_REQ|enumerator|DEBUG_REQ,
-DECL|DEQ_REQ|enumerator|DEQ_REQ,
-DECL|DEQ_RPL|enumerator|DEQ_RPL,
-DECL|DEQ_TMO|enumerator|DEQ_TMO,
 DECL|Deqp|member|char *Deqp;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
-DECL|ELAPSE|enumerator|ELAPSE,
-DECL|ENQ_REQ|enumerator|ENQ_REQ,
-DECL|ENQ_RPL|enumerator|ENQ_RPL,
-DECL|ENQ_TMO|enumerator|ENQ_TMO,
-DECL|EVENTENABLE|enumerator|EVENTENABLE, /* obsolete now */
-DECL|EVENTHANDLER|enumerator|EVENTHANDLER,
-DECL|EVENTSIGNAL|enumerator|EVENTSIGNAL,
-DECL|EVENTTEST|enumerator|EVENTTEST,
-DECL|EVENT_TMO|enumerator|EVENT_TMO,
 DECL|Endp|member|char *Endp;
 DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
@@ -56,29 +40,18 @@ DECL|Forw|member|struct k_args *Forw;
 DECL|Forw|member|struct k_proc *Forw;
 DECL|Forw|member|struct k_timer *Forw;
 DECL|Free|member|char *Free;
-DECL|GET_BLOCK_WAIT|enumerator|GET_BLOCK_WAIT,
-DECL|GET_BLOCK|enumerator|GET_BLOCK,
-DECL|GRPOP|enumerator|GRPOP,
-DECL|GTBLTMO|enumerator|GTBLTMO,
 DECL|Group|member|uint32_t Group;
 DECL|Head|member|struct k_args **Head;
 DECL|Head|member|struct k_proc *Head;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
-DECL|INQSEMA|enumerator|INQSEMA,
 DECL|Ident|member|ktask_t Ident;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
-DECL|K_COMM|typedef|} K_COMM;
 DECL|K_CREF|typedef|} K_CREF;
-DECL|LOCK_REQ|enumerator|LOCK_REQ,
-DECL|LOCK_RPL|enumerator|LOCK_RPL,
-DECL|LOCK_TMO|enumerator|LOCK_TMO,
 DECL|Level|member|int Level;
 DECL|Level|member|int Level;
 DECL|MAXNBR_MARKERS|macro|MAXNBR_MARKERS
-DECL|MEMCPY_REQ|enumerator|MEMCPY_REQ,
-DECL|MEMCPY_RPL|enumerator|MEMCPY_RPL,
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
 DECL|MVDACT_NONE|macro|MVDACT_NONE
 DECL|MVDACT_RCVACK|macro|MVDACT_RCVACK
@@ -86,50 +59,21 @@ DECL|MVDACT_ROR_RCV|macro|MVDACT_ROR_RCV
 DECL|MVDACT_ROS_SND|macro|MVDACT_ROS_SND
 DECL|MVDACT_SNDACK|macro|MVDACT_SNDACK
 DECL|MVDACT_VALID|macro|MVDACT_VALID
-DECL|MVDRCV_ACK|enumerator|MVDRCV_ACK,
-DECL|MVDRCV_REQ|enumerator|MVDRCV_REQ,
-DECL|MVDSND_ACK|enumerator|MVDSND_ACK,
-DECL|MVDSND_REQ|enumerator|MVDSND_REQ,
-DECL|MVD_REQ|enumerator|MVD_REQ,
-DECL|MVD_VOID|enumerator|MVD_VOID, /* obsolete now */
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
-DECL|NOP|enumerator|NOP,
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
 DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
-DECL|OFFLOAD|enumerator|OFFLOAD,
 DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Owner|member|ktask_t Owner;
-DECL|PIPE_GET_ACK|enumerator|PIPE_GET_ACK,
-DECL|PIPE_GET_REPLY|enumerator|PIPE_GET_REPLY,
-DECL|PIPE_GET_REQUEST|enumerator|PIPE_GET_REQUEST,
-DECL|PIPE_GET_TIMEOUT|enumerator|PIPE_GET_TIMEOUT,
-DECL|PIPE_MOVEDATA_ACK|enumerator|PIPE_MOVEDATA_ACK,
-DECL|PIPE_PUT_ACK|enumerator|PIPE_PUT_ACK,
-DECL|PIPE_PUT_REPLY|enumerator|PIPE_PUT_REPLY,
-DECL|PIPE_PUT_REQUEST|enumerator|PIPE_PUT_REQUEST,
-DECL|PIPE_PUT_TIMEOUT|enumerator|PIPE_PUT_TIMEOUT,
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
-DECL|POOL_DEFRAG|enumerator|POOL_DEFRAG,
 DECL|Params|member|int Params;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|Prio|member|kpriority_t Prio;
 DECL|Prio|member|kpriority_t Prio;
-DECL|QUEUE|enumerator|QUEUE,
-DECL|RAWDATA|enumerator|RAWDATA,
-DECL|READWL|enumerator|READWL,
-DECL|RECV_ACK|enumerator|RECV_ACK,
-DECL|RECV_DATA|enumerator|RECV_DATA,
-DECL|RECV_REQ|enumerator|RECV_REQ,
-DECL|RECV_TMO|enumerator|RECV_TMO,
-DECL|REL_BLOCK|enumerator|REL_BLOCK,
-DECL|REMREPLY|enumerator|REMREPLY,
-DECL|RESETM|enumerator|RESETM,
-DECL|RESETS|enumerator|RESETS,
 DECL|ReadMarkers|member|struct marker_list ReadMarkers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|Readers|member|struct k_args *Readers;
@@ -138,42 +82,16 @@ DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqType|member|} ReqType;
 DECL|ReqType|member|} ReqType;
-DECL|SEND_ACK|enumerator|SEND_ACK,
-DECL|SEND_DATA|enumerator|SEND_DATA,
-DECL|SEND_REQ|enumerator|SEND_REQ,
-DECL|SEND_TMO|enumerator|SEND_TMO,
-DECL|SIGNALM|enumerator|SIGNALM,
-DECL|SIGNALS|enumerator|SIGNALS,
-DECL|SLEEP|enumerator|SLEEP,
-DECL|SPRIO|enumerator|SPRIO,
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|State|member|uint32_t State;
 DECL|Sync|member|struct sync_req Sync;
-DECL|TALLOC|enumerator|TALLOC,
-DECL|TDEALLOC|enumerator|TDEALLOC,
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
-DECL|TSKOP|enumerator|TSKOP,
-DECL|TSTART|enumerator|TSTART,
-DECL|TSTOP|enumerator|TSTOP,
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|UNDEFINED|enumerator|UNDEFINED = -1
-DECL|UNLOCK|enumerator|UNLOCK,
-DECL|WAITMACC|enumerator|WAITMACC,
-DECL|WAITMANY|enumerator|WAITMANY,
-DECL|WAITMCAN|enumerator|WAITMCAN,
-DECL|WAITMEND|enumerator|WAITMEND,
-DECL|WAITMRDY|enumerator|WAITMRDY,
-DECL|WAITMREQ|enumerator|WAITMREQ,
-DECL|WAITMTMO|enumerator|WAITMTMO,
-DECL|WAITSREQ|enumerator|WAITSREQ,
-DECL|WAITSRPL|enumerator|WAITSRPL,
-DECL|WAITSTMO|enumerator|WAITSTMO,
-DECL|WAKEUP|enumerator|WAKEUP,
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -190,7 +108,77 @@ DECL|XFER_UNDEFINED|enumerator|XFER_UNDEFINED,
 DECL|XFER_W2B|enumerator|XFER_W2B,
 DECL|XFER_W2R|enumerator|XFER_W2R
 DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
-DECL|YIELD|enumerator|YIELD,
+DECL|_K_SVC_BLOCK_WAITERS_GET|macro|_K_SVC_BLOCK_WAITERS_GET
+DECL|_K_SVC_DEFRAG|macro|_K_SVC_DEFRAG
+DECL|_K_SVC_EVENT_HANDLER_SET|macro|_K_SVC_EVENT_HANDLER_SET
+DECL|_K_SVC_EVENT_SIGNAL|macro|_K_SVC_EVENT_SIGNAL
+DECL|_K_SVC_EVENT_TEST_TIMEOUT|macro|_K_SVC_EVENT_TEST_TIMEOUT
+DECL|_K_SVC_EVENT_TEST|macro|_K_SVC_EVENT_TEST
+DECL|_K_SVC_FIFO_DEQUE_REPLY_TIMEOUT|macro|_K_SVC_FIFO_DEQUE_REPLY_TIMEOUT
+DECL|_K_SVC_FIFO_DEQUE_REPLY|macro|_K_SVC_FIFO_DEQUE_REPLY
+DECL|_K_SVC_FIFO_DEQUE_REQUEST|macro|_K_SVC_FIFO_DEQUE_REQUEST
+DECL|_K_SVC_FIFO_ENQUE_REPLY_TIMEOUT|macro|_K_SVC_FIFO_ENQUE_REPLY_TIMEOUT
+DECL|_K_SVC_FIFO_ENQUE_REPLY|macro|_K_SVC_FIFO_ENQUE_REPLY
+DECL|_K_SVC_FIFO_ENQUE_REQUEST|macro|_K_SVC_FIFO_ENQUE_REQUEST
+DECL|_K_SVC_FIFO_IOCTL|macro|_K_SVC_FIFO_IOCTL
+DECL|_K_SVC_MBOX_RECEIVE_ACK|macro|_K_SVC_MBOX_RECEIVE_ACK
+DECL|_K_SVC_MBOX_RECEIVE_DATA|macro|_K_SVC_MBOX_RECEIVE_DATA
+DECL|_K_SVC_MBOX_RECEIVE_REPLY|macro|_K_SVC_MBOX_RECEIVE_REPLY
+DECL|_K_SVC_MBOX_RECEIVE_REQUEST|macro|_K_SVC_MBOX_RECEIVE_REQUEST
+DECL|_K_SVC_MBOX_SEND_ACK|macro|_K_SVC_MBOX_SEND_ACK
+DECL|_K_SVC_MBOX_SEND_DATA|macro|_K_SVC_MBOX_SEND_DATA
+DECL|_K_SVC_MBOX_SEND_REPLY|macro|_K_SVC_MBOX_SEND_REPLY
+DECL|_K_SVC_MBOX_SEND_REQUEST|macro|_K_SVC_MBOX_SEND_REQUEST
+DECL|_K_SVC_MEM_MAP_ALLOC_TIMEOUT|macro|_K_SVC_MEM_MAP_ALLOC_TIMEOUT
+DECL|_K_SVC_MEM_MAP_ALLOC|macro|_K_SVC_MEM_MAP_ALLOC
+DECL|_K_SVC_MEM_MAP_DEALLOC|macro|_K_SVC_MEM_MAP_DEALLOC
+DECL|_K_SVC_MEM_POOL_BLOCK_GET_TIMEOUT_HANDLE|macro|_K_SVC_MEM_POOL_BLOCK_GET_TIMEOUT_HANDLE
+DECL|_K_SVC_MEM_POOL_BLOCK_GET|macro|_K_SVC_MEM_POOL_BLOCK_GET
+DECL|_K_SVC_MEM_POOL_BLOCK_RELEASE|macro|_K_SVC_MEM_POOL_BLOCK_RELEASE
+DECL|_K_SVC_MOVEDATA_REQ|macro|_K_SVC_MOVEDATA_REQ
+DECL|_K_SVC_MUTEX_LOCK_REPLY_TIMEOUT|macro|_K_SVC_MUTEX_LOCK_REPLY_TIMEOUT
+DECL|_K_SVC_MUTEX_LOCK_REPLY|macro|_K_SVC_MUTEX_LOCK_REPLY
+DECL|_K_SVC_MUTEX_LOCK_REQUEST|macro|_K_SVC_MUTEX_LOCK_REQUEST
+DECL|_K_SVC_MUTEX_UNLOCK|macro|_K_SVC_MUTEX_UNLOCK
+DECL|_K_SVC_NOP|macro|_K_SVC_NOP
+DECL|_K_SVC_OFFLOAD_TO_FIBER|macro|_K_SVC_OFFLOAD_TO_FIBER
+DECL|_K_SVC_PIPE_GET_ACK|macro|_K_SVC_PIPE_GET_ACK
+DECL|_K_SVC_PIPE_GET_REPLY|macro|_K_SVC_PIPE_GET_REPLY
+DECL|_K_SVC_PIPE_GET_REQUEST|macro|_K_SVC_PIPE_GET_REQUEST
+DECL|_K_SVC_PIPE_GET_TIMEOUT|macro|_K_SVC_PIPE_GET_TIMEOUT
+DECL|_K_SVC_PIPE_MOVEDATA_ACK|macro|_K_SVC_PIPE_MOVEDATA_ACK
+DECL|_K_SVC_PIPE_PUT_ACK|macro|_K_SVC_PIPE_PUT_ACK
+DECL|_K_SVC_PIPE_PUT_REPLY|macro|_K_SVC_PIPE_PUT_REPLY
+DECL|_K_SVC_PIPE_PUT_REQUEST|macro|_K_SVC_PIPE_PUT_REQUEST
+DECL|_K_SVC_PIPE_PUT_TIMEOUT|macro|_K_SVC_PIPE_PUT_TIMEOUT
+DECL|_K_SVC_SEM_GROUP_RESET|macro|_K_SVC_SEM_GROUP_RESET
+DECL|_K_SVC_SEM_GROUP_SIGNAL|macro|_K_SVC_SEM_GROUP_SIGNAL
+DECL|_K_SVC_SEM_GROUP_WAIT_ACCEPT|macro|_K_SVC_SEM_GROUP_WAIT_ACCEPT
+DECL|_K_SVC_SEM_GROUP_WAIT_ANY|macro|_K_SVC_SEM_GROUP_WAIT_ANY
+DECL|_K_SVC_SEM_GROUP_WAIT_CANCEL|macro|_K_SVC_SEM_GROUP_WAIT_CANCEL
+DECL|_K_SVC_SEM_GROUP_WAIT_READY|macro|_K_SVC_SEM_GROUP_WAIT_READY
+DECL|_K_SVC_SEM_GROUP_WAIT_REQUEST|macro|_K_SVC_SEM_GROUP_WAIT_REQUEST
+DECL|_K_SVC_SEM_GROUP_WAIT_TIMEOUT|macro|_K_SVC_SEM_GROUP_WAIT_TIMEOUT
+DECL|_K_SVC_SEM_GROUP_WAIT|macro|_K_SVC_SEM_GROUP_WAIT
+DECL|_K_SVC_SEM_INQUIRY|macro|_K_SVC_SEM_INQUIRY
+DECL|_K_SVC_SEM_RESET|macro|_K_SVC_SEM_RESET
+DECL|_K_SVC_SEM_SIGNAL|macro|_K_SVC_SEM_SIGNAL
+DECL|_K_SVC_SEM_WAIT_REPLY_TIMEOUT|macro|_K_SVC_SEM_WAIT_REPLY_TIMEOUT
+DECL|_K_SVC_SEM_WAIT_REPLY|macro|_K_SVC_SEM_WAIT_REPLY
+DECL|_K_SVC_SEM_WAIT_REQUEST|macro|_K_SVC_SEM_WAIT_REQUEST
+DECL|_K_SVC_TASK_GROUP_OP|macro|_K_SVC_TASK_GROUP_OP
+DECL|_K_SVC_TASK_OP|macro|_K_SVC_TASK_OP
+DECL|_K_SVC_TASK_PRIORITY_SET|macro|_K_SVC_TASK_PRIORITY_SET
+DECL|_K_SVC_TASK_SLEEP|macro|_K_SVC_TASK_SLEEP
+DECL|_K_SVC_TASK_WAKEUP|macro|_K_SVC_TASK_WAKEUP
+DECL|_K_SVC_TASK_YIELD|macro|_K_SVC_TASK_YIELD
+DECL|_K_SVC_TIMER_ALLOC|macro|_K_SVC_TIMER_ALLOC
+DECL|_K_SVC_TIMER_DEALLOC|macro|_K_SVC_TIMER_DEALLOC
+DECL|_K_SVC_TIMER_START|macro|_K_SVC_TIMER_START
+DECL|_K_SVC_TIMER_STOP|macro|_K_SVC_TIMER_STOP
+DECL|_K_SVC_TIME_ELAPSE|macro|_K_SVC_TIME_ELAPSE
+DECL|_K_SVC_UNDEFINED|macro|_K_SVC_UNDEFINED
+DECL|_K_SVC_WORKLOAD_GET|macro|_K_SVC_WORKLOAD_GET
 DECL|_MICRO_PRIVATE_TYPES_H|macro|_MICRO_PRIVATE_TYPES_H
 DECL|__packed|variable|__packed
 DECL|_a1arg|struct|struct _a1arg {

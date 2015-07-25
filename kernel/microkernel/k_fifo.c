@@ -1,5 +1,7 @@
+DECL|_k_fifo_deque_reply_timeout|function|void _k_fifo_deque_reply_timeout(struct k_args *A)
 DECL|_k_fifo_deque_reply|function|void _k_fifo_deque_reply(struct k_args *A)
 DECL|_k_fifo_deque_request|function|void _k_fifo_deque_request(struct k_args *A)
+DECL|_k_fifo_enque_reply_timeout|function|void _k_fifo_enque_reply_timeout(struct k_args *A)
 DECL|_k_fifo_enque_reply|function|void _k_fifo_enque_reply(struct k_args *A)
 DECL|_k_fifo_enque_request|function|void _k_fifo_enque_request(struct k_args *A)
 DECL|_k_fifo_ioctl|function|void _k_fifo_ioctl(struct k_args *A)
