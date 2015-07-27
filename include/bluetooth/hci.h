@@ -34,6 +34,7 @@ DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
+DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
 DECL|BT_HCI_LE_CONN_PARAM_REQ_PROC|macro|BT_HCI_LE_CONN_PARAM_REQ_PROC
 DECL|BT_HCI_LE_ENCRYPTION|macro|BT_HCI_LE_ENCRYPTION
 DECL|BT_HCI_OP_DISCONNECT|macro|BT_HCI_OP_DISCONNECT
@@ -48,6 +49,7 @@ DECL|BT_HCI_OP_LE_LTK_REQ_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_REPLY
 DECL|BT_HCI_OP_LE_RAND|macro|BT_HCI_OP_LE_RAND
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
+DECL|BT_HCI_OP_LE_READ_REMOTE_FEATURES|macro|BT_HCI_OP_LE_READ_REMOTE_FEATURES
 DECL|BT_HCI_OP_LE_SET_ADV_DATA|macro|BT_HCI_OP_LE_SET_ADV_DATA
 DECL|BT_HCI_OP_LE_SET_ADV_ENABLE|macro|BT_HCI_OP_LE_SET_ADV_ENABLE
 DECL|BT_HCI_OP_LE_SET_ADV_PARAMETERS|macro|BT_HCI_OP_LE_SET_ADV_PARAMETERS
@@ -121,6 +123,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -140,6 +144,7 @@ DECL|bt_hci_cp_le_create_conn|struct|struct bt_hci_cp_le_create_conn {
 DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
 DECL|bt_hci_cp_le_ltk_req_neg_reply|struct|struct bt_hci_cp_le_ltk_req_neg_reply {
 DECL|bt_hci_cp_le_ltk_req_reply|struct|struct bt_hci_cp_le_ltk_req_reply {
+DECL|bt_hci_cp_le_read_remote_features|struct|struct bt_hci_cp_le_read_remote_features {
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
@@ -150,6 +155,7 @@ DECL|bt_hci_cp_le_start_encryption|struct|struct bt_hci_cp_le_start_encryption {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
+DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
@@ -192,10 +198,13 @@ DECL|evt_type|member|uint8_t evt_type;
 DECL|evt|member|uint8_t evt;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
+DECL|features|member|uint8_t features[8];
 DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -264,6 +273,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
