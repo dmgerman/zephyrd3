@@ -12,6 +12,8 @@ DECL|buf|member|const unsigned char *buf;
 DECL|data|variable|data
 DECL|expecting_reply|member|bool expecting_reply;
 DECL|foobar|variable|foobar
+DECL|get_address|function|static int get_address(int ifindex, int family, void *address)
+DECL|get_ifindex|function|static int get_ifindex(const char *name)
 DECL|len|member|int len;
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|int main(int argc, char**argv)
