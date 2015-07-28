@@ -14,6 +14,7 @@ DECL|BT_SMP_CMD_PAIRING_RANDOM|macro|BT_SMP_CMD_PAIRING_RANDOM
 DECL|BT_SMP_CMD_PAIRING_REQ|macro|BT_SMP_CMD_PAIRING_REQ
 DECL|BT_SMP_CMD_PAIRING_RSP|macro|BT_SMP_CMD_PAIRING_RSP
 DECL|BT_SMP_CMD_SECURITY_REQUEST|macro|BT_SMP_CMD_SECURITY_REQUEST
+DECL|BT_SMP_CMD_SIGNING_INFO|macro|BT_SMP_CMD_SIGNING_INFO
 DECL|BT_SMP_DIST_ENC_KEY|macro|BT_SMP_DIST_ENC_KEY
 DECL|BT_SMP_DIST_ID_KEY|macro|BT_SMP_DIST_ID_KEY
 DECL|BT_SMP_DIST_LINK_KEY|macro|BT_SMP_DIST_LINK_KEY
@@ -52,6 +53,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_req|member|uint8_t auth_req;
 DECL|auth_req|member|uint8_t auth_req;
@@ -65,7 +67,9 @@ DECL|bt_smp_pairing_fail|struct|struct bt_smp_pairing_fail {
 DECL|bt_smp_pairing_random|struct|struct bt_smp_pairing_random {
 DECL|bt_smp_pairing|struct|struct bt_smp_pairing {
 DECL|bt_smp_security_request|struct|struct bt_smp_security_request {
+DECL|bt_smp_signing_info|struct|struct bt_smp_signing_info {
 DECL|code|member|uint8_t code;
+DECL|csrk|member|uint8_t csrk[16];
 DECL|ediv|member|uint16_t ediv;
 DECL|init_key_dist|member|uint8_t init_key_dist;
 DECL|io_capability|member|uint8_t io_capability;
