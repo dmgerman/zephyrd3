@@ -46,7 +46,7 @@ DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct bt_buf
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_cmd|function|static int gatt_write_cmd(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length)
-DECL|handle|member|uint8_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|len|member|size_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
