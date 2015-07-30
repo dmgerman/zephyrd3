@@ -51,8 +51,10 @@ DECL|read_long_vnd|function|static int read_long_vnd(struct bt_conn *conn, const
 DECL|read_manuf|function|static int read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_model|function|static int read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_name|function|static int read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_signed|function|static int read_signed(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_vnd|function|static int read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
+DECL|signed_value|variable|signed_value
 DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_hrm|variable|simulate_hrm
 DECL|vnd_auth_chrc|variable|vnd_auth_chrc
@@ -64,8 +66,11 @@ DECL|vnd_long_chrc|variable|vnd_long_chrc
 DECL|vnd_long_uuid|variable|vnd_long_uuid
 DECL|vnd_long_value|struct|static struct vnd_long_value {
 DECL|vnd_long_value|variable|vnd_long_value
+DECL|vnd_signed_chrc|variable|vnd_signed_chrc
+DECL|vnd_signed_uuid|variable|vnd_signed_uuid
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
 DECL|write_ct|function|static int write_ct(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
 DECL|write_long_vnd|function|static int write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
+DECL|write_signed|function|static int write_signed(struct bt_conn *conn, const struct bt_gatt_attr *attr,const void *buf, uint16_t len, uint16_t offset)
 DECL|write_vnd|function|static int write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
