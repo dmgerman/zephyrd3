@@ -25,6 +25,7 @@ DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct b
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp_send_security_req|function|int bt_smp_send_security_req(struct bt_conn *conn)
 DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, struct bt_buf *buf)
+DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1, uint8_t *k2)
