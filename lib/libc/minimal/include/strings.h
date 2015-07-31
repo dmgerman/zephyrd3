@@ -1,0 +1,1 @@
+DECL|__INC_strings_h__|macro|__INC_strings_h__
