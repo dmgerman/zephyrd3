@@ -11,6 +11,7 @@ DECL|__unused|member|int __unused;
 DECL|__unused|member|int __unused;
 DECL|buf|member|uint8_t buf[NET_BUF_MAX_DATA];
 DECL|context|member|struct net_context *context;
+DECL|datalen|member|uint16_t datalen;
 DECL|data|member|uint8_t *data;
 DECL|dest|member|linkaddr_t dest;
 DECL|in_use|member|bool in_use;
@@ -25,6 +26,8 @@ DECL|nd6_opt_llao|member|uint8_t *nd6_opt_llao;
 DECL|nd6_opt_offset|member|uint8_t nd6_opt_offset;
 DECL|nd6_opt_prefix_info|member|void *nd6_opt_prefix_info;
 DECL|nd6_prefix|member|void *nd6_prefix;
+DECL|net_buf_datalen|macro|net_buf_datalen
+DECL|net_buf_data|macro|net_buf_data
 DECL|net_buf_get_reserve|macro|net_buf_get_reserve
 DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_put|macro|net_buf_put
