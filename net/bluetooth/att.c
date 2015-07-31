@@ -43,6 +43,7 @@ DECL|bt_att_cancel|function|void bt_att_cancel(struct bt_conn *conn)
 DECL|bt_att_connected|function|static void bt_att_connected(struct bt_conn *conn)
 DECL|bt_att_create_pdu|function|struct bt_buf *bt_att_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_att_disconnected|function|static void bt_att_disconnected(struct bt_conn *conn)
+DECL|bt_att_get_mtu|function|uint16_t bt_att_get_mtu(struct bt_conn *conn)
 DECL|bt_att_init|function|void bt_att_init(void)
 DECL|bt_att_pool|variable|bt_att_pool
 DECL|bt_att_recv|function|static void bt_att_recv(struct bt_conn *conn, struct bt_buf *buf)
