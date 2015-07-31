@@ -13,7 +13,7 @@ DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|net_dev|struct|static struct net_dev {
 DECL|net_init|function|int net_init(void)
-DECL|net_receive|function|struct net_buf *net_receive(struct net_context *context)
+DECL|net_receive|function|struct net_buf *net_receive(struct net_context *context, int32_t timeout)
 DECL|net_recv|function|int net_recv(struct net_buf *buf)
 DECL|net_register_driver|function|int net_register_driver(struct net_driver *drv)
 DECL|net_reply|function|int net_reply(struct net_context *context, struct net_buf *buf)
