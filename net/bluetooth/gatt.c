@@ -4,6 +4,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|att_prepare_write_rsp|function|static void att_prepare_write_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_read_rsp|function|static void att_read_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_read_type_rsp|function|static void att_read_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_write_ccc_rsp|function|static void att_write_ccc_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
@@ -31,16 +32,20 @@ DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, uint16_t handl
 DECL|bt_gatt_register|function|void bt_gatt_register(const struct bt_gatt_attr *attrs, size_t count)
 DECL|bt_gatt_subscribe|function|int bt_gatt_subscribe(struct bt_conn *conn, uint16_t handle, struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn, uint16_t handle,struct bt_gatt_subscribe_params *params)
-DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length, bt_gatt_rsp_func_t func)
+DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, uint16_t handle, uint16_t offset, const void *data, uint16_t length, bt_gatt_rsp_func_t func)
 DECL|connected_cb|function|static uint8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|data|member|const void *data;
 DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|disconnected_cb|function|static uint8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|uint16_t end_handle;
+DECL|func|member|bt_gatt_rsp_func_t func;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
+DECL|gatt_exec_write|function|static int gatt_exec_write(struct bt_conn *conn, bt_gatt_rsp_func_t func)
 DECL|gatt_incl|struct|struct gatt_incl {
 DECL|gatt_mtu_rsp|function|static void gatt_mtu_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|gatt_prepare_write|function|static int gatt_prepare_write(struct bt_conn *conn, uint16_t handle, uint16_t offset, const void *data, uint16_t length, bt_gatt_rsp_func_t func)
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
 DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct bt_buf *buf, bt_att_func_t func, void *user_data, bt_att_destroy_t destroy)
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
@@ -48,9 +53,13 @@ DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(stru
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_cmd|function|static int gatt_write_cmd(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length)
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|length|member|uint16_t length;
 DECL|len|member|size_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
+DECL|offset|member|uint16_t offset;
+DECL|prepare_write_data|struct|struct prepare_write_data {
 DECL|properties|member|uint8_t properties;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|subscriptions|variable|subscriptions
