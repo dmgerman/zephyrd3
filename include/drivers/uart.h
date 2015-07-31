@@ -1,3 +1,4 @@
+DECL|UART_OPTION_AFCE|macro|UART_OPTION_AFCE
 DECL|__INCuarth|macro|__INCuarth
 DECL|base|member|uint8_t *base;
 DECL|baud_rate|member|int baud_rate; /* Baud rate */
