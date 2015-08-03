@@ -1,5 +1,4 @@
 DECL|HMAC_UPDATE_SEED|macro|HMAC_UPDATE_SEED
-DECL|assert|macro|assert
 DECL|cipher_context_mutex|variable|cipher_context_mutex
 DECL|cipher_context|variable|cipher_context
 DECL|crypto_init|function|void crypto_init()

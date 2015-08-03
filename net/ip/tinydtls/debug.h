@@ -19,7 +19,7 @@ DECL|dtls_debug_dump|macro|dtls_debug_dump
 DECL|dtls_debug_hexdump|macro|dtls_debug_hexdump
 DECL|dtls_debug|macro|dtls_debug
 DECL|dtls_dsrv_hexdump_log|function|dtls_dsrv_hexdump_log(log_t level, const char *name, const unsigned char *buf, size_t length, int extend)
-DECL|dtls_dsrv_log_addr|function|dtls_dsrv_log_addr(log_t level, const char *name, const struct __session_t *addr)
+DECL|dtls_dsrv_log_addr|function|dtls_dsrv_log_addr(log_t level, const char *name, const session_t *addr)
 DECL|dtls_emerg|macro|dtls_emerg
 DECL|dtls_get_log_level|function|static inline log_t dtls_get_log_level()
 DECL|dtls_info|macro|dtls_info

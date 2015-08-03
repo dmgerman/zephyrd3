@@ -1,4 +1,3 @@
-DECL|assert|macro|assert
 DECL|dtls_hmac_context_free|function|dtls_hmac_context_free(dtls_hmac_context_t *ctx) {
 DECL|dtls_hmac_context_free|function|dtls_hmac_context_free(dtls_hmac_context_t *ctx) {
 DECL|dtls_hmac_context_new|function|dtls_hmac_context_new() {

@@ -6,6 +6,7 @@ DECL|Ch|macro|Ch
 DECL|K256|variable|K256
 DECL|K512|variable|K512
 DECL|LITTLE_ENDIAN|macro|LITTLE_ENDIAN
+DECL|MAY_ALIAS|typedef|typedef uint64_t sha2_word64 MAY_ALIAS; /* Exactly 8 bytes */
 DECL|MEMCPY_BCOPY|macro|MEMCPY_BCOPY
 DECL|MEMCPY_BCOPY|macro|MEMCPY_BCOPY
 DECL|MEMSET_BZERO|macro|MEMSET_BZERO
@@ -58,7 +59,6 @@ DECL|sha2_hex_digits|variable|sha2_hex_digits
 DECL|sha2_word32|typedef|typedef u_int32_t sha2_word32; /* Exactly 4 bytes */
 DECL|sha2_word32|typedef|typedef uint32_t sha2_word32; /* Exactly 4 bytes */
 DECL|sha2_word64|typedef|typedef u_int64_t sha2_word64; /* Exactly 8 bytes */
-DECL|sha2_word64|typedef|typedef uint64_t sha2_word64; /* Exactly 8 bytes */
 DECL|sha384_initial_hash_value|variable|sha384_initial_hash_value
 DECL|sha512_initial_hash_value|variable|sha512_initial_hash_value
 DECL|sigma0_256|macro|sigma0_256
