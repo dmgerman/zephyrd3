@@ -1,0 +1,1 @@
+DECL|main|function|main() {

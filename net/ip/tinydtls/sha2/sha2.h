@@ -1,0 +1,32 @@
+DECL|SHA256_BLOCK_LENGTH|macro|SHA256_BLOCK_LENGTH
+DECL|SHA256_CTX|typedef|} SHA256_CTX;
+DECL|SHA256_CTX|typedef|} SHA256_CTX;
+DECL|SHA256_DIGEST_LENGTH|macro|SHA256_DIGEST_LENGTH
+DECL|SHA256_DIGEST_STRING_LENGTH|macro|SHA256_DIGEST_STRING_LENGTH
+DECL|SHA2_USE_INTTYPES_H|macro|SHA2_USE_INTTYPES_H
+DECL|SHA384_BLOCK_LENGTH|macro|SHA384_BLOCK_LENGTH
+DECL|SHA384_CTX|typedef|typedef SHA512_CTX SHA384_CTX;
+DECL|SHA384_DIGEST_LENGTH|macro|SHA384_DIGEST_LENGTH
+DECL|SHA384_DIGEST_STRING_LENGTH|macro|SHA384_DIGEST_STRING_LENGTH
+DECL|SHA512_BLOCK_LENGTH|macro|SHA512_BLOCK_LENGTH
+DECL|SHA512_CTX|typedef|} SHA512_CTX;
+DECL|SHA512_CTX|typedef|} SHA512_CTX;
+DECL|SHA512_DIGEST_LENGTH|macro|SHA512_DIGEST_LENGTH
+DECL|SHA512_DIGEST_STRING_LENGTH|macro|SHA512_DIGEST_STRING_LENGTH
+DECL|_SHA256_CTX|struct|typedef struct _SHA256_CTX {
+DECL|_SHA256_CTX|struct|typedef struct _SHA256_CTX {
+DECL|_SHA512_CTX|struct|typedef struct _SHA512_CTX {
+DECL|_SHA512_CTX|struct|typedef struct _SHA512_CTX {
+DECL|__SHA2_H__|macro|__SHA2_H__
+DECL|bitcount|member|u_int64_t bitcount;
+DECL|bitcount|member|u_int64_t bitcount[2];
+DECL|bitcount|member|uint64_t bitcount;
+DECL|bitcount|member|uint64_t bitcount[2];
+DECL|buffer|member|u_int8_t buffer[SHA256_BLOCK_LENGTH];
+DECL|buffer|member|u_int8_t buffer[SHA512_BLOCK_LENGTH];
+DECL|buffer|member|uint8_t buffer[SHA256_BLOCK_LENGTH];
+DECL|buffer|member|uint8_t buffer[SHA512_BLOCK_LENGTH];
+DECL|state|member|u_int32_t state[8];
+DECL|state|member|u_int64_t state[8];
+DECL|state|member|uint32_t state[8];
+DECL|state|member|uint64_t state[8];
