@@ -9,7 +9,6 @@ DECL|PURE_LATE|macro|PURE_LATE
 DECL|PURE|macro|PURE
 DECL|_INIT_H_|macro|_INIT_H_
 DECL|__define_initconfig|macro|__define_initconfig
-DECL|__used|macro|__used
 DECL|app_early_init|macro|app_early_init
 DECL|app_late_init|macro|app_late_init
 DECL|micro_early_init|macro|micro_early_init
