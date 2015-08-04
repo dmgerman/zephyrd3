@@ -5,9 +5,11 @@ DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
 DECL|Back|member|struct k_proc *Back;
 DECL|Base|member|char *Base;
+DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Confl|member|int Confl;
+DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
@@ -18,8 +20,11 @@ DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
 DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
+DECL|Esize|member|int Esize;
 DECL|Forw|member|struct k_proc *Forw;
+DECL|Free|member|char *Free;
 DECL|Group|member|uint32_t Group;
+DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
 DECL|Ident|member|ktask_t Ident;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
@@ -27,7 +32,9 @@ DECL|Level|member|int Level;
 DECL|Level|member|int Level;
 DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
+DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
+DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
 DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
@@ -46,6 +53,7 @@ DECL|State|member|uint32_t State;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
+DECL|Waiters|member|struct k_args *Waiters;
 DECL|WriteMarkers|member|struct _k_pipe_marker_list WriteMarkers;
 DECL|Writers|member|struct k_args *Writers;
 DECL|Writers|member|struct k_args *Writers;
@@ -56,6 +64,7 @@ DECL|_BASE_API_H|macro|_BASE_API_H
 DECL|_K_PIPE_BUFF_STATE|typedef|} _K_PIPE_BUFF_STATE;
 DECL|_k_fifo_struct|struct|struct _k_fifo_struct {
 DECL|_k_mbox_struct|struct|struct _k_mbox_struct {
+DECL|_k_mem_map_struct|struct|struct _k_mem_map_struct {
 DECL|_k_mutex_struct|struct|struct _k_mutex_struct {
 DECL|_k_pipe_desc|struct|struct _k_pipe_desc {
 DECL|_k_pipe_marker_list|struct|struct _k_pipe_marker_list {

@@ -4,25 +4,20 @@ DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
 DECL|Back|member|struct k_timer *Back;
-DECL|Base|member|char *Base;
 DECL|Comm|member|int Comm;
 DECL|Comm|member|void (*Comm)(struct k_args *);
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
-DECL|Count|member|int Count;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
-DECL|Esize|member|int Esize;
 DECL|Extra|member|} Extra;
 DECL|Forw|member|struct k_args *Forw;
 DECL|Forw|member|struct k_timer *Forw;
-DECL|Free|member|char *Free;
 DECL|Head|member|struct k_args **Head;
 DECL|Head|member|struct k_proc *Head;
-DECL|Hmark|member|int Hmark;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
@@ -35,8 +30,6 @@ DECL|MVDACT_SNDACK|macro|MVDACT_SNDACK
 DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
-DECL|Nelms|member|int Nelms;
-DECL|Nused|member|int Nused;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|Params|member|int Params;
 DECL|Prio|member|kpriority_t Prio;
@@ -54,7 +47,6 @@ DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
 DECL|Tail|member|struct k_proc *Tail;
 DECL|Time|member|} Time;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|XFER_B2R|enumerator|XFER_B2R,
 DECL|XFER_BUSY|enumerator|XFER_BUSY = 0x0002,
@@ -195,7 +187,6 @@ DECL|k_tqhd|struct|struct k_tqhd {
 DECL|l1|member|struct _l1arg l1;
 DECL|list|member|ksemg_t list;
 DECL|m1|member|struct _m1arg m1;
-DECL|map_struct|struct|struct map_struct {
 DECL|maxblock_size|member|int maxblock_size;
 DECL|mem_blocks|member|char *mem_blocks;
 DECL|mem_status|member|uint32_t mem_status;
