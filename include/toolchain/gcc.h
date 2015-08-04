@@ -36,6 +36,7 @@ DECL|_NODATA_SECTION|macro|_NODATA_SECTION
 DECL|__aligned|macro|__aligned
 DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
+DECL|__printf_like|macro|__printf_like
 DECL|likely|macro|likely
 DECL|subsection|variable|subsection
 DECL|unlikely|macro|unlikely
