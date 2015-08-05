@@ -1,8 +1,12 @@
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad|variable|ad
 DECL|attrs|variable|attrs
+DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
+DECL|auth_cb|variable|auth_cb
+DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static void cmd_advertise(int argc, char *argv[])
+DECL|cmd_authentication|function|static void cmd_authentication(int argc, char *argv[])
 DECL|cmd_connect_le|function|static void cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static void cmd_disconnect(int argc, char *argv[])
 DECL|cmd_gatt_discover|function|static void cmd_gatt_discover(int argc, char *argv[])
