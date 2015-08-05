@@ -7,7 +7,6 @@ DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_TIMEOUT_FIBERS|macro|NUM_TIMEOUT_FIBERS
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
-DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
 DECL|_trigger_isrHandler|variable|_trigger_isrHandler
 DECL|command|member|int command; /* command to process */
