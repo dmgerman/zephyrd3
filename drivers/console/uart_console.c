@@ -1,4 +1,3 @@
-DECL|UART|macro|UART
 DECL|__printk_hook_install|macro|__printk_hook_install
 DECL|__stdout_hook_install|macro|__stdout_hook_install
 DECL|avail_queue|variable|avail_queue
@@ -7,7 +6,7 @@ DECL|console_input_init|function|static void console_input_init(void)
 DECL|console_input_init|macro|console_input_init
 DECL|lines_queue|variable|lines_queue
 DECL|pos|variable|pos
-DECL|read_uart|function|static int read_uart(int uart, uint8_t *buf, unsigned int size)
+DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, unsigned int size)
 DECL|uart_console_init|function|void uart_console_init(void)
 DECL|uart_console_isr|function|void uart_console_isr(void *unused)
 DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines)

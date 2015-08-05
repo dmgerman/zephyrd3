@@ -1,0 +1,4 @@
+DECL|uart_console_dev|variable|uart_console_dev
+DECL|uart_dev_cfg_info|variable|uart_dev_cfg_info
+DECL|uart_dev_cfg|variable|uart_dev_cfg
+DECL|uart_devs|variable|uart_devs

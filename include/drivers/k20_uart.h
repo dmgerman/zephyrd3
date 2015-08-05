@@ -101,6 +101,7 @@ DECL|s1|member|S1_t s1; /* 0x004 Status 1 (C0) RO*/
 DECL|s2|member|S2_t s2; /* 0x005 Status 2 */
 DECL|sbr|member|uint8_t sbr : 5 __packed; /* Hi Baud Rate Bits */
 DECL|sendBreak|member|uint8_t sendBreak : 1 __packed;
+DECL|seq_port_num|member|uint8_t seq_port_num; /**< Sequential port number */
 DECL|sfifo|member|uint8_t sfifo; /* 0x012 FIFO Status (C0)*/
 DECL|tcfifo|member|uint8_t tcfifo; /* 0x014 FIFO Tx Count */
 DECL|twfifo|member|uint8_t twfifo; /* 0x013 FIFO Tx Watermark */
@@ -119,6 +120,7 @@ DECL|txInt_DmaTx_en|member|uint8_t txInt_DmaTx_en : 1 __packed;
 DECL|u_7816|member|uint8_t u_7816[0x20 - 0x17]; /* 0x017-0x1F UART ISO-7816 standard */
 DECL|u_cea709_1|member|uint8_t u_cea709_1[0x32 - 0x20]; /* 0x020-0x31 UART CEA8709.1 standard
 DECL|uartStopWait|member|uint8_t uartStopWait : 1 __packed;
+DECL|uart_k20_dev_data_t|struct|struct uart_k20_dev_data_t {
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
