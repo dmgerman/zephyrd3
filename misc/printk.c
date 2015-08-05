@@ -5,4 +5,3 @@ DECL|_printk_dec_ulong|function|static void _printk_dec_ulong(const unsigned lon
 DECL|_printk_hex_ulong|function|static void _printk_hex_ulong(const unsigned long num)
 DECL|_vprintk|function|static inline void _vprintk(const char *fmt, va_list ap)
 DECL|printk|function|void printk(const char *fmt, ...)
-DECL|printk|function|void printk(const char *fmt, ...)
