@@ -7,7 +7,10 @@ DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out,
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|array_shift|function|static void array_shift(const uint8_t *in, uint8_t *out)
+DECL|auth_cb|variable|auth_cb
 DECL|a|member|uint64_t a;
+DECL|bt_auth_cancel|function|void bt_auth_cancel(struct bt_conn *conn)
+DECL|bt_auth_cb_register|function|void bt_auth_cb_register(const struct bt_auth_cb *cb)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
@@ -15,6 +18,7 @@ DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_conn
 DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_conn *conn)
 DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_conn *conn)
 DECL|bt_smp_init|function|int bt_smp_init(void)
+DECL|bt_smp_io_capa|variable|bt_smp_io_capa
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct bt_buf *buf)
@@ -27,6 +31,7 @@ DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1
 DECL|conn|member|struct bt_conn *conn;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
+DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
@@ -55,6 +60,7 @@ DECL|smp_pairing_failed|function|static uint8_t smp_pairing_failed(struct bt_con
 DECL|smp_pairing_random|function|static uint8_t smp_pairing_random(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_conn *conn, struct bt_buf *buf)
+DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_conn *conn, uint8_t remote_io)
 DECL|smp_reset|function|static void smp_reset(struct bt_conn *conn)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_conn *conn, struct bt_buf *buf)
