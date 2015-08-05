@@ -10,7 +10,7 @@ DECL|array_shift|function|static void array_shift(const uint8_t *in, uint8_t *ou
 DECL|auth_cb|variable|auth_cb
 DECL|a|member|uint64_t a;
 DECL|bt_auth_cancel|function|void bt_auth_cancel(struct bt_conn *conn)
-DECL|bt_auth_cb_register|function|void bt_auth_cb_register(const struct bt_auth_cb *cb)
+DECL|bt_auth_cb_register|function|int bt_auth_cb_register(const struct bt_auth_cb *cb)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_create_pdu|function|struct bt_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
@@ -32,6 +32,7 @@ DECL|conn|member|struct bt_conn *conn;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
+DECL|get_io_capa|function|static uint8_t get_io_capa(const struct bt_auth_cb *cb)
 DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
