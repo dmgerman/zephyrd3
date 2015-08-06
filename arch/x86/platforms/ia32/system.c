@@ -2,6 +2,8 @@ DECL|bluetooth_init|function|static void bluetooth_init(void)
 DECL|bluetooth_init|macro|bluetooth_init
 DECL|console_init|function|static void console_init(void)
 DECL|console_init|macro|console_init
+DECL|hpet_irq_set|function|static inline void hpet_irq_set(void)
+DECL|hpet_irq_set|macro|hpet_irq_set
 DECL|ia32_init|function|static int ia32_init(struct device *arg)
 DECL|ioapic_init|function|static inline void ioapic_init(void)
 DECL|ioapic_init|macro|ioapic_init
