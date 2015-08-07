@@ -1,0 +1,18 @@
+DECL|BEACON_PAYLOAD_BUFFER_SIZE|macro|BEACON_PAYLOAD_BUFFER_SIZE
+DECL|CALLBACK_ACTION_CHANNEL_DONE|enumerator|CALLBACK_ACTION_CHANNEL_DONE,
+DECL|CALLBACK_ACTION_RX|enumerator|CALLBACK_ACTION_RX,
+DECL|CALLBACK_ACTION_SCAN_END|enumerator|CALLBACK_ACTION_SCAN_END,
+DECL|CALLBACK_STATUS_CONTINUE|macro|CALLBACK_STATUS_CONTINUE
+DECL|CALLBACK_STATUS_FINISHED|macro|CALLBACK_STATUS_FINISHED
+DECL|CALLBACK_STATUS_NEED_MORE_TIME|macro|CALLBACK_STATUS_NEED_MORE_TIME
+DECL|HANDLER_802154_CONF_STATS|macro|HANDLER_802154_CONF_STATS
+DECL|HANDLER_802154_H_|macro|HANDLER_802154_H_
+DECL|HANDLER_802154_STAT|macro|HANDLER_802154_STAT
+DECL|HANDLER_802154_STAT|macro|HANDLER_802154_STAT
+DECL|beacons_received|member|uint16_t beacons_received;
+DECL|beacons_reqs_sent|member|uint16_t beacons_reqs_sent;
+DECL|beacons_sent|member|uint16_t beacons_sent;
+DECL|callback_action|typedef|} callback_action;
+DECL|handler_802154_stats_t|typedef|} handler_802154_stats_t;
+DECL|handler_802154_stats|struct|typedef struct handler_802154_stats {
+DECL|scan_callback_t|typedef|typedef int (* scan_callback_t)(uint8_t channel, frame802154_t *frame, callback_action cba);
