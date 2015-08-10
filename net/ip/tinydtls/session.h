@@ -1,8 +1,9 @@
 DECL|_DTLS_SESSION_H_|macro|_DTLS_SESSION_H_
-DECL|addr|member|uip_ipaddr_t addr;
+DECL|addr|member|} addr;
 DECL|addr|member|} addr;
 DECL|ifindex|member|int ifindex;
 DECL|ifindex|member|uint8_t ifindex;
+DECL|ipaddr|member|uip_ipaddr_t ipaddr;
 DECL|port|member|unsigned short port;
 DECL|sa|member|struct sockaddr sa;
 DECL|session_t|typedef|} session_t;
