@@ -1,6 +1,7 @@
 DECL|__INCuarth|macro|__INCuarth
 DECL|base|member|uint8_t *base;
 DECL|baud_rate|member|int baud_rate; /* Baud rate */
+DECL|config_func|member|int (*config_func)(struct device *dev);
 DECL|int_pri|member|uint8_t int_pri; /* Interrupt priority level */
 DECL|int_pri|member|uint8_t int_pri; /**< interrupt priority */
 DECL|irq|member|uint8_t irq; /**< interrupt request level */
