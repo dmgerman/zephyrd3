@@ -1,5 +1,5 @@
 DECL|_ARCH_ARC_V2_FFS_H_|macro|_ARCH_ARC_V2_FFS_H_
-DECL|nanoFfsLsb_inline|function|static ALWAYS_INLINE unsigned int nanoFfsLsb_inline(unsigned int op)
-DECL|nanoFfsLsb|variable|nanoFfsLsb
-DECL|nanoFfsMsb_inline|function|static ALWAYS_INLINE unsigned int nanoFfsMsb_inline(unsigned int op)
-DECL|nanoFfsMsb|variable|nanoFfsMsb
+DECL|find_first_set_inline|function|static ALWAYS_INLINE unsigned int find_first_set_inline(unsigned int op)
+DECL|find_first_set|variable|find_first_set
+DECL|find_last_set_inline|function|static ALWAYS_INLINE unsigned int find_last_set_inline(unsigned int op)
+DECL|find_last_set|variable|find_last_set
