@@ -2,10 +2,6 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_CONN_PARAM_ACCEPTED|macro|BT_L2CAP_CONN_PARAM_ACCEPTED
 DECL|BT_L2CAP_CONN_PARAM_REJECTED|macro|BT_L2CAP_CONN_PARAM_REJECTED
-DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
-DECL|LE_CONN_MAX_INTERVAL|macro|LE_CONN_MAX_INTERVAL
-DECL|LE_CONN_MIN_INTERVAL|macro|LE_CONN_MIN_INTERVAL
-DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
 DECL|bt_l2cap_chan_register|function|void bt_l2cap_chan_register(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
 DECL|bt_l2cap_create_pdu|function|struct bt_buf *bt_l2cap_create_pdu(struct bt_conn *conn)

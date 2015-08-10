@@ -5,6 +5,10 @@ DECL|BT_STACK_DEBUG_EXTRA|macro|BT_STACK_DEBUG_EXTRA
 DECL|BT_STACK_DEBUG_EXTRA|macro|BT_STACK_DEBUG_EXTRA
 DECL|BT_STACK_NOINIT|macro|BT_STACK_NOINIT
 DECL|BT_STACK|macro|BT_STACK
+DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
+DECL|LE_CONN_MAX_INTERVAL|macro|LE_CONN_MAX_INTERVAL
+DECL|LE_CONN_MIN_INTERVAL|macro|LE_CONN_MIN_INTERVAL
+DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_addr_cmp|function|static inline int bt_addr_cmp(const bt_addr_t *a, const bt_addr_t *b)
 DECL|bt_addr_copy|function|static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
