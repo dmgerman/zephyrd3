@@ -34,6 +34,7 @@ DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRES
 DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_CONN_PARAM_REQ|macro|BT_HCI_EVT_LE_CONN_PARAM_REQ
+DECL|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE|macro|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE
 DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
@@ -134,6 +135,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -174,6 +176,7 @@ DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_ke
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_conn_param_req|struct|struct bt_hci_evt_le_conn_param_req {
+DECL|bt_hci_evt_le_conn_update_complete|struct|struct bt_hci_evt_le_conn_update_complete {
 DECL|bt_hci_evt_le_ltk_request|struct|struct bt_hci_evt_le_ltk_request {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
@@ -232,6 +235,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
 DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
@@ -244,7 +248,9 @@ DECL|interval_min|member|uint16_t interval_min;
 DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
+DECL|interval|member|uint16_t interval;
 DECL|key|member|uint8_t key[16];
+DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
@@ -311,9 +317,11 @@ DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
+DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
 DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supervision_timeout|member|uint16_t supervision_timeout;
+DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
