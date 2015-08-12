@@ -1,7 +1,7 @@
 DECL|_ASM_INLINE_GCC_PUBLIC_GCC_H|macro|_ASM_INLINE_GCC_PUBLIC_GCC_H
 DECL|_NanoTscRead|function|static inline uint64_t _NanoTscRead(void)
-DECL|_do_irq_lock_inline|function|unsigned int _do_irq_lock_inline(void)
-DECL|_do_irq_unlock_inline|function|void _do_irq_unlock_inline(void)
+DECL|_do_irq_lock|function|static inline __attribute__((always_inline)) unsigned int _do_irq_lock(void)
+DECL|_do_irq_unlock|function|static inline __attribute__((always_inline)) void _do_irq_unlock(void)
 DECL|_do_read_cpu_timestamp32|function|uint32_t _do_read_cpu_timestamp32(void)
 DECL|find_first_set_inline|function|unsigned int find_first_set_inline (unsigned int op)
 DECL|find_last_set_inline|function|unsigned int find_last_set_inline (unsigned int op)

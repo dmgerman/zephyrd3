@@ -48,11 +48,9 @@ DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
-DECL|irq_lock_inline|function|unsigned int irq_lock_inline(void)
-DECL|irq_lock_inline|macro|irq_lock_inline
+DECL|irq_lock|function|static inline __attribute__((always_inline)) unsigned int irq_lock(void)
 DECL|irq_lock|function|static inline unsigned int irq_lock(void) {return 1;}
-DECL|irq_unlock_inline|function|void irq_unlock_inline(unsigned int key)
-DECL|irq_unlock_inline|macro|irq_unlock_inline
+DECL|irq_unlock|function|static inline __attribute__((always_inline)) void irq_unlock(unsigned int key)
 DECL|irq_unlock|function|static inline void irq_unlock(unsigned int key) {}
 DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
