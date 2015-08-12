@@ -28,9 +28,7 @@ DECL|initNanoObjects|function|int initNanoObjects(void)
 DECL|irq_disableWrapper|function|int irq_disableWrapper(int irq)
 DECL|irq_enableWrapper|function|void irq_enableWrapper(int irq)
 DECL|irq_lockWrapper|function|int irq_lockWrapper(int unused)
-DECL|irq_lock_inlineWrapper|function|int irq_lock_inlineWrapper(int unused)
 DECL|irq_unlockWrapper|function|void irq_unlockWrapper(int imask)
-DECL|irq_unlock_inlineWrapper|function|void irq_unlock_inlineWrapper(int imask)
 DECL|isrInfo|variable|isrInfo
 DECL|isr_handler|function|void isr_handler(void *data)
 DECL|link_in_fifo|member|void *link_in_fifo;
