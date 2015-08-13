@@ -4,5 +4,7 @@ DECL|NSIM_UART_DATA|macro|NSIM_UART_DATA
 DECL|NSIM_UART_STATUS|macro|NSIM_UART_STATUS
 DECL|STATUS_REG|macro|STATUS_REG
 DECL|TXEMPTY|macro|TXEMPTY
-DECL|uart_init|function|void uart_init(struct device *dev, const struct uart_init_info * const init_info)
-DECL|uart_poll_out|function|unsigned char uart_poll_out(struct device *dev, unsigned char c)
+DECL|nsim_uart_driver_api|variable|nsim_uart_driver_api
+DECL|nsim_uart_driver_api|variable|nsim_uart_driver_api
+DECL|nsim_uart_poll_out|function|unsigned char nsim_uart_poll_out(struct device *dev, unsigned char c)
+DECL|nsim_uart_port_init|function|void nsim_uart_port_init(struct device *dev, const struct uart_init_info * const init_info)
