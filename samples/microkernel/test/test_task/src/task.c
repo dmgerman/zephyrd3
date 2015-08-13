@@ -15,10 +15,10 @@ DECL|helperTaskSetPrioTest|function|void helperTaskSetPrioTest(void)
 DECL|helperTaskSleepTest|function|void helperTaskSleepTest(void)
 DECL|helperTaskSuspendTest|function|void helperTaskSuspendTest(void)
 DECL|helperTaskYieldTest|function|void helperTaskYieldTest(void)
+DECL|is_main_task_ready|variable|is_main_task_ready
 DECL|isrAPIsTest|function|int isrAPIsTest(int taskId, int taskPrio)
 DECL|isrInfo|variable|isrInfo
 DECL|isr_task_command_handler|function|void isr_task_command_handler(void *data)
-DECL|mainTaskNotReady|variable|mainTaskNotReady
 DECL|microObjectsInit|function|void microObjectsInit(void)
 DECL|taskMacrosTest|function|int taskMacrosTest(int taskId, int taskPrio)
 DECL|taskSetPrioTest|function|int taskSetPrioTest(void)
