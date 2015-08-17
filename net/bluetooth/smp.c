@@ -60,6 +60,7 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
+DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
