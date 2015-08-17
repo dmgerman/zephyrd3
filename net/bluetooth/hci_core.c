@@ -59,3 +59,4 @@ DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct
 DECL|rx_prio_fiber_id|variable|rx_prio_fiber_id
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
+DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
