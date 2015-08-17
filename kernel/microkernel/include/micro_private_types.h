@@ -223,7 +223,6 @@ DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
 DECL|poolid|member|kmemory_pool_t poolid;
 DECL|prio|member|kpriority_t prio;
-DECL|proc|member|struct k_task *proc;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
@@ -250,6 +249,7 @@ DECL|task_id|member|ktask_t task_id;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
+DECL|task|member|struct k_task *task;
 DECL|ticks|member|int32_t ticks;
 DECL|time1|member|int64_t time1;
 DECL|time2|member|int64_t time2;
