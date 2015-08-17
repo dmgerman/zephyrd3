@@ -15,4 +15,5 @@ DECL|cancel|member|void (*cancel)(struct bt_conn *conn);
 DECL|data|member|uint8_t data[29];
 DECL|len|member|uint8_t len;
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
+DECL|passkey_entry|member|void (*passkey_entry)(struct bt_conn *conn);
 DECL|type|member|uint8_t type;
