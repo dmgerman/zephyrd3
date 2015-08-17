@@ -7,6 +7,8 @@ DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
 DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
+DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
@@ -36,6 +38,7 @@ DECL|b|member|uint64_t b;
 DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1, uint8_t *k2)
 DECL|conn|member|struct bt_conn *conn;
 DECL|expect_len|member|uint8_t expect_len;
+DECL|flags|member|atomic_t flags;
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
 DECL|gen_method|variable|gen_method
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
