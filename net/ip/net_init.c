@@ -2,8 +2,6 @@ DECL|DEBUG|macro|DEBUG
 DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
 DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
-DECL|UIP_IP_BUF|macro|UIP_IP_BUF
-DECL|UIP_UDP_BUF|macro|UIP_UDP_BUF
 DECL|analyze_stacks|function|static void analyze_stacks(struct net_buf *buf, struct net_buf **ref)
 DECL|analyze_stacks|macro|analyze_stacks
 DECL|calculate_unused|function|static unsigned calculate_unused(const char *stack, unsigned size, int stack_growth)
