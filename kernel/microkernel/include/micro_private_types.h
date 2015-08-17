@@ -17,7 +17,7 @@ DECL|Extra|member|} Extra;
 DECL|Forw|member|struct k_args *Forw;
 DECL|Forw|member|struct k_timer *Forw;
 DECL|Head|member|struct k_args **Head;
-DECL|Head|member|struct k_proc *Head;
+DECL|Head|member|struct k_task *Head;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
@@ -45,7 +45,7 @@ DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
-DECL|Tail|member|struct k_proc *Tail;
+DECL|Tail|member|struct k_task *Tail;
 DECL|Time|member|} Time;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|XFER_B2R|enumerator|XFER_B2R,
@@ -223,7 +223,7 @@ DECL|pool_block|struct|struct pool_block {
 DECL|pool_struct|struct|struct pool_struct {
 DECL|poolid|member|kmemory_pool_t poolid;
 DECL|prio|member|kpriority_t prio;
-DECL|proc|member|struct k_proc *proc;
+DECL|proc|member|struct k_task *proc;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;

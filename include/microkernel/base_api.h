@@ -3,7 +3,7 @@ DECL|Args|member|struct k_args *Args;
 DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
 DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
-DECL|Back|member|struct k_proc *Back;
+DECL|Back|member|struct k_task *Back;
 DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
@@ -21,7 +21,7 @@ DECL|Endp|member|char *Endp;
 DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
 DECL|Esize|member|int Esize;
-DECL|Forw|member|struct k_proc *Forw;
+DECL|Forw|member|struct k_task *Forw;
 DECL|Free|member|char *Free;
 DECL|Group|member|uint32_t Group;
 DECL|Hmark|member|int Hmark;
@@ -95,7 +95,7 @@ DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|info|member|uint32_t info;
 DECL|k_block|struct|struct k_block {
 DECL|k_msg|struct|struct k_msg {
-DECL|k_proc|struct|struct k_proc {
+DECL|k_task|struct|struct k_task {
 DECL|kevent_handler_t|typedef|typedef int (*kevent_handler_t)(int event);
 DECL|kevent_t|typedef|typedef unsigned int kevent_t;
 DECL|kfifo_t|typedef|typedef uint32_t kfifo_t;
