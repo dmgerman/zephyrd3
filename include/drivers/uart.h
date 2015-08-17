@@ -4,12 +4,12 @@ DECL|baud_rate|member|int baud_rate; /* Baud rate */
 DECL|config_func|member|int (*config_func)(struct device *dev);
 DECL|fifo_fill|member|int (*fifo_fill)(struct device *dev, const uint8_t *tx_data, int len);
 DECL|fifo_read|member|int (*fifo_read)(struct device *dev, uint8_t *rx_data, const int size);
-DECL|int_pri|member|uint8_t int_pri; /* Interrupt priority level */
-DECL|int_pri|member|uint8_t int_pri; /**< interrupt priority */
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
 DECL|irq_err_enable|member|void (*irq_err_enable)(struct device *dev);
 DECL|irq_get|member|unsigned int (*irq_get)(struct device *dev);
 DECL|irq_is_pending|member|int (*irq_is_pending)(struct device *dev);
+DECL|irq_pri|member|uint8_t irq_pri; /* Interrupt priority level */
+DECL|irq_pri|member|uint8_t irq_pri; /**< interrupt priority */
 DECL|irq_rx_disable|member|void (*irq_rx_disable)(struct device *dev);
 DECL|irq_rx_enable|member|void (*irq_rx_enable)(struct device *dev);
 DECL|irq_rx_ready|member|int (*irq_rx_ready)(struct device *dev);
