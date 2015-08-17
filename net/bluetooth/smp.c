@@ -1,6 +1,10 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
 DECL|M|variable|M
+DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
+DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
+DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
@@ -32,14 +36,18 @@ DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1
 DECL|conn|member|struct bt_conn *conn;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
+DECL|gen_method|variable|gen_method
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_io_capa|function|static uint8_t get_io_capa(const struct bt_auth_cb *cb)
+DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_rand|function|static int le_rand(void *buf, size_t len)
 DECL|local_dist|member|uint8_t local_dist;
+DECL|method|member|uint8_t method;
+DECL|pairing_method|enum|enum pairing_method {
 DECL|pcnf|member|uint8_t pcnf[16];
 DECL|pending_encrypt|member|bool pending_encrypt;
 DECL|preq|member|uint8_t preq[7];
