@@ -246,7 +246,7 @@ DECL|source|member|void *source;
 DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
-DECL|task|member|ktask_t task;
+DECL|task_id|member|ktask_t task_id;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
