@@ -13,5 +13,5 @@ DECL|defrag|function|static void defrag(struct pool_struct *P, int ifraglevel_st
 DECL|get_block_recusive|function|static char *get_block_recusive(struct pool_struct *P, int index, int startindex)
 DECL|search_block_on_frag_level|function|static char *search_block_on_frag_level(struct pool_block *pfraglevelinfo, int *piblockindex)
 DECL|search_bp|function|static void search_bp(char *ptr, struct pool_struct *P, int index)
-DECL|task_mem_pool_defragment|function|void task_mem_pool_defragment(kmemory_pool_t Pid /* pool to defragment */ )
-DECL|task_mem_pool_free|function|void task_mem_pool_free(struct k_block *blockptr /* pointer to block to free */ )
+DECL|task_mem_pool_defragment|function|void task_mem_pool_defragment(kmemory_pool_t Pid)
+DECL|task_mem_pool_free|function|void task_mem_pool_free(struct k_block *blockptr)
