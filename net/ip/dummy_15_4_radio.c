@@ -12,6 +12,7 @@ DECL|get_value|function|get_value(radio_param_t param, radio_value_t *value)
 DECL|init|function|init(void)
 DECL|input_len|variable|input_len
 DECL|input_offset|variable|input_offset
+DECL|input_type|variable|input_type
 DECL|input|variable|input
 DECL|last_packet_timestamp|variable|last_packet_timestamp
 DECL|loopback|variable|loopback
