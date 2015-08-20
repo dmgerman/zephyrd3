@@ -8,6 +8,8 @@ DECL|NET_BUF_IP|macro|NET_BUF_IP
 DECL|NET_BUF_MAX_DATA|macro|NET_BUF_MAX_DATA
 DECL|NET_BUF_UDP|macro|NET_BUF_UDP
 DECL|NET_MAC_BUF_MAX_SIZE|macro|NET_MAC_BUF_MAX_SIZE
+DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
+DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__unused|member|int __unused;
 DECL|__unused|member|int __unused;
@@ -28,6 +30,8 @@ DECL|nd6_opt_llao|member|uint8_t *nd6_opt_llao;
 DECL|nd6_opt_offset|member|uint8_t nd6_opt_offset;
 DECL|nd6_opt_prefix_info|member|void *nd6_opt_prefix_info;
 DECL|nd6_prefix|member|void *nd6_prefix;
+DECL|net_analyze_stack|function|static inline void net_analyze_stack(const char *name, unsigned char *stack, size_t size)
+DECL|net_analyze_stack|macro|net_analyze_stack
 DECL|net_buf_datalen|macro|net_buf_datalen
 DECL|net_buf_data|macro|net_buf_data
 DECL|net_buf_get_reserve|macro|net_buf_get_reserve
@@ -35,6 +39,8 @@ DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_put|macro|net_buf_put
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf|struct|struct net_buf {
+DECL|net_calculate_unused|function|static inline unsigned net_calculate_unused(const char *stack, unsigned size, int stack_growth)
+DECL|net_get_stack_dir|function|static inline unsigned net_get_stack_dir(struct net_buf *buf, struct net_buf **ref)
 DECL|net_mbuf|struct|struct net_mbuf {
 DECL|packetbuf_hdr_len|member|uint8_t packetbuf_hdr_len;
 DECL|packetbuf_payload_len|member|int packetbuf_payload_len;
