@@ -1,6 +1,5 @@
 DECL|BenchTask|function|void BenchTask(void)
 DECL|Msg|variable|Msg
-DECL|SECONDS|macro|SECONDS
 DECL|TestPipes|variable|TestPipes
 DECL|WAIT_FOR_USER|macro|WAIT_FOR_USER
 DECL|dashline|variable|dashline

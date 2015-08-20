@@ -1,6 +1,5 @@
 DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
 DECL|DO_IDLE_WORK|macro|DO_IDLE_WORK
-DECL|MSEC_PER_SEC|macro|MSEC_PER_SEC
 DECL|_get_next_timer_expiry|function|static inline int32_t _get_next_timer_expiry(void)
 DECL|_k_kernel_idle|function|int _k_kernel_idle(void)
 DECL|_k_workload_delta|variable|_k_workload_delta
