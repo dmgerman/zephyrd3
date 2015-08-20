@@ -27,7 +27,7 @@ DECL|SIM_SOPT4_t|typedef|} SIM_SOPT4_t; /* 0x100C */
 DECL|SIM_SOPT5_t|typedef|} SIM_SOPT5_t; /* 0x1010 */
 DECL|SIM_UART_CLK_ENABLE|macro|SIM_UART_CLK_ENABLE
 DECL|_K20SIM_H_|macro|_K20SIM_H_
-DECL|_k20SimUartClkEnable|function|static ALWAYS_INLINE void _k20SimUartClkEnable(K20_SIM_t *sim_p, uint8_t which)
+DECL|_k20_sim_uart_clk_enable|function|static ALWAYS_INLINE void _k20_sim_uart_clk_enable(K20_SIM_t *sim_p, uint8_t which)
 DECL|clkOutSel|member|uint32_t clkOutSel : 3 __packed;
 DECL|clkdiv1|member|SIM_CLKDIV1_t clkdiv1; /* 0x1044 */
 DECL|clkdiv2|member|uint32_t clkdiv2; /* 0x1048 */

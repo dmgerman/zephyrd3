@@ -25,12 +25,12 @@ DECL|TX_EN_MASK|macro|TX_EN_MASK
 DECL|TX_FIFO_EN_MASK|macro|TX_FIFO_EN_MASK
 DECL|TX_FIFO_FLUSH_MASK|macro|TX_FIFO_FLUSH_MASK
 DECL|_K20UART_H_|macro|_K20UART_H_
-DECL|_k20UartBaudRateSet|function|static ALWAYS_INLINE void _k20UartBaudRateSet(K20_UART_t *uart_p, uint32_t clkFreq, uint32_t baudRate)
-DECL|_k20UartFifoEnable|function|static inline void _k20UartFifoEnable(K20_UART_t *uart_p)
+DECL|_k20_uart_baud_rate_set|function|static ALWAYS_INLINE void _k20_uart_baud_rate_set(K20_UART_t *uart_p, uint32_t clk_freq, uint32_t baud_rate)
+DECL|_k20_uart_fifo_enable|function|static inline void _k20_uart_fifo_enable(K20_UART_t *uart_p)
 DECL|bdh|member|BDH_t bdh; /* 0x000 Baud Rate High */
 DECL|bdl|member|uint8_t bdl; /* 0x001 Baud Rate Low (04)*/
 DECL|brfa|member|uint8_t brfa : 5 __packed; /* BaudRateFineAdjust*/
-DECL|brkCharLen13|member|uint8_t brkCharLen13 : 1 __packed;
+DECL|brk_char_len13|member|uint8_t brk_char_len13 : 1 __packed;
 DECL|c1|member|C1_t c1; /* 0x002 Control 1 */
 DECL|c2|member|C2_t c2; /* 0x003 Control 2 */
 DECL|c3|member|C3_t c3; /* 0x006 Control 3 */
@@ -49,78 +49,78 @@ DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
-DECL|frameErrIntEn|member|uint8_t frameErrIntEn : 1 __packed;
-DECL|framingErr|member|uint8_t framingErr : 1 __packed;
-DECL|idleLineIntEn|member|uint8_t idleLineIntEn : 1 __packed;
-DECL|idleLineType|member|uint8_t idleLineType : 1 __packed;
-DECL|idleLine|member|uint8_t idleLine : 1 __packed;
+DECL|frame_err_int_en|member|uint8_t frame_err_int_en : 1 __packed;
+DECL|framing_err|member|uint8_t framing_err : 1 __packed;
+DECL|idle_line_int_en|member|uint8_t idle_line_int_en : 1 __packed;
+DECL|idle_line_type|member|uint8_t idle_line_type : 1 __packed;
+DECL|idle_line|member|uint8_t idle_line : 1 __packed;
 DECL|ir|member|uint8_t ir; /* 0x00E Infrared */
-DECL|lbkdIntEn|member|uint8_t lbkdIntEn : 1 __packed; /* LIN Break Detect */
+DECL|lbkd_int_en|member|uint8_t lbkd_int_en : 1 __packed; /* LIN Break Detect */
 DECL|lbkdif|member|uint8_t lbkdif : 1 __packed;
-DECL|linBkDetectEn|member|uint8_t linBkDetectEn : 1 __packed;
-DECL|loopbackEn|member|uint8_t loopbackEn : 1 __packed;
+DECL|lin_bk_detect_en|member|uint8_t lin_bk_detect_en : 1 __packed;
+DECL|loopback_en|member|uint8_t loopback_en : 1 __packed;
 DECL|ma1|member|uint8_t ma1; /* 0x008 Match Address 1 */
 DECL|ma2|member|uint8_t ma2; /* 0x009 Match Address 1 */
-DECL|matchAddrMode2En|member|uint8_t matchAddrMode2En : 1 __packed;
-DECL|matechAddrMode1En|member|uint8_t matechAddrMode1En : 1 __packed;
-DECL|mode10Bit|member|uint8_t mode10Bit : 1 __packed;
-DECL|mode9Bit|member|uint8_t mode9Bit : 1 __packed;
+DECL|match_addr_mode2_en|member|uint8_t match_addr_mode2_en : 1 __packed;
+DECL|matech_addr_mode1_en|member|uint8_t matech_addr_mode1_en : 1 __packed;
+DECL|mode10bit|member|uint8_t mode10bit : 1 __packed;
+DECL|mode9bit|member|uint8_t mode9bit : 1 __packed;
 DECL|modem|member|uint8_t modem; /* 0x00D Modem */
-DECL|msbFirst|member|uint8_t msbFirst : 1 __packed;
+DECL|msb_first|member|uint8_t msb_first : 1 __packed;
 DECL|noice|member|uint8_t noice : 1 __packed;
-DECL|noiseErrIntEn|member|uint8_t noiseErrIntEn : 1 __packed;
-DECL|oddParity|member|uint8_t oddParity : 1 __packed;
-DECL|overrunErrIntEn|member|uint8_t overrunErrIntEn : 1 __packed;
-DECL|parityEnable|member|uint8_t parityEnable : 1 __packed;
-DECL|parityErrIntEn|member|uint8_t parityErrIntEn : 1 __packed;
-DECL|parityErr|member|uint8_t parityErr : 1 __packed;
+DECL|noise_err_int_en|member|uint8_t noise_err_int_en : 1 __packed;
+DECL|odd_parity|member|uint8_t odd_parity : 1 __packed;
+DECL|overrun_err_int_en|member|uint8_t overrun_err_int_en : 1 __packed;
+DECL|parity_enable|member|uint8_t parity_enable : 1 __packed;
+DECL|parity_err_int_en|member|uint8_t parity_err_int_en : 1 __packed;
+DECL|parity_err|member|uint8_t parity_err : 1 __packed;
 DECL|pfifo|member|PFIFO_t pfifo; /* 0x010 FIFO Param */
 DECL|rcfifo|member|uint8_t rcfifo; /* 0x016 FIFO Rx Count */
-DECL|remoteLoopback|member|uint8_t remoteLoopback : 1 __packed;
+DECL|remote_loopback|member|uint8_t remote_loopback : 1 __packed;
 DECL|res_3|member|uint8_t res_3 : 3 __packed;
 DECL|res_5|member|uint8_t res_5 : 1 __packed;
 DECL|rwfifo|member|uint8_t rwfifo; /* 0x015 FIFO Rx Watermark (01)*/
-DECL|rxActive|member|uint8_t rxActive : 1 __packed;
-DECL|rxBit8|member|uint8_t rxBit8 : 1 __packed;
-DECL|rxDataFull|member|uint8_t rxDataFull : 1 __packed;
-DECL|rxDataInverted|member|uint8_t rxDataInverted : 1 __packed;
-DECL|rxEdgeIntEn|member|uint8_t rxEdgeIntEn : 1 __packed; /* RxD Active Edge */
-DECL|rxEnable|member|uint8_t rxEnable : 1 __packed;
-DECL|rxFifoEn|member|uint8_t rxFifoEn : 1 __packed;
-DECL|rxFifoFlush|member|uint8_t rxFifoFlush : 1 __packed; /* write-only */
-DECL|rxFifoOverflowIntEn|member|uint8_t rxFifoOverflowIntEn : 1 __packed;
-DECL|rxFifoSize|member|uint8_t rxFifoSize : 3 __packed; /* read-only */
-DECL|rxFifoUnderflowIntEn|member|uint8_t rxFifoUnderflowIntEn : 1 __packed;
-DECL|rxFullInt_dmaTx_en|member|uint8_t rxFullInt_dmaTx_en : 1 __packed;
-DECL|rxOverrun|member|uint8_t rxOverrun : 1 __packed;
-DECL|rxWakepMethod|member|uint8_t rxWakepMethod : 1 __packed;
-DECL|rxWakeupCtrl|member|uint8_t rxWakeupCtrl : 1 __packed;
-DECL|rxWakeupIdleDetect|member|uint8_t rxWakeupIdleDetect : 1 __packed;
+DECL|rx_active|member|uint8_t rx_active : 1 __packed;
+DECL|rx_bit8|member|uint8_t rx_bit8 : 1 __packed;
+DECL|rx_data_full|member|uint8_t rx_data_full : 1 __packed;
+DECL|rx_data_inverted|member|uint8_t rx_data_inverted : 1 __packed;
+DECL|rx_edge_int_en|member|uint8_t rx_edge_int_en : 1 __packed; /* RxD Active Edge */
+DECL|rx_enable|member|uint8_t rx_enable : 1 __packed;
+DECL|rx_fifo_en|member|uint8_t rx_fifo_en : 1 __packed;
+DECL|rx_fifo_flush|member|uint8_t rx_fifo_flush : 1 __packed; /* write-only */
+DECL|rx_fifo_overflow_int_en|member|uint8_t rx_fifo_overflow_int_en : 1 __packed;
+DECL|rx_fifo_size|member|uint8_t rx_fifo_size : 3 __packed; /* read-only */
+DECL|rx_fifo_underflow_int_en|member|uint8_t rx_fifo_underflow_int_en : 1 __packed;
+DECL|rx_full_int_dma_tx_en|member|uint8_t rx_full_int_dma_tx_en : 1 __packed;
+DECL|rx_overrun|member|uint8_t rx_overrun : 1 __packed;
+DECL|rx_wakep_method|member|uint8_t rx_wakep_method : 1 __packed;
+DECL|rx_wakeup_ctrl|member|uint8_t rx_wakeup_ctrl : 1 __packed;
+DECL|rx_wakeup_idle_detect|member|uint8_t rx_wakeup_idle_detect : 1 __packed;
 DECL|rxedgif|member|uint8_t rxedgif : 1 __packed;
 DECL|s1|member|S1_t s1; /* 0x004 Status 1 (C0) RO*/
 DECL|s2|member|S2_t s2; /* 0x005 Status 2 */
 DECL|sbr|member|uint8_t sbr : 5 __packed; /* Hi Baud Rate Bits */
-DECL|sendBreak|member|uint8_t sendBreak : 1 __packed;
+DECL|send_break|member|uint8_t send_break : 1 __packed;
 DECL|seq_port_num|member|uint8_t seq_port_num; /**< Sequential port number */
 DECL|sfifo|member|uint8_t sfifo; /* 0x012 FIFO Status (C0)*/
 DECL|tcfifo|member|uint8_t tcfifo; /* 0x014 FIFO Tx Count */
 DECL|twfifo|member|uint8_t twfifo; /* 0x013 FIFO Tx Watermark */
-DECL|txBit8|member|uint8_t txBit8 : 1 __packed;
-DECL|txCompleteIntEn|member|uint8_t txCompleteIntEn : 1 __packed;
-DECL|txComplete|member|uint8_t txComplete : 1 __packed;
-DECL|txDataEmpty|member|uint8_t txDataEmpty : 1 __packed;
-DECL|txDataInvert|member|uint8_t txDataInvert : 1 __packed;
-DECL|txDataPinOuttDir|member|uint8_t txDataPinOuttDir : 1 __packed;
-DECL|txEnable|member|uint8_t txEnable : 1 __packed;
-DECL|txFifoEn|member|uint8_t txFifoEn : 1 __packed;
-DECL|txFifoFlush|member|uint8_t txFifoFlush : 1 __packed; /* write-only */
-DECL|txFifoOverflowIntEn|member|uint8_t txFifoOverflowIntEn : 1 __packed;
-DECL|txFifoSize|member|uint8_t txFifoSize : 3 __packed; /* read-only */
-DECL|txInt_DmaTx_en|member|uint8_t txInt_DmaTx_en : 1 __packed;
+DECL|tx_bit8|member|uint8_t tx_bit8 : 1 __packed;
+DECL|tx_complete_int_en|member|uint8_t tx_complete_int_en : 1 __packed;
+DECL|tx_complete|member|uint8_t tx_complete : 1 __packed;
+DECL|tx_data_empty|member|uint8_t tx_data_empty : 1 __packed;
+DECL|tx_data_invert|member|uint8_t tx_data_invert : 1 __packed;
+DECL|tx_data_pin_outt_dir|member|uint8_t tx_data_pin_outt_dir : 1 __packed;
+DECL|tx_enable|member|uint8_t tx_enable : 1 __packed;
+DECL|tx_fifo_en|member|uint8_t tx_fifo_en : 1 __packed;
+DECL|tx_fifo_flush|member|uint8_t tx_fifo_flush : 1 __packed; /* write-only */
+DECL|tx_fifo_overflow_int_en|member|uint8_t tx_fifo_overflow_int_en : 1 __packed;
+DECL|tx_fifo_size|member|uint8_t tx_fifo_size : 3 __packed; /* read-only */
+DECL|tx_int_dma_tx_en|member|uint8_t tx_int_dma_tx_en : 1 __packed;
 DECL|u_7816|member|uint8_t u_7816[0x20 - 0x17]; /* 0x017-0x1F UART ISO-7816 standard */
 DECL|u_cea709_1|member|uint8_t u_cea709_1[0x32 - 0x20]; /* 0x020-0x31 UART CEA8709.1 standard
-DECL|uartStopWait|member|uint8_t uartStopWait : 1 __packed;
 DECL|uart_k20_dev_data_t|struct|struct uart_k20_dev_data_t {
+DECL|uart_stop_wait|member|uint8_t uart_stop_wait : 1 __packed;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
@@ -130,5 +130,5 @@ DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
-DECL|zReservStatused038_03c|member|uint8_t zReservStatused038_03c[0x1000 - 0x32]; /* 0x032-0xFFF Reserved
-DECL|zReserved00f|member|uint8_t zReserved00f; /* 0x00F */
+DECL|z_reserv_statused038_03c|member|uint8_t z_reserv_statused038_03c[0x1000 - 0x32]; /* 0x032-0xFFF
+DECL|z_reserved00f|member|uint8_t z_reserved00f; /* 0x00F */
