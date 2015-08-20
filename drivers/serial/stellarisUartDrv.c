@@ -1,17 +1,5 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|LINE_CONTROL_DEFAULTS|macro|LINE_CONTROL_DEFAULTS
-DECL|PCellID0|member|uint32_t PCellID0;
-DECL|PCellID1|member|uint32_t PCellID1;
-DECL|PCellID2|member|uint32_t PCellID2;
-DECL|PCellID3|member|uint32_t PCellID3;
-DECL|PeriphID0|member|uint32_t PeriphID0;
-DECL|PeriphID1|member|uint32_t PeriphID1;
-DECL|PeriphID2|member|uint32_t PeriphID2;
-DECL|PeriphID3|member|uint32_t PeriphID3;
-DECL|PeriphID4|member|uint32_t PeriphID4;
-DECL|PeriphID5|member|uint32_t PeriphID5;
-DECL|PeriphID6|member|uint32_t PeriphID6;
-DECL|PeriphID7|member|uint32_t PeriphID7;
 DECL|UARTCR|macro|UARTCR
 DECL|UARTCTL_LBE|macro|UARTCTL_LBE
 DECL|UARTCTL_RXEN|macro|UARTCTL_RXEN
@@ -59,13 +47,13 @@ DECL|UARTTIM_RTIM|macro|UARTTIM_RTIM
 DECL|UARTTIM_RXIM|macro|UARTTIM_RXIM
 DECL|UARTTIM_TXIM|macro|UARTTIM_TXIM
 DECL|UART_STRUCT|macro|UART_STRUCT
-DECL|_Uart|struct|struct _Uart {
 DECL|_cr|member|uint32_t _cr;
 DECL|_res1|member|uint8_t _res1[0x010];
 DECL|_res2|member|uint8_t _res2[0x04];
 DECL|_res3|member|uint8_t _res3[0xf8c];
 DECL|_sr|member|uint32_t _sr;
-DECL|baudrateSet|function|static void baudrateSet(struct device *dev,uint32_t baudrate, uint32_t sysClkFreqInHz)
+DECL|_uart|struct|struct _uart {
+DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
 DECL|cr|macro|cr
 DECL|ctl|member|uint32_t ctl;
 DECL|disable|function|static inline void disable(struct device *dev)
@@ -79,15 +67,27 @@ DECL|ifls|member|uint32_t ifls;
 DECL|ilpr|member|uint32_t ilpr;
 DECL|im|member|uint32_t im;
 DECL|lcrh|member|uint32_t lcrh;
-DECL|lineControlDefaultsSet|function|static inline void lineControlDefaultsSet(struct device *dev)
+DECL|line_control_defaults_set|function|static inline void line_control_defaults_set(struct device *dev)
 DECL|mis|member|uint32_t mis;
+DECL|p_cell_id0|member|uint32_t p_cell_id0;
+DECL|p_cell_id1|member|uint32_t p_cell_id1;
+DECL|p_cell_id2|member|uint32_t p_cell_id2;
+DECL|p_cell_id3|member|uint32_t p_cell_id3;
+DECL|peripd_id0|member|uint32_t peripd_id0;
+DECL|peripd_id1|member|uint32_t peripd_id1;
+DECL|peripd_id2|member|uint32_t peripd_id2;
+DECL|peripd_id3|member|uint32_t peripd_id3;
+DECL|peripd_id4|member|uint32_t peripd_id4;
+DECL|peripd_id5|member|uint32_t peripd_id5;
+DECL|peripd_id6|member|uint32_t peripd_id6;
+DECL|peripd_id7|member|uint32_t peripd_id7;
 DECL|poll_tx_ready|function|static int poll_tx_ready(struct device *dev)
 DECL|ris|member|uint32_t ris;
 DECL|sr|macro|sr
 DECL|stellaris_uart_driver_api|variable|stellaris_uart_driver_api
 DECL|stellaris_uart_driver_api|variable|stellaris_uart_driver_api
-DECL|stellaris_uart_fifo_fill|function|static int stellaris_uart_fifo_fill(struct device *dev, const uint8_t *txData, /* data to transmit */ int len /* number of bytes to send */ )
-DECL|stellaris_uart_fifo_read|function|static int stellaris_uart_fifo_read(struct device *dev, uint8_t *rxData, /* data container */ const int size /* container size */ )
+DECL|stellaris_uart_fifo_fill|function|static int stellaris_uart_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
+DECL|stellaris_uart_fifo_read|function|static int stellaris_uart_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|stellaris_uart_irq_err_disable|function|static void stellaris_uart_irq_err_disable(struct device *dev)
 DECL|stellaris_uart_irq_err_enable|function|static void stellaris_uart_irq_err_enable(struct device *dev)
 DECL|stellaris_uart_irq_get|function|static unsigned int stellaris_uart_irq_get(struct device *dev)
@@ -99,7 +99,7 @@ DECL|stellaris_uart_irq_tx_disable|function|static void stellaris_uart_irq_tx_di
 DECL|stellaris_uart_irq_tx_enable|function|static void stellaris_uart_irq_tx_enable(struct device *dev)
 DECL|stellaris_uart_irq_tx_ready|function|static int stellaris_uart_irq_tx_ready(struct device *dev)
 DECL|stellaris_uart_irq_update|function|static int stellaris_uart_irq_update(struct device *dev)
-DECL|stellaris_uart_poll_in|function|static int stellaris_uart_poll_in(struct device *dev, unsigned char *pChar /* pointer to char */ )
+DECL|stellaris_uart_poll_in|function|static int stellaris_uart_poll_in(struct device *dev, unsigned char *c)
 DECL|stellaris_uart_poll_out|function|static unsigned char stellaris_uart_poll_out(struct device *dev, unsigned char c)
-DECL|stellaris_uart_port_init|function|void stellaris_uart_port_init(struct device *dev, const struct uart_init_info * const init_info )
+DECL|stellaris_uart_port_init|function|void stellaris_uart_port_init(struct device *dev, const struct uart_init_info * const init_info)
 DECL|u1|member|} u1;
