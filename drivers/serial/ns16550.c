@@ -81,8 +81,8 @@ DECL|ns16550_pci_uart_scan|function|static inline void ns16550_pci_uart_scan(voi
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
 DECL|ns16550_uart_driver_api|variable|ns16550_uart_driver_api
 DECL|ns16550_uart_driver_api|variable|ns16550_uart_driver_api
-DECL|ns16550_uart_fifo_fill|function|static int ns16550_uart_fifo_fill(struct device *dev, const uint8_t *txData, /* data to transmit */ int size /* number of bytes to send */ )
-DECL|ns16550_uart_fifo_read|function|static int ns16550_uart_fifo_read(struct device *dev, uint8_t *rxData, /* data container */ const int size /* container size */ )
+DECL|ns16550_uart_fifo_fill|function|static int ns16550_uart_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
+DECL|ns16550_uart_fifo_read|function|static int ns16550_uart_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|ns16550_uart_irq_err_disable|function|static void ns16550_uart_irq_err_disable(struct device *dev)
 DECL|ns16550_uart_irq_err_enable|function|static void ns16550_uart_irq_err_enable(struct device *dev)
 DECL|ns16550_uart_irq_get|function|static unsigned int ns16550_uart_irq_get(struct device *dev)
@@ -94,6 +94,6 @@ DECL|ns16550_uart_irq_tx_disable|function|static void ns16550_uart_irq_tx_disabl
 DECL|ns16550_uart_irq_tx_enable|function|static void ns16550_uart_irq_tx_enable(struct device *dev)
 DECL|ns16550_uart_irq_tx_ready|function|static int ns16550_uart_irq_tx_ready(struct device *dev)
 DECL|ns16550_uart_irq_update|function|static int ns16550_uart_irq_update(struct device *dev)
-DECL|ns16550_uart_poll_in|function|static int ns16550_uart_poll_in(struct device *dev, unsigned char *pChar /* pointer to char */ )
-DECL|ns16550_uart_poll_out|function|static unsigned char ns16550_uart_poll_out(struct device *dev,unsigned char outChar /* char to send */ )
-DECL|ns16550_uart_port_init|function|void ns16550_uart_port_init(struct device *dev, const struct uart_init_info * const init_info )
+DECL|ns16550_uart_poll_in|function|static int ns16550_uart_poll_in(struct device *dev, unsigned char *c)
+DECL|ns16550_uart_poll_out|function|static unsigned char ns16550_uart_poll_out(struct device *dev, unsigned char c)
+DECL|ns16550_uart_port_init|function|void ns16550_uart_port_init(struct device *dev, const struct uart_init_info * const init_info)
