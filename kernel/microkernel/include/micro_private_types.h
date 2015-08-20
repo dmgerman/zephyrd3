@@ -5,11 +5,11 @@ DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
 DECL|Back|member|struct k_timer *Back;
 DECL|Comm|member|int Comm;
-DECL|Comm|member|void (*Comm)(struct k_args *);
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
 DECL|Count|member|int Count;
 DECL|Count|member|int Count;
+DECL|Ctxt|member|K_CREF Ctxt;
 DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
@@ -146,6 +146,7 @@ DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
+DECL|alloc|member|bool alloc;
 DECL|argp|member|void *argp;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
