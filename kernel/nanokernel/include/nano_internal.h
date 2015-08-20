@@ -1,5 +1,5 @@
-DECL|_ContextArg|typedef|typedef void *_ContextArg;
-DECL|_ContextEntry|typedef|typedef void (*_ContextEntry)(_ContextArg arg1,
 DECL|_NANO_INTERNAL__H_|macro|_NANO_INTERNAL__H_
-DECL|_context_exit|macro|_context_exit
-DECL|tCCS|typedef|typedef struct ccs tCCS;
+DECL|_thread_arg_t|typedef|typedef void *_thread_arg_t;
+DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(_thread_arg_t arg1,
+DECL|_thread_exit|macro|_thread_exit
+DECL|tTCS|typedef|typedef struct tcs tTCS;

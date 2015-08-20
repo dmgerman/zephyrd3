@@ -1,10 +1,10 @@
-DECL|CTX_SELF_CMD|macro|CTX_SELF_CMD
-DECL|CTX_TYPE_CMD|macro|CTX_TYPE_CMD
+DECL|EXEC_CTX_TYPE_CMD|macro|EXEC_CTX_TYPE_CMD
 DECL|FIBER_PRIORITY|macro|FIBER_PRIORITY
 DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
 DECL|ISR_INFO|typedef|} ISR_INFO;
 DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_TIMEOUT_FIBERS|macro|NUM_TIMEOUT_FIBERS
+DECL|THREAD_SELF_CMD|macro|THREAD_SELF_CMD
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
@@ -18,7 +18,7 @@ DECL|error|member|int error; /* error value (if any) */
 DECL|excHandlerExecuted|variable|excHandlerExecuted
 DECL|exc_divide_error_handler|function|void exc_divide_error_handler(NANO_ESF *pEsf)
 DECL|fiberDetectedError|variable|fiberDetectedError
-DECL|fiberEntry|function|static void fiberEntry(int taskCtxId, int arg1)
+DECL|fiberEntry|function|static void fiberEntry(int task_thread_id, int arg1)
 DECL|fiberEvidence|variable|fiberEvidence
 DECL|fiberHelper|function|static void fiberHelper(int arg1, int arg2)
 DECL|fiberStack1|variable|fiberStack1
@@ -34,7 +34,7 @@ DECL|isr_handler|function|void isr_handler(void *data)
 DECL|link_in_fifo|member|void *link_in_fifo;
 DECL|main|function|void main(void)
 DECL|nanoCpuDisableInterruptsTest|function|int nanoCpuDisableInterruptsTest(disable_interrupt_func disableRtn, enable_interrupt_func enableRtn, int irq)
-DECL|nanoCtxFiberTest|function|int nanoCtxFiberTest(nano_context_id_t taskCtxId)
+DECL|nanoCtxFiberTest|function|int nanoCtxFiberTest(nano_thread_id_t task_thread_id)
 DECL|nanoCtxTaskTest|function|int nanoCtxTaskTest(void)
 DECL|nano_cpu_idleTest|function|int nano_cpu_idleTest(void)
 DECL|q_order|member|int q_order;

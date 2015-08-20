@@ -320,15 +320,13 @@ DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
 DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
-DECL|ccs|struct|struct ccs {
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
-DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
 DECL|coopReg|member|tCoopReg coopReg; /* non-volatile integer register storage */
 DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
 DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
-DECL|current_fp|member|tCCS *current_fp; /* context (fiber or task) that owns the FP regs */
-DECL|current|member|tCCS *current; /* currently scheduled context (fiber or task) */
+DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
+DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
@@ -337,14 +335,14 @@ DECL|esp|member|unsigned long esp;
 DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
-DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet(tCCS *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
-DECL|fiber|member|tCCS *fiber; /* singly linked list of runnable fiber contexts */
+DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet(struct tcs *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
+DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
 DECL|flags|member|int flags;
 DECL|floatRegsUnion|member|} floatRegsUnion;
 DECL|fop|member|unsigned short fop : 11; /* 2 : x87 FPU opcode */
 DECL|fop|member|unsigned short fop; /* 2 : x87 FPU opcode */
-DECL|fpRegsEx|member|tFpRegSetEx fpRegsEx; /* contexts with USE_SSE utilize this
-DECL|fpRegs|member|tFpRegSet fpRegs; /* contexts with USE_FP utilize this format */
+DECL|fpRegsEx|member|tFpRegSetEx fpRegsEx; /* threads with USE_SSE utilize this
+DECL|fpRegs|member|tFpRegSet fpRegs; /* threads with USE_FP utilize this format */
 DECL|fpReg|member|tFpReg fpReg[8]; /* 80 : ST0 -> ST7 */
 DECL|fpReg|member|tFpRegEx fpReg[8]; /* 128 : x87 FPU/MMX registers */
 DECL|fpudp|member|unsigned int fpudp; /* 4 : x87 FPU instr operand ptr offset */
@@ -356,13 +354,13 @@ DECL|fsw|member|unsigned short fsw; /* 2 : x87 FPU status word */
 DECL|ftw|member|unsigned char ftw; /* 1 : x87 FPU abridged tag word */
 DECL|ftw|member|unsigned short ftw; /* 2 : x87 FPU tag word */
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|link|member|struct ccs *link;
+DECL|link|member|struct tcs *link;
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
 DECL|nanoArchInit|function|static inline void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|nested|member|unsigned nested; /* nested interrupt count */
-DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
 DECL|pad2|member|unsigned short pad2; /* 2 : N/A */
 DECL|pad3|member|unsigned short pad3; /* 2 : N/A */
@@ -370,7 +368,7 @@ DECL|pad4|member|unsigned short pad4 : 5; /* : 5 bits = 00000 */
 DECL|pad5|member|unsigned short pad5; /* 2 : N/A */
 DECL|preempFloatReg|member|tPreempFloatReg preempFloatReg; /* volatile float register storage */
 DECL|preempReg|member|tPreempReg preempReg; /* volatile integer register storage */
-DECL|prio|member|int prio; /* context priority used to sort linked list */
+DECL|prio|member|int prio; /* thread priority used to sort linked list */
 DECL|reg|member|unsigned char reg[10]; /* 80 bits: ST[0-7] */
 DECL|reg|member|unsigned char reg[10]; /* 80 bits: ST[0-7] or MM[0-7] */
 DECL|reg|member|unsigned char reg[16]; /* 128 bits: XMM[0-7] */
@@ -403,6 +401,8 @@ DECL|tNANO|typedef|} tNANO;
 DECL|tPreempFloatReg|typedef|} tPreempFloatReg;
 DECL|tPreempReg|typedef|} tPreempReg;
 DECL|tXmmReg|typedef|} tXmmReg;
-DECL|task|member|tCCS *task; /* pointer to runnable task context */
+DECL|task|member|struct tcs *task; /* pointer to runnable task */
+DECL|tcs|struct|struct tcs {
+DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|xmmReg|member|tXmmReg xmmReg[8]; /* 128 : XMM registers */

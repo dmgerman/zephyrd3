@@ -8,4 +8,4 @@ DECL|idtTestTask|function|void idtTestTask(void)
 DECL|intHandlerExecuted|variable|intHandlerExecuted
 DECL|isr_handler|function|void isr_handler(void)
 DECL|nanoIdtStubTest|function|int nanoIdtStubTest(void)
-DECL|spurHandlerAbortedContext|variable|spurHandlerAbortedContext
+DECL|spurHandlerAbortedThread|variable|spurHandlerAbortedThread

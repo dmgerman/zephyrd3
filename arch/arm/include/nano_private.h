@@ -13,22 +13,20 @@ DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|basepri|member|uint32_t basepri;
-DECL|ccs|struct|struct ccs {
-DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
-DECL|current_fp|member|tCCS *current_fp; /* context (fiber or task) that owns the FP regs */
-DECL|current|member|tCCS *current; /* currently scheduled context (fiber or task) */
+DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
+DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
-DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(tCCS *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
-DECL|fiber|member|tCCS *fiber; /* singly linked list of runnable fiber contexts */
-DECL|flags|member|int flags; /* tCCS->flags of 'current' context */
+DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
+DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fiber */
+DECL|flags|member|int flags; /* struct tcs->flags of 'current' thread */
 DECL|flags|member|uint32_t flags;
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|link|member|struct ccs *link; /* singly-linked list in _nanokernel.fibers */
+DECL|link|member|struct tcs *link; /* singly-linked list in _nanokernel.fibers */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
-DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
 DECL|prio|member|int prio;
@@ -37,7 +35,9 @@ DECL|s_NANO|struct|struct s_NANO {
 DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
-DECL|task|member|tCCS *task; /* pointer to runnable task context */
+DECL|task|member|struct tcs *task; /* pointer to runnable task */
+DECL|tcs|struct|struct tcs {
+DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */

@@ -20,16 +20,14 @@ DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|blink|member|uint32_t blink;
 DECL|callee_saved|struct|struct callee_saved {
-DECL|ccs|struct|struct ccs {
-DECL|contexts|member|tCCS *contexts; /* singly linked list of ALL fiber+tasks */
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
-DECL|current_fp|member|tCCS *current_fp; /* context (fiber or task) that owns the FP regs */
-DECL|current|member|tCCS *current; /* currently scheduled context (fiber or task) */
+DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
+DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ei_base|member|uint32_t ei_base;
-DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(tCCS *fiber, unsigned int value)
-DECL|fiber|member|tCCS *fiber; /* singly linked list of runnable fiber contexts */
+DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
+DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
 DECL|firq_regs|member|struct firq_regs firq_regs;
 DECL|firq_regs|struct|struct firq_regs {
 DECL|flags|member|uint32_t flags; /* bitmask of flags above */
@@ -39,7 +37,7 @@ DECL|intlock_key|member|uint32_t intlock_key; /* interrupt key when relinquishin
 DECL|irq_stack_frame|struct|struct irq_stack_frame {
 DECL|jli_base|member|uint32_t jli_base;
 DECL|ldi_base|member|uint32_t ldi_base;
-DECL|link|member|struct ccs *link; /* node in singly-linked list
+DECL|link|member|struct tcs *link; /* node in singly-linked list
 DECL|lp_count|member|uint32_t lp_count;
 DECL|lp_count|member|uint32_t lp_count;
 DECL|lp_end|member|uint32_t lp_end;
@@ -48,7 +46,7 @@ DECL|lp_start|member|uint32_t lp_start;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
-DECL|next_context|member|struct ccs *next_context; /* next item in list of ALL fiber+tasks */
+DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|pc|member|uint32_t pc;
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
@@ -93,5 +91,7 @@ DECL|tFirqRegs|typedef|typedef struct firq_regs tFirqRegs;
 DECL|tISF|typedef|typedef struct irq_stack_frame tISF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
-DECL|task|member|tCCS *task; /* current task the nanokernel knows about */
+DECL|task|member|struct tcs *task; /* current task the nanokernel knows about */
+DECL|tcs|struct|struct tcs {
+DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;

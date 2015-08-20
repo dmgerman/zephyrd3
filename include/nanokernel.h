@@ -9,18 +9,18 @@ DECL|_nano_timeout|struct|struct _nano_timeout {
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
-DECL|fiber|member|nano_context_id_t fiber;
+DECL|fiber|member|nano_thread_id_t fiber;
 DECL|head|member|void *head;
 DECL|lifo|member|struct nano_lifo lifo;
 DECL|link|member|struct nano_timer *link;
 DECL|list|member|void *list;
-DECL|nano_context_id_t|typedef|typedef struct ccs *nano_context_id_t;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
 DECL|nano_fiber_entry_t|typedef|typedef void (*nano_fiber_entry_t)(int i1, int i2);
 DECL|nano_fifo|struct|struct nano_fifo {
 DECL|nano_lifo|struct|struct nano_lifo {
 DECL|nano_sem|struct|struct nano_sem {
 DECL|nano_stack|struct|struct nano_stack {
+DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
 DECL|nano_timer|struct|struct nano_timer {
 DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;

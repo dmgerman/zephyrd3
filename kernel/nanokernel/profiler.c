@@ -1,4 +1,4 @@
-DECL|_collector_context|variable|_collector_context
+DECL|_collector_fiber|variable|_collector_fiber
 DECL|_sys_profiler_buffer|variable|_sys_profiler_buffer
 DECL|_sys_profiler_context_switch|function|void _sys_profiler_context_switch(void)
 DECL|_sys_profiler_init|function|static int _sys_profiler_init(struct device *arg)

@@ -1,3 +1,3 @@
-DECL|_NewContextInternal|function|static void _NewContextInternal(char *pStackMem, /* pointer to context stack memory */ unsigned stackSize, /* size of stack in bytes */ int priority, /* context priority */ unsigned options /* context options: USE_FP, USE_SSE */
-DECL|_NewContext|function|void _NewContext(char *pStackMem, /* pointer to aligned stack memory */ unsigned stackSize, /* size of stack in bytes */ _ContextEntry pEntry, /* context entry point function */ void *parameter1, /* first parameter to context entry point function */
 DECL|_nanokernel|variable|_nanokernel
+DECL|_new_thread_internal|function|static void _new_thread_internal(char *pStackMem, /* pointer to thread stack memory */ unsigned stackSize, /* size of stack in bytes */ int priority, /* thread priority */ unsigned options /* thread options: USE_FP, USE_SSE */
+DECL|_new_thread|function|void _new_thread(char *pStackMem, /* pointer to aligned stack memory */ unsigned stackSize, /* size of stack in bytes */ _thread_entry_t pEntry, /* thread entry point function */ void *parameter1, /* first parameter to thread entry point function */
