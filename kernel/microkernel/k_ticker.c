@@ -16,7 +16,6 @@ DECL|sys_clock_increment|function|static void sys_clock_increment(int inc)
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_scheduler_time_slice_set|function|void sys_scheduler_time_slice_set(int32_t t, kpriority_t p)
-DECL|task_cycle_get_32|function|uint32_t task_cycle_get_32(void)
 DECL|task_tick_delta|function|int64_t task_tick_delta(int64_t *reftime /* pointer to reference time */)
 DECL|task_tick_get_32|function|int32_t task_tick_get_32(void)
 DECL|task_tick_get|function|int64_t task_tick_get(void)

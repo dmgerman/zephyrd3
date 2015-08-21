@@ -9,7 +9,6 @@ DECL|handle_expired_nano_timeouts|function|static inline void handle_expired_nan
 DECL|handle_expired_nano_timeouts|macro|handle_expired_nano_timeouts
 DECL|handle_expired_nano_timers|function|static inline void handle_expired_nano_timers(int ticks)
 DECL|handle_expired_nano_timers|macro|handle_expired_nano_timers
-DECL|nano_cycle_get_32|function|uint32_t nano_cycle_get_32(void)
 DECL|nano_tick_delta_32|function|uint32_t nano_tick_delta_32(int64_t *reftime)
 DECL|nano_tick_delta|function|int64_t nano_tick_delta(int64_t *reftime)
 DECL|nano_tick_get_32|function|uint32_t nano_tick_get_32(void)
