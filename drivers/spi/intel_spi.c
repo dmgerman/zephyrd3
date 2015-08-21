@@ -1,0 +1,20 @@
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DEFINE_CLEAR_BIT_OP|macro|DEFINE_CLEAR_BIT_OP
+DECL|DEFINE_MM_REG_READ|macro|DEFINE_MM_REG_READ
+DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
+DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
+DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
+DECL|completed|function|static void completed(struct device *dev)
+DECL|intel_spi_api|variable|intel_spi_api
+DECL|pull_data|function|static void pull_data(struct device *dev)
+DECL|push_data|function|static void push_data(struct device *dev)
+DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev, struct spi_config *config)
+DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)
+DECL|spi_intel_isr|function|void spi_intel_isr(void *arg)
+DECL|spi_intel_resume|function|static int spi_intel_resume(struct device *dev)
+DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *dev)
+DECL|spi_intel_setup|macro|spi_intel_setup
+DECL|spi_intel_suspend|function|static int spi_intel_suspend(struct device *dev)
+DECL|spi_intel_transceive|function|static int spi_intel_transceive(struct device *dev,uint8_t *tx_buf, uint32_t tx_buf_len, uint8_t *rx_buf, uint32_t rx_buf_len)
