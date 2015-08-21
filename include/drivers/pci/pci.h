@@ -5,13 +5,16 @@ DECL|PCI_FUNCTION_ANY|macro|PCI_FUNCTION_ANY
 DECL|PCI_MAX_BARS|macro|PCI_MAX_BARS
 DECL|PCI_MAX_FUNCTIONS|macro|PCI_MAX_FUNCTIONS
 DECL|_PCI_H_|macro|_PCI_H_
+DECL|_reserved|member|uint32_t _reserved:3;
 DECL|addr|member|uint32_t addr; /* I/O or memory region address */
-DECL|bar|member|uint16_t bar:3;
-DECL|class|member|uint16_t class:8;
+DECL|bar|member|uint32_t bar:3;
+DECL|bus|member|uint32_t bus:8;
+DECL|class|member|uint32_t class:8;
 DECL|device_id|member|uint16_t device_id;
-DECL|function|member|uint16_t function:4;
+DECL|dev|member|uint32_t dev:5;
+DECL|function|member|uint32_t function:4;
 DECL|irq|member|int irq;
-DECL|mem_type|member|uint16_t mem_type:1; /* memory type: BAR_SPACE_MEM/BAR_SPACE_IO */
+DECL|mem_type|member|uint32_t mem_type:1; /* memory type: BAR_SPACE_MEM/BAR_SPACE_IO */
 DECL|pci_dev_info|struct|struct pci_dev_info {
 DECL|size|member|uint32_t size; /* memory region size */
 DECL|vendor_id|member|uint16_t vendor_id;
