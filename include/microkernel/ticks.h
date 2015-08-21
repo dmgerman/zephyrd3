@@ -1,4 +1,7 @@
 DECL|TICKS_H|macro|TICKS_H
+DECL|fiber_cycle_get_32|macro|fiber_cycle_get_32
+DECL|fiber_tick_get_32|macro|fiber_tick_get_32
+DECL|fiber_tick_get|macro|fiber_tick_get
 DECL|isr_cycle_get_32|macro|isr_cycle_get_32
 DECL|isr_tick_get_32|macro|isr_tick_get_32
 DECL|isr_tick_get|macro|isr_tick_get
