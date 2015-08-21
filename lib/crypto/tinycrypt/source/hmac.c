@@ -1,0 +1,5 @@
+DECL|rekey|function|static void rekey(uint8_t *key, const uint8_t *new_key, uint32_t key_size)
+DECL|tc_hmac_final|function|int32_t tc_hmac_final(uint8_t *tag, uint32_t taglen, TCHmacState_t ctx)
+DECL|tc_hmac_init|function|int32_t tc_hmac_init(TCHmacState_t ctx)
+DECL|tc_hmac_set_key|function|int32_t tc_hmac_set_key(TCHmacState_t ctx, const uint8_t *key, uint32_t key_size)
+DECL|tc_hmac_update|function|int32_t tc_hmac_update(TCHmacState_t ctx, const void *data, uint32_t data_length)
