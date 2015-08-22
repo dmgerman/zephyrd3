@@ -1,5 +1,6 @@
 DECL|PROFILER_CONTEXT_SWITCH_EVENT_ID|macro|PROFILER_CONTEXT_SWITCH_EVENT_ID
 DECL|PROFILER_INTERRUPT_EVENT_ID|macro|PROFILER_INTERRUPT_EVENT_ID
+DECL|PROFILER_SLEEP_EVENT_ID|macro|PROFILER_SLEEP_EVENT_ID
 DECL|__PROFILE_H__|macro|__PROFILE_H__
 DECL|sys_profiler_get_wait_timeout|macro|sys_profiler_get_wait_timeout
 DECL|sys_profiler_get_wait|macro|sys_profiler_get_wait
