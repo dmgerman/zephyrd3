@@ -1,0 +1,2 @@
+DECL|__PROFILE_X86_H__|macro|__PROFILE_X86_H__
+DECL|_sys_current_irq_key_get|function|int _sys_current_irq_key_get(void)
