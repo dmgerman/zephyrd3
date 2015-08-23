@@ -9,10 +9,7 @@ DECL|analyze_stacks|macro|analyze_stacks
 DECL|analyze_stack|function|static void analyze_stack(const char *name, const char *stack, unsigned size, int stack_growth)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
-DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
-DECL|bt_connected|function|static void bt_connected(struct bt_conn *conn)
 DECL|bt_dev|variable|bt_dev
-DECL|bt_disconnected|function|static void bt_disconnected(struct bt_conn *conn)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
@@ -28,7 +25,6 @@ DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const 
 DECL|bt_start_scanning|function|int bt_start_scanning(bt_scan_filter_dup_t filter, bt_le_scan_cb_t cb)
 DECL|bt_stop_advertising|function|int bt_stop_advertising(void)
 DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
-DECL|callback_list|variable|callback_list
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *addr, uint8_t evtype, struct bt_keys *keys)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)

@@ -2,7 +2,10 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(const bt_addr_le_t *peer, uint8_t role)
+DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
+DECL|bt_conn_connected|function|void bt_conn_connected(struct bt_conn *conn)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer)
+DECL|bt_conn_disconnected|function|static void bt_conn_disconnected(struct bt_conn *conn)
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
 DECL|bt_conn_get|function|struct bt_conn *bt_conn_get(struct bt_conn *conn)
@@ -20,6 +23,7 @@ DECL|bt_conn_set_auto_conn|function|void bt_conn_set_auto_conn(struct bt_conn *c
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
 DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
 DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
+DECL|callback_list|variable|callback_list
 DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
 DECL|conns|variable|conns
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
