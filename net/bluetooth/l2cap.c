@@ -14,7 +14,7 @@ DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_con
 DECL|bt_l2cap_init|function|int bt_l2cap_init(void)
 DECL|bt_l2cap_recv|function|void bt_l2cap_recv(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_l2cap_send|function|void bt_l2cap_send(struct bt_conn *conn, uint16_t cid, struct bt_buf *buf)
-DECL|bt_l2cap_update_conn_param|function|void bt_l2cap_update_conn_param(struct bt_conn *conn)
+DECL|bt_l2cap_update_conn_param|function|int bt_l2cap_update_conn_param(struct bt_conn *conn)
 DECL|channels|variable|channels
 DECL|get_ident|function|static uint8_t get_ident(struct bt_conn *conn)
 DECL|le_conn_param_rsp|function|static void le_conn_param_rsp(struct bt_conn *conn, struct bt_buf *buf)
