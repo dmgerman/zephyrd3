@@ -52,6 +52,7 @@ DECL|desc|member|struct _k_pipe_desc desc;
 DECL|element_size|member|int element_size;
 DECL|element_size|member|int element_size;
 DECL|end_point|member|char *end_point;
+DECL|end_ptr|member|unsigned char *end_ptr;
 DECL|enqueue_point|member|char *enqueue_point;
 DECL|extra|member|} extra;
 DECL|first_marker|member|int first_marker;
@@ -101,7 +102,6 @@ DECL|num_used|member|int num_used;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
 DECL|pEndOrig|member|unsigned char *pEndOrig;
-DECL|pEnd|member|unsigned char *pEnd;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
 DECL|pRead|member|unsigned char *pRead;
 DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid */
