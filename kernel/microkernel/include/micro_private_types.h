@@ -41,7 +41,6 @@ DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
 DECL|Tail|member|struct k_task *Tail;
 DECL|Time|member|} Time;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|XFER_B2R|enumerator|XFER_B2R,
 DECL|XFER_BUSY|enumerator|XFER_BUSY = 0x0002,
 DECL|XFER_IDLE|enumerator|XFER_IDLE = 0x0001,
@@ -259,5 +258,6 @@ DECL|time|member|uint32_t time;
 DECL|total_mem|member|int total_mem;
 DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
+DECL|waiters|member|struct k_args *waiters;
 DECL|waiter|member|struct k_args *waiter;
 DECL|z4|member|struct _z4arg z4;

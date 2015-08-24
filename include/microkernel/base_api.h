@@ -36,10 +36,6 @@ DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
 DECL|ReadMarkers|member|struct _k_pipe_marker_list ReadMarkers;
-DECL|Waiters|member|struct k_args *Waiters;
-DECL|Waiters|member|struct k_args *Waiters;
-DECL|Waiters|member|struct k_args *Waiters;
-DECL|Waiters|member|struct k_args *Waiters;
 DECL|WriteMarkers|member|struct _k_pipe_marker_list WriteMarkers;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
@@ -130,6 +126,10 @@ DECL|transfer|member|struct k_args *transfer;
 DECL|tx_block|member|struct k_block tx_block;
 DECL|tx_data|member|void *tx_data;
 DECL|tx_task|member|ktask_t tx_task;
+DECL|waiters|member|struct k_args *waiters;
+DECL|waiters|member|struct k_args *waiters;
+DECL|waiters|member|struct k_args *waiters;
+DECL|waiters|member|struct k_args *waiters;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
 DECL|writers|member|struct k_args *writers;
