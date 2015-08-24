@@ -45,7 +45,6 @@ DECL|RC_TIME|macro|RC_TIME
 DECL|ReadMarkers|member|struct _k_pipe_marker_list ReadMarkers;
 DECL|Readers|member|struct k_args *Readers;
 DECL|Readers|member|struct k_args *Readers;
-DECL|State|member|uint32_t State;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -128,6 +127,7 @@ DECL|rx_task|member|ktask_t rx_task;
 DECL|sema|member|ksem_t sema;
 DECL|size|member|int size;
 DECL|size|member|uint32_t size;
+DECL|state|member|uint32_t state;
 DECL|transfer|member|struct k_args *transfer;
 DECL|tx_block|member|struct k_block tx_block;
 DECL|tx_data|member|void *tx_data;
