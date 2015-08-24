@@ -26,7 +26,6 @@ DECL|ReqType|member|} ReqType;
 DECL|ReqType|member|} ReqType;
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
-DECL|Sync|member|struct sync_req Sync;
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
@@ -240,6 +239,7 @@ DECL|source|member|void *source;
 DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
+DECL|sync|member|struct sync_req sync;
 DECL|tail|member|struct k_task *tail;
 DECL|task_id|member|ktask_t task_id;
 DECL|task|member|ktask_t task;
