@@ -36,6 +36,7 @@ DECL|base|member|char *base;
 DECL|base|member|char *base;
 DECL|begin_ptr|member|unsigned char *begin_ptr;
 DECL|buffer_size|member|int buffer_size;
+DECL|buffer_size|member|int buffer_size; /* size in bytes, must be first for sysgen */
 DECL|buffer_state|member|_K_PIPE_BUFF_STATE buffer_state;
 DECL|buffer_xfer_busy|member|bool buffer_xfer_busy;
 DECL|count|member|int count;
@@ -61,7 +62,6 @@ DECL|free_space_post_wrap_around|member|int free_space_post_wrap_around;
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
-DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|id|member|ktask_t id;
 DECL|info|member|uint32_t info;
 DECL|k_block|struct|struct k_block {
