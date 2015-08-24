@@ -29,7 +29,6 @@ DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|Params|member|int Params;
-DECL|Prio|member|kpriority_t Prio;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -222,6 +221,7 @@ DECL|pool_block|struct|struct pool_block {
 DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|pool_struct|struct|struct pool_struct {
 DECL|prev|member|struct k_timer *prev;
+DECL|priority|member|kpriority_t priority;
 DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;

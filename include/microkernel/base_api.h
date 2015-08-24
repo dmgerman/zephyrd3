@@ -38,7 +38,6 @@ DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Owner|member|ktask_t Owner;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
-DECL|Prio|member|kpriority_t Prio;
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
@@ -122,6 +121,7 @@ DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|prev|member|struct k_task *prev;
+DECL|priority|member|kpriority_t priority;
 DECL|req_size|member|uint32_t req_size;
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
