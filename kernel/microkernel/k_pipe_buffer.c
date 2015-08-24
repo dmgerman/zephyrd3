@@ -19,7 +19,7 @@ DECL|BuffInit|function|void BuffInit(unsigned char *pBuffer, int *piBuffSize, st
 DECL|CHECK_BUFFER_POINTER|macro|CHECK_BUFFER_POINTER
 DECL|CalcAvailData|function|int CalcAvailData(struct _k_pipe_desc *desc, int *piAvailDataCont, int *piAvailDataAWA)
 DECL|CalcFreeSpace|function|int CalcFreeSpace(struct _k_pipe_desc *desc, int *piFreeSpaceCont, int *piFreeSpaceAWA)
-DECL|MarkerAddLast|function|static int MarkerAddLast(struct _k_pipe_marker_list *pMarkerList, unsigned char *pointer, int iSize, bool bXferBusy)
+DECL|MarkerAddLast|function|static int MarkerAddLast(struct _k_pipe_marker_list *pMarkerList, unsigned char *pointer, int iSize, bool buffer_xfer_busy)
 DECL|MarkerDelete|function|static void MarkerDelete(struct _k_pipe_marker_list *pMarkerList, int index)
 DECL|MarkerFindFree|function|static int MarkerFindFree(struct _k_pipe_marker aMarkers[])
 DECL|MarkerLinkToListAfter|function|static void MarkerLinkToListAfter(struct _k_pipe_marker aMarkers[], int iMarker, int iNewMarker)
