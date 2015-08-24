@@ -102,7 +102,6 @@ DECL|num_used|member|int num_used;
 DECL|original_end_ptr|member|unsigned char *original_end_ptr;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
-DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
@@ -110,6 +109,7 @@ DECL|post_wrap_around_marker|member|int post_wrap_around_marker; /* -1 means no 
 DECL|prev|member|int prev; /* -1 == no predecessor */
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
+DECL|read_guard|member|unsigned char *read_guard; /* can be NULL --> invalid */
 DECL|read_ptr|member|unsigned char *read_ptr;
 DECL|readers|member|struct k_args *readers;
 DECL|readers|member|struct k_args *readers;
