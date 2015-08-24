@@ -35,7 +35,6 @@ DECL|address_in_pool|member|void *address_in_pool;
 DECL|args|member|struct k_args *args;
 DECL|available_data_count|member|int available_data_count;
 DECL|available_data_post_wrap_around|member|int available_data_post_wrap_around; /* AWA == After Wrap Around */
-DECL|bReadWA|member|bool bReadWA;
 DECL|base|member|char *base;
 DECL|base|member|char *base;
 DECL|begin_ptr|member|unsigned char *begin_ptr;
@@ -129,6 +128,7 @@ DECL|waiters|member|struct k_args *waiters;
 DECL|waiters|member|struct k_args *waiters;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
+DECL|wrap_around_read|member|bool wrap_around_read;
 DECL|wrap_around_write|member|bool wrap_around_write;
 DECL|write_guard|member|unsigned char *write_guard; /* can be NULL --> invalid */
 DECL|write_ptr|member|unsigned char *write_ptr;
