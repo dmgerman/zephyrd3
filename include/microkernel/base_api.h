@@ -58,6 +58,7 @@ DECL|extra|member|} extra;
 DECL|first_marker|member|int first_marker;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
+DECL|free_space_count|member|int free_space_count;
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
@@ -65,7 +66,6 @@ DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
-DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
 DECL|iNbrPendingReads|member|int iNbrPendingReads;
 DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|id|member|ktask_t id;
