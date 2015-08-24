@@ -2,8 +2,6 @@ DECL|ANYTASK|macro|ANYTASK
 DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
 DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
-DECL|Base|member|char *Base;
-DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Deqp|member|char *Deqp;
@@ -48,6 +46,8 @@ DECL|args|member|struct k_args *args;
 DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|bXferBusy|member|bool bXferBusy;
+DECL|base|member|char *base;
+DECL|base|member|char *base;
 DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|count|member|int count;
