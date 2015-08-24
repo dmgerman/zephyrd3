@@ -33,7 +33,6 @@ DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
 DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
-DECL|Owner|member|ktask_t Owner;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
@@ -105,6 +104,7 @@ DECL|ktask_t|typedef|typedef int32_t ktask_t;
 DECL|ktimer_t|typedef|typedef uint32_t ktimer_t;
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|next|member|struct k_task *next;
+DECL|owner|member|ktask_t owner;
 DECL|pBegin|member|unsigned char *pBegin;
 DECL|pEndOrig|member|unsigned char *pEndOrig;
 DECL|pEnd|member|unsigned char *pEnd;
