@@ -6,7 +6,6 @@ DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
-DECL|Enqp|member|char *Enqp;
 DECL|Free|member|char *Free;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
@@ -58,6 +57,7 @@ DECL|desc|member|struct _k_pipe_desc desc;
 DECL|element_size|member|int element_size;
 DECL|element_size|member|int element_size;
 DECL|end_point|member|char *end_point;
+DECL|enqueue_point|member|char *enqueue_point;
 DECL|extra|member|} extra;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
