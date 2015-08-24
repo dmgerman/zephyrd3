@@ -103,7 +103,6 @@ DECL|original_end_ptr|member|unsigned char *original_end_ptr;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
-DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid */
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
@@ -131,6 +130,7 @@ DECL|waiters|member|struct k_args *waiters;
 DECL|waiters|member|struct k_args *waiters;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
+DECL|write_guard|member|unsigned char *write_guard; /* can be NULL --> invalid */
 DECL|write_ptr|member|unsigned char *write_ptr;
 DECL|writers|member|struct k_args *writers;
 DECL|writers|member|struct k_args *writers;
