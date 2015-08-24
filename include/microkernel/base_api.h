@@ -103,7 +103,6 @@ DECL|original_end_ptr|member|unsigned char *original_end_ptr;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
-DECL|pRead|member|unsigned char *pRead;
 DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid */
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
@@ -112,6 +111,7 @@ DECL|post_wrap_around_marker|member|int post_wrap_around_marker; /* -1 means no 
 DECL|prev|member|int prev; /* -1 == no predecessor */
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
+DECL|read_ptr|member|unsigned char *read_ptr;
 DECL|readers|member|struct k_args *readers;
 DECL|readers|member|struct k_args *readers;
 DECL|req_size|member|uint32_t req_size;
