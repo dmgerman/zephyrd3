@@ -6,4 +6,4 @@ DECL|cmdPkt_t|typedef|typedef uint32_t cmdPkt_t[CMD_PKT_SIZE_IN_WORDS];
 DECL|cmdPkt|member|cmdPkt_t cmdPkt[]; /* array of command packets */
 DECL|cmd_pkt_set|struct|struct cmd_pkt_set {
 DECL|index|member|uint32_t index; /* index into command packet array */
-DECL|nPkts|member|uint32_t nPkts; /* number of command packets in set */
+DECL|num_packets|member|uint32_t num_packets; /* number of command packets in set */
