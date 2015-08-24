@@ -67,7 +67,6 @@ DECL|iFirstMarker|member|int iFirstMarker;
 DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
 DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
 DECL|iLastMarker|member|int iLastMarker;
-DECL|iNbrMarkers|member|int iNbrMarkers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|iNbrPendingReads|member|int iNbrPendingReads;
 DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|id|member|ktask_t id;
@@ -96,6 +95,7 @@ DECL|mailbox|member|kmbox_t mailbox;
 DECL|next|member|int next; /* -1 == no successor */
 DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
+DECL|num_markers|member|int num_markers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|num_used|member|int num_used;
 DECL|num_used|member|int num_used;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
