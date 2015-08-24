@@ -73,7 +73,7 @@ DECL|bXferBusy|member|bool bXferBusy;
 DECL|desc|member|struct _k_pipe_desc desc;
 DECL|extra|member|} extra;
 DECL|fabort|member|void (*fabort)(void);
-DECL|fstart|member|void (*fstart)(void);
+DECL|fn_start|member|void (*fn_start)(void);
 DECL|group|member|uint32_t group;
 DECL|iAWAMarker|member|int iAWAMarker; /* -1 means no AWAMarkers */
 DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
