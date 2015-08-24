@@ -220,8 +220,8 @@ DECL|pipe_xfer_ack|member|struct _pipe_xfer_ack_arg pipe_xfer_ack;
 DECL|pipe_xfer_req|member|struct _pipe_xfer_req_arg pipe_xfer_req;
 DECL|pipe|member|} pipe;
 DECL|pool_block|struct|struct pool_block {
+DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|pool_struct|struct|struct pool_struct {
-DECL|poolid|member|kmemory_pool_t poolid;
 DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;

@@ -121,7 +121,7 @@ DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid *
 DECL|pWrite|member|unsigned char *pWrite;
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
-DECL|poolid|member|kmemory_pool_t poolid;
+DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|req_size|member|uint32_t req_size;
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
