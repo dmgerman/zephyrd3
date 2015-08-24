@@ -10,7 +10,6 @@ DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
 DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
-DECL|Next|member|int Next; /* -1 == no successor */
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
@@ -94,6 +93,7 @@ DECL|ktimer_t|typedef|typedef uint32_t ktimer_t;
 DECL|level|member|int level;
 DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
+DECL|next|member|int next; /* -1 == no successor */
 DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_used|member|int num_used;
