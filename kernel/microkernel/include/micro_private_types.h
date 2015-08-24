@@ -9,8 +9,6 @@ DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
 DECL|Extra|member|} Extra;
-DECL|Head|member|struct k_args **Head;
-DECL|Head|member|struct k_task *Head;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
@@ -166,6 +164,8 @@ DECL|func|member|kevent_handler_t func;
 DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
+DECL|head|member|struct k_args **head;
+DECL|head|member|struct k_task *head;
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
 DECL|iSizeTotal|member|int iSizeTotal;
 DECL|iSizeTotal|member|int iSizeTotal;
