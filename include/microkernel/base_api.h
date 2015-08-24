@@ -15,7 +15,6 @@ DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
 DECL|ReadMarkers|member|struct _k_pipe_marker_list ReadMarkers;
-DECL|WriteMarkers|member|struct _k_pipe_marker_list WriteMarkers;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
@@ -131,6 +130,7 @@ DECL|workspace|member|char *workspace;
 DECL|wrap_around_read|member|bool wrap_around_read;
 DECL|wrap_around_write|member|bool wrap_around_write;
 DECL|write_guard|member|unsigned char *write_guard; /* can be NULL --> invalid */
+DECL|write_markers|member|struct _k_pipe_marker_list write_markers;
 DECL|write_ptr|member|unsigned char *write_ptr;
 DECL|writers|member|struct k_args *writers;
 DECL|writers|member|struct k_args *writers;
