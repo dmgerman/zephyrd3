@@ -9,8 +9,8 @@ DECL|irq_obj_reg_arg|struct|struct irq_obj_reg_arg {
 DECL|irq_obj|member|kirq_t irq_obj; /* IRQ object identifier */
 DECL|irq|member|uint32_t irq; /* IRQ of device */
 DECL|irq|member|uint32_t irq; /* IRQ used by task IRQ object */
-DECL|taskId|member|ktask_t taskId; /* requesting task */
-DECL|taskId|member|ktask_t taskId; /* task ID of task IRQ object's owner */
+DECL|task_id|member|ktask_t task_id; /* requesting task */
+DECL|task_id|member|ktask_t task_id; /* task ID of task IRQ object's owner */
 DECL|task_irq_ack|function|void task_irq_ack(kirq_t irq_obj /* IRQ object identifier */ )
 DECL|task_irq_alloc|function|uint32_t task_irq_alloc(kirq_t irq_obj, /* IRQ object identifier */ uint32_t irq, /* requested IRQ */ uint32_t priority /* requested interrupt priority */ )
 DECL|task_irq_free|function|void task_irq_free(kirq_t irq_obj /* IRQ object identifier */ )
