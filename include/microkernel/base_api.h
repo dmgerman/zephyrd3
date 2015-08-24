@@ -24,7 +24,6 @@ DECL|Free|member|char *Free;
 DECL|Group|member|uint32_t Group;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
-DECL|Ident|member|ktask_t Ident;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
 DECL|Level|member|int Level;
 DECL|Level|member|int Level;
@@ -89,6 +88,7 @@ DECL|iLastMarker|member|int iLastMarker;
 DECL|iNbrMarkers|member|int iNbrMarkers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|iNbrPendingReads|member|int iNbrPendingReads;
 DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
+DECL|id|member|ktask_t id;
 DECL|info|member|uint32_t info;
 DECL|k_block|struct|struct k_block {
 DECL|k_msg|struct|struct k_msg {
