@@ -1,5 +1,6 @@
 DECL|DEVICE_NAME|macro|DEVICE_NAME
-DECL|ad|variable|ad
+DECL|ad_discov|variable|ad_discov
+DECL|ad_non_discov|variable|ad_non_discov
 DECL|atoi|function|static int atoi(const char *str)
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
