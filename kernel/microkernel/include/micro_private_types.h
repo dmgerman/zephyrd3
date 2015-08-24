@@ -167,9 +167,6 @@ DECL|group|member|ktask_group_t group;
 DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
 DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
-DECL|iSizeTotal|member|int iSizeTotal;
-DECL|iSizeTotal|member|int iSizeTotal;
-DECL|iSizeTotal|member|int iSizeTotal; /* total size of data/free space */
 DECL|iSizeXferred|member|int iSizeXferred;
 DECL|iSizeXferred|member|int iSizeXferred; /* size of data ALREADY Xferred */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
@@ -256,6 +253,9 @@ DECL|timer|member|struct k_timer *timer;
 DECL|timer|member|struct k_timer *timer;
 DECL|time|member|uint32_t time;
 DECL|total_mem|member|int total_mem;
+DECL|total_size|member|int total_size;
+DECL|total_size|member|int total_size;
+DECL|total_size|member|int total_size; /* total size of data/free space */
 DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiters|member|struct k_args *waiters;
