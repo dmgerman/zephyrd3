@@ -22,7 +22,6 @@ DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
-DECL|Params|member|int Params;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
 DECL|ReqInfo|member|struct req_info ReqInfo;
@@ -209,6 +208,7 @@ DECL|pData|member|void *pData; /* if NULL, data is embedded in
 DECL|pPipe|member|struct _k_pipe_struct *pPipe;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
+DECL|params|member|int params;
 DECL|period|member|int32_t period;
 DECL|pipe_ack|member|struct _pipe_ack_arg pipe_ack;
 DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
