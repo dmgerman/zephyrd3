@@ -48,8 +48,6 @@ DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|WriteMarkers|member|struct _k_pipe_marker_list WriteMarkers;
-DECL|Writers|member|struct k_args *Writers;
-DECL|Writers|member|struct k_args *Writers;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
@@ -134,3 +132,5 @@ DECL|tx_data|member|void *tx_data;
 DECL|tx_task|member|ktask_t tx_task;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
+DECL|writers|member|struct k_args *writers;
+DECL|writers|member|struct k_args *writers;
