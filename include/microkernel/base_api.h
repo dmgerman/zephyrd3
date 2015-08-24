@@ -41,8 +41,6 @@ DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
 DECL|ReadMarkers|member|struct _k_pipe_marker_list ReadMarkers;
-DECL|Readers|member|struct k_args *Readers;
-DECL|Readers|member|struct k_args *Readers;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
 DECL|Waiters|member|struct k_args *Waiters;
@@ -119,6 +117,8 @@ DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free 
 DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
+DECL|readers|member|struct k_args *readers;
+DECL|readers|member|struct k_args *readers;
 DECL|req_size|member|uint32_t req_size;
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
