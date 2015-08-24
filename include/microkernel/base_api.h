@@ -66,7 +66,6 @@ DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
-DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|id|member|ktask_t id;
 DECL|info|member|uint32_t info;
 DECL|k_block|struct|struct k_block {
@@ -97,6 +96,7 @@ DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_markers|member|int num_markers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|num_pending_reads|member|int num_pending_reads;
+DECL|num_pending_writes|member|int num_pending_writes;
 DECL|num_used|member|int num_used;
 DECL|num_used|member|int num_used;
 DECL|original_end_ptr|member|unsigned char *original_end_ptr;
