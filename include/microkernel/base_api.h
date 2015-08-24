@@ -99,9 +99,9 @@ DECL|num_conflicts|member|int num_conflicts;
 DECL|num_markers|member|int num_markers; /* Only used if STORE_NBR_MARKERS is defined */
 DECL|num_used|member|int num_used;
 DECL|num_used|member|int num_used;
+DECL|original_end_ptr|member|unsigned char *original_end_ptr;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
-DECL|pEndOrig|member|unsigned char *pEndOrig;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
 DECL|pRead|member|unsigned char *pRead;
 DECL|pWriteGuard|member|unsigned char *pWriteGuard; /* can be NULL --> invalid */
