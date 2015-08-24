@@ -14,8 +14,6 @@ DECL|Dummy|member|int Dummy;
 DECL|Dummy|member|struct sync_req Dummy;
 DECL|Dummy|member|uint32_t Dummy;
 DECL|Extra|member|} Extra;
-DECL|Forw|member|struct k_args *Forw;
-DECL|Forw|member|struct k_timer *Forw;
 DECL|Head|member|struct k_args **Head;
 DECL|Head|member|struct k_task *Head;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
@@ -200,6 +198,8 @@ DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
 DECL|mrec|member|struct k_mrec mrec;
 DECL|mutex|member|kmutex_t mutex;
+DECL|next|member|struct k_args *next;
+DECL|next|member|struct k_timer *next;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
