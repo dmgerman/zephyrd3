@@ -6,8 +6,6 @@ DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|ENDLIST|macro|ENDLIST
 DECL|Free|member|char *Free;
-DECL|Hmark|member|int Hmark;
-DECL|Hmark|member|int Hmark;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
 DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
@@ -60,6 +58,8 @@ DECL|extra|member|} extra;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
 DECL|group|member|uint32_t group;
+DECL|high_watermark|member|int high_watermark;
+DECL|high_watermark|member|int high_watermark;
 DECL|iAWAMarker|member|int iAWAMarker; /* -1 means no AWAMarkers */
 DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
