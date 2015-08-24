@@ -34,6 +34,7 @@ DECL|_k_sem_struct|struct|struct _k_sem_struct {
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|args|member|struct k_args *args;
 DECL|available_data_count|member|int available_data_count;
+DECL|available_data_post_wrap_around|member|int available_data_post_wrap_around; /* AWA == After Wrap Around */
 DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|base|member|char *base;
@@ -64,7 +65,6 @@ DECL|free_space_post_wrap_around|member|int free_space_post_wrap_around;
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
-DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|id|member|ktask_t id;
