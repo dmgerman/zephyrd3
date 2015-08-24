@@ -20,8 +20,6 @@ DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
-DECL|ReqType|member|} ReqType;
-DECL|ReqType|member|} ReqType;
 DECL|Sema|member|ksem_t Sema;
 DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
@@ -227,6 +225,8 @@ DECL|req_info|member|struct req_info req_info;
 DECL|req_info|member|struct req_info req_info;
 DECL|req_info|struct|struct req_info {
 DECL|req_size|member|int req_size;
+DECL|req_type|member|} req_type;
+DECL|req_type|member|} req_type;
 DECL|rind|member|int rind;
 DECL|rval|member|int rval;
 DECL|s1|member|struct _s1arg s1;

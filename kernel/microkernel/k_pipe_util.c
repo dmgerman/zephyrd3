@@ -6,7 +6,7 @@ DECL|_k_pipe_option_get|function|K_PIPE_OPTION _k_pipe_option_get(K_ARGS_ARGS *a
 DECL|_k_pipe_option_set|function|void _k_pipe_option_set(K_ARGS_ARGS *args, K_PIPE_OPTION option)
 DECL|_k_pipe_request_status_set|function|void _k_pipe_request_status_set(struct _pipe_xfer_req_arg *pipe_xfer_req,PIPE_REQUEST_STATUS status)
 DECL|_k_pipe_request_type_get|function|REQ_TYPE _k_pipe_request_type_get(K_ARGS_ARGS *args)
-DECL|_k_pipe_request_type_set|function|void _k_pipe_request_type_set(K_ARGS_ARGS *args, REQ_TYPE ReqType)
+DECL|_k_pipe_request_type_set|function|void _k_pipe_request_type_set(K_ARGS_ARGS *args, REQ_TYPE req_type)
 DECL|_k_pipe_time_type_get|function|TIME_TYPE _k_pipe_time_type_get(K_ARGS_ARGS *args)
 DECL|_k_pipe_time_type_set|function|void _k_pipe_time_type_set(K_ARGS_ARGS *args, TIME_TYPE TimeType)
 DECL|mycopypacket|function|void mycopypacket(struct k_args **out, struct k_args *in)
