@@ -149,6 +149,8 @@ DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
+DECL|data_ptr|member|void *data_ptr;
+DECL|data_ptr|member|void *data_ptr; /* if NULL, data is embedded in
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
 DECL|destination|member|void *destination;
@@ -203,8 +205,6 @@ DECL|nsem|member|int nsem;
 DECL|opt|member|int opt;
 DECL|opt|member|int opt;
 DECL|p1|member|struct _p1arg p1;
-DECL|pData|member|void *pData;
-DECL|pData|member|void *pData; /* if NULL, data is embedded in
 DECL|pPipe|member|struct _k_pipe_struct *pPipe;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
