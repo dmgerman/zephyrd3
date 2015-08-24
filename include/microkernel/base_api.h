@@ -4,7 +4,6 @@ DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
 DECL|Free|member|char *Free;
 DECL|Hmark|member|int Hmark;
@@ -53,6 +52,7 @@ DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|current_owner_priority|member|kpriority_t current_owner_priority;
+DECL|dequeue_point|member|char *dequeue_point;
 DECL|desc|member|struct _k_pipe_desc desc;
 DECL|element_size|member|int element_size;
 DECL|element_size|member|int element_size;
