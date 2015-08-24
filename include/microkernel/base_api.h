@@ -31,7 +31,6 @@ DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
 DECL|Nused|member|int Nused;
 DECL|Nused|member|int Nused;
-DECL|OwnerCurrentPrio|member|kpriority_t OwnerCurrentPrio;
 DECL|OwnerOriginalPrio|member|kpriority_t OwnerOriginalPrio;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
@@ -65,6 +64,7 @@ DECL|args|member|struct k_args *args;
 DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|bXferBusy|member|bool bXferBusy;
+DECL|current_owner_priority|member|kpriority_t current_owner_priority;
 DECL|desc|member|struct _k_pipe_desc desc;
 DECL|extra|member|} extra;
 DECL|fn_abort|member|void (*fn_abort)(void);
