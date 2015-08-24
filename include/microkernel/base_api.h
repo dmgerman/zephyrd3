@@ -59,7 +59,6 @@ DECL|fn_start|member|void (*fn_start)(void);
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
-DECL|iAWAMarker|member|int iAWAMarker; /* -1 means no AWAMarkers */
 DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
 DECL|iBuffSize|member|int iBuffSize;
@@ -110,6 +109,7 @@ DECL|pWrite|member|unsigned char *pWrite;
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
+DECL|post_wrap_around_marker|member|int post_wrap_around_marker; /* -1 means no post wrap around markers */
 DECL|prev|member|int prev; /* -1 == no predecessor */
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
