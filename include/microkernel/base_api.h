@@ -37,6 +37,7 @@ DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|base|member|char *base;
 DECL|base|member|char *base;
+DECL|buffer_size|member|int buffer_size;
 DECL|buffer_xfer_busy|member|bool buffer_xfer_busy;
 DECL|count|member|int count;
 DECL|count|member|int count;
@@ -60,7 +61,6 @@ DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
 DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
-DECL|iBuffSize|member|int iBuffSize;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
 DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
