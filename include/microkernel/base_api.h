@@ -11,7 +11,6 @@ DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
-DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
@@ -111,6 +110,7 @@ DECL|pWrite|member|unsigned char *pWrite;
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
+DECL|prev|member|int prev; /* -1 == no predecessor */
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
 DECL|readers|member|struct k_args *readers;
