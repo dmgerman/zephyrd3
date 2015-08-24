@@ -14,7 +14,6 @@ DECL|RC_FAIL|macro|RC_FAIL
 DECL|RC_INCOMPLETE|macro|RC_INCOMPLETE
 DECL|RC_OK|macro|RC_OK
 DECL|RC_TIME|macro|RC_TIME
-DECL|ReadMarkers|member|struct _k_pipe_marker_list ReadMarkers;
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x00000001,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
@@ -107,6 +106,7 @@ DECL|prev|member|int prev; /* -1 == no predecessor */
 DECL|prev|member|struct k_task *prev;
 DECL|priority|member|kpriority_t priority;
 DECL|read_guard|member|unsigned char *read_guard; /* can be NULL --> invalid */
+DECL|read_markers|member|struct _k_pipe_marker_list read_markers;
 DECL|read_ptr|member|unsigned char *read_ptr;
 DECL|readers|member|struct k_args *readers;
 DECL|readers|member|struct k_args *readers;
