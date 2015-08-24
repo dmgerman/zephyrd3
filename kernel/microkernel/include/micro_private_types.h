@@ -1,6 +1,4 @@
 DECL|Action|member|MovedAction Action;
-DECL|Args|member|K_ARGS_ARGS Args;
-DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
 DECL|Comm|member|int Comm;
@@ -144,6 +142,8 @@ DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|alloc|member|bool alloc;
 DECL|argp|member|void *argp;
+DECL|args|member|K_ARGS_ARGS args;
+DECL|args|member|struct k_args *args;
 DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
 DECL|block_size|member|int block_size;

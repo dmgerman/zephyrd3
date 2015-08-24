@@ -1,5 +1,4 @@
 DECL|ANYTASK|macro|ANYTASK
-DECL|Args|member|struct k_args *Args;
 DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
 DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
@@ -67,6 +66,7 @@ DECL|_k_pipe_struct|struct|struct _k_pipe_struct {
 DECL|_k_sem_struct|struct|struct _k_sem_struct {
 DECL|aMarkers|member|struct _k_pipe_marker aMarkers[MAXNBR_PIPE_MARKERS];
 DECL|address_in_pool|member|void *address_in_pool;
+DECL|args|member|struct k_args *args;
 DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|bXferBusy|member|bool bXferBusy;
