@@ -53,6 +53,7 @@ DECL|element_size|member|int element_size;
 DECL|end_point|member|char *end_point;
 DECL|enqueue_point|member|char *enqueue_point;
 DECL|extra|member|} extra;
+DECL|first_marker|member|int first_marker;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
 DECL|group|member|uint32_t group;
@@ -63,7 +64,6 @@ DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
 DECL|iBuffSize|member|int iBuffSize;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
-DECL|iFirstMarker|member|int iFirstMarker;
 DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
 DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
 DECL|iLastMarker|member|int iLastMarker;
