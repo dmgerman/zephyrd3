@@ -21,7 +21,6 @@ DECL|Enqp|member|char *Enqp;
 DECL|Esize|member|int Esize;
 DECL|Esize|member|int Esize;
 DECL|Free|member|char *Free;
-DECL|Group|member|uint32_t Group;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
@@ -75,6 +74,7 @@ DECL|desc|member|struct _k_pipe_desc desc;
 DECL|extra|member|} extra;
 DECL|fabort|member|void (*fabort)(void);
 DECL|fstart|member|void (*fstart)(void);
+DECL|group|member|uint32_t group;
 DECL|iAWAMarker|member|int iAWAMarker; /* -1 means no AWAMarkers */
 DECL|iAvailDataAWA|member|int iAvailDataAWA; /* AWA == After Wrap Around */
 DECL|iAvailDataCont|member|int iAvailDataCont;
