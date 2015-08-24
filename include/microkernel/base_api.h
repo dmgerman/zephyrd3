@@ -10,8 +10,6 @@ DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
 DECL|Enqp|member|char *Enqp;
-DECL|Esize|member|int Esize;
-DECL|Esize|member|int Esize;
 DECL|Free|member|char *Free;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
@@ -58,6 +56,8 @@ DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|current_owner_priority|member|kpriority_t current_owner_priority;
 DECL|desc|member|struct _k_pipe_desc desc;
+DECL|element_size|member|int element_size;
+DECL|element_size|member|int element_size;
 DECL|extra|member|} extra;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
