@@ -23,8 +23,6 @@ DECL|Free|member|char *Free;
 DECL|Hmark|member|int Hmark;
 DECL|Hmark|member|int Hmark;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
-DECL|Level|member|int Level;
-DECL|Level|member|int Level;
 DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
@@ -101,6 +99,8 @@ DECL|ksemg_t|typedef|typedef ksem_t *ksemg_t;
 DECL|ktask_group_t|typedef|typedef uint32_t ktask_group_t;
 DECL|ktask_t|typedef|typedef int32_t ktask_t;
 DECL|ktimer_t|typedef|typedef uint32_t ktimer_t;
+DECL|level|member|int level;
+DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|next|member|struct k_task *next;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
