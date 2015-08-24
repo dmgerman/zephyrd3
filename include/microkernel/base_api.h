@@ -66,7 +66,6 @@ DECL|iBuffSize|member|int iBuffSize;
 DECL|iBufferSize|member|int iBufferSize; /* size in bytes, must be first for sysgen */
 DECL|iFreeSpaceAWA|member|int iFreeSpaceAWA;
 DECL|iFreeSpaceCont|member|int iFreeSpaceCont;
-DECL|iLastMarker|member|int iLastMarker;
 DECL|iNbrPendingReads|member|int iNbrPendingReads;
 DECL|iNbrPendingWrites|member|int iNbrPendingWrites;
 DECL|id|member|ktask_t id;
@@ -89,6 +88,7 @@ DECL|ksemg_t|typedef|typedef ksem_t *ksemg_t;
 DECL|ktask_group_t|typedef|typedef uint32_t ktask_group_t;
 DECL|ktask_t|typedef|typedef int32_t ktask_t;
 DECL|ktimer_t|typedef|typedef uint32_t ktimer_t;
+DECL|last_marker|member|int last_marker;
 DECL|level|member|int level;
 DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
