@@ -21,9 +21,9 @@ DECL|CalcAvailData|function|int CalcAvailData(struct _k_pipe_desc *desc, int *pi
 DECL|CalcFreeSpace|function|int CalcFreeSpace(struct _k_pipe_desc *desc, int *piFreeSpaceCont, int *piFreeSpaceAWA)
 DECL|MarkerAddLast|function|static int MarkerAddLast(struct _k_pipe_marker_list *pMarkerList, unsigned char *pointer, int iSize, bool buffer_xfer_busy)
 DECL|MarkerDelete|function|static void MarkerDelete(struct _k_pipe_marker_list *pMarkerList, int index)
-DECL|MarkerFindFree|function|static int MarkerFindFree(struct _k_pipe_marker aMarkers[])
-DECL|MarkerLinkToListAfter|function|static void MarkerLinkToListAfter(struct _k_pipe_marker aMarkers[], int iMarker, int iNewMarker)
-DECL|MarkerUnlinkFromList|function|static void MarkerUnlinkFromList(struct _k_pipe_marker aMarkers[], int iMarker, int *piPredecessor, int *piSuccessor)
+DECL|MarkerFindFree|function|static int MarkerFindFree(struct _k_pipe_marker markers[])
+DECL|MarkerLinkToListAfter|function|static void MarkerLinkToListAfter(struct _k_pipe_marker markers[], int iMarker, int iNewMarker)
+DECL|MarkerUnlinkFromList|function|static void MarkerUnlinkFromList(struct _k_pipe_marker markers[], int iMarker, int *piPredecessor, int *piSuccessor)
 DECL|MarkersClear|function|static void MarkersClear(struct _k_pipe_marker_list *pMarkerList)
 DECL|STORE_NBR_MARKERS|macro|STORE_NBR_MARKERS
 DECL|ScanMarkers|function|static int ScanMarkers(struct _k_pipe_marker_list *pMarkerList, int *piSizeBWA, int *piSizeAWA, int *piNbrPendingXfers)

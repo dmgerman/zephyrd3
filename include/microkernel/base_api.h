@@ -31,7 +31,6 @@ DECL|_k_pipe_marker_list|struct|struct _k_pipe_marker_list {
 DECL|_k_pipe_marker|struct|struct _k_pipe_marker {
 DECL|_k_pipe_struct|struct|struct _k_pipe_struct {
 DECL|_k_sem_struct|struct|struct _k_sem_struct {
-DECL|aMarkers|member|struct _k_pipe_marker aMarkers[MAXNBR_PIPE_MARKERS];
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|args|member|struct k_args *args;
 DECL|bReadWA|member|bool bReadWA;
@@ -91,6 +90,7 @@ DECL|last_marker|member|int last_marker;
 DECL|level|member|int level;
 DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
+DECL|markers|member|struct _k_pipe_marker markers[MAXNBR_PIPE_MARKERS];
 DECL|next|member|int next; /* -1 == no successor */
 DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
