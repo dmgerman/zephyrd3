@@ -35,7 +35,6 @@ DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
 DECL|TERM_XXX|enumerator|TERM_XXX = TERM_FORCED | TERM_SATISFIED | TERM_TMO
-DECL|Tail|member|struct k_task *Tail;
 DECL|Time|member|} Time;
 DECL|XFER_B2R|enumerator|XFER_B2R,
 DECL|XFER_BUSY|enumerator|XFER_BUSY = 0x0002,
@@ -244,6 +243,7 @@ DECL|source|member|void *source;
 DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
 DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
+DECL|tail|member|struct k_task *tail;
 DECL|task_id|member|ktask_t task_id;
 DECL|task|member|ktask_t task;
 DECL|task|member|ktask_t task;
