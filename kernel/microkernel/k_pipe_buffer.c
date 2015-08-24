@@ -27,4 +27,4 @@ DECL|MarkerUnlinkFromList|function|static void MarkerUnlinkFromList(struct _k_pi
 DECL|MarkersClear|function|static void MarkersClear(struct _k_pipe_marker_list *pMarkerList)
 DECL|STORE_NBR_MARKERS|macro|STORE_NBR_MARKERS
 DECL|ScanMarkers|function|static int ScanMarkers(struct _k_pipe_marker_list *pMarkerList, int *piSizeBWA, int *piSizeAWA, int *piNbrPendingXfers)
-DECL|pipe_intrusion_check|function|static void pipe_intrusion_check(struct _k_pipe_desc *desc, unsigned char *pBegin, int iSize)
+DECL|pipe_intrusion_check|function|static void pipe_intrusion_check(struct _k_pipe_desc *desc, unsigned char *begin_ptr, int iSize)

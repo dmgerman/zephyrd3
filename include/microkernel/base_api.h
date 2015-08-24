@@ -37,6 +37,7 @@ DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|base|member|char *base;
 DECL|base|member|char *base;
+DECL|begin_ptr|member|unsigned char *begin_ptr;
 DECL|buffer_size|member|int buffer_size;
 DECL|buffer_xfer_busy|member|bool buffer_xfer_busy;
 DECL|count|member|int count;
@@ -99,7 +100,6 @@ DECL|num_used|member|int num_used;
 DECL|num_used|member|int num_used;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
-DECL|pBegin|member|unsigned char *pBegin;
 DECL|pEndOrig|member|unsigned char *pEndOrig;
 DECL|pEnd|member|unsigned char *pEnd;
 DECL|pReadGuard|member|unsigned char *pReadGuard; /* can be NULL --> invalid */
