@@ -7,12 +7,6 @@ DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|Confl|member|int Confl;
-DECL|Count|member|int Count;
-DECL|Count|member|int Count;
-DECL|Count|member|int Count;
-DECL|Count|member|int Count;
-DECL|Count|member|int Count;
-DECL|Count|member|int Count;
 DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
@@ -57,6 +51,12 @@ DECL|args|member|struct k_args *args;
 DECL|bReadWA|member|bool bReadWA;
 DECL|bWriteWA|member|bool bWriteWA;
 DECL|bXferBusy|member|bool bXferBusy;
+DECL|count|member|int count;
+DECL|count|member|int count;
+DECL|count|member|int count;
+DECL|count|member|int count;
+DECL|count|member|int count;
+DECL|count|member|int count;
 DECL|current_owner_priority|member|kpriority_t current_owner_priority;
 DECL|desc|member|struct _k_pipe_desc desc;
 DECL|extra|member|} extra;
