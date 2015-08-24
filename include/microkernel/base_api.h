@@ -6,7 +6,6 @@ DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
-DECL|Confl|member|int Confl;
 DECL|Deqp|member|char *Deqp;
 DECL|ENDLIST|macro|ENDLIST
 DECL|Endp|member|char *Endp;
@@ -99,6 +98,7 @@ DECL|level|member|int level;
 DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|next|member|struct k_task *next;
+DECL|num_conflicts|member|int num_conflicts;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
 DECL|pBegin|member|unsigned char *pBegin;
