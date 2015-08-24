@@ -20,14 +20,14 @@ DECL|i2c_api_io|typedef|typedef int (*i2c_api_io)(struct device *dev, unsigned c
 DECL|i2c_api_resume|typedef|typedef int (*i2c_api_resume)(struct device *dev);
 DECL|i2c_api_suspend|typedef|typedef int (*i2c_api_suspend)(struct device *dev);
 DECL|i2c_callback|typedef|typedef void (*i2c_callback)(struct device *dev, uint32_t context);
-DECL|i2c_configure|function|inline int i2c_configure(struct device *dev, struct i2c_config *config)
+DECL|i2c_configure|function|static inline int i2c_configure(struct device *dev, struct i2c_config *config)
 DECL|i2c_config|struct|struct i2c_config {
 DECL|i2c_driver_api|struct|struct i2c_driver_api {
-DECL|i2c_read|function|inline int i2c_read(struct device *dev, unsigned char *buf, uint32_t len)
-DECL|i2c_resume|function|inline int i2c_resume(struct device *dev)
+DECL|i2c_read|function|static inline int i2c_read(struct device *dev, unsigned char *buf, uint32_t len)
+DECL|i2c_resume|function|static inline int i2c_resume(struct device *dev)
 DECL|i2c_rom_config|struct|struct i2c_rom_config {
-DECL|i2c_suspend|function|inline int i2c_suspend(struct device *dev)
-DECL|i2c_write|function|inline int i2c_write(struct device *dev, unsigned char *buf, uint32_t len)
+DECL|i2c_suspend|function|static inline int i2c_suspend(struct device *dev)
+DECL|i2c_write|function|static inline int i2c_write(struct device *dev, unsigned char *buf, uint32_t len)
 DECL|interrupt_mask|member|uint32_t interrupt_mask;
 DECL|interrupt_vector|member|uint32_t interrupt_vector;
 DECL|read|member|i2c_api_io read;
