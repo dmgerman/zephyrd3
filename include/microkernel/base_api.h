@@ -4,7 +4,6 @@ DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
 DECL|Buffer|member|char *Buffer; /* pointer to statically allocated buffer */
 DECL|ENDLIST|macro|ENDLIST
-DECL|Free|member|char *Free;
 DECL|K_PIPE_OPTION|typedef|} K_PIPE_OPTION;
 DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
@@ -59,6 +58,7 @@ DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fn_start|member|void (*fn_start)(void);
 DECL|free_space_count|member|int free_space_count;
 DECL|free_space_post_wrap_around|member|int free_space_post_wrap_around;
+DECL|free|member|char *free;
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
