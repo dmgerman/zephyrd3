@@ -13,8 +13,6 @@ DECL|MAXNBR_PIPE_MARKERS|macro|MAXNBR_PIPE_MARKERS
 DECL|Nelms|member|int Nelms;
 DECL|Nelms|member|int Nelms;
 DECL|Next|member|int Next; /* -1 == no successor */
-DECL|Nused|member|int Nused;
-DECL|Nused|member|int Nused;
 DECL|Prev|member|int Prev; /* -1 == no predecessor */
 DECL|RC_ALIGNMENT|macro|RC_ALIGNMENT
 DECL|RC_FAIL|macro|RC_FAIL
@@ -99,6 +97,8 @@ DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
+DECL|num_used|member|int num_used;
+DECL|num_used|member|int num_used;
 DECL|original_owner_priority|member|kpriority_t original_owner_priority;
 DECL|owner|member|ktask_t owner;
 DECL|pBegin|member|unsigned char *pBegin;
