@@ -18,5 +18,6 @@ DECL|mem_type|member|uint32_t mem_type:1; /* memory type: BAR_SPACE_MEM/BAR_SPAC
 DECL|pci_bus_scan_init|macro|pci_bus_scan_init
 DECL|pci_bus_scan|function|static inline int pci_bus_scan(struct pci_dev_info *dev_info)
 DECL|pci_dev_info|struct|struct pci_dev_info {
+DECL|pci_show|macro|pci_show
 DECL|size|member|uint32_t size; /* memory region size */
 DECL|vendor_id|member|uint16_t vendor_id;
