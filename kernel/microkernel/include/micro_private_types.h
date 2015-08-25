@@ -1,6 +1,5 @@
 DECL|Comm|member|int Comm;
 DECL|Ctxt|member|K_CREF Ctxt;
-DECL|Extra|member|} Extra;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
@@ -148,6 +147,7 @@ DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|evstr|struct|struct evstr {
+DECL|extra|member|} extra;
 DECL|frag_tab|member|struct pool_block *frag_tab;
 DECL|func|member|int (*func)();
 DECL|func|member|kevent_handler_t func;
