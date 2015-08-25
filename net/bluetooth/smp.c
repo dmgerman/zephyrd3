@@ -8,6 +8,7 @@ DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
 DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
@@ -54,7 +55,6 @@ DECL|local_dist|member|uint8_t local_dist;
 DECL|method|member|uint8_t method;
 DECL|pairing_method|enum|enum pairing_method {
 DECL|pcnf|member|uint8_t pcnf[16];
-DECL|pending_encrypt|member|bool pending_encrypt;
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
