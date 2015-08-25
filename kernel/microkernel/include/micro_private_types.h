@@ -3,9 +3,6 @@ DECL|Comm|member|int Comm;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
 DECL|Ctxt|member|K_CREF Ctxt;
-DECL|Dummy|member|int Dummy;
-DECL|Dummy|member|struct sync_req Dummy;
-DECL|Dummy|member|uint32_t Dummy;
 DECL|Extra|member|} Extra;
 DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
@@ -148,6 +145,9 @@ DECL|data_ptr|member|void *data_ptr; /* if NULL, data is embedded in
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
 DECL|destination|member|void *destination;
+DECL|dummy|member|int dummy;
+DECL|dummy|member|struct sync_req dummy;
+DECL|dummy|member|uint32_t dummy;
 DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
