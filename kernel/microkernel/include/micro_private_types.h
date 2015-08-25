@@ -157,7 +157,6 @@ DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
-DECL|iTotalSize|member|uint32_t iTotalSize;
 DECL|id|member|int id; /* if it is a Xfer to/from a buffer,
 DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
@@ -252,6 +251,7 @@ DECL|total_mem|member|int total_mem;
 DECL|total_size|member|int total_size;
 DECL|total_size|member|int total_size;
 DECL|total_size|member|int total_size; /* total size of data/free space */
+DECL|total_size|member|uint32_t total_size;
 DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiters|member|struct k_args *waiters;
