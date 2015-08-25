@@ -1,4 +1,3 @@
-DECL|Action|member|MovedAction Action;
 DECL|Comm|member|int Comm;
 DECL|Ctxt|member|K_CREF Ctxt;
 DECL|Extra|member|} Extra;
@@ -117,6 +116,7 @@ DECL|_s1arg|struct|struct _s1arg {
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
+DECL|action|member|MovedAction action;
 DECL|alloc|member|bool alloc;
 DECL|argp|member|void *argp;
 DECL|args|member|K_ARGS_ARGS args;
