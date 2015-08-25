@@ -158,7 +158,6 @@ DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
-DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
 DECL|id|member|int id; /* if it is a Xfer to/from a buffer,
 DECL|id|member|kpipe_t id;
@@ -231,6 +230,7 @@ DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|size|member|int size;
 DECL|size|member|int size;
+DECL|size|member|int size; /* amount of data Xferred */
 DECL|source|member|void *source;
 DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
 DECL|status|member|int status;
