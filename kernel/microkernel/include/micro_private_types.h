@@ -1,6 +1,5 @@
 DECL|Action|member|MovedAction Action;
 DECL|Comm|member|int Comm;
-DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|Ctxt|member|K_CREF Ctxt;
 DECL|Extra|member|} Extra;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
@@ -133,6 +132,7 @@ DECL|blocktable|member|struct block_stat *blocktable;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
 DECL|c1|member|struct _c1arg c1;
+DECL|continuation_receive|member|struct k_args *continuation_receive;
 DECL|continuation_send|member|struct k_args *continuation_send;
 DECL|count|member|int count;
 DECL|count|member|int count;
