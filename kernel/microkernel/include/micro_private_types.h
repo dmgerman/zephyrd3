@@ -10,7 +10,6 @@ DECL|MVDACT_ROS_SND|macro|MVDACT_ROS_SND
 DECL|MVDACT_SNDACK|macro|MVDACT_SNDACK
 DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
-DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
@@ -174,6 +173,7 @@ DECL|min_nr_blocks|member|int min_nr_blocks;
 DECL|minblock_size|member|int minblock_size;
 DECL|mmap|member|kmemory_map_t mmap;
 DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
+DECL|moved_req|member|struct moved_req moved_req;
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
 DECL|mrec|member|struct k_mrec mrec;
