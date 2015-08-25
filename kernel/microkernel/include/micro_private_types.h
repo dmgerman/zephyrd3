@@ -194,12 +194,12 @@ DECL|num_pending_xfers|member|int num_pending_xfers; /* # data Xfers (still) in 
 DECL|opt|member|int opt;
 DECL|opt|member|int opt;
 DECL|p1|member|struct _p1arg p1;
-DECL|pPipe|member|struct _k_pipe_struct *pPipe;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
 DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
 DECL|params|member|int params;
 DECL|period|member|int32_t period;
 DECL|pipe_ack|member|struct _pipe_ack_arg pipe_ack;
+DECL|pipe_ptr|member|struct _k_pipe_struct *pipe_ptr;
 DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_xfer_ack|member|struct _pipe_xfer_ack_arg pipe_xfer_ack;
 DECL|pipe_xfer_req|member|struct _pipe_xfer_req_arg pipe_xfer_req;
