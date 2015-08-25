@@ -13,7 +13,6 @@ DECL|MVDACT_VALID|macro|MVDACT_VALID
 DECL|MovedAction|typedef|typedef uint32_t MovedAction;
 DECL|MovedReq|member|struct moved_req MovedReq;
 DECL|PIPE_REQUEST_STATUS|typedef|} PIPE_REQUEST_STATUS;
-DECL|Setup|member|struct moved_req_args_setup Setup;
 DECL|TERM_FORCED|enumerator|TERM_FORCED = 0x0010,
 DECL|TERM_SATISFIED|enumerator|TERM_SATISFIED = 0x0020,
 DECL|TERM_TMO|enumerator|TERM_TMO = 0x0040,
@@ -227,6 +226,7 @@ DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
 DECL|sema|member|ksem_t sema;
+DECL|setup|member|struct moved_req_args_setup setup;
 DECL|size|member|int size;
 DECL|size|member|int size;
 DECL|size|member|int size; /* amount of data Xferred */
