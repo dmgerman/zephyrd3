@@ -3,7 +3,6 @@ DECL|Args|member|K_ARGS_ARGS Args;
 DECL|Args|member|struct k_args *Args;
 DECL|Async|member|struct async_req Async;
 DECL|Async|member|struct async_req Async;
-DECL|Back|member|struct k_timer *Back;
 DECL|Comm|member|int Comm;
 DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
@@ -222,6 +221,7 @@ DECL|pipe|member|} pipe;
 DECL|pool_block|struct|struct pool_block {
 DECL|pool_id|member|kmemory_pool_t pool_id;
 DECL|pool_struct|struct|struct pool_struct {
+DECL|prev|member|struct k_timer *prev;
 DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;

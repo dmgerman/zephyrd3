@@ -3,7 +3,6 @@ DECL|Args|member|struct k_args *Args;
 DECL|BUFF_EMPTY|enumerator|BUFF_EMPTY, /* buffer is empty, disregarding the pending data Xfers
 DECL|BUFF_FULL|enumerator|BUFF_FULL, /* buffer is full, disregarding the pending data Xfers
 DECL|BUFF_OTHER|enumerator|BUFF_OTHER
-DECL|Back|member|struct k_task *Back;
 DECL|Base|member|char *Base;
 DECL|Base|member|char *Base;
 DECL|BuffState|member|_K_PIPE_BUFF_STATE BuffState;
@@ -122,6 +121,7 @@ DECL|pWrite|member|unsigned char *pWrite;
 DECL|pointer_to_data|member|void *pointer_to_data;
 DECL|pointer|member|unsigned char *pointer; /* NULL == non valid marker == free */
 DECL|pool_id|member|kmemory_pool_t pool_id;
+DECL|prev|member|struct k_task *prev;
 DECL|req_size|member|uint32_t req_size;
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
