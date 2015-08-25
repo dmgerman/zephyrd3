@@ -1,0 +1,1 @@
+DECL|__ASM_INLINE_H__|macro|__ASM_INLINE_H__
