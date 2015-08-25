@@ -31,11 +31,10 @@ DECL|SPI_MAX_CLK_FREQ_781KHZ|macro|SPI_MAX_CLK_FREQ_781KHZ
 DECL|SPI_MAX_CLK_FREQ_800KHZ|macro|SPI_MAX_CLK_FREQ_800KHZ
 DECL|SPI_MAX_CLK_FREQ_8MHZ|macro|SPI_MAX_CLK_FREQ_8MHZ
 DECL|__INTEL_SPI_H__|macro|__INTEL_SPI_H__
-DECL|_unused|member|uint32_t _unused:28;
 DECL|callback|member|spi_callback callback;
 DECL|config_func|member|spi_intel_config_t config_func;
-DECL|function|member|uint32_t function:4;
 DECL|irq|member|uint32_t irq;
+DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|regs|member|uint32_t regs;
 DECL|rx_buf_len|member|uint32_t rx_buf_len;
 DECL|rx_buf|member|uint8_t *rx_buf;
