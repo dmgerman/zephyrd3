@@ -31,7 +31,6 @@ DECL|XFER_TYPE|typedef|} XFER_TYPE;
 DECL|XFER_UNDEFINED|enumerator|XFER_UNDEFINED,
 DECL|XFER_W2B|enumerator|XFER_W2B,
 DECL|XFER_W2R|enumerator|XFER_W2R
-DECL|XferType|member|XFER_TYPE XferType; /* W2B, B2R or W2R */
 DECL|_K_SVC_BLOCK_WAITERS_GET|macro|_K_SVC_BLOCK_WAITERS_GET
 DECL|_K_SVC_DEFRAG|macro|_K_SVC_DEFRAG
 DECL|_K_SVC_EVENT_HANDLER_SET|macro|_K_SVC_EVENT_HANDLER_SET
@@ -258,6 +257,7 @@ DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiters|member|struct k_args *waiters;
 DECL|waiter|member|struct k_args *waiter;
+DECL|xfer_type|member|XFER_TYPE xfer_type; /* W2B, B2R or W2R */
 DECL|xferred_size|member|int xferred_size;
 DECL|xferred_size|member|int xferred_size; /* size of data ALREADY Xferred */
 DECL|z4|member|struct _z4arg z4;

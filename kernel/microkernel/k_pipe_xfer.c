@@ -9,4 +9,4 @@ DECL|pipe_read_write|function|static void pipe_read_write(struct _k_pipe_struct 
 DECL|pipe_read|function|static void pipe_read(struct _k_pipe_struct *pipe_ptr, struct k_args *pNewReader)
 DECL|pipe_write|function|static void pipe_write(struct _k_pipe_struct *pipe_ptr, struct k_args *pNewWriter)
 DECL|pipe_xfer_status_update|function|static void pipe_xfer_status_update(struct k_args *pActor, /* ptr to struct k_args to be used by actor */ struct _pipe_xfer_req_arg *pipe_xfer_req, /* ptr to actor's pipe process structure */ int bytesXferred /* # of bytes transferred */ )
-DECL|setup_movedata|function|static void setup_movedata(struct k_args *A, struct _k_pipe_struct *pipe_ptr, XFER_TYPE XferType, struct k_args *pWriter, struct k_args *pReader, void *destination, void *source, uint32_t size, int XferID)
+DECL|setup_movedata|function|static void setup_movedata(struct k_args *A, struct _k_pipe_struct *pipe_ptr, XFER_TYPE xfer_type, struct k_args *pWriter, struct k_args *pReader, void *destination, void *source, uint32_t size, int XferID)
