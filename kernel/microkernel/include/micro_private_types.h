@@ -194,7 +194,6 @@ DECL|opt|member|int opt;
 DECL|opt|member|int opt;
 DECL|p1|member|struct _p1arg p1;
 DECL|pReader|member|struct k_args *pReader; /* if there's a reader involved,
-DECL|pWriter|member|struct k_args *pWriter; /* if there's a writer involved,
 DECL|params|member|int params;
 DECL|period|member|int32_t period;
 DECL|pipe_ack|member|struct _pipe_ack_arg pipe_ack;
@@ -257,6 +256,7 @@ DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiters|member|struct k_args *waiters;
 DECL|waiter|member|struct k_args *waiter;
+DECL|writer_ptr|member|struct k_args *writer_ptr; /* if there's a writer involved,
 DECL|xfer_type|member|XFER_TYPE xfer_type; /* W2B, B2R or W2R */
 DECL|xferred_size|member|int xferred_size;
 DECL|xferred_size|member|int xferred_size; /* size of data ALREADY Xferred */
