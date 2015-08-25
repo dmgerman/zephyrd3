@@ -160,7 +160,6 @@ DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
-DECL|iNbrPendXfers|member|int iNbrPendXfers; /* # data Xfers (still) in progress */
 DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
 DECL|id|member|kpipe_t id;
@@ -191,6 +190,7 @@ DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
 DECL|nrec|member|int nrec;
 DECL|nsem|member|int nsem;
+DECL|num_pending_xfers|member|int num_pending_xfers; /* # data Xfers (still) in progress */
 DECL|opt|member|int opt;
 DECL|opt|member|int opt;
 DECL|p1|member|struct _p1arg p1;
