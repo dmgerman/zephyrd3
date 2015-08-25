@@ -1,6 +1,9 @@
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|ad_non_discov|variable|ad_non_discov
+DECL|appearance_chrc|variable|appearance_chrc
+DECL|appearance_value|variable|appearance_value
+DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|atoi|function|static int atoi(const char *str)
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
@@ -45,6 +48,7 @@ DECL|gap_uuid|variable|gap_uuid
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
+DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
