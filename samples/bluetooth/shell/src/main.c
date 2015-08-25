@@ -44,7 +44,7 @@ DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *co
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
-DECL|read_name|function|static int read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
 DECL|subscribe_destroy|function|static void subscribe_destroy(void *user_data)
