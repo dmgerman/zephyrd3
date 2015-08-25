@@ -1,10 +1,4 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTLLADDR|macro|PRINTLLADDR
-DECL|PRINTLLADDR|macro|PRINTLLADDR
 DECL|coap_error_message|variable|coap_error_message
 DECL|coap_get_context|function|coap_get_context(void *packet)
 DECL|coap_get_header_accept|function|coap_get_header_accept(void *packet, unsigned int *accept)

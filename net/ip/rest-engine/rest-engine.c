@@ -1,10 +1,4 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTLLADDR|macro|PRINTLLADDR
-DECL|PRINTLLADDR|macro|PRINTLLADDR
 DECL|PROCESS_THREAD|function|PROCESS_THREAD(rest_engine_process, ev, data)
 DECL|initialized|variable|initialized
 DECL|rest_activate_resource|function|rest_activate_resource(resource_t *resource, char *path)

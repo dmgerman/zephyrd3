@@ -1,10 +1,4 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINT6ADDR|macro|PRINT6ADDR
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTLLADDR|macro|PRINTLLADDR
-DECL|PRINTLLADDR|macro|PRINTLLADDR
 DECL|classify_notification|function|classify_notification(void *response, int first)
 DECL|coap_generate_token|function|coap_generate_token(uint8_t **token_ptr)
 DECL|coap_get_obs_subject_by_token|function|coap_get_obs_subject_by_token(const uint8_t *token, size_t token_len)
