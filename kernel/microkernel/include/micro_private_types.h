@@ -4,7 +4,6 @@ DECL|ContRcv|member|struct k_args *ContRcv;
 DECL|ContSnd|member|struct k_args *ContSnd;
 DECL|Ctxt|member|K_CREF Ctxt;
 DECL|Extra|member|} Extra;
-DECL|ID|member|int ID; /* if it is a Xfer to/from a buffer,
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
 DECL|MVDACT_INVALID|macro|MVDACT_INVALID
@@ -161,6 +160,7 @@ DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
 DECL|iSize|member|int iSize; /* amount of data Xferred */
 DECL|iTotalSize|member|uint32_t iTotalSize;
+DECL|id|member|int id; /* if it is a Xfer to/from a buffer,
 DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
