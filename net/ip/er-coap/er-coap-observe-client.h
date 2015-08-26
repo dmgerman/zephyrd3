@@ -9,10 +9,10 @@ DECL|NO_REPLY_FROM_SERVER|enumerator|NO_REPLY_FROM_SERVER,
 DECL|OBSERVE_NOT_SUPPORTED|enumerator|OBSERVE_NOT_SUPPORTED,
 DECL|OBSERVE_OK|enumerator|OBSERVE_OK,
 DECL|addr|member|uip_ipaddr_t addr;
+DECL|coap_ctx|member|coap_context_t *coap_ctx;
 DECL|coap_notification_flag_t|typedef|} coap_notification_flag_t;
 DECL|coap_observee_s|struct|struct coap_observee_s {
 DECL|coap_observee_t|typedef|typedef struct coap_observee_s coap_observee_t;
-DECL|ctx|member|coap_context_t ctx;
 DECL|data|member|void *data; /* generic pointer for storing user data */
 DECL|last_observe|member|uint32_t last_observe;
 DECL|next|member|coap_observee_t *next; /* for LIST */
