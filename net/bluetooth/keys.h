@@ -22,7 +22,6 @@ DECL|remote_csrk|member|struct bt_csrk remote_csrk;
 DECL|rpa|member|bt_addr_t rpa;
 DECL|slave_ltk|member|struct bt_ltk slave_ltk;
 DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
 DECL|val|member|uint8_t val[16];
 DECL|val|member|uint8_t val[16];
 DECL|val|member|uint8_t val[16];
