@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|PROCESS_THREAD|function|PROCESS_THREAD(rest_engine_process, ev, data)
+DECL|PROCESS_THREAD|function|PROCESS_THREAD(rest_engine_process, ev, data, buf)
 DECL|initialized|variable|initialized
 DECL|rest_activate_resource|function|rest_activate_resource(resource_t *resource, char *path)
 DECL|rest_get_resources|function|rest_get_resources(void)

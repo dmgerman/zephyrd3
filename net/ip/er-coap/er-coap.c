@@ -23,7 +23,7 @@ DECL|coap_get_payload|function|coap_get_payload(void *packet, const uint8_t **pa
 DECL|coap_get_post_variable|function|coap_get_post_variable(void *packet, const char *name, const char **output)
 DECL|coap_get_query_variable|function|coap_get_query_variable(void *packet, const char *name, const char **output)
 DECL|coap_get_variable|function|coap_get_variable(const char *buffer, size_t length, const char *name, const char **output)
-DECL|coap_init_connection|function|coap_init_connection(uint16_t port)
+DECL|coap_init_connection|function|coap_init_connection(uip_ipaddr_t *server_addr, uint16_t server_port, uip_ipaddr_t *peer_addr, uint16_t peer_port)
 DECL|coap_init_message|function|coap_init_message(void *packet, coap_message_type_t type, uint8_t code, uint16_t mid)
 DECL|coap_is_secure|function|coap_is_secure(void *packet)
 DECL|coap_log_2|function|coap_log_2(uint16_t value)
@@ -59,4 +59,3 @@ DECL|coap_set_status_code|function|coap_set_status_code(void *packet, unsigned i
 DECL|coap_set_token|function|coap_set_token(void *packet, const uint8_t *token, size_t token_len)
 DECL|current_mid|variable|current_mid
 DECL|erbium_status_code|variable|erbium_status_code
-DECL|udp_conn|variable|udp_conn
