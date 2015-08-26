@@ -7,7 +7,6 @@ DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TICKS|macro|WAIT_TICKS
-DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|fiberStack|variable|fiberStack
 DECL|fiber_receive|function|void fiber_receive(void)
 DECL|get_context|function|static inline bool get_context(struct net_context **recv, struct net_context **mcast_recv)

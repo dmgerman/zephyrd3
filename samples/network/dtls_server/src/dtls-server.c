@@ -5,7 +5,6 @@ DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TICKS|macro|WAIT_TICKS
-DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|ecdsa_priv_key|variable|ecdsa_priv_key
 DECL|ecdsa_pub_key_x|variable|ecdsa_pub_key_x
 DECL|ecdsa_pub_key_y|variable|ecdsa_pub_key_y
