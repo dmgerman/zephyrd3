@@ -41,6 +41,8 @@ DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf|struct|struct net_buf {
 DECL|net_calculate_unused|function|static inline unsigned net_calculate_unused(const char *stack, unsigned size, int stack_growth)
 DECL|net_get_stack_dir|function|static inline unsigned net_get_stack_dir(struct net_buf *buf, struct net_buf **ref)
+DECL|net_mbuf_get_reserve|macro|net_mbuf_get_reserve
+DECL|net_mbuf_put|macro|net_mbuf_put
 DECL|net_mbuf|struct|struct net_mbuf {
 DECL|packetbuf_hdr_len|member|uint8_t packetbuf_hdr_len;
 DECL|packetbuf_payload_len|member|int packetbuf_payload_len;
