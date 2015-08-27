@@ -6,6 +6,8 @@ DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_IP|macro|NET_BUF_IP
 DECL|NET_BUF_MAX_DATA|macro|NET_BUF_MAX_DATA
+DECL|NET_BUF_RX|enumerator|NET_BUF_RX = 0,
+DECL|NET_BUF_TX|enumerator|NET_BUF_TX = 1,
 DECL|NET_BUF_UDP|macro|NET_BUF_UDP
 DECL|NET_MAC_BUF_MAX_SIZE|macro|NET_MAC_BUF_MAX_SIZE
 DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
@@ -34,10 +36,13 @@ DECL|net_analyze_stack|function|static inline void net_analyze_stack(const char 
 DECL|net_analyze_stack|macro|net_analyze_stack
 DECL|net_buf_datalen|macro|net_buf_datalen
 DECL|net_buf_data|macro|net_buf_data
-DECL|net_buf_get_reserve|macro|net_buf_get_reserve
-DECL|net_buf_get|macro|net_buf_get
+DECL|net_buf_get_reserve_rx|macro|net_buf_get_reserve_rx
+DECL|net_buf_get_reserve_tx|macro|net_buf_get_reserve_tx
+DECL|net_buf_get_rx|macro|net_buf_get_rx
+DECL|net_buf_get_tx|macro|net_buf_get_tx
 DECL|net_buf_put|macro|net_buf_put
 DECL|net_buf_tail|macro|net_buf_tail
+DECL|net_buf_type|enum|enum net_buf_type {
 DECL|net_buf|struct|struct net_buf {
 DECL|net_calculate_unused|function|static inline unsigned net_calculate_unused(const char *stack, unsigned size, int stack_growth)
 DECL|net_get_stack_dir|function|static inline unsigned net_get_stack_dir(struct net_buf *buf, struct net_buf **ref)
@@ -55,6 +60,7 @@ DECL|pkt_packetbuf_attrs|member|struct packetbuf_attr pkt_packetbuf_attrs[PACKET
 DECL|pkt_packetbufptr|member|uint8_t *pkt_packetbufptr;
 DECL|pkt_packetbuf|member|uint8_t pkt_packetbuf[PACKETBUF_SIZE + PACKETBUF_HDR_SIZE];
 DECL|src|member|linkaddr_t src;
+DECL|type|member|enum net_buf_type type;
 DECL|uip_addr|macro|uip_addr
 DECL|uip_appdatalen|macro|uip_appdatalen
 DECL|uip_appdatalen|member|uint16_t uip_appdatalen;
