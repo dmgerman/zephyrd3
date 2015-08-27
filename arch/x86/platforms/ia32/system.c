@@ -7,5 +7,3 @@ DECL|loapic_init|function|static inline void loapic_init(void)
 DECL|loapic_init|macro|loapic_init
 DECL|pic_init|macro|pic_init
 DECL|pic_init|macro|pic_init
-DECL|uartIrqProg|macro|uartIrqProg
-DECL|uartIrqProg|macro|uartIrqProg
