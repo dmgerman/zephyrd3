@@ -19,6 +19,7 @@ DECL|irq_tx_ready|member|int (*irq_tx_ready)(struct device *dev);
 DECL|irq_update|member|int (*irq_update)(struct device *dev);
 DECL|irq|member|uint8_t irq; /**< interrupt request level */
 DECL|options|member|uint8_t options; /* HW Flow Control option */
+DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|poll_in|member|int (*poll_in)(struct device *dev, unsigned char *p_char);
 DECL|poll_out|member|unsigned char (*poll_out)(struct device *dev, unsigned char out_char);
 DECL|port_init|member|void (*port_init)(struct device *dev,

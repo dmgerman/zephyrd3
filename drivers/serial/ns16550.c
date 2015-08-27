@@ -77,7 +77,7 @@ DECL|REG_MSR|macro|REG_MSR
 DECL|REG_RDR|macro|REG_RDR
 DECL|REG_THR|macro|REG_THR
 DECL|THR|macro|THR
-DECL|ns16550_pci_uart_scan|function|static inline void ns16550_pci_uart_scan(void)
+DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
 DECL|ns16550_uart_driver_api|variable|ns16550_uart_driver_api
 DECL|ns16550_uart_driver_api|variable|ns16550_uart_driver_api
