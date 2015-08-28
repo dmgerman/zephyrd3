@@ -29,6 +29,7 @@ DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
 DECL|cmd_scan|function|static void cmd_scan(int argc, char *argv[])
 DECL|cmd_security|function|static void cmd_security(int argc, char *argv[])
+DECL|commands|variable|commands
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|default_conn|variable|default_conn
