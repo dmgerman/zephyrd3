@@ -10,13 +10,8 @@ DECL|LSPCI_MAX_BUS|macro|LSPCI_MAX_BUS
 DECL|LSPCI_MAX_DEV|macro|LSPCI_MAX_DEV
 DECL|LSPCI_MAX_FUNC|macro|LSPCI_MAX_FUNC
 DECL|LSPCI_MAX_REG|macro|LSPCI_MAX_REG
-DECL|PCI_CLASS_MAX|macro|PCI_CLASS_MAX
 DECL|bar|member|uint32_t bar:4;
-DECL|bus_dev|struct|struct bus_dev {
-DECL|bus|member|uint16_t bus:8;
 DECL|bus|member|uint32_t bus:9;
-DECL|class_bd|variable|class_bd
-DECL|dev|member|uint16_t dev:5;
 DECL|dev|member|uint32_t dev:6;
 DECL|func|member|uint32_t func:4;
 DECL|info|member|struct pci_dev_info info;
@@ -29,6 +24,4 @@ DECL|pci_bus_scan|function|int pci_bus_scan(struct pci_dev_info *dev_info)
 DECL|pci_dev_scan|function|static inline int pci_dev_scan(union pci_addr_reg pci_ctrl_addr,struct pci_dev_info *dev_info)
 DECL|pci_enable_regs|function|void pci_enable_regs(struct pci_dev_info *dev_info)
 DECL|pci_show|function|void pci_show(struct pci_dev_info *dev_info)
-DECL|set|member|uint16_t set:1;
-DECL|unused|member|uint16_t unused:2;
 DECL|unused|member|uint32_t unused:9;
