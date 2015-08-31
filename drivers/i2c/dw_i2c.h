@@ -34,6 +34,7 @@ DECL|i2c_isr_cb_t|typedef|typedef void (*i2c_isr_cb_t)(struct device *port);
 DECL|interrupt_mask|member|uint32_t interrupt_mask;
 DECL|interrupt_vector|member|uint32_t interrupt_vector;
 DECL|lcnt|member|uint16_t lcnt;
+DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|rx_buffer|member|uint8_t *rx_buffer;
 DECL|rx_len|member|uint8_t rx_len;
 DECL|rx_tx_len|member|uint8_t rx_tx_len;
