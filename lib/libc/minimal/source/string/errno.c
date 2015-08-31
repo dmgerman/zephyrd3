@@ -1,0 +1,1 @@
+DECL|errno|variable|errno
