@@ -18,6 +18,7 @@ DECL|bt_conn_lookup_state|function|struct bt_conn *bt_conn_lookup_state(const bt
 DECL|bt_conn_put|function|void bt_conn_put(struct bt_conn *conn)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct bt_buf *buf, uint8_t flags)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
+DECL|bt_conn_security_changed|function|void bt_conn_security_changed(struct bt_conn *conn)
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_send|function|void bt_conn_send(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_conn_set_auto_conn|function|void bt_conn_set_auto_conn(struct bt_conn *conn, bool auto_conn)
