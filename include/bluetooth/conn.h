@@ -8,3 +8,4 @@ DECL|bt_conn_cb|struct|struct bt_conn_cb {
 DECL|bt_security_t|typedef|} bt_security_t;
 DECL|connected|member|void (*connected)(struct bt_conn *conn);
 DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn);
+DECL|identity_resolved|member|void (*identity_resolved)(struct bt_conn *conn,
