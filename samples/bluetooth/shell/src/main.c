@@ -40,6 +40,7 @@ DECL|discover_func|function|static uint8_t discover_func(const struct bt_gatt_at
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
 DECL|gap_uuid|variable|gap_uuid
+DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
