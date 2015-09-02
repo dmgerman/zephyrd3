@@ -40,11 +40,5 @@ DECL|UART_IOAPIC_FLAGS|macro|UART_IOAPIC_FLAGS
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_XTAL_FREQ|macro|UART_XTAL_FREQ
 DECL|__INCboardh|macro|__INCboardh
-DECL|inByte|function|static inline uint8_t inByte(uint32_t addr)
-DECL|inLong|function|static inline uint32_t inLong(uint32_t addr)
-DECL|inWord|function|static inline uint16_t inWord(uint32_t addr)
-DECL|outByte|function|static inline void outByte(uint8_t data, uint32_t addr)
-DECL|outLong|function|static inline void outLong(uint32_t data, uint32_t addr)
-DECL|outWord|function|static inline void outWord(uint16_t data, uint32_t addr)
 DECL|pci_irq2pin|function|static inline int pci_irq2pin(int irq)
 DECL|pci_pin2irq|function|static inline int pci_pin2irq(int pin)
