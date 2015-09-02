@@ -25,6 +25,7 @@ DECL|coap_get_query_variable|function|coap_get_query_variable(void *packet, cons
 DECL|coap_get_variable|function|coap_get_variable(const char *buffer, size_t length, const char *name, const char **output)
 DECL|coap_init_connection|function|coap_init_connection(uip_ipaddr_t *server_addr, uint16_t server_port, uip_ipaddr_t *peer_addr, uint16_t peer_port)
 DECL|coap_init_message|function|coap_init_message(void *packet, coap_message_type_t type, uint8_t code, uint16_t mid)
+DECL|coap_init_mid|function|void coap_init_mid(void)
 DECL|coap_is_secure|function|coap_is_secure(void *packet)
 DECL|coap_log_2|function|coap_log_2(uint16_t value)
 DECL|coap_merge_multi_option|function|coap_merge_multi_option(char **dst, size_t *dst_len, uint8_t *option, size_t option_len, char separator)
