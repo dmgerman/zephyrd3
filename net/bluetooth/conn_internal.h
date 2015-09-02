@@ -26,7 +26,6 @@ DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct bt_buf *rx;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|smp|member|void *smp;
-DECL|src|member|bt_addr_le_t src;
 DECL|state|member|bt_conn_state_t state;
 DECL|timeout|member|void *timeout;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
