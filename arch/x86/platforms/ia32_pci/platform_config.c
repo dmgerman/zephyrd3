@@ -6,10 +6,10 @@ DECL|gpio_dw_isr_0|function|void gpio_dw_isr_0(void *unused)
 DECL|i2c_0_runtime|variable|i2c_0_runtime
 DECL|i2c_config_0_irq|function|void i2c_config_0_irq(struct device *port)
 DECL|i2c_config_dw_0|variable|i2c_config_dw_0
-DECL|ns16550_uart_console_init|function|static int ns16550_uart_console_init(struct device *dev)
-DECL|ns16550_uart_console_init|function|static int ns16550_uart_console_init(struct device *dev)
 DECL|ns16550_uart_dev_cfg|variable|ns16550_uart_dev_cfg
 DECL|ns16550_uart_dev_data|variable|ns16550_uart_dev_data
+DECL|ns16550_uart_init|function|static int ns16550_uart_init(struct device *dev)
+DECL|ns16550_uart_init|function|static int ns16550_uart_init(struct device *dev)
 DECL|spi_config_0_irq|function|void spi_config_0_irq(struct device *dev)
 DECL|spi_config_1_irq|function|void spi_config_1_irq(struct device *dev)
 DECL|spi_intel_config_0|variable|spi_intel_config_0
