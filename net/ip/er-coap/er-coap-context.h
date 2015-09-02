@@ -7,7 +7,6 @@ DECL|WITH_DTLS|macro|WITH_DTLS
 DECL|WITH_DTLS|macro|WITH_DTLS
 DECL|addr|member|struct net_addr addr;
 DECL|buf|member|struct net_buf *buf;
-DECL|coap_context_connect|function|coap_context_connect(coap_context_t *coap_ctx, uip_ipaddr_t *addr, uint16_t port)
 DECL|coap_context_event|macro|coap_context_event
 DECL|coap_context_has_errors|function|coap_context_has_errors(const coap_context_t *coap_ctx)
 DECL|coap_context_init|function|coap_context_init(void)
