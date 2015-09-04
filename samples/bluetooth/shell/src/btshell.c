@@ -11,5 +11,5 @@ DECL|line_queue_init|function|static void line_queue_init(void)
 DECL|prompt|variable|prompt
 DECL|shell_init|function|void shell_init(const char *str, struct shell_cmd *cmds)
 DECL|shell|function|static void shell(int arg1, int arg2)
-DECL|show_commands|function|static void show_commands(void)
+DECL|show_help|function|static void show_help(int argc, char *argv[])
 DECL|stack|variable|stack
