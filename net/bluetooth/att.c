@@ -57,6 +57,7 @@ DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
+DECL|buf|member|struct bt_buf *buf;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
@@ -91,7 +92,6 @@ DECL|len|member|uint8_t len;
 DECL|mtu|member|uint16_t mtu;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
-DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|primary_uuid|variable|primary_uuid
