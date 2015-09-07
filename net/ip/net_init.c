@@ -1,7 +1,9 @@
 DECL|DEBUG|macro|DEBUG
 DECL|DEFAULT_TIMER_WAKEUP|macro|DEFAULT_TIMER_WAKEUP
 DECL|MAX_TIMER_WAKEUP|macro|MAX_TIMER_WAKEUP
+DECL|PRINT_STATISTICS_INTERVAL|macro|PRINT_STATISTICS_INTERVAL
 DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
+DECL|STAT|macro|STAT
 DECL|check_and_send_packet|function|static int check_and_send_packet(struct net_buf *buf)
 DECL|drv|member|struct net_driver *drv;
 DECL|init_rx_queue|function|static void init_rx_queue(void)
@@ -9,6 +11,8 @@ DECL|init_timer_fiber|function|static void init_timer_fiber(void)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|net_dev|struct|static struct net_dev {
 DECL|net_init|function|int net_init(void)
+DECL|net_print_statistics|macro|net_print_statistics
+DECL|net_print_statistics|macro|net_print_statistics
 DECL|net_receive|function|struct net_buf *net_receive(struct net_context *context, int32_t timeout)
 DECL|net_recv|function|int net_recv(struct net_buf *buf)
 DECL|net_register_driver|function|int net_register_driver(struct net_driver *drv)
@@ -24,6 +28,7 @@ DECL|netdev|variable|netdev
 DECL|network_initialization|function|static int network_initialization(void)
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|member|struct nano_fifo rx_queue;
+DECL|stats|function|static void stats(void)
 DECL|timer_fiber_stack|variable|timer_fiber_stack
 DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_queue|member|struct nano_fifo tx_queue;
