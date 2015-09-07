@@ -54,6 +54,7 @@ DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
+DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint16_t flags;
 DECL|flush|member|int (*flush)(struct bt_conn *conn,
 DECL|func|member|bt_gatt_attr_func_t func;
