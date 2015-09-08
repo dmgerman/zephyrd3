@@ -6,7 +6,7 @@ DECL|DEFINE_MM_REG_READ|macro|DEFINE_MM_REG_READ
 DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
 DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
 DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
-DECL|completed|function|static void completed(struct device *dev)
+DECL|completed|function|static void completed(struct device *dev, uint32_t error)
 DECL|intel_spi_api|variable|intel_spi_api
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
