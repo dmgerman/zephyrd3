@@ -6,6 +6,8 @@ DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
 DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
 DECL|RECV_KEYS|macro|RECV_KEYS
+DECL|RECV_KEYS|macro|RECV_KEYS
+DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
@@ -33,6 +35,8 @@ DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_conn *conn, struct b
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp_send_security_req|function|int bt_smp_send_security_req(struct bt_conn *conn)
 DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, struct bt_buf *buf)
+DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, struct bt_buf *buf)
+DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct bt_buf *buf)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
@@ -90,6 +94,7 @@ DECL|smp_send_pairing_confirm|function|static uint8_t smp_send_pairing_confirm(s
 DECL|smp_send_pairing_random|function|static uint8_t smp_send_pairing_random(struct bt_conn *conn)
 DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *msg, uint16_t len)
 DECL|smp_sign_test|function|static int smp_sign_test(void)
+DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|swap_buf|function|static void swap_buf(const uint8_t *src, uint8_t *dst, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
