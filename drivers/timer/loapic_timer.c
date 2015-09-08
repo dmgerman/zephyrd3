@@ -25,8 +25,6 @@ DECL|_loApicTimerStart|function|static inline void _loApicTimerStart(void)
 DECL|_loApicTimerStop|function|static inline void _loApicTimerStop(void)
 DECL|_loApicTimerTicklessIdleInit|function|static void _loApicTimerTicklessIdleInit(void)
 DECL|_loApicTimerTicklessIdleInit|macro|_loApicTimerTicklessIdleInit
-DECL|_loApicTimerTicklessIdleSkew|function|static void _loApicTimerTicklessIdleSkew(void)
-DECL|_loApicTimerTicklessIdleSkew|macro|_loApicTimerTicklessIdleSkew
 DECL|_sys_clock_cycle_get|function|uint32_t _sys_clock_cycle_get(void)
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
@@ -39,5 +37,4 @@ DECL|idle_original_ticks|variable|idle_original_ticks
 DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|timer_disable|function|void timer_disable(void)
-DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
