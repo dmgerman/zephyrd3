@@ -5,6 +5,7 @@ DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
 DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
+DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
 DECL|att_error_rsp|function|static uint8_t att_error_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_exec_write_req|function|static uint8_t att_exec_write_req(struct bt_conn *conn, struct bt_buf *buf)
 DECL|att_exec_write_rsp|function|static uint8_t att_exec_write_rsp(struct bt_conn *conn, uint8_t flags)
@@ -59,6 +60,7 @@ DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|buf|member|struct bt_buf *buf;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
+DECL|conn_callbacks|variable|conn_callbacks
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
@@ -103,11 +105,13 @@ DECL|read_group_data|struct|struct read_group_data {
 DECL|read_type_cb|function|static uint8_t read_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|read_type_data|struct|struct read_type_data {
 DECL|req|member|struct bt_att_req req;
+DECL|retrying|member|bool retrying;
 DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|secondary_uuid|variable|secondary_uuid
+DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|user_data|member|void *user_data;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct bt_buf *buf)
