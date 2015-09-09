@@ -9,6 +9,7 @@ DECL|BT_KEYS_UNAUTHENTICATED|enumerator|BT_KEYS_UNAUTHENTICATED,
 DECL|addr|member|bt_addr_le_t addr;
 DECL|bt_csrk|struct|struct bt_csrk {
 DECL|bt_irk|struct|struct bt_irk {
+DECL|bt_keys_find_addr|function|static inline struct bt_keys *bt_keys_find_addr(const bt_addr_le_t *addr)
 DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
 DECL|cnt|member|uint32_t cnt;
