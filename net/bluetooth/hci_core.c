@@ -25,7 +25,7 @@ DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const 
 DECL|bt_start_scanning|function|int bt_start_scanning(bt_scan_filter_dup_t filter, bt_le_scan_cb_t cb)
 DECL|bt_stop_advertising|function|int bt_stop_advertising(void)
 DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
-DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *addr, uint8_t evtype, struct bt_keys *keys)
+DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *addr, uint8_t evtype)
 DECL|copy_id_addr|function|static void copy_id_addr(struct bt_conn *conn, const bt_addr_le_t *addr)
 DECL|hci_acl|function|static void hci_acl(struct bt_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct bt_buf *buf)
