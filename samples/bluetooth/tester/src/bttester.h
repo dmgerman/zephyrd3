@@ -16,6 +16,7 @@ DECL|CORE_REGISTER_SERVICE|macro|CORE_REGISTER_SERVICE
 DECL|GAP_DEVICE_FOUND_FLAG_AD|macro|GAP_DEVICE_FOUND_FLAG_AD
 DECL|GAP_DEVICE_FOUND_FLAG_RSSI|macro|GAP_DEVICE_FOUND_FLAG_RSSI
 DECL|GAP_DEVICE_FOUND_FLAG_SD|macro|GAP_DEVICE_FOUND_FLAG_SD
+DECL|GAP_DISCONNECT|macro|GAP_DISCONNECT
 DECL|GAP_DISCOVERY_FLAG_BREDR|macro|GAP_DISCOVERY_FLAG_BREDR
 DECL|GAP_DISCOVERY_FLAG_LE|macro|GAP_DISCOVERY_FLAG_LE
 DECL|GAP_DISCOVERY_FLAG_LIMITED|macro|GAP_DISCOVERY_FLAG_LIMITED
@@ -55,9 +56,12 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -95,6 +99,7 @@ DECL|flags|member|uint8_t flags;
 DECL|gap_device_connected_ev|struct|struct gap_device_connected_ev {
 DECL|gap_device_disconnected_ev|struct|struct gap_device_disconnected_ev {
 DECL|gap_device_found_ev|struct|struct gap_device_found_ev {
+DECL|gap_disconnect_cmd|struct|struct gap_disconnect_cmd {
 DECL|gap_new_settings_ev|struct|struct gap_new_settings_ev {
 DECL|gap_read_controller_index_list_rp|struct|struct gap_read_controller_index_list_rp {
 DECL|gap_read_controller_info_rp|struct|struct gap_read_controller_info_rp {
