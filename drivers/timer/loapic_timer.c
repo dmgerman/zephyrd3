@@ -8,7 +8,7 @@ DECL|LOAPIC_TIMER_DIVBY_64|macro|LOAPIC_TIMER_DIVBY_64
 DECL|LOAPIC_TIMER_DIVBY_8|macro|LOAPIC_TIMER_DIVBY_8
 DECL|LOAPIC_TIMER_DIVBY_MASK|macro|LOAPIC_TIMER_DIVBY_MASK
 DECL|LOAPIC_TIMER_PERIODIC|macro|LOAPIC_TIMER_PERIODIC
-DECL|TIMER_MODE_PERIODIC_ENT|macro|TIMER_MODE_PERIODIC_ENT
+DECL|TIMER_MODE_ONE_SHOT|macro|TIMER_MODE_ONE_SHOT
 DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|TIMER_SUPPORTS_TICKLESS|macro|TIMER_SUPPORTS_TICKLESS
 DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
@@ -37,4 +37,5 @@ DECL|tickless_idle_init|macro|tickless_idle_init
 DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_interrupt_mask|function|static inline void timer_interrupt_mask(void)
 DECL|timer_interrupt_unmask|function|static inline void timer_interrupt_unmask(void)
+DECL|timer_known_to_have_expired|variable|timer_known_to_have_expired
 DECL|timer_mode|variable|timer_mode
