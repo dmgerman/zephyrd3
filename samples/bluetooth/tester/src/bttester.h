@@ -5,6 +5,7 @@ DECL|BTP_INDEX_NONE|macro|BTP_INDEX_NONE
 DECL|BTP_MTU|macro|BTP_MTU
 DECL|BTP_SERVICE_ID_CORE|macro|BTP_SERVICE_ID_CORE
 DECL|BTP_SERVICE_ID_GAP|macro|BTP_SERVICE_ID_GAP
+DECL|BTP_SERVICE_ID_GATT|macro|BTP_SERVICE_ID_GATT
 DECL|BTP_STATUS_FAILED|macro|BTP_STATUS_FAILED
 DECL|BTP_STATUS_NOT_READY|macro|BTP_STATUS_NOT_READY
 DECL|BTP_STATUS_SUCCESS|macro|BTP_STATUS_SUCCESS
@@ -51,6 +52,11 @@ DECL|GAP_START_ADVERTISING|macro|GAP_START_ADVERTISING
 DECL|GAP_START_DISCOVERY|macro|GAP_START_DISCOVERY
 DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
+DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
+DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
+DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
+DECL|GATT_START_SERVER|macro|GATT_START_SERVER
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -120,6 +126,8 @@ DECL|gap_start_advertising_cmd|struct|struct gap_start_advertising_cmd {
 DECL|gap_start_advertising_rp|struct|struct gap_start_advertising_rp {
 DECL|gap_start_discovery_cmd|struct|struct gap_start_discovery_cmd {
 DECL|gap_stop_advertising_rp|struct|struct gap_stop_advertising_rp {
+DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
+DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
 DECL|id|member|uint8_t id;
 DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
@@ -134,3 +142,7 @@ DECL|scan_rsp|member|uint8_t scan_rsp[0];
 DECL|service|member|uint8_t service;
 DECL|short_name|member|uint8_t short_name[11];
 DECL|supported_settings|member|uint32_t supported_settings;
+DECL|svc_id|member|uint16_t svc_id;
+DECL|type|member|uint8_t type;
+DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid|member|uint8_t uuid[0];
