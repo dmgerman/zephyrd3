@@ -1,5 +1,4 @@
-DECL|console_irq_set|function|static inline void console_irq_set(void)
-DECL|console_irq_set|macro|console_irq_set
+DECL|console_irq_set|function|static int console_irq_set(struct device *unsued)
 DECL|dw_i2c0_irq_set|function|static inline void dw_i2c0_irq_set(void)
 DECL|dw_i2c0_irq_set|macro|dw_i2c0_irq_set
 DECL|gpio_irq_set|function|static inline void gpio_irq_set(void) {
