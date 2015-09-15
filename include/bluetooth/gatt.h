@@ -80,4 +80,5 @@ DECL|value_handle|member|uint16_t value_handle;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
+DECL|value|member|uint16_t value;
 DECL|write|member|int (*write)(struct bt_conn *conn,
