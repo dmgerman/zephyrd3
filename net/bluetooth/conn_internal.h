@@ -18,6 +18,7 @@ DECL|keys|member|struct bt_keys *keys;
 DECL|l2cap|member|struct bt_conn_l2cap l2cap;
 DECL|le_conn_interval|member|uint8_t le_conn_interval;
 DECL|le_features|member|uint8_t le_features[8];
+DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|ref|member|atomic_t ref;
 DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|resp_addr|member|bt_addr_le_t resp_addr;
