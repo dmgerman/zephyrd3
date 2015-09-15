@@ -52,7 +52,7 @@ DECL|STATUS_PEND|macro|STATUS_PEND
 DECL|_loapic_disable|function|void _loapic_disable(void)
 DECL|_loapic_enable|function|void _loapic_enable(void)
 DECL|_loapic_eoi|function|void _loapic_eoi(unsigned int irq)
-DECL|_loapic_init|function|void _loapic_init(void)
+DECL|_loapic_init|function|int _loapic_init(struct device *unused)
 DECL|_loapic_int_vec_set|function|void _loapic_int_vec_set(unsigned int irq, /* IRQ number of the interrupt */ unsigned int vector /* vector to copy into the LVT */ )
 DECL|_loapic_irq_disable|function|void _loapic_irq_disable(unsigned int irq /* IRQ number of the interrupt */ )
 DECL|_loapic_irq_enable|function|void _loapic_irq_enable(unsigned int irq /* IRQ number of the interrupt */ )

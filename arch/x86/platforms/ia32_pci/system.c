@@ -9,5 +9,3 @@ DECL|hpet_irq_set|macro|hpet_irq_set
 DECL|ia32_pci_init|function|static int ia32_pci_init(struct device *arg)
 DECL|ioapic_init|function|static inline void ioapic_init(void)
 DECL|ioapic_init|macro|ioapic_init
-DECL|loapic_init|function|static inline void loapic_init(void)
-DECL|loapic_init|macro|loapic_init
