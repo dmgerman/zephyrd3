@@ -7,5 +7,3 @@ DECL|ioapic_init|function|static inline void ioapic_init(void)
 DECL|ioapic_init|macro|ioapic_init
 DECL|loapic_init|function|static inline void loapic_init(void)
 DECL|loapic_init|macro|loapic_init
-DECL|pic_init|macro|pic_init
-DECL|pic_init|macro|pic_init
