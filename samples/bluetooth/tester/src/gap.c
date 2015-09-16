@@ -1,6 +1,7 @@
 DECL|CONTROLLER_ADDR|macro|CONTROLLER_ADDR
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CONTROLLER_NAME|macro|CONTROLLER_NAME
+DECL|ad_flags|variable|ad_flags
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|controller_index_list|function|static void controller_index_list(uint8_t *data, uint16_t len)
 DECL|controller_info|function|static void controller_info(uint8_t *data, uint16_t len)
@@ -10,6 +11,7 @@ DECL|disconnect|function|static void disconnect(const uint8_t *data, uint16_t le
 DECL|le_connected|function|static void le_connected(struct bt_conn *conn)
 DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn)
 DECL|set_connectable|function|static void set_connectable(uint8_t *data, uint16_t len)
+DECL|set_discoverable|function|static void set_discoverable(uint8_t *data, uint16_t len)
 DECL|start_advertising|function|static void start_advertising(const uint8_t *data, uint16_t len)
 DECL|start_discovery|function|static void start_discovery(const uint8_t *data, uint16_t len)
 DECL|stop_advertising|function|static void stop_advertising(const uint8_t *data, uint16_t len)
