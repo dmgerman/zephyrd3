@@ -1,6 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NUM_BUFS|macro|NUM_BUFS
+DECL|NUM_BUFS|macro|NUM_BUFS
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_acl_out|variable|avail_acl_out
 DECL|avail_hci|variable|avail_hci
