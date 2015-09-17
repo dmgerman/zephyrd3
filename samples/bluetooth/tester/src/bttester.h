@@ -52,10 +52,12 @@ DECL|GAP_START_ADVERTISING|macro|GAP_START_ADVERTISING
 DECL|GAP_START_DISCOVERY|macro|GAP_START_DISCOVERY
 DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
+DECL|GATT_ADD_CHARACTERISTIC|macro|GATT_ADD_CHARACTERISTIC
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
 DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
 DECL|GATT_START_SERVER|macro|GATT_START_SERVER
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -76,6 +78,7 @@ DECL|adv_data_len|member|uint8_t adv_data_len;
 DECL|adv_data|member|uint8_t adv_data[0];
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
+DECL|char_id|member|uint16_t char_id;
 DECL|code|member|uint8_t code;
 DECL|cod|member|uint8_t cod[3];
 DECL|connectable|member|uint8_t connectable;
@@ -126,6 +129,8 @@ DECL|gap_start_advertising_cmd|struct|struct gap_start_advertising_cmd {
 DECL|gap_start_advertising_rp|struct|struct gap_start_advertising_rp {
 DECL|gap_start_discovery_cmd|struct|struct gap_start_discovery_cmd {
 DECL|gap_stop_advertising_rp|struct|struct gap_stop_advertising_rp {
+DECL|gatt_add_characteristic_cmd|struct|struct gatt_add_characteristic_cmd {
+DECL|gatt_add_characteristic_rp|struct|struct gatt_add_characteristic_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
 DECL|id|member|uint8_t id;
@@ -135,7 +140,9 @@ DECL|len|member|uint16_t len;
 DECL|name|member|uint8_t name[249];
 DECL|num|member|uint8_t num;
 DECL|opcode|member|uint8_t opcode;
+DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
+DECL|properties|member|uint8_t properties;
 DECL|rssi|member|int8_t rssi;
 DECL|scan_rsp_len|member|uint8_t scan_rsp_len;
 DECL|scan_rsp|member|uint8_t scan_rsp[0];
@@ -143,6 +150,9 @@ DECL|service|member|uint8_t service;
 DECL|short_name|member|uint8_t short_name[11];
 DECL|supported_settings|member|uint32_t supported_settings;
 DECL|svc_id|member|uint16_t svc_id;
+DECL|svc_id|member|uint16_t svc_id;
 DECL|type|member|uint8_t type;
 DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
