@@ -8,6 +8,7 @@ DECL|fifo_read|member|int (*fifo_read)(struct device *dev, uint8_t *rx_data, con
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
 DECL|irq_err_enable|member|void (*irq_err_enable)(struct device *dev);
 DECL|irq_get|member|unsigned int (*irq_get)(struct device *dev);
+DECL|irq_input_hook|member|int (*irq_input_hook)(struct device *dev, uint8_t byte);
 DECL|irq_is_pending|member|int (*irq_is_pending)(struct device *dev);
 DECL|irq_pri|member|uint8_t irq_pri; /* Interrupt priority level */
 DECL|irq_pri|member|uint8_t irq_pri; /**< interrupt priority */
@@ -37,6 +38,8 @@ DECL|uart_init|function|static inline void uart_init(struct device *dev, const s
 DECL|uart_irq_err_disable|function|static inline void uart_irq_err_disable(struct device *dev)
 DECL|uart_irq_err_enable|function|static inline void uart_irq_err_enable(struct device *dev)
 DECL|uart_irq_get|function|static inline unsigned int uart_irq_get(struct device *dev)
+DECL|uart_irq_input_hook_set|function|static inline void uart_irq_input_hook_set(struct device *dev,int (*hook)(struct device *, uint8_t))
+DECL|uart_irq_input_hook|function|static inline int uart_irq_input_hook(struct device *dev, uint8_t byte)
 DECL|uart_irq_is_pending|function|static inline int uart_irq_is_pending(struct device *dev)
 DECL|uart_irq_rx_disable|function|static inline void uart_irq_rx_disable(struct device *dev)
 DECL|uart_irq_rx_enable|function|static inline void uart_irq_rx_enable(struct device *dev)
