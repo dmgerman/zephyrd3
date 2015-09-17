@@ -1,8 +1,4 @@
 DECL|dw_i2c_isr_0|function|void dw_i2c_isr_0(void *unused)
-DECL|gpio_0_runtime|variable|gpio_0_runtime
-DECL|gpio_config_0_irq|function|void gpio_config_0_irq(struct device *port)
-DECL|gpio_config_dw_0|variable|gpio_config_dw_0
-DECL|gpio_dw_isr_0|function|void gpio_dw_isr_0(void *unused)
 DECL|i2c_0_runtime|variable|i2c_0_runtime
 DECL|i2c_config_0_irq|function|void i2c_config_0_irq(struct device *port)
 DECL|i2c_config_dw_0|variable|i2c_config_dw_0
