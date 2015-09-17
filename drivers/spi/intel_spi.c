@@ -10,8 +10,16 @@ DECL|completed|function|static void completed(struct device *dev, uint32_t error
 DECL|intel_spi_api|variable|intel_spi_api
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
+DECL|spi_config_0_irq|function|void spi_config_0_irq(struct device *dev)
+DECL|spi_config_1_irq|function|void spi_config_1_irq(struct device *dev)
+DECL|spi_intel_config_0|variable|spi_intel_config_0
+DECL|spi_intel_config_1|variable|spi_intel_config_1
 DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev, struct spi_config *config)
+DECL|spi_intel_data_port_0|variable|spi_intel_data_port_0
+DECL|spi_intel_data_port_1|variable|spi_intel_data_port_1
 DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)
+DECL|spi_intel_isr_0|function|void spi_intel_isr_0(void *unused)
+DECL|spi_intel_isr_1|function|void spi_intel_isr_1(void *unused)
 DECL|spi_intel_isr|function|void spi_intel_isr(void *arg)
 DECL|spi_intel_resume|function|static int spi_intel_resume(struct device *dev)
 DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *dev)
