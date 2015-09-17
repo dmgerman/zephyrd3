@@ -5,7 +5,6 @@ DECL|MAXFP1|macro|MAXFP1
 DECL|MAXFP2|macro|MAXFP2
 DECL|_atoi|function|static int _atoi(char **sptr)
 DECL|_get_digit|function|static char _get_digit(uint32_t fract[], int *digit_count)
-DECL|_isdigit|function|static inline int _isdigit(int c)
 DECL|_ladd|function|static void _ladd(uint32_t result[], uint32_t value[])
 DECL|_ldiv5|function|static void _ldiv5(uint32_t value[])
 DECL|_llshift|function|static void _llshift(uint32_t value[])
