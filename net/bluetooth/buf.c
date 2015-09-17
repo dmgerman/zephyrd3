@@ -18,3 +18,4 @@ DECL|bt_buf_put|function|void bt_buf_put(struct bt_buf *buf)
 DECL|bt_buf_tailroom|function|size_t bt_buf_tailroom(struct bt_buf *buf)
 DECL|buffers|variable|buffers
 DECL|get_avail|function|static struct nano_fifo *get_avail(enum bt_buf_type type)
+DECL|report_completed_packet|function|static void report_completed_packet(struct bt_buf *buf)
