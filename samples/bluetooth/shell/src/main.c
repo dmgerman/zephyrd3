@@ -58,4 +58,3 @@ DECL|subscribe_func|function|static void subscribe_func(struct bt_conn *conn, in
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
-DECL|xtoi|function|static int xtoi(const char *str)
