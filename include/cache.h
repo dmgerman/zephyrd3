@@ -1,0 +1,4 @@
+DECL|_cache__h_|macro|_cache__h_
+DECL|_sys_cache_flush_sig|macro|_sys_cache_flush_sig
+DECL|_sys_cache_flush_t|typedef|typedef _sys_cache_flush_sig(_sys_cache_flush_t);
+DECL|sys_cache_line_size|macro|sys_cache_line_size
