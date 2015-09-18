@@ -1,1 +1,1 @@
-DECL|_SysCacheFlush|function|void _SysCacheFlush(VIRT_ADDR virt, size_t size)
+DECL|_SysCacheFlush|function|void _SysCacheFlush(vaddr_t virt, size_t size)
