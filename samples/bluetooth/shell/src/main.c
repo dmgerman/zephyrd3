@@ -4,7 +4,6 @@ DECL|ad_non_discov|variable|ad_non_discov
 DECL|appearance_chrc|variable|appearance_chrc
 DECL|appearance_value|variable|appearance_value
 DECL|appeareance_uuid|variable|appeareance_uuid
-DECL|atoi|function|static int atoi(const char *str)
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_all|variable|auth_cb_all
