@@ -3,10 +3,13 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|att_find_info|function|static int att_find_info(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|att_find_type|function|static int att_find_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|att_prepare_write_rsp|function|static void att_prepare_write_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_read_rsp|function|static void att_read_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_read_type_rsp|function|static void att_read_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|att_read_type|function|static int att_read_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|att_write_ccc_rsp|function|static void att_write_ccc_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_write_rsp|function|static void att_write_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|attr_count|variable|attr_count
@@ -20,8 +23,6 @@ DECL|bt_gatt_attr_write_ccc|function|int bt_gatt_attr_write_ccc(struct bt_conn *
 DECL|bt_gatt_cancel|function|void bt_gatt_cancel(struct bt_conn *conn)
 DECL|bt_gatt_connected|function|void bt_gatt_connected(struct bt_conn *conn)
 DECL|bt_gatt_disconnected|function|void bt_gatt_disconnected(struct bt_conn *conn)
-DECL|bt_gatt_discover_characteristic|function|int bt_gatt_discover_characteristic(struct bt_conn *conn, struct bt_gatt_discover_params *params)
-DECL|bt_gatt_discover_descriptor|function|int bt_gatt_discover_descriptor(struct bt_conn *conn,struct bt_gatt_discover_params *params)
 DECL|bt_gatt_discover|function|int bt_gatt_discover(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|bt_gatt_exchange_mtu|function|int bt_gatt_exchange_mtu(struct bt_conn *conn, bt_gatt_rsp_func_t func)
 DECL|bt_gatt_foreach_attr|function|void bt_gatt_foreach_attr(uint16_t start_handle, uint16_t end_handle, bt_gatt_attr_func_t func, void *user_data)
