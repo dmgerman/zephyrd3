@@ -26,14 +26,12 @@ DECL|REG_PUD_SEL_PORT0|macro|REG_PUD_SEL_PORT0
 DECL|REG_PUD_SEL_PORT1|macro|REG_PUD_SEL_PORT1
 DECL|WAIT_10MS|macro|WAIT_10MS
 DECL|_has_i2c_master|function|static inline int _has_i2c_master(struct device *dev)
-DECL|_read_port_regs|function|static int _read_port_regs(struct device *dev, uint8_t reg, union port_data *buf)
+DECL|_read_port_regs|function|static int _read_port_regs(struct device *dev, uint8_t reg, union gpio_pcal9535a_port_data *buf)
 DECL|_setup_pin_dir|function|static int _setup_pin_dir(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|_setup_pin_polarity|function|static int _setup_pin_polarity(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|_setup_pin_pullupdown|function|static int _setup_pin_pullupdown(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|_wait_10ms|function|static inline void _wait_10ms(struct nano_timer *timer)
-DECL|_write_port_regs|function|static int _write_port_regs(struct device *dev, uint8_t reg, union port_data *buf)
-DECL|all|member|uint16_t all;
-DECL|byte|member|uint8_t byte[2];
+DECL|_write_port_regs|function|static int _write_port_regs(struct device *dev, uint8_t reg, union gpio_pcal9535a_port_data *buf)
 DECL|gpio_pcal9535a_0_cfg|variable|gpio_pcal9535a_0_cfg
 DECL|gpio_pcal9535a_0_drvdata|variable|gpio_pcal9535a_0_drvdata
 DECL|gpio_pcal9535a_1_cfg|variable|gpio_pcal9535a_1_cfg
@@ -52,5 +50,3 @@ DECL|gpio_pcal9535a_resume_port|function|static int gpio_pcal9535a_resume_port(s
 DECL|gpio_pcal9535a_set_callback|function|static int gpio_pcal9535a_set_callback(struct device *dev, gpio_callback_t callback)
 DECL|gpio_pcal9535a_suspend_port|function|static int gpio_pcal9535a_suspend_port(struct device *dev)
 DECL|gpio_pcal9535a_write|function|static int gpio_pcal9535a_write(struct device *dev, int access_op,uint32_t pin, uint32_t value)
-DECL|port_data|union|union port_data {
-DECL|port|member|uint8_t port[2];
