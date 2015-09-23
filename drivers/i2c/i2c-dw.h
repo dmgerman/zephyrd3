@@ -27,9 +27,9 @@ DECL|__DRIVERS_I2C_DW_H|macro|__DRIVERS_I2C_DW_H
 DECL|app_config|member|union dev_config app_config;
 DECL|base_address|member|uint32_t base_address;
 DECL|config_func|member|i2c_isr_cb_t config_func;
-DECL|dw_i2c_dev_config|struct|struct dw_i2c_dev_config {
-DECL|dw_i2c_rom_config|struct|struct dw_i2c_rom_config {
 DECL|hcnt|member|uint16_t hcnt;
+DECL|i2c_dw_dev_config|struct|struct i2c_dw_dev_config {
+DECL|i2c_dw_rom_config|struct|struct i2c_dw_rom_config {
 DECL|i2c_isr_cb_t|typedef|typedef void (*i2c_isr_cb_t)(struct device *port);
 DECL|interrupt_mask|member|uint32_t interrupt_mask;
 DECL|interrupt_vector|member|uint32_t interrupt_vector;

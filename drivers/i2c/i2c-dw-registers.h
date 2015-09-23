@@ -72,13 +72,13 @@ DECL|dummy6|member|uint16_t dummy6;
 DECL|dummy7|member|uint16_t dummy7;
 DECL|dummy8|member|uint16_t dummy8;
 DECL|dummy9|member|uint16_t dummy9;
-DECL|dw_i2c_registers|struct|struct dw_i2c_registers {
 DECL|enable|member|uint16_t enable : 1 __packed;
 DECL|filler|member|uint8_t filler[72];
 DECL|gc_or_start|member|uint16_t gc_or_start : 1 __packed;
 DECL|gen_call|member|uint16_t gen_call : 1 __packed;
 DECL|has_dma|member|uint32_t has_dma : 1 __packed;
 DECL|hc_count_values|member|uint32_t hc_count_values : 1 __packed;
+DECL|i2c_dw_registers|struct|struct i2c_dw_registers {
 DECL|ic_10bitaddr_master|member|uint16_t ic_10bitaddr_master : 1 __packed;
 DECL|ic_ack_general_call|member|uint32_t ic_ack_general_call; /* offset 0x98 */
 DECL|ic_clr_activity|member|uint16_t ic_clr_activity; /* offset 0x5C */
