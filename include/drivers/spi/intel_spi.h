@@ -33,6 +33,9 @@ DECL|SPI_MAX_CLK_FREQ_8MHZ|macro|SPI_MAX_CLK_FREQ_8MHZ
 DECL|__INTEL_SPI_H__|macro|__INTEL_SPI_H__
 DECL|callback|member|spi_callback callback;
 DECL|config_func|member|spi_intel_config_t config_func;
+DECL|cs_gpio_name|member|char *cs_gpio_name;
+DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
+DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|irq|member|uint32_t irq;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|regs|member|uint32_t regs;
