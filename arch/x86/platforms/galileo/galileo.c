@@ -12,3 +12,5 @@ DECL|galileo_init|function|static int galileo_init(struct device *arg)
 DECL|gpio_irq_set_0|function|static int gpio_irq_set_0(struct device *unused) {
 DECL|hpet_irq_set|function|static int hpet_irq_set(struct device *unused)
 DECL|shared_irq_config|function|static int shared_irq_config(struct device *unused)
+DECL|spi_irq_set_0|function|static int spi_irq_set_0(struct device *unused)
+DECL|spi_irq_set_1|function|static int spi_irq_set_1(struct device *unused)
