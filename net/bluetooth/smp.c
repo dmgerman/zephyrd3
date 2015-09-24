@@ -11,6 +11,7 @@ DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
+DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
 DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
