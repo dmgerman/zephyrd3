@@ -2,7 +2,9 @@ DECL|MCAST_IPADDR|macro|MCAST_IPADDR
 DECL|MCAST_IPADDR|macro|MCAST_IPADDR
 DECL|MY_IPADDR|macro|MY_IPADDR
 DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
 DECL|MY_PORT|macro|MY_PORT
+DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_PORT|macro|PEER_PORT
@@ -28,6 +30,8 @@ DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
 DECL|multicast|variable|multicast
 DECL|my_mac|variable|my_mac
+DECL|my_mac|variable|my_mac
+DECL|peer_mac|variable|peer_mac
 DECL|peer_mac|variable|peer_mac
 DECL|receiving_loop|function|void receiving_loop(const char *taskname, ksem_t mySem, ksem_t otherSem)
 DECL|reverse|function|static inline void reverse(unsigned char *buf, int len)
