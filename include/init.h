@@ -16,5 +16,4 @@ DECL|micro_late_init|macro|micro_late_init
 DECL|nano_early_init|macro|nano_early_init
 DECL|nano_late_init|macro|nano_late_init
 DECL|pure_early_init|macro|pure_early_init
-DECL|pure_init|macro|pure_init
 DECL|pure_late_init|macro|pure_late_init
