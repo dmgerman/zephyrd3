@@ -2,6 +2,7 @@ DECL|DBG|macro|DBG
 DECL|DEBUG_FLAG_DEFAULT|macro|DEBUG_FLAG_DEFAULT
 DECL|DEBUG_FLAG_PRINT|macro|DEBUG_FLAG_PRINT
 DECL|DUMMY_RADIO_15_4_FRAME_TYPE|macro|DUMMY_RADIO_15_4_FRAME_TYPE
+DECL|EXTRA_DEBUG|macro|EXTRA_DEBUG
 DECL|PCAP_HDR_SIZE|macro|PCAP_HDR_SIZE
 DECL|PCAP_PKT_SIZE|macro|PCAP_PKT_SIZE
 DECL|PIPE_IN|macro|PIPE_IN
@@ -26,7 +27,7 @@ DECL|input2_offset|variable|input2_offset
 DECL|input2_type|variable|input2_type
 DECL|input2|variable|input2
 DECL|log_cleanup|function|void log_cleanup(void)
-DECL|log_init|function|int log_init(const char *debug, gboolean detach)
+DECL|log_init|function|int log_init(const char *debug, gboolean detach, gboolean perror)
 DECL|magic_number|member|uint32_t magic_number; /* magic number */
 DECL|main_loop|variable|main_loop
 DECL|main|function|int main(int argc, char *argv[])

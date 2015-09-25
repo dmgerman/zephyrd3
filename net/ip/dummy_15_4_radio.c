@@ -3,6 +3,8 @@ DECL|DEBUG|macro|DEBUG
 DECL|DUMMY_RADIO_15_4_FRAME_TYPE|macro|DUMMY_RADIO_15_4_FRAME_TYPE
 DECL|FOOTER_LEN|macro|FOOTER_LEN
 DECL|NETWORK_TEST_MAX_PACKET_LEN|macro|NETWORK_TEST_MAX_PACKET_LEN
+DECL|PRINT_DATA|macro|PRINT_DATA
+DECL|PRINT_DATA|macro|PRINT_DATA
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|UIP_LOG|macro|UIP_LOG
 DECL|channel_clear|function|channel_clear(void)
@@ -27,5 +29,6 @@ DECL|route_buf|function|static void route_buf(struct net_mbuf *buf)
 DECL|send|function|send(struct net_mbuf *buf, const void *payload, unsigned short payload_len)
 DECL|set_object|function|set_object(radio_param_t param, const void *src, size_t size)
 DECL|set_value|function|set_value(radio_param_t param, radio_value_t value)
+DECL|starting|variable|starting
 DECL|transmit|function|transmit(struct net_mbuf *buf, unsigned short transmit_len)
 DECL|uart_send|function|static int uart_send(unsigned char c)
