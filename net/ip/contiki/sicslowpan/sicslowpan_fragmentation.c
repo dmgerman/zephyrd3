@@ -36,6 +36,7 @@ DECL|UIP_UDP_BUF|macro|UIP_UDP_BUF
 DECL|USE_FRAMER_HDRLEN|macro|USE_FRAMER_HDRLEN
 DECL|add_fragment|function|add_fragment(struct net_mbuf *mbuf, uint16_t tag, uint16_t frag_size, uint8_t offset)
 DECL|clear_fragments|function|clear_fragments(uint8_t frag_info_index)
+DECL|copy_buf|function|static struct net_buf *copy_buf(struct net_mbuf *mbuf)
 DECL|copy_frags2uip|function|static struct net_buf *copy_frags2uip(int context)
 DECL|data|member|uint8_t data[SICSLOWPAN_FRAGMENT_SIZE];
 DECL|frag_buf|variable|frag_buf
