@@ -12,7 +12,9 @@ DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
 DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
+DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
+DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
@@ -86,6 +88,7 @@ DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_conn *con
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_conn *conn, uint8_t remote_io)
 DECL|smp_reset|function|static void smp_reset(struct bt_conn *conn)
+DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_conn *conn, struct bt_buf *buf)
@@ -97,8 +100,11 @@ DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *
 DECL|smp_sign_test|function|static int smp_sign_test(void)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
+DECL|smp_stop_timer|function|static void smp_stop_timer(struct bt_smp *smp)
+DECL|smp_timeout|function|static void smp_timeout(int arg1, int arg2)
 DECL|swap_buf|function|static void swap_buf(const uint8_t *src, uint8_t *dst, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
+DECL|timeout|member|void *timeout;
 DECL|tk|member|uint8_t tk[16];
 DECL|uint128_t|typedef|} uint128_t;
 DECL|xor_128|function|static void xor_128(const uint128_t *p, const uint128_t *q, uint128_t *r)
