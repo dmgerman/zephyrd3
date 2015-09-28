@@ -54,6 +54,7 @@ DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
 DECL|GATT_ADD_CHARACTERISTIC|macro|GATT_ADD_CHARACTERISTIC
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
+DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
 DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
 DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
 DECL|GATT_SET_VALUE|macro|GATT_SET_VALUE
@@ -102,6 +103,7 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|data|member|uint8_t data[0];
 DECL|discoverable|member|uint8_t discoverable;
 DECL|eir_data_len|member|uint16_t eir_data_len;
 DECL|eir_data|member|uint8_t eir_data[0];
@@ -136,6 +138,7 @@ DECL|gatt_add_characteristic_cmd|struct|struct gatt_add_characteristic_cmd {
 DECL|gatt_add_characteristic_rp|struct|struct gatt_add_characteristic_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
+DECL|gatt_read_supported_commands_rp|struct|struct gatt_read_supported_commands_rp {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
 DECL|id|member|uint8_t id;
 DECL|index|member|uint8_t index;

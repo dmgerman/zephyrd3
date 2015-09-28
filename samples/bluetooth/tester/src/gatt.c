@@ -18,6 +18,7 @@ DECL|len|member|uint8_t len;
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
+DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|svc_pri|variable|svc_pri
 DECL|svc_sec|variable|svc_sec
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
