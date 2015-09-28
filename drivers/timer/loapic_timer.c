@@ -32,9 +32,9 @@ DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
 DECL|programmed_cycles|variable|programmed_cycles
 DECL|programmed_full_ticks|variable|programmed_full_ticks
+DECL|sys_clock_disable|function|void sys_clock_disable(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
-DECL|timer_disable|function|void timer_disable(void)
 DECL|timer_interrupt_mask|function|static inline void timer_interrupt_mask(void)
 DECL|timer_interrupt_unmask|function|static inline void timer_interrupt_unmask(void)
 DECL|timer_known_to_have_expired|variable|timer_known_to_have_expired

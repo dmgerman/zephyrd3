@@ -22,6 +22,6 @@ DECL|sysTickReloadSet|function|static ALWAYS_INLINE void sysTickReloadSet(uint32
 DECL|sysTickStart|function|static ALWAYS_INLINE void sysTickStart(void)
 DECL|sysTickStop|function|static ALWAYS_INLINE void sysTickStop(void)
 DECL|sysTickTicklessIdleInit|function|static void sysTickTicklessIdleInit(void)
-DECL|timer_disable|function|void timer_disable(void)
+DECL|sys_clock_disable|function|void sys_clock_disable(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode

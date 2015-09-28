@@ -53,4 +53,4 @@ DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
 DECL|programmed_ticks|variable|programmed_ticks
 DECL|stale_irq_check|variable|stale_irq_check
-DECL|timer_disable|function|void timer_disable(void)
+DECL|sys_clock_disable|function|void sys_clock_disable(void)

@@ -9,4 +9,4 @@ DECL|clock_accumulated_count|variable|clock_accumulated_count
 DECL|count_get|function|static ALWAYS_INLINE uint32_t count_get(void)
 DECL|enable|function|static ALWAYS_INLINE void enable(uint32_t count /* interrupt triggers when up-counter reaches this value */ )
 DECL|limit_get|function|static ALWAYS_INLINE uint32_t limit_get(void)
-DECL|timer_disable|function|void timer_disable(void)
+DECL|sys_clock_disable|function|void sys_clock_disable(void)
