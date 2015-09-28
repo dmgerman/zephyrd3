@@ -10,3 +10,4 @@ DECL|gpio_runtime_dw|struct|struct gpio_runtime_dw {
 DECL|irq_num|member|uint32_t irq_num;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|port_callback|member|uint8_t port_callback;
+DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
