@@ -1,0 +1,3 @@
+DECL|SYS_REBOOT_COLD|macro|SYS_REBOOT_COLD
+DECL|SYS_REBOOT_WARM|macro|SYS_REBOOT_WARM
+DECL|_misc_reboot__h_|macro|_misc_reboot__h_
