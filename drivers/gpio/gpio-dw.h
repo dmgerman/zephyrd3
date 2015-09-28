@@ -1,4 +1,3 @@
-DECL|CONFIG_GPIO_DW_BITS|macro|CONFIG_GPIO_DW_BITS
 DECL|base_addr|member|uint32_t base_addr;
 DECL|bits|member|uint32_t bits;
 DECL|callback|member|gpio_callback_t callback;
