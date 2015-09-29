@@ -1,6 +1,6 @@
 DECL|_k_command_stack|variable|_k_command_stack
 DECL|_k_debug_halt|variable|_k_debug_halt
-DECL|_k_kernel_init|function|void _k_kernel_init(void)
 DECL|_k_server_command_stack_storage|variable|_k_server_command_stack_storage
 DECL|_k_server_command_stack_storage|variable|_k_server_command_stack_storage
 DECL|_k_server_stack|variable|_k_server_stack
+DECL|_main|function|void _main(void)
