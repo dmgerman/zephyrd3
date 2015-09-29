@@ -1,4 +1,9 @@
-DECL|_set_bit|function|static void _set_bit(uint32_t addr, uint32_t bit, uint8_t value)
+DECL|_io_read|function|static uint32_t _io_read(uint32_t addr, uint32_t bit, uint32_t value)
+DECL|_io_set_bit|function|static uint32_t _io_set_bit(uint32_t addr, uint32_t bit, uint32_t value)
+DECL|_io_write|function|static uint32_t _io_write(uint32_t addr, uint32_t bit, uint32_t value)
+DECL|_mm_read|function|static uint32_t _mm_read(uint32_t addr, uint32_t bit, uint32_t value)
+DECL|_mm_set_bit|function|static uint32_t _mm_set_bit(uint32_t addr, uint32_t bit, uint32_t value)
+DECL|_mm_write|function|static uint32_t _mm_write(uint32_t addr, uint32_t bit, uint32_t value)
 DECL|gpio_mmio_0_cfg|variable|gpio_mmio_0_cfg
 DECL|gpio_mmio_1_cfg|variable|gpio_mmio_1_cfg
 DECL|gpio_mmio_config|function|static int gpio_mmio_config(struct device *dev, int access_op, uint32_t pin, int flags)
