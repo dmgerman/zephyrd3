@@ -7,7 +7,7 @@ DECL|_i2c_dw_setup|function|static int _i2c_dw_setup(struct device *dev)
 DECL|_i2c_dw_transfer|function|static int _i2c_dw_transfer(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address)
 DECL|funcs|variable|funcs
 DECL|i2c_0_runtime|variable|i2c_0_runtime
-DECL|i2c_config_0_irq|function|void i2c_config_0_irq(struct device *port)
+DECL|i2c_config_0|function|void i2c_config_0(struct device *port)
 DECL|i2c_config_dw_0|variable|i2c_config_dw_0
 DECL|i2c_dw_initialize|function|int i2c_dw_initialize(struct device *port)
 DECL|i2c_dw_isr_0|function|void i2c_dw_isr_0(void *unused)
