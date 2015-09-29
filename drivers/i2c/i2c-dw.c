@@ -1,6 +1,7 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|POLLING_TIMEOUT|macro|POLLING_TIMEOUT
 DECL|_i2c_dw_data_read|function|static void _i2c_dw_data_read(struct device *dev)
 DECL|_i2c_dw_data_send|function|static void _i2c_dw_data_send(struct device *dev)
 DECL|_i2c_dw_setup|function|static int _i2c_dw_setup(struct device *dev)
@@ -16,6 +17,7 @@ DECL|i2c_dw_memory_read|function|static inline uint32_t i2c_dw_memory_read(uint3
 DECL|i2c_dw_memory_write|function|static inline void i2c_dw_memory_write(uint32_t base_addr, uint32_t offset, uint32_t val)
 DECL|i2c_dw_pci_setup|function|static inline int i2c_dw_pci_setup(struct device *dev)
 DECL|i2c_dw_pci_setup|macro|i2c_dw_pci_setup
+DECL|i2c_dw_polling_write|function|static int i2c_dw_polling_write(struct device *dev,uint8_t *write_buf, uint32_t write_len, uint16_t slave_address)
 DECL|i2c_dw_read|function|static int i2c_dw_read(struct device *dev, uint8_t *buf,uint32_t len, uint16_t slave_addr)
 DECL|i2c_dw_resume|function|static int i2c_dw_resume(struct device *dev)
 DECL|i2c_dw_runtime_configure|function|static int i2c_dw_runtime_configure(struct device *dev, uint32_t config)
