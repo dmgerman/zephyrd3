@@ -4,11 +4,6 @@ DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|ACL_OUT_MAX|macro|ACL_OUT_MAX
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
-DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
-DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
-DECL|analyze_stacks|function|static void analyze_stacks(struct bt_conn *conn, struct bt_conn **ref)
-DECL|analyze_stacks|macro|analyze_stacks
-DECL|analyze_stack|function|static void analyze_stack(const char *name, const char *stack, unsigned size, int stack_growth)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_dev|variable|bt_dev
