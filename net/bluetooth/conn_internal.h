@@ -8,6 +8,7 @@ DECL|att|member|void *att;
 DECL|bt_conn_l2cap|struct|struct bt_conn_l2cap {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
+DECL|channels|member|void *channels;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|flags|member|atomic_t flags[1];
