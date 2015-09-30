@@ -15,11 +15,14 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_chan *_next;
+DECL|_next|member|struct bt_l2cap_server *_next;
+DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
 DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conn_param_req|struct|struct bt_l2cap_conn_param_req {
 DECL|bt_l2cap_conn_param_rsp|struct|struct bt_l2cap_conn_param_rsp {
 DECL|bt_l2cap_hdr|struct|struct bt_l2cap_hdr {
+DECL|bt_l2cap_server|struct|struct bt_l2cap_server {
 DECL|bt_l2cap_sig_hdr|struct|struct bt_l2cap_sig_hdr {
 DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
@@ -34,6 +37,7 @@ DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
+DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;
 DECL|recv|member|void (*recv)(struct bt_conn *conn,
 DECL|result|member|uint16_t result;
