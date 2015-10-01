@@ -56,6 +56,7 @@ DECL|GAP_START_DISCOVERY|macro|GAP_START_DISCOVERY
 DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
 DECL|GATT_ADD_CHARACTERISTIC|macro|GATT_ADD_CHARACTERISTIC
+DECL|GATT_ADD_DESCRIPTOR|macro|GATT_ADD_DESCRIPTOR
 DECL|GATT_ADD_INCLUDED_SERVICE|macro|GATT_ADD_INCLUDED_SERVICE
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
@@ -63,6 +64,8 @@ DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
 DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
 DECL|GATT_SET_VALUE|macro|GATT_SET_VALUE
 DECL|GATT_START_SERVER|macro|GATT_START_SERVER
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -89,6 +92,7 @@ DECL|attr_id|member|uint16_t attr_id;
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|char_id|member|uint16_t char_id;
+DECL|char_id|member|uint16_t char_id;
 DECL|code|member|uint8_t code;
 DECL|cod|member|uint8_t cod[3];
 DECL|connectable|member|uint8_t connectable;
@@ -110,6 +114,7 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|desc_id|member|uint16_t desc_id;
 DECL|discoverable|member|uint8_t discoverable;
 DECL|eir_data_len|member|uint16_t eir_data_len;
 DECL|eir_data|member|uint8_t eir_data[0];
@@ -142,6 +147,8 @@ DECL|gap_start_discovery_cmd|struct|struct gap_start_discovery_cmd {
 DECL|gap_stop_advertising_rp|struct|struct gap_stop_advertising_rp {
 DECL|gatt_add_characteristic_cmd|struct|struct gatt_add_characteristic_cmd {
 DECL|gatt_add_characteristic_rp|struct|struct gatt_add_characteristic_rp {
+DECL|gatt_add_descriptor_cmd|struct|struct gatt_add_descriptor_cmd {
+DECL|gatt_add_descriptor_rp|struct|struct gatt_add_descriptor_rp {
 DECL|gatt_add_included_service_cmd|struct|struct gatt_add_included_service_cmd {
 DECL|gatt_add_included_service_rp|struct|struct gatt_add_included_service_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
@@ -158,6 +165,7 @@ DECL|name|member|uint8_t name[249];
 DECL|num|member|uint8_t num;
 DECL|opcode|member|uint8_t opcode;
 DECL|permissions|member|uint8_t permissions;
+DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
 DECL|properties|member|uint8_t properties;
 DECL|rssi|member|int8_t rssi;
@@ -172,6 +180,8 @@ DECL|svc_id|member|uint16_t svc_id;
 DECL|type|member|uint8_t type;
 DECL|uuid_length|member|uint8_t uuid_length;
 DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|value|member|uint8_t value[0];

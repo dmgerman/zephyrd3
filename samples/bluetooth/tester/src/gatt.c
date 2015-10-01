@@ -2,13 +2,18 @@ DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|MAX_ATTRIBUTES|macro|MAX_ATTRIBUTES
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
 DECL|add_characteristic|function|static void add_characteristic(uint8_t *data, uint16_t len)
+DECL|add_descriptor_cb|function|static uint8_t add_descriptor_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|add_descriptor|function|static void add_descriptor(uint8_t *data, uint16_t len)
 DECL|add_included_cb|function|static uint8_t add_included_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
+DECL|ccc|variable|ccc
+DECL|cep|variable|cep
 DECL|chr_val|variable|chr_val
 DECL|chr|variable|chr
 DECL|data|member|uint8_t *data;
+DECL|dsc|variable|dsc
 DECL|flush_value|function|static int flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
