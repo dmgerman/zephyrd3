@@ -1,3 +1,4 @@
+DECL|BFILE|enumerator|BFILE, /* allocated interrupt vector bitmap file */
 DECL|EXECFILE|enumerator|EXECFILE = NUSERFILES, /* for name of executable */
 DECL|IFILE|enumerator|IFILE = 0, /* input file */
 DECL|LONG_USAGE|enumerator|enum { SHORT_USAGE, LONG_USAGE };
@@ -19,6 +20,7 @@ DECL|dpl|member|unsigned int dpl;
 DECL|fds|variable|fds
 DECL|filenames|variable|filenames
 DECL|generate_idt|function|static void generate_idt(void)
+DECL|generate_interrupt_vector_bitmap|function|static void generate_interrupt_vector_bitmap(void)
 DECL|generated_entry|variable|generated_entry
 DECL|genidt_entry_s|struct|struct genidt_entry_s {
 DECL|genidt_header_s|struct|struct genidt_header_s {
