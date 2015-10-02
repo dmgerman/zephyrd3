@@ -26,31 +26,23 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|_next|member|struct bt_l2cap_chan *_next;
-DECL|_next|member|struct bt_l2cap_server *_next;
+DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
-DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conn_param_req|struct|struct bt_l2cap_conn_param_req {
 DECL|bt_l2cap_conn_param_rsp|struct|struct bt_l2cap_conn_param_rsp {
+DECL|bt_l2cap_fixed_chan|struct|struct bt_l2cap_fixed_chan {
 DECL|bt_l2cap_hdr|struct|struct bt_l2cap_hdr {
 DECL|bt_l2cap_le_conn_req|struct|struct bt_l2cap_le_conn_req {
 DECL|bt_l2cap_le_conn_rsp|struct|struct bt_l2cap_le_conn_rsp {
-DECL|bt_l2cap_server|struct|struct bt_l2cap_server {
 DECL|bt_l2cap_sig_hdr|struct|struct bt_l2cap_sig_hdr {
 DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
 DECL|code|member|uint8_t code;
-DECL|connected|member|void (*connected)(struct bt_conn *conn);
-DECL|credits_rx|member|uint16_t credits_rx;
-DECL|credits_tx|member|uint16_t credits_tx;
 DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
 DECL|data|member|uint8_t data[0];
 DECL|dcid|member|uint16_t dcid;
-DECL|dcid|member|uint16_t dcid;
-DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn);
-DECL|encrypt_change|member|void (*encrypt_change)(struct bt_conn *conn);
 DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
@@ -59,14 +51,10 @@ DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mps|member|uint16_t mps;
 DECL|mps|member|uint16_t mps;
-DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
-DECL|mtu|member|uint16_t mtu;
-DECL|psm|member|uint16_t psm;
 DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;
-DECL|recv|member|void (*recv)(struct bt_conn *conn,
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
 DECL|scid|member|uint16_t scid;
