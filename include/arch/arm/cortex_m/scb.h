@@ -1,4 +1,4 @@
-DECL|ScbCcrSet|function|static inline void ScbCcrSet(uint32_t val /* value to write to CCR */ )
+DECL|ScbCcrSet|function|static inline void ScbCcrSet(uint32_t val)
 DECL|_SCB_SCR_SEVONPEND|macro|_SCB_SCR_SEVONPEND
 DECL|_SCB_SCR_SLEEPDEEP|macro|_SCB_SCR_SLEEPDEEP
 DECL|_SCB_SCR_SLEEPONEXIT|macro|_SCB_SCR_SLEEPONEXIT
@@ -18,8 +18,8 @@ DECL|_ScbBusFaultIsStacking|function|static inline int _ScbBusFaultIsStacking(vo
 DECL|_ScbBusFaultIsUnstacking|function|static inline int _ScbBusFaultIsUnstacking(void)
 DECL|_ScbDivByZeroFaultDisable|function|static inline void _ScbDivByZeroFaultDisable(void)
 DECL|_ScbDivByZeroFaultEnable|function|static inline void _ScbDivByZeroFaultEnable(void)
-DECL|_ScbExcPrioGet|function|static inline uint8_t _ScbExcPrioGet(uint8_t exc /* exception number, 4 to 15 */ )
-DECL|_ScbExcPrioSet|function|static inline void _ScbExcPrioSet(uint8_t exc, /* exception number, 4 to 15 */ uint8_t pri /* priority, 0 to 255 */ )
+DECL|_ScbExcPrioGet|function|static inline uint8_t _ScbExcPrioGet(uint8_t exc)
+DECL|_ScbExcPrioSet|function|static inline void _ScbExcPrioSet(uint8_t exc, uint8_t pri)
 DECL|_ScbHardFaultAllFaultsReset|function|static inline int _ScbHardFaultAllFaultsReset(void)
 DECL|_ScbHardFaultIsBusErrOnVectorRead|function|static inline int _ScbHardFaultIsBusErrOnVectorRead(void)
 DECL|_ScbHardFaultIsForced|function|static inline int _ScbHardFaultIsForced(void)
@@ -77,5 +77,5 @@ DECL|_ScbUsageFaultNoCpReset|function|static inline void _ScbUsageFaultNoCpReset
 DECL|_ScbUsageFaultUnalignedReset|function|static inline void _ScbUsageFaultUnalignedReset(void)
 DECL|_ScbUsageFaultUndefinedInstrReset|function|static inline void _ScbUsageFaultUndefinedInstrReset(void)
 DECL|_ScbVtableAddrGet|function|static inline uint32_t _ScbVtableAddrGet(void)
-DECL|_ScbVtableAddrSet|function|static inline void _ScbVtableAddrSet(uint32_t addr /* base address, aligned on 128 minimum */ )
+DECL|_ScbVtableAddrSet|function|static inline void _ScbVtableAddrSet(uint32_t addr)
 DECL|_ScbVtableLocationSet|function|static inline void _ScbVtableLocationSet(int sram /* 1 to move vector to SRAM, 0 to move it to ROM */ )
