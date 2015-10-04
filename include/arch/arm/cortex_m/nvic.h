@@ -15,12 +15,12 @@ DECL|_EXC_SVC|macro|_EXC_SVC
 DECL|_EXC_SYSTICK|macro|_EXC_SYSTICK
 DECL|_EXC_USAGE_FAULT|macro|_EXC_USAGE_FAULT
 DECL|_NVIC_H_|macro|_NVIC_H_
-DECL|_NvicIrqDisable|function|static inline void _NvicIrqDisable(unsigned int irq /* IRQ number */ )
-DECL|_NvicIrqEnable|function|static inline void _NvicIrqEnable(unsigned int irq /* IRQ number */ )
-DECL|_NvicIrqPend|function|static inline void _NvicIrqPend(unsigned int irq /* IRQ number */)
-DECL|_NvicIrqPrioGet|function|static inline uint32_t _NvicIrqPrioGet(unsigned int irq /* IRQ number */ )
-DECL|_NvicIrqPrioSet|function|static inline void _NvicIrqPrioSet(unsigned int irq, /* IRQ number */ unsigned int prio /* priority */ )
-DECL|_NvicIrqUnpend|function|static inline void _NvicIrqUnpend(unsigned int irq /* IRQ number */ )
-DECL|_NvicIsIrqEnabled|function|static inline int _NvicIsIrqEnabled(unsigned int irq /* IRQ number */ )
-DECL|_NvicIsIrqPending|function|static inline int _NvicIsIrqPending(unsigned int irq /* IRQ number */ )
-DECL|_NvicSwInterruptTrigger|function|static inline void _NvicSwInterruptTrigger(unsigned int irq /* IRQ number */ )
+DECL|_NvicIrqDisable|function|static inline void _NvicIrqDisable(unsigned int irq)
+DECL|_NvicIrqEnable|function|static inline void _NvicIrqEnable(unsigned int irq)
+DECL|_NvicIrqPend|function|static inline void _NvicIrqPend(unsigned int irq)
+DECL|_NvicIrqPrioGet|function|static inline uint32_t _NvicIrqPrioGet(unsigned int irq)
+DECL|_NvicIrqPrioSet|function|static inline void _NvicIrqPrioSet(unsigned int irq, unsigned int prio)
+DECL|_NvicIrqUnpend|function|static inline void _NvicIrqUnpend(unsigned int irq)
+DECL|_NvicIsIrqEnabled|function|static inline int _NvicIsIrqEnabled(unsigned int irq)
+DECL|_NvicIsIrqPending|function|static inline int _NvicIsIrqPending(unsigned int irq)
+DECL|_NvicSwInterruptTrigger|function|static inline void _NvicSwInterruptTrigger(unsigned int irq)
