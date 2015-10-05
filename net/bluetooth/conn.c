@@ -3,7 +3,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(const bt_addr_le_t *peer)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
-DECL|bt_conn_connected|function|void bt_conn_connected(struct bt_conn *conn)
+DECL|bt_conn_connected|function|static void bt_conn_connected(struct bt_conn *conn)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer)
 DECL|bt_conn_disconnected|function|static void bt_conn_disconnected(struct bt_conn *conn)
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
