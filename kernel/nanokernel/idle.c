@@ -1,1 +1,10 @@
+DECL|_power_save_idle_exit|function|void _power_save_idle_exit(void)
+DECL|_power_save_idle|function|void _power_save_idle(void)
+DECL|_sys_idle_ticks_threshold|variable|_sys_idle_ticks_threshold
+DECL|get_next_tick_expiry|function|static inline int32_t get_next_tick_expiry(void)
+DECL|get_next_timeout_expiry|function|static inline int32_t get_next_timeout_expiry(void)
+DECL|get_next_timeout_expiry|macro|get_next_timeout_expiry
+DECL|get_next_timer_expiry|function|static inline int32_t get_next_timer_expiry(void)
+DECL|must_enter_tickless_idle|function|static inline int must_enter_tickless_idle(void)
 DECL|nano_cpu_set_idle|function|void nano_cpu_set_idle(int32_t ticks)
+DECL|was_in_tickless_idle|function|static inline int was_in_tickless_idle(void)
