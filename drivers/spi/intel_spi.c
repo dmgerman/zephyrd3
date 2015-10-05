@@ -16,7 +16,7 @@ DECL|spi_config_0_irq|function|void spi_config_0_irq(struct device *dev)
 DECL|spi_config_1_irq|function|void spi_config_1_irq(struct device *dev)
 DECL|spi_intel_config_0|variable|spi_intel_config_0
 DECL|spi_intel_config_1|variable|spi_intel_config_1
-DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev, struct spi_config *config)
+DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev,struct spi_config *config, void *user_data)
 DECL|spi_intel_data_port_0|variable|spi_intel_data_port_0
 DECL|spi_intel_data_port_1|variable|spi_intel_data_port_1
 DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)

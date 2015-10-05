@@ -53,3 +53,4 @@ DECL|sscr1|member|uint32_t sscr1;
 DECL|t_len|member|uint32_t t_len;
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
 DECL|tx_buf|member|uint8_t *tx_buf;
+DECL|user_data|member|void *user_data;
