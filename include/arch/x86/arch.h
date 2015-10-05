@@ -53,7 +53,6 @@ DECL|eip|member|unsigned int eip;
 DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
-DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
 DECL|irq_lock|function|static inline __attribute__((always_inline)) unsigned int irq_lock(void)
 DECL|irq_unlock|function|static inline __attribute__((always_inline)) void irq_unlock(unsigned int key)
@@ -62,6 +61,4 @@ DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
 DECL|priority|member|unsigned int priority;
 DECL|s_isrList|struct|typedef struct s_isrList {
-DECL|ss|member|unsigned int ss;
-DECL|ss|member|unsigned int ss;
 DECL|vec|member|unsigned int vec;
