@@ -2,11 +2,13 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|POLLING_TIMEOUT|macro|POLLING_TIMEOUT
+DECL|_i2c_dw_data_ask|function|static inline void _i2c_dw_data_ask(struct device *dev, uint8_t restart)
 DECL|_i2c_dw_data_read|function|static void _i2c_dw_data_read(struct device *dev)
 DECL|_i2c_dw_data_send|function|static void _i2c_dw_data_send(struct device *dev)
 DECL|_i2c_dw_setup|function|static int _i2c_dw_setup(struct device *dev)
 DECL|_i2c_dw_transfer_complete|function|static inline void _i2c_dw_transfer_complete(struct device *dev)
-DECL|_i2c_dw_transfer|function|static int _i2c_dw_transfer(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address)
+DECL|_i2c_dw_transfer_init|function|static int _i2c_dw_transfer_init(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address)
+DECL|_i2c_dw_transfer_start|function|static int _i2c_dw_transfer_start(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address)
 DECL|funcs|variable|funcs
 DECL|i2c_0_runtime|variable|i2c_0_runtime
 DECL|i2c_config_0|function|void i2c_config_0(struct device *port)

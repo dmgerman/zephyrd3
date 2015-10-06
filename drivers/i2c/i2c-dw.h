@@ -3,6 +3,7 @@ DECL|DW_ENABLE_RX_INT_I2C_MASTER|macro|DW_ENABLE_RX_INT_I2C_MASTER
 DECL|DW_ENABLE_RX_INT_I2C_SLAVE|macro|DW_ENABLE_RX_INT_I2C_SLAVE
 DECL|DW_ENABLE_TX_INT_I2C_MASTER|macro|DW_ENABLE_TX_INT_I2C_MASTER
 DECL|DW_ENABLE_TX_INT_I2C_SLAVE|macro|DW_ENABLE_TX_INT_I2C_SLAVE
+DECL|I2C_DW_BUSY|macro|I2C_DW_BUSY
 DECL|I2C_DW_CMD_ERROR|macro|I2C_DW_CMD_ERROR
 DECL|I2C_DW_CMD_RECV|macro|I2C_DW_CMD_RECV
 DECL|I2C_DW_CMD_SEND|macro|I2C_DW_CMD_SEND
@@ -36,9 +37,9 @@ DECL|interrupt_mask|member|uint32_t interrupt_mask;
 DECL|interrupt_vector|member|uint32_t interrupt_vector;
 DECL|lcnt|member|uint16_t lcnt;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
+DECL|request_bytes|member|uint8_t request_bytes;
 DECL|rx_buffer|member|uint8_t *rx_buffer;
 DECL|rx_len|member|uint8_t rx_len;
-DECL|rx_tx_len|member|uint8_t rx_tx_len;
 DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
 DECL|slave_mode|member|uint8_t slave_mode;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
