@@ -31,6 +31,7 @@ DECL|cmd_gatt_write_signed|function|static void cmd_gatt_write_signed(int argc, 
 DECL|cmd_gatt_write_without_rsp|function|static void cmd_gatt_write_without_rsp(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static void cmd_gatt_write(int argc, char *argv[])
 DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
+DECL|cmd_l2cap_register|function|static void cmd_l2cap_register(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
 DECL|cmd_scan|function|static void cmd_scan(int argc, char *argv[])
 DECL|cmd_security|function|static void cmd_security(int argc, char *argv[])
@@ -47,6 +48,12 @@ DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
 DECL|gap_uuid|variable|gap_uuid
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
+DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
+DECL|l2cap_chan|variable|l2cap_chan
+DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
+DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
+DECL|l2cap_ops|variable|l2cap_ops
+DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct bt_buf *buf)
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
@@ -55,6 +62,7 @@ DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, con
 DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
+DECL|server|variable|server
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
 DECL|subscribe_destroy|function|static void subscribe_destroy(void *user_data)
 DECL|subscribe_func|function|static void subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
