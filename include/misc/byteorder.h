@@ -1,5 +1,13 @@
 DECL|bswap_16|macro|bswap_16
 DECL|bswap_32|macro|bswap_32
+DECL|sys_be16_to_cpu|macro|sys_be16_to_cpu
+DECL|sys_be16_to_cpu|macro|sys_be16_to_cpu
+DECL|sys_be32_to_cpu|macro|sys_be32_to_cpu
+DECL|sys_be32_to_cpu|macro|sys_be32_to_cpu
+DECL|sys_cpu_to_be16|macro|sys_cpu_to_be16
+DECL|sys_cpu_to_be16|macro|sys_cpu_to_be16
+DECL|sys_cpu_to_be32|macro|sys_cpu_to_be32
+DECL|sys_cpu_to_be32|macro|sys_cpu_to_be32
 DECL|sys_cpu_to_le16|macro|sys_cpu_to_le16
 DECL|sys_cpu_to_le16|macro|sys_cpu_to_le16
 DECL|sys_cpu_to_le32|macro|sys_cpu_to_le32
