@@ -12,7 +12,7 @@ DECL|SPI_TRANSFER_MASK|macro|SPI_TRANSFER_MASK
 DECL|SPI_TRANSFER_MSB|macro|SPI_TRANSFER_MSB
 DECL|SPI_WORD_SIZE_GET|macro|SPI_WORD_SIZE_GET
 DECL|SPI_WORD_SIZE_MASK|macro|SPI_WORD_SIZE_MASK
-DECL|SPI_WORD_SIZE|macro|SPI_WORD_SIZE
+DECL|SPI_WORD|macro|SPI_WORD
 DECL|__SPI_H__|macro|__SPI_H__
 DECL|callback|member|spi_callback callback;
 DECL|configure|member|spi_api_configure configure;
