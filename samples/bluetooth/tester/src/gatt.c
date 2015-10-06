@@ -13,7 +13,7 @@ DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct b
 DECL|gatt_db_lookup_id|function|static struct bt_gatt_attr *gatt_db_lookup_id(uint16_t attr_id)
 DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
-DECL|len|member|uint8_t len;
+DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
