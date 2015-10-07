@@ -50,6 +50,7 @@ DECL|flags|member|atomic_t flags;
 DECL|func|member|uint8_t (*func)(struct bt_conn *conn, struct bt_buf *buf);
 DECL|gen_method|variable|gen_method
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
+DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
 DECL|get_io_capa|function|static uint8_t get_io_capa(const struct bt_auth_cb *cb)
 DECL|get_keys_type|function|static uint8_t get_keys_type(uint8_t method)
 DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)

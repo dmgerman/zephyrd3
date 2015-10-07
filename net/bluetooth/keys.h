@@ -14,6 +14,7 @@ DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
 DECL|cnt|member|uint32_t cnt;
 DECL|ediv|member|uint16_t ediv;
+DECL|enc_size|member|uint8_t enc_size;
 DECL|irk|member|struct bt_irk irk;
 DECL|keys|member|int keys;
 DECL|local_csrk|member|struct bt_csrk local_csrk;
