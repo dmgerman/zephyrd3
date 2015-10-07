@@ -39,6 +39,7 @@ DECL|nanoCtxTaskTest|function|int nanoCtxTaskTest(void)
 DECL|nano_cpu_idleTest|function|int nano_cpu_idleTest(void)
 DECL|q_order|member|int q_order;
 DECL|reply_timeout|variable|reply_timeout
+DECL|test_fiber_busy_wait|function|static void test_fiber_busy_wait(int ticks, int unused)
 DECL|test_fiber_sleep|function|static void test_fiber_sleep(int timeout, int arg2)
 DECL|test_timeout|function|static int test_timeout(void)
 DECL|timeout_order_data|struct|struct timeout_order_data {
