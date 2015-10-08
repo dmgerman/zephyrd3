@@ -1,4 +1,5 @@
 DECL|__gdb_stub_irq_vector_table|macro|__gdb_stub_irq_vector_table
+DECL|__in_section|macro|__in_section
 DECL|__irq_vector_table|macro|__irq_vector_table
 DECL|__irq_vector_table|macro|__irq_vector_table
 DECL|__isr_table_section|macro|__isr_table_section
@@ -6,6 +7,5 @@ DECL|__isr_table_section|macro|__isr_table_section
 DECL|__noinit|macro|__noinit
 DECL|__scp_section|macro|__scp_section
 DECL|__scs_section|macro|__scs_section
-DECL|__section|macro|__section
 DECL|__security_frdm_k64f_section|macro|__security_frdm_k64f_section
 DECL|_section_tags__h_|macro|_section_tags__h_
