@@ -6,6 +6,7 @@ DECL|MAX_IRQS|macro|MAX_IRQS
 DECL|MAX_NUM_VECTORS|macro|MAX_NUM_VECTORS
 DECL|MAX_PRIORITIES|macro|MAX_PRIORITIES
 DECL|MAX_VECTORS_PER_PRIORITY|macro|MAX_VECTORS_PER_PRIORITY
+DECL|MFILE|enumerator|MFILE, /* irq to interrupt vector mapping file */
 DECL|NFILES|enumerator|NFILES /* total number of file names */
 DECL|NUSERFILES|enumerator|NUSERFILES, /* number of user-provided file names */
 DECL|OFILE|enumerator|OFILE, /* output file */
@@ -22,6 +23,7 @@ DECL|close_files|function|static void close_files(void)
 DECL|dpl|member|unsigned int dpl;
 DECL|fds|variable|fds
 DECL|filenames|variable|filenames
+DECL|find_first_set_lsb|function|static int find_first_set_lsb(unsigned int value)
 DECL|generate_idt|function|static void generate_idt(void)
 DECL|generate_interrupt_vector_bitmap|function|static void generate_interrupt_vector_bitmap(void)
 DECL|generated_entry|variable|generated_entry
