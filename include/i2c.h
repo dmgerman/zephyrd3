@@ -16,7 +16,6 @@ DECL|configure|member|i2c_api_configure_t configure;
 DECL|dev_config|union|union dev_config {
 DECL|i2c_api_configure_t|typedef|typedef int (*i2c_api_configure_t)(struct device *dev,
 DECL|i2c_api_full_io_t|typedef|typedef int (*i2c_api_full_io_t)(struct device *dev,
-DECL|i2c_api_io_t|typedef|typedef int (*i2c_api_io_t)(struct device *dev,
 DECL|i2c_api_resume_t|typedef|typedef int (*i2c_api_resume_t)(struct device *dev);
 DECL|i2c_api_set_callback_t|typedef|typedef int (*i2c_api_set_callback_t)(struct device *dev,
 DECL|i2c_api_suspend_t|typedef|typedef int (*i2c_api_suspend_t)(struct device *dev);
@@ -35,9 +34,7 @@ DECL|i2c_write|function|static inline int i2c_write(struct device *dev, uint8_t 
 DECL|is_master_device|member|uint32_t is_master_device : 1;
 DECL|is_slave_read|member|uint32_t is_slave_read : 1;
 DECL|poll_transfer|member|i2c_api_full_io_t poll_transfer;
-DECL|polling_write|member|i2c_api_io_t polling_write;
 DECL|raw|member|uint32_t raw;
-DECL|read|member|i2c_api_io_t read;
 DECL|reserved|member|uint32_t reserved : 26;
 DECL|resume|member|i2c_api_resume_t resume;
 DECL|set_callback|member|i2c_api_set_callback_t set_callback;
@@ -45,4 +42,3 @@ DECL|speed|member|uint32_t speed : 3;
 DECL|suspend|member|i2c_api_suspend_t suspend;
 DECL|transfer|member|i2c_api_full_io_t transfer;
 DECL|use_10_bit_addr|member|uint32_t use_10_bit_addr : 1;
-DECL|write|member|i2c_api_io_t write;
