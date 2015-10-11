@@ -110,6 +110,7 @@ DECL|_pipe_xfer_req_arg|struct|struct _pipe_xfer_req_arg {
 DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
+DECL|_track_list_micro_mem_pool|variable|_track_list_micro_mem_pool
 DECL|_u1arg|struct|struct _u1arg {
 DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
@@ -180,6 +181,7 @@ DECL|mrec|member|struct k_mrec mrec;
 DECL|mutex|member|kmutex_t mutex;
 DECL|next|member|struct k_args *next;
 DECL|next|member|struct k_timer *next;
+DECL|next|member|struct pool_struct *next;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;

@@ -27,6 +27,12 @@ DECL|_k_pipe_marker_list|struct|struct _k_pipe_marker_list {
 DECL|_k_pipe_marker|struct|struct _k_pipe_marker {
 DECL|_k_pipe_struct|struct|struct _k_pipe_struct {
 DECL|_k_sem_struct|struct|struct _k_sem_struct {
+DECL|_track_list_micro_fifo|variable|_track_list_micro_fifo
+DECL|_track_list_micro_mbox|variable|_track_list_micro_mbox
+DECL|_track_list_micro_mem_map|variable|_track_list_micro_mem_map
+DECL|_track_list_micro_mutex|variable|_track_list_micro_mutex
+DECL|_track_list_micro_pipe|variable|_track_list_micro_pipe
+DECL|_track_list_micro_sem|variable|_track_list_micro_sem
 DECL|address_in_pool|member|void *address_in_pool;
 DECL|args|member|struct k_args *args;
 DECL|available_data_count|member|int available_data_count;
@@ -88,6 +94,12 @@ DECL|level|member|int level;
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|markers|member|struct _k_pipe_marker markers[MAXNBR_PIPE_MARKERS];
 DECL|next|member|int next; /* -1 == no successor */
+DECL|next|member|struct _k_fifo_struct *next;
+DECL|next|member|struct _k_mbox_struct *next;
+DECL|next|member|struct _k_mem_map_struct *next;
+DECL|next|member|struct _k_mutex_struct *next;
+DECL|next|member|struct _k_pipe_struct *next;
+DECL|next|member|struct _k_sem_struct *next;
 DECL|next|member|struct k_task *next;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_markers|member|int num_markers; /* Only used if STORE_NBR_MARKERS is defined */
