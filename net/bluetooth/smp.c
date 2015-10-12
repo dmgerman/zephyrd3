@@ -101,7 +101,6 @@ DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *
 DECL|smp_sign_test|function|static int smp_sign_test(void)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_conn *conn, struct bt_buf *buf)
-DECL|smp_stop_timer|function|static void smp_stop_timer(struct bt_smp *smp)
 DECL|smp_timeout|function|static void smp_timeout(int arg1, int arg2)
 DECL|swap_buf|function|static void swap_buf(const uint8_t *src, uint8_t *dst, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
