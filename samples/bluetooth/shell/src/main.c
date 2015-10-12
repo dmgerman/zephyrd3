@@ -47,6 +47,7 @@ DECL|gap_uuid|variable|gap_uuid
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|mainloop|function|void mainloop(void)
 DECL|name_chrc|variable|name_chrc
+DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
