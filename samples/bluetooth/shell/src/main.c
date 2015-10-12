@@ -1,3 +1,5 @@
+DECL|AD_COMPLETE_NAME|macro|AD_COMPLETE_NAME
+DECL|AD_SHORT_NAME|macro|AD_SHORT_NAME
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|ad_non_discov|variable|ad_non_discov
