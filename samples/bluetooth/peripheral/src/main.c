@@ -4,6 +4,9 @@ DECL|ad|variable|ad
 DECL|appearance_chrc|variable|appearance_chrc
 DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
+DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
+DECL|auth_cb_display|variable|auth_cb_display
+DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|bas_uuid|variable|bas_uuid
 DECL|battery|variable|battery
 DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
