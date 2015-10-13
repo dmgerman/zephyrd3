@@ -34,7 +34,6 @@ DECL|_NANO_ERR_INVALID_TASK_EXIT|macro|_NANO_ERR_INVALID_TASK_EXIT
 DECL|_NANO_ERR_PAGE_FAULT|macro|_NANO_ERR_PAGE_FAULT
 DECL|_NANO_ERR_SPURIOUS_INT|macro|_NANO_ERR_SPURIOUS_INT
 DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
-DECL|cr2|member|unsigned int cr2;
 DECL|cs|member|unsigned int cs;
 DECL|cs|member|unsigned int cs;
 DECL|dpl|member|unsigned int dpl;
