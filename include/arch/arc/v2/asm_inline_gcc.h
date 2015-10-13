@@ -1,5 +1,11 @@
 DECL|__ASM_INLINE_GCC_H__|macro|__ASM_INLINE_GCC_H__
 DECL|sys_clear_bit|function|void sys_clear_bit(mem_addr_t addr, int bit)
+DECL|sys_in16|function|uint16_t sys_in16(io_port_t port)
+DECL|sys_in32|function|uint32_t sys_in32(io_port_t port)
+DECL|sys_in8|function|uint8_t sys_in8(io_port_t port)
+DECL|sys_out16|function|void sys_out16(uint16_t data, io_port_t port)
+DECL|sys_out32|function|void sys_out32(uint32_t data, io_port_t port)
+DECL|sys_out8|function|void sys_out8(uint8_t data, io_port_t port)
 DECL|sys_read16|function|uint16_t sys_read16(mm_reg_t addr)
 DECL|sys_read32|function|uint32_t sys_read32(mm_reg_t addr)
 DECL|sys_read8|function|uint8_t sys_read8(mm_reg_t addr)
