@@ -11,6 +11,16 @@ DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
+DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
+DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
+DECL|_REG_READ|macro|_REG_READ
+DECL|_REG_READ|macro|_REG_READ
+DECL|_REG_SET_BIT|macro|_REG_SET_BIT
+DECL|_REG_SET_BIT|macro|_REG_SET_BIT
+DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
+DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
+DECL|_REG_WRITE|macro|_REG_WRITE
+DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_clock_config|function|static inline void _clock_config(struct device *dev)
 DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
 DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
