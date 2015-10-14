@@ -4,7 +4,7 @@ DECL|_sys_profiler_context_switch|function|void _sys_profiler_context_switch(voi
 DECL|_sys_profiler_enter_sleep|function|void _sys_profiler_enter_sleep(void)
 DECL|_sys_profiler_exit_sleep|function|void _sys_profiler_exit_sleep(void)
 DECL|_sys_profiler_init|function|static int _sys_profiler_init(struct device *arg)
-DECL|_sys_profiler_interrupt|function|void _sys_profiler_interrupt()
+DECL|_sys_profiler_interrupt|function|void _sys_profiler_interrupt(void)
 DECL|_sys_profiler_sleep_start_time|variable|_sys_profiler_sleep_start_time
 DECL|sys_profiler_put_timed|function|void sys_profiler_put_timed(uint16_t event_id)
 DECL|sys_profiler_register_as_collector|function|void sys_profiler_register_as_collector(void)
