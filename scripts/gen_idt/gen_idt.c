@@ -13,6 +13,9 @@ DECL|O_BINARY|macro|O_BINARY
 DECL|PRINTF|macro|PRINTF
 DECL|PRINTF|macro|PRINTF
 DECL|SHORT_USAGE|enumerator|enum { SHORT_USAGE, LONG_USAGE };
+DECL|UNSPECIFIED_INT_VECTOR|macro|UNSPECIFIED_INT_VECTOR
+DECL|UNSPECIFIED_IRQ|macro|UNSPECIFIED_IRQ
+DECL|UNSPECIFIED_PRIORITY|macro|UNSPECIFIED_PRIORITY
 DECL|__packed|macro|__packed
 DECL|clean_exit|function|static void clean_exit(int exit_code)
 DECL|close_files|function|static void close_files(void)
