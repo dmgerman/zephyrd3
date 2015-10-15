@@ -22,6 +22,8 @@ DECL|pci_bar_params_get|function|static inline int pci_bar_params_get(union pci_
 DECL|pci_bus_scan_init|function|void pci_bus_scan_init(void)
 DECL|pci_bus_scan|function|int pci_bus_scan(struct pci_dev_info *dev_info)
 DECL|pci_dev_scan|function|static inline int pci_dev_scan(union pci_addr_reg pci_ctrl_addr,struct pci_dev_info *dev_info)
+DECL|pci_enable_bus_master|function|void pci_enable_bus_master(struct pci_dev_info *dev_info)
 DECL|pci_enable_regs|function|void pci_enable_regs(struct pci_dev_info *dev_info)
+DECL|pci_set_command_bits|function|static void pci_set_command_bits(struct pci_dev_info *dev_info, uint32_t bits)
 DECL|pci_show|function|void pci_show(struct pci_dev_info *dev_info)
 DECL|unused|member|uint32_t unused:9;
