@@ -47,8 +47,6 @@ DECL|_IoApicRedirRegSet|function|static void _IoApicRedirRegSet(unsigned int reg
 DECL|_IoApicRteConfigSet|function|static void _IoApicRteConfigSet(unsigned int irq, uint32_t value)
 DECL|__IoApicGet|function|static uint32_t __IoApicGet(int32_t offset)
 DECL|__IoApicSet|function|static void __IoApicSet(int32_t offset, uint32_t value)
-DECL|_ioapic_eoi_get|function|void *_ioapic_eoi_get(unsigned int irq, char *argRequired, void **arg)
-DECL|_ioapic_eoi|function|void _ioapic_eoi(unsigned int irq)
 DECL|_ioapic_init|function|int _ioapic_init(struct device *unused)
 DECL|_ioapic_int_vec_set|function|void _ioapic_int_vec_set(unsigned int irq, unsigned int vector)
 DECL|_ioapic_irq_disable|function|void _ioapic_irq_disable(unsigned int irq)
