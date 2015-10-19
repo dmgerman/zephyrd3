@@ -5,9 +5,10 @@ DECL|arg|member|void *arg[2];
 DECL|initIRQ|function|static int initIRQ(struct isrInitInfo *i)
 DECL|isrInitInfo|struct|struct isrInitInfo {
 DECL|isr|member|vvpfn isr[2];
+DECL|sw_irq_vectors|variable|sw_irq_vectors
 DECL|sw_isr_trigger_0|function|static inline void sw_isr_trigger_0(void)
-DECL|sw_isr_trigger_0|variable|sw_isr_trigger_0
+DECL|sw_isr_trigger_0|function|static inline void sw_isr_trigger_0(void)
 DECL|sw_isr_trigger_1|function|static inline void sw_isr_trigger_1(void)
-DECL|sw_isr_trigger_1|variable|sw_isr_trigger_1
+DECL|sw_isr_trigger_1|function|static inline void sw_isr_trigger_1(void)
 DECL|vvfn|typedef|typedef void (*vvfn)(void); /* void-void function pointer */
 DECL|vvpfn|typedef|typedef void (*vvpfn)(void *); /* void-void_pointer function pointer */
