@@ -702,8 +702,8 @@ DECL|class|member|uint32_t class : 8;
 DECL|class|member|uint32_t class : 8;
 DECL|command|member|uint32_t command
 DECL|command|member|uint32_t command
-DECL|command|member|uint32_t command
-DECL|command|member|uint32_t command
+DECL|command|member|uint32_t command : 16; /* device command register */
+DECL|command|member|uint32_t command : 16; /* device command register */
 DECL|data|member|uint32_t data : 16; /* message data register */
 DECL|data|member|uint32_t data : 16; /* message data register */
 DECL|dev_no|member|uint32_t dev_no;
