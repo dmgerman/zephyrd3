@@ -201,7 +201,7 @@ DECL|srd|member|uint32_t srd : 8 __packed;
 DECL|stcr|member|uint32_t stcr; /* 0x1c Calibration value Register */
 DECL|stcsr|member|union __stcsr stcsr; /* 0x10 Control and Status Register */
 DECL|stcvr|member|uint32_t stcvr; /* 0x18 Current Value Register (low 24 bits) */
-DECL|stir|member|stir; /* 0xf00 WO SW Trigger IRQ Reg. (bit 0-8/IRQ 0-239 only)
+DECL|stir|member|uint32_t stir;
 DECL|stkalign|member|uint32_t stkalign : 1 __packed;
 DECL|stkerr|member|uint8_t stkerr : 1 __packed;
 DECL|strvr|member|uint32_t strvr; /* 0x14 Reload Value Register (low 24 bits) */

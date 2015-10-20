@@ -136,7 +136,7 @@ DECL|count|member|int count;
 DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data_ptr|member|void *data_ptr;
-DECL|data_ptr|member|void *data_ptr; /* if NULL, data is embedded in
+DECL|data_ptr|member|void *data_ptr; /* if NULL, data is embedded in cmd packet */
 DECL|data|member|char *data;
 DECL|data|member|char data[OCTET_TO_SIZEOFUNIT(40)];
 DECL|destination|member|void *destination;
@@ -156,7 +156,7 @@ DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
 DECL|head|member|struct k_args **head;
 DECL|head|member|struct k_task *head;
-DECL|id|member|int id; /* if it is a Xfer to/from a buffer,
+DECL|id|member|int id; /* if it is a Xfer to/from a buffer, this is the registered
 DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {

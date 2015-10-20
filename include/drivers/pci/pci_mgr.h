@@ -664,7 +664,7 @@ DECL|SYS_PCI_REQUEST_WRITE_DATA|macro|SYS_PCI_REQUEST_WRITE_DATA
 DECL|__inc_pci_mgr_h|macro|__inc_pci_mgr_h
 DECL|_pci_msi_hdr|struct|struct _pci_msi_hdr {
 DECL|addr_high|member|uint32_t addr_high; /* message address register
-DECL|addr_low|member|addr_low; /* message address register (lower)
+DECL|addr_low|member|uint32_t addr_low; /* message address register
 DECL|addr|member|uint32_t addr; /* message address register */
 DECL|bar0|member|uint32_t bar0; /* offset 10: base address register 0 */
 DECL|bar0|member|uint32_t bar0; /* offset 10: base address register 0 */
@@ -704,15 +704,15 @@ DECL|command|member|uint32_t command
 DECL|command|member|uint32_t command
 DECL|command|member|uint32_t command
 DECL|command|member|uint32_t command
-DECL|data|member|uint32_t data : 16; /* message data register
-DECL|data|member|uint32_t data : 16; /* message data register
+DECL|data|member|uint32_t data : 16; /* message data register */
+DECL|data|member|uint32_t data : 16; /* message data register */
 DECL|dev_no|member|uint32_t dev_no;
 DECL|device_id|member|uint32_t device_id
 DECL|device_id|member|uint32_t device_id
 DECL|device|member|uint32_t device : 5; /* PCI device number */
 DECL|device|member|uint32_t device : 5; /* PCI device number */
-DECL|enabled|member|uint32_t enabled
-DECL|enabled|member|uint32_t enabled
+DECL|enabled|member|uint32_t enabled : 1; /* MSI enabled */
+DECL|enabled|member|uint32_t enabled : 1; /* MSI-x enabled */
 DECL|enable|member|uint32_t enable : 1; /* access enabled */
 DECL|entry|member|uint16_t entry; /* driver to specify entry, guest OS writes */
 DECL|feature|member|uint32_t feature
@@ -722,7 +722,7 @@ DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
-DECL|func_mask|member|uint32_t func_mask
+DECL|func_mask|member|uint32_t func_mask : 1; /* 1 for vectors masked */
 DECL|func_no|member|uint32_t func_no;
 DECL|func|member|uint32_t func : 3; /* device function number */
 DECL|func|member|uint32_t func : 3; /* device function number */
@@ -750,7 +750,7 @@ DECL|io_limit_upper|member|uint32_t io_limit_upper : 16;
 DECL|io_limit_upper|member|uint32_t io_limit_upper : 16;
 DECL|io_limit|member|uint32_t io_limit : 8;
 DECL|io_limit|member|uint32_t io_limit : 8;
-DECL|is_64_bit|member|uint32_t is_64_bit
+DECL|is_64_bit|member|uint32_t is_64_bit : 1; /* 64-bit capable */
 DECL|latency_timer|member|uint32_t latency_timer : 8;
 DECL|latency_timer|member|uint32_t latency_timer : 8;
 DECL|latency_timer|member|uint32_t latency_timer : 8;
@@ -766,15 +766,15 @@ DECL|min_grant|member|uint32_t min_grant : 8;
 DECL|msg_addr_high|member|uint32_t msg_addr_high;
 DECL|msg_addr|member|uint32_t msg_addr;
 DECL|msg_data|member|uint32_t msg_data;
-DECL|msg_grant|member|uint32_t msg_grant
-DECL|msg_req|member|uint32_t msg_req
+DECL|msg_grant|member|uint32_t msg_grant : 3; /* granted message count */
+DECL|msg_req|member|uint32_t msg_req : 3; /* requested message count */
 DECL|msi_cap|member|} msi_cap;
 DECL|msix_cap|member|} msix_cap;
 DECL|msix_vec|member|uint32_t msix_vec;
 DECL|next_ptr|member|uint32_t next_ptr
 DECL|next_ptr|member|uint32_t next_ptr
-DECL|next_ptr|member|uint32_t next_ptr
-DECL|next_ptr|member|uint32_t next_ptr
+DECL|next_ptr|member|uint32_t next_ptr : 8; /* pointer to next capability */
+DECL|next_ptr|member|uint32_t next_ptr : 8; /* pointer to next capability */
 DECL|offset|member|uint32_t offset : 2; /* offset for access data */
 DECL|pci_addr_reg|union|union pci_addr_reg {
 DECL|pci_cap_hdr_t|variable|pci_cap_hdr_t
@@ -809,10 +809,10 @@ DECL|reserved1|member|uint32_t reserved1 : 24;
 DECL|reserved1|member|uint32_t reserved1 : 4;
 DECL|reserved1|member|uint32_t reserved1 : 7;
 DECL|reserved2|member|uint32_t reserved2; /* offset 38: */
-DECL|reserved|member|uint32_t reserved
-DECL|reserved|member|uint32_t reserved
 DECL|reserved|member|uint32_t reserved : 24;
 DECL|reserved|member|uint32_t reserved : 24;
+DECL|reserved|member|uint32_t reserved : 3; /* */
+DECL|reserved|member|uint32_t reserved : 8; /* */
 DECL|revision|member|uint32_t revision : 8;
 DECL|revision|member|uint32_t revision : 8;
 DECL|revision|member|uint32_t revision : 8;
@@ -825,8 +825,8 @@ DECL|secondary_latency|member|uint32_t secondary_latency : 8;
 DECL|secondary_latency|member|uint32_t secondary_latency : 8;
 DECL|secondary_status|member|uint32_t secondary_status : 16;
 DECL|secondary_status|member|uint32_t secondary_status : 16;
-DECL|spare|member|uint32_t spare
-DECL|spare|member|uint32_t spare
+DECL|spare|member|uint32_t spare : 16; /* */
+DECL|spare|member|uint32_t spare : 16; /* */
 DECL|status|member|uint32_t status : 16; /* device status */
 DECL|status|member|uint32_t status : 16; /* device status */
 DECL|status|member|uint32_t status : 16; /* device status */
@@ -841,7 +841,7 @@ DECL|subsys_id|member|uint32_t subsys_id
 DECL|subsys_id|member|uint32_t subsys_id
 DECL|subvendor_id|member|uint32_t subvendor_id
 DECL|subvendor_id|member|uint32_t subvendor_id
-DECL|table_size|member|uint32_t table_size
+DECL|table_size|member|uint32_t table_size : 11; /* MSI-x table size */
 DECL|value|member|uint32_t value;
 DECL|value|member|uint32_t value;
 DECL|vec_ctrl|member|uint32_t vec_ctrl;
@@ -869,5 +869,5 @@ DECL|words|member|} words;
 DECL|word|member|uint32_t word; /* array of words for the header */
 DECL|word|member|uint32_t word; /* array of words for the header */
 DECL|word|member|uint32_t word[4]; /* array of words for the header */
-DECL|word|member|uint32_t word[PCI_HEADER_WORDS]; /* array of words for the
+DECL|word|member|uint32_t word[PCI_HEADER_WORDS];
 DECL|word|member|} word;

@@ -79,7 +79,7 @@ DECL|r7|member|uint32_t r7;
 DECL|r8|member|uint32_t r8;
 DECL|r9|member|uint32_t r9;
 DECL|relinquish_cause|member|int relinquish_cause; /* one of the _CAUSE_xxxx definitions above */
-DECL|return_value|member|unsigned int return_value; /* return value from _Swap */
+DECL|return_value|member|unsigned int return_value;/* return value from _Swap */
 DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
 DECL|s_NANO|struct|struct s_NANO {
 DECL|sp|member|uint32_t sp; /* r28 */

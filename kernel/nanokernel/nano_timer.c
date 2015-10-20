@@ -1,5 +1,5 @@
 DECL|_nano_timer_list|variable|_nano_timer_list
-DECL|_timer_start|function|void _timer_start(struct nano_timer *timer, /* timer to start */ int ticks /* number of system ticks before expiry */ )
+DECL|_timer_start|function|void _timer_start(struct nano_timer *timer, /* timer to start */ int ticks /* number of system ticks * before expiry */ )
 DECL|_timer_stop|function|static void _timer_stop(struct nano_timer *timer)
 DECL|nano_fiber_timer_stop|function|void nano_fiber_timer_stop(struct nano_timer *timer)
 DECL|nano_fiber_timer_test|function|void *nano_fiber_timer_test(struct nano_timer *timer)

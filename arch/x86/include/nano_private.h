@@ -341,8 +341,8 @@ DECL|flags|member|int flags;
 DECL|floatRegsUnion|member|} floatRegsUnion;
 DECL|fop|member|unsigned short fop : 11; /* 2 : x87 FPU opcode */
 DECL|fop|member|unsigned short fop; /* 2 : x87 FPU opcode */
-DECL|fpRegsEx|member|tFpRegSetEx fpRegsEx; /* threads with USE_SSE utilize this
-DECL|fpRegs|member|tFpRegSet fpRegs; /* threads with USE_FP utilize this format */
+DECL|fpRegsEx|member|tFpRegSetEx fpRegsEx;
+DECL|fpRegs|member|tFpRegSet fpRegs;
 DECL|fpReg|member|tFpReg fpReg[8]; /* 80 : ST0 -> ST7 */
 DECL|fpReg|member|tFpRegEx fpReg[8]; /* 128 : x87 FPU/MMX registers */
 DECL|fpudp|member|unsigned int fpudp; /* 4 : x87 FPU instr operand ptr offset */

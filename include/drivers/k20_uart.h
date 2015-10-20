@@ -130,5 +130,5 @@ DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
 DECL|value|member|uint8_t value;
-DECL|z_reserv_statused038_03c|member|uint8_t z_reserv_statused038_03c[0x1000 - 0x32]; /* 0x032-0xFFF
+DECL|z_reserv_statused038_03c|member|uint8_t z_reserv_statused038_03c[0x1000 - 0x32];
 DECL|z_reserved00f|member|uint8_t z_reserved00f; /* 0x00F */
