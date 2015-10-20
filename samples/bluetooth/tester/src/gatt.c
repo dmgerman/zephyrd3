@@ -2,6 +2,8 @@ DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|MAX_ATTRIBUTES|macro|MAX_ATTRIBUTES
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
 DECL|add_characteristic|function|static void add_characteristic(uint8_t *data, uint16_t len)
+DECL|add_included_cb|function|static uint8_t add_included_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|chr_val|variable|chr_val
@@ -14,6 +16,7 @@ DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern)
 DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
+DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
 DECL|prep_data|member|uint8_t *prep_data;
@@ -22,6 +25,7 @@ DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
+DECL|svc_inc|variable|svc_inc
 DECL|svc_pri|variable|svc_pri
 DECL|svc_sec|variable|svc_sec
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)

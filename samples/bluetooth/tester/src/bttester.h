@@ -56,12 +56,15 @@ DECL|GAP_START_DISCOVERY|macro|GAP_START_DISCOVERY
 DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
 DECL|GATT_ADD_CHARACTERISTIC|macro|GATT_ADD_CHARACTERISTIC
+DECL|GATT_ADD_INCLUDED_SERVICE|macro|GATT_ADD_INCLUDED_SERVICE
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
 DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
 DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
 DECL|GATT_SET_VALUE|macro|GATT_SET_VALUE
 DECL|GATT_START_SERVER|macro|GATT_START_SERVER
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -139,11 +142,14 @@ DECL|gap_start_discovery_cmd|struct|struct gap_start_discovery_cmd {
 DECL|gap_stop_advertising_rp|struct|struct gap_stop_advertising_rp {
 DECL|gatt_add_characteristic_cmd|struct|struct gatt_add_characteristic_cmd {
 DECL|gatt_add_characteristic_rp|struct|struct gatt_add_characteristic_rp {
+DECL|gatt_add_included_service_cmd|struct|struct gatt_add_included_service_cmd {
+DECL|gatt_add_included_service_rp|struct|struct gatt_add_included_service_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
 DECL|gatt_read_supported_commands_rp|struct|struct gatt_read_supported_commands_rp {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
 DECL|id|member|uint8_t id;
+DECL|included_service_id|member|uint16_t included_service_id;
 DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
 DECL|len|member|uint16_t len;
@@ -160,6 +166,7 @@ DECL|scan_rsp|member|uint8_t scan_rsp[0];
 DECL|service|member|uint8_t service;
 DECL|short_name|member|uint8_t short_name[11];
 DECL|supported_settings|member|uint32_t supported_settings;
+DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|type|member|uint8_t type;
