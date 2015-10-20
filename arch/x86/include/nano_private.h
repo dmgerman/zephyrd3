@@ -335,7 +335,7 @@ DECL|esp|member|unsigned long esp;
 DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
-DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet(struct tcs *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
+DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet( struct tcs *fiber, unsigned int value)
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
 DECL|flags|member|int flags;
 DECL|floatRegsUnion|member|} floatRegsUnion;

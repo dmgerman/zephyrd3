@@ -16,7 +16,7 @@ DECL|coop|struct|struct coop {
 DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
 DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
-DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, /* pointer to fiber */ unsigned int value /* value to set as return value */ )
+DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fiber */
 DECL|flags|member|int flags; /* struct tcs->flags of 'current' thread */
 DECL|flags|member|uint32_t flags;
