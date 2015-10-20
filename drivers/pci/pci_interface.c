@@ -1,5 +1,5 @@
 DECL|pci_ctrl_addr_write|function|static int pci_ctrl_addr_write(uint32_t controller, uint32_t offset, uint32_t data, uint32_t size)
-DECL|pci_ctrl_data_read|function|static int pci_ctrl_data_read(uint32_t controller, uint32_t offset, uint32_t *data, uint32_t size)
+DECL|pci_ctrl_data_read|function|static int pci_ctrl_data_read(uint32_t controller, uint32_t offset,uint32_t *data, uint32_t size)
 DECL|pci_ctrl_data_write|function|static int pci_ctrl_data_write(uint32_t controller, uint32_t offset, uint32_t data, uint32_t size)
 DECL|pci_ctrl_read|function|static void pci_ctrl_read(uint32_t reg, uint32_t *data, uint32_t size)
 DECL|pci_ctrl_write|function|static void pci_ctrl_write(uint32_t reg, uint32_t data, uint32_t size)
