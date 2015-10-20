@@ -8,5 +8,5 @@ DECL|atomic_inc|function|atomic_val_t atomic_inc(atomic_t *target)
 DECL|atomic_nand|function|atomic_val_t atomic_nand(atomic_t *target, atomic_val_t value)
 DECL|atomic_or|function|atomic_val_t atomic_or(atomic_t *target, atomic_val_t value)
 DECL|atomic_set|function|atomic_val_t atomic_set(atomic_t *target, atomic_val_t value)
-DECL|atomic_sub|function|atomic_val_t atomic_sub(atomic_t *target, atomic_val_t value) {
+DECL|atomic_sub|function|atomic_val_t atomic_sub(atomic_t *target, atomic_val_t value)
 DECL|atomic_xor|function|atomic_val_t atomic_xor(atomic_t *target, atomic_val_t value)
