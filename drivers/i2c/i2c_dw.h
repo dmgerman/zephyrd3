@@ -44,5 +44,6 @@ DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
 DECL|slave_mode|member|uint8_t slave_mode;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
 DECL|support_hs_mode|member|bool support_hs_mode;
+DECL|sync|member|device_sync_call_t sync;
 DECL|tx_buffer|member|uint8_t *tx_buffer;
 DECL|tx_len|member|uint8_t tx_len;
