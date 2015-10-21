@@ -38,8 +38,10 @@ DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_CONN_PARAM_REQ|macro|BT_HCI_EVT_LE_CONN_PARAM_REQ
 DECL|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE|macro|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE
+DECL|BT_HCI_EVT_LE_GENERATE_DHKEY_COMPLETE|macro|BT_HCI_EVT_LE_GENERATE_DHKEY_COMPLETE
 DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
 DECL|BT_HCI_EVT_LE_META_EVENT|macro|BT_HCI_EVT_LE_META_EVENT
+DECL|BT_HCI_EVT_LE_P256_PUBLIC_KEY_COMPLETE|macro|BT_HCI_EVT_LE_P256_PUBLIC_KEY_COMPLETE
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
 DECL|BT_HCI_LE_CONN_PARAM_REQ_PROC|macro|BT_HCI_LE_CONN_PARAM_REQ_PROC
@@ -54,8 +56,10 @@ DECL|BT_HCI_OP_LE_CONN_UPDATE|macro|BT_HCI_OP_LE_CONN_UPDATE
 DECL|BT_HCI_OP_LE_CREATE_CONN_CANCEL|macro|BT_HCI_OP_LE_CREATE_CONN_CANCEL
 DECL|BT_HCI_OP_LE_CREATE_CONN|macro|BT_HCI_OP_LE_CREATE_CONN
 DECL|BT_HCI_OP_LE_ENCRYPT|macro|BT_HCI_OP_LE_ENCRYPT
+DECL|BT_HCI_OP_LE_GENERATE_DHKEY|macro|BT_HCI_OP_LE_GENERATE_DHKEY
 DECL|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_NEG_REPLY
 DECL|BT_HCI_OP_LE_LTK_REQ_REPLY|macro|BT_HCI_OP_LE_LTK_REQ_REPLY
+DECL|BT_HCI_OP_LE_P256_PUBLIC_KEY|macro|BT_HCI_OP_LE_P256_PUBLIC_KEY
 DECL|BT_HCI_OP_LE_RAND|macro|BT_HCI_OP_LE_RAND
 DECL|BT_HCI_OP_LE_READ_BUFFER_SIZE|macro|BT_HCI_OP_LE_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_LE_READ_LOCAL_FEATURES|macro|BT_HCI_OP_LE_READ_LOCAL_FEATURES
@@ -143,6 +147,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -164,6 +171,7 @@ DECL|bt_hci_cp_le_conn_param_req_neg_reply|struct|struct bt_hci_cp_le_conn_param
 DECL|bt_hci_cp_le_conn_param_req_reply|struct|struct bt_hci_cp_le_conn_param_req_reply {
 DECL|bt_hci_cp_le_create_conn|struct|struct bt_hci_cp_le_create_conn {
 DECL|bt_hci_cp_le_encrypt|struct|struct bt_hci_cp_le_encrypt {
+DECL|bt_hci_cp_le_generate_dhkey|struct|struct bt_hci_cp_le_generate_dhkey {
 DECL|bt_hci_cp_le_ltk_req_neg_reply|struct|struct bt_hci_cp_le_ltk_req_neg_reply {
 DECL|bt_hci_cp_le_ltk_req_reply|struct|struct bt_hci_cp_le_ltk_req_reply {
 DECL|bt_hci_cp_le_read_remote_features|struct|struct bt_hci_cp_le_read_remote_features {
@@ -187,8 +195,10 @@ DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_conn_param_req|struct|struct bt_hci_evt_le_conn_param_req {
 DECL|bt_hci_evt_le_conn_update_complete|struct|struct bt_hci_evt_le_conn_update_complete {
+DECL|bt_hci_evt_le_generate_dhkey_complete|struct|struct bt_hci_evt_le_generate_dhkey_complete {
 DECL|bt_hci_evt_le_ltk_request|struct|struct bt_hci_evt_le_ltk_request {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
+DECL|bt_hci_evt_le_p256_public_key_complete|struct|struct bt_hci_evt_le_p256_public_key_complete {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
@@ -212,6 +222,7 @@ DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
+DECL|dhkey|member|uint8_t dhkey[32];
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
 DECL|ediv|member|uint16_t ediv;
 DECL|ediv|member|uint16_t ediv;
@@ -262,6 +273,8 @@ DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|key|member|uint8_t key[16];
+DECL|key|member|uint8_t key[64];
+DECL|key|member|uint8_t key[64];
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
@@ -315,6 +328,8 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
