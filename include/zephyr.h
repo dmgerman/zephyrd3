@@ -1,0 +1,1 @@
+DECL|_ZEPHYR__H|macro|_ZEPHYR__H
