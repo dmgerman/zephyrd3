@@ -132,7 +132,6 @@ DECL|c1|member|struct _c1arg c1;
 DECL|continuation_receive|member|struct k_args *continuation_receive;
 DECL|continuation_send|member|struct k_args *continuation_send;
 DECL|count|member|int count;
-DECL|count|member|int count;
 DECL|data1|member|uint32_t data1;
 DECL|data2|member|uint32_t data2;
 DECL|data_ptr|member|void *data_ptr;
@@ -146,11 +145,9 @@ DECL|dummy|member|uint32_t dummy;
 DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
-DECL|evstr|struct|struct evstr {
 DECL|extra|member|} extra;
 DECL|frag_tab|member|struct pool_block *frag_tab;
 DECL|func|member|int (*func)();
-DECL|func|member|kevent_handler_t func;
 DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
 DECL|group|member|ktask_group_t group;
@@ -234,7 +231,6 @@ DECL|size|member|int size;
 DECL|size|member|int size; /* amount of data Xferred */
 DECL|source|member|void *source;
 DECL|status|member|PIPE_REQUEST_STATUS status; /* status of processing of request */
-DECL|status|member|int status;
 DECL|sync_req|struct|struct sync_req {
 DECL|sync|member|struct sync_req sync;
 DECL|tail|member|struct k_task *tail;
@@ -257,7 +253,6 @@ DECL|total_size|member|uint32_t total_size;
 DECL|u1|member|struct _u1arg u1;
 DECL|val|member|int val;
 DECL|waiters|member|struct k_args *waiters;
-DECL|waiter|member|struct k_args *waiter;
 DECL|writer_ptr|member|struct k_args *writer_ptr; /* if there's a writer involved,
 DECL|xfer_type|member|XFER_TYPE xfer_type; /* W2B, B2R or W2R */
 DECL|xferred_size|member|int xferred_size;

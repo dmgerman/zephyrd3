@@ -18,6 +18,7 @@ DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
 DECL|_BASE_API_H|macro|_BASE_API_H
 DECL|_K_PIPE_BUFF_STATE|typedef|} _K_PIPE_BUFF_STATE;
+DECL|_k_event_struct|struct|struct _k_event_struct {
 DECL|_k_fifo_struct|struct|struct _k_fifo_struct {
 DECL|_k_mbox_struct|struct|struct _k_mbox_struct {
 DECL|_k_mem_map_struct|struct|struct _k_mem_map_struct {
@@ -50,6 +51,7 @@ DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|count|member|int count;
 DECL|count|member|int count;
+DECL|count|member|int count;
 DECL|current_owner_priority|member|kpriority_t current_owner_priority;
 DECL|dequeue_point|member|char *dequeue_point;
 DECL|desc|member|struct _k_pipe_desc desc;
@@ -65,6 +67,7 @@ DECL|fn_start|member|void (*fn_start)(void);
 DECL|free_space_count|member|int free_space_count;
 DECL|free_space_post_wrap_around|member|int free_space_post_wrap_around;
 DECL|free|member|char *free;
+DECL|func|member|kevent_handler_t func;
 DECL|group|member|uint32_t group;
 DECL|high_watermark|member|int high_watermark;
 DECL|high_watermark|member|int high_watermark;
@@ -129,6 +132,7 @@ DECL|sema|member|ksem_t sema;
 DECL|size|member|int size;
 DECL|size|member|uint32_t size;
 DECL|state|member|uint32_t state;
+DECL|status|member|int status;
 DECL|transfer|member|struct k_args *transfer;
 DECL|tx_block|member|struct k_block tx_block;
 DECL|tx_data|member|void *tx_data;
@@ -137,6 +141,7 @@ DECL|waiters|member|struct k_args *waiters;
 DECL|waiters|member|struct k_args *waiters;
 DECL|waiters|member|struct k_args *waiters;
 DECL|waiters|member|struct k_args *waiters;
+DECL|waiter|member|struct k_args *waiter;
 DECL|worksize|member|int worksize;
 DECL|workspace|member|char *workspace;
 DECL|wrap_around_read|member|bool wrap_around_read;
