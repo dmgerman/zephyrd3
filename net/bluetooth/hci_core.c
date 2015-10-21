@@ -69,6 +69,7 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
+DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
