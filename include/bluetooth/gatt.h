@@ -37,6 +37,7 @@ DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
+DECL|_next|member|struct bt_gatt_attr *_next;
 DECL|_next|member|struct bt_gatt_subscribe_params *_next;
 DECL|_peer|member|bt_addr_le_t _peer;
 DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,

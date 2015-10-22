@@ -13,7 +13,6 @@ DECL|att_read_type_rsp|function|static void att_read_type_rsp(struct bt_conn *co
 DECL|att_read_type|function|static int att_read_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|att_write_ccc_rsp|function|static void att_write_ccc_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_write_rsp|function|static void att_write_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
-DECL|attr_count|variable|attr_count
 DECL|bt_gatt_attr_read_ccc|function|int bt_gatt_attr_read_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|bt_gatt_attr_read_cep|function|int bt_gatt_attr_read_cep(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|bt_gatt_attr_read_chrc|function|int bt_gatt_attr_read_chrc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -31,7 +30,7 @@ DECL|bt_gatt_notification|function|void bt_gatt_notification(struct bt_conn *con
 DECL|bt_gatt_notify|function|int bt_gatt_notify(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t len)
 DECL|bt_gatt_read_multiple|function|int bt_gatt_read_multiple(struct bt_conn *conn, const uint16_t *handles, size_t count, bt_gatt_read_func_t func)
 DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, uint16_t handle, uint16_t offset, bt_gatt_read_func_t func)
-DECL|bt_gatt_register|function|void bt_gatt_register(const struct bt_gatt_attr *attrs, size_t count)
+DECL|bt_gatt_register|function|int bt_gatt_register(struct bt_gatt_attr *attrs, size_t count)
 DECL|bt_gatt_subscribe|function|int bt_gatt_subscribe(struct bt_conn *conn, uint16_t handle, struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn, uint16_t handle,struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length, bool sign)
