@@ -20,8 +20,8 @@ DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *
 DECL|spi_intel_data_port_0|variable|spi_intel_data_port_0
 DECL|spi_intel_data_port_1|variable|spi_intel_data_port_1
 DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)
-DECL|spi_intel_isr_0|function|void spi_intel_isr_0(void *unused)
-DECL|spi_intel_isr_1|function|void spi_intel_isr_1(void *unused)
+DECL|spi_intel_isr_port_0|variable|spi_intel_isr_port_0
+DECL|spi_intel_isr_port_1|variable|spi_intel_isr_port_1
 DECL|spi_intel_isr|function|void spi_intel_isr(void *arg)
 DECL|spi_intel_resume|function|static int spi_intel_resume(struct device *dev)
 DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *dev)
