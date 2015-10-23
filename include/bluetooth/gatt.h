@@ -83,7 +83,6 @@ DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|valid|member|uint8_t valid;
 DECL|value_handle|member|uint16_t value_handle;
-DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
