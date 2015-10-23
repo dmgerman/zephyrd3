@@ -30,10 +30,10 @@ DECL|ecdsa_pub_key_x|variable|ecdsa_pub_key_x
 DECL|ecdsa_pub_key_y|variable|ecdsa_pub_key_y
 DECL|expecting_reply|member|bool expecting_reply;
 DECL|fd|member|int fd;
+DECL|find_address|function|static int find_address(int family, struct ifaddrs *if_address,const char *if_name, void *address)
 DECL|foobar|variable|foobar
-DECL|get_address|function|static int get_address(int ifindex, int family, void *address)
+DECL|get_address|function|static int get_address(const char *if_name, int family, void *address)
 DECL|get_ecdsa_key|function|static int get_ecdsa_key(struct dtls_context_t *ctx, const session_t *session, const dtls_ecdsa_key_t **result)
-DECL|get_ifindex|function|static int get_ifindex(const char *name)
 DECL|get_psk_info|function|static int get_psk_info(struct dtls_context_t *ctx UNUSED_PARAM,const session_t *session UNUSED_PARAM, dtls_credentials_type_t type, const unsigned char *id, size_t id_len, unsigned char *result, size_t result_length)
 DECL|handle_event|function|static int handle_event(struct dtls_context_t *ctx, session_t *session,dtls_alert_level_t level, unsigned short code)
 DECL|index|member|int index; /* position in data[] */

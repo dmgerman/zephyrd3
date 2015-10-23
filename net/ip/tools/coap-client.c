@@ -124,8 +124,9 @@ DECL|expecting_reply|member|bool expecting_reply;
 DECL|fail|member|bool fail;
 DECL|family|variable|family
 DECL|fd|member|int fd;
+DECL|find_address|function|static int find_address(int family, struct ifaddrs *if_address,const char *if_name, void *address)
 DECL|flags|variable|flags
-DECL|get_address|function|static int get_address(int ifindex, int family, void *address)
+DECL|get_address|function|static int get_address(const char *if_name, int family, void *address)
 DECL|get_block|function|static coap_opt_t *get_block(coap_pdu_t *pdu, coap_opt_iterator_t *opt_iter)
 DECL|get_coap_context|function|static coap_context_t *get_coap_context(struct sockaddr *ipaddr, int ipaddrlen)
 DECL|get_ecdsa_key|function|static int get_ecdsa_key(struct dtls_context_t *ctx, const session_t *session, const dtls_ecdsa_key_t **result)

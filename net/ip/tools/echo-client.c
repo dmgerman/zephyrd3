@@ -11,8 +11,9 @@ DECL|array_256|variable|array_256
 DECL|buf|member|const unsigned char *buf;
 DECL|data|variable|data
 DECL|expecting_reply|member|bool expecting_reply;
+DECL|find_address|function|static int find_address(int family, struct ifaddrs *if_address,const char *if_name, void *address)
 DECL|foobar|variable|foobar
-DECL|get_address|function|static int get_address(int ifindex, int family, void *address)
+DECL|get_address|function|static int get_address(const char *if_name, int family, void *address)
 DECL|get_ifindex|function|static int get_ifindex(const char *name)
 DECL|len|member|int len;
 DECL|lorem_ipsum|variable|lorem_ipsum

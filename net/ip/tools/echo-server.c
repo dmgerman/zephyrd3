@@ -7,7 +7,8 @@ DECL|MY_MCAST_ADDR6|macro|MY_MCAST_ADDR6
 DECL|SERVER_PORT|macro|SERVER_PORT
 DECL|bind_device|function|static int bind_device(int fd, const char *interface, void *addr, int len)
 DECL|family_to_level|function|int family_to_level(int family)
-DECL|get_address|function|static int get_address(int ifindex, int family, void *address)
+DECL|find_address|function|static int find_address(int family, struct ifaddrs *if_address,const char *if_name, void *address)
+DECL|get_address|function|static int get_address(const char *if_name, int family, void *address)
 DECL|get_ifindex|function|static int get_ifindex(const char *name)
 DECL|get_socket|function|static int get_socket(int family)
 DECL|join_mc_group|function|static int join_mc_group(int sock, int ifindex, int family, void *addr, int addr_len)
