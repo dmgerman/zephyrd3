@@ -3,7 +3,6 @@ DECL|AD_SHORT_NAME|macro|AD_SHORT_NAME
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|ad_non_discov|variable|ad_non_discov
-DECL|appearance_chrc|variable|appearance_chrc
 DECL|appearance_value|variable|appearance_value
 DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
@@ -55,7 +54,6 @@ DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct bt_buf *buf)
 DECL|mainloop|function|void mainloop(void)
-DECL|name_chrc|variable|name_chrc
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
