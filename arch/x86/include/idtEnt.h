@@ -1,7 +1,7 @@
 DECL|IDT_ENTRY|typedef|} __packed IDT_ENTRY;
 DECL|_EXC_ERROR_CODE_FAULTS|macro|_EXC_ERROR_CODE_FAULTS
 DECL|_IDTENT_H|macro|_IDTENT_H
-DECL|_IdtEntCreate|function|static inline void _IdtEntCreate (unsigned long long *pIdtEntry, void (*routine)(void *), unsigned int dpl)
+DECL|_IdtEntCreate|function|static inline void _IdtEntCreate(unsigned long long *pIdtEntry, void (*routine)(void *), unsigned int dpl)
 DECL|descPrivLevel|member|unsigned short descPrivLevel:2;
 DECL|hiOffset|member|unsigned short hiOffset;
 DECL|idtEntry|struct|typedef struct idtEntry {

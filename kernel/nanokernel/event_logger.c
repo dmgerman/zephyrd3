@@ -1,6 +1,6 @@
 DECL|_sys_event_logger_put_non_preemptible|function|void _sys_event_logger_put_non_preemptible(struct event_logger *logger,uint16_t event_id, uint32_t *event_data, uint8_t data_size)
 DECL|event_logger_get|function|static int event_logger_get(struct event_logger *logger, uint16_t *event_id, uint8_t *dropped_event_count, uint32_t *buffer, uint8_t *buffer_size)
-DECL|event_logger_put|function|static void event_logger_put(struct event_logger *logger, uint16_t event_id,uint32_t *event_data, uint8_t data_size, void(*sem_give_fn)(struct nano_sem *))
+DECL|event_logger_put|function|static void event_logger_put(struct event_logger *logger, uint16_t event_id,uint32_t *event_data, uint8_t data_size, void (*sem_give_fn)(struct nano_sem *))
 DECL|sys_event_logger_get_wait_timeout|function|int sys_event_logger_get_wait_timeout(struct event_logger *logger, uint16_t *event_id, uint8_t *dropped_event_count, uint32_t *buffer, uint8_t *buffer_size, uint32_t timeout)
 DECL|sys_event_logger_get_wait|function|int sys_event_logger_get_wait(struct event_logger *logger, uint16_t *event_id, uint8_t *dropped_event_count, uint32_t *buffer, uint8_t *buffer_size)
 DECL|sys_event_logger_get|function|int sys_event_logger_get(struct event_logger *logger, uint16_t *event_id, uint8_t *dropped_event_count, uint32_t *buffer, uint8_t *buffer_size)

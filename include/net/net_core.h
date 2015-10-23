@@ -5,5 +5,5 @@ DECL|NET_PRINT|macro|NET_PRINT
 DECL|__NET_CORE_H|macro|__NET_CORE_H
 DECL|head_reserve|member|size_t head_reserve;
 DECL|net_driver|struct|struct net_driver {
-DECL|open|member|int (*open) (void);
-DECL|send|member|int (*send) (struct net_buf *buf);
+DECL|open|member|int (*open)(void);
+DECL|send|member|int (*send)(struct net_buf *buf);
