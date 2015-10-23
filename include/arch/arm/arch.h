@@ -2,3 +2,4 @@ DECL|OCTET_TO_SIZEOFUNIT|macro|OCTET_TO_SIZEOFUNIT
 DECL|SIZEOFUNIT_TO_OCTET|macro|SIZEOFUNIT_TO_OCTET
 DECL|STACK_ALIGN|macro|STACK_ALIGN
 DECL|_ARM_ARCH__H_|macro|_ARM_ARCH__H_
+DECL|sys_define_gpr_with_alias|macro|sys_define_gpr_with_alias
