@@ -61,6 +61,7 @@ DECL|le_conn_param_req|function|static int le_conn_param_req(struct net_buf *buf
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct net_buf *buf)
 DECL|le_init|function|static int le_init(void)
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
+DECL|le_pkey_complete|function|static void le_pkey_complete(struct net_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct net_buf *buf)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;

@@ -33,6 +33,7 @@ DECL|manufacturer|member|uint16_t manufacturer;
 DECL|mtu|member|uint16_t mtu;
 DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
+DECL|pkey|member|uint8_t pkey[64];
 DECL|pkts_sem|member|struct nano_sem pkts_sem;
 DECL|pkts|member|uint8_t pkts;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
