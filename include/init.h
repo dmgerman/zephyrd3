@@ -8,12 +8,3 @@ DECL|_SYS_INIT_LEVEL_MICROKERNEL|macro|_SYS_INIT_LEVEL_MICROKERNEL
 DECL|_SYS_INIT_LEVEL_NANOKERNEL|macro|_SYS_INIT_LEVEL_NANOKERNEL
 DECL|_SYS_INIT_LEVEL_PRIMARY|macro|_SYS_INIT_LEVEL_PRIMARY
 DECL|_SYS_INIT_LEVEL_SECONDARY|macro|_SYS_INIT_LEVEL_SECONDARY
-DECL|app_early_init|macro|app_early_init
-DECL|app_late_init|macro|app_late_init
-DECL|micro_early_init|macro|micro_early_init
-DECL|micro_late_init|macro|micro_late_init
-DECL|nano_early_init|macro|nano_early_init
-DECL|nano_late_init|macro|nano_late_init
-DECL|pre_kernel_core_init|macro|pre_kernel_core_init
-DECL|pre_kernel_early_init|macro|pre_kernel_early_init
-DECL|pre_kernel_late_init|macro|pre_kernel_late_init
