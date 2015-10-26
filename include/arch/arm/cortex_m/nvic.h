@@ -14,6 +14,7 @@ DECL|_EXC_RESET|macro|_EXC_RESET
 DECL|_EXC_SVC|macro|_EXC_SVC
 DECL|_EXC_SYSTICK|macro|_EXC_SYSTICK
 DECL|_EXC_USAGE_FAULT|macro|_EXC_USAGE_FAULT
+DECL|_NUM_EXC|macro|_NUM_EXC
 DECL|_NVIC_H_|macro|_NVIC_H_
 DECL|_NvicIrqDisable|function|static inline void _NvicIrqDisable(unsigned int irq)
 DECL|_NvicIrqEnable|function|static inline void _NvicIrqEnable(unsigned int irq)
