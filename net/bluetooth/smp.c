@@ -1,17 +1,25 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
+DECL|BT_SMP_AUTH_MASK|macro|BT_SMP_AUTH_MASK
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
 DECL|M|variable|M
+DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
 DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
+DECL|RECV_KEYS_SC|macro|RECV_KEYS_SC
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|RECV_KEYS|macro|RECV_KEYS
+DECL|SEND_KEYS_SC|macro|SEND_KEYS_SC
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for DHKey */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
 DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
+DECL|SMP_FLAG_PKEY_PENDING|enumerator|SMP_FLAG_PKEY_PENDING, /* if waiting for P256 Public Key */
+DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
@@ -49,6 +57,7 @@ DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1
 DECL|expect_len|member|uint8_t expect_len;
 DECL|flags|member|atomic_t flags;
 DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
+DECL|gen_method_sc|variable|gen_method_sc
 DECL|gen_method|variable|gen_method
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
@@ -61,15 +70,20 @@ DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_rand|function|static int le_rand(void *buf, size_t len)
+DECL|le_sc_supported|function|static bool le_sc_supported(void)
+DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|local_dist|member|uint8_t local_dist;
 DECL|method|member|uint8_t method;
 DECL|pairing_method|enum|enum pairing_method {
 DECL|pcnf|member|uint8_t pcnf[16];
+DECL|pkey|member|uint8_t pkey[64];
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
+DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
+DECL|sc_supported|variable|sc_supported
 DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
@@ -79,6 +93,7 @@ DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
 DECL|smp_encrypt_info|function|static uint8_t smp_encrypt_info(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_f4|function|static int smp_f4(const uint8_t *u, const uint8_t *v, const uint8_t *x, uint8_t z, uint8_t res[16])
 DECL|smp_ident_addr_info|function|static uint8_t smp_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
@@ -90,6 +105,7 @@ DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_smp *smp,
 DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_public_key|function|static uint8_t smp_public_key(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp, uint8_t remote_io)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
 DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
