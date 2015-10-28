@@ -1,9 +1,15 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|avail_acl_in|variable|avail_acl_in
+DECL|avail_acl_out|variable|avail_acl_out
+DECL|avail_hci|variable|avail_hci
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(void)
+DECL|bt_buf_get|function|struct net_buf *bt_buf_get(enum bt_buf_type type, size_t reserve_head)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
@@ -52,6 +58,7 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
+DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_flow_control|function|static int set_flow_control(void)
