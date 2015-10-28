@@ -9,7 +9,6 @@ DECL|BT_EVT|enumerator|BT_EVT, /** HCI event */
 DECL|__BT_BUF_H|macro|__BT_BUF_H
 DECL|bt_acl_data|struct|struct bt_acl_data {
 DECL|bt_buf_type|enum|enum bt_buf_type {
-DECL|bt_buf|macro|bt_buf
 DECL|bt_hci_data|struct|struct bt_hci_data {
 DECL|handle|member|uint16_t handle;
 DECL|opcode|member|uint16_t opcode;
