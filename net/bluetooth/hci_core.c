@@ -2,6 +2,8 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
+DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
+DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(void)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
