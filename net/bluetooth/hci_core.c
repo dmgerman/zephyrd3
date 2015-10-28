@@ -59,6 +59,7 @@ DECL|le_conn_param_neg_reply|function|static int le_conn_param_neg_reply(uint16_
 DECL|le_conn_param_req_reply|function|static int le_conn_param_req_reply(uint16_t handle, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|le_conn_param_req|function|static int le_conn_param_req(struct net_buf *buf)
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct net_buf *buf)
+DECL|le_dhkey_complete|function|static void le_dhkey_complete(struct net_buf *buf)
 DECL|le_init|function|static int le_init(void)
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
 DECL|le_pkey_complete|function|static void le_pkey_complete(struct net_buf *buf)
