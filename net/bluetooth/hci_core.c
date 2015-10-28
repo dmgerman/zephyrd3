@@ -4,6 +4,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci|variable|avail_hci
+DECL|bt_acl_data|struct|struct bt_acl_data {
 DECL|bt_acl|macro|bt_acl
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
@@ -16,6 +17,7 @@ DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
+DECL|bt_hci_data|struct|struct bt_hci_data {
 DECL|bt_hci_start_scanning|function|static int bt_hci_start_scanning(uint8_t scan_type)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_hci|macro|bt_hci
@@ -29,6 +31,7 @@ DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
+DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct net_buf *buf)
 DECL|hci_cmd_done|function|static void hci_cmd_done(uint16_t opcode, uint8_t status, struct net_buf *buf)
@@ -54,6 +57,7 @@ DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct net_buf *buf)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
+DECL|opcode|member|uint16_t opcode;
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
@@ -63,5 +67,6 @@ DECL|report_completed_packet|function|static void report_completed_packet(struct
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_flow_control|function|static int set_flow_control(void)
+DECL|sync|member|void *sync;
 DECL|update_conn_params|function|static int update_conn_params(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
