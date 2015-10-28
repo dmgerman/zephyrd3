@@ -83,6 +83,7 @@ DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
+DECL|sc_smp_pairing_random|function|static uint8_t sc_smp_pairing_random(struct bt_smp *smp, struct net_buf *buf)
 DECL|sc_supported|variable|sc_supported
 DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
