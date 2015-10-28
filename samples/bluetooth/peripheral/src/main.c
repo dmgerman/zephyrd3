@@ -1,5 +1,6 @@
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HEART_RATE_APPEARANCE|macro|HEART_RATE_APPEARANCE
+DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad|variable|ad
 DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
@@ -13,7 +14,7 @@ DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
 DECL|blvl_uuid|variable|blvl_uuid
 DECL|bslc_uuid|variable|bslc_uuid
 DECL|bt_ready|function|static void bt_ready(int err)
-DECL|buf|member|uint8_t buf[BT_BUF_MAX_DATA];
+DECL|buf|member|uint8_t buf[MAX_DATA];
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
@@ -22,7 +23,7 @@ DECL|ct_update|variable|ct_update
 DECL|ct_uuid|variable|ct_uuid
 DECL|cts_uuid|variable|cts_uuid
 DECL|ct|variable|ct
-DECL|data|member|uint8_t data[BT_BUF_MAX_DATA];
+DECL|data|member|uint8_t data[MAX_DATA];
 DECL|device_name_uuid|variable|device_name_uuid
 DECL|dis_uuid|variable|dis_uuid
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
