@@ -23,6 +23,7 @@ DECL|in6addr_src|variable|in6addr_src
 DECL|init_test|function|static inline void init_test()
 DECL|listen|function|static void listen(const char *taskname, ksem_t mySem, ksem_t otherSem, struct net_context *ctx)
 DECL|loopback_addr|variable|loopback_addr
+DECL|loopback|variable|loopback
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
 DECL|receive_data|function|static void receive_data(const char *taskname, struct net_context *ctx)
@@ -32,3 +33,4 @@ DECL|set_routes|function|static void set_routes()
 DECL|src_mac|variable|src_mac
 DECL|taskA|function|void taskA(void)
 DECL|taskB|function|void taskB(void)
+DECL|test_rp|variable|test_rp
