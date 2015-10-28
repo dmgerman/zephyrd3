@@ -8,8 +8,11 @@ DECL|BT_DUMMY|enumerator|BT_DUMMY = BT_CMD, /** Only used for waking up fibers *
 DECL|BT_EVT|enumerator|BT_EVT, /** HCI event */
 DECL|__BT_BUF_H|macro|__BT_BUF_H
 DECL|bt_acl_data|struct|struct bt_acl_data {
+DECL|bt_acl|macro|bt_acl
 DECL|bt_buf_type|enum|enum bt_buf_type {
 DECL|bt_hci_data|struct|struct bt_hci_data {
+DECL|bt_hci|macro|bt_hci
+DECL|bt_type|macro|bt_type
 DECL|handle|member|uint16_t handle;
 DECL|opcode|member|uint16_t opcode;
 DECL|sync|member|void *sync;
