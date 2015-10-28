@@ -35,4 +35,4 @@ DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
-DECL|sent_cmd|member|struct bt_buf *sent_cmd;
+DECL|sent_cmd|member|struct net_buf *sent_cmd;
