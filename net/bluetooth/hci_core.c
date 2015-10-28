@@ -1,9 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|avail_acl_in|variable|avail_acl_in
-DECL|avail_acl_out|variable|avail_acl_out
 DECL|avail_hci|variable|avail_hci
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
