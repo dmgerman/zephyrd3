@@ -6,6 +6,8 @@ DECL|BT_L2CAP_CONN_PARAM_ACCEPTED|macro|BT_L2CAP_CONN_PARAM_ACCEPTED
 DECL|BT_L2CAP_CONN_PARAM_REJECTED|macro|BT_L2CAP_CONN_PARAM_REJECTED
 DECL|BT_L2CAP_CONN_PARAM_REQ|macro|BT_L2CAP_CONN_PARAM_REQ
 DECL|BT_L2CAP_CONN_PARAM_RSP|macro|BT_L2CAP_CONN_PARAM_RSP
+DECL|BT_L2CAP_DISCONN_REQ|macro|BT_L2CAP_DISCONN_REQ
+DECL|BT_L2CAP_DISCONN_RSP|macro|BT_L2CAP_DISCONN_RSP
 DECL|BT_L2CAP_ERR_AUTHENTICATION|macro|BT_L2CAP_ERR_AUTHENTICATION
 DECL|BT_L2CAP_ERR_AUTHORIZATION|macro|BT_L2CAP_ERR_AUTHORIZATION
 DECL|BT_L2CAP_ERR_ENCRYPTION|macro|BT_L2CAP_ERR_ENCRYPTION
@@ -26,11 +28,15 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conn_param_req|struct|struct bt_l2cap_conn_param_req {
 DECL|bt_l2cap_conn_param_rsp|struct|struct bt_l2cap_conn_param_rsp {
+DECL|bt_l2cap_disconn_req|struct|struct bt_l2cap_disconn_req {
+DECL|bt_l2cap_disconn_rsp|struct|struct bt_l2cap_disconn_rsp {
 DECL|bt_l2cap_fixed_chan|struct|struct bt_l2cap_fixed_chan {
 DECL|bt_l2cap_hdr|struct|struct bt_l2cap_hdr {
 DECL|bt_l2cap_le_conn_req|struct|struct bt_l2cap_le_conn_req {
@@ -42,6 +48,8 @@ DECL|code|member|uint8_t code;
 DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
 DECL|data|member|uint8_t data[0];
+DECL|dcid|member|uint16_t dcid;
+DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
 DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
@@ -57,5 +65,7 @@ DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
+DECL|scid|member|uint16_t scid;
+DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|timeout|member|uint16_t timeout;
