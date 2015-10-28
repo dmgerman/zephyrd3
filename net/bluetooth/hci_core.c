@@ -1,13 +1,14 @@
+DECL|BT_BUF_ACL_IN_MAX|macro|BT_BUF_ACL_IN_MAX
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci|variable|avail_hci
+DECL|bt_acl|macro|bt_acl
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(void)
-DECL|bt_buf_get|function|struct net_buf *bt_buf_get(enum bt_buf_type type, size_t reserve_head)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
@@ -17,6 +18,7 @@ DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, str
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
 DECL|bt_hci_start_scanning|function|static int bt_hci_start_scanning(uint8_t scan_type)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
+DECL|bt_hci|macro|bt_hci
 DECL|bt_init|function|static int bt_init(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(void)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
@@ -24,6 +26,7 @@ DECL|bt_start_advertising|function|int bt_start_advertising(uint8_t type, const 
 DECL|bt_start_scanning|function|int bt_start_scanning(bt_scan_filter_dup_t filter, bt_le_scan_cb_t cb)
 DECL|bt_stop_advertising|function|int bt_stop_advertising(void)
 DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
+DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
