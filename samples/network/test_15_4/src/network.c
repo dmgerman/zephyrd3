@@ -24,8 +24,6 @@ DECL|listen|function|static void listen(const char *taskname, ksem_t mySem, ksem
 DECL|loopback_addr|variable|loopback_addr
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
-DECL|nanoSemFiberRecv|variable|nanoSemFiberRecv
-DECL|nanoSemFiberSent|variable|nanoSemFiberSent
 DECL|receive_data|function|static void receive_data(const char *taskname, struct net_context *ctx)
 DECL|send_data|function|static void send_data(const char *taskname, struct net_context *ctx)
 DECL|send|function|static void send(const char *taskname, ksem_t mySem, ksem_t otherSem, struct net_context *ctx)
