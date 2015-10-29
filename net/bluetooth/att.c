@@ -78,6 +78,7 @@ DECL|err_to_att|function|static uint8_t err_to_att(int err)
 DECL|err|member|uint8_t err;
 DECL|err|member|uint8_t err;
 DECL|err|member|uint8_t err;
+DECL|err|member|uint8_t err;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|find_info_cb|function|static uint8_t find_info_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_info_data|struct|struct find_info_data {
