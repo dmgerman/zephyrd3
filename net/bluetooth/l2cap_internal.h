@@ -18,10 +18,12 @@ DECL|BT_L2CAP_ERR_PSM_NOT_SUPP|macro|BT_L2CAP_ERR_PSM_NOT_SUPP
 DECL|BT_L2CAP_ERR_SCID_IN_USE|macro|BT_L2CAP_ERR_SCID_IN_USE
 DECL|BT_L2CAP_LE_CONN_REQ|macro|BT_L2CAP_LE_CONN_REQ
 DECL|BT_L2CAP_LE_CONN_RSP|macro|BT_L2CAP_LE_CONN_RSP
+DECL|BT_L2CAP_LE_CREDITS|macro|BT_L2CAP_LE_CREDITS
 DECL|BT_L2CAP_REJ_INVALID_CID|macro|BT_L2CAP_REJ_INVALID_CID
 DECL|BT_L2CAP_REJ_MTU_EXCEEDED|macro|BT_L2CAP_REJ_MTU_EXCEEDED
 DECL|BT_L2CAP_REJ_NOT_UNDERSTOOD|macro|BT_L2CAP_REJ_NOT_UNDERSTOOD
 DECL|BT_L2CAP_SUCCESS|macro|BT_L2CAP_SUCCESS
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -41,10 +43,13 @@ DECL|bt_l2cap_fixed_chan|struct|struct bt_l2cap_fixed_chan {
 DECL|bt_l2cap_hdr|struct|struct bt_l2cap_hdr {
 DECL|bt_l2cap_le_conn_req|struct|struct bt_l2cap_le_conn_req {
 DECL|bt_l2cap_le_conn_rsp|struct|struct bt_l2cap_le_conn_rsp {
+DECL|bt_l2cap_le_credits|struct|struct bt_l2cap_le_credits {
 DECL|bt_l2cap_sig_hdr|struct|struct bt_l2cap_sig_hdr {
 DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
+DECL|cid|member|uint16_t cid;
 DECL|code|member|uint8_t code;
+DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
 DECL|data|member|uint8_t data[0];

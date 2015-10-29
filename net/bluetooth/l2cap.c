@@ -1,6 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_MAX_LE_MPS|macro|BT_L2CAP_MAX_LE_MPS
+DECL|L2CAP_LE_CREDITS_THRESHOLD|macro|L2CAP_LE_CREDITS_THRESHOLD
 DECL|L2CAP_LE_DYN_CID_END|macro|L2CAP_LE_DYN_CID_END
 DECL|L2CAP_LE_DYN_CID_START|macro|L2CAP_LE_DYN_CID_START
 DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
@@ -29,6 +30,9 @@ DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct 
 DECL|l2cap_chan_add|function|static void l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_alloc_cid|function|static void l2cap_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_get|function|static struct bt_l2cap *l2cap_chan_get(struct bt_conn *conn)
+DECL|l2cap_chan_le_recv|function|static void l2cap_chan_le_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2cap_chan_recv|function|static void l2cap_chan_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_chan *chan)
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
