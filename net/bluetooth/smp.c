@@ -93,6 +93,7 @@ DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
 DECL|smp_encrypt_info|function|static uint8_t smp_encrypt_info(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_f4_test|function|static int smp_f4_test(void)
 DECL|smp_f4|function|static int smp_f4(const uint8_t *u, const uint8_t *v, const uint8_t *x, uint8_t z, uint8_t res[16])
 DECL|smp_ident_addr_info|function|static uint8_t smp_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, struct net_buf *buf)
