@@ -3,11 +3,11 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|acl_data|struct|struct acl_data {
+DECL|acl|macro|acl
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
-DECL|bt_acl_data|struct|struct bt_acl_data {
-DECL|bt_acl|macro|bt_acl
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
@@ -19,10 +19,8 @@ DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
-DECL|bt_hci_data|struct|struct bt_hci_data {
 DECL|bt_hci_start_scanning|function|static int bt_hci_start_scanning(uint8_t scan_type)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
-DECL|bt_hci|macro|bt_hci
 DECL|bt_init|function|static int bt_init(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(void)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
@@ -32,6 +30,8 @@ DECL|bt_stop_advertising|function|int bt_stop_advertising(void)
 DECL|bt_stop_scanning|function|int bt_stop_scanning(void)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
+DECL|cmd_data|struct|struct cmd_data {
+DECL|cmd|macro|cmd
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
