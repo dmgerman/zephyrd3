@@ -1,7 +1,7 @@
-DECL|K20_GPC_t|typedef|} K20_GPC_t; /* Global Pin Control Low/High Register */
-DECL|K20_PCR_t|typedef|} K20_PCR_t; /* Pin Control Register n, n= 0-31 */
+DECL|K20_GPC|union|union K20_GPC {
 DECL|K20_PCR|macro|K20_PCR
-DECL|K20_PORT_PCR_t|typedef|} K20_PORT_PCR_t;
+DECL|K20_PCR|union|union K20_PCR {
+DECL|K20_PORT_PCR|struct|struct K20_PORT_PCR {
 DECL|PCR_MUX_ALT1|macro|PCR_MUX_ALT1
 DECL|PCR_MUX_ALT2|macro|PCR_MUX_ALT2
 DECL|PCR_MUX_ALT3|macro|PCR_MUX_ALT3
@@ -16,10 +16,10 @@ DECL|PCR_PORT_C|macro|PCR_PORT_C
 DECL|PCR_PORT_D|macro|PCR_PORT_D
 DECL|PCR_PORT_E|macro|PCR_PORT_E
 DECL|_K20PCR_H_|macro|_K20PCR_H_
-DECL|__packed|member|K20_GPC_t gpchr __packed; /* 0x80 */
-DECL|__packed|member|K20_GPC_t gpclr __packed; /* 0x84 */
-DECL|__packed|member|K20_PCR_t pcr[32] __packed; /* 0x00-07C */
 DECL|__packed|member|uint32_t isfr __packed; /* 0xA0 */
+DECL|__packed|member|union K20_GPC gpchr __packed; /* 0x80 */
+DECL|__packed|member|union K20_GPC gpclr __packed; /* 0x84 */
+DECL|__packed|member|union K20_PCR pcr[32] __packed; /* 0x00-07C */
 DECL|dse|member|uint8_t dse : 1 __packed;
 DECL|field|member|} field;
 DECL|field|member|} field;

@@ -1,12 +1,12 @@
-DECL|CESR_t|typedef|} CESR_t; /* 0x000 Control/Error Status Register */
-DECL|K6x_MPU_t|typedef|} K6x_MPU_t; /* K6x Microntroller PMC module */
+DECL|CESR|union|union CESR {
+DECL|K6x_MPU|struct|struct K6x_MPU {
 DECL|MPU_NUM_REGIONS|macro|MPU_NUM_REGIONS
 DECL|MPU_NUM_SLV_PORTS|macro|MPU_NUM_SLV_PORTS
 DECL|MPU_NUM_WORDS_PER_REGION|macro|MPU_NUM_WORDS_PER_REGION
 DECL|MPU_SLV_PORT_ERR_MASK|macro|MPU_SLV_PORT_ERR_MASK
 DECL|MPU_VALID_MASK|macro|MPU_VALID_MASK
 DECL|_K6xMPU_H_|macro|_K6xMPU_H_
-DECL|ctrlErrStatus|member|CESR_t ctrlErrStatus; /* 0x0000 */
+DECL|ctrlErrStatus|member|union CESR ctrlErrStatus; /* 0x0000 */
 DECL|errAddr0|member|uint32_t errAddr0; /* 0x0010 */
 DECL|errAddr1|member|uint32_t errAddr1; /* 0x0018 */
 DECL|errAddr2|member|uint32_t errAddr2; /* 0x0020 */

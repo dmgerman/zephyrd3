@@ -1,4 +1,4 @@
-DECL|K20_SIM_t|typedef|} K20_SIM_t;
+DECL|K20_SIM|struct|struct K20_SIM {
 DECL|SIM_CLKDIV1_OUTDIV1_MASK|macro|SIM_CLKDIV1_OUTDIV1_MASK
 DECL|SIM_CLKDIV1_OUTDIV1_SHIFT|macro|SIM_CLKDIV1_OUTDIV1_SHIFT
 DECL|SIM_CLKDIV1_OUTDIV2_MASK|macro|SIM_CLKDIV1_OUTDIV2_MASK
@@ -27,7 +27,7 @@ DECL|SIM_SOPT4_t|typedef|} SIM_SOPT4_t; /* 0x100C */
 DECL|SIM_SOPT5_t|typedef|} SIM_SOPT5_t; /* 0x1010 */
 DECL|SIM_UART_CLK_ENABLE|macro|SIM_UART_CLK_ENABLE
 DECL|_K20SIM_H_|macro|_K20SIM_H_
-DECL|_k20_sim_uart_clk_enable|function|static ALWAYS_INLINE void _k20_sim_uart_clk_enable(K20_SIM_t *sim, uint8_t port)
+DECL|_k20_sim_uart_clk_enable|function|static ALWAYS_INLINE void _k20_sim_uart_clk_enable(volatile struct K20_SIM *sim, uint8_t port)
 DECL|clk_out_sel|member|uint32_t clk_out_sel : 3 __packed;
 DECL|clkdiv1|member|SIM_CLKDIV1_t clkdiv1; /* 0x1044 */
 DECL|clkdiv2|member|uint32_t clkdiv2; /* 0x1048 */

@@ -28,7 +28,7 @@ DECL|port|member|uint32_t port;
 DECL|regs|member|uint32_t regs;
 DECL|regs|member|uint32_t regs; /* Register address */
 DECL|sys_clk_freq|member|uint32_t sys_clk_freq; /* System clock frequency in Hz */
-DECL|uart_device_config_t|struct|struct uart_device_config_t {
+DECL|uart_device_config|struct|struct uart_device_config {
 DECL|uart_driver_api|struct|struct uart_driver_api {
 DECL|uart_fifo_fill|function|static inline int uart_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_fifo_read|function|static inline int uart_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
