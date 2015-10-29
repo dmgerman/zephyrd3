@@ -2,6 +2,7 @@ DECL|BT_BUF_ACL_IN_MAX|macro|BT_BUF_ACL_IN_MAX
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci|variable|avail_hci
 DECL|bt_acl_data|struct|struct bt_acl_data {
