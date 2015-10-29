@@ -12,13 +12,13 @@ DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t le
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern)
-DECL|gatt_db_lookup_id|function|static struct bt_gatt_attr *gatt_db_lookup_id(uint16_t attr_id)
 DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
 DECL|prep_data|member|uint8_t *prep_data;
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
