@@ -2,8 +2,10 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|avail_acl_in|variable|avail_acl_in
-DECL|avail_hci|variable|avail_hci
+DECL|avail_hci_cmd|variable|avail_hci_cmd
+DECL|avail_hci_evt|variable|avail_hci_evt
 DECL|bt_acl_data|struct|struct bt_acl_data {
 DECL|bt_acl|macro|bt_acl
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
