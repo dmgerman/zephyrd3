@@ -10,6 +10,7 @@ DECL|_mem_probe|function|int _mem_probe(void *p, int perm, size_t num_bytes, voi
 DECL|_mem_safe_read|function|int _mem_safe_read(void *src, char *buf, size_t num_bytes, int width)
 DECL|_mem_safe_region_add|function|int _mem_safe_region_add(void *addr, size_t num_bytes, int perm)
 DECL|_mem_safe_write_to_text_section|function|int _mem_safe_write_to_text_section(void *dest, char *buf, size_t num_bytes)
+DECL|_mem_safe_write_to_text_section|function|int _mem_safe_write_to_text_section(void *dest, char *buf, size_t num_bytes)
 DECL|_mem_safe_write|function|int _mem_safe_write(void *dest, char *buf, size_t num_bytes, int width)
 DECL|addr|member|vaddr_t addr;
 DECL|get_align|function|static inline int get_align(const uint32_t value)
