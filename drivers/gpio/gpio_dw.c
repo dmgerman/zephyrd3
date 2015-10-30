@@ -26,6 +26,8 @@ DECL|dw_pin_config|function|static inline void dw_pin_config(struct device *port
 DECL|dw_port_config|function|static inline void dw_port_config(struct device *port, int flags)
 DECL|dw_read|function|static inline uint32_t dw_read(uint32_t base_addr, uint32_t offset)
 DECL|dw_set_bit|function|static void dw_set_bit(uint32_t base_addr, uint32_t offset, uint32_t bit, uint8_t value)
+DECL|dw_set_gpio_bothedges|function|static inline void dw_set_gpio_bothedges(struct device *port,uint32_t pin, int flags)
+DECL|dw_set_gpio_bothedges|function|static inline void dw_set_gpio_bothedges(struct device *port,uint32_t pin, int flags)
 DECL|dw_write|function|static inline void dw_write(uint32_t base_addr, uint32_t offset, uint32_t val)
 DECL|gpio_0_runtime|variable|gpio_0_runtime
 DECL|gpio_1_runtime|variable|gpio_1_runtime
