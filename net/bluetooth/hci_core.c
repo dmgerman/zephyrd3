@@ -8,6 +8,7 @@ DECL|acl|macro|acl
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
+DECL|br_init|function|static int br_init(void)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
@@ -32,6 +33,7 @@ DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
 DECL|cmd_data|struct|struct cmd_data {
 DECL|cmd|macro|cmd
+DECL|common_init|function|static int common_init(void)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
@@ -56,6 +58,7 @@ DECL|le_conn_param_neg_reply|function|static int le_conn_param_neg_reply(uint16_
 DECL|le_conn_param_req_reply|function|static int le_conn_param_req_reply(uint16_t handle, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|le_conn_param_req|function|static int le_conn_param_req(struct net_buf *buf)
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct net_buf *buf)
+DECL|le_init|function|static int le_init(void)
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct net_buf *buf)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
@@ -68,6 +71,7 @@ DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
+DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|sync|member|void *sync;
 DECL|update_conn_params|function|static int update_conn_params(struct bt_conn *conn)
