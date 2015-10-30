@@ -43,14 +43,14 @@ DECL|queuebuf_list|variable|queuebuf_list
 DECL|queuebuf_load_to_ram|function|queuebuf_load_to_ram(struct queuebuf *b)
 DECL|queuebuf_load_to_ram|function|queuebuf_load_to_ram(struct queuebuf *b)
 DECL|queuebuf_max_len|variable|queuebuf_max_len
-DECL|queuebuf_new_from_packetbuf_debug|function|queuebuf_new_from_packetbuf_debug(struct net_mbuf *netbuf, const char *file, int line)
-DECL|queuebuf_numfree|function|queuebuf_numfree(struct net_mbuf *buf)
+DECL|queuebuf_new_from_packetbuf_debug|function|queuebuf_new_from_packetbuf_debug(struct net_buf *netbuf, const char *file, int line)
+DECL|queuebuf_numfree|function|queuebuf_numfree(struct net_buf *buf)
 DECL|queuebuf_ref_len|variable|queuebuf_ref_len
 DECL|queuebuf_ref|struct|struct queuebuf_ref {
 DECL|queuebuf_remove_from_file|function|queuebuf_remove_from_file(int swap_id)
-DECL|queuebuf_to_packetbuf|function|queuebuf_to_packetbuf(struct net_mbuf *netbuf, struct queuebuf *b)
-DECL|queuebuf_update_attr_from_packetbuf|function|queuebuf_update_attr_from_packetbuf(struct net_mbuf *netbuf, struct queuebuf *buf)
-DECL|queuebuf_update_from_packetbuf|function|queuebuf_update_from_packetbuf(struct net_mbuf *netbuf, struct queuebuf *buf)
+DECL|queuebuf_to_packetbuf|function|queuebuf_to_packetbuf(struct net_buf *netbuf, struct queuebuf *b)
+DECL|queuebuf_update_attr_from_packetbuf|function|queuebuf_update_attr_from_packetbuf(struct net_buf *netbuf, struct queuebuf *buf)
+DECL|queuebuf_update_from_packetbuf|function|queuebuf_update_from_packetbuf(struct net_buf *netbuf, struct queuebuf *buf)
 DECL|queuebuf|struct|struct queuebuf {
 DECL|ram_ptr|member|struct queuebuf_data *ram_ptr;
 DECL|ref|member|uint8_t *ref;

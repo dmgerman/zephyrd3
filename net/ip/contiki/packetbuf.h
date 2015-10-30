@@ -63,13 +63,13 @@ DECL|PACKETBUF_SIZE|macro|PACKETBUF_SIZE
 DECL|PACKETBUF_SIZE|macro|PACKETBUF_SIZE
 DECL|addr|member|linkaddr_t addr;
 DECL|len|member|uint8_t len;
-DECL|packetbuf_addr|function|packetbuf_addr(struct net_mbuf *buf, uint8_t type)
+DECL|packetbuf_addr|function|packetbuf_addr(struct net_buf *buf, uint8_t type)
 DECL|packetbuf_addr|struct|struct packetbuf_addr {
 DECL|packetbuf_attr_t|typedef|typedef uint16_t packetbuf_attr_t;
 DECL|packetbuf_attrlist|struct|struct packetbuf_attrlist {
-DECL|packetbuf_attr|function|packetbuf_attr(struct net_mbuf *buf, uint8_t type)
+DECL|packetbuf_attr|function|packetbuf_attr(struct net_buf *buf, uint8_t type)
 DECL|packetbuf_attr|struct|struct packetbuf_attr {
-DECL|packetbuf_set_addr|function|packetbuf_set_addr(struct net_mbuf *buf, uint8_t type, const linkaddr_t *addr)
-DECL|packetbuf_set_attr|function|packetbuf_set_attr(struct net_mbuf *buf, uint8_t type, const packetbuf_attr_t val)
+DECL|packetbuf_set_addr|function|packetbuf_set_addr(struct net_buf *buf, uint8_t type, const linkaddr_t *addr)
+DECL|packetbuf_set_attr|function|packetbuf_set_attr(struct net_buf *buf, uint8_t type, const packetbuf_attr_t val)
 DECL|type|member|uint8_t type;
 DECL|val|member|packetbuf_attr_t val;

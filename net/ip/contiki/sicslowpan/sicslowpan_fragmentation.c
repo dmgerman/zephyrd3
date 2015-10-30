@@ -34,9 +34,9 @@ DECL|UIP_LOG|macro|UIP_LOG
 DECL|UIP_TCP_BUF|macro|UIP_TCP_BUF
 DECL|UIP_UDP_BUF|macro|UIP_UDP_BUF
 DECL|USE_FRAMER_HDRLEN|macro|USE_FRAMER_HDRLEN
-DECL|add_fragment|function|add_fragment(struct net_mbuf *mbuf, uint16_t tag, uint16_t frag_size, uint8_t offset)
+DECL|add_fragment|function|add_fragment(struct net_buf *mbuf, uint16_t tag, uint16_t frag_size, uint8_t offset)
 DECL|clear_fragments|function|clear_fragments(uint8_t frag_info_index)
-DECL|copy_buf|function|static struct net_buf *copy_buf(struct net_mbuf *mbuf)
+DECL|copy_buf|function|static struct net_buf *copy_buf(struct net_buf *mbuf)
 DECL|copy_frags2uip|function|static struct net_buf *copy_frags2uip(int context)
 DECL|data|member|uint8_t data[SICSLOWPAN_FRAGMENT_SIZE];
 DECL|frag_buf|variable|frag_buf
@@ -48,18 +48,18 @@ DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
 DECL|my_tag|variable|my_tag
 DECL|offset|member|uint8_t offset;
-DECL|packet_sent|function|packet_sent(struct net_mbuf *buf, void *ptr, int status, int transmissions)
+DECL|packet_sent|function|packet_sent(struct net_buf *buf, void *ptr, int status, int transmissions)
 DECL|p|variable|p
 DECL|reass_timer|member|struct timer reass_timer;
 DECL|reassembled_len|member|uint16_t reassembled_len;
-DECL|reassemble|function|static int reassemble(struct net_mbuf *mbuf)
+DECL|reassemble|function|static int reassemble(struct net_buf *mbuf)
 DECL|receiver|member|linkaddr_t receiver;
-DECL|send_packet|function|send_packet(struct net_mbuf *buf, linkaddr_t *dest, bool last_fragment, void *ptr)
+DECL|send_packet|function|send_packet(struct net_buf *buf, linkaddr_t *dest, bool last_fragment, void *ptr)
 DECL|sender|member|linkaddr_t sender;
 DECL|sicslowpan_buf|macro|sicslowpan_buf
 DECL|sicslowpan_frag_buf|struct|struct sicslowpan_frag_buf {
 DECL|sicslowpan_frag_info|struct|struct sicslowpan_frag_info {
 DECL|sicslowpan_fragmentation|variable|sicslowpan_fragmentation
 DECL|sicslowpan_len|macro|sicslowpan_len
-DECL|store_fragment|function|store_fragment(struct net_mbuf *mbuf, uint8_t index, uint8_t offset)
+DECL|store_fragment|function|store_fragment(struct net_buf *mbuf, uint8_t index, uint8_t offset)
 DECL|tag|member|uint16_t tag;

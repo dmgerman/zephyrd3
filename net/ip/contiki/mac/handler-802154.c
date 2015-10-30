@@ -11,9 +11,9 @@ DECL|channel_list|variable|channel_list
 DECL|chseqno|variable|chseqno
 DECL|current_channel|variable|current_channel
 DECL|end_scan|function|end_scan(void)
-DECL|handle_beacon_send_timer|function|handle_beacon_send_timer(struct net_mbuf *buf, void *p)
+DECL|handle_beacon_send_timer|function|handle_beacon_send_timer(struct net_buf *buf, void *p)
 DECL|handle_beacon|function|handle_beacon(frame802154_t *frame)
-DECL|handle_scan_timer|function|handle_scan_timer(struct net_mbuf *mbuf, void *p)
+DECL|handle_scan_timer|function|handle_scan_timer(struct net_buf *mbuf, void *p)
 DECL|handler_802154_active_scan|function|handler_802154_active_scan(scan_callback_t cb)
 DECL|handler_802154_calculate_beacon_payload_length|function|handler_802154_calculate_beacon_payload_length(uint8_t *beacon, int maxlen)
 DECL|handler_802154_frame_received|function|handler_802154_frame_received(frame802154_t *frame)

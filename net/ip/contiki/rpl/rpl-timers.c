@@ -1,10 +1,10 @@
 DECL|DEBUG|macro|DEBUG
 DECL|dio_send_ok|variable|dio_send_ok
 DECL|get_probing_target|function|get_probing_target(rpl_dag_t *dag)
-DECL|handle_dao_timer|function|handle_dao_timer(struct net_mbuf *not_used, void *ptr)
-DECL|handle_dio_timer|function|handle_dio_timer(struct net_mbuf *not_used, void *ptr)
-DECL|handle_periodic_timer|function|handle_periodic_timer(struct net_mbuf *not_used, void *ptr)
-DECL|handle_probing_timer|function|handle_probing_timer(struct net_mbuf *not_used, void *ptr)
+DECL|handle_dao_timer|function|handle_dao_timer(struct net_buf *not_used, void *ptr)
+DECL|handle_dio_timer|function|handle_dio_timer(struct net_buf *not_used, void *ptr)
+DECL|handle_periodic_timer|function|handle_periodic_timer(struct net_buf *not_used, void *ptr)
+DECL|handle_probing_timer|function|handle_probing_timer(struct net_buf *not_used, void *ptr)
 DECL|new_dio_interval|function|new_dio_interval(rpl_instance_t *instance)
 DECL|next_dis|variable|next_dis
 DECL|periodic_timer|variable|periodic_timer

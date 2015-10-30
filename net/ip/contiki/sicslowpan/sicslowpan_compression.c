@@ -32,7 +32,7 @@ DECL|addr_context_lookup_by_number|function|addr_context_lookup_by_number(uint8_
 DECL|addr_context_lookup_by_prefix|function|addr_context_lookup_by_prefix(uip_ipaddr_t *ipaddr)
 DECL|addr_contexts|variable|addr_contexts
 DECL|compress_addr_64|function|compress_addr_64(uint8_t bitpos, uip_ipaddr_t *ipaddr, uip_lladdr_t *lladdr)
-DECL|compress_hdr_iphc|function|compress_hdr_iphc(struct net_mbuf *mbuf, struct net_buf *buf, linkaddr_t *link_destaddr)
+DECL|compress_hdr_iphc|function|compress_hdr_iphc(struct net_buf *mbuf, struct net_buf *buf, linkaddr_t *link_destaddr)
 DECL|compress_hdr_ipv6|function|compress_hdr_ipv6(struct net_buf *buf)
 DECL|compress|function|static int compress(struct net_buf *buf)
 DECL|context|variable|context
@@ -48,6 +48,6 @@ DECL|unc_ctxconf|variable|unc_ctxconf
 DECL|unc_llconf|variable|unc_llconf
 DECL|unc_mxconf|variable|unc_mxconf
 DECL|uncompress_addr|function|uncompress_addr(uip_ipaddr_t *ipaddr, uint8_t const prefix[], uint8_t pref_post_count, uip_lladdr_t *lladdr)
-DECL|uncompress_hdr_iphc|function|uncompress_hdr_iphc(struct net_mbuf *mbuf, struct net_buf *ibuf)
+DECL|uncompress_hdr_iphc|function|uncompress_hdr_iphc(struct net_buf *mbuf, struct net_buf *ibuf)
 DECL|uncompress_hdr_ipv6|function|uncompress_hdr_ipv6(struct net_buf *buf)
 DECL|uncompress|function|static int uncompress(struct net_buf *buf)

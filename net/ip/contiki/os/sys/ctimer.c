@@ -7,6 +7,6 @@ DECL|ctimer_init|function|ctimer_init(void)
 DECL|ctimer_list|variable|ctimer_list
 DECL|ctimer_reset|function|ctimer_reset(struct ctimer *c)
 DECL|ctimer_restart|function|ctimer_restart(struct ctimer *c)
-DECL|ctimer_set|function|ctimer_set(struct net_mbuf *buf, struct ctimer *c, clock_time_t t, void (*f)(struct net_mbuf *, void *), void *ptr)
+DECL|ctimer_set|function|ctimer_set(struct net_buf *buf, struct ctimer *c, clock_time_t t, void (*f)(struct net_buf *, void *), void *ptr)
 DECL|ctimer_stop|function|ctimer_stop(struct ctimer *c)
 DECL|initialized|variable|initialized

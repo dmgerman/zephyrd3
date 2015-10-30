@@ -20,7 +20,6 @@ DECL|fiberStack_receiving|variable|fiberStack_receiving
 DECL|fiberStack_sending|variable|fiberStack_sending
 DECL|fiber_receiving|function|void fiber_receiving(void)
 DECL|fiber_sending|function|void fiber_sending(void)
-DECL|flag|variable|flag
 DECL|get_context|function|static inline bool get_context(struct net_context **unicast, struct net_context **multicast)
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
