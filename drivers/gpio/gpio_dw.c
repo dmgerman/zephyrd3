@@ -31,20 +31,20 @@ DECL|dw_write|function|static inline void dw_write(uint32_t base_addr, uint32_t 
 DECL|gpio_0_runtime|variable|gpio_0_runtime
 DECL|gpio_1_runtime|variable|gpio_1_runtime
 DECL|gpio_config_0_irq|function|void gpio_config_0_irq(struct device *port)
+DECL|gpio_config_0|variable|gpio_config_0
 DECL|gpio_config_1_irq|function|void gpio_config_1_irq(struct device *port)
-DECL|gpio_config_dw_0|variable|gpio_config_dw_0
-DECL|gpio_config_dw_1|variable|gpio_config_dw_1
-DECL|gpio_config_dw|function|static inline int gpio_config_dw(struct device *port, int access_op, uint32_t pin, int flags)
-DECL|gpio_disable_callback_dw|function|static inline int gpio_disable_callback_dw(struct device *port, int access_op, uint32_t pin)
+DECL|gpio_dw_config_1|variable|gpio_dw_config_1
+DECL|gpio_dw_config|function|static inline int gpio_dw_config(struct device *port, int access_op, uint32_t pin, int flags)
+DECL|gpio_dw_disable_callback|function|static inline int gpio_dw_disable_callback(struct device *port, int access_op, uint32_t pin)
+DECL|gpio_dw_enable_callback|function|static inline int gpio_dw_enable_callback(struct device *port, int access_op, uint32_t pin)
+DECL|gpio_dw_initialize|function|int gpio_dw_initialize(struct device *port)
 DECL|gpio_dw_isr_0|function|void gpio_dw_isr_0(void *unused)
 DECL|gpio_dw_isr_1|function|void gpio_dw_isr_1(void *unused)
 DECL|gpio_dw_isr|function|void gpio_dw_isr(struct device *port)
+DECL|gpio_dw_read|function|static inline int gpio_dw_read(struct device *port, int access_op, uint32_t pin, uint32_t *value)
+DECL|gpio_dw_resume_port|function|static inline int gpio_dw_resume_port(struct device *port)
+DECL|gpio_dw_set_callback|function|static inline int gpio_dw_set_callback(struct device *port, gpio_callback_t callback)
 DECL|gpio_dw_setup|function|static inline int gpio_dw_setup(struct device *dev)
 DECL|gpio_dw_setup|macro|gpio_dw_setup
-DECL|gpio_enable_callback_dw|function|static inline int gpio_enable_callback_dw(struct device *port, int access_op, uint32_t pin)
-DECL|gpio_initialize_dw|function|int gpio_initialize_dw(struct device *port)
-DECL|gpio_read_dw|function|static inline int gpio_read_dw(struct device *port, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_resume_port_dw|function|static inline int gpio_resume_port_dw(struct device *port)
-DECL|gpio_set_callback_dw|function|static inline int gpio_set_callback_dw(struct device *port, gpio_callback_t callback)
-DECL|gpio_suspend_port_dw|function|static inline int gpio_suspend_port_dw(struct device *port)
-DECL|gpio_write_dw|function|static inline int gpio_write_dw(struct device *port, int access_op,uint32_t pin, uint32_t value)
+DECL|gpio_dw_suspend_port|function|static inline int gpio_dw_suspend_port(struct device *port)
+DECL|gpio_dw_write|function|static inline int gpio_dw_write(struct device *port, int access_op,uint32_t pin, uint32_t value)
