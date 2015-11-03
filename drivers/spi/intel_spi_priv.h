@@ -13,12 +13,14 @@ DECL|INTEL_SPI_SSCR0_SSE|macro|INTEL_SPI_SSCR0_SSE
 DECL|INTEL_SPI_SSCR1_EFWR|macro|INTEL_SPI_SSCR1_EFWR
 DECL|INTEL_SPI_SSCR1_LBM|macro|INTEL_SPI_SSCR1_LBM
 DECL|INTEL_SPI_SSCR1_RFT_DFLT|macro|INTEL_SPI_SSCR1_RFT_DFLT
+DECL|INTEL_SPI_SSCR1_RFT_MASK|macro|INTEL_SPI_SSCR1_RFT_MASK
 DECL|INTEL_SPI_SSCR1_RFT|macro|INTEL_SPI_SSCR1_RFT
 DECL|INTEL_SPI_SSCR1_RIE|macro|INTEL_SPI_SSCR1_RIE
 DECL|INTEL_SPI_SSCR1_SPH|macro|INTEL_SPI_SSCR1_SPH
 DECL|INTEL_SPI_SSCR1_SPO|macro|INTEL_SPI_SSCR1_SPO
 DECL|INTEL_SPI_SSCR1_STRF|macro|INTEL_SPI_SSCR1_STRF
 DECL|INTEL_SPI_SSCR1_TFT_DFLT|macro|INTEL_SPI_SSCR1_TFT_DFLT
+DECL|INTEL_SPI_SSCR1_TFT_MASK|macro|INTEL_SPI_SSCR1_TFT_MASK
 DECL|INTEL_SPI_SSCR1_TFT|macro|INTEL_SPI_SSCR1_TFT
 DECL|INTEL_SPI_SSCR1_TIE_BIT|macro|INTEL_SPI_SSCR1_TIE_BIT
 DECL|INTEL_SPI_SSCR1_TIE|macro|INTEL_SPI_SSCR1_TIE
@@ -28,6 +30,7 @@ DECL|INTEL_SPI_SSSR_RFL_MASK|macro|INTEL_SPI_SSSR_RFL_MASK
 DECL|INTEL_SPI_SSSR_RFL|macro|INTEL_SPI_SSSR_RFL
 DECL|INTEL_SPI_SSSR_RFS|macro|INTEL_SPI_SSSR_RFS
 DECL|INTEL_SPI_SSSR_RNE|macro|INTEL_SPI_SSSR_RNE
+DECL|INTEL_SPI_SSSR_ROR_BIT|macro|INTEL_SPI_SSSR_ROR_BIT
 DECL|INTEL_SPI_SSSR_ROR|macro|INTEL_SPI_SSSR_ROR
 DECL|INTEL_SPI_SSSR_TFL_EMPTY|macro|INTEL_SPI_SSSR_TFL_EMPTY
 DECL|INTEL_SPI_SSSR_TFL_MASK|macro|INTEL_SPI_SSSR_TFL_MASK
@@ -42,8 +45,9 @@ DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|irq|member|uint32_t irq;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
+DECL|r_buf_len|member|uint32_t r_buf_len;
 DECL|regs|member|uint32_t regs;
-DECL|rx_buf_len|member|uint32_t rx_buf_len;
+DECL|rx_buf_end|member|uint8_t *rx_buf_end;
 DECL|rx_buf|member|uint8_t *rx_buf;
 DECL|spi_intel_config_t|typedef|typedef void (*spi_intel_config_t)(struct device *dev);
 DECL|spi_intel_config|struct|struct spi_intel_config {
@@ -51,6 +55,6 @@ DECL|spi_intel_data|struct|struct spi_intel_data {
 DECL|sscr0|member|uint32_t sscr0;
 DECL|sscr1|member|uint32_t sscr1;
 DECL|t_len|member|uint32_t t_len;
-DECL|tx_buf_len|member|uint32_t tx_buf_len;
+DECL|tx_buf_end|member|uint8_t *tx_buf_end;
 DECL|tx_buf|member|uint8_t *tx_buf;
 DECL|user_data|member|void *user_data;
