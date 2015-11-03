@@ -3,6 +3,7 @@ DECL|GATT_PERM_ENC_READ_MASK|macro|GATT_PERM_ENC_READ_MASK
 DECL|GATT_PERM_ENC_WRITE_MASK|macro|GATT_PERM_ENC_WRITE_MASK
 DECL|MAX_ATTRIBUTES|macro|MAX_ATTRIBUTES
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
+DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr_chrc)
 DECL|add_characteristic_cb|function|static uint8_t add_characteristic_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_characteristic|function|static void add_characteristic(uint8_t *data, uint16_t len)
 DECL|add_descriptor_cb|function|static uint8_t add_descriptor_cb(const struct bt_gatt_attr *attr, void *user_data)
@@ -12,6 +13,9 @@ DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
 DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_t len, struct bt_uuid *bt_uuid)
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
+DECL|ccc_added|variable|ccc_added
+DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
+DECL|ccc_cfg|variable|ccc_cfg
 DECL|ccc|variable|ccc
 DECL|cep|variable|cep
 DECL|chr_val|variable|chr_val
@@ -47,6 +51,7 @@ DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct b
 DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
 DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
+DECL|has_ccc|member|bool has_ccc;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|prep_data|member|uint8_t *prep_data;
@@ -60,6 +65,7 @@ DECL|read_params|variable|read_params
 DECL|read_result|function|static void read_result(void *user_data)
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read|function|static void read(uint8_t *data, uint16_t len)
+DECL|set_ccc_value|function|static uint8_t set_ccc_value(struct bt_gatt_attr *attr, const void *value, const uint16_t len)
 DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
 DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
