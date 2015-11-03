@@ -14,6 +14,7 @@ DECL|BTP_STATUS|macro|BTP_STATUS
 DECL|CORE_READ_SUPPORTED_COMMANDS|macro|CORE_READ_SUPPORTED_COMMANDS
 DECL|CORE_READ_SUPPORTED_SERVICES|macro|CORE_READ_SUPPORTED_SERVICES
 DECL|CORE_REGISTER_SERVICE|macro|CORE_REGISTER_SERVICE
+DECL|GAP_CONNECT|macro|GAP_CONNECT
 DECL|GAP_DEVICE_FOUND_FLAG_AD|macro|GAP_DEVICE_FOUND_FLAG_AD
 DECL|GAP_DEVICE_FOUND_FLAG_RSSI|macro|GAP_DEVICE_FOUND_FLAG_RSSI
 DECL|GAP_DEVICE_FOUND_FLAG_SD|macro|GAP_DEVICE_FOUND_FLAG_SD
@@ -104,10 +105,13 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -149,6 +153,7 @@ DECL|eir_data|member|uint8_t eir_data[0];
 DECL|fast_connectable|member|uint8_t fast_connectable;
 DECL|flags|member|uint8_t flags;
 DECL|flags|member|uint8_t flags;
+DECL|gap_connect_cmd|struct|struct gap_connect_cmd {
 DECL|gap_device_connected_ev|struct|struct gap_device_connected_ev {
 DECL|gap_device_disconnected_ev|struct|struct gap_device_disconnected_ev {
 DECL|gap_device_found_ev|struct|struct gap_device_found_ev {

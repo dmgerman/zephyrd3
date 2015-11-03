@@ -3,6 +3,7 @@ DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CONTROLLER_NAME|macro|CONTROLLER_NAME
 DECL|ad_flags|variable|ad_flags
 DECL|conn_callbacks|variable|conn_callbacks
+DECL|connect|function|static void connect(const uint8_t *data, uint16_t len)
 DECL|controller_index_list|function|static void controller_index_list(uint8_t *data, uint16_t len)
 DECL|controller_info|function|static void controller_info(uint8_t *data, uint16_t len)
 DECL|current_settings|variable|current_settings
