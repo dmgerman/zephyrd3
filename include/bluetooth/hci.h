@@ -1,3 +1,6 @@
+DECL|BT_ACL_CONT|macro|BT_ACL_CONT
+DECL|BT_ACL_START_NO_FLUSH|macro|BT_ACL_START_NO_FLUSH
+DECL|BT_ACL_START|macro|BT_ACL_START
 DECL|BT_ADDR_ANY|macro|BT_ADDR_ANY
 DECL|BT_ADDR_LE_ANY|macro|BT_ADDR_LE_ANY
 DECL|BT_ADDR_LE_PUBLIC|macro|BT_ADDR_LE_PUBLIC
@@ -144,6 +147,8 @@ DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bt_acl_flags|macro|bt_acl_flags
+DECL|bt_acl_handle_pack|macro|bt_acl_handle_pack
 DECL|bt_acl_handle|macro|bt_acl_handle
 DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
 DECL|bt_addr_t|typedef|} bt_addr_t;
