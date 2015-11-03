@@ -14,7 +14,7 @@ DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct bt_
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn)
 DECL|bt_l2cap_fixed_chan_register|function|void bt_l2cap_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
-DECL|bt_l2cap_init|function|int bt_l2cap_init(void)
+DECL|bt_l2cap_init|function|void bt_l2cap_init(void)
 DECL|bt_l2cap_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_lookup_rx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_lookup_tx_cid|function|struct bt_l2cap_chan *bt_l2cap_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_pool|variable|bt_l2cap_pool

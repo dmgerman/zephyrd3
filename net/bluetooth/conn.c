@@ -8,6 +8,7 @@ DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, ui
 DECL|bt_conn_enc_key_size|function|uint8_t bt_conn_enc_key_size(struct bt_conn *conn)
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
 DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt_conn *conn)
+DECL|bt_conn_init|function|int bt_conn_init(void)
 DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, uint64_t rand,uint16_t ediv, const uint8_t *ltk, size_t len)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
