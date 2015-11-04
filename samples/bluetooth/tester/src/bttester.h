@@ -74,6 +74,7 @@ DECL|GATT_ADD_DESCRIPTOR|macro|GATT_ADD_DESCRIPTOR
 DECL|GATT_ADD_INCLUDED_SERVICE|macro|GATT_ADD_INCLUDED_SERVICE
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_CLIENT_OP_OFFSET|macro|GATT_CLIENT_OP_OFFSET
+DECL|GATT_DISC_ALL_CHRC|macro|GATT_DISC_ALL_CHRC
 DECL|GATT_DISC_PRIM_UUID|macro|GATT_DISC_PRIM_UUID
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
 DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
@@ -137,6 +138,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -151,6 +155,8 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -174,6 +180,9 @@ DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|char_id|member|uint16_t char_id;
 DECL|char_id|member|uint16_t char_id;
+DECL|characteristic_handle|member|uint16_t characteristic_handle;
+DECL|characteristics_count|member|uint8_t characteristics_count;
+DECL|characteristics|member|struct gatt_characteristic characteristics[0];
 DECL|code|member|uint8_t code;
 DECL|cod|member|uint8_t cod[3];
 DECL|connectable|member|uint8_t connectable;
@@ -199,6 +208,7 @@ DECL|desc_id|member|uint16_t desc_id;
 DECL|discoverable|member|uint8_t discoverable;
 DECL|eir_data_len|member|uint16_t eir_data_len;
 DECL|eir_data|member|uint8_t eir_data[0];
+DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|fast_connectable|member|uint8_t fast_connectable;
@@ -245,6 +255,9 @@ DECL|gatt_add_included_service_cmd|struct|struct gatt_add_included_service_cmd {
 DECL|gatt_add_included_service_rp|struct|struct gatt_add_included_service_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
+DECL|gatt_characteristic|struct|struct gatt_characteristic {
+DECL|gatt_disc_all_chrc_cmd|struct|struct gatt_disc_all_chrc_cmd {
+DECL|gatt_disc_chrc_rp|struct|struct gatt_disc_chrc_rp {
 DECL|gatt_disc_prim_uuid_cmd|struct|struct gatt_disc_prim_uuid_cmd {
 DECL|gatt_disc_prim_uuid_rp|struct|struct gatt_disc_prim_uuid_rp {
 DECL|gatt_find_included_cmd|struct|struct gatt_find_included_cmd {
@@ -275,6 +288,7 @@ DECL|permissions|member|uint8_t permissions;
 DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
 DECL|properties|member|uint8_t properties;
+DECL|properties|member|uint8_t properties;
 DECL|rssi|member|int8_t rssi;
 DECL|scan_rsp_len|member|uint8_t scan_rsp_len;
 DECL|scan_rsp|member|uint8_t scan_rsp[0];
@@ -284,6 +298,7 @@ DECL|services|member|struct gatt_service services[0];
 DECL|service|member|struct gatt_service service;
 DECL|service|member|uint8_t service;
 DECL|short_name|member|uint8_t short_name[11];
+DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|supported_settings|member|uint32_t supported_settings;
@@ -296,9 +311,12 @@ DECL|uuid_length|member|uint8_t uuid_length;
 DECL|uuid_length|member|uint8_t uuid_length;
 DECL|uuid_length|member|uint8_t uuid_length;
 DECL|uuid_length|member|uint8_t uuid_length;
+DECL|uuid_length|member|uint8_t uuid_length;
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
 DECL|uuid|member|uint8_t uuid[0];
+DECL|uuid|member|uint8_t uuid[0];
+DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint8_t value[0];
