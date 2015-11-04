@@ -26,6 +26,9 @@ DECL|dsc|variable|dsc
 DECL|enc_key_size|member|uint8_t enc_key_size;
 DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn, uint8_t err)
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
+DECL|find_included_cb|function|static uint8_t find_included_cb(const struct bt_gatt_attr *attr,void *user_data)
+DECL|find_included_result|function|static void find_included_result(void *user_data)
+DECL|find_included|function|static void find_included(uint8_t *data, uint16_t len)
 DECL|flush_value|function|static int flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
 DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)

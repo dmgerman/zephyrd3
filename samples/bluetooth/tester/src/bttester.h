@@ -76,6 +76,7 @@ DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_CLIENT_OP_OFFSET|macro|GATT_CLIENT_OP_OFFSET
 DECL|GATT_DISC_PRIM_UUID|macro|GATT_DISC_PRIM_UUID
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
+DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
 DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
 DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
@@ -133,6 +134,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -146,6 +150,8 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -194,6 +200,7 @@ DECL|discoverable|member|uint8_t discoverable;
 DECL|eir_data_len|member|uint16_t eir_data_len;
 DECL|eir_data|member|uint8_t eir_data[0];
 DECL|end_handle|member|uint16_t end_handle;
+DECL|end_handle|member|uint16_t end_handle;
 DECL|fast_connectable|member|uint8_t fast_connectable;
 DECL|flags|member|uint8_t flags;
 DECL|flags|member|uint8_t flags;
@@ -240,12 +247,17 @@ DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
 DECL|gatt_disc_prim_uuid_cmd|struct|struct gatt_disc_prim_uuid_cmd {
 DECL|gatt_disc_prim_uuid_rp|struct|struct gatt_disc_prim_uuid_rp {
+DECL|gatt_find_included_cmd|struct|struct gatt_find_included_cmd {
+DECL|gatt_find_included_rp|struct|struct gatt_find_included_rp {
+DECL|gatt_included|struct|struct gatt_included {
 DECL|gatt_read_supported_commands_rp|struct|struct gatt_read_supported_commands_rp {
 DECL|gatt_service|struct|struct gatt_service {
 DECL|gatt_set_enc_key_size_cmd|struct|struct gatt_set_enc_key_size_cmd {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
 DECL|id|member|uint8_t id;
+DECL|included_handle|member|uint16_t included_handle;
 DECL|included_service_id|member|uint16_t included_service_id;
+DECL|included|member|struct gatt_included included[0];
 DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
 DECL|io_cap|member|uint8_t io_cap;
@@ -267,9 +279,12 @@ DECL|rssi|member|int8_t rssi;
 DECL|scan_rsp_len|member|uint8_t scan_rsp_len;
 DECL|scan_rsp|member|uint8_t scan_rsp[0];
 DECL|services_count|member|uint8_t services_count;
+DECL|services_count|member|uint8_t services_count;
 DECL|services|member|struct gatt_service services[0];
+DECL|service|member|struct gatt_service service;
 DECL|service|member|uint8_t service;
 DECL|short_name|member|uint8_t short_name[11];
+DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|supported_settings|member|uint32_t supported_settings;
 DECL|svc_id|member|uint16_t svc_id;
