@@ -53,9 +53,7 @@ DECL|esp|member|unsigned int esp;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
 DECL|irq_lock|function|static inline __attribute__((always_inline)) unsigned int irq_lock(void)
-DECL|irq_lock|function|static inline unsigned int irq_lock(void) { return 1; }
 DECL|irq_unlock|function|static inline __attribute__((always_inline)) void irq_unlock(unsigned int key)
-DECL|irq_unlock|function|static inline void irq_unlock(unsigned int key) {}
 DECL|irq|member|unsigned int irq;
 DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
