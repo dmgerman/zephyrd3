@@ -19,6 +19,9 @@ DECL|chr|variable|chr
 DECL|data|member|uint8_t *data;
 DECL|disc_all_chrc_result|function|static void disc_all_chrc_result(void *user_data)
 DECL|disc_all_chrc|function|static void disc_all_chrc(uint8_t *data, uint16_t len)
+DECL|disc_all_desc_cb|function|static uint8_t disc_all_desc_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|disc_all_desc_result|function|static void disc_all_desc_result(void *user_data)
+DECL|disc_all_desc|function|static void disc_all_desc(uint8_t *data, uint16_t len)
 DECL|disc_chrc_cb|function|static uint8_t disc_chrc_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|disc_chrc_uuid_result|function|static void disc_chrc_uuid_result(void *user_data)
 DECL|disc_chrc_uuid|function|static void disc_chrc_uuid(uint8_t *data, uint16_t len)
