@@ -1,5 +1,6 @@
 DECL|CHANNEL_HIGH|macro|CHANNEL_HIGH
 DECL|CHANNEL_LOW|macro|CHANNEL_LOW
+DECL|DEBUG|macro|DEBUG
 DECL|DISABLE_NETSELECT_RANDOM_CHANNEL|macro|DISABLE_NETSELECT_RANDOM_CHANNEL
 DECL|answer_beacon_requests|variable|answer_beacon_requests
 DECL|beacon_payload_len|variable|beacon_payload_len
