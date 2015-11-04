@@ -17,12 +17,19 @@ DECL|cep|variable|cep
 DECL|chr_val|variable|chr_val
 DECL|chr|variable|chr
 DECL|data|member|uint8_t *data;
+DECL|disc_prim_uuid_cb|function|static uint8_t disc_prim_uuid_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|disc_prim_uuid_result|function|static void disc_prim_uuid_result(void *user_data)
+DECL|disc_prim_uuid|function|static void disc_prim_uuid(uint8_t *data, uint16_t len)
+DECL|discover_destroy|function|static void discover_destroy(void *user_data)
+DECL|discover_params|variable|discover_params
 DECL|dsc|variable|dsc
 DECL|enc_key_size|member|uint8_t enc_key_size;
 DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn, uint8_t err)
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
 DECL|flush_value|function|static int flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
+DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
+DECL|gatt_buf_isempty|function|static bool gatt_buf_isempty(void)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern)
@@ -44,4 +51,5 @@ DECL|svc_pri|variable|svc_pri
 DECL|svc_sec|variable|svc_sec
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
 DECL|tester_init_gatt|function|uint8_t tester_init_gatt(void)
+DECL|uuid|variable|uuid
 DECL|write_value|function|static int write_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
