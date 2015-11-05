@@ -6,6 +6,4 @@ DECL|__BT_DRIVER_H|macro|__BT_DRIVER_H
 DECL|bt_buf_type|enum|enum bt_buf_type {
 DECL|bt_driver|struct|struct bt_driver {
 DECL|open|member|int (*open)(void);
-DECL|recv_reserve|member|size_t recv_reserve;
-DECL|send_reserve|member|size_t send_reserve;
 DECL|send|member|int (*send)(enum bt_buf_type type, struct net_buf *buf);

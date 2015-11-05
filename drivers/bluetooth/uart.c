@@ -3,7 +3,6 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|H4_ACL|macro|H4_ACL
 DECL|H4_CMD|macro|H4_CMD
 DECL|H4_EVT|macro|H4_EVT
-DECL|H4_HEADER_SIZE|macro|H4_HEADER_SIZE
 DECL|H4_SCO|macro|H4_SCO
 DECL|bt_uart_acl_recv|function|static struct net_buf *bt_uart_acl_recv(int *remaining)
 DECL|bt_uart_discard|function|static size_t bt_uart_discard(struct device *uart, size_t len)
