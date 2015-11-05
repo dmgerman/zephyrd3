@@ -8,7 +8,7 @@ DECL|L2CAP_LE_DYN_CID_START|macro|L2CAP_LE_DYN_CID_START
 DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
 DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
-DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct bt_conn *conn)
+DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct nano_fifo *fifo)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn)
 DECL|bt_l2cap_fixed_chan_register|function|void bt_l2cap_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
@@ -42,4 +42,5 @@ DECL|le_conn_param_rsp|function|static void le_conn_param_rsp(struct bt_l2cap *l
 DECL|le_conn_param_update_req|function|static void le_conn_param_update_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_conn_req|function|static void le_conn_req(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
 DECL|le_disconn_req|function|static void le_disconn_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
+DECL|le_sig|variable|le_sig
 DECL|servers|variable|servers

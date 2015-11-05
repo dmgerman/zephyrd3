@@ -5,6 +5,7 @@ DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
 DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
+DECL|att_buf|variable|att_buf
 DECL|att_chan_get|function|static struct bt_att *att_chan_get(struct bt_conn *conn)
 DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
 DECL|att_error_rsp|function|static uint8_t att_error_rsp(struct bt_att *att, struct net_buf *buf)

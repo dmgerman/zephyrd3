@@ -75,6 +75,7 @@ DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
 DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
+DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
 DECL|smp_encrypt_info|function|static uint8_t smp_encrypt_info(struct bt_smp *smp, struct net_buf *buf)
