@@ -95,7 +95,6 @@ DECL|_K_SVC_TIME_ELAPSE|macro|_K_SVC_TIME_ELAPSE
 DECL|_K_SVC_UNDEFINED|macro|_K_SVC_UNDEFINED
 DECL|_K_SVC_WORKLOAD_GET|macro|_K_SVC_WORKLOAD_GET
 DECL|_MICRO_PRIVATE_TYPES_H|macro|_MICRO_PRIVATE_TYPES_H
-DECL|__packed|variable|__packed
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
 DECL|_e1arg|struct|struct _e1arg {
