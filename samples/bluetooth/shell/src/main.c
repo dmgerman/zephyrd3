@@ -30,6 +30,7 @@ DECL|cmd_gatt_write_signed|function|static void cmd_gatt_write_signed(int argc, 
 DECL|cmd_gatt_write_without_rsp|function|static void cmd_gatt_write_without_rsp(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static void cmd_gatt_write(int argc, char *argv[])
 DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
+DECL|cmd_l2cap_connect|function|static void cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_register|function|static void cmd_l2cap_register(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
 DECL|cmd_scan|function|static void cmd_scan(int argc, char *argv[])
