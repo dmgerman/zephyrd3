@@ -1,5 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
+DECL|EVT_BUF_SIZE|macro|EVT_BUF_SIZE
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|acl_data|struct|struct acl_data {
