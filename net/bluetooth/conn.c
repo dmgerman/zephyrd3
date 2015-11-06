@@ -35,7 +35,7 @@ DECL|frag_buf|variable|frag_buf
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
-DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags)
+DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags, bool always_consume)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
 DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
