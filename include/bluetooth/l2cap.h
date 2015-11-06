@@ -1,4 +1,3 @@
-DECL|BT_L2CAP_BUF_SIZE|macro|BT_L2CAP_BUF_SIZE
 DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
 DECL|_next|member|struct bt_l2cap_chan *_next;
 DECL|_next|member|struct bt_l2cap_server *_next;
