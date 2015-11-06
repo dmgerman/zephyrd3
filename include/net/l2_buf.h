@@ -3,6 +3,7 @@ DECL|DEBUG_L2_BUFS|macro|DEBUG_L2_BUFS
 DECL|NET_L2_BUF_MAX_SIZE|macro|NET_L2_BUF_MAX_SIZE
 DECL|__L2_BUF_H|macro|__L2_BUF_H
 DECL|l2_buf_get_reserve|macro|l2_buf_get_reserve
+DECL|l2_buf_init|macro|l2_buf_init
 DECL|l2_buf_unref|macro|l2_buf_unref
 DECL|l2_buf|struct|struct l2_buf {
 DECL|last_tx_status|member|int last_tx_status;
