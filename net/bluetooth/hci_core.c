@@ -2,7 +2,6 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
 DECL|avail_acl_in|variable|avail_acl_in
