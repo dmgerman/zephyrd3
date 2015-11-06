@@ -13,5 +13,5 @@ DECL|eir_found|function|static bool eir_found(const struct bt_eir *eir, void *us
 DECL|hrm|variable|hrm
 DECL|hrs|variable|hrs
 DECL|mainloop|function|void mainloop(void)
-DECL|subscribe_func|function|static void subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|subscribe_func|function|static uint8_t subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|subscribe_params|variable|subscribe_params

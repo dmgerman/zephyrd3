@@ -58,14 +58,16 @@ DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, stru
 DECL|mainloop|function|void mainloop(void)
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_func|function|static void read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|read_destroy|function|static void read_destroy(void *user_data)
+DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|read_params|variable|read_params
 DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
 DECL|subscribe_destroy|function|static void subscribe_destroy(void *user_data)
-DECL|subscribe_func|function|static void subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|subscribe_func|function|static uint8_t subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
