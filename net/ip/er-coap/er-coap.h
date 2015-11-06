@@ -37,6 +37,8 @@ DECL|location_query_len|member|size_t location_query_len;
 DECL|location_query|member|const char *location_query;
 DECL|max_age|member|uint32_t max_age;
 DECL|mid|member|uint16_t mid;
+DECL|net_coap_stats_t|typedef|} net_coap_stats_t;
+DECL|net_coap_stats|struct|typedef struct net_coap_stats {
 DECL|observe|member|int32_t observe;
 DECL|options|member|uint8_t options[COAP_OPTION_SIZE1 / OPTION_MAP_SIZE + 1]; /* bitmap to check if option is set */
 DECL|payload_len|member|uint16_t payload_len;
@@ -45,6 +47,10 @@ DECL|proxy_scheme_len|member|size_t proxy_scheme_len;
 DECL|proxy_scheme|member|const char *proxy_scheme;
 DECL|proxy_uri_len|member|size_t proxy_uri_len;
 DECL|proxy_uri|member|const char *proxy_uri;
+DECL|re_sent|member|uint32_t re_sent;
+DECL|recv_err|member|uint32_t recv_err;
+DECL|recv|member|uint32_t recv;
+DECL|sent|member|uint32_t sent;
 DECL|size1|member|uint32_t size1;
 DECL|size2|member|uint32_t size2;
 DECL|token_len|member|uint8_t token_len;

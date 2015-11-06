@@ -8,4 +8,5 @@ DECL|coap_init_engine|function|coap_init_engine(void)
 DECL|coap_init_server|function|coap_context_t *coap_init_server(uip_ipaddr_t *server_addr, uint16_t server_port, uip_ipaddr_t *peer_addr, uint16_t peer_port)
 DECL|coap_rest_implementation|variable|coap_rest_implementation
 DECL|coap_set_service_callback|function|coap_set_service_callback(service_callback_t callback)
+DECL|net_coap_stats|variable|net_coap_stats
 DECL|service_cbk|variable|service_cbk
