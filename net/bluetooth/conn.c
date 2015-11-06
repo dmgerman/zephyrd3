@@ -29,7 +29,7 @@ DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *con
 DECL|callback_list|variable|callback_list
 DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
 DECL|conns|variable|conns
-DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn)
+DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|dummy|variable|dummy
 DECL|frag_buf|variable|frag_buf
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
