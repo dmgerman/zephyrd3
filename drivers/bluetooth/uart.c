@@ -14,4 +14,3 @@ DECL|bt_uart_read|function|static int bt_uart_read(struct device *uart, uint8_t 
 DECL|bt_uart_send|function|static int bt_uart_send(enum bt_buf_type buf_type, struct net_buf *buf)
 DECL|bt_uart_setup|function|static void bt_uart_setup(struct device *uart, struct uart_init_info *info)
 DECL|drv|variable|drv
-DECL|uart_out|function|static void uart_out(struct device *dev, const uint8_t *data, int size)
