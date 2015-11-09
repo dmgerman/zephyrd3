@@ -4,6 +4,7 @@ DECL|nano_fiber_sem_take_wait_timeout|function|int nano_fiber_sem_take_wait_time
 DECL|nano_fiber_sem_take_wait|function|void nano_fiber_sem_take_wait(struct nano_sem *sem)
 DECL|nano_sem_give|function|void nano_sem_give(struct nano_sem *sem)
 DECL|nano_sem_init|function|void nano_sem_init(struct nano_sem *sem)
+DECL|nano_sem_take_wait_timeout|function|void nano_sem_take_wait_timeout(struct nano_sem *sem, int32_t timeout)
 DECL|nano_sem_take_wait|function|void nano_sem_take_wait(struct nano_sem *sem)
 DECL|nano_task_sem_give|function|void nano_task_sem_give(struct nano_sem *sem)
 DECL|nano_task_sem_take_wait_timeout|function|int nano_task_sem_take_wait_timeout(struct nano_sem *sem, int32_t timeout_in_ticks)
