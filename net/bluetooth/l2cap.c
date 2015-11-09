@@ -7,6 +7,8 @@ DECL|L2CAP_LE_DYN_CID_END|macro|L2CAP_LE_DYN_CID_END
 DECL|L2CAP_LE_DYN_CID_START|macro|L2CAP_LE_DYN_CID_START
 DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
 DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
+DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
+DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
 DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct nano_fifo *fifo)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
