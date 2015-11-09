@@ -4,6 +4,7 @@ DECL|dequeue_data|function|static inline void *dequeue_data(struct nano_fifo *fi
 DECL|enqueue_data|function|static inline void enqueue_data(struct nano_fifo *fifo, void *data)
 DECL|nano_fiber_fifo_get_wait_timeout|function|void *nano_fiber_fifo_get_wait_timeout(struct nano_fifo *fifo,int32_t timeout_in_ticks)
 DECL|nano_fiber_fifo_get_wait|function|void *nano_fiber_fifo_get_wait(struct nano_fifo *fifo)
+DECL|nano_fifo_get_wait_timeout|function|void *nano_fifo_get_wait_timeout(struct nano_fifo *fifo, int32_t timeout)
 DECL|nano_fifo_get_wait|function|void *nano_fifo_get_wait(struct nano_fifo *fifo)
 DECL|nano_fifo_init|function|void nano_fifo_init(struct nano_fifo *fifo)
 DECL|nano_fifo_put|function|void nano_fifo_put(struct nano_fifo *fifo, void *data)
