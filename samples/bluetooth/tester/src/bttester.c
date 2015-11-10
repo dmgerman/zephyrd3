@@ -1,5 +1,6 @@
 DECL|CMD_QUEUED|macro|CMD_QUEUED
 DECL|STACKSIZE|macro|STACKSIZE
+DECL|addr2btp|function|void addr2btp(const bt_addr_le_t *bt_addr, uint8_t *addr, uint8_t *type)
 DECL|avail_queue|variable|avail_queue
 DECL|cmd_buf|variable|cmd_buf
 DECL|cmd_handler|function|static void cmd_handler(int arg1, int arg2)
