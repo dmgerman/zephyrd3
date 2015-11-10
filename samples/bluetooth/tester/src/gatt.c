@@ -7,6 +7,7 @@ DECL|add_descriptor|function|static void add_descriptor(uint8_t *data, uint16_t 
 DECL|add_included_cb|function|static uint8_t add_included_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
+DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_t len, struct bt_uuid *bt_uuid)
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc|variable|ccc
 DECL|cep|variable|cep
