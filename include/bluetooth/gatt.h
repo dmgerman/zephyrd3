@@ -54,6 +54,7 @@ DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
 DECL|bt_gatt_rsp_func_t|typedef|typedef void (*bt_gatt_rsp_func_t)(struct bt_conn *conn, uint8_t err);
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
+DECL|ccc_handle|member|uint16_t ccc_handle;
 DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
