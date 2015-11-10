@@ -1,32 +1,12 @@
-DECL|EXT_PORTA|macro|EXT_PORTA
-DECL|EXT_PORTB|macro|EXT_PORTB
-DECL|EXT_PORTC|macro|EXT_PORTC
-DECL|EXT_PORTD|macro|EXT_PORTD
-DECL|INTEN|macro|INTEN
-DECL|INTMASK|macro|INTMASK
-DECL|INTSTATUS|macro|INTSTATUS
-DECL|INTTYPE_LEVEL|macro|INTTYPE_LEVEL
-DECL|INT_BOTHEDGE|macro|INT_BOTHEDGE
-DECL|INT_CLOCK_SYNC|macro|INT_CLOCK_SYNC
-DECL|INT_POLARITY|macro|INT_POLARITY
-DECL|PORTA_DEBOUNCE|macro|PORTA_DEBOUNCE
-DECL|PORTA_EOI|macro|PORTA_EOI
-DECL|SWPORTA_DDR|macro|SWPORTA_DDR
-DECL|SWPORTA_DR|macro|SWPORTA_DR
-DECL|SWPORTB_DDR|macro|SWPORTB_DDR
-DECL|SWPORTB_DR|macro|SWPORTB_DR
-DECL|SWPORTC_DDR|macro|SWPORTC_DDR
-DECL|SWPORTC_DR|macro|SWPORTC_DR
-DECL|SWPORTD_DDR|macro|SWPORTD_DDR
-DECL|SWPORTD_DR|macro|SWPORTD_DR
+DECL|BIT|macro|BIT
 DECL|api_funcs|variable|api_funcs
 DECL|dw_interrupt_config|function|static inline void dw_interrupt_config(struct device *port, int access_op, uint32_t pin, int flags)
 DECL|dw_pin_config|function|static inline void dw_pin_config(struct device *port, uint32_t pin, int flags)
 DECL|dw_port_config|function|static inline void dw_port_config(struct device *port, int flags)
 DECL|dw_read|function|static inline uint32_t dw_read(uint32_t base_addr, uint32_t offset)
 DECL|dw_set_bit|function|static void dw_set_bit(uint32_t base_addr, uint32_t offset, uint32_t bit, uint8_t value)
-DECL|dw_set_gpio_bothedges|function|static inline void dw_set_gpio_bothedges(struct device *port,uint32_t pin, int flags)
-DECL|dw_set_gpio_bothedges|function|static inline void dw_set_gpio_bothedges(struct device *port,uint32_t pin, int flags)
+DECL|dw_set_both_edges|function|static inline void dw_set_both_edges(uint32_t base_addr, uint32_t pin)
+DECL|dw_set_both_edges|function|static inline void dw_set_both_edges(uint32_t base_addr, uint32_t pin)
 DECL|dw_write|function|static inline void dw_write(uint32_t base_addr, uint32_t offset, uint32_t val)
 DECL|gpio_0_runtime|variable|gpio_0_runtime
 DECL|gpio_1_runtime|variable|gpio_1_runtime
