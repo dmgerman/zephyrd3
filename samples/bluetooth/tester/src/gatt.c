@@ -24,7 +24,7 @@ DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
 DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|len|member|uint16_t len;
-DECL|len|member|uint8_t len;
+DECL|len|member|uint16_t len;
 DECL|prep_data|member|uint8_t *prep_data;
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
