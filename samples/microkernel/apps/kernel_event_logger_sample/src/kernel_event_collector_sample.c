@@ -1,6 +1,13 @@
+DECL|GIVE|macro|GIVE
+DECL|GIVE|macro|GIVE
 DECL|MAX_BUFFER_CONTEXT_DATA|macro|MAX_BUFFER_CONTEXT_DATA
-DECL|RANDOM|macro|RANDOM
+DECL|RANDDELAY|macro|RANDDELAY
+DECL|RANDDELAY|macro|RANDDELAY
+DECL|SLEEP|macro|SLEEP
+DECL|SLEEP|macro|SLEEP
 DECL|STSIZE|macro|STSIZE
+DECL|TAKE|macro|TAKE
+DECL|TAKE|macro|TAKE
 DECL|TEST_EVENT_ID|macro|TEST_EVENT_ID
 DECL|awake_cause|member|uint32_t awake_cause;
 DECL|busy_task_entry|function|void busy_task_entry(void)

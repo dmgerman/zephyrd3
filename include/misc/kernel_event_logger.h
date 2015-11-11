@@ -3,6 +3,7 @@ DECL|KERNEL_EVENT_LOGGER_INTERRUPT_EVENT_ID|macro|KERNEL_EVENT_LOGGER_INTERRUPT_
 DECL|KERNEL_EVENT_LOGGER_SLEEP_EVENT_ID|macro|KERNEL_EVENT_LOGGER_SLEEP_EVENT_ID
 DECL|__KERNEL_EVENT_LOGGER_H__|macro|__KERNEL_EVENT_LOGGER_H__
 DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
+DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
 DECL|sys_k_event_logger_get_wait_timeout|macro|sys_k_event_logger_get_wait_timeout
 DECL|sys_k_event_logger_get_wait|macro|sys_k_event_logger_get_wait
 DECL|sys_k_event_logger_get|macro|sys_k_event_logger_get
