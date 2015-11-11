@@ -6,6 +6,7 @@ DECL|PRINT_STATISTICS_INTERVAL|macro|PRINT_STATISTICS_INTERVAL
 DECL|RSTAT|macro|RSTAT
 DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
 DECL|STAT|macro|STAT
+DECL|buf_wait_timeout|function|static inline struct net_buf *buf_wait_timeout(struct nano_fifo *queue, int32_t timeout)
 DECL|check_and_send_packet|function|static int check_and_send_packet(struct net_buf *buf)
 DECL|drv|member|struct net_driver *drv;
 DECL|init_rx_queue|function|static void init_rx_queue(void)
