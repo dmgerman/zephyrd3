@@ -21,8 +21,8 @@
 #include <drivers/ioapic.h>
 #endif
 
-#if defined(CONFIG_IPI_QUARK_SE)
+#if defined(CONFIG_IPM_QUARK_SE)
 #if defined(CONFIG_IOAPIC)
-        ioapic_mkstub quark_se_ipi quark_se_ipi_isr 0
+        ioapic_mkstub quark_se_ipm quark_se_ipm_isr 0
 #endif
 #endif

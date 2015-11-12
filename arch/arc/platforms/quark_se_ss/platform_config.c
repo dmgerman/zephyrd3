@@ -1,3 +1,3 @@
-DECL|arc_quark_se_ipi_init|function|static int arc_quark_se_ipi_init(void)
-DECL|ipi_controller_config|variable|ipi_controller_config
-DECL|quark_se_ipi_sender_config|variable|quark_se_ipi_sender_config
+DECL|arc_quark_se_ipm_init|function|static int arc_quark_se_ipm_init(void)
+DECL|ipm_controller_config|variable|ipm_controller_config
+DECL|quark_se_ipm_sender_config|variable|quark_se_ipm_sender_config
