@@ -3,6 +3,7 @@ DECL|GATT_PERM_ENC_READ_MASK|macro|GATT_PERM_ENC_READ_MASK
 DECL|GATT_PERM_ENC_WRITE_MASK|macro|GATT_PERM_ENC_WRITE_MASK
 DECL|MAX_ATTRIBUTES|macro|MAX_ATTRIBUTES
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
+DECL|add_characteristic_cb|function|static uint8_t add_characteristic_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_characteristic|function|static void add_characteristic(uint8_t *data, uint16_t len)
 DECL|add_descriptor_cb|function|static uint8_t add_descriptor_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_descriptor|function|static void add_descriptor(uint8_t *data, uint16_t len)
