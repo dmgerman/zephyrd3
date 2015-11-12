@@ -51,6 +51,7 @@ DECL|le_conn_param_rsp|function|static void le_conn_param_rsp(struct bt_l2cap *l
 DECL|le_conn_param_update_req|function|static void le_conn_param_update_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_conn_req|function|static void le_conn_req(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
 DECL|le_conn_rsp|function|static void le_conn_rsp(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
+DECL|le_credits|function|static void le_credits(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_disconn_req|function|static void le_disconn_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_disconn_rsp|function|static void le_disconn_rsp(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_sig|variable|le_sig
