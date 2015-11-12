@@ -86,6 +86,8 @@ DECL|GATT_SERVICE_SECONDARY|macro|GATT_SERVICE_SECONDARY
 DECL|GATT_SET_ENC_KEY_SIZE|macro|GATT_SET_ENC_KEY_SIZE
 DECL|GATT_SET_VALUE|macro|GATT_SET_VALUE
 DECL|GATT_START_SERVER|macro|GATT_START_SERVER
+DECL|GATT_WRITE_WITHOUT_RSP|macro|GATT_WRITE_WITHOUT_RSP
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -164,6 +166,8 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -209,6 +213,8 @@ DECL|current_settings|member|uint32_t current_settings;
 DECL|current_settings|member|uint32_t current_settings;
 DECL|current_settings|member|uint32_t current_settings;
 DECL|current_settings|member|uint32_t current_settings;
+DECL|data_length|member|uint16_t data_length;
+DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
@@ -286,6 +292,8 @@ DECL|gatt_read_supported_commands_rp|struct|struct gatt_read_supported_commands_
 DECL|gatt_service|struct|struct gatt_service {
 DECL|gatt_set_enc_key_size_cmd|struct|struct gatt_set_enc_key_size_cmd {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
+DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
+DECL|handle|member|uint16_t handle;
 DECL|id|member|uint8_t id;
 DECL|included_handle|member|uint16_t included_handle;
 DECL|included_service_id|member|uint16_t included_service_id;

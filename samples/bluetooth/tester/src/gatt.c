@@ -64,3 +64,4 @@ DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t
 DECL|tester_init_gatt|function|uint8_t tester_init_gatt(void)
 DECL|uuid|variable|uuid
 DECL|write_value|function|static int write_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
+DECL|write_without_rsp|function|static void write_without_rsp(uint8_t *data, uint16_t len)
