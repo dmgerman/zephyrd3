@@ -55,6 +55,7 @@ DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struc
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
 DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
+DECL|signed_write_without_rsp|function|static void signed_write_without_rsp(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|svc_inc|variable|svc_inc
