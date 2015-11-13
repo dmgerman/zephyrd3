@@ -1,5 +1,7 @@
 DECL|AD_COMPLETE_NAME|macro|AD_COMPLETE_NAME
 DECL|AD_SHORT_NAME|macro|AD_SHORT_NAME
+DECL|CREDITS|macro|CREDITS
+DECL|DATA_MTU|macro|DATA_MTU
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|ad_non_discov|variable|ad_non_discov
@@ -14,6 +16,7 @@ DECL|auth_cb_input|variable|auth_cb_input
 DECL|auth_passkey_confirm|function|static void auth_passkey_confirm(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_entry|function|static void auth_passkey_entry(struct bt_conn *conn)
+DECL|buf_data|variable|buf_data
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static void cmd_advertise(int argc, char *argv[])
@@ -36,12 +39,14 @@ DECL|cmd_init|function|static void cmd_init(int argc, char *argv[])
 DECL|cmd_l2cap_connect|function|static void cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_disconnect|function|static void cmd_l2cap_disconnect(int argc, char *argv[])
 DECL|cmd_l2cap_register|function|static void cmd_l2cap_register(int argc, char *argv[])
+DECL|cmd_l2cap_send|function|static void cmd_l2cap_send(int argc, char *argv[])
 DECL|cmd_scan_off|function|static void cmd_scan_off(void)
 DECL|cmd_scan|function|static void cmd_scan(int argc, char *argv[])
 DECL|cmd_security|function|static void cmd_security(int argc, char *argv[])
 DECL|commands|variable|commands
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn)
+DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
 DECL|device_name_uuid|variable|device_name_uuid
