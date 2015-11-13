@@ -107,6 +107,7 @@ DECL|dtls_write|function|dtls_write(struct dtls_context_t *ctx, session_t *dst, 
 DECL|finalize_hs_hash|function|finalize_hs_hash(dtls_peer_t *peer, uint8 *buf) {
 DECL|free_context|function|free_context(dtls_context_t *context) {
 DECL|free_context|function|free_context(dtls_context_t *context) {
+DECL|free_tx_bufs|variable|free_tx_bufs
 DECL|handle_alert|function|handle_alert(dtls_context_t *ctx, dtls_peer_t *peer, uint8 *record_header, uint8 *data, size_t data_length)
 DECL|handle_ccs|function|handle_ccs(dtls_context_t *ctx, dtls_peer_t *peer, uint8 *record_header, uint8 *data, size_t data_length)
 DECL|handle_handshake_msg|function|handle_handshake_msg(dtls_context_t *ctx, dtls_peer_t *peer, session_t *session, const dtls_peer_type role, const dtls_state_t state, uint8 *data, size_t data_length)
