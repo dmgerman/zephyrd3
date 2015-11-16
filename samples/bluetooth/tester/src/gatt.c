@@ -50,7 +50,12 @@ DECL|get_service_handles|function|static uint8_t get_service_handles(const struc
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|prep_data|member|uint8_t *prep_data;
+DECL|read_cb|function|static uint8_t read_cb(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|read_destroy|function|static void read_destroy(void *user_data)
+DECL|read_params|variable|read_params
+DECL|read_result|function|static void read_result(void *user_data)
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read|function|static void read(uint8_t *data, uint16_t len)
 DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
 DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
