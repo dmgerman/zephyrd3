@@ -28,8 +28,8 @@ DECL|in4addr_my|variable|in4addr_my
 DECL|in4addr_peer|variable|in4addr_peer
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
+DECL|init_client|function|static inline void init_client(void)
 DECL|init_dtls|function|static void init_dtls(struct data *user_data, dtls_context_t **dtls)
-DECL|init_server|function|static inline void init_server()
 DECL|ipsum_len|member|int ipsum_len;
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
