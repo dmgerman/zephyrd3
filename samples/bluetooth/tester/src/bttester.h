@@ -80,6 +80,7 @@ DECL|GATT_DISC_CHRC_UUID|macro|GATT_DISC_CHRC_UUID
 DECL|GATT_DISC_PRIM_UUID|macro|GATT_DISC_PRIM_UUID
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
 DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
+DECL|GATT_READ_LONG|macro|GATT_READ_LONG
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
 DECL|GATT_READ|macro|GATT_READ
 DECL|GATT_SERVICE_PRIMARY|macro|GATT_SERVICE_PRIMARY
@@ -154,6 +155,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -174,6 +176,8 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -303,6 +307,7 @@ DECL|gatt_find_included_cmd|struct|struct gatt_find_included_cmd {
 DECL|gatt_find_included_rp|struct|struct gatt_find_included_rp {
 DECL|gatt_included|struct|struct gatt_included {
 DECL|gatt_read_cmd|struct|struct gatt_read_cmd {
+DECL|gatt_read_long_cmd|struct|struct gatt_read_long_cmd {
 DECL|gatt_read_rp|struct|struct gatt_read_rp {
 DECL|gatt_read_supported_commands_rp|struct|struct gatt_read_supported_commands_rp {
 DECL|gatt_service|struct|struct gatt_service {
@@ -310,6 +315,7 @@ DECL|gatt_set_enc_key_size_cmd|struct|struct gatt_set_enc_key_size_cmd {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
 DECL|gatt_signed_write_without_rsp_cmd|struct|struct gatt_signed_write_without_rsp_cmd {
 DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -326,6 +332,7 @@ DECL|len|member|uint16_t len;
 DECL|match|member|uint8_t match;
 DECL|name|member|uint8_t name[249];
 DECL|num|member|uint8_t num;
+DECL|offset|member|uint16_t offset;
 DECL|opcode|member|uint8_t opcode;
 DECL|passkey|member|uint32_t passkey;
 DECL|passkey|member|uint32_t passkey;

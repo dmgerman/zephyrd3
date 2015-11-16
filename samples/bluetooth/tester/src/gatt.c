@@ -52,6 +52,8 @@ DECL|len|member|uint16_t len;
 DECL|prep_data|member|uint8_t *prep_data;
 DECL|read_cb|function|static uint8_t read_cb(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|read_destroy|function|static void read_destroy(void *user_data)
+DECL|read_long_result|function|static void read_long_result(void *user_data)
+DECL|read_long|function|static void read_long(uint8_t *data, uint16_t len)
 DECL|read_params|variable|read_params
 DECL|read_result|function|static void read_result(void *user_data)
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
