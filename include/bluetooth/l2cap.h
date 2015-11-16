@@ -3,7 +3,10 @@ DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
 DECL|_ident|member|uint8_t _ident;
 DECL|_next|member|struct bt_l2cap_chan *_next;
 DECL|_next|member|struct bt_l2cap_server *_next;
+DECL|_sdu_len|member|uint16_t _sdu_len;
+DECL|_sdu|member|struct net_buf *_sdu;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
+DECL|alloc_buf|member|struct net_buf *(*alloc_buf)(struct bt_l2cap_chan *chan);
 DECL|bt_l2cap_chan_ops|struct|struct bt_l2cap_chan_ops {
 DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_endpoint|struct|struct bt_l2cap_endpoint {

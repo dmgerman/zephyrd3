@@ -37,6 +37,7 @@ DECL|l2cap_chan_alloc_cid|function|static void l2cap_chan_alloc_cid(struct bt_co
 DECL|l2cap_chan_create_seg|function|static struct net_buf *l2cap_chan_create_seg(struct bt_l2cap_chan *chan, struct net_buf *buf, uint16_t len)
 DECL|l2cap_chan_del|function|static void l2cap_chan_del(struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_get|function|static struct bt_l2cap *l2cap_chan_get(struct bt_conn *conn)
+DECL|l2cap_chan_le_recv_sdu|function|static void l2cap_chan_le_recv_sdu(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_recv|function|static void l2cap_chan_le_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_send_sdu|function|static int l2cap_chan_le_send_sdu(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_send|function|static int l2cap_chan_le_send(struct bt_l2cap_chan *chan, struct net_buf *buf, uint16_t len)
