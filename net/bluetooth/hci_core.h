@@ -10,12 +10,14 @@ DECL|LE_CONN_MAX_INTERVAL|macro|LE_CONN_MAX_INTERVAL
 DECL|LE_CONN_MIN_INTERVAL|macro|LE_CONN_MIN_INTERVAL
 DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
 DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|br|member|struct bt_dev_br br;
 DECL|bt_addr_cmp|function|static inline int bt_addr_cmp(const bt_addr_t *a, const bt_addr_t *b)
 DECL|bt_addr_copy|function|static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
 DECL|bt_addr_le_cmp|function|static inline int bt_addr_le_cmp(const bt_addr_le_t *a, const bt_addr_le_t *b)
 DECL|bt_addr_le_copy|function|static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
+DECL|bt_dev_br|struct|struct bt_dev_br {
 DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
 DECL|bt_le_conn_params_valid|function|static inline bool bt_le_conn_params_valid(uint16_t min, uint16_t max,uint16_t latency, uint16_t timeout)
@@ -30,6 +32,7 @@ DECL|le|member|struct bt_dev_le le;
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable
 DECL|manufacturer|member|uint16_t manufacturer;
+DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
 DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
