@@ -11,7 +11,7 @@ DECL|bt_l2cap_server|struct|struct bt_l2cap_server {
 DECL|cid|member|uint16_t cid;
 DECL|connected|member|void (*connected)(struct bt_l2cap_chan *chan);
 DECL|conn|member|struct bt_conn *conn;
-DECL|credits|member|uint16_t credits;
+DECL|credits|member|struct nano_sem credits;
 DECL|disconnected|member|void (*disconnected)(struct bt_l2cap_chan *chan);
 DECL|encrypt_change|member|void (*encrypt_change)(struct bt_l2cap_chan *chan);
 DECL|mps|member|uint16_t mps;
