@@ -10,6 +10,7 @@ DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
 DECL|br_init|function|static int br_init(void)
+DECL|br_init|function|static int br_init(void)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
@@ -68,6 +69,7 @@ DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_compl
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
+DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
