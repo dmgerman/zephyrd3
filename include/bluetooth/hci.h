@@ -63,6 +63,7 @@ DECL|BT_HCI_OP_LE_READ_REMOTE_FEATURES|macro|BT_HCI_OP_LE_READ_REMOTE_FEATURES
 DECL|BT_HCI_OP_LE_SET_ADV_DATA|macro|BT_HCI_OP_LE_SET_ADV_DATA
 DECL|BT_HCI_OP_LE_SET_ADV_ENABLE|macro|BT_HCI_OP_LE_SET_ADV_ENABLE
 DECL|BT_HCI_OP_LE_SET_ADV_PARAMETERS|macro|BT_HCI_OP_LE_SET_ADV_PARAMETERS
+DECL|BT_HCI_OP_LE_SET_EVENT_MASK|macro|BT_HCI_OP_LE_SET_EVENT_MASK
 DECL|BT_HCI_OP_LE_SET_SCAN_ENABLE|macro|BT_HCI_OP_LE_SET_SCAN_ENABLE
 DECL|BT_HCI_OP_LE_SET_SCAN_PARAMS|macro|BT_HCI_OP_LE_SET_SCAN_PARAMS
 DECL|BT_HCI_OP_LE_SET_SCAN_RSP_DATA|macro|BT_HCI_OP_LE_SET_SCAN_RSP_DATA
@@ -140,6 +141,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -167,6 +170,7 @@ DECL|bt_hci_cp_le_read_remote_features|struct|struct bt_hci_cp_le_read_remote_fe
 DECL|bt_hci_cp_le_set_adv_data|struct|struct bt_hci_cp_le_set_adv_data {
 DECL|bt_hci_cp_le_set_adv_enable|struct|struct bt_hci_cp_le_set_adv_enable {
 DECL|bt_hci_cp_le_set_adv_parameters|struct|struct bt_hci_cp_le_set_adv_parameters {
+DECL|bt_hci_cp_le_set_event_mask|struct|struct bt_hci_cp_le_set_event_mask {
 DECL|bt_hci_cp_le_set_scan_enable|struct|struct bt_hci_cp_le_set_scan_enable {
 DECL|bt_hci_cp_le_set_scan_params|struct|struct bt_hci_cp_le_set_scan_params {
 DECL|bt_hci_cp_le_set_scan_rsp_data|struct|struct bt_hci_cp_le_set_scan_rsp_data {
@@ -191,6 +195,7 @@ DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
 DECL|bt_hci_rp_le_rand|struct|struct bt_hci_rp_le_rand {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {
+DECL|bt_hci_rp_le_set_event_mask|struct|struct bt_hci_rp_le_set_event_mask {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
 DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
@@ -214,6 +219,7 @@ DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
 DECL|encrypt|member|uint8_t encrypt;
+DECL|events|member|uint8_t events[8];
 DECL|events|member|uint8_t events[8];
 DECL|evt_type|member|uint8_t evt_type;
 DECL|evt|member|uint8_t evt;
@@ -309,6 +315,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
