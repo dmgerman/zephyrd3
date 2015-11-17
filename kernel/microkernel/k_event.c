@@ -1,3 +1,4 @@
+DECL|ASSERT_EVENT_IS_VALID|macro|ASSERT_EVENT_IS_VALID
 DECL|_k_do_event_signal|function|void _k_do_event_signal(kevent_t event)
 DECL|_k_event_handler_set|function|void _k_event_handler_set(struct k_args *A)
 DECL|_k_event_signal|function|void _k_event_signal(struct k_args *A)
