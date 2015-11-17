@@ -6,8 +6,8 @@ DECL|NUM_SCRATCH_Q_PACKETS|macro|NUM_SCRATCH_Q_PACKETS
 DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_WAITERS|macro|NUM_WAITERS
 DECL|TIMEOUT_ORDER_NUM_FIBERS|macro|TIMEOUT_ORDER_NUM_FIBERS
-DECL|_trigger_nano_isr_lifo_get|variable|_trigger_nano_isr_lifo_get
-DECL|_trigger_nano_isr_lifo_put|variable|_trigger_nano_isr_lifo_put
+DECL|_trigger_nano_isr_lifo_get|function|static void _trigger_nano_isr_lifo_get(void)
+DECL|_trigger_nano_isr_lifo_put|function|static void _trigger_nano_isr_lifo_put(void)
 DECL|data_if_needed|member|void *data_if_needed;
 DECL|data|member|uint32_t data; /* miscellaneous data put on LIFO (not important) */
 DECL|data|member|void *data; /* pointer to data to add */

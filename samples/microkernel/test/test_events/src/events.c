@@ -1,8 +1,7 @@
 DECL|AlternateTask|function|void AlternateTask(void)
 DECL|ISR_INFO|typedef|} ISR_INFO;
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|RegressionTask|function|void RegressionTask(void)
-DECL|_trigger_isrEventSignal|variable|_trigger_isrEventSignal
+DECL|_trigger_isrEventSignal|function|static void _trigger_isrEventSignal(void)
 DECL|altEventHandler|function|int altEventHandler(int event)
 DECL|eventHandler|function|int eventHandler(int event)
 DECL|eventNoWaitTest|function|int eventNoWaitTest(void)

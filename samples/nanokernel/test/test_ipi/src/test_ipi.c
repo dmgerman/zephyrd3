@@ -7,7 +7,6 @@ DECL|RING_BUF_SIZE32|macro|RING_BUF_SIZE32
 DECL|SOURCE|macro|SOURCE
 DECL|SOURCE|macro|SOURCE
 DECL|fiber_stack|variable|fiber_stack
-DECL|ipi_dummy0_config_info|variable|ipi_dummy0_config_info
 DECL|ipi_dummy0_driver_data|variable|ipi_dummy0_driver_data
 DECL|line_buf|variable|line_buf
 DECL|main|function|void main(void)

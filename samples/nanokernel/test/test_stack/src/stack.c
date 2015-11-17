@@ -3,14 +3,13 @@ DECL|ISR_STACK_INFO|typedef|} ISR_STACK_INFO;
 DECL|MULTIPLIER|macro|MULTIPLIER
 DECL|MYNUMBER|macro|MYNUMBER
 DECL|NUM_STACK_ELEMENT|macro|NUM_STACK_ELEMENT
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|STARTNUM|macro|STARTNUM
 DECL|TCERR1|macro|TCERR1
 DECL|TCERR2|macro|TCERR2
 DECL|TCERR3|macro|TCERR3
-DECL|_trigger_nano_isr_stack_pop|variable|_trigger_nano_isr_stack_pop
-DECL|_trigger_nano_isr_stack_push|variable|_trigger_nano_isr_stack_push
+DECL|_trigger_nano_isr_stack_pop|function|static void _trigger_nano_isr_stack_pop(void)
+DECL|_trigger_nano_isr_stack_push|function|static void _trigger_nano_isr_stack_push(void)
 DECL|data|member|uint32_t data; /* data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)

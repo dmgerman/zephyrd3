@@ -2,10 +2,9 @@ DECL|AlternateTaskEntry|function|void AlternateTaskEntry(void)
 DECL|HighPriTaskEntry|function|void HighPriTaskEntry(void)
 DECL|LowPriTaskEntry|function|void LowPriTaskEntry(void)
 DECL|MonitorTaskEntry|function|void MonitorTaskEntry(void)
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_TEST_TASKS|macro|NUM_TEST_TASKS
 DECL|RegressionTaskEntry|function|void RegressionTaskEntry(void)
-DECL|_trigger_isrSemaSignal|variable|_trigger_isrSemaSignal
+DECL|_trigger_isrSemaSignal|function|static void _trigger_isrSemaSignal(void)
 DECL|altSem|variable|altSem
 DECL|altSem|variable|altSem
 DECL|blockHpSem|variable|blockHpSem
@@ -27,7 +26,6 @@ DECL|resultSems|variable|resultSems
 DECL|semList|variable|semList
 DECL|simpleSem|variable|simpleSem
 DECL|simpleSem|variable|simpleSem
-DECL|testInterruptsInit|function|static void testInterruptsInit(void)
 DECL|testIsrHandler|function|static void testIsrHandler(void *isrData)
 DECL|testIsrInfo|variable|testIsrInfo
 DECL|trigger_isrSemaSignal|function|void trigger_isrSemaSignal(ksem_t semaphore)

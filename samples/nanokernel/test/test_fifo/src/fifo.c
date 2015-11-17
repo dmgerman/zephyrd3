@@ -2,12 +2,11 @@ DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
 DECL|INVALID_DATA|macro|INVALID_DATA
 DECL|ISR_FIFO_INFO|typedef|} ISR_FIFO_INFO;
 DECL|NUM_FIFO_ELEMENT|macro|NUM_FIFO_ELEMENT
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|TCERR1|macro|TCERR1
 DECL|TCERR2|macro|TCERR2
 DECL|TCERR3|macro|TCERR3
-DECL|_trigger_nano_isr_fifo_get|variable|_trigger_nano_isr_fifo_get
-DECL|_trigger_nano_isr_fifo_put|variable|_trigger_nano_isr_fifo_put
+DECL|_trigger_nano_isr_fifo_get|function|static void _trigger_nano_isr_fifo_get(void)
+DECL|_trigger_nano_isr_fifo_put|function|static void _trigger_nano_isr_fifo_put(void)
 DECL|data|member|void *data; /* pointer to data to add */
 DECL|fiber1|function|void fiber1(void)
 DECL|fiber2|function|void fiber2(void)

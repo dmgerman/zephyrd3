@@ -2,13 +2,12 @@ DECL|EXEC_CTX_TYPE_CMD|macro|EXEC_CTX_TYPE_CMD
 DECL|FIBER_PRIORITY|macro|FIBER_PRIORITY
 DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
 DECL|ISR_INFO|typedef|} ISR_INFO;
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_TIMEOUT_FIBERS|macro|NUM_TIMEOUT_FIBERS
 DECL|THREAD_SELF_CMD|macro|THREAD_SELF_CMD
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
-DECL|_trigger_isrHandler|variable|_trigger_isrHandler
+DECL|_trigger_isrHandler|function|static void _trigger_isrHandler(void)
 DECL|command|member|int command; /* command to process */
 DECL|data|member|void *data; /* pointer to data to use or return */
 DECL|delayed_fiber|function|void delayed_fiber(int num, int unused)

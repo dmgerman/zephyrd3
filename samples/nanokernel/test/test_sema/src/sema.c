@@ -1,7 +1,6 @@
 DECL|FIBER_PRIORITY|macro|FIBER_PRIORITY
 DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
 DECL|ISR_SEM_INFO|typedef|} ISR_SEM_INFO;
-DECL|NUM_SW_IRQS|macro|NUM_SW_IRQS
 DECL|NUM_WAITERS|macro|NUM_WAITERS
 DECL|SEM_TEST_STATE|typedef|} SEM_TEST_STATE;
 DECL|STS_FIBER_WOKE_TASK|enumerator|STS_FIBER_WOKE_TASK,
@@ -9,8 +8,8 @@ DECL|STS_INIT|enumerator|STS_INIT = -1,
 DECL|STS_ISR_WOKE_TASK|enumerator|STS_ISR_WOKE_TASK
 DECL|STS_TASK_WOKE_FIBER|enumerator|STS_TASK_WOKE_FIBER,
 DECL|TIMEOUT_ORDER_NUM_FIBERS|macro|TIMEOUT_ORDER_NUM_FIBERS
-DECL|_trigger_nano_isr_sem_give|variable|_trigger_nano_isr_sem_give
-DECL|_trigger_nano_isr_sem_take|variable|_trigger_nano_isr_sem_take
+DECL|_trigger_nano_isr_sem_give|function|static void _trigger_nano_isr_sem_give(void)
+DECL|_trigger_nano_isr_sem_take|function|static void _trigger_nano_isr_sem_take(void)
 DECL|data|member|int data; /* data */
 DECL|do_test_multiple_waiters|function|static int do_test_multiple_waiters(void)
 DECL|fiberDetectedFailure|variable|fiberDetectedFailure
