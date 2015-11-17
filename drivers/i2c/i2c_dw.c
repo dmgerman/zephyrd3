@@ -10,10 +10,14 @@ DECL|_i2c_dw_transfer_complete|function|static inline void _i2c_dw_transfer_comp
 DECL|_i2c_dw_transfer_init|function|static int _i2c_dw_transfer_init(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address)
 DECL|funcs|variable|funcs
 DECL|i2c_0_runtime|variable|i2c_0_runtime
+DECL|i2c_1_runtime|variable|i2c_1_runtime
 DECL|i2c_config_0|function|void i2c_config_0(struct device *port)
+DECL|i2c_config_1|function|void i2c_config_1(struct device *port)
 DECL|i2c_config_dw_0|variable|i2c_config_dw_0
+DECL|i2c_config_dw_1|variable|i2c_config_dw_1
 DECL|i2c_dw_initialize|function|int i2c_dw_initialize(struct device *port)
 DECL|i2c_dw_isr_0_device|variable|i2c_dw_isr_0_device
+DECL|i2c_dw_isr_1_device|variable|i2c_dw_isr_1_device
 DECL|i2c_dw_isr|function|void i2c_dw_isr(struct device *port)
 DECL|i2c_dw_memory_read|function|static inline uint32_t i2c_dw_memory_read(uint32_t base_addr, uint32_t offset)
 DECL|i2c_dw_memory_write|function|static inline void i2c_dw_memory_write(uint32_t base_addr, uint32_t offset, uint32_t val)
