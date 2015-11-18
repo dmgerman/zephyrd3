@@ -38,6 +38,7 @@ DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|pkey|member|uint8_t pkey[64];
 DECL|pkts_sem|member|struct nano_sem pkts_sem;
+DECL|pkts|member|struct nano_sem pkts;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
