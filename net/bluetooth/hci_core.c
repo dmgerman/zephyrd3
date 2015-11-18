@@ -53,6 +53,7 @@ DECL|hci_le_read_remote_features|function|static int hci_le_read_remote_features
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct net_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(bt_ready_cb_t ready_cb)
+DECL|init_sem|function|static void init_sem(struct nano_sem *sem, size_t count)
 DECL|le_adv_report|function|static void le_adv_report(struct net_buf *buf)
 DECL|le_conn_complete|function|static void le_conn_complete(struct net_buf *buf)
 DECL|le_conn_param_neg_reply|function|static int le_conn_param_neg_reply(uint16_t handle, uint8_t reason)
