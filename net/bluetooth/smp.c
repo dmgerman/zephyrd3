@@ -119,7 +119,7 @@ DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_smp *smp,
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_public_key|function|static uint8_t smp_public_key(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp, uint8_t remote_io)
+DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
 DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
