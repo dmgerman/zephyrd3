@@ -4,6 +4,8 @@ DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
 DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
+DECL|BT_CONN_TYPE_BREDR|enumerator|BT_CONN_TYPE_BREDR,
+DECL|BT_CONN_TYPE_LE|enumerator|BT_CONN_TYPE_LE,
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
 DECL|bt_conn_le|struct|struct bt_conn_le {
@@ -30,3 +32,4 @@ DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|bt_conn_state_t state;
 DECL|timeout|member|void *timeout;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
+DECL|type|member|uint8_t type;
