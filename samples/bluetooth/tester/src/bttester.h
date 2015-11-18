@@ -26,9 +26,20 @@ DECL|GAP_EV_DEVICE_CONNECTED|macro|GAP_EV_DEVICE_CONNECTED
 DECL|GAP_EV_DEVICE_DISCONNECTED|macro|GAP_EV_DEVICE_DISCONNECTED
 DECL|GAP_EV_DEVICE_FOUND|macro|GAP_EV_DEVICE_FOUND
 DECL|GAP_EV_NEW_SETTINGS|macro|GAP_EV_NEW_SETTINGS
+DECL|GAP_EV_PASSKEY_CONFIRM_REQ|macro|GAP_EV_PASSKEY_CONFIRM_REQ
+DECL|GAP_EV_PASSKEY_DISPLAY|macro|GAP_EV_PASSKEY_DISPLAY
+DECL|GAP_EV_PASSKEY_ENTRY_REQ|macro|GAP_EV_PASSKEY_ENTRY_REQ
 DECL|GAP_GENERAL_DISCOVERABLE|macro|GAP_GENERAL_DISCOVERABLE
+DECL|GAP_IO_CAP_DISPLAY_ONLY|macro|GAP_IO_CAP_DISPLAY_ONLY
+DECL|GAP_IO_CAP_DISPLAY_YESNO|macro|GAP_IO_CAP_DISPLAY_YESNO
+DECL|GAP_IO_CAP_KEYBOARD_DISPLAY|macro|GAP_IO_CAP_KEYBOARD_DISPLAY
+DECL|GAP_IO_CAP_KEYBOARD_ONLY|macro|GAP_IO_CAP_KEYBOARD_ONLY
+DECL|GAP_IO_CAP_NO_INPUT_OUTPUT|macro|GAP_IO_CAP_NO_INPUT_OUTPUT
 DECL|GAP_LIMITED_DISCOVERABLE|macro|GAP_LIMITED_DISCOVERABLE
 DECL|GAP_NON_DISCOVERABLE|macro|GAP_NON_DISCOVERABLE
+DECL|GAP_PAIR|macro|GAP_PAIR
+DECL|GAP_PASSKEY_CONFIRM|macro|GAP_PASSKEY_CONFIRM
+DECL|GAP_PASSKEY_ENTRY|macro|GAP_PASSKEY_ENTRY
 DECL|GAP_READ_CONTROLLER_INDEX_LIST|macro|GAP_READ_CONTROLLER_INDEX_LIST
 DECL|GAP_READ_CONTROLLER_INFO|macro|GAP_READ_CONTROLLER_INFO
 DECL|GAP_READ_SUPPORTED_COMMANDS|macro|GAP_READ_SUPPORTED_COMMANDS
@@ -51,11 +62,13 @@ DECL|GAP_SET_BONDABLE|macro|GAP_SET_BONDABLE
 DECL|GAP_SET_CONNECTABLE|macro|GAP_SET_CONNECTABLE
 DECL|GAP_SET_DISCOVERABLE|macro|GAP_SET_DISCOVERABLE
 DECL|GAP_SET_FAST_CONNECTABLE|macro|GAP_SET_FAST_CONNECTABLE
+DECL|GAP_SET_IO_CAP|macro|GAP_SET_IO_CAP
 DECL|GAP_SET_POWERED|macro|GAP_SET_POWERED
 DECL|GAP_START_ADVERTISING|macro|GAP_START_ADVERTISING
 DECL|GAP_START_DISCOVERY|macro|GAP_START_DISCOVERY
 DECL|GAP_STOP_ADVERTISING|macro|GAP_STOP_ADVERTISING
 DECL|GAP_STOP_DISCOVERY|macro|GAP_STOP_DISCOVERY
+DECL|GAP_UNPAIR|macro|GAP_UNPAIR
 DECL|GATT_ADD_CHARACTERISTIC|macro|GATT_ADD_CHARACTERISTIC
 DECL|GATT_ADD_DESCRIPTOR|macro|GATT_ADD_DESCRIPTOR
 DECL|GATT_ADD_INCLUDED_SERVICE|macro|GATT_ADD_INCLUDED_SERVICE
@@ -107,11 +120,33 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -160,6 +195,12 @@ DECL|gap_device_disconnected_ev|struct|struct gap_device_disconnected_ev {
 DECL|gap_device_found_ev|struct|struct gap_device_found_ev {
 DECL|gap_disconnect_cmd|struct|struct gap_disconnect_cmd {
 DECL|gap_new_settings_ev|struct|struct gap_new_settings_ev {
+DECL|gap_pair_cmd|struct|struct gap_pair_cmd {
+DECL|gap_passkey_confirm_cmd|struct|struct gap_passkey_confirm_cmd {
+DECL|gap_passkey_confirm_req_ev|struct|struct gap_passkey_confirm_req_ev {
+DECL|gap_passkey_display_ev|struct|struct gap_passkey_display_ev {
+DECL|gap_passkey_entry_cmd|struct|struct gap_passkey_entry_cmd {
+DECL|gap_passkey_entry_req_ev|struct|struct gap_passkey_entry_req_ev {
 DECL|gap_read_controller_index_list_rp|struct|struct gap_read_controller_index_list_rp {
 DECL|gap_read_controller_info_rp|struct|struct gap_read_controller_info_rp {
 DECL|gap_read_supported_commands_rp|struct|struct gap_read_supported_commands_rp {
@@ -173,12 +214,14 @@ DECL|gap_set_discoverable_cmd|struct|struct gap_set_discoverable_cmd {
 DECL|gap_set_discoverable_rp|struct|struct gap_set_discoverable_rp {
 DECL|gap_set_fast_connectable_cmd|struct|struct gap_set_fast_connectable_cmd {
 DECL|gap_set_fast_connectable_rp|struct|struct gap_set_fast_connectable_rp {
+DECL|gap_set_io_cap_cmd|struct|struct gap_set_io_cap_cmd {
 DECL|gap_set_powered_cmd|struct|struct gap_set_powered_cmd {
 DECL|gap_set_powered_rp|struct|struct gap_set_powered_rp {
 DECL|gap_start_advertising_cmd|struct|struct gap_start_advertising_cmd {
 DECL|gap_start_advertising_rp|struct|struct gap_start_advertising_rp {
 DECL|gap_start_discovery_cmd|struct|struct gap_start_discovery_cmd {
 DECL|gap_stop_advertising_rp|struct|struct gap_stop_advertising_rp {
+DECL|gap_unpair_cmd|struct|struct gap_unpair_cmd {
 DECL|gatt_add_characteristic_cmd|struct|struct gatt_add_characteristic_cmd {
 DECL|gatt_add_characteristic_rp|struct|struct gatt_add_characteristic_rp {
 DECL|gatt_add_descriptor_cmd|struct|struct gatt_add_descriptor_cmd {
@@ -194,12 +237,17 @@ DECL|id|member|uint8_t id;
 DECL|included_service_id|member|uint16_t included_service_id;
 DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
+DECL|io_cap|member|uint8_t io_cap;
 DECL|key_size|member|uint8_t key_size;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
+DECL|match|member|uint8_t match;
 DECL|name|member|uint8_t name[249];
 DECL|num|member|uint8_t num;
 DECL|opcode|member|uint8_t opcode;
+DECL|passkey|member|uint32_t passkey;
+DECL|passkey|member|uint32_t passkey;
+DECL|passkey|member|uint32_t passkey;
 DECL|permissions|member|uint8_t permissions;
 DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
