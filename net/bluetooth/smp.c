@@ -92,7 +92,6 @@ DECL|sc_smp_pairing_random|function|static uint8_t sc_smp_pairing_random(struct 
 DECL|sc_smp_send_dhkey_check|function|static uint8_t sc_smp_send_dhkey_check(struct bt_smp *smp, const uint8_t *e)
 DECL|sc_supported|variable|sc_supported
 DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
-DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t reason)
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
 DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
@@ -101,6 +100,7 @@ DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16],
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
 DECL|smp_dhkey_check|function|static uint8_t smp_dhkey_check(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_encrypt_info|function|static uint8_t smp_encrypt_info(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_error|function|static void smp_error(struct bt_smp *smp, uint8_t reason)
 DECL|smp_f4_test|function|static int smp_f4_test(void)
 DECL|smp_f4|function|static int smp_f4(const uint8_t *u, const uint8_t *v, const uint8_t *x, uint8_t z, uint8_t res[16])
 DECL|smp_f5_test|function|static int smp_f5_test(void)
