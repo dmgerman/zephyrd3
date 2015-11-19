@@ -27,6 +27,7 @@ DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
 DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|callback_list|variable|callback_list
+DECL|conn_mtu|function|static inline uint16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
