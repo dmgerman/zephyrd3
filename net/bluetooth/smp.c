@@ -23,6 +23,7 @@ DECL|SMP_FLAG_PKEY_PENDING|enumerator|SMP_FLAG_PKEY_PENDING, /* if waiting for P
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
+DECL|SMP_FLAG_USER_CONFIRM|enumerator|SMP_FLAG_USER_CONFIRM, /* if waiting for passkey confirmation */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
@@ -108,6 +109,7 @@ DECL|smp_f5_test|function|static int smp_f5_test(void)
 DECL|smp_f5|function|static int smp_f5(const uint8_t *w, const uint8_t *n1, const uint8_t *n2, const bt_addr_le_t *a1, const bt_addr_le_t *a2, uint8_t *mackey, uint8_t *ltk)
 DECL|smp_f6_test|function|static int smp_f6_test(void)
 DECL|smp_f6|function|static int smp_f6(const uint8_t *w, const uint8_t *n1, const uint8_t *n2, const uint8_t *r, const uint8_t *iocap, const bt_addr_le_t *a1, const bt_addr_le_t *a2, uint8_t *check)
+DECL|smp_g2|function|static int smp_g2(const uint8_t u[32], const uint8_t v[32], const uint8_t x[16], const uint8_t y[16], uint32_t *passkey)
 DECL|smp_ident_addr_info|function|static uint8_t smp_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
