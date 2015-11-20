@@ -14,10 +14,10 @@ DECL|_pinmux_pullups|function|static inline void _pinmux_pullups(uint32_t base_a
 DECL|_quark_se_set_mux|function|static uint32_t _quark_se_set_mux(uint32_t base, uint32_t pin, uint8_t func)
 DECL|api_funcs|variable|api_funcs
 DECL|board_pmux|variable|board_pmux
-DECL|pinmux_dev_get|function|static uint32_t pinmux_dev_get(struct device *dev, uint32_t pin, uint8_t *func)
-DECL|pinmux_dev_get|function|static uint32_t pinmux_dev_get(struct device *dev, uint32_t pin, uint8_t *func)
+DECL|pinmux_dev_get|function|static uint32_t pinmux_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
+DECL|pinmux_dev_get|function|static uint32_t pinmux_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
 DECL|pinmux_dev_input|function|static uint32_t pinmux_dev_input(struct device *dev, uint32_t pin, uint8_t func)
 DECL|pinmux_dev_pullup|function|static uint32_t pinmux_dev_pullup(struct device *dev, uint32_t pin, uint8_t func)
-DECL|pinmux_dev_set|function|static uint32_t pinmux_dev_set(struct device *dev, uint32_t pin, uint8_t func)
-DECL|pinmux_dev_set|function|static uint32_t pinmux_dev_set(struct device *dev, uint32_t pin, uint8_t func)
+DECL|pinmux_dev_set|function|static uint32_t pinmux_dev_set(struct device *dev, uint32_t pin, uint32_t func)
+DECL|pinmux_dev_set|function|static uint32_t pinmux_dev_set(struct device *dev, uint32_t pin, uint32_t func)
 DECL|pinmux_initialize|function|int pinmux_initialize(struct device *port)

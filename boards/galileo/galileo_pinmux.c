@@ -19,12 +19,12 @@ DECL|exp1|member|struct device *exp1;
 DECL|exp2|member|struct device *exp2;
 DECL|func|member|uint8_t func;
 DECL|galileo_data|struct|struct galileo_data {
-DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint8_t *func)
-DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint8_t *func)
+DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
+DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
 DECL|galileo_dev_input_enable|function|static uint32_t galileo_dev_input_enable(struct device *dev, uint32_t pin, uint8_t func)
 DECL|galileo_dev_pullup|function|static uint32_t galileo_dev_pullup(struct device *dev, uint32_t pin, uint8_t func)
-DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint8_t func)
-DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint8_t func)
+DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
+DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
 DECL|galileo_pinmux_driver|variable|galileo_pinmux_driver
 DECL|galileo_pmux|variable|galileo_pmux
 DECL|gpio_chip|enum|enum gpio_chip {
