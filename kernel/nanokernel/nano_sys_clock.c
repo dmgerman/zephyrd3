@@ -13,6 +13,8 @@ DECL|nano_tick_delta_32|function|uint32_t nano_tick_delta_32(int64_t *reftime)
 DECL|nano_tick_delta|function|int64_t nano_tick_delta(int64_t *reftime)
 DECL|nano_tick_get_32|function|uint32_t nano_tick_get_32(void)
 DECL|nano_tick_get|function|int64_t nano_tick_get(void)
+DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
+DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
