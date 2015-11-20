@@ -10,11 +10,7 @@ DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
 DECL|slice_count|variable|slice_count
 DECL|slice_prio|variable|slice_prio
 DECL|slice_time|variable|slice_time
-DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
-DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
 DECL|sys_clock_increment|function|static void sys_clock_increment(int inc)
-DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
-DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_scheduler_time_slice_set|function|void sys_scheduler_time_slice_set(int32_t t, kpriority_t p)
 DECL|task_tick_delta|function|int64_t task_tick_delta(int64_t *reftime /* pointer to reference time */)
 DECL|task_tick_get_32|function|int32_t task_tick_get_32(void)
