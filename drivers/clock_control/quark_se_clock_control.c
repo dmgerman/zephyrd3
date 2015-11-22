@@ -1,0 +1,12 @@
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|base_address|member|uint32_t base_address;
+DECL|clock_quark_se_external_config|variable|clock_quark_se_external_config
+DECL|clock_quark_se_peripheral_config|variable|clock_quark_se_peripheral_config
+DECL|clock_quark_se_sensor_config|variable|clock_quark_se_sensor_config
+DECL|quark_se_clock_control_api|variable|quark_se_clock_control_api
+DECL|quark_se_clock_control_config|struct|struct quark_se_clock_control_config {
+DECL|quark_se_clock_control_init|function|int quark_se_clock_control_init(struct device *dev)
+DECL|quark_se_clock_control_off|function|static inline int quark_se_clock_control_off(struct device *dev, clock_control_subsys_t sub_system)
+DECL|quark_se_clock_control_on|function|static inline int quark_se_clock_control_on(struct device *dev, clock_control_subsys_t sub_system)
