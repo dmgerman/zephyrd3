@@ -1,0 +1,4 @@
+DECL|ns16550_uart_console_init|function|static int ns16550_uart_console_init(struct device *dev)
+DECL|ns16550_uart_dev_cfg|variable|ns16550_uart_dev_cfg
+DECL|ns16550_uart_dev_data|variable|ns16550_uart_dev_data
+DECL|uart_devs|variable|uart_devs
