@@ -58,6 +58,8 @@ DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|chan|member|struct bt_l2cap_chan chan;
 DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1, uint8_t *k2)
+DECL|compute_and_check_and_send_slave_dhcheck|function|static uint8_t compute_and_check_and_send_slave_dhcheck(struct bt_smp *smp)
+DECL|compute_and_send_master_dhcheck|function|static uint8_t compute_and_send_master_dhcheck(struct bt_smp *smp)
 DECL|dhkey|member|uint8_t dhkey[32];
 DECL|expect_len|member|uint8_t expect_len;
 DECL|e|member|uint8_t e[16];
@@ -127,7 +129,6 @@ DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
 DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
-DECL|smp_sc_calculate_ltk_mac_dhcheck|function|static uint8_t smp_sc_calculate_ltk_mac_dhcheck(struct bt_smp *smp, uint8_t *e)
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_self_test|function|static inline int smp_self_test(void)
