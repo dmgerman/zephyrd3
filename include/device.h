@@ -8,11 +8,21 @@ DECL|DEV_NO_SUPPORT|macro|DEV_NO_SUPPORT
 DECL|DEV_OK|macro|DEV_OK
 DECL|DEV_USED|macro|DEV_USED
 DECL|_DEVICE_H_|macro|_DEVICE_H_
+DECL|_t_sem|member|struct _k_sem_struct _t_sem;
+DECL|caller_is_task|member|bool caller_is_task;
 DECL|config_info|member|void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|device_config|struct|struct device_config {
+DECL|device_sync_call_t|typedef|} device_sync_call_t;
 DECL|device|struct|struct device {
 DECL|driver_api|member|void *driver_api;
 DECL|driver_data|member|void *driver_data;
+DECL|f_sem|member|struct nano_sem *f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
+DECL|synchronous_call_complete|function|static inline void synchronous_call_complete(device_sync_call_t *sync)
+DECL|synchronous_call_complete|function|static inline void synchronous_call_complete(device_sync_call_t *sync)
+DECL|synchronous_call_init|function|static inline void synchronous_call_init(device_sync_call_t *sync)
+DECL|synchronous_call_wait|function|static inline void synchronous_call_wait(device_sync_call_t *sync)
+DECL|synchronous_call_wait|function|static inline void synchronous_call_wait(device_sync_call_t *sync)
+DECL|t_sem|member|ksem_t t_sem;
