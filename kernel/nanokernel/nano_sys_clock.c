@@ -3,7 +3,7 @@ DECL|_nano_get_earliest_timers_deadline|function|static inline uint32_t _nano_ge
 DECL|_nano_get_earliest_timers_deadline|function|static inline uint32_t _nano_get_earliest_timers_deadline(void)
 DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(int32_t ticks)
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
-DECL|_nano_ticks|variable|_nano_ticks
+DECL|_sys_clock_tick_count|variable|_sys_clock_tick_count
 DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
 DECL|handle_expired_nano_timeouts|function|static inline void handle_expired_nano_timeouts(int32_t ticks)
 DECL|handle_expired_nano_timeouts|macro|handle_expired_nano_timeouts
