@@ -43,6 +43,7 @@ DECL|bt_smp_dhkey_ready|function|void bt_smp_dhkey_ready(const uint8_t *dhkey)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_smp *smp)
 DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_l2cap_chan *chan)
+DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, uint8_t *tk)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_io_capa|variable|bt_smp_io_capa
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
@@ -54,6 +55,7 @@ DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, st
 DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *buf)
+DECL|bt_smp_update_keys|function|void bt_smp_update_keys(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|b|member|uint64_t b;
 DECL|chan|member|struct bt_l2cap_chan chan;
