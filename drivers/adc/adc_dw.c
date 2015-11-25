@@ -22,7 +22,6 @@ DECL|adc_config_dev_0|variable|adc_config_dev_0
 DECL|adc_dw_disable|function|static void adc_dw_disable(struct device *dev)
 DECL|adc_dw_enable|function|static void adc_dw_enable(struct device *dev)
 DECL|adc_dw_init|function|int adc_dw_init(struct device *dev)
-DECL|adc_dw_isr_0_device|variable|adc_dw_isr_0_device
 DECL|adc_dw_read|function|static int adc_dw_read(struct device *dev, struct adc_seq_table *seq_tbl)
 DECL|adc_goto_deep_power_down|function|static void adc_goto_deep_power_down(void)
 DECL|adc_goto_normal_mode_wo_calibration|function|static void adc_goto_normal_mode_wo_calibration(void)
