@@ -27,4 +27,6 @@ DECL|gpio_dw_set_callback|function|static inline int gpio_dw_set_callback(struct
 DECL|gpio_dw_setup|function|static inline int gpio_dw_setup(struct device *dev)
 DECL|gpio_dw_setup|macro|gpio_dw_setup
 DECL|gpio_dw_suspend_port|function|static inline int gpio_dw_suspend_port(struct device *port)
+DECL|gpio_dw_unmask_int|function|static inline void gpio_dw_unmask_int(struct device *port)
+DECL|gpio_dw_unmask_int|macro|gpio_dw_unmask_int
 DECL|gpio_dw_write|function|static inline int gpio_dw_write(struct device *port, int access_op,uint32_t pin, uint32_t value)
