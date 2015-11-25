@@ -15,7 +15,6 @@ DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
 DECL|_REG_TIMER_CFG|macro|_REG_TIMER_CFG
 DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
-DECL|_sys_clock_cycle_get|function|uint32_t _sys_clock_cycle_get(void)
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
@@ -34,6 +33,7 @@ DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
 DECL|programmed_cycles|variable|programmed_cycles
 DECL|programmed_full_ticks|variable|programmed_full_ticks
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
+DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
 DECL|timer_interrupt_mask|function|static inline void timer_interrupt_mask(void)
