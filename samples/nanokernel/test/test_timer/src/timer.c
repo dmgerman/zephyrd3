@@ -20,11 +20,11 @@ DECL|longTimer|variable|longTimer
 DECL|main|function|void main(void)
 DECL|midTimerData|variable|midTimerData
 DECL|midTimer|variable|midTimer
-DECL|nano_cycle_get_32Test|function|int nano_cycle_get_32Test(void)
 DECL|shortTimerData|variable|shortTimerData
 DECL|shortTimer|variable|shortTimer
 DECL|startTimers|function|void startTimers(timer_start_func startRtn)
 DECL|stopTimers|function|int stopTimers(timer_stop_func stopRtn, timer_get_func getRtn)
+DECL|sys_cycle_get_32Test|function|int sys_cycle_get_32Test(void)
 DECL|timerData|variable|timerData
 DECL|timer_get_func|typedef|typedef void* (* timer_get_func)(struct nano_timer *);
 DECL|timer_getw_func|typedef|typedef void* (* timer_getw_func)(struct nano_timer *);
