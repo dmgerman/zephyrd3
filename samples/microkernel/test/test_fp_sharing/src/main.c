@@ -1,6 +1,5 @@
 DECL|MAX_TESTS|macro|MAX_TESTS
 DECL|TICK_COUNT_GET|macro|TICK_COUNT_GET
-DECL|TICK_COUNT_GET|macro|TICK_COUNT_GET
 DECL|dummyTimerData|variable|dummyTimerData
 DECL|fiberStack|variable|fiberStack
 DECL|fiberTimer|variable|fiberTimer
