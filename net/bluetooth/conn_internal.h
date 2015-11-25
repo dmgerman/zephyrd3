@@ -15,6 +15,7 @@ DECL|bt_conn|struct|struct bt_conn {
 DECL|channels|member|void *channels;
 DECL|conn_interval|member|uint8_t conn_interval;
 DECL|dst|member|bt_addr_le_t dst;
+DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|features|member|uint8_t features[8];
 DECL|flags|member|atomic_t flags[1];
