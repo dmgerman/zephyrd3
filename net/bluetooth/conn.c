@@ -1,7 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
-DECL|bt_conn_add|function|struct bt_conn *bt_conn_add(const bt_addr_le_t *peer)
+DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer)
 DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct nano_fifo *fifo, size_t reserve)
