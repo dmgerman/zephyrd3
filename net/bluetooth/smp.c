@@ -85,6 +85,8 @@ DECL|local_dist|member|uint8_t local_dist;
 DECL|mackey|member|uint8_t mackey[16];
 DECL|method|member|uint8_t method;
 DECL|pairing_method|enum|enum pairing_method {
+DECL|passkey_round|member|uint8_t passkey_round;
+DECL|passkey|member|uint32_t passkey;
 DECL|pcnf|member|uint8_t pcnf[16];
 DECL|pkey|member|uint8_t pkey[64];
 DECL|preq|member|uint8_t preq[7];
