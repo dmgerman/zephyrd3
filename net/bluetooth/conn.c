@@ -9,6 +9,7 @@ DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct nano_
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_conn_enc_key_size|function|uint8_t bt_conn_enc_key_size(struct bt_conn *conn)
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
+DECL|bt_conn_get_info|function|int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info)
 DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt_conn *conn)
 DECL|bt_conn_init|function|int bt_conn_init(void)
 DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)

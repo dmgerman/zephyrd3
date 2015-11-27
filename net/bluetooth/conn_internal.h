@@ -4,8 +4,6 @@ DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
 DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
-DECL|BT_CONN_TYPE_BREDR|enumerator|BT_CONN_TYPE_BREDR,
-DECL|BT_CONN_TYPE_LE|enumerator|BT_CONN_TYPE_LE,
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
 DECL|bt_conn_get_pkts|function|static inline struct nano_sem *bt_conn_get_pkts(struct bt_conn *conn)
