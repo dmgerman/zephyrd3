@@ -6,5 +6,5 @@ DECL|wdt_dw_funcs|variable|wdt_dw_funcs
 DECL|wdt_dw_get_config|function|static void wdt_dw_get_config(struct wdt_config *config)
 DECL|wdt_dw_init|function|int wdt_dw_init(struct device *dev)
 DECL|wdt_dw_isr|function|void wdt_dw_isr(void)
-DECL|wdt_dw_reload|function|static void wdt_dw_reload(void) { WDT_DW->wdt_crr = WDT_CRR_VAL; }
+DECL|wdt_dw_reload|function|static void wdt_dw_reload(void)
 DECL|wdt_dw_set_config|function|static int wdt_dw_set_config(struct wdt_config *config)
