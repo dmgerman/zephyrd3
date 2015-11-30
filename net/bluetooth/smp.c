@@ -22,8 +22,7 @@ DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress 
 DECL|SMP_FLAG_PKEY_PENDING|enumerator|SMP_FLAG_PKEY_PENDING, /* if waiting for P256 Public Key */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
-DECL|SMP_FLAG_TK_VALID|enumerator|SMP_FLAG_TK_VALID, /* if TK values is valid */
-DECL|SMP_FLAG_USER_CONFIRM|enumerator|SMP_FLAG_USER_CONFIRM, /* if waiting for passkey confirmation */
+DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER /* if waiting for user input */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out, int len)
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
