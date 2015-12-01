@@ -12,5 +12,5 @@ DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
 DECL|bt_uart_open|function|static int bt_uart_open(void)
 DECL|bt_uart_read|function|static int bt_uart_read(struct device *uart, uint8_t *buf,size_t len, size_t min)
 DECL|bt_uart_send|function|static int bt_uart_send(enum bt_buf_type buf_type, struct net_buf *buf)
-DECL|bt_uart_setup|function|static void bt_uart_setup(struct device *uart, struct uart_init_info *info)
+DECL|bt_uart_setup|function|static void bt_uart_setup(struct device *uart)
 DECL|drv|variable|drv
