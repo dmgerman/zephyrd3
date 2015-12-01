@@ -6,6 +6,7 @@ DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
 DECL|bt_uart_acl_recv|function|static struct net_buf *bt_uart_acl_recv(int *remaining)
+DECL|bt_uart_dev|variable|bt_uart_dev
 DECL|bt_uart_discard|function|static size_t bt_uart_discard(struct device *uart, size_t len)
 DECL|bt_uart_evt_recv|function|static struct net_buf *bt_uart_evt_recv(int *remaining)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
