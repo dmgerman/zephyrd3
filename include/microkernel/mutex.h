@@ -1,7 +1,4 @@
 DECL|DEFINE_MUTEX|macro|DEFINE_MUTEX
 DECL|MUTEX_H|macro|MUTEX_H
 DECL|__MUTEX_DEFAULT|macro|__MUTEX_DEFAULT
-DECL|task_mutex_lock_wait_timeout|macro|task_mutex_lock_wait_timeout
-DECL|task_mutex_lock_wait|macro|task_mutex_lock_wait
-DECL|task_mutex_lock|macro|task_mutex_lock
 DECL|task_mutex_unlock|macro|task_mutex_unlock
