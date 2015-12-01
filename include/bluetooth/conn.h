@@ -7,6 +7,7 @@ DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM, /** encryption and no aut
 DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|_next|member|struct bt_conn_cb *_next;
 DECL|br|member|struct bt_conn_br_info br;
+DECL|bt_conn_br_info|struct|struct bt_conn_br_info {};
 DECL|bt_conn_cb|struct|struct bt_conn_cb {
 DECL|bt_conn_info|struct|struct bt_conn_info {
 DECL|bt_conn_le_info|struct|struct bt_conn_le_info {
