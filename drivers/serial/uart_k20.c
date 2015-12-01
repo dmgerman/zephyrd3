@@ -1,7 +1,6 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|UART_STRUCT|macro|UART_STRUCT
-DECL|uart_devs|variable|uart_devs
 DECL|uart_k20_dev_cfg_0|variable|uart_k20_dev_cfg_0
 DECL|uart_k20_dev_cfg_1|variable|uart_k20_dev_cfg_1
 DECL|uart_k20_dev_cfg_2|variable|uart_k20_dev_cfg_2

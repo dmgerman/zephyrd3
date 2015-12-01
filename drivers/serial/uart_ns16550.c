@@ -85,7 +85,6 @@ DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
-DECL|uart_devs|variable|uart_devs
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0

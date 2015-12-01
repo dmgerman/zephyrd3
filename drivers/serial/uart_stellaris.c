@@ -85,7 +85,6 @@ DECL|poll_tx_ready|function|static int poll_tx_ready(struct device *dev)
 DECL|ris|member|uint32_t ris;
 DECL|sr|macro|sr
 DECL|u1|member|} u1;
-DECL|uart_devs|variable|uart_devs
 DECL|uart_stellaris_dev_cfg_0|variable|uart_stellaris_dev_cfg_0
 DECL|uart_stellaris_dev_cfg_1|variable|uart_stellaris_dev_cfg_1
 DECL|uart_stellaris_dev_cfg_2|variable|uart_stellaris_dev_cfg_2
