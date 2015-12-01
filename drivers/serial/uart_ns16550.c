@@ -109,4 +109,3 @@ DECL|uart_ns16550_irq_tx_ready|function|static int uart_ns16550_irq_tx_ready(str
 DECL|uart_ns16550_irq_update|function|static int uart_ns16550_irq_update(struct device *dev)
 DECL|uart_ns16550_poll_in|function|static int uart_ns16550_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_ns16550_poll_out|function|static unsigned char uart_ns16550_poll_out(struct device *dev, unsigned char c)
-DECL|uart_ns16550_port_init|function|void uart_ns16550_port_init(struct device *dev, const struct uart_init_info * const init_info)
