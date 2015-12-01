@@ -107,4 +107,3 @@ DECL|uart_stellaris_irq_tx_ready|function|static int uart_stellaris_irq_tx_ready
 DECL|uart_stellaris_irq_update|function|static int uart_stellaris_irq_update(struct device *dev)
 DECL|uart_stellaris_poll_in|function|static int uart_stellaris_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_stellaris_poll_out|function|static unsigned char uart_stellaris_poll_out(struct device *dev, unsigned char c)
-DECL|uart_stellaris_port_init|function|void uart_stellaris_port_init(struct device *dev, const struct uart_init_info * const init_info)
