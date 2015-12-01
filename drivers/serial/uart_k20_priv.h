@@ -25,8 +25,8 @@ DECL|TX_EN_MASK|macro|TX_EN_MASK
 DECL|TX_FIFO_EN_MASK|macro|TX_FIFO_EN_MASK
 DECL|TX_FIFO_FLUSH_MASK|macro|TX_FIFO_FLUSH_MASK
 DECL|_K20UART_H_|macro|_K20UART_H_
-DECL|_k20_uart_baud_rate_set|function|static ALWAYS_INLINE void _k20_uart_baud_rate_set(volatile struct K20_UART *uart_p, uint32_t clk_freq, uint32_t baud_rate)
-DECL|_k20_uart_fifo_enable|function|static inline void _k20_uart_fifo_enable(volatile struct K20_UART *uart_p)
+DECL|_uart_k20_baud_rate_set|function|static ALWAYS_INLINE void _uart_k20_baud_rate_set(volatile struct K20_UART *u, uint32_t clk_freq, uint32_t baud_rate)
+DECL|_uart_k20_fifo_enable|function|static inline void _uart_k20_fifo_enable(volatile struct K20_UART *uart_p)
 DECL|bdh|member|union BDH bdh; /* 0x000 Baud Rate High */
 DECL|bdl|member|uint8_t bdl; /* 0x001 Baud Rate Low (04)*/
 DECL|brfa|member|uint8_t brfa : 5 __packed; /* BaudRateFineAdjust*/
