@@ -5,6 +5,7 @@ DECL|baud_rate|member|int baud_rate; /* Baud rate */
 DECL|config_func|member|int (*config_func)(struct device *dev);
 DECL|fifo_fill|member|int (*fifo_fill)(struct device *dev, const uint8_t *tx_data, int len);
 DECL|fifo_read|member|int (*fifo_read)(struct device *dev, uint8_t *rx_data, const int size);
+DECL|init_info|member|struct uart_init_info init_info;
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
 DECL|irq_err_enable|member|void (*irq_err_enable)(struct device *dev);
 DECL|irq_get|member|unsigned int (*irq_get)(struct device *dev);
