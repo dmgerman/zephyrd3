@@ -1,6 +1,8 @@
 DECL|base_addr|member|uint32_t base_addr;
 DECL|bits|member|uint32_t bits;
 DECL|callback|member|gpio_callback_t callback;
+DECL|clock_data|member|void *clock_data;
+DECL|clock|member|struct device *clock;
 DECL|config_func|member|gpio_config_irq_t config_func;
 DECL|enabled_callbacks|member|uint32_t enabled_callbacks;
 DECL|gpio_config_irq_t|typedef|typedef void (*gpio_config_irq_t)(struct device *port);

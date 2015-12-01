@@ -1,4 +1,10 @@
 DECL|BIT|macro|BIT
+DECL|_gpio_dw_clock_config|function|static inline void _gpio_dw_clock_config(struct device *port)
+DECL|_gpio_dw_clock_config|macro|_gpio_dw_clock_config
+DECL|_gpio_dw_clock_off|function|static inline void _gpio_dw_clock_off(struct device *port)
+DECL|_gpio_dw_clock_off|macro|_gpio_dw_clock_off
+DECL|_gpio_dw_clock_on|function|static inline void _gpio_dw_clock_on(struct device *port)
+DECL|_gpio_dw_clock_on|macro|_gpio_dw_clock_on
 DECL|api_funcs|variable|api_funcs
 DECL|dw_interrupt_config|function|static inline void dw_interrupt_config(struct device *port, int access_op, uint32_t pin, int flags)
 DECL|dw_pin_config|function|static inline void dw_pin_config(struct device *port, uint32_t pin, int flags)
