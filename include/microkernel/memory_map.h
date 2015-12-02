@@ -1,7 +1,4 @@
 DECL|DEFINE_MEM_MAP|macro|DEFINE_MEM_MAP
 DECL|_MEMORY_MAP_H|macro|_MEMORY_MAP_H
 DECL|__K_MEM_MAP_INITIALIZER|macro|__K_MEM_MAP_INITIALIZER
-DECL|task_mem_map_alloc_wait_timeout|macro|task_mem_map_alloc_wait_timeout
-DECL|task_mem_map_alloc_wait|macro|task_mem_map_alloc_wait
-DECL|task_mem_map_alloc|macro|task_mem_map_alloc
 DECL|task_mem_map_free|macro|task_mem_map_free
