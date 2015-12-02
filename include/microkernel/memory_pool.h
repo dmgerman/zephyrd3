@@ -1,4 +1,1 @@
 DECL|_MEMORY_POOL_H|macro|_MEMORY_POOL_H
-DECL|task_mem_pool_alloc_wait_timeout|macro|task_mem_pool_alloc_wait_timeout
-DECL|task_mem_pool_alloc_wait|macro|task_mem_pool_alloc_wait
-DECL|task_mem_pool_alloc|macro|task_mem_pool_alloc
