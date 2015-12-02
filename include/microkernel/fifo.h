@@ -5,7 +5,4 @@ DECL|task_fifo_get_wait_timeout|macro|task_fifo_get_wait_timeout
 DECL|task_fifo_get_wait|macro|task_fifo_get_wait
 DECL|task_fifo_get|macro|task_fifo_get
 DECL|task_fifo_purge|macro|task_fifo_purge
-DECL|task_fifo_put_wait_timeout|macro|task_fifo_put_wait_timeout
-DECL|task_fifo_put_wait|macro|task_fifo_put_wait
-DECL|task_fifo_put|macro|task_fifo_put
 DECL|task_fifo_size_get|macro|task_fifo_size_get
