@@ -30,7 +30,7 @@ DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
-DECL|bt_le_scan_update|function|int bt_le_scan_update(void)
+DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
