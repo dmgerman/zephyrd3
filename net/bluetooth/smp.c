@@ -62,6 +62,7 @@ DECL|cmac_subkey|function|static int cmac_subkey(const uint8_t *key, uint8_t *k1
 DECL|compute_and_check_and_send_slave_dhcheck|function|static uint8_t compute_and_check_and_send_slave_dhcheck(struct bt_smp *smp)
 DECL|compute_and_send_master_dhcheck|function|static uint8_t compute_and_send_master_dhcheck(struct bt_smp *smp)
 DECL|dhkey|member|uint8_t dhkey[32];
+DECL|display_passkey|function|static uint8_t display_passkey(struct bt_smp *smp)
 DECL|expect_len|member|uint8_t expect_len;
 DECL|e|member|uint8_t e[16];
 DECL|flags|member|atomic_t flags;
