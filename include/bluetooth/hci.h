@@ -48,6 +48,7 @@ DECL|BT_HCI_ERR_UNKNOWN_CONN_ID|macro|BT_HCI_ERR_UNKNOWN_CONN_ID
 DECL|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE|macro|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
+DECL|BT_HCI_EVT_CONN_REQUEST|macro|BT_HCI_EVT_CONN_REQUEST
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
 DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE
@@ -176,12 +177,14 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_flags|macro|bt_acl_flags
 DECL|bt_acl_handle_pack|macro|bt_acl_handle_pack
@@ -214,6 +217,7 @@ DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
+DECL|bt_hci_evt_conn_request|struct|struct bt_hci_evt_conn_request {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
 DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_key_refresh_complete {
@@ -250,6 +254,7 @@ DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
+DECL|dev_class|member|uint8_t dev_class[3];
 DECL|dhkey|member|uint8_t dhkey[32];
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
 DECL|ediv|member|uint16_t ediv;
@@ -315,6 +320,7 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|le|member|uint8_t le;
+DECL|link_type|member|uint8_t link_type;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
 DECL|ltk|member|uint8_t ltk[16];

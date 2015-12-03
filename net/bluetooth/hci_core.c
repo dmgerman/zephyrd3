@@ -40,6 +40,7 @@ DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le
 DECL|cmd_data|struct|struct cmd_data {
 DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
+DECL|conn_req_event|function|static void conn_req_event(struct net_buf *buf)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
