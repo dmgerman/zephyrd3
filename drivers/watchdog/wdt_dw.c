@@ -1,3 +1,9 @@
+DECL|_wdt_dw_clock_config|function|static inline void _wdt_dw_clock_config(struct device *dev)
+DECL|_wdt_dw_clock_config|macro|_wdt_dw_clock_config
+DECL|_wdt_dw_clock_off|function|static inline void _wdt_dw_clock_off(struct device *dev)
+DECL|_wdt_dw_clock_off|macro|_wdt_dw_clock_off
+DECL|_wdt_dw_clock_on|function|static inline void _wdt_dw_clock_on(struct device *dev)
+DECL|_wdt_dw_clock_on|macro|_wdt_dw_clock_on
 DECL|_wdt_dw_int_unmask|function|static inline void _wdt_dw_int_unmask(void)
 DECL|_wdt_dw_int_unmask|macro|_wdt_dw_int_unmask
 DECL|wdt_dev|variable|wdt_dev
