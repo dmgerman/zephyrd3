@@ -18,6 +18,8 @@ DECL|RTC_STAT|macro|RTC_STAT
 DECL|RTC_WRAP_ENABLE|macro|RTC_WRAP_ENABLE
 DECL|_RTC_DW_H_|macro|_RTC_DW_H_
 DECL|base_address|member|uint32_t base_address;
+DECL|clock_data|member|void *clock_data;
+DECL|clock|member|struct device *clock;
 DECL|rtc_dw_cb_fn|member|void (*rtc_dw_cb_fn)(struct device *dev);
 DECL|rtc_dw_dev_config|struct|struct rtc_dw_dev_config {
 DECL|rtc_dw_runtime|struct|struct rtc_dw_runtime {
