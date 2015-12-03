@@ -21,3 +21,4 @@ DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsign
 DECL|passkey_entry|member|void (*passkey_entry)(struct bt_conn *conn);
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
+DECL|type|member|uint8_t type;
