@@ -27,7 +27,7 @@ DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_bu
 DECL|bt_hci_start_scanning|function|static int bt_hci_start_scanning(uint8_t scan_type)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|static int bt_init(void)
-DECL|bt_le_adv_start|function|int bt_le_adv_start(uint8_t type, const struct bt_eir *ad, const struct bt_eir *sd)
+DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_eir *ad, const struct bt_eir *sd)
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
