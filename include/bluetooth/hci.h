@@ -40,6 +40,7 @@ DECL|BT_GAP_SCAN_SLOW_INTERVAL_2|macro|BT_GAP_SCAN_SLOW_INTERVAL_2
 DECL|BT_GAP_SCAN_SLOW_WINDOW_1|macro|BT_GAP_SCAN_SLOW_WINDOW_1
 DECL|BT_GAP_SCAN_SLOW_WINDOW_2|macro|BT_GAP_SCAN_SLOW_WINDOW_2
 DECL|BT_HCI_ERR_AUTHENTICATION_FAIL|macro|BT_HCI_ERR_AUTHENTICATION_FAIL
+DECL|BT_HCI_ERR_INSUFFICIENT_RESOURCES|macro|BT_HCI_ERR_INSUFFICIENT_RESOURCES
 DECL|BT_HCI_ERR_INVALID_LL_PARAMS|macro|BT_HCI_ERR_INVALID_LL_PARAMS
 DECL|BT_HCI_ERR_PAIRING_NOT_SUPPORTED|macro|BT_HCI_ERR_PAIRING_NOT_SUPPORTED
 DECL|BT_HCI_ERR_REMOTE_USER_TERM_CONN|macro|BT_HCI_ERR_REMOTE_USER_TERM_CONN
@@ -71,6 +72,7 @@ DECL|BT_HCI_LE_SCAN_FILTER_DUP_DISABLE|macro|BT_HCI_LE_SCAN_FILTER_DUP_DISABLE
 DECL|BT_HCI_LE_SCAN_FILTER_DUP_ENABLE|macro|BT_HCI_LE_SCAN_FILTER_DUP_ENABLE
 DECL|BT_HCI_LE_SCAN_PASSIVE|macro|BT_HCI_LE_SCAN_PASSIVE
 DECL|BT_HCI_LE_SLAVE_FEATURES|macro|BT_HCI_LE_SLAVE_FEATURES
+DECL|BT_HCI_OP_ACCEPT_CONN_REQ|macro|BT_HCI_OP_ACCEPT_CONN_REQ
 DECL|BT_HCI_OP_DISCONNECT|macro|BT_HCI_OP_DISCONNECT
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
@@ -103,6 +105,7 @@ DECL|BT_HCI_OP_READ_BUFFER_SIZE|macro|BT_HCI_OP_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_READ_LOCAL_FEATURES|macro|BT_HCI_OP_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
 DECL|BT_HCI_OP_READ_SUPPORTED_COMMANDS|macro|BT_HCI_OP_READ_SUPPORTED_COMMANDS
+DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
@@ -178,12 +181,16 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_flags|macro|bt_acl_flags
@@ -193,6 +200,7 @@ DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
 DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
+DECL|bt_hci_cp_accept_conn_req|struct|struct bt_hci_cp_accept_conn_req {
 DECL|bt_hci_cp_disconnect|struct|struct bt_hci_cp_disconnect {
 DECL|bt_hci_cp_host_buffer_size|struct|struct bt_hci_cp_host_buffer_size {
 DECL|bt_hci_cp_host_num_completed_packets|struct|struct bt_hci_cp_host_num_completed_packets {
@@ -212,6 +220,7 @@ DECL|bt_hci_cp_le_set_scan_enable|struct|struct bt_hci_cp_le_set_scan_enable {
 DECL|bt_hci_cp_le_set_scan_params|struct|struct bt_hci_cp_le_set_scan_params {
 DECL|bt_hci_cp_le_set_scan_rsp_data|struct|struct bt_hci_cp_le_set_scan_rsp_data {
 DECL|bt_hci_cp_le_start_encryption|struct|struct bt_hci_cp_le_start_encryption {
+DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
@@ -353,6 +362,8 @@ DECL|rand|member|uint8_t rand[8];
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
+DECL|reason|member|uint8_t reason;
+DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
 DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_type|member|uint8_t scan_type;

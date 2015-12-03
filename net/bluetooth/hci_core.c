@@ -4,6 +4,7 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|EVT_BUF_SIZE|macro|EVT_BUF_SIZE
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
 DECL|avail_acl_in|variable|avail_acl_in
@@ -81,6 +82,7 @@ DECL|read_le_features_complete|function|static void read_le_features_complete(st
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
 DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
+DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
