@@ -81,7 +81,7 @@ DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
-DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint8_t filter_dup)
+DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|sync|member|void *sync;
 DECL|update_conn_params|function|static int update_conn_params(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
