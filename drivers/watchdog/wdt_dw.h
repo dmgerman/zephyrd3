@@ -17,4 +17,6 @@ DECL|WDT_EIO|macro|WDT_EIO
 DECL|WDT_STAT|macro|WDT_STAT
 DECL|WDT_TORR|macro|WDT_TORR
 DECL|base_address|member|uint32_t base_address;
+DECL|cb_fn|member|void (*cb_fn)(struct device *dev);
 DECL|wdt_dw_dev_config|struct|struct wdt_dw_dev_config {
+DECL|wdt_dw_runtime|struct|struct wdt_dw_runtime {
