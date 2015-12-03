@@ -51,6 +51,7 @@ DECL|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE|macro|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE
 DECL|BT_HCI_ESCO|macro|BT_HCI_ESCO
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
+DECL|BT_HCI_EVT_CONN_COMPLETE|macro|BT_HCI_EVT_CONN_COMPLETE
 DECL|BT_HCI_EVT_CONN_REQUEST|macro|BT_HCI_EVT_CONN_REQUEST
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
@@ -186,12 +187,14 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -229,6 +232,7 @@ DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
+DECL|bt_hci_evt_conn_complete|struct|struct bt_hci_evt_conn_complete {
 DECL|bt_hci_evt_conn_request|struct|struct bt_hci_evt_conn_request {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
@@ -274,6 +278,7 @@ DECL|ediv|member|uint16_t ediv;
 DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
+DECL|encr_mode|member|uint8_t encr_mode;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|events|member|uint8_t events[8];
 DECL|events|member|uint8_t events[8];
@@ -286,6 +291,7 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -333,6 +339,7 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|le|member|uint8_t le;
 DECL|link_type|member|uint8_t link_type;
+DECL|link_type|member|uint8_t link_type;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
 DECL|ltk|member|uint8_t ltk[16];
@@ -376,6 +383,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
