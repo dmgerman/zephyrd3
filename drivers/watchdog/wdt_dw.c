@@ -1,3 +1,5 @@
+DECL|_wdt_dw_int_unmask|function|static inline void _wdt_dw_int_unmask(void)
+DECL|_wdt_dw_int_unmask|macro|_wdt_dw_int_unmask
 DECL|wdt_dev|variable|wdt_dev
 DECL|wdt_dw_disable|function|static void wdt_dw_disable(struct device *dev)
 DECL|wdt_dw_enable|function|static void wdt_dw_enable(struct device *dev)
