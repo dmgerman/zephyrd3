@@ -1,7 +1,10 @@
 DECL|__INC_ctype_h__|macro|__INC_ctype_h__
 DECL|isalpha|function|static inline int isalpha(int c)
 DECL|isdigit|function|static inline int isdigit(int a)
+DECL|isgraph|function|static inline int isgraph(int c)
 DECL|isprint|function|static inline int isprint(int c)
 DECL|isspace|function|static inline int isspace(int c)
 DECL|isupper|function|static inline int isupper(int a)
+DECL|isxdigit|function|static inline int isxdigit(int a)
 DECL|tolower|function|static inline int tolower(int chr)
+DECL|toupper|function|static inline int toupper(int chr)
