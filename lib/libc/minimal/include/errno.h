@@ -78,3 +78,4 @@ DECL|ETXTBSY|macro|ETXTBSY
 DECL|EWOULDBLOCK|macro|EWOULDBLOCK
 DECL|EXDEV|macro|EXDEV
 DECL|__INCerrnoh|macro|__INCerrnoh
+DECL|errno|macro|errno
