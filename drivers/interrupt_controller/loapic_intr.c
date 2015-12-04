@@ -56,4 +56,3 @@ DECL|_loapic_int_vec_set|function|void _loapic_int_vec_set(unsigned int irq, /* 
 DECL|_loapic_irq_disable|function|void _loapic_irq_disable(unsigned int irq)
 DECL|_loapic_irq_enable|function|void _loapic_irq_enable(unsigned int irq)
 DECL|_loapic_isr_vector_get|function|int _loapic_isr_vector_get(void)
-DECL|loapic_int_vec_trigger|function|void loapic_int_vec_trigger(unsigned int vector)
