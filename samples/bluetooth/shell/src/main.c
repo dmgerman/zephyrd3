@@ -24,6 +24,7 @@ DECL|cmd_auth_cancel|function|static void cmd_auth_cancel(int argc, char *argv[]
 DECL|cmd_auth_passkey_confirm|function|static void cmd_auth_passkey_confirm(int argc, char *argv[])
 DECL|cmd_auth_passkey|function|static void cmd_auth_passkey(int argc, char *argv[])
 DECL|cmd_auth|function|static void cmd_auth(int argc, char *argv[])
+DECL|cmd_auto_conn|function|static void cmd_auto_conn(int argc, char *argv[])
 DECL|cmd_bredr_connectable|function|static void cmd_bredr_connectable(int argc, char *argv[])
 DECL|cmd_bredr_discoverable|function|static void cmd_bredr_discoverable(int argc, char *argv[])
 DECL|cmd_connect_le|function|static void cmd_connect_le(int argc, char *argv[])
