@@ -23,7 +23,6 @@ DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct b
 DECL|bt_conn_security_changed|function|void bt_conn_security_changed(struct bt_conn *conn)
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_send|function|void bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
-DECL|bt_conn_set_auto_conn|function|void bt_conn_set_auto_conn(struct bt_conn *conn, bool auto_conn)
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
