@@ -322,6 +322,7 @@ DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
+DECL|errno_var|member|int errno_var;
 DECL|esfPtr|member|void *esfPtr; /* pointer to exception stack frame saved by */
 DECL|esp|member|unsigned long esp;
 DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
