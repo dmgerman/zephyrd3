@@ -1,2 +1,2 @@
 DECL|__KERNEL_EVENT_LOGGER_ARCH_H__|macro|__KERNEL_EVENT_LOGGER_ARCH_H__
-DECL|_sys_current_irq_key_get|function|int _sys_current_irq_key_get(void)
+DECL|_sys_current_irq_key_get|function|static inline int _sys_current_irq_key_get(void)
