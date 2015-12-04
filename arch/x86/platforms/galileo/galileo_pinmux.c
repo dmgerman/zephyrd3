@@ -21,6 +21,8 @@ DECL|func|member|uint8_t func;
 DECL|galileo_data|struct|struct galileo_data {
 DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint8_t *func)
 DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint8_t *func)
+DECL|galileo_dev_input_enable|function|static uint32_t galileo_dev_input_enable(struct device *dev, uint32_t pin, uint8_t func)
+DECL|galileo_dev_pullup|function|static uint32_t galileo_dev_pullup(struct device *dev, uint32_t pin, uint8_t func)
 DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint8_t func)
 DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint8_t func)
 DECL|galileo_pinmux_driver|variable|galileo_pinmux_driver
