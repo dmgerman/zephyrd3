@@ -19,7 +19,7 @@ DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for
 DECL|SMP_FLAG_DHKEY_SEND|enumerator|SMP_FLAG_DHKEY_SEND, /* if should generate and send DHKey Check */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
 DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
-DECL|SMP_FLAG_PKEY_PENDING|enumerator|SMP_FLAG_PKEY_PENDING, /* if waiting for P256 Public Key */
+DECL|SMP_FLAG_PKEY_SEND|enumerator|SMP_FLAG_PKEY_SEND, /* if should send Public Key when available */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER /* if waiting for user input */
@@ -46,6 +46,7 @@ DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, uint8_t *tk
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_io_capa|variable|bt_smp_io_capa
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
+DECL|bt_smp_pkey_ready|function|void bt_smp_pkey_ready(void)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
@@ -96,6 +97,7 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
+DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
 DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt_smp *smp)
 DECL|sc_smp_pairing_random|function|static uint8_t sc_smp_pairing_random(struct bt_smp *smp, struct net_buf *buf)
@@ -130,6 +132,7 @@ DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_smp *smp,
 DECL|smp_pairing_req|function|static uint8_t smp_pairing_req(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_public_key_slave|function|static uint8_t smp_public_key_slave(struct bt_smp *smp)
 DECL|smp_public_key|function|static uint8_t smp_public_key(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
