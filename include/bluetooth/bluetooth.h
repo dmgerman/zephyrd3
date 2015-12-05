@@ -1,5 +1,6 @@
 DECL|BT_ADDR_LE_STR_LEN|macro|BT_ADDR_LE_STR_LEN
 DECL|BT_ADDR_STR_LEN|macro|BT_ADDR_STR_LEN
+DECL|BT_LE_ADV_PARAM|macro|BT_LE_ADV_PARAM
 DECL|BT_LE_ADV|macro|BT_LE_ADV
 DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
 DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
@@ -16,6 +17,8 @@ DECL|bt_ready_cb_t|typedef|typedef void (*bt_ready_cb_t)(int err);
 DECL|cancel|member|void (*cancel)(struct bt_conn *conn);
 DECL|data|member|uint8_t data[29];
 DECL|filter_dup|member|uint8_t filter_dup;
+DECL|interval_max|member|uint16_t interval_max;
+DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval;
 DECL|len|member|uint8_t len;
 DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
