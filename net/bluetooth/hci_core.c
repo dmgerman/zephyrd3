@@ -17,6 +17,7 @@ DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(void)
+DECL|bt_conn_set_param_le|function|void bt_conn_set_param_le(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
