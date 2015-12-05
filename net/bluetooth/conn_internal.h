@@ -11,7 +11,7 @@ DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
 DECL|channels|member|void *channels;
-DECL|conn_interval|member|uint8_t conn_interval;
+DECL|conn_interval|member|uint16_t conn_interval;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
