@@ -81,7 +81,6 @@ DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
-DECL|le_rand|function|static int le_rand(void *buf, size_t len)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|local_dist|member|uint8_t local_dist;
