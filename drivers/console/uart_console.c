@@ -5,7 +5,6 @@ DECL|console_input_init|function|static void console_input_init(void)
 DECL|console_input_init|macro|console_input_init
 DECL|console_out|function|static int console_out(int c)
 DECL|lines_queue|variable|lines_queue
-DECL|pos|variable|pos
 DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, unsigned int size)
 DECL|uart_console_dev|variable|uart_console_dev
 DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
