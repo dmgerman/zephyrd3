@@ -17,7 +17,7 @@ DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *
 DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, uint64_t rand,uint16_t ediv, const uint8_t *ltk, size_t len)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
 DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
-DECL|bt_conn_lookup_state|function|struct bt_conn *bt_conn_lookup_state(const bt_addr_le_t *peer, const bt_conn_state_t state)
+DECL|bt_conn_lookup_state_le|function|struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,const bt_conn_state_t state)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct net_buf *buf, uint8_t flags)
 DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
