@@ -1,5 +1,2 @@
 DECL|INVALID_VECTOR|macro|INVALID_VECTOR
 DECL|TASK_IRQ_H|macro|TASK_IRQ_H
-DECL|task_irq_test_wait_timeout|macro|task_irq_test_wait_timeout
-DECL|task_irq_test_wait|macro|task_irq_test_wait
-DECL|task_irq_test|macro|task_irq_test

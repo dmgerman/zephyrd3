@@ -3,7 +3,6 @@ DECL|MAX_TASK_IRQS|macro|MAX_TASK_IRQS
 DECL|RELEASE_VECTOR|macro|RELEASE_VECTOR
 DECL|RELEASE_VECTOR|macro|RELEASE_VECTOR
 DECL|_k_task_irq_alloc|function|static int _k_task_irq_alloc(void *arg)
-DECL|_task_irq_test|function|int _task_irq_test(kirq_t irq_obj, int32_t time)
 DECL|event|member|kevent_t event; /* event number assigned to task IRQ object */
 DECL|irq_obj_reg_arg|struct|struct irq_obj_reg_arg {
 DECL|irq_obj|member|kirq_t irq_obj; /* IRQ object identifier */
@@ -17,4 +16,5 @@ DECL|task_irq_free|function|void task_irq_free(kirq_t irq_obj)
 DECL|task_irq_info|struct|struct task_irq_info {
 DECL|task_irq_int_handler|function|static void task_irq_int_handler(void *parameter)
 DECL|task_irq_object|variable|task_irq_object
+DECL|task_irq_wait|function|int task_irq_wait(kirq_t irq_obj, int32_t timeout)
 DECL|vector|member|uint32_t vector; /* interrupt vector assigned to task IRQ object */
