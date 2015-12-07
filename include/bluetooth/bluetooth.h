@@ -1,11 +1,14 @@
 DECL|BT_ADDR_LE_STR_LEN|macro|BT_ADDR_LE_STR_LEN
 DECL|BT_ADDR_STR_LEN|macro|BT_ADDR_STR_LEN
+DECL|BT_LE_ADV_ADDR_NRPA|enumerator|BT_LE_ADV_ADDR_NRPA,
+DECL|BT_LE_ADV_ADDR_PUBLIC|enumerator|BT_LE_ADV_ADDR_PUBLIC,
 DECL|BT_LE_ADV_PARAM|macro|BT_LE_ADV_PARAM
 DECL|BT_LE_ADV|macro|BT_LE_ADV
 DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
 DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
 DECL|__packed|variable|__packed
+DECL|addr_type|member|uint8_t addr_type;
 DECL|bt_addr_le_to_str|function|static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str, size_t len)
 DECL|bt_addr_to_str|function|static inline int bt_addr_to_str(const bt_addr_t *addr, char *str, size_t len)
 DECL|bt_auth_cb|struct|struct bt_auth_cb {
