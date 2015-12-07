@@ -29,6 +29,7 @@ DECL|i2c_qse_ss_isr|function|void i2c_qse_ss_isr(void *arg)
 DECL|i2c_qse_ss_poll_transfer|function|static int i2c_qse_ss_poll_transfer(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address, uint32_t flags)
 DECL|i2c_qse_ss_resume|function|static int i2c_qse_ss_resume(struct device *dev)
 DECL|i2c_qse_ss_runtime_configure|function|static int i2c_qse_ss_runtime_configure(struct device *dev, uint32_t config)
+DECL|i2c_qse_ss_set_callback|function|static int i2c_qse_ss_set_callback(struct device *dev, i2c_callback cb)
 DECL|i2c_qse_ss_suspend|function|static int i2c_qse_ss_suspend(struct device *dev)
 DECL|i2c_ss_0_runtime|variable|i2c_ss_0_runtime
 DECL|ss_funcs|variable|ss_funcs
