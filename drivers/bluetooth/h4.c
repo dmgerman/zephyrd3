@@ -5,13 +5,12 @@ DECL|H4_CMD|macro|H4_CMD
 DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
-DECL|bt_uart_acl_recv|function|static struct net_buf *bt_uart_acl_recv(int *remaining)
-DECL|bt_uart_dev|variable|bt_uart_dev
-DECL|bt_uart_discard|function|static size_t bt_uart_discard(struct device *uart, size_t len)
-DECL|bt_uart_evt_recv|function|static struct net_buf *bt_uart_evt_recv(int *remaining)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
-DECL|bt_uart_open|function|static int bt_uart_open(void)
-DECL|bt_uart_read|function|static int bt_uart_read(struct device *uart, uint8_t *buf,size_t len, size_t min)
-DECL|bt_uart_send|function|static int bt_uart_send(enum bt_buf_type buf_type, struct net_buf *buf)
-DECL|bt_uart_setup|function|static void bt_uart_setup(struct device *uart)
 DECL|drv|variable|drv
+DECL|h4_acl_recv|function|static struct net_buf *h4_acl_recv(int *remaining)
+DECL|h4_dev|variable|h4_dev
+DECL|h4_discard|function|static size_t h4_discard(struct device *uart, size_t len)
+DECL|h4_evt_recv|function|static struct net_buf *h4_evt_recv(int *remaining)
+DECL|h4_open|function|static int h4_open(void)
+DECL|h4_read|function|static int h4_read(struct device *uart, uint8_t *buf,size_t len, size_t min)
+DECL|h4_send|function|static int h4_send(enum bt_buf_type buf_type, struct net_buf *buf)
