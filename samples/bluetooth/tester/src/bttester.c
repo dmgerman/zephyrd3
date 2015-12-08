@@ -11,6 +11,5 @@ DECL|stack|variable|stack
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|supported_services|function|static void supported_services(uint8_t *data, uint16_t len)
 DECL|tester_init|function|void tester_init(void)
-DECL|tester_rsp_full|function|void tester_rsp_full(uint8_t service, uint8_t opcode, uint8_t index, uint8_t *data, size_t len)
 DECL|tester_rsp|function|void tester_rsp(uint8_t service, uint8_t opcode, uint8_t index, uint8_t status)
-DECL|tester_send|function|static void tester_send(uint8_t service, uint8_t opcode, uint8_t index,uint8_t *data, size_t len)
+DECL|tester_send|function|void tester_send(uint8_t service, uint8_t opcode, uint8_t index, uint8_t *data, size_t len)
