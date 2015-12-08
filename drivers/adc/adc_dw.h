@@ -30,6 +30,7 @@ DECL|ADC_SEQ|macro|ADC_SEQ
 DECL|ADC_SET|macro|ADC_SET
 DECL|ADC_STATE_CLOSED|macro|ADC_STATE_CLOSED
 DECL|ADC_STATE_DISABLED|macro|ADC_STATE_DISABLED
+DECL|ADC_STATE_ERROR|macro|ADC_STATE_ERROR
 DECL|ADC_STATE_IDLE|macro|ADC_STATE_IDLE
 DECL|ADC_STATE_SAMPLING|macro|ADC_STATE_SAMPLING
 DECL|ADC_VREF|macro|ADC_VREF
@@ -64,7 +65,6 @@ DECL|adc_config|struct|struct adc_config {
 DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(void);
 DECL|adc_info|struct|struct adc_info {
 DECL|capture_mode|member|uint8_t capture_mode;
-DECL|cb|member|adc_callback_t cb;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
 DECL|entries|member|struct adc_seq_entry *entries;
@@ -80,3 +80,4 @@ DECL|seq_size|member|uint8_t seq_size;
 DECL|serial_dly|member|uint8_t serial_dly;
 DECL|ss_adc_data_to_mv|macro|ss_adc_data_to_mv
 DECL|state|member|uint8_t state;
+DECL|sync|member|device_sync_call_t sync;

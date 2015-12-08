@@ -28,6 +28,5 @@ DECL|adc_goto_deep_power_down|function|static void adc_goto_deep_power_down(void
 DECL|adc_goto_normal_mode_wo_calibration|function|static void adc_goto_normal_mode_wo_calibration(void)
 DECL|adc_info_dev_0|variable|adc_info_dev_0
 DECL|api_funcs|variable|api_funcs
-DECL|dw_set_user_callback|function|static void dw_set_user_callback(struct device *dev, adc_callback_t cb)
 DECL|int_unmask|macro|int_unmask
 DECL|int_unmask|macro|int_unmask

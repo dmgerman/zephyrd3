@@ -23,7 +23,7 @@ DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
 DECL|spi_config_1_irq|function|void spi_config_1_irq(void)
 DECL|spi_dw_config_0|variable|spi_dw_config_0
 DECL|spi_dw_config_1|variable|spi_dw_config_1
-DECL|spi_dw_configure|function|static int spi_dw_configure(struct device *dev,struct spi_config *config, void *user_data)
+DECL|spi_dw_configure|function|static int spi_dw_configure(struct device *dev,struct spi_config *config)
 DECL|spi_dw_data_port_0|variable|spi_dw_data_port_0
 DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)

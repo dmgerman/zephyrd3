@@ -38,11 +38,11 @@ DECL|INTEL_SPI_SSSR_TFL|macro|INTEL_SPI_SSSR_TFL
 DECL|INTEL_SPI_SSSR_TFS|macro|INTEL_SPI_SSSR_TFS
 DECL|INTEL_SPI_SSSR_TNF|macro|INTEL_SPI_SSSR_TNF
 DECL|__INTEL_SPI_PRIV_H__|macro|__INTEL_SPI_PRIV_H__
-DECL|callback|member|spi_callback callback;
 DECL|config_func|member|spi_intel_config_t config_func;
 DECL|cs_gpio_name|member|char *cs_gpio_name;
 DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
+DECL|error|member|uint8_t error;
 DECL|irq|member|uint32_t irq;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|r_buf_len|member|uint32_t r_buf_len;
@@ -54,7 +54,7 @@ DECL|spi_intel_config|struct|struct spi_intel_config {
 DECL|spi_intel_data|struct|struct spi_intel_data {
 DECL|sscr0|member|uint32_t sscr0;
 DECL|sscr1|member|uint32_t sscr1;
+DECL|sync|member|device_sync_call_t sync;
 DECL|t_len|member|uint32_t t_len;
 DECL|tx_buf_end|member|uint8_t *tx_buf_end;
 DECL|tx_buf|member|uint8_t *tx_buf;
-DECL|user_data|member|void *user_data;

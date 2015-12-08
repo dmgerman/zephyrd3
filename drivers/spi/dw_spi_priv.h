@@ -54,10 +54,10 @@ DECL|DW_SPI_SSIENR_SSIEN_BIT|macro|DW_SPI_SSIENR_SSIEN_BIT
 DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
 DECL|DW_SSI_COMP_VERSION|macro|DW_SSI_COMP_VERSION
 DECL|__DW_SPI_PRIV_H__|macro|__DW_SPI_PRIV_H__
-DECL|callback|member|spi_callback callback;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
+DECL|error|member|uint8_t error;
 DECL|int_mask|member|uint32_t int_mask;
 DECL|irq|member|uint32_t irq;
 DECL|regs|member|uint32_t regs;
@@ -67,7 +67,7 @@ DECL|slave|member|uint32_t slave;
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
+DECL|sync|member|device_sync_call_t sync;
 DECL|t_len|member|uint32_t t_len;
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
 DECL|tx_buf|member|uint8_t *tx_buf;
-DECL|user_data|member|void *user_data;
