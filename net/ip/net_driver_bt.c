@@ -10,7 +10,6 @@ DECL|ipsp_connected|function|static void ipsp_connected(struct bt_l2cap_chan *ch
 DECL|ipsp_disconnected|function|static void ipsp_disconnected(struct bt_l2cap_chan *chan)
 DECL|ipsp_ops|variable|ipsp_ops
 DECL|ipsp_recv|function|static void ipsp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
-DECL|ipss_uuid|variable|ipss_uuid
 DECL|memswap|function|static inline void memswap(void *dst, const void *src, int len)
 DECL|net_driver_bt_init|function|int net_driver_bt_init(void)
 DECL|net_driver_bt_open|function|static int net_driver_bt_open(void)

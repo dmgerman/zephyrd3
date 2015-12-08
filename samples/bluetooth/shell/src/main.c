@@ -6,7 +6,6 @@ DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|ad_non_discov|variable|ad_non_discov
 DECL|appearance_value|variable|appearance_value
-DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_all|variable|auth_cb_all
@@ -54,13 +53,11 @@ DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
-DECL|device_name_uuid|variable|device_name_uuid
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
 DECL|discover_destroy|function|static void discover_destroy(void *user_data)
 DECL|discover_func|function|static uint8_t discover_func(const struct bt_gatt_attr *attr, void *user_data)
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
-DECL|gap_uuid|variable|gap_uuid
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)

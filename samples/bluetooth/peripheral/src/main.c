@@ -2,17 +2,13 @@ DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HEART_RATE_APPEARANCE|macro|HEART_RATE_APPEARANCE
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad|variable|ad
-DECL|appeareance_uuid|variable|appeareance_uuid
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
-DECL|bas_uuid|variable|bas_uuid
 DECL|battery|variable|battery
 DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
 DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
-DECL|blvl_uuid|variable|blvl_uuid
-DECL|bslc_uuid|variable|bslc_uuid
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|buf|member|uint8_t buf[MAX_DATA];
 DECL|conn_callbacks|variable|conn_callbacks
@@ -20,24 +16,14 @@ DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_update|variable|ct_update
-DECL|ct_uuid|variable|ct_uuid
-DECL|cts_uuid|variable|cts_uuid
 DECL|ct|variable|ct
 DECL|data|member|uint8_t data[MAX_DATA];
-DECL|device_name_uuid|variable|device_name_uuid
-DECL|dis_uuid|variable|dis_uuid
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
 DECL|flush_long_vnd|function|static int flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
-DECL|gap_uuid|variable|gap_uuid
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
-DECL|hrcpc_uuid|variable|hrcpc_uuid
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
-DECL|hrmc_uuid|variable|hrmc_uuid
-DECL|hrs_uuid|variable|hrs_uuid
 DECL|mainloop|function|void mainloop(void)
-DECL|manuf_uuid|variable|manuf_uuid
-DECL|model_uuid|variable|model_uuid
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blsc|function|static int read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blvl|function|static int read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)

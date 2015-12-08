@@ -100,7 +100,6 @@ DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
-DECL|primary_uuid|variable|primary_uuid
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
 DECL|read_cb|function|static uint8_t read_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|read_data|struct|struct read_data {
@@ -114,7 +113,6 @@ DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
-DECL|secondary_uuid|variable|secondary_uuid
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|user_data|member|void *user_data;
