@@ -82,6 +82,15 @@ DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
+DECL|legacy_distribute_keys|function|static void legacy_distribute_keys(struct bt_smp *smp)
+DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)
+DECL|legacy_pairing_confirm|function|static uint8_t legacy_pairing_confirm(struct bt_smp *smp)
+DECL|legacy_pairing_random|function|static uint8_t legacy_pairing_random(struct bt_smp *smp)
+DECL|legacy_pairing_req|function|static uint8_t legacy_pairing_req(struct bt_smp *smp, uint8_t remote_io)
+DECL|legacy_pairing_rsp|function|static uint8_t legacy_pairing_rsp(struct bt_smp *smp, uint8_t remote_io)
+DECL|legacy_passkey_entry|function|static void legacy_passkey_entry(struct bt_smp *smp, unsigned int passkey)
+DECL|legacy_request_tk|function|static uint8_t legacy_request_tk(struct bt_smp *smp)
+DECL|legacy_send_pairing_confirm|function|static uint8_t legacy_send_pairing_confirm(struct bt_smp *smp)
 DECL|local_dist|member|uint8_t local_dist;
 DECL|mackey|member|uint8_t mackey[16];
 DECL|method|member|uint8_t method;
@@ -98,7 +107,6 @@ DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
 DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt_smp *smp)
-DECL|sc_smp_pairing_random|function|static uint8_t sc_smp_pairing_random(struct bt_smp *smp, struct net_buf *buf)
 DECL|sc_smp_send_dhkey_check|function|static uint8_t sc_smp_send_dhkey_check(struct bt_smp *smp, const uint8_t *e)
 DECL|sc_supported|variable|sc_supported
 DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
@@ -133,7 +141,6 @@ DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp,
 DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_public_key_slave|function|static uint8_t smp_public_key_slave(struct bt_smp *smp)
 DECL|smp_public_key|function|static uint8_t smp_public_key(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_request_tk|function|static uint8_t smp_request_tk(struct bt_smp *smp)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
 DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
