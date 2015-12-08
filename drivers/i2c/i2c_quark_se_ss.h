@@ -31,5 +31,6 @@ DECL|request_bytes|member|uint8_t request_bytes;
 DECL|rx_buffer|member|uint8_t *rx_buffer;
 DECL|rx_len|member|uint8_t rx_len;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
+DECL|sync|member|device_sync_call_t sync;
 DECL|tx_buffer|member|uint8_t *tx_buffer;
 DECL|tx_len|member|uint8_t tx_len;

@@ -1,6 +1,5 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
-DECL|POLLING_TIMEOUT|macro|POLLING_TIMEOUT
 DECL|_i2c_qse_ss_check_irq|function|static inline bool _i2c_qse_ss_check_irq(struct device *dev, uint32_t mask)
 DECL|_i2c_qse_ss_config_irq|function|void _i2c_qse_ss_config_irq(struct device *port)
 DECL|_i2c_qse_ss_data_ask|function|static inline void _i2c_qse_ss_data_ask(struct device *dev, uint8_t restart)
@@ -26,7 +25,6 @@ DECL|i2c_qse_ss_1_runtime|variable|i2c_qse_ss_1_runtime
 DECL|i2c_qse_ss_initialize|function|int i2c_qse_ss_initialize(struct device *dev)
 DECL|i2c_qse_ss_intr_transfer|function|static int i2c_qse_ss_intr_transfer(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address, uint32_t flags)
 DECL|i2c_qse_ss_isr|function|void i2c_qse_ss_isr(void *arg)
-DECL|i2c_qse_ss_poll_transfer|function|static int i2c_qse_ss_poll_transfer(struct device *dev, uint8_t *write_buf, uint32_t write_len, uint8_t *read_buf, uint32_t read_len, uint16_t slave_address, uint32_t flags)
 DECL|i2c_qse_ss_resume|function|static int i2c_qse_ss_resume(struct device *dev)
 DECL|i2c_qse_ss_runtime_configure|function|static int i2c_qse_ss_runtime_configure(struct device *dev, uint32_t config)
 DECL|i2c_qse_ss_set_callback|function|static int i2c_qse_ss_set_callback(struct device *dev, i2c_callback cb)
