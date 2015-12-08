@@ -67,8 +67,8 @@ DECL|expect_len|member|uint8_t expect_len;
 DECL|e|member|uint8_t e[16];
 DECL|flags|member|atomic_t flags;
 DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
+DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|gen_method_sc|variable|gen_method_sc
-DECL|gen_method|variable|gen_method
 DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
