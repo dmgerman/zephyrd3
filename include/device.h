@@ -17,7 +17,7 @@ DECL|device_sync_call_t|typedef|} device_sync_call_t;
 DECL|device|struct|struct device {
 DECL|driver_api|member|void *driver_api;
 DECL|driver_data|member|void *driver_data;
-DECL|f_sem|member|struct nano_sem *f_sem;
+DECL|f_sem|member|struct nano_sem f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
 DECL|synchronous_call_complete|function|static inline void synchronous_call_complete(device_sync_call_t *sync)
