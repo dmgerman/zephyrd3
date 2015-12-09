@@ -13,6 +13,8 @@ DECL|console_input_init|macro|console_input_init
 DECL|console_out|function|static int console_out(int c)
 DECL|cursor_backward|function|static inline void cursor_backward(unsigned int count)
 DECL|cursor_forward|function|static inline void cursor_forward(unsigned int count)
+DECL|cursor_restore|function|static inline void cursor_restore(void)
+DECL|cursor_save|function|static inline void cursor_save(void)
 DECL|del_char|function|static void del_char(char *pos, uint8_t end)
 DECL|insert_char|function|static void insert_char(char *pos, char c, uint8_t end)
 DECL|lines_queue|variable|lines_queue
