@@ -9,6 +9,7 @@ DECL|H5_HDR_LEN|macro|H5_HDR_LEN
 DECL|H5_HDR_PKT_TYPE|macro|H5_HDR_PKT_TYPE
 DECL|H5_HDR_RELIABLE|macro|H5_HDR_RELIABLE
 DECL|H5_HDR_SEQ|macro|H5_HDR_SEQ
+DECL|H5_RX_ACK_TIMEOUT|macro|H5_RX_ACK_TIMEOUT
 DECL|H5_RX_ESC|macro|H5_RX_ESC
 DECL|H5_SET_ACK|macro|H5_SET_ACK
 DECL|H5_SET_LEN|macro|H5_SET_LEN
@@ -32,6 +33,8 @@ DECL|SLIP_ESC_ESC|macro|SLIP_ESC_ESC
 DECL|SLIP_ESC|macro|SLIP_ESC
 DECL|UNINIT|enumerator|UNINIT,
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
+DECL|ack_fiber|function|static void ack_fiber(int arg1, int arg2)
+DECL|ack_to|member|void *ack_to;
 DECL|active_state|member|struct nano_sem active_state;
 DECL|avail_signal|variable|avail_signal
 DECL|bt_buf_get_sig|function|static struct net_buf *bt_buf_get_sig(void)
