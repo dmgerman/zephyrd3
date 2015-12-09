@@ -1,7 +1,12 @@
+DECL|DO_MMAP|macro|DO_MMAP
 DECL|HASHSZ|macro|HASHSZ
 DECL|INT_CONF|macro|INT_CONF
+DECL|INT_CONF|macro|INT_CONF
+DECL|INT_FIG_|macro|INT_FIG_
 DECL|INT_FIG_|macro|INT_FIG_
 DECL|INT_NFIG|macro|INT_NFIG
+DECL|INT_NFIG|macro|INT_NFIG
+DECL|INT_ONFI|macro|INT_ONFI
 DECL|INT_ONFI|macro|INT_ONFI
 DECL|clear_config|function|static void clear_config(void)
 DECL|cmdline|variable|cmdline
@@ -20,6 +25,7 @@ DECL|parse_config_file|function|static void parse_config_file(const char *map, s
 DECL|parse_dep_file|function|static void parse_dep_file(void *map, size_t len)
 DECL|print_cmdline|function|static void print_cmdline(void)
 DECL|print_deps|function|static void print_deps(void)
+DECL|read_file_in|function|static void *read_file_in(int fd, size_t size)
 DECL|strhash|function|static unsigned int strhash(const char *str, unsigned int sz)
 DECL|strrcmp|function|static int strrcmp(char *s, char *sub)
 DECL|target|variable|target
