@@ -1,3 +1,13 @@
+DECL|GPIO_DW_0_IRQ_FLAGS|macro|GPIO_DW_0_IRQ_FLAGS
+DECL|GPIO_DW_0_IRQ_FLAGS|macro|GPIO_DW_0_IRQ_FLAGS
+DECL|GPIO_DW_0_IRQ_FLAGS|macro|GPIO_DW_0_IRQ_FLAGS
+DECL|GPIO_DW_0_IRQ_FLAGS|macro|GPIO_DW_0_IRQ_FLAGS
+DECL|GPIO_DW_0_IRQ_FLAGS|macro|GPIO_DW_0_IRQ_FLAGS
+DECL|GPIO_DW_1_IRQ_FLAGS|macro|GPIO_DW_1_IRQ_FLAGS
+DECL|GPIO_DW_1_IRQ_FLAGS|macro|GPIO_DW_1_IRQ_FLAGS
+DECL|GPIO_DW_1_IRQ_FLAGS|macro|GPIO_DW_1_IRQ_FLAGS
+DECL|GPIO_DW_1_IRQ_FLAGS|macro|GPIO_DW_1_IRQ_FLAGS
+DECL|GPIO_DW_1_IRQ_FLAGS|macro|GPIO_DW_1_IRQ_FLAGS
 DECL|_gpio_dw_clock_config|function|static inline void _gpio_dw_clock_config(struct device *port)
 DECL|_gpio_dw_clock_config|macro|_gpio_dw_clock_config
 DECL|_gpio_dw_clock_off|function|static inline void _gpio_dw_clock_off(struct device *port)
