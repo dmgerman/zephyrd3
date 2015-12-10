@@ -1,6 +1,11 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
+DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
+DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
+DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
+DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
 DECL|_i2c_dw_data_ask|function|static inline void _i2c_dw_data_ask(struct device *dev, uint8_t restart)
 DECL|_i2c_dw_data_read|function|static void _i2c_dw_data_read(struct device *dev)
 DECL|_i2c_dw_data_send|function|static void _i2c_dw_data_send(struct device *dev)
