@@ -6,6 +6,11 @@ DECL|DEFINE_MM_REG_READ|macro|DEFINE_MM_REG_READ
 DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
 DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
 DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
+DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
+DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
+DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
+DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
+DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|_clock_config|function|static inline void _clock_config(struct device *dev)
 DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
 DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
