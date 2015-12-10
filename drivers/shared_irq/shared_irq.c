@@ -1,3 +1,13 @@
+DECL|SHARED_IRQ_0_FLAGS|macro|SHARED_IRQ_0_FLAGS
+DECL|SHARED_IRQ_0_FLAGS|macro|SHARED_IRQ_0_FLAGS
+DECL|SHARED_IRQ_0_FLAGS|macro|SHARED_IRQ_0_FLAGS
+DECL|SHARED_IRQ_0_FLAGS|macro|SHARED_IRQ_0_FLAGS
+DECL|SHARED_IRQ_0_FLAGS|macro|SHARED_IRQ_0_FLAGS
+DECL|SHARED_IRQ_1_FLAGS|macro|SHARED_IRQ_1_FLAGS
+DECL|SHARED_IRQ_1_FLAGS|macro|SHARED_IRQ_1_FLAGS
+DECL|SHARED_IRQ_1_FLAGS|macro|SHARED_IRQ_1_FLAGS
+DECL|SHARED_IRQ_1_FLAGS|macro|SHARED_IRQ_1_FLAGS
+DECL|SHARED_IRQ_1_FLAGS|macro|SHARED_IRQ_1_FLAGS
 DECL|api_funcs|variable|api_funcs
 DECL|disable|function|static inline int disable(struct device *dev, struct device *isr_dev)
 DECL|enable|function|static inline int enable(struct device *dev, struct device *isr_dev)
