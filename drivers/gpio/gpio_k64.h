@@ -5,6 +5,10 @@ DECL|GPIO_K64_DIR_OFFSET|macro|GPIO_K64_DIR_OFFSET
 DECL|GPIO_K64_SET_OUT_OFFSET|macro|GPIO_K64_SET_OUT_OFFSET
 DECL|GPIO_K64_TOGGLE_OUT_OFFSET|macro|GPIO_K64_TOGGLE_OUT_OFFSET
 DECL|_GPIO_K64_H_|macro|_GPIO_K64_H_
+DECL|callback_func|member|gpio_callback_t callback_func;
 DECL|gpio_base_addr|member|uint32_t gpio_base_addr;
 DECL|gpio_k64_config|struct|struct gpio_k64_config {
+DECL|gpio_k64_data|struct|struct gpio_k64_data {
+DECL|pin_callback_enables|member|uint32_t pin_callback_enables;
 DECL|port_base_addr|member|uint32_t port_base_addr;
+DECL|port_callback_enable|member|uint8_t port_callback_enable;
