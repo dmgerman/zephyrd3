@@ -17,6 +17,7 @@ DECL|H5_SET_RELIABLE|macro|H5_SET_RELIABLE
 DECL|H5_SET_SEQ|macro|H5_SET_SEQ
 DECL|H5_SET_TYPE|macro|H5_SET_TYPE
 DECL|H5_TX_ACK_PEND|macro|H5_TX_ACK_PEND
+DECL|H5_TX_ACK_TIMEOUT|macro|H5_TX_ACK_TIMEOUT
 DECL|HCI_3WIRE_ACK_PKT|macro|HCI_3WIRE_ACK_PKT
 DECL|HCI_3WIRE_LINK_PKT|macro|HCI_3WIRE_LINK_PKT
 DECL|HCI_ACLDATA_PKT|macro|HCI_ACLDATA_PKT
@@ -61,6 +62,8 @@ DECL|pkt_data|struct|struct pkt_data {
 DECL|pkt_type|macro|pkt_type
 DECL|process_unack|function|static void process_unack(void)
 DECL|reliable_packet|function|static bool reliable_packet(uint8_t type)
+DECL|retx_fiber|function|static void retx_fiber(int arg1, int arg2)
+DECL|retx_to|member|void *retx_to;
 DECL|rx_ack|member|uint8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_fiber|function|static void rx_fiber(void)
