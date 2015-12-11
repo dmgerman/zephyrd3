@@ -13,6 +13,7 @@ DECL|BT_GATT_CHRC_NOTIFY|macro|BT_GATT_CHRC_NOTIFY
 DECL|BT_GATT_CHRC_READ|macro|BT_GATT_CHRC_READ
 DECL|BT_GATT_CHRC_WRITE_WITHOUT_RESP|macro|BT_GATT_CHRC_WRITE_WITHOUT_RESP
 DECL|BT_GATT_CHRC_WRITE|macro|BT_GATT_CHRC_WRITE
+DECL|BT_GATT_CUD|macro|BT_GATT_CUD
 DECL|BT_GATT_DESCRIPTOR|macro|BT_GATT_DESCRIPTOR
 DECL|BT_GATT_DISCOVER_CHARACTERISTIC|enumerator|BT_GATT_DISCOVER_CHARACTERISTIC,
 DECL|BT_GATT_DISCOVER_DESCRIPTOR|enumerator|BT_GATT_DISCOVER_DESCRIPTOR,
@@ -46,7 +47,6 @@ DECL|bt_gatt_ccc_cfg|struct|struct bt_gatt_ccc_cfg {
 DECL|bt_gatt_ccc|struct|struct bt_gatt_ccc {
 DECL|bt_gatt_cep|struct|struct bt_gatt_cep {
 DECL|bt_gatt_chrc|struct|struct bt_gatt_chrc {
-DECL|bt_gatt_cud|struct|struct bt_gatt_cud {
 DECL|bt_gatt_discover_func_t|typedef|typedef uint8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_discover_params|struct|struct bt_gatt_discover_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
@@ -80,7 +80,6 @@ DECL|properties|member|uint8_t properties;
 DECL|read|member|int (*read)(struct bt_conn *conn,
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
-DECL|string|member|char *string;
 DECL|type|member|uint8_t type;
 DECL|user_data|member|void *user_data;
 DECL|uuid|member|const struct bt_uuid *uuid;
