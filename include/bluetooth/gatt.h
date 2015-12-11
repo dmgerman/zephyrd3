@@ -47,6 +47,7 @@ DECL|bt_gatt_ccc|struct|struct bt_gatt_ccc {
 DECL|bt_gatt_cep|struct|struct bt_gatt_cep {
 DECL|bt_gatt_chrc|struct|struct bt_gatt_chrc {
 DECL|bt_gatt_cud|struct|struct bt_gatt_cud {
+DECL|bt_gatt_discover_func_t|typedef|typedef uint8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_discover_params|struct|struct bt_gatt_discover_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
 DECL|bt_gatt_read_func_t|typedef|typedef uint8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, int err,
@@ -66,7 +67,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint16_t flags;
 DECL|flush|member|int (*flush)(struct bt_conn *conn,
-DECL|func|member|bt_gatt_attr_func_t func;
+DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
 DECL|handle|member|uint16_t handle;
