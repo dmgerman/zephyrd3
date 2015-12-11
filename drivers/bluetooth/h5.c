@@ -57,7 +57,7 @@ DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, 
 DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
 DECL|h5|struct|static struct h5 {
 DECL|h5|variable|h5
-DECL|hexdump|function|static void hexdump(const unsigned char *packet, int length)
+DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|pkt_data|struct|struct pkt_data {
 DECL|pkt_type|macro|pkt_type
 DECL|process_unack|function|static void process_unack(void)
