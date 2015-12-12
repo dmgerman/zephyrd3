@@ -25,4 +25,4 @@ DECL|LOAPIC_TMR|macro|LOAPIC_TMR
 DECL|LOAPIC_TPR|macro|LOAPIC_TPR
 DECL|LOAPIC_VER|macro|LOAPIC_VER
 DECL|__INCloapich|macro|__INCloapich
-DECL|eax|variable|eax
+DECL|_loapic_eoi|function|static inline void _loapic_eoi(void)
