@@ -11,6 +11,6 @@ DECL|UART_IRQ_FLAGS|macro|UART_IRQ_FLAGS
 DECL|UART_IRQ_FLAGS|macro|UART_IRQ_FLAGS
 DECL|UART_IRQ_FLAGS|macro|UART_IRQ_FLAGS
 DECL|UART_IRQ_FLAGS|macro|UART_IRQ_FLAGS
-DECL|__INCboardh|macro|__INCboardh
+DECL|__PLATFORM_H_|macro|__PLATFORM_H_
 DECL|pci_irq2pin|function|static inline int pci_irq2pin(int irq)
 DECL|pci_pin2irq|function|static inline int pci_pin2irq(int pin)
