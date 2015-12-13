@@ -10,9 +10,7 @@ DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|_pinmux_defaults|function|static void _pinmux_defaults(uint32_t base)
-DECL|_pinmux_defaults|function|static void _pinmux_defaults(uint32_t base)
 DECL|_pinmux_pullups|function|static inline void _pinmux_pullups(uint32_t base_address)
-DECL|_pinmux_pullups|function|static inline void _pinmux_pullups(uint32_t base_address) { };
 DECL|_quark_se_input|function|static uint32_t _quark_se_input(uint32_t base, uint32_t pin, uint8_t func)
 DECL|_quark_se_pullup|function|static uint32_t _quark_se_pullup(uint32_t base, uint32_t pin, uint8_t func)
 DECL|api_funcs|variable|api_funcs
