@@ -28,14 +28,12 @@ DECL|add_pad|function|static void add_pad(const uint8_t *in, unsigned char *out,
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|array_shift|function|static void array_shift(const uint8_t *in, uint8_t *out)
-DECL|auth_cb|variable|auth_cb
 DECL|a|member|uint64_t a;
-DECL|bt_auth_cancel|function|void bt_auth_cancel(struct bt_conn *conn)
-DECL|bt_auth_cb_register|function|int bt_auth_cb_register(const struct bt_auth_cb *cb)
-DECL|bt_auth_passkey_confirm|function|void bt_auth_passkey_confirm(struct bt_conn *conn, bool match)
-DECL|bt_auth_passkey_entry|function|void bt_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
+DECL|bt_smp_auth_cancel|function|void bt_smp_auth_cancel(struct bt_conn *conn)
+DECL|bt_smp_auth_passkey_confirm|function|void bt_smp_auth_passkey_confirm(struct bt_conn *conn, bool match)
+DECL|bt_smp_auth_passkey_entry|function|void bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_dhkey_ready|function|void bt_smp_dhkey_ready(const uint8_t *dhkey)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
@@ -43,7 +41,6 @@ DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct b
 DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_l2cap_chan *chan)
 DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, uint8_t *tk)
 DECL|bt_smp_init|function|int bt_smp_init(void)
-DECL|bt_smp_io_capa|variable|bt_smp_io_capa
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
 DECL|bt_smp_pkey_ready|function|void bt_smp_pkey_ready(void)
 DECL|bt_smp_pool|variable|bt_smp_pool
@@ -72,7 +69,7 @@ DECL|gen_method_sc|variable|gen_method_sc
 DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
-DECL|get_io_capa|function|static uint8_t get_io_capa(const struct bt_auth_cb *cb)
+DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|get_keys_type|function|static uint8_t get_keys_type(uint8_t method)
 DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|handlers|variable|handlers
