@@ -37,7 +37,6 @@ DECL|bt_auth_passkey_entry|function|void bt_auth_passkey_entry(struct bt_conn *c
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
-DECL|bt_smp_create_pdu|function|struct net_buf *bt_smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_smp_dhkey_ready|function|void bt_smp_dhkey_ready(const uint8_t *dhkey)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_smp *smp)
@@ -109,6 +108,7 @@ DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3]
 DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
+DECL|smp_create_pdu|function|static struct net_buf *smp_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|smp_dhkey_check|function|static uint8_t smp_dhkey_check(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_encrypt_info|function|static uint8_t smp_encrypt_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_error|function|static void smp_error(struct bt_smp *smp, uint8_t reason)
