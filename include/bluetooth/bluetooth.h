@@ -27,6 +27,7 @@ DECL|len|member|uint8_t len;
 DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_entry|member|void (*passkey_entry)(struct bt_conn *conn);
+DECL|pincode_entry|member|void (*pincode_entry)(struct bt_conn *conn, bool highsec);
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
