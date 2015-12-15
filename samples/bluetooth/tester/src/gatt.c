@@ -21,7 +21,10 @@ DECL|ccc|variable|ccc
 DECL|cep|variable|cep
 DECL|chr_val|variable|chr_val
 DECL|chr|variable|chr
+DECL|config_subscription|function|static void config_subscription(uint8_t *data, uint16_t len, uint16_t op)
 DECL|data|member|uint8_t *data;
+DECL|default_conn|variable|default_conn
+DECL|disable_subscription|function|static int disable_subscription(struct bt_conn *conn, uint16_t ccc_handle)
 DECL|disc_all_chrc_result|function|static void disc_all_chrc_result(void *user_data)
 DECL|disc_all_chrc|function|static void disc_all_chrc(uint8_t *data, uint16_t len)
 DECL|disc_all_desc_cb|function|static uint8_t disc_all_desc_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
@@ -33,10 +36,14 @@ DECL|disc_chrc_uuid|function|static void disc_chrc_uuid(uint8_t *data, uint16_t 
 DECL|disc_prim_uuid_cb|function|static uint8_t disc_prim_uuid_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|disc_prim_uuid_result|function|static void disc_prim_uuid_result(void *user_data)
 DECL|disc_prim_uuid|function|static void disc_prim_uuid(uint8_t *data, uint16_t len)
+DECL|discover_complete|function|static void discover_complete(void *user_data)
 DECL|discover_destroy|function|static void discover_destroy(void *user_data)
+DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|dsc|variable|dsc
+DECL|enable_subscription|function|static int enable_subscription(struct bt_conn *conn, uint16_t ccc_handle, uint16_t value)
 DECL|enc_key_size|member|uint8_t enc_key_size;
+DECL|ev_buf|variable|ev_buf
 DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn, uint8_t err)
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
 DECL|find_included_cb|function|static uint8_t find_included_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
@@ -74,6 +81,9 @@ DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|signed_write_without_rsp|function|static void signed_write_without_rsp(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
+DECL|subscribe_destroy|function|static void subscribe_destroy(void *user_data)
+DECL|subscribe_func|function|static uint8_t subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|subscribe_params|variable|subscribe_params
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|svc_inc|variable|svc_inc
 DECL|svc_pri|variable|svc_pri
