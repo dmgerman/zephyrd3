@@ -25,9 +25,7 @@ DECL|SIM_SOPT1_t|typedef|} SIM_SOPT1_t; /* 0x000 */
 DECL|SIM_SOPT2_t|typedef|} SIM_SOPT2_t; /* 0x1004 */
 DECL|SIM_SOPT4_t|typedef|} SIM_SOPT4_t; /* 0x100C */
 DECL|SIM_SOPT5_t|typedef|} SIM_SOPT5_t; /* 0x1010 */
-DECL|SIM_UART_CLK_ENABLE|macro|SIM_UART_CLK_ENABLE
 DECL|_K20SIM_H_|macro|_K20SIM_H_
-DECL|_k20_sim_uart_clk_enable|function|static ALWAYS_INLINE void _k20_sim_uart_clk_enable(volatile struct K20_SIM *sim, uint8_t port)
 DECL|clk_out_sel|member|uint32_t clk_out_sel : 3 __packed;
 DECL|clkdiv1|member|SIM_CLKDIV1_t clkdiv1; /* 0x1044 */
 DECL|clkdiv2|member|uint32_t clkdiv2; /* 0x1048 */
@@ -83,6 +81,7 @@ DECL|res_0_23|member|uint32_t res_0_23 : 24 __packed;
 DECL|res_0_3|member|uint32_t res_0_3 : 4 __packed;
 DECL|res_0|member|uint32_t res_0 : 1 __packed;
 DECL|res_10|member|uint32_t res_10 : 1 __packed;
+DECL|res_12_31|member|uint32_t res_12_31: 20 __packed;
 DECL|res_13_15|member|uint32_t res_13_15 : 3 __packed;
 DECL|res_14_17|member|uint32_t res_14_17 : 4 __packed;
 DECL|res_14_31|member|uint32_t res_14_31 : 18 __packed;
@@ -101,7 +100,7 @@ DECL|res_3|member|uint32_t res_3 : 1 __packed;
 DECL|res_5_7|member|uint32_t res_5_7 : 3 __packed;
 DECL|res_6_8|member|uint32_t res_6_8 : 3 __packed;
 DECL|res_8_31|member|uint32_t res_8_31 : 24 __packed;
-DECL|res_8_31|member|uint32_t res_8_31 : 24 __packed;
+DECL|res_8_9|member|uint32_t res_8_9 : 2 __packed;
 DECL|res_8_9|member|uint32_t res_8_9 : 2 __packed;
 DECL|res_9_17|member|uint32_t res_9_17 : 9 __packed;
 DECL|rtc_clk_out_sel|member|uint32_t rtc_clk_out_sel : 1 __packed;
@@ -132,6 +131,8 @@ DECL|uart1_tx_src|member|uint32_t uart1_tx_src : 2 __packed;
 DECL|uart1_tx_src|member|uint32_t uart1_tx_src : 2 __packed;
 DECL|uart2_clk_en|member|uint32_t uart2_clk_en : 1 __packed;
 DECL|uart3_clk_en|member|uint32_t uart3_clk_en : 1 __packed;
+DECL|uart4_clk_en|member|uint32_t uart4_clk_en : 1 __packed;
+DECL|uart5_clk_en|member|uint32_t uart5_clk_en : 1 __packed;
 DECL|usb_clk_en|member|uint32_t usb_clk_en : 1 __packed;
 DECL|usb_reg_en|member|uint32_t usb_reg_en : 1 __packed;
 DECL|usb_reg_write_en|member|uint32_t usb_reg_write_en : 1 __packed;

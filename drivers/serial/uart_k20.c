@@ -1,16 +1,10 @@
 DECL|DEV_CFG|macro|DEV_CFG
-DECL|DEV_DATA|macro|DEV_DATA
 DECL|UART_STRUCT|macro|UART_STRUCT
 DECL|uart_k20_dev_cfg_0|variable|uart_k20_dev_cfg_0
 DECL|uart_k20_dev_cfg_1|variable|uart_k20_dev_cfg_1
 DECL|uart_k20_dev_cfg_2|variable|uart_k20_dev_cfg_2
 DECL|uart_k20_dev_cfg_3|variable|uart_k20_dev_cfg_3
 DECL|uart_k20_dev_cfg_4|variable|uart_k20_dev_cfg_4
-DECL|uart_k20_dev_data_0|variable|uart_k20_dev_data_0
-DECL|uart_k20_dev_data_1|variable|uart_k20_dev_data_1
-DECL|uart_k20_dev_data_2|variable|uart_k20_dev_data_2
-DECL|uart_k20_dev_data_3|variable|uart_k20_dev_data_3
-DECL|uart_k20_dev_data_4|variable|uart_k20_dev_data_4
 DECL|uart_k20_driver_api|variable|uart_k20_driver_api
 DECL|uart_k20_driver_api|variable|uart_k20_driver_api
 DECL|uart_k20_fifo_fill|function|static int uart_k20_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
