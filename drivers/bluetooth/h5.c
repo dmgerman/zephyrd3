@@ -69,7 +69,6 @@ DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sleep_req|variable|sleep_req
-DECL|state|enum|enum state {
 DECL|state|member|} state;
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
