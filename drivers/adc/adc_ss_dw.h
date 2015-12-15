@@ -1,1 +1,0 @@
-DECL|SS_DW_ADC_H_|macro|SS_DW_ADC_H_
