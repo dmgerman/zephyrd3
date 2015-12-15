@@ -39,8 +39,6 @@ DECL|ack_to|member|void *ack_to;
 DECL|active_state|member|struct nano_sem active_state;
 DECL|avail_signal|variable|avail_signal
 DECL|bt_buf_get_sig|function|static struct net_buf *bt_buf_get_sig(void)
-DECL|bt_uart_h5_send|function|static int bt_uart_h5_send(struct net_buf *buf)
-DECL|bt_uart_h5_unslip|function|static int bt_uart_h5_unslip(uint8_t *byte)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
 DECL|bt_uart_read|function|static int bt_uart_read(struct device *uart, uint8_t *buf,size_t len, size_t min)
 DECL|conf_req|variable|conf_req
@@ -48,18 +46,19 @@ DECL|conf_rsp|variable|conf_rsp
 DECL|drv|variable|drv
 DECL|flags|member|atomic_t flags;
 DECL|h5_dev|variable|h5_dev
+DECL|h5_get_type|function|static uint8_t h5_get_type(struct net_buf *buf)
 DECL|h5_init|function|static void h5_init(void)
 DECL|h5_open|function|static int h5_open(void)
 DECL|h5_print_header|function|static void h5_print_header(const uint8_t *hdr, const char *str)
 DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(struct net_buf *buf, uint8_t type, uint8_t *hdr)
-DECL|h5_queue|function|int h5_queue(enum bt_buf_type buf_type, struct net_buf *buf)
+DECL|h5_queue|function|static int h5_queue(enum bt_buf_type buf_type, struct net_buf *buf)
 DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
 DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
+DECL|h5_unslip_byte|function|static int h5_unslip_byte(uint8_t *byte)
 DECL|h5|struct|static struct h5 {
 DECL|h5|variable|h5
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
-DECL|pkt_data|struct|struct pkt_data {
-DECL|pkt_type|macro|pkt_type
+DECL|hexdump|macro|hexdump
 DECL|process_unack|function|static void process_unack(void)
 DECL|reliable_packet|function|static bool reliable_packet(uint8_t type)
 DECL|retx_fiber|function|static void retx_fiber(int arg1, int arg2)
@@ -77,7 +76,6 @@ DECL|tx_fiber|function|static void tx_fiber(void)
 DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|tx_seq|member|uint8_t tx_seq;
 DECL|tx_win|member|uint8_t tx_win;
-DECL|type|member|uint8_t type;
 DECL|unack_queue_len|variable|unack_queue_len
 DECL|unack_queue|member|struct nano_fifo unack_queue;
 DECL|wakeup_req|variable|wakeup_req
