@@ -53,6 +53,7 @@ DECL|h5_print_header|function|static void h5_print_header(const uint8_t *hdr, co
 DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(struct net_buf *buf, uint8_t type, uint8_t *hdr)
 DECL|h5_queue|function|static int h5_queue(enum bt_buf_type buf_type, struct net_buf *buf)
 DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
+DECL|h5_set_txwin|function|static void h5_set_txwin(uint8_t *conf)
 DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
 DECL|h5_unslip_byte|function|static int h5_unslip_byte(uint8_t *byte)
 DECL|h5|struct|static struct h5 {
