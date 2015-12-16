@@ -81,6 +81,7 @@ DECL|le_pkey_complete|function|static void le_pkey_complete(struct net_buf *buf)
 DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_complete(struct net_buf *buf)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|le_set_nrpa|function|static int le_set_nrpa(void)
+DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(const bt_addr_t *bdaddr, const char *pin, size_t len)
