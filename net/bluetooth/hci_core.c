@@ -81,6 +81,7 @@ DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_compl
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|le_set_nrpa|function|static int le_set_nrpa(void)
 DECL|opcode|member|uint16_t opcode;
+DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
