@@ -18,6 +18,7 @@ DECL|bt_auth_cancel|function|void bt_auth_cancel(struct bt_conn *conn)
 DECL|bt_auth_cb_register|function|int bt_auth_cb_register(const struct bt_auth_cb *cb)
 DECL|bt_auth_passkey_confirm|function|void bt_auth_passkey_confirm(struct bt_conn *conn, bool match)
 DECL|bt_auth_passkey_entry|function|void bt_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
+DECL|bt_auth_pincode_entry|function|void bt_auth_pincode_entry(struct bt_conn *conn, char *pin, size_t len)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
@@ -81,6 +82,8 @@ DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_compl
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|le_set_nrpa|function|static int le_set_nrpa(void)
 DECL|opcode|member|uint16_t opcode;
+DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
+DECL|pin_code_reply|function|static int pin_code_reply(const bt_addr_t *bdaddr, const char *pin, size_t len)
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
