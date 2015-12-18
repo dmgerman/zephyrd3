@@ -40,7 +40,6 @@ DECL|active_state|member|struct nano_sem active_state;
 DECL|avail_signal|variable|avail_signal
 DECL|bt_buf_get_sig|function|static struct net_buf *bt_buf_get_sig(void)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
-DECL|bt_uart_read|function|static int bt_uart_read(struct device *uart, uint8_t *buf,size_t len, size_t min)
 DECL|conf_req|variable|conf_req
 DECL|conf_rsp|variable|conf_rsp
 DECL|drv|variable|drv
