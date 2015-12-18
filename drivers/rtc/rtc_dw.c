@@ -1,5 +1,5 @@
 DECL|CCU_RTC_CLK_DIV_EN|macro|CCU_RTC_CLK_DIV_EN
-DECL|CLK_RTC_DIV_DEF_MASK|macro|CLK_RTC_DIV_DEF_MASK
+DECL|RTC_CLK_DIV_DEF_MASK|macro|RTC_CLK_DIV_DEF_MASK
 DECL|_rtc_dw_clock_config|function|static inline void _rtc_dw_clock_config(struct device *dev)
 DECL|_rtc_dw_clock_config|macro|_rtc_dw_clock_config
 DECL|_rtc_dw_clock_off|function|static inline void _rtc_dw_clock_off(struct device *dev)
