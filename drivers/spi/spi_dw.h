@@ -53,17 +53,19 @@ DECL|DW_SPI_SR_TFNF_BIT|macro|DW_SPI_SR_TFNF_BIT
 DECL|DW_SPI_SSIENR_SSIEN_BIT|macro|DW_SPI_SSIENR_SSIEN_BIT
 DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
 DECL|DW_SSI_COMP_VERSION|macro|DW_SSI_COMP_VERSION
+DECL|SPI_DFS_TO_BYTES|macro|SPI_DFS_TO_BYTES
 DECL|__SPI_DW_H__|macro|__SPI_DW_H__
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
+DECL|dfs|member|uint8_t dfs; /* data frame size in bytes */
 DECL|error|member|uint8_t error;
 DECL|int_mask|member|uint32_t int_mask;
 DECL|irq|member|uint32_t irq;
 DECL|regs|member|uint32_t regs;
 DECL|rx_buf_len|member|uint32_t rx_buf_len;
 DECL|rx_buf|member|uint8_t *rx_buf;
-DECL|slave|member|uint32_t slave;
+DECL|slave|member|uint16_t slave;
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
