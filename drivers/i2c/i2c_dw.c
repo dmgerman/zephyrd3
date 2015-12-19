@@ -23,8 +23,6 @@ DECL|i2c_dw_initialize|function|int i2c_dw_initialize(struct device *port)
 DECL|i2c_dw_isr_0_device|variable|i2c_dw_isr_0_device
 DECL|i2c_dw_isr_1_device|variable|i2c_dw_isr_1_device
 DECL|i2c_dw_isr|function|void i2c_dw_isr(struct device *port)
-DECL|i2c_dw_memory_read|function|static inline uint32_t i2c_dw_memory_read(uint32_t base_addr, uint32_t offset)
-DECL|i2c_dw_memory_write|function|static inline void i2c_dw_memory_write(uint32_t base_addr, uint32_t offset, uint32_t val)
 DECL|i2c_dw_pci_setup|function|static inline int i2c_dw_pci_setup(struct device *dev)
 DECL|i2c_dw_pci_setup|macro|i2c_dw_pci_setup
 DECL|i2c_dw_resume|function|static int i2c_dw_resume(struct device *dev)
