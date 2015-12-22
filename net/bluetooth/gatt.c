@@ -73,6 +73,5 @@ DECL|subscriptions|variable|subscriptions
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid|member|uint8_t uuid[16];
-DECL|uuid|member|uint8_t uuid[16];
 DECL|value_handle|member|uint16_t value_handle;
 DECL|write_signed_allowed|function|static bool write_signed_allowed(struct bt_conn *conn)
