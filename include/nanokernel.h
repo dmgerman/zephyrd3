@@ -22,11 +22,15 @@ DECL|link|member|struct nano_timer *link;
 DECL|list|member|void *list;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
 DECL|nano_fiber_entry_t|typedef|typedef void (*nano_fiber_entry_t)(int i1, int i2);
+DECL|nano_fiber_timer_test|function|static inline void *nano_fiber_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_fifo|struct|struct nano_fifo {
+DECL|nano_isr_timer_test|function|static inline void *nano_isr_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_lifo|struct|struct nano_lifo {
 DECL|nano_sem|struct|struct nano_sem {
 DECL|nano_stack|struct|struct nano_stack {
+DECL|nano_task_timer_test|function|static inline void *nano_task_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
+DECL|nano_timer_test|function|static inline void *nano_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_timer|struct|struct nano_timer {
 DECL|next|member|struct nano_fifo *next;
 DECL|next|member|struct nano_lifo *next;
