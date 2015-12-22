@@ -37,8 +37,6 @@ DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
 DECL|ack_fiber|function|static void ack_fiber(int arg1, int arg2)
 DECL|ack_to|member|void *ack_to;
 DECL|active_state|member|struct nano_sem active_state;
-DECL|avail_signal|variable|avail_signal
-DECL|bt_buf_get_sig|function|static struct net_buf *bt_buf_get_sig(void)
 DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
 DECL|conf_req|variable|conf_req
 DECL|conf_rsp|variable|conf_rsp
@@ -53,6 +51,7 @@ DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(
 DECL|h5_queue|function|static int h5_queue(enum bt_buf_type buf_type, struct net_buf *buf)
 DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
 DECL|h5_set_txwin|function|static void h5_set_txwin(uint8_t *conf)
+DECL|h5_sig|variable|h5_sig
 DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
 DECL|h5_unslip_byte|function|static int h5_unslip_byte(uint8_t *byte)
 DECL|h5|struct|static struct h5 {
