@@ -58,6 +58,7 @@ DECL|h5|struct|static struct h5 {
 DECL|h5|variable|h5
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
+DECL|link_state|member|} link_state;
 DECL|process_unack|function|static void process_unack(void)
 DECL|reliable_packet|function|static bool reliable_packet(uint8_t type)
 DECL|retx_fiber|function|static void retx_fiber(int arg1, int arg2)
@@ -67,7 +68,6 @@ DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sleep_req|variable|sleep_req
-DECL|state|member|} state;
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
 DECL|tx_ack|member|uint8_t tx_ack;
