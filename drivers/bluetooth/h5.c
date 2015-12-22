@@ -3,6 +3,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONFIG_BLUETOOTH_MAX_SIG_LEN|macro|CONFIG_BLUETOOTH_MAX_SIG_LEN
 DECL|CONFIG_BLUETOOTH_SIGNAL_COUNT|macro|CONFIG_BLUETOOTH_SIGNAL_COUNT
+DECL|END|enumerator|END,
 DECL|H5_HDR_ACK|macro|H5_HDR_ACK
 DECL|H5_HDR_CRC|macro|H5_HDR_CRC
 DECL|H5_HDR_LEN|macro|H5_HDR_LEN
@@ -25,13 +26,16 @@ DECL|HCI_COMMAND_PKT|macro|HCI_COMMAND_PKT
 DECL|HCI_EVENT_PKT|macro|HCI_EVENT_PKT
 DECL|HCI_SCODATA_PKT|macro|HCI_SCODATA_PKT
 DECL|HCI_VENDOR_PKT|macro|HCI_VENDOR_PKT
+DECL|HEADER|enumerator|HEADER,
 DECL|INIT|enumerator|INIT,
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|PAYLOAD|enumerator|PAYLOAD,
 DECL|SIG_BUF_SIZE|macro|SIG_BUF_SIZE
 DECL|SLIP_DELIMITER|macro|SLIP_DELIMITER
 DECL|SLIP_ESC_DELIM|macro|SLIP_ESC_DELIM
 DECL|SLIP_ESC_ESC|macro|SLIP_ESC_ESC
 DECL|SLIP_ESC|macro|SLIP_ESC
+DECL|START|enumerator|START,
 DECL|UNINIT|enumerator|UNINIT,
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
 DECL|ack_fiber|function|static void ack_fiber(int arg1, int arg2)
@@ -47,8 +51,9 @@ DECL|h5_get_type|function|static uint8_t h5_get_type(struct net_buf *buf)
 DECL|h5_init|function|static void h5_init(void)
 DECL|h5_open|function|static int h5_open(void)
 DECL|h5_print_header|function|static void h5_print_header(const uint8_t *hdr, const char *str)
-DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(struct net_buf *buf, uint8_t type, uint8_t *hdr)
+DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(uint8_t *hdr)
 DECL|h5_queue|function|static int h5_queue(enum bt_buf_type buf_type, struct net_buf *buf)
+DECL|h5_reset_rx|function|static void h5_reset_rx(void)
 DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
 DECL|h5_set_txwin|function|static void h5_set_txwin(uint8_t *conf)
 DECL|h5_sig|variable|h5_sig
@@ -67,6 +72,7 @@ DECL|rx_ack|member|uint8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|member|struct nano_fifo rx_queue;
+DECL|rx_state|member|} rx_state;
 DECL|sleep_req|variable|sleep_req
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
