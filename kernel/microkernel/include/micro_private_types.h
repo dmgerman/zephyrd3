@@ -201,6 +201,7 @@ DECL|prev|member|struct k_timer *prev;
 DECL|priority|member|kpriority_t priority;
 DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
+DECL|ptr|member|void *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
 DECL|queue|member|kfifo_t queue;
