@@ -9,7 +9,7 @@ DECL|_reserved|member|uint32_t _reserved:3;
 DECL|addr|member|uint32_t addr; /* I/O or memory region address */
 DECL|bar|member|uint32_t bar:3;
 DECL|bus|member|uint32_t bus:8;
-DECL|class|member|uint32_t class:8;
+DECL|class_type|member|uint32_t class_type:8;
 DECL|device_id|member|uint16_t device_id;
 DECL|dev|member|uint32_t dev:5;
 DECL|function|member|uint32_t function:4;
