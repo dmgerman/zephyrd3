@@ -17,7 +17,7 @@ DECL|ediv|member|uint16_t ediv;
 DECL|enc_size|member|uint8_t enc_size;
 DECL|flags|member|atomic_t flags;
 DECL|irk|member|struct bt_irk irk;
-DECL|keys|member|int keys;
+DECL|keys|member|uint16_t keys;
 DECL|local_csrk|member|struct bt_csrk local_csrk;
 DECL|ltk|member|struct bt_ltk ltk;
 DECL|rand|member|uint64_t rand;
