@@ -70,7 +70,6 @@ DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
-DECL|get_keys_type|function|static uint8_t get_keys_type(uint8_t method)
 DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
