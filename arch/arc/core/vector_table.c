@@ -12,4 +12,6 @@ DECL|ev_trap|member|uint32_t ev_trap;
 DECL|instruction_error|member|uint32_t instruction_error;
 DECL|memory_error|member|uint32_t memory_error;
 DECL|reset|member|uint32_t reset;
+DECL|unused_1|member|uint32_t unused_1;
+DECL|unused_2|member|uint32_t unused_2;
 DECL|vector_table|struct|struct vector_table {
