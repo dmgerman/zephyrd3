@@ -49,6 +49,7 @@ DECL|cmd_scan|function|static void cmd_scan(int argc, char *argv[])
 DECL|cmd_security|function|static void cmd_security(int argc, char *argv[])
 DECL|cmd_select|function|static void cmd_select(int argc, char *argv[])
 DECL|commands|variable|commands
+DECL|conn_addr_str|function|static void conn_addr_str(struct bt_conn *conn, char *addr, size_t len)
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|current_prompt|function|static const char *current_prompt(void)
