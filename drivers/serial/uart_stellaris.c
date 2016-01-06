@@ -1,4 +1,5 @@
 DECL|DEV_CFG|macro|DEV_CFG
+DECL|DEV_DATA|macro|DEV_DATA
 DECL|LINE_CONTROL_DEFAULTS|macro|LINE_CONTROL_DEFAULTS
 DECL|UARTCR|macro|UARTCR
 DECL|UARTCTL_LBE|macro|UARTCTL_LBE
@@ -53,6 +54,7 @@ DECL|_res2|member|uint8_t _res2[0x04];
 DECL|_res3|member|uint8_t _res3[0xf8c];
 DECL|_sr|member|uint32_t _sr;
 DECL|_uart|struct|struct _uart {
+DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
 DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
 DECL|cr|macro|cr
 DECL|ctl|member|uint32_t ctl;
@@ -88,6 +90,10 @@ DECL|u1|member|} u1;
 DECL|uart_stellaris_dev_cfg_0|variable|uart_stellaris_dev_cfg_0
 DECL|uart_stellaris_dev_cfg_1|variable|uart_stellaris_dev_cfg_1
 DECL|uart_stellaris_dev_cfg_2|variable|uart_stellaris_dev_cfg_2
+DECL|uart_stellaris_dev_data_0|variable|uart_stellaris_dev_data_0
+DECL|uart_stellaris_dev_data_1|variable|uart_stellaris_dev_data_1
+DECL|uart_stellaris_dev_data_2|variable|uart_stellaris_dev_data_2
+DECL|uart_stellaris_dev_data_t|struct|struct uart_stellaris_dev_data_t {
 DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
 DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
 DECL|uart_stellaris_fifo_fill|function|static int uart_stellaris_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)

@@ -84,10 +84,12 @@ DECL|REG_THR|macro|REG_THR
 DECL|THR|macro|THR
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
+DECL|baud_rate|member|uint32_t baud_rate; /**< Baud rate */
 DECL|dlf|member|uint8_t dlf; /**< DLF value */
 DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
+DECL|options|member|uint8_t options; /**< Serial port options */
 DECL|set_dlf|function|static inline void set_dlf(struct device *dev, uint32_t val)
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
