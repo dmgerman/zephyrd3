@@ -2,6 +2,7 @@ DECL|BRDH|macro|BRDH
 DECL|BRDL|macro|BRDL
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
+DECL|DLF|macro|DLF
 DECL|FCR_FIFO_14|macro|FCR_FIFO_14
 DECL|FCR_FIFO_1|macro|FCR_FIFO_1
 DECL|FCR_FIFO_4|macro|FCR_FIFO_4
@@ -70,6 +71,7 @@ DECL|OUTBYTE|macro|OUTBYTE
 DECL|RDR|macro|RDR
 DECL|REG_BRDH|macro|REG_BRDH
 DECL|REG_BRDL|macro|REG_BRDL
+DECL|REG_DLF|macro|REG_DLF
 DECL|REG_FCR|macro|REG_FCR
 DECL|REG_IER|macro|REG_IER
 DECL|REG_IIR|macro|REG_IIR
@@ -82,9 +84,11 @@ DECL|REG_THR|macro|REG_THR
 DECL|THR|macro|THR
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
+DECL|dlf|member|uint8_t dlf; /**< DLF value */
 DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
+DECL|set_dlf|function|static inline void set_dlf(struct device *dev, uint32_t val)
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0
