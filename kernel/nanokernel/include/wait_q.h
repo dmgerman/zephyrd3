@@ -1,3 +1,7 @@
+DECL|_NANO_TIMEOUT_ADD|macro|_NANO_TIMEOUT_ADD
+DECL|_NANO_TIMEOUT_ADD|macro|_NANO_TIMEOUT_ADD
+DECL|_NANO_TIMEOUT_TICK_GET|macro|_NANO_TIMEOUT_TICK_GET
+DECL|_NANO_TIMEOUT_TICK_GET|macro|_NANO_TIMEOUT_TICK_GET
 DECL|_kernel_nanokernel_include_wait_q__h_|macro|_kernel_nanokernel_include_wait_q__h_
 DECL|_nano_get_earliest_timeouts_deadline|macro|_nano_get_earliest_timeouts_deadline
 DECL|_nano_timeout_abort|macro|_nano_timeout_abort
