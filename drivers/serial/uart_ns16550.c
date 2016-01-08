@@ -105,7 +105,6 @@ DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct de
 DECL|uart_ns16550_init|function|static int uart_ns16550_init(struct device *dev)
 DECL|uart_ns16550_irq_err_disable|function|static void uart_ns16550_irq_err_disable(struct device *dev)
 DECL|uart_ns16550_irq_err_enable|function|static void uart_ns16550_irq_err_enable(struct device *dev)
-DECL|uart_ns16550_irq_get|function|static unsigned int uart_ns16550_irq_get(struct device *dev)
 DECL|uart_ns16550_irq_is_pending|function|static int uart_ns16550_irq_is_pending(struct device *dev)
 DECL|uart_ns16550_irq_rx_disable|function|static void uart_ns16550_irq_rx_disable(struct device *dev)
 DECL|uart_ns16550_irq_rx_enable|function|static void uart_ns16550_irq_rx_enable(struct device *dev)

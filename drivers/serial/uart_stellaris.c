@@ -101,7 +101,6 @@ DECL|uart_stellaris_fifo_read|function|static int uart_stellaris_fifo_read(struc
 DECL|uart_stellaris_init|function|static int uart_stellaris_init(struct device *dev)
 DECL|uart_stellaris_irq_err_disable|function|static void uart_stellaris_irq_err_disable(struct device *dev)
 DECL|uart_stellaris_irq_err_enable|function|static void uart_stellaris_irq_err_enable(struct device *dev)
-DECL|uart_stellaris_irq_get|function|static unsigned int uart_stellaris_irq_get(struct device *dev)
 DECL|uart_stellaris_irq_is_pending|function|static int uart_stellaris_irq_is_pending(struct device *dev)
 DECL|uart_stellaris_irq_rx_disable|function|static void uart_stellaris_irq_rx_disable(struct device *dev)
 DECL|uart_stellaris_irq_rx_enable|function|static void uart_stellaris_irq_rx_enable(struct device *dev)

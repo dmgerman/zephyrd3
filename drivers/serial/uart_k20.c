@@ -20,7 +20,6 @@ DECL|uart_k20_fifo_read|function|static int uart_k20_fifo_read(struct device *de
 DECL|uart_k20_init|function|static int uart_k20_init(struct device *dev)
 DECL|uart_k20_irq_err_disable|function|static void uart_k20_irq_err_disable(struct device *dev)
 DECL|uart_k20_irq_err_enable|function|static void uart_k20_irq_err_enable(struct device *dev)
-DECL|uart_k20_irq_get|function|static unsigned int uart_k20_irq_get(struct device *dev)
 DECL|uart_k20_irq_is_pending|function|static int uart_k20_irq_is_pending(struct device *dev)
 DECL|uart_k20_irq_rx_disable|function|static void uart_k20_irq_rx_disable(struct device *dev)
 DECL|uart_k20_irq_rx_enable|function|static void uart_k20_irq_rx_enable(struct device *dev)
