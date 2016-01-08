@@ -16,7 +16,7 @@ DECL|SEQ_MUX_ODD_POS|macro|SEQ_MUX_ODD_POS
 DECL|SERIAL_DELAY_POS|macro|SERIAL_DELAY_POS
 DECL|SIX_BITS_SET|macro|SIX_BITS_SET
 DECL|THRESHOLD_POS|macro|THRESHOLD_POS
-DECL|adc_config_0_irq|function|static void adc_config_0_irq(struct device *dev)
+DECL|adc_config_0_irq|function|static void adc_config_0_irq(void)
 DECL|adc_config_dev_0|variable|adc_config_dev_0
 DECL|adc_dw_disable|function|static void adc_dw_disable(struct device *dev)
 DECL|adc_dw_enable|function|static void adc_dw_enable(struct device *dev)

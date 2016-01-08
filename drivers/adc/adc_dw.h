@@ -61,21 +61,19 @@ DECL|RESUME_ADC_CAPTURE|macro|RESUME_ADC_CAPTURE
 DECL|SLV_OBSR|macro|SLV_OBSR
 DECL|START_ADC_SEQ|macro|START_ADC_SEQ
 DECL|adc_config|struct|struct adc_config {
-DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(struct device *dev);
+DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(void);
 DECL|adc_info|struct|struct adc_info {
 DECL|capture_mode|member|uint8_t capture_mode;
 DECL|cb|member|adc_callback_t cb;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
 DECL|entries|member|struct adc_seq_entry *entries;
-DECL|err_vector|member|uint8_t err_vector;
 DECL|in_mode|member|uint8_t in_mode;
 DECL|index|member|uint8_t index[BUFS_NUM];
 DECL|out_mode|member|uint8_t out_mode;
 DECL|reg_base|member|uint32_t reg_base;
 DECL|reg_err_mask|member|uint32_t reg_err_mask;
 DECL|reg_irq_mask|member|uint32_t reg_irq_mask;
-DECL|rx_vector|member|uint8_t rx_vector;
 DECL|sample_width|member|uint8_t sample_width;
 DECL|seq_mode|member|uint8_t seq_mode;
 DECL|seq_size|member|uint8_t seq_size;

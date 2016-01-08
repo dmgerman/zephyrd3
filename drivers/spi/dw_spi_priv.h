@@ -64,7 +64,7 @@ DECL|regs|member|uint32_t regs;
 DECL|rx_buf_len|member|uint32_t rx_buf_len;
 DECL|rx_buf|member|uint8_t *rx_buf;
 DECL|slave|member|uint32_t slave;
-DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(struct device *dev);
+DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
 DECL|t_len|member|uint32_t t_len;

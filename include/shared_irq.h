@@ -11,7 +11,7 @@ DECL|isr_func|member|isr_t isr_func;
 DECL|isr_register|member|shared_irq_register_t isr_register;
 DECL|isr_t|typedef|typedef int (*isr_t)(struct device *dev);
 DECL|shared_irq_client|struct|struct shared_irq_client {
-DECL|shared_irq_config_irq_t|typedef|typedef void (*shared_irq_config_irq_t)(struct device *port);
+DECL|shared_irq_config_irq_t|typedef|typedef void (*shared_irq_config_irq_t)(void);
 DECL|shared_irq_config|struct|struct shared_irq_config {
 DECL|shared_irq_disable_t|typedef|typedef int (*shared_irq_disable_t)(struct device *dev, struct device *isr_dev);
 DECL|shared_irq_disable|function|static inline int shared_irq_disable(struct device *dev, struct device *isr_dev)

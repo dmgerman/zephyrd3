@@ -19,16 +19,14 @@ DECL|dw_spi_api|variable|dw_spi_api
 DECL|int_unmask|macro|int_unmask
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
-DECL|spi_config_0_irq|function|void spi_config_0_irq(struct device *dev)
-DECL|spi_config_1_irq|function|void spi_config_1_irq(struct device *dev)
+DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
+DECL|spi_config_1_irq|function|void spi_config_1_irq(void)
 DECL|spi_dw_config_0|variable|spi_dw_config_0
 DECL|spi_dw_config_1|variable|spi_dw_config_1
 DECL|spi_dw_configure|function|static int spi_dw_configure(struct device *dev,struct spi_config *config, void *user_data)
 DECL|spi_dw_data_port_0|variable|spi_dw_data_port_0
 DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)
-DECL|spi_dw_isr_port_0|variable|spi_dw_isr_port_0
-DECL|spi_dw_isr_port_1|variable|spi_dw_isr_port_1
 DECL|spi_dw_isr|function|void spi_dw_isr(void *arg)
 DECL|spi_dw_resume|function|static int spi_dw_resume(struct device *dev)
 DECL|spi_dw_slave_select|function|static int spi_dw_slave_select(struct device *dev, uint32_t slave)

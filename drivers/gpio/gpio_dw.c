@@ -36,8 +36,6 @@ DECL|gpio_dw_config|function|static inline int gpio_dw_config(struct device *por
 DECL|gpio_dw_disable_callback|function|static inline int gpio_dw_disable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_dw_enable_callback|function|static inline int gpio_dw_enable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_dw_initialize|function|int gpio_dw_initialize(struct device *port)
-DECL|gpio_dw_isr_0|variable|gpio_dw_isr_0
-DECL|gpio_dw_isr_1|variable|gpio_dw_isr_1
 DECL|gpio_dw_isr|function|void gpio_dw_isr(void *arg)
 DECL|gpio_dw_read|function|static inline int gpio_dw_read(struct device *port, int access_op, uint32_t pin, uint32_t *value)
 DECL|gpio_dw_resume_port|function|static inline int gpio_dw_resume_port(struct device *port)

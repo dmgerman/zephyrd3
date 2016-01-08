@@ -1,7 +1,6 @@
 DECL|eth_0_runtime|variable|eth_0_runtime
 DECL|eth_config_0_irq|function|static void eth_config_0_irq(struct device *port)
 DECL|eth_config_0|variable|eth_config_0
-DECL|eth_dw_isr_0|variable|eth_dw_isr_0
 DECL|eth_dw_isr|function|void eth_dw_isr(struct device *port)
 DECL|eth_initialize|function|static int eth_initialize(struct device *port)
 DECL|eth_net_tx|function|static int eth_net_tx(struct net_buf *buf)

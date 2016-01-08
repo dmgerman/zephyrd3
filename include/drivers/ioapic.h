@@ -14,4 +14,3 @@ DECL|IOAPIC_REMOTE|macro|IOAPIC_REMOTE
 DECL|IOAPIC_SMI|macro|IOAPIC_SMI
 DECL|IOAPIC_TRIGGER_MASK|macro|IOAPIC_TRIGGER_MASK
 DECL|__INCioapich|macro|__INCioapich
-DECL|ioapic_mkstub|macro|ioapic_mkstub

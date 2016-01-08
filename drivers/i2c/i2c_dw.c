@@ -19,8 +19,6 @@ DECL|i2c_config_1|function|void i2c_config_1(struct device *port)
 DECL|i2c_config_dw_0|variable|i2c_config_dw_0
 DECL|i2c_config_dw_1|variable|i2c_config_dw_1
 DECL|i2c_dw_initialize|function|int i2c_dw_initialize(struct device *port)
-DECL|i2c_dw_isr_0_device|variable|i2c_dw_isr_0_device
-DECL|i2c_dw_isr_1_device|variable|i2c_dw_isr_1_device
 DECL|i2c_dw_isr|function|void i2c_dw_isr(struct device *port)
 DECL|i2c_dw_pci_setup|function|static inline int i2c_dw_pci_setup(struct device *dev)
 DECL|i2c_dw_pci_setup|macro|i2c_dw_pci_setup

@@ -49,7 +49,7 @@ DECL|r_buf_len|member|uint32_t r_buf_len;
 DECL|regs|member|uint32_t regs;
 DECL|rx_buf_end|member|uint8_t *rx_buf_end;
 DECL|rx_buf|member|uint8_t *rx_buf;
-DECL|spi_intel_config_t|typedef|typedef void (*spi_intel_config_t)(struct device *dev);
+DECL|spi_intel_config_t|typedef|typedef void (*spi_intel_config_t)(void);
 DECL|spi_intel_config|struct|struct spi_intel_config {
 DECL|spi_intel_data|struct|struct spi_intel_data {
 DECL|sscr0|member|uint32_t sscr0;

@@ -13,7 +13,6 @@ DECL|rtc_dev|variable|rtc_dev
 DECL|rtc_dw_disable|function|static void rtc_dw_disable(struct device *dev)
 DECL|rtc_dw_enable|function|static void rtc_dw_enable(struct device *dev)
 DECL|rtc_dw_init|function|int rtc_dw_init(struct device *dev)
-DECL|rtc_dw_isr_dev|variable|rtc_dw_isr_dev
 DECL|rtc_dw_isr|function|void rtc_dw_isr(void *arg)
 DECL|rtc_dw_read|function|static uint32_t rtc_dw_read(struct device *dev)
 DECL|rtc_dw_set_alarm|function|static int rtc_dw_set_alarm(struct device *dev, const uint32_t alarm_val)
