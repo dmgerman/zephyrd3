@@ -84,7 +84,7 @@ DECL|le_set_nrpa|function|static int le_set_nrpa(void)
 DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
-DECL|pin_code_reply|function|static int pin_code_reply(const bt_addr_t *bdaddr, const char *pin)
+DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
