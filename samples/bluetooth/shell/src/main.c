@@ -69,6 +69,7 @@ DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|mainloop|function|void mainloop(void)
+DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_destroy|function|static void read_destroy(void *user_data)
