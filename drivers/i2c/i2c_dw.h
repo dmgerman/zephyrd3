@@ -40,7 +40,6 @@ DECL|request_bytes|member|uint8_t request_bytes;
 DECL|rx_buffer|member|uint8_t *rx_buffer;
 DECL|rx_len|member|uint8_t rx_len;
 DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
-DECL|slave_mode|member|uint8_t slave_mode;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
 DECL|support_hs_mode|member|bool support_hs_mode;
 DECL|sync|member|device_sync_call_t sync;
