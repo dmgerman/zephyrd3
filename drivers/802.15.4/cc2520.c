@@ -43,11 +43,13 @@ DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_last_correlation|variable|cc2520_last_correlation
 DECL|cc2520_last_rssi|variable|cc2520_last_rssi
 DECL|cc2520_off|function|static int cc2520_off(void)
-DECL|cc2520_on|function|static int cc2520_on(void)
+DECL|cc2520_on|function|int cc2520_on(void)
 DECL|cc2520_packets_read|variable|cc2520_packets_read
 DECL|cc2520_packets_seen|variable|cc2520_packets_seen
 DECL|cc2520_pending_packet|function|static inline int cc2520_pending_packet(void)
 DECL|cc2520_prepare|function|static int cc2520_prepare(const void *payload, unsigned short payload_len)
+DECL|cc2520_print_gpio_config|function|static void cc2520_print_gpio_config(void)
+DECL|cc2520_print_gpio_config|macro|cc2520_print_gpio_config
 DECL|cc2520_read_fifo_byte|function|static bool cc2520_read_fifo_byte(uint8_t *byte)
 DECL|cc2520_read|function|static int cc2520_read(void *buf, unsigned short bufsize)
 DECL|cc2520_receiving_packet|function|static inline int cc2520_receiving_packet(void)
@@ -65,6 +67,8 @@ DECL|cc2520_sfd_start_time|variable|cc2520_sfd_start_time
 DECL|cc2520_sgl_dev|variable|cc2520_sgl_dev
 DECL|cc2520_transmit|function|static int cc2520_transmit(struct net_buf *buf, unsigned short payload_len)
 DECL|channel|variable|channel
+DECL|clear_exceptions|function|static void clear_exceptions(void)
+DECL|clear_exceptions|macro|clear_exceptions
 DECL|flushrx|function|static void flushrx(void)
 DECL|get_object|function|static radio_result_t get_object(radio_param_t param, void *dest, size_t size)
 DECL|getreg|function|static uint8_t getreg(uint16_t regname)
@@ -74,6 +78,12 @@ DECL|init_ok|variable|init_ok
 DECL|last_packet_timestamp|variable|last_packet_timestamp
 DECL|off|function|static void off(void)
 DECL|on|function|static void on(void)
+DECL|print_errors|function|static inline void print_errors(void)
+DECL|print_errors|macro|print_errors
+DECL|print_exceptions_0|function|static inline void print_exceptions_0(void)
+DECL|print_exceptions_0|macro|print_exceptions_0
+DECL|print_exceptions_1|function|static inline void print_exceptions_1(void)
+DECL|print_exceptions_1|macro|print_exceptions_1
 DECL|print_radio_status|function|static void print_radio_status(void)
 DECL|print_radio_status|macro|print_radio_status
 DECL|read_packet_debug|function|static void read_packet_debug(const char *caller)
