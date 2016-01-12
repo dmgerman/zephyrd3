@@ -37,6 +37,7 @@ DECL|irq_num|member|uint32_t irq_num;
 DECL|lcnt|member|uint16_t lcnt;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|request_bytes|member|uint8_t request_bytes;
+DECL|rx_pending|member|uint32_t rx_pending;
 DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
 DECL|support_hs_mode|member|bool support_hs_mode;
