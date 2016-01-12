@@ -4,6 +4,7 @@ DECL|I2C_QSE_SS_BUSY|macro|I2C_QSE_SS_BUSY
 DECL|I2C_QSE_SS_CMD_ERROR|macro|I2C_QSE_SS_CMD_ERROR
 DECL|I2C_QSE_SS_CMD_RECV|macro|I2C_QSE_SS_CMD_RECV
 DECL|I2C_QSE_SS_CMD_SEND|macro|I2C_QSE_SS_CMD_SEND
+DECL|I2C_QSE_SS_FIFO_DEPTH|macro|I2C_QSE_SS_FIFO_DEPTH
 DECL|I2C_QSE_SS_SPEED_FAST_PLUS|macro|I2C_QSE_SS_SPEED_FAST_PLUS
 DECL|I2C_QSE_SS_SPEED_FAST|macro|I2C_QSE_SS_SPEED_FAST
 DECL|I2C_QSE_SS_SPEED_STANDARD|macro|I2C_QSE_SS_SPEED_STANDARD
@@ -28,6 +29,7 @@ DECL|isr_tx_mask|member|uint32_t isr_tx_mask;
 DECL|isr_tx_vector|member|uint32_t isr_tx_vector;
 DECL|lcnt|member|uint16_t lcnt;
 DECL|request_bytes|member|uint32_t request_bytes;
+DECL|rx_pending|member|uint32_t rx_pending;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
 DECL|sync|member|device_sync_call_t sync;
 DECL|xfr_buf|member|uint8_t *xfr_buf;
