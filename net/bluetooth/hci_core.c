@@ -34,7 +34,7 @@ DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, str
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|static int bt_init(void)
-DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_eir *ad, const struct bt_eir *sd)
+DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)

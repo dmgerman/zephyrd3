@@ -2,9 +2,9 @@ DECL|AD_COMPLETE_NAME|macro|AD_COMPLETE_NAME
 DECL|AD_SHORT_NAME|macro|AD_SHORT_NAME
 DECL|CREDITS|macro|CREDITS
 DECL|DATA_MTU|macro|DATA_MTU
+DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
-DECL|ad_non_discov|variable|ad_non_discov
 DECL|appearance_value|variable|appearance_value
 DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)

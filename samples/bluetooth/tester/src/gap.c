@@ -2,6 +2,7 @@ DECL|CONTROLLER_ADDR|macro|CONTROLLER_ADDR
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CONTROLLER_NAME|macro|CONTROLLER_NAME
 DECL|ad_flags|variable|ad_flags
+DECL|ad|variable|ad
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_entry|function|static void auth_passkey_entry(struct bt_conn *conn)
