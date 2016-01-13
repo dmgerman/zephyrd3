@@ -54,6 +54,7 @@ DECL|bt_att_cancel|function|void bt_att_cancel(struct bt_conn *conn)
 DECL|bt_att_connected|function|static void bt_att_connected(struct bt_l2cap_chan *chan)
 DECL|bt_att_create_pdu|function|struct net_buf *bt_att_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_att_disconnected|function|static void bt_att_disconnected(struct bt_l2cap_chan *chan)
+DECL|bt_att_encrypt_change|function|static void bt_att_encrypt_change(struct bt_l2cap_chan *chan)
 DECL|bt_att_get_mtu|function|uint16_t bt_att_get_mtu(struct bt_conn *conn)
 DECL|bt_att_init|function|void bt_att_init(void)
 DECL|bt_att_pool|variable|bt_att_pool
@@ -71,7 +72,6 @@ DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|chan|member|struct bt_l2cap_chan chan;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
-DECL|conn_callbacks|variable|conn_callbacks
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|destroy|member|bt_att_destroy_t destroy;
@@ -114,7 +114,6 @@ DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
-DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|user_data|member|void *user_data;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
