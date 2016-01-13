@@ -14,6 +14,8 @@ DECL|_track_list_nano_sem|variable|_track_list_nano_sem
 DECL|_track_list_nano_timer|variable|_track_list_nano_timer
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
+DECL|delete|function|inline void operator delete(void *ptr)
+DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|fiber|member|nano_thread_id_t fiber;
 DECL|head|member|void *head;
@@ -32,6 +34,8 @@ DECL|nano_task_timer_test|function|static inline void *nano_task_timer_test(stru
 DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
 DECL|nano_timer_test|function|static inline void *nano_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_timer|struct|struct nano_timer {
+DECL|new|function|inline void *operator new(size_t size)
+DECL|new|function|inline void *operator new[](size_t size)
 DECL|next|member|struct nano_fifo *next;
 DECL|next|member|struct nano_lifo *next;
 DECL|next|member|struct nano_sem *next;
