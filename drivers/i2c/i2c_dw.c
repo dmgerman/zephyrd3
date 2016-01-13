@@ -8,7 +8,7 @@ DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
 DECL|I2C_DW_IRQ_FLAGS|macro|I2C_DW_IRQ_FLAGS
 DECL|_i2c_dw_data_ask|function|static inline void _i2c_dw_data_ask(struct device *dev)
 DECL|_i2c_dw_data_read|function|static void _i2c_dw_data_read(struct device *dev)
-DECL|_i2c_dw_data_send|function|static void _i2c_dw_data_send(struct device *dev)
+DECL|_i2c_dw_data_send|function|static int _i2c_dw_data_send(struct device *dev)
 DECL|_i2c_dw_setup|function|static int _i2c_dw_setup(struct device *dev, uint16_t slave_address)
 DECL|_i2c_dw_transfer_complete|function|static inline void _i2c_dw_transfer_complete(struct device *dev)
 DECL|funcs|variable|funcs
