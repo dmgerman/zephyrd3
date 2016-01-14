@@ -15,7 +15,7 @@ DECL|att_exec_write_rsp|function|static uint8_t att_exec_write_rsp(struct bt_con
 DECL|att_find_info_req|function|static uint8_t att_find_info_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_find_info_rsp|function|static uint8_t att_find_info_rsp(struct bt_att *att, uint16_t start_handle, uint16_t end_handle)
 DECL|att_find_type_req|function|static uint8_t att_find_type_req(struct bt_att *att, struct net_buf *buf)
-DECL|att_find_type_rsp|function|static uint8_t att_find_type_rsp(struct bt_conn *conn, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
+DECL|att_find_type_rsp|function|static uint8_t att_find_type_rsp(struct bt_att *att, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
 DECL|att_handle_exec_write_rsp|function|static uint8_t att_handle_exec_write_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_find_info_rsp|function|static uint8_t att_handle_find_info_rsp(struct bt_att *att,struct net_buf *buf)
 DECL|att_handle_find_type_rsp|function|static uint8_t att_handle_find_type_rsp(struct bt_att *att,struct net_buf *buf)
