@@ -71,7 +71,6 @@ DECL|capture_mode|member|uint8_t capture_mode;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
 DECL|entries|member|struct adc_seq_entry *entries;
-DECL|in_mode|member|uint8_t in_mode;
 DECL|index|member|uint8_t index[BUFS_NUM];
 DECL|out_mode|member|uint8_t out_mode;
 DECL|reg_base|member|uint32_t reg_base;
