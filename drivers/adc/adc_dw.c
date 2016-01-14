@@ -34,5 +34,7 @@ DECL|adc_goto_normal_mode|function|static void adc_goto_normal_mode(struct devic
 DECL|adc_info_dev_0|variable|adc_info_dev_0
 DECL|api_funcs|variable|api_funcs
 DECL|calibration_command|function|static void calibration_command(uint8_t command)
+DECL|dummy_conversion|function|static void dummy_conversion(struct device *dev, uint32_t op_mode)
+DECL|dummy_conversion|macro|dummy_conversion
 DECL|int_unmask|macro|int_unmask
 DECL|int_unmask|macro|int_unmask
