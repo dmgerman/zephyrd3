@@ -10,7 +10,7 @@ DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|__packed|enum|typedef enum __packed {
 DECL|_next|member|struct bt_conn_cb *_next;
 DECL|br|member|struct bt_conn_br_info br;
-DECL|bt_auth_cb|struct|struct bt_auth_cb {
+DECL|bt_conn_auth_cb|struct|struct bt_conn_auth_cb {
 DECL|bt_conn_br_info|struct|struct bt_conn_br_info {
 DECL|bt_conn_cb|struct|struct bt_conn_cb {
 DECL|bt_conn_info|struct|struct bt_conn_info {
