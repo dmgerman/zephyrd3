@@ -3,10 +3,10 @@ DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HEART_RATE_APPEARANCE|macro|HEART_RATE_APPEARANCE
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad|variable|ad
-DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
+DECL|bas_attrs|variable|bas_attrs
 DECL|battery|variable|battery
 DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
 DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
@@ -17,13 +17,17 @@ DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_update|variable|ct_update
+DECL|cts_attrs|variable|cts_attrs
 DECL|ct|variable|ct
 DECL|data|member|uint8_t data[MAX_DATA];
+DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flush_long_vnd|function|static int flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
+DECL|gap_attrs|variable|gap_attrs
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
+DECL|hrs_attrs|variable|hrs_attrs
 DECL|mainloop|function|void mainloop(void)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blsc|function|static int read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -39,6 +43,7 @@ DECL|sd|variable|sd
 DECL|signed_value|variable|signed_value
 DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_hrm|variable|simulate_hrm
+DECL|vnd_attrs|variable|vnd_attrs
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
 DECL|vnd_enc_uuid|variable|vnd_enc_uuid
 DECL|vnd_long_cep|variable|vnd_long_cep
