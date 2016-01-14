@@ -16,8 +16,8 @@ DECL|bt_conn_info|struct|struct bt_conn_info {
 DECL|bt_conn_le_info|struct|struct bt_conn_le_info {
 DECL|bt_le_conn_param|struct|struct bt_le_conn_param {
 DECL|bt_security_t|typedef|} bt_security_t;
-DECL|connected|member|void (*connected)(struct bt_conn *conn);
-DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn);
+DECL|connected|member|void (*connected)(struct bt_conn *conn, uint8_t err);
+DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn, uint8_t reason);
 DECL|dst|member|const bt_addr_le_t *dst; /** Destination Address */
 DECL|dst|member|const bt_addr_t *dst; /** Destination BR/EDR address */
 DECL|identity_resolved|member|void (*identity_resolved)(struct bt_conn *conn,

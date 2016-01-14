@@ -14,13 +14,13 @@ DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|buf|member|uint8_t buf[MAX_DATA];
 DECL|conn_callbacks|variable|conn_callbacks
-DECL|connected|function|static void connected(struct bt_conn *conn)
+DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_update|variable|ct_update
 DECL|ct|variable|ct
 DECL|data|member|uint8_t data[MAX_DATA];
-DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flush_long_vnd|function|static int flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)

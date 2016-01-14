@@ -15,6 +15,7 @@ DECL|channels|member|void *channels;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
+DECL|err|member|uint8_t err;
 DECL|features|member|uint8_t features[8];
 DECL|flags|member|atomic_t flags[1];
 DECL|handle|member|uint16_t handle;

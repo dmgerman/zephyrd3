@@ -51,12 +51,12 @@ DECL|cmd_select|function|static void cmd_select(int argc, char *argv[])
 DECL|commands|variable|commands
 DECL|conn_addr_str|function|static void conn_addr_str(struct bt_conn *conn, char *addr, size_t len)
 DECL|conn_callbacks|variable|conn_callbacks
-DECL|connected|function|static void connected(struct bt_conn *conn)
+DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
-DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|discover_destroy|function|static void discover_destroy(void *user_data)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params

@@ -14,8 +14,8 @@ DECL|controller_info|function|static void controller_info(uint8_t *data, uint16_
 DECL|current_settings|variable|current_settings
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
 DECL|disconnect|function|static void disconnect(const uint8_t *data, uint16_t len)
-DECL|le_connected|function|static void le_connected(struct bt_conn *conn)
-DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn)
+DECL|le_connected|function|static void le_connected(struct bt_conn *conn, uint8_t err)
+DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|pair|function|static void pair(const uint8_t *data, uint16_t len)
 DECL|passkey_entry|function|static void passkey_entry(const uint8_t *data, uint16_t len)
 DECL|set_connectable|function|static void set_connectable(uint8_t *data, uint16_t len)
