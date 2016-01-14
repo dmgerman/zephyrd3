@@ -2,6 +2,12 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|background_scan_init|function|static void background_scan_init(void)
+DECL|bt_auth_cancel|function|int bt_auth_cancel(struct bt_conn *conn)
+DECL|bt_auth_cb_register|function|int bt_auth_cb_register(const struct bt_auth_cb *cb)
+DECL|bt_auth_passkey_confirm|function|int bt_auth_passkey_confirm(struct bt_conn *conn, bool match)
+DECL|bt_auth_passkey_entry|function|int bt_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
+DECL|bt_auth_pincode_entry|function|int bt_auth_pincode_entry(struct bt_conn *conn, const char *pin)
+DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
@@ -19,6 +25,7 @@ DECL|bt_conn_lookup_addr_br|function|struct bt_conn *bt_conn_lookup_addr_br(cons
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
 DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
 DECL|bt_conn_lookup_state_le|function|struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,const bt_conn_state_t state)
+DECL|bt_conn_pin_code_req|function|void bt_conn_pin_code_req(struct bt_conn *conn)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct net_buf *buf, uint8_t flags)
 DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
@@ -40,6 +47,8 @@ DECL|dummy|variable|dummy
 DECL|frag_buf|variable|frag_buf
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
+DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
+DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
 DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags, bool always_consume)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
