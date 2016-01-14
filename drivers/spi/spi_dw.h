@@ -53,7 +53,7 @@ DECL|DW_SPI_SR_TFNF_BIT|macro|DW_SPI_SR_TFNF_BIT
 DECL|DW_SPI_SSIENR_SSIEN_BIT|macro|DW_SPI_SSIENR_SSIEN_BIT
 DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
 DECL|DW_SSI_COMP_VERSION|macro|DW_SSI_COMP_VERSION
-DECL|__DW_SPI_PRIV_H__|macro|__DW_SPI_PRIV_H__
+DECL|__SPI_DW_H__|macro|__SPI_DW_H__
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;

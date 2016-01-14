@@ -37,7 +37,7 @@ DECL|INTEL_SPI_SSSR_TFL_MASK|macro|INTEL_SPI_SSSR_TFL_MASK
 DECL|INTEL_SPI_SSSR_TFL|macro|INTEL_SPI_SSSR_TFL
 DECL|INTEL_SPI_SSSR_TFS|macro|INTEL_SPI_SSSR_TFS
 DECL|INTEL_SPI_SSSR_TNF|macro|INTEL_SPI_SSSR_TNF
-DECL|__INTEL_SPI_PRIV_H__|macro|__INTEL_SPI_PRIV_H__
+DECL|__SPI_INTEL_PRIV_H__|macro|__SPI_INTEL_PRIV_H__
 DECL|config_func|member|spi_intel_config_t config_func;
 DECL|cs_gpio_name|member|char *cs_gpio_name;
 DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
