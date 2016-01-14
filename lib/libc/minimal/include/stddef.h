@@ -1,4 +1,3 @@
-DECL|NULL|macro|NULL
 DECL|__INC_stddef_h__|macro|__INC_stddef_h__
 DECL|__ptrdiff_t_defined|macro|__ptrdiff_t_defined
 DECL|__size_t_defined|macro|__size_t_defined

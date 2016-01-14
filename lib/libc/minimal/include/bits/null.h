@@ -1,0 +1,1 @@
+DECL|NULL|macro|NULL
