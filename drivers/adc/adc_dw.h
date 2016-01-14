@@ -3,6 +3,9 @@ DECL|ADC_CLK_RATIO_MASK|macro|ADC_CLK_RATIO_MASK
 DECL|ADC_CLR_DATA_A|macro|ADC_CLR_DATA_A
 DECL|ADC_CLR_OVERFLOW|macro|ADC_CLR_OVERFLOW
 DECL|ADC_CLR_UNDRFLOW|macro|ADC_CLR_UNDRFLOW
+DECL|ADC_CMD_LOAD_CALIBRATION|macro|ADC_CMD_LOAD_CALIBRATION
+DECL|ADC_CMD_RESET_CALIBRATION|macro|ADC_CMD_RESET_CALIBRATION
+DECL|ADC_CMD_START_CALIBRATION|macro|ADC_CMD_START_CALIBRATION
 DECL|ADC_CONFIG_SET_MASK|macro|ADC_CONFIG_SET_MASK
 DECL|ADC_CTRL|macro|ADC_CTRL
 DECL|ADC_DISABLE|macro|ADC_DISABLE
@@ -17,6 +20,7 @@ DECL|ADC_INT_DSB|macro|ADC_INT_DSB
 DECL|ADC_INT_ENABLE|macro|ADC_INT_ENABLE
 DECL|ADC_INT_ENA_MASK|macro|ADC_INT_ENA_MASK
 DECL|ADC_INT_ERR|macro|ADC_INT_ERR
+DECL|ADC_NONE_CALIBRATION|macro|ADC_NONE_CALIBRATION
 DECL|ADC_POP_SAMPLE|macro|ADC_POP_SAMPLE
 DECL|ADC_RESET|macro|ADC_RESET
 DECL|ADC_SAMPLE|macro|ADC_SAMPLE
@@ -62,6 +66,7 @@ DECL|START_ADC_SEQ|macro|START_ADC_SEQ
 DECL|adc_config|struct|struct adc_config {
 DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(void);
 DECL|adc_info|struct|struct adc_info {
+DECL|calibration_value|member|uint8_t calibration_value;
 DECL|capture_mode|member|uint8_t capture_mode;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
