@@ -5,6 +5,7 @@ DECL|DW_SPI_CTRLR0_DFS|macro|DW_SPI_CTRLR0_DFS
 DECL|DW_SPI_CTRLR0_SCPH|macro|DW_SPI_CTRLR0_SCPH
 DECL|DW_SPI_CTRLR0_SCPOL|macro|DW_SPI_CTRLR0_SCPOL
 DECL|DW_SPI_CTRLR0_SRL|macro|DW_SPI_CTRLR0_SRL
+DECL|DW_SPI_FIFO_DEPTH|macro|DW_SPI_FIFO_DEPTH
 DECL|DW_SPI_IMR_MASK_RX|macro|DW_SPI_IMR_MASK_RX
 DECL|DW_SPI_IMR_MASK_TX|macro|DW_SPI_IMR_MASK_TX
 DECL|DW_SPI_IMR_MASK|macro|DW_SPI_IMR_MASK
@@ -64,21 +65,22 @@ DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
 DECL|DW_SSI_COMP_VERSION|macro|DW_SSI_COMP_VERSION
 DECL|SPI_DFS_TO_BYTES|macro|SPI_DFS_TO_BYTES
 DECL|__SPI_DW_H__|macro|__SPI_DW_H__
+DECL|_unused|member|uint32_t _unused:2;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
-DECL|dfs|member|uint8_t dfs; /* data frame size in bytes */
-DECL|error|member|uint8_t error;
+DECL|dfs|member|uint32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
+DECL|error|member|uint32_t error:1;
+DECL|fifo_diff|member|uint32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
 DECL|int_mask|member|uint32_t int_mask;
 DECL|irq|member|uint32_t irq;
 DECL|regs|member|uint32_t regs;
 DECL|rx_buf_len|member|uint32_t rx_buf_len;
 DECL|rx_buf|member|uint8_t *rx_buf;
-DECL|slave|member|uint16_t slave;
+DECL|slave|member|uint32_t slave:17; /* up 16 slaves */
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
 DECL|sync|member|device_sync_call_t sync;
-DECL|t_len|member|uint32_t t_len;
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
 DECL|tx_buf|member|uint8_t *tx_buf;
