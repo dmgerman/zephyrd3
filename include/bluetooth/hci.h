@@ -125,6 +125,7 @@ DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
 DECL|BT_HCI_OP_WRITE_SCAN_ENABLE|macro|BT_HCI_OP_WRITE_SCAN_ENABLE
+DECL|BT_HCI_OP_WRITE_SSP_MODE|macro|BT_HCI_OP_WRITE_SSP_MODE
 DECL|BT_HCI_ROLE_MASTER|macro|BT_HCI_ROLE_MASTER
 DECL|BT_HCI_ROLE_SLAVE|macro|BT_HCI_ROLE_SLAVE
 DECL|BT_HCI_SCO|macro|BT_HCI_SCO
@@ -154,6 +155,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -276,6 +278,7 @@ DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
+DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
@@ -408,6 +411,7 @@ DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_interval|member|uint16_t min_interval;
+DECL|mode|member|uint8_t mode;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
