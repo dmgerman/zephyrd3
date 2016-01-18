@@ -1,0 +1,8 @@
+DECL|SIG_TYPE_B_B_P|enumerator|SIG_TYPE_B_B_P,
+DECL|SIG_TYPE_NONE|enumerator|SIG_TYPE_NONE = 1,
+DECL|SIG_TYPE_P|enumerator|SIG_TYPE_P,
+DECL|SIG_TYPE_S_B_B_P|enumerator|SIG_TYPE_S_B_B_P
+DECL|SIG_TYPE_S_B_P|enumerator|SIG_TYPE_S_B_P,
+DECL|SIG_TYPE_S_B|enumerator|SIG_TYPE_S_B,
+DECL|SIG_TYPE_S_P|enumerator|SIG_TYPE_S_P,
+DECL|SIG_TYPE_S|enumerator|SIG_TYPE_S,
