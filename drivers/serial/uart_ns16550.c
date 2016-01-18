@@ -43,6 +43,7 @@ DECL|LCR_SBRK|macro|LCR_SBRK
 DECL|LCR_SP|macro|LCR_SP
 DECL|LCR|macro|LCR
 DECL|LSR_BI|macro|LSR_BI
+DECL|LSR_EOB_MASK|macro|LSR_EOB_MASK
 DECL|LSR_FE|macro|LSR_FE
 DECL|LSR_OE|macro|LSR_OE
 DECL|LSR_PE|macro|LSR_PE
@@ -100,6 +101,7 @@ DECL|uart_ns16550_dev_data_t|struct|struct uart_ns16550_dev_data_t {
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
 DECL|uart_ns16550_drv_cmd|function|static int uart_ns16550_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
+DECL|uart_ns16550_err_check|function|static int uart_ns16550_err_check(struct device *dev)
 DECL|uart_ns16550_fifo_fill|function|static int uart_ns16550_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_ns16550_init|function|static int uart_ns16550_init(struct device *dev)
