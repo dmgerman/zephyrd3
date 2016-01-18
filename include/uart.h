@@ -20,6 +20,7 @@ DECL|irq_rx_disable|member|void (*irq_rx_disable)(struct device *dev);
 DECL|irq_rx_enable|member|void (*irq_rx_enable)(struct device *dev);
 DECL|irq_rx_ready|member|int (*irq_rx_ready)(struct device *dev);
 DECL|irq_tx_disable|member|void (*irq_tx_disable)(struct device *dev);
+DECL|irq_tx_empty|member|int (*irq_tx_empty)(struct device *dev);
 DECL|irq_tx_enable|member|void (*irq_tx_enable)(struct device *dev);
 DECL|irq_tx_ready|member|int (*irq_tx_ready)(struct device *dev);
 DECL|irq_update|member|int (*irq_update)(struct device *dev);
@@ -45,6 +46,7 @@ DECL|uart_irq_rx_disable|function|static inline void uart_irq_rx_disable(struct 
 DECL|uart_irq_rx_enable|function|static inline void uart_irq_rx_enable(struct device *dev)
 DECL|uart_irq_rx_ready|function|static inline int uart_irq_rx_ready(struct device *dev)
 DECL|uart_irq_tx_disable|function|static inline void uart_irq_tx_disable(struct device *dev)
+DECL|uart_irq_tx_empty|function|static inline int uart_irq_tx_empty(struct device *dev)
 DECL|uart_irq_tx_enable|function|static inline void uart_irq_tx_enable(struct device *dev)
 DECL|uart_irq_tx_ready|function|static inline int uart_irq_tx_ready(struct device *dev)
 DECL|uart_irq_update|function|static inline int uart_irq_update(struct device *dev)
