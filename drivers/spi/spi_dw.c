@@ -28,6 +28,7 @@ DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *de
 DECL|_spi_config_cs|macro|_spi_config_cs
 DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
 DECL|_spi_control_cs|macro|_spi_control_cs
+DECL|_spi_dw_is_controller_ready|function|static inline bool _spi_dw_is_controller_ready(struct device *dev)
 DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api
 DECL|int_unmask|macro|int_unmask
