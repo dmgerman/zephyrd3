@@ -112,6 +112,7 @@ DECL|uart_ns16550_irq_rx_disable|function|static void uart_ns16550_irq_rx_disabl
 DECL|uart_ns16550_irq_rx_enable|function|static void uart_ns16550_irq_rx_enable(struct device *dev)
 DECL|uart_ns16550_irq_rx_ready|function|static int uart_ns16550_irq_rx_ready(struct device *dev)
 DECL|uart_ns16550_irq_tx_disable|function|static void uart_ns16550_irq_tx_disable(struct device *dev)
+DECL|uart_ns16550_irq_tx_empty|function|static int uart_ns16550_irq_tx_empty(struct device *dev)
 DECL|uart_ns16550_irq_tx_enable|function|static void uart_ns16550_irq_tx_enable(struct device *dev)
 DECL|uart_ns16550_irq_tx_ready|function|static int uart_ns16550_irq_tx_ready(struct device *dev)
 DECL|uart_ns16550_irq_update|function|static int uart_ns16550_irq_update(struct device *dev)
