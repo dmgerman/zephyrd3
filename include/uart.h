@@ -1,10 +1,15 @@
 DECL|LINE_CTRL_BAUD_RATE|macro|LINE_CTRL_BAUD_RATE
 DECL|LINE_CTRL_DTR|macro|LINE_CTRL_DTR
 DECL|LINE_CTRL_RTS|macro|LINE_CTRL_RTS
+DECL|UART_ERROR_BREAK|macro|UART_ERROR_BREAK
+DECL|UART_ERROR_FRAMING|macro|UART_ERROR_FRAMING
+DECL|UART_ERROR_OVERRUN|macro|UART_ERROR_OVERRUN
+DECL|UART_ERROR_PARITY|macro|UART_ERROR_PARITY
 DECL|UART_OPTION_AFCE|macro|UART_OPTION_AFCE
 DECL|__INCuarth|macro|__INCuarth
 DECL|base|member|uint8_t *base;
 DECL|drv_cmd|member|int (*drv_cmd)(struct device *dev, uint32_t cmd, uint32_t p);
+DECL|err_check|member|int (*err_check)(struct device *dev);
 DECL|fifo_fill|member|int (*fifo_fill)(struct device *dev, const uint8_t *tx_data, int len);
 DECL|fifo_read|member|int (*fifo_read)(struct device *dev, uint8_t *rx_data, const int size);
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
@@ -28,6 +33,7 @@ DECL|sys_clk_freq|member|uint32_t sys_clk_freq; /* System clock frequency in Hz 
 DECL|uart_device_config|struct|struct uart_device_config {
 DECL|uart_driver_api|struct|struct uart_driver_api {
 DECL|uart_drv_cmd|function|static inline int uart_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
+DECL|uart_err_check|function|static inline int uart_err_check(struct device *dev)
 DECL|uart_fifo_fill|function|static inline int uart_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_fifo_read|function|static inline int uart_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_irq_err_disable|function|static inline void uart_irq_err_disable(struct device *dev)
