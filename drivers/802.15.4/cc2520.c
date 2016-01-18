@@ -65,6 +65,7 @@ DECL|cc2520_sfd_counter|variable|cc2520_sfd_counter
 DECL|cc2520_sfd_end_time|variable|cc2520_sfd_end_time
 DECL|cc2520_sfd_start_time|variable|cc2520_sfd_start_time
 DECL|cc2520_sgl_dev|variable|cc2520_sgl_dev
+DECL|cc2520_spi_configure|function|static struct device *cc2520_spi_configure(void)
 DECL|cc2520_transmit|function|static int cc2520_transmit(struct net_buf *buf, unsigned short payload_len)
 DECL|channel|variable|channel
 DECL|clear_exceptions|function|static void clear_exceptions(void)
