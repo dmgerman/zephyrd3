@@ -69,6 +69,9 @@ DECL|_unused|member|uint32_t _unused:2;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
+DECL|cs_gpio_name|member|char *cs_gpio_name;
+DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
+DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|dfs|member|uint32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|uint32_t error:1;
 DECL|fifo_diff|member|uint32_t fifo_diff:9; /* cannot be bigger than FIFO depth */

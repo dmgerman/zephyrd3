@@ -24,6 +24,10 @@ DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_clock_config|function|static inline void _clock_config(struct device *dev)
 DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
 DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
+DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *dev)
+DECL|_spi_config_cs|macro|_spi_config_cs
+DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
+DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api
 DECL|int_unmask|macro|int_unmask
