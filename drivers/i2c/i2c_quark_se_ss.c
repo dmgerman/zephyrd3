@@ -1,7 +1,8 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|_i2c_qse_ss_check_irq|function|static inline bool _i2c_qse_ss_check_irq(struct device *dev, uint32_t mask)
-DECL|_i2c_qse_ss_config_irq|function|void _i2c_qse_ss_config_irq(struct device *port)
+DECL|_i2c_qse_ss_config_irq_0|function|void _i2c_qse_ss_config_irq_0(struct device *port)
+DECL|_i2c_qse_ss_config_irq_1|function|void _i2c_qse_ss_config_irq_1(struct device *port)
 DECL|_i2c_qse_ss_data_ask|function|static inline void _i2c_qse_ss_data_ask(struct device *dev)
 DECL|_i2c_qse_ss_data_read|function|static void _i2c_qse_ss_data_read(struct device *dev)
 DECL|_i2c_qse_ss_data_send|function|static int _i2c_qse_ss_data_send(struct device *dev)

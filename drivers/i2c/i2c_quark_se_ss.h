@@ -19,14 +19,6 @@ DECL|hcnt|member|uint16_t hcnt;
 DECL|i2c_qse_ss_cfg_func_t|typedef|typedef void (*i2c_qse_ss_cfg_func_t)(struct device *port);
 DECL|i2c_qse_ss_dev_config|struct|struct i2c_qse_ss_dev_config {
 DECL|i2c_qse_ss_rom_config|struct|struct i2c_qse_ss_rom_config {
-DECL|isr_err_mask|member|uint32_t isr_err_mask;
-DECL|isr_err_vector|member|uint32_t isr_err_vector;
-DECL|isr_rx_mask|member|uint32_t isr_rx_mask;
-DECL|isr_rx_vector|member|uint32_t isr_rx_vector;
-DECL|isr_stop_mask|member|uint32_t isr_stop_mask;
-DECL|isr_stop_vector|member|uint32_t isr_stop_vector;
-DECL|isr_tx_mask|member|uint32_t isr_tx_mask;
-DECL|isr_tx_vector|member|uint32_t isr_tx_vector;
 DECL|lcnt|member|uint16_t lcnt;
 DECL|request_bytes|member|uint32_t request_bytes;
 DECL|rx_pending|member|uint32_t rx_pending;
