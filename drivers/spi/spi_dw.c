@@ -7,37 +7,14 @@ DECL|DBG_COUNTER_RESULT|macro|DBG_COUNTER_RESULT
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
-DECL|DEFINE_CLEAR_BIT_OP|macro|DEFINE_CLEAR_BIT_OP
-DECL|DEFINE_MM_REG_READ|macro|DEFINE_MM_REG_READ
-DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
-DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
-DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
-DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
-DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
-DECL|_REG_READ|macro|_REG_READ
-DECL|_REG_READ|macro|_REG_READ
-DECL|_REG_SET_BIT|macro|_REG_SET_BIT
-DECL|_REG_SET_BIT|macro|_REG_SET_BIT
-DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
-DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
-DECL|_REG_WRITE|macro|_REG_WRITE
-DECL|_REG_WRITE|macro|_REG_WRITE
-DECL|_clock_config|function|static inline void _clock_config(struct device *dev)
-DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
-DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
-DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *dev)
-DECL|_spi_config_cs|macro|_spi_config_cs
-DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
-DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|_spi_dw_is_controller_ready|function|static inline bool _spi_dw_is_controller_ready(struct device *dev)
 DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api
-DECL|int_unmask|macro|int_unmask
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
 DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
