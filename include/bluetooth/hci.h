@@ -322,7 +322,7 @@ DECL|ediv|member|uint16_t ediv;
 DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
-DECL|encr_mode|member|uint8_t encr_mode;
+DECL|encr_enabled|member|uint8_t encr_enabled;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|events|member|uint8_t events[8];
 DECL|events|member|uint8_t events[8];
