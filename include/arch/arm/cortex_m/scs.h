@@ -26,6 +26,7 @@ DECL|__scs|struct|struct __scs {
 DECL|__shcsr|union|union __shcsr {
 DECL|__stcsr|union|union __stcsr {
 DECL|__vtor|union|union __vtor {
+DECL|_scs_relocate_vector_table|function|static inline void _scs_relocate_vector_table(void *new_addr)
 DECL|actlr|member|union __actlr actlr; /* 0x008 Auxiliary ConTroL Register */
 DECL|addr|member|uint32_t addr : 27 __packed;
 DECL|afsr|member|uint32_t afsr; /* 0xd3C Aux Fault Status Register */
