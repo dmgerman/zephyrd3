@@ -10,6 +10,6 @@ DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, c
 DECL|discover_params|variable|discover_params
 DECL|eir_found|function|static bool eir_found(uint8_t type, const uint8_t *data, uint8_t data_len, void *user_data)
 DECL|mainloop|function|void mainloop(void)
-DECL|subscribe_func|function|static uint8_t subscribe_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid

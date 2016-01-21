@@ -56,7 +56,7 @@ DECL|gatt_prepare_write|function|static int gatt_prepare_write(struct bt_conn *c
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct net_buf *buf, bt_att_func_t func, void *user_data, bt_att_destroy_t destroy)
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
-DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
+DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
