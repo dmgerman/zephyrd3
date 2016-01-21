@@ -1,6 +1,7 @@
 DECL|NBLE_BUF_SIZE|macro|NBLE_BUF_SIZE
 DECL|NBLE_IPC_COUNT|macro|NBLE_IPC_COUNT
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|STATUS_RX_DATA|enumerator|STATUS_RX_DATA
 DECL|STATUS_RX_HDR|enumerator|STATUS_RX_HDR,
 DECL|STATUS_RX_IDLE|enumerator|STATUS_RX_IDLE = 0,
@@ -16,7 +17,6 @@ DECL|ipc_uart_channel_open|function|void *ipc_uart_channel_open(int channel_id, 
 DECL|ipc_uart_close_channel|function|void ipc_uart_close_channel(int channel_id)
 DECL|ipc_uart_info|struct|struct ipc_uart_info {
 DECL|ipc_uart_ns16550_init|function|static int ipc_uart_ns16550_init(struct device *dev)
-DECL|ipc_uart_ns16550_send_pdu|function|int ipc_uart_ns16550_send_pdu(struct device *dev, void *handle, int len, void *p_data)
 DECL|ipc_uart_ns16550_set_tx_cb|function|void ipc_uart_ns16550_set_tx_cb(struct device *dev, void (*cb)(bool, void*),void *param)
 DECL|ipc_uart|struct|struct ipc_uart {
 DECL|ipc|variable|ipc
@@ -26,6 +26,9 @@ DECL|nble_dev|variable|nble_dev
 DECL|nble_discard|function|static size_t nble_discard(struct device *uart, size_t len)
 DECL|nble_open|function|int nble_open(void)
 DECL|nble_read|function|static int nble_read(struct device *uart, uint8_t *buf, size_t len, size_t min)
+DECL|poll_out|function|static void poll_out(const void *buf, size_t length)
+DECL|rpc_alloc_cb|function|uint8_t *rpc_alloc_cb(uint16_t length)
+DECL|rpc_transmit_cb|function|void rpc_transmit_cb(uint8_t *p_buf, uint16_t length)
 DECL|rx_hdr|member|struct ipc_uart_header rx_hdr;
 DECL|rx_ptr|member|uint8_t *rx_ptr;
 DECL|rx_size|member|uint16_t rx_size;
@@ -38,7 +41,7 @@ DECL|tx_data|member|uint8_t *tx_data;
 DECL|tx_hdr|member|struct ipc_uart_header tx_hdr;
 DECL|tx_state|member|uint8_t tx_state;
 DECL|tx_wakelock_acquired|member|uint8_t tx_wakelock_acquired;
+DECL|tx|variable|tx
 DECL|uart_enabled|member|uint8_t uart_enabled;
 DECL|uart_frame_recv|function|static void uart_frame_recv(uint16_t len, uint8_t *p_data)
 DECL|uart_num|member|int uart_num; /* UART device to use */
-DECL|uart_poll_bytes|function|static void uart_poll_bytes(uint8_t *buf, size_t len)
