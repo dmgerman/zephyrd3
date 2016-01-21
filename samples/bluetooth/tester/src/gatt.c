@@ -47,7 +47,6 @@ DECL|find_included|function|static void find_included(uint8_t *data, uint16_t le
 DECL|flush_value|function|static int flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
 DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
-DECL|gatt_buf_isempty|function|static bool gatt_buf_isempty(void)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern)
@@ -59,14 +58,11 @@ DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|prep_data|member|uint8_t *prep_data;
-DECL|read_cb|function|static uint8_t read_cb(struct bt_conn *conn, int err, const void *data, uint16_t length)
-DECL|read_destroy|function|static void read_destroy(void *user_data)
-DECL|read_long_result|function|static void read_long_result(void *user_data)
+DECL|read_cb|function|static uint8_t read_cb(struct bt_conn *conn, int err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
+DECL|read_destroy|function|static void read_destroy(struct bt_gatt_read_params *params)
 DECL|read_long|function|static void read_long(uint8_t *data, uint16_t len)
-DECL|read_multiple_result|function|static uint8_t read_multiple_result(struct bt_conn *conn, int err, const void *data, uint16_t length)
 DECL|read_multiple|function|static void read_multiple(uint8_t *data, uint16_t len)
 DECL|read_params|variable|read_params
-DECL|read_result|function|static void read_result(void *user_data)
 DECL|read_value|function|static int read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read|function|static void read(uint8_t *data, uint16_t len)
 DECL|set_ccc_value|function|static uint8_t set_ccc_value(struct bt_gatt_attr *attr, const void *value, const uint16_t len)

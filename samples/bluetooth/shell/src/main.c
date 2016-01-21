@@ -73,8 +73,7 @@ DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struc
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_destroy|function|static void read_destroy(void *user_data)
-DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, int err, const void *data, uint16_t length)
+DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, int err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
 DECL|read_params|variable|read_params
 DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd

@@ -65,7 +65,6 @@ DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|description|member|uint16_t description;
-DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
@@ -75,6 +74,8 @@ DECL|flush|member|int (*flush)(struct bt_conn *conn,
 DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
+DECL|handle_count|member|size_t handle_count;
+DECL|handles|member|uint16_t *handles;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|name_space|member|uint8_t name_space;
@@ -85,6 +86,7 @@ DECL|perm|member|uint8_t perm;
 DECL|properties|member|uint16_t properties;
 DECL|properties|member|uint8_t properties;
 DECL|read|member|int (*read)(struct bt_conn *conn,
+DECL|single|member|} single;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|type|member|uint8_t type;
