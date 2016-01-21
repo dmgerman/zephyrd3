@@ -101,6 +101,7 @@ DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|sync|member|void *sync;
 DECL|update_conn_param|function|static int update_conn_param(struct bt_conn *conn)
+DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
 DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
 DECL|valid_le_scan_param|function|static bool valid_le_scan_param(const struct bt_le_scan_param *param)
