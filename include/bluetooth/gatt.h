@@ -66,7 +66,6 @@ DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|description|member|uint16_t description;
 DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|destroy|member|void (*destroy)(void *user_data);
-DECL|destroy|member|void (*destroy)(void *user_data);
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;

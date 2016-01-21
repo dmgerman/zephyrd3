@@ -13,6 +13,7 @@ DECL|add_included_cb|function|static uint8_t add_included_cb(const struct bt_gat
 DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
 DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_t len, struct bt_uuid *bt_uuid)
+DECL|btp_opcode|variable|btp_opcode
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc_added|variable|ccc_added
 DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
@@ -25,19 +26,15 @@ DECL|config_subscription|function|static void config_subscription(uint8_t *data,
 DECL|data|member|uint8_t *data;
 DECL|default_conn|variable|default_conn
 DECL|disable_subscription|function|static int disable_subscription(struct bt_conn *conn, uint16_t ccc_handle)
-DECL|disc_all_chrc_result|function|static void disc_all_chrc_result(void *user_data)
 DECL|disc_all_chrc|function|static void disc_all_chrc(uint8_t *data, uint16_t len)
 DECL|disc_all_desc_cb|function|static uint8_t disc_all_desc_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
-DECL|disc_all_desc_result|function|static void disc_all_desc_result(void *user_data)
 DECL|disc_all_desc|function|static void disc_all_desc(uint8_t *data, uint16_t len)
 DECL|disc_chrc_cb|function|static uint8_t disc_chrc_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
-DECL|disc_chrc_uuid_result|function|static void disc_chrc_uuid_result(void *user_data)
 DECL|disc_chrc_uuid|function|static void disc_chrc_uuid(uint8_t *data, uint16_t len)
 DECL|disc_prim_uuid_cb|function|static uint8_t disc_prim_uuid_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
-DECL|disc_prim_uuid_result|function|static void disc_prim_uuid_result(void *user_data)
 DECL|disc_prim_uuid|function|static void disc_prim_uuid(uint8_t *data, uint16_t len)
-DECL|discover_complete|function|static void discover_complete(void *user_data)
-DECL|discover_destroy|function|static void discover_destroy(void *user_data)
+DECL|discover_complete|function|static void discover_complete(struct bt_gatt_discover_params *params)
+DECL|discover_destroy|function|static void discover_destroy(struct bt_gatt_discover_params *params)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|dsc|variable|dsc
@@ -47,7 +44,6 @@ DECL|ev_buf|variable|ev_buf
 DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn, uint8_t err)
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
 DECL|find_included_cb|function|static uint8_t find_included_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
-DECL|find_included_result|function|static void find_included_result(void *user_data)
 DECL|find_included|function|static void find_included(uint8_t *data, uint16_t len)
 DECL|flush_value|function|static int flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
