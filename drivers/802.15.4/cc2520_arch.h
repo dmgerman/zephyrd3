@@ -1,12 +1,12 @@
 DECL|CC2520_GPIO|macro|CC2520_GPIO
-DECL|CC2520_PRINTF|macro|CC2520_PRINTF
-DECL|CC2520_PRINTF|macro|CC2520_PRINTF
-DECL|CC2520_PRINT|macro|CC2520_PRINT
-DECL|CC2520_PRINT|macro|CC2520_PRINT
 DECL|CC2520_SPI|macro|CC2520_SPI
 DECL|CLOCK_CYCLE_LT|macro|CLOCK_CYCLE_LT
 DECL|CLOCK_MSEC_TO_CYCLES|macro|CLOCK_MSEC_TO_CYCLES
 DECL|CONFIG_CC2520_DRV_NAME|macro|CONFIG_CC2520_DRV_NAME
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DRIVER_STR|macro|DRIVER_STR
 DECL|__CC2520_ARCH_H__|macro|__CC2520_ARCH_H__
 DECL|cc2520_clear_fifop_int|function|static inline void cc2520_clear_fifop_int(void)
 DECL|cc2520_config|struct|struct cc2520_config {
@@ -31,4 +31,5 @@ DECL|cc2520_write_ram|function|static inline bool cc2520_write_ram(uint8_t *buff
 DECL|cc2520_write_reg|function|static inline bool cc2520_write_reg(uint16_t addr, uint16_t value)
 DECL|gpios|member|struct cc2520_gpio_config **gpios;
 DECL|gpio|member|struct device *gpio;
+DECL|spi_transfer|function|static inline bool spi_transfer(struct device *dev,uint8_t *data_out, uint8_t *data_in, int len)
 DECL|spi|member|struct device *spi;

@@ -1,7 +1,6 @@
 DECL|AUTOACK|macro|AUTOACK
 DECL|AUTOCRC|macro|AUTOCRC
 DECL|BUSYWAIT_UNTIL|macro|BUSYWAIT_UNTIL
-DECL|BV|macro|BV
 DECL|CC2520_CCA_IS_1|macro|CC2520_CCA_IS_1
 DECL|CC2520_CLEAR_FIFOP_INT|macro|CC2520_CLEAR_FIFOP_INT
 DECL|CC2520_CONF_AUTOACK|macro|CC2520_CONF_AUTOACK
@@ -10,22 +9,15 @@ DECL|CC2520_ENABLE_FIFOP_INT|macro|CC2520_ENABLE_FIFOP_INT
 DECL|CC2520_FIFOP_INT_INIT|macro|CC2520_FIFOP_INT_INIT
 DECL|CC2520_FIFOP_IS_1|macro|CC2520_FIFOP_IS_1
 DECL|CC2520_FIFO_IS_1|macro|CC2520_FIFO_IS_1
-DECL|CC2520_MUTEX_DEBUG|macro|CC2520_MUTEX_DEBUG
-DECL|CC2520_MUTEX_DEBUG|macro|CC2520_MUTEX_DEBUG
 DECL|CC2520_SFD_IS_1|macro|CC2520_SFD_IS_1
 DECL|CC2520_STROBE_PLUS_NOP|macro|CC2520_STROBE_PLUS_NOP
 DECL|CORR_THR|macro|CORR_THR
-DECL|DEBUG|macro|DEBUG
-DECL|DEBUG|macro|DEBUG
-DECL|DRIVER_STR|macro|DRIVER_STR
 DECL|FIFOP_THR|macro|FIFOP_THR
 DECL|FOOTER1_CORRELATION|macro|FOOTER1_CORRELATION
 DECL|FOOTER1_CRC_OK|macro|FOOTER1_CRC_OK
 DECL|FOOTER_LEN|macro|FOOTER_LEN
 DECL|FRAME_FILTER_ENABLE|macro|FRAME_FILTER_ENABLE
 DECL|FRAME_MAX_VERSION|macro|FRAME_MAX_VERSION
-DECL|GET_LOCK|macro|GET_LOCK
-DECL|RELEASE_LOCK|macro|RELEASE_LOCK
 DECL|SET_RESET_ACTIVE|macro|SET_RESET_ACTIVE
 DECL|SET_RESET_INACTIVE|macro|SET_RESET_INACTIVE
 DECL|SET_VREG_ACTIVE|macro|SET_VREG_ACTIVE
@@ -36,10 +28,6 @@ DECL|WAIT_10ms|macro|WAIT_10ms
 DECL|WAIT_1ms|macro|WAIT_1ms
 DECL|WAIT_200ms|macro|WAIT_200ms
 DECL|WITH_SEND_CCA|macro|WITH_SEND_CCA
-DECL|_get_lock_debug|function|static void _get_lock_debug(const char *caller, int line)
-DECL|_get_lock|macro|_get_lock
-DECL|_relase_lock|macro|_relase_lock
-DECL|_release_lock_debug|function|static void _release_lock_debug(const char *caller, int line)
 DECL|cc2520_15_4_radio_driver|variable|cc2520_15_4_radio_driver
 DECL|cc2520_cca_valid|function|int cc2520_cca_valid(void)
 DECL|cc2520_cca|function|static int cc2520_cca(void)
@@ -74,6 +62,7 @@ DECL|cc2520_set_value|function|radio_result_t cc2520_set_value(radio_param_t par
 DECL|cc2520_sfd_counter|variable|cc2520_sfd_counter
 DECL|cc2520_sfd_end_time|variable|cc2520_sfd_end_time
 DECL|cc2520_sfd_start_time|variable|cc2520_sfd_start_time
+DECL|cc2520_sgl_dev|variable|cc2520_sgl_dev
 DECL|cc2520_transmit|function|static int cc2520_transmit(struct net_buf *buf, unsigned short payload_len)
 DECL|channel|variable|channel
 DECL|flushrx|function|static void flushrx(void)
@@ -83,10 +72,6 @@ DECL|getrxbyte|function|static void getrxbyte(uint8_t *byte)
 DECL|getrxdata|function|static void getrxdata(void *buf, int len)
 DECL|init_ok|variable|init_ok
 DECL|last_packet_timestamp|variable|last_packet_timestamp
-DECL|lock_off|variable|lock_off
-DECL|lock_on|variable|lock_on
-DECL|locked|variable|locked
-DECL|lock|variable|lock
 DECL|off|function|static void off(void)
 DECL|on|function|static void on(void)
 DECL|print_radio_status|function|static void print_radio_status(void)
