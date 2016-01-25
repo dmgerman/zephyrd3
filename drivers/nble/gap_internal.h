@@ -116,7 +116,7 @@ DECL|conn_values|member|struct ble_gap_connection_values conn_values;
 DECL|data|member|uint8_t data[31];
 DECL|debug_params|struct|struct debug_params {
 DECL|debug_response|struct|struct debug_response {
-DECL|delta_dBm|member|uint8_t delta_dBm; /**< minimum RSSI dBm change to report a new RSSI value */
+DECL|delta_dBm|member|uint8_t delta_dBm; /**< minimum RSSI dBm change report new val */
 DECL|filter_policy|member|uint8_t filter_policy; /**< filter policy to apply with white list */
 DECL|gap_status|member|uint8_t gap_status;
 DECL|hci_reason|member|uint8_t hci_reason; /**< HCI disconnect reason */
@@ -136,7 +136,7 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len; /**< Device name length (0-248) */
 DECL|link_sup_to|member|uint16_t link_sup_to;
 DECL|map|member|uint8_t map[5]; /**< 37 bits are used of the 40 bits (LSB) */
-DECL|min_count|member|uint8_t min_count; /**< number of delta_dBm changes before sending a new RSSI report */
+DECL|min_count|member|uint8_t min_count;
 DECL|name_array|member|uint8_t name_array[20]; /**< Device */
 DECL|name|member|struct ble_gap_device_name name;
 DECL|oob|member|uint8_t oob[16]; /**< 16 bytes of OOB security data */
