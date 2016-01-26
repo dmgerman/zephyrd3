@@ -9,7 +9,6 @@ DECL|DEV_OK|macro|DEV_OK
 DECL|DEV_USED|macro|DEV_USED
 DECL|_DEVICE_H_|macro|_DEVICE_H_
 DECL|_t_sem|member|struct _k_sem_struct _t_sem;
-DECL|caller_is_task|member|bool caller_is_task;
 DECL|config_info|member|void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|device_config|struct|struct device_config {
@@ -26,3 +25,4 @@ DECL|f_sem|member|struct nano_sem f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
 DECL|t_sem|member|ksem_t t_sem;
+DECL|waiter_is_task|member|bool waiter_is_task;
