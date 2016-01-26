@@ -74,6 +74,8 @@ DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
 DECL|conn_handle|member|uint16_t conn_handle; /**< GAP connection handle */
+DECL|data_size|member|uint16_t data_size;
+DECL|data|member|uint8_t data[0];
 DECL|decl_handle|member|uint16_t decl_handle; /**< Charact declaration handle */
 DECL|desc|member|struct ble_gattc_descriptor desc;
 DECL|end_handle|member|uint16_t end_handle;
@@ -91,7 +93,6 @@ DECL|handle|member|uint16_t handle; /**< handle of char attr read */
 DECL|incl_handle|member|uint16_t incl_handle; /**< Handle of included service */
 DECL|incls|member|struct ble_gattc_incl_svc incls;
 DECL|len|member|uint16_t len;
-DECL|max_len|member|uint16_t max_len;
 DECL|msg_type|member|uint8_t msg_type;
 DECL|nble_gatt_rd_evt|struct|struct nble_gatt_rd_evt {
 DECL|offset|member|uint16_t offset;
@@ -127,8 +128,6 @@ DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< Discover type @ref BLE_GATT_DISC_TYPES */
-DECL|user_data_offset|member|uint16_t user_data_offset;
-DECL|uuid_offset|member|uint16_t uuid_offset;
 DECL|uuid|member|struct bt_uuid uuid; /**< Attribute UUID */
 DECL|uuid|member|struct bt_uuid uuid; /**< Attribute's UUID */
 DECL|uuid|member|struct bt_uuid uuid; /**< Charact UUID */
