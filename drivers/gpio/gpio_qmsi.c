@@ -7,7 +7,11 @@ DECL|api_funcs|variable|api_funcs
 DECL|callback|member|gpio_callback_t callback;
 DECL|gpio_0_config|variable|gpio_0_config
 DECL|gpio_0_runtime|variable|gpio_0_runtime
+DECL|gpio_aon_config|variable|gpio_aon_config
+DECL|gpio_aon_runtime|variable|gpio_aon_runtime
 DECL|gpio_qmsi_0_int_callback|function|static void gpio_qmsi_0_int_callback(uint32_t status)
+DECL|gpio_qmsi_aon_int_callback|function|static void gpio_qmsi_aon_int_callback(uint32_t status)
+DECL|gpio_qmsi_callback|function|static void gpio_qmsi_callback(struct device *port, uint32_t status)
 DECL|gpio_qmsi_config|function|static inline int gpio_qmsi_config(struct device *port, int access_op, uint32_t pin, int flags)
 DECL|gpio_qmsi_config|struct|struct gpio_qmsi_config {
 DECL|gpio_qmsi_disable_callback|function|static inline int gpio_qmsi_disable_callback(struct device *port, int access_op, uint32_t pin)
