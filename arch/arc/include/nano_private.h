@@ -90,6 +90,7 @@ DECL|tFirqRegs|typedef|typedef struct firq_regs tFirqRegs;
 DECL|tISF|typedef|typedef struct irq_stack_frame tISF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
+DECL|task_timeout|member|int32_t task_timeout;
 DECL|task|member|struct tcs *task; /* current task the nanokernel knows about */
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */

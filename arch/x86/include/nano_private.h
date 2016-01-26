@@ -394,6 +394,7 @@ DECL|tNANO|typedef|} tNANO;
 DECL|tPreempFloatReg|typedef|} tPreempFloatReg;
 DECL|tPreempReg|typedef|} tPreempReg;
 DECL|tXmmReg|typedef|} tXmmReg;
+DECL|task_timeout|member|int32_t task_timeout;
 DECL|task|member|struct tcs *task; /* pointer to runnable task */
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
