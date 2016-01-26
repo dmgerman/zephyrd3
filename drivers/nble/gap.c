@@ -42,3 +42,4 @@ DECL|on_ble_get_bonded_device_list_rsp|function|void on_ble_get_bonded_device_li
 DECL|on_ble_get_version_rsp|function|void on_ble_get_version_rsp(const struct ble_version_response *rsp)
 DECL|on_ble_set_enable_config_rsp|function|void on_ble_set_enable_config_rsp(const struct ble_core_response *par)
 DECL|on_nble_up|function|void on_nble_up(void)
+DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
