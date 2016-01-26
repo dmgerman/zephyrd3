@@ -13,16 +13,16 @@ DECL|caller_is_task|member|bool caller_is_task;
 DECL|config_info|member|void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|device_config|struct|struct device_config {
+DECL|device_sync_call_complete|function|static inline void device_sync_call_complete(device_sync_call_t *sync)
+DECL|device_sync_call_complete|function|static inline void device_sync_call_complete(device_sync_call_t *sync)
+DECL|device_sync_call_init|function|static inline void device_sync_call_init(device_sync_call_t *sync)
 DECL|device_sync_call_t|typedef|} device_sync_call_t;
+DECL|device_sync_call_wait|function|static inline void device_sync_call_wait(device_sync_call_t *sync)
+DECL|device_sync_call_wait|function|static inline void device_sync_call_wait(device_sync_call_t *sync)
 DECL|device|struct|struct device {
 DECL|driver_api|member|void *driver_api;
 DECL|driver_data|member|void *driver_data;
 DECL|f_sem|member|struct nano_sem f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
-DECL|synchronous_call_complete|function|static inline void synchronous_call_complete(device_sync_call_t *sync)
-DECL|synchronous_call_complete|function|static inline void synchronous_call_complete(device_sync_call_t *sync)
-DECL|synchronous_call_init|function|static inline void synchronous_call_init(device_sync_call_t *sync)
-DECL|synchronous_call_wait|function|static inline void synchronous_call_wait(device_sync_call_t *sync)
-DECL|synchronous_call_wait|function|static inline void synchronous_call_wait(device_sync_call_t *sync)
 DECL|t_sem|member|ksem_t t_sem;
