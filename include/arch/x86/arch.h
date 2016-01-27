@@ -9,6 +9,7 @@ DECL|DYN_STUB_SIZE|macro|DYN_STUB_SIZE
 DECL|DYN_STUB_SIZE|macro|DYN_STUB_SIZE
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
+DECL|IRQ_CONNECT|macro|IRQ_CONNECT
 DECL|ISR_LIST|typedef|} ISR_LIST;
 DECL|MK_ISR_NAME|macro|MK_ISR_NAME
 DECL|NANO_CPU_INT_REGISTER|macro|NANO_CPU_INT_REGISTER
@@ -63,7 +64,6 @@ DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
-DECL|irq_connect|macro|irq_connect
 DECL|irq_lock|function|static inline __attribute__((always_inline)) unsigned int irq_lock(void)
 DECL|irq_unlock|function|static inline __attribute__((always_inline)) void irq_unlock(unsigned int key)
 DECL|irq|member|unsigned int irq;
