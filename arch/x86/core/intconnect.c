@@ -12,5 +12,6 @@ DECL|dyn_irq_info|struct|struct dyn_irq_info {
 DECL|dyn_irq_list|variable|dyn_irq_list
 DECL|handler|member|void (*handler)(void *param);
 DECL|irq_connect_dynamic|function|int irq_connect_dynamic(unsigned int irq, unsigned int priority,void (*routine)(void *parameter), void *parameter, uint32_t flags)
+DECL|irq_debug_dump_idt|function|void irq_debug_dump_idt(void)
 DECL|next_irq_stub|variable|next_irq_stub
 DECL|param|member|void *param;
