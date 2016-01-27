@@ -1,0 +1,5 @@
+DECL|ccm_cbc_mac|function|static void ccm_cbc_mac(uint8_t *T, const uint8_t *data, uint32_t dlen, uint32_t flag, TCAesKeySched_t sched)
+DECL|ccm_ctr_mode|function|static int32_t ccm_ctr_mode(uint8_t *out, uint32_t outlen, const uint8_t *in, uint32_t inlen, uint8_t *ctr, const TCAesKeySched_t sched)
+DECL|tc_ccm_config|function|int32_t tc_ccm_config(TCCcmMode_t c, TCAesKeySched_t sched, uint8_t *nonce, uint32_t nlen, uint32_t mlen)
+DECL|tc_ccm_decryption_verification|function|int32_t tc_ccm_decryption_verification(uint8_t *out, const uint8_t *associated_data, uint32_t alen, const uint8_t *payload, uint32_t plen, TCCcmMode_t c)
+DECL|tc_ccm_generation_encryption|function|int32_t tc_ccm_generation_encryption(uint8_t *out, const uint8_t *associated_data, uint32_t alen, const uint8_t *payload, uint32_t plen, TCCcmMode_t c)
