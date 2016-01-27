@@ -36,6 +36,7 @@ DECL|irq|member|unsigned int irq;
 DECL|isr|member|void *isr;
 DECL|main|function|int main(int argc, char *argv[])
 DECL|num_entries|member|unsigned int num_entries;
+DECL|num_irq_lines|variable|num_irq_lines
 DECL|num_vectors|variable|num_vectors
 DECL|open_files|function|static void open_files(void)
 DECL|priority|member|unsigned int priority;
