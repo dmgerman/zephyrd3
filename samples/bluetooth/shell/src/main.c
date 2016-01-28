@@ -16,6 +16,7 @@ DECL|auth_passkey_confirm|function|static void auth_passkey_confirm(struct bt_co
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_entry|function|static void auth_passkey_entry(struct bt_conn *conn)
 DECL|auth_pincode_entry|function|static void auth_pincode_entry(struct bt_conn *conn, bool highsec)
+DECL|bt_ready|function|static void bt_ready(int err)
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static void cmd_advertise(int argc, char *argv[])
