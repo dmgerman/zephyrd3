@@ -1,5 +1,5 @@
-DECL|BT_UUID_128|enumerator|BT_UUID_128,
-DECL|BT_UUID_16|enumerator|BT_UUID_16,
+DECL|BT_UUID_128|macro|BT_UUID_128
+DECL|BT_UUID_16|macro|BT_UUID_16
 DECL|BT_UUID_BAS_BATTERY_LEVEL_VAL|macro|BT_UUID_BAS_BATTERY_LEVEL_VAL
 DECL|BT_UUID_BAS_BATTERY_LEVEL|macro|BT_UUID_BAS_BATTERY_LEVEL
 DECL|BT_UUID_BAS_VAL|macro|BT_UUID_BAS_VAL
@@ -64,17 +64,18 @@ DECL|BT_UUID_HRS_MEASUREMENT_VAL|macro|BT_UUID_HRS_MEASUREMENT_VAL
 DECL|BT_UUID_HRS_MEASUREMENT|macro|BT_UUID_HRS_MEASUREMENT
 DECL|BT_UUID_HRS_VAL|macro|BT_UUID_HRS_VAL
 DECL|BT_UUID_HRS|macro|BT_UUID_HRS
+DECL|BT_UUID_INIT_128|macro|BT_UUID_INIT_128
+DECL|BT_UUID_INIT_16|macro|BT_UUID_INIT_16
 DECL|BT_UUID_IPSS_VAL|macro|BT_UUID_IPSS_VAL
 DECL|BT_UUID_IPSS|macro|BT_UUID_IPSS
+DECL|BT_UUID_TYPE_128|enumerator|BT_UUID_TYPE_128,
+DECL|BT_UUID_TYPE_16|enumerator|BT_UUID_TYPE_16,
 DECL|__BT_UUID_H|macro|__BT_UUID_H
-DECL|__bt_uuid_128|struct|struct __bt_uuid_128 {
-DECL|__bt_uuid_16|struct|struct __bt_uuid_16 {
-DECL|bt_uuid_type|enum|enum bt_uuid_type {
+DECL|bt_uuid_128|struct|struct bt_uuid_128 {
+DECL|bt_uuid_16|struct|struct bt_uuid_16 {
 DECL|bt_uuid|struct|struct bt_uuid {
 DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|u128|member|uint8_t u128[16];
-DECL|u128|member|uint8_t u128[16];
-DECL|u16|member|uint16_t u16;
-DECL|u16|member|uint16_t u16;
+DECL|uuid|member|struct bt_uuid uuid;
+DECL|uuid|member|struct bt_uuid uuid;
+DECL|val|member|uint16_t val;
+DECL|val|member|uint8_t val[16];
