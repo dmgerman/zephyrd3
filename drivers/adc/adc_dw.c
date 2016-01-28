@@ -20,8 +20,8 @@ DECL|SEVEN_BITS_SET|macro|SEVEN_BITS_SET
 DECL|SIX_BITS_SET|macro|SIX_BITS_SET
 DECL|THREE_BITS_SET|macro|THREE_BITS_SET
 DECL|THRESHOLD_POS|macro|THRESHOLD_POS
-DECL|adc_config_0_irq|function|static void adc_config_0_irq(void)
-DECL|adc_config_dev_0|variable|adc_config_dev_0
+DECL|adc_config_dev|variable|adc_config_dev
+DECL|adc_config_irq|function|static void adc_config_irq(void)
 DECL|adc_dw_disable|function|static void adc_dw_disable(struct device *dev)
 DECL|adc_dw_enable|function|static void adc_dw_enable(struct device *dev)
 DECL|adc_dw_err_isr|function|void adc_dw_err_isr(void *arg)
@@ -33,7 +33,7 @@ DECL|adc_dw_rx_isr|function|void adc_dw_rx_isr(void *arg)
 DECL|adc_goto_deep_power_down|function|static void adc_goto_deep_power_down(void)
 DECL|adc_goto_normal_mode|function|static void adc_goto_normal_mode(struct device *dev)
 DECL|adc_goto_normal_mode|function|static void adc_goto_normal_mode(struct device *dev)
-DECL|adc_info_dev_0|variable|adc_info_dev_0
+DECL|adc_info_dev|variable|adc_info_dev
 DECL|api_funcs|variable|api_funcs
 DECL|calibration_command|function|static void calibration_command(uint8_t command)
 DECL|int_unmask|macro|int_unmask
