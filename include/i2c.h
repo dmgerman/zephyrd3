@@ -41,6 +41,7 @@ DECL|raw|member|uint32_t raw;
 DECL|reserved|member|uint32_t reserved : 26;
 DECL|resume|member|i2c_api_resume_t resume;
 DECL|speed|member|uint32_t speed : 3;
+DECL|stride|member|uint8_t stride[3];
 DECL|suspend|member|i2c_api_suspend_t suspend;
 DECL|transfer|member|i2c_api_full_io_t transfer;
 DECL|use_10_bit_addr|member|uint32_t use_10_bit_addr : 1;

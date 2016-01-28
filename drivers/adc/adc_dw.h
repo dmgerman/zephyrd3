@@ -76,6 +76,7 @@ DECL|dummy_conversion|member|uint8_t dummy_conversion;
 DECL|entries|member|struct adc_seq_entry *entries;
 DECL|index|member|uint8_t index[BUFS_NUM];
 DECL|out_mode|member|uint8_t out_mode;
+DECL|padding|member|uint8_t padding[3];
 DECL|reg_base|member|uint32_t reg_base;
 DECL|reg_err_mask|member|uint32_t reg_err_mask;
 DECL|reg_irq_mask|member|uint32_t reg_irq_mask;

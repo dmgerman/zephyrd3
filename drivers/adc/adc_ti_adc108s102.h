@@ -19,6 +19,7 @@ DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
 DECL|spi_slave|member|uint32_t spi_slave;
 DECL|spi|member|struct device *spi;
+DECL|stride|member|uint8_t stride[2];
 DECL|ti_adc108s102_chan|struct|struct ti_adc108s102_chan {
 DECL|ti_adc108s102_config|struct|struct ti_adc108s102_config {
 DECL|ti_adc108s102_data|struct|struct ti_adc108s102_data {

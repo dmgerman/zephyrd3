@@ -73,7 +73,7 @@ DECL|dummy7|member|uint16_t dummy7;
 DECL|dummy8|member|uint16_t dummy8;
 DECL|dummy9|member|uint16_t dummy9;
 DECL|enable|member|uint16_t enable : 1 __packed;
-DECL|filler|member|uint8_t filler[72];
+DECL|filler|member|uint8_t filler[74];
 DECL|gc_or_start|member|uint16_t gc_or_start : 1 __packed;
 DECL|gen_call|member|uint16_t gen_call : 1 __packed;
 DECL|has_dma|member|uint32_t has_dma : 1 __packed;

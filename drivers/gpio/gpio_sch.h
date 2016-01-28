@@ -22,3 +22,5 @@ DECL|polling_stack|member|char __stack polling_stack[GPIO_SCH_POLLING_STACK_SIZE
 DECL|poll|member|uint8_t poll;
 DECL|port_cb|member|uint8_t port_cb;
 DECL|regs|member|uint32_t regs;
+DECL|stride|member|uint8_t stride[2];
+DECL|stride|member|uint8_t stride[3];

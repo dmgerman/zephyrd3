@@ -44,6 +44,7 @@ DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|error|member|uint8_t error;
 DECL|irq|member|uint32_t irq;
+DECL|padding|member|uint8_t padding[3];
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|r_buf_len|member|uint32_t r_buf_len;
 DECL|regs|member|uint32_t regs;

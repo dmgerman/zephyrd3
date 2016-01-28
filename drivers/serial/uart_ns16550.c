@@ -93,6 +93,7 @@ DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
 DECL|options|member|uint8_t options; /**< Serial port options */
 DECL|set_baud_rate|function|static void set_baud_rate(struct device *dev, uint32_t baud_rate)
 DECL|set_dlf|function|static inline void set_dlf(struct device *dev, uint32_t val)
+DECL|stride|member|uint8_t stride; /**< structure stride padding */
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0

@@ -14,3 +14,5 @@ DECL|entries|member|struct adc_seq_entry *entries;
 DECL|num_entries|member|uint8_t num_entries;
 DECL|read|member|int (*read)(struct device *dev, struct adc_seq_table *seq_table);
 DECL|sampling_delay|member|int32_t sampling_delay;
+DECL|stride|member|uint8_t stride[3];
+DECL|stride|member|uint8_t stride[3];
