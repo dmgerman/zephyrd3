@@ -1,5 +1,4 @@
 DECL|AIO_DW_CMP_COUNT|macro|AIO_DW_CMP_COUNT
-DECL|AIO_DW_CMP_DRV_NAME|macro|AIO_DW_CMP_DRV_NAME
 DECL|_AIO_DW_COMPARATOR_H_|macro|_AIO_DW_COMPARATOR_H_
 DECL|base_address|member|uint32_t base_address;
 DECL|cb|member|aio_cmp_cb cb;
