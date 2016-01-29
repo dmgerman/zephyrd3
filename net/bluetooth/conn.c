@@ -1,6 +1,10 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
+DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
+DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
+DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
+DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
 DECL|background_scan_init|function|static void background_scan_init(void)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
@@ -19,6 +23,7 @@ DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, ui
 DECL|bt_conn_enc_key_size|function|uint8_t bt_conn_enc_key_size(struct bt_conn *conn)
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
 DECL|bt_conn_get_info|function|int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info)
+DECL|bt_conn_get_io_capa|function|uint8_t bt_conn_get_io_capa(void)
 DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt_conn *conn)
 DECL|bt_conn_init|function|int bt_conn_init(void)
 DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
@@ -36,6 +41,7 @@ DECL|bt_conn_security_changed|function|void bt_conn_security_changed(struct bt_c
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_send|function|void bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
+DECL|bt_conn_ssp_get_auth|function|uint8_t bt_conn_ssp_get_auth(const struct bt_conn *conn)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_br_cancel|function|static int bt_hci_connect_br_cancel(struct bt_conn *conn)
 DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
@@ -52,10 +58,13 @@ DECL|frag_buf|variable|frag_buf
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
+DECL|pairing_method|enum|enum pairing_method {
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
 DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags, bool always_consume)
+DECL|ssp_method|variable|ssp_method
+DECL|ssp_pair_method|function|static uint8_t ssp_pair_method(const struct bt_conn *conn)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
 DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
