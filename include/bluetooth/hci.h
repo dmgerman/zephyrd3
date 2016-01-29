@@ -59,6 +59,7 @@ DECL|BT_HCI_EVT_CONN_REQUEST|macro|BT_HCI_EVT_CONN_REQUEST
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
 DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE
+DECL|BT_HCI_EVT_IO_CAPA_RESP|macro|BT_HCI_EVT_IO_CAPA_RESP
 DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
 DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_CONN_PARAM_REQ|macro|BT_HCI_EVT_LE_CONN_PARAM_REQ
@@ -220,12 +221,15 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|authentication|member|uint8_t authentication;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -289,6 +293,7 @@ DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
 DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_key_refresh_complete {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
+DECL|bt_hci_evt_io_capa_resp|struct|struct bt_hci_evt_io_capa_resp {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_conn_param_req|struct|struct bt_hci_evt_le_conn_param_req {
 DECL|bt_hci_evt_le_conn_update_complete|struct|struct bt_hci_evt_le_conn_update_complete {
@@ -312,6 +317,7 @@ DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
+DECL|capability|member|uint8_t capability;
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
 DECL|commands|member|uint8_t commands[36];
@@ -416,6 +422,7 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
 DECL|num_handles|member|uint8_t num_handles;
+DECL|oob_data|member|uint8_t oob_data;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;
 DECL|opcode|member|uint16_t opcode;

@@ -30,6 +30,8 @@ DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
 DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|ref|member|atomic_t ref;
+DECL|remote_auth|member|uint8_t remote_auth;
+DECL|remote_io_capa|member|uint8_t remote_io_capa;
 DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|resp_addr|member|bt_addr_le_t resp_addr;
 DECL|role|member|uint8_t role;
