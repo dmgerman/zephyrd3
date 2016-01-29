@@ -74,6 +74,7 @@ DECL|BT_HCI_EVT_LINK_KEY_NOTIFY|macro|BT_HCI_EVT_LINK_KEY_NOTIFY
 DECL|BT_HCI_EVT_LINK_KEY_REQ|macro|BT_HCI_EVT_LINK_KEY_REQ
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_EVT_PIN_CODE_REQ|macro|BT_HCI_EVT_PIN_CODE_REQ
+DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
 DECL|BT_HCI_LE_ADV_DISABLE|macro|BT_HCI_LE_ADV_DISABLE
 DECL|BT_HCI_LE_ADV_ENABLE|macro|BT_HCI_LE_ADV_ENABLE
@@ -229,6 +230,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -237,6 +239,7 @@ DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -318,6 +321,7 @@ DECL|bt_hci_evt_le_p256_public_key_complete|struct|struct bt_hci_evt_le_p256_pub
 DECL|bt_hci_evt_link_key_req|struct|struct bt_hci_evt_link_key_req {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
+DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
 DECL|bt_hci_rp_le_rand|struct|struct bt_hci_rp_le_rand {
@@ -468,6 +472,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
