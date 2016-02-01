@@ -1,8 +1,3 @@
-DECL|INTEN|macro|INTEN
-DECL|INTMASK|macro|INTMASK
-DECL|INT_GPIO_MASK|macro|INT_GPIO_MASK
-DECL|PORTA_EOI|macro|PORTA_EOI
-DECL|addr|member|void *addr;
 DECL|api_funcs|variable|api_funcs
 DECL|callback|member|gpio_callback_t callback;
 DECL|gpio_0_config|variable|gpio_0_config
