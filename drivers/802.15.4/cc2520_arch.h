@@ -1,4 +1,5 @@
 DECL|CC2520_GPIO|macro|CC2520_GPIO
+DECL|CC2520_READING_STACK_SIZE|macro|CC2520_READING_STACK_SIZE
 DECL|CC2520_SPI_SLAVE|macro|CC2520_SPI_SLAVE
 DECL|CC2520_SPI|macro|CC2520_SPI
 DECL|CLOCK_CYCLE_LT|macro|CLOCK_CYCLE_LT
@@ -32,6 +33,7 @@ DECL|cc2520_write_ram|function|static inline bool cc2520_write_ram(uint8_t *buff
 DECL|cc2520_write_reg|function|static inline bool cc2520_write_reg(uint16_t addr, uint16_t value)
 DECL|gpios|member|struct cc2520_gpio_config **gpios;
 DECL|gpio|member|struct device *gpio;
+DECL|read_lock|member|struct nano_sem read_lock;
 DECL|spi_slave|member|uint32_t spi_slave;
 DECL|spi_transfer|function|static inline bool spi_transfer(struct device *dev,uint8_t *data_out, uint8_t *data_in, int len)
 DECL|spi|member|struct device *spi;

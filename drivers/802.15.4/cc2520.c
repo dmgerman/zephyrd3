@@ -51,6 +51,7 @@ DECL|cc2520_prepare|function|static int cc2520_prepare(const void *payload, unsi
 DECL|cc2520_print_gpio_config|function|static void cc2520_print_gpio_config(void)
 DECL|cc2520_print_gpio_config|macro|cc2520_print_gpio_config
 DECL|cc2520_read_fifo_byte|function|static bool cc2520_read_fifo_byte(uint8_t *byte)
+DECL|cc2520_read_stack|variable|cc2520_read_stack
 DECL|cc2520_read|function|static int cc2520_read(void *buf, unsigned short bufsize)
 DECL|cc2520_receiving_packet|function|static inline int cc2520_receiving_packet(void)
 DECL|cc2520_rssi|function|int cc2520_rssi(void)
@@ -89,6 +90,7 @@ DECL|print_radio_status|function|static void print_radio_status(void)
 DECL|print_radio_status|macro|print_radio_status
 DECL|read_packet_debug|function|static void read_packet_debug(const char *caller)
 DECL|read_packet|macro|read_packet
+DECL|reading_packet_fiber|function|static void reading_packet_fiber(int unused1, int unused2)
 DECL|receive_on|variable|receive_on
 DECL|set_object|function|static radio_result_t set_object(radio_param_t param, const void *src, size_t size)
 DECL|set_txpower|function|static void set_txpower(uint8_t power)
