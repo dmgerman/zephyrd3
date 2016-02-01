@@ -41,6 +41,7 @@ DECL|bt_conn_security_changed|function|void bt_conn_security_changed(struct bt_c
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_send|function|void bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
+DECL|bt_conn_ssp_auth|function|void bt_conn_ssp_auth(struct bt_conn *conn, uint32_t passkey)
 DECL|bt_conn_ssp_get_auth|function|uint8_t bt_conn_ssp_get_auth(const struct bt_conn *conn)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_br_cancel|function|static int bt_hci_connect_br_cancel(struct bt_conn *conn)
@@ -63,6 +64,8 @@ DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
 DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags, bool always_consume)
+DECL|ssp_confirm_neg_reply|function|static int ssp_confirm_neg_reply(struct bt_conn *conn)
+DECL|ssp_confirm_reply|function|static int ssp_confirm_reply(struct bt_conn *conn)
 DECL|ssp_method|variable|ssp_method
 DECL|ssp_pair_method|function|static uint8_t ssp_pair_method(const struct bt_conn *conn)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)

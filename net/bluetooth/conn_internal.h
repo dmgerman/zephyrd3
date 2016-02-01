@@ -39,6 +39,7 @@ DECL|role|member|uint8_t role;
 DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct net_buf *rx;
 DECL|sec_level|member|bt_security_t sec_level;
+DECL|ssp_method|member|uint8_t ssp_method;
 DECL|state|member|bt_conn_state_t state;
 DECL|timeout|member|nano_thread_id_t timeout;
 DECL|timeout|member|uint16_t timeout;

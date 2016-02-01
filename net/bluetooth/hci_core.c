@@ -109,6 +109,7 @@ DECL|sync|member|void *sync;
 DECL|update_conn_param|function|static int update_conn_param(struct bt_conn *conn)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
+DECL|user_confirm_req|function|static void user_confirm_req(struct net_buf *buf)
 DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
 DECL|valid_le_scan_param|function|static bool valid_le_scan_param(const struct bt_le_scan_param *param)
 DECL|write_scan_enable|function|static int write_scan_enable(uint8_t scan)
