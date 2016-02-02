@@ -33,6 +33,7 @@ DECL|cc2520_write_ram|function|static inline bool cc2520_write_ram(uint8_t *buff
 DECL|cc2520_write_reg|function|static inline bool cc2520_write_reg(uint16_t addr, uint16_t value)
 DECL|gpios|member|struct cc2520_gpio_config **gpios;
 DECL|gpio|member|struct device *gpio;
+DECL|radio_lock|member|struct nano_sem radio_lock;
 DECL|read_lock|member|struct nano_sem read_lock;
 DECL|spi_slave|member|uint32_t spi_slave;
 DECL|spi_transfer|function|static inline bool spi_transfer(struct device *dev,uint8_t *data_out, uint8_t *data_in, int len)

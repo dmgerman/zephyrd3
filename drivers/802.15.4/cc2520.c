@@ -50,6 +50,8 @@ DECL|cc2520_pending_packet|function|static inline int cc2520_pending_packet(void
 DECL|cc2520_prepare|function|static int cc2520_prepare(const void *payload, unsigned short payload_len)
 DECL|cc2520_print_gpio_config|function|static void cc2520_print_gpio_config(void)
 DECL|cc2520_print_gpio_config|macro|cc2520_print_gpio_config
+DECL|cc2520_radio_lock|function|static inline void cc2520_radio_lock(void)
+DECL|cc2520_radio_unlock|function|static inline void cc2520_radio_unlock(void)
 DECL|cc2520_read_fifo_byte|function|static bool cc2520_read_fifo_byte(uint8_t *byte)
 DECL|cc2520_read_stack|variable|cc2520_read_stack
 DECL|cc2520_read|function|static int cc2520_read(void *buf, unsigned short bufsize)
@@ -78,6 +80,9 @@ DECL|getrxbyte|function|static void getrxbyte(uint8_t *byte)
 DECL|getrxdata|function|static void getrxdata(void *buf, int len)
 DECL|init_ok|variable|init_ok
 DECL|last_packet_timestamp|variable|last_packet_timestamp
+DECL|lock_off|variable|lock_off
+DECL|lock_on|variable|lock_on
+DECL|locked|variable|locked
 DECL|off|function|static void off(void)
 DECL|on|function|static void on(void)
 DECL|print_errors|function|static inline void print_errors(void)
