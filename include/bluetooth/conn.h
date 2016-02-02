@@ -28,6 +28,7 @@ DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval; /** Connection interval */
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency; /** Connection slave latency */
+DECL|le_param_updated|member|void (*le_param_updated)(struct bt_conn *conn, uint16_t interval,
 DECL|le|member|struct bt_conn_le_info le;
 DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);

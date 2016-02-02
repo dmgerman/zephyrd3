@@ -9,6 +9,7 @@ DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, ui
 DECL|bt_conn_enc_key_size|function|uint8_t bt_conn_enc_key_size(struct bt_conn *conn)
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
 DECL|bt_conn_get_info|function|int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info)
+DECL|bt_conn_le_param_update|function|int bt_conn_le_param_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
 DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)

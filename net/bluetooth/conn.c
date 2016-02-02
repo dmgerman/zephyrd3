@@ -20,7 +20,8 @@ DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct b
 DECL|bt_conn_get_info|function|int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info)
 DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt_conn *conn)
 DECL|bt_conn_init|function|int bt_conn_init(void)
-DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
+DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
+DECL|bt_conn_le_param_update|function|int bt_conn_le_param_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, uint64_t rand,uint16_t ediv, const uint8_t *ltk, size_t len)
 DECL|bt_conn_lookup_addr_br|function|struct bt_conn *bt_conn_lookup_addr_br(const bt_addr_t *peer)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
@@ -48,6 +49,7 @@ DECL|dummy|variable|dummy
 DECL|frag_buf|variable|frag_buf
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
+DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)

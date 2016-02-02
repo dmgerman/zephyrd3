@@ -25,7 +25,7 @@ DECL|bt_l2cap_pool|variable|bt_l2cap_pool
 DECL|bt_l2cap_recv|function|void bt_l2cap_recv(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_l2cap_send|function|void bt_l2cap_send(struct bt_conn *conn, uint16_t cid, struct net_buf *buf)
 DECL|bt_l2cap_server_register|function|int bt_l2cap_server_register(struct bt_l2cap_server *server)
-DECL|bt_l2cap_update_conn_param|function|int bt_l2cap_update_conn_param(struct bt_conn *conn)
+DECL|bt_l2cap_update_conn_param|function|int bt_l2cap_update_conn_param(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_l2cap|struct|struct bt_l2cap {
 DECL|channels|variable|channels
 DECL|chan|member|struct bt_l2cap_chan chan;
