@@ -90,6 +90,10 @@ DECL|svc_pri|variable|svc_pri
 DECL|svc_sec|variable|svc_sec
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
 DECL|tester_init_gatt|function|uint8_t tester_init_gatt(void)
+DECL|u128|member|struct bt_uuid_128 u128;
+DECL|u16|member|struct bt_uuid_16 u16;
+DECL|uuid|member|struct bt_uuid uuid;
+DECL|uuid|union|union uuid {
 DECL|uuid|variable|uuid
 DECL|write_long_rsp|function|static void write_long_rsp(struct bt_conn *conn, uint8_t err)
 DECL|write_long|function|static void write_long(uint8_t *data, uint16_t len)
