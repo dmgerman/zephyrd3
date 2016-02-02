@@ -1,6 +1,8 @@
 DECL|_SpuriousIntHandler|function|void _SpuriousIntHandler(void)
 DECL|_SpuriousIntNoErrCodeHandler|function|void _SpuriousIntNoErrCodeHandler(void)
 DECL|_execute_handler|function|void _execute_handler(int_handler_t function, int context)
+DECL|_sys_k_event_logger_exit_sleep|macro|_sys_k_event_logger_exit_sleep
+DECL|_sys_k_event_logger_interrupt|macro|_sys_k_event_logger_interrupt
 DECL|disable_nested_interrupts|function|static inline void disable_nested_interrupts(void)
 DECL|disable_nested_interrupts|function|static inline void disable_nested_interrupts(void){};
 DECL|enable_nested_interrupts|function|static inline void enable_nested_interrupts(void)
