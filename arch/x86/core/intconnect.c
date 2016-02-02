@@ -1,4 +1,4 @@
-DECL|_IntVecAlloc|function|int _IntVecAlloc(unsigned int priority)
+DECL|_IntVecAlloc|function|int _IntVecAlloc(unsigned int requested_priority)
 DECL|_IntVecMarkAllocated|function|void _IntVecMarkAllocated(unsigned int vector)
 DECL|_IntVecMarkFree|function|void _IntVecMarkFree(unsigned int vector)
 DECL|_IntVecSet|function|void _IntVecSet(unsigned int vector, void (*routine)(void *), unsigned int dpl)
