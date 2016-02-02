@@ -14,10 +14,8 @@ DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TICKS|macro|WAIT_TICKS
-DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|expecting|variable|expecting
 DECL|fiberStack_receiving|variable|fiberStack_receiving
-DECL|fiberStack_sending|variable|fiberStack_sending
 DECL|fiber_receiving|function|void fiber_receiving(void)
 DECL|fiber_sending|function|void fiber_sending(void)
 DECL|get_context|function|static inline bool get_context(struct net_context **unicast, struct net_context **multicast)
