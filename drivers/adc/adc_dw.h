@@ -10,6 +10,7 @@ DECL|ADC_CONFIG_SET_MASK|macro|ADC_CONFIG_SET_MASK
 DECL|ADC_CTRL|macro|ADC_CTRL
 DECL|ADC_DISABLE|macro|ADC_DISABLE
 DECL|ADC_DIVSEQSTAT|macro|ADC_DIVSEQSTAT
+DECL|ADC_DONE_DUMMY|macro|ADC_DONE_DUMMY
 DECL|ADC_DRV_NAME|macro|ADC_DRV_NAME
 DECL|ADC_ENABLE|macro|ADC_ENABLE
 DECL|ADC_FLUSH_RX|macro|ADC_FLUSH_RX
@@ -21,6 +22,7 @@ DECL|ADC_INT_ENABLE|macro|ADC_INT_ENABLE
 DECL|ADC_INT_ENA_MASK|macro|ADC_INT_ENA_MASK
 DECL|ADC_INT_ERR|macro|ADC_INT_ERR
 DECL|ADC_NONE_CALIBRATION|macro|ADC_NONE_CALIBRATION
+DECL|ADC_NONE_DUMMY|macro|ADC_NONE_DUMMY
 DECL|ADC_POP_SAMPLE|macro|ADC_POP_SAMPLE
 DECL|ADC_RESET|macro|ADC_RESET
 DECL|ADC_SAMPLE|macro|ADC_SAMPLE
@@ -70,6 +72,7 @@ DECL|calibration_value|member|uint8_t calibration_value;
 DECL|capture_mode|member|uint8_t capture_mode;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
+DECL|dummy_conversion|member|uint8_t dummy_conversion;
 DECL|entries|member|struct adc_seq_entry *entries;
 DECL|index|member|uint8_t index[BUFS_NUM];
 DECL|out_mode|member|uint8_t out_mode;
