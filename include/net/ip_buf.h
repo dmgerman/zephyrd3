@@ -9,8 +9,6 @@ DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_IP|macro|NET_BUF_IP
 DECL|NET_BUF_UDP|macro|NET_BUF_UDP
-DECL|STACK_DIRECTION_DOWN|enumerator|STACK_DIRECTION_DOWN,
-DECL|STACK_DIRECTION_UP|enumerator|STACK_DIRECTION_UP,
 DECL|__IP_BUF_H|macro|__IP_BUF_H
 DECL|context|member|struct net_context *context;
 DECL|dest|member|linkaddr_t dest;
@@ -40,8 +38,6 @@ DECL|nd6_opt_prefix_info|member|void *nd6_opt_prefix_info;
 DECL|nd6_prefix|member|void *nd6_prefix;
 DECL|net_analyze_stack|function|static inline void net_analyze_stack(const char *name, unsigned char *stack, size_t size)
 DECL|net_analyze_stack|macro|net_analyze_stack
-DECL|net_calculate_unused|function|static inline unsigned net_calculate_unused(const char *stack, unsigned size, int stack_growth)
-DECL|net_get_stack_dir|function|static inline unsigned net_get_stack_dir(struct net_buf *buf, struct net_buf **ref)
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|src|member|linkaddr_t src;
 DECL|type|member|enum ip_buf_type type;
