@@ -5,6 +5,10 @@ DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_NONE|macro|FN_SIG_NONE
+DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
@@ -19,6 +23,10 @@ DECL|FN_SIG_P|macro|FN_SIG_P
 DECL|FN_SIG_P|macro|FN_SIG_P
 DECL|FN_SIG_P|macro|FN_SIG_P
 DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
+DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
@@ -33,6 +41,10 @@ DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B|macro|FN_SIG_S_B
+DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
@@ -47,6 +59,10 @@ DECL|FN_SIG_S_P|macro|FN_SIG_S_P
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S|macro|FN_SIG_S
+DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
@@ -64,6 +80,14 @@ DECL|LIST_FN_SIG_S_P|enumerator|enum { LIST_FN_SIG_S_P fn_s_p_index_max };
 DECL|LIST_FN_SIG_S|enumerator|enum { LIST_FN_SIG_S fn_s_index_max };
 DECL|PRINTK|macro|PRINTK
 DECL|PRINTK|macro|PRINTK
+DECL|debug_func_b_b_p|variable|debug_func_b_b_p
+DECL|debug_func_none|variable|debug_func_none
+DECL|debug_func_p|variable|debug_func_p
+DECL|debug_func_s_b_b_p|variable|debug_func_s_b_b_p
+DECL|debug_func_s_b_p|variable|debug_func_s_b_p
+DECL|debug_func_s_b|variable|debug_func_s_b
+DECL|debug_func_s_p|variable|debug_func_s_p
+DECL|debug_func_s|variable|debug_func_s
 DECL|deserialize_b_b_p|function|static void deserialize_b_b_p(uint8_t fn_index, const uint8_t *buf, uint16_t length)
 DECL|deserialize_buf|function|static const uint8_t *deserialize_buf(const uint8_t *p, const uint8_t **pp_buf, uint16_t *p_buflen)
 DECL|deserialize_none|function|static void deserialize_none(uint8_t fn_index, const uint8_t *buf, uint16_t length)
