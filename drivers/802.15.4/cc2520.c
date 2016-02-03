@@ -93,8 +93,7 @@ DECL|print_exceptions_1|function|static inline void print_exceptions_1(void)
 DECL|print_exceptions_1|macro|print_exceptions_1
 DECL|print_radio_status|function|static void print_radio_status(void)
 DECL|print_radio_status|macro|print_radio_status
-DECL|read_packet_debug|function|static void read_packet_debug(const char *caller)
-DECL|read_packet|macro|read_packet
+DECL|read_packet|function|static void read_packet(void)
 DECL|reading_packet_fiber|function|static void reading_packet_fiber(int unused1, int unused2)
 DECL|receive_on|variable|receive_on
 DECL|set_object|function|static radio_result_t set_object(radio_param_t param, const void *src, size_t size)
