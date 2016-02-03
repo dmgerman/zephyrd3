@@ -25,7 +25,9 @@ DECL|dst|member|const bt_addr_t *dst; /** Destination BR/EDR address */
 DECL|identity_resolved|member|void (*identity_resolved)(struct bt_conn *conn,
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_min|member|uint16_t interval_min;
+DECL|interval|member|uint16_t interval; /** Connection interval */
 DECL|latency|member|uint16_t latency;
+DECL|latency|member|uint16_t latency; /** Connection slave latency */
 DECL|le|member|struct bt_conn_le_info le;
 DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
@@ -34,4 +36,5 @@ DECL|pincode_entry|member|void (*pincode_entry)(struct bt_conn *conn, bool highs
 DECL|security_changed|member|void (*security_changed)(struct bt_conn *conn, bt_security_t level);
 DECL|src|member|const bt_addr_le_t *src; /** Source Address */
 DECL|timeout|member|uint16_t timeout;
+DECL|timeout|member|uint16_t timeout; /** Connection supervision timeout */
 DECL|type|member|uint8_t type;
