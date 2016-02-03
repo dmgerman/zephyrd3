@@ -34,6 +34,7 @@ DECL|on_ble_gattc_read_rsp|function|void on_ble_gattc_read_rsp(const struct ble_
 DECL|on_ble_gattc_value_evt|function|void on_ble_gattc_value_evt(const struct ble_gattc_value_evt *ev,uint8_t *buf, uint8_t buflen)
 DECL|on_ble_gattc_write_rsp|function|void on_ble_gattc_write_rsp(const struct ble_gattc_write_rsp *ev, void *priv)
 DECL|on_ble_gatts_get_attribute_value_rsp|function|void on_ble_gatts_get_attribute_value_rsp(const struct ble_gatts_attribute_response *par, uint8_t *data, uint8_t length)
+DECL|on_ble_gatts_read_evt|function|void on_ble_gatts_read_evt(const struct nble_gatt_rd_evt *evt)
 DECL|on_ble_gatts_send_notif_ind_rsp|function|void on_ble_gatts_send_notif_ind_rsp(const struct ble_gatt_notif_ind_rsp *par)
 DECL|on_ble_gatts_send_svc_changed_rsp|function|void on_ble_gatts_send_svc_changed_rsp(const struct ble_core_response *par)
 DECL|on_ble_gatts_set_attribute_value_rsp|function|void on_ble_gatts_set_attribute_value_rsp(const struct ble_gatts_attribute_response *par)
