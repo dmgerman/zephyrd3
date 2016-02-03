@@ -21,6 +21,7 @@ DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write 
 DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write */
 DECL|attr_idx|member|uint8_t attr_idx; /**< Attribute index into service attribute table */
 DECL|attr|member|struct ble_gatt_attr_handle_mapping attr;
+DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|ble_core_discover_params|struct|struct ble_core_discover_params {
 DECL|ble_core_gatt_handle_range|struct|struct ble_core_gatt_handle_range {
@@ -54,6 +55,7 @@ DECL|ble_gatts_notif_ind_type|enum|enum ble_gatts_notif_ind_type {
 DECL|ble_gatts_rw_reply_params|struct|struct ble_gatts_rw_reply_params {
 DECL|ble_gatts_set_attribute_params|struct|struct ble_gatts_set_attribute_params {
 DECL|ble_gatts_svc_changed_params|struct|struct ble_gatts_svc_changed_params {
+DECL|cback|member|void *cback;
 DECL|char_handle|member|uint16_t char_handle;
 DECL|char_handle|member|uint16_t char_handle; /**< Handle of the attribute to be read */
 DECL|char_handle|member|uint16_t char_handle; /**< Handle of the attribute to be read */
@@ -133,7 +135,6 @@ DECL|uuid|member|struct bt_uuid uuid; /**< Attribute's UUID */
 DECL|uuid|member|struct bt_uuid uuid; /**< Charact UUID */
 DECL|uuid|member|struct bt_uuid uuid; /**< service uuid */
 DECL|uuid|member|struct bt_uuid uuid; /**< uuid of the descriptor */
-DECL|val_handle|member|uint16_t val_handle;
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
