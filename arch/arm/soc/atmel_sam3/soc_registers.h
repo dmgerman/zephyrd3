@@ -1,5 +1,6 @@
 DECL|_ATMEL_SAM3_SOC_REGS_H_|macro|_ATMEL_SAM3_SOC_REGS_H_
 DECL|__eefc|struct|struct __eefc {
+DECL|__pdc|struct|struct __pdc {
 DECL|__pio|struct|struct __pio {
 DECL|__pmc|struct|struct __pmc {
 DECL|__supc|struct|struct __supc {
@@ -64,9 +65,12 @@ DECL|pdr|member|uint32_t pdr; /* 0x04 Disable */
 DECL|pdsr|member|uint32_t pdsr; /* 0x3C Pin Data Status */
 DECL|per|member|uint32_t per; /* 0x00 Enable */
 DECL|psr|member|uint32_t psr; /* 0x08 Status */
+DECL|ptcr|member|uint32_t ptcr; /* 0x120 Transfer Control */
+DECL|ptsr|member|uint32_t ptsr; /* 0x124 Transfer Status */
 DECL|pudr|member|uint32_t pudr; /* 0x60 Pull-up Disable */
 DECL|puer|member|uint32_t puer; /* 0x64 Pull-up Enable */
 DECL|pusr|member|uint32_t pusr; /* 0x68 Pad Pull-up Status */
+DECL|rcr|member|uint32_t rcr; /* 0x104 Receive Counter */
 DECL|rehlsr|member|uint32_t rehlsr; /* 0xD4 Rising Edge/High Level Sel */
 DECL|res0|member|uint32_t res0; /* 0x0C reserved */
 DECL|res0|member|uint32_t res0; /* 0x0C reserved */
@@ -86,6 +90,9 @@ DECL|res6|member|uint32_t res6[5]; /* 0xEC-0xFC reserved */
 DECL|res7|member|uint32_t res7; /* 0xAC reserved */
 DECL|res8|member|uint32_t res8; /* 0xBC reserved */
 DECL|res9|member|uint32_t res9; /* 0xCC reserved */
+DECL|rncr|member|uint32_t rncr; /* 0x114 Receive Next Counter */
+DECL|rnpr|member|uint32_t rnpr; /* 0x110 Receive Next Pointer */
+DECL|rpr|member|uint32_t rpr; /* 0x100 Receive Pointer */
 DECL|scdr|member|uint32_t scdr; /* 0x04 System Clock Disable */
 DECL|scdr|member|uint32_t scdr; /* 0x8C Slow Clock Divider Debounce */
 DECL|scer|member|uint32_t scer; /* 0x00 System Clock Enable */
@@ -95,6 +102,10 @@ DECL|smmr|member|uint32_t smmr; /* 0x04 Supply Monitor Mode */
 DECL|sodr|member|uint32_t sodr; /* 0x30 Set Output Data */
 DECL|sr|member|uint32_t sr; /* 0x14 Status */
 DECL|sr|member|uint32_t sr; /* 0x68 Status */
+DECL|tcr|member|uint32_t tcr; /* 0x10C Transmit Counter */
+DECL|tncr|member|uint32_t tncr; /* 0x11C Transmit Next Counter */
+DECL|tnpr|member|uint32_t tnpr; /* 0x118 Transmit Next Pointer */
+DECL|tpr|member|uint32_t tpr; /* 0x108 Transmit Pointer */
 DECL|usb|member|uint32_t usb; /* 0x38 USB Clock */
 DECL|wpmr|member|uint32_t wpmr; /* 0xE4 Write Protect Mode */
 DECL|wpmr|member|uint32_t wpmr; /* 0xE4 Write Protect Mode */
