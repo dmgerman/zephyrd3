@@ -20,8 +20,8 @@ DECL|attr_count|member|uint8_t attr_count; /**< Number of of attributes in this 
 DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write */
 DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write */
 DECL|attr_idx|member|uint8_t attr_idx; /**< Attribute index into service attribute table */
-DECL|attr|member|struct ble_gatt_attr_handle_mapping attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
+DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|ble_core_discover_params|struct|struct ble_core_discover_params {
 DECL|ble_core_gatt_handle_range|struct|struct ble_core_gatt_handle_range {
@@ -105,13 +105,13 @@ DECL|offset|member|uint16_t offset; /**< Offset into the attr value to be write 
 DECL|offset|member|uint16_t offset; /**< offset in attribute buffer */
 DECL|offset|member|uint16_t offset; /**< offset in attribute buffer */
 DECL|offset|member|uint16_t offset; /**< offset of data returned */
-DECL|op|member|uint8_t op; /**< @ref BLE_GATTS_WR_OPS */
 DECL|p_priv|member|void *p_priv;
 DECL|params|member|struct ble_gatt_notif_ind_params params;
 DECL|perm|member|uint16_t perm;
 DECL|prim|member|struct ble_gattc_prim_svc prim;
 DECL|prop|member|uint8_t prop; /**< Charact property */
 DECL|reason|member|uint16_t reason; /**< GATT timeout reason */
+DECL|reply|member|uint8_t reply; /**< 1 if reply required, 0 otherwise */
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|status|member|int status;

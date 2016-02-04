@@ -38,7 +38,7 @@ DECL|on_ble_gatts_read_evt|function|void on_ble_gatts_read_evt(const struct nble
 DECL|on_ble_gatts_send_notif_ind_rsp|function|void on_ble_gatts_send_notif_ind_rsp(const struct ble_gatt_notif_ind_rsp *par)
 DECL|on_ble_gatts_send_svc_changed_rsp|function|void on_ble_gatts_send_svc_changed_rsp(const struct ble_core_response *par)
 DECL|on_ble_gatts_set_attribute_value_rsp|function|void on_ble_gatts_set_attribute_value_rsp(const struct ble_gatts_attribute_response *par)
-DECL|on_ble_gatts_write_evt|function|void on_ble_gatts_write_evt(const struct ble_gatt_wr_evt *ev, const uint8_t *buf, uint8_t buflen)
+DECL|on_ble_gatts_write_evt|function|void on_ble_gatts_write_evt(const struct ble_gatt_wr_evt *evt, const uint8_t *buf, uint8_t buflen)
 DECL|properties|member|uint8_t properties;
 DECL|svc_count|variable|svc_count
 DECL|svc_db|variable|svc_db
