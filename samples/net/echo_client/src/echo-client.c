@@ -10,6 +10,8 @@ DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TICKS|macro|WAIT_TICKS
+DECL|WAIT_TICKS|macro|WAIT_TICKS
+DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|expecting|variable|expecting
 DECL|get_context|function|static inline bool get_context(struct net_context **unicast, struct net_context **multicast)
 DECL|in6addr_my|variable|in6addr_my
