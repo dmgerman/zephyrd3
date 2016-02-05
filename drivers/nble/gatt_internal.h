@@ -45,7 +45,6 @@ DECL|ble_gattc_prim_svc|struct|struct ble_gattc_prim_svc {
 DECL|ble_gattc_read_params|struct|struct ble_gattc_read_params {
 DECL|ble_gattc_read_rsp|struct|struct ble_gattc_read_rsp {
 DECL|ble_gattc_rsp|struct|struct ble_gattc_rsp {
-DECL|ble_gattc_svc|struct|struct ble_gattc_svc {
 DECL|ble_gattc_to_evt|struct|struct ble_gattc_to_evt {
 DECL|ble_gattc_value_evt|struct|struct ble_gattc_value_evt {
 DECL|ble_gattc_write_params|struct|struct ble_gattc_write_params {
@@ -71,7 +70,7 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
-DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
+DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handl */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
@@ -80,20 +79,19 @@ DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
 DECL|conn_handle|member|uint16_t conn_handle; /**< GAP connection handle */
 DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
-DECL|decl_handle|member|uint16_t decl_handle; /**< Charact declaration handle */
 DECL|desc|member|struct ble_gattc_descriptor desc;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
-DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range;
 DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< Discover range */
 DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< handle range */
 DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< handle range */
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle; /* handle from ble controller should be sufficient */
 DECL|handle|member|uint16_t handle; /**< Attribute handle */
+DECL|handle|member|uint16_t handle; /**< Characteristic Definition handle */
+DECL|handle|member|uint16_t handle; /**< Handle of included svc */
 DECL|handle|member|uint16_t handle; /**< descriptor handle */
 DECL|handle|member|uint16_t handle; /**< handle of char attr read */
-DECL|incl_handle|member|uint16_t incl_handle; /**< Handle of included service */
 DECL|incls|member|struct ble_gattc_incl_svc incls;
 DECL|len|member|uint16_t len;
 DECL|msg_type|member|uint8_t msg_type;
@@ -110,7 +108,7 @@ DECL|params|member|struct ble_gatt_notif_ind_params params;
 DECL|perm|member|uint16_t perm;
 DECL|prim|member|struct ble_gattc_prim_svc prim;
 DECL|priv|member|void *priv;
-DECL|prop|member|uint8_t prop; /**< Charact property */
+DECL|prop|member|uint8_t prop; /**< Characteristic property */
 DECL|reason|member|uint16_t reason; /**< GATT timeout reason */
 DECL|reply|member|uint8_t reply; /**< 1 if reply required, 0 otherwise */
 DECL|start_handle|member|uint16_t start_handle;
@@ -126,19 +124,18 @@ DECL|status|member|int status; /**< Status of the operation. */
 DECL|status|member|int status; /**< Status of the operation. */
 DECL|status|member|int status; /**< Status of the registration op */
 DECL|svc_idx|member|uint8_t svc_idx; /**< Service index */
-DECL|svc|member|struct ble_gattc_svc svc; /**< Included service */
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< Discover type @ref BLE_GATT_DISC_TYPES */
-DECL|uuid|member|struct bt_uuid uuid; /**< Attribute UUID */
-DECL|uuid|member|struct bt_uuid uuid; /**< Attribute's UUID */
-DECL|uuid|member|struct bt_uuid uuid; /**< Charact UUID */
-DECL|uuid|member|struct bt_uuid uuid; /**< service uuid */
-DECL|uuid|member|struct bt_uuid uuid; /**< uuid of the descriptor */
+DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute UUID */
+DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute's UUID */
+DECL|uuid|member|struct bt_uuid_128 uuid; /**< Characteristic UUID */
+DECL|uuid|member|struct bt_uuid_128 uuid; /**< Service UUID */
+DECL|uuid|member|struct bt_uuid_128 uuid; /**< uuid of the descriptor */
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
 DECL|value_handle|member|uint16_t value_handle; /* mandatory */
-DECL|value_handle|member|uint16_t value_handle; /**< Charact value handle */
+DECL|value_handle|member|uint16_t value_handle; /**< Characteristic value handle */
 DECL|with_resp|member|bool with_resp; /**< Equal to true is response is needed */
 DECL|write_reply|member|uint8_t write_reply; /**< 0 if read reply, otherwise rsp */
