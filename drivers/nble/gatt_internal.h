@@ -23,6 +23,7 @@ DECL|attr_idx|member|uint8_t attr_idx; /**< Attribute index into service attribu
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
+DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|ble_core_discover_params|struct|struct ble_core_discover_params {
 DECL|ble_core_gatt_handle_range|struct|struct ble_core_gatt_handle_range {
 DECL|ble_gatt_attr_handle_mapping|struct|struct ble_gatt_attr_handle_mapping {
@@ -55,6 +56,7 @@ DECL|ble_gatts_notif_ind_type|enum|enum ble_gatts_notif_ind_type {
 DECL|ble_gatts_rw_reply_params|struct|struct ble_gatts_rw_reply_params {
 DECL|ble_gatts_set_attribute_params|struct|struct ble_gatts_set_attribute_params {
 DECL|ble_gatts_svc_changed_params|struct|struct ble_gatts_svc_changed_params {
+DECL|cback|member|bt_gatt_notify_func_t cback;
 DECL|cback|member|void *cback;
 DECL|char_handle|member|uint16_t char_handle;
 DECL|char_handle|member|uint16_t char_handle; /**< Handle of the attribute to be read */
@@ -89,7 +91,6 @@ DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< ha
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle; /* handle from ble controller should be sufficient */
 DECL|handle|member|uint16_t handle; /**< Attribute handle */
-DECL|handle|member|uint16_t handle; /**< Characteristic value handle */
 DECL|handle|member|uint16_t handle; /**< descriptor handle */
 DECL|handle|member|uint16_t handle; /**< handle of char attr read */
 DECL|incl_handle|member|uint16_t incl_handle; /**< Handle of included service */
