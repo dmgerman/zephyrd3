@@ -1,5 +1,6 @@
 DECL|NBLE_BUF_SIZE|macro|NBLE_BUF_SIZE
-DECL|NBLE_IPC_COUNT|macro|NBLE_IPC_COUNT
+DECL|NBLE_RX_BUF_COUNT|macro|NBLE_RX_BUF_COUNT
+DECL|NBLE_TX_BUF_COUNT|macro|NBLE_TX_BUF_COUNT
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|_bt_nble_init|function|static int _bt_nble_init(struct device *unused)
