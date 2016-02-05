@@ -1,4 +1,3 @@
-DECL|Comm|member|int Comm;
 DECL|Ctxt|member|K_CREF Ctxt;
 DECL|K_ARGS_ARGS|typedef|typedef union k_args_args K_ARGS_ARGS;
 DECL|K_CREF|typedef|} K_CREF;
@@ -110,7 +109,6 @@ DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
 DECL|_track_list_micro_mem_pool|variable|_track_list_micro_mem_pool
 DECL|_u1arg|struct|struct _u1arg {
-DECL|_z4arg|struct|struct _z4arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|MovedAction action;
 DECL|alloc|member|bool alloc;
@@ -130,8 +128,6 @@ DECL|c1|member|struct _c1arg c1;
 DECL|continuation_receive|member|struct k_args *continuation_receive;
 DECL|continuation_send|member|struct k_args *continuation_send;
 DECL|count|member|int count;
-DECL|data1|member|uint32_t data1;
-DECL|data2|member|uint32_t data2;
 DECL|data_ptr|member|void *data_ptr;
 DECL|data_ptr|member|void *data_ptr; /* if NULL, data is embedded in cmd packet */
 DECL|data|member|char *data;
@@ -155,7 +151,6 @@ DECL|id|member|int id; /* if it is a Xfer to/from a buffer, this is the register
 DECL|id|member|kpipe_t id;
 DECL|k_args_args|union|union k_args_args {
 DECL|k_args|struct|struct k_args {
-DECL|k_mrec|struct|struct k_mrec {
 DECL|k_timer|struct|struct k_timer {
 DECL|k_tqhd|struct|struct k_tqhd {
 DECL|l1|member|struct _l1arg l1;
@@ -172,7 +167,6 @@ DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
 DECL|moved_req|member|struct moved_req moved_req;
 DECL|moved_req|struct|struct moved_req {
 DECL|mptr|member|void **mptr;
-DECL|mrec|member|struct k_mrec mrec;
 DECL|mutex|member|kmutex_t mutex;
 DECL|next|member|struct k_args *next;
 DECL|next|member|struct k_timer *next;
@@ -180,7 +174,6 @@ DECL|next|member|struct pool_struct *next;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
-DECL|nrec|member|int nrec;
 DECL|nsem|member|int nsem;
 DECL|num_pending_xfers|member|int num_pending_xfers; /* # data Xfers (still) in progress */
 DECL|opt|member|int opt;
@@ -201,7 +194,6 @@ DECL|prev|member|struct k_timer *prev;
 DECL|priority|member|kpriority_t priority;
 DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
-DECL|ptr|member|void *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
 DECL|queue|member|kfifo_t queue;
@@ -217,7 +209,6 @@ DECL|req_info|struct|struct req_info {
 DECL|req_size|member|int req_size;
 DECL|req_type|member|} req_type;
 DECL|req_type|member|} req_type;
-DECL|rind|member|int rind;
 DECL|rval|member|int rval;
 DECL|s1|member|struct _s1arg s1;
 DECL|sema|member|ksem_t sema;
@@ -243,7 +234,6 @@ DECL|time1|member|int64_t time1;
 DECL|time2|member|int64_t time2;
 DECL|timer|member|struct k_timer *timer;
 DECL|timer|member|struct k_timer *timer;
-DECL|time|member|uint32_t time;
 DECL|total_mem|member|int total_mem;
 DECL|total_size|member|int total_size;
 DECL|total_size|member|int total_size;
@@ -256,4 +246,3 @@ DECL|writer_ptr|member|struct k_args *writer_ptr; /* if there's a writer involve
 DECL|xfer_type|member|XFER_TYPE xfer_type; /* W2B, B2R or W2R */
 DECL|xferred_size|member|int xferred_size;
 DECL|xferred_size|member|int xferred_size; /* size of data ALREADY Xferred */
-DECL|z4|member|struct _z4arg z4;
