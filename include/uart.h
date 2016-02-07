@@ -30,7 +30,7 @@ DECL|poll_in|member|int (*poll_in)(struct device *dev, unsigned char *p_char);
 DECL|poll_out|member|unsigned char (*poll_out)(struct device *dev, unsigned char out_char);
 DECL|port|member|uint32_t port;
 DECL|regs|member|uint32_t regs;
-DECL|sys_clk_freq|member|uint32_t sys_clk_freq; /* System clock frequency in Hz */
+DECL|sys_clk_freq|member|uint32_t sys_clk_freq;
 DECL|uart_device_config|struct|struct uart_device_config {
 DECL|uart_driver_api|struct|struct uart_driver_api {
 DECL|uart_drv_cmd|function|static inline int uart_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
