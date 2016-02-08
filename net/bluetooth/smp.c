@@ -25,6 +25,7 @@ DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress 
 DECL|SMP_FLAG_PKEY_SEND|enumerator|SMP_FLAG_PKEY_SEND, /* if should send Public Key when available */
 DECL|SMP_FLAG_SC_DEBUG_KEY|enumerator|SMP_FLAG_SC_DEBUG_KEY, /* if Secure Connection are using debug key */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
+DECL|SMP_FLAG_SEC_REQ|enumerator|SMP_FLAG_SEC_REQ, /* if Security Request was sent/received */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
@@ -34,6 +35,8 @@ DECL|a|member|uint64_t a;
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
+DECL|bt_smp_auth_pairing_confirm|function|int bt_smp_auth_pairing_confirm(struct bt_conn *conn)
+DECL|bt_smp_auth_pairing_confirm|function|int bt_smp_auth_pairing_confirm(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_confirm|function|int bt_smp_auth_passkey_confirm(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
