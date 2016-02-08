@@ -35,6 +35,7 @@ DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_para
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
+DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
@@ -81,6 +82,9 @@ DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr,
 DECL|link_key_req|function|static void link_key_req(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
+DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
+DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
+DECL|prng|variable|prng
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
