@@ -42,7 +42,7 @@ DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_
 DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, uint8_t *tk)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
-DECL|bt_smp_pkey_ready|function|void bt_smp_pkey_ready(void)
+DECL|bt_smp_pkey_ready|function|void bt_smp_pkey_ready(const uint8_t *pkey)
 DECL|bt_smp_pool|variable|bt_smp_pool
 DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
@@ -101,6 +101,7 @@ DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
+DECL|sc_pkey|variable|sc_pkey
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
 DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt_smp *smp)
 DECL|sc_smp_send_dhkey_check|function|static uint8_t sc_smp_send_dhkey_check(struct bt_smp *smp, const uint8_t *e)

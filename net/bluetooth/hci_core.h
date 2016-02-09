@@ -29,7 +29,6 @@ DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
 DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
-DECL|pkey|member|uint8_t pkey[64];
 DECL|pkts|member|struct nano_sem pkts;
 DECL|pkts|member|struct nano_sem pkts;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
