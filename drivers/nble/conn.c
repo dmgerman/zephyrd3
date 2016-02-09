@@ -16,8 +16,11 @@ DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_le_set_auto_conn|function|int bt_le_set_auto_conn(bt_addr_le_t *addr,const struct bt_le_conn_param *param)
+DECL|callback_list|variable|callback_list
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conns|variable|conns
+DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
+DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|on_ble_gap_conn_update_evt|function|void on_ble_gap_conn_update_evt(const struct ble_gap_conn_update_evt *ev)
 DECL|on_ble_gap_connect_evt|function|void on_ble_gap_connect_evt(const struct ble_gap_connect_evt *ev)
 DECL|on_ble_gap_disconnect_evt|function|void on_ble_gap_disconnect_evt(const struct ble_gap_disconnect_evt *ev)
