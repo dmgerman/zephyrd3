@@ -237,6 +237,10 @@ DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_flags|macro|bt_acl_flags
 DECL|bt_acl_handle_pack|macro|bt_acl_handle_pack
 DECL|bt_acl_handle|macro|bt_acl_handle
+DECL|bt_addr_cmp|function|static inline int bt_addr_cmp(const bt_addr_t *a, const bt_addr_t *b)
+DECL|bt_addr_copy|function|static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
+DECL|bt_addr_le_cmp|function|static inline int bt_addr_le_cmp(const bt_addr_le_t *a, const bt_addr_le_t *b)
+DECL|bt_addr_le_copy|function|static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
 DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
