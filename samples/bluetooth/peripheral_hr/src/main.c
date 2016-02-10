@@ -15,6 +15,7 @@ DECL|default_conn|variable|default_conn
 DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|gap_attrs|variable|gap_attrs
+DECL|heartrate|variable|heartrate
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
 DECL|hrs_attrs|variable|hrs_attrs

@@ -25,6 +25,7 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_
 DECL|flush_long_vnd|function|static int flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gap_attrs|variable|gap_attrs
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
+DECL|heartrate|variable|heartrate
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
 DECL|hrs_attrs|variable|hrs_attrs
