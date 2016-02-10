@@ -39,6 +39,8 @@ DECL|GAP_SVC_ATTR_PPCP|enumerator|GAP_SVC_ATTR_PPCP = 4,
 DECL|active|member|uint8_t active; /**< If 1, perform active scan (scan req) */
 DECL|addr_count|member|uint8_t addr_count; /**< Count of device addr in array. */
 DECL|addrs|member|bt_addr_le_t addrs[8];
+DECL|addr|member|bt_addr_le_t addr;
+DECL|adv_type|member|uint8_t adv_type;
 DECL|ad|member|struct bt_eir_data ad; /**< Advertisement data, maybe 0 (length) */
 DECL|appearance|member|uint16_t appearance; /**< Appearance UUID */
 DECL|attr_type|member|uint16_t attr_type;
@@ -74,7 +76,6 @@ DECL|ble_gap_disconnect_req_params|struct|struct ble_gap_disconnect_req_params {
 DECL|ble_gap_gen_cmd_params|struct|struct ble_gap_gen_cmd_params {
 DECL|ble_gap_irk_info|struct|struct ble_gap_irk_info {
 DECL|ble_gap_rssi_evt|struct|struct ble_gap_rssi_evt {
-DECL|ble_gap_scan_params|struct|struct ble_gap_scan_params {
 DECL|ble_gap_service_read_params|struct|struct ble_gap_service_read_params {
 DECL|ble_gap_service_write_params|struct|struct ble_gap_service_write_params {
 DECL|ble_gap_set_option_params|struct|struct ble_gap_set_option_params {
@@ -139,9 +140,10 @@ DECL|map|member|uint8_t map[5]; /**< 37 bits are used of the 40 bits (LSB) */
 DECL|min_count|member|uint8_t min_count;
 DECL|name_array|member|uint8_t name_array[20]; /**< Device */
 DECL|name|member|struct ble_gap_device_name name;
+DECL|nble_gap_adv_report_evt|struct|struct nble_gap_adv_report_evt {
+DECL|nble_gap_scan_params|struct|struct nble_gap_scan_params {
 DECL|oob|member|uint8_t oob[16]; /**< 16 bytes of OOB security data */
 DECL|op_code|member|uint8_t op_code; /**< @ref BLE_GAP_GEN_OPS */
-DECL|options|member|uint8_t options;
 DECL|options|member|uint8_t options; /**< Sec options (@ref BLE_GAP_SM_OPTIONS) */
 DECL|op|member|uint8_t op; /**< Option to set @ref BLE_GAP_SET_OPTIONS */
 DECL|op|member|uint8_t op; /**< RSSI operation @ref BLE_GAP_RSSI_OPS */
@@ -161,7 +163,9 @@ DECL|reason|member|int reason;
 DECL|reason|member|uint8_t reason; /**< Reason of the disconnect */
 DECL|role|member|uint8_t role;
 DECL|rssi_lvl|member|int8_t rssi_lvl; /**< RSSI level (compared to 0 dBm) */
+DECL|rssi|member|int8_t rssi;
 DECL|scan_params|member|struct ble_core_gap_scan_params scan_params;
+DECL|scan_type|member|uint8_t scan_type;
 DECL|sd|member|struct bt_eir_data sd; /**< Scan response data, maybe 0 (length) */
 DECL|sec_mode|member|uint8_t sec_mode;
 DECL|selective|member|uint8_t selective; /**< If 1, ignore unknown dev (non whitelist) */
@@ -177,7 +181,6 @@ DECL|status|member|uint8_t status;
 DECL|supervision_to|member|uint16_t supervision_to; /**< Conn supervision timeout (10ms) */
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
-DECL|timeout|member|uint16_t timeout; /**< scan timeout in s, 0 never */
 DECL|tx_power|member|int8_t tx_power;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type; /**< advertisement types @ref GAP_ADV_TYPES */
@@ -185,6 +188,7 @@ DECL|u0|member|uint32_t u0; /** user parameter */
 DECL|u0|member|uint32_t u0; /** user parameter */
 DECL|u1|member|uint32_t u1; /** user parameter */
 DECL|u1|member|uint32_t u1; /** user parameter */
+DECL|use_whitelist|member|uint8_t use_whitelist;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data; /**< Pointer to response data structure */
