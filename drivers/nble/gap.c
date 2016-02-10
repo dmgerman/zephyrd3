@@ -23,7 +23,7 @@ DECL|on_ble_gap_service_write_rsp|function|void on_ble_gap_service_write_rsp(con
 DECL|on_ble_gap_set_option_rsp|function|void on_ble_gap_set_option_rsp(const struct ble_core_response *par)
 DECL|on_ble_gap_set_rssi_report_rsp|function|void on_ble_gap_set_rssi_report_rsp(const struct ble_core_response *par)
 DECL|on_ble_gap_sm_clear_bonds_rsp|function|void on_ble_gap_sm_clear_bonds_rsp(const struct ble_core_response *par)
-DECL|on_ble_gap_sm_config_rsp|function|void on_ble_gap_sm_config_rsp(struct ble_gap_sm_config_rsp *par)
+DECL|on_ble_gap_sm_config_rsp|function|void on_ble_gap_sm_config_rsp(struct ble_gap_sm_config_rsp *rsp)
 DECL|on_ble_gap_sm_pairing_rsp|function|void on_ble_gap_sm_pairing_rsp(const struct ble_core_response *par)
 DECL|on_ble_gap_sm_passkey_display_evt|function|void on_ble_gap_sm_passkey_display_evt(const struct ble_gap_sm_passkey_disp_evt *ev)
 DECL|on_ble_gap_sm_passkey_reply_rsp|function|void on_ble_gap_sm_passkey_reply_rsp(const struct ble_core_response *par)
