@@ -11,6 +11,7 @@ DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
+DECL|default_conn|variable|default_conn
 DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|gap_attrs|variable|gap_attrs
