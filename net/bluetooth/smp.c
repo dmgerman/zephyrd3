@@ -67,6 +67,7 @@ DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
 DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|gen_method_sc|variable|gen_method_sc
 DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
+DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
@@ -101,7 +102,8 @@ DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
-DECL|sc_pkey|variable|sc_pkey
+DECL|sc_private_key|variable|sc_private_key
+DECL|sc_public_key|variable|sc_public_key
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
 DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt_smp *smp)
 DECL|sc_smp_send_dhkey_check|function|static uint8_t sc_smp_send_dhkey_check(struct bt_smp *smp, const uint8_t *e)
