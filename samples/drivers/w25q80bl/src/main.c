@@ -1,5 +1,3 @@
-DECL|SPI_PORT_0|macro|SPI_PORT_0
-DECL|SPI_PORT_0|macro|SPI_PORT_0
 DECL|W25Q80BL_MANUFACTURER_ID|macro|W25Q80BL_MANUFACTURER_ID
 DECL|main|function|int main(void)
 DECL|rx_buffer|variable|rx_buffer
