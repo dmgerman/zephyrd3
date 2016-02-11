@@ -8,11 +8,16 @@ DECL|modules_sym|variable|modules_sym
 DECL|modules_val|variable|modules_val
 DECL|next|member|struct dep_stack *prev, *next;
 DECL|prev|member|struct dep_stack *prev, *next;
+DECL|print_dec|macro|print_dec
+DECL|print_dec|macro|print_dec
+DECL|print_hex|macro|print_hex
+DECL|print_hex|macro|print_hex
 DECL|prop_add_env|function|static void prop_add_env(const char *env)
 DECL|prop_alloc|function|struct property *prop_alloc(enum prop_type type, struct symbol *sym)
 DECL|prop_get_symbol|function|struct symbol *prop_get_symbol(struct property *prop)
 DECL|prop_get_type_name|function|const char *prop_get_type_name(enum prop_type type)
 DECL|prop|member|struct property *prop;
+DECL|release|member|char *release;
 DECL|so|member|off_t so, eo;
 DECL|strhash|function|static unsigned strhash(const char *s)
 DECL|sym_add_default|function|static void sym_add_default(struct symbol *sym, const char *def)
@@ -61,3 +66,5 @@ DECL|symbol_no|variable|symbol_no
 DECL|symbol_yes|variable|symbol_yes
 DECL|sym|member|struct symbol *sym;
 DECL|sym|member|struct symbol *sym;
+DECL|uname|macro|uname
+DECL|utsname|struct|struct utsname {

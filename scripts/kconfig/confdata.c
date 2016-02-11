@@ -34,6 +34,7 @@ DECL|header_printer_cb|variable|header_printer_cb
 DECL|kconfig_print_comment|function|kconfig_print_comment(FILE *fp, const char *value, void *arg)
 DECL|kconfig_print_symbol|function|kconfig_print_symbol(FILE *fp, struct symbol *sym, const char *value, void *arg)
 DECL|kconfig_printer_cb|variable|kconfig_printer_cb
+DECL|mkdir|macro|mkdir
 DECL|randomize_choice_values|function|static bool randomize_choice_values(struct symbol *csym)
 DECL|set_all_choice_values|function|void set_all_choice_values(struct symbol *csym)
 DECL|sym_add_change_count|function|void sym_add_change_count(int count)
