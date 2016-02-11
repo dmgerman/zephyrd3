@@ -1,3 +1,5 @@
+DECL|CONFIG_15_4_RX_STACK_SIZE|macro|CONFIG_15_4_RX_STACK_SIZE
+DECL|CONFIG_15_4_TX_STACK_SIZE|macro|CONFIG_15_4_TX_STACK_SIZE
 DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|STACKSIZE_UNIT|macro|STACKSIZE_UNIT
@@ -13,6 +15,5 @@ DECL|net_rx_15_4_fiber|function|static void net_rx_15_4_fiber(void)
 DECL|net_tx_15_4_fiber|function|static void net_tx_15_4_fiber(void)
 DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|variable|rx_queue
-DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_queue|variable|tx_queue
