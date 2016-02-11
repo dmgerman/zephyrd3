@@ -73,7 +73,6 @@ DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
-DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|legacy_distribute_keys|function|static void legacy_distribute_keys(struct bt_smp *smp)
