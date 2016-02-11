@@ -1,3 +1,5 @@
+DECL|BT_CONN_ROLE_MASTER|enumerator|BT_CONN_ROLE_MASTER,
+DECL|BT_CONN_ROLE_SLAVE|enumerator|BT_CONN_ROLE_SLAVE,
 DECL|BT_CONN_TYPE_BR|enumerator|BT_CONN_TYPE_BR, /** BR/EDR Connection Type */
 DECL|BT_CONN_TYPE_LE|enumerator|BT_CONN_TYPE_LE, /** LE Connection Type */
 DECL|BT_LE_CONN_PARAM_DEFAULT|macro|BT_LE_CONN_PARAM_DEFAULT
@@ -34,6 +36,7 @@ DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsign
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_entry|member|void (*passkey_entry)(struct bt_conn *conn);
 DECL|pincode_entry|member|void (*pincode_entry)(struct bt_conn *conn, bool highsec);
+DECL|role|member|uint8_t role;
 DECL|security_changed|member|void (*security_changed)(struct bt_conn *conn, bt_security_t level);
 DECL|src|member|const bt_addr_le_t *src; /** Source Address */
 DECL|timeout|member|uint16_t timeout;
