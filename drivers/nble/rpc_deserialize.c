@@ -88,16 +88,17 @@ DECL|debug_func_s_b_p|variable|debug_func_s_b_p
 DECL|debug_func_s_b|variable|debug_func_s_b
 DECL|debug_func_s_p|variable|debug_func_s_p
 DECL|debug_func_s|variable|debug_func_s
-DECL|deserialize_b_b_p|function|static void deserialize_b_b_p(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_buf|function|static const uint8_t *deserialize_buf(const uint8_t *p, const uint8_t **pp_buf, uint16_t *p_buflen)
-DECL|deserialize_none|function|static void deserialize_none(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_p|function|static void deserialize_p(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_s_b_b_p|function|static void deserialize_s_b_b_p(uint8_t fn_index, const uint8_t *buf,uint16_t length)
-DECL|deserialize_s_b_p|function|static void deserialize_s_b_p(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_s_b|function|static void deserialize_s_b(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_s_p|function|static void deserialize_s_p(uint8_t fn_index, const uint8_t *buf, uint16_t length)
-DECL|deserialize_struct|function|static const uint8_t *deserialize_struct(const uint8_t *p, const uint8_t **pp_struct, uint8_t *p_struct_length)
-DECL|deserialize_s|function|static void deserialize_s(uint8_t fn_index, const uint8_t *buf, uint16_t length)
+DECL|deserialize_b_b_p|function|static void deserialize_b_b_p(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_buf|function|static void deserialize_buf(struct net_buf *buf, const uint8_t **buf_ptr, uint16_t *buf_len)
+DECL|deserialize_none|function|static void deserialize_none(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_ptr|function|static void deserialize_ptr(struct net_buf *buf, uintptr_t *priv)
+DECL|deserialize_p|function|static void deserialize_p(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_s_b_b_p|function|static void deserialize_s_b_b_p(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_s_b_p|function|static void deserialize_s_b_p(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_s_b|function|static void deserialize_s_b(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_s_p|function|static void deserialize_s_p(uint8_t fn_index, struct net_buf *buf)
+DECL|deserialize_struct|function|static void deserialize_struct(struct net_buf *buf, const uint8_t **struct_ptr, uint8_t *struct_length)
+DECL|deserialize_s|function|static void deserialize_s(uint8_t fn_index, struct net_buf *buf)
 DECL|fn_b_b_p_index_max|enumerator|enum { LIST_FN_SIG_B_B_P fn_b_b_p_index_max };
 DECL|fn_none_index_max|enumerator|enum { LIST_FN_SIG_NONE fn_none_index_max };
 DECL|fn_p_index_max|enumerator|enum { LIST_FN_SIG_P fn_p_index_max };
@@ -120,4 +121,4 @@ DECL|m_size_s_b|variable|m_size_s_b
 DECL|m_size_s_p|variable|m_size_s_p
 DECL|m_size_s|variable|m_size_s
 DECL|panic|function|static void panic(int err)
-DECL|rpc_deserialize|function|void rpc_deserialize(const uint8_t *buf, uint16_t length)
+DECL|rpc_deserialize|function|void rpc_deserialize(struct net_buf *buf)
