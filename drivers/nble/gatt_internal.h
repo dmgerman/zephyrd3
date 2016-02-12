@@ -21,46 +21,15 @@ DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write 
 DECL|attr_handle|member|uint16_t attr_handle; /**< handle of attribute to write */
 DECL|attr_idx|member|uint8_t attr_idx; /**< Attribute index into service attribute table */
 DECL|attr|member|struct bt_gatt_attr *attr;
+DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
 DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
-DECL|attr|member|struct bt_gatt_attr *attr; /**< GATT Attribute */
-DECL|ble_core_discover_params|struct|struct ble_core_discover_params {
-DECL|ble_core_gatt_handle_range|struct|struct ble_core_gatt_handle_range {
-DECL|ble_gatt_attr_handle_mapping|struct|struct ble_gatt_attr_handle_mapping {
-DECL|ble_gatt_attr_handles|struct|struct ble_gatt_attr_handles {
-DECL|ble_gatt_attr|struct|struct ble_gatt_attr {
-DECL|ble_gatt_notif_ind_params|struct|struct ble_gatt_notif_ind_params {
-DECL|ble_gatt_notif_ind_rsp|struct|struct ble_gatt_notif_ind_rsp {
-DECL|ble_gatt_register_req|struct|struct ble_gatt_register_req {
-DECL|ble_gatt_register_rsp|struct|struct ble_gatt_register_rsp {
-DECL|ble_gatt_send_notif_ind_params|struct|struct ble_gatt_send_notif_ind_params {
-DECL|ble_gatt_wr_evt|struct|struct ble_gatt_wr_evt {
-DECL|ble_gattc_attr|struct|struct ble_gattc_attr {
-DECL|ble_gattc_characteristic|struct|struct ble_gattc_characteristic {
-DECL|ble_gattc_descriptor|struct|struct ble_gattc_descriptor {
-DECL|ble_gattc_disc_rsp|struct|struct ble_gattc_disc_rsp {
-DECL|ble_gattc_evt|struct|struct ble_gattc_evt {
-DECL|ble_gattc_incl_svc|struct|struct ble_gattc_incl_svc {
-DECL|ble_gattc_prim_svc|struct|struct ble_gattc_prim_svc {
-DECL|ble_gattc_read_params|struct|struct ble_gattc_read_params {
-DECL|ble_gattc_read_rsp|struct|struct ble_gattc_read_rsp {
-DECL|ble_gattc_rsp|struct|struct ble_gattc_rsp {
-DECL|ble_gattc_to_evt|struct|struct ble_gattc_to_evt {
-DECL|ble_gattc_value_evt|struct|struct ble_gattc_value_evt {
-DECL|ble_gattc_write_params|struct|struct ble_gattc_write_params {
-DECL|ble_gattc_write_rsp|struct|struct ble_gattc_write_rsp {
-DECL|ble_gatts_attribute_response|struct|struct ble_gatts_attribute_response {
-DECL|ble_gatts_get_attribute_params|struct|struct ble_gatts_get_attribute_params {
-DECL|ble_gatts_notif_ind_type|enum|enum ble_gatts_notif_ind_type {
-DECL|ble_gatts_rw_reply_params|struct|struct ble_gatts_rw_reply_params {
-DECL|ble_gatts_set_attribute_params|struct|struct ble_gatts_set_attribute_params {
-DECL|ble_gatts_svc_changed_params|struct|struct ble_gatts_svc_changed_params {
 DECL|cback|member|bt_gatt_notify_func_t cback;
 DECL|cback|member|void *cback;
 DECL|char_handle|member|uint16_t char_handle;
 DECL|char_handle|member|uint16_t char_handle; /**< Handle of the attribute to be read */
 DECL|char_handle|member|uint16_t char_handle; /**< Handle of the attribute to be read */
-DECL|chars|member|struct ble_gattc_characteristic chars;
+DECL|chars|member|struct nble_gattc_characteristic chars;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
@@ -79,12 +48,12 @@ DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
 DECL|conn_handle|member|uint16_t conn_handle; /**< GAP connection handle */
 DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
-DECL|desc|member|struct ble_gattc_descriptor desc;
+DECL|desc|member|struct nble_gattc_descriptor desc;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
-DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< Discover range */
-DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< handle range */
-DECL|handle_range|member|struct ble_core_gatt_handle_range handle_range; /**< handle range */
+DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< Discover range */
+DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< handle range */
+DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< handle range */
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle; /* handle from ble controller should be sufficient */
 DECL|handle|member|uint16_t handle; /**< Attribute handle */
@@ -92,10 +61,40 @@ DECL|handle|member|uint16_t handle; /**< Characteristic Definition handle */
 DECL|handle|member|uint16_t handle; /**< Handle of included svc */
 DECL|handle|member|uint16_t handle; /**< descriptor handle */
 DECL|handle|member|uint16_t handle; /**< handle of char attr read */
-DECL|incls|member|struct ble_gattc_incl_svc incls;
+DECL|incls|member|struct nble_gattc_incl_svc incls;
 DECL|len|member|uint16_t len;
-DECL|msg_type|member|uint8_t msg_type;
+DECL|nble_discover_params|struct|struct nble_discover_params {
+DECL|nble_gatt_attr_handle_mapping|struct|struct nble_gatt_attr_handle_mapping {
+DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
+DECL|nble_gatt_attr|struct|struct nble_gatt_attr {
+DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
+DECL|nble_gatt_notif_ind_params|struct|struct nble_gatt_notif_ind_params {
+DECL|nble_gatt_notif_ind_rsp|struct|struct nble_gatt_notif_ind_rsp {
 DECL|nble_gatt_rd_evt|struct|struct nble_gatt_rd_evt {
+DECL|nble_gatt_register_req|struct|struct nble_gatt_register_req {
+DECL|nble_gatt_register_rsp|struct|struct nble_gatt_register_rsp {
+DECL|nble_gatt_send_notif_ind_params|struct|struct nble_gatt_send_notif_ind_params {
+DECL|nble_gatt_wr_evt|struct|struct nble_gatt_wr_evt {
+DECL|nble_gattc_attr|struct|struct nble_gattc_attr {
+DECL|nble_gattc_characteristic|struct|struct nble_gattc_characteristic {
+DECL|nble_gattc_descriptor|struct|struct nble_gattc_descriptor {
+DECL|nble_gattc_disc_rsp|struct|struct nble_gattc_disc_rsp {
+DECL|nble_gattc_evt|struct|struct nble_gattc_evt {
+DECL|nble_gattc_incl_svc|struct|struct nble_gattc_incl_svc {
+DECL|nble_gattc_prim_svc|struct|struct nble_gattc_prim_svc {
+DECL|nble_gattc_read_params|struct|struct nble_gattc_read_params {
+DECL|nble_gattc_read_rsp|struct|struct nble_gattc_read_rsp {
+DECL|nble_gattc_rsp|struct|struct nble_gattc_rsp {
+DECL|nble_gattc_to_evt|struct|struct nble_gattc_to_evt {
+DECL|nble_gattc_value_evt|struct|struct nble_gattc_value_evt {
+DECL|nble_gattc_write_params|struct|struct nble_gattc_write_params {
+DECL|nble_gattc_write_rsp|struct|struct nble_gattc_write_rsp {
+DECL|nble_gatts_attribute_response|struct|struct nble_gatts_attribute_response {
+DECL|nble_gatts_get_attribute_params|struct|struct nble_gatts_get_attribute_params {
+DECL|nble_gatts_notif_ind_type|enum|enum nble_gatts_notif_ind_type {
+DECL|nble_gatts_rw_reply_params|struct|struct nble_gatts_rw_reply_params {
+DECL|nble_gatts_set_attribute_params|struct|struct nble_gatts_set_attribute_params {
+DECL|nble_gatts_svc_changed_params|struct|struct nble_gatts_svc_changed_params {
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset; /* by default 0 */
 DECL|offset|member|uint16_t offset; /**< Offset in attribute buffer */
@@ -104,9 +103,9 @@ DECL|offset|member|uint16_t offset; /**< Offset into the attr value to be write 
 DECL|offset|member|uint16_t offset; /**< offset in attribute buffer */
 DECL|offset|member|uint16_t offset; /**< offset in attribute buffer */
 DECL|offset|member|uint16_t offset; /**< offset of data returned */
-DECL|params|member|struct ble_gatt_notif_ind_params params;
+DECL|params|member|struct nble_gatt_notif_ind_params params;
 DECL|perm|member|uint16_t perm;
-DECL|prim|member|struct ble_gattc_prim_svc prim;
+DECL|prim|member|struct nble_gattc_prim_svc prim;
 DECL|priv|member|void *priv;
 DECL|prop|member|uint8_t prop; /**< Characteristic property */
 DECL|reason|member|uint16_t reason; /**< GATT timeout reason */
@@ -119,15 +118,15 @@ DECL|status|member|int status;
 DECL|status|member|int status;
 DECL|status|member|int status;
 DECL|status|member|int status;
+DECL|status|member|int status;
 DECL|status|member|int status; /**< Reply status, from errno */
-DECL|status|member|int status; /**< Status of the operation. */
 DECL|status|member|int status; /**< Status of the operation. */
 DECL|status|member|int status; /**< Status of the registration op */
 DECL|svc_idx|member|uint8_t svc_idx; /**< Service index */
 DECL|type|member|uint8_t type;
+DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
-DECL|type|member|uint8_t type; /**< Discover type @ref BLE_GATT_DISC_TYPES */
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute UUID */
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute's UUID */
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Characteristic UUID */
