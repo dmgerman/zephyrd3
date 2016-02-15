@@ -112,7 +112,6 @@ DECL|min_count|member|uint8_t min_count;
 DECL|name_array|member|uint8_t name_array[20]; /**< Device */
 DECL|name|member|struct nble_gap_device_name name;
 DECL|nble_core_bonded_devices|struct|struct nble_core_bonded_devices {
-DECL|nble_core_gap_scan_params|struct|struct nble_core_gap_scan_params {
 DECL|nble_core_gap_sm_pairing_params|struct|struct nble_core_gap_sm_pairing_params {
 DECL|nble_core_gap_sm_passkey|struct|struct nble_core_gap_sm_passkey {
 DECL|nble_gap_adv_params|struct|struct nble_gap_adv_params {
@@ -131,6 +130,7 @@ DECL|nble_gap_disconnect_req_params|struct|struct nble_gap_disconnect_req_params
 DECL|nble_gap_gen_cmd_params|struct|struct nble_gap_gen_cmd_params {
 DECL|nble_gap_irk_info|struct|struct nble_gap_irk_info {
 DECL|nble_gap_rssi_evt|struct|struct nble_gap_rssi_evt {
+DECL|nble_gap_scan_parameters|struct|struct nble_gap_scan_parameters {
 DECL|nble_gap_scan_params|struct|struct nble_gap_scan_params {
 DECL|nble_gap_service_read_params|struct|struct nble_gap_service_read_params {
 DECL|nble_gap_service_write_params|struct|struct nble_gap_service_write_params {
@@ -177,7 +177,7 @@ DECL|reason|member|uint8_t reason; /**< Reason of the disconnect */
 DECL|role|member|uint8_t role;
 DECL|rssi_lvl|member|int8_t rssi_lvl; /**< RSSI level (compared to 0 dBm) */
 DECL|rssi|member|int8_t rssi;
-DECL|scan_params|member|struct nble_core_gap_scan_params scan_params;
+DECL|scan_params|member|struct nble_gap_scan_parameters scan_params;
 DECL|scan_type|member|uint8_t scan_type;
 DECL|sd|member|struct bt_eir_data sd; /**< Scan response data, maybe 0 (length) */
 DECL|sec_mode|member|uint8_t sec_mode;
