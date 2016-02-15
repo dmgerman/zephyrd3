@@ -89,7 +89,7 @@ DECL|nble_gattc_to_evt|struct|struct nble_gattc_to_evt {
 DECL|nble_gattc_value_evt|struct|struct nble_gattc_value_evt {
 DECL|nble_gattc_write_params|struct|struct nble_gattc_write_params {
 DECL|nble_gattc_write_rsp|struct|struct nble_gattc_write_rsp {
-DECL|nble_gatts_attribute_response|struct|struct nble_gatts_attribute_response {
+DECL|nble_gatts_attribute_rsp|struct|struct nble_gatts_attribute_rsp {
 DECL|nble_gatts_get_attribute_params|struct|struct nble_gatts_get_attribute_params {
 DECL|nble_gatts_notif_ind_type|enum|enum nble_gatts_notif_ind_type {
 DECL|nble_gatts_rw_reply_params|struct|struct nble_gatts_rw_reply_params {
