@@ -26,7 +26,7 @@ DECL|peer_mac|variable|peer_mac
 DECL|receiving|function|void receiving(void)
 DECL|reverse|function|static inline void reverse(unsigned char *buf, int len)
 DECL|send_packet|function|static inline bool send_packet(const char *name, struct net_context *ctx, int ipsum_len, int pos)
-DECL|sending|function|void sending(void)
+DECL|sending|function|void sending(int resend)
 DECL|stack_receiving|variable|stack_receiving
 DECL|unicast|variable|unicast
 DECL|wait_reply|function|static inline bool wait_reply(const char *name, struct net_context *ctx, int ipsum_len, int pos)
