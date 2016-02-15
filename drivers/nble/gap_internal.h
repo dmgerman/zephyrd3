@@ -39,7 +39,6 @@ DECL|GAP_SVC_ATTR_PPCP|enumerator|GAP_SVC_ATTR_PPCP = 4,
 DECL|active|member|uint8_t active; /**< If 1, perform active scan (scan req) */
 DECL|addr_count|member|uint8_t addr_count;
 DECL|addr_count|member|uint8_t addr_count; /**< Count of device addr in array. */
-DECL|addrs|member|bt_addr_le_t addrs[8];
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|adv_type|member|uint8_t adv_type;
