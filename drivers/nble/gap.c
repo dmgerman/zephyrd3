@@ -1,7 +1,6 @@
 DECL|NBLE_BTWAKE_PIN|macro|NBLE_BTWAKE_PIN
 DECL|NBLE_RESET_PIN|macro|NBLE_RESET_PIN
 DECL|NBLE_SWDIO_PIN|macro|NBLE_SWDIO_PIN
-DECL|bdaddr|variable|bdaddr
 DECL|bt_addr_le_str|function|static const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
@@ -9,6 +8,7 @@ DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
+DECL|nble_bdaddr|variable|nble_bdaddr
 DECL|nble_log|function|void nble_log(const struct nble_log_s *param, char *format, uint8_t len)
 DECL|on_ble_set_enable_config_rsp|function|void on_ble_set_enable_config_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_cancel_connect_rsp|function|void on_nble_gap_cancel_connect_rsp(const struct nble_response *rsp)
