@@ -27,6 +27,7 @@ DECL|WAIT_100ms|macro|WAIT_100ms
 DECL|WAIT_10ms|macro|WAIT_10ms
 DECL|WAIT_1ms|macro|WAIT_1ms
 DECL|WAIT_200ms|macro|WAIT_200ms
+DECL|WAIT_500ms|macro|WAIT_500ms
 DECL|WITH_SEND_CCA|macro|WITH_SEND_CCA
 DECL|cc2520_15_4_radio_driver|variable|cc2520_15_4_radio_driver
 DECL|cc2520_cca_valid|function|int cc2520_cca_valid(void)
