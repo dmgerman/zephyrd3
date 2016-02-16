@@ -27,7 +27,7 @@ DECL|in4addr_my|variable|in4addr_my
 DECL|in4addr_peer|variable|in4addr_peer
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
-DECL|init_server|function|static inline void init_server()
+DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
 DECL|my_mac|variable|my_mac
 DECL|notification_callback|function|static void notification_callback(coap_observee_t *obs, void *notification, coap_notification_flag_t flag)

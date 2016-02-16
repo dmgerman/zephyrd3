@@ -17,8 +17,8 @@ DECL|in4addr_any|variable|in4addr_any
 DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_any|variable|in6addr_any
 DECL|in6addr_my|variable|in6addr_my
+DECL|init_app|function|static inline void init_app(void)
 DECL|init_dtls|function|static void init_dtls(struct net_context *recv, dtls_context_t **dtls)
-DECL|init_server|function|static inline void init_server()
 DECL|main|function|void main(void)
 DECL|my_mac|variable|my_mac
 DECL|read_from_peer|function|static int read_from_peer(struct dtls_context_t *ctx, session_t *session, uint8 *data, size_t len)

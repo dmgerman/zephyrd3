@@ -26,7 +26,7 @@ DECL|in4addr_peer|variable|in4addr_peer
 DECL|in6addr_any|variable|in6addr_any
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
-DECL|init_server|function|static inline void init_server()
+DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
 DECL|my_mac|variable|my_mac
 DECL|peer_mac|variable|peer_mac

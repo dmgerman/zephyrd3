@@ -12,7 +12,7 @@ DECL|fiberStack|variable|fiberStack
 DECL|get_context|function|static inline bool get_context(struct net_context **recv, struct net_context **mcast_recv)
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
-DECL|init_server|function|static inline void init_server()
+DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
 DECL|my_mac|variable|my_mac
 DECL|peer_mac|variable|peer_mac
