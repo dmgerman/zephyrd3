@@ -1,17 +1,15 @@
-DECL|DEBUG_TRACING_OBJ_INIT|macro|DEBUG_TRACING_OBJ_INIT
-DECL|DEBUG_TRACING_OBJ_INIT|macro|DEBUG_TRACING_OBJ_INIT
 DECL|NANO_CTX_FIBER|macro|NANO_CTX_FIBER
 DECL|NANO_CTX_ISR|macro|NANO_CTX_ISR
 DECL|NANO_CTX_TASK|macro|NANO_CTX_TASK
 DECL|TICKS_NONE|macro|TICKS_NONE
 DECL|TICKS_UNLIMITED|macro|TICKS_UNLIMITED
 DECL|__NANOKERNEL_H__|macro|__NANOKERNEL_H__
+DECL|__next|member|struct nano_fifo *__next;
+DECL|__next|member|struct nano_lifo *__next;
+DECL|__next|member|struct nano_sem *__next;
+DECL|__next|member|struct nano_timer *__next;
 DECL|_nano_queue|struct|struct _nano_queue {
 DECL|_nano_timeout|struct|struct _nano_timeout {
-DECL|_track_list_nano_fifo|variable|_track_list_nano_fifo
-DECL|_track_list_nano_lifo|variable|_track_list_nano_lifo
-DECL|_track_list_nano_sem|variable|_track_list_nano_sem
-DECL|_track_list_nano_timer|variable|_track_list_nano_timer
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
 DECL|delete|function|inline void operator delete(void *ptr)
@@ -36,10 +34,6 @@ DECL|nano_timer_test|function|static inline void *nano_timer_test(struct nano_ti
 DECL|nano_timer|struct|struct nano_timer {
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new[](size_t size)
-DECL|next|member|struct nano_fifo *next;
-DECL|next|member|struct nano_lifo *next;
-DECL|next|member|struct nano_sem *next;
-DECL|next|member|struct nano_timer *next;
 DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;

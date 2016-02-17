@@ -107,7 +107,6 @@ DECL|_pipe_xfer_req_arg|struct|struct _pipe_xfer_req_arg {
 DECL|_q1arg|struct|struct _q1arg {
 DECL|_q2arg|struct|struct _q2arg {
 DECL|_s1arg|struct|struct _s1arg {
-DECL|_track_list_micro_mem_pool|variable|_track_list_micro_mem_pool
 DECL|_u1arg|struct|struct _u1arg {
 DECL|a1|member|struct _a1arg a1;
 DECL|action|member|MovedAction action;
