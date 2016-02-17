@@ -10,7 +10,6 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DRIVER_STR|macro|DRIVER_STR
 DECL|__CC2520_ARCH_H__|macro|__CC2520_ARCH_H__
-DECL|cc2520_clear_fifop_int|function|static inline void cc2520_clear_fifop_int(void)
 DECL|cc2520_config|struct|struct cc2520_config {
 DECL|cc2520_enable_fifop_int|function|static inline void cc2520_enable_fifop_int(int enable)
 DECL|cc2520_get_cca|function|static inline int cc2520_get_cca(void)
