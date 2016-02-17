@@ -26,3 +26,4 @@ DECL|on_nble_gap_conn_update_evt|function|void on_nble_gap_conn_update_evt(const
 DECL|on_nble_gap_connect_evt|function|void on_nble_gap_connect_evt(const struct nble_gap_connect_evt *ev)
 DECL|on_nble_gap_connect_rsp|function|void on_nble_gap_connect_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_disconnect_evt|function|void on_nble_gap_disconnect_evt(const struct nble_gap_disconnect_evt *ev)
+DECL|on_nble_gap_disconnect_rsp|function|void on_nble_gap_disconnect_rsp(const struct nble_response *rsp)
