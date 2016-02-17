@@ -22,6 +22,7 @@ DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conns|variable|conns
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
+DECL|on_nble_gap_cancel_connect_rsp|function|void on_nble_gap_cancel_connect_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_conn_update_evt|function|void on_nble_gap_conn_update_evt(const struct nble_gap_conn_update_evt *ev)
 DECL|on_nble_gap_connect_evt|function|void on_nble_gap_connect_evt(const struct nble_gap_connect_evt *ev)
 DECL|on_nble_gap_connect_rsp|function|void on_nble_gap_connect_rsp(const struct nble_response *rsp)
