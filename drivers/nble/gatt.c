@@ -29,7 +29,7 @@ DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, uint16_t handle, uint16_t offset, const void *data, uint16_t length, bt_gatt_rsp_func_t func)
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|nble_gatt_service|struct|struct nble_gatt_service {
-DECL|on_ble_gatt_register_rsp|function|void on_ble_gatt_register_rsp(const struct nble_gatt_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
+DECL|on_nble_gatt_register_rsp|function|void on_nble_gatt_register_rsp(const struct nble_gatt_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gatts_read_evt|function|void on_nble_gatts_read_evt(const struct nble_gatt_rd_evt *evt)
 DECL|on_nble_gatts_write_evt|function|void on_nble_gatts_write_evt(const struct nble_gatt_wr_evt *evt, const uint8_t *buf, uint8_t buflen)
 DECL|properties|member|uint8_t properties;
