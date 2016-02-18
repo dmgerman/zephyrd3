@@ -60,6 +60,7 @@ DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(stru
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|is_bonded|function|static bool is_bonded(const bt_addr_le_t *addr)
 DECL|length|member|uint16_t length;
 DECL|len|member|size_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
