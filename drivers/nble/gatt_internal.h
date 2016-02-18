@@ -39,13 +39,13 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handl */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle */
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
 DECL|conn_handle|member|uint16_t conn_handle; /**< Connection handle*/
-DECL|conn_handle|member|uint16_t conn_handle; /**< GAP connection handle */
 DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
 DECL|desc|member|struct nble_gattc_descriptor desc;
@@ -54,6 +54,8 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< Discover range */
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< handle range */
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range; /**< handle range */
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle; /* handle from ble controller should be sufficient */
 DECL|handle|member|uint16_t handle; /**< Attribute handle */
@@ -81,7 +83,9 @@ DECL|nble_gattc_descriptor|struct|struct nble_gattc_descriptor {
 DECL|nble_gattc_disc_rsp|struct|struct nble_gattc_disc_rsp {
 DECL|nble_gattc_evt|struct|struct nble_gattc_evt {
 DECL|nble_gattc_incl_svc|struct|struct nble_gattc_incl_svc {
+DECL|nble_gattc_included|struct|struct nble_gattc_included {
 DECL|nble_gattc_prim_svc|struct|struct nble_gattc_prim_svc {
+DECL|nble_gattc_primary|struct|struct nble_gattc_primary {
 DECL|nble_gattc_read_params|struct|struct nble_gattc_read_params {
 DECL|nble_gattc_read_rsp|struct|struct nble_gattc_read_rsp {
 DECL|nble_gattc_rsp|struct|struct nble_gattc_rsp {
@@ -108,6 +112,8 @@ DECL|perm|member|uint16_t perm;
 DECL|prim|member|struct nble_gattc_prim_svc prim;
 DECL|priv|member|void *priv;
 DECL|prop|member|uint8_t prop; /**< Characteristic property */
+DECL|range|member|struct nble_gatt_handle_range range;
+DECL|range|member|struct nble_gatt_handle_range range;
 DECL|reason|member|uint16_t reason; /**< GATT timeout reason */
 DECL|reply|member|uint8_t reply; /**< 1 if reply required, 0 otherwise */
 DECL|start_handle|member|uint16_t start_handle;
@@ -127,6 +133,8 @@ DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
 DECL|type|member|uint8_t type; /**< @ref BLE_GATT_DISC_TYPES */
+DECL|uuid|member|struct bt_uuid_128 uuid;
+DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute UUID */
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Attribute's UUID */
 DECL|uuid|member|struct bt_uuid_128 uuid; /**< Characteristic UUID */
