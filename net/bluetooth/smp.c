@@ -14,6 +14,7 @@ DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS_SC|macro|SEND_KEYS_SC
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
+DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
 DECL|SMP_FLAG_DHKEY_SEND|enumerator|SMP_FLAG_DHKEY_SEND, /* if should generate and send DHKey Check */
@@ -22,7 +23,7 @@ DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress 
 DECL|SMP_FLAG_PKEY_SEND|enumerator|SMP_FLAG_PKEY_SEND, /* if should send Public Key when available */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
-DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER /* if waiting for user input */
+DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
