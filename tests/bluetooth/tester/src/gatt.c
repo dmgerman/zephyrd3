@@ -71,7 +71,6 @@ DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struc
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
 DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
-DECL|signed_write_without_rsp|function|static void signed_write_without_rsp(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|subscribe_params|variable|subscribe_params
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
@@ -89,5 +88,5 @@ DECL|write_long_rsp|function|static void write_long_rsp(struct bt_conn *conn, ui
 DECL|write_long|function|static void write_long(uint8_t *data, uint16_t len)
 DECL|write_rsp|function|static void write_rsp(struct bt_conn *conn, uint8_t err)
 DECL|write_value|function|static int write_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
-DECL|write_without_rsp|function|static void write_without_rsp(uint8_t *data, uint16_t len)
+DECL|write_without_rsp|function|static void write_without_rsp(uint8_t *data, uint16_t len, uint8_t op, bool sign)
 DECL|write|function|static void write(uint8_t *data, uint16_t len)
