@@ -71,7 +71,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|exponent|member|int8_t exponent;
 DECL|flags|member|uint16_t flags;
-DECL|flush|member|int (*flush)(struct bt_conn *conn,
+DECL|flush|member|ssize_t (*flush)(struct bt_conn *conn,
 DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
@@ -86,7 +86,7 @@ DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;
 DECL|properties|member|uint16_t properties;
 DECL|properties|member|uint8_t properties;
-DECL|read|member|int (*read)(struct bt_conn *conn,
+DECL|read|member|ssize_t (*read)(struct bt_conn *conn,
 DECL|single|member|} single;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
@@ -103,4 +103,4 @@ DECL|value_handle|member|uint16_t value_handle;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
 DECL|value|member|uint16_t value;
-DECL|write|member|int (*write)(struct bt_conn *conn,
+DECL|write|member|ssize_t (*write)(struct bt_conn *conn,

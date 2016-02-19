@@ -65,14 +65,14 @@ DECL|measurement_uncertainty|member|uint8_t measurement_uncertainty;
 DECL|meas|member|struct es_measurement meas;
 DECL|meas|member|struct es_measurement meas;
 DECL|operand|member|uint8_t operand[];
-DECL|read_appearance|function|static int read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_blvl|function|static int read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_es_measurement_rp|struct|struct read_es_measurement_rp {
-DECL|read_es_measurement|function|static int read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_string|function|static int read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_temp_trigger_setting|function|static int read_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_temp_valid_range|function|static int read_temp_valid_range(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_u16|function|static int read_u16(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_es_measurement|function|static ssize_t read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_string|function|static ssize_t read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_temp_trigger_setting|function|static ssize_t read_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_temp_valid_range|function|static ssize_t read_temp_valid_range(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_u16|function|static ssize_t read_u16(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)
 DECL|ref_val|member|int16_t ref_val;
 DECL|ref_val|member|int16_t ref_val; /* Reference temperature */
 DECL|sampling_function|member|uint8_t sampling_function;
@@ -93,4 +93,4 @@ DECL|update_interval|member|uint8_t update_interval[3];
 DECL|update_temperature|function|static void update_temperature(struct bt_conn *conn, const struct bt_gatt_attr *chrc, int16_t value, struct temperature_sensor *sensor)
 DECL|upper_limit|member|int16_t upper_limit;
 DECL|write_es_trigger_setting_req|struct|struct write_es_trigger_setting_req {
-DECL|write_temp_trigger_setting|function|static int write_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
+DECL|write_temp_trigger_setting|function|static ssize_t write_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
