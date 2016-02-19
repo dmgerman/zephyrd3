@@ -156,7 +156,7 @@ DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_smp *sm
 DECL|smp_timeout|function|static void smp_timeout(int arg1, int arg2)
 DECL|swap_buf|function|static void swap_buf(uint8_t *dst, const uint8_t *src, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
-DECL|timeout|member|void *timeout;
+DECL|timeout|member|nano_thread_id_t timeout;
 DECL|tk|member|uint8_t tk[16];
 DECL|uint128_t|typedef|} uint128_t;
 DECL|xor_128|function|static void xor_128(const uint128_t *p, const uint128_t *q, uint128_t *r)
