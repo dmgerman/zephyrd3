@@ -94,6 +94,8 @@ DECL|GATT_START_SERVER|macro|GATT_START_SERVER
 DECL|GATT_WRITE_LONG|macro|GATT_WRITE_LONG
 DECL|GATT_WRITE_WITHOUT_RSP|macro|GATT_WRITE_WITHOUT_RSP
 DECL|GATT_WRITE|macro|GATT_WRITE
+DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -264,6 +266,7 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|data|member|uint8_t data[0];
 DECL|desc_id|member|uint16_t desc_id;
 DECL|descriptor_handle|member|uint16_t descriptor_handle;
 DECL|descriptors_count|member|uint8_t descriptors_count;
@@ -364,6 +367,7 @@ DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
 DECL|io_cap|member|uint8_t io_cap;
 DECL|key_size|member|uint8_t key_size;
+DECL|l2cap_read_supported_commands_rp|struct|struct l2cap_read_supported_commands_rp {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|match|member|uint8_t match;
