@@ -19,6 +19,7 @@ DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should 
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
 DECL|SMP_FLAG_DHKEY_SEND|enumerator|SMP_FLAG_DHKEY_SEND, /* if should generate and send DHKey Check */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
+DECL|SMP_FLAG_KEYS_DISTR|enumerator|SMP_FLAG_KEYS_DISTR, /* if keys distribution phase is in progress */
 DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
 DECL|SMP_FLAG_PKEY_SEND|enumerator|SMP_FLAG_PKEY_SEND, /* if should send Public Key when available */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
