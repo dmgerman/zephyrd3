@@ -1,0 +1,5 @@
+DECL|OBJ_LIST_NAME|macro|OBJ_LIST_NAME
+DECL|OBJ_LIST_NAME|macro|OBJ_LIST_NAME
+DECL|OBJ_LIST_TYPE|macro|OBJ_LIST_TYPE
+DECL|OBJ_LIST_TYPE|macro|OBJ_LIST_TYPE
+DECL|object_monitor|function|void object_monitor(void)
