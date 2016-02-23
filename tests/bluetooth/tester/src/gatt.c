@@ -19,9 +19,6 @@ DECL|ccc_added|variable|ccc_added
 DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
 DECL|ccc_cfg|variable|ccc_cfg
 DECL|ccc|variable|ccc
-DECL|cep|variable|cep
-DECL|chr_val|variable|chr_val
-DECL|chr|variable|chr
 DECL|config_subscription|function|static void config_subscription(uint8_t *data, uint16_t len, uint16_t op)
 DECL|data|member|uint8_t *data;
 DECL|disable_subscription|function|static int disable_subscription(struct bt_conn *conn, uint16_t ccc_handle)
@@ -36,7 +33,6 @@ DECL|discover_complete|function|static void discover_complete(struct bt_conn *co
 DECL|discover_destroy|function|static void discover_destroy(struct bt_gatt_discover_params *params)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
-DECL|dsc|variable|dsc
 DECL|enable_subscription|function|static int enable_subscription(struct bt_conn *conn, uint16_t ccc_handle, uint16_t value)
 DECL|enc_key_size|member|uint8_t enc_key_size;
 DECL|ev_buf|variable|ev_buf
@@ -49,7 +45,7 @@ DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t le
 DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
-DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern)
+DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
 DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
@@ -73,9 +69,6 @@ DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|subscribe_params|variable|subscribe_params
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
-DECL|svc_inc|variable|svc_inc
-DECL|svc_pri|variable|svc_pri
-DECL|svc_sec|variable|svc_sec
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
 DECL|tester_init_gatt|function|uint8_t tester_init_gatt(void)
 DECL|u128|member|struct bt_uuid_128 u128;
