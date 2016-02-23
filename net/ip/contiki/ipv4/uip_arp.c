@@ -6,8 +6,6 @@ DECL|DEBUG|macro|DEBUG
 DECL|IPBUF|macro|IPBUF
 DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
 DECL|PACK_ALIAS_STRUCT|variable|PACK_ALIAS_STRUCT
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
 DECL|arp_entry|struct|struct arp_entry {
 DECL|arp_hdr|struct|struct arp_hdr {
 DECL|arp_table|variable|arp_table

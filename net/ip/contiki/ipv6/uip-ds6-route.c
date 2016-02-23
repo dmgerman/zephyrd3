@@ -1,5 +1,4 @@
 DECL|DEBUG|macro|DEBUG
-DECL|DEBUG|macro|DEBUG
 DECL|assert_nbr_routes_list_sane|function|assert_nbr_routes_list_sane(void)
 DECL|call_route_callback|function|call_route_callback(int event, uip_ipaddr_t *route, uip_ipaddr_t *nexthop)
 DECL|defaultrouterlist|variable|defaultrouterlist
