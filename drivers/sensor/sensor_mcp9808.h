@@ -1,0 +1,10 @@
+DECL|MCP9808_REG_TEMP_AMB|macro|MCP9808_REG_TEMP_AMB
+DECL|MCP9808_SIGN_BIT|macro|MCP9808_SIGN_BIT
+DECL|MCP9808_TEMP_FRAC_MASK|macro|MCP9808_TEMP_FRAC_MASK
+DECL|MCP9808_TEMP_INT_MASK|macro|MCP9808_TEMP_INT_MASK
+DECL|MCP9808_TEMP_INT_SHIFT|macro|MCP9808_TEMP_INT_SHIFT
+DECL|__SENSOR_MCP9808_H__|macro|__SENSOR_MCP9808_H__
+DECL|i2c_master|member|struct device *i2c_master;
+DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|mcp9808_data|struct|struct mcp9808_data {
+DECL|reg_val|member|uint16_t reg_val;
