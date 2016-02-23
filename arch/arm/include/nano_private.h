@@ -45,6 +45,7 @@ DECL|task|member|struct tcs *task; /* pointer to runnable task */
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
+DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
 DECL|v3|member|uint32_t v3; /* r6 */
