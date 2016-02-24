@@ -73,7 +73,6 @@ DECL|GATT_ADD_INCLUDED_SERVICE|macro|GATT_ADD_INCLUDED_SERVICE
 DECL|GATT_ADD_SERVICE|macro|GATT_ADD_SERVICE
 DECL|GATT_CFG_INDICATE|macro|GATT_CFG_INDICATE
 DECL|GATT_CFG_NOTIFY|macro|GATT_CFG_NOTIFY
-DECL|GATT_CLIENT_OP_OFFSET|macro|GATT_CLIENT_OP_OFFSET
 DECL|GATT_DISC_ALL_CHRC|macro|GATT_DISC_ALL_CHRC
 DECL|GATT_DISC_ALL_DESC|macro|GATT_DISC_ALL_DESC
 DECL|GATT_DISC_CHRC_UUID|macro|GATT_DISC_CHRC_UUID
@@ -398,6 +397,7 @@ DECL|supported_settings|member|uint32_t supported_settings;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
+DECL|tester_set_bit|function|static inline void tester_set_bit(uint8_t *addr, unsigned int bit)
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|uuid_length|member|uint8_t uuid_length;
