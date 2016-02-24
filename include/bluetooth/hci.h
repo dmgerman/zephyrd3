@@ -83,6 +83,7 @@ DECL|BT_HCI_EVT_PIN_CODE_REQ|macro|BT_HCI_EVT_PIN_CODE_REQ
 DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EVT_USER_CONFIRM_REQ|macro|BT_HCI_EVT_USER_CONFIRM_REQ
+DECL|BT_HCI_EVT_USER_PASSKEY_NOTIFY|macro|BT_HCI_EVT_USER_PASSKEY_NOTIFY
 DECL|BT_HCI_EVT_VENDOR|macro|BT_HCI_EVT_VENDOR
 DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
 DECL|BT_HCI_GENERAL_BONDING_MITM|macro|BT_HCI_GENERAL_BONDING_MITM
@@ -273,6 +274,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -284,6 +286,7 @@ DECL|addr|member|bt_addr_t addr;
 DECL|allow_role_switch|member|uint8_t allow_role_switch;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -388,6 +391,7 @@ DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
 DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_req_complete {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_evt_user_confirm_req|struct|struct bt_hci_evt_user_confirm_req {
+DECL|bt_hci_evt_user_passkey_notify|struct|struct bt_hci_evt_user_passkey_notify {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_op_inquiry|struct|struct bt_hci_op_inquiry {
 DECL|bt_hci_rp_connect_cancel|struct|struct bt_hci_rp_connect_cancel {
@@ -533,6 +537,7 @@ DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|packet_type|member|uint16_t packet_type;
 DECL|param_len|member|uint8_t param_len;
+DECL|passkey|member|uint32_t passkey;
 DECL|passkey|member|uint32_t passkey;
 DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|peer_addr|member|bt_addr_le_t peer_addr;
