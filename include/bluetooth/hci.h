@@ -84,6 +84,7 @@ DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLE
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EVT_USER_CONFIRM_REQ|macro|BT_HCI_EVT_USER_CONFIRM_REQ
 DECL|BT_HCI_EVT_USER_PASSKEY_NOTIFY|macro|BT_HCI_EVT_USER_PASSKEY_NOTIFY
+DECL|BT_HCI_EVT_USER_PASSKEY_REQ|macro|BT_HCI_EVT_USER_PASSKEY_REQ
 DECL|BT_HCI_EVT_VENDOR|macro|BT_HCI_EVT_VENDOR
 DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
 DECL|BT_HCI_GENERAL_BONDING_MITM|macro|BT_HCI_GENERAL_BONDING_MITM
@@ -152,6 +153,8 @@ DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
 DECL|BT_HCI_OP_USER_CONFIRM_NEG_REPLY|macro|BT_HCI_OP_USER_CONFIRM_NEG_REPLY
 DECL|BT_HCI_OP_USER_CONFIRM_REPLY|macro|BT_HCI_OP_USER_CONFIRM_REPLY
+DECL|BT_HCI_OP_USER_PASSKEY_NEG_REPLY|macro|BT_HCI_OP_USER_PASSKEY_NEG_REPLY
+DECL|BT_HCI_OP_USER_PASSKEY_REPLY|macro|BT_HCI_OP_USER_PASSKEY_REPLY
 DECL|BT_HCI_OP_WRITE_INQUIRY_MODE|macro|BT_HCI_OP_WRITE_INQUIRY_MODE
 DECL|BT_HCI_OP_WRITE_SCAN_ENABLE|macro|BT_HCI_OP_WRITE_SCAN_ENABLE
 DECL|BT_HCI_OP_WRITE_SSP_MODE|macro|BT_HCI_OP_WRITE_SSP_MODE
@@ -189,6 +192,9 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -316,6 +322,9 @@ DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_flags|macro|bt_acl_flags
 DECL|bt_acl_handle_pack|macro|bt_acl_handle_pack
 DECL|bt_acl_handle|macro|bt_acl_handle
@@ -360,6 +369,8 @@ DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
+DECL|bt_hci_cp_user_passkey_neg_reply|struct|struct bt_hci_cp_user_passkey_neg_reply {
+DECL|bt_hci_cp_user_passkey_reply|struct|struct bt_hci_cp_user_passkey_reply {
 DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
@@ -392,6 +403,7 @@ DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_re
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_evt_user_confirm_req|struct|struct bt_hci_evt_user_confirm_req {
 DECL|bt_hci_evt_user_passkey_notify|struct|struct bt_hci_evt_user_passkey_notify {
+DECL|bt_hci_evt_user_passkey_req|struct|struct bt_hci_evt_user_passkey_req {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_op_inquiry|struct|struct bt_hci_op_inquiry {
 DECL|bt_hci_rp_connect_cancel|struct|struct bt_hci_rp_connect_cancel {
@@ -537,6 +549,7 @@ DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|packet_type|member|uint16_t packet_type;
 DECL|param_len|member|uint8_t param_len;
+DECL|passkey|member|uint32_t passkey;
 DECL|passkey|member|uint32_t passkey;
 DECL|passkey|member|uint32_t passkey;
 DECL|peer_addr|member|bt_addr_le_t peer_addr;

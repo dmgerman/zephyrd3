@@ -68,6 +68,8 @@ DECL|ssp_confirm_neg_reply|function|static int ssp_confirm_neg_reply(struct bt_c
 DECL|ssp_confirm_reply|function|static int ssp_confirm_reply(struct bt_conn *conn)
 DECL|ssp_method|variable|ssp_method
 DECL|ssp_pair_method|function|static uint8_t ssp_pair_method(const struct bt_conn *conn)
+DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_conn *conn)
+DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
 DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
