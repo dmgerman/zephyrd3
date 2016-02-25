@@ -9,7 +9,6 @@ DECL|DYN_STUB_SIZE|macro|DYN_STUB_SIZE
 DECL|DYN_STUB_SIZE|macro|DYN_STUB_SIZE
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
 DECL|FP_REG_SET_ALIGN|macro|FP_REG_SET_ALIGN
-DECL|IRQ_CONNECT|macro|IRQ_CONNECT
 DECL|ISR_LIST|typedef|} ISR_LIST;
 DECL|MK_ISR_NAME|macro|MK_ISR_NAME
 DECL|NANO_CPU_INT_REGISTER|macro|NANO_CPU_INT_REGISTER
@@ -27,6 +26,7 @@ DECL|SYS_X86_RST_CNT_SYS_RST|macro|SYS_X86_RST_CNT_SYS_RST
 DECL|USE_FP|macro|USE_FP
 DECL|USE_SSE|macro|USE_SSE
 DECL|_ARCH_IFACE_H|macro|_ARCH_IFACE_H
+DECL|_ARCH_IRQ_CONNECT|macro|_ARCH_IRQ_CONNECT
 DECL|_IRQ_STUB_ASM|macro|_IRQ_STUB_ASM
 DECL|_IRQ_STUB_ASM|macro|_IRQ_STUB_ASM
 DECL|_IRQ_TO_INTERRUPT_VECTOR|macro|_IRQ_TO_INTERRUPT_VECTOR
@@ -42,6 +42,8 @@ DECL|_PRIORITY_ARG|macro|_PRIORITY_ARG
 DECL|_PRIORITY_ARG|macro|_PRIORITY_ARG
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
+DECL|_arch_irq_lock|function|static inline __attribute__((always_inline)) unsigned int _arch_irq_lock(void)
+DECL|_arch_irq_unlock|function|static inline __attribute__((always_inline)) void _arch_irq_unlock(unsigned int key)
 DECL|_int_latency_start|macro|_int_latency_start
 DECL|_int_latency_stop|macro|_int_latency_stop
 DECL|cs|member|unsigned int cs;
@@ -64,8 +66,6 @@ DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
-DECL|irq_lock|function|static inline __attribute__((always_inline)) unsigned int irq_lock(void)
-DECL|irq_unlock|function|static inline __attribute__((always_inline)) void irq_unlock(unsigned int key)
 DECL|irq|member|unsigned int irq;
 DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
