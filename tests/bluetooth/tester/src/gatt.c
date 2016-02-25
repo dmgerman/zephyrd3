@@ -1,8 +1,9 @@
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|GATT_PERM_ENC_READ_MASK|macro|GATT_PERM_ENC_READ_MASK
 DECL|GATT_PERM_ENC_WRITE_MASK|macro|GATT_PERM_ENC_WRITE_MASK
-DECL|MAX_ATTRIBUTES|macro|MAX_ATTRIBUTES
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
+DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
+DECL|SERVER_MAX_ATTRIBUTES|macro|SERVER_MAX_ATTRIBUTES
 DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr_chrc)
 DECL|add_cep|function|static struct bt_gatt_attr *add_cep(const struct bt_gatt_attr *attr_chrc)
 DECL|add_characteristic_cb|function|static uint8_t add_characteristic_cb(const struct bt_gatt_attr *attr, void *user_data)
@@ -52,7 +53,6 @@ DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
-DECL|gatt_db|variable|gatt_db
 DECL|gatt_value|struct|struct gatt_value {
 DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|has_ccc|member|bool has_ccc;
@@ -72,6 +72,11 @@ DECL|read_multiple|function|static void read_multiple(uint8_t *data, uint16_t le
 DECL|read_params|variable|read_params
 DECL|read_value|function|static ssize_t read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read|function|static void read(uint8_t *data, uint16_t len)
+DECL|server_buf_pull|macro|server_buf_pull
+DECL|server_buf_push|macro|server_buf_push
+DECL|server_buf|variable|server_buf
+DECL|server_db|variable|server_db
+DECL|server_fifo|variable|server_fifo
 DECL|set_cep_value|function|static uint8_t set_cep_value(struct bt_gatt_attr *attr, const void *value, const uint16_t len)
 DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
