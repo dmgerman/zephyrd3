@@ -2,6 +2,8 @@ DECL|IP_BUF_RX_SIZE|macro|IP_BUF_RX_SIZE
 DECL|IP_BUF_RX_SIZE|macro|IP_BUF_RX_SIZE
 DECL|IP_BUF_TX_SIZE|macro|IP_BUF_TX_SIZE
 DECL|IP_BUF_TX_SIZE|macro|IP_BUF_TX_SIZE
+DECL|NET_DBG|macro|NET_DBG
+DECL|NET_DBG|macro|NET_DBG
 DECL|dec_free_rx_bufs|function|static inline void dec_free_rx_bufs(struct net_buf *buf)
 DECL|dec_free_rx_bufs|macro|dec_free_rx_bufs
 DECL|dec_free_tx_bufs|function|static inline void dec_free_tx_bufs(struct net_buf *buf)

@@ -1,3 +1,5 @@
+DECL|NET_DBG|macro|NET_DBG
+DECL|NET_DBG|macro|NET_DBG
 DECL|NET_NUM_L2_BUFS|macro|NET_NUM_L2_BUFS
 DECL|dec_free_l2_bufs|function|static inline void dec_free_l2_bufs(struct net_buf *buf)
 DECL|dec_free_l2_bufs|macro|dec_free_l2_bufs
