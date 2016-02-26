@@ -18,6 +18,7 @@ DECL|intel_spi_api|variable|intel_spi_api
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
 DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
+DECL|spi_config_1_irq|function|void spi_config_1_irq(void)
 DECL|spi_intel_config_0|variable|spi_intel_config_0
 DECL|spi_intel_config_1|variable|spi_intel_config_1
 DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev,struct spi_config *config)
