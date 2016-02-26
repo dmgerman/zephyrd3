@@ -97,6 +97,10 @@ DECL|GATT_START_SERVER|macro|GATT_START_SERVER
 DECL|GATT_WRITE_LONG|macro|GATT_WRITE_LONG
 DECL|GATT_WRITE_WITHOUT_RSP|macro|GATT_WRITE_WITHOUT_RSP
 DECL|GATT_WRITE|macro|GATT_WRITE
+DECL|L2CAP_CONNECT|macro|L2CAP_CONNECT
+DECL|L2CAP_EV_CONNECTED|macro|L2CAP_EV_CONNECTED
+DECL|L2CAP_EV_DATA_RECEIVED|macro|L2CAP_EV_DATA_RECEIVED
+DECL|L2CAP_EV_DISCONNECTED|macro|L2CAP_EV_DISCONNECTED
 DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
@@ -173,6 +177,11 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -199,6 +208,12 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -234,6 +249,10 @@ DECL|attr_id|member|uint16_t attr_id;
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|ccc_handle|member|uint16_t ccc_handle;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|characteristic_handle|member|uint16_t characteristic_handle;
@@ -261,6 +280,8 @@ DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
+DECL|data_length|member|uint16_t data_length;
+DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
@@ -376,6 +397,11 @@ DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
 DECL|io_cap|member|uint8_t io_cap;
 DECL|key_size|member|uint8_t key_size;
+DECL|l2cap_connect_cmd|struct|struct l2cap_connect_cmd {
+DECL|l2cap_connect_rp|struct|struct l2cap_connect_rp {
+DECL|l2cap_connected_ev|struct|struct l2cap_connected_ev {
+DECL|l2cap_data_received_ev|struct|struct l2cap_data_received_ev {
+DECL|l2cap_disconnected_ev|struct|struct l2cap_disconnected_ev {
 DECL|l2cap_read_supported_commands_rp|struct|struct l2cap_read_supported_commands_rp {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
@@ -393,6 +419,10 @@ DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
 DECL|properties|member|uint8_t properties;
 DECL|properties|member|uint8_t properties;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|result|member|uint16_t result;
 DECL|rssi|member|int8_t rssi;
 DECL|scan_rsp_len|member|uint8_t scan_rsp_len;
 DECL|scan_rsp|member|uint8_t scan_rsp[0];
