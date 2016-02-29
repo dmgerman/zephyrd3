@@ -9,6 +9,7 @@ DECL|connected_cb|function|static void connected_cb(struct bt_l2cap_chan *l2cap_
 DECL|connect|function|static void connect(uint8_t *data, uint16_t len)
 DECL|data_fifo|variable|data_fifo
 DECL|disconnected_cb|function|static void disconnected_cb(struct bt_l2cap_chan *l2cap_chan)
+DECL|disconnect|function|static void disconnect(uint8_t *data, uint16_t len)
 DECL|get_free_channel|function|static struct channel *get_free_channel()
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|le|member|struct bt_l2cap_le_chan le;

@@ -98,12 +98,14 @@ DECL|GATT_WRITE_LONG|macro|GATT_WRITE_LONG
 DECL|GATT_WRITE_WITHOUT_RSP|macro|GATT_WRITE_WITHOUT_RSP
 DECL|GATT_WRITE|macro|GATT_WRITE
 DECL|L2CAP_CONNECT|macro|L2CAP_CONNECT
+DECL|L2CAP_DISCONNECT|macro|L2CAP_DISCONNECT
 DECL|L2CAP_EV_CONNECTED|macro|L2CAP_EV_CONNECTED
 DECL|L2CAP_EV_DATA_RECEIVED|macro|L2CAP_EV_DATA_RECEIVED
 DECL|L2CAP_EV_DISCONNECTED|macro|L2CAP_EV_DISCONNECTED
 DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -249,6 +251,7 @@ DECL|attr_id|member|uint16_t attr_id;
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|ccc_handle|member|uint16_t ccc_handle;
+DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
@@ -401,6 +404,7 @@ DECL|l2cap_connect_cmd|struct|struct l2cap_connect_cmd {
 DECL|l2cap_connect_rp|struct|struct l2cap_connect_rp {
 DECL|l2cap_connected_ev|struct|struct l2cap_connected_ev {
 DECL|l2cap_data_received_ev|struct|struct l2cap_data_received_ev {
+DECL|l2cap_disconnect_cmd|struct|struct l2cap_disconnect_cmd {
 DECL|l2cap_disconnected_ev|struct|struct l2cap_disconnected_ev {
 DECL|l2cap_read_supported_commands_rp|struct|struct l2cap_read_supported_commands_rp {
 DECL|len|member|uint16_t len;
