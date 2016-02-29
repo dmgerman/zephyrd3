@@ -106,10 +106,12 @@ DECL|L2CAP_EV_DATA_RECEIVED|macro|L2CAP_EV_DATA_RECEIVED
 DECL|L2CAP_EV_DISCONNECTED|macro|L2CAP_EV_DISCONNECTED
 DECL|L2CAP_LISTEN|macro|L2CAP_LISTEN
 DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
+DECL|L2CAP_SEND_DATA|macro|L2CAP_SEND_DATA
 DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -268,6 +270,7 @@ DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
 DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|characteristic_handle|member|uint16_t characteristic_handle;
@@ -296,6 +299,7 @@ DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
+DECL|data_len|member|uint16_t data_len;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
@@ -309,6 +313,7 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|data|member|uint8_t data[];
 DECL|db_attr_cnt|member|uint8_t db_attr_cnt;
 DECL|db_attr_off|member|uint16_t db_attr_off;
 DECL|desc_id|member|uint16_t desc_id;
@@ -422,6 +427,7 @@ DECL|l2cap_disconnect_cmd|struct|struct l2cap_disconnect_cmd {
 DECL|l2cap_disconnected_ev|struct|struct l2cap_disconnected_ev {
 DECL|l2cap_listen_cmd|struct|struct l2cap_listen_cmd {
 DECL|l2cap_read_supported_commands_rp|struct|struct l2cap_read_supported_commands_rp {
+DECL|l2cap_send_data_cmd|struct|struct l2cap_send_data_cmd {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|match|member|uint8_t match;
