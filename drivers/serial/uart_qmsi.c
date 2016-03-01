@@ -1,5 +1,8 @@
+DECL|DIVISOR_HIGH|macro|DIVISOR_HIGH
+DECL|DIVISOR_LOW|macro|DIVISOR_LOW
 DECL|GET_CONTROLLER_INSTANCE|macro|GET_CONTROLLER_INSTANCE
 DECL|api|variable|api
+DECL|baud_divisor|member|uint32_t baud_divisor;
 DECL|clock_gate|member|clk_periph_t clock_gate;
 DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
