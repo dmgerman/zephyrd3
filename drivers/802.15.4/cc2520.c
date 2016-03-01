@@ -17,7 +17,6 @@ DECL|FOOTER1_CRC_OK|macro|FOOTER1_CRC_OK
 DECL|FOOTER_LEN|macro|FOOTER_LEN
 DECL|FRAME_FILTER_ENABLE|macro|FRAME_FILTER_ENABLE
 DECL|FRAME_MAX_VERSION|macro|FRAME_MAX_VERSION
-DECL|MIN_LENGTH_BEFORE_ACCEPT|macro|MIN_LENGTH_BEFORE_ACCEPT
 DECL|SET_RESET_ACTIVE|macro|SET_RESET_ACTIVE
 DECL|SET_RESET_INACTIVE|macro|SET_RESET_INACTIVE
 DECL|SET_VREG_ACTIVE|macro|SET_VREG_ACTIVE
@@ -72,6 +71,8 @@ DECL|cc2520_sgl_dev|variable|cc2520_sgl_dev
 DECL|cc2520_spi_configure|function|static struct device *cc2520_spi_configure(void)
 DECL|cc2520_transmit|function|static int cc2520_transmit(struct net_buf *buf, unsigned short payload_len)
 DECL|channel|variable|channel
+DECL|clear_exceptions|function|static void clear_exceptions(void)
+DECL|clear_exceptions|macro|clear_exceptions
 DECL|flushrx|function|static void flushrx(void)
 DECL|get_object|function|static radio_result_t get_object(radio_param_t param, void *dest, size_t size)
 DECL|getreg|function|static uint8_t getreg(uint16_t regname)
@@ -95,7 +96,6 @@ DECL|print_radio_status|macro|print_radio_status
 DECL|read_packet|function|static void read_packet(void)
 DECL|reading_packet_fiber|function|static void reading_packet_fiber(int unused1, int unused2)
 DECL|receive_on|variable|receive_on
-DECL|rxcount|function|static inline uint8_t rxcount(void)
 DECL|set_object|function|static radio_result_t set_object(radio_param_t param, const void *src, size_t size)
 DECL|set_txpower|function|static void set_txpower(uint8_t power)
 DECL|setreg|function|static void setreg(uint16_t regname, uint8_t value)
