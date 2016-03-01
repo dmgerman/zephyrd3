@@ -22,6 +22,7 @@ DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an 
 DECL|SMP_FLAG_KEYS_DISTR|enumerator|SMP_FLAG_KEYS_DISTR, /* if keys distribution phase is in progress */
 DECL|SMP_FLAG_PAIRING|enumerator|SMP_FLAG_PAIRING, /* if pairing is in progress */
 DECL|SMP_FLAG_PKEY_SEND|enumerator|SMP_FLAG_PKEY_SEND, /* if should send Public Key when available */
+DECL|SMP_FLAG_SC_DEBUG_KEY|enumerator|SMP_FLAG_SC_DEBUG_KEY, /* if Secure Connection are using debug key */
 DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
@@ -77,6 +78,7 @@ DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
+DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|legacy_distribute_keys|function|static void legacy_distribute_keys(struct bt_smp *smp)
 DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|legacy_pairing_confirm|function|static uint8_t legacy_pairing_confirm(struct bt_smp *smp)
@@ -99,6 +101,8 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
+DECL|sc_debug_private_key|variable|sc_debug_private_key
+DECL|sc_debug_public_key|variable|sc_debug_public_key
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
 DECL|sc_private_key|variable|sc_private_key
 DECL|sc_public_key|variable|sc_public_key
