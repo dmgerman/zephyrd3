@@ -65,4 +65,5 @@ DECL|le_data|variable|le_data
 DECL|le_disconn_req|function|static void le_disconn_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_disconn_rsp|function|static void le_disconn_rsp(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_sig|variable|le_sig
+DECL|reject_cmd|function|static void reject_cmd(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|servers|variable|servers
