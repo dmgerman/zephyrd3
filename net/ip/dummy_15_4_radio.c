@@ -31,4 +31,4 @@ DECL|set_object|function|set_object(radio_param_t param, const void *src, size_t
 DECL|set_value|function|set_value(radio_param_t param, radio_value_t value)
 DECL|starting|variable|starting
 DECL|transmit|function|transmit(struct net_buf *buf, unsigned short transmit_len)
-DECL|uart_send|function|static int uart_send(unsigned char c)
+DECL|uart_send|function|static void uart_send(unsigned char c)
