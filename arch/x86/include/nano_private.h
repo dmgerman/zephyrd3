@@ -312,6 +312,7 @@ DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
 DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
+DECL|__thread_entry|struct|struct __thread_entry {
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
 DECL|coopReg|member|tCoopReg coopReg; /* non-volatile integer register storage */
@@ -322,6 +323,7 @@ DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
+DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
 DECL|errno_var|member|int errno_var;
 DECL|esfPtr|member|void *esfPtr; /* pointer to exception stack frame saved by */
 DECL|esp|member|unsigned long esp;
@@ -354,11 +356,15 @@ DECL|nanoArchInit|function|static inline void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|nested|member|unsigned nested; /* nested interrupt count */
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
+DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
 DECL|pad2|member|unsigned short pad2; /* 2 : N/A */
 DECL|pad3|member|unsigned short pad3; /* 2 : N/A */
 DECL|pad4|member|unsigned short pad4 : 5; /* : 5 bits = 00000 */
 DECL|pad5|member|unsigned short pad5; /* 2 : N/A */
+DECL|parameter1|member|void *parameter1;
+DECL|parameter2|member|void *parameter2;
+DECL|parameter3|member|void *parameter3;
 DECL|preempFloatReg|member|tPreempFloatReg preempFloatReg; /* volatile float register storage */
 DECL|preempReg|member|tPreempReg preempReg; /* volatile integer register storage */
 DECL|prio|member|int prio; /* thread priority used to sort linked list */

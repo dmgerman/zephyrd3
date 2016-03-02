@@ -10,12 +10,14 @@ DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
+DECL|__thread_entry|struct|struct __thread_entry {
 DECL|basepri|member|uint32_t basepri;
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
 DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
 DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
+DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
 DECL|errno_var|member|int errno_var;
 DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fiber */
@@ -26,6 +28,10 @@ DECL|link|member|struct tcs *link; /* singly-linked list in _nanokernel.fibers *
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
+DECL|pEntry|member|_thread_entry_t pEntry;
+DECL|parameter1|member|void *parameter1;
+DECL|parameter2|member|void *parameter2;
+DECL|parameter3|member|void *parameter3;
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
 DECL|prio|member|int prio;

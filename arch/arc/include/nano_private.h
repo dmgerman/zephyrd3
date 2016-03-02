@@ -16,6 +16,7 @@ DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
 DECL|_IS_IN_ISR|function|static ALWAYS_INLINE int _IS_IN_ISR(void)
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
+DECL|__thread_entry|struct|struct __thread_entry {
 DECL|blink|member|uint32_t blink;
 DECL|callee_saved|struct|struct callee_saved {
 DECL|coopReg|member|struct coop coopReg;
@@ -24,6 +25,7 @@ DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that ow
 DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ei_base|member|uint32_t ei_base;
+DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
 DECL|errno_var|member|int errno_var;
 DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
@@ -46,6 +48,10 @@ DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
+DECL|pEntry|member|_thread_entry_t pEntry;
+DECL|parameter1|member|void *parameter1;
+DECL|parameter2|member|void *parameter2;
+DECL|parameter3|member|void *parameter3;
 DECL|pc|member|uint32_t pc;
 DECL|preempReg|member|struct preempt preempReg;
 DECL|preempt|struct|struct preempt {
