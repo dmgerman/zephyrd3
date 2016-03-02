@@ -4,7 +4,7 @@ DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
 DECL|bt_conn|struct|struct bt_conn {
 DECL|dst|member|bt_addr_le_t dst;
-DECL|gatt_discover|member|void *gatt_discover;
+DECL|gatt_private|member|void *gatt_private;
 DECL|handle|member|uint16_t handle;
 DECL|interval|member|uint16_t interval;
 DECL|latency|member|uint16_t latency;
