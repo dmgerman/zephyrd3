@@ -1,3 +1,4 @@
+DECL|BLE_GATT_MTU_SIZE|macro|BLE_GATT_MTU_SIZE
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NBLE_BUF_SIZE|macro|NBLE_BUF_SIZE
@@ -32,6 +33,7 @@ DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|nble_gatt_service|struct|struct nble_gatt_service {
 DECL|on_nble_gatt_register_rsp|function|void on_nble_gatt_register_rsp(const struct nble_gatt_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gattc_discover_rsp|function|void on_nble_gattc_discover_rsp(const struct nble_gattc_discover_rsp *rsp,const uint8_t *data, uint8_t data_len)
+DECL|on_nble_gattc_read_rsp|function|void on_nble_gattc_read_rsp(const struct nble_gattc_read_rsp *rsp, uint8_t *data, uint8_t len, void *user_data)
 DECL|on_nble_gatts_read_evt|function|void on_nble_gatts_read_evt(const struct nble_gatt_rd_evt *evt)
 DECL|on_nble_gatts_write_evt|function|void on_nble_gatts_write_evt(const struct nble_gatt_wr_evt *evt, const uint8_t *buf, uint8_t buflen)
 DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct bt_conn *conn, const uint8_t *data, uint8_t len)
