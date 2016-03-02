@@ -1,4 +1,9 @@
 DECL|__ASM_INLINE_GCC_H__|macro|__ASM_INLINE_GCC_H__
+DECL|sys_bitfield_clear_bit|function|void sys_bitfield_clear_bit(mem_addr_t addr, int bit)
+DECL|sys_bitfield_set_bit|function|void sys_bitfield_set_bit(mem_addr_t addr, int bit)
+DECL|sys_bitfield_test_and_clear_bit|function|int sys_bitfield_test_and_clear_bit(mem_addr_t addr, int bit)
+DECL|sys_bitfield_test_and_set_bit|function|int sys_bitfield_test_and_set_bit(mem_addr_t addr, int bit)
+DECL|sys_bitfield_test_bit|function|int sys_bitfield_test_bit(mem_addr_t addr, int bit)
 DECL|sys_clear_bit|function|void sys_clear_bit(mem_addr_t addr, int bit)
 DECL|sys_in16|function|uint16_t sys_in16(io_port_t port)
 DECL|sys_in32|function|uint32_t sys_in32(io_port_t port)
