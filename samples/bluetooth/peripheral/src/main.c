@@ -29,6 +29,9 @@ DECL|heartrate|variable|heartrate
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
 DECL|hrs_attrs|variable|hrs_attrs
+DECL|ind_params|variable|ind_params
+DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,int err)
+DECL|indicating|variable|indicating
 DECL|mainloop|function|void mainloop(void)
 DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blsc|function|static ssize_t read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -44,8 +47,11 @@ DECL|sd|variable|sd
 DECL|signed_value|variable|signed_value
 DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_hrm|variable|simulate_hrm
+DECL|simulate_vnd|variable|simulate_vnd
 DECL|vnd_attrs|variable|vnd_attrs
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
+DECL|vnd_ccc_cfg_changed|function|static void vnd_ccc_cfg_changed(uint16_t value)
+DECL|vnd_ccc_cfg|variable|vnd_ccc_cfg
 DECL|vnd_enc_uuid|variable|vnd_enc_uuid
 DECL|vnd_long_cep|variable|vnd_long_cep
 DECL|vnd_long_uuid|variable|vnd_long_uuid
