@@ -70,7 +70,7 @@ DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct b
 DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, uint16_t length)
 DECL|prepare_write_data|struct|struct prepare_write_data {
 DECL|properties|member|uint8_t properties;
-DECL|remove_subscribtions|function|static void remove_subscribtions(struct bt_conn *conn)
+DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|start_handle|member|uint16_t start_handle;
 DECL|subscriptions|variable|subscriptions
 DECL|uuid16|member|uint16_t uuid16;
