@@ -7,6 +7,7 @@ DECL|__NANOKERNEL_H__|macro|__NANOKERNEL_H__
 DECL|__next|member|struct nano_fifo *__next;
 DECL|__next|member|struct nano_lifo *__next;
 DECL|__next|member|struct nano_sem *__next;
+DECL|__next|member|struct nano_stack *__next;
 DECL|__next|member|struct nano_timer *__next;
 DECL|_nano_queue|struct|struct _nano_queue {
 DECL|_nano_timeout|struct|struct _nano_timeout {

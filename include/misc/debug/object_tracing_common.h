@@ -11,4 +11,5 @@ DECL|_trace_list_micro_sem|variable|_trace_list_micro_sem
 DECL|_trace_list_nano_fifo|variable|_trace_list_nano_fifo
 DECL|_trace_list_nano_lifo|variable|_trace_list_nano_lifo
 DECL|_trace_list_nano_sem|variable|_trace_list_nano_sem
+DECL|_trace_list_nano_stack|variable|_trace_list_nano_stack
 DECL|_trace_list_nano_timer|variable|_trace_list_nano_timer
