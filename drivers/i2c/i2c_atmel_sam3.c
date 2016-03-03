@@ -1,8 +1,10 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|RET_ERR|macro|RET_ERR
+DECL|RET_NACK|macro|RET_NACK
+DECL|RET_OK|macro|RET_OK
 DECL|STATE_BUSY|macro|STATE_BUSY
-DECL|STATE_ERR|macro|STATE_ERR
 DECL|STATE_READY|macro|STATE_READY
 DECL|STATE_RX|macro|STATE_RX
 DECL|STATE_TX|macro|STATE_TX
@@ -25,8 +27,8 @@ DECL|i2c_sam3_resume|function|static int i2c_sam3_resume(struct device *dev)
 DECL|i2c_sam3_runtime_configure|function|static int i2c_sam3_runtime_configure(struct device *dev, uint32_t config)
 DECL|i2c_sam3_suspend|function|static int i2c_sam3_suspend(struct device *dev)
 DECL|i2c_sam3_transfer|function|static int i2c_sam3_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t slave_address)
-DECL|msg_read|function|static inline void msg_read(struct device *dev)
-DECL|msg_write|function|static inline void msg_write(struct device *dev)
+DECL|msg_read|function|static inline int msg_read(struct device *dev)
+DECL|msg_write|function|static inline int msg_write(struct device *dev)
 DECL|port|member|volatile struct __twi *port;
 DECL|sr_bits_set_wait|function|static inline void sr_bits_set_wait(struct device *dev, uint32_t bits)
 DECL|state|member|volatile uint32_t state;
