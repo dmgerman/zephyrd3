@@ -56,6 +56,7 @@ DECL|_sr|member|uint32_t _sr;
 DECL|_uart|struct|struct _uart {
 DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
 DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
+DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
 DECL|cr|macro|cr
 DECL|ctl|member|uint32_t ctl;
 DECL|disable|function|static inline void disable(struct device *dev)
@@ -68,6 +69,9 @@ DECL|icr|member|uint32_t icr;
 DECL|ifls|member|uint32_t ifls;
 DECL|ilpr|member|uint32_t ilpr;
 DECL|im|member|uint32_t im;
+DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
+DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
+DECL|irq_config_func_2|function|static void irq_config_func_2(struct device *dev)
 DECL|lcrh|member|uint32_t lcrh;
 DECL|line_control_defaults_set|function|static inline void line_control_defaults_set(struct device *dev)
 DECL|mis|member|uint32_t mis;
@@ -99,6 +103,7 @@ DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
 DECL|uart_stellaris_fifo_fill|function|static int uart_stellaris_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
 DECL|uart_stellaris_fifo_read|function|static int uart_stellaris_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_stellaris_init|function|static int uart_stellaris_init(struct device *dev)
+DECL|uart_stellaris_irq_callback_set|function|static void uart_stellaris_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_stellaris_irq_err_disable|function|static void uart_stellaris_irq_err_disable(struct device *dev)
 DECL|uart_stellaris_irq_err_enable|function|static void uart_stellaris_irq_err_enable(struct device *dev)
 DECL|uart_stellaris_irq_is_pending|function|static int uart_stellaris_irq_is_pending(struct device *dev)
@@ -109,5 +114,6 @@ DECL|uart_stellaris_irq_tx_disable|function|static void uart_stellaris_irq_tx_di
 DECL|uart_stellaris_irq_tx_enable|function|static void uart_stellaris_irq_tx_enable(struct device *dev)
 DECL|uart_stellaris_irq_tx_ready|function|static int uart_stellaris_irq_tx_ready(struct device *dev)
 DECL|uart_stellaris_irq_update|function|static int uart_stellaris_irq_update(struct device *dev)
+DECL|uart_stellaris_isr|function|void uart_stellaris_isr(void *arg)
 DECL|uart_stellaris_poll_in|function|static int uart_stellaris_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_stellaris_poll_out|function|static unsigned char uart_stellaris_poll_out(struct device *dev, unsigned char c)

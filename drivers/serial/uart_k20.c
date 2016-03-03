@@ -2,6 +2,12 @@ DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|UART_STRUCT|macro|UART_STRUCT
 DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
+DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
+DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
+DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
+DECL|irq_config_func_2|function|static void irq_config_func_2(struct device *dev)
+DECL|irq_config_func_3|function|static void irq_config_func_3(struct device *dev)
+DECL|irq_config_func_4|function|static void irq_config_func_4(struct device *dev)
 DECL|uart_k20_dev_cfg_0|variable|uart_k20_dev_cfg_0
 DECL|uart_k20_dev_cfg_1|variable|uart_k20_dev_cfg_1
 DECL|uart_k20_dev_cfg_2|variable|uart_k20_dev_cfg_2
@@ -18,6 +24,7 @@ DECL|uart_k20_driver_api|variable|uart_k20_driver_api
 DECL|uart_k20_fifo_fill|function|static int uart_k20_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
 DECL|uart_k20_fifo_read|function|static int uart_k20_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_k20_init|function|static int uart_k20_init(struct device *dev)
+DECL|uart_k20_irq_callback_set|function|static void uart_k20_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_k20_irq_err_disable|function|static void uart_k20_irq_err_disable(struct device *dev)
 DECL|uart_k20_irq_err_enable|function|static void uart_k20_irq_err_enable(struct device *dev)
 DECL|uart_k20_irq_is_pending|function|static int uart_k20_irq_is_pending(struct device *dev)
@@ -28,5 +35,6 @@ DECL|uart_k20_irq_tx_disable|function|static void uart_k20_irq_tx_disable(struct
 DECL|uart_k20_irq_tx_enable|function|static void uart_k20_irq_tx_enable(struct device *dev)
 DECL|uart_k20_irq_tx_ready|function|static int uart_k20_irq_tx_ready(struct device *dev)
 DECL|uart_k20_irq_update|function|static int uart_k20_irq_update(struct device *dev)
+DECL|uart_k20_isr|function|void uart_k20_isr(void *arg)
 DECL|uart_k20_poll_in|function|static int uart_k20_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_k20_poll_out|function|static unsigned char uart_k20_poll_out(struct device *dev, unsigned char c)

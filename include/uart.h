@@ -12,6 +12,8 @@ DECL|drv_cmd|member|int (*drv_cmd)(struct device *dev, uint32_t cmd, uint32_t p)
 DECL|err_check|member|int (*err_check)(struct device *dev);
 DECL|fifo_fill|member|int (*fifo_fill)(struct device *dev, const uint8_t *tx_data, int len);
 DECL|fifo_read|member|int (*fifo_read)(struct device *dev, uint8_t *rx_data, const int size);
+DECL|irq_callback_set|member|void (*irq_callback_set)(struct device *dev, uart_irq_callback_t cb);
+DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
 DECL|irq_err_enable|member|void (*irq_err_enable)(struct device *dev);
 DECL|irq_input_hook|member|int (*irq_input_hook)(struct device *dev, uint8_t byte);
@@ -37,6 +39,9 @@ DECL|uart_drv_cmd|function|static inline int uart_drv_cmd(struct device *dev, ui
 DECL|uart_err_check|function|static inline int uart_err_check(struct device *dev)
 DECL|uart_fifo_fill|function|static inline int uart_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_fifo_read|function|static inline int uart_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_irq_callback_set|function|static inline void uart_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_irq_callback_t|typedef|typedef void (*uart_irq_callback_t)(struct device *port);
+DECL|uart_irq_config_func_t|typedef|typedef void (*uart_irq_config_func_t)(struct device *port);
 DECL|uart_irq_err_disable|function|static inline void uart_irq_err_disable(struct device *dev)
 DECL|uart_irq_err_enable|function|static inline void uart_irq_err_enable(struct device *dev)
 DECL|uart_irq_input_hook_set|function|static inline void uart_irq_input_hook_set(struct device *dev,int (*hook)(struct device *, uint8_t))

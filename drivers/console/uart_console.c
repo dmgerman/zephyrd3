@@ -33,6 +33,6 @@ DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, 
 DECL|uart_console_dev|variable|uart_console_dev
 DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
-DECL|uart_console_isr|function|void uart_console_isr(void *unused)
+DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
 DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines)
 DECL|uart_register_input|macro|uart_register_input

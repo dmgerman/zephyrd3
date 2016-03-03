@@ -86,8 +86,11 @@ DECL|THR|macro|THR
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|baud_rate|member|uint32_t baud_rate; /**< Baud rate */
+DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
 DECL|dlf|member|uint8_t dlf; /**< DLF value */
 DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
+DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
+DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
 DECL|options|member|uint8_t options; /**< Serial port options */
@@ -105,6 +108,7 @@ DECL|uart_ns16550_err_check|function|static int uart_ns16550_err_check(struct de
 DECL|uart_ns16550_fifo_fill|function|static int uart_ns16550_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_ns16550_init|function|static int uart_ns16550_init(struct device *dev)
+DECL|uart_ns16550_irq_callback_set|function|static void uart_ns16550_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_ns16550_irq_err_disable|function|static void uart_ns16550_irq_err_disable(struct device *dev)
 DECL|uart_ns16550_irq_err_enable|function|static void uart_ns16550_irq_err_enable(struct device *dev)
 DECL|uart_ns16550_irq_is_pending|function|static int uart_ns16550_irq_is_pending(struct device *dev)
@@ -116,6 +120,7 @@ DECL|uart_ns16550_irq_tx_empty|function|static int uart_ns16550_irq_tx_empty(str
 DECL|uart_ns16550_irq_tx_enable|function|static void uart_ns16550_irq_tx_enable(struct device *dev)
 DECL|uart_ns16550_irq_tx_ready|function|static int uart_ns16550_irq_tx_ready(struct device *dev)
 DECL|uart_ns16550_irq_update|function|static int uart_ns16550_irq_update(struct device *dev)
+DECL|uart_ns16550_isr|function|static void uart_ns16550_isr(void *arg)
 DECL|uart_ns16550_line_ctrl_set|function|static int uart_ns16550_line_ctrl_set(struct device *dev, uint32_t ctrl, uint32_t val)
 DECL|uart_ns16550_poll_in|function|static int uart_ns16550_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_ns16550_poll_out|function|static unsigned char uart_ns16550_poll_out(struct device *dev, unsigned char c)

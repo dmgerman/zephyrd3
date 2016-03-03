@@ -5,7 +5,7 @@ DECL|H4_CMD|macro|H4_CMD
 DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
-DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
+DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|drv|variable|drv
 DECL|h4_acl_recv|function|static struct net_buf *h4_acl_recv(int *remaining)
 DECL|h4_dev|variable|h4_dev

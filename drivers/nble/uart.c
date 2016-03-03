@@ -7,7 +7,7 @@ DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|__packed|variable|__packed
 DECL|_bt_nble_init|function|static int _bt_nble_init(struct device *unused)
-DECL|bt_uart_isr|function|void bt_uart_isr(void *unused)
+DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|channel|member|uint8_t channel; /**< Channel number of IPC message. */
 DECL|ipc_uart_header|struct|struct ipc_uart_header {
 DECL|len|member|uint16_t len; /**< Length of IPC message. */
