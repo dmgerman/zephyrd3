@@ -47,8 +47,8 @@ DECL|irq|member|uint32_t irq;
 DECL|padding|member|uint8_t padding[3];
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|r_buf_len|member|uint32_t r_buf_len;
+DECL|received|member|uint32_t received;
 DECL|regs|member|uint32_t regs;
-DECL|rx_buf_end|member|uint8_t *rx_buf_end;
 DECL|rx_buf|member|uint8_t *rx_buf;
 DECL|spi_intel_config_t|typedef|typedef void (*spi_intel_config_t)(void);
 DECL|spi_intel_config|struct|struct spi_intel_config {
@@ -56,6 +56,7 @@ DECL|spi_intel_data|struct|struct spi_intel_data {
 DECL|sscr0|member|uint32_t sscr0;
 DECL|sscr1|member|uint32_t sscr1;
 DECL|sync|member|device_sync_call_t sync;
-DECL|t_len|member|uint32_t t_len;
-DECL|tx_buf_end|member|uint8_t *tx_buf_end;
+DECL|t_buf_len|member|uint32_t t_buf_len;
+DECL|trans_len|member|uint32_t trans_len;
+DECL|transmitted|member|uint32_t transmitted;
 DECL|tx_buf|member|uint8_t *tx_buf;
