@@ -1,6 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|GLCD_CMD_CURSOR_RETURN|macro|GLCD_CMD_CURSOR_RETURN
 DECL|GLCD_CMD_CURSOR_SHIFT|macro|GLCD_CMD_CURSOR_SHIFT
 DECL|GLCD_CMD_DISPLAY_SWITCH|macro|GLCD_CMD_DISPLAY_SWITCH
@@ -20,6 +17,8 @@ DECL|REGISTER_G|macro|REGISTER_G
 DECL|REGISTER_POWER|macro|REGISTER_POWER
 DECL|REGISTER_R|macro|REGISTER_R
 DECL|SLEEP_IN_US|macro|SLEEP_IN_US
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_rgb_reg_set|function|static void _rgb_reg_set(struct device * const i2c, uint8_t addr, uint8_t dta)
 DECL|_sleep|function|static inline void _sleep(uint32_t sleep_in_ms)
 DECL|color_define|variable|color_define
