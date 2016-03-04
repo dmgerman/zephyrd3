@@ -18,6 +18,7 @@ DECL|_1_TO_N|enumerator|_1_TO_N = 0x00000002,
 DECL|_ALL_N|enumerator|_ALL_N = 0x00000004
 DECL|_BASE_API_H|macro|_BASE_API_H
 DECL|_K_PIPE_BUFF_STATE|typedef|} _K_PIPE_BUFF_STATE;
+DECL|__next|member|struct _k_event_struct *__next;
 DECL|__next|member|struct _k_fifo_struct *__next;
 DECL|__next|member|struct _k_mbox_struct *__next;
 DECL|__next|member|struct _k_mem_map_struct *__next;

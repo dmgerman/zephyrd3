@@ -1,6 +1,7 @@
 DECL|SYS_TRACING_OBJ_INIT|macro|SYS_TRACING_OBJ_INIT
 DECL|SYS_TRACING_OBJ_INIT|macro|SYS_TRACING_OBJ_INIT
 DECL|_OBJECT_TRACING_COMMON_H_|macro|_OBJECT_TRACING_COMMON_H_
+DECL|_trace_list_micro_event|variable|_trace_list_micro_event
 DECL|_trace_list_micro_fifo|variable|_trace_list_micro_fifo
 DECL|_trace_list_micro_mbox|variable|_trace_list_micro_mbox
 DECL|_trace_list_micro_mem_map|variable|_trace_list_micro_mem_map
