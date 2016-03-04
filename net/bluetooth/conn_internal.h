@@ -1,5 +1,6 @@
 DECL|BT_CONN_AUTO_CONNECT|enumerator|BT_CONN_AUTO_CONNECT,
 DECL|BT_CONN_BR_LEGACY_SECURE|enumerator|BT_CONN_BR_LEGACY_SECURE, /* 16 digits legacy PIN tracker */
+DECL|BT_CONN_BR_NOBOND|enumerator|BT_CONN_BR_NOBOND, /* SSP no bond pairing tracker */
 DECL|BT_CONN_BR_PAIRING|enumerator|BT_CONN_BR_PAIRING, /* BR connection in pairing context */
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
