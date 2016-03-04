@@ -27,7 +27,7 @@ DECL|spi_qmsi_runtime|struct|struct spi_qmsi_runtime {
 DECL|spi_qmsi_rx_callback|function|static void spi_qmsi_rx_callback(uint32_t id, uint32_t len)
 DECL|spi_qmsi_slave_select|function|static int spi_qmsi_slave_select(struct device *dev, uint32_t slave)
 DECL|spi_qmsi_suspend|function|static int spi_qmsi_suspend(struct device *dev)
-DECL|spi_qmsi_transceive|function|static int spi_qmsi_transceive(struct device *dev, uint8_t *tx_buf, uint32_t tx_buf_len, uint8_t *rx_buf, uint32_t rx_buf_len)
+DECL|spi_qmsi_transceive|function|static int spi_qmsi_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
 DECL|spi_qmsi_tx_callback|function|static void spi_qmsi_tx_callback(uint32_t id, uint32_t len)
 DECL|spi|member|qm_spi_t spi;
 DECL|sync|member|device_sync_call_t sync;

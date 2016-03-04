@@ -59,4 +59,4 @@ DECL|sync|member|device_sync_call_t sync;
 DECL|t_buf_len|member|uint32_t t_buf_len;
 DECL|trans_len|member|uint32_t trans_len;
 DECL|transmitted|member|uint32_t transmitted;
-DECL|tx_buf|member|uint8_t *tx_buf;
+DECL|tx_buf|member|const uint8_t *tx_buf;

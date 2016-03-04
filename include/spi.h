@@ -22,11 +22,11 @@ DECL|spi_api_slave_select|typedef|typedef int (*spi_api_slave_select)(struct dev
 DECL|spi_configure|function|static inline int spi_configure(struct device *dev,struct spi_config *config)
 DECL|spi_config|struct|struct spi_config {
 DECL|spi_driver_api|struct|struct spi_driver_api {
-DECL|spi_read|function|static inline int spi_read(struct device *dev, uint8_t *buf, uint32_t len)
+DECL|spi_read|function|static inline int spi_read(struct device *dev, void *buf, uint32_t len)
 DECL|spi_resume|function|static inline int spi_resume(struct device *dev)
 DECL|spi_slave_select|function|static inline int spi_slave_select(struct device *dev, uint32_t slave)
 DECL|spi_suspend|function|static inline int spi_suspend(struct device *dev)
-DECL|spi_transceive|function|static inline int spi_transceive(struct device *dev, uint8_t *tx_buf, uint32_t tx_buf_len, uint8_t *rx_buf, uint32_t rx_buf_len)
-DECL|spi_write|function|static inline int spi_write(struct device *dev, uint8_t *buf, uint32_t len)
+DECL|spi_transceive|function|static inline int spi_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
+DECL|spi_write|function|static inline int spi_write(struct device *dev, const void *buf, uint32_t len)
 DECL|suspend|member|spi_api_control suspend;
 DECL|transceive|member|spi_api_io transceive;

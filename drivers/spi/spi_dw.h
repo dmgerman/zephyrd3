@@ -83,4 +83,4 @@ DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
 DECL|sync|member|device_sync_call_t sync;
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
-DECL|tx_buf|member|uint8_t *tx_buf;
+DECL|tx_buf|member|const uint8_t *tx_buf;
