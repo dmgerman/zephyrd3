@@ -273,6 +273,7 @@ DECL|uip_ipaddr_cmp|macro|uip_ipaddr_cmp
 DECL|uip_ipaddr_copy|macro|uip_ipaddr_copy
 DECL|uip_ipaddr_maskcmp|macro|uip_ipaddr_maskcmp
 DECL|uip_ipaddr_mask|macro|uip_ipaddr_mask
+DECL|uip_ipaddr_prefixcmp2|function|static inline bool uip_ipaddr_prefixcmp2(uint8_t *addr1, uint8_t *addr2, uint8_t length)
 DECL|uip_ipaddr_prefixcmp|macro|uip_ipaddr_prefixcmp
 DECL|uip_ipaddr_to_quad|macro|uip_ipaddr_to_quad
 DECL|uip_ipaddr|macro|uip_ipaddr
