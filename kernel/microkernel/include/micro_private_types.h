@@ -93,6 +93,8 @@ DECL|_K_SVC_TIMER_STOP|macro|_K_SVC_TIMER_STOP
 DECL|_K_SVC_UNDEFINED|macro|_K_SVC_UNDEFINED
 DECL|_K_SVC_WORKLOAD_GET|macro|_K_SVC_WORKLOAD_GET
 DECL|_MICRO_PRIVATE_TYPES_H|macro|_MICRO_PRIVATE_TYPES_H
+DECL|__next|member|struct k_timer *__next;
+DECL|__prev|member|struct k_timer *__prev;
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
 DECL|_e1arg|struct|struct _e1arg {

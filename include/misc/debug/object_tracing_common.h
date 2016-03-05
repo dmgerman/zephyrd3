@@ -1,5 +1,9 @@
+DECL|SYS_TRACING_OBJ_INIT_DLL|macro|SYS_TRACING_OBJ_INIT_DLL
+DECL|SYS_TRACING_OBJ_INIT_DLL|macro|SYS_TRACING_OBJ_INIT_DLL
 DECL|SYS_TRACING_OBJ_INIT|macro|SYS_TRACING_OBJ_INIT
 DECL|SYS_TRACING_OBJ_INIT|macro|SYS_TRACING_OBJ_INIT
+DECL|SYS_TRACING_OBJ_REMOVE_DLL|macro|SYS_TRACING_OBJ_REMOVE_DLL
+DECL|SYS_TRACING_OBJ_REMOVE_DLL|macro|SYS_TRACING_OBJ_REMOVE_DLL
 DECL|_OBJECT_TRACING_COMMON_H_|macro|_OBJECT_TRACING_COMMON_H_
 DECL|_trace_list_micro_event|variable|_trace_list_micro_event
 DECL|_trace_list_micro_fifo|variable|_trace_list_micro_fifo
@@ -9,6 +13,7 @@ DECL|_trace_list_micro_mem_pool|variable|_trace_list_micro_mem_pool
 DECL|_trace_list_micro_mutex|variable|_trace_list_micro_mutex
 DECL|_trace_list_micro_pipe|variable|_trace_list_micro_pipe
 DECL|_trace_list_micro_sem|variable|_trace_list_micro_sem
+DECL|_trace_list_micro_timer|variable|_trace_list_micro_timer
 DECL|_trace_list_nano_fifo|variable|_trace_list_nano_fifo
 DECL|_trace_list_nano_lifo|variable|_trace_list_nano_lifo
 DECL|_trace_list_nano_sem|variable|_trace_list_nano_sem
