@@ -7,7 +7,7 @@ DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *pee
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
 DECL|bt_conn_auth_cancel|function|int bt_conn_auth_cancel(struct bt_conn *conn)
 DECL|bt_conn_auth_cb_register|function|int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb)
-DECL|bt_conn_auth_passkey_confirm|function|int bt_conn_auth_passkey_confirm(struct bt_conn *conn, bool match)
+DECL|bt_conn_auth_passkey_confirm|function|int bt_conn_auth_passkey_confirm(struct bt_conn *conn)
 DECL|bt_conn_auth_passkey_entry|function|int bt_conn_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_conn_auth_pincode_entry|function|int bt_conn_auth_pincode_entry(struct bt_conn *conn, const char *pin)
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)

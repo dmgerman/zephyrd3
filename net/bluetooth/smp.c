@@ -33,7 +33,7 @@ DECL|a|member|uint64_t a;
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
-DECL|bt_smp_auth_passkey_confirm|function|int bt_smp_auth_passkey_confirm(struct bt_conn *conn, bool match)
+DECL|bt_smp_auth_passkey_confirm|function|int bt_smp_auth_passkey_confirm(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_dhkey_ready|function|void bt_smp_dhkey_ready(const uint8_t *dhkey)
