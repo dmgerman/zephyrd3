@@ -1,22 +1,8 @@
 DECL|BLE_CORE_GAP_BONDING|enumerator|BLE_CORE_GAP_BONDING = 0x01, /**< SMP supports bonding */
 DECL|BLE_CORE_GAP_MITM|enumerator|BLE_CORE_GAP_MITM = 0x04,
 DECL|BLE_CORE_GAP_OOB|enumerator|BLE_CORE_GAP_OOB = 0x08 /**< SMP supports Out Of Band data */
-DECL|BLE_CORE_GAP_RSSI_DISABLE_REPORT|enumerator|BLE_CORE_GAP_RSSI_DISABLE_REPORT = 0,
-DECL|BLE_CORE_GAP_RSSI_ENABLE_REPORT|enumerator|BLE_CORE_GAP_RSSI_ENABLE_REPORT
-DECL|BLE_CORE_GAP_RSSI_OPS|enum|enum BLE_CORE_GAP_RSSI_OPS {
 DECL|BLE_CORE_GAP_SM_OPTIONS|enum|enum BLE_CORE_GAP_SM_OPTIONS {
-DECL|BLE_CORE_TEST_END_DTM|enumerator|BLE_CORE_TEST_END_DTM = 0x1f,
-DECL|BLE_CORE_TEST_INIT_DTM|enumerator|BLE_CORE_TEST_INIT_DTM = 0x01,
-DECL|BLE_CORE_TEST_OPCODE|enum|enum BLE_CORE_TEST_OPCODE {
-DECL|BLE_CORE_TEST_SET_TXPOWER|enumerator|BLE_CORE_TEST_SET_TXPOWER = 0x80,
-DECL|BLE_CORE_TEST_START_DTM_RX|enumerator|BLE_CORE_TEST_START_DTM_RX = 0x1d,
-DECL|BLE_CORE_TEST_START_DTM_TX|enumerator|BLE_CORE_TEST_START_DTM_TX = 0x1e,
-DECL|BLE_CORE_TEST_START_TX_CARRIER|enumerator|BLE_CORE_TEST_START_TX_CARRIER,
 DECL|BLE_GAP_GEN_OPS|enum|enum BLE_GAP_GEN_OPS {
-DECL|BLE_GAP_SCAN_ACTIVE|enumerator|BLE_GAP_SCAN_ACTIVE = 0x01,
-DECL|BLE_GAP_SCAN_DEFAULT|enumerator|BLE_GAP_SCAN_DEFAULT = 0,
-DECL|BLE_GAP_SCAN_OPTIONS|enum|enum BLE_GAP_SCAN_OPTIONS {
-DECL|BLE_GAP_SCAN_WHITE_LISTED|enumerator|BLE_GAP_SCAN_WHITE_LISTED = 0x02,
 DECL|BLE_GAP_SEC_MAX_KEY_LEN|macro|BLE_GAP_SEC_MAX_KEY_LEN
 DECL|BLE_GAP_SET_CH_MAP|enumerator|BLE_GAP_SET_CH_MAP = 0,
 DECL|BLE_GAP_SET_OPTIONS|enum|enum BLE_GAP_SET_OPTIONS {
@@ -50,7 +36,6 @@ DECL|authorization|member|uint8_t authorization;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bd|member|bt_addr_le_t bd;
-DECL|bd|member|const bt_addr_le_t bd;
 DECL|ble_bond_info_cb_t|typedef|typedef void (*ble_bond_info_cb_t)(const struct nble_gap_sm_bond_info *info,
 DECL|bt_eir_data|struct|struct bt_eir_data {
 DECL|car|member|uint8_t car;
@@ -115,7 +100,6 @@ DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
 DECL|nble_gap_adv_params|struct|struct nble_gap_adv_params {
 DECL|nble_gap_adv_report_evt|struct|struct nble_gap_adv_report_evt {
-DECL|nble_gap_cancel_connect_params|struct|struct nble_gap_cancel_connect_params {
 DECL|nble_gap_channel_map|struct|struct nble_gap_channel_map {
 DECL|nble_gap_conn_update_evt|struct|struct nble_gap_conn_update_evt {
 DECL|nble_gap_connect_evt|struct|struct nble_gap_connect_evt {

@@ -3,6 +3,7 @@ DECL|BLE_GATT_IND_TYPES|enum|enum BLE_GATT_IND_TYPES {
 DECL|BLE_GATT_IND_TYPE_INDICATION|enumerator|BLE_GATT_IND_TYPE_INDICATION,
 DECL|BLE_GATT_IND_TYPE_NONE|enumerator|BLE_GATT_IND_TYPE_NONE = 0,
 DECL|BLE_GATT_IND_TYPE_NOTIFICATION|enumerator|BLE_GATT_IND_TYPE_NOTIFICATION,
+DECL|DISCOVER_FLAGS_UUID_PRESENT|macro|DISCOVER_FLAGS_UUID_PRESENT
 DECL|attr_base|member|struct bt_gatt_attr *attr_base;
 DECL|attr_base|member|struct bt_gatt_attr *attr_base;
 DECL|attr_count|member|uint8_t attr_count;
@@ -37,6 +38,7 @@ DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
+DECL|flags|member|uint8_t flags;
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
