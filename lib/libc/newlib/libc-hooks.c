@@ -21,6 +21,7 @@ DECL|heap_sz|variable|heap_sz
 DECL|isatty|function|int isatty(int file)
 DECL|kill|function|int kill(int i, int j)
 DECL|lseek|function|int lseek(int file, int ptr, int dir)
+DECL|open|function|int open(const char *name, int mode)
 DECL|read|function|int read(int fd, char *buf, int nbytes)
 DECL|sbrk|function|void *sbrk(int count)
 DECL|write|function|int write(int fd, char *buf, int nbytes)
