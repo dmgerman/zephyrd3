@@ -1,0 +1,22 @@
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|PEER_IPADDR|macro|PEER_IPADDR
+DECL|PEER_IPADDR|macro|PEER_IPADDR
+DECL|PEER_IPADDR|macro|PEER_IPADDR
+DECL|PEER_IPADDR|macro|PEER_IPADDR
+DECL|__NET_TESTING_H|macro|__NET_TESTING_H
+DECL|net_testing_client_mac|macro|net_testing_client_mac
+DECL|net_testing_client_mac|macro|net_testing_client_mac
+DECL|net_testing_in6addr_my|variable|net_testing_in6addr_my
+DECL|net_testing_in6addr_peer|variable|net_testing_in6addr_peer
+DECL|net_testing_my_mac|variable|net_testing_my_mac
+DECL|net_testing_my_mac|variable|net_testing_my_mac
+DECL|net_testing_peer_mac|variable|net_testing_peer_mac
+DECL|net_testing_peer_mac|variable|net_testing_peer_mac
+DECL|net_testing_server_mac|macro|net_testing_server_mac
+DECL|net_testing_server_mac|macro|net_testing_server_mac
+DECL|net_testing_set_reply_address|function|static inline void net_testing_set_reply_address(struct net_buf *buf)
+DECL|net_testing_setup|function|static inline void net_testing_setup(void)
