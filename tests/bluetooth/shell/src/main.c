@@ -6,7 +6,6 @@ DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ad_discov|variable|ad_discov
 DECL|appearance_value|variable|appearance_value
-DECL|attrs|variable|attrs
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_all|variable|auth_cb_all
 DECL|auth_cb_display_yes_no|variable|auth_cb_display_yes_no
@@ -72,10 +71,8 @@ DECL|mainloop|function|void mainloop(void)
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
-DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, int err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
 DECL|read_params|variable|read_params
-DECL|read_string|function|static ssize_t read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
