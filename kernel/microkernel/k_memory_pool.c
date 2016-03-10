@@ -3,6 +3,7 @@ DECL|AD_BEFORE_SEARCH4BIGGERBLOCK|macro|AD_BEFORE_SEARCH4BIGGERBLOCK
 DECL|AD_NONE|macro|AD_NONE
 DECL|AUTODEFRAG|macro|AUTODEFRAG
 DECL|MALLOC_ALIGN|macro|MALLOC_ALIGN
+DECL|_do_task_mem_pool_alloc|function|int _do_task_mem_pool_alloc(kmemory_pool_t pool_id, int reqsize, int32_t timeout, void **alloc_mem)
 DECL|_k_block_waiters_get|function|void _k_block_waiters_get(struct k_args *A)
 DECL|_k_defrag|function|void _k_defrag(struct k_args *A)
 DECL|_k_mem_pool_block_get_timeout_handle|function|void _k_mem_pool_block_get_timeout_handle(struct k_args *A)
