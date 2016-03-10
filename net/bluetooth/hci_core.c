@@ -48,9 +48,12 @@ DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_results_count|variable|discovery_results_count
+DECL|discovery_results_full|function|static void discovery_results_full(void)
 DECL|discovery_results_size|variable|discovery_results_size
 DECL|discovery_results|variable|discovery_results
+DECL|extended_inquiry_result|function|static void extended_inquiry_result(struct net_buf *buf)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
+DECL|get_result_slot|function|static struct bt_br_discovery_result *get_result_slot(const bt_addr_t *addr)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct net_buf *buf)
@@ -70,6 +73,7 @@ DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(bt_ready_cb_t ready_cb)
 DECL|init_sem|function|static void init_sem(struct nano_sem *sem, size_t count)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
+DECL|inquiry_result_with_rssi|function|static void inquiry_result_with_rssi(struct net_buf *buf)
 DECL|io_capa_neg_reply|function|static void io_capa_neg_reply(const bt_addr_t *bdaddr, const uint8_t reason)
 DECL|io_capa_req|function|static void io_capa_req(struct net_buf *buf)
 DECL|io_capa_resp|function|static void io_capa_resp(struct net_buf *buf)
@@ -104,6 +108,7 @@ DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct
 DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
 DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
+DECL|report_discovery_results|function|static void report_discovery_results(void)
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
