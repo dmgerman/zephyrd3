@@ -12,8 +12,11 @@ DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
 DECL|br_init|function|static int br_init(void)
 DECL|br_init|function|static int br_init(void)
+DECL|br_start_inquiry|function|static int br_start_inquiry(bool limited)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
+DECL|bt_br_discovery_start|function|int bt_br_discovery_start(const struct bt_br_discovery_param *param, struct bt_br_discovery_result *results, size_t cnt, bt_br_discovery_cb_t cb)
+DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
@@ -43,6 +46,10 @@ DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
+DECL|discovery_cb|variable|discovery_cb
+DECL|discovery_results_count|variable|discovery_results_count
+DECL|discovery_results_size|variable|discovery_results_size
+DECL|discovery_results|variable|discovery_results
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
@@ -62,6 +69,7 @@ DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(st
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(bt_ready_cb_t ready_cb)
 DECL|init_sem|function|static void init_sem(struct nano_sem *sem, size_t count)
+DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
 DECL|io_capa_neg_reply|function|static void io_capa_neg_reply(const bt_addr_t *bdaddr, const uint8_t reason)
 DECL|io_capa_req|function|static void io_capa_req(struct net_buf *buf)
 DECL|io_capa_resp|function|static void io_capa_resp(struct net_buf *buf)
