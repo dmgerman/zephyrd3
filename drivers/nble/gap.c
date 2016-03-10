@@ -16,6 +16,7 @@ DECL|on_nble_gap_adv_report_evt|function|void on_nble_gap_adv_report_evt(const s
 DECL|on_nble_gap_read_bda_rsp|function|void on_nble_gap_read_bda_rsp(const struct nble_service_read_bda_response *rsp)
 DECL|on_nble_gap_scan_start_stop_rsp|function|void on_nble_gap_scan_start_stop_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_sm_config_rsp|function|void on_nble_gap_sm_config_rsp(struct nble_gap_sm_config_rsp *rsp)
+DECL|on_nble_gap_start_advertise_rsp|function|void on_nble_gap_start_advertise_rsp(const struct nble_response *rsp)
 DECL|on_nble_get_version_rsp|function|void on_nble_get_version_rsp(const struct nble_version_response *rsp)
 DECL|on_nble_up|function|void on_nble_up(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
