@@ -25,6 +25,7 @@ DECL|__next|member|struct _k_mem_map_struct *__next;
 DECL|__next|member|struct _k_mutex_struct *__next;
 DECL|__next|member|struct _k_pipe_struct *__next;
 DECL|__next|member|struct _k_sem_struct *__next;
+DECL|__next|member|struct k_task *__next;
 DECL|_k_event_struct|struct|struct _k_event_struct {
 DECL|_k_fifo_struct|struct|struct _k_fifo_struct {
 DECL|_k_mbox_struct|struct|struct _k_mbox_struct {
