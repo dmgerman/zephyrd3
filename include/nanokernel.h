@@ -18,20 +18,14 @@ DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|fiber|member|nano_thread_id_t fiber;
 DECL|head|member|void *head;
-DECL|lifo|member|struct nano_lifo lifo;
-DECL|link|member|struct nano_timer *link;
 DECL|list|member|void *list;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
 DECL|nano_fiber_entry_t|typedef|typedef void (*nano_fiber_entry_t)(int i1, int i2);
-DECL|nano_fiber_timer_test|function|static inline void *nano_fiber_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_fifo|struct|struct nano_fifo {
-DECL|nano_isr_timer_test|function|static inline void *nano_isr_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_lifo|struct|struct nano_lifo {
 DECL|nano_sem|struct|struct nano_sem {
 DECL|nano_stack|struct|struct nano_stack {
-DECL|nano_task_timer_test|function|static inline void *nano_task_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
-DECL|nano_timer_test|function|static inline void *nano_timer_test(struct nano_timer *timer, int32_t timeout_in_ticks)
 DECL|nano_timer|struct|struct nano_timer {
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new[](size_t size)
@@ -40,8 +34,10 @@ DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;
 DECL|stat|member|int stat;
 DECL|tail|member|void *tail;
-DECL|ticks|member|uint32_t ticks;
-DECL|userData|member|void *userData;
+DECL|tcs|member|struct tcs *tcs;
+DECL|timeout_data|member|struct _nano_timeout timeout_data;
+DECL|user_data_backup|member|void *user_data_backup;
+DECL|user_data|member|void *user_data;
 DECL|wait_q|member|struct _nano_queue *wait_q;
 DECL|wait_q|member|struct _nano_queue wait_q;
 DECL|wait_q|member|struct _nano_queue wait_q;

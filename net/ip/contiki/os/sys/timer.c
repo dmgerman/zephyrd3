@@ -1,4 +1,5 @@
 DECL|DEBUG|macro|DEBUG
+DECL|TIMER_EXPIRED_CODE|macro|TIMER_EXPIRED_CODE
 DECL|do_init|function|static inline void do_init(struct timer *t)
 DECL|timer_expired|function|timer_expired(struct timer *t)
 DECL|timer_is_triggered|function|bool timer_is_triggered(struct timer *t)
