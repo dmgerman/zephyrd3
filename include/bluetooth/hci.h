@@ -62,6 +62,9 @@ DECL|BT_HCI_EVT_CONN_REQUEST|macro|BT_HCI_EVT_CONN_REQUEST
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
 DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE
+DECL|BT_HCI_EVT_EXTENDED_INQUIRY_RESULT|macro|BT_HCI_EVT_EXTENDED_INQUIRY_RESULT
+DECL|BT_HCI_EVT_INQUIRY_COMPLETE|macro|BT_HCI_EVT_INQUIRY_COMPLETE
+DECL|BT_HCI_EVT_INQUIRY_RESULT_WITH_RSSI|macro|BT_HCI_EVT_INQUIRY_RESULT_WITH_RSSI
 DECL|BT_HCI_EVT_IO_CAPA_REQ|macro|BT_HCI_EVT_IO_CAPA_REQ
 DECL|BT_HCI_EVT_IO_CAPA_RESP|macro|BT_HCI_EVT_IO_CAPA_RESP
 DECL|BT_HCI_EVT_LE_ADVERTISING_REPORT|macro|BT_HCI_EVT_LE_ADVERTISING_REPORT
@@ -97,6 +100,8 @@ DECL|BT_HCI_OP_ACCEPT_CONN_REQ|macro|BT_HCI_OP_ACCEPT_CONN_REQ
 DECL|BT_HCI_OP_DISCONNECT|macro|BT_HCI_OP_DISCONNECT
 DECL|BT_HCI_OP_HOST_BUFFER_SIZE|macro|BT_HCI_OP_HOST_BUFFER_SIZE
 DECL|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS|macro|BT_HCI_OP_HOST_NUM_COMPLETED_PACKETS
+DECL|BT_HCI_OP_INQUIRY_CANCEL|macro|BT_HCI_OP_INQUIRY_CANCEL
+DECL|BT_HCI_OP_INQUIRY|macro|BT_HCI_OP_INQUIRY
 DECL|BT_HCI_OP_IO_CAPABILITY_NEG_REPLY|macro|BT_HCI_OP_IO_CAPABILITY_NEG_REPLY
 DECL|BT_HCI_OP_IO_CAPABILITY_REPLY|macro|BT_HCI_OP_IO_CAPABILITY_REPLY
 DECL|BT_HCI_OP_LE_CONN_PARAM_REQ_NEG_REPLY|macro|BT_HCI_OP_LE_CONN_PARAM_REQ_NEG_REPLY
@@ -136,6 +141,7 @@ DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
+DECL|BT_HCI_OP_WRITE_INQUIRY_MODE|macro|BT_HCI_OP_WRITE_INQUIRY_MODE
 DECL|BT_HCI_OP_WRITE_SCAN_ENABLE|macro|BT_HCI_OP_WRITE_SCAN_ENABLE
 DECL|BT_HCI_OP_WRITE_SSP_MODE|macro|BT_HCI_OP_WRITE_SSP_MODE
 DECL|BT_HCI_ROLE_MASTER|macro|BT_HCI_ROLE_MASTER
@@ -241,12 +247,19 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
 DECL|acl_pkts|member|uint16_t acl_pkts;
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|addr|member|bt_addr_t addr;
+DECL|addr|member|bt_addr_t addr;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -307,6 +320,7 @@ DECL|bt_hci_cp_pin_code_neg_reply|struct|struct bt_hci_cp_pin_code_neg_reply {
 DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
+DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
@@ -318,7 +332,10 @@ DECL|bt_hci_evt_conn_request|struct|struct bt_hci_evt_conn_request {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
 DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_key_refresh_complete {
+DECL|bt_hci_evt_extended_inquiry_result|struct|struct bt_hci_evt_extended_inquiry_result {
 DECL|bt_hci_evt_hdr|struct|struct bt_hci_evt_hdr {
+DECL|bt_hci_evt_inquiry_complete|struct|struct bt_hci_evt_inquiry_complete {
+DECL|bt_hci_evt_inquiry_result_with_rssi|struct|struct bt_hci_evt_inquiry_result_with_rssi {
 DECL|bt_hci_evt_io_capa_req|struct|struct bt_hci_evt_io_capa_req {
 DECL|bt_hci_evt_io_capa_resp|struct|struct bt_hci_evt_io_capa_resp {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
@@ -333,6 +350,7 @@ DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_pac
 DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
+DECL|bt_hci_op_inquiry|struct|struct bt_hci_op_inquiry {
 DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
 DECL|bt_hci_rp_le_rand|struct|struct bt_hci_rp_le_rand {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
@@ -349,6 +367,10 @@ DECL|capability|member|uint8_t capability;
 DECL|capability|member|uint8_t capability;
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
+DECL|clock_offset|member|uint16_t clock_offset;
+DECL|clock_offset|member|uint16_t clock_offset;
+DECL|cod|member|uint8_t cod[3];
+DECL|cod|member|uint8_t cod[3];
 DECL|commands|member|uint8_t commands[36];
 DECL|conn_interval_max|member|uint16_t conn_interval_max;
 DECL|conn_interval_max|member|uint16_t conn_interval_max;
@@ -365,6 +387,7 @@ DECL|dhkey|member|uint8_t dhkey[32];
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
 DECL|ediv|member|uint16_t ediv;
 DECL|ediv|member|uint16_t ediv;
+DECL|eir|member|uint8_t eir[240];
 DECL|enable|member|uint8_t enable;
 DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
@@ -417,12 +440,14 @@ DECL|key_type|member|uint8_t key_type;
 DECL|key|member|uint8_t key[16];
 DECL|key|member|uint8_t key[64];
 DECL|key|member|uint8_t key[64];
+DECL|lap|member|uint8_t lap[3];
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|le_max_len|member|uint16_t le_max_len;
 DECL|le_max_num|member|uint8_t le_max_num;
+DECL|length|member|uint8_t length;
 DECL|length|member|uint8_t length;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
@@ -447,10 +472,12 @@ DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mode|member|uint8_t mode;
+DECL|mode|member|uint8_t mode;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
 DECL|num_handles|member|uint8_t num_handles;
+DECL|num_rsp|member|uint8_t num_rsp;
 DECL|oob_data|member|uint8_t oob_data;
 DECL|oob_data|member|uint8_t oob_data;
 DECL|opcode|member|uint16_t opcode;
@@ -464,6 +491,8 @@ DECL|peer_addr|member|bt_addr_le_t peer_addr;
 DECL|pin_code|member|uint8_t pin_code[16];
 DECL|pin_len|member|uint8_t pin_len;
 DECL|plaintext|member|uint8_t plaintext[16];
+DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
+DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
@@ -472,8 +501,12 @@ DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
+DECL|reserved|member|uint8_t reserved;
+DECL|reserved|member|uint8_t reserved;
 DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
+DECL|rssi|member|int8_t rssi;
+DECL|rssi|member|int8_t rssi;
 DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_type|member|uint8_t scan_type;
 DECL|scan_window|member|uint16_t scan_window;
@@ -482,6 +515,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
