@@ -90,6 +90,7 @@ DECL|return_value|member|unsigned int return_value;/* return value from _Swap */
 DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
 DECL|s_NANO|struct|struct s_NANO {
 DECL|sp|member|uint32_t sp; /* r28 */
+DECL|stack_top|member|uint32_t stack_top;
 DECL|status32|member|uint32_t status32;
 DECL|tCalleeSaved|typedef|typedef struct callee_saved tCalleeSaved;
 DECL|tFirqRegs|typedef|typedef struct firq_regs tFirqRegs;
