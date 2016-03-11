@@ -7,7 +7,7 @@ DECL|net_context_get_queue|function|struct nano_fifo *net_context_get_queue(stru
 DECL|net_context_get_receiver_registered|function|int net_context_get_receiver_registered(struct net_context *context)
 DECL|net_context_get_tuple|function|struct net_tuple *net_context_get_tuple(struct net_context *context)
 DECL|net_context_get_udp_connection|function|net_context_get_udp_connection(struct net_context *context)
-DECL|net_context_get|function|struct net_context *net_context_get(enum ip_protocol ip_proto,const struct net_addr *remote_addr, uint16_t remote_port, const struct net_addr *local_addr, uint16_t local_port)
+DECL|net_context_get|function|struct net_context *net_context_get(enum ip_protocol ip_proto,const struct net_addr *remote_addr, uint16_t remote_port, struct net_addr *local_addr, uint16_t local_port)
 DECL|net_context_init|function|void net_context_init(void)
 DECL|net_context_put|function|void net_context_put(struct net_context *context)
 DECL|net_context_set_receiver_registered|function|void net_context_set_receiver_registered(struct net_context *context)
