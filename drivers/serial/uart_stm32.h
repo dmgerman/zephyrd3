@@ -86,6 +86,7 @@ DECL|uart_stm32_data|struct|struct uart_stm32_data {
 DECL|uart_stm32|struct|struct uart_stm32 {
 DECL|uconf|member|struct uart_device_config uconf;
 DECL|ue|member|uint32_t ue :1 __packed;
+DECL|user_cb|member|uart_irq_callback_t user_cb;
 DECL|val|member|uint32_t val;
 DECL|val|member|uint32_t val;
 DECL|val|member|uint32_t val;
