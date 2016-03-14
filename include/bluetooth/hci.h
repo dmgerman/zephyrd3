@@ -491,6 +491,7 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
 DECL|num_handles|member|uint8_t num_handles;
+DECL|num_reports|member|uint8_t num_reports;
 DECL|num_rsp|member|uint8_t num_rsp;
 DECL|oob_data|member|uint8_t oob_data;
 DECL|oob_data|member|uint8_t oob_data;
