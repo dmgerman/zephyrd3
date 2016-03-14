@@ -1,6 +1,7 @@
 DECL|DEBUG|macro|DEBUG
 DECL|DEBUG|macro|DEBUG
-DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MCAST_IPADDR|macro|MCAST_IPADDR
+DECL|MCAST_IPADDR|macro|MCAST_IPADDR
 DECL|MY_IPADDR|macro|MY_IPADDR
 DECL|MY_PORT|macro|MY_PORT
 DECL|OBS_RESOURCE_URI|macro|OBS_RESOURCE_URI
@@ -29,10 +30,8 @@ DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
 DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
-DECL|my_mac|variable|my_mac
 DECL|notification_callback|function|static void notification_callback(coap_observee_t *obs, void *notification, coap_notification_flag_t flag)
 DECL|obs|variable|obs
-DECL|peer_mac|variable|peer_mac
 DECL|startup|function|void startup(void)
 DECL|toggle_observation|function|void toggle_observation(coap_context_t *coap_ctx)
 DECL|verify_ecdsa_key|function|static int verify_ecdsa_key(struct dtls_context_t *ctx, const session_t *session, const unsigned char *other_pub_x, const unsigned char *other_pub_y, size_t key_size)
