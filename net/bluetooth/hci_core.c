@@ -62,6 +62,7 @@ DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(st
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(bt_ready_cb_t ready_cb)
 DECL|init_sem|function|static void init_sem(struct nano_sem *sem, size_t count)
+DECL|io_capa_neg_reply|function|static void io_capa_neg_reply(const bt_addr_t *bdaddr, const uint8_t reason)
 DECL|io_capa_req|function|static void io_capa_req(struct net_buf *buf)
 DECL|io_capa_resp|function|static void io_capa_resp(struct net_buf *buf)
 DECL|le_adv_report|function|static void le_adv_report(struct net_buf *buf)
