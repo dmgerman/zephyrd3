@@ -27,6 +27,7 @@ DECL|cmd_auth|function|static void cmd_auth(int argc, char *argv[])
 DECL|cmd_auto_conn|function|static void cmd_auto_conn(int argc, char *argv[])
 DECL|cmd_bredr_connectable|function|static void cmd_bredr_connectable(int argc, char *argv[])
 DECL|cmd_bredr_discoverable|function|static void cmd_bredr_discoverable(int argc, char *argv[])
+DECL|cmd_connect_bredr|function|static void cmd_connect_bredr(int argc, char *argv[])
 DECL|cmd_connect_le|function|static void cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static void cmd_disconnect(int argc, char *argv[])
 DECL|cmd_gatt_discover|function|static void cmd_gatt_discover(int argc, char *argv[])
@@ -77,6 +78,7 @@ DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
+DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *addr)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
