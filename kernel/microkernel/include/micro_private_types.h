@@ -94,6 +94,7 @@ DECL|_K_SVC_UNDEFINED|macro|_K_SVC_UNDEFINED
 DECL|_K_SVC_WORKLOAD_GET|macro|_K_SVC_WORKLOAD_GET
 DECL|_MICRO_PRIVATE_TYPES_H|macro|_MICRO_PRIVATE_TYPES_H
 DECL|__next|member|struct k_timer *__next;
+DECL|__next|member|struct pool_struct *__next;
 DECL|__prev|member|struct k_timer *__prev;
 DECL|_a1arg|struct|struct _a1arg {
 DECL|_c1arg|struct|struct _c1arg {
@@ -171,7 +172,6 @@ DECL|mptr|member|void **mptr;
 DECL|mutex|member|kmutex_t mutex;
 DECL|next|member|struct k_args *next;
 DECL|next|member|struct k_timer *next;
-DECL|next|member|struct pool_struct *next;
 DECL|nr_of_entries|member|int nr_of_entries;
 DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
