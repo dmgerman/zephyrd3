@@ -3,8 +3,11 @@ DECL|PRINT|macro|PRINT
 DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|STACKSIZE|macro|STACKSIZE
+DECL|TEST_COUNT|macro|TEST_COUNT
+DECL|TEST_COUNT|macro|TEST_COUNT
 DECL|any_addr|variable|any_addr
 DECL|appdatalen|variable|appdatalen
+DECL|count|variable|count
 DECL|failure|variable|failure
 DECL|fiberReceiverStack|variable|fiberReceiverStack
 DECL|fiberSenderStack|variable|fiberSenderStack
