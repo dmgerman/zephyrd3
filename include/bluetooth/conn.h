@@ -1,3 +1,5 @@
+DECL|BT_BR_CONN_PARAM_DEFAULT|macro|BT_BR_CONN_PARAM_DEFAULT
+DECL|BT_BR_CONN_PARAM|macro|BT_BR_CONN_PARAM
 DECL|BT_CONN_ROLE_MASTER|enumerator|BT_CONN_ROLE_MASTER,
 DECL|BT_CONN_ROLE_SLAVE|enumerator|BT_CONN_ROLE_SLAVE,
 DECL|BT_CONN_TYPE_BR|enumerator|BT_CONN_TYPE_BR, /** BR/EDR Connection Type */
@@ -11,7 +13,9 @@ DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM, /** encryption and no aut
 DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|__packed|enum|typedef enum __packed {
 DECL|_next|member|struct bt_conn_cb *_next;
+DECL|allow_role_switch|member|bool allow_role_switch;
 DECL|br|member|struct bt_conn_br_info br;
+DECL|bt_br_conn_param|struct|struct bt_br_conn_param {
 DECL|bt_conn_auth_cb|struct|struct bt_conn_auth_cb {
 DECL|bt_conn_br_info|struct|struct bt_conn_br_info {
 DECL|bt_conn_cb|struct|struct bt_conn_cb {
