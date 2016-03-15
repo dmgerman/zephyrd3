@@ -2,6 +2,7 @@ DECL|BT_SMP_AUTH_BONDING|macro|BT_SMP_AUTH_BONDING
 DECL|BT_SMP_AUTH_MITM|macro|BT_SMP_AUTH_MITM
 DECL|BT_SMP_AUTH_NONE|macro|BT_SMP_AUTH_NONE
 DECL|BT_SMP_AUTH_SC|macro|BT_SMP_AUTH_SC
+DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_auth_cancel|function|int bt_conn_auth_cancel(struct bt_conn *conn)
 DECL|bt_conn_auth_cb_register|function|int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb)
 DECL|bt_conn_auth_passkey_confirm|function|int bt_conn_auth_passkey_confirm(struct bt_conn *conn)
