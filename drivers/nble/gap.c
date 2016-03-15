@@ -1,5 +1,13 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|BT_SMP_IO_DISPLAY_ONLY|macro|BT_SMP_IO_DISPLAY_ONLY
+DECL|BT_SMP_IO_DISPLAY_YESNO|macro|BT_SMP_IO_DISPLAY_YESNO
+DECL|BT_SMP_IO_KEYBOARD_DISPLAY|macro|BT_SMP_IO_KEYBOARD_DISPLAY
+DECL|BT_SMP_IO_KEYBOARD_ONLY|macro|BT_SMP_IO_KEYBOARD_ONLY
+DECL|BT_SMP_IO_NO_INPUT_OUTPUT|macro|BT_SMP_IO_NO_INPUT_OUTPUT
+DECL|BT_SMP_MAX_ENC_KEY_SIZE|macro|BT_SMP_MAX_ENC_KEY_SIZE
+DECL|BT_SMP_OOB_NOT_PRESENT|macro|BT_SMP_OOB_NOT_PRESENT
+DECL|BT_SMP_OOB_PRESENT|macro|BT_SMP_OOB_PRESENT
 DECL|NBLE_BTWAKE_PIN|macro|NBLE_BTWAKE_PIN
 DECL|NBLE_RESET_PIN|macro|NBLE_RESET_PIN
 DECL|NBLE_SWDIO_PIN|macro|NBLE_SWDIO_PIN
@@ -10,6 +18,7 @@ DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
+DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|nble_bdaddr|variable|nble_bdaddr
 DECL|nble_log|function|void nble_log(const struct nble_log_s *param, char *format, uint8_t len)
 DECL|on_nble_gap_adv_report_evt|function|void on_nble_gap_adv_report_evt(const struct nble_gap_adv_report_evt *evt,const uint8_t *buf, uint8_t len)
