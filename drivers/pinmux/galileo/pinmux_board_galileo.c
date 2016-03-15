@@ -1,0 +1,3 @@
+DECL|galileo_pinmux_driver|variable|galileo_pinmux_driver
+DECL|mux_config|variable|mux_config
+DECL|pinmux_galileo_initialize|function|static int pinmux_galileo_initialize(struct device *port)
