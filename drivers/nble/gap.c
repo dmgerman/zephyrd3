@@ -26,6 +26,7 @@ DECL|on_nble_gap_read_bda_rsp|function|void on_nble_gap_read_bda_rsp(const struc
 DECL|on_nble_gap_scan_start_stop_rsp|function|void on_nble_gap_scan_start_stop_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_sm_common_rsp|function|void on_nble_gap_sm_common_rsp(const struct nble_gap_sm_response *rsp)
 DECL|on_nble_gap_sm_config_rsp|function|void on_nble_gap_sm_config_rsp(struct nble_gap_sm_config_rsp *rsp)
+DECL|on_nble_gap_sm_passkey_display_evt|function|void on_nble_gap_sm_passkey_display_evt(const struct nble_gap_sm_passkey_disp_evt *ev)
 DECL|on_nble_gap_sm_status_evt|function|void on_nble_gap_sm_status_evt(const struct nble_gap_sm_status_evt *ev)
 DECL|on_nble_gap_start_advertise_rsp|function|void on_nble_gap_start_advertise_rsp(const struct nble_response *rsp)
 DECL|on_nble_get_version_rsp|function|void on_nble_get_version_rsp(const struct nble_version_response *rsp)
