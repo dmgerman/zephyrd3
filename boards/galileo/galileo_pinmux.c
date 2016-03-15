@@ -11,7 +11,7 @@ DECL|PIN_HIGH|enumerator|PIN_HIGH = 0x01,
 DECL|PIN_LOW|enumerator|PIN_LOW = 0x00,
 DECL|PWM0|enumerator|PWM0,
 DECL|_galileo_path|variable|_galileo_path
-DECL|_galileo_set_pin|function|uint8_t _galileo_set_pin(struct device *port, uint8_t pin, uint8_t func)
+DECL|_galileo_set_pin|function|int _galileo_set_pin(struct device *port, uint8_t pin, uint8_t func)
 DECL|api_funcs|variable|api_funcs
 DECL|cfg|member|uint32_t cfg;
 DECL|exp0|member|struct device *exp0;
@@ -19,12 +19,12 @@ DECL|exp1|member|struct device *exp1;
 DECL|exp2|member|struct device *exp2;
 DECL|func|member|uint8_t func;
 DECL|galileo_data|struct|struct galileo_data {
-DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
-DECL|galileo_dev_get|function|static uint32_t galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
-DECL|galileo_dev_input_enable|function|static uint32_t galileo_dev_input_enable(struct device *dev, uint32_t pin, uint8_t func)
-DECL|galileo_dev_pullup|function|static uint32_t galileo_dev_pullup(struct device *dev, uint32_t pin, uint8_t func)
-DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
-DECL|galileo_dev_set|function|static uint32_t galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
+DECL|galileo_dev_get|function|static int galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
+DECL|galileo_dev_get|function|static int galileo_dev_get(struct device *dev,uint32_t pin, uint32_t *func)
+DECL|galileo_dev_input_enable|function|static int galileo_dev_input_enable(struct device *dev, uint32_t pin, uint8_t func)
+DECL|galileo_dev_pullup|function|static int galileo_dev_pullup(struct device *dev, uint32_t pin, uint8_t func)
+DECL|galileo_dev_set|function|static int galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
+DECL|galileo_dev_set|function|static int galileo_dev_set(struct device *dev,uint32_t pin, uint32_t func)
 DECL|galileo_pinmux_driver|variable|galileo_pinmux_driver
 DECL|galileo_pmux|variable|galileo_pmux
 DECL|gpio_chip|enum|enum gpio_chip {

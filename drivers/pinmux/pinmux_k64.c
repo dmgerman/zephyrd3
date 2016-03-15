@@ -1,8 +1,8 @@
 DECL|PIN_FROM_ID|macro|PIN_FROM_ID
 DECL|_fsl_k64_get_gpio_dev|function|static int _fsl_k64_get_gpio_dev(struct device *dev, mem_addr_t port_base_addr, struct device **gpio_dev_ptr)
-DECL|_fsl_k64_get_pin|function|static uint32_t _fsl_k64_get_pin(struct device *dev, uint32_t pin_id, uint32_t *func)
+DECL|_fsl_k64_get_pin|function|static int _fsl_k64_get_pin(struct device *dev, uint32_t pin_id, uint32_t *func)
 DECL|_fsl_k64_get_port_addr|function|static int _fsl_k64_get_port_addr(uint8_t pin_id, mem_addr_t *port_addr_ptr)
-DECL|_fsl_k64_set_pin|function|static uint32_t _fsl_k64_set_pin(struct device *dev, uint32_t pin_id, uint32_t func)
+DECL|_fsl_k64_set_pin|function|static int _fsl_k64_set_pin(struct device *dev, uint32_t pin_id, uint32_t func)
 DECL|api_funcs|variable|api_funcs
 DECL|config_port_a|function|static inline int config_port_a(mem_addr_t *addr)
 DECL|config_port_a|macro|config_port_a
@@ -15,8 +15,8 @@ DECL|config_port_d|macro|config_port_d
 DECL|config_port_e|function|static inline int config_port_e(mem_addr_t *addr)
 DECL|config_port_e|macro|config_port_e
 DECL|fsl_k64_data|struct|struct fsl_k64_data {
-DECL|fsl_k64_dev_get|function|static uint32_t fsl_k64_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
-DECL|fsl_k64_dev_set|function|static uint32_t fsl_k64_dev_set(struct device *dev, uint32_t pin, uint32_t func)
+DECL|fsl_k64_dev_get|function|static int fsl_k64_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
+DECL|fsl_k64_dev_set|function|static int fsl_k64_dev_set(struct device *dev, uint32_t pin, uint32_t func)
 DECL|fsl_k64_pinmux_driver|variable|fsl_k64_pinmux_driver
 DECL|fsl_k64_pmux|variable|fsl_k64_pmux
 DECL|gpio_a|member|struct device *gpio_a; /* port A */
