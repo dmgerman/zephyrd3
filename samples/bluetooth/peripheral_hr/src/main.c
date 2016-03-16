@@ -12,11 +12,8 @@ DECL|bt_ready|function|static void bt_ready(int err)
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|default_conn|variable|default_conn
-DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|mainloop|function|void mainloop(void)
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_manuf|function|static ssize_t read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_model|function|static ssize_t read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|simulate_blvl|variable|simulate_blvl

@@ -42,7 +42,6 @@ DECL|condition|member|uint8_t condition;
 DECL|condition|member|uint8_t condition;
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
-DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|es_measurement|struct|struct es_measurement {
 DECL|es_trigger_setting_reference|struct|struct es_trigger_setting_reference {
@@ -67,7 +66,6 @@ DECL|operand|member|uint8_t operand[];
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_es_measurement_rp|struct|struct read_es_measurement_rp {
 DECL|read_es_measurement|function|static ssize_t read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_string|function|static ssize_t read_string(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_temp_trigger_setting|function|static ssize_t read_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_temp_valid_range|function|static ssize_t read_temp_valid_range(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_u16|function|static ssize_t read_u16(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)

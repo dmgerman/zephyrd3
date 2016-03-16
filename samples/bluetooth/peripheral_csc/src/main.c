@@ -66,7 +66,6 @@ DECL|cwr|member|uint32_t cwr;
 DECL|cwr|variable|cwr
 DECL|data|member|uint8_t data[];
 DECL|data|member|uint8_t data[];
-DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flags|member|uint8_t flags;
 DECL|lcet|member|uint16_t lcet;
@@ -81,8 +80,6 @@ DECL|op|member|uint8_t op;
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_manuf|function|static ssize_t read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_model|function|static ssize_t read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|req_op|member|uint8_t req_op;
 DECL|sc_ctrl_point_ind|struct|struct sc_ctrl_point_ind {
 DECL|sd|variable|sd
