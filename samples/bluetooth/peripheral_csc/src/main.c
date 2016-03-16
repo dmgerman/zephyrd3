@@ -40,11 +40,6 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|ad|variable|ad
-DECL|bas_attrs|variable|bas_attrs
-DECL|bas_simulate|variable|bas_simulate
-DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
-DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
-DECL|blvl|variable|blvl
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|ccr|member|uint16_t ccr;
 DECL|ccr|variable|ccr
@@ -77,7 +72,6 @@ DECL|mainloop|function|void mainloop(void)
 DECL|measurement_nfy|function|static void measurement_nfy(struct bt_conn *conn, uint32_t cwr, uint16_t lwet, uint16_t ccr, uint16_t lcet)
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
-DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|req_op|member|uint8_t req_op;

@@ -29,10 +29,6 @@ DECL|application|member|uint8_t application;
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
-DECL|bas_attrs|variable|bas_attrs
-DECL|blvl_ccc_cfg_changed|function|static void blvl_ccc_cfg_changed(uint16_t value)
-DECL|blvl_ccc_cfg|variable|blvl_ccc_cfg
-DECL|blvl|variable|blvl
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|ccc_cfg|member|struct bt_gatt_ccc_cfg ccc_cfg[CONFIG_BLUETOOTH_MAX_PAIRED];
 DECL|check_condition|function|static bool check_condition(uint8_t condition, int16_t old_val, int16_t new_val, int16_t ref_val)
@@ -63,7 +59,6 @@ DECL|measurement_uncertainty|member|uint8_t measurement_uncertainty;
 DECL|meas|member|struct es_measurement meas;
 DECL|meas|member|struct es_measurement meas;
 DECL|operand|member|uint8_t operand[];
-DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_es_measurement_rp|struct|struct read_es_measurement_rp {
 DECL|read_es_measurement|function|static ssize_t read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_temp_trigger_setting|function|static ssize_t read_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -79,7 +74,6 @@ DECL|sec|member|uint8_t sec[3];
 DECL|sensor_1|variable|sensor_1
 DECL|sensor_2|variable|sensor_2
 DECL|sensor_3|variable|sensor_3
-DECL|simulate_blvl|variable|simulate_blvl
 DECL|simulate_temp|variable|simulate_temp
 DECL|temp_ccc_cfg_changed|function|static void temp_ccc_cfg_changed(uint16_t value)
 DECL|temp_value|member|int16_t temp_value;
