@@ -23,8 +23,7 @@ DECL|free_packet|function|free_packet(struct net_buf *buf, struct neighbor_queue
 DECL|init|function|init(void)
 DECL|input_packet|function|input_packet(struct net_buf *buf)
 DECL|max_transmissions|member|uint8_t max_transmissions;
-DECL|neighbor_list|variable|neighbor_list
-DECL|neighbor_queue_from_addr|function|neighbor_queue_from_addr(const linkaddr_t *addr)
+DECL|neighbor_queue_from_addr|function|neighbor_queue_from_addr(struct net_buf *buf, const linkaddr_t *addr)
 DECL|neighbor_queue|struct|struct neighbor_queue {
 DECL|next|member|struct neighbor_queue *next;
 DECL|off|function|off(int keep_radio_on)

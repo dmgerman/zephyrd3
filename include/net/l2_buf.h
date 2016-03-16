@@ -17,6 +17,7 @@ DECL|pkt_packetbuf_addrs|member|struct packetbuf_addr pkt_packetbuf_addrs[PACKET
 DECL|pkt_packetbuf_attrs|member|struct packetbuf_attr pkt_packetbuf_attrs[PACKETBUF_NUM_ATTRS];
 DECL|pkt_packetbufptr|member|uint8_t *pkt_packetbufptr;
 DECL|uip_last_tx_status|macro|uip_last_tx_status
+DECL|uip_neighbor_list|macro|uip_neighbor_list
 DECL|uip_packetbuf_hdr_len|macro|uip_packetbuf_hdr_len
 DECL|uip_packetbuf_payload_len|macro|uip_packetbuf_payload_len
 DECL|uip_packetbuf_ptr|macro|uip_packetbuf_ptr
