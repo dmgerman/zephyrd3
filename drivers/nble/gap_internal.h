@@ -96,6 +96,7 @@ DECL|interval|member|uint16_t interval;
 DECL|io_caps|member|uint8_t io_caps;
 DECL|irk_count|member|uint8_t irk_count;
 DECL|irk|member|uint8_t irk[BLE_GAP_SEC_MAX_KEY_LEN];
+DECL|keep_adv|member|bool keep_adv;
 DECL|key_size|member|uint8_t key_size;
 DECL|key_type|member|uint8_t key_type;
 DECL|latency|member|uint16_t latency;
