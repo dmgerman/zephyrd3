@@ -79,6 +79,7 @@ DECL|BT_HCI_EVT_LINK_KEY_NOTIFY|macro|BT_HCI_EVT_LINK_KEY_NOTIFY
 DECL|BT_HCI_EVT_LINK_KEY_REQ|macro|BT_HCI_EVT_LINK_KEY_REQ
 DECL|BT_HCI_EVT_NUM_COMPLETED_PACKETS|macro|BT_HCI_EVT_NUM_COMPLETED_PACKETS
 DECL|BT_HCI_EVT_PIN_CODE_REQ|macro|BT_HCI_EVT_PIN_CODE_REQ
+DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EVT_VENDOR|macro|BT_HCI_EVT_VENDOR
 DECL|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE|macro|BT_HCI_EV_LE_REMOTE_FEAT_COMPLETE
@@ -141,6 +142,8 @@ DECL|BT_HCI_OP_READ_LOCAL_FEATURES|macro|BT_HCI_OP_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
 DECL|BT_HCI_OP_READ_SUPPORTED_COMMANDS|macro|BT_HCI_OP_READ_SUPPORTED_COMMANDS
 DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
+DECL|BT_HCI_OP_REMOTE_NAME_CANCEL|macro|BT_HCI_OP_REMOTE_NAME_CANCEL
+DECL|BT_HCI_OP_REMOTE_NAME_REQUEST|macro|BT_HCI_OP_REMOTE_NAME_REQUEST
 DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
@@ -258,6 +261,10 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -269,6 +276,10 @@ DECL|addr|member|bt_addr_t addr;
 DECL|allow_role_switch|member|uint8_t allow_role_switch;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -331,6 +342,8 @@ DECL|bt_hci_cp_link_key_reply|struct|struct bt_hci_cp_link_key_reply {
 DECL|bt_hci_cp_pin_code_neg_reply|struct|struct bt_hci_cp_pin_code_neg_reply {
 DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
+DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
+DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
@@ -360,6 +373,7 @@ DECL|bt_hci_evt_le_p256_public_key_complete|struct|struct bt_hci_evt_le_p256_pub
 DECL|bt_hci_evt_link_key_req|struct|struct bt_hci_evt_link_key_req {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
+DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_req_complete {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_op_inquiry|struct|struct bt_hci_op_inquiry {
@@ -376,10 +390,12 @@ DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
+DECL|bt_hci_rp_remote_name_cancel|struct|struct bt_hci_rp_remote_name_cancel {
 DECL|capability|member|uint8_t capability;
 DECL|capability|member|uint8_t capability;
 DECL|channel_map|member|uint8_t channel_map;
 DECL|clock_accuracy|member|uint8_t clock_accuracy;
+DECL|clock_offset|member|uint16_t clock_offset;
 DECL|clock_offset|member|uint16_t clock_offset;
 DECL|clock_offset|member|uint16_t clock_offset;
 DECL|clock_offset|member|uint16_t clock_offset;
@@ -487,6 +503,7 @@ DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mode|member|uint8_t mode;
 DECL|mode|member|uint8_t mode;
+DECL|name|member|uint8_t name[248];
 DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
@@ -510,6 +527,7 @@ DECL|plaintext|member|uint8_t plaintext[16];
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
+DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint64_t rand;
 DECL|rand|member|uint8_t rand[8];
@@ -518,6 +536,7 @@ DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
+DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
@@ -533,6 +552,8 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
