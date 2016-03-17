@@ -1,9 +1,12 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
+DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
+DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
 DECL|EVT_BUF_SIZE|macro|EVT_BUF_SIZE
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
@@ -41,16 +44,19 @@ DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
+DECL|clock_offset|member|uint16_t clock_offset;
 DECL|cmd_data|struct|struct cmd_data {
 DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|discovery_cb|variable|discovery_cb
+DECL|discovery_priv|struct|struct discovery_priv {
 DECL|discovery_results_count|variable|discovery_results_count
 DECL|discovery_results_full|function|static void discovery_results_full(void)
 DECL|discovery_results_size|variable|discovery_results_size
 DECL|discovery_results|variable|discovery_results
+DECL|eir_has_name|function|static bool eir_has_name(const uint8_t *eir)
 DECL|extended_inquiry_result|function|static void extended_inquiry_result(struct net_buf *buf)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|get_result_slot|function|static struct bt_br_discovery_result *get_result_slot(const bt_addr_t *addr)
@@ -99,6 +105,7 @@ DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
 DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
 DECL|prng|variable|prng
+DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
@@ -107,8 +114,11 @@ DECL|read_local_features_complete|function|static void read_local_features_compl
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
 DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
 DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
+DECL|remote_name_request_complete|function|static void remote_name_request_complete(struct net_buf *buf)
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|report_discovery_results|function|static void report_discovery_results(void)
+DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
+DECL|resolving|member|uint8_t resolving;
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)

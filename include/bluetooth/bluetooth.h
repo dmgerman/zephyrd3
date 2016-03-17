@@ -31,6 +31,7 @@ DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval;
 DECL|limited_discovery|member|bool limited_discovery;
+DECL|private|member|uint8_t private[4];
 DECL|rssi|member|int8_t rssi;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
