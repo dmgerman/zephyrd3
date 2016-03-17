@@ -73,6 +73,8 @@ DECL|data|member|uint8_t data[31];
 DECL|debug_params|struct|struct debug_params {
 DECL|debug_response|struct|struct debug_response {
 DECL|delta_dBm|member|uint8_t delta_dBm;
+DECL|distance|member|float distance;
+DECL|distance|member|uint8_t distance;
 DECL|enc_link_sec|member|struct nble_link_sec enc_link_sec;
 DECL|enc_size|member|uint8_t enc_size;
 DECL|error|member|uint16_t error;
@@ -102,6 +104,7 @@ DECL|map|member|uint8_t map[5];
 DECL|min_count|member|uint8_t min_count;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
+DECL|nble_gap_ad_data_params|struct|struct nble_gap_ad_data_params {
 DECL|nble_gap_adv_params|struct|struct nble_gap_adv_params {
 DECL|nble_gap_adv_report_evt|struct|struct nble_gap_adv_report_evt {
 DECL|nble_gap_channel_map|struct|struct nble_gap_channel_map {
@@ -146,6 +149,8 @@ DECL|nble_service_write_response|struct|struct nble_service_write_response {
 DECL|nble_set_bda_cb_t|typedef|typedef void (*nble_set_bda_cb_t)(int status, void *user_data);
 DECL|nble_set_bda_params|struct|struct nble_set_bda_params {
 DECL|nble_set_bda_rsp|struct|struct nble_set_bda_rsp {
+DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
+DECL|nble_uas_rssi_calibrate|struct|struct nble_uas_rssi_calibrate {
 DECL|nble_version_response|struct|struct nble_version_response {
 DECL|oob_present|member|uint8_t oob_present;
 DECL|oob|member|uint8_t oob[16];
