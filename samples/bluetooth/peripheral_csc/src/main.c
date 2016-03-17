@@ -69,7 +69,6 @@ DECL|data|member|uint8_t data[];
 DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flags|member|uint8_t flags;
-DECL|gap_attrs|variable|gap_attrs
 DECL|lcet|member|uint16_t lcet;
 DECL|lcet|variable|lcet
 DECL|location|member|uint8_t location;
@@ -79,10 +78,8 @@ DECL|mainloop|function|void mainloop(void)
 DECL|measurement_nfy|function|static void measurement_nfy(struct bt_conn *conn, uint32_t cwr, uint16_t lwet, uint16_t ccr, uint16_t lcet)
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
-DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_device_name|function|static ssize_t read_device_name(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_manuf|function|static ssize_t read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_model|function|static ssize_t read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)

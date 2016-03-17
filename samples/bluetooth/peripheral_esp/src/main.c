@@ -51,7 +51,6 @@ DECL|ess_attrs|variable|ess_attrs
 DECL|ess_simulate|function|static void ess_simulate(void)
 DECL|flags|member|uint16_t flags; /* Reserved for Future Use */
 DECL|flags|member|uint16_t flags; /* Reserved for Future Use */
-DECL|gap_attrs|variable|gap_attrs
 DECL|humid_value|member|int16_t humid_value;
 DECL|humidity_sensor|struct|struct humidity_sensor {
 DECL|int_to_le24|function|static inline void int_to_le24(uint32_t value, uint8_t *u24)
@@ -65,7 +64,6 @@ DECL|measurement_uncertainty|member|uint8_t measurement_uncertainty;
 DECL|meas|member|struct es_measurement meas;
 DECL|meas|member|struct es_measurement meas;
 DECL|operand|member|uint8_t operand[];
-DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_es_measurement_rp|struct|struct read_es_measurement_rp {
 DECL|read_es_measurement|function|static ssize_t read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)

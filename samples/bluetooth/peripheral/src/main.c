@@ -23,7 +23,6 @@ DECL|data|member|uint8_t data[MAX_DATA];
 DECL|dis_attrs|variable|dis_attrs
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
-DECL|gap_attrs|variable|gap_attrs
 DECL|generate_current_time|function|static void generate_current_time(uint8_t *buf)
 DECL|heartrate|variable|heartrate
 DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
@@ -33,14 +32,12 @@ DECL|ind_params|variable|ind_params
 DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,int err)
 DECL|indicating|variable|indicating
 DECL|mainloop|function|void mainloop(void)
-DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blsc|function|static ssize_t read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_blvl|function|static ssize_t read_blvl(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_ct|function|static ssize_t read_ct(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_manuf|function|static ssize_t read_manuf(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_model|function|static ssize_t read_model(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_name|function|static ssize_t read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_signed|function|static ssize_t read_signed(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
