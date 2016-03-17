@@ -7,10 +7,6 @@ DECL|MAC_MAX_PAYLOAD|macro|MAC_MAX_PAYLOAD
 DECL|PACKETBUF_HC1_DISPATCH|macro|PACKETBUF_HC1_DISPATCH
 DECL|PACKETBUF_HC1_PTR|macro|PACKETBUF_HC1_PTR
 DECL|PACKETBUF_IPHC_BUF|macro|PACKETBUF_IPHC_BUF
-DECL|PRINTFI|macro|PRINTFI
-DECL|PRINTFI|macro|PRINTFI
-DECL|PRINTFO|macro|PRINTFO
-DECL|PRINTFO|macro|PRINTFO
 DECL|PRINTPACKETBUF|macro|PRINTPACKETBUF
 DECL|PRINTPACKETBUF|macro|PRINTPACKETBUF
 DECL|PRINTSICSLOWPANBUF|macro|PRINTSICSLOWPANBUF
@@ -39,7 +35,6 @@ DECL|context|variable|context
 DECL|init|function|static void init(void)
 DECL|iphc_ptr|variable|iphc_ptr
 DECL|llprefix|variable|llprefix
-DECL|p|variable|p
 DECL|sicslowpan_buf|macro|sicslowpan_buf
 DECL|sicslowpan_compression|variable|sicslowpan_compression
 DECL|sicslowpan_len|macro|sicslowpan_len

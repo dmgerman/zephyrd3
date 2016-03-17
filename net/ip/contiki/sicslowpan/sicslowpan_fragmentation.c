@@ -5,10 +5,6 @@ DECL|MAC_MAX_PAYLOAD|macro|MAC_MAX_PAYLOAD
 DECL|PACKETBUF_FRAG_DISPATCH_SIZE|macro|PACKETBUF_FRAG_DISPATCH_SIZE
 DECL|PACKETBUF_FRAG_OFFSET|macro|PACKETBUF_FRAG_OFFSET
 DECL|PACKETBUF_FRAG_TAG|macro|PACKETBUF_FRAG_TAG
-DECL|PRINTFI|macro|PRINTFI
-DECL|PRINTFI|macro|PRINTFI
-DECL|PRINTFO|macro|PRINTFO
-DECL|PRINTFO|macro|PRINTFO
 DECL|PRINTPACKETBUF|macro|PRINTPACKETBUF
 DECL|PRINTPACKETBUF|macro|PRINTPACKETBUF
 DECL|PRINTSICSLOWPANBUF|macro|PRINTSICSLOWPANBUF
@@ -49,7 +45,6 @@ DECL|len|member|uint8_t len;
 DECL|my_tag|variable|my_tag
 DECL|offset|member|uint8_t offset;
 DECL|packet_sent|function|packet_sent(struct net_buf *buf, void *ptr, int status, int transmissions)
-DECL|p|variable|p
 DECL|reass_timer|member|struct timer reass_timer;
 DECL|reassembled_len|member|uint16_t reassembled_len;
 DECL|reassemble|function|static int reassemble(struct net_buf *mbuf)
