@@ -103,6 +103,7 @@ DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_compl
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|le_set_nrpa|function|static int le_set_nrpa(void)
 DECL|le_set_rpa|function|static int le_set_rpa(void)
+DECL|link_encr|function|static void link_encr(const uint16_t handle)
 DECL|link_key_neg_reply|function|static void link_key_neg_reply(const bt_addr_t *bdaddr)
 DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
 DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr, const uint8_t *lk)

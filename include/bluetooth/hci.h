@@ -151,6 +151,7 @@ DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_REMOTE_NAME_CANCEL|macro|BT_HCI_OP_REMOTE_NAME_CANCEL
 DECL|BT_HCI_OP_REMOTE_NAME_REQUEST|macro|BT_HCI_OP_REMOTE_NAME_REQUEST
 DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
+DECL|BT_HCI_OP_SET_CONN_ENCRYPT|macro|BT_HCI_OP_SET_CONN_ENCRYPT
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
 DECL|BT_HCI_OP_USER_CONFIRM_NEG_REPLY|macro|BT_HCI_OP_USER_CONFIRM_NEG_REPLY
@@ -194,6 +195,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -373,6 +375,7 @@ DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
+DECL|bt_hci_cp_set_conn_encrypt|struct|struct bt_hci_cp_set_conn_encrypt {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
 DECL|bt_hci_cp_user_passkey_neg_reply|struct|struct bt_hci_cp_user_passkey_neg_reply {
@@ -460,6 +463,7 @@ DECL|enable|member|uint8_t enable;
 DECL|enc_data|member|uint8_t enc_data[16];
 DECL|encr_enabled|member|uint8_t encr_enabled;
 DECL|encrypt|member|uint8_t encrypt;
+DECL|encrypt|member|uint8_t encrypt;
 DECL|events|member|uint8_t events[8];
 DECL|events|member|uint8_t events[8];
 DECL|evt_type|member|uint8_t evt_type;
@@ -471,6 +475,7 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
