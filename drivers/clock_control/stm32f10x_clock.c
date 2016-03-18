@@ -3,6 +3,7 @@ DECL|__apb_prescaler|function|static int __apb_prescaler(int prescaler)
 DECL|__get_ahb_clock|function|uint32_t __get_ahb_clock(uint32_t sysclk)
 DECL|__get_apb_clock|function|uint32_t __get_apb_clock(uint32_t ahb_clock, uint32_t prescaler)
 DECL|__pllmul|function|static int __pllmul(int mul)
+DECL|__setup_flash|function|static inline void __setup_flash(void)
 DECL|base|member|uint8_t *base;
 DECL|map_reg_val|function|int map_reg_val(const struct regval_map *map, size_t cnt, int val)
 DECL|regval_map|struct|struct regval_map {
