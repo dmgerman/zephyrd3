@@ -10,6 +10,7 @@ DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
+DECL|auth_complete|function|static void auth_complete(struct net_buf *buf)
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
