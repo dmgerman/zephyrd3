@@ -38,6 +38,7 @@ DECL|attr_type|member|uint16_t attr_type;
 DECL|attr_type|member|uint16_t attr_type;
 DECL|auth_level|member|uint8_t auth_level;
 DECL|authorization|member|uint8_t authorization;
+DECL|auth|member|const struct bt_conn_auth_cb *auth;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bd|member|bt_addr_le_t bd;
