@@ -2,6 +2,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
+DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
