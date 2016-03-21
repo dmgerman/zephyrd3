@@ -29,6 +29,7 @@ DECL|active|member|uint8_t active;
 DECL|addr_count|member|uint8_t addr_count;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|addr|member|bt_addr_le_t addr;
 DECL|adv_type|member|uint8_t adv_type;
 DECL|ad|member|struct bt_eir_data ad;
 DECL|appearance|member|uint16_t appearance;
@@ -152,6 +153,7 @@ DECL|nble_set_bda_rsp|struct|struct nble_set_bda_rsp {
 DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
 DECL|nble_uas_rssi_calibrate|struct|struct nble_uas_rssi_calibrate {
 DECL|nble_version_response|struct|struct nble_version_response {
+DECL|nble|struct|struct nble {
 DECL|oob_present|member|uint8_t oob_present;
 DECL|oob|member|uint8_t oob[16];
 DECL|op_code|member|uint8_t op_code;

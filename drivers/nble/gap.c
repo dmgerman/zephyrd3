@@ -20,8 +20,8 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
 DECL|compatibe_firmware|variable|compatibe_firmware
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
-DECL|nble_bdaddr|variable|nble_bdaddr
 DECL|nble_log|function|void nble_log(const struct nble_log_s *param, char *format, uint8_t len)
+DECL|nble|variable|nble
 DECL|on_nble_common_rsp|function|void on_nble_common_rsp(const struct nble_response *rsp)
 DECL|on_nble_gap_adv_report_evt|function|void on_nble_gap_adv_report_evt(const struct nble_gap_adv_report_evt *evt,const uint8_t *buf, uint8_t len)
 DECL|on_nble_gap_read_bda_rsp|function|void on_nble_gap_read_bda_rsp(const struct nble_service_read_bda_response *rsp)
