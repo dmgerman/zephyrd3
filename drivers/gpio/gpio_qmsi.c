@@ -17,7 +17,7 @@ DECL|gpio_qmsi_resume_port|function|static inline int gpio_qmsi_resume_port(stru
 DECL|gpio_qmsi_runtime|struct|struct gpio_qmsi_runtime {
 DECL|gpio_qmsi_set_callback|function|static inline int gpio_qmsi_set_callback(struct device *port, gpio_callback_t callback)
 DECL|gpio_qmsi_suspend_port|function|static inline int gpio_qmsi_suspend_port(struct device *port)
-DECL|gpio_qmsi_write|function|static inline int gpio_qmsi_write(struct device *port, int access_op,uint32_t pin, uint32_t value)
+DECL|gpio_qmsi_write|function|static inline int gpio_qmsi_write(struct device *port, int access_op, uint32_t pin, uint32_t value)
 DECL|gpio|member|qm_gpio_t gpio;
 DECL|num_pins|member|uint8_t num_pins;
 DECL|pin_callbacks|member|uint32_t pin_callbacks;
