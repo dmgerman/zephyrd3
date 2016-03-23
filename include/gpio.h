@@ -26,11 +26,16 @@ DECL|__GPIO_H__|macro|__GPIO_H__
 DECL|config|member|gpio_config_t config;
 DECL|disable_callback|member|gpio_disable_callback_t disable_callback;
 DECL|enable_callback|member|gpio_enable_callback_t enable_callback;
+DECL|gpio_add_callback|function|static inline int gpio_add_callback(struct device *port, struct gpio_callback *callback)
+DECL|gpio_callback_handler_t|typedef|typedef void (*gpio_callback_handler_t)(struct device *port,
 DECL|gpio_callback_t|typedef|typedef void (*gpio_callback_t)(struct device *port, uint32_t pin);
+DECL|gpio_callback|struct|struct gpio_callback {
 DECL|gpio_config_t|typedef|typedef int (*gpio_config_t)(struct device *port, int access_op,
 DECL|gpio_disable_callback_t|typedef|typedef int (*gpio_disable_callback_t)(struct device *port,
 DECL|gpio_driver_api|struct|struct gpio_driver_api {
 DECL|gpio_enable_callback_t|typedef|typedef int (*gpio_enable_callback_t)(struct device *port,
+DECL|gpio_init_callback|function|static inline void gpio_init_callback(struct gpio_callback *callback, gpio_callback_handler_t handler, uint32_t pin_mask)
+DECL|gpio_manage_callback_t|typedef|typedef int (*gpio_manage_callback_t)(struct device *port,
 DECL|gpio_pin_configure|function|static inline int gpio_pin_configure(struct device *port, uint8_t pin, int flags)
 DECL|gpio_pin_disable_callback|function|static inline int gpio_pin_disable_callback(struct device *port, uint32_t pin)
 DECL|gpio_pin_enable_callback|function|static inline int gpio_pin_enable_callback(struct device *port, uint32_t pin)
@@ -42,9 +47,11 @@ DECL|gpio_port_enable_callback|function|static inline int gpio_port_enable_callb
 DECL|gpio_port_read|function|static inline int gpio_port_read(struct device *port, uint32_t *value)
 DECL|gpio_port_write|function|static inline int gpio_port_write(struct device *port, uint32_t value)
 DECL|gpio_read_t|typedef|typedef int (*gpio_read_t)(struct device *port, int access_op,
-DECL|gpio_set_callback_t|typedef|typedef int (*gpio_set_callback_t)(struct device *port,
-DECL|gpio_set_callback|function|static inline int gpio_set_callback(struct device *port, gpio_callback_t callback)
+DECL|gpio_remove_callback|function|static inline int gpio_remove_callback(struct device *port, struct gpio_callback *callback)
 DECL|gpio_write_t|typedef|typedef int (*gpio_write_t)(struct device *port, int access_op,
+DECL|handler|member|gpio_callback_handler_t handler;
+DECL|manage_callback|member|gpio_manage_callback_t manage_callback;
+DECL|node|member|sys_snode_t node;
+DECL|pin_mask|member|uint32_t pin_mask;
 DECL|read|member|gpio_read_t read;
-DECL|set_callback|member|gpio_set_callback_t set_callback;
 DECL|write|member|gpio_write_t write;

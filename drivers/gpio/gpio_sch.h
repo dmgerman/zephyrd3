@@ -10,7 +10,7 @@ DECL|GPIO_SCH_REG_GTPE|macro|GPIO_SCH_REG_GTPE
 DECL|GPIO_SCH_REG_GTS|macro|GPIO_SCH_REG_GTS
 DECL|__GPIO_SCH_H__|macro|__GPIO_SCH_H__
 DECL|bits|member|uint8_t bits;
-DECL|callback|member|gpio_callback_t callback;
+DECL|callbacks|member|sys_slist_t callbacks;
 DECL|cb_enabled|member|uint32_t cb_enabled;
 DECL|gpio_sch_config|struct|struct gpio_sch_config {
 DECL|gpio_sch_data|struct|struct gpio_sch_data {
@@ -20,7 +20,6 @@ DECL|int_regs|member|} int_regs;
 DECL|poll_timer|member|struct nano_timer poll_timer;
 DECL|polling_stack|member|char __stack polling_stack[GPIO_SCH_POLLING_STACK_SIZE];
 DECL|poll|member|uint8_t poll;
-DECL|port_cb|member|uint8_t port_cb;
 DECL|regs|member|uint32_t regs;
-DECL|stride|member|uint8_t stride[2];
+DECL|stride|member|uint8_t stride[3];
 DECL|stride|member|uint8_t stride[3];
