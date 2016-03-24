@@ -2,6 +2,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|add_subscriptions|function|static void add_subscriptions(struct bt_conn *conn)
 DECL|att_find_info_rsp|function|static void att_find_info_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|att_find_info|function|static int att_find_info(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|att_find_type_rsp|function|static void att_find_type_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
