@@ -44,7 +44,5 @@ DECL|gpio_pcal9535a_drv_api_funcs|variable|gpio_pcal9535a_drv_api_funcs
 DECL|gpio_pcal9535a_enable_callback|function|static int gpio_pcal9535a_enable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_pcal9535a_init|function|int gpio_pcal9535a_init(struct device *dev)
 DECL|gpio_pcal9535a_read|function|static int gpio_pcal9535a_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_pcal9535a_resume_port|function|static int gpio_pcal9535a_resume_port(struct device *dev)
 DECL|gpio_pcal9535a_set_callback|function|static int gpio_pcal9535a_set_callback(struct device *dev, gpio_callback_t callback)
-DECL|gpio_pcal9535a_suspend_port|function|static int gpio_pcal9535a_suspend_port(struct device *dev)
 DECL|gpio_pcal9535a_write|function|static int gpio_pcal9535a_write(struct device *dev, int access_op,uint32_t pin, uint32_t value)

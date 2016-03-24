@@ -42,15 +42,9 @@ DECL|gpio_port_enable_callback|function|static inline int gpio_port_enable_callb
 DECL|gpio_port_read|function|static inline int gpio_port_read(struct device *port, uint32_t *value)
 DECL|gpio_port_write|function|static inline int gpio_port_write(struct device *port, uint32_t value)
 DECL|gpio_read_t|typedef|typedef int (*gpio_read_t)(struct device *port, int access_op,
-DECL|gpio_resume_port_t|typedef|typedef int (*gpio_resume_port_t)(struct device *port);
-DECL|gpio_resume|function|static inline int gpio_resume(struct device *port)
 DECL|gpio_set_callback_t|typedef|typedef int (*gpio_set_callback_t)(struct device *port,
 DECL|gpio_set_callback|function|static inline int gpio_set_callback(struct device *port, gpio_callback_t callback)
-DECL|gpio_suspend_port_t|typedef|typedef int (*gpio_suspend_port_t)(struct device *port);
-DECL|gpio_suspend|function|static inline int gpio_suspend(struct device *port)
 DECL|gpio_write_t|typedef|typedef int (*gpio_write_t)(struct device *port, int access_op,
 DECL|read|member|gpio_read_t read;
-DECL|resume|member|gpio_resume_port_t resume;
 DECL|set_callback|member|gpio_set_callback_t set_callback;
-DECL|suspend|member|gpio_suspend_port_t suspend;
 DECL|write|member|gpio_write_t write;

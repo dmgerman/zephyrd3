@@ -19,8 +19,6 @@ DECL|gpio_sam3_enable_callback|function|static int gpio_sam3_enable_callback(str
 DECL|gpio_sam3_init|function|int gpio_sam3_init(struct device *dev)
 DECL|gpio_sam3_isr|function|static void gpio_sam3_isr(void *arg)
 DECL|gpio_sam3_read|function|static int gpio_sam3_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_sam3_resume_port|function|static int gpio_sam3_resume_port(struct device *dev)
 DECL|gpio_sam3_set_callback|function|static int gpio_sam3_set_callback(struct device *dev, gpio_callback_t callback)
-DECL|gpio_sam3_suspend_port|function|static int gpio_sam3_suspend_port(struct device *dev)
 DECL|gpio_sam3_write|function|static int gpio_sam3_write(struct device *dev, int access_op, uint32_t pin, uint32_t value)
 DECL|port|member|volatile struct __pio *port;

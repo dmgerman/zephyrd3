@@ -27,7 +27,5 @@ DECL|gpio_sch_disable_callback|function|static int gpio_sch_disable_callback(str
 DECL|gpio_sch_enable_callback|function|static int gpio_sch_enable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_sch_init|function|int gpio_sch_init(struct device *dev)
 DECL|gpio_sch_read|function|static int gpio_sch_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_sch_resume|function|static int gpio_sch_resume(struct device *dev)
 DECL|gpio_sch_set_callback|function|static int gpio_sch_set_callback(struct device *dev, gpio_callback_t callback)
-DECL|gpio_sch_suspend|function|static int gpio_sch_suspend(struct device *dev)
 DECL|gpio_sch_write|function|static int gpio_sch_write(struct device *dev, int access_op, uint32_t pin, uint32_t value)
