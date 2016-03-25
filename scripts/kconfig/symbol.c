@@ -1,3 +1,4 @@
+DECL|PREFER_LATER_DEFAULTS|macro|PREFER_LATER_DEFAULTS
 DECL|check_top|variable|check_top
 DECL|dep_stack_insert|function|static void dep_stack_insert(struct dep_stack *stack, struct symbol *sym)
 DECL|dep_stack_remove|function|static void dep_stack_remove(void)
@@ -37,6 +38,7 @@ DECL|sym_escape_string_value|function|const char *sym_escape_string_value(const 
 DECL|sym_expand_string_value|function|const char *sym_expand_string_value(const char *in)
 DECL|sym_find|function|struct symbol *sym_find(const char *name)
 DECL|sym_get_choice_prop|function|struct property *sym_get_choice_prop(struct symbol *sym)
+DECL|sym_get_default_prop|function|struct property *sym_get_default_prop(struct symbol *sym)
 DECL|sym_get_default_prop|function|struct property *sym_get_default_prop(struct symbol *sym)
 DECL|sym_get_env_prop|function|struct property *sym_get_env_prop(struct symbol *sym)
 DECL|sym_get_range_prop|function|static struct property *sym_get_range_prop(struct symbol *sym)
