@@ -1,3 +1,4 @@
+DECL|DEBUG_PRINT_DEFAULTS|macro|DEBUG_PRINT_DEFAULTS
 DECL|_menu_init|function|void _menu_init(void)
 DECL|current_file|variable|current_file
 DECL|file_list|variable|file_list
