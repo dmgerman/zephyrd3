@@ -1,0 +1,1 @@
+DECL|__QM_POWER_H__|macro|__QM_POWER_H__

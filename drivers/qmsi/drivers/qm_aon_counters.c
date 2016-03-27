@@ -1,0 +1,12 @@
+DECL|callback|variable|callback
+DECL|pt_reset|function|static void pt_reset(const qm_scss_aon_t aonc)
+DECL|qm_aonc_disable|function|qm_rc_t qm_aonc_disable(const qm_scss_aon_t aonc)
+DECL|qm_aonc_enable|function|qm_rc_t qm_aonc_enable(const qm_scss_aon_t aonc)
+DECL|qm_aonc_get_value|function|uint32_t qm_aonc_get_value(const qm_scss_aon_t aonc)
+DECL|qm_aonpt_clear|function|qm_rc_t qm_aonpt_clear(const qm_scss_aon_t aonc)
+DECL|qm_aonpt_get_config|function|qm_rc_t qm_aonpt_get_config(const qm_scss_aon_t aonc, qm_aonpt_config_t *const cfg)
+DECL|qm_aonpt_get_status|function|bool qm_aonpt_get_status(const qm_scss_aon_t aonc)
+DECL|qm_aonpt_get_value|function|uint32_t qm_aonpt_get_value(const qm_scss_aon_t aonc)
+DECL|qm_aonpt_isr_0|function|void qm_aonpt_isr_0(void)
+DECL|qm_aonpt_reset|function|qm_rc_t qm_aonpt_reset(const qm_scss_aon_t aonc)
+DECL|qm_aonpt_set_config|function|qm_rc_t qm_aonpt_set_config(const qm_scss_aon_t aonc, const qm_aonpt_config_t *const cfg)
