@@ -1,6 +1,5 @@
 DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
 DECL|INVALID_DATA|macro|INVALID_DATA
-DECL|ISR_FIFO_INFO|typedef|} ISR_FIFO_INFO;
 DECL|NUM_FIFO_ELEMENT|macro|NUM_FIFO_ELEMENT
 DECL|TCERR1|macro|TCERR1
 DECL|TCERR2|macro|TCERR2
@@ -18,6 +17,7 @@ DECL|fifo_ptr|member|struct nano_fifo *fifo_ptr; /* FIFO */
 DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrFifoInfo|variable|isrFifoInfo
 DECL|isr_fifo_get|function|void isr_fifo_get(void *parameter)
+DECL|isr_fifo_info|struct|struct isr_fifo_info {
 DECL|isr_fifo_put|function|void isr_fifo_put(void *parameter)
 DECL|main|function|void main(void)
 DECL|myFifoData1|variable|myFifoData1
