@@ -33,6 +33,9 @@ DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;
 DECL|tail|member|void *tail;
+DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
+DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
+DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
 DECL|tcs|member|struct tcs *tcs;
 DECL|timeout_data|member|struct _nano_timeout timeout_data;
 DECL|user_data_backup|member|void *user_data_backup;
@@ -40,4 +43,4 @@ DECL|user_data|member|void *user_data;
 DECL|wait_q|member|struct _nano_queue *wait_q;
 DECL|wait_q|member|struct _nano_queue wait_q;
 DECL|wait_q|member|struct _nano_queue wait_q;
-DECL|wait_q|member|struct _nano_queue wait_q;
+DECL|wait_q|member|struct _nano_queue wait_q; /* waiting fibers */
