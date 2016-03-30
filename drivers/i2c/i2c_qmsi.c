@@ -4,6 +4,7 @@ DECL|api|variable|api
 DECL|complete_cb|function|static void complete_cb(uint32_t id, uint32_t len)
 DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
+DECL|default_cfg|member|union dev_config default_cfg;
 DECL|driver_data_0|variable|driver_data_0
 DECL|driver_data_1|variable|driver_data_1
 DECL|err_cb|function|static void err_cb(uint32_t id, qm_i2c_status_t status)
