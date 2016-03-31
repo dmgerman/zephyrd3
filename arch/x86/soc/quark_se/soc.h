@@ -48,7 +48,9 @@ DECL|UART_NS16550_PORT_0_IRQ|macro|UART_NS16550_PORT_0_IRQ
 DECL|UART_NS16550_PORT_1_BASE_ADDR|macro|UART_NS16550_PORT_1_BASE_ADDR
 DECL|UART_NS16550_PORT_1_CLK_FREQ|macro|UART_NS16550_PORT_1_CLK_FREQ
 DECL|UART_NS16550_PORT_1_IRQ|macro|UART_NS16550_PORT_1_IRQ
+DECL|WDT_DW_BASE_ADDR|macro|WDT_DW_BASE_ADDR
 DECL|WDT_DW_INT_MASK|macro|WDT_DW_INT_MASK
+DECL|WDT_DW_IRQ|macro|WDT_DW_IRQ
 DECL|__SOC_H_|macro|__SOC_H_
 DECL|ccu_ext_clock_ctl|member|volatile uint32_t ccu_ext_clock_ctl; /**< External Clock Control Register */
 DECL|ccu_gpio_db_clk_ctl|member|ccu_gpio_db_clk_ctl; /**< Peripheral Clock Divider Control 1 */
