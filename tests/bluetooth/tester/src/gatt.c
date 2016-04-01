@@ -1,24 +1,25 @@
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|GATT_PERM_ENC_READ_MASK|macro|GATT_PERM_ENC_READ_MASK
 DECL|GATT_PERM_ENC_WRITE_MASK|macro|GATT_PERM_ENC_WRITE_MASK
+DECL|LAST_DB_ATTR|macro|LAST_DB_ATTR
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
 DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
 DECL|SERVER_MAX_ATTRIBUTES|macro|SERVER_MAX_ATTRIBUTES
-DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr_chrc)
+DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr)
 DECL|add_cep|function|static struct bt_gatt_attr *add_cep(const struct bt_gatt_attr *attr_chrc)
-DECL|add_characteristic_cb|function|static uint8_t add_characteristic_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_characteristic|function|static void add_characteristic(uint8_t *data, uint16_t len)
 DECL|add_characteristic|struct|struct add_characteristic {
-DECL|add_descriptor_cb|function|static uint8_t add_descriptor_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_descriptor|function|static void add_descriptor(uint8_t *data, uint16_t len)
 DECL|add_descriptor|struct|struct add_descriptor {
-DECL|add_included_cb|function|static uint8_t add_included_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
+DECL|alloc_characteristic|function|static int alloc_characteristic(struct add_characteristic *ch)
+DECL|alloc_descriptor|function|static int alloc_descriptor(const struct bt_gatt_attr *attr, struct add_descriptor *d)
+DECL|alloc_included|function|static int alloc_included(const struct bt_gatt_attr *attr, uint16_t *included_service_id, uint16_t svc_handle)
+DECL|alloc_value|function|static uint8_t alloc_value(struct bt_gatt_attr *attr, struct set_value *data)
+DECL|attr_count|variable|attr_count
 DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_t len, struct bt_uuid *bt_uuid)
 DECL|btp_opcode|variable|btp_opcode
-DECL|btp_status|member|uint8_t btp_status;
-DECL|btp_status|member|uint8_t btp_status;
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc_added|variable|ccc_added
 DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
@@ -54,9 +55,8 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
-DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
+DECL|get_service_end_handle|function|static void get_service_end_handle(const struct bt_gatt_attr *attr, struct bt_gatt_include *include, uint16_t svc_start_handle)
 DECL|has_ccc|member|bool has_ccc;
-DECL|key_size|member|uint8_t key_size;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
@@ -77,20 +77,21 @@ DECL|server_buf_push|macro|server_buf_push
 DECL|server_buf|variable|server_buf
 DECL|server_db|variable|server_db
 DECL|server_fifo|variable|server_fifo
+DECL|set_attr_enc_key_size|function|static int set_attr_enc_key_size(const struct bt_gatt_attr *attr, uint8_t key_size)
 DECL|set_cep_value|function|static uint8_t set_cep_value(struct bt_gatt_attr *attr, const void *value, const uint16_t len)
-DECL|set_enc_key_size_cb|function|static uint8_t set_enc_key_size_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)
-DECL|set_enc_key_size|struct|struct set_enc_key_size {
-DECL|set_value_cb|function|static uint8_t set_value_cb(struct bt_gatt_attr *attr, void *user_data)
 DECL|set_value|function|static void set_value(uint8_t *data, uint16_t len)
 DECL|set_value|struct|struct set_value {
 DECL|start_server|function|static void start_server(uint8_t *data, uint16_t len)
 DECL|subscribe_params|variable|subscribe_params
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
+DECL|svc_attr_count|variable|svc_attr_count
+DECL|svc_count|variable|svc_count
 DECL|tester_handle_gatt|function|void tester_handle_gatt(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
 DECL|tester_init_gatt|function|uint8_t tester_init_gatt(void)
 DECL|u128|member|struct bt_uuid_128 u128;
 DECL|u16|member|struct bt_uuid_16 u16;
+DECL|update_incl_svc_offset|function|static void update_incl_svc_offset(uint16_t db_attr_off)
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid uuid;
