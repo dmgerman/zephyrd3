@@ -8,9 +8,6 @@ DECL|BT_SMP_IO_NO_INPUT_OUTPUT|macro|BT_SMP_IO_NO_INPUT_OUTPUT
 DECL|BT_SMP_MAX_ENC_KEY_SIZE|macro|BT_SMP_MAX_ENC_KEY_SIZE
 DECL|BT_SMP_OOB_NOT_PRESENT|macro|BT_SMP_OOB_NOT_PRESENT
 DECL|BT_SMP_OOB_PRESENT|macro|BT_SMP_OOB_PRESENT
-DECL|NBLE_BTWAKE_PIN|macro|NBLE_BTWAKE_PIN
-DECL|NBLE_RESET_PIN|macro|NBLE_RESET_PIN
-DECL|NBLE_SWDIO_PIN|macro|NBLE_SWDIO_PIN
 DECL|bt_addr_le_str|function|static const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
