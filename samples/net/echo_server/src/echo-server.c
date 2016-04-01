@@ -7,13 +7,15 @@ DECL|PRINT|macro|PRINT
 DECL|PRINT|macro|PRINT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TICKS|macro|WAIT_TICKS
+DECL|WAIT_TICKS|macro|WAIT_TICKS
+DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|fiberStack|variable|fiberStack
-DECL|get_context|function|static inline bool get_context(struct net_context **recv, struct net_context **mcast_recv)
+DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv, struct net_context **tcp_recv, struct net_context **mcast_recv)
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_my|variable|in6addr_my
 DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
-DECL|prepare_reply|function|static inline struct net_buf *prepare_reply(const char *name, const char *type, struct net_buf *buf)
-DECL|receive_and_reply|function|static inline void receive_and_reply(const char *name, struct net_context *recv, struct net_context *mcast_recv)
+DECL|prepare_reply|function|static inline struct net_buf *prepare_reply(const char *name, const char *type, struct net_buf *buf, int proto)
+DECL|receive_and_reply|function|static inline void receive_and_reply(const char *name, struct net_context *udp_recv, struct net_context *tcp_recv, struct net_context *mcast_recv)
 DECL|receive|function|void receive(void)
 DECL|reverse|function|static inline void reverse(unsigned char *buf, int len)
