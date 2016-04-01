@@ -42,6 +42,7 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
+DECL|bt_register_storage|function|void bt_register_storage(struct bt_storage *bt_storage)
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
 DECL|clock_offset|member|uint16_t clock_offset;
@@ -131,6 +132,7 @@ DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|set_random_address_complete|function|static void set_random_address_complete(struct net_buf *buf)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
+DECL|storage|variable|storage
 DECL|sync|member|void *sync;
 DECL|update_conn_param|function|static int update_conn_param(struct bt_conn *conn)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)

@@ -18,6 +18,7 @@ DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
+DECL|bt_register_storage|function|void bt_register_storage(struct bt_storage *bt_storage)
 DECL|compatibe_firmware|variable|compatibe_firmware
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|nble_log|function|void nble_log(const struct nble_log_s *param, char *format, uint8_t len)
@@ -38,5 +39,6 @@ DECL|on_nble_up|function|void on_nble_up(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|send_dm_config|function|static void send_dm_config(void)
 DECL|set_ad|function|static int set_ad(struct bt_eir_data *eir, const struct bt_data *ad, size_t ad_len)
+DECL|storage|variable|storage
 DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
 DECL|valid_le_scan_param|function|static bool valid_le_scan_param(const struct bt_le_scan_param *param)
