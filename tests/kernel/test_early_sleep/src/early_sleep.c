@@ -5,7 +5,13 @@ DECL|STACKSIZE|macro|STACKSIZE
 DECL|TASK_TICKS_TO_SLEEP|macro|TASK_TICKS_TO_SLEEP
 DECL|alternate_task_run|variable|alternate_task_run
 DECL|fiber_actual_sleep_ticks|variable|fiber_actual_sleep_ticks
+DECL|task_actual_sleep_app_ticks|variable|task_actual_sleep_app_ticks
+DECL|task_actual_sleep_micro_ticks|variable|task_actual_sleep_micro_ticks
+DECL|task_actual_sleep_nano_ticks|variable|task_actual_sleep_nano_ticks
 DECL|task_actual_sleep_ticks|variable|task_actual_sleep_ticks
+DECL|test_early_task_sleep_in_application_level|function|static int test_early_task_sleep_in_application_level(struct device *unused)
+DECL|test_early_task_sleep_in_microkernel_level|function|static int test_early_task_sleep_in_microkernel_level(struct device *unused)
+DECL|test_early_task_sleep_in_nanokernel_level|function|static int test_early_task_sleep_in_nanokernel_level(struct device *unused)
 DECL|test_early_task_sleep|function|static int test_early_task_sleep(struct device *unused)
 DECL|test_fiber_sem|variable|test_fiber_sem
 DECL|test_fiber_sleep|function|int test_fiber_sleep(int ticks_to_sleep)
