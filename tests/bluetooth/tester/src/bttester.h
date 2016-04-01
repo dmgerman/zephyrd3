@@ -168,6 +168,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -268,6 +269,8 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|db_attr_cnt|member|uint8_t db_attr_cnt;
+DECL|db_attr_off|member|uint16_t db_attr_off;
 DECL|desc_id|member|uint16_t desc_id;
 DECL|descriptor_handle|member|uint16_t descriptor_handle;
 DECL|descriptors_count|member|uint8_t descriptors_count;
@@ -348,6 +351,7 @@ DECL|gatt_service|struct|struct gatt_service {
 DECL|gatt_set_enc_key_size_cmd|struct|struct gatt_set_enc_key_size_cmd {
 DECL|gatt_set_value_cmd|struct|struct gatt_set_value_cmd {
 DECL|gatt_signed_write_without_rsp_cmd|struct|struct gatt_signed_write_without_rsp_cmd {
+DECL|gatt_start_server_rp|struct|struct gatt_start_server_rp {
 DECL|gatt_write_cmd|struct|struct gatt_write_cmd {
 DECL|gatt_write_long_cmd|struct|struct gatt_write_long_cmd {
 DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
