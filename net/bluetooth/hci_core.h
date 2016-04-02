@@ -8,7 +8,7 @@ DECL|BT_DEV_READY|enumerator|BT_DEV_READY,
 DECL|BT_DEV_SCANNING|enumerator|BT_DEV_SCANNING,
 DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
 DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
-DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|adv_addr_type|member|uint8_t adv_addr_type;
 DECL|br|member|struct bt_dev_br br;
 DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
@@ -23,6 +23,7 @@ DECL|features|member|uint8_t features[8];
 DECL|flags|member|atomic_t flags[1];
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
+DECL|id_addr|member|bt_addr_le_t id_addr;
 DECL|le|member|struct bt_dev_le le;
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable
@@ -33,6 +34,7 @@ DECL|ncmd_sem|member|struct nano_sem ncmd_sem;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|pkts|member|struct nano_sem pkts;
 DECL|pkts|member|struct nano_sem pkts;
+DECL|random_addr|member|bt_addr_le_t random_addr;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;

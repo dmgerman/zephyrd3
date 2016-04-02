@@ -89,6 +89,7 @@ DECL|le_conn_param_neg_reply|function|static int le_conn_param_neg_reply(uint16_
 DECL|le_conn_param_req_reply|function|static int le_conn_param_req_reply(uint16_t handle, uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|le_conn_param_req|function|static int le_conn_param_req(struct net_buf *buf)
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct net_buf *buf)
+DECL|le_create_conn_status|function|static void le_create_conn_status(uint8_t status)
 DECL|le_dhkey_complete|function|static void le_dhkey_complete(struct net_buf *buf)
 DECL|le_init|function|static int le_init(void)
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
@@ -121,11 +122,13 @@ DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_
 DECL|resolving|member|uint8_t resolving;
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
+DECL|set_adv_param_complete|function|static void set_adv_param_complete(struct net_buf *buf)
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(void)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
 DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
+DECL|set_random_address_complete|function|static void set_random_address_complete(struct net_buf *buf)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|sync|member|void *sync;
