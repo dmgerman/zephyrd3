@@ -130,6 +130,7 @@ DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad
 DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|set_random_address_complete|function|static void set_random_address_complete(struct net_buf *buf)
+DECL|set_static_addr|function|static int set_static_addr(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|storage|variable|storage
