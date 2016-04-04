@@ -24,6 +24,7 @@ DECL|flags|member|atomic_t flags[1];
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|id_addr|member|bt_addr_le_t id_addr;
+DECL|irk|member|uint8_t irk[16];
 DECL|le|member|struct bt_dev_le le;
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable

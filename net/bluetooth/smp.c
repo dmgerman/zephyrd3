@@ -10,10 +10,11 @@ DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
 DECL|PASSKEY_ROLE|enumerator|PASSKEY_ROLE, /* Passkey Entry depends on role */
 DECL|RECV_KEYS_SC|macro|RECV_KEYS_SC
 DECL|RECV_KEYS|macro|RECV_KEYS
-DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS_SC|macro|SEND_KEYS_SC
 DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SEND_KEYS|macro|SEND_KEYS
+DECL|SIGN_DIST|macro|SIGN_DIST
+DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
@@ -36,7 +37,8 @@ DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_confirm|function|int bt_smp_auth_passkey_confirm(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
-DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_le_t *rpa)
+DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_t *rpa)
+DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_t *rpa)
 DECL|bt_smp_dhkey_ready|function|void bt_smp_dhkey_ready(const uint8_t *dhkey)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_smp *smp)
