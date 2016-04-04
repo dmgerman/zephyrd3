@@ -8,6 +8,7 @@ DECL|SYS_CLOCK_HW_CYCLES_TO_NS_AVG|macro|SYS_CLOCK_HW_CYCLES_TO_NS_AVG
 DECL|SYS_CLOCK_HW_CYCLES_TO_NS|macro|SYS_CLOCK_HW_CYCLES_TO_NS
 DECL|USEC_PER_MSEC|macro|USEC_PER_MSEC
 DECL|USEC_PER_SEC|macro|USEC_PER_SEC
+DECL|USEC|macro|USEC
 DECL|_SYS_CLOCK__H_|macro|_SYS_CLOCK__H_
 DECL|sys_clock_hw_cycles_per_sec|macro|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_ticks_per_sec|macro|sys_clock_ticks_per_sec
