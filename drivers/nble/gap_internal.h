@@ -1,21 +1,13 @@
-DECL|BLE_CORE_GAP_BONDING|enumerator|BLE_CORE_GAP_BONDING = 0x01, /**< SMP supports bonding */
-DECL|BLE_CORE_GAP_MITM|enumerator|BLE_CORE_GAP_MITM = 0x04,
-DECL|BLE_CORE_GAP_OOB|enumerator|BLE_CORE_GAP_OOB = 0x08 /**< SMP supports Out Of Band data */
-DECL|BLE_CORE_GAP_SM_OPTIONS|enum|enum BLE_CORE_GAP_SM_OPTIONS {
 DECL|BLE_GAP_GEN_OPS|enum|enum BLE_GAP_GEN_OPS {
+DECL|BLE_GAP_RSSI_EVT_SIZE|macro|BLE_GAP_RSSI_EVT_SIZE
 DECL|BLE_GAP_SEC_MAX_KEY_LEN|macro|BLE_GAP_SEC_MAX_KEY_LEN
 DECL|BLE_GAP_SET_CH_MAP|enumerator|BLE_GAP_SET_CH_MAP = 0,
 DECL|BLE_GAP_SET_OPTIONS|enum|enum BLE_GAP_SET_OPTIONS {
-DECL|BLE_GAP_SVC_ATTR_TYPE|enum|enum BLE_GAP_SVC_ATTR_TYPE {
 DECL|BT_SMP_AUTH_BONDING|macro|BT_SMP_AUTH_BONDING
 DECL|BT_SMP_AUTH_MITM|macro|BT_SMP_AUTH_MITM
 DECL|BT_SMP_AUTH_NONE|macro|BT_SMP_AUTH_NONE
 DECL|BT_SMP_AUTH_SC|macro|BT_SMP_AUTH_SC
 DECL|DUMMY_VALUE|enumerator|DUMMY_VALUE = 0,
-DECL|GAP_SVC_ATTR_APPEARANCE|enumerator|GAP_SVC_ATTR_APPEARANCE,
-DECL|GAP_SVC_ATTR_CAR|enumerator|GAP_SVC_ATTR_CAR = 0xa6,
-DECL|GAP_SVC_ATTR_NAME|enumerator|GAP_SVC_ATTR_NAME = 0,
-DECL|GAP_SVC_ATTR_PPCP|enumerator|GAP_SVC_ATTR_PPCP = 4,
 DECL|NBLE_GAP_SM_EVT_BONDING_COMPLETE|enumerator|NBLE_GAP_SM_EVT_BONDING_COMPLETE,
 DECL|NBLE_GAP_SM_EVT_LINK_ENCRYPTED|enumerator|NBLE_GAP_SM_EVT_LINK_ENCRYPTED,
 DECL|NBLE_GAP_SM_EVT_LINK_SECURITY_CHANGE|enumerator|NBLE_GAP_SM_EVT_LINK_SECURITY_CHANGE,
@@ -50,6 +42,7 @@ DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
 DECL|ch_map|member|struct nble_gap_channel_map ch_map;
+DECL|channel|member|uint8_t channel;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
@@ -72,8 +65,6 @@ DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|data|member|uint8_t data[31];
-DECL|debug_params|struct|struct debug_params {
-DECL|debug_response|struct|struct debug_response {
 DECL|delta_dBm|member|uint8_t delta_dBm;
 DECL|distance|member|float distance;
 DECL|distance|member|uint8_t distance;
@@ -107,6 +98,8 @@ DECL|map|member|uint8_t map[5];
 DECL|min_count|member|uint8_t min_count;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
+DECL|nble_debug_params|struct|struct nble_debug_params {
+DECL|nble_debug_resp|struct|struct nble_debug_resp {
 DECL|nble_gap_ad_data_params|struct|struct nble_gap_ad_data_params {
 DECL|nble_gap_adv_params|struct|struct nble_gap_adv_params {
 DECL|nble_gap_adv_report_evt|struct|struct nble_gap_adv_report_evt {
@@ -176,7 +169,7 @@ DECL|peer_bda|member|bt_addr_le_t peer_bda;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|role_slave|member|uint8_t role_slave;
-DECL|rssi_lvl|member|int8_t rssi_lvl;
+DECL|rssi_data|member|int8_t rssi_data[BLE_GAP_RSSI_EVT_SIZE];
 DECL|rssi|member|int8_t rssi;
 DECL|scan_params|member|struct nble_gap_scan_parameters scan_params;
 DECL|scan_type|member|uint8_t scan_type;

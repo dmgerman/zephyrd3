@@ -15,6 +15,8 @@ DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
+DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(struct bt_conn *conn, uint8_t err,
+DECL|bt_gatt_write_params|struct|struct bt_gatt_write_params {
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_notify_func_t cback;
@@ -43,6 +45,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint8_t flags;
 DECL|flag|member|uint8_t flag;
 DECL|flag|member|uint8_t flag; /* Cf. enum nble_gatt_wr_flag */
+DECL|func|member|bt_att_func_t func;
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -53,7 +56,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
-DECL|handle|member|uint16_t handle; /* handle from ble controller should be sufficient */
+DECL|handle|member|uint16_t handle;
 DECL|len|member|uint16_t len;
 DECL|nble_discover_params|struct|struct nble_discover_params {
 DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
@@ -112,6 +115,9 @@ DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
+DECL|user_data|member|void *user_data;
+DECL|user_data|member|void *user_data;
+DECL|user_data|member|void *user_data[2];
 DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|uuid|member|struct bt_uuid_128 uuid;
@@ -119,3 +125,5 @@ DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|with_resp|member|uint8_t with_resp;
+DECL|wr_params|member|struct bt_gatt_write_params wr_params;
+DECL|wr_params|member|struct bt_gatt_write_params wr_params;
