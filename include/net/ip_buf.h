@@ -22,6 +22,7 @@ DECL|ip_buf_get_tx|macro|ip_buf_get_tx
 DECL|ip_buf_len|macro|ip_buf_len
 DECL|ip_buf_ll_dest|macro|ip_buf_ll_dest
 DECL|ip_buf_ll_src|macro|ip_buf_ll_src
+DECL|ip_buf_ref|macro|ip_buf_ref
 DECL|ip_buf_reserve|macro|ip_buf_reserve
 DECL|ip_buf_type|enum|enum ip_buf_type {
 DECL|ip_buf_type|macro|ip_buf_type

@@ -28,6 +28,7 @@ DECL|ip_buf_get_reserve_tx_debug|function|struct net_buf *ip_buf_get_reserve_tx_
 DECL|ip_buf_get_rx_debug|function|struct net_buf *ip_buf_get_rx_debug(struct net_context *context, const char *caller, int line) #else struct net_buf *ip_buf_get_rx(struct net_context *context) #endif
 DECL|ip_buf_get_tx_debug|function|struct net_buf *ip_buf_get_tx_debug(struct net_context *context, const char *caller, int line) #else struct net_buf *ip_buf_get_tx(struct net_context *context) #endif
 DECL|ip_buf_init|function|void ip_buf_init(void)
+DECL|ip_buf_ref_debug|function|struct net_buf *ip_buf_ref_debug(struct net_buf *buf, const char *caller, int line)
 DECL|ip_buf_unref_debug|function|void ip_buf_unref_debug(struct net_buf *buf, const char *caller, int line)
 DECL|num_free_rx_bufs|variable|num_free_rx_bufs
 DECL|num_free_tx_bufs|variable|num_free_tx_bufs
