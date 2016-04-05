@@ -40,6 +40,7 @@ DECL|stats|function|static void stats(void)
 DECL|tcp_prepare_and_send|function|static inline int tcp_prepare_and_send(struct net_context *context, struct net_buf *buf)
 DECL|timer_fiber_id|variable|timer_fiber_id
 DECL|timer_fiber_stack|variable|timer_fiber_stack
+DECL|tx_fiber_id|variable|tx_fiber_id
 DECL|tx_fiber_stack|variable|tx_fiber_stack
 DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|udp_packet_receive|function|static void udp_packet_receive(struct simple_udp_connection *c, const uip_ipaddr_t *source_addr, uint16_t source_port, const uip_ipaddr_t *dest_addr, uint16_t dest_port,
