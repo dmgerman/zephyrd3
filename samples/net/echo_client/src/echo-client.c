@@ -23,7 +23,7 @@ DECL|main|function|void main(void)
 DECL|multicast|variable|multicast
 DECL|receiving|function|void receiving(void)
 DECL|reverse|function|static inline void reverse(unsigned char *buf, int len)
-DECL|send_packet|function|static inline bool send_packet(const char *name, struct net_context *ctx, int ipsum_len, int pos)
+DECL|send_packet|function|static inline int send_packet(const char *name, struct net_context *ctx, int ipsum_len, int pos)
 DECL|sending|function|void sending(int resend)
 DECL|stack_receiving|variable|stack_receiving
 DECL|unicast|variable|unicast
