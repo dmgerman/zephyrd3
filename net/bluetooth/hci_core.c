@@ -43,7 +43,7 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
-DECL|bt_register_storage|function|void bt_register_storage(struct bt_storage *storage)
+DECL|bt_storage_register|function|void bt_storage_register(struct bt_storage *storage)
 DECL|bt_storage|variable|bt_storage
 DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
