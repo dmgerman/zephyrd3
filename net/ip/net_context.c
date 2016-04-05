@@ -3,11 +3,14 @@ DECL|NET_DBG|macro|NET_DBG
 DECL|NET_DBG|macro|NET_DBG
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|PROCESS_THREAD|function|PROCESS_THREAD(tcp, ev, data, buf, user_data)
+DECL|connection_status|member|int connection_status;
+DECL|conn|member|void *conn;
 DECL|context_port_used|function|static int context_port_used(enum ip_protocol ip_proto, uint16_t local_port, const struct net_addr *local_addr)
 DECL|context_sem_give|function|static void context_sem_give(struct nano_sem *chan)
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
 DECL|handle_tcp_connection|function|static int handle_tcp_connection(struct psock *p, enum tcp_event_type type, struct net_buf *buf)
+DECL|last_sent|member|struct net_buf *last_sent;
 DECL|net_context_get_connection_status|function|int net_context_get_connection_status(struct net_context *context)
 DECL|net_context_get_internal_connection|function|void *net_context_get_internal_connection(struct net_context *context)
 DECL|net_context_get_queue|function|struct nano_fifo *net_context_get_queue(struct net_context *context)
