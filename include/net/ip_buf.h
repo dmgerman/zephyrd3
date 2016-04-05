@@ -25,6 +25,7 @@ DECL|ip_buf_ll_src|macro|ip_buf_ll_src
 DECL|ip_buf_ref|macro|ip_buf_ref
 DECL|ip_buf_reserve|macro|ip_buf_reserve
 DECL|ip_buf_sent_status|macro|ip_buf_sent_status
+DECL|ip_buf_tcp_retry_count|macro|ip_buf_tcp_retry_count
 DECL|ip_buf_type|enum|enum ip_buf_type {
 DECL|ip_buf_type|macro|ip_buf_type
 DECL|ip_buf_unref|macro|ip_buf_unref
@@ -43,6 +44,7 @@ DECL|net_analyze_stack|macro|net_analyze_stack
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|sent_status|member|int8_t sent_status; /* tells if the TCP packet was sent ok or not */
 DECL|src|member|linkaddr_t src;
+DECL|tcp_retry_count|member|uint8_t tcp_retry_count;
 DECL|type|member|enum ip_buf_type type;
 DECL|uip_addr|macro|uip_addr
 DECL|uip_appdatalen|macro|uip_appdatalen
