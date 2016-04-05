@@ -8,6 +8,8 @@ DECL|context_sem_give|function|static void context_sem_give(struct nano_sem *cha
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
 DECL|handle_tcp_connection|function|static int handle_tcp_connection(struct psock *p, enum tcp_event_type type, struct net_buf *buf)
+DECL|net_context_get_connection_status|function|int net_context_get_connection_status(struct net_context *context)
+DECL|net_context_get_internal_connection|function|void *net_context_get_internal_connection(struct net_context *context)
 DECL|net_context_get_queue|function|struct nano_fifo *net_context_get_queue(struct net_context *context)
 DECL|net_context_get_receiver_registered|function|int net_context_get_receiver_registered(struct net_context *context)
 DECL|net_context_get_tuple|function|struct net_tuple *net_context_get_tuple(struct net_context *context)
@@ -15,6 +17,8 @@ DECL|net_context_get_udp_connection|function|net_context_get_udp_connection(stru
 DECL|net_context_get|function|struct net_context *net_context_get(enum ip_protocol ip_proto,const struct net_addr *remote_addr, uint16_t remote_port, struct net_addr *local_addr, uint16_t local_port)
 DECL|net_context_init|function|void net_context_init(void)
 DECL|net_context_put|function|void net_context_put(struct net_context *context)
+DECL|net_context_set_connection_status|function|void net_context_set_connection_status(struct net_context *context, int status)
+DECL|net_context_set_internal_connection|function|void net_context_set_internal_connection(struct net_context *context, void *conn)
 DECL|net_context_set_receiver_registered|function|void net_context_set_receiver_registered(struct net_context *context)
 DECL|net_context_tcp_init|function|int net_context_tcp_init(struct net_context *context, enum net_tcp_type tcp_type)
 DECL|net_context_tcp_send|function|int net_context_tcp_send(struct net_buf *buf)
