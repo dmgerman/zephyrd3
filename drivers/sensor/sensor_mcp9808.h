@@ -14,6 +14,7 @@ DECL|MCP9808_TEMP_INT_MASK|macro|MCP9808_TEMP_INT_MASK
 DECL|MCP9808_TEMP_INT_SHIFT|macro|MCP9808_TEMP_INT_SHIFT
 DECL|MCP9808_TEMP_MAX|macro|MCP9808_TEMP_MAX
 DECL|__SENSOR_MCP9808_H__|macro|__SENSOR_MCP9808_H__
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|i2c_master|member|struct device *i2c_master;
 DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
 DECL|mcp9808_attr_set|function|static inline int mcp9808_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)

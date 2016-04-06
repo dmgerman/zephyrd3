@@ -62,6 +62,7 @@ DECL|ISL29035_OPMODE_SHIFT|macro|ISL29035_OPMODE_SHIFT
 DECL|_SENSOR_ISL29035_H_|macro|_SENSOR_ISL29035_H_
 DECL|data_sample|member|uint16_t data_sample;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_ISL29035_FIBER_STACK_SIZE];
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct nano_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;

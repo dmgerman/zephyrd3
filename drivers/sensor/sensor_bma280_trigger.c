@@ -1,6 +1,6 @@
 DECL|bma280_attr_set|function|int bma280_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|bma280_fiber_cb|function|static void bma280_fiber_cb(void *arg)
 DECL|bma280_fiber|function|static void bma280_fiber(int dev_ptr, int unused)
-DECL|bma280_gpio_callback|function|static void bma280_gpio_callback(struct device *dev, uint32_t pin)
+DECL|bma280_gpio_callback|function|static void bma280_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|bma280_init_interrupt|function|int bma280_init_interrupt(struct device *dev)
 DECL|bma280_trigger_set|function|int bma280_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)

@@ -8,7 +8,7 @@ DECL|bmc150_magn_compute_max_odr|function|static int bmc150_magn_compute_max_odr
 DECL|bmc150_magn_config|variable|bmc150_magn_config
 DECL|bmc150_magn_data|variable|bmc150_magn_data
 DECL|bmc150_magn_fiber_main|function|static void bmc150_magn_fiber_main(int arg1, int gpio_pin)
-DECL|bmc150_magn_gpio_drdy_callback|function|static void bmc150_magn_gpio_drdy_callback(struct device *dev, uint32_t pin)
+DECL|bmc150_magn_gpio_drdy_callback|function|static void bmc150_magn_gpio_drdy_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|bmc150_magn_init_chip|function|static int bmc150_magn_init_chip(struct device *dev)
 DECL|bmc150_magn_init|function|int bmc150_magn_init(struct device *dev)
 DECL|bmc150_magn_presets_table|variable|bmc150_magn_presets_table

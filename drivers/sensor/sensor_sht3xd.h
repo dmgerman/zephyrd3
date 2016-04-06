@@ -21,6 +21,7 @@ DECL|SHT3XD_REPEATABILITY_IDX|macro|SHT3XD_REPEATABILITY_IDX
 DECL|SHT3XD_REPEATABILITY_IDX|macro|SHT3XD_REPEATABILITY_IDX
 DECL|_SENSOR_SHT3XD_|macro|_SENSOR_SHT3XD_
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_SHT3XD_FIBER_STACK_SIZE];
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct nano_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|handler|member|sensor_trigger_handler_t handler;

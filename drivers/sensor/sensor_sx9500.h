@@ -8,6 +8,7 @@ DECL|SX9500_REG_PROX_CTRL0|macro|SX9500_REG_PROX_CTRL0
 DECL|SX9500_REG_PROX_CTRL1|macro|SX9500_REG_PROX_CTRL1
 DECL|SX9500_REG_STAT|macro|SX9500_REG_STAT
 DECL|__SENSOR_SX9500_H__|macro|__SENSOR_SX9500_H__
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
 DECL|handler_near_far|member|sensor_trigger_handler_t handler_near_far;
 DECL|i2c_master|member|struct device *i2c_master;

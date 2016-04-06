@@ -77,6 +77,8 @@ DECL|bmc150_magn_fiber_stack|member|char __stack bmc150_magn_fiber_stack[CONFIG_
 DECL|bmc150_magn_power_modes|enum|enum bmc150_magn_power_modes {
 DECL|bmc150_magn_presets|enum|enum bmc150_magn_presets {
 DECL|bmc150_magn_trim_regs|struct|struct bmc150_magn_trim_regs {
+DECL|dev|member|struct device *dev;
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_drdy_dev_name|member|char *gpio_drdy_dev_name;
 DECL|gpio_drdy_int_pin|member|uint8_t gpio_drdy_int_pin;
 DECL|gpio_drdy|member|struct device *gpio_drdy;

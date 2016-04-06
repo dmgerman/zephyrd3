@@ -150,7 +150,9 @@ DECL|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXDA|macro|LSM9DS0_GYRO_SHIFT_STATUS_REG_G
 DECL|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXOR|macro|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXOR
 DECL|LSM9DS0_GYRO_VAL_WHO_AM_I_G|macro|LSM9DS0_GYRO_VAL_WHO_AM_I_G
 DECL|__SENSOR_LSM9DS0_GYRO_H__|macro|__SENSOR_LSM9DS0_GYRO_H__
+DECL|dev|member|struct device *dev;
 DECL|fs|member|int fs;
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_drdy_dev_name|member|char *gpio_drdy_dev_name;
 DECL|gpio_drdy_int_pin|member|uint8_t gpio_drdy_int_pin;
 DECL|gpio_drdy|member|struct device *gpio_drdy;

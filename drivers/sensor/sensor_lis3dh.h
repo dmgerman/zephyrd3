@@ -42,6 +42,7 @@ DECL|__SENSOR_LIS3DH_H__|macro|__SENSOR_LIS3DH_H__
 DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
 DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_LIS3DH_FIBER_STACK_SIZE];
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct nano_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;

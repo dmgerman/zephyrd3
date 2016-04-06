@@ -1,5 +1,5 @@
 DECL|lis3dh_fiber_cb|function|static void lis3dh_fiber_cb(void *arg)
 DECL|lis3dh_fiber|function|static void lis3dh_fiber(int dev_ptr, int unused)
-DECL|lis3dh_gpio_callback|function|static void lis3dh_gpio_callback(struct device *dev, uint32_t pin)
+DECL|lis3dh_gpio_callback|function|static void lis3dh_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|lis3dh_init_interrupt|function|int lis3dh_init_interrupt(struct device *dev)
 DECL|lis3dh_trigger_set|function|int lis3dh_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)

@@ -25,6 +25,7 @@ DECL|_SENSOR_TMP007|macro|_SENSOR_TMP007
 DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
 DECL|drdy_trigger|member|struct sensor_trigger drdy_trigger;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_TMP007_FIBER_STACK_SIZE];
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct nano_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
