@@ -160,6 +160,7 @@ DECL|recv|member|uip_stats_t recv; /**< Number of recived ND6 packets */
 DECL|recv|member|uip_stats_t recv; /**< Number of recived TCP segments. */
 DECL|recv|member|uip_stats_t recv; /**< Number of recived UDP segments. */
 DECL|res|member|uint8_t res;
+DECL|retransmit_timer|member|struct ctimer retransmit_timer;
 DECL|rexmit|member|uip_stats_t rexmit; /**< Number of retransmitted TCP segments. */
 DECL|ripaddr|member|uip_ipaddr_t ripaddr; /**< The IP address of the remote host. */
 DECL|ripaddr|member|uip_ipaddr_t ripaddr; /**< The IP address of the remote peer. */
