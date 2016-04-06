@@ -37,6 +37,7 @@ DECL|tcpip_is_forwarding|variable|tcpip_is_forwarding
 DECL|tcpip_output|function|tcpip_output(struct net_buf *buf, const uip_lladdr_t *a)
 DECL|tcpip_poll_tcp|function|tcpip_poll_tcp(struct uip_conn *conn)
 DECL|tcpip_poll_udp|function|tcpip_poll_udp(struct uip_udp_conn *conn)
+DECL|tcpip_resend_syn|function|void tcpip_resend_syn(struct uip_conn *conn, struct net_buf *buf)
 DECL|tcpip_set_outputfunc|function|tcpip_set_outputfunc(uint8_t (*f)(struct net_buf *buf, const uip_lladdr_t *))
 DECL|tcpip_uipcall|function|tcpip_uipcall(struct net_buf *buf)
 DECL|udp_attach|function|udp_attach(struct uip_udp_conn *conn, void *appstate)
