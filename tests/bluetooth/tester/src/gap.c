@@ -27,4 +27,5 @@ DECL|stop_advertising|function|static void stop_advertising(const uint8_t *data,
 DECL|stop_discovery|function|static void stop_discovery(const uint8_t *data, uint16_t len)
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|tester_handle_gap|function|void tester_handle_gap(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
+DECL|tester_init_gap_cb|function|static void tester_init_gap_cb(int err)
 DECL|tester_init_gap|function|uint8_t tester_init_gap(void)
