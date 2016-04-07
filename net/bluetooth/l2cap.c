@@ -4,6 +4,7 @@ DECL|BT_L2CAP_MAX_LE_MPS|macro|BT_L2CAP_MAX_LE_MPS
 DECL|BT_L2CAP_MAX_LE_MTU|macro|BT_L2CAP_MAX_LE_MTU
 DECL|L2CAP_BR_DYN_CID_END|macro|L2CAP_BR_DYN_CID_END
 DECL|L2CAP_BR_DYN_CID_START|macro|L2CAP_BR_DYN_CID_START
+DECL|L2CAP_BR_MIN_MTU|macro|L2CAP_BR_MIN_MTU
 DECL|L2CAP_LE_CREDITS_THRESHOLD|macro|L2CAP_LE_CREDITS_THRESHOLD
 DECL|L2CAP_LE_DYN_CID_END|macro|L2CAP_LE_DYN_CID_END
 DECL|L2CAP_LE_DYN_CID_START|macro|L2CAP_LE_DYN_CID_START
@@ -13,6 +14,7 @@ DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
 DECL|__l2cap_lookup_ident|function|static struct bt_l2cap_chan *__l2cap_lookup_ident(struct bt_conn *conn, uint16_t ident, bool remove)
 DECL|br_channels|variable|br_channels
+DECL|br_sig|variable|br_sig
 DECL|bt_l2cap_br_fixed_chan_register|function|void bt_l2cap_br_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
 DECL|bt_l2cap_chan_connect|function|int bt_l2cap_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
 DECL|bt_l2cap_chan_disconnect|function|int bt_l2cap_chan_disconnect(struct bt_l2cap_chan *chan)
