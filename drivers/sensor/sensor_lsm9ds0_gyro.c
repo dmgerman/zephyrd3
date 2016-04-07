@@ -4,6 +4,7 @@ DECL|lsm9ds0_gyro_channel_get|function|static int lsm9ds0_gyro_channel_get(struc
 DECL|lsm9ds0_gyro_config|variable|lsm9ds0_gyro_config
 DECL|lsm9ds0_gyro_data|variable|lsm9ds0_gyro_data
 DECL|lsm9ds0_gyro_fiber_main|function|static void lsm9ds0_gyro_fiber_main(int arg1, int gpio_pin)
+DECL|lsm9ds0_gyro_get_channel|function|static inline int lsm9ds0_gyro_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm9ds0_gyro_data *data, float numerator)
 DECL|lsm9ds0_gyro_gpio_drdy_callback|function|static void lsm9ds0_gyro_gpio_drdy_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|lsm9ds0_gyro_init_chip|function|static int lsm9ds0_gyro_init_chip(struct device *dev)
 DECL|lsm9ds0_gyro_init|function|int lsm9ds0_gyro_init(struct device *dev)

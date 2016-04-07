@@ -1,9 +1,9 @@
 DECL|bmc150_magn_api_funcs|variable|bmc150_magn_api_funcs
-DECL|bmc150_magn_attr_set_oversampling|function|static inline int bmc150_magn_attr_set_oversampling(struct device *dev, enum sensor_channel chan, const struct sensor_value *val)
+DECL|bmc150_magn_attr_set_rep|function|static inline int bmc150_magn_attr_set_rep(struct device *dev, enum sensor_channel chan, const struct sensor_value *val)
 DECL|bmc150_magn_attr_set|function|static int bmc150_magn_attr_set(struct device *dev,enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|bmc150_magn_channel_get|function|static int bmc150_magn_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
-DECL|bmc150_magn_compensate_xy|function|static int32_t bmc150_magn_compensate_xy(struct bmc150_magn_trim_regs *tregs, int16_t xy,uint16_t rhall, bool is_x)
-DECL|bmc150_magn_compensate_z|function|static int32_t bmc150_magn_compensate_z(struct bmc150_magn_trim_regs *tregs, int16_t z,uint16_t rhall)
+DECL|bmc150_magn_compensate_xy|function|static int32_t bmc150_magn_compensate_xy(struct bmc150_magn_trim_regs *tregs,int16_t xy, uint16_t rhall, bool is_x)
+DECL|bmc150_magn_compensate_z|function|static int32_t bmc150_magn_compensate_z(struct bmc150_magn_trim_regs *tregs,int16_t z, uint16_t rhall)
 DECL|bmc150_magn_compute_max_odr|function|static int bmc150_magn_compute_max_odr(struct device *dev, int rep_xy, int rep_z, int *max_odr)
 DECL|bmc150_magn_config|variable|bmc150_magn_config
 DECL|bmc150_magn_data|variable|bmc150_magn_data
