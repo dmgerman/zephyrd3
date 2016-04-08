@@ -17,8 +17,8 @@ DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
 DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct nano_fifo *fifo)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn)
-DECL|bt_l2cap_fixed_chan_register|function|void bt_l2cap_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
 DECL|bt_l2cap_init|function|void bt_l2cap_init(void)
+DECL|bt_l2cap_le_fixed_chan_register|function|void bt_l2cap_le_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
 DECL|bt_l2cap_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_lookup_rx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_lookup_tx_cid|function|struct bt_l2cap_chan *bt_l2cap_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_pool|variable|bt_l2cap_pool
@@ -27,7 +27,6 @@ DECL|bt_l2cap_send|function|void bt_l2cap_send(struct bt_conn *conn, uint16_t ci
 DECL|bt_l2cap_server_register|function|int bt_l2cap_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_update_conn_param|function|int bt_l2cap_update_conn_param(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_l2cap|struct|struct bt_l2cap {
-DECL|channels|variable|channels
 DECL|chan|member|struct bt_l2cap_chan chan;
 DECL|get_ident|function|static uint8_t get_ident(struct bt_conn *conn)
 DECL|ident|member|uint8_t ident;
@@ -56,6 +55,7 @@ DECL|l2cap_remove_ident|macro|l2cap_remove_ident
 DECL|l2cap_remove_tx_cid|function|static struct bt_l2cap_chan *l2cap_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|l2cap_send_reject|function|static void l2cap_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason)
 DECL|l2cap_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_server_lookup_psm(uint16_t psm)
+DECL|le_channels|variable|le_channels
 DECL|le_conn_param_rsp|function|static void le_conn_param_rsp(struct bt_l2cap *l2cap, struct net_buf *buf)
 DECL|le_conn_param_update_req|function|static void le_conn_param_update_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_conn_req|function|static void le_conn_req(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
