@@ -14,8 +14,6 @@ DECL|len|member|uint16_t len; /**< Length of IPC message. */
 DECL|nble_dev|variable|nble_dev
 DECL|nble_discard|function|static size_t nble_discard(struct device *uart, size_t len)
 DECL|nble_open|function|int nble_open(void)
-DECL|post_init|function|static int post_init(void)
-DECL|pre_init|function|static int pre_init(void)
 DECL|rpc_alloc_cb|function|struct net_buf *rpc_alloc_cb(uint16_t length)
 DECL|rpc_transmit_cb|function|void rpc_transmit_cb(struct net_buf *buf)
 DECL|rx_fiber|function|static void rx_fiber(void)
