@@ -32,7 +32,6 @@ DECL|new|function|inline void *operator new[](size_t size)
 DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;
-DECL|stat|member|int stat;
 DECL|tail|member|void *tail;
 DECL|tcs|member|struct tcs *tcs;
 DECL|timeout_data|member|struct _nano_timeout timeout_data;
