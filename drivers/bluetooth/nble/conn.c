@@ -1,3 +1,5 @@
+DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG|macro|BT_DBG
 DECL|bt_conn_auth_cancel|function|int bt_conn_auth_cancel(struct bt_conn *conn)
 DECL|bt_conn_auth_cb_register|function|int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb)
 DECL|bt_conn_auth_passkey_confirm|function|int bt_conn_auth_passkey_confirm(struct bt_conn *conn)
