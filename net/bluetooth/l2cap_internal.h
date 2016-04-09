@@ -21,6 +21,8 @@ DECL|BT_L2CAP_ERR_SCID_IN_USE|macro|BT_L2CAP_ERR_SCID_IN_USE
 DECL|BT_L2CAP_LE_CONN_REQ|macro|BT_L2CAP_LE_CONN_REQ
 DECL|BT_L2CAP_LE_CONN_RSP|macro|BT_L2CAP_LE_CONN_RSP
 DECL|BT_L2CAP_LE_CREDITS|macro|BT_L2CAP_LE_CREDITS
+DECL|BT_L2CAP_MASK_BR_SIG|macro|BT_L2CAP_MASK_BR_SIG
+DECL|BT_L2CAP_MASK_SMP|macro|BT_L2CAP_MASK_SMP
 DECL|BT_L2CAP_REJ_INVALID_CID|macro|BT_L2CAP_REJ_INVALID_CID
 DECL|BT_L2CAP_REJ_MTU_EXCEEDED|macro|BT_L2CAP_REJ_MTU_EXCEEDED
 DECL|BT_L2CAP_REJ_NOT_UNDERSTOOD|macro|BT_L2CAP_REJ_NOT_UNDERSTOOD
@@ -63,6 +65,7 @@ DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
+DECL|mask|member|uint8_t mask;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mps|member|uint16_t mps;
