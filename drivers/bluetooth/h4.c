@@ -13,4 +13,4 @@ DECL|h4_discard|function|static size_t h4_discard(struct device *uart, size_t le
 DECL|h4_evt_recv|function|static struct net_buf *h4_evt_recv(int *remaining)
 DECL|h4_open|function|static int h4_open(void)
 DECL|h4_read|function|static int h4_read(struct device *uart, uint8_t *buf, size_t len, size_t min)
-DECL|h4_send|function|static int h4_send(enum bt_buf_type buf_type, struct net_buf *buf)
+DECL|h4_send|function|static int h4_send(struct net_buf *buf)

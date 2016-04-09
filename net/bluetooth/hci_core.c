@@ -42,11 +42,10 @@ DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_para
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
-DECL|bt_recv|function|void bt_recv(struct net_buf *buf)
+DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(struct bt_storage *storage)
 DECL|bt_storage|variable|bt_storage
-DECL|bt_type|function|static enum bt_buf_type bt_type(struct net_buf *buf)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
 DECL|clock_offset|member|uint16_t clock_offset;
 DECL|cmd_data|struct|struct cmd_data {
@@ -140,6 +139,8 @@ DECL|set_static_addr|function|static int set_static_addr(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|sync|member|void *sync;
+DECL|type|member|uint8_t type;
+DECL|type|member|uint8_t type;
 DECL|update_conn_param|function|static int update_conn_param(struct bt_conn *conn)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
