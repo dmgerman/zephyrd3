@@ -1,6 +1,8 @@
+DECL|BT_BUF_ACL_IN_SIZE|macro|BT_BUF_ACL_IN_SIZE
 DECL|BT_BUF_ACL_IN|enumerator|BT_BUF_ACL_IN, /** Incoming ACL data */
 DECL|BT_BUF_ACL_OUT|enumerator|BT_BUF_ACL_OUT, /** Outgoing ACL data */
 DECL|BT_BUF_CMD|enumerator|BT_BUF_CMD, /** HCI command */
+DECL|BT_BUF_EVT_SIZE|macro|BT_BUF_EVT_SIZE
 DECL|BT_BUF_EVT|enumerator|BT_BUF_EVT, /** HCI event */
 DECL|BT_BUF_USER_DATA_MIN|macro|BT_BUF_USER_DATA_MIN
 DECL|__BT_BUF_H|macro|__BT_BUF_H
