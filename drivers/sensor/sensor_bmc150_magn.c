@@ -17,7 +17,7 @@ DECL|bmc150_magn_read_odr|function|static int bmc150_magn_read_odr(struct device
 DECL|bmc150_magn_read_rep_xy|function|static int bmc150_magn_read_rep_xy(struct device *dev)
 DECL|bmc150_magn_read_rep_z|function|static int bmc150_magn_read_rep_z(struct device *dev)
 DECL|bmc150_magn_samp_freq_table|variable|bmc150_magn_samp_freq_table
-DECL|bmc150_magn_sample_fetch|function|static int bmc150_magn_sample_fetch(struct device *dev)
+DECL|bmc150_magn_sample_fetch|function|static int bmc150_magn_sample_fetch(struct device *dev, enum sensor_channel chan)
 DECL|bmc150_magn_set_drdy_polarity|function|static int bmc150_magn_set_drdy_polarity(struct device *dev, int state)
 DECL|bmc150_magn_set_odr|function|static int bmc150_magn_set_odr(struct device *dev, uint8_t val)
 DECL|bmc150_magn_set_power_mode|function|static int bmc150_magn_set_power_mode(struct device *dev, enum bmc150_magn_power_modes mode, int state)

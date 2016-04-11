@@ -11,6 +11,7 @@ DECL|SENSOR_CHAN_ACCEL_ANY|enumerator|SENSOR_CHAN_ACCEL_ANY,
 DECL|SENSOR_CHAN_ACCEL_X|enumerator|SENSOR_CHAN_ACCEL_X,
 DECL|SENSOR_CHAN_ACCEL_Y|enumerator|SENSOR_CHAN_ACCEL_Y,
 DECL|SENSOR_CHAN_ACCEL_Z|enumerator|SENSOR_CHAN_ACCEL_Z,
+DECL|SENSOR_CHAN_ALL|enumerator|SENSOR_CHAN_ALL,
 DECL|SENSOR_CHAN_GYRO_ANY|enumerator|SENSOR_CHAN_GYRO_ANY,
 DECL|SENSOR_CHAN_GYRO_X|enumerator|SENSOR_CHAN_GYRO_X,
 DECL|SENSOR_CHAN_GYRO_Y|enumerator|SENSOR_CHAN_GYRO_Y,
@@ -55,7 +56,8 @@ DECL|sensor_driver_api|struct|struct sensor_driver_api {
 DECL|sensor_g_to_ms2|function|static inline void sensor_g_to_ms2(int32_t g, struct sensor_value *ms2)
 DECL|sensor_ms2_to_g|function|static inline int32_t sensor_ms2_to_g(const struct sensor_value *ms2)
 DECL|sensor_rad_to_degrees|function|static inline int32_t sensor_rad_to_degrees(const struct sensor_value *rad)
-DECL|sensor_sample_fetch_t|typedef|typedef int (*sensor_sample_fetch_t)(struct device *dev);
+DECL|sensor_sample_fetch_chan|function|static inline int sensor_sample_fetch_chan(struct device *dev, enum sensor_channel type)
+DECL|sensor_sample_fetch_t|typedef|typedef int (*sensor_sample_fetch_t)(struct device *dev,
 DECL|sensor_sample_fetch|function|static inline int sensor_sample_fetch(struct device *dev)
 DECL|sensor_trigger_handler_t|typedef|typedef void (*sensor_trigger_handler_t)(struct device *dev,
 DECL|sensor_trigger_set_t|typedef|typedef int (*sensor_trigger_set_t)(struct device *dev,

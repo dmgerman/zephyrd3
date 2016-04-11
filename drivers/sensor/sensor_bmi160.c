@@ -37,7 +37,7 @@ DECL|bmi160_range_to_reg_val|function|static int32_t bmi160_range_to_reg_val(uin
 DECL|bmi160_read|function|int bmi160_read(struct device *dev, uint8_t reg_addr,uint8_t *data, uint8_t len)
 DECL|bmi160_reg_field_update|function|int bmi160_reg_field_update(struct device *dev, uint8_t reg_addr, uint8_t pos, uint8_t mask, uint8_t val)
 DECL|bmi160_reg_val_to_range|function|static int32_t bmi160_reg_val_to_range(uint8_t reg_val, const struct bmi160_range *range_map, uint16_t range_map_size)
-DECL|bmi160_sample_fetch|function|static int bmi160_sample_fetch(struct device *dev)
+DECL|bmi160_sample_fetch|function|static int bmi160_sample_fetch(struct device *dev, enum sensor_channel chan)
 DECL|bmi160_temp_channel_get|function|static int bmi160_temp_channel_get(struct device *dev, struct sensor_value *val)
 DECL|bmi160_to_fixed_point|function|static void bmi160_to_fixed_point(int16_t raw_val, uint16_t scale, struct sensor_value *val)
 DECL|bmi160_transceive|function|static int bmi160_transceive(struct device *dev, uint8_t *tx_buf, uint8_t tx_buf_len, uint8_t *rx_buf, uint8_t rx_buf_len)
