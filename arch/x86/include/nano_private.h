@@ -349,6 +349,7 @@ DECL|fsw|member|unsigned short fsw; /* 2 : x87 FPU status word */
 DECL|ftw|member|unsigned char ftw; /* 1 : x87 FPU abridged tag word */
 DECL|ftw|member|unsigned short ftw; /* 2 : x87 FPU tag word */
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
+DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
 DECL|link|member|struct tcs *link;
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
