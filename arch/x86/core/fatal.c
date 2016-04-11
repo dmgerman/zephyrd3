@@ -15,5 +15,6 @@ DECL|IV_SEGMENT_NOT_PRESENT|variable|IV_SEGMENT_NOT_PRESENT
 DECL|IV_STACK_FAULT|variable|IV_STACK_FAULT
 DECL|IV_X87_FPU_FP_ERROR|variable|IV_X87_FPU_FP_ERROR
 DECL|_NanoFatalErrorHandler|function|FUNC_NORETURN void _NanoFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
+DECL|_debug_fatal_hook|function|__weak void _debug_fatal_hook(const NANO_ESF *esf) { ARG_UNUSED(esf); }
 DECL|_default_esf|variable|_default_esf
 DECL|generic_exc_handle|function|static FUNC_NORETURN void generic_exc_handle(unsigned int vector, const NANO_ESF *pEsf)
