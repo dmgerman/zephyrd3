@@ -10,6 +10,7 @@ DECL|tcpip_set_forwarding|macro|tcpip_set_forwarding
 DECL|tcpip_uipstate|struct|struct tcpip_uipstate {
 DECL|udp_bind|macro|udp_bind
 DECL|udp_markconn|macro|udp_markconn
+DECL|udp_unbind|macro|udp_unbind
 DECL|uip_icmp6_appstate_t|typedef|typedef struct tcpip_uipstate uip_icmp6_appstate_t;
 DECL|uip_tcp_appstate_t|typedef|typedef struct tcpip_uipstate uip_tcp_appstate_t;
 DECL|uip_udp_appstate_t|typedef|typedef struct tcpip_uipstate uip_udp_appstate_t;

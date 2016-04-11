@@ -8,4 +8,5 @@ DECL|simple_udp_register|function|simple_udp_register(struct simple_udp_connecti
 DECL|simple_udp_sendto_port|function|simple_udp_sendto_port(struct net_buf *buf, struct simple_udp_connection *c, const void *data, uint16_t datalen, const uip_ipaddr_t *to, uint16_t port)
 DECL|simple_udp_sendto|function|simple_udp_sendto(struct net_buf *buf, struct simple_udp_connection *c, const void *data, uint16_t datalen, const uip_ipaddr_t *to)
 DECL|simple_udp_send|function|simple_udp_send(struct net_buf *buf, struct simple_udp_connection *c, const void *data, uint16_t datalen)
+DECL|simple_udp_unregister|function|simple_udp_unregister(struct simple_udp_connection *c)
 DECL|started|variable|started
