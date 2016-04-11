@@ -39,6 +39,7 @@ DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
 DECL|__printf_like|macro|__printf_like
 DECL|__used|macro|__used
+DECL|__weak|macro|__weak
 DECL|likely|macro|likely
 DECL|subsection|variable|subsection
 DECL|unlikely|macro|unlikely
