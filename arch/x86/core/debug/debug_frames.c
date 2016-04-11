@@ -1,0 +1,1 @@
+DECL|sys_debug_current_isf_get|function|NANO_ISF *sys_debug_current_isf_get(void)
