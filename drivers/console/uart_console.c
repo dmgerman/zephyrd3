@@ -10,6 +10,9 @@ DECL|ESC_ANSI_VAL|enumerator|ESC_ANSI_VAL,
 DECL|ESC_ANSI|enumerator|ESC_ANSI,
 DECL|ESC_ESC|enumerator|ESC_ESC,
 DECL|ESC|macro|ESC
+DECL|HANDLE_DEBUG_HOOK_OUT|macro|HANDLE_DEBUG_HOOK_OUT
+DECL|HANDLE_DEBUG_HOOK_OUT|macro|HANDLE_DEBUG_HOOK_OUT
+DECL|UART_CONSOLE_OUT_DEBUG_HOOK_SIG|function|static UART_CONSOLE_OUT_DEBUG_HOOK_SIG(debug_hook_out_nop)
 DECL|__printk_hook_install|macro|__printk_hook_install
 DECL|__stdout_hook_install|macro|__stdout_hook_install
 DECL|ansi_val_2|variable|ansi_val_2
@@ -23,6 +26,7 @@ DECL|cursor_forward|function|static inline void cursor_forward(unsigned int coun
 DECL|cursor_restore|function|static inline void cursor_restore(void)
 DECL|cursor_save|function|static inline void cursor_save(void)
 DECL|cur|variable|cur
+DECL|debug_hook_out|variable|debug_hook_out
 DECL|del_char|function|static void del_char(char *pos, uint8_t end)
 DECL|end|variable|end
 DECL|esc_state|variable|esc_state
@@ -34,5 +38,6 @@ DECL|uart_console_dev|variable|uart_console_dev
 DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
 DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
+DECL|uart_console_out_debug_hook_install|function|void uart_console_out_debug_hook_install(uart_console_out_debug_hook_t *hook)
 DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines)
 DECL|uart_register_input|macro|uart_register_input
