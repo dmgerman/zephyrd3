@@ -60,7 +60,6 @@ DECL|BMA280_SLOPE_TH_SCALE|macro|BMA280_SLOPE_TH_SCALE
 DECL|BMA280_SLOPE_TH_SCALE|macro|BMA280_SLOPE_TH_SCALE
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
-DECL|GRAVITY_CONST|macro|GRAVITY_CONST
 DECL|__SENSOR_BMA280_H__|macro|__SENSOR_BMA280_H__
 DECL|any_motion_handler|member|sensor_trigger_handler_t any_motion_handler;
 DECL|any_motion_trigger|member|struct sensor_trigger any_motion_trigger;
