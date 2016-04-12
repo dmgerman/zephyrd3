@@ -38,6 +38,7 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
 DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
 DECL|end_handle|member|uint16_t end_handle;
@@ -78,6 +79,7 @@ DECL|nble_gattc_descriptor|struct|struct nble_gattc_descriptor {
 DECL|nble_gattc_discover_rsp|struct|struct nble_gattc_discover_rsp {
 DECL|nble_gattc_included|struct|struct nble_gattc_included {
 DECL|nble_gattc_primary|struct|struct nble_gattc_primary {
+DECL|nble_gattc_read_multiple_params|struct|struct nble_gattc_read_multiple_params {
 DECL|nble_gattc_read_params|struct|struct nble_gattc_read_params {
 DECL|nble_gattc_read_rsp|struct|struct nble_gattc_read_rsp {
 DECL|nble_gattc_value_evt|struct|struct nble_gattc_value_evt {
@@ -113,6 +115,7 @@ DECL|status|member|int32_t status;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
+DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
