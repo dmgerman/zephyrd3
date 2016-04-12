@@ -63,6 +63,7 @@ DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct net_bu
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
+DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|handle|member|uint16_t handle;
 DECL|length|member|uint16_t length;
 DECL|len|member|uint16_t len;

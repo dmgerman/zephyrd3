@@ -55,7 +55,6 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
-DECL|get_service_end_handle|function|static void get_service_end_handle(const struct bt_gatt_attr *attr, struct bt_gatt_include *include, uint16_t svc_start_handle)
 DECL|has_ccc|member|bool has_ccc;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
