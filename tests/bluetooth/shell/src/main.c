@@ -11,6 +11,7 @@ DECL|auth_cb_all|variable|auth_cb_all
 DECL|auth_cb_display_yes_no|variable|auth_cb_display_yes_no
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_cb_input|variable|auth_cb_input
+DECL|auth_pairing_confirm|function|static void auth_pairing_confirm(struct bt_conn *conn)
 DECL|auth_passkey_confirm|function|static void auth_passkey_confirm(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_entry|function|static void auth_passkey_entry(struct bt_conn *conn)
@@ -23,6 +24,7 @@ DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static void cmd_advertise(int argc, char *argv[])
 DECL|cmd_auth_cancel|function|static void cmd_auth_cancel(int argc, char *argv[])
+DECL|cmd_auth_pairing_confirm|function|static void cmd_auth_pairing_confirm(int argc, char *argv[])
 DECL|cmd_auth_passkey_confirm|function|static void cmd_auth_passkey_confirm(int argc, char *argv[])
 DECL|cmd_auth_passkey|function|static void cmd_auth_passkey(int argc, char *argv[])
 DECL|cmd_auth_pincode|function|static void cmd_auth_pincode(int argc, char *argv[])
