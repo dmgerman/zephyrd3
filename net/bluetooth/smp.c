@@ -147,7 +147,6 @@ DECL|smp_pairing_rsp|function|static uint8_t smp_pairing_rsp(struct bt_smp *smp,
 DECL|smp_public_key_slave|function|static uint8_t smp_public_key_slave(struct bt_smp *smp)
 DECL|smp_public_key|function|static uint8_t smp_public_key(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
-DECL|smp_restart_timer|function|static void smp_restart_timer(struct bt_smp *smp)
 DECL|smp_s1|function|static int smp_s1(const uint8_t k[16], const uint8_t r1[16], const uint8_t r2[16], uint8_t out[16])
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_security_request|function|static uint8_t smp_security_request(struct bt_smp *smp, struct net_buf *buf)
@@ -160,9 +159,9 @@ DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *
 DECL|smp_sign_test|function|static int smp_sign_test(void)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_timeout|function|static void smp_timeout(int arg1, int arg2)
+DECL|smp_timeout|function|static void smp_timeout(struct nano_work *work)
 DECL|swap_buf|function|static void swap_buf(uint8_t *dst, const uint8_t *src, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
-DECL|timeout|member|nano_thread_id_t timeout;
 DECL|tk|member|uint8_t tk[16];
+DECL|work|member|struct nano_delayed_work work;
 DECL|xor_128|function|static void xor_128(const uint8_t p[16], const uint8_t q[16], uint8_t r[16])
