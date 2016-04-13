@@ -114,6 +114,7 @@ DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt
 DECL|sc_smp_send_dhkey_check|function|static uint8_t sc_smp_send_dhkey_check(struct bt_smp *smp, const uint8_t *e)
 DECL|sc_supported|variable|sc_supported
 DECL|sec_level_reachable|function|static bool sec_level_reachable(struct bt_conn *conn)
+DECL|send_pairing_rsp|function|static uint8_t send_pairing_rsp(struct bt_smp *smp)
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
 DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
