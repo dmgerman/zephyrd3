@@ -1,0 +1,1 @@
+DECL|__CORE_CMSIMD_H|macro|__CORE_CMSIMD_H

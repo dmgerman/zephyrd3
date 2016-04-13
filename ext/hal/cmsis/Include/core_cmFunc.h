@@ -1,0 +1,1 @@
+DECL|__CORE_CMFUNC_H|macro|__CORE_CMFUNC_H
