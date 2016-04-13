@@ -10,7 +10,9 @@ DECL|DEFINE_REG_WRITE|macro|DEFINE_REG_WRITE
 DECL|DEFINE_SREG_READ|macro|DEFINE_SREG_READ
 DECL|DEFINE_SREG_WRITE|macro|DEFINE_SREG_WRITE
 DECL|DEFINE_STROBE_INSTRUCTION|macro|DEFINE_STROBE_INSTRUCTION
+DECL|DEFINE_STROBE_SNOP_INSTRUCTION|macro|DEFINE_STROBE_SNOP_INSTRUCTION
 DECL|__IEEE802154_CC2520_H__|macro|__IEEE802154_CC2520_H__
+DECL|_cc2520_command_strobe_snop|function|static inline bool _cc2520_command_strobe_snop(struct cc2520_spi *spi, uint8_t instruction)
 DECL|_cc2520_command_strobe|function|static inline bool _cc2520_command_strobe(struct cc2520_spi *spi, uint8_t instruction)
 DECL|cc2520_context|struct|struct cc2520_context {
 DECL|cc2520_rx_stack|member|char __stack cc2520_rx_stack[CONFIG_CC2520_RX_STACK_SIZE];
