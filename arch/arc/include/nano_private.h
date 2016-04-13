@@ -13,6 +13,7 @@ DECL|_CAUSE_COOP|macro|_CAUSE_COOP
 DECL|_CAUSE_FIRQ|macro|_CAUSE_FIRQ
 DECL|_CAUSE_NONE|macro|_CAUSE_NONE
 DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
+DECL|_INTERRUPT_CAUSE|function|static ALWAYS_INLINE int _INTERRUPT_CAUSE(void)
 DECL|_IS_IN_ISR|function|static ALWAYS_INLINE int _IS_IN_ISR(void)
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
