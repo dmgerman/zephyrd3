@@ -17,7 +17,6 @@ DECL|gpio_k64_config|function|static int gpio_k64_config(struct device *dev, int
 DECL|gpio_k64_disable_callback|function|static int gpio_k64_disable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_k64_drv_api_funcs|variable|gpio_k64_drv_api_funcs
 DECL|gpio_k64_enable_callback|function|static int gpio_k64_enable_callback(struct device *dev, int access_op, uint32_t pin)
-DECL|gpio_k64_init|function|int gpio_k64_init(struct device *dev)
 DECL|gpio_k64_port_isr|function|static void gpio_k64_port_isr(void *dev)
 DECL|gpio_k64_read|function|static int gpio_k64_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
 DECL|gpio_k64_set_callback|function|static int gpio_k64_set_callback(struct device *dev, gpio_callback_t callback)
