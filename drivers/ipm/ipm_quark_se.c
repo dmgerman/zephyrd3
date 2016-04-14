@@ -1,6 +1,6 @@
-DECL|api_funcs|variable|api_funcs
 DECL|device_by_channel|variable|device_by_channel
 DECL|inbound_channels|variable|inbound_channels
+DECL|ipm_quark_se_api_funcs|variable|ipm_quark_se_api_funcs
 DECL|quark_se_ipm_controller_initialize|function|int quark_se_ipm_controller_initialize(struct device *d)
 DECL|quark_se_ipm_initialize|function|int quark_se_ipm_initialize(struct device *d)
 DECL|quark_se_ipm_isr|function|void quark_se_ipm_isr(void *param)

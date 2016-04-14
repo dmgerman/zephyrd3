@@ -26,6 +26,7 @@ DECL|ctrl|member|struct quark_se_ipm_ch_ctrl ctrl;
 DECL|ctrl|member|uint32_t ctrl : 31;
 DECL|data|member|uint8_t data[QUARK_SE_IPM_DATA_BYTES]; /* contiguous 32-bit registers */
 DECL|direction|member|int direction;
+DECL|ipm_quark_se_api_funcs|variable|ipm_quark_se_api_funcs
 DECL|ipm|member|volatile struct quark_se_ipm *ipm;
 DECL|irq|member|uint32_t irq : 1;
 DECL|irq|member|uint32_t irq : 1;
