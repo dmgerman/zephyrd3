@@ -19,6 +19,7 @@ DECL|_i2c_qse_ss_reg_write_or|function|static inline void _i2c_qse_ss_reg_write_
 DECL|_i2c_qse_ss_reg_write|function|static inline void _i2c_qse_ss_reg_write(struct device *dev, uint32_t reg, uint32_t val)
 DECL|_i2c_qse_ss_setup|function|static int _i2c_qse_ss_setup(struct device *dev, uint16_t addr)
 DECL|_i2c_qse_ss_transfer_complete|function|static inline void _i2c_qse_ss_transfer_complete(struct device *dev)
+DECL|api_funcs|variable|api_funcs
 DECL|i2c_config_ss_0|variable|i2c_config_ss_0
 DECL|i2c_config_ss_1|variable|i2c_config_ss_1
 DECL|i2c_qse_ss_1_runtime|variable|i2c_qse_ss_1_runtime
@@ -29,4 +30,3 @@ DECL|i2c_qse_ss_resume|function|static int i2c_qse_ss_resume(struct device *dev)
 DECL|i2c_qse_ss_runtime_configure|function|static int i2c_qse_ss_runtime_configure(struct device *dev, uint32_t config)
 DECL|i2c_qse_ss_suspend|function|static int i2c_qse_ss_suspend(struct device *dev)
 DECL|i2c_ss_0_runtime|variable|i2c_ss_0_runtime
-DECL|ss_funcs|variable|ss_funcs
