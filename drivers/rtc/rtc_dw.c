@@ -8,7 +8,7 @@ DECL|_rtc_dw_clock_on|function|static inline void _rtc_dw_clock_on(struct device
 DECL|_rtc_dw_clock_on|macro|_rtc_dw_clock_on
 DECL|_rtc_dw_int_unmask|function|static inline void _rtc_dw_int_unmask(void)
 DECL|_rtc_dw_int_unmask|macro|_rtc_dw_int_unmask
-DECL|funcs|variable|funcs
+DECL|api_funcs|variable|api_funcs
 DECL|rtc_dev|variable|rtc_dev
 DECL|rtc_dw_disable|function|static void rtc_dw_disable(struct device *dev)
 DECL|rtc_dw_enable|function|static void rtc_dw_enable(struct device *dev)
