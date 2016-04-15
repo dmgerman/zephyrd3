@@ -42,5 +42,6 @@ DECL|bmi160_temp_channel_get|function|static int bmi160_temp_channel_get(struct 
 DECL|bmi160_to_fixed_point|function|static void bmi160_to_fixed_point(int16_t raw_val, uint16_t scale, struct sensor_value *val)
 DECL|bmi160_transceive|function|static int bmi160_transceive(struct device *dev, uint8_t *tx_buf, uint8_t tx_buf_len, uint8_t *rx_buf, uint8_t rx_buf_len)
 DECL|bmi160_word_read|function|static int bmi160_word_read(struct device *dev, uint8_t reg_addr, uint16_t *word)
+DECL|bmi160_word_write|function|int bmi160_word_write(struct device *dev, uint8_t reg_addr, uint16_t word)
 DECL|freq_int|member|uint16_t freq_int;
 DECL|freq_milli|member|uint16_t freq_milli; /* User should convert to uHz before setting the

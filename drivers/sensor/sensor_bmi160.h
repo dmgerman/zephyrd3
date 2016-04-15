@@ -9,6 +9,8 @@ DECL|BMI160_ACC_RANGE_2G|macro|BMI160_ACC_RANGE_2G
 DECL|BMI160_ACC_RANGE_4G|macro|BMI160_ACC_RANGE_4G
 DECL|BMI160_ACC_RANGE_8G|macro|BMI160_ACC_RANGE_8G
 DECL|BMI160_ACC_SCALE|macro|BMI160_ACC_SCALE
+DECL|BMI160_ANYM_DUR_MASK|macro|BMI160_ANYM_DUR_MASK
+DECL|BMI160_ANYM_DUR_POS|macro|BMI160_ANYM_DUR_POS
 DECL|BMI160_BUF_SIZE|macro|BMI160_BUF_SIZE
 DECL|BMI160_CHIP_ID|macro|BMI160_CHIP_ID
 DECL|BMI160_CMD_PMU_ACC|macro|BMI160_CMD_PMU_ACC
@@ -79,6 +81,29 @@ DECL|BMI160_GYR_RANGE_2000DPS|macro|BMI160_GYR_RANGE_2000DPS
 DECL|BMI160_GYR_RANGE_250DPS|macro|BMI160_GYR_RANGE_250DPS
 DECL|BMI160_GYR_RANGE_500DPS|macro|BMI160_GYR_RANGE_500DPS
 DECL|BMI160_GYR_SCALE|macro|BMI160_GYR_SCALE
+DECL|BMI160_INT1_EDGE_CTRL|macro|BMI160_INT1_EDGE_CTRL
+DECL|BMI160_INT1_LVL|macro|BMI160_INT1_LVL
+DECL|BMI160_INT1_OD|macro|BMI160_INT1_OD
+DECL|BMI160_INT1_OUT_EN|macro|BMI160_INT1_OUT_EN
+DECL|BMI160_INT2_EDGE_CTRL|macro|BMI160_INT2_EDGE_CTRL
+DECL|BMI160_INT2_LVL|macro|BMI160_INT2_LVL
+DECL|BMI160_INT2_OD|macro|BMI160_INT2_OD
+DECL|BMI160_INT2_OUT_EN|macro|BMI160_INT2_OUT_EN
+DECL|BMI160_INT_ANYM_MASK|macro|BMI160_INT_ANYM_MASK
+DECL|BMI160_INT_ANYM_X_EN|macro|BMI160_INT_ANYM_X_EN
+DECL|BMI160_INT_ANYM_Y_EN|macro|BMI160_INT_ANYM_Y_EN
+DECL|BMI160_INT_ANYM_Z_EN|macro|BMI160_INT_ANYM_Z_EN
+DECL|BMI160_INT_DRDY_EN|macro|BMI160_INT_DRDY_EN
+DECL|BMI160_INT_D_TAP_EN|macro|BMI160_INT_D_TAP_EN
+DECL|BMI160_INT_FFULL_EN|macro|BMI160_INT_FFULL_EN
+DECL|BMI160_INT_FLAT_EN|macro|BMI160_INT_FLAT_EN
+DECL|BMI160_INT_FWM_EN|macro|BMI160_INT_FWM_EN
+DECL|BMI160_INT_HIGHG_MASK|macro|BMI160_INT_HIGHG_MASK
+DECL|BMI160_INT_HIGHG_X_EN|macro|BMI160_INT_HIGHG_X_EN
+DECL|BMI160_INT_HIGHG_Y_EN|macro|BMI160_INT_HIGHG_Y_EN
+DECL|BMI160_INT_HIGHG_Z_EN|macro|BMI160_INT_HIGHG_Z_EN
+DECL|BMI160_INT_LOWG_EN|macro|BMI160_INT_LOWG_EN
+DECL|BMI160_INT_ORIENT_EN|macro|BMI160_INT_ORIENT_EN
 DECL|BMI160_INT_STATUS0_ANYM|macro|BMI160_INT_STATUS0_ANYM
 DECL|BMI160_INT_STATUS0_D_TAP|macro|BMI160_INT_STATUS0_D_TAP
 DECL|BMI160_INT_STATUS0_FLAT|macro|BMI160_INT_STATUS0_FLAT
@@ -108,6 +133,12 @@ DECL|BMI160_INT_STATUS3_HIGH_FIRST_Z|macro|BMI160_INT_STATUS3_HIGH_FIRST_Z
 DECL|BMI160_INT_STATUS3_HIGH_SIGN|macro|BMI160_INT_STATUS3_HIGH_SIGN
 DECL|BMI160_INT_STATUS3_ORIENT_1_0|macro|BMI160_INT_STATUS3_ORIENT_1_0
 DECL|BMI160_INT_STATUS3_ORIENT_2|macro|BMI160_INT_STATUS3_ORIENT_2
+DECL|BMI160_INT_STEP_DET_EN|macro|BMI160_INT_STEP_DET_EN
+DECL|BMI160_INT_STEP_NOMO_MASK|macro|BMI160_INT_STEP_NOMO_MASK
+DECL|BMI160_INT_STEP_NOMO_X_EN|macro|BMI160_INT_STEP_NOMO_X_EN
+DECL|BMI160_INT_STEP_NOMO_Y_EN|macro|BMI160_INT_STEP_NOMO_Y_EN
+DECL|BMI160_INT_STEP_NOMO_Z_EN|macro|BMI160_INT_STEP_NOMO_Z_EN
+DECL|BMI160_INT_S_TAP_EN|macro|BMI160_INT_S_TAP_EN
 DECL|BMI160_ODR_100|enumerator|BMI160_ODR_100,
 DECL|BMI160_ODR_1600|enumerator|BMI160_ODR_1600,
 DECL|BMI160_ODR_200|enumerator|BMI160_ODR_200,
@@ -235,14 +266,20 @@ DECL|bmi160_device_data|struct|struct bmi160_device_data {
 DECL|bmi160_odr|enum|enum bmi160_odr {
 DECL|bmi160_pmu_status|union|union bmi160_pmu_status {
 DECL|bmi160_range|struct|struct bmi160_range {
+DECL|bmi160_reg_update|function|static inline int bmi160_reg_update(struct device *dev, uint8_t reg_addr, uint8_t mask, uint8_t val)
 DECL|bmi160_sample|union|union bmi160_sample {
 DECL|bmi160_scale|struct|struct bmi160_scale {
 DECL|dummy_byte|member|uint8_t dummy_byte;
 DECL|gpio_port|member|const char *gpio_port;
+DECL|gpio|member|struct device *gpio;
 DECL|gyr|member|uint16_t gyr; /* micro radians/s/lsb */
 DECL|gyr|member|uint16_t gyr[3];
 DECL|gyr|member|uint8_t gyr : 2;
+DECL|handler_anymotion|member|sensor_trigger_handler_t handler_anymotion;
+DECL|handler_drdy_acc|member|sensor_trigger_handler_t handler_drdy_acc;
+DECL|handler_drdy_gyr|member|sensor_trigger_handler_t handler_drdy_gyr;
 DECL|int_pin|member|uint8_t int_pin;
+DECL|ipm|member|struct device *ipm;
 DECL|mag|member|uint8_t mag : 2;
 DECL|pmu_sts|member|union bmi160_pmu_status pmu_sts;
 DECL|range|member|uint16_t range;
@@ -252,7 +289,9 @@ DECL|reg_val|member|uint8_t reg_val;
 DECL|res|member|uint8_t res : 2;
 DECL|sample|member|union bmi160_sample sample;
 DECL|scale|member|struct bmi160_scale scale;
+DECL|sem|member|struct nano_sem sem;
 DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
+DECL|work|member|struct sensor_work work;
