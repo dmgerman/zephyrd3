@@ -14,8 +14,8 @@ DECL|bmi160_acc_range_set|function|static int bmi160_acc_range_set(struct device
 DECL|bmi160_acc_reg_val_to_range|function|int32_t bmi160_acc_reg_val_to_range(uint8_t reg_val)
 DECL|bmi160_api|variable|bmi160_api
 DECL|bmi160_attr_set|function|static int bmi160_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
-DECL|bmi160_byte_read|function|static int bmi160_byte_read(struct device *dev, uint8_t reg_addr, uint8_t *byte)
-DECL|bmi160_byte_write|function|static int bmi160_byte_write(struct device *dev, uint8_t reg_addr, uint8_t byte)
+DECL|bmi160_byte_read|function|int bmi160_byte_read(struct device *dev, uint8_t reg_addr, uint8_t *byte)
+DECL|bmi160_byte_write|function|int bmi160_byte_write(struct device *dev, uint8_t reg_addr, uint8_t byte)
 DECL|bmi160_channel_convert|function|static void bmi160_channel_convert(enum sensor_channel chan, uint16_t scale, uint16_t *raw_xyz, struct sensor_value *val)
 DECL|bmi160_channel_get|function|static int bmi160_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|bmi160_config|variable|bmi160_config
@@ -34,8 +34,8 @@ DECL|bmi160_init|function|int bmi160_init(struct device *dev)
 DECL|bmi160_odr_map|variable|bmi160_odr_map
 DECL|bmi160_pmu_set|function|static int bmi160_pmu_set(struct device *dev, union bmi160_pmu_status *pmu_sts)
 DECL|bmi160_range_to_reg_val|function|static int32_t bmi160_range_to_reg_val(uint16_t range, const struct bmi160_range *range_map, uint16_t range_map_size)
-DECL|bmi160_read|function|static int bmi160_read(struct device *dev, uint8_t reg_addr, uint8_t *data, uint8_t len)
-DECL|bmi160_reg_field_update|function|static int bmi160_reg_field_update(struct device *dev, uint8_t reg_addr, uint8_t pos, uint8_t mask, uint8_t val)
+DECL|bmi160_read|function|int bmi160_read(struct device *dev, uint8_t reg_addr,uint8_t *data, uint8_t len)
+DECL|bmi160_reg_field_update|function|int bmi160_reg_field_update(struct device *dev, uint8_t reg_addr, uint8_t pos, uint8_t mask, uint8_t val)
 DECL|bmi160_reg_val_to_range|function|static int32_t bmi160_reg_val_to_range(uint8_t reg_val, const struct bmi160_range *range_map, uint16_t range_map_size)
 DECL|bmi160_sample_fetch|function|static int bmi160_sample_fetch(struct device *dev)
 DECL|bmi160_temp_channel_get|function|static int bmi160_temp_channel_get(struct device *dev, struct sensor_value *val)
