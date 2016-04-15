@@ -4,8 +4,6 @@ DECL|BMI160_GYR_OFS_LSB|macro|BMI160_GYR_OFS_LSB
 DECL|BMI160_GYR_RANGE_MAP_SIZE|macro|BMI160_GYR_RANGE_MAP_SIZE
 DECL|BMI160_SAMPLE_BURST_READ_ADDR|macro|BMI160_SAMPLE_BURST_READ_ADDR
 DECL|BMI160_SAMPLE_BURST_READ_ADDR|macro|BMI160_SAMPLE_BURST_READ_ADDR
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|bmi160_acc_calibrate|function|static int bmi160_acc_calibrate(struct device *dev, enum sensor_channel chan, const struct sensor_value *xyz_calib_value)
 DECL|bmi160_acc_channel_get|function|static inline void bmi160_acc_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|bmi160_acc_config|function|static int bmi160_acc_config(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
