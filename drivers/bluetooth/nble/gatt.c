@@ -39,6 +39,7 @@ DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, str
 DECL|nble_gatt_service|struct|struct nble_gatt_service {
 DECL|on_nble_gatt_register_rsp|function|void on_nble_gatt_register_rsp(const struct nble_gatt_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gattc_discover_rsp|function|void on_nble_gattc_discover_rsp(const struct nble_gattc_discover_rsp *rsp,const uint8_t *data, uint8_t data_len)
+DECL|on_nble_gattc_read_multiple_rsp|function|void on_nble_gattc_read_multiple_rsp(const struct nble_gattc_read_rsp *rsp, uint8_t *data, uint8_t len)
 DECL|on_nble_gattc_read_rsp|function|void on_nble_gattc_read_rsp(const struct nble_gattc_read_rsp *rsp, uint8_t *data, uint8_t len, void *user_data)
 DECL|on_nble_gattc_value_evt|function|void on_nble_gattc_value_evt(const struct nble_gattc_value_evt *ev, uint8_t *data, uint8_t length)
 DECL|on_nble_gattc_write_rsp|function|void on_nble_gattc_write_rsp(const struct nble_gattc_write_rsp *rsp, void *user_data)
