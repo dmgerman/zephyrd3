@@ -11,6 +11,7 @@ DECL|bmi160_acc_odr_set|function|static int bmi160_acc_odr_set(struct device *de
 DECL|bmi160_acc_ofs_set|function|static int bmi160_acc_ofs_set(struct device *dev, enum sensor_channel chan, const struct sensor_value *ofs)
 DECL|bmi160_acc_range_map|variable|bmi160_acc_range_map
 DECL|bmi160_acc_range_set|function|static int bmi160_acc_range_set(struct device *dev, int32_t range)
+DECL|bmi160_acc_reg_val_to_range|function|int32_t bmi160_acc_reg_val_to_range(uint8_t reg_val)
 DECL|bmi160_api|variable|bmi160_api
 DECL|bmi160_attr_set|function|static int bmi160_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|bmi160_byte_read|function|static int bmi160_byte_read(struct device *dev, uint8_t reg_addr, uint8_t *byte)
@@ -28,6 +29,7 @@ DECL|bmi160_gyr_odr_set|function|static int bmi160_gyr_odr_set(struct device *de
 DECL|bmi160_gyr_ofs_set|function|static int bmi160_gyr_ofs_set(struct device *dev, enum sensor_channel chan, const struct sensor_value *ofs)
 DECL|bmi160_gyr_range_map|variable|bmi160_gyr_range_map
 DECL|bmi160_gyr_range_set|function|static int bmi160_gyr_range_set(struct device *dev, uint16_t range)
+DECL|bmi160_gyr_reg_val_to_range|function|int32_t bmi160_gyr_reg_val_to_range(uint8_t reg_val)
 DECL|bmi160_init|function|int bmi160_init(struct device *dev)
 DECL|bmi160_odr_map|variable|bmi160_odr_map
 DECL|bmi160_pmu_set|function|static int bmi160_pmu_set(struct device *dev, union bmi160_pmu_status *pmu_sts)
