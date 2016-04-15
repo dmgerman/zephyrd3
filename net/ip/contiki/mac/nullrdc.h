@@ -1,1 +1,0 @@
-DECL|NULLRDC_H_|macro|NULLRDC_H_
