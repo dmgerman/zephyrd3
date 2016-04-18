@@ -135,6 +135,8 @@ DECL|BT_UUID_WIND_CHILL|macro|BT_UUID_WIND_CHILL
 DECL|__BT_UUID_H|macro|__BT_UUID_H
 DECL|bt_uuid_128|struct|struct bt_uuid_128 {
 DECL|bt_uuid_16|struct|struct bt_uuid_16 {
+DECL|bt_uuid_str|function|static inline const char *bt_uuid_str(const struct bt_uuid *uuid)
+DECL|bt_uuid_to_str|function|static inline void bt_uuid_to_str(const struct bt_uuid *uuid, char *str, size_t len)
 DECL|bt_uuid|struct|struct bt_uuid {
 DECL|type|member|uint8_t type;
 DECL|uuid|member|struct bt_uuid uuid;
