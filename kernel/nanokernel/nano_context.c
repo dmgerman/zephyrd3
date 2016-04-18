@@ -1,4 +1,4 @@
-DECL|_is_thread_essential|function|int _is_thread_essential(struct tcs *pCtx)
+DECL|_is_thread_essential|function|int _is_thread_essential(void)
 DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(_thread_entry_t pEntry,_thread_arg_t parameter1, _thread_arg_t parameter2, _thread_arg_t parameter3)
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
