@@ -7,6 +7,15 @@ DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_IPADDR|macro|PEER_IPADDR
 DECL|PEER_IPADDR|macro|PEER_IPADDR
+DECL|UIP_DRIPADDR0|macro|UIP_DRIPADDR0
+DECL|UIP_DRIPADDR1|macro|UIP_DRIPADDR1
+DECL|UIP_DRIPADDR2|macro|UIP_DRIPADDR2
+DECL|UIP_DRIPADDR3|macro|UIP_DRIPADDR3
+DECL|UIP_IPADDR0|macro|UIP_IPADDR0
+DECL|UIP_IPADDR1|macro|UIP_IPADDR1
+DECL|UIP_IPADDR2|macro|UIP_IPADDR2
+DECL|UIP_IPADDR3|macro|UIP_IPADDR3
+DECL|UIP_IPADDR3|macro|UIP_IPADDR3
 DECL|__NET_TESTING_H|macro|__NET_TESTING_H
 DECL|net_testing_client_mac|macro|net_testing_client_mac
 DECL|net_testing_client_mac|macro|net_testing_client_mac
@@ -20,3 +29,6 @@ DECL|net_testing_server_mac|macro|net_testing_server_mac
 DECL|net_testing_server_mac|macro|net_testing_server_mac
 DECL|net_testing_set_reply_address|function|static inline void net_testing_set_reply_address(struct net_buf *buf)
 DECL|net_testing_setup|function|static inline void net_testing_setup(void)
+DECL|uip_draddr|variable|uip_draddr
+DECL|uip_hostaddr|variable|uip_hostaddr
+DECL|uip_netmask|variable|uip_netmask
