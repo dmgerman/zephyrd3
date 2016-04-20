@@ -44,6 +44,7 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
+DECL|bt_send|function|int bt_send(struct net_buf *buf)
 DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(struct bt_storage *storage)
 DECL|bt_storage|variable|bt_storage
