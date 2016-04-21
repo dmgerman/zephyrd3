@@ -1,8 +1,14 @@
 DECL|GPIO_ACCESS_BY_PIN|macro|GPIO_ACCESS_BY_PIN
 DECL|GPIO_ACCESS_BY_PORT|macro|GPIO_ACCESS_BY_PORT
+DECL|GPIO_DECLARE_PIN_CONFIG_IDX|macro|GPIO_DECLARE_PIN_CONFIG_IDX
+DECL|GPIO_DECLARE_PIN_CONFIG|macro|GPIO_DECLARE_PIN_CONFIG
 DECL|GPIO_DIR_IN|macro|GPIO_DIR_IN
 DECL|GPIO_DIR_MASK|macro|GPIO_DIR_MASK
 DECL|GPIO_DIR_OUT|macro|GPIO_DIR_OUT
+DECL|GPIO_GET_CONTROLLER_IDX|macro|GPIO_GET_CONTROLLER_IDX
+DECL|GPIO_GET_CONTROLLER|macro|GPIO_GET_CONTROLLER
+DECL|GPIO_GET_PIN_IDX|macro|GPIO_GET_PIN_IDX
+DECL|GPIO_GET_PIN|macro|GPIO_GET_PIN
 DECL|GPIO_INT_ACTIVE_HIGH|macro|GPIO_INT_ACTIVE_HIGH
 DECL|GPIO_INT_ACTIVE_LOW|macro|GPIO_INT_ACTIVE_LOW
 DECL|GPIO_INT_CLOCK_SYNC|macro|GPIO_INT_CLOCK_SYNC
@@ -13,6 +19,8 @@ DECL|GPIO_INT_LEVEL|macro|GPIO_INT_LEVEL
 DECL|GPIO_INT|macro|GPIO_INT
 DECL|GPIO_PIN_DISABLE|macro|GPIO_PIN_DISABLE
 DECL|GPIO_PIN_ENABLE|macro|GPIO_PIN_ENABLE
+DECL|GPIO_PIN_IDX|macro|GPIO_PIN_IDX
+DECL|GPIO_PIN|macro|GPIO_PIN
 DECL|GPIO_POL_INV|macro|GPIO_POL_INV
 DECL|GPIO_POL_MASK|macro|GPIO_POL_MASK
 DECL|GPIO_POL_NORMAL|macro|GPIO_POL_NORMAL
@@ -31,16 +39,19 @@ DECL|gpio_callback_handler_t|typedef|typedef void (*gpio_callback_handler_t)(str
 DECL|gpio_callback_t|typedef|typedef void (*gpio_callback_t)(struct device *port, uint32_t pin);
 DECL|gpio_callback|struct|struct gpio_callback {
 DECL|gpio_config_t|typedef|typedef int (*gpio_config_t)(struct device *port, int access_op,
+DECL|gpio_controller|member|char *gpio_controller;
 DECL|gpio_disable_callback_t|typedef|typedef int (*gpio_disable_callback_t)(struct device *port,
 DECL|gpio_driver_api|struct|struct gpio_driver_api {
 DECL|gpio_enable_callback_t|typedef|typedef int (*gpio_enable_callback_t)(struct device *port,
 DECL|gpio_init_callback|function|static inline void gpio_init_callback(struct gpio_callback *callback, gpio_callback_handler_t handler, uint32_t pin_mask)
 DECL|gpio_manage_callback_t|typedef|typedef int (*gpio_manage_callback_t)(struct device *port,
 DECL|gpio_pin_configure|function|static inline int gpio_pin_configure(struct device *port, uint8_t pin, int flags)
+DECL|gpio_pin_config|struct|struct gpio_pin_config {
 DECL|gpio_pin_disable_callback|function|static inline int gpio_pin_disable_callback(struct device *port, uint32_t pin)
 DECL|gpio_pin_enable_callback|function|static inline int gpio_pin_enable_callback(struct device *port, uint32_t pin)
 DECL|gpio_pin_read|function|static inline int gpio_pin_read(struct device *port, uint32_t pin,uint32_t *value)
 DECL|gpio_pin_write|function|static inline int gpio_pin_write(struct device *port, uint32_t pin, uint32_t value)
+DECL|gpio_pin|member|uint32_t gpio_pin;
 DECL|gpio_port_configure|function|static inline int gpio_port_configure(struct device *port, int flags)
 DECL|gpio_port_disable_callback|function|static inline int gpio_port_disable_callback(struct device *port)
 DECL|gpio_port_enable_callback|function|static inline int gpio_port_enable_callback(struct device *port)
