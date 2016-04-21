@@ -38,10 +38,8 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
-DECL|conn_handle|member|uint16_t conn_handle;
 DECL|data_size|member|uint16_t data_size;
 DECL|data|member|uint8_t data[0];
-DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint8_t flags;
 DECL|flag|member|uint8_t flag;
@@ -86,7 +84,6 @@ DECL|nble_gattc_value_evt|struct|struct nble_gattc_value_evt {
 DECL|nble_gattc_write_params|struct|struct nble_gattc_write_params {
 DECL|nble_gattc_write_rsp|struct|struct nble_gattc_write_rsp {
 DECL|nble_gatts_rd_reply_params|struct|struct nble_gatts_rd_reply_params {
-DECL|nble_gatts_svc_changed_params|struct|struct nble_gatts_svc_changed_params {
 DECL|nble_gatts_wr_reply_params|struct|struct nble_gatts_wr_reply_params {
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
@@ -101,7 +98,6 @@ DECL|perm|member|uint16_t perm;
 DECL|prop|member|uint8_t prop;
 DECL|range|member|struct nble_gatt_handle_range range;
 DECL|range|member|struct nble_gatt_handle_range range;
-DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|status|member|int status;
 DECL|status|member|int status;

@@ -1,4 +1,3 @@
-DECL|BLE_GAP_GEN_OPS|enum|enum BLE_GAP_GEN_OPS {
 DECL|BLE_GAP_RSSI_EVT_SIZE|macro|BLE_GAP_RSSI_EVT_SIZE
 DECL|BLE_GAP_SEC_MAX_KEY_LEN|macro|BLE_GAP_SEC_MAX_KEY_LEN
 DECL|BLE_GAP_SET_CH_MAP|enumerator|BLE_GAP_SET_CH_MAP = 0,
@@ -7,7 +6,6 @@ DECL|BT_SMP_AUTH_BONDING|macro|BT_SMP_AUTH_BONDING
 DECL|BT_SMP_AUTH_MITM|macro|BT_SMP_AUTH_MITM
 DECL|BT_SMP_AUTH_NONE|macro|BT_SMP_AUTH_NONE
 DECL|BT_SMP_AUTH_SC|macro|BT_SMP_AUTH_SC
-DECL|DUMMY_VALUE|enumerator|DUMMY_VALUE = 0,
 DECL|NBLE_GAP_SM_EVT_BONDING_COMPLETE|enumerator|NBLE_GAP_SM_EVT_BONDING_COMPLETE,
 DECL|NBLE_GAP_SM_EVT_LINK_ENCRYPTED|enumerator|NBLE_GAP_SM_EVT_LINK_ENCRYPTED,
 DECL|NBLE_GAP_SM_EVT_LINK_SECURITY_CHANGE|enumerator|NBLE_GAP_SM_EVT_LINK_SECURITY_CHANGE,
@@ -27,7 +25,6 @@ DECL|ad|member|struct bt_eir_data ad;
 DECL|appearance|member|uint16_t appearance;
 DECL|attr_type|member|uint16_t attr_type;
 DECL|attr_type|member|uint16_t attr_type;
-DECL|attr_type|member|uint16_t attr_type;
 DECL|auth_level|member|uint8_t auth_level;
 DECL|authorization|member|uint8_t authorization;
 DECL|auth|member|const struct bt_conn_auth_cb *auth;
@@ -41,7 +38,6 @@ DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
-DECL|ch_map|member|struct nble_gap_channel_map ch_map;
 DECL|channel|member|uint8_t channel;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
@@ -114,14 +110,11 @@ DECL|nble_gap_device_name|struct|struct nble_gap_device_name {
 DECL|nble_gap_dir_adv_timeout_evt|struct|struct nble_gap_dir_adv_timeout_evt {
 DECL|nble_gap_disconnect_evt|struct|struct nble_gap_disconnect_evt {
 DECL|nble_gap_disconnect_req_params|struct|struct nble_gap_disconnect_req_params {
-DECL|nble_gap_gen_cmd_params|struct|struct nble_gap_gen_cmd_params {
 DECL|nble_gap_irk_info|struct|struct nble_gap_irk_info {
 DECL|nble_gap_rssi_evt|struct|struct nble_gap_rssi_evt {
 DECL|nble_gap_scan_parameters|struct|struct nble_gap_scan_parameters {
 DECL|nble_gap_scan_params|struct|struct nble_gap_scan_params {
-DECL|nble_gap_service_read_params|struct|struct nble_gap_service_read_params {
 DECL|nble_gap_service_write_params|struct|struct nble_gap_service_write_params {
-DECL|nble_gap_set_option_params|struct|struct nble_gap_set_option_params {
 DECL|nble_gap_sm_bond_info_param|struct|struct nble_gap_sm_bond_info_param {
 DECL|nble_gap_sm_bond_info_rsp|struct|struct nble_gap_sm_bond_info_rsp {
 DECL|nble_gap_sm_bond_info|struct|struct nble_gap_sm_bond_info {
@@ -152,9 +145,7 @@ DECL|nble_version_response|struct|struct nble_version_response {
 DECL|nble|struct|struct nble {
 DECL|oob_present|member|uint8_t oob_present;
 DECL|oob|member|uint8_t oob[16];
-DECL|op_code|member|uint8_t op_code;
 DECL|options|member|uint8_t options;
-DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|param0|member|uint8_t param0;
 DECL|param1|member|uint8_t param1;
