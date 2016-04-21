@@ -136,6 +136,7 @@ DECL|nble_gap_sm_passkey|struct|struct nble_gap_sm_passkey {
 DECL|nble_gap_sm_response|struct|struct nble_gap_sm_response {
 DECL|nble_gap_sm_security_params|struct|struct nble_gap_sm_security_params {
 DECL|nble_gap_sm_status_evt|struct|struct nble_gap_sm_status_evt {
+DECL|nble_gap_tx_power_params|struct|struct nble_gap_tx_power_params {
 DECL|nble_link_sec|struct|struct nble_link_sec {
 DECL|nble_log_s|struct|struct nble_log_s {
 DECL|nble_response|struct|struct nble_response {
@@ -190,6 +191,7 @@ DECL|status|member|int status;
 DECL|supervision_to|member|uint16_t supervision_to;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
+DECL|tx_power|member|int8_t tx_power;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|u0|member|uint32_t u0;
