@@ -1,4 +1,8 @@
 DECL|I2C_ADDR_10_BITS|macro|I2C_ADDR_10_BITS
+DECL|I2C_CLIENT|macro|I2C_CLIENT
+DECL|I2C_DECLARE_CLIENT_CONFIG|macro|I2C_DECLARE_CLIENT_CONFIG
+DECL|I2C_GET_ADDR|macro|I2C_GET_ADDR
+DECL|I2C_GET_MASTER|macro|I2C_GET_MASTER
 DECL|I2C_MODE_MASTER|macro|I2C_MODE_MASTER
 DECL|I2C_MODE_SLAVE_READ|macro|I2C_MODE_SLAVE_READ
 DECL|I2C_MSG_READ|macro|I2C_MSG_READ
@@ -19,14 +23,17 @@ DECL|buf|member|uint8_t *buf;
 DECL|configure|member|i2c_api_configure_t configure;
 DECL|dev_config|union|union dev_config {
 DECL|flags|member|uint8_t flags;
+DECL|i2c_addr|member|uint16_t i2c_addr;
 DECL|i2c_api_configure_t|typedef|typedef int (*i2c_api_configure_t)(struct device *dev,
 DECL|i2c_api_full_io_t|typedef|typedef int (*i2c_api_full_io_t)(struct device *dev,
 DECL|i2c_api_resume_t|typedef|typedef int (*i2c_api_resume_t)(struct device *dev);
 DECL|i2c_api_suspend_t|typedef|typedef int (*i2c_api_suspend_t)(struct device *dev);
 DECL|i2c_burst_read|function|static inline int i2c_burst_read(struct device *dev, uint16_t dev_addr, uint8_t start_addr, uint8_t *buf, uint8_t num_bytes)
 DECL|i2c_burst_write|function|static inline int i2c_burst_write(struct device *dev, uint16_t dev_addr, uint8_t start_addr, uint8_t *buf, uint8_t num_bytes)
+DECL|i2c_client_config|struct|struct i2c_client_config {
 DECL|i2c_configure|function|static inline int i2c_configure(struct device *dev, uint32_t dev_config)
 DECL|i2c_driver_api|struct|struct i2c_driver_api {
+DECL|i2c_master|member|char *i2c_master;
 DECL|i2c_msg|struct|struct i2c_msg {
 DECL|i2c_read|function|static inline int i2c_read(struct device *dev, uint8_t *buf, uint32_t len, uint16_t addr)
 DECL|i2c_reg_read_byte|function|static inline int i2c_reg_read_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t *value)
