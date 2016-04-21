@@ -7,8 +7,6 @@ DECL|bmc150_magn_compensate_z|function|static int32_t bmc150_magn_compensate_z(s
 DECL|bmc150_magn_compute_max_odr|function|static int bmc150_magn_compute_max_odr(struct device *dev, int rep_xy, int rep_z, int *max_odr)
 DECL|bmc150_magn_config|variable|bmc150_magn_config
 DECL|bmc150_magn_data|variable|bmc150_magn_data
-DECL|bmc150_magn_fiber_main|function|static void bmc150_magn_fiber_main(int arg1, int gpio_pin)
-DECL|bmc150_magn_gpio_drdy_callback|function|static void bmc150_magn_gpio_drdy_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|bmc150_magn_init_chip|function|static int bmc150_magn_init_chip(struct device *dev)
 DECL|bmc150_magn_init|function|int bmc150_magn_init(struct device *dev)
 DECL|bmc150_magn_presets_table|variable|bmc150_magn_presets_table
@@ -18,10 +16,8 @@ DECL|bmc150_magn_read_rep_xy|function|static int bmc150_magn_read_rep_xy(struct 
 DECL|bmc150_magn_read_rep_z|function|static int bmc150_magn_read_rep_z(struct device *dev)
 DECL|bmc150_magn_samp_freq_table|variable|bmc150_magn_samp_freq_table
 DECL|bmc150_magn_sample_fetch|function|static int bmc150_magn_sample_fetch(struct device *dev, enum sensor_channel chan)
-DECL|bmc150_magn_set_drdy_polarity|function|static int bmc150_magn_set_drdy_polarity(struct device *dev, int state)
 DECL|bmc150_magn_set_odr|function|static int bmc150_magn_set_odr(struct device *dev, uint8_t val)
 DECL|bmc150_magn_set_power_mode|function|static int bmc150_magn_set_power_mode(struct device *dev, enum bmc150_magn_power_modes mode, int state)
-DECL|bmc150_magn_trigger_set|function|static int bmc150_magn_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|bmc150_magn_write_rep_xy|function|static int bmc150_magn_write_rep_xy(struct device *dev, int val)
 DECL|bmc150_magn_write_rep_z|function|static int bmc150_magn_write_rep_z(struct device *dev, int val)
 DECL|freq|member|int freq;
@@ -29,5 +25,3 @@ DECL|odr|member|uint8_t odr;
 DECL|reg_val|member|uint8_t reg_val;
 DECL|rep_xy|member|uint8_t rep_xy;
 DECL|rep_z|member|uint8_t rep_z;
-DECL|sensor_dbg|macro|sensor_dbg
-DECL|sensor_dbg|macro|sensor_dbg
