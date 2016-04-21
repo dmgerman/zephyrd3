@@ -1,5 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|bmp280_api_funcs|variable|bmp280_api_funcs
 DECL|bmp280_channel_get|function|static int bmp280_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|bmp280_chip_init|function|static int bmp280_chip_init(struct device *dev)

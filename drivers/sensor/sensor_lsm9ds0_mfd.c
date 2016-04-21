@@ -33,5 +33,3 @@ DECL|lsm9ds0_mfd_sample_fetch_all|function|static inline int lsm9ds0_mfd_sample_
 DECL|lsm9ds0_mfd_sample_fetch_magn|function|static inline int lsm9ds0_mfd_sample_fetch_magn(struct device *dev)
 DECL|lsm9ds0_mfd_sample_fetch_temp|function|static inline int lsm9ds0_mfd_sample_fetch_temp(struct device *dev)
 DECL|lsm9ds0_mfd_sample_fetch|function|static int lsm9ds0_mfd_sample_fetch(struct device *dev, enum sensor_channel chan)
-DECL|sensor_dbg|macro|sensor_dbg
-DECL|sensor_dbg|macro|sensor_dbg

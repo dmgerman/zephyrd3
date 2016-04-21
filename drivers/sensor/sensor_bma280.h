@@ -59,8 +59,8 @@ DECL|BMA280_REG_TEMP|macro|BMA280_REG_TEMP
 DECL|BMA280_SLOPE_DUR_MASK|macro|BMA280_SLOPE_DUR_MASK
 DECL|BMA280_SLOPE_DUR_SHIFT|macro|BMA280_SLOPE_DUR_SHIFT
 DECL|BMA280_SLOPE_EN_XYZ|macro|BMA280_SLOPE_EN_XYZ
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_BMA280_H__|macro|__SENSOR_BMA280_H__
 DECL|any_motion_handler|member|sensor_trigger_handler_t any_motion_handler;
 DECL|any_motion_trigger|member|struct sensor_trigger any_motion_trigger;

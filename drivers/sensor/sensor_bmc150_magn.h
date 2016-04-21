@@ -68,6 +68,8 @@ DECL|ENHANCED_REGULAR_PRESET|enumerator|ENHANCED_REGULAR_PRESET,
 DECL|HIGH_ACCURACY_PRESET|enumerator|HIGH_ACCURACY_PRESET
 DECL|LOW_POWER_PRESET|enumerator|LOW_POWER_PRESET,
 DECL|REGULAR_PRESET|enumerator|REGULAR_PRESET,
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_BMC150_MAGN_H__|macro|__SENSOR_BMC150_MAGN_H__
 DECL|__packed|variable|__packed
 DECL|bmc150_magn_axis|enum|enum bmc150_magn_axis {
@@ -97,8 +99,6 @@ DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
 DECL|sem|member|struct nano_sem sem;
-DECL|sensor_dbg|macro|sensor_dbg
-DECL|sensor_dbg|macro|sensor_dbg
 DECL|tregs|member|struct bmc150_magn_trim_regs tregs;
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;
 DECL|x1|member|int8_t x1;

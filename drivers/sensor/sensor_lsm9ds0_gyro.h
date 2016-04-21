@@ -149,6 +149,8 @@ DECL|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZOR|macro|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_Z
 DECL|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXDA|macro|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXDA
 DECL|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXOR|macro|LSM9DS0_GYRO_SHIFT_STATUS_REG_G_ZYXOR
 DECL|LSM9DS0_GYRO_VAL_WHO_AM_I_G|macro|LSM9DS0_GYRO_VAL_WHO_AM_I_G
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LSM9DS0_GYRO_H__|macro|__SENSOR_LSM9DS0_GYRO_H__
 DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_LSM9DS0_GYRO_FIBER_STACK_SIZE];
@@ -168,6 +170,4 @@ DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
 DECL|sem|member|struct nano_sem sem;
-DECL|sensor_dbg|macro|sensor_dbg
-DECL|sensor_dbg|macro|sensor_dbg
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;

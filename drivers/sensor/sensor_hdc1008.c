@@ -1,5 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|hdc1008_channel_get|function|static int hdc1008_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|hdc1008_data|variable|hdc1008_data
 DECL|hdc1008_driver_api|variable|hdc1008_driver_api
