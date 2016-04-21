@@ -130,7 +130,6 @@ DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_
 DECL|resolving|member|uint8_t resolving;
 DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
-DECL|set_adv_param_complete|function|static void set_adv_param_complete(struct net_buf *buf)
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(void)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
