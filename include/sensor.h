@@ -27,13 +27,22 @@ DECL|SENSOR_CHAN_MAGN_Z|enumerator|SENSOR_CHAN_MAGN_Z,
 DECL|SENSOR_CHAN_PRESS|enumerator|SENSOR_CHAN_PRESS,
 DECL|SENSOR_CHAN_PROX|enumerator|SENSOR_CHAN_PROX,
 DECL|SENSOR_CHAN_TEMP|enumerator|SENSOR_CHAN_TEMP,
+DECL|SENSOR_DECLARE_TRIG_CONFIG|macro|SENSOR_DECLARE_TRIG_CONFIG
+DECL|SENSOR_GET_TRIG_MODE|macro|SENSOR_GET_TRIG_MODE
+DECL|SENSOR_GET_WQ_CONFIG|macro|SENSOR_GET_WQ_CONFIG
 DECL|SENSOR_G|macro|SENSOR_G
 DECL|SENSOR_PI|macro|SENSOR_PI
 DECL|SENSOR_TRIG_DATA_READY|enumerator|SENSOR_TRIG_DATA_READY,
 DECL|SENSOR_TRIG_DELTA|enumerator|SENSOR_TRIG_DELTA,
+DECL|SENSOR_TRIG_MODE_GLOBAL_WQ|enumerator|SENSOR_TRIG_MODE_GLOBAL_WQ,
+DECL|SENSOR_TRIG_MODE_NONE|enumerator|SENSOR_TRIG_MODE_NONE,
+DECL|SENSOR_TRIG_MODE_OWN_WQ|enumerator|SENSOR_TRIG_MODE_OWN_WQ,
 DECL|SENSOR_TRIG_NEAR_FAR|enumerator|SENSOR_TRIG_NEAR_FAR,
+DECL|SENSOR_TRIG_NONE|macro|SENSOR_TRIG_NONE
 DECL|SENSOR_TRIG_THRESHOLD|enumerator|SENSOR_TRIG_THRESHOLD,
 DECL|SENSOR_TRIG_TIMER|enumerator|SENSOR_TRIG_TIMER,
+DECL|SENSOR_TRIG_WQ_GLOBAL|macro|SENSOR_TRIG_WQ_GLOBAL
+DECL|SENSOR_TRIG_WQ_OWN|macro|SENSOR_TRIG_WQ_OWN
 DECL|SENSOR_VALUE_TYPE_DOUBLE|enumerator|SENSOR_VALUE_TYPE_DOUBLE,
 DECL|SENSOR_VALUE_TYPE_INT_PLUS_MICRO|enumerator|SENSOR_VALUE_TYPE_INT_PLUS_MICRO,
 DECL|SENSOR_VALUE_TYPE_INT|enumerator|SENSOR_VALUE_TYPE_INT,
@@ -41,10 +50,13 @@ DECL|SENSOR_VALUE_TYPE_Q16_16|enumerator|SENSOR_VALUE_TYPE_Q16_16,
 DECL|__SENSOR_H__|macro|__SENSOR_H__
 DECL|__unnamed_workaround__|struct|struct __unnamed_workaround__ {
 DECL|__unnamed_workaround__|union|union __unnamed_workaround__ {
+DECL|always_null|member|void *always_null;
 DECL|attr_set|member|sensor_attr_set_t attr_set;
 DECL|channel_get|member|sensor_channel_get_t channel_get;
 DECL|chan|member|enum sensor_channel chan;
 DECL|dval|member|double dval;
+DECL|fiber_config|member|struct fiber_config fiber_config;
+DECL|mode|member|enum sensor_trigger_mode mode;
 DECL|sample_fetch|member|sensor_sample_fetch_t sample_fetch;
 DECL|sensor_attr_set_t|typedef|typedef int (*sensor_attr_set_t)(struct device *dev,
 DECL|sensor_attr_set|function|static inline int sensor_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
@@ -60,13 +72,17 @@ DECL|sensor_rad_to_degrees|function|static inline int32_t sensor_rad_to_degrees(
 DECL|sensor_sample_fetch_chan|function|static inline int sensor_sample_fetch_chan(struct device *dev, enum sensor_channel type)
 DECL|sensor_sample_fetch_t|typedef|typedef int (*sensor_sample_fetch_t)(struct device *dev,
 DECL|sensor_sample_fetch|function|static inline int sensor_sample_fetch(struct device *dev)
+DECL|sensor_trig_or_wq_config|union|union sensor_trig_or_wq_config {
+DECL|sensor_trigger_config|struct|struct sensor_trigger_config {
 DECL|sensor_trigger_handler_t|typedef|typedef void (*sensor_trigger_handler_t)(struct device *dev,
+DECL|sensor_trigger_mode|enum|enum sensor_trigger_mode {
 DECL|sensor_trigger_set_t|typedef|typedef int (*sensor_trigger_set_t)(struct device *dev,
 DECL|sensor_trigger_set|function|static inline int sensor_trigger_set(struct device *dev, struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|sensor_trigger_type|enum|enum sensor_trigger_type {
 DECL|sensor_trigger|struct|struct sensor_trigger {
 DECL|sensor_value_type|enum|enum sensor_value_type {
 DECL|sensor_value|struct|struct sensor_value {
+DECL|trig_config|member|struct sensor_trigger_config trig_config;
 DECL|trigger_set|member|sensor_trigger_set_t trigger_set;
 DECL|type|member|enum sensor_trigger_type type;
 DECL|type|member|enum sensor_value_type type;
