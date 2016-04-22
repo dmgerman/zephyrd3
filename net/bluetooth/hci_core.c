@@ -127,7 +127,6 @@ DECL|report_completed_packet|function|static void report_completed_packet(struct
 DECL|report_discovery_results|function|static void report_discovery_results(void)
 DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
 DECL|resolving|member|uint8_t resolving;
-DECL|rx_prio_fiber|function|static void rx_prio_fiber(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(void)
