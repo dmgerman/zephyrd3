@@ -1,0 +1,7 @@
+DECL|LLWU_ClearExternalWakeupPinFlag|function|void LLWU_ClearExternalWakeupPinFlag(LLWU_Type *base, uint32_t pinIndex)
+DECL|LLWU_ClearPinFilterFlag|function|void LLWU_ClearPinFilterFlag(LLWU_Type *base, uint32_t filterIndex)
+DECL|LLWU_GetExternalWakeupPinFlag|function|bool LLWU_GetExternalWakeupPinFlag(LLWU_Type *base, uint32_t pinIndex)
+DECL|LLWU_GetPinFilterFlag|function|bool LLWU_GetPinFilterFlag(LLWU_Type *base, uint32_t filterIndex)
+DECL|LLWU_SetExternalWakeupPinMode|function|void LLWU_SetExternalWakeupPinMode(LLWU_Type *base, uint32_t pinIndex, llwu_external_pin_mode_t pinMode)
+DECL|LLWU_SetPinFilterMode|function|void LLWU_SetPinFilterMode(LLWU_Type *base, uint32_t filterIndex, llwu_external_pin_filter_mode_t filterMode)
+DECL|LLWU_SetResetPinMode|function|void LLWU_SetResetPinMode(LLWU_Type *base, bool pinEnable, bool enableInLowLeakageMode)

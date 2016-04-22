@@ -1,0 +1,15 @@
+DECL|ADC16_ClearStatusFlags|function|void ADC16_ClearStatusFlags(ADC_Type *base, uint32_t mask)
+DECL|ADC16_Deinit|function|void ADC16_Deinit(ADC_Type *base)
+DECL|ADC16_DoAutoCalibration|function|status_t ADC16_DoAutoCalibration(ADC_Type *base)
+DECL|ADC16_GetChannelStatusFlags|function|uint32_t ADC16_GetChannelStatusFlags(ADC_Type *base, uint32_t channelGroup)
+DECL|ADC16_GetDefaultConfig|function|void ADC16_GetDefaultConfig(adc16_config_t *config)
+DECL|ADC16_GetInstance|function|static uint32_t ADC16_GetInstance(ADC_Type *base)
+DECL|ADC16_GetStatusFlags|function|uint32_t ADC16_GetStatusFlags(ADC_Type *base)
+DECL|ADC16_Init|function|void ADC16_Init(ADC_Type *base, const adc16_config_t *config)
+DECL|ADC16_SetChannelConfig|function|void ADC16_SetChannelConfig(ADC_Type *base, uint32_t channelGroup, const adc16_channel_config_t *config)
+DECL|ADC16_SetChannelMuxMode|function|void ADC16_SetChannelMuxMode(ADC_Type *base, adc16_channel_mux_mode_t mode)
+DECL|ADC16_SetHardwareAverage|function|void ADC16_SetHardwareAverage(ADC_Type *base, adc16_hardware_average_mode_t mode)
+DECL|ADC16_SetHardwareCompareConfig|function|void ADC16_SetHardwareCompareConfig(ADC_Type *base, const adc16_hardware_compare_config_t *config)
+DECL|ADC16_SetPGAConfig|function|void ADC16_SetPGAConfig(ADC_Type *base, const adc16_pga_config_t *config)
+DECL|s_adc16Bases|variable|s_adc16Bases
+DECL|s_adc16Clocks|variable|s_adc16Clocks

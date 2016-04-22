@@ -1,0 +1,21 @@
+DECL|FTM_ClearStatusFlags|function|void FTM_ClearStatusFlags(FTM_Type *base, uint32_t mask)
+DECL|FTM_Deinit|function|void FTM_Deinit(FTM_Type *base)
+DECL|FTM_DisableInterrupts|function|void FTM_DisableInterrupts(FTM_Type *base, uint32_t mask)
+DECL|FTM_EnableInterrupts|function|void FTM_EnableInterrupts(FTM_Type *base, uint32_t mask)
+DECL|FTM_GetDefaultConfig|function|void FTM_GetDefaultConfig(ftm_config_t *config)
+DECL|FTM_GetEnabledInterrupts|function|uint32_t FTM_GetEnabledInterrupts(FTM_Type *base)
+DECL|FTM_GetInstance|function|static uint32_t FTM_GetInstance(FTM_Type *base)
+DECL|FTM_GetStatusFlags|function|uint32_t FTM_GetStatusFlags(FTM_Type *base)
+DECL|FTM_Init|function|status_t FTM_Init(FTM_Type *base, const ftm_config_t *config)
+DECL|FTM_SetPwmSync|function|static void FTM_SetPwmSync(FTM_Type *base, uint32_t syncMethod)
+DECL|FTM_SetReloadPoints|function|static void FTM_SetReloadPoints(FTM_Type *base, uint32_t reloadPoints)
+DECL|FTM_SetupDualEdgeCapture|function|void FTM_SetupDualEdgeCapture(FTM_Type *base, ftm_chnl_t chnlPairNumber, const ftm_dual_edge_capture_param_t *edgeParam, uint32_t filterValue)
+DECL|FTM_SetupFault|function|void FTM_SetupFault(FTM_Type *base, ftm_fault_input_t faultNumber, const ftm_fault_param_t *faultParams)
+DECL|FTM_SetupInputCapture|function|void FTM_SetupInputCapture(FTM_Type *base, ftm_chnl_t chnlNumber, ftm_input_capture_edge_t captureMode, uint32_t filterValue)
+DECL|FTM_SetupOutputCompare|function|void FTM_SetupOutputCompare(FTM_Type *base, ftm_chnl_t chnlNumber, ftm_output_compare_mode_t compareMode, uint32_t compareValue)
+DECL|FTM_SetupPwm|function|status_t FTM_SetupPwm(FTM_Type *base, const ftm_chnl_pwm_signal_param_t *chnlParams, uint8_t numOfChnls, ftm_pwm_mode_t mode, uint32_t pwmFreq_Hz,
+DECL|FTM_SetupQuadDecode|function|void FTM_SetupQuadDecode(FTM_Type *base, const ftm_phase_params_t *phaseAParams, const ftm_phase_params_t *phaseBParams, ftm_quad_decode_mode_t quadMode)
+DECL|FTM_UpdateChnlEdgeLevelSelect|function|void FTM_UpdateChnlEdgeLevelSelect(FTM_Type *base, ftm_chnl_t chnlNumber, uint8_t level)
+DECL|FTM_UpdatePwmDutycycle|function|void FTM_UpdatePwmDutycycle(FTM_Type *base, ftm_chnl_t chnlNumber, ftm_pwm_mode_t currentPwmMode, uint8_t dutyCyclePercent)
+DECL|s_ftmBases|variable|s_ftmBases
+DECL|s_ftmClocks|variable|s_ftmClocks

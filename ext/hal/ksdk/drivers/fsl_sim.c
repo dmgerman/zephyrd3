@@ -1,0 +1,2 @@
+DECL|SIM_GetUniqueId|function|void SIM_GetUniqueId(sim_uid_t *uid)
+DECL|SIM_SetUsbVoltRegulatorEnableMode|function|void SIM_SetUsbVoltRegulatorEnableMode(uint32_t mask)

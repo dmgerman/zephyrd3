@@ -1,0 +1,5 @@
+DECL|PMC_ConfigureBandgapBuffer|function|void PMC_ConfigureBandgapBuffer(PMC_Type *base, const pmc_bandgap_buffer_config_t *config)
+DECL|PMC_ConfigureHighVoltDetect|function|void PMC_ConfigureHighVoltDetect(PMC_Type *base, const pmc_high_volt_detect_config_t *config)
+DECL|PMC_ConfigureLowVoltDetect|function|void PMC_ConfigureLowVoltDetect(PMC_Type *base, const pmc_low_volt_detect_config_t *config)
+DECL|PMC_ConfigureLowVoltWarning|function|void PMC_ConfigureLowVoltWarning(PMC_Type *base, const pmc_low_volt_warning_config_t *config)
+DECL|PMC_GetParam|function|void PMC_GetParam(PMC_Type *base, pmc_param_t *param)
