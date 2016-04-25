@@ -29,7 +29,7 @@ DECL|i2c_driver_api|struct|struct i2c_driver_api {
 DECL|i2c_msg|struct|struct i2c_msg {
 DECL|i2c_read|function|static inline int i2c_read(struct device *dev, uint8_t *buf, uint32_t len, uint16_t addr)
 DECL|i2c_reg_read_byte|function|static inline int i2c_reg_read_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t *value)
-DECL|i2c_reg_update_byte|function|static inline int i2c_reg_update_byte(struct device *dev, uint8_t dev_addr, uint8_t reg_addr, uint8_t value, uint8_t mask)
+DECL|i2c_reg_update_byte|function|static inline int i2c_reg_update_byte(struct device *dev, uint8_t dev_addr, uint8_t reg_addr, uint8_t mask, uint8_t value)
 DECL|i2c_reg_write_byte|function|static inline int i2c_reg_write_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t value)
 DECL|i2c_resume|function|static inline int i2c_resume(struct device *dev)
 DECL|i2c_suspend|function|static inline int i2c_suspend(struct device *dev)
