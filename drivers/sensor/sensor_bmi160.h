@@ -270,6 +270,7 @@ DECL|bmi160_reg_update|function|static inline int bmi160_reg_update(struct devic
 DECL|bmi160_sample|union|union bmi160_sample {
 DECL|bmi160_scale|struct|struct bmi160_scale {
 DECL|dummy_byte|member|uint8_t dummy_byte;
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_port|member|const char *gpio_port;
 DECL|gpio|member|struct device *gpio;
 DECL|gyr|member|uint16_t gyr; /* micro radians/s/lsb */
