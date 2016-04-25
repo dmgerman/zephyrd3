@@ -33,9 +33,27 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|preempReg|member|struct preempt preempReg;
+DECL|preemp_float_regs|member|struct preemp_float preemp_float_regs;
+DECL|preemp_float|struct|struct preemp_float {
 DECL|preempt|struct|struct preempt {
 DECL|prio|member|int prio;
 DECL|psp|member|uint32_t psp; /* r13 */
+DECL|s16|member|float s16;
+DECL|s17|member|float s17;
+DECL|s18|member|float s18;
+DECL|s19|member|float s19;
+DECL|s20|member|float s20;
+DECL|s21|member|float s21;
+DECL|s22|member|float s22;
+DECL|s23|member|float s23;
+DECL|s24|member|float s24;
+DECL|s25|member|float s25;
+DECL|s26|member|float s26;
+DECL|s27|member|float s27;
+DECL|s28|member|float s28;
+DECL|s29|member|float s29;
+DECL|s30|member|float s30;
+DECL|s31|member|float s31;
 DECL|s_NANO|struct|struct s_NANO {
 DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
