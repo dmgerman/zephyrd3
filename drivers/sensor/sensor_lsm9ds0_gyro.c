@@ -8,14 +8,11 @@ DECL|lsm9ds0_gyro_gpio_drdy_callback|function|static void lsm9ds0_gyro_gpio_drdy
 DECL|lsm9ds0_gyro_init_chip|function|static int lsm9ds0_gyro_init_chip(struct device *dev)
 DECL|lsm9ds0_gyro_init|function|int lsm9ds0_gyro_init(struct device *dev)
 DECL|lsm9ds0_gyro_power_ctrl|function|static inline int lsm9ds0_gyro_power_ctrl(struct device *dev, int power, int x_en, int y_en, int z_en)
-DECL|lsm9ds0_gyro_reg_read|function|static int lsm9ds0_gyro_reg_read(struct device *dev, uint8_t reg, uint8_t *val)
-DECL|lsm9ds0_gyro_reg_write|function|static int lsm9ds0_gyro_reg_write(struct device *dev, uint8_t reg, uint8_t val)
 DECL|lsm9ds0_gyro_sample_fetch|function|static int lsm9ds0_gyro_sample_fetch(struct device *dev)
 DECL|lsm9ds0_gyro_set_fs_raw|function|static int lsm9ds0_gyro_set_fs_raw(struct device *dev, int fs)
 DECL|lsm9ds0_gyro_set_fs|function|static int lsm9ds0_gyro_set_fs(struct device *dev, int fs)
 DECL|lsm9ds0_gyro_set_odr_raw|function|static inline int lsm9ds0_gyro_set_odr_raw(struct device *dev, int odr)
 DECL|lsm9ds0_gyro_set_odr|function|static int lsm9ds0_gyro_set_odr(struct device *dev, int odr)
 DECL|lsm9ds0_gyro_trigger_set|function|static int lsm9ds0_gyro_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
-DECL|lsm9ds0_gyro_update_bits|function|static int lsm9ds0_gyro_update_bits(struct device *dev, uint8_t reg, uint8_t mask, uint8_t val)
 DECL|sensor_dbg|macro|sensor_dbg
 DECL|sensor_dbg|macro|sensor_dbg
