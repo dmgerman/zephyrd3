@@ -12,6 +12,7 @@ DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
 DECL|drv_data_0|variable|drv_data_0
 DECL|drv_data_1|variable|drv_data_1
+DECL|hw_fc|member|bool hw_fc;
 DECL|iir_cache|member|uint8_t iir_cache;
 DECL|instance|member|qm_uart_t instance;
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
