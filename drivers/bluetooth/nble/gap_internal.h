@@ -32,10 +32,12 @@ DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bd|member|bt_addr_le_t bd;
 DECL|ble_bond_info_cb_t|typedef|typedef void (*ble_bond_info_cb_t)(const struct nble_gap_sm_bond_info *info,
+DECL|ble_get_version_cb_t|typedef|typedef void (*ble_get_version_cb_t)(const struct nble_version *ver);
 DECL|bt_eir_data|struct|struct bt_eir_data {
 DECL|car|member|uint8_t car;
 DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|ble_bond_info_cb_t cb;
+DECL|cb|member|ble_get_version_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
 DECL|cb|member|nble_set_bda_cb_t cb;
 DECL|channel|member|uint8_t channel;
@@ -70,6 +72,7 @@ DECL|error|member|uint16_t error;
 DECL|err|member|int err;
 DECL|evt_type|member|uint8_t evt_type;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|hash|member|uint8_t hash[4];
 DECL|hci_reason|member|uint8_t hci_reason;
 DECL|include_bonded_addrs|member|bool include_bonded_addrs;
 DECL|info|member|struct nble_gap_sm_bond_info info;
@@ -90,8 +93,10 @@ DECL|latency|member|uint16_t latency;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|link_sup_to|member|uint16_t link_sup_to;
+DECL|major|member|uint8_t major;
 DECL|map|member|uint8_t map[5];
 DECL|min_count|member|uint8_t min_count;
+DECL|minor|member|uint8_t minor;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
 DECL|nble_debug_params|struct|struct nble_debug_params {
@@ -110,6 +115,7 @@ DECL|nble_gap_device_name|struct|struct nble_gap_device_name {
 DECL|nble_gap_dir_adv_timeout_evt|struct|struct nble_gap_dir_adv_timeout_evt {
 DECL|nble_gap_disconnect_evt|struct|struct nble_gap_disconnect_evt {
 DECL|nble_gap_disconnect_req_params|struct|struct nble_gap_disconnect_req_params {
+DECL|nble_gap_get_version_param|struct|struct nble_gap_get_version_param {
 DECL|nble_gap_irk_info|struct|struct nble_gap_irk_info {
 DECL|nble_gap_rssi_evt|struct|struct nble_gap_rssi_evt {
 DECL|nble_gap_scan_parameters|struct|struct nble_gap_scan_parameters {
@@ -142,6 +148,7 @@ DECL|nble_set_bda_rsp|struct|struct nble_set_bda_rsp {
 DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
 DECL|nble_uas_rssi_calibrate|struct|struct nble_uas_rssi_calibrate {
 DECL|nble_version_response|struct|struct nble_version_response {
+DECL|nble_version|struct|struct nble_version {
 DECL|nble|struct|struct nble {
 DECL|oob_present|member|uint8_t oob_present;
 DECL|oob|member|uint8_t oob[16];
@@ -152,10 +159,12 @@ DECL|param1|member|uint8_t param1;
 DECL|param2|member|uint8_t param2;
 DECL|param3|member|uint8_t param3;
 DECL|params|member|struct nble_gap_connection_params params;
+DECL|params|member|struct nble_gap_get_version_param params;
 DECL|params|member|struct nble_gap_sm_pairing_params params;
 DECL|params|member|struct nble_gap_sm_passkey params;
 DECL|passkey|member|uint32_t passkey;
 DECL|passkey|member|uint32_t passkey;
+DECL|patch|member|uint8_t patch;
 DECL|peer_bda|member|bt_addr_le_t peer_bda;
 DECL|peer_bda|member|bt_addr_le_t peer_bda;
 DECL|reason|member|uint8_t reason;
@@ -199,7 +208,8 @@ DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
-DECL|user_data|member|void *user_data;
-DECL|version|member|struct version_header version;
+DECL|version_string|member|char version_string[20];
+DECL|version|member|uint8_t version;
+DECL|ver|member|struct nble_version ver;
 DECL|window|member|uint16_t window;
 DECL|window|member|uint16_t window;
