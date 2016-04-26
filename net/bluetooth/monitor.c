@@ -1,3 +1,4 @@
+DECL|MONITOR_INIT_PRIORITY|macro|MONITOR_INIT_PRIORITY
 DECL|bt_log|function|void bt_log(int prio, const char *fmt, ...)
 DECL|bt_monitor_init|function|static int bt_monitor_init(struct device *d)
 DECL|bt_monitor_new_index|function|void bt_monitor_new_index(uint8_t type, uint8_t bus, bt_addr_t *addr, const char *name)
