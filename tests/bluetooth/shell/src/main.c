@@ -19,6 +19,7 @@ DECL|auth_pincode_entry|function|static void auth_pincode_entry(struct bt_conn *
 DECL|br_device_found|function|static void br_device_found(const bt_addr_t *addr, int8_t rssi, const uint8_t cod[3], const uint8_t eir[240])
 DECL|br_discovery_complete|function|static void br_discovery_complete(struct bt_br_discovery_result *results, size_t count)
 DECL|br_discovery_results|variable|br_discovery_results
+DECL|br_server|variable|br_server
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
@@ -33,6 +34,7 @@ DECL|cmd_auto_conn|function|static void cmd_auto_conn(int argc, char *argv[])
 DECL|cmd_bredr_connectable|function|static void cmd_bredr_connectable(int argc, char *argv[])
 DECL|cmd_bredr_discoverable|function|static void cmd_bredr_discoverable(int argc, char *argv[])
 DECL|cmd_bredr_discovery|function|static void cmd_bredr_discovery(int argc, char *argv[])
+DECL|cmd_bredr_l2cap_register|function|static void cmd_bredr_l2cap_register(int argc, char *argv[])
 DECL|cmd_connect_bredr|function|static void cmd_connect_bredr(int argc, char *argv[])
 DECL|cmd_connect_le|function|static void cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static void cmd_disconnect(int argc, char *argv[])
@@ -69,6 +71,8 @@ DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
+DECL|l2cap_bredr_accept|function|static int l2cap_bredr_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
+DECL|l2cap_bredr_chan|variable|l2cap_bredr_chan
 DECL|l2cap_chan|variable|l2cap_chan
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
