@@ -1,0 +1,57 @@
+DECL|AF_INET6|macro|AF_INET6
+DECL|AF_INET|macro|AF_INET
+DECL|AF_UNSPEC|macro|AF_UNSPEC
+DECL|IN6ADDR_ANY_INIT|macro|IN6ADDR_ANY_INIT
+DECL|IN6ADDR_LOOPBACK_INIT|macro|IN6ADDR_LOOPBACK_INIT
+DECL|INADDR_ANY|macro|INADDR_ANY
+DECL|INET6_ADDRSTRLEN|macro|INET6_ADDRSTRLEN
+DECL|IPPROTO_ICMPV6|enumerator|IPPROTO_ICMPV6 = 58,
+DECL|IPPROTO_TCP|enumerator|IPPROTO_TCP = 6,
+DECL|IPPROTO_UDP|enumerator|IPPROTO_UDP = 17,
+DECL|NET_ICMPH_LEN|macro|NET_ICMPH_LEN
+DECL|NET_ICMPV4H_LEN|macro|NET_ICMPV4H_LEN
+DECL|NET_ICMPV6H_LEN|macro|NET_ICMPV6H_LEN
+DECL|NET_IPV4H_LEN|macro|NET_IPV4H_LEN
+DECL|NET_IPV4ICMPH_LEN|macro|NET_IPV4ICMPH_LEN
+DECL|NET_IPV4TCPH_LEN|macro|NET_IPV4TCPH_LEN
+DECL|NET_IPV4UDPH_LEN|macro|NET_IPV4UDPH_LEN
+DECL|NET_IPV6H_LEN|macro|NET_IPV6H_LEN
+DECL|NET_IPV6ICMPH_LEN|macro|NET_IPV6ICMPH_LEN
+DECL|NET_IPV6TCPH_LEN|macro|NET_IPV6TCPH_LEN
+DECL|NET_IPV6UDPH_LEN|macro|NET_IPV6UDPH_LEN
+DECL|NET_IPV6_FRAGH_LEN|macro|NET_IPV6_FRAGH_LEN
+DECL|NET_TCPH_LEN|macro|NET_TCPH_LEN
+DECL|NET_UDPH_LEN|macro|NET_UDPH_LEN
+DECL|PF_INET6|macro|PF_INET6
+DECL|PF_INET|macro|PF_INET
+DECL|PF_UNSPEC|macro|PF_UNSPEC
+DECL|__NET_IP_H|macro|__NET_IP_H
+DECL|family|member|sa_family_t family;
+DECL|in4_u|member|} in4_u;
+DECL|in6_addr|member|struct in6_addr in6_addr;
+DECL|in6_addr|struct|struct in6_addr {
+DECL|in6_u|member|} in6_u;
+DECL|in_addr|member|struct in_addr in_addr;
+DECL|in_addr|struct|struct in_addr {
+DECL|ip_protocol|enum|enum ip_protocol {
+DECL|ip_proto|member|enum ip_protocol ip_proto;
+DECL|local_addr|member|struct net_addr *local_addr;
+DECL|local_port|member|uint16_t local_port;
+DECL|net_addr|struct|struct net_addr {
+DECL|net_tuple|struct|struct net_tuple {
+DECL|remote_addr|member|struct net_addr *remote_addr;
+DECL|remote_port|member|uint16_t remote_port;
+DECL|s4_addr16|macro|s4_addr16
+DECL|s4_addr32|macro|s4_addr32
+DECL|s4_addr|macro|s4_addr
+DECL|s6_addr16|macro|s6_addr16
+DECL|s6_addr32|macro|s6_addr32
+DECL|s6_addr|macro|s6_addr
+DECL|s_addr|macro|s_addr
+DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|u4_addr16|member|uint16_t u4_addr16[2]; /* In big endian */
+DECL|u4_addr32|member|uint32_t u4_addr32[1]; /* In big endian */
+DECL|u4_addr8|member|uint8_t u4_addr8[4];
+DECL|u6_addr16|member|uint16_t u6_addr16[8]; /* In big endian */
+DECL|u6_addr32|member|uint32_t u6_addr32[4]; /* In big endian */
+DECL|u6_addr8|member|uint8_t u6_addr8[16];
