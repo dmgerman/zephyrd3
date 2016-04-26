@@ -17,6 +17,7 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
 DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(struct bt_storage *bt_storage)
+DECL|clear_bonds|function|static void clear_bonds(const bt_addr_le_t *addr)
 DECL|compatible_firmware|variable|compatible_firmware
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|nble_log|function|void nble_log(const struct nble_log_s *param, char *format, uint8_t len)
