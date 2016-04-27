@@ -124,6 +124,7 @@ DECL|remote_name_request_complete|function|static void remote_name_request_compl
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|report_discovery_results|function|static void report_discovery_results(void)
 DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
+DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|uint8_t resolving;
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
