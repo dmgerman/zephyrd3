@@ -13,8 +13,6 @@ DECL|GPIO_OUT_PIN|macro|GPIO_OUT_PIN
 DECL|GPIO_OUT_PIN|macro|GPIO_OUT_PIN
 DECL|GPIO_OUT_PIN|macro|GPIO_OUT_PIN
 DECL|GPIO_OUT_PIN|macro|GPIO_OUT_PIN
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
 DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|gpio_callback|function|void gpio_callback(struct device *port, struct gpio_callback *cb, uint32_t pins)
 DECL|gpio_cb|variable|gpio_cb
