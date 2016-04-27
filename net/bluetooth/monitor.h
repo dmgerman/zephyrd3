@@ -26,9 +26,10 @@ DECL|bt_monitor_opcode|function|static inline uint8_t bt_monitor_opcode(struct n
 DECL|bt_monitor_send|macro|bt_monitor_send
 DECL|bt_monitor_user_logging|struct|struct bt_monitor_user_logging {
 DECL|bus|member|uint8_t bus;
+DECL|data_len|member|uint16_t data_len;
+DECL|flags|member|uint8_t flags;
+DECL|hdr_len|member|uint8_t hdr_len;
 DECL|ident_len|member|uint8_t ident_len;
-DECL|index|member|uint16_t index;
-DECL|len|member|uint16_t len;
 DECL|name|member|char name[8];
 DECL|opcode|member|uint16_t opcode;
 DECL|priority|member|uint8_t priority;
