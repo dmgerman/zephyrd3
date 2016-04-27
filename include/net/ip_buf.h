@@ -10,8 +10,10 @@ DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_IP|macro|NET_BUF_IP
 DECL|NET_BUF_UDP|macro|NET_BUF_UDP
 DECL|__IP_BUF_H|macro|__IP_BUF_H
+DECL|compressed_hdr_len|member|uint8_t compressed_hdr_len;
 DECL|context|member|struct net_context *context;
 DECL|dest|member|linkaddr_t dest;
+DECL|first_frag_len|member|uint8_t first_frag_len;
 DECL|ip_buf_appdatalen|macro|ip_buf_appdatalen
 DECL|ip_buf_appdata|macro|ip_buf_appdata
 DECL|ip_buf_context|macro|ip_buf_context
@@ -52,6 +54,7 @@ DECL|uip_appdatalen|member|uint16_t uip_appdatalen;
 DECL|uip_appdata|macro|uip_appdata
 DECL|uip_appdata|member|void *uip_appdata; /* application data */
 DECL|uip_buf|macro|uip_buf
+DECL|uip_compressed_hdr_len|macro|uip_compressed_hdr_len
 DECL|uip_conn|macro|uip_conn
 DECL|uip_conn|member|void *uip_conn;
 DECL|uip_defrt|macro|uip_defrt
@@ -61,6 +64,7 @@ DECL|uip_ext_len|macro|uip_ext_len
 DECL|uip_ext_len|member|uint8_t uip_ext_len;
 DECL|uip_ext_opt_offset|macro|uip_ext_opt_offset
 DECL|uip_ext_opt_offset|member|uint8_t uip_ext_opt_offset;
+DECL|uip_first_frag_len|macro|uip_first_frag_len
 DECL|uip_flags|macro|uip_flags
 DECL|uip_flags|member|uint8_t uip_flags;
 DECL|uip_len|macro|uip_len
@@ -86,3 +90,7 @@ DECL|uip_slen|macro|uip_slen
 DECL|uip_slen|member|uint16_t uip_slen;
 DECL|uip_udp_conn|macro|uip_udp_conn
 DECL|uip_udp_conn|member|void *uip_udp_conn;
+DECL|uip_uncompressed_hdr_len|macro|uip_uncompressed_hdr_len
+DECL|uip_uncompressed|macro|uip_uncompressed
+DECL|uncompressed_hdr_len|member|uint8_t uncompressed_hdr_len;
+DECL|uncompressed|member|uint8_t uncompressed;

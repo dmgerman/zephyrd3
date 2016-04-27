@@ -8,7 +8,7 @@ DECL|l2_buf_unref|macro|l2_buf_unref
 DECL|l2_buf|struct|struct l2_buf {
 DECL|last_tx_status|member|int last_tx_status;
 DECL|packetbuf_hdr_len|member|uint8_t packetbuf_hdr_len;
-DECL|packetbuf_payload_len|member|int packetbuf_payload_len;
+DECL|packetbuf_payload_len|member|uint8_t packetbuf_payload_len;
 DECL|packetbuf_ptr|member|uint8_t *packetbuf_ptr;
 DECL|pkt_buflen|member|uint16_t pkt_buflen, pkt_bufptr;
 DECL|pkt_bufptr|member|uint16_t pkt_buflen, pkt_bufptr;

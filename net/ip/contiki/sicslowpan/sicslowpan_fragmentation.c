@@ -12,6 +12,7 @@ DECL|PRINTSICSLOWPANBUF|macro|PRINTSICSLOWPANBUF
 DECL|PRINTUIPBUF|macro|PRINTUIPBUF
 DECL|PRINTUIPBUF|macro|PRINTUIPBUF
 DECL|SET16|macro|SET16
+DECL|SICSLOWPAN_DISPATCH_IPV6|macro|SICSLOWPAN_DISPATCH_IPV6
 DECL|SICSLOWPAN_FIRST_FRAGMENT_SIZE|macro|SICSLOWPAN_FIRST_FRAGMENT_SIZE
 DECL|SICSLOWPAN_FRAGMENT_BUFFERS|macro|SICSLOWPAN_FRAGMENT_BUFFERS
 DECL|SICSLOWPAN_FRAGMENT_BUFFERS|macro|SICSLOWPAN_FRAGMENT_BUFFERS
@@ -39,6 +40,7 @@ DECL|frag_buf|variable|frag_buf
 DECL|frag_info|variable|frag_info
 DECL|fragment|function|static int fragment(struct net_buf *buf, void *ptr)
 DECL|index|member|uint8_t index;
+DECL|last_fragment|member|uint8_t last_fragment;
 DECL|last_rssi|variable|last_rssi
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
