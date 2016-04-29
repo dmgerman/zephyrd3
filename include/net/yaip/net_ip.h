@@ -27,6 +27,8 @@ DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|family|member|sa_family_t family;
+DECL|htonl|macro|htonl
+DECL|htons|macro|htons
 DECL|in4_u|member|} in4_u;
 DECL|in6_addr|member|struct in6_addr in6_addr;
 DECL|in6_addr|struct|struct in6_addr {
@@ -39,6 +41,8 @@ DECL|local_addr|member|struct net_addr *local_addr;
 DECL|local_port|member|uint16_t local_port;
 DECL|net_addr|struct|struct net_addr {
 DECL|net_tuple|struct|struct net_tuple {
+DECL|ntohl|macro|ntohl
+DECL|ntohs|macro|ntohs
 DECL|remote_addr|member|struct net_addr *remote_addr;
 DECL|remote_port|member|uint16_t remote_port;
 DECL|s4_addr16|macro|s4_addr16
