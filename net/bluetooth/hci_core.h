@@ -1,3 +1,4 @@
+DECL|BT_DEV_ADVERTISING_ID|enumerator|BT_DEV_ADVERTISING_ID,
 DECL|BT_DEV_ADVERTISING|enumerator|BT_DEV_ADVERTISING,
 DECL|BT_DEV_EXPLICIT_SCAN|enumerator|BT_DEV_EXPLICIT_SCAN,
 DECL|BT_DEV_INQUIRY|enumerator|BT_DEV_INQUIRY,
@@ -8,7 +9,6 @@ DECL|BT_DEV_READY|enumerator|BT_DEV_READY,
 DECL|BT_DEV_SCANNING|enumerator|BT_DEV_SCANNING,
 DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
 DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
-DECL|adv_addr_type|member|uint8_t adv_addr_type;
 DECL|br|member|struct bt_dev_br br;
 DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
