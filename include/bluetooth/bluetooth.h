@@ -2,16 +2,14 @@ DECL|BT_ADDR_LE_STR_LEN|macro|BT_ADDR_LE_STR_LEN
 DECL|BT_ADDR_STR_LEN|macro|BT_ADDR_STR_LEN
 DECL|BT_DATA_BYTES|macro|BT_DATA_BYTES
 DECL|BT_DATA|macro|BT_DATA
-DECL|BT_LE_ADV_ADDR_IDENTITY|enumerator|BT_LE_ADV_ADDR_IDENTITY,
-DECL|BT_LE_ADV_ADDR_NRPA|enumerator|BT_LE_ADV_ADDR_NRPA,
-DECL|BT_LE_ADV_ADDR_RPA|enumerator|BT_LE_ADV_ADDR_RPA,
+DECL|BT_LE_ADV_CONN|macro|BT_LE_ADV_CONN
+DECL|BT_LE_ADV_NCONN|macro|BT_LE_ADV_NCONN
+DECL|BT_LE_ADV_OPT_CONNECTABLE|enumerator|BT_LE_ADV_OPT_CONNECTABLE = BIT(0),
 DECL|BT_LE_ADV_PARAM|macro|BT_LE_ADV_PARAM
-DECL|BT_LE_ADV|macro|BT_LE_ADV
 DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
 DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
 DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
-DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|bt_addr_t addr;
 DECL|bt_addr_le_to_str|function|static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str, size_t len)
 DECL|bt_addr_to_str|function|static inline int bt_addr_to_str(const bt_addr_t *addr, char *str, size_t len)
@@ -32,9 +30,9 @@ DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval;
 DECL|limited_discovery|member|bool limited_discovery;
+DECL|options|member|uint8_t options;
 DECL|private|member|uint8_t private[4];
 DECL|rssi|member|int8_t rssi;
-DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|window|member|uint16_t window;
