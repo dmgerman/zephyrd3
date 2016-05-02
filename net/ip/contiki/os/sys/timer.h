@@ -1,4 +1,5 @@
 DECL|TIMER_H_|macro|TIMER_H_
+DECL|expired|member|int expired;
 DECL|init_done|member|int init_done;
 DECL|interval|member|clock_time_t interval;
 DECL|nano_timer|member|struct nano_timer nano_timer;
