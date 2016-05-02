@@ -31,7 +31,6 @@ DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
-DECL|a|member|uint64_t a;
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const uint8_t *key, const uint8_t *in, size_t len, uint8_t *out)
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
@@ -60,7 +59,6 @@ DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_smp_update_keys|function|void bt_smp_update_keys(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
-DECL|b|member|uint64_t b;
 DECL|chan|member|struct bt_l2cap_chan chan;
 DECL|compute_and_check_and_send_slave_dhcheck|function|static uint8_t compute_and_check_and_send_slave_dhcheck(struct bt_smp *smp)
 DECL|compute_and_send_master_dhcheck|function|static uint8_t compute_and_send_master_dhcheck(struct bt_smp *smp)
@@ -170,5 +168,4 @@ DECL|swap_buf|function|static void swap_buf(uint8_t *dst, const uint8_t *src, ui
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
 DECL|timeout|member|nano_thread_id_t timeout;
 DECL|tk|member|uint8_t tk[16];
-DECL|uint128_t|typedef|} uint128_t;
-DECL|xor_128|function|static void xor_128(const uint128_t *p, const uint128_t *q, uint128_t *r)
+DECL|xor_128|function|static void xor_128(const uint8_t p[16], const uint8_t q[16], uint8_t r[16])
