@@ -14,7 +14,7 @@ DECL|data|member|uint8_t data[MAX_DATA];
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|ind_params|variable|ind_params
-DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,int err)
+DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,uint8_t err)
 DECL|indicating|variable|indicating
 DECL|mainloop|function|void mainloop(void)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)

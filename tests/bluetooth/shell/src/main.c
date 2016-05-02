@@ -78,7 +78,7 @@ DECL|mainloop|function|void mainloop(void)
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
-DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, int err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
+DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, uint8_t err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
 DECL|read_params|variable|read_params
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
