@@ -1,3 +1,4 @@
+DECL|MASK_2_BITS|macro|MASK_2_BITS
 DECL|api_funcs|variable|api_funcs
 DECL|pinmux_dev_get|function|static int pinmux_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
 DECL|pinmux_dev_initialize|function|static int pinmux_dev_initialize(struct device *port)
