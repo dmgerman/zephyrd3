@@ -1,0 +1,1 @@
+DECL|_NIOS2_ASM_H|macro|_NIOS2_ASM_H
