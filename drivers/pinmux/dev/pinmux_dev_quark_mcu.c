@@ -1,5 +1,4 @@
 DECL|MASK_2_BITS|macro|MASK_2_BITS
-DECL|PINMUX_SELECT_REGISTER|macro|PINMUX_SELECT_REGISTER
 DECL|api_funcs|variable|api_funcs
 DECL|board_pmux|variable|board_pmux
 DECL|pinmux_dev_get|function|static int pinmux_dev_get(struct device *dev, uint32_t pin, uint32_t *func)
