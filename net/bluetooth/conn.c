@@ -42,6 +42,7 @@ DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct b
 DECL|bt_conn_security_changed|function|void bt_conn_security_changed(struct bt_conn *conn)
 DECL|bt_conn_security|function|int bt_conn_security(struct bt_conn *conn, bt_security_t sec)
 DECL|bt_conn_send|function|int bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
+DECL|bt_conn_set_param_le|function|static void bt_conn_set_param_le(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_conn_set_state|function|void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state)
 DECL|bt_conn_ssp_auth|function|void bt_conn_ssp_auth(struct bt_conn *conn, uint32_t passkey)
 DECL|bt_conn_ssp_get_auth|function|uint8_t bt_conn_ssp_get_auth(const struct bt_conn *conn)
