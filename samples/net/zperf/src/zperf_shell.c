@@ -1,8 +1,12 @@
 DECL|CONFIG|variable|CONFIG
 DECL|DEF_PORT|macro|DEF_PORT
 DECL|DEVICE_NAME|macro|DEVICE_NAME
+DECL|DST_IPADDR|macro|DST_IPADDR
+DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MY_PREFIX_LEN|macro|MY_PREFIX_LEN
 DECL|MY_SRC_PORT|macro|MY_SRC_PORT
 DECL|commands|variable|commands
+DECL|in_addr_dst|variable|in_addr_dst
 DECL|in_addr_my|variable|in_addr_my
 DECL|mainloop|function|void mainloop(void)
 DECL|shell_cmd_connectap|function|static void shell_cmd_connectap(int argc, char *argv[])
