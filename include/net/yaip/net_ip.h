@@ -8,6 +8,13 @@ DECL|INET6_ADDRSTRLEN|macro|INET6_ADDRSTRLEN
 DECL|IPPROTO_ICMPV6|enumerator|IPPROTO_ICMPV6 = 58,
 DECL|IPPROTO_TCP|enumerator|IPPROTO_TCP = 6,
 DECL|IPPROTO_UDP|enumerator|IPPROTO_UDP = 17,
+DECL|NET_ADDR_ANY|enumerator|NET_ADDR_ANY = 0,
+DECL|NET_ADDR_AUTOCONF|enumerator|NET_ADDR_AUTOCONF,
+DECL|NET_ADDR_DEPRECATED|enumerator|NET_ADDR_DEPRECATED,
+DECL|NET_ADDR_DHCP|enumerator|NET_ADDR_DHCP,
+DECL|NET_ADDR_MANUAL|enumerator|NET_ADDR_MANUAL,
+DECL|NET_ADDR_PREFERRED|enumerator|NET_ADDR_PREFERRED,
+DECL|NET_ADDR_TENTATIVE|enumerator|NET_ADDR_TENTATIVE = 0,
 DECL|NET_ICMPH_LEN|macro|NET_ICMPH_LEN
 DECL|NET_ICMPV4H_LEN|macro|NET_ICMPV4H_LEN
 DECL|NET_ICMPV6H_LEN|macro|NET_ICMPV6H_LEN
@@ -39,6 +46,8 @@ DECL|ip_protocol|enum|enum ip_protocol {
 DECL|ip_proto|member|enum ip_protocol ip_proto;
 DECL|local_addr|member|struct net_addr *local_addr;
 DECL|local_port|member|uint16_t local_port;
+DECL|net_addr_state|enum|enum net_addr_state {
+DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_tuple|struct|struct net_tuple {
 DECL|ntohl|macro|ntohl
