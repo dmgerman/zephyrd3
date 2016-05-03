@@ -36,4 +36,5 @@ DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struc
 DECL|net_if|struct|struct net_if {
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
+DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
