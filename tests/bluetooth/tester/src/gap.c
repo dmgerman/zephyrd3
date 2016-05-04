@@ -18,6 +18,7 @@ DECL|le_connected|function|static void le_connected(struct bt_conn *conn, uint8_
 DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|pair|function|static void pair(const uint8_t *data, uint16_t len)
 DECL|passkey_entry|function|static void passkey_entry(const uint8_t *data, uint16_t len)
+DECL|sd|variable|sd
 DECL|set_connectable|function|static void set_connectable(uint8_t *data, uint16_t len)
 DECL|set_discoverable|function|static void set_discoverable(uint8_t *data, uint16_t len)
 DECL|set_io_cap|function|static void set_io_cap(const uint8_t *data, uint16_t len)
