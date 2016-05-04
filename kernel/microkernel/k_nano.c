@@ -1,0 +1,6 @@
+DECL|_nano_task_ready|function|void _nano_task_ready(void *ptr)
+DECL|_nano_timer_task_ready|function|void _nano_timer_task_ready(void *ptr)
+DECL|_nano_unpend_tasks|function|int _nano_unpend_tasks(struct _nano_queue *queue)
+DECL|_task_nano_pend_task|function|void _task_nano_pend_task(struct _nano_queue *queue, int32_t timeout)
+DECL|_task_nano_timer_pend_task|function|void _task_nano_timer_pend_task(struct nano_timer *timer)
+DECL|_task_nano_timer_task_ready|function|void _task_nano_timer_task_ready(void *ptr)
