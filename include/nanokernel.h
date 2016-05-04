@@ -16,6 +16,9 @@ DECL|data_q|member|struct _nano_queue data_q;
 DECL|delete|function|inline void operator delete(void *ptr)
 DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
+DECL|fiber_config|struct|struct fiber_config {
+DECL|fiber_fiber_start_config|function|fiber_fiber_start_config(const struct fiber_config *config, nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
+DECL|fiber_start_config|function|fiber_start_config(const struct fiber_config *config, nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
 DECL|fiber|member|nano_thread_id_t fiber;
 DECL|head|member|void *head;
 DECL|list|member|void *list;
@@ -32,7 +35,11 @@ DECL|new|function|inline void *operator new[](size_t size)
 DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;
+DECL|prio|member|unsigned prio;
+DECL|stack_size|member|unsigned stack_size;
+DECL|stack|member|char *stack;
 DECL|tail|member|void *tail;
+DECL|task_fiber_start_config|function|task_fiber_start_config(const struct fiber_config *config,nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
 DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
 DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
 DECL|task_q|member|struct _nano_queue task_q; /* waiting tasks */
