@@ -53,34 +53,34 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|len|member|uint16_t len;
-DECL|nble_discover_params|struct|struct nble_discover_params {
 DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
 DECL|nble_gatt_attr|struct|struct nble_gatt_attr {
 DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
-DECL|nble_gatt_ind_rsp|struct|struct nble_gatt_ind_rsp {
 DECL|nble_gatt_notif_ind_params|struct|struct nble_gatt_notif_ind_params {
-DECL|nble_gatt_notif_rsp|struct|struct nble_gatt_notif_rsp {
-DECL|nble_gatt_rd_evt|struct|struct nble_gatt_rd_evt {
-DECL|nble_gatt_register_req|struct|struct nble_gatt_register_req {
-DECL|nble_gatt_register_rsp|struct|struct nble_gatt_register_rsp {
-DECL|nble_gatt_send_ind_params|struct|struct nble_gatt_send_ind_params {
-DECL|nble_gatt_send_notif_params|struct|struct nble_gatt_send_notif_params {
-DECL|nble_gatt_wr_evt|struct|struct nble_gatt_wr_evt {
-DECL|nble_gatt_wr_exec_evt|struct|struct nble_gatt_wr_exec_evt {
 DECL|nble_gatt_wr_flag|enum|enum nble_gatt_wr_flag {
 DECL|nble_gattc_characteristic|struct|struct nble_gattc_characteristic {
 DECL|nble_gattc_descriptor|struct|struct nble_gattc_descriptor {
+DECL|nble_gattc_discover_req|struct|struct nble_gattc_discover_req {
 DECL|nble_gattc_discover_rsp|struct|struct nble_gattc_discover_rsp {
 DECL|nble_gattc_included|struct|struct nble_gattc_included {
 DECL|nble_gattc_primary|struct|struct nble_gattc_primary {
-DECL|nble_gattc_read_multiple_params|struct|struct nble_gattc_read_multiple_params {
-DECL|nble_gattc_read_params|struct|struct nble_gattc_read_params {
+DECL|nble_gattc_read_multi_req|struct|struct nble_gattc_read_multi_req {
+DECL|nble_gattc_read_req|struct|struct nble_gattc_read_req {
 DECL|nble_gattc_read_rsp|struct|struct nble_gattc_read_rsp {
 DECL|nble_gattc_value_evt|struct|struct nble_gattc_value_evt {
-DECL|nble_gattc_write_params|struct|struct nble_gattc_write_params {
+DECL|nble_gattc_write_req|struct|struct nble_gattc_write_req {
 DECL|nble_gattc_write_rsp|struct|struct nble_gattc_write_rsp {
-DECL|nble_gatts_rd_reply_params|struct|struct nble_gatts_rd_reply_params {
-DECL|nble_gatts_wr_reply_params|struct|struct nble_gatts_wr_reply_params {
+DECL|nble_gatts_indicate_req|struct|struct nble_gatts_indicate_req {
+DECL|nble_gatts_indicate_rsp|struct|struct nble_gatts_indicate_rsp {
+DECL|nble_gatts_notify_req|struct|struct nble_gatts_notify_req {
+DECL|nble_gatts_notify_tx_evt|struct|struct nble_gatts_notify_tx_evt {
+DECL|nble_gatts_read_evt|struct|struct nble_gatts_read_evt {
+DECL|nble_gatts_read_reply_req|struct|struct nble_gatts_read_reply_req {
+DECL|nble_gatts_register_req|struct|struct nble_gatts_register_req {
+DECL|nble_gatts_register_rsp|struct|struct nble_gatts_register_rsp {
+DECL|nble_gatts_write_evt|struct|struct nble_gatts_write_evt {
+DECL|nble_gatts_write_exec_evt|struct|struct nble_gatts_write_exec_evt {
+DECL|nble_gatts_write_reply_req|struct|struct nble_gatts_write_reply_req {
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;

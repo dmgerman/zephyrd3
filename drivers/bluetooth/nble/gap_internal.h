@@ -118,19 +118,19 @@ DECL|nble_gap_get_version_param|struct|struct nble_gap_get_version_param {
 DECL|nble_gap_irk_info|struct|struct nble_gap_irk_info {
 DECL|nble_gap_rssi_evt|struct|struct nble_gap_rssi_evt {
 DECL|nble_gap_scan_parameters|struct|struct nble_gap_scan_parameters {
-DECL|nble_gap_service_write_params|struct|struct nble_gap_service_write_params {
+DECL|nble_gap_service_req|struct|struct nble_gap_service_req {
 DECL|nble_gap_set_adv_data_req|struct|struct nble_gap_set_adv_data_req {
 DECL|nble_gap_set_adv_params_req|struct|struct nble_gap_set_adv_params_req {
+DECL|nble_gap_set_rssi_report_req|struct|struct nble_gap_set_rssi_report_req {
+DECL|nble_gap_set_tx_power_req|struct|struct nble_gap_set_tx_power_req {
 DECL|nble_gap_sm_bond_info|struct|struct nble_gap_sm_bond_info {
 DECL|nble_gap_sm_pairing_params|struct|struct nble_gap_sm_pairing_params {
 DECL|nble_gap_sm_passkey|struct|struct nble_gap_sm_passkey {
 DECL|nble_gap_start_scan_req|struct|struct nble_gap_start_scan_req {
-DECL|nble_gap_tx_power_params|struct|struct nble_gap_tx_power_params {
 DECL|nble_get_bda_rsp|struct|struct nble_get_bda_rsp {
 DECL|nble_get_version_rsp|struct|struct nble_get_version_rsp {
 DECL|nble_link_sec|struct|struct nble_link_sec {
 DECL|nble_log_s|struct|struct nble_log_s {
-DECL|nble_rssi_report_params|struct|struct nble_rssi_report_params {
 DECL|nble_service_write_response|struct|struct nble_service_write_response {
 DECL|nble_set_bda_cb_t|typedef|typedef void (*nble_set_bda_cb_t)(int status, void *user_data);
 DECL|nble_set_bda_req|struct|struct nble_set_bda_req {
@@ -147,7 +147,7 @@ DECL|nble_sm_passkey_req_evt|struct|struct nble_sm_passkey_req_evt {
 DECL|nble_sm_security_req|struct|struct nble_sm_security_req {
 DECL|nble_sm_status_evt|struct|struct nble_sm_status_evt {
 DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
-DECL|nble_uas_rssi_calibrate|struct|struct nble_uas_rssi_calibrate {
+DECL|nble_uas_rssi_calibrate_req|struct|struct nble_uas_rssi_calibrate_req {
 DECL|nble_version|struct|struct nble_version {
 DECL|nble|struct|struct nble {
 DECL|oob_present|member|uint8_t oob_present;
