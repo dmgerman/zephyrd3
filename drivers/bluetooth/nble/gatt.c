@@ -54,10 +54,10 @@ DECL|on_nble_gatts_read_evt|function|void on_nble_gatts_read_evt(const struct nb
 DECL|on_nble_gatts_register_rsp|function|void on_nble_gatts_register_rsp(const struct nble_gatts_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gatts_write_evt|function|void on_nble_gatts_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *buf, uint8_t buflen)
 DECL|params|member|struct bt_gatt_indicate_params *params;
-DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct bt_conn *conn, const uint8_t *data, uint8_t len)
-DECL|parse_descriptor|function|static uint16_t parse_descriptor(struct bt_conn *conn, const uint8_t *data, uint8_t len)
-DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, const uint8_t *data, uint8_t len)
-DECL|parse_service|function|static uint16_t parse_service(struct bt_conn *conn, const uint8_t *data, uint8_t len)
+DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
+DECL|parse_descriptor|function|static uint16_t parse_descriptor(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
+DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
+DECL|parse_service|function|static uint16_t parse_service(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|properties|member|uint8_t properties;
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|subscriptions|variable|subscriptions
