@@ -269,6 +269,7 @@ DECL|bmi160_range|struct|struct bmi160_range {
 DECL|bmi160_reg_update|function|static inline int bmi160_reg_update(struct device *dev, uint8_t reg_addr, uint8_t mask, uint8_t val)
 DECL|bmi160_sample|union|union bmi160_sample {
 DECL|bmi160_scale|struct|struct bmi160_scale {
+DECL|dev|member|struct device *dev;
 DECL|dummy_byte|member|uint8_t dummy_byte;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_port|member|const char *gpio_port;
@@ -295,4 +296,4 @@ DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
-DECL|work|member|struct sensor_work work;
+DECL|work|member|struct nano_work work;

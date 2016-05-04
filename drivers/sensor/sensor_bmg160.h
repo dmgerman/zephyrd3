@@ -112,6 +112,7 @@ DECL|_BMG160_H_|macro|_BMG160_H_
 DECL|anymotion_handler|member|sensor_trigger_handler_t anymotion_handler;
 DECL|bmg160_device_config|struct|struct bmg160_device_config {
 DECL|bmg160_device_data|struct|struct bmg160_device_data {
+DECL|dev|member|struct device *dev;
 DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_port|member|const char *gpio_port;
@@ -127,4 +128,4 @@ DECL|raw_temp|member|int8_t raw_temp;
 DECL|scale|member|uint16_t scale;
 DECL|sem|member|struct nano_sem sem;
 DECL|trig_sem|member|struct nano_sem trig_sem;
-DECL|work|member|struct sensor_work work;
+DECL|work|member|struct nano_work work;

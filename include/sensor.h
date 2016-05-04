@@ -38,12 +38,10 @@ DECL|SENSOR_VALUE_TYPE_INT_PLUS_MICRO|enumerator|SENSOR_VALUE_TYPE_INT_PLUS_MICR
 DECL|SENSOR_VALUE_TYPE_INT|enumerator|SENSOR_VALUE_TYPE_INT,
 DECL|SENSOR_VALUE_TYPE_Q16_16|enumerator|SENSOR_VALUE_TYPE_Q16_16,
 DECL|__SENSOR_H__|macro|__SENSOR_H__
-DECL|arg|member|void *arg;
 DECL|attr_set|member|sensor_attr_set_t attr_set;
 DECL|channel_get|member|sensor_channel_get_t channel_get;
 DECL|chan|member|enum sensor_channel chan;
 DECL|dval|member|double dval;
-DECL|handler|member|sensor_work_handler_t handler;
 DECL|sample_fetch|member|sensor_sample_fetch_t sample_fetch;
 DECL|sensor_attr_set_t|typedef|typedef int (*sensor_attr_set_t)(struct device *dev,
 DECL|sensor_attr_set|function|static inline int sensor_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
@@ -66,8 +64,7 @@ DECL|sensor_trigger_type|enum|enum sensor_trigger_type {
 DECL|sensor_trigger|struct|struct sensor_trigger {
 DECL|sensor_value_type|enum|enum sensor_value_type {
 DECL|sensor_value|struct|struct sensor_value {
-DECL|sensor_work_handler_t|typedef|typedef void (*sensor_work_handler_t)(void *arg);
-DECL|sensor_work|struct|struct sensor_work {
+DECL|sensor_work_submit|function|static inline void sensor_work_submit(struct nano_work *work)
 DECL|trigger_set|member|sensor_trigger_set_t trigger_set;
 DECL|type|member|enum sensor_trigger_type type;
 DECL|type|member|enum sensor_value_type type;

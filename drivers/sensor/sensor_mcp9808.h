@@ -14,6 +14,7 @@ DECL|MCP9808_TEMP_MAX|macro|MCP9808_TEMP_MAX
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_MCP9808_H__|macro|__SENSOR_MCP9808_H__
+DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|i2c_master|member|struct device *i2c_master;
 DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
@@ -25,4 +26,4 @@ DECL|reg_val|member|uint16_t reg_val;
 DECL|sem|member|struct nano_sem sem;
 DECL|trigger_handler|member|sensor_trigger_handler_t trigger_handler;
 DECL|trig|member|struct sensor_trigger trig;
-DECL|work|member|struct sensor_work work;
+DECL|work|member|struct nano_work work;

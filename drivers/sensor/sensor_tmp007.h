@@ -22,6 +22,7 @@ DECL|TMP007_TOBJ_TH_HIGH_INT_BIT|macro|TMP007_TOBJ_TH_HIGH_INT_BIT
 DECL|TMP007_TOBJ_TH_INT_BITS|macro|TMP007_TOBJ_TH_INT_BITS
 DECL|TMP007_TOBJ_TH_LOW_INT_BIT|macro|TMP007_TOBJ_TH_LOW_INT_BIT
 DECL|_SENSOR_TMP007|macro|_SENSOR_TMP007
+DECL|dev|member|struct device *dev;
 DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
 DECL|drdy_trigger|member|struct sensor_trigger drdy_trigger;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_TMP007_FIBER_STACK_SIZE];
@@ -33,4 +34,4 @@ DECL|sample|member|uint16_t sample;
 DECL|th_handler|member|sensor_trigger_handler_t th_handler;
 DECL|th_trigger|member|struct sensor_trigger th_trigger;
 DECL|tmp007_data|struct|struct tmp007_data {
-DECL|work|member|struct sensor_work work;
+DECL|work|member|struct nano_work work;

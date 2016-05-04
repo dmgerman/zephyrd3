@@ -8,6 +8,7 @@ DECL|SX9500_REG_STAT|macro|SX9500_REG_STAT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_SX9500_H__|macro|__SENSOR_SX9500_H__
+DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
 DECL|handler_near_far|member|sensor_trigger_handler_t handler_near_far;
@@ -19,4 +20,4 @@ DECL|sx9500_data|struct|struct sx9500_data {
 DECL|sx9500_setup_interrupt|function|static inline int sx9500_setup_interrupt(struct device *dev)
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;
 DECL|trigger_near_far|member|struct sensor_trigger trigger_near_far;
-DECL|work|member|struct sensor_work work;
+DECL|work|member|struct nano_work work;

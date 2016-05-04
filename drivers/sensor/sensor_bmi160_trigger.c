@@ -12,3 +12,4 @@ DECL|bmi160_trigger_mode_init|function|int bmi160_trigger_mode_init(struct devic
 DECL|bmi160_trigger_set_acc|function|static int bmi160_trigger_set_acc(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|bmi160_trigger_set_gyr|function|static int bmi160_trigger_set_gyr(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|bmi160_trigger_set|function|int bmi160_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
+DECL|bmi160_work_handler|function|static void bmi160_work_handler(struct nano_work *work)

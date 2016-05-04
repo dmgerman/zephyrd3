@@ -6,3 +6,4 @@ DECL|sht3xd_init_interrupt|function|int sht3xd_init_interrupt(struct device *dev
 DECL|sht3xd_rh_processed_to_raw|function|static int sht3xd_rh_processed_to_raw(const struct sensor_value *val)
 DECL|sht3xd_temp_processed_to_raw|function|static uint16_t sht3xd_temp_processed_to_raw(const struct sensor_value *val)
 DECL|sht3xd_trigger_set|function|int sht3xd_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
+DECL|sht3xd_work_cb|function|static void sht3xd_work_cb(struct nano_work *work)
