@@ -4,6 +4,7 @@ DECL|lsm9ds0_gyro_api_funcs|variable|lsm9ds0_gyro_api_funcs
 DECL|lsm9ds0_gyro_attr_set|function|static int lsm9ds0_gyro_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm9ds0_gyro_channel_get|function|static int lsm9ds0_gyro_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|lsm9ds0_gyro_config|variable|lsm9ds0_gyro_config
+DECL|lsm9ds0_gyro_convert|function|static inline void lsm9ds0_gyro_convert(struct sensor_value *val, int raw_val,float numerator)
 DECL|lsm9ds0_gyro_data|variable|lsm9ds0_gyro_data
 DECL|lsm9ds0_gyro_fs_table|variable|lsm9ds0_gyro_fs_table
 DECL|lsm9ds0_gyro_get_channel|function|static inline int lsm9ds0_gyro_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm9ds0_gyro_data *data, float numerator)

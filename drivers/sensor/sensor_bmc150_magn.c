@@ -6,6 +6,7 @@ DECL|bmc150_magn_compensate_xy|function|static int32_t bmc150_magn_compensate_xy
 DECL|bmc150_magn_compensate_z|function|static int32_t bmc150_magn_compensate_z(struct bmc150_magn_trim_regs *tregs,int16_t z, uint16_t rhall)
 DECL|bmc150_magn_compute_max_odr|function|static int bmc150_magn_compute_max_odr(struct device *dev, int rep_xy, int rep_z, int *max_odr)
 DECL|bmc150_magn_config|variable|bmc150_magn_config
+DECL|bmc150_magn_convert|function|static void bmc150_magn_convert(struct sensor_value *val, int raw_val)
 DECL|bmc150_magn_data|variable|bmc150_magn_data
 DECL|bmc150_magn_init_chip|function|static int bmc150_magn_init_chip(struct device *dev)
 DECL|bmc150_magn_init|function|int bmc150_magn_init(struct device *dev)

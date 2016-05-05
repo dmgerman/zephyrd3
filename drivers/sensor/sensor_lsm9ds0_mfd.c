@@ -14,11 +14,15 @@ DECL|lsm9ds0_mfd_api_funcs|variable|lsm9ds0_mfd_api_funcs
 DECL|lsm9ds0_mfd_attr_set_accel|function|static inline int lsm9ds0_mfd_attr_set_accel(struct device *dev, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm9ds0_mfd_attr_set_magn|function|static inline int lsm9ds0_mfd_attr_set_magn(struct device *dev, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm9ds0_mfd_attr_set|function|static int lsm9ds0_mfd_attr_set(struct device *dev,enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
-DECL|lsm9ds0_mfd_channel_get_accel|function|static inline int lsm9ds0_mfd_channel_get_accel(struct device *dev,int raw_val, struct sensor_value *val)
-DECL|lsm9ds0_mfd_channel_get_magn|function|static inline int lsm9ds0_mfd_channel_get_magn(struct device *dev, int raw_val, struct sensor_value *val)
 DECL|lsm9ds0_mfd_channel_get|function|static int lsm9ds0_mfd_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|lsm9ds0_mfd_config|variable|lsm9ds0_mfd_config
+DECL|lsm9ds0_mfd_convert_accel|function|static inline void lsm9ds0_mfd_convert_accel(struct sensor_value *val, int raw_val, float scale)
+DECL|lsm9ds0_mfd_convert_magn|function|static inline void lsm9ds0_mfd_convert_magn(struct sensor_value *val, int raw_val, float scale)
 DECL|lsm9ds0_mfd_data|variable|lsm9ds0_mfd_data
+DECL|lsm9ds0_mfd_get_accel_channel|function|static inline int lsm9ds0_mfd_get_accel_channel(enum sensor_channel chan,struct sensor_value *val, struct lsm9ds0_mfd_data *data, float scale)
+DECL|lsm9ds0_mfd_get_accel|function|static inline int lsm9ds0_mfd_get_accel(struct device *dev,enum sensor_channel chan, struct sensor_value *val)
+DECL|lsm9ds0_mfd_get_magn_channel|function|static inline int lsm9ds0_mfd_get_magn_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm9ds0_mfd_data *data, float scale)
+DECL|lsm9ds0_mfd_get_magn|function|static inline int lsm9ds0_mfd_get_magn(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|lsm9ds0_mfd_init_chip|function|static int lsm9ds0_mfd_init_chip(struct device *dev)
 DECL|lsm9ds0_mfd_init|function|int lsm9ds0_mfd_init(struct device *dev)
 DECL|lsm9ds0_mfd_magn_fs_map|variable|lsm9ds0_mfd_magn_fs_map
