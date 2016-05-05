@@ -12,6 +12,7 @@ DECL|STACK_CANARY_INIT|macro|STACK_CANARY_INIT
 DECL|_Cstart|function|FUNC_NORETURN void _Cstart(void)
 DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|_MOVE_INSTR|macro|_MOVE_INSTR
+DECL|_MOVE_INSTR|macro|_MOVE_INSTR
 DECL|__idle_tsc|variable|__idle_tsc
 DECL|__main_tsc|variable|__main_tsc
 DECL|__start_tsc|variable|__start_tsc
