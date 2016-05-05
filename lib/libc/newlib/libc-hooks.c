@@ -1,8 +1,6 @@
 DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
-DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|USED_RAM_END_ADDR|macro|USED_RAM_END_ADDR
-DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|__stdin_hook_install|function|void __stdin_hook_install(unsigned char (*hook)(void))
