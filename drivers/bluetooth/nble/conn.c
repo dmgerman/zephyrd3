@@ -21,6 +21,7 @@ DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_le_conn_params_valid|function|static inline bool bt_le_conn_params_valid(uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|bt_le_set_auto_conn|function|int bt_le_set_auto_conn(bt_addr_le_t *addr,const struct bt_le_conn_param *param)
 DECL|callback_list|variable|callback_list
+DECL|conn_get|function|static struct bt_conn *conn_get(const bt_addr_le_t *peer)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conns|variable|conns
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
