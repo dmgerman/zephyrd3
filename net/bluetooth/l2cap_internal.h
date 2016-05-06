@@ -18,6 +18,12 @@ DECL|BT_L2CAP_ERR_KEY_SIZE|macro|BT_L2CAP_ERR_KEY_SIZE
 DECL|BT_L2CAP_ERR_NO_RESOURCES|macro|BT_L2CAP_ERR_NO_RESOURCES
 DECL|BT_L2CAP_ERR_PSM_NOT_SUPP|macro|BT_L2CAP_ERR_PSM_NOT_SUPP
 DECL|BT_L2CAP_ERR_SCID_IN_USE|macro|BT_L2CAP_ERR_SCID_IN_USE
+DECL|BT_L2CAP_INFO_FEAT_MASK|macro|BT_L2CAP_INFO_FEAT_MASK
+DECL|BT_L2CAP_INFO_FIXED_CHAN|macro|BT_L2CAP_INFO_FIXED_CHAN
+DECL|BT_L2CAP_INFO_NOTSUPP|macro|BT_L2CAP_INFO_NOTSUPP
+DECL|BT_L2CAP_INFO_REQ|macro|BT_L2CAP_INFO_REQ
+DECL|BT_L2CAP_INFO_RSP|macro|BT_L2CAP_INFO_RSP
+DECL|BT_L2CAP_INFO_SUCCESS|macro|BT_L2CAP_INFO_SUCCESS
 DECL|BT_L2CAP_LE_CONN_REQ|macro|BT_L2CAP_LE_CONN_REQ
 DECL|BT_L2CAP_LE_CONN_RSP|macro|BT_L2CAP_LE_CONN_RSP
 DECL|BT_L2CAP_LE_CREDITS|macro|BT_L2CAP_LE_CREDITS
@@ -37,6 +43,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
@@ -46,6 +54,8 @@ DECL|bt_l2cap_disconn_req|struct|struct bt_l2cap_disconn_req {
 DECL|bt_l2cap_disconn_rsp|struct|struct bt_l2cap_disconn_rsp {
 DECL|bt_l2cap_fixed_chan|struct|struct bt_l2cap_fixed_chan {
 DECL|bt_l2cap_hdr|struct|struct bt_l2cap_hdr {
+DECL|bt_l2cap_info_req|struct|struct bt_l2cap_info_req {
+DECL|bt_l2cap_info_rsp|struct|struct bt_l2cap_info_rsp {
 DECL|bt_l2cap_le_conn_req|struct|struct bt_l2cap_le_conn_req {
 DECL|bt_l2cap_le_conn_rsp|struct|struct bt_l2cap_le_conn_rsp {
 DECL|bt_l2cap_le_credits|struct|struct bt_l2cap_le_credits {
@@ -57,6 +67,7 @@ DECL|code|member|uint8_t code;
 DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
 DECL|credits|member|uint16_t credits;
+DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
@@ -76,7 +87,10 @@ DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
+DECL|result|member|uint16_t result;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|timeout|member|uint16_t timeout;
+DECL|type|member|uint16_t type;
+DECL|type|member|uint16_t type;
