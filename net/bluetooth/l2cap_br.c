@@ -1,5 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|BT_L2CAP_FLAG_INFO_DONE|enumerator|BT_L2CAP_FLAG_INFO_DONE, /* remote l2cap info is done */
+DECL|BT_L2CAP_FLAG_INFO_PENDING|enumerator|BT_L2CAP_FLAG_INFO_PENDING, /* retrieving remote l2cap info */
 DECL|L2CAP_BR_DYN_CID_END|macro|L2CAP_BR_DYN_CID_END
 DECL|L2CAP_BR_DYN_CID_START|macro|L2CAP_BR_DYN_CID_START
 DECL|L2CAP_BR_MIN_MTU|macro|L2CAP_BR_MIN_MTU
@@ -16,13 +18,21 @@ DECL|bt_l2cap_br_pool|variable|bt_l2cap_br_pool
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_br|struct|struct bt_l2cap_br {
 DECL|chan|member|struct bt_l2cap_chan chan;
+DECL|flags|member|atomic_t flags[1];
 DECL|ident|member|uint8_t ident;
+DECL|info_feat_mask|member|uint32_t info_feat_mask;
+DECL|info_fixed_chan|member|uint8_t info_fixed_chan;
+DECL|info_ident|member|uint8_t info_ident;
 DECL|l2cap_br_accept|function|static int l2cap_br_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_br_chan_add|function|static int l2cap_br_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_alloc_cid|function|static void l2cap_br_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
+DECL|l2cap_br_chan_get|function|static struct bt_l2cap_br *l2cap_br_chan_get(struct bt_conn *conn)
 DECL|l2cap_br_connected|function|static void l2cap_br_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_disconnected|function|static void l2cap_br_disconnected(struct bt_l2cap_chan *chan)
+DECL|l2cap_br_get_ident|function|static uint8_t l2cap_br_get_ident(struct bt_conn *conn)
+DECL|l2cap_br_get_info|function|static void l2cap_br_get_info(struct bt_l2cap_br *l2cap, uint16_t info_type)
 DECL|l2cap_br_info_req|function|static int l2cap_br_info_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
+DECL|l2cap_br_info_rsp|function|static int l2cap_br_info_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_recv|function|static void l2cap_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_br_send_reject|function|static void l2cap_br_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason)
 DECL|l2cap_br_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_br_server_lookup_psm(uint16_t psm)
