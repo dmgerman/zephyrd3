@@ -4,10 +4,9 @@ DECL|DBG_COUNTER_INIT|macro|DBG_COUNTER_INIT
 DECL|DBG_COUNTER_INIT|macro|DBG_COUNTER_INIT
 DECL|DBG_COUNTER_RESULT|macro|DBG_COUNTER_RESULT
 DECL|DBG_COUNTER_RESULT|macro|DBG_COUNTER_RESULT
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_spi_dw_is_controller_ready|function|static inline bool _spi_dw_is_controller_ready(struct device *dev)
 DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api

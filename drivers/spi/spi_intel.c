@@ -1,11 +1,10 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|DEFINE_CLEAR_BIT_OP|macro|DEFINE_CLEAR_BIT_OP
 DECL|DEFINE_MM_REG_READ|macro|DEFINE_MM_REG_READ
 DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
 DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
 DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *dev)
 DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
 DECL|completed|function|static void completed(struct device *dev, uint32_t error)
