@@ -12,10 +12,6 @@ DECL|r0|variable|r0
 DECL|r0|variable|r0
 DECL|r0|variable|r0
 DECL|r0|variable|r0
-DECL|r0|variable|r0
-DECL|r0|variable|r0
-DECL|r0|variable|r0
-DECL|r0|variable|r0
 DECL|r10|variable|r10
 DECL|r10|variable|r10
 DECL|r11|variable|r11
@@ -38,6 +34,10 @@ DECL|r18|variable|r18
 DECL|r18|variable|r18
 DECL|r19|variable|r19
 DECL|r19|variable|r19
+DECL|r1|variable|r1
+DECL|r1|variable|r1
+DECL|r1|variable|r1
+DECL|r1|variable|r1
 DECL|r1|variable|r1
 DECL|r1|variable|r1
 DECL|r20|variable|r20
