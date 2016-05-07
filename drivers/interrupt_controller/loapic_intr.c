@@ -38,6 +38,8 @@ DECL|LOCKED_LINT1|macro|LOCKED_LINT1
 DECL|LOCKED_PMC|macro|LOCKED_PMC
 DECL|LOCKED_THERMAL|macro|LOCKED_THERMAL
 DECL|LOCKED_TIMER|macro|LOCKED_TIMER
+DECL|LOPIC_SSPND_BITS_PER_IRQ|macro|LOPIC_SSPND_BITS_PER_IRQ
+DECL|LOPIC_SUSPEND_BITS_REQD|macro|LOPIC_SUSPEND_BITS_REQD
 DECL|MODE_FIXED|macro|MODE_FIXED
 DECL|MODE_INIT|macro|MODE_INIT
 DECL|MODE_LOWEST|macro|MODE_LOWEST
@@ -58,3 +60,7 @@ DECL|_loapic_int_vec_set|function|void _loapic_int_vec_set(unsigned int irq, /* 
 DECL|_loapic_irq_disable|function|void _loapic_irq_disable(unsigned int irq)
 DECL|_loapic_irq_enable|function|void _loapic_irq_enable(unsigned int irq)
 DECL|_loapic_isr_vector_get|function|int _loapic_isr_vector_get(void)
+DECL|loapic_pm_ops|variable|loapic_pm_ops
+DECL|loapic_resume|function|int loapic_resume(struct device *port, int pm_policy)
+DECL|loapic_suspend_buf|variable|loapic_suspend_buf
+DECL|loapic_suspend|function|static int loapic_suspend(struct device *port, int pm_policy)
