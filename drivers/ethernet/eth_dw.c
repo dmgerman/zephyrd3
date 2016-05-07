@@ -1,3 +1,5 @@
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|eth_0_runtime|variable|eth_0_runtime
 DECL|eth_config_0_irq|function|static void eth_config_0_irq(struct device *port)
 DECL|eth_config_0|variable|eth_config_0
