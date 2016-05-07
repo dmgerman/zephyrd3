@@ -8,11 +8,6 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
-DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
-DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
-DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
-DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
-DECL|SPI_DW_IRQ_FLAGS|macro|SPI_DW_IRQ_FLAGS
 DECL|_spi_dw_is_controller_ready|function|static inline bool _spi_dw_is_controller_ready(struct device *dev)
 DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api
