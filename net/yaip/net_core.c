@@ -1,5 +1,6 @@
 DECL|CONFIG_NET_RX_STACK_SIZE|macro|CONFIG_NET_RX_STACK_SIZE
-DECL|DEBUG|macro|DEBUG
+DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|net_init|function|static int net_init(struct device *unused)
 DECL|net_recv|function|int net_recv(struct net_if *iface, struct net_buf *buf)
