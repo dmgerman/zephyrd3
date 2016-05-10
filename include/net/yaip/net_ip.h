@@ -56,7 +56,11 @@ DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_a
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
+DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(struct in6_addr *addr)
+DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(uint8_t *addr1, uint8_t *addr2, uint8_t length)
+DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
+DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
 DECL|net_tuple|struct|struct net_tuple {
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|ntohl|macro|ntohl
