@@ -34,6 +34,7 @@ DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_ga
 DECL|data|member|const void *data;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
+DECL|gatt_get_private|function|static void *gatt_get_private(struct bt_conn *conn)
 DECL|gatt_read_multiple|function|static int gatt_read_multiple(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
