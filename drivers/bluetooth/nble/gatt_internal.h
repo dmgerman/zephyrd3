@@ -12,7 +12,6 @@ DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(struct bt_conn *conn, uint8_t err,
-DECL|bt_gatt_write_params|struct|struct bt_gatt_write_params {
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_notify_func_t cback;
@@ -58,6 +57,7 @@ DECL|nble_gatt_attr|struct|struct nble_gatt_attr {
 DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
 DECL|nble_gatt_notif_ind_params|struct|struct nble_gatt_notif_ind_params {
 DECL|nble_gatt_wr_flag|enum|enum nble_gatt_wr_flag {
+DECL|nble_gatt_write_params|struct|struct nble_gatt_write_params {
 DECL|nble_gattc_characteristic|struct|struct nble_gattc_characteristic {
 DECL|nble_gattc_descriptor|struct|struct nble_gattc_descriptor {
 DECL|nble_gattc_discover_req|struct|struct nble_gattc_discover_req {
@@ -120,5 +120,5 @@ DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|uuid|member|struct bt_uuid_128 uuid;
 DECL|value_handle|member|uint16_t value_handle;
 DECL|with_resp|member|uint8_t with_resp;
-DECL|wr_params|member|struct bt_gatt_write_params wr_params;
-DECL|wr_params|member|struct bt_gatt_write_params wr_params;
+DECL|wr_params|member|struct nble_gatt_write_params wr_params;
+DECL|wr_params|member|struct nble_gatt_write_params wr_params;

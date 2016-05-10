@@ -99,6 +99,7 @@ DECL|uuid|variable|uuid
 DECL|value|member|const uint8_t *value;
 DECL|write_long_rsp|function|static void write_long_rsp(struct bt_conn *conn, uint8_t err)
 DECL|write_long|function|static void write_long(uint8_t *data, uint16_t len)
+DECL|write_params|variable|write_params
 DECL|write_rsp|function|static void write_rsp(struct bt_conn *conn, uint8_t err)
 DECL|write_value|function|static ssize_t write_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
 DECL|write_without_rsp|function|static void write_without_rsp(uint8_t *data, uint16_t len, uint8_t op, bool sign)

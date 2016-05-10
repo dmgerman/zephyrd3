@@ -64,10 +64,12 @@ DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
 DECL|bt_gatt_rsp_func_t|typedef|typedef void (*bt_gatt_rsp_func_t)(struct bt_conn *conn, uint8_t err);
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
+DECL|bt_gatt_write_params|struct|struct bt_gatt_write_params {
 DECL|ccc_handle|member|uint16_t ccc_handle;
 DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
+DECL|data|member|const void *data;
 DECL|data|member|const void *data;
 DECL|description|member|uint16_t description;
 DECL|end_handle|member|uint16_t end_handle;
@@ -80,13 +82,17 @@ DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
+DECL|func|member|bt_gatt_rsp_func_t func;
 DECL|handle_count|member|size_t handle_count;
 DECL|handles|member|uint16_t *handles;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|length|member|uint16_t length;
 DECL|len|member|uint16_t len;
 DECL|name_space|member|uint8_t name_space;
 DECL|notify|member|bt_gatt_notify_func_t notify;
+DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
 DECL|peer|member|bt_addr_le_t peer;
 DECL|perm|member|uint8_t perm;

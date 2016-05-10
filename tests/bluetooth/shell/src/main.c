@@ -92,3 +92,4 @@ DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *add
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
+DECL|write_params|variable|write_params
