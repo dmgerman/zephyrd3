@@ -14,6 +14,7 @@ DECL|i2c_qmsi_resume|function|static int i2c_qmsi_resume(struct device *dev)
 DECL|i2c_qmsi_suspend|function|static int i2c_qmsi_suspend(struct device *dev)
 DECL|i2c_qmsi_transfer|function|static int i2c_qmsi_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t addr)
 DECL|instance|member|qm_i2c_t instance; /* Controller instance. */
+DECL|sem|member|struct nano_sem sem;
 DECL|sync|member|device_sync_call_t sync;
 DECL|transfer_complete|function|static void transfer_complete(void *data, int rc, qm_i2c_status_t status, uint32_t len)
 DECL|transfer_status|member|int transfer_status;
