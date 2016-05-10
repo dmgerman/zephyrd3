@@ -54,6 +54,7 @@ DECL|net_addr_state|enum|enum net_addr_state {
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
+DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(struct in6_addr *addr)
 DECL|net_tuple|struct|struct net_tuple {
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|ntohl|macro|ntohl
