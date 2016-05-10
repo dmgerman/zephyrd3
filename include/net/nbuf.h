@@ -16,6 +16,7 @@ DECL|__NBUF_H|macro|__NBUF_H
 DECL|appdatalen|member|uint16_t appdatalen;
 DECL|appdata|member|uint8_t *appdata; /* application data */
 DECL|context|member|struct net_context *context;
+DECL|ext_bitmap|member|uint8_t ext_bitmap;
 DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
 DECL|family|member|uint8_t family; /* IPv4 vs IPv6 */
 DECL|iface|member|struct net_if *iface;
@@ -24,6 +25,7 @@ DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
 DECL|net_nbuf_appdatalen|macro|net_nbuf_appdatalen
 DECL|net_nbuf_appdata|macro|net_nbuf_appdata
 DECL|net_nbuf_context|macro|net_nbuf_context
+DECL|net_nbuf_ext_bitmap|macro|net_nbuf_ext_bitmap
 DECL|net_nbuf_ext_len|macro|net_nbuf_ext_len
 DECL|net_nbuf_family|macro|net_nbuf_family
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
@@ -40,6 +42,7 @@ DECL|net_nbuf_len|macro|net_nbuf_len
 DECL|net_nbuf_ll_dest|macro|net_nbuf_ll_dest
 DECL|net_nbuf_ll_reserve|macro|net_nbuf_ll_reserve
 DECL|net_nbuf_ll_src|macro|net_nbuf_ll_src
+DECL|net_nbuf_next_hdr|macro|net_nbuf_next_hdr
 DECL|net_nbuf_ref|macro|net_nbuf_ref
 DECL|net_nbuf_reserve|macro|net_nbuf_reserve
 DECL|net_nbuf_set_src_ipv6_addr|macro|net_nbuf_set_src_ipv6_addr
@@ -49,5 +52,6 @@ DECL|net_nbuf_type|macro|net_nbuf_type
 DECL|net_nbuf_udp_data|macro|net_nbuf_udp_data
 DECL|net_nbuf_unref|macro|net_nbuf_unref
 DECL|net_nbuf|struct|struct net_nbuf {
+DECL|next_hdr|member|uint8_t *next_hdr;
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|type|member|enum net_nbuf_type type;
