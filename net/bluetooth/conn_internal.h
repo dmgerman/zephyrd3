@@ -34,6 +34,7 @@ DECL|keys|member|struct bt_keys *keys;
 DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
 DECL|lmp_ext_feat_capable|macro|lmp_ext_feat_capable
+DECL|lmp_ssp_host_supported|macro|lmp_ssp_host_supported
 DECL|pairing_method|member|uint8_t pairing_method;
 DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|ref|member|atomic_t ref;

@@ -8,6 +8,8 @@ DECL|BT_L2CAP_CONN_PARAM_ACCEPTED|macro|BT_L2CAP_CONN_PARAM_ACCEPTED
 DECL|BT_L2CAP_CONN_PARAM_REJECTED|macro|BT_L2CAP_CONN_PARAM_REJECTED
 DECL|BT_L2CAP_CONN_PARAM_REQ|macro|BT_L2CAP_CONN_PARAM_REQ
 DECL|BT_L2CAP_CONN_PARAM_RSP|macro|BT_L2CAP_CONN_PARAM_RSP
+DECL|BT_L2CAP_CONN_REQ|macro|BT_L2CAP_CONN_REQ
+DECL|BT_L2CAP_CONN_RSP|macro|BT_L2CAP_CONN_RSP
 DECL|BT_L2CAP_DISCONN_REQ|macro|BT_L2CAP_DISCONN_REQ
 DECL|BT_L2CAP_DISCONN_RSP|macro|BT_L2CAP_DISCONN_RSP
 DECL|BT_L2CAP_ERR_AUTHENTICATION|macro|BT_L2CAP_ERR_AUTHENTICATION
@@ -18,6 +20,7 @@ DECL|BT_L2CAP_ERR_KEY_SIZE|macro|BT_L2CAP_ERR_KEY_SIZE
 DECL|BT_L2CAP_ERR_NO_RESOURCES|macro|BT_L2CAP_ERR_NO_RESOURCES
 DECL|BT_L2CAP_ERR_PSM_NOT_SUPP|macro|BT_L2CAP_ERR_PSM_NOT_SUPP
 DECL|BT_L2CAP_ERR_SCID_IN_USE|macro|BT_L2CAP_ERR_SCID_IN_USE
+DECL|BT_L2CAP_ERR_SEC_BLOCK|macro|BT_L2CAP_ERR_SEC_BLOCK
 DECL|BT_L2CAP_INFO_FEAT_MASK|macro|BT_L2CAP_INFO_FEAT_MASK
 DECL|BT_L2CAP_INFO_FIXED_CHAN|macro|BT_L2CAP_INFO_FIXED_CHAN
 DECL|BT_L2CAP_INFO_NOTSUPP|macro|BT_L2CAP_INFO_NOTSUPP
@@ -46,12 +49,16 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
 DECL|bt_l2cap_cmd_reject_cid_data|struct|struct bt_l2cap_cmd_reject_cid_data {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conn_param_req|struct|struct bt_l2cap_conn_param_req {
 DECL|bt_l2cap_conn_param_rsp|struct|struct bt_l2cap_conn_param_rsp {
+DECL|bt_l2cap_conn_req|struct|struct bt_l2cap_conn_req {
+DECL|bt_l2cap_conn_rsp|struct|struct bt_l2cap_conn_rsp {
 DECL|bt_l2cap_disconn_req|struct|struct bt_l2cap_disconn_req {
 DECL|bt_l2cap_disconn_rsp|struct|struct bt_l2cap_disconn_rsp {
 DECL|bt_l2cap_fixed_chan|struct|struct bt_l2cap_fixed_chan {
@@ -75,6 +82,7 @@ DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
+DECL|dcid|member|uint16_t dcid;
 DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
@@ -87,14 +95,19 @@ DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
 DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
+DECL|result|member|uint16_t result;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
+DECL|scid|member|uint16_t scid;
+DECL|scid|member|uint16_t scid;
+DECL|status|member|uint16_t status;
 DECL|timeout|member|uint16_t timeout;
 DECL|type|member|uint16_t type;
 DECL|type|member|uint16_t type;
