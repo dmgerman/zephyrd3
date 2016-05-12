@@ -1,5 +1,6 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|bt_conn_auth_cancel|function|int bt_conn_auth_cancel(struct bt_conn *conn)
 DECL|bt_conn_auth_cb_register|function|int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb)
 DECL|bt_conn_auth_pairing_confirm|function|int bt_conn_auth_pairing_confirm(struct bt_conn *conn)
@@ -24,6 +25,7 @@ DECL|callback_list|variable|callback_list
 DECL|conn_get|function|static struct bt_conn *conn_get(const bt_addr_le_t *peer)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conns|variable|conns
+DECL|le_conn_update|function|static void le_conn_update(struct nano_work *work)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|static void notify_le_param_updated(struct bt_conn *conn)
