@@ -31,7 +31,10 @@ DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn,s
 DECL|bt_gatt_uuid_memcpy|function|static uint8_t bt_gatt_uuid_memcpy(uint8_t *buf, const struct bt_uuid *uuid)
 DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length, bool sign)
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
+DECL|conn|member|struct bt_conn *conn;
 DECL|data|member|const void *data;
+DECL|flag|member|uint8_t flag;
+DECL|flush_all|function|static uint8_t flush_all(const struct bt_gatt_attr *attr, void *user_data)
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_get_private|function|static void *gatt_get_private(struct bt_conn *conn)
@@ -42,6 +45,7 @@ DECL|gatt_write_ccc_rsp|function|static void gatt_write_ccc_rsp(struct bt_conn *
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|len|member|uint16_t len;
 DECL|nble_gatt_service|struct|struct nble_gatt_service {
+DECL|nble_gatts_flush_all|struct|struct nble_gatts_flush_all {
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
 DECL|notify|function|static int notify(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *data, size_t len)
@@ -54,6 +58,7 @@ DECL|on_nble_gatts_indicate_rsp|function|void on_nble_gatts_indicate_rsp(const s
 DECL|on_nble_gatts_read_evt|function|void on_nble_gatts_read_evt(const struct nble_gatts_read_evt *ev)
 DECL|on_nble_gatts_register_rsp|function|void on_nble_gatts_register_rsp(const struct nble_gatts_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gatts_write_evt|function|void on_nble_gatts_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *buf, uint8_t buflen)
+DECL|on_nble_gatts_write_exec_evt|function|void on_nble_gatts_write_exec_evt(const struct nble_gatts_write_exec_evt *evt)
 DECL|params|member|struct bt_gatt_indicate_params *params;
 DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|parse_descriptor|function|static uint16_t parse_descriptor(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
@@ -61,6 +66,7 @@ DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, 
 DECL|parse_service|function|static uint16_t parse_service(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|properties|member|uint8_t properties;
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
+DECL|status|member|int status;
 DECL|subscriptions|variable|subscriptions
 DECL|svc_count|variable|svc_count
 DECL|svc_db|variable|svc_db
