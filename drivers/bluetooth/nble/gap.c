@@ -15,6 +15,7 @@ DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
+DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
 DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(struct bt_storage *bt_storage)
 DECL|clear_bonds|function|static void clear_bonds(const bt_addr_le_t *addr)
@@ -38,6 +39,7 @@ DECL|on_nble_up|function|void on_nble_up(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|send_dm_config|function|static void send_dm_config(void)
 DECL|set_ad|function|static int set_ad(struct bt_eir_data *eir, const struct bt_data *ad, size_t ad_len)
+DECL|sm_error|function|static int sm_error(struct bt_conn *conn, uint8_t reason)
 DECL|storage|variable|storage
 DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
 DECL|valid_le_scan_param|function|static bool valid_le_scan_param(const struct bt_le_scan_param *param)
