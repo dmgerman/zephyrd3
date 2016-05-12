@@ -38,7 +38,7 @@ DECL|on_nble_sm_status_evt|function|void on_nble_sm_status_evt(const struct nble
 DECL|on_nble_up|function|void on_nble_up(void)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|send_dm_config|function|static void send_dm_config(void)
-DECL|set_ad|function|static int set_ad(struct bt_eir_data *eir, const struct bt_data *ad, size_t ad_len)
+DECL|set_ad|function|static int set_ad(struct nble_eir_data *eir, const struct bt_data *ad, size_t ad_len)
 DECL|sm_error|function|static int sm_error(struct bt_conn *conn, uint8_t reason)
 DECL|storage|variable|storage
 DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv_param *param)
