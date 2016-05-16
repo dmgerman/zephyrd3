@@ -10,7 +10,7 @@ DECL|context_sem_give|function|static void context_sem_give(struct nano_sem *cha
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
 DECL|handle_tcp_connection|function|static int handle_tcp_connection(struct psock *p, enum tcp_event_type type, struct net_buf *buf)
-DECL|last_sent|member|struct net_buf *last_sent;
+DECL|net_context_find_internal_connection|function|struct net_context *net_context_find_internal_connection(void *conn)
 DECL|net_context_get_connection_status|function|int net_context_get_connection_status(struct net_context *context)
 DECL|net_context_get_internal_connection|function|void *net_context_get_internal_connection(struct net_context *context)
 DECL|net_context_get_queue|function|struct nano_fifo *net_context_get_queue(struct net_context *context)
@@ -23,9 +23,13 @@ DECL|net_context_put|function|void net_context_put(struct net_context *context)
 DECL|net_context_set_connection_status|function|void net_context_set_connection_status(struct net_context *context, int status)
 DECL|net_context_set_internal_connection|function|void net_context_set_internal_connection(struct net_context *context, void *conn)
 DECL|net_context_set_receiver_registered|function|void net_context_set_receiver_registered(struct net_context *context)
-DECL|net_context_tcp_init|function|int net_context_tcp_init(struct net_context *context, enum net_tcp_type tcp_type)
+DECL|net_context_tcp_get_pending|function|struct net_buf *net_context_tcp_get_pending(struct net_context *context)
+DECL|net_context_tcp_init|function|int net_context_tcp_init(struct net_context *context, struct net_buf *buf, enum net_tcp_type tcp_type)
 DECL|net_context_tcp_send|function|int net_context_tcp_send(struct net_buf *buf)
+DECL|net_context_tcp_set_pending|function|void net_context_tcp_set_pending(struct net_context *context, struct net_buf *buf)
+DECL|net_context_unset_receiver_registered|function|void net_context_unset_receiver_registered(struct net_context *context)
 DECL|net_context|struct|struct net_context {
+DECL|pending|member|struct net_buf *pending;
 DECL|ps|member|struct psock ps;
 DECL|receiver_registered|member|bool receiver_registered;
 DECL|rx_queue|member|struct nano_fifo rx_queue;

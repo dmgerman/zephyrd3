@@ -60,7 +60,7 @@ DECL|uip_listenports|variable|uip_listenports
 DECL|uip_listen|function|uip_listen(uint16_t port)
 DECL|uip_lladdr|variable|uip_lladdr
 DECL|uip_lladdr|variable|uip_lladdr
-DECL|uip_process|function|uip_process(struct net_buf *buf, uint8_t flag)
+DECL|uip_process|function|uip_process(struct net_buf **buf_out, uint8_t flag)
 DECL|uip_reass_on|variable|uip_reass_on
 DECL|uip_reass_over|function|uip_reass_over(struct net_buf *buf)
 DECL|uip_reass_timer|variable|uip_reass_timer

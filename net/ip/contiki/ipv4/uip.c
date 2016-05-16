@@ -65,7 +65,7 @@ DECL|uip_lladdr|variable|uip_lladdr
 DECL|uip_lladdr|variable|uip_lladdr
 DECL|uip_netmask|variable|uip_netmask
 DECL|uip_netmask|variable|uip_netmask
-DECL|uip_process|function|uip_process(struct net_buf *buf, uint8_t flag)
+DECL|uip_process|function|uip_process(struct net_buf **buf_out, uint8_t flag)
 DECL|uip_reassbitmap|variable|uip_reassbitmap
 DECL|uip_reassbuf|variable|uip_reassbuf
 DECL|uip_reassflags|variable|uip_reassflags
