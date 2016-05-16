@@ -40,7 +40,7 @@ DECL|data|member|uint8_t data[];
 DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint8_t flags;
 DECL|flag|member|uint8_t flag;
-DECL|flag|member|uint8_t flag; /* Cf. enum nble_gatt_wr_flag */
+DECL|flag|member|uint8_t flag;
 DECL|func|member|bt_att_func_t func;
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range;
 DECL|handle|member|uint16_t handle;

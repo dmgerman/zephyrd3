@@ -48,6 +48,7 @@ DECL|addr_count|member|uint8_t addr_count;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_le_t addr;
+DECL|addr|member|bt_addr_le_t addr;
 DECL|adv_type|member|uint8_t adv_type;
 DECL|ad|member|struct nble_eir_data ad;
 DECL|appearance|member|uint16_t appearance;
