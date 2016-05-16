@@ -37,10 +37,13 @@ DECL|UIP_STAT|macro|UIP_STAT
 DECL|bitmap_bits|variable|bitmap_bits
 DECL|chksum|function|chksum(uint16_t sum, const uint8_t *data, uint16_t len)
 DECL|c|variable|c
+DECL|handle_tcp_retransmit_timer|function|static inline void handle_tcp_retransmit_timer(struct net_buf *not_used, void *ptr)
 DECL|ipid|variable|ipid
 DECL|iss|variable|iss
 DECL|lastport|variable|lastport
 DECL|opt|variable|opt
+DECL|tcp_cancel_retrans_timer|function|static inline void tcp_cancel_retrans_timer(struct uip_conn *conn)
+DECL|tcp_set_retrans_timer|function|static inline void tcp_set_retrans_timer(struct uip_conn *conn)
 DECL|tmp16|variable|tmp16
 DECL|uip_acc32|variable|uip_acc32
 DECL|uip_add32|function|uip_add32(uint8_t *op32, uint16_t op16)
