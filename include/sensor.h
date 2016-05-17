@@ -64,7 +64,6 @@ DECL|sensor_trigger_type|enum|enum sensor_trigger_type {
 DECL|sensor_trigger|struct|struct sensor_trigger {
 DECL|sensor_value_type|enum|enum sensor_value_type {
 DECL|sensor_value|struct|struct sensor_value {
-DECL|sensor_work_submit|function|static inline void sensor_work_submit(struct nano_work *work)
 DECL|trigger_set|member|sensor_trigger_set_t trigger_set;
 DECL|type|member|enum sensor_trigger_type type;
 DECL|type|member|enum sensor_value_type type;
