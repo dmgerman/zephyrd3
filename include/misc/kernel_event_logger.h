@@ -7,6 +7,8 @@ DECL|KERNEL_EVENT_LOGGER_TASK_MON_TASK_STATE_CHANGE_EVENT_ID|macro|KERNEL_EVENT_
 DECL|__KERNEL_EVENT_LOGGER_H__|macro|__KERNEL_EVENT_LOGGER_H__
 DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
 DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
+DECL|_sys_k_get_time|function|static inline uint32_t _sys_k_get_time(void)
+DECL|_sys_k_get_time|function|static inline uint32_t _sys_k_get_time(void)
 DECL|sys_k_event_logger_get_mask|function|static inline int sys_k_event_logger_get_mask(void)
 DECL|sys_k_event_logger_get_monitor_mask|function|static inline int sys_k_event_logger_get_monitor_mask(void)
 DECL|sys_k_event_logger_get_wait_timeout|macro|sys_k_event_logger_get_wait_timeout
@@ -20,3 +22,4 @@ DECL|sys_k_event_logger_set_mask|function|static inline void sys_k_event_logger_
 DECL|sys_k_event_logger_set_monitor_mask|function|static inline void sys_k_event_logger_set_monitor_mask(int value)
 DECL|sys_k_event_logger|variable|sys_k_event_logger
 DECL|sys_k_must_log_event|function|static inline int sys_k_must_log_event(int event_type)
+DECL|sys_k_timer_func|typedef|typedef uint32_t (*sys_k_timer_func)(void);
