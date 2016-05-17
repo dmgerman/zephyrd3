@@ -1,5 +1,7 @@
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
 DECL|NET_IF_INIT|macro|NET_IF_INIT
+DECL|NET_IF_MAX_IPV4_ADDR|macro|NET_IF_MAX_IPV4_ADDR
+DECL|NET_IF_MAX_IPV4_MADDR|macro|NET_IF_MAX_IPV4_MADDR
 DECL|NET_IF_MAX_IPV6_ADDR|macro|NET_IF_MAX_IPV6_ADDR
 DECL|NET_IF_MAX_IPV6_MADDR|macro|NET_IF_MAX_IPV6_MADDR
 DECL|NET_IF_MAX_IPV6_PREFIX|macro|NET_IF_MAX_IPV6_PREFIX
@@ -13,6 +15,7 @@ DECL|dad_timer|member|struct nano_timer dad_timer;
 DECL|dev|member|struct device *dev;
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|init|member|void (*init)(struct net_if *iface);
+DECL|ipv4|member|} ipv4;
 DECL|ipv6|member|} ipv6;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
@@ -23,6 +26,7 @@ DECL|len|member|uint8_t len;
 DECL|lifetime|member|struct nano_timer lifetime;
 DECL|lifetime|member|struct nano_timer lifetime;
 DECL|link_addr|member|struct net_linkaddr link_addr;
+DECL|mcast|member|struct net_if_mcast_addr mcast[NET_IF_MAX_IPV4_MADDR];
 DECL|mcast|member|struct net_if_mcast_addr mcast[NET_IF_MAX_IPV6_MADDR];
 DECL|mtu|member|uint16_t mtu;
 DECL|net_if_addr|struct|struct net_if_addr {
@@ -38,4 +42,5 @@ DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|send|member|int (*send)(struct net_if *iface, struct net_buf *buf);
 DECL|tx_queue|member|struct nano_fifo tx_queue;
+DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
