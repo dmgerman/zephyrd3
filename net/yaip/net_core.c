@@ -13,6 +13,7 @@ DECL|net_rx_fiber|function|static void net_rx_fiber(int unused1, int unused2)
 DECL|net_stats|variable|net_stats
 DECL|network_initialization|function|static int network_initialization(void)
 DECL|process_data|function|static inline enum net_verdict process_data(struct net_buf *buf)
+DECL|process_ipv4_pkt|function|static inline enum net_verdict process_ipv4_pkt(struct net_buf *buf)
 DECL|process_ipv6_pkt|function|static inline enum net_verdict process_ipv6_pkt(struct net_buf *buf)
 DECL|rx_fiber_id|variable|rx_fiber_id
 DECL|rx_fiber_stack|variable|rx_fiber_stack
