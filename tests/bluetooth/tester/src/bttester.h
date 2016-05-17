@@ -408,6 +408,7 @@ DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(uint8_t *addr, unsigned int bit)
+DECL|tester_test_bit|function|static inline uint8_t tester_test_bit(const uint8_t *addr, unsigned int bit)
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|uuid_length|member|uint8_t uuid_length;

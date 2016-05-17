@@ -1,6 +1,12 @@
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|GATT_PERM_ENC_READ_MASK|macro|GATT_PERM_ENC_READ_MASK
 DECL|GATT_PERM_ENC_WRITE_MASK|macro|GATT_PERM_ENC_WRITE_MASK
+DECL|GATT_PERM_MASK|macro|GATT_PERM_MASK
+DECL|GATT_PERM_READ_AUTHORIZATION|macro|GATT_PERM_READ_AUTHORIZATION
+DECL|GATT_PERM_WRITE_AUTHORIZATION|macro|GATT_PERM_WRITE_AUTHORIZATION
+DECL|GATT_VALUE_CCC_FLAG|enumerator|GATT_VALUE_CCC_FLAG,
+DECL|GATT_VALUE_READ_AUTHOR_FLAG|enumerator|GATT_VALUE_READ_AUTHOR_FLAG,
+DECL|GATT_VALUE_WRITE_AUTHOR_FLAG|enumerator|GATT_VALUE_WRITE_AUTHOR_FLAG,
 DECL|LAST_DB_ATTR|macro|LAST_DB_ATTR
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
 DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
@@ -48,6 +54,7 @@ DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
 DECL|find_included_cb|function|static uint8_t find_included_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|find_included|function|static void find_included(uint8_t *data, uint16_t len)
+DECL|flags|member|uint8_t flags[1];
 DECL|flush_value|function|static ssize_t flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
 DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
@@ -55,7 +62,6 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
-DECL|has_ccc|member|bool has_ccc;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
