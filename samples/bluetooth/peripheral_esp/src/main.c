@@ -51,7 +51,7 @@ DECL|humidity_sensor|struct|struct humidity_sensor {
 DECL|int_to_le24|function|static inline void int_to_le24(uint32_t value, uint8_t *u24)
 DECL|le24_to_int|function|static inline uint32_t le24_to_int(const uint8_t *u24)
 DECL|lower_limit|member|int16_t lower_limit;
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|meas_period|member|uint32_t meas_period;
 DECL|meas_uncertainty|member|uint8_t meas_uncertainty;
 DECL|measurement_period|member|uint8_t measurement_period[3];

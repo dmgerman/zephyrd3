@@ -16,7 +16,7 @@ DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn,
 DECL|ind_params|variable|ind_params
 DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,uint8_t err)
 DECL|indicating|variable|indicating
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_signed|function|static ssize_t read_signed(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)

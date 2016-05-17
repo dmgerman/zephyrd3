@@ -68,7 +68,7 @@ DECL|lcet|variable|lcet
 DECL|location|member|uint8_t location;
 DECL|lwet|member|uint16_t lwet;
 DECL|lwet|variable|lwet
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|measurement_nfy|function|static void measurement_nfy(struct bt_conn *conn, uint32_t cwr, uint16_t lwet, uint16_t ccr, uint16_t lcet)
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;

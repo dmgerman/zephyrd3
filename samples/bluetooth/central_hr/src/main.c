@@ -9,7 +9,7 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|eir_found|function|static bool eir_found(uint8_t type, const uint8_t *data, uint8_t data_len, void *user_data)
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid

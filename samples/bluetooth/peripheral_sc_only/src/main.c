@@ -9,6 +9,6 @@ DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)

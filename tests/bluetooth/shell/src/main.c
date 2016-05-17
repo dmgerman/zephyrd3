@@ -78,7 +78,7 @@ DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
