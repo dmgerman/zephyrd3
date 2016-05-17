@@ -1,0 +1,21 @@
+DECL|hp206c_adc_aquire|function|static int hp206c_adc_aquire(struct device *dev, enum sensor_channel chan)
+DECL|hp206c_adc_time_ms|variable|hp206c_adc_time_ms
+DECL|hp206c_altitude_get|function|static inline int hp206c_altitude_get(struct device *dev, struct sensor_value *val)
+DECL|hp206c_altitude_offs_set|function|static int hp206c_altitude_offs_set(struct device *dev, int16_t offs)
+DECL|hp206c_api|variable|hp206c_api
+DECL|hp206c_attr_set|function|static int hp206c_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
+DECL|hp206c_buf_convert|function|static int32_t hp206c_buf_convert(uint8_t *buf, bool signed_val)
+DECL|hp206c_bus_config|function|static inline int hp206c_bus_config(struct device *dev)
+DECL|hp206c_channel_get|function|static int hp206c_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
+DECL|hp206c_cmd_send|function|static int hp206c_cmd_send(struct device *dev, uint8_t cmd)
+DECL|hp206c_data|variable|hp206c_data
+DECL|hp206c_init|function|int hp206c_init(struct device *dev)
+DECL|hp206c_osr_set|function|static int hp206c_osr_set(struct device *dev, uint16_t osr)
+DECL|hp206c_pressure_get|function|static inline int hp206c_pressure_get(struct device *dev, struct sensor_value *val)
+DECL|hp206c_read_reg|function|static int hp206c_read_reg(struct device *dev, uint8_t reg_addr, uint8_t *reg_val)
+DECL|hp206c_read|function|static int hp206c_read(struct device *dev, uint8_t cmd, uint8_t *data, uint8_t len)
+DECL|hp206c_temperature_get|function|static inline int hp206c_temperature_get(struct device *dev, struct sensor_value *val)
+DECL|hp206c_val_get|function|static int hp206c_val_get(struct device *dev, uint8_t cmd, struct sensor_value *val)
+DECL|hp206c_wait_dev_ready|function|static int hp206c_wait_dev_ready(struct device *dev, uint32_t timeout_ms)
+DECL|hp206c_write_reg|function|static int hp206c_write_reg(struct device *dev, uint8_t reg_addr, uint8_t reg_val)
+DECL|hp206c_write|function|static int hp206c_write(struct device *dev, uint8_t cmd, uint8_t *data,uint8_t len)
