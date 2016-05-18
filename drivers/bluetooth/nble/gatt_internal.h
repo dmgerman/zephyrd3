@@ -53,7 +53,6 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
-DECL|len|member|uint16_t len;
 DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
 DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
 DECL|nble_gatt_wr_flag|enum|enum nble_gatt_wr_flag {
