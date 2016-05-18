@@ -1,0 +1,7 @@
+DECL|power_cpu_c1|function|void power_cpu_c1()
+DECL|power_cpu_c2lp|function|void power_cpu_c2lp()
+DECL|power_cpu_c2|function|void power_cpu_c2()
+DECL|power_soc_deep_sleep|function|void power_soc_deep_sleep()
+DECL|power_soc_lpss_disable|function|void power_soc_lpss_disable()
+DECL|power_soc_lpss_enable|function|void power_soc_lpss_enable()
+DECL|power_soc_sleep|function|void power_soc_sleep()

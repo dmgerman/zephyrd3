@@ -16,7 +16,7 @@ DECL|agent_read_en_mask|member|uint8_t agent_read_en_mask; /**< Per-agent read e
 DECL|agent_write_en_mask|member|uint8_t agent_write_en_mask; /**< Per-agent write enable bitmask */
 DECL|en_lock_mask|member|uint8_t en_lock_mask; /**< Enable/lock bitmask */
 DECL|low_bound|member|uint8_t low_bound; /**< 1KB-aligned lower addr */
-DECL|qm_mpr_callback_t|typedef|typedef void (*qm_mpr_callback_t)(void);
+DECL|qm_mpr_callback_t|typedef|typedef void (*qm_mpr_callback_t)(void *);
 DECL|qm_mpr_config_t|typedef|} qm_mpr_config_t;
 DECL|qm_mpr_id_t|typedef|} qm_mpr_id_t;
 DECL|qm_mpr_viol_mode_t|typedef|} qm_mpr_viol_mode_t;

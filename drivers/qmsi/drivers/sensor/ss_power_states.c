@@ -1,0 +1,5 @@
+DECL|QM_SS_SLEEP_MODE_CORE_OFF_TIMER_OFF|macro|QM_SS_SLEEP_MODE_CORE_OFF_TIMER_OFF
+DECL|QM_SS_SLEEP_MODE_CORE_OFF|macro|QM_SS_SLEEP_MODE_CORE_OFF
+DECL|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF|macro|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF
+DECL|ss_power_cpu_ss1|function|void ss_power_cpu_ss1(const ss_power_cpu_ss1_mode_t mode)
+DECL|ss_power_cpu_ss2|function|void ss_power_cpu_ss2(void)

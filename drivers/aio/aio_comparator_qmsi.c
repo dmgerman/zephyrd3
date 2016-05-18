@@ -11,5 +11,6 @@ DECL|aio_qmsi_cmp_init|function|int aio_qmsi_cmp_init(struct device *dev)
 DECL|aio_qmsi_cmp_isr|function|void aio_qmsi_cmp_isr(struct device *dev)
 DECL|cb|member|aio_cmp_cb cb;
 DECL|cb|member|struct aio_qmsi_cmp_cb cb[AIO_QMSI_CMP_COUNT];
+DECL|config|variable|config
 DECL|num_cmp|member|uint8_t num_cmp;
 DECL|param|member|void *param;

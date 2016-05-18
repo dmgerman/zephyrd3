@@ -1,0 +1,1 @@
+DECL|__POWER_STATES_H__|macro|__POWER_STATES_H__

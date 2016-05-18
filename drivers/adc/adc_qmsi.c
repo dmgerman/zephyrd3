@@ -10,13 +10,12 @@ DECL|adc_qmsi_disable|function|static void adc_qmsi_disable(struct device *dev)
 DECL|adc_qmsi_enable|function|static void adc_qmsi_enable(struct device *dev)
 DECL|adc_qmsi_enable|function|static void adc_qmsi_enable(struct device *dev)
 DECL|adc_qmsi_init|function|int adc_qmsi_init(struct device *dev)
-DECL|adc_qmsi_isr|function|void adc_qmsi_isr(void *arg)
 DECL|adc_qmsi_read|function|static int adc_qmsi_read(struct device *dev, struct adc_seq_table *seq_tbl)
 DECL|adc_qmsi_read|function|static int adc_qmsi_read(struct device *dev, struct adc_seq_table *seq_tbl)
 DECL|adc_unlock|function|static void adc_unlock(struct adc_info *data)
 DECL|api_funcs|variable|api_funcs
-DECL|complete_callback|function|static void complete_callback(void)
-DECL|error_callback|function|static void error_callback(void)
+DECL|cfg|variable|cfg
+DECL|complete_callback|function|static void complete_callback(void *data, int error, qm_adc_status_t status, qm_adc_cb_source_t source)
 DECL|sem|member|struct nano_sem sem;
 DECL|state|member|atomic_t state;
 DECL|sync|member|device_sync_call_t sync;
