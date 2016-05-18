@@ -34,6 +34,7 @@ DECL|net_if_api|struct|struct net_if_api {
 DECL|net_if_get_device|function|static inline struct device *net_if_get_device(struct net_if *iface)
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
 DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if *iface)
+DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)

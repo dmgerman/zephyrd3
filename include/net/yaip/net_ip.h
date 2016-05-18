@@ -8,6 +8,7 @@ DECL|INET6_ADDRSTRLEN|macro|INET6_ADDRSTRLEN
 DECL|IPPROTO_ICMPV6|enumerator|IPPROTO_ICMPV6 = 58,
 DECL|IPPROTO_TCP|enumerator|IPPROTO_TCP = 6,
 DECL|IPPROTO_UDP|enumerator|IPPROTO_UDP = 17,
+DECL|NET_ADDR_ANY_STATE|enumerator|NET_ADDR_ANY_STATE = -1,
 DECL|NET_ADDR_ANY|enumerator|NET_ADDR_ANY = 0,
 DECL|NET_ADDR_AUTOCONF|enumerator|NET_ADDR_AUTOCONF,
 DECL|NET_ADDR_DEPRECATED|enumerator|NET_ADDR_DEPRECATED,
@@ -55,9 +56,12 @@ DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_a
 DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_addr_type type)
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
+DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
+DECL|net_ipv6_unspecified_address|function|static inline struct in6_addr *net_ipv6_unspecified_address(void)
 DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(struct in6_addr *addr)
+DECL|net_is_ipv6_ll_addr|function|static inline bool net_is_ipv6_ll_addr(struct in6_addr *addr)
 DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(uint8_t *addr1, uint8_t *addr2, uint8_t length)
 DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(struct in_addr *addr)
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
