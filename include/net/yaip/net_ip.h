@@ -35,6 +35,8 @@ DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|chksum|member|uint16_t chksum;
+DECL|chksum|member|uint16_t chksum;
+DECL|code|member|uint8_t code;
 DECL|dst|member|struct in6_addr dst;
 DECL|dst|member|struct in_addr dst;
 DECL|family|member|sa_family_t family;
@@ -60,6 +62,7 @@ DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_a
 DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_addr_type type)
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
+DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv4_hdr|struct|struct net_ipv4_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
@@ -92,6 +95,7 @@ DECL|src|member|struct in_addr src;
 DECL|tcflow|member|uint8_t tcflow;
 DECL|tos|member|uint8_t tos;
 DECL|ttl|member|uint8_t ttl;
+DECL|type|member|uint8_t type;
 DECL|u4_addr16|member|uint16_t u4_addr16[2]; /* In big endian */
 DECL|u4_addr32|member|uint32_t u4_addr32[1]; /* In big endian */
 DECL|u4_addr8|member|uint8_t u4_addr8[4];
