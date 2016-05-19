@@ -1,4 +1,3 @@
-DECL|CONFIG_NET_TX_STACK_SIZE|macro|CONFIG_NET_TX_STACK_SIZE
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
@@ -17,4 +16,3 @@ DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_mad
 DECL|net_if_ipv6_select_src_addr|function|struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
 DECL|net_if_ipv6_unspecified_addr|function|struct in6_addr *net_if_ipv6_unspecified_addr(void)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)
-DECL|tx_fiber_stack|variable|tx_fiber_stack
