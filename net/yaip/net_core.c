@@ -14,6 +14,7 @@ DECL|net_send_data|function|int net_send_data(struct net_buf *buf)
 DECL|net_stats|variable|net_stats
 DECL|network_initialization|function|static int network_initialization(void)
 DECL|process_data|function|static inline enum net_verdict process_data(struct net_buf *buf)
+DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_buf *buf, struct net_ipv6_hdr *ipv6)
 DECL|process_ipv4_pkt|function|static inline enum net_verdict process_ipv4_pkt(struct net_buf *buf)
 DECL|process_ipv6_pkt|function|static inline enum net_verdict process_ipv6_pkt(struct net_buf *buf)
 DECL|rx_fiber_id|variable|rx_fiber_id
