@@ -24,5 +24,5 @@ DECL|prof_pltfm_info|variable|prof_pltfm_info
 DECL|prof_send_platform_info|function|void prof_send_platform_info(void)
 DECL|prof_started|variable|prof_started
 DECL|prof|function|void prof(void)
-DECL|shell_cmd_prof|function|void shell_cmd_prof(int argc, char *argv[])
+DECL|shell_cmd_prof|function|int shell_cmd_prof(int argc, char *argv[])
 DECL|uart_console_dev|variable|uart_console_dev
