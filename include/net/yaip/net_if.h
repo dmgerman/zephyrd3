@@ -1,3 +1,4 @@
+DECL|CONFIG_NET_TX_STACK_SIZE|macro|CONFIG_NET_TX_STACK_SIZE
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
 DECL|NET_IF_INIT|macro|NET_IF_INIT
 DECL|NET_IF_MAX_IPV4_ADDR|macro|NET_IF_MAX_IPV4_ADDR
@@ -42,6 +43,7 @@ DECL|net_if|struct|struct net_if {
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|send|member|int (*send)(struct net_if *iface, struct net_buf *buf);
+DECL|tx_fiber_stack|member|char tx_fiber_stack[CONFIG_NET_TX_STACK_SIZE];
 DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
