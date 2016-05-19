@@ -1,3 +1,5 @@
+DECL|net_hexdump|function|static inline void net_hexdump(const char *str, const uint8_t *packet, size_t length)
+DECL|net_hexdump|macro|net_hexdump
 DECL|net_sprint_ip_addr_ptr|function|static inline char *net_sprint_ip_addr_ptr(uint8_t *ptr, uint8_t len)
 DECL|net_sprint_ip_addr_ptr|function|static inline char *net_sprint_ip_addr_ptr(uint8_t *ptr, uint8_t len)
 DECL|net_sprint_ip_addr|function|static inline char *net_sprint_ip_addr(struct net_addr *addr)
