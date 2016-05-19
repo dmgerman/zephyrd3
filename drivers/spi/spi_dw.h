@@ -64,7 +64,7 @@ DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *
 DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
-DECL|_unused|member|uint32_t _unused:2;
+DECL|_unused|member|uint32_t _unused:1;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
@@ -74,6 +74,7 @@ DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|dfs|member|uint32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|uint32_t error:1;
 DECL|fifo_diff|member|uint32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
+DECL|last_tx|member|uint32_t last_tx:1;
 DECL|regs|member|uint32_t regs;
 DECL|rx_buf_len|member|uint32_t rx_buf_len;
 DECL|rx_buf|member|uint8_t *rx_buf;
