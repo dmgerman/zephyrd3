@@ -1,3 +1,5 @@
+DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|calc_chksum_buf|function|static inline uint16_t calc_chksum_buf(uint16_t sum, struct net_buf *buf, uint16_t upper_layer_len)
 DECL|calc_chksum|function|static uint16_t calc_chksum(uint16_t sum, const uint8_t *ptr, uint16_t len)
 DECL|net_byte_to_hex|function|char *net_byte_to_hex(uint8_t *ptr, uint8_t byte, char base, bool pad)
