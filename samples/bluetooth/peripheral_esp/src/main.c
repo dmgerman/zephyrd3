@@ -22,7 +22,6 @@ DECL|SENSOR_3_UPDATE_IVAL|macro|SENSOR_3_UPDATE_IVAL
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|__packed|variable|__packed
 DECL|ad|variable|ad
 DECL|application|member|uint8_t application;
 DECL|application|member|uint8_t application;
@@ -32,7 +31,6 @@ DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_co
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|ccc_cfg|member|struct bt_gatt_ccc_cfg ccc_cfg[CONFIG_BLUETOOTH_MAX_PAIRED];
 DECL|check_condition|function|static bool check_condition(uint8_t condition, int16_t old_val, int16_t new_val, int16_t ref_val)
-DECL|condition|member|uint8_t condition;
 DECL|condition|member|uint8_t condition;
 DECL|condition|member|uint8_t condition;
 DECL|condition|member|uint8_t condition;
@@ -58,7 +56,6 @@ DECL|measurement_period|member|uint8_t measurement_period[3];
 DECL|measurement_uncertainty|member|uint8_t measurement_uncertainty;
 DECL|meas|member|struct es_measurement meas;
 DECL|meas|member|struct es_measurement meas;
-DECL|operand|member|uint8_t operand[];
 DECL|read_es_measurement_rp|struct|struct read_es_measurement_rp {
 DECL|read_es_measurement|function|static ssize_t read_es_measurement(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_temp_trigger_setting|function|static ssize_t read_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -82,5 +79,3 @@ DECL|update_interval|member|uint32_t update_interval;
 DECL|update_interval|member|uint8_t update_interval[3];
 DECL|update_temperature|function|static void update_temperature(struct bt_conn *conn, const struct bt_gatt_attr *chrc, int16_t value, struct temperature_sensor *sensor)
 DECL|upper_limit|member|int16_t upper_limit;
-DECL|write_es_trigger_setting_req|struct|struct write_es_trigger_setting_req {
-DECL|write_temp_trigger_setting|function|static ssize_t write_temp_trigger_setting(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
