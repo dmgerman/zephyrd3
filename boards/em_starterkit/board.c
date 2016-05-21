@@ -1,0 +1,1 @@
+DECL|version_header|variable|version_header
