@@ -10,7 +10,6 @@ DECL|__next|member|struct nano_sem *__next;
 DECL|__next|member|struct nano_stack *__next;
 DECL|__next|member|struct nano_timer *__next;
 DECL|_nano_queue|struct|struct _nano_queue {
-DECL|_nano_timeout_func_t|typedef|typedef void (*_nano_timeout_func_t)(struct _nano_timeout *t);
 DECL|_nano_timeout|struct|struct _nano_timeout {
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
@@ -21,7 +20,6 @@ DECL|fiber_config|struct|struct fiber_config {
 DECL|fiber_fiber_start_config|function|fiber_fiber_start_config(const struct fiber_config *config, nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
 DECL|fiber_start_config|function|fiber_start_config(const struct fiber_config *config, nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
 DECL|fiber|member|nano_thread_id_t fiber;
-DECL|func|member|_nano_timeout_func_t func;
 DECL|head|member|void *head;
 DECL|list|member|void *list;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
