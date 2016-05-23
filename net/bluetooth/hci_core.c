@@ -1,6 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
+DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
@@ -140,7 +141,7 @@ DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t
 DECL|sync|member|void *sync;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
-DECL|update_conn_param|function|static int update_conn_param(struct bt_conn *conn)
+DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
 DECL|user_confirm_req|function|static void user_confirm_req(struct net_buf *buf)
