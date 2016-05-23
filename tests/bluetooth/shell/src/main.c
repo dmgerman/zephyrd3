@@ -6,6 +6,7 @@ DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HELP_ADDR|macro|HELP_ADDR
 DECL|HELP_NONE|macro|HELP_NONE
+DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad_discov|variable|ad_discov
 DECL|appearance_value|variable|appearance_value
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
@@ -23,6 +24,7 @@ DECL|br_discovery_complete|function|static void br_discovery_complete(struct bt_
 DECL|br_discovery_results|variable|br_discovery_results
 DECL|br_server|variable|br_server
 DECL|bt_ready|function|static void bt_ready(int err)
+DECL|buf|member|uint8_t buf[MAX_DATA];
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static int cmd_advertise(int argc, char *argv[])
@@ -44,6 +46,7 @@ DECL|cmd_gatt_discover|function|static int cmd_gatt_discover(int argc, char *arg
 DECL|cmd_gatt_exchange_mtu|function|static int cmd_gatt_exchange_mtu(int argc, char *argv[])
 DECL|cmd_gatt_mread|function|static int cmd_gatt_mread(int argc, char *argv[])
 DECL|cmd_gatt_read|function|static int cmd_gatt_read(int argc, char *argv[])
+DECL|cmd_gatt_register_test_svc|function|static int cmd_gatt_register_test_svc(int argc, char *argv[])
 DECL|cmd_gatt_subscribe|function|static int cmd_gatt_subscribe(int argc, char *argv[])
 DECL|cmd_gatt_unsubscribe|function|static int cmd_gatt_unsubscribe(int argc, char *argv[])
 DECL|cmd_gatt_write_signed|function|static int cmd_gatt_write_signed(int argc, char *argv[])
@@ -64,12 +67,14 @@ DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|data_fifo|variable|data_fifo
+DECL|data|member|uint8_t data[MAX_DATA];
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
+DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
@@ -85,7 +90,9 @@ DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struc
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(uint8_t properties)
 DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, uint8_t err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
+DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_params|variable|read_params
+DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
@@ -93,5 +100,16 @@ DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const ch
 DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *addr)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
+DECL|vnd1|variable|vnd1
+DECL|vnd2|variable|vnd2
+DECL|vnd_attrs|variable|vnd_attrs
+DECL|vnd_auth_uuid|variable|vnd_auth_uuid
+DECL|vnd_long_uuid1|variable|vnd_long_uuid1
+DECL|vnd_long_uuid2|variable|vnd_long_uuid2
+DECL|vnd_long_value|struct|struct vnd_long_value {
+DECL|vnd_uuid|variable|vnd_uuid
+DECL|vnd_value|variable|vnd_value
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
+DECL|write_long_vnd|function|static ssize_t write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
 DECL|write_params|variable|write_params
+DECL|write_vnd|function|static ssize_t write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
