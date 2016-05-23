@@ -65,6 +65,7 @@ DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
+DECL|net_ipv4_broadcast_address|function|static inline const struct in_addr *net_ipv4_broadcast_address(void)
 DECL|net_ipv4_hdr|struct|struct net_ipv4_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
 DECL|net_ipv6_unspecified_address|function|static inline struct in6_addr *net_ipv6_unspecified_address(void)
