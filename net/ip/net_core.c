@@ -17,6 +17,7 @@ DECL|drv|member|struct net_driver *drv;
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|init_timer_fiber|function|static void init_timer_fiber(void)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
+DECL|initialized|variable|initialized
 DECL|net_dev|struct|static struct net_dev {
 DECL|net_init|function|int net_init(void)
 DECL|net_print_statistics|macro|net_print_statistics
