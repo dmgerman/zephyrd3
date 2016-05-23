@@ -66,6 +66,7 @@ DECL|net_addr|struct|struct net_addr {
 DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv4_addr_cmp|macro|net_ipv4_addr_cmp
+DECL|net_ipv4_addr_mask_cmp|function|static inline bool net_ipv4_addr_mask_cmp(struct net_if *iface, struct in_addr *addr)
 DECL|net_ipv4_broadcast_address|function|static inline const struct in_addr *net_ipv4_broadcast_address(void)
 DECL|net_ipv4_hdr|struct|struct net_ipv4_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
