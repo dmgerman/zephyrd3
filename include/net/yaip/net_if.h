@@ -14,6 +14,7 @@ DECL|address|member|struct net_addr address;
 DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_timer|member|struct nano_timer dad_timer;
 DECL|dev|member|struct device *dev;
+DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|init|member|void (*init)(struct net_if *iface);
 DECL|ipv4|member|} ipv4;
@@ -38,8 +39,11 @@ DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
+DECL|net_if_set_gw|function|static inline void net_if_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
+DECL|net_if_set_netmask|function|static inline void net_if_set_netmask(struct net_if *iface, struct in_addr *netmask)
 DECL|net_if|struct|struct net_if {
+DECL|netmask|member|struct in_addr netmask;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|send|member|int (*send)(struct net_if *iface, struct net_buf *buf);
