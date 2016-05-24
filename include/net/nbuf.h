@@ -43,6 +43,7 @@ DECL|net_nbuf_len|macro|net_nbuf_len
 DECL|net_nbuf_ll_dest|macro|net_nbuf_ll_dest
 DECL|net_nbuf_ll_reserve|macro|net_nbuf_ll_reserve
 DECL|net_nbuf_ll_src|macro|net_nbuf_ll_src
+DECL|net_nbuf_ll|macro|net_nbuf_ll
 DECL|net_nbuf_next_hdr|macro|net_nbuf_next_hdr
 DECL|net_nbuf_ref|macro|net_nbuf_ref
 DECL|net_nbuf_reserve|macro|net_nbuf_reserve
