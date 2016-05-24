@@ -9,6 +9,7 @@ DECL|GATT_VALUE_READ_AUTHOR_FLAG|enumerator|GATT_VALUE_READ_AUTHOR_FLAG,
 DECL|GATT_VALUE_WRITE_AUTHOR_FLAG|enumerator|GATT_VALUE_WRITE_AUTHOR_FLAG,
 DECL|LAST_DB_ATTR|macro|LAST_DB_ATTR
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
+DECL|NEXT_DB_ATTR|macro|NEXT_DB_ATTR
 DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
 DECL|SERVER_MAX_ATTRIBUTES|macro|SERVER_MAX_ATTRIBUTES
 DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr)
@@ -62,6 +63,7 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
+DECL|get_base_chrc|function|static struct bt_gatt_attr *get_base_chrc(struct bt_gatt_attr *attr)
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
