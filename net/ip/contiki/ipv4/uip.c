@@ -75,6 +75,7 @@ DECL|uip_reassflags|variable|uip_reassflags
 DECL|uip_reasslen|variable|uip_reasslen
 DECL|uip_reasstmr|variable|uip_reasstmr
 DECL|uip_reass|function|uip_reass(void)
+DECL|uip_send_udp|function|uip_send_udp(struct net_buf *buf, const void *data, int len)
 DECL|uip_send|function|uip_send(struct net_buf *buf, const void *data, int len)
 DECL|uip_setipid|function|void uip_setipid(uint16_t id) { ipid = id; }
 DECL|uip_stat|variable|uip_stat
