@@ -19,6 +19,7 @@ DECL|pending_buf|variable|pending_buf
 DECL|pkt1|variable|pkt1
 DECL|prepare_arp_reply|function|static inline struct net_buf *prepare_arp_reply(struct net_if *iface,struct net_buf *req, struct net_eth_addr *addr)
 DECL|prepare_arp_request|function|static inline struct net_buf *prepare_arp_request(struct net_if *iface, struct net_buf *req, struct net_eth_addr *addr)
+DECL|req_test|variable|req_test
 DECL|send_status|variable|send_status
 DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_buf *buf, struct net_eth_addr *hwaddr, uint16_t type)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
