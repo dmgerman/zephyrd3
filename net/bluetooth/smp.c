@@ -71,7 +71,6 @@ DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
 DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|gen_method_sc|variable|gen_method_sc
 DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
-DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
 DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(struct bt_smp *smp)
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
@@ -80,8 +79,6 @@ DECL|handlers|variable|handlers
 DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
-DECL|le_sc_supported|function|static bool le_sc_supported(void)
-DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|legacy_distribute_keys|function|static void legacy_distribute_keys(struct bt_smp *smp)
 DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)
@@ -108,7 +105,6 @@ DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_debug_private_key|variable|sc_debug_private_key
 DECL|sc_debug_public_key|variable|sc_debug_public_key
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
-DECL|sc_private_key|variable|sc_private_key
 DECL|sc_public_key|variable|sc_public_key
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
 DECL|sc_smp_check_confirm|function|static uint8_t sc_smp_check_confirm(struct bt_smp *smp)

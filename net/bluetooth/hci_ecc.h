@@ -1,0 +1,1 @@
+DECL|bt_hci_ecc_init|macro|bt_hci_ecc_init
