@@ -7,6 +7,7 @@ DECL|avail_queue|variable|avail_queue
 DECL|buf|variable|buf
 DECL|cmds_queue|variable|cmds_queue
 DECL|commands|variable|commands
+DECL|completion|function|static uint8_t completion(char *line, uint8_t len)
 DECL|get_cb|function|static shell_cmd_function_t get_cb(const char *string)
 DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
