@@ -18,6 +18,7 @@ DECL|__stdout_hook_install|macro|__stdout_hook_install
 DECL|ansi_val_2|variable|ansi_val_2
 DECL|ansi_val|variable|ansi_val
 DECL|avail_queue|variable|avail_queue
+DECL|completion_cb|variable|completion_cb
 DECL|console_input_init|function|static void console_input_init(void)
 DECL|console_input_init|macro|console_input_init
 DECL|console_out|function|static int console_out(int c)
@@ -39,5 +40,5 @@ DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
 DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
 DECL|uart_console_out_debug_hook_install|function|void uart_console_out_debug_hook_install(uart_console_out_debug_hook_t *hook)
-DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines)
+DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
 DECL|uart_register_input|macro|uart_register_input
