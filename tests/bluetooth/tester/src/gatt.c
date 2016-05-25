@@ -31,6 +31,7 @@ DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc_added|variable|ccc_added
 DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
 DECL|ccc_cfg|variable|ccc_cfg
+DECL|ccc_value|variable|ccc_value
 DECL|ccc|variable|ccc
 DECL|char_id|member|uint16_t char_id;
 DECL|config_subscription|function|static void config_subscription(uint8_t *data, uint16_t len, uint16_t op)
@@ -64,6 +65,8 @@ DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
 DECL|get_base_chrc|function|static struct bt_gatt_attr *get_base_chrc(struct bt_gatt_attr *attr)
+DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,uint8_t err)
+DECL|indicate_params|variable|indicate_params
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
