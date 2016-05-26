@@ -74,7 +74,7 @@ DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
-DECL|chan|member|struct bt_l2cap_chan chan;
+DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
