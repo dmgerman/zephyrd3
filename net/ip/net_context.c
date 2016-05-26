@@ -2,6 +2,7 @@ DECL|DEBUG|macro|DEBUG
 DECL|NET_DBG|macro|NET_DBG
 DECL|NET_DBG|macro|NET_DBG
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
+DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|PROCESS_THREAD|function|PROCESS_THREAD(tcp, ev, data, buf, user_data)
 DECL|connection_status|member|int connection_status;
 DECL|conn|member|void *conn;
