@@ -17,10 +17,10 @@ DECL|TIMESTAMP_MODE_RTC|macro|TIMESTAMP_MODE_RTC
 DECL|cfg1|variable|cfg1
 DECL|cfg2|variable|cfg2
 DECL|cfg2|variable|cfg2
-DECL|commands|variable|commands
 DECL|counter_dev|variable|counter_dev
 DECL|hw_ticks_per_sec|member|uint32_t hw_ticks_per_sec;
 DECL|out|macro|out
+DECL|prof_commands|variable|prof_commands
 DECL|prof_flush|function|void prof_flush(void)
 DECL|prof_initialized|variable|prof_initialized
 DECL|prof_init|function|void prof_init(void)
