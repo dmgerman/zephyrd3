@@ -9,6 +9,7 @@ DECL|gpio_cs|member|struct device *gpio_cs;
 DECL|loopback|member|bool loopback;
 DECL|pending_transfers|variable|pending_transfers
 DECL|rc|member|int rc;
+DECL|sem|member|struct nano_sem sem;
 DECL|spi_control_cs|function|static void spi_control_cs(struct device *dev, bool active)
 DECL|spi_qmsi_callback|function|static void spi_qmsi_callback(void *data, int error, qm_ss_spi_status_t status, uint16_t len)
 DECL|spi_qmsi_mst_0_config|variable|spi_qmsi_mst_0_config
