@@ -30,8 +30,6 @@ DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters d
 DECL|errno_var|member|int errno_var;
 DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
-DECL|firq_regs|member|struct firq_regs firq_regs;
-DECL|firq_regs|struct|struct firq_regs {
 DECL|flags|member|uint32_t flags; /* bitmask of flags above */
 DECL|fp|member|uint32_t fp; /* r27 */
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
@@ -41,10 +39,7 @@ DECL|jli_base|member|uint32_t jli_base;
 DECL|ldi_base|member|uint32_t ldi_base;
 DECL|link|member|struct tcs *link; /* node in singly-linked list
 DECL|lp_count|member|uint32_t lp_count;
-DECL|lp_count|member|uint32_t lp_count;
 DECL|lp_end|member|uint32_t lp_end;
-DECL|lp_end|member|uint32_t lp_end;
-DECL|lp_start|member|uint32_t lp_start;
 DECL|lp_start|member|uint32_t lp_start;
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
@@ -94,7 +89,6 @@ DECL|sp|member|uint32_t sp; /* r28 */
 DECL|stack_top|member|uint32_t stack_top;
 DECL|status32|member|uint32_t status32;
 DECL|tCalleeSaved|typedef|typedef struct callee_saved tCalleeSaved;
-DECL|tFirqRegs|typedef|typedef struct firq_regs tFirqRegs;
 DECL|tISF|typedef|typedef struct irq_stack_frame tISF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
