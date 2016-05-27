@@ -1,3 +1,5 @@
+DECL|SYS_DLIST_FOR_EACH_NODE_SAFE|macro|SYS_DLIST_FOR_EACH_NODE_SAFE
+DECL|SYS_DLIST_FOR_EACH_NODE|macro|SYS_DLIST_FOR_EACH_NODE
 DECL|_dnode|struct|struct _dnode {
 DECL|_misc_dlist__h_|macro|_misc_dlist__h_
 DECL|head|member|struct _dnode *head; /* ptr to head of list (sys_dlist_t) */
