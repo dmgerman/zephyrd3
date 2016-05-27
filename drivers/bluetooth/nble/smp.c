@@ -25,6 +25,7 @@ DECL|SMP_FLAG_SEC_REQ|enumerator|SMP_FLAG_SEC_REQ, /* if Security Request was se
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
+DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_disconnected|function|void bt_smp_disconnected(struct bt_conn *conn)
 DECL|bt_smp_init|function|int bt_smp_init(void)
@@ -36,7 +37,9 @@ DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|legacy_pairing_req|function|static uint8_t legacy_pairing_req(struct bt_smp *smp, uint8_t remote_io)
+DECL|legacy_passkey_entry|function|static void legacy_passkey_entry(struct bt_smp *smp, unsigned int passkey)
 DECL|method|member|uint8_t method;
+DECL|nble_security_reply|function|static void nble_security_reply(struct bt_conn *conn,struct nble_sm_passkey *par)
 DECL|on_nble_sm_common_rsp|function|void on_nble_sm_common_rsp(const struct nble_sm_common_rsp *rsp)
 DECL|on_nble_sm_config_rsp|function|void on_nble_sm_config_rsp(struct nble_sm_config_rsp *rsp)
 DECL|on_nble_sm_pairing_request_evt|function|void on_nble_sm_pairing_request_evt(const struct nble_sm_pairing_request_evt *evt)
