@@ -38,7 +38,6 @@ DECL|NBLE_GAP_SVC_ATTR_TYPE|enum|enum NBLE_GAP_SVC_ATTR_TYPE {
 DECL|NBLE_SM_PASSKEY_TYPE|enum|enum NBLE_SM_PASSKEY_TYPE {
 DECL|NBLE_SM_PK_OOB|enumerator|NBLE_SM_PK_OOB,
 DECL|NBLE_SM_PK_PASSKEY|enumerator|NBLE_SM_PK_PASSKEY,
-DECL|NBLE_SM_REJECT|enumerator|NBLE_SM_REJECT = 0,
 DECL|NBLE_SM_STATUS_BONDING_COMPLETE|enumerator|NBLE_SM_STATUS_BONDING_COMPLETE,
 DECL|NBLE_SM_STATUS_EVT|enum|enum NBLE_SM_STATUS_EVT {
 DECL|NBLE_SM_STATUS_LINK_ENCRYPTED|enumerator|NBLE_SM_STATUS_LINK_ENCRYPTED,
@@ -56,6 +55,7 @@ DECL|attr_type|member|uint16_t attr_type;
 DECL|auth_level|member|uint8_t auth_level;
 DECL|authorization|member|uint8_t authorization;
 DECL|auth|member|const struct bt_conn_auth_cb *auth;
+DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
@@ -85,9 +85,15 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
+DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_params|member|struct nble_conn_param conn_params;
 DECL|conn_values|member|struct nble_conn_values conn_values;
 DECL|conn_values|member|struct nble_conn_values conn_values;
+DECL|conn|member|struct bt_conn *conn;
+DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
@@ -125,6 +131,7 @@ DECL|major|member|uint8_t major;
 DECL|min_count|member|uint8_t min_count;
 DECL|min_count|member|uint8_t min_count;
 DECL|minor|member|uint8_t minor;
+DECL|mitm|member|uint8_t mitm;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
 DECL|nble_common_rsp|struct|struct nble_common_rsp {
@@ -156,7 +163,8 @@ DECL|nble_get_version_rsp|struct|struct nble_get_version_rsp {
 DECL|nble_link_sec|struct|struct nble_link_sec {
 DECL|nble_log_s|struct|struct nble_log_s {
 DECL|nble_scan_param|struct|struct nble_scan_param {
-DECL|nble_set_bda_cb_t|typedef|typedef void (*nble_set_bda_cb_t)(int status, void *user_data);
+DECL|nble_sec_param|struct|struct nble_sec_param {
+DECL|nble_set_bda_cb_t|typedef|typedef void (*nble_set_bda_cb_t)(int status, void *user_data, const bt_addr_le_t *bda);
 DECL|nble_set_bda_req|struct|struct nble_set_bda_req {
 DECL|nble_set_bda_rsp|struct|struct nble_set_bda_rsp {
 DECL|nble_sm_bond_info_req|struct|struct nble_sm_bond_info_req {
@@ -166,11 +174,15 @@ DECL|nble_sm_clear_bonds_req|struct|struct nble_sm_clear_bonds_req {
 DECL|nble_sm_common_rsp|struct|struct nble_sm_common_rsp {
 DECL|nble_sm_config_req|struct|struct nble_sm_config_req {
 DECL|nble_sm_config_rsp|struct|struct nble_sm_config_rsp {
+DECL|nble_sm_error_req|struct|struct nble_sm_error_req {
 DECL|nble_sm_pairing_param|struct|struct nble_sm_pairing_param {
+DECL|nble_sm_pairing_request_evt|struct|struct nble_sm_pairing_request_evt {
+DECL|nble_sm_pairing_response_req|struct|struct nble_sm_pairing_response_req {
 DECL|nble_sm_passkey_disp_evt|struct|struct nble_sm_passkey_disp_evt {
 DECL|nble_sm_passkey_reply_req|struct|struct nble_sm_passkey_reply_req {
 DECL|nble_sm_passkey_req_evt|struct|struct nble_sm_passkey_req_evt {
 DECL|nble_sm_passkey|struct|struct nble_sm_passkey {
+DECL|nble_sm_security_request_evt|struct|struct nble_sm_security_request_evt {
 DECL|nble_sm_security_req|struct|struct nble_sm_security_req {
 DECL|nble_sm_status_evt|struct|struct nble_sm_status_evt {
 DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
@@ -197,6 +209,8 @@ DECL|peer_bda|member|bt_addr_le_t peer_bda;
 DECL|ppcp|member|struct nble_conn_param ppcp;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
+DECL|reason|member|uint8_t reason;
+DECL|remote_io|member|uint8_t remote_io;
 DECL|role_slave|member|uint8_t role_slave;
 DECL|rssi_data|member|int8_t rssi_data[BLE_GAP_RSSI_EVT_SIZE];
 DECL|rssi_report_resp_t|typedef|typedef void (*rssi_report_resp_t)(int status);
@@ -208,6 +222,8 @@ DECL|scan_type|member|uint8_t scan_type;
 DECL|sd|member|struct nble_eir_data sd;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|sec_mode|member|uint8_t sec_mode;
+DECL|sec_param|member|struct nble_sec_param sec_param;
+DECL|sec_param|member|struct nble_sec_param sec_param;
 DECL|slave_latency|member|uint16_t slave_latency;
 DECL|sm_bond_dev_avail|member|bool sm_bond_dev_avail;
 DECL|status|member|int status;
