@@ -1,0 +1,22 @@
+DECL|GET_SP|macro|GET_SP
+DECL|GET_SP|macro|GET_SP
+DECL|GET_SP|macro|GET_SP
+DECL|GET_SP|macro|GET_SP
+DECL|_COMPILER_ABSTRACTION_H|macro|_COMPILER_ABSTRACTION_H
+DECL|__ALIGN|macro|__ALIGN
+DECL|__ALIGN|macro|__ALIGN
+DECL|__ALIGN|macro|__ALIGN
+DECL|__ALIGN|macro|__ALIGN
+DECL|__ASM|macro|__ASM
+DECL|__ASM|macro|__ASM
+DECL|__ASM|macro|__ASM
+DECL|__ASM|macro|__ASM
+DECL|__INLINE|macro|__INLINE
+DECL|__INLINE|macro|__INLINE
+DECL|__INLINE|macro|__INLINE
+DECL|__INLINE|macro|__INLINE
+DECL|__WEAK|macro|__WEAK
+DECL|__WEAK|macro|__WEAK
+DECL|__WEAK|macro|__WEAK
+DECL|__WEAK|macro|__WEAK
+DECL|gcc_current_sp|function|static inline unsigned int gcc_current_sp(void)
