@@ -35,9 +35,12 @@ DECL|PF_INET6|macro|PF_INET6
 DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|__NET_IP_H|macro|__NET_IP_H
+DECL|__packed|variable|__packed
+DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|code|member|uint8_t code;
+DECL|dst_port|member|uint16_t dst_port;
 DECL|dst|member|struct in6_addr dst;
 DECL|dst|member|struct in_addr dst;
 DECL|family|member|sa_family_t family;
@@ -54,6 +57,7 @@ DECL|in_addr|member|struct in_addr in_addr;
 DECL|in_addr|struct|struct in_addr {
 DECL|ip_protocol|enum|enum ip_protocol {
 DECL|ip_proto|member|enum ip_protocol ip_proto;
+DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len[2];
 DECL|len|member|uint8_t len[2];
 DECL|local_addr|member|struct net_addr *local_addr;
@@ -79,6 +83,7 @@ DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(struct 
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
 DECL|net_tuple|struct|struct net_tuple {
+DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|ntohl|macro|ntohl
 DECL|ntohs|macro|ntohs
@@ -94,6 +99,7 @@ DECL|s6_addr32|macro|s6_addr32
 DECL|s6_addr|macro|s6_addr
 DECL|s_addr|macro|s_addr
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|src|member|struct in_addr src;
 DECL|tcflow|member|uint8_t tcflow;
