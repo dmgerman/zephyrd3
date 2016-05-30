@@ -1,5 +1,5 @@
 DECL|RC_MSG|macro|RC_MSG
-DECL|STACKSIZE|macro|STACKSIZE
+DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|ctx|variable|ctx
 DECL|fiber|function|void fiber(void)
 DECL|main|function|void main(void)
