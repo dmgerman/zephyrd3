@@ -17,6 +17,7 @@ DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_DHCHECK_WAIT|enumerator|SMP_FLAG_DHCHECK_WAIT, /* if waiting for remote DHCheck (as slave) */
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
 DECL|SMP_FLAG_DHKEY_SEND|enumerator|SMP_FLAG_DHKEY_SEND, /* if should generate and send DHKey Check */
 DECL|SMP_FLAG_ENC_PENDING|enumerator|SMP_FLAG_ENC_PENDING, /* if waiting for an encryption change event */
