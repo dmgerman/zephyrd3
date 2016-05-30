@@ -75,6 +75,7 @@ DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, c
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
 DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
+DECL|id_addr|variable|id_addr
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
@@ -96,6 +97,9 @@ DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struc
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
+DECL|storage_clear|function|static int storage_clear(const bt_addr_le_t *addr)
+DECL|storage_read|function|static ssize_t storage_read(const bt_addr_le_t *addr, uint16_t key, void *data, size_t length)
+DECL|storage_write|function|static ssize_t storage_write(const bt_addr_le_t *addr, uint16_t key, const void *data, size_t length)
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
 DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *addr)
 DECL|subscribe_params|variable|subscribe_params
