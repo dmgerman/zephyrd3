@@ -25,6 +25,7 @@ DECL|SMP_FLAG_SEC_REQ|enumerator|SMP_FLAG_SEC_REQ, /* if Security Request was se
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
+DECL|bt_smp_auth_pairing_confirm|function|int bt_smp_auth_pairing_confirm(struct bt_conn *conn)
 DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_smp_connected|function|void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_disconnected|function|void bt_smp_disconnected(struct bt_conn *conn)
