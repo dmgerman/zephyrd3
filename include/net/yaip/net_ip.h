@@ -36,6 +36,9 @@ DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
