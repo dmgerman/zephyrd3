@@ -18,6 +18,7 @@ DECL|BT_SMP_ERR_PAIRING_NOTSUPP|macro|BT_SMP_ERR_PAIRING_NOTSUPP
 DECL|BT_SMP_ERR_PASSKEY_ENTRY_FAILED|macro|BT_SMP_ERR_PASSKEY_ENTRY_FAILED
 DECL|BT_SMP_ERR_REPEATED_ATTEMPTS|macro|BT_SMP_ERR_REPEATED_ATTEMPTS
 DECL|BT_SMP_ERR_UNSPECIFIED|macro|BT_SMP_ERR_UNSPECIFIED
+DECL|NBLE_FLAG_KEEP_ADVERTISING|enumerator|NBLE_FLAG_KEEP_ADVERTISING,
 DECL|NBLE_GAP_RSSI_DISABLE_REPORT|enumerator|NBLE_GAP_RSSI_DISABLE_REPORT = 0,
 DECL|NBLE_GAP_RSSI_ENABLE_REPORT|enumerator|NBLE_GAP_RSSI_ENABLE_REPORT
 DECL|NBLE_GAP_RSSI_OPS|enum|enum NBLE_GAP_RSSI_OPS {
@@ -108,6 +109,7 @@ DECL|error|member|uint16_t error;
 DECL|err|member|int err;
 DECL|evt_type|member|uint8_t evt_type; /* see NBLE_SM_STATUS_EVT */
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|flags|member|atomic_t flags;
 DECL|hash|member|uint8_t hash[4];
 DECL|hci_reason|member|uint8_t hci_reason;
 DECL|include_bonded_addrs|member|bool include_bonded_addrs;
@@ -120,7 +122,6 @@ DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|io_caps|member|uint8_t io_caps;
 DECL|irk_count|member|uint8_t irk_count;
-DECL|keep_adv|member|bool keep_adv;
 DECL|key_size|member|uint8_t key_size;
 DECL|key_type|member|uint8_t key_type;
 DECL|latency|member|uint16_t latency;
