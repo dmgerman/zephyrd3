@@ -1,4 +1,6 @@
 DECL|LINE_CTRL_BAUD_RATE|macro|LINE_CTRL_BAUD_RATE
+DECL|LINE_CTRL_DCD|macro|LINE_CTRL_DCD
+DECL|LINE_CTRL_DSR|macro|LINE_CTRL_DSR
 DECL|LINE_CTRL_DTR|macro|LINE_CTRL_DTR
 DECL|LINE_CTRL_RTS|macro|LINE_CTRL_RTS
 DECL|UART_ERROR_BREAK|macro|UART_ERROR_BREAK
@@ -27,6 +29,7 @@ DECL|irq_tx_empty|member|int (*irq_tx_empty)(struct device *dev);
 DECL|irq_tx_enable|member|void (*irq_tx_enable)(struct device *dev);
 DECL|irq_tx_ready|member|int (*irq_tx_ready)(struct device *dev);
 DECL|irq_update|member|int (*irq_update)(struct device *dev);
+DECL|line_ctrl_get|member|int (*line_ctrl_get)(struct device *dev, uint32_t ctrl, uint32_t *val);
 DECL|line_ctrl_set|member|int (*line_ctrl_set)(struct device *dev, uint32_t ctrl, uint32_t val);
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|poll_in|member|int (*poll_in)(struct device *dev, unsigned char *p_char);
@@ -56,6 +59,7 @@ DECL|uart_irq_tx_empty|function|static inline int uart_irq_tx_empty(struct devic
 DECL|uart_irq_tx_enable|function|static inline void uart_irq_tx_enable(struct device *dev)
 DECL|uart_irq_tx_ready|function|static inline int uart_irq_tx_ready(struct device *dev)
 DECL|uart_irq_update|function|static inline int uart_irq_update(struct device *dev)
+DECL|uart_line_ctrl_get|function|static inline int uart_line_ctrl_get(struct device *dev, uint32_t ctrl, uint32_t *val)
 DECL|uart_line_ctrl_set|function|static inline int uart_line_ctrl_set(struct device *dev, uint32_t ctrl, uint32_t val)
 DECL|uart_poll_in|function|static inline int uart_poll_in(struct device *dev, unsigned char *p_char)
 DECL|uart_poll_out|function|static inline unsigned char uart_poll_out(struct device *dev, unsigned char out_char)
