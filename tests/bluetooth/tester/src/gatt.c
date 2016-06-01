@@ -57,7 +57,6 @@ DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
 DECL|find_included_cb|function|static uint8_t find_included_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|find_included|function|static void find_included(uint8_t *data, uint16_t len)
 DECL|flags|member|uint8_t flags[1];
-DECL|flush_value|function|static ssize_t flush_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|gatt_buf_add|function|static void *gatt_buf_add(const void *data, size_t len)
 DECL|gatt_buf_clear|function|static void gatt_buf_clear(void)
 DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)

@@ -24,7 +24,6 @@ DECL|br_discovery_complete|function|static void br_discovery_complete(struct bt_
 DECL|br_discovery_results|variable|br_discovery_results
 DECL|br_server|variable|br_server
 DECL|bt_ready|function|static void bt_ready(int err)
-DECL|buf|member|uint8_t buf[MAX_DATA];
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
 DECL|cmd_advertise|function|static int cmd_advertise(int argc, char *argv[])
@@ -67,14 +66,12 @@ DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|data_fifo|variable|data_fifo
-DECL|data|member|uint8_t data[MAX_DATA];
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
-DECL|flush_long_vnd|function|static ssize_t flush_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t flags)
 DECL|id_addr|variable|id_addr
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
@@ -104,13 +101,12 @@ DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const ch
 DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *addr)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
-DECL|vnd1|variable|vnd1
-DECL|vnd2|variable|vnd2
 DECL|vnd_attrs|variable|vnd_attrs
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
 DECL|vnd_long_uuid1|variable|vnd_long_uuid1
 DECL|vnd_long_uuid2|variable|vnd_long_uuid2
-DECL|vnd_long_value|struct|struct vnd_long_value {
+DECL|vnd_long_value1|variable|vnd_long_value1
+DECL|vnd_long_value2|variable|vnd_long_value2
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
 DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)

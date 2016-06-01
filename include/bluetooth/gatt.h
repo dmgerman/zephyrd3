@@ -22,12 +22,9 @@ DECL|BT_GATT_DISCOVER_INCLUDE|enumerator|BT_GATT_DISCOVER_INCLUDE,
 DECL|BT_GATT_DISCOVER_PRIMARY|enumerator|BT_GATT_DISCOVER_PRIMARY,
 DECL|BT_GATT_DISCOVER_SECONDARY|enumerator|BT_GATT_DISCOVER_SECONDARY,
 DECL|BT_GATT_ERR|macro|BT_GATT_ERR
-DECL|BT_GATT_FLUSH_DISCARD|macro|BT_GATT_FLUSH_DISCARD
-DECL|BT_GATT_FLUSH_SYNC|macro|BT_GATT_FLUSH_SYNC
 DECL|BT_GATT_INCLUDE_SERVICE|macro|BT_GATT_INCLUDE_SERVICE
 DECL|BT_GATT_ITER_CONTINUE|enumerator|BT_GATT_ITER_CONTINUE,
 DECL|BT_GATT_ITER_STOP|enumerator|BT_GATT_ITER_STOP = 0,
-DECL|BT_GATT_LONG_DESCRIPTOR|macro|BT_GATT_LONG_DESCRIPTOR
 DECL|BT_GATT_PERM_READ_AUTHEN|macro|BT_GATT_PERM_READ_AUTHEN
 DECL|BT_GATT_PERM_READ_ENCRYPT|macro|BT_GATT_PERM_READ_ENCRYPT
 DECL|BT_GATT_PERM_READ|macro|BT_GATT_PERM_READ
@@ -75,7 +72,6 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|exponent|member|int8_t exponent;
 DECL|flags|member|uint16_t flags;
-DECL|flush|member|ssize_t (*flush)(struct bt_conn *conn,
 DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;
