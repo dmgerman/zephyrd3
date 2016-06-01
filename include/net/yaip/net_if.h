@@ -1,5 +1,4 @@
 DECL|CONFIG_NET_TX_STACK_SIZE|macro|CONFIG_NET_TX_STACK_SIZE
-DECL|NET_CAP_ARP|macro|NET_CAP_ARP
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
 DECL|NET_IF_GET_NAME|macro|NET_IF_GET_NAME
 DECL|NET_IF_GET|macro|NET_IF_GET
@@ -14,8 +13,6 @@ DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
 DECL|address|member|struct net_addr address;
-DECL|capabilities|member|uint32_t (*capabilities)(struct net_if *iface);
-DECL|capabilities|member|uint32_t capabilities;
 DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_timer|member|struct nano_timer dad_timer;
 DECL|dev|member|struct device *dev;
