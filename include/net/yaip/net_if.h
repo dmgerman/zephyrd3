@@ -1,6 +1,8 @@
 DECL|CONFIG_NET_TX_STACK_SIZE|macro|CONFIG_NET_TX_STACK_SIZE
 DECL|NET_CAP_ARP|macro|NET_CAP_ARP
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
+DECL|NET_IF_GET_NAME|macro|NET_IF_GET_NAME
+DECL|NET_IF_GET|macro|NET_IF_GET
 DECL|NET_IF_INIT|macro|NET_IF_INIT
 DECL|NET_IF_MAX_IPV4_ADDR|macro|NET_IF_MAX_IPV4_ADDR
 DECL|NET_IF_MAX_IPV4_MADDR|macro|NET_IF_MAX_IPV4_MADDR
@@ -27,6 +29,7 @@ DECL|is_infinite|member|bool is_infinite;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
+DECL|l2|member|const struct net_l2 const *l2;
 DECL|len|member|uint8_t len;
 DECL|lifetime|member|struct nano_timer lifetime;
 DECL|lifetime|member|struct nano_timer lifetime;
@@ -43,6 +46,8 @@ DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_ho
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_buf *buf)
+DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_buf *buf)
+DECL|net_if_send_data|function|static inline enum net_verdict net_if_send_data(struct net_if *iface,struct net_buf *buf)
 DECL|net_if_set_gw|function|static inline void net_if_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
 DECL|net_if_set_netmask|function|static inline void net_if_set_netmask(struct net_if *iface, struct in_addr *netmask)
