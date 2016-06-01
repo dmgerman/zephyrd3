@@ -9,6 +9,9 @@ DECL|PROFILER_SLEEP_MS|macro|PROFILER_SLEEP_MS
 DECL|PROF_HEADER_SIZE_U8|macro|PROF_HEADER_SIZE_U8
 DECL|PROF_LOG_HEADER|macro|PROF_LOG_HEADER
 DECL|PROF_MAX_EVENT_SIZE_U32|macro|PROF_MAX_EVENT_SIZE_U32
+DECL|PROF_STARTED|macro|PROF_STARTED
+DECL|PROF_STARTING|macro|PROF_STARTING
+DECL|PROF_STOPPED|macro|PROF_STOPPED
 DECL|PROF_UART_TESTMODE|macro|PROF_UART_TESTMODE
 DECL|TIMESTAMP_MODE_COUNTER|macro|TIMESTAMP_MODE_COUNTER
 DECL|TIMESTAMP_MODE_COUNTER|macro|TIMESTAMP_MODE_COUNTER
@@ -29,7 +32,7 @@ DECL|prof_pltfm_info|variable|prof_pltfm_info
 DECL|prof_read_timer|function|uint32_t prof_read_timer(void)
 DECL|prof_read_timer|function|uint32_t prof_read_timer(void)
 DECL|prof_send_platform_info|function|void prof_send_platform_info(void)
-DECL|prof_started|variable|prof_started
+DECL|prof_state|variable|prof_state
 DECL|prof|function|void prof(void)
 DECL|rtc_dev|variable|rtc_dev
 DECL|shell_cmd_prof|function|int shell_cmd_prof(int argc, char *argv[])
