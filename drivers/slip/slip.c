@@ -10,6 +10,8 @@ DECL|STATE_MULTI_PACKETS|enumerator|STATE_MULTI_PACKETS,
 DECL|STATE_OK|enumerator|STATE_OK,
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
+DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
