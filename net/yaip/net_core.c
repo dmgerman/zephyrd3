@@ -9,7 +9,7 @@ DECL|net_init|function|static int net_init(struct device *unused)
 DECL|net_print_statistics|macro|net_print_statistics
 DECL|net_print_statistics|macro|net_print_statistics
 DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_buf *buf)
-DECL|net_rx_fiber|function|static void net_rx_fiber(int unused1, int unused2)
+DECL|net_rx_fiber|function|static void net_rx_fiber(void)
 DECL|net_send_data|function|int net_send_data(struct net_buf *buf)
 DECL|net_stats|variable|net_stats
 DECL|network_initialization|function|static int network_initialization(void)
