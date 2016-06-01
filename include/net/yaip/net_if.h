@@ -42,6 +42,7 @@ DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
+DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_set_gw|function|static inline void net_if_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
 DECL|net_if_set_netmask|function|static inline void net_if_set_netmask(struct net_if *iface, struct in_addr *netmask)
