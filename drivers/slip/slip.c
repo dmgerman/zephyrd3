@@ -27,7 +27,6 @@ DECL|process_msg|function|static void process_msg(struct slip_context *slip)
 DECL|ptr|member|uint8_t *ptr; /* Where in net_buf to add data */
 DECL|recv_cb|function|static uint8_t *recv_cb(uint8_t *buf, size_t *off)
 DECL|rx|member|struct net_buf *rx; /* and then placed into this net_buf */
-DECL|slip_cap|function|static uint32_t slip_cap(struct net_if *iface)
 DECL|slip_context_data|variable|slip_context_data
 DECL|slip_context|struct|struct slip_context {
 DECL|slip_get_mac|function|static inline struct net_linkaddr *slip_get_mac(struct device *dev)
