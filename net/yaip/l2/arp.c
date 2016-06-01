@@ -1,4 +1,3 @@
-DECL|NET_ARP_BUF|macro|NET_ARP_BUF
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|arp_entry|struct|struct arp_entry {
