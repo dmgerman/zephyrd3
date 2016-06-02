@@ -16,6 +16,6 @@ DECL|net_if_ipv6_get_best_match|function|static inline struct in6_addr *net_if_i
 DECL|net_if_ipv6_get_ll|function|struct in6_addr *net_if_ipv6_get_ll(struct net_if *iface, enum net_addr_state addr_state)
 DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_add(struct net_if *iface,struct in6_addr *addr)
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(struct in6_addr *maddr)
-DECL|net_if_ipv6_select_src_addr|function|struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
-DECL|net_if_ipv6_unspecified_addr|function|struct in6_addr *net_if_ipv6_unspecified_addr(void)
+DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
+DECL|net_if_ipv6_unspecified_addr|function|const struct in6_addr *net_if_ipv6_unspecified_addr(void)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)

@@ -77,7 +77,7 @@ DECL|net_ipv4_addr_mask_cmp|function|static inline bool net_ipv4_addr_mask_cmp(s
 DECL|net_ipv4_broadcast_address|function|static inline const struct in_addr *net_ipv4_broadcast_address(void)
 DECL|net_ipv4_hdr|struct|struct net_ipv4_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
-DECL|net_ipv6_unspecified_address|function|static inline struct in6_addr *net_ipv6_unspecified_address(void)
+DECL|net_ipv6_unspecified_address|function|static inline const struct in6_addr *net_ipv6_unspecified_address(void)
 DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(struct in6_addr *addr)
 DECL|net_is_ipv6_ll_addr|function|static inline bool net_is_ipv6_ll_addr(struct in6_addr *addr)
