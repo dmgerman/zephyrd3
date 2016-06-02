@@ -46,6 +46,7 @@ DECL|on_nble_sm_config_rsp|function|void on_nble_sm_config_rsp(struct nble_sm_co
 DECL|on_nble_sm_pairing_request_evt|function|void on_nble_sm_pairing_request_evt(const struct nble_sm_pairing_request_evt *evt)
 DECL|on_nble_sm_passkey_disp_evt|function|void on_nble_sm_passkey_disp_evt(const struct nble_sm_passkey_disp_evt *ev)
 DECL|on_nble_sm_passkey_req_evt|function|void on_nble_sm_passkey_req_evt(const struct nble_sm_passkey_req_evt *ev)
+DECL|on_nble_sm_security_request_evt|function|void on_nble_sm_security_request_evt(const struct nble_sm_security_request_evt *evt)
 DECL|on_nble_sm_status_evt|function|void on_nble_sm_status_evt(const struct nble_sm_status_evt *ev)
 DECL|pairing_method|enum|enum pairing_method {
 DECL|send_dm_config|function|void send_dm_config(void)
