@@ -2,7 +2,7 @@ DECL|CONFIG_NET_RX_STACK_SIZE|macro|CONFIG_NET_RX_STACK_SIZE
 DECL|GET_STAT|macro|GET_STAT
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|PRINT_STATISTICS_INTERVAL|macro|PRINT_STATISTICS_INTERVAL
-DECL|PRINT_STAT|macro|PRINT_STAT
+DECL|PRINT|macro|PRINT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|l2_init|function|static inline void l2_init(void)
