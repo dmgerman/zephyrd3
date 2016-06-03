@@ -1,9 +1,17 @@
+DECL|RP_GET|macro|RP_GET
+DECL|RP_GET|macro|RP_GET
 DECL|api_funcs|variable|api_funcs
 DECL|callbacks|member|sys_slist_t callbacks;
 DECL|gpio_1_runtime|variable|gpio_1_runtime
+DECL|gpio_critical_region_end|function|static void gpio_critical_region_end(struct device *dev)
+DECL|gpio_critical_region_start|function|static void gpio_critical_region_start(struct device *dev)
+DECL|gpio_reentrancy_init|function|static void gpio_reentrancy_init(struct device *dev)
 DECL|gpio|member|qm_ss_gpio_t gpio;
 DECL|num_pins|member|uint8_t num_pins;
 DECL|pin_callbacks|member|uint32_t pin_callbacks;
+DECL|reentrancy_protection|variable|reentrancy_protection
+DECL|reentrancy_protection|variable|reentrancy_protection
+DECL|sem|member|struct nano_sem sem;
 DECL|ss_gpio_0_config|variable|ss_gpio_0_config
 DECL|ss_gpio_0_runtime|variable|ss_gpio_0_runtime
 DECL|ss_gpio_0|variable|ss_gpio_0
