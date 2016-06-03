@@ -1,0 +1,6 @@
+DECL|ff_cre_syncobj|function|int ff_cre_syncobj ( /* !=0:Function succeeded, ==0:Could not create due to any error */BYTE vol,/* Corresponding logical drive being processed */ _SYNC_t *sobj/* Pointer to return the created sync object */ )
+DECL|ff_del_syncobj|function|int ff_del_syncobj ( /* !=0:Function succeeded, ==0:Could not delete due to any error */_SYNC_t sobj/* Sync object tied to the logical drive to be deleted */ )
+DECL|ff_memalloc|function|void* ff_memalloc ( /* Returns pointer to the allocated memory block */UINT msize/* Number of bytes to allocate */ )
+DECL|ff_memfree|function|void ff_memfree (void* mblock/* Pointer to the memory block to free */ )
+DECL|ff_rel_grant|function|void ff_rel_grant (_SYNC_t sobj/* Sync object to be signaled */ )
+DECL|ff_req_grant|function|int ff_req_grant ( /* 1:Got a grant to access the volume, 0:Could not get a grant */_SYNC_t sobj/* Sync object to wait */ )
