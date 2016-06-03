@@ -10,6 +10,7 @@ DECL|eth_hdr|member|struct net_eth_hdr eth_hdr;
 DECL|hwlen|member|uint8_t hwlen; /* HLEN */
 DECL|hwtype|member|uint16_t hwtype; /* HTYPE */
 DECL|net_arp_hdr|struct|struct net_arp_hdr {
+DECL|net_arp_init|macro|net_arp_init
 DECL|opcode|member|uint16_t opcode;
 DECL|protocol|member|uint16_t protocol; /* PTYPE */
 DECL|protolen|member|uint8_t protolen; /* PLEN */
