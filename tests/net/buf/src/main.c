@@ -5,5 +5,5 @@ DECL|bufs_fifo|variable|bufs_fifo
 DECL|destroy_called|variable|destroy_called
 DECL|hci_opcode|member|uint16_t hci_opcode;
 DECL|hci_sync|member|void *hci_sync;
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|type|member|uint8_t type;
