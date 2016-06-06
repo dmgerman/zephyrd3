@@ -45,8 +45,10 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
+DECL|bt_l2cap_cmd_reject_cid_data|struct|struct bt_l2cap_cmd_reject_cid_data {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conn_param_req|struct|struct bt_l2cap_conn_param_req {
 DECL|bt_l2cap_conn_param_rsp|struct|struct bt_l2cap_conn_param_rsp {
@@ -72,6 +74,7 @@ DECL|data|member|uint8_t data[0];
 DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
 DECL|dcid|member|uint16_t dcid;
+DECL|dcid|member|uint16_t dcid;
 DECL|ident|member|uint8_t ident;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
@@ -88,6 +91,7 @@ DECL|reason|member|uint16_t reason;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
 DECL|result|member|uint16_t result;
+DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;
 DECL|scid|member|uint16_t scid;

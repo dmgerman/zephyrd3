@@ -53,7 +53,7 @@ DECL|l2cap_lookup_ident|macro|l2cap_lookup_ident
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_remove_ident|macro|l2cap_remove_ident
 DECL|l2cap_remove_tx_cid|function|static struct bt_l2cap_chan *l2cap_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
-DECL|l2cap_send_reject|function|static void l2cap_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason)
+DECL|l2cap_send_reject|function|static void l2cap_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason, void *data, uint8_t data_len)
 DECL|l2cap_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_server_lookup_psm(uint16_t psm)
 DECL|le_channels|variable|le_channels
 DECL|le_conn_param_rsp|function|static void le_conn_param_rsp(struct bt_l2cap *l2cap, struct net_buf *buf)
