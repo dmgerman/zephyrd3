@@ -1,0 +1,3 @@
+DECL|NET_IPV6_ND_HOP_LIMIT|macro|NET_IPV6_ND_HOP_LIMIT
+DECL|__IPV6_H|macro|__IPV6_H
+DECL|net_ipv6_init|macro|net_ipv6_init

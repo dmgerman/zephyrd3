@@ -14,7 +14,8 @@ DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
 DECL|address|member|struct net_addr address;
 DECL|dad_count|member|uint8_t dad_count;
-DECL|dad_timer|member|struct nano_timer dad_timer;
+DECL|dad_count|member|uint8_t dad_count;
+DECL|dad_timer|member|struct nano_delayed_work dad_timer;
 DECL|dev|member|struct device *dev;
 DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|uint8_t hop_limit;
@@ -50,6 +51,7 @@ DECL|net_if_send_data|function|static inline enum net_verdict net_if_send_data(s
 DECL|net_if_set_gw|function|static inline void net_if_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
 DECL|net_if_set_netmask|function|static inline void net_if_set_netmask(struct net_if *iface, struct in_addr *netmask)
+DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
 DECL|netmask|member|struct in_addr netmask;
 DECL|prefix|member|struct in6_addr prefix;

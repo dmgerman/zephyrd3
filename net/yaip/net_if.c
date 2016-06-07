@@ -1,5 +1,7 @@
+DECL|DAD_TIMEOUT|macro|DAD_TIMEOUT
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|dad_timeout|function|static void dad_timeout(struct nano_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
@@ -23,4 +25,5 @@ DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_mad
 DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
 DECL|net_if_ipv6_unspecified_addr|function|const struct in6_addr *net_if_ipv6_unspecified_addr(void)
+DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)

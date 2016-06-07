@@ -18,6 +18,7 @@ DECL|appdata|member|uint8_t *appdata; /* application data */
 DECL|context|member|struct net_context *context;
 DECL|ext_bitmap|member|uint8_t ext_bitmap;
 DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
+DECL|ext_opt_len|member|uint8_t ext_opt_len; /* IPv6 ND option length */
 DECL|family|member|uint8_t family; /* IPv4 vs IPv6 */
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func call */
@@ -29,6 +30,7 @@ DECL|net_nbuf_appdata|macro|net_nbuf_appdata
 DECL|net_nbuf_context|macro|net_nbuf_context
 DECL|net_nbuf_ext_bitmap|macro|net_nbuf_ext_bitmap
 DECL|net_nbuf_ext_len|macro|net_nbuf_ext_len
+DECL|net_nbuf_ext_opt_len|macro|net_nbuf_ext_opt_len
 DECL|net_nbuf_family|macro|net_nbuf_family
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
 DECL|net_nbuf_get_reserve_data|macro|net_nbuf_get_reserve_data

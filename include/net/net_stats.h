@@ -10,16 +10,19 @@ DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
+DECL|drop|member|net_stats_t drop;
 DECL|forwarded|member|net_stats_t forwarded;
 DECL|fragerr|member|net_stats_t fragerr;
 DECL|hblenerr|member|net_stats_t hblenerr;
 DECL|icmp|member|struct net_stats_icmp icmp;
 DECL|ip_errors|member|struct net_stats_ip_errors ip_errors;
 DECL|ipv4|member|struct net_stats_ip ipv4;
+DECL|ipv6_nd|member|struct net_stats_ipv6_nd ipv6_nd;
 DECL|ipv6|member|struct net_stats_ip ipv6;
 DECL|lblenerr|member|net_stats_t lblenerr;
 DECL|net_stats_icmp|struct|struct net_stats_icmp {
 DECL|net_stats_ip_errors|struct|struct net_stats_ip_errors {
+DECL|net_stats_ipv6_nd|struct|struct net_stats_ipv6_nd {
 DECL|net_stats_ip|struct|struct net_stats_ip {
 DECL|net_stats_tcp|struct|struct net_stats_tcp {
 DECL|net_stats_t|typedef|typedef uint32_t net_stats_t;
@@ -31,8 +34,10 @@ DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
+DECL|recv|member|net_stats_t recv;
 DECL|rexmit|member|net_stats_t rexmit;
 DECL|rst|member|net_stats_t rst;
+DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
