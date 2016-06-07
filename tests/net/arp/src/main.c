@@ -1,5 +1,7 @@
 DECL|NET_ARP_BUF|macro|NET_ARP_BUF
 DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
+DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|app_data|variable|app_data
 DECL|broadcast_eth_addr|variable|broadcast_eth_addr
 DECL|hwaddr|variable|hwaddr
@@ -13,7 +15,6 @@ DECL|net_arp_context|struct|struct net_arp_context {
 DECL|net_arp_dev_init|function|int net_arp_dev_init(struct device *dev)
 DECL|net_arp_get_mac|function|static uint8_t *net_arp_get_mac(struct device *dev)
 DECL|net_arp_if_api|variable|net_arp_if_api
-DECL|net_arp_iface_cap|function|static uint32_t net_arp_iface_cap(struct net_if *iface)
 DECL|net_arp_iface_init|function|static void net_arp_iface_init(struct net_if *iface)
 DECL|pending_buf|variable|pending_buf
 DECL|pkt1|variable|pkt1
