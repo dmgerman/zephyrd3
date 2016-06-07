@@ -6,6 +6,8 @@ DECL|TEST_IPV6|macro|TEST_IPV6
 DECL|TEST_LL_6_TWO|macro|TEST_LL_6_TWO
 DECL|TEST_LL_6|macro|TEST_LL_6
 DECL|TEST_LL_8|macro|TEST_LL_8
+DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
+DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[6];
 DECL|mainloop|function|void mainloop(void)
