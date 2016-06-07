@@ -18,4 +18,6 @@
  * @brief Linker script for the Nios II/e CPU with timer and 16550 UART
  */
 
+#include <layout.h>
+
 #include <arch/nios2/linker.ld>
