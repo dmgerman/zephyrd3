@@ -5,6 +5,7 @@ DECL|NET_NBR_PROBE|enumerator|NET_NBR_PROBE,
 DECL|NET_NBR_REACHABLE|enumerator|NET_NBR_REACHABLE,
 DECL|NET_NBR_STALE|enumerator|NET_NBR_STALE,
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|TWO_HOURS|macro|TWO_HOURS
 DECL|addr|member|struct in6_addr addr;
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
@@ -28,6 +29,11 @@ DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
 DECL|handle_ns_input|function|static enum net_verdict handle_ns_input(struct net_buf *buf)
 DECL|handle_ns_neighbor|function|static inline void handle_ns_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr)
+DECL|handle_prefix_autonomous|function|static inline void handle_prefix_autonomous(struct net_buf *buf,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
+DECL|handle_prefix_onlink|function|static inline void handle_prefix_onlink(struct net_buf *buf,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
+DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_buf *buf)
+DECL|handle_ra_neighbor|function|static inline struct net_nbr *handle_ra_neighbor(struct net_buf *buf,struct net_icmpv6_nd_opt_hdr *hdr)
+DECL|handle_ra_prefix|function|static inline void handle_ra_prefix(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr)
 DECL|is_router|member|bool is_router;
 DECL|link_metric|member|uint16_t link_metric;
 DECL|na_input_handler|variable|na_input_handler
@@ -50,8 +56,11 @@ DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_
 DECL|ns_count|member|uint8_t ns_count;
 DECL|ns_input_handler|variable|ns_input_handler
 DECL|pending|member|struct net_buf *pending;
+DECL|ra_input_handler|variable|ra_input_handler
 DECL|reachable|member|struct nano_delayed_work reachable;
+DECL|remaining|function|static inline uint32_t remaining(struct nano_delayed_work *work)
 DECL|send_ns|member|struct nano_delayed_work send_ns;
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
 DECL|state|member|enum net_nbr_state state;
+DECL|submit_work|function|static inline void submit_work(struct nano_delayed_work *work, uint32_t time_in_sec)
