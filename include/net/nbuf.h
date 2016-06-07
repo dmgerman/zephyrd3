@@ -22,6 +22,8 @@ DECL|family|member|uint8_t family; /* IPv4 vs IPv6 */
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func call */
 DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
+DECL|lladdr_dst|member|struct net_linkaddr lladdr_dst;
+DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
 DECL|net_nbuf_appdatalen|macro|net_nbuf_appdatalen
 DECL|net_nbuf_appdata|macro|net_nbuf_appdata
 DECL|net_nbuf_context|macro|net_nbuf_context
@@ -39,9 +41,12 @@ DECL|net_nbuf_iface|macro|net_nbuf_iface
 DECL|net_nbuf_ip_data|macro|net_nbuf_ip_data
 DECL|net_nbuf_ip_hdr_len|macro|net_nbuf_ip_hdr_len
 DECL|net_nbuf_len|macro|net_nbuf_len
-DECL|net_nbuf_ll_dest|macro|net_nbuf_ll_dest
+DECL|net_nbuf_ll_clear|function|static inline void net_nbuf_ll_clear(struct net_buf *buf)
+DECL|net_nbuf_ll_dst|macro|net_nbuf_ll_dst
+DECL|net_nbuf_ll_if|macro|net_nbuf_ll_if
 DECL|net_nbuf_ll_reserve|macro|net_nbuf_ll_reserve
 DECL|net_nbuf_ll_src|macro|net_nbuf_ll_src
+DECL|net_nbuf_ll_swap|function|static inline void net_nbuf_ll_swap(struct net_buf *buf)
 DECL|net_nbuf_ll|macro|net_nbuf_ll
 DECL|net_nbuf_next_hdr|macro|net_nbuf_next_hdr
 DECL|net_nbuf_ref|macro|net_nbuf_ref
