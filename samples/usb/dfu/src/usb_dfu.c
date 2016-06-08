@@ -1,6 +1,8 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|DFU_FLASH_ADDR|macro|DFU_FLASH_ADDR
+DECL|alt_setting|member|uint32_t alt_setting; /* DFU alternate setting */
 DECL|block_nr|member|uint16_t block_nr; /* DFU block number */
 DECL|buffer|member|uint8_t buffer[DFU_MAX_XFER_SIZE]; /* DFU data buffer */
 DECL|bytes_rcvd|member|uint32_t bytes_rcvd;
@@ -9,6 +11,7 @@ DECL|dfu_check_app_state|function|static bool dfu_check_app_state(void)
 DECL|dfu_class_handle_req|function|static int dfu_class_handle_req(struct usb_setup_packet *pSetup,int32_t *data_len, uint8_t **data)
 DECL|dfu_config|variable|dfu_config
 DECL|dfu_config|variable|dfu_config
+DECL|dfu_custom_handle_req|function|static int dfu_custom_handle_req(struct usb_setup_packet *pSetup,int32_t *data_len, uint8_t **data)
 DECL|dfu_data_t|struct|struct dfu_data_t {
 DECL|dfu_data|variable|dfu_data
 DECL|dfu_mode_usb_description|variable|dfu_mode_usb_description
