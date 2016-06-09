@@ -1,3 +1,5 @@
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
 DECL|TEST_TIMEOUT|macro|TEST_TIMEOUT
 DECL|acl_handle|member|uint16_t acl_handle;
 DECL|bt_data|struct|struct bt_data {
