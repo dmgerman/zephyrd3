@@ -1,9 +1,7 @@
-DECL|NET_ARP_BUF|macro|NET_ARP_BUF
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|app_data|variable|app_data
-DECL|broadcast_eth_addr|variable|broadcast_eth_addr
 DECL|hwaddr|variable|hwaddr
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
