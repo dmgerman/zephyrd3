@@ -1,12 +1,15 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|STACKSIZE|macro|STACKSIZE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|app_data|variable|app_data
+DECL|fiberStack|variable|fiberStack
 DECL|hwaddr|variable|hwaddr
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|mainloop|function|void mainloop(void)
+DECL|main_fiber|function|void main_fiber(void)
+DECL|main|function|void main(void)
 DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_arp_context_data|variable|net_arp_context_data
 DECL|net_arp_context|struct|struct net_arp_context {
