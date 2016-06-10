@@ -36,7 +36,9 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct in6_addr *addr, enum net_nbr_state state)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
+DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
 DECL|net_ipv6_start_dad|function|int net_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
+DECL|net_ipv6_start_rs|function|int net_ipv6_start_rs(struct net_if *iface)
 DECL|net_is_override|macro|net_is_override
 DECL|net_is_router|macro|net_is_router
 DECL|net_is_solicited|macro|net_is_solicited

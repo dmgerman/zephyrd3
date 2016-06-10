@@ -15,7 +15,10 @@ DECL|NET_ICMPV6_OPT_LEN_OFFSET|macro|NET_ICMPV6_OPT_LEN_OFFSET
 DECL|NET_ICMPV6_OPT_TYPE_OFFSET|macro|NET_ICMPV6_OPT_TYPE_OFFSET
 DECL|NET_ICMPV6_RA_FLAG_AUTONOMOUS|macro|NET_ICMPV6_RA_FLAG_AUTONOMOUS
 DECL|NET_ICMPV6_RA_FLAG_ONLINK|macro|NET_ICMPV6_RA_FLAG_ONLINK
+DECL|NET_ICMPV6_RS_BUF|macro|NET_ICMPV6_RS_BUF
+DECL|NET_ICMPV6_RS|macro|NET_ICMPV6_RS
 DECL|__ICMPV6_H|macro|__ICMPV6_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -29,7 +32,9 @@ DECL|net_icmpv6_init|macro|net_icmpv6_init
 DECL|net_icmpv6_na_hdr|struct|struct net_icmpv6_na_hdr {
 DECL|net_icmpv6_nd_opt_hdr|struct|struct net_icmpv6_nd_opt_hdr {
 DECL|net_icmpv6_ns_hdr|struct|struct net_icmpv6_ns_hdr {
+DECL|net_icmpv6_rs_hdr|struct|struct net_icmpv6_rs_hdr {
 DECL|node|member|sys_snode_t node;
+DECL|reserved|member|uint32_t reserved;
 DECL|reserved|member|uint32_t reserved;
 DECL|reserved|member|uint8_t reserved[3];
 DECL|tgt|member|struct in6_addr tgt;
