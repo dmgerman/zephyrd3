@@ -16,6 +16,7 @@ DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
+DECL|init_done|member|bool init_done;
 DECL|ip_drop|member|uint16_t ip_drop;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
@@ -29,7 +30,7 @@ DECL|recv_cb|function|static uint8_t *recv_cb(uint8_t *buf, size_t *off)
 DECL|rx|member|struct net_buf *rx; /* and then placed into this net_buf */
 DECL|slip_context_data|variable|slip_context_data
 DECL|slip_context|struct|struct slip_context {
-DECL|slip_get_mac|function|static inline struct net_linkaddr *slip_get_mac(struct device *dev)
+DECL|slip_get_mac|function|static inline struct net_linkaddr *slip_get_mac(struct slip_context *slip)
 DECL|slip_if_api|variable|slip_if_api
 DECL|slip_iface_init|function|static void slip_iface_init(struct net_if *iface)
 DECL|slip_init|function|static int slip_init(struct device *dev)
