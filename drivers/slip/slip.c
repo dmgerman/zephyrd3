@@ -22,6 +22,7 @@ DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list *
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|ll_reserve|member|uint16_t ll_reserve; /* Reserve any space for link layer headers */
 DECL|mac_addr|member|uint8_t mac_addr[6];
+DECL|mtu|member|int mtu;
 DECL|multi_packets|member|uint16_t multi_packets;
 DECL|overflows|member|uint16_t overflows;
 DECL|process_msg|function|static void process_msg(struct slip_context *slip)
