@@ -1,10 +1,8 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|SPI_K64_NUM_PRESCALERS|macro|SPI_K64_NUM_PRESCALERS
 DECL|SPI_K64_NUM_SCALERS|macro|SPI_K64_NUM_SCALERS
 DECL|SPI_K64_PROTOCOL_FREQ|macro|SPI_K64_PROTOCOL_FREQ
 DECL|SPI_K64_PROTOCOL_PERIOD_NS|macro|SPI_K64_PROTOCOL_PERIOD_NS
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|baud_rate_prescaler|variable|baud_rate_prescaler
 DECL|baud_rate_scaler|variable|baud_rate_scaler
 DECL|delay_prescaler|variable|delay_prescaler
