@@ -1,3 +1,4 @@
+DECL|BR_CHAN|macro|BR_CHAN
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_FLAG_INFO_DONE|enumerator|BT_L2CAP_FLAG_INFO_DONE, /* remote l2cap info is done */
