@@ -28,6 +28,7 @@ DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
 DECL|net_nbuf_appdatalen|macro|net_nbuf_appdatalen
 DECL|net_nbuf_appdata|macro|net_nbuf_appdata
 DECL|net_nbuf_context|macro|net_nbuf_context
+DECL|net_nbuf_copy_all|function|static inline struct net_buf *net_nbuf_copy_all(struct net_buf *buf,size_t reserve)
 DECL|net_nbuf_ext_bitmap|macro|net_nbuf_ext_bitmap
 DECL|net_nbuf_ext_len|macro|net_nbuf_ext_len
 DECL|net_nbuf_ext_opt_len|macro|net_nbuf_ext_opt_len

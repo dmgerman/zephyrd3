@@ -46,6 +46,7 @@ DECL|inc_free_tx_bufs_func|macro|inc_free_tx_bufs_func
 DECL|inc_free_tx_bufs_func|macro|inc_free_tx_bufs_func
 DECL|inc_free_tx_bufs|function|static inline void inc_free_tx_bufs(struct net_buf *buf)
 DECL|inc_free_tx_bufs|macro|inc_free_tx_bufs
+DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *orig, size_t amount, size_t reserve)
 DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,const char *caller, int line) #else struct net_buf *net_nbuf_get_data(struct net_context *context) #endif
 DECL|net_nbuf_get_debug|function|static struct net_buf *net_nbuf_get_debug(enum net_nbuf_type type, struct net_context *context, const char *caller, int line) #else static struct net_buf *net_nbuf_get(enum net_nbuf_type type,
 DECL|net_nbuf_get_reserve_data_debug|function|struct net_buf *net_nbuf_get_reserve_data_debug(uint16_t reserve_head,const char *caller, int line) #else struct net_buf *net_nbuf_get_reserve_data(uint16_t reserve_head) #endif
