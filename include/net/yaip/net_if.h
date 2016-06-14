@@ -49,6 +49,7 @@ DECL|net_if_get_device|function|static inline struct device *net_if_get_device(s
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
 DECL|net_if_get_ll_reserve|function|static inline uint16_t net_if_get_ll_reserve(struct net_if *iface)
 DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if *iface)
+DECL|net_if_ipv4_get_ttl|function|static inline uint8_t net_if_ipv4_get_ttl(struct net_if *iface)
 DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_addr_lookup_by_iface(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
@@ -79,6 +80,7 @@ DECL|retrans_timer|member|uint32_t retrans_timer;
 DECL|rs_count|member|uint8_t rs_count;
 DECL|rs_timer|member|struct nano_delayed_work rs_timer;
 DECL|send|member|int (*send)(struct net_if *iface, struct net_buf *buf);
+DECL|ttl|member|uint8_t ttl;
 DECL|tx_fiber_stack|member|char tx_fiber_stack[CONFIG_NET_TX_STACK_SIZE];
 DECL|tx_queue|member|struct nano_fifo tx_queue;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
