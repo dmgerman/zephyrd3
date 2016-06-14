@@ -54,9 +54,10 @@ DECL|adv_type|member|uint8_t adv_type;
 DECL|ad|member|struct nble_eir_data ad;
 DECL|appearance|member|uint16_t appearance;
 DECL|attr_type|member|uint16_t attr_type;
-DECL|auth_level|member|uint8_t auth_level;
 DECL|authorization|member|uint8_t authorization;
 DECL|auth|member|const struct bt_conn_auth_cb *auth;
+DECL|auth|member|uint8_t auth;
+DECL|auth|member|uint8_t auth;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
 DECL|bda|member|bt_addr_le_t bda;
@@ -64,6 +65,7 @@ DECL|bda|member|bt_addr_le_t bda;
 DECL|ble_bond_info_cb_t|typedef|typedef void (*ble_bond_info_cb_t)(const struct nble_sm_bond_info *info,
 DECL|ble_get_version_cb_t|typedef|typedef void (*ble_get_version_cb_t)(const struct nble_version *ver);
 DECL|ble_rssi_report_params|struct|struct ble_rssi_report_params {
+DECL|bt_local_addr|struct|struct bt_local_addr {
 DECL|car|member|uint8_t car;
 DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|ble_bond_info_cb_t cb;
@@ -113,6 +115,7 @@ DECL|filter_policy|member|uint8_t filter_policy;
 DECL|flags|member|atomic_t flags;
 DECL|hash|member|uint8_t hash[4];
 DECL|hci_reason|member|uint8_t hci_reason;
+DECL|id_addr|member|bt_addr_le_t id_addr;
 DECL|include_bonded_addrs|member|bool include_bonded_addrs;
 DECL|info|member|struct nble_sm_bond_info info;
 DECL|interval_max|member|uint16_t interval_max;
@@ -121,19 +124,22 @@ DECL|interval_min|member|uint16_t interval_min;
 DECL|interval_min|member|uint16_t interval_min;
 DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
-DECL|io_caps|member|uint8_t io_caps;
+DECL|io_capabilities|member|uint8_t io_capabilities;
+DECL|io_capabilities|member|uint8_t io_capabilities;
 DECL|irk_count|member|uint8_t irk_count;
-DECL|key_size|member|uint8_t key_size;
 DECL|key_type|member|uint8_t key_type;
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|link_sup_to|member|uint16_t link_sup_to;
 DECL|major|member|uint8_t major;
+DECL|max_key_size|member|uint8_t max_key_size;
+DECL|max_key_size|member|uint8_t max_key_size;
 DECL|min_count|member|uint8_t min_count;
 DECL|min_count|member|uint8_t min_count;
+DECL|min_key_size|member|uint8_t min_key_size;
+DECL|min_key_size|member|uint8_t min_key_size;
 DECL|minor|member|uint8_t minor;
-DECL|mitm|member|uint8_t mitm;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
 DECL|nble_common_rsp|struct|struct nble_common_rsp {
@@ -174,7 +180,6 @@ DECL|nble_sm_bond_info_rsp|struct|struct nble_sm_bond_info_rsp {
 DECL|nble_sm_bond_info|struct|struct nble_sm_bond_info {
 DECL|nble_sm_clear_bonds_req|struct|struct nble_sm_clear_bonds_req {
 DECL|nble_sm_common_rsp|struct|struct nble_sm_common_rsp {
-DECL|nble_sm_config_req|struct|struct nble_sm_config_req {
 DECL|nble_sm_config_rsp|struct|struct nble_sm_config_rsp {
 DECL|nble_sm_error_req|struct|struct nble_sm_error_req {
 DECL|nble_sm_pairing_param|struct|struct nble_sm_pairing_param {
@@ -191,9 +196,8 @@ DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
 DECL|nble_uas_rssi_calibrate_req|struct|struct nble_uas_rssi_calibrate_req {
 DECL|nble_version|struct|struct nble_version {
 DECL|nble|struct|struct nble {
-DECL|oob_present|member|uint8_t oob_present;
+DECL|oob_flag|member|uint8_t oob_flag;
 DECL|oob|member|uint8_t oob[16];
-DECL|options|member|uint8_t options;
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|param0|member|uint8_t param0;
@@ -201,6 +205,7 @@ DECL|param1|member|uint8_t param1;
 DECL|param2|member|uint8_t param2;
 DECL|param3|member|uint8_t param3;
 DECL|params|member|struct nble_conn_param params;
+DECL|params|member|struct nble_sm_pairing_param params;
 DECL|params|member|struct nble_sm_pairing_param params;
 DECL|params|member|struct nble_sm_passkey params;
 DECL|passkey|member|uint32_t passkey;
@@ -212,8 +217,8 @@ DECL|ppcp|member|struct nble_conn_param ppcp;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
 DECL|reason|member|uint8_t reason;
-DECL|remote_io|member|uint8_t remote_io;
 DECL|role_slave|member|uint8_t role_slave;
+DECL|rpa|member|bt_addr_le_t rpa;
 DECL|rssi_data|member|int8_t rssi_data[BLE_GAP_RSSI_EVT_SIZE];
 DECL|rssi_report_resp_t|typedef|typedef void (*rssi_report_resp_t)(int status);
 DECL|rssi_report_t|typedef|typedef void (*rssi_report_t)(const int8_t *rssi_data);

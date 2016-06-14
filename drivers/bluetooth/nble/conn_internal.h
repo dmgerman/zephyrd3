@@ -9,6 +9,8 @@ DECL|handle|member|uint16_t handle;
 DECL|interval|member|uint16_t interval;
 DECL|latency|member|uint16_t latency;
 DECL|ref|member|atomic_t ref;
+DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|role|member|uint8_t role;
+DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|} state;
 DECL|timeout|member|uint16_t timeout;

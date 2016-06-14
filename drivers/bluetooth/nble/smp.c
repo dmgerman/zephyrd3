@@ -4,6 +4,7 @@ DECL|BT_SMP_IO_KEYBOARD_DISPLAY|macro|BT_SMP_IO_KEYBOARD_DISPLAY
 DECL|BT_SMP_IO_KEYBOARD_ONLY|macro|BT_SMP_IO_KEYBOARD_ONLY
 DECL|BT_SMP_IO_NO_INPUT_OUTPUT|macro|BT_SMP_IO_NO_INPUT_OUTPUT
 DECL|BT_SMP_MAX_ENC_KEY_SIZE|macro|BT_SMP_MAX_ENC_KEY_SIZE
+DECL|BT_SMP_MIN_ENC_KEY_SIZE|macro|BT_SMP_MIN_ENC_KEY_SIZE
 DECL|BT_SMP_OOB_NOT_PRESENT|macro|BT_SMP_OOB_NOT_PRESENT
 DECL|BT_SMP_OOB_PRESENT|macro|BT_SMP_OOB_PRESENT
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
@@ -31,25 +32,27 @@ DECL|bt_smp_connected|function|void bt_smp_connected(struct bt_conn *conn)
 DECL|bt_smp_disconnected|function|void bt_smp_disconnected(struct bt_conn *conn)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_pool|variable|bt_smp_pool
+DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
+DECL|bt_smp_send_security_req|function|int bt_smp_send_security_req(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
 DECL|conn|member|struct bt_conn *conn;
 DECL|flags|member|atomic_t flags;
 DECL|gen_method_legacy|variable|gen_method_legacy
+DECL|get_auth|function|static uint8_t get_auth(uint8_t auth)
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)
-DECL|legacy_pairing_req|function|static uint8_t legacy_pairing_req(struct bt_smp *smp, uint8_t remote_io)
+DECL|legacy_pairing_req|function|static uint8_t legacy_pairing_req(struct bt_smp *smp, const struct nble_sec_param *par)
 DECL|legacy_passkey_entry|function|static void legacy_passkey_entry(struct bt_smp *smp, unsigned int passkey)
 DECL|method|member|uint8_t method;
 DECL|nble_security_reply|function|static void nble_security_reply(struct bt_conn *conn,struct nble_sm_passkey *par)
+DECL|nble_start_security|function|static void nble_start_security(struct bt_conn *conn)
 DECL|on_nble_sm_common_rsp|function|void on_nble_sm_common_rsp(const struct nble_sm_common_rsp *rsp)
-DECL|on_nble_sm_config_rsp|function|void on_nble_sm_config_rsp(struct nble_sm_config_rsp *rsp)
 DECL|on_nble_sm_pairing_request_evt|function|void on_nble_sm_pairing_request_evt(const struct nble_sm_pairing_request_evt *evt)
 DECL|on_nble_sm_passkey_disp_evt|function|void on_nble_sm_passkey_disp_evt(const struct nble_sm_passkey_disp_evt *ev)
 DECL|on_nble_sm_passkey_req_evt|function|void on_nble_sm_passkey_req_evt(const struct nble_sm_passkey_req_evt *ev)
 DECL|on_nble_sm_security_request_evt|function|void on_nble_sm_security_request_evt(const struct nble_sm_security_request_evt *evt)
 DECL|on_nble_sm_status_evt|function|void on_nble_sm_status_evt(const struct nble_sm_status_evt *ev)
 DECL|pairing_method|enum|enum pairing_method {
-DECL|send_dm_config|function|void send_dm_config(void)
 DECL|sm_error|function|static int sm_error(struct bt_conn *conn, uint8_t reason)
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
 DECL|smp_reset|function|static void smp_reset(struct bt_smp *smp)
