@@ -60,7 +60,7 @@ DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_smp_update_keys|function|void bt_smp_update_keys(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
-DECL|chan|member|struct bt_l2cap_chan chan;
+DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|compute_and_check_and_send_slave_dhcheck|function|static uint8_t compute_and_check_and_send_slave_dhcheck(struct bt_smp *smp)
 DECL|compute_and_send_master_dhcheck|function|static uint8_t compute_and_send_master_dhcheck(struct bt_smp *smp)
 DECL|dhkey|member|uint8_t dhkey[32];
