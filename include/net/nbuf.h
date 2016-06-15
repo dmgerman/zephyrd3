@@ -45,6 +45,7 @@ DECL|net_nbuf_ll_src|macro|net_nbuf_ll_src
 DECL|net_nbuf_ll_swap|function|static inline void net_nbuf_ll_swap(struct net_buf *buf)
 DECL|net_nbuf_ll|macro|net_nbuf_ll
 DECL|net_nbuf_next_hdr|macro|net_nbuf_next_hdr
+DECL|net_nbuf_print_frags|macro|net_nbuf_print_frags
 DECL|net_nbuf_ref|macro|net_nbuf_ref
 DECL|net_nbuf_reserve|macro|net_nbuf_reserve
 DECL|net_nbuf_set_src_ipv6_addr|macro|net_nbuf_set_src_ipv6_addr
