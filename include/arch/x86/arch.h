@@ -44,8 +44,8 @@ DECL|_PRIORITY_ARG|macro|_PRIORITY_ARG
 DECL|_PRIORITY_ARG|macro|_PRIORITY_ARG
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
-DECL|_arch_irq_lock|function|static inline __attribute__((always_inline)) unsigned int _arch_irq_lock(void)
-DECL|_arch_irq_unlock|function|static inline __attribute__((always_inline)) void _arch_irq_unlock(unsigned int key)
+DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
+DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
 DECL|_int_latency_start|macro|_int_latency_start
 DECL|_int_latency_stop|macro|_int_latency_stop
 DECL|cs|member|unsigned int cs;
