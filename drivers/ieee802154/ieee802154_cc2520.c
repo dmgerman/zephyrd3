@@ -3,7 +3,6 @@ DECL|CC2520_AUTOMATISM|macro|CC2520_AUTOMATISM
 DECL|CC2520_AUTOMATISM|macro|CC2520_AUTOMATISM
 DECL|CC2520_FCS_LENGTH|macro|CC2520_FCS_LENGTH
 DECL|CC2520_TX_THRESHOLD|macro|CC2520_TX_THRESHOLD
-DECL|CONFIG_NETWORKING_LEGACY_RADIO_DRIVER|macro|CONFIG_NETWORKING_LEGACY_RADIO_DRIVER
 DECL|_cc2520_print_errors|function|static inline void _cc2520_print_errors(struct cc2520_context *cc2520)
 DECL|_cc2520_print_errors|macro|_cc2520_print_errors
 DECL|_cc2520_print_exceptions|function|static inline void _cc2520_print_exceptions(struct cc2520_context *cc2520)
@@ -18,7 +17,7 @@ DECL|_usleep|function|static void _usleep(uint32_t usec)
 DECL|cc2520_15_4_radio_driver|variable|cc2520_15_4_radio_driver
 DECL|cc2520_channel_clear|function|static int cc2520_channel_clear(void)
 DECL|cc2520_context_data|variable|cc2520_context_data
-DECL|cc2520_get_mac|function|static const uint8_t *cc2520_get_mac(struct device *dev)
+DECL|cc2520_get_mac|function|static inline uint8_t *cc2520_get_mac(struct device *dev)
 DECL|cc2520_get_object|function|static radio_result_t cc2520_get_object(radio_param_t param,void *dest, size_t size)
 DECL|cc2520_get_value|function|static radio_result_t cc2520_get_value(radio_param_t param, radio_value_t *value)
 DECL|cc2520_initialize|function|static int cc2520_initialize(void)
@@ -31,17 +30,17 @@ DECL|cc2520_read|function|static int cc2520_read(void *buf, unsigned short buf_l
 DECL|cc2520_receiving_packet|function|static int cc2520_receiving_packet(void)
 DECL|cc2520_rx|function|static void cc2520_rx(int arg, int unused2)
 DECL|cc2520_send|function|static int cc2520_send(struct net_buf *buf, const void *payload, unsigned short payload_len)
-DECL|cc2520_set_channel|function|static int cc2520_set_channel(struct device *dev, uint16_t channel)
-DECL|cc2520_set_ieee_addr|function|static int cc2520_set_ieee_addr(struct device *dev, const uint8_t *ieee_addr)
+DECL|cc2520_set_channel|function|static inline int cc2520_set_channel(struct device *dev, uint16_t channel)
+DECL|cc2520_set_ieee_addr|function|static inline int cc2520_set_ieee_addr(struct device *dev, const uint8_t *ieee_addr)
 DECL|cc2520_set_object|function|static radio_result_t cc2520_set_object(radio_param_t param,const void *src, size_t size)
-DECL|cc2520_set_pan_id|function|static int cc2520_set_pan_id(struct device *dev, uint16_t pan_id)
-DECL|cc2520_set_short_addr|function|static int cc2520_set_short_addr(struct device *dev, uint16_t short_addr)
+DECL|cc2520_set_pan_id|function|static inline int cc2520_set_pan_id(struct device *dev, uint16_t pan_id)
+DECL|cc2520_set_short_addr|function|static inline int cc2520_set_short_addr(struct device *dev, uint16_t short_addr)
 DECL|cc2520_set_value|function|static radio_result_t cc2520_set_value(radio_param_t param, radio_value_t value)
 DECL|cc2520_sglt|variable|cc2520_sglt
-DECL|cc2520_start|function|static int cc2520_start(struct device *dev)
-DECL|cc2520_stop|function|static int cc2520_stop(struct device *dev)
+DECL|cc2520_start|function|static inline int cc2520_start(struct device *dev)
+DECL|cc2520_stop|function|static inline int cc2520_stop(struct device *dev)
 DECL|cc2520_transmit|function|static int cc2520_transmit(struct net_buf *buf, unsigned short transmit_len)
-DECL|cc2520_tx|function|static int cc2520_tx(struct device *dev, struct net_buf *buf)
+DECL|cc2520_tx|function|static inline int cc2520_tx(struct device *dev, struct net_buf *buf)
 DECL|configure_spi|function|static inline int configure_spi(struct device *dev)
 DECL|enable_fifop_interrupt|function|static void enable_fifop_interrupt(struct cc2520_context *cc2520, bool enable)
 DECL|enable_reception|function|static inline void enable_reception(struct cc2520_context *cc2520)
