@@ -42,7 +42,6 @@ DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_
 DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc_rsp|function|static void gatt_write_ccc_rsp(struct bt_conn *conn, uint8_t err)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
-DECL|gatts_write_evt|function|static uint8_t gatts_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *buf, uint8_t buflen)
 DECL|indicate|function|static int indicate(struct bt_conn *conn, struct bt_gatt_indicate_params *params)
 DECL|len|member|uint16_t len;
 DECL|nble_gatt_service|struct|struct nble_gatt_service {
