@@ -33,6 +33,7 @@ DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
+DECL|l2_data|member|void *l2_data;
 DECL|l2|member|const struct net_l2 const *l2;
 DECL|len|member|uint8_t len;
 DECL|lifetime|member|struct nano_delayed_work lifetime;
@@ -60,6 +61,7 @@ DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_se
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, uint32_t retrans_timer)
+DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_buf *buf)
