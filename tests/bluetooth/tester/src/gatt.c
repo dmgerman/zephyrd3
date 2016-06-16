@@ -72,9 +72,6 @@ DECL|len|member|uint16_t len;
 DECL|notify_func|function|static uint8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, uint16_t length)
 DECL|permissions|member|uint8_t permissions;
 DECL|permissions|member|uint8_t permissions;
-DECL|prep_data_len|member|uint16_t prep_data_len;
-DECL|prep_data|member|uint8_t *prep_data;
-DECL|prep_write_err|member|uint8_t prep_write_err;
 DECL|properties|member|uint8_t properties;
 DECL|read_cb|function|static uint8_t read_cb(struct bt_conn *conn, uint8_t err, struct bt_gatt_read_params *params, const void *data, uint16_t length)
 DECL|read_destroy|function|static void read_destroy(struct bt_gatt_read_params *params)
