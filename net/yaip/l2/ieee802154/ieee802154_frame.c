@@ -1,0 +1,13 @@
+DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|dbg_print_fs|macro|dbg_print_fs
+DECL|dbg_print_fs|macro|dbg_print_fs
+DECL|generate_addressing_fields|function|generate_addressing_fields(struct net_if *iface, struct net_buf *buf, struct ieee802154_fcf_seq *fs, uint8_t **p_buf)
+DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(uint8_t **p_buf)
+DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_if *iface, struct net_buf *buf, struct net_nbr **nbr, bool *broadcast)
+DECL|ieee802154_compute_header_size|function|uint16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
+DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_buf *buf)
+DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
+DECL|validate_addr|function|validate_addr(uint8_t *buf, uint8_t **p_buf, enum ieee802154_addressing_mode mode, bool pan_id_compression)
+DECL|validate_fc_seq|function|validate_fc_seq(uint8_t *buf, uint8_t **p_buf)
+DECL|validate_payload_and_mfr|function|validate_payload_and_mfr(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t *p_buf, uint8_t length)
