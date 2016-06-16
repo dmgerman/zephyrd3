@@ -5,15 +5,14 @@ DECL|EXTRA_PROTO_LEN|macro|EXTRA_PROTO_LEN
 DECL|IP_PROTO_LEN|macro|IP_PROTO_LEN
 DECL|IP_PROTO_LEN|macro|IP_PROTO_LEN
 DECL|NBUF_DATA_COUNT|macro|NBUF_DATA_COUNT
-DECL|NBUF_DATA_COUNT|macro|NBUF_DATA_COUNT
-DECL|NBUF_DATA_LEN|macro|NBUF_DATA_LEN
 DECL|NBUF_DATA_LEN|macro|NBUF_DATA_LEN
 DECL|NBUF_RX_COUNT|macro|NBUF_RX_COUNT
-DECL|NBUF_RX_COUNT|macro|NBUF_RX_COUNT
 DECL|NBUF_TX_COUNT|macro|NBUF_TX_COUNT
-DECL|NBUF_TX_COUNT|macro|NBUF_TX_COUNT
-DECL|NET_DBG|macro|NET_DBG
-DECL|NET_DBG|macro|NET_DBG
+DECL|NET_BUF_CHECK_IF_IN_USE|macro|NET_BUF_CHECK_IF_IN_USE
+DECL|NET_BUF_CHECK_IF_IN_USE|macro|NET_BUF_CHECK_IF_IN_USE
+DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
+DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
+DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|PRINT_CYCLE|macro|PRINT_CYCLE
 DECL|STRING2|macro|STRING2
 DECL|STRING2|macro|STRING2
@@ -48,14 +47,20 @@ DECL|inc_free_tx_bufs|function|static inline void inc_free_tx_bufs(struct net_bu
 DECL|inc_free_tx_bufs|macro|inc_free_tx_bufs
 DECL|net_nbuf_compact|function|struct net_buf *net_nbuf_compact(struct net_buf *buf)
 DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *orig, size_t amount, size_t reserve)
-DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,const char *caller, int line) #else struct net_buf *net_nbuf_get_data(struct net_context *context) #endif
+DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,const char *caller, int line)
+DECL|net_nbuf_get_data|function|struct net_buf *net_nbuf_get_data(struct net_context *context)
 DECL|net_nbuf_get_debug|function|static struct net_buf *net_nbuf_get_debug(enum net_nbuf_type type, struct net_context *context, const char *caller, int line) #else static struct net_buf *net_nbuf_get(enum net_nbuf_type type,
-DECL|net_nbuf_get_reserve_data_debug|function|struct net_buf *net_nbuf_get_reserve_data_debug(uint16_t reserve_head,const char *caller, int line) #else struct net_buf *net_nbuf_get_reserve_data(uint16_t reserve_head) #endif
+DECL|net_nbuf_get_reserve_data_debug|function|struct net_buf *net_nbuf_get_reserve_data_debug(uint16_t reserve_head,const char *caller, int line)
+DECL|net_nbuf_get_reserve_data|function|struct net_buf *net_nbuf_get_reserve_data(uint16_t reserve_head)
 DECL|net_nbuf_get_reserve_debug|function|static struct net_buf *net_nbuf_get_reserve_debug(enum net_nbuf_type type, uint16_t reserve_head, const char *caller, int line) #else
-DECL|net_nbuf_get_reserve_rx_debug|function|struct net_buf *net_nbuf_get_reserve_rx_debug(uint16_t reserve_head, const char *caller, int line) #else struct net_buf *net_nbuf_get_reserve_rx(uint16_t reserve_head) #endif
-DECL|net_nbuf_get_reserve_tx_debug|function|struct net_buf *net_nbuf_get_reserve_tx_debug(uint16_t reserve_head, const char *caller, int line) #else struct net_buf *net_nbuf_get_reserve_tx(uint16_t reserve_head) #endif
-DECL|net_nbuf_get_rx_debug|function|struct net_buf *net_nbuf_get_rx_debug(struct net_context *context, const char *caller, int line) #else struct net_buf *net_nbuf_get_rx(struct net_context *context) #endif
-DECL|net_nbuf_get_tx_debug|function|struct net_buf *net_nbuf_get_tx_debug(struct net_context *context, const char *caller, int line) #else struct net_buf *net_nbuf_get_tx(struct net_context *context) #endif
+DECL|net_nbuf_get_reserve_rx_debug|function|struct net_buf *net_nbuf_get_reserve_rx_debug(uint16_t reserve_head, const char *caller, int line)
+DECL|net_nbuf_get_reserve_rx|function|struct net_buf *net_nbuf_get_reserve_rx(uint16_t reserve_head)
+DECL|net_nbuf_get_reserve_tx_debug|function|struct net_buf *net_nbuf_get_reserve_tx_debug(uint16_t reserve_head, const char *caller, int line)
+DECL|net_nbuf_get_reserve_tx|function|struct net_buf *net_nbuf_get_reserve_tx(uint16_t reserve_head)
+DECL|net_nbuf_get_rx_debug|function|struct net_buf *net_nbuf_get_rx_debug(struct net_context *context, const char *caller, int line)
+DECL|net_nbuf_get_rx|function|struct net_buf *net_nbuf_get_rx(struct net_context *context)
+DECL|net_nbuf_get_tx_debug|function|struct net_buf *net_nbuf_get_tx_debug(struct net_context *context, const char *caller, int line)
+DECL|net_nbuf_get_tx|function|struct net_buf *net_nbuf_get_tx(struct net_context *context)
 DECL|net_nbuf_init|function|void net_nbuf_init(void)
 DECL|net_nbuf_is_compact|function|bool net_nbuf_is_compact(struct net_buf *buf)
 DECL|net_nbuf_push|function|struct net_buf *net_nbuf_push(struct net_buf *parent, struct net_buf *buf, size_t amount)
