@@ -16,7 +16,7 @@ DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
 DECL|br_init|function|static int br_init(void)
 DECL|br_init|function|static int br_init(void)
-DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_discovery_param *param)
+DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_discovery_param *param, size_t num_rsp)
 DECL|bt_addr_le_is_bonded|function|bool bt_addr_le_is_bonded(const bt_addr_le_t *addr)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
@@ -57,7 +57,6 @@ DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_priv|struct|struct discovery_priv {
 DECL|discovery_results_count|variable|discovery_results_count
-DECL|discovery_results_full|function|static void discovery_results_full(void)
 DECL|discovery_results_size|variable|discovery_results_size
 DECL|discovery_results|variable|discovery_results
 DECL|eir_has_name|function|static bool eir_has_name(const uint8_t *eir)
