@@ -1,1 +1,2 @@
 DECL|_TOOLCHAIN_H|macro|_TOOLCHAIN_H
+DECL|__unnamed_workaround__|macro|__unnamed_workaround__

@@ -36,6 +36,8 @@ DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|__packed|variable|__packed
+DECL|__single|struct|struct __single {
+DECL|__unnamed_workaround__|union|union __unnamed_workaround__ {
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
 DECL|_next|member|struct bt_gatt_attr *_next;
 DECL|_next|member|struct bt_gatt_subscribe_params *_next;

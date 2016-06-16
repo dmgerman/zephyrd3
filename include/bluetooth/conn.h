@@ -12,6 +12,7 @@ DECL|BT_SECURITY_LOW|enumerator|BT_SECURITY_LOW, /** No encryption and no authen
 DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM, /** encryption and no authentication (no MITM). */
 DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|__packed|enum|typedef enum __packed {
+DECL|__unnamed_workaround__|union|union __unnamed_workaround__ {
 DECL|_next|member|struct bt_conn_cb *_next;
 DECL|allow_role_switch|member|bool allow_role_switch;
 DECL|br|member|struct bt_conn_br_info br;

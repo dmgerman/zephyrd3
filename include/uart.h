@@ -7,6 +7,7 @@ DECL|UART_ERROR_OVERRUN|macro|UART_ERROR_OVERRUN
 DECL|UART_ERROR_PARITY|macro|UART_ERROR_PARITY
 DECL|UART_OPTION_AFCE|macro|UART_OPTION_AFCE
 DECL|__INCuarth|macro|__INCuarth
+DECL|__unnamed_workaround__|union|union __unnamed_workaround__ {
 DECL|base|member|uint8_t *base;
 DECL|drv_cmd|member|int (*drv_cmd)(struct device *dev, uint32_t cmd, uint32_t p);
 DECL|err_check|member|int (*err_check)(struct device *dev);

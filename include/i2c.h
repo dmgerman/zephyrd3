@@ -13,6 +13,7 @@ DECL|I2C_SPEED_MASK|macro|I2C_SPEED_MASK
 DECL|I2C_SPEED_STANDARD|macro|I2C_SPEED_STANDARD
 DECL|I2C_SPEED_ULTRA|macro|I2C_SPEED_ULTRA
 DECL|__DRIVERS_I2C_H|macro|__DRIVERS_I2C_H
+DECL|__bits|struct|struct __bits {
 DECL|bits|member|} bits;
 DECL|buf|member|uint8_t *buf;
 DECL|configure|member|i2c_api_configure_t configure;
