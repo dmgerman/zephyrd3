@@ -120,6 +120,8 @@ DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(st
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
 DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
+DECL|read_remote_ext_features_complete|function|static void read_remote_ext_features_complete(struct net_buf *buf)
+DECL|read_remote_features_complete|function|static void read_remote_features_complete(struct net_buf *buf)
 DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
 DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
 DECL|remote_name_request_complete|function|static void remote_name_request_complete(struct net_buf *buf)

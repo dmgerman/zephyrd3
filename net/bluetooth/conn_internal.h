@@ -9,6 +9,7 @@ DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
 DECL|BT_CONN_USER|enumerator|BT_CONN_USER, /* user I/O when pairing */
+DECL|LMP_MAX_PAGES|macro|LMP_MAX_PAGES
 DECL|__packed|enum|typedef enum __packed {
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
@@ -22,6 +23,7 @@ DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|err|member|uint8_t err;
 DECL|features|member|uint8_t features[8];
+DECL|features|member|uint8_t features[LMP_MAX_PAGES][8];
 DECL|flags|member|atomic_t flags[1];
 DECL|handle|member|uint16_t handle;
 DECL|init_addr|member|bt_addr_le_t init_addr;
@@ -31,6 +33,7 @@ DECL|interval|member|uint16_t interval;
 DECL|keys|member|struct bt_keys *keys;
 DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
+DECL|lmp_ext_feat_capable|macro|lmp_ext_feat_capable
 DECL|pairing_method|member|uint8_t pairing_method;
 DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|ref|member|atomic_t ref;
