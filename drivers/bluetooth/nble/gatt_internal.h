@@ -9,6 +9,7 @@ DECL|attr_base|member|struct bt_gatt_attr *attr_base;
 DECL|attr_base|member|struct bt_gatt_attr *attr_base;
 DECL|attr_count|member|uint8_t attr_count;
 DECL|attr_count|member|uint8_t attr_count;
+DECL|attr_size|member|uint8_t attr_size;
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
