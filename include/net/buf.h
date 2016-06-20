@@ -11,8 +11,8 @@ DECL|frags|member|struct net_buf *frags;
 DECL|free|member|struct nano_fifo * const free;
 DECL|len|member|uint16_t len;
 DECL|net_buf_pool_init|macro|net_buf_pool_init
-DECL|net_buf_tail|macro|net_buf_tail
-DECL|net_buf_user_data|macro|net_buf_user_data
+DECL|net_buf_tail|function|static inline uint8_t *net_buf_tail(struct net_buf *buf)
+DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|ref|member|uint8_t ref;
 DECL|size|member|const uint16_t size;
