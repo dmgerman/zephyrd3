@@ -126,12 +126,16 @@ DECL|NIOS2_TLBMISC_REG_WAY_MASK|macro|NIOS2_TLBMISC_REG_WAY_MASK
 DECL|NIOS2_TLBMISC_REG_WAY_OFST|macro|NIOS2_TLBMISC_REG_WAY_OFST
 DECL|NIOS2_TLBMISC_REG_WE_MASK|macro|NIOS2_TLBMISC_REG_WE_MASK
 DECL|NIOS2_TLBMISC_REG_WE_OFST|macro|NIOS2_TLBMISC_REG_WE_OFST
+DECL|SYSTEM_BUS_WIDTH|macro|SYSTEM_BUS_WIDTH
 DECL|__NIOS2_H__|macro|__NIOS2_H__
 DECL|_nios2_break|function|static inline void _nios2_break(void)
 DECL|_nios2_creg_read|macro|_nios2_creg_read
 DECL|_nios2_creg_write|macro|_nios2_creg_write
+DECL|_nios2_get_register_address|macro|_nios2_get_register_address
 DECL|_nios2_read_et|function|static inline uint32_t _nios2_read_et(void)
 DECL|_nios2_read_sp|function|static inline uint32_t _nios2_read_sp(void)
+DECL|_nios2_reg_read|function|static inline uint32_t _nios2_reg_read(void *base, int regnum)
+DECL|_nios2_reg_write|function|static inline void _nios2_reg_write(void *base, int regnum, uint32_t data)
 DECL|_nios2_report_stack_overflow|function|static inline void _nios2_report_stack_overflow(void)
 DECL|_nios2_write_et|function|static inline void _nios2_write_et(uint32_t et)
 DECL|nios2_creg|enum|enum nios2_creg {
