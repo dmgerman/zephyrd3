@@ -1,6 +1,7 @@
 DECL|AD_COMPLETE_NAME|macro|AD_COMPLETE_NAME
 DECL|AD_SHORT_NAME|macro|AD_SHORT_NAME
 DECL|CREDITS|macro|CREDITS
+DECL|DATA_BREDR_MTU|macro|DATA_BREDR_MTU
 DECL|DATA_MTU|macro|DATA_MTU
 DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
@@ -65,6 +66,7 @@ DECL|conn_addr_str|function|static void conn_addr_str(struct bt_conn *conn, char
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
+DECL|data_bredr_fifo|variable|data_bredr_fifo
 DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
@@ -77,7 +79,12 @@ DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *co
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
 DECL|l2cap_bredr_accept|function|static int l2cap_bredr_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
+DECL|l2cap_bredr_alloc_buf|function|static struct net_buf *l2cap_bredr_alloc_buf(struct bt_l2cap_chan *chan)
 DECL|l2cap_bredr_chan|variable|l2cap_bredr_chan
+DECL|l2cap_bredr_connected|function|static void l2cap_bredr_connected(struct bt_l2cap_chan *chan)
+DECL|l2cap_bredr_disconnected|function|static void l2cap_bredr_disconnected(struct bt_l2cap_chan *chan)
+DECL|l2cap_bredr_ops|variable|l2cap_bredr_ops
+DECL|l2cap_bredr_recv|function|static void l2cap_bredr_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan|variable|l2cap_chan
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
