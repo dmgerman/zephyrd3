@@ -3,6 +3,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_FLAG_INFO_DONE|enumerator|BT_L2CAP_FLAG_INFO_DONE, /* remote l2cap info is done */
 DECL|BT_L2CAP_FLAG_INFO_PENDING|enumerator|BT_L2CAP_FLAG_INFO_PENDING, /* retrieving remote l2cap info */
+DECL|L2CAP_BR_DEFAULT_MTU|macro|L2CAP_BR_DEFAULT_MTU
 DECL|L2CAP_BR_DYN_CID_END|macro|L2CAP_BR_DYN_CID_END
 DECL|L2CAP_BR_DYN_CID_START|macro|L2CAP_BR_DYN_CID_START
 DECL|L2CAP_BR_MIN_MTU|macro|L2CAP_BR_MIN_MTU
@@ -33,6 +34,8 @@ DECL|l2cap_br_accept|function|static int l2cap_br_accept(struct bt_conn *conn, s
 DECL|l2cap_br_chan_add|function|static bool l2cap_br_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_alloc_cid|function|l2cap_br_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_del|function|static void l2cap_br_chan_del(struct bt_l2cap_chan *chan)
+DECL|l2cap_br_conf_add_mtu|function|static void l2cap_br_conf_add_mtu(struct net_buf *buf, const uint16_t mtu)
+DECL|l2cap_br_conf|function|static void l2cap_br_conf(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_conn_req|function|static void l2cap_br_conn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_connected|function|static void l2cap_br_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_disconn_req|function|static void l2cap_br_disconn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
