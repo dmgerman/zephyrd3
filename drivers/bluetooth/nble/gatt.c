@@ -76,3 +76,4 @@ DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid|member|uint8_t uuid[16];
 DECL|value_handle|member|uint16_t value_handle;
 DECL|whitelist|variable|whitelist
+DECL|write_evt|function|static int32_t write_evt(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint16_t offset, const uint8_t *data, uint8_t len)
