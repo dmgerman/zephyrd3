@@ -3,6 +3,8 @@ DECL|DISCOVER_FLAGS_UUID_PRESENT|macro|DISCOVER_FLAGS_UUID_PRESENT
 DECL|NBLE_GATTC_EVT_INDICATION|enumerator|NBLE_GATTC_EVT_INDICATION,
 DECL|NBLE_GATTC_EVT_NOTIFICATION|enumerator|NBLE_GATTC_EVT_NOTIFICATION,
 DECL|NBLE_GATTC_EVT|enum|enum NBLE_GATTC_EVT {
+DECL|NBLE_GATT_EX_FLAG_CANCEL|enumerator|NBLE_GATT_EX_FLAG_CANCEL,
+DECL|NBLE_GATT_EX_FLAG_EXECUTE|enumerator|NBLE_GATT_EX_FLAG_EXECUTE,
 DECL|NBLE_GATT_WR_FLAG_PREP|enumerator|NBLE_GATT_WR_FLAG_PREP = 2,
 DECL|NBLE_GATT_WR_FLAG_REPLY|enumerator|NBLE_GATT_WR_FLAG_REPLY = 1,
 DECL|attr_base|member|struct bt_gatt_attr *attr_base;
@@ -55,6 +57,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
+DECL|nble_gatt_ex_flag|enum|enum nble_gatt_ex_flag {
 DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
 DECL|nble_gatt_wr_flag|enum|enum nble_gatt_wr_flag {
 DECL|nble_gattc_characteristic|struct|struct nble_gattc_characteristic {
