@@ -30,6 +30,10 @@ DECL|NET_IPV6TCPH_LEN|macro|NET_IPV6TCPH_LEN
 DECL|NET_IPV6UDPH_LEN|macro|NET_IPV6UDPH_LEN
 DECL|NET_IPV6_FRAGH_LEN|macro|NET_IPV6_FRAGH_LEN
 DECL|NET_IPV6_MTU|macro|NET_IPV6_MTU
+DECL|NET_SOCKADDR_MAX_SIZE|macro|NET_SOCKADDR_MAX_SIZE
+DECL|NET_SOCKADDR_MAX_SIZE|macro|NET_SOCKADDR_MAX_SIZE
+DECL|NET_SOCKADDR_PTR_MAX_SIZE|macro|NET_SOCKADDR_PTR_MAX_SIZE
+DECL|NET_SOCKADDR_PTR_MAX_SIZE|macro|NET_SOCKADDR_PTR_MAX_SIZE
 DECL|NET_TCPH_LEN|macro|NET_TCPH_LEN
 DECL|NET_UDPH_LEN|macro|NET_UDPH_LEN
 DECL|PF_INET6|macro|PF_INET6
@@ -44,9 +48,13 @@ DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|code|member|uint8_t code;
+DECL|data|member|char data[NET_SOCKADDR_MAX_SIZE - sizeof(sa_family_t)];
+DECL|data|member|char data[NET_SOCKADDR_PTR_MAX_SIZE - sizeof(sa_family_t)];
 DECL|dst_port|member|uint16_t dst_port;
 DECL|dst|member|struct in6_addr dst;
 DECL|dst|member|struct in_addr dst;
+DECL|family|member|sa_family_t family;
+DECL|family|member|sa_family_t family;
 DECL|family|member|sa_family_t family;
 DECL|flow|member|uint16_t flow;
 DECL|hop_limit|member|uint8_t hop_limit;
@@ -111,6 +119,26 @@ DECL|s6_addr32|macro|s6_addr32
 DECL|s6_addr|macro|s6_addr
 DECL|s_addr|macro|s_addr
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|sin6_addr|member|struct in6_addr *sin6_addr; /* IPv6 address */
+DECL|sin6_addr|member|struct in6_addr sin6_addr; /* IPv6 address */
+DECL|sin6_family|member|sa_family_t sin6_family; /* AF_INET6 */
+DECL|sin6_family|member|sa_family_t sin6_family; /* AF_INET6 */
+DECL|sin6_port|member|uint16_t sin6_port; /* Port number */
+DECL|sin6_port|member|uint16_t sin6_port; /* Port number */
+DECL|sin6_scope_id|member|uint8_t sin6_scope_id; /* interfaces for a scope */
+DECL|sin6_scope_id|member|uint8_t sin6_scope_id; /* interfaces for a scope */
+DECL|sin_addr|member|struct in_addr *sin_addr; /* IPv4 address */
+DECL|sin_addr|member|struct in_addr sin_addr; /* IPv4 address */
+DECL|sin_family|member|sa_family_t sin_family; /* AF_INET */
+DECL|sin_family|member|sa_family_t sin_family; /* AF_INET */
+DECL|sin_port|member|uint16_t sin_port; /* Port number */
+DECL|sin_port|member|uint16_t sin_port; /* Port number */
+DECL|sockaddr_in6_ptr|struct|struct sockaddr_in6_ptr {
+DECL|sockaddr_in6|struct|struct sockaddr_in6 {
+DECL|sockaddr_in_ptr|struct|struct sockaddr_in_ptr {
+DECL|sockaddr_in|struct|struct sockaddr_in {
+DECL|sockaddr_ptr|struct|struct sockaddr_ptr {
+DECL|sockaddr|struct|struct sockaddr {
 DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|src|member|struct in_addr src;
