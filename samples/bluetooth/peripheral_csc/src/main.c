@@ -81,5 +81,5 @@ DECL|sensor_location|variable|sensor_location
 DECL|status|member|uint8_t status;
 DECL|supported_locations|variable|supported_locations
 DECL|wheel_rev_data_nfy|struct|struct wheel_rev_data_nfy {
-DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset)
+DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_sc_ctrl_point_req|struct|struct write_sc_ctrl_point_req {
