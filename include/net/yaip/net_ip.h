@@ -86,12 +86,12 @@ DECL|net_ipv6_addr_create|function|static inline void net_ipv6_addr_create(struc
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
 DECL|net_ipv6_unspecified_address|function|static inline const struct in6_addr *net_ipv6_unspecified_address(void)
 DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
-DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(struct in6_addr *addr)
+DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(const struct in6_addr *addr)
 DECL|net_is_ipv6_addr_solicited_node|function|static inline bool net_is_ipv6_addr_solicited_node(const struct in6_addr *addr)
 DECL|net_is_ipv6_addr_unspecified|function|static inline bool net_is_ipv6_addr_unspecified(const struct in6_addr *addr)
 DECL|net_is_ipv6_ll_addr|function|static inline bool net_is_ipv6_ll_addr(const struct in6_addr *addr)
-DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(uint8_t *addr1, uint8_t *addr2, uint8_t length)
-DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(struct in_addr *addr)
+DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(const uint8_t *addr1, const uint8_t *addr2, uint8_t length)
+DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(const struct in_addr *addr)
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
 DECL|net_tuple|struct|struct net_tuple {
