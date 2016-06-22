@@ -39,6 +39,8 @@ DECL|NET_UDPH_LEN|macro|NET_UDPH_LEN
 DECL|PF_INET6|macro|PF_INET6
 DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
+DECL|SOCK_DGRAM|enumerator|SOCK_DGRAM = 1,
+DECL|SOCK_STREAM|enumerator|SOCK_STREAM,
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -104,6 +106,7 @@ DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct 
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
 DECL|net_sin6|function|static inline struct sockaddr_in6 *net_sin6(const struct sockaddr *addr)
 DECL|net_sin|function|static inline struct sockaddr_in *net_sin(const struct sockaddr *addr)
+DECL|net_sock_type|enum|enum net_sock_type {
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|uint8_t nexthdr;
