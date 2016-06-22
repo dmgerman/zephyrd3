@@ -52,6 +52,7 @@ DECL|cmd_gatt_unsubscribe|function|static int cmd_gatt_unsubscribe(int argc, cha
 DECL|cmd_gatt_write_signed|function|static int cmd_gatt_write_signed(int argc, char *argv[])
 DECL|cmd_gatt_write_without_rsp|function|static int cmd_gatt_write_without_rsp(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static int cmd_gatt_write(int argc, char *argv[])
+DECL|cmd_hrs_simulate|function|static int cmd_hrs_simulate(int argc, char *argv[])
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_l2cap_connect|function|static int cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_disconnect|function|static int cmd_l2cap_disconnect(int argc, char *argv[])
@@ -74,6 +75,7 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|exchange_rsp|function|static void exchange_rsp(struct bt_conn *conn, uint8_t err)
+DECL|hrs_simulate|variable|hrs_simulate
 DECL|id_addr|variable|id_addr
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
