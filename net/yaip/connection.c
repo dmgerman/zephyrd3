@@ -18,7 +18,7 @@ DECL|cache_check|function|static inline enum net_verdict cache_check(enum ip_pro
 DECL|cache_check|macro|cache_check
 DECL|cache_clear|function|static void cache_clear(void)
 DECL|cache_clear|macro|cache_clear
-DECL|check_addr|function|static bool check_addr(struct net_buf *buf, struct net_addr *addr, bool is_remote)
+DECL|check_addr|function|static bool check_addr(struct net_buf *buf, struct sockaddr *addr, bool is_remote)
 DECL|check_hash|function|static int32_t check_hash(enum ip_protocol proto, sa_family_t family, void *remote_addr, void *local_addr, uint16_t remote_port,
 DECL|conn_cache_neg|variable|conn_cache_neg
 DECL|conn_cache|variable|conn_cache
@@ -31,10 +31,10 @@ DECL|ipv4_to_hash|function|static inline uint16_t ipv4_to_hash(struct in_addr *a
 DECL|ipv6_to_hash|function|static inline uint16_t ipv6_to_hash(struct in6_addr *addr)
 DECL|net_conn_init|function|void net_conn_init(void)
 DECL|net_conn_input|function|enum net_verdict net_conn_input(enum ip_protocol proto, struct net_buf *buf)
-DECL|net_conn_register|function|int net_conn_register(enum ip_protocol proto, const struct net_addr *remote_addr, const struct net_addr *local_addr, uint16_t remote_port, uint16_t local_port,
+DECL|net_conn_register|function|int net_conn_register(enum ip_protocol proto, const struct sockaddr *remote_addr, const struct sockaddr *local_addr, uint16_t remote_port, uint16_t local_port,
 DECL|net_conn_unregister|function|int net_conn_unregister(void *handle)
 DECL|ports_to_hash|function|static inline uint8_t ports_to_hash(uint16_t remote_port, uint16_t local_port)
-DECL|prepare_register_debug_print|function|void prepare_register_debug_print(char *dst, char *src, const struct net_addr *remote_addr, const struct net_addr *local_addr)
+DECL|prepare_register_debug_print|function|void prepare_register_debug_print(char *dst, char *src, const struct sockaddr *remote_addr, const struct sockaddr *local_addr)
 DECL|proto2str|function|static inline const char *proto2str(enum ip_protocol proto)
 DECL|send_icmp_error|function|static inline void send_icmp_error(struct net_buf *buf)
 DECL|value|member|uint32_t value;
