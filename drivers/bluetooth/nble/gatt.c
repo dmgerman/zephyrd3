@@ -54,6 +54,7 @@ DECL|on_nble_gattc_read_rsp|function|void on_nble_gattc_read_rsp(const struct nb
 DECL|on_nble_gattc_value_evt|function|void on_nble_gattc_value_evt(const struct nble_gattc_value_evt *ev, uint8_t *data, uint8_t length)
 DECL|on_nble_gattc_write_rsp|function|void on_nble_gattc_write_rsp(const struct nble_gattc_write_rsp *rsp)
 DECL|on_nble_gatts_indicate_rsp|function|void on_nble_gatts_indicate_rsp(const struct nble_gatts_indicate_rsp *rsp)
+DECL|on_nble_gatts_notify_tx_evt|function|void on_nble_gatts_notify_tx_evt(const struct nble_gatts_notify_tx_evt *evt)
 DECL|on_nble_gatts_read_evt|function|void on_nble_gatts_read_evt(const struct nble_gatts_read_evt *ev)
 DECL|on_nble_gatts_register_rsp|function|void on_nble_gatts_register_rsp(const struct nble_gatts_register_rsp *rsp, const struct nble_gatt_attr_handles *handles, uint8_t len)
 DECL|on_nble_gatts_write_evt|function|void on_nble_gatts_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *buf, uint8_t buflen)
