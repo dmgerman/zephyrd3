@@ -102,6 +102,8 @@ DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(const uin
 DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(const struct in_addr *addr)
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
+DECL|net_sin6|function|static inline struct sockaddr_in6 *net_sin6(const struct sockaddr *addr)
+DECL|net_sin|function|static inline struct sockaddr_in *net_sin(const struct sockaddr *addr)
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|uint8_t nexthdr;
