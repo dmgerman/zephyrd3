@@ -64,7 +64,7 @@ DECL|parse_descriptor|function|static uint16_t parse_descriptor(struct bt_conn *
 DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|parse_service|function|static uint16_t parse_service(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|prep_data|variable|prep_data
-DECL|prep_write_evt|function|static uint8_t prep_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *data, uint8_t len)
+DECL|prep_write_evt|function|static int32_t prep_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *data, uint8_t len)
 DECL|properties|member|uint8_t properties;
 DECL|queue|variable|queue
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
