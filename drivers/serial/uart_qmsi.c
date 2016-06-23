@@ -17,7 +17,6 @@ DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev
 DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|is_data_ready|function|static bool is_data_ready(qm_uart_t instance)
 DECL|is_tx_fifo_full|function|static bool is_tx_fifo_full(qm_uart_t instance)
-DECL|sem|member|struct nano_sem sem;
 DECL|uart_qmsi_config_info|struct|struct uart_qmsi_config_info {
 DECL|uart_qmsi_drv_cmd|function|static int uart_qmsi_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
 DECL|uart_qmsi_drv_data|struct|struct uart_qmsi_drv_data {
