@@ -1,4 +1,5 @@
 DECL|BT_L2CAP_CHAN_SEND_RESERVE|macro|BT_L2CAP_CHAN_SEND_RESERVE
+DECL|BT_L2CAP_LE_CHAN|macro|BT_L2CAP_LE_CHAN
 DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
 DECL|_next|member|struct bt_l2cap_chan *_next;
 DECL|_next|member|struct bt_l2cap_server *_next;
