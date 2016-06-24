@@ -50,6 +50,8 @@ DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get
 DECL|net_if_get_ll_reserve|function|static inline uint16_t net_if_get_ll_reserve(struct net_if *iface)
 DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if *iface)
 DECL|net_if_ipv4_get_ttl|function|static inline uint8_t net_if_ipv4_get_ttl(struct net_if *iface)
+DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
+DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
 DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_addr_lookup_by_iface(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
@@ -64,10 +66,8 @@ DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(s
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
 DECL|net_if_router|struct|struct net_if_router {
 DECL|net_if_send_data|function|static inline enum net_verdict net_if_send_data(struct net_if *iface,struct net_buf *buf)
-DECL|net_if_set_gw|function|static inline void net_if_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
 DECL|net_if_set_mtu|function|static inline void net_if_set_mtu(struct net_if *iface, uint16_t mtu)
-DECL|net_if_set_netmask|function|static inline void net_if_set_netmask(struct net_if *iface, struct in_addr *netmask)
 DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_base_reachable_time|function|static inline void net_ipv6_set_base_reachable_time(struct net_if *iface, uint32_t reachable_time)
