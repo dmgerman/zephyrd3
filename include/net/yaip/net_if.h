@@ -56,6 +56,7 @@ DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_
 DECL|net_if_ipv6_get_retrans_timer|function|static inline uint32_t net_if_ipv6_get_retrans_timer(struct net_if *iface)
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
+DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, uint32_t retrans_timer)
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_buf *buf)
