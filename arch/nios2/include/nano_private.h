@@ -40,6 +40,7 @@ DECL|r22|member|uint32_t r22;
 DECL|r23|member|uint32_t r23;
 DECL|r28|member|uint32_t r28;
 DECL|ra|member|uint32_t ra; /* Return address */
+DECL|retval|member|uint32_t retval; /* Return value of _Swap() */
 DECL|s_NANO|struct|struct s_NANO {
 DECL|s_coop|struct|struct s_coop {
 DECL|sp|member|uint32_t sp; /* Stack pointer */
