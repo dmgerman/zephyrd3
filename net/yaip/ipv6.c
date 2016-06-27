@@ -43,6 +43,7 @@ DECL|nbr_new|function|static struct net_nbr *nbr_new(struct in6_addr *addr, enum
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
 DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
+DECL|net_ipv6_nbr_lookup|function|struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
