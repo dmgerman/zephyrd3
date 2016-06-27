@@ -22,7 +22,7 @@ DECL|add_included|function|static void add_included(uint8_t *data, uint16_t len)
 DECL|add_service|function|static void add_service(uint8_t *data, uint16_t len)
 DECL|alloc_characteristic|function|static int alloc_characteristic(struct add_characteristic *ch)
 DECL|alloc_descriptor|function|static int alloc_descriptor(const struct bt_gatt_attr *attr, struct add_descriptor *d)
-DECL|alloc_included|function|static int alloc_included(const struct bt_gatt_attr *attr, uint16_t *included_service_id, uint16_t svc_handle)
+DECL|alloc_included|function|static int alloc_included(struct bt_gatt_attr *attr, uint16_t *included_service_id, uint16_t svc_handle)
 DECL|alloc_value|function|static uint8_t alloc_value(struct bt_gatt_attr *attr, struct set_value *data)
 DECL|attr_count|variable|attr_count
 DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_t len, struct bt_uuid *bt_uuid)
