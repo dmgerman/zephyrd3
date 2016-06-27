@@ -40,6 +40,8 @@ DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct in6_addr *addr, enum net_nbr_state state)
+DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
+DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
