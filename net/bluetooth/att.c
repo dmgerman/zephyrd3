@@ -1,4 +1,9 @@
 DECL|ATT_CHAN|macro|ATT_CHAN
+DECL|ATT_OP_TYPE_CMD|enumerator|ATT_OP_TYPE_CMD,
+DECL|ATT_OP_TYPE_REQ|enumerator|ATT_OP_TYPE_REQ,
+DECL|ATT_OP_TYPE_RSP|enumerator|ATT_OP_TYPE_RSP,
+DECL|ATT_OP_TYPE_UNKNOWN|enumerator|ATT_OP_TYPE_UNKNOWN,
+DECL|ATT_TIMEOUT|macro|ATT_TIMEOUT
 DECL|BT_ATT_OP_CMD_FLAG|macro|BT_ATT_OP_CMD_FLAG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
@@ -32,6 +37,7 @@ DECL|att_indicate|function|static uint8_t att_indicate(struct bt_att *att, struc
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_notify|function|static uint8_t att_notify(struct bt_att *att, struct net_buf *buf)
+DECL|att_op_type|function|static uint8_t att_op_type(uint8_t op)
 DECL|att_prep_write_rsp|function|static uint8_t att_prep_write_rsp(struct bt_att *att, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
 DECL|att_prepare_write_req|function|static uint8_t att_prepare_write_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_blob_req|function|static uint8_t att_read_blob_req(struct bt_att *att, struct net_buf *buf)
@@ -43,8 +49,10 @@ DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_att *att, uint8
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_att *att, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
 DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req)
+DECL|att_req_new|function|static struct bt_att_req *att_req_new(struct bt_att *att, struct net_buf *buf, bt_att_func_t func, void *user_data, bt_att_destroy_t destroy)
 DECL|att_reset|function|static void att_reset(struct bt_att *att)
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_att *att, struct net_buf *buf)
+DECL|att_timeout|function|static void att_timeout(struct nano_work *work)
 DECL|att_write_cmd|function|static uint8_t att_write_cmd(struct bt_att *att, struct net_buf *buf)
 DECL|att_write_req|function|static uint8_t att_write_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_write_rsp|function|static uint8_t att_write_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
@@ -126,6 +134,7 @@ DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
+DECL|timeout_work|member|struct nano_delayed_work timeout_work;
 DECL|user_data|member|void *user_data;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
 DECL|uuid|member|struct bt_uuid *uuid;
