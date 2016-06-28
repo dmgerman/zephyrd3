@@ -40,7 +40,6 @@ DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsign
 DECL|estatus|member|uint32_t estatus;
 DECL|instr|member|uint32_t instr; /* Instruction being executed when exc occurred */
 DECL|nios2_exception_cause|enum|enum nios2_exception_cause {
-DECL|r0|member|uint32_t r0; /* zero register */
 DECL|r10|member|uint32_t r10; /* Caller-saved general purpose */
 DECL|r11|member|uint32_t r11; /* Caller-saved general purpose */
 DECL|r12|member|uint32_t r12; /* Caller-saved general purpose */
