@@ -34,6 +34,7 @@ DECL|l2cap_chan_add|function|static bool l2cap_chan_add(struct bt_conn *conn, st
 DECL|l2cap_chan_alloc_cid|function|static struct bt_l2cap_le_chan *l2cap_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_create_seg|function|static struct net_buf *l2cap_chan_create_seg(struct bt_l2cap_le_chan *ch, struct net_buf *buf, size_t sdu_hdr_len)
 DECL|l2cap_chan_del|function|static void l2cap_chan_del(struct bt_l2cap_chan *chan)
+DECL|l2cap_chan_destroy|function|static void l2cap_chan_destroy(struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_le_recv_sdu|function|static void l2cap_chan_le_recv_sdu(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_recv|function|static void l2cap_chan_le_recv(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_send_sdu|function|static int l2cap_chan_le_send_sdu(struct bt_l2cap_le_chan *ch, struct net_buf *buf)
