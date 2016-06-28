@@ -15,6 +15,7 @@ DECL|auth_complete|function|static void auth_complete(struct net_buf *buf)
 DECL|avail_acl_in|variable|avail_acl_in
 DECL|avail_hci_cmd|variable|avail_hci_cmd
 DECL|avail_hci_evt|variable|avail_hci_evt
+DECL|avail_prio_hci_evt|variable|avail_prio_hci_evt
 DECL|br_init|function|static int br_init(void)
 DECL|br_init|function|static int br_init(void)
 DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_discovery_param *param, size_t num_rsp)
@@ -26,7 +27,7 @@ DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
-DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(void)
+DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
