@@ -19,7 +19,7 @@ DECL|net_context_accept_cb_t|typedef|typedef void (*net_context_accept_cb_t)(str
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,
 DECL|net_context_get_family|function|static inline sa_family_t net_context_get_family(struct net_context *context)
 DECL|net_context_get_iface|function|struct net_if *net_context_get_iface(struct net_context *context)
-DECL|net_context_get_ip_proto|function|enum ip_protocol net_context_get_ip_proto(struct net_context *context)
+DECL|net_context_get_ip_proto|function|enum net_ip_protocol net_context_get_ip_proto(struct net_context *context)
 DECL|net_context_get_state|function|enum net_context_state net_context_get_state(struct net_context *context)
 DECL|net_context_get_type|function|enum net_sock_type net_context_get_type(struct net_context *context)
 DECL|net_context_is_used|function|static inline bool net_context_is_used(struct net_context *context)
@@ -27,7 +27,7 @@ DECL|net_context_recv_cb_t|typedef|typedef void (*net_context_recv_cb_t)(struct 
 DECL|net_context_send_cb_t|typedef|typedef void (*net_context_send_cb_t)(struct net_context *context,
 DECL|net_context_set_family|function|static inline void net_context_set_family(struct net_context *context, sa_family_t family)
 DECL|net_context_set_iface|function|static inline void net_context_set_iface(struct net_context *context, struct net_if *iface)
-DECL|net_context_set_ip_proto|function|static inline void net_context_set_ip_proto(struct net_context *context, enum ip_protocol ip_proto)
+DECL|net_context_set_ip_proto|function|static inline void net_context_set_ip_proto(struct net_context *context, enum net_ip_protocol ip_proto)
 DECL|net_context_set_state|function|static inline void net_context_set_state(struct net_context *context, enum net_context_state state)
 DECL|net_context_set_type|function|static inline void net_context_set_type(struct net_context *context,enum net_sock_type type)
 DECL|net_context_state|enum|enum net_context_state {

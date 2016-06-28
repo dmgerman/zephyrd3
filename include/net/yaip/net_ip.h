@@ -69,8 +69,7 @@ DECL|in6_addr|struct|struct in6_addr {
 DECL|in6_u|member|} in6_u;
 DECL|in_addr|member|struct in_addr in_addr;
 DECL|in_addr|struct|struct in_addr {
-DECL|ip_protocol|enum|enum ip_protocol {
-DECL|ip_proto|member|enum ip_protocol ip_proto;
+DECL|ip_proto|member|enum net_ip_protocol ip_proto;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len[2];
 DECL|len|member|uint8_t len[2];
@@ -82,6 +81,7 @@ DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_a
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
+DECL|net_ip_protocol|enum|enum net_ip_protocol {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv4_addr_cmp|function|static inline bool net_ipv4_addr_cmp(const struct in_addr *addr1, const struct in_addr *addr2)
 DECL|net_ipv4_addr_mask_cmp|function|static inline bool net_ipv4_addr_mask_cmp(struct net_if *iface, struct in_addr *addr)
