@@ -2,6 +2,8 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_MAX_LE_MPS|macro|BT_L2CAP_MAX_LE_MPS
 DECL|BT_L2CAP_MAX_LE_MTU|macro|BT_L2CAP_MAX_LE_MTU
+DECL|L2CAP_CONN_TIMEOUT|macro|L2CAP_CONN_TIMEOUT
+DECL|L2CAP_DISC_TIMEOUT|macro|L2CAP_DISC_TIMEOUT
 DECL|L2CAP_LE_CREDITS_THRESHOLD|macro|L2CAP_LE_CREDITS_THRESHOLD
 DECL|L2CAP_LE_DYN_CID_END|macro|L2CAP_LE_DYN_CID_END
 DECL|L2CAP_LE_DYN_CID_START|macro|L2CAP_LE_DYN_CID_START
@@ -9,6 +11,7 @@ DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
 DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
 DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
+DECL|LE_CHAN_RTX|macro|LE_CHAN_RTX
 DECL|__l2cap_lookup_ident|function|__l2cap_lookup_ident(struct bt_conn *conn, uint16_t ident, bool remove)
 DECL|bt_l2cap_chan_connect|function|int bt_l2cap_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
 DECL|bt_l2cap_chan_disconnect|function|int bt_l2cap_chan_disconnect(struct bt_l2cap_chan *chan)
@@ -42,6 +45,7 @@ DECL|l2cap_chan_le_send|function|static int l2cap_chan_le_send(struct bt_l2cap_l
 DECL|l2cap_chan_recv|function|static void l2cap_chan_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_rx_give_credits|function|static void l2cap_chan_rx_give_credits(struct bt_l2cap_le_chan *chan, uint16_t credits)
 DECL|l2cap_chan_rx_init|function|static void l2cap_chan_rx_init(struct bt_l2cap_le_chan *chan)
+DECL|l2cap_chan_send_req|function|static void l2cap_chan_send_req(struct bt_l2cap_le_chan *chan,struct net_buf *buf, uint32_t ticks)
 DECL|l2cap_chan_tx_give_credits|function|static void l2cap_chan_tx_give_credits(struct bt_l2cap_le_chan *chan, uint16_t credits)
 DECL|l2cap_chan_tx_init|function|static void l2cap_chan_tx_init(struct bt_l2cap_le_chan *chan)
 DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_le_chan *chan)
@@ -52,6 +56,7 @@ DECL|l2cap_lookup_ident|macro|l2cap_lookup_ident
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_remove_ident|macro|l2cap_remove_ident
 DECL|l2cap_remove_tx_cid|function|static struct bt_l2cap_le_chan *l2cap_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
+DECL|l2cap_rtx_timeout|function|static void l2cap_rtx_timeout(struct nano_work *work)
 DECL|l2cap_send_reject|function|static void l2cap_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason, void *data, uint8_t data_len)
 DECL|l2cap_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_server_lookup_psm(uint16_t psm)
 DECL|le_channels|variable|le_channels

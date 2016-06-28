@@ -31,6 +31,7 @@ DECL|mtu|member|uint16_t mtu;
 DECL|ops|member|struct bt_l2cap_chan_ops *ops;
 DECL|psm|member|uint16_t psm;
 DECL|recv|member|void (*recv)(struct bt_l2cap_chan *chan, struct net_buf *buf);
+DECL|rtx_work|member|struct nano_delayed_work rtx_work;
 DECL|rx|member|struct bt_l2cap_br_endpoint rx;
 DECL|rx|member|struct bt_l2cap_le_endpoint rx;
 DECL|tx|member|struct bt_l2cap_br_endpoint tx;
