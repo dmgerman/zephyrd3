@@ -25,6 +25,7 @@ DECL|net_context_get_type|function|enum net_sock_type net_context_get_type(struc
 DECL|net_context_is_used|function|static inline bool net_context_is_used(struct net_context *context)
 DECL|net_context_recv_cb_t|typedef|typedef void (*net_context_recv_cb_t)(struct net_context *context,
 DECL|net_context_send_cb_t|typedef|typedef void (*net_context_send_cb_t)(struct net_context *context,
+DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int err_code)
 DECL|net_context_set_family|function|static inline void net_context_set_family(struct net_context *context, sa_family_t family)
 DECL|net_context_set_iface|function|static inline void net_context_set_iface(struct net_context *context, struct net_if *iface)
 DECL|net_context_set_ip_proto|function|static inline void net_context_set_ip_proto(struct net_context *context, enum net_ip_protocol ip_proto)
@@ -35,3 +36,5 @@ DECL|net_context|struct|struct net_context {
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_data_wait|member|struct nano_sem recv_data_wait;
 DECL|remote|member|struct sockaddr remote;
+DECL|send_cb|member|net_context_send_cb_t send_cb;
+DECL|user_data|member|void *user_data;
