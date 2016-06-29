@@ -40,6 +40,7 @@ DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsign
 DECL|estatus|member|uint32_t estatus;
 DECL|instr|member|uint32_t instr; /* Instruction being executed when exc occurred */
 DECL|nios2_exception_cause|enum|enum nios2_exception_cause {
+DECL|paddr_t|typedef|typedef unsigned int paddr_t;
 DECL|r10|member|uint32_t r10; /* Caller-saved general purpose */
 DECL|r11|member|uint32_t r11; /* Caller-saved general purpose */
 DECL|r12|member|uint32_t r12; /* Caller-saved general purpose */
@@ -56,3 +57,4 @@ DECL|r7|member|uint32_t r7; /* register args */
 DECL|r8|member|uint32_t r8; /* Caller-saved general purpose */
 DECL|r9|member|uint32_t r9; /* Caller-saved general purpose */
 DECL|ra|member|uint32_t ra; /* return address r31 */
+DECL|vaddr_t|typedef|typedef unsigned int vaddr_t;
