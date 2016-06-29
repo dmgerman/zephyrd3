@@ -61,8 +61,10 @@ DECL|net_nbuf_set_len|function|static inline void net_nbuf_set_len(struct net_bu
 DECL|net_nbuf_set_ll_reserve|function|static inline void net_nbuf_set_ll_reserve(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_next_hdr|function|static inline void net_nbuf_set_next_hdr(struct net_buf *buf, uint8_t *hdr)
 DECL|net_nbuf_set_src_ipv6_addr|function|static inline void net_nbuf_set_src_ipv6_addr(struct net_buf *buf)
+DECL|net_nbuf_set_token|function|static inline void net_nbuf_set_token(struct net_buf *buf, void *token)
 DECL|net_nbuf_set_type|function|static inline void net_nbuf_set_type(struct net_buf *buf, uint8_t type)
 DECL|net_nbuf_tcp_data|function|static inline uint8_t *net_nbuf_tcp_data(struct net_buf *buf)
+DECL|net_nbuf_token|function|static inline void *net_nbuf_token(struct net_buf *buf)
 DECL|net_nbuf_type|enum|enum net_nbuf_type {
 DECL|net_nbuf_type|function|static inline enum net_nbuf_type net_nbuf_type(struct net_buf *buf)
 DECL|net_nbuf_udp_data|function|static inline uint8_t *net_nbuf_udp_data(struct net_buf *buf)
@@ -70,4 +72,5 @@ DECL|net_nbuf_unref|macro|net_nbuf_unref
 DECL|net_nbuf|struct|struct net_nbuf {
 DECL|next_hdr|member|uint8_t *next_hdr;
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
+DECL|token|member|void *token;
 DECL|type|member|enum net_nbuf_type type;
