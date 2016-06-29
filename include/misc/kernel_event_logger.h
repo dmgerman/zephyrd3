@@ -7,6 +7,7 @@ DECL|KERNEL_EVENT_LOGGER_TASK_MON_TASK_STATE_CHANGE_EVENT_ID|macro|KERNEL_EVENT_
 DECL|__KERNEL_EVENT_LOGGER_H__|macro|__KERNEL_EVENT_LOGGER_H__
 DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
 DECL|_sys_k_event_logger_enter_sleep|function|static inline void _sys_k_event_logger_enter_sleep(void) {};
+DECL|_sys_k_event_logger_interrupt|function|static inline void _sys_k_event_logger_interrupt(void) {};
 DECL|_sys_k_get_time|function|static inline uint32_t _sys_k_get_time(void)
 DECL|_sys_k_get_time|function|static inline uint32_t _sys_k_get_time(void)
 DECL|sys_k_event_logger_get_mask|function|static inline int sys_k_event_logger_get_mask(void)
