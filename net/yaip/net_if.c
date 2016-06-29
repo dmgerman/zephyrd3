@@ -40,6 +40,7 @@ DECL|net_if_ipv6_router_add|function|struct net_if_router *net_if_ipv6_router_ad
 DECL|net_if_ipv6_router_lookup|function|struct net_if_router *net_if_ipv6_router_lookup(struct net_if *iface,struct in6_addr *addr)
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
 DECL|net_if_ipv6_unspecified_addr|function|const struct in6_addr *net_if_ipv6_unspecified_addr(void)
+DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)
