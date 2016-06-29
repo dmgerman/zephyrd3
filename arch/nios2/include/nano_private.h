@@ -12,6 +12,8 @@ DECL|USE_FP|macro|USE_FP
 DECL|_IS_IN_ISR|function|static ALWAYS_INLINE int _IS_IN_ISR(void)
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
+DECL|_nios2_dcache_flush_all|macro|_nios2_dcache_flush_all
+DECL|_nios2_icache_flush_all|macro|_nios2_icache_flush_all
 DECL|coopReg|member|t_coop coopReg;
 DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
 DECL|custom_data|member|void *custom_data; /* available for custom use */
