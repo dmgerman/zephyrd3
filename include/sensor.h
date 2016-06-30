@@ -48,8 +48,6 @@ DECL|SENSOR_VALUE_TYPE_INT_PLUS_MICRO|enumerator|SENSOR_VALUE_TYPE_INT_PLUS_MICR
 DECL|SENSOR_VALUE_TYPE_INT|enumerator|SENSOR_VALUE_TYPE_INT,
 DECL|SENSOR_VALUE_TYPE_Q16_16|enumerator|SENSOR_VALUE_TYPE_Q16_16,
 DECL|__SENSOR_H__|macro|__SENSOR_H__
-DECL|__unnamed_workaround__|struct|struct __unnamed_workaround__ {
-DECL|__unnamed_workaround__|union|union __unnamed_workaround__ {
 DECL|always_null|member|void *always_null;
 DECL|attr_set|member|sensor_attr_set_t attr_set;
 DECL|channel_get|member|sensor_channel_get_t channel_get;
