@@ -29,6 +29,7 @@ DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode)
 DECL|bt_dev|variable|bt_dev
+DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
 DECL|bt_driver_register|function|int bt_driver_register(struct bt_driver *drv)
 DECL|bt_driver_unregister|function|void bt_driver_unregister(struct bt_driver *drv)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
@@ -43,6 +44,8 @@ DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
+DECL|bt_pub_key_gen|function|int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
+DECL|bt_pub_key_get|function|const uint8_t *bt_pub_key_get(void)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
@@ -56,6 +59,7 @@ DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
+DECL|dh_key_cb|variable|dh_key_cb
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_priv|struct|struct discovery_priv {
 DECL|discovery_results_count|variable|discovery_results_count
@@ -115,6 +119,8 @@ DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
 DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
 DECL|prng|variable|prng
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
+DECL|pub_key_cb|variable|pub_key_cb
+DECL|pub_key|variable|pub_key
 DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
