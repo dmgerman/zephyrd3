@@ -1,4 +1,7 @@
 DECL|BT_L2CAP_CHAN_SEND_RESERVE|macro|BT_L2CAP_CHAN_SEND_RESERVE
+DECL|BT_L2CAP_CONFIG|enumerator|BT_L2CAP_CONFIG, /* channel in config state, BR/EDR specific */
+DECL|BT_L2CAP_CONNECT|enumerator|BT_L2CAP_CONNECT, /* channel in connecting state */
+DECL|BT_L2CAP_DISCONNECTED|enumerator|BT_L2CAP_DISCONNECTED, /* channel disconnected */
 DECL|BT_L2CAP_LE_CHAN|macro|BT_L2CAP_LE_CHAN
 DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
 DECL|_next|member|struct bt_l2cap_chan *_next;
@@ -11,6 +14,8 @@ DECL|bt_l2cap_br_chan|struct|struct bt_l2cap_br_chan {
 DECL|bt_l2cap_br_endpoint|struct|struct bt_l2cap_br_endpoint {
 DECL|bt_l2cap_chan_destroy_t|typedef|typedef void (*bt_l2cap_chan_destroy_t)(struct bt_l2cap_chan *chan);
 DECL|bt_l2cap_chan_ops|struct|struct bt_l2cap_chan_ops {
+DECL|bt_l2cap_chan_state_t|typedef|} __packed bt_l2cap_chan_state_t;
+DECL|bt_l2cap_chan_state|enum|typedef enum bt_l2cap_chan_state {
 DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_le_chan|struct|struct bt_l2cap_le_chan {
 DECL|bt_l2cap_le_endpoint|struct|struct bt_l2cap_le_endpoint {
@@ -35,5 +40,6 @@ DECL|recv|member|void (*recv)(struct bt_l2cap_chan *chan, struct net_buf *buf);
 DECL|rtx_work|member|struct nano_delayed_work rtx_work;
 DECL|rx|member|struct bt_l2cap_br_endpoint rx;
 DECL|rx|member|struct bt_l2cap_le_endpoint rx;
+DECL|state|member|bt_l2cap_chan_state_t state;
 DECL|tx|member|struct bt_l2cap_br_endpoint tx;
 DECL|tx|member|struct bt_l2cap_le_endpoint tx;

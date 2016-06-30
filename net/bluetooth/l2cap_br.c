@@ -50,3 +50,5 @@ DECL|l2cap_br_recv|function|static void l2cap_br_recv(struct bt_l2cap_chan *chan
 DECL|l2cap_br_remove_tx_cid|function|static struct bt_l2cap_br_chan *l2cap_br_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|l2cap_br_send_reject|function|static void l2cap_br_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason, void *data, uint8_t data_len)
 DECL|l2cap_br_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_br_server_lookup_psm(uint16_t psm)
+DECL|l2cap_br_state_set|function|static void l2cap_br_state_set(struct bt_l2cap_chan *ch, bt_l2cap_chan_state_t state)
+DECL|state2str|function|static const char *state2str(bt_l2cap_chan_state_t state)
