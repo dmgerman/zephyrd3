@@ -7,7 +7,6 @@ DECL|SPI_DMATDLR_DMATDL|macro|SPI_DMATDLR_DMATDL
 DECL|SPI_DMA_READ_BURST_LENGTH|macro|SPI_DMA_READ_BURST_LENGTH
 DECL|SPI_DMA_WRITE_BURST_LENGTH|macro|SPI_DMA_WRITE_BURST_LENGTH
 DECL|SPI_FIFOS_DEPTH|macro|SPI_FIFOS_DEPTH
-DECL|SPI_RX_ONLY_DUMMY_BYTE|macro|SPI_RX_ONLY_DUMMY_BYTE
 DECL|cb_pending|member|volatile bool cb_pending; /**< True if waiting for DMA calllback. */
 DECL|dfs|variable|dfs
 DECL|dma_channel_id|member|qm_dma_channel_id_t dma_channel_id; /**< Used DMA channel. */

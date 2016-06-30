@@ -75,8 +75,6 @@ DECL|QM_CCU_PERIPH_PCLK_DIV_OFFSET|macro|QM_CCU_PERIPH_PCLK_DIV_OFFSET
 DECL|QM_CCU_RTC_CLK_DIV_EN|macro|QM_CCU_RTC_CLK_DIV_EN
 DECL|QM_CCU_RTC_CLK_DIV_OFFSET|macro|QM_CCU_RTC_CLK_DIV_OFFSET
 DECL|QM_CCU_RTC_CLK_EN|macro|QM_CCU_RTC_CLK_EN
-DECL|QM_CCU_SYS_CLK_CTL|macro|QM_CCU_SYS_CLK_CTL
-DECL|QM_CCU_SYS_CLK_DIV_BY_ONE|macro|QM_CCU_SYS_CLK_DIV_BY_ONE
 DECL|QM_CCU_SYS_CLK_DIV_EN|macro|QM_CCU_SYS_CLK_DIV_EN
 DECL|QM_CCU_SYS_CLK_DIV_MASK|macro|QM_CCU_SYS_CLK_DIV_MASK
 DECL|QM_CCU_SYS_CLK_DIV_OFFSET|macro|QM_CCU_SYS_CLK_DIV_OFFSET
@@ -220,6 +218,8 @@ DECL|QM_I2C_IC_TX_ABRT_SOURCE_NAK_MASK|macro|QM_I2C_IC_TX_ABRT_SOURCE_NAK_MASK
 DECL|QM_I2C_NUM|enumerator|typedef enum { QM_I2C_0 = 0, QM_I2C_1, QM_I2C_NUM } qm_i2c_t;
 DECL|QM_I2C|macro|QM_I2C
 DECL|QM_I2C|macro|QM_I2C
+DECL|QM_INT_ADC_CALIB_MASK|macro|QM_INT_ADC_CALIB_MASK
+DECL|QM_INT_ADC_PWR_MASK|macro|QM_INT_ADC_PWR_MASK
 DECL|QM_INT_CONTROLLER|macro|QM_INT_CONTROLLER
 DECL|QM_INT_FLASH_CONTROLLER_HOST_HALT_MASK|macro|QM_INT_FLASH_CONTROLLER_HOST_HALT_MASK
 DECL|QM_INT_FLASH_CONTROLLER_HOST_MASK|macro|QM_INT_FLASH_CONTROLLER_HOST_MASK
@@ -459,6 +459,8 @@ DECL|QM_SPI_RISR_TXOIR|macro|QM_SPI_RISR_TXOIR
 DECL|QM_SPI_SLV_0|enumerator|QM_SPI_SLV_0,
 DECL|QM_SPI_SLV_BASE|macro|QM_SPI_SLV_BASE
 DECL|QM_SPI_SR_BUSY|macro|QM_SPI_SR_BUSY
+DECL|QM_SPI_SR_RFF|macro|QM_SPI_SR_RFF
+DECL|QM_SPI_SR_RFNE|macro|QM_SPI_SR_RFNE
 DECL|QM_SPI_SR_TFE|macro|QM_SPI_SR_TFE
 DECL|QM_SPI_SR_TFNF|macro|QM_SPI_SR_TFNF
 DECL|QM_SPI_SSIENR_SSIENR|macro|QM_SPI_SSIENR_SSIENR
@@ -471,6 +473,7 @@ DECL|QM_SS_IRQ_ADC_CAL|macro|QM_SS_IRQ_ADC_CAL
 DECL|QM_SS_IRQ_ADC_PWR_MASK_OFFSET|macro|QM_SS_IRQ_ADC_PWR_MASK_OFFSET
 DECL|QM_SS_IRQ_ADC_PWR_VECTOR|macro|QM_SS_IRQ_ADC_PWR_VECTOR
 DECL|QM_SS_IRQ_ADC_PWR|macro|QM_SS_IRQ_ADC_PWR
+DECL|QM_SS_STS_HALT_INTERRUPT_REDIRECTION|macro|QM_SS_STS_HALT_INTERRUPT_REDIRECTION
 DECL|QM_UART_0_BASE|macro|QM_UART_0_BASE
 DECL|QM_UART_0|enumerator|typedef enum { QM_UART_0 = 0, QM_UART_1, QM_UART_NUM } qm_uart_t;
 DECL|QM_UART_1_BASE|macro|QM_UART_1_BASE
@@ -491,16 +494,14 @@ DECL|QM_WDT|macro|QM_WDT
 DECL|QUARK_SE|macro|QUARK_SE
 DECL|ROM_VERSION_ADDRESS|macro|ROM_VERSION_ADDRESS
 DECL|ROM_VERSION_ADDRESS|macro|ROM_VERSION_ADDRESS
-DECL|SYS_CLK_HYB_OSC_32MHZ_SETTINGS|macro|SYS_CLK_HYB_OSC_32MHZ_SETTINGS
-DECL|SYS_CLK_HYB_OSC_4MHZ_SETTINGS|macro|SYS_CLK_HYB_OSC_4MHZ_SETTINGS
 DECL|__REGISTERS_H__|macro|__REGISTERS_H__
 DECL|aon_vr|member|QM_RW uint32_t aon_vr; /**< AON Voltage Regulator */
-DECL|aonc_cfg|member|QM_RW uint32_t aonc_cfg; /**< Always on counter enable */
-DECL|aonc_cnt|member|QM_RW uint32_t aonc_cnt; /**< Always on counter register */
-DECL|aonpt_cfg|member|aonpt_cfg; /**< Always on periodic timer configuration register */
-DECL|aonpt_cnt|member|QM_RW uint32_t aonpt_cnt; /**< Always on periodic timer */
-DECL|aonpt_ctrl|member|QM_RW uint32_t aonpt_ctrl; /**< Always on periodic timer control */
-DECL|aonpt_stat|member|aonpt_stat; /**< Always on periodic timer status register */
+DECL|aonc_cfg|member|QM_RW uint32_t aonc_cfg; /**< Always-on counter enable. */
+DECL|aonc_cnt|member|QM_RW uint32_t aonc_cnt; /**< Always-on counter register. */
+DECL|aonpt_cfg|member|aonpt_cfg; /**< Always-on periodic timer configuration register. */
+DECL|aonpt_cnt|member|QM_RW uint32_t aonpt_cnt; /**< Always-on periodic timer. */
+DECL|aonpt_ctrl|member|QM_RW uint32_t aonpt_ctrl; /**< Always-on periodic timer control. */
+DECL|aonpt_stat|member|aonpt_stat; /**< Always-on periodic timer status register. */
 DECL|apic_reg_pad_t|typedef|} apic_reg_pad_t;
 DECL|apr|member|QM_RW apic_reg_pad_t apr; /**< Arbitration priority */
 DECL|baudr|member|QM_RW uint32_t baudr; /**< Baud Rate Select */
@@ -510,7 +511,7 @@ DECL|ccu_lp_clk_ctl|member|QM_RW uint32_t ccu_lp_clk_ctl; /**< System Low Power 
 DECL|ccu_mlayer_ahb_ctl|member|QM_RW uint32_t ccu_mlayer_ahb_ctl; /**< AHB Control Register */
 DECL|ccu_periph_clk_div_ctl0|member|ccu_periph_clk_div_ctl0; /**< Peripheral Clock Divider Control 0 */
 DECL|ccu_periph_clk_gate_ctl|member|ccu_periph_clk_gate_ctl; /**< Peripheral Clock Gate Control */
-DECL|ccu_ss_periph_clk_gate_ctl|member|QM_RW uint32_t ccu_ss_periph_clk_gate_ctl; /**< Sensor Subsystem
+DECL|ccu_ss_periph_clk_gate_ctl|member|QM_RW uint32_t ccu_ss_periph_clk_gate_ctl;
 DECL|ccu_sys_clk_ctl|member|QM_RW uint32_t ccu_sys_clk_ctl; /**< System Clock Control Register */
 DECL|cfg_high|member|QM_RW uint32_t cfg_high; /**< CFG */
 DECL|cfg_high|member|QM_RW uint32_t cfg_high; /**< DmaCfgReg */
@@ -534,11 +535,11 @@ DECL|clear_src_trans_low|member|QM_RW uint32_t clear_src_trans_low; /**< ClearSr
 DECL|clear_tfr_high|member|QM_RW uint32_t clear_tfr_high; /**< ClearTfr */
 DECL|clear_tfr_low|member|QM_RW uint32_t clear_tfr_low; /**< ClearTfr */
 DECL|clk_periph_t|typedef|} clk_periph_t;
-DECL|cmp_en|member|QM_RW uint32_t cmp_en; /**< Comparator enable */
-DECL|cmp_pwr|member|QM_RW uint32_t cmp_pwr; /**< Comparator power enable register */
-DECL|cmp_ref_pol|member|cmp_ref_pol; /**< Comparator reference polarity select register */
-DECL|cmp_ref_sel|member|QM_RW uint32_t cmp_ref_sel; /**< Comparator reference select */
-DECL|cmp_stat_clr|member|QM_RW uint32_t cmp_stat_clr; /**< Comparator clear register */
+DECL|cmp_en|member|QM_RW uint32_t cmp_en; /**< Comparator enable. */
+DECL|cmp_pwr|member|QM_RW uint32_t cmp_pwr; /**< Comparator power enable register. */
+DECL|cmp_ref_pol|member|cmp_ref_pol; /**< Comparator reference polarity select register. */
+DECL|cmp_ref_sel|member|QM_RW uint32_t cmp_ref_sel; /**< Comparator reference select. */
+DECL|cmp_stat_clr|member|QM_RW uint32_t cmp_stat_clr; /**< Comparator clear register. */
 DECL|controlreg|member|QM_RW uint32_t controlreg; /**< Control */
 DECL|ctrl_high|member|QM_RW uint32_t ctrl_high; /**< CTL */
 DECL|ctrl_low|member|QM_RW uint32_t ctrl_low; /**< CTL */
@@ -652,10 +653,10 @@ DECL|id|member|QM_RW uint32_t id; /**< Identification Register */
 DECL|ier_dlh|member|QM_RW uint32_t ier_dlh; /**< Interrupt Enable / Divisor Latch High */
 DECL|iir_fcr|member|QM_RW uint32_t iir_fcr; /**< Interrupt Identification / FIFO Control */
 DECL|imr|member|QM_RW uint32_t imr; /**< Interrupt Mask Register */
-DECL|int_adc_calib_mask|member|QM_RW uint32_t int_adc_calib_mask;
-DECL|int_adc_pwr_mask|member|QM_RW uint32_t int_adc_pwr_mask;
+DECL|int_adc_calib_mask|member|QM_RW uint32_t int_adc_calib_mask; /**< Interrupt Routing Mask 33 */
+DECL|int_adc_pwr_mask|member|QM_RW uint32_t int_adc_pwr_mask; /**< Interrupt Routing Mask 32 */
 DECL|int_aon_gpio_mask|member|QM_RW uint32_t int_aon_gpio_mask;
-DECL|int_aon_timer_mask|member|QM_RW uint32_t int_aon_timer_mask;
+DECL|int_aon_timer_mask|member|QM_RW uint32_t int_aon_timer_mask; /**< Interrupt Routing Mask 31 */
 DECL|int_comparators_host_halt_mask|member|QM_RW uint32_t int_comparators_host_halt_mask;
 DECL|int_comparators_host_mask|member|QM_RW uint32_t int_comparators_host_mask;
 DECL|int_comparators_ss_halt_mask|member|QM_RW uint32_t int_comparators_ss_halt_mask;
@@ -669,8 +670,8 @@ DECL|int_dma_channel_5_mask|member|QM_RW uint32_t int_dma_channel_5_mask;
 DECL|int_dma_channel_6_mask|member|QM_RW uint32_t int_dma_channel_6_mask;
 DECL|int_dma_channel_7_mask|member|QM_RW uint32_t int_dma_channel_7_mask;
 DECL|int_dma_error_mask|member|QM_RW uint32_t int_dma_error_mask;
-DECL|int_flash_controller_0_mask|member|QM_RW uint32_t int_flash_controller_0_mask;
-DECL|int_flash_controller_1_mask|member|QM_RW uint32_t int_flash_controller_1_mask;
+DECL|int_flash_controller_0_mask|member|int_flash_controller_0_mask; /**< Interrupt Routing Mask 29 */
+DECL|int_flash_controller_1_mask|member|int_flash_controller_1_mask; /**< Interrupt Routing Mask 30 */
 DECL|int_gpio_mask|member|QM_RW uint32_t int_gpio_mask;
 DECL|int_host_bus_err_mask|member|QM_RW uint32_t int_host_bus_err_mask;
 DECL|int_i2c_mst_0_mask|member|QM_RW uint32_t int_i2c_mst_0_mask;
@@ -683,7 +684,7 @@ DECL|int_rtc_mask|member|QM_RW uint32_t int_rtc_mask;
 DECL|int_spi_mst_0_mask|member|QM_RW uint32_t int_spi_mst_0_mask;
 DECL|int_spi_mst_1_mask|member|QM_RW uint32_t int_spi_mst_1_mask;
 DECL|int_spi_slv_mask|member|QM_RW uint32_t int_spi_slv_mask;
-DECL|int_sram_controller_mask|member|QM_RW uint32_t int_sram_controller_mask;
+DECL|int_sram_controller_mask|member|int_sram_controller_mask; /**< Interrupt Routing Mask 28 */
 DECL|int_ss_adc_err_mask|member|QM_RW uint32_t int_ss_adc_err_mask;
 DECL|int_ss_adc_irq_mask|member|QM_RW uint32_t int_ss_adc_irq_mask;
 DECL|int_ss_gpio_0_intr_mask|member|QM_RW uint32_t int_ss_gpio_0_intr_mask;
@@ -709,7 +710,7 @@ DECL|ldr|member|QM_RW apic_reg_pad_t ldr; /**< Logical destination */
 DECL|llp_high|member|QM_RW uint32_t llp_high; /**< LLP */
 DECL|llp_low|member|QM_RW uint32_t llp_low; /**< LLP */
 DECL|loadcount|member|QM_RW uint32_t loadcount; /**< Load Count */
-DECL|lock_int_mask_reg|member|QM_RW uint32_t lock_int_mask_reg;
+DECL|lock_int_mask_reg|member|QM_RW uint32_t lock_int_mask_reg; /**< Interrupt Mask Lock Register */
 DECL|lsr|member|QM_RW uint32_t lsr; /**< Line Status */
 DECL|lvtcmci|member|QM_RW apic_reg_pad_t lvtcmci; /**< Corrected Machine Check vector */
 DECL|lvterr|member|QM_RW apic_reg_pad_t lvterr; /**< Error vector */
@@ -734,7 +735,7 @@ DECL|mcr|member|QM_RW uint32_t mcr; /**< MODEM Control */
 DECL|mem_ctrl|member|QM_RW uint32_t mem_ctrl; /**< Memory control */
 DECL|misc_reg|member|QM_RW qm_dma_misc_reg_t misc_reg; /**< Miscellaneous Register */
 DECL|mpr_cfg|member|QM_RW uint32_t mpr_cfg[4]; /**< MPR CFG */
-DECL|mpr_vdata|member|QM_RW uint32_t mpr_vdata; /** MPR_VDATA */
+DECL|mpr_vdata|member|QM_RW uint32_t mpr_vdata; /**< MPR Violation Data Value Register */
 DECL|mpr_vdata|member|QM_RW uint32_t mpr_vdata; /**< MPR_VDATA */
 DECL|mpr_vsts|member|QM_RW uint32_t mpr_vsts; /**< MPR_VSTS */
 DECL|mpr_vsts|member|QM_RW uint32_t mpr_vsts; /**< Protection Status Register */
@@ -759,9 +760,9 @@ DECL|periph_cfg0|member|QM_RW uint32_t periph_cfg0; /**< Peripheral Configuratio
 DECL|plat1p8_vr|member|QM_RW uint32_t plat1p8_vr; /**< Platform 1p8 voltage regulator */
 DECL|plat3p3_vr|member|QM_RW uint32_t plat3p3_vr; /**< Platform 3p3 voltage regulator */
 DECL|pm1c|member|QM_RW uint32_t pm1c; /**< Power management 1 control */
-DECL|pm_lock|member|QM_RW uint32_t pm_lock; /**< Power management lock */
+DECL|pm_lock|member|QM_RW uint32_t pm_lock; /**< Power Management Lock */
 DECL|pm_wait|member|QM_RW uint32_t pm_wait; /**< Power Management Wait */
-DECL|pmnetcs|member|pmnetcs; /**< Power Management Network (PMNet) Control and
+DECL|pmnetcs|member|QM_RW uint32_t pmnetcs;
 DECL|pmux_in_en_lock|member|QM_RW uint32_t pmux_in_en_lock; /**< Pin Mux Slew Rate Lock */
 DECL|pmux_in_en|member|QM_RW uint32_t pmux_in_en[4]; /**< Pin Mux Input Enable */
 DECL|pmux_pullup_lock|member|QM_RW uint32_t pmux_pullup_lock; /**< Pin Mux Pullup Lock */
@@ -859,8 +860,8 @@ DECL|risr|member|QM_RW uint32_t risr; /**< Raw Interrupt Status Register */
 DECL|rom_wr_ctrl|member|QM_RW uint32_t rom_wr_ctrl; /**< ROM_WR_CTRL */
 DECL|rom_wr_data|member|QM_RW uint32_t rom_wr_data; /**< ROM_WR_DATA */
 DECL|rrd|member|QM_RW apic_reg_pad_t rrd; /**< Remote read */
-DECL|rstc|member|QM_RW uint32_t rstc; /**< Reset control */
-DECL|rsts|member|QM_RW uint32_t rsts; /**< Reset status */
+DECL|rstc|member|QM_RW uint32_t rstc; /**< Reset Control */
+DECL|rsts|member|QM_RW uint32_t rsts; /**< Reset Status */
 DECL|rtc_ccr|member|QM_RW uint32_t rtc_ccr; /**< Counter Control Register */
 DECL|rtc_ccvr|member|QM_RW uint32_t rtc_ccvr; /**< Current Counter Value Register */
 DECL|rtc_clr|member|QM_RW uint32_t rtc_clr; /**< Counter Load Register */

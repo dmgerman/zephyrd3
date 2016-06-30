@@ -11,7 +11,7 @@ DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_spi_1_tx_isr)
 DECL|base|variable|base
 DECL|dummy_frame|variable|dummy_frame
 DECL|fifo_read|function|static __inline__ void fifo_read(const qm_ss_spi_t spi, void *data, uint8_t size)
-DECL|fifo_write|function|static __inline__ void fifo_write(const qm_ss_spi_t spi, void *data, uint8_t size)
+DECL|fifo_write|function|static __inline__ void fifo_write(const qm_ss_spi_t spi, const void *data, uint8_t size)
 DECL|handle_spi_err_interrupt|function|static void handle_spi_err_interrupt(const qm_ss_spi_t spi)
 DECL|handle_spi_rx_interrupt|function|static void handle_spi_rx_interrupt(const qm_ss_spi_t spi)
 DECL|handle_spi_tx_interrupt|function|static void handle_spi_tx_interrupt(const qm_ss_spi_t spi)
@@ -22,8 +22,6 @@ DECL|qm_ss_spi_slave_select|function|int qm_ss_spi_slave_select(const qm_ss_spi_
 DECL|qm_ss_spi_transfer_terminate|function|int qm_ss_spi_transfer_terminate(const qm_ss_spi_t spi)
 DECL|qm_ss_spi_transfer|function|int qm_ss_spi_transfer(const qm_ss_spi_t spi, const qm_ss_spi_transfer_t *const xfer, qm_ss_spi_status_t *const status)
 DECL|rx_c|variable|rx_c
-DECL|rx_p|variable|rx_p
+DECL|spi_async_transfer|variable|spi_async_transfer
 DECL|spi_disable|function|static void spi_disable(const qm_ss_spi_t spi)
-DECL|transfer|variable|transfer
 DECL|tx_c|variable|tx_c
-DECL|tx_p|variable|tx_p

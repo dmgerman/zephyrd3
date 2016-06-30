@@ -16,7 +16,7 @@ DECL|irq_xfer|variable|irq_xfer
 DECL|mode_callback_data|variable|mode_callback_data
 DECL|mode_callback|variable|mode_callback
 DECL|qm_adc_calibrate|function|int qm_adc_calibrate(const qm_adc_t adc)
-DECL|qm_adc_convert|function|int qm_adc_convert(const qm_adc_t adc, qm_adc_xfer_t *xfer)
+DECL|qm_adc_convert|function|int qm_adc_convert(const qm_adc_t adc, qm_adc_xfer_t *xfer, qm_adc_status_t *const status)
 DECL|qm_adc_get_calibration|function|int qm_adc_get_calibration(const qm_adc_t adc, qm_adc_calibration_t *const cal)
 DECL|qm_adc_irq_calibrate|function|int qm_adc_irq_calibrate(const qm_adc_t adc, void (*callback)(void *data, int error, qm_adc_status_t status, qm_adc_cb_source_t source), void *callback_data)
 DECL|qm_adc_irq_convert|function|int qm_adc_irq_convert(const qm_adc_t adc, qm_adc_xfer_t *xfer)

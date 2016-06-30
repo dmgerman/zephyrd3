@@ -15,12 +15,12 @@ DECL|count|variable|count
 DECL|disable_adc|function|static void disable_adc(void)
 DECL|dummy_conversion|function|static void dummy_conversion(uint32_t controller)
 DECL|enable_adc|function|static void enable_adc(void)
-DECL|first_mode_callback_ignored|variable|first_mode_callback_ignored
+DECL|ignore_spurious_interrupt|variable|ignore_spurious_interrupt
 DECL|irq_xfer|variable|irq_xfer
 DECL|mode_callback_data|variable|mode_callback_data
 DECL|mode_callback|variable|mode_callback
 DECL|qm_ss_adc_calibrate|function|int qm_ss_adc_calibrate(const qm_ss_adc_t adc __attribute__((unused)))
-DECL|qm_ss_adc_convert|function|int qm_ss_adc_convert(const qm_ss_adc_t adc, qm_ss_adc_xfer_t *xfer)
+DECL|qm_ss_adc_convert|function|int qm_ss_adc_convert(const qm_ss_adc_t adc, qm_ss_adc_xfer_t *xfer, qm_ss_adc_status_t *const status)
 DECL|qm_ss_adc_get_calibration|function|int qm_ss_adc_get_calibration(const qm_ss_adc_t adc __attribute__((unused)), qm_ss_adc_calibration_t *const cal)
 DECL|qm_ss_adc_irq_calibrate|function|int qm_ss_adc_irq_calibrate(const qm_ss_adc_t adc, void (*callback)(void *data, int error, qm_ss_adc_status_t status, qm_ss_adc_cb_source_t source), void *callback_data)
 DECL|qm_ss_adc_irq_convert|function|int qm_ss_adc_irq_convert(const qm_ss_adc_t adc, qm_ss_adc_xfer_t *xfer)

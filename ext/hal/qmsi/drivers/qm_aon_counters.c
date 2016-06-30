@@ -4,7 +4,7 @@ DECL|callback|variable|callback
 DECL|pt_reset|function|static void pt_reset(const qm_scss_aon_t aonc)
 DECL|qm_aonc_disable|function|int qm_aonc_disable(const qm_scss_aon_t aonc)
 DECL|qm_aonc_enable|function|int qm_aonc_enable(const qm_scss_aon_t aonc)
-DECL|qm_aonc_get_value|function|int qm_aonc_get_value(const qm_scss_aon_t aonc, uint32_t * const val)
+DECL|qm_aonc_get_value|function|int qm_aonc_get_value(const qm_scss_aon_t aonc, uint32_t *const val)
 DECL|qm_aonpt_clear|function|int qm_aonpt_clear(const qm_scss_aon_t aonc)
 DECL|qm_aonpt_get_status|function|int qm_aonpt_get_status(const qm_scss_aon_t aonc, bool *const status)
 DECL|qm_aonpt_get_value|function|int qm_aonpt_get_value(const qm_scss_aon_t aonc, uint32_t *const val)

@@ -1,15 +1,17 @@
+DECL|I2C_POLL_COUNT|macro|I2C_POLL_COUNT
+DECL|I2C_POLL_MICROSECOND|macro|I2C_POLL_MICROSECOND
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_i2c_isr_0)
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_i2c_isr_1)
 DECL|RX_TL|macro|RX_TL
 DECL|SPK_LEN_FS|macro|SPK_LEN_FS
 DECL|SPK_LEN_SS|macro|SPK_LEN_SS
 DECL|TX_TL|macro|TX_TL
-DECL|controller_disable|function|static void controller_disable(const qm_ss_i2c_t i2c)
+DECL|controller_disable|function|static int controller_disable(const qm_ss_i2c_t i2c)
 DECL|controller_enable|function|static void controller_enable(const qm_ss_i2c_t i2c)
 DECL|get_hi_cnt|function|static uint32_t get_hi_cnt(qm_ss_i2c_t i2c, uint32_t hi_time_ns)
 DECL|get_lo_cnt|function|static uint32_t get_lo_cnt(uint32_t lo_time_ns)
 DECL|i2c_base|variable|i2c_base
-DECL|i2c_read_buffer_remaining|variable|i2c_read_buffer_remaining
+DECL|i2c_read_cmd_send|variable|i2c_read_cmd_send
 DECL|i2c_read_pos|variable|i2c_read_pos
 DECL|i2c_transfer|variable|i2c_transfer
 DECL|i2c_write_pos|variable|i2c_write_pos

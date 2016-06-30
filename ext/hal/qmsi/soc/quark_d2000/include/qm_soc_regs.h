@@ -108,6 +108,9 @@ DECL|QM_CCU_SYS_CLK_DIV_MASK|macro|QM_CCU_SYS_CLK_DIV_MASK
 DECL|QM_CCU_SYS_CLK_DIV_OFFSET|macro|QM_CCU_SYS_CLK_DIV_OFFSET
 DECL|QM_CCU_SYS_CLK_SEL|macro|QM_CCU_SYS_CLK_SEL
 DECL|QM_CCU_WAKE_MASK_COMPARATOR_BIT|macro|QM_CCU_WAKE_MASK_COMPARATOR_BIT
+DECL|QM_CCU_WAKE_MASK_GPIO_BIT|macro|QM_CCU_WAKE_MASK_GPIO_BIT
+DECL|QM_CCU_WAKE_MASK_GPIO_BIT|macro|QM_CCU_WAKE_MASK_GPIO_BIT
+DECL|QM_CCU_WAKE_MASK_RTC_BIT|macro|QM_CCU_WAKE_MASK_RTC_BIT
 DECL|QM_DMA_0|enumerator|QM_DMA_0, /**< DMA controller id. */
 DECL|QM_DMA_BASE|macro|QM_DMA_BASE
 DECL|QM_DMA_CFG_H_DEST_PER_MASK|macro|QM_DMA_CFG_H_DEST_PER_MASK
@@ -226,6 +229,7 @@ DECL|QM_I2C_IC_INTR_STAT_TX_EMPTY|macro|QM_I2C_IC_INTR_STAT_TX_EMPTY
 DECL|QM_I2C_IC_INTR_STAT_TX_OVER|macro|QM_I2C_IC_INTR_STAT_TX_OVER
 DECL|QM_I2C_IC_LCNT_MAX|macro|QM_I2C_IC_LCNT_MAX
 DECL|QM_I2C_IC_LCNT_MIN|macro|QM_I2C_IC_LCNT_MIN
+DECL|QM_I2C_IC_RAW_INTR_STAT_RX_FULL|macro|QM_I2C_IC_RAW_INTR_STAT_RX_FULL
 DECL|QM_I2C_IC_RAW_INTR_STAT_TX_ABRT|macro|QM_I2C_IC_RAW_INTR_STAT_TX_ABRT
 DECL|QM_I2C_IC_STATUS_BUSY_MASK|macro|QM_I2C_IC_STATUS_BUSY_MASK
 DECL|QM_I2C_IC_STATUS_RFNE|macro|QM_I2C_IC_STATUS_RFNE
@@ -415,6 +419,8 @@ DECL|QM_SPI_RISR_TXOIR|macro|QM_SPI_RISR_TXOIR
 DECL|QM_SPI_SLV_0|enumerator|typedef enum { QM_SPI_MST_0 = 0, QM_SPI_SLV_0 = 1, QM_SPI_NUM } qm_spi_t;
 DECL|QM_SPI_SLV_BASE|macro|QM_SPI_SLV_BASE
 DECL|QM_SPI_SR_BUSY|macro|QM_SPI_SR_BUSY
+DECL|QM_SPI_SR_RFF|macro|QM_SPI_SR_RFF
+DECL|QM_SPI_SR_RFNE|macro|QM_SPI_SR_RFNE
 DECL|QM_SPI_SR_TFE|macro|QM_SPI_SR_TFE
 DECL|QM_SPI_SR_TFNF|macro|QM_SPI_SR_TFNF
 DECL|QM_SPI_SSIENR_SSIENR|macro|QM_SPI_SSIENR_SSIENR
@@ -453,12 +459,12 @@ DECL|adc_seq5|member|QM_RW uint32_t adc_seq5; /**< ADC Channel Sequence Table En
 DECL|adc_seq6|member|QM_RW uint32_t adc_seq6; /**< ADC Channel Sequence Table Entry 6 */
 DECL|adc_seq7|member|QM_RW uint32_t adc_seq7; /**< ADC Channel Sequence Table Entry 7 */
 DECL|aon_vr|member|QM_RW uint32_t aon_vr; /**< AON Voltage Regulator */
-DECL|aonc_cfg|member|QM_RW uint32_t aonc_cfg; /**< Always on counter enable */
-DECL|aonc_cnt|member|QM_RW uint32_t aonc_cnt; /**< Always on counter register */
-DECL|aonpt_cfg|member|aonpt_cfg; /**< Always on periodic timer configuration register */
-DECL|aonpt_cnt|member|QM_RW uint32_t aonpt_cnt; /**< Always on periodic timer */
-DECL|aonpt_ctrl|member|QM_RW uint32_t aonpt_ctrl; /**< Always on periodic timer control */
-DECL|aonpt_stat|member|aonpt_stat; /**< Always on periodic timer status register */
+DECL|aonc_cfg|member|QM_RW uint32_t aonc_cfg; /**< Always-on counter enable. */
+DECL|aonc_cnt|member|QM_RW uint32_t aonc_cnt; /**< Always-on counter register. */
+DECL|aonpt_cfg|member|aonpt_cfg; /**< Always-on periodic timer configuration register. */
+DECL|aonpt_cnt|member|QM_RW uint32_t aonpt_cnt; /**< Always-on periodic timer. */
+DECL|aonpt_ctrl|member|QM_RW uint32_t aonpt_ctrl; /**< Always-on periodic timer control. */
+DECL|aonpt_stat|member|aonpt_stat; /**< Always-on periodic timer status register. */
 DECL|baudr|member|QM_RW uint32_t baudr; /**< Baud Rate Select */
 DECL|ccr|member|QM_RW mvic_reg_pad_t ccr; /**< Timer current count */
 DECL|ccu_ext_clock_ctl|member|ccu_ext_clock_ctl; /**< External Clock Control Register */
@@ -487,11 +493,11 @@ DECL|clear_src_trans_low|member|QM_RW uint32_t clear_src_trans_low; /**< ClearSr
 DECL|clear_tfr_high|member|QM_RW uint32_t clear_tfr_high; /**< ClearTfr */
 DECL|clear_tfr_low|member|QM_RW uint32_t clear_tfr_low; /**< ClearTfr */
 DECL|clk_periph_t|typedef|} clk_periph_t;
-DECL|cmp_en|member|QM_RW uint32_t cmp_en; /**< Comparator enable */
-DECL|cmp_pwr|member|QM_RW uint32_t cmp_pwr; /**< Comparator power enable register */
-DECL|cmp_ref_pol|member|cmp_ref_pol; /**< Comparator reference polarity select register */
-DECL|cmp_ref_sel|member|QM_RW uint32_t cmp_ref_sel; /**< Comparator reference select */
-DECL|cmp_stat_clr|member|QM_RW uint32_t cmp_stat_clr; /**< Comparator clear register */
+DECL|cmp_en|member|QM_RW uint32_t cmp_en; /**< Comparator enable. */
+DECL|cmp_pwr|member|QM_RW uint32_t cmp_pwr; /**< Comparator power enable register. */
+DECL|cmp_ref_pol|member|cmp_ref_pol; /**< Comparator reference polarity select register. */
+DECL|cmp_ref_sel|member|QM_RW uint32_t cmp_ref_sel; /**< Comparator reference select. */
+DECL|cmp_stat_clr|member|QM_RW uint32_t cmp_stat_clr; /**< Comparator clear register. */
 DECL|controlreg|member|QM_RW uint32_t controlreg; /**< Control */
 DECL|cotps|member|QM_RW uint32_t cotps; /**< Code OTP Size Register */
 DECL|ctrl_high|member|QM_RW uint32_t ctrl_high; /**< CTL */
@@ -524,10 +530,10 @@ DECL|flash_wr_ctrl|member|QM_RW uint32_t flash_wr_ctrl; /**< FLASH_WR_CTRL */
 DECL|flash_wr_data|member|QM_RW uint32_t flash_wr_data; /**< FLASH_WR_DATA */
 DECL|fpr_rd_cfg|member|QM_RW uint32_t fpr_rd_cfg[4]; /**< 4 FPR_RD_CFG registers */
 DECL|fs|member|QM_RW uint32_t fs; /**< Flash Size Register */
-DECL|gp0|member|QM_RW uint32_t gp0; /**< General Purpose Scratchpad Registers */
-DECL|gp1|member|QM_RW uint32_t gp1; /**< General Purpose Scratchpad Registers */
-DECL|gp2|member|QM_RW uint32_t gp2; /**< General Purpose Scratchpad Registers */
-DECL|gp3|member|QM_RW uint32_t gp3; /**< General Purpose Scratchpad Registers */
+DECL|gp0|member|QM_RW uint32_t gp0; /**< General Purpose Scratchpad Register 0 */
+DECL|gp1|member|QM_RW uint32_t gp1; /**< General Purpose Scratchpad Register 1 */
+DECL|gp2|member|QM_RW uint32_t gp2; /**< General Purpose Scratchpad Register 2 */
+DECL|gp3|member|QM_RW uint32_t gp3; /**< General Purpose Scratchpad Register 3 */
 DECL|gpio_config_reg1|member|QM_RW uint32_t gpio_config_reg1; /**< GPIO Configuration Register 1 */
 DECL|gpio_config_reg2|member|QM_RW uint32_t gpio_config_reg2; /**< GPIO Configuration Register 2 */
 DECL|gpio_debounce|member|QM_RW uint32_t gpio_debounce; /**< Debounce Enable */
@@ -545,10 +551,10 @@ DECL|gpio_raw_intstatus|member|QM_RW uint32_t gpio_raw_intstatus; /**< Raw Inter
 DECL|gpio_swporta_ddr|member|QM_RW uint32_t gpio_swporta_ddr; /**< Port A Data Direction */
 DECL|gpio_swporta_dr|member|QM_RW uint32_t gpio_swporta_dr; /**< Port A Data */
 DECL|gpio_ver_id_code|member|QM_RW uint32_t gpio_ver_id_code; /**< GPIO Component Version */
-DECL|gps0|member|QM_RW uint32_t gps0; /**< General Purpose Sticky Registers */
-DECL|gps1|member|QM_RW uint32_t gps1; /**< General Purpose Sticky Registers */
-DECL|gps2|member|QM_RW uint32_t gps2; /**< General Purpose Sticky Registers */
-DECL|gps3|member|QM_RW uint32_t gps3; /**< General Purpose Sticky Registers */
+DECL|gps0|member|QM_RW uint32_t gps0; /**< General Purpose Sticky Register 0 */
+DECL|gps1|member|QM_RW uint32_t gps1; /**< General Purpose Sticky Register 1 */
+DECL|gps2|member|QM_RW uint32_t gps2; /**< General Purpose Sticky Register 2 */
+DECL|gps3|member|QM_RW uint32_t gps3; /**< General Purpose Sticky Register 3 */
 DECL|htx|member|QM_RW uint32_t htx; /**< Halt Transmission */
 DECL|ic_ack_general_call|member|QM_RW uint32_t ic_ack_general_call; /**< General Call Ack */
 DECL|ic_clr_activity|member|QM_RW uint32_t ic_clr_activity; /**< Clear ACTIVITY Interrupt */

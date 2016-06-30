@@ -22,16 +22,16 @@ DECL|QM_SS_SPI_SS_0|enumerator|QM_SS_SPI_SS_0 = BIT(0), /**< Slave select 0. */
 DECL|QM_SS_SPI_SS_1|enumerator|QM_SS_SPI_SS_1 = BIT(1), /**< Slave select 1. */
 DECL|QM_SS_SPI_SS_2|enumerator|QM_SS_SPI_SS_2 = BIT(2), /**< Slave select 2. */
 DECL|QM_SS_SPI_SS_3|enumerator|QM_SS_SPI_SS_3 = BIT(3), /**< Slave select 3. */
-DECL|QM_SS_SPI_SS_NONE|enumerator|QM_SS_SPI_SS_NONE = 0, /**< No slave select. */
+DECL|QM_SS_SPI_SS_DISABLED|enumerator|QM_SS_SPI_SS_DISABLED = 0, /**< Slave select disable. */
 DECL|QM_SS_SPI_TMOD_EEPROM_READ|enumerator|QM_SS_SPI_TMOD_EEPROM_READ
 DECL|QM_SS_SPI_TMOD_RX|enumerator|QM_SS_SPI_TMOD_RX,
 DECL|QM_SS_SPI_TMOD_TX_RX|enumerator|QM_SS_SPI_TMOD_TX_RX,
 DECL|QM_SS_SPI_TMOD_TX|enumerator|QM_SS_SPI_TMOD_TX,
 DECL|__QM_SS_SPI_H__|macro|__QM_SS_SPI_H__
 DECL|bus_mode|member|qm_ss_spi_bmode_t bus_mode; /**< Bus mode (enum). */
+DECL|callback_data|member|void *callback_data; /**< Callback user data. */
 DECL|callback|member|void (*callback)(void *data, int error, qm_ss_spi_status_t status,
 DECL|clk_divider|member|uint16_t clk_divider;
-DECL|data|member|void *data; /**< Callback user data. */
 DECL|frame_size|member|qm_ss_spi_frame_size_t frame_size; /**< Frame Size. */
 DECL|qm_ss_spi_async_transfer_t|typedef|} qm_ss_spi_async_transfer_t;
 DECL|qm_ss_spi_bmode_t|typedef|} qm_ss_spi_bmode_t;

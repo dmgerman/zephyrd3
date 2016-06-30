@@ -1,10 +1,10 @@
-DECL|MAX_T_POLL_COUNT|macro|MAX_T_POLL_COUNT
+DECL|I2C_POLL_COUNT|macro|I2C_POLL_COUNT
+DECL|I2C_POLL_MICROSECOND|macro|I2C_POLL_MICROSECOND
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_0_isr)
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_1_isr)
 DECL|RX_TL|macro|RX_TL
 DECL|SPK_LEN_FS_FSP|macro|SPK_LEN_FS_FSP
 DECL|SPK_LEN_SS|macro|SPK_LEN_SS
-DECL|TI2C_POLL_MICROSECOND|macro|TI2C_POLL_MICROSECOND
 DECL|TX_TL|macro|TX_TL
 DECL|controller_disable|function|static int controller_disable(const qm_i2c_t i2c)
 DECL|controller_enable|function|static void controller_enable(const qm_i2c_t i2c)
@@ -24,12 +24,13 @@ DECL|i2c_dma_interfaces|variable|i2c_dma_interfaces
 DECL|i2c_dma_receive_callback|function|static void i2c_dma_receive_callback(void *callback_context, uint32_t len, int error_code)
 DECL|i2c_dma_transfer_error_callback|function|static void i2c_dma_transfer_error_callback(uint32_t i2c, int error_code, uint32_t len)
 DECL|i2c_dma_transmit_callback|function|static void i2c_dma_transmit_callback(void *callback_context, uint32_t len, int error_code)
-DECL|i2c_read_buffer_remaining|variable|i2c_read_buffer_remaining
+DECL|i2c_read_cmd_send|variable|i2c_read_cmd_send
 DECL|i2c_read_pos|variable|i2c_read_pos
 DECL|i2c_start_dma_read|function|static int i2c_start_dma_read(const qm_i2c_t i2c)
 DECL|i2c_transfer|variable|i2c_transfer
 DECL|i2c_write_pos|variable|i2c_write_pos
 DECL|i2c|member|qm_i2c_t i2c; /* I2C controller */
+DECL|multimaster_abort_status|member|int multimaster_abort_status;
 DECL|ongoing_dma_rx_operation|member|volatile bool ongoing_dma_rx_operation; /* Keep track of oingoing RX*/
 DECL|ongoing_dma_tx_operation|member|volatile bool ongoing_dma_tx_operation; /* Keep track of ongoing TX */
 DECL|qm_i2c_dma_channel_config|function|int qm_i2c_dma_channel_config(const qm_i2c_t i2c, const qm_dma_t dma_controller_id, const qm_dma_channel_id_t channel_id, const qm_dma_channel_direction_t direction)

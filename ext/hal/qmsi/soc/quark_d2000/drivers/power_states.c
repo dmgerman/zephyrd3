@@ -1,4 +1,4 @@
 DECL|clear_all_pending_interrupts|function|static void clear_all_pending_interrupts(void)
-DECL|cpu_halt|function|void cpu_halt(void)
-DECL|soc_deep_sleep|function|void soc_deep_sleep(void)
-DECL|soc_sleep|function|void soc_sleep(void)
+DECL|power_cpu_halt|function|void power_cpu_halt(void)
+DECL|power_soc_deep_sleep|function|void power_soc_deep_sleep(const power_wake_event_t wake_event)
+DECL|power_soc_sleep|function|void power_soc_sleep(void)
