@@ -133,8 +133,10 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|link_sup_to|member|uint16_t link_sup_to;
 DECL|major|member|uint8_t major;
+DECL|max_delay|member|uint16_t max_delay;
 DECL|max_key_size|member|uint8_t max_key_size;
 DECL|max_key_size|member|uint8_t max_key_size;
+DECL|max_len|member|uint16_t max_len;
 DECL|min_count|member|uint8_t min_count;
 DECL|min_count|member|uint8_t min_count;
 DECL|min_key_size|member|uint8_t min_key_size;
@@ -142,6 +144,8 @@ DECL|min_key_size|member|uint8_t min_key_size;
 DECL|minor|member|uint8_t minor;
 DECL|name_array|member|uint8_t name_array[20];
 DECL|name|member|struct nble_gap_device_name name;
+DECL|nb_loops|member|uint16_t nb_loops;
+DECL|nb_loops|member|uint16_t nb_loops;
 DECL|nble_common_rsp|struct|struct nble_common_rsp {
 DECL|nble_conn_param|struct|struct nble_conn_param {
 DECL|nble_conn_values|struct|struct nble_conn_values {
@@ -192,6 +196,8 @@ DECL|nble_sm_passkey|struct|struct nble_sm_passkey {
 DECL|nble_sm_security_request_evt|struct|struct nble_sm_security_request_evt {
 DECL|nble_sm_security_req|struct|struct nble_sm_security_req {
 DECL|nble_sm_status_evt|struct|struct nble_sm_status_evt {
+DECL|nble_uart_test_evt|struct|struct nble_uart_test_evt {
+DECL|nble_uart_test_req|struct|struct nble_uart_test_req {
 DECL|nble_uas_bucket_change|struct|struct nble_uas_bucket_change {
 DECL|nble_uas_rssi_calibrate_req|struct|struct nble_uas_rssi_calibrate_req {
 DECL|nble_version|struct|struct nble_version {
@@ -240,6 +246,7 @@ DECL|status|member|int status;
 DECL|status|member|int status;
 DECL|status|member|int status;
 DECL|supervision_to|member|uint16_t supervision_to;
+DECL|test_type|member|uint16_t test_type;
 DECL|timeout|member|uint16_t timeout;
 DECL|tx_power|member|int8_t tx_power;
 DECL|type|member|uint8_t type;

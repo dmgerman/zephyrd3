@@ -1,27 +1,44 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|DJB2_HASH|macro|DJB2_HASH
 DECL|FN_INDEX_SIZE|macro|FN_INDEX_SIZE
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
 DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_B_B_P|macro|FN_SIG_B_B_P
+DECL|FN_SIG_NONE|macro|FN_SIG_NONE
+DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_NONE|macro|FN_SIG_NONE
 DECL|FN_SIG_P|macro|FN_SIG_P
 DECL|FN_SIG_P|macro|FN_SIG_P
 DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_P|macro|FN_SIG_P
+DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
+DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_B_P|macro|FN_SIG_S_B_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
 DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B_P|macro|FN_SIG_S_B_P
+DECL|FN_SIG_S_B|macro|FN_SIG_S_B
+DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_B|macro|FN_SIG_S_B
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
 DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S_P|macro|FN_SIG_S_P
+DECL|FN_SIG_S|macro|FN_SIG_S
+DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
 DECL|FN_SIG_S|macro|FN_SIG_S
@@ -46,7 +63,9 @@ DECL|fn_s_b_index_max|enumerator|enum { LIST_FN_SIG_S_B fn_s_b_index_max };
 DECL|fn_s_b_p_index_max|enumerator|enum { LIST_FN_SIG_S_B_P fn_s_b_p_index_max };
 DECL|fn_s_index_max|enumerator|enum { LIST_FN_SIG_S fn_s_index_max };
 DECL|fn_s_p_index_max|enumerator|enum { LIST_FN_SIG_S_P fn_s_p_index_max };
+DECL|rpc_init|function|void rpc_init(uint32_t version)
 DECL|rpc_serialize_b_b_p|function|void rpc_serialize_b_b_p(uint8_t fn_index, const void *vbuf1, uint16_t vbuf1_length, const void *vbuf2, uint16_t vbuf2_length, void *priv)
+DECL|rpc_serialize_hash|function|uint32_t rpc_serialize_hash(void)
 DECL|rpc_serialize_none|function|void rpc_serialize_none(uint8_t fn_index)
 DECL|rpc_serialize_p|function|void rpc_serialize_p(uint8_t fn_index, void *priv)
 DECL|rpc_serialize_s_b_b_p|function|void rpc_serialize_s_b_b_p(uint8_t fn_index, const void *struct_data, uint8_t struct_length, const void *vbuf1, uint16_t vbuf1_length, const void *vbuf2, uint16_t vbuf2_length, void *priv)
