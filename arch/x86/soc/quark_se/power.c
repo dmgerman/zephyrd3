@@ -1,0 +1,9 @@
+DECL|_DEEP_SLEEP_MODE|macro|_DEEP_SLEEP_MODE
+DECL|_DEVICE_SUSPEND_ONLY_MODE|macro|_DEVICE_SUSPEND_ONLY_MODE
+DECL|_GPS0|macro|_GPS0
+DECL|_LOW_POWER_MODE|macro|_LOW_POWER_MODE
+DECL|_pm_save_esp|variable|_pm_save_esp
+DECL|_pm_save_gdtr|variable|_pm_save_gdtr
+DECL|_pm_save_idtr|variable|_pm_save_idtr
+DECL|_sys_soc_get_power_policy|function|int _sys_soc_get_power_policy(void)
+DECL|_sys_soc_set_power_policy|function|void _sys_soc_set_power_policy(uint32_t pm_policy)
