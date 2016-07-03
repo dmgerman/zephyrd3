@@ -1,5 +1,3 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
 DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK|macro|BT_SMP_AUTH_MASK
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
@@ -77,7 +75,6 @@ DECL|get_encryption_key_size|function|static uint8_t get_encryption_key_size(str
 DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|handlers|variable|handlers
-DECL|h|function|static const char *h(const void *buf, size_t len)
 DECL|key|variable|key
 DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
