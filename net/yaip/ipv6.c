@@ -4,6 +4,7 @@ DECL|NET_NBR_INCOMPLETE|enumerator|NET_NBR_INCOMPLETE,
 DECL|NET_NBR_PROBE|enumerator|NET_NBR_PROBE,
 DECL|NET_NBR_REACHABLE|enumerator|NET_NBR_REACHABLE,
 DECL|NET_NBR_STALE|enumerator|NET_NBR_STALE,
+DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
 DECL|addr|member|struct in6_addr addr;
@@ -40,6 +41,7 @@ DECL|is_router|member|bool is_router;
 DECL|link_metric|member|uint16_t link_metric;
 DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
+DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_nbr_data *data)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct in6_addr *addr, enum net_nbr_state state)
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
@@ -61,6 +63,7 @@ DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_count|member|uint8_t ns_count;
 DECL|ns_input_handler|variable|ns_input_handler
+DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct nano_work *work)
 DECL|pending|member|struct net_buf *pending;
 DECL|ra_input_handler|variable|ra_input_handler
 DECL|reachable|member|struct nano_delayed_work reachable;
