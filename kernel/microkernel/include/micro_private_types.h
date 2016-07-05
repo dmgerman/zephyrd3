@@ -162,7 +162,6 @@ DECL|maxblock_size|member|int maxblock_size;
 DECL|mem_blocks|member|char *mem_blocks;
 DECL|mem_status|member|uint32_t mem_status;
 DECL|mess|member|struct k_msg mess;
-DECL|min_nr_blocks|member|int min_nr_blocks;
 DECL|minblock_size|member|int minblock_size;
 DECL|mmap|member|kmemory_map_t mmap;
 DECL|moved_req_args_setup|struct|struct moved_req_args_setup {
