@@ -12,7 +12,7 @@ DECL|_k_mem_pool_block_release|function|void _k_mem_pool_block_release(struct k_
 DECL|_k_mem_pool_init|function|void _k_mem_pool_init(void)
 DECL|defrag|function|static void defrag(struct pool_struct *P, int ifraglevel_start, int ifraglevel_stop)
 DECL|get_block_recusive|function|static char *get_block_recusive(struct pool_struct *P, int index, int startindex)
-DECL|search_block_on_frag_level|function|static char *search_block_on_frag_level(struct pool_block *pfraglevelinfo, int *piblockindex)
+DECL|get_existing_block|function|static char *get_existing_block(struct pool_block *pfraglevelinfo,int *piblockindex)
 DECL|search_bp|function|static void search_bp(char *ptr, struct pool_struct *P, int index)
 DECL|task_free|function|void task_free(void *ptr)
 DECL|task_malloc|function|void *task_malloc(uint32_t size)
