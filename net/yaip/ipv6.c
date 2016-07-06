@@ -43,6 +43,7 @@ DECL|link_metric|member|uint16_t link_metric;
 DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_nbr_data *data)
+DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
