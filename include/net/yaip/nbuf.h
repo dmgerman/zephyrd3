@@ -46,6 +46,7 @@ DECL|net_nbuf_ll_swap|function|static inline void net_nbuf_ll_swap(struct net_bu
 DECL|net_nbuf_ll|function|static inline uint8_t *net_nbuf_ll(struct net_buf *buf)
 DECL|net_nbuf_next_hdr|function|static inline uint8_t *net_nbuf_next_hdr(struct net_buf *buf)
 DECL|net_nbuf_print_frags|macro|net_nbuf_print_frags
+DECL|net_nbuf_print|macro|net_nbuf_print
 DECL|net_nbuf_ref|macro|net_nbuf_ref
 DECL|net_nbuf_reserve|function|static inline uint16_t net_nbuf_reserve(struct net_buf *buf)
 DECL|net_nbuf_set_appdatalen|function|static inline void net_nbuf_set_appdatalen(struct net_buf *buf, uint16_t len)
