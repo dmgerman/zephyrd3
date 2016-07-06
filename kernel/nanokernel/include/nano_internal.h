@@ -12,6 +12,7 @@ DECL|_TASK_NANO_UNPEND_TASKS|macro|_TASK_NANO_UNPEND_TASKS
 DECL|_TASK_NANO_UNPEND_TASKS|macro|_TASK_NANO_UNPEND_TASKS
 DECL|_TASK_PENDQ_INIT|macro|_TASK_PENDQ_INIT
 DECL|_TASK_PENDQ_INIT|macro|_TASK_PENDQ_INIT
+DECL|_data_copy|function|static inline void _data_copy(void)
 DECL|_thread_arg_t|typedef|typedef void *_thread_arg_t;
 DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(_thread_arg_t arg1,
 DECL|_thread_exit|macro|_thread_exit
