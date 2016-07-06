@@ -1,3 +1,5 @@
+DECL|MAX_MULTICAST_SOLICIT|macro|MAX_MULTICAST_SOLICIT
+DECL|MAX_UNICAST_SOLICIT|macro|MAX_UNICAST_SOLICIT
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_NBR_DELAY|enumerator|NET_NBR_DELAY,
@@ -48,6 +50,7 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
+DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct nano_work *work)
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
 DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
@@ -74,6 +77,7 @@ DECL|reachable|member|struct nano_delayed_work reachable;
 DECL|remaining|function|static inline uint32_t remaining(struct nano_delayed_work *work)
 DECL|send_ns|member|struct nano_delayed_work send_ns;
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
+DECL|set_reachable_timeout|function|static inline void set_reachable_timeout(struct net_if *iface, struct net_nbr *nbr)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
 DECL|state|member|enum net_nbr_state state;
 DECL|submit_work|function|static inline void submit_work(struct nano_delayed_work *work, uint32_t time_in_sec)
