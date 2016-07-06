@@ -14,6 +14,7 @@ DECL|iface|member|struct net_if *iface;
 DECL|lladdr|member|struct net_linkaddr_storage lladdr;
 DECL|nbr|member|struct net_nbr *nbr;
 DECL|net_nbr_lladdr|struct|struct net_nbr_lladdr {
+DECL|net_nbr_print|macro|net_nbr_print
 DECL|net_nbr_table|struct|struct net_nbr_table {
 DECL|net_nbr|struct|struct net_nbr {
 DECL|ref|member|uint8_t ref;
