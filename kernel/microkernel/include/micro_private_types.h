@@ -121,6 +121,7 @@ DECL|args|member|struct k_args *args;
 DECL|async_req|struct|struct async_req {
 DECL|async|member|struct async_req async;
 DECL|async|member|struct async_req async;
+DECL|block_set|member|struct pool_block_set *block_set;
 DECL|block_size|member|int block_size;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
@@ -140,7 +141,6 @@ DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|extra|member|} extra;
-DECL|frag_tab|member|struct pool_block_set *frag_tab;
 DECL|func|member|int (*func)();
 DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
@@ -169,8 +169,8 @@ DECL|mptr|member|void **mptr;
 DECL|mutex|member|kmutex_t mutex;
 DECL|next|member|struct k_args *next;
 DECL|next|member|struct k_timer *next;
+DECL|nr_of_block_sets|member|int nr_of_block_sets;
 DECL|nr_of_entries|member|int nr_of_entries;
-DECL|nr_of_frags|member|int nr_of_frags;
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
 DECL|nsem|member|int nsem;
 DECL|num_pending_xfers|member|int num_pending_xfers; /* # data Xfers (still) in progress */
