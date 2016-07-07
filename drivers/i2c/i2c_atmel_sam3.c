@@ -1,6 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|RET_ERR|macro|RET_ERR
 DECL|RET_NACK|macro|RET_NACK
 DECL|RET_OK|macro|RET_OK
@@ -8,6 +5,7 @@ DECL|STATE_BUSY|macro|STATE_BUSY
 DECL|STATE_READY|macro|STATE_READY
 DECL|STATE_RX|macro|STATE_RX
 DECL|STATE_TX|macro|STATE_TX
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|api_funcs|variable|api_funcs
 DECL|clk_div_calc|function|static uint32_t clk_div_calc(struct device *dev)
 DECL|config_func_0|function|static void config_func_0(struct device *dev)
