@@ -2,9 +2,12 @@ DECL|POWER_STATE_CPU_C1|enumerator|POWER_STATE_CPU_C1,
 DECL|POWER_STATE_CPU_C2LP|enumerator|POWER_STATE_CPU_C2LP,
 DECL|POWER_STATE_CPU_C2|enumerator|POWER_STATE_CPU_C2,
 DECL|POWER_STATE_MAX|enumerator|POWER_STATE_MAX
+DECL|POWER_STATE_SOC_DEEP_SLEEP|enumerator|POWER_STATE_SOC_DEEP_SLEEP,
+DECL|POWER_STATE_SOC_SLEEP|enumerator|POWER_STATE_SOC_SLEEP,
 DECL|TIMEOUT|macro|TIMEOUT
-DECL|_sys_soc_resume|function|void _sys_soc_resume(void)
+DECL|__do_soc_sleep|function|static void __do_soc_sleep(int deep)
 DECL|_sys_soc_suspend|function|int _sys_soc_suspend(int32_t ticks)
+DECL|do_soc_sleep|function|static void do_soc_sleep(int deep)
 DECL|get_next_state|function|static enum power_states get_next_state(void)
 DECL|last_state|variable|last_state
 DECL|main|function|void main(void)
