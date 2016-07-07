@@ -10,6 +10,7 @@ DECL|_k_mem_pool_block_get_timeout_handle|function|void _k_mem_pool_block_get_ti
 DECL|_k_mem_pool_block_get|function|void _k_mem_pool_block_get(struct k_args *A)
 DECL|_k_mem_pool_block_release|function|void _k_mem_pool_block_release(struct k_args *A)
 DECL|_k_mem_pool_init|function|void _k_mem_pool_init(void)
+DECL|compute_block_set_index|function|static int compute_block_set_index(struct pool_struct *P, int data_size)
 DECL|defrag|function|static void defrag(struct pool_struct *P, int ifraglevel_start, int ifraglevel_stop)
 DECL|free_existing_block|function|static void free_existing_block(char *ptr, struct pool_struct *P, int index)
 DECL|get_block_recursive|function|static char *get_block_recursive(struct pool_struct *P, int index, int startindex)
