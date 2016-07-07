@@ -122,8 +122,7 @@ DECL|async_req|struct|struct async_req {
 DECL|async|member|struct async_req async;
 DECL|async|member|struct async_req async;
 DECL|block_size|member|int block_size;
-DECL|block_stat|struct|struct block_stat {
-DECL|blocktable|member|struct block_stat *blocktable;
+DECL|blocktable|member|struct pool_quad_block *blocktable;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
 DECL|c1|member|struct _c1arg c1;
@@ -142,7 +141,7 @@ DECL|duration|member|int32_t duration;
 DECL|e1|member|struct _e1arg e1;
 DECL|event|member|kevent_t event;
 DECL|extra|member|} extra;
-DECL|frag_tab|member|struct pool_block *frag_tab;
+DECL|frag_tab|member|struct pool_block_set *frag_tab;
 DECL|func|member|int (*func)();
 DECL|func|member|kevent_handler_t func;
 DECL|g1|member|struct _g1arg g1;
@@ -187,8 +186,9 @@ DECL|pipe_req|member|struct _pipe_req_arg pipe_req;
 DECL|pipe_xfer_ack|member|struct _pipe_xfer_ack_arg pipe_xfer_ack;
 DECL|pipe_xfer_req|member|struct _pipe_xfer_req_arg pipe_xfer_req;
 DECL|pipe|member|} pipe;
-DECL|pool_block|struct|struct pool_block {
+DECL|pool_block_set|struct|struct pool_block_set {
 DECL|pool_id|member|kmemory_pool_t pool_id;
+DECL|pool_quad_block|struct|struct pool_quad_block {
 DECL|pool_struct|struct|struct pool_struct {
 DECL|prev|member|struct k_timer *prev;
 DECL|priority|member|kpriority_t priority;

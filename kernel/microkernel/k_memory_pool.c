@@ -14,7 +14,7 @@ DECL|compute_block_set_index|function|static int compute_block_set_index(struct 
 DECL|defrag|function|static void defrag(struct pool_struct *P, int ifraglevel_start, int ifraglevel_stop)
 DECL|free_existing_block|function|static void free_existing_block(char *ptr, struct pool_struct *P, int index)
 DECL|get_block_recursive|function|static char *get_block_recursive(struct pool_struct *P, int index, int startindex)
-DECL|get_existing_block|function|static char *get_existing_block(struct pool_block *pfraglevelinfo,int *piblockindex)
+DECL|get_existing_block|function|static char *get_existing_block(struct pool_block_set *pfraglevelinfo,int *piblockindex)
 DECL|task_free|function|void task_free(void *ptr)
 DECL|task_malloc|function|void *task_malloc(uint32_t size)
 DECL|task_mem_pool_alloc|function|int task_mem_pool_alloc(struct k_block *blockptr, kmemory_pool_t pool_id, int reqsize, int32_t timeout)
