@@ -33,7 +33,7 @@ DECL|genidt_header|variable|genidt_header
 DECL|get_exec_name|function|static void get_exec_name(char *pathname)
 DECL|get_options|function|static void get_options(int argc, char *argv[])
 DECL|irq|member|unsigned int irq;
-DECL|isr|member|void *isr;
+DECL|isr|member|uint32_t isr;
 DECL|main|function|int main(int argc, char *argv[])
 DECL|num_entries|member|unsigned int num_entries;
 DECL|num_irq_lines|variable|num_irq_lines
@@ -42,8 +42,8 @@ DECL|open_files|function|static void open_files(void)
 DECL|priority|member|unsigned int priority;
 DECL|read_input_file|function|static void read_input_file(void)
 DECL|show_entry|function|static void show_entry(struct genidt_entry_s *entry)
-DECL|spurious_addr|member|void *spurious_addr;
-DECL|spurious_no_error_addr|member|void *spurious_no_error_addr;
+DECL|spurious_addr|member|uint32_t spurious_addr;
+DECL|spurious_no_error_addr|member|uint32_t spurious_no_error_addr;
 DECL|supplied_entry|variable|supplied_entry
 DECL|usage|function|static void usage(int len)
 DECL|validate_dpl|function|static void validate_dpl(void)

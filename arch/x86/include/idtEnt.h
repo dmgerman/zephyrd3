@@ -1,7 +1,7 @@
 DECL|IDT_ENTRY|typedef|} __packed IDT_ENTRY;
 DECL|_EXC_ERROR_CODE_FAULTS|macro|_EXC_ERROR_CODE_FAULTS
 DECL|_IDTENT_H|macro|_IDTENT_H
-DECL|_IdtEntCreate|function|static inline void _IdtEntCreate(unsigned long long *pIdtEntry, void (*routine)(void *), unsigned int dpl)
+DECL|_IdtEntCreate|function|static inline void _IdtEntCreate(uint64_t *pIdtEntry, uint32_t routine, unsigned int dpl)
 DECL|always_0_0|member|uint8_t always_0_0:3;
 DECL|always_0_1|member|uint8_t always_0_1:1;
 DECL|dpl|member|uint8_t dpl:2; /* Descriptor privilege level */
