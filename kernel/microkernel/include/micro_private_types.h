@@ -234,7 +234,6 @@ DECL|time1|member|int64_t time1;
 DECL|time2|member|int64_t time2;
 DECL|timer|member|struct k_timer *timer;
 DECL|timer|member|struct k_timer *timer;
-DECL|total_mem|member|int total_mem;
 DECL|total_size|member|int total_size;
 DECL|total_size|member|int total_size;
 DECL|total_size|member|int total_size; /* total size of data/free space */
