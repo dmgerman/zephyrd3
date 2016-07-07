@@ -36,6 +36,8 @@ DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *ifac
 DECL|net_if_ipv6_prefix_add|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_add(struct net_if *iface, struct in6_addr *prefix, uint8_t len, uint32_t lifetime)
 DECL|net_if_ipv6_prefix_lookup|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_lookup(struct net_if *iface, struct in6_addr *addr, uint8_t len)
 DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *iface, struct in6_addr *addr, uint8_t len)
+DECL|net_if_ipv6_prefix_set_timer|function|void net_if_ipv6_prefix_set_timer(struct net_if_ipv6_prefix *prefix, uint32_t lifetime)
+DECL|net_if_ipv6_prefix_unset_timer|function|void net_if_ipv6_prefix_unset_timer(struct net_if_ipv6_prefix *prefix)
 DECL|net_if_ipv6_router_add|function|struct net_if_router *net_if_ipv6_router_add(struct net_if *iface, struct in6_addr *addr, uint16_t lifetime)
 DECL|net_if_ipv6_router_lookup|function|struct net_if_router *net_if_ipv6_router_lookup(struct net_if *iface,struct in6_addr *addr)
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
@@ -45,5 +47,6 @@ DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)
+DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct nano_work *work)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct nano_work *work)
