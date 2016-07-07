@@ -1,5 +1,6 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|get_nbr|function|static inline struct net_nbr *get_nbr(struct net_nbr *start, int idx)
 DECL|net_nbr_clear_table|function|void net_nbr_clear_table(struct net_nbr_table *table)
 DECL|net_nbr_get_lladdr|function|struct net_linkaddr_storage *net_nbr_get_lladdr(uint8_t idx)
 DECL|net_nbr_get|function|struct net_nbr *net_nbr_get(struct net_nbr_table *table)
