@@ -122,7 +122,6 @@ DECL|async_req|struct|struct async_req {
 DECL|async|member|struct async_req async;
 DECL|async|member|struct async_req async;
 DECL|block_size|member|int block_size;
-DECL|blocktable|member|struct pool_quad_block *blocktable;
 DECL|block|member|struct k_block block;
 DECL|bufblock|member|char *bufblock;
 DECL|c1|member|struct _c1arg c1;
@@ -196,6 +195,7 @@ DECL|prio|member|kpriority_t prio;
 DECL|ptr|member|struct _k_pipe_struct *ptr;
 DECL|q1|member|struct _q1arg q1;
 DECL|q2|member|struct _q2arg q2;
+DECL|quad_block|member|struct pool_quad_block *quad_block;
 DECL|queue|member|kfifo_t queue;
 DECL|queue|member|kfifo_t queue;
 DECL|rcode|member|int rcode;
