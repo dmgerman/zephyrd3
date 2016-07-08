@@ -75,6 +75,8 @@ DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct b
 DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, uint16_t length)
 DECL|prepare_write_data|struct|struct prepare_write_data {
 DECL|properties|member|uint8_t properties;
+DECL|read_included_uuid_cb|function|static void read_included_uuid_cb(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
+DECL|read_included_uuid|function|static int read_included_uuid(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|start_handle|member|uint16_t start_handle;
 DECL|subscriptions|variable|subscriptions

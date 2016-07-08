@@ -40,9 +40,11 @@ DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|__packed|variable|__packed
 DECL|__single|struct|struct __single {
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
+DECL|_included|member|} _included;
 DECL|_next|member|struct bt_gatt_attr *_next;
 DECL|_next|member|struct bt_gatt_subscribe_params *_next;
 DECL|_peer|member|bt_addr_le_t _peer;
+DECL|attr_handle|member|uint16_t attr_handle;
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
 DECL|bt_gatt_attr|struct|struct bt_gatt_attr {
@@ -73,6 +75,7 @@ DECL|description|member|uint16_t description;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
+DECL|end_handle|member|uint16_t end_handle;
 DECL|exponent|member|int8_t exponent;
 DECL|flags|member|uint16_t flags;
 DECL|format|member|uint8_t format;
@@ -97,6 +100,7 @@ DECL|properties|member|uint16_t properties;
 DECL|properties|member|uint8_t properties;
 DECL|read|member|ssize_t (*read)(struct bt_conn *conn,
 DECL|single|member|} single;
+DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|start_handle|member|uint16_t start_handle;
 DECL|type|member|uint8_t type;
