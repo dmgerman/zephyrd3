@@ -8,6 +8,7 @@ DECL|NET_BUF_INFO|macro|NET_BUF_INFO
 DECL|NET_BUF_INFO|macro|NET_BUF_INFO
 DECL|NET_BUF_WARN|macro|NET_BUF_WARN
 DECL|NET_BUF_WARN|macro|NET_BUF_WARN
+DECL|net_buf_add_be16|function|void net_buf_add_be16(struct net_buf *buf, uint16_t value)
 DECL|net_buf_add_le16|function|void net_buf_add_le16(struct net_buf *buf, uint16_t value)
 DECL|net_buf_add_le32|function|void net_buf_add_le32(struct net_buf *buf, uint32_t value)
 DECL|net_buf_add_u8|function|uint8_t *net_buf_add_u8(struct net_buf *buf, uint8_t value)
@@ -20,6 +21,7 @@ DECL|net_buf_pull_le16|function|uint16_t net_buf_pull_le16(struct net_buf *buf)
 DECL|net_buf_pull_le32|function|uint32_t net_buf_pull_le32(struct net_buf *buf)
 DECL|net_buf_pull_u8|function|uint8_t net_buf_pull_u8(struct net_buf *buf)
 DECL|net_buf_pull|function|void *net_buf_pull(struct net_buf *buf, size_t len)
+DECL|net_buf_push_be16|function|void net_buf_push_be16(struct net_buf *buf, uint16_t value)
 DECL|net_buf_push_le16|function|void net_buf_push_le16(struct net_buf *buf, uint16_t value)
 DECL|net_buf_push|function|void *net_buf_push(struct net_buf *buf, size_t len)
 DECL|net_buf_put|function|void net_buf_put(struct nano_fifo *fifo, struct net_buf *buf)
