@@ -11,6 +11,7 @@ DECL|L2CAP_BR_PSM_END|macro|L2CAP_BR_PSM_END
 DECL|L2CAP_BR_PSM_SDP|macro|L2CAP_BR_PSM_SDP
 DECL|L2CAP_BR_PSM_START|macro|L2CAP_BR_PSM_START
 DECL|L2CAP_FEAT_FIXED_CHAN_MASK|macro|L2CAP_FEAT_FIXED_CHAN_MASK
+DECL|L2CAP_FLAG_ACCEPTOR|enumerator|L2CAP_FLAG_ACCEPTOR, /* getting incoming connection req on PSM */
 DECL|L2CAP_FLAG_LCONF_DONE|enumerator|L2CAP_FLAG_LCONF_DONE, /* local config accepted by remote */
 DECL|L2CAP_FLAG_RCONF_DONE|enumerator|L2CAP_FLAG_RCONF_DONE, /* remote config accepted by local */
 DECL|br_channels|variable|br_channels
@@ -40,6 +41,7 @@ DECL|l2cap_br_conf_opt_mtu|function|static uint16_t l2cap_br_conf_opt_mtu(struct
 DECL|l2cap_br_conf_req|function|static void l2cap_br_conf_req(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
 DECL|l2cap_br_conf_rsp|function|static void l2cap_br_conf_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
 DECL|l2cap_br_conf|function|static void l2cap_br_conf(struct bt_l2cap_chan *chan)
+DECL|l2cap_br_conn_pend|function|static void l2cap_br_conn_pend(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_conn_req|function|static void l2cap_br_conn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_connected|function|static void l2cap_br_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_disconn_req|function|static void l2cap_br_disconn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
