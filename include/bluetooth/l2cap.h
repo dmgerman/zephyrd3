@@ -30,6 +30,7 @@ DECL|credits|member|struct nano_sem credits;
 DECL|destroy|member|bt_l2cap_chan_destroy_t destroy;
 DECL|disconnected|member|void (*disconnected)(struct bt_l2cap_chan *chan);
 DECL|encrypt_change|member|void (*encrypt_change)(struct bt_l2cap_chan *chan);
+DECL|flags|member|atomic_t flags[1];
 DECL|ident|member|uint8_t ident;
 DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;

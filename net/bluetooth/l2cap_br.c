@@ -11,6 +11,8 @@ DECL|L2CAP_BR_PSM_END|macro|L2CAP_BR_PSM_END
 DECL|L2CAP_BR_PSM_SDP|macro|L2CAP_BR_PSM_SDP
 DECL|L2CAP_BR_PSM_START|macro|L2CAP_BR_PSM_START
 DECL|L2CAP_FEAT_FIXED_CHAN_MASK|macro|L2CAP_FEAT_FIXED_CHAN_MASK
+DECL|L2CAP_FLAG_LCONF_DONE|enumerator|L2CAP_FLAG_LCONF_DONE, /* local config accepted by remote */
+DECL|L2CAP_FLAG_RCONF_DONE|enumerator|L2CAP_FLAG_RCONF_DONE, /* remote config accepted by local */
 DECL|br_channels|variable|br_channels
 DECL|br_servers|variable|br_servers
 DECL|br_sig|variable|br_sig
