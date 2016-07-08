@@ -5,7 +5,7 @@ DECL|_IntVecSet|function|void _IntVecSet(unsigned int vector, void (*routine)(vo
 DECL|_SpuriousIntHandler|variable|_SpuriousIntHandler
 DECL|_SpuriousIntNoErrCodeHandler|variable|_SpuriousIntNoErrCodeHandler
 DECL|_arch_irq_connect_dynamic|function|int _arch_irq_connect_dynamic(unsigned int irq, unsigned int priority,void (*routine)(void *parameter), void *parameter, uint32_t flags)
-DECL|_common_dynamic_irq_handler|function|void _common_dynamic_irq_handler(uint32_t stub_idx)
+DECL|_common_dynamic_irq_handler|function|void _common_dynamic_irq_handler(uint8_t stub_idx)
 DECL|_dummy_exception_vector_stub|variable|_dummy_exception_vector_stub
 DECL|_dummy_spurious_interrupt|variable|_dummy_spurious_interrupt
 DECL|_irq_handler_set|function|void _irq_handler_set(unsigned int vector, void (*routine)(void *parameter), void *parameter)
