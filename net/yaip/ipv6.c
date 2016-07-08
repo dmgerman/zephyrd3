@@ -25,6 +25,8 @@ DECL|dbg_update_neighbor_lladdr_raw|macro|dbg_update_neighbor_lladdr_raw
 DECL|dbg_update_neighbor_lladdr|function|static inline void dbg_update_neighbor_lladdr(struct net_linkaddr *new_lladdr,struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
 DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
+DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_nbr_data *data)
+DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_buf *buf)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
 DECL|handle_ns_input|function|static enum net_verdict handle_ns_input(struct net_buf *buf)
@@ -49,10 +51,10 @@ DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
 DECL|net_ipv6_start_dad|function|int net_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
 DECL|net_ipv6_start_rs|function|int net_ipv6_start_rs(struct net_if *iface)
-DECL|net_is_override|macro|net_is_override
-DECL|net_is_router|macro|net_is_router
-DECL|net_is_solicited|macro|net_is_solicited
-DECL|net_nbr_data|macro|net_nbr_data
+DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
+DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
+DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)
+DECL|net_nbr_data|function|static inline struct net_nbr_data *net_nbr_data(struct net_nbr *nbr)
 DECL|net_nbr_data|struct|struct net_nbr_data {
 DECL|net_nbr_state|enum|enum net_nbr_state {
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
