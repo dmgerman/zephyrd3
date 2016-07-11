@@ -13,7 +13,9 @@ DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
 DECL|LE_CHAN_RTX|macro|LE_CHAN_RTX
 DECL|__l2cap_lookup_ident|function|__l2cap_lookup_ident(struct bt_conn *conn, uint16_t ident, bool remove)
+DECL|bt_l2cap_chan_add|function|void bt_l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|bt_l2cap_chan_connect|function|int bt_l2cap_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
+DECL|bt_l2cap_chan_del|function|void bt_l2cap_chan_del(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_chan_disconnect|function|int bt_l2cap_chan_disconnect(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_chan_send|function|int bt_l2cap_chan_send(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
@@ -33,10 +35,9 @@ DECL|bt_l2cap|struct|struct bt_l2cap {
 DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|get_ident|function|static uint8_t get_ident(void)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
-DECL|l2cap_chan_add|function|static bool l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, void (*destroy)(struct bt_l2cap_chan *chan))
+DECL|l2cap_chan_add|function|static bool l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|l2cap_chan_alloc_cid|function|static struct bt_l2cap_le_chan *l2cap_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_create_seg|function|static struct net_buf *l2cap_chan_create_seg(struct bt_l2cap_le_chan *ch, struct net_buf *buf, size_t sdu_hdr_len)
-DECL|l2cap_chan_del|function|static void l2cap_chan_del(struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_destroy|function|static void l2cap_chan_destroy(struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_le_recv_sdu|function|static void l2cap_chan_le_recv_sdu(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_recv|function|static void l2cap_chan_le_recv(struct bt_l2cap_le_chan *chan, struct net_buf *buf)

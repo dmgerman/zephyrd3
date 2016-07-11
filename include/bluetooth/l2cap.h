@@ -9,6 +9,7 @@ DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **ch
 DECL|alloc_buf|member|struct net_buf *(*alloc_buf)(struct bt_l2cap_chan *chan);
 DECL|bt_l2cap_br_chan|struct|struct bt_l2cap_br_chan {
 DECL|bt_l2cap_br_endpoint|struct|struct bt_l2cap_br_endpoint {
+DECL|bt_l2cap_chan_destroy_t|typedef|typedef void (*bt_l2cap_chan_destroy_t)(struct bt_l2cap_chan *chan);
 DECL|bt_l2cap_chan_ops|struct|struct bt_l2cap_chan_ops {
 DECL|bt_l2cap_chan|struct|struct bt_l2cap_chan {
 DECL|bt_l2cap_le_chan|struct|struct bt_l2cap_le_chan {
@@ -21,7 +22,7 @@ DECL|cid|member|uint16_t cid;
 DECL|connected|member|void (*connected)(struct bt_l2cap_chan *chan);
 DECL|conn|member|struct bt_conn *conn;
 DECL|credits|member|struct nano_sem credits;
-DECL|destroy|member|void (*destroy)(struct bt_l2cap_chan *chan);
+DECL|destroy|member|bt_l2cap_chan_destroy_t destroy;
 DECL|disconnected|member|void (*disconnected)(struct bt_l2cap_chan *chan);
 DECL|encrypt_change|member|void (*encrypt_change)(struct bt_l2cap_chan *chan);
 DECL|ident|member|uint8_t ident;
