@@ -1,3 +1,4 @@
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_i2c_dw_data_ask|function|static inline void _i2c_dw_data_ask(struct device *dev)
 DECL|_i2c_dw_data_read|function|static void _i2c_dw_data_read(struct device *dev)
 DECL|_i2c_dw_data_send|function|static int _i2c_dw_data_send(struct device *dev)
