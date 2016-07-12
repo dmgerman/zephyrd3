@@ -23,6 +23,8 @@ DECL|net_buf_simple_add_le32|function|void net_buf_simple_add_le32(struct net_bu
 DECL|net_buf_simple_add_u8|function|uint8_t *net_buf_simple_add_u8(struct net_buf_simple *buf, uint8_t val)
 DECL|net_buf_simple_add|function|void *net_buf_simple_add(struct net_buf_simple *buf, size_t len)
 DECL|net_buf_simple_headroom|function|size_t net_buf_simple_headroom(struct net_buf_simple *buf)
+DECL|net_buf_simple_pull_be16|function|uint16_t net_buf_simple_pull_be16(struct net_buf_simple *buf)
+DECL|net_buf_simple_pull_be32|function|uint32_t net_buf_simple_pull_be32(struct net_buf_simple *buf)
 DECL|net_buf_simple_pull_le16|function|uint16_t net_buf_simple_pull_le16(struct net_buf_simple *buf)
 DECL|net_buf_simple_pull_le32|function|uint32_t net_buf_simple_pull_le32(struct net_buf_simple *buf)
 DECL|net_buf_simple_pull_u8|function|uint8_t net_buf_simple_pull_u8(struct net_buf_simple *buf)

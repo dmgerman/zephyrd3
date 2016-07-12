@@ -24,6 +24,8 @@ DECL|net_buf_frag_add|macro|net_buf_frag_add
 DECL|net_buf_frags_len|function|static inline size_t net_buf_frags_len(struct net_buf *buf)
 DECL|net_buf_headroom|macro|net_buf_headroom
 DECL|net_buf_pool_init|macro|net_buf_pool_init
+DECL|net_buf_pull_be16|macro|net_buf_pull_be16
+DECL|net_buf_pull_be32|macro|net_buf_pull_be32
 DECL|net_buf_pull_le16|macro|net_buf_pull_le16
 DECL|net_buf_pull_le32|macro|net_buf_pull_le32
 DECL|net_buf_pull_u8|macro|net_buf_pull_u8
