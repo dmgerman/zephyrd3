@@ -1,5 +1,6 @@
 DECL|NET_BUF_FRAGS|macro|NET_BUF_FRAGS
 DECL|NET_BUF_POOL|macro|NET_BUF_POOL
+DECL|NET_BUF_SIMPLE|macro|NET_BUF_SIMPLE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__net_buf_align|macro|__net_buf_align
 DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
@@ -31,6 +32,7 @@ DECL|net_buf_push_be16|macro|net_buf_push_be16
 DECL|net_buf_push_le16|macro|net_buf_push_le16
 DECL|net_buf_push_u8|macro|net_buf_push_u8
 DECL|net_buf_push|macro|net_buf_push
+DECL|net_buf_simple_init|function|static inline void net_buf_simple_init(struct net_buf_simple *buf, size_t reserve_head)
 DECL|net_buf_simple_tail|function|static inline uint8_t *net_buf_simple_tail(struct net_buf_simple *buf)
 DECL|net_buf_simple|struct|struct net_buf_simple {
 DECL|net_buf_tailroom|macro|net_buf_tailroom
