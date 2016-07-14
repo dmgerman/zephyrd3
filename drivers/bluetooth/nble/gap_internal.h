@@ -66,6 +66,7 @@ DECL|ble_bond_info_cb_t|typedef|typedef void (*ble_bond_info_cb_t)(const struct 
 DECL|ble_get_version_cb_t|typedef|typedef void (*ble_get_version_cb_t)(const struct nble_version *ver);
 DECL|ble_rssi_report_params|struct|struct ble_rssi_report_params {
 DECL|bt_local_addr|struct|struct bt_local_addr {
+DECL|build_hash|member|uint8_t build_hash[4];
 DECL|car|member|uint8_t car;
 DECL|cb|member|ble_bond_info_cb_t cb;
 DECL|cb|member|ble_bond_info_cb_t cb;
