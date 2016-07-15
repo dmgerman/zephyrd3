@@ -1,8 +1,8 @@
 DECL|BT_L2CAP_CHAN_SEND_RESERVE|macro|BT_L2CAP_CHAN_SEND_RESERVE
-DECL|BT_L2CAP_CONFIG|enumerator|BT_L2CAP_CONFIG, /* channel in config state, BR/EDR specific */
-DECL|BT_L2CAP_CONNECTED|enumerator|BT_L2CAP_CONNECTED, /* channel ready for traffic on it */
-DECL|BT_L2CAP_CONNECT|enumerator|BT_L2CAP_CONNECT, /* channel in connecting state */
-DECL|BT_L2CAP_DISCONNECTED|enumerator|BT_L2CAP_DISCONNECTED, /* channel disconnected */
+DECL|BT_L2CAP_CONFIG|enumerator|BT_L2CAP_CONFIG,
+DECL|BT_L2CAP_CONNECTED|enumerator|BT_L2CAP_CONNECTED,
+DECL|BT_L2CAP_CONNECT|enumerator|BT_L2CAP_CONNECT,
+DECL|BT_L2CAP_DISCONNECTED|enumerator|BT_L2CAP_DISCONNECTED,
 DECL|BT_L2CAP_LE_CHAN|macro|BT_L2CAP_LE_CHAN
 DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
 DECL|_next|member|struct bt_l2cap_chan *_next;
