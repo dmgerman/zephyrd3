@@ -16,6 +16,7 @@ DECL|free|member|struct nano_fifo * const free;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|net_buf_add_be16|macro|net_buf_add_be16
+DECL|net_buf_add_be32|macro|net_buf_add_be32
 DECL|net_buf_add_le16|macro|net_buf_add_le16
 DECL|net_buf_add_le32|macro|net_buf_add_le32
 DECL|net_buf_add_u8|macro|net_buf_add_u8
