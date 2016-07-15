@@ -6,10 +6,10 @@ DECL|BT_CONN_TYPE_BR|enumerator|BT_CONN_TYPE_BR, /** BR/EDR Connection Type */
 DECL|BT_CONN_TYPE_LE|enumerator|BT_CONN_TYPE_LE, /** LE Connection Type */
 DECL|BT_LE_CONN_PARAM_DEFAULT|macro|BT_LE_CONN_PARAM_DEFAULT
 DECL|BT_LE_CONN_PARAM|macro|BT_LE_CONN_PARAM
-DECL|BT_SECURITY_FIPS|enumerator|BT_SECURITY_FIPS, /** Authenticated LE Secure Connections and
-DECL|BT_SECURITY_HIGH|enumerator|BT_SECURITY_HIGH, /** encryption and authentication (MITM). */
-DECL|BT_SECURITY_LOW|enumerator|BT_SECURITY_LOW, /** No encryption and no authentication. */
-DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM, /** encryption and no authentication (no MITM). */
+DECL|BT_SECURITY_FIPS|enumerator|BT_SECURITY_FIPS,
+DECL|BT_SECURITY_HIGH|enumerator|BT_SECURITY_HIGH,
+DECL|BT_SECURITY_LOW|enumerator|BT_SECURITY_LOW,
+DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM,
 DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|__packed|enum|typedef enum __packed {
 DECL|_next|member|struct bt_conn_cb *_next;
