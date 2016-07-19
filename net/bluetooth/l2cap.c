@@ -3,6 +3,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_MAX_LE_MPS|macro|BT_L2CAP_MAX_LE_MPS
 DECL|BT_L2CAP_MAX_LE_MTU|macro|BT_L2CAP_MAX_LE_MTU
 DECL|L2CAP_CONN_TIMEOUT|macro|L2CAP_CONN_TIMEOUT
+DECL|L2CAP_DETACH_CHAN|enumerator|L2CAP_DETACH_CHAN,
 DECL|L2CAP_DISC_TIMEOUT|macro|L2CAP_DISC_TIMEOUT
 DECL|L2CAP_LE_CREDITS_THRESHOLD|macro|L2CAP_LE_CREDITS_THRESHOLD
 DECL|L2CAP_LE_DYN_CID_END|macro|L2CAP_LE_DYN_CID_END
@@ -11,7 +12,9 @@ DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
 DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
 DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
+DECL|L2CAP_LOOKUP_CHAN|enumerator|L2CAP_LOOKUP_CHAN,
 DECL|LE_CHAN_RTX|macro|LE_CHAN_RTX
+DECL|__l2cap_chan|function|static struct bt_l2cap_le_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|__l2cap_lookup_ident|function|__l2cap_lookup_ident(struct bt_conn *conn, uint16_t ident, bool remove)
 DECL|bt_l2cap_chan_add|function|void bt_l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|bt_l2cap_chan_connect|function|int bt_l2cap_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
@@ -50,9 +53,12 @@ DECL|l2cap_chan_send_req|function|static void l2cap_chan_send_req(struct bt_l2ca
 DECL|l2cap_chan_tx_give_credits|function|static void l2cap_chan_tx_give_credits(struct bt_l2cap_le_chan *chan, uint16_t credits)
 DECL|l2cap_chan_tx_init|function|static void l2cap_chan_tx_init(struct bt_l2cap_le_chan *chan)
 DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_le_chan *chan)
+DECL|l2cap_conn_list_action|enum|enum l2cap_conn_list_action {
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
+DECL|l2cap_detach_chan|macro|l2cap_detach_chan
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_le_connect|function|static int l2cap_le_connect(struct bt_conn *conn, struct bt_l2cap_le_chan *ch, uint16_t psm)
+DECL|l2cap_lookup_chan|macro|l2cap_lookup_chan
 DECL|l2cap_lookup_ident|macro|l2cap_lookup_ident
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_remove_ident|macro|l2cap_remove_ident
