@@ -70,7 +70,7 @@ DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|data_bredr_fifo|variable|data_bredr_fifo
 DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
-DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, const uint8_t *ad, uint8_t len)
+DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, struct net_buf_simple *buf)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
