@@ -7,6 +7,7 @@ DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
 DECL|acl_data|struct|struct acl_data {
@@ -137,6 +138,7 @@ DECL|report_discovery_results|function|static void report_discovery_results(void
 DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
 DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|uint8_t resolving;
+DECL|rpa_timeout|function|static void rpa_timeout(struct nano_work *work)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_disable|function|static int set_advertise_disable(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(void)

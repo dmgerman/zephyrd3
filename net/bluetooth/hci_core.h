@@ -40,6 +40,7 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|pkts|member|struct nano_sem pkts;
 DECL|pkts|member|struct nano_sem pkts;
 DECL|random_addr|member|bt_addr_le_t random_addr;
+DECL|rpa_update|member|struct nano_delayed_work rpa_update;
 DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
