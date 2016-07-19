@@ -57,6 +57,8 @@ DECL|gpio_nrf5_config|struct|struct gpio_nrf5_config {
 DECL|gpio_nrf5_data|struct|struct gpio_nrf5_data {
 DECL|gpio_nrf5_drv_api_funcs|variable|gpio_nrf5_drv_api_funcs
 DECL|gpio_nrf5_port_isr|function|static void gpio_nrf5_port_isr(void *dev)
+DECL|gpio_nrf5_read|function|static int gpio_nrf5_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
+DECL|gpio_nrf5_write|function|static int gpio_nrf5_write(struct device *dev, int access_op, uint32_t pin, uint32_t value)
 DECL|gpiote_base_addr|member|uint32_t gpiote_base_addr;
 DECL|pin_callback_enables|member|uint32_t pin_callback_enables;
 DECL|port_base_addr|member|uint32_t port_base_addr;
