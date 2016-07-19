@@ -1,0 +1,21 @@
+DECL|mbedtls_calloc|macro|mbedtls_calloc
+DECL|mbedtls_free|macro|mbedtls_free
+DECL|mbedtls_pk_load_file|function|int mbedtls_pk_load_file( const char *path, unsigned char **buf, size_t *n )
+DECL|mbedtls_pk_parse_keyfile|function|int mbedtls_pk_parse_keyfile( mbedtls_pk_context *ctx, const char *path, const char *pwd )
+DECL|mbedtls_pk_parse_key|function|int mbedtls_pk_parse_key( mbedtls_pk_context *pk, const unsigned char *key, size_t keylen, const unsigned char *pwd, size_t pwdlen )
+DECL|mbedtls_pk_parse_public_keyfile|function|int mbedtls_pk_parse_public_keyfile( mbedtls_pk_context *ctx, const char *path )
+DECL|mbedtls_pk_parse_public_key|function|int mbedtls_pk_parse_public_key( mbedtls_pk_context *ctx, const unsigned char *key, size_t keylen )
+DECL|mbedtls_pk_parse_subpubkey|function|int mbedtls_pk_parse_subpubkey( unsigned char **p, const unsigned char *end, mbedtls_pk_context *pk )
+DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
+DECL|pk_get_ecparams|function|static int pk_get_ecparams( unsigned char **p, const unsigned char *end, mbedtls_asn1_buf *params )
+DECL|pk_get_ecpubkey|function|static int pk_get_ecpubkey( unsigned char **p, const unsigned char *end, mbedtls_ecp_keypair *key )
+DECL|pk_get_pk_alg|function|static int pk_get_pk_alg( unsigned char **p, const unsigned char *end, mbedtls_pk_type_t *pk_alg, mbedtls_asn1_buf *params )
+DECL|pk_get_rsapubkey|function|static int pk_get_rsapubkey( unsigned char **p, const unsigned char *end, mbedtls_rsa_context *rsa )
+DECL|pk_group_from_specified|function|static int pk_group_from_specified( const mbedtls_asn1_buf *params, mbedtls_ecp_group *grp )
+DECL|pk_group_id_from_group|function|static int pk_group_id_from_group( const mbedtls_ecp_group *grp, mbedtls_ecp_group_id *grp_id )
+DECL|pk_group_id_from_specified|function|static int pk_group_id_from_specified( const mbedtls_asn1_buf *params, mbedtls_ecp_group_id *grp_id )
+DECL|pk_parse_key_pkcs1_der|function|static int pk_parse_key_pkcs1_der( mbedtls_rsa_context *rsa, const unsigned char *key, size_t keylen )
+DECL|pk_parse_key_pkcs8_encrypted_der|function|static int pk_parse_key_pkcs8_encrypted_der( mbedtls_pk_context *pk, const unsigned char *key, size_t keylen, const unsigned char *pwd, size_t pwdlen )
+DECL|pk_parse_key_pkcs8_unencrypted_der|function|static int pk_parse_key_pkcs8_unencrypted_der( mbedtls_pk_context *pk, const unsigned char* key, size_t keylen )
+DECL|pk_parse_key_sec1_der|function|static int pk_parse_key_sec1_der( mbedtls_ecp_keypair *eck, const unsigned char *key, size_t keylen )
+DECL|pk_use_ecparams|function|static int pk_use_ecparams( const mbedtls_asn1_buf *params, mbedtls_ecp_group *grp )

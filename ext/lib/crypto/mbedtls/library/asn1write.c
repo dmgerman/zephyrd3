@@ -1,0 +1,16 @@
+DECL|mbedtls_asn1_store_named_data|function|mbedtls_asn1_named_data *mbedtls_asn1_store_named_data( mbedtls_asn1_named_data **head, const char *oid, size_t oid_len, const unsigned char *val, size_t val_len )
+DECL|mbedtls_asn1_write_algorithm_identifier|function|int mbedtls_asn1_write_algorithm_identifier( unsigned char **p, unsigned char *start, const char *oid, size_t oid_len, size_t par_len )
+DECL|mbedtls_asn1_write_bitstring|function|int mbedtls_asn1_write_bitstring( unsigned char **p, unsigned char *start, const unsigned char *buf, size_t bits )
+DECL|mbedtls_asn1_write_bool|function|int mbedtls_asn1_write_bool( unsigned char **p, unsigned char *start, int boolean )
+DECL|mbedtls_asn1_write_ia5_string|function|int mbedtls_asn1_write_ia5_string( unsigned char **p, unsigned char *start, const char *text, size_t text_len )
+DECL|mbedtls_asn1_write_int|function|int mbedtls_asn1_write_int( unsigned char **p, unsigned char *start, int val )
+DECL|mbedtls_asn1_write_len|function|int mbedtls_asn1_write_len( unsigned char **p, unsigned char *start, size_t len )
+DECL|mbedtls_asn1_write_mpi|function|int mbedtls_asn1_write_mpi( unsigned char **p, unsigned char *start, const mbedtls_mpi *X )
+DECL|mbedtls_asn1_write_null|function|int mbedtls_asn1_write_null( unsigned char **p, unsigned char *start )
+DECL|mbedtls_asn1_write_octet_string|function|int mbedtls_asn1_write_octet_string( unsigned char **p, unsigned char *start, const unsigned char *buf, size_t size )
+DECL|mbedtls_asn1_write_oid|function|int mbedtls_asn1_write_oid( unsigned char **p, unsigned char *start, const char *oid, size_t oid_len )
+DECL|mbedtls_asn1_write_printable_string|function|int mbedtls_asn1_write_printable_string( unsigned char **p, unsigned char *start, const char *text, size_t text_len )
+DECL|mbedtls_asn1_write_raw_buffer|function|int mbedtls_asn1_write_raw_buffer( unsigned char **p, unsigned char *start, const unsigned char *buf, size_t size )
+DECL|mbedtls_asn1_write_tag|function|int mbedtls_asn1_write_tag( unsigned char **p, unsigned char *start, unsigned char tag )
+DECL|mbedtls_calloc|macro|mbedtls_calloc
+DECL|mbedtls_free|macro|mbedtls_free
