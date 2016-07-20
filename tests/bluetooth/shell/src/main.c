@@ -118,7 +118,7 @@ DECL|vnd_long_value1|variable|vnd_long_value1
 DECL|vnd_long_value2|variable|vnd_long_value2
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
-DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err)
+DECL|write_func|function|static void write_func(struct bt_conn *conn, uint8_t err, struct bt_gatt_write_params *params)
 DECL|write_long_vnd|function|static ssize_t write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_params|variable|write_params
 DECL|write_vnd|function|static ssize_t write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
