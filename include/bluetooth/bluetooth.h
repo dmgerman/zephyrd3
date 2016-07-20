@@ -12,17 +12,21 @@ DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
 DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
 DECL|addr|member|bt_addr_t addr;
+DECL|addr|member|bt_addr_t addr;
 DECL|bt_addr_le_to_str|function|static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str, size_t len)
 DECL|bt_addr_to_str|function|static inline int bt_addr_to_str(const bt_addr_t *addr, char *str, size_t len)
 DECL|bt_br_discovery_cb_t|typedef|typedef void bt_br_discovery_cb_t(struct bt_br_discovery_result *results,
 DECL|bt_br_discovery_param|struct|struct bt_br_discovery_param {
 DECL|bt_br_discovery_result|struct|struct bt_br_discovery_result {
+DECL|bt_br_oob|struct|struct bt_br_oob {
 DECL|bt_data|struct|struct bt_data {
 DECL|bt_le_adv_param|struct|struct bt_le_adv_param {
+DECL|bt_le_oob|struct|struct bt_le_oob {
 DECL|bt_le_scan_cb_t|typedef|typedef void bt_le_scan_cb_t(const bt_addr_le_t *addr, int8_t rssi,
 DECL|bt_le_scan_param|struct|struct bt_le_scan_param {
 DECL|bt_ready_cb_t|typedef|typedef void (*bt_ready_cb_t)(int err);
 DECL|cod|member|uint8_t cod[3];
+DECL|connectable_addr|member|bt_addr_le_t connectable_addr;
 DECL|data_len|member|uint8_t data_len;
 DECL|data|member|const uint8_t *data;
 DECL|eir|member|uint8_t eir[240];

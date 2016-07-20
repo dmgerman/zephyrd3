@@ -8,6 +8,7 @@ DECL|bt_addr_le_str|function|static const char *bt_addr_le_str(const bt_addr_le_
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
+DECL|bt_le_oob_get_local|function|int bt_le_oob_get_local(struct bt_le_oob *oob)
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_ready_cb|variable|bt_ready_cb
