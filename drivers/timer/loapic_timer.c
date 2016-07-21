@@ -31,7 +31,11 @@ DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
 DECL|programmed_cycles|variable|programmed_cycles
 DECL|programmed_full_ticks|variable|programmed_full_ticks
+DECL|reg_timer_cfg_save|variable|reg_timer_cfg_save
+DECL|reg_timer_save|variable|reg_timer_save
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
+DECL|sys_clock_resume|function|static int sys_clock_resume(struct device *dev, int pm_policy)
+DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev, int pm_policy)
 DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
