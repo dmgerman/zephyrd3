@@ -1,0 +1,5 @@
+DECL|disk_initialize|function|DSTATUS disk_initialize(uint8_t pdrv)
+DECL|disk_ioctl|function|DRESULT disk_ioctl(uint8_t pdrv, uint8_t cmd, void *buff)
+DECL|disk_read|function|DRESULT disk_read(uint8_t pdrv, uint8_t *buff, unsigned long sector, uint32_t count)
+DECL|disk_status|function|DSTATUS disk_status(uint8_t pdrv)
+DECL|disk_write|function|DRESULT disk_write(uint8_t pdrv, const uint8_t *buff, unsigned long sector, uint32_t count)

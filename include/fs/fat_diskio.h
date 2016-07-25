@@ -1,0 +1,1 @@
+DECL|_FAT_DISKIO_H_|macro|_FAT_DISKIO_H_
