@@ -1,6 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|REG_CONF_PORT0|macro|REG_CONF_PORT0
 DECL|REG_CONG_PORT1|macro|REG_CONG_PORT1
 DECL|REG_INPUT_LATCH_PORT0|macro|REG_INPUT_LATCH_PORT0
@@ -24,6 +21,7 @@ DECL|REG_PUD_EN_PORT0|macro|REG_PUD_EN_PORT0
 DECL|REG_PUD_EN_PORT1|macro|REG_PUD_EN_PORT1
 DECL|REG_PUD_SEL_PORT0|macro|REG_PUD_SEL_PORT0
 DECL|REG_PUD_SEL_PORT1|macro|REG_PUD_SEL_PORT1
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_has_i2c_master|function|static inline int _has_i2c_master(struct device *dev)
 DECL|_read_port_regs|function|static int _read_port_regs(struct device *dev, uint8_t reg, union gpio_pcal9535a_port_data *buf)
 DECL|_setup_pin_dir|function|static int _setup_pin_dir(struct device *dev, int access_op, uint32_t pin, int flags)
