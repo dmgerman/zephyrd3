@@ -1,17 +1,25 @@
+DECL|baudr|member|uint32_t baudr;
 DECL|cfg|member|qm_spi_config_t cfg;
 DECL|config_to_bmode|function|static inline qm_spi_bmode_t config_to_bmode(uint8_t mode)
 DECL|cs_pin|member|uint32_t cs_pin;
 DECL|cs_port|member|char *cs_port;
+DECL|ctrlr0|member|uint32_t ctrlr0;
+DECL|ctx_save|member|struct spi_context_t ctx_save;
 DECL|dev|member|struct device *dev;
 DECL|frame_size_to_dfs|function|static inline uint8_t frame_size_to_dfs(qm_spi_frame_size_t frame_size)
 DECL|gpio_cs_init|function|static struct device *gpio_cs_init(struct spi_qmsi_config *config)
 DECL|gpio_cs|member|struct device *gpio_cs;
+DECL|int_spi_mask|member|uint32_t int_spi_mask;
 DECL|loopback|member|bool loopback;
 DECL|pending_transfers|variable|pending_transfers
 DECL|pending_transfer|struct|struct pending_transfer {
 DECL|rc|member|int rc;
 DECL|sem|member|struct nano_sem sem;
+DECL|ser|member|uint32_t ser;
+DECL|spi_context_t|struct|struct spi_context_t {
 DECL|spi_control_cs|function|static void spi_control_cs(struct device *dev, bool active)
+DECL|spi_master_resume_device|function|static int spi_master_resume_device(struct device *dev, int pm_policy)
+DECL|spi_master_suspend_device|function|static int spi_master_suspend_device(struct device *dev, int pm_policy)
 DECL|spi_qmsi_api|variable|spi_qmsi_api
 DECL|spi_qmsi_configure|function|static int spi_qmsi_configure(struct device *dev,struct spi_config *config)
 DECL|spi_qmsi_config|struct|struct spi_qmsi_config {
