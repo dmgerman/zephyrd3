@@ -7,6 +7,7 @@ DECL|BT_DEV_ID_STATIC_RANDOM|enumerator|BT_DEV_ID_STATIC_RANDOM,
 DECL|BT_DEV_INQUIRY|enumerator|BT_DEV_INQUIRY,
 DECL|BT_DEV_ISCAN|enumerator|BT_DEV_ISCAN,
 DECL|BT_DEV_KEEP_ADVERTISING|enumerator|BT_DEV_KEEP_ADVERTISING,
+DECL|BT_DEV_NUM_FLAGS|enumerator|BT_DEV_NUM_FLAGS,
 DECL|BT_DEV_PSCAN|enumerator|BT_DEV_PSCAN,
 DECL|BT_DEV_PUB_KEY_BUSY|enumerator|BT_DEV_PUB_KEY_BUSY,
 DECL|BT_DEV_READY|enumerator|BT_DEV_READY,
@@ -24,7 +25,6 @@ DECL|cmd_tx_queue|member|struct nano_fifo cmd_tx_queue;
 DECL|drv|member|struct bt_driver *drv;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
-DECL|flags|member|atomic_t flags[1];
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|id_addr|member|bt_addr_le_t id_addr;

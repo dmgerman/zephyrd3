@@ -7,6 +7,7 @@ DECL|BT_KEYS_LINK_KEY|enumerator|BT_KEYS_LINK_KEY = BIT(6),
 DECL|BT_KEYS_LOCAL_CSRK|enumerator|BT_KEYS_LOCAL_CSRK = BIT(3),
 DECL|BT_KEYS_LTK_P256|enumerator|BT_KEYS_LTK_P256 = BIT(5),
 DECL|BT_KEYS_LTK|enumerator|BT_KEYS_LTK = BIT(2),
+DECL|BT_KEYS_NUM_FLAGS|enumerator|BT_KEYS_NUM_FLAGS,
 DECL|BT_KEYS_REMOTE_CSRK|enumerator|BT_KEYS_REMOTE_CSRK = BIT(4),
 DECL|BT_KEYS_SLAVE_LTK|enumerator|BT_KEYS_SLAVE_LTK = BIT(0),
 DECL|addr|member|bt_addr_le_t addr;
@@ -18,7 +19,6 @@ DECL|bt_ltk|struct|struct bt_ltk {
 DECL|cnt|member|uint32_t cnt;
 DECL|ediv|member|uint16_t ediv;
 DECL|enc_size|member|uint8_t enc_size;
-DECL|flags|member|atomic_t flags;
 DECL|irk|member|struct bt_irk irk;
 DECL|keys|member|uint16_t keys;
 DECL|link_key|member|struct bt_link_key link_key;

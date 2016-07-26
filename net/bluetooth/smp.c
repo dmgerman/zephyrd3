@@ -29,6 +29,7 @@ DECL|SMP_FLAG_SC|enumerator|SMP_FLAG_SC, /* if LE Secure Connections is used */
 DECL|SMP_FLAG_SEC_REQ|enumerator|SMP_FLAG_SEC_REQ, /* if Security Request was sent/received */
 DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
+DECL|SMP_NUM_FLAGS|enumerator|SMP_NUM_FLAGS,
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
@@ -67,7 +68,6 @@ DECL|dhkey|member|uint8_t dhkey[32];
 DECL|display_passkey|function|static uint8_t display_passkey(struct bt_smp *smp)
 DECL|expect_len|member|uint8_t expect_len;
 DECL|e|member|uint8_t e[16];
-DECL|flags|member|atomic_t flags;
 DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
 DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|gen_method_sc|variable|gen_method_sc

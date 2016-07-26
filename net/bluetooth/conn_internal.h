@@ -8,6 +8,7 @@ DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
 DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
 DECL|BT_CONN_DISCONNECTED|enumerator|BT_CONN_DISCONNECTED,
 DECL|BT_CONN_DISCONNECT|enumerator|BT_CONN_DISCONNECT,
+DECL|BT_CONN_NUM_FLAGS|enumerator|BT_CONN_NUM_FLAGS,
 DECL|BT_CONN_USER|enumerator|BT_CONN_USER, /* user I/O when pairing */
 DECL|LMP_MAX_PAGES|macro|LMP_MAX_PAGES
 DECL|__packed|enum|typedef enum __packed {
@@ -24,7 +25,6 @@ DECL|encrypt|member|uint8_t encrypt;
 DECL|err|member|uint8_t err;
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[LMP_MAX_PAGES][8];
-DECL|flags|member|atomic_t flags[1];
 DECL|handle|member|uint16_t handle;
 DECL|init_addr|member|bt_addr_le_t init_addr;
 DECL|interval_max|member|uint16_t interval_max;
