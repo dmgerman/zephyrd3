@@ -11,8 +11,6 @@ DECL|NFILES|enumerator|NFILES /* total number of file names */
 DECL|NUSERFILES|enumerator|NUSERFILES, /* number of user-provided file names */
 DECL|OFILE|enumerator|OFILE, /* output file */
 DECL|O_BINARY|macro|O_BINARY
-DECL|PRINTF|macro|PRINTF
-DECL|PRINTF|macro|PRINTF
 DECL|SHORT_USAGE|enumerator|enum { SHORT_USAGE, LONG_USAGE };
 DECL|UNSPECIFIED_INT_VECTOR|macro|UNSPECIFIED_INT_VECTOR
 DECL|UNSPECIFIED_IRQ|macro|UNSPECIFIED_IRQ
@@ -20,6 +18,7 @@ DECL|UNSPECIFIED_PRIORITY|macro|UNSPECIFIED_PRIORITY
 DECL|__packed|macro|__packed
 DECL|clean_exit|function|static void clean_exit(int exit_code)
 DECL|close_files|function|static void close_files(void)
+DECL|debug|function|static void debug(const char *format, ...)
 DECL|dpl|member|unsigned int dpl;
 DECL|fds|variable|fds
 DECL|filenames|variable|filenames
@@ -52,4 +51,5 @@ DECL|validate_irq|function|static void validate_irq(void)
 DECL|validate_priority|function|static void validate_priority(void)
 DECL|validate_vector_id|function|static void validate_vector_id(void)
 DECL|vector_id|member|unsigned int vector_id;
+DECL|verbose|variable|verbose
 DECL|version|variable|version
