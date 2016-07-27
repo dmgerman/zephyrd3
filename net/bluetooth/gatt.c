@@ -45,11 +45,9 @@ DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
 DECL|connected_cb|function|static uint8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|data|member|const void *data;
-DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|disconnected_cb|function|static uint8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|uint16_t end_handle;
-DECL|func|member|bt_gatt_rsp_func_t func;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_exec_write|function|static int gatt_exec_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
@@ -64,16 +62,12 @@ DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_
 DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|get_service_handles|function|static uint8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
-DECL|handle|member|uint16_t handle;
-DECL|length|member|uint16_t length;
 DECL|len|member|uint16_t len;
 DECL|notify_cb|function|static uint8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
-DECL|offset|member|uint16_t offset;
 DECL|params|member|struct bt_gatt_indicate_params *params;
 DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, uint16_t length)
 DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, uint16_t length)
-DECL|prepare_write_data|struct|struct prepare_write_data {
 DECL|properties|member|uint8_t properties;
 DECL|read_included_uuid_cb|function|static void read_included_uuid_cb(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|read_included_uuid|function|static int read_included_uuid(struct bt_conn *conn, struct bt_gatt_discover_params *params)
