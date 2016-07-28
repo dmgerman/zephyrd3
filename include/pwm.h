@@ -14,17 +14,11 @@ DECL|pwm_pin_set_duty_cycle|function|static inline int pwm_pin_set_duty_cycle(st
 DECL|pwm_pin_set_period|function|static inline int pwm_pin_set_period(struct device *dev, uint32_t pwm, uint32_t period)
 DECL|pwm_pin_set_phase|function|static inline int pwm_pin_set_phase(struct device *dev, uint32_t pwm, uint8_t phase)
 DECL|pwm_pin_set_values|function|static inline int pwm_pin_set_values(struct device *dev, uint32_t pwm, uint32_t on, uint32_t off)
-DECL|pwm_resume_dev_t|typedef|typedef int (*pwm_resume_dev_t)(struct device *dev);
-DECL|pwm_resume|function|static inline int pwm_resume(struct device *dev)
 DECL|pwm_set_duty_cycle_t|typedef|typedef int (*pwm_set_duty_cycle_t)(struct device *dev, int access_op,
 DECL|pwm_set_period_t|typedef|typedef int (*pwm_set_period_t)(struct device *dev, int access_op,
 DECL|pwm_set_phase_t|typedef|typedef int (*pwm_set_phase_t)(struct device *dev, int access_op,
 DECL|pwm_set_values_t|typedef|typedef int (*pwm_set_values_t)(struct device *dev, int access_op,
-DECL|pwm_suspend_dev_t|typedef|typedef int (*pwm_suspend_dev_t)(struct device *dev);
-DECL|pwm_suspend|function|static inline int pwm_suspend(struct device *dev)
-DECL|resume|member|pwm_resume_dev_t resume;
 DECL|set_duty_cycle|member|pwm_set_duty_cycle_t set_duty_cycle;
 DECL|set_period|member|pwm_set_period_t set_period;
 DECL|set_phase|member|pwm_set_phase_t set_phase;
 DECL|set_values|member|pwm_set_values_t set_values;
-DECL|suspend|member|pwm_suspend_dev_t suspend;

@@ -17,7 +17,5 @@ DECL|pwm_pca9685_0_drvdata|variable|pwm_pca9685_0_drvdata
 DECL|pwm_pca9685_configure|function|static int pwm_pca9685_configure(struct device *dev, int access_op, uint32_t pwm, int flags)
 DECL|pwm_pca9685_drv_api_funcs|variable|pwm_pca9685_drv_api_funcs
 DECL|pwm_pca9685_init|function|int pwm_pca9685_init(struct device *dev)
-DECL|pwm_pca9685_resume|function|static int pwm_pca9685_resume(struct device *dev)
 DECL|pwm_pca9685_set_duty_cycle|function|static int pwm_pca9685_set_duty_cycle(struct device *dev, int access_op, uint32_t pwm, uint8_t duty)
 DECL|pwm_pca9685_set_values|function|static int pwm_pca9685_set_values(struct device *dev, int access_op, uint32_t pwm, uint32_t on, uint32_t off)
-DECL|pwm_pca9685_suspend|function|static int pwm_pca9685_suspend(struct device *dev)

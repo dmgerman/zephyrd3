@@ -20,4 +20,3 @@ DECL|pwm_ftm_set_duty_cycle|function|static int pwm_ftm_set_duty_cycle(struct de
 DECL|pwm_ftm_set_phase|function|static int pwm_ftm_set_phase(struct device *dev, int access_op, uint32_t channel, uint8_t phase)
 DECL|pwm_ftm_set_values|function|static int pwm_ftm_set_values(struct device *dev, int access_op, uint32_t channel, uint32_t on, uint32_t off)
 DECL|pwm_ftm_suspend|function|static int pwm_ftm_suspend(struct device *dev, int pm_policy)
-DECL|toberemoved|function|static int toberemoved(struct device *dev)

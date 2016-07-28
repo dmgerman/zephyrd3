@@ -13,9 +13,7 @@ DECL|pwm_dw_configure|function|static int pwm_dw_configure(struct device *dev, i
 DECL|pwm_dw_config|struct|struct pwm_dw_config {
 DECL|pwm_dw_drv_api_funcs|variable|pwm_dw_drv_api_funcs
 DECL|pwm_dw_init|function|int pwm_dw_init(struct device *dev)
-DECL|pwm_dw_resume|function|static int pwm_dw_resume(struct device *dev)
 DECL|pwm_dw_set_duty_cycle|function|static int pwm_dw_set_duty_cycle(struct device *dev, int access_op, uint32_t pwm, uint8_t duty)
 DECL|pwm_dw_set_values|function|static int pwm_dw_set_values(struct device *dev, int access_op, uint32_t pwm, uint32_t on, uint32_t off)
-DECL|pwm_dw_suspend|function|static int pwm_dw_suspend(struct device *dev)
 DECL|pwm_dw_timer_base_addr|function|static inline int pwm_dw_timer_base_addr(struct device *dev, uint32_t timer)
 DECL|pwm_dw_timer_ldcnt2_addr|function|static inline int pwm_dw_timer_ldcnt2_addr(struct device *dev, uint32_t timer)
