@@ -20,10 +20,8 @@ DECL|spi_qmsi_mst_0_config|variable|spi_qmsi_mst_0_config
 DECL|spi_qmsi_mst_0_runtime|variable|spi_qmsi_mst_0_runtime
 DECL|spi_qmsi_mst_1_config|variable|spi_qmsi_mst_1_config
 DECL|spi_qmsi_mst_1_runtime|variable|spi_qmsi_mst_1_runtime
-DECL|spi_qmsi_resume|function|static int spi_qmsi_resume(struct device *dev)
 DECL|spi_qmsi_runtime|struct|struct spi_qmsi_runtime {
 DECL|spi_qmsi_slave_select|function|static int spi_qmsi_slave_select(struct device *dev, uint32_t slave)
-DECL|spi_qmsi_suspend|function|static int spi_qmsi_suspend(struct device *dev)
 DECL|spi_qmsi_transceive|function|static int spi_qmsi_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
 DECL|spi|member|qm_spi_t spi;
 DECL|sync|member|device_sync_call_t sync;

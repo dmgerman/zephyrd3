@@ -25,4 +25,3 @@ DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *d
 DECL|spi_intel_setup|macro|spi_intel_setup
 DECL|spi_intel_suspend|function|static int spi_intel_suspend(struct device *dev, int pm_policy)
 DECL|spi_intel_transceive|function|static int spi_intel_transceive(struct device *dev,const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
-DECL|toberemoved|function|static int toberemoved(struct device *dev)

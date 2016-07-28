@@ -23,10 +23,8 @@ DECL|ss_spi_qmsi_api|variable|ss_spi_qmsi_api
 DECL|ss_spi_qmsi_configure|function|static int ss_spi_qmsi_configure(struct device *dev, struct spi_config *config)
 DECL|ss_spi_qmsi_config|struct|struct ss_spi_qmsi_config {
 DECL|ss_spi_qmsi_init|function|static int ss_spi_qmsi_init(struct device *dev)
-DECL|ss_spi_qmsi_resume|function|static int ss_spi_qmsi_resume(struct device *dev)
 DECL|ss_spi_qmsi_runtime|struct|struct ss_spi_qmsi_runtime {
 DECL|ss_spi_qmsi_slave_select|function|static int ss_spi_qmsi_slave_select(struct device *dev, uint32_t slave)
-DECL|ss_spi_qmsi_suspend|function|static int ss_spi_qmsi_suspend(struct device *dev)
 DECL|ss_spi_qmsi_transceive|function|static int ss_spi_qmsi_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
 DECL|ss_spi_rx_isr|function|static void ss_spi_rx_isr(void *arg)
 DECL|ss_spi_tx_isr|function|static void ss_spi_tx_isr(void *arg)

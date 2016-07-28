@@ -31,4 +31,3 @@ DECL|spi_k64_slave_select|function|static int spi_k64_slave_select(struct device
 DECL|spi_k64_start|function|static inline void spi_k64_start(struct device *dev)
 DECL|spi_k64_suspend|function|static int spi_k64_suspend(struct device *dev, int pm_policy)
 DECL|spi_k64_transceive|function|static int spi_k64_transceive(struct device *dev,const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
-DECL|toberemoved|function|static int toberemoved(struct device *dev)
