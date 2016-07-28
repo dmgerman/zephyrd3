@@ -13,8 +13,6 @@ DECL|i2c_qmsi_ss_configure|function|static int i2c_qmsi_ss_configure(struct devi
 DECL|i2c_qmsi_ss_driver_data|struct|struct i2c_qmsi_ss_driver_data {
 DECL|i2c_qmsi_ss_init|function|static int i2c_qmsi_ss_init(struct device *dev)
 DECL|i2c_qmsi_ss_isr|function|static void i2c_qmsi_ss_isr(void *arg)
-DECL|i2c_qmsi_ss_resume|function|static int i2c_qmsi_ss_resume(struct device *dev)
-DECL|i2c_qmsi_ss_suspend|function|static int i2c_qmsi_ss_suspend(struct device *dev)
 DECL|i2c_qmsi_ss_transfer|function|static int i2c_qmsi_ss_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t addr)
 DECL|instance|member|qm_ss_i2c_t instance; /* Controller instance. */
 DECL|irq_cfg|member|void (*irq_cfg)(void);

@@ -15,7 +15,5 @@ DECL|i2c_dw_initialize|function|int i2c_dw_initialize(struct device *port)
 DECL|i2c_dw_isr|function|void i2c_dw_isr(void *arg)
 DECL|i2c_dw_pci_setup|function|static inline int i2c_dw_pci_setup(struct device *dev)
 DECL|i2c_dw_pci_setup|macro|i2c_dw_pci_setup
-DECL|i2c_dw_resume|function|static int i2c_dw_resume(struct device *dev)
 DECL|i2c_dw_runtime_configure|function|static int i2c_dw_runtime_configure(struct device *dev, uint32_t config)
-DECL|i2c_dw_suspend|function|static int i2c_dw_suspend(struct device *dev)
 DECL|i2c_dw_transfer|function|static int i2c_dw_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t slave_address)
