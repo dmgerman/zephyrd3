@@ -1,0 +1,6 @@
+DECL|nats_connect|function|int nats_connect(struct nats_clapp_ctx_t *ctx, char *client_name, int verbose)
+DECL|nats_ping_pong|function|int nats_ping_pong(struct nats_clapp_ctx_t *ctx)
+DECL|nats_pub|function|int nats_pub(struct nats_clapp_ctx_t *ctx, char *subject, char *reply_to, char *payload)
+DECL|nats_read_ok|function|int nats_read_ok(struct nats_clapp_ctx_t *ctx)
+DECL|nats_sub|function|int nats_sub(struct nats_clapp_ctx_t *ctx, char *subject, char *queue_grp, char *sid)
+DECL|nats_unsub|function|int nats_unsub(struct nats_clapp_ctx_t *ctx, char *sid, int max_msgs)
