@@ -20,8 +20,9 @@ DECL|spi_intel_data_port_0|variable|spi_intel_data_port_0
 DECL|spi_intel_data_port_1|variable|spi_intel_data_port_1
 DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)
 DECL|spi_intel_isr|function|void spi_intel_isr(void *arg)
-DECL|spi_intel_resume|function|static int spi_intel_resume(struct device *dev)
+DECL|spi_intel_resume|function|static int spi_intel_resume(struct device *dev, int pm_policy)
 DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *dev)
 DECL|spi_intel_setup|macro|spi_intel_setup
-DECL|spi_intel_suspend|function|static int spi_intel_suspend(struct device *dev)
+DECL|spi_intel_suspend|function|static int spi_intel_suspend(struct device *dev, int pm_policy)
 DECL|spi_intel_transceive|function|static int spi_intel_transceive(struct device *dev,const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
+DECL|toberemoved|function|static int toberemoved(struct device *dev)
