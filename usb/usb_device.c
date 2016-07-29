@@ -1,9 +1,6 @@
 DECL|CONF_DESC_bConfigurationValue|macro|CONF_DESC_bConfigurationValue
 DECL|CONF_DESC_bmAttributes|macro|CONF_DESC_bmAttributes
 DECL|CONF_DESC_wTotalLength|macro|CONF_DESC_wTotalLength
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|DESC_bDescriptorType|macro|DESC_bDescriptorType
 DECL|DESC_bLength|macro|DESC_bLength
 DECL|ENDP_DESC_bEndpointAddress|macro|ENDP_DESC_bEndpointAddress
@@ -13,6 +10,8 @@ DECL|INTF_DESC_bAlternateSetting|macro|INTF_DESC_bAlternateSetting
 DECL|MAX_DESC_HANDLERS|macro|MAX_DESC_HANDLERS
 DECL|MAX_NUM_REQ_HANDLERS|macro|MAX_NUM_REQ_HANDLERS
 DECL|MAX_STD_REQ_MSG_SIZE|macro|MAX_STD_REQ_MSG_SIZE
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|SYS_LOG_NO_NEWLINE|macro|SYS_LOG_NO_NEWLINE
 DECL|USB_CONTROL_IN_EP0|macro|USB_CONTROL_IN_EP0
 DECL|USB_CONTROL_OUT_EP0|macro|USB_CONTROL_OUT_EP0
 DECL|configuration|member|uint8_t configuration;
