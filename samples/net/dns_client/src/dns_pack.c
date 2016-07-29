@@ -1,0 +1,7 @@
+DECL|dns_find_null|function|int dns_find_null(int *qname_size, uint8_t *buf, int size)
+DECL|dns_msg_pack_qname|function|int dns_msg_pack_qname(int *len, uint8_t *buf, int size, char *domain_name)
+DECL|dns_msg_pack_query_header|function|static int dns_msg_pack_query_header(uint8_t *buf, int size, uint16_t id)
+DECL|dns_msg_pack_query|function|int dns_msg_pack_query(struct app_buf_t *buf, char *domain_name,uint16_t id, enum dns_rr_type qtype)
+DECL|dns_unpack_answer|function|int dns_unpack_answer(struct dns_msg_t *dns_msg, int dname_ptr)
+DECL|dns_unpack_response_header|function|int dns_unpack_response_header(struct dns_msg_t *msg, int src_id)
+DECL|dns_unpack_response_query|function|int dns_unpack_response_query(struct dns_msg_t *dns_msg)

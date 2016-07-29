@@ -1,0 +1,6 @@
+DECL|dns_print_label|function|int dns_print_label(uint8_t *label, int size)
+DECL|dns_print_msg_header|function|int dns_print_msg_header(uint8_t *header, int size)
+DECL|dns_print_msg_query|function|int dns_print_msg_query(uint8_t *qname, int qname_size, int qtype, int qclass)
+DECL|dns_print_readable_msg_label|function|int dns_print_readable_msg_label(int offset, uint8_t *buf, int size)
+DECL|print_app_buf|function|int print_app_buf(struct app_buf_t *buf)
+DECL|print_buf|function|int print_buf(uint8_t *buf, size_t size)
