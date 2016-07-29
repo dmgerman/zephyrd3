@@ -1,11 +1,9 @@
 DECL|CDC_ACM_BUFFER_SIZE|macro|CDC_ACM_BUFFER_SIZE
 DECL|CDC_ACM_DEFAUL_BAUDRATE|macro|CDC_ACM_DEFAUL_BAUDRATE
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|HIGH_BYTE|macro|HIGH_BYTE
 DECL|LOW_BYTE|macro|LOW_BYTE
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|cb|member|uart_irq_callback_t cb;
 DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct device *dev, uint32_t baudrate)
 DECL|cdc_acm_bulk_in|function|static void cdc_acm_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
