@@ -1,8 +1,6 @@
 DECL|COMBINE_MODE_SUPPORT|macro|COMBINE_MODE_SUPPORT
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|MAX_PWM_OUT|macro|MAX_PWM_OUT
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|pwm_ftm_0_cfg|variable|pwm_ftm_0_cfg
 DECL|pwm_ftm_0_drvdata|variable|pwm_ftm_0_drvdata
 DECL|pwm_ftm_1_cfg|variable|pwm_ftm_1_cfg
