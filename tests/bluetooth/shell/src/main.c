@@ -6,6 +6,7 @@ DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HELP_ADDR_LE|macro|HELP_ADDR_LE
 DECL|HELP_NONE|macro|HELP_NONE
 DECL|MAX_DATA|macro|MAX_DATA
+DECL|MY_SHELL_MODULE|macro|MY_SHELL_MODULE
 DECL|ad_discov|variable|ad_discov
 DECL|appearance_value|variable|appearance_value
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)

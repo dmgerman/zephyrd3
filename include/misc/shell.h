@@ -1,6 +1,12 @@
+DECL|SHELL_REGISTER|macro|SHELL_REGISTER
+DECL|SHELL_REGISTER|macro|SHELL_REGISTER
 DECL|cb|member|shell_cmd_function_t cb;
 DECL|cmd_name|member|const char *cmd_name;
+DECL|commands|member|const struct shell_cmd *commands;
 DECL|help|member|const char *help;
+DECL|module_name|member|const char *module_name;
 DECL|shell_cmd_function_t|typedef|typedef int (*shell_cmd_function_t)(int argc, char *argv[]);
 DECL|shell_cmd|struct|struct shell_cmd {
+DECL|shell_module|struct|struct shell_module {
 DECL|shell_prompt_function_t|typedef|typedef const char *(*shell_prompt_function_t)(void);
+DECL|shell_run|function|static inline int shell_run(struct device *dev) { return 0; }
