@@ -1,6 +1,7 @@
 DECL|BFILE|enumerator|BFILE, /* allocated interrupt vector bitmap file */
 DECL|EXECFILE|enumerator|EXECFILE = NUSERFILES, /* for name of executable */
 DECL|IFILE|enumerator|IFILE = 0, /* input file */
+DECL|KERNEL_CODE_SEG_SELECTOR|macro|KERNEL_CODE_SEG_SELECTOR
 DECL|LONG_USAGE|enumerator|enum { SHORT_USAGE, LONG_USAGE };
 DECL|MAX_IRQS|macro|MAX_IRQS
 DECL|MAX_NUM_VECTORS|macro|MAX_NUM_VECTORS
@@ -31,6 +32,7 @@ DECL|genidt_header_s|struct|struct genidt_header_s {
 DECL|genidt_header|variable|genidt_header
 DECL|get_exec_name|function|static void get_exec_name(char *pathname)
 DECL|get_options|function|static void get_options(int argc, char *argv[])
+DECL|idt_entry_create|function|static void idt_entry_create(uint64_t *pIdtEntry, uint32_t routine, unsigned int dpl)
 DECL|irq|member|unsigned int irq;
 DECL|isr|member|uint32_t isr;
 DECL|main|function|int main(int argc, char *argv[])

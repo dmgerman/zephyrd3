@@ -1,0 +1,4 @@
+DECL|_SpuriousIntHandler|variable|_SpuriousIntHandler
+DECL|_SpuriousIntNoErrCodeHandler|variable|_SpuriousIntNoErrCodeHandler
+DECL|_dummy_exception_vector_stub|variable|_dummy_exception_vector_stub
+DECL|_dummy_spurious_interrupt|variable|_dummy_spurious_interrupt
