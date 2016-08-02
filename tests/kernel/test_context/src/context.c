@@ -1,4 +1,3 @@
-DECL|CONNECT_EXCEPTIONS|macro|CONNECT_EXCEPTIONS
 DECL|EXEC_CTX_TYPE_CMD|macro|EXEC_CTX_TYPE_CMD
 DECL|FIBER_PRIORITY|macro|FIBER_PRIORITY
 DECL|FIBER_STACKSIZE|macro|FIBER_STACKSIZE
@@ -18,8 +17,6 @@ DECL|delayed_fiber|function|void delayed_fiber(int num, int unused)
 DECL|disable_interrupt_func|typedef|typedef int (* disable_interrupt_func)(int);
 DECL|enable_interrupt_func|typedef|typedef void (* enable_interrupt_func)(int);
 DECL|error|member|int error; /* error value (if any) */
-DECL|excHandlerExecuted|variable|excHandlerExecuted
-DECL|exc_divide_error_handler|function|void exc_divide_error_handler(NANO_ESF *pEsf)
 DECL|fiberDetectedError|variable|fiberDetectedError
 DECL|fiberEntry|function|static void fiberEntry(int task_thread_id, int arg1)
 DECL|fiberEvidence|variable|fiberEvidence
