@@ -8,11 +8,18 @@ DECL|LOAPIC_TIMER_DIVBY_64|macro|LOAPIC_TIMER_DIVBY_64
 DECL|LOAPIC_TIMER_DIVBY_8|macro|LOAPIC_TIMER_DIVBY_8
 DECL|LOAPIC_TIMER_DIVBY_MASK|macro|LOAPIC_TIMER_DIVBY_MASK
 DECL|LOAPIC_TIMER_PERIODIC|macro|LOAPIC_TIMER_PERIODIC
+DECL|TIMER_IRQ_PRIORITY|macro|TIMER_IRQ_PRIORITY
+DECL|TIMER_IRQ_PRIORITY|macro|TIMER_IRQ_PRIORITY
+DECL|TIMER_IRQ|macro|TIMER_IRQ
+DECL|TIMER_IRQ|macro|TIMER_IRQ
 DECL|TIMER_MODE_ONE_SHOT|macro|TIMER_MODE_ONE_SHOT
 DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
+DECL|_REG_TIMER_CCR|macro|_REG_TIMER_CCR
 DECL|_REG_TIMER_CFG|macro|_REG_TIMER_CFG
 DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
+DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
+DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
@@ -23,9 +30,8 @@ DECL|current_count_register_get|function|static inline uint32_t current_count_re
 DECL|cycles_per_max_ticks|variable|cycles_per_max_ticks
 DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
-DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
 DECL|initial_count_register_get|function|static inline uint32_t initial_count_register_get(void)
-DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count /* count from which timer is to count down */ )
+DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count)
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
@@ -39,7 +45,5 @@ DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev,
 DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
-DECL|timer_interrupt_mask|function|static inline void timer_interrupt_mask(void)
-DECL|timer_interrupt_unmask|function|static inline void timer_interrupt_unmask(void)
 DECL|timer_known_to_have_expired|variable|timer_known_to_have_expired
 DECL|timer_mode|variable|timer_mode

@@ -53,14 +53,12 @@ DECL|MP_ENTRY_IOAPIC|macro|MP_ENTRY_IOAPIC
 DECL|MP_ENTRY_IOINTERRUPT|macro|MP_ENTRY_IOINTERRUPT
 DECL|MP_ENTRY_LOINTERRUPT|macro|MP_ENTRY_LOINTERRUPT
 DECL|STATUS_PEND|macro|STATUS_PEND
-DECL|_loapic_disable|function|void _loapic_disable(void)
-DECL|_loapic_enable|function|void _loapic_enable(void)
-DECL|_loapic_init|function|int _loapic_init(struct device *unused)
+DECL|__irq_controller_isr_vector_get|function|int __irq_controller_isr_vector_get(void)
+DECL|_loapic_init|function|static int _loapic_init(struct device *unused)
 DECL|_loapic_int_vec_set|function|void _loapic_int_vec_set(unsigned int irq, /* IRQ number of the interrupt */ unsigned int vector /* vector to copy into the LVT */ )
 DECL|_loapic_irq_disable|function|void _loapic_irq_disable(unsigned int irq)
 DECL|_loapic_irq_enable|function|void _loapic_irq_enable(unsigned int irq)
-DECL|_loapic_isr_vector_get|function|int _loapic_isr_vector_get(void)
 DECL|loapic_pm_ops|variable|loapic_pm_ops
-DECL|loapic_resume|function|int loapic_resume(struct device *port, int pm_policy)
+DECL|loapic_resume|function|static int loapic_resume(struct device *port, int pm_policy)
 DECL|loapic_suspend_buf|variable|loapic_suspend_buf
 DECL|loapic_suspend|function|static int loapic_suspend(struct device *port, int pm_policy)
