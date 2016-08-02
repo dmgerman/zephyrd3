@@ -1,4 +1,6 @@
 DECL|BT_L2CAP_BUF_SIZE|macro|BT_L2CAP_BUF_SIZE
+DECL|BT_L2CAP_CHAN_DETACH|enumerator|BT_L2CAP_CHAN_DETACH,
+DECL|BT_L2CAP_CHAN_LOOKUP|enumerator|BT_L2CAP_CHAN_LOOKUP,
 DECL|BT_L2CAP_CID_ATT|macro|BT_L2CAP_CID_ATT
 DECL|BT_L2CAP_CID_BR_SIG|macro|BT_L2CAP_CID_BR_SIG
 DECL|BT_L2CAP_CID_LE_SIG|macro|BT_L2CAP_CID_LE_SIG
@@ -107,6 +109,7 @@ DECL|dcid|member|uint16_t dcid;
 DECL|flags|member|uint16_t flags;
 DECL|flags|member|uint16_t flags;
 DECL|ident|member|uint8_t ident;
+DECL|l2cap_conn_list_action|enum|enum l2cap_conn_list_action {
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
