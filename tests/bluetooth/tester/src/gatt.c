@@ -52,8 +52,9 @@ DECL|discover_params|variable|discover_params
 DECL|enable_subscription|function|static int enable_subscription(struct bt_conn *conn, uint16_t ccc_handle, uint16_t value)
 DECL|enc_key_size|member|uint8_t enc_key_size;
 DECL|ev_buf|variable|ev_buf
-DECL|exchange_mtu_rsp|function|static void exchange_mtu_rsp(struct bt_conn *conn, uint8_t err)
+DECL|exchange_func|function|static void exchange_func(struct bt_conn *conn, uint8_t err, struct bt_gatt_exchange_params *params)
 DECL|exchange_mtu|function|static void exchange_mtu(uint8_t *data, uint16_t len)
+DECL|exchange_params|variable|exchange_params
 DECL|find_included_cb|function|static uint8_t find_included_cb(struct bt_conn *conn,const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|find_included|function|static void find_included(uint8_t *data, uint16_t len)
 DECL|flags|member|uint8_t flags[1];

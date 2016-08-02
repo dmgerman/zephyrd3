@@ -15,7 +15,6 @@ DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
 DECL|attr|member|struct bt_gatt_attr *attr;
-DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(struct bt_conn *conn, uint8_t err,
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_indicate_func_t cback;
 DECL|cback|member|bt_gatt_notify_func_t cback;
@@ -42,7 +41,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|flags|member|uint8_t flags;
 DECL|flag|member|uint8_t flag;
 DECL|flag|member|uint8_t flag;
-DECL|func|member|bt_att_func_t func;
+DECL|func|member|nble_att_func_t func;
 DECL|handle_range|member|struct nble_gatt_handle_range handle_range;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -54,6 +53,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|nble_att_func_t|typedef|typedef void (*nble_att_func_t)(struct bt_conn *conn, uint8_t err,
 DECL|nble_gatt_attr_handles|struct|struct nble_gatt_attr_handles {
 DECL|nble_gatt_handle_range|struct|struct nble_gatt_handle_range {
 DECL|nble_gatt_wr_flag|enum|enum nble_gatt_wr_flag {
