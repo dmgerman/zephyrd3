@@ -1,5 +1,4 @@
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|banner1|variable|banner1
 DECL|banner2|variable|banner2
 DECL|data_arrived|variable|data_arrived
