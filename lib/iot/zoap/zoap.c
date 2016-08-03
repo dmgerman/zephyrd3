@@ -1,0 +1,52 @@
+DECL|BASIC_HEADER_SIZE|macro|BASIC_HEADER_SIZE
+DECL|COAP_MARKER|macro|COAP_MARKER
+DECL|COAP_VERSION|macro|COAP_VERSION
+DECL|LAST_TIMEOUT|macro|LAST_TIMEOUT
+DECL|buflen|member|int buflen;
+DECL|buf|member|uint8_t *buf;
+DECL|coap_get_header_len|function|static int coap_get_header_len(const struct zoap_packet *pkt)
+DECL|coap_header_get_code|function|uint8_t coap_header_get_code(const struct zoap_packet *pkt)
+DECL|coap_header_get_tkl|function|static uint8_t coap_header_get_tkl(const struct zoap_packet *pkt)
+DECL|coap_option_encode|function|static int coap_option_encode(struct option_context *context, uint16_t code, const void *value, uint16_t len)
+DECL|coap_option_header_get_delta|function|static uint8_t coap_option_header_get_delta(uint8_t buf)
+DECL|coap_option_header_get_len|function|static uint8_t coap_option_header_get_len(uint8_t buf)
+DECL|coap_option_header_set_delta|function|static void coap_option_header_set_delta(uint8_t *buf, uint8_t delta)
+DECL|coap_option_header_set_len|function|static void coap_option_header_set_len(uint8_t *buf, uint8_t len)
+DECL|coap_parse_options|function|static int coap_parse_options(struct zoap_packet *pkt, unsigned int offset)
+DECL|coap_parse_option|function|static int coap_parse_option(const struct zoap_packet *pkt, struct option_context *context, uint8_t **value, uint16_t *vlen)
+DECL|decode_delta|function|static int decode_delta(int num, const uint8_t *buf, int16_t buflen,uint16_t *decoded)
+DECL|delta_encode|function|static int delta_encode(int num, uint8_t *value, uint8_t *buf, size_t buflen)
+DECL|delta|member|int delta;
+DECL|match_response|function|static bool match_response(const struct zoap_packet *request, const struct zoap_packet *response)
+DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, uint8_t code)
+DECL|next_timeout|function|static uint16_t next_timeout(uint16_t previous)
+DECL|option_context|struct|struct option_context {
+DECL|uri_path_eq|function|static bool uri_path_eq(const struct zoap_packet *pkt,const char * const *path)
+DECL|used|member|int used; /* size used of options */
+DECL|zoap_add_option|function|int zoap_add_option(struct zoap_packet *pkt, uint16_t code, const void *value, uint16_t len)
+DECL|zoap_find_options|function|int zoap_find_options(const struct zoap_packet *pkt, uint16_t code, struct zoap_option *options, uint16_t veclen)
+DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt, struct zoap_resource *resources, const void *from)
+DECL|zoap_header_get_code|function|uint8_t zoap_header_get_code(const struct zoap_packet *pkt)
+DECL|zoap_header_get_id|function|uint16_t zoap_header_get_id(const struct zoap_packet *pkt)
+DECL|zoap_header_get_token|function|const uint8_t *zoap_header_get_token(const struct zoap_packet *pkt, uint8_t *len)
+DECL|zoap_header_get_type|function|uint8_t zoap_header_get_type(const struct zoap_packet *pkt)
+DECL|zoap_header_get_version|function|uint8_t zoap_header_get_version(const struct zoap_packet *pkt)
+DECL|zoap_header_set_code|function|void zoap_header_set_code(struct zoap_packet *pkt, uint8_t code)
+DECL|zoap_header_set_id|function|void zoap_header_set_id(struct zoap_packet *pkt, uint16_t id)
+DECL|zoap_header_set_token|function|int zoap_header_set_token(struct zoap_packet *pkt, const uint8_t *token, uint8_t tokenlen)
+DECL|zoap_header_set_type|function|void zoap_header_set_type(struct zoap_packet *pkt, uint8_t type)
+DECL|zoap_header_set_version|function|void zoap_header_set_version(struct zoap_packet *pkt, uint8_t ver)
+DECL|zoap_packet_get_payload|function|uint8_t *zoap_packet_get_payload(struct zoap_packet *pkt, uint16_t *len)
+DECL|zoap_packet_init|function|int zoap_packet_init(struct zoap_packet *pkt, struct net_buf *buf)
+DECL|zoap_packet_parse|function|int zoap_packet_parse(struct zoap_packet *pkt, struct net_buf *buf)
+DECL|zoap_packet_set_used|function|int zoap_packet_set_used(struct zoap_packet *pkt, uint16_t len)
+DECL|zoap_pending_clear|function|void zoap_pending_clear(struct zoap_pending *pending)
+DECL|zoap_pending_cycle|function|bool zoap_pending_cycle(struct zoap_pending *pending)
+DECL|zoap_pending_init|function|int zoap_pending_init(struct zoap_pending *pending, const struct zoap_packet *request)
+DECL|zoap_pending_next_to_expire|function|struct zoap_pending *zoap_pending_next_to_expire(struct zoap_pending *pendings, size_t len)
+DECL|zoap_pending_next_unused|function|struct zoap_pending *zoap_pending_next_unused(struct zoap_pending *pendings, size_t len)
+DECL|zoap_pending_received|function|struct zoap_pending *zoap_pending_received(const struct zoap_packet *response, struct zoap_pending *pendings, size_t len)
+DECL|zoap_reply_clear|function|void zoap_reply_clear(struct zoap_reply *reply)
+DECL|zoap_reply_init|function|void zoap_reply_init(struct zoap_reply *reply, const struct zoap_packet *request)
+DECL|zoap_reply_next_unused|function|struct zoap_reply *zoap_reply_next_unused(struct zoap_reply *replies, size_t len)
+DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const void *from, struct zoap_reply *replies, size_t len)
