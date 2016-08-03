@@ -7,6 +7,7 @@ DECL|BT_L2CAP_FLAG_INFO_PENDING|enumerator|BT_L2CAP_FLAG_INFO_PENDING, /* retrie
 DECL|L2CAP_BR_DEFAULT_MTU|macro|L2CAP_BR_DEFAULT_MTU
 DECL|L2CAP_BR_DYN_CID_END|macro|L2CAP_BR_DYN_CID_END
 DECL|L2CAP_BR_DYN_CID_START|macro|L2CAP_BR_DYN_CID_START
+DECL|L2CAP_BR_INFO_TIMEOUT|macro|L2CAP_BR_INFO_TIMEOUT
 DECL|L2CAP_BR_MIN_MTU|macro|L2CAP_BR_MIN_MTU
 DECL|L2CAP_BR_PSM_END|macro|L2CAP_BR_PSM_END
 DECL|L2CAP_BR_PSM_SDP|macro|L2CAP_BR_PSM_SDP
@@ -39,6 +40,7 @@ DECL|l2cap_br_accept|function|static int l2cap_br_accept(struct bt_conn *conn, s
 DECL|l2cap_br_chan_add|function|static bool l2cap_br_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|l2cap_br_chan_alloc_cid|function|l2cap_br_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_destroy|function|static void l2cap_br_chan_destroy(struct bt_l2cap_chan *chan)
+DECL|l2cap_br_chan_send_req|function|static void l2cap_br_chan_send_req(struct bt_l2cap_br_chan *chan, struct net_buf *buf, uint32_t ticks)
 DECL|l2cap_br_conf_add_mtu|function|static void l2cap_br_conf_add_mtu(struct net_buf *buf, const uint16_t mtu)
 DECL|l2cap_br_conf_opt_mtu|function|static uint16_t l2cap_br_conf_opt_mtu(struct bt_l2cap_chan *chan, struct net_buf *buf, size_t len)
 DECL|l2cap_br_conf_req|function|static void l2cap_br_conf_req(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
