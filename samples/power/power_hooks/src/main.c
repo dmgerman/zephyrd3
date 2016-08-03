@@ -1,5 +1,4 @@
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_sys_soc_resume|function|void _sys_soc_resume(void)
 DECL|_sys_soc_suspend|function|int _sys_soc_suspend(int32_t ticks)
 DECL|main|function|void main(void)
