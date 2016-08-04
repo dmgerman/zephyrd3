@@ -46,11 +46,15 @@ DECL|dns_query_qtype|function|static inline int dns_query_qtype(uint8_t *questio
 DECL|dns_response_type|enum|enum dns_response_type {
 DECL|dns_response_type|function|static inline int dns_response_type(int dname_size, uint8_t *answer)
 DECL|dns_rr_type|enum|enum dns_rr_type {
+DECL|dns_unpack_answer_rdlength|function|static inline int dns_unpack_answer_rdlength(int dname_size, uint8_t *answer)
+DECL|dns_unpack_header_ancount|function|static inline int dns_unpack_header_ancount(uint8_t *header)
+DECL|dns_unpack_header_id|function|static inline int dns_unpack_header_id(uint8_t *header)
+DECL|dns_unpack_header_qdcount|function|static inline int dns_unpack_header_qdcount(uint8_t *header)
+DECL|dns_unpack_query_qclass|function|static inline int dns_unpack_query_qclass(uint8_t *question)
+DECL|dns_unpack_query_qtype|function|static inline int dns_unpack_query_qtype(uint8_t *question)
 DECL|msg_size|member|size_t msg_size;
 DECL|msg|member|uint8_t *msg;
 DECL|query_offset|member|int query_offset;
 DECL|response_length|member|int response_length;
 DECL|response_position|member|int response_position;
 DECL|response_type|member|int response_type;
-DECL|z_swap2|function|static inline uint16_t z_swap2(uint16_t n)
-DECL|z_swap4|function|static inline uint32_t z_swap4(uint32_t n)
