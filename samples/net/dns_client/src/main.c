@@ -1,4 +1,6 @@
 DECL|BUF_SIZE|macro|BUF_SIZE
+DECL|DNS_QUERY_POS|macro|DNS_QUERY_POS
+DECL|RC_STR|macro|RC_STR
 DECL|SLEEP_TIME|macro|SLEEP_TIME
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|dns_query|function|int dns_query(struct app_buf_t *buf, char *str, uint16_t id, enum dns_rr_type qtype)
