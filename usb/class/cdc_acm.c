@@ -32,6 +32,8 @@ DECL|cdc_acm_irq_tx_ready|function|static int cdc_acm_irq_tx_ready(struct device
 DECL|cdc_acm_irq_update|function|static int cdc_acm_irq_update(struct device *dev)
 DECL|cdc_acm_line_ctrl_get|function|static int cdc_acm_line_ctrl_get(struct device *dev, uint32_t ctrl, uint32_t *val)
 DECL|cdc_acm_line_ctrl_set|function|static int cdc_acm_line_ctrl_set(struct device *dev, uint32_t ctrl, uint32_t val)
+DECL|cdc_acm_poll_in|function|static int cdc_acm_poll_in(struct device *dev, unsigned char *c)
+DECL|cdc_acm_poll_out|function|static unsigned char cdc_acm_poll_out(struct device *dev, unsigned char c)
 DECL|cdc_acm_send_notification|function|static int cdc_acm_send_notification(struct device *dev, uint16_t serial_state)
 DECL|cdc_acm_usb_description|variable|cdc_acm_usb_description
 DECL|interface_data|member|uint8_t interface_data[CDC_CLASS_REQ_MAX_DATA_SIZE];
