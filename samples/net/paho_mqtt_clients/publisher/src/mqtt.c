@@ -4,6 +4,7 @@ DECL|mqtt_cb_publish|function|int mqtt_cb_publish(struct mqtt_app_ctx_t *app, in
 DECL|mqtt_configure|function|int mqtt_configure(struct mqtt_app_ctx_t *app, const char *client_id, int clean_session, enum mqtt_protocol proto)
 DECL|mqtt_connect|function|int mqtt_connect(struct mqtt_app_ctx_t *app)
 DECL|mqtt_disconnect|function|int mqtt_disconnect(struct mqtt_app_ctx_t *app)
+DECL|mqtt_handle_pingreq|function|int mqtt_handle_pingreq(struct mqtt_app_ctx_t *app)
 DECL|mqtt_handle_publish|function|int mqtt_handle_publish(struct mqtt_app_ctx_t *app)
 DECL|mqtt_init|function|int mqtt_init(struct mqtt_app_ctx_t *app)
 DECL|mqtt_network|function|int mqtt_network(struct mqtt_app_ctx_t *app, struct netz_ctx_t *netz_ctx)
@@ -13,4 +14,5 @@ DECL|mqtt_publish_qos2|function|static inline int mqtt_publish_qos2(struct mqtt_
 DECL|mqtt_publish|function|int mqtt_publish(struct mqtt_app_ctx_t *app, struct mqtt_msg_t *msg, enum mqtt_qos qos, int retained)
 DECL|mqtt_read|function|int mqtt_read(struct mqtt_app_ctx_t *app)
 DECL|mqtt_subscribe|function|int mqtt_subscribe(struct mqtt_app_ctx_t *app, char *topic, enum mqtt_qos qos)
+DECL|mqtt_unsubscribe|function|int mqtt_unsubscribe(struct mqtt_app_ctx_t *app, char *topic)
 DECL|mqtt_will|function|int mqtt_will(struct mqtt_app_ctx_t *app, const char *topic, const char *msg, enum mqtt_qos qos, int retained)
