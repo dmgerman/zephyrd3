@@ -22,6 +22,8 @@ DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
+DECL|_sys_clock_resume|function|int _sys_clock_resume(struct device *dev, int pm_policy)
+DECL|_sys_clock_suspend|function|int _sys_clock_suspend(struct device *dev, int pm_policy)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* parameter is not used */ )
@@ -40,8 +42,6 @@ DECL|programmed_full_ticks|variable|programmed_full_ticks
 DECL|reg_timer_cfg_save|variable|reg_timer_cfg_save
 DECL|reg_timer_save|variable|reg_timer_save
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
-DECL|sys_clock_resume|function|static int sys_clock_resume(struct device *dev, int pm_policy)
-DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev, int pm_policy)
 DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
