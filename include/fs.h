@@ -7,7 +7,7 @@ DECL|ZDIR|typedef|typedef struct _zdir_object ZDIR;
 DECL|ZFILE|typedef|typedef struct _zfile_object ZFILE;
 DECL|_FS_H_|macro|_FS_H_
 DECL|dir_entry_type|enum|enum dir_entry_type {
-DECL|name|member|char name[MAX_FILE_NAME + 1]; /* Name of directory or file */
-DECL|size|member|size_t size; /* Size of file. 0 if directory */
-DECL|type|member|enum dir_entry_type type; /* Whether file or directory */
+DECL|name|member|char name[MAX_FILE_NAME + 1];
+DECL|size|member|size_t size;
+DECL|type|member|enum dir_entry_type type;
 DECL|zfs_dirent|struct|struct zfs_dirent {
