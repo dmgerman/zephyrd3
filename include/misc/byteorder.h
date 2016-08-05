@@ -1,3 +1,4 @@
+DECL|__BYTEORDER_H__|macro|__BYTEORDER_H__
 DECL|__bswap_16|macro|__bswap_16
 DECL|__bswap_32|macro|__bswap_32
 DECL|sys_be16_to_cpu|macro|sys_be16_to_cpu
