@@ -33,6 +33,7 @@ DECL|interval|member|uint16_t interval;
 DECL|keys|member|struct bt_keys *keys;
 DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
+DECL|link_key|member|struct bt_keys_link_key *link_key;
 DECL|lmp_ext_feat_capable|macro|lmp_ext_feat_capable
 DECL|lmp_ssp_host_supported|macro|lmp_ssp_host_supported
 DECL|pairing_method|member|uint8_t pairing_method;
