@@ -49,7 +49,7 @@ DECL|linen|member|uint32_t linen :1 __packed;
 DECL|mantissa|member|uint32_t mantissa :12 __packed;
 DECL|m|member|uint32_t m :1 __packed;
 DECL|nack|member|uint32_t nack :1 __packed;
-DECL|ne|member|uint32_t ne :1 __packed;
+DECL|nf|member|uint32_t nf :1 __packed;
 DECL|ore|member|uint32_t ore :1 __packed;
 DECL|pce|member|uint32_t pce :1 __packed;
 DECL|peie|member|uint32_t peie :1 __packed;
