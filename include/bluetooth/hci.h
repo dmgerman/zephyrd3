@@ -163,6 +163,7 @@ DECL|BT_HCI_OP_USER_CONFIRM_REPLY|macro|BT_HCI_OP_USER_CONFIRM_REPLY
 DECL|BT_HCI_OP_USER_PASSKEY_NEG_REPLY|macro|BT_HCI_OP_USER_PASSKEY_NEG_REPLY
 DECL|BT_HCI_OP_USER_PASSKEY_REPLY|macro|BT_HCI_OP_USER_PASSKEY_REPLY
 DECL|BT_HCI_OP_WRITE_INQUIRY_MODE|macro|BT_HCI_OP_WRITE_INQUIRY_MODE
+DECL|BT_HCI_OP_WRITE_LOCAL_NAME|macro|BT_HCI_OP_WRITE_LOCAL_NAME
 DECL|BT_HCI_OP_WRITE_SCAN_ENABLE|macro|BT_HCI_OP_WRITE_SCAN_ENABLE
 DECL|BT_HCI_OP_WRITE_SSP_MODE|macro|BT_HCI_OP_WRITE_SSP_MODE
 DECL|BT_HCI_ROLE_MASTER|macro|BT_HCI_ROLE_MASTER
@@ -201,6 +202,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -445,6 +447,7 @@ DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_versio
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
 DECL|bt_hci_rp_remote_name_cancel|struct|struct bt_hci_rp_remote_name_cancel {
 DECL|bt_hci_rp_user_confirm_reply|struct|struct bt_hci_rp_user_confirm_reply {
+DECL|bt_hci_write_local_name|struct|struct bt_hci_write_local_name {
 DECL|capability|member|uint8_t capability;
 DECL|capability|member|uint8_t capability;
 DECL|channel_map|member|uint8_t channel_map;
@@ -554,6 +557,7 @@ DECL|link_type|member|uint8_t link_type;
 DECL|link_type|member|uint8_t link_type;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
+DECL|local_name|member|uint8_t local_name[248];
 DECL|ltk|member|uint8_t ltk[16];
 DECL|ltk|member|uint8_t ltk[16];
 DECL|manufacturer|member|uint16_t manufacturer;
