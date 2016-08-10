@@ -1,0 +1,43 @@
+DECL|TRICKLE_TIMER_CLOCK_MAX|macro|TRICKLE_TIMER_CLOCK_MAX
+DECL|TRICKLE_TIMER_COMPENSATE_DRIFT|macro|TRICKLE_TIMER_COMPENSATE_DRIFT
+DECL|TRICKLE_TIMER_COMPENSATE_DRIFT|macro|TRICKLE_TIMER_COMPENSATE_DRIFT
+DECL|TRICKLE_TIMER_ERROR_CHECKING|macro|TRICKLE_TIMER_ERROR_CHECKING
+DECL|TRICKLE_TIMER_ERROR_CHECKING|macro|TRICKLE_TIMER_ERROR_CHECKING
+DECL|TRICKLE_TIMER_ERROR|macro|TRICKLE_TIMER_ERROR
+DECL|TRICKLE_TIMER_H_|macro|TRICKLE_TIMER_H_
+DECL|TRICKLE_TIMER_IMIN_IS_BAD|macro|TRICKLE_TIMER_IMIN_IS_BAD
+DECL|TRICKLE_TIMER_IMIN_IS_OK|macro|TRICKLE_TIMER_IMIN_IS_OK
+DECL|TRICKLE_TIMER_INFINITE_REDUNDANCY|macro|TRICKLE_TIMER_INFINITE_REDUNDANCY
+DECL|TRICKLE_TIMER_INTERVAL_END|macro|TRICKLE_TIMER_INTERVAL_END
+DECL|TRICKLE_TIMER_INTERVAL_MAX|macro|TRICKLE_TIMER_INTERVAL_MAX
+DECL|TRICKLE_TIMER_IPAIR_IS_BAD|macro|TRICKLE_TIMER_IPAIR_IS_BAD
+DECL|TRICKLE_TIMER_IS_STOPPED|macro|TRICKLE_TIMER_IS_STOPPED
+DECL|TRICKLE_TIMER_MAX_IMAX_16_BIT|macro|TRICKLE_TIMER_MAX_IMAX_16_BIT
+DECL|TRICKLE_TIMER_MAX_IMAX_32_BIT|macro|TRICKLE_TIMER_MAX_IMAX_32_BIT
+DECL|TRICKLE_TIMER_MAX_IMAX_GENERIC|macro|TRICKLE_TIMER_MAX_IMAX_GENERIC
+DECL|TRICKLE_TIMER_MAX_IMAX_WIDTH|macro|TRICKLE_TIMER_MAX_IMAX_WIDTH
+DECL|TRICKLE_TIMER_MAX_IMAX_WIDTH|macro|TRICKLE_TIMER_MAX_IMAX_WIDTH
+DECL|TRICKLE_TIMER_PROTO_TX_ALLOW|macro|TRICKLE_TIMER_PROTO_TX_ALLOW
+DECL|TRICKLE_TIMER_PROTO_TX_SUPPRESS|macro|TRICKLE_TIMER_PROTO_TX_SUPPRESS
+DECL|TRICKLE_TIMER_SUCCESS|macro|TRICKLE_TIMER_SUCCESS
+DECL|TRICKLE_TIMER_SUPPRESSION_DISABLED|macro|TRICKLE_TIMER_SUPPRESSION_DISABLED
+DECL|TRICKLE_TIMER_SUPPRESSION_ENABLED|macro|TRICKLE_TIMER_SUPPRESSION_ENABLED
+DECL|TRICKLE_TIMER_TX_OK|macro|TRICKLE_TIMER_TX_OK
+DECL|TRICKLE_TIMER_TX_SUPPRESS|macro|TRICKLE_TIMER_TX_SUPPRESS
+DECL|TRICKLE_TIMER_WIDE_RAND|macro|TRICKLE_TIMER_WIDE_RAND
+DECL|TRICKLE_TIMER_WIDE_RAND|macro|TRICKLE_TIMER_WIDE_RAND
+DECL|cb_arg|member|void *cb_arg; /**< Opaque pointer to be used as the argument of the
+DECL|cb|member|trickle_timer_cb_t cb; /**< Protocol's own callback, invoked at time t
+DECL|ct|member|struct ctimer ct; /**< A \ref ctimer used internally */
+DECL|c|member|uint8_t c; /**< c: Consistency Counter */
+DECL|i_cur|member|clock_time_t i_cur; /**< I: Current interval in clock_ticks */
+DECL|i_max_abs|member|clock_time_t i_max_abs; /**< Maximum interval size in clock ticks (and not in
+DECL|i_max|member|uint8_t i_max; /**< Imax: Max number of doublings */
+DECL|i_min|member|clock_time_t i_min; /**< Imin: Clock ticks */
+DECL|i_start|member|clock_time_t i_start; /**< Start of this interval (absolute clock_time) */
+DECL|k|member|uint8_t k; /**< k: Redundancy Constant */
+DECL|trickle_timer_cb_t|typedef|typedef void (* trickle_timer_cb_t)(void *ptr, uint8_t suppress);
+DECL|trickle_timer_is_running|macro|trickle_timer_is_running
+DECL|trickle_timer_reset_event|macro|trickle_timer_reset_event
+DECL|trickle_timer_stop|macro|trickle_timer_stop
+DECL|trickle_timer|struct|struct trickle_timer {
