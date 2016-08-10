@@ -25,8 +25,6 @@ DECL|qm_pwm_isr_0|variable|qm_pwm_isr_0
 DECL|qm_rtc_isr_0|variable|qm_rtc_isr_0
 DECL|qm_spi_master_0_isr|variable|qm_spi_master_0_isr
 DECL|qm_spi_master_1_isr|variable|qm_spi_master_1_isr
-DECL|qm_ss_adc_0_cal_isr|variable|qm_ss_adc_0_cal_isr
-DECL|qm_ss_adc_0_pwr_isr|variable|qm_ss_adc_0_pwr_isr
 DECL|qm_uart_0_isr|variable|qm_uart_0_isr
 DECL|qm_uart_1_isr|variable|qm_uart_1_isr
 DECL|qm_wdt_isr_0|variable|qm_wdt_isr_0

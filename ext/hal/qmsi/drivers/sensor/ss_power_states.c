@@ -3,3 +3,5 @@ DECL|QM_SS_SLEEP_MODE_CORE_OFF|macro|QM_SS_SLEEP_MODE_CORE_OFF
 DECL|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF|macro|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF
 DECL|ss_power_cpu_ss1|function|void ss_power_cpu_ss1(const ss_power_cpu_ss1_mode_t mode)
 DECL|ss_power_cpu_ss2|function|void ss_power_cpu_ss2(void)
+DECL|ss_power_soc_lpss_disable|function|void ss_power_soc_lpss_disable()
+DECL|ss_power_soc_lpss_enable|function|void ss_power_soc_lpss_enable()
