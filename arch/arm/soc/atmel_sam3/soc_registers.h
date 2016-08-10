@@ -5,6 +5,7 @@ DECL|__pio|struct|struct __pio {
 DECL|__pmc|struct|struct __pmc {
 DECL|__supc|struct|struct __supc {
 DECL|__twi|struct|struct __twi {
+DECL|__wdt|struct|struct __wdt {
 DECL|absr|member|uint32_t absr; /* 0x70 Peripheral AB Select */
 DECL|aimdr|member|uint32_t aimdr; /* 0xB4 Additional Interrupt Modes */
 DECL|aimer|member|uint32_t aimer; /* 0xB0 Additional Interrupt Modes */
@@ -16,6 +17,7 @@ DECL|ckgr_uckr|member|uint32_t ckgr_uckr; /* 0x1C UTMI Clock */
 DECL|codr|member|uint32_t codr; /* 0x34 Clear Output Data */
 DECL|cr|member|uint32_t cr; /* 0x00 Control */
 DECL|cr|member|uint32_t cr; /* 0x00 Control */
+DECL|cr|member|uint32_t cr; /* 0x00 Control Register */
 DECL|cwgr|member|uint32_t cwgr; /* 0x10 Clock Waveform Generator */
 DECL|difsr|member|uint32_t difsr; /* 0x84 Debouncing Input Filter */
 DECL|elsr|member|uint32_t elsr; /* 0xC8 Edge/Level Status */
@@ -51,6 +53,7 @@ DECL|mddr|member|uint32_t mddr; /* 0x54 Multi-driver Disable */
 DECL|mder|member|uint32_t mder; /* 0x50 Multi-driver Enable */
 DECL|mdsr|member|uint32_t mdsr; /* 0x58 Multi-driver Status */
 DECL|mmr|member|uint32_t mmr; /* 0x04 Master Mode */
+DECL|mr|member|uint32_t mr; /* 0x04 Mode Register */
 DECL|mr|member|uint32_t mr; /* 0x08 Mode */
 DECL|odr|member|uint32_t odr; /* 0x14 Output Disable */
 DECL|odsr|member|uint32_t odsr; /* 0x38 Output Data Status */
@@ -113,6 +116,7 @@ DECL|scsr|member|uint32_t scsr; /* 0x08 System Clock Status */
 DECL|smmr|member|uint32_t smmr; /* 0x04 Supply Monitor Mode */
 DECL|smr|member|uint32_t smr; /* 0x08 Slave Mode */
 DECL|sodr|member|uint32_t sodr; /* 0x30 Set Output Data */
+DECL|sr|member|uint32_t sr; /* 0x08 Status Register */
 DECL|sr|member|uint32_t sr; /* 0x14 Status */
 DECL|sr|member|uint32_t sr; /* 0x20 Status */
 DECL|sr|member|uint32_t sr; /* 0x68 Status */
