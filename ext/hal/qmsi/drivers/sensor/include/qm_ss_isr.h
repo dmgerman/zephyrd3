@@ -1,8 +1,6 @@
 DECL|__QM_SS_ISR_H__|macro|__QM_SS_ISR_H__
-DECL|qm_ss_adc_0_cal_isr|variable|qm_ss_adc_0_cal_isr
 DECL|qm_ss_adc_0_err_isr|variable|qm_ss_adc_0_err_isr
 DECL|qm_ss_adc_0_isr|variable|qm_ss_adc_0_isr
-DECL|qm_ss_adc_0_pwr_isr|variable|qm_ss_adc_0_pwr_isr
 DECL|qm_ss_gpio_isr_0|variable|qm_ss_gpio_isr_0
 DECL|qm_ss_gpio_isr_1|variable|qm_ss_gpio_isr_1
 DECL|qm_ss_i2c_isr_0|variable|qm_ss_i2c_isr_0
