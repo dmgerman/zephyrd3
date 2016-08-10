@@ -5,5 +5,4 @@ DECL|qm_int_vector_request|function|static __inline__ void qm_int_vector_request
 DECL|qm_int_vector_request|macro|qm_int_vector_request
 DECL|qm_irq_request|macro|qm_irq_request
 DECL|qm_irq_request|macro|qm_irq_request
-DECL|qm_irq_request|macro|qm_irq_request
 DECL|qm_isr_t|typedef|typedef void (*qm_isr_t)(struct interrupt_frame *frame);

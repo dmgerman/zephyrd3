@@ -32,7 +32,7 @@ DECL|qm_uart_write|function|int qm_uart_write(const qm_uart_t uart, const uint8_
 DECL|qm_uart|variable|qm_uart
 DECL|read_pos|variable|read_pos
 DECL|uart_client_callback_t|typedef|typedef void (*uart_client_callback_t)(void *data, int error,
-DECL|uart_client_callback|function|static void uart_client_callback(void *data, int error, qm_uart_status_t status, uint32_t len)
+DECL|uart_client_callback|function|static void uart_client_callback(qm_uart_t uart, void *data, int error, uint32_t len)
 DECL|uart_dma_callback|function|static void uart_dma_callback(void *callback_context, uint32_t len, int error_code)
 DECL|uart_read_transfer|variable|uart_read_transfer
 DECL|uart_write_transfer|variable|uart_write_transfer

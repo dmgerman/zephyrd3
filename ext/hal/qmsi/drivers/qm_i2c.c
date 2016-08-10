@@ -24,13 +24,13 @@ DECL|i2c_dma_interfaces|variable|i2c_dma_interfaces
 DECL|i2c_dma_receive_callback|function|static void i2c_dma_receive_callback(void *callback_context, uint32_t len, int error_code)
 DECL|i2c_dma_transfer_error_callback|function|static void i2c_dma_transfer_error_callback(uint32_t i2c, int error_code, uint32_t len)
 DECL|i2c_dma_transmit_callback|function|static void i2c_dma_transmit_callback(void *callback_context, uint32_t len, int error_code)
+DECL|i2c_error_code|member|int i2c_error_code;
 DECL|i2c_read_cmd_send|variable|i2c_read_cmd_send
 DECL|i2c_read_pos|variable|i2c_read_pos
 DECL|i2c_start_dma_read|function|static int i2c_start_dma_read(const qm_i2c_t i2c)
 DECL|i2c_transfer|variable|i2c_transfer
 DECL|i2c_write_pos|variable|i2c_write_pos
 DECL|i2c|member|qm_i2c_t i2c; /* I2C controller */
-DECL|multimaster_abort_status|member|int multimaster_abort_status;
 DECL|ongoing_dma_rx_operation|member|volatile bool ongoing_dma_rx_operation; /* Keep track of oingoing RX*/
 DECL|ongoing_dma_tx_operation|member|volatile bool ongoing_dma_tx_operation; /* Keep track of ongoing TX */
 DECL|qm_i2c_dma_channel_config|function|int qm_i2c_dma_channel_config(const qm_i2c_t i2c, const qm_dma_t dma_controller_id, const qm_dma_channel_id_t channel_id, const qm_dma_channel_direction_t direction)
@@ -46,3 +46,4 @@ DECL|qm_i2c_set_config|function|int qm_i2c_set_config(const qm_i2c_t i2c, const 
 DECL|qm_i2c_set_speed|function|int qm_i2c_set_speed(const qm_i2c_t i2c, const qm_i2c_speed_t speed, const uint16_t lo_cnt, const uint16_t hi_cnt)
 DECL|qm_i2c|variable|qm_i2c
 DECL|qm_i2c|variable|qm_i2c
+DECL|tx_abort_status|member|int tx_abort_status;
