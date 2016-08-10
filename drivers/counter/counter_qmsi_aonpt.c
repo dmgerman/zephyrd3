@@ -12,6 +12,9 @@ DECL|aon_timer_qmsi_start|function|static int aon_timer_qmsi_start(struct device
 DECL|aon_timer_qmsi_stop|function|static int aon_timer_qmsi_stop(struct device *dev)
 DECL|aonpt_context|variable|aonpt_context
 DECL|aonpt_int_callback|function|static void aonpt_int_callback(void *user_data)
+DECL|aonpt_resume_device|function|static int aonpt_resume_device(struct device *dev, int pm_policy)
+DECL|aonpt_suspend_device|function|static int aonpt_suspend_device(struct device *dev, int pm_policy)
+DECL|int_aonpt_mask_save|variable|int_aonpt_mask_save
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|sem|member|struct nano_sem sem;
