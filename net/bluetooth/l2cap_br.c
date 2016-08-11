@@ -5,6 +5,7 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_L2CAP_FLAG_INFO_DONE|enumerator|BT_L2CAP_FLAG_INFO_DONE, /* remote l2cap info is done */
 DECL|BT_L2CAP_FLAG_INFO_PENDING|enumerator|BT_L2CAP_FLAG_INFO_PENDING, /* retrieving remote l2cap info */
 DECL|L2CAP_BR_CFG_TIMEOUT|macro|L2CAP_BR_CFG_TIMEOUT
+DECL|L2CAP_BR_CONN_TIMEOUT|macro|L2CAP_BR_CONN_TIMEOUT
 DECL|L2CAP_BR_DEFAULT_MTU|macro|L2CAP_BR_DEFAULT_MTU
 DECL|L2CAP_BR_DISCONN_TIMEOUT|macro|L2CAP_BR_DISCONN_TIMEOUT
 DECL|L2CAP_BR_DYN_CID_END|macro|L2CAP_BR_DYN_CID_END
@@ -20,6 +21,7 @@ DECL|L2CAP_CONN_SECURITY_PENDING|enumerator|L2CAP_CONN_SECURITY_PENDING
 DECL|L2CAP_CONN_SECURITY_REJECT|enumerator|L2CAP_CONN_SECURITY_REJECT,
 DECL|L2CAP_FEAT_FIXED_CHAN_MASK|macro|L2CAP_FEAT_FIXED_CHAN_MASK
 DECL|L2CAP_FLAG_ACCEPTOR|enumerator|L2CAP_FLAG_ACCEPTOR, /* getting incoming connection req on PSM */
+DECL|L2CAP_FLAG_CONN_PENDING|enumerator|L2CAP_FLAG_CONN_PENDING,/* remote sent pending result in response */
 DECL|L2CAP_FLAG_LCONF_DONE|enumerator|L2CAP_FLAG_LCONF_DONE, /* local config accepted by remote */
 DECL|L2CAP_FLAG_RCONF_DONE|enumerator|L2CAP_FLAG_RCONF_DONE, /* remote config accepted by local */
 DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
@@ -54,6 +56,7 @@ DECL|l2cap_br_conf_rsp|function|static void l2cap_br_conf_rsp(struct bt_l2cap_br
 DECL|l2cap_br_conf|function|static void l2cap_br_conf(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_conn_pend|function|static void l2cap_br_conn_pend(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_conn_req|function|static void l2cap_br_conn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
+DECL|l2cap_br_conn_rsp|function|static void l2cap_br_conn_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_conn_security_result|enum|enum l2cap_br_conn_security_result {
 DECL|l2cap_br_conn_security|function|l2cap_br_conn_security(struct bt_l2cap_chan *chan, const uint16_t psm)
 DECL|l2cap_br_connected|function|static void l2cap_br_connected(struct bt_l2cap_chan *chan)
