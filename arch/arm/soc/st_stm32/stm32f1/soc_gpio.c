@@ -1,6 +1,6 @@
 DECL|__func_to_cnf|function|static uint32_t __func_to_cnf(int func)
 DECL|__func_to_mode|function|static uint32_t __func_to_mode(int func)
-DECL|stm32_gpio_configure|function|int stm32_gpio_configure(uint32_t *base_addr, int pin, int conf)
+DECL|stm32_gpio_configure|function|int stm32_gpio_configure(uint32_t *base_addr, int pin, int conf, int altf)
 DECL|stm32_gpio_enable_int|function|int stm32_gpio_enable_int(int port, int pin)
 DECL|stm32_gpio_flags_to_conf|function|int stm32_gpio_flags_to_conf(int flags, int *pincfg)
 DECL|stm32_gpio_get|function|int stm32_gpio_get(uint32_t *base, int pin)
