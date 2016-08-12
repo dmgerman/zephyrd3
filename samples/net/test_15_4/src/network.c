@@ -16,7 +16,7 @@ DECL|fiberStack_receiving|variable|fiberStack_receiving
 DECL|fiberStack_sending|variable|fiberStack_sending
 DECL|fiber_receiving|function|void fiber_receiving(void)
 DECL|fiber_sending|function|void fiber_sending(void)
-DECL|get_context|function|static struct net_context *get_context(const struct net_addr *remote, uint16_t remote_port, const struct net_addr *local, uint16_t local_port)
+DECL|get_context|function|static struct net_context *get_context(const struct net_addr *remote, uint16_t remote_port, struct net_addr *local, uint16_t local_port)
 DECL|in6addr_dest|variable|in6addr_dest
 DECL|in6addr_src|variable|in6addr_src
 DECL|init_test|function|static inline void init_test()
