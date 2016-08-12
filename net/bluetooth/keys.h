@@ -11,6 +11,7 @@ DECL|BT_KEYS_SLAVE_LTK|enumerator|BT_KEYS_SLAVE_LTK = BIT(0),
 DECL|BT_LINK_KEY_AUTHENTICATED|enumerator|BT_LINK_KEY_AUTHENTICATED,
 DECL|BT_LINK_KEY_DEBUG|enumerator|BT_LINK_KEY_DEBUG,
 DECL|BT_LINK_KEY_NUM_FLAGS|enumerator|BT_LINK_KEY_NUM_FLAGS,
+DECL|BT_LINK_KEY_SC|enumerator|BT_LINK_KEY_SC,
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|bt_csrk|struct|struct bt_csrk {
