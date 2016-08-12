@@ -136,6 +136,7 @@ DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, s
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_pairing_complete|function|static void smp_pairing_complete(struct bt_smp *smp, uint8_t status)
 DECL|smp_pairing_confirm|function|static uint8_t smp_pairing_confirm(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_failed|function|static uint8_t smp_pairing_failed(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_random|function|static uint8_t smp_pairing_random(struct bt_smp *smp, struct net_buf *buf)
