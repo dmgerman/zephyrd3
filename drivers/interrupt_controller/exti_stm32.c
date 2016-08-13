@@ -21,12 +21,12 @@ DECL|pr|member|uint32_t pr;
 DECL|rtsr|member|uint32_t rtsr;
 DECL|stm32_exti_clear_pending|function|static inline void stm32_exti_clear_pending(int line)
 DECL|stm32_exti_data|struct|struct stm32_exti_data {
-DECL|stm32_exti_disable|function|void stm32_exti_disable(struct device *dev, int line)
-DECL|stm32_exti_enable|function|void stm32_exti_enable(struct device *dev, int line)
+DECL|stm32_exti_disable|function|void stm32_exti_disable(int line)
+DECL|stm32_exti_enable|function|void stm32_exti_enable(int line)
 DECL|stm32_exti_init|function|static int stm32_exti_init(struct device *dev)
 DECL|stm32_exti_is_pending|function|static inline int stm32_exti_is_pending(int line)
-DECL|stm32_exti_set_callback|function|void stm32_exti_set_callback(struct device *dev, int line,stm32_exti_callback_t cb, void *arg)
-DECL|stm32_exti_trigger|function|void stm32_exti_trigger(struct device *dev, int line, int trigger)
-DECL|stm32_exti_unset_callback|function|void stm32_exti_unset_callback(struct device *dev, int line)
+DECL|stm32_exti_set_callback|function|void stm32_exti_set_callback(int line, stm32_exti_callback_t cb, void *arg)
+DECL|stm32_exti_trigger|function|void stm32_exti_trigger(int line, int trigger)
+DECL|stm32_exti_unset_callback|function|void stm32_exti_unset_callback(int line)
 DECL|stm32_exti|struct|struct stm32_exti {
 DECL|swier|member|uint32_t swier;
