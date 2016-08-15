@@ -4,10 +4,9 @@ DECL|MAXFP1|macro|MAXFP1
 DECL|MAXFP2|macro|MAXFP2
 DECL|_atoi|function|static int _atoi(char **sptr)
 DECL|_get_digit|function|static char _get_digit(uint32_t fract[], int *digit_count)
-DECL|_ladd|function|static void _ladd(uint32_t result[], uint32_t value[])
+DECL|_ladd|function|static void __attribute__((noinline)) _ladd(uint32_t *result, uint32_t *value)
 DECL|_ldiv5|function|static void _ldiv5(uint32_t value[])
 DECL|_llshift|function|static void _llshift(uint32_t value[])
-DECL|_lrshift|function|static void _lrshift(uint32_t value[])
 DECL|_prf|function|int _prf(int (*func)(), void *dest, char *format, va_list vargs)
 DECL|_reverse_and_pad|function|static int _reverse_and_pad(char *start, char *end, int minlen)
 DECL|_rlrshift|function|static void _rlrshift(uint32_t value[])
