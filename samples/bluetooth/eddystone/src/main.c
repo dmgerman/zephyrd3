@@ -1,5 +1,6 @@
 DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
+DECL|EDS_IDLE_TIMEOUT|macro|EDS_IDLE_TIMEOUT
 DECL|EDS_LOCKED|enumerator|EDS_LOCKED = 0x00,
 DECL|EDS_SLOT_EID|enumerator|EDS_SLOT_EID = sys_cpu_to_be16(BIT(3)),
 DECL|EDS_SLOT_TLM|enumerator|EDS_SLOT_TLM = sys_cpu_to_be16(BIT(2)),
@@ -23,6 +24,9 @@ DECL|ad|member|struct bt_data ad[3];
 DECL|ad|variable|ad
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|challenge|member|uint8_t challenge[16];
+DECL|conn_callbacks|variable|conn_callbacks
+DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|eds_active_slot|variable|eds_active_slot
 DECL|eds_adv_tx_uuid|variable|eds_adv_tx_uuid
 DECL|eds_attrs|variable|eds_attrs
@@ -43,6 +47,8 @@ DECL|eds_slot|struct|struct eds_slot {
 DECL|eds_tx_uuid|variable|eds_tx_uuid
 DECL|eds_unlock_uuid|variable|eds_unlock_uuid
 DECL|eds_uuid|variable|eds_uuid
+DECL|idle_timeout|function|static void idle_timeout(struct nano_work *work)
+DECL|idle_work|variable|idle_work
 DECL|interval|member|uint16_t interval;
 DECL|lock|member|uint8_t lock[16];
 DECL|main|function|void main(void)
