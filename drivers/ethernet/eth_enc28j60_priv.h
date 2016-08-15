@@ -163,6 +163,7 @@ DECL|receive_callback|member|void (*receive_callback)(uint8_t *buffer, uint16_t 
 DECL|rx_rsv|member|uint8_t rx_rsv[RSV_SIZE];
 DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
+DECL|spi_sem|member|struct nano_sem spi_sem;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
 DECL|tx_sem|member|struct nano_sem tx_sem;
