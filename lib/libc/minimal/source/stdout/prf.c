@@ -1,4 +1,3 @@
-DECL|DOUBLE|macro|DOUBLE
 DECL|EOF|macro|EOF
 DECL|MAXFLD|macro|MAXFLD
 DECL|MAXFP1|macro|MAXFP1
@@ -13,7 +12,7 @@ DECL|_prf|function|int _prf(int (*func)(), void *dest, char *format, va_list var
 DECL|_reverse_and_pad|function|static int _reverse_and_pad(char *start, char *end, int minlen)
 DECL|_rlrshift|function|static void _rlrshift(uint32_t value[])
 DECL|_to_dec|function|static int _to_dec(char *buf, int32_t value, int fplus, int fspace, int precision)
-DECL|_to_float|function|static int _to_float(char *buf, uint32_t double_temp[], int full, int c, int falt, int fplus, int fspace, int precision)
+DECL|_to_float|function|static int _to_float(char *buf, uint32_t double_temp[], int c, int falt, int fplus, int fspace, int precision)
 DECL|_to_hex|function|static int _to_hex(char *buf, uint32_t value, int alt_form, int precision, int prefix)
 DECL|_to_octal|function|static int _to_octal(char *buf, uint32_t value, int alt_form, int precision)
 DECL|_to_udec|function|static int _to_udec(char *buf, uint32_t value, int precision)
