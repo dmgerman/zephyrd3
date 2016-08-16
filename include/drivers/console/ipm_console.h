@@ -5,6 +5,7 @@ DECL|IPM_CONSOLE_STDOUT|macro|IPM_CONSOLE_STDOUT
 DECL|_IPM_CONSOLE_H_|macro|_IPM_CONSOLE_H_
 DECL|bind_to|member|char *bind_to;
 DECL|bind_to|member|char *bind_to;
+DECL|channel_disabled|member|int channel_disabled;
 DECL|fiber_stack|member|char *fiber_stack;
 DECL|flags|member|int flags;
 DECL|flags|member|unsigned int flags;
