@@ -7,6 +7,7 @@ DECL|INLINE|macro|INLINE
 DECL|INLINE|macro|INLINE
 DECL|INT_TO_POINTER|macro|INT_TO_POINTER
 DECL|IS_ARRAY|macro|IS_ARRAY
+DECL|IS_ENABLED|macro|IS_ENABLED
 DECL|KB|macro|KB
 DECL|KHZ|macro|KHZ
 DECL|MB|macro|MB
@@ -18,7 +19,11 @@ DECL|ROUND_DOWN|macro|ROUND_DOWN
 DECL|ROUND_UP|macro|ROUND_UP
 DECL|UINT_TO_POINTER|macro|UINT_TO_POINTER
 DECL|ZERO_OR_COMPILE_ERROR|macro|ZERO_OR_COMPILE_ERROR
+DECL|_IS_ENABLED1|macro|_IS_ENABLED1
+DECL|_IS_ENABLED2|macro|_IS_ENABLED2
+DECL|_IS_ENABLED3|macro|_IS_ENABLED3
 DECL|_UTIL__H_|macro|_UTIL__H_
+DECL|_XXXX1|macro|_XXXX1
 DECL|arithmetic_shift_right|function|static inline int64_t arithmetic_shift_right(int64_t value, uint8_t shift)
 DECL|ceiling_fraction|macro|ceiling_fraction
 DECL|is_power_of_two|function|static inline int is_power_of_two(unsigned int x)
