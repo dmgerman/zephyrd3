@@ -26,7 +26,7 @@ DECL|bt_l2cap_br_chan_connect|function|int bt_l2cap_br_chan_connect(struct bt_co
 DECL|bt_l2cap_br_chan_disconnect|function|int bt_l2cap_br_chan_disconnect(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_br_chan_send|function|int bt_l2cap_br_chan_send(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_l2cap_br_connected|function|void bt_l2cap_br_connected(struct bt_conn *conn)
-DECL|bt_l2cap_br_fixed_chan_register|function|static void bt_l2cap_br_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
+DECL|bt_l2cap_br_fixed_chan_register|function|void bt_l2cap_br_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
 DECL|bt_l2cap_br_init|function|void bt_l2cap_br_init(void)
 DECL|bt_l2cap_br_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_br_lookup_rx_cid(struct bt_conn *conn,uint16_t cid)
 DECL|bt_l2cap_br_lookup_tx_cid|function|static struct bt_l2cap_chan *bt_l2cap_br_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
