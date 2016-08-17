@@ -114,7 +114,6 @@ DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
-DECL|mask|member|uint8_t mask;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mps|member|uint16_t mps;
