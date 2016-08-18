@@ -1,9 +1,12 @@
+DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|ack_timeout|function|static void ack_timeout(struct nano_work *work)
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, uint16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
+DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net_buf *buf,struct sockaddr *addr)
 DECL|find_available_port|function|static uint16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)
 DECL|net_context_accept|function|int net_context_accept(struct net_context *context, net_context_accept_cb_t cb, int32_t timeout, void *user_data)
@@ -16,6 +19,17 @@ DECL|net_context_put|function|int net_context_put(struct net_context *context)
 DECL|net_context_recv|function|int net_context_recv(struct net_context *context, net_context_recv_cb_t cb, int32_t timeout, void *user_data)
 DECL|net_context_sendto|function|int net_context_sendto(struct net_buf *buf, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, int32_t timeout,
 DECL|net_context_send|function|int net_context_send(struct net_buf *buf, net_context_send_cb_t cb, int32_t timeout, void *token, void *user_data)
+DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
+DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
+DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
+DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|packet_received|function|enum net_verdict packet_received(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|send_ack|function|static inline int send_ack(struct net_context *context, struct sockaddr *remote)
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_buf *buf, net_context_send_cb_t cb, int32_t timeout, void *token,
+DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
+DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr *remote)
+DECL|send_syn|function|static inline int send_syn(struct net_context *context, const struct sockaddr *remote)
 DECL|set_appdata_values|function|static void set_appdata_values(struct net_buf *buf, enum net_ip_protocol proto, size_t total_len)
+DECL|tcp_established|function|static enum net_verdict tcp_established(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|tcp_syn_rcvd|function|static enum net_verdict tcp_syn_rcvd(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|tcp_synack_received|function|static enum net_verdict tcp_synack_received(struct net_conn *conn, struct net_buf *buf, void *user_data)

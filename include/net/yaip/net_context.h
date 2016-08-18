@@ -1,16 +1,19 @@
-DECL|NET_CONTEXT_CLOSING|enumerator|NET_CONTEXT_CLOSING = 3,
 DECL|NET_CONTEXT_CONFIGURING|enumerator|NET_CONTEXT_CONFIGURING = 1,
+DECL|NET_CONTEXT_CONNECTED|enumerator|NET_CONTEXT_CONNECTED = 2,
+DECL|NET_CONTEXT_CONNECTING|enumerator|NET_CONTEXT_CONNECTING = 1,
 DECL|NET_CONTEXT_FAMILY|macro|NET_CONTEXT_FAMILY
 DECL|NET_CONTEXT_IDLE|enumerator|NET_CONTEXT_IDLE = 0,
 DECL|NET_CONTEXT_IN_USE|macro|NET_CONTEXT_IN_USE
-DECL|NET_CONTEXT_LISTEN|macro|NET_CONTEXT_LISTEN
+DECL|NET_CONTEXT_LISTENING|enumerator|NET_CONTEXT_LISTENING = 3,
 DECL|NET_CONTEXT_PROTO|macro|NET_CONTEXT_PROTO
 DECL|NET_CONTEXT_READY|enumerator|NET_CONTEXT_READY = 2,
 DECL|NET_CONTEXT_REMOTE_ADDR_SET|macro|NET_CONTEXT_REMOTE_ADDR_SET
 DECL|NET_CONTEXT_STATE_MASK|macro|NET_CONTEXT_STATE_MASK
 DECL|NET_CONTEXT_STATE_SHIFT|macro|NET_CONTEXT_STATE_SHIFT
 DECL|NET_CONTEXT_TYPE|macro|NET_CONTEXT_TYPE
+DECL|NET_CONTEXT_UNCONNECTED|enumerator|NET_CONTEXT_UNCONNECTED = 0,
 DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
+DECL|accept_cb|member|net_context_accept_cb_t accept_cb;
 DECL|conn_handler|member|void *conn_handler;
 DECL|flags|member|uint8_t flags;
 DECL|iface|member|uint8_t iface;
@@ -37,4 +40,5 @@ DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_data_wait|member|struct nano_sem recv_data_wait;
 DECL|remote|member|struct sockaddr remote;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
+DECL|tcp|member|struct net_tcp *tcp;
 DECL|user_data|member|void *user_data;
