@@ -4,6 +4,7 @@ DECL|NET_IPV6_BUF|macro|NET_IPV6_BUF
 DECL|NET_NBUF_DATA|enumerator|NET_NBUF_DATA = 2,
 DECL|NET_NBUF_RX|enumerator|NET_NBUF_RX = 0,
 DECL|NET_NBUF_TX|enumerator|NET_NBUF_TX = 1,
+DECL|NET_TCP_BUF|macro|NET_TCP_BUF
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
 DECL|appdatalen|member|uint16_t appdatalen;
