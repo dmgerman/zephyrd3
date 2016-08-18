@@ -46,6 +46,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|ack|member|uint8_t ack[4];
+DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
@@ -53,11 +56,13 @@ DECL|code|member|uint8_t code;
 DECL|data|member|char data[NET_SOCKADDR_MAX_SIZE - sizeof(sa_family_t)];
 DECL|data|member|char data[NET_SOCKADDR_PTR_MAX_SIZE - sizeof(sa_family_t)];
 DECL|dst_port|member|uint16_t dst_port;
+DECL|dst_port|member|uint16_t dst_port;
 DECL|dst|member|struct in6_addr dst;
 DECL|dst|member|struct in_addr dst;
 DECL|family|member|sa_family_t family;
 DECL|family|member|sa_family_t family;
 DECL|family|member|sa_family_t family;
+DECL|flags|member|uint8_t flags;
 DECL|flow|member|uint16_t flow;
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|htonl|macro|htonl
@@ -107,12 +112,15 @@ DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struc
 DECL|net_sin6|function|static inline struct sockaddr_in6 *net_sin6(const struct sockaddr *addr)
 DECL|net_sin|function|static inline struct sockaddr_in *net_sin(const struct sockaddr *addr)
 DECL|net_sock_type|enum|enum net_sock_type {
+DECL|net_tcp_hdr|struct|struct net_tcp_hdr {
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|ntohl|macro|ntohl
 DECL|ntohs|macro|ntohs
+DECL|offset|member|uint8_t offset;
 DECL|offset|member|uint8_t offset[2];
+DECL|optdata|member|uint8_t optdata[0];
 DECL|proto|member|uint8_t proto;
 DECL|remote_addr|member|struct net_addr *remote_addr;
 DECL|remote_port|member|uint16_t remote_port;
@@ -124,6 +132,7 @@ DECL|s6_addr32|macro|s6_addr32
 DECL|s6_addr|macro|s6_addr
 DECL|s_addr|macro|s_addr
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|seq|member|uint8_t seq[4];
 DECL|sin6_addr|member|struct in6_addr *sin6_addr; /* IPv6 address */
 DECL|sin6_addr|member|struct in6_addr sin6_addr; /* IPv6 address */
 DECL|sin6_family|member|sa_family_t sin6_family; /* AF_INET6 */
@@ -146,6 +155,7 @@ DECL|sockaddr_ptr|struct|struct sockaddr_ptr {
 DECL|sockaddr|struct|struct sockaddr {
 DECL|socklen_t|typedef|typedef size_t socklen_t;
 DECL|src_port|member|uint16_t src_port;
+DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|src|member|struct in_addr src;
 DECL|tcflow|member|uint8_t tcflow;
@@ -158,5 +168,7 @@ DECL|u4_addr8|member|uint8_t u4_addr8[4];
 DECL|u6_addr16|member|uint16_t u6_addr16[8]; /* In big endian */
 DECL|u6_addr32|member|uint32_t u6_addr32[4]; /* In big endian */
 DECL|u6_addr8|member|uint8_t u6_addr8[16];
+DECL|urg|member|uint8_t urg[2];
 DECL|vhl|member|uint8_t vhl;
 DECL|vtc|member|uint8_t vtc;
+DECL|wnd|member|uint8_t wnd[2];
