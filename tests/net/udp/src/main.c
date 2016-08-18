@@ -31,6 +31,7 @@ DECL|recv_lock|variable|recv_lock
 DECL|remote_addr|member|const struct sockaddr *remote_addr;
 DECL|remote_port|member|uint16_t remote_port;
 DECL|returned_ud|variable|returned_ud
+DECL|run_tests|function|static bool run_tests(void)
 DECL|send_ipv4_udp_msg|function|static bool send_ipv4_udp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, uint16_t src_port, uint16_t dst_port,
 DECL|send_ipv6_udp_msg|function|static bool send_ipv6_udp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, uint16_t src_port, uint16_t dst_port,
 DECL|send_status|variable|send_status
