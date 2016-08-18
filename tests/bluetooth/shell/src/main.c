@@ -38,6 +38,7 @@ DECL|cmd_bredr_discoverable|function|static int cmd_bredr_discoverable(int argc,
 DECL|cmd_bredr_discovery|function|static int cmd_bredr_discovery(int argc, char *argv[])
 DECL|cmd_bredr_l2cap_register|function|static int cmd_bredr_l2cap_register(int argc, char *argv[])
 DECL|cmd_bredr_oob|function|static int cmd_bredr_oob(int argc, char *argv[])
+DECL|cmd_bredr_rfcomm_register|function|static int cmd_bredr_rfcomm_register(int argc, char *argv[])
 DECL|cmd_connect_bredr|function|static int cmd_connect_bredr(int argc, char *argv[])
 DECL|cmd_connect_le|function|static int cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static int cmd_disconnect(int argc, char *argv[])
@@ -100,6 +101,13 @@ DECL|read_func|function|static uint8_t read_func(struct bt_conn *conn, uint8_t e
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_params|variable|read_params
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)
+DECL|rfcomm_bredr_accept|function|static int rfcomm_bredr_accept(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc)
+DECL|rfcomm_bredr_connected|function|static void rfcomm_bredr_connected(struct bt_rfcomm_dlc *dlci)
+DECL|rfcomm_bredr_disconnected|function|static void rfcomm_bredr_disconnected(struct bt_rfcomm_dlc *dlci)
+DECL|rfcomm_bredr_ops|variable|rfcomm_bredr_ops
+DECL|rfcomm_bredr_recv|function|static void rfcomm_bredr_recv(struct bt_rfcomm_dlc *dlci, struct net_buf *buf)
+DECL|rfcomm_dlc|variable|rfcomm_dlc
+DECL|rfcomm_server|variable|rfcomm_server
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
