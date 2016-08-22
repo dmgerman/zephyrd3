@@ -1,0 +1,6 @@
+DECL|expect_one_parameter|function|static void expect_one_parameter(int a)
+DECL|expect_two_parameters|function|static void expect_two_parameters(int a, int b)
+DECL|parameter_tests|function|static void parameter_tests(void)
+DECL|return_value_tests|function|static void return_value_tests(void)
+DECL|returns_int|function|static int returns_int(void)
+DECL|test_main|function|void test_main(void)
