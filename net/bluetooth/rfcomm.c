@@ -6,6 +6,7 @@ DECL|RFCOMM_DEFAULT_CREDIT|macro|RFCOMM_DEFAULT_CREDIT
 DECL|RFCOMM_DEFAULT_MTU|macro|RFCOMM_DEFAULT_MTU
 DECL|RFCOMM_MIN_MTU|macro|RFCOMM_MIN_MTU
 DECL|RFCOMM_SESSION|macro|RFCOMM_SESSION
+DECL|bt_rfcomm_dlc_send|function|int bt_rfcomm_dlc_send(struct bt_rfcomm_dlc *dlc, struct net_buf *buf)
 DECL|bt_rfcomm_init|function|void bt_rfcomm_init(void)
 DECL|bt_rfcomm_pool|variable|bt_rfcomm_pool
 DECL|bt_rfcomm_server_register|function|int bt_rfcomm_server_register(struct bt_rfcomm_server *server)
