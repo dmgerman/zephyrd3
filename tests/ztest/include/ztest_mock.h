@@ -1,0 +1,8 @@
+DECL|__ZTEST_MOCK_H__|macro|__ZTEST_MOCK_H__
+DECL|_cleanup_mock|macro|_cleanup_mock
+DECL|_init_mock|macro|_init_mock
+DECL|ztest_check_expected_value|macro|ztest_check_expected_value
+DECL|ztest_expect_value|macro|ztest_expect_value
+DECL|ztest_get_return_value_ptr|macro|ztest_get_return_value_ptr
+DECL|ztest_get_return_value|macro|ztest_get_return_value
+DECL|ztest_returns_value|macro|ztest_returns_value
