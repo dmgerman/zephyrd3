@@ -18,6 +18,7 @@ DECL|rfcomm_disconnected|function|static void rfcomm_disconnected(struct bt_l2ca
 DECL|rfcomm_dlc_accept|function|static int rfcomm_dlc_accept(struct bt_rfcomm_session *session, uint8_t dlci, struct bt_rfcomm_dlc **dlc)
 DECL|rfcomm_dlc_connected|function|static void rfcomm_dlc_connected(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlcs_lookup_dlci|function|static struct bt_rfcomm_dlc *rfcomm_dlcs_lookup_dlci(struct bt_rfcomm_dlc *dlcs, uint8_t dlci)
+DECL|rfcomm_handle_data|function|static void rfcomm_handle_data(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t dlci, uint8_t pf)
 DECL|rfcomm_handle_msc|function|static void rfcomm_handle_msc(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
 DECL|rfcomm_handle_msg|function|static void rfcomm_handle_msg(struct bt_rfcomm_session *session, struct net_buf *buf)
 DECL|rfcomm_handle_pn|function|static void rfcomm_handle_pn(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
