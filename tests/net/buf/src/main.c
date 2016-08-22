@@ -1,5 +1,3 @@
-DECL|DBG|macro|DBG
-DECL|DBG|macro|DBG
 DECL|LL_HEADERS|macro|LL_HEADERS
 DECL|PROTO_HEADERS|macro|PROTO_HEADERS
 DECL|TEST_TIMEOUT|macro|TEST_TIMEOUT
@@ -18,28 +16,25 @@ DECL|frag_destroy_big|function|static void frag_destroy_big(struct net_buf *buf)
 DECL|frag_destroy_called|variable|frag_destroy_called
 DECL|frag_destroy|function|static void frag_destroy(struct net_buf *buf)
 DECL|frags_fifo|variable|frags_fifo
-DECL|func|member|bool (*func)(void);
 DECL|hci_opcode|member|uint16_t hci_opcode;
 DECL|hci_sync|member|void *hci_sync;
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|ipv6_hdr|struct|struct ipv6_hdr {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len[2];
-DECL|main|function|void main(void)
-DECL|name|member|const char *name;
-DECL|net_buf_test_1|function|static bool net_buf_test_1(void)
-DECL|net_buf_test_2|function|static bool net_buf_test_2(void)
-DECL|net_buf_test_3|function|static bool net_buf_test_3(void)
-DECL|net_buf_test_4|function|static bool net_buf_test_4(void)
-DECL|net_buf_test_big_buf|function|static bool net_buf_test_big_buf(void)
-DECL|net_buf_test_multi_frags|function|static bool net_buf_test_multi_frags(void)
+DECL|net_buf_test_1|function|static void net_buf_test_1(void)
+DECL|net_buf_test_2|function|static void net_buf_test_2(void)
+DECL|net_buf_test_3|function|static void net_buf_test_3(void)
+DECL|net_buf_test_4|function|static void net_buf_test_4(void)
+DECL|net_buf_test_big_buf|function|static void net_buf_test_big_buf(void)
+DECL|net_buf_test_multi_frags|function|static void net_buf_test_multi_frags(void)
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|no_data_buf_fifo|variable|no_data_buf_fifo
 DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|tcflow|member|uint8_t tcflow;
 DECL|test_3_fiber|function|static void test_3_fiber(int arg1, int arg2)
-DECL|tests|variable|tests
+DECL|test_main|function|void test_main(void)
 DECL|type|member|uint8_t type;
 DECL|udp_hdr|struct|struct udp_hdr {
 DECL|vtc|member|uint8_t vtc;
