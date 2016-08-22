@@ -36,7 +36,6 @@ DECL|cc2520_set_ieee_addr|function|static int cc2520_set_ieee_addr(struct device
 DECL|cc2520_set_object|function|static radio_result_t cc2520_set_object(radio_param_t param,const void *src, size_t size)
 DECL|cc2520_set_pan_id|function|static int cc2520_set_pan_id(struct device *dev, uint16_t pan_id)
 DECL|cc2520_set_short_addr|function|static int cc2520_set_short_addr(struct device *dev, uint16_t short_addr)
-DECL|cc2520_set_txpower|function|static int cc2520_set_txpower(struct device *dev, short dbm)
 DECL|cc2520_set_value|function|static radio_result_t cc2520_set_value(radio_param_t param, radio_value_t value)
 DECL|cc2520_sglt|variable|cc2520_sglt
 DECL|cc2520_start|function|static int cc2520_start(struct device *dev)
