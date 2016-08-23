@@ -7,7 +7,6 @@ DECL|SPI_MAX_CLK_FREQ_250KHZ|macro|SPI_MAX_CLK_FREQ_250KHZ
 DECL|SPI_SLAVE|macro|SPI_SLAVE
 DECL|SPI_SLAVE|macro|SPI_SLAVE
 DECL|SPI_SLAVE|macro|SPI_SLAVE
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_spi_show|function|static void _spi_show(struct spi_config *spi_conf)
 DECL|main|function|void main(void)
 DECL|print_buf_hex|function|static void print_buf_hex(unsigned char *b, uint32_t len)
