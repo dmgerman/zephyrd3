@@ -1,6 +1,7 @@
 DECL|MY_PORT|macro|MY_PORT
+DECL|PRINT|macro|PRINT
+DECL|PRINT|macro|PRINT
 DECL|STACKSIZE|macro|STACKSIZE
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|WAIT_TICKS|macro|WAIT_TICKS
 DECL|ecdsa_priv_key|variable|ecdsa_priv_key
 DECL|ecdsa_pub_key_x|variable|ecdsa_pub_key_x
