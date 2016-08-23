@@ -1,7 +1,9 @@
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
+DECL|DBG|macro|DBG
 DECL|DFU_FLASH_ADDR|macro|DFU_FLASH_ADDR
 DECL|HIGH_BYTE|macro|HIGH_BYTE
 DECL|LOW_BYTE|macro|LOW_BYTE
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|alt_setting|member|uint32_t alt_setting; /* DFU alternate setting */
 DECL|block_nr|member|uint16_t block_nr; /* DFU block number */
 DECL|buffer|member|uint8_t buffer[DFU_MAX_XFER_SIZE]; /* DFU data buffer */
