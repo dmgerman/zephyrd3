@@ -1,2 +1,3 @@
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|PRINT|macro|PRINT
+DECL|PRINT|macro|PRINT
 DECL|main|function|void main(void)
