@@ -31,6 +31,7 @@ DECL|hci_version|member|uint8_t hci_version;
 DECL|id_addr|member|bt_addr_le_t id_addr;
 DECL|irk|member|uint8_t irk[16];
 DECL|le|member|struct bt_dev_le le;
+DECL|lmp_br_sc_capable|macro|lmp_br_sc_capable
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
 DECL|lmp_le_capable|macro|lmp_le_capable
 DECL|manufacturer|member|uint16_t manufacturer;

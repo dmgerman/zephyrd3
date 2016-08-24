@@ -166,6 +166,7 @@ DECL|BT_HCI_OP_USER_PASSKEY_REPLY|macro|BT_HCI_OP_USER_PASSKEY_REPLY
 DECL|BT_HCI_OP_WRITE_INQUIRY_MODE|macro|BT_HCI_OP_WRITE_INQUIRY_MODE
 DECL|BT_HCI_OP_WRITE_LOCAL_NAME|macro|BT_HCI_OP_WRITE_LOCAL_NAME
 DECL|BT_HCI_OP_WRITE_SCAN_ENABLE|macro|BT_HCI_OP_WRITE_SCAN_ENABLE
+DECL|BT_HCI_OP_WRITE_SC_HOST_SUPP|macro|BT_HCI_OP_WRITE_SC_HOST_SUPP
 DECL|BT_HCI_OP_WRITE_SSP_MODE|macro|BT_HCI_OP_WRITE_SSP_MODE
 DECL|BT_HCI_ROLE_MASTER|macro|BT_HCI_ROLE_MASTER
 DECL|BT_HCI_ROLE_SLAVE|macro|BT_HCI_ROLE_SLAVE
@@ -196,6 +197,7 @@ DECL|BT_LMP_HOST_SSP|macro|BT_LMP_HOST_SSP
 DECL|BT_LMP_LE|macro|BT_LMP_LE
 DECL|BT_LMP_NO_BREDR|macro|BT_LMP_NO_BREDR
 DECL|BT_LMP_REMOTE_EXT_FEATURES|macro|BT_LMP_REMOTE_EXT_FEATURES
+DECL|BT_LMP_SC|macro|BT_LMP_SC
 DECL|BT_MITM|macro|BT_MITM
 DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
@@ -203,6 +205,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -399,6 +402,7 @@ DECL|bt_hci_cp_user_passkey_neg_reply|struct|struct bt_hci_cp_user_passkey_neg_r
 DECL|bt_hci_cp_user_passkey_reply|struct|struct bt_hci_cp_user_passkey_reply {
 DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
+DECL|bt_hci_cp_write_sc_host_supp|struct|struct bt_hci_cp_write_sc_host_supp {
 DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
@@ -626,6 +630,7 @@ DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
+DECL|sc_support|member|uint8_t sc_support;
 DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_type|member|uint8_t scan_type;
 DECL|scan_window|member|uint16_t scan_window;
