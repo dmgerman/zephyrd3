@@ -84,6 +84,7 @@ DECL|event_conn_update_st_rsp|function|static inline void event_conn_update_st_r
 DECL|event_connection_prepare|function|static void event_connection_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, struct connection *conn)
 DECL|event_enc_prep|function|static inline void event_enc_prep(struct connection *conn)
 DECL|event_fex_prep|function|static inline void event_fex_prep(struct connection *conn)
+DECL|event_inactive|function|static void event_inactive(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_len_prep|function|static inline void event_len_prep(struct connection *conn)
 DECL|event_master_prepare|function|static void event_master_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_master|function|static void event_master(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
@@ -246,7 +247,7 @@ DECL|unknown_rsp_send|function|static void unknown_rsp_send(struct connection *c
 DECL|version_ind_send|function|static void version_ind_send(struct connection *conn)
 DECL|win_offset_us|member|uint32_t win_offset_us;
 DECL|work_radio_active|function|static void work_radio_active(void *params)
-DECL|work_radio_deassert|function|static void work_radio_deassert(void *params)
+DECL|work_radio_inactive|function|static void work_radio_inactive(void *params)
 DECL|work_radio_stop|function|static void work_radio_stop(void *params)
 DECL|work_sched_after_master_free_offset_get|function|static void work_sched_after_master_free_offset_get(void *params)
 DECL|work_sched_free_win_offset_calc|function|static void work_sched_free_win_offset_calc(void *params)
