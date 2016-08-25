@@ -7,6 +7,7 @@ DECL|TICKER_USER_OP_TYPE_START|enumerator|TICKER_USER_OP_TYPE_START,
 DECL|TICKER_USER_OP_TYPE_STOP|enumerator|TICKER_USER_OP_TYPE_STOP,
 DECL|TICKER_USER_OP_TYPE_UPDATE|enumerator|TICKER_USER_OP_TYPE_UPDATE,
 DECL|_instance|variable|_instance
+DECL|ack|member|uint8_t ack;
 DECL|context|member|void *context;
 DECL|context|member|void *context;
 DECL|count_node|member|uint8_t count_node;
@@ -21,8 +22,6 @@ DECL|fp_op_func|member|ticker_op_func fp_op_func;
 DECL|fp_timeout_func|member|ticker_timeout_func fp_timeout_func;
 DECL|fp_worker_sched|member|ticker_fp_sched fp_worker_sched;
 DECL|id|member|uint8_t id;
-DECL|is_sched_ack|member|uint8_t is_sched_ack;
-DECL|is_sched_req|member|uint8_t is_sched_req;
 DECL|job_guard|member|uint8_t job_guard;
 DECL|last|member|uint8_t last;
 DECL|lazy_current|member|uint16_t lazy_current;
@@ -39,6 +38,7 @@ DECL|prepare_ticks_to_expire|function|static void prepare_ticks_to_expire(struct
 DECL|remainder_current|member|uint32_t remainder_current;
 DECL|remainder_periodic|member|uint32_t remainder_periodic;
 DECL|remainder_periodic|member|uint32_t remainder_periodic;
+DECL|req|member|uint8_t req;
 DECL|slot_get|member|struct ticker_user_op_slot_get slot_get;
 DECL|start|member|struct ticker_user_op_start start;
 DECL|status|member|uint32_t status;
