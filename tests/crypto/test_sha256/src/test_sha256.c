@@ -1,4 +1,4 @@
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|test_10|function|uint32_t test_10(void)
 DECL|test_11|function|uint32_t test_11(void)
 DECL|test_12|function|uint32_t test_12(void)

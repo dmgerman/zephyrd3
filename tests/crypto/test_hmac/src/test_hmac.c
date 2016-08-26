@@ -1,5 +1,5 @@
 DECL|do_hmac_test|function|uint32_t do_hmac_test(TCHmacState_t h, uint32_t testnum, const uint8_t *data, size_t datalen, const uint8_t *expected, size_t expectedlen)
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|test_1|function|uint32_t test_1(void)
 DECL|test_2|function|uint32_t test_2(void)
 DECL|test_3|function|uint32_t test_3(void)

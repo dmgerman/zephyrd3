@@ -1,5 +1,5 @@
 DECL|BUF_LEN|macro|BUF_LEN
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|show|function|static void show(const char *label, const uint8_t *s, size_t slen)
 DECL|verify_cmac_1_block_msg|function|static uint32_t verify_cmac_1_block_msg(TCCmacState_t s)
 DECL|verify_cmac_320_bit_msg|function|static uint32_t verify_cmac_320_bit_msg(TCCmacState_t s)
