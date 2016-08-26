@@ -1,4 +1,3 @@
-DECL|BT_RFCOMM_SEND_RESERVE|macro|BT_RFCOMM_SEND_RESERVE
 DECL|__BT_RFCOMM_H|macro|__BT_RFCOMM_H
 DECL|_next|member|struct bt_rfcomm_dlc *_next;
 DECL|_next|member|struct bt_rfcomm_server *_next;
