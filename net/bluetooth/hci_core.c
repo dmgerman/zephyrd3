@@ -128,7 +128,6 @@ DECL|read_bdaddr_complete|function|static void read_bdaddr_complete(struct net_b
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_buffer_size_complete|function|static void read_buffer_size_complete(struct net_buf *buf)
 DECL|read_le_features_complete|function|static void read_le_features_complete(struct net_buf *buf)
-DECL|read_local_features_complete|function|static void read_local_features_complete(struct net_buf *buf)
 DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct net_buf *buf)
 DECL|read_remote_ext_features_complete|function|static void read_remote_ext_features_complete(struct net_buf *buf)
 DECL|read_remote_features_complete|function|static void read_remote_features_complete(struct net_buf *buf)

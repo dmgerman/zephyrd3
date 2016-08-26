@@ -146,6 +146,7 @@ DECL|BT_HCI_OP_PIN_CODE_NEG_REPLY|macro|BT_HCI_OP_PIN_CODE_NEG_REPLY
 DECL|BT_HCI_OP_PIN_CODE_REPLY|macro|BT_HCI_OP_PIN_CODE_REPLY
 DECL|BT_HCI_OP_READ_BD_ADDR|macro|BT_HCI_OP_READ_BD_ADDR
 DECL|BT_HCI_OP_READ_BUFFER_SIZE|macro|BT_HCI_OP_READ_BUFFER_SIZE
+DECL|BT_HCI_OP_READ_LOCAL_EXT_FEATURES|macro|BT_HCI_OP_READ_LOCAL_EXT_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_FEATURES|macro|BT_HCI_OP_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
 DECL|BT_HCI_OP_READ_REMOTE_EXT_FEATURES|macro|BT_HCI_OP_READ_REMOTE_EXT_FEATURES
@@ -202,6 +203,7 @@ DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -384,6 +386,7 @@ DECL|bt_hci_cp_link_key_neg_reply|struct|struct bt_hci_cp_link_key_neg_reply {
 DECL|bt_hci_cp_link_key_reply|struct|struct bt_hci_cp_link_key_reply {
 DECL|bt_hci_cp_pin_code_neg_reply|struct|struct bt_hci_cp_pin_code_neg_reply {
 DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
+DECL|bt_hci_cp_read_local_ext_features|struct|struct bt_hci_cp_read_local_ext_features {
 DECL|bt_hci_cp_read_remote_ext_features|struct|struct bt_hci_cp_read_remote_ext_features {
 DECL|bt_hci_cp_read_remote_features|struct|struct bt_hci_cp_read_remote_features {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
@@ -442,6 +445,7 @@ DECL|bt_hci_rp_pin_code_neg_reply|struct|struct bt_hci_rp_pin_code_neg_reply {
 DECL|bt_hci_rp_pin_code_reply|struct|struct bt_hci_rp_pin_code_reply {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
 DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
+DECL|bt_hci_rp_read_local_ext_features|struct|struct bt_hci_rp_read_local_ext_features {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
@@ -485,6 +489,7 @@ DECL|events|member|uint8_t events[8];
 DECL|events|member|uint8_t events[8];
 DECL|evt_type|member|uint8_t evt_type;
 DECL|evt|member|uint8_t evt;
+DECL|ext_features|member|uint8_t ext_features[8];
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
@@ -566,6 +571,7 @@ DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|max_page|member|uint8_t max_page;
+DECL|max_page|member|uint8_t max_page;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
 DECL|min_ce_len|member|uint16_t min_ce_len;
@@ -587,6 +593,8 @@ DECL|opcode|member|uint16_t opcode;
 DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|own_addr_type|member|uint8_t own_addr_type;
 DECL|packet_type|member|uint16_t packet_type;
+DECL|page|member|uint8_t page;
+DECL|page|member|uint8_t page;
 DECL|page|member|uint8_t page;
 DECL|page|member|uint8_t page;
 DECL|param_len|member|uint8_t param_len;
@@ -626,6 +634,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
