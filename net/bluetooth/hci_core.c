@@ -144,8 +144,7 @@ DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|uint8_t resolving;
 DECL|rpa_timeout|function|static void rpa_timeout(struct nano_work *work)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
-DECL|set_advertise_disable|function|static int set_advertise_disable(void)
-DECL|set_advertise_enable|function|static int set_advertise_enable(void)
+DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
 DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
