@@ -33,6 +33,7 @@ DECL|irk|member|uint8_t irk[16];
 DECL|le|member|struct bt_dev_le le;
 DECL|lmp_br_sc_capable|macro|lmp_br_sc_capable
 DECL|lmp_bredr_capable|macro|lmp_bredr_capable
+DECL|lmp_ext_feat_capable|macro|lmp_ext_feat_capable
 DECL|lmp_le_capable|macro|lmp_le_capable
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|mtu|member|uint16_t mtu;
