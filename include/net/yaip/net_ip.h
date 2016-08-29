@@ -144,6 +144,7 @@ DECL|sockaddr_in_ptr|struct|struct sockaddr_in_ptr {
 DECL|sockaddr_in|struct|struct sockaddr_in {
 DECL|sockaddr_ptr|struct|struct sockaddr_ptr {
 DECL|sockaddr|struct|struct sockaddr {
+DECL|socklen_t|typedef|typedef size_t socklen_t;
 DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|src|member|struct in_addr src;

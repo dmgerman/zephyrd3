@@ -8,7 +8,7 @@ DECL|WAIT_TIME_LONG|macro|WAIT_TIME_LONG
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
-DECL|accept_cb|function|static void accept_cb(struct net_context *context, void *user_data)
+DECL|accept_cb|function|static void accept_cb(struct net_context *context, struct sockaddr *addr, socklen_t addrlen, void *user_data)
 DECL|cb_failure|variable|cb_failure
 DECL|connect_cb|function|static void connect_cb(struct net_context *context, void *user_data)
 DECL|data_failure|variable|data_failure
