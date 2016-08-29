@@ -119,8 +119,8 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_update_cmplt|member|struct hci_evt_le_meta_conn_update_complete conn_update_cmplt;
-DECL|controller_cmd_handle|function|static void controller_cmd_handle(struct hci_cmd *cmd, uint8_t *len,uint8_t **out)
-DECL|ctrl_bb_cmd_handle|function|static void ctrl_bb_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
+DECL|controller_cmd_handle|function|static int controller_cmd_handle(struct hci_cmd *cmd, uint8_t *len,uint8_t **out)
+DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
 DECL|data|member|uint8_t data[1];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
@@ -247,7 +247,7 @@ DECL|hci_evt|struct|struct __packed hci_evt {
 DECL|hci_handle|function|void hci_handle(uint8_t x, uint8_t *len, uint8_t **out)
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
-DECL|info_cmd_handle|function|static void info_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
+DECL|info_cmd_handle|function|static int info_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_max|member|uint16_t interval_max;
@@ -318,7 +318,7 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
-DECL|link_control_cmd_handle|function|static void link_control_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
+DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(struct hci_cmd *cmd, uint8_t *len)
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
 DECL|local_name|member|uint8_t local_name[1];
@@ -456,6 +456,6 @@ DECL|unknown_hci_command|member|unknown_hci_command;
 DECL|value|member|uint8_t value[64];
 DECL|version_number|member|uint8_t version_number;
 DECL|voice_setting|member|uint8_t voice_setting[2];
-DECL|vs_cmd_handle|function|static void vs_cmd_handle(struct hci_cmd *cmd,uint8_t *len, uint8_t **out)
+DECL|vs_cmd_handle|function|static int vs_cmd_handle(struct hci_cmd *cmd,uint8_t *len, uint8_t **out)
 DECL|whitelist_size|member|uint8_t whitelist_size;
 DECL|window|member|uint16_t window;
