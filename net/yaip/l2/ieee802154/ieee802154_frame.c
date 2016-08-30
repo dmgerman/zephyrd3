@@ -10,5 +10,6 @@ DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struc
 DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_buf *buf)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
 DECL|validate_addr|function|validate_addr(uint8_t *buf, uint8_t **p_buf, enum ieee802154_addressing_mode mode, bool pan_id_compression)
+DECL|validate_beacon|function|validate_beacon(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t length)
 DECL|validate_fc_seq|function|validate_fc_seq(uint8_t *buf, uint8_t **p_buf)
 DECL|validate_payload_and_mfr|function|validate_payload_and_mfr(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t *p_buf, uint8_t length)
