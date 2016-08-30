@@ -11,3 +11,4 @@ DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|main|function|void main(void)
 DECL|sd|variable|sd
+DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
