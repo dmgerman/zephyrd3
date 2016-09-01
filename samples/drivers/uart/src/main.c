@@ -1,6 +1,3 @@
-DECL|UART_DEVICE|macro|UART_DEVICE
-DECL|UART_DEVICE|macro|UART_DEVICE
-DECL|UART_DEVICE|macro|UART_DEVICE
 DECL|banner1|variable|banner1
 DECL|banner2|variable|banner2
 DECL|data_arrived|variable|data_arrived
