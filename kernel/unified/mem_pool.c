@@ -1,6 +1,18 @@
-DECL|k_free|function|void k_free(void *p)
+DECL|MALLOC_ALIGN|macro|MALLOC_ALIGN
+DECL|_QUAD_BLOCK_ALLOCATED|macro|_QUAD_BLOCK_ALLOCATED
+DECL|_QUAD_BLOCK_AVAILABLE|macro|_QUAD_BLOCK_AVAILABLE
+DECL|block_waiters_check|function|static void block_waiters_check(struct k_mem_pool *pool)
+DECL|compute_block_set_index|function|static int compute_block_set_index(struct k_mem_pool *pool, int data_size)
+DECL|defrag|function|static void defrag(struct k_mem_pool *pool, int start_block_set_index, int last_block_set_index)
+DECL|free_existing_block|function|static void free_existing_block(char *ptr, struct k_mem_pool *pool, int index)
+DECL|get_block_recursive|function|static char *get_block_recursive(struct k_mem_pool *pool, int index, int start_index)
+DECL|get_existing_block|function|static char *get_existing_block(struct k_mem_pool_block_set *block_set,int *unused_block_index)
+DECL|heap_mem_pool|variable|heap_mem_pool
+DECL|heap_mem_pool|variable|heap_mem_pool
+DECL|init_one_memory_pool|function|static void init_one_memory_pool(struct k_mem_pool *pool)
+DECL|init_static_pools|function|static int init_static_pools(struct device *unused)
+DECL|k_free|function|void k_free(void *ptr)
 DECL|k_malloc|function|void *k_malloc(uint32_t size)
-DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(k_mem_pool_t id, struct k_block *block, int size,int32_t timeout)
-DECL|k_mem_pool_defrag|function|void k_mem_pool_defrag(k_mem_pool_t id)
-DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_block *block)
-DECL|k_mem_pool_init|function|void k_mem_pool_init(struct k_mem_pool *mem, int max_block_size,int num_max_blocks)
+DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(k_mem_pool_t pool, struct k_mem_block *block, int size, int32_t timeout)
+DECL|k_mem_pool_defrag|function|void k_mem_pool_defrag(k_mem_pool_t pool)
+DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_mem_block *blockptr)

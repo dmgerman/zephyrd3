@@ -144,6 +144,7 @@ DECL|nano_work_submit|macro|nano_work_submit
 DECL|nano_workqueue_start|macro|nano_workqueue_start
 DECL|nano_workqueue|macro|nano_workqueue
 DECL|nano_work|macro|nano_work
+DECL|pool_struct|macro|pool_struct
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
 DECL|sema|member|ksem_t sema;
@@ -169,6 +170,7 @@ DECL|task_fifo_put|function|static inline int task_fifo_put(kfifo_t queue, void 
 DECL|task_fifo_size_get|function|static inline int task_fifo_size_get(kfifo_t queue)
 DECL|task_float_disable|macro|task_float_disable
 DECL|task_float_enable|macro|task_float_enable
+DECL|task_free|macro|task_free
 DECL|task_group_abort|function|static inline void task_group_abort(uint32_t groups)
 DECL|task_group_join|function|static inline void task_group_join(uint32_t groups)
 DECL|task_group_leave|function|static inline void task_group_leave(uint32_t groups)
@@ -177,9 +179,13 @@ DECL|task_group_resume|function|static inline void task_group_resume(uint32_t gr
 DECL|task_group_start|function|static inline void task_group_start(uint32_t groups)
 DECL|task_group_suspend|function|static inline void task_group_suspend(uint32_t groups)
 DECL|task_id_get|macro|task_id_get
+DECL|task_malloc|macro|task_malloc
 DECL|task_mem_map_alloc|function|static inline int task_mem_map_alloc(kmemory_map_t map, void **mptr,int32_t timeout)
 DECL|task_mem_map_free|macro|task_mem_map_free
 DECL|task_mem_map_used_get|macro|task_mem_map_used_get
+DECL|task_mem_pool_alloc|function|static inline int task_mem_pool_alloc(struct k_block *blockptr, kmemory_pool_t pool_id, int reqsize, int32_t timeout)
+DECL|task_mem_pool_defragment|macro|task_mem_pool_defragment
+DECL|task_mem_pool_free|macro|task_mem_pool_free
 DECL|task_mutex_lock|function|static inline int task_mutex_lock(kmutex_t id, int32_t timeout)
 DECL|task_mutex_unlock|macro|task_mutex_unlock
 DECL|task_offload_to_fiber|function|static inline void task_offload_to_fiber(int (*func)(), void *argp)

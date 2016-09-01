@@ -21,6 +21,7 @@ DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_MBOX_DEFINE|macro|K_MBOX_DEFINE
 DECL|K_MBOX_INITIALIZER|macro|K_MBOX_INITIALIZER
+DECL|K_MEMORY_POOL_DEFINE|macro|K_MEMORY_POOL_DEFINE
 DECL|K_MEM_MAP_DEFINE|macro|K_MEM_MAP_DEFINE
 DECL|K_MEM_MAP_INITIALIZER|macro|K_MEM_MAP_INITIALIZER
 DECL|K_MEM_MAP_SIZE|macro|K_MEM_MAP_SIZE
@@ -58,12 +59,18 @@ DECL|_DEBUG_TRACING_KERNEL_OBJECTS_INIT|macro|_DEBUG_TRACING_KERNEL_OBJECTS_INIT
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR|macro|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR|macro|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR
 DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
+DECL|_MEMORY_POOL_BLOCK_SETS_DEFINE|macro|_MEMORY_POOL_BLOCK_SETS_DEFINE
+DECL|_MEMORY_POOL_BUFFER_DEFINE|macro|_MEMORY_POOL_BUFFER_DEFINE
+DECL|_MEMORY_POOL_QUAD_BLOCK_DEFINE|macro|_MEMORY_POOL_QUAD_BLOCK_DEFINE
 DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
 DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
+DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
+DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
 DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
 DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
+DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_k_dyamic_timer_init|macro|_k_dyamic_timer_init
 DECL|_k_mbox_init|macro|_k_mbox_init
@@ -78,12 +85,16 @@ DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|addr_in_pool|member|void *addr_in_pool;
 DECL|base|member|uint32_t *base, *next, *top;
+DECL|block_set|member|struct k_mem_pool_block_set *block_set;
 DECL|block_size|member|int block_size;
+DECL|block_size|member|int block_size; /* memory block size */
+DECL|bufblock|member|char *bufblock;
 DECL|buffer_end|member|char *buffer_end;
 DECL|buffer_start|member|char *buffer_start;
 DECL|buffer|member|char *buffer;
 DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
 DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
+DECL|count|member|int count;
 DECL|count|member|unsigned int count;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
@@ -119,6 +130,8 @@ DECL|k_mbox|struct|struct k_mbox {
 DECL|k_mem_block|struct|struct k_mem_block {
 DECL|k_mem_map_num_used_get|function|static inline int k_mem_map_num_used_get(struct k_mem_map *map)
 DECL|k_mem_map|struct|struct k_mem_map {
+DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
+DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
 DECL|k_mem_pool_t|typedef|typedef struct k_mem_pool *k_mem_pool_t;
 DECL|k_mem_pool|struct|struct k_mem_pool {
 DECL|k_msgq_num_used_get|function|static inline int k_msgq_num_used_get(struct k_msgq *q)
@@ -146,19 +159,25 @@ DECL|list|member|void *list;
 DECL|lock_count|member|uint32_t lock_count;
 DECL|max_block_size|member|int max_block_size;
 DECL|max_msgs|member|uint32_t max_msgs;
+DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory blocks */
+DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
+DECL|min_block_size|member|int min_block_size;
 DECL|msg_size|member|uint32_t msg_size;
 DECL|next|member|uint32_t *base, *next, *top;
 DECL|node|member|sys_dlist_t node;
+DECL|nr_of_block_sets|member|int nr_of_block_sets;
+DECL|nr_of_entries|member|int nr_of_entries; /* nr of quad block structures in the array */
+DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
 DECL|num_blocks|member|int num_blocks;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_lock_state_changes|member|int num_lock_state_changes;
-DECL|num_max_blocks|member|int num_max_blocks;
 DECL|num_used|member|int num_used;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct tcs *owner;
 DECL|period|member|int32_t period;
 DECL|pool_id|member|k_mem_pool_t pool_id;
 DECL|prio|member|unsigned prio;
+DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
