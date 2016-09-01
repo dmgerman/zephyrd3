@@ -5,19 +5,30 @@ DECL|DEVICE_AND_API_INIT_PM|macro|DEVICE_AND_API_INIT_PM
 DECL|DEVICE_AND_API_INIT|macro|DEVICE_AND_API_INIT
 DECL|DEVICE_AND_API_INIT|macro|DEVICE_AND_API_INIT
 DECL|DEVICE_DECLARE|macro|DEVICE_DECLARE
+DECL|DEVICE_DEFINE|macro|DEVICE_DEFINE
+DECL|DEVICE_DEFINE|macro|DEVICE_DEFINE
 DECL|DEVICE_GET|macro|DEVICE_GET
 DECL|DEVICE_INIT_PM|macro|DEVICE_INIT_PM
 DECL|DEVICE_INIT|macro|DEVICE_INIT
 DECL|DEVICE_NAME_GET|macro|DEVICE_NAME_GET
+DECL|DEVICE_PM_ACTIVE_STATE|macro|DEVICE_PM_ACTIVE_STATE
+DECL|DEVICE_PM_GET_POWER_STATE|macro|DEVICE_PM_GET_POWER_STATE
+DECL|DEVICE_PM_LOW_POWER_STATE|macro|DEVICE_PM_LOW_POWER_STATE
+DECL|DEVICE_PM_OFF_STATE|macro|DEVICE_PM_OFF_STATE
 DECL|DEVICE_PM_OPS_GET|macro|DEVICE_PM_OPS_GET
 DECL|DEVICE_PM_OPS_GET|macro|DEVICE_PM_OPS_GET
+DECL|DEVICE_PM_SET_POWER_STATE|macro|DEVICE_PM_SET_POWER_STATE
+DECL|DEVICE_PM_SUSPEND_STATE|macro|DEVICE_PM_SUSPEND_STATE
 DECL|_DEVICE_H_|macro|_DEVICE_H_
 DECL|config_info|member|void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|dev_pm_ops|member|struct device_pm_ops *dev_pm_ops;
 DECL|device_config|struct|struct device_config {
+DECL|device_control|member|int (*device_control)(struct device *device, uint32_t command,
+DECL|device_get_power_state|function|static inline int device_get_power_state(struct device *device, uint32_t *device_power_state)
 DECL|device_pm_ops|struct|struct device_pm_ops {
 DECL|device_resume|function|static inline int device_resume(struct device *device, int pm_policy)
+DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, uint32_t device_power_state)
 DECL|device_suspend|function|static inline int device_suspend(struct device *device, int pm_policy)
 DECL|device_sync_call_complete|function|static inline void device_sync_call_complete(device_sync_call_t *sync)
 DECL|device_sync_call_init|function|static inline void device_sync_call_init(device_sync_call_t *sync)
