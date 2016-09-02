@@ -19,12 +19,12 @@ DECL|fiber_multi_waiters_stacks|variable|fiber_multi_waiters_stacks
 DECL|fiber_multi_waiters|function|static void fiber_multi_waiters(int arg1, int arg2)
 DECL|initNanoObjects|function|void initNanoObjects(void)
 DECL|isrSemInfo|variable|isrSemInfo
-DECL|isr_sem_give|function|void isr_sem_give(void *data)
-DECL|isr_sem_take|function|void isr_sem_take(void *data)
 DECL|link_in_fifo|member|void *link_in_fifo;
 DECL|link_in_fifo|member|void *link_in_fifo;
 DECL|main|function|void main(void)
 DECL|multi_waiters|variable|multi_waiters
+DECL|my_isr_sem_give|function|static void my_isr_sem_give(void *data)
+DECL|my_isr_sem_take|function|static void my_isr_sem_take(void *data)
 DECL|q_order|member|int q_order;
 DECL|reply_multi_waiters|variable|reply_multi_waiters
 DECL|reply_packet|struct|struct reply_packet {
