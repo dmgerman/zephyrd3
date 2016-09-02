@@ -45,12 +45,18 @@ DECL|ZOAP_TYPE_CON|enumerator|ZOAP_TYPE_CON = 0,
 DECL|ZOAP_TYPE_NON_CON|enumerator|ZOAP_TYPE_NON_CON = 1,
 DECL|ZOAP_TYPE_RESET|enumerator|ZOAP_TYPE_RESET = 3
 DECL|__ZOAP_H__|macro|__ZOAP_H__
+DECL|addr|member|uip_ipaddr_t addr;
+DECL|age|member|int age;
 DECL|age|member|int age;
 DECL|buf|member|struct net_buf *buf;
 DECL|del|member|zoap_method_t get, post, put, del;
 DECL|get|member|zoap_method_t get, post, put, del;
 DECL|len|member|uint16_t len;
+DECL|list|member|sys_snode_t list;
+DECL|notify|member|zoap_notify_t notify;
+DECL|observers|member|sys_slist_t observers;
 DECL|path|member|const char * const *path;
+DECL|port|member|uint16_t port;
 DECL|post|member|zoap_method_t get, post, put, del;
 DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
@@ -58,6 +64,8 @@ DECL|request|member|struct zoap_packet request;
 DECL|start|member|uint8_t *start; /* Start of the payload */
 DECL|timeout|member|uint16_t timeout;
 DECL|tkl|member|uint8_t tkl;
+DECL|tkl|member|uint8_t tkl;
+DECL|token|member|uint8_t token[8];
 DECL|token|member|uint8_t token[8];
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
@@ -67,6 +75,8 @@ DECL|zoap_method_t|typedef|typedef int (*zoap_method_t)(struct zoap_resource *re
 DECL|zoap_method|enum|enum zoap_method {
 DECL|zoap_msgtype|enum|enum zoap_msgtype {
 DECL|zoap_next_id|function|static inline uint16_t zoap_next_id(void)
+DECL|zoap_notify_t|typedef|typedef void (*zoap_notify_t)(struct zoap_resource *resource,
+DECL|zoap_observer|struct|struct zoap_observer {
 DECL|zoap_option_num|enum|enum zoap_option_num {
 DECL|zoap_option|struct|struct zoap_option {
 DECL|zoap_packet|struct|struct zoap_packet {
