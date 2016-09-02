@@ -13,6 +13,7 @@ DECL|default_load_value|variable|default_load_value
 DECL|idle_mode|variable|idle_mode
 DECL|idle_original_count|variable|idle_original_count
 DECL|idle_original_ticks|variable|idle_original_ticks
+DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|sysTickCurrentGet|function|static ALWAYS_INLINE uint32_t sysTickCurrentGet(void)
@@ -22,6 +23,5 @@ DECL|sysTickStart|function|static ALWAYS_INLINE void sysTickStart(void)
 DECL|sysTickStop|function|static ALWAYS_INLINE void sysTickStop(void)
 DECL|sysTickTicklessIdleInit|function|static void sysTickTicklessIdleInit(void)
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
-DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode

@@ -51,9 +51,9 @@ DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|counter_last_value|variable|counter_last_value
 DECL|counter_load_value|variable|counter_load_value
+DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
 DECL|programmed_ticks|variable|programmed_ticks
 DECL|stale_irq_check|variable|stale_irq_check
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
-DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)

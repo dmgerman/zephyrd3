@@ -34,6 +34,7 @@ DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
 DECL|initial_count_register_get|function|static inline uint32_t initial_count_register_get(void)
 DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count)
+DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
@@ -42,7 +43,6 @@ DECL|programmed_full_ticks|variable|programmed_full_ticks
 DECL|reg_timer_cfg_save|variable|reg_timer_cfg_save
 DECL|reg_timer_save|variable|reg_timer_save
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
-DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
 DECL|timer_known_to_have_expired|variable|timer_known_to_have_expired
