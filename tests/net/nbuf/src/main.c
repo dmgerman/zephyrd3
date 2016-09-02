@@ -27,6 +27,7 @@ DECL|src|member|struct in6_addr src;
 DECL|tcflow|member|uint8_t tcflow;
 DECL|test_data|variable|test_data
 DECL|test_fragment_copy|function|static int test_fragment_copy(void)
+DECL|test_fragment_pull|function|static int test_fragment_pull(void)
 DECL|test_fragment_push|function|static int test_fragment_push(void)
 DECL|test_ipv6_multi_frags|function|static int test_ipv6_multi_frags(void)
 DECL|type|member|uint8_t type;
