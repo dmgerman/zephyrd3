@@ -2,15 +2,31 @@ DECL|ESSENTIAL|macro|ESSENTIAL
 DECL|EXC_ACTIVE|macro|EXC_ACTIVE
 DECL|FIBER|macro|FIBER
 DECL|INT_ACTIVE|macro|INT_ACTIVE
+DECL|K_DEAD|macro|K_DEAD
+DECL|K_DUMMY|macro|K_DUMMY
+DECL|K_EXECUTION_MASK|macro|K_EXECUTION_MASK
+DECL|K_PENDING|macro|K_PENDING
+DECL|K_PRESTART|macro|K_PRESTART
+DECL|K_READY|macro|K_READY
+DECL|K_STATIC|macro|K_STATIC
+DECL|K_SUSPENDED|macro|K_SUSPENDED
+DECL|K_TIMING|macro|K_TIMING
 DECL|NO_METRICS|macro|NO_METRICS
 DECL|PREEMPTIBLE|macro|PREEMPTIBLE
 DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
 DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
 DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
+DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
 DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__thread_entry|struct|struct __thread_entry {
+DECL|_current|macro|_current
+DECL|_is_in_isr|macro|_is_in_isr
+DECL|_ready_q|macro|_ready_q
+DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
+DECL|_set_thread_return_value|macro|_set_thread_return_value
+DECL|_timeout_q|macro|_timeout_q
 DECL|basepri|member|uint32_t basepri;
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
@@ -23,8 +39,12 @@ DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct
 DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fiber */
 DECL|flags|member|int flags; /* struct tcs->flags of 'current' thread */
 DECL|flags|member|uint32_t flags;
+DECL|flags|member|uint32_t flags;
+DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|link|member|struct tcs *link; /* singly-linked list in _nanokernel.fibers */
+DECL|init_data|member|void *init_data;
+DECL|k_q_node|member|sys_dnode_t k_q_node;
+DECL|k_q_node|member|sys_dnode_t k_q_node; /* node object in any kernel queue */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
 DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
@@ -36,8 +56,13 @@ DECL|preempReg|member|struct preempt preempReg;
 DECL|preemp_float_regs|member|struct preemp_float preemp_float_regs;
 DECL|preemp_float|struct|struct preemp_float {
 DECL|preempt|struct|struct preempt {
+DECL|prio_bmap|member|uint32_t prio_bmap[1];
+DECL|prio|member|int prio;
 DECL|prio|member|int prio;
 DECL|psp|member|uint32_t psp; /* r13 */
+DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
+DECL|ready_q|member|struct ready_q ready_q;
+DECL|ready_q|struct|struct ready_q {
 DECL|s16|member|float s16;
 DECL|s17|member|float s17;
 DECL|s18|member|float s18;
@@ -55,14 +80,19 @@ DECL|s29|member|float s29;
 DECL|s30|member|float s30;
 DECL|s31|member|float s31;
 DECL|s_NANO|struct|struct s_NANO {
+DECL|sched_locked|member|atomic_t sched_locked;
+DECL|swap_data|member|void *swap_data;
+DECL|swap_data|member|void *swap_data;
 DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
 DECL|task_timeout|member|int32_t task_timeout;
 DECL|task|member|struct tcs *task; /* pointer to runnable task */
+DECL|tcs_base|struct|struct tcs_base {
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
+DECL|timeout|member|struct _timeout timeout;
 DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
