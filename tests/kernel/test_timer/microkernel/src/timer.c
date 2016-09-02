@@ -2,6 +2,7 @@ DECL|NTIMERS|macro|NTIMERS
 DECL|RegressionTaskEntry|function|void RegressionTaskEntry(void)
 DECL|TEST_NANO_TIMERS_DELAY|macro|TEST_NANO_TIMERS_DELAY
 DECL|WITHIN_ERROR|macro|WITHIN_ERROR
+DECL|k_timer_pool_is_empty|function|static inline bool k_timer_pool_is_empty(void)
 DECL|pTimer|variable|pTimer
 DECL|testLowTimerDoesNotStart|function|int testLowTimerDoesNotStart(void)
 DECL|testLowTimerGet|function|int testLowTimerGet(void)
