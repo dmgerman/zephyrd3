@@ -7,4 +7,3 @@ DECL|altSem|variable|altSem
 DECL|counterSem|variable|counterSem
 DECL|pipeId|variable|pipeId
 DECL|regSem|variable|regSem
-DECL|resultSems|variable|resultSems
