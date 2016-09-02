@@ -26,7 +26,7 @@ DECL|net_context_set_internal_connection|function|void net_context_set_internal_
 DECL|net_context_set_receiver_registered|function|void net_context_set_receiver_registered(struct net_context *context)
 DECL|net_context_tcp_get_pending|function|struct net_buf *net_context_tcp_get_pending(struct net_context *context)
 DECL|net_context_tcp_get_retry_count|function|uint8_t net_context_tcp_get_retry_count(struct net_context *context)
-DECL|net_context_tcp_init|function|int net_context_tcp_init(struct net_context *context, struct net_buf *buf, enum net_tcp_type tcp_type)
+DECL|net_context_tcp_init|function|int net_context_tcp_init(struct net_context *context, enum net_tcp_type tcp_type)
 DECL|net_context_tcp_send|function|int net_context_tcp_send(struct net_buf *buf)
 DECL|net_context_tcp_set_pending|function|void net_context_tcp_set_pending(struct net_context *context, struct net_buf *buf)
 DECL|net_context_tcp_set_retry_count|function|void net_context_tcp_set_retry_count(struct net_context *context, uint8_t count)
