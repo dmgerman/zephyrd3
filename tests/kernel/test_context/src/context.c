@@ -24,6 +24,8 @@ DECL|fiberEvidence|variable|fiberEvidence
 DECL|fiberHelper|function|static void fiberHelper(int arg1, int arg2)
 DECL|fiberStack1|variable|fiberStack1
 DECL|fiberStack2|variable|fiberStack2
+DECL|fiber_priority_set|macro|fiber_priority_set
+DECL|fiber_priority_set|macro|fiber_priority_set
 DECL|fiber_yieldTest|function|int fiber_yieldTest(void)
 DECL|initNanoObjects|function|int initNanoObjects(void)
 DECL|irq_disableWrapper|function|int irq_disableWrapper(int irq)
