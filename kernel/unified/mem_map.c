@@ -1,0 +1,5 @@
+DECL|_k_mem_map_init|function|void _k_mem_map_init(void)
+DECL|create_free_list|function|static void create_free_list(struct k_mem_map *map)
+DECL|k_mem_map_alloc|function|int k_mem_map_alloc(struct k_mem_map *map, void **mem, int32_t timeout)
+DECL|k_mem_map_free|function|void k_mem_map_free(struct k_mem_map *map, void **mem)
+DECL|k_mem_map_init|function|void k_mem_map_init(struct k_mem_map *map, int num_blocks, int block_size, void *buffer)

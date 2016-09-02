@@ -1,0 +1,6 @@
+DECL|k_free|function|void k_free(void *p)
+DECL|k_malloc|function|void *k_malloc(uint32_t size)
+DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(k_mem_pool_t id, struct k_block *block, int size,int32_t timeout)
+DECL|k_mem_pool_defrag|function|void k_mem_pool_defrag(k_mem_pool_t id)
+DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_block *block)
+DECL|k_mem_pool_init|function|void k_mem_pool_init(struct k_mem_pool *mem, int max_block_size,int num_max_blocks)

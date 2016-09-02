@@ -1,0 +1,16 @@
+DECL|_do_timeout_abort|function|static inline int _do_timeout_abort(struct _timeout *t)
+DECL|_do_timeout_add|function|static inline void _do_timeout_add(struct tcs *tcs, struct _timeout *t, _wait_q_t *wait_q, int32_t timeout)
+DECL|_kernel_nanokernel_include_timeout_q__h_|macro|_kernel_nanokernel_include_timeout_q__h_
+DECL|_nano_get_earliest_timeouts_deadline|function|static inline uint32_t _nano_get_earliest_timeouts_deadline(void)
+DECL|_nano_timeout_tcs_init|function|static inline void _nano_timeout_tcs_init(struct tcs *tcs)
+DECL|_nano_timer_timeout_abort|function|static inline int _nano_timer_timeout_abort(struct _timeout *t)
+DECL|_nano_timer_timeout_add|function|static inline void _nano_timer_timeout_add(struct _timeout *t, _wait_q_t *wait_q, int32_t timeout)
+DECL|_timeout_abort|function|static inline int _timeout_abort(struct tcs *tcs)
+DECL|_timeout_add|function|static inline void _timeout_add(struct tcs *tcs, _wait_q_t *wait_q,int32_t timeout)
+DECL|_timeout_handle_one_timeout|function|static inline struct _timeout *_timeout_handle_one_timeout(sys_dlist_t *timeout_q)
+DECL|_timeout_handle_timeouts|function|static inline void _timeout_handle_timeouts(void)
+DECL|_timeout_init|function|static inline void _timeout_init(struct _timeout *t, _timeout_func_t func)
+DECL|_timeout_insert_point_test|function|static int _timeout_insert_point_test(sys_dnode_t *test, void *timeout)
+DECL|_timeout_object_dequeue|function|static inline void _timeout_object_dequeue(struct tcs *tcs, struct _timeout *t)
+DECL|_timeout_object_dequeue|macro|_timeout_object_dequeue
+DECL|_timeout_tcs_init|function|static inline void _timeout_tcs_init(struct tcs *tcs)
