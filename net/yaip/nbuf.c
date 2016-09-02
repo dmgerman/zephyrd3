@@ -65,6 +65,7 @@ DECL|net_nbuf_init|function|void net_nbuf_init(void)
 DECL|net_nbuf_is_compact|function|bool net_nbuf_is_compact(struct net_buf *buf)
 DECL|net_nbuf_print_frags|function|void net_nbuf_print_frags(struct net_buf *buf)
 DECL|net_nbuf_print|function|void net_nbuf_print(void)
+DECL|net_nbuf_pull|function|struct net_buf *net_nbuf_pull(struct net_buf *buf, size_t amount)
 DECL|net_nbuf_push|function|struct net_buf *net_nbuf_push(struct net_buf *parent, struct net_buf *buf, size_t amount)
 DECL|net_nbuf_ref_debug|function|struct net_buf *net_nbuf_ref_debug(struct net_buf *buf, const char *caller, int line) #else struct net_buf *net_nbuf_ref(struct net_buf *buf) #endif
 DECL|net_nbuf_unref_debug|function|void net_nbuf_unref_debug(struct net_buf *buf, const char *caller, int line)
