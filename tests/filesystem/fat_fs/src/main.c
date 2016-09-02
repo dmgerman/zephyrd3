@@ -12,4 +12,6 @@ DECL|open_file|function|static int open_file(ZFILE *fp, const char *path)
 DECL|read_test|function|static int read_test(ZFILE *fp, off_t ofs, size_t sz, char *read_buff)
 DECL|remove_dir|function|static int remove_dir(const char *path)
 DECL|test_str|variable|test_str
+DECL|truncate_test|function|static int truncate_test(ZFILE *fp)
+DECL|vol_tests|function|static void vol_tests(void)
 DECL|write_test|function|static int write_test(ZFILE *fp, off_t ofs, const char *str)
