@@ -60,12 +60,16 @@ DECL|BT_HCI_CTL_TO_HOST_FLOW_ENABLE|macro|BT_HCI_CTL_TO_HOST_FLOW_ENABLE
 DECL|BT_HCI_DEDICATED_BONDING_MITM|macro|BT_HCI_DEDICATED_BONDING_MITM
 DECL|BT_HCI_DEDICATED_BONDING|macro|BT_HCI_DEDICATED_BONDING
 DECL|BT_HCI_ERR_AUTHENTICATION_FAIL|macro|BT_HCI_ERR_AUTHENTICATION_FAIL
+DECL|BT_HCI_ERR_CMD_DISALLOWED|macro|BT_HCI_ERR_CMD_DISALLOWED
 DECL|BT_HCI_ERR_INSUFFICIENT_RESOURCES|macro|BT_HCI_ERR_INSUFFICIENT_RESOURCES
 DECL|BT_HCI_ERR_INVALID_LL_PARAMS|macro|BT_HCI_ERR_INVALID_LL_PARAMS
+DECL|BT_HCI_ERR_MEM_CAPACITY_EXCEEDED|macro|BT_HCI_ERR_MEM_CAPACITY_EXCEEDED
 DECL|BT_HCI_ERR_PAIRING_NOT_ALLOWED|macro|BT_HCI_ERR_PAIRING_NOT_ALLOWED
 DECL|BT_HCI_ERR_PAIRING_NOT_SUPPORTED|macro|BT_HCI_ERR_PAIRING_NOT_SUPPORTED
+DECL|BT_HCI_ERR_PIN_OR_KEY_MISSING|macro|BT_HCI_ERR_PIN_OR_KEY_MISSING
 DECL|BT_HCI_ERR_REMOTE_USER_TERM_CONN|macro|BT_HCI_ERR_REMOTE_USER_TERM_CONN
 DECL|BT_HCI_ERR_UNACCEPT_CONN_PARAMS|macro|BT_HCI_ERR_UNACCEPT_CONN_PARAMS
+DECL|BT_HCI_ERR_UNKNOWN_CMD|macro|BT_HCI_ERR_UNKNOWN_CMD
 DECL|BT_HCI_ERR_UNKNOWN_CONN_ID|macro|BT_HCI_ERR_UNKNOWN_CONN_ID
 DECL|BT_HCI_ERR_UNSPECIFIED|macro|BT_HCI_ERR_UNSPECIFIED
 DECL|BT_HCI_ERR_UNSUPP_FEATURE_PARAMS_VAL|macro|BT_HCI_ERR_UNSUPP_FEATURE_PARAMS_VAL
@@ -189,6 +193,7 @@ DECL|BT_HCI_OP_READ_LOCAL_FEATURES|macro|BT_HCI_OP_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
 DECL|BT_HCI_OP_READ_REMOTE_EXT_FEATURES|macro|BT_HCI_OP_READ_REMOTE_EXT_FEATURES
 DECL|BT_HCI_OP_READ_REMOTE_FEATURES|macro|BT_HCI_OP_READ_REMOTE_FEATURES
+DECL|BT_HCI_OP_READ_REMOTE_VERSION_INFO|macro|BT_HCI_OP_READ_REMOTE_VERSION_INFO
 DECL|BT_HCI_OP_READ_SUPPORTED_COMMANDS|macro|BT_HCI_OP_READ_SUPPORTED_COMMANDS
 DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_REMOTE_NAME_CANCEL|macro|BT_HCI_OP_REMOTE_NAME_CANCEL
@@ -233,12 +238,17 @@ DECL|BT_LK_REMOTE_UNIT|macro|BT_LK_REMOTE_UNIT
 DECL|BT_LK_UNAUTH_COMBINATION_P192|macro|BT_LK_UNAUTH_COMBINATION_P192
 DECL|BT_LK_UNAUTH_COMBINATION_P256|macro|BT_LK_UNAUTH_COMBINATION_P256
 DECL|BT_MITM|macro|BT_MITM
+DECL|BT_OCF|macro|BT_OCF
 DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
 DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
+DECL|BT_OGF_VS|macro|BT_OGF_VS
+DECL|BT_OGF|macro|BT_OGF
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -473,6 +483,7 @@ DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
 DECL|bt_hci_cp_read_local_ext_features|struct|struct bt_hci_cp_read_local_ext_features {
 DECL|bt_hci_cp_read_remote_ext_features|struct|struct bt_hci_cp_read_remote_ext_features {
 DECL|bt_hci_cp_read_remote_features|struct|struct bt_hci_cp_read_remote_features {
+DECL|bt_hci_cp_read_remote_version_info|struct|struct bt_hci_cp_read_remote_version_info {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
@@ -490,6 +501,7 @@ DECL|bt_hci_ev_le_directed_adv_info|struct|struct bt_hci_ev_le_directed_adv_info
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
 DECL|bt_hci_evt_auth_complete|struct|struct bt_hci_evt_auth_complete {
+DECL|bt_hci_evt_cc_status|struct|struct bt_hci_evt_cc_status {
 DECL|bt_hci_evt_cmd_complete|struct|struct bt_hci_evt_cmd_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_conn_complete|struct|struct bt_hci_evt_conn_complete {
@@ -604,6 +616,7 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -778,6 +791,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
