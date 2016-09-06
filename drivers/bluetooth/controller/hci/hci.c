@@ -119,8 +119,8 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_update_cmplt|member|struct hci_evt_le_meta_conn_update_complete conn_update_cmplt;
-DECL|controller_cmd_handle|function|static int controller_cmd_handle(struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
-DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
+DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
+DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|data|member|uint8_t data[1];
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
@@ -128,6 +128,7 @@ DECL|delete_stored_link_key|member|delete_stored_link_key;
 DECL|direct_addr_type|member|uint8_t direct_addr_type;
 DECL|direct_addr|member|uint8_t direct_addr[BDADDR_SIZE];
 DECL|disconnect_cmplt|member|struct hci_evt_disconnect_cmplt disconnect_cmplt;
+DECL|disconnect|function|static void disconnect(uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|disconnect|member|struct hci_cmd_disconnect disconnect;
 DECL|distance|member|uint8_t distance;
 DECL|ediv|member|uint8_t ediv[2];
@@ -159,7 +160,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|hci_cmd_disconnect|struct|struct __packed hci_cmd_disconnect {
-DECL|hci_cmd_handle|function|static void hci_cmd_handle(struct hci_cmd *cmd, uint8_t *len, uint8_t **out)
+DECL|hci_cmd_handle|function|static void hci_cmd_handle(struct bt_hci_cmd_hdr *cmd, uint8_t *len, uint8_t **out)
 DECL|hci_cmd_le_add_dev_to_wlist|struct|struct __packed hci_cmd_le_add_dev_to_wlist {
 DECL|hci_cmd_le_conn_update|struct|struct __packed hci_cmd_le_conn_update {
 DECL|hci_cmd_le_create_conn|struct|struct __packed hci_cmd_le_create_conn {
@@ -247,7 +248,7 @@ DECL|hci_evt|struct|struct __packed hci_evt {
 DECL|hci_handle|function|void hci_handle(uint8_t x, uint8_t *len, uint8_t **out)
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
-DECL|info_cmd_handle|function|static int info_cmd_handle(struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
+DECL|info_cmd_handle|function|static int info_cmd_handle(uint8_t ocf, struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_max|member|uint16_t interval_max;
@@ -318,7 +319,7 @@ DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
-DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
+DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
 DECL|lmp_version|member|uint8_t lmp_version;
 DECL|local_name|member|uint8_t local_name[1];
@@ -374,6 +375,7 @@ DECL|read_class_of_device|member|read_class_of_device;
 DECL|read_local_name|member|struct hci_evt_cmd_cmplt_read_local_name read_local_name;
 DECL|read_local_sup_cmds|member|read_local_sup_cmds;
 DECL|read_local_version|member|read_local_version;
+DECL|read_remote_ver_info|function|static void read_remote_ver_info(uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|read_remote_version_info_cmplt|member|read_remote_version_info_cmplt;
 DECL|read_voice_setting|member|read_voice_setting;
 DECL|reason|member|uint8_t reason;
@@ -382,6 +384,7 @@ DECL|reason|member|uint8_t reason;
 DECL|remote_conn_param_request|member|remote_conn_param_request;
 DECL|remote_used_features|member|remote_used_features;
 DECL|reports|member|uint8_t reports[1];
+DECL|reset|function|static void reset(uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|reset|member|struct hci_evt_cmd_cmplt_reset reset;
 DECL|role|member|uint8_t role;
 DECL|rx_len|member|uint16_t rx_len;
@@ -389,6 +392,7 @@ DECL|rx|member|uint8_t rx[HCI_PACKET_SIZE_MAX];
 DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_window|member|uint16_t scan_window;
 DECL|sco_data_length|member|uint8_t sco_data_length;
+DECL|set_event_mask|function|static void set_event_mask(uint8_t *cp, uint8_t *len, struct hci_evt *evt)
 DECL|set_event_mask|member|struct hci_evt_cmd_cmplt_set_event_mask set_event_mask;
 DECL|state|member|uint8_t state;
 DECL|status|member|uint8_t status;
@@ -456,6 +460,6 @@ DECL|unknown_hci_command|member|unknown_hci_command;
 DECL|value|member|uint8_t value[64];
 DECL|version_number|member|uint8_t version_number;
 DECL|voice_setting|member|uint8_t voice_setting[2];
-DECL|vs_cmd_handle|function|static int vs_cmd_handle(struct hci_cmd *cmd,uint8_t *len, struct hci_evt *evt)
+DECL|vs_cmd_handle|function|static int vs_cmd_handle(uint8_t ocf, struct hci_cmd *cmd,uint8_t *len, struct hci_evt *evt)
 DECL|whitelist_size|member|uint8_t whitelist_size;
 DECL|window|member|uint16_t window;
