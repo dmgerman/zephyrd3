@@ -490,6 +490,7 @@ DECL|bt_hci_ev_le_directed_adv_info|struct|struct bt_hci_ev_le_directed_adv_info
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
 DECL|bt_hci_evt_auth_complete|struct|struct bt_hci_evt_auth_complete {
+DECL|bt_hci_evt_cmd_complete|struct|struct bt_hci_evt_cmd_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_conn_complete|struct|struct bt_hci_evt_conn_complete {
 DECL|bt_hci_evt_conn_request|struct|struct bt_hci_evt_conn_request {
@@ -636,7 +637,6 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
-DECL|hci_evt_cmd_complete|struct|struct hci_evt_cmd_complete {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|h|member|struct bt_hci_handle_count h[0];
