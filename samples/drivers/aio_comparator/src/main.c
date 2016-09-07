@@ -1,5 +1,3 @@
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
 DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|ain_idx|member|uint8_t ain_idx;
 DECL|cb_data_t|struct|struct cb_data_t {

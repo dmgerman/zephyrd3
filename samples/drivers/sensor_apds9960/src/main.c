@@ -8,8 +8,6 @@ DECL|GPIO_DATA_PIN|macro|GPIO_DATA_PIN
 DECL|GPIO_DRV_NAME|macro|GPIO_DRV_NAME
 DECL|GPIO_NAME|macro|GPIO_NAME
 DECL|I2C_DRV_NAME|macro|I2C_DRV_NAME
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
 DECL|SLEEP_MSEC|macro|SLEEP_MSEC
 DECL|apa102c_led_program|function|void apa102c_led_program(struct device *gpio_dev, uint32_t rgb)
 DECL|apa102c_rgb_send|function|void apa102c_rgb_send(struct device *gpio_dev, uint32_t rgb)
