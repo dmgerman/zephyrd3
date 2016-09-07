@@ -10,6 +10,8 @@ DECL|NET_IF_MAX_IPV6_ADDR|macro|NET_IF_MAX_IPV6_ADDR
 DECL|NET_IF_MAX_IPV6_MADDR|macro|NET_IF_MAX_IPV6_MADDR
 DECL|NET_IF_MAX_IPV6_PREFIX|macro|NET_IF_MAX_IPV6_PREFIX
 DECL|__NET_IF_H__|macro|__NET_IF_H__
+DECL|__net_if_align|macro|__net_if_align
+DECL|__net_if_align|variable|__net_if_align
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
