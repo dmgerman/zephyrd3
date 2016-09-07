@@ -4,6 +4,8 @@ DECL|bt_hci_ecc_init|function|void bt_hci_ecc_init(void)
 DECL|clear_ecc_events|function|static void clear_ecc_events(struct net_buf *buf)
 DECL|debug_private_key|variable|debug_private_key
 DECL|drv_send|variable|drv_send
+DECL|ecc_queue_init|function|static void ecc_queue_init(void)
+DECL|ecc_queue_ready|variable|ecc_queue_ready
 DECL|ecc_queue|variable|ecc_queue
 DECL|ecc_send|function|static int ecc_send(struct net_buf *buf)
 DECL|ecc_task|function|static void ecc_task(void)

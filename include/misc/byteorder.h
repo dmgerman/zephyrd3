@@ -17,6 +17,7 @@ DECL|sys_get_be16|function|static inline uint16_t sys_get_be16(const uint8_t src
 DECL|sys_get_be32|function|static inline uint32_t sys_get_be32(const uint8_t src[4])
 DECL|sys_get_le16|function|static inline uint16_t sys_get_le16(const uint8_t src[2])
 DECL|sys_get_le32|function|static inline uint32_t sys_get_le32(const uint8_t src[4])
+DECL|sys_get_le64|function|static inline uint64_t sys_get_le64(const uint8_t src[8])
 DECL|sys_le16_to_cpu|macro|sys_le16_to_cpu
 DECL|sys_le16_to_cpu|macro|sys_le16_to_cpu
 DECL|sys_le32_to_cpu|macro|sys_le32_to_cpu

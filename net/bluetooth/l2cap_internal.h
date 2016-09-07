@@ -1,4 +1,6 @@
 DECL|BT_L2CAP_BUF_SIZE|macro|BT_L2CAP_BUF_SIZE
+DECL|BT_L2CAP_CHAN_DETACH|enumerator|BT_L2CAP_CHAN_DETACH,
+DECL|BT_L2CAP_CHAN_LOOKUP|enumerator|BT_L2CAP_CHAN_LOOKUP,
 DECL|BT_L2CAP_CID_ATT|macro|BT_L2CAP_CID_ATT
 DECL|BT_L2CAP_CID_BR_SIG|macro|BT_L2CAP_CID_BR_SIG
 DECL|BT_L2CAP_CID_LE_SIG|macro|BT_L2CAP_CID_LE_SIG
@@ -40,9 +42,8 @@ DECL|BT_L2CAP_INFO_SUCCESS|macro|BT_L2CAP_INFO_SUCCESS
 DECL|BT_L2CAP_LE_CONN_REQ|macro|BT_L2CAP_LE_CONN_REQ
 DECL|BT_L2CAP_LE_CONN_RSP|macro|BT_L2CAP_LE_CONN_RSP
 DECL|BT_L2CAP_LE_CREDITS|macro|BT_L2CAP_LE_CREDITS
-DECL|BT_L2CAP_MASK_BR_SIG|macro|BT_L2CAP_MASK_BR_SIG
-DECL|BT_L2CAP_MASK_SMP|macro|BT_L2CAP_MASK_SMP
 DECL|BT_L2CAP_PENDING|macro|BT_L2CAP_PENDING
+DECL|BT_L2CAP_PSM_RFCOMM|macro|BT_L2CAP_PSM_RFCOMM
 DECL|BT_L2CAP_REJ_INVALID_CID|macro|BT_L2CAP_REJ_INVALID_CID
 DECL|BT_L2CAP_REJ_MTU_EXCEEDED|macro|BT_L2CAP_REJ_MTU_EXCEEDED
 DECL|BT_L2CAP_REJ_NOT_UNDERSTOOD|macro|BT_L2CAP_REJ_NOT_UNDERSTOOD
@@ -107,11 +108,11 @@ DECL|dcid|member|uint16_t dcid;
 DECL|flags|member|uint16_t flags;
 DECL|flags|member|uint16_t flags;
 DECL|ident|member|uint8_t ident;
+DECL|l2cap_conn_list_action|enum|enum l2cap_conn_list_action {
 DECL|latency|member|uint16_t latency;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len;
-DECL|mask|member|uint8_t mask;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|min_interval|member|uint16_t min_interval;
 DECL|mps|member|uint16_t mps;
