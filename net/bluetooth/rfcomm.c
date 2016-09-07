@@ -17,7 +17,7 @@ DECL|rfcomm_check_fcs|function|static bool rfcomm_check_fcs(uint16_t len, const 
 DECL|rfcomm_connected|function|static void rfcomm_connected(struct bt_l2cap_chan *chan)
 DECL|rfcomm_crc_table|variable|rfcomm_crc_table
 DECL|rfcomm_disconnected|function|static void rfcomm_disconnected(struct bt_l2cap_chan *chan)
-DECL|rfcomm_dlc_accept|function|static int rfcomm_dlc_accept(struct bt_rfcomm_session *session, uint8_t dlci, struct bt_rfcomm_dlc **dlc)
+DECL|rfcomm_dlc_accept|function|static struct bt_rfcomm_dlc *rfcomm_dlc_accept(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_dlc_connected|function|static void rfcomm_dlc_connected(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_ref|function|static struct bt_rfcomm_dlc *rfcomm_dlc_ref(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_tx_fiber|function|static void rfcomm_dlc_tx_fiber(int arg1, int arg2)
