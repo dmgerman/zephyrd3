@@ -45,4 +45,4 @@ DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
 DECL|states|member|uint64_t states;
-DECL|supported_commands|member|uint8_t supported_commands[36];
+DECL|supported_commands|member|uint8_t supported_commands[64];

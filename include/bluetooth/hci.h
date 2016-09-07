@@ -576,7 +576,7 @@ DECL|clock_offset|member|uint16_t clock_offset;
 DECL|clock_offset|member|uint16_t clock_offset;
 DECL|cod|member|uint8_t cod[3];
 DECL|cod|member|uint8_t cod[3];
-DECL|commands|member|uint8_t commands[36];
+DECL|commands|member|uint8_t commands[64];
 DECL|conn_interval_max|member|uint16_t conn_interval_max;
 DECL|conn_interval_max|member|uint16_t conn_interval_max;
 DECL|conn_interval_min|member|uint16_t conn_interval_min;
