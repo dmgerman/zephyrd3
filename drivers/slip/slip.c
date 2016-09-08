@@ -1,3 +1,7 @@
+DECL|COLOR_OFF|macro|COLOR_OFF
+DECL|COLOR_OFF|macro|COLOR_OFF
+DECL|COLOR_YELLOW|macro|COLOR_YELLOW
+DECL|COLOR_YELLOW|macro|COLOR_YELLOW
 DECL|SLIP_END|macro|SLIP_END
 DECL|SLIP_ESC_END|macro|SLIP_ESC_END
 DECL|SLIP_ESC_ESC|macro|SLIP_ESC_ESC
@@ -16,7 +20,7 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
 DECL|garbage|member|uint16_t garbage;
-DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
+DECL|hexdump|function|static void hexdump(struct slip_context *slip, const char *str, const uint8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|init_done|member|bool init_done;
 DECL|ip_drop|member|uint16_t ip_drop;
