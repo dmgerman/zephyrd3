@@ -19,3 +19,11 @@ DECL|BT_ATT_ERR_UNLIKELY|macro|BT_ATT_ERR_UNLIKELY
 DECL|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE|macro|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE
 DECL|BT_ATT_ERR_WRITE_NOT_PERMITTED|macro|BT_ATT_ERR_WRITE_NOT_PERMITTED
 DECL|__BT_ATT_H|macro|__BT_ATT_H
+DECL|bt_att_destroy_t|typedef|typedef void (*bt_att_destroy_t)(void *user_data);
+DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(struct bt_conn *conn, uint8_t err,
+DECL|bt_att_req|struct|struct bt_att_req {
+DECL|buf|member|struct net_buf *buf;
+DECL|destroy|member|bt_att_destroy_t destroy;
+DECL|func|member|bt_att_func_t func;
+DECL|node|member|sys_snode_t node;
+DECL|retrying|member|bool retrying;

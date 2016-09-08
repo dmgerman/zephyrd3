@@ -1,8 +1,5 @@
 DECL|ATT_CHAN|macro|ATT_CHAN
-DECL|ATT_OP_TYPE_CMD|enumerator|ATT_OP_TYPE_CMD,
-DECL|ATT_OP_TYPE_REQ|enumerator|ATT_OP_TYPE_REQ,
-DECL|ATT_OP_TYPE_RSP|enumerator|ATT_OP_TYPE_RSP,
-DECL|ATT_OP_TYPE_UNKNOWN|enumerator|ATT_OP_TYPE_UNKNOWN,
+DECL|ATT_REQ|macro|ATT_REQ
 DECL|ATT_TIMEOUT|macro|ATT_TIMEOUT
 DECL|BT_ATT_OP_CMD_FLAG|macro|BT_ATT_OP_CMD_FLAG
 DECL|BT_DBG|macro|BT_DBG
@@ -12,7 +9,6 @@ DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|att_buf|variable|att_buf
 DECL|att_chan_get|function|static struct bt_att *att_chan_get(struct bt_conn *conn)
 DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
 DECL|att_confirm|function|static uint8_t att_confirm(struct bt_att *att, struct net_buf *buf)
@@ -37,9 +33,9 @@ DECL|att_indicate|function|static uint8_t att_indicate(struct bt_att *att, struc
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_notify|function|static uint8_t att_notify(struct bt_att *att, struct net_buf *buf)
-DECL|att_op_type|function|static uint8_t att_op_type(uint8_t op)
 DECL|att_prep_write_rsp|function|static uint8_t att_prep_write_rsp(struct bt_att *att, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
 DECL|att_prepare_write_req|function|static uint8_t att_prepare_write_req(struct bt_att *att, struct net_buf *buf)
+DECL|att_process|function|static void att_process(struct bt_att *att)
 DECL|att_read_blob_req|function|static uint8_t att_read_blob_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_group_req|function|static uint8_t att_read_group_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_group_rsp|function|static uint8_t att_read_group_rsp(struct bt_att *att, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
@@ -48,9 +44,10 @@ DECL|att_read_req|function|static uint8_t att_read_req(struct bt_att *att, struc
 DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_att *att, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset)
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_att *att, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
+DECL|att_req_clone|function|static struct net_buf *att_req_clone(struct net_buf *buf)
 DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req)
-DECL|att_req_new|function|static struct bt_att_req *att_req_new(struct bt_att *att, struct net_buf *buf, bt_att_func_t func, void *user_data, bt_att_destroy_t destroy)
 DECL|att_reset|function|static void att_reset(struct bt_att *att)
+DECL|att_send_req|function|static int att_send_req(struct bt_att *att, struct bt_att_req *req)
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_att *att, struct net_buf *buf)
 DECL|att_timeout|function|static void att_timeout(struct nano_work *work)
 DECL|att_write_cmd|function|static uint8_t att_write_cmd(struct bt_att *att, struct net_buf *buf)
@@ -62,20 +59,19 @@ DECL|att|member|struct bt_att *att;
 DECL|att|member|struct bt_att *att;
 DECL|att|member|struct bt_att *att;
 DECL|bt_att_accept|function|static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
-DECL|bt_att_cancel|function|void bt_att_cancel(struct bt_conn *conn)
 DECL|bt_att_connected|function|static void bt_att_connected(struct bt_l2cap_chan *chan)
 DECL|bt_att_create_pdu|function|struct net_buf *bt_att_create_pdu(struct bt_conn *conn, uint8_t op, size_t len)
 DECL|bt_att_disconnected|function|static void bt_att_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_att_encrypt_change|function|static void bt_att_encrypt_change(struct bt_l2cap_chan *chan)
 DECL|bt_att_get_mtu|function|uint16_t bt_att_get_mtu(struct bt_conn *conn)
 DECL|bt_att_init|function|void bt_att_init(void)
-DECL|bt_att_pool|variable|bt_att_pool
 DECL|bt_att_recv|function|static void bt_att_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
-DECL|bt_att_req|struct|struct bt_att_req {
-DECL|bt_att_send|function|int bt_att_send(struct bt_conn *conn, struct net_buf *buf, bt_att_func_t func,void *user_data, bt_att_destroy_t destroy)
+DECL|bt_att_req_cancel|function|void bt_att_req_cancel(struct bt_conn *conn, struct bt_att_req *req)
+DECL|bt_att_req_send|function|int bt_att_req_send(struct bt_conn *conn, struct bt_att_req *req)
+DECL|bt_att_send|function|int bt_att_send(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_attr_data|struct|struct bt_attr_data {
 DECL|bt_att|struct|struct bt_att {
-DECL|buf|member|struct net_buf *buf;
+DECL|bt_req_pool|variable|bt_req_pool
 DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
@@ -85,9 +81,9 @@ DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
+DECL|clone_data|variable|clone_data
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
-DECL|destroy|member|bt_att_destroy_t destroy;
 DECL|err_to_att|function|static uint8_t err_to_att(int err)
 DECL|err|member|uint8_t err;
 DECL|err|member|uint8_t err;
@@ -99,7 +95,6 @@ DECL|find_info_cb|function|static uint8_t find_info_cb(const struct bt_gatt_attr
 DECL|find_info_data|struct|struct find_info_data {
 DECL|find_type_cb|function|static uint8_t find_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|find_type_data|struct|struct find_type_data {
-DECL|func|member|bt_att_func_t func;
 DECL|func|member|uint8_t (*func)(struct bt_att *att, struct net_buf *buf);
 DECL|group|member|struct bt_att_group_data *group;
 DECL|group|member|struct bt_att_handle_group *group;
@@ -127,15 +122,15 @@ DECL|read_group_cb|function|static uint8_t read_group_cb(const struct bt_gatt_at
 DECL|read_group_data|struct|struct read_group_data {
 DECL|read_type_cb|function|static uint8_t read_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|read_type_data|struct|struct read_type_data {
-DECL|req|member|struct bt_att_req req;
-DECL|retrying|member|bool retrying;
+DECL|req_data|variable|req_data
+DECL|reqs|member|sys_slist_t reqs;
+DECL|req|member|struct bt_att_req *req;
 DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|timeout_work|member|struct nano_delayed_work timeout_work;
-DECL|user_data|member|void *user_data;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;

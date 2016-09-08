@@ -44,6 +44,12 @@ DECL|_included|member|} _included;
 DECL|_next|member|struct bt_gatt_attr *_next;
 DECL|_next|member|struct bt_gatt_subscribe_params *_next;
 DECL|_peer|member|bt_addr_le_t _peer;
+DECL|_req|member|struct bt_att_req _req;
+DECL|_req|member|struct bt_att_req _req;
+DECL|_req|member|struct bt_att_req _req;
+DECL|_req|member|struct bt_att_req _req;
+DECL|_req|member|struct bt_att_req _req;
+DECL|_req|member|struct bt_att_req _req;
 DECL|attr_handle|member|uint16_t attr_handle;
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
@@ -55,13 +61,13 @@ DECL|bt_gatt_chrc|struct|struct bt_gatt_chrc {
 DECL|bt_gatt_cpf|struct|struct bt_gatt_cpf {
 DECL|bt_gatt_discover_func_t|typedef|typedef uint8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_discover_params|struct|struct bt_gatt_discover_params {
+DECL|bt_gatt_exchange_params|struct|struct bt_gatt_exchange_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
 DECL|bt_gatt_indicate_func_t|typedef|typedef void (*bt_gatt_indicate_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_indicate_params|struct|struct bt_gatt_indicate_params {
 DECL|bt_gatt_notify_func_t|typedef|typedef uint8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_read_func_t|typedef|typedef uint8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, uint8_t err,
 DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
-DECL|bt_gatt_rsp_func_t|typedef|typedef void (*bt_gatt_rsp_func_t)(struct bt_conn *conn, uint8_t err);
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
 DECL|bt_gatt_write_func_t|typedef|typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, uint8_t err,
@@ -84,6 +90,7 @@ DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
 DECL|func|member|bt_gatt_write_func_t func;
+DECL|func|member|void (*func)(struct bt_conn *conn, uint8_t err,
 DECL|handle_count|member|size_t handle_count;
 DECL|handles|member|uint16_t *handles;
 DECL|handle|member|uint16_t handle;

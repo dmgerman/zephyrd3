@@ -23,7 +23,7 @@ DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
 DECL|err|member|uint8_t err;
-DECL|features|member|uint8_t features[8];
+DECL|features|member|uint8_t features[1][8];
 DECL|features|member|uint8_t features[LMP_MAX_PAGES][8];
 DECL|handle|member|uint16_t handle;
 DECL|init_addr|member|bt_addr_le_t init_addr;
@@ -33,8 +33,7 @@ DECL|interval|member|uint16_t interval;
 DECL|keys|member|struct bt_keys *keys;
 DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
-DECL|lmp_ext_feat_capable|macro|lmp_ext_feat_capable
-DECL|lmp_ssp_host_supported|macro|lmp_ssp_host_supported
+DECL|link_key|member|struct bt_keys_link_key *link_key;
 DECL|pairing_method|member|uint8_t pairing_method;
 DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|ref|member|atomic_t ref;

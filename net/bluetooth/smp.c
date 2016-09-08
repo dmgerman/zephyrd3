@@ -2,7 +2,11 @@ DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK|macro|BT_SMP_AUTH_MASK
+DECL|ID_DIST|macro|ID_DIST
+DECL|ID_DIST|macro|ID_DIST
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
+DECL|LINK_DIST|macro|LINK_DIST
+DECL|LINK_DIST|macro|LINK_DIST
 DECL|M|variable|M
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
@@ -12,11 +16,11 @@ DECL|RECV_KEYS_SC|macro|RECV_KEYS_SC
 DECL|RECV_KEYS|macro|RECV_KEYS
 DECL|SEND_KEYS_SC|macro|SEND_KEYS_SC
 DECL|SEND_KEYS|macro|SEND_KEYS
-DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_DERIVE_LK|enumerator|SMP_FLAG_DERIVE_LK, /* if Link Key should be derived */
 DECL|SMP_FLAG_DHCHECK_WAIT|enumerator|SMP_FLAG_DHCHECK_WAIT, /* if waiting for remote DHCheck (as slave) */
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
 DECL|SMP_FLAG_DHKEY_SEND|enumerator|SMP_FLAG_DHKEY_SEND, /* if should generate and send DHKey Check */
@@ -104,6 +108,7 @@ DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_debug_private_key|variable|sc_debug_private_key
 DECL|sc_debug_public_key|variable|sc_debug_public_key
+DECL|sc_derive_link_key|function|static void sc_derive_link_key(struct bt_smp *smp)
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
 DECL|sc_public_key|variable|sc_public_key
 DECL|sc_send_public_key|function|static uint8_t sc_send_public_key(struct bt_smp *smp)
@@ -131,11 +136,14 @@ DECL|smp_f6_test|function|static int smp_f6_test(void)
 DECL|smp_f6|function|static int smp_f6(const uint8_t *w, const uint8_t *n1, const uint8_t *n2, const uint8_t *r, const uint8_t *iocap, const bt_addr_le_t *a1, const bt_addr_le_t *a2, uint8_t *check)
 DECL|smp_g2_test|function|static int smp_g2_test(void)
 DECL|smp_g2|function|static int smp_g2(const uint8_t u[32], const uint8_t v[32], const uint8_t x[16], const uint8_t y[16], uint32_t *passkey)
+DECL|smp_h6_test|function|static int smp_h6_test(void)
+DECL|smp_h6|function|static int smp_h6(const uint8_t w[16], const uint8_t key_id[4], uint8_t res[16])
 DECL|smp_ident_addr_info|function|static uint8_t smp_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_pairing_complete|function|static void smp_pairing_complete(struct bt_smp *smp, uint8_t status)
 DECL|smp_pairing_confirm|function|static uint8_t smp_pairing_confirm(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_failed|function|static uint8_t smp_pairing_failed(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_random|function|static uint8_t smp_pairing_random(struct bt_smp *smp, struct net_buf *buf)
