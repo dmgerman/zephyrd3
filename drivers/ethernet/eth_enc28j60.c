@@ -11,7 +11,6 @@ DECL|eth_enc28j60_init_mac|function|static void eth_enc28j60_init_mac(struct dev
 DECL|eth_enc28j60_init_phy|function|static void eth_enc28j60_init_phy(struct device *dev)
 DECL|eth_enc28j60_init|function|static int eth_enc28j60_init(struct device *dev)
 DECL|eth_enc28j60_read_mem|function|static void eth_enc28j60_read_mem(struct device *dev, uint8_t *data_buffer, uint8_t buf_len)
-DECL|eth_enc28j60_read_phy|function|static void eth_enc28j60_read_phy(struct device *dev, uint16_t reg_addr, int16_t *data)
 DECL|eth_enc28j60_read_reg|function|static void eth_enc28j60_read_reg(struct device *dev, uint16_t reg_addr, uint8_t *value)
 DECL|eth_enc28j60_reg_cb|function|void eth_enc28j60_reg_cb(struct device *dev, void (*cb)(uint8_t *buffer, uint16_t len))
 DECL|eth_enc28j60_rx|function|static int eth_enc28j60_rx(struct device *dev)

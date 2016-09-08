@@ -153,7 +153,7 @@ DECL|_ENC28J60_|macro|_ENC28J60_
 DECL|eth_enc28j60_config|struct|struct eth_enc28j60_config {
 DECL|eth_enc28j60_runtime|struct|struct eth_enc28j60_runtime {
 DECL|fiber_stack|member|char __stack fiber_stack[ENC28J60_FIBER_STACK_SIZE];
-DECL|full_duplex|member|char full_duplex;
+DECL|full_duplex|member|uint8_t full_duplex;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_pin|member|uint8_t gpio_pin;
 DECL|gpio_port|member|const char *gpio_port;
