@@ -378,6 +378,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -539,6 +541,8 @@ DECL|bt_hci_evt_user_passkey_req|struct|struct bt_hci_evt_user_passkey_req {
 DECL|bt_hci_handle_count|struct|struct bt_hci_handle_count {
 DECL|bt_hci_op_inquiry|struct|struct bt_hci_op_inquiry {
 DECL|bt_hci_rp_connect_cancel|struct|struct bt_hci_rp_connect_cancel {
+DECL|bt_hci_rp_le_conn_param_req_neg_reply|struct|struct bt_hci_rp_le_conn_param_req_neg_reply {
+DECL|bt_hci_rp_le_conn_param_req_reply|struct|struct bt_hci_rp_le_conn_param_req_reply {
 DECL|bt_hci_rp_le_encrypt|struct|struct bt_hci_rp_le_encrypt {
 DECL|bt_hci_rp_le_ltk_req_neg_reply|struct|struct bt_hci_rp_le_ltk_req_neg_reply {
 DECL|bt_hci_rp_le_ltk_req_reply|struct|struct bt_hci_rp_le_ltk_req_reply {
@@ -620,6 +624,8 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -797,6 +803,8 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
