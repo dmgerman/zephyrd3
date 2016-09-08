@@ -21,6 +21,7 @@ DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
+DECL|SMP_FLAG_BR_INITIATOR|enumerator|SMP_FLAG_BR_INITIATOR, /* if BR/EDR pairing initiator */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_DERIVE_LK|enumerator|SMP_FLAG_DERIVE_LK, /* if Link Key should be derived */
 DECL|SMP_FLAG_DHCHECK_WAIT|enumerator|SMP_FLAG_DHCHECK_WAIT, /* if waiting for remote DHCheck (as slave) */
@@ -140,6 +141,7 @@ DECL|smp_br_pairing_failed|function|static uint8_t smp_br_pairing_failed(struct 
 DECL|smp_br_pairing_req|function|static uint8_t smp_br_pairing_req(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp *smp)
+DECL|smp_br_send_pairing_req|function|static int smp_br_send_pairing_req(struct bt_smp *smp)
 DECL|smp_br_send|function|static void smp_br_send(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_timeout|function|static void smp_br_timeout(struct nano_work *work)
