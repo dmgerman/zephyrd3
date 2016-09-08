@@ -1,0 +1,4 @@
+DECL|CMSDK_AHB_GPIO0_DEV|macro|CMSDK_AHB_GPIO0_DEV
+DECL|CMSDK_AHB_GPIO1_DEV|macro|CMSDK_AHB_GPIO1_DEV
+DECL|arm_v2m_beetle_pinmux_defaults|function|static void arm_v2m_beetle_pinmux_defaults(void)
+DECL|arm_v2m_beetle_pinmux_init|function|static int arm_v2m_beetle_pinmux_init(struct device *port)
