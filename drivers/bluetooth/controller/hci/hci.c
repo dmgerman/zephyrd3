@@ -498,6 +498,5 @@ DECL|unknown_hci_command|member|unknown_hci_command;
 DECL|value|member|uint8_t value[64];
 DECL|version_number|member|uint8_t version_number;
 DECL|voice_setting|member|uint8_t voice_setting[2];
-DECL|vs_cmd_handle|function|static int vs_cmd_handle(uint8_t ocf, struct hci_cmd *cmd,uint8_t *len, struct hci_evt *evt)
 DECL|whitelist_size|member|uint8_t whitelist_size;
 DECL|window|member|uint16_t window;
