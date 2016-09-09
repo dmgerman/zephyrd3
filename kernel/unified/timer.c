@@ -1,6 +1,6 @@
 DECL|_dynamic_timers|variable|_dynamic_timers
-DECL|_k_dyamic_timer_init|function|void _k_dyamic_timer_init(void)
 DECL|_timer_pool|variable|_timer_pool
+DECL|init_dyamic_timers|function|static int init_dyamic_timers(struct device *dev)
 DECL|k_timer_alloc|function|struct k_timer *k_timer_alloc(void)
 DECL|k_timer_free|function|void k_timer_free(struct k_timer *timer)
 DECL|k_timer_init|function|void k_timer_init(struct k_timer *timer, void *data)

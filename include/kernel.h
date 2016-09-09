@@ -73,9 +73,6 @@ DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|__ticks_to_ms|function|static int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
-DECL|_k_dyamic_timer_init|macro|_k_dyamic_timer_init
-DECL|_k_mbox_init|macro|_k_mbox_init
-DECL|_k_pipes_init|macro|_k_pipes_init
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|uint32_t _mailbox;
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
