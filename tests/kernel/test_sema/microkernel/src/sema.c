@@ -4,6 +4,7 @@ DECL|LowPriTask|function|int LowPriTask(void)
 DECL|N_TESTS|macro|N_TESTS
 DECL|OBJ_TIMEOUT|macro|OBJ_TIMEOUT
 DECL|RegressionTask|function|int RegressionTask(void)
+DECL|__printf_like|macro|__printf_like
 DECL|simpleFiberSemTest|function|static int simpleFiberSemTest(void)
 DECL|simpleGroupTest|function|int simpleGroupTest(void)
 DECL|simpleGroupWaitTest|function|int simpleGroupWaitTest(void)
