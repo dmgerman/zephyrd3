@@ -1,5 +1,0 @@
-DECL|irq_disable|function|void irq_disable(uint8_t irq)
-DECL|irq_enabled|function|uint8_t irq_enabled(uint8_t irq)
-DECL|irq_enable|function|void irq_enable(uint8_t irq)
-DECL|irq_pending_set|function|void irq_pending_set(uint8_t irq)
-DECL|irq_priority_equal|function|uint8_t irq_priority_equal(uint8_t irq)
