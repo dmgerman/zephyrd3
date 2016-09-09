@@ -61,8 +61,8 @@ DECL|disconnect_cmplt|member|struct hci_evt_disconnect_cmplt disconnect_cmplt;
 DECL|disconnect|function|static void disconnect(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|ediv|member|uint8_t ediv[2];
 DECL|enabled|member|uint8_t enabled;
-DECL|encode_control|function|static void encode_control(uint8_t *buf, uint8_t *len, uint8_t **out)
-DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx,uint8_t *len, uint8_t **out)
+DECL|encode_control|function|static void encode_control(uint8_t *buf, uint8_t *len, struct hci_evt *evt)
+DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx,uint8_t *len, struct hci_evt *evt)
 DECL|encode_data|function|static void encode_data(uint8_t *buf, uint8_t *len, uint8_t **out)
 DECL|encryption_change|member|struct hci_evt_encryption_change encryption_change;
 DECL|encryption_key_refresh_cmplt|member|encryption_key_refresh_cmplt;
