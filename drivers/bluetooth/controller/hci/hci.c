@@ -125,7 +125,7 @@ DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_handle|member|uint16_t conn_handle;
 DECL|conn_update_cmplt|member|struct hci_evt_le_meta_conn_update_complete conn_update_cmplt;
-DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, struct hci_cmd *cmd, uint8_t *len, struct hci_evt *evt)
+DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|data|member|uint8_t data[1];
 DECL|data|member|uint8_t data[31];
@@ -277,46 +277,74 @@ DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|le_add_dev_to_wlist|member|le_add_dev_to_wlist;
 DECL|le_add_dev_to_wlist|member|struct hci_cmd_le_add_dev_to_wlist le_add_dev_to_wlist;
+DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_clear_whitelist|member|le_clear_whitelist;
+DECL|le_clear_wl|function|static void le_clear_wl(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_param_req_reply|function|static void le_conn_param_req_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_update|function|static void le_conn_update(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_update|member|struct hci_cmd_le_conn_update le_conn_update;
+DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_conn_cancel|member|le_create_conn_cancel;
+DECL|le_create_connection|function|static void le_create_connection(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_conn|member|struct hci_cmd_le_create_conn le_create_conn;
+DECL|le_encrypt|function|static void le_encrypt(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_encrypt|member|struct hci_cmd_le_encrypt le_encrypt;
 DECL|le_encrypt|member|struct hci_evt_cmd_cmplt_le_encrypt le_encrypt;
 DECL|le_ltk_neg_reply|member|le_ltk_neg_reply;
 DECL|le_ltk_neg_reply|member|struct hci_cmd_le_ltk_neg_reply le_ltk_neg_reply;
 DECL|le_ltk_reply|member|struct hci_cmd_le_ltk_reply le_ltk_reply;
 DECL|le_ltk_reply|member|struct hci_evt_cmd_cmplt_le_ltk_reply le_ltk_reply;
+DECL|le_ltk_req_neg_reply|function|static void le_ltk_req_neg_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_ltk_req_reply|function|static void le_ltk_req_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_meta|member|struct hci_evt_le_meta le_meta;
+DECL|le_rand|function|static void le_rand(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_rand|member|struct hci_evt_cmd_cmplt_le_rand le_rand;
 DECL|le_rd_adv_chl_tx_pwr|member|le_rd_adv_chl_tx_pwr;
 DECL|le_rd_loc_sup_features|member|le_rd_loc_sup_features;
+DECL|le_read_adv_ch_tx_power|function|static void le_read_adv_ch_tx_power(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_read_buffer_size|function|static void le_read_buffer_size(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_buffer_size|member|le_read_buffer_size;
+DECL|le_read_local_features|function|static void le_read_local_features(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_read_remote_features|function|static void le_read_remote_features(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_remote_used_feats|member|le_read_remote_used_feats;
+DECL|le_read_supp_states|function|static void le_read_supp_states(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_supported_states|member|le_read_supported_states;
 DECL|le_read_whitelist_size|member|le_read_whitelist_size;
+DECL|le_read_wl_size|function|static void le_read_wl_size(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_remote_conn_param_req_neg_reply|member|le_remote_conn_param_req_neg_reply;
 DECL|le_remote_conn_param_req_neg_reply|member|le_remote_conn_param_req_neg_reply;
 DECL|le_remote_conn_param_req_reply|member|le_remote_conn_param_req_reply;
 DECL|le_remote_conn_param_req_reply|member|le_remote_conn_param_req_reply;
+DECL|le_set_adv_data|function|static void le_set_adv_data(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_adv_data|member|struct hci_cmd_le_set_adv_data le_set_adv_data;
 DECL|le_set_adv_data|member|struct hci_evt_cmd_cmplt_le_set_adv_data le_set_adv_data;
+DECL|le_set_adv_enable|function|static void le_set_adv_enable(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_adv_enable|member|struct hci_cmd_le_set_adv_enable le_set_adv_enable;
 DECL|le_set_adv_enable|member|struct hci_evt_cmd_cmplt_le_set_adv_enable le_set_adv_enable;
 DECL|le_set_adv_params|member|struct hci_cmd_le_set_adv_params le_set_adv_params;
 DECL|le_set_adv_params|member|struct hci_evt_cmd_cmplt_le_set_adv_params le_set_adv_params;
+DECL|le_set_adv_param|function|static void le_set_adv_param(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_data_length|member|le_set_data_length;
 DECL|le_set_data_length|member|struct hci_cmd_le_set_data_length le_set_data_length;
+DECL|le_set_data_len|function|static void le_set_data_len(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_set_event_mask|function|static void le_set_event_mask(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_set_host_ch_classif|function|static void le_set_host_ch_classif(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_host_chl_classn|member|le_set_host_chl_classn;
 DECL|le_set_host_chl_classn|member|struct hci_cmd_le_set_host_chl_classn le_set_host_chl_classn;
+DECL|le_set_random_address|function|static void le_set_random_address(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_rnd_addr|member|struct hci_cmd_le_set_rnd_addr le_set_rnd_addr;
 DECL|le_set_rnd_addr|member|struct hci_evt_cmd_cmplt_le_set_rnd_addr le_set_rnd_addr;
 DECL|le_set_scan_data|member|struct hci_cmd_le_set_scan_data le_set_scan_data;
+DECL|le_set_scan_enable|function|static void le_set_scan_enable(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_scan_enable|member|le_set_scan_enable;
 DECL|le_set_scan_enable|member|struct hci_cmd_le_set_scan_enable le_set_scan_enable;
+DECL|le_set_scan_params|function|static void le_set_scan_params(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_scan_params|member|le_set_scan_params;
 DECL|le_set_scan_params|member|struct hci_cmd_le_set_scan_params le_set_scan_params;
 DECL|le_set_scan_resp_data|member|le_set_scan_resp_data;
+DECL|le_set_scan_rsp_data|function|static void le_set_scan_rsp_data(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_start_encryption|function|static void le_start_encryption(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_start_encryption|member|struct hci_cmd_le_start_encryption le_start_encryption;
 DECL|le_states|member|uint64_t le_states;
 DECL|length_change|member|struct hci_evt_le_meta_length_change length_change;
