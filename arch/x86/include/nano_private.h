@@ -435,5 +435,6 @@ DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
+DECL|timeout|member|struct _timeout timeout;
 DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|xmmReg|member|tXmmReg xmmReg[8]; /* 128 : XMM registers */

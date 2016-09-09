@@ -93,6 +93,7 @@ DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
+DECL|timeout|member|struct _timeout timeout;
 DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
