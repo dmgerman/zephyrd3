@@ -58,7 +58,8 @@ DECL|_loapic_init|function|static int _loapic_init(struct device *unused)
 DECL|_loapic_int_vec_set|function|void _loapic_int_vec_set(unsigned int irq, /* IRQ number of the interrupt */ unsigned int vector /* vector to copy into the LVT */ )
 DECL|_loapic_irq_disable|function|void _loapic_irq_disable(unsigned int irq)
 DECL|_loapic_irq_enable|function|void _loapic_irq_enable(unsigned int irq)
-DECL|loapic_pm_ops|variable|loapic_pm_ops
-DECL|loapic_resume|function|static int loapic_resume(struct device *port, int pm_policy)
+DECL|loapic_device_ctrl|function|static int loapic_device_ctrl(struct device *port, uint32_t ctrl_command, void *context)
+DECL|loapic_device_power_state|variable|loapic_device_power_state
+DECL|loapic_resume|function|int loapic_resume(struct device *port)
 DECL|loapic_suspend_buf|variable|loapic_suspend_buf
-DECL|loapic_suspend|function|static int loapic_suspend(struct device *port, int pm_policy)
+DECL|loapic_suspend|function|static int loapic_suspend(struct device *port)

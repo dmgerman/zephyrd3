@@ -22,8 +22,6 @@ DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
-DECL|_sys_clock_resume|function|int _sys_clock_resume(struct device *dev, int pm_policy)
-DECL|_sys_clock_suspend|function|int _sys_clock_suspend(struct device *dev, int pm_policy)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* parameter is not used */ )
@@ -35,6 +33,7 @@ DECL|divide_configuration_register_set|function|static inline void divide_config
 DECL|initial_count_register_get|function|static inline uint32_t initial_count_register_get(void)
 DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count)
 DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
+DECL|loapic_timer_device_power_state|variable|loapic_timer_device_power_state
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
@@ -42,7 +41,10 @@ DECL|programmed_cycles|variable|programmed_cycles
 DECL|programmed_full_ticks|variable|programmed_full_ticks
 DECL|reg_timer_cfg_save|variable|reg_timer_cfg_save
 DECL|reg_timer_save|variable|reg_timer_save
+DECL|sys_clock_device_ctrl|function|int sys_clock_device_ctrl(struct device *port, uint32_t ctrl_command, void *context)
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
+DECL|sys_clock_resume|function|static int sys_clock_resume(struct device *dev)
+DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|macro|tickless_idle_init
 DECL|timer_known_to_have_expired|variable|timer_known_to_have_expired

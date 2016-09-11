@@ -42,6 +42,7 @@ DECL|config_func|member|spi_intel_config_t config_func;
 DECL|cs_gpio_name|member|char *cs_gpio_name;
 DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|error|member|uint8_t error;
 DECL|irq|member|uint32_t irq;
 DECL|padding|member|uint8_t padding[3];

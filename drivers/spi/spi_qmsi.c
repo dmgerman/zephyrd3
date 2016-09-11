@@ -5,6 +5,7 @@ DECL|cs_pin|member|uint32_t cs_pin;
 DECL|cs_port|member|char *cs_port;
 DECL|ctrlr0|member|uint32_t ctrlr0;
 DECL|ctx_save|member|struct spi_context_t ctx_save;
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|dev|member|struct device *dev;
 DECL|frame_size_to_dfs|function|static inline uint8_t frame_size_to_dfs(qm_spi_frame_size_t frame_size)
 DECL|gpio_cs_init|function|static struct device *gpio_cs_init(struct spi_qmsi_config *config)
@@ -18,8 +19,12 @@ DECL|sem|member|struct nano_sem sem;
 DECL|ser|member|uint32_t ser;
 DECL|spi_context_t|struct|struct spi_context_t {
 DECL|spi_control_cs|function|static void spi_control_cs(struct device *dev, bool active)
-DECL|spi_master_resume_device|function|static int spi_master_resume_device(struct device *dev, int pm_policy)
-DECL|spi_master_suspend_device|function|static int spi_master_suspend_device(struct device *dev, int pm_policy)
+DECL|spi_master_get_power_state|function|static uint32_t spi_master_get_power_state(struct device *dev)
+DECL|spi_master_qmsi_device_ctrl|function|static int spi_master_qmsi_device_ctrl(struct device *port, uint32_t ctrl_command, void *context)
+DECL|spi_master_resume_device_from_suspend|function|static int spi_master_resume_device_from_suspend(struct device *dev)
+DECL|spi_master_set_power_state|function|static void spi_master_set_power_state(struct device *dev, uint32_t power_state)
+DECL|spi_master_set_power_state|macro|spi_master_set_power_state
+DECL|spi_master_suspend_device|function|static int spi_master_suspend_device(struct device *dev)
 DECL|spi_qmsi_api|variable|spi_qmsi_api
 DECL|spi_qmsi_configure|function|static int spi_qmsi_configure(struct device *dev,struct spi_config *config)
 DECL|spi_qmsi_config|struct|struct spi_qmsi_config {

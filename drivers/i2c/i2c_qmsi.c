@@ -6,16 +6,21 @@ DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
 DECL|ctx_save|member|struct i2c_context_t ctx_save;
 DECL|default_cfg|member|union dev_config default_cfg;
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|driver_data_0|variable|driver_data_0
 DECL|driver_data_1|variable|driver_data_1
 DECL|i2c_context_t|struct|struct i2c_context_t {
+DECL|i2c_device_ctrl|function|static int i2c_device_ctrl(struct device *dev, uint32_t ctrl_command, void *context)
 DECL|i2c_qmsi_config_info|struct|struct i2c_qmsi_config_info {
 DECL|i2c_qmsi_configure|function|static int i2c_qmsi_configure(struct device *dev, uint32_t config)
 DECL|i2c_qmsi_driver_data|struct|struct i2c_qmsi_driver_data {
+DECL|i2c_qmsi_get_power_state|function|static uint32_t i2c_qmsi_get_power_state(struct device *dev)
 DECL|i2c_qmsi_init|function|static int i2c_qmsi_init(struct device *dev)
+DECL|i2c_qmsi_set_power_state|function|static void i2c_qmsi_set_power_state(struct device *dev, uint32_t power_state)
+DECL|i2c_qmsi_set_power_state|macro|i2c_qmsi_set_power_state
 DECL|i2c_qmsi_transfer|function|static int i2c_qmsi_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t addr)
-DECL|i2c_resume_device|function|static int i2c_resume_device(struct device *dev, int pm_policy)
-DECL|i2c_suspend_device|function|static int i2c_suspend_device(struct device *dev, int pm_policy)
+DECL|i2c_resume_device_from_suspend|function|static int i2c_resume_device_from_suspend(struct device *dev)
+DECL|i2c_suspend_device|function|static int i2c_suspend_device(struct device *dev)
 DECL|ic_ack_general_call|member|uint32_t ic_ack_general_call; /**< General Call Ack. */
 DECL|ic_con|member|uint32_t ic_con; /**< Control Register. */
 DECL|ic_dma_cr|member|uint32_t ic_dma_cr; /**< DMA Control Register. */

@@ -19,15 +19,20 @@ DECL|spi_k64_configure|function|static int spi_k64_configure(struct device *dev,
 DECL|spi_k64_data_port_0|variable|spi_k64_data_port_0
 DECL|spi_k64_data_port_1|variable|spi_k64_data_port_1
 DECL|spi_k64_data_port_2|variable|spi_k64_data_port_2
+DECL|spi_k64_device_ctrl|function|static int spi_k64_device_ctrl(struct device *dev, uint32_t ctrl_command, void *context)
+DECL|spi_k64_get_power_state|function|static uint32_t spi_k64_get_power_state(struct device *dev)
 DECL|spi_k64_halt|function|static inline void spi_k64_halt(struct device *dev)
 DECL|spi_k64_init|function|int spi_k64_init(struct device *dev)
 DECL|spi_k64_isr|function|void spi_k64_isr(void *arg)
 DECL|spi_k64_pull_data|function|static void spi_k64_pull_data(struct device *dev)
 DECL|spi_k64_push_data|function|static void spi_k64_push_data(struct device *dev)
-DECL|spi_k64_resume|function|static int spi_k64_resume(struct device *dev, int pm_policy)
+DECL|spi_k64_resume_from_suspend|function|static int spi_k64_resume_from_suspend(struct device *dev)
 DECL|spi_k64_set_baud_rate|function|static uint32_t spi_k64_set_baud_rate(uint32_t baud_rate, uint32_t *ctar_ptr)
 DECL|spi_k64_set_delay|function|static uint32_t spi_k64_set_delay(enum spi_k64_delay_id delay_id,uint32_t delay_ns, uint32_t *ctar_ptr)
+DECL|spi_k64_set_power_state|function|static void spi_k64_set_power_state(struct device *dev, uint32_t power_state)
+DECL|spi_k64_set_power_state|macro|spi_k64_set_power_state
+DECL|spi_k64_set_power_state|macro|spi_k64_set_power_state
 DECL|spi_k64_slave_select|function|static int spi_k64_slave_select(struct device *dev, uint32_t slave)
 DECL|spi_k64_start|function|static inline void spi_k64_start(struct device *dev)
-DECL|spi_k64_suspend|function|static int spi_k64_suspend(struct device *dev, int pm_policy)
+DECL|spi_k64_suspend|function|static int spi_k64_suspend(struct device *dev)
 DECL|spi_k64_transceive|function|static int spi_k64_transceive(struct device *dev,const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)

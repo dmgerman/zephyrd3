@@ -4,6 +4,7 @@ DECL|callbacks|member|sys_slist_t callbacks;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|gpio_config_irq_t config_func;
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|gpio_config_irq_t|typedef|typedef void (*gpio_config_irq_t)(struct device *port);
 DECL|gpio_dw_config|struct|struct gpio_dw_config {
 DECL|gpio_dw_runtime|struct|struct gpio_dw_runtime {

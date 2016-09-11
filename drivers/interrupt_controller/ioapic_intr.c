@@ -15,9 +15,10 @@ DECL|_ioapic_irq_set|function|void _ioapic_irq_set(unsigned int irq, unsigned in
 DECL|ioApicRedGetLo|function|static uint32_t ioApicRedGetLo(unsigned int irq)
 DECL|ioApicRedSetHi|function|static void ioApicRedSetHi(unsigned int irq, uint32_t upper32)
 DECL|ioApicRedSetLo|function|static void ioApicRedSetLo(unsigned int irq, uint32_t lower32)
-DECL|ioapic_pm_ops|variable|ioapic_pm_ops
-DECL|ioapic_resume|function|int ioapic_resume(struct device *port, int pm_policy)
+DECL|ioapic_device_ctrl|function|static int ioapic_device_ctrl(struct device *device, uint32_t ctrl_command, void *context)
+DECL|ioapic_device_power_state|variable|ioapic_device_power_state
+DECL|ioapic_resume_from_suspend|function|int ioapic_resume_from_suspend(struct device *port)
 DECL|ioapic_suspend_buf|variable|ioapic_suspend_buf
-DECL|ioapic_suspend|function|int ioapic_suspend(struct device *port, int pm_policy)
+DECL|ioapic_suspend|function|int ioapic_suspend(struct device *port)
 DECL|restore_flags|function|uint32_t restore_flags(unsigned int irq)
 DECL|store_flags|function|void store_flags(unsigned int irq, uint32_t flags)

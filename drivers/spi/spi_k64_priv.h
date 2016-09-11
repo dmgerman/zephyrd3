@@ -87,6 +87,7 @@ DECL|clk_gate_bit|member|uint32_t clk_gate_bit; /* SPI module's clock gate bit p
 DECL|clk_gate_reg|member|uint32_t clk_gate_reg; /* SPI module's clock gate register addr. */
 DECL|config_func|member|spi_k64_config_t config_func; /* IRQ configuration function pointer */
 DECL|cont_pcs_sel|member|uint8_t cont_pcs_sel; /* continuous slave/PCS selection enable */
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|error|member|uint8_t error; /* error condition */
 DECL|frame_sz|member|uint8_t frame_sz; /* frame/word size, in bits */
 DECL|irq|member|uint32_t irq; /* SPI module IRQ number */

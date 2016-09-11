@@ -30,21 +30,24 @@ DECL|gpio_config_0|variable|gpio_config_0
 DECL|gpio_config_1_irq|function|void gpio_config_1_irq(struct device *port)
 DECL|gpio_config_2_irq|function|void gpio_config_2_irq(struct device *port)
 DECL|gpio_config_3_irq|function|void gpio_config_3_irq(struct device *port)
-DECL|gpio_dev_pm_ops|variable|gpio_dev_pm_ops
 DECL|gpio_dw_config_1|variable|gpio_dw_config_1
 DECL|gpio_dw_config_2|variable|gpio_dw_config_2
 DECL|gpio_dw_config_3|variable|gpio_dw_config_3
 DECL|gpio_dw_config|function|static inline int gpio_dw_config(struct device *port, int access_op, uint32_t pin, int flags)
+DECL|gpio_dw_device_ctrl|function|static int gpio_dw_device_ctrl(struct device *port, uint32_t ctrl_command,void *context)
 DECL|gpio_dw_disable_callback|function|static inline int gpio_dw_disable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_dw_enable_callback|function|static inline int gpio_dw_enable_callback(struct device *port, int access_op, uint32_t pin)
+DECL|gpio_dw_get_power_state|function|static uint32_t gpio_dw_get_power_state(struct device *port)
 DECL|gpio_dw_initialize|function|int gpio_dw_initialize(struct device *port)
 DECL|gpio_dw_isr|function|void gpio_dw_isr(void *arg)
 DECL|gpio_dw_manage_callback|function|static inline int gpio_dw_manage_callback(struct device *port, struct gpio_callback *callback, bool set)
 DECL|gpio_dw_read|function|static inline int gpio_dw_read(struct device *port, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_dw_resume_port|function|static inline int gpio_dw_resume_port(struct device *port, int pm_policy)
+DECL|gpio_dw_resume_from_suspend_port|function|static inline int gpio_dw_resume_from_suspend_port(struct device *port)
+DECL|gpio_dw_set_power_state|function|static void gpio_dw_set_power_state(struct device *port, uint32_t power_state)
+DECL|gpio_dw_set_power_state|macro|gpio_dw_set_power_state
 DECL|gpio_dw_setup|function|static inline int gpio_dw_setup(struct device *dev)
 DECL|gpio_dw_setup|macro|gpio_dw_setup
-DECL|gpio_dw_suspend_port|function|static inline int gpio_dw_suspend_port(struct device *port, int pm_policy)
+DECL|gpio_dw_suspend_port|function|static inline int gpio_dw_suspend_port(struct device *port)
 DECL|gpio_dw_unmask_int|function|static inline void gpio_dw_unmask_int(uint32_t mask_addr)
 DECL|gpio_dw_unmask_int|function|static inline void gpio_dw_unmask_int(uint32_t mask_addr)
 DECL|gpio_dw_unmask_int|macro|gpio_dw_unmask_int

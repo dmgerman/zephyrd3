@@ -12,8 +12,13 @@ DECL|aon_timer_qmsi_start|function|static int aon_timer_qmsi_start(struct device
 DECL|aon_timer_qmsi_stop|function|static int aon_timer_qmsi_stop(struct device *dev)
 DECL|aonpt_context|variable|aonpt_context
 DECL|aonpt_int_callback|function|static void aonpt_int_callback(void *user_data)
-DECL|aonpt_resume_device|function|static int aonpt_resume_device(struct device *dev, int pm_policy)
-DECL|aonpt_suspend_device|function|static int aonpt_suspend_device(struct device *dev, int pm_policy)
+DECL|aonpt_qmsi_device_ctrl|function|static int aonpt_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command, void *context)
+DECL|aonpt_qmsi_get_power_state|function|static uint32_t aonpt_qmsi_get_power_state(struct device *dev)
+DECL|aonpt_qmsi_set_power_state|function|static void aonpt_qmsi_set_power_state(struct device *dev, uint32_t power_state)
+DECL|aonpt_qmsi_set_power_state|macro|aonpt_qmsi_set_power_state
+DECL|aonpt_resume_device_from_suspend|function|static int aonpt_resume_device_from_suspend(struct device *dev)
+DECL|aonpt_suspend_device|function|static int aonpt_suspend_device(struct device *dev)
+DECL|device_power_state|member|uint32_t device_power_state;
 DECL|int_aonpt_mask_save|variable|int_aonpt_mask_save
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
