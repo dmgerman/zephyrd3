@@ -76,6 +76,7 @@ DECL|BT_HCI_ERR_UNSUPP_FEATURE_PARAMS_VAL|macro|BT_HCI_ERR_UNSUPP_FEATURE_PARAMS
 DECL|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE|macro|BT_HCI_ERR_UNSUPP_REMOTE_FEATURE
 DECL|BT_HCI_ESCO|macro|BT_HCI_ESCO
 DECL|BT_HCI_EVT_AUTH_COMPLETE|macro|BT_HCI_EVT_AUTH_COMPLETE
+DECL|BT_HCI_EVT_AUTH_PAYLOAD_TIMEOUT_EXP|macro|BT_HCI_EVT_AUTH_PAYLOAD_TIMEOUT_EXP
 DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
 DECL|BT_HCI_EVT_CONN_COMPLETE|macro|BT_HCI_EVT_CONN_COMPLETE
@@ -382,6 +383,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -510,6 +512,7 @@ DECL|bt_hci_ev_le_direct_adv_report|struct|struct bt_hci_ev_le_direct_adv_report
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
 DECL|bt_hci_evt_auth_complete|struct|struct bt_hci_evt_auth_complete {
+DECL|bt_hci_evt_auth_payload_timeout_exp|struct|struct bt_hci_evt_auth_payload_timeout_exp {
 DECL|bt_hci_evt_cc_status|struct|struct bt_hci_evt_cc_status {
 DECL|bt_hci_evt_cmd_complete|struct|struct bt_hci_evt_cmd_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
@@ -630,6 +633,7 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
