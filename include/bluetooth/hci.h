@@ -107,6 +107,7 @@ DECL|BT_HCI_EVT_PIN_CODE_REQ|macro|BT_HCI_EVT_PIN_CODE_REQ
 DECL|BT_HCI_EVT_REMOTE_EXT_FEATURES|macro|BT_HCI_EVT_REMOTE_EXT_FEATURES
 DECL|BT_HCI_EVT_REMOTE_FEATURES|macro|BT_HCI_EVT_REMOTE_FEATURES
 DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE
+DECL|BT_HCI_EVT_REMOTE_VERSION_INFO|macro|BT_HCI_EVT_REMOTE_VERSION_INFO
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EVT_USER_CONFIRM_REQ|macro|BT_HCI_EVT_USER_CONFIRM_REQ
 DECL|BT_HCI_EVT_USER_PASSKEY_NOTIFY|macro|BT_HCI_EVT_USER_PASSKEY_NOTIFY
@@ -248,6 +249,7 @@ DECL|BT_OGF_VS|macro|BT_OGF_VS
 DECL|BT_OGF|macro|BT_OGF
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -542,6 +544,7 @@ DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
 DECL|bt_hci_evt_remote_ext_features|struct|struct bt_hci_evt_remote_ext_features {
 DECL|bt_hci_evt_remote_features|struct|struct bt_hci_evt_remote_features {
 DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_req_complete {
+DECL|bt_hci_evt_remote_version_info|struct|struct bt_hci_evt_remote_version_info {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_evt_user_confirm_req|struct|struct bt_hci_evt_user_confirm_req {
 DECL|bt_hci_evt_user_passkey_notify|struct|struct bt_hci_evt_user_passkey_notify {
@@ -671,6 +674,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
@@ -716,6 +720,7 @@ DECL|local_rpa|member|bt_addr_t local_rpa;
 DECL|local_rpa|member|bt_addr_t local_rpa;
 DECL|ltk|member|uint8_t ltk[16];
 DECL|ltk|member|uint8_t ltk[16];
+DECL|manufacturer|member|uint16_t manufacturer;
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_ce_len|member|uint16_t max_ce_len;
@@ -863,7 +868,9 @@ DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
+DECL|status|member|uint8_t status;
 DECL|subevent|member|uint8_t subevent;
+DECL|subversion|member|uint8_t subversion;
 DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supervision_timeout|member|uint16_t supervision_timeout;
 DECL|supv_timeout|member|uint16_t supv_timeout;
@@ -879,5 +886,6 @@ DECL|tx_time|member|uint16_t tx_time;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|val|member|uint8_t val[6];
+DECL|version|member|uint8_t version;
 DECL|window|member|uint16_t window;
 DECL|wl_size|member|uint8_t wl_size;
