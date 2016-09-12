@@ -3,8 +3,13 @@ DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(i
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_sys_clock_tick_count|variable|_sys_clock_tick_count
 DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
+DECL|_time_slice_duration|variable|_time_slice_duration
+DECL|_time_slice_elapsed|variable|_time_slice_elapsed
+DECL|_time_slice_prio_ceiling|variable|_time_slice_prio_ceiling
 DECL|handle_expired_timeouts|function|static inline void handle_expired_timeouts(int32_t ticks)
 DECL|handle_expired_timeouts|macro|handle_expired_timeouts
+DECL|handle_time_slicing|function|static void handle_time_slicing(int32_t ticks)
+DECL|handle_time_slicing|macro|handle_time_slicing
 DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick

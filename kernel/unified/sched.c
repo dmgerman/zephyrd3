@@ -14,6 +14,7 @@ DECL|_set_ready_q_prio_bit|function|static void _set_ready_q_prio_bit(int prio)
 DECL|ceiling|macro|ceiling
 DECL|k_current_get|function|k_tid_t k_current_get(void)
 DECL|k_current_priority_get|function|int k_current_priority_get(void)
+DECL|k_sched_time_slice_set|function|void k_sched_time_slice_set(int32_t duration_in_ms, int prio)
 DECL|k_sched_unlock|function|void k_sched_unlock(void)
 DECL|k_sleep|function|void k_sleep(int32_t duration)
 DECL|k_thread_priority_set|function|void k_thread_priority_set(struct tcs *thread, int prio)
