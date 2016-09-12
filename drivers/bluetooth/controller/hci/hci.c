@@ -68,8 +68,9 @@ DECL|ediv|member|uint8_t ediv[2];
 DECL|enabled|member|uint8_t enabled;
 DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data, uint8_t *len, struct bt_hci_evt_hdr *evt)
-DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx,uint8_t *len, struct hci_evt *evt)
+DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|encode_data|function|static void encode_data(uint8_t *buf, uint8_t *len, uint8_t **out)
+DECL|encrypt_change|function|static void encrypt_change(uint8_t err, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|encryption_change|member|struct hci_evt_encryption_change encryption_change;
 DECL|encryption_key_refresh_cmplt|member|encryption_key_refresh_cmplt;
 DECL|features|member|uint8_t features[8];
@@ -112,13 +113,16 @@ DECL|le_clear_wl|function|static void le_clear_wl(uint8_t *cp, struct bt_hci_evt
 DECL|le_conn_complete|function|static void le_conn_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_param_req_reply|function|static void le_conn_param_req_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_param_req|function|static void le_conn_param_req(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_update|function|static void le_conn_update(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_connection|function|static void le_create_connection(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_data_len_change|function|static void le_data_len_change(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_encrypt|function|static void le_encrypt(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_ltk_req_neg_reply|function|static void le_ltk_req_neg_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_ltk_req_reply|function|static void le_ltk_req_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_ltk_request|function|static void le_ltk_request(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_meta|member|struct hci_evt_le_meta le_meta;
 DECL|le_rand|function|static void le_rand(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_adv_ch_tx_power|function|static void le_read_adv_ch_tx_power(uint8_t *cp, struct bt_hci_evt_hdr *evt)
@@ -127,6 +131,7 @@ DECL|le_read_local_features|function|static void le_read_local_features(uint8_t 
 DECL|le_read_remote_features|function|static void le_read_remote_features(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_supp_states|function|static void le_read_supp_states(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_read_wl_size|function|static void le_read_wl_size(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_set_adv_data|function|static void le_set_adv_data(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_adv_enable|function|static void le_set_adv_enable(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_adv_param|function|static void le_set_adv_param(uint8_t *cp, struct bt_hci_evt_hdr *evt)
@@ -163,6 +168,7 @@ DECL|read_supported_commands|function|static void read_supported_commands(uint8_
 DECL|reason|member|uint8_t reason;
 DECL|remote_conn_param_request|member|remote_conn_param_request;
 DECL|remote_used_features|member|remote_used_features;
+DECL|remote_version_info|function|static void remote_version_info(struct pdu_data *pdu_data, uint16_t handle,struct bt_hci_evt_hdr *evt)
 DECL|reports|member|uint8_t reports[1];
 DECL|reset|function|static void reset(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|role|member|uint8_t role;
