@@ -30,14 +30,18 @@ DECL|HCI_EVT_LE_META_LONG_TERM_KEY_REQUEST|enumerator|HCI_EVT_LE_META_LONG_TERM_
 DECL|HCI_EVT_LE_META_READ_REMOTE_USED_FEATURE_COMPLETE|enumerator|HCI_EVT_LE_META_READ_REMOTE_USED_FEATURE_COMPLETE,
 DECL|HCI_EVT_LE_META_REMOTE_CONNECTION_PARAMETER_REQUEST|enumerator|HCI_EVT_LE_META_REMOTE_CONNECTION_PARAMETER_REQUEST,
 DECL|HCI_EVT|enumerator|HCI_EVT = 0x04,
+DECL|HCI_ME|macro|HCI_ME
 DECL|HCI_PACKET_SIZE_MAX|macro|HCI_PACKET_SIZE_MAX
+DECL|HCI_SE|macro|HCI_SE
 DECL|_HCI_CC_LEN|macro|_HCI_CC_LEN
+DECL|_HCI_ME_LEN|macro|_HCI_ME_LEN
 DECL|__packed|union|union __packed {
 DECL|__packed|union|union __packed {
 DECL|addr_type|member|uint8_t addr_type;
 DECL|addr|member|uint8_t addr[BDADDR_SIZE];
 DECL|adv_report|member|struct hci_evt_le_meta_adv_report adv_report;
 DECL|apto_expired|member|struct hci_evt_apto_expired apto_expired;
+DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|bc|member|uint16_t bc:2;
 DECL|code|member|uint8_t code;
 DECL|company_id|member|uint16_t company_id;
@@ -57,11 +61,13 @@ DECL|conn_update_cmplt|member|struct hci_evt_le_meta_conn_update_complete conn_u
 DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|data|member|uint8_t data[1];
+DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|disconnect_cmplt|member|struct hci_evt_disconnect_cmplt disconnect_cmplt;
 DECL|disconnect|function|static void disconnect(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|ediv|member|uint8_t ediv[2];
 DECL|enabled|member|uint8_t enabled;
-DECL|encode_control|function|static void encode_control(uint8_t *buf, uint8_t *len, struct hci_evt *evt)
+DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
+DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx,uint8_t *len, struct hci_evt *evt)
 DECL|encode_data|function|static void encode_data(uint8_t *buf, uint8_t *len, uint8_t **out)
 DECL|encryption_change|member|struct hci_evt_encryption_change encryption_change;
@@ -101,9 +107,12 @@ DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_advertising_report|function|static void le_advertising_report(struct pdu_data *pdu_data, uint8_t *buf, struct bt_hci_evt_hdr *evt)
 DECL|le_clear_wl|function|static void le_clear_wl(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_complete|function|static void le_conn_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_param_req_reply|function|static void le_conn_param_req_reply(uint8_t *cp, struct bt_hci_evt_hdr *evt)
+DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|le_conn_update|function|static void le_conn_update(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_create_connection|function|static void le_create_connection(uint8_t *cp, struct bt_hci_evt_hdr *evt)
