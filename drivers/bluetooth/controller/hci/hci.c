@@ -80,7 +80,7 @@ DECL|hci_cmd_handle|function|static void hci_cmd_handle(struct bt_hci_cmd_hdr *c
 DECL|hci_context|variable|hci_context
 DECL|hci_data_handle|function|static void hci_data_handle(void)
 DECL|hci_data|struct|struct __packed hci_data {
-DECL|hci_encode_num_cmplt|function|void hci_encode_num_cmplt(uint16_t instance, uint8_t num, uint8_t *len, uint8_t **out)
+DECL|hci_encode_num_cmplt|function|void hci_encode_num_cmplt(uint16_t handle, uint8_t num, uint8_t *len, uint8_t **out)
 DECL|hci_encode|function|void hci_encode(uint8_t *buf, uint8_t *len, uint8_t **out)
 DECL|hci_evt_apto_expired|struct|struct __packed hci_evt_apto_expired {
 DECL|hci_evt_cmd_cmplt_unknown_hci_command|struct|struct __packed hci_evt_cmd_cmplt_unknown_hci_command {
