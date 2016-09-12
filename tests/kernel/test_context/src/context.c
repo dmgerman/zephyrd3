@@ -9,6 +9,7 @@ DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
+DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
 DECL|_trigger_isrHandler|function|static void _trigger_isrHandler(void)
 DECL|command|member|int command; /* command to process */
