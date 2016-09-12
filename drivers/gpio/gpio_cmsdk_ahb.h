@@ -1,0 +1,20 @@
+DECL|_DRIVERS_GPIO_CMSDK_AHB_|macro|_DRIVERS_GPIO_CMSDK_AHB_
+DECL|altfuncclr|member|volatile uint32_t altfuncclr;
+DECL|altfuncset|member|volatile uint32_t altfuncset;
+DECL|dataout|member|volatile uint32_t dataout;
+DECL|data|member|volatile uint32_t data;
+DECL|gpio_cmsdk_ahb|struct|struct gpio_cmsdk_ahb {
+DECL|intclear|member|volatile uint32_t intclear;
+DECL|intenclr|member|volatile uint32_t intenclr;
+DECL|intenset|member|volatile uint32_t intenset;
+DECL|intpolclr|member|volatile uint32_t intpolclr;
+DECL|intpolset|member|volatile uint32_t intpolset;
+DECL|intstatus|member|volatile uint32_t intstatus;
+DECL|inttypeclr|member|volatile uint32_t inttypeclr;
+DECL|inttypeset|member|volatile uint32_t inttypeset;
+DECL|lb_masked|member|volatile uint32_t lb_masked[256];
+DECL|outenableclr|member|volatile uint32_t outenableclr;
+DECL|outenableset|member|volatile uint32_t outenableset;
+DECL|reserved0|member|volatile uint32_t reserved0[2];
+DECL|reserved1|member|volatile uint32_t reserved1[241];
+DECL|ub_masked|member|volatile uint32_t ub_masked[256];
