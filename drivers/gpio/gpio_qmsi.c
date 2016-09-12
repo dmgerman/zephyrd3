@@ -4,12 +4,10 @@ DECL|api_funcs|variable|api_funcs
 DECL|callbacks|member|sys_slist_t callbacks;
 DECL|gpio_0_config|variable|gpio_0_config
 DECL|gpio_0_runtime|variable|gpio_0_runtime
-DECL|gpio_0|variable|gpio_0
 DECL|gpio_aon_config|variable|gpio_aon_config
 DECL|gpio_aon_resume_device|function|static int gpio_aon_resume_device(struct device *dev, int pm_policy)
 DECL|gpio_aon_runtime|variable|gpio_aon_runtime
 DECL|gpio_aon_suspend_device|function|static int gpio_aon_suspend_device(struct device *dev, int pm_policy)
-DECL|gpio_aon|variable|gpio_aon
 DECL|gpio_critical_region_end|function|static void gpio_critical_region_end(struct device *dev)
 DECL|gpio_critical_region_start|function|static void gpio_critical_region_start(struct device *dev)
 DECL|gpio_qmsi_0_int_callback|function|static void gpio_qmsi_0_int_callback(void *data, uint32_t status)

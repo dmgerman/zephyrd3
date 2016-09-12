@@ -31,10 +31,6 @@ DECL|gpio_config_1_irq|function|void gpio_config_1_irq(struct device *port)
 DECL|gpio_config_2_irq|function|void gpio_config_2_irq(struct device *port)
 DECL|gpio_config_3_irq|function|void gpio_config_3_irq(struct device *port)
 DECL|gpio_dev_pm_ops|variable|gpio_dev_pm_ops
-DECL|gpio_dw_0|variable|gpio_dw_0
-DECL|gpio_dw_1|variable|gpio_dw_1
-DECL|gpio_dw_2|variable|gpio_dw_2
-DECL|gpio_dw_3|variable|gpio_dw_3
 DECL|gpio_dw_config_1|variable|gpio_dw_config_1
 DECL|gpio_dw_config_2|variable|gpio_dw_config_2
 DECL|gpio_dw_config_3|variable|gpio_dw_config_3

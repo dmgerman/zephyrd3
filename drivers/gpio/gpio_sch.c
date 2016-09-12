@@ -16,8 +16,6 @@ DECL|_gpio_sch_manage_callback|function|static void _gpio_sch_manage_callback(st
 DECL|_gpio_sch_poll_status|function|static void _gpio_sch_poll_status(int data, int unused)
 DECL|_set_bit|function|static void _set_bit(uint32_t base_addr,uint32_t bit, uint8_t set)
 DECL|_set_data_reg|function|static inline void _set_data_reg(uint32_t *reg, uint8_t pin, uint8_t set)
-DECL|gpio_0|variable|gpio_0
-DECL|gpio_1|variable|gpio_1
 DECL|gpio_data_0|variable|gpio_data_0
 DECL|gpio_data_1|variable|gpio_data_1
 DECL|gpio_sch_0_config|variable|gpio_sch_0_config

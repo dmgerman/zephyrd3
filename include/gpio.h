@@ -36,7 +36,6 @@ DECL|disable_callback|member|gpio_disable_callback_t disable_callback;
 DECL|enable_callback|member|gpio_enable_callback_t enable_callback;
 DECL|gpio_add_callback|function|static inline int gpio_add_callback(struct device *port, struct gpio_callback *callback)
 DECL|gpio_callback_handler_t|typedef|typedef void (*gpio_callback_handler_t)(struct device *port,
-DECL|gpio_callback_t|typedef|typedef void (*gpio_callback_t)(struct device *port, uint32_t pin);
 DECL|gpio_callback|struct|struct gpio_callback {
 DECL|gpio_config_t|typedef|typedef int (*gpio_config_t)(struct device *port, int access_op,
 DECL|gpio_controller|member|char *gpio_controller;

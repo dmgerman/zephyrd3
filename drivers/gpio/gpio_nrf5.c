@@ -47,7 +47,6 @@ DECL|TASKS_OUT|member|__O uint32_t TASKS_OUT[8];
 DECL|TASKS_SET|member|__O uint32_t TASKS_SET[8];
 DECL|_gpiote|struct|struct _gpiote {
 DECL|_gpio|struct|struct _gpio {
-DECL|callback_func|member|gpio_callback_t callback_func;
 DECL|gpio_base_addr|member|uint32_t gpio_base_addr;
 DECL|gpio_data_P0|variable|gpio_data_P0
 DECL|gpio_nrf5_P0_cfg|variable|gpio_nrf5_P0_cfg

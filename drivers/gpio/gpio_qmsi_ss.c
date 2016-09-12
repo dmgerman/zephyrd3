@@ -14,9 +14,7 @@ DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|sem|member|struct nano_sem sem;
 DECL|ss_gpio_0_config|variable|ss_gpio_0_config
 DECL|ss_gpio_0_runtime|variable|ss_gpio_0_runtime
-DECL|ss_gpio_0|variable|ss_gpio_0
 DECL|ss_gpio_1_config|variable|ss_gpio_1_config
-DECL|ss_gpio_1|variable|ss_gpio_1
 DECL|ss_gpio_isr|function|void ss_gpio_isr(void *arg)
 DECL|ss_gpio_qmsi_0_int_callback|function|static void ss_gpio_qmsi_0_int_callback(void *data, uint32_t status)
 DECL|ss_gpio_qmsi_1_int_callback|function|static void ss_gpio_qmsi_1_int_callback(void *data, uint32_t status)
