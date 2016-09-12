@@ -93,7 +93,7 @@ DECL|BT_HCI_EVT_LE_CONN_COMPLETE|macro|BT_HCI_EVT_LE_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_CONN_PARAM_REQ|macro|BT_HCI_EVT_LE_CONN_PARAM_REQ
 DECL|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE|macro|BT_HCI_EVT_LE_CONN_UPDATE_COMPLETE
 DECL|BT_HCI_EVT_LE_DATA_LEN_CHANGE|macro|BT_HCI_EVT_LE_DATA_LEN_CHANGE
-DECL|BT_HCI_EVT_LE_DIRECTED_ADV_REPORT|macro|BT_HCI_EVT_LE_DIRECTED_ADV_REPORT
+DECL|BT_HCI_EVT_LE_DIRECT_ADV_REPORT|macro|BT_HCI_EVT_LE_DIRECT_ADV_REPORT
 DECL|BT_HCI_EVT_LE_ENH_CONN_COMPLETE|macro|BT_HCI_EVT_LE_ENH_CONN_COMPLETE
 DECL|BT_HCI_EVT_LE_GENERATE_DHKEY_COMPLETE|macro|BT_HCI_EVT_LE_GENERATE_DHKEY_COMPLETE
 DECL|BT_HCI_EVT_LE_LTK_REQUEST|macro|BT_HCI_EVT_LE_LTK_REQUEST
@@ -380,6 +380,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -391,6 +393,7 @@ DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
+DECL|adv_info|member|struct bt_hci_ev_le_advertising_info adv_info[0];
 DECL|allow_role_switch|member|uint8_t allow_role_switch;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
@@ -501,7 +504,9 @@ DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_cp_write_sc_host_supp|struct|struct bt_hci_cp_write_sc_host_supp {
 DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
 DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
-DECL|bt_hci_ev_le_directed_adv_info|struct|struct bt_hci_ev_le_directed_adv_info {
+DECL|bt_hci_ev_le_advertising_report|struct|struct bt_hci_ev_le_advertising_report {
+DECL|bt_hci_ev_le_direct_adv_info|struct|struct bt_hci_ev_le_direct_adv_info {
+DECL|bt_hci_ev_le_direct_adv_report|struct|struct bt_hci_ev_le_direct_adv_report {
 DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
 DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
 DECL|bt_hci_evt_auth_complete|struct|struct bt_hci_evt_auth_complete {
@@ -599,6 +604,7 @@ DECL|dev_class|member|uint8_t dev_class[3];
 DECL|dhkey|member|uint8_t dhkey[32];
 DECL|dir_addr|member|bt_addr_le_t dir_addr;
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
+DECL|direct_adv_info|member|struct bt_hci_ev_le_direct_adv_info direct_adv_info[0];
 DECL|ediv|member|uint16_t ediv;
 DECL|ediv|member|uint16_t ediv;
 DECL|eir|member|uint8_t eir[240];
@@ -736,6 +742,8 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|ncmd|member|uint8_t ncmd;
 DECL|num_handles|member|uint8_t num_handles;
 DECL|num_handles|member|uint8_t num_handles;
+DECL|num_reports|member|uint8_t num_reports;
+DECL|num_reports|member|uint8_t num_reports;
 DECL|num_reports|member|uint8_t num_reports;
 DECL|num_rsp|member|uint8_t num_rsp;
 DECL|oob_data|member|uint8_t oob_data;
