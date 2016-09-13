@@ -9,11 +9,10 @@ DECL|HCI_DATA|enumerator|HCI_DATA = 0x02,
 DECL|HCI_EVTP|macro|HCI_EVTP
 DECL|HCI_EVT_LEN|macro|HCI_EVT_LEN
 DECL|HCI_EVT|enumerator|HCI_EVT = 0x04,
+DECL|HCI_ME_LEN|macro|HCI_ME_LEN
 DECL|HCI_ME|macro|HCI_ME
 DECL|HCI_PACKET_SIZE_MAX|macro|HCI_PACKET_SIZE_MAX
 DECL|HCI_SE|macro|HCI_SE
-DECL|_HCI_CC_LEN|macro|_HCI_CC_LEN
-DECL|_HCI_ME_LEN|macro|_HCI_ME_LEN
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
