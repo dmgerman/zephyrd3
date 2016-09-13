@@ -15,10 +15,8 @@ DECL|HCI_SE|macro|HCI_SE
 DECL|_HCI_CC_LEN|macro|_HCI_CC_LEN
 DECL|_HCI_ME_LEN|macro|_HCI_ME_LEN
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
-DECL|bc|member|uint16_t bc:2;
 DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
-DECL|data|member|uint8_t data[1];
 DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
 DECL|disconnect|function|static void disconnect(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_data *pdu_data, uint16_t handle, struct bt_hci_evt_hdr *evt)
@@ -26,11 +24,9 @@ DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx
 DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|encode_data|function|static void encode_data(uint8_t *buf, uint8_t *len, uint8_t **out)
 DECL|encrypt_change|function|static void encrypt_change(uint8_t err, uint16_t handle, struct bt_hci_evt_hdr *evt)
-DECL|handle|member|uint16_t handle:12;
 DECL|hci_cmd_handle|function|static void hci_cmd_handle(struct bt_hci_cmd_hdr *cmd, uint8_t *len, uint8_t **out)
 DECL|hci_context|variable|hci_context
 DECL|hci_data_handle|function|static void hci_data_handle(void)
-DECL|hci_data|struct|struct __packed hci_data {
 DECL|hci_encode_num_cmplt|function|void hci_encode_num_cmplt(uint16_t handle, uint8_t num, uint8_t *len, uint8_t **out)
 DECL|hci_encode|function|void hci_encode(uint8_t *buf, uint8_t *len, uint8_t **out)
 DECL|hci_handle|function|void hci_handle(uint8_t x, uint8_t *len, uint8_t **out)
@@ -70,9 +66,7 @@ DECL|le_set_scan_enable|function|static void le_set_scan_enable(uint8_t *cp, str
 DECL|le_set_scan_params|function|static void le_set_scan_params(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_set_scan_rsp_data|function|static void le_set_scan_rsp_data(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_start_encryption|function|static void le_start_encryption(uint8_t *cp, struct bt_hci_evt_hdr *evt)
-DECL|len|member|uint16_t len;
 DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
-DECL|pb|member|uint16_t pb:2;
 DECL|read_bd_addr|function|static void read_bd_addr(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|read_local_features|function|static void read_local_features(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|read_local_version_info|function|static void read_local_version_info(uint8_t *cp, struct bt_hci_evt_hdr *evt)
