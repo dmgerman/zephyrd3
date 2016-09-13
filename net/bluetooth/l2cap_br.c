@@ -54,7 +54,7 @@ DECL|l2cap_br_conf_opt_mtu|function|static uint16_t l2cap_br_conf_opt_mtu(struct
 DECL|l2cap_br_conf_req|function|static void l2cap_br_conf_req(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
 DECL|l2cap_br_conf_rsp|function|static void l2cap_br_conf_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
 DECL|l2cap_br_conf|function|static void l2cap_br_conf(struct bt_l2cap_chan *chan)
-DECL|l2cap_br_conn_pend|function|static void l2cap_br_conn_pend(struct bt_l2cap_chan *chan)
+DECL|l2cap_br_conn_pend|function|static void l2cap_br_conn_pend(struct bt_l2cap_chan *chan, uint8_t status)
 DECL|l2cap_br_conn_req|function|static void l2cap_br_conn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_conn_rsp|function|static void l2cap_br_conn_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_conn_security_result|enum|enum l2cap_br_conn_security_result {
@@ -64,7 +64,7 @@ DECL|l2cap_br_detach_chan|macro|l2cap_br_detach_chan
 DECL|l2cap_br_disconn_req|function|static void l2cap_br_disconn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_disconn_rsp|function|static void l2cap_br_disconn_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_disconnected|function|static void l2cap_br_disconnected(struct bt_l2cap_chan *chan)
-DECL|l2cap_br_encrypt_change|function|void l2cap_br_encrypt_change(struct bt_conn *conn)
+DECL|l2cap_br_encrypt_change|function|void l2cap_br_encrypt_change(struct bt_conn *conn, uint8_t hci_status)
 DECL|l2cap_br_get_ident|function|static uint8_t l2cap_br_get_ident(void)
 DECL|l2cap_br_get_info|function|static void l2cap_br_get_info(struct bt_l2cap_br *l2cap, uint16_t info_type)
 DECL|l2cap_br_info_req|function|static int l2cap_br_info_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
