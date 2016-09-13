@@ -190,6 +190,7 @@ DECL|BT_HCI_OP_PIN_CODE_NEG_REPLY|macro|BT_HCI_OP_PIN_CODE_NEG_REPLY
 DECL|BT_HCI_OP_PIN_CODE_REPLY|macro|BT_HCI_OP_PIN_CODE_REPLY
 DECL|BT_HCI_OP_READ_BD_ADDR|macro|BT_HCI_OP_READ_BD_ADDR
 DECL|BT_HCI_OP_READ_BUFFER_SIZE|macro|BT_HCI_OP_READ_BUFFER_SIZE
+DECL|BT_HCI_OP_READ_ENCRYPTION_KEY_SIZE|macro|BT_HCI_OP_READ_ENCRYPTION_KEY_SIZE
 DECL|BT_HCI_OP_READ_LOCAL_EXT_FEATURES|macro|BT_HCI_OP_READ_LOCAL_EXT_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_FEATURES|macro|BT_HCI_OP_READ_LOCAL_FEATURES
 DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
@@ -245,10 +246,13 @@ DECL|BT_OGF_BASEBAND|macro|BT_OGF_BASEBAND
 DECL|BT_OGF_INFO|macro|BT_OGF_INFO
 DECL|BT_OGF_LE|macro|BT_OGF_LE
 DECL|BT_OGF_LINK_CTRL|macro|BT_OGF_LINK_CTRL
+DECL|BT_OGF_STATUS|macro|BT_OGF_STATUS
 DECL|BT_OGF_VS|macro|BT_OGF_VS
 DECL|BT_OGF|macro|BT_OGF
 DECL|BT_OP|macro|BT_OP
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -491,6 +495,7 @@ DECL|bt_hci_cp_link_key_neg_reply|struct|struct bt_hci_cp_link_key_neg_reply {
 DECL|bt_hci_cp_link_key_reply|struct|struct bt_hci_cp_link_key_reply {
 DECL|bt_hci_cp_pin_code_neg_reply|struct|struct bt_hci_cp_pin_code_neg_reply {
 DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
+DECL|bt_hci_cp_read_encryption_key_size|struct|struct bt_hci_cp_read_encryption_key_size {
 DECL|bt_hci_cp_read_local_ext_features|struct|struct bt_hci_cp_read_local_ext_features {
 DECL|bt_hci_cp_read_remote_ext_features|struct|struct bt_hci_cp_read_remote_ext_features {
 DECL|bt_hci_cp_read_remote_features|struct|struct bt_hci_cp_read_remote_features {
@@ -575,6 +580,7 @@ DECL|bt_hci_rp_pin_code_neg_reply|struct|struct bt_hci_rp_pin_code_neg_reply {
 DECL|bt_hci_rp_pin_code_reply|struct|struct bt_hci_rp_pin_code_reply {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
 DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
+DECL|bt_hci_rp_read_encryption_key_size|struct|struct bt_hci_rp_read_encryption_key_size {
 DECL|bt_hci_rp_read_local_ext_features|struct|struct bt_hci_rp_read_local_ext_features {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
@@ -675,6 +681,8 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
@@ -688,6 +696,7 @@ DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
 DECL|interval|member|uint16_t interval;
+DECL|key_size|member|uint8_t key_size;
 DECL|key_type|member|uint8_t key_type;
 DECL|key|member|uint8_t key[16];
 DECL|key|member|uint8_t key[64];
@@ -820,6 +829,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
