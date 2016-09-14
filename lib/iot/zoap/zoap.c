@@ -24,6 +24,7 @@ DECL|next_timeout|function|static uint16_t next_timeout(uint16_t previous)
 DECL|option_context|struct|struct option_context {
 DECL|uri_path_eq|function|static bool uri_path_eq(const struct zoap_packet *pkt,const char * const *path)
 DECL|used|member|int used; /* size used of options */
+DECL|zoap_add_option_int|function|int zoap_add_option_int(struct zoap_packet *pkt, uint16_t code,unsigned int val)
 DECL|zoap_add_option|function|int zoap_add_option(struct zoap_packet *pkt, uint16_t code, const void *value, uint16_t len)
 DECL|zoap_find_options|function|int zoap_find_options(const struct zoap_packet *pkt, uint16_t code, struct zoap_option *options, uint16_t veclen)
 DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt,struct zoap_resource *resources, const uip_ipaddr_t *addr, uint16_t port)
@@ -39,6 +40,7 @@ DECL|zoap_header_set_type|function|void zoap_header_set_type(struct zoap_packet 
 DECL|zoap_header_set_version|function|void zoap_header_set_version(struct zoap_packet *pkt, uint8_t ver)
 DECL|zoap_observer_init|function|void zoap_observer_init(struct zoap_observer *observer,const struct zoap_packet *request, const uip_ipaddr_t *addr, uint16_t port)
 DECL|zoap_observer_next_unused|function|struct zoap_observer *zoap_observer_next_unused(struct zoap_observer *observers, size_t len)
+DECL|zoap_option_value_to_int|function|unsigned int zoap_option_value_to_int(const struct zoap_option *option)
 DECL|zoap_packet_get_payload|function|uint8_t *zoap_packet_get_payload(struct zoap_packet *pkt, uint16_t *len)
 DECL|zoap_packet_init|function|int zoap_packet_init(struct zoap_packet *pkt, struct net_buf *buf)
 DECL|zoap_packet_parse|function|int zoap_packet_parse(struct zoap_packet *pkt, struct net_buf *buf)
