@@ -5,6 +5,6 @@ DECL|context|variable|context
 DECL|fiberStack|variable|fiberStack
 DECL|main|function|void main(void)
 DECL|resources|variable|resources
-DECL|test_get|function|static int test_get(struct zoap_resource *resource, struct zoap_packet *request, const void *from)
+DECL|test_get|function|static int test_get(struct zoap_resource *resource, struct zoap_packet *request, const uip_ipaddr_t *addr, uint16_t port)
 DECL|test_path|variable|test_path
 DECL|udp_receive|function|static void udp_receive(void)

@@ -10,7 +10,7 @@ DECL|msg_dump|function|static void msg_dump(const char *s, uint8_t *data, unsign
 DECL|pendings|variable|pendings
 DECL|receive_context|variable|receive_context
 DECL|replies|variable|replies
-DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const void *from)
+DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const uip_ipaddr_t *addr, uint16_t port)
 DECL|retransmit_request|function|static void retransmit_request(struct nano_work *work)
 DECL|retransmit_work|variable|retransmit_work
 DECL|send_context|variable|send_context

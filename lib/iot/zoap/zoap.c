@@ -26,7 +26,7 @@ DECL|uri_path_eq|function|static bool uri_path_eq(const struct zoap_packet *pkt,
 DECL|used|member|int used; /* size used of options */
 DECL|zoap_add_option|function|int zoap_add_option(struct zoap_packet *pkt, uint16_t code, const void *value, uint16_t len)
 DECL|zoap_find_options|function|int zoap_find_options(const struct zoap_packet *pkt, uint16_t code, struct zoap_option *options, uint16_t veclen)
-DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt, struct zoap_resource *resources, const void *from)
+DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt,struct zoap_resource *resources, const uip_ipaddr_t *addr, uint16_t port)
 DECL|zoap_header_get_code|function|uint8_t zoap_header_get_code(const struct zoap_packet *pkt)
 DECL|zoap_header_get_id|function|uint16_t zoap_header_get_id(const struct zoap_packet *pkt)
 DECL|zoap_header_get_token|function|const uint8_t *zoap_header_get_token(const struct zoap_packet *pkt, uint8_t *len)
@@ -56,4 +56,4 @@ DECL|zoap_reply_init|function|void zoap_reply_init(struct zoap_reply *reply, con
 DECL|zoap_reply_next_unused|function|struct zoap_reply *zoap_reply_next_unused(struct zoap_reply *replies, size_t len)
 DECL|zoap_request_is_observe|function|bool zoap_request_is_observe(const struct zoap_packet *request)
 DECL|zoap_resource_notify|function|int zoap_resource_notify(struct zoap_resource *resource)
-DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const void *from, struct zoap_reply *replies, size_t len)
+DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const uip_ipaddr_t *addr, uint16_t port, struct zoap_reply *replies, size_t len)
