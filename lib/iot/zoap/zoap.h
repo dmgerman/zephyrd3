@@ -1,9 +1,18 @@
+DECL|ZOAP_BLOCK_1024|enumerator|ZOAP_BLOCK_1024,
+DECL|ZOAP_BLOCK_128|enumerator|ZOAP_BLOCK_128,
+DECL|ZOAP_BLOCK_16|enumerator|ZOAP_BLOCK_16,
+DECL|ZOAP_BLOCK_256|enumerator|ZOAP_BLOCK_256,
+DECL|ZOAP_BLOCK_32|enumerator|ZOAP_BLOCK_32,
+DECL|ZOAP_BLOCK_512|enumerator|ZOAP_BLOCK_512,
+DECL|ZOAP_BLOCK_64|enumerator|ZOAP_BLOCK_64,
 DECL|ZOAP_CODE_EMPTY|macro|ZOAP_CODE_EMPTY
 DECL|ZOAP_METHOD_DELETE|enumerator|ZOAP_METHOD_DELETE = 4,
 DECL|ZOAP_METHOD_GET|enumerator|ZOAP_METHOD_GET = 1,
 DECL|ZOAP_METHOD_POST|enumerator|ZOAP_METHOD_POST = 2,
 DECL|ZOAP_METHOD_PUT|enumerator|ZOAP_METHOD_PUT = 3,
 DECL|ZOAP_OPTION_ACCEPT|enumerator|ZOAP_OPTION_ACCEPT = 17,
+DECL|ZOAP_OPTION_BLOCK1|enumerator|ZOAP_OPTION_BLOCK1 = 27,
+DECL|ZOAP_OPTION_BLOCK2|enumerator|ZOAP_OPTION_BLOCK2 = 23,
 DECL|ZOAP_OPTION_CONTENT_FORMAT|enumerator|ZOAP_OPTION_CONTENT_FORMAT = 12,
 DECL|ZOAP_OPTION_ETAG|enumerator|ZOAP_OPTION_ETAG = 4,
 DECL|ZOAP_OPTION_IF_MATCH|enumerator|ZOAP_OPTION_IF_MATCH = 1,
@@ -12,8 +21,10 @@ DECL|ZOAP_OPTION_LOCATION_PATH|enumerator|ZOAP_OPTION_LOCATION_PATH = 8,
 DECL|ZOAP_OPTION_LOCATION_QUERY|enumerator|ZOAP_OPTION_LOCATION_QUERY = 20,
 DECL|ZOAP_OPTION_MAX_AGE|enumerator|ZOAP_OPTION_MAX_AGE = 14,
 DECL|ZOAP_OPTION_OBSERVE|enumerator|ZOAP_OPTION_OBSERVE = 6,
-DECL|ZOAP_OPTION_PROXY_SCHEME|enumerator|ZOAP_OPTION_PROXY_SCHEME = 39
+DECL|ZOAP_OPTION_PROXY_SCHEME|enumerator|ZOAP_OPTION_PROXY_SCHEME = 39,
 DECL|ZOAP_OPTION_PROXY_URI|enumerator|ZOAP_OPTION_PROXY_URI = 35,
+DECL|ZOAP_OPTION_SIZE1|enumerator|ZOAP_OPTION_SIZE1 = 60,
+DECL|ZOAP_OPTION_SIZE2|enumerator|ZOAP_OPTION_SIZE2 = 28,
 DECL|ZOAP_OPTION_URI_HOST|enumerator|ZOAP_OPTION_URI_HOST = 3,
 DECL|ZOAP_OPTION_URI_PATH|enumerator|ZOAP_OPTION_URI_PATH = 11,
 DECL|ZOAP_OPTION_URI_PORT|enumerator|ZOAP_OPTION_URI_PORT = 7,
@@ -28,6 +39,7 @@ DECL|ZOAP_RESPONSE_CODE_CREATED|enumerator|ZOAP_RESPONSE_CODE_CREATED = zoap_mak
 DECL|ZOAP_RESPONSE_CODE_DELETED|enumerator|ZOAP_RESPONSE_CODE_DELETED = zoap_make_response_code(2, 2),
 DECL|ZOAP_RESPONSE_CODE_FORBIDDEN|enumerator|ZOAP_RESPONSE_CODE_FORBIDDEN = zoap_make_response_code(4, 3),
 DECL|ZOAP_RESPONSE_CODE_GATEWAY_TIMEOUT|enumerator|ZOAP_RESPONSE_CODE_GATEWAY_TIMEOUT = zoap_make_response_code(5, 4),
+DECL|ZOAP_RESPONSE_CODE_INCOMPLETE|enumerator|ZOAP_RESPONSE_CODE_INCOMPLETE = zoap_make_response_code(4, 8),
 DECL|ZOAP_RESPONSE_CODE_INTERNAL_ERROR|enumerator|ZOAP_RESPONSE_CODE_INTERNAL_ERROR = zoap_make_response_code(5, 0),
 DECL|ZOAP_RESPONSE_CODE_NOT_ACCEPTABLE|enumerator|ZOAP_RESPONSE_CODE_NOT_ACCEPTABLE = zoap_make_response_code(4, 6),
 DECL|ZOAP_RESPONSE_CODE_NOT_ALLOWED|enumerator|ZOAP_RESPONSE_CODE_NOT_ALLOWED = zoap_make_response_code(4, 5),
@@ -48,7 +60,9 @@ DECL|__ZOAP_H__|macro|__ZOAP_H__
 DECL|addr|member|uip_ipaddr_t addr;
 DECL|age|member|int age;
 DECL|age|member|int age;
+DECL|block_size|member|enum zoap_block_size block_size;
 DECL|buf|member|struct net_buf *buf;
+DECL|current|member|size_t current;
 DECL|del|member|zoap_method_t get, post, put, del;
 DECL|get|member|zoap_method_t get, post, put, del;
 DECL|len|member|uint16_t len;
@@ -67,9 +81,13 @@ DECL|tkl|member|uint8_t tkl;
 DECL|tkl|member|uint8_t tkl;
 DECL|token|member|uint8_t token[8];
 DECL|token|member|uint8_t token[8];
+DECL|total_size|member|size_t total_size;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|value|member|uint8_t *value;
+DECL|zoap_block_context|struct|struct zoap_block_context {
+DECL|zoap_block_size_to_bytes|function|static inline uint16_t zoap_block_size_to_bytes(enum zoap_block_size block_size)
+DECL|zoap_block_size|enum|enum zoap_block_size {
 DECL|zoap_make_response_code|macro|zoap_make_response_code
 DECL|zoap_method_t|typedef|typedef int (*zoap_method_t)(struct zoap_resource *resource,
 DECL|zoap_method|enum|enum zoap_method {
