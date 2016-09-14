@@ -137,6 +137,7 @@ DECL|smp_br_error|function|static int smp_br_error(struct bt_smp *smp, uint8_t r
 DECL|smp_br_ident_addr_info|function|static uint8_t smp_br_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_ident_info|function|static uint8_t smp_br_ident_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_init|function|static void smp_br_init(struct bt_smp *smp)
+DECL|smp_br_pairing_allowed|function|static bool smp_br_pairing_allowed(struct bt_smp *smp)
 DECL|smp_br_pairing_failed|function|static uint8_t smp_br_pairing_failed(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_pairing_req|function|static uint8_t smp_br_pairing_req(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
