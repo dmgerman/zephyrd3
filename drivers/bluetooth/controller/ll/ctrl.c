@@ -116,6 +116,7 @@ DECL|filter_policy|member|uint8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
 DECL|hdr|member|struct shdr hdr;
 DECL|hdr|member|struct shdr hdr;
+DECL|hf_clock|member|struct device *hf_clock;
 DECL|init_addr_type|member|uint8_t init_addr_type:1;
 DECL|init_addr|member|uint8_t init_addr[BDADDR_SIZE];
 DECL|irk|member|uint8_t irk[RADIO_IRK_COUNT_MAX][16];
@@ -195,7 +196,7 @@ DECL|radio_event_adv_prepare|function|void radio_event_adv_prepare(uint32_t tick
 DECL|radio_feature_req_send|function|uint32_t radio_feature_req_send(uint16_t handle)
 DECL|radio_filter_add|function|uint32_t radio_filter_add(uint8_t addr_type, uint8_t *addr)
 DECL|radio_filter_clear|function|void radio_filter_clear(void)
-DECL|radio_init|function|uint32_t radio_init(uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
+DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
 DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
 DECL|radio_length_req_send|function|uint32_t radio_length_req_send(uint16_t handle, uint16_t tx_octets)
