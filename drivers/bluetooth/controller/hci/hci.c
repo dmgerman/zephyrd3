@@ -26,9 +26,9 @@ DECL|encrypt_change|function|static void encrypt_change(uint8_t err, uint16_t ha
 DECL|hci_cmd_handle|function|static void hci_cmd_handle(struct bt_hci_cmd_hdr *cmd, uint8_t *len, uint8_t **out)
 DECL|hci_context|variable|hci_context
 DECL|hci_data_handle|function|static void hci_data_handle(void)
-DECL|hci_encode_num_cmplt|function|void hci_encode_num_cmplt(uint16_t handle, uint8_t num, uint8_t *len, uint8_t **out)
-DECL|hci_encode|function|void hci_encode(uint8_t *buf, uint8_t *len, uint8_t **out)
-DECL|hci_handle|function|void hci_handle(uint8_t x, uint8_t *len, uint8_t **out)
+DECL|hcic_encode_num_cmplt|function|void hcic_encode_num_cmplt(uint16_t handle, uint8_t num, uint8_t *len, uint8_t **out)
+DECL|hcic_encode|function|void hcic_encode(uint8_t *buf, uint8_t *len, uint8_t **out)
+DECL|hcic_handle|function|void hcic_handle(uint8_t x, uint8_t *len, uint8_t **out)
 DECL|info_cmd_handle|function|static int info_cmd_handle(uint8_t ocf, uint8_t *cp, uint8_t *len, struct bt_hci_evt_hdr *evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(uint8_t *cp, struct bt_hci_evt_hdr *evt)
 DECL|le_advertising_report|function|static void le_advertising_report(struct pdu_data *pdu_data, uint8_t *buf, struct bt_hci_evt_hdr *evt)
