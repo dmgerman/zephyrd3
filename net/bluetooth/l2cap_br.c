@@ -61,6 +61,7 @@ DECL|l2cap_br_conf_req|function|static void l2cap_br_conf_req(struct bt_l2cap_br
 DECL|l2cap_br_conf_rsp|function|static void l2cap_br_conf_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, uint16_t len, struct net_buf *buf)
 DECL|l2cap_br_conf|function|static void l2cap_br_conf(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_conn_pend|function|static void l2cap_br_conn_pend(struct bt_l2cap_chan *chan, uint8_t status)
+DECL|l2cap_br_conn_req_reply|function|static int l2cap_br_conn_req_reply(struct bt_l2cap_chan *chan, uint16_t result)
 DECL|l2cap_br_conn_req|function|static void l2cap_br_conn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_conn_rsp|function|static void l2cap_br_conn_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_conn_security_result|enum|enum l2cap_br_conn_security_result {
