@@ -23,7 +23,6 @@ DECL|_main_thread|variable|_main_thread
 DECL|_main|function|static void _main(void *unused1, void *unused2, void *unused3)
 DECL|build_timestamp|variable|build_timestamp
 DECL|idle_stack|variable|idle_stack
-DECL|idle|function|static void idle(void *unused1, void *unused2, void *unused3)
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|main_stack|variable|main_stack
