@@ -1,4 +1,5 @@
 DECL|ack_pkt|variable|ack_pkt
+DECL|beacon_pkt|variable|beacon_pkt
 DECL|current_buf|variable|current_buf
 DECL|driver_lock|variable|driver_lock
 DECL|dst_addr|member|struct ieee802154_address_field *dst_addr;
@@ -19,6 +20,7 @@ DECL|src_addr|member|struct ieee802154_address_field *src_addr;
 DECL|src|member|struct in6_addr src;
 DECL|test_ack_pkt|variable|test_ack_pkt
 DECL|test_ack_reply|function|static inline int test_ack_reply(struct ieee802154_pkt_test *t)
+DECL|test_beacon_pkt|variable|test_beacon_pkt
 DECL|test_ns_pkt|variable|test_ns_pkt
 DECL|test_ns_sending|function|static inline int test_ns_sending(struct ieee802154_pkt_test *t)
 DECL|test_packet_parsing|function|static inline int test_packet_parsing(struct ieee802154_pkt_test *t)
