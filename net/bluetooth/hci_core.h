@@ -11,6 +11,7 @@ DECL|BT_DEV_NUM_FLAGS|enumerator|BT_DEV_NUM_FLAGS,
 DECL|BT_DEV_PSCAN|enumerator|BT_DEV_PSCAN,
 DECL|BT_DEV_PUB_KEY_BUSY|enumerator|BT_DEV_PUB_KEY_BUSY,
 DECL|BT_DEV_READY|enumerator|BT_DEV_READY,
+DECL|BT_DEV_RPA_VALID|enumerator|BT_DEV_RPA_VALID,
 DECL|BT_DEV_SCANNING|enumerator|BT_DEV_SCANNING,
 DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
 DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
@@ -45,4 +46,4 @@ DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
 DECL|states|member|uint64_t states;
-DECL|supported_commands|member|uint8_t supported_commands[36];
+DECL|supported_commands|member|uint8_t supported_commands[64];
