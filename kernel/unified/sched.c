@@ -3,6 +3,7 @@ DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct tcs *thr
 DECL|_clear_ready_q_prio_bit|function|static void _clear_ready_q_prio_bit(int prio)
 DECL|_dump_ready_q|function|void _dump_ready_q(void)
 DECL|_get_next_ready_thread|function|struct tcs *_get_next_ready_thread(void)
+DECL|_is_next_thread_current|function|int _is_next_thread_current(void)
 DECL|_is_wait_q_insert_point|function|static int _is_wait_q_insert_point(sys_dnode_t *dnode_info, void *insert_prio)
 DECL|_ms_to_ticks|function|int32_t _ms_to_ticks(int32_t ms)
 DECL|_pend_current_thread|function|void _pend_current_thread(_wait_q_t *wait_q, int32_t timeout)
