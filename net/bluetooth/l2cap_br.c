@@ -22,6 +22,7 @@ DECL|L2CAP_FLAG_CONN_ACCEPTOR|enumerator|L2CAP_FLAG_CONN_ACCEPTOR, /* getting in
 DECL|L2CAP_FLAG_CONN_LCONF_DONE|enumerator|L2CAP_FLAG_CONN_LCONF_DONE, /* local config accepted by remote */
 DECL|L2CAP_FLAG_CONN_PENDING|enumerator|L2CAP_FLAG_CONN_PENDING, /* remote sent pending result in rsp */
 DECL|L2CAP_FLAG_CONN_RCONF_DONE|enumerator|L2CAP_FLAG_CONN_RCONF_DONE, /* remote config accepted by local */
+DECL|L2CAP_FLAG_FIXED_CONNECTED|enumerator|L2CAP_FLAG_FIXED_CONNECTED, /* fixed connected */
 DECL|L2CAP_FLAG_SIG_INFO_DONE|enumerator|L2CAP_FLAG_SIG_INFO_DONE, /* remote l2cap info is done */
 DECL|L2CAP_FLAG_SIG_INFO_PENDING|enumerator|L2CAP_FLAG_SIG_INFO_PENDING, /* retrieving remote l2cap info */
 DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
@@ -41,6 +42,8 @@ DECL|bt_l2cap_br_recv|function|void bt_l2cap_br_recv(struct bt_conn *conn, struc
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_br|struct|struct bt_l2cap_br {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
+DECL|connect_fixed_channel|function|static void connect_fixed_channel(struct bt_l2cap_br_chan *chan)
+DECL|connect_optional_fixed_channels|function|static void connect_optional_fixed_channels(struct bt_l2cap_br *l2cap)
 DECL|get_fixed_channels_mask|function|static uint8_t get_fixed_channels_mask(void)
 DECL|info_feat_mask|member|uint32_t info_feat_mask;
 DECL|info_fixed_chan|member|uint8_t info_fixed_chan;
