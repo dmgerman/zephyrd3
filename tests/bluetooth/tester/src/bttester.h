@@ -97,7 +97,18 @@ DECL|GATT_START_SERVER|macro|GATT_START_SERVER
 DECL|GATT_WRITE_LONG|macro|GATT_WRITE_LONG
 DECL|GATT_WRITE_WITHOUT_RSP|macro|GATT_WRITE_WITHOUT_RSP
 DECL|GATT_WRITE|macro|GATT_WRITE
+DECL|L2CAP_ACCEPT_CONNECTION|macro|L2CAP_ACCEPT_CONNECTION
+DECL|L2CAP_CONNECT|macro|L2CAP_CONNECT
+DECL|L2CAP_DISCONNECT|macro|L2CAP_DISCONNECT
+DECL|L2CAP_EV_CONNECTED|macro|L2CAP_EV_CONNECTED
+DECL|L2CAP_EV_CONNECTION_REQ|macro|L2CAP_EV_CONNECTION_REQ
+DECL|L2CAP_EV_DATA_RECEIVED|macro|L2CAP_EV_DATA_RECEIVED
+DECL|L2CAP_EV_DISCONNECTED|macro|L2CAP_EV_DISCONNECTED
+DECL|L2CAP_LISTEN|macro|L2CAP_LISTEN
 DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
+DECL|L2CAP_SEND_DATA|macro|L2CAP_SEND_DATA
+DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
+DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
@@ -173,6 +184,16 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -199,6 +220,14 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -234,6 +263,14 @@ DECL|attr_id|member|uint16_t attr_id;
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|ccc_handle|member|uint16_t ccc_handle;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
+DECL|chan_id|member|uint8_t chan_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|char_id|member|uint16_t char_id;
 DECL|characteristic_handle|member|uint16_t characteristic_handle;
@@ -261,6 +298,8 @@ DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
 DECL|data_length|member|uint16_t data_length;
+DECL|data_length|member|uint16_t data_length;
+DECL|data_len|member|uint16_t data_len;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
@@ -273,6 +312,8 @@ DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[0];
+DECL|data|member|uint8_t data[0];
+DECL|data|member|uint8_t data[];
 DECL|db_attr_cnt|member|uint8_t db_attr_cnt;
 DECL|db_attr_off|member|uint16_t db_attr_off;
 DECL|desc_id|member|uint16_t desc_id;
@@ -376,7 +417,17 @@ DECL|index|member|uint8_t index;
 DECL|index|member|uint8_t index[0];
 DECL|io_cap|member|uint8_t io_cap;
 DECL|key_size|member|uint8_t key_size;
+DECL|l2cap_accept_connection_cmd|struct|struct l2cap_accept_connection_cmd {
+DECL|l2cap_connect_cmd|struct|struct l2cap_connect_cmd {
+DECL|l2cap_connect_rp|struct|struct l2cap_connect_rp {
+DECL|l2cap_connected_ev|struct|struct l2cap_connected_ev {
+DECL|l2cap_connection_req_ev|struct|struct l2cap_connection_req_ev {
+DECL|l2cap_data_received_ev|struct|struct l2cap_data_received_ev {
+DECL|l2cap_disconnect_cmd|struct|struct l2cap_disconnect_cmd {
+DECL|l2cap_disconnected_ev|struct|struct l2cap_disconnected_ev {
+DECL|l2cap_listen_cmd|struct|struct l2cap_listen_cmd {
 DECL|l2cap_read_supported_commands_rp|struct|struct l2cap_read_supported_commands_rp {
+DECL|l2cap_send_data_cmd|struct|struct l2cap_send_data_cmd {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|match|member|uint8_t match;
@@ -393,6 +444,13 @@ DECL|permissions|member|uint8_t permissions;
 DECL|powered|member|uint8_t powered;
 DECL|properties|member|uint8_t properties;
 DECL|properties|member|uint8_t properties;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|psm|member|uint16_t psm;
+DECL|result|member|uint16_t result;
+DECL|result|member|uint16_t result;
 DECL|rssi|member|int8_t rssi;
 DECL|scan_rsp_len|member|uint8_t scan_rsp_len;
 DECL|scan_rsp|member|uint8_t scan_rsp[0];
@@ -413,6 +471,7 @@ DECL|svc_id|member|uint16_t svc_id;
 DECL|svc_id|member|uint16_t svc_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(uint8_t *addr, unsigned int bit)
 DECL|tester_test_bit|function|static inline uint8_t tester_test_bit(const uint8_t *addr, unsigned int bit)
+DECL|transport|member|uint8_t transport;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|uuid_length|member|uint8_t uuid_length;

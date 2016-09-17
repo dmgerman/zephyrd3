@@ -1,3 +1,7 @@
+DECL|BT_RFCOMM_CHAN_HFP_AG|enumerator|BT_RFCOMM_CHAN_HFP_AG,
+DECL|BT_RFCOMM_CHAN_HFP_HF|enumerator|BT_RFCOMM_CHAN_HFP_HF = 1,
+DECL|BT_RFCOMM_CHAN_HSP_AG|enumerator|BT_RFCOMM_CHAN_HSP_AG,
+DECL|BT_RFCOMM_CHAN_HSP_HS|enumerator|BT_RFCOMM_CHAN_HSP_HS,
 DECL|__BT_RFCOMM_H|macro|__BT_RFCOMM_H
 DECL|_next|member|struct bt_rfcomm_dlc *_next;
 DECL|_next|member|struct bt_rfcomm_server *_next;

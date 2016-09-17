@@ -26,6 +26,7 @@ DECL|L2CAP_FLAG_LCONF_DONE|enumerator|L2CAP_FLAG_LCONF_DONE, /* local config acc
 DECL|L2CAP_FLAG_RCONF_DONE|enumerator|L2CAP_FLAG_RCONF_DONE, /* remote config accepted by local */
 DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|br_channels|variable|br_channels
+DECL|br_sc_supported|function|static bool br_sc_supported(void)
 DECL|br_servers|variable|br_servers
 DECL|br_sig|variable|br_sig
 DECL|bt_l2cap_br_chan_connect|function|int bt_l2cap_br_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
