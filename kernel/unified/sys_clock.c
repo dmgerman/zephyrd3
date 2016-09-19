@@ -1,4 +1,3 @@
-DECL|_nano_get_earliest_deadline|function|uint32_t _nano_get_earliest_deadline(void)
 DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(int32_t ticks)
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_sys_clock_tick_count|variable|_sys_clock_tick_count
