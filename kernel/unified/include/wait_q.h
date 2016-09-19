@@ -1,13 +1,6 @@
-DECL|_NANO_OBJECT_WAIT|macro|_NANO_OBJECT_WAIT
 DECL|_TIMEOUT_ADD|macro|_TIMEOUT_ADD
 DECL|_TIMEOUT_ADD|macro|_TIMEOUT_ADD
 DECL|_TIMEOUT_ADD|macro|_TIMEOUT_ADD
-DECL|_TIMEOUT_TICK_GET|macro|_TIMEOUT_TICK_GET
-DECL|_TIMEOUT_TICK_GET|macro|_TIMEOUT_TICK_GET
-DECL|_TIMEOUT_TICK_GET|macro|_TIMEOUT_TICK_GET
-DECL|_TIMEOUT_UPDATE|macro|_TIMEOUT_UPDATE
-DECL|_TIMEOUT_UPDATE|macro|_TIMEOUT_UPDATE
-DECL|_TIMEOUT_UPDATE|macro|_TIMEOUT_UPDATE
 DECL|_kernel_nanokernel_include_wait_q__h_|macro|_kernel_nanokernel_include_wait_q__h_
 DECL|_timeout_abort|macro|_timeout_abort
 DECL|_timeout_abort|macro|_timeout_abort
