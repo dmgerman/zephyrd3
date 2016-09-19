@@ -51,7 +51,9 @@ DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struc
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct nano_work *work)
+DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net_buf *buf, uint16_t reserve, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface,
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
+DECL|net_ipv6_finalize_raw|function|struct net_buf *net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
 DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, uint8_t idx)
