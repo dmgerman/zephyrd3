@@ -188,7 +188,6 @@ DECL|task_mem_pool_defragment|macro|task_mem_pool_defragment
 DECL|task_mem_pool_free|macro|task_mem_pool_free
 DECL|task_mutex_lock|function|static inline int task_mutex_lock(kmutex_t id, int32_t timeout)
 DECL|task_mutex_unlock|macro|task_mutex_unlock
-DECL|task_offload_to_fiber|function|static inline void task_offload_to_fiber(int (*func)(), void *argp)
 DECL|task_pipe_block_put|function|static inline int task_pipe_block_put(kpipe_t id, struct k_block block, int size, ksem_t sema)
 DECL|task_pipe_get|function|static inline int task_pipe_get(kpipe_t id, void *buffer, int bytes_to_read,int *bytes_read, K_PIPE_OPTION options, int32_t timeout)
 DECL|task_pipe_put|function|static inline int task_pipe_put(kpipe_t id, void *buffer, int bytes_to_write,int *bytes_written, K_PIPE_OPTION options, int32_t timeout)
