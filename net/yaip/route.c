@@ -1,7 +1,6 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_ROUTE_EXTRA_DATA_SIZE|macro|NET_ROUTE_EXTRA_DATA_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_route_entry *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
 DECL|get_nexthop_nbr|function|static inline struct net_nbr *get_nexthop_nbr(struct net_nbr *start, int idx)
 DECL|get_nexthop_route|function|static struct net_nbr *get_nexthop_route(void)
@@ -16,6 +15,7 @@ DECL|net_route_del_by_nexthop|function|int net_route_del_by_nexthop(struct net_i
 DECL|net_route_del|function|int net_route_del(struct net_route_entry *route)
 DECL|net_route_entries_table_clear|function|static void net_route_entries_table_clear(struct net_nbr_table *table)
 DECL|net_route_entry_remove|function|static void net_route_entry_remove(struct net_nbr *nbr)
+DECL|net_route_get_nbr|function|struct net_nbr *net_route_get_nbr(struct net_route_entry *route)
 DECL|net_route_get_nexthop|function|struct in6_addr *net_route_get_nexthop(struct net_route_entry *route)
 DECL|net_route_info|macro|net_route_info
 DECL|net_route_info|macro|net_route_info
