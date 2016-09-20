@@ -1,4 +1,5 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_ROUTE_EXTRA_DATA_SIZE|macro|NET_ROUTE_EXTRA_DATA_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_route_entry *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)

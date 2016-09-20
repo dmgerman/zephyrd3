@@ -9,10 +9,12 @@ DECL|__net_nbr_align|macro|__net_nbr_align
 DECL|__net_nbr_align|member|uint8_t __nbr[0] __net_nbr_align;
 DECL|clear|member|void (*const clear)(struct net_nbr_table *table);
 DECL|data|member|uint8_t *data;
+DECL|extra_data_size|member|const uint16_t extra_data_size;
 DECL|idx|member|uint8_t idx;
 DECL|iface|member|struct net_if *iface;
 DECL|lladdr|member|struct net_linkaddr_storage lladdr;
 DECL|nbr|member|struct net_nbr *nbr;
+DECL|net_nbr_extra_data|function|static inline void *net_nbr_extra_data(struct net_nbr *nbr)
 DECL|net_nbr_lladdr|struct|struct net_nbr_lladdr {
 DECL|net_nbr_print|macro|net_nbr_print
 DECL|net_nbr_ref|macro|net_nbr_ref
