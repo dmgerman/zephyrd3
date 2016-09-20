@@ -7,6 +7,7 @@ DECL|net_nbr_get|function|struct net_nbr *net_nbr_get(struct net_nbr_table *tabl
 DECL|net_nbr_link|function|int net_nbr_link(struct net_nbr *nbr, struct net_if *iface, struct net_linkaddr *lladdr)
 DECL|net_nbr_lookup|function|struct net_nbr *net_nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct net_linkaddr *lladdr)
 DECL|net_nbr_print|function|void net_nbr_print(struct net_nbr_table *table)
-DECL|net_nbr_ref|function|struct net_nbr *net_nbr_ref(struct net_nbr *nbr)
+DECL|net_nbr_ref_debug|function|struct net_nbr *net_nbr_ref_debug(struct net_nbr *nbr, const char *caller, int line) #else struct net_nbr *net_nbr_ref(struct net_nbr *nbr) #endif
 DECL|net_nbr_unlink|function|int net_nbr_unlink(struct net_nbr *nbr, struct net_linkaddr *lladdr)
-DECL|net_nbr_unref|function|void net_nbr_unref(struct net_nbr *nbr)
+DECL|net_nbr_unref_debug|function|void net_nbr_unref_debug(struct net_nbr *nbr, const char *caller, int line)
+DECL|net_nbr_unref|macro|net_nbr_unref

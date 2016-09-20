@@ -15,7 +15,9 @@ DECL|lladdr|member|struct net_linkaddr_storage lladdr;
 DECL|nbr|member|struct net_nbr *nbr;
 DECL|net_nbr_lladdr|struct|struct net_nbr_lladdr {
 DECL|net_nbr_print|macro|net_nbr_print
+DECL|net_nbr_ref|macro|net_nbr_ref
 DECL|net_nbr_table|struct|struct net_nbr_table {
+DECL|net_nbr_unref|macro|net_nbr_unref
 DECL|net_nbr|struct|struct net_nbr {
 DECL|ref|member|uint8_t ref;
 DECL|ref|member|uint8_t ref;
