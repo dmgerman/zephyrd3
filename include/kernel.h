@@ -138,7 +138,7 @@ DECL|k_msgq_num_used_get|function|static inline int k_msgq_num_used_get(struct k
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
 DECL|k_pipe|struct|struct k_pipe {
-DECL|k_sem_count_get|function|static inline int k_sem_count_get(struct k_sem *sem)
+DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
 DECL|k_sem_reset|function|static inline int k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
