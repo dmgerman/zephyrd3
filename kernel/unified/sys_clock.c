@@ -9,6 +9,10 @@ DECL|handle_expired_timeouts|function|static inline void handle_expired_timeouts
 DECL|handle_expired_timeouts|macro|handle_expired_timeouts
 DECL|handle_time_slicing|function|static void handle_time_slicing(int32_t ticks)
 DECL|handle_time_slicing|macro|handle_time_slicing
+DECL|k_uptime_delta_32|function|uint32_t k_uptime_delta_32(int64_t *reftime)
+DECL|k_uptime_delta|function|int64_t k_uptime_delta(int64_t *reftime)
+DECL|k_uptime_get_32|function|uint32_t k_uptime_get_32(void)
+DECL|k_uptime_get|function|int64_t k_uptime_get(void)
 DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_hw_cycles_per_tick|variable|sys_clock_hw_cycles_per_tick
