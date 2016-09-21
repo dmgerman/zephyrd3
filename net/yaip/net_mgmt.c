@@ -1,3 +1,5 @@
+DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|events|variable|events
 DECL|event|member|uint32_t event;
 DECL|global_event_mask|variable|global_event_mask
