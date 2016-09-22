@@ -100,6 +100,7 @@ DECL|group|member|struct bt_att_group_data *group;
 DECL|group|member|struct bt_att_handle_group *group;
 DECL|handlers|variable|handlers
 DECL|handle|member|uint16_t handle;
+DECL|ind_data|variable|ind_data
 DECL|info128|member|struct bt_att_info_128 *info128;
 DECL|info16|member|struct bt_att_info_16 *info16;
 DECL|item|member|struct bt_att_data *item;
