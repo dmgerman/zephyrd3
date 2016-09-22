@@ -5,11 +5,8 @@ DECL|HCI_CMD|macro|HCI_CMD
 DECL|HCI_EVT|macro|HCI_EVT
 DECL|HCI_SCO|macro|HCI_SCO
 DECL|_hci_driver_init|function|static int _hci_driver_init(struct device *unused)
-DECL|acl_create|function|static struct net_buf *acl_create(uint8_t *remaining, uint8_t **in)
 DECL|cmd_handle|function|static int cmd_handle(struct net_buf *buf)
 DECL|drv|variable|drv
-DECL|evt_acl_create|function|static int evt_acl_create(uint8_t remaining, uint8_t *in)
-DECL|evt_create|function|static struct net_buf *evt_create(uint8_t *remaining, uint8_t **in)
 DECL|hci_driver_open|function|static int hci_driver_open(void)
 DECL|hci_driver_send|function|static int hci_driver_send(struct net_buf *buf)
 DECL|nano_sem_recv|variable|nano_sem_recv
