@@ -32,7 +32,6 @@ DECL|genidt_header_s|struct|struct genidt_header_s {
 DECL|genidt_header|variable|genidt_header
 DECL|get_exec_name|function|static void get_exec_name(char *pathname)
 DECL|get_options|function|static void get_options(int argc, char *argv[])
-DECL|idt_entry_create|function|static void idt_entry_create(uint64_t *pIdtEntry, uint32_t routine, unsigned int dpl)
 DECL|irq|member|unsigned int irq;
 DECL|isr|member|uint32_t isr;
 DECL|main|function|int main(int argc, char *argv[])

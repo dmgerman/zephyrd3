@@ -20,6 +20,8 @@ DECL|DT_TASK_GATE_ENTRY|macro|DT_TASK_GATE_ENTRY
 DECL|DT_TRAP_GATE_ENTRY|macro|DT_TRAP_GATE_ENTRY
 DECL|DT_TSS_ENTRY|macro|DT_TSS_ENTRY
 DECL|DT_TSS_STD_ENTRY|macro|DT_TSS_STD_ENTRY
+DECL|DT_TYPE_CODEDATA|macro|DT_TYPE_CODEDATA
+DECL|DT_TYPE_SYSTEM|macro|DT_TYPE_SYSTEM
 DECL|DT_WRITABLE|macro|DT_WRITABLE
 DECL|DT_ZERO_ENTRY|macro|DT_ZERO_ENTRY
 DECL|SEG_SELECTOR|macro|SEG_SELECTOR
@@ -45,6 +47,8 @@ DECL|_get_gdt|function|static inline void _get_gdt(struct pseudo_descriptor *gdt
 DECL|_get_idt|function|static inline void _get_idt(struct pseudo_descriptor *idt)
 DECL|_get_ldt|function|static inline uint16_t _get_ldt(void)
 DECL|_get_tss|function|static inline uint16_t _get_tss(void)
+DECL|_init_irq_gate|function|static inline void _init_irq_gate(struct segment_descriptor *sd, uint16_t seg_selector, uint32_t offset, uint32_t dpl)
+DECL|_sd_set_seg_offset|function|static inline void _sd_set_seg_offset(struct segment_descriptor *sd, uint16_t segment_selector, uint32_t offset)
 DECL|_set_gdt|function|static inline void _set_gdt(const struct pseudo_descriptor *gdt)
 DECL|_set_ldt|function|static inline void _set_ldt(uint16_t ldt)
 DECL|_set_tss|function|static inline void _set_tss(uint16_t sel)
