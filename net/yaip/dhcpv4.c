@@ -44,10 +44,8 @@ DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct nano_work *work)
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct nano_work *work)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
-DECL|get_byte|function|static struct net_buf *get_byte(struct net_buf *buf, uint8_t offset,uint8_t *pos, uint8_t *value)
 DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
 DECL|get_dhcpv4_timeout|function|static inline uint32_t get_dhcpv4_timeout(void)
-DECL|get_nbytes|function|static struct net_buf *get_nbytes(struct net_buf *buf, uint8_t offset, uint8_t *pos, uint8_t length, uint8_t *value)
 DECL|giaddr|member|uint8_t giaddr[4]; /* Relat agent IP address */
 DECL|handle_dhcpv4_reply|function|static inline void handle_dhcpv4_reply(struct net_if *iface, uint8_t msg_type)
 DECL|hlen|member|uint8_t hlen; /* Hardware Address length */
@@ -57,16 +55,13 @@ DECL|magic_cookie|variable|magic_cookie
 DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct net_conn *conn, struct net_buf *buf, void *user_data)
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
 DECL|op|member|uint8_t op; /* Message type, 1:BOOTREQUEST, 2:BOOTREPLY */
-DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint8_t offset, uint8_t *msg_type)
+DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint16_t offset, uint8_t *msg_type)
 DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
-DECL|put_byte|function|static bool put_byte(struct net_buf *buf, uint8_t byte)
-DECL|put_nbytes|function|static bool put_nbytes(struct net_buf *buf, uint8_t len, uint8_t *nbytes)
 DECL|secs|member|uint16_t secs; /* Seconds elapsed since client began address
 DECL|send_discover|function|static void send_discover(struct net_if *iface)
 DECL|send_request|function|static void send_request(struct net_if *iface, bool renewal)
 DECL|setup_header|function|static void setup_header(struct net_buf *buf)
 DECL|siaddr|member|uint8_t siaddr[4]; /* IP address of next server to use in bootstrap
-DECL|skip_nbytes|function|static struct net_buf *skip_nbytes(struct net_buf *buf, uint8_t offset, uint8_t *pos, uint8_t nbytes)
 DECL|unset_dhcpv4_on_iface|function|static inline void unset_dhcpv4_on_iface(struct net_if *iface)
 DECL|xid|member|uint8_t xid[4]; /* Transaction ID, random number */
 DECL|yiaddr|member|uint8_t yiaddr[4]; /* your (client) IP address */
