@@ -58,7 +58,7 @@ DECL|ZOAP_TYPE_CON|enumerator|ZOAP_TYPE_CON = 0,
 DECL|ZOAP_TYPE_NON_CON|enumerator|ZOAP_TYPE_NON_CON = 1,
 DECL|ZOAP_TYPE_RESET|enumerator|ZOAP_TYPE_RESET = 3
 DECL|__ZOAP_H__|macro|__ZOAP_H__
-DECL|addr|member|uip_ipaddr_t addr;
+DECL|addr|member|struct sockaddr addr;
 DECL|age|member|int age;
 DECL|age|member|int age;
 DECL|block_size|member|enum zoap_block_size block_size;
@@ -71,7 +71,6 @@ DECL|list|member|sys_snode_t list;
 DECL|notify|member|zoap_notify_t notify;
 DECL|observers|member|sys_slist_t observers;
 DECL|path|member|const char * const *path;
-DECL|port|member|uint16_t port;
 DECL|post|member|zoap_method_t get, post, put, del;
 DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
