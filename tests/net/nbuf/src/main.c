@@ -30,6 +30,9 @@ DECL|test_fragment_copy|function|static int test_fragment_copy(void)
 DECL|test_fragment_pull|function|static int test_fragment_pull(void)
 DECL|test_fragment_push|function|static int test_fragment_push(void)
 DECL|test_ipv6_multi_frags|function|static int test_ipv6_multi_frags(void)
+DECL|test_nbuf_read_write|function|static int test_nbuf_read_write(void)
+DECL|test_rw_long|variable|test_rw_long
+DECL|test_rw_short|variable|test_rw_short
 DECL|type|member|uint8_t type;
 DECL|udp_hdr|struct|struct udp_hdr {
 DECL|vtc|member|uint8_t vtc;
