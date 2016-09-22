@@ -65,6 +65,7 @@ DECL|net_nbuf_set_next_hdr|function|static inline void net_nbuf_set_next_hdr(str
 DECL|net_nbuf_set_src_ipv6_addr|function|static inline void net_nbuf_set_src_ipv6_addr(struct net_buf *buf)
 DECL|net_nbuf_set_token|function|static inline void net_nbuf_set_token(struct net_buf *buf, void *token)
 DECL|net_nbuf_set_type|function|static inline void net_nbuf_set_type(struct net_buf *buf, uint8_t type)
+DECL|net_nbuf_skip|function|static inline struct net_buf *net_nbuf_skip(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t len)
 DECL|net_nbuf_tcp_data|function|static inline uint8_t *net_nbuf_tcp_data(struct net_buf *buf)
 DECL|net_nbuf_token|function|static inline void *net_nbuf_token(struct net_buf *buf)
 DECL|net_nbuf_type|enum|enum net_nbuf_type {
