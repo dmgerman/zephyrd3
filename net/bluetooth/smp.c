@@ -117,7 +117,6 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
-DECL|sc_debug_private_key|variable|sc_debug_private_key
 DECL|sc_debug_public_key|variable|sc_debug_public_key
 DECL|sc_derive_link_key|function|static void sc_derive_link_key(struct bt_smp *smp)
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
