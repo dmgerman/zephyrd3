@@ -55,6 +55,7 @@ DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_nbr_add|function|struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_nbr_lookup|function|struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
+DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
@@ -76,7 +77,6 @@ DECL|reachable|member|struct nano_delayed_work reachable;
 DECL|remaining|function|static inline uint32_t remaining(struct nano_delayed_work *work)
 DECL|send_ns|member|struct nano_delayed_work send_ns;
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
-DECL|set_reachable_timeout|function|static inline void set_reachable_timeout(struct net_if *iface, struct net_nbr *nbr)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
 DECL|state|member|enum net_nbr_state state;
 DECL|submit_work|function|static inline void submit_work(struct nano_delayed_work *work, uint32_t time_in_sec)
