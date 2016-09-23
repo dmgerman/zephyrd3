@@ -144,6 +144,7 @@ DECL|ENC28J60_SPI_WCR|macro|ENC28J60_SPI_WCR
 DECL|ENC28J60_SV_SIZE|macro|ENC28J60_SV_SIZE
 DECL|ENC28J60_TXEND|macro|ENC28J60_TXEND
 DECL|ENC28J60_TXSTART|macro|ENC28J60_TXSTART
+DECL|MAX_BUFFER_LENGTH|macro|MAX_BUFFER_LENGTH
 DECL|MICROCHIP_OUI_B0|macro|MICROCHIP_OUI_B0
 DECL|MICROCHIP_OUI_B1|macro|MICROCHIP_OUI_B1
 DECL|MICROCHIP_OUI_B2|macro|MICROCHIP_OUI_B2
@@ -158,7 +159,9 @@ DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_pin|member|uint8_t gpio_pin;
 DECL|gpio_port|member|const char *gpio_port;
 DECL|gpio|member|struct device *gpio;
+DECL|iface|member|struct net_if *iface;
 DECL|int_sem|member|struct nano_sem int_sem;
+DECL|mem_buf|member|uint8_t mem_buf[MAX_BUFFER_LENGTH + 1];
 DECL|receive_callback|member|void (*receive_callback)(uint8_t *buffer, uint16_t len);
 DECL|rx_rsv|member|uint8_t rx_rsv[RSV_SIZE];
 DECL|spi_freq|member|uint32_t spi_freq;
