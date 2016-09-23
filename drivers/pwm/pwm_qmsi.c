@@ -25,8 +25,10 @@ DECL|pwm_data|struct|struct pwm_data {
 DECL|pwm_qmsi_configure|function|static int pwm_qmsi_configure(struct device *dev, int access_op, uint32_t pwm, int flags)
 DECL|pwm_qmsi_device_ctrl|function|static int pwm_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command,void *context)
 DECL|pwm_qmsi_drv_api_funcs|variable|pwm_qmsi_drv_api_funcs
+DECL|pwm_qmsi_get_cycles_per_sec|function|static int pwm_qmsi_get_cycles_per_sec(struct device *dev, uint32_t pwm, uint64_t *cycles)
 DECL|pwm_qmsi_get_power_state|function|static uint32_t pwm_qmsi_get_power_state(struct device *dev)
 DECL|pwm_qmsi_init|function|static int pwm_qmsi_init(struct device *dev)
+DECL|pwm_qmsi_pin_set|function|static int pwm_qmsi_pin_set(struct device *dev, uint32_t pwm, uint32_t period_cycles, uint32_t pulse_cycles)
 DECL|pwm_qmsi_resume_from_suspend|function|static int pwm_qmsi_resume_from_suspend(struct device *dev)
 DECL|pwm_qmsi_set_duty_cycle|function|static int pwm_qmsi_set_duty_cycle(struct device *dev, int access_op, uint32_t pwm, uint8_t duty)
 DECL|pwm_qmsi_set_period|function|static int pwm_qmsi_set_period(struct device *dev, int access_op, uint32_t pwm, uint32_t period)
