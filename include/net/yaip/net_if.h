@@ -68,6 +68,8 @@ DECL|net_if_ipv6_get_retrans_timer|function|static inline uint32_t net_if_ipv6_g
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
+DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6_set_base_reachable_time(struct net_if *iface, uint32_t reachable_time)
+DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, uint32_t retrans_timer)
 DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
@@ -79,9 +81,7 @@ DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struc
 DECL|net_if_set_mtu|function|static inline void net_if_set_mtu(struct net_if *iface, uint16_t mtu)
 DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
-DECL|net_ipv6_set_base_reachable_time|function|static inline void net_ipv6_set_base_reachable_time(struct net_if *iface, uint32_t reachable_time)
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, uint8_t hop_limit)
-DECL|net_ipv6_set_reachable_time|function|static inline void net_ipv6_set_reachable_time(struct net_if *iface)
 DECL|netmask|member|struct in_addr netmask;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
