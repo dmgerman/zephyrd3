@@ -1,6 +1,7 @@
 DECL|ALARM|macro|ALARM
 DECL|DEVICE_POLICY_MAX|macro|DEVICE_POLICY_MAX
 DECL|GPIO_IN_PIN|macro|GPIO_IN_PIN
+DECL|SECONDS_TO_SLEEP|macro|SECONDS_TO_SLEEP
 DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|_sys_soc_resume|function|void _sys_soc_resume(void)
 DECL|_sys_soc_suspend|function|int _sys_soc_suspend(int32_t ticks)
@@ -12,8 +13,6 @@ DECL|device_count|variable|device_count
 DECL|device_list|variable|device_list
 DECL|device_policy_list|variable|device_policy_list
 DECL|device_retval|variable|device_retval
-DECL|device_suspend_only_entry|function|static int device_suspend_only_entry(int32_t ticks)
-DECL|device_suspend_only_exit|function|static void device_suspend_only_exit(void)
 DECL|enable_wake_event|function|static void enable_wake_event(void)
 DECL|end_time|variable|end_time
 DECL|gpio_dev|variable|gpio_dev
