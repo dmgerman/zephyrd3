@@ -1,4 +1,3 @@
-DECL|HCI_PACKET_SIZE_MAX|macro|HCI_PACKET_SIZE_MAX
 DECL|_opcode|variable|_opcode
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf *buf, uint8_t plen)
