@@ -49,6 +49,8 @@ DECL|RADIO_TICKER_USER_JOB_OPS|macro|RADIO_TICKER_USER_JOB_OPS
 DECL|RADIO_TICKER_USER_OPS|macro|RADIO_TICKER_USER_OPS
 DECL|RADIO_TICKER_USER_WORKER_OPS|macro|RADIO_TICKER_USER_WORKER_OPS
 DECL|_CTRL_H_|macro|_CTRL_H_
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|data|member|uint8_t data[DOUBLE_BUFFER_SIZE][RADIO_ACPDU_SIZE_MAX];
 DECL|first|member|uint8_t first;
 DECL|handle|member|uint16_t handle;
@@ -72,8 +74,8 @@ DECL|peer_addr_type|member|uint8_t peer_addr_type;
 DECL|peer_addr|member|uint8_t peer_addr[BDADDR_SIZE];
 DECL|peer_irk_index|member|uint8_t peer_irk_index;
 DECL|radio_adv_data|struct|struct radio_adv_data {
-DECL|radio_le_conn_cmplt|struct|struct __packed radio_le_conn_cmplt {
-DECL|radio_le_conn_update_cmplt|struct|struct __packed radio_le_conn_update_cmplt {
+DECL|radio_le_conn_cmplt|struct|struct radio_le_conn_cmplt {
+DECL|radio_le_conn_update_cmplt|struct|struct radio_le_conn_update_cmplt {
 DECL|radio_pdu_node_rx_hdr|struct|struct radio_pdu_node_rx_hdr {
 DECL|radio_pdu_node_rx_type|enum|enum radio_pdu_node_rx_type {
 DECL|radio_pdu_node_rx|struct|struct radio_pdu_node_rx {

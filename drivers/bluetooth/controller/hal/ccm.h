@@ -1,5 +1,6 @@
 DECL|_CCM_H_|macro|_CCM_H_
-DECL|ccm|struct|struct __packed ccm {
+DECL|__packed|variable|__packed
+DECL|ccm|struct|struct ccm {
 DECL|counter|member|uint64_t counter;
 DECL|direction|member|uint8_t direction:1;
 DECL|iv|member|uint8_t iv[8];
