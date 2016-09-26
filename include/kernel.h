@@ -53,7 +53,7 @@ DECL|K_THREAD_OBJ_DEFINE|macro|K_THREAD_OBJ_DEFINE
 DECL|K_TIMER_DEFINE|macro|K_TIMER_DEFINE
 DECL|K_TIMER_INITIALIZER|macro|K_TIMER_INITIALIZER
 DECL|K_WORK_INITIALIZER|macro|K_WORK_INITIALIZER
-DECL|K_WORK_STATE_IDLE|enumerator|K_WORK_STATE_IDLE, /* Work item idle state */
+DECL|NANO_WORK_STATE_PENDING|enumerator|NANO_WORK_STATE_PENDING, /* Work item pending state */
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_INIT|macro|_DEBUG_TRACING_KERNEL_OBJECTS_INIT
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_INIT|macro|_DEBUG_TRACING_KERNEL_OBJECTS_INIT
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR|macro|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR
@@ -145,6 +145,7 @@ DECL|k_tid_t|typedef|typedef struct tcs *k_tid_t;
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *);
 DECL|k_work_init|function|static inline void k_work_init(struct k_work *work, k_work_handler_t handler)
+DECL|k_work_pending|function|static inline int k_work_pending(struct k_work *work)
 DECL|k_work_q|struct|struct k_work_q {
 DECL|k_work_submit_to_queue|function|static inline void k_work_submit_to_queue(struct k_work_q *work_q, struct k_work *work)
 DECL|k_work_submit|function|static inline void k_work_submit(struct k_work *work)
