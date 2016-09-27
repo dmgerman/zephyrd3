@@ -73,7 +73,7 @@ DECL|net_nbuf_read_byte|function|static inline struct net_buf *net_nbuf_read_byt
 DECL|net_nbuf_read|function|struct net_buf *net_nbuf_read(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t len, uint8_t *data)
 DECL|net_nbuf_ref_debug|function|struct net_buf *net_nbuf_ref_debug(struct net_buf *buf, const char *caller, int line) #else struct net_buf *net_nbuf_ref(struct net_buf *buf) #endif
 DECL|net_nbuf_unref_debug|function|void net_nbuf_unref_debug(struct net_buf *buf, const char *caller, int line)
-DECL|net_nbuf_write_byte|function|static inline bool net_nbuf_write_byte(struct net_buf *buf, uint8_t value)
+DECL|net_nbuf_write_byte|function|static inline bool net_nbuf_write_byte(struct net_buf *buf, uint8_t value, struct net_buf **last)
 DECL|net_nbuf_write|function|bool net_nbuf_write(struct net_buf *buf, uint16_t len, uint8_t *data)
 DECL|num_free_data_bufs|variable|num_free_data_bufs
 DECL|num_free_rx_bufs|variable|num_free_rx_bufs
