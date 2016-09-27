@@ -20,7 +20,7 @@ DECL|bt_l2cap_chan_del|function|void bt_l2cap_chan_del(struct bt_l2cap_chan *cha
 DECL|bt_l2cap_chan_disconnect|function|int bt_l2cap_chan_disconnect(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_chan_send|function|int bt_l2cap_chan_send(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
-DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct nano_fifo *fifo)
+DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct nano_fifo *fifo, size_t reserve)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn)
 DECL|bt_l2cap_init|function|void bt_l2cap_init(void)
