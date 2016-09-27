@@ -1,0 +1,3 @@
+DECL|soc_pmc_peripheral_disable|function|void soc_pmc_peripheral_disable(uint32_t id)
+DECL|soc_pmc_peripheral_enable|function|void soc_pmc_peripheral_enable(uint32_t id)
+DECL|soc_pmc_peripheral_is_enabled|function|uint32_t soc_pmc_peripheral_is_enabled(uint32_t id)
