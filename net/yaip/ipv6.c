@@ -5,7 +5,6 @@ DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
-DECL|addr|member|struct in6_addr addr;
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
@@ -24,7 +23,7 @@ DECL|dbg_update_neighbor_lladdr_raw|macro|dbg_update_neighbor_lladdr_raw
 DECL|dbg_update_neighbor_lladdr|function|static inline void dbg_update_neighbor_lladdr(struct net_linkaddr *new_lladdr,struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
 DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
-DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_nbr_data *data)
+DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_buf *buf)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
@@ -36,11 +35,9 @@ DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct n
 DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_buf *buf)
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
-DECL|is_router|member|bool is_router;
-DECL|link_metric|member|uint16_t link_metric;
 DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
-DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_nbr_data *data)
+DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_ipv6_nbr_data *data)
 DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
@@ -64,19 +61,12 @@ DECL|net_ipv6_start_rs|function|int net_ipv6_start_rs(struct net_if *iface)
 DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
 DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)
-DECL|net_nbr_data|function|static inline struct net_nbr_data *net_nbr_data(struct net_nbr *nbr)
-DECL|net_nbr_data|struct|struct net_nbr_data {
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
-DECL|ns_count|member|uint8_t ns_count;
 DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct nano_work *work)
-DECL|pending|member|struct net_buf *pending;
 DECL|ra_input_handler|variable|ra_input_handler
-DECL|reachable|member|struct nano_delayed_work reachable;
 DECL|remaining|function|static inline uint32_t remaining(struct nano_delayed_work *work)
-DECL|send_ns|member|struct nano_delayed_work send_ns;
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
-DECL|state|member|enum net_nbr_state state;
 DECL|submit_work|function|static inline void submit_work(struct nano_delayed_work *work, uint32_t time_in_sec)
