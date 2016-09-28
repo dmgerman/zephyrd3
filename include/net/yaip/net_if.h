@@ -56,7 +56,7 @@ DECL|net_if_addr|struct|struct net_if_addr {
 DECL|net_if_api|struct|struct net_if_api {
 DECL|net_if_get_device|function|static inline struct device *net_if_get_device(struct net_if *iface)
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
-DECL|net_if_get_ll_reserve|function|static inline uint16_t net_if_get_ll_reserve(struct net_if *iface, struct in6_addr *dst_ip6)
+DECL|net_if_get_ll_reserve|function|static inline uint16_t net_if_get_ll_reserve(struct net_if *iface, const struct in6_addr *dst_ip6)
 DECL|net_if_get_mtu|function|static inline uint16_t net_if_get_mtu(struct net_if *iface)
 DECL|net_if_ipv4_get_ttl|function|static inline uint8_t net_if_ipv4_get_ttl(struct net_if *iface)
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
