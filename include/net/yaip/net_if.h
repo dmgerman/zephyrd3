@@ -19,6 +19,7 @@ DECL|address|member|struct net_addr address;
 DECL|address|member|struct net_addr address;
 DECL|attempts|member|uint8_t attempts;
 DECL|base_reachable_time|member|uint32_t base_reachable_time;
+DECL|cb|member|net_if_link_callback_t cb;
 DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_timer|member|struct nano_delayed_work dad_timer;
@@ -72,6 +73,8 @@ DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6
 DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, uint32_t retrans_timer)
 DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
+DECL|net_if_link_callback_t|typedef|typedef void (*net_if_link_callback_t)(struct net_if *iface,
+DECL|net_if_link_cb|struct|struct net_if_link_cb {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_buf *buf)
@@ -83,6 +86,7 @@ DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, uint8_t hop_limit)
 DECL|netmask|member|struct in_addr netmask;
+DECL|node|member|sys_snode_t node;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|reachable_time|member|uint32_t reachable_time;

@@ -12,6 +12,8 @@ DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
 DECL|init_tx_queue|function|static inline void init_tx_queue(struct net_if *iface)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
+DECL|link_callbacks|variable|link_callbacks
+DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
 DECL|net_if_get_by_iface|function|uint8_t net_if_get_by_iface(struct net_if *iface)
 DECL|net_if_get_by_index|function|struct net_if *net_if_get_by_index(uint8_t index)
 DECL|net_if_get_by_link_addr|function|struct net_if *net_if_get_by_link_addr(struct net_linkaddr *ll_addr)
@@ -43,10 +45,12 @@ DECL|net_if_ipv6_router_lookup|function|struct net_if_router *net_if_ipv6_router
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
 DECL|net_if_ipv6_unspecified_addr|function|const struct in6_addr *net_if_ipv6_unspecified_addr(void)
 DECL|net_if_lookup_by_dev|function|struct net_if *net_if_lookup_by_dev(struct device *dev)
+DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if_link_cb *link, net_if_link_callback_t cb)
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
 DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)
+DECL|net_if_unregister_link_cb|function|void net_if_unregister_link_cb(struct net_if_link_cb *link)
 DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct nano_work *work)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct nano_work *work)
