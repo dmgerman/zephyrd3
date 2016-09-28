@@ -37,6 +37,7 @@ DECL|bt_l2cap_br_init|function|void bt_l2cap_br_init(void)
 DECL|bt_l2cap_br_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_br_lookup_rx_cid(struct bt_conn *conn,uint16_t cid)
 DECL|bt_l2cap_br_lookup_tx_cid|function|static struct bt_l2cap_chan *bt_l2cap_br_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_br_pool|variable|bt_l2cap_br_pool
+DECL|bt_l2cap_br_recv|function|void bt_l2cap_br_recv(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_br|struct|struct bt_l2cap_br {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
