@@ -76,6 +76,7 @@ DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|uint32_t _mailbox;
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
+DECL|_static_thread_data|struct|struct _static_thread_data {
 DECL|_syncing_thread|member|k_tid_t _syncing_thread;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
@@ -139,7 +140,6 @@ DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_config|struct|struct k_thread_config {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
-DECL|k_thread_static_init|struct|struct k_thread_static_init {
 DECL|k_thread|macro|k_thread
 DECL|k_tid_t|typedef|typedef struct tcs *k_tid_t;
 DECL|k_timer|struct|struct k_timer {

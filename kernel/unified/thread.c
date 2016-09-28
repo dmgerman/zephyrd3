@@ -13,7 +13,7 @@ DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(void (*entry)(void 
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
 DECL|_thread_exit|function|void _thread_exit(struct tcs *thread)
-DECL|is_in_any_group|function|static inline int is_in_any_group(struct k_thread_static_init *thread_init, uint32_t groups)
+DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_thread_data *thread_data, uint32_t groups)
 DECL|k_am_in_isr|function|int k_am_in_isr(void)
 DECL|k_busy_wait|function|void k_busy_wait(uint32_t usec_to_wait)
 DECL|k_thread_cancel|function|int k_thread_cancel(k_tid_t tid)
