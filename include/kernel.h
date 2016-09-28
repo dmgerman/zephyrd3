@@ -58,7 +58,6 @@ DECL|_DEBUG_TRACING_KERNEL_OBJECTS_INIT|macro|_DEBUG_TRACING_KERNEL_OBJECTS_INIT
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_INIT|macro|_DEBUG_TRACING_KERNEL_OBJECTS_INIT
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR|macro|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR
 DECL|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR|macro|_DEBUG_TRACING_KERNEL_OBJECTS_NEXT_PTR
-DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
 DECL|_MEMORY_POOL_BLOCK_SETS_DEFINE|macro|_MEMORY_POOL_BLOCK_SETS_DEFINE
 DECL|_MEMORY_POOL_BUFFER_DEFINE|macro|_MEMORY_POOL_BUFFER_DEFINE
 DECL|_MEMORY_POOL_QUAD_BLOCK_DEFINE|macro|_MEMORY_POOL_QUAD_BLOCK_DEFINE
@@ -116,7 +115,6 @@ DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
-DECL|is_in_any_group|function|static inline int is_in_any_group(struct k_thread_static_init *thread_init, uint32_t groups)
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work, int ticks)
 DECL|k_delayed_work|struct|struct k_delayed_work {
 DECL|k_event_handler_t|typedef|typedef int (*k_event_handler_t)(struct k_event *);
