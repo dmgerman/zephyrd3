@@ -36,6 +36,7 @@ DECL|__deprecated|macro|__deprecated
 DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
 DECL|__printf_like|macro|__printf_like
+DECL|__unused|macro|__unused
 DECL|__used|macro|__used
 DECL|__weak|macro|__weak
 DECL|likely|macro|likely
