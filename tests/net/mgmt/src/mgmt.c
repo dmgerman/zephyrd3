@@ -4,7 +4,7 @@ DECL|TEST_MGMT_REQUEST|macro|TEST_MGMT_REQUEST
 DECL|event2throw|variable|event2throw
 DECL|initialize_event_tests|function|static void initialize_event_tests(void)
 DECL|main|function|void main(void)
-DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_cb *cb,uint32_t nm_event, struct net_if *iface)
+DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_callback *cb,uint32_t nm_event, struct net_if *iface)
 DECL|rx_calls|variable|rx_calls
 DECL|rx_cb|variable|rx_cb
 DECL|rx_event|variable|rx_event
