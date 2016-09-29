@@ -9,7 +9,7 @@ DECL|NET_BUF_INFO|macro|NET_BUF_INFO
 DECL|NET_BUF_WARN|macro|NET_BUF_WARN
 DECL|NET_BUF_WARN|macro|NET_BUF_WARN
 DECL|net_buf_clone|function|struct net_buf *net_buf_clone(struct net_buf *buf)
-DECL|net_buf_frag_del|function|void net_buf_frag_del(struct net_buf *parent, struct net_buf *frag)
+DECL|net_buf_frag_del|function|struct net_buf *net_buf_frag_del(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_insert|function|void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_last|function|struct net_buf *net_buf_frag_last(struct net_buf *buf)
 DECL|net_buf_get_timeout|function|struct net_buf *net_buf_get_timeout(struct nano_fifo *fifo, size_t reserve_head, int32_t timeout)
