@@ -15,6 +15,7 @@ DECL|sys_dlist_insert_before|function|static inline void sys_dlist_insert_before
 DECL|sys_dlist_is_empty|function|static inline int sys_dlist_is_empty(sys_dlist_t *list)
 DECL|sys_dlist_is_head|function|static inline int sys_dlist_is_head(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_is_tail|function|static inline int sys_dlist_is_tail(sys_dlist_t *list, sys_dnode_t *node)
+DECL|sys_dlist_peek_head_not_empty|function|static inline sys_dnode_t *sys_dlist_peek_head_not_empty(sys_dlist_t *list)
 DECL|sys_dlist_peek_head|function|static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
 DECL|sys_dlist_peek_next|function|static inline sys_dnode_t *sys_dlist_peek_next(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_prepend|function|static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
