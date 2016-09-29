@@ -8,7 +8,7 @@ DECL|async_msg|variable|async_msg
 DECL|init_mbox_module|function|static int init_mbox_module(struct device *dev)
 DECL|k_mbox_async_put|function|void k_mbox_async_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg, struct k_sem *sem)
 DECL|k_mbox_async|struct|struct k_mbox_async {
-DECL|k_mbox_data_block_get|function|int k_mbox_data_block_get(struct k_mbox_msg *rx_msg, k_mem_pool_t pool, struct k_mem_block *block, int32_t timeout)
+DECL|k_mbox_data_block_get|function|int k_mbox_data_block_get(struct k_mbox_msg *rx_msg, struct k_mem_pool *pool, struct k_mem_block *block, int32_t timeout)
 DECL|k_mbox_data_get|function|void k_mbox_data_get(struct k_mbox_msg *rx_msg, void *buffer)
 DECL|k_mbox_get|function|int k_mbox_get(struct k_mbox *mbox, struct k_mbox_msg *rx_msg, void *buffer, int32_t timeout)
 DECL|k_mbox_init|function|void k_mbox_init(struct k_mbox *mbox_ptr)

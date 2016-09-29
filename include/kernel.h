@@ -128,7 +128,6 @@ DECL|k_mem_map_num_used_get|function|static inline int k_mem_map_num_used_get(st
 DECL|k_mem_map|struct|struct k_mem_map {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
 DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
-DECL|k_mem_pool_t|typedef|typedef struct k_mem_pool *k_mem_pool_t;
 DECL|k_mem_pool|struct|struct k_mem_pool {
 DECL|k_msgq_num_used_get|function|static inline int k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
@@ -171,7 +170,7 @@ DECL|num_used|member|int num_used;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct tcs *owner;
 DECL|period|member|int32_t period;
-DECL|pool_id|member|k_mem_pool_t pool_id;
+DECL|pool_id|member|struct k_mem_pool *pool_id;
 DECL|prio|member|unsigned prio;
 DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */

@@ -13,6 +13,6 @@ DECL|init_one_memory_pool|function|static void init_one_memory_pool(struct k_mem
 DECL|init_static_pools|function|static int init_static_pools(struct device *unused)
 DECL|k_free|function|void k_free(void *ptr)
 DECL|k_malloc|function|void *k_malloc(uint32_t size)
-DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(k_mem_pool_t pool, struct k_mem_block *block, int size, int32_t timeout)
-DECL|k_mem_pool_defrag|function|void k_mem_pool_defrag(k_mem_pool_t pool)
+DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(struct k_mem_pool *pool, struct k_mem_block *block, int size, int32_t timeout)
+DECL|k_mem_pool_defrag|function|void k_mem_pool_defrag(struct k_mem_pool *pool)
 DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_mem_block *blockptr)
