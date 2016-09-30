@@ -328,6 +328,7 @@ DECL|_ready_q|macro|_ready_q
 DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
 DECL|_set_thread_return_value|macro|_set_thread_return_value
 DECL|_timeout_q|macro|_timeout_q
+DECL|cache|member|struct k_thread *cache;
 DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
 DECL|coopReg|member|tCoopReg coopReg; /* non-volatile integer register storage */

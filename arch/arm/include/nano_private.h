@@ -28,6 +28,7 @@ DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_d
 DECL|_set_thread_return_value|macro|_set_thread_return_value
 DECL|_timeout_q|macro|_timeout_q
 DECL|basepri|member|uint32_t basepri;
+DECL|cache|member|struct k_thread *cache;
 DECL|coopReg|member|struct coop coopReg;
 DECL|coop|struct|struct coop {
 DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
