@@ -42,6 +42,7 @@ DECL|bt_l2cap_br_recv|function|void bt_l2cap_br_recv(struct bt_conn *conn, struc
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_br|struct|struct bt_l2cap_br {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
+DECL|check_fixed_channel|function|static void check_fixed_channel(struct bt_l2cap_chan *chan)
 DECL|connect_fixed_channel|function|static void connect_fixed_channel(struct bt_l2cap_br_chan *chan)
 DECL|connect_optional_fixed_channels|function|static void connect_optional_fixed_channels(struct bt_l2cap_br *l2cap)
 DECL|get_fixed_channels_mask|function|static uint8_t get_fixed_channels_mask(void)
