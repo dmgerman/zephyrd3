@@ -40,6 +40,7 @@ DECL|SMP_NUM_FLAGS|enumerator|SMP_NUM_FLAGS,
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
 DECL|aes_test|function|static int aes_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
+DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|br_handlers|variable|br_handlers
 DECL|br_sc_supported|function|static bool br_sc_supported(void)
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
@@ -52,7 +53,9 @@ DECL|bt_smp_auth_passkey_entry|function|int bt_smp_auth_passkey_entry(struct bt_
 DECL|bt_smp_br_accept|function|static int bt_smp_br_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_br_connected|function|static void bt_smp_br_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_br_disconnected|function|static void bt_smp_br_disconnected(struct bt_l2cap_chan *chan)
+DECL|bt_smp_br_pool|variable|bt_smp_br_pool
 DECL|bt_smp_br_recv|function|static void bt_smp_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_smp_br|struct|struct bt_smp_br {
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_t *rpa)
 DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_t *rpa)
@@ -74,16 +77,18 @@ DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *
 DECL|bt_smp_sign|function|int bt_smp_sign(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_smp_update_keys|function|void bt_smp_update_keys(struct bt_conn *conn)
 DECL|bt_smp|struct|struct bt_smp {
+DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|compute_and_check_and_send_slave_dhcheck|function|static uint8_t compute_and_check_and_send_slave_dhcheck(struct bt_smp *smp)
 DECL|compute_and_send_master_dhcheck|function|static uint8_t compute_and_send_master_dhcheck(struct bt_smp *smp)
 DECL|dhkey|member|uint8_t dhkey[32];
 DECL|display_passkey|function|static uint8_t display_passkey(struct bt_smp *smp)
+DECL|enc_key_size|member|uint8_t enc_key_size;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|expect_len|member|uint8_t expect_len;
 DECL|e|member|uint8_t e[16];
 DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
-DECL|func|member|uint8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
+DECL|func|member|uint8_t (*func)(struct bt_smp_br *smp, struct net_buf *buf);
 DECL|gen_method_legacy|variable|gen_method_legacy
 DECL|gen_method_sc|variable|gen_method_sc
 DECL|generate_dhkey|function|static uint8_t generate_dhkey(struct bt_smp *smp)
@@ -105,6 +110,7 @@ DECL|legacy_passkey_entry|function|static void legacy_passkey_entry(struct bt_sm
 DECL|legacy_request_tk|function|static uint8_t legacy_request_tk(struct bt_smp *smp)
 DECL|legacy_send_pairing_confirm|function|static uint8_t legacy_send_pairing_confirm(struct bt_smp *smp)
 DECL|local_dist|member|uint8_t local_dist;
+DECL|local_dist|member|uint8_t local_dist;
 DECL|mackey|member|uint8_t mackey[16];
 DECL|method|member|uint8_t method;
 DECL|pairing_method|enum|enum pairing_method {
@@ -115,6 +121,7 @@ DECL|pkey|member|uint8_t pkey[64];
 DECL|preq|member|uint8_t preq[7];
 DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
+DECL|remote_dist|member|uint8_t remote_dist;
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
 DECL|sc_debug_public_key|variable|sc_debug_public_key
@@ -130,21 +137,21 @@ DECL|send_pairing_rsp|function|static uint8_t send_pairing_rsp(struct bt_smp *sm
 DECL|sign_test|function|static int sign_test(const char *prefix, const uint8_t *key, const uint8_t *m, uint16_t len, const uint8_t *sig)
 DECL|smp_aes_cmac_test|function|static int smp_aes_cmac_test(void)
 DECL|smp_ah|function|static int smp_ah(const uint8_t irk[16], const uint8_t r[3], uint8_t out[3])
-DECL|smp_br_chan_get|function|static struct bt_smp *smp_br_chan_get(struct bt_conn *conn)
-DECL|smp_br_derive_ltk|function|static void smp_br_derive_ltk(struct bt_smp *smp)
-DECL|smp_br_distribute_keys|function|static void smp_br_distribute_keys(struct bt_smp *smp)
-DECL|smp_br_error|function|static int smp_br_error(struct bt_smp *smp, uint8_t reason)
-DECL|smp_br_ident_addr_info|function|static uint8_t smp_br_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_ident_info|function|static uint8_t smp_br_ident_info(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_init|function|static void smp_br_init(struct bt_smp *smp)
-DECL|smp_br_pairing_allowed|function|static bool smp_br_pairing_allowed(struct bt_smp *smp)
-DECL|smp_br_pairing_failed|function|static uint8_t smp_br_pairing_failed(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_pairing_req|function|static uint8_t smp_br_pairing_req(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp *smp)
+DECL|smp_br_chan_get|function|static struct bt_smp_br *smp_br_chan_get(struct bt_conn *conn)
+DECL|smp_br_derive_ltk|function|static void smp_br_derive_ltk(struct bt_smp_br *smp)
+DECL|smp_br_distribute_keys|function|static void smp_br_distribute_keys(struct bt_smp_br *smp)
+DECL|smp_br_error|function|static int smp_br_error(struct bt_smp_br *smp, uint8_t reason)
+DECL|smp_br_ident_addr_info|function|static uint8_t smp_br_ident_addr_info(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_ident_info|function|static uint8_t smp_br_ident_info(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_init|function|static void smp_br_init(struct bt_smp_br *smp)
+DECL|smp_br_pairing_allowed|function|static bool smp_br_pairing_allowed(struct bt_smp_br *smp)
+DECL|smp_br_pairing_failed|function|static uint8_t smp_br_pairing_failed(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_pairing_req|function|static uint8_t smp_br_pairing_req(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp_br *smp)
 DECL|smp_br_send_pairing_req|function|static int smp_br_send_pairing_req(struct bt_conn *conn)
-DECL|smp_br_send|function|static void smp_br_send(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp *smp, struct net_buf *buf)
+DECL|smp_br_send|function|static void smp_br_send(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_timeout|function|static void smp_br_timeout(struct nano_work *work)
 DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
@@ -169,7 +176,7 @@ DECL|smp_ident_info|function|static uint8_t smp_ident_info(struct bt_smp *smp, s
 DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_master_ident|function|static uint8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_pairing_br_complete|function|static void smp_pairing_br_complete(struct bt_smp *smp, uint8_t status)
+DECL|smp_pairing_br_complete|function|static void smp_pairing_br_complete(struct bt_smp_br *smp, uint8_t status)
 DECL|smp_pairing_complete|function|static void smp_pairing_complete(struct bt_smp *smp, uint8_t status)
 DECL|smp_pairing_confirm|function|static uint8_t smp_pairing_confirm(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_failed|function|static uint8_t smp_pairing_failed(struct bt_smp *smp, struct net_buf *buf)
@@ -197,5 +204,6 @@ DECL|smp_timeout|function|static void smp_timeout(struct nano_work *work)
 DECL|swap_buf|function|static void swap_buf(uint8_t *dst, const uint8_t *src, uint16_t len)
 DECL|swap_in_place|function|static void swap_in_place(uint8_t *buf, uint16_t len)
 DECL|tk|member|uint8_t tk[16];
+DECL|work|member|struct nano_delayed_work work;
 DECL|work|member|struct nano_delayed_work work;
 DECL|xor_128|function|static void xor_128(const uint8_t p[16], const uint8_t q[16], uint8_t r[16])
