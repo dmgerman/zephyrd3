@@ -21,6 +21,7 @@ DECL|SEND_KEYS|macro|SEND_KEYS
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SIGN_DIST|macro|SIGN_DIST
 DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
+DECL|SMP_FLAG_BR_CONNECTED|enumerator|SMP_FLAG_BR_CONNECTED, /* if BR/EDR channel is connected */
 DECL|SMP_FLAG_BR_INITIATOR|enumerator|SMP_FLAG_BR_INITIATOR, /* if BR/EDR pairing initiator */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
 DECL|SMP_FLAG_DERIVE_LK|enumerator|SMP_FLAG_DERIVE_LK, /* if Link Key should be derived */
