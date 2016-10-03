@@ -7,6 +7,9 @@ DECL|RFCOMM_DEFAULT_CREDIT|macro|RFCOMM_DEFAULT_CREDIT
 DECL|RFCOMM_DEFAULT_MTU|macro|RFCOMM_DEFAULT_MTU
 DECL|RFCOMM_MAX_CREDITS|macro|RFCOMM_MAX_CREDITS
 DECL|RFCOMM_MIN_MTU|macro|RFCOMM_MIN_MTU
+DECL|RFCOMM_SECURITY_PASSED|enumerator|RFCOMM_SECURITY_PASSED,
+DECL|RFCOMM_SECURITY_PENDING|enumerator|RFCOMM_SECURITY_PENDING
+DECL|RFCOMM_SECURITY_REJECT|enumerator|RFCOMM_SECURITY_REJECT,
 DECL|RFCOMM_SESSION|macro|RFCOMM_SESSION
 DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct nano_fifo *fifo)
 DECL|bt_rfcomm_dlc_send|function|int bt_rfcomm_dlc_send(struct bt_rfcomm_dlc *dlc, struct net_buf *buf)
@@ -24,11 +27,14 @@ DECL|rfcomm_dlc_accept|function|static struct bt_rfcomm_dlc *rfcomm_dlc_accept(s
 DECL|rfcomm_dlc_connected|function|static void rfcomm_dlc_connected(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_destroy|function|static void rfcomm_dlc_destroy(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_disconnect|function|static void rfcomm_dlc_disconnect(struct bt_rfcomm_dlc *dlc)
+DECL|rfcomm_dlc_drop|function|static void rfcomm_dlc_drop(struct bt_rfcomm_dlc *dlc)
+DECL|rfcomm_dlc_security|function|static enum security_result rfcomm_dlc_security(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_tx_fiber|function|static void rfcomm_dlc_tx_fiber(int arg1, int arg2)
 DECL|rfcomm_dlc_tx_give_credits|function|static void rfcomm_dlc_tx_give_credits(struct bt_rfcomm_dlc *dlc, uint8_t credits)
 DECL|rfcomm_dlc_update_credits|function|static void rfcomm_dlc_update_credits(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlcs_lookup_dlci|function|static struct bt_rfcomm_dlc *rfcomm_dlcs_lookup_dlci(struct bt_rfcomm_dlc *dlcs, uint8_t dlci)
 DECL|rfcomm_dlcs_remove_dlci|function|static struct bt_rfcomm_dlc *rfcomm_dlcs_remove_dlci(struct bt_rfcomm_dlc *dlcs, uint8_t dlci)
+DECL|rfcomm_encrypt_change|function|static void rfcomm_encrypt_change(struct bt_l2cap_chan *chan, uint8_t hci_status)
 DECL|rfcomm_handle_data|function|static void rfcomm_handle_data(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t dlci, uint8_t pf)
 DECL|rfcomm_handle_disc|function|static void rfcomm_handle_disc(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_handle_msc|function|static void rfcomm_handle_msc(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
@@ -45,4 +51,5 @@ DECL|rfcomm_send_ua|function|static int rfcomm_send_ua(struct bt_rfcomm_session 
 DECL|rfcomm_server_lookup_channel|function|static struct bt_rfcomm_server *rfcomm_server_lookup_channel(uint8_t channel)
 DECL|rfcomm_session_disconnected|function|static void rfcomm_session_disconnected(struct bt_rfcomm_session *session)
 DECL|rfcomm_session|variable|rfcomm_session
+DECL|security_result|enum|enum security_result {
 DECL|servers|variable|servers
