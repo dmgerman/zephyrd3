@@ -23,6 +23,5 @@ DECL|_main|function|static void _main(void)
 DECL|build_timestamp|variable|build_timestamp
 DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
 DECL|initialize_nano_timeouts|macro|initialize_nano_timeouts
-DECL|ktask_t|typedef|typedef int32_t ktask_t; /* Must match definition in base_api.h */
 DECL|main_task_stack|variable|main_task_stack
 DECL|nano_init|function|static void nano_init(struct tcs *dummyOutContext)
