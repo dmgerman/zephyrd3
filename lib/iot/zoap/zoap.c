@@ -60,6 +60,7 @@ DECL|zoap_header_set_token|function|int zoap_header_set_token(struct zoap_packet
 DECL|zoap_header_set_type|function|void zoap_header_set_type(struct zoap_packet *pkt, uint8_t type)
 DECL|zoap_header_set_version|function|void zoap_header_set_version(struct zoap_packet *pkt, uint8_t ver)
 DECL|zoap_next_block|function|size_t zoap_next_block(struct zoap_block_context *ctx)
+DECL|zoap_next_token|function|uint8_t *zoap_next_token(void)
 DECL|zoap_observer_init|function|void zoap_observer_init(struct zoap_observer *observer,const struct zoap_packet *request, const struct sockaddr *addr)
 DECL|zoap_observer_next_unused|function|struct zoap_observer *zoap_observer_next_unused(struct zoap_observer *observers, size_t len)
 DECL|zoap_option_value_to_int|function|unsigned int zoap_option_value_to_int(const struct zoap_option *option)
