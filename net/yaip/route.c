@@ -22,8 +22,13 @@ DECL|net_route_info|macro|net_route_info
 DECL|net_route_info|macro|net_route_info
 DECL|net_route_init|function|void net_route_init(void)
 DECL|net_route_lookup|function|struct net_route_entry *net_route_lookup(struct net_if *iface, struct in6_addr *dst)
+DECL|net_route_mcast_add|function|struct net_route_entry_mcast *net_route_mcast_add(struct net_if *iface, struct in6_addr *group)
+DECL|net_route_mcast_del|function|bool net_route_mcast_del(struct net_route_entry_mcast *route)
+DECL|net_route_mcast_foreach|function|int net_route_mcast_foreach(net_route_mcast_cb_t cb, struct in6_addr *skip, void *user_data)
+DECL|net_route_mcast_lookup|function|net_route_mcast_lookup(struct in6_addr *group)
 DECL|net_route_nexthop_remove|function|static void net_route_nexthop_remove(struct net_nbr *nbr)
 DECL|net_routes_print|function|void net_routes_print(void)
 DECL|net_routes_print|macro|net_routes_print
+DECL|route_mcast_entries|variable|route_mcast_entries
 DECL|routes|variable|routes
 DECL|update_route_access|function|static inline void update_route_access(struct net_route_entry *route)
