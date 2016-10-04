@@ -7,10 +7,10 @@ DECL|ZDIR|typedef|typedef struct _zdir_object ZDIR;
 DECL|ZFILE|typedef|typedef struct _zfile_object ZFILE;
 DECL|_FS_H_|macro|_FS_H_
 DECL|dir_entry_type|enum|enum dir_entry_type {
-DECL|f_bfree|member|size_t f_bfree;
-DECL|f_blocks|member|size_t f_blocks;
-DECL|f_bsize|member|size_t f_bsize;
-DECL|f_frsize|member|size_t f_frsize;
+DECL|f_bfree|member|unsigned long f_bfree;
+DECL|f_blocks|member|unsigned long f_blocks;
+DECL|f_bsize|member|unsigned long f_bsize;
+DECL|f_frsize|member|unsigned long f_frsize;
 DECL|name|member|char name[MAX_FILE_NAME + 1];
 DECL|size|member|size_t size;
 DECL|type|member|enum dir_entry_type type;
