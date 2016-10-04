@@ -25,6 +25,7 @@ DECL|ad|variable|ad
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|challenge|member|uint8_t challenge[16];
 DECL|conn_callbacks|variable|conn_callbacks
+DECL|connectable|member|uint8_t connectable;
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|eds_active_slot|variable|eds_active_slot
@@ -33,6 +34,7 @@ DECL|eds_attrs|variable|eds_attrs
 DECL|eds_capabilities|struct|struct eds_capabilities {
 DECL|eds_caps_uuid|variable|eds_caps_uuid
 DECL|eds_caps|variable|eds_caps
+DECL|eds_connectable_uuid|variable|eds_connectable_uuid
 DECL|eds_data_uuid|variable|eds_data_uuid
 DECL|eds_ecdh_uuid|variable|eds_ecdh_uuid
 DECL|eds_ecdh|variable|eds_ecdh
@@ -40,6 +42,7 @@ DECL|eds_eid_uuid|variable|eds_eid_uuid
 DECL|eds_eid|variable|eds_eid
 DECL|eds_intv_uuid|variable|eds_intv_uuid
 DECL|eds_lock_uuid|variable|eds_lock_uuid
+DECL|eds_reset_uuid|variable|eds_reset_uuid
 DECL|eds_slot_restart|function|static int eds_slot_restart(struct eds_slot *slot, uint8_t type)
 DECL|eds_slot_uuid|variable|eds_slot_uuid
 DECL|eds_slots|variable|eds_slots
@@ -55,6 +58,7 @@ DECL|main|function|void main(void)
 DECL|read_adv_data|function|static ssize_t read_adv_data(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_adv_tx_power|function|static ssize_t read_adv_tx_power(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_caps|function|static ssize_t read_caps(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_connectable|function|static ssize_t read_connectable(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_ecdh|function|static ssize_t read_ecdh(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_eid|function|static ssize_t read_eid(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, uint16_t len, uint16_t offset)
 DECL|read_interval|function|static ssize_t read_interval(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
@@ -73,7 +77,9 @@ DECL|uids|member|uint8_t uids;
 DECL|version|member|uint8_t version;
 DECL|write_adv_data|function|static ssize_t write_adv_data(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_adv_tx_power|function|static ssize_t write_adv_tx_power(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
+DECL|write_connectable|function|static ssize_t write_connectable(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_lock|function|static ssize_t write_lock(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
+DECL|write_reset|function|static ssize_t write_reset(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_slot|function|static ssize_t write_slot(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_tx_power|function|static ssize_t write_tx_power(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
 DECL|write_unlock|function|static ssize_t write_unlock(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)

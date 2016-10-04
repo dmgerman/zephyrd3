@@ -59,7 +59,7 @@ DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_
 DECL|bt_smp_dhkey_ready|function|static void bt_smp_dhkey_ready(const uint8_t *dhkey)
 DECL|bt_smp_disconnected|function|static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_distribute_keys|function|static void bt_smp_distribute_keys(struct bt_smp *smp)
-DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_l2cap_chan *chan)
+DECL|bt_smp_encrypt_change|function|static void bt_smp_encrypt_change(struct bt_l2cap_chan *chan, uint8_t hci_status)
 DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, uint8_t *tk)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_irk_matches|function|bool bt_smp_irk_matches(const uint8_t irk[16], const bt_addr_t *addr)
@@ -117,7 +117,6 @@ DECL|prnd|member|uint8_t prnd[16];
 DECL|prsp|member|uint8_t prsp[7];
 DECL|remote_dist|member|uint8_t remote_dist;
 DECL|rrnd|member|uint8_t rrnd[16];
-DECL|sc_debug_private_key|variable|sc_debug_private_key
 DECL|sc_debug_public_key|variable|sc_debug_public_key
 DECL|sc_derive_link_key|function|static void sc_derive_link_key(struct bt_smp *smp)
 DECL|sc_local_pkey_valid|variable|sc_local_pkey_valid
