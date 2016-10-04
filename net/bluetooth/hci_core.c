@@ -52,7 +52,7 @@ DECL|bt_pub_key_get|function|const uint8_t *bt_pub_key_get(void)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
-DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
+DECL|bt_storage_clear|function|int bt_storage_clear(const bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(const struct bt_storage *storage)
 DECL|bt_storage|variable|bt_storage
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
