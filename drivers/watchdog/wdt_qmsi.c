@@ -1,5 +1,8 @@
+DECL|RP_GET|macro|RP_GET
+DECL|RP_GET|macro|RP_GET
 DECL|WDT_CONTEXT|macro|WDT_CONTEXT
 DECL|WDT_CONTEXT|macro|WDT_CONTEXT
+DECL|WDT_HAS_CONTEXT_DATA|macro|WDT_HAS_CONTEXT_DATA
 DECL|api|variable|api
 DECL|device_power_state|member|uint32_t device_power_state;
 DECL|disable|function|static void disable(struct device *dev)

@@ -7,6 +7,9 @@ DECL|MAX_PERIOD|macro|MAX_PERIOD
 DECL|MIN_PERIOD|macro|MIN_PERIOD
 DECL|PWM_CONTEXT|macro|PWM_CONTEXT
 DECL|PWM_CONTEXT|macro|PWM_CONTEXT
+DECL|PWM_HAS_CONTEXT_DATA|macro|PWM_HAS_CONTEXT_DATA
+DECL|RP_GET|macro|RP_GET
+DECL|RP_GET|macro|RP_GET
 DECL|__set_one_port|function|static int __set_one_port(struct device *dev, qm_pwm_t id, uint32_t pwm,uint32_t on, uint32_t off)
 DECL|channels|member|struct pwm_channel_ctx channels[CONFIG_PWM_QMSI_NUM_PORTS];
 DECL|controlreg|member|uint32_t controlreg;

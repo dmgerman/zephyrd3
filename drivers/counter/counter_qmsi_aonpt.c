@@ -1,5 +1,8 @@
 DECL|AONPT_CONTEXT|macro|AONPT_CONTEXT
 DECL|AONPT_CONTEXT|macro|AONPT_CONTEXT
+DECL|AONPT_HAS_CONTEXT_DATA|macro|AONPT_HAS_CONTEXT_DATA
+DECL|RP_GET|macro|RP_GET
+DECL|RP_GET|macro|RP_GET
 DECL|aon_critical_region_end|function|static void aon_critical_region_end(struct device *dev)
 DECL|aon_critical_region_start|function|static void aon_critical_region_start(struct device *dev)
 DECL|aon_data|struct|struct aon_data {

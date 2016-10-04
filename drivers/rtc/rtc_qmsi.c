@@ -1,5 +1,8 @@
+DECL|RP_GET|macro|RP_GET
+DECL|RP_GET|macro|RP_GET
 DECL|RTC_CONTEXT|macro|RTC_CONTEXT
 DECL|RTC_CONTEXT|macro|RTC_CONTEXT
+DECL|RTC_HAS_CONTEXT_DATA|macro|RTC_HAS_CONTEXT_DATA
 DECL|api|variable|api
 DECL|device_power_state|member|uint32_t device_power_state;
 DECL|int_rtc_mask_save|variable|int_rtc_mask_save
