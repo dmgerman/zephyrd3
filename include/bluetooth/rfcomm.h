@@ -17,7 +17,6 @@ DECL|initiator|member|bool initiator;
 DECL|mtu|member|uint16_t mtu;
 DECL|ops|member|struct bt_rfcomm_dlc_ops *ops;
 DECL|recv|member|void (*recv)(struct bt_rfcomm_dlc *dlc, struct net_buf *buf);
-DECL|ref|member|atomic_t ref;
 DECL|rx_credit|member|uint8_t rx_credit;
 DECL|session|member|struct bt_rfcomm_session *session;
 DECL|state|member|uint8_t state;

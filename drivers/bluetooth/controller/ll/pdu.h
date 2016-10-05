@@ -32,10 +32,30 @@ DECL|PDU_DATA_LLID_DATA_CONTINUE|enumerator|PDU_DATA_LLID_DATA_CONTINUE = 0x01,
 DECL|PDU_DATA_LLID_DATA_START|enumerator|PDU_DATA_LLID_DATA_START = 0x02,
 DECL|PDU_DATA_LLID_RESV|enumerator|PDU_DATA_LLID_RESV = 0x00,
 DECL|_PDU_H_|macro|_PDU_H_
-DECL|__packed|struct|struct __packed {
-DECL|__packed|union|union __packed {
-DECL|__packed|union|union __packed {
-DECL|__packed|union|union __packed {
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|access_addr|member|uint8_t access_addr[4];
 DECL|addr|member|uint8_t addr[BDADDR_SIZE];
 DECL|addr|member|uint8_t addr[BDADDR_SIZE];
@@ -53,7 +73,7 @@ DECL|conn_param_rsp|member|struct pdu_data_llctrl_conn_param_rsp conn_param_rsp;
 DECL|conn_update_req|member|struct pdu_data_llctrl_conn_update_req conn_update_req;
 DECL|connect_req|member|struct pdu_adv_payload_connect_req connect_req;
 DECL|crc_init|member|uint8_t crc_init[3];
-DECL|ctrldata|member|} ctrldata;
+DECL|ctrldata|member|} __packed ctrldata;
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
 DECL|direct_ind|member|struct pdu_adv_payload_direct_ind direct_ind;
@@ -91,7 +111,7 @@ DECL|len|member|uint8_t len:8;
 DECL|ll_id|member|uint8_t ll_id:2;
 DECL|llctrl|member|struct pdu_data_llctrl llctrl;
 DECL|lldata|member|uint8_t lldata[1];
-DECL|lldata|member|} lldata;
+DECL|lldata|member|} __packed lldata;
 DECL|max_rx_octets|member|uint16_t max_rx_octets;
 DECL|max_rx_time|member|uint16_t max_rx_time;
 DECL|max_tx_octets|member|uint16_t max_tx_octets;
@@ -114,37 +134,37 @@ DECL|offset4|member|uint16_t offset4;
 DECL|offset5|member|uint16_t offset5;
 DECL|offset5|member|uint16_t offset5;
 DECL|opcode|member|uint8_t opcode;
-DECL|payload|member|} payload;
-DECL|payload|member|} payload;
-DECL|pdu_adv_payload_adv_ind|struct|struct __packed pdu_adv_payload_adv_ind {
-DECL|pdu_adv_payload_connect_req|struct|struct __packed pdu_adv_payload_connect_req {
-DECL|pdu_adv_payload_direct_ind|struct|struct __packed pdu_adv_payload_direct_ind {
-DECL|pdu_adv_payload_scan_req|struct|struct __packed pdu_adv_payload_scan_req {
-DECL|pdu_adv_payload_scan_resp|struct|struct __packed pdu_adv_payload_scan_resp {
+DECL|payload|member|} __packed payload;
+DECL|payload|member|} __packed payload;
+DECL|pdu_adv_payload_adv_ind|struct|struct pdu_adv_payload_adv_ind {
+DECL|pdu_adv_payload_connect_req|struct|struct pdu_adv_payload_connect_req {
+DECL|pdu_adv_payload_direct_ind|struct|struct pdu_adv_payload_direct_ind {
+DECL|pdu_adv_payload_scan_req|struct|struct pdu_adv_payload_scan_req {
+DECL|pdu_adv_payload_scan_resp|struct|struct pdu_adv_payload_scan_resp {
 DECL|pdu_adv_type|enum|enum pdu_adv_type {
-DECL|pdu_adv|struct|struct __packed pdu_adv {
-DECL|pdu_data_llctrl_channel_map_req|struct|struct __packed pdu_data_llctrl_channel_map_req {
-DECL|pdu_data_llctrl_conn_param_req|struct|struct __packed pdu_data_llctrl_conn_param_req {
-DECL|pdu_data_llctrl_conn_param_rsp|struct|struct __packed pdu_data_llctrl_conn_param_rsp {
-DECL|pdu_data_llctrl_conn_update_req|struct|struct __packed pdu_data_llctrl_conn_update_req {
-DECL|pdu_data_llctrl_enc_req|struct|struct __packed pdu_data_llctrl_enc_req {
-DECL|pdu_data_llctrl_enc_rsp|struct|struct __packed pdu_data_llctrl_enc_rsp {
-DECL|pdu_data_llctrl_feature_req|struct|struct __packed pdu_data_llctrl_feature_req {
-DECL|pdu_data_llctrl_feature_rsp|struct|struct __packed pdu_data_llctrl_feature_rsp {
-DECL|pdu_data_llctrl_length_req_rsp|struct|struct __packed pdu_data_llctrl_length_req_rsp {
-DECL|pdu_data_llctrl_reject_ind_ext|struct|struct __packed pdu_data_llctrl_reject_ind_ext {
-DECL|pdu_data_llctrl_reject_ind|struct|struct __packed pdu_data_llctrl_reject_ind {
-DECL|pdu_data_llctrl_terminate_ind|struct|struct __packed pdu_data_llctrl_terminate_ind {
+DECL|pdu_adv|struct|struct pdu_adv {
+DECL|pdu_data_llctrl_channel_map_req|struct|struct pdu_data_llctrl_channel_map_req {
+DECL|pdu_data_llctrl_conn_param_req|struct|struct pdu_data_llctrl_conn_param_req {
+DECL|pdu_data_llctrl_conn_param_rsp|struct|struct pdu_data_llctrl_conn_param_rsp {
+DECL|pdu_data_llctrl_conn_update_req|struct|struct pdu_data_llctrl_conn_update_req {
+DECL|pdu_data_llctrl_enc_req|struct|struct pdu_data_llctrl_enc_req {
+DECL|pdu_data_llctrl_enc_rsp|struct|struct pdu_data_llctrl_enc_rsp {
+DECL|pdu_data_llctrl_feature_req|struct|struct pdu_data_llctrl_feature_req {
+DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
+DECL|pdu_data_llctrl_length_req_rsp|struct|struct pdu_data_llctrl_length_req_rsp {
+DECL|pdu_data_llctrl_reject_ind_ext|struct|struct pdu_data_llctrl_reject_ind_ext {
+DECL|pdu_data_llctrl_reject_ind|struct|struct pdu_data_llctrl_reject_ind {
+DECL|pdu_data_llctrl_terminate_ind|struct|struct pdu_data_llctrl_terminate_ind {
 DECL|pdu_data_llctrl_type|enum|enum pdu_data_llctrl_type {
-DECL|pdu_data_llctrl_unknown_rsp|struct|struct __packed pdu_data_llctrl_unknown_rsp {
-DECL|pdu_data_llctrl_version_ind|struct|struct __packed pdu_data_llctrl_version_ind {
-DECL|pdu_data_llctrl|struct|struct __packed pdu_data_llctrl {
+DECL|pdu_data_llctrl_unknown_rsp|struct|struct pdu_data_llctrl_unknown_rsp {
+DECL|pdu_data_llctrl_version_ind|struct|struct pdu_data_llctrl_version_ind {
+DECL|pdu_data_llctrl|struct|struct pdu_data_llctrl {
 DECL|pdu_data_llid|enum|enum pdu_data_llid {
-DECL|pdu_data|struct|struct __packed pdu_data {
+DECL|pdu_data|struct|struct pdu_data {
 DECL|preferred_periodicity|member|uint8_t preferred_periodicity;
 DECL|preferred_periodicity|member|uint8_t preferred_periodicity;
 DECL|profile|member|struct profile profile;
-DECL|profile|struct|struct __packed profile {
+DECL|profile|struct|struct profile {
 DECL|rand|member|uint8_t rand[8];
 DECL|reference_conn_event_count|member|uint16_t reference_conn_event_count;
 DECL|reference_conn_event_count|member|uint16_t reference_conn_event_count;
