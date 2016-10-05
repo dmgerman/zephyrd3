@@ -188,7 +188,7 @@ DECL|stack_size|member|unsigned stack_size;
 DECL|stack|member|char *stack;
 DECL|stop_handler_arg|member|void *stop_handler_arg;
 DECL|stop_handler|member|void (*stop_handler)(void *);
-DECL|tcs|member|struct tcs *tcs;
+DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
