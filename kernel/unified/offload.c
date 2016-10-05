@@ -7,5 +7,5 @@ DECL|offload_work_q_stack|variable|offload_work_q_stack
 DECL|offload_work_q|variable|offload_work_q
 DECL|offload_work|struct|struct offload_work {
 DECL|task_offload_to_fiber|function|int task_offload_to_fiber(int (*func)(), void *argp)
-DECL|thread|member|struct tcs *thread;
+DECL|thread|member|struct k_thread *thread;
 DECL|work_item|member|struct k_work work_item;

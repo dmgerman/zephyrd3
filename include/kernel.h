@@ -141,7 +141,7 @@ DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_config|struct|struct k_thread_config {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
 DECL|k_thread|macro|k_thread
-DECL|k_tid_t|typedef|typedef struct tcs *k_tid_t;
+DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *);
 DECL|k_work_init|function|static inline void k_work_init(struct k_work *work, k_work_handler_t handler)
@@ -169,7 +169,7 @@ DECL|num_conflicts|member|int num_conflicts;
 DECL|num_lock_state_changes|member|int num_lock_state_changes;
 DECL|num_used|member|int num_used;
 DECL|owner_orig_prio|member|int owner_orig_prio;
-DECL|owner|member|struct tcs *owner;
+DECL|owner|member|struct k_thread *owner;
 DECL|period|member|int32_t period;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
 DECL|prio|member|unsigned prio;
