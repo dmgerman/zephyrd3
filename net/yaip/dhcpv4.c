@@ -63,5 +63,5 @@ DECL|send_request|function|static void send_request(struct net_if *iface, bool r
 DECL|setup_header|function|static void setup_header(struct net_buf *buf)
 DECL|siaddr|member|uint8_t siaddr[4]; /* IP address of next server to use in bootstrap
 DECL|unset_dhcpv4_on_iface|function|static inline void unset_dhcpv4_on_iface(struct net_if *iface)
-DECL|xid|member|uint8_t xid[4]; /* Transaction ID, random number */
+DECL|xid|member|uint32_t xid; /* Transaction ID, random number */
 DECL|yiaddr|member|uint8_t yiaddr[4]; /* your (client) IP address */
