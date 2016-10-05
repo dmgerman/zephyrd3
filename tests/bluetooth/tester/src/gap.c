@@ -1,6 +1,9 @@
+DECL|ADV_BUF_LEN|macro|ADV_BUF_LEN
+DECL|BT_LE_AD_DISCOV_MASK|macro|BT_LE_AD_DISCOV_MASK
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CONTROLLER_NAME|macro|CONTROLLER_NAME
 DECL|ad_flags|variable|ad_flags
+DECL|adv_buf|variable|adv_buf
 DECL|ad|variable|ad
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
@@ -13,6 +16,8 @@ DECL|controller_info|function|static void controller_info(uint8_t *data, uint16_
 DECL|current_settings|variable|current_settings
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, struct net_buf_simple *ad)
 DECL|disconnect|function|static void disconnect(const uint8_t *data, uint16_t len)
+DECL|discovery_flags|variable|discovery_flags
+DECL|get_ad_flags|function|static uint8_t get_ad_flags(struct net_buf_simple *ad)
 DECL|le_connected|function|static void le_connected(struct bt_conn *conn, uint8_t err)
 DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|pair|function|static void pair(const uint8_t *data, uint16_t len)
@@ -25,6 +30,7 @@ DECL|start_advertising|function|static void start_advertising(const uint8_t *dat
 DECL|start_discovery|function|static void start_discovery(const uint8_t *data, uint16_t len)
 DECL|stop_advertising|function|static void stop_advertising(const uint8_t *data, uint16_t len)
 DECL|stop_discovery|function|static void stop_discovery(const uint8_t *data, uint16_t len)
+DECL|store_adv|function|static void store_adv(const bt_addr_le_t *addr, int8_t rssi, struct net_buf_simple *ad)
 DECL|supported_commands|function|static void supported_commands(uint8_t *data, uint16_t len)
 DECL|tester_handle_gap|function|void tester_handle_gap(uint8_t opcode, uint8_t index, uint8_t *data, uint16_t len)
 DECL|tester_init_gap_cb|function|static void tester_init_gap_cb(int err)
