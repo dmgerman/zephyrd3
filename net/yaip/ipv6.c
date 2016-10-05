@@ -37,6 +37,7 @@ DECL|handle_ns_input|function|static enum net_verdict handle_ns_input(struct net
 DECL|handle_ns_neighbor|function|static inline void handle_ns_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr)
 DECL|handle_prefix_autonomous|function|static inline void handle_prefix_autonomous(struct net_buf *buf,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
 DECL|handle_prefix_onlink|function|static inline void handle_prefix_onlink(struct net_buf *buf,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
+DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
 DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_buf *buf)
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
