@@ -9,6 +9,6 @@ DECL|_timeout_handle_one_timeout|function|static inline struct _timeout *_timeou
 DECL|_timeout_handle_timeouts|function|static inline void _timeout_handle_timeouts(void)
 DECL|_timeout_init|function|static inline void _timeout_init(struct _timeout *t, _timeout_func_t func)
 DECL|_timeout_insert_point_test|function|static int _timeout_insert_point_test(sys_dnode_t *test, void *timeout)
-DECL|_timeout_object_dequeue|function|static inline void _timeout_object_dequeue(struct tcs *tcs, struct _timeout *t)
-DECL|_timeout_object_dequeue|macro|_timeout_object_dequeue
 DECL|_timeout_tcs_init|function|static inline void _timeout_tcs_init(struct tcs *tcs)
+DECL|_unpend_thread_timing_out|function|static inline void _unpend_thread_timing_out(struct k_thread *thread, struct _timeout *timeout_obj)
+DECL|_unpend_thread_timing_out|macro|_unpend_thread_timing_out
