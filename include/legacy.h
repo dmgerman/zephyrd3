@@ -50,6 +50,8 @@ DECL|isr_event_send|macro|isr_event_send
 DECL|isr_fiber_wakeup|macro|isr_fiber_wakeup
 DECL|isr_sem_give|macro|isr_sem_give
 DECL|isr_task_group_mask_get|macro|isr_task_group_mask_get
+DECL|isr_task_id_get|macro|isr_task_id_get
+DECL|isr_task_priority_get|macro|isr_task_priority_get
 DECL|k_block|macro|k_block
 DECL|k_msg|struct|struct k_msg {
 DECL|kevent_handler_t|typedef|typedef int (*kevent_handler_t)(int event);
