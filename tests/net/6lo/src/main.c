@@ -6,14 +6,23 @@ DECL|STACKSIZE|macro|STACKSIZE
 DECL|__packed|variable|__packed
 DECL|compare_data|function|static bool compare_data(struct net_buf *buf, struct net_6lo_data *data)
 DECL|create_buf|function|static struct net_buf *create_buf(struct net_6lo_data *data)
+DECL|ctx1_prefix|macro|ctx1_prefix
+DECL|ctx1|variable|ctx1
+DECL|ctx2_prefix|macro|ctx2_prefix
+DECL|ctx2|variable|ctx2
 DECL|data|member|struct net_6lo_data *data;
+DECL|dst_dac1_dam01|macro|dst_dac1_dam01
+DECL|dst_dac1_dam10|macro|dst_dac1_dam10
+DECL|dst_dac1_dam11|macro|dst_dac1_dam11
 DECL|dst_dam00|macro|dst_dam00
 DECL|dst_dam01|macro|dst_dam01
 DECL|dst_dam10|macro|dst_dam10
+DECL|dst_dam11|macro|dst_dam11
 DECL|dst_m1_dam00|macro|dst_m1_dam00
 DECL|dst_m1_dam01|macro|dst_m1_dam01
 DECL|dst_m1_dam10|macro|dst_m1_dam10
 DECL|dst_m1_dam11|macro|dst_m1_dam11
+DECL|dst_mac|variable|dst_mac
 DECL|fiberStack|variable|fiberStack
 DECL|icmp|member|struct net_icmp_hdr icmp;
 DECL|iphc|member|bool iphc;
@@ -29,15 +38,30 @@ DECL|nh_icmp|member|bool nh_icmp;
 DECL|nh_udp|member|bool nh_udp;
 DECL|nh|member|} nh;
 DECL|small|member|bool small;
+DECL|src_mac|variable|src_mac
 DECL|src_sac1_sam00|macro|src_sac1_sam00
+DECL|src_sac1_sam01|macro|src_sac1_sam01
+DECL|src_sac1_sam10|macro|src_sac1_sam10
+DECL|src_sac1_sam11|macro|src_sac1_sam11
 DECL|src_sam00|macro|src_sam00
 DECL|src_sam01|macro|src_sam01
 DECL|src_sam10|macro|src_sam10
+DECL|src_sam11|macro|src_sam11
 DECL|test_6lo|function|static int test_6lo(struct net_6lo_data *data)
 DECL|test_data_10|variable|test_data_10
 DECL|test_data_11|variable|test_data_11
 DECL|test_data_12|variable|test_data_12
+DECL|test_data_13|variable|test_data_13
+DECL|test_data_14|variable|test_data_14
+DECL|test_data_15|variable|test_data_15
+DECL|test_data_16|variable|test_data_16
+DECL|test_data_17|variable|test_data_17
+DECL|test_data_18|variable|test_data_18
+DECL|test_data_19|variable|test_data_19
 DECL|test_data_1|variable|test_data_1
+DECL|test_data_20|variable|test_data_20
+DECL|test_data_21|variable|test_data_21
+DECL|test_data_22|variable|test_data_22
 DECL|test_data_2|variable|test_data_2
 DECL|test_data_3|variable|test_data_3
 DECL|test_data_4|variable|test_data_4
