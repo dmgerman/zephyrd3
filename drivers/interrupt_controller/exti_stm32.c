@@ -21,7 +21,7 @@ DECL|data|member|void *data;
 DECL|emr|member|uint32_t emr;
 DECL|exti_data|variable|exti_data
 DECL|ftsr|member|uint32_t ftsr;
-DECL|get_exti_base_addr|function|static inline struct stm32_exti *get_exti_base_addr(int line)
+DECL|get_exti_addr_adjust_line|function|static inline struct stm32_exti *get_exti_addr_adjust_line(int *line)
 DECL|imr|member|uint32_t imr;
 DECL|pr|member|uint32_t pr;
 DECL|rtsr|member|uint32_t rtsr;
