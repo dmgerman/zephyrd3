@@ -1,1 +1,2 @@
-
+DECL|kernel_version|variable|kernel_version
+DECL|sys_kernel_version_get|function|uint32_t sys_kernel_version_get(void)
