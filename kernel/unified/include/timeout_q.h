@@ -1,10 +1,9 @@
-DECL|_do_timeout_abort|function|static inline int _do_timeout_abort(struct _timeout *t)
+DECL|_abort_thread_timeout|function|static inline int _abort_thread_timeout(struct k_thread *thread)
+DECL|_abort_timeout|function|static inline int _abort_timeout(struct _timeout *t)
 DECL|_do_timeout_add|function|static inline void _do_timeout_add(struct tcs *tcs, struct _timeout *t, _wait_q_t *wait_q, int32_t timeout)
 DECL|_kernel_nanokernel_include_timeout_q__h_|macro|_kernel_nanokernel_include_timeout_q__h_
 DECL|_nano_timeout_tcs_init|function|static inline void _nano_timeout_tcs_init(struct tcs *tcs)
-DECL|_nano_timer_timeout_abort|function|static inline int _nano_timer_timeout_abort(struct _timeout *t)
 DECL|_nano_timer_timeout_add|function|static inline void _nano_timer_timeout_add(struct _timeout *t, _wait_q_t *wait_q, int32_t timeout)
-DECL|_timeout_abort|function|static inline int _timeout_abort(struct tcs *tcs)
 DECL|_timeout_add|function|static inline void _timeout_add(struct tcs *tcs, _wait_q_t *wait_q,int32_t timeout)
 DECL|_timeout_get_next_expiry|function|static inline int32_t _timeout_get_next_expiry(void)
 DECL|_timeout_handle_one_timeout|function|static inline struct _timeout *_timeout_handle_one_timeout(sys_dlist_t *timeout_q)
