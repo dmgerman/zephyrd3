@@ -27,4 +27,5 @@ DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|main_stack|variable|main_stack
 DECL|main|function|void __weak main(void)
-DECL|nano_init|function|static void nano_init(struct tcs *dummy_thread)
+DECL|prepare_multithreading|function|static void prepare_multithreading(struct k_thread *dummy_thread)
+DECL|switch_to_main_thread|function|static void switch_to_main_thread(void)
