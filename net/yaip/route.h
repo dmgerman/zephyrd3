@@ -7,6 +7,7 @@ DECL|iface|member|struct net_if *iface;
 DECL|is_used|member|bool is_used;
 DECL|lifetime|member|uint32_t lifetime;
 DECL|nbr|member|struct net_nbr *nbr;
+DECL|net_route_cb_t|typedef|typedef void (*net_route_cb_t)(struct net_route_entry *entry,
 DECL|net_route_entry_mcast|struct|struct net_route_entry_mcast {
 DECL|net_route_entry|struct|struct net_route_entry {
 DECL|net_route_init|macro|net_route_init

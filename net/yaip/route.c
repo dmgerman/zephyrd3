@@ -16,6 +16,7 @@ DECL|net_route_del_by_nexthop|function|int net_route_del_by_nexthop(struct net_i
 DECL|net_route_del|function|int net_route_del(struct net_route_entry *route)
 DECL|net_route_entries_table_clear|function|static void net_route_entries_table_clear(struct net_nbr_table *table)
 DECL|net_route_entry_remove|function|static void net_route_entry_remove(struct net_nbr *nbr)
+DECL|net_route_foreach|function|int net_route_foreach(net_route_cb_t cb, void *user_data)
 DECL|net_route_get_nbr|function|struct net_nbr *net_route_get_nbr(struct net_route_entry *route)
 DECL|net_route_get_nexthop|function|struct in6_addr *net_route_get_nexthop(struct net_route_entry *route)
 DECL|net_route_info|macro|net_route_info
