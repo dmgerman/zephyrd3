@@ -8,7 +8,7 @@ DECL|NET_TCP_BUF|macro|NET_TCP_BUF
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
 DECL|appdatalen|member|uint16_t appdatalen;
-DECL|appdata|member|uint8_t *appdata; /* application data */
+DECL|appdata|member|uint8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
 DECL|ext_bitmap|member|uint8_t ext_bitmap;
 DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
@@ -77,7 +77,7 @@ DECL|net_nbuf_write_be16|function|static inline bool net_nbuf_write_be16(struct 
 DECL|net_nbuf_write_be32|function|static inline bool net_nbuf_write_be32(struct net_buf *buf, uint32_t data)
 DECL|net_nbuf_write_u8|function|static inline bool net_nbuf_write_u8(struct net_buf *buf, uint8_t data)
 DECL|net_nbuf|struct|struct net_nbuf {
-DECL|next_hdr|member|uint8_t *next_hdr;
+DECL|next_hdr|member|uint8_t *next_hdr; /* where is the next header */
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|token|member|void *token;
 DECL|type|member|enum net_nbuf_type type;
