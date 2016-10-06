@@ -8,7 +8,7 @@ DECL|ctx_save|member|struct spi_context_t ctx_save;
 DECL|device_power_state|member|uint32_t device_power_state;
 DECL|dev|member|struct device *dev;
 DECL|frame_size_to_dfs|function|static inline uint8_t frame_size_to_dfs(qm_spi_frame_size_t frame_size)
-DECL|gpio_cs_init|function|static struct device *gpio_cs_init(struct spi_qmsi_config *config)
+DECL|gpio_cs_init|function|static struct device *gpio_cs_init(const struct spi_qmsi_config *config)
 DECL|gpio_cs|member|struct device *gpio_cs;
 DECL|int_spi_mask|member|uint32_t int_spi_mask;
 DECL|loopback|member|bool loopback;
