@@ -53,6 +53,7 @@ DECL|info_ident|member|uint8_t info_ident;
 DECL|l2cap_br_accept|function|static int l2cap_br_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_br_chan_add|function|static bool l2cap_br_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|l2cap_br_chan_alloc_cid|function|l2cap_br_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
+DECL|l2cap_br_chan_cleanup|function|static void l2cap_br_chan_cleanup(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_destroy|function|static void l2cap_br_chan_destroy(struct bt_l2cap_chan *chan)
 DECL|l2cap_br_chan_send_req|function|static void l2cap_br_chan_send_req(struct bt_l2cap_br_chan *chan, struct net_buf *buf, uint32_t ticks)
 DECL|l2cap_br_conf_add_mtu|function|static void l2cap_br_conf_add_mtu(struct net_buf *buf, const uint16_t mtu)
