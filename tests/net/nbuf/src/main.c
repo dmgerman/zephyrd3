@@ -22,6 +22,7 @@ DECL|len|member|uint8_t len[2];
 DECL|linearize|function|static void linearize(struct net_buf *buf, char *buffer, int len)
 DECL|mainloop|function|void mainloop(void)
 DECL|nexthdr|member|uint8_t nexthdr;
+DECL|sample_data|variable|sample_data
 DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|tcflow|member|uint8_t tcflow;

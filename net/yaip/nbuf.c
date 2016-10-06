@@ -20,6 +20,7 @@ DECL|STRING|macro|STRING
 DECL|STRING|macro|STRING
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|dec_free_data_bufs|function|static inline void dec_free_data_bufs(struct net_buf *buf)
 DECL|dec_free_data_bufs|macro|dec_free_data_bufs
 DECL|dec_free_rx_bufs|function|static inline void dec_free_rx_bufs(struct net_buf *buf)
