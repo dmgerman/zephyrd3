@@ -49,6 +49,7 @@ DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context
 DECL|net_ipv6_finalize_raw|function|struct net_buf *net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
 DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(uint8_t idx)
+DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_nbr_add|function|struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, uint8_t idx)
