@@ -1,5 +1,6 @@
-DECL|_abort_thread_timeout|macro|_abort_thread_timeout
+DECL|_abort_thread_timeout|function|static inline int _abort_thread_timeout(struct k_thread *thread) { return 0; }
 DECL|_add_thread_timeout|macro|_add_thread_timeout
 DECL|_get_next_timeout_expiry|macro|_get_next_timeout_expiry
 DECL|_init_thread_timeout|macro|_init_thread_timeout
 DECL|_kernel_nanokernel_include_wait_q__h_|macro|_kernel_nanokernel_include_wait_q__h_
+DECL|_nano_timeout_tcs_init|macro|_nano_timeout_tcs_init

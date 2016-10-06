@@ -11,4 +11,3 @@ DECL|_is_timeout_insert_point|function|static int _is_timeout_insert_point(sys_d
 DECL|_kernel_nanokernel_include_timeout_q__h_|macro|_kernel_nanokernel_include_timeout_q__h_
 DECL|_nano_timeout_tcs_init|function|static inline void _nano_timeout_tcs_init(struct tcs *tcs)
 DECL|_unpend_thread_timing_out|function|static inline void _unpend_thread_timing_out(struct k_thread *thread, struct _timeout *timeout_obj)
-DECL|_unpend_thread_timing_out|macro|_unpend_thread_timing_out
