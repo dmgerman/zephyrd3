@@ -4,7 +4,7 @@ DECL|cs_pin|member|uint32_t cs_pin;
 DECL|cs_port|member|char *cs_port;
 DECL|dev|member|struct device *dev;
 DECL|frame_size_to_dfs|function|static inline uint8_t frame_size_to_dfs(qm_ss_spi_frame_size_t frame_size)
-DECL|gpio_cs_init|function|static struct device *gpio_cs_init(struct ss_spi_qmsi_config *config)
+DECL|gpio_cs_init|function|static struct device *gpio_cs_init(const struct ss_spi_qmsi_config *config)
 DECL|gpio_cs|member|struct device *gpio_cs;
 DECL|loopback|member|bool loopback;
 DECL|pending_transfers|variable|pending_transfers
