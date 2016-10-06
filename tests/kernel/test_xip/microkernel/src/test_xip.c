@@ -1,1 +1,1 @@
-DECL|main|function|void main(void)
+DECL|RegressionTaskEntry|function|void RegressionTaskEntry(void)
