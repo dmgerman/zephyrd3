@@ -34,4 +34,3 @@ DECL|_thread_priority_set|function|static inline void _thread_priority_set(struc
 DECL|_unpend_first_thread|function|static inline struct k_thread *_unpend_first_thread(_wait_q_t *wait_q)
 DECL|_unpend_thread|function|static inline void _unpend_thread(struct k_thread *thread)
 DECL|k_sched_lock|function|static inline void k_sched_lock(void)
-DECL|k_thread_priority_get|function|static inline int32_t k_thread_priority_get(struct k_thread *thread)
