@@ -56,6 +56,7 @@ DECL|bt_smp_br_connected|function|static void bt_smp_br_connected(struct bt_l2ca
 DECL|bt_smp_br_disconnected|function|static void bt_smp_br_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_br_pool|variable|bt_smp_br_pool
 DECL|bt_smp_br_recv|function|static void bt_smp_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_smp_br_send_pairing_req|function|int bt_smp_br_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp_br|struct|struct bt_smp_br {
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_create_rpa|function|int bt_smp_create_rpa(const uint8_t irk[16], bt_addr_t *rpa)
@@ -150,7 +151,6 @@ DECL|smp_br_pairing_failed|function|static uint8_t smp_br_pairing_failed(struct 
 DECL|smp_br_pairing_req|function|static uint8_t smp_br_pairing_req(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp_br *smp)
-DECL|smp_br_send_pairing_req|function|static int smp_br_send_pairing_req(struct bt_conn *conn)
 DECL|smp_br_send|function|static void smp_br_send(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_timeout|function|static void smp_br_timeout(struct nano_work *work)
