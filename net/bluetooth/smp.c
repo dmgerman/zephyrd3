@@ -153,6 +153,7 @@ DECL|smp_br_pairing_rsp|function|static uint8_t smp_br_pairing_rsp(struct bt_smp
 DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp_br *smp)
 DECL|smp_br_send|function|static void smp_br_send(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
+DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_timeout|function|static void smp_br_timeout(struct nano_work *work)
 DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
