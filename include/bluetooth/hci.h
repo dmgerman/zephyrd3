@@ -108,6 +108,7 @@ DECL|BT_HCI_EVT_REMOTE_EXT_FEATURES|macro|BT_HCI_EVT_REMOTE_EXT_FEATURES
 DECL|BT_HCI_EVT_REMOTE_FEATURES|macro|BT_HCI_EVT_REMOTE_FEATURES
 DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE
 DECL|BT_HCI_EVT_REMOTE_VERSION_INFO|macro|BT_HCI_EVT_REMOTE_VERSION_INFO
+DECL|BT_HCI_EVT_ROLE_CHANGE|macro|BT_HCI_EVT_ROLE_CHANGE
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
 DECL|BT_HCI_EVT_USER_CONFIRM_REQ|macro|BT_HCI_EVT_USER_CONFIRM_REQ
 DECL|BT_HCI_EVT_USER_PASSKEY_NOTIFY|macro|BT_HCI_EVT_USER_PASSKEY_NOTIFY
@@ -391,6 +392,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -407,6 +409,7 @@ DECL|allow_role_switch|member|uint8_t allow_role_switch;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
 DECL|a|member|bt_addr_t a;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -551,6 +554,7 @@ DECL|bt_hci_evt_remote_ext_features|struct|struct bt_hci_evt_remote_ext_features
 DECL|bt_hci_evt_remote_features|struct|struct bt_hci_evt_remote_features {
 DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_req_complete {
 DECL|bt_hci_evt_remote_version_info|struct|struct bt_hci_evt_remote_version_info {
+DECL|bt_hci_evt_role_change|struct|struct bt_hci_evt_role_change {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
 DECL|bt_hci_evt_user_confirm_req|struct|struct bt_hci_evt_user_confirm_req {
 DECL|bt_hci_evt_user_passkey_notify|struct|struct bt_hci_evt_user_passkey_notify {
@@ -815,6 +819,7 @@ DECL|rl_size|member|uint8_t rl_size;
 DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
+DECL|role|member|uint8_t role;
 DECL|rpa_timeout|member|uint8_t rpa_timeout;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
@@ -830,6 +835,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
