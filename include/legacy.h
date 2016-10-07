@@ -29,7 +29,7 @@ DECL|_legacy__h_|macro|_legacy__h_
 DECL|_ticks_to_ms|function|static inline int32_t _ticks_to_ms(int32_t ticks)
 DECL|extra|member|} extra;
 DECL|fiber_abort|macro|fiber_abort
-DECL|fiber_config|macro|fiber_config
+DECL|fiber_config|struct|struct fiber_config {
 DECL|fiber_delayed_start_cancel|macro|fiber_delayed_start_cancel
 DECL|fiber_delayed_start|function|fiber_delayed_start(char *stack, unsigned int stack_size_in_bytes,nano_fiber_entry_t entry_point, int param1, int param2, unsigned int priority, unsigned int options, int32_t timeout_in_ticks)
 DECL|fiber_event_send|macro|fiber_event_send
@@ -148,10 +148,13 @@ DECL|nano_workqueue_start|macro|nano_workqueue_start
 DECL|nano_workqueue|macro|nano_workqueue
 DECL|nano_work|macro|nano_work
 DECL|pool_struct|macro|pool_struct
+DECL|prio|member|unsigned prio;
 DECL|rx_data|member|void *rx_data;
 DECL|rx_task|member|ktask_t rx_task;
 DECL|sema|member|ksem_t sema;
 DECL|size|member|uint32_t size;
+DECL|stack_size|member|unsigned stack_size;
+DECL|stack|member|char *stack;
 DECL|sys_cycle_get_32|macro|sys_cycle_get_32
 DECL|sys_scheduler_time_slice_set|function|static inline void sys_scheduler_time_slice_set(int32_t ticks,kpriority_t prio)
 DECL|sys_thread_busy_wait|macro|sys_thread_busy_wait

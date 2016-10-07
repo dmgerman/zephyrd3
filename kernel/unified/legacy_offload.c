@@ -2,7 +2,6 @@ DECL|k_offload_work_q_init|function|static int k_offload_work_q_init(struct devi
 DECL|offload_args|member|void *offload_args;
 DECL|offload_func|member|int (*offload_func)();
 DECL|offload_handler|function|static void offload_handler(struct k_work *work)
-DECL|offload_work_q_config|variable|offload_work_q_config
 DECL|offload_work_q_stack|variable|offload_work_q_stack
 DECL|offload_work_q|variable|offload_work_q
 DECL|offload_work|struct|struct offload_work {

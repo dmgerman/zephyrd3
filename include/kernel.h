@@ -138,7 +138,6 @@ DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct 
 DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
-DECL|k_thread_config|struct|struct k_thread_config {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
 DECL|k_thread|macro|k_thread
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
@@ -172,7 +171,6 @@ DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
 DECL|period|member|int32_t period;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
-DECL|prio|member|unsigned prio;
 DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
@@ -184,8 +182,6 @@ DECL|sem|member|struct k_sem sem;
 DECL|send_count|member|atomic_t send_count;
 DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
-DECL|stack_size|member|unsigned stack_size;
-DECL|stack|member|char *stack;
 DECL|status|member|uint32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
 DECL|thread|member|struct k_thread *thread;
