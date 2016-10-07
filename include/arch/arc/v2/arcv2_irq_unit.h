@@ -7,3 +7,4 @@ DECL|_arc_v2_irq_unit_int_disable|function|static inline void _arc_v2_irq_unit_i
 DECL|_arc_v2_irq_unit_int_enable|function|static inline void _arc_v2_irq_unit_int_enable(int irq)
 DECL|_arc_v2_irq_unit_irq_enable_set|function|static inline void _arc_v2_irq_unit_irq_enable_set(int irq, unsigned char enable )
 DECL|_arc_v2_irq_unit_prio_set|function|static inline void _arc_v2_irq_unit_prio_set(int irq, unsigned char prio)
+DECL|_arc_v2_irq_unit_sensitivity_set|function|static inline void _arc_v2_irq_unit_sensitivity_set(int irq, int s)
