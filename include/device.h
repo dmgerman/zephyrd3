@@ -20,7 +20,7 @@ DECL|DEVICE_PM_OPS_GET|macro|DEVICE_PM_OPS_GET
 DECL|DEVICE_PM_SET_POWER_STATE|macro|DEVICE_PM_SET_POWER_STATE
 DECL|DEVICE_PM_SUSPEND_STATE|macro|DEVICE_PM_SUSPEND_STATE
 DECL|_DEVICE_H_|macro|_DEVICE_H_
-DECL|config_info|member|void *config_info;
+DECL|config_info|member|const void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|dev_pm_ops|member|struct device_pm_ops *dev_pm_ops; /* deprecated */
 DECL|device_config|struct|struct device_config {
