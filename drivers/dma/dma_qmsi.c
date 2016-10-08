@@ -1,5 +1,4 @@
 DECL|callback_data|member|void *callback_data[QM_DMA_CHANNEL_NUM];
-DECL|channel|member|qm_dma_channel_id_t channel[QM_DMA_CHANNEL_NUM];
 DECL|dev|member|struct device *dev;
 DECL|dma_callback|function|static void dma_callback(void *callback_context, uint32_t len, int error_code)
 DECL|dma_context|variable|dma_context
