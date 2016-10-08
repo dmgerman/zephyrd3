@@ -24,8 +24,8 @@ DECL|config_info|member|const void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|dev_pm_ops|member|struct device_pm_ops *dev_pm_ops; /* deprecated */
 DECL|device_config|struct|struct device_config {
-DECL|device_control|member|int (*device_control)(struct device *device, uint32_t command,
 DECL|device_get_power_state|function|static inline int device_get_power_state(struct device *device, uint32_t *device_power_state)
+DECL|device_pm_control|member|int (*device_pm_control)(struct device *device, uint32_t command,
 DECL|device_pm_ops|struct|struct device_pm_ops {
 DECL|device_resume|function|static inline int __deprecated device_resume(struct device *device,int pm_policy)
 DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, uint32_t device_power_state)
