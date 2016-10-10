@@ -13,4 +13,6 @@ DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *
 DECL|validate_addr|function|validate_addr(uint8_t *buf, uint8_t **p_buf, enum ieee802154_addressing_mode mode, bool pan_id_compression)
 DECL|validate_beacon|function|validate_beacon(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t length)
 DECL|validate_fc_seq|function|validate_fc_seq(uint8_t *buf, uint8_t **p_buf)
+DECL|validate_mac_command_cfi_to_mhr|function|validate_mac_command_cfi_to_mhr(struct ieee802154_mhr *mhr,uint8_t ar, uint8_t comp, uint8_t src, bool src_pan_brdcst_chk, uint8_t dst, bool dst_brdcst_chk)
+DECL|validate_mac_command|function|validate_mac_command(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t length)
 DECL|validate_payload_and_mfr|function|validate_payload_and_mfr(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t *p_buf, uint8_t length)
