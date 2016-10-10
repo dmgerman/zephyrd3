@@ -20,6 +20,7 @@ DECL|discovery_flags|variable|discovery_flags
 DECL|get_ad_flags|function|static uint8_t get_ad_flags(struct net_buf_simple *ad)
 DECL|le_connected|function|static void le_connected(struct bt_conn *conn, uint8_t err)
 DECL|le_disconnected|function|static void le_disconnected(struct bt_conn *conn, uint8_t reason)
+DECL|le_identity_resolved|function|static void le_identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|pair|function|static void pair(const uint8_t *data, uint16_t len)
 DECL|passkey_entry|function|static void passkey_entry(const uint8_t *data, uint16_t len)
 DECL|sd|variable|sd
