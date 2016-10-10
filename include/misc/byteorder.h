@@ -22,6 +22,8 @@ DECL|sys_le16_to_cpu|macro|sys_le16_to_cpu
 DECL|sys_le16_to_cpu|macro|sys_le16_to_cpu
 DECL|sys_le32_to_cpu|macro|sys_le32_to_cpu
 DECL|sys_le32_to_cpu|macro|sys_le32_to_cpu
+DECL|sys_mem_swap|function|static inline void sys_mem_swap(void *buf, size_t length)
+DECL|sys_memcpy_swap|function|static inline void sys_memcpy_swap(void *dst, const void *src, size_t length)
 DECL|sys_put_be16|function|static inline void sys_put_be16(uint16_t val, uint8_t dst[2])
 DECL|sys_put_be32|function|static inline void sys_put_be32(uint32_t val, uint8_t dst[4])
 DECL|sys_put_le16|function|static inline void sys_put_le16(uint16_t val, uint8_t dst[2])
