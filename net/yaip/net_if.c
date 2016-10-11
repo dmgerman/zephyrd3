@@ -14,6 +14,7 @@ DECL|init_tx_queue|function|static inline void init_tx_queue(struct net_if *ifac
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|link_callbacks|variable|link_callbacks
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
+DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
 DECL|net_if_get_by_iface|function|uint8_t net_if_get_by_iface(struct net_if *iface)
 DECL|net_if_get_by_index|function|struct net_if *net_if_get_by_index(uint8_t index)
 DECL|net_if_get_by_link_addr|function|struct net_if *net_if_get_by_link_addr(struct net_linkaddr *ll_addr)
