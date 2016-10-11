@@ -91,16 +91,21 @@ DECL|dlf|member|uint8_t dlf; /**< DLF value */
 DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
 DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
+DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
 DECL|options|member|uint8_t options; /**< Serial port options */
+DECL|pci_dev|member|struct pci_dev_info pci_dev;
+DECL|port|member|uint32_t port;
 DECL|set_baud_rate|function|static void set_baud_rate(struct device *dev, uint32_t baud_rate)
 DECL|set_dlf|function|static inline void set_dlf(struct device *dev, uint32_t val)
+DECL|sys_clk_freq|member|uint32_t sys_clk_freq;
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0
 DECL|uart_ns16550_dev_data_1|variable|uart_ns16550_dev_data_1
 DECL|uart_ns16550_dev_data_t|struct|struct uart_ns16550_dev_data_t {
+DECL|uart_ns16550_device_config|struct|struct uart_ns16550_device_config {
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
 DECL|uart_ns16550_drv_cmd|function|static int uart_ns16550_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
