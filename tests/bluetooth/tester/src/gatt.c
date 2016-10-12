@@ -29,7 +29,7 @@ DECL|btp2bt_uuid|function|static uint8_t btp2bt_uuid(const uint8_t *uuid, uint8_
 DECL|btp_opcode|variable|btp_opcode
 DECL|buf|member|uint8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc_added|variable|ccc_added
-DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(uint16_t value)
+DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|ccc_cfg|variable|ccc_cfg
 DECL|ccc_value|variable|ccc_value
 DECL|ccc|variable|ccc

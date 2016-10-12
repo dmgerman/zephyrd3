@@ -1,5 +1,5 @@
 DECL|attrs|variable|attrs
-DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(uint16_t value)
+DECL|ct_ccc_cfg_changed|function|static void ct_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|ct_ccc_cfg|variable|ct_ccc_cfg
 DECL|ct_update|variable|ct_update
 DECL|cts_init|function|void cts_init(void)

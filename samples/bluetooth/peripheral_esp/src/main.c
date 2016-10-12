@@ -72,7 +72,7 @@ DECL|sensor_1|variable|sensor_1
 DECL|sensor_2|variable|sensor_2
 DECL|sensor_3|variable|sensor_3
 DECL|simulate_temp|variable|simulate_temp
-DECL|temp_ccc_cfg_changed|function|static void temp_ccc_cfg_changed(uint16_t value)
+DECL|temp_ccc_cfg_changed|function|static void temp_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|temp_value|member|int16_t temp_value;
 DECL|temperature_sensor|struct|struct temperature_sensor {
 DECL|update_interval|member|uint32_t update_interval;

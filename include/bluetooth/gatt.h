@@ -73,7 +73,7 @@ DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
 DECL|bt_gatt_write_func_t|typedef|typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, uint8_t err,
 DECL|bt_gatt_write_params|struct|struct bt_gatt_write_params {
 DECL|ccc_handle|member|uint16_t ccc_handle;
-DECL|cfg_changed|member|void (*cfg_changed)(uint16_t value);
+DECL|cfg_changed|member|void (*cfg_changed)(const struct bt_gatt_attr *attr,
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|data|member|const void *data;

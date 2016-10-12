@@ -1,6 +1,6 @@
 DECL|attrs|variable|attrs
 DECL|heartrate|variable|heartrate
-DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(uint16_t value)
+DECL|hrmc_ccc_cfg_changed|function|static void hrmc_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
 DECL|hrs_blsc|variable|hrs_blsc
 DECL|hrs_init|function|void hrs_init(uint8_t blsc)

@@ -22,7 +22,7 @@ DECL|signed_value|variable|signed_value
 DECL|simulate_vnd|variable|simulate_vnd
 DECL|vnd_attrs|variable|vnd_attrs
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
-DECL|vnd_ccc_cfg_changed|function|static void vnd_ccc_cfg_changed(uint16_t value)
+DECL|vnd_ccc_cfg_changed|function|static void vnd_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|vnd_ccc_cfg|variable|vnd_ccc_cfg
 DECL|vnd_enc_uuid|variable|vnd_enc_uuid
 DECL|vnd_long_cep|variable|vnd_long_cep
