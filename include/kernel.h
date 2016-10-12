@@ -70,6 +70,7 @@ DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((us
 DECL|__ticks_to_ms|function|static int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_kernel__h_|macro|_kernel__h_
+DECL|_legacy_data|member|void *_legacy_data;
 DECL|_mailbox|member|uint32_t _mailbox;
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
@@ -95,14 +96,13 @@ DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|execution_context_types|enum|enum execution_context_types {
+DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo fifo;
 DECL|flags|member|atomic_t flags[1];
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
-DECL|handler_arg|member|void *handler_arg;
 DECL|handler|member|k_event_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
-DECL|handler|member|void (*handler)(void *);
 DECL|info|member|uint32_t info;
 DECL|init_abort|member|void (*init_abort)(void);
 DECL|init_delay|member|int32_t init_delay;
@@ -186,8 +186,8 @@ DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
 DECL|stack_size|member|unsigned stack_size;
 DECL|stack|member|char *stack;
-DECL|stop_handler_arg|member|void *stop_handler_arg;
-DECL|stop_handler|member|void (*stop_handler)(void *);
+DECL|status|member|uint32_t status;
+DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|timeout|member|struct _timeout timeout;
@@ -198,8 +198,6 @@ DECL|tx_data|member|void *tx_data;
 DECL|tx_msg_queue|member|_wait_q_t tx_msg_queue;
 DECL|tx_target_thread|member|k_tid_t tx_target_thread;
 DECL|used_msgs|member|uint32_t used_msgs;
-DECL|user_data_internal|member|void *user_data_internal;
-DECL|user_data|member|void *user_data;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
