@@ -30,21 +30,17 @@ DECL|CLK_RTC_DIV_512|enumerator|CLK_RTC_DIV_512, /**< Real Time Clock Divider = 
 DECL|CLK_RTC_DIV_64|enumerator|CLK_RTC_DIV_64, /**< Real Time Clock Divider = 64. */
 DECL|CLK_RTC_DIV_8192|enumerator|CLK_RTC_DIV_8192, /**< Real Time Clock Divider = 8192. */
 DECL|CLK_RTC_DIV_8|enumerator|CLK_RTC_DIV_8, /**< Real Time Clock Divider = 8. */
-DECL|CLK_SYS_CRYSTAL_OSC|enumerator|CLK_SYS_CRYSTAL_OSC /**< Crystal Oscillator Clock. */
-DECL|CLK_SYS_DIV_128|enumerator|CLK_SYS_DIV_128, /**< Clock Divider = 128. */
-DECL|CLK_SYS_DIV_16|enumerator|CLK_SYS_DIV_16, /**< Clock Divider = 16. */
+DECL|CLK_SYS_CRYSTAL_OSC|enumerator|CLK_SYS_CRYSTAL_OSC = 5 /**< Crystal Oscillator Clock. */
 DECL|CLK_SYS_DIV_1|enumerator|CLK_SYS_DIV_1, /**< Clock Divider = 1. */
 DECL|CLK_SYS_DIV_2|enumerator|CLK_SYS_DIV_2, /**< Clock Divider = 2. */
-DECL|CLK_SYS_DIV_32|enumerator|CLK_SYS_DIV_32, /**< Clock Divider = 32. */
 DECL|CLK_SYS_DIV_4|enumerator|CLK_SYS_DIV_4, /**< Clock Divider = 4. */
-DECL|CLK_SYS_DIV_64|enumerator|CLK_SYS_DIV_64, /**< Clock Divider = 64. */
 DECL|CLK_SYS_DIV_8|enumerator|CLK_SYS_DIV_8, /**< Clock Divider = 8. */
 DECL|CLK_SYS_DIV_NUM|enumerator|CLK_SYS_DIV_NUM
-DECL|CLK_SYS_HYB_OSC_16MHZ|enumerator|CLK_SYS_HYB_OSC_16MHZ, /**< 16MHz Hybrid Oscillator Clock. */
-DECL|CLK_SYS_HYB_OSC_32MHZ|enumerator|CLK_SYS_HYB_OSC_32MHZ, /**< 32MHz Hybrid Oscillator Clock. */
-DECL|CLK_SYS_HYB_OSC_4MHZ|enumerator|CLK_SYS_HYB_OSC_4MHZ, /**< 4MHz Hybrid Oscillator Clock. */
-DECL|CLK_SYS_HYB_OSC_8MHZ|enumerator|CLK_SYS_HYB_OSC_8MHZ, /**< 8MHz Hybrid Oscillator Clock. */
-DECL|CLK_SYS_RTC_OSC|enumerator|CLK_SYS_RTC_OSC, /**< Real Time Clock. */
+DECL|CLK_SYS_HYB_OSC_16MHZ|enumerator|CLK_SYS_HYB_OSC_16MHZ = 1, /**< 16MHz Hybrid Oscillator Clock. */
+DECL|CLK_SYS_HYB_OSC_32MHZ|enumerator|CLK_SYS_HYB_OSC_32MHZ = 0, /**< 32MHz Hybrid Oscillator Clock. */
+DECL|CLK_SYS_HYB_OSC_4MHZ|enumerator|CLK_SYS_HYB_OSC_4MHZ = 3, /**< 4MHz Hybrid Oscillator Clock. */
+DECL|CLK_SYS_HYB_OSC_8MHZ|enumerator|CLK_SYS_HYB_OSC_8MHZ = 2, /**< 8MHz Hybrid Oscillator Clock. */
+DECL|CLK_SYS_RTC_OSC|enumerator|CLK_SYS_RTC_OSC = 4, /**< Real Time Clock. */
 DECL|SYS_TICKS_PER_US_16MHZ|macro|SYS_TICKS_PER_US_16MHZ
 DECL|SYS_TICKS_PER_US_32MHZ|macro|SYS_TICKS_PER_US_32MHZ
 DECL|SYS_TICKS_PER_US_4MHZ|macro|SYS_TICKS_PER_US_4MHZ

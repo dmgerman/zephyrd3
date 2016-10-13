@@ -1,4 +1,5 @@
 DECL|__QM_COMPARATOR_H__|macro|__QM_COMPARATOR_H__
+DECL|ar_pad|member|uint32_t ar_pad;
 DECL|callback_data|member|void *callback_data; /**< Callback user data. */
 DECL|callback|member|void (*callback)(void *data, uint32_t int_status);
 DECL|int_en|member|uint32_t int_en; /**< Interrupt enable. */

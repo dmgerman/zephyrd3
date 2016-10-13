@@ -1,9 +1,10 @@
 DECL|CHANNEL_MASK_ALL|macro|CHANNEL_MASK_ALL
+DECL|LLP_LL_TO_BE_SET_MULTI_LL_CIRCULAR|macro|LLP_LL_TO_BE_SET_MULTI_LL_CIRCULAR
+DECL|LLP_LL_TO_BE_SET_MULTI_LL|macro|LLP_LL_TO_BE_SET_MULTI_LL
 DECL|ONE_MICROSECOND|macro|ONE_MICROSECOND
 DECL|QM_DMA_ADDRESS_DECREMENT|enumerator|QM_DMA_ADDRESS_DECREMENT = 0x1, /**< Decrement address. */
 DECL|QM_DMA_ADDRESS_INCREMENT|enumerator|QM_DMA_ADDRESS_INCREMENT = 0x0, /**< Increment address. */
 DECL|QM_DMA_ADDRESS_NO_CHANGE|enumerator|QM_DMA_ADDRESS_NO_CHANGE = 0x2 /**< Don't modify address. */
-DECL|QM_DMA_TYPE_SINGLE|enumerator|QM_DMA_TYPE_SINGLE = 0x0, /**< Single block mode. */
 DECL|STANDARD_TIMEOUT_MICROSECOND|macro|STANDARD_TIMEOUT_MICROSECOND
 DECL|UPDATE_REG_BITS|macro|UPDATE_REG_BITS
 DECL|__DMA_H_|macro|__DMA_H_
@@ -30,7 +31,9 @@ DECL|dma_set_source_burst_length|function|dma_set_source_burst_length(const qm_d
 DECL|dma_set_source_increment|function|dma_set_source_increment(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const qm_dma_address_increment_t address_increment)
 DECL|dma_set_source_transfer_width|function|dma_set_source_transfer_width(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const qm_dma_transfer_width_t transfer_width)
 DECL|dma_set_transfer_direction|function|dma_set_transfer_direction(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const qm_dma_channel_direction_t transfer_direction)
-DECL|dma_set_transfer_type|function|dma_set_transfer_type(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const dma_transfer_type_t transfer_type)
-DECL|dma_transfer_type_t|typedef|} dma_transfer_type_t;
-DECL|get_transfer_length|function|get_transfer_length(const qm_dma_t dma, const qm_dma_channel_id_t channel_id)
+DECL|dma_set_transfer_type|function|dma_set_transfer_type(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const qm_dma_transfer_type_t transfer_type, const qm_dma_channel_direction_t channel_direction)
+DECL|get_transfer_length|function|get_transfer_length(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const dma_cfg_prv_t *prv_cfg)
+DECL|lli_tail|member|qm_dma_linked_list_item_t *lli_tail;
+DECL|num_blocks_per_buffer|member|uint16_t num_blocks_per_buffer;
+DECL|num_blocks_remaining|member|uint16_t num_blocks_remaining;
 DECL|qm_dma_address_increment_t|typedef|} qm_dma_address_increment_t;

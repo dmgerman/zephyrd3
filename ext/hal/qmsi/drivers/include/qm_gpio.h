@@ -1,5 +1,5 @@
 DECL|QM_GPIO_HIGH|enumerator|QM_GPIO_HIGH, /**< GPIO high state. */
-DECL|QM_GPIO_LOW|enumerator|QM_GPIO_LOW, /**< GPIO low state. */
+DECL|QM_GPIO_LOW|enumerator|QM_GPIO_LOW = 0, /**< GPIO low state. */
 DECL|QM_GPIO_STATE_NUM|enumerator|QM_GPIO_STATE_NUM /**< Number of GPIO states. */
 DECL|__QM_GPIO_H__|macro|__QM_GPIO_H__
 DECL|callback_data|member|void *callback_data; /**< Callback user data. */

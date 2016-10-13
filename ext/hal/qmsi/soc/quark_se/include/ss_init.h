@@ -1,0 +1,1 @@
+DECL|__SS_INIT_H__|macro|__SS_INIT_H__

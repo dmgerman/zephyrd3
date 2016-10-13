@@ -1,0 +1,112 @@
+DECL|IS_IN_EP|macro|IS_IN_EP
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_usb_0_isr_0)
+DECL|QM_USB_CORE_RST_TIMEOUT_US|macro|QM_USB_CORE_RST_TIMEOUT_US
+DECL|QM_USB_DAINT_IN_EP_INT|macro|QM_USB_DAINT_IN_EP_INT
+DECL|QM_USB_DAINT_OUT_EP_INT|macro|QM_USB_DAINT_OUT_EP_INT
+DECL|QM_USB_DCFG_DEV_ADDR_MASK|macro|QM_USB_DCFG_DEV_ADDR_MASK
+DECL|QM_USB_DCFG_DEV_ADDR_OFFSET|macro|QM_USB_DCFG_DEV_ADDR_OFFSET
+DECL|QM_USB_DCFG_DEV_SPD_FS|macro|QM_USB_DCFG_DEV_SPD_FS
+DECL|QM_USB_DCFG_DEV_SPD_LS|macro|QM_USB_DCFG_DEV_SPD_LS
+DECL|QM_USB_DCTL_SFT_DISCON|macro|QM_USB_DCTL_SFT_DISCON
+DECL|QM_USB_DEPCTL0_MSP_16|macro|QM_USB_DEPCTL0_MSP_16
+DECL|QM_USB_DEPCTL0_MSP_32|macro|QM_USB_DEPCTL0_MSP_32
+DECL|QM_USB_DEPCTL0_MSP_64|macro|QM_USB_DEPCTL0_MSP_64
+DECL|QM_USB_DEPCTL0_MSP_8|macro|QM_USB_DEPCTL0_MSP_8
+DECL|QM_USB_DEPCTL0_MSP_MASK|macro|QM_USB_DEPCTL0_MSP_MASK
+DECL|QM_USB_DEPCTL_CNAK|macro|QM_USB_DEPCTL_CNAK
+DECL|QM_USB_DEPCTL_EP_DIS|macro|QM_USB_DEPCTL_EP_DIS
+DECL|QM_USB_DEPCTL_EP_ENA|macro|QM_USB_DEPCTL_EP_ENA
+DECL|QM_USB_DEPCTL_EP_TYPE_BULK|macro|QM_USB_DEPCTL_EP_TYPE_BULK
+DECL|QM_USB_DEPCTL_EP_TYPE_CONTROL|macro|QM_USB_DEPCTL_EP_TYPE_CONTROL
+DECL|QM_USB_DEPCTL_EP_TYPE_INTERRUPT|macro|QM_USB_DEPCTL_EP_TYPE_INTERRUPT
+DECL|QM_USB_DEPCTL_EP_TYPE_ISO|macro|QM_USB_DEPCTL_EP_TYPE_ISO
+DECL|QM_USB_DEPCTL_EP_TYPE_MASK|macro|QM_USB_DEPCTL_EP_TYPE_MASK
+DECL|QM_USB_DEPCTL_EP_TYPE_OFFSET|macro|QM_USB_DEPCTL_EP_TYPE_OFFSET
+DECL|QM_USB_DEPCTL_MSP_OFFSET|macro|QM_USB_DEPCTL_MSP_OFFSET
+DECL|QM_USB_DEPCTL_SETDOPID|macro|QM_USB_DEPCTL_SETDOPID
+DECL|QM_USB_DEPCTL_SNAK|macro|QM_USB_DEPCTL_SNAK
+DECL|QM_USB_DEPCTL_STALL|macro|QM_USB_DEPCTL_STALL
+DECL|QM_USB_DEPCTL_USB_ACT_EP|macro|QM_USB_DEPCTL_USB_ACT_EP
+DECL|QM_USB_DEPCTLn_MSP_MASK|macro|QM_USB_DEPCTLn_MSP_MASK
+DECL|QM_USB_DEPTSIZ0_XFER_SIZE_MASK|macro|QM_USB_DEPTSIZ0_XFER_SIZE_MASK
+DECL|QM_USB_DEPTSIZ_PKT_CNT_OFFSET|macro|QM_USB_DEPTSIZ_PKT_CNT_OFFSET
+DECL|QM_USB_DEPTSIZ_XFER_SIZE_OFFSET|macro|QM_USB_DEPTSIZ_XFER_SIZE_OFFSET
+DECL|QM_USB_DEPTSIZn_XFER_SIZE_MASK|macro|QM_USB_DEPTSIZn_XFER_SIZE_MASK
+DECL|QM_USB_DIEPINT_TX_FEMP|macro|QM_USB_DIEPINT_TX_FEMP
+DECL|QM_USB_DIEPINT_XFER_COMPL|macro|QM_USB_DIEPINT_XFER_COMPL
+DECL|QM_USB_DIEPINT_XFER_COMPL|macro|QM_USB_DIEPINT_XFER_COMPL
+DECL|QM_USB_DIEPTSIZ0_PKT_CNT_MASK|macro|QM_USB_DIEPTSIZ0_PKT_CNT_MASK
+DECL|QM_USB_DIEPTSIZn_PKT_CNT_MASK|macro|QM_USB_DIEPTSIZn_PKT_CNT_MASK
+DECL|QM_USB_DOEPINT_SET_UP|macro|QM_USB_DOEPINT_SET_UP
+DECL|QM_USB_DOEPINT_XFER_COMPL|macro|QM_USB_DOEPINT_XFER_COMPL
+DECL|QM_USB_DOEPTSIZ0_PKT_CNT_MASK|macro|QM_USB_DOEPTSIZ0_PKT_CNT_MASK
+DECL|QM_USB_DOEPTSIZ_SUP_CNT_MASK|macro|QM_USB_DOEPTSIZ_SUP_CNT_MASK
+DECL|QM_USB_DOEPTSIZ_SUP_CNT_OFFSET|macro|QM_USB_DOEPTSIZ_SUP_CNT_OFFSET
+DECL|QM_USB_DOEPTSIZn_PKT_CNT_MASK|macro|QM_USB_DOEPTSIZn_PKT_CNT_MASK
+DECL|QM_USB_DSTS_ENUM_FS|macro|QM_USB_DSTS_ENUM_FS
+DECL|QM_USB_DSTS_ENUM_LS|macro|QM_USB_DSTS_ENUM_LS
+DECL|QM_USB_DSTS_ENUM_SPD_MASK|macro|QM_USB_DSTS_ENUM_SPD_MASK
+DECL|QM_USB_DSTS_ENUM_SPD_OFFSET|macro|QM_USB_DSTS_ENUM_SPD_OFFSET
+DECL|QM_USB_DTXFSTS_TXF_SPC_AVAIL_MASK|macro|QM_USB_DTXFSTS_TXF_SPC_AVAIL_MASK
+DECL|QM_USB_EP_FIFO|macro|QM_USB_EP_FIFO
+DECL|QM_USB_EP_FIFO|macro|QM_USB_EP_FIFO
+DECL|QM_USB_GAHBCFG_DMA_EN|macro|QM_USB_GAHBCFG_DMA_EN
+DECL|QM_USB_GAHBCFG_GLB_INTR_MASK|macro|QM_USB_GAHBCFG_GLB_INTR_MASK
+DECL|QM_USB_GINTSTS_ENUM_DONE|macro|QM_USB_GINTSTS_ENUM_DONE
+DECL|QM_USB_GINTSTS_IEP_INT|macro|QM_USB_GINTSTS_IEP_INT
+DECL|QM_USB_GINTSTS_OEP_INT|macro|QM_USB_GINTSTS_OEP_INT
+DECL|QM_USB_GINTSTS_OTG_INT|macro|QM_USB_GINTSTS_OTG_INT
+DECL|QM_USB_GINTSTS_RX_FLVL|macro|QM_USB_GINTSTS_RX_FLVL
+DECL|QM_USB_GINTSTS_USB_RST|macro|QM_USB_GINTSTS_USB_RST
+DECL|QM_USB_GINTSTS_USB_SUSP|macro|QM_USB_GINTSTS_USB_SUSP
+DECL|QM_USB_GINTSTS_WK_UP_INT|macro|QM_USB_GINTSTS_WK_UP_INT
+DECL|QM_USB_GRSTCTL_AHB_IDLE|macro|QM_USB_GRSTCTL_AHB_IDLE
+DECL|QM_USB_GRSTCTL_C_SFT_RST|macro|QM_USB_GRSTCTL_C_SFT_RST
+DECL|QM_USB_GRSTCTL_TX_FFLSH|macro|QM_USB_GRSTCTL_TX_FFLSH
+DECL|QM_USB_GRSTCTL_TX_FNUM_OFFSET|macro|QM_USB_GRSTCTL_TX_FNUM_OFFSET
+DECL|QM_USB_GRXSTSR_EP_NUM_MASK|macro|QM_USB_GRXSTSR_EP_NUM_MASK
+DECL|QM_USB_GRXSTSR_PKT_CNT_MASK|macro|QM_USB_GRXSTSR_PKT_CNT_MASK
+DECL|QM_USB_GRXSTSR_PKT_CNT_OFFSET|macro|QM_USB_GRXSTSR_PKT_CNT_OFFSET
+DECL|QM_USB_GRXSTSR_PKT_STS_MASK|macro|QM_USB_GRXSTSR_PKT_STS_MASK
+DECL|QM_USB_GRXSTSR_PKT_STS_OFFSET|macro|QM_USB_GRXSTSR_PKT_STS_OFFSET
+DECL|QM_USB_GRXSTSR_PKT_STS_OUT_DATA_DONE|macro|QM_USB_GRXSTSR_PKT_STS_OUT_DATA_DONE
+DECL|QM_USB_GRXSTSR_PKT_STS_OUT_DATA|macro|QM_USB_GRXSTSR_PKT_STS_OUT_DATA
+DECL|QM_USB_GRXSTSR_PKT_STS_SETUP_DONE|macro|QM_USB_GRXSTSR_PKT_STS_SETUP_DONE
+DECL|QM_USB_GRXSTSR_PKT_STS_SETUP|macro|QM_USB_GRXSTSR_PKT_STS_SETUP
+DECL|QM_USB_PLL_TIMEOUT_US|macro|QM_USB_PLL_TIMEOUT_US
+DECL|QM_USB_SUP_CNT|macro|QM_USB_SUP_CNT
+DECL|attached|member|bool attached;
+DECL|data_len|member|uint32_t data_len;
+DECL|enabled|member|bool enabled;
+DECL|ep_config|member|const qm_usb_ep_config_t *ep_config;
+DECL|ep_ctrl|member|usb_ep_priv_t ep_ctrl[QM_USB_IN_EP_NUM + QM_USB_OUT_EP_NUM];
+DECL|handle_in_ep_intr|function|static __inline__ void handle_in_ep_intr(const qm_usb_t usb)
+DECL|handle_out_ep_intr|function|static __inline__ void handle_out_ep_intr(const qm_usb_t usb)
+DECL|handle_rx_fifo|function|static __inline__ void handle_rx_fifo(const qm_usb_t usb)
+DECL|qm_usb_attach|function|int qm_usb_attach(const qm_usb_t usb)
+DECL|qm_usb_detach|function|int qm_usb_detach(const qm_usb_t usb)
+DECL|qm_usb_ep_disable|function|int qm_usb_ep_disable(const qm_usb_t usb, const qm_usb_ep_idx_t ep)
+DECL|qm_usb_ep_enable|function|int qm_usb_ep_enable(const qm_usb_t usb, const qm_usb_ep_idx_t ep)
+DECL|qm_usb_ep_flush|function|int qm_usb_ep_flush(const qm_usb_t usb, const qm_usb_ep_idx_t ep)
+DECL|qm_usb_ep_get_bytes_read|function|int qm_usb_ep_get_bytes_read(const qm_usb_t usb, const qm_usb_ep_idx_t ep, uint32_t *const read_bytes)
+DECL|qm_usb_ep_halt|function|int qm_usb_ep_halt(const qm_usb_t usb, const qm_usb_ep_idx_t ep)
+DECL|qm_usb_ep_is_stalled|function|int qm_usb_ep_is_stalled(const qm_usb_t usb, const qm_usb_ep_idx_t ep, bool *stalled)
+DECL|qm_usb_ep_read|function|int qm_usb_ep_read(const qm_usb_t usb, const qm_usb_ep_idx_t ep, uint8_t *const data, const uint32_t max_data_len, uint32_t *const read_bytes)
+DECL|qm_usb_ep_set_config|function|int qm_usb_ep_set_config(const qm_usb_t usb, const qm_usb_ep_config_t *const ep_cfg)
+DECL|qm_usb_ep_set_stall_state|function|int qm_usb_ep_set_stall_state(const qm_usb_t usb, const qm_usb_ep_idx_t ep, const bool is_stalled)
+DECL|qm_usb_ep_write|function|int qm_usb_ep_write(const qm_usb_t usb, const qm_usb_ep_idx_t ep, const uint8_t *const data, const uint32_t data_len, uint32_t *const ret_bytes)
+DECL|qm_usb_reset|function|int qm_usb_reset(const qm_usb_t usb)
+DECL|qm_usb_set_address|function|int qm_usb_set_address(const qm_usb_t usb, const uint8_t addr)
+DECL|qm_usb_set_status_callback|function|int qm_usb_set_status_callback(const qm_usb_t usb, const qm_usb_status_callback_t cb)
+DECL|status_callback|member|qm_usb_status_callback_t status_callback;
+DECL|usb_ctrl|variable|usb_ctrl
+DECL|usb_dc_ep_is_valid|function|static bool usb_dc_ep_is_valid(const qm_usb_ep_idx_t ep)
+DECL|usb_dc_handle_enum_done|function|static void usb_dc_handle_enum_done(const qm_usb_t usb)
+DECL|usb_dc_handle_reset|function|static void usb_dc_handle_reset(const qm_usb_t usb)
+DECL|usb_dc_isr_handler|function|static void usb_dc_isr_handler(const qm_usb_t usb)
+DECL|usb_dc_prep_rx|function|static void usb_dc_prep_rx(const qm_usb_t usb, const qm_usb_ep_idx_t ep, uint8_t setup)
+DECL|usb_dc_reset|function|static int usb_dc_reset(const qm_usb_t usb)
+DECL|usb_dc_tx|function|static int usb_dc_tx(const qm_usb_t usb, uint8_t ep, const uint8_t *const data, uint32_t data_len)
+DECL|usb_ep_priv_t|typedef|} usb_ep_priv_t;
+DECL|usb_priv_t|typedef|} usb_priv_t;
+DECL|user_data|member|void *user_data;
