@@ -19,6 +19,6 @@ DECL|k_sched_time_slice_set|function|void k_sched_time_slice_set(int32_t duratio
 DECL|k_sched_unlock|function|void k_sched_unlock(void)
 DECL|k_sleep|function|void k_sleep(int32_t duration)
 DECL|k_thread_priority_get|function|int k_thread_priority_get(k_tid_t thread)
-DECL|k_thread_priority_set|function|void k_thread_priority_set(struct k_thread *thread, int prio)
+DECL|k_thread_priority_set|function|void k_thread_priority_set(k_tid_t tid, int prio)
 DECL|k_wakeup|function|void k_wakeup(k_tid_t thread)
 DECL|k_yield|function|void k_yield(void)
