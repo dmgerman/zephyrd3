@@ -17,6 +17,8 @@ DECL|_SLIP_L2_CTX_TYPE|macro|_SLIP_L2_CTX_TYPE
 DECL|_SLIP_L2_CTX_TYPE|macro|_SLIP_L2_CTX_TYPE
 DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
+DECL|_SLIP_MTU|macro|_SLIP_MTU
+DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(struct slip_context *slip, const char *str, const uint8_t *packet, size_t length)
@@ -27,7 +29,6 @@ DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list *
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|ll_reserve|member|uint16_t ll_reserve; /* Reserve any space for link layer headers */
 DECL|mac_addr|member|uint8_t mac_addr[6];
-DECL|mtu|member|int mtu;
 DECL|multi_packets|member|uint16_t multi_packets;
 DECL|overflows|member|uint16_t overflows;
 DECL|process_msg|function|static void process_msg(struct slip_context *slip)
