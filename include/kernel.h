@@ -124,6 +124,7 @@ DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
 DECL|k_mbox|struct|struct k_mbox {
 DECL|k_mem_block|struct|struct k_mem_block {
+DECL|k_mem_map_num_free_get|function|static inline int k_mem_map_num_free_get(struct k_mem_map *map)
 DECL|k_mem_map_num_used_get|function|static inline int k_mem_map_num_used_get(struct k_mem_map *map)
 DECL|k_mem_map|struct|struct k_mem_map {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
