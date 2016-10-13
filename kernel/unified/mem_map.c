@@ -2,4 +2,4 @@ DECL|create_free_list|function|static void create_free_list(struct k_mem_map *ma
 DECL|init_mem_map_module|function|static int init_mem_map_module(struct device *dev)
 DECL|k_mem_map_alloc|function|int k_mem_map_alloc(struct k_mem_map *map, void **mem, int32_t timeout)
 DECL|k_mem_map_free|function|void k_mem_map_free(struct k_mem_map *map, void **mem)
-DECL|k_mem_map_init|function|void k_mem_map_init(struct k_mem_map *map, void *buffer, int block_size, int num_blocks)
+DECL|k_mem_map_init|function|void k_mem_map_init(struct k_mem_map *map, void *buffer, size_t block_size, uint32_t num_blocks)

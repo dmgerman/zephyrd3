@@ -83,8 +83,8 @@ DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|addr_in_pool|member|void *addr_in_pool;
 DECL|base|member|uint32_t *base, *next, *top;
 DECL|block_set|member|struct k_mem_pool_block_set *block_set;
-DECL|block_size|member|int block_size;
 DECL|block_size|member|int block_size; /* memory block size */
+DECL|block_size|member|size_t block_size;
 DECL|bufblock|member|char *bufblock;
 DECL|buffer_end|member|char *buffer_end;
 DECL|buffer_start|member|char *buffer_start;
@@ -124,8 +124,8 @@ DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
 DECL|k_mbox|struct|struct k_mbox {
 DECL|k_mem_block|struct|struct k_mem_block {
-DECL|k_mem_map_num_free_get|function|static inline int k_mem_map_num_free_get(struct k_mem_map *map)
-DECL|k_mem_map_num_used_get|function|static inline int k_mem_map_num_used_get(struct k_mem_map *map)
+DECL|k_mem_map_num_free_get|function|static inline uint32_t k_mem_map_num_free_get(struct k_mem_map *map)
+DECL|k_mem_map_num_used_get|function|static inline uint32_t k_mem_map_num_used_get(struct k_mem_map *map)
 DECL|k_mem_map|struct|struct k_mem_map {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
 DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
@@ -165,10 +165,10 @@ DECL|node|member|sys_dlist_t node;
 DECL|nr_of_block_sets|member|int nr_of_block_sets;
 DECL|nr_of_entries|member|int nr_of_entries; /* nr of quad block structures in the array */
 DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
-DECL|num_blocks|member|int num_blocks;
+DECL|num_blocks|member|uint32_t num_blocks;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_lock_state_changes|member|int num_lock_state_changes;
-DECL|num_used|member|int num_used;
+DECL|num_used|member|uint32_t num_used;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
 DECL|period|member|int32_t period;

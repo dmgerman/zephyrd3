@@ -185,7 +185,7 @@ DECL|task_id_get|macro|task_id_get
 DECL|task_malloc|macro|task_malloc
 DECL|task_mem_map_alloc|function|static inline int task_mem_map_alloc(kmemory_map_t map, void **mptr,int32_t timeout)
 DECL|task_mem_map_free|macro|task_mem_map_free
-DECL|task_mem_map_used_get|macro|task_mem_map_used_get
+DECL|task_mem_map_used_get|function|static inline int task_mem_map_used_get(kmemory_map_t map)
 DECL|task_mem_pool_alloc|function|static inline int task_mem_pool_alloc(struct k_block *blockptr, kmemory_pool_t pool_id, int reqsize, int32_t timeout)
 DECL|task_mem_pool_defragment|macro|task_mem_pool_defragment
 DECL|task_mem_pool_free|macro|task_mem_pool_free
