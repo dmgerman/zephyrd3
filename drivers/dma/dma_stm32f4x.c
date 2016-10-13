@@ -93,6 +93,7 @@ DECL|dma_stm32_config|function|static int dma_stm32_config(struct device *dev, u
 DECL|dma_stm32_config|struct|struct dma_stm32_config {
 DECL|dma_stm32_device|struct|static struct dma_stm32_device {
 DECL|dma_stm32_disable_chan|function|static int dma_stm32_disable_chan(struct dma_stm32_device *ddata, uint32_t channel)
+DECL|dma_stm32_dump_reg|function|static void dma_stm32_dump_reg(struct dma_stm32_device *ddata, uint32_t channel)
 DECL|dma_stm32_init|function|static int dma_stm32_init(struct device *dev)
 DECL|dma_stm32_irq_0|function|static void dma_stm32_irq_0(void *arg) { dma_stm32_irq_handler(arg, 0); }
 DECL|dma_stm32_irq_1|function|static void dma_stm32_irq_1(void *arg) { dma_stm32_irq_handler(arg, 1); }
