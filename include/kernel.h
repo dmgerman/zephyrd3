@@ -129,8 +129,8 @@ DECL|k_mem_map|struct|struct k_mem_map {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
 DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
 DECL|k_mem_pool|struct|struct k_mem_pool {
-DECL|k_msgq_num_free_get|function|static inline int k_msgq_num_free_get(struct k_msgq *q)
-DECL|k_msgq_num_used_get|function|static inline int k_msgq_num_used_get(struct k_msgq *q)
+DECL|k_msgq_num_free_get|function|static inline uint32_t k_msgq_num_free_get(struct k_msgq *q)
+DECL|k_msgq_num_used_get|function|static inline uint32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
 DECL|k_pipe|struct|struct k_pipe {
@@ -158,7 +158,7 @@ DECL|max_msgs|member|uint32_t max_msgs;
 DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory blocks */
 DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
 DECL|min_block_size|member|int min_block_size;
-DECL|msg_size|member|uint32_t msg_size;
+DECL|msg_size|member|size_t msg_size;
 DECL|next|member|uint32_t *base, *next, *top;
 DECL|node|member|sys_dlist_t node;
 DECL|nr_of_block_sets|member|int nr_of_block_sets;
