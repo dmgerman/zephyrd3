@@ -83,8 +83,8 @@ DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|addr_in_pool|member|void *addr_in_pool;
 DECL|base|member|uint32_t *base, *next, *top;
 DECL|block_set|member|struct k_mem_pool_block_set *block_set;
-DECL|block_size|member|int block_size; /* memory block size */
 DECL|block_size|member|size_t block_size;
+DECL|block_size|member|size_t block_size; /* memory block size */
 DECL|bufblock|member|char *bufblock;
 DECL|buffer_end|member|char *buffer_end;
 DECL|buffer_start|member|char *buffer_start;
@@ -154,17 +154,17 @@ DECL|k_work|struct|struct k_work {
 DECL|limit|member|unsigned int limit;
 DECL|list|member|void *list;
 DECL|lock_count|member|uint32_t lock_count;
-DECL|max_block_size|member|int max_block_size;
+DECL|max_block_size|member|size_t max_block_size;
 DECL|max_msgs|member|uint32_t max_msgs;
 DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory blocks */
 DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
-DECL|min_block_size|member|int min_block_size;
+DECL|min_block_size|member|size_t min_block_size;
 DECL|msg_size|member|size_t msg_size;
 DECL|next|member|uint32_t *base, *next, *top;
 DECL|node|member|sys_dlist_t node;
-DECL|nr_of_block_sets|member|int nr_of_block_sets;
-DECL|nr_of_entries|member|int nr_of_entries; /* nr of quad block structures in the array */
-DECL|nr_of_maxblocks|member|int nr_of_maxblocks;
+DECL|nr_of_block_sets|member|uint32_t nr_of_block_sets;
+DECL|nr_of_entries|member|uint32_t nr_of_entries; /* nr of quad block structures in the array */
+DECL|nr_of_maxblocks|member|uint32_t nr_of_maxblocks;
 DECL|num_blocks|member|uint32_t num_blocks;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_lock_state_changes|member|int num_lock_state_changes;
@@ -178,7 +178,7 @@ DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
-DECL|req_size|member|uint32_t req_size;
+DECL|req_size|member|size_t req_size;
 DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
 DECL|rx_source_thread|member|k_tid_t rx_source_thread;
 DECL|sem|member|struct k_sem sem;
