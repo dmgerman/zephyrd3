@@ -1,4 +1,5 @@
-DECL|MALLOC_ALIGN|macro|MALLOC_ALIGN
+DECL|_HEAP_MEM_POOL|macro|_HEAP_MEM_POOL
+DECL|_HEAP_MEM_POOL|macro|_HEAP_MEM_POOL
 DECL|_QUAD_BLOCK_ALLOCATED|macro|_QUAD_BLOCK_ALLOCATED
 DECL|_QUAD_BLOCK_AVAILABLE|macro|_QUAD_BLOCK_AVAILABLE
 DECL|block_waiters_check|function|static void block_waiters_check(struct k_mem_pool *pool)
@@ -7,8 +8,6 @@ DECL|defrag|function|static void defrag(struct k_mem_pool *pool, int start_block
 DECL|free_existing_block|function|static void free_existing_block(char *ptr, struct k_mem_pool *pool, int index)
 DECL|get_block_recursive|function|static char *get_block_recursive(struct k_mem_pool *pool, int index, int start_index)
 DECL|get_existing_block|function|static char *get_existing_block(struct k_mem_pool_block_set *block_set,int *unused_block_index)
-DECL|heap_mem_pool|variable|heap_mem_pool
-DECL|heap_mem_pool|variable|heap_mem_pool
 DECL|init_one_memory_pool|function|static void init_one_memory_pool(struct k_mem_pool *pool)
 DECL|init_static_pools|function|static int init_static_pools(struct device *unused)
 DECL|k_free|function|void k_free(void *ptr)
