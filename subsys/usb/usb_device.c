@@ -32,6 +32,10 @@ DECL|usb_dev_priv|struct|static struct usb_dev_priv {
 DECL|usb_dev|variable|usb_dev
 DECL|usb_disable|function|int usb_disable(void)
 DECL|usb_enable|function|int usb_enable(struct usb_cfg_data *config)
+DECL|usb_ep_clear_stall|function|int usb_ep_clear_stall(uint8_t ep)
+DECL|usb_ep_read_continue|function|int usb_ep_read_continue(uint8_t ep)
+DECL|usb_ep_read_wait|function|int usb_ep_read_wait(uint8_t ep, uint8_t *data, uint32_t max_data_len,uint32_t *ret_bytes)
+DECL|usb_ep_set_stall|function|int usb_ep_set_stall(uint8_t ep)
 DECL|usb_get_descriptor|function|static bool usb_get_descriptor(uint16_t type_index, uint16_t lang_id,int32_t *len, uint8_t **data)
 DECL|usb_handle_control_transfer|function|static void usb_handle_control_transfer(uint8_t ep,enum usb_dc_ep_cb_status_code ep_status)
 DECL|usb_handle_request|function|static bool usb_handle_request(struct usb_setup_packet *setup,int32_t *len, uint8_t **data)
