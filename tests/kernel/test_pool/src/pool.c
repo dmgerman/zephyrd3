@@ -27,6 +27,7 @@ DECL|poolBlockGetWaitTest|function|int poolBlockGetWaitTest(void)
 DECL|poolBlockGetWork|function|int poolBlockGetWork(char *string, poolBlockGetFunc_t func, TEST_CASE *tests, int nTests)
 DECL|poolDefragTest|function|int poolDefragTest(void)
 DECL|poolId|member|kmemory_pool_t poolId; /* pool ID */
+DECL|poolMallocTest|function|int poolMallocTest(void)
 DECL|poolMoveBlockFunc_t|typedef|typedef int (*poolMoveBlockFunc_t)(struct k_block *, kmemory_pool_t);
 DECL|rcode|member|int rcode; /* expected return code */
 DECL|size|member|int size; /* request size in bytes */
