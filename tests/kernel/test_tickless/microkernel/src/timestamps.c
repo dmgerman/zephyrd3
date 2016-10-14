@@ -42,3 +42,7 @@ DECL|_TimestampOpen|function|void _TimestampOpen(void)
 DECL|_TimestampRead|function|uint32_t _TimestampRead(void)
 DECL|_TimestampRead|function|uint32_t _TimestampRead(void)
 DECL|_TimestampRead|function|uint32_t _TimestampRead(void)
+DECL|rtc_device|variable|rtc_device
+DECL|timestamp_close|function|void timestamp_close(void)
+DECL|timestamp_open|function|void timestamp_open(void)
+DECL|timestamp_read|function|uint32_t timestamp_read(void)
