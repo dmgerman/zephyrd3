@@ -179,8 +179,8 @@ DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
 DECL|rx_source_thread|member|k_tid_t rx_source_thread;
 DECL|sem|member|struct k_sem sem;
 DECL|send_count|member|atomic_t send_count;
+DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
-DECL|size|member|uint32_t size;
 DECL|stack_size|member|unsigned stack_size;
 DECL|stack|member|char *stack;
 DECL|stop_handler_arg|member|void *stop_handler_arg;
