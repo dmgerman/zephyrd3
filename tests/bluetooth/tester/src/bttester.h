@@ -20,11 +20,13 @@ DECL|GAP_DEVICE_FOUND_FLAG_SD|macro|GAP_DEVICE_FOUND_FLAG_SD
 DECL|GAP_DISCONNECT|macro|GAP_DISCONNECT
 DECL|GAP_DISCOVERY_FLAG_BREDR|macro|GAP_DISCOVERY_FLAG_BREDR
 DECL|GAP_DISCOVERY_FLAG_LE_ACTIVE_SCAN|macro|GAP_DISCOVERY_FLAG_LE_ACTIVE_SCAN
+DECL|GAP_DISCOVERY_FLAG_LE_OBSERVE|macro|GAP_DISCOVERY_FLAG_LE_OBSERVE
 DECL|GAP_DISCOVERY_FLAG_LE|macro|GAP_DISCOVERY_FLAG_LE
 DECL|GAP_DISCOVERY_FLAG_LIMITED|macro|GAP_DISCOVERY_FLAG_LIMITED
 DECL|GAP_EV_DEVICE_CONNECTED|macro|GAP_EV_DEVICE_CONNECTED
 DECL|GAP_EV_DEVICE_DISCONNECTED|macro|GAP_EV_DEVICE_DISCONNECTED
 DECL|GAP_EV_DEVICE_FOUND|macro|GAP_EV_DEVICE_FOUND
+DECL|GAP_EV_IDENTITY_RESOLVED|macro|GAP_EV_IDENTITY_RESOLVED
 DECL|GAP_EV_NEW_SETTINGS|macro|GAP_EV_NEW_SETTINGS
 DECL|GAP_EV_PASSKEY_CONFIRM_REQ|macro|GAP_EV_PASSKEY_CONFIRM_REQ
 DECL|GAP_EV_PASSKEY_DISPLAY|macro|GAP_EV_PASSKEY_DISPLAY
@@ -194,6 +196,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
@@ -224,6 +227,8 @@ DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
 DECL|address_type|member|uint8_t address_type;
+DECL|address_type|member|uint8_t address_type;
+DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
 DECL|address|member|uint8_t address[6];
@@ -337,6 +342,7 @@ DECL|gap_device_connected_ev|struct|struct gap_device_connected_ev {
 DECL|gap_device_disconnected_ev|struct|struct gap_device_disconnected_ev {
 DECL|gap_device_found_ev|struct|struct gap_device_found_ev {
 DECL|gap_disconnect_cmd|struct|struct gap_disconnect_cmd {
+DECL|gap_identity_resolved_ev|struct|struct gap_identity_resolved_ev {
 DECL|gap_new_settings_ev|struct|struct gap_new_settings_ev {
 DECL|gap_pair_cmd|struct|struct gap_pair_cmd {
 DECL|gap_passkey_confirm_cmd|struct|struct gap_passkey_confirm_cmd {
@@ -409,6 +415,8 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|identity_address_type|member|uint8_t identity_address_type;
+DECL|identity_address|member|uint8_t identity_address[6];
 DECL|id|member|uint8_t id;
 DECL|included_handle|member|uint16_t included_handle;
 DECL|included_service_id|member|uint16_t included_service_id;

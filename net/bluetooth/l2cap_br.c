@@ -22,11 +22,11 @@ DECL|L2CAP_FLAG_CONN_ACCEPTOR|enumerator|L2CAP_FLAG_CONN_ACCEPTOR, /* getting in
 DECL|L2CAP_FLAG_CONN_LCONF_DONE|enumerator|L2CAP_FLAG_CONN_LCONF_DONE, /* local config accepted by remote */
 DECL|L2CAP_FLAG_CONN_PENDING|enumerator|L2CAP_FLAG_CONN_PENDING, /* remote sent pending result in rsp */
 DECL|L2CAP_FLAG_CONN_RCONF_DONE|enumerator|L2CAP_FLAG_CONN_RCONF_DONE, /* remote config accepted by local */
+DECL|L2CAP_FLAG_FIXED_CONNECTED|enumerator|L2CAP_FLAG_FIXED_CONNECTED, /* fixed connected */
 DECL|L2CAP_FLAG_SIG_INFO_DONE|enumerator|L2CAP_FLAG_SIG_INFO_DONE, /* remote l2cap info is done */
 DECL|L2CAP_FLAG_SIG_INFO_PENDING|enumerator|L2CAP_FLAG_SIG_INFO_PENDING, /* retrieving remote l2cap info */
 DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|br_fixed_channels|variable|br_fixed_channels
-DECL|br_sc_supported|function|static bool br_sc_supported(void)
 DECL|br_servers|variable|br_servers
 DECL|br_sig|variable|br_sig
 DECL|bt_l2cap_br_chan_connect|function|int bt_l2cap_br_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
@@ -38,9 +38,14 @@ DECL|bt_l2cap_br_init|function|void bt_l2cap_br_init(void)
 DECL|bt_l2cap_br_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_br_lookup_rx_cid(struct bt_conn *conn,uint16_t cid)
 DECL|bt_l2cap_br_lookup_tx_cid|function|static struct bt_l2cap_chan *bt_l2cap_br_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|bt_l2cap_br_pool|variable|bt_l2cap_br_pool
+DECL|bt_l2cap_br_recv|function|void bt_l2cap_br_recv(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_br|struct|struct bt_l2cap_br {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
+DECL|check_fixed_channel|function|static void check_fixed_channel(struct bt_l2cap_chan *chan)
+DECL|connect_fixed_channel|function|static void connect_fixed_channel(struct bt_l2cap_br_chan *chan)
+DECL|connect_optional_fixed_channels|function|static void connect_optional_fixed_channels(struct bt_l2cap_br *l2cap)
+DECL|get_fixed_channels_mask|function|static uint8_t get_fixed_channels_mask(void)
 DECL|info_feat_mask|member|uint32_t info_feat_mask;
 DECL|info_fixed_chan|member|uint8_t info_fixed_chan;
 DECL|info_ident|member|uint8_t info_ident;

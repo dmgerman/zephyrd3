@@ -52,7 +52,7 @@ DECL|bt_pub_key_get|function|const uint8_t *bt_pub_key_get(void)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
-DECL|bt_storage_clear|function|int bt_storage_clear(bt_addr_le_t *addr)
+DECL|bt_storage_clear|function|int bt_storage_clear(const bt_addr_le_t *addr)
 DECL|bt_storage_register|function|void bt_storage_register(const struct bt_storage *storage)
 DECL|bt_storage|variable|bt_storage
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, uint8_t evtype)
@@ -142,6 +142,7 @@ DECL|report_discovery_results|function|static void report_discovery_results(void
 DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
 DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|uint8_t resolving;
+DECL|role_change|function|static void role_change(struct net_buf *buf)
 DECL|rpa_timeout|function|static void rpa_timeout(struct nano_work *work)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
