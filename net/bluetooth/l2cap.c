@@ -37,7 +37,7 @@ DECL|bt_l2cap|struct|struct bt_l2cap {
 DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|get_ident|function|static uint8_t get_ident(void)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
-DECL|l2cap_alloc_frag|function|static struct net_buf *l2cap_alloc_frag(struct bt_l2cap_le_chan *chan,uint16_t len)
+DECL|l2cap_alloc_frag|function|static struct net_buf *l2cap_alloc_frag(struct bt_l2cap_le_chan *chan)
 DECL|l2cap_chan_add|function|static bool l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|l2cap_chan_alloc_cid|function|static struct bt_l2cap_le_chan *l2cap_chan_alloc_cid(struct bt_conn *conn, struct bt_l2cap_chan *chan)
 DECL|l2cap_chan_create_seg|function|static struct net_buf *l2cap_chan_create_seg(struct bt_l2cap_le_chan *ch, struct net_buf *buf, size_t sdu_hdr_len)
