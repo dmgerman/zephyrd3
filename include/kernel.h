@@ -66,6 +66,7 @@ DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
+DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|__ticks_to_ms|function|static int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
@@ -114,7 +115,7 @@ DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
-DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work, int ticks)
+DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work, int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
 DECL|k_event_handler_t|typedef|typedef int (*k_event_handler_t)(struct k_event *);
 DECL|k_event|struct|struct k_event {

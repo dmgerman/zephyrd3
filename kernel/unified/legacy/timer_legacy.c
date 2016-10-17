@@ -1,3 +1,4 @@
+DECL|_legacy_sleep|function|void _legacy_sleep(int32_t ticks)
 DECL|_timer_pool_is_empty|function|bool _timer_pool_is_empty(void)
 DECL|dynamic_timers|variable|dynamic_timers
 DECL|init_dyamic_timers|function|static int init_dyamic_timers(struct device *dev)

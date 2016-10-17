@@ -41,7 +41,7 @@ DECL|fiber_fiber_wakeup|macro|fiber_fiber_wakeup
 DECL|fiber_float_disable|macro|fiber_float_disable
 DECL|fiber_float_enable|macro|fiber_float_enable
 DECL|fiber_sem_give|macro|fiber_sem_give
-DECL|fiber_sleep|function|static inline void fiber_sleep(int32_t timeout)
+DECL|fiber_sleep|macro|fiber_sleep
 DECL|fiber_start_config|macro|fiber_start_config
 DECL|fiber_start|function|static inline nano_thread_id_t fiber_start(char *stack, unsigned stack_size,nano_fiber_entry_t entry, int arg1, int arg2, unsigned prio, unsigned options)
 DECL|fiber_wakeup|macro|fiber_wakeup
