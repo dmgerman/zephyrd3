@@ -43,7 +43,9 @@ DECL|obj_init_type|macro|obj_init_type
 DECL|orig_packet|variable|orig_packet
 DECL|packet|struct|struct packet {
 DECL|phil_obj_abstract__h|macro|phil_obj_abstract__h
+DECL|stack_mem|member|uint32_t stack_mem[1];
 DECL|stacks|variable|stacks
+DECL|stack|member|struct k_stack stack;
 DECL|take|macro|take
 DECL|take|macro|take
 DECL|take|macro|take
