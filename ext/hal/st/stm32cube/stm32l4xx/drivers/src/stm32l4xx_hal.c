@@ -1,0 +1,43 @@
+DECL|BRER_BitNumber|macro|BRER_BitNumber
+DECL|FB_MODE_BB|macro|FB_MODE_BB
+DECL|FB_MODE_BitNumber|macro|FB_MODE_BitNumber
+DECL|HAL_DBGMCU_DisableDBGSleepMode|function|void HAL_DBGMCU_DisableDBGSleepMode(void)
+DECL|HAL_DBGMCU_DisableDBGStandbyMode|function|void HAL_DBGMCU_DisableDBGStandbyMode(void)
+DECL|HAL_DBGMCU_DisableDBGStopMode|function|void HAL_DBGMCU_DisableDBGStopMode(void)
+DECL|HAL_DBGMCU_EnableDBGSleepMode|function|void HAL_DBGMCU_EnableDBGSleepMode(void)
+DECL|HAL_DBGMCU_EnableDBGStandbyMode|function|void HAL_DBGMCU_EnableDBGStandbyMode(void)
+DECL|HAL_DBGMCU_EnableDBGStopMode|function|void HAL_DBGMCU_EnableDBGStopMode(void)
+DECL|HAL_DeInit|function|HAL_StatusTypeDef HAL_DeInit(void)
+DECL|HAL_Delay|function|__weak void HAL_Delay(uint32_t Delay)
+DECL|HAL_GetDEVID|function|uint32_t HAL_GetDEVID(void)
+DECL|HAL_GetHalVersion|function|uint32_t HAL_GetHalVersion(void)
+DECL|HAL_GetREVID|function|uint32_t HAL_GetREVID(void)
+DECL|HAL_GetTick|function|__weak uint32_t HAL_GetTick(void)
+DECL|HAL_IncTick|function|__weak void HAL_IncTick(void)
+DECL|HAL_InitTick|function|__weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+DECL|HAL_Init|function|HAL_StatusTypeDef HAL_Init(void)
+DECL|HAL_MspDeInit|function|__weak void HAL_MspDeInit(void)
+DECL|HAL_MspInit|function|__weak void HAL_MspInit(void)
+DECL|HAL_ResumeTick|function|__weak void HAL_ResumeTick(void)
+DECL|HAL_SYSCFG_DisableIOAnalogSwitchBooster|function|void HAL_SYSCFG_DisableIOAnalogSwitchBooster(void)
+DECL|HAL_SYSCFG_DisableMemorySwappingBank|function|void HAL_SYSCFG_DisableMemorySwappingBank(void)
+DECL|HAL_SYSCFG_DisableVREFBUF|function|void HAL_SYSCFG_DisableVREFBUF(void)
+DECL|HAL_SYSCFG_EnableIOAnalogSwitchBooster|function|void HAL_SYSCFG_EnableIOAnalogSwitchBooster(void)
+DECL|HAL_SYSCFG_EnableMemorySwappingBank|function|void HAL_SYSCFG_EnableMemorySwappingBank(void)
+DECL|HAL_SYSCFG_EnableVREFBUF|function|HAL_StatusTypeDef HAL_SYSCFG_EnableVREFBUF(void)
+DECL|HAL_SYSCFG_SRAM2Erase|function|void HAL_SYSCFG_SRAM2Erase(void)
+DECL|HAL_SYSCFG_VREFBUF_HighImpedanceConfig|function|void HAL_SYSCFG_VREFBUF_HighImpedanceConfig(uint32_t Mode)
+DECL|HAL_SYSCFG_VREFBUF_TrimmingConfig|function|void HAL_SYSCFG_VREFBUF_TrimmingConfig(uint32_t TrimmingValue)
+DECL|HAL_SYSCFG_VREFBUF_VoltageScalingConfig|function|void HAL_SYSCFG_VREFBUF_VoltageScalingConfig(uint32_t VoltageScaling)
+DECL|HAL_SuspendTick|function|__weak void HAL_SuspendTick(void)
+DECL|MEMRMP_OFFSET|macro|MEMRMP_OFFSET
+DECL|SCSR_OFFSET|macro|SCSR_OFFSET
+DECL|SCSR_SRAM2ER_BB|macro|SCSR_SRAM2ER_BB
+DECL|SYSCFG_OFFSET|macro|SYSCFG_OFFSET
+DECL|VREFBUF_TIMEOUT_VALUE|macro|VREFBUF_TIMEOUT_VALUE
+DECL|__STM32L4xx_HAL_VERSION_MAIN|macro|__STM32L4xx_HAL_VERSION_MAIN
+DECL|__STM32L4xx_HAL_VERSION_RC|macro|__STM32L4xx_HAL_VERSION_RC
+DECL|__STM32L4xx_HAL_VERSION_SUB1|macro|__STM32L4xx_HAL_VERSION_SUB1
+DECL|__STM32L4xx_HAL_VERSION_SUB2|macro|__STM32L4xx_HAL_VERSION_SUB2
+DECL|__STM32L4xx_HAL_VERSION|macro|__STM32L4xx_HAL_VERSION
+DECL|uwTick|variable|uwTick
