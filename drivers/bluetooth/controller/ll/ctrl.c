@@ -1,3 +1,4 @@
+DECL|FAST_ENC_PROCEDURE|macro|FAST_ENC_PROCEDURE
 DECL|OFFSET_M_MAX|macro|OFFSET_M_MAX
 DECL|OFFSET_S_MAX|macro|OFFSET_S_MAX
 DECL|QUICK_FIX_EXTRA_WINDOW|macro|QUICK_FIX_EXTRA_WINDOW
@@ -199,6 +200,7 @@ DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
 DECL|radio_length_req_send|function|uint32_t radio_length_req_send(uint16_t handle, uint16_t tx_octets)
 DECL|radio_rx_dequeue|function|void radio_rx_dequeue(void)
+DECL|radio_rx_fc_get|function|uint8_t radio_rx_fc_get(uint16_t *handle)
 DECL|radio_rx_fc_set|function|uint8_t radio_rx_fc_set(uint16_t handle, uint8_t fc)
 DECL|radio_rx_get|function|uint8_t radio_rx_get(struct radio_pdu_node_rx **radio_pdu_node_rx, uint16_t *handle)
 DECL|radio_rx_mem_release|function|void radio_rx_mem_release(struct radio_pdu_node_rx **radio_pdu_node_rx)
