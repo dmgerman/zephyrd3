@@ -43,6 +43,7 @@ DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *if
 DECL|net_if_ipv6_prefix_set_timer|function|void net_if_ipv6_prefix_set_timer(struct net_if_ipv6_prefix *prefix, uint32_t lifetime)
 DECL|net_if_ipv6_prefix_unset_timer|function|void net_if_ipv6_prefix_unset_timer(struct net_if_ipv6_prefix *prefix)
 DECL|net_if_ipv6_router_add|function|struct net_if_router *net_if_ipv6_router_add(struct net_if *iface, struct in6_addr *addr, uint16_t lifetime)
+DECL|net_if_ipv6_router_find_default|function|struct net_if_router *net_if_ipv6_router_find_default(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_router_lookup|function|struct net_if_router *net_if_ipv6_router_lookup(struct net_if *iface,struct in6_addr *addr)
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
 DECL|net_if_ipv6_unspecified_addr|function|const struct in6_addr *net_if_ipv6_unspecified_addr(void)
