@@ -47,6 +47,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|addr|member|struct ieee802154_address addr;
 DECL|addr|member|struct ieee802154_address addr;
 DECL|ar|member|uint16_t ar :1;
@@ -60,6 +61,8 @@ DECL|coordinator|member|uint16_t coordinator : 1;
 DECL|desc_count|member|uint8_t desc_count : 3;
 DECL|dst_addr_mode|member|uint16_t dst_addr_mode :2;
 DECL|dst_addr|member|struct ieee802154_address_field *dst_addr;
+DECL|dst|member|} dst;
+DECL|ext_addr|member|uint8_t *ext_addr;
 DECL|ext_addr|member|uint8_t ext_addr[0];
 DECL|fcs|member|uint16_t fcs;
 DECL|frame_pending|member|uint16_t frame_pending :1;
@@ -77,6 +80,7 @@ DECL|ieee802154_address|struct|struct ieee802154_address {
 DECL|ieee802154_beacon_sf|struct|struct ieee802154_beacon_sf {
 DECL|ieee802154_beacon|struct|struct ieee802154_beacon {
 DECL|ieee802154_fcf_seq|struct|struct ieee802154_fcf_seq {
+DECL|ieee802154_frame_params|struct|struct ieee802154_frame_params {
 DECL|ieee802154_frame_type|enum|enum ieee802154_frame_type {
 DECL|ieee802154_gts_dir|struct|struct ieee802154_gts_dir {
 DECL|ieee802154_gts_spec|struct|struct ieee802154_gts_spec {
@@ -87,12 +91,15 @@ DECL|ieee802154_mpdu|struct|struct ieee802154_mpdu {
 DECL|ieee802154_pas_spec|struct|struct ieee802154_pas_spec {
 DECL|ieee802154_version|enum|enum ieee802154_version {
 DECL|length|member|uint8_t length : 4;
+DECL|len|member|uint16_t len;
 DECL|mask|member|uint8_t mask : 7;
 DECL|mfr|member|struct ieee802154_mfr *mfr;
 DECL|mhr|member|struct ieee802154_mhr mhr;
 DECL|nb_eap|member|uint8_t nb_eap : 3;
 DECL|nb_sap|member|uint8_t nb_sap : 3;
 DECL|pan_id_comp|member|uint16_t pan_id_comp :1;
+DECL|pan_id|member|uint16_t pan_id;
+DECL|pan_id|member|uint16_t pan_id;
 DECL|pan_id|member|uint16_t pan_id;
 DECL|payload|member|void *payload;
 DECL|permit|member|uint8_t permit : 1;
@@ -109,6 +116,8 @@ DECL|sequence|member|uint8_t sequence;
 DECL|sf_order|member|uint16_t sf_order : 4;
 DECL|sf|member|struct ieee802154_beacon_sf sf;
 DECL|short_address|member|uint16_t short_address;
+DECL|short_addr|member|uint16_t short_addr;
+DECL|short_addr|member|uint16_t short_addr;
 DECL|short_addr|member|uint16_t short_addr;
 DECL|simple_addr|member|uint8_t simple_addr;
 DECL|src_addr_mode|member|uint16_t src_addr_mode :2;
