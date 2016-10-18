@@ -1,4 +1,5 @@
 DECL|NET_TCP_ACK|macro|NET_TCP_ACK
+DECL|NET_TCP_BUF_MAX_LEN|macro|NET_TCP_BUF_MAX_LEN
 DECL|NET_TCP_CLOSED|enumerator|NET_TCP_CLOSED = 0,
 DECL|NET_TCP_CLOSE_WAIT|enumerator|NET_TCP_CLOSE_WAIT,
 DECL|NET_TCP_CLOSING|enumerator|NET_TCP_CLOSING,
@@ -29,7 +30,6 @@ DECL|NET_TCP_WINDOW_HEADER|macro|NET_TCP_WINDOW_HEADER
 DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
 DECL|ack_timer|member|struct nano_delayed_work ack_timer;
-DECL|buf_max_len|member|uint32_t buf_max_len;
 DECL|context|member|struct net_context *context;
 DECL|flags|member|uint8_t flags;
 DECL|net_tcp_change_state|function|static inline void net_tcp_change_state(struct net_tcp *tcp,enum net_tcp_state new_state)
@@ -39,22 +39,13 @@ DECL|net_tcp_register|function|static inline int net_tcp_register(const struct s
 DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(void *handle)
 DECL|net_tcp|struct|struct net_tcp {
-DECL|prev_state|member|enum net_tcp_state prev_state;
 DECL|recv_ack|member|uint32_t recv_ack;
 DECL|recv_max_ack|member|uint32_t recv_max_ack;
 DECL|recv_mss|member|uint16_t recv_mss;
-DECL|recv_scale|member|uint8_t recv_scale;
 DECL|recv_wnd|member|uint32_t recv_wnd;
 DECL|recv|member|struct net_buf *recv;
 DECL|retransmit_timer|member|struct nano_delayed_work retransmit_timer;
 DECL|send_ack|member|uint32_t send_ack;
-DECL|send_cwnd|member|uint32_t send_cwnd;
-DECL|send_max_wnd|member|uint32_t send_max_wnd;
-DECL|send_mss|member|uint16_t send_mss;
-DECL|send_pcount|member|uint32_t send_pcount;
-DECL|send_scale|member|uint8_t send_scale;
 DECL|send_seq|member|uint32_t send_seq;
-DECL|send_ss_threshold|member|uint32_t send_ss_threshold;
-DECL|send_wnd|member|uint32_t send_wnd;
 DECL|send|member|struct net_buf *send;
 DECL|state|member|enum net_tcp_state state;
