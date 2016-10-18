@@ -133,6 +133,7 @@ DECL|ieee802154_disassociation_reason_field|enum|enum ieee802154_disassociation_
 DECL|ieee802154_fcf_seq|struct|struct ieee802154_fcf_seq {
 DECL|ieee802154_frame_params|struct|struct ieee802154_frame_params {
 DECL|ieee802154_frame_type|enum|enum ieee802154_frame_type {
+DECL|ieee802154_get_mac_command|function|struct ieee802154_command *ieee802154_get_mac_command(struct net_buf *buf)
 DECL|ieee802154_gts_dir|struct|struct ieee802154_gts_dir {
 DECL|ieee802154_gts_request|struct|struct ieee802154_gts_request {
 DECL|ieee802154_gts_spec|struct|struct ieee802154_gts_spec {
