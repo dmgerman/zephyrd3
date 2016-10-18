@@ -73,8 +73,6 @@ DECL|conn_addr_str|function|static void conn_addr_str(struct bt_conn *conn, char
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
-DECL|data_bredr_fifo|variable|data_bredr_fifo
-DECL|data_fifo|variable|data_fifo
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, struct net_buf_simple *buf)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)

@@ -2,7 +2,6 @@ DECL|BLE_GATT_MTU_SIZE|macro|BLE_GATT_MTU_SIZE
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|NBLE_BUF_SIZE|macro|NBLE_BUF_SIZE
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|__packed|variable|__packed
 DECL|attr_count|member|uint16_t attr_count;
 DECL|attr_read|function|static int attr_read(struct bt_gatt_attr *attr, uint8_t *data, size_t len)
@@ -65,7 +64,6 @@ DECL|parse_characteristic|function|static uint16_t parse_characteristic(struct b
 DECL|parse_descriptor|function|static uint16_t parse_descriptor(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|parse_include|function|static uint16_t parse_include(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
 DECL|parse_service|function|static uint16_t parse_service(struct bt_conn *conn, struct bt_gatt_discover_params *params, const uint8_t *data, uint8_t len)
-DECL|prep_data|variable|prep_data
 DECL|prep_write_evt|function|static int32_t prep_write_evt(const struct nble_gatts_write_evt *ev, const uint8_t *data, uint8_t len)
 DECL|properties|member|uint8_t properties;
 DECL|queue|variable|queue

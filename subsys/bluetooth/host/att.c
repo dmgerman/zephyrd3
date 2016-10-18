@@ -8,7 +8,6 @@ DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
 DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|att_chan_get|function|static struct bt_att *att_chan_get(struct bt_conn *conn)
 DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
 DECL|att_confirm|function|static uint8_t att_confirm(struct bt_att *att, struct net_buf *buf)
@@ -110,7 +109,6 @@ DECL|offset|member|uint16_t offset;
 DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|prep_data|struct|struct prep_data {
-DECL|prep_data|variable|prep_data
 DECL|prep_queue|member|struct k_fifo prep_queue;
 DECL|prep_write_cb|function|static uint8_t prep_write_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
@@ -120,10 +118,8 @@ DECL|read_group_cb|function|static uint8_t read_group_cb(const struct bt_gatt_at
 DECL|read_group_data|struct|struct read_group_data {
 DECL|read_type_cb|function|static uint8_t read_type_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|read_type_data|struct|struct read_type_data {
-DECL|req_data|variable|req_data
 DECL|reqs|member|sys_slist_t reqs;
 DECL|req|member|struct bt_att_req *req;
-DECL|rsp_data|variable|rsp_data
 DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;

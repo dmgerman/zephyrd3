@@ -2,7 +2,6 @@ DECL|AVDTP_CHAN|macro|AVDTP_CHAN
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|CONFIG_BLUETOOTH_AVDTP_CONN|macro|CONFIG_BLUETOOTH_AVDTP_CONN
-DECL|avdtp_sig|variable|avdtp_sig
 DECL|bt_avdtp_connect|function|int bt_avdtp_connect(struct bt_conn *conn, struct bt_avdtp *session)
 DECL|bt_avdtp_disconnect|function|int bt_avdtp_disconnect(struct bt_avdtp *session)
 DECL|bt_avdtp_init|function|int bt_avdtp_init(void)

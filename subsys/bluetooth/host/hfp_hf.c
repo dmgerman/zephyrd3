@@ -7,7 +7,6 @@ DECL|bt_hfp_hf_accept|function|static int bt_hfp_hf_accept(struct bt_conn *conn,
 DECL|bt_hfp_hf_pool|variable|bt_hfp_hf_pool
 DECL|bt_hfp_hf_register|function|int bt_hfp_hf_register(struct bt_hfp_hf_cb *cb)
 DECL|bt_hf|variable|bt_hf
-DECL|hf_fifo|variable|hf_fifo
 DECL|hf_slc_error|function|void hf_slc_error(struct at_client *hf_at)
 DECL|hf_slc_establish|function|int hf_slc_establish(struct bt_hfp_hf *hf)
 DECL|hfp_hf_connected|function|static void hfp_hf_connected(struct bt_rfcomm_dlc *dlc)

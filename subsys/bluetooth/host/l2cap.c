@@ -24,7 +24,7 @@ DECL|bt_l2cap_chan_set_state_debug|function|void bt_l2cap_chan_set_state_debug(s
 DECL|bt_l2cap_chan_set_state|function|void bt_l2cap_chan_set_state(struct bt_l2cap_chan *chan, bt_l2cap_chan_state_t state)
 DECL|bt_l2cap_chan_state_str|function|const char *bt_l2cap_chan_state_str(bt_l2cap_chan_state_t state)
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
-DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct k_fifo *fifo, size_t reserve)
+DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct net_buf_pool *pool, size_t reserve)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn, uint8_t hci_status)
 DECL|bt_l2cap_init|function|void bt_l2cap_init(void)
@@ -78,9 +78,7 @@ DECL|le_conn_param_update_req|function|static void le_conn_param_update_req(stru
 DECL|le_conn_req|function|static void le_conn_req(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
 DECL|le_conn_rsp|function|static void le_conn_rsp(struct bt_l2cap *l2cap, uint8_t ident,struct net_buf *buf)
 DECL|le_credits|function|static void le_credits(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
-DECL|le_data|variable|le_data
 DECL|le_disconn_req|function|static void le_disconn_req(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|le_disconn_rsp|function|static void le_disconn_rsp(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
-DECL|le_sig|variable|le_sig
 DECL|reject_cmd|function|static void reject_cmd(struct bt_l2cap *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|servers|variable|servers

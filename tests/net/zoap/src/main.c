@@ -27,6 +27,3 @@ DECL|test_parse_empty_pdu|function|static int test_parse_empty_pdu(void)
 DECL|test_parse_simple_pdu|function|static int test_parse_simple_pdu(void)
 DECL|test_retransmit_second_round|function|static int test_retransmit_second_round(void)
 DECL|tests|variable|tests
-DECL|zoap_data_fifo|variable|zoap_data_fifo
-DECL|zoap_limited_data_fifo|variable|zoap_limited_data_fifo
-DECL|zoap_nbuf_fifo|variable|zoap_nbuf_fifo

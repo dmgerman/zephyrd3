@@ -28,10 +28,7 @@ DECL|DEV_DATA|macro|DEV_DATA
 DECL|HIGH_BYTE|macro|HIGH_BYTE
 DECL|INTEL_VENDOR_ID|macro|INTEL_VENDOR_ID
 DECL|LOW_BYTE|macro|LOW_BYTE
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|PRODUCT_ID|macro|PRODUCT_ID
-DECL|avail_acl_tx|variable|avail_acl_tx
-DECL|avail_tx|variable|avail_tx
 DECL|btusb_bulk_in|function|static void btusb_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_bulk_out|function|static void btusb_bulk_out(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_class_handler|function|static int btusb_class_handler(struct usb_setup_packet *setup, int32_t *len, uint8_t **data)

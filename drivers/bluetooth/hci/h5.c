@@ -28,7 +28,6 @@ DECL|HCI_SCODATA_PKT|macro|HCI_SCODATA_PKT
 DECL|HCI_VENDOR_PKT|macro|HCI_VENDOR_PKT
 DECL|HEADER|enumerator|HEADER,
 DECL|INIT|enumerator|INIT,
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|PAYLOAD|enumerator|PAYLOAD,
 DECL|SIG_BUF_SIZE|macro|SIG_BUF_SIZE
 DECL|SLIP_DELIMITER|macro|SLIP_DELIMITER
@@ -54,7 +53,6 @@ DECL|h5_queue|function|static int h5_queue(struct net_buf *buf)
 DECL|h5_reset_rx|function|static void h5_reset_rx(void)
 DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
 DECL|h5_set_txwin|function|static void h5_set_txwin(uint8_t *conf)
-DECL|h5_sig|variable|h5_sig
 DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
 DECL|h5_unslip_byte|function|static int h5_unslip_byte(uint8_t *byte)
 DECL|h5|struct|static struct h5 {

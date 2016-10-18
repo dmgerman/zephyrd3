@@ -1,7 +1,3 @@
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|avail_acl_in|variable|avail_acl_in
-DECL|avail_hci_evt|variable|avail_hci_evt
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(void)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode)
 DECL|bt_dev|variable|bt_dev

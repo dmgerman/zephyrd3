@@ -6,12 +6,8 @@ DECL|H4_CMD|macro|H4_CMD
 DECL|H4_DISCARD_LEN|macro|H4_DISCARD_LEN
 DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
 DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
-DECL|avail_acl_tx|variable|avail_acl_tx
-DECL|avail_cmd_tx|variable|avail_cmd_tx
 DECL|bt_controller_assert_handle|function|void bt_controller_assert_handle(char *file, uint32_t line)
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|h4_acl_recv|function|static struct net_buf *h4_acl_recv(int *remaining)

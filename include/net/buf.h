@@ -1,18 +1,21 @@
 DECL|NET_BUF_FRAGS|macro|NET_BUF_FRAGS
-DECL|NET_BUF_POOL|macro|NET_BUF_POOL
+DECL|NET_BUF_POOL_DEFINE|macro|NET_BUF_POOL_DEFINE
+DECL|NET_BUF_POOL_INITIALIZER|macro|NET_BUF_POOL_INITIALIZER
 DECL|NET_BUF_SIMPLE|macro|NET_BUF_SIMPLE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
+DECL|__bufs|member|struct net_buf * const __bufs;
 DECL|__net_buf_align|macro|__net_buf_align
 DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
 DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
 DECL|_unused|member|int _unused;
+DECL|buf_count|member|const uint16_t buf_count;
 DECL|b|member|struct net_buf_simple b;
 DECL|data|member|uint8_t *data;
 DECL|data|member|uint8_t *data;
 DECL|destroy|member|void (*const destroy)(struct net_buf *buf);
 DECL|flags|member|uint8_t flags;
 DECL|frags|member|struct net_buf *frags;
-DECL|free|member|struct k_fifo * const free;
+DECL|free|member|struct k_fifo free;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
@@ -22,11 +25,11 @@ DECL|net_buf_add_le16|macro|net_buf_add_le16
 DECL|net_buf_add_le32|macro|net_buf_add_le32
 DECL|net_buf_add_u8|macro|net_buf_add_u8
 DECL|net_buf_add|macro|net_buf_add
+DECL|net_buf_alloc|macro|net_buf_alloc
 DECL|net_buf_frags_len|function|static inline size_t net_buf_frags_len(struct net_buf *buf)
-DECL|net_buf_get_timeout|macro|net_buf_get_timeout
 DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_headroom|macro|net_buf_headroom
-DECL|net_buf_pool_init|macro|net_buf_pool_init
+DECL|net_buf_pool|struct|struct net_buf_pool {
 DECL|net_buf_pull_be16|macro|net_buf_pull_be16
 DECL|net_buf_pull_be32|macro|net_buf_pull_be32
 DECL|net_buf_pull_le16|macro|net_buf_pull_le16
@@ -49,6 +52,7 @@ DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|offset|member|uint16_t offset;
+DECL|pool|member|struct net_buf_pool *pool;
 DECL|ref|member|uint8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;
 DECL|size|member|const uint16_t size;

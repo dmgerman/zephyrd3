@@ -4,19 +4,12 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
 DECL|auth_complete|function|static void auth_complete(struct net_buf *buf)
-DECL|avail_acl_in|variable|avail_acl_in
-DECL|avail_hci_cmd|variable|avail_hci_cmd
-DECL|avail_hci_evt|variable|avail_hci_evt
-DECL|avail_prio_hci_evt|variable|avail_prio_hci_evt
 DECL|br_init|function|static int br_init(void)
 DECL|br_init|function|static int br_init(void)
 DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_discovery_param *param, size_t num_rsp)

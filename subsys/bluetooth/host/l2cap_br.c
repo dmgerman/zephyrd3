@@ -29,7 +29,6 @@ DECL|L2CAP_FLAG_SIG_INFO_PENDING|enumerator|L2CAP_FLAG_SIG_INFO_PENDING, /* retr
 DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|br_fixed_channels|variable|br_fixed_channels
 DECL|br_servers|variable|br_servers
-DECL|br_sig|variable|br_sig
 DECL|bt_l2cap_br_chan_connect|function|int bt_l2cap_br_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
 DECL|bt_l2cap_br_chan_disconnect|function|int bt_l2cap_br_chan_disconnect(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_br_chan_send|function|int bt_l2cap_br_chan_send(struct bt_l2cap_chan *chan, struct net_buf *buf)

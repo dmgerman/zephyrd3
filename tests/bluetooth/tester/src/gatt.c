@@ -85,7 +85,6 @@ DECL|server_buf_pull|macro|server_buf_pull
 DECL|server_buf_push|macro|server_buf_push
 DECL|server_buf|variable|server_buf
 DECL|server_db|variable|server_db
-DECL|server_fifo|variable|server_fifo
 DECL|set_attr_enc_key_size|function|static int set_attr_enc_key_size(const struct bt_gatt_attr *attr, uint8_t key_size)
 DECL|set_cep_value|function|static uint8_t set_cep_value(struct bt_gatt_attr *attr, const void *value, const uint16_t len)
 DECL|set_enc_key_size|function|static void set_enc_key_size(uint8_t *data, uint16_t len)

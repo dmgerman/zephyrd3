@@ -1,8 +1,6 @@
 DECL|MQTT_BUF_CTR|macro|MQTT_BUF_CTR
 DECL|MSG_SIZE|macro|MSG_SIZE
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|mqtt_init|function|int mqtt_init(struct mqtt_ctx *ctx, enum mqtt_app app_type)
-DECL|mqtt_msg_fifo|variable|mqtt_msg_fifo
 DECL|mqtt_rx_connack|function|int mqtt_rx_connack(struct mqtt_ctx *ctx, struct net_buf *rx, int clean_session)
 DECL|mqtt_rx_pingresp|function|int mqtt_rx_pingresp(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_pub_msgs|function|int mqtt_rx_pub_msgs(struct mqtt_ctx *ctx, struct net_buf *rx, enum mqtt_packet type)

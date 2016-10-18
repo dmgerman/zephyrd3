@@ -11,14 +11,13 @@ DECL|RFCOMM_SECURITY_PASSED|enumerator|RFCOMM_SECURITY_PASSED,
 DECL|RFCOMM_SECURITY_PENDING|enumerator|RFCOMM_SECURITY_PENDING
 DECL|RFCOMM_SECURITY_REJECT|enumerator|RFCOMM_SECURITY_REJECT,
 DECL|RFCOMM_SESSION|macro|RFCOMM_SESSION
-DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct k_fifo *fifo)
+DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct net_buf_pool *pool)
 DECL|bt_rfcomm_dlc_connect|function|int bt_rfcomm_dlc_connect(struct bt_conn *conn, struct bt_rfcomm_dlc *dlc, uint8_t channel)
 DECL|bt_rfcomm_dlc_disconnect|function|int bt_rfcomm_dlc_disconnect(struct bt_rfcomm_dlc *dlc)
 DECL|bt_rfcomm_dlc_send|function|int bt_rfcomm_dlc_send(struct bt_rfcomm_dlc *dlc, struct net_buf *buf)
 DECL|bt_rfcomm_init|function|void bt_rfcomm_init(void)
 DECL|bt_rfcomm_pool|variable|bt_rfcomm_pool
 DECL|bt_rfcomm_server_register|function|int bt_rfcomm_server_register(struct bt_rfcomm_server *server)
-DECL|dummy|variable|dummy
 DECL|rfcomm_accept|function|static int rfcomm_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|rfcomm_calc_fcs|function|static uint8_t rfcomm_calc_fcs(uint16_t len, const uint8_t *data)
 DECL|rfcomm_check_fcs|function|static bool rfcomm_check_fcs(uint16_t len, const uint8_t *data, uint8_t recvd_fcs)
@@ -60,6 +59,5 @@ DECL|rfcomm_server_lookup_channel|function|static struct bt_rfcomm_server *rfcom
 DECL|rfcomm_session_disconnected|function|static void rfcomm_session_disconnected(struct bt_rfcomm_session *session)
 DECL|rfcomm_session_new|function|static struct bt_rfcomm_session *rfcomm_session_new(bt_rfcomm_role_t role)
 DECL|rfcomm_sessions_lookup_bt_conn|function|rfcomm_sessions_lookup_bt_conn(struct bt_conn *conn)
-DECL|rfcomm_session|variable|rfcomm_session
 DECL|security_result|enum|enum security_result {
 DECL|servers|variable|servers

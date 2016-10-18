@@ -1,7 +1,5 @@
 DECL|BUF_COUNT|macro|BUF_COUNT
 DECL|BUF_SIZE|macro|BUF_SIZE
-DECL|NET_BUF_POOL|variable|NET_BUF_POOL
-DECL|bufs_fifo|variable|bufs_fifo
 DECL|init_pool|function|static void init_pool(void)
 DECL|k_fifo_get|function|void *k_fifo_get(struct k_fifo *fifo, int32_t timeout)
 DECL|k_fifo_init|function|void k_fifo_init(struct k_fifo *fifo) {}

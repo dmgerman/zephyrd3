@@ -14,7 +14,6 @@ DECL|NET_BUF_CHECK_IF_IN_USE|macro|NET_BUF_CHECK_IF_IN_USE
 DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_BUF_CHECK_IF_NOT_IN_USE|macro|NET_BUF_CHECK_IF_NOT_IN_USE
 DECL|NET_DEBUG|macro|NET_DEBUG
-DECL|PRINT_CYCLE|macro|PRINT_CYCLE
 DECL|STRING2|macro|STRING2
 DECL|STRING2|macro|STRING2
 DECL|STRING|macro|STRING
@@ -32,11 +31,8 @@ DECL|dec_free_rx_bufs|macro|dec_free_rx_bufs
 DECL|dec_free_tx_bufs|function|static inline void dec_free_tx_bufs(struct net_buf *buf)
 DECL|dec_free_tx_bufs|macro|dec_free_tx_bufs
 DECL|free_data_bufs_func|function|static inline void free_data_bufs_func(struct net_buf *buf)
-DECL|free_data_bufs|variable|free_data_bufs
 DECL|free_rx_bufs_func|function|static inline void free_rx_bufs_func(struct net_buf *buf)
-DECL|free_rx_bufs|variable|free_rx_bufs
 DECL|free_tx_bufs_func|function|static inline void free_tx_bufs_func(struct net_buf *buf)
-DECL|free_tx_bufs|variable|free_tx_bufs
 DECL|get_frees|function|static inline int get_frees(enum net_nbuf_type type)
 DECL|inc_free_data_bufs_func|macro|inc_free_data_bufs_func
 DECL|inc_free_data_bufs_func|macro|inc_free_data_bufs_func
