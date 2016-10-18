@@ -1,5 +1,4 @@
-DECL|SCSS_SS_INT_MASK_BASE|macro|SCSS_SS_INT_MASK_BASE
-DECL|SCSS_SS_INT_MASK|macro|SCSS_SS_INT_MASK
+DECL|INTERRUPT_ROUTER_SS_INT_MASK_BASE|macro|INTERRUPT_ROUTER_SS_INT_MASK_BASE
 DECL|__ivt_vect_table|variable|__ivt_vect_table
 DECL|qm_ss_int_vector_request|function|void qm_ss_int_vector_request(uint32_t vector, qm_ss_isr_t isr)
 DECL|qm_ss_irq_disable|function|void qm_ss_irq_disable(void)

@@ -1,10 +1,6 @@
 DECL|FPR_VIOL_MODE_INTERRUPT|enumerator|FPR_VIOL_MODE_INTERRUPT = 0, /**< Generate interrupt on violation. */
 DECL|FPR_VIOL_MODE_PROBE|enumerator|FPR_VIOL_MODE_PROBE /**< Enter probe mode on violation. */
 DECL|FPR_VIOL_MODE_RESET|enumerator|FPR_VIOL_MODE_RESET, /**< Reset SoC on violation. */
-DECL|QM_FPR_0|enumerator|QM_FPR_0, /**< FPR 0. */
-DECL|QM_FPR_1|enumerator|QM_FPR_1, /**< FPR 1. */
-DECL|QM_FPR_2|enumerator|QM_FPR_2, /**< FPR 2. */
-DECL|QM_FPR_3|enumerator|QM_FPR_3, /**< FPR 3. */
 DECL|QM_FPR_AGENT_MASK_DMA|macro|QM_FPR_AGENT_MASK_DMA
 DECL|QM_FPR_AGENT_MASK_HOST|macro|QM_FPR_AGENT_MASK_HOST
 DECL|QM_FPR_AGENT_MASK_OTHER|macro|QM_FPR_AGENT_MASK_OTHER
@@ -23,7 +19,6 @@ DECL|QM_FPR_LOCK_ENABLE|enumerator|QM_FPR_LOCK_ENABLE /**< Enable FPR lock. */
 DECL|QM_FPR_LOCK|macro|QM_FPR_LOCK
 DECL|QM_FPR_LOW_BOUND_MASK|macro|QM_FPR_LOW_BOUND_MASK
 DECL|QM_FPR_MPR_VSTS_VALID|macro|QM_FPR_MPR_VSTS_VALID
-DECL|QM_FPR_NUM|enumerator|QM_FPR_NUM
 DECL|QM_FPR_OTHER_AGENTS|enumerator|QM_FPR_OTHER_AGENTS =
 DECL|QM_FPR_RD_ALLOW_MASK|macro|QM_FPR_RD_ALLOW_MASK
 DECL|QM_FPR_RD_ALLOW_OFFSET|macro|QM_FPR_RD_ALLOW_OFFSET
@@ -42,7 +37,6 @@ DECL|qm_flash_region_type_t|typedef|} qm_flash_region_type_t;
 DECL|qm_fpr_callback_t|typedef|typedef void (*qm_fpr_callback_t)(void *data);
 DECL|qm_fpr_config_t|typedef|} qm_fpr_config_t;
 DECL|qm_fpr_en_t|typedef|} qm_fpr_en_t;
-DECL|qm_fpr_id_t|typedef|} qm_fpr_id_t;
 DECL|qm_fpr_read_allow_t|typedef|} qm_fpr_read_allow_t;
 DECL|qm_fpr_viol_mode_t|typedef|} qm_fpr_viol_mode_t;
 DECL|up_bound|member|uint8_t up_bound; /**< 1KB-aligned upper Flash phys addr. */

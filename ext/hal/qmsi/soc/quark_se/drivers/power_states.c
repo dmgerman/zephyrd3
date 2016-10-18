@@ -1,5 +1,10 @@
 DECL|power_cpu_c1|function|void power_cpu_c1()
 DECL|power_cpu_c2lp|function|void power_cpu_c2lp()
 DECL|power_cpu_c2|function|void power_cpu_c2()
+DECL|power_sleep_wait|function|void power_sleep_wait()
+DECL|power_soc_deep_sleep_restore|function|void power_soc_deep_sleep_restore()
 DECL|power_soc_deep_sleep|function|void power_soc_deep_sleep()
+DECL|power_soc_set_x86_restore_flag|function|void power_soc_set_x86_restore_flag(void)
+DECL|power_soc_sleep_restore|function|void power_soc_sleep_restore()
 DECL|power_soc_sleep|function|void power_soc_sleep()
+DECL|sp_restore_storage|variable|sp_restore_storage

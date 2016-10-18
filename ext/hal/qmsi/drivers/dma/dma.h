@@ -1,6 +1,4 @@
 DECL|CHANNEL_MASK_ALL|macro|CHANNEL_MASK_ALL
-DECL|LLP_LL_TO_BE_SET_MULTI_LL_CIRCULAR|macro|LLP_LL_TO_BE_SET_MULTI_LL_CIRCULAR
-DECL|LLP_LL_TO_BE_SET_MULTI_LL|macro|LLP_LL_TO_BE_SET_MULTI_LL
 DECL|ONE_MICROSECOND|macro|ONE_MICROSECOND
 DECL|QM_DMA_ADDRESS_DECREMENT|enumerator|QM_DMA_ADDRESS_DECREMENT = 0x1, /**< Decrement address. */
 DECL|QM_DMA_ADDRESS_INCREMENT|enumerator|QM_DMA_ADDRESS_INCREMENT = 0x0, /**< Increment address. */
@@ -16,6 +14,7 @@ DECL|dma_channel_disable|function|static int dma_channel_disable(const qm_dma_t 
 DECL|dma_channel_enable|function|static __inline__ void dma_channel_enable(const qm_dma_t dma, const qm_dma_channel_id_t channel_id)
 DECL|dma_controller_disable|function|static __inline__ int dma_controller_disable(const qm_dma_t dma)
 DECL|dma_controller_enable|function|static __inline__ void dma_controller_enable(const qm_dma_t dma)
+DECL|dma_get_transfer_type|function|dma_get_transfer_type(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const dma_cfg_prv_t *prv_cfg)
 DECL|dma_interrupt_disable|function|dma_interrupt_disable(const qm_dma_t dma, const qm_dma_channel_id_t channel_id)
 DECL|dma_interrupt_enable|function|dma_interrupt_enable(const qm_dma_t dma, const qm_dma_channel_id_t channel_id)
 DECL|dma_set_block_size|function|static __inline__ void dma_set_block_size(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const uint32_t block_size)
@@ -37,3 +36,4 @@ DECL|lli_tail|member|qm_dma_linked_list_item_t *lli_tail;
 DECL|num_blocks_per_buffer|member|uint16_t num_blocks_per_buffer;
 DECL|num_blocks_remaining|member|uint16_t num_blocks_remaining;
 DECL|qm_dma_address_increment_t|typedef|} qm_dma_address_increment_t;
+DECL|transfer_type_ll_circular|member|bool transfer_type_ll_circular;

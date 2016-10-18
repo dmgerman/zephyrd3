@@ -10,7 +10,7 @@ DECL|MBOX_INT_LOCK_MASK|macro|MBOX_INT_LOCK_MASK
 DECL|MBOX_INT_LOCK_MASK|macro|MBOX_INT_LOCK_MASK
 DECL|MBOX_INT_MASK|macro|MBOX_INT_MASK
 DECL|MBOX_INT_MASK|macro|MBOX_INT_MASK
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_mbox_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_mailbox_0_isr)
 DECL|callback_data|member|void *callback_data;
 DECL|callback|member|qm_mbox_callback_t callback;
 DECL|dest|member|qm_mbox_destination_t dest;

@@ -25,6 +25,8 @@ DECL|qm_uart_irq_write|function|int qm_uart_irq_write(const qm_uart_t uart, cons
 DECL|qm_uart_isr_handler|function|static void qm_uart_isr_handler(const qm_uart_t uart)
 DECL|qm_uart_read_non_block|function|int qm_uart_read_non_block(const qm_uart_t uart, uint8_t *const data)
 DECL|qm_uart_read|function|int qm_uart_read(const qm_uart_t uart, uint8_t *const data, qm_uart_status_t *status)
+DECL|qm_uart_restore_context|function|int qm_uart_restore_context(const qm_uart_t uart, const qm_uart_context_t *const ctx)
+DECL|qm_uart_save_context|function|int qm_uart_save_context(const qm_uart_t uart, qm_uart_context_t *const ctx)
 DECL|qm_uart_set_config|function|int qm_uart_set_config(const qm_uart_t uart, const qm_uart_config_t *cfg)
 DECL|qm_uart_write_buffer|function|int qm_uart_write_buffer(const qm_uart_t uart, const uint8_t *const data, uint32_t len)
 DECL|qm_uart_write_non_block|function|int qm_uart_write_non_block(const qm_uart_t uart, const uint8_t data)

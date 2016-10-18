@@ -2,7 +2,7 @@ DECL|ADC_SAMPLE_SHIFT|macro|ADC_SAMPLE_SHIFT
 DECL|CALCULATE_DELAY|macro|CALCULATE_DELAY
 DECL|FIFO_INTERRUPT_THRESHOLD|macro|FIFO_INTERRUPT_THRESHOLD
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_adc_0_cal_isr)
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_adc_0_err_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_adc_0_error_isr)
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_adc_0_isr)
 DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_ss_adc_0_pwr_isr)
 DECL|QM_SS_ADC_CHAN_SEQ_MAX|macro|QM_SS_ADC_CHAN_SEQ_MAX
@@ -29,6 +29,8 @@ DECL|qm_ss_adc_isr_cal_handler|function|static void qm_ss_adc_isr_cal_handler(co
 DECL|qm_ss_adc_isr_err_handler|function|static void qm_ss_adc_isr_err_handler(const qm_ss_adc_t adc)
 DECL|qm_ss_adc_isr_handler|function|static void qm_ss_adc_isr_handler(const qm_ss_adc_t adc)
 DECL|qm_ss_adc_isr_pwr_handler|function|static void qm_ss_adc_isr_pwr_handler(const qm_ss_adc_t adc)
+DECL|qm_ss_adc_restore_context|function|int qm_ss_adc_restore_context(const qm_ss_adc_t adc, const qm_ss_adc_context_t *const ctx)
+DECL|qm_ss_adc_save_context|function|int qm_ss_adc_save_context(const qm_ss_adc_t adc, qm_ss_adc_context_t *const ctx)
 DECL|qm_ss_adc_set_calibration|function|int qm_ss_adc_set_calibration(const qm_ss_adc_t adc __attribute__((unused)), const qm_ss_adc_calibration_t cal_data)
 DECL|qm_ss_adc_set_config|function|int qm_ss_adc_set_config(const qm_ss_adc_t adc, const qm_ss_adc_config_t *const cfg)
 DECL|qm_ss_adc_set_mode|function|int qm_ss_adc_set_mode(const qm_ss_adc_t adc, const qm_ss_adc_mode_t mode)

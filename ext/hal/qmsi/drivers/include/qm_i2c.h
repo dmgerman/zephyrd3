@@ -5,13 +5,15 @@ DECL|QM_I2C_7_BIT|enumerator|QM_I2C_7_BIT = 0, /**< 7-bit mode. */
 DECL|QM_I2C_BUSY|enumerator|QM_I2C_BUSY = BIT(17), /**< Controller busy. */
 DECL|QM_I2C_FSP_50_DC_NS|macro|QM_I2C_FSP_50_DC_NS
 DECL|QM_I2C_FS_50_DC_NS|macro|QM_I2C_FS_50_DC_NS
+DECL|QM_I2C_GEN_CALL_DETECTED|enumerator|QM_I2C_GEN_CALL_DETECTED = BIT(26) /**< General call detected. */
 DECL|QM_I2C_IDLE|enumerator|QM_I2C_IDLE = 0, /**< Controller idle. */
 DECL|QM_I2C_MASTER|enumerator|QM_I2C_MASTER = 0, /**< Master mode. */
 DECL|QM_I2C_MIN_FSP_NS|macro|QM_I2C_MIN_FSP_NS
 DECL|QM_I2C_MIN_FS_NS|macro|QM_I2C_MIN_FS_NS
 DECL|QM_I2C_MIN_SS_NS|macro|QM_I2C_MIN_SS_NS
+DECL|QM_I2C_RX_FULL|enumerator|QM_I2C_RX_FULL = BIT(24), /**< RX buffer full. */
 DECL|QM_I2C_RX_OVER|enumerator|QM_I2C_RX_OVER = BIT(20), /**< Rx overflow. */
-DECL|QM_I2C_RX_UNDER|enumerator|QM_I2C_RX_UNDER = BIT(21) /**< Rx underflow. */
+DECL|QM_I2C_RX_UNDER|enumerator|QM_I2C_RX_UNDER = BIT(21), /**< Rx underflow. */
 DECL|QM_I2C_SLAVE_INTERRUPT_ALWAYS|enumerator|QM_I2C_SLAVE_INTERRUPT_ALWAYS = 0x0,
 DECL|QM_I2C_SLAVE_INTERRUPT_WHEN_ADDRESSED|enumerator|QM_I2C_SLAVE_INTERRUPT_WHEN_ADDRESSED = 0x1
 DECL|QM_I2C_SLAVE|enumerator|QM_I2C_SLAVE /**< Slave mode. */
@@ -19,6 +21,8 @@ DECL|QM_I2C_SPEED_FAST_PLUS|enumerator|QM_I2C_SPEED_FAST_PLUS = 3 /**< Fast plus
 DECL|QM_I2C_SPEED_FAST|enumerator|QM_I2C_SPEED_FAST = 2, /**< Fast mode (400 Kbps). */
 DECL|QM_I2C_SPEED_STD|enumerator|QM_I2C_SPEED_STD = 1, /**< Standard mode (100 Kbps). */
 DECL|QM_I2C_SS_50_DC_NS|macro|QM_I2C_SS_50_DC_NS
+DECL|QM_I2C_START_DETECTED|enumerator|QM_I2C_START_DETECTED = BIT(22), /**< Start or restart detected. */
+DECL|QM_I2C_STOP_DETECTED|enumerator|QM_I2C_STOP_DETECTED = BIT(25), /** Stop detected. */
 DECL|QM_I2C_TX_ABORT|enumerator|QM_I2C_TX_ABORT = BIT(18), /**< Tx abort. */
 DECL|QM_I2C_TX_ABRT_10ADDR1_NOACK|enumerator|QM_I2C_TX_ABRT_10ADDR1_NOACK = BIT(1), /**< 10-bit address noack. */
 DECL|QM_I2C_TX_ABRT_10ADDR2_NOACK|enumerator|QM_I2C_TX_ABRT_10ADDR2_NOACK = BIT(2),
@@ -36,6 +40,7 @@ DECL|QM_I2C_TX_ABRT_SLV_ARBLOST|enumerator|QM_I2C_TX_ABRT_SLV_ARBLOST = BIT(14),
 DECL|QM_I2C_TX_ABRT_TXDATA_NOACK|enumerator|QM_I2C_TX_ABRT_TXDATA_NOACK = BIT(3), /**< Tx data noack. */
 DECL|QM_I2C_TX_ABRT_USER_ABRT|enumerator|QM_I2C_TX_ABRT_USER_ABRT = BIT(16), /**< User abort. */
 DECL|QM_I2C_TX_ARB_LOST|enumerator|QM_I2C_TX_ARB_LOST = BIT(12), /**< Master lost arbitration. */
+DECL|QM_I2C_TX_EMPTY|enumerator|QM_I2C_TX_EMPTY = BIT(23), /**< TX buffer empty. */
 DECL|QM_I2C_TX_OVER|enumerator|QM_I2C_TX_OVER = BIT(19), /**< Tx overflow. */
 DECL|__QM_I2C_H__|macro|__QM_I2C_H__
 DECL|address_mode|member|qm_i2c_addr_t address_mode; /**< 7 bit or 10 bit addressing. */
@@ -54,6 +59,6 @@ DECL|rx|member|uint8_t *rx; /**< Read data. */
 DECL|slave_addr|member|uint16_t slave_addr; /**< I2C address when in slave mode. */
 DECL|speed|member|qm_i2c_speed_t speed; /**< Standard, fast or fast plus mode. */
 DECL|stop_detect_behaviour|member|qm_i2c_slave_stop_t stop_detect_behaviour;
-DECL|stop|member|bool stop; /**< Generate master STOP. */
+DECL|stop|member|bool stop;
 DECL|tx_len|member|uint32_t tx_len; /**< Write data length. */
 DECL|tx|member|uint8_t *tx; /**< Write data. */

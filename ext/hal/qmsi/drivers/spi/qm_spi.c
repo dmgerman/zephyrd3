@@ -25,6 +25,8 @@ DECL|qm_spi_dma_transfer|function|int qm_spi_dma_transfer(const qm_spi_t spi,con
 DECL|qm_spi_get_status|function|int qm_spi_get_status(const qm_spi_t spi, qm_spi_status_t *const status)
 DECL|qm_spi_irq_transfer_terminate|function|int qm_spi_irq_transfer_terminate(const qm_spi_t spi)
 DECL|qm_spi_irq_transfer|function|int qm_spi_irq_transfer(const qm_spi_t spi,const qm_spi_async_transfer_t *const xfer)
+DECL|qm_spi_restore_context|function|int qm_spi_restore_context(const qm_spi_t spi, const qm_spi_context_t *const ctx)
+DECL|qm_spi_save_context|function|int qm_spi_save_context(const qm_spi_t spi, qm_spi_context_t *const ctx)
 DECL|qm_spi_set_config|function|int qm_spi_set_config(const qm_spi_t spi, const qm_spi_config_t *cfg)
 DECL|qm_spi_slave_select|function|int qm_spi_slave_select(const qm_spi_t spi, const qm_spi_slave_select_t ss)
 DECL|qm_spi_transfer|function|int qm_spi_transfer(const qm_spi_t spi, const qm_spi_transfer_t *const xfer, qm_spi_status_t *const status)

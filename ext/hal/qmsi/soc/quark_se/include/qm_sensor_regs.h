@@ -44,18 +44,10 @@ DECL|QM_SS_ADC_SET|enumerator|QM_SS_ADC_SET = 0, /**< ADC and sequencer settings
 DECL|QM_SS_AUX_IC_CTRL|macro|QM_SS_AUX_IC_CTRL
 DECL|QM_SS_AUX_IC_IVIL|macro|QM_SS_AUX_IC_IVIL
 DECL|QM_SS_AUX_INT_VECTOR_BASE|macro|QM_SS_AUX_INT_VECTOR_BASE
-DECL|QM_SS_AUX_IRQ_CTRL|macro|QM_SS_AUX_IRQ_CTRL
-DECL|QM_SS_AUX_IRQ_ENABLE|macro|QM_SS_AUX_IRQ_ENABLE
-DECL|QM_SS_AUX_IRQ_HINT|macro|QM_SS_AUX_IRQ_HINT
-DECL|QM_SS_AUX_IRQ_PRIORITY|macro|QM_SS_AUX_IRQ_PRIORITY
-DECL|QM_SS_AUX_IRQ_SELECT|macro|QM_SS_AUX_IRQ_SELECT
-DECL|QM_SS_AUX_IRQ_STATUS|macro|QM_SS_AUX_IRQ_STATUS
-DECL|QM_SS_AUX_IRQ_TRIGGER|macro|QM_SS_AUX_IRQ_TRIGGER
 DECL|QM_SS_AUX_REGS_SIZE|macro|QM_SS_AUX_REGS_SIZE
 DECL|QM_SS_AUX_STATUS32|macro|QM_SS_AUX_STATUS32
 DECL|QM_SS_BASE_AUX_REGS_NUM|macro|QM_SS_BASE_AUX_REGS_NUM
 DECL|QM_SS_CREG_BASE|macro|QM_SS_CREG_BASE
-DECL|QM_SS_EXCEPTION_NUM|macro|QM_SS_EXCEPTION_NUM
 DECL|QM_SS_GPIO_0_BASE|macro|QM_SS_GPIO_0_BASE
 DECL|QM_SS_GPIO_0|enumerator|typedef enum { QM_SS_GPIO_0 = 0, QM_SS_GPIO_1, QM_SS_GPIO_NUM } qm_ss_gpio_t;
 DECL|QM_SS_GPIO_1_BASE|macro|QM_SS_GPIO_1_BASE
@@ -148,16 +140,6 @@ DECL|QM_SS_I2C_TX_ABRT_SOURCE_ALL_MASK|macro|QM_SS_I2C_TX_ABRT_SOURCE_ALL_MASK
 DECL|QM_SS_I2C_TX_ABRT_SOURCE_ART_LOST|macro|QM_SS_I2C_TX_ABRT_SOURCE_ART_LOST
 DECL|QM_SS_I2C_TX_ABRT_SOURCE_NAK_MASK|macro|QM_SS_I2C_TX_ABRT_SOURCE_NAK_MASK
 DECL|QM_SS_I2C_TX_ABRT_SOURCE|enumerator|QM_SS_I2C_TX_ABRT_SOURCE,
-DECL|QM_SS_INT_DISABLE|enumerator|typedef enum { QM_SS_INT_DISABLE = 0, QM_SS_INT_ENABLE = 1 } qm_ss_irq_mask_t;
-DECL|QM_SS_INT_ENABLE|enumerator|typedef enum { QM_SS_INT_DISABLE = 0, QM_SS_INT_ENABLE = 1 } qm_ss_irq_mask_t;
-DECL|QM_SS_INT_PRIORITY_0|enumerator|QM_SS_INT_PRIORITY_0 = 0,
-DECL|QM_SS_INT_PRIORITY_15|enumerator|QM_SS_INT_PRIORITY_15 = 15,
-DECL|QM_SS_INT_PRIORITY_1|enumerator|QM_SS_INT_PRIORITY_1 = 1,
-DECL|QM_SS_INT_PRIORITY_NUM|enumerator|QM_SS_INT_PRIORITY_NUM
-DECL|QM_SS_INT_TIMER_0|macro|QM_SS_INT_TIMER_0
-DECL|QM_SS_INT_TIMER_1|macro|QM_SS_INT_TIMER_1
-DECL|QM_SS_INT_TIMER_NUM|macro|QM_SS_INT_TIMER_NUM
-DECL|QM_SS_INT_VECTOR_NUM|macro|QM_SS_INT_VECTOR_NUM
 DECL|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_CMD_MASK|macro|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_CMD_MASK
 DECL|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_CMD_OFFSET|macro|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_CMD_OFFSET
 DECL|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_REQ|macro|QM_SS_IO_CREG_MST0_CTRL_ADC_CAL_REQ
@@ -180,47 +162,6 @@ DECL|QM_SS_IO_CREG_SLV0_OBSR_ADC_CAL_VAL_OFFSET|macro|QM_SS_IO_CREG_SLV0_OBSR_AD
 DECL|QM_SS_IO_CREG_SLV0_OBSR_ADC_PWR_MODE_STS|macro|QM_SS_IO_CREG_SLV0_OBSR_ADC_PWR_MODE_STS
 DECL|QM_SS_IO_CREG_SLV0_OBSR|enumerator|QM_SS_IO_CREG_SLV0_OBSR = 0x80, /**< Slave control register. */
 DECL|QM_SS_IO_CREG_SLV1_OBSR|enumerator|QM_SS_IO_CREG_SLV1_OBSR = 0x180 /**< Slave control register. */
-DECL|QM_SS_IRQ_ADC_ERR_VECTOR|macro|QM_SS_IRQ_ADC_ERR_VECTOR
-DECL|QM_SS_IRQ_ADC_ERR|macro|QM_SS_IRQ_ADC_ERR
-DECL|QM_SS_IRQ_ADC_IRQ_VECTOR|macro|QM_SS_IRQ_ADC_IRQ_VECTOR
-DECL|QM_SS_IRQ_ADC_IRQ|macro|QM_SS_IRQ_ADC_IRQ
-DECL|QM_SS_IRQ_COMMON_NUM|macro|QM_SS_IRQ_COMMON_NUM
-DECL|QM_SS_IRQ_EDGE_SENSITIVE|enumerator|QM_SS_IRQ_EDGE_SENSITIVE = 1
-DECL|QM_SS_IRQ_GPIO_INTR_0_VECTOR|macro|QM_SS_IRQ_GPIO_INTR_0_VECTOR
-DECL|QM_SS_IRQ_GPIO_INTR_0|macro|QM_SS_IRQ_GPIO_INTR_0
-DECL|QM_SS_IRQ_GPIO_INTR_1_VECTOR|macro|QM_SS_IRQ_GPIO_INTR_1_VECTOR
-DECL|QM_SS_IRQ_GPIO_INTR_1|macro|QM_SS_IRQ_GPIO_INTR_1
-DECL|QM_SS_IRQ_I2C_0_ERR_VECTOR|macro|QM_SS_IRQ_I2C_0_ERR_VECTOR
-DECL|QM_SS_IRQ_I2C_0_ERR|macro|QM_SS_IRQ_I2C_0_ERR
-DECL|QM_SS_IRQ_I2C_0_RX_AVAIL_VECTOR|macro|QM_SS_IRQ_I2C_0_RX_AVAIL_VECTOR
-DECL|QM_SS_IRQ_I2C_0_RX_AVAIL|macro|QM_SS_IRQ_I2C_0_RX_AVAIL
-DECL|QM_SS_IRQ_I2C_0_STOP_DET_VECTOR|macro|QM_SS_IRQ_I2C_0_STOP_DET_VECTOR
-DECL|QM_SS_IRQ_I2C_0_STOP_DET|macro|QM_SS_IRQ_I2C_0_STOP_DET
-DECL|QM_SS_IRQ_I2C_0_TX_REQ_VECTOR|macro|QM_SS_IRQ_I2C_0_TX_REQ_VECTOR
-DECL|QM_SS_IRQ_I2C_0_TX_REQ|macro|QM_SS_IRQ_I2C_0_TX_REQ
-DECL|QM_SS_IRQ_I2C_1_ERR_VECTOR|macro|QM_SS_IRQ_I2C_1_ERR_VECTOR
-DECL|QM_SS_IRQ_I2C_1_ERR|macro|QM_SS_IRQ_I2C_1_ERR
-DECL|QM_SS_IRQ_I2C_1_RX_AVAIL_VECTOR|macro|QM_SS_IRQ_I2C_1_RX_AVAIL_VECTOR
-DECL|QM_SS_IRQ_I2C_1_RX_AVAIL|macro|QM_SS_IRQ_I2C_1_RX_AVAIL
-DECL|QM_SS_IRQ_I2C_1_STOP_DET_VECTOR|macro|QM_SS_IRQ_I2C_1_STOP_DET_VECTOR
-DECL|QM_SS_IRQ_I2C_1_STOP_DET|macro|QM_SS_IRQ_I2C_1_STOP_DET
-DECL|QM_SS_IRQ_I2C_1_TX_REQ_VECTOR|macro|QM_SS_IRQ_I2C_1_TX_REQ_VECTOR
-DECL|QM_SS_IRQ_I2C_1_TX_REQ|macro|QM_SS_IRQ_I2C_1_TX_REQ
-DECL|QM_SS_IRQ_LEVEL_SENSITIVE|enumerator|QM_SS_IRQ_LEVEL_SENSITIVE = 0,
-DECL|QM_SS_IRQ_NUM|macro|QM_SS_IRQ_NUM
-DECL|QM_SS_IRQ_SENSOR_NUM|macro|QM_SS_IRQ_SENSOR_NUM
-DECL|QM_SS_IRQ_SPI_0_ERR_INT_VECTOR|macro|QM_SS_IRQ_SPI_0_ERR_INT_VECTOR
-DECL|QM_SS_IRQ_SPI_0_ERR_INT|macro|QM_SS_IRQ_SPI_0_ERR_INT
-DECL|QM_SS_IRQ_SPI_0_RX_AVAIL_VECTOR|macro|QM_SS_IRQ_SPI_0_RX_AVAIL_VECTOR
-DECL|QM_SS_IRQ_SPI_0_RX_AVAIL|macro|QM_SS_IRQ_SPI_0_RX_AVAIL
-DECL|QM_SS_IRQ_SPI_0_TX_REQ_VECTOR|macro|QM_SS_IRQ_SPI_0_TX_REQ_VECTOR
-DECL|QM_SS_IRQ_SPI_0_TX_REQ|macro|QM_SS_IRQ_SPI_0_TX_REQ
-DECL|QM_SS_IRQ_SPI_1_ERR_INT_VECTOR|macro|QM_SS_IRQ_SPI_1_ERR_INT_VECTOR
-DECL|QM_SS_IRQ_SPI_1_ERR_INT|macro|QM_SS_IRQ_SPI_1_ERR_INT
-DECL|QM_SS_IRQ_SPI_1_RX_AVAIL_VECTOR|macro|QM_SS_IRQ_SPI_1_RX_AVAIL_VECTOR
-DECL|QM_SS_IRQ_SPI_1_RX_AVAIL|macro|QM_SS_IRQ_SPI_1_RX_AVAIL
-DECL|QM_SS_IRQ_SPI_1_TX_REQ_VECTOR|macro|QM_SS_IRQ_SPI_1_TX_REQ_VECTOR
-DECL|QM_SS_IRQ_SPI_1_TX_REQ|macro|QM_SS_IRQ_SPI_1_TX_REQ
 DECL|QM_SS_PERIPH_AUX_REGS_BASE|macro|QM_SS_PERIPH_AUX_REGS_BASE
 DECL|QM_SS_PERIPH_AUX_REGS_SIZE|macro|QM_SS_PERIPH_AUX_REGS_SIZE
 DECL|QM_SS_REG_AUX_NAND|macro|QM_SS_REG_AUX_NAND
@@ -296,6 +237,8 @@ DECL|QM_SS_SPI_TIMING_SCKDV_MASK|macro|QM_SS_SPI_TIMING_SCKDV_MASK
 DECL|QM_SS_SPI_TIMING_SCKDV_OFFS|macro|QM_SS_SPI_TIMING_SCKDV_OFFS
 DECL|QM_SS_SPI_TIMING|enumerator|QM_SS_SPI_TIMING = 4, /**< SPI serial clock divider value. */
 DECL|QM_SS_SPI_TXFLR|enumerator|QM_SS_SPI_TXFLR = 7, /**< Number of valid data entries in TX FIFO. */
+DECL|QM_SS_STATUS32_E_MASK|macro|QM_SS_STATUS32_E_MASK
+DECL|QM_SS_STATUS32_IE_MASK|macro|QM_SS_STATUS32_IE_MASK
 DECL|QM_SS_TIMER_0_BASE|macro|QM_SS_TIMER_0_BASE
 DECL|QM_SS_TIMER_0|enumerator|typedef enum { QM_SS_TIMER_0 = 0, QM_SS_TIMER_NUM } qm_ss_timer_t;
 DECL|QM_SS_TIMER_1_BASE|macro|QM_SS_TIMER_1_BASE
@@ -317,18 +260,46 @@ DECL|__builtin_arc_lr|macro|__builtin_arc_lr
 DECL|__builtin_arc_nop|macro|__builtin_arc_nop
 DECL|__builtin_arc_seti|macro|__builtin_arc_seti
 DECL|__builtin_arc_sr|macro|__builtin_arc_sr
+DECL|adc_ctrl|member|uint32_t adc_ctrl; /**< ADC control. */
+DECL|adc_divseqstat|member|uint32_t adc_divseqstat; /**< ADC clock divider and sequencer status. */
+DECL|adc_seq|member|uint32_t adc_seq; /**< ADC sequencer entry. */
+DECL|adc_set|member|uint32_t adc_set; /**< ADC settings. */
+DECL|gpio_debounce|member|uint32_t gpio_debounce; /**< Debounce Enable. */
+DECL|gpio_int_polarity|member|uint32_t gpio_int_polarity; /**< Interrupt Polarity. */
+DECL|gpio_inten|member|uint32_t gpio_inten; /**< Interrupt Enable. */
+DECL|gpio_intmask|member|uint32_t gpio_intmask; /**< Interrupt Mask. */
+DECL|gpio_inttype_level|member|uint32_t gpio_inttype_level; /**< Interrupt Type. */
+DECL|gpio_ls_sync|member|uint32_t gpio_ls_sync; /**< Synchronization Level. */
+DECL|gpio_swporta_ddr|member|uint32_t gpio_swporta_ddr; /**< Port A Data Direction. */
+DECL|gpio_swporta_dr|member|uint32_t gpio_swporta_dr; /**< Port A Data. */
+DECL|i2c_con|member|uint32_t i2c_con;
+DECL|i2c_fs_scl_cnt|member|uint32_t i2c_fs_scl_cnt;
+DECL|i2c_ss_scl_cnt|member|uint32_t i2c_ss_scl_cnt;
+DECL|irq_config|member|uint8_t irq_config[QM_SS_INT_VECTOR_NUM - 1];
+DECL|irq_ctrl|member|uint32_t irq_ctrl; /**< Interrupt Context Saving Control Register. */
+DECL|qm_irq_context_t|typedef|} qm_irq_context_t;
+DECL|qm_ss_adc_context_t|typedef|} qm_ss_adc_context_t;
 DECL|qm_ss_adc_reg_t|typedef|} qm_ss_adc_reg_t;
 DECL|qm_ss_adc_t|typedef|} qm_ss_adc_t;
 DECL|qm_ss_creg_reg_t|typedef|} qm_ss_creg_reg_t;
+DECL|qm_ss_gpio_context_t|typedef|} qm_ss_gpio_context_t;
 DECL|qm_ss_gpio_reg_t|typedef|} qm_ss_gpio_reg_t;
 DECL|qm_ss_gpio_t|typedef|typedef enum { QM_SS_GPIO_0 = 0, QM_SS_GPIO_1, QM_SS_GPIO_NUM } qm_ss_gpio_t;
+DECL|qm_ss_i2c_context_t|typedef|} qm_ss_i2c_context_t;
 DECL|qm_ss_i2c_reg_t|typedef|} qm_ss_i2c_reg_t;
 DECL|qm_ss_i2c_t|typedef|typedef enum { QM_SS_I2C_0 = 0, QM_SS_I2C_1, QM_SS_I2C_NUM } qm_ss_i2c_t;
-DECL|qm_ss_irq_mask_t|typedef|typedef enum { QM_SS_INT_DISABLE = 0, QM_SS_INT_ENABLE = 1 } qm_ss_irq_mask_t;
-DECL|qm_ss_irq_priority_t|typedef|} qm_ss_irq_priority_t;
-DECL|qm_ss_irq_trigger_t|typedef|} qm_ss_irq_trigger_t;
+DECL|qm_ss_spi_context_t|typedef|} qm_ss_spi_context_t;
 DECL|qm_ss_spi_reg_t|typedef|} qm_ss_spi_reg_t;
 DECL|qm_ss_spi_t|typedef|} qm_ss_spi_t;
+DECL|qm_ss_timer_context_t|typedef|} qm_ss_timer_context_t;
 DECL|qm_ss_timer_reg_t|typedef|} qm_ss_timer_reg_t;
 DECL|qm_ss_timer_t|typedef|typedef enum { QM_SS_TIMER_0 = 0, QM_SS_TIMER_NUM } qm_ss_timer_t;
+DECL|spi_ctrl|member|uint32_t spi_ctrl; /**< Control Register. */
+DECL|spi_spien|member|uint32_t spi_spien; /**< SPI Enable Register. */
+DECL|spi_timing|member|uint32_t spi_timing; /**< Timing Register. */
+DECL|status32_irq_enable|member|uint32_t status32_irq_enable; /**< STATUS32 Interrupt Enable. */
+DECL|status32_irq_threshold|member|uint32_t status32_irq_threshold; /**< STATUS32 Interrupt Threshold. */
 DECL|test_sensor_aux|variable|test_sensor_aux
+DECL|timer_control|member|uint32_t timer_control; /**< Timer control. */
+DECL|timer_count|member|uint32_t timer_count; /**< Timer count. */
+DECL|timer_limit|member|uint32_t timer_limit; /**< Timer limit. */

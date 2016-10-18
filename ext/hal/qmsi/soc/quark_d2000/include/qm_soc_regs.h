@@ -35,6 +35,7 @@ DECL|DMA_HW_IF_UART_B_RX|enumerator|DMA_HW_IF_UART_B_RX = 0x3, /**< UART_B_RX */
 DECL|DMA_HW_IF_UART_B_TX|enumerator|DMA_HW_IF_UART_B_TX = 0x2, /**< UART_B_TX*/
 DECL|ER_DONE|macro|ER_DONE
 DECL|ER_REQ|macro|ER_REQ
+DECL|FIX_1|macro|FIX_1
 DECL|HAS_MVIC|macro|HAS_MVIC
 DECL|MASS_ERASE_INFO|macro|MASS_ERASE_INFO
 DECL|MASS_ERASE|macro|MASS_ERASE
@@ -209,6 +210,11 @@ DECL|QM_FLASH_WRITE_DISABLE_OFFSET|macro|QM_FLASH_WRITE_DISABLE_OFFSET
 DECL|QM_FLASH_WRITE_DISABLE_VAL|macro|QM_FLASH_WRITE_DISABLE_VAL
 DECL|QM_FLASH|macro|QM_FLASH
 DECL|QM_FLASH|macro|QM_FLASH
+DECL|QM_FPR_0|enumerator|QM_FPR_0, /**< FPR 0. */
+DECL|QM_FPR_1|enumerator|QM_FPR_1, /**< FPR 1. */
+DECL|QM_FPR_2|enumerator|QM_FPR_2, /**< FPR 2. */
+DECL|QM_FPR_3|enumerator|QM_FPR_3, /**< FPR 3. */
+DECL|QM_FPR_NUM|enumerator|QM_FPR_NUM
 DECL|QM_GPIO_0|enumerator|typedef enum { QM_GPIO_0 = 0, QM_GPIO_NUM } qm_gpio_t;
 DECL|QM_GPIO_BASE|macro|QM_GPIO_BASE
 DECL|QM_GPIO_NUM|enumerator|typedef enum { QM_GPIO_0 = 0, QM_GPIO_NUM } qm_gpio_t;
@@ -229,6 +235,7 @@ DECL|QM_I2C_IC_CON_SPEED_FS_FSP|macro|QM_I2C_IC_CON_SPEED_FS_FSP
 DECL|QM_I2C_IC_CON_SPEED_MASK|macro|QM_I2C_IC_CON_SPEED_MASK
 DECL|QM_I2C_IC_CON_SPEED_OFFSET|macro|QM_I2C_IC_CON_SPEED_OFFSET
 DECL|QM_I2C_IC_CON_SPEED_SS|macro|QM_I2C_IC_CON_SPEED_SS
+DECL|QM_I2C_IC_CON_STOP_DET_IFADDRESSED|macro|QM_I2C_IC_CON_STOP_DET_IFADDRESSED
 DECL|QM_I2C_IC_DATA_CMD_LSB_MASK|macro|QM_I2C_IC_DATA_CMD_LSB_MASK
 DECL|QM_I2C_IC_DATA_CMD_READ|macro|QM_I2C_IC_DATA_CMD_READ
 DECL|QM_I2C_IC_DATA_CMD_STOP_BIT_CTRL|macro|QM_I2C_IC_DATA_CMD_STOP_BIT_CTRL
@@ -239,7 +246,12 @@ DECL|QM_I2C_IC_ENABLE_CONTROLLER_EN|macro|QM_I2C_IC_ENABLE_CONTROLLER_EN
 DECL|QM_I2C_IC_ENABLE_STATUS_IC_EN|macro|QM_I2C_IC_ENABLE_STATUS_IC_EN
 DECL|QM_I2C_IC_HCNT_MAX|macro|QM_I2C_IC_HCNT_MAX
 DECL|QM_I2C_IC_HCNT_MIN|macro|QM_I2C_IC_HCNT_MIN
+DECL|QM_I2C_IC_INTR_MASK_ACTIVITY|macro|QM_I2C_IC_INTR_MASK_ACTIVITY
 DECL|QM_I2C_IC_INTR_MASK_ALL|macro|QM_I2C_IC_INTR_MASK_ALL
+DECL|QM_I2C_IC_INTR_MASK_GEN_CALL_DETECTED|macro|QM_I2C_IC_INTR_MASK_GEN_CALL_DETECTED
+DECL|QM_I2C_IC_INTR_MASK_RD_REQ|macro|QM_I2C_IC_INTR_MASK_RD_REQ
+DECL|QM_I2C_IC_INTR_MASK_RESTART_DETECTED|macro|QM_I2C_IC_INTR_MASK_RESTART_DETECTED
+DECL|QM_I2C_IC_INTR_MASK_RX_DONE|macro|QM_I2C_IC_INTR_MASK_RX_DONE
 DECL|QM_I2C_IC_INTR_MASK_RX_FULL|macro|QM_I2C_IC_INTR_MASK_RX_FULL
 DECL|QM_I2C_IC_INTR_MASK_RX_OVER|macro|QM_I2C_IC_INTR_MASK_RX_OVER
 DECL|QM_I2C_IC_INTR_MASK_RX_UNDER|macro|QM_I2C_IC_INTR_MASK_RX_UNDER
@@ -248,17 +260,25 @@ DECL|QM_I2C_IC_INTR_MASK_STOP_DETECTED|macro|QM_I2C_IC_INTR_MASK_STOP_DETECTED
 DECL|QM_I2C_IC_INTR_MASK_TX_ABORT|macro|QM_I2C_IC_INTR_MASK_TX_ABORT
 DECL|QM_I2C_IC_INTR_MASK_TX_EMPTY|macro|QM_I2C_IC_INTR_MASK_TX_EMPTY
 DECL|QM_I2C_IC_INTR_MASK_TX_OVER|macro|QM_I2C_IC_INTR_MASK_TX_OVER
+DECL|QM_I2C_IC_INTR_STAT_GEN_CALL_DETECTED|macro|QM_I2C_IC_INTR_STAT_GEN_CALL_DETECTED
+DECL|QM_I2C_IC_INTR_STAT_RD_REQ|macro|QM_I2C_IC_INTR_STAT_RD_REQ
+DECL|QM_I2C_IC_INTR_STAT_RX_DONE|macro|QM_I2C_IC_INTR_STAT_RX_DONE
 DECL|QM_I2C_IC_INTR_STAT_RX_FULL|macro|QM_I2C_IC_INTR_STAT_RX_FULL
 DECL|QM_I2C_IC_INTR_STAT_RX_OVER|macro|QM_I2C_IC_INTR_STAT_RX_OVER
 DECL|QM_I2C_IC_INTR_STAT_RX_UNDER|macro|QM_I2C_IC_INTR_STAT_RX_UNDER
+DECL|QM_I2C_IC_INTR_STAT_START_DETECTED|macro|QM_I2C_IC_INTR_STAT_START_DETECTED
+DECL|QM_I2C_IC_INTR_STAT_STOP_DETECTED|macro|QM_I2C_IC_INTR_STAT_STOP_DETECTED
 DECL|QM_I2C_IC_INTR_STAT_TX_ABRT|macro|QM_I2C_IC_INTR_STAT_TX_ABRT
 DECL|QM_I2C_IC_INTR_STAT_TX_EMPTY|macro|QM_I2C_IC_INTR_STAT_TX_EMPTY
 DECL|QM_I2C_IC_INTR_STAT_TX_OVER|macro|QM_I2C_IC_INTR_STAT_TX_OVER
 DECL|QM_I2C_IC_LCNT_MAX|macro|QM_I2C_IC_LCNT_MAX
 DECL|QM_I2C_IC_LCNT_MIN|macro|QM_I2C_IC_LCNT_MIN
+DECL|QM_I2C_IC_RAW_INTR_STAT_GEN_CALL|macro|QM_I2C_IC_RAW_INTR_STAT_GEN_CALL
+DECL|QM_I2C_IC_RAW_INTR_STAT_RESTART_DETECTED|macro|QM_I2C_IC_RAW_INTR_STAT_RESTART_DETECTED
 DECL|QM_I2C_IC_RAW_INTR_STAT_RX_FULL|macro|QM_I2C_IC_RAW_INTR_STAT_RX_FULL
 DECL|QM_I2C_IC_RAW_INTR_STAT_TX_ABRT|macro|QM_I2C_IC_RAW_INTR_STAT_TX_ABRT
 DECL|QM_I2C_IC_STATUS_BUSY_MASK|macro|QM_I2C_IC_STATUS_BUSY_MASK
+DECL|QM_I2C_IC_STATUS_RFF|macro|QM_I2C_IC_STATUS_RFF
 DECL|QM_I2C_IC_STATUS_RFNE|macro|QM_I2C_IC_STATUS_RFNE
 DECL|QM_I2C_IC_STATUS_TFE|macro|QM_I2C_IC_STATUS_TFE
 DECL|QM_I2C_IC_STATUS_TNF|macro|QM_I2C_IC_STATUS_TNF
@@ -270,75 +290,19 @@ DECL|QM_I2C_NUM|enumerator|typedef enum { QM_I2C_0 = 0, QM_I2C_NUM } qm_i2c_t;
 DECL|QM_I2C|macro|QM_I2C
 DECL|QM_I2C|macro|QM_I2C
 DECL|QM_INT_CONTROLLER|macro|QM_INT_CONTROLLER
-DECL|QM_INT_DMA_ERR_HOST_MASK|macro|QM_INT_DMA_ERR_HOST_MASK
-DECL|QM_INT_FLASH_CONTROLLER_HOST_HALT_MASK|macro|QM_INT_FLASH_CONTROLLER_HOST_HALT_MASK
-DECL|QM_INT_FLASH_CONTROLLER_HOST_MASK|macro|QM_INT_FLASH_CONTROLLER_HOST_MASK
-DECL|QM_INT_SRAM_CONTROLLER_HOST_HALT_MASK|macro|QM_INT_SRAM_CONTROLLER_HOST_HALT_MASK
-DECL|QM_INT_SRAM_CONTROLLER_HOST_MASK|macro|QM_INT_SRAM_CONTROLLER_HOST_MASK
-DECL|QM_INT_TIMER_HOST_HALT_MASK|macro|QM_INT_TIMER_HOST_HALT_MASK
-DECL|QM_INT_VECTOR_DOUBLE_FAULT|macro|QM_INT_VECTOR_DOUBLE_FAULT
 DECL|QM_IOAPIC_BASE|macro|QM_IOAPIC_BASE
 DECL|QM_IOAPIC|macro|QM_IOAPIC
 DECL|QM_IOAPIC|macro|QM_IOAPIC
-DECL|QM_IRQ_AC_MASK_OFFSET|macro|QM_IRQ_AC_MASK_OFFSET
-DECL|QM_IRQ_AC_VECTOR|macro|QM_IRQ_AC_VECTOR
-DECL|QM_IRQ_AC|macro|QM_IRQ_AC
-DECL|QM_IRQ_ADC_0_MASK_OFFSET|macro|QM_IRQ_ADC_0_MASK_OFFSET
-DECL|QM_IRQ_ADC_0_VECTOR|macro|QM_IRQ_ADC_0_VECTOR
-DECL|QM_IRQ_ADC_0|macro|QM_IRQ_ADC_0
-DECL|QM_IRQ_ADC_PWR_0_MASK_OFFSET|macro|QM_IRQ_ADC_PWR_0_MASK_OFFSET
-DECL|QM_IRQ_ADC_PWR_0_VECTOR|macro|QM_IRQ_ADC_PWR_0_VECTOR
-DECL|QM_IRQ_ADC_PWR_0|macro|QM_IRQ_ADC_PWR_0
-DECL|QM_IRQ_AONPT_0_MASK_OFFSET|macro|QM_IRQ_AONPT_0_MASK_OFFSET
-DECL|QM_IRQ_AONPT_0_VECTOR|macro|QM_IRQ_AONPT_0_VECTOR
-DECL|QM_IRQ_AONPT_0|macro|QM_IRQ_AONPT_0
-DECL|QM_IRQ_DMA_0_MASK_OFFSET|macro|QM_IRQ_DMA_0_MASK_OFFSET
-DECL|QM_IRQ_DMA_0_VECTOR|macro|QM_IRQ_DMA_0_VECTOR
-DECL|QM_IRQ_DMA_0|macro|QM_IRQ_DMA_0
-DECL|QM_IRQ_DMA_1_MASK_OFFSET|macro|QM_IRQ_DMA_1_MASK_OFFSET
-DECL|QM_IRQ_DMA_1_VECTOR|macro|QM_IRQ_DMA_1_VECTOR
-DECL|QM_IRQ_DMA_1|macro|QM_IRQ_DMA_1
-DECL|QM_IRQ_DMA_ERR_MASK_OFFSET|macro|QM_IRQ_DMA_ERR_MASK_OFFSET
-DECL|QM_IRQ_DMA_ERR_VECTOR|macro|QM_IRQ_DMA_ERR_VECTOR
-DECL|QM_IRQ_DMA_ERR|macro|QM_IRQ_DMA_ERR
-DECL|QM_IRQ_FLASH_0_MASK_OFFSET|macro|QM_IRQ_FLASH_0_MASK_OFFSET
-DECL|QM_IRQ_FLASH_0_VECTOR|macro|QM_IRQ_FLASH_0_VECTOR
-DECL|QM_IRQ_FLASH_0|macro|QM_IRQ_FLASH_0
-DECL|QM_IRQ_GPIO_0_MASK_OFFSET|macro|QM_IRQ_GPIO_0_MASK_OFFSET
-DECL|QM_IRQ_GPIO_0_VECTOR|macro|QM_IRQ_GPIO_0_VECTOR
-DECL|QM_IRQ_GPIO_0|macro|QM_IRQ_GPIO_0
-DECL|QM_IRQ_I2C_0_MASK_OFFSET|macro|QM_IRQ_I2C_0_MASK_OFFSET
-DECL|QM_IRQ_I2C_0_VECTOR|macro|QM_IRQ_I2C_0_VECTOR
-DECL|QM_IRQ_I2C_0|macro|QM_IRQ_I2C_0
-DECL|QM_IRQ_PIC_TIMER_MASK_OFFSET|macro|QM_IRQ_PIC_TIMER_MASK_OFFSET
-DECL|QM_IRQ_PIC_TIMER_VECTOR|macro|QM_IRQ_PIC_TIMER_VECTOR
-DECL|QM_IRQ_PIC_TIMER|macro|QM_IRQ_PIC_TIMER
-DECL|QM_IRQ_PWM_0_MASK_OFFSET|macro|QM_IRQ_PWM_0_MASK_OFFSET
-DECL|QM_IRQ_PWM_0_VECTOR|macro|QM_IRQ_PWM_0_VECTOR
-DECL|QM_IRQ_PWM_0|macro|QM_IRQ_PWM_0
-DECL|QM_IRQ_RTC_0_MASK_OFFSET|macro|QM_IRQ_RTC_0_MASK_OFFSET
-DECL|QM_IRQ_RTC_0_VECTOR|macro|QM_IRQ_RTC_0_VECTOR
-DECL|QM_IRQ_RTC_0|macro|QM_IRQ_RTC_0
-DECL|QM_IRQ_SPI_MASTER_0_MASK_OFFSET|macro|QM_IRQ_SPI_MASTER_0_MASK_OFFSET
-DECL|QM_IRQ_SPI_MASTER_0_VECTOR|macro|QM_IRQ_SPI_MASTER_0_VECTOR
-DECL|QM_IRQ_SPI_MASTER_0|macro|QM_IRQ_SPI_MASTER_0
-DECL|QM_IRQ_SRAM_MASK_OFFSET|macro|QM_IRQ_SRAM_MASK_OFFSET
-DECL|QM_IRQ_SRAM_VECTOR|macro|QM_IRQ_SRAM_VECTOR
-DECL|QM_IRQ_SRAM|macro|QM_IRQ_SRAM
-DECL|QM_IRQ_UART_0_MASK_OFFSET|macro|QM_IRQ_UART_0_MASK_OFFSET
-DECL|QM_IRQ_UART_0_VECTOR|macro|QM_IRQ_UART_0_VECTOR
-DECL|QM_IRQ_UART_0|macro|QM_IRQ_UART_0
-DECL|QM_IRQ_UART_1_MASK_OFFSET|macro|QM_IRQ_UART_1_MASK_OFFSET
-DECL|QM_IRQ_UART_1_VECTOR|macro|QM_IRQ_UART_1_VECTOR
-DECL|QM_IRQ_UART_1|macro|QM_IRQ_UART_1
-DECL|QM_IRQ_WDT_0_MASK_OFFSET|macro|QM_IRQ_WDT_0_MASK_OFFSET
-DECL|QM_IRQ_WDT_0_VECTOR|macro|QM_IRQ_WDT_0_VECTOR
-DECL|QM_IRQ_WDT_0|macro|QM_IRQ_WDT_0
 DECL|QM_ISR_EOI|macro|QM_ISR_EOI
 DECL|QM_ISR_EOI|macro|QM_ISR_EOI
+DECL|QM_MPR_0|enumerator|QM_MPR_0 = 0, /**< Memory Protection Region 0. */
+DECL|QM_MPR_1|enumerator|QM_MPR_1, /**< Memory Protection Region 1. */
+DECL|QM_MPR_2|enumerator|QM_MPR_2, /**< Memory Protection Region 2. */
+DECL|QM_MPR_3|enumerator|QM_MPR_3, /**< Memory Protection Region 3. */
 DECL|QM_MPR_BASE|macro|QM_MPR_BASE
 DECL|QM_MPR_EN_LOCK_MASK|macro|QM_MPR_EN_LOCK_MASK
 DECL|QM_MPR_EN_LOCK_OFFSET|macro|QM_MPR_EN_LOCK_OFFSET
+DECL|QM_MPR_NUM|enumerator|QM_MPR_NUM /**< Number of Memory Protection Regions. */
 DECL|QM_MPR_RD_EN_MASK|macro|QM_MPR_RD_EN_MASK
 DECL|QM_MPR_RD_EN_OFFSET|macro|QM_MPR_RD_EN_OFFSET
 DECL|QM_MPR_UP_BOUND_OFFSET|macro|QM_MPR_UP_BOUND_OFFSET
@@ -407,11 +371,6 @@ DECL|QM_SCSS_GP|macro|QM_SCSS_GP
 DECL|QM_SCSS_INFO_BASE|macro|QM_SCSS_INFO_BASE
 DECL|QM_SCSS_INFO|macro|QM_SCSS_INFO
 DECL|QM_SCSS_INFO|macro|QM_SCSS_INFO
-DECL|QM_SCSS_INT_BASE|macro|QM_SCSS_INT_BASE
-DECL|QM_SCSS_INT_MASK_DEFAULT|macro|QM_SCSS_INT_MASK_DEFAULT
-DECL|QM_SCSS_INT_MASK_NUMREG|macro|QM_SCSS_INT_MASK_NUMREG
-DECL|QM_SCSS_INT|macro|QM_SCSS_INT
-DECL|QM_SCSS_INT|macro|QM_SCSS_INT
 DECL|QM_SCSS_PERIPHERAL_BASE|macro|QM_SCSS_PERIPHERAL_BASE
 DECL|QM_SCSS_PERIPHERAL|macro|QM_SCSS_PERIPHERAL
 DECL|QM_SCSS_PERIPHERAL|macro|QM_SCSS_PERIPHERAL
@@ -691,27 +650,7 @@ DECL|id|member|QM_RW uint32_t id; /**< Identification Register. */
 DECL|ier_dlh|member|QM_RW uint32_t ier_dlh; /**< Interrupt Enable / Divisor Latch High. */
 DECL|iir_fcr|member|QM_RW uint32_t iir_fcr; /**< Interrupt Identification / FIFO Control. */
 DECL|imr|member|QM_RW uint32_t imr; /**< Interrupt Mask Register. */
-DECL|int_adc_calib_mask|member|QM_RW uint32_t int_adc_calib_mask; /**< Interrupt Routing Mask 33. */
-DECL|int_adc_pwr_mask|member|QM_RW uint32_t int_adc_pwr_mask; /**< Interrupt Routing Mask 32. */
-DECL|int_aon_timer_mask|member|QM_RW uint32_t int_aon_timer_mask; /**< Interrupt Routing Mask 31. */
-DECL|int_comparators_host_halt_mask|member|int_comparators_host_halt_mask; /**< Interrupt Routing Mask 23. */
-DECL|int_comparators_host_mask|member|int_comparators_host_mask; /**< Interrupt Routing Mask 25. */
-DECL|int_dma_channel_0_mask|member|int_dma_channel_0_mask; /**< Interrupt Routing Mask 13. */
-DECL|int_dma_channel_1_mask|member|int_dma_channel_1_mask; /**< Interrupt Routing Mask 14. */
-DECL|int_dma_error_mask|member|QM_RW uint32_t int_dma_error_mask; /**< Interrupt Routing Mask 27. */
-DECL|int_flash_controller_0_mask|member|int_flash_controller_0_mask; /**< Interrupt Routing Mask 29. */
-DECL|int_gpio_mask|member|QM_RW uint32_t int_gpio_mask; /**< Interrupt Routing Mask 8. */
-DECL|int_host_bus_err_mask|member|QM_RW uint32_t int_host_bus_err_mask; /**< Interrupt Routing Mask 26. */
-DECL|int_i2c_mst_0_mask|member|QM_RW uint32_t int_i2c_mst_0_mask; /**< Interrupt Routing Mask 0. */
 DECL|int_reg|member|QM_RW qm_dma_int_reg_t int_reg; /**< Interrupt Register */
-DECL|int_rtc_mask|member|QM_RW uint32_t int_rtc_mask; /**< Interrupt Routing Mask 11. */
-DECL|int_spi_mst_0_mask|member|QM_RW uint32_t int_spi_mst_0_mask; /**< Interrupt Routing Mask 2. */
-DECL|int_spi_slv_0_mask|member|QM_RW uint32_t int_spi_slv_0_mask; /**< Interrupt Routing Mask 4. */
-DECL|int_sram_controller_mask|member|int_sram_controller_mask; /**< Interrupt Routing Mask 28. */
-DECL|int_timer_mask|member|QM_RW uint32_t int_timer_mask; /**< Interrupt Routing Mask 9. */
-DECL|int_uart_0_mask|member|QM_RW uint32_t int_uart_0_mask; /**< Interrupt Routing Mask 5. */
-DECL|int_uart_1_mask|member|QM_RW uint32_t int_uart_1_mask; /**< Interrupt Routing Mask 6. */
-DECL|int_watchdog_mask|member|QM_RW uint32_t int_watchdog_mask; /**< Interrupt Routing Mask 12. */
 DECL|intstatus|member|QM_RW uint32_t intstatus; /**< Interrupt Status. */
 DECL|ioregsel|member|QM_RW mvic_reg_pad_t ioregsel; /**< Register selector. */
 DECL|iowin|member|QM_RW mvic_reg_pad_t iowin; /**< Register window. */
@@ -723,7 +662,6 @@ DECL|lcr|member|QM_RW uint32_t lcr; /**< Line Control. */
 DECL|llp_high|member|QM_RW uint32_t llp_high; /**< LLP */
 DECL|llp_low|member|QM_RW uint32_t llp_low; /**< LLP */
 DECL|loadcount|member|QM_RW uint32_t loadcount; /**< Load Coun.t */
-DECL|lock_int_mask_reg|member|QM_RW uint32_t lock_int_mask_reg; /**< Interrupt Mask Lock Register. */
 DECL|lsr|member|QM_RW uint32_t lsr; /**< Line Status. */
 DECL|lvttimer|member|QM_RW mvic_reg_pad_t lvttimer; /**< Timer vector. */
 DECL|lvttimer|member|QM_RW pic_timer_reg_pad_t lvttimer; /**< Local Vector Table Timer */
@@ -786,11 +724,13 @@ DECL|qm_dma_reg_t|typedef|} qm_dma_reg_t;
 DECL|qm_dma_t|typedef|} qm_dma_t;
 DECL|qm_flash_reg_t|typedef|} qm_flash_reg_t;
 DECL|qm_flash_t|typedef|typedef enum { QM_FLASH_0 = 0, QM_FLASH_NUM } qm_flash_t;
+DECL|qm_fpr_id_t|typedef|} qm_fpr_id_t;
 DECL|qm_gpio_reg_t|typedef|} qm_gpio_reg_t;
 DECL|qm_gpio_t|typedef|typedef enum { QM_GPIO_0 = 0, QM_GPIO_NUM } qm_gpio_t;
 DECL|qm_i2c_reg_t|typedef|} qm_i2c_reg_t;
 DECL|qm_i2c_t|typedef|typedef enum { QM_I2C_0 = 0, QM_I2C_NUM } qm_i2c_t;
 DECL|qm_ioapic_reg_t|typedef|} qm_ioapic_reg_t;
+DECL|qm_mpr_id_t|typedef|} qm_mpr_id_t;
 DECL|qm_mpr_reg_t|typedef|} qm_mpr_reg_t;
 DECL|qm_mvic_reg_t|typedef|} qm_mvic_reg_t;
 DECL|qm_pic_timer_reg_t|typedef|} qm_pic_timer_reg_t;
@@ -804,7 +744,6 @@ DECL|qm_scss_ccu_reg_t|typedef|} qm_scss_ccu_reg_t;
 DECL|qm_scss_cmp_reg_t|typedef|} qm_scss_cmp_reg_t;
 DECL|qm_scss_gp_reg_t|typedef|} qm_scss_gp_reg_t;
 DECL|qm_scss_info_reg_t|typedef|} qm_scss_info_reg_t;
-DECL|qm_scss_int_reg_t|typedef|} qm_scss_int_reg_t;
 DECL|qm_scss_peripheral_reg_t|typedef|} qm_scss_peripheral_reg_t;
 DECL|qm_scss_pmu_reg_t|typedef|} qm_scss_pmu_reg_t;
 DECL|qm_scss_pmux_reg_t|typedef|} qm_scss_pmux_reg_t;
@@ -832,27 +771,20 @@ DECL|reg|member|QM_RW uint32_t reg;
 DECL|reserved1|member|QM_RW mvic_reg_pad_t reserved1[3];
 DECL|reserved1|member|QM_RW uint32_t reserved1;
 DECL|reserved1|member|QM_RW uint32_t reserved1;
-DECL|reserved1|member|QM_RW uint32_t reserved1;
 DECL|reserved1|member|QM_RW uint32_t reserved1[18];
 DECL|reserved1|member|QM_RW uint32_t reserved1[3];
 DECL|reserved1|member|QM_RW uint32_t reserved1[3];
 DECL|reserved1|member|QM_RW uint32_t reserved1[3];
 DECL|reserved1|member|QM_RW uint32_t reserved1[9];
 DECL|reserved2|member|QM_RW mvic_reg_pad_t reserved2;
-DECL|reserved2|member|QM_RW uint32_t reserved2;
 DECL|reserved2|member|QM_RW uint32_t reserved2[3];
 DECL|reserved2|member|QM_RW uint32_t reserved2[3];
 DECL|reserved3|member|QM_RW mvic_reg_pad_t reserved3[15];
-DECL|reserved3|member|QM_RW uint32_t reserved3;
 DECL|reserved3|member|QM_RW uint32_t reserved3[5];
 DECL|reserved3|member|QM_RW uint32_t reserved3[7];
 DECL|reserved4|member|QM_RW mvic_reg_pad_t reserved4[16];
 DECL|reserved4|member|QM_RW uint32_t reserved4[2];
-DECL|reserved4|member|QM_RW uint32_t reserved4[8];
 DECL|reserved5|member|QM_RW mvic_reg_pad_t reserved5[5];
-DECL|reserved5|member|QM_RW uint32_t reserved5;
-DECL|reserved6|member|QM_RW uint32_t reserved6;
-DECL|reserved7|member|QM_RW uint32_t reserved7;
 DECL|reserved|member|QM_RW mvic_reg_pad_t reserved;
 DECL|reserved|member|QM_RW pic_timer_reg_pad_t reserved[5];
 DECL|reserved|member|QM_RW uint32_t reserved;
@@ -862,7 +794,6 @@ DECL|reserved|member|QM_RW uint32_t reserved[10];
 DECL|reserved|member|QM_RW uint32_t reserved[12]; /**< Reserved (SW HS) */
 DECL|reserved|member|QM_RW uint32_t reserved[23];
 DECL|reserved|member|QM_RW uint32_t reserved[2];
-DECL|reserved|member|QM_RW uint32_t reserved[2]; /* There is a hole in the address space. */
 DECL|reserved|member|QM_RW uint32_t reserved[30];
 DECL|reserved|member|QM_RW uint32_t reserved[3];
 DECL|reserved|member|QM_RW uint32_t reserved[4]; /**< Reserved */
@@ -943,7 +874,6 @@ DECL|test_scss_ccu|variable|test_scss_ccu
 DECL|test_scss_cmp|variable|test_scss_cmp
 DECL|test_scss_gp|variable|test_scss_gp
 DECL|test_scss_info|variable|test_scss_info
-DECL|test_scss_int|variable|test_scss_int
 DECL|test_scss_peripheral|variable|test_scss_peripheral
 DECL|test_scss_pmux|variable|test_scss_pmux
 DECL|test_scss_pmu|variable|test_scss_pmu

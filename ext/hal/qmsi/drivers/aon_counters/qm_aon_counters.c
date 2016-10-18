@@ -1,4 +1,4 @@
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_aonpt_isr_0)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_aonpt_0_isr)
 DECL|callback_data|variable|callback_data
 DECL|callback|variable|callback
 DECL|pt_reset|function|static void pt_reset(const qm_aonc_t aonc)

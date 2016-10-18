@@ -6,8 +6,8 @@ DECL|QM_ADC_CMD_START_CAL|macro|QM_ADC_CMD_START_CAL
 DECL|QM_ADC_CMD_START_CONT|macro|QM_ADC_CMD_START_CONT
 DECL|QM_ADC_CMD_START_SINGLE|macro|QM_ADC_CMD_START_SINGLE
 DECL|QM_ADC_CMD_STOP_CONT|macro|QM_ADC_CMD_STOP_CONT
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_adc_0_isr)
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_adc_pwr_0_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_adc_0_cal_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_adc_0_pwr_isr)
 DECL|cal_callback_data|variable|cal_callback_data
 DECL|cal_callback|variable|cal_callback
 DECL|count|variable|count
