@@ -1,8 +1,7 @@
-DECL|_DEEP_SLEEP_MODE|macro|_DEEP_SLEEP_MODE
-DECL|_GPS1|macro|_GPS1
-DECL|_LOW_POWER_MODE|macro|_LOW_POWER_MODE
+DECL|__x86_restore_info|variable|__x86_restore_info
+DECL|_deep_sleep|function|static void _deep_sleep(enum power_states state)
 DECL|_pm_save_esp|variable|_pm_save_esp
 DECL|_pm_save_gdtr|variable|_pm_save_gdtr
 DECL|_pm_save_idtr|variable|_pm_save_idtr
-DECL|_sys_soc_get_power_policy|function|int _sys_soc_get_power_policy(void)
-DECL|_sys_soc_set_power_policy|function|void _sys_soc_set_power_policy(uint32_t pm_policy)
+DECL|_sys_soc_power_state_post_ops|function|void _sys_soc_power_state_post_ops(enum power_states state)
+DECL|_sys_soc_set_power_state|function|void _sys_soc_set_power_state(enum power_states state)

@@ -26,6 +26,7 @@ DECL|_sys_power_save_flag|variable|_sys_power_save_flag
 DECL|_sys_power_save_idle_exit|function|void _sys_power_save_idle_exit(int32_t ticks)
 DECL|_sys_power_save_idle|function|void _sys_power_save_idle(int32_t ticks)
 DECL|_sys_soc_notify_wake_event|variable|_sys_soc_notify_wake_event
+DECL|_sys_soc_resume|function|void __attribute__((weak)) _sys_soc_resume(void)
 DECL|sys_workload_time_slice_set|function|void sys_workload_time_slice_set(int32_t t)
 DECL|task_workload_get|function|int task_workload_get(void)
 DECL|workload_loop|function|static void workload_loop(void)
