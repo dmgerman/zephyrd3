@@ -4,8 +4,11 @@ DECL|IEEE802154_IS_CHAN_UNSCANNED|macro|IEEE802154_IS_CHAN_UNSCANNED
 DECL|IEEE802154_MAX_ADDR_LENGTH|macro|IEEE802154_MAX_ADDR_LENGTH
 DECL|NET_EVENT_IEEE802154_CMD_SCAN_RESULT|enumerator|NET_EVENT_IEEE802154_CMD_SCAN_RESULT = 1,
 DECL|NET_EVENT_IEEE802154_SCAN_RESULT|macro|NET_EVENT_IEEE802154_SCAN_RESULT
+DECL|NET_REQUEST_IEEE802154_ASSOCIATE|macro|NET_REQUEST_IEEE802154_ASSOCIATE
+DECL|NET_REQUEST_IEEE802154_ASSOCIATE|variable|NET_REQUEST_IEEE802154_ASSOCIATE
 DECL|NET_REQUEST_IEEE802154_CANCEL_SCAN|macro|NET_REQUEST_IEEE802154_CANCEL_SCAN
 DECL|NET_REQUEST_IEEE802154_CANCEL_SCAN|variable|NET_REQUEST_IEEE802154_CANCEL_SCAN
+DECL|NET_REQUEST_IEEE802154_CMD_ASSOCIATE|enumerator|NET_REQUEST_IEEE802154_CMD_ASSOCIATE,
 DECL|NET_REQUEST_IEEE802154_CMD_CANCEL_SCAN|enumerator|NET_REQUEST_IEEE802154_CMD_CANCEL_SCAN,
 DECL|NET_REQUEST_IEEE802154_CMD_PASSIVE_SCAN|enumerator|NET_REQUEST_IEEE802154_CMD_PASSIVE_SCAN,
 DECL|NET_REQUEST_IEEE802154_CMD_SET_ACK|enumerator|NET_REQUEST_IEEE802154_CMD_SET_ACK = 1,
@@ -23,11 +26,12 @@ DECL|_NET_IEEE802154_LAYER|macro|_NET_IEEE802154_LAYER
 DECL|__IEEE802154_H__|macro|__IEEE802154_H__
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|_unused|member|uint8_t _unused : 6;
+DECL|_unused|member|uint8_t _unused : 5;
 DECL|ack_lock|member|struct k_sem ack_lock;
 DECL|ack_received|member|uint8_t ack_received : 1;
 DECL|ack_requested|member|uint8_t ack_requested : 1;
 DECL|addr|member|uint8_t addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|associated|member|uint8_t associated : 1;
 DECL|channel_set|member|uint32_t channel_set;
 DECL|channel|member|uint16_t channel;
 DECL|channel|member|uint16_t channel;
@@ -40,6 +44,7 @@ DECL|net_event_ieee802154_cmd|enum|enum net_event_ieee802154_cmd {
 DECL|net_request_ieee802154_cmd|enum|enum net_request_ieee802154_cmd {
 DECL|pan_id|member|uint16_t pan_id;
 DECL|pan_id|member|uint16_t pan_id;
+DECL|req_lock|member|struct k_sem req_lock;
 DECL|res_lock|member|struct k_sem res_lock;
 DECL|scan_ctx|member|struct ieee802154_req_params *scan_ctx;
 DECL|sequence|member|uint8_t sequence;
