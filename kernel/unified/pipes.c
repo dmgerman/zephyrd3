@@ -8,6 +8,7 @@ DECL|_pipe_return_code|function|static int _pipe_return_code(size_t min_xfer, si
 DECL|_pipe_thread_ready|function|static void _pipe_thread_ready(struct k_thread *thread)
 DECL|_pipe_xfer_prepare|function|static bool _pipe_xfer_prepare(sys_dlist_t *xfer_list, struct k_thread **waiter, _wait_q_t *wait_q, size_t pipe_space, size_t bytes_to_xfer,
 DECL|_pipe_xfer|function|static size_t _pipe_xfer(unsigned char *dest, size_t dest_size, const unsigned char *src, size_t src_size)
+DECL|_trace_list_k_pipe|variable|_trace_list_k_pipe
 DECL|async_msg|variable|async_msg
 DECL|block|member|struct k_mem_block *block; /* Pointer to memory block */
 DECL|buffer|member|unsigned char *buffer; /* Position in src/dest buffer */

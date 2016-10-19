@@ -21,3 +21,4 @@ DECL|_trace_list_nano_sem|variable|_trace_list_nano_sem
 DECL|_trace_list_nano_stack|variable|_trace_list_nano_stack
 DECL|_trace_list_nano_timer|variable|_trace_list_nano_timer
 DECL|_trace_list_sys_ring_buf|variable|_trace_list_sys_ring_buf
+DECL|_trace_list_sys_ring_buf|variable|_trace_list_sys_ring_buf

@@ -1,3 +1,5 @@
+DECL|_trace_list_k_fifo|variable|_trace_list_k_fifo
+DECL|init_fifo_module|function|static int init_fifo_module(struct device *dev)
 DECL|k_fifo_get|function|void *k_fifo_get(struct k_fifo *fifo, int32_t timeout)
 DECL|k_fifo_init|function|void k_fifo_init(struct k_fifo *fifo)
 DECL|k_fifo_put_list|function|void k_fifo_put_list(struct k_fifo *fifo, void *head, void *tail)

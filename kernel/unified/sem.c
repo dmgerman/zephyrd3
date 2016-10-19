@@ -1,10 +1,12 @@
 DECL|_sem_desc|struct|struct _sem_desc {
 DECL|_sem_give_non_preemptible|function|void _sem_give_non_preemptible(struct k_sem *sem)
 DECL|_sem_thread|struct|struct _sem_thread {
+DECL|_trace_list_k_sem|variable|_trace_list_k_sem
 DECL|desc|member|struct _sem_desc desc;
 DECL|dummy|member|struct tcs_base dummy;
 DECL|handle_sem_group|function|static int handle_sem_group(struct k_sem *sem, struct k_thread *thread)
 DECL|handle_sem_group|macro|handle_sem_group
+DECL|init_sem_module|function|static int init_sem_module(struct device *dev)
 DECL|k_sem_give|function|void k_sem_give(struct k_sem *sem)
 DECL|k_sem_group_give|function|void k_sem_group_give(struct k_sem *sem_array[])
 DECL|k_sem_group_reset|function|void k_sem_group_reset(struct k_sem *sem_array[])

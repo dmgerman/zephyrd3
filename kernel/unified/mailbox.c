@@ -4,6 +4,7 @@ DECL|_mbox_message_data_check|function|static int _mbox_message_data_check(struc
 DECL|_mbox_message_dispose|function|static void _mbox_message_dispose(struct k_mbox_msg *rx_msg)
 DECL|_mbox_message_match|function|static int _mbox_message_match(struct k_mbox_msg *tx_msg, struct k_mbox_msg *rx_msg)
 DECL|_mbox_message_put|function|static int _mbox_message_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg, int32_t timeout)
+DECL|_trace_list_k_mbox|variable|_trace_list_k_mbox
 DECL|async_msg|variable|async_msg
 DECL|init_mbox_module|function|static int init_mbox_module(struct device *dev)
 DECL|k_mbox_async_put|function|void k_mbox_async_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg, struct k_sem *sem)
