@@ -1,4 +1,3 @@
-DECL|AS_EXTI|macro|AS_EXTI
 DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|__exti_cb|struct|struct __exti_cb {
 DECL|__stm32_exti_connect_irqs|function|static void __stm32_exti_connect_irqs(struct device *dev)
@@ -16,6 +15,7 @@ DECL|data|member|void *data;
 DECL|emr|member|uint32_t emr;
 DECL|exti_data|variable|exti_data
 DECL|ftsr|member|uint32_t ftsr;
+DECL|get_exti_base_addr|function|static inline struct stm32_exti *get_exti_base_addr(int line)
 DECL|imr|member|uint32_t imr;
 DECL|pr|member|uint32_t pr;
 DECL|rtsr|member|uint32_t rtsr;
