@@ -47,6 +47,8 @@ DECL|inc_free_tx_bufs_func|macro|inc_free_tx_bufs_func
 DECL|inc_free_tx_bufs|function|static inline void inc_free_tx_bufs(struct net_buf *buf)
 DECL|inc_free_tx_bufs|macro|inc_free_tx_bufs
 DECL|is_from_data_pool|function|static inline bool is_from_data_pool(struct net_buf *buf)
+DECL|net_nbuf_append_bytes|function|static inline bool net_nbuf_append_bytes(struct net_buf *buf, uint8_t *value, uint16_t len)
+DECL|net_nbuf_append|function|bool net_nbuf_append(struct net_buf *buf, uint16_t len, uint8_t *data)
 DECL|net_nbuf_compact|function|struct net_buf *net_nbuf_compact(struct net_buf *buf)
 DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *orig, size_t amount, size_t reserve)
 DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,const char *caller, int line)
@@ -75,8 +77,6 @@ DECL|net_nbuf_read_byte|function|static inline struct net_buf *net_nbuf_read_byt
 DECL|net_nbuf_read|function|struct net_buf *net_nbuf_read(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t len, uint8_t *data)
 DECL|net_nbuf_ref_debug|function|struct net_buf *net_nbuf_ref_debug(struct net_buf *buf, const char *caller, int line) #else struct net_buf *net_nbuf_ref(struct net_buf *buf) #endif
 DECL|net_nbuf_unref_debug|function|void net_nbuf_unref_debug(struct net_buf *buf, const char *caller, int line)
-DECL|net_nbuf_write_bytes|function|static inline bool net_nbuf_write_bytes(struct net_buf *buf, uint8_t *value,uint16_t len)
-DECL|net_nbuf_write|function|bool net_nbuf_write(struct net_buf *buf, uint16_t len, uint8_t *data)
 DECL|num_free_data_bufs|variable|num_free_data_bufs
 DECL|num_free_rx_bufs|variable|num_free_rx_bufs
 DECL|num_free_tx_bufs|variable|num_free_tx_bufs

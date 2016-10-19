@@ -21,6 +21,9 @@ DECL|lladdr_dst|member|struct net_linkaddr lladdr_dst;
 DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
 DECL|net_nbuf_appdatalen|function|static inline uint16_t net_nbuf_appdatalen(struct net_buf *buf)
 DECL|net_nbuf_appdata|function|static inline uint8_t *net_nbuf_appdata(struct net_buf *buf)
+DECL|net_nbuf_append_be16|function|static inline bool net_nbuf_append_be16(struct net_buf *buf, uint16_t data)
+DECL|net_nbuf_append_be32|function|static inline bool net_nbuf_append_be32(struct net_buf *buf, uint32_t data)
+DECL|net_nbuf_append_u8|function|static inline bool net_nbuf_append_u8(struct net_buf *buf, uint8_t data)
 DECL|net_nbuf_context|function|static inline struct net_context *net_nbuf_context(struct net_buf *buf)
 DECL|net_nbuf_copy_all|function|static inline struct net_buf *net_nbuf_copy_all(struct net_buf *buf,size_t reserve)
 DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(struct net_buf *buf)
@@ -73,9 +76,6 @@ DECL|net_nbuf_type|enum|enum net_nbuf_type {
 DECL|net_nbuf_type|function|static inline enum net_nbuf_type net_nbuf_type(struct net_buf *buf)
 DECL|net_nbuf_udp_data|function|static inline uint8_t *net_nbuf_udp_data(struct net_buf *buf)
 DECL|net_nbuf_unref|macro|net_nbuf_unref
-DECL|net_nbuf_write_be16|function|static inline bool net_nbuf_write_be16(struct net_buf *buf, uint16_t data)
-DECL|net_nbuf_write_be32|function|static inline bool net_nbuf_write_be32(struct net_buf *buf, uint32_t data)
-DECL|net_nbuf_write_u8|function|static inline bool net_nbuf_write_u8(struct net_buf *buf, uint8_t data)
 DECL|net_nbuf|struct|struct net_nbuf {
 DECL|next_hdr|member|uint8_t *next_hdr; /* where is the next header */
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
