@@ -2,6 +2,7 @@ DECL|BT_RFCOMM_CHAN_HFP_AG|enumerator|BT_RFCOMM_CHAN_HFP_AG,
 DECL|BT_RFCOMM_CHAN_HFP_HF|enumerator|BT_RFCOMM_CHAN_HFP_HF = 1,
 DECL|BT_RFCOMM_CHAN_HSP_AG|enumerator|BT_RFCOMM_CHAN_HSP_AG,
 DECL|BT_RFCOMM_CHAN_HSP_HS|enumerator|BT_RFCOMM_CHAN_HSP_HS,
+DECL|BT_RFCOMM_CHAN_SPP|enumerator|BT_RFCOMM_CHAN_SPP,
 DECL|__BT_RFCOMM_H|macro|__BT_RFCOMM_H
 DECL|_next|member|struct bt_rfcomm_dlc *_next;
 DECL|_next|member|struct bt_rfcomm_server *_next;
@@ -17,6 +18,7 @@ DECL|initiator|member|bool initiator;
 DECL|mtu|member|uint16_t mtu;
 DECL|ops|member|struct bt_rfcomm_dlc_ops *ops;
 DECL|recv|member|void (*recv)(struct bt_rfcomm_dlc *dlc, struct net_buf *buf);
+DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|rx_credit|member|uint8_t rx_credit;
 DECL|session|member|struct bt_rfcomm_session *session;
 DECL|state|member|uint8_t state;

@@ -15,7 +15,7 @@ DECL|hog_init|function|void hog_init(void)
 DECL|id|member|uint8_t id; /* report id */
 DECL|info|variable|info
 DECL|input_ccc_cfg|variable|input_ccc_cfg
-DECL|input_ccc_changed|function|static void input_ccc_changed(uint16_t value)
+DECL|input_ccc_changed|function|static void input_ccc_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|input|variable|input
 DECL|read_info|function|static ssize_t read_info(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
 DECL|read_input_report|function|static ssize_t read_input_report(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)

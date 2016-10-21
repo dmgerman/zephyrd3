@@ -47,12 +47,12 @@ DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
 DECL|crank_rev_data_nfy|struct|struct crank_rev_data_nfy {
 DECL|csc_attrs|variable|csc_attrs
-DECL|csc_meas_ccc_cfg_changed|function|static void csc_meas_ccc_cfg_changed(uint16_t value)
+DECL|csc_meas_ccc_cfg_changed|function|static void csc_meas_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|csc_meas_ccc_cfg|variable|csc_meas_ccc_cfg
 DECL|csc_measurement_nfy|struct|struct csc_measurement_nfy {
 DECL|csc_simulate|variable|csc_simulate
 DECL|csc_simulation|function|static void csc_simulation(void)
-DECL|ctrl_point_ccc_cfg_changed|function|static void ctrl_point_ccc_cfg_changed(uint16_t value)
+DECL|ctrl_point_ccc_cfg_changed|function|static void ctrl_point_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
 DECL|ctrl_point_ccc_cfg|variable|ctrl_point_ccc_cfg
 DECL|ctrl_point_configured|variable|ctrl_point_configured
 DECL|ctrl_point_ind|function|static void ctrl_point_ind(struct bt_conn *conn, uint8_t req_op, uint8_t status, const void *data, uint16_t data_len)

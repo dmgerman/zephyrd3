@@ -113,6 +113,8 @@ DECL|rfcomm_server|variable|rfcomm_server
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
+DECL|spp_attrs|variable|spp_attrs
+DECL|spp_rec|variable|spp_rec
 DECL|storage_clear|function|static int storage_clear(const bt_addr_le_t *addr)
 DECL|storage_read|function|static ssize_t storage_read(const bt_addr_le_t *addr, uint16_t key, void *data, size_t length)
 DECL|storage_write|function|static ssize_t storage_write(const bt_addr_le_t *addr, uint16_t key, const void *data, size_t length)

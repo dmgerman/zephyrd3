@@ -10,7 +10,6 @@ DECL|drv|variable|drv
 DECL|hci_driver_open|function|static int hci_driver_open(void)
 DECL|hci_driver_send|function|static int hci_driver_send(struct net_buf *buf)
 DECL|nano_sem_recv|variable|nano_sem_recv
-DECL|power_clock_nrf5_isr|function|static void power_clock_nrf5_isr(void *arg)
 DECL|radio_active_callback|function|void radio_active_callback(uint8_t active)
 DECL|radio_event_callback|function|void radio_event_callback(void)
 DECL|radio_nrf5_isr|function|static void radio_nrf5_isr(void *arg)
