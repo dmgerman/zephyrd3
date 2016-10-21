@@ -1,9 +1,12 @@
 DECL|MAX_TESTS|macro|MAX_TESTS
+DECL|dummy_timer_data|variable|dummy_timer_data
+DECL|fiber_stack|variable|fiber_stack
+DECL|fiber_timer|variable|fiber_timer
 DECL|float_reg_set_load|variable|float_reg_set_load
 DECL|float_reg_set_store|variable|float_reg_set_store
 DECL|float_reg_set|variable|float_reg_set
 DECL|fpu_sharing_error|variable|fpu_sharing_error
 DECL|load_store_high_count|variable|load_store_high_count
-DECL|load_store_high|function|void load_store_high(void)
+DECL|load_store_high|function|void load_store_high(int unused1, int unused2)
 DECL|load_store_low_count|variable|load_store_low_count
-DECL|load_store_low|function|void load_store_low(void)
+DECL|main|function|void main(void)
