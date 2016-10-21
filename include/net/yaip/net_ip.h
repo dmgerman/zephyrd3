@@ -111,7 +111,9 @@ DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(const uin
 DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(const struct in_addr *addr)
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
+DECL|net_sin6_ptr|function|struct sockaddr_in6_ptr *net_sin6_ptr(const struct sockaddr_ptr *addr)
 DECL|net_sin6|function|static inline struct sockaddr_in6 *net_sin6(const struct sockaddr *addr)
+DECL|net_sin_ptr|function|struct sockaddr_in_ptr *net_sin_ptr(const struct sockaddr_ptr *addr)
 DECL|net_sin|function|static inline struct sockaddr_in *net_sin(const struct sockaddr *addr)
 DECL|net_sock_type|enum|enum net_sock_type {
 DECL|net_tcp_hdr|struct|struct net_tcp_hdr {
