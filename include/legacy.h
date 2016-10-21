@@ -113,6 +113,7 @@ DECL|nano_lifo_get|function|static inline void *nano_lifo_get(struct nano_lifo *
 DECL|nano_lifo_init|macro|nano_lifo_init
 DECL|nano_lifo_put|macro|nano_lifo_put
 DECL|nano_lifo|macro|nano_lifo
+DECL|nano_sem_count_get|macro|nano_sem_count_get
 DECL|nano_sem_give|macro|nano_sem_give
 DECL|nano_sem_init|function|static inline void nano_sem_init(struct nano_sem *sem)
 DECL|nano_sem_take|function|static inline int nano_sem_take(struct nano_sem *sem, int32_t timeout)

@@ -28,6 +28,7 @@ DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
 DECL|nano_fiber_entry_t|typedef|typedef void (*nano_fiber_entry_t)(int i1, int i2);
 DECL|nano_fifo|struct|struct nano_fifo {
 DECL|nano_lifo|struct|struct nano_lifo {
+DECL|nano_sem_count_get|function|static inline int nano_sem_count_get(struct nano_sem *sem)
 DECL|nano_sem|struct|struct nano_sem {
 DECL|nano_stack|struct|struct nano_stack {
 DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
