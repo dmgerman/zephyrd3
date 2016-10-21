@@ -1,1 +1,0 @@
-DECL|_CLOCK_H_|macro|_CLOCK_H_
