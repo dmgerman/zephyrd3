@@ -1,0 +1,3 @@
+DECL|HAL_SPI_Init|function|HAL_StatusTypeDef HAL_SPI_Init(SPI_HandleTypeDef *hspi)
+DECL|SPI_ISCRCErrorValid|function|uint8_t SPI_ISCRCErrorValid(SPI_HandleTypeDef *hspi)
+DECL|uCRCErrorWorkaroundCheck|variable|uCRCErrorWorkaroundCheck

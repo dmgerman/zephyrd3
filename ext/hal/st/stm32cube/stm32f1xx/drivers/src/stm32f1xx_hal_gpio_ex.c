@@ -1,0 +1,3 @@
+DECL|HAL_GPIOEx_ConfigEventout|function|void HAL_GPIOEx_ConfigEventout(uint32_t GPIO_PortSource, uint32_t GPIO_PinSource)
+DECL|HAL_GPIOEx_DisableEventout|function|void HAL_GPIOEx_DisableEventout(void)
+DECL|HAL_GPIOEx_EnableEventout|function|void HAL_GPIOEx_EnableEventout(void)

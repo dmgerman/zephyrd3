@@ -1,0 +1,92 @@
+DECL|DATA_BLOCK_SIZE|macro|DATA_BLOCK_SIZE
+DECL|HAL_SD_CheckReadOperation|function|HAL_SD_ErrorTypedef HAL_SD_CheckReadOperation(SD_HandleTypeDef *hsd, uint32_t Timeout)
+DECL|HAL_SD_CheckWriteOperation|function|HAL_SD_ErrorTypedef HAL_SD_CheckWriteOperation(SD_HandleTypeDef *hsd, uint32_t Timeout)
+DECL|HAL_SD_DMA_RxCpltCallback|function|__weak void HAL_SD_DMA_RxCpltCallback(DMA_HandleTypeDef *hdma)
+DECL|HAL_SD_DMA_RxErrorCallback|function|__weak void HAL_SD_DMA_RxErrorCallback(DMA_HandleTypeDef *hdma)
+DECL|HAL_SD_DMA_TxCpltCallback|function|__weak void HAL_SD_DMA_TxCpltCallback(DMA_HandleTypeDef *hdma)
+DECL|HAL_SD_DMA_TxErrorCallback|function|__weak void HAL_SD_DMA_TxErrorCallback(DMA_HandleTypeDef *hdma)
+DECL|HAL_SD_DeInit|function|HAL_StatusTypeDef HAL_SD_DeInit(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_Erase|function|HAL_SD_ErrorTypedef HAL_SD_Erase(SD_HandleTypeDef *hsd, uint64_t Startaddr, uint64_t Endaddr)
+DECL|HAL_SD_GetCardStatus|function|HAL_SD_ErrorTypedef HAL_SD_GetCardStatus(SD_HandleTypeDef *hsd, HAL_SD_CardStatusTypedef *pCardStatus)
+DECL|HAL_SD_GetStatus|function|HAL_SD_TransferStateTypedef HAL_SD_GetStatus(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_Get_CardInfo|function|HAL_SD_ErrorTypedef HAL_SD_Get_CardInfo(SD_HandleTypeDef *hsd, HAL_SD_CardInfoTypedef *pCardInfo)
+DECL|HAL_SD_HighSpeed|function|HAL_SD_ErrorTypedef HAL_SD_HighSpeed (SD_HandleTypeDef *hsd)
+DECL|HAL_SD_IRQHandler|function|void HAL_SD_IRQHandler(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_Init|function|HAL_SD_ErrorTypedef HAL_SD_Init(SD_HandleTypeDef *hsd, HAL_SD_CardInfoTypedef *SDCardInfo)
+DECL|HAL_SD_MspDeInit|function|__weak void HAL_SD_MspDeInit(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_MspInit|function|__weak void HAL_SD_MspInit(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_ReadBlocks_DMA|function|HAL_SD_ErrorTypedef HAL_SD_ReadBlocks_DMA(SD_HandleTypeDef *hsd, uint32_t *pReadBuffer, uint64_t ReadAddr, uint32_t BlockSize, uint32_t NumberOfBlocks)
+DECL|HAL_SD_ReadBlocks|function|HAL_SD_ErrorTypedef HAL_SD_ReadBlocks(SD_HandleTypeDef *hsd, uint32_t *pReadBuffer, uint64_t ReadAddr, uint32_t BlockSize, uint32_t NumberOfBlocks)
+DECL|HAL_SD_SendSDStatus|function|HAL_SD_ErrorTypedef HAL_SD_SendSDStatus(SD_HandleTypeDef *hsd, uint32_t *pSDstatus)
+DECL|HAL_SD_StopTransfer|function|HAL_SD_ErrorTypedef HAL_SD_StopTransfer(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_WideBusOperation_Config|function|HAL_SD_ErrorTypedef HAL_SD_WideBusOperation_Config(SD_HandleTypeDef *hsd, uint32_t WideMode)
+DECL|HAL_SD_WriteBlocks_DMA|function|HAL_SD_ErrorTypedef HAL_SD_WriteBlocks_DMA(SD_HandleTypeDef *hsd, uint32_t *pWriteBuffer, uint64_t WriteAddr, uint32_t BlockSize, uint32_t NumberOfBlocks)
+DECL|HAL_SD_WriteBlocks|function|HAL_SD_ErrorTypedef HAL_SD_WriteBlocks(SD_HandleTypeDef *hsd, uint32_t *pWriteBuffer, uint64_t WriteAddr, uint32_t BlockSize, uint32_t NumberOfBlocks)
+DECL|HAL_SD_XferCpltCallback|function|__weak void HAL_SD_XferCpltCallback(SD_HandleTypeDef *hsd)
+DECL|HAL_SD_XferErrorCallback|function|__weak void HAL_SD_XferErrorCallback(SD_HandleTypeDef *hsd)
+DECL|SDIO_CMD0TIMEOUT|macro|SDIO_CMD0TIMEOUT
+DECL|SDIO_STATIC_FLAGS|macro|SDIO_STATIC_FLAGS
+DECL|SD_0TO7BITS|macro|SD_0TO7BITS
+DECL|SD_16TO23BITS|macro|SD_16TO23BITS
+DECL|SD_24TO31BITS|macro|SD_24TO31BITS
+DECL|SD_8TO15BITS|macro|SD_8TO15BITS
+DECL|SD_ALLZERO|macro|SD_ALLZERO
+DECL|SD_CARD_LOCKED|macro|SD_CARD_LOCKED
+DECL|SD_CCCC_ERASE|macro|SD_CCCC_ERASE
+DECL|SD_CCCC_LOCK_UNLOCK|macro|SD_CCCC_LOCK_UNLOCK
+DECL|SD_CCCC_WRITE_PROT|macro|SD_CCCC_WRITE_PROT
+DECL|SD_CHECK_PATTERN|macro|SD_CHECK_PATTERN
+DECL|SD_CmdError|function|static HAL_SD_ErrorTypedef SD_CmdError(SD_HandleTypeDef *hsd)
+DECL|SD_CmdResp1Error|function|static HAL_SD_ErrorTypedef SD_CmdResp1Error(SD_HandleTypeDef *hsd, uint8_t SD_CMD)
+DECL|SD_CmdResp2Error|function|static HAL_SD_ErrorTypedef SD_CmdResp2Error(SD_HandleTypeDef *hsd)
+DECL|SD_CmdResp3Error|function|static HAL_SD_ErrorTypedef SD_CmdResp3Error(SD_HandleTypeDef *hsd)
+DECL|SD_CmdResp6Error|function|static HAL_SD_ErrorTypedef SD_CmdResp6Error(SD_HandleTypeDef *hsd, uint8_t SD_CMD, uint16_t *pRCA)
+DECL|SD_CmdResp7Error|function|static HAL_SD_ErrorTypedef SD_CmdResp7Error(SD_HandleTypeDef *hsd)
+DECL|SD_DATATIMEOUT|macro|SD_DATATIMEOUT
+DECL|SD_DMA_RxCplt|function|static void SD_DMA_RxCplt(DMA_HandleTypeDef *hdma)
+DECL|SD_DMA_RxError|function|static void SD_DMA_RxError(DMA_HandleTypeDef *hdma)
+DECL|SD_DMA_TxCplt|function|static void SD_DMA_TxCplt(DMA_HandleTypeDef *hdma)
+DECL|SD_DMA_TxError|function|static void SD_DMA_TxError(DMA_HandleTypeDef *hdma)
+DECL|SD_FindSCR|function|static HAL_SD_ErrorTypedef SD_FindSCR(SD_HandleTypeDef *hsd, uint32_t *pSCR)
+DECL|SD_GetState|function|static HAL_SD_CardStateTypedef SD_GetState(SD_HandleTypeDef *hsd)
+DECL|SD_HALFFIFOBYTES|macro|SD_HALFFIFOBYTES
+DECL|SD_HALFFIFO|macro|SD_HALFFIFO
+DECL|SD_HIGH_CAPACITY|macro|SD_HIGH_CAPACITY
+DECL|SD_Initialize_Cards|function|static HAL_SD_ErrorTypedef SD_Initialize_Cards(SD_HandleTypeDef *hsd)
+DECL|SD_IsCardProgramming|function|static HAL_SD_ErrorTypedef SD_IsCardProgramming(SD_HandleTypeDef *hsd, uint8_t *pStatus)
+DECL|SD_MAX_DATA_LENGTH|macro|SD_MAX_DATA_LENGTH
+DECL|SD_MAX_VOLT_TRIAL|macro|SD_MAX_VOLT_TRIAL
+DECL|SD_OCR_ADDR_MISALIGNED|macro|SD_OCR_ADDR_MISALIGNED
+DECL|SD_OCR_ADDR_OUT_OF_RANGE|macro|SD_OCR_ADDR_OUT_OF_RANGE
+DECL|SD_OCR_AKE_SEQ_ERROR|macro|SD_OCR_AKE_SEQ_ERROR
+DECL|SD_OCR_BAD_ERASE_PARAM|macro|SD_OCR_BAD_ERASE_PARAM
+DECL|SD_OCR_BLOCK_LEN_ERR|macro|SD_OCR_BLOCK_LEN_ERR
+DECL|SD_OCR_CARD_ECC_DISABLED|macro|SD_OCR_CARD_ECC_DISABLED
+DECL|SD_OCR_CARD_ECC_FAILED|macro|SD_OCR_CARD_ECC_FAILED
+DECL|SD_OCR_CC_ERROR|macro|SD_OCR_CC_ERROR
+DECL|SD_OCR_CID_CSD_OVERWRITE|macro|SD_OCR_CID_CSD_OVERWRITE
+DECL|SD_OCR_COM_CRC_FAILED|macro|SD_OCR_COM_CRC_FAILED
+DECL|SD_OCR_ERASE_RESET|macro|SD_OCR_ERASE_RESET
+DECL|SD_OCR_ERASE_SEQ_ERR|macro|SD_OCR_ERASE_SEQ_ERR
+DECL|SD_OCR_ERRORBITS|macro|SD_OCR_ERRORBITS
+DECL|SD_OCR_GENERAL_UNKNOWN_ERROR|macro|SD_OCR_GENERAL_UNKNOWN_ERROR
+DECL|SD_OCR_ILLEGAL_CMD|macro|SD_OCR_ILLEGAL_CMD
+DECL|SD_OCR_LOCK_UNLOCK_FAILED|macro|SD_OCR_LOCK_UNLOCK_FAILED
+DECL|SD_OCR_STREAM_READ_UNDERRUN|macro|SD_OCR_STREAM_READ_UNDERRUN
+DECL|SD_OCR_STREAM_WRITE_OVERRUN|macro|SD_OCR_STREAM_WRITE_OVERRUN
+DECL|SD_OCR_WP_ERASE_SKIP|macro|SD_OCR_WP_ERASE_SKIP
+DECL|SD_OCR_WRITE_PROT_VIOLATION|macro|SD_OCR_WRITE_PROT_VIOLATION
+DECL|SD_PowerOFF|function|static HAL_SD_ErrorTypedef SD_PowerOFF(SD_HandleTypeDef *hsd)
+DECL|SD_PowerON|function|static HAL_SD_ErrorTypedef SD_PowerON(SD_HandleTypeDef *hsd)
+DECL|SD_R6_COM_CRC_FAILED|macro|SD_R6_COM_CRC_FAILED
+DECL|SD_R6_GENERAL_UNKNOWN_ERROR|macro|SD_R6_GENERAL_UNKNOWN_ERROR
+DECL|SD_R6_ILLEGAL_CMD|macro|SD_R6_ILLEGAL_CMD
+DECL|SD_SDIO_SEND_IF_COND|macro|SD_SDIO_SEND_IF_COND
+DECL|SD_SINGLE_BUS_SUPPORT|macro|SD_SINGLE_BUS_SUPPORT
+DECL|SD_STD_CAPACITY|macro|SD_STD_CAPACITY
+DECL|SD_Select_Deselect|function|static HAL_SD_ErrorTypedef SD_Select_Deselect(SD_HandleTypeDef *hsd, uint64_t Addr)
+DECL|SD_SendStatus|function|static HAL_SD_ErrorTypedef SD_SendStatus(SD_HandleTypeDef *hsd, uint32_t *pCardStatus)
+DECL|SD_VOLTAGE_WINDOW_SD|macro|SD_VOLTAGE_WINDOW_SD
+DECL|SD_WIDE_BUS_SUPPORT|macro|SD_WIDE_BUS_SUPPORT
+DECL|SD_WideBus_Disable|function|static HAL_SD_ErrorTypedef SD_WideBus_Disable(SD_HandleTypeDef *hsd)
+DECL|SD_WideBus_Enable|function|static HAL_SD_ErrorTypedef SD_WideBus_Enable(SD_HandleTypeDef *hsd)
