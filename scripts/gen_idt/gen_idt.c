@@ -1,4 +1,3 @@
-DECL|BFILE|enumerator|BFILE, /* allocated interrupt vector bitmap file */
 DECL|EXECFILE|enumerator|EXECFILE = NUSERFILES, /* for name of executable */
 DECL|IFILE|enumerator|IFILE = 0, /* input file */
 DECL|KERNEL_CODE_SEG_SELECTOR|macro|KERNEL_CODE_SEG_SELECTOR
