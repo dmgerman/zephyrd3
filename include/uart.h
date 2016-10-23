@@ -18,7 +18,6 @@ DECL|irq_callback_set|member|void (*irq_callback_set)(struct device *dev, uart_i
 DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|irq_err_disable|member|void (*irq_err_disable)(struct device *dev);
 DECL|irq_err_enable|member|void (*irq_err_enable)(struct device *dev);
-DECL|irq_input_hook|member|int (*irq_input_hook)(struct device *dev, uint8_t byte);
 DECL|irq_is_pending|member|int (*irq_is_pending)(struct device *dev);
 DECL|irq_rx_disable|member|void (*irq_rx_disable)(struct device *dev);
 DECL|irq_rx_enable|member|void (*irq_rx_enable)(struct device *dev);
@@ -47,8 +46,6 @@ DECL|uart_irq_callback_t|typedef|typedef void (*uart_irq_callback_t)(struct devi
 DECL|uart_irq_config_func_t|typedef|typedef void (*uart_irq_config_func_t)(struct device *port);
 DECL|uart_irq_err_disable|function|static inline void uart_irq_err_disable(struct device *dev)
 DECL|uart_irq_err_enable|function|static inline void uart_irq_err_enable(struct device *dev)
-DECL|uart_irq_input_hook_set|function|static inline void uart_irq_input_hook_set(struct device *dev,int (*hook)(struct device *, uint8_t))
-DECL|uart_irq_input_hook|function|static inline int uart_irq_input_hook(struct device *dev, uint8_t byte)
 DECL|uart_irq_is_pending|function|static inline int uart_irq_is_pending(struct device *dev)
 DECL|uart_irq_rx_disable|function|static inline void uart_irq_rx_disable(struct device *dev)
 DECL|uart_irq_rx_enable|function|static inline void uart_irq_rx_enable(struct device *dev)

@@ -27,6 +27,7 @@ DECL|cursor_forward|function|static inline void cursor_forward(unsigned int coun
 DECL|cursor_restore|function|static inline void cursor_restore(void)
 DECL|cursor_save|function|static inline void cursor_save(void)
 DECL|cur|variable|cur
+DECL|debug_hook_in|variable|debug_hook_in
 DECL|debug_hook_out|variable|debug_hook_out
 DECL|del_char|function|static void del_char(char *pos, uint8_t end)
 DECL|end|variable|end
@@ -37,6 +38,7 @@ DECL|lines_queue|variable|lines_queue
 DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, unsigned int size)
 DECL|uart_console_dev|variable|uart_console_dev
 DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
+DECL|uart_console_in_debug_hook_install|function|void uart_console_in_debug_hook_install(uart_console_in_debug_hook_t hook)
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
 DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
 DECL|uart_console_out_debug_hook_install|function|void uart_console_out_debug_hook_install(uart_console_out_debug_hook_t *hook)

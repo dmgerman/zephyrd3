@@ -33,7 +33,7 @@ DECL|cmds_queue|variable|cmds_queue
 DECL|compress|function|static unsigned char *compress(unsigned char *buf)
 DECL|concat_reboot_feature_if_supported|function|static size_t concat_reboot_feature_if_supported(size_t size)
 DECL|concat_reboot_feature_if_supported|macro|concat_reboot_feature_if_supported
-DECL|console_irq_input_hook|function|static int console_irq_input_hook(struct device *dev, uint8_t ch)
+DECL|console_irq_input_hook|function|static int console_irq_input_hook(uint8_t ch)
 DECL|control_loop|function|static void control_loop(void)
 DECL|cpu_pending_signal|variable|cpu_pending_signal
 DECL|cpu_stop_bp_type|variable|cpu_stop_bp_type
