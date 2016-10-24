@@ -1,4 +1,5 @@
 DECL|_sem_desc|struct|struct _sem_desc {
+DECL|_sem_give_non_preemptible|function|void _sem_give_non_preemptible(struct k_sem *sem)
 DECL|_sem_thread|struct|struct _sem_thread {
 DECL|desc|member|struct _sem_desc desc;
 DECL|dummy|member|struct tcs_base dummy;
