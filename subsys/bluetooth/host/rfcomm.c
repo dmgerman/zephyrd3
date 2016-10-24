@@ -31,6 +31,7 @@ DECL|rfcomm_dlc_disconnect|function|static void rfcomm_dlc_disconnect(struct bt_
 DECL|rfcomm_dlc_drop|function|static void rfcomm_dlc_drop(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_init|function|static void rfcomm_dlc_init(struct bt_rfcomm_dlc *dlc, struct bt_rfcomm_session *session, uint8_t dlci, bt_rfcomm_role_t role)
 DECL|rfcomm_dlc_security|function|static enum security_result rfcomm_dlc_security(struct bt_rfcomm_dlc *dlc)
+DECL|rfcomm_dlc_start|function|static void rfcomm_dlc_start(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_tx_give_credits|function|static void rfcomm_dlc_tx_give_credits(struct bt_rfcomm_dlc *dlc, uint8_t credits)
 DECL|rfcomm_dlc_tx_thread|function|static void rfcomm_dlc_tx_thread(void *p1, void *p2, void *p3)
 DECL|rfcomm_dlc_update_credits|function|static void rfcomm_dlc_update_credits(struct bt_rfcomm_dlc *dlc)
