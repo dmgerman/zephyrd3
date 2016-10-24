@@ -21,9 +21,9 @@ DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_MBOX_DEFINE|macro|K_MBOX_DEFINE
 DECL|K_MBOX_INITIALIZER|macro|K_MBOX_INITIALIZER
-DECL|K_MEM_MAP_DEFINE|macro|K_MEM_MAP_DEFINE
-DECL|K_MEM_MAP_INITIALIZER|macro|K_MEM_MAP_INITIALIZER
 DECL|K_MEM_POOL_DEFINE|macro|K_MEM_POOL_DEFINE
+DECL|K_MEM_SLAB_DEFINE|macro|K_MEM_SLAB_DEFINE
+DECL|K_MEM_SLAB_INITIALIZER|macro|K_MEM_SLAB_INITIALIZER
 DECL|K_MSGQ_DEFINE|macro|K_MSGQ_DEFINE
 DECL|K_MSGQ_INITIALIZER|macro|K_MSGQ_INITIALIZER
 DECL|K_MUTEX_DEFINE|macro|K_MUTEX_DEFINE
@@ -121,12 +121,12 @@ DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
 DECL|k_mbox|struct|struct k_mbox {
 DECL|k_mem_block|struct|struct k_mem_block {
-DECL|k_mem_map_num_free_get|function|static inline uint32_t k_mem_map_num_free_get(struct k_mem_map *map)
-DECL|k_mem_map_num_used_get|function|static inline uint32_t k_mem_map_num_used_get(struct k_mem_map *map)
-DECL|k_mem_map|struct|struct k_mem_map {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
 DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
 DECL|k_mem_pool|struct|struct k_mem_pool {
+DECL|k_mem_slab_num_free_get|function|static inline uint32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
+DECL|k_mem_slab_num_used_get|function|static inline uint32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
+DECL|k_mem_slab|struct|struct k_mem_slab {
 DECL|k_msgq_num_free_get|function|static inline uint32_t k_msgq_num_free_get(struct k_msgq *q)
 DECL|k_msgq_num_used_get|function|static inline uint32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
