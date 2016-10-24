@@ -21,6 +21,7 @@ DECL|STRING|macro|STRING
 DECL|STRING|macro|STRING
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|adjust_insert_offset|function|static inline struct net_buf *adjust_insert_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|adjust_write_offset|function|static inline struct net_buf *adjust_write_offset(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos)
 DECL|check_and_create_data|function|static inline struct net_buf *check_and_create_data(struct net_buf *buf, struct net_buf *data)
@@ -49,6 +50,7 @@ DECL|inc_free_tx_bufs_func|macro|inc_free_tx_bufs_func
 DECL|inc_free_tx_bufs_func|macro|inc_free_tx_bufs_func
 DECL|inc_free_tx_bufs|function|static inline void inc_free_tx_bufs(struct net_buf *buf)
 DECL|inc_free_tx_bufs|macro|inc_free_tx_bufs
+DECL|insert_data|function|static inline bool insert_data(struct net_buf *buf, struct net_buf *frag, struct net_buf *temp, uint16_t offset, uint16_t len, uint8_t *data)
 DECL|is_from_data_pool|function|static inline bool is_from_data_pool(struct net_buf *buf)
 DECL|net_nbuf_append_bytes|function|static inline bool net_nbuf_append_bytes(struct net_buf *buf, uint8_t *value, uint16_t len)
 DECL|net_nbuf_append|function|bool net_nbuf_append(struct net_buf *buf, uint16_t len, uint8_t *data)
@@ -69,6 +71,7 @@ DECL|net_nbuf_get_rx|function|struct net_buf *net_nbuf_get_rx(struct net_context
 DECL|net_nbuf_get_tx_debug|function|struct net_buf *net_nbuf_get_tx_debug(struct net_context *context, const char *caller, int line)
 DECL|net_nbuf_get_tx|function|struct net_buf *net_nbuf_get_tx(struct net_context *context)
 DECL|net_nbuf_init|function|void net_nbuf_init(void)
+DECL|net_nbuf_insert|function|bool net_nbuf_insert(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t len, uint8_t *data)
 DECL|net_nbuf_is_compact|function|bool net_nbuf_is_compact(struct net_buf *buf)
 DECL|net_nbuf_print_frags|function|void net_nbuf_print_frags(struct net_buf *buf)
 DECL|net_nbuf_print|function|void net_nbuf_print(void)

@@ -39,6 +39,9 @@ DECL|net_nbuf_get_rx|macro|net_nbuf_get_rx
 DECL|net_nbuf_get_tx|macro|net_nbuf_get_tx
 DECL|net_nbuf_icmp_data|function|static inline uint8_t *net_nbuf_icmp_data(struct net_buf *buf)
 DECL|net_nbuf_iface|function|static inline struct net_if *net_nbuf_iface(struct net_buf *buf)
+DECL|net_nbuf_insert_be16|function|static inline bool net_nbuf_insert_be16(struct net_buf *buf,struct net_buf *frag, uint16_t offset, uint16_t data)
+DECL|net_nbuf_insert_be32|function|static inline bool net_nbuf_insert_be32(struct net_buf *buf,struct net_buf *frag, uint16_t offset, uint32_t data)
+DECL|net_nbuf_insert_u8|function|static inline bool net_nbuf_insert_u8(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint8_t data)
 DECL|net_nbuf_ip_data|function|static inline uint8_t *net_nbuf_ip_data(struct net_buf *buf)
 DECL|net_nbuf_ip_hdr_len|function|static inline uint8_t net_nbuf_ip_hdr_len(struct net_buf *buf)
 DECL|net_nbuf_ll_clear|function|static inline void net_nbuf_ll_clear(struct net_buf *buf)
