@@ -117,7 +117,7 @@ DECL|nano_lifo|macro|nano_lifo
 DECL|nano_sem_count_get|macro|nano_sem_count_get
 DECL|nano_sem_give|macro|nano_sem_give
 DECL|nano_sem_init|function|static inline void nano_sem_init(struct nano_sem *sem)
-DECL|nano_sem_take|function|static inline int nano_sem_take(struct nano_sem *sem, int32_t timeout)
+DECL|nano_sem_take|function|static inline int nano_sem_take(struct nano_sem *sem, int32_t timeout_in_ticks)
 DECL|nano_sem|macro|nano_sem
 DECL|nano_stack_init|function|static inline void nano_stack_init(struct nano_stack *stack, uint32_t *data)
 DECL|nano_stack_pop|function|static inline int nano_stack_pop(struct nano_stack *stack, uint32_t *data, int32_t timeout_in_ticks)
@@ -140,6 +140,7 @@ DECL|nano_task_workqueue_start|macro|nano_task_workqueue_start
 DECL|nano_thread_id_t|macro|nano_thread_id_t
 DECL|nano_timer_init|function|static inline void nano_timer_init(struct k_timer *timer, void *data)
 DECL|nano_timer_start|function|static inline void nano_timer_start(struct nano_timer *timer, int ticks)
+DECL|nano_timer_stop|function|static inline void nano_timer_stop(struct nano_timer *timer)
 DECL|nano_timer_ticks_remain|function|static inline int32_t nano_timer_ticks_remain(struct nano_timer *timer)
 DECL|nano_timer|macro|nano_timer
 DECL|nano_work_init|macro|nano_work_init
@@ -157,7 +158,7 @@ DECL|size|member|uint32_t size;
 DECL|stack_size|member|unsigned stack_size;
 DECL|stack|member|char *stack;
 DECL|sys_cycle_get_32|macro|sys_cycle_get_32
-DECL|sys_scheduler_time_slice_set|function|static inline void sys_scheduler_time_slice_set(int32_t ticks,kpriority_t prio)
+DECL|sys_scheduler_time_slice_set|function|static inline void sys_scheduler_time_slice_set(int32_t ticks,kpriority_t priority)
 DECL|sys_thread_busy_wait|macro|sys_thread_busy_wait
 DECL|sys_thread_self_get|macro|sys_thread_self_get
 DECL|task_abort|macro|task_abort
@@ -192,9 +193,9 @@ DECL|task_mem_map_used_get|function|static inline int task_mem_map_used_get(kmem
 DECL|task_mem_pool_alloc|function|static inline int task_mem_pool_alloc(struct k_block *blockptr, kmemory_pool_t pool_id, int reqsize, int32_t timeout)
 DECL|task_mem_pool_defragment|macro|task_mem_pool_defragment
 DECL|task_mem_pool_free|macro|task_mem_pool_free
-DECL|task_mutex_lock|function|static inline int task_mutex_lock(kmutex_t id, int32_t timeout)
-DECL|task_mutex_unlock|macro|task_mutex_unlock
-DECL|task_pipe_block_put|function|static inline int task_pipe_block_put(kpipe_t id, struct k_block block, int size, ksem_t sema)
+DECL|task_mutex_lock|function|static inline int task_mutex_lock(kmutex_t mutex, int32_t timeout)
+DECL|task_mutex_unlock|function|static inline void task_mutex_unlock(kmutex_t mutex)
+DECL|task_pipe_block_put|function|static inline int task_pipe_block_put(kpipe_t id, struct k_block block, int size, ksem_t sem)
 DECL|task_pipe_get|function|static inline int task_pipe_get(kpipe_t id, void *buffer, int bytes_to_read,int *bytes_read, K_PIPE_OPTION options, int32_t timeout)
 DECL|task_pipe_put|function|static inline int task_pipe_put(kpipe_t id, void *buffer, int bytes_to_write,int *bytes_written, K_PIPE_OPTION options, int32_t timeout)
 DECL|task_priority_get|macro|task_priority_get
