@@ -3,8 +3,6 @@ DECL|NET_IP_MAX_OPTIONS|macro|NET_IP_MAX_OPTIONS
 DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
 DECL|NET_MAX_TCP_CONTEXT|macro|NET_MAX_TCP_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|a2u16|function|static inline uint32_t a2u16(uint8_t *a)
-DECL|a2u32|function|static inline uint32_t a2u32(uint8_t *a)
 DECL|ack|member|uint32_t ack;
 DECL|data|member|struct net_buf *data;
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
