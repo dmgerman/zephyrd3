@@ -22,6 +22,8 @@ DECL|STRING|macro|STRING
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
+DECL|adjust_write_offset|function|static inline struct net_buf *adjust_write_offset(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos)
+DECL|check_and_create_data|function|static inline struct net_buf *check_and_create_data(struct net_buf *buf, struct net_buf *data)
 DECL|dec_free_data_bufs|function|static inline void dec_free_data_bufs(struct net_buf *buf)
 DECL|dec_free_data_bufs|macro|dec_free_data_bufs
 DECL|dec_free_rx_bufs|function|static inline void dec_free_rx_bufs(struct net_buf *buf)
@@ -78,6 +80,7 @@ DECL|net_nbuf_read_byte|function|static inline struct net_buf *net_nbuf_read_byt
 DECL|net_nbuf_read|function|struct net_buf *net_nbuf_read(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t len, uint8_t *data)
 DECL|net_nbuf_ref_debug|function|struct net_buf *net_nbuf_ref_debug(struct net_buf *buf, const char *caller, int line) #else struct net_buf *net_nbuf_ref(struct net_buf *buf) #endif
 DECL|net_nbuf_unref_debug|function|void net_nbuf_unref_debug(struct net_buf *buf, const char *caller, int line)
+DECL|net_nbuf_write|function|struct net_buf *net_nbuf_write(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos, uint16_t len, uint8_t *data)
 DECL|num_free_data_bufs|variable|num_free_data_bufs
 DECL|num_free_rx_bufs|variable|num_free_rx_bufs
 DECL|num_free_tx_bufs|variable|num_free_tx_bufs
