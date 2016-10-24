@@ -4,6 +4,8 @@ DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|PRINT_STATISTICS_INTERVAL|macro|PRINT_STATISTICS_INTERVAL
 DECL|PRINT|macro|PRINT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|check_unknown_option|function|static inline struct net_buf *check_unknown_option(struct net_buf *buf, uint8_t opt_type, uint16_t length)
+DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_buf *buf, struct net_buf *frag, int total_len, uint16_t len, uint16_t offset,
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|l2_init|function|static inline void l2_init(void)
 DECL|l3_init|function|static inline void l3_init(void)
