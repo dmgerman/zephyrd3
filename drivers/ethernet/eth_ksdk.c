@@ -5,7 +5,7 @@ DECL|enet_handle|member|enet_handle_t enet_handle;
 DECL|eth_0_config_func|function|static void eth_0_config_func(void)
 DECL|eth_0_context|variable|eth_0_context
 DECL|eth_0_init|function|static int eth_0_init(struct device *dev)
-DECL|eth_callback|function|void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
+DECL|eth_callback|function|static void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
 DECL|eth_context|struct|struct eth_context {
 DECL|eth_ksdk_error_isr|function|static void eth_ksdk_error_isr(void *p)
 DECL|eth_ksdk_rx_isr|function|static void eth_ksdk_rx_isr(void *p)
