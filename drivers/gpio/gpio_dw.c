@@ -25,11 +25,11 @@ DECL|gpio_0_runtime|variable|gpio_0_runtime
 DECL|gpio_1_runtime|variable|gpio_1_runtime
 DECL|gpio_2_runtime|variable|gpio_2_runtime
 DECL|gpio_3_runtime|variable|gpio_3_runtime
-DECL|gpio_config_0_irq|function|void gpio_config_0_irq(struct device *port)
+DECL|gpio_config_0_irq|function|static void gpio_config_0_irq(struct device *port)
 DECL|gpio_config_0|variable|gpio_config_0
-DECL|gpio_config_1_irq|function|void gpio_config_1_irq(struct device *port)
-DECL|gpio_config_2_irq|function|void gpio_config_2_irq(struct device *port)
-DECL|gpio_config_3_irq|function|void gpio_config_3_irq(struct device *port)
+DECL|gpio_config_1_irq|function|static void gpio_config_1_irq(struct device *port)
+DECL|gpio_config_2_irq|function|static void gpio_config_2_irq(struct device *port)
+DECL|gpio_config_3_irq|function|static void gpio_config_3_irq(struct device *port)
 DECL|gpio_dw_config_1|variable|gpio_dw_config_1
 DECL|gpio_dw_config_2|variable|gpio_dw_config_2
 DECL|gpio_dw_config_3|variable|gpio_dw_config_3
@@ -38,7 +38,7 @@ DECL|gpio_dw_device_ctrl|function|static int gpio_dw_device_ctrl(struct device *
 DECL|gpio_dw_disable_callback|function|static inline int gpio_dw_disable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_dw_enable_callback|function|static inline int gpio_dw_enable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_dw_get_power_state|function|static uint32_t gpio_dw_get_power_state(struct device *port)
-DECL|gpio_dw_initialize|function|int gpio_dw_initialize(struct device *port)
+DECL|gpio_dw_initialize|function|static int gpio_dw_initialize(struct device *port)
 DECL|gpio_dw_isr|function|void gpio_dw_isr(void *arg)
 DECL|gpio_dw_manage_callback|function|static inline int gpio_dw_manage_callback(struct device *port, struct gpio_callback *callback, bool set)
 DECL|gpio_dw_read|function|static inline int gpio_dw_read(struct device *port, int access_op, uint32_t pin, uint32_t *value)
