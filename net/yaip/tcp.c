@@ -33,4 +33,5 @@ DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
 DECL|tcp_lock|variable|tcp_lock
 DECL|tcp_segment|struct|struct tcp_segment {
+DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
 DECL|wnd|member|uint16_t wnd;
