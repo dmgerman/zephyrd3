@@ -40,7 +40,7 @@ DECL|gpio_pcal9535a_config|function|static int gpio_pcal9535a_config(struct devi
 DECL|gpio_pcal9535a_disable_callback|function|static int gpio_pcal9535a_disable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_pcal9535a_drv_api_funcs|variable|gpio_pcal9535a_drv_api_funcs
 DECL|gpio_pcal9535a_enable_callback|function|static int gpio_pcal9535a_enable_callback(struct device *dev, int access_op, uint32_t pin)
-DECL|gpio_pcal9535a_init|function|int gpio_pcal9535a_init(struct device *dev)
+DECL|gpio_pcal9535a_init|function|static int gpio_pcal9535a_init(struct device *dev)
 DECL|gpio_pcal9535a_manage_callback|function|static int gpio_pcal9535a_manage_callback(struct device *dev, struct gpio_callback *callback, bool set)
 DECL|gpio_pcal9535a_read|function|static int gpio_pcal9535a_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
 DECL|gpio_pcal9535a_write|function|static int gpio_pcal9535a_write(struct device *dev, int access_op,uint32_t pin, uint32_t value)
