@@ -159,7 +159,6 @@ DECL|sys_cycle_get_32|macro|sys_cycle_get_32
 DECL|sys_scheduler_time_slice_set|function|static inline void sys_scheduler_time_slice_set(int32_t ticks,kpriority_t prio)
 DECL|sys_thread_busy_wait|macro|sys_thread_busy_wait
 DECL|sys_thread_self_get|macro|sys_thread_self_get
-DECL|task_abort_handler_set|macro|task_abort_handler_set
 DECL|task_abort|macro|task_abort
 DECL|task_entry_set|macro|task_entry_set
 DECL|task_event_handler_set|function|static inline int task_event_handler_set(kevent_t legacy_event, kevent_handler_t handler)
