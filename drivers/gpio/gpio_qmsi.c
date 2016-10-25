@@ -21,7 +21,7 @@ DECL|gpio_qmsi_device_ctrl|function|static int gpio_qmsi_device_ctrl(struct devi
 DECL|gpio_qmsi_disable_callback|function|static inline int gpio_qmsi_disable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_qmsi_enable_callback|function|static inline int gpio_qmsi_enable_callback(struct device *port, int access_op, uint32_t pin)
 DECL|gpio_qmsi_get_power_state|function|static uint32_t gpio_qmsi_get_power_state(struct device *dev)
-DECL|gpio_qmsi_init|function|int gpio_qmsi_init(struct device *port)
+DECL|gpio_qmsi_init|function|static int gpio_qmsi_init(struct device *port)
 DECL|gpio_qmsi_manage_callback|function|static inline int gpio_qmsi_manage_callback(struct device *port, struct gpio_callback *callback, bool set)
 DECL|gpio_qmsi_read|function|static inline int gpio_qmsi_read(struct device *port, int access_op, uint32_t pin, uint32_t *value)
 DECL|gpio_qmsi_runtime|struct|struct gpio_qmsi_runtime {
