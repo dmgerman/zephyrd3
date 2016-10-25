@@ -15,5 +15,5 @@ DECL|_TASK_PENDQ_INIT|macro|_TASK_PENDQ_INIT
 DECL|_data_copy|function|static inline void _data_copy(void)
 DECL|_thread_arg_t|typedef|typedef void *_thread_arg_t;
 DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(_thread_arg_t arg1,
-DECL|_thread_exit|macro|_thread_exit
+DECL|_thread_monitor_exit|macro|_thread_monitor_exit
 DECL|tTCS|typedef|typedef struct tcs tTCS;

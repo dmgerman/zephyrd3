@@ -12,7 +12,7 @@ DECL|_k_thread_single_suspend|function|void _k_thread_single_suspend(struct k_th
 DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(void (*entry)(void *, void *, void *), void *p1, void *p2, void *p3)
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
-DECL|_thread_exit|function|void _thread_exit(struct k_thread *thread)
+DECL|_thread_monitor_exit|function|void _thread_monitor_exit(struct k_thread *thread)
 DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_thread_data *thread_data, uint32_t groups)
 DECL|k_am_in_isr|function|int k_am_in_isr(void)
 DECL|k_busy_wait|function|void k_busy_wait(uint32_t usec_to_wait)
