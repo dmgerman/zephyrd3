@@ -1,15 +1,3 @@
-DECL|ATUSB_BUFFER_SIZE|macro|ATUSB_BUFFER_SIZE
-DECL|ATUSB_BULK_EP_MPS|macro|ATUSB_BULK_EP_MPS
-DECL|ATUSB_CLASS_MAX_DATA_SIZE|macro|ATUSB_CLASS_MAX_DATA_SIZE
-DECL|ATUSB_CONF_SIZE|macro|ATUSB_CONF_SIZE
-DECL|ATUSB_ENDP_BULK_IN|macro|ATUSB_ENDP_BULK_IN
-DECL|ATUSB_IF1_NUM_EP|macro|ATUSB_IF1_NUM_EP
-DECL|ATUSB_INTERRUPT_EP_MPS|macro|ATUSB_INTERRUPT_EP_MPS
-DECL|ATUSB_NUM_CONF|macro|ATUSB_NUM_CONF
-DECL|ATUSB_NUM_EP|macro|ATUSB_NUM_EP
-DECL|ATUSB_NUM_ITF|macro|ATUSB_NUM_ITF
-DECL|ATUSB_PROTOCOL|macro|ATUSB_PROTOCOL
-DECL|ATUSB_SUBCLASS|macro|ATUSB_SUBCLASS
 DECL|DEVICE_RELNUM|macro|DEVICE_RELNUM
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|HIGH_BYTE|macro|HIGH_BYTE
@@ -17,6 +5,18 @@ DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|PRODUCT_ID|macro|PRODUCT_ID
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|VENDOR_ID|macro|VENDOR_ID
+DECL|WPANUSB_BUFFER_SIZE|macro|WPANUSB_BUFFER_SIZE
+DECL|WPANUSB_BULK_EP_MPS|macro|WPANUSB_BULK_EP_MPS
+DECL|WPANUSB_CLASS_MAX_DATA_SIZE|macro|WPANUSB_CLASS_MAX_DATA_SIZE
+DECL|WPANUSB_CONF_SIZE|macro|WPANUSB_CONF_SIZE
+DECL|WPANUSB_ENDP_BULK_IN|macro|WPANUSB_ENDP_BULK_IN
+DECL|WPANUSB_IF1_NUM_EP|macro|WPANUSB_IF1_NUM_EP
+DECL|WPANUSB_INTERRUPT_EP_MPS|macro|WPANUSB_INTERRUPT_EP_MPS
+DECL|WPANUSB_NUM_CONF|macro|WPANUSB_NUM_CONF
+DECL|WPANUSB_NUM_EP|macro|WPANUSB_NUM_EP
+DECL|WPANUSB_NUM_ITF|macro|WPANUSB_NUM_ITF
+DECL|WPANUSB_PROTOCOL|macro|WPANUSB_PROTOCOL
+DECL|WPANUSB_SUBCLASS|macro|WPANUSB_SUBCLASS
 DECL|__dev|variable|__dev
 DECL|buffer|variable|buffer
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
@@ -25,7 +25,7 @@ DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
 DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_buf *buf)
 DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_buf *buf)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
-DECL|interface_data|member|uint8_t interface_data[ATUSB_CLASS_MAX_DATA_SIZE];
+DECL|interface_data|member|uint8_t interface_data[WPANUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
 DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_buf *buf)
 DECL|notification_sent|member|uint8_t notification_sent;
