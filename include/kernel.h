@@ -1,12 +1,12 @@
+DECL|K_ALERT_DEFAULT|macro|K_ALERT_DEFAULT
+DECL|K_ALERT_DEFINE|macro|K_ALERT_DEFINE
+DECL|K_ALERT_IGNORE|macro|K_ALERT_IGNORE
+DECL|K_ALERT_INITIALIZER|macro|K_ALERT_INITIALIZER
 DECL|K_ANY|macro|K_ANY
 DECL|K_COOP_THREAD|enumerator|K_COOP_THREAD,
 DECL|K_DEBUG|macro|K_DEBUG
 DECL|K_DEBUG|macro|K_DEBUG
 DECL|K_END|macro|K_END
-DECL|K_EVENT_DEFINE|macro|K_EVENT_DEFINE
-DECL|K_EVENT_INITIALIZER|macro|K_EVENT_INITIALIZER
-DECL|K_EVT_DEFAULT|macro|K_EVT_DEFAULT
-DECL|K_EVT_IGNORE|macro|K_EVT_IGNORE
 DECL|K_FIFO_DEFINE|macro|K_FIFO_DEFINE
 DECL|K_FIFO_INITIALIZER|macro|K_FIFO_INITIALIZER
 DECL|K_FOREVER|macro|K_FOREVER
@@ -98,7 +98,7 @@ DECL|fifo|member|struct k_fifo fifo;
 DECL|flags|member|atomic_t flags[1];
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
-DECL|handler|member|k_event_handler_t handler;
+DECL|handler|member|k_alert_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
 DECL|info|member|uint32_t info;
 DECL|init_abort|member|void (*init_abort)(void);
@@ -112,10 +112,10 @@ DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
+DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *);
+DECL|k_alert|struct|struct k_alert {
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work, int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
-DECL|k_event_handler_t|typedef|typedef int (*k_event_handler_t)(struct k_event *);
-DECL|k_event|struct|struct k_event {
 DECL|k_fifo|struct|struct k_fifo {
 DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
