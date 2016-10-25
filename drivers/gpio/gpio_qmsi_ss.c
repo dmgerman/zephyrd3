@@ -16,9 +16,7 @@ DECL|ss_gpio_0_config|variable|ss_gpio_0_config
 DECL|ss_gpio_0_runtime|variable|ss_gpio_0_runtime
 DECL|ss_gpio_1_config|variable|ss_gpio_1_config
 DECL|ss_gpio_isr|function|void ss_gpio_isr(void *arg)
-DECL|ss_gpio_qmsi_0_int_callback|function|static void ss_gpio_qmsi_0_int_callback(void *data, uint32_t status)
-DECL|ss_gpio_qmsi_1_int_callback|function|static void ss_gpio_qmsi_1_int_callback(void *data, uint32_t status)
-DECL|ss_gpio_qmsi_callback|function|static void ss_gpio_qmsi_callback(struct device *port, uint32_t status)
+DECL|ss_gpio_qmsi_callback|function|static void ss_gpio_qmsi_callback(void *data, uint32_t status)
 DECL|ss_gpio_qmsi_config|function|static inline int ss_gpio_qmsi_config(struct device *port, int access_op, uint32_t pin, int flags)
 DECL|ss_gpio_qmsi_config|struct|struct ss_gpio_qmsi_config {
 DECL|ss_gpio_qmsi_disable_callback|function|static inline int ss_gpio_qmsi_disable_callback(struct device *port,int access_op, uint32_t pin)
