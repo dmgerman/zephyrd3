@@ -8,10 +8,10 @@ DECL|gpio_sam3_b_cfg|variable|gpio_sam3_b_cfg
 DECL|gpio_sam3_b_runtime|variable|gpio_sam3_b_runtime
 DECL|gpio_sam3_c_cfg|variable|gpio_sam3_c_cfg
 DECL|gpio_sam3_c_runtime|variable|gpio_sam3_c_runtime
-DECL|gpio_sam3_config_a|function|void gpio_sam3_config_a(struct device *dev)
-DECL|gpio_sam3_config_b|function|void gpio_sam3_config_b(struct device *dev)
-DECL|gpio_sam3_config_c|function|void gpio_sam3_config_c(struct device *dev)
-DECL|gpio_sam3_config_d|function|void gpio_sam3_config_d(struct device *dev)
+DECL|gpio_sam3_config_a|function|static void gpio_sam3_config_a(struct device *dev)
+DECL|gpio_sam3_config_b|function|static void gpio_sam3_config_b(struct device *dev)
+DECL|gpio_sam3_config_c|function|static void gpio_sam3_config_c(struct device *dev)
+DECL|gpio_sam3_config_d|function|static void gpio_sam3_config_d(struct device *dev)
 DECL|gpio_sam3_config|function|static int gpio_sam3_config(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|gpio_sam3_config|struct|struct gpio_sam3_config {
 DECL|gpio_sam3_d_cfg|variable|gpio_sam3_d_cfg
