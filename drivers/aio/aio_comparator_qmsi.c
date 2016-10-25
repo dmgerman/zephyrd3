@@ -7,8 +7,8 @@ DECL|aio_qmsi_cmp_configure|function|static int aio_qmsi_cmp_configure(struct de
 DECL|aio_qmsi_cmp_dev_data_t|struct|struct aio_qmsi_cmp_dev_data_t {
 DECL|aio_qmsi_cmp_dev_data|variable|aio_qmsi_cmp_dev_data
 DECL|aio_qmsi_cmp_disable|function|static int aio_qmsi_cmp_disable(struct device *dev, uint8_t index)
-DECL|aio_qmsi_cmp_init|function|int aio_qmsi_cmp_init(struct device *dev)
-DECL|aio_qmsi_cmp_isr|function|void aio_qmsi_cmp_isr(struct device *dev)
+DECL|aio_qmsi_cmp_init|function|static int aio_qmsi_cmp_init(struct device *dev)
+DECL|aio_qmsi_cmp_isr|function|static void aio_qmsi_cmp_isr(struct device *dev)
 DECL|cb|member|aio_cmp_cb cb;
 DECL|cb|member|struct aio_qmsi_cmp_cb cb[AIO_QMSI_CMP_COUNT];
 DECL|config|variable|config
