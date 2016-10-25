@@ -42,7 +42,7 @@ DECL|UART_IRQ_MASK_TX|macro|UART_IRQ_MASK_TX
 DECL|UART_STRUCT|macro|UART_STRUCT
 DECL|_uart|struct|struct _uart {
 DECL|baud_rate|member|uint32_t baud_rate; /**< Baud rate */
-DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
+DECL|baudrate_set|function|static int baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
 DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
 DECL|uart_nrf5_dev_cfg_0|variable|uart_nrf5_dev_cfg_0
 DECL|uart_nrf5_dev_data_0|variable|uart_nrf5_dev_data_0
