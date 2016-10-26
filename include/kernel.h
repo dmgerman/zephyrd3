@@ -108,6 +108,7 @@ DECL|init_abort|member|void (*init_abort)(void);
 DECL|init_delay|member|int32_t init_delay;
 DECL|init_entry|member|void (*init_entry)(void *, void *, void *);
 DECL|init_groups|member|uint32_t init_groups;
+DECL|init_options|member|uint32_t init_options;
 DECL|init_p1|member|void *init_p1;
 DECL|init_p2|member|void *init_p2;
 DECL|init_p3|member|void *init_p3;
