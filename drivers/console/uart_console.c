@@ -1,4 +1,5 @@
 DECL|ANSI_BACKWARD|macro|ANSI_BACKWARD
+DECL|ANSI_DEL|macro|ANSI_DEL
 DECL|ANSI_DOWN|macro|ANSI_DOWN
 DECL|ANSI_END|macro|ANSI_END
 DECL|ANSI_ESC|macro|ANSI_ESC
@@ -34,7 +35,7 @@ DECL|debug_hook_out|variable|debug_hook_out
 DECL|del_char|function|static void del_char(char *pos, uint8_t end)
 DECL|end|variable|end
 DECL|esc_state|variable|esc_state
-DECL|handle_ansi|function|static void handle_ansi(uint8_t byte)
+DECL|handle_ansi|function|static void handle_ansi(uint8_t byte, char *line)
 DECL|insert_char|function|static void insert_char(char *pos, char c, uint8_t end)
 DECL|lines_queue|variable|lines_queue
 DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, unsigned int size)
