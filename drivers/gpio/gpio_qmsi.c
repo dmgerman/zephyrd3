@@ -7,11 +7,10 @@ DECL|gpio_0_config|variable|gpio_0_config
 DECL|gpio_0_runtime|variable|gpio_0_runtime
 DECL|gpio_aon_config|variable|gpio_aon_config
 DECL|gpio_aon_device_ctrl|function|static int gpio_aon_device_ctrl(struct device *port, uint32_t ctrl_command,void *context)
-DECL|gpio_aon_resume_device_from_suspend|function|static int gpio_aon_resume_device_from_suspend(struct device *dev)
 DECL|gpio_aon_runtime|variable|gpio_aon_runtime
-DECL|gpio_aon_suspend_device|function|static int gpio_aon_suspend_device(struct device *dev)
 DECL|gpio_critical_region_end|function|static void gpio_critical_region_end(struct device *dev)
 DECL|gpio_critical_region_start|function|static void gpio_critical_region_start(struct device *dev)
+DECL|gpio_ctx|variable|gpio_ctx
 DECL|gpio_qmsi_callback|function|static void gpio_qmsi_callback(void *data, uint32_t status)
 DECL|gpio_qmsi_config|function|static inline int gpio_qmsi_config(struct device *port, int access_op, uint32_t pin, int flags)
 DECL|gpio_qmsi_config|struct|struct gpio_qmsi_config {
@@ -31,8 +30,6 @@ DECL|gpio_reentrancy_init|function|static void gpio_reentrancy_init(struct devic
 DECL|gpio_resume_device_from_suspend|function|static int gpio_resume_device_from_suspend(struct device *dev)
 DECL|gpio_suspend_device|function|static int gpio_suspend_device(struct device *dev)
 DECL|gpio|member|qm_gpio_t gpio;
-DECL|int_gpio_aon_mask_save|variable|int_gpio_aon_mask_save
-DECL|int_gpio_mask_save|variable|int_gpio_mask_save
 DECL|num_pins|member|uint8_t num_pins;
 DECL|pin_callbacks|member|uint32_t pin_callbacks;
 DECL|qmsi_pin_config|function|static inline void qmsi_pin_config(struct device *port, uint32_t pin, int flags)
@@ -40,5 +37,4 @@ DECL|qmsi_port_config|function|static inline void qmsi_port_config(struct device
 DECL|qmsi_write_bit|function|static void qmsi_write_bit(uint32_t *target, uint8_t bit, uint8_t value)
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|save_reg|variable|save_reg
 DECL|sem|member|struct nano_sem sem;
