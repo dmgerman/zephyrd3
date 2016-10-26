@@ -6,6 +6,7 @@ DECL|REACHABLE_TIME|macro|REACHABLE_TIME
 DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|check_global_addr|function|static inline struct in6_addr *check_global_addr(struct net_if *iface)
 DECL|dad_timeout|function|static void dad_timeout(struct nano_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
@@ -33,6 +34,8 @@ DECL|net_if_ipv6_addr_onlink|function|bool net_if_ipv6_addr_onlink(struct net_if
 DECL|net_if_ipv6_addr_rm|function|bool net_if_ipv6_addr_rm(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_calc_reachable_time|function|uint32_t net_if_ipv6_calc_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_best_match|function|static inline struct in6_addr *net_if_ipv6_get_best_match(struct net_if *iface, struct in6_addr *dst, uint8_t *best_so_far)
+DECL|net_if_ipv6_get_global_addr|function|struct in6_addr *net_if_ipv6_get_global_addr(struct net_if **iface)
+DECL|net_if_ipv6_get_ll_addr|function|struct in6_addr *net_if_ipv6_get_ll_addr(enum net_addr_state state, struct net_if **iface)
 DECL|net_if_ipv6_get_ll|function|struct in6_addr *net_if_ipv6_get_ll(struct net_if *iface, enum net_addr_state addr_state)
 DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_add(struct net_if *iface,struct in6_addr *addr)
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(const struct in6_addr *maddr, struct net_if **ret)
