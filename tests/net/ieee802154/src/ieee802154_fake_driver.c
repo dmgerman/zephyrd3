@@ -10,3 +10,4 @@ DECL|fake_set_txpower|function|static int fake_set_txpower(struct device *dev, i
 DECL|fake_start|function|static int fake_start(struct device *dev)
 DECL|fake_stop|function|static int fake_stop(struct device *dev)
 DECL|fake_tx|function|static int fake_tx(struct device *dev, struct net_buf *buf)
+DECL|insert_frag_dummy_way|function|static inline void insert_frag_dummy_way(struct net_buf *buf)
