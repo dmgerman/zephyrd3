@@ -26,6 +26,8 @@ DECL|offer|variable|offer
 DECL|parse_dhcp_message|function|static int parse_dhcp_message(struct net_buf *buf, struct dhcp_msg *msg)
 DECL|prepare_dhcp_ack|function|struct net_buf *prepare_dhcp_ack(struct net_if *iface, uint32_t xid)
 DECL|prepare_dhcp_offer|function|struct net_buf *prepare_dhcp_offer(struct net_if *iface, uint32_t xid)
+DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_callback *cb,uint32_t nm_event, struct net_if *iface)
+DECL|rx_cb|variable|rx_cb
 DECL|server_addr|variable|server_addr
 DECL|set_ipv4_header|function|static void set_ipv4_header(struct net_buf *buf)
 DECL|set_udp_header|function|static void set_udp_header(struct net_buf *buf)
