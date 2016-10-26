@@ -23,6 +23,7 @@ DECL|TICKS_UNLIMITED|macro|TICKS_UNLIMITED
 DECL|_0_TO_N|enumerator|_0_TO_N = 0x0,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x1,
 DECL|_ALL_N|enumerator|_ALL_N = 0x2,
+DECL|_MDEF_THREAD_DEFINE|macro|_MDEF_THREAD_DEFINE
 DECL|_error_to_rc_no_timeout|function|static inline int _error_to_rc_no_timeout(int err)
 DECL|_error_to_rc|function|static inline int _error_to_rc(int err)
 DECL|_legacy__h_|macro|_legacy__h_
