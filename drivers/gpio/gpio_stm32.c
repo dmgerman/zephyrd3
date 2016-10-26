@@ -1,4 +1,5 @@
 DECL|GPIO_DEVICE_INIT|macro|GPIO_DEVICE_INIT
+DECL|GPIO_DEVICE_INIT|macro|GPIO_DEVICE_INIT
 DECL|gpio_stm32_config|function|static int gpio_stm32_config(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|gpio_stm32_disable_callback|function|static int gpio_stm32_disable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_stm32_driver|variable|gpio_stm32_driver
