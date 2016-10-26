@@ -22,7 +22,7 @@ DECL|cc2520_get_mac|function|static const uint8_t *cc2520_get_mac(struct device 
 DECL|cc2520_get_object|function|static radio_result_t cc2520_get_object(radio_param_t param,void *dest, size_t size)
 DECL|cc2520_get_value|function|static radio_result_t cc2520_get_value(radio_param_t param, radio_value_t *value)
 DECL|cc2520_initialize|function|static int cc2520_initialize(void)
-DECL|cc2520_init|function|int cc2520_init(struct device *dev)
+DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_off|function|static int cc2520_off(void)
 DECL|cc2520_on|function|static int cc2520_on(void)
 DECL|cc2520_pending_packet|function|static int cc2520_pending_packet(void)
