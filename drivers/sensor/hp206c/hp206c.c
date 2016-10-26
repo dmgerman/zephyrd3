@@ -9,7 +9,7 @@ DECL|hp206c_bus_config|function|static inline int hp206c_bus_config(struct devic
 DECL|hp206c_channel_get|function|static int hp206c_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|hp206c_cmd_send|function|static int hp206c_cmd_send(struct device *dev, uint8_t cmd)
 DECL|hp206c_data|variable|hp206c_data
-DECL|hp206c_init|function|int hp206c_init(struct device *dev)
+DECL|hp206c_init|function|static int hp206c_init(struct device *dev)
 DECL|hp206c_osr_set|function|static int hp206c_osr_set(struct device *dev, uint16_t osr)
 DECL|hp206c_pressure_get|function|static inline int hp206c_pressure_get(struct device *dev, struct sensor_value *val)
 DECL|hp206c_read_reg|function|static int hp206c_read_reg(struct device *dev, uint8_t reg_addr, uint8_t *reg_val)
