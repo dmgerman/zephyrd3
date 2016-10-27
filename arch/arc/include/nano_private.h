@@ -24,7 +24,6 @@ DECL|_CAUSE_NONE|macro|_CAUSE_NONE
 DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
 DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
 DECL|_INTERRUPT_CAUSE|function|static ALWAYS_INLINE int _INTERRUPT_CAUSE(void)
-DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__thread_entry|struct|struct __thread_entry {

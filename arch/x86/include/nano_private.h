@@ -316,7 +316,6 @@ DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|USE_SSE|macro|USE_SSE
 DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
-DECL|_IS_IN_ISR|macro|_IS_IN_ISR
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
