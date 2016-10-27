@@ -26,5 +26,5 @@ DECL|role|member|bt_rfcomm_role_t role;
 DECL|rx_credit|member|uint8_t rx_credit;
 DECL|session|member|struct bt_rfcomm_session *session;
 DECL|state|member|uint8_t state;
-DECL|tx_credits|member|struct nano_sem tx_credits;
+DECL|tx_credits|member|struct k_sem tx_credits;
 DECL|tx_queue|member|struct nano_fifo tx_queue;
