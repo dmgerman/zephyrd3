@@ -126,6 +126,7 @@ DECL|read_type_data|struct|struct read_type_data {
 DECL|req_data|variable|req_data
 DECL|reqs|member|sys_slist_t reqs;
 DECL|req|member|struct bt_att_req *req;
+DECL|rsp_data|variable|rsp_data
 DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
