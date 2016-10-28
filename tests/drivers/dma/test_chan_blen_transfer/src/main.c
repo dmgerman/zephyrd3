@@ -1,0 +1,1 @@
+DECL|TC_CMD_DEFINE|function|TC_CMD_DEFINE(test_dma_m2m_chan0_burst8)
