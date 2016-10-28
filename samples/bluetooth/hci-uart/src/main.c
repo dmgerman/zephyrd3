@@ -7,6 +7,7 @@ DECL|H4_DISCARD_LEN|macro|H4_DISCARD_LEN
 DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
+DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|avail_acl_tx|variable|avail_acl_tx
 DECL|avail_cmd_tx|variable|avail_cmd_tx
