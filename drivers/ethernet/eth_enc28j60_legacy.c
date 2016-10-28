@@ -1,5 +1,4 @@
 DECL|D10D24S|macro|D10D24S
-DECL|MAX_BUFFER_LENGTH|macro|MAX_BUFFER_LENGTH
 DECL|api_funcs|variable|api_funcs
 DECL|enc28j60_fiber_main|function|static void enc28j60_fiber_main(int arg1, int unused)
 DECL|eth_enc28j60_0_config|variable|eth_enc28j60_0_config
