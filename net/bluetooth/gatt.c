@@ -50,6 +50,7 @@ DECL|disconnected_cb|function|static uint8_t disconnected_cb(const struct bt_gat
 DECL|end_handle|member|uint16_t end_handle;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(const struct bt_gatt_attr *attr, struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
+DECL|gatt_discover_next|function|static void gatt_discover_next(struct bt_conn *conn, uint16_t last_handle, struct bt_gatt_discover_params *params)
 DECL|gatt_exec_write|function|static int gatt_exec_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
 DECL|gatt_incl|struct|struct gatt_incl {
 DECL|gatt_indicate_rsp|function|static void gatt_indicate_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)

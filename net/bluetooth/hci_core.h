@@ -25,7 +25,7 @@ DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
 DECL|bt_le_conn_params_valid|function|static inline bool bt_le_conn_params_valid(uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
 DECL|cmd_tx_queue|member|struct nano_fifo cmd_tx_queue;
-DECL|drv|member|struct bt_driver *drv;
+DECL|drv|member|struct bt_hci_driver *drv;
 DECL|features|member|uint8_t features[1][8];
 DECL|features|member|uint8_t features[LMP_FEAT_PAGES_COUNT][8];
 DECL|hci_revision|member|uint16_t hci_revision;

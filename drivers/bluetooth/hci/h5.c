@@ -40,12 +40,10 @@ DECL|UNINIT|enumerator|UNINIT,
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
 DECL|ack_timeout|function|static void ack_timeout(struct nano_work *work)
 DECL|ack_work|variable|ack_work
-DECL|active_state|member|struct nano_sem active_state;
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|conf_req|variable|conf_req
 DECL|conf_rsp|variable|conf_rsp
 DECL|drv|variable|drv
-DECL|flags|member|atomic_t flags;
 DECL|h5_dev|variable|h5_dev
 DECL|h5_get_type|function|static uint8_t h5_get_type(struct net_buf *buf)
 DECL|h5_init|function|static void h5_init(void)
@@ -73,7 +71,6 @@ DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|member|struct nano_fifo rx_queue;
 DECL|rx_state|member|} rx_state;
-DECL|sleep_req|variable|sleep_req
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
 DECL|tx_ack|member|uint8_t tx_ack;
@@ -83,5 +80,3 @@ DECL|tx_seq|member|uint8_t tx_seq;
 DECL|tx_win|member|uint8_t tx_win;
 DECL|unack_queue_len|variable|unack_queue_len
 DECL|unack_queue|member|struct nano_fifo unack_queue;
-DECL|wakeup_req|variable|wakeup_req
-DECL|woken_req|variable|woken_req
