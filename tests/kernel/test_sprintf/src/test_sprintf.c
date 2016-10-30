@@ -10,8 +10,8 @@ DECL|DEADBEEF_UNSIGNED_STR|macro|DEADBEEF_UNSIGNED_STR
 DECL|DEADBEEF|macro|DEADBEEF
 DECL|PRINTF_MAX_STRING_LENGTH|macro|PRINTF_MAX_STRING_LENGTH
 DECL|REALLY_LONG_STRING|macro|REALLY_LONG_STRING
-DECL|RegressionTask|function|void RegressionTask(void)
 DECL|d|member|double d;
+DECL|main|function|void main(void)
 DECL|raw_double_u|typedef|} raw_double_u;
 DECL|snprintfTest|function|int snprintfTest(void)
 DECL|sprintfDoubleTest|function|int sprintfDoubleTest(void)
