@@ -1,4 +1,4 @@
-DECL|main|function|void main(void)
+DECL|slist_test|function|void slist_test(void)
 DECL|test_list|variable|test_list
 DECL|test_node_1|variable|test_node_1
 DECL|test_node_2|variable|test_node_2

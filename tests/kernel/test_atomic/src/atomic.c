@@ -1,3 +1,0 @@
-DECL|CHECK_OUTPUT|macro|CHECK_OUTPUT
-DECL|CHECK_TRUTH|macro|CHECK_TRUTH
-DECL|main|function|void main(void)

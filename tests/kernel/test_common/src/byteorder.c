@@ -1,0 +1,2 @@
+DECL|byteorder_test_mem_swap|function|void byteorder_test_mem_swap(void)
+DECL|byteorder_test_memcpy_swap|function|void byteorder_test_memcpy_swap(void)

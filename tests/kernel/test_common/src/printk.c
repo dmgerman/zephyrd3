@@ -3,8 +3,8 @@ DECL|_old_char_out|variable|_old_char_out
 DECL|c|variable|c
 DECL|expected|variable|expected
 DECL|hex|variable|hex
-DECL|main|function|void main(void)
 DECL|pos|variable|pos
+DECL|printk_test|function|void printk_test(void)
 DECL|ptr|variable|ptr
 DECL|ram_console_out|function|static int ram_console_out(int character)
 DECL|ram_console|variable|ram_console
