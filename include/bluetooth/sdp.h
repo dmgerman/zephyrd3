@@ -100,6 +100,8 @@ DECL|BT_SDP_DATA_NIL|macro|BT_SDP_DATA_NIL
 DECL|BT_SDP_DIALUP_NET_SVCLASS|macro|BT_SDP_DIALUP_NET_SVCLASS
 DECL|BT_SDP_DIRECT_PRINTING_SVCLASS|macro|BT_SDP_DIRECT_PRINTING_SVCLASS
 DECL|BT_SDP_DIRECT_PRT_REFOBJS_SVCLASS|macro|BT_SDP_DIRECT_PRT_REFOBJS_SVCLASS
+DECL|BT_SDP_DISCOVER_UUID_CONTINUE|enumerator|BT_SDP_DISCOVER_UUID_CONTINUE,
+DECL|BT_SDP_DISCOVER_UUID_STOP|enumerator|BT_SDP_DISCOVER_UUID_STOP = 0,
 DECL|BT_SDP_FAX_SVCLASS|macro|BT_SDP_FAX_SVCLASS
 DECL|BT_SDP_GENERIC_ACCESS_SVCLASS|macro|BT_SDP_GENERIC_ACCESS_SVCLASS
 DECL|BT_SDP_GENERIC_ATTRIB_SVCLASS|macro|BT_SDP_GENERIC_ATTRIB_SVCLASS
@@ -201,12 +203,20 @@ DECL|__BT_SDP_H|macro|__BT_SDP_H
 DECL|attr_count|member|size_t attr_count; /* Number of attributes */
 DECL|attrs|member|struct bt_sdp_attribute *attrs; /* Base addr of attr array */
 DECL|bt_sdp_attribute|struct|struct bt_sdp_attribute {
+DECL|bt_sdp_client_result|struct|struct bt_sdp_client_result {
 DECL|bt_sdp_data_elem|struct|struct bt_sdp_data_elem {
+DECL|bt_sdp_discover_func_t|typedef|typedef uint8_t (*bt_sdp_discover_func_t)
+DECL|bt_sdp_discover_params|struct|struct bt_sdp_discover_params {
 DECL|bt_sdp_record|struct|struct bt_sdp_record {
 DECL|data|member|void *data; /* Data */
+DECL|func|member|bt_sdp_discover_func_t func;
 DECL|handle|member|uint32_t handle; /* Redundant, for quick ref */
 DECL|header|member|uint8_t *header; /* Type and size descriptor */
 DECL|id|member|uint16_t id; /* Attribute ID */
 DECL|index|member|uint8_t index; /* Index of the record in LL */
+DECL|next_record_hint|member|bool next_record_hint;
 DECL|next|member|struct bt_sdp_record *next;
+DECL|pool|member|struct net_buf_pool *pool;
+DECL|resp_buf|member|struct net_buf *resp_buf;
+DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|val|member|struct bt_sdp_data_elem val; /* Attribute data */
