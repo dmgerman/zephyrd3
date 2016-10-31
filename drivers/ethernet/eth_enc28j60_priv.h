@@ -169,5 +169,5 @@ DECL|spi_port|member|const char *spi_port;
 DECL|spi_sem|member|struct nano_sem spi_sem;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
-DECL|tx_sem|member|struct nano_sem tx_sem;
+DECL|tx_rx_sem|member|struct nano_sem tx_rx_sem;
 DECL|tx_tsv|member|uint8_t tx_tsv[TSV_SIZE];
