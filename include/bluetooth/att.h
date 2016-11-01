@@ -27,3 +27,4 @@ DECL|destroy|member|bt_att_destroy_t destroy;
 DECL|func|member|bt_att_func_t func;
 DECL|node|member|sys_snode_t node;
 DECL|retrying|member|bool retrying;
+DECL|state|member|struct net_buf_simple_state state;

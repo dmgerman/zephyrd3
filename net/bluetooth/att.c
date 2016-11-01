@@ -44,7 +44,6 @@ DECL|att_read_req|function|static uint8_t att_read_req(struct bt_att *att, struc
 DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_att *att, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset)
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_att *att, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
-DECL|att_req_clone|function|static struct net_buf *att_req_clone(struct net_buf *buf)
 DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req)
 DECL|att_reset|function|static void att_reset(struct bt_att *att)
 DECL|att_send_req|function|static int att_send_req(struct bt_att *att, struct bt_att_req *req)
@@ -81,7 +80,6 @@ DECL|buf|member|struct net_buf *buf;
 DECL|buf|member|struct net_buf *buf;
 DECL|chan|member|struct bt_l2cap_le_chan chan;
 DECL|check_perm|function|static uint8_t check_perm(struct bt_conn *conn, const struct bt_gatt_attr *attr, uint8_t mask)
-DECL|clone_data|variable|clone_data
 DECL|conn|member|struct bt_conn *conn;
 DECL|conn|member|struct bt_conn *conn;
 DECL|err_to_att|function|static uint8_t err_to_att(int err)
@@ -100,7 +98,6 @@ DECL|group|member|struct bt_att_group_data *group;
 DECL|group|member|struct bt_att_handle_group *group;
 DECL|handlers|variable|handlers
 DECL|handle|member|uint16_t handle;
-DECL|ind_data|variable|ind_data
 DECL|info128|member|struct bt_att_info_128 *info128;
 DECL|info16|member|struct bt_att_info_16 *info16;
 DECL|item|member|struct bt_att_data *item;
@@ -126,6 +123,7 @@ DECL|read_type_data|struct|struct read_type_data {
 DECL|req_data|variable|req_data
 DECL|reqs|member|sys_slist_t reqs;
 DECL|req|member|struct bt_att_req *req;
+DECL|rsp_data|variable|rsp_data
 DECL|rsp|member|struct bt_att_find_info_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
