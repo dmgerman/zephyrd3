@@ -45,6 +45,7 @@ DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|rtx_work|member|struct nano_delayed_work rtx_work;
 DECL|rx|member|struct bt_l2cap_br_endpoint rx;
 DECL|rx|member|struct bt_l2cap_le_endpoint rx;
+DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|bt_l2cap_chan_state_t state;
 DECL|tx|member|struct bt_l2cap_br_endpoint tx;
 DECL|tx|member|struct bt_l2cap_le_endpoint tx;
