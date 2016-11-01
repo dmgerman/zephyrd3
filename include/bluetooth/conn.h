@@ -10,6 +10,7 @@ DECL|BT_SECURITY_FIPS|enumerator|BT_SECURITY_FIPS,
 DECL|BT_SECURITY_HIGH|enumerator|BT_SECURITY_HIGH,
 DECL|BT_SECURITY_LOW|enumerator|BT_SECURITY_LOW,
 DECL|BT_SECURITY_MEDIUM|enumerator|BT_SECURITY_MEDIUM,
+DECL|BT_SECURITY_NONE|enumerator|BT_SECURITY_NONE,
 DECL|__BT_CONN_H|macro|__BT_CONN_H
 DECL|__packed|enum|typedef enum __packed {
 DECL|_next|member|struct bt_conn_cb *_next;
