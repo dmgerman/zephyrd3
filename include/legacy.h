@@ -140,7 +140,7 @@ DECL|nano_task_workqueue_start|macro|nano_task_workqueue_start
 DECL|nano_thread_id_t|macro|nano_thread_id_t
 DECL|nano_timer_init|function|static inline void nano_timer_init(struct k_timer *timer, void *data)
 DECL|nano_timer_start|function|static inline void nano_timer_start(struct nano_timer *timer, int ticks)
-DECL|nano_timer_stop|function|static inline void nano_timer_stop(struct nano_timer *timer)
+DECL|nano_timer_stop|macro|nano_timer_stop
 DECL|nano_timer_ticks_remain|function|static inline int32_t nano_timer_ticks_remain(struct nano_timer *timer)
 DECL|nano_timer|macro|nano_timer
 DECL|nano_work_init|macro|nano_work_init
@@ -194,7 +194,7 @@ DECL|task_mem_pool_alloc|function|static inline int task_mem_pool_alloc(struct k
 DECL|task_mem_pool_defragment|macro|task_mem_pool_defragment
 DECL|task_mem_pool_free|macro|task_mem_pool_free
 DECL|task_mutex_lock|function|static inline int task_mutex_lock(kmutex_t mutex, int32_t timeout)
-DECL|task_mutex_unlock|function|static inline void task_mutex_unlock(kmutex_t mutex)
+DECL|task_mutex_unlock|macro|task_mutex_unlock
 DECL|task_pipe_block_put|function|static inline int task_pipe_block_put(kpipe_t id, struct k_block block, int size, ksem_t sem)
 DECL|task_pipe_get|function|static inline int task_pipe_get(kpipe_t id, void *buffer, int bytes_to_read,int *bytes_read, K_PIPE_OPTION options, int32_t timeout)
 DECL|task_pipe_put|function|static inline int task_pipe_put(kpipe_t id, void *buffer, int bytes_to_write,int *bytes_written, K_PIPE_OPTION options, int32_t timeout)
@@ -211,7 +211,7 @@ DECL|task_sem_take|function|static inline int task_sem_take(ksem_t sem, int32_t 
 DECL|task_sleep|macro|task_sleep
 DECL|task_suspend|macro|task_suspend
 DECL|task_timer_restart|function|static inline void task_timer_restart(ktimer_t timer, int32_t duration, int32_t period)
-DECL|task_timer_stop|function|static inline void task_timer_stop(ktimer_t timer)
+DECL|task_timer_stop|macro|task_timer_stop
 DECL|task_timer_stop|macro|task_timer_stop
 DECL|task_yield|macro|task_yield
 DECL|transfer|member|struct k_args *transfer;
