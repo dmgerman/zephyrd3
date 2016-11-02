@@ -15,7 +15,9 @@ DECL|_nano_timeout|struct|struct _nano_timeout {
 DECL|base|member|uint32_t *base;
 DECL|data_q|member|struct _nano_queue data_q;
 DECL|delete|function|inline void operator delete(void *ptr)
+DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
 DECL|delete|function|inline void operator delete[](void *ptr)
+DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|fiber_config|struct|struct fiber_config {
 DECL|fiber_fiber_start_config|function|fiber_fiber_start_config(const struct fiber_config *config, nano_fiber_entry_t entry, int arg1, int arg2, unsigned options)
@@ -34,7 +36,9 @@ DECL|nano_stack|struct|struct nano_stack {
 DECL|nano_thread_id_t|typedef|typedef struct tcs *nano_thread_id_t;
 DECL|nano_timer|struct|struct nano_timer {
 DECL|new|function|inline void *operator new(size_t size)
+DECL|new|function|inline void *operator new(size_t size, void *ptr)
 DECL|new|function|inline void *operator new[](size_t size)
+DECL|new|function|inline void *operator new[](size_t size, void *ptr)
 DECL|next|member|uint32_t *next;
 DECL|node|member|sys_dlist_t node;
 DECL|nsig|member|int nsig;
