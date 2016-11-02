@@ -53,10 +53,13 @@ DECL|l2cap_chan_send_req|function|static void l2cap_chan_send_req(struct bt_l2ca
 DECL|l2cap_chan_tx_give_credits|function|static void l2cap_chan_tx_give_credits(struct bt_l2cap_le_chan *chan, uint16_t credits)
 DECL|l2cap_chan_tx_init|function|static void l2cap_chan_tx_init(struct bt_l2cap_le_chan *chan)
 DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_le_chan *chan)
+DECL|l2cap_change_security|function|static int l2cap_change_security(struct bt_l2cap_le_chan *chan, uint16_t err)
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_detach_chan|macro|l2cap_detach_chan
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
+DECL|l2cap_le_conn_req|function|static int l2cap_le_conn_req(struct bt_l2cap_le_chan *ch)
 DECL|l2cap_le_connect|function|static int l2cap_le_connect(struct bt_conn *conn, struct bt_l2cap_le_chan *ch, uint16_t psm)
+DECL|l2cap_le_encrypt_change|function|static void l2cap_le_encrypt_change(struct bt_l2cap_chan *chan, uint8_t status)
 DECL|l2cap_lookup_chan|macro|l2cap_lookup_chan
 DECL|l2cap_lookup_ident|macro|l2cap_lookup_ident
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
