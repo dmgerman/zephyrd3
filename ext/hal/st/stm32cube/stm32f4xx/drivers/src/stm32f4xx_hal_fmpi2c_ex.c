@@ -1,0 +1,4 @@
+DECL|HAL_FMPI2CEx_ConfigAnalogFilter|function|HAL_StatusTypeDef HAL_FMPI2CEx_ConfigAnalogFilter(FMPI2C_HandleTypeDef *hfmpi2c, uint32_t AnalogFilter)
+DECL|HAL_FMPI2CEx_ConfigDigitalFilter|function|HAL_StatusTypeDef HAL_FMPI2CEx_ConfigDigitalFilter(FMPI2C_HandleTypeDef *hfmpi2c, uint32_t DigitalFilter)
+DECL|HAL_FMPI2CEx_DisableFastModePlus|function|void HAL_FMPI2CEx_DisableFastModePlus(uint32_t ConfigFastModePlus)
+DECL|HAL_FMPI2CEx_EnableFastModePlus|function|void HAL_FMPI2CEx_EnableFastModePlus(uint32_t ConfigFastModePlus)

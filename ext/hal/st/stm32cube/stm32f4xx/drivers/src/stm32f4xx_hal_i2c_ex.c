@@ -1,0 +1,2 @@
+DECL|HAL_I2CEx_ConfigAnalogFilter|function|HAL_StatusTypeDef HAL_I2CEx_ConfigAnalogFilter(I2C_HandleTypeDef *hi2c, uint32_t AnalogFilter)
+DECL|HAL_I2CEx_ConfigDigitalFilter|function|HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter)
