@@ -76,6 +76,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
+DECL|bt_l2cap_chan_set_state|macro|bt_l2cap_chan_set_state
 DECL|bt_l2cap_cmd_reject_cid_data|struct|struct bt_l2cap_cmd_reject_cid_data {
 DECL|bt_l2cap_cmd_reject|struct|struct bt_l2cap_cmd_reject {
 DECL|bt_l2cap_conf_opt|struct|struct bt_l2cap_conf_opt {
