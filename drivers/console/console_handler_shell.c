@@ -16,7 +16,7 @@ DECL|default_module_prompt|variable|default_module_prompt
 DECL|default_module|variable|default_module
 DECL|get_cb|function|static shell_cmd_function_t get_cb(int argc, char *argv[])
 DECL|get_command_and_module|function|static const char *get_command_and_module(char *argv[], int *module)
-DECL|get_command_to_complete|function|static int get_command_to_complete(char *str, char *command_prefix)
+DECL|get_command_to_complete|function|static int get_command_to_complete(char *str, char **command_prefix)
 DECL|get_destination_module|function|static int get_destination_module(const char *module_str)
 DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
