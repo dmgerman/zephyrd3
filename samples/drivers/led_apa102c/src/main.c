@@ -6,7 +6,7 @@ DECL|GPIO_DRV_NAME|macro|GPIO_DRV_NAME
 DECL|GPIO_NAME|macro|GPIO_NAME
 DECL|NUM_LEDS|macro|NUM_LEDS
 DECL|NUM_RGB|macro|NUM_RGB
-DECL|SLEEPTICKS|macro|SLEEPTICKS
+DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|main|function|void main(void)
 DECL|rgb|variable|rgb
 DECL|send_rgb|function|void send_rgb(struct device *gpio_dev, uint32_t rgb)
