@@ -2,7 +2,6 @@ DECL|ALARM|macro|ALARM
 DECL|DEVICE_POLICY_MAX|macro|DEVICE_POLICY_MAX
 DECL|GPIO_IN_PIN|macro|GPIO_IN_PIN
 DECL|SECONDS_TO_SLEEP|macro|SECONDS_TO_SLEEP
-DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|_sys_soc_resume|function|void _sys_soc_resume(void)
 DECL|_sys_soc_suspend|function|int _sys_soc_suspend(int32_t ticks)
 DECL|check_pm_policy|function|static int check_pm_policy(int32_t ticks)
