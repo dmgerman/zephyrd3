@@ -17,6 +17,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__NET_CORE_H|macro|__NET_CORE_H
+DECL|net_analyze_stack_get_values|function|static inline void net_analyze_stack_get_values(unsigned char *stack,size_t size, unsigned *stack_offset, unsigned *pcnt, unsigned *unused)
 DECL|net_analyze_stack|function|static inline void net_analyze_stack(const char *name, unsigned char *stack, size_t size)
 DECL|net_analyze_stack|macro|net_analyze_stack
 DECL|net_verdict|enum|enum net_verdict {
