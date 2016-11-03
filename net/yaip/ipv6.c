@@ -56,6 +56,7 @@ DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_
 DECL|net_ipv6_nbr_lookup|function|struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
+DECL|net_ipv6_send_na|function|static int net_ipv6_send_na(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt, uint8_t flags)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
 DECL|net_ipv6_start_dad|function|int net_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
