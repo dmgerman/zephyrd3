@@ -21,7 +21,7 @@ DECL|any_addr4|variable|any_addr4
 DECL|any_addr6|variable|any_addr6
 DECL|fail|variable|fail
 DECL|func|member|bool (*func)(void);
-DECL|handle|member|void *handle;
+DECL|handle|member|struct net_conn_handle *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|in4addr_any|variable|in4addr_any
 DECL|in6addr_any|variable|in6addr_any
