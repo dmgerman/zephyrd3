@@ -1,6 +1,3 @@
-DECL|EXC_ACTIVE|macro|EXC_ACTIVE
-DECL|FIBER|macro|FIBER
-DECL|INT_ACTIVE|macro|INT_ACTIVE
 DECL|K_DEAD|macro|K_DEAD
 DECL|K_DUMMY|macro|K_DUMMY
 DECL|K_ESSENTIAL|macro|K_ESSENTIAL
@@ -12,10 +9,8 @@ DECL|K_STATIC|macro|K_STATIC
 DECL|K_SUSPENDED|macro|K_SUSPENDED
 DECL|K_TIMING|macro|K_TIMING
 DECL|NO_METRICS|macro|NO_METRICS
-DECL|PREEMPTIBLE|macro|PREEMPTIBLE
 DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
 DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
-DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
 DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
@@ -36,8 +31,6 @@ DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
 DECL|errno_var|member|int errno_var;
 DECL|fiberRtnValueSet|function|static ALWAYS_INLINE void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
-DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fiber */
-DECL|flags|member|int flags; /* struct tcs->flags of 'current' thread */
 DECL|flags|member|uint32_t flags;
 DECL|flags|member|uint32_t flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
@@ -46,7 +39,6 @@ DECL|init_data|member|void *init_data;
 DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_q_node|member|sys_dnode_t k_q_node; /* node object in any kernel queue */
 DECL|nanoArchInit|function|static ALWAYS_INLINE void nanoArchInit(void)
-DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
@@ -86,15 +78,12 @@ DECL|swap_data|member|void *swap_data;
 DECL|tESF|typedef|typedef struct __esf tESF;
 DECL|tNANO|typedef|typedef struct s_NANO tNANO;
 DECL|tPreempt|typedef|typedef struct preempt tPreempt;
-DECL|task_timeout|member|int32_t task_timeout;
-DECL|task|member|struct tcs *task; /* pointer to runnable task */
 DECL|tcs_base|struct|struct tcs_base {
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
-DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
 DECL|v3|member|uint32_t v3; /* r6 */
