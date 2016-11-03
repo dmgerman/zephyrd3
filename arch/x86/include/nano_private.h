@@ -3,7 +3,6 @@ DECL|A32_EXT_XAPIC_TPR_MSR|macro|A32_EXT_XAPIC_TPR_MSR
 DECL|EFLAGS_INITIAL|macro|EFLAGS_INITIAL
 DECL|EFLAGS_MASK|macro|EFLAGS_MASK
 DECL|EXC_ACTIVE|macro|EXC_ACTIVE
-DECL|FIBER|macro|FIBER
 DECL|IA32_APERF_MSR|macro|IA32_APERF_MSR
 DECL|IA32_APIC_BASE_MSR|macro|IA32_APIC_BASE_MSR
 DECL|IA32_BIOS_SIGN_MSR|macro|IA32_BIOS_SIGN_MSR
@@ -306,13 +305,11 @@ DECL|K_SUSPENDED|macro|K_SUSPENDED
 DECL|K_TIMING|macro|K_TIMING
 DECL|NO_METRICS_BIT_OFFSET|macro|NO_METRICS_BIT_OFFSET
 DECL|NO_METRICS|macro|NO_METRICS
-DECL|PREEMPTIBLE|macro|PREEMPTIBLE
 DECL|PRINTK|macro|PRINTK
 DECL|PRINTK|macro|PRINTK
 DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
 DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
 DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
-DECL|TASK|macro|TASK
 DECL|USE_FP|macro|USE_FP
 DECL|USE_SSE|macro|USE_SSE
 DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
@@ -346,7 +343,6 @@ DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
 DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
-DECL|fiber|member|struct tcs *fiber; /* singly linked list of runnable fibers */
 DECL|flags|member|int flags;
 DECL|flags|member|uint32_t flags;
 DECL|floatRegsUnion|member|} floatRegsUnion;
@@ -373,7 +369,6 @@ DECL|k_q_node|member|sys_dnode_t k_q_node; /* node object in any kernel queue */
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
 DECL|nanoArchInit|function|static inline void nanoArchInit(void)
-DECL|nano_timeout|member|struct _nano_timeout nano_timeout;
 DECL|nested|member|unsigned nested; /* nested interrupt count */
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|pEntry|member|_thread_entry_t pEntry;
@@ -428,13 +423,10 @@ DECL|tNANO|typedef|} tNANO;
 DECL|tPreempFloatReg|typedef|} tPreempFloatReg;
 DECL|tPreempReg|typedef|} tPreempReg;
 DECL|tXmmReg|typedef|} tXmmReg;
-DECL|task_timeout|member|int32_t task_timeout;
-DECL|task|member|struct tcs *task; /* pointer to runnable task */
 DECL|tcs_base|struct|struct tcs_base {
 DECL|tcs|struct|struct tcs {
 DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
-DECL|uk_task_ptr|member|void *uk_task_ptr;
 DECL|xmmReg|member|tXmmReg xmmReg[8]; /* 128 : XMM registers */
