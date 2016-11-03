@@ -15,6 +15,7 @@ DECL|rtc_data|struct|struct rtc_data {
 DECL|rtc_qmsi_device_ctrl|function|static int rtc_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command,void *context)
 DECL|rtc_qmsi_disable|function|static void rtc_qmsi_disable(struct device *dev)
 DECL|rtc_qmsi_enable|function|static void rtc_qmsi_enable(struct device *dev)
+DECL|rtc_qmsi_get_pending_int|function|static uint32_t rtc_qmsi_get_pending_int(struct device *dev)
 DECL|rtc_qmsi_get_power_state|function|static uint32_t rtc_qmsi_get_power_state(struct device *dev)
 DECL|rtc_qmsi_init|function|static int rtc_qmsi_init(struct device *dev)
 DECL|rtc_qmsi_read|function|static uint32_t rtc_qmsi_read(struct device *dev)
