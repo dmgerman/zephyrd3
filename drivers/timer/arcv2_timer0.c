@@ -7,12 +7,18 @@ DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|accumulated_cycle_count|variable|accumulated_cycle_count
+DECL|arcv2_timer0_device_power_state|variable|arcv2_timer0_device_power_state
 DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|programmed_limit|variable|programmed_limit
 DECL|programmed_ticks|variable|programmed_ticks
+DECL|saved_control|variable|saved_control
+DECL|saved_limit|variable|saved_limit
 DECL|straddled_tick_on_idle_enter|variable|straddled_tick_on_idle_enter
+DECL|sys_clock_device_ctrl|function|int sys_clock_device_ctrl(struct device *port, uint32_t ctrl_command, void *context)
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
+DECL|sys_clock_resume|function|static int sys_clock_resume(struct device *dev)
+DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev)
 DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void) {}
@@ -20,6 +26,7 @@ DECL|timer0_control_register_get|function|static ALWAYS_INLINE uint32_t timer0_c
 DECL|timer0_control_register_set|function|static ALWAYS_INLINE void timer0_control_register_set(uint32_t value)
 DECL|timer0_count_register_get|function|static ALWAYS_INLINE uint32_t timer0_count_register_get(void)
 DECL|timer0_count_register_set|function|static ALWAYS_INLINE void timer0_count_register_set(uint32_t value)
+DECL|timer0_limit_register_get|function|static ALWAYS_INLINE uint32_t timer0_limit_register_get(void)
 DECL|timer0_limit_register_set|function|static ALWAYS_INLINE void timer0_limit_register_set(uint32_t count)
 DECL|update_accumulated_count|function|static ALWAYS_INLINE void update_accumulated_count(void)
 DECL|update_accumulated_count|function|static ALWAYS_INLINE void update_accumulated_count(void)
