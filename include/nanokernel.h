@@ -3,6 +3,8 @@ DECL|NANO_CTX_ISR|macro|NANO_CTX_ISR
 DECL|NANO_CTX_TASK|macro|NANO_CTX_TASK
 DECL|TICKS_NONE|macro|TICKS_NONE
 DECL|TICKS_UNLIMITED|macro|TICKS_UNLIMITED
+DECL|USE_FP|macro|USE_FP
+DECL|USE_SSE|macro|USE_SSE
 DECL|__NANOKERNEL_H__|macro|__NANOKERNEL_H__
 DECL|__next|member|struct nano_fifo *__next;
 DECL|__next|member|struct nano_lifo *__next;
