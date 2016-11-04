@@ -28,6 +28,7 @@ DECL|NET_RPL_PROBING_INTERVAL|macro|NET_RPL_PROBING_INTERVAL
 DECL|NET_RPL_ZERO_LIFETIME|macro|NET_RPL_ZERO_LIFETIME
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|acceptable_rank|function|static int acceptable_rank(struct net_rpl_dag *dag, uint16_t rank)
+DECL|add_rpl_opt|function|static inline int add_rpl_opt(struct net_buf *buf, uint16_t offset)
 DECL|alloc_dag|function|static struct net_rpl_dag *alloc_dag(uint8_t instance_id, struct in6_addr *dag_id)
 DECL|best_parent|function|static struct net_rpl_parent *best_parent(struct net_if *iface, struct net_rpl_dag *dag)
 DECL|check_prefix|function|static void check_prefix(struct net_if *iface, struct net_rpl_prefix *last_prefix, struct net_rpl_prefix *new_prefix)
@@ -90,6 +91,7 @@ DECL|net_rpl_info|macro|net_rpl_info
 DECL|net_rpl_info|macro|net_rpl_info
 DECL|net_rpl_init_timers|function|static inline void net_rpl_init_timers(void)
 DECL|net_rpl_init|function|void net_rpl_init(void)
+DECL|net_rpl_insert_header|function|int net_rpl_insert_header(struct net_buf *buf)
 DECL|net_rpl_join_instance|function|static void net_rpl_join_instance(struct net_if *iface, struct in6_addr *from, struct net_rpl_dio *dio)
 DECL|net_rpl_lifetime|function|static inline uint32_t net_rpl_lifetime(struct net_rpl_instance *instance,uint8_t lifetime)
 DECL|net_rpl_link_neighbor_callback|function|static void net_rpl_link_neighbor_callback(struct net_if *iface, struct net_linkaddr *lladdr, int status)
@@ -119,6 +121,7 @@ DECL|net_rpl_set_preferred_parent|function|static void net_rpl_set_preferred_par
 DECL|net_rpl_set_prefix|function|bool net_rpl_set_prefix(struct net_if *iface,struct net_rpl_dag *dag, struct in6_addr *prefix, uint8_t prefix_len)
 DECL|net_rpl_set_root_with_version|function|struct net_rpl_dag *net_rpl_set_root_with_version(struct net_if *iface, uint8_t instance_id, struct in6_addr *dag_id, uint8_t version)
 DECL|net_rpl_set_root|function|struct net_rpl_dag *net_rpl_set_root(struct net_if *iface, uint8_t instance_id, struct in6_addr *dag_id)
+DECL|net_rpl_update_header_empty|function|static int net_rpl_update_header_empty(struct net_buf *buf)
 DECL|net_rpl_update_header|function|int net_rpl_update_header(struct net_buf *buf, struct in6_addr *addr)
 DECL|net_rpl_verify_header|function|bool net_rpl_verify_header(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|new_dio_interval|function|static void new_dio_interval(struct net_rpl_instance *instance)
