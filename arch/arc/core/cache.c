@@ -1,0 +1,20 @@
+DECL|DCACHE_LINE_SIZE|macro|DCACHE_LINE_SIZE
+DECL|DCACHE_LINE_SIZE|macro|DCACHE_LINE_SIZE
+DECL|DC_CTRL_DC_DISABLE|macro|DC_CTRL_DC_DISABLE
+DECL|DC_CTRL_DC_ENABLE|macro|DC_CTRL_DC_ENABLE
+DECL|DC_CTRL_DIRECT_ACCESS|macro|DC_CTRL_DIRECT_ACCESS
+DECL|DC_CTRL_DISABLE_FLUSH_LOCKED|macro|DC_CTRL_DISABLE_FLUSH_LOCKED
+DECL|DC_CTRL_ENABLE_FLUSH_LOCKED|macro|DC_CTRL_ENABLE_FLUSH_LOCKED
+DECL|DC_CTRL_FLUSH_STATUS|macro|DC_CTRL_FLUSH_STATUS
+DECL|DC_CTRL_INDIRECT_ACCESS|macro|DC_CTRL_INDIRECT_ACCESS
+DECL|DC_CTRL_INVALID_FLUSH|macro|DC_CTRL_INVALID_FLUSH
+DECL|DC_CTRL_INVALID_ONLY|macro|DC_CTRL_INVALID_ONLY
+DECL|DC_CTRL_OP_SUCCEEDED|macro|DC_CTRL_OP_SUCCEEDED
+DECL|dcache_available|function|static int dcache_available(void)
+DECL|dcache_dc_ctrl|function|static void dcache_dc_ctrl(uint32_t dcache_en_mask)
+DECL|dcache_enable|function|static void dcache_enable(void)
+DECL|dcache_flush_mlines|function|static void dcache_flush_mlines(uint32_t start_addr, uint32_t size)
+DECL|init_dcache_line_size|function|static void init_dcache_line_size(void)
+DECL|init_dcache|function|static int init_dcache(struct device *unused)
+DECL|sys_cache_flush|function|void sys_cache_flush(vaddr_t start_addr, size_t size)
+DECL|sys_cache_line_size|variable|sys_cache_line_size
