@@ -1,0 +1,2 @@
+DECL|HAL_LTDC_StructInitFromAdaptedCommandConfig|function|HAL_StatusTypeDef HAL_LTDC_StructInitFromAdaptedCommandConfig(LTDC_HandleTypeDef* hltdc, DSI_CmdCfgTypeDef *CmdCfg)
+DECL|HAL_LTDC_StructInitFromVideoConfig|function|HAL_StatusTypeDef HAL_LTDC_StructInitFromVideoConfig(LTDC_HandleTypeDef* hltdc, DSI_VidCfgTypeDef *VidCfg)

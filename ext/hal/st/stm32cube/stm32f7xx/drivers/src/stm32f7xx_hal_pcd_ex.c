@@ -1,0 +1,5 @@
+DECL|HAL_PCDEx_ActivateLPM|function|HAL_StatusTypeDef HAL_PCDEx_ActivateLPM(PCD_HandleTypeDef *hpcd)
+DECL|HAL_PCDEx_DeActivateLPM|function|HAL_StatusTypeDef HAL_PCDEx_DeActivateLPM(PCD_HandleTypeDef *hpcd)
+DECL|HAL_PCDEx_LPM_Callback|function|__weak void HAL_PCDEx_LPM_Callback(PCD_HandleTypeDef *hpcd, PCD_LPM_MsgTypeDef msg)
+DECL|HAL_PCDEx_SetRxFiFo|function|HAL_StatusTypeDef HAL_PCDEx_SetRxFiFo(PCD_HandleTypeDef *hpcd, uint16_t size)
+DECL|HAL_PCDEx_SetTxFiFo|function|HAL_StatusTypeDef HAL_PCDEx_SetTxFiFo(PCD_HandleTypeDef *hpcd, uint8_t fifo, uint16_t size)

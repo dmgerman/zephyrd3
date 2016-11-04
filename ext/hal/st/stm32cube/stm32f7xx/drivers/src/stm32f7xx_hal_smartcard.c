@@ -1,0 +1,34 @@
+DECL|HAL_SMARTCARD_DeInit|function|HAL_StatusTypeDef HAL_SMARTCARD_DeInit(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_ErrorCallback|function|__weak void HAL_SMARTCARD_ErrorCallback(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_GetError|function|uint32_t HAL_SMARTCARD_GetError(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_GetState|function|HAL_SMARTCARD_StateTypeDef HAL_SMARTCARD_GetState(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_IRQHandler|function|void HAL_SMARTCARD_IRQHandler(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_Init|function|HAL_StatusTypeDef HAL_SMARTCARD_Init(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_MspDeInit|function|__weak void HAL_SMARTCARD_MspDeInit(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_MspInit|function|__weak void HAL_SMARTCARD_MspInit(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_Receive_DMA|function|HAL_StatusTypeDef HAL_SMARTCARD_Receive_DMA(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size)
+DECL|HAL_SMARTCARD_Receive_IT|function|HAL_StatusTypeDef HAL_SMARTCARD_Receive_IT(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size)
+DECL|HAL_SMARTCARD_Receive|function|HAL_StatusTypeDef HAL_SMARTCARD_Receive(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+DECL|HAL_SMARTCARD_RxCpltCallback|function|__weak void HAL_SMARTCARD_RxCpltCallback(SMARTCARD_HandleTypeDef *hsc)
+DECL|HAL_SMARTCARD_TXDMA_TIMEOUTVALUE|macro|HAL_SMARTCARD_TXDMA_TIMEOUTVALUE
+DECL|HAL_SMARTCARD_Transmit_DMA|function|HAL_StatusTypeDef HAL_SMARTCARD_Transmit_DMA(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size)
+DECL|HAL_SMARTCARD_Transmit_IT|function|HAL_StatusTypeDef HAL_SMARTCARD_Transmit_IT(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size)
+DECL|HAL_SMARTCARD_Transmit|function|HAL_StatusTypeDef HAL_SMARTCARD_Transmit(SMARTCARD_HandleTypeDef *hsc, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+DECL|HAL_SMARTCARD_TxCpltCallback|function|__weak void HAL_SMARTCARD_TxCpltCallback(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_AdvFeatureConfig|function|static void SMARTCARD_AdvFeatureConfig(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_CheckIdleState|function|static HAL_StatusTypeDef SMARTCARD_CheckIdleState(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_DMAAbortOnError|function|static void SMARTCARD_DMAAbortOnError(DMA_HandleTypeDef *hdma)
+DECL|SMARTCARD_DMAError|function|static void SMARTCARD_DMAError(DMA_HandleTypeDef *hdma)
+DECL|SMARTCARD_DMAReceiveCplt|function|static void SMARTCARD_DMAReceiveCplt(DMA_HandleTypeDef *hdma)
+DECL|SMARTCARD_DMATransmitCplt|function|static void SMARTCARD_DMATransmitCplt(DMA_HandleTypeDef *hdma)
+DECL|SMARTCARD_EndRxTransfer|function|static void SMARTCARD_EndRxTransfer(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_EndTxTransfer|function|static void SMARTCARD_EndTxTransfer(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_Receive_IT|function|static HAL_StatusTypeDef SMARTCARD_Receive_IT(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_SetConfig|function|static void SMARTCARD_SetConfig(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_Transmit_IT|function|static HAL_StatusTypeDef SMARTCARD_Transmit_IT(SMARTCARD_HandleTypeDef *hsc)
+DECL|SMARTCARD_WaitOnFlagUntilTimeout|function|static HAL_StatusTypeDef SMARTCARD_WaitOnFlagUntilTimeout(SMARTCARD_HandleTypeDef *hsc, uint32_t Flag, FlagStatus Status, uint32_t Tickstart, uint32_t Timeout)
+DECL|TEACK_REACK_TIMEOUT|macro|TEACK_REACK_TIMEOUT
+DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
+DECL|USART_CR2_CLK_FIELDS|macro|USART_CR2_CLK_FIELDS
+DECL|USART_CR2_FIELDS|macro|USART_CR2_FIELDS
+DECL|USART_CR3_FIELDS|macro|USART_CR3_FIELDS

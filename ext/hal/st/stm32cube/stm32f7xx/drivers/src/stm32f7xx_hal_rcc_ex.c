@@ -1,0 +1,6 @@
+DECL|HAL_RCCEx_GetPeriphCLKConfig|function|void HAL_RCCEx_GetPeriphCLKConfig(RCC_PeriphCLKInitTypeDef *PeriphClkInit)
+DECL|HAL_RCCEx_GetPeriphCLKFreq|function|uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk)
+DECL|HAL_RCCEx_PeriphCLKConfig|function|HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef *PeriphClkInit)
+DECL|HAL_RCC_OscConfig|function|HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct)
+DECL|PLLI2S_TIMEOUT_VALUE|macro|PLLI2S_TIMEOUT_VALUE
+DECL|PLLSAI_TIMEOUT_VALUE|macro|PLLSAI_TIMEOUT_VALUE

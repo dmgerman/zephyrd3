@@ -1,0 +1,4 @@
+DECL|PCD_LPM_L0_ACTIVE|enumerator|PCD_LPM_L0_ACTIVE = 0x00U, /* on */
+DECL|PCD_LPM_L1_ACTIVE|enumerator|PCD_LPM_L1_ACTIVE = 0x01U, /* LPM L1 sleep */
+DECL|PCD_LPM_MsgTypeDef|typedef|}PCD_LPM_MsgTypeDef;
+DECL|__STM32F7xx_HAL_PCD_EX_H|macro|__STM32F7xx_HAL_PCD_EX_H
