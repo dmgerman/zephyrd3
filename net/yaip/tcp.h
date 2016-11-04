@@ -16,6 +16,7 @@ DECL|NET_TCP_IS_SHUTDOWN|macro|NET_TCP_IS_SHUTDOWN
 DECL|NET_TCP_LAST_ACK|enumerator|NET_TCP_LAST_ACK,
 DECL|NET_TCP_LISTEN|enumerator|NET_TCP_LISTEN,
 DECL|NET_TCP_MAX_OPT_SIZE|macro|NET_TCP_MAX_OPT_SIZE
+DECL|NET_TCP_MAX_SEG_LIFETIME|macro|NET_TCP_MAX_SEG_LIFETIME
 DECL|NET_TCP_MAX_SEQ|macro|NET_TCP_MAX_SEQ
 DECL|NET_TCP_MAX_WIN|macro|NET_TCP_MAX_WIN
 DECL|NET_TCP_MSS_HEADER|macro|NET_TCP_MSS_HEADER
@@ -32,8 +33,9 @@ DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|context|member|struct net_context *context;
+DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|flags|member|uint8_t flags;
-DECL|net_tcp_change_state|function|static inline void net_tcp_change_state(struct net_tcp *tcp,enum net_tcp_state new_state)
+DECL|net_tcp_change_state|macro|net_tcp_change_state
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
 DECL|net_tcp_register|function|static inline int net_tcp_register(const struct sockaddr *remote_addr, const struct sockaddr *local_addr, uint16_t remote_port, uint16_t local_port, net_conn_cb_t cb,

@@ -1,3 +1,4 @@
+DECL|FIN_TIMEOUT|macro|FIN_TIMEOUT
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_IP_MAX_OPTIONS|macro|NET_IP_MAX_OPTIONS
 DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
@@ -6,6 +7,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|ack|member|uint32_t ack;
 DECL|data|member|struct net_buf *data;
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
+DECL|fin_timeout|function|static void fin_timeout(struct k_work *work)
 DECL|flags|member|uint8_t flags;
 DECL|get_recv_wnd|function|static inline uint32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline uint32_t get_size(uint32_t pos1, uint32_t pos2)
@@ -14,6 +16,7 @@ DECL|ip_max_packet_len|function|static inline size_t ip_max_packet_len(struct in
 DECL|ip_max_packet_len|macro|ip_max_packet_len
 DECL|net_tcp_add_options|function|static inline int net_tcp_add_options(struct net_buf *header, size_t len, void *data)
 DECL|net_tcp_alloc|function|struct net_tcp *net_tcp_alloc(struct net_context *context)
+DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp, enum net_tcp_state new_state)
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_buf **buf)
 DECL|net_tcp_prepare_data_segment|function|int net_tcp_prepare_data_segment(struct net_tcp *tcp, struct net_buf *buf, void *options, size_t optlen, const struct sockaddr *remote, struct net_buf **send_buf)
