@@ -1,0 +1,11 @@
+DECL|HAL_OPAMP_DeInit|function|HAL_StatusTypeDef HAL_OPAMP_DeInit(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_GetState|function|HAL_OPAMP_StateTypeDef HAL_OPAMP_GetState(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_GetTrimOffset|function|OPAMP_TrimmingValueTypeDef HAL_OPAMP_GetTrimOffset (OPAMP_HandleTypeDef *hopamp, uint32_t trimmingoffset)
+DECL|HAL_OPAMP_Init|function|HAL_StatusTypeDef HAL_OPAMP_Init(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_Lock|function|HAL_StatusTypeDef HAL_OPAMP_Lock(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_MspDeInit|function|__weak void HAL_OPAMP_MspDeInit(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_MspInit|function|__weak void HAL_OPAMP_MspInit(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_SelfCalibrate|function|HAL_StatusTypeDef HAL_OPAMP_SelfCalibrate(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_Start|function|HAL_StatusTypeDef HAL_OPAMP_Start(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_Stop|function|HAL_StatusTypeDef HAL_OPAMP_Stop(OPAMP_HandleTypeDef *hopamp)
+DECL|OPAMP_CSR_RESET_VALUE|macro|OPAMP_CSR_RESET_VALUE

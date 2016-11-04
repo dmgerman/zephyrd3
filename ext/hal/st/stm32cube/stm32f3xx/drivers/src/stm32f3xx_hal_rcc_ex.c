@@ -1,0 +1,4 @@
+DECL|HAL_RCCEx_GetPeriphCLKConfig|function|void HAL_RCCEx_GetPeriphCLKConfig(RCC_PeriphCLKInitTypeDef *PeriphClkInit)
+DECL|HAL_RCCEx_GetPeriphCLKFreq|function|uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk)
+DECL|HAL_RCCEx_PeriphCLKConfig|function|HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef *PeriphClkInit)
+DECL|RCC_GetPLLCLKFreq|function|static uint32_t RCC_GetPLLCLKFreq(void)
