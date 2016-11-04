@@ -1,7 +1,9 @@
 DECL|I2C_POLL_COUNT|macro|I2C_POLL_COUNT
 DECL|I2C_POLL_MICROSECOND|macro|I2C_POLL_MICROSECOND
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_0_isr)
-DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_1_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_0_dma_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_0_irq_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_1_dma_isr)
+DECL|QM_ISR_DECLARE|function|QM_ISR_DECLARE(qm_i2c_1_irq_isr)
 DECL|RX_TL|macro|RX_TL
 DECL|SPK_LEN_FS_FSP|macro|SPK_LEN_FS_FSP
 DECL|SPK_LEN_SS|macro|SPK_LEN_SS
@@ -18,7 +20,9 @@ DECL|empty_rx_fifo|function|static void empty_rx_fifo(const qm_i2c_t i2c, const 
 DECL|fill_tx_fifo|function|static void fill_tx_fifo(const qm_i2c_t i2c, const volatile qm_i2c_transfer_t *const transfer, qm_i2c_reg_t *const controller)
 DECL|get_hi_cnt|function|static uint32_t get_hi_cnt(qm_i2c_t i2c, uint32_t hi_time_ns)
 DECL|get_lo_cnt|function|static uint32_t get_lo_cnt(uint32_t lo_time_ns)
-DECL|handle_tx_abrt|function|handle_tx_abrt(const qm_i2c_t i2c, const volatile qm_i2c_transfer_t *const transfer, qm_i2c_reg_t *const controller)
+DECL|handle_dma_tx_abrt|function|static __inline__ void handle_dma_tx_abrt(const qm_i2c_t i2c, qm_i2c_reg_t *const controller)
+DECL|handle_irq_tx_abrt|function|handle_irq_tx_abrt(const qm_i2c_t i2c, const volatile qm_i2c_transfer_t *const transfer, qm_i2c_reg_t *const controller)
+DECL|handle_tx_abrt_common|function|static __inline__ int handle_tx_abrt_common(qm_i2c_reg_t *const controller, qm_i2c_status_t *status)
 DECL|i2c_dma_callbacks|variable|i2c_dma_callbacks
 DECL|i2c_dma_context_t|typedef|} i2c_dma_context_t;
 DECL|i2c_dma_context|variable|i2c_dma_context
@@ -28,7 +32,8 @@ DECL|i2c_dma_receive_callback|function|static void i2c_dma_receive_callback(void
 DECL|i2c_dma_transfer_error_callback|function|static void i2c_dma_transfer_error_callback(uint32_t i2c, int error_code, uint32_t len)
 DECL|i2c_dma_transmit_callback|function|static void i2c_dma_transmit_callback(void *callback_context, uint32_t len, int error_code)
 DECL|i2c_error_code|member|int i2c_error_code;
-DECL|i2c_isr_handler|function|static void i2c_isr_handler(const qm_i2c_t i2c)
+DECL|i2c_isr_dma_handler|function|static void i2c_isr_dma_handler(const qm_i2c_t i2c)
+DECL|i2c_isr_irq_handler|function|static void i2c_isr_irq_handler(const qm_i2c_t i2c)
 DECL|i2c_isr_master_handler|function|i2c_isr_master_handler(const qm_i2c_t i2c, const volatile qm_i2c_transfer_t *const transfer, qm_i2c_reg_t *const controller)
 DECL|i2c_isr_slave_handler|function|i2c_isr_slave_handler(const qm_i2c_t i2c, const volatile qm_i2c_transfer_t *const transfer, qm_i2c_reg_t *const controller)
 DECL|i2c_read_cmd_send|variable|i2c_read_cmd_send

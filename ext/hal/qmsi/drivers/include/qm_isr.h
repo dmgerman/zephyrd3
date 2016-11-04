@@ -16,8 +16,10 @@ DECL|qm_dma_0_isr_7|variable|qm_dma_0_isr_7
 DECL|qm_flash_mpr_0_isr|variable|qm_flash_mpr_0_isr
 DECL|qm_flash_mpr_1_isr|variable|qm_flash_mpr_1_isr
 DECL|qm_gpio_0_isr|variable|qm_gpio_0_isr
-DECL|qm_i2c_0_isr|variable|qm_i2c_0_isr
-DECL|qm_i2c_1_isr|variable|qm_i2c_1_isr
+DECL|qm_i2c_0_dma_isr|variable|qm_i2c_0_dma_isr
+DECL|qm_i2c_0_irq_isr|variable|qm_i2c_0_irq_isr
+DECL|qm_i2c_1_dma_isr|variable|qm_i2c_1_dma_isr
+DECL|qm_i2c_1_irq_isr|variable|qm_i2c_1_irq_isr
 DECL|qm_mailbox_0_isr|variable|qm_mailbox_0_isr
 DECL|qm_pic_timer_0_isr|variable|qm_pic_timer_0_isr
 DECL|qm_pwm_0_isr|variable|qm_pwm_0_isr
