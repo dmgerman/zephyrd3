@@ -33,6 +33,8 @@ DECL|hci_version|member|uint8_t hci_version;
 DECL|id_addr|member|bt_addr_le_t id_addr;
 DECL|irk|member|uint8_t irk[16];
 DECL|le|member|struct bt_dev_le le;
+DECL|lmp_subversion|member|uint16_t lmp_subversion;
+DECL|lmp_version|member|uint8_t lmp_version;
 DECL|manufacturer|member|uint16_t manufacturer;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
