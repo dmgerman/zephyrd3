@@ -1,5 +1,4 @@
 DECL|ASSERT_CURRENT_IS_COOP_THREAD|macro|ASSERT_CURRENT_IS_COOP_THREAD
-DECL|ASSERT_CURRENT_IS_COOP_THREAD|macro|ASSERT_CURRENT_IS_COOP_THREAD
 DECL|_collector_coop_thread|variable|_collector_coop_thread
 DECL|_sys_k_event_logger_buffer|variable|_sys_k_event_logger_buffer
 DECL|_sys_k_event_logger_context_switch|function|void _sys_k_event_logger_context_switch(void)
