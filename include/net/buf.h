@@ -23,6 +23,8 @@ DECL|net_buf_add_le32|macro|net_buf_add_le32
 DECL|net_buf_add_u8|macro|net_buf_add_u8
 DECL|net_buf_add|macro|net_buf_add
 DECL|net_buf_frags_len|function|static inline size_t net_buf_frags_len(struct net_buf *buf)
+DECL|net_buf_get_timeout|macro|net_buf_get_timeout
+DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_headroom|macro|net_buf_headroom
 DECL|net_buf_pool_init|macro|net_buf_pool_init
 DECL|net_buf_pull_be16|macro|net_buf_pull_be16
@@ -43,6 +45,7 @@ DECL|net_buf_simple_tail|function|static inline uint8_t *net_buf_simple_tail(str
 DECL|net_buf_simple|struct|struct net_buf_simple {
 DECL|net_buf_tailroom|macro|net_buf_tailroom
 DECL|net_buf_tail|macro|net_buf_tail
+DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|offset|member|uint16_t offset;
