@@ -116,7 +116,6 @@ DECL|link_key_neg_reply|function|static void link_key_neg_reply(const bt_addr_t 
 DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
 DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr, const uint8_t *lk)
 DECL|link_key_req|function|static void link_key_req(struct net_buf *buf)
-DECL|mynewt_rand_delay|function|static inline void mynewt_rand_delay(void)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
