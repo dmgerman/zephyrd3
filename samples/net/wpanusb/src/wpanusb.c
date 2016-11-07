@@ -21,6 +21,7 @@ DECL|WPANUSB_SUBCLASS|macro|WPANUSB_SUBCLASS
 DECL|__dev|variable|__dev
 DECL|buffer|variable|buffer
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
+DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
 DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
 DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_buf *buf)
