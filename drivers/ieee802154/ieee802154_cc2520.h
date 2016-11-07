@@ -25,5 +25,5 @@ DECL|rx_lock|member|struct nano_sem rx_lock;
 DECL|sfd_cb|member|struct gpio_callback sfd_cb;
 DECL|slave|member|uint32_t slave;
 DECL|spi|member|struct cc2520_spi spi;
-DECL|tx_sync|member|device_sync_call_t tx_sync;
+DECL|tx_sync|member|struct nano_sem tx_sync;
 DECL|tx|member|atomic_t tx;
