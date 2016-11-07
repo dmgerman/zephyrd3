@@ -33,3 +33,4 @@ DECL|set_appdata_values|function|static void set_appdata_values(struct net_buf *
 DECL|tcp_established|function|static enum net_verdict tcp_established(struct net_conn *conn, struct net_buf *buf, void *user_data)
 DECL|tcp_syn_rcvd|function|static enum net_verdict tcp_syn_rcvd(struct net_conn *conn, struct net_buf *buf, void *user_data)
 DECL|tcp_synack_received|function|static enum net_verdict tcp_synack_received(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|update_ll_reserve|function|static inline struct net_buf *update_ll_reserve(struct net_buf *buf,struct in6_addr *addr)
