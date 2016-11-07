@@ -40,6 +40,7 @@ DECL|interface_data|member|uint8_t interface_data[CDC_CLASS_REQ_MAX_DATA_SIZE];
 DECL|line_coding|member|struct cdc_acm_line_coding line_coding;
 DECL|line_state|member|uint8_t line_state;
 DECL|notification_sent|member|uint8_t notification_sent;
+DECL|poll_wait_sem|variable|poll_wait_sem
 DECL|rx_buf_head|member|uint32_t rx_buf_head; /* Head of the internal Rx buffer */
 DECL|rx_buf_tail|member|uint32_t rx_buf_tail; /* Tail of the internal Rx buffer */
 DECL|rx_buf|member|uint8_t rx_buf[CDC_ACM_BUFFER_SIZE];/* Internal Rx buffer */
