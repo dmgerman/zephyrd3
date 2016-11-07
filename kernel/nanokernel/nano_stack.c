@@ -1,7 +1,0 @@
-DECL|_stack_pop|function|int _stack_pop(struct nano_stack *stack, uint32_t *pData, int32_t timeout_in_ticks)
-DECL|_stack_push_non_preemptible|function|void _stack_push_non_preemptible(struct nano_stack *stack, uint32_t data)
-DECL|nano_stack_init|function|void nano_stack_init(struct nano_stack *stack, uint32_t *data)
-DECL|nano_stack_pop|function|int nano_stack_pop(struct nano_stack *stack, uint32_t *pData, int32_t timeout_in_ticks)
-DECL|nano_stack_push|function|void nano_stack_push(struct nano_stack *stack, uint32_t data)
-DECL|nano_task_stack_pop|function|int nano_task_stack_pop(struct nano_stack *stack, uint32_t *pData, int32_t timeout_in_ticks)
-DECL|nano_task_stack_push|function|void nano_task_stack_push(struct nano_stack *stack, uint32_t data)
