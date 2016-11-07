@@ -21,7 +21,7 @@ DECL|ipv6_hdr|struct|struct ipv6_hdr {
 DECL|len|member|uint16_t len;
 DECL|len|member|uint8_t len[2];
 DECL|linearize|function|static void linearize(struct net_buf *buf, char *buffer, int len)
-DECL|mainloop|function|void mainloop(void)
+DECL|main|function|void main(void)
 DECL|nexthdr|member|uint8_t nexthdr;
 DECL|sample_data|variable|sample_data
 DECL|src_port|member|uint16_t src_port;
