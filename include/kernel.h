@@ -88,6 +88,10 @@ DECL|count|member|int count;
 DECL|count|member|unsigned int count;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
+DECL|delete|function|inline void operator delete(void *ptr)
+DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
+DECL|delete|function|inline void operator delete[](void *ptr)
+DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
@@ -153,6 +157,10 @@ DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory 
 DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
 DECL|min_block_size|member|size_t min_block_size;
 DECL|msg_size|member|size_t msg_size;
+DECL|new|function|inline void *operator new(size_t size)
+DECL|new|function|inline void *operator new(size_t size, void *ptr)
+DECL|new|function|inline void *operator new[](size_t size)
+DECL|new|function|inline void *operator new[](size_t size, void *ptr)
 DECL|next|member|uint32_t *base, *next, *top;
 DECL|node|member|sys_dlist_t node;
 DECL|nr_of_block_sets|member|uint32_t nr_of_block_sets;

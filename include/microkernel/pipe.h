@@ -1,4 +1,0 @@
-DECL|DEFINE_PIPE|macro|DEFINE_PIPE
-DECL|PIPE_H|macro|PIPE_H
-DECL|__K_PIPE_INITIALIZER|macro|__K_PIPE_INITIALIZER
-DECL|task_pipe_block_put|macro|task_pipe_block_put
