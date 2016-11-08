@@ -1,3 +1,4 @@
+DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
 DECL|_get_highest_ready_prio|function|static inline int _get_highest_ready_prio(void)
 DECL|_get_new_prio_with_ceiling|function|static inline int _get_new_prio_with_ceiling(int prio)
 DECL|_get_ready_q_prio_bit|function|static inline int _get_ready_q_prio_bit(int prio)
@@ -7,6 +8,7 @@ DECL|_has_thread_started|function|static inline int _has_thread_started(struct k
 DECL|_is_coop|function|static inline int _is_coop(struct k_thread *thread)
 DECL|_is_current_execution_context_preemptible|function|static inline int _is_current_execution_context_preemptible(void)
 DECL|_is_higher_prio_than_current|function|static inline int _is_higher_prio_than_current(struct k_thread *thread)
+DECL|_is_idle_thread|function|static inline int _is_idle_thread(void *entry_point)
 DECL|_is_preempt|function|static inline int _is_preempt(struct k_thread *thread)
 DECL|_is_prio1_higher_than_or_equal_to_prio2|function|static inline int _is_prio1_higher_than_or_equal_to_prio2(int prio1, int prio2)
 DECL|_is_prio1_higher_than_prio2|function|static inline int _is_prio1_higher_than_prio2(int prio1, int prio2)
