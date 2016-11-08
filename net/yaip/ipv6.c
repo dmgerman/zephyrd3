@@ -61,6 +61,7 @@ DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
 DECL|net_ipv6_start_dad|function|int net_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
 DECL|net_ipv6_start_rs|function|int net_ipv6_start_rs(struct net_if *iface)
+DECL|net_ipv6_unspecified_address|function|const struct in6_addr *net_ipv6_unspecified_address(void)
 DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
 DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)

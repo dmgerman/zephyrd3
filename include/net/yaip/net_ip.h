@@ -107,7 +107,6 @@ DECL|net_ipv6_addr_create_ll_allnodes_mcast|function|static inline void net_ipv6
 DECL|net_ipv6_addr_create_solicited_node|function|static inline void net_ipv6_addr_create_solicited_node(struct in6_addr *src, struct in6_addr *dst)
 DECL|net_ipv6_addr_create|function|static inline void net_ipv6_addr_create(struct in6_addr *addr,uint16_t addr0, uint16_t addr1, uint16_t addr2, uint16_t addr3, uint16_t addr4, uint16_t addr5, uint16_t addr6, uint16_t addr7)
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
-DECL|net_ipv6_unspecified_address|function|static inline const struct in6_addr *net_ipv6_unspecified_address(void)
 DECL|net_is_ipv4_addr_mcast|function|static inline bool net_is_ipv4_addr_mcast(const struct in_addr *addr)
 DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast_global|function|static inline bool net_is_ipv6_addr_mcast_global(const struct in6_addr *addr)
