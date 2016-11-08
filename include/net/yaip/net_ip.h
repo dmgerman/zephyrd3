@@ -98,7 +98,6 @@ DECL|net_ip_protocol|enum|enum net_ip_protocol {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv4_addr_cmp|function|static inline bool net_ipv4_addr_cmp(const struct in_addr *addr1, const struct in_addr *addr2)
 DECL|net_ipv4_addr_mask_cmp|function|static inline bool net_ipv4_addr_mask_cmp(struct net_if *iface, struct in_addr *addr)
-DECL|net_ipv4_broadcast_address|function|static inline const struct in_addr *net_ipv4_broadcast_address(void)
 DECL|net_ipv4_hdr|struct|struct net_ipv4_hdr {
 DECL|net_ipv6_addr_based_on_ll|function|static inline bool net_ipv6_addr_based_on_ll(const struct in6_addr *addr, const struct net_linkaddr *lladdr)
 DECL|net_ipv6_addr_cmp|function|static inline bool net_ipv6_addr_cmp(const struct in6_addr *addr1, const struct in6_addr *addr2)

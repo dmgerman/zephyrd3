@@ -25,7 +25,6 @@ DECL|net_if_ipv4_addr_add|function|struct net_if_addr *net_if_ipv4_addr_add(stru
 DECL|net_if_ipv4_addr_lookup|function|struct net_if_addr *net_if_ipv4_addr_lookup(const struct in_addr *addr, struct net_if **ret)
 DECL|net_if_ipv4_addr_mask_cmp|function|bool net_if_ipv4_addr_mask_cmp(struct net_if *iface, struct in_addr *addr)
 DECL|net_if_ipv4_addr_rm|function|bool net_if_ipv4_addr_rm(struct net_if *iface, struct in_addr *addr)
-DECL|net_if_ipv4_broadcast_addr|function|const struct in_addr *net_if_ipv4_broadcast_addr(void)
 DECL|net_if_ipv4_router_add|function|struct net_if_router *net_if_ipv4_router_add(struct net_if *iface, struct in_addr *addr, bool is_default, uint16_t lifetime)
 DECL|net_if_ipv4_router_lookup|function|struct net_if_router *net_if_ipv4_router_lookup(struct net_if *iface,struct in_addr *addr)
 DECL|net_if_ipv6_addr_add|function|struct net_if_addr *net_if_ipv6_addr_add(struct net_if *iface, struct in6_addr *addr, enum net_addr_type addr_type, uint32_t vlifetime)
