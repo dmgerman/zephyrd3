@@ -1,15 +1,15 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cfi_to_fs_settings|function|static inline bool cfi_to_fs_settings(enum ieee802154_cfi cfi, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
-DECL|data_addr_to_fs_settings|function|void data_addr_to_fs_settings(struct net_if *iface, struct net_buf *buf, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
+DECL|data_addr_to_fs_settings|function|void data_addr_to_fs_settings(struct net_if *iface, struct in6_addr *dst, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|generate_addressing_fields|function|uint8_t *generate_addressing_fields(struct net_if *iface, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params, uint8_t *p_buf)
 DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(uint8_t **p_buf, uint8_t ack)
-DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_if *iface, struct net_buf *buf, struct net_nbr **nbr, bool *broadcast)
+DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_if *iface, struct in6_addr *dst, struct net_nbr **nbr, bool *broadcast)
 DECL|ieee802154_compute_header_size|function|uint16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
 DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_buf *buf, uint8_t seq)
-DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_buf *buf, uint8_t *p_buf, uint8_t len)
+DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct in6_addr *dst, uint8_t *p_buf, uint8_t len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct net_if *iface,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
 DECL|mac_command_length|function|static inline uint8_t mac_command_length(enum ieee802154_cfi cfi)
