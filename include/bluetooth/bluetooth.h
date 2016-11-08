@@ -11,6 +11,7 @@ DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
 DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
 DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
+DECL|_priv|member|uint8_t _priv[4];
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
@@ -37,7 +38,6 @@ DECL|interval|member|uint16_t interval;
 DECL|length|member|uint8_t length;
 DECL|limited|member|bool limited;
 DECL|options|member|uint8_t options;
-DECL|private|member|uint8_t private[4];
 DECL|rssi|member|int8_t rssi;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
