@@ -19,5 +19,5 @@ DECL|task_mbox_data_block_get|function|int task_mbox_data_block_get(struct k_msg
 DECL|task_mbox_data_get|function|void task_mbox_data_get(struct k_msg *msg)
 DECL|task_mbox_get|function|int task_mbox_get(kmbox_t mbox, struct k_msg *msg, int32_t timeout)
 DECL|task_mbox_put|function|int task_mbox_put(kmbox_t mbox, kpriority_t prio, struct k_msg *msg, int32_t timeout)
-DECL|thread|member|struct tcs_base thread; /* dummy thread object */
+DECL|thread|member|struct _thread_base thread; /* dummy thread object */
 DECL|tx_msg|member|struct k_mbox_msg tx_msg; /* transmit message descriptor */

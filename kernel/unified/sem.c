@@ -3,7 +3,7 @@ DECL|_sem_give_non_preemptible|function|void _sem_give_non_preemptible(struct k_
 DECL|_sem_thread|struct|struct _sem_thread {
 DECL|_trace_list_k_sem|variable|_trace_list_k_sem
 DECL|desc|member|struct _sem_desc desc;
-DECL|dummy|member|struct tcs_base dummy;
+DECL|dummy|member|struct _thread_base dummy;
 DECL|handle_sem_group|function|static int handle_sem_group(struct k_sem *sem, struct k_thread *thread)
 DECL|handle_sem_group|macro|handle_sem_group
 DECL|init_sem_module|function|static int init_sem_module(struct device *dev)

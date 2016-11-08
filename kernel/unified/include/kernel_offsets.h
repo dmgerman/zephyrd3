@@ -1,0 +1,2 @@
+DECL|GEN_OFFSET_SYM|variable|GEN_OFFSET_SYM
+DECL|_kernel_offsets__h_|macro|_kernel_offsets__h_

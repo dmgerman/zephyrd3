@@ -9,5 +9,5 @@ DECL|_init_thread_timeout|function|static inline void _init_thread_timeout(struc
 DECL|_init_timeout|function|static inline void _init_timeout(struct _timeout *t, _timeout_func_t func)
 DECL|_is_timeout_insert_point|function|static int _is_timeout_insert_point(sys_dnode_t *test, void *timeout)
 DECL|_kernel_nanokernel_include_timeout_q__h_|macro|_kernel_nanokernel_include_timeout_q__h_
-DECL|_nano_timeout_tcs_init|function|static inline void _nano_timeout_tcs_init(struct tcs *tcs)
+DECL|_nano_timeout_thread_init|function|static inline void _nano_timeout_thread_init(struct k_thread *thread)
 DECL|_unpend_thread_timing_out|function|static inline void _unpend_thread_timing_out(struct k_thread *thread, struct _timeout *timeout_obj)

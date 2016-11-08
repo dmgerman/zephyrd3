@@ -139,7 +139,6 @@ DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
-DECL|k_thread|macro|k_thread
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *);
@@ -188,6 +187,7 @@ DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
 DECL|status|member|uint32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
+DECL|tcs|macro|tcs
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|timeout|member|struct _timeout timeout;

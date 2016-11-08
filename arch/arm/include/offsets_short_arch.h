@@ -1,0 +1,3 @@
+DECL|_offsets_short_arch__h_|macro|_offsets_short_arch__h_
+DECL|_thread_offset_to_basepri|macro|_thread_offset_to_basepri
+DECL|_thread_offset_to_preempt_float|macro|_thread_offset_to_preempt_float

@@ -1,0 +1,14 @@
+DECL|_offsets_short_arch__h_|macro|_offsets_short_arch__h_
+DECL|_thread_offset_to_key|macro|_thread_offset_to_key
+DECL|_thread_offset_to_r16|macro|_thread_offset_to_r16
+DECL|_thread_offset_to_r17|macro|_thread_offset_to_r17
+DECL|_thread_offset_to_r18|macro|_thread_offset_to_r18
+DECL|_thread_offset_to_r19|macro|_thread_offset_to_r19
+DECL|_thread_offset_to_r20|macro|_thread_offset_to_r20
+DECL|_thread_offset_to_r21|macro|_thread_offset_to_r21
+DECL|_thread_offset_to_r22|macro|_thread_offset_to_r22
+DECL|_thread_offset_to_r23|macro|_thread_offset_to_r23
+DECL|_thread_offset_to_r28|macro|_thread_offset_to_r28
+DECL|_thread_offset_to_ra|macro|_thread_offset_to_ra
+DECL|_thread_offset_to_retval|macro|_thread_offset_to_retval
+DECL|_thread_offset_to_sp|macro|_thread_offset_to_sp

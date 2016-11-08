@@ -23,4 +23,4 @@ DECL|k_pipe_get|function|int k_pipe_get(struct k_pipe *pipe, void *data, size_t 
 DECL|k_pipe_init|function|void k_pipe_init(struct k_pipe *pipe, unsigned char *buffer, size_t size)
 DECL|k_pipe_put|function|int k_pipe_put(struct k_pipe *pipe, void *data, size_t bytes_to_write, size_t *bytes_written, size_t min_xfer, int32_t timeout)
 DECL|sem|member|struct k_sem *sem; /* Semaphore to give if async */
-DECL|thread|member|struct tcs_base thread; /* Dummy thread object */
+DECL|thread|member|struct _thread_base thread; /* Dummy thread object */

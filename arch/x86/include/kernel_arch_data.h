@@ -310,45 +310,30 @@ DECL|NO_METRICS|macro|NO_METRICS
 DECL|PRINTK|macro|PRINTK
 DECL|PRINTK|macro|PRINTK
 DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
-DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
-DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
 DECL|_FP_USER_MASK|macro|_FP_USER_MASK
 DECL|_FP_USER_MASK|macro|_FP_USER_MASK
-DECL|_IDLE_THREAD_PRIO|macro|_IDLE_THREAD_PRIO
-DECL|_IntLibInit|function|static inline void _IntLibInit(void)
-DECL|_NANO_PRIVATE_H|macro|_NANO_PRIVATE_H
 DECL|__aligned|typedef|} tFpRegSet __aligned(FP_REG_SET_ALIGN);
 DECL|__aligned|typedef|} tFpRegSetEx __aligned(FP_REG_SET_ALIGN);
-DECL|__thread_entry|struct|struct __thread_entry {
-DECL|_current|macro|_current
-DECL|_is_in_isr|macro|_is_in_isr
-DECL|_ready_q|macro|_ready_q
-DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
-DECL|_set_thread_return_value|macro|_set_thread_return_value
-DECL|_timeout_q|macro|_timeout_q
-DECL|cache|member|struct k_thread *cache;
-DECL|common_isp|member|char *common_isp; /* interrupt stack pointer base */
+DECL|_callee_saved_t|typedef|typedef struct _callee_saved _callee_saved_t;
+DECL|_callee_saved|struct|struct _callee_saved {
+DECL|_caller_saved_t|typedef|typedef struct _caller_saved _caller_saved_t;
+DECL|_caller_saved|struct|struct _caller_saved {
+DECL|_kernel_arch_data__h_|macro|_kernel_arch_data__h_
+DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
+DECL|_kernel_arch|struct|struct _kernel_arch {
+DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
+DECL|_thread_arch|struct|struct _thread_arch {
 DECL|coopFloatReg|member|tCoopFloatReg coopFloatReg; /* non-volatile float register storage */
-DECL|coopReg|member|tCoopReg coopReg; /* non-volatile integer register storage */
 DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
 DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
-DECL|current_fp|member|struct tcs *current_fp; /* thread (fiber or task) that owns the FP regs */
-DECL|current|member|struct tcs *current; /* currently scheduled thread (fiber or task) */
-DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
-DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
-DECL|errno_var|member|int errno_var;
-DECL|esfPtr|member|void *esfPtr; /* pointer to exception stack frame saved by */
+DECL|esf|member|void *esf;
 DECL|esp|member|unsigned long esp;
 DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
-DECL|fiberRtnValueSet|function|static inline void fiberRtnValueSet(struct tcs *fiber, unsigned int value)
-DECL|flags|member|int flags;
-DECL|flags|member|uint32_t flags;
 DECL|floatRegsUnion|member|} floatRegsUnion;
-DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|fop|member|unsigned short fop : 11; /* 2 : x87 FPU opcode */
 DECL|fop|member|unsigned short fop; /* 2 : x87 FPU opcode */
 DECL|fpRegsEx|member|tFpRegSetEx fpRegsEx;
@@ -363,33 +348,15 @@ DECL|fsw|member|unsigned short fsw; /* 2 : x87 FPU status word */
 DECL|fsw|member|unsigned short fsw; /* 2 : x87 FPU status word */
 DECL|ftw|member|unsigned char ftw; /* 1 : x87 FPU abridged tag word */
 DECL|ftw|member|unsigned short ftw; /* 2 : x87 FPU tag word */
-DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
-DECL|init_data|member|void *init_data;
 DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
-DECL|k_q_node|member|sys_dnode_t k_q_node;
-DECL|k_q_node|member|sys_dnode_t k_q_node; /* node object in any kernel queue */
 DECL|mxcsrMask|member|unsigned int mxcsrMask; /* 4 : MXCSR register mask */
 DECL|mxcsr|member|unsigned int mxcsr; /* 4 : MXCSR register state */
-DECL|nanoArchInit|function|static inline void nanoArchInit(void)
-DECL|nested|member|unsigned nested; /* nested interrupt count */
-DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
-DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|pad1|member|unsigned short pad1; /* 2 : N/A */
 DECL|pad2|member|unsigned short pad2; /* 2 : N/A */
 DECL|pad3|member|unsigned short pad3; /* 2 : N/A */
 DECL|pad4|member|unsigned short pad4 : 5; /* : 5 bits = 00000 */
 DECL|pad5|member|unsigned short pad5; /* 2 : N/A */
-DECL|parameter1|member|void *parameter1;
-DECL|parameter2|member|void *parameter2;
-DECL|parameter3|member|void *parameter3;
 DECL|preempFloatReg|member|tPreempFloatReg preempFloatReg; /* volatile float register storage */
-DECL|preempReg|member|tPreempReg preempReg; /* volatile integer register storage */
-DECL|prio_bmap|member|uint32_t prio_bmap[1];
-DECL|prio|member|int prio; /* thread priority used to sort linked list */
-DECL|prio|member|int prio; /* thread priority used to sort linked list */
-DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
-DECL|ready_q|member|struct ready_q ready_q;
-DECL|ready_q|struct|struct ready_q {
 DECL|reg|member|unsigned char reg[10]; /* 80 bits: ST[0-7] */
 DECL|reg|member|unsigned char reg[10]; /* 80 bits: ST[0-7] or MM[0-7] */
 DECL|reg|member|unsigned char reg[16]; /* 128 bits: XMM[0-7] */
@@ -405,30 +372,15 @@ DECL|s_FpRegSetEx|struct|typedef struct s_FpRegSetEx {
 DECL|s_FpRegSet|struct|typedef struct s_FpRegSet {
 DECL|s_FpRegSet|struct|typedef struct s_FpRegSet { /* # of bytes: name of register */
 DECL|s_FpReg|struct|typedef struct s_FpReg {
-DECL|s_NANO|struct|typedef struct s_NANO {
 DECL|s_XmmReg|struct|typedef struct s_XmmReg {
 DECL|s_coopFloatReg|struct|typedef struct s_coopFloatReg {
-DECL|s_coopReg|struct|typedef struct s_coopReg {
 DECL|s_preempFloatReg|struct|typedef struct s_preempFloatReg {
-DECL|s_preempReg|struct|typedef struct s_preempReg {
-DECL|sched_locked|member|atomic_t sched_locked;
-DECL|swap_data|member|void *swap_data;
-DECL|swap_data|member|void *swap_data;
 DECL|tCoopFloatReg|typedef|} tCoopFloatReg;
-DECL|tCoopReg|typedef|} tCoopReg;
 DECL|tFpRegEx|typedef|} tFpRegEx;
 DECL|tFpRegSetEx|typedef|} tFpRegSetEx;
 DECL|tFpRegSetEx|typedef|} tFpRegSetEx;
 DECL|tFpRegSet|typedef|} tFpRegSet;
 DECL|tFpReg|typedef|} tFpReg;
-DECL|tNANO|typedef|} tNANO;
 DECL|tPreempFloatReg|typedef|} tPreempFloatReg;
-DECL|tPreempReg|typedef|} tPreempReg;
 DECL|tXmmReg|typedef|} tXmmReg;
-DECL|tcs_base|struct|struct tcs_base {
-DECL|tcs|struct|struct tcs {
-DECL|threads|member|struct tcs *threads; /* singly linked list of ALL fiber+tasks */
-DECL|timeout_q|member|sys_dlist_t timeout_q;
-DECL|timeout|member|struct _timeout timeout;
-DECL|timeout|member|struct _timeout timeout;
 DECL|xmmReg|member|tXmmReg xmmReg[8]; /* 128 : XMM registers */
