@@ -1,3 +1,4 @@
+DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|__x86_restore_info|variable|__x86_restore_info
 DECL|_deep_sleep|function|static void _deep_sleep(enum power_states state)
 DECL|_pm_save_esp|variable|_pm_save_esp
