@@ -17,6 +17,7 @@ DECL|_cc2520_write_reg|function|bool _cc2520_write_reg(struct cc2520_spi *spi, b
 DECL|_usleep|function|static void _usleep(uint32_t usec)
 DECL|cc2520_cca|function|static int cc2520_cca(struct device *dev)
 DECL|cc2520_context_data|variable|cc2520_context_data
+DECL|cc2520_get_lqi|function|static uint8_t cc2520_get_lqi(struct device *dev)
 DECL|cc2520_iface_init|function|static void cc2520_iface_init(struct net_if *iface)
 DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_radio_api|variable|cc2520_radio_api

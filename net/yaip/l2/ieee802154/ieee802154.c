@@ -1,6 +1,5 @@
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|get_lqi|function|static inline uint8_t get_lqi(struct net_buf *buf)
 DECL|ieee802154_acknowledge|function|static inline void ieee802154_acknowledge(struct net_if *iface, struct ieee802154_mpdu *mpdu)
 DECL|ieee802154_acknowledge|macro|ieee802154_acknowledge
 DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
