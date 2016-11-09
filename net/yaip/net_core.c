@@ -13,7 +13,7 @@ DECL|net_init|function|static int net_init(struct device *unused)
 DECL|net_print_statistics|macro|net_print_statistics
 DECL|net_print_statistics|macro|net_print_statistics
 DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_buf *buf)
-DECL|net_rx_fiber|function|static void net_rx_fiber(void)
+DECL|net_rx_thread|function|static void net_rx_thread(void)
 DECL|net_send_data|function|int net_send_data(struct net_buf *buf)
 DECL|net_stats|variable|net_stats
 DECL|process_data|function|static inline enum net_verdict process_data(struct net_buf *buf)
@@ -21,7 +21,7 @@ DECL|process_icmpv4_pkt|function|static inline enum net_verdict process_icmpv4_p
 DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_buf *buf, struct net_ipv6_hdr *ipv6)
 DECL|process_ipv4_pkt|function|static inline enum net_verdict process_ipv4_pkt(struct net_buf *buf)
 DECL|process_ipv6_pkt|function|static inline enum net_verdict process_ipv6_pkt(struct net_buf *buf)
-DECL|rx_fiber_id|variable|rx_fiber_id
-DECL|rx_fiber_stack|variable|rx_fiber_stack
 DECL|rx_queue|variable|rx_queue
+DECL|rx_stack|variable|rx_stack
+DECL|rx_tid|variable|rx_tid
 DECL|stats|function|static inline void stats(void)
