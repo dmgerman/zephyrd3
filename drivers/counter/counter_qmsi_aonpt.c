@@ -25,5 +25,5 @@ DECL|aonpt_suspend_device|function|static int aonpt_suspend_device(struct device
 DECL|device_power_state|member|uint32_t device_power_state;
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|user_cb|variable|user_cb
