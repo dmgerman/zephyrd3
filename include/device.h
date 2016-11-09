@@ -37,7 +37,7 @@ DECL|device_sync_call_wait|function|static inline void device_sync_call_wait(dev
 DECL|device|struct|struct device {
 DECL|driver_api|member|const void *driver_api;
 DECL|driver_data|member|void *driver_data;
-DECL|f_sem|member|struct nano_sem f_sem;
+DECL|f_sem|member|struct k_sem f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
 DECL|resume|member|int (*resume)(struct device *device, int pm_policy);
