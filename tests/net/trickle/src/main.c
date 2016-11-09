@@ -9,8 +9,10 @@ DECL|T2_IMIN|macro|T2_IMIN
 DECL|T2_K|macro|T2_K
 DECL|WAIT_TIME_LONG|macro|WAIT_TIME_LONG
 DECL|WAIT_TIME|macro|WAIT_TIME
-DECL|cb_called|variable|cb_called
-DECL|cb|function|static void cb(struct net_trickle *trickle, bool do_suppress, void *user_data)
+DECL|cb_1_called|variable|cb_1_called
+DECL|cb_1|function|static void cb_1(struct net_trickle *trickle, bool do_suppress, void *user_data)
+DECL|cb_2_called|variable|cb_2_called
+DECL|cb_2|function|static void cb_2(struct net_trickle *trickle, bool do_suppress, void *user_data)
 DECL|func|member|bool (*func)(void);
 DECL|main|function|void main(void)
 DECL|name|member|const char *name;
