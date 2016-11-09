@@ -9,6 +9,8 @@ DECL|_k_thread_single_abort|function|void _k_thread_single_abort(struct k_thread
 DECL|_k_thread_single_resume|function|void _k_thread_single_resume(struct k_thread *thread)
 DECL|_k_thread_single_start|function|void _k_thread_single_start(struct k_thread *thread)
 DECL|_k_thread_single_suspend|function|void _k_thread_single_suspend(struct k_thread *thread)
+DECL|_task_group_adjust|function|static inline void _task_group_adjust(struct _static_thread_data *thread_data)
+DECL|_task_group_adjust|macro|_task_group_adjust
 DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(void (*entry)(void *, void *, void *), void *p1, void *p2, void *p3)
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
