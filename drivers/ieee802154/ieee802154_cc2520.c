@@ -14,14 +14,14 @@ DECL|_cc2520_read_reg|function|uint8_t _cc2520_read_reg(struct cc2520_spi *spi, 
 DECL|_cc2520_status|function|static uint8_t _cc2520_status(struct cc2520_spi *spi)
 DECL|_cc2520_write_ram|function|bool _cc2520_write_ram(struct cc2520_spi *spi, uint16_t addr, uint8_t *data_buf, uint8_t len)
 DECL|_cc2520_write_reg|function|bool _cc2520_write_reg(struct cc2520_spi *spi, bool freg, uint8_t addr, uint8_t value)
-DECL|_usleep|function|static void _usleep(uint32_t usec)
+DECL|_usleep|macro|_usleep
 DECL|cc2520_cca|function|static int cc2520_cca(struct device *dev)
 DECL|cc2520_context_data|variable|cc2520_context_data
 DECL|cc2520_get_lqi|function|static uint8_t cc2520_get_lqi(struct device *dev)
 DECL|cc2520_iface_init|function|static void cc2520_iface_init(struct net_if *iface)
 DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_radio_api|variable|cc2520_radio_api
-DECL|cc2520_rx|function|static void cc2520_rx(int arg, int unused2)
+DECL|cc2520_rx|function|static void cc2520_rx(int arg)
 DECL|cc2520_set_channel|function|static int cc2520_set_channel(struct device *dev, uint16_t channel)
 DECL|cc2520_set_ieee_addr|function|static int cc2520_set_ieee_addr(struct device *dev, const uint8_t *ieee_addr)
 DECL|cc2520_set_pan_id|function|static int cc2520_set_pan_id(struct device *dev, uint16_t pan_id)
