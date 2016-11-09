@@ -89,7 +89,6 @@ DECL|hci_le_read_remote_features|function|static int hci_le_read_remote_features
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct net_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_fiber|function|static void hci_rx_fiber(bt_ready_cb_t ready_cb)
-DECL|init_sem|function|static void init_sem(struct nano_sem *sem, size_t count)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
 DECL|inquiry_result_with_rssi|function|static void inquiry_result_with_rssi(struct net_buf *buf)
 DECL|io_capa_neg_reply|function|static void io_capa_neg_reply(const bt_addr_t *bdaddr, const uint8_t reason)
@@ -116,7 +115,6 @@ DECL|link_key_neg_reply|function|static void link_key_neg_reply(const bt_addr_t 
 DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
 DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr, const uint8_t *lk)
 DECL|link_key_req|function|static void link_key_req(struct net_buf *buf)
-DECL|mynewt_rand_delay|function|static inline void mynewt_rand_delay(void)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)

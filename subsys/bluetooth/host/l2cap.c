@@ -58,6 +58,7 @@ DECL|l2cap_chan_tx_init|function|static void l2cap_chan_tx_init(struct bt_l2cap_
 DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_le_chan *chan)
 DECL|l2cap_change_security|function|static int l2cap_change_security(struct bt_l2cap_le_chan *chan, uint16_t err)
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
+DECL|l2cap_create_le_sig_pdu|function|static struct net_buf *l2cap_create_le_sig_pdu(uint8_t code, uint8_t ident, uint16_t len)
 DECL|l2cap_detach_chan|macro|l2cap_detach_chan
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_le_conn_req|function|static int l2cap_le_conn_req(struct bt_l2cap_le_chan *ch)

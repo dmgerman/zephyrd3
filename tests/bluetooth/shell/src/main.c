@@ -40,6 +40,7 @@ DECL|cmd_bredr_discovery|function|static int cmd_bredr_discovery(int argc, char 
 DECL|cmd_bredr_l2cap_register|function|static int cmd_bredr_l2cap_register(int argc, char *argv[])
 DECL|cmd_bredr_oob|function|static int cmd_bredr_oob(int argc, char *argv[])
 DECL|cmd_bredr_rfcomm_register|function|static int cmd_bredr_rfcomm_register(int argc, char *argv[])
+DECL|cmd_clear|function|static int cmd_clear(int argc, char *argv[])
 DECL|cmd_connect_bredr|function|static int cmd_connect_bredr(int argc, char *argv[])
 DECL|cmd_connect_le|function|static int cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static int cmd_disconnect(int argc, char *argv[])

@@ -28,7 +28,7 @@ DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
 DECL|connected|member|void (*connected)(struct bt_l2cap_chan *chan);
 DECL|conn|member|struct bt_conn *conn;
-DECL|credits|member|struct nano_sem credits;
+DECL|credits|member|struct k_sem credits;
 DECL|destroy|member|bt_l2cap_chan_destroy_t destroy;
 DECL|disconnected|member|void (*disconnected)(struct bt_l2cap_chan *chan);
 DECL|encrypt_change|member|void (*encrypt_change)(struct bt_l2cap_chan *chan, uint8_t hci_status);

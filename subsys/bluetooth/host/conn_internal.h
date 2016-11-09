@@ -14,7 +14,7 @@ DECL|LMP_MAX_PAGES|macro|LMP_MAX_PAGES
 DECL|__packed|enum|typedef enum __packed {
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
-DECL|bt_conn_get_pkts|function|static inline struct nano_sem *bt_conn_get_pkts(struct bt_conn *conn)
+DECL|bt_conn_get_pkts|function|static inline struct k_sem *bt_conn_get_pkts(struct bt_conn *conn)
 DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
