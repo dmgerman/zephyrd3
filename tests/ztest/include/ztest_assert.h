@@ -6,6 +6,7 @@ DECL|assert_equal_ptr|macro|assert_equal_ptr
 DECL|assert_equal|macro|assert_equal
 DECL|assert_false|macro|assert_false
 DECL|assert_is_null|macro|assert_is_null
+DECL|assert_not_equal|macro|assert_not_equal
 DECL|assert_not_null|macro|assert_not_null
 DECL|assert_true|macro|assert_true
 DECL|assert_unreachable|macro|assert_unreachable
