@@ -41,8 +41,8 @@ DECL|add_sname|function|static inline bool add_sname(struct net_buf *buf)
 DECL|chaddr|member|uint8_t chaddr[16]; /* Client hardware address */
 DECL|ciaddr|member|uint8_t ciaddr[4]; /* Client IP Address */
 DECL|dhcp_msg|struct|struct dhcp_msg {
-DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct nano_work *work)
-DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct nano_work *work)
+DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *work)
+DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
 DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
 DECL|get_dhcpv4_timeout|function|static inline uint32_t get_dhcpv4_timeout(void)

@@ -7,7 +7,7 @@ DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|check_global_addr|function|static inline struct in6_addr *check_global_addr(struct net_if *iface)
-DECL|dad_timeout|function|static void dad_timeout(struct nano_work *work)
+DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
@@ -53,8 +53,8 @@ DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
-DECL|net_if_tx_fiber|function|static void net_if_tx_fiber(struct net_if *iface)
+DECL|net_if_tx_thread|function|static void net_if_tx_thread(struct net_if *iface)
 DECL|net_if_unregister_link_cb|function|void net_if_unregister_link_cb(struct net_if_link_cb *link)
-DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct nano_work *work)
+DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
 DECL|routers|variable|routers
-DECL|rs_timeout|function|static void rs_timeout(struct nano_work *work)
+DECL|rs_timeout|function|static void rs_timeout(struct k_work *work)
