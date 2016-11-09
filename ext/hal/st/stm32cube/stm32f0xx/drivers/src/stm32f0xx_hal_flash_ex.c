@@ -1,0 +1,19 @@
+DECL|FLASH_MassErase|function|static void FLASH_MassErase(void)
+DECL|FLASH_OB_DisableWRP|function|static HAL_StatusTypeDef FLASH_OB_DisableWRP(uint32_t WriteProtectPage)
+DECL|FLASH_OB_EnableWRP|function|static HAL_StatusTypeDef FLASH_OB_EnableWRP(uint32_t WriteProtectPage)
+DECL|FLASH_OB_GetRDP|function|static uint32_t FLASH_OB_GetRDP(void)
+DECL|FLASH_OB_GetUser|function|static uint8_t FLASH_OB_GetUser(void)
+DECL|FLASH_OB_GetWRP|function|static uint32_t FLASH_OB_GetWRP(void)
+DECL|FLASH_OB_ProgramData|function|static HAL_StatusTypeDef FLASH_OB_ProgramData(uint32_t Address, uint8_t Data)
+DECL|FLASH_OB_RDP_LevelConfig|function|static HAL_StatusTypeDef FLASH_OB_RDP_LevelConfig(uint8_t ReadProtectLevel)
+DECL|FLASH_OB_UserConfig|function|static HAL_StatusTypeDef FLASH_OB_UserConfig(uint8_t UserConfig)
+DECL|FLASH_POSITION_IWDGSW_BIT|macro|FLASH_POSITION_IWDGSW_BIT
+DECL|FLASH_POSITION_OB_USERDATA0_BIT|macro|FLASH_POSITION_OB_USERDATA0_BIT
+DECL|FLASH_POSITION_OB_USERDATA1_BIT|macro|FLASH_POSITION_OB_USERDATA1_BIT
+DECL|FLASH_PageErase|function|void FLASH_PageErase(uint32_t PageAddress)
+DECL|HAL_FLASHEx_Erase_IT|function|HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit)
+DECL|HAL_FLASHEx_Erase|function|HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError)
+DECL|HAL_FLASHEx_OBErase|function|HAL_StatusTypeDef HAL_FLASHEx_OBErase(void)
+DECL|HAL_FLASHEx_OBGetConfig|function|void HAL_FLASHEx_OBGetConfig(FLASH_OBProgramInitTypeDef *pOBInit)
+DECL|HAL_FLASHEx_OBGetUserData|function|uint32_t HAL_FLASHEx_OBGetUserData(uint32_t DATAAdress)
+DECL|HAL_FLASHEx_OBProgram|function|HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit)
