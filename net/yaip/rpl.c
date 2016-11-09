@@ -35,13 +35,13 @@ DECL|create_linklocal_rplnodes_mcast|function|static inline void create_linkloca
 DECL|dao_ack_handler|variable|dao_ack_handler
 DECL|dao_ack_send|function|static int dao_ack_send(struct net_buf *orig,struct net_rpl_instance *instance, struct in6_addr *dst, uint8_t sequence)
 DECL|dao_forward|function|static inline int dao_forward(struct net_if *iface, struct net_buf *orig, struct in6_addr *dst)
-DECL|dao_lifetime_timer|function|static void dao_lifetime_timer(struct nano_work *work)
-DECL|dao_send_timer|function|static void dao_send_timer(struct nano_work *work)
+DECL|dao_lifetime_timer|function|static void dao_lifetime_timer(struct k_work *work)
+DECL|dao_send_timer|function|static void dao_send_timer(struct k_work *work)
 DECL|dao_send|function|static int dao_send(struct net_rpl_parent *parent, uint8_t lifetime, struct net_if *iface)
 DECL|dao_timer|function|static void dao_timer(struct net_rpl_instance *instance)
 DECL|destination_advertisement_object_handler|variable|destination_advertisement_object_handler
-DECL|dio_timer|function|static void dio_timer(struct nano_work *work)
-DECL|dis_timeout|function|static void dis_timeout(struct nano_work *work)
+DECL|dio_timer|function|static void dio_timer(struct k_work *work)
+DECL|dis_timeout|function|static void dis_timeout(struct k_work *work)
 DECL|dis_timer|variable|dis_timer
 DECL|dodag_info_solicitation_handler|variable|dodag_info_solicitation_handler
 DECL|dodag_information_object_handler|variable|dodag_information_object_handler
@@ -132,7 +132,7 @@ DECL|rpl_dio_send_ok|variable|rpl_dio_send_ok
 DECL|rpl_instances|variable|rpl_instances
 DECL|rpl_join_callback|variable|rpl_join_callback
 DECL|rpl_mode|variable|rpl_mode
-DECL|rpl_probing_timer|function|static void rpl_probing_timer(struct nano_work *work)
+DECL|rpl_probing_timer|function|static void rpl_probing_timer(struct k_work *work)
 DECL|schedule_dao|function|static void schedule_dao(struct net_rpl_instance *instance, int latency)
 DECL|send_dis_all_interfaces|function|static inline void send_dis_all_interfaces(struct net_if *iface, void *user_data)
 DECL|send_mcast_dao|function|static inline void send_mcast_dao(struct net_rpl_instance *instance)
