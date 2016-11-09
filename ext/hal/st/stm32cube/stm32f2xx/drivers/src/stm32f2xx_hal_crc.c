@@ -1,0 +1,7 @@
+DECL|HAL_CRC_Accumulate|function|uint32_t HAL_CRC_Accumulate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+DECL|HAL_CRC_Calculate|function|uint32_t HAL_CRC_Calculate(CRC_HandleTypeDef *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+DECL|HAL_CRC_DeInit|function|HAL_StatusTypeDef HAL_CRC_DeInit(CRC_HandleTypeDef *hcrc)
+DECL|HAL_CRC_GetState|function|HAL_CRC_StateTypeDef HAL_CRC_GetState(CRC_HandleTypeDef *hcrc)
+DECL|HAL_CRC_Init|function|HAL_StatusTypeDef HAL_CRC_Init(CRC_HandleTypeDef *hcrc)
+DECL|HAL_CRC_MspDeInit|function|__weak void HAL_CRC_MspDeInit(CRC_HandleTypeDef *hcrc)
+DECL|HAL_CRC_MspInit|function|__weak void HAL_CRC_MspInit(CRC_HandleTypeDef *hcrc)

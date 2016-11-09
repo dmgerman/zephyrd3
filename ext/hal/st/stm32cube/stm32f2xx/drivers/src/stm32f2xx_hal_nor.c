@@ -1,0 +1,41 @@
+DECL|HAL_NOR_DeInit|function|HAL_StatusTypeDef HAL_NOR_DeInit(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_Erase_Block|function|HAL_StatusTypeDef HAL_NOR_Erase_Block(NOR_HandleTypeDef *hnor, uint32_t BlockAddress, uint32_t Address)
+DECL|HAL_NOR_Erase_Chip|function|HAL_StatusTypeDef HAL_NOR_Erase_Chip(NOR_HandleTypeDef *hnor, uint32_t Address)
+DECL|HAL_NOR_GetState|function|HAL_NOR_StateTypeDef HAL_NOR_GetState(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_GetStatus|function|HAL_NOR_StatusTypeDef HAL_NOR_GetStatus(NOR_HandleTypeDef *hnor, uint32_t Address, uint32_t Timeout)
+DECL|HAL_NOR_Init|function|HAL_StatusTypeDef HAL_NOR_Init(NOR_HandleTypeDef *hnor, FSMC_NORSRAM_TimingTypeDef *Timing, FSMC_NORSRAM_TimingTypeDef *ExtTiming)
+DECL|HAL_NOR_MspDeInit|function|__weak void HAL_NOR_MspDeInit(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_MspInit|function|__weak void HAL_NOR_MspInit(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_MspWait|function|__weak void HAL_NOR_MspWait(NOR_HandleTypeDef *hnor, uint32_t Timeout)
+DECL|HAL_NOR_ProgramBuffer|function|HAL_StatusTypeDef HAL_NOR_ProgramBuffer(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize)
+DECL|HAL_NOR_Program|function|HAL_StatusTypeDef HAL_NOR_Program(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData)
+DECL|HAL_NOR_ReadBuffer|function|HAL_StatusTypeDef HAL_NOR_ReadBuffer(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize)
+DECL|HAL_NOR_Read_CFI|function|HAL_StatusTypeDef HAL_NOR_Read_CFI(NOR_HandleTypeDef *hnor, NOR_CFITypeDef *pNOR_CFI)
+DECL|HAL_NOR_Read_ID|function|HAL_StatusTypeDef HAL_NOR_Read_ID(NOR_HandleTypeDef *hnor, NOR_IDTypeDef *pNOR_ID)
+DECL|HAL_NOR_Read|function|HAL_StatusTypeDef HAL_NOR_Read(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData)
+DECL|HAL_NOR_ReturnToReadMode|function|HAL_StatusTypeDef HAL_NOR_ReturnToReadMode(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_WriteOperation_Disable|function|HAL_StatusTypeDef HAL_NOR_WriteOperation_Disable(NOR_HandleTypeDef *hnor)
+DECL|HAL_NOR_WriteOperation_Enable|function|HAL_StatusTypeDef HAL_NOR_WriteOperation_Enable(NOR_HandleTypeDef *hnor)
+DECL|NOR_CMD_ADDRESS_FIFTH|macro|NOR_CMD_ADDRESS_FIFTH
+DECL|NOR_CMD_ADDRESS_FIRST_CFI|macro|NOR_CMD_ADDRESS_FIRST_CFI
+DECL|NOR_CMD_ADDRESS_FIRST|macro|NOR_CMD_ADDRESS_FIRST
+DECL|NOR_CMD_ADDRESS_FOURTH|macro|NOR_CMD_ADDRESS_FOURTH
+DECL|NOR_CMD_ADDRESS_SECOND|macro|NOR_CMD_ADDRESS_SECOND
+DECL|NOR_CMD_ADDRESS_SIXTH|macro|NOR_CMD_ADDRESS_SIXTH
+DECL|NOR_CMD_ADDRESS_THIRD|macro|NOR_CMD_ADDRESS_THIRD
+DECL|NOR_CMD_DATA_AUTO_SELECT|macro|NOR_CMD_DATA_AUTO_SELECT
+DECL|NOR_CMD_DATA_BLOCK_ERASE|macro|NOR_CMD_DATA_BLOCK_ERASE
+DECL|NOR_CMD_DATA_BUFFER_AND_PROG_CONFIRM|macro|NOR_CMD_DATA_BUFFER_AND_PROG_CONFIRM
+DECL|NOR_CMD_DATA_BUFFER_AND_PROG|macro|NOR_CMD_DATA_BUFFER_AND_PROG
+DECL|NOR_CMD_DATA_CFI|macro|NOR_CMD_DATA_CFI
+DECL|NOR_CMD_DATA_CHIP_BLOCK_ERASE_FIFTH|macro|NOR_CMD_DATA_CHIP_BLOCK_ERASE_FIFTH
+DECL|NOR_CMD_DATA_CHIP_BLOCK_ERASE_FOURTH|macro|NOR_CMD_DATA_CHIP_BLOCK_ERASE_FOURTH
+DECL|NOR_CMD_DATA_CHIP_BLOCK_ERASE_THIRD|macro|NOR_CMD_DATA_CHIP_BLOCK_ERASE_THIRD
+DECL|NOR_CMD_DATA_CHIP_ERASE|macro|NOR_CMD_DATA_CHIP_ERASE
+DECL|NOR_CMD_DATA_FIRST|macro|NOR_CMD_DATA_FIRST
+DECL|NOR_CMD_DATA_PROGRAM|macro|NOR_CMD_DATA_PROGRAM
+DECL|NOR_CMD_DATA_READ_RESET|macro|NOR_CMD_DATA_READ_RESET
+DECL|NOR_CMD_DATA_SECOND|macro|NOR_CMD_DATA_SECOND
+DECL|NOR_MASK_STATUS_DQ5|macro|NOR_MASK_STATUS_DQ5
+DECL|NOR_MASK_STATUS_DQ6|macro|NOR_MASK_STATUS_DQ6
+DECL|uwNORMemoryDataWidth|variable|uwNORMemoryDataWidth

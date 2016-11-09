@@ -1,0 +1,5 @@
+DECL|HAL_PWREx_DisableBkUpReg|function|HAL_StatusTypeDef HAL_PWREx_DisableBkUpReg(void)
+DECL|HAL_PWREx_DisableFlashPowerDown|function|void HAL_PWREx_DisableFlashPowerDown(void)
+DECL|HAL_PWREx_EnableBkUpReg|function|HAL_StatusTypeDef HAL_PWREx_EnableBkUpReg(void)
+DECL|HAL_PWREx_EnableFlashPowerDown|function|void HAL_PWREx_EnableFlashPowerDown(void)
+DECL|PWR_BKPREG_TIMEOUT_VALUE|macro|PWR_BKPREG_TIMEOUT_VALUE
