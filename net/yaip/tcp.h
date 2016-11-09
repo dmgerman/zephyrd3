@@ -43,7 +43,7 @@ DECL|recv_ack|member|uint32_t recv_ack;
 DECL|recv_max_ack|member|uint32_t recv_max_ack;
 DECL|recv_mss|member|uint16_t recv_mss;
 DECL|recv|member|struct net_buf *recv;
-DECL|retransmit_timer|member|struct nano_delayed_work retransmit_timer;
+DECL|retransmit_timer|member|struct k_delayed_work retransmit_timer;
 DECL|send_ack|member|uint32_t send_ack;
 DECL|send_seq|member|uint32_t send_seq;
 DECL|send|member|struct net_buf *send;
