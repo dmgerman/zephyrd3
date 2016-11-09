@@ -9,6 +9,8 @@ DECL|H4_SCO|macro|H4_SCO
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|STACK_SIZE|macro|STACK_SIZE
+DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
+DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
 DECL|avail_acl_tx|variable|avail_acl_tx
 DECL|avail_cmd_tx|variable|avail_cmd_tx
 DECL|bt_controller_assert_handle|function|void bt_controller_assert_handle(char *file, uint32_t line)
