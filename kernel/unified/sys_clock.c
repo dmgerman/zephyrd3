@@ -2,6 +2,8 @@ DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(i
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE int64_t _nano_tick_delta(int64_t *reftime)
 DECL|_sys_clock_tick_count|variable|_sys_clock_tick_count
 DECL|_sys_idle_elapsed_ticks|variable|_sys_idle_elapsed_ticks
+DECL|_tick_get_32|function|uint32_t _tick_get_32(void)
+DECL|_tick_get|function|int64_t _tick_get(void)
 DECL|_time_slice_duration|variable|_time_slice_duration
 DECL|_time_slice_elapsed|variable|_time_slice_elapsed
 DECL|_time_slice_prio_ceiling|variable|_time_slice_prio_ceiling
@@ -21,5 +23,3 @@ DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_clock_us_per_tick|variable|sys_clock_us_per_tick
 DECL|sys_tick_delta_32|function|uint32_t sys_tick_delta_32(int64_t *reftime)
 DECL|sys_tick_delta|function|int64_t sys_tick_delta(int64_t *reftime)
-DECL|sys_tick_get_32|function|uint32_t sys_tick_get_32(void)
-DECL|sys_tick_get|function|int64_t sys_tick_get(void)
