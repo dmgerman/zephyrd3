@@ -1,5 +1,8 @@
 DECL|cmsdk_ahb_gpio_config|function|static void cmsdk_ahb_gpio_config(struct device *dev, uint32_t mask, int flags)
 DECL|gpio_cb|member|sys_slist_t gpio_cb;
+DECL|gpio_cc_as|member|struct arm_clock_control_t gpio_cc_as;
+DECL|gpio_cc_dss|member|struct arm_clock_control_t gpio_cc_dss;
+DECL|gpio_cc_ss|member|struct arm_clock_control_t gpio_cc_ss;
 DECL|gpio_cmsdk_ahb_0_cfg|variable|gpio_cmsdk_ahb_0_cfg
 DECL|gpio_cmsdk_ahb_0_data|variable|gpio_cmsdk_ahb_0_data
 DECL|gpio_cmsdk_ahb_1_cfg|variable|gpio_cmsdk_ahb_1_cfg
