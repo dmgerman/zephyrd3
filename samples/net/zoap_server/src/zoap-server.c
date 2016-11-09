@@ -12,6 +12,8 @@ DECL|query_get|function|static int query_get(struct zoap_resource *resource, str
 DECL|query_path|variable|query_path
 DECL|resources|variable|resources
 DECL|segments_path|variable|segments_path
+DECL|separate_get|function|static int separate_get(struct zoap_resource *resource,struct zoap_packet *request, const struct sockaddr *from)
+DECL|separate_path|variable|separate_path
 DECL|test_del|function|static int test_del(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|test_path|variable|test_path
 DECL|test_post|function|static int test_post(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
