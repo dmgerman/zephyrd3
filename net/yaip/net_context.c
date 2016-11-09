@@ -2,7 +2,7 @@ DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|ack_timeout|function|static void ack_timeout(struct nano_work *work)
+DECL|ack_timeout|function|static void ack_timeout(struct k_work *work)
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, uint16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts

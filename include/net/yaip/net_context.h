@@ -37,7 +37,7 @@ DECL|net_context_set_type|function|static inline void net_context_set_type(struc
 DECL|net_context_state|enum|enum net_context_state {
 DECL|net_context|struct|struct net_context {
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
-DECL|recv_data_wait|member|struct nano_sem recv_data_wait;
+DECL|recv_data_wait|member|struct k_sem recv_data_wait;
 DECL|remote|member|struct sockaddr remote;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
 DECL|tcp|member|struct net_tcp *tcp;

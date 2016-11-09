@@ -29,7 +29,7 @@ DECL|NET_TCP_URG|macro|NET_TCP_URG
 DECL|NET_TCP_WINDOW_HEADER|macro|NET_TCP_WINDOW_HEADER
 DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
-DECL|ack_timer|member|struct nano_delayed_work ack_timer;
+DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|context|member|struct net_context *context;
 DECL|flags|member|uint8_t flags;
 DECL|net_tcp_change_state|function|static inline void net_tcp_change_state(struct net_tcp *tcp,enum net_tcp_state new_state)
