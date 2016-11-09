@@ -10,7 +10,7 @@ DECL|_NET_IEEE802154_LAYER|macro|_NET_IEEE802154_LAYER
 DECL|__IEEE802154_H__|macro|__IEEE802154_H__
 DECL|__packed|variable|__packed
 DECL|_unused|member|uint8_t _unused : 6;
-DECL|ack_lock|member|struct nano_sem ack_lock;
+DECL|ack_lock|member|struct k_sem ack_lock;
 DECL|ack_received|member|uint8_t ack_received : 1;
 DECL|ack_requested|member|uint8_t ack_requested : 1;
 DECL|channel|member|uint16_t channel;
