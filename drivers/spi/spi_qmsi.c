@@ -11,7 +11,7 @@ DECL|loopback|member|bool loopback;
 DECL|pending_transfers|variable|pending_transfers
 DECL|pending_transfer|struct|struct pending_transfer {
 DECL|rc|member|int rc;
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|spi_control_cs|function|static void spi_control_cs(struct device *dev, bool active)
 DECL|spi_ctx|member|qm_spi_context_t spi_ctx;
 DECL|spi_master_get_power_state|function|static uint32_t spi_master_get_power_state(struct device *dev)
