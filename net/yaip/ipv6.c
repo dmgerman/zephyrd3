@@ -43,7 +43,7 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
-DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct nano_work *work)
+DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
 DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net_buf *buf, uint16_t reserve, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface,
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *addr)
 DECL|net_ipv6_finalize_raw|function|struct net_buf *net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
@@ -68,9 +68,9 @@ DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_bu
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_input_handler|variable|ns_input_handler
-DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct nano_work *work)
+DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
 DECL|ra_input_handler|variable|ra_input_handler
-DECL|remaining|function|static inline uint32_t remaining(struct nano_delayed_work *work)
+DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
-DECL|submit_work|function|static inline void submit_work(struct nano_delayed_work *work, uint32_t time_in_sec)
+DECL|submit_work|function|static inline void submit_work(struct k_delayed_work *work, uint32_t time_in_sec)

@@ -32,6 +32,6 @@ DECL|net_ipv6_prepare_for_send|function|static inline struct net_buf *net_ipv6_p
 DECL|net_nbr_state|enum|enum net_nbr_state {
 DECL|ns_count|member|uint8_t ns_count;
 DECL|pending|member|struct net_buf *pending;
-DECL|reachable|member|struct nano_delayed_work reachable;
-DECL|send_ns|member|struct nano_delayed_work send_ns;
+DECL|reachable|member|struct k_delayed_work reachable;
+DECL|send_ns|member|struct k_delayed_work send_ns;
 DECL|state|member|enum net_nbr_state state;
