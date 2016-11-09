@@ -12,7 +12,6 @@ DECL|accept_cb|function|static void accept_cb(struct net_context *context, struc
 DECL|cb_failure|variable|cb_failure
 DECL|connect_cb|function|static void connect_cb(struct net_context *context, void *user_data)
 DECL|data_failure|variable|data_failure
-DECL|fiberStack|variable|fiberStack
 DECL|func|member|bool (*func)(void);
 DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_mcast|variable|in6addr_mcast
@@ -66,8 +65,8 @@ DECL|recv_cb_timeout_called|variable|recv_cb_timeout_called
 DECL|recv_cb_timeout|function|static void recv_cb_timeout(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|recv_cb|function|static void recv_cb(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|send_cb|function|static void send_cb(struct net_context *context, int status, void *token, void *user_data)
-DECL|start_timeout_v4_fiber|function|static void start_timeout_v4_fiber(void)
-DECL|start_timeout_v6_fiber|function|static void start_timeout_v6_fiber(void)
+DECL|start_timeout_v4_thread|function|static void start_timeout_v4_thread(void)
+DECL|start_timeout_v6_thread|function|static void start_timeout_v6_thread(void)
 DECL|tcp_v4_ctx|variable|tcp_v4_ctx
 DECL|tcp_v6_ctx|variable|tcp_v6_ctx
 DECL|test_data|variable|test_data
@@ -76,7 +75,8 @@ DECL|test_init|function|static bool test_init(void)
 DECL|test_token|variable|test_token
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
 DECL|tests|variable|tests
-DECL|timeout_fiber|function|void timeout_fiber(struct net_context *ctx, sa_family_t family)
+DECL|thread_stack|variable|thread_stack
+DECL|timeout_thread|function|void timeout_thread(struct net_context *ctx, sa_family_t *family)
 DECL|timeout_token|variable|timeout_token
 DECL|udp_v4_ctx|variable|udp_v4_ctx
 DECL|udp_v6_ctx|variable|udp_v6_ctx

@@ -5,12 +5,11 @@ DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|app_data|variable|app_data
-DECL|fiberStack|variable|fiberStack
 DECL|hwaddr|variable|hwaddr
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main_fiber|function|void main_fiber(void)
+DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_arp_context_data|variable|net_arp_context_data
@@ -28,3 +27,4 @@ DECL|run_tests|function|static bool run_tests(void)
 DECL|send_status|variable|send_status
 DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_buf *buf, struct net_eth_addr *hwaddr, uint16_t type)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|thread_stack|variable|thread_stack

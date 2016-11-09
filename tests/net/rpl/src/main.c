@@ -1,7 +1,6 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|NET_DEBUG|macro|NET_DEBUG
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
@@ -9,7 +8,6 @@ DECL|data_failure|variable|data_failure
 DECL|dis|variable|dis
 DECL|expected_icmpv6|variable|expected_icmpv6
 DECL|feed_data|variable|feed_data
-DECL|fiberStack|variable|fiberStack
 DECL|func|member|bool (*func)(void);
 DECL|in6addr_ll|variable|in6addr_ll
 DECL|in6addr_mcast|variable|in6addr_mcast

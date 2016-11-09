@@ -10,10 +10,9 @@ DECL|broascast_addr|variable|broascast_addr
 DECL|client_addr|variable|client_addr
 DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dst_addr|variable|dst_addr
-DECL|fiberStack|variable|fiberStack
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main_fiber|function|void main_fiber(void)
+DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|nbuf_get_data|function|static struct net_buf *nbuf_get_data(struct net_if *iface)
 DECL|net_dhcpv4_context_data|variable|net_dhcpv4_context_data
@@ -34,6 +33,7 @@ DECL|set_udp_header|function|static void set_udp_header(struct net_buf *buf)
 DECL|src_addr|variable|src_addr
 DECL|test_result|function|static void test_result(bool pass)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|thread_stack|variable|thread_stack
 DECL|type|member|uint8_t type;
 DECL|xid|member|uint32_t xid;
 DECL|zero_addr|variable|zero_addr

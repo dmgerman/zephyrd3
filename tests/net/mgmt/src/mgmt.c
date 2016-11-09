@@ -20,6 +20,6 @@ DECL|test_mgmt_request|function|static int test_mgmt_request(uint32_t mgmt_reque
 DECL|test_requesting_nm|function|static inline int test_requesting_nm(void)
 DECL|test_sending_event|function|static inline int test_sending_event(uint32_t times, bool receiver)
 DECL|throw_times|variable|throw_times
-DECL|thrower_fiber|function|static void thrower_fiber(void)
 DECL|thrower_lock|variable|thrower_lock
 DECL|thrower_stack|variable|thrower_stack
+DECL|thrower_thread|function|static void thrower_thread(void)

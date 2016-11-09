@@ -2,7 +2,6 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|MAX_ROUTES|macro|MAX_ROUTES
 DECL|NET_DEBUG|macro|NET_DEBUG
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
@@ -11,7 +10,6 @@ DECL|dest_addresses|variable|dest_addresses
 DECL|dest_addr|variable|dest_addr
 DECL|entry|variable|entry
 DECL|feed_data|variable|feed_data
-DECL|fiberStack|variable|fiberStack
 DECL|func|member|bool (*func)(void);
 DECL|generic_addr|variable|generic_addr
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)

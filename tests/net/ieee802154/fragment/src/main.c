@@ -12,11 +12,10 @@ DECL|dst_m1_dam00|macro|dst_m1_dam00
 DECL|dst_m1_dam01|macro|dst_m1_dam01
 DECL|dst_m1_dam10|macro|dst_m1_dam10
 DECL|dst_m1_dam11|macro|dst_m1_dam11
-DECL|fiberStack|variable|fiberStack
 DECL|iphc|member|bool iphc;
 DECL|ipv6|member|struct net_ipv6_hdr ipv6;
 DECL|len|member|int len;
-DECL|main_fiber|function|static void main_fiber(void)
+DECL|main_thread|function|static void main_thread(void)
 DECL|main|function|void main(void)
 DECL|name|member|const char *name;
 DECL|net_fragment_data|struct|struct net_fragment_data {
@@ -38,6 +37,7 @@ DECL|test_data_8|variable|test_data_8
 DECL|test_fragment|function|static int test_fragment(struct net_fragment_data *data)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
 DECL|tests|variable|tests
+DECL|thread_stack|variable|thread_stack
 DECL|udp_dst_port_16bit|macro|udp_dst_port_16bit
 DECL|udp_dst_port_4bit|macro|udp_dst_port_4bit
 DECL|udp_dst_port_8bit_y|macro|udp_dst_port_8bit_y

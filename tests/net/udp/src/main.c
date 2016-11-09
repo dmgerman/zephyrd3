@@ -12,14 +12,13 @@ DECL|UNREGISTER|macro|UNREGISTER
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|fail|variable|fail
-DECL|fiberStack|variable|fiberStack
 DECL|handle|member|void *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|uint16_t local_port;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main_fiber|function|void main_fiber(void)
+DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|net_udp_context_data|variable|net_udp_context_data
 DECL|net_udp_context|struct|struct net_udp_context {
@@ -42,4 +41,5 @@ DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn,
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_buf *buf, void *user_data)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
 DECL|test|member|char *test;
+DECL|thread_stack|variable|thread_stack
 DECL|ud|struct|struct ud {
