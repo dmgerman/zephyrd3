@@ -25,4 +25,4 @@ DECL|rtc_qmsi_set_power_state|macro|rtc_qmsi_set_power_state
 DECL|rtc_reentrancy_init|function|static void rtc_reentrancy_init(struct device *dev)
 DECL|rtc_resume_device|function|static int rtc_resume_device(struct device *dev)
 DECL|rtc_suspend_device|function|static int rtc_suspend_device(struct device *dev)
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
