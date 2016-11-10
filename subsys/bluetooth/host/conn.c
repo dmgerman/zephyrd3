@@ -61,7 +61,7 @@ DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|dummy|variable|dummy
 DECL|frag_buf|variable|frag_buf
-DECL|le_conn_update|function|static void le_conn_update(struct nano_work *work)
+DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)

@@ -50,4 +50,4 @@ DECL|timeout|member|nano_thread_id_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|type|member|uint8_t type;
-DECL|update_work|member|struct nano_delayed_work update_work;
+DECL|update_work|member|struct k_delayed_work update_work;
