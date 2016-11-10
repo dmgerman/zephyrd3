@@ -141,7 +141,7 @@ DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_
 DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|uint8_t resolving;
 DECL|role_change|function|static void role_change(struct net_buf *buf)
-DECL|rpa_timeout|function|static void rpa_timeout(struct nano_work *work)
+DECL|rpa_timeout|function|static void rpa_timeout(struct k_work *work)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
