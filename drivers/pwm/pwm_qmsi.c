@@ -33,4 +33,4 @@ DECL|pwm_qmsi_suspend|function|static int pwm_qmsi_suspend(struct device *dev)
 DECL|pwm_reentrancy_init|function|static void pwm_reentrancy_init(struct device *dev)
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
