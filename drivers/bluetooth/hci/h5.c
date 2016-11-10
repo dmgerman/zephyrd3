@@ -68,15 +68,15 @@ DECL|retx_timeout|function|static void retx_timeout(struct nano_work *work)
 DECL|retx_work|variable|retx_work
 DECL|rx_ack|member|uint8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
-DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|rx_state|member|} rx_state;
+DECL|rx_thread|function|static void rx_thread(void)
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
 DECL|tx_ack|member|uint8_t tx_ack;
-DECL|tx_fiber|function|static void tx_fiber(void)
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|tx_seq|member|uint8_t tx_seq;
+DECL|tx_thread|function|static void tx_thread(void)
 DECL|tx_win|member|uint8_t tx_win;
 DECL|unack_queue_len|variable|unack_queue_len
 DECL|unack_queue|member|struct k_fifo unack_queue;

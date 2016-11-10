@@ -56,7 +56,7 @@ DECL|callback_list|variable|callback_list
 DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
 DECL|conn_mtu|function|static inline uint16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
-DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
+DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void *p3)
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|dummy|variable|dummy
@@ -78,4 +78,4 @@ DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_c
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
-DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
+DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)

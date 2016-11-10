@@ -46,7 +46,7 @@ DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct net_buf *rx;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|bt_conn_state_t state;
-DECL|timeout|member|nano_thread_id_t timeout;
+DECL|timeout|member|k_tid_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|type|member|uint8_t type;
