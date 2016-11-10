@@ -27,4 +27,4 @@ DECL|rx_credit|member|uint8_t rx_credit;
 DECL|session|member|struct bt_rfcomm_session *session;
 DECL|state|member|uint8_t state;
 DECL|tx_credits|member|struct k_sem tx_credits;
-DECL|tx_queue|member|struct nano_fifo tx_queue;
+DECL|tx_queue|member|struct k_fifo tx_queue;

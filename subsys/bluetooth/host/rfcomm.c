@@ -11,7 +11,7 @@ DECL|RFCOMM_SECURITY_PASSED|enumerator|RFCOMM_SECURITY_PASSED,
 DECL|RFCOMM_SECURITY_PENDING|enumerator|RFCOMM_SECURITY_PENDING
 DECL|RFCOMM_SECURITY_REJECT|enumerator|RFCOMM_SECURITY_REJECT,
 DECL|RFCOMM_SESSION|macro|RFCOMM_SESSION
-DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct nano_fifo *fifo)
+DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct k_fifo *fifo)
 DECL|bt_rfcomm_dlc_connect|function|int bt_rfcomm_dlc_connect(struct bt_conn *conn, struct bt_rfcomm_dlc *dlc, uint8_t channel)
 DECL|bt_rfcomm_dlc_send|function|int bt_rfcomm_dlc_send(struct bt_rfcomm_dlc *dlc, struct net_buf *buf)
 DECL|bt_rfcomm_init|function|void bt_rfcomm_init(void)

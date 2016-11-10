@@ -111,7 +111,7 @@ DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|prep_data|struct|struct prep_data {
 DECL|prep_data|variable|prep_data
-DECL|prep_queue|member|struct nano_fifo prep_queue;
+DECL|prep_queue|member|struct k_fifo prep_queue;
 DECL|prep_write_cb|function|static uint8_t prep_write_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
 DECL|read_cb|function|static uint8_t read_cb(const struct bt_gatt_attr *attr, void *user_data)
