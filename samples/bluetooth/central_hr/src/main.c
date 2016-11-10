@@ -1,5 +1,3 @@
-DECL|SLEEPTICKS|macro|SLEEPTICKS
-DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|ad_parse|function|static void ad_parse(struct net_buf_simple *ad, bool (*func)(uint8_t type, const uint8_t *data, uint8_t data_len, void *user_data), void *user_data)
 DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t conn_err)
