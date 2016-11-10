@@ -154,7 +154,7 @@ DECL|smp_br_reset|function|static void smp_br_reset(struct bt_smp_br *smp)
 DECL|smp_br_send|function|static void smp_br_send(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
 DECL|smp_br_signing_info|function|static uint8_t smp_br_signing_info(struct bt_smp_br *smp, struct net_buf *buf)
-DECL|smp_br_timeout|function|static void smp_br_timeout(struct nano_work *work)
+DECL|smp_br_timeout|function|static void smp_br_timeout(struct k_work *work)
 DECL|smp_buf|variable|smp_buf
 DECL|smp_c1|function|static int smp_c1(const uint8_t k[16], const uint8_t r[16], const uint8_t preq[7], const uint8_t pres[7], const bt_addr_le_t *ia, const bt_addr_le_t *ra, uint8_t enc_data[16])
 DECL|smp_chan_get|function|static struct bt_smp *smp_chan_get(struct bt_conn *conn)
@@ -202,8 +202,8 @@ DECL|smp_sign_buf|function|static int smp_sign_buf(const uint8_t *key, uint8_t *
 DECL|smp_sign_test|function|static int smp_sign_test(void)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_signing_info|function|static uint8_t smp_signing_info(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_timeout|function|static void smp_timeout(struct nano_work *work)
+DECL|smp_timeout|function|static void smp_timeout(struct k_work *work)
 DECL|tk|member|uint8_t tk[16];
-DECL|work|member|struct nano_delayed_work work;
-DECL|work|member|struct nano_delayed_work work;
+DECL|work|member|struct k_delayed_work work;
+DECL|work|member|struct k_delayed_work work;
 DECL|xor_128|function|static void xor_128(const uint8_t p[16], const uint8_t q[16], uint8_t r[16])
