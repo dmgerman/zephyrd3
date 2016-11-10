@@ -37,4 +37,4 @@ DECL|qmsi_port_config|function|static inline void qmsi_port_config(struct device
 DECL|qmsi_write_bit|function|static void qmsi_write_bit(uint32_t *target, uint8_t bit, uint8_t value)
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;

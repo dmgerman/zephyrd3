@@ -11,7 +11,7 @@ DECL|num_pins|member|uint8_t num_pins;
 DECL|pin_callbacks|member|uint32_t pin_callbacks;
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|ss_gpio_0_config|variable|ss_gpio_0_config
 DECL|ss_gpio_0_runtime|variable|ss_gpio_0_runtime
 DECL|ss_gpio_1_config|variable|ss_gpio_1_config
