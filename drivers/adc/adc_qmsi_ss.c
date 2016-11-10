@@ -17,6 +17,6 @@ DECL|adc_unlock|function|static void adc_unlock(struct adc_info *data)
 DECL|api_funcs|variable|api_funcs
 DECL|cfg|variable|cfg
 DECL|complete_callback|function|static void complete_callback(void *data, int error, qm_ss_adc_status_t status, qm_ss_adc_cb_source_t source)
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|state|member|atomic_t state;
 DECL|sync|member|device_sync_call_t sync;
