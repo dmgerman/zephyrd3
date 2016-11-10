@@ -12,7 +12,7 @@ DECL|init|function|static int init(struct device *dev)
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reload|function|static void reload(struct device *dev)
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|set_config|function|static int set_config(struct device *dev, struct wdt_config *cfg)
 DECL|user_cb|variable|user_cb
 DECL|wdt_context|variable|wdt_context
