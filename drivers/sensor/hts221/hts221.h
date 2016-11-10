@@ -16,7 +16,6 @@ DECL|__SENSOR_HTS221_H__|macro|__SENSOR_HTS221_H__
 DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
 DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;
-DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_HTS221_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
@@ -33,4 +32,5 @@ DECL|t0_out|member|int16_t t0_out;
 DECL|t1_degc_x8|member|uint16_t t1_degc_x8;
 DECL|t1_out|member|int16_t t1_out;
 DECL|t_sample|member|int16_t t_sample;
+DECL|thread_stack|member|char __stack thread_stack[CONFIG_HTS221_THREAD_STACK_SIZE];
 DECL|work|member|struct k_work work;

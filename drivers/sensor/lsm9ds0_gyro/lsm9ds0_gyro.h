@@ -152,7 +152,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LSM9DS0_GYRO_H__|macro|__SENSOR_LSM9DS0_GYRO_H__
 DECL|dev|member|struct device *dev;
-DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_LSM9DS0_GYRO_FIBER_STACK_SIZE];
 DECL|fs|member|uint8_t fs;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_drdy_dev_name|member|char *gpio_drdy_dev_name;
@@ -169,4 +168,5 @@ DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
 DECL|sem|member|struct k_sem sem;
+DECL|thread_stack|member|char __stack thread_stack[CONFIG_LSM9DS0_GYRO_THREAD_STACK_SIZE];
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;

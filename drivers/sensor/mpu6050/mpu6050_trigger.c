@@ -1,6 +1,6 @@
-DECL|mpu6050_fiber_cb|function|static void mpu6050_fiber_cb(void *arg)
-DECL|mpu6050_fiber|function|static void mpu6050_fiber(int dev_ptr, int unused)
 DECL|mpu6050_gpio_callback|function|static void mpu6050_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|mpu6050_init_interrupt|function|int mpu6050_init_interrupt(struct device *dev)
+DECL|mpu6050_thread_cb|function|static void mpu6050_thread_cb(void *arg)
+DECL|mpu6050_thread|function|static void mpu6050_thread(int dev_ptr, int unused)
 DECL|mpu6050_trigger_set|function|int mpu6050_trigger_set(struct device *dev,const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|mpu6050_work_cb|function|static void mpu6050_work_cb(struct k_work *work)

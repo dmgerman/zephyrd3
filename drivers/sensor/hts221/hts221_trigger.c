@@ -1,6 +1,6 @@
-DECL|hts221_fiber_cb|function|static void hts221_fiber_cb(void *arg)
-DECL|hts221_fiber|function|static void hts221_fiber(int dev_ptr, int unused)
 DECL|hts221_gpio_callback|function|static void hts221_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|hts221_init_interrupt|function|int hts221_init_interrupt(struct device *dev)
+DECL|hts221_thread_cb|function|static void hts221_thread_cb(void *arg)
+DECL|hts221_thread|function|static void hts221_thread(int dev_ptr, int unused)
 DECL|hts221_trigger_set|function|int hts221_trigger_set(struct device *dev,const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|hts221_work_cb|function|static void hts221_work_cb(struct k_work *work)

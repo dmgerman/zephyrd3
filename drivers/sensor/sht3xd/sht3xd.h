@@ -20,7 +20,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_SHT3XD_|macro|_SENSOR_SHT3XD_
 DECL|dev|member|struct device *dev;
-DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_SHT3XD_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
@@ -35,5 +34,6 @@ DECL|sht3xd_measure_wait|variable|sht3xd_measure_wait
 DECL|t_high|member|uint16_t t_high;
 DECL|t_low|member|uint16_t t_low;
 DECL|t_sample|member|uint16_t t_sample;
+DECL|thread_stack|member|char __stack thread_stack[CONFIG_SHT3XD_THREAD_STACK_SIZE];
 DECL|trigger|member|struct sensor_trigger trigger;
 DECL|work|member|struct k_work work;
