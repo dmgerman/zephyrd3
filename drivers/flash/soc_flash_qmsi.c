@@ -25,6 +25,6 @@ DECL|quark_flash_init|function|static int quark_flash_init(struct device *dev)
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|saved_ctx|member|qm_flash_context_t saved_ctx[QM_FLASH_NUM];
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|soc_flash_context|variable|soc_flash_context
 DECL|soc_flash_data|struct|struct soc_flash_data {
