@@ -19,14 +19,14 @@ DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_HMC5883L_FIBER_STACK_SIZE];
 DECL|gain_idx|member|uint8_t gain_idx;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_sem|member|struct nano_sem gpio_sem;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|hmc5883l_data|struct|struct hmc5883l_data {
 DECL|hmc5883l_fs_strings|variable|hmc5883l_fs_strings
 DECL|hmc5883l_gain|variable|hmc5883l_gain
 DECL|hmc5883l_odr_strings|variable|hmc5883l_odr_strings
 DECL|i2c|member|struct device *i2c;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;
 DECL|x_sample|member|int16_t x_sample;
 DECL|y_sample|member|int16_t y_sample;
 DECL|z_sample|member|int16_t z_sample;

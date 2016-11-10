@@ -6,7 +6,7 @@ DECL|HDC1008_REG_TEMP|macro|HDC1008_REG_TEMP
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_HDC1008|macro|_SENSOR_HDC1008
-DECL|data_sem|member|struct nano_sem data_sem;
+DECL|data_sem|member|struct k_sem data_sem;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio|member|struct device *gpio;
 DECL|hdc1008_data|struct|struct hdc1008_data {

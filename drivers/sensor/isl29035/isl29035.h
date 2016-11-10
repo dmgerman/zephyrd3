@@ -64,10 +64,10 @@ DECL|data_sample|member|uint16_t data_sample;
 DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_ISL29035_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_sem|member|struct nano_sem gpio_sem;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
 DECL|isl29035_driver_data|struct|struct isl29035_driver_data {
 DECL|th_handler|member|sensor_trigger_handler_t th_handler;
 DECL|th_trigger|member|struct sensor_trigger th_trigger;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;

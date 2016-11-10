@@ -21,7 +21,7 @@ DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_MPU6050_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_sem|member|struct nano_sem gpio_sem;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|gyro_sensitivity_x10|member|uint16_t gyro_sensitivity_x10;
 DECL|gyro_x|member|int16_t gyro_x;
@@ -31,4 +31,4 @@ DECL|i2c|member|struct device *i2c;
 DECL|mpu6050_data|struct|struct mpu6050_data {
 DECL|mpu6050_gyro_sensitivity_x10|variable|mpu6050_gyro_sensitivity_x10
 DECL|temp|member|int16_t temp;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;

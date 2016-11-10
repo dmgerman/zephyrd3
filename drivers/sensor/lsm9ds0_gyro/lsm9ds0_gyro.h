@@ -168,5 +168,5 @@ DECL|sample_fs|member|uint8_t sample_fs;
 DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;

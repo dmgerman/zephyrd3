@@ -34,7 +34,7 @@ DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_LIS3MDL_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_sem|member|struct nano_sem gpio_sem;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
 DECL|lis3mdl_data|struct|struct lis3mdl_data {
@@ -42,7 +42,7 @@ DECL|lis3mdl_magn_gain|variable|lis3mdl_magn_gain
 DECL|lis3mdl_odr_bits|variable|lis3mdl_odr_bits
 DECL|lis3mdl_odr_strings|variable|lis3mdl_odr_strings
 DECL|temp_sample|member|int16_t temp_sample;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;
 DECL|x_sample|member|int16_t x_sample;
 DECL|y_sample|member|int16_t y_sample;
 DECL|z_sample|member|int16_t z_sample;

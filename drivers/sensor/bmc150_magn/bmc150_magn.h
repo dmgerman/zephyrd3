@@ -97,7 +97,7 @@ DECL|reserved3|member|uint16_t reserved3;
 DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|tregs|member|struct bmc150_magn_trim_regs tregs;
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;
 DECL|x1|member|int8_t x1;

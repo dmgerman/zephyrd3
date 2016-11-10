@@ -22,7 +22,7 @@ DECL|_SENSOR_SHT3XD_|macro|_SENSOR_SHT3XD_
 DECL|dev|member|struct device *dev;
 DECL|fiber_stack|member|char __stack fiber_stack[CONFIG_SHT3XD_FIBER_STACK_SIZE];
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_sem|member|struct nano_sem gpio_sem;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|handler|member|sensor_trigger_handler_t handler;
 DECL|i2c|member|struct device *i2c;
@@ -36,4 +36,4 @@ DECL|t_high|member|uint16_t t_high;
 DECL|t_low|member|uint16_t t_low;
 DECL|t_sample|member|uint16_t t_sample;
 DECL|trigger|member|struct sensor_trigger trigger;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;

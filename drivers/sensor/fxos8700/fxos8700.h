@@ -53,7 +53,7 @@ DECL|mode|member|enum fxos8700_mode mode;
 DECL|num_channels|member|uint8_t num_channels;
 DECL|range|member|enum fxos8700_range range;
 DECL|raw|member|int16_t raw[FXOS8700_MAX_NUM_CHANNELS];
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|start_addr|member|uint8_t start_addr;
 DECL|start_channel|member|uint8_t start_channel;
 DECL|whoami|member|uint8_t whoami;

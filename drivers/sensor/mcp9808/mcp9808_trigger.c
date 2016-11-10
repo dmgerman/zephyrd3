@@ -3,7 +3,7 @@ DECL|mcp9808_fiber_main|function|static void mcp9808_fiber_main(int arg1, int ar
 DECL|mcp9808_fiber_stack|variable|mcp9808_fiber_stack
 DECL|mcp9808_gpio_cb|function|static void mcp9808_gpio_cb(struct device *dev, struct gpio_callback *cb, uint32_t pins)
 DECL|mcp9808_gpio_cb|function|static void mcp9808_gpio_cb(struct device *dev, struct gpio_callback *cb, uint32_t pins)
-DECL|mcp9808_gpio_fiber_cb|function|static void mcp9808_gpio_fiber_cb(struct nano_work *work)
+DECL|mcp9808_gpio_fiber_cb|function|static void mcp9808_gpio_fiber_cb(struct k_work *work)
 DECL|mcp9808_reg_update|function|static int mcp9808_reg_update(struct mcp9808_data *data, uint8_t reg, uint16_t mask, uint16_t val)
 DECL|mcp9808_reg_write|function|static int mcp9808_reg_write(struct mcp9808_data *data, uint8_t reg, uint16_t val)
 DECL|mcp9808_setup_interrupt|function|void mcp9808_setup_interrupt(struct device *dev)

@@ -23,7 +23,7 @@ DECL|mcp9808_data|struct|struct mcp9808_data {
 DECL|mcp9808_setup_interrupt|function|static void mcp9808_setup_interrupt(struct device *dev)
 DECL|mcp9808_trigger_set|function|static inline int mcp9808_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|reg_val|member|uint16_t reg_val;
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
 DECL|trigger_handler|member|sensor_trigger_handler_t trigger_handler;
 DECL|trig|member|struct sensor_trigger trig;
-DECL|work|member|struct nano_work work;
+DECL|work|member|struct k_work work;

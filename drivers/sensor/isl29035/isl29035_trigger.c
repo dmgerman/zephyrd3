@@ -5,4 +5,4 @@ DECL|isl29035_gpio_callback|function|static void isl29035_gpio_callback(struct d
 DECL|isl29035_init_interrupt|function|int isl29035_init_interrupt(struct device *dev)
 DECL|isl29035_lux_processed_to_raw|function|static uint16_t isl29035_lux_processed_to_raw(struct sensor_value const *val)
 DECL|isl29035_trigger_set|function|int isl29035_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
-DECL|isl29035_work_cb|function|static void isl29035_work_cb(struct nano_work *work)
+DECL|isl29035_work_cb|function|static void isl29035_work_cb(struct k_work *work)
