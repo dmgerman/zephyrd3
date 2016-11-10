@@ -15,6 +15,7 @@ DECL|_reschedule_threads|function|void _reschedule_threads(int key)
 DECL|_set_ready_q_prio_bit|function|static void _set_ready_q_prio_bit(int prio)
 DECL|ceiling|macro|ceiling
 DECL|k_current_get|function|k_tid_t k_current_get(void)
+DECL|k_sched_lock|function|void k_sched_lock(void)
 DECL|k_sched_time_slice_set|function|void k_sched_time_slice_set(int32_t duration_in_ms, int prio)
 DECL|k_sched_unlock|function|void k_sched_unlock(void)
 DECL|k_sleep|function|void k_sleep(int32_t duration)
