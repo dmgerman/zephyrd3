@@ -11,14 +11,10 @@ DECL|PEER_PORT|macro|PEER_PORT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|WAIT_TICKS|macro|WAIT_TICKS
 DECL|WAIT_TIME|macro|WAIT_TIME
-DECL|WAIT_TINY_TICKS|macro|WAIT_TINY_TICKS
 DECL|compare_data|function|static bool compare_data(struct net_buf *buf, int expecting_len)
 DECL|expecting_ipv4|variable|expecting_ipv4
 DECL|expecting_ipv6|variable|expecting_ipv6
-DECL|fiber_ipv4_stack|variable|fiber_ipv4_stack
-DECL|fiber_ipv6_stack|variable|fiber_ipv6_stack
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **mcast_recv6)
 DECL|in4addr_my|variable|in4addr_my
 DECL|in4addr_peer|variable|in4addr_peer
@@ -27,6 +23,8 @@ DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
 DECL|init_app|function|static inline void init_app(void)
 DECL|ipsum_len|variable|ipsum_len
+DECL|ipv4_stack|variable|ipv4_stack
+DECL|ipv6_stack|variable|ipv6_stack
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
 DECL|prepare_send_buf|function|static struct net_buf *prepare_send_buf(const char *name,struct net_context *context, int expecting_len)
@@ -41,4 +39,4 @@ DECL|setup_udp_recv|function|static void setup_udp_recv(struct net_context *udp,
 DECL|udp_ipv4_received|function|static void udp_ipv4_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|udp_ipv6_received|function|static void udp_ipv6_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|udp_sent|function|static inline void udp_sent(struct net_context *context, int status, void *bytes_sent, void *user_data)
-DECL|wait_reply|function|static inline bool wait_reply(const char *name, struct nano_sem *sem)
+DECL|wait_reply|function|static inline bool wait_reply(const char *name, struct k_sem *sem)
