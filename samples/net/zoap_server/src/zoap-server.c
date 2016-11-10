@@ -9,6 +9,8 @@ DECL|context|variable|context
 DECL|join_coap_multicast_group|function|static bool join_coap_multicast_group(void)
 DECL|large_get|function|static int large_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|large_path|variable|large_path
+DECL|large_update_path|variable|large_update_path
+DECL|large_update_put|function|static int large_update_put(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|main|function|void main(void)
 DECL|piggyback_get|function|static int piggyback_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|query_get|function|static int query_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
