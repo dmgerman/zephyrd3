@@ -196,6 +196,7 @@ DECL|radio_event_adv_prepare|function|void radio_event_adv_prepare(uint32_t tick
 DECL|radio_feature_req_send|function|uint32_t radio_feature_req_send(uint16_t handle)
 DECL|radio_filter_add|function|uint32_t radio_filter_add(uint8_t addr_type, uint8_t *addr)
 DECL|radio_filter_clear|function|void radio_filter_clear(void)
+DECL|radio_filter_remove|function|uint32_t radio_filter_remove(uint8_t addr_type, uint8_t *addr)
 DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
 DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
