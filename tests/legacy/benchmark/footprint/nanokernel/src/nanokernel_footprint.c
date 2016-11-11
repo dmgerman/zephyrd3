@@ -8,7 +8,6 @@ DECL|TEST_SOFT_INT|macro|TEST_SOFT_INT
 DECL|dummyIsr|function|void dummyIsr(void *unused)
 DECL|fiberEntry|function|static void fiberEntry(int message, int arg1)
 DECL|func_array|variable|func_array
-DECL|func_array|variable|func_array
 DECL|i|variable|i
 DECL|main|function|void main(void)
 DECL|pStack|variable|pStack

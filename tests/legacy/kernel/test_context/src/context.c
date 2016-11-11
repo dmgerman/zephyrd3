@@ -22,7 +22,6 @@ DECL|fiber_entry|function|static void fiber_entry(int task_thread_id, int arg1)
 DECL|fiber_evidence|variable|fiber_evidence
 DECL|fiber_helper|function|static void fiber_helper(int arg1, int arg2)
 DECL|fiber_priority_set|macro|fiber_priority_set
-DECL|fiber_priority_set|macro|fiber_priority_set
 DECL|fiber_stack1|variable|fiber_stack1
 DECL|fiber_stack2|variable|fiber_stack2
 DECL|irq_disable_wrapper|function|int irq_disable_wrapper(int irq)

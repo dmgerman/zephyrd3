@@ -18,7 +18,6 @@ DECL|SLEEP_TIME|macro|SLEEP_TIME
 DECL|SLINE_LEN|macro|SLINE_LEN
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_MASTER_H|macro|_MASTER_H
-DECL|call_test|macro|call_test
 DECL|check_result|macro|check_result
 DECL|event_test|macro|event_test
 DECL|mailbox_test|macro|mailbox_test

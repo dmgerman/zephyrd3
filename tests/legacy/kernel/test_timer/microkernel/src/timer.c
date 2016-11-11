@@ -12,5 +12,4 @@ DECL|test_nano_timeouts|function|void test_nano_timeouts(void)
 DECL|test_nano_timers_sem|variable|test_nano_timers_sem
 DECL|test_nano_timers_stack|variable|test_nano_timers_stack
 DECL|test_nano_timers|function|static void test_nano_timers(int unused1, int unused2)
-DECL|timer_pool_is_empty|function|static inline bool timer_pool_is_empty(void)
 DECL|timer_pool_is_empty|macro|timer_pool_is_empty
