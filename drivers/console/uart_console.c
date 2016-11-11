@@ -45,5 +45,5 @@ DECL|uart_console_in_debug_hook_install|function|void uart_console_in_debug_hook
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
 DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
 DECL|uart_console_out_debug_hook_install|function|void uart_console_out_debug_hook_install(uart_console_out_debug_hook_t *hook)
-DECL|uart_register_input|function|void uart_register_input(struct nano_fifo *avail, struct nano_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
+DECL|uart_register_input|function|void uart_register_input(struct k_fifo *avail, struct k_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
 DECL|uart_register_input|macro|uart_register_input

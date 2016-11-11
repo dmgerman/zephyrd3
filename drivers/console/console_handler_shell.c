@@ -29,7 +29,7 @@ DECL|shell_init|function|void shell_init(const char *str)
 DECL|shell_register_app_cmd_handler|function|void shell_register_app_cmd_handler(shell_cmd_function_t handler)
 DECL|shell_register_default_module|function|void shell_register_default_module(const char *name)
 DECL|shell_register_prompt_handler|function|void shell_register_prompt_handler(shell_prompt_function_t handler)
-DECL|shell|function|static void shell(int arg1, int arg2)
+DECL|shell|function|static void shell(void *p1, void *p2, void *p3)
 DECL|show_cmd_help|function|static int show_cmd_help(char *argv[])
 DECL|show_help|function|static int show_help(int argc, char *argv[])
 DECL|stack|variable|stack
