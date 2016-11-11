@@ -38,7 +38,7 @@ DECL|SLIP_ESC|macro|SLIP_ESC
 DECL|START|enumerator|START,
 DECL|UNINIT|enumerator|UNINIT,
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
-DECL|ack_timeout|function|static void ack_timeout(struct nano_work *work)
+DECL|ack_timeout|function|static void ack_timeout(struct k_work *work)
 DECL|ack_work|variable|ack_work
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|conf_req|variable|conf_req
@@ -64,7 +64,7 @@ DECL|hexdump|macro|hexdump
 DECL|link_state|member|} link_state;
 DECL|process_unack|function|static void process_unack(void)
 DECL|reliable_packet|function|static bool reliable_packet(uint8_t type)
-DECL|retx_timeout|function|static void retx_timeout(struct nano_work *work)
+DECL|retx_timeout|function|static void retx_timeout(struct k_work *work)
 DECL|retx_work|variable|retx_work
 DECL|rx_ack|member|uint8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
