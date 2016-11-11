@@ -1,2 +1,0 @@
-DECL|HAL_SPIEx_FlushRxFifo|function|HAL_StatusTypeDef HAL_SPIEx_FlushRxFifo(SPI_HandleTypeDef *hspi)
-DECL|SPI_FIFO_SIZE|macro|SPI_FIFO_SIZE
