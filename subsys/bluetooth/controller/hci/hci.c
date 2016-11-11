@@ -40,6 +40,7 @@ DECL|le_read_local_features|function|static void le_read_local_features(struct n
 DECL|le_read_remote_features|function|static void le_read_remote_features(struct net_buf *buf, struct net_buf *evt)
 DECL|le_read_supp_states|function|static void le_read_supp_states(struct net_buf *buf, struct net_buf *evt)
 DECL|le_read_wl_size|function|static void le_read_wl_size(struct net_buf *buf, struct net_buf *evt)
+DECL|le_rem_dev_from_wl|function|static void le_rem_dev_from_wl(struct net_buf *buf, struct net_buf *evt)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(uint8_t status, struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_set_adv_data|function|static void le_set_adv_data(struct net_buf *buf, struct net_buf *evt)
 DECL|le_set_adv_enable|function|static void le_set_adv_enable(struct net_buf *buf, struct net_buf *evt)
