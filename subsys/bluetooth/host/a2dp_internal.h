@@ -1,4 +1,1 @@
-DECL|A2DP_STREAM_IDLE|enumerator|A2DP_STREAM_IDLE,
-DECL|A2DP_STREAM_STREAMING|enumerator|A2DP_STREAM_STREAMING,
-DECL|A2DP_STREAM_SUSPENDED|enumerator|A2DP_STREAM_SUSPENDED
-DECL|bt_a2dp_stream_state|enum|enum bt_a2dp_stream_state {
+
