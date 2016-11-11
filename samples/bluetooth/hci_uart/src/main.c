@@ -23,6 +23,6 @@ DECL|h4_send|function|static int h4_send(struct net_buf *buf)
 DECL|hci_uart_dev|variable|hci_uart_dev
 DECL|hci_uart_init|function|static int hci_uart_init(struct device *unused)
 DECL|main|function|void main(void)
-DECL|tx_fiber_stack|variable|tx_fiber_stack
-DECL|tx_fiber|function|static void tx_fiber(int unused0, int unused1)
 DECL|tx_queue|variable|tx_queue
+DECL|tx_thread_stack|variable|tx_thread_stack
+DECL|tx_thread|function|static void tx_thread(void *p1, void *p2, void *p3)
