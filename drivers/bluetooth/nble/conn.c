@@ -25,7 +25,7 @@ DECL|callback_list|variable|callback_list
 DECL|conn_get|function|static struct bt_conn *conn_get(const bt_addr_le_t *peer)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conns|variable|conns
-DECL|le_conn_update|function|static void le_conn_update(struct nano_work *work)
+DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|static void notify_le_param_updated(struct bt_conn *conn)
