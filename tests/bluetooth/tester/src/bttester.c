@@ -2,7 +2,7 @@ DECL|CMD_QUEUED|macro|CMD_QUEUED
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|avail_queue|variable|avail_queue
 DECL|cmd_buf|variable|cmd_buf
-DECL|cmd_handler|function|static void cmd_handler(int arg1, int arg2)
+DECL|cmd_handler|function|static void cmd_handler(void *p1, void *p2, void *p3)
 DECL|cmds_queue|variable|cmds_queue
 DECL|handle_core|function|static void handle_core(uint8_t opcode, uint8_t index, uint8_t *data,uint16_t len)
 DECL|recv_cb|function|static uint8_t *recv_cb(uint8_t *buf, size_t *off)
