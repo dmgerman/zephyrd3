@@ -1,1 +1,20 @@
-
+DECL|NET_REQUEST_IEEE802154_CMD_SET_ACK|enumerator|NET_REQUEST_IEEE802154_CMD_SET_ACK = 1,
+DECL|NET_REQUEST_IEEE802154_CMD_UNSET_ACK|enumerator|NET_REQUEST_IEEE802154_CMD_UNSET_ACK,
+DECL|NET_REQUEST_IEEE802154_SET_ACK|macro|NET_REQUEST_IEEE802154_SET_ACK
+DECL|NET_REQUEST_IEEE802154_SET_ACK|variable|NET_REQUEST_IEEE802154_SET_ACK
+DECL|NET_REQUEST_IEEE802154_UNSET_ACK|macro|NET_REQUEST_IEEE802154_UNSET_ACK
+DECL|NET_REQUEST_IEEE802154_UNSET_ACK|variable|NET_REQUEST_IEEE802154_UNSET_ACK
+DECL|_NET_IEEE802154_BASE|macro|_NET_IEEE802154_BASE
+DECL|_NET_IEEE802154_CODE|macro|_NET_IEEE802154_CODE
+DECL|_NET_IEEE802154_LAYER|macro|_NET_IEEE802154_LAYER
+DECL|__IEEE802154_H__|macro|__IEEE802154_H__
+DECL|__packed|variable|__packed
+DECL|_unused|member|uint8_t _unused : 6;
+DECL|ack_lock|member|struct k_sem ack_lock;
+DECL|ack_received|member|uint8_t ack_received : 1;
+DECL|ack_requested|member|uint8_t ack_requested : 1;
+DECL|channel|member|uint16_t channel;
+DECL|ieee802154_context|struct|struct ieee802154_context {
+DECL|net_request_ieee802154_cmd|enum|enum net_request_ieee802154_cmd {
+DECL|pan_id|member|uint16_t pan_id;
+DECL|sequence|member|uint8_t sequence;

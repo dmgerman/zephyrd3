@@ -161,7 +161,6 @@ DECL|gpio|member|struct device *gpio;
 DECL|iface|member|struct net_if *iface;
 DECL|int_sem|member|struct k_sem int_sem;
 DECL|mem_buf|member|uint8_t mem_buf[MAX_BUFFER_LENGTH + 1];
-DECL|receive_callback|member|void (*receive_callback)(uint8_t *buffer, uint16_t len);
 DECL|rx_rsv|member|uint8_t rx_rsv[RSV_SIZE];
 DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
