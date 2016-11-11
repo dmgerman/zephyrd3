@@ -1,4 +1,0 @@
-DECL|HAL_SMARTCARDEx_BlockLength_Config|function|void HAL_SMARTCARDEx_BlockLength_Config(SMARTCARD_HandleTypeDef *hsc, uint8_t BlockLength)
-DECL|HAL_SMARTCARDEx_DisableReceiverTimeOut|function|HAL_StatusTypeDef HAL_SMARTCARDEx_DisableReceiverTimeOut(SMARTCARD_HandleTypeDef *hsc)
-DECL|HAL_SMARTCARDEx_EnableReceiverTimeOut|function|HAL_StatusTypeDef HAL_SMARTCARDEx_EnableReceiverTimeOut(SMARTCARD_HandleTypeDef *hsc)
-DECL|HAL_SMARTCARDEx_TimeOut_Config|function|void HAL_SMARTCARDEx_TimeOut_Config(SMARTCARD_HandleTypeDef *hsc, uint32_t TimeOutValue)
