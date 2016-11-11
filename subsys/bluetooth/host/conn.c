@@ -19,7 +19,7 @@ DECL|bt_conn_auth_pincode_entry|function|int bt_conn_auth_pincode_entry(struct b
 DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb)
 DECL|bt_conn_create_br|function|struct bt_conn *bt_conn_create_br(const bt_addr_t *peer, const struct bt_br_conn_param *param)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer, const struct bt_le_conn_param *param)
-DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct nano_fifo *fifo, size_t reserve)
+DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct k_fifo *fifo, size_t reserve)
 DECL|bt_conn_create_slave_le|function|struct bt_conn *bt_conn_create_slave_le(const bt_addr_le_t *peer,const struct bt_le_adv_param *param)
 DECL|bt_conn_disconnect_all|function|void bt_conn_disconnect_all(void)
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
@@ -56,12 +56,12 @@ DECL|callback_list|variable|callback_list
 DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
 DECL|conn_mtu|function|static inline uint16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
-DECL|conn_tx_fiber|function|static void conn_tx_fiber(int arg1, int arg2)
+DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void *p3)
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|dummy|variable|dummy
 DECL|frag_buf|variable|frag_buf
-DECL|le_conn_update|function|static void le_conn_update(struct nano_work *work)
+DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
@@ -78,4 +78,4 @@ DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_c
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
-DECL|timeout_fiber|function|static void timeout_fiber(int arg1, int arg2)
+DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)

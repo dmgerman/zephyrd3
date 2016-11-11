@@ -50,7 +50,7 @@ DECL|eds_slot|struct|struct eds_slot {
 DECL|eds_tx_uuid|variable|eds_tx_uuid
 DECL|eds_unlock_uuid|variable|eds_unlock_uuid
 DECL|eds_uuid|variable|eds_uuid
-DECL|idle_timeout|function|static void idle_timeout(struct nano_work *work)
+DECL|idle_timeout|function|static void idle_timeout(struct k_work *work)
 DECL|idle_work|variable|idle_work
 DECL|interval|member|uint16_t interval;
 DECL|lock|member|uint8_t lock[16];

@@ -9,8 +9,11 @@ DECL|H4_SCO|macro|H4_SCO
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|NET_BUF_POOL|variable|NET_BUF_POOL
 DECL|STACK_SIZE|macro|STACK_SIZE
+DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
+DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
 DECL|avail_acl_tx|variable|avail_acl_tx
 DECL|avail_cmd_tx|variable|avail_cmd_tx
+DECL|bt_controller_assert_handle|function|void bt_controller_assert_handle(char *file, uint32_t line)
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|h4_acl_recv|function|static struct net_buf *h4_acl_recv(int *remaining)
 DECL|h4_cmd_recv|function|static struct net_buf *h4_cmd_recv(int *remaining)
@@ -20,6 +23,6 @@ DECL|h4_send|function|static int h4_send(struct net_buf *buf)
 DECL|hci_uart_dev|variable|hci_uart_dev
 DECL|hci_uart_init|function|static int hci_uart_init(struct device *unused)
 DECL|main|function|void main(void)
-DECL|tx_fiber_stack|variable|tx_fiber_stack
-DECL|tx_fiber|function|static void tx_fiber(int unused0, int unused1)
 DECL|tx_queue|variable|tx_queue
+DECL|tx_thread_stack|variable|tx_thread_stack
+DECL|tx_thread|function|static void tx_thread(void *p1, void *p2, void *p3)

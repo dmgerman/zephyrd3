@@ -48,7 +48,7 @@ DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req
 DECL|att_reset|function|static void att_reset(struct bt_att *att)
 DECL|att_send_req|function|static int att_send_req(struct bt_att *att, struct bt_att_req *req)
 DECL|att_signed_write_cmd|function|static uint8_t att_signed_write_cmd(struct bt_att *att, struct net_buf *buf)
-DECL|att_timeout|function|static void att_timeout(struct nano_work *work)
+DECL|att_timeout|function|static void att_timeout(struct k_work *work)
 DECL|att_write_cmd|function|static uint8_t att_write_cmd(struct bt_att *att, struct net_buf *buf)
 DECL|att_write_req|function|static uint8_t att_write_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_write_rsp|function|static uint8_t att_write_rsp(struct bt_conn *conn, uint8_t op, uint8_t rsp, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
@@ -111,7 +111,7 @@ DECL|op|member|uint8_t op;
 DECL|op|member|uint8_t op;
 DECL|prep_data|struct|struct prep_data {
 DECL|prep_data|variable|prep_data
-DECL|prep_queue|member|struct nano_fifo prep_queue;
+DECL|prep_queue|member|struct k_fifo prep_queue;
 DECL|prep_write_cb|function|static uint8_t prep_write_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|range_is_valid|function|static bool range_is_valid(uint16_t start, uint16_t end, uint16_t *err)
 DECL|read_cb|function|static uint8_t read_cb(const struct bt_gatt_attr *attr, void *user_data)
@@ -129,7 +129,7 @@ DECL|rsp|member|struct bt_att_read_group_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
-DECL|timeout_work|member|struct nano_delayed_work timeout_work;
+DECL|timeout_work|member|struct k_delayed_work timeout_work;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;

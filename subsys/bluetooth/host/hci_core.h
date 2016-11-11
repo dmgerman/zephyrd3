@@ -24,7 +24,7 @@ DECL|bt_dev_br|struct|struct bt_dev_br {
 DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
 DECL|bt_le_conn_params_valid|function|static inline bool bt_le_conn_params_valid(uint16_t min, uint16_t max, uint16_t latency, uint16_t timeout)
-DECL|cmd_tx_queue|member|struct nano_fifo cmd_tx_queue;
+DECL|cmd_tx_queue|member|struct k_fifo cmd_tx_queue;
 DECL|drv|member|struct bt_hci_driver *drv;
 DECL|features|member|uint8_t features[1][8];
 DECL|features|member|uint8_t features[LMP_FEAT_PAGES_COUNT][8];
@@ -43,9 +43,9 @@ DECL|ncmd|member|uint8_t ncmd;
 DECL|pkts|member|struct k_sem pkts;
 DECL|pkts|member|struct k_sem pkts;
 DECL|random_addr|member|bt_addr_le_t random_addr;
-DECL|rpa_update|member|struct nano_delayed_work rpa_update;
-DECL|rx_prio_queue|member|struct nano_fifo rx_prio_queue;
-DECL|rx_queue|member|struct nano_fifo rx_queue;
+DECL|rpa_update|member|struct k_delayed_work rpa_update;
+DECL|rx_prio_queue|member|struct k_fifo rx_prio_queue;
+DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
 DECL|states|member|uint64_t states;
 DECL|supported_commands|member|uint8_t supported_commands[64];

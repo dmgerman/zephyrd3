@@ -5,4 +5,3 @@ DECL|nrf51_allow_sleep|function|int nrf51_allow_sleep(void)
 DECL|nrf51_gpio|variable|nrf51_gpio
 DECL|nrf51_init|function|int nrf51_init(struct device *dev)
 DECL|nrf51_wakeup|function|int nrf51_wakeup(void)
-DECL|sleep_ms|function|static inline void sleep_ms(unsigned int ms)

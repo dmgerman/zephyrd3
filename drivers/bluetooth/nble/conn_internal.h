@@ -15,4 +15,4 @@ DECL|role|member|uint8_t role;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|} state;
 DECL|timeout|member|uint16_t timeout;
-DECL|update_work|member|struct nano_delayed_work update_work;
+DECL|update_work|member|struct k_delayed_work update_work;

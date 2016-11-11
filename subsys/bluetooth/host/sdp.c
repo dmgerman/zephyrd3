@@ -21,6 +21,6 @@ DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
 DECL|handlers|variable|handlers
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
-DECL|partial_resp_queue|member|struct nano_fifo partial_resp_queue;
+DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
 DECL|sdp_buf|variable|sdp_buf
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
