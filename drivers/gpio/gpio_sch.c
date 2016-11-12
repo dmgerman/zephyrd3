@@ -13,8 +13,8 @@ DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_gpio_pin_config|function|static void _gpio_pin_config(struct device *dev, uint32_t pin, int flags)
 DECL|_gpio_port_config|function|static inline void _gpio_port_config(struct device *dev, int flags)
 DECL|_gpio_sch_manage_callback|function|static void _gpio_sch_manage_callback(struct device *dev)
-DECL|_gpio_sch_poll_status|function|static void _gpio_sch_poll_status(int data, int unused)
-DECL|_set_bit|function|static void _set_bit(uint32_t base_addr,uint32_t bit, uint8_t set)
+DECL|_gpio_sch_poll_status|function|static void _gpio_sch_poll_status(void *arg1, void *unused1, void *unused2)
+DECL|_set_bit|function|static void _set_bit(uint32_t base_addr, uint32_t bit, uint8_t set)
 DECL|_set_data_reg|function|static inline void _set_data_reg(uint32_t *reg, uint8_t pin, uint8_t set)
 DECL|gpio_data_0|variable|gpio_data_0
 DECL|gpio_data_1|variable|gpio_data_1
