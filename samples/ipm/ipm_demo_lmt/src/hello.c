@@ -1,20 +1,20 @@
 DECL|MAIN_FIBER_PRI|macro|MAIN_FIBER_PRI
 DECL|MSG_FIBER_PRI|macro|MSG_FIBER_PRI
 DECL|PING_FIBER_PRI|macro|PING_FIBER_PRI
-DECL|PING_TICKS|macro|PING_TICKS
+DECL|PING_TIME|macro|PING_TIME
 DECL|SCSS_REGISTER_BASE|macro|SCSS_REGISTER_BASE
 DECL|SCSS_SS_STS|macro|SCSS_SS_STS
-DECL|SLEEPTICKS|macro|SLEEPTICKS
 DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|STACKSIZE|macro|STACKSIZE
+DECL|TASK_PRIO|macro|TASK_PRIO
 DECL|dat1|variable|dat1
 DECL|dat2|variable|dat2
-DECL|fiber_stacks|variable|fiber_stacks
-DECL|main_fiber|function|void main_fiber(int arg1, int arg2)
-DECL|main_task|function|void main_task(void)
+DECL|main_thread|function|void main_thread(void *arg1, void *arg2, void *arg3)
+DECL|main|function|void main(void)
 DECL|message_source_task_0|function|void message_source_task_0(void)
 DECL|message_source_task_1|function|void message_source_task_1(void)
 DECL|message_source_task_2|function|void message_source_task_2(void)
 DECL|message_source|function|void message_source(struct device *ipm)
-DECL|ping_source_fiber|function|void ping_source_fiber(int arg1, int arg2)
+DECL|ping_source_thread|function|void ping_source_thread(void *arg1, void *arg2, void *arg3)
 DECL|scss_reg|function|uint32_t scss_reg(uint32_t offset)
+DECL|thread_stacks|variable|thread_stacks
