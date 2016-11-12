@@ -45,4 +45,4 @@ DECL|_SENSOR_HP206C_H_|macro|_SENSOR_HP206C_H_
 DECL|hp206c_device_data|struct|struct hp206c_device_data {
 DECL|i2c|member|struct device *i2c;
 DECL|osr|member|uint8_t osr;
-DECL|tmr|member|struct nano_timer tmr;
+DECL|tmr|member|struct k_timer tmr;
