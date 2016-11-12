@@ -3,4 +3,9 @@ DECL|NET_ICMPV4_DST_UNREACH_NO_PROTO|macro|NET_ICMPV4_DST_UNREACH_NO_PROTO
 DECL|NET_ICMPV4_DST_UNREACH|macro|NET_ICMPV4_DST_UNREACH
 DECL|NET_ICMPV4_ECHO_REPLY|macro|NET_ICMPV4_ECHO_REPLY
 DECL|NET_ICMPV4_ECHO_REQUEST|macro|NET_ICMPV4_ECHO_REQUEST
+DECL|NET_ICMPV4_ECHO_REQ_BUF|macro|NET_ICMPV4_ECHO_REQ_BUF
 DECL|__ICMPV4_H|macro|__ICMPV4_H
+DECL|__packed|variable|__packed
+DECL|identifier|member|uint16_t identifier;
+DECL|net_icmpv4_echo_req|struct|struct net_icmpv4_echo_req {
+DECL|sequence|member|uint16_t sequence;
