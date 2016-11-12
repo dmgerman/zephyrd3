@@ -6,7 +6,6 @@ DECL|_IPM_CONSOLE_H_|macro|_IPM_CONSOLE_H_
 DECL|bind_to|member|char *bind_to;
 DECL|bind_to|member|char *bind_to;
 DECL|channel_disabled|member|int channel_disabled;
-DECL|fiber_stack|member|char *fiber_stack;
 DECL|flags|member|int flags;
 DECL|flags|member|unsigned int flags;
 DECL|ipm_console_receiver_config_info|struct|struct ipm_console_receiver_config_info {
@@ -18,4 +17,5 @@ DECL|line_buf|member|char *line_buf;
 DECL|rb_size32|member|unsigned int rb_size32;
 DECL|rb|member|struct ring_buf rb;
 DECL|ring_buf_data|member|uint32_t *ring_buf_data;
-DECL|sem|member|struct nano_sem sem;
+DECL|sem|member|struct k_sem sem;
+DECL|thread_stack|member|char *thread_stack;
