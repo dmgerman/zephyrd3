@@ -33,6 +33,7 @@ DECL|send_fin|function|static inline int send_fin(struct net_context *context, s
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr *remote)
 DECL|send_syn|function|static inline int send_syn(struct net_context *context, const struct sockaddr *remote)
+DECL|sendto|function|static int sendto(struct net_buf *buf, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, int32_t timeout,
 DECL|set_appdata_values|function|static void set_appdata_values(struct net_buf *buf, enum net_ip_protocol proto, size_t total_len)
 DECL|tcp_active_close|function|static enum net_verdict tcp_active_close(struct net_conn *conn, struct net_buf *buf, void *user_data)
 DECL|tcp_established|function|static enum net_verdict tcp_established(struct net_conn *conn, struct net_buf *buf, void *user_data)
