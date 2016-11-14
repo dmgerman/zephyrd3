@@ -15,7 +15,6 @@ DECL|get_context|function|static inline bool get_context(struct net_context **ud
 DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|in6addr_my|variable|in6addr_my
-DECL|in6addr_my|variable|in6addr_my
 DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
 DECL|pkt_sent|function|static inline void pkt_sent(struct net_context *context, int status, void *token, void *user_data)
