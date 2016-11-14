@@ -27,5 +27,5 @@ DECL|get_response_string|function|static int get_response_string(struct at_clien
 DECL|next_list|function|static void next_list(struct at_client *at)
 DECL|parser_cb|variable|parser_cb
 DECL|reset_buffer|function|static void reset_buffer(struct at_client *at)
-DECL|skip_whitespace|function|static void skip_whitespace(struct at_client *at)
+DECL|skip_space|function|static void skip_space(struct at_client *at)
 DECL|str_has_prefix|function|static bool str_has_prefix(const char *str, const char *prefix)
