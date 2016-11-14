@@ -1,5 +1,5 @@
 DECL|at_check_byte|function|int at_check_byte(struct net_buf *buf, char check_byte)
-DECL|at_get_number|function|int at_get_number(const char *buf, uint32_t *val)
+DECL|at_get_number|function|int at_get_number(struct at_client *at, uint32_t *val)
 DECL|at_parse_cmd_input|function|int at_parse_cmd_input(struct at_client *at, struct net_buf *buf, const char *prefix, parse_val_t func)
 DECL|at_parse_input|function|int at_parse_input(struct at_client *at, struct net_buf *buf)
 DECL|at_parse_result|function|static int at_parse_result(const char *str, struct net_buf *buf, enum at_result *result)
@@ -21,5 +21,5 @@ DECL|get_cmd_value|function|static int get_cmd_value(struct at_client *at, struc
 DECL|get_response_string|function|static int get_response_string(struct at_client *at, struct net_buf *buf, char stop_byte, enum at_state state)
 DECL|parser_cb|variable|parser_cb
 DECL|reset_buffer|function|static void reset_buffer(struct at_client *at)
-DECL|skip_whitespace|function|const char *skip_whitespace(const char *buf)
-DECL|str_has_prefix|function|int str_has_prefix(const char *str, const char *prefix)
+DECL|skip_whitespace|function|static void skip_whitespace(struct at_client *at)
+DECL|str_has_prefix|function|static bool str_has_prefix(const char *str, const char *prefix)
