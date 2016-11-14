@@ -14,16 +14,14 @@ DECL|device_ordered_list|variable|device_ordered_list
 DECL|device_retval|variable|device_retval
 DECL|enable_wake_event|function|static void enable_wake_event(void)
 DECL|end_time|variable|end_time
-DECL|gpio_dev|variable|gpio_dev
 DECL|low_power_state_entry|function|static int low_power_state_entry(int32_t ticks)
 DECL|low_power_state_exit|function|static void low_power_state_exit(void)
 DECL|main|function|void main(void)
 DECL|pm_state|variable|pm_state
+DECL|post_ops_done|variable|post_ops_done
 DECL|resume_devices|function|static void resume_devices(void)
 DECL|rtc_dev|variable|rtc_dev
-DECL|rtc_interrupt_fn|function|void rtc_interrupt_fn(struct device *rtc_dev)
-DECL|setup_gpio|function|static int setup_gpio(void)
+DECL|rtc_interrupt_fn|function|static void rtc_interrupt_fn(struct device *rtc_dev)
 DECL|setup_rtc|function|static void setup_rtc(void)
 DECL|start_time|variable|start_time
 DECL|suspend_devices|function|static void suspend_devices(void)
-DECL|wait_gpio_low|function|static int wait_gpio_low(void)
