@@ -1,5 +1,8 @@
 DECL|at_check_byte|function|int at_check_byte(struct net_buf *buf, char check_byte)
+DECL|at_close_stream|function|int at_close_stream(struct at_client *at)
 DECL|at_get_number|function|int at_get_number(struct at_client *at, uint32_t *val)
+DECL|at_has_next_stream|function|int at_has_next_stream(struct at_client *at)
+DECL|at_open_stream|function|int at_open_stream(struct at_client *at)
 DECL|at_parse_cmd_input|function|int at_parse_cmd_input(struct at_client *at, struct net_buf *buf, const char *prefix, parse_val_t func)
 DECL|at_parse_input|function|int at_parse_input(struct at_client *at, struct net_buf *buf)
 DECL|at_parse_result|function|static int at_parse_result(const char *str, struct net_buf *buf, enum at_result *result)
@@ -12,6 +15,8 @@ DECL|at_state_start_cr|function|static int at_state_start_cr(struct at_client *a
 DECL|at_state_start_lf|function|static int at_state_start_lf(struct at_client *at, struct net_buf *buf)
 DECL|at_state_start|function|static int at_state_start(struct at_client *at, struct net_buf *buf)
 DECL|at_state_unsolicited_cmd|function|static int at_state_unsolicited_cmd(struct at_client *at, struct net_buf *buf)
+DECL|at_stream_get_range|function|int at_stream_get_range(struct at_client *at, uint32_t *min, uint32_t *max)
+DECL|at_stream_get_string|function|int at_stream_get_string(struct at_client *at, char *name, uint8_t len)
 DECL|cmd_get_value|function|static int cmd_get_value(struct at_client *at, struct net_buf *buf, const char *prefix, parse_val_t func)
 DECL|cmd_parser_cb|variable|cmd_parser_cb
 DECL|cmd_process_value|function|static int cmd_process_value(struct at_client *at, struct net_buf *buf, const char *prefix, parse_val_t func)
@@ -19,6 +24,7 @@ DECL|cmd_start|function|static int cmd_start(struct at_client *at, struct net_bu
 DECL|cmd_state_end_lf|function|static int cmd_state_end_lf(struct at_client *at, struct net_buf *buf, const char *prefix, parse_val_t func)
 DECL|get_cmd_value|function|static int get_cmd_value(struct at_client *at, struct net_buf *buf, char stop_byte, enum at_cmd_state cmd_state)
 DECL|get_response_string|function|static int get_response_string(struct at_client *at, struct net_buf *buf, char stop_byte, enum at_state state)
+DECL|next_stream|function|static void next_stream(struct at_client *at)
 DECL|parser_cb|variable|parser_cb
 DECL|reset_buffer|function|static void reset_buffer(struct at_client *at)
 DECL|skip_whitespace|function|static void skip_whitespace(struct at_client *at)
