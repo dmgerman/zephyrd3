@@ -1,3 +1,4 @@
+DECL|_GPIO_DW_H_|macro|_GPIO_DW_H_
 DECL|base_addr|member|uint32_t base_addr;
 DECL|bits|member|uint32_t bits;
 DECL|callbacks|member|sys_slist_t callbacks;
