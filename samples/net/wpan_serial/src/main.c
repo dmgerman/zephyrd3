@@ -26,10 +26,9 @@ DECL|process_config|function|static void process_config(struct net_buf *pkt)
 DECL|process_data|function|static void process_data(struct net_buf *pkt)
 DECL|process_request|function|static void process_request(struct net_buf *buf)
 DECL|radio_api|variable|radio_api
-DECL|rx_fiber_id|variable|rx_fiber_id
-DECL|rx_fiber_stack|variable|rx_fiber_stack
-DECL|rx_fiber|function|static void rx_fiber(void)
 DECL|rx_queue|variable|rx_queue
+DECL|rx_stack|variable|rx_stack
+DECL|rx_thread|function|static void rx_thread(void)
 DECL|send_data|function|static void send_data(uint8_t *cfg, uint8_t *data, size_t len)
 DECL|send_pkt_report|function|static void send_pkt_report(uint8_t seq, uint8_t status, uint8_t num_tx)
 DECL|set_channel|function|static void set_channel(uint8_t chan)
@@ -38,9 +37,8 @@ DECL|slip_buf|variable|slip_buf
 DECL|slip_process_byte|function|static int slip_process_byte(unsigned char c)
 DECL|slip_state|enum|enum slip_state {
 DECL|slip_state|variable|slip_state
-DECL|tx_fiber_id|variable|tx_fiber_id
-DECL|tx_fiber_stack|variable|tx_fiber_stack
-DECL|tx_fiber|function|static void tx_fiber(void)
 DECL|tx_queue|variable|tx_queue
 DECL|tx_sem|variable|tx_sem
+DECL|tx_stack|variable|tx_stack
+DECL|tx_thread|function|static void tx_thread(void)
 DECL|uart_dev|variable|uart_dev
