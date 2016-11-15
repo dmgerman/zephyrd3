@@ -73,6 +73,7 @@ DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
 DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6_set_base_reachable_time(struct net_if *iface, uint32_t reachable_time)
 DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, uint32_t retrans_timer)
+DECL|net_if_is_ip_offloaded|function|static inline bool net_if_is_ip_offloaded(struct net_if *iface)
 DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
 DECL|net_if_link_callback_t|typedef|typedef void (*net_if_link_callback_t)(struct net_if *iface,
 DECL|net_if_link_cb|struct|struct net_if_link_cb {
@@ -88,6 +89,7 @@ DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, uint8_t hop_limit)
 DECL|netmask|member|struct in_addr netmask;
 DECL|node|member|sys_snode_t node;
+DECL|offload_ip|member|bool offload_ip;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|reachable_time|member|uint32_t reachable_time;
