@@ -6,5 +6,5 @@ DECL|bme280_compensate_press|function|static void bme280_compensate_press(struct
 DECL|bme280_compensate_temp|function|static void bme280_compensate_temp(struct bme280_data *data, int32_t adc_temp)
 DECL|bme280_data|variable|bme280_data
 DECL|bme280_init|function|int bme280_init(struct device *dev)
-DECL|bme280_read_compensation|function|static void bme280_read_compensation(struct bme280_data *data)
+DECL|bme280_read_compensation|function|static int bme280_read_compensation(struct bme280_data *data)
 DECL|bme280_sample_fetch|function|static int bme280_sample_fetch(struct device *dev, enum sensor_channel chan)
