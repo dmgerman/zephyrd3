@@ -42,6 +42,7 @@ DECL|s28|member|float s28;
 DECL|s29|member|float s29;
 DECL|s30|member|float s30;
 DECL|s31|member|float s31;
+DECL|swap_return_value|member|uint32_t swap_return_value;
 DECL|v1|member|uint32_t v1; /* r4 */
 DECL|v2|member|uint32_t v2; /* r5 */
 DECL|v3|member|uint32_t v3; /* r6 */
