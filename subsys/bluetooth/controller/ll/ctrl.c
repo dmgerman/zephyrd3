@@ -111,7 +111,7 @@ DECL|filter_bdaddr|member|uint8_t filter_bdaddr[8][BDADDR_SIZE];
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
-DECL|filter_policy|member|uint8_t filter_policy:1;
+DECL|filter_policy|member|uint8_t filter_policy:2;
 DECL|filter_policy|member|uint8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
 DECL|hdr|member|struct shdr hdr;
@@ -218,7 +218,6 @@ DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_no
 DECL|radio_version_ind_send|function|uint32_t radio_version_ind_send(uint16_t handle)
 DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connection *conn,uint8_t reject_opcode, uint8_t error_code)
 DECL|remainder_anchor|member|uint32_t remainder_anchor;
-DECL|rfu0|member|uint8_t rfu0:1;
 DECL|role_active_disable|function|static inline void role_active_disable(uint8_t ticker_id_stop, uint32_t ticks_xtal_to_start, uint32_t ticks_active_to_start)
 DECL|role_disable|function|static uint32_t role_disable(uint8_t ticker_id_primary, uint8_t ticker_id_stop)
 DECL|role|enum|enum role {
