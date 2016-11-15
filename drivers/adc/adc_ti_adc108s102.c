@@ -9,5 +9,5 @@ DECL|adc108s102_data|variable|adc108s102_data
 DECL|ti_adc108s102_api|variable|ti_adc108s102_api
 DECL|ti_adc108s102_disable|function|static void ti_adc108s102_disable(struct device *dev)
 DECL|ti_adc108s102_enable|function|static void ti_adc108s102_enable(struct device *dev)
-DECL|ti_adc108s102_init|function|int ti_adc108s102_init(struct device *dev)
+DECL|ti_adc108s102_init|function|static int ti_adc108s102_init(struct device *dev)
 DECL|ti_adc108s102_read|function|static int ti_adc108s102_read(struct device *dev,struct adc_seq_table *seq_table)
