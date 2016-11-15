@@ -39,10 +39,9 @@ DECL|set_short_addr|function|static int set_short_addr(void *data, int len)
 DECL|start|function|static int start(void)
 DECL|stop|function|static int stop(void)
 DECL|try_write|function|static int try_write(uint8_t ep, uint8_t *data, uint16_t len)
-DECL|tx_fiber_id|variable|tx_fiber_id
-DECL|tx_fiber_stack|variable|tx_fiber_stack
-DECL|tx_fiber|function|static void tx_fiber(void)
 DECL|tx_queue|variable|tx_queue
+DECL|tx_stack|variable|tx_stack
+DECL|tx_thread|function|static void tx_thread(void)
 DECL|tx|function|static int tx(struct net_buf *pkt)
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
 DECL|wpanusb_bulk_in|function|static void wpanusb_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
