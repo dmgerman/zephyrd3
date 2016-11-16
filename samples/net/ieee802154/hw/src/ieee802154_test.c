@@ -1,3 +1,5 @@
+DECL|IEEE802154_DRV_NAME|macro|IEEE802154_DRV_NAME
+DECL|IEEE802154_DRV_NAME|macro|IEEE802154_DRV_NAME
 DECL|PRINT|macro|PRINT
 DECL|init_device|function|static struct net_if *init_device(void)
 DECL|main|function|void main(void)
