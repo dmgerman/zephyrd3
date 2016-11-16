@@ -120,7 +120,7 @@ DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
-DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work, int32_t delay)
+DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
 DECL|k_fifo|struct|struct k_fifo {
 DECL|k_lifo|struct|struct k_lifo {
@@ -147,7 +147,7 @@ DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
 DECL|k_timer_stop_t|typedef|typedef void (*k_timer_stop_t)(struct k_timer *timer);
 DECL|k_timer|struct|struct k_timer {
-DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *);
+DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *work);
 DECL|k_work_init|function|static inline void k_work_init(struct k_work *work, k_work_handler_t handler)
 DECL|k_work_pending|function|static inline int k_work_pending(struct k_work *work)
 DECL|k_work_q|struct|struct k_work_q {
