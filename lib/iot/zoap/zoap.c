@@ -32,7 +32,7 @@ DECL|is_request|function|static bool is_request(struct zoap_packet *pkt)
 DECL|match_response|function|static bool match_response(const struct zoap_packet *request, const struct zoap_packet *response)
 DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, uint8_t code)
 DECL|more|member|bool more;
-DECL|next_timeout|function|static uint16_t next_timeout(uint16_t previous)
+DECL|next_timeout|function|static int32_t next_timeout(int32_t previous)
 DECL|num|member|int num;
 DECL|option_context|struct|struct option_context {
 DECL|update_control_block1|function|static int update_control_block1(struct zoap_block_context *ctx, int block, int size)

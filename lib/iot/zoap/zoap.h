@@ -76,7 +76,7 @@ DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
 DECL|request|member|struct zoap_packet request;
 DECL|start|member|uint8_t *start; /* Start of the payload */
-DECL|timeout|member|uint16_t timeout;
+DECL|timeout|member|int32_t timeout;
 DECL|tkl|member|uint8_t tkl;
 DECL|tkl|member|uint8_t tkl;
 DECL|token|member|uint8_t token[8];
