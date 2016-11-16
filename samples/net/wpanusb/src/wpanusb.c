@@ -20,6 +20,7 @@ DECL|WPANUSB_PROTOCOL|macro|WPANUSB_PROTOCOL
 DECL|WPANUSB_SUBCLASS|macro|WPANUSB_SUBCLASS
 DECL|__dev|variable|__dev
 DECL|buffer|variable|buffer
+DECL|commands|variable|commands
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
@@ -36,6 +37,7 @@ DECL|set_channel|function|static int set_channel(void *data, int len)
 DECL|set_ieee_addr|function|static int set_ieee_addr(void *data, int len)
 DECL|set_pan_id|function|static int set_pan_id(void *data, int len)
 DECL|set_short_addr|function|static int set_short_addr(void *data, int len)
+DECL|shell_cmd_help|function|static int shell_cmd_help(int argc, char *argv[])
 DECL|start|function|static int start(void)
 DECL|stop|function|static int stop(void)
 DECL|try_write|function|static int try_write(uint8_t ep, uint8_t *data, uint16_t len)
