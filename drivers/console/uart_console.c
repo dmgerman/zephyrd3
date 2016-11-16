@@ -14,7 +14,6 @@ DECL|ESC_ANSI|enumerator|ESC_ANSI,
 DECL|ESC_ESC|enumerator|ESC_ESC,
 DECL|ESC|macro|ESC
 DECL|HANDLE_DEBUG_HOOK_OUT|macro|HANDLE_DEBUG_HOOK_OUT
-DECL|HANDLE_DEBUG_HOOK_OUT|macro|HANDLE_DEBUG_HOOK_OUT
 DECL|UART_CONSOLE_OUT_DEBUG_HOOK_SIG|function|static UART_CONSOLE_OUT_DEBUG_HOOK_SIG(debug_hook_out_nop)
 DECL|__printk_hook_install|macro|__printk_hook_install
 DECL|__stdout_hook_install|macro|__stdout_hook_install
