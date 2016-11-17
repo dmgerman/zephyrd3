@@ -13,7 +13,7 @@ DECL|M_LEN10|macro|M_LEN10
 DECL|M_LEN8|macro|M_LEN8
 DECL|NONCE_LEN|macro|NONCE_LEN
 DECL|NUM_NIST_KEYS|macro|NUM_NIST_KEYS
-DECL|do_test|function|uint32_t do_test(const uint8_t *key, uint8_t *nonce, size_t nlen, const uint8_t *hdr, size_t hlen, const uint8_t *data, size_t dlen, const uint8_t *expected, size_t elen, const int mlen)
+DECL|do_test|function|uint32_t do_test(const uint8_t *key, uint8_t *nonce, size_t nlen, const uint8_t *hdr, size_t hlen, const uint8_t *data, size_t dlen, const uint8_t *expected, size_t elen,
 DECL|main|function|void main(void)
 DECL|test_vector_1|function|uint32_t test_vector_1(void)
 DECL|test_vector_2|function|uint32_t test_vector_2(void)
