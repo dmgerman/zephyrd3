@@ -37,4 +37,5 @@ DECL|tcp_context|variable|tcp_context
 DECL|tcp_lock|variable|tcp_lock
 DECL|tcp_segment|struct|struct tcp_segment {
 DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
+DECL|validate_state_transition|function|static void validate_state_transition(enum net_tcp_state current, enum net_tcp_state new)
 DECL|wnd|member|uint16_t wnd;
