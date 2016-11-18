@@ -25,6 +25,8 @@ DECL|LL_MEM_TXQ|macro|LL_MEM_TXQ
 DECL|LL_MEM_TX_CTRL_POOL|macro|LL_MEM_TX_CTRL_POOL
 DECL|LL_MEM_TX_DATA_POOL|macro|LL_MEM_TX_DATA_POOL
 DECL|PACKET_MEM_COUNT_TX_CTRL|macro|PACKET_MEM_COUNT_TX_CTRL
+DECL|PACKET_RX_DATA_SIZE_MIN|macro|PACKET_RX_DATA_SIZE_MIN
+DECL|PACKET_TX_CTRL_SIZE_MIN|macro|PACKET_TX_CTRL_SIZE_MIN
 DECL|access_addr|member|uint8_t access_addr[4];
 DECL|ack|member|uint8_t ack;
 DECL|ack|member|uint8_t ack;
@@ -46,6 +48,7 @@ DECL|data_channel_count|member|uint8_t data_channel_count;
 DECL|data_channel_hop|member|uint8_t data_channel_hop;
 DECL|data_channel_map|member|uint8_t data_channel_map[5];
 DECL|data_channel_use|member|uint8_t data_channel_use;
+DECL|default_tx_octets|member|uint16_t default_tx_octets;
 DECL|ediv|member|uint8_t ediv[2];
 DECL|empty|member|uint8_t empty:1;
 DECL|enc_rx|member|uint8_t enc_rx:1;
@@ -126,7 +129,6 @@ DECL|sn|member|uint8_t sn:1;
 DECL|state|member|uint8_t state:2;
 DECL|state|member|uint8_t state:3;
 DECL|sub_version_number|member|uint16_t sub_version_number;
-DECL|sug_tx_octets|member|uint16_t sug_tx_octets;
 DECL|supervision_expire|member|uint16_t supervision_expire;
 DECL|supervision_reload|member|uint16_t supervision_reload;
 DECL|ticks_active_to_start|member|uint32_t ticks_active_to_start;
