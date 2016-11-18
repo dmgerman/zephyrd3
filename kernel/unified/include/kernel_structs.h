@@ -35,7 +35,7 @@ DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
-DECL|prio_bmap|member|uint32_t prio_bmap[1];
+DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
 DECL|prio|member|int prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
