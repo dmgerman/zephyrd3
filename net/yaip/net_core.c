@@ -25,6 +25,5 @@ DECL|process_ipv4_pkt|function|static inline enum net_verdict process_ipv4_pkt(s
 DECL|process_ipv6_pkt|function|static inline enum net_verdict process_ipv6_pkt(struct net_buf *buf)
 DECL|processing_data|function|static void processing_data(struct net_buf *buf, bool is_loopback)
 DECL|rx_queue|variable|rx_queue
-DECL|rx_stack|variable|rx_stack
 DECL|rx_tid|variable|rx_tid
 DECL|stats|function|static inline void stats(void)

@@ -101,7 +101,6 @@ DECL|server_id|member|struct in_addr server_id;
 DECL|state|member|enum net_dhcpv4_state state;
 DECL|ttl|member|uint8_t ttl;
 DECL|tx_queue|member|struct k_fifo tx_queue;
-DECL|tx_stack|member|char tx_stack[CONFIG_NET_TX_STACK_SIZE];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
 DECL|xid|member|uint32_t xid;
