@@ -40,7 +40,6 @@ DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_data|member|struct radio_adv_data adv_data;
 DECL|adv_obs_configure|function|static void adv_obs_configure(uint8_t phy)
 DECL|adv_obs_conn_configure|function|static void adv_obs_conn_configure(uint8_t phy)
-DECL|adv_scan_disable|function|static uint32_t adv_scan_disable(uint8_t ticker_id_primary, uint8_t ticker_id_stop, uint32_t ticks_xtal_to_start, uint32_t ticks_active_to_start)
 DECL|adv_setup|function|static void adv_setup(void)
 DECL|advertiser|member|struct advertiser advertiser;
 DECL|advertiser|struct|struct advertiser {
@@ -49,6 +48,7 @@ DECL|channel_map_update|function|static uint32_t channel_map_update(struct conne
 DECL|channel_set|function|static void channel_set(uint32_t channel)
 DECL|chl_map_current|member|uint8_t chl_map_current:3;
 DECL|chl_map|member|uint8_t chl_map:3;
+DECL|common_init|function|static void common_init(void)
 DECL|conn_curr|member|struct connection *conn_curr;
 DECL|conn_free|member|void *conn_free;
 DECL|conn_interval|member|uint16_t conn_interval;
@@ -65,10 +65,12 @@ DECL|connection_release|function|static void connection_release(struct connectio
 DECL|conn|member|struct connection *conn;
 DECL|conn|member|struct connection *conn;
 DECL|crc_expire|member|uint8_t crc_expire;
+DECL|ctrl_reset|function|void ctrl_reset(void)
 DECL|ctrl_tx_enqueue|function|static void ctrl_tx_enqueue(struct connection *conn, struct radio_pdu_node_tx *node_tx)
 DECL|data_channel_count|member|uint8_t data_channel_count;
 DECL|data_channel_map|member|uint8_t data_channel_map[5];
-DECL|do_adv_scan_disable|function|static inline void do_adv_scan_disable(uint8_t ticker_id_stop, uint32_t ticks_xtal_to_start, uint32_t ticks_active_to_start)
+DECL|default_tx_octets|member|uint16_t default_tx_octets;
+DECL|default_tx_time|member|uint16_t default_tx_time;
 DECL|do_radio_rx_fc_set|function|uint8_t do_radio_rx_fc_set(uint16_t handle, uint8_t req,uint8_t ack)
 DECL|empty_tx_enqueue|function|static struct pdu_data *empty_tx_enqueue(struct connection *conn)
 DECL|enc_req_reused_send|function|static void enc_req_reused_send(struct connection *conn,struct radio_pdu_node_tx *node_tx)
@@ -111,7 +113,7 @@ DECL|filter_bdaddr|member|uint8_t filter_bdaddr[8][BDADDR_SIZE];
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
 DECL|filter_enable_bitmask|member|uint8_t filter_enable_bitmask;
-DECL|filter_policy|member|uint8_t filter_policy:1;
+DECL|filter_policy|member|uint8_t filter_policy:2;
 DECL|filter_policy|member|uint8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
 DECL|hdr|member|struct shdr hdr;
@@ -200,6 +202,9 @@ DECL|radio_filter_remove|function|uint32_t radio_filter_remove(uint8_t addr_type
 DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
 DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
+DECL|radio_length_default_get|function|void radio_length_default_get(uint16_t *max_tx_octets, uint16_t *max_tx_time)
+DECL|radio_length_default_set|function|uint32_t radio_length_default_set(uint16_t max_tx_octets, uint16_t max_tx_time)
+DECL|radio_length_max_get|function|void radio_length_max_get(uint16_t *max_tx_octets, uint16_t *max_tx_time, uint16_t *max_rx_octets, uint16_t *max_rx_time)
 DECL|radio_length_req_send|function|uint32_t radio_length_req_send(uint16_t handle, uint16_t tx_octets)
 DECL|radio_rx_dequeue|function|void radio_rx_dequeue(void)
 DECL|radio_rx_fc_get|function|uint8_t radio_rx_fc_get(uint16_t *handle)
@@ -218,7 +223,8 @@ DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_no
 DECL|radio_version_ind_send|function|uint32_t radio_version_ind_send(uint16_t handle)
 DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connection *conn,uint8_t reject_opcode, uint8_t error_code)
 DECL|remainder_anchor|member|uint32_t remainder_anchor;
-DECL|rfu0|member|uint8_t rfu0:1;
+DECL|role_active_disable|function|static inline void role_active_disable(uint8_t ticker_id_stop, uint32_t ticks_xtal_to_start, uint32_t ticks_active_to_start)
+DECL|role_disable|function|static uint32_t role_disable(uint8_t ticker_id_primary, uint8_t ticker_id_stop)
 DECL|role|enum|enum role {
 DECL|role|member|enum role volatile role;
 DECL|rx_fc_lock|function|static void rx_fc_lock(uint16_t handle)
