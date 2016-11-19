@@ -1,0 +1,5 @@
+DECL|MBEDTLS_PLATFORM_TIME_H|macro|MBEDTLS_PLATFORM_TIME_H
+DECL|mbedtls_time_t|typedef|typedef MBEDTLS_PLATFORM_TIME_TYPE_MACRO mbedtls_time_t;
+DECL|mbedtls_time_t|typedef|typedef time_t mbedtls_time_t;
+DECL|mbedtls_time|macro|mbedtls_time
+DECL|mbedtls_time|macro|mbedtls_time

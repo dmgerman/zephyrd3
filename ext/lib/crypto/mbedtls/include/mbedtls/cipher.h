@@ -96,6 +96,7 @@ DECL|base|member|const mbedtls_cipher_base_t *base;
 DECL|block_size|member|unsigned int block_size;
 DECL|cipher_ctx|member|void *cipher_ctx;
 DECL|cipher_info|member|const mbedtls_cipher_info_t *cipher_info;
+DECL|cmac_ctx|member|mbedtls_cmac_context_t *cmac_ctx;
 DECL|flags|member|int flags;
 DECL|get_padding|member|int (*get_padding)( unsigned char *input, size_t ilen, size_t *data_len );
 DECL|inline|macro|inline
@@ -118,6 +119,7 @@ DECL|mbedtls_cipher_info_t|typedef|} mbedtls_cipher_info_t;
 DECL|mbedtls_cipher_mode_t|typedef|} mbedtls_cipher_mode_t;
 DECL|mbedtls_cipher_padding_t|typedef|} mbedtls_cipher_padding_t;
 DECL|mbedtls_cipher_type_t|typedef|} mbedtls_cipher_type_t;
+DECL|mbedtls_cmac_context_t|typedef|typedef struct mbedtls_cmac_context_t mbedtls_cmac_context_t;
 DECL|mbedtls_operation_t|typedef|} mbedtls_operation_t;
 DECL|mode|member|mbedtls_cipher_mode_t mode;
 DECL|name|member|const char * name;

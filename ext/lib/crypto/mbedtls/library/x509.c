@@ -1,10 +1,9 @@
+DECL|CHECK_RANGE|macro|CHECK_RANGE
 DECL|CHECK|macro|CHECK
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_snprintf|macro|mbedtls_snprintf
-DECL|mbedtls_time_t|macro|mbedtls_time_t
-DECL|mbedtls_time|macro|mbedtls_time
 DECL|mbedtls_x509_dn_gets|function|int mbedtls_x509_dn_gets( char *buf, size_t size, const mbedtls_x509_name *dn )
 DECL|mbedtls_x509_get_alg_null|function|int mbedtls_x509_get_alg_null( unsigned char **p, const unsigned char *end, mbedtls_x509_buf *alg )
 DECL|mbedtls_x509_get_alg|function|int mbedtls_x509_get_alg( unsigned char **p, const unsigned char *end, mbedtls_x509_buf *alg, mbedtls_x509_buf *params )
@@ -24,6 +23,7 @@ DECL|mbedtls_x509_time_is_future|function|int mbedtls_x509_time_is_future( const
 DECL|mbedtls_x509_time_is_past|function|int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
 DECL|mbedtls_x509_time_is_past|function|int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
 DECL|x509_check_time|function|static int x509_check_time( const mbedtls_x509_time *before, const mbedtls_x509_time *after )
+DECL|x509_date_is_valid|function|static int x509_date_is_valid(const mbedtls_x509_time *time)
 DECL|x509_get_attr_type_value|function|static int x509_get_attr_type_value( unsigned char **p, const unsigned char *end, mbedtls_x509_name *cur )
 DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )
 DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )

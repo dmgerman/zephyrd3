@@ -1,0 +1,9 @@
+DECL|MBEDTLS_AES_BLOCK_SIZE|macro|MBEDTLS_AES_BLOCK_SIZE
+DECL|MBEDTLS_CIPHER_BLKSIZE_MAX|macro|MBEDTLS_CIPHER_BLKSIZE_MAX
+DECL|MBEDTLS_CIPHER_BLKSIZE_MAX|macro|MBEDTLS_CIPHER_BLKSIZE_MAX
+DECL|MBEDTLS_CMAC_H|macro|MBEDTLS_CMAC_H
+DECL|MBEDTLS_DES3_BLOCK_SIZE|macro|MBEDTLS_DES3_BLOCK_SIZE
+DECL|mbedtls_cmac_context_t|struct|struct mbedtls_cmac_context_t
+DECL|state|member|unsigned char state[MBEDTLS_CIPHER_BLKSIZE_MAX];
+DECL|unprocessed_block|member|unsigned char unprocessed_block[MBEDTLS_CIPHER_BLKSIZE_MAX];
+DECL|unprocessed_len|member|size_t unprocessed_len;

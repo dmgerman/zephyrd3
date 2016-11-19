@@ -32,7 +32,3 @@ DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_snprintf|macro|mbedtls_snprintf
 DECL|mbedtls_snprintf|macro|mbedtls_snprintf
-DECL|mbedtls_time_t|typedef|typedef MBEDTLS_PLATFORM_TIME_TYPE_MACRO mbedtls_time_t;
-DECL|mbedtls_time_t|typedef|typedef time_t mbedtls_time_t;
-DECL|mbedtls_time|macro|mbedtls_time
-DECL|mbedtls_time|macro|mbedtls_time

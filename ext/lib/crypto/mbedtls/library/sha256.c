@@ -11,6 +11,8 @@ DECL|S1|macro|S1
 DECL|S2|macro|S2
 DECL|S3|macro|S3
 DECL|SHR|macro|SHR
+DECL|mbedtls_calloc|macro|mbedtls_calloc
+DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_sha256_clone|function|void mbedtls_sha256_clone( mbedtls_sha256_context *dst, const mbedtls_sha256_context *src )
 DECL|mbedtls_sha256_finish|function|void mbedtls_sha256_finish( mbedtls_sha256_context *ctx, unsigned char output[32] )

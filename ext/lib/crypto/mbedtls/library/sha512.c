@@ -12,6 +12,8 @@ DECL|S3|macro|S3
 DECL|SHR|macro|SHR
 DECL|UL64|macro|UL64
 DECL|UL64|macro|UL64
+DECL|mbedtls_calloc|macro|mbedtls_calloc
+DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_sha512_clone|function|void mbedtls_sha512_clone( mbedtls_sha512_context *dst, const mbedtls_sha512_context *src )
 DECL|mbedtls_sha512_finish|function|void mbedtls_sha512_finish( mbedtls_sha512_context *ctx, unsigned char output[64] )

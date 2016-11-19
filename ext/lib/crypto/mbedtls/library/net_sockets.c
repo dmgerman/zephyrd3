@@ -14,7 +14,6 @@ DECL|mbedtls_net_send|function|int mbedtls_net_send( void *ctx, const unsigned c
 DECL|mbedtls_net_set_block|function|int mbedtls_net_set_block( mbedtls_net_context *ctx )
 DECL|mbedtls_net_set_nonblock|function|int mbedtls_net_set_nonblock( mbedtls_net_context *ctx )
 DECL|mbedtls_net_usleep|function|void mbedtls_net_usleep( unsigned long usec )
-DECL|mbedtls_time_t|macro|mbedtls_time_t
 DECL|net_prepare|function|static int net_prepare( void )
 DECL|net_would_block|function|static int net_would_block( const mbedtls_net_context *ctx )
 DECL|net_would_block|function|static int net_would_block( const mbedtls_net_context *ctx )

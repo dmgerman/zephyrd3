@@ -10,6 +10,5 @@ DECL|mbedtls_ssl_get_ciphersuite_name|function|const char *mbedtls_ssl_get_ciphe
 DECL|mbedtls_ssl_get_ciphersuite_sig_pk_alg|function|mbedtls_pk_type_t mbedtls_ssl_get_ciphersuite_sig_pk_alg( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_list_ciphersuites|function|const int *mbedtls_ssl_list_ciphersuites( void )
 DECL|mbedtls_ssl_list_ciphersuites|function|const int *mbedtls_ssl_list_ciphersuites( void )
-DECL|mbedtls_time_t|macro|mbedtls_time_t
 DECL|supported_ciphersuites|variable|supported_ciphersuites
 DECL|supported_init|variable|supported_init

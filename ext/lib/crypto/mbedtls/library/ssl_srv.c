@@ -3,8 +3,6 @@ DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_ssl_conf_dtls_cookies|function|void mbedtls_ssl_conf_dtls_cookies( mbedtls_ssl_config *conf, mbedtls_ssl_cookie_write_t *f_cookie_write, mbedtls_ssl_cookie_check_t *f_cookie_check, void *p_cookie )
 DECL|mbedtls_ssl_handshake_server_step|function|int mbedtls_ssl_handshake_server_step( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_set_client_transport_id|function|int mbedtls_ssl_set_client_transport_id( mbedtls_ssl_context *ssl, const unsigned char *info, size_t ilen )
-DECL|mbedtls_time_t|macro|mbedtls_time_t
-DECL|mbedtls_time|macro|mbedtls_time
 DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|ssl_check_key_curve|function|static int ssl_check_key_curve( mbedtls_pk_context *pk, const mbedtls_ecp_curve_info **curves )
 DECL|ssl_ciphersuite_match|function|static int ssl_ciphersuite_match( mbedtls_ssl_context *ssl, int suite_id, const mbedtls_ssl_ciphersuite_t **ciphersuite_info )
