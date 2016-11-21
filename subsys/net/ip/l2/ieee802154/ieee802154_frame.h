@@ -145,6 +145,7 @@ DECL|ieee802154_pas_spec|struct|struct ieee802154_pas_spec {
 DECL|ieee802154_version|enum|enum ieee802154_version {
 DECL|length|member|uint8_t length : 4;
 DECL|length|member|uint8_t length : 4;
+DECL|length|member|uint8_t length : 4;
 DECL|len|member|uint16_t len;
 DECL|mask|member|uint8_t mask : 7;
 DECL|mfr|member|struct ieee802154_mfr *mfr;
@@ -186,6 +187,7 @@ DECL|short_addr|member|uint16_t short_addr;
 DECL|simple_addr|member|uint8_t simple_addr;
 DECL|src_addr_mode|member|uint16_t src_addr_mode :2;
 DECL|src_addr|member|struct ieee802154_address_field *src_addr;
+DECL|starting_slot|member|uint8_t starting_slot : 4;
 DECL|starting_slot|member|uint8_t starting_slot : 4;
 DECL|status|member|uint8_t status;
 DECL|type|member|uint8_t type : 1;
