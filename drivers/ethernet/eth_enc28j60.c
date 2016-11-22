@@ -2,7 +2,7 @@ DECL|D10D24S|macro|D10D24S
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|api_funcs_0|variable|api_funcs_0
-DECL|enc28j60_fiber_main|function|static void enc28j60_fiber_main(int arg1, int unused)
+DECL|enc28j60_thread_main|function|static void enc28j60_thread_main(void *arg1, void *unused1, void *unused2)
 DECL|eth_enc28j60_0_config|variable|eth_enc28j60_0_config
 DECL|eth_enc28j60_0_runtime|variable|eth_enc28j60_0_runtime
 DECL|eth_enc28j60_clear_eth_reg|function|static void eth_enc28j60_clear_eth_reg(struct device *dev, uint16_t reg_addr, uint8_t value)
