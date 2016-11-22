@@ -1,5 +1,6 @@
 DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
 DECL|_init_static_threads|function|void _init_static_threads(void)
+DECL|_init_thread_base|function|void _init_thread_base(struct _thread_base *thread_base, int priority, uint32_t initial_state, unsigned int options)
 DECL|_is_thread_essential|function|int _is_thread_essential(void)
 DECL|_k_thread_group_join|function|void _k_thread_group_join(uint32_t groups, struct k_thread *thread)
 DECL|_k_thread_group_leave|function|void _k_thread_group_leave(uint32_t groups, struct k_thread *thread)
