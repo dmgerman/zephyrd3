@@ -17,6 +17,7 @@ DECL|ip_max_packet_len|macro|ip_max_packet_len
 DECL|net_tcp_add_options|function|static inline int net_tcp_add_options(struct net_buf *header, size_t len, void *data)
 DECL|net_tcp_alloc|function|struct net_tcp *net_tcp_alloc(struct net_context *context)
 DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp, enum net_tcp_state new_state)
+DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_data)
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_buf **buf)
 DECL|net_tcp_prepare_data_segment|function|int net_tcp_prepare_data_segment(struct net_tcp *tcp, struct net_buf *buf, void *options, size_t optlen, const struct sockaddr *remote, struct net_buf **send_buf)

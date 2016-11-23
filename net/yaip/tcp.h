@@ -35,6 +35,7 @@ DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|context|member|struct net_context *context;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|flags|member|uint8_t flags;
+DECL|net_tcp_cb_t|typedef|typedef void (*net_tcp_cb_t)(struct net_tcp *tcp, void *user_data);
 DECL|net_tcp_change_state|macro|net_tcp_change_state
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
