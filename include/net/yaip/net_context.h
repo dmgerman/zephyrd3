@@ -19,6 +19,7 @@ DECL|flags|member|uint8_t flags;
 DECL|iface|member|uint8_t iface;
 DECL|local|member|struct sockaddr_ptr local;
 DECL|net_context_accept_cb_t|typedef|typedef void (*net_context_accept_cb_t)(struct net_context *new_context,
+DECL|net_context_cb_t|typedef|typedef void (*net_context_cb_t)(struct net_context *context, void *user_data);
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,
 DECL|net_context_get_family|function|static inline sa_family_t net_context_get_family(struct net_context *context)
 DECL|net_context_get_iface|function|struct net_if *net_context_get_iface(struct net_context *context)
