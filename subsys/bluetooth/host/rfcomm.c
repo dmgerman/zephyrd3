@@ -13,6 +13,7 @@ DECL|RFCOMM_SECURITY_REJECT|enumerator|RFCOMM_SECURITY_REJECT,
 DECL|RFCOMM_SESSION|macro|RFCOMM_SESSION
 DECL|bt_rfcomm_create_pdu|function|struct net_buf *bt_rfcomm_create_pdu(struct k_fifo *fifo)
 DECL|bt_rfcomm_dlc_connect|function|int bt_rfcomm_dlc_connect(struct bt_conn *conn, struct bt_rfcomm_dlc *dlc, uint8_t channel)
+DECL|bt_rfcomm_dlc_disconnect|function|int bt_rfcomm_dlc_disconnect(struct bt_rfcomm_dlc *dlc)
 DECL|bt_rfcomm_dlc_send|function|int bt_rfcomm_dlc_send(struct bt_rfcomm_dlc *dlc, struct net_buf *buf)
 DECL|bt_rfcomm_init|function|void bt_rfcomm_init(void)
 DECL|bt_rfcomm_pool|variable|bt_rfcomm_pool
@@ -25,6 +26,7 @@ DECL|rfcomm_connected|function|static void rfcomm_connected(struct bt_l2cap_chan
 DECL|rfcomm_crc_table|variable|rfcomm_crc_table
 DECL|rfcomm_disconnected|function|static void rfcomm_disconnected(struct bt_l2cap_chan *chan)
 DECL|rfcomm_dlc_accept|function|static struct bt_rfcomm_dlc *rfcomm_dlc_accept(struct bt_rfcomm_session *session, uint8_t dlci)
+DECL|rfcomm_dlc_close|function|static int rfcomm_dlc_close(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_connected|function|static void rfcomm_dlc_connected(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_destroy|function|static void rfcomm_dlc_destroy(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_disconnect|function|static void rfcomm_dlc_disconnect(struct bt_rfcomm_dlc *dlc)
@@ -48,6 +50,7 @@ DECL|rfcomm_handle_ua|function|static void rfcomm_handle_ua(struct bt_rfcomm_ses
 DECL|rfcomm_make_uih_msg|function|static struct net_buf *rfcomm_make_uih_msg(struct bt_rfcomm_dlc *dlc, uint8_t cr, uint8_t type, uint8_t len)
 DECL|rfcomm_recv|function|static void rfcomm_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|rfcomm_send_credit|function|static int rfcomm_send_credit(struct bt_rfcomm_dlc *dlc, uint8_t credits)
+DECL|rfcomm_send_disc|function|static int rfcomm_send_disc(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_send_dm|function|static int rfcomm_send_dm(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_send_msc|function|static int rfcomm_send_msc(struct bt_rfcomm_dlc *dlc, uint8_t cr)
 DECL|rfcomm_send_pn|function|static int rfcomm_send_pn(struct bt_rfcomm_dlc *dlc, uint8_t cr)
