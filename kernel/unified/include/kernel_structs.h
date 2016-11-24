@@ -1,14 +1,11 @@
 DECL|K_DEAD|macro|K_DEAD
 DECL|K_DUMMY|macro|K_DUMMY
 DECL|K_ESSENTIAL|macro|K_ESSENTIAL
-DECL|K_EXECUTION_MASK|macro|K_EXECUTION_MASK
 DECL|K_FP_REGS|macro|K_FP_REGS
 DECL|K_PENDING|macro|K_PENDING
 DECL|K_PRESTART|macro|K_PRESTART
-DECL|K_READY|macro|K_READY
 DECL|K_STATIC|macro|K_STATIC
 DECL|K_SUSPENDED|macro|K_SUSPENDED
-DECL|K_TIMING|macro|K_TIMING
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
