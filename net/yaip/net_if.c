@@ -13,6 +13,7 @@ DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
 DECL|init_tx_queue|function|static inline void init_tx_queue(struct net_if *iface)
 DECL|ipv6_addr_expired|function|static void ipv6_addr_expired(struct k_work *work)
+DECL|ipv6_addr_find|function|static struct net_if_addr *ipv6_addr_find(struct net_if *iface, struct in6_addr *addr)
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|link_callbacks|variable|link_callbacks
