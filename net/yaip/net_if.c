@@ -14,6 +14,7 @@ DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, 
 DECL|init_tx_queue|function|static inline void init_tx_queue(struct net_if *iface)
 DECL|ipv6_addr_expired|function|static void ipv6_addr_expired(struct k_work *work)
 DECL|ipv6_addr_find|function|static struct net_if_addr *ipv6_addr_find(struct net_if *iface, struct in6_addr *addr)
+DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_find(struct net_if *iface, struct in6_addr *prefix, uint8_t prefix_len)
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|link_callbacks|variable|link_callbacks
