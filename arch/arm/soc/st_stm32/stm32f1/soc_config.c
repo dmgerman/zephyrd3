@@ -1,6 +1,7 @@
 DECL|pin_pa10_funcs|variable|pin_pa10_funcs
 DECL|pin_pa2_funcs|variable|pin_pa2_funcs
 DECL|pin_pa3_funcs|variable|pin_pa3_funcs
+DECL|pin_pa8_funcs|variable|pin_pa8_funcs
 DECL|pin_pa9_funcs|variable|pin_pa9_funcs
 DECL|pin_pb10_funcs|variable|pin_pb10_funcs
 DECL|pin_pb11_funcs|variable|pin_pb11_funcs
