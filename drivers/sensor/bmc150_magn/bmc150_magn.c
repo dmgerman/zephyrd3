@@ -9,7 +9,7 @@ DECL|bmc150_magn_config|variable|bmc150_magn_config
 DECL|bmc150_magn_convert|function|static void bmc150_magn_convert(struct sensor_value *val, int raw_val)
 DECL|bmc150_magn_data|variable|bmc150_magn_data
 DECL|bmc150_magn_init_chip|function|static int bmc150_magn_init_chip(struct device *dev)
-DECL|bmc150_magn_init|function|int bmc150_magn_init(struct device *dev)
+DECL|bmc150_magn_init|function|static int bmc150_magn_init(struct device *dev)
 DECL|bmc150_magn_presets_table|variable|bmc150_magn_presets_table
 DECL|bmc150_magn_preset|struct|static const struct bmc150_magn_preset {
 DECL|bmc150_magn_read_odr|function|static int bmc150_magn_read_odr(struct device *dev)
