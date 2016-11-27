@@ -16,7 +16,7 @@ DECL|lsm6ds0_gyro_get_channel|function|static inline int lsm6ds0_gyro_get_channe
 DECL|lsm6ds0_gyro_set_fs_raw|function|static int lsm6ds0_gyro_set_fs_raw(struct device *dev, uint8_t fs)
 DECL|lsm6ds0_gyro_set_odr_raw|function|static int lsm6ds0_gyro_set_odr_raw(struct device *dev, uint8_t odr)
 DECL|lsm6ds0_init_chip|function|static int lsm6ds0_init_chip(struct device *dev)
-DECL|lsm6ds0_init|function|int lsm6ds0_init(struct device *dev)
+DECL|lsm6ds0_init|function|static int lsm6ds0_init(struct device *dev)
 DECL|lsm6ds0_reboot|function|static inline int lsm6ds0_reboot(struct device *dev)
 DECL|lsm6ds0_sample_fetch_accel|function|static int lsm6ds0_sample_fetch_accel(struct device *dev)
 DECL|lsm6ds0_sample_fetch_gyro|function|static int lsm6ds0_sample_fetch_gyro(struct device *dev)
