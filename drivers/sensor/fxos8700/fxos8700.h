@@ -9,6 +9,7 @@ DECL|FXOS8700_CHANNEL_MAGN_Z|enumerator|FXOS8700_CHANNEL_MAGN_Z,
 DECL|FXOS8700_CTRLREG1_ACTIVE_MASK|macro|FXOS8700_CTRLREG1_ACTIVE_MASK
 DECL|FXOS8700_CTRLREG1_DR_MASK|macro|FXOS8700_CTRLREG1_DR_MASK
 DECL|FXOS8700_CTRLREG2_RST_MASK|macro|FXOS8700_CTRLREG2_RST_MASK
+DECL|FXOS8700_DRDY_MASK|macro|FXOS8700_DRDY_MASK
 DECL|FXOS8700_MAX_NUM_BYTES|macro|FXOS8700_MAX_NUM_BYTES
 DECL|FXOS8700_MAX_NUM_CHANNELS|macro|FXOS8700_MAX_NUM_CHANNELS
 DECL|FXOS8700_MODE_ACCEL|enumerator|FXOS8700_MODE_ACCEL = 0,
@@ -40,12 +41,18 @@ DECL|FXOS8700_REG_XYZ_DATA_CFG|macro|FXOS8700_REG_XYZ_DATA_CFG
 DECL|FXOS8700_XYZ_DATA_CFG_FS_MASK|macro|FXOS8700_XYZ_DATA_CFG_FS_MASK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|dev|member|struct device *dev;
+DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
 DECL|fxos8700_channel|enum|enum fxos8700_channel {
 DECL|fxos8700_config|struct|struct fxos8700_config {
 DECL|fxos8700_data|struct|struct fxos8700_data {
 DECL|fxos8700_mode|enum|enum fxos8700_mode {
 DECL|fxos8700_power|enum|enum fxos8700_power {
 DECL|fxos8700_range|enum|enum fxos8700_range {
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
+DECL|gpio_name|member|char *gpio_name;
+DECL|gpio_pin|member|uint8_t gpio_pin;
+DECL|gpio|member|struct device *gpio;
 DECL|i2c_address|member|uint8_t i2c_address;
 DECL|i2c_name|member|char *i2c_name;
 DECL|i2c|member|struct device *i2c;
@@ -56,4 +63,7 @@ DECL|raw|member|int16_t raw[FXOS8700_MAX_NUM_CHANNELS];
 DECL|sem|member|struct k_sem sem;
 DECL|start_addr|member|uint8_t start_addr;
 DECL|start_channel|member|uint8_t start_channel;
+DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXOS8700_THREAD_STACK_SIZE];
+DECL|trig_sem|member|struct k_sem trig_sem;
 DECL|whoami|member|uint8_t whoami;
+DECL|work|member|struct k_work work;
