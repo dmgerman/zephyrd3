@@ -9,7 +9,7 @@ DECL|lsm9ds0_gyro_data|variable|lsm9ds0_gyro_data
 DECL|lsm9ds0_gyro_fs_table|variable|lsm9ds0_gyro_fs_table
 DECL|lsm9ds0_gyro_get_channel|function|static inline int lsm9ds0_gyro_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm9ds0_gyro_data *data, float numerator)
 DECL|lsm9ds0_gyro_init_chip|function|static int lsm9ds0_gyro_init_chip(struct device *dev)
-DECL|lsm9ds0_gyro_init|function|int lsm9ds0_gyro_init(struct device *dev)
+DECL|lsm9ds0_gyro_init|function|static int lsm9ds0_gyro_init(struct device *dev)
 DECL|lsm9ds0_gyro_power_ctrl|function|static inline int lsm9ds0_gyro_power_ctrl(struct device *dev, int power, int x_en, int y_en, int z_en)
 DECL|lsm9ds0_gyro_samp_freq_table|variable|lsm9ds0_gyro_samp_freq_table
 DECL|lsm9ds0_gyro_sample_fetch|function|static int lsm9ds0_gyro_sample_fetch(struct device *dev, enum sensor_channel chan)
