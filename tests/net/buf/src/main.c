@@ -33,7 +33,7 @@ DECL|no_data_buf_fifo|variable|no_data_buf_fifo
 DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|tcflow|member|uint8_t tcflow;
-DECL|test_3_fiber|function|static void test_3_fiber(int arg1, int arg2)
+DECL|test_3_thread|function|static void test_3_thread(void *arg1, void *arg2, void *arg3)
 DECL|test_main|function|void test_main(void)
 DECL|type|member|uint8_t type;
 DECL|udp_hdr|struct|struct udp_hdr {
