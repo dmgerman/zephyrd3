@@ -62,6 +62,7 @@ DECL|base_mid|member|uint8_t base_mid; /* Bits 16-23 */
 DECL|cd|member|uint8_t cd:1;
 DECL|cr3|member|uint32_t cr3;
 DECL|cs|member|uint16_t cs;
+DECL|db|member|uint8_t db:1; /* D/B field 1=32-bit 0=16-bit*/
 DECL|descriptor_type|member|uint8_t descriptor_type:1;
 DECL|dpl|member|uint8_t dpl:2;
 DECL|ds|member|uint16_t ds;
@@ -82,7 +83,7 @@ DECL|esp|member|uint32_t esp;
 DECL|es|member|uint16_t es;
 DECL|executable|member|uint8_t executable:1;
 DECL|far_ptr|struct|struct __packed far_ptr {
-DECL|flags_l|member|uint8_t flags_l:1;
+DECL|flags_l|member|uint8_t flags_l:1; /* L field */
 DECL|fs|member|uint16_t fs;
 DECL|granularity|member|uint8_t granularity:1;
 DECL|gs|member|uint16_t gs;
@@ -119,7 +120,6 @@ DECL|segment_selector|member|uint16_t segment_selector;
 DECL|segment_selector|struct|struct __packed segment_selector {
 DECL|sel|member|uint16_t sel;
 DECL|size|member|uint16_t size;
-DECL|size|member|uint8_t size:1;
 DECL|ss0|member|uint16_t ss0;
 DECL|ss1|member|uint16_t ss1;
 DECL|ss2|member|uint16_t ss2;
