@@ -17,7 +17,7 @@ DECL|cc2520_spi|struct|struct cc2520_spi {
 DECL|cmd_buf|member|uint8_t cmd_buf[12];
 DECL|dev|member|struct device *dev;
 DECL|fifop_cb|member|struct gpio_callback fifop_cb;
-DECL|gpios|member|struct device **gpios;
+DECL|gpios|member|struct cc2520_gpio_configuration *gpios;
 DECL|iface|member|struct net_if *iface;
 DECL|lqi|member|uint8_t lqi;
 DECL|mac_addr|member|uint8_t mac_addr[8];
