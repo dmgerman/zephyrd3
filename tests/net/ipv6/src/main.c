@@ -17,6 +17,7 @@ DECL|main|function|void main(void)
 DECL|mcast_addr|variable|mcast_addr
 DECL|my_addr|variable|my_addr
 DECL|name|member|const char *name;
+DECL|net_test_change_ll_addr|function|static bool net_test_change_ll_addr(void)
 DECL|net_test_data|variable|net_test_data
 DECL|net_test_dev_init|function|int net_test_dev_init(struct device *dev)
 DECL|net_test_get_mac|function|static uint8_t *net_test_get_mac(struct device *dev)
