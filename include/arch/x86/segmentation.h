@@ -50,6 +50,7 @@ DECL|_get_tss|function|static inline uint16_t _get_tss(void)
 DECL|_init_irq_gate|function|static inline void _init_irq_gate(struct segment_descriptor *sd, uint16_t seg_selector, uint32_t offset, uint32_t dpl)
 DECL|_sd_set_seg_offset|function|static inline void _sd_set_seg_offset(struct segment_descriptor *sd, uint16_t segment_selector, uint32_t offset)
 DECL|_set_gdt|function|static inline void _set_gdt(const struct pseudo_descriptor *gdt)
+DECL|_set_idt|function|static inline void _set_idt(const struct pseudo_descriptor *idt)
 DECL|_set_ldt|function|static inline void _set_ldt(uint16_t ldt)
 DECL|_set_tss|function|static inline void _set_tss(uint16_t sel)
 DECL|accessed|member|uint8_t accessed:1;
