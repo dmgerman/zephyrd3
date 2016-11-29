@@ -1,4 +1,5 @@
 DECL|FIN_TIMEOUT|macro|FIN_TIMEOUT
+DECL|INIT_RETRY_MS|macro|INIT_RETRY_MS
 DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|NET_IP_MAX_OPTIONS|macro|NET_IP_MAX_OPTIONS
 DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
@@ -32,12 +33,14 @@ DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|options|member|void *options;
 DECL|optlen|member|uint8_t optlen;
 DECL|prepare_segment|function|static struct net_buf *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_buf *buf)
+DECL|restart_timer|function|static void restart_timer(struct net_tcp *tcp)
 DECL|seq_greater|function|static inline bool seq_greater(uint32_t seq1, uint32_t seq2)
 DECL|seq|member|uint32_t seq;
 DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
 DECL|tcp_lock|variable|tcp_lock
 DECL|tcp_queue_data|function|int tcp_queue_data(struct net_context *context, struct net_buf *buf)
+DECL|tcp_retry_expired|function|static void tcp_retry_expired(struct k_timer *timer)
 DECL|tcp_segment|struct|struct tcp_segment {
 DECL|tcp_send_data|function|int tcp_send_data(struct net_context *context)
 DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
