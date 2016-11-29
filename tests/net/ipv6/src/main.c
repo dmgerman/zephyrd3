@@ -26,7 +26,6 @@ DECL|net_test_iface_init|function|static void net_test_iface_init(struct net_if 
 DECL|net_test_ipv6|struct|struct net_test_ipv6 {
 DECL|net_test_nbr_lookup_fail|function|static bool net_test_nbr_lookup_fail(void)
 DECL|net_test_nbr_lookup_ok|function|static bool net_test_nbr_lookup_ok(void)
-DECL|net_test_prefix_timeout_overflow|function|static bool net_test_prefix_timeout_overflow(void)
 DECL|net_test_prefix_timeout|function|static bool net_test_prefix_timeout(void)
 DECL|net_test_ra_message|function|static bool net_test_ra_message(void)
 DECL|net_test_send_ns_extra_options|function|static bool net_test_send_ns_extra_options(void)
