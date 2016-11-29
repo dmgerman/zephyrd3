@@ -1,6 +1,6 @@
 DECL|__COUNTER_H__|macro|__COUNTER_H__
 DECL|counter_api_get_pending_int|typedef|typedef uint32_t (*counter_api_get_pending_int)(struct device *dev);
-DECL|counter_api_read|typedef|typedef uint32_t (*counter_api_read)(void);
+DECL|counter_api_read|typedef|typedef uint32_t (*counter_api_read)(struct device *dev);
 DECL|counter_api_set_alarm|typedef|typedef int (*counter_api_set_alarm)(struct device *dev,
 DECL|counter_api_start|typedef|typedef int (*counter_api_start)(struct device *dev);
 DECL|counter_api_stop|typedef|typedef int (*counter_api_stop)(struct device *dev);
