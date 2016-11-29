@@ -50,6 +50,7 @@ DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net
 DECL|net_buf|struct|struct net_buf {
 DECL|offset|member|uint16_t offset;
 DECL|ref|member|uint8_t ref;
+DECL|sent_list|member|sys_snode_t sent_list;
 DECL|size|member|const uint16_t size;
 DECL|size|member|const uint16_t size;
 DECL|user_data_size|member|const uint16_t user_data_size;

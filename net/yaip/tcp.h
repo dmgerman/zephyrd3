@@ -49,4 +49,5 @@ DECL|recv_mss|member|uint16_t recv_mss;
 DECL|retransmit_timer|member|struct k_delayed_work retransmit_timer;
 DECL|send_ack|member|uint32_t send_ack;
 DECL|send_seq|member|uint32_t send_seq;
+DECL|sent_list|member|sys_slist_t sent_list;
 DECL|state|member|enum net_tcp_state state;

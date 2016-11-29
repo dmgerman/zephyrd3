@@ -7,7 +7,6 @@ DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
 DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net_buf *buf,struct sockaddr *addr)
-DECL|create_tcp_packet|function|static int create_tcp_packet(struct net_context *context, struct net_buf *buf, const struct sockaddr *dst_addr, struct net_buf **out_buf)
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_buf *buf, const struct sockaddr *dst_addr, struct net_buf **out_buf)
 DECL|find_available_port|function|static uint16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)

@@ -34,7 +34,9 @@ DECL|seq|member|uint32_t seq;
 DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
 DECL|tcp_lock|variable|tcp_lock
+DECL|tcp_queue_data|function|int tcp_queue_data(struct net_context *context, struct net_buf *buf)
 DECL|tcp_segment|struct|struct tcp_segment {
+DECL|tcp_send_data|function|int tcp_send_data(struct net_context *context)
 DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
 DECL|validate_state_transition|function|static void validate_state_transition(enum net_tcp_state current, enum net_tcp_state new)
 DECL|wnd|member|uint16_t wnd;
