@@ -20,6 +20,8 @@ DECL|avail_prio_hci_evt|variable|avail_prio_hci_evt
 DECL|br_init|function|static int br_init(void)
 DECL|br_init|function|static int br_init(void)
 DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_discovery_param *param, size_t num_rsp)
+DECL|bt_addr_le_create_nrpa|function|int bt_addr_le_create_nrpa(bt_addr_le_t *addr)
+DECL|bt_addr_le_create_static|function|int bt_addr_le_create_static(bt_addr_le_t *addr)
 DECL|bt_addr_le_is_bonded|function|bool bt_addr_le_is_bonded(const bt_addr_le_t *addr)
 DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
@@ -62,6 +64,7 @@ DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
+DECL|create_random_addr|function|static inline int create_random_addr(bt_addr_le_t *addr)
 DECL|dh_key_cb|variable|dh_key_cb
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_priv|struct|struct discovery_priv {
