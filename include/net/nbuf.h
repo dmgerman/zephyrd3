@@ -9,6 +9,7 @@ DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
 DECL|appdatalen|member|uint16_t appdatalen;
 DECL|appdata|member|uint8_t *appdata; /* application data starts here */
+DECL|buf_sent|member|bool buf_sent; /* Is this net_buf sent or not */
 DECL|context|member|struct net_context *context;
 DECL|ext_bitmap|member|uint8_t ext_bitmap;
 DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
@@ -25,6 +26,7 @@ DECL|net_nbuf_appdata|function|static inline uint8_t *net_nbuf_appdata(struct ne
 DECL|net_nbuf_append_be16|function|static inline bool net_nbuf_append_be16(struct net_buf *buf, uint16_t data)
 DECL|net_nbuf_append_be32|function|static inline bool net_nbuf_append_be32(struct net_buf *buf, uint32_t data)
 DECL|net_nbuf_append_u8|function|static inline bool net_nbuf_append_u8(struct net_buf *buf, uint8_t data)
+DECL|net_nbuf_buf_sent|function|static inline uint8_t net_nbuf_buf_sent(struct net_buf *buf)
 DECL|net_nbuf_context|function|static inline struct net_context *net_nbuf_context(struct net_buf *buf)
 DECL|net_nbuf_copy_all|function|static inline struct net_buf *net_nbuf_copy_all(struct net_buf *buf,size_t reserve)
 DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(struct net_buf *buf)
@@ -60,6 +62,7 @@ DECL|net_nbuf_ref|macro|net_nbuf_ref
 DECL|net_nbuf_reserve|function|static inline uint16_t net_nbuf_reserve(struct net_buf *buf)
 DECL|net_nbuf_set_appdatalen|function|static inline void net_nbuf_set_appdatalen(struct net_buf *buf, uint16_t len)
 DECL|net_nbuf_set_appdata|function|static inline void net_nbuf_set_appdata(struct net_buf *buf, uint8_t *data)
+DECL|net_nbuf_set_buf_sent|function|static inline void net_nbuf_set_buf_sent(struct net_buf *buf, bool sent)
 DECL|net_nbuf_set_context|function|static inline void net_nbuf_set_context(struct net_buf *buf,struct net_context *ctx)
 DECL|net_nbuf_set_ext_bitmap|function|static inline void net_nbuf_set_ext_bitmap(struct net_buf *buf, uint8_t bm)
 DECL|net_nbuf_set_ext_len|function|static inline void net_nbuf_set_ext_len(struct net_buf *buf, uint8_t len)
