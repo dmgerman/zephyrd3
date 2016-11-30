@@ -7,8 +7,8 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|cb|member|uart_irq_callback_t cb;
 DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct device *dev, uint32_t baudrate)
 DECL|cdc_acm_bulk_in|function|static void cdc_acm_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|cdc_acm_bulk_out|function|static void cdc_acm_bulk_out(uint8_t ep,enum usb_dc_ep_cb_status_code ep_status)
-DECL|cdc_acm_class_handle_req|function|int cdc_acm_class_handle_req(struct usb_setup_packet *pSetup,int32_t *len, uint8_t **data)
+DECL|cdc_acm_bulk_out|function|static void cdc_acm_bulk_out(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|cdc_acm_class_handle_req|function|int cdc_acm_class_handle_req(struct usb_setup_packet *pSetup, int32_t *len, uint8_t **data)
 DECL|cdc_acm_config|variable|cdc_acm_config
 DECL|cdc_acm_dev_data_t|struct|struct cdc_acm_dev_data_t {
 DECL|cdc_acm_dev_data|variable|cdc_acm_dev_data
@@ -17,11 +17,11 @@ DECL|cdc_acm_dev|variable|cdc_acm_dev
 DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api
 DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api
 DECL|cdc_acm_ep_data|variable|cdc_acm_ep_data
-DECL|cdc_acm_fifo_fill|function|static int cdc_acm_fifo_fill(struct device *dev,const uint8_t *tx_data, int len)
-DECL|cdc_acm_fifo_read|function|static int cdc_acm_fifo_read(struct device *dev, uint8_t *rx_data,const int size)
+DECL|cdc_acm_fifo_fill|function|static int cdc_acm_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
+DECL|cdc_acm_fifo_read|function|static int cdc_acm_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|cdc_acm_init|function|static int cdc_acm_init(struct device *dev)
 DECL|cdc_acm_int_in|function|static void cdc_acm_int_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|cdc_acm_irq_callback_set|function|static void cdc_acm_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
+DECL|cdc_acm_irq_callback_set|function|static void cdc_acm_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|cdc_acm_irq_is_pending|function|static int cdc_acm_irq_is_pending(struct device *dev)
 DECL|cdc_acm_irq_rx_disable|function|static void cdc_acm_irq_rx_disable(struct device *dev)
 DECL|cdc_acm_irq_rx_enable|function|static void cdc_acm_irq_rx_enable(struct device *dev)
