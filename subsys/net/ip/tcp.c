@@ -27,7 +27,7 @@ DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
 DECL|net_tcp_send_buf|function|int net_tcp_send_buf(struct net_buf *buf)
 DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp *tcp, uint8_t *options,uint8_t *optionlen)
-DECL|net_tcp_state_str|function|const char const *net_tcp_state_str(enum net_tcp_state state)
+DECL|net_tcp_state_str|function|const char * const net_tcp_state_str(enum net_tcp_state state)
 DECL|net_tcp_trace|function|static void net_tcp_trace(char *str, struct net_buf *buf)
 DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|options|member|void *options;
