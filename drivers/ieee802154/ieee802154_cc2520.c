@@ -41,8 +41,6 @@ DECL|get_fifo|function|static inline uint32_t get_fifo(struct cc2520_context *cc
 DECL|get_mac|function|static inline uint8_t *get_mac(struct device *dev)
 DECL|power_on_and_setup|function|static int power_on_and_setup(struct device *dev)
 DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct cc2520_spi *spi, struct net_buf *buf, uint8_t len)
-DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct cc2520_spi *spi, struct net_buf *buf, uint8_t len)
-DECL|read_rxfifo_length|function|static inline uint8_t read_rxfifo_length(struct cc2520_spi *spi)
 DECL|read_rxfifo_length|function|static inline uint8_t read_rxfifo_length(struct cc2520_spi *spi)
 DECL|set_reset|function|static inline void set_reset(struct device *dev, uint32_t value)
 DECL|set_vreg_en|function|static inline void set_vreg_en(struct device *dev, uint32_t value)
