@@ -3,7 +3,6 @@ DECL|CC2520_FCS_LENGTH|macro|CC2520_FCS_LENGTH
 DECL|CC2520_TX_THRESHOLD|macro|CC2520_TX_THRESHOLD
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|SYS_LOG_NO_NEWLINE|macro|SYS_LOG_NO_NEWLINE
 DECL|_cc2520_print_errors|function|static inline void _cc2520_print_errors(struct cc2520_context *cc2520)
 DECL|_cc2520_print_errors|macro|_cc2520_print_errors
 DECL|_cc2520_print_exceptions|function|static inline void _cc2520_print_exceptions(struct cc2520_context *cc2520)
