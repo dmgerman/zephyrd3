@@ -1,3 +1,0 @@
-DECL|UIPLIB_H_|macro|UIPLIB_H_
-DECL|uiplib_ipaddrconv|macro|uiplib_ipaddrconv
-DECL|uiplib_ipaddrconv|macro|uiplib_ipaddrconv

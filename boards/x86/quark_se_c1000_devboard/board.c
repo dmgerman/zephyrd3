@@ -1,2 +1,2 @@
-DECL|cc2520_configure_gpios|function|struct device **cc2520_configure_gpios(void)
-DECL|cc2520_gpio_config|variable|cc2520_gpio_config
+DECL|cc2520_configure_gpios|function|struct cc2520_gpio_configuration *cc2520_configure_gpios(void)
+DECL|cc2520_gpios|variable|cc2520_gpios

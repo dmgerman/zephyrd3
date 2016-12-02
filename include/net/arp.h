@@ -6,10 +6,10 @@ DECL|__ARP_H|macro|__ARP_H
 DECL|__packed|variable|__packed
 DECL|dst_hwaddr|member|struct net_eth_addr dst_hwaddr; /* THA */
 DECL|dst_ipaddr|member|struct in_addr dst_ipaddr; /* TPA */
-DECL|eth_hdr|member|struct net_eth_hdr eth_hdr;
 DECL|hwlen|member|uint8_t hwlen; /* HLEN */
 DECL|hwtype|member|uint16_t hwtype; /* HTYPE */
 DECL|net_arp_hdr|struct|struct net_arp_hdr {
+DECL|net_arp_init|macro|net_arp_init
 DECL|opcode|member|uint16_t opcode;
 DECL|protocol|member|uint16_t protocol; /* PTYPE */
 DECL|protolen|member|uint8_t protolen; /* PLEN */

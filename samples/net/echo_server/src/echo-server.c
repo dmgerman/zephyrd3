@@ -1,33 +1,30 @@
-DECL|MCAST_IPADDR|macro|MCAST_IPADDR
-DECL|MCAST_IPADDR|macro|MCAST_IPADDR
-DECL|MY_IPADDR|macro|MY_IPADDR
-DECL|MY_IPADDR|macro|MY_IPADDR
+DECL|MAX_DBG_PRINT|macro|MAX_DBG_PRINT
+DECL|MCAST_IP4ADDR|macro|MCAST_IP4ADDR
+DECL|MCAST_IP6ADDR|macro|MCAST_IP6ADDR
+DECL|MY_IP4ADDR|macro|MY_IP4ADDR
+DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|MY_PORT|macro|MY_PORT
 DECL|MY_PREFIX_LEN|macro|MY_PREFIX_LEN
-DECL|PRINT|macro|PRINT
-DECL|PRINT|macro|PRINT
+DECL|NET_BIND_ANY_ADDR|macro|NET_BIND_ANY_ADDR
+DECL|NET_DEBUG|macro|NET_DEBUG
 DECL|STACKSIZE|macro|STACKSIZE
-DECL|UIP_DRIPADDR0|macro|UIP_DRIPADDR0
-DECL|UIP_DRIPADDR1|macro|UIP_DRIPADDR1
-DECL|UIP_DRIPADDR2|macro|UIP_DRIPADDR2
-DECL|UIP_DRIPADDR3|macro|UIP_DRIPADDR3
-DECL|UIP_IPADDR0|macro|UIP_IPADDR0
-DECL|UIP_IPADDR1|macro|UIP_IPADDR1
-DECL|UIP_IPADDR2|macro|UIP_IPADDR2
-DECL|UIP_IPADDR3|macro|UIP_IPADDR3
-DECL|WAIT_TICKS|macro|WAIT_TICKS
-DECL|WAIT_TICKS|macro|WAIT_TICKS
-DECL|WAIT_TIME|macro|WAIT_TIME
-DECL|fiberStack|variable|fiberStack
-DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv, struct net_context **tcp_recv, struct net_context **mcast_recv)
-DECL|in6addr_my|variable|in6addr_my
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|build_reply_buf|function|static struct net_buf *build_reply_buf(const char *name, struct net_context *context, struct net_buf *buf)
+DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
+DECL|in4addr_my|variable|in4addr_my
+DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|in6addr_my|variable|in6addr_my
 DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)
-DECL|prepare_reply|function|static inline struct net_buf *prepare_reply(const char *name, const char *type, struct net_buf *buf, int proto)
-DECL|receive_and_reply|function|static inline void receive_and_reply(const char *name, struct net_context *udp_recv, struct net_context *tcp_recv, struct net_context *mcast_recv)
+DECL|pkt_sent|function|static inline void pkt_sent(struct net_context *context, int status, void *token, void *user_data)
+DECL|quit_lock|variable|quit_lock
+DECL|quit|function|static inline void quit(void)
 DECL|receive|function|void receive(void)
-DECL|reverse|function|static inline void reverse(unsigned char *buf, int len)
-DECL|uip_draddr|variable|uip_draddr
-DECL|uip_hostaddr|variable|uip_hostaddr
-DECL|uip_netmask|variable|uip_netmask
+DECL|set_dst_addr|function|static inline void set_dst_addr(sa_family_t family,struct net_buf *buf, struct sockaddr *dst_addr)
+DECL|setup_tcp_accept|function|static void setup_tcp_accept(struct net_context *tcp_recv4, struct net_context *tcp_recv6)
+DECL|setup_udp_recv|function|static void setup_udp_recv(struct net_context *udp_recv4, struct net_context *udp_recv6)
+DECL|tcp_accepted|function|static void tcp_accepted(struct net_context *context, struct sockaddr *addr, socklen_t addrlen, int error, void *user_data)
+DECL|tcp_received|function|static void tcp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
+DECL|thread_stack|variable|thread_stack
+DECL|udp_received|function|static void udp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
