@@ -1,10 +1,8 @@
-DECL|__get_next_ready_thread|function|static struct k_thread *__get_next_ready_thread(void)
 DECL|__must_switch_threads|function|int __must_switch_threads(void)
 DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct k_thread *thread)
 DECL|_clear_ready_q_prio_bit|function|static void _clear_ready_q_prio_bit(int prio)
 DECL|_dump_ready_q|function|void _dump_ready_q(void)
-DECL|_get_next_ready_thread|function|struct k_thread *_get_next_ready_thread(void)
-DECL|_is_next_thread_current|function|int _is_next_thread_current(void)
+DECL|_get_ready_q_head|function|static struct k_thread *_get_ready_q_head(void)
 DECL|_is_wait_q_insert_point|function|static int _is_wait_q_insert_point(sys_dnode_t *node, void *insert_prio)
 DECL|_kernel|variable|_kernel
 DECL|_move_thread_to_end_of_prio_q|function|void _move_thread_to_end_of_prio_q(struct k_thread *thread)

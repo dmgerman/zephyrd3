@@ -1,6 +1,7 @@
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
 DECL|_get_highest_ready_prio|function|static inline int _get_highest_ready_prio(void)
 DECL|_get_new_prio_with_ceiling|function|static inline int _get_new_prio_with_ceiling(int prio)
+DECL|_get_next_ready_thread|function|static ALWAYS_INLINE struct k_thread *_get_next_ready_thread(void)
 DECL|_get_ready_q_prio_bit|function|static inline int _get_ready_q_prio_bit(int prio)
 DECL|_get_ready_q_prio_bmap_index|function|static inline int _get_ready_q_prio_bmap_index(int prio)
 DECL|_get_ready_q_q_index|function|static inline int _get_ready_q_q_index(int prio)

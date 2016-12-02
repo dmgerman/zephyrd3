@@ -11,6 +11,7 @@ DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
 DECL|_kernel_t|typedef|typedef struct _kernel _kernel_t;
 DECL|_kernel|struct|struct _kernel {
+DECL|_ready_q_t|typedef|typedef struct _ready_q _ready_q_t;
 DECL|_ready_q|macro|_ready_q
 DECL|_ready_q|struct|struct _ready_q {
 DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
