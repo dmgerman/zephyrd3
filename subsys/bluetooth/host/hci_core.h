@@ -39,7 +39,6 @@ DECL|manufacturer|member|uint16_t manufacturer;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
 DECL|ncmd_sem|member|struct k_sem ncmd_sem;
-DECL|ncmd|member|uint8_t ncmd;
 DECL|pkts|member|struct k_sem pkts;
 DECL|pkts|member|struct k_sem pkts;
 DECL|random_addr|member|bt_addr_le_t random_addr;
