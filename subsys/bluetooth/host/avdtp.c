@@ -12,5 +12,7 @@ DECL|bt_avdtp_l2cap_disconnected|function|void bt_avdtp_l2cap_disconnected(struc
 DECL|bt_avdtp_l2cap_encrypt_changed|function|void bt_avdtp_l2cap_encrypt_changed(struct bt_l2cap_chan *chan, uint8_t status)
 DECL|bt_avdtp_l2cap_recv|function|void bt_avdtp_l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_avdtp_pool|variable|bt_avdtp_pool
+DECL|bt_avdtp_register_sep|function|int bt_avdtp_register_sep(uint8_t media_type, uint8_t role, struct bt_avdtp_seid_lsep *lsep)
 DECL|bt_avdtp_register|function|int bt_avdtp_register(struct bt_avdtp_event_cb *cb)
 DECL|event_cb|variable|event_cb
+DECL|lseps|variable|lseps
