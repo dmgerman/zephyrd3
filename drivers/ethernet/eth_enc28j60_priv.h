@@ -26,8 +26,6 @@ DECL|ENC28J60_BIT_MICMD_MIIRD|macro|ENC28J60_BIT_MICMD_MIIRD
 DECL|ENC28J60_BIT_MISTAT_BUSY|macro|ENC28J60_BIT_MISTAT_BUSY
 DECL|ENC28J60_BIT_PHCON1_PDPXMD|macro|ENC28J60_BIT_PHCON1_PDPXMD
 DECL|ENC28J60_BIT_PHCON2_HDLDIS|macro|ENC28J60_BIT_PHCON2_HDLDIS
-DECL|ENC28J60_FIBER_PRIORITY|macro|ENC28J60_FIBER_PRIORITY
-DECL|ENC28J60_FIBER_STACK_SIZE|macro|ENC28J60_FIBER_STACK_SIZE
 DECL|ENC28J60_MAC_BBIPG_FD|macro|ENC28J60_MAC_BBIPG_FD
 DECL|ENC28J60_MAC_BBIPG_HD|macro|ENC28J60_MAC_BBIPG_HD
 DECL|ENC28J60_MAC_CONFIG|macro|ENC28J60_MAC_CONFIG
@@ -142,8 +140,11 @@ DECL|ENC28J60_SPI_SC|macro|ENC28J60_SPI_SC
 DECL|ENC28J60_SPI_WBM|macro|ENC28J60_SPI_WBM
 DECL|ENC28J60_SPI_WCR|macro|ENC28J60_SPI_WCR
 DECL|ENC28J60_SV_SIZE|macro|ENC28J60_SV_SIZE
+DECL|ENC28J60_THREAD_PRIORITY|macro|ENC28J60_THREAD_PRIORITY
+DECL|ENC28J60_THREAD_STACK_SIZE|macro|ENC28J60_THREAD_STACK_SIZE
 DECL|ENC28J60_TXEND|macro|ENC28J60_TXEND
 DECL|ENC28J60_TXSTART|macro|ENC28J60_TXSTART
+DECL|MAX_BUFFER_LENGTH|macro|MAX_BUFFER_LENGTH
 DECL|MICROCHIP_OUI_B0|macro|MICROCHIP_OUI_B0
 DECL|MICROCHIP_OUI_B1|macro|MICROCHIP_OUI_B1
 DECL|MICROCHIP_OUI_B2|macro|MICROCHIP_OUI_B2
@@ -152,19 +153,20 @@ DECL|TSV_SIZE|macro|TSV_SIZE
 DECL|_ENC28J60_|macro|_ENC28J60_
 DECL|eth_enc28j60_config|struct|struct eth_enc28j60_config {
 DECL|eth_enc28j60_runtime|struct|struct eth_enc28j60_runtime {
-DECL|fiber_stack|member|char __stack fiber_stack[ENC28J60_FIBER_STACK_SIZE];
 DECL|full_duplex|member|uint8_t full_duplex;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_pin|member|uint8_t gpio_pin;
 DECL|gpio_port|member|const char *gpio_port;
 DECL|gpio|member|struct device *gpio;
-DECL|int_sem|member|struct nano_sem int_sem;
-DECL|receive_callback|member|void (*receive_callback)(uint8_t *buffer, uint16_t len);
+DECL|iface|member|struct net_if *iface;
+DECL|int_sem|member|struct k_sem int_sem;
+DECL|mem_buf|member|uint8_t mem_buf[MAX_BUFFER_LENGTH + 1];
 DECL|rx_rsv|member|uint8_t rx_rsv[RSV_SIZE];
 DECL|spi_freq|member|uint32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
-DECL|spi_sem|member|struct nano_sem spi_sem;
+DECL|spi_sem|member|struct k_sem spi_sem;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
-DECL|tx_sem|member|struct nano_sem tx_sem;
+DECL|thread_stack|member|char __stack thread_stack[ENC28J60_THREAD_STACK_SIZE];
+DECL|tx_rx_sem|member|struct k_sem tx_rx_sem;
 DECL|tx_tsv|member|uint8_t tx_tsv[TSV_SIZE];

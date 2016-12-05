@@ -1,6 +1,14 @@
+DECL|DST_IP4ADDR|macro|DST_IP4ADDR
+DECL|DST_IP6ADDR|macro|DST_IP6ADDR
 DECL|HW_CYCLES_TO_SEC|macro|HW_CYCLES_TO_SEC
 DECL|HW_CYCLES_TO_USEC|macro|HW_CYCLES_TO_USEC
+DECL|IP6PREFIX_STR2|macro|IP6PREFIX_STR2
+DECL|IP6PREFIX_STR|macro|IP6PREFIX_STR
 DECL|MSEC_TO_HW_CYCLES|macro|MSEC_TO_HW_CYCLES
+DECL|MY_IP4ADDR|macro|MY_IP4ADDR
+DECL|MY_IP6ADDR|macro|MY_IP6ADDR
+DECL|MY_PREFIX_LEN_STR|macro|MY_PREFIX_LEN_STR
+DECL|MY_PREFIX_LEN|macro|MY_PREFIX_LEN
 DECL|PACKET_SIZE_MAX|macro|PACKET_SIZE_MAX
 DECL|SEC_TO_HW_CYCLES|macro|SEC_TO_HW_CYCLES
 DECL|USEC_TO_HW_CYCLES|macro|USEC_TO_HW_CYCLES
@@ -19,9 +27,5 @@ DECL|total_len1|member|int32_t total_len1;
 DECL|total_len2|member|int32_t total_len2;
 DECL|tv_sec|member|uint32_t tv_sec;
 DECL|tv_usec|member|uint32_t tv_usec;
-DECL|z_htonl|macro|z_htonl
-DECL|z_ntohl|macro|z_ntohl
-DECL|zperf_server_hdr|struct|typedef struct zperf_server_hdr {
-DECL|zperf_server_hdr|typedef|} zperf_server_hdr;
-DECL|zperf_udp_datagram|struct|typedef struct zperf_udp_datagram {
-DECL|zperf_udp_datagram|typedef|} zperf_udp_datagram;
+DECL|zperf_server_hdr|struct|struct zperf_server_hdr {
+DECL|zperf_udp_datagram|struct|struct zperf_udp_datagram {

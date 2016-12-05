@@ -51,13 +51,14 @@ DECL|ZOAP_RESPONSE_CODE_PROXYING_NOT_SUPPORTED|enumerator|ZOAP_RESPONSE_CODE_PRO
 DECL|ZOAP_RESPONSE_CODE_REQUEST_TOO_LARGE|enumerator|ZOAP_RESPONSE_CODE_REQUEST_TOO_LARGE = zoap_make_response_code(4, 13),
 DECL|ZOAP_RESPONSE_CODE_SERVICE_UNAVAILABLE|enumerator|ZOAP_RESPONSE_CODE_SERVICE_UNAVAILABLE = zoap_make_response_code(5, 3),
 DECL|ZOAP_RESPONSE_CODE_UNAUTHORIZED|enumerator|ZOAP_RESPONSE_CODE_UNAUTHORIZED = zoap_make_response_code(4, 1),
+DECL|ZOAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT|enumerator|ZOAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT = zoap_make_response_code(4, 15),
 DECL|ZOAP_RESPONSE_CODE_VALID|enumerator|ZOAP_RESPONSE_CODE_VALID = zoap_make_response_code(2, 3),
 DECL|ZOAP_TYPE_ACK|enumerator|ZOAP_TYPE_ACK = 2,
 DECL|ZOAP_TYPE_CON|enumerator|ZOAP_TYPE_CON = 0,
 DECL|ZOAP_TYPE_NON_CON|enumerator|ZOAP_TYPE_NON_CON = 1,
 DECL|ZOAP_TYPE_RESET|enumerator|ZOAP_TYPE_RESET = 3
 DECL|__ZOAP_H__|macro|__ZOAP_H__
-DECL|addr|member|uip_ipaddr_t addr;
+DECL|addr|member|struct sockaddr addr;
 DECL|age|member|int age;
 DECL|age|member|int age;
 DECL|block_size|member|enum zoap_block_size block_size;
@@ -70,13 +71,12 @@ DECL|list|member|sys_snode_t list;
 DECL|notify|member|zoap_notify_t notify;
 DECL|observers|member|sys_slist_t observers;
 DECL|path|member|const char * const *path;
-DECL|port|member|uint16_t port;
 DECL|post|member|zoap_method_t get, post, put, del;
 DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
 DECL|request|member|struct zoap_packet request;
 DECL|start|member|uint8_t *start; /* Start of the payload */
-DECL|timeout|member|uint16_t timeout;
+DECL|timeout|member|int32_t timeout;
 DECL|tkl|member|uint8_t tkl;
 DECL|tkl|member|uint8_t tkl;
 DECL|token|member|uint8_t token[8];

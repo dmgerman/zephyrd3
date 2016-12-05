@@ -8,7 +8,7 @@ DECL|STATE_ONGOING|enumerator|STATE_ONGOING, /* 1st packet has been received, la
 DECL|__ZPERF_SESSION_H|macro|__ZPERF_SESSION_H
 DECL|counter|member|uint32_t counter;
 DECL|error|member|uint32_t error;
-DECL|ip|member|uip_ipaddr_t ip;
+DECL|ip|member|struct net_addr ip;
 DECL|jitter|member|int32_t jitter;
 DECL|last_time|member|uint32_t last_time;
 DECL|last_transit_time|member|int32_t last_transit_time;

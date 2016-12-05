@@ -27,11 +27,12 @@ DECL|delta_encode|function|static int delta_encode(int num, uint8_t *value, uint
 DECL|delta|member|int delta;
 DECL|get_block_option|function|static unsigned int get_block_option(struct zoap_packet *pkt, uint16_t code)
 DECL|get_observe_option|function|static int get_observe_option(const struct zoap_packet *pkt)
+DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
 DECL|is_request|function|static bool is_request(struct zoap_packet *pkt)
 DECL|match_response|function|static bool match_response(const struct zoap_packet *request, const struct zoap_packet *response)
 DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, uint8_t code)
 DECL|more|member|bool more;
-DECL|next_timeout|function|static uint16_t next_timeout(uint16_t previous)
+DECL|next_timeout|function|static int32_t next_timeout(int32_t previous)
 DECL|num|member|int num;
 DECL|option_context|struct|struct option_context {
 DECL|update_control_block1|function|static int update_control_block1(struct zoap_block_context *ctx, int block, int size)
@@ -47,7 +48,7 @@ DECL|zoap_add_size1_option|function|int zoap_add_size1_option(struct zoap_packet
 DECL|zoap_add_size2_option|function|int zoap_add_size2_option(struct zoap_packet *pkt, struct zoap_block_context *ctx)
 DECL|zoap_block_transfer_init|function|int zoap_block_transfer_init(struct zoap_block_context *ctx, enum zoap_block_size block_size, size_t total_size)
 DECL|zoap_find_options|function|int zoap_find_options(const struct zoap_packet *pkt, uint16_t code, struct zoap_option *options, uint16_t veclen)
-DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt,struct zoap_resource *resources, const uip_ipaddr_t *addr, uint16_t port)
+DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt,struct zoap_resource *resources, const struct sockaddr *from)
 DECL|zoap_header_get_code|function|uint8_t zoap_header_get_code(const struct zoap_packet *pkt)
 DECL|zoap_header_get_id|function|uint16_t zoap_header_get_id(const struct zoap_packet *pkt)
 DECL|zoap_header_get_token|function|const uint8_t *zoap_header_get_token(const struct zoap_packet *pkt, uint8_t *len)
@@ -59,9 +60,11 @@ DECL|zoap_header_set_token|function|int zoap_header_set_token(struct zoap_packet
 DECL|zoap_header_set_type|function|void zoap_header_set_type(struct zoap_packet *pkt, uint8_t type)
 DECL|zoap_header_set_version|function|void zoap_header_set_version(struct zoap_packet *pkt, uint8_t ver)
 DECL|zoap_next_block|function|size_t zoap_next_block(struct zoap_block_context *ctx)
-DECL|zoap_observer_init|function|void zoap_observer_init(struct zoap_observer *observer,const struct zoap_packet *request, const uip_ipaddr_t *addr, uint16_t port)
+DECL|zoap_next_token|function|uint8_t *zoap_next_token(void)
+DECL|zoap_observer_init|function|void zoap_observer_init(struct zoap_observer *observer,const struct zoap_packet *request, const struct sockaddr *addr)
 DECL|zoap_observer_next_unused|function|struct zoap_observer *zoap_observer_next_unused(struct zoap_observer *observers, size_t len)
 DECL|zoap_option_value_to_int|function|unsigned int zoap_option_value_to_int(const struct zoap_option *option)
+DECL|zoap_packet_get_buf|function|struct net_buf *zoap_packet_get_buf(struct zoap_packet *pkt)
 DECL|zoap_packet_get_payload|function|uint8_t *zoap_packet_get_payload(struct zoap_packet *pkt, uint16_t *len)
 DECL|zoap_packet_init|function|int zoap_packet_init(struct zoap_packet *pkt, struct net_buf *buf)
 DECL|zoap_packet_parse|function|int zoap_packet_parse(struct zoap_packet *pkt, struct net_buf *buf)
@@ -79,5 +82,5 @@ DECL|zoap_reply_init|function|void zoap_reply_init(struct zoap_reply *reply, con
 DECL|zoap_reply_next_unused|function|struct zoap_reply *zoap_reply_next_unused(struct zoap_reply *replies, size_t len)
 DECL|zoap_request_is_observe|function|bool zoap_request_is_observe(const struct zoap_packet *request)
 DECL|zoap_resource_notify|function|int zoap_resource_notify(struct zoap_resource *resource)
-DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const uip_ipaddr_t *addr, uint16_t port, struct zoap_reply *replies, size_t len)
+DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const struct sockaddr *from, struct zoap_reply *replies, size_t len)
 DECL|zoap_update_from_block|function|int zoap_update_from_block(struct zoap_packet *pkt, struct zoap_block_context *ctx)
