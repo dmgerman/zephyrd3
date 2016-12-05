@@ -39,10 +39,10 @@ DECL|device_pm_ops|struct|struct device_pm_ops {
 DECL|device_resume|function|static inline int __deprecated device_resume(struct device *device,int pm_policy)
 DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, uint32_t device_power_state)
 DECL|device_suspend|function|static inline int __deprecated device_suspend(struct device *device,int pm_policy)
-DECL|device_sync_call_complete|function|static inline void device_sync_call_complete(device_sync_call_t *sync)
-DECL|device_sync_call_init|function|static inline void device_sync_call_init(device_sync_call_t *sync)
-DECL|device_sync_call_t|typedef|} device_sync_call_t;
-DECL|device_sync_call_wait|function|static inline void device_sync_call_wait(device_sync_call_t *sync)
+DECL|device_sync_call_complete|function|device_sync_call_complete(device_sync_call_t *sync)
+DECL|device_sync_call_init|function|static inline void __deprecated device_sync_call_init(device_sync_call_t *sync)
+DECL|device_sync_call_t|typedef|} __deprecated device_sync_call_t;
+DECL|device_sync_call_wait|function|static inline void __deprecated device_sync_call_wait(device_sync_call_t *sync)
 DECL|device|struct|struct device {
 DECL|driver_api|member|const void *driver_api;
 DECL|driver_data|member|void *driver_data;
