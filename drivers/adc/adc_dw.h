@@ -72,6 +72,7 @@ DECL|calibration_value|member|uint8_t calibration_value;
 DECL|capture_mode|member|uint8_t capture_mode;
 DECL|clock_ratio|member|uint32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dummy_conversion|member|uint8_t dummy_conversion;
 DECL|entries|member|struct adc_seq_entry *entries;
 DECL|index|member|uint8_t index[BUFS_NUM];
@@ -86,4 +87,3 @@ DECL|seq_size|member|uint8_t seq_size;
 DECL|serial_dly|member|uint8_t serial_dly;
 DECL|ss_adc_data_to_mv|macro|ss_adc_data_to_mv
 DECL|state|member|uint8_t state;
-DECL|sync|member|device_sync_call_t sync;
