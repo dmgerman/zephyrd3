@@ -1,5 +1,6 @@
 DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|EXTI_LINES|macro|EXTI_LINES
+DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|__exti_cb|struct|struct __exti_cb {
 DECL|__stm32_exti_connect_irqs|function|static void __stm32_exti_connect_irqs(struct device *dev)
 DECL|__stm32_exti_isr_0|function|static inline void __stm32_exti_isr_0(void *arg)

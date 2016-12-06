@@ -25,6 +25,9 @@ DECL|intclear|member|volatile uint32_t intclear;
 DECL|intstatus|member|volatile uint32_t intstatus;
 DECL|irq_cb|member|uart_irq_callback_t irq_cb;
 DECL|state|member|volatile uint32_t state;
+DECL|uart_cc_as|member|const struct arm_clock_control_t uart_cc_as;
+DECL|uart_cc_dss|member|const struct arm_clock_control_t uart_cc_dss;
+DECL|uart_cc_ss|member|const struct arm_clock_control_t uart_cc_ss;
 DECL|uart_cmsdk_apb_dev_cfg_0|variable|uart_cmsdk_apb_dev_cfg_0
 DECL|uart_cmsdk_apb_dev_cfg_1|variable|uart_cmsdk_apb_dev_cfg_1
 DECL|uart_cmsdk_apb_dev_cfg_2|variable|uart_cmsdk_apb_dev_cfg_2
