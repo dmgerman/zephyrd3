@@ -12,4 +12,6 @@ DECL|items|member|uint8_t items;
 DECL|name|member|const char *name;
 DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|query_type|member|uint16_t query_type;
+DECL|rx_buf|member|struct net_buf *rx_buf;
+DECL|rx_sem|member|struct k_sem rx_sem;
 DECL|timeout|member|int32_t timeout;
