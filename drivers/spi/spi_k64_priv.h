@@ -88,6 +88,7 @@ DECL|clk_gate_reg|member|uint32_t clk_gate_reg; /* SPI module's clock gate regis
 DECL|config_func|member|spi_k64_config_t config_func; /* IRQ configuration function pointer */
 DECL|cont_pcs_sel|member|uint8_t cont_pcs_sel; /* continuous slave/PCS selection enable */
 DECL|device_power_state|member|uint32_t device_power_state;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem; /* sync call information */
 DECL|error|member|uint8_t error; /* error condition */
 DECL|frame_sz|member|uint8_t frame_sz; /* frame/word size, in bits */
 DECL|irq|member|uint32_t irq; /* SPI module IRQ number */
@@ -99,7 +100,6 @@ DECL|spi_k64_config_t|typedef|typedef void (*spi_k64_config_t)(void);
 DECL|spi_k64_config|struct|struct spi_k64_config {
 DECL|spi_k64_data|struct|struct spi_k64_data {
 DECL|spi_k64_delay_id|enum|enum spi_k64_delay_id {
-DECL|sync_info|member|device_sync_call_t sync_info; /* sync call information */
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
 DECL|tx_buf|member|const uint8_t *tx_buf;
 DECL|xfer_len|member|uint32_t xfer_len;

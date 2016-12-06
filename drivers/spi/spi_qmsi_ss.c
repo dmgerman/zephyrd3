@@ -3,6 +3,7 @@ DECL|config_to_bmode|function|static inline qm_ss_spi_bmode_t config_to_bmode(ui
 DECL|cs_pin|member|uint32_t cs_pin;
 DECL|cs_port|member|char *cs_port;
 DECL|device_power_state|member|uint32_t device_power_state;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dev|member|struct device *dev;
 DECL|frame_size_to_dfs|function|static inline uint8_t frame_size_to_dfs(qm_ss_spi_frame_size_t frame_size)
 DECL|gpio_cs_init|function|static struct device *gpio_cs_init(const struct ss_spi_qmsi_config *config)
@@ -36,5 +37,4 @@ DECL|ss_spi_qmsi_slave_select|function|static int ss_spi_qmsi_slave_select(struc
 DECL|ss_spi_qmsi_transceive|function|static int ss_spi_qmsi_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
 DECL|ss_spi_rx_isr|function|static void ss_spi_rx_isr(void *arg)
 DECL|ss_spi_tx_isr|function|static void ss_spi_tx_isr(void *arg)
-DECL|sync|member|device_sync_call_t sync;
 DECL|xfer|member|qm_ss_spi_async_transfer_t xfer;

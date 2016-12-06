@@ -43,6 +43,7 @@ DECL|cs_gpio_name|member|char *cs_gpio_name;
 DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
 DECL|device_power_state|member|uint32_t device_power_state;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|error|member|uint8_t error;
 DECL|irq|member|uint32_t irq;
 DECL|padding|member|uint8_t padding[3];
@@ -56,7 +57,6 @@ DECL|spi_intel_config|struct|struct spi_intel_config {
 DECL|spi_intel_data|struct|struct spi_intel_data {
 DECL|sscr0|member|uint32_t sscr0;
 DECL|sscr1|member|uint32_t sscr1;
-DECL|sync|member|device_sync_call_t sync;
 DECL|t_buf_len|member|uint32_t t_buf_len;
 DECL|trans_len|member|uint32_t trans_len;
 DECL|transmitted|member|uint32_t transmitted;

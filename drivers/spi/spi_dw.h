@@ -71,6 +71,7 @@ DECL|config_func|member|spi_dw_config_t config_func;
 DECL|cs_gpio_name|member|char *cs_gpio_name;
 DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dfs|member|uint32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|uint32_t error:1;
 DECL|fifo_diff|member|uint32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
@@ -82,6 +83,5 @@ DECL|slave|member|uint32_t slave:17; /* up 16 slaves */
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
-DECL|sync|member|device_sync_call_t sync;
 DECL|tx_buf_len|member|uint32_t tx_buf_len;
 DECL|tx_buf|member|const uint8_t *tx_buf;
