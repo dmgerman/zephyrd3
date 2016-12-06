@@ -10,8 +10,8 @@ DECL|DNS_RESOLVER_MIN_BUF|macro|DNS_RESOLVER_MIN_BUF
 DECL|DNS_RESOLVER_QUERIES|macro|DNS_RESOLVER_QUERIES
 DECL|cb_recv|function|void cb_recv(struct net_context *context, struct net_buf *buf, int status,void *user_data)
 DECL|dns_init|function|int dns_init(void)
-DECL|dns_read|function|int dns_read(struct net_context *net_ctx, struct net_buf *dns_data, int32_t timeout, uint16_t dns_id, enum dns_query_type type, uint8_t *addresses, uint8_t *items, uint8_t elements, uint8_t *cname, uint16_t *cname_len)
+DECL|dns_read|function|int dns_read(struct dns_context *ctx, struct net_buf *dns_data, uint16_t dns_id, uint8_t *cname, uint16_t *cname_len)
 DECL|dns_recv|function|int dns_recv(struct net_context *net_ctx, struct net_buf **buf, int32_t timeout)
 DECL|dns_resolve|function|int dns_resolve(struct dns_context *ctx)
-DECL|dns_write|function|int dns_write(struct net_context *net_ctx, struct net_buf *dns_data, int32_t timeout, uint16_t dns_id, enum dns_query_type type, struct net_buf *dns_qname, struct sockaddr *dns_server)
+DECL|dns_write|function|int dns_write(struct dns_context *ctx, struct net_buf *dns_data, uint16_t dns_id, struct net_buf *dns_qname)
 DECL|nbuf_copy|function|int nbuf_copy(struct net_buf *dst, struct net_buf *src, int offset, int len)
