@@ -17,6 +17,7 @@ DECL|dev_config_1|variable|dev_config_1
 DECL|dev_config|member|union dev_config dev_config;
 DECL|dev_data_0|variable|dev_data_0
 DECL|dev_data_1|variable|dev_data_1
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|i2c_sam3_dev_config|struct|struct i2c_sam3_dev_config {
 DECL|i2c_sam3_dev_data|struct|struct i2c_sam3_dev_data {
 DECL|i2c_sam3_init|function|static int i2c_sam3_init(struct device *dev)
@@ -29,7 +30,6 @@ DECL|port|member|volatile struct __twi *port;
 DECL|sr_bits_set_wait|function|static inline void sr_bits_set_wait(struct device *dev, uint32_t bits)
 DECL|state|member|volatile uint32_t state;
 DECL|status_reg_clear|function|static inline void status_reg_clear(struct device *dev)
-DECL|sync|member|device_sync_call_t sync;
 DECL|transfer_setup|function|static inline void transfer_setup(struct device *dev, uint16_t slave_address)
 DECL|xfr_buf|member|uint8_t *xfr_buf;
 DECL|xfr_flags|member|uint32_t xfr_flags;

@@ -6,6 +6,7 @@ DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
 DECL|default_cfg|member|union dev_config default_cfg;
 DECL|device_power_state|member|uint32_t device_power_state;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|driver_data_0|variable|driver_data_0
 DECL|driver_data_1|variable|driver_data_1
 DECL|i2c_ctx|member|qm_i2c_context_t i2c_ctx;
@@ -22,6 +23,5 @@ DECL|i2c_resume_device_from_suspend|function|static int i2c_resume_device_from_s
 DECL|i2c_suspend_device|function|static int i2c_suspend_device(struct device *dev)
 DECL|instance|member|qm_i2c_t instance; /* Controller instance. */
 DECL|sem|member|struct k_sem sem;
-DECL|sync|member|device_sync_call_t sync;
 DECL|transfer_complete|function|static void transfer_complete(void *data, int rc, qm_i2c_status_t status, uint32_t len)
 DECL|transfer_status|member|int transfer_status;

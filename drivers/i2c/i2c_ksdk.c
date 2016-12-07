@@ -5,6 +5,7 @@ DECL|base|member|I2C_Type *base;
 DECL|callback_status|member|status_t callback_status;
 DECL|clock_source|member|clock_name_t clock_source;
 DECL|default_cfg|member|union dev_config default_cfg;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|handle|member|i2c_master_handle_t handle;
 DECL|i2c_ksdk_config_0|variable|i2c_ksdk_config_0
 DECL|i2c_ksdk_config_1|variable|i2c_ksdk_config_1
@@ -22,4 +23,3 @@ DECL|i2c_ksdk_isr|function|static void i2c_ksdk_isr(void *arg)
 DECL|i2c_ksdk_master_transfer_callback|function|static void i2c_ksdk_master_transfer_callback(I2C_Type *base,i2c_master_handle_t *handle, status_t status, void *userData)
 DECL|i2c_ksdk_transfer|function|static int i2c_ksdk_transfer(struct device *dev, struct i2c_msg *msgs,uint8_t num_msgs, uint16_t addr)
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
-DECL|sync|member|device_sync_call_t sync;

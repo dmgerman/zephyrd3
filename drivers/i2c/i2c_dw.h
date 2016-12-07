@@ -28,6 +28,7 @@ DECL|__DRIVERS_I2C_DW_H|macro|__DRIVERS_I2C_DW_H
 DECL|app_config|member|union dev_config app_config;
 DECL|base_address|member|uint32_t base_address;
 DECL|config_func|member|i2c_isr_cb_t config_func;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|hcnt|member|uint16_t hcnt;
 DECL|i2c_dw_dev_config|struct|struct i2c_dw_dev_config {
 DECL|i2c_dw_rom_config|struct|struct i2c_dw_rom_config {
@@ -41,7 +42,6 @@ DECL|rx_pending|member|uint32_t rx_pending;
 DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
 DECL|state|member|volatile uint8_t state; /* last direction of transfer */
 DECL|support_hs_mode|member|bool support_hs_mode;
-DECL|sync|member|device_sync_call_t sync;
 DECL|xfr_buf|member|uint8_t *xfr_buf;
 DECL|xfr_flags|member|uint8_t xfr_flags;
 DECL|xfr_len|member|uint32_t xfr_len;
