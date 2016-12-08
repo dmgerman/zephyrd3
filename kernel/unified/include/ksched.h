@@ -5,6 +5,7 @@ DECL|_get_next_ready_thread|function|static ALWAYS_INLINE struct k_thread *_get_
 DECL|_get_ready_q_prio_bit|function|static inline int _get_ready_q_prio_bit(int prio)
 DECL|_get_ready_q_prio_bmap_index|function|static inline int _get_ready_q_prio_bmap_index(int prio)
 DECL|_get_ready_q_q_index|function|static inline int _get_ready_q_q_index(int prio)
+DECL|_get_thread_to_unpend|function|static inline struct k_thread *_get_thread_to_unpend(_wait_q_t *wait_q)
 DECL|_has_thread_started|function|static inline int _has_thread_started(struct k_thread *thread)
 DECL|_is_coop|function|static inline int _is_coop(struct k_thread *thread)
 DECL|_is_current_execution_context_preemptible|function|static inline int _is_current_execution_context_preemptible(void)
@@ -24,6 +25,7 @@ DECL|_is_thread_pending|function|static inline int _is_thread_pending(struct k_t
 DECL|_is_thread_prevented_from_running|function|static inline int _is_thread_prevented_from_running(struct k_thread *thread)
 DECL|_is_thread_ready|function|static inline int _is_thread_ready(struct k_thread *thread)
 DECL|_is_thread_timeout_active|function|static inline int _is_thread_timeout_active(struct k_thread *thread)
+DECL|_is_thread_timeout_expired|function|static ALWAYS_INLINE int _is_thread_timeout_expired(struct k_thread *thread)
 DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(int prio)
 DECL|_ksched__h_|macro|_ksched__h_
 DECL|_mark_thread_as_dead|function|static inline void _mark_thread_as_dead(struct k_thread *thread)
