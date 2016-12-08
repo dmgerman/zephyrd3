@@ -23,7 +23,7 @@ DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_d
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_buf **buf)
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_buf **buf)
-DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, uint8_t flags, void *options, size_t optlen, const struct sockaddr *remote, struct net_buf **send_buf)
+DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, uint8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_buf **send_buf)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
 DECL|net_tcp_send_buf|function|int net_tcp_send_buf(struct net_buf *buf)
 DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp *tcp, uint8_t *options,uint8_t *optionlen)
