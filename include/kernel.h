@@ -145,6 +145,7 @@ DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
+DECL|k_timer_remaining_get|function|static inline int32_t k_timer_remaining_get(struct k_timer *timer)
 DECL|k_timer_stop_t|typedef|typedef void (*k_timer_stop_t)(struct k_timer *timer);
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *work);
