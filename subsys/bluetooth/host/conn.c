@@ -10,6 +10,7 @@ DECL|background_scan_init|function|static void background_scan_init(void)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
+DECL|bt_conn_addr_le_cmp|function|int bt_conn_addr_le_cmp(const struct bt_conn *conn, const bt_addr_le_t *peer)
 DECL|bt_conn_auth_cancel|function|int bt_conn_auth_cancel(struct bt_conn *conn)
 DECL|bt_conn_auth_cb_register|function|int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb)
 DECL|bt_conn_auth_pairing_confirm|function|int bt_conn_auth_pairing_confirm(struct bt_conn *conn)

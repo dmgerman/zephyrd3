@@ -18,8 +18,6 @@ DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
 DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
 DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
 DECL|br|member|struct bt_dev_br br;
-DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
-DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
 DECL|bt_dev_br|struct|struct bt_dev_br {
 DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
