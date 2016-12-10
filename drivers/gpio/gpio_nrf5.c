@@ -7,6 +7,15 @@ DECL|DIRSET|member|__IO uint32_t DIRSET;
 DECL|DIR|member|__IO uint32_t DIR;
 DECL|EVENTS_IN|member|__IO uint32_t EVENTS_IN[8];
 DECL|EVENTS_PORT|member|__IO uint32_t EVENTS_PORT;
+DECL|GPIOTE_CFG_EVT|macro|GPIOTE_CFG_EVT
+DECL|GPIOTE_CFG_PIN_GET|macro|GPIOTE_CFG_PIN_GET
+DECL|GPIOTE_CFG_PIN|macro|GPIOTE_CFG_PIN
+DECL|GPIOTE_CFG_POL_H2L|macro|GPIOTE_CFG_POL_H2L
+DECL|GPIOTE_CFG_POL_L2H|macro|GPIOTE_CFG_POL_L2H
+DECL|GPIOTE_CFG_POL_TOGG|macro|GPIOTE_CFG_POL_TOGG
+DECL|GPIOTE_CFG_TASK|macro|GPIOTE_CFG_TASK
+DECL|GPIOTE_CHAN_COUNT|macro|GPIOTE_CHAN_COUNT
+DECL|GPIOTE_CHAN_COUNT|macro|GPIOTE_CHAN_COUNT
 DECL|GPIOTE_STRUCT|macro|GPIOTE_STRUCT
 DECL|GPIO_DIR_INPUT|macro|GPIO_DIR_INPUT
 DECL|GPIO_DIR_OUTPUT|macro|GPIO_DIR_OUTPUT
@@ -47,6 +56,7 @@ DECL|TASKS_OUT|member|__O uint32_t TASKS_OUT[8];
 DECL|TASKS_SET|member|__O uint32_t TASKS_SET[8];
 DECL|_gpiote|struct|struct _gpiote {
 DECL|_gpio|struct|struct _gpio {
+DECL|callbacks|member|sys_slist_t callbacks;
 DECL|gpio_base_addr|member|uint32_t gpio_base_addr;
 DECL|gpio_data_P0|variable|gpio_data_P0
 DECL|gpio_nrf5_P0_cfg|variable|gpio_nrf5_P0_cfg
@@ -54,11 +64,15 @@ DECL|gpio_nrf5_P0_init|function|static int gpio_nrf5_P0_init(struct device *dev)
 DECL|gpio_nrf5_config|function|static int gpio_nrf5_config(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|gpio_nrf5_config|struct|struct gpio_nrf5_config {
 DECL|gpio_nrf5_data|struct|struct gpio_nrf5_data {
+DECL|gpio_nrf5_disable_callback|function|static int gpio_nrf5_disable_callback(struct device *dev, int access_op, uint32_t pin)
 DECL|gpio_nrf5_drv_api_funcs|variable|gpio_nrf5_drv_api_funcs
-DECL|gpio_nrf5_port_isr|function|static void gpio_nrf5_port_isr(void *dev)
+DECL|gpio_nrf5_enable_callback|function|static int gpio_nrf5_enable_callback(struct device *dev, int access_op, uint32_t pin)
+DECL|gpio_nrf5_manage_callback|function|static int gpio_nrf5_manage_callback(struct device *dev, struct gpio_callback *callback, bool set)
+DECL|gpio_nrf5_port_isr|function|static void gpio_nrf5_port_isr(void *arg)
 DECL|gpio_nrf5_read|function|static int gpio_nrf5_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
 DECL|gpio_nrf5_write|function|static int gpio_nrf5_write(struct device *dev, int access_op, uint32_t pin, uint32_t value)
 DECL|gpiote_base_addr|member|uint32_t gpiote_base_addr;
+DECL|gpiote_chan_mask|member|uint32_t gpiote_chan_mask;
+DECL|gpiote_find_channel|function|static int gpiote_find_channel(struct device *dev, uint32_t pin)
 DECL|pin_callback_enables|member|uint32_t pin_callback_enables;
 DECL|port_base_addr|member|uint32_t port_base_addr;
-DECL|port_callback_enable|member|uint8_t port_callback_enable;
