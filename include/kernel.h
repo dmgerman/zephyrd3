@@ -172,7 +172,7 @@ DECL|new|function|inline void *operator new(size_t size, void *ptr)
 DECL|new|function|inline void *operator new[](size_t size)
 DECL|new|function|inline void *operator new[](size_t size, void *ptr)
 DECL|next|member|uint32_t *base, *next, *top;
-DECL|node|member|sys_dlist_t node;
+DECL|node|member|sys_dnode_t node;
 DECL|nr_of_block_sets|member|uint32_t nr_of_block_sets;
 DECL|nr_of_entries|member|uint32_t nr_of_entries; /* nr of quad block structures in the array */
 DECL|nr_of_maxblocks|member|uint32_t nr_of_maxblocks;
