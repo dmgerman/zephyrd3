@@ -40,5 +40,6 @@ DECL|__unused|macro|__unused
 DECL|__used|macro|__used
 DECL|__weak|macro|__weak
 DECL|likely|macro|likely
+DECL|popcount|macro|popcount
 DECL|subsection|variable|subsection
 DECL|unlikely|macro|unlikely
