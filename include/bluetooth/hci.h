@@ -2,11 +2,17 @@ DECL|BT_ACL_CONT|macro|BT_ACL_CONT
 DECL|BT_ACL_START_NO_FLUSH|macro|BT_ACL_START_NO_FLUSH
 DECL|BT_ACL_START|macro|BT_ACL_START
 DECL|BT_ADDR_ANY|macro|BT_ADDR_ANY
+DECL|BT_ADDR_IS_NRPA|macro|BT_ADDR_IS_NRPA
+DECL|BT_ADDR_IS_RPA|macro|BT_ADDR_IS_RPA
+DECL|BT_ADDR_IS_STATIC|macro|BT_ADDR_IS_STATIC
 DECL|BT_ADDR_LE_ANY|macro|BT_ADDR_LE_ANY
 DECL|BT_ADDR_LE_PUBLIC_ID|macro|BT_ADDR_LE_PUBLIC_ID
 DECL|BT_ADDR_LE_PUBLIC|macro|BT_ADDR_LE_PUBLIC
 DECL|BT_ADDR_LE_RANDOM_ID|macro|BT_ADDR_LE_RANDOM_ID
 DECL|BT_ADDR_LE_RANDOM|macro|BT_ADDR_LE_RANDOM
+DECL|BT_ADDR_SET_NRPA|macro|BT_ADDR_SET_NRPA
+DECL|BT_ADDR_SET_RPA|macro|BT_ADDR_SET_RPA
+DECL|BT_ADDR_SET_STATIC|macro|BT_ADDR_SET_STATIC
 DECL|BT_BREDR_SCAN_DISABLED|macro|BT_BREDR_SCAN_DISABLED
 DECL|BT_BREDR_SCAN_INQUIRY|macro|BT_BREDR_SCAN_INQUIRY
 DECL|BT_BREDR_SCAN_PAGE|macro|BT_BREDR_SCAN_PAGE
@@ -469,6 +475,8 @@ DECL|bt_addr_cmp|function|static inline int bt_addr_cmp(const bt_addr_t *a, cons
 DECL|bt_addr_copy|function|static inline void bt_addr_copy(bt_addr_t *dst, const bt_addr_t *src)
 DECL|bt_addr_le_cmp|function|static inline int bt_addr_le_cmp(const bt_addr_le_t *a, const bt_addr_le_t *b)
 DECL|bt_addr_le_copy|function|static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
+DECL|bt_addr_le_is_identity|function|static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
+DECL|bt_addr_le_is_rpa|function|static inline bool bt_addr_le_is_rpa(const bt_addr_le_t *addr)
 DECL|bt_addr_le_t|typedef|} bt_addr_le_t;
 DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
