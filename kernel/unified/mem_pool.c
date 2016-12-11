@@ -4,7 +4,7 @@ DECL|_QUAD_BLOCK_ALLOCATED|macro|_QUAD_BLOCK_ALLOCATED
 DECL|_QUAD_BLOCK_AVAILABLE|macro|_QUAD_BLOCK_AVAILABLE
 DECL|_trace_list_k_mem_pool|variable|_trace_list_k_mem_pool
 DECL|block_waiters_check|function|static void block_waiters_check(struct k_mem_pool *pool)
-DECL|compute_block_set_index|function|static int compute_block_set_index(struct k_mem_pool *pool, int data_size)
+DECL|compute_block_set_index|function|static int compute_block_set_index(struct k_mem_pool *pool, size_t data_size)
 DECL|defrag|function|static void defrag(struct k_mem_pool *pool, int start_block_set_index, int last_block_set_index)
 DECL|free_existing_block|function|static void free_existing_block(char *ptr, struct k_mem_pool *pool, int index)
 DECL|get_block_recursive|function|static char *get_block_recursive(struct k_mem_pool *pool, int index, int start_index)
