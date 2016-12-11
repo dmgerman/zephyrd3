@@ -9,4 +9,4 @@ DECL|shell_cmd_function_t|typedef|typedef int (*shell_cmd_function_t)(int argc, 
 DECL|shell_cmd|struct|struct shell_cmd {
 DECL|shell_module|struct|struct shell_module {
 DECL|shell_prompt_function_t|typedef|typedef const char *(*shell_prompt_function_t)(void);
-DECL|shell_run|function|static inline int shell_run(struct device *dev) { return 0; }
+DECL|shell_run|function|static inline int shell_run(struct device *dev)
