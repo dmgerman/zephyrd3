@@ -1,0 +1,2 @@
+DECL|__NET_STATS_H__|macro|__NET_STATS_H__
+DECL|net_print_statistics|macro|net_print_statistics
