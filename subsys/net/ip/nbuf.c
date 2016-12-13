@@ -65,6 +65,7 @@ DECL|net_nbuf_get_tx|function|struct net_buf *net_nbuf_get_tx(struct net_context
 DECL|net_nbuf_init|function|void net_nbuf_init(void)
 DECL|net_nbuf_insert|function|bool net_nbuf_insert(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t len, uint8_t *data)
 DECL|net_nbuf_is_compact|function|bool net_nbuf_is_compact(struct net_buf *buf)
+DECL|net_nbuf_linear_copy|function|int net_nbuf_linear_copy(struct net_buf *dst, struct net_buf *src, uint16_t offset, uint16_t len)
 DECL|net_nbuf_print_frags|function|void net_nbuf_print_frags(struct net_buf *buf)
 DECL|net_nbuf_print|function|void net_nbuf_print(void)
 DECL|net_nbuf_pull|function|struct net_buf *net_nbuf_pull(struct net_buf *buf, size_t amount)
