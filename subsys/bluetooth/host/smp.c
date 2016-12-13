@@ -2,6 +2,9 @@ DECL|BR_RECV_KEYS_SC|macro|BR_RECV_KEYS_SC
 DECL|BR_SEND_KEYS_SC|macro|BR_SEND_KEYS_SC
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|BT_SMP_AUTH_DEFAULT|macro|BT_SMP_AUTH_DEFAULT
+DECL|BT_SMP_AUTH_DEFAULT|macro|BT_SMP_AUTH_DEFAULT
+DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK|macro|BT_SMP_AUTH_MASK
 DECL|ID_DIST|macro|ID_DIST
@@ -24,6 +27,7 @@ DECL|SMP_FLAG_BOND|enumerator|SMP_FLAG_BOND, /* if bonding */
 DECL|SMP_FLAG_BR_CONNECTED|enumerator|SMP_FLAG_BR_CONNECTED, /* if BR/EDR channel is connected */
 DECL|SMP_FLAG_BR_PAIR|enumerator|SMP_FLAG_BR_PAIR, /* if should start BR/EDR pairing */
 DECL|SMP_FLAG_CFM_DELAYED|enumerator|SMP_FLAG_CFM_DELAYED, /* if confirm should be send when TK is valid */
+DECL|SMP_FLAG_CT2|enumerator|SMP_FLAG_CT2, /* if should use H7 for keys derivation */
 DECL|SMP_FLAG_DERIVE_LK|enumerator|SMP_FLAG_DERIVE_LK, /* if Link Key should be derived */
 DECL|SMP_FLAG_DHCHECK_WAIT|enumerator|SMP_FLAG_DHCHECK_WAIT, /* if waiting for remote DHCheck (as slave) */
 DECL|SMP_FLAG_DHKEY_PENDING|enumerator|SMP_FLAG_DHKEY_PENDING, /* if waiting for local DHKey */
