@@ -281,7 +281,6 @@ DECL|handler_anymotion|member|sensor_trigger_handler_t handler_anymotion;
 DECL|handler_drdy_acc|member|sensor_trigger_handler_t handler_drdy_acc;
 DECL|handler_drdy_gyr|member|sensor_trigger_handler_t handler_drdy_gyr;
 DECL|int_pin|member|uint8_t int_pin;
-DECL|ipm|member|struct device *ipm;
 DECL|mag|member|uint8_t mag : 2;
 DECL|pmu_sts|member|union bmi160_pmu_status pmu_sts;
 DECL|range|member|uint16_t range;
