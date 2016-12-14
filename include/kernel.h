@@ -70,6 +70,7 @@ DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|__ticks_to_ms|function|static int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
+DECL|_init_static_threads|macro|_init_static_threads
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_legacy_data|member|void *_legacy_data;
 DECL|_mailbox|member|uint32_t _mailbox;
