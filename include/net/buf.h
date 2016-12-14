@@ -61,4 +61,3 @@ DECL|size|member|uint16_t size;
 DECL|size|member|uint16_t size;
 DECL|uninit_count|member|uint16_t uninit_count;
 DECL|user_data_size|member|const uint16_t user_data_size;
-DECL|user_data_size|member|uint16_t user_data_size;
