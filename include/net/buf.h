@@ -16,7 +16,7 @@ DECL|data|member|uint8_t *data;
 DECL|destroy|member|void (*const destroy)(struct net_buf *buf);
 DECL|flags|member|uint8_t flags;
 DECL|frags|member|struct net_buf *frags;
-DECL|free|member|struct k_fifo free;
+DECL|free|member|struct k_lifo free;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
