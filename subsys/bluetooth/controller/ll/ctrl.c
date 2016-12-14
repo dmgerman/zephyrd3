@@ -131,7 +131,7 @@ DECL|isr_radio_state_rx|function|static inline void isr_radio_state_rx(uint8_t t
 DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
 DECL|isr_rx_adv|function|static inline uint32_t isr_rx_adv(uint8_t devmatch_ok, uint8_t irkmatch_ok,uint8_t irkmatch_id, uint8_t rssi_ready)
 DECL|isr_rx_conn_pkt_ack|function|static inline uint8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
-DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline void isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx,uint8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline uint8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx,uint8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_ctrl_rej|function|isr_rx_conn_pkt_ctrl_rej(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data_rx, uint8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data_rx, uint8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_release|function|static inline void isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
