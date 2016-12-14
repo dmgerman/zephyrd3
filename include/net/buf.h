@@ -26,6 +26,7 @@ DECL|net_buf_add_le32|macro|net_buf_add_le32
 DECL|net_buf_add_u8|macro|net_buf_add_u8
 DECL|net_buf_add|macro|net_buf_add
 DECL|net_buf_alloc|macro|net_buf_alloc
+DECL|net_buf_destroy|function|static inline void net_buf_destroy(struct net_buf *buf)
 DECL|net_buf_frags_len|function|static inline size_t net_buf_frags_len(struct net_buf *buf)
 DECL|net_buf_get|macro|net_buf_get
 DECL|net_buf_headroom|macro|net_buf_headroom
