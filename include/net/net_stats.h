@@ -43,6 +43,7 @@ DECL|net_stats_rpl_dao_ack|struct|struct net_stats_rpl_dao_ack {
 DECL|net_stats_rpl_dao|struct|struct net_stats_rpl_dao {
 DECL|net_stats_rpl_dio|struct|struct net_stats_rpl_dio {
 DECL|net_stats_rpl_dis|struct|struct net_stats_rpl_dis {
+DECL|net_stats_rpl|struct|struct net_stats_rpl {
 DECL|net_stats_tcp|struct|struct net_stats_tcp {
 DECL|net_stats_t|typedef|typedef uint32_t net_stats_t;
 DECL|net_stats_udp|struct|struct net_stats_udp {
@@ -62,7 +63,7 @@ DECL|recv|member|net_stats_t recv;
 DECL|resets|member|uint16_t resets;
 DECL|rexmit|member|net_stats_t rexmit;
 DECL|root_repairs|member|uint16_t root_repairs;
-DECL|rpl|member|} rpl;
+DECL|rpl|member|struct net_stats_rpl rpl;
 DECL|rst|member|net_stats_t rst;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
