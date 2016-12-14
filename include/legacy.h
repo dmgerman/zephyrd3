@@ -77,6 +77,8 @@ DECL|ktask_t|macro|ktask_t
 DECL|ktimer_t|macro|ktimer_t
 DECL|mailbox|member|kmbox_t mailbox;
 DECL|nano_context_type_t|typedef|typedef int nano_context_type_t;
+DECL|nano_cpu_atomic_idle|function|static inline __deprecated void nano_cpu_atomic_idle(unsigned int key)
+DECL|nano_cpu_idle|function|static inline __deprecated void nano_cpu_idle(void)
 DECL|nano_delayed_work_cancel|function|nano_delayed_work_cancel(struct nano_delayed_work *work)
 DECL|nano_delayed_work_init|function|nano_delayed_work_init(struct nano_delayed_work *work, work_handler_t handler)
 DECL|nano_delayed_work_submit_to_queue|function|nano_delayed_work_submit_to_queue(struct nano_workqueue *wq, struct nano_delayed_work *work, int ticks)
