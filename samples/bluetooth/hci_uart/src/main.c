@@ -18,5 +18,4 @@ DECL|h4_send|function|static int h4_send(struct net_buf *buf)
 DECL|hci_uart_dev|variable|hci_uart_dev
 DECL|hci_uart_init|function|static int hci_uart_init(struct device *unused)
 DECL|main|function|void main(void)
-DECL|tx_queue|variable|tx_queue
 DECL|tx_thread|function|static void tx_thread(void *p1, void *p2, void *p3)
