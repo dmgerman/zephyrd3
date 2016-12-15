@@ -59,6 +59,7 @@ DECL|rfcomm_send_pn|function|static int rfcomm_send_pn(struct bt_rfcomm_dlc *dlc
 DECL|rfcomm_send_rls|function|static int rfcomm_send_rls(struct bt_rfcomm_dlc *dlc, uint8_t cr, uint8_t line_status)
 DECL|rfcomm_send_rpn|function|static int rfcomm_send_rpn(struct bt_rfcomm_session *session, uint8_t cr, struct bt_rfcomm_rpn *rpn)
 DECL|rfcomm_send_sabm|function|static int rfcomm_send_sabm(struct bt_rfcomm_session *session, uint8_t dlci)
+DECL|rfcomm_send_test|function|static int rfcomm_send_test(struct bt_rfcomm_session *session, uint8_t cr, uint8_t *pattern, uint8_t len)
 DECL|rfcomm_send_ua|function|static int rfcomm_send_ua(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_server_lookup_channel|function|static struct bt_rfcomm_server *rfcomm_server_lookup_channel(uint8_t channel)
 DECL|rfcomm_session_disconnected|function|static void rfcomm_session_disconnected(struct bt_rfcomm_session *session)
