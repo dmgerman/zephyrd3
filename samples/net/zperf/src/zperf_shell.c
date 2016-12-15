@@ -3,7 +3,7 @@ DECL|DEF_PORT|macro|DEF_PORT
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|MY_SHELL_MODULE|macro|MY_SHELL_MODULE
 DECL|MY_SRC_PORT|macro|MY_SRC_PORT
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|commands|variable|commands
 DECL|execute_upload|function|static int execute_upload(struct net_context *context6, struct net_context *context4, sa_family_t family, struct sockaddr_in6 *ipv6, struct sockaddr_in *ipv4,

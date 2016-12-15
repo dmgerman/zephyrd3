@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(struct net_nbr *start, int idx)
 DECL|net_nbr_clear_table|function|void net_nbr_clear_table(struct net_nbr_table *table)

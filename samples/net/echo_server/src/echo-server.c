@@ -6,10 +6,10 @@ DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|MY_PORT|macro|MY_PORT
 DECL|MY_PREFIX_LEN|macro|MY_PREFIX_LEN
 DECL|NET_BIND_ANY_ADDR|macro|NET_BIND_ANY_ADDR
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|build_reply_buf|function|static struct net_buf *build_reply_buf(const char *name, struct net_context *context, struct net_buf *buf)
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
 DECL|in4addr_my|variable|in4addr_my

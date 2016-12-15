@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cfi_to_fs_settings|function|static inline bool cfi_to_fs_settings(enum ieee802154_cfi cfi, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|data_addr_to_fs_settings|function|void data_addr_to_fs_settings(struct net_if *iface, struct in6_addr *dst, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)

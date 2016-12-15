@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|ieee802154_acknowledge|function|static inline void ieee802154_acknowledge(struct net_if *iface, struct ieee802154_mpdu *mpdu)
 DECL|ieee802154_acknowledge|macro|ieee802154_acknowledge

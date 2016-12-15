@@ -1,5 +1,5 @@
 DECL|CONFIG_NET_RX_STACK_SIZE|macro|CONFIG_NET_RX_STACK_SIZE
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|check_ip_addr|function|static inline int check_ip_addr(struct net_buf *buf)
 DECL|check_ip_addr|macro|check_ip_addr

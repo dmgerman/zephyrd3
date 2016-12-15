@@ -1,6 +1,6 @@
 DECL|MAX_DBG_PRINT|macro|MAX_DBG_PRINT
 DECL|MY_SRC_PORT|macro|MY_SRC_PORT
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|RX_THREAD_STACK_SIZE|macro|RX_THREAD_STACK_SIZE
 DECL|TAG|macro|TAG
 DECL|build_reply_buf|function|static inline struct net_buf *build_reply_buf(struct net_context *context, struct net_buf *buf, struct zperf_udp_datagram *hdr, struct zperf_server_hdr *stat)

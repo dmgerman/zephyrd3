@@ -1,5 +1,5 @@
 DECL|ADDR_LEN|macro|ADDR_LEN
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
