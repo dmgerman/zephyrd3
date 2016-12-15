@@ -11,7 +11,6 @@ DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
-DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_arp_context_data|variable|net_arp_context_data
 DECL|net_arp_context|struct|struct net_arp_context {
 DECL|net_arp_dev_init|function|int net_arp_dev_init(struct device *dev)
@@ -19,7 +18,6 @@ DECL|net_arp_get_mac|function|static uint8_t *net_arp_get_mac(struct device *dev
 DECL|net_arp_if_api|variable|net_arp_if_api
 DECL|net_arp_iface_init|function|static void net_arp_iface_init(struct net_if *iface)
 DECL|pending_buf|variable|pending_buf
-DECL|pkt1|variable|pkt1
 DECL|prepare_arp_reply|function|static inline struct net_buf *prepare_arp_reply(struct net_if *iface,struct net_buf *req, struct net_eth_addr *addr)
 DECL|prepare_arp_request|function|static inline struct net_buf *prepare_arp_request(struct net_if *iface, struct net_buf *req, struct net_eth_addr *addr)
 DECL|req_test|variable|req_test
