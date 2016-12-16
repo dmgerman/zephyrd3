@@ -1,8 +1,6 @@
 DECL|ETH_KSDK_BUFFER_SIZE|macro|ETH_KSDK_BUFFER_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
-DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|api_funcs_0|variable|api_funcs_0
 DECL|enet_handle|member|enet_handle_t enet_handle;
 DECL|eth_0_config_func|function|static void eth_0_config_func(void)

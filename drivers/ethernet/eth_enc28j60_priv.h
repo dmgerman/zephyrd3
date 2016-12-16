@@ -140,8 +140,6 @@ DECL|ENC28J60_SPI_SC|macro|ENC28J60_SPI_SC
 DECL|ENC28J60_SPI_WBM|macro|ENC28J60_SPI_WBM
 DECL|ENC28J60_SPI_WCR|macro|ENC28J60_SPI_WCR
 DECL|ENC28J60_SV_SIZE|macro|ENC28J60_SV_SIZE
-DECL|ENC28J60_THREAD_PRIORITY|macro|ENC28J60_THREAD_PRIORITY
-DECL|ENC28J60_THREAD_STACK_SIZE|macro|ENC28J60_THREAD_STACK_SIZE
 DECL|ENC28J60_TXEND|macro|ENC28J60_TXEND
 DECL|ENC28J60_TXSTART|macro|ENC28J60_TXSTART
 DECL|MAX_BUFFER_LENGTH|macro|MAX_BUFFER_LENGTH
@@ -167,6 +165,6 @@ DECL|spi_port|member|const char *spi_port;
 DECL|spi_sem|member|struct k_sem spi_sem;
 DECL|spi_slave|member|uint8_t spi_slave;
 DECL|spi|member|struct device *spi;
-DECL|thread_stack|member|char __stack thread_stack[ENC28J60_THREAD_STACK_SIZE];
+DECL|thread_stack|member|char __stack thread_stack[CONFIG_ETH_ENC28J60_RX_THREAD_STACK_SIZE];
 DECL|tx_rx_sem|member|struct k_sem tx_rx_sem;
 DECL|tx_tsv|member|uint8_t tx_tsv[TSV_SIZE];
