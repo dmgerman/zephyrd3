@@ -6,6 +6,7 @@ DECL|mqtt_rx_pingresp|function|int mqtt_rx_pingresp(struct mqtt_ctx *ctx, struct
 DECL|mqtt_rx_pub_msgs|function|int mqtt_rx_pub_msgs(struct mqtt_ctx *ctx, struct net_buf *rx, enum mqtt_packet type)
 DECL|mqtt_rx_puback|function|int mqtt_rx_puback(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_pubcomp|function|int mqtt_rx_pubcomp(struct mqtt_ctx *ctx, struct net_buf *rx)
+DECL|mqtt_rx_publish|function|int mqtt_rx_publish(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_pubrec|function|int mqtt_rx_pubrec(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_pubrel|function|int mqtt_rx_pubrel(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_suback|function|int mqtt_rx_suback(struct mqtt_ctx *ctx, struct net_buf *rx)
