@@ -18,6 +18,7 @@ DECL|publish_rx_data|member|void *publish_rx_data;
 DECL|publish_rx|member|int (*publish_rx)(void *data, struct mqtt_publish_msg *msg,
 DECL|publish_tx_data|member|void *publish_tx_data;
 DECL|publish_tx|member|int (*publish_tx)(void *data, uint16_t pkt_id, enum mqtt_packet type);
+DECL|rcv|member|int (*rcv)(struct mqtt_ctx *, struct net_buf *);
 DECL|subscribe_data|member|void *subscribe_data;
 DECL|subscribe|member|int (*subscribe)(void *data, uint16_t pkt_id,
 DECL|unsubscribe_data|member|void *unsubscribe_data;
