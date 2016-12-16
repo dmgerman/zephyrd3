@@ -47,6 +47,5 @@ DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet
 DECL|interface_data|member|uint8_t interface_data[BTUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
 DECL|notification_sent|member|uint8_t notification_sent;
-DECL|rx_queue|variable|rx_queue
 DECL|try_write|function|static int try_write(uint8_t ep, struct net_buf *buf)
 DECL|usb_status|member|enum usb_dc_status_code usb_status;

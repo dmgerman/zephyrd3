@@ -76,4 +76,4 @@ DECL|cfm|member|struct bt_avdtp_cfm_cb *cfm;
 DECL|hdr|member|uint8_t hdr;
 DECL|ind|member|struct bt_avdtp_ind_cb *ind;
 DECL|signal_id|member|uint8_t signal_id;
-DECL|state|member|uint8_t state; /* current state of AVDTP*/
+DECL|streams|member|struct bt_avdtp_stream *streams; /* List of AV streams */

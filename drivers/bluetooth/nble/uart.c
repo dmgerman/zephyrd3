@@ -14,6 +14,5 @@ DECL|nble_discard|function|static size_t nble_discard(struct device *uart, size_
 DECL|nble_open|function|int nble_open(void)
 DECL|rpc_alloc_cb|function|struct net_buf *rpc_alloc_cb(uint16_t length)
 DECL|rpc_transmit_cb|function|void rpc_transmit_cb(struct net_buf *buf)
-DECL|rx_queue|variable|rx_queue
 DECL|rx_thread|function|static void rx_thread(void)
 DECL|src_cpu_id|member|uint8_t src_cpu_id; /**< CPU id of IPC sender. */

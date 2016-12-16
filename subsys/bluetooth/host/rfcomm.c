@@ -41,6 +41,7 @@ DECL|rfcomm_dlcs_remove_dlci|function|static struct bt_rfcomm_dlc *rfcomm_dlcs_r
 DECL|rfcomm_encrypt_change|function|static void rfcomm_encrypt_change(struct bt_l2cap_chan *chan, uint8_t hci_status)
 DECL|rfcomm_handle_data|function|static void rfcomm_handle_data(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t dlci, uint8_t pf)
 DECL|rfcomm_handle_disc|function|static void rfcomm_handle_disc(struct bt_rfcomm_session *session, uint8_t dlci)
+DECL|rfcomm_handle_dm|function|static void rfcomm_handle_dm(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_handle_msc|function|static void rfcomm_handle_msc(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
 DECL|rfcomm_handle_msg|function|static void rfcomm_handle_msg(struct bt_rfcomm_session *session, struct net_buf *buf)
 DECL|rfcomm_handle_pn|function|static void rfcomm_handle_pn(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
@@ -57,6 +58,7 @@ DECL|rfcomm_send_sabm|function|static int rfcomm_send_sabm(struct bt_rfcomm_sess
 DECL|rfcomm_send_ua|function|static int rfcomm_send_ua(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_server_lookup_channel|function|static struct bt_rfcomm_server *rfcomm_server_lookup_channel(uint8_t channel)
 DECL|rfcomm_session_disconnected|function|static void rfcomm_session_disconnected(struct bt_rfcomm_session *session)
+DECL|rfcomm_session_disconnect|function|static void rfcomm_session_disconnect(struct bt_rfcomm_session *session)
 DECL|rfcomm_session_new|function|static struct bt_rfcomm_session *rfcomm_session_new(bt_rfcomm_role_t role)
 DECL|rfcomm_sessions_lookup_bt_conn|function|rfcomm_sessions_lookup_bt_conn(struct bt_conn *conn)
 DECL|security_result|enum|enum security_result {
