@@ -18,6 +18,5 @@ DECL|radio_nrf5_isr|function|static void radio_nrf5_isr(void *arg)
 DECL|recv_thread|function|static void recv_thread(void *p1, void *p2, void *p3)
 DECL|rng_nrf5_isr|function|static void rng_nrf5_isr(void *arg)
 DECL|rtc0_nrf5_isr|function|static void rtc0_nrf5_isr(void *arg)
-DECL|sem_recv|variable|sem_recv
 DECL|swi4_nrf5_isr|function|static void swi4_nrf5_isr(void *arg)
 DECL|swi5_nrf5_isr|function|static void swi5_nrf5_isr(void *arg)
