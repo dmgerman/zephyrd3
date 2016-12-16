@@ -19,5 +19,5 @@ DECL|mqtt_tx_pubcomp|function|int mqtt_tx_pubcomp(struct mqtt_ctx *ctx, uint16_t
 DECL|mqtt_tx_publish|function|int mqtt_tx_publish(struct mqtt_ctx *ctx, struct mqtt_publish_msg *msg)
 DECL|mqtt_tx_pubrec|function|int mqtt_tx_pubrec(struct mqtt_ctx *ctx, uint16_t id)
 DECL|mqtt_tx_pubrel|function|int mqtt_tx_pubrel(struct mqtt_ctx *ctx, uint16_t id)
-DECL|mqtt_tx_subscribe|function|int mqtt_tx_subscribe(struct mqtt_ctx *ctx, uint16_t pkt_id, int items, const char *topics[], enum mqtt_qos qos[])
-DECL|mqtt_tx_unsubscribe|function|int mqtt_tx_unsubscribe(struct mqtt_ctx *ctx, uint16_t pkt_id, int items,const char *topics[])
+DECL|mqtt_tx_subscribe|function|int mqtt_tx_subscribe(struct mqtt_ctx *ctx, uint16_t pkt_id, uint8_t items, const char *topics[], const enum mqtt_qos qos[])
+DECL|mqtt_tx_unsubscribe|function|int mqtt_tx_unsubscribe(struct mqtt_ctx *ctx, uint16_t pkt_id, uint8_t items,const char *topics[])
