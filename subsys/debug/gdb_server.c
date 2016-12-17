@@ -19,9 +19,9 @@ DECL|WRITE_MEM_SIG|function|static WRITE_MEM_SIG(write_memory)
 DECL|WRITE_MEM_SIG|function|static WRITE_MEM_SIG(write_memory_from_binary_format)
 DECL|WRITE_MEM_SIG|macro|WRITE_MEM_SIG
 DECL|_debug_fatal_hook|function|void _debug_fatal_hook(const NANO_ESF *esf)
-DECL|add_bp|function|static int add_bp(enum gdb_bp_type type, long addr, int len,enum gdb_error_code *err)
-DECL|add_del_bp_t|typedef|typedef ADD_DEL_BP_SIG(add_del_bp_t);
-DECL|add_hw_bp|function|static int add_hw_bp(long addr, enum gdb_bp_type type, int len,enum gdb_error_code *err)
+DECL|add_bp|function|static int add_bp(enum gdb_bp_type type, long addr, int len, enum gdb_error_code *err)
+DECL|add_del_bp_t|typedef|typedef ADD_DEL_BP_SIG (add_del_bp_t);
+DECL|add_hw_bp|function|static int add_hw_bp(long addr, enum gdb_bp_type type, int len, enum gdb_error_code *err)
 DECL|addr|member|gdb_instr_t *addr; /* breakpoint address */
 DECL|avail_queue|variable|avail_queue
 DECL|bp_array|struct|struct bp_array {
@@ -40,7 +40,7 @@ DECL|cpu_stop_bp_type|variable|cpu_stop_bp_type
 DECL|cpu_stop_hw_bp_addr|variable|cpu_stop_hw_bp_addr
 DECL|cpu_stop_signal|variable|cpu_stop_signal
 DECL|dbg_regs|variable|dbg_regs
-DECL|delete_bp|function|static int delete_bp(enum gdb_bp_type type, long addr, int len,enum gdb_error_code *err)
+DECL|delete_bp|function|static int delete_bp(enum gdb_bp_type type, long addr, int len, enum gdb_error_code *err)
 DECL|detach|function|static void detach(void)
 DECL|disable_trace_mode|function|static inline void disable_trace_mode(void)
 DECL|do_mem_probe|function|static inline int do_mem_probe(char *addr, int mode, int width, int preserve, long *dummy)
@@ -94,9 +94,9 @@ DECL|init_mem_safe_access|macro|init_mem_safe_access
 DECL|install_breakpoints|function|static void install_breakpoints(void)
 DECL|instr|member|gdb_instr_t instr; /* saved instruction */
 DECL|is_size_encoder|function|static inline int is_size_encoder(int num)
-DECL|is_valid_xml_query|function|static ALWAYS_INLINE int is_valid_xml_query(unsigned char **packet,int *off, int *len)
-DECL|mem2hex|function|static unsigned char *mem2hex(unsigned char *mem, unsigned char *buf,int count, int do_compress)
-DECL|mem_probe|function|static int mem_probe(char *addr, int mode, int size,int width, int preserve)
+DECL|is_valid_xml_query|function|static ALWAYS_INLINE int is_valid_xml_query(unsigned char **packet, int *off, int *len)
+DECL|mem2hex|function|static unsigned char *mem2hex(unsigned char *mem, unsigned char *buf, int count, int do_compress)
+DECL|mem_probe|function|static int mem_probe(char *addr, int mode, int size, int width, int preserve)
 DECL|must_flush_notification_buffer|function|static inline int must_flush_notification_buffer(unsigned char ch)
 DECL|notif_data_idx|variable|notif_data_idx
 DECL|notif_data|variable|notif_data
@@ -123,7 +123,7 @@ DECL|uart_console_dev|variable|uart_console_dev
 DECL|uninstall_breakpoints|function|static void uninstall_breakpoints(void)
 DECL|valid_registers|variable|valid_registers
 DECL|valid|member|char valid; /* breakpoint is valid? */
-DECL|write_mem_t|typedef|typedef WRITE_MEM_SIG(write_mem_t);
+DECL|write_mem_t|typedef|typedef WRITE_MEM_SIG (write_mem_t);
 DECL|write_regs_to_buffer|function|static void write_regs_to_buffer(unsigned char **buf, size_t *buf_size)
 DECL|write_to_console|function|static uint32_t write_to_console(char *buf, uint32_t len)
 DECL|write_xml_string|function|static void write_xml_string(char *buf, const char *xml_str, int off, int len)
