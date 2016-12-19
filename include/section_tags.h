@@ -1,4 +1,3 @@
-DECL|__gdb_stub_irq_vector_table|macro|__gdb_stub_irq_vector_table
 DECL|__in_section|macro|__in_section
 DECL|__irq_vector_table|macro|__irq_vector_table
 DECL|__irq_vector_table|macro|__irq_vector_table
