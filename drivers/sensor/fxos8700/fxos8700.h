@@ -22,6 +22,8 @@ DECL|FXOS8700_NUM_HYBRID_CHANNELS|macro|FXOS8700_NUM_HYBRID_CHANNELS
 DECL|FXOS8700_NUM_MAG_CHANNELS|macro|FXOS8700_NUM_MAG_CHANNELS
 DECL|FXOS8700_POWER_ACTIVE|enumerator|FXOS8700_POWER_ACTIVE,
 DECL|FXOS8700_POWER_STANDBY|enumerator|FXOS8700_POWER_STANDBY = 0,
+DECL|FXOS8700_PULSE_MASK|macro|FXOS8700_PULSE_MASK
+DECL|FXOS8700_PULSE_SRC_DPE|macro|FXOS8700_PULSE_SRC_DPE
 DECL|FXOS8700_RANGE_2G|enumerator|FXOS8700_RANGE_2G = 0,
 DECL|FXOS8700_RANGE_4G|enumerator|FXOS8700_RANGE_4G,
 DECL|FXOS8700_RANGE_8G|enumerator|FXOS8700_RANGE_8G,
@@ -35,6 +37,14 @@ DECL|FXOS8700_REG_M_CTRLREG1|macro|FXOS8700_REG_M_CTRLREG1
 DECL|FXOS8700_REG_M_CTRLREG2|macro|FXOS8700_REG_M_CTRLREG2
 DECL|FXOS8700_REG_M_OUTXMSB|macro|FXOS8700_REG_M_OUTXMSB
 DECL|FXOS8700_REG_OUTXMSB|macro|FXOS8700_REG_OUTXMSB
+DECL|FXOS8700_REG_PULSE_CFG|macro|FXOS8700_REG_PULSE_CFG
+DECL|FXOS8700_REG_PULSE_LTCY|macro|FXOS8700_REG_PULSE_LTCY
+DECL|FXOS8700_REG_PULSE_SRC|macro|FXOS8700_REG_PULSE_SRC
+DECL|FXOS8700_REG_PULSE_THSX|macro|FXOS8700_REG_PULSE_THSX
+DECL|FXOS8700_REG_PULSE_THSY|macro|FXOS8700_REG_PULSE_THSY
+DECL|FXOS8700_REG_PULSE_THSZ|macro|FXOS8700_REG_PULSE_THSZ
+DECL|FXOS8700_REG_PULSE_TMLT|macro|FXOS8700_REG_PULSE_TMLT
+DECL|FXOS8700_REG_PULSE_WIND|macro|FXOS8700_REG_PULSE_WIND
 DECL|FXOS8700_REG_STATUS|macro|FXOS8700_REG_STATUS
 DECL|FXOS8700_REG_WHOAMI|macro|FXOS8700_REG_WHOAMI
 DECL|FXOS8700_REG_XYZ_DATA_CFG|macro|FXOS8700_REG_XYZ_DATA_CFG
@@ -42,6 +52,7 @@ DECL|FXOS8700_XYZ_DATA_CFG_FS_MASK|macro|FXOS8700_XYZ_DATA_CFG_FS_MASK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|dev|member|struct device *dev;
+DECL|double_tap_handler|member|sensor_trigger_handler_t double_tap_handler;
 DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
 DECL|fxos8700_channel|enum|enum fxos8700_channel {
 DECL|fxos8700_config|struct|struct fxos8700_config {
@@ -58,11 +69,17 @@ DECL|i2c_name|member|char *i2c_name;
 DECL|i2c|member|struct device *i2c;
 DECL|mode|member|enum fxos8700_mode mode;
 DECL|num_channels|member|uint8_t num_channels;
+DECL|pulse_cfg|member|uint8_t pulse_cfg;
+DECL|pulse_ltcy|member|uint8_t pulse_ltcy;
+DECL|pulse_ths|member|uint8_t pulse_ths[3];
+DECL|pulse_tmlt|member|uint8_t pulse_tmlt;
+DECL|pulse_wind|member|uint8_t pulse_wind;
 DECL|range|member|enum fxos8700_range range;
 DECL|raw|member|int16_t raw[FXOS8700_MAX_NUM_CHANNELS];
 DECL|sem|member|struct k_sem sem;
 DECL|start_addr|member|uint8_t start_addr;
 DECL|start_channel|member|uint8_t start_channel;
+DECL|tap_handler|member|sensor_trigger_handler_t tap_handler;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXOS8700_THREAD_STACK_SIZE];
 DECL|trig_sem|member|struct k_sem trig_sem;
 DECL|whoami|member|uint8_t whoami;
