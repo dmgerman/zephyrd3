@@ -48,7 +48,7 @@ DECL|rfcomm_handle_pn|function|static void rfcomm_handle_pn(struct bt_rfcomm_ses
 DECL|rfcomm_handle_rls|function|static void rfcomm_handle_rls(struct bt_rfcomm_session *session, struct net_buf *buf, uint8_t cr)
 DECL|rfcomm_handle_sabm|function|static void rfcomm_handle_sabm(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_handle_ua|function|static void rfcomm_handle_ua(struct bt_rfcomm_session *session, uint8_t dlci)
-DECL|rfcomm_make_uih_msg|function|static struct net_buf *rfcomm_make_uih_msg(struct bt_rfcomm_dlc *dlc, uint8_t cr, uint8_t type, uint8_t len)
+DECL|rfcomm_make_uih_msg|function|static struct net_buf *rfcomm_make_uih_msg(struct bt_rfcomm_session *session, uint8_t cr, uint8_t type, uint8_t len)
 DECL|rfcomm_recv|function|static void rfcomm_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|rfcomm_send_credit|function|static int rfcomm_send_credit(struct bt_rfcomm_dlc *dlc, uint8_t credits)
 DECL|rfcomm_send_disc|function|static int rfcomm_send_disc(struct bt_rfcomm_session *session, uint8_t dlci)
