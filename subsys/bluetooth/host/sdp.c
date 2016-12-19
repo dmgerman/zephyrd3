@@ -24,6 +24,7 @@ DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|db|variable|db
 DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
+DECL|get_client_session|function|static struct bt_sdp_client *get_client_session(struct bt_conn *conn)
 DECL|handlers|variable|handlers
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
