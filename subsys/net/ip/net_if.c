@@ -21,6 +21,7 @@ DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(s
 DECL|link_callbacks|variable|link_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
+DECL|net_if_down|function|int net_if_down(struct net_if *iface)
 DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
 DECL|net_if_get_by_iface|function|uint8_t net_if_get_by_iface(struct net_if *iface)
 DECL|net_if_get_by_index|function|struct net_if *net_if_get_by_index(uint8_t index)
@@ -66,6 +67,7 @@ DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
 DECL|net_if_tx_thread|function|static void net_if_tx_thread(struct net_if *iface)
 DECL|net_if_unregister_link_cb|function|void net_if_unregister_link_cb(struct net_if_link_cb *link)
+DECL|net_if_up|function|int net_if_up(struct net_if *iface)
 DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct k_work *work)

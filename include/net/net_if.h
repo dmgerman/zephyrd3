@@ -9,6 +9,8 @@ DECL|NET_IF_MAX_IPV4_MADDR|macro|NET_IF_MAX_IPV4_MADDR
 DECL|NET_IF_MAX_IPV6_ADDR|macro|NET_IF_MAX_IPV6_ADDR
 DECL|NET_IF_MAX_IPV6_MADDR|macro|NET_IF_MAX_IPV6_MADDR
 DECL|NET_IF_MAX_IPV6_PREFIX|macro|NET_IF_MAX_IPV6_PREFIX
+DECL|NET_IF_NUM_FLAGS|enumerator|NET_IF_NUM_FLAGS
+DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
 DECL|__net_if_align|variable|__net_if_align
@@ -82,7 +84,7 @@ DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_buf *buf)
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
 DECL|net_if_router|struct|struct net_if_router {
-DECL|net_if_set_link_addr|function|static inline void net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
+DECL|net_if_set_link_addr|function|static inline int net_if_set_link_addr(struct net_if *iface,uint8_t *addr, uint8_t len)
 DECL|net_if_set_mtu|function|static inline void net_if_set_mtu(struct net_if *iface, uint16_t mtu)
 DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
