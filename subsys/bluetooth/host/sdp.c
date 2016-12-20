@@ -1,5 +1,6 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|GET_PARAM|macro|GET_PARAM
 DECL|SDP_CHAN|macro|SDP_CHAN
 DECL|SDP_CLIENT_CHAN|macro|SDP_CLIENT_CHAN
 DECL|SDP_CLIENT_MTU|macro|SDP_CLIENT_MTU
@@ -27,6 +28,7 @@ DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
 DECL|handlers|variable|handlers
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
+DECL|param|member|const struct bt_sdp_discover_params *param;
 DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
 DECL|reqs|member|sys_slist_t reqs;
 DECL|sdp_client_chan_connect|function|static int sdp_client_chan_connect(struct bt_sdp_client *session)
@@ -36,4 +38,6 @@ DECL|sdp_client_disconnected|function|static void sdp_client_disconnected(struct
 DECL|sdp_client_get_session|function|static struct bt_sdp_client *sdp_client_get_session(struct bt_conn *conn)
 DECL|sdp_client_new_session|function|static struct bt_sdp_client *sdp_client_new_session(struct bt_conn *conn)
 DECL|sdp_client_receive|function|static void sdp_client_receive(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|sdp_client_ssa_search|function|static int sdp_client_ssa_search(struct bt_sdp_client *session)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
+DECL|tid|member|uint16_t tid;
