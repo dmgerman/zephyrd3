@@ -35,4 +35,5 @@ DECL|sdp_client_connected|function|static void sdp_client_connected(struct bt_l2
 DECL|sdp_client_disconnected|function|static void sdp_client_disconnected(struct bt_l2cap_chan *chan)
 DECL|sdp_client_get_session|function|static struct bt_sdp_client *sdp_client_get_session(struct bt_conn *conn)
 DECL|sdp_client_new_session|function|static struct bt_sdp_client *sdp_client_new_session(struct bt_conn *conn)
+DECL|sdp_client_receive|function|static void sdp_client_receive(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
