@@ -9,7 +9,7 @@ DECL|sys_k_event_logger_get_mask|function|static inline int sys_k_event_logger_g
 DECL|sys_k_event_logger_get_wait_timeout|function|static inline int sys_k_event_logger_get_wait_timeout(uint16_t *event_id,uint8_t *dropped, uint32_t *event_data, uint8_t *data_size, uint32_t timeout)
 DECL|sys_k_event_logger_get_wait|function|static inline int sys_k_event_logger_get_wait(uint16_t *event_id,uint8_t *dropped, uint32_t *event_data, uint8_t *data_size)
 DECL|sys_k_event_logger_get|function|static inline int sys_k_event_logger_get(uint16_t *event_id, uint8_t *dropped, uint32_t *event_data, uint8_t *data_size)
-DECL|sys_k_event_logger_put_timed|function|static inline void sys_k_event_logger_put_timed(uint16_t event_id) {};
+DECL|sys_k_event_logger_put_timed|function|static inline void sys_k_event_logger_put_timed(uint16_t event_id)
 DECL|sys_k_event_logger_put|function|static inline void sys_k_event_logger_put(uint16_t event_id, uint32_t *event_data, uint8_t data_size)
 DECL|sys_k_event_logger_register_as_collector|function|static inline void sys_k_event_logger_register_as_collector(void) {};
 DECL|sys_k_event_logger_set_mask|function|static inline void sys_k_event_logger_set_mask(int value)
