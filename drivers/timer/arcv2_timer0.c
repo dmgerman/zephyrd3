@@ -9,6 +9,7 @@ DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|accumulated_cycle_count|variable|accumulated_cycle_count
 DECL|arcv2_timer0_device_power_state|variable|arcv2_timer0_device_power_state
 DECL|cycles_per_tick|variable|cycles_per_tick
+DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|programmed_limit|variable|programmed_limit
 DECL|programmed_ticks|variable|programmed_ticks
@@ -19,7 +20,6 @@ DECL|sys_clock_device_ctrl|function|int sys_clock_device_ctrl(struct device *por
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
 DECL|sys_clock_resume|function|static int sys_clock_resume(struct device *dev)
 DECL|sys_clock_suspend|function|static int sys_clock_suspend(struct device *dev)
-DECL|sys_cycle_get_32|function|uint32_t sys_cycle_get_32(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void)
 DECL|tickless_idle_init|function|static void tickless_idle_init(void) {}
 DECL|timer0_control_register_get|function|static ALWAYS_INLINE uint32_t timer0_control_register_get(void)
