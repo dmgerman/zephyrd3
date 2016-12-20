@@ -10,7 +10,6 @@ DECL|A4|member|__I uint32_t A4; /*!< Slope definition A4. */
 DECL|A4|member|__IO uint32_t A4; /*!< Slope of 5th piece wise linear function */
 DECL|A5|member|__I uint32_t A5; /*!< Slope definition A5. */
 DECL|A5|member|__IO uint32_t A5; /*!< Slope of 6th piece wise linear function */
-DECL|AAR|member|__IO uint32_t AAR; /*!< AHB bus master priority register for AAR */
 DECL|ACCDBLREAD|member|__I uint32_t ACCDBLREAD; /*!< Snapshot of the ACCDBL, updated by the READCLRACC or RDCLRDBL
 DECL|ACCDBL|member|__I uint32_t ACCDBL; /*!< Register accumulating the number of detected double transitions */
 DECL|ACCREAD|member|__I int32_t ACCREAD; /*!< Snapshot of the ACC register, updated by the READCLRACC or RDCLRACC
@@ -20,7 +19,6 @@ DECL|ADDRESS|member|__IO uint32_t ADDRESS; /*!< Address used in the TWI transfer
 DECL|ADDRESS|member|__IO uint32_t ADDRESS[2]; /*!< Description collection[0]: TWI slave address 0 */
 DECL|ADDRPTR|member|__IO uint32_t ADDRPTR; /*!< Pointer to the resolvable address */
 DECL|ALIGN|member|__IO uint32_t ALIGN; /*!< Alignment of sample within a frame. */
-DECL|AMLI_RAMPRI_Type|typedef|} AMLI_RAMPRI_Type;
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of buffer words transferred since last START */
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes received in last granted transaction */
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes transferred in the last RXD transaction */
@@ -52,13 +50,12 @@ DECL|B5|member|__IO uint32_t B5; /*!< y-intercept of 6th piece wise linear funct
 DECL|BASE0|member|__IO uint32_t BASE0; /*!< Base address 0 */
 DECL|BASE1|member|__IO uint32_t BASE1; /*!< Base address 1 */
 DECL|BAUDRATE|member|__IO uint32_t BAUDRATE; /*!< Baud rate */
-DECL|BAUDRATE|member|__IO uint32_t BAUDRATE; /*!< Baud rate */
+DECL|BAUDRATE|member|__IO uint32_t BAUDRATE; /*!< Baud rate. Accuracy depends on the HFCLK source selected. */
 DECL|BCC|member|__IO uint32_t BCC; /*!< Bit counter compare */
 DECL|BITMODE|member|__IO uint32_t BITMODE; /*!< Configure the number of bits used by the TIMER */
 DECL|BusFault_IRQn|enumerator|BusFault_IRQn = -11, /*!< 5 Bus Fault, Pre-Fetch-, Memory Access Fault, other address/memory
 DECL|B|member|__IO uint32_t B; /*!< Pin select for B signal */
 DECL|CCM_AAR_IRQn|enumerator|CCM_AAR_IRQn = 15, /*!< 15 CCM_AAR */
-DECL|CCM|member|__IO uint32_t CCM; /*!< AHB bus master priority register for CCM */
 DECL|CC|member|__IO uint32_t CC[4]; /*!< Description collection[0]: Compare register 0 */
 DECL|CC|member|__IO uint32_t CC[6]; /*!< Description collection[0]: Capture/Compare register 0 */
 DECL|CHANNELS|member|__IO uint32_t CHANNELS; /*!< Enable channels. */
@@ -70,7 +67,7 @@ DECL|CH|member|PPI_CH_Type CH[20]; /*!< PPI Channel */
 DECL|CH|member|SAADC_CH_Type CH[8]; /*!< Unspecified */
 DECL|CLK|member|__IO uint32_t CLK; /*!< Pin number configuration for PDM CLK signal */
 DECL|CNFPTR|member|__IO uint32_t CNFPTR; /*!< Pointer to data structure holding AES key and NONCE vector */
-DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in sequence
+DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in this
 DECL|CODEPAGESIZE|member|__I uint32_t CODEPAGESIZE; /*!< Code memory page size */
 DECL|CODESIZE|member|__I uint32_t CODESIZE; /*!< Code memory size */
 DECL|COMP_LPCOMP_IRQn|enumerator|COMP_LPCOMP_IRQn = 19, /*!< 19 COMP_LPCOMP */
@@ -92,14 +89,13 @@ DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Description cluster[0]: Input conf
 DECL|CONFIG|member|__IO uint32_t CONFIG[8]; /*!< Description collection[0]: Configuration for OUT[n], SET[n]
 DECL|COUNTERTOP|member|__IO uint32_t COUNTERTOP; /*!< Value up to which the pulse generator counter counts */
 DECL|COUNTER|member|__I uint32_t COUNTER; /*!< Current COUNTER value */
-DECL|CPU0|member|__IO uint32_t CPU0; /*!< AHB bus master priority register for CPU0 */
 DECL|CRCCNF|member|__IO uint32_t CRCCNF; /*!< CRC configuration */
 DECL|CRCINIT|member|__IO uint32_t CRCINIT; /*!< CRC initial value */
 DECL|CRCPOLY|member|__IO uint32_t CRCPOLY; /*!< CRC polynomial */
 DECL|CRCSTATUS|member|__I uint32_t CRCSTATUS; /*!< CRC status */
 DECL|CRV|member|__IO uint32_t CRV; /*!< Counter reload value */
 DECL|CSN|member|__IO uint32_t CSN; /*!< Pin select for CSN signal */
-DECL|CTIV|member|__IO uint32_t CTIV; /*!< Calibration timer interval (retained register, same reset behaviour
+DECL|CTIV|member|__IO uint32_t CTIV; /*!< Calibration timer interval */
 DECL|CTS|member|__IO uint32_t CTS; /*!< Pin select for CTS signal */
 DECL|CURRENTLOADCTRL|member|__I uint32_t CURRENTLOADCTRL; /*!< Current value driven to the NFC Load Control */
 DECL|CUSTOMER|member|__IO uint32_t CUSTOMER[32]; /*!< Description collection[0]: Reserved for customer */
@@ -125,7 +121,6 @@ DECL|DIS|member|__O uint32_t DIS; /*!< Description cluster[0]: Disable channel g
 DECL|DebugMonitor_IRQn|enumerator|DebugMonitor_IRQn = -4, /*!< 12 Debug Monitor */
 DECL|ECBDATAPTR|member|__IO uint32_t ECBDATAPTR; /*!< ECB block encrypt memory pointers */
 DECL|ECB_IRQn|enumerator|ECB_IRQn = 14, /*!< 14 ECB */
-DECL|ECB|member|__IO uint32_t ECB; /*!< AHB bus master priority register for ECB */
 DECL|EEP|member|__IO uint32_t EEP; /*!< Description cluster[0]: Channel 0 event end-point */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< COMP enable */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable */
@@ -239,6 +234,7 @@ DECL|EVENTS_REPORTRDY|member|__IO uint32_t EVENTS_REPORTRDY; /*!< Non-null repor
 DECL|EVENTS_RESOLVED|member|__IO uint32_t EVENTS_RESOLVED; /*!< Address resolved */
 DECL|EVENTS_RESULTDONE|member|__IO uint32_t EVENTS_RESULTDONE; /*!< A result is ready to get transferred to RAM. */
 DECL|EVENTS_RSSIEND|member|__IO uint32_t EVENTS_RSSIEND; /*!< Sampling of receive signal strength complete. */
+DECL|EVENTS_RXDRDY|member|__IO uint32_t EVENTS_RXDRDY; /*!< Data received in RXD (but potentially not yet transferred to
 DECL|EVENTS_RXDRDY|member|__IO uint32_t EVENTS_RXDRDY; /*!< Data received in RXD */
 DECL|EVENTS_RXDREADY|member|__IO uint32_t EVENTS_RXDREADY; /*!< TWI RXD byte received */
 DECL|EVENTS_RXERROR|member|__IO uint32_t EVENTS_RXERROR; /*!< NFC RX frame error reported. The FRAMESTATUS.RX register contains
@@ -274,6 +270,7 @@ DECL|EVENTS_SUSPENDED|member|__IO uint32_t EVENTS_SUSPENDED; /*!< TWI entered th
 DECL|EVENTS_TICK|member|__IO uint32_t EVENTS_TICK; /*!< Event on COUNTER increment */
 DECL|EVENTS_TIMEOUT|member|__IO uint32_t EVENTS_TIMEOUT; /*!< Watchdog timeout */
 DECL|EVENTS_TRIGGERED|member|__IO uint32_t EVENTS_TRIGGERED[16]; /*!< Description collection[0]: Event number 0 generated by triggering
+DECL|EVENTS_TXDRDY|member|__IO uint32_t EVENTS_TXDRDY; /*!< Data sent from TXD */
 DECL|EVENTS_TXDRDY|member|__IO uint32_t EVENTS_TXDRDY; /*!< Data sent from TXD */
 DECL|EVENTS_TXDSENT|member|__IO uint32_t EVENTS_TXDSENT; /*!< TWI TXD byte sent */
 DECL|EVENTS_TXFRAMEEND|member|__IO uint32_t EVENTS_TXFRAMEEND; /*!< Marks the end of the last transmitted on-air symbol of a frame */
@@ -327,7 +324,6 @@ DECL|I2S_PSEL_Type|typedef|} I2S_PSEL_Type;
 DECL|I2S_RXD_Type|typedef|} I2S_RXD_Type;
 DECL|I2S_RXTXD_Type|typedef|} I2S_RXTXD_Type;
 DECL|I2S_TXD_Type|typedef|} I2S_TXD_Type;
-DECL|I2S|member|__IO uint32_t I2S; /*!< AHB bus master priority register for I2S */
 DECL|ICACHECNF|member|__IO uint32_t ICACHECNF; /*!< I-Code cache configuration register. */
 DECL|IHIT|member|__IO uint32_t IHIT; /*!< I-Code cache hit counter. */
 DECL|IMISS|member|__IO uint32_t IMISS; /*!< I-Code cache miss counter. */
@@ -474,7 +470,6 @@ DECL|NFCT_FRAMESTATUS_Type|typedef|} NFCT_FRAMESTATUS_Type;
 DECL|NFCT_IRQn|enumerator|NFCT_IRQn = 5, /*!< 5 NFCT */
 DECL|NFCT_RXD_Type|typedef|} NFCT_RXD_Type;
 DECL|NFCT_TXD_Type|typedef|} NFCT_TXD_Type;
-DECL|NFCT|member|__IO uint32_t NFCT; /*!< AHB bus master priority register for NFCT */
 DECL|NFC|member|FICR_NFC_Type NFC; /*!< Unspecified */
 DECL|NIRK|member|__IO uint32_t NIRK; /*!< Number of IRKs */
 DECL|NMIENCLR|member|__IO uint32_t NMIENCLR; /*!< Disable non-maskable interrupt */
@@ -486,9 +481,6 @@ DECL|NRFHW|member|__IO uint32_t NRFHW[12]; /*!< Description collection[0]: Reser
 DECL|NRF_AAR_BASE|macro|NRF_AAR_BASE
 DECL|NRF_AAR_Type|typedef|} NRF_AAR_Type;
 DECL|NRF_AAR|macro|NRF_AAR
-DECL|NRF_AMLI_BASE|macro|NRF_AMLI_BASE
-DECL|NRF_AMLI_Type|typedef|} NRF_AMLI_Type;
-DECL|NRF_AMLI|macro|NRF_AMLI
 DECL|NRF_BPROT_BASE|macro|NRF_BPROT_BASE
 DECL|NRF_BPROT_Type|typedef|} NRF_BPROT_Type;
 DECL|NRF_BPROT|macro|NRF_BPROT
@@ -674,7 +666,6 @@ DECL|PDMCLKCTRL|member|__IO uint32_t PDMCLKCTRL; /*!< PDM clock generator contro
 DECL|PDM_IRQn|enumerator|PDM_IRQn = 29, /*!< 29 PDM */
 DECL|PDM_PSEL_Type|typedef|} PDM_PSEL_Type;
 DECL|PDM_SAMPLE_Type|typedef|} PDM_SAMPLE_Type;
-DECL|PDM|member|__IO uint32_t PDM; /*!< AHB bus master priority register for PDM */
 DECL|PERREGION|member|MWU_PERREGION_Type PERREGION[2]; /*!< Unspecified */
 DECL|PIN_CNF|member|__IO uint32_t PIN_CNF[32]; /*!< Description collection[0]: Configuration of GPIO pins */
 DECL|POFCON|member|__IO uint32_t POFCON; /*!< Power failure comparator configuration */
@@ -721,7 +712,7 @@ DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of sequence
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of this
 DECL|PTR|member|__IO uint32_t PTR; /*!< RAM address pointer to write samples to with EasyDMA */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD data pointer */
@@ -734,15 +725,12 @@ DECL|PWM1_IRQn|enumerator|PWM1_IRQn = 33, /*!< 33 PWM1 */
 DECL|PWM2_IRQn|enumerator|PWM2_IRQn = 34, /*!< 34 PWM2 */
 DECL|PWM_PSEL_Type|typedef|} PWM_PSEL_Type;
 DECL|PWM_SEQ_Type|typedef|} PWM_SEQ_Type;
-DECL|PWM|member|__IO uint32_t PWM; /*!< AHB bus master priority register for PWM0, PWM1 and PWM2 */
 DECL|PendSV_IRQn|enumerator|PendSV_IRQn = -2, /*!< 14 Pendable request for system service */
 DECL|QDEC_IRQn|enumerator|QDEC_IRQn = 18, /*!< 18 QDEC */
 DECL|QDEC_PSEL_Type|typedef|} QDEC_PSEL_Type;
 DECL|RADIO_IRQn|enumerator|RADIO_IRQn = 1, /*!< 1 RADIO */
-DECL|RADIO|member|__IO uint32_t RADIO; /*!< AHB bus master priority register for RADIO */
 DECL|RAMONB|member|__IO uint32_t RAMONB; /*!< Deprecated register - RAM on/off register (this register is
 DECL|RAMON|member|__IO uint32_t RAMON; /*!< Deprecated register - RAM on/off register (this register is
-DECL|RAMPRI|member|AMLI_RAMPRI_Type RAMPRI; /*!< RAM configurable priority configuration structure */
 DECL|RAMSTATUS|member|__I uint32_t RAMSTATUS; /*!< Deprecated register - RAM status register */
 DECL|RAM|member|POWER_RAM_Type RAM[8]; /*!< Unspecified */
 DECL|RAM|member|__I uint32_t RAM; /*!< RAM variant */
@@ -795,7 +783,6 @@ DECL|RESERVED0|member|__I uint32_t RESERVED0[63];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[64];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[66];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[7];
-DECL|RESERVED0|member|__I uint32_t RESERVED0[896];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[9];
 DECL|RESERVED10|member|__I uint32_t RESERVED10;
 DECL|RESERVED10|member|__I uint32_t RESERVED10;
@@ -881,6 +868,7 @@ DECL|RESERVED1|member|__I uint32_t RESERVED1[64];
 DECL|RESERVED2|member|__I uint32_t RESERVED2;
 DECL|RESERVED2|member|__I uint32_t RESERVED2;
 DECL|RESERVED2|member|__I uint32_t RESERVED2;
+DECL|RESERVED2|member|__I uint32_t RESERVED2;
 DECL|RESERVED2|member|__I uint32_t RESERVED2[100];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[109];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[10];
@@ -892,7 +880,6 @@ DECL|RESERVED2|member|__I uint32_t RESERVED2[126];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[126];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[127];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[148];
-DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
@@ -924,7 +911,7 @@ DECL|RESERVED3|member|__I uint32_t RESERVED3[21];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[23];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[2];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[2];
-DECL|RESERVED3|member|__I uint32_t RESERVED3[3];
+DECL|RESERVED3|member|__I uint32_t RESERVED3[2];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[3];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[50];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[51];
@@ -1082,7 +1069,6 @@ DECL|SAADC_CH_Type|typedef|} SAADC_CH_Type;
 DECL|SAADC_EVENTS_CH_Type|typedef|} SAADC_EVENTS_CH_Type;
 DECL|SAADC_IRQn|enumerator|SAADC_IRQn = 7, /*!< 7 SAADC */
 DECL|SAADC_RESULT_Type|typedef|} SAADC_RESULT_Type;
-DECL|SAADC|member|__IO uint32_t SAADC; /*!< AHB bus master priority register for SAADC */
 DECL|SAMPLEPER|member|__IO uint32_t SAMPLEPER; /*!< Sample period */
 DECL|SAMPLERATE|member|__IO uint32_t SAMPLERATE; /*!< Controls normal or continuous sample rate */
 DECL|SAMPLE|member|PDM_SAMPLE_Type SAMPLE; /*!< Unspecified */
@@ -1103,8 +1089,6 @@ DECL|SELRES|member|__IO uint32_t SELRES; /*!< NFC-A SEL_RES auto-response settin
 DECL|SEMSTAT|member|__I uint32_t SEMSTAT; /*!< Semaphore status register */
 DECL|SENSRES|member|__IO uint32_t SENSRES; /*!< NFC-A SENS_RES auto-response settings */
 DECL|SEQ|member|PWM_SEQ_Type SEQ[2]; /*!< Unspecified */
-DECL|SERIAL0|member|__IO uint32_t SERIAL0; /*!< AHB bus master priority register for SPIM0, SPIS0, TWIM0 and
-DECL|SERIAL2|member|__IO uint32_t SERIAL2; /*!< AHB bus master priority register for SPIM2 and SPIS2 */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
@@ -1127,7 +1111,6 @@ DECL|SPIM2_SPIS2_SPI2_IRQn|enumerator|SPIM2_SPIS2_SPI2_IRQn = 35, /*!< 35 SPIM2_
 DECL|SPIM_PSEL_Type|typedef|} SPIM_PSEL_Type;
 DECL|SPIM_RXD_Type|typedef|} SPIM_RXD_Type;
 DECL|SPIM_TXD_Type|typedef|} SPIM_TXD_Type;
-DECL|SPIS1|member|__IO uint32_t SPIS1; /*!< AHB bus master priority register for SPIM1, SPIS1, TWIM1 and
 DECL|SPIS_PSEL_Type|typedef|} SPIS_PSEL_Type;
 DECL|SPIS_RXD_Type|typedef|} SPIS_RXD_Type;
 DECL|SPIS_TXD_Type|typedef|} SPIS_TXD_Type;
@@ -1307,7 +1290,6 @@ DECL|UARTE0_UART0_IRQn|enumerator|UARTE0_UART0_IRQn = 2, /*!< 2 UARTE0_UART0 */
 DECL|UARTE_PSEL_Type|typedef|} UARTE_PSEL_Type;
 DECL|UARTE_RXD_Type|typedef|} UARTE_RXD_Type;
 DECL|UARTE_TXD_Type|typedef|} UARTE_TXD_Type;
-DECL|UARTE|member|__IO uint32_t UARTE; /*!< AHB bus master priority register for UARTE */
 DECL|UNUSED0|member|__IO uint32_t UNUSED0; /*!< Unspecified */
 DECL|UNUSED0|member|__IO uint32_t UNUSED0; /*!< Unspecified */
 DECL|UNUSED0|member|__IO uint32_t UNUSED0; /*!< Unspecified */
