@@ -28,6 +28,7 @@ DECL|handlers|variable|handlers
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
 DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
+DECL|reqs|member|sys_slist_t reqs;
 DECL|sdp_client_chan_connect|function|static int sdp_client_chan_connect(struct bt_sdp_client *session)
 DECL|sdp_client_chan_ops|variable|sdp_client_chan_ops
 DECL|sdp_client_connected|function|static void sdp_client_connected(struct bt_l2cap_chan *chan)
