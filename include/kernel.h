@@ -55,6 +55,7 @@ DECL|_MEMORY_POOL_BUFFER_DEFINE|macro|_MEMORY_POOL_BUFFER_DEFINE
 DECL|_MEMORY_POOL_QUAD_BLOCK_DEFINE|macro|_MEMORY_POOL_QUAD_BLOCK_DEFINE
 DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
 DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
+DECL|_NON_OPTIMIZED_TICKS_PER_SEC|macro|_NON_OPTIMIZED_TICKS_PER_SEC
 DECL|_OBJECT_TRACING_INIT|macro|_OBJECT_TRACING_INIT
 DECL|_OBJECT_TRACING_INIT|macro|_OBJECT_TRACING_INIT
 DECL|_OBJECT_TRACING_NEXT_PTR|macro|_OBJECT_TRACING_NEXT_PTR
@@ -68,12 +69,14 @@ DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
-DECL|__ticks_to_ms|function|static int64_t __ticks_to_ms(int64_t ticks)
+DECL|__ticks_to_ms|function|static inline int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_legacy_data|member|void *_legacy_data;
 DECL|_mailbox|member|uint32_t _mailbox;
+DECL|_ms_per_tick|macro|_ms_per_tick
+DECL|_ms_to_ticks|function|static ALWAYS_INLINE int32_t _ms_to_ticks(int32_t ms)
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {

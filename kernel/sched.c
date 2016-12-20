@@ -12,7 +12,6 @@ DECL|_pend_thread|function|void _pend_thread(struct k_thread *thread, _wait_q_t 
 DECL|_remove_thread_from_ready_q|function|void _remove_thread_from_ready_q(struct k_thread *thread)
 DECL|_reschedule_threads|function|void _reschedule_threads(int key)
 DECL|_set_ready_q_prio_bit|function|static void _set_ready_q_prio_bit(int prio)
-DECL|ceiling|macro|ceiling
 DECL|k_current_get|function|k_tid_t k_current_get(void)
 DECL|k_is_preempt_thread|function|int k_is_preempt_thread(void)
 DECL|k_sched_lock|function|void k_sched_lock(void)
