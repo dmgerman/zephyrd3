@@ -24,7 +24,6 @@ DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|db|variable|db
 DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
-DECL|get_client_session|function|static struct bt_sdp_client *get_client_session(struct bt_conn *conn)
 DECL|handlers|variable|handlers
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
@@ -32,6 +31,7 @@ DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
 DECL|sdp_client_chan_connect|function|static int sdp_client_chan_connect(struct bt_sdp_client *session)
 DECL|sdp_client_chan_ops|variable|sdp_client_chan_ops
 DECL|sdp_client_connected|function|static void sdp_client_connected(struct bt_l2cap_chan *chan)
-DECL|sdp_client_connect|function|static int sdp_client_connect(struct bt_conn *conn)
 DECL|sdp_client_disconnected|function|static void sdp_client_disconnected(struct bt_l2cap_chan *chan)
+DECL|sdp_client_get_session|function|static struct bt_sdp_client *sdp_client_get_session(struct bt_conn *conn)
+DECL|sdp_client_new_session|function|static struct bt_sdp_client *sdp_client_new_session(struct bt_conn *conn)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
