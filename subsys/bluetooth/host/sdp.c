@@ -23,6 +23,7 @@ DECL|bt_sdp_send|function|static void bt_sdp_send(struct bt_l2cap_chan *chan, st
 DECL|bt_sdp|struct|struct bt_sdp {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_br_chan chan;
+DECL|cstate|member|struct bt_sdp_pdu_cstate cstate;
 DECL|db|variable|db
 DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
 DECL|handlers|variable|handlers

@@ -5,6 +5,7 @@ DECL|BT_SDP_INVALID_RECORD_HANDLE|macro|BT_SDP_INVALID_RECORD_HANDLE
 DECL|BT_SDP_INVALID_SYNTAX|macro|BT_SDP_INVALID_SYNTAX
 DECL|BT_SDP_INVALID_VERSION|macro|BT_SDP_INVALID_VERSION
 DECL|BT_SDP_MAX_ATTR_LEN|macro|BT_SDP_MAX_ATTR_LEN
+DECL|BT_SDP_MAX_PDU_CSTATE_LEN|macro|BT_SDP_MAX_PDU_CSTATE_LEN
 DECL|BT_SDP_SVC_ATTR_REQ|macro|BT_SDP_SVC_ATTR_REQ
 DECL|BT_SDP_SVC_ATTR_RSP|macro|BT_SDP_SVC_ATTR_RSP
 DECL|BT_SDP_SVC_REGISTER_REQ|macro|BT_SDP_SVC_REGISTER_REQ
@@ -18,7 +19,11 @@ DECL|BT_SDP_SVC_SEARCH_RSP|macro|BT_SDP_SVC_SEARCH_RSP
 DECL|BT_SDP_SVC_UPDATE_REQ|macro|BT_SDP_SVC_UPDATE_REQ
 DECL|BT_SDP_SVC_UPDATE_RSP|macro|BT_SDP_SVC_UPDATE_RSP
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|bt_sdp_hdr|struct|struct bt_sdp_hdr {
+DECL|bt_sdp_pdu_cstate|struct|struct bt_sdp_pdu_cstate {
+DECL|data|member|uint8_t data[BT_SDP_MAX_PDU_CSTATE_LEN];
+DECL|length|member|uint8_t length;
 DECL|op_code|member|uint8_t op_code;
 DECL|param_len|member|uint16_t param_len;
 DECL|tid|member|uint16_t tid;
