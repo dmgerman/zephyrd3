@@ -77,12 +77,11 @@ DECL|enc_rsp_send|function|static void enc_rsp_send(struct connection *conn)
 DECL|event_active|function|static void event_active(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv_stop|function|void event_adv_stop(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv|function|static void event_adv(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
-DECL|event_callback|function|static void event_callback(void)
 DECL|event_ch_map_prep|function|static inline void event_ch_map_prep(struct connection *conn, uint16_t event_counter)
 DECL|event_common_prepare|function|static void event_common_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint32_t *ticks_xtal_to_start, uint32_t *ticks_active_to_start, uint32_t ticks_preempt_to_start,
 DECL|event_conn_update_prep|function|static inline uint32_t event_conn_update_prep(struct connection *conn, uint16_t event_counter, uint32_t ticks_at_expire)
-DECL|event_conn_update_st_init|function|static inline void event_conn_update_st_init(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct work *work_sched_offset,
-DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct work *work_sched_offset)
+DECL|event_conn_update_st_init|function|event_conn_update_st_init(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct mayfly *mayfly_sched_offset,
+DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct mayfly *mayfly_sched_offset)
 DECL|event_conn_update_st_rsp|function|static inline void event_conn_update_st_rsp(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|event_connection_prepare|function|static void event_connection_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, struct connection *conn)
 DECL|event_enc_prep|function|static inline void event_enc_prep(struct connection *conn)
@@ -145,6 +144,17 @@ DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
 DECL|link_rx_pool|member|void *link_rx_pool;
 DECL|link_rx_tail|member|void *volatile link_rx_tail;
+DECL|mayfly_radio_active|function|static void mayfly_radio_active(void *params)
+DECL|mayfly_radio_inactive|function|static void mayfly_radio_inactive(void *params)
+DECL|mayfly_radio_stop|function|static void mayfly_radio_stop(void *params)
+DECL|mayfly_sched_after_mstr_free_offset_get|function|static void mayfly_sched_after_mstr_free_offset_get(void *params)
+DECL|mayfly_sched_free_win_offset_calc|function|static void mayfly_sched_free_win_offset_calc(void *params)
+DECL|mayfly_sched_win_offset_select|function|static void mayfly_sched_win_offset_select(void *params)
+DECL|mayfly_sched_win_offset_use|function|static void mayfly_sched_win_offset_use(void *params)
+DECL|mayfly_xtal_retain|function|static void mayfly_xtal_retain(uint8_t retain)
+DECL|mayfly_xtal_start|function|static void mayfly_xtal_start(void *params)
+DECL|mayfly_xtal_stop_calc|function|static void mayfly_xtal_stop_calc(void *params)
+DECL|mayfly_xtal_stop|function|static void mayfly_xtal_stop(void *params)
 DECL|nirk|member|uint8_t nirk;
 DECL|observer|member|struct observer observer;
 DECL|observer|struct|struct observer {
@@ -155,6 +165,7 @@ DECL|packet_release_last|member|uint8_t volatile packet_release_last;
 DECL|packet_rx_acquired_count_get|function|static uint8_t packet_rx_acquired_count_get(void)
 DECL|packet_rx_acquire|member|uint8_t packet_rx_acquire;
 DECL|packet_rx_allocate|function|static void packet_rx_allocate(uint8_t max)
+DECL|packet_rx_callback|function|static void packet_rx_callback(void)
 DECL|packet_rx_count|member|uint8_t packet_rx_count;
 DECL|packet_rx_data_count|member|uint8_t packet_rx_data_count;
 DECL|packet_rx_data_pool_size|member|uint16_t packet_rx_data_pool_size;
@@ -233,8 +244,8 @@ DECL|scan_data|member|struct radio_adv_data scan_data;
 DECL|scan_state|member|uint8_t scan_state:1;
 DECL|scan_type|member|uint8_t scan_type:1;
 DECL|sca|member|uint8_t sca;
-DECL|sched_after_master_free_offset_get|function|static void sched_after_master_free_offset_get(uint16_t conn_interval, uint32_t ticks_slot, uint32_t ticks_anchor, uint32_t *win_offset_us)
-DECL|sched_after_master_free_slot_get|function|static void sched_after_master_free_slot_get(uint8_t user_id, uint32_t ticks_slot_abs, uint32_t *ticks_anchor, uint32_t *us_offset)
+DECL|sched_after_mstr_free_offset_get|function|static void sched_after_mstr_free_offset_get(uint16_t conn_interval, uint32_t ticks_slot, uint32_t ticks_anchor, uint32_t *win_offset_us)
+DECL|sched_after_mstr_free_slot_get|function|static void sched_after_mstr_free_slot_get(uint8_t user_id, uint32_t ticks_slot_abs, uint32_t *ticks_anchor, uint32_t *us_offset)
 DECL|sched_free_win_offset_calc|function|static void sched_free_win_offset_calc(struct connection *conn_curr, uint8_t is_select, uint32_t *ticks_to_offset_next, uint16_t conn_interval, uint8_t *offset_max,
 DECL|start_enc_rsp_send|function|static void start_enc_rsp_send(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|state|enum|enum state {
@@ -255,14 +266,3 @@ DECL|tx_packet_set|function|static void tx_packet_set(struct connection *conn, s
 DECL|unknown_rsp_send|function|static void unknown_rsp_send(struct connection *conn, uint8_t type)
 DECL|version_ind_send|function|static void version_ind_send(struct connection *conn)
 DECL|win_offset_us|member|uint32_t win_offset_us;
-DECL|work_radio_active|function|static void work_radio_active(void *params)
-DECL|work_radio_inactive|function|static void work_radio_inactive(void *params)
-DECL|work_radio_stop|function|static void work_radio_stop(void *params)
-DECL|work_sched_after_master_free_offset_get|function|static void work_sched_after_master_free_offset_get(void *params)
-DECL|work_sched_free_win_offset_calc|function|static void work_sched_free_win_offset_calc(void *params)
-DECL|work_sched_win_offset_select|function|static void work_sched_win_offset_select(void *params)
-DECL|work_sched_win_offset_use|function|static void work_sched_win_offset_use(void *params)
-DECL|work_xtal_retain|function|static void work_xtal_retain(uint8_t retain)
-DECL|work_xtal_start|function|static void work_xtal_start(void *params)
-DECL|work_xtal_stop_calc|function|static void work_xtal_stop_calc(void *params)
-DECL|work_xtal_stop|function|static void work_xtal_stop(void *params)
