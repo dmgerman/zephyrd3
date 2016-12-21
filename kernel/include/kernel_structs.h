@@ -48,7 +48,7 @@ DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
 DECL|prio|member|int prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
-DECL|sched_locked|member|atomic_t sched_locked;
+DECL|sched_locked|member|volatile uint32_t sched_locked;
 DECL|swap_data|member|void *swap_data;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
