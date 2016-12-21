@@ -6,6 +6,8 @@ DECL|K_PENDING|macro|K_PENDING
 DECL|K_PRESTART|macro|K_PRESTART
 DECL|K_STATIC|macro|K_STATIC
 DECL|K_SUSPENDED|macro|K_SUSPENDED
+DECL|_NON_PREEMPT_THRESHOLD|macro|_NON_PREEMPT_THRESHOLD
+DECL|_PREEMPT_THRESHOLD|macro|_PREEMPT_THRESHOLD
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
@@ -44,11 +46,12 @@ DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
+DECL|preempt|member|uint16_t preempt;
 DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
-DECL|prio|member|int8_t prio;
+DECL|prio|member|volatile int8_t prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
-DECL|sched_locked|member|volatile uint8_t sched_locked;
+DECL|sched_locked|member|uint8_t sched_locked;
 DECL|swap_data|member|void *swap_data;
 DECL|thread_state|member|uint8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
