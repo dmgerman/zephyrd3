@@ -18,4 +18,4 @@ DECL|frame_buf|member|uint8_t frame_buf[1500];
 DECL|generate_mac|function|static void generate_mac(uint8_t *mac_addr)
 DECL|iface|member|struct net_if *iface;
 DECL|mac_addr|member|uint8_t mac_addr[6];
-DECL|tx_buf_sem|member|struct nano_sem tx_buf_sem;
+DECL|tx_buf_sem|member|struct k_sem tx_buf_sem;
