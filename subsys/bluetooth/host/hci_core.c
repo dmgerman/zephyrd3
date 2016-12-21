@@ -70,6 +70,7 @@ DECL|eir_has_name|function|static bool eir_has_name(const uint8_t *eir)
 DECL|extended_inquiry_result|function|static void extended_inquiry_result(struct net_buf *buf)
 DECL|find_id_addr|function|static const bt_addr_le_t *find_id_addr(const bt_addr_le_t *addr)
 DECL|get_result_slot|function|static struct bt_br_discovery_result *get_result_slot(const bt_addr_t *addr, int8_t rssi)
+DECL|handle_event|function|static inline void handle_event(struct net_buf *buf)
 DECL|handle|member|uint16_t handle;
 DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct net_buf *buf)
