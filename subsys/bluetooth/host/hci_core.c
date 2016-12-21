@@ -4,6 +4,7 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
+DECL|PRIO_EVT_SIZE|macro|PRIO_EVT_SIZE
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
