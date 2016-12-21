@@ -96,6 +96,7 @@ DECL|mtu|member|uint16_t mtu;
 DECL|param_mask|member|uint16_t param_mask;
 DECL|priority|member|uint8_t priority;
 DECL|role|member|bt_rfcomm_role_t role;
+DECL|rtx_work|member|struct k_delayed_work rtx_work;
 DECL|state|member|uint8_t state;
 DECL|type|member|uint8_t type;
 DECL|v24_signal|member|uint8_t v24_signal;
