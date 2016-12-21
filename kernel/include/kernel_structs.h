@@ -31,7 +31,7 @@ DECL|current|member|struct k_thread *current;
 DECL|custom_data|member|void *custom_data;
 DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
-DECL|flags|member|uint32_t flags;
+DECL|execution_flags|member|uint8_t execution_flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
 DECL|init_data|member|void *init_data;
@@ -45,11 +45,12 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
-DECL|prio|member|int prio;
+DECL|prio|member|int8_t prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
-DECL|sched_locked|member|volatile uint32_t sched_locked;
+DECL|sched_locked|member|volatile uint8_t sched_locked;
 DECL|swap_data|member|void *swap_data;
+DECL|thread_state|member|uint8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
