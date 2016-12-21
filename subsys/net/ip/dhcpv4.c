@@ -53,7 +53,9 @@ DECL|hops|member|uint8_t hops; /* used by relay agents when booting via relay
 DECL|htype|member|uint8_t htype; /* Hardware Address Type */
 DECL|magic_cookie|variable|magic_cookie
 DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|net_dhcpv4_msg_type_name|function|net_dhcpv4_msg_type_name(uint8_t msg_type)
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
+DECL|net_dhcpv4_state_name|function|net_dhcpv4_state_name(enum net_dhcpv4_state state)
 DECL|op|member|uint8_t op; /* Message type, 1:BOOTREQUEST, 2:BOOTREPLY */
 DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint16_t offset, uint8_t *msg_type)
 DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
