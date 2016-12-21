@@ -31,7 +31,7 @@ DECL|current|member|struct k_thread *current;
 DECL|custom_data|member|void *custom_data;
 DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
-DECL|flags|member|int flags;
+DECL|flags|member|uint32_t flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
 DECL|init_data|member|void *init_data;
