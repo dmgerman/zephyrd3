@@ -20,6 +20,7 @@ DECL|UINT_TO_POINTER|macro|UINT_TO_POINTER
 DECL|ZERO_OR_COMPILE_ERROR|macro|ZERO_OR_COMPILE_ERROR
 DECL|_UTIL__H_|macro|_UTIL__H_
 DECL|arithmetic_shift_right|function|static inline int64_t arithmetic_shift_right(int64_t value, uint8_t shift)
+DECL|ceiling_fraction|macro|ceiling_fraction
 DECL|is_power_of_two|function|static inline int is_power_of_two(unsigned int x)
 DECL|max|macro|max
 DECL|min|macro|min
