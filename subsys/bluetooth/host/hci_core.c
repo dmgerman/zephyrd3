@@ -87,7 +87,8 @@ DECL|hci_le_meta_event|function|static void hci_le_meta_event(struct net_buf *bu
 DECL|hci_le_read_remote_features|function|static int hci_le_read_remote_features(struct bt_conn *conn)
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct net_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
-DECL|hci_rx_thread|function|static void hci_rx_thread(bt_ready_cb_t ready_cb)
+DECL|hci_rx_thread|function|static void hci_rx_thread(void)
+DECL|init_work|function|static void init_work(struct k_work *work)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
 DECL|inquiry_result_with_rssi|function|static void inquiry_result_with_rssi(struct net_buf *buf)
 DECL|io_capa_neg_reply|function|static void io_capa_neg_reply(const bt_addr_t *bdaddr, const uint8_t reason)
@@ -132,6 +133,7 @@ DECL|read_local_ver_complete|function|static void read_local_ver_complete(struct
 DECL|read_remote_ext_features_complete|function|static void read_remote_ext_features_complete(struct net_buf *buf)
 DECL|read_remote_features_complete|function|static void read_remote_features_complete(struct net_buf *buf)
 DECL|read_supported_commands_complete|function|static void read_supported_commands_complete(struct net_buf *buf)
+DECL|ready_cb|variable|ready_cb
 DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
 DECL|remote_name_request_complete|function|static void remote_name_request_complete(struct net_buf *buf)
 DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
