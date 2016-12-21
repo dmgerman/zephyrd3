@@ -1,10 +1,13 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
+DECL|DLC_RTX|macro|DLC_RTX
 DECL|RFCOMM_CHANNEL_END|macro|RFCOMM_CHANNEL_END
 DECL|RFCOMM_CHANNEL_START|macro|RFCOMM_CHANNEL_START
+DECL|RFCOMM_CONN_TIMEOUT|macro|RFCOMM_CONN_TIMEOUT
 DECL|RFCOMM_CREDITS_THRESHOLD|macro|RFCOMM_CREDITS_THRESHOLD
 DECL|RFCOMM_DEFAULT_CREDIT|macro|RFCOMM_DEFAULT_CREDIT
 DECL|RFCOMM_DEFAULT_MTU|macro|RFCOMM_DEFAULT_MTU
+DECL|RFCOMM_DISC_TIMEOUT|macro|RFCOMM_DISC_TIMEOUT
 DECL|RFCOMM_MAX_CREDITS|macro|RFCOMM_MAX_CREDITS
 DECL|RFCOMM_MIN_MTU|macro|RFCOMM_MIN_MTU
 DECL|RFCOMM_SECURITY_PASSED|enumerator|RFCOMM_SECURITY_PASSED,
@@ -31,6 +34,7 @@ DECL|rfcomm_dlc_destroy|function|static void rfcomm_dlc_destroy(struct bt_rfcomm
 DECL|rfcomm_dlc_disconnect|function|static void rfcomm_dlc_disconnect(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_drop|function|static void rfcomm_dlc_drop(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_init|function|static void rfcomm_dlc_init(struct bt_rfcomm_dlc *dlc, struct bt_rfcomm_session *session, uint8_t dlci, bt_rfcomm_role_t role)
+DECL|rfcomm_dlc_rtx_timeout|function|static void rfcomm_dlc_rtx_timeout(struct k_work *work)
 DECL|rfcomm_dlc_security|function|static enum security_result rfcomm_dlc_security(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_start|function|static int rfcomm_dlc_start(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_dlc_tx_give_credits|function|static void rfcomm_dlc_tx_give_credits(struct bt_rfcomm_dlc *dlc, uint8_t credits)
