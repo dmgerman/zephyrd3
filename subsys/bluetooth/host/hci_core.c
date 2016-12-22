@@ -136,7 +136,6 @@ DECL|read_supported_commands_complete|function|static void read_supported_comman
 DECL|ready_cb|variable|ready_cb
 DECL|reject_conn|function|static int reject_conn(const bt_addr_t *bdaddr, uint8_t reason)
 DECL|remote_name_request_complete|function|static void remote_name_request_complete(struct net_buf *buf)
-DECL|report_completed_packet|function|static void report_completed_packet(struct net_buf *buf)
 DECL|report_discovery_results|function|static void report_discovery_results(void)
 DECL|request_name|function|static int request_name(const bt_addr_t *addr, uint8_t pscan, uint16_t offset)
 DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
@@ -147,7 +146,6 @@ DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
 DECL|set_event_mask|function|static int set_event_mask(void)
-DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|set_random_address|function|static int set_random_address(const bt_addr_t *addr)
 DECL|set_static_addr|function|static int set_static_addr(void)
 DECL|show_dev_info|function|static inline void show_dev_info(void)
