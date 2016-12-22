@@ -24,6 +24,7 @@ DECL|net_buf_add_be16|macro|net_buf_add_be16
 DECL|net_buf_add_be32|macro|net_buf_add_be32
 DECL|net_buf_add_le16|macro|net_buf_add_le16
 DECL|net_buf_add_le32|macro|net_buf_add_le32
+DECL|net_buf_add_mem|macro|net_buf_add_mem
 DECL|net_buf_add_u8|macro|net_buf_add_u8
 DECL|net_buf_add|macro|net_buf_add
 DECL|net_buf_alloc|macro|net_buf_alloc
