@@ -39,6 +39,7 @@ DECL|sdp_client_chan_ops|variable|sdp_client_chan_ops
 DECL|sdp_client_connected|function|static void sdp_client_connected(struct bt_l2cap_chan *chan)
 DECL|sdp_client_disconnected|function|static void sdp_client_disconnected(struct bt_l2cap_chan *chan)
 DECL|sdp_client_get_session|function|static struct bt_sdp_client *sdp_client_get_session(struct bt_conn *conn)
+DECL|sdp_client_get_total|function|static uint16_t sdp_client_get_total(struct bt_sdp_client *session, struct net_buf *buf, uint16_t *total)
 DECL|sdp_client_new_session|function|static struct bt_sdp_client *sdp_client_new_session(struct bt_conn *conn)
 DECL|sdp_client_params_iterator|function|static void sdp_client_params_iterator(struct bt_sdp_client *session)
 DECL|sdp_client_receive|function|static void sdp_client_receive(struct bt_l2cap_chan *chan, struct net_buf *buf)
