@@ -31,7 +31,9 @@ DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
 DECL|param|member|const struct bt_sdp_discover_params *param;
 DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
+DECL|rec_buf|member|struct net_buf *rec_buf;
 DECL|reqs|member|sys_slist_t reqs;
+DECL|sdp_client_alloc_buf|function|static struct net_buf *sdp_client_alloc_buf(struct bt_l2cap_chan *chan)
 DECL|sdp_client_chan_connect|function|static int sdp_client_chan_connect(struct bt_sdp_client *session)
 DECL|sdp_client_chan_ops|variable|sdp_client_chan_ops
 DECL|sdp_client_connected|function|static void sdp_client_connected(struct bt_l2cap_chan *chan)
