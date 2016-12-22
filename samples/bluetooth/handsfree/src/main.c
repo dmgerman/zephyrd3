@@ -1,6 +1,13 @@
+DECL|battery|function|static void battery(struct bt_conn *conn, uint32_t value)
 DECL|bt_ready|function|static void bt_ready(int err)
+DECL|call_held|function|static void call_held(struct bt_conn *conn, uint32_t value)
+DECL|call_setup|function|static void call_setup(struct bt_conn *conn, uint32_t value)
+DECL|call|function|static void call(struct bt_conn *conn, uint32_t value)
 DECL|connected|function|static void connected(struct bt_conn *conn)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
 DECL|handsfree_enable|function|static void handsfree_enable(void)
 DECL|hf_cb|variable|hf_cb
 DECL|main|function|void main(void)
+DECL|roam|function|static void roam(struct bt_conn *conn, uint32_t value)
+DECL|service|function|static void service(struct bt_conn *conn, uint32_t value)
+DECL|signal|function|static void signal(struct bt_conn *conn, uint32_t value)
