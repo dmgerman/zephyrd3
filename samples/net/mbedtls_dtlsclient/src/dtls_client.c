@@ -22,6 +22,7 @@ DECL|init_app|function|static inline int init_app(void)
 DECL|int_ms|member|uint32_t int_ms;
 DECL|main|function|void main(void)
 DECL|mbedtls_time_t|macro|mbedtls_time_t
+DECL|mcast_addr|variable|mcast_addr
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)
 DECL|pers|variable|pers
 DECL|snapshot|member|uint32_t snapshot;
