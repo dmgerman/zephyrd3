@@ -14,14 +14,14 @@
 # limitations under the License.
 #
 
-menu "IoT Protocols"
+menu "Network Protocols"
 
-source "lib/iot/zoap/Kconfig"
+source "subsys/net/lib/zoap/Kconfig"
 
-source "lib/iot/dns/Kconfig"
+source "subsys/net/lib/dns/Kconfig"
 
-source "lib/iot/mqtt/Kconfig"
+source "subsys/net/lib/mqtt/Kconfig"
 
-source "lib/iot/http/Kconfig"
+source "subsys/net/lib/http/Kconfig"
 
 endmenu

@@ -15,8 +15,4 @@ Usage:
 Before calling the resolver, it must be initialized via the 'dns_init'
 routine.
 
-'dnsX_resolve_quick' routines just return the first IP address.
-However, domain names may be served by more IP addresses, so
-'dnsX_resolve' routines may be more useful.
-
 See samples/net/dns_client/src/main.c.
