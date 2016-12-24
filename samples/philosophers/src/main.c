@@ -16,7 +16,7 @@ DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|STATIC_OBJS|macro|STATIC_OBJS
 DECL|display_demo_description|function|static void display_demo_description(void)
 DECL|fork|macro|fork
-DECL|get_random_delay|function|static int32_t get_random_delay(int id)
+DECL|get_random_delay|function|static int32_t get_random_delay(int id, int period_in_ms)
 DECL|init_objects|function|static void init_objects(void)
 DECL|is_last_philosopher|function|static inline int is_last_philosopher(int id)
 DECL|main|function|void main(void)
