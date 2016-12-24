@@ -27,11 +27,22 @@ DECL|BT_RFCOMM_PF_UIH_NO_CREDIT|macro|BT_RFCOMM_PF_UIH_NO_CREDIT
 DECL|BT_RFCOMM_PF_UIH|macro|BT_RFCOMM_PF_UIH
 DECL|BT_RFCOMM_PN|macro|BT_RFCOMM_PN
 DECL|BT_RFCOMM_RESP_CR|macro|BT_RFCOMM_RESP_CR
+DECL|BT_RFCOMM_RLS|macro|BT_RFCOMM_RLS
+DECL|BT_RFCOMM_RPN_BAUD_RATE_9600|macro|BT_RFCOMM_RPN_BAUD_RATE_9600
+DECL|BT_RFCOMM_RPN_DATA_BITS_8|macro|BT_RFCOMM_RPN_DATA_BITS_8
+DECL|BT_RFCOMM_RPN_FLOW_NONE|macro|BT_RFCOMM_RPN_FLOW_NONE
+DECL|BT_RFCOMM_RPN_PARAM_MASK_ALL|macro|BT_RFCOMM_RPN_PARAM_MASK_ALL
+DECL|BT_RFCOMM_RPN_PARITY_NONE|macro|BT_RFCOMM_RPN_PARITY_NONE
+DECL|BT_RFCOMM_RPN_STOP_BITS_1|macro|BT_RFCOMM_RPN_STOP_BITS_1
+DECL|BT_RFCOMM_RPN_XOFF_CHAR|macro|BT_RFCOMM_RPN_XOFF_CHAR
+DECL|BT_RFCOMM_RPN_XON_CHAR|macro|BT_RFCOMM_RPN_XON_CHAR
+DECL|BT_RFCOMM_RPN|macro|BT_RFCOMM_RPN
 DECL|BT_RFCOMM_SABM|macro|BT_RFCOMM_SABM
 DECL|BT_RFCOMM_SET_ADDR|macro|BT_RFCOMM_SET_ADDR
 DECL|BT_RFCOMM_SET_CTRL|macro|BT_RFCOMM_SET_CTRL
 DECL|BT_RFCOMM_SET_LEN_16|macro|BT_RFCOMM_SET_LEN_16
 DECL|BT_RFCOMM_SET_LEN_8|macro|BT_RFCOMM_SET_LEN_8
+DECL|BT_RFCOMM_SET_LINE_SETTINGS|macro|BT_RFCOMM_SET_LINE_SETTINGS
 DECL|BT_RFCOMM_SET_MSG_TYPE|macro|BT_RFCOMM_SET_MSG_TYPE
 DECL|BT_RFCOMM_SIG_MAX_MTU|macro|BT_RFCOMM_SIG_MAX_MTU
 DECL|BT_RFCOMM_SIG_MIN_MTU|macro|BT_RFCOMM_SIG_MIN_MTU
@@ -51,27 +62,40 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|ack_timer|member|uint8_t ack_timer;
 DECL|address|member|uint8_t address;
+DECL|baud_rate|member|uint8_t baud_rate;
 DECL|br_chan|member|struct bt_l2cap_br_chan br_chan;
 DECL|bt_rfcomm_hdr|struct|struct bt_rfcomm_hdr {
 DECL|bt_rfcomm_msc|struct|struct bt_rfcomm_msc {
 DECL|bt_rfcomm_msg_hdr|struct|struct bt_rfcomm_msg_hdr {
 DECL|bt_rfcomm_pn|struct|struct bt_rfcomm_pn {
+DECL|bt_rfcomm_rls|struct|struct bt_rfcomm_rls {
+DECL|bt_rfcomm_rpn|struct|struct bt_rfcomm_rpn {
 DECL|bt_rfcomm_session|struct|struct bt_rfcomm_session {
 DECL|control|member|uint8_t control;
 DECL|credits|member|uint8_t credits;
 DECL|dlci|member|uint8_t dlci;
 DECL|dlci|member|uint8_t dlci;
+DECL|dlci|member|uint8_t dlci;
+DECL|dlci|member|uint8_t dlci;
 DECL|dlcs|member|struct bt_rfcomm_dlc *dlcs;
+DECL|flow_control|member|uint8_t flow_control;
 DECL|flow_ctrl|member|uint8_t flow_ctrl;
 DECL|length|member|uint8_t length;
 DECL|len|member|uint8_t len;
+DECL|line_settings|member|uint8_t line_settings;
+DECL|line_status|member|uint8_t line_status;
 DECL|max_retrans|member|uint8_t max_retrans;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
+DECL|param_mask|member|uint16_t param_mask;
 DECL|priority|member|uint8_t priority;
 DECL|role|member|bt_rfcomm_role_t role;
 DECL|state|member|uint8_t state;
 DECL|type|member|uint8_t type;
 DECL|v24_signal|member|uint8_t v24_signal;
+DECL|xoff_char|member|uint8_t xoff_char;
+DECL|xon_char|member|uint8_t xon_char;

@@ -78,6 +78,7 @@ DECL|enc_rsp_send|function|static void enc_rsp_send(struct connection *conn)
 DECL|event_active|function|static void event_active(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv_stop|function|void event_adv_stop(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv|function|static void event_adv(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
+DECL|event_callback|function|static void event_callback(void)
 DECL|event_ch_map_prep|function|static inline void event_ch_map_prep(struct connection *conn, uint16_t event_counter)
 DECL|event_common_prepare|function|static void event_common_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint32_t *ticks_xtal_to_start, uint32_t *ticks_active_to_start, uint32_t ticks_preempt_to_start,
 DECL|event_conn_update_prep|function|static inline uint32_t event_conn_update_prep(struct connection *conn, uint16_t event_counter, uint32_t ticks_at_expire)
