@@ -26,6 +26,7 @@ DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(int32_t timeout)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode, int32_t timeout)
+DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
