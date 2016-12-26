@@ -68,12 +68,8 @@ DECL|bt_avdtp_event_cb|struct|struct bt_avdtp_event_cb {
 DECL|bt_avdtp_ind_cb|struct|struct bt_avdtp_ind_cb {
 DECL|bt_avdtp_single_sig_hdr|struct|struct bt_avdtp_single_sig_hdr {
 DECL|bt_avdtp|struct|struct bt_avdtp {
-DECL|bt_pending_req|struct|struct bt_pending_req {
 DECL|hdr|member|uint8_t hdr;
 DECL|ind|member|struct bt_avdtp_ind_cb *ind;
-DECL|req|member|struct bt_pending_req req;
-DECL|signal_id|member|uint8_t signal_id;
+DECL|req|member|struct bt_avdtp_req *req;
 DECL|signal_id|member|uint8_t signal_id;
 DECL|streams|member|struct bt_avdtp_stream *streams; /* List of AV streams */
-DECL|timeout_work|member|struct k_delayed_work timeout_work;
-DECL|transaction_id|member|uint8_t transaction_id;
