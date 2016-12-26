@@ -4,7 +4,6 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
-DECL|PRIO_EVT_SIZE|macro|PRIO_EVT_SIZE
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
@@ -24,8 +23,6 @@ DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
-DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(int32_t timeout)
-DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode, int32_t timeout)
 DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
