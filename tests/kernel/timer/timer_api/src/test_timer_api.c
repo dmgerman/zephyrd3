@@ -1,0 +1,20 @@
+DECL|DURATION|macro|DURATION
+DECL|EXPIRE_TIMES|macro|EXPIRE_TIMES
+DECL|PERIOD|macro|PERIOD
+DECL|TIMER_ASSERT|macro|TIMER_ASSERT
+DECL|busy_wait_ms|function|static void busy_wait_ms(int32_t ms)
+DECL|duration_expire|function|static void duration_expire(struct k_timer *timer)
+DECL|duration_stop|function|static void duration_stop(struct k_timer *timer)
+DECL|init_timer_data|function|static void init_timer_data(void)
+DECL|period0_expire|function|static void period0_expire(struct k_timer *timer)
+DECL|status_expire|function|static void status_expire(struct k_timer *timer)
+DECL|status_stop|function|static void status_stop(struct k_timer *timer)
+DECL|tdata|variable|tdata
+DECL|test_timer_duration_period|function|void test_timer_duration_period(void)
+DECL|test_timer_expirefn_null|function|void test_timer_expirefn_null(void)
+DECL|test_timer_k_define|function|void test_timer_k_define(void)
+DECL|test_timer_period_0|function|void test_timer_period_0(void)
+DECL|test_timer_status_get_anytime|function|void test_timer_status_get_anytime(void)
+DECL|test_timer_status_get|function|void test_timer_status_get(void)
+DECL|test_timer_status_sync|function|void test_timer_status_sync(void)
+DECL|timer|variable|timer
