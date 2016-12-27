@@ -1,8 +1,18 @@
 DECL|AVDTP_CHAN|macro|AVDTP_CHAN
+DECL|AVDTP_GET_MSG_TYPE|macro|AVDTP_GET_MSG_TYPE
+DECL|AVDTP_GET_PKT_TYPE|macro|AVDTP_GET_PKT_TYPE
+DECL|AVDTP_GET_SIG_ID|macro|AVDTP_GET_SIG_ID
+DECL|AVDTP_GET_TR_ID|macro|AVDTP_GET_TR_ID
 DECL|AVDTP_KWORK|macro|AVDTP_KWORK
+DECL|AVDTP_MSG_POISTION|macro|AVDTP_MSG_POISTION
+DECL|AVDTP_PKT_POSITION|macro|AVDTP_PKT_POSITION
+DECL|AVDTP_SIGID_MASK|macro|AVDTP_SIGID_MASK
+DECL|AVDTP_TID_POSITION|macro|AVDTP_TID_POSITION
 DECL|AVDTP_TIMEOUT|macro|AVDTP_TIMEOUT
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CONFIG_BLUETOOTH_AVDTP_CONN|macro|CONFIG_BLUETOOTH_AVDTP_CONN
+DECL|avdtp_create_pdu|function|static struct net_buf *avdtp_create_pdu(uint8_t msg_type,uint8_t pkt_type, uint8_t sig_id)
+DECL|avdtp_send|function|static int avdtp_send(struct bt_avdtp *session, struct net_buf *buf, struct bt_avdtp_req *req)
 DECL|avdtp_timeout|function|static void avdtp_timeout(struct k_work *work)
 DECL|bt_avdtp_connect|function|int bt_avdtp_connect(struct bt_conn *conn, struct bt_avdtp *session)
 DECL|bt_avdtp_disconnect|function|int bt_avdtp_disconnect(struct bt_avdtp *session)
