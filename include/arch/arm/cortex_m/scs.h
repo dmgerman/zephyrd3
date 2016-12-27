@@ -1,3 +1,6 @@
+DECL|_PRIO_BIT_SHIFT|macro|_PRIO_BIT_SHIFT
+DECL|_PRIO_IP_IDX|macro|_PRIO_IP_IDX
+DECL|_PRIO_SHP_IDX|macro|_PRIO_SHP_IDX
 DECL|_SCB_CCR_DIV_0_TRP|macro|_SCB_CCR_DIV_0_TRP
 DECL|_SCB_CCR_UNALIGN_TRP|macro|_SCB_CCR_UNALIGN_TRP
 DECL|_SCS_CPACR_CP10_FULL_ACCESS|macro|_SCS_CPACR_CP10_FULL_ACCESS
@@ -146,6 +149,7 @@ DECL|intlinesnum|member|uint32_t intlinesnum : 4 __packed;
 DECL|invpc|member|uint16_t invpc : 1 __packed;
 DECL|invstate|member|uint16_t invstate : 1 __packed;
 DECL|ioc|member|uint32_t ioc : 1 __packed;
+DECL|ipr|member|uint32_t ipr[8];
 DECL|ipr|member|uint8_t ipr[240]; /* 0x400 Interrupt Priority Registers */
 DECL|iregion|member|uint32_t iregion : 8 __packed;
 DECL|iser|member|uint32_t iser[8]; /* 0x100 Interrupt Set-Enable Registers */
@@ -198,6 +202,7 @@ DECL|rettobase|member|uint32_t rettobase : 1 __packed;
 DECL|revision|member|uint32_t revision : 4 __packed;
 DECL|rmode|member|uint32_t rmode : 2 __packed;
 DECL|rmode|member|uint32_t rmode : 2 __packed;
+DECL|rsvd_24_27|member|uint32_t rsvd_24_27;
 DECL|rsvd__00c_00f|member|uint32_t rsvd__00c_00f;
 DECL|rsvd__020_0ff|member|uint32_t rsvd__020_0ff[(0x100 - 0x20) / 4];
 DECL|rsvd__0_19|member|uint32_t rsvd__0_19 : 20 __packed;
@@ -240,6 +245,7 @@ DECL|rsvd__3_15|member|uint16_t rsvd__3_15 : 13 __packed;
 DECL|rsvd__3_31|member|uint32_t rsvd__3_31 : 28 __packed;
 DECL|rsvd__3_7|member|uint32_t rsvd__3_7 : 5 __packed;
 DECL|rsvd__3|member|uint32_t rsvd__3 : 1 __packed;
+DECL|rsvd__420_4ff|member|uint32_t rsvd__420_4ff[56];
 DECL|rsvd__4_31|member|uint32_t rsvd__4_31 : 28 __packed;
 DECL|rsvd__4_6|member|uint32_t rsvd__4_6 : 3 __packed;
 DECL|rsvd__4_7|member|uint16_t rsvd__4_7 : 4 __packed;
@@ -267,6 +273,7 @@ DECL|scr|member|union __scr scr; /* 0xd10 System Control Register */
 DECL|separate|member|uint32_t separate : 1 __packed;
 DECL|sevonpend|member|uint32_t sevonpend : 1 __packed;
 DECL|shcsr|member|shcsr; /* 0xd24 Sys Handler Control and State Reg */
+DECL|shpr|member|uint32_t shpr[2];
 DECL|shpr|member|uint8_t shpr[12]; /* 0xd18 System Handler Priority Registers
 DECL|size|member|uint32_t size : 5 __packed;
 DECL|sleepdeep|member|uint32_t sleepdeep : 1 __packed;
