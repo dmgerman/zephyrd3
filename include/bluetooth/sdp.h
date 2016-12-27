@@ -220,4 +220,5 @@ DECL|next|member|struct bt_sdp_record *next;
 DECL|pool|member|struct net_buf_pool *pool;
 DECL|resp_buf|member|struct net_buf *resp_buf;
 DECL|uuid|member|const struct bt_uuid *uuid;
+DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|val|member|struct bt_sdp_data_elem val; /* Attribute data */
