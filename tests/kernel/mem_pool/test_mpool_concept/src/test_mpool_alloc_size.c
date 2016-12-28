@@ -1,0 +1,2 @@
+DECL|TEST_SIZE|macro|TEST_SIZE
+DECL|test_mpool_alloc_size_roundup|function|void test_mpool_alloc_size_roundup(void)
