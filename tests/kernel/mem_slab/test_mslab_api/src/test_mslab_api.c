@@ -1,0 +1,12 @@
+DECL|mslab|variable|mslab
+DECL|test_mslab_alloc_align|function|void test_mslab_alloc_align(void)
+DECL|test_mslab_alloc_free_isr|function|void test_mslab_alloc_free_isr(void)
+DECL|test_mslab_alloc_free_thread|function|void test_mslab_alloc_free_thread(void)
+DECL|test_mslab_alloc_timeout|function|void test_mslab_alloc_timeout(void)
+DECL|test_mslab_kdefine|function|void test_mslab_kdefine(void)
+DECL|test_mslab_kinit|function|void test_mslab_kinit(void)
+DECL|test_mslab_used_get|function|void test_mslab_used_get(void)
+DECL|tmslab_alloc_align|function|static void tmslab_alloc_align(void *data)
+DECL|tmslab_alloc_free|function|void tmslab_alloc_free(void *data)
+DECL|tmslab_alloc_timeout|function|static void tmslab_alloc_timeout(void *data)
+DECL|tmslab_used_get|function|static void tmslab_used_get(void *data)

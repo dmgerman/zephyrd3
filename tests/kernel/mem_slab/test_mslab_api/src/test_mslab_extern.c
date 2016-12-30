@@ -1,0 +1,1 @@
+DECL|test_mslab_kdefine_extern|function|void test_mslab_kdefine_extern(void)
