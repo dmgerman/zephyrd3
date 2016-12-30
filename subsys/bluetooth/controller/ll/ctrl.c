@@ -165,7 +165,6 @@ DECL|packet_rx_last|member|uint8_t volatile packet_rx_last;
 DECL|packet_rx_reserve_get|function|static struct radio_pdu_node_rx *packet_rx_reserve_get(uint8_t count)
 DECL|packet_rx|member|struct radio_pdu_node_rx **packet_rx;
 DECL|packet_tx_count|member|uint8_t packet_tx_count;
-DECL|packet_tx_data_pool_size|member|uint16_t packet_tx_data_pool_size;
 DECL|packet_tx_data_size|member|uint16_t packet_tx_data_size;
 DECL|packet_tx_enqueue|function|static void packet_tx_enqueue(uint8_t max)
 DECL|packet_tx_first|member|uint8_t volatile packet_tx_first;
@@ -200,7 +199,7 @@ DECL|radio_feature_req_send|function|uint32_t radio_feature_req_send(uint16_t ha
 DECL|radio_filter_add|function|uint32_t radio_filter_add(uint8_t addr_type, uint8_t *addr)
 DECL|radio_filter_clear|function|void radio_filter_clear(void)
 DECL|radio_filter_remove|function|uint32_t radio_filter_remove(uint8_t addr_type, uint8_t *addr)
-DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
+DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint16_t packet_tx_data_size, uint8_t *mem_radio, uint16_t mem_size)
 DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
 DECL|radio_length_default_get|function|void radio_length_default_get(uint16_t *max_tx_octets, uint16_t *max_tx_time)
