@@ -8,12 +8,12 @@ DECL|H4_SCO|macro|H4_SCO
 DECL|_bt_uart_init|function|static int _bt_uart_init(struct device *unused)
 DECL|acl|member|struct bt_hci_acl_hdr acl;
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
-DECL|buf_set_type|function|static inline void buf_set_type(struct net_buf *buf)
 DECL|buf|member|struct net_buf *buf;
 DECL|copy_hdr|function|static inline void copy_hdr(struct net_buf *buf)
 DECL|discard|member|uint16_t discard;
 DECL|drv|variable|drv
 DECL|evt|member|struct bt_hci_evt_hdr evt;
+DECL|fifo|member|struct k_fifo fifo;
 DECL|get_acl_hdr|function|static inline void get_acl_hdr(void)
 DECL|get_evt_hdr|function|static inline void get_evt_hdr(void)
 DECL|h4_dev|variable|h4_dev
@@ -27,5 +27,4 @@ DECL|read_payload|function|static inline bool read_payload(void)
 DECL|remaining|member|uint16_t remaining;
 DECL|rx_thread|function|static void rx_thread(void *p1, void *p2, void *p3)
 DECL|rx|variable|rx
-DECL|sem|member|struct k_sem sem;
 DECL|type|member|uint8_t type;
