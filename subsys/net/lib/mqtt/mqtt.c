@@ -15,6 +15,7 @@ DECL|mqtt_rx_pubrec|function|int mqtt_rx_pubrec(struct mqtt_ctx *ctx, struct net
 DECL|mqtt_rx_pubrel|function|int mqtt_rx_pubrel(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_suback|function|int mqtt_rx_suback(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_unsuback|function|int mqtt_rx_unsuback(struct mqtt_ctx *ctx, struct net_buf *rx)
+DECL|mqtt_subscriber_parser|function|int mqtt_subscriber_parser(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_tx_connect|function|int mqtt_tx_connect(struct mqtt_ctx *ctx, struct mqtt_connect_msg *msg)
 DECL|mqtt_tx_disconnect|function|int mqtt_tx_disconnect(struct mqtt_ctx *ctx)
 DECL|mqtt_tx_pingreq|function|int mqtt_tx_pingreq(struct mqtt_ctx *ctx)
