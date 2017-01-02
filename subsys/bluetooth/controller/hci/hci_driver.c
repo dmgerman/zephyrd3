@@ -16,6 +16,7 @@ DECL|mayfly_is_enabled|function|uint32_t mayfly_is_enabled(uint8_t caller_id, ui
 DECL|mayfly_pend|function|void mayfly_pend(uint8_t caller_id, uint8_t callee_id)
 DECL|mayfly_prio_is_equal|function|uint32_t mayfly_prio_is_equal(uint8_t caller_id, uint8_t callee_id)
 DECL|mutex_rand|variable|mutex_rand
+DECL|prio_recv_thread|function|static void prio_recv_thread(void *p1, void *p2, void *p3)
 DECL|radio_active_callback|function|void radio_active_callback(uint8_t active)
 DECL|radio_event_callback|function|void radio_event_callback(void)
 DECL|radio_nrf5_isr|function|static void radio_nrf5_isr(void *arg)
