@@ -1,6 +1,6 @@
 DECL|FRAG_COUNT|macro|FRAG_COUNT
 DECL|LL_RESERVE|macro|LL_RESERVE
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed

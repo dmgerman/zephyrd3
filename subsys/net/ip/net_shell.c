@@ -1,6 +1,5 @@
 DECL|ADDR_LEN|macro|ADDR_LEN
-DECL|GET_STAT|macro|GET_STAT
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
@@ -10,8 +9,8 @@ DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_dat
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
 DECL|net_commands|variable|net_commands
-DECL|net_print_statistics|function|static inline void net_print_statistics(void)
 DECL|net_shell_init|function|void net_shell_init(void)
+DECL|net_shell_print_statistics|function|static inline void net_shell_print_statistics(void)
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
 DECL|route_mcast_cb|function|static void route_mcast_cb(struct net_route_entry_mcast *entry, void *user_data)
 DECL|shell_cmd_conn|function|static int shell_cmd_conn(int argc, char *argv[])

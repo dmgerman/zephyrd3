@@ -1,6 +1,6 @@
 DECL|DEFAULT_RANK_INCREMENT|macro|DEFAULT_RANK_INCREMENT
 DECL|MIN_DIFFERENCE|macro|MIN_DIFFERENCE
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|net_rpl_of0_best_dag|function|static struct net_rpl_dag *net_rpl_of0_best_dag(struct net_rpl_dag *dag1,struct net_rpl_dag *dag2)
 DECL|net_rpl_of0_best_dag|variable|net_rpl_of0_best_dag

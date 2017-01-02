@@ -16,4 +16,4 @@
 
 ccflags-y += -I$(ZEPHYR_BASE)/tests/include
 
-obj-y += test_http_header.o
+obj-y += http_header_fields.o

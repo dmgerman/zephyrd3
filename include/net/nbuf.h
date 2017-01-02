@@ -1,9 +1,6 @@
 DECL|NET_ICMP_BUF|macro|NET_ICMP_BUF
 DECL|NET_IPV4_BUF|macro|NET_IPV4_BUF
 DECL|NET_IPV6_BUF|macro|NET_IPV6_BUF
-DECL|NET_NBUF_DATA|enumerator|NET_NBUF_DATA = 2,
-DECL|NET_NBUF_RX|enumerator|NET_NBUF_RX = 0,
-DECL|NET_NBUF_TX|enumerator|NET_NBUF_TX = 1,
 DECL|NET_TCP_BUF|macro|NET_TCP_BUF
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
@@ -75,12 +72,9 @@ DECL|net_nbuf_set_ll_reserve|function|static inline void net_nbuf_set_ll_reserve
 DECL|net_nbuf_set_next_hdr|function|static inline void net_nbuf_set_next_hdr(struct net_buf *buf, uint8_t *hdr)
 DECL|net_nbuf_set_src_ipv6_addr|function|static inline void net_nbuf_set_src_ipv6_addr(struct net_buf *buf)
 DECL|net_nbuf_set_token|function|static inline void net_nbuf_set_token(struct net_buf *buf, void *token)
-DECL|net_nbuf_set_type|function|static inline void net_nbuf_set_type(struct net_buf *buf, uint8_t type)
 DECL|net_nbuf_skip|function|static inline struct net_buf *net_nbuf_skip(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t len)
 DECL|net_nbuf_tcp_data|function|static inline uint8_t *net_nbuf_tcp_data(struct net_buf *buf)
 DECL|net_nbuf_token|function|static inline void *net_nbuf_token(struct net_buf *buf)
-DECL|net_nbuf_type|enum|enum net_nbuf_type {
-DECL|net_nbuf_type|function|static inline enum net_nbuf_type net_nbuf_type(struct net_buf *buf)
 DECL|net_nbuf_udp_data|function|static inline uint8_t *net_nbuf_udp_data(struct net_buf *buf)
 DECL|net_nbuf_unref|macro|net_nbuf_unref
 DECL|net_nbuf_write_be16|function|static inline struct net_buf *net_nbuf_write_be16(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos, uint16_t data)
@@ -90,4 +84,3 @@ DECL|net_nbuf|struct|struct net_nbuf {
 DECL|next_hdr|member|uint8_t *next_hdr; /* where is the next header */
 DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|token|member|void *token;
-DECL|type|member|enum net_nbuf_type type;

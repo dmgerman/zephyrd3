@@ -1,5 +1,5 @@
 DECL|CHECK_IMIN|macro|CHECK_IMIN
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TICK_MAX|macro|TICK_MAX
 DECL|double_interval_timeout|function|static void double_interval_timeout(struct k_work *work)

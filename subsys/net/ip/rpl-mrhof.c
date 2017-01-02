@@ -3,7 +3,7 @@ DECL|MRHOF_ETX_SCALE|macro|MRHOF_ETX_SCALE
 DECL|MRHOF_MAX_LINK_METRIC|macro|MRHOF_MAX_LINK_METRIC
 DECL|MRHOF_MAX_PATH_COST|macro|MRHOF_MAX_PATH_COST
 DECL|MRHOF_PARENT_SWITCH_THRESHOLD_DIV|macro|MRHOF_PARENT_SWITCH_THRESHOLD_DIV
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|calculate_path_metric|function|static uint16_t calculate_path_metric(struct net_rpl_parent *parent)
 DECL|net_rpl_mrhof_best_dag|function|static struct net_rpl_dag *net_rpl_mrhof_best_dag(struct net_rpl_dag *dag1, struct net_rpl_dag *dag2)

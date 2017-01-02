@@ -1,5 +1,5 @@
 DECL|DEBUG|macro|DEBUG
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|__packed|variable|__packed
 DECL|compare_data|function|static bool compare_data(struct net_buf *buf, struct net_fragment_data *data)

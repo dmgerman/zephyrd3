@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|__packed|variable|__packed
 DECL|cid|member|uint8_t cid : 4;

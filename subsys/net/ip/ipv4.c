@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|net_ipv4_broadcast_address|function|const struct in_addr *net_ipv4_broadcast_address(void)
 DECL|net_ipv4_create_raw|function|struct net_buf *net_ipv4_create_raw(struct net_buf *buf, uint16_t reserve, const struct in_addr *src, const struct in_addr *dst, struct net_if *iface,

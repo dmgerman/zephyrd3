@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)

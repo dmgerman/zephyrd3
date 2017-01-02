@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|arp_entry|struct|struct arp_entry {
 DECL|arp_table|variable|arp_table
@@ -13,6 +13,6 @@ DECL|net_arp_input|function|enum net_verdict net_arp_input(struct net_buf *buf)
 DECL|net_arp_prepare|function|struct net_buf *net_arp_prepare(struct net_buf *buf)
 DECL|pending|member|struct net_buf *pending;
 DECL|prepare_arp_reply|function|static inline struct net_buf *prepare_arp_reply(struct net_if *iface,struct net_buf *req)
-DECL|prepare_arp|function|static inline struct net_buf *prepare_arp(struct net_if *iface, struct arp_entry *entry, struct net_buf *pending)
+DECL|prepare_arp|function|static inline struct net_buf *prepare_arp(struct net_if *iface, struct in_addr *next_addr, struct arp_entry *entry, struct net_buf *pending)
 DECL|send_pending|function|static inline void send_pending(struct net_if *iface, struct net_buf **buf)
 DECL|time|member|uint32_t time; /* FIXME - implement timeout functionality */
