@@ -1,5 +1,5 @@
 DECL|FRAG_REASSEMBLY_TIMEOUT|macro|FRAG_REASSEMBLY_TIMEOUT
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|REASS_CACHE_SIZE|macro|REASS_CACHE_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|add_frag_to_cache|function|static inline enum net_verdict add_frag_to_cache(struct net_buf *buf, bool first)

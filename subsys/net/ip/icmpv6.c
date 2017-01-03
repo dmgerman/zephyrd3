@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|echo_request_handler|variable|echo_request_handler
 DECL|handle_echo_request|function|static enum net_verdict handle_echo_request(struct net_buf *orig)

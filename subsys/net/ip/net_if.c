@@ -1,7 +1,7 @@
 DECL|DAD_TIMEOUT|macro|DAD_TIMEOUT
 DECL|MAX_RANDOM_FACTOR|macro|MAX_RANDOM_FACTOR
 DECL|MIN_RANDOM_FACTOR|macro|MIN_RANDOM_FACTOR
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|REACHABLE_TIME|macro|REACHABLE_TIME
 DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
@@ -19,6 +19,7 @@ DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_fin
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|link_callbacks|variable|link_callbacks
+DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
 DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
 DECL|net_if_get_by_iface|function|uint8_t net_if_get_by_iface(struct net_if *iface)

@@ -1,19 +1,33 @@
-DECL|NET_STATS_IPV4|macro|NET_STATS_IPV4
-DECL|NET_STATS_IPV4|macro|NET_STATS_IPV4
-DECL|NET_STATS_IPV6_ND|macro|NET_STATS_IPV6_ND
-DECL|NET_STATS_IPV6_ND|macro|NET_STATS_IPV6_ND
-DECL|NET_STATS_IPV6|macro|NET_STATS_IPV6
-DECL|NET_STATS_IPV6|macro|NET_STATS_IPV6
-DECL|NET_STATS_RPL_DIS|macro|NET_STATS_RPL_DIS
-DECL|NET_STATS_RPL_DIS|macro|NET_STATS_RPL_DIS
-DECL|NET_STATS_RPL|macro|NET_STATS_RPL
-DECL|NET_STATS_RPL|macro|NET_STATS_RPL
-DECL|NET_STATS_TCP|macro|NET_STATS_TCP
-DECL|NET_STATS_TCP|macro|NET_STATS_TCP
-DECL|NET_STATS_UDP|macro|NET_STATS_UDP
-DECL|NET_STATS_UDP|macro|NET_STATS_UDP
-DECL|NET_STATS|macro|NET_STATS
-DECL|NET_STATS|macro|NET_STATS
+DECL|NET_REQUEST_STATS_CMD_GET_ALL|enumerator|NET_REQUEST_STATS_CMD_GET_ALL = 1,
+DECL|NET_REQUEST_STATS_CMD_GET_ICMP|enumerator|NET_REQUEST_STATS_CMD_GET_ICMP,
+DECL|NET_REQUEST_STATS_CMD_GET_IPV4|enumerator|NET_REQUEST_STATS_CMD_GET_IPV4,
+DECL|NET_REQUEST_STATS_CMD_GET_IPV6_ND|enumerator|NET_REQUEST_STATS_CMD_GET_IPV6_ND,
+DECL|NET_REQUEST_STATS_CMD_GET_IPV6|enumerator|NET_REQUEST_STATS_CMD_GET_IPV6,
+DECL|NET_REQUEST_STATS_CMD_GET_IP_ERRORS|enumerator|NET_REQUEST_STATS_CMD_GET_IP_ERRORS,
+DECL|NET_REQUEST_STATS_CMD_GET_PROCESSING_ERROR|enumerator|NET_REQUEST_STATS_CMD_GET_PROCESSING_ERROR,
+DECL|NET_REQUEST_STATS_CMD_GET_RPL|enumerator|NET_REQUEST_STATS_CMD_GET_RPL,
+DECL|NET_REQUEST_STATS_CMD_GET_TCP|enumerator|NET_REQUEST_STATS_CMD_GET_TCP,
+DECL|NET_REQUEST_STATS_CMD_GET_UDP|enumerator|NET_REQUEST_STATS_CMD_GET_UDP,
+DECL|NET_REQUEST_STATS_GET_ALL|macro|NET_REQUEST_STATS_GET_ALL
+DECL|NET_REQUEST_STATS_GET_ICMP|macro|NET_REQUEST_STATS_GET_ICMP
+DECL|NET_REQUEST_STATS_GET_ICMP|variable|NET_REQUEST_STATS_GET_ICMP
+DECL|NET_REQUEST_STATS_GET_IPV4|macro|NET_REQUEST_STATS_GET_IPV4
+DECL|NET_REQUEST_STATS_GET_IPV4|variable|NET_REQUEST_STATS_GET_IPV4
+DECL|NET_REQUEST_STATS_GET_IPV6_ND|macro|NET_REQUEST_STATS_GET_IPV6_ND
+DECL|NET_REQUEST_STATS_GET_IPV6_ND|variable|NET_REQUEST_STATS_GET_IPV6_ND
+DECL|NET_REQUEST_STATS_GET_IPV6|macro|NET_REQUEST_STATS_GET_IPV6
+DECL|NET_REQUEST_STATS_GET_IPV6|variable|NET_REQUEST_STATS_GET_IPV6
+DECL|NET_REQUEST_STATS_GET_IP_ERRORS|macro|NET_REQUEST_STATS_GET_IP_ERRORS
+DECL|NET_REQUEST_STATS_GET_PROCESSING_ERROR|macro|NET_REQUEST_STATS_GET_PROCESSING_ERROR
+DECL|NET_REQUEST_STATS_GET_RPL|macro|NET_REQUEST_STATS_GET_RPL
+DECL|NET_REQUEST_STATS_GET_RPL|variable|NET_REQUEST_STATS_GET_RPL
+DECL|NET_REQUEST_STATS_GET_TCP|macro|NET_REQUEST_STATS_GET_TCP
+DECL|NET_REQUEST_STATS_GET_TCP|variable|NET_REQUEST_STATS_GET_TCP
+DECL|NET_REQUEST_STATS_GET_UDP|macro|NET_REQUEST_STATS_GET_UDP
+DECL|NET_REQUEST_STATS_GET_UDP|variable|NET_REQUEST_STATS_GET_UDP
+DECL|_NET_STATS_BASE|macro|_NET_STATS_BASE
+DECL|_NET_STATS_CODE|macro|_NET_STATS_CODE
+DECL|_NET_STATS_LAYER|macro|_NET_STATS_LAYER
 DECL|__NET_STATS_H|macro|__NET_STATS_H
 DECL|ackerr|member|net_stats_t ackerr;
 DECL|chkerr|member|net_stats_t chkerr;
@@ -51,6 +65,7 @@ DECL|loop_errors|member|uint16_t loop_errors;
 DECL|loop_warnings|member|uint16_t loop_warnings;
 DECL|malformed_msgs|member|uint16_t malformed_msgs;
 DECL|mem_overflows|member|uint16_t mem_overflows;
+DECL|net_request_stats_cmd|enum|enum net_request_stats_cmd {
 DECL|net_stats_icmp|struct|struct net_stats_icmp {
 DECL|net_stats_ip_errors|struct|struct net_stats_ip_errors {
 DECL|net_stats_ipv6_nd|struct|struct net_stats_ipv6_nd {
@@ -59,6 +74,7 @@ DECL|net_stats_rpl_dao_ack|struct|struct net_stats_rpl_dao_ack {
 DECL|net_stats_rpl_dao|struct|struct net_stats_rpl_dao {
 DECL|net_stats_rpl_dio|struct|struct net_stats_rpl_dio {
 DECL|net_stats_rpl_dis|struct|struct net_stats_rpl_dis {
+DECL|net_stats_rpl|struct|struct net_stats_rpl {
 DECL|net_stats_tcp|struct|struct net_stats_tcp {
 DECL|net_stats_t|typedef|typedef uint32_t net_stats_t;
 DECL|net_stats_udp|struct|struct net_stats_udp {
@@ -78,7 +94,7 @@ DECL|recv|member|net_stats_t recv;
 DECL|resets|member|uint16_t resets;
 DECL|rexmit|member|net_stats_t rexmit;
 DECL|root_repairs|member|uint16_t root_repairs;
-DECL|rpl|member|} rpl;
+DECL|rpl|member|struct net_stats_rpl rpl;
 DECL|rst|member|net_stats_t rst;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;

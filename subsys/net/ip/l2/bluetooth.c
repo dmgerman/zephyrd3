@@ -1,9 +1,8 @@
 DECL|CHAN_CTXT|macro|CHAN_CTXT
 DECL|L2CAP_IPSP_MTU|macro|L2CAP_IPSP_MTU
 DECL|L2CAP_IPSP_PSM|macro|L2CAP_IPSP_PSM
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|bt_context_data|variable|bt_context_data
 DECL|bt_context|struct|struct bt_context {
 DECL|bt_if_api|variable|bt_if_api

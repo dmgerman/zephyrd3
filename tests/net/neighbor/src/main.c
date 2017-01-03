@@ -1,4 +1,4 @@
-DECL|NET_DEBUG|macro|NET_DEBUG
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|add_count|variable|add_count
 DECL|clear_called|variable|clear_called
