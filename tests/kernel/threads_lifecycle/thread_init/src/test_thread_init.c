@@ -20,7 +20,6 @@ DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|stack_coop|variable|stack_coop
 DECL|stack_preempt|variable|stack_preempt
-DECL|stack_size|variable|stack_size
 DECL|t_create|variable|t_create
 DECL|test_kdefine_coop_thread|function|void test_kdefine_coop_thread(void)
 DECL|test_kdefine_preempt_thread|function|void test_kdefine_preempt_thread(void)
