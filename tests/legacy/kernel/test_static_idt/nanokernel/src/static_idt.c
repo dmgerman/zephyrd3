@@ -1,3 +1,4 @@
+DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|TEST_SOFT_INT|macro|TEST_SOFT_INT
 DECL|TEST_SPUR_INT|macro|TEST_SPUR_INT
 DECL|excHandlerExecuted|variable|excHandlerExecuted
