@@ -1,6 +1,7 @@
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|MAX_IND_STR_LEN|macro|MAX_IND_STR_LEN
+DECL|ag_indicator_handle_values|function|void ag_indicator_handle_values(struct at_client *hf_at, uint32_t index, uint32_t value)
 DECL|ag_ind|variable|ag_ind
 DECL|brsf_finish|function|int brsf_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
 DECL|brsf_handle|function|int brsf_handle(struct at_client *hf_at)
@@ -14,7 +15,6 @@ DECL|cind_handle_values|function|static void cind_handle_values(struct at_client
 DECL|cind_handle|function|int cind_handle(struct at_client *hf_at)
 DECL|cind_resp|function|int cind_resp(struct at_client *hf_at, struct net_buf *buf)
 DECL|cind_status_finish|function|int cind_status_finish(struct at_client *hf_at, struct net_buf *buf, enum at_result result)
-DECL|cind_status_handle_values|function|void cind_status_handle_values(struct at_client *hf_at, uint32_t index, uint32_t value)
 DECL|cind_status_handle|function|int cind_status_handle(struct at_client *hf_at)
 DECL|cind_status_resp|function|int cind_status_resp(struct at_client *hf_at, struct net_buf *buf)
 DECL|cmer_finish|function|int cmer_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
