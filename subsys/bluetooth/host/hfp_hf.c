@@ -27,3 +27,4 @@ DECL|hfp_hf_send_cmd|function|int hfp_hf_send_cmd(struct bt_hfp_hf *hf, at_resp_
 DECL|max|member|uint32_t max;
 DECL|min|member|uint32_t min;
 DECL|name|member|char *name;
+DECL|unsolicited_cb|function|int unsolicited_cb(struct at_client *hf_at, struct net_buf *buf)
