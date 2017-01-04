@@ -78,6 +78,7 @@ DECL|sensor_trigger_set_t|typedef|typedef int (*sensor_trigger_set_t)(struct dev
 DECL|sensor_trigger_set|function|static inline int sensor_trigger_set(struct device *dev, struct sensor_trigger *trig, sensor_trigger_handler_t handler)
 DECL|sensor_trigger_type|enum|enum sensor_trigger_type {
 DECL|sensor_trigger|struct|struct sensor_trigger {
+DECL|sensor_value_to_double|function|static inline double sensor_value_to_double(struct sensor_value *val)
 DECL|sensor_value_type|enum|enum sensor_value_type {
 DECL|sensor_value|struct|struct sensor_value {
 DECL|trig_config|member|struct sensor_trigger_config trig_config;
