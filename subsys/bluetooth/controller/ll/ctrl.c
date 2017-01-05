@@ -1,4 +1,3 @@
-DECL|FAST_ENC_PROCEDURE|macro|FAST_ENC_PROCEDURE
 DECL|OFFSET_M_MAX|macro|OFFSET_M_MAX
 DECL|OFFSET_S_MAX|macro|OFFSET_S_MAX
 DECL|QUICK_FIX_EXTRA_WINDOW|macro|QUICK_FIX_EXTRA_WINDOW
@@ -78,12 +77,11 @@ DECL|enc_rsp_send|function|static void enc_rsp_send(struct connection *conn)
 DECL|event_active|function|static void event_active(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv_stop|function|void event_adv_stop(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
 DECL|event_adv|function|static void event_adv(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, void *context)
-DECL|event_callback|function|static void event_callback(void)
 DECL|event_ch_map_prep|function|static inline void event_ch_map_prep(struct connection *conn, uint16_t event_counter)
 DECL|event_common_prepare|function|static void event_common_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint32_t *ticks_xtal_to_start, uint32_t *ticks_active_to_start, uint32_t ticks_preempt_to_start,
 DECL|event_conn_update_prep|function|static inline uint32_t event_conn_update_prep(struct connection *conn, uint16_t event_counter, uint32_t ticks_at_expire)
-DECL|event_conn_update_st_init|function|static inline void event_conn_update_st_init(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct work *work_sched_offset,
-DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct work *work_sched_offset)
+DECL|event_conn_update_st_init|function|event_conn_update_st_init(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct mayfly *mayfly_sched_offset,
+DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, uint16_t event_counter, struct pdu_data *pdu_ctrl_tx, uint32_t ticks_at_expire, struct mayfly *mayfly_sched_offset)
 DECL|event_conn_update_st_rsp|function|static inline void event_conn_update_st_rsp(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|event_connection_prepare|function|static void event_connection_prepare(uint32_t ticks_at_expire, uint32_t remainder, uint16_t lazy, struct connection *conn)
 DECL|event_enc_prep|function|static inline void event_enc_prep(struct connection *conn)
@@ -133,10 +131,10 @@ DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
 DECL|isr_rx_adv|function|static inline uint32_t isr_rx_adv(uint8_t devmatch_ok, uint8_t irkmatch_ok,uint8_t irkmatch_id, uint8_t rssi_ready)
 DECL|isr_rx_conn_pkt_ack|function|static inline uint8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
 DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline uint8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx,uint8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl_rej|function|isr_rx_conn_pkt_ctrl_rej(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data_rx, uint8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, struct pdu_data *pdu_data_rx, uint8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_release|function|static inline void isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
-DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct pdu_data *pdu_data_rx)
+DECL|isr_rx_conn_pkt_ctrl_rej|function|isr_rx_conn_pkt_ctrl_rej(struct radio_pdu_node_rx *radio_pdu_node_rx, uint8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, uint8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_release|function|isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
+DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct radio_pdu_node_tx **tx_release, uint8_t *rx_enqueue)
 DECL|isr_rx_conn|function|static inline void isr_rx_conn(uint8_t crc_ok, uint8_t trx_done, uint8_t rssi_ready)
 DECL|isr_rx_obs|function|static inline uint32_t isr_rx_obs(uint8_t irkmatch_id, uint8_t rssi_ready)
 DECL|isr|function|static void isr(void)
@@ -146,6 +144,17 @@ DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
 DECL|link_rx_pool|member|void *link_rx_pool;
 DECL|link_rx_tail|member|void *volatile link_rx_tail;
+DECL|mayfly_radio_active|function|static void mayfly_radio_active(void *params)
+DECL|mayfly_radio_inactive|function|static void mayfly_radio_inactive(void *params)
+DECL|mayfly_radio_stop|function|static void mayfly_radio_stop(void *params)
+DECL|mayfly_sched_after_mstr_free_offset_get|function|static void mayfly_sched_after_mstr_free_offset_get(void *params)
+DECL|mayfly_sched_free_win_offset_calc|function|static void mayfly_sched_free_win_offset_calc(void *params)
+DECL|mayfly_sched_win_offset_select|function|static void mayfly_sched_win_offset_select(void *params)
+DECL|mayfly_sched_win_offset_use|function|static void mayfly_sched_win_offset_use(void *params)
+DECL|mayfly_xtal_retain|function|static void mayfly_xtal_retain(uint8_t retain)
+DECL|mayfly_xtal_start|function|static void mayfly_xtal_start(void *params)
+DECL|mayfly_xtal_stop_calc|function|static void mayfly_xtal_stop_calc(void *params)
+DECL|mayfly_xtal_stop|function|static void mayfly_xtal_stop(void *params)
 DECL|nirk|member|uint8_t nirk;
 DECL|observer|member|struct observer observer;
 DECL|observer|struct|struct observer {
@@ -156,6 +165,7 @@ DECL|packet_release_last|member|uint8_t volatile packet_release_last;
 DECL|packet_rx_acquired_count_get|function|static uint8_t packet_rx_acquired_count_get(void)
 DECL|packet_rx_acquire|member|uint8_t packet_rx_acquire;
 DECL|packet_rx_allocate|function|static void packet_rx_allocate(uint8_t max)
+DECL|packet_rx_callback|function|static void packet_rx_callback(void)
 DECL|packet_rx_count|member|uint8_t packet_rx_count;
 DECL|packet_rx_data_count|member|uint8_t packet_rx_data_count;
 DECL|packet_rx_data_pool_size|member|uint16_t packet_rx_data_pool_size;
@@ -165,7 +175,6 @@ DECL|packet_rx_last|member|uint8_t volatile packet_rx_last;
 DECL|packet_rx_reserve_get|function|static struct radio_pdu_node_rx *packet_rx_reserve_get(uint8_t count)
 DECL|packet_rx|member|struct radio_pdu_node_rx **packet_rx;
 DECL|packet_tx_count|member|uint8_t packet_tx_count;
-DECL|packet_tx_data_pool_size|member|uint16_t packet_tx_data_pool_size;
 DECL|packet_tx_data_size|member|uint16_t packet_tx_data_size;
 DECL|packet_tx_enqueue|function|static void packet_tx_enqueue(uint8_t max)
 DECL|packet_tx_first|member|uint8_t volatile packet_tx_first;
@@ -200,7 +209,7 @@ DECL|radio_feature_req_send|function|uint32_t radio_feature_req_send(uint16_t ha
 DECL|radio_filter_add|function|uint32_t radio_filter_add(uint8_t addr_type, uint8_t *addr)
 DECL|radio_filter_clear|function|void radio_filter_clear(void)
 DECL|radio_filter_remove|function|uint32_t radio_filter_remove(uint8_t addr_type, uint8_t *addr)
-DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint8_t *mem_radio, uint16_t mem_size)
+DECL|radio_init|function|uint32_t radio_init(void *hf_clock, uint8_t sca, uint8_t connection_count_max, uint8_t rx_count_max, uint8_t tx_count_max, uint16_t packet_data_octets_max, uint16_t packet_tx_data_size, uint8_t *mem_radio, uint16_t mem_size)
 DECL|radio_irk_add|function|uint32_t radio_irk_add(uint8_t *irk)
 DECL|radio_irk_clear|function|void radio_irk_clear(void)
 DECL|radio_length_default_get|function|void radio_length_default_get(uint16_t *max_tx_octets, uint16_t *max_tx_time)
@@ -235,8 +244,8 @@ DECL|scan_data|member|struct radio_adv_data scan_data;
 DECL|scan_state|member|uint8_t scan_state:1;
 DECL|scan_type|member|uint8_t scan_type:1;
 DECL|sca|member|uint8_t sca;
-DECL|sched_after_master_free_offset_get|function|static void sched_after_master_free_offset_get(uint16_t conn_interval, uint32_t ticks_slot, uint32_t ticks_anchor, uint32_t *win_offset_us)
-DECL|sched_after_master_free_slot_get|function|static void sched_after_master_free_slot_get(uint8_t user_id, uint32_t ticks_slot_abs, uint32_t *ticks_anchor, uint32_t *us_offset)
+DECL|sched_after_mstr_free_offset_get|function|static void sched_after_mstr_free_offset_get(uint16_t conn_interval, uint32_t ticks_slot, uint32_t ticks_anchor, uint32_t *win_offset_us)
+DECL|sched_after_mstr_free_slot_get|function|static void sched_after_mstr_free_slot_get(uint8_t user_id, uint32_t ticks_slot_abs, uint32_t *ticks_anchor, uint32_t *us_offset)
 DECL|sched_free_win_offset_calc|function|static void sched_free_win_offset_calc(struct connection *conn_curr, uint8_t is_select, uint32_t *ticks_to_offset_next, uint16_t conn_interval, uint8_t *offset_max,
 DECL|start_enc_rsp_send|function|static void start_enc_rsp_send(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|state|enum|enum state {
@@ -257,14 +266,3 @@ DECL|tx_packet_set|function|static void tx_packet_set(struct connection *conn, s
 DECL|unknown_rsp_send|function|static void unknown_rsp_send(struct connection *conn, uint8_t type)
 DECL|version_ind_send|function|static void version_ind_send(struct connection *conn)
 DECL|win_offset_us|member|uint32_t win_offset_us;
-DECL|work_radio_active|function|static void work_radio_active(void *params)
-DECL|work_radio_inactive|function|static void work_radio_inactive(void *params)
-DECL|work_radio_stop|function|static void work_radio_stop(void *params)
-DECL|work_sched_after_master_free_offset_get|function|static void work_sched_after_master_free_offset_get(void *params)
-DECL|work_sched_free_win_offset_calc|function|static void work_sched_free_win_offset_calc(void *params)
-DECL|work_sched_win_offset_select|function|static void work_sched_win_offset_select(void *params)
-DECL|work_sched_win_offset_use|function|static void work_sched_win_offset_use(void *params)
-DECL|work_xtal_retain|function|static void work_xtal_retain(uint8_t retain)
-DECL|work_xtal_start|function|static void work_xtal_start(void *params)
-DECL|work_xtal_stop_calc|function|static void work_xtal_stop_calc(void *params)
-DECL|work_xtal_stop|function|static void work_xtal_stop(void *params)

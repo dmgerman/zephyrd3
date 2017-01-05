@@ -15,6 +15,7 @@ DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf)
 DECL|hci_cmd_handle|function|int hci_cmd_handle(struct net_buf *cmd, struct net_buf *evt)
 DECL|hci_evt_encode|function|void hci_evt_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
+DECL|hci_evt_is_discardable|function|bool hci_evt_is_discardable(struct radio_pdu_node_rx *node_rx)
 DECL|hci_num_cmplt_encode|function|void hci_num_cmplt_encode(struct net_buf *buf, uint16_t handle, uint8_t num)
 DECL|info_cmd_handle|function|static int info_cmd_handle(uint8_t ocf, struct net_buf *cmd, struct net_buf *evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(struct net_buf *buf, struct net_buf *evt)

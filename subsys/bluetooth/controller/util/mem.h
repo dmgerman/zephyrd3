@@ -1,1 +1,3 @@
+DECL|MALIGN|macro|MALIGN
+DECL|MROUND|macro|MROUND
 DECL|_MEM_H_|macro|_MEM_H_

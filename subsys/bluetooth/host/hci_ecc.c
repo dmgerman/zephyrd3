@@ -9,6 +9,6 @@ DECL|ecc_send|function|static int ecc_send(struct net_buf *buf)
 DECL|ecc_thread|function|static void ecc_thread(void *p1, void *p2, void *p3)
 DECL|emulate_le_generate_dhkey|function|static void emulate_le_generate_dhkey(struct net_buf *buf)
 DECL|emulate_le_p256_public_key_cmd|function|static void emulate_le_p256_public_key_cmd(struct net_buf *buf)
-DECL|generate_keys|function|static uint8_t generate_keys(uint8_t public_key[64], uint32_t private_key[32])
+DECL|generate_keys|function|static uint8_t generate_keys(EccPoint *pkey, uint32_t private_key[8])
 DECL|private_key|variable|private_key
 DECL|send_cmd_status|function|static void send_cmd_status(uint16_t opcode, uint8_t status)

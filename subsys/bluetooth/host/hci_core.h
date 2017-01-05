@@ -28,6 +28,7 @@ DECL|features|member|uint8_t features[LMP_FEAT_PAGES_COUNT][8];
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
 DECL|id_addr|member|bt_addr_le_t id_addr;
+DECL|init|member|struct k_work init;
 DECL|irk|member|uint8_t irk[16];
 DECL|le|member|struct bt_dev_le le;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;

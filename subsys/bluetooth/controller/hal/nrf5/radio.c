@@ -1,5 +1,6 @@
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
+DECL|isr_radio|function|void isr_radio(void *param)
 DECL|radio_aa_set|function|void radio_aa_set(uint8_t *aa)
 DECL|radio_ar_configure|function|void radio_ar_configure(uint32_t nirk, void *irk)
 DECL|radio_ar_has_match|function|uint32_t radio_ar_has_match(void)
@@ -25,7 +26,6 @@ DECL|radio_is_done|function|uint32_t radio_is_done(void)
 DECL|radio_is_idle|function|uint32_t radio_is_idle(void)
 DECL|radio_is_ready|function|uint32_t radio_is_ready(void)
 DECL|radio_isr_set|function|void radio_isr_set(radio_isr_fp fp_radio_isr)
-DECL|radio_isr|function|void radio_isr(void)
 DECL|radio_phy_set|function|void radio_phy_set(uint8_t phy)
 DECL|radio_pkt_configure|function|void radio_pkt_configure(uint8_t preamble16, uint8_t bits_len, uint8_t max_len)
 DECL|radio_pkt_empty_get|function|void *radio_pkt_empty_get(void)
