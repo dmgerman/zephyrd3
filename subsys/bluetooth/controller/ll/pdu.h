@@ -1,3 +1,4 @@
+DECL|BDADDR_SIZE|macro|BDADDR_SIZE
 DECL|PDU_ADV_TYPE_ADV_IND|enumerator|PDU_ADV_TYPE_ADV_IND = 0x00,
 DECL|PDU_ADV_TYPE_CONNECT_REQ|enumerator|PDU_ADV_TYPE_CONNECT_REQ = 0x05,
 DECL|PDU_ADV_TYPE_DIRECT_IND|enumerator|PDU_ADV_TYPE_DIRECT_IND = 0x01,
@@ -63,7 +64,6 @@ DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_ind|member|struct pdu_adv_payload_adv_ind adv_ind;
-DECL|avg|member|uint32_t avg;
 DECL|channel_map_req|member|struct pdu_data_llctrl_channel_map_req channel_map_req;
 DECL|channel_map|member|uint8_t channel_map[5];
 DECL|chm|member|uint8_t chm[5];
@@ -74,6 +74,7 @@ DECL|conn_update_req|member|struct pdu_data_llctrl_conn_update_req conn_update_r
 DECL|connect_req|member|struct pdu_adv_payload_connect_req connect_req;
 DECL|crc_init|member|uint8_t crc_init[3];
 DECL|ctrldata|member|} __packed ctrldata;
+DECL|cur|member|uint8_t cur;
 DECL|data|member|uint8_t data[31];
 DECL|data|member|uint8_t data[31];
 DECL|direct_ind|member|struct pdu_adv_payload_direct_ind direct_ind;
@@ -104,6 +105,7 @@ DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
+DECL|lcur|member|uint8_t lcur;
 DECL|length_req|member|struct pdu_data_llctrl_length_req_rsp length_req;
 DECL|length_rsp|member|struct pdu_data_llctrl_length_req_rsp length_rsp;
 DECL|len|member|uint8_t len:6;
@@ -112,13 +114,15 @@ DECL|ll_id|member|uint8_t ll_id:2;
 DECL|llctrl|member|struct pdu_data_llctrl llctrl;
 DECL|lldata|member|uint8_t lldata[1];
 DECL|lldata|member|} __packed lldata;
+DECL|lmax|member|uint8_t lmax;
+DECL|lmin|member|uint8_t lmin;
 DECL|max_rx_octets|member|uint16_t max_rx_octets;
 DECL|max_rx_time|member|uint16_t max_rx_time;
 DECL|max_tx_octets|member|uint16_t max_tx_octets;
 DECL|max_tx_time|member|uint16_t max_tx_time;
-DECL|max|member|uint32_t max;
+DECL|max|member|uint8_t max;
 DECL|md|member|uint8_t md:1;
-DECL|min|member|uint32_t min;
+DECL|min|member|uint8_t min;
 DECL|nesn|member|uint8_t nesn:1;
 DECL|nrf_radio_s1|member|uint8_t nrf_radio_s1;
 DECL|offset0|member|uint16_t offset0;
