@@ -5,3 +5,4 @@ DECL|ieee802154_is_scanning|function|static inline bool ieee802154_is_scanning(s
 DECL|ieee802154_is_scanning|macro|ieee802154_is_scanning
 DECL|ieee802154_mgmt_init|function|static inline void ieee802154_mgmt_init(struct net_if *iface)
 DECL|ieee802154_mgmt_init|macro|ieee802154_mgmt_init
+DECL|ieee802154_shell_init|macro|ieee802154_shell_init
