@@ -18,6 +18,7 @@ DECL|NET_L2_INIT|macro|NET_L2_INIT
 DECL|OFFLOAD_IP_L2_CTX_TYPE|macro|OFFLOAD_IP_L2_CTX_TYPE
 DECL|OFFLOAD_IP_L2|macro|OFFLOAD_IP_L2
 DECL|__NET_L2_H__|macro|__NET_L2_H__
+DECL|enable|member|int (*enable)(struct net_if *iface, bool state);
 DECL|net_l2|struct|struct net_l2 {
 DECL|offload_ip|member|struct net_l2_offload_ip *offload_ip;
 DECL|recv|member|enum net_verdict (*recv)(struct net_if *iface, struct net_buf *buf);
