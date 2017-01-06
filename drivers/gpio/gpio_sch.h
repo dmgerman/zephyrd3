@@ -17,7 +17,7 @@ DECL|gpio_sch_data|struct|struct gpio_sch_data {
 DECL|gtne|member|uint32_t gtne;
 DECL|gtpe|member|uint32_t gtpe;
 DECL|int_regs|member|} int_regs;
-DECL|poll_timer|member|struct nano_timer poll_timer;
+DECL|poll_timer|member|struct k_timer poll_timer;
 DECL|polling_stack|member|char __stack polling_stack[GPIO_SCH_POLLING_STACK_SIZE];
 DECL|poll|member|uint8_t poll;
 DECL|regs|member|uint32_t regs;

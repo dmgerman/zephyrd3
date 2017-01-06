@@ -17,4 +17,3 @@ DECL|pud_sel|member|union gpio_pcal9535a_port_data pud_sel;
 DECL|reg_cache|member|} reg_cache;
 DECL|stride|member|uint8_t stride[2];
 DECL|stride|member|uint8_t stride[2];
-DECL|timer|member|struct nano_timer timer;
