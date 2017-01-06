@@ -78,6 +78,7 @@ DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, struct net_buf_simple *buf)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
+DECL|discov_a2src|variable|discov_a2src
 DECL|discov_hfpag|variable|discov_hfpag
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
@@ -116,6 +117,7 @@ DECL|rfcomm_bredr_ops|variable|rfcomm_bredr_ops
 DECL|rfcomm_bredr_recv|function|static void rfcomm_bredr_recv(struct bt_rfcomm_dlc *dlci, struct net_buf *buf)
 DECL|rfcomm_dlc|variable|rfcomm_dlc
 DECL|rfcomm_server|variable|rfcomm_server
+DECL|sdp_a2src_user|function|static uint8_t sdp_a2src_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sdp_hfp_ag_user|function|static uint8_t sdp_hfp_ag_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
