@@ -47,7 +47,6 @@ DECL|net_tcp|struct|struct net_tcp {
 DECL|recv_ack|member|uint32_t recv_ack;
 DECL|recv_max_ack|member|uint32_t recv_max_ack;
 DECL|recv_mss|member|uint16_t recv_mss;
-DECL|retransmit_timer|member|struct k_delayed_work retransmit_timer;
 DECL|retry_timeout_ms|member|uint32_t retry_timeout_ms;
 DECL|retry_timer|member|struct k_timer retry_timer;
 DECL|send_ack|member|uint32_t send_ack;
