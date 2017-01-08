@@ -23,8 +23,8 @@ DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t 
 DECL|line_queue_init|function|static void line_queue_init(void)
 DECL|print_module_commands|function|static void print_module_commands(const int module)
 DECL|prompt|variable|prompt
+DECL|select_module|function|static int select_module(int argc, char *argv[])
 DECL|set_default_module|function|static int set_default_module(const char *name)
-DECL|set_module|function|static int set_module(int argc, char *argv[])
 DECL|shell_init|function|void shell_init(const char *str)
 DECL|shell_register_app_cmd_handler|function|void shell_register_app_cmd_handler(shell_cmd_function_t handler)
 DECL|shell_register_default_module|function|void shell_register_default_module(const char *name)
