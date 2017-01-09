@@ -1,3 +1,8 @@
+DECL|AT_CMD_GET_VALUE|enumerator|AT_CMD_GET_VALUE,
+DECL|AT_CMD_PROCESS_VALUE|enumerator|AT_CMD_PROCESS_VALUE,
+DECL|AT_CMD_START|enumerator|AT_CMD_START,
+DECL|AT_CMD_STATE_END_LF|enumerator|AT_CMD_STATE_END_LF,
+DECL|AT_CMD_STATE_END|enumerator|AT_CMD_STATE_END
 DECL|AT_RESULT_ERROR|enumerator|AT_RESULT_ERROR
 DECL|AT_RESULT_OK|enumerator|AT_RESULT_OK,
 DECL|AT_STATE_END|enumerator|AT_STATE_END
@@ -9,11 +14,6 @@ DECL|AT_STATE_START_CR|enumerator|AT_STATE_START_CR,
 DECL|AT_STATE_START_LF|enumerator|AT_STATE_START_LF,
 DECL|AT_STATE_START|enumerator|AT_STATE_START,
 DECL|AT_STATE_UNSOLICITED_CMD|enumerator|AT_STATE_UNSOLICITED_CMD,
-DECL|CMD_GET_VALUE|enumerator|CMD_GET_VALUE,
-DECL|CMD_PROCESS_VALUE|enumerator|CMD_PROCESS_VALUE,
-DECL|CMD_START|enumerator|CMD_START,
-DECL|CMD_STATE_END_LF|enumerator|CMD_STATE_END_LF,
-DECL|CMD_STATE_END|enumerator|CMD_STATE_END
 DECL|at_client|struct|struct at_client {
 DECL|at_cmd_state|enum|enum at_cmd_state {
 DECL|at_finish_cb_t|typedef|typedef int (*at_finish_cb_t)(struct at_client *at, struct net_buf *buf,
