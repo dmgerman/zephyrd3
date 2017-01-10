@@ -26,7 +26,11 @@ DECL|flags|member|uint8_t flags;
 DECL|i2c_addr|member|uint16_t i2c_addr;
 DECL|i2c_api_configure_t|typedef|typedef int (*i2c_api_configure_t)(struct device *dev,
 DECL|i2c_api_full_io_t|typedef|typedef int (*i2c_api_full_io_t)(struct device *dev,
+DECL|i2c_burst_read16|function|static inline int i2c_burst_read16(struct device *dev, uint16_t dev_addr, uint16_t start_addr, uint8_t *buf, uint8_t num_bytes)
+DECL|i2c_burst_read_addr|function|static inline int i2c_burst_read_addr(struct device *dev, uint16_t dev_addr, uint8_t *start_addr, const uint8_t addr_size, uint8_t *buf, uint8_t num_bytes)
 DECL|i2c_burst_read|function|static inline int i2c_burst_read(struct device *dev, uint16_t dev_addr, uint8_t start_addr, uint8_t *buf, uint8_t num_bytes)
+DECL|i2c_burst_write16|function|static inline int i2c_burst_write16(struct device *dev, uint16_t dev_addr, uint16_t start_addr, uint8_t *buf, uint8_t num_bytes)
+DECL|i2c_burst_write_addr|function|static inline int i2c_burst_write_addr(struct device *dev, uint16_t dev_addr, uint8_t *start_addr, const uint8_t addr_size, uint8_t *buf, uint8_t num_bytes)
 DECL|i2c_burst_write|function|static inline int i2c_burst_write(struct device *dev, uint16_t dev_addr, uint8_t start_addr, uint8_t *buf, uint8_t num_bytes)
 DECL|i2c_client_config|struct|struct i2c_client_config {
 DECL|i2c_configure|function|static inline int i2c_configure(struct device *dev, uint32_t dev_config)
@@ -34,8 +38,14 @@ DECL|i2c_driver_api|struct|struct i2c_driver_api {
 DECL|i2c_master|member|char *i2c_master;
 DECL|i2c_msg|struct|struct i2c_msg {
 DECL|i2c_read|function|static inline int i2c_read(struct device *dev, uint8_t *buf, uint32_t num_bytes, uint16_t addr)
+DECL|i2c_reg_read16|function|static inline int i2c_reg_read16(struct device *dev, uint16_t dev_addr, uint16_t reg_addr, uint8_t *value)
+DECL|i2c_reg_read_addr|function|static inline int i2c_reg_read_addr(struct device *dev, uint16_t dev_addr, uint8_t *reg_addr, const uint8_t addr_size, uint8_t *value)
 DECL|i2c_reg_read_byte|function|static inline int i2c_reg_read_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t *value)
+DECL|i2c_reg_update16|function|static inline int i2c_reg_update16(struct device *dev, uint16_t dev_addr, uint16_t reg_addr, uint8_t mask, uint8_t value)
+DECL|i2c_reg_update_addr|function|static inline int i2c_reg_update_addr(struct device *dev, uint16_t dev_addr, uint8_t *reg_addr, uint8_t addr_size, uint8_t mask,
 DECL|i2c_reg_update_byte|function|static inline int i2c_reg_update_byte(struct device *dev, uint8_t dev_addr, uint8_t reg_addr, uint8_t mask, uint8_t value)
+DECL|i2c_reg_write16|function|static inline int i2c_reg_write16(struct device *dev, uint16_t dev_addr, uint16_t reg_addr, uint8_t value)
+DECL|i2c_reg_write_addr|function|static inline int i2c_reg_write_addr(struct device *dev, uint16_t dev_addr, uint8_t *reg_addr, const uint8_t addr_size, uint8_t value)
 DECL|i2c_reg_write_byte|function|static inline int i2c_reg_write_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t value)
 DECL|i2c_transfer|function|static inline int i2c_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t addr)
 DECL|i2c_write|function|static inline int i2c_write(struct device *dev, uint8_t *buf, uint32_t num_bytes, uint16_t addr)
