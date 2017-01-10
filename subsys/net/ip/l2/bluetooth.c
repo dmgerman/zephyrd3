@@ -3,11 +3,16 @@ DECL|L2CAP_IPSP_MTU|macro|L2CAP_IPSP_MTU
 DECL|L2CAP_IPSP_PSM|macro|L2CAP_IPSP_PSM
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|bt_connect|function|static int bt_connect(uint32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_context_data|variable|bt_context_data
 DECL|bt_context|struct|struct bt_context {
 DECL|bt_if_api|variable|bt_if_api
 DECL|bt_iface_init|function|static void bt_iface_init(struct net_if *iface)
 DECL|bt_iface_send|function|static int bt_iface_send(struct net_if *iface, struct net_buf *buf)
+DECL|conn_callbacks|variable|conn_callbacks
+DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
+DECL|default_conn|variable|default_conn
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
 DECL|dst|member|bt_addr_t dst;
 DECL|iface|member|struct net_if *iface;
 DECL|ipsp_accept|function|static int ipsp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
