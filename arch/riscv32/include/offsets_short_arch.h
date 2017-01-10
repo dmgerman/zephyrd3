@@ -1,0 +1,15 @@
+DECL|_offsets_short_arch__h_|macro|_offsets_short_arch__h_
+DECL|_thread_offset_to_s0|macro|_thread_offset_to_s0
+DECL|_thread_offset_to_s10|macro|_thread_offset_to_s10
+DECL|_thread_offset_to_s11|macro|_thread_offset_to_s11
+DECL|_thread_offset_to_s1|macro|_thread_offset_to_s1
+DECL|_thread_offset_to_s2|macro|_thread_offset_to_s2
+DECL|_thread_offset_to_s3|macro|_thread_offset_to_s3
+DECL|_thread_offset_to_s4|macro|_thread_offset_to_s4
+DECL|_thread_offset_to_s5|macro|_thread_offset_to_s5
+DECL|_thread_offset_to_s6|macro|_thread_offset_to_s6
+DECL|_thread_offset_to_s7|macro|_thread_offset_to_s7
+DECL|_thread_offset_to_s8|macro|_thread_offset_to_s8
+DECL|_thread_offset_to_s9|macro|_thread_offset_to_s9
+DECL|_thread_offset_to_sp|macro|_thread_offset_to_sp
+DECL|_thread_offset_to_swap_return_value|macro|_thread_offset_to_swap_return_value
