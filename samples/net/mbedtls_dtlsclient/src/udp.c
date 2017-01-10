@@ -1,4 +1,3 @@
-DECL|client_addr|variable|client_addr
 DECL|server_addr|variable|server_addr
 DECL|udp_init|function|int udp_init(struct udp_context *ctx)
 DECL|udp_received|function|static void udp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)

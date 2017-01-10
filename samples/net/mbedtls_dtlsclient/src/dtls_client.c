@@ -5,7 +5,6 @@ DECL|HOSTNAME|macro|HOSTNAME
 DECL|MBEDTLS_EXIT_FAILURE|macro|MBEDTLS_EXIT_FAILURE
 DECL|MBEDTLS_EXIT_SUCCESS|macro|MBEDTLS_EXIT_SUCCESS
 DECL|STACK_SIZE|macro|STACK_SIZE
-DECL|client_addr|variable|client_addr
 DECL|connect_failed|enumerator|connect_failed,
 DECL|ctr_drbg_seed_failed|enumerator|ctr_drbg_seed_failed,
 DECL|dtls_client|function|void dtls_client(void)
