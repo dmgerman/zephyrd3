@@ -31,7 +31,6 @@ DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcod
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
 DECL|bt_hci_driver_register|function|int bt_hci_driver_register(struct bt_hci_driver *drv)
-DECL|bt_hci_driver_unregister|function|void bt_hci_driver_unregister(struct bt_hci_driver *drv)
 DECL|bt_hci_get_cmd_opcode|function|uint16_t bt_hci_get_cmd_opcode(struct net_buf *buf)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|static int bt_init(void)
