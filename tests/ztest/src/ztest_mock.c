@@ -1,5 +1,3 @@
-DECL|BITS_PER_UL|macro|BITS_PER_UL
-DECL|DEFINE_BITFIELD|macro|DEFINE_BITFIELD
 DECL|_cleanup_mock|function|int _cleanup_mock(void)
 DECL|_init_mock|function|void _init_mock(void)
 DECL|_init_mock|function|void _init_mock(void)
