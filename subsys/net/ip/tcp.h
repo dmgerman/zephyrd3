@@ -22,6 +22,7 @@ DECL|NET_TCP_MAX_WIN|macro|NET_TCP_MAX_WIN
 DECL|NET_TCP_MSS_HEADER|macro|NET_TCP_MSS_HEADER
 DECL|NET_TCP_MSS_SIZE|macro|NET_TCP_MSS_SIZE
 DECL|NET_TCP_PSH|macro|NET_TCP_PSH
+DECL|NET_TCP_RECV_MSS_SET|macro|NET_TCP_RECV_MSS_SET
 DECL|NET_TCP_RETRYING|macro|NET_TCP_RETRYING
 DECL|NET_TCP_RST|macro|NET_TCP_RST
 DECL|NET_TCP_SYN_RCVD|enumerator|NET_TCP_SYN_RCVD,
@@ -45,7 +46,6 @@ DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
 DECL|net_tcp|struct|struct net_tcp {
 DECL|recv_max_ack|member|uint32_t recv_max_ack;
-DECL|recv_mss|member|uint16_t recv_mss;
 DECL|recv_user_data|member|void *recv_user_data;
 DECL|retry_timeout_shift|member|uint8_t retry_timeout_shift;
 DECL|retry_timer|member|struct k_timer retry_timer;

@@ -20,6 +20,7 @@ DECL|net_tcp_add_options|function|static inline int net_tcp_add_options(struct n
 DECL|net_tcp_alloc|function|struct net_tcp *net_tcp_alloc(struct net_context *context)
 DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp, enum net_tcp_state new_state)
 DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_data)
+DECL|net_tcp_get_recv_mss|function|uint16_t net_tcp_get_recv_mss(const struct net_tcp *tcp)
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_buf **buf)
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_buf **buf)
