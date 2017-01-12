@@ -24,13 +24,6 @@ DECL|_SCS_FPU_CCR_LSPEN_ENABLE|macro|_SCS_FPU_CCR_LSPEN_ENABLE
 DECL|_SCS_FPU_CCR_LSPEN_Msk|macro|_SCS_FPU_CCR_LSPEN_Msk
 DECL|_SCS_FPU_CCR_LSPEN_Pos|macro|_SCS_FPU_CCR_LSPEN_Pos
 DECL|_SCS__H_|macro|_SCS__H_
-DECL|_ScsFoldItDisable|function|static inline void _ScsFoldItDisable(void)
-DECL|_ScsFoldItEnable|function|static inline void _ScsFoldItEnable(void)
-DECL|_ScsIntMultiCycleInstDisable|function|static inline void _ScsIntMultiCycleInstDisable(void)
-DECL|_ScsIntMultiCycleInstEnable|function|static inline void _ScsIntMultiCycleInstEnable(void)
-DECL|_ScsNumIrqGet|function|static inline int _ScsNumIrqGet(void)
-DECL|_ScsWriteBufDisable|function|static inline void _ScsWriteBufDisable(void)
-DECL|_ScsWriteBufEnable|function|static inline void _ScsWriteBufEnable(void)
 DECL|__actlr|union|union __actlr {
 DECL|__aircr|union|union __aircr {
 DECL|__ccr|union|union __ccr {
