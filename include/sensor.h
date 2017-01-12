@@ -45,14 +45,11 @@ DECL|SENSOR_TRIG_THRESHOLD|enumerator|SENSOR_TRIG_THRESHOLD,
 DECL|SENSOR_TRIG_TIMER|enumerator|SENSOR_TRIG_TIMER,
 DECL|SENSOR_TRIG_WQ_GLOBAL|macro|SENSOR_TRIG_WQ_GLOBAL
 DECL|SENSOR_TRIG_WQ_OWN|macro|SENSOR_TRIG_WQ_OWN
-DECL|SENSOR_VALUE_TYPE_DOUBLE|enumerator|SENSOR_VALUE_TYPE_DOUBLE,
-DECL|SENSOR_VALUE_TYPE_INT_PLUS_MICRO|enumerator|SENSOR_VALUE_TYPE_INT_PLUS_MICRO,
 DECL|__SENSOR_H__|macro|__SENSOR_H__
 DECL|always_null|member|void *always_null;
 DECL|attr_set|member|sensor_attr_set_t attr_set;
 DECL|channel_get|member|sensor_channel_get_t channel_get;
 DECL|chan|member|enum sensor_channel chan;
-DECL|dval|member|double dval;
 DECL|fiber_config|member|struct fiber_config fiber_config;
 DECL|mode|member|enum sensor_trigger_mode mode;
 DECL|sample_fetch|member|sensor_sample_fetch_t sample_fetch;
@@ -79,11 +76,9 @@ DECL|sensor_trigger_set|function|static inline int sensor_trigger_set(struct dev
 DECL|sensor_trigger_type|enum|enum sensor_trigger_type {
 DECL|sensor_trigger|struct|struct sensor_trigger {
 DECL|sensor_value_to_double|function|static inline double sensor_value_to_double(struct sensor_value *val)
-DECL|sensor_value_type|enum|enum sensor_value_type {
 DECL|sensor_value|struct|struct sensor_value {
 DECL|trig_config|member|struct sensor_trigger_config trig_config;
 DECL|trigger_set|member|sensor_trigger_set_t trigger_set;
 DECL|type|member|enum sensor_trigger_type type;
-DECL|type|member|enum sensor_value_type type;
 DECL|val1|member|int32_t val1;
 DECL|val2|member|int32_t val2;
