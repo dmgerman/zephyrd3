@@ -8,5 +8,4 @@ DECL|CC2520_GPIO_VREG_EN|macro|CC2520_GPIO_VREG_EN
 DECL|CC2520_PINMUX_PRIORITY|macro|CC2520_PINMUX_PRIORITY
 DECL|cc2520_configure_gpios|function|struct cc2520_gpio_configuration *cc2520_configure_gpios(void)
 DECL|cc2520_gpios|variable|cc2520_gpios
-DECL|cc2520_mux_config|variable|cc2520_mux_config
 DECL|fdrm_k64f_cc2520_pinmux_setup|function|static int fdrm_k64f_cc2520_pinmux_setup(struct device *dev)

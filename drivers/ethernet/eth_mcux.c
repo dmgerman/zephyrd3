@@ -1,4 +1,4 @@
-DECL|ETH_KSDK_BUFFER_SIZE|macro|ETH_KSDK_BUFFER_SIZE
+DECL|ETH_MCUX_BUFFER_SIZE|macro|ETH_MCUX_BUFFER_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|api_funcs_0|variable|api_funcs_0
@@ -9,9 +9,9 @@ DECL|eth_0_iface_init|function|static void eth_0_iface_init(struct net_if *iface
 DECL|eth_0_init|function|static int eth_0_init(struct device *dev)
 DECL|eth_callback|function|static void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
 DECL|eth_context|struct|struct eth_context {
-DECL|eth_ksdk_error_isr|function|static void eth_ksdk_error_isr(void *p)
-DECL|eth_ksdk_rx_isr|function|static void eth_ksdk_rx_isr(void *p)
-DECL|eth_ksdk_tx_isr|function|static void eth_ksdk_tx_isr(void *p)
+DECL|eth_mcux_error_isr|function|static void eth_mcux_error_isr(void *p)
+DECL|eth_mcux_rx_isr|function|static void eth_mcux_rx_isr(void *p)
+DECL|eth_mcux_tx_isr|function|static void eth_mcux_tx_isr(void *p)
 DECL|eth_rx|function|static void eth_rx(struct device *iface)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_buf *buf)
 DECL|frame_buf|member|uint8_t frame_buf[1500];
