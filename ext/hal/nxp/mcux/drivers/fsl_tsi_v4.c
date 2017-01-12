@@ -1,0 +1,8 @@
+DECL|TSI_Calibrate|function|void TSI_Calibrate(TSI_Type *base, tsi_calibration_data_t *calBuff)
+DECL|TSI_ClearStatusFlags|function|void TSI_ClearStatusFlags(TSI_Type *base, uint32_t mask)
+DECL|TSI_Deinit|function|void TSI_Deinit(TSI_Type *base)
+DECL|TSI_DisableInterrupts|function|void TSI_DisableInterrupts(TSI_Type *base, uint32_t mask)
+DECL|TSI_EnableInterrupts|function|void TSI_EnableInterrupts(TSI_Type *base, uint32_t mask)
+DECL|TSI_GetLowPowerModeDefaultConfig|function|void TSI_GetLowPowerModeDefaultConfig(tsi_config_t *userConfig)
+DECL|TSI_GetNormalModeDefaultConfig|function|void TSI_GetNormalModeDefaultConfig(tsi_config_t *userConfig)
+DECL|TSI_Init|function|void TSI_Init(TSI_Type *base, const tsi_config_t *config)

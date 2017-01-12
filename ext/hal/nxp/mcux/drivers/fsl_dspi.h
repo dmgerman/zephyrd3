@@ -1,4 +1,5 @@
 DECL|DSPI_ClearStatusFlags|function|static inline void DSPI_ClearStatusFlags(SPI_Type *base, uint32_t statusFlags)
+DECL|DSPI_DUMMY_DATA|macro|DSPI_DUMMY_DATA
 DECL|DSPI_DisableDMA|function|static inline void DSPI_DisableDMA(SPI_Type *base, uint32_t mask)
 DECL|DSPI_DisableInterrupts|function|static inline void DSPI_DisableInterrupts(SPI_Type *base, uint32_t mask)
 DECL|DSPI_EnableDMA|function|static inline void DSPI_EnableDMA(SPI_Type *base, uint32_t mask)
@@ -9,7 +10,6 @@ DECL|DSPI_GetStatusFlags|function|static inline uint32_t DSPI_GetStatusFlags(SPI
 DECL|DSPI_IsMaster|function|static inline bool DSPI_IsMaster(SPI_Type *base)
 DECL|DSPI_MASTER_CTAR_MASK|macro|DSPI_MASTER_CTAR_MASK
 DECL|DSPI_MASTER_CTAR_SHIFT|macro|DSPI_MASTER_CTAR_SHIFT
-DECL|DSPI_MASTER_DUMMY_DATA|macro|DSPI_MASTER_DUMMY_DATA
 DECL|DSPI_MASTER_PCS_MASK|macro|DSPI_MASTER_PCS_MASK
 DECL|DSPI_MASTER_PCS_SHIFT|macro|DSPI_MASTER_PCS_SHIFT
 DECL|DSPI_MasterGetFormattedCommand|function|static inline uint32_t DSPI_MasterGetFormattedCommand(dspi_command_data_config_t *command)
@@ -18,7 +18,6 @@ DECL|DSPI_MasterWriteData|function|static inline void DSPI_MasterWriteData(SPI_T
 DECL|DSPI_ReadData|function|static inline uint32_t DSPI_ReadData(SPI_Type *base)
 DECL|DSPI_SLAVE_CTAR_MASK|macro|DSPI_SLAVE_CTAR_MASK
 DECL|DSPI_SLAVE_CTAR_SHIFT|macro|DSPI_SLAVE_CTAR_SHIFT
-DECL|DSPI_SLAVE_DUMMY_DATA|macro|DSPI_SLAVE_DUMMY_DATA
 DECL|DSPI_SetAllPcsPolarity|function|static inline void DSPI_SetAllPcsPolarity(SPI_Type *base, uint32_t mask)
 DECL|DSPI_SetFifoEnable|function|static inline void DSPI_SetFifoEnable(SPI_Type *base, bool enableTxFifo, bool enableRxFifo)
 DECL|DSPI_SetMasterSlaveMode|function|static inline void DSPI_SetMasterSlaveMode(SPI_Type *base, dspi_master_slave_mode_t mode)
