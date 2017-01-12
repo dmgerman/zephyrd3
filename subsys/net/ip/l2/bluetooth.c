@@ -8,6 +8,7 @@ DECL|bt_active_scan|function|static void bt_active_scan(void)
 DECL|bt_connect|function|static int bt_connect(uint32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_context_data|variable|bt_context_data
 DECL|bt_context|struct|struct bt_context {
+DECL|bt_disconnect|function|static int bt_disconnect(uint32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_if_api|variable|bt_if_api
 DECL|bt_iface_init|function|static void bt_iface_init(struct net_if *iface)
 DECL|bt_iface_send|function|static int bt_iface_send(struct net_if *iface, struct net_buf *buf)
