@@ -73,7 +73,6 @@ DECL|__ticks_to_ms|function|static inline int64_t __ticks_to_ms(int64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_kernel__h_|macro|_kernel__h_
-DECL|_legacy_data|member|void *_legacy_data;
 DECL|_mailbox|member|uint32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE int32_t _ms_to_ticks(int32_t ms)
@@ -154,6 +153,8 @@ DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
 DECL|k_timer_remaining_get|function|static inline int32_t k_timer_remaining_get(struct k_timer *timer)
 DECL|k_timer_stop_t|typedef|typedef void (*k_timer_stop_t)(struct k_timer *timer);
+DECL|k_timer_user_data_get|function|static inline void *k_timer_user_data_get(struct k_timer *timer)
+DECL|k_timer_user_data_set|function|static inline void k_timer_user_data_set(struct k_timer *timer, void *user_data)
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *work);
 DECL|k_work_init|function|static inline void k_work_init(struct k_work *work, k_work_handler_t handler)
@@ -212,6 +213,7 @@ DECL|tx_data|member|void *tx_data;
 DECL|tx_msg_queue|member|_wait_q_t tx_msg_queue;
 DECL|tx_target_thread|member|k_tid_t tx_target_thread;
 DECL|used_msgs|member|uint32_t used_msgs;
+DECL|user_data|member|void *user_data;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
