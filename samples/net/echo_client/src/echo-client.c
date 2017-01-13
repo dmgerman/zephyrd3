@@ -12,7 +12,9 @@ DECL|PEER_PORT|macro|PEER_PORT
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|WAIT_TIME|macro|WAIT_TIME
+DECL|cb|variable|cb
 DECL|compare_data|function|static bool compare_data(struct net_buf *buf, int expecting_len)
+DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
 DECL|expecting_ipv4|variable|expecting_ipv4
 DECL|expecting_ipv6|variable|expecting_ipv6
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **mcast_recv6)
