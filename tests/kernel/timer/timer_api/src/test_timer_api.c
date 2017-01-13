@@ -17,4 +17,9 @@ DECL|test_timer_period_0|function|void test_timer_period_0(void)
 DECL|test_timer_status_get_anytime|function|void test_timer_status_get_anytime(void)
 DECL|test_timer_status_get|function|void test_timer_status_get(void)
 DECL|test_timer_status_sync|function|void test_timer_status_sync(void)
+DECL|test_timer_user_data|function|void test_timer_user_data(void)
 DECL|timer|variable|timer
+DECL|user_data_correct|variable|user_data_correct
+DECL|user_data_timer_handler|function|static void user_data_timer_handler(struct k_timer *timer)
+DECL|user_data_timer|variable|user_data_timer
+DECL|user_data|variable|user_data
