@@ -14,6 +14,7 @@ DECL|NET_CONTEXT_TYPE|macro|NET_CONTEXT_TYPE
 DECL|NET_CONTEXT_UNCONNECTED|enumerator|NET_CONTEXT_UNCONNECTED = 0,
 DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
 DECL|conn_handler|member|struct net_conn_handle *conn_handler;
+DECL|connect_cb|member|net_context_connect_cb_t connect_cb;
 DECL|flags|member|uint8_t flags;
 DECL|iface|member|uint8_t iface;
 DECL|local|member|struct sockaddr_ptr local;
