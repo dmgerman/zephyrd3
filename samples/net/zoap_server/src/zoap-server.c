@@ -1,6 +1,9 @@
 DECL|ALL_NODES_LOCAL_COAP_MCAST|macro|ALL_NODES_LOCAL_COAP_MCAST
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|STACKSIZE|macro|STACKSIZE
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|context|variable|context
 DECL|join_coap_multicast_group|function|static bool join_coap_multicast_group(void)
 DECL|main|function|void main(void)
