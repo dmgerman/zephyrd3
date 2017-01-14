@@ -8,6 +8,7 @@ DECL|clean_session|member|uint8_t clean_session:1;
 DECL|connected|member|uint8_t connected:1;
 DECL|connect|member|void (*connect)(struct mqtt_ctx *ctx);
 DECL|disconnect|member|void (*disconnect)(struct mqtt_ctx *ctx);
+DECL|malformed|member|void (*malformed)(struct mqtt_ctx *ctx, uint16_t pkt_type);
 DECL|mqtt_app|enum|enum mqtt_app {
 DECL|mqtt_ctx|struct|struct mqtt_ctx {
 DECL|net_ctx|member|struct net_context *net_ctx;
