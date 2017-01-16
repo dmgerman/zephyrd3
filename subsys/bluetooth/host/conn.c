@@ -61,6 +61,7 @@ DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
+DECL|le_param_req|function|bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
