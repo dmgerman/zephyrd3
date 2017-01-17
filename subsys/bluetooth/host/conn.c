@@ -5,7 +5,6 @@ DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
-DECL|background_scan_init|function|static void background_scan_init(void)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
