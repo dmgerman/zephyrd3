@@ -35,6 +35,7 @@ DECL|more|member|bool more;
 DECL|next_timeout|function|static int32_t next_timeout(int32_t previous)
 DECL|num|member|int num;
 DECL|option_context|struct|struct option_context {
+DECL|sockaddr_equal|function|static bool sockaddr_equal(const struct sockaddr *a, const struct sockaddr *b)
 DECL|update_control_block1|function|static int update_control_block1(struct zoap_block_context *ctx, int block, int size)
 DECL|update_control_block2|function|static int update_control_block2(struct zoap_block_context *ctx, int block, int size)
 DECL|update_descriptive_block|function|static int update_descriptive_block(struct zoap_block_context *ctx, int block, int size)
@@ -47,6 +48,7 @@ DECL|zoap_add_option|function|int zoap_add_option(struct zoap_packet *pkt, uint1
 DECL|zoap_add_size1_option|function|int zoap_add_size1_option(struct zoap_packet *pkt, struct zoap_block_context *ctx)
 DECL|zoap_add_size2_option|function|int zoap_add_size2_option(struct zoap_packet *pkt, struct zoap_block_context *ctx)
 DECL|zoap_block_transfer_init|function|int zoap_block_transfer_init(struct zoap_block_context *ctx, enum zoap_block_size block_size, size_t total_size)
+DECL|zoap_find_observer_by_addr|function|struct zoap_observer *zoap_find_observer_by_addr(struct zoap_observer *observers, size_t len, const struct sockaddr *addr)
 DECL|zoap_find_options|function|int zoap_find_options(const struct zoap_packet *pkt, uint16_t code, struct zoap_option *options, uint16_t veclen)
 DECL|zoap_handle_request|function|int zoap_handle_request(struct zoap_packet *pkt,struct zoap_resource *resources, const struct sockaddr *from)
 DECL|zoap_header_get_code|function|uint8_t zoap_header_get_code(const struct zoap_packet *pkt)
