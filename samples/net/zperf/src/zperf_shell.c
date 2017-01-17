@@ -5,6 +5,7 @@ DECL|MY_SHELL_MODULE|macro|MY_SHELL_MODULE
 DECL|MY_SRC_PORT|macro|MY_SRC_PORT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|WAIT_CONNECT|macro|WAIT_CONNECT
 DECL|commands|variable|commands
 DECL|execute_upload|function|static int execute_upload(struct net_context *context6, struct net_context *context4, sa_family_t family, struct sockaddr_in6 *ipv6, struct sockaddr_in *ipv4,
 DECL|in4_addr_dst|variable|in4_addr_dst
@@ -22,6 +23,7 @@ DECL|shell_cmd_udp_download|function|static int shell_cmd_udp_download(int argc,
 DECL|shell_cmd_upload2|function|static int shell_cmd_upload2(int argc, char *argv[])
 DECL|shell_cmd_upload|function|static int shell_cmd_upload(int argc, char *argv[])
 DECL|shell_cmd_version|function|static int shell_cmd_version(int argc, char *argv[])
+DECL|shell_tcp_upload2_usage|function|static void shell_tcp_upload2_usage(void)
 DECL|shell_tcp_upload_print_stats|function|static void shell_tcp_upload_print_stats(struct zperf_results *results)
 DECL|shell_tcp_upload_usage|function|static void shell_tcp_upload_usage(void)
 DECL|shell_udp_upload2_usage|function|static void shell_udp_upload2_usage(void)
