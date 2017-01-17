@@ -1,3 +1,4 @@
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_pool|variable|bt_smp_pool

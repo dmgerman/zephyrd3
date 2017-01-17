@@ -1,6 +1,5 @@
 DECL|A2DP_NO_SPACE|macro|A2DP_NO_SPACE
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|avdtp_cb|variable|avdtp_cb
 DECL|bt_a2dp_connect|function|struct bt_a2dp *bt_a2dp_connect(struct bt_conn *conn)
 DECL|bt_a2dp_init|function|int bt_a2dp_init(void)

@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|bt_keys_add_type|function|void bt_keys_add_type(struct bt_keys *keys, int type)
 DECL|bt_keys_clear_all|function|void bt_keys_clear_all(void)
 DECL|bt_keys_clear|function|void bt_keys_clear(struct bt_keys *keys)

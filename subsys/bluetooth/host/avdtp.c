@@ -1,8 +1,7 @@
 DECL|AVDTP_CHAN|macro|AVDTP_CHAN
 DECL|AVDTP_KWORK|macro|AVDTP_KWORK
 DECL|AVDTP_TIMEOUT|macro|AVDTP_TIMEOUT
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CONFIG_BLUETOOTH_AVDTP_CONN|macro|CONFIG_BLUETOOTH_AVDTP_CONN
 DECL|avdtp_timeout|function|static void avdtp_timeout(struct k_work *work)
 DECL|bt_avdtp_connect|function|int bt_avdtp_connect(struct bt_conn *conn, struct bt_avdtp *session)

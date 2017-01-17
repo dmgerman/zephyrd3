@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
 DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
@@ -77,5 +76,5 @@ DECL|ssp_pair_method|function|static uint8_t ssp_pair_method(const struct bt_con
 DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_conn *conn)
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
-DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
+DECL|state2str|function|static inline const char *state2str(bt_conn_state_t state)
 DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)
