@@ -42,7 +42,6 @@ DECL|seq_greater|function|static inline bool seq_greater(uint32_t seq1, uint32_t
 DECL|seq|member|uint32_t seq;
 DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
-DECL|tcp_lock|variable|tcp_lock
 DECL|tcp_retry_expired|function|static void tcp_retry_expired(struct k_timer *timer)
 DECL|tcp_segment|struct|struct tcp_segment {
 DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
