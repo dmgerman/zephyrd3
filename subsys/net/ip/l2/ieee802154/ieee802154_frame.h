@@ -1,3 +1,9 @@
+DECL|IEEE8021254_AUTH_TAG_LENGTH_128|macro|IEEE8021254_AUTH_TAG_LENGTH_128
+DECL|IEEE8021254_AUTH_TAG_LENGTH_32|macro|IEEE8021254_AUTH_TAG_LENGTH_32
+DECL|IEEE8021254_AUTH_TAG_LENGTH_64|macro|IEEE8021254_AUTH_TAG_LENGTH_64
+DECL|IEEE8021254_KEY_ID_FIELD_INDEX_LENGTH|macro|IEEE8021254_KEY_ID_FIELD_INDEX_LENGTH
+DECL|IEEE8021254_KEY_ID_FIELD_SRC_4_INDEX_LENGTH|macro|IEEE8021254_KEY_ID_FIELD_SRC_4_INDEX_LENGTH
+DECL|IEEE8021254_KEY_ID_FIELD_SRC_8_INDEX_LENGTH|macro|IEEE8021254_KEY_ID_FIELD_SRC_8_INDEX_LENGTH
 DECL|IEEE802154_ACK_PKT_LENGTH|macro|IEEE802154_ACK_PKT_LENGTH
 DECL|IEEE802154_ADDR_MODE_EXTENDED|enumerator|IEEE802154_ADDR_MODE_EXTENDED = 0x3,
 DECL|IEEE802154_ADDR_MODE_NONE|enumerator|IEEE802154_ADDR_MODE_NONE = 0x0,
@@ -45,10 +51,25 @@ DECL|IEEE802154_FRAME_TYPE_LLDN|enumerator|IEEE802154_FRAME_TYPE_LLDN = 0x4,
 DECL|IEEE802154_FRAME_TYPE_MAC_COMMAND|enumerator|IEEE802154_FRAME_TYPE_MAC_COMMAND = 0x3,
 DECL|IEEE802154_FRAME_TYPE_MULTIPURPOSE|enumerator|IEEE802154_FRAME_TYPE_MULTIPURPOSE = 0x5,
 DECL|IEEE802154_FRAME_TYPE_RESERVED|enumerator|IEEE802154_FRAME_TYPE_RESERVED = 0x6,
+DECL|IEEE802154_KEY_ID_MODE_IMPLICIT|enumerator|IEEE802154_KEY_ID_MODE_IMPLICIT = 0x0,
+DECL|IEEE802154_KEY_ID_MODE_INDEX|enumerator|IEEE802154_KEY_ID_MODE_INDEX = 0x1,
+DECL|IEEE802154_KEY_ID_MODE_SRC_4_INDEX|enumerator|IEEE802154_KEY_ID_MODE_SRC_4_INDEX = 0x2,
+DECL|IEEE802154_KEY_ID_MODE_SRC_8_INDEX|enumerator|IEEE802154_KEY_ID_MODE_SRC_8_INDEX = 0x3,
+DECL|IEEE802154_KEY_MAX_LEN|macro|IEEE802154_KEY_MAX_LEN
 DECL|IEEE802154_MFR_LENGTH|macro|IEEE802154_MFR_LENGTH
 DECL|IEEE802154_MIN_LENGTH|macro|IEEE802154_MIN_LENGTH
 DECL|IEEE802154_MTU|macro|IEEE802154_MTU
 DECL|IEEE802154_PAN_ID_LENGTH|macro|IEEE802154_PAN_ID_LENGTH
+DECL|IEEE802154_SECURITY_CF_LENGTH|macro|IEEE802154_SECURITY_CF_LENGTH
+DECL|IEEE802154_SECURITY_FRAME_COUNTER_LENGTH|macro|IEEE802154_SECURITY_FRAME_COUNTER_LENGTH
+DECL|IEEE802154_SECURITY_LEVEL_ENC_MIC_128|enumerator|IEEE802154_SECURITY_LEVEL_ENC_MIC_128 = 0x7,
+DECL|IEEE802154_SECURITY_LEVEL_ENC_MIC_32|enumerator|IEEE802154_SECURITY_LEVEL_ENC_MIC_32 = 0x5,
+DECL|IEEE802154_SECURITY_LEVEL_ENC_MIC_64|enumerator|IEEE802154_SECURITY_LEVEL_ENC_MIC_64 = 0x6,
+DECL|IEEE802154_SECURITY_LEVEL_ENC|enumerator|IEEE802154_SECURITY_LEVEL_ENC = 0x4,
+DECL|IEEE802154_SECURITY_LEVEL_MIC_128|enumerator|IEEE802154_SECURITY_LEVEL_MIC_128 = 0x3,
+DECL|IEEE802154_SECURITY_LEVEL_MIC_32|enumerator|IEEE802154_SECURITY_LEVEL_MIC_32 = 0x1,
+DECL|IEEE802154_SECURITY_LEVEL_MIC_64|enumerator|IEEE802154_SECURITY_LEVEL_MIC_64 = 0x2,
+DECL|IEEE802154_SECURITY_LEVEL_NONE|enumerator|IEEE802154_SECURITY_LEVEL_NONE = 0x0,
 DECL|IEEE802154_SHORT_ADDR_LENGTH|macro|IEEE802154_SHORT_ADDR_LENGTH
 DECL|IEEE802154_SIMPLE_ADDR_LENGTH|macro|IEEE802154_SIMPLE_ADDR_LENGTH
 DECL|IEEE802154_VERSION_802154_2003|enumerator|IEEE802154_VERSION_802154_2003 = 0x0,
@@ -76,6 +97,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|addr|member|struct ieee802154_address addr;
 DECL|addr|member|struct ieee802154_address addr;
 DECL|alloc_addr|member|uint8_t alloc_addr : 1;
@@ -83,6 +107,7 @@ DECL|ar|member|uint16_t ar :1;
 DECL|assoc_req|member|struct ieee802154_cmd_assoc_req assoc_req;
 DECL|assoc_res|member|struct ieee802154_cmd_assoc_res assoc_res;
 DECL|association|member|uint16_t association : 1;
+DECL|aux_sec|member|struct ieee802154_aux_security_hdr *aux_sec;
 DECL|bc_order|member|uint16_t bc_order : 4;
 DECL|beacon|member|struct ieee802154_beacon *beacon;
 DECL|ble|member|uint16_t ble : 1;
@@ -93,6 +118,7 @@ DECL|channel|member|uint8_t channel;
 DECL|ci|member|} ci;
 DECL|command|member|struct ieee802154_command *command;
 DECL|comp|member|struct ieee802154_address_field_comp comp;
+DECL|control|member|struct ieee802154_security_control_field control;
 DECL|coord_realign|member|struct ieee802154_cmd_coord_realign coord_realign;
 DECL|coordinator_short_addr|member|uint16_t coordinator_short_addr;
 DECL|coordinator|member|uint16_t coordinator : 1;
@@ -106,6 +132,7 @@ DECL|dst|member|} dst;
 DECL|ext_addr|member|uint8_t *ext_addr;
 DECL|ext_addr|member|uint8_t ext_addr[0];
 DECL|fcs|member|uint16_t fcs;
+DECL|frame_counter|member|uint32_t frame_counter;
 DECL|frame_pending|member|uint16_t frame_pending :1;
 DECL|frame_type|member|uint16_t frame_type :3;
 DECL|frame_version|member|uint16_t frame_version :2;
@@ -121,6 +148,7 @@ DECL|ieee802154_address_field|struct|struct ieee802154_address_field {
 DECL|ieee802154_addressing_mode|enum|enum ieee802154_addressing_mode {
 DECL|ieee802154_address|struct|struct ieee802154_address {
 DECL|ieee802154_association_status_field|enum|enum ieee802154_association_status_field {
+DECL|ieee802154_aux_security_hdr|struct|struct ieee802154_aux_security_hdr {
 DECL|ieee802154_beacon_sf|struct|struct ieee802154_beacon_sf {
 DECL|ieee802154_beacon|struct|struct ieee802154_beacon {
 DECL|ieee802154_cfi|enum|enum ieee802154_cfi {
@@ -138,11 +166,22 @@ DECL|ieee802154_gts_dir|struct|struct ieee802154_gts_dir {
 DECL|ieee802154_gts_request|struct|struct ieee802154_gts_request {
 DECL|ieee802154_gts_spec|struct|struct ieee802154_gts_spec {
 DECL|ieee802154_gts|struct|struct ieee802154_gts {
+DECL|ieee802154_key_id_mode|enum|enum ieee802154_key_id_mode {
+DECL|ieee802154_key_identifier_field|struct|struct ieee802154_key_identifier_field {
 DECL|ieee802154_mfr|struct|struct ieee802154_mfr {
 DECL|ieee802154_mhr|struct|struct ieee802154_mhr {
 DECL|ieee802154_mpdu|struct|struct ieee802154_mpdu {
 DECL|ieee802154_pas_spec|struct|struct ieee802154_pas_spec {
+DECL|ieee802154_security_control_field|struct|struct ieee802154_security_control_field {
+DECL|ieee802154_security_level|enum|enum ieee802154_security_level {
 DECL|ieee802154_version|enum|enum ieee802154_version {
+DECL|key_id_mode|member|uint8_t key_id_mode :2;
+DECL|key_index|member|uint8_t key_index;
+DECL|key_index|member|uint8_t key_index;
+DECL|key_index|member|uint8_t key_index;
+DECL|key_src|member|uint8_t key_src[4];
+DECL|key_src|member|uint8_t key_src[8];
+DECL|kif|member|struct ieee802154_key_identifier_field kif;
 DECL|length|member|uint8_t length : 4;
 DECL|length|member|uint8_t length : 4;
 DECL|length|member|uint8_t length : 4;
@@ -150,6 +189,9 @@ DECL|len|member|uint16_t len;
 DECL|mask|member|uint8_t mask : 7;
 DECL|mfr|member|struct ieee802154_mfr *mfr;
 DECL|mhr|member|struct ieee802154_mhr mhr;
+DECL|mode_1|member|} mode_1;
+DECL|mode_2|member|} mode_2;
+DECL|mode_3|member|} mode_3;
 DECL|nb_eap|member|uint8_t nb_eap : 3;
 DECL|nb_sap|member|uint8_t nb_sap : 3;
 DECL|pan_id_comp|member|uint16_t pan_id_comp :1;
@@ -171,9 +213,11 @@ DECL|reserved|member|uint16_t reserved :1;
 DECL|reserved|member|uint8_t reserved : 1;
 DECL|reserved|member|uint8_t reserved : 2;
 DECL|reserved|member|uint8_t reserved : 4;
+DECL|reserved|member|uint8_t reserved :3;
 DECL|rx_on|member|uint8_t rx_on : 1;
 DECL|sec_capability|member|uint8_t sec_capability : 1;
 DECL|security_enabled|member|uint16_t security_enabled :1;
+DECL|security_level|member|uint8_t security_level :3;
 DECL|seq_num_suppr|member|uint16_t seq_num_suppr :1;
 DECL|sequence|member|uint8_t sequence;
 DECL|sf_order|member|uint16_t sf_order : 4;
