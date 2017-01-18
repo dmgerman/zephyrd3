@@ -13,6 +13,7 @@ DECL|large_update_path|variable|large_update_path
 DECL|large_update_put|function|static int large_update_put(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|main|function|void main(void)
 DECL|piggyback_get|function|static int piggyback_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
+DECL|plain_text_format|variable|plain_text_format
 DECL|query_get|function|static int query_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|query_path|variable|query_path
 DECL|resources|variable|resources
