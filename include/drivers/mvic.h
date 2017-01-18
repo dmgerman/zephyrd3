@@ -22,4 +22,5 @@ DECL|MVIC_TPR|macro|MVIC_TPR
 DECL|_IRQ_TRIGGER_EDGE|macro|_IRQ_TRIGGER_EDGE
 DECL|_IRQ_TRIGGER_LEVEL|macro|_IRQ_TRIGGER_LEVEL
 DECL|__IRQ_CONTROLLER_VECTOR_MAPPING|macro|__IRQ_CONTROLLER_VECTOR_MAPPING
+DECL|__irq_controller_eoi|function|static inline void __irq_controller_eoi(void)
 DECL|eax|variable|eax

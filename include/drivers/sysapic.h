@@ -5,3 +5,4 @@ DECL|_IRQ_POLARITY_LOW|macro|_IRQ_POLARITY_LOW
 DECL|_IRQ_TRIGGER_EDGE|macro|_IRQ_TRIGGER_EDGE
 DECL|_IRQ_TRIGGER_LEVEL|macro|_IRQ_TRIGGER_LEVEL
 DECL|__INC_SYS_APIC_H|macro|__INC_SYS_APIC_H
+DECL|__irq_controller_eoi|function|static inline void __irq_controller_eoi(void)
