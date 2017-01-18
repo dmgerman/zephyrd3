@@ -11,8 +11,6 @@ DECL|__set_one_port|function|static int __set_one_port(struct device *dev, qm_pw
 DECL|channel_period|member|uint32_t channel_period[CONFIG_PWM_QMSI_NUM_PORTS];
 DECL|device_power_state|member|uint32_t device_power_state;
 DECL|pwm_context|variable|pwm_context
-DECL|pwm_critical_region_end|function|static void pwm_critical_region_end(struct device *dev)
-DECL|pwm_critical_region_start|function|static void pwm_critical_region_start(struct device *dev)
 DECL|pwm_ctx|variable|pwm_ctx
 DECL|pwm_data|struct|struct pwm_data {
 DECL|pwm_qmsi_configure|function|static int pwm_qmsi_configure(struct device *dev, int access_op, uint32_t pwm, int flags)
@@ -30,7 +28,4 @@ DECL|pwm_qmsi_set_power_state|function|static void pwm_qmsi_set_power_state(stru
 DECL|pwm_qmsi_set_power_state|macro|pwm_qmsi_set_power_state
 DECL|pwm_qmsi_set_values|function|static int pwm_qmsi_set_values(struct device *dev, int access_op, uint32_t pwm, uint32_t on, uint32_t off)
 DECL|pwm_qmsi_suspend|function|static int pwm_qmsi_suspend(struct device *dev)
-DECL|pwm_reentrancy_init|function|static void pwm_reentrancy_init(struct device *dev)
-DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|sem|member|struct k_sem sem;
