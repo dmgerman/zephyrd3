@@ -9,7 +9,7 @@ DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *gene
 DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_if *iface, struct net_linkaddr *dst, bool *broadcast)
 DECL|ieee802154_compute_header_size|function|uint16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
 DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_buf *buf, uint8_t seq)
-DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_linkaddr *dst, uint8_t *p_buf, uint8_t len)
+DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_linkaddr *dst, struct net_buf *frag, uint8_t reserved_len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct net_if *iface,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
 DECL|mac_command_length|function|static inline uint8_t mac_command_length(enum ieee802154_cfi cfi)
