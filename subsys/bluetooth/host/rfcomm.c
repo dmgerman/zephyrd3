@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DLC_RTX|macro|DLC_RTX
 DECL|RFCOMM_CHANNEL_END|macro|RFCOMM_CHANNEL_END
 DECL|RFCOMM_CHANNEL_START|macro|RFCOMM_CHANNEL_START
@@ -26,6 +25,7 @@ DECL|bt_rfcomm_server_register|function|int bt_rfcomm_server_register(struct bt_
 DECL|rfcomm_accept|function|static int rfcomm_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|rfcomm_calc_fcs|function|static uint8_t rfcomm_calc_fcs(uint16_t len, const uint8_t *data)
 DECL|rfcomm_check_fcs|function|static bool rfcomm_check_fcs(uint16_t len, const uint8_t *data, uint8_t recvd_fcs)
+DECL|rfcomm_check_fc|function|static void rfcomm_check_fc(struct bt_rfcomm_dlc *dlc)
 DECL|rfcomm_connected|function|static void rfcomm_connected(struct bt_l2cap_chan *chan)
 DECL|rfcomm_crc_table|variable|rfcomm_crc_table
 DECL|rfcomm_disconnected|function|static void rfcomm_disconnected(struct bt_l2cap_chan *chan)
@@ -60,6 +60,8 @@ DECL|rfcomm_recv|function|static void rfcomm_recv(struct bt_l2cap_chan *chan, st
 DECL|rfcomm_send_credit|function|static int rfcomm_send_credit(struct bt_rfcomm_dlc *dlc, uint8_t credits)
 DECL|rfcomm_send_disc|function|static int rfcomm_send_disc(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_send_dm|function|static int rfcomm_send_dm(struct bt_rfcomm_session *session, uint8_t dlci)
+DECL|rfcomm_send_fcoff|function|static int rfcomm_send_fcoff(struct bt_rfcomm_session *session, uint8_t cr)
+DECL|rfcomm_send_fcon|function|static int rfcomm_send_fcon(struct bt_rfcomm_session *session, uint8_t cr)
 DECL|rfcomm_send_msc|function|static int rfcomm_send_msc(struct bt_rfcomm_dlc *dlc, uint8_t cr)
 DECL|rfcomm_send_nsc|function|static int rfcomm_send_nsc(struct bt_rfcomm_session *session, uint8_t cmd_type)
 DECL|rfcomm_send_pn|function|static int rfcomm_send_pn(struct bt_rfcomm_dlc *dlc, uint8_t cr)

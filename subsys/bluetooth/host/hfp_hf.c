@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|MAX_IND_STR_LEN|macro|MAX_IND_STR_LEN
 DECL|ag_indicator_handle_values|function|void ag_indicator_handle_values(struct at_client *hf_at, uint32_t index, uint32_t value)
 DECL|ag_ind|variable|ag_ind

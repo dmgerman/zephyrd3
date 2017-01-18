@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|add_subscriptions|function|static void add_subscriptions(struct bt_conn *conn)

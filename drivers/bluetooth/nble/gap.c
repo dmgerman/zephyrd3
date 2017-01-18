@@ -1,10 +1,10 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|NBLE_VERSION_MAJOR|macro|NBLE_VERSION_MAJOR
 DECL|NBLE_VERSION_MINOR|macro|NBLE_VERSION_MINOR
 DECL|NBLE_VERSION_PATCH|macro|NBLE_VERSION_PATCH
 DECL|NBLE_VERSION|macro|NBLE_VERSION
 DECL|bt_addr_le_str|function|static const char *bt_addr_le_str(const bt_addr_le_t *addr)
+DECL|bt_addr_le_str|function|static inline const char *bt_addr_le_str(const bt_addr_le_t *addr)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
 DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)

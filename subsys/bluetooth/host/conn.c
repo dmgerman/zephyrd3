@@ -1,12 +1,10 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
 DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
-DECL|background_scan_init|function|static void background_scan_init(void)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
@@ -61,6 +59,7 @@ DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
+DECL|le_param_req|function|bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
@@ -76,5 +75,5 @@ DECL|ssp_pair_method|function|static uint8_t ssp_pair_method(const struct bt_con
 DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_conn *conn)
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
-DECL|state2str|function|static const char *state2str(bt_conn_state_t state)
+DECL|state2str|function|static inline const char *state2str(bt_conn_state_t state)
 DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)

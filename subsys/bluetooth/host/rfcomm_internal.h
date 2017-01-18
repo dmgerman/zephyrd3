@@ -1,10 +1,15 @@
 DECL|BT_RFCOMM_BUF_SIZE|macro|BT_RFCOMM_BUF_SIZE
+DECL|BT_RFCOMM_CFC_NOT_SUPPORTED|enumerator|BT_RFCOMM_CFC_NOT_SUPPORTED,
+DECL|BT_RFCOMM_CFC_SUPPORTED|enumerator|BT_RFCOMM_CFC_SUPPORTED,
+DECL|BT_RFCOMM_CFC_UNKNOWN|enumerator|BT_RFCOMM_CFC_UNKNOWN,
 DECL|BT_RFCOMM_CHECK_MTU|macro|BT_RFCOMM_CHECK_MTU
 DECL|BT_RFCOMM_CMD_CR|macro|BT_RFCOMM_CMD_CR
 DECL|BT_RFCOMM_DEFAULT_V24_SIG|macro|BT_RFCOMM_DEFAULT_V24_SIG
 DECL|BT_RFCOMM_DISC|macro|BT_RFCOMM_DISC
 DECL|BT_RFCOMM_DLCI|macro|BT_RFCOMM_DLCI
 DECL|BT_RFCOMM_DM|macro|BT_RFCOMM_DM
+DECL|BT_RFCOMM_FCOFF|macro|BT_RFCOMM_FCOFF
+DECL|BT_RFCOMM_FCON|macro|BT_RFCOMM_FCON
 DECL|BT_RFCOMM_FCS_LEN_NON_UIH|macro|BT_RFCOMM_FCS_LEN_NON_UIH
 DECL|BT_RFCOMM_FCS_LEN_UIH|macro|BT_RFCOMM_FCS_LEN_UIH
 DECL|BT_RFCOMM_FCS_SIZE|macro|BT_RFCOMM_FCS_SIZE
@@ -26,6 +31,8 @@ DECL|BT_RFCOMM_PF_NON_UIH|macro|BT_RFCOMM_PF_NON_UIH
 DECL|BT_RFCOMM_PF_UIH_CREDIT|macro|BT_RFCOMM_PF_UIH_CREDIT
 DECL|BT_RFCOMM_PF_UIH_NO_CREDIT|macro|BT_RFCOMM_PF_UIH_NO_CREDIT
 DECL|BT_RFCOMM_PF_UIH|macro|BT_RFCOMM_PF_UIH
+DECL|BT_RFCOMM_PN_CFC_CMD|macro|BT_RFCOMM_PN_CFC_CMD
+DECL|BT_RFCOMM_PN_CFC_RESP|macro|BT_RFCOMM_PN_CFC_RESP
 DECL|BT_RFCOMM_PN|macro|BT_RFCOMM_PN
 DECL|BT_RFCOMM_RESP_CR|macro|BT_RFCOMM_RESP_CR
 DECL|BT_RFCOMM_RLS|macro|BT_RFCOMM_RLS
@@ -70,6 +77,7 @@ DECL|ack_timer|member|uint8_t ack_timer;
 DECL|address|member|uint8_t address;
 DECL|baud_rate|member|uint8_t baud_rate;
 DECL|br_chan|member|struct bt_l2cap_br_chan br_chan;
+DECL|bt_rfcomm_cfc_t|typedef|} __packed bt_rfcomm_cfc_t;
 DECL|bt_rfcomm_hdr|struct|struct bt_rfcomm_hdr {
 DECL|bt_rfcomm_msc|struct|struct bt_rfcomm_msc {
 DECL|bt_rfcomm_msg_hdr|struct|struct bt_rfcomm_msg_hdr {
@@ -77,6 +85,7 @@ DECL|bt_rfcomm_pn|struct|struct bt_rfcomm_pn {
 DECL|bt_rfcomm_rls|struct|struct bt_rfcomm_rls {
 DECL|bt_rfcomm_rpn|struct|struct bt_rfcomm_rpn {
 DECL|bt_rfcomm_session|struct|struct bt_rfcomm_session {
+DECL|cfc|member|bt_rfcomm_cfc_t cfc;
 DECL|control|member|uint8_t control;
 DECL|credits|member|uint8_t credits;
 DECL|dlci|member|uint8_t dlci;
@@ -84,6 +93,7 @@ DECL|dlci|member|uint8_t dlci;
 DECL|dlci|member|uint8_t dlci;
 DECL|dlci|member|uint8_t dlci;
 DECL|dlcs|member|struct bt_rfcomm_dlc *dlcs;
+DECL|fc|member|struct k_sem fc;
 DECL|flow_control|member|uint8_t flow_control;
 DECL|flow_ctrl|member|uint8_t flow_ctrl;
 DECL|length|member|uint8_t length;
