@@ -5,11 +5,7 @@ DECL|RTC_CONTEXT|macro|RTC_CONTEXT
 DECL|RTC_HAS_CONTEXT_DATA|macro|RTC_HAS_CONTEXT_DATA
 DECL|api|variable|api
 DECL|device_power_state|member|uint32_t device_power_state;
-DECL|reentrancy_protection|variable|reentrancy_protection
-DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|rtc_context|variable|rtc_context
-DECL|rtc_critical_region_end|function|static void rtc_critical_region_end(struct device *dev)
-DECL|rtc_critical_region_start|function|static void rtc_critical_region_start(struct device *dev)
 DECL|rtc_ctx|variable|rtc_ctx
 DECL|rtc_data|struct|struct rtc_data {
 DECL|rtc_qmsi_device_ctrl|function|static int rtc_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command,void *context)
@@ -23,7 +19,6 @@ DECL|rtc_qmsi_set_alarm|function|static int rtc_qmsi_set_alarm(struct device *de
 DECL|rtc_qmsi_set_config|function|static int rtc_qmsi_set_config(struct device *dev, struct rtc_config *cfg)
 DECL|rtc_qmsi_set_power_state|function|static void rtc_qmsi_set_power_state(struct device *dev, uint32_t power_state)
 DECL|rtc_qmsi_set_power_state|macro|rtc_qmsi_set_power_state
-DECL|rtc_reentrancy_init|function|static void rtc_reentrancy_init(struct device *dev)
 DECL|rtc_resume_device|function|static int rtc_resume_device(struct device *dev)
 DECL|rtc_suspend_device|function|static int rtc_suspend_device(struct device *dev)
 DECL|sem|member|struct k_sem sem;
