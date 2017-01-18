@@ -11,6 +11,8 @@ DECL|large_get|function|static int large_get(struct zoap_resource *resource, str
 DECL|large_path|variable|large_path
 DECL|large_update_path|variable|large_update_path
 DECL|large_update_put|function|static int large_update_put(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
+DECL|location_query_path|variable|location_query_path
+DECL|location_query_post|function|static int location_query_post(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|main|function|void main(void)
 DECL|piggyback_get|function|static int piggyback_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|plain_text_format|variable|plain_text_format
