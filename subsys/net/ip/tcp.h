@@ -36,6 +36,7 @@ DECL|__TCP_H|macro|__TCP_H
 DECL|_padding|member|uint32_t _padding : 15;
 DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
+DECL|connect_wait|member|struct k_sem connect_wait;
 DECL|context|member|struct net_context *context;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|flags|member|uint32_t flags : 8;
