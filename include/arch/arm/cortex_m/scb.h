@@ -15,7 +15,6 @@ DECL|_ScbBusFaultIsPrecise|function|static inline int _ScbBusFaultIsPrecise(void
 DECL|_ScbBusFaultIsStacking|function|static inline int _ScbBusFaultIsStacking(void)
 DECL|_ScbBusFaultIsUnstacking|function|static inline int _ScbBusFaultIsUnstacking(void)
 DECL|_ScbDivByZeroFaultEnable|function|static inline void _ScbDivByZeroFaultEnable(void)
-DECL|_ScbExcPrioSet|function|static inline void _ScbExcPrioSet(uint8_t exc, uint8_t pri)
 DECL|_ScbHardFaultAllFaultsReset|function|static inline int _ScbHardFaultAllFaultsReset(void)
 DECL|_ScbHardFaultIsBusErrOnVectorRead|function|static inline int _ScbHardFaultIsBusErrOnVectorRead(void)
 DECL|_ScbHardFaultIsForced|function|static inline int _ScbHardFaultIsForced(void)
