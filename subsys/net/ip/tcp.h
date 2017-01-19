@@ -34,6 +34,7 @@ DECL|NET_TCP_WINDOW_HEADER|macro|NET_TCP_WINDOW_HEADER
 DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
 DECL|_padding|member|uint32_t _padding : 15;
+DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|context|member|struct net_context *context;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
