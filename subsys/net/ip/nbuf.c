@@ -23,6 +23,7 @@ DECL|adjust_insert_offset|function|static inline struct net_buf *adjust_insert_o
 DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|adjust_write_offset|function|static inline struct net_buf *adjust_write_offset(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos)
 DECL|check_and_create_data|function|static inline struct net_buf *check_and_create_data(struct net_buf *buf, struct net_buf *data)
+DECL|data_buffers_pool|macro|data_buffers_pool
 DECL|dec_free_bufs|function|static inline void dec_free_bufs(struct net_buf_pool *pool, struct net_buf *buf)
 DECL|dec_free_bufs|macro|dec_free_bufs
 DECL|dec_free_data_bufs|function|static inline void dec_free_data_bufs(struct net_buf *buf)
@@ -81,3 +82,5 @@ DECL|num_free_data_bufs|variable|num_free_data_bufs
 DECL|num_free_rx_bufs|variable|num_free_rx_bufs
 DECL|num_free_tx_bufs|variable|num_free_tx_bufs
 DECL|pool2str|function|static inline const char *pool2str(struct net_buf_pool *pool)
+DECL|rx_buffers_pool|macro|rx_buffers_pool
+DECL|tx_buffers_pool|macro|tx_buffers_pool
