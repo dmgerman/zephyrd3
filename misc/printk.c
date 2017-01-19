@@ -1,3 +1,4 @@
+DECL|__printk_get_hook|function|void *__printk_get_hook(void)
 DECL|__printk_hook_install|function|void __printk_hook_install(int (*fn)(int))
 DECL|_char_out|variable|_char_out
 DECL|_nop_char_out|function|static int _nop_char_out(int c)
