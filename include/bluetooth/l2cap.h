@@ -34,6 +34,7 @@ DECL|disconnected|member|void (*disconnected)(struct bt_l2cap_chan *chan);
 DECL|encrypt_change|member|void (*encrypt_change)(struct bt_l2cap_chan *chan, uint8_t hci_status);
 DECL|flags|member|atomic_t flags[1];
 DECL|ident|member|uint8_t ident;
+DECL|init_credits|member|uint16_t init_credits;
 DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;

@@ -1,4 +1,5 @@
 DECL|BT_ASSERT|macro|BT_ASSERT
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
 DECL|BT_DBG|macro|BT_DBG
@@ -23,4 +24,4 @@ DECL|BT_WARN|macro|BT_WARN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__BT_LOG_H|macro|__BT_LOG_H
-DECL|bt_hex|macro|bt_hex
+DECL|_bt_log_dummy|function|static inline __printf_like(1, 2) void _bt_log_dummy(const char *fmt, ...) {};

@@ -1,6 +1,5 @@
 DECL|BLE_GATT_MTU_SIZE|macro|BLE_GATT_MTU_SIZE
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|NBLE_BUF_SIZE|macro|NBLE_BUF_SIZE
 DECL|__packed|variable|__packed
 DECL|attr_count|member|uint16_t attr_count;

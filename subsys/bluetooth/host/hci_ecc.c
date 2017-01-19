@@ -1,5 +1,4 @@
-DECL|BT_DBG|macro|BT_DBG
-DECL|BT_DBG|macro|BT_DBG
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|bt_hci_ecc_init|function|void bt_hci_ecc_init(void)
 DECL|clear_ecc_events|function|static void clear_ecc_events(struct net_buf *buf)
 DECL|debug_private_key|variable|debug_private_key
