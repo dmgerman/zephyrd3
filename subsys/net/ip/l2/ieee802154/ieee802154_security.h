@@ -1,0 +1,3 @@
+DECL|ieee802154_decrypt_auth|macro|ieee802154_decrypt_auth
+DECL|ieee802154_encrypt_auth|macro|ieee802154_encrypt_auth
+DECL|ieee802154_security_init|macro|ieee802154_security_init
