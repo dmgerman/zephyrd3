@@ -10,7 +10,7 @@ DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|accept_cb|function|static void accept_cb(struct net_context *context, struct sockaddr *addr, socklen_t addrlen, int status, void *user_data)
 DECL|cb_failure|variable|cb_failure
-DECL|connect_cb|function|static void connect_cb(struct net_context *context, void *user_data)
+DECL|connect_cb|function|static void connect_cb(struct net_context *context, int status, void *user_data)
 DECL|data_failure|variable|data_failure
 DECL|func|member|bool (*func)(void);
 DECL|in4addr_my|variable|in4addr_my

@@ -22,6 +22,7 @@ DECL|NET_TCP_MAX_WIN|macro|NET_TCP_MAX_WIN
 DECL|NET_TCP_MSS_HEADER|macro|NET_TCP_MSS_HEADER
 DECL|NET_TCP_MSS_SIZE|macro|NET_TCP_MSS_SIZE
 DECL|NET_TCP_PSH|macro|NET_TCP_PSH
+DECL|NET_TCP_RECV_MSS_SET|macro|NET_TCP_RECV_MSS_SET
 DECL|NET_TCP_RETRYING|macro|NET_TCP_RETRYING
 DECL|NET_TCP_RST|macro|NET_TCP_RST
 DECL|NET_TCP_SYN_RCVD|enumerator|NET_TCP_SYN_RCVD,
@@ -32,25 +33,29 @@ DECL|NET_TCP_URG|macro|NET_TCP_URG
 DECL|NET_TCP_WINDOW_HEADER|macro|NET_TCP_WINDOW_HEADER
 DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
+DECL|_padding|member|uint32_t _padding : 15;
+DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
+DECL|connect_wait|member|struct k_sem connect_wait;
 DECL|context|member|struct net_context *context;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
-DECL|flags|member|uint8_t flags;
+DECL|flags|member|uint32_t flags : 8;
 DECL|net_tcp_cb_t|typedef|typedef void (*net_tcp_cb_t)(struct net_tcp *tcp, void *user_data);
 DECL|net_tcp_change_state|macro|net_tcp_change_state
+DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
 DECL|net_tcp_register|function|static inline int net_tcp_register(const struct sockaddr *remote_addr, const struct sockaddr *local_addr, uint16_t remote_port, uint16_t local_port, net_conn_cb_t cb,
+DECL|net_tcp_set_state|function|static inline void net_tcp_set_state(struct net_tcp *tcp, enum net_tcp_state state)
 DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
 DECL|net_tcp|struct|struct net_tcp {
-DECL|recv_ack|member|uint32_t recv_ack;
 DECL|recv_max_ack|member|uint32_t recv_max_ack;
-DECL|recv_mss|member|uint16_t recv_mss;
-DECL|retry_timeout_ms|member|uint32_t retry_timeout_ms;
+DECL|recv_user_data|member|void *recv_user_data;
+DECL|retry_timeout_shift|member|uint32_t retry_timeout_shift : 5;
 DECL|retry_timer|member|struct k_timer retry_timer;
 DECL|send_ack|member|uint32_t send_ack;
 DECL|send_seq|member|uint32_t send_seq;
 DECL|sent_ack|member|uint32_t sent_ack;
 DECL|sent_list|member|sys_slist_t sent_list;
-DECL|state|member|enum net_tcp_state state;
+DECL|state|member|uint32_t state : 4;

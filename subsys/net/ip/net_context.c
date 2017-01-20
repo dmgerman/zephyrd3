@@ -11,7 +11,7 @@ DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_buf *buf, const struct sockaddr *dst_addr, struct net_buf **out_buf)
 DECL|find_available_port|function|static uint16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)
-DECL|net_context_accept|function|int net_context_accept(struct net_context *context, net_context_accept_cb_t cb, int32_t timeout, void *user_data)
+DECL|net_context_accept|function|int net_context_accept(struct net_context *context, net_tcp_accept_cb_t cb, int32_t timeout, void *user_data)
 DECL|net_context_bind|function|int net_context_bind(struct net_context *context, const struct sockaddr *addr, socklen_t addrlen)
 DECL|net_context_connect|function|int net_context_connect(struct net_context *context,const struct sockaddr *addr, socklen_t addrlen, net_context_connect_cb_t cb, int32_t timeout,
 DECL|net_context_foreach|function|void net_context_foreach(net_context_cb_t cb, void *user_data)

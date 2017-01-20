@@ -13,12 +13,10 @@ DECL|NET_CONTEXT_STATE_SHIFT|macro|NET_CONTEXT_STATE_SHIFT
 DECL|NET_CONTEXT_TYPE|macro|NET_CONTEXT_TYPE
 DECL|NET_CONTEXT_UNCONNECTED|enumerator|NET_CONTEXT_UNCONNECTED = 0,
 DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
-DECL|accept_cb|member|net_context_accept_cb_t accept_cb;
 DECL|conn_handler|member|struct net_conn_handle *conn_handler;
 DECL|flags|member|uint8_t flags;
 DECL|iface|member|uint8_t iface;
 DECL|local|member|struct sockaddr_ptr local;
-DECL|net_context_accept_cb_t|typedef|typedef void (*net_context_accept_cb_t)(struct net_context *new_context,
 DECL|net_context_cb_t|typedef|typedef void (*net_context_cb_t)(struct net_context *context, void *user_data);
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,
 DECL|net_context_get_family|function|static inline sa_family_t net_context_get_family(struct net_context *context)
@@ -36,6 +34,7 @@ DECL|net_context_set_state|function|static inline void net_context_set_state(str
 DECL|net_context_set_type|function|static inline void net_context_set_type(struct net_context *context,enum net_sock_type type)
 DECL|net_context_state|enum|enum net_context_state {
 DECL|net_context|struct|struct net_context {
+DECL|net_tcp_accept_cb_t|typedef|typedef void (*net_tcp_accept_cb_t)(struct net_context *new_context,
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_data_wait|member|struct k_sem recv_data_wait;
 DECL|remote|member|struct sockaddr remote;

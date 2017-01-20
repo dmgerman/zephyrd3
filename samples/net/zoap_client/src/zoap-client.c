@@ -2,7 +2,9 @@ DECL|ALL_NODES_LOCAL_COAP_MCAST|macro|ALL_NODES_LOCAL_COAP_MCAST
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
 DECL|NUM_PENDINGS|macro|NUM_PENDINGS
 DECL|NUM_REPLIES|macro|NUM_REPLIES
+DECL|cb|variable|cb
 DECL|context|variable|context
+DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
 DECL|main|function|void main(void)
 DECL|mcast_addr|variable|mcast_addr
 DECL|msg_dump|function|static void msg_dump(const char *s, uint8_t *data, unsigned len)
