@@ -1,0 +1,13 @@
+DECL|XTENSA_SYS_IO_H|macro|XTENSA_SYS_IO_H
+DECL|sys_bitfield_clear_bit|function|void sys_bitfield_clear_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_bitfield_set_bit|function|void sys_bitfield_set_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_bitfield_test_and_clear_bit|function|int sys_bitfield_test_and_clear_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_bitfield_test_and_set_bit|function|int sys_bitfield_test_and_set_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_bitfield_test_bit|function|int sys_bitfield_test_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_clear_bit|function|static ALWAYS_INLINE void sys_clear_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_read32|function|static ALWAYS_INLINE uint32_t sys_read32(mem_addr_t addr)
+DECL|sys_set_bit|function|static ALWAYS_INLINE void sys_set_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_test_and_clear_bit|function|static ALWAYS_INLINE int sys_test_and_clear_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_test_and_set_bit|function|static ALWAYS_INLINE int sys_test_and_set_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_test_bit|function|static ALWAYS_INLINE int sys_test_bit(mem_addr_t addr, unsigned int bit)
+DECL|sys_write32|function|static ALWAYS_INLINE void sys_write32(uint32_t data, mem_addr_t addr)
