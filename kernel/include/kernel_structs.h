@@ -1,5 +1,3 @@
-DECL|K_ESSENTIAL|macro|K_ESSENTIAL
-DECL|K_FP_REGS|macro|K_FP_REGS
 DECL|_NON_PREEMPT_THRESHOLD|macro|_NON_PREEMPT_THRESHOLD
 DECL|_PREEMPT_THRESHOLD|macro|_PREEMPT_THRESHOLD
 DECL|_THREAD_DEAD|macro|_THREAD_DEAD
@@ -32,7 +30,6 @@ DECL|current|member|struct k_thread *current;
 DECL|custom_data|member|void *custom_data;
 DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
-DECL|execution_flags|member|uint8_t execution_flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
 DECL|init_data|member|void *init_data;
@@ -56,3 +53,4 @@ DECL|thread_state|member|uint8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
+DECL|user_options|member|uint8_t user_options;
