@@ -48,10 +48,10 @@ DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|preempt|member|uint16_t preempt;
 DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
-DECL|prio|member|volatile int8_t prio;
+DECL|prio|member|int8_t prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
-DECL|sched_locked|member|uint8_t sched_locked;
+DECL|sched_locked|member|volatile uint8_t sched_locked;
 DECL|swap_data|member|void *swap_data;
 DECL|thread_state|member|uint8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
