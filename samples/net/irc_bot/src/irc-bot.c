@@ -1,3 +1,4 @@
+DECL|CMD_BUFFER_SIZE|macro|CMD_BUFFER_SIZE
 DECL|CMD|macro|CMD
 DECL|CMD|macro|CMD
 DECL|CMD|macro|CMD
@@ -16,6 +17,7 @@ DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
+DECL|cmd_buf|variable|cmd_buf
 DECL|conn|member|struct net_context *conn;
 DECL|data|member|void *data;
 DECL|data|member|void *data;
