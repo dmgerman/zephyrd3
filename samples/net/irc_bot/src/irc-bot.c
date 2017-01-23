@@ -23,11 +23,9 @@ DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char 
 DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|initialize_network|function|initialize_network(void)
 DECL|irc_bot|function|static void irc_bot(void)
-DECL|ircd_sockaddr|variable|ircd_sockaddr
 DECL|irc|member|struct zirc *irc;
 DECL|led0|variable|led0
 DECL|main|function|void main(void)
-DECL|my_sockaddr|variable|my_sockaddr
 DECL|next|member|struct zirc_chan *next;
 DECL|on_cmd_disconnect|function|on_cmd_disconnect(struct zirc_chan *chan, const char *nick, const char *msg)
 DECL|on_cmd_hello|function|on_cmd_hello(struct zirc_chan *chan, const char *nick, const char *msg)
