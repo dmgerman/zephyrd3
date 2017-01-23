@@ -19,6 +19,7 @@ DECL|conn|member|struct net_context *conn;
 DECL|data|member|void *data;
 DECL|data|member|void *data;
 DECL|fake_led|variable|fake_led
+DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char *ip_addr, int port, struct sockaddr *_sockaddr)
 DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|initialize_network|function|initialize_network(void)
 DECL|irc_bot|function|static void irc_bot(void)
