@@ -11,6 +11,7 @@ DECL|LED_PIN|macro|LED_PIN
 DECL|LED_PIN|macro|LED_PIN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
@@ -20,6 +21,7 @@ DECL|data|member|void *data;
 DECL|fake_led|variable|fake_led
 DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|initialize_network|function|initialize_network(void)
+DECL|irc_bot|function|static void irc_bot(void)
 DECL|ircd_sockaddr|variable|ircd_sockaddr
 DECL|irc|member|struct zirc *irc;
 DECL|led0|variable|led0
@@ -44,6 +46,7 @@ DECL|on_privmsg_rcvd|member|void (*on_privmsg_rcvd)(void *data, struct zirc_chan
 DECL|panic|function|panic(const char *msg)
 DECL|process_command|function|process_command(struct zirc *irc, char *cmd, size_t len)
 DECL|read_led|function|read_led(void)
+DECL|stack|variable|stack
 DECL|transmit|function|transmit(struct net_context *ctx, char buffer[], size_t len)
 DECL|write_led|function|write_led(bool led)
 DECL|zirc_chan_join|function|zirc_chan_join(struct zirc *irc, struct zirc_chan *chan, const char *channel, void (*on_privmsg_rcvd)(void *data, struct zirc_chan *chan, char *umask, char *msg), void *data)
