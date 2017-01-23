@@ -1,0 +1,11 @@
+DECL|ahb_prescaler|function|static uint32_t ahb_prescaler(int prescaler)
+DECL|apb1_prescaler|function|static uint32_t apb1_prescaler(int prescaler)
+DECL|apb2_prescaler|function|static uint32_t apb2_prescaler(int prescaler)
+DECL|config_bus_clk_init|function|static void config_bus_clk_init(LL_UTILS_ClkInitTypeDef *clk_init)
+DECL|get_bus_clock|function|static uint32_t get_bus_clock(uint32_t clock, uint32_t prescaler)
+DECL|map_reg_val|function|uint32_t map_reg_val(const struct regval_map *map, size_t cnt, int val)
+DECL|stm32_clock_control_api|variable|stm32_clock_control_api
+DECL|stm32_clock_control_get_subsys_rate|function|static int stm32_clock_control_get_subsys_rate(struct device *clock,clock_control_subsys_t sub_system, uint32_t *rate)
+DECL|stm32_clock_control_init|function|static int stm32_clock_control_init(struct device *dev)
+DECL|stm32_clock_control_off|function|static inline int stm32_clock_control_off(struct device *dev, clock_control_subsys_t sub_system)
+DECL|stm32_clock_control_on|function|static inline int stm32_clock_control_on(struct device *dev, clock_control_subsys_t sub_system)
