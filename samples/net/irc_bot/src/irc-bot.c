@@ -42,14 +42,15 @@ DECL|on_connect|member|void (*on_connect)(void *data, struct zirc *irc);
 DECL|on_context_connect|function|on_context_connect(struct net_context *ctx, void *data)
 DECL|on_context_recv|function|on_context_recv(struct net_context *ctx, struct net_buf *buf,int status, void *data)
 DECL|on_msg_rcvd|function|on_msg_rcvd(void *data, struct zirc_chan *chan, char *umask, char *msg)
-DECL|on_privmsg_rcvd|member|void (*on_privmsg_rcvd)(void *data, struct zirc_chan *chan,
+DECL|on_privmsg_rcvd_cb_t|typedef|typedef void (*on_privmsg_rcvd_cb_t)(void *data, struct zirc_chan *chan,
+DECL|on_privmsg_rcvd|member|on_privmsg_rcvd_cb_t on_privmsg_rcvd;
 DECL|panic|function|panic(const char *msg)
 DECL|process_command|function|process_command(struct zirc *irc, char *cmd, size_t len)
 DECL|read_led|function|read_led(void)
 DECL|stack|variable|stack
 DECL|transmit|function|transmit(struct net_context *ctx, char buffer[], size_t len)
 DECL|write_led|function|write_led(bool led)
-DECL|zirc_chan_join|function|zirc_chan_join(struct zirc *irc, struct zirc_chan *chan, const char *channel, void (*on_privmsg_rcvd)(void *data, struct zirc_chan *chan, char *umask, char *msg), void *data)
+DECL|zirc_chan_join|function|zirc_chan_join(struct zirc *irc, struct zirc_chan *chan, const char *channel, on_privmsg_rcvd_cb_t on_privmsg_rcvd, void *data)
 DECL|zirc_chan_part|function|zirc_chan_part(struct zirc_chan *chan)
 DECL|zirc_chan_send_msg|function|zirc_chan_send_msg(const struct zirc_chan *chan, const char *msg)
 DECL|zirc_chan|struct|struct zirc_chan {
