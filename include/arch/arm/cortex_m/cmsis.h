@@ -1,0 +1,32 @@
+DECL|BusFault_IRQn|enumerator|BusFault_IRQn = -11,
+DECL|CPACR_CP10_FULL_ACCESS|macro|CPACR_CP10_FULL_ACCESS
+DECL|CPACR_CP10_Msk|macro|CPACR_CP10_Msk
+DECL|CPACR_CP10_NO_ACCESS|macro|CPACR_CP10_NO_ACCESS
+DECL|CPACR_CP10_PRIV_ACCESS|macro|CPACR_CP10_PRIV_ACCESS
+DECL|CPACR_CP10_Pos|macro|CPACR_CP10_Pos
+DECL|CPACR_CP10_RESERVED|macro|CPACR_CP10_RESERVED
+DECL|CPACR_CP11_FULL_ACCESS|macro|CPACR_CP11_FULL_ACCESS
+DECL|CPACR_CP11_Msk|macro|CPACR_CP11_Msk
+DECL|CPACR_CP11_NO_ACCESS|macro|CPACR_CP11_NO_ACCESS
+DECL|CPACR_CP11_PRIV_ACCESS|macro|CPACR_CP11_PRIV_ACCESS
+DECL|CPACR_CP11_Pos|macro|CPACR_CP11_Pos
+DECL|CPACR_CP11_RESERVED|macro|CPACR_CP11_RESERVED
+DECL|DebugMonitor_IRQn|enumerator|DebugMonitor_IRQn = -4,
+DECL|HardFault_IRQn|enumerator|HardFault_IRQn = -13,
+DECL|IRQn_Type|typedef|} IRQn_Type;
+DECL|MemoryManagement_IRQn|enumerator|MemoryManagement_IRQn = -12,
+DECL|NonMaskableInt_IRQn|enumerator|NonMaskableInt_IRQn = -14,
+DECL|PendSV_IRQn|enumerator|PendSV_IRQn = -2,
+DECL|Reset_IRQn|enumerator|Reset_IRQn = -15,
+DECL|SVCall_IRQn|enumerator|SVCall_IRQn = -5,
+DECL|SysTick_IRQn|enumerator|SysTick_IRQn = -1,
+DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10,
+DECL|_CMSIS__H_|macro|_CMSIS__H_
+DECL|__CM0PLUS_REV|macro|__CM0PLUS_REV
+DECL|__CM0_REV|macro|__CM0_REV
+DECL|__CM3_REV|macro|__CM3_REV
+DECL|__CM4_REV|macro|__CM4_REV
+DECL|__CM7_REV|macro|__CM7_REV
+DECL|__MPU_PRESENT|macro|__MPU_PRESENT
+DECL|__NVIC_PRIO_BITS|macro|__NVIC_PRIO_BITS
+DECL|__Vendor_SysTickConfig|macro|__Vendor_SysTickConfig
