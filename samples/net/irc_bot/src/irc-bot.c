@@ -38,9 +38,6 @@ DECL|on_cmd_ping|function|on_cmd_ping(struct zirc *irc, char *umask, char *cmd, 
 DECL|on_cmd_privmsg|function|on_cmd_privmsg(struct zirc *irc, char *umask, char *cmd, size_t len)
 DECL|on_cmd_random|function|on_cmd_random(struct zirc_chan *chan, const char *nick, const char *msg)
 DECL|on_cmd_rejoin|function|on_cmd_rejoin(struct zirc_chan *chan, const char *nick, const char *msg)
-DECL|on_connect|function|on_connect(void *data, struct zirc *irc)
-DECL|on_connect|member|void (*on_connect)(void *data, struct zirc *irc);
-DECL|on_context_connect|function|on_context_connect(struct net_context *ctx, void *data)
 DECL|on_context_recv|function|on_context_recv(struct net_context *ctx, struct net_buf *buf,int status, void *data)
 DECL|on_msg_rcvd|function|on_msg_rcvd(void *data, struct zirc_chan *chan, char *umask, char *msg)
 DECL|on_privmsg_rcvd_cb_t|typedef|typedef void (*on_privmsg_rcvd_cb_t)(void *data, struct zirc_chan *chan,
@@ -55,7 +52,7 @@ DECL|zirc_chan_join|function|zirc_chan_join(struct zirc *irc, struct zirc_chan *
 DECL|zirc_chan_part|function|zirc_chan_part(struct zirc_chan *chan)
 DECL|zirc_chan_send_msg|function|zirc_chan_send_msg(const struct zirc_chan *chan, const char *msg)
 DECL|zirc_chan|struct|struct zirc_chan {
-DECL|zirc_connect|function|zirc_connect(struct zirc *irc, const char *host, int port,void (*on_connect)(void *data, struct zirc *irc), void *data)
+DECL|zirc_connect|function|zirc_connect(struct zirc *irc, const char *host, int port, void *data)
 DECL|zirc_disconnect|function|zirc_disconnect(struct zirc *irc)
 DECL|zirc_nick_set|function|zirc_nick_set(struct zirc *irc, const char *nick)
 DECL|zirc_user_set|function|zirc_user_set(struct zirc *irc, const char *user, const char *realname)
