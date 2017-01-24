@@ -77,6 +77,7 @@ DECL|oar1|member|union __oar1 oar1;
 DECL|oar2|member|union __oar2 oar2;
 DECL|ovr|member|uint32_t ovr :1 __packed;
 DECL|ovr|member|uint32_t ovr :1 __packed;
+DECL|pclken|member|struct stm32_pclken pclken;
 DECL|pecbyte|member|uint32_t pecbyte :1 __packed;
 DECL|pecen|member|uint32_t pecen :1 __packed;
 DECL|pecerr|member|uint32_t pecerr :1 __packed;
