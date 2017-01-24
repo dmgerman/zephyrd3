@@ -7,6 +7,6 @@ DECL|_NANO_ERR_ALLOCATION_FAIL|macro|_NANO_ERR_ALLOCATION_FAIL
 DECL|_NANO_ERR_HW_EXCEPTION|macro|_NANO_ERR_HW_EXCEPTION
 DECL|_NANO_ERR_INVALID_TASK_EXIT|macro|_NANO_ERR_INVALID_TASK_EXIT
 DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
-DECL|find_lsb_set|macro|find_lsb_set
-DECL|find_msb_set|macro|find_msb_set
+DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(uint32_t op)
+DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(uint32_t op)
 DECL|sys_define_gpr_with_alias|macro|sys_define_gpr_with_alias
