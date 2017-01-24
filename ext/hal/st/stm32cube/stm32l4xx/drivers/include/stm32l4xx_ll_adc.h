@@ -389,6 +389,7 @@ DECL|LL_ADC_GetOverSamplingRatio|function|__STATIC_INLINE uint32_t LL_ADC_GetOve
 DECL|LL_ADC_GetOverSamplingScope|function|__STATIC_INLINE uint32_t LL_ADC_GetOverSamplingScope(ADC_TypeDef *ADCx)
 DECL|LL_ADC_GetOverSamplingShift|function|__STATIC_INLINE uint32_t LL_ADC_GetOverSamplingShift(ADC_TypeDef *ADCx)
 DECL|LL_ADC_GetResolution|function|__STATIC_INLINE uint32_t LL_ADC_GetResolution(ADC_TypeDef *ADCx)
+DECL|LL_ADC_GetSamplingTimeCommonConfig|function|__STATIC_INLINE uint32_t LL_ADC_GetSamplingTimeCommonConfig(ADC_TypeDef *ADCx)
 DECL|LL_ADC_INJ_ConfigQueueContext|function|__STATIC_INLINE void LL_ADC_INJ_ConfigQueueContext(ADC_TypeDef *ADCx, uint32_t TriggerSource, uint32_t ExternalTriggerEdge, uint32_t SequencerNbRanks, uint32_t Rank1_Channel,
 DECL|LL_ADC_INJ_GetQueueMode|function|__STATIC_INLINE uint32_t LL_ADC_INJ_GetQueueMode(ADC_TypeDef *ADCx)
 DECL|LL_ADC_INJ_GetSequencerDiscont|function|__STATIC_INLINE uint32_t LL_ADC_INJ_GetSequencerDiscont(ADC_TypeDef *ADCx)
@@ -594,10 +595,13 @@ DECL|LL_ADC_PATH_INTERNAL_VBAT|macro|LL_ADC_PATH_INTERNAL_VBAT
 DECL|LL_ADC_PATH_INTERNAL_VREFINT|macro|LL_ADC_PATH_INTERNAL_VREFINT
 DECL|LL_ADC_REG_CONV_CONTINUOUS|macro|LL_ADC_REG_CONV_CONTINUOUS
 DECL|LL_ADC_REG_CONV_SINGLE|macro|LL_ADC_REG_CONV_SINGLE
+DECL|LL_ADC_REG_DFSDM_TRANSFER_ENABLE|macro|LL_ADC_REG_DFSDM_TRANSFER_ENABLE
+DECL|LL_ADC_REG_DFSDM_TRANSFER_NONE|macro|LL_ADC_REG_DFSDM_TRANSFER_NONE
 DECL|LL_ADC_REG_DMA_TRANSFER_LIMITED|macro|LL_ADC_REG_DMA_TRANSFER_LIMITED
 DECL|LL_ADC_REG_DMA_TRANSFER_NONE|macro|LL_ADC_REG_DMA_TRANSFER_NONE
 DECL|LL_ADC_REG_DMA_TRANSFER_UNLIMITED|macro|LL_ADC_REG_DMA_TRANSFER_UNLIMITED
 DECL|LL_ADC_REG_GetContinuousMode|function|__STATIC_INLINE uint32_t LL_ADC_REG_GetContinuousMode(ADC_TypeDef *ADCx)
+DECL|LL_ADC_REG_GetDFSDMTransfer|function|__STATIC_INLINE uint32_t LL_ADC_REG_GetDFSDMTransfer(ADC_TypeDef *ADCx)
 DECL|LL_ADC_REG_GetDMATransfer|function|__STATIC_INLINE uint32_t LL_ADC_REG_GetDMATransfer(ADC_TypeDef *ADCx)
 DECL|LL_ADC_REG_GetOverrun|function|__STATIC_INLINE uint32_t LL_ADC_REG_GetOverrun(ADC_TypeDef *ADCx)
 DECL|LL_ADC_REG_GetSequencerDiscont|function|__STATIC_INLINE uint32_t LL_ADC_REG_GetSequencerDiscont(ADC_TypeDef *ADCx)
@@ -659,6 +663,7 @@ DECL|LL_ADC_REG_SEQ_SCAN_ENABLE_7RANKS|macro|LL_ADC_REG_SEQ_SCAN_ENABLE_7RANKS
 DECL|LL_ADC_REG_SEQ_SCAN_ENABLE_8RANKS|macro|LL_ADC_REG_SEQ_SCAN_ENABLE_8RANKS
 DECL|LL_ADC_REG_SEQ_SCAN_ENABLE_9RANKS|macro|LL_ADC_REG_SEQ_SCAN_ENABLE_9RANKS
 DECL|LL_ADC_REG_SetContinuousMode|function|__STATIC_INLINE void LL_ADC_REG_SetContinuousMode(ADC_TypeDef *ADCx, uint32_t Continuous)
+DECL|LL_ADC_REG_SetDFSDMTransfer|function|__STATIC_INLINE void LL_ADC_REG_SetDFSDMTransfer(ADC_TypeDef *ADCx, uint32_t DFSDMTransfer)
 DECL|LL_ADC_REG_SetDMATransfer|function|__STATIC_INLINE void LL_ADC_REG_SetDMATransfer(ADC_TypeDef *ADCx, uint32_t DMATransfer)
 DECL|LL_ADC_REG_SetOverrun|function|__STATIC_INLINE void LL_ADC_REG_SetOverrun(ADC_TypeDef *ADCx, uint32_t Overrun)
 DECL|LL_ADC_REG_SetSequencerDiscont|function|__STATIC_INLINE void LL_ADC_REG_SetSequencerDiscont(ADC_TypeDef *ADCx, uint32_t SeqDiscont)
@@ -709,6 +714,8 @@ DECL|LL_ADC_SAMPLINGTIME_47CYCLES_5|macro|LL_ADC_SAMPLINGTIME_47CYCLES_5
 DECL|LL_ADC_SAMPLINGTIME_640CYCLES_5|macro|LL_ADC_SAMPLINGTIME_640CYCLES_5
 DECL|LL_ADC_SAMPLINGTIME_6CYCLES_5|macro|LL_ADC_SAMPLINGTIME_6CYCLES_5
 DECL|LL_ADC_SAMPLINGTIME_92CYCLES_5|macro|LL_ADC_SAMPLINGTIME_92CYCLES_5
+DECL|LL_ADC_SAMPLINGTIME_COMMON_3C5_REPL_2C5|macro|LL_ADC_SAMPLINGTIME_COMMON_3C5_REPL_2C5
+DECL|LL_ADC_SAMPLINGTIME_COMMON_DEFAULT|macro|LL_ADC_SAMPLINGTIME_COMMON_DEFAULT
 DECL|LL_ADC_SINGLE_ENDED|macro|LL_ADC_SINGLE_ENDED
 DECL|LL_ADC_SetAnalogWDMonitChannels|function|__STATIC_INLINE void LL_ADC_SetAnalogWDMonitChannels(ADC_TypeDef *ADCx, uint32_t AWDy, uint32_t AWDChannelGroup)
 DECL|LL_ADC_SetAnalogWDThresholds|function|__STATIC_INLINE void LL_ADC_SetAnalogWDThresholds(ADC_TypeDef *ADCx, uint32_t AWDy, uint32_t AWDThresholdsHighLow, uint32_t AWDThresholdValue)
@@ -727,6 +734,7 @@ DECL|LL_ADC_SetOffset|function|__STATIC_INLINE void LL_ADC_SetOffset(ADC_TypeDef
 DECL|LL_ADC_SetOverSamplingDiscont|function|__STATIC_INLINE void LL_ADC_SetOverSamplingDiscont(ADC_TypeDef *ADCx, uint32_t OverSamplingDiscont)
 DECL|LL_ADC_SetOverSamplingScope|function|__STATIC_INLINE void LL_ADC_SetOverSamplingScope(ADC_TypeDef *ADCx, uint32_t OvsScope)
 DECL|LL_ADC_SetResolution|function|__STATIC_INLINE void LL_ADC_SetResolution(ADC_TypeDef *ADCx, uint32_t Resolution)
+DECL|LL_ADC_SetSamplingTimeCommonConfig|function|__STATIC_INLINE void LL_ADC_SetSamplingTimeCommonConfig(ADC_TypeDef *ADCx, uint32_t SamplingTimeCommonConfig)
 DECL|LL_ADC_StartCalibration|function|__STATIC_INLINE void LL_ADC_StartCalibration(ADC_TypeDef *ADCx, uint32_t SingleDiff)
 DECL|LL_ADC_WriteReg|macro|LL_ADC_WriteReg
 DECL|LowPowerMode|member|uint32_t LowPowerMode; /*!< Set ADC low power mode.

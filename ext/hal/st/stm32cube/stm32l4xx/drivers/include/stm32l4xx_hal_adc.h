@@ -110,6 +110,7 @@ DECL|Channel|member|uint32_t Channel; /*!< Select which ADC channel to monitor b
 DECL|Channel|member|uint32_t Channel; /*!< Specify the channel to configure into ADC regular group.
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Select ADC clock source (synchronous clock derived from APB clock or asynchronous clock derived from System/PLLSAI1/PLLSAI2 clocks) and clock prescaler.
 DECL|ContinuousConvMode|member|uint32_t ContinuousConvMode; /*!< Specify whether the conversion is performed in single mode (one conversion) or continuous mode for ADC group regular,
+DECL|DFSDMConfig|member|uint32_t DFSDMConfig; /*!< Specify whether ADC conversion data is sent directly to DFSDM.
 DECL|DMAContinuousRequests|member|uint32_t DMAContinuousRequests; /*!< Specify whether the DMA requests are performed in one shot mode (DMA transfer stops when number of conversions is reached)
 DECL|DataAlign|member|uint32_t DataAlign; /*!< Specify ADC data alignment in conversion data register (right or left).
 DECL|DiscontinuousConvMode|member|uint32_t DiscontinuousConvMode; /*!< Specify whether the conversions sequence of ADC group regular is performed in Complete-sequence/Discontinuous-sequence

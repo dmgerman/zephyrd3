@@ -1,4 +1,11 @@
+DECL|AutomaticOutput|member|uint32_t AutomaticOutput; /*!< Specifies whether the TIM Automatic Output feature is enabled or not.
 DECL|Autoreload|member|uint32_t Autoreload; /*!< Specifies the auto reload value to be loaded into the active
+DECL|Break2Filter|member|uint32_t Break2Filter; /*!< Specifies the TIM Break2 Filter.
+DECL|Break2Polarity|member|uint32_t Break2Polarity; /*!< Specifies the TIM Break2 Input pin polarity.
+DECL|Break2State|member|uint32_t Break2State; /*!< Specifies whether the TIM Break2 input is enabled or not.
+DECL|BreakFilter|member|uint32_t BreakFilter; /*!< Specifies the TIM Break Filter.
+DECL|BreakPolarity|member|uint32_t BreakPolarity; /*!< Specifies the TIM Break Input pin polarity.
+DECL|BreakState|member|uint16_t BreakState; /*!< Specifies whether the TIM Break input is enabled or not.
 DECL|ClockDivision|member|uint32_t ClockDivision; /*!< Specifies the clock division.
 DECL|CommutationDelay|member|uint32_t CommutationDelay; /*!< Specifies the compare value to be loaded into the Capture Compare Register.
 DECL|CompareValue|member|uint32_t CompareValue; /*!< Specifies the Compare value to be loaded into the Capture Compare Register.
@@ -11,6 +18,7 @@ DECL|DT_RANGE_1|macro|DT_RANGE_1
 DECL|DT_RANGE_2|macro|DT_RANGE_2
 DECL|DT_RANGE_3|macro|DT_RANGE_3
 DECL|DT_RANGE_4|macro|DT_RANGE_4
+DECL|DeadTime|member|uint8_t DeadTime; /*!< Specifies the delay time between the switching-off and the
 DECL|EncoderMode|member|uint32_t EncoderMode; /*!< Specifies the encoder resolution (x2 or x4).
 DECL|IC1ActiveInput|member|uint32_t IC1ActiveInput; /*!< Specifies the TI1 input source
 DECL|IC1Filter|member|uint32_t IC1Filter; /*!< Specifies the TI1 input filter.
@@ -30,6 +38,9 @@ DECL|ICPrescaler|member|uint32_t ICPrescaler; /*!< Specifies the Input Capture P
 DECL|LL_TIM_ACTIVEINPUT_DIRECTTI|macro|LL_TIM_ACTIVEINPUT_DIRECTTI
 DECL|LL_TIM_ACTIVEINPUT_INDIRECTTI|macro|LL_TIM_ACTIVEINPUT_INDIRECTTI
 DECL|LL_TIM_ACTIVEINPUT_TRC|macro|LL_TIM_ACTIVEINPUT_TRC
+DECL|LL_TIM_AUTOMATICOUTPUT_DISABLE|macro|LL_TIM_AUTOMATICOUTPUT_DISABLE
+DECL|LL_TIM_AUTOMATICOUTPUT_ENABLE|macro|LL_TIM_AUTOMATICOUTPUT_ENABLE
+DECL|LL_TIM_BDTR_InitTypeDef|typedef|} LL_TIM_BDTR_InitTypeDef;
 DECL|LL_TIM_BKIN_POLARITY_HIGH|macro|LL_TIM_BKIN_POLARITY_HIGH
 DECL|LL_TIM_BKIN_POLARITY_LOW|macro|LL_TIM_BKIN_POLARITY_LOW
 DECL|LL_TIM_BKIN_SOURCE_BKCOMP1|macro|LL_TIM_BKIN_SOURCE_BKCOMP1
@@ -37,6 +48,8 @@ DECL|LL_TIM_BKIN_SOURCE_BKCOMP2|macro|LL_TIM_BKIN_SOURCE_BKCOMP2
 DECL|LL_TIM_BKIN_SOURCE_BKIN|macro|LL_TIM_BKIN_SOURCE_BKIN
 DECL|LL_TIM_BKIN_SOURCE_DF1BK|macro|LL_TIM_BKIN_SOURCE_DF1BK
 DECL|LL_TIM_BKIN_SOURCE_DFBK|macro|LL_TIM_BKIN_SOURCE_DFBK
+DECL|LL_TIM_BREAK2_DISABLE|macro|LL_TIM_BREAK2_DISABLE
+DECL|LL_TIM_BREAK2_ENABLE|macro|LL_TIM_BREAK2_ENABLE
 DECL|LL_TIM_BREAK2_FILTER_FDIV16_N5|macro|LL_TIM_BREAK2_FILTER_FDIV16_N5
 DECL|LL_TIM_BREAK2_FILTER_FDIV16_N6|macro|LL_TIM_BREAK2_FILTER_FDIV16_N6
 DECL|LL_TIM_BREAK2_FILTER_FDIV16_N8|macro|LL_TIM_BREAK2_FILTER_FDIV16_N8
@@ -55,6 +68,8 @@ DECL|LL_TIM_BREAK2_FILTER_FDIV8_N6|macro|LL_TIM_BREAK2_FILTER_FDIV8_N6
 DECL|LL_TIM_BREAK2_FILTER_FDIV8_N8|macro|LL_TIM_BREAK2_FILTER_FDIV8_N8
 DECL|LL_TIM_BREAK2_POLARITY_HIGH|macro|LL_TIM_BREAK2_POLARITY_HIGH
 DECL|LL_TIM_BREAK2_POLARITY_LOW|macro|LL_TIM_BREAK2_POLARITY_LOW
+DECL|LL_TIM_BREAK_DISABLE|macro|LL_TIM_BREAK_DISABLE
+DECL|LL_TIM_BREAK_ENABLE|macro|LL_TIM_BREAK_ENABLE
 DECL|LL_TIM_BREAK_FILTER_FDIV16_N5|macro|LL_TIM_BREAK_FILTER_FDIV16_N5
 DECL|LL_TIM_BREAK_FILTER_FDIV16_N6|macro|LL_TIM_BREAK_FILTER_FDIV16_N6
 DECL|LL_TIM_BREAK_FILTER_FDIV16_N8|macro|LL_TIM_BREAK_FILTER_FDIV16_N8
@@ -551,6 +566,7 @@ DECL|LL_TIM_TS_TI2FP2|macro|LL_TIM_TS_TI2FP2
 DECL|LL_TIM_UPDATESOURCE_COUNTER|macro|LL_TIM_UPDATESOURCE_COUNTER
 DECL|LL_TIM_UPDATESOURCE_REGULAR|macro|LL_TIM_UPDATESOURCE_REGULAR
 DECL|LL_TIM_WriteReg|macro|LL_TIM_WriteReg
+DECL|LockLevel|member|uint32_t LockLevel; /*!< Specifies the LOCK level parameters.
 DECL|OCIdleState|member|uint32_t OCIdleState; /*!< Specifies the TIM Output Compare pin state during Idle state.
 DECL|OCMode|member|uint32_t OCMode; /*!< Specifies the output mode.
 DECL|OCNIdleState|member|uint32_t OCNIdleState; /*!< Specifies the TIM Output Compare pin state during Idle state.
@@ -559,6 +575,8 @@ DECL|OCNState|member|uint32_t OCNState; /*!< Specifies the TIM complementary Out
 DECL|OCPolarity|member|uint32_t OCPolarity; /*!< Specifies the output polarity.
 DECL|OCState|member|uint32_t OCState; /*!< Specifies the TIM Output Compare state.
 DECL|OFFSET_TAB_CCMRx|variable|OFFSET_TAB_CCMRx
+DECL|OSSIState|member|uint32_t OSSIState; /*!< Specifies the Off-State used in Idle state.
+DECL|OSSRState|member|uint32_t OSSRState; /*!< Specifies the Off-State selection used in Run mode.
 DECL|Prescaler|member|uint16_t Prescaler; /*!< Specifies the prescaler value used to divide the TIM clock.
 DECL|RepetitionCounter|member|uint8_t RepetitionCounter; /*!< Specifies the repetition counter value. Each time the RCR downcounter
 DECL|SHIFT_TAB_CCxP|variable|SHIFT_TAB_CCxP
@@ -575,6 +593,7 @@ DECL|TIM3_OR1_RMP_MASK|macro|TIM3_OR1_RMP_MASK
 DECL|TIM8_OR1_RMP_MASK|macro|TIM8_OR1_RMP_MASK
 DECL|TIM_CALC_DTS|macro|TIM_CALC_DTS
 DECL|TIM_GET_CHANNEL_INDEX|macro|TIM_GET_CHANNEL_INDEX
+DECL|TIM_POSITION_BRK_SOURCE|macro|TIM_POSITION_BRK_SOURCE
 DECL|TIM_POSITION_ICPSC|macro|TIM_POSITION_ICPSC
 DECL|TIMx_OR1_RMP_MASK|macro|TIMx_OR1_RMP_MASK
 DECL|TIMx_OR1_RMP_SHIFT|macro|TIMx_OR1_RMP_SHIFT
