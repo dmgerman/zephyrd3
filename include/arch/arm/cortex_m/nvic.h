@@ -28,6 +28,5 @@ DECL|_NvicIrqPrioSet|function|static inline void _NvicIrqPrioSet(unsigned int ir
 DECL|_NvicIrqUnpend|function|static inline void _NvicIrqUnpend(unsigned int irq)
 DECL|_NvicIsIrqEnabled|function|static inline int _NvicIsIrqEnabled(unsigned int irq)
 DECL|_NvicIsIrqPending|function|static inline int _NvicIsIrqPending(unsigned int irq)
-DECL|_NvicSwInterruptTrigger|function|static inline void _NvicSwInterruptTrigger(unsigned int irq)
 DECL|_ZERO_LATENCY_IRQS_RESERVED_PRIO|macro|_ZERO_LATENCY_IRQS_RESERVED_PRIO
 DECL|_ZERO_LATENCY_IRQS_RESERVED_PRIO|macro|_ZERO_LATENCY_IRQS_RESERVED_PRIO
