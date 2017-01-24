@@ -338,7 +338,7 @@ DECL|sum_sfn|function|BYTE sum_sfn (const BYTE* dir/* Pointer to the SFN entry *
 DECL|sync_fs|function|FRESULT sync_fs ( /* FR_OK:succeeded, !=0:error */FATFS* fs/* File system object */ )
 DECL|sync_window|function|FRESULT sync_window ( /* Returns FR_OK or FR_DISK_ERROR */FATFS* fs/* File system object */ )
 DECL|unlock_fs|function|void unlock_fs (FATFS* fs,/* File system object */ FRESULT res/* Result code to be returned */ )
-DECL|validate|function|FRESULT validate ( /* Returns FR_OK or FR_INVALID_OBJECT */void* dfp,/* Pointer to the FIL/DIR object to check validity */ FATFS** fs/* Pointer to pointer to the owner file system object to return */ )
+DECL|validate|function|FRESULT validate ( /* Returns FR_OK or FR_INVALID_OBJECT */_FDID* obj,/* Pointer to the _OBJ, the 1st member in the FIL/DIR object, to check validity */ FATFS** fs/* Pointer to pointer to the owner file system object to return */ )
 DECL|xdir_sum|function|WORD xdir_sum ( /* Get checksum of the directoly block */const BYTE* dir/* Directory entry block to be calculated */ )
 DECL|xname_sum|function|WORD xname_sum ( /* Get check sum (to be used as hash) of the name */const WCHAR* name/* File name to be calculated */ )
 DECL|xsum32|function|DWORD xsum32 (BYTE dat,/* Data to be sumed */ DWORD sum/* Previous value */ )
