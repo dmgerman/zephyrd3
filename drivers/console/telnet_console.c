@@ -21,9 +21,13 @@ DECL|line_out|member|uint16_t line_out;
 DECL|orig_printk_hook|variable|orig_printk_hook
 DECL|out_buf|variable|out_buf
 DECL|telnet_accept|function|static void telnet_accept(struct net_context *client, struct sockaddr *addr, socklen_t addrlen, int error, void *user_data)
+DECL|telnet_cmd|variable|telnet_cmd
+DECL|telnet_command_send_reply|function|static inline void telnet_command_send_reply(uint8_t *msg, uint16_t len)
 DECL|telnet_console_init|function|static int telnet_console_init(struct device *arg)
+DECL|telnet_console_out_nothing|function|static int telnet_console_out_nothing(int c)
 DECL|telnet_console_out|function|static int telnet_console_out(int c)
 DECL|telnet_end_client_connection|function|static void telnet_end_client_connection(void)
+DECL|telnet_handle_command|function|static inline bool telnet_handle_command(struct net_buf *buf)
 DECL|telnet_handle_input|function|static inline void telnet_handle_input(struct net_buf *buf)
 DECL|telnet_rb_get_line_in|function|static inline struct line_buf *telnet_rb_get_line_in(void)
 DECL|telnet_rb_get_line_out|function|static inline struct line_buf *telnet_rb_get_line_out(void)
@@ -32,6 +36,10 @@ DECL|telnet_rb_switch|function|static void telnet_rb_switch(void)
 DECL|telnet_rb|variable|telnet_rb
 DECL|telnet_recv|function|static void telnet_recv(struct net_context *client,struct net_buf *buf, int status, void *user_data)
 DECL|telnet_register_input|function|void telnet_register_input(struct k_fifo *avail, struct k_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
+DECL|telnet_reply_ay_command|function|static inline void telnet_reply_ay_command(void)
+DECL|telnet_reply_command|function|static inline void telnet_reply_command(void)
+DECL|telnet_reply_command|macro|telnet_reply_command
+DECL|telnet_reply_do_command|function|static inline void telnet_reply_do_command(void)
 DECL|telnet_run|function|static void telnet_run(void)
 DECL|telnet_send_prematurely|function|static void telnet_send_prematurely(struct k_timer *timer)
 DECL|telnet_send|function|static inline bool telnet_send(void)
