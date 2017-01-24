@@ -36,7 +36,7 @@ DECL|NACKState|member|uint32_t NACKState; /*!< Specifies the SmartCard NACK Tran
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the SmartCard Prescaler value used for dividing the system clock
 DECL|RxState|member|__IO HAL_SMARTCARD_StateTypeDef RxState; /* SmartCard state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /* SmartCard Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /* SmartCard Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /* SmartCard Rx Transfer size */
 DECL|SMARTCARD_BRR|macro|SMARTCARD_BRR
 DECL|SMARTCARD_CR1_REG_INDEX|macro|SMARTCARD_CR1_REG_INDEX
@@ -111,7 +111,7 @@ DECL|SMARTCARD_STOPBITS_0_5|macro|SMARTCARD_STOPBITS_0_5
 DECL|SMARTCARD_STOPBITS_1_5|macro|SMARTCARD_STOPBITS_1_5
 DECL|SMARTCARD_WORDLENGTH_9B|macro|SMARTCARD_WORDLENGTH_9B
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /* SmartCard Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /* SmartCard Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /* SmartCard Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
 DECL|__HAL_SMARTCARD_CLEAR_FEFLAG|macro|__HAL_SMARTCARD_CLEAR_FEFLAG

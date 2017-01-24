@@ -18,6 +18,7 @@ DECL|FMPI2C_ITSlaveSequentialCplt|function|static void FMPI2C_ITSlaveSequentialC
 DECL|FMPI2C_IsAcknowledgeFailed|function|static HAL_StatusTypeDef FMPI2C_IsAcknowledgeFailed(FMPI2C_HandleTypeDef *hfmpi2c, uint32_t Timeout, uint32_t Tickstart)
 DECL|FMPI2C_Master_ISR_DMA|function|static HAL_StatusTypeDef FMPI2C_Master_ISR_DMA(struct __FMPI2C_HandleTypeDef *hfmpi2c, uint32_t ITFlags, uint32_t ITSources)
 DECL|FMPI2C_Master_ISR_IT|function|static HAL_StatusTypeDef FMPI2C_Master_ISR_IT(struct __FMPI2C_HandleTypeDef *hfmpi2c, uint32_t ITFlags, uint32_t ITSources)
+DECL|FMPI2C_NO_OPTION_FRAME|macro|FMPI2C_NO_OPTION_FRAME
 DECL|FMPI2C_RequestMemoryRead|function|static HAL_StatusTypeDef FMPI2C_RequestMemoryRead(FMPI2C_HandleTypeDef *hfmpi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint32_t Timeout, uint32_t Tickstart)
 DECL|FMPI2C_RequestMemoryWrite|function|static HAL_StatusTypeDef FMPI2C_RequestMemoryWrite(FMPI2C_HandleTypeDef *hfmpi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint32_t Timeout, uint32_t Tickstart)
 DECL|FMPI2C_STATE_MASTER_BUSY_RX|macro|FMPI2C_STATE_MASTER_BUSY_RX
