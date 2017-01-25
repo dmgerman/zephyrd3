@@ -16,7 +16,6 @@ DECL|_ScbHardFaultIsBusErrOnVectorRead|function|static inline int _ScbHardFaultI
 DECL|_ScbHardFaultIsForced|function|static inline int _ScbHardFaultIsForced(void)
 DECL|_ScbIsBusFault|function|static inline int _ScbIsBusFault(void)
 DECL|_ScbIsMemFault|function|static inline int _ScbIsMemFault(void)
-DECL|_ScbIsNestedExc|function|static inline int _ScbIsNestedExc(void)
 DECL|_ScbIsUsageFault|function|static inline int _ScbIsUsageFault(void)
 DECL|_ScbMemFaultAddrGet|function|static inline uint32_t _ScbMemFaultAddrGet(void)
 DECL|_ScbMemFaultAllFaultsReset|function|static inline void _ScbMemFaultAllFaultsReset(void)
