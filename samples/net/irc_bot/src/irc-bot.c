@@ -6,6 +6,10 @@ DECL|CMD|macro|CMD
 DECL|DEFAULT_CHANNEL|macro|DEFAULT_CHANNEL
 DECL|DEFAULT_PORT|macro|DEFAULT_PORT
 DECL|DEFAULT_SERVER|macro|DEFAULT_SERVER
+DECL|DNS_PORT|macro|DNS_PORT
+DECL|DNS_SERVER|macro|DNS_SERVER
+DECL|DNS_SERVER|macro|DNS_SERVER
+DECL|DNS_SLEEP_MSECS|macro|DNS_SLEEP_MSECS
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
@@ -65,6 +69,7 @@ DECL|zirc_chan_send_msg|function|zirc_chan_send_msg(const struct zirc_chan *chan
 DECL|zirc_chan|struct|struct zirc_chan {
 DECL|zirc_connect|function|zirc_connect(struct zirc *irc, const char *host, int port, void *data)
 DECL|zirc_disconnect|function|zirc_disconnect(struct zirc *irc)
+DECL|zirc_dns_lookup|function|zirc_dns_lookup(const char *host,struct sockaddr *src_addr, struct sockaddr *dst_addr)
 DECL|zirc_nick_set|function|zirc_nick_set(struct zirc *irc, const char *nick)
 DECL|zirc_user_set|function|zirc_user_set(struct zirc *irc, const char *user, const char *realname)
 DECL|zirc|struct|struct zirc {
