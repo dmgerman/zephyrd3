@@ -1,7 +1,3 @@
-DECL|_SCB_SCR_SEVONPEND|macro|_SCB_SCR_SEVONPEND
-DECL|_SCB_SCR_SLEEPDEEP|macro|_SCB_SCR_SLEEPDEEP
-DECL|_SCB_SCR_SLEEPONEXIT|macro|_SCB_SCR_SLEEPONEXIT
-DECL|_SCB_SCR|macro|_SCB_SCR
 DECL|_SCB__H_|macro|_SCB__H_
 DECL|_ScbActiveVectorGet|function|static inline uint32_t _ScbActiveVectorGet(void)
 DECL|_ScbBusFaultAddrGet|function|static inline uint32_t _ScbBusFaultAddrGet(void)
