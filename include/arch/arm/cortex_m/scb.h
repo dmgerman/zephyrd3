@@ -32,7 +32,6 @@ DECL|_ScbMemFaultIsMmfarValid|function|static inline int _ScbMemFaultIsMmfarVali
 DECL|_ScbMemFaultIsStacking|function|static inline int _ScbMemFaultIsStacking(void)
 DECL|_ScbMemFaultIsUnstacking|function|static inline int _ScbMemFaultIsUnstacking(void)
 DECL|_ScbMemFaultMmfarReset|function|static inline void _ScbMemFaultMmfarReset(void)
-DECL|_ScbNmiPend|function|static inline void _ScbNmiPend(void)
 DECL|_ScbPendsvSet|function|static inline void _ScbPendsvSet(void)
 DECL|_ScbUsageFaultAllFaultsReset|function|static inline void _ScbUsageFaultAllFaultsReset(void)
 DECL|_ScbUsageFaultEnable|function|static inline void _ScbUsageFaultEnable(void)
