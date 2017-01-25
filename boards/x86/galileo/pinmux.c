@@ -13,6 +13,7 @@ DECL|PWM0|enumerator|PWM0,
 DECL|_galileo_path|variable|_galileo_path
 DECL|_galileo_pinmux_get_pin|function|int _galileo_pinmux_get_pin(struct device *port, uint32_t pin, uint32_t *func)
 DECL|_galileo_pinmux_set_pin|function|int _galileo_pinmux_set_pin(struct device *port, uint8_t pin, uint32_t func)
+DECL|api_funcs|variable|api_funcs
 DECL|cfg|member|uint32_t cfg;
 DECL|func|member|uint8_t func;
 DECL|galileo_pinmux_driver|variable|galileo_pinmux_driver
@@ -26,4 +27,8 @@ DECL|mux|member|enum gpio_chip mux;
 DECL|path|member|struct mux_pin path[5];
 DECL|pin_level|enum|enum pin_level {
 DECL|pinmux_galileo_initialize|function|static int pinmux_galileo_initialize(struct device *port)
+DECL|pinmux_get|function|static int pinmux_get(struct device *dev,uint32_t pin, uint32_t *func)
+DECL|pinmux_input_enable|function|static int pinmux_input_enable(struct device *dev, uint32_t pin, uint8_t func)
+DECL|pinmux_pullup|function|static int pinmux_pullup(struct device *dev, uint32_t pin, uint8_t func)
+DECL|pinmux_set|function|static int pinmux_set(struct device *dev,uint32_t pin, uint32_t func)
 DECL|pin|member|uint8_t pin;
