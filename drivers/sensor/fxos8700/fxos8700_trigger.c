@@ -1,4 +1,4 @@
-DECL|fxos8700_gpio_callback|function|static void fxos8700_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pin)
+DECL|fxos8700_gpio_callback|function|static void fxos8700_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pin_mask)
 DECL|fxos8700_handle_drdy_int|function|static int fxos8700_handle_drdy_int(struct device *dev)
 DECL|fxos8700_handle_int|function|static void fxos8700_handle_int(void *arg)
 DECL|fxos8700_handle_pulse_int|function|static int fxos8700_handle_pulse_int(struct device *dev)

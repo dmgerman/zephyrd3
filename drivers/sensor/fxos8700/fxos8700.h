@@ -63,6 +63,7 @@ DECL|fxos8700_range|enum|enum fxos8700_range {
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_name|member|char *gpio_name;
 DECL|gpio_pin|member|uint8_t gpio_pin;
+DECL|gpio_pin|member|uint8_t gpio_pin;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c_address|member|uint8_t i2c_address;
 DECL|i2c_name|member|char *i2c_name;
