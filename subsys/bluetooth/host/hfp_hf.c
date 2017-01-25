@@ -17,6 +17,7 @@ DECL|cind_resp|function|int cind_resp(struct at_client *hf_at, struct net_buf *b
 DECL|cind_status_finish|function|int cind_status_finish(struct at_client *hf_at, struct net_buf *buf, enum at_result result)
 DECL|cind_status_handle|function|int cind_status_handle(struct at_client *hf_at)
 DECL|cind_status_resp|function|int cind_status_resp(struct at_client *hf_at, struct net_buf *buf)
+DECL|cmee_finish|function|int cmee_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
 DECL|cmer_finish|function|int cmer_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
 DECL|hf_slc_error|function|void hf_slc_error(struct at_client *hf_at)
 DECL|hf_slc_establish|function|int hf_slc_establish(struct bt_hfp_hf *hf)
