@@ -1,0 +1,4 @@
+DECL|TEST_SIZE_0|macro|TEST_SIZE_0
+DECL|test_mheap_block_desc|function|void test_mheap_block_desc(void)
+DECL|test_mheap_malloc_align4|function|void test_mheap_malloc_align4(void)
+DECL|test_mheap_min_block_size|function|void test_mheap_min_block_size(void)
