@@ -157,6 +157,7 @@ DECL|ieee802154_cmd_assoc_res|struct|struct ieee802154_cmd_assoc_res {
 DECL|ieee802154_cmd_coord_realign|struct|struct ieee802154_cmd_coord_realign {
 DECL|ieee802154_cmd_disassoc_note|struct|struct ieee802154_cmd_disassoc_note {
 DECL|ieee802154_command|struct|struct ieee802154_command {
+DECL|ieee802154_decipher_data_frame|macro|ieee802154_decipher_data_frame
 DECL|ieee802154_disassociation_reason_field|enum|enum ieee802154_disassociation_reason_field {
 DECL|ieee802154_fcf_seq|struct|struct ieee802154_fcf_seq {
 DECL|ieee802154_frame_params|struct|struct ieee802154_frame_params {
