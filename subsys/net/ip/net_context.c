@@ -1,7 +1,5 @@
 DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
-DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_active_close)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_established)
-DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_passive_close)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_syn_rcvd)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_synack_received)
 DECL|NET_CONN_CB|macro|NET_CONN_CB
@@ -40,8 +38,6 @@ DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_cont
 DECL|send_ack|function|static inline int send_ack(struct net_context *context, struct sockaddr *remote)
 DECL|send_control_segment|function|static inline int send_control_segment(struct net_context *context, const struct sockaddr_ptr *local, const struct sockaddr *remote, int flags, const char *msg)
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_buf *buf, net_context_send_cb_t cb, int32_t timeout, void *token,
-DECL|send_fin_ack|function|static inline int send_fin_ack(struct net_context *context, struct sockaddr *remote)
-DECL|send_fin_if_active_close|function|static bool send_fin_if_active_close(struct net_context *context)
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr_ptr *local, struct sockaddr *remote)
 DECL|send_syn|function|static inline int send_syn(struct net_context *context, const struct sockaddr *remote)
