@@ -60,7 +60,7 @@ DECL|mcr20a_t4cmp_set|function|static int mcr20a_t4cmp_set(struct mcr20a_context
 DECL|mcr20a_thread_main|function|static void mcr20a_thread_main(void *arg1, void *unused1, void *unused2)
 DECL|mcr20a_timer_init|function|static int mcr20a_timer_init(struct device *dev, uint8_t tb)
 DECL|mcr20a_timer_set|function|static int mcr20a_timer_set(struct mcr20a_context *mcr20a, uint8_t cmp_reg, uint32_t timeout)
-DECL|mcr20a_tx|function|static int mcr20a_tx(struct device *dev, struct net_buf *buf)
+DECL|mcr20a_tx|function|static int mcr20a_tx(struct device *dev, struct net_buf *buf, struct net_buf *frag)
 DECL|mcr20a_update_overwrites|function|static int mcr20a_update_overwrites(struct mcr20a_context *dev)
 DECL|pll_frac_lt|variable|pll_frac_lt
 DECL|pll_int_lt|variable|pll_int_lt
@@ -69,4 +69,4 @@ DECL|power_on_and_setup|function|static int power_on_and_setup(struct device *de
 DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct mcr20a_spi *spi, struct net_buf *buf, uint8_t len)
 DECL|set_reset|function|static inline void set_reset(struct device *dev, uint32_t value)
 DECL|setup_gpio_callbacks|function|static inline void setup_gpio_callbacks(struct device *dev)
-DECL|write_txfifo_content|function|static inline bool write_txfifo_content(struct mcr20a_spi *spi,struct net_buf *buf)
+DECL|write_txfifo_content|function|static inline bool write_txfifo_content(struct mcr20a_spi *spi,struct net_buf *buf, struct net_buf *frag)
