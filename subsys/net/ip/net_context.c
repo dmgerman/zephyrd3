@@ -35,13 +35,13 @@ DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|packet_received|function|enum net_verdict packet_received(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, int32_t timeout, void *user_data)
 DECL|send_ack|function|static inline int send_ack(struct net_context *context, struct sockaddr *remote)
 DECL|send_control_segment|function|static inline int send_control_segment(struct net_context *context, const struct sockaddr_ptr *local, const struct sockaddr *remote, int flags, const char *msg)
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_buf *buf, net_context_send_cb_t cb, int32_t timeout, void *token,
 DECL|send_fin_ack|function|static inline int send_fin_ack(struct net_context *context, struct sockaddr *remote)
 DECL|send_fin_if_active_close|function|static bool send_fin_if_active_close(struct net_context *context)
-DECL|send_fin|function|static inline int send_fin(struct net_context *context, struct sockaddr *remote)
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr_ptr *local, struct sockaddr *remote)
 DECL|send_syn|function|static inline int send_syn(struct net_context *context, const struct sockaddr *remote)
