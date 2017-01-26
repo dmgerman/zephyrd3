@@ -39,3 +39,4 @@ DECL|spi_conf|variable|spi_conf
 DECL|spi_dev|variable|spi_dev
 DECL|spi_dump_message|function|static inline void spi_dump_message(const uint8_t *pre, uint8_t *buf, uint8_t size)
 DECL|spi_dump_message|function|void spi_dump_message(const uint8_t *pre, uint8_t *buf, uint8_t size) {}
+DECL|txmsg|variable|txmsg
