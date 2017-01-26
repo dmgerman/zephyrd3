@@ -90,6 +90,7 @@ DECL|pan_id|member|uint16_t pan_id;
 DECL|req_lock|member|struct k_sem req_lock;
 DECL|res_lock|member|struct k_sem res_lock;
 DECL|scan_ctx|member|struct ieee802154_req_params *scan_ctx;
+DECL|sec_ctx|member|struct ieee802154_security_ctx sec_ctx;
 DECL|sequence|member|uint8_t sequence;
 DECL|short_addr|member|uint16_t short_addr;
 DECL|short_addr|member|uint16_t short_addr;
