@@ -31,6 +31,7 @@ DECL|_ASM_FILE_PROLOGUE|macro|_ASM_FILE_PROLOGUE
 DECL|_GENERIC_SECTION|macro|_GENERIC_SECTION
 DECL|_NODATA_SECTION|macro|_NODATA_SECTION
 DECL|_NODATA_SECTION|macro|_NODATA_SECTION
+DECL|__GENERIC_SECTION|macro|__GENERIC_SECTION
 DECL|___in_section|macro|___in_section
 DECL|__aligned|macro|__aligned
 DECL|__deprecated|macro|__deprecated
