@@ -1,0 +1,28 @@
+DECL|GET_TIMER_CURRENT_TIME|macro|GET_TIMER_CURRENT_TIME
+DECL|GET_TIMER_CURRENT_TIME|macro|GET_TIMER_CURRENT_TIME
+DECL|GET_TIMER_FIRE_TIME|macro|GET_TIMER_FIRE_TIME
+DECL|GET_TIMER_FIRE_TIME|macro|GET_TIMER_FIRE_TIME
+DECL|IDLE_NOT_TICKLESS|macro|IDLE_NOT_TICKLESS
+DECL|IDLE_TICKLESS|macro|IDLE_TICKLESS
+DECL|MIN_TIMER_PROG_DELAY|macro|MIN_TIMER_PROG_DELAY
+DECL|MIN_TIMER_PROG_DELAY|macro|MIN_TIMER_PROG_DELAY
+DECL|SET_TIMER_FIRE_TIME|macro|SET_TIMER_FIRE_TIME
+DECL|SET_TIMER_FIRE_TIME|macro|SET_TIMER_FIRE_TIME
+DECL|TIMER_MODE_ONE_SHOT|macro|TIMER_MODE_ONE_SHOT
+DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
+DECL|XT_SR_CCOMPARE|macro|XT_SR_CCOMPARE
+DECL|_XT_SR_CCOMPARE|macro|_XT_SR_CCOMPARE
+DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
+DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks)
+DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
+DECL|_timer_int_handler|function|void _timer_int_handler(void *params)
+DECL|_xt_tick_divisor_init|function|void _xt_tick_divisor_init(void)
+DECL|_xt_tick_divisor|variable|_xt_tick_divisor
+DECL|cycles_per_tick|variable|cycles_per_tick
+DECL|idle_mode|variable|idle_mode
+DECL|idle_original_ticks|variable|idle_original_ticks
+DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
+DECL|max_load_value|variable|max_load_value
+DECL|max_system_ticks|variable|max_system_ticks
+DECL|tickless_idle_init|function|static ALWAYS_INLINE void tickless_idle_init(void)
+DECL|timer_mode|variable|timer_mode
