@@ -14,10 +14,9 @@ DECL|HCI_ACL|macro|HCI_ACL
 DECL|HCI_CMD|macro|HCI_CMD
 DECL|HCI_EVT|macro|HCI_EVT
 DECL|HCI_SCO|macro|HCI_SCO
-DECL|MAX_RX_MSG_LEN|macro|MAX_RX_MSG_LEN
-DECL|MAX_TX_MSG_LEN|macro|MAX_TX_MSG_LEN
 DECL|PACKET_TYPE|macro|PACKET_TYPE
 DECL|READY_NOW|macro|READY_NOW
+DECL|SPI_MAX_MSG_LEN|macro|SPI_MAX_MSG_LEN
 DECL|SPI_READ|macro|SPI_READ
 DECL|SPI_WRITE|macro|SPI_WRITE
 DECL|STATUS_HEADER_READY|macro|STATUS_HEADER_READY
@@ -35,6 +34,7 @@ DECL|drv|variable|drv
 DECL|gpio_cb|variable|gpio_cb
 DECL|irq_dev|variable|irq_dev
 DECL|rst_dev|variable|rst_dev
+DECL|rxmsg|variable|rxmsg
 DECL|spi_conf|variable|spi_conf
 DECL|spi_dev|variable|spi_dev
 DECL|spi_dump_message|function|static inline void spi_dump_message(const uint8_t *pre, uint8_t *buf, uint8_t size)
