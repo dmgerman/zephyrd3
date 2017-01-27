@@ -1,0 +1,4 @@
+DECL|_FLOAT_REGS_ARM_GCC_H|macro|_FLOAT_REGS_ARM_GCC_H
+DECL|_load_all_float_registers|function|static inline void _load_all_float_registers(struct fp_register_set *regs)
+DECL|_load_then_store_all_float_registers|function|static inline void _load_then_store_all_float_registers(struct fp_register_set *regs)
+DECL|_store_all_float_registers|function|static inline void _store_all_float_registers(struct fp_register_set *regs)

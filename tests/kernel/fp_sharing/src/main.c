@@ -1,0 +1,14 @@
+DECL|HI_PRI|macro|HI_PRI
+DECL|LO_PRI|macro|LO_PRI
+DECL|MAX_TESTS|macro|MAX_TESTS
+DECL|STACKSIZE|macro|STACKSIZE
+DECL|THREAD_FP_FLAGS|macro|THREAD_FP_FLAGS
+DECL|THREAD_FP_FLAGS|macro|THREAD_FP_FLAGS
+DECL|float_reg_set_load|variable|float_reg_set_load
+DECL|float_reg_set_store|variable|float_reg_set_store
+DECL|float_reg_set|variable|float_reg_set
+DECL|fpu_sharing_error|variable|fpu_sharing_error
+DECL|load_store_high_count|variable|load_store_high_count
+DECL|load_store_high|function|void load_store_high(void)
+DECL|load_store_low_count|variable|load_store_low_count
+DECL|load_store_low|function|void load_store_low(void)
