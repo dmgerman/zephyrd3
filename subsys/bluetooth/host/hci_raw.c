@@ -1,7 +1,7 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(int32_t timeout)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode, int timeout)
-DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int timeout)
+DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_enable_raw|function|int bt_enable_raw(struct k_fifo *rx_queue)
 DECL|bt_hci_driver_register|function|int bt_hci_driver_register(struct bt_hci_driver *drv)
