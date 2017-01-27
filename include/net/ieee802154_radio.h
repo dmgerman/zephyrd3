@@ -11,4 +11,4 @@ DECL|set_short_addr|member|int (*set_short_addr)(struct device *dev, uint16_t sh
 DECL|set_txpower|member|int (*set_txpower)(struct device *dev, int16_t dbm);
 DECL|start|member|int (*start)(struct device *dev);
 DECL|stop|member|int (*stop)(struct device *dev);
-DECL|tx|member|int (*tx)(struct device *dev, struct net_buf *buf);
+DECL|tx|member|int (*tx)(struct device *dev,
