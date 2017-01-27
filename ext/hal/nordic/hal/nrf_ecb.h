@@ -1,0 +1,1 @@
+DECL|NRF_ECB_H__|macro|NRF_ECB_H__
