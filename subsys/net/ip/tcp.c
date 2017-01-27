@@ -4,6 +4,7 @@ DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_MAX_TCP_CONTEXT|macro|NET_MAX_TCP_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|ack|member|uint32_t ack;
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
 DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_buf *buf)
