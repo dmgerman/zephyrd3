@@ -138,6 +138,7 @@ DECL|k_alert|struct|struct k_alert {
 DECL|k_delayed_work_remaining_get|function|static inline int32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
+DECL|k_fifo_is_empty|function|static inline int k_fifo_is_empty(struct k_fifo *fifo)
 DECL|k_fifo|struct|struct k_fifo {
 DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
