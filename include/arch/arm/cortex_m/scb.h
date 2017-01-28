@@ -1,5 +1,4 @@
 DECL|_SCB__H_|macro|_SCB__H_
-DECL|_ScbActiveVectorGet|function|static inline uint32_t _ScbActiveVectorGet(void)
 DECL|_ScbBusFaultAddrGet|function|static inline uint32_t _ScbBusFaultAddrGet(void)
 DECL|_ScbBusFaultAllFaultsReset|function|static inline void _ScbBusFaultAllFaultsReset(void)
 DECL|_ScbBusFaultBfarReset|function|static inline void _ScbBusFaultBfarReset(void)
