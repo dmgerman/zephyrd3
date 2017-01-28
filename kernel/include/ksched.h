@@ -25,6 +25,7 @@ DECL|_is_t1_higher_prio_than_t2|function|static inline int _is_t1_higher_prio_th
 DECL|_is_thread_pending|function|static inline int _is_thread_pending(struct k_thread *thread)
 DECL|_is_thread_prevented_from_running|function|static inline int _is_thread_prevented_from_running(struct k_thread *thread)
 DECL|_is_thread_ready|function|static inline int _is_thread_ready(struct k_thread *thread)
+DECL|_is_thread_state_set|function|static inline int _is_thread_state_set(struct k_thread *thread, uint32_t state)
 DECL|_is_thread_timeout_active|function|static inline int _is_thread_timeout_active(struct k_thread *thread)
 DECL|_is_thread_timeout_expired|function|static ALWAYS_INLINE int _is_thread_timeout_expired(struct k_thread *thread)
 DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(int prio)
