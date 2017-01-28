@@ -64,12 +64,24 @@ DECL|BT_L2CAP_PSM_AVDTP|macro|BT_L2CAP_PSM_AVDTP
 DECL|__packed|variable|__packed
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_avdtp **session);
 DECL|br_chan|member|struct bt_l2cap_br_chan br_chan;
+DECL|bt_avdtp_cap|struct|struct bt_avdtp_cap {
+DECL|bt_avdtp_discover_params|struct|struct bt_avdtp_discover_params {
 DECL|bt_avdtp_event_cb|struct|struct bt_avdtp_event_cb {
 DECL|bt_avdtp_ind_cb|struct|struct bt_avdtp_ind_cb {
+DECL|bt_avdtp_sep|struct|struct bt_avdtp_sep {
 DECL|bt_avdtp_single_sig_hdr|struct|struct bt_avdtp_single_sig_hdr {
 DECL|bt_avdtp|struct|struct bt_avdtp {
+DECL|caps|member|struct bt_avdtp_cap caps[0];
+DECL|caps|member|struct bt_avdtp_sep *caps;
+DECL|cat|member|uint8_t cat;
+DECL|data|member|uint8_t data[0];
 DECL|hdr|member|uint8_t hdr;
 DECL|ind|member|struct bt_avdtp_ind_cb *ind;
+DECL|len|member|uint8_t len;
+DECL|len|member|uint8_t len;
 DECL|req|member|struct bt_avdtp_req *req;
+DECL|req|member|struct bt_avdtp_req *req;
+DECL|seid|member|uint8_t seid;
 DECL|signal_id|member|uint8_t signal_id;
+DECL|status|member|uint8_t status;
 DECL|streams|member|struct bt_avdtp_stream *streams; /* List of AV streams */

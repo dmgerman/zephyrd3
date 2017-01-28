@@ -3,6 +3,8 @@ DECL|AT_CMD_PROCESS_VALUE|enumerator|AT_CMD_PROCESS_VALUE,
 DECL|AT_CMD_START|enumerator|AT_CMD_START,
 DECL|AT_CMD_STATE_END_LF|enumerator|AT_CMD_STATE_END_LF,
 DECL|AT_CMD_STATE_END|enumerator|AT_CMD_STATE_END
+DECL|AT_CMD_TYPE_NORMAL|enumerator|AT_CMD_TYPE_NORMAL,
+DECL|AT_CMD_TYPE_UNSOLICITED|enumerator|AT_CMD_TYPE_UNSOLICITED
 DECL|AT_RESULT_ERROR|enumerator|AT_RESULT_ERROR
 DECL|AT_RESULT_OK|enumerator|AT_RESULT_OK,
 DECL|AT_STATE_END|enumerator|AT_STATE_END
@@ -16,6 +18,7 @@ DECL|AT_STATE_START|enumerator|AT_STATE_START,
 DECL|AT_STATE_UNSOLICITED_CMD|enumerator|AT_STATE_UNSOLICITED_CMD,
 DECL|at_client|struct|struct at_client {
 DECL|at_cmd_state|enum|enum at_cmd_state {
+DECL|at_cmd_type|enum|enum at_cmd_type {
 DECL|at_finish_cb_t|typedef|typedef int (*at_finish_cb_t)(struct at_client *at, struct net_buf *buf,
 DECL|at_resp_cb_t|typedef|typedef int (*at_resp_cb_t)(struct at_client *at, struct net_buf *buf);
 DECL|at_result|enum|enum at_result {
@@ -30,3 +33,4 @@ DECL|parse_val_t|typedef|typedef int (*parse_val_t)(struct at_client *at);
 DECL|pos|member|uint8_t pos;
 DECL|resp|member|at_resp_cb_t resp;
 DECL|state|member|uint8_t state;
+DECL|unsolicited|member|at_resp_cb_t unsolicited;

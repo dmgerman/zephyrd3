@@ -62,7 +62,7 @@ DECL|rfcomm_send_disc|function|static int rfcomm_send_disc(struct bt_rfcomm_sess
 DECL|rfcomm_send_dm|function|static int rfcomm_send_dm(struct bt_rfcomm_session *session, uint8_t dlci)
 DECL|rfcomm_send_fcoff|function|static int rfcomm_send_fcoff(struct bt_rfcomm_session *session, uint8_t cr)
 DECL|rfcomm_send_fcon|function|static int rfcomm_send_fcon(struct bt_rfcomm_session *session, uint8_t cr)
-DECL|rfcomm_send_msc|function|static int rfcomm_send_msc(struct bt_rfcomm_dlc *dlc, uint8_t cr)
+DECL|rfcomm_send_msc|function|static int rfcomm_send_msc(struct bt_rfcomm_dlc *dlc, uint8_t cr, uint8_t v24_signal)
 DECL|rfcomm_send_nsc|function|static int rfcomm_send_nsc(struct bt_rfcomm_session *session, uint8_t cmd_type)
 DECL|rfcomm_send_pn|function|static int rfcomm_send_pn(struct bt_rfcomm_dlc *dlc, uint8_t cr)
 DECL|rfcomm_send_rls|function|static int rfcomm_send_rls(struct bt_rfcomm_dlc *dlc, uint8_t cr, uint8_t line_status)

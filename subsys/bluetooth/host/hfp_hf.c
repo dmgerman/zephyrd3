@@ -1,6 +1,6 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|MAX_IND_STR_LEN|macro|MAX_IND_STR_LEN
-DECL|ag_indicator_handle_values|function|void ag_indicator_handle_values(struct at_client *hf_at, uint32_t index, uint32_t value)
+DECL|ag_indicator_handle_values|function|void ag_indicator_handle_values(struct at_client *hf_at, uint32_t index,uint32_t value)
 DECL|ag_ind|variable|ag_ind
 DECL|brsf_finish|function|int brsf_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
 DECL|brsf_handle|function|int brsf_handle(struct at_client *hf_at)
@@ -9,6 +9,7 @@ DECL|bt_hfp_hf_accept|function|static int bt_hfp_hf_accept(struct bt_conn *conn,
 DECL|bt_hfp_hf_pool|variable|bt_hfp_hf_pool
 DECL|bt_hfp_hf_register|function|int bt_hfp_hf_register(struct bt_hfp_hf_cb *cb)
 DECL|bt_hf|variable|bt_hf
+DECL|ciev_handle|function|int ciev_handle(struct at_client *hf_at)
 DECL|cind_finish|function|int cind_finish(struct at_client *hf_at, struct net_buf *buf,enum at_result result)
 DECL|cind_handle_values|function|static void cind_handle_values(struct at_client *hf_at, uint32_t index, char *name, uint32_t min, uint32_t max)
 DECL|cind_handle|function|int cind_handle(struct at_client *hf_at)
@@ -27,3 +28,4 @@ DECL|hfp_hf_send_cmd|function|int hfp_hf_send_cmd(struct bt_hfp_hf *hf, at_resp_
 DECL|max|member|uint32_t max;
 DECL|min|member|uint32_t min;
 DECL|name|member|char *name;
+DECL|unsolicited_cb|function|int unsolicited_cb(struct at_client *hf_at, struct net_buf *buf)

@@ -6,6 +6,7 @@ DECL|CONFIG_BLUETOOTH_AVDTP_CONN|macro|CONFIG_BLUETOOTH_AVDTP_CONN
 DECL|avdtp_timeout|function|static void avdtp_timeout(struct k_work *work)
 DECL|bt_avdtp_connect|function|int bt_avdtp_connect(struct bt_conn *conn, struct bt_avdtp *session)
 DECL|bt_avdtp_disconnect|function|int bt_avdtp_disconnect(struct bt_avdtp *session)
+DECL|bt_avdtp_discover|function|int bt_avdtp_discover(struct bt_avdtp *session, struct bt_avdtp_discover_params *param)
 DECL|bt_avdtp_func_t|typedef|typedef int (*bt_avdtp_func_t)(struct bt_avdtp *session,
 DECL|bt_avdtp_init|function|int bt_avdtp_init(void)
 DECL|bt_avdtp_l2cap_accept|function|int bt_avdtp_l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
