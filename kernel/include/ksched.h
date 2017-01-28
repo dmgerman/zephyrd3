@@ -23,6 +23,7 @@ DECL|_is_prio_lower_or_equal|function|static inline int _is_prio_lower_or_equal(
 DECL|_is_prio_lower|function|static inline int _is_prio_lower(int prio1, int prio2)
 DECL|_is_t1_higher_prio_than_t2|function|static inline int _is_t1_higher_prio_than_t2(struct k_thread *t1, struct k_thread *t2)
 DECL|_is_thread_pending|function|static inline int _is_thread_pending(struct k_thread *thread)
+DECL|_is_thread_polling|function|static inline int _is_thread_polling(struct k_thread *thread)
 DECL|_is_thread_prevented_from_running|function|static inline int _is_thread_prevented_from_running(struct k_thread *thread)
 DECL|_is_thread_ready|function|static inline int _is_thread_ready(struct k_thread *thread)
 DECL|_is_thread_state_set|function|static inline int _is_thread_state_set(struct k_thread *thread, uint32_t state)
@@ -32,8 +33,10 @@ DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(in
 DECL|_ksched__h_|macro|_ksched__h_
 DECL|_mark_thread_as_dead|function|static inline void _mark_thread_as_dead(struct k_thread *thread)
 DECL|_mark_thread_as_not_pending|function|static inline void _mark_thread_as_not_pending(struct k_thread *thread)
+DECL|_mark_thread_as_not_polling|function|static inline void _mark_thread_as_not_polling(struct k_thread *thread)
 DECL|_mark_thread_as_not_suspended|function|static inline void _mark_thread_as_not_suspended(struct k_thread *thread)
 DECL|_mark_thread_as_pending|function|static inline void _mark_thread_as_pending(struct k_thread *thread)
+DECL|_mark_thread_as_polling|function|static inline void _mark_thread_as_polling(struct k_thread *thread)
 DECL|_mark_thread_as_started|function|static inline void _mark_thread_as_started(struct k_thread *thread)
 DECL|_mark_thread_as_suspended|function|static inline void _mark_thread_as_suspended(struct k_thread *thread)
 DECL|_must_switch_threads|function|static inline int _must_switch_threads(void)
