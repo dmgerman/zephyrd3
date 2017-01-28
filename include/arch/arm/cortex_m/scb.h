@@ -11,7 +11,6 @@ DECL|_ScbBusFaultIsUnstacking|function|static inline int _ScbBusFaultIsUnstackin
 DECL|_ScbDivByZeroFaultEnable|function|static inline void _ScbDivByZeroFaultEnable(void)
 DECL|_ScbHardFaultAllFaultsReset|function|static inline int _ScbHardFaultAllFaultsReset(void)
 DECL|_ScbHardFaultIsBusErrOnVectorRead|function|static inline int _ScbHardFaultIsBusErrOnVectorRead(void)
-DECL|_ScbHardFaultIsForced|function|static inline int _ScbHardFaultIsForced(void)
 DECL|_ScbIsBusFault|function|static inline int _ScbIsBusFault(void)
 DECL|_ScbIsMemFault|function|static inline int _ScbIsMemFault(void)
 DECL|_ScbIsUsageFault|function|static inline int _ScbIsUsageFault(void)
