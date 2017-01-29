@@ -21,6 +21,7 @@ DECL|get_destination_module|function|static int get_destination_module(const cha
 DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
 DECL|line_queue_init|function|static void line_queue_init(void)
+DECL|print_cmd_unknown|function|static inline void print_cmd_unknown(char *argv)
 DECL|print_module_commands|function|static void print_module_commands(const int module)
 DECL|prompt|variable|prompt
 DECL|select_module|function|static int select_module(int argc, char *argv[])
