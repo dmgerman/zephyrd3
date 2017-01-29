@@ -1,4 +1,5 @@
 DECL|_trace_list_k_fifo|variable|_trace_list_k_fifo
+DECL|handle_poll_event|function|static inline int handle_poll_event(struct k_fifo *fifo)
 DECL|init_fifo_module|function|static int init_fifo_module(struct device *dev)
 DECL|k_fifo_get|function|void *k_fifo_get(struct k_fifo *fifo, int32_t timeout)
 DECL|k_fifo_init|function|void k_fifo_init(struct k_fifo *fifo)

@@ -38,6 +38,19 @@ DECL|K_MUTEX_INITIALIZER|macro|K_MUTEX_INITIALIZER
 DECL|K_NO_WAIT|macro|K_NO_WAIT
 DECL|K_PIPE_DEFINE|macro|K_PIPE_DEFINE
 DECL|K_PIPE_INITIALIZER|macro|K_PIPE_INITIALIZER
+DECL|K_POLL_EVENT_INITIALIZER|macro|K_POLL_EVENT_INITIALIZER
+DECL|K_POLL_MODE_NOTIFY_ONLY|enumerator|K_POLL_MODE_NOTIFY_ONLY = 0,
+DECL|K_POLL_NUM_MODES|enumerator|K_POLL_NUM_MODES
+DECL|K_POLL_SIGNAL_INITIALIZER|macro|K_POLL_SIGNAL_INITIALIZER
+DECL|K_POLL_STATE_EADDRINUSE|macro|K_POLL_STATE_EADDRINUSE
+DECL|K_POLL_STATE_FIFO_DATA_AVAILABLE|macro|K_POLL_STATE_FIFO_DATA_AVAILABLE
+DECL|K_POLL_STATE_NOT_READY|macro|K_POLL_STATE_NOT_READY
+DECL|K_POLL_STATE_SEM_AVAILABLE|macro|K_POLL_STATE_SEM_AVAILABLE
+DECL|K_POLL_STATE_SIGNALED|macro|K_POLL_STATE_SIGNALED
+DECL|K_POLL_TYPE_FIFO_DATA_AVAILABLE|macro|K_POLL_TYPE_FIFO_DATA_AVAILABLE
+DECL|K_POLL_TYPE_IGNORE|macro|K_POLL_TYPE_IGNORE
+DECL|K_POLL_TYPE_SEM_AVAILABLE|macro|K_POLL_TYPE_SEM_AVAILABLE
+DECL|K_POLL_TYPE_SIGNAL|macro|K_POLL_TYPE_SIGNAL
 DECL|K_PREEMPT_THREAD|enumerator|K_PREEMPT_THREAD,
 DECL|K_PRIO_COOP|macro|K_PRIO_COOP
 DECL|K_PRIO_PREEMPT|macro|K_PRIO_PREEMPT
@@ -70,6 +83,26 @@ DECL|_OBJECT_TRACING_INIT|macro|_OBJECT_TRACING_INIT
 DECL|_OBJECT_TRACING_INIT|macro|_OBJECT_TRACING_INIT
 DECL|_OBJECT_TRACING_NEXT_PTR|macro|_OBJECT_TRACING_NEXT_PTR
 DECL|_OBJECT_TRACING_NEXT_PTR|macro|_OBJECT_TRACING_NEXT_PTR
+DECL|_POLL_EVENT_NUM_UNUSED_BITS|macro|_POLL_EVENT_NUM_UNUSED_BITS
+DECL|_POLL_EVENT_OBJ_INIT|macro|_POLL_EVENT_OBJ_INIT
+DECL|_POLL_EVENT_OBJ_INIT|macro|_POLL_EVENT_OBJ_INIT
+DECL|_POLL_EVENT|macro|_POLL_EVENT
+DECL|_POLL_EVENT|macro|_POLL_EVENT
+DECL|_POLL_EVENT|member|_POLL_EVENT;
+DECL|_POLL_EVENT|member|_POLL_EVENT;
+DECL|_POLL_NUM_STATES|enumerator|_POLL_NUM_STATES
+DECL|_POLL_NUM_TYPES|enumerator|_POLL_NUM_TYPES
+DECL|_POLL_STATE_BIT|macro|_POLL_STATE_BIT
+DECL|_POLL_STATE_EADDRINUSE|enumerator|_POLL_STATE_EADDRINUSE,
+DECL|_POLL_STATE_FIFO_DATA_AVAILABLE|enumerator|_POLL_STATE_FIFO_DATA_AVAILABLE,
+DECL|_POLL_STATE_NOT_READY|enumerator|_POLL_STATE_NOT_READY,
+DECL|_POLL_STATE_SEM_AVAILABLE|enumerator|_POLL_STATE_SEM_AVAILABLE,
+DECL|_POLL_STATE_SIGNALED|enumerator|_POLL_STATE_SIGNALED,
+DECL|_POLL_TYPE_BIT|macro|_POLL_TYPE_BIT
+DECL|_POLL_TYPE_FIFO_DATA_AVAILABLE|enumerator|_POLL_TYPE_FIFO_DATA_AVAILABLE,
+DECL|_POLL_TYPE_IGNORE|enumerator|_POLL_TYPE_IGNORE,
+DECL|_POLL_TYPE_SEM_AVAILABLE|enumerator|_POLL_TYPE_SEM_AVAILABLE,
+DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
 DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
@@ -86,6 +119,9 @@ DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|uint32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE int32_t _ms_to_ticks(int32_t ms)
+DECL|_poll_states_bits|enum|enum _poll_states_bits {
+DECL|_poll_types_bits|enum|enum _poll_types_bits {
+DECL|_poller|struct|struct _poller {
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {
@@ -115,6 +151,7 @@ DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
+DECL|fifo|member|struct k_fifo *fifo;
 DECL|fifo|member|struct k_fifo fifo;
 DECL|flags|member|atomic_t flags[1];
 DECL|free_list|member|char *free_list;
@@ -155,6 +192,9 @@ DECL|k_msgq_num_used_get|function|static inline uint32_t k_msgq_num_used_get(str
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
 DECL|k_pipe|struct|struct k_pipe {
+DECL|k_poll_event|struct|struct k_poll_event {
+DECL|k_poll_modes|enum|enum k_poll_modes {
+DECL|k_poll_signal|struct|struct k_poll_signal {
 DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
 DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
@@ -182,6 +222,7 @@ DECL|max_msgs|member|uint32_t max_msgs;
 DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory blocks */
 DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
 DECL|min_block_size|member|size_t min_block_size;
+DECL|mode|member|uint32_t mode:1;
 DECL|msg_size|member|size_t msg_size;
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new(size_t size, void *ptr)
@@ -196,24 +237,33 @@ DECL|num_blocks|member|uint32_t num_blocks;
 DECL|num_conflicts|member|int num_conflicts;
 DECL|num_lock_state_changes|member|int num_lock_state_changes;
 DECL|num_used|member|uint32_t num_used;
+DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
 DECL|period|member|int32_t period;
+DECL|poll_event|member|struct k_poll_event *poll_event;
+DECL|poller|member|struct _poller *poller;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
 DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
 DECL|req_size|member|size_t req_size;
+DECL|result|member|int result;
 DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
 DECL|rx_source_thread|member|k_tid_t rx_source_thread;
+DECL|sem|member|struct k_sem *sem;
 DECL|sem|member|struct k_sem sem;
 DECL|send_count|member|atomic_t send_count;
+DECL|signaled|member|unsigned int signaled;
+DECL|signal|member|struct k_poll_signal *signal;
 DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
+DECL|state|member|uint32_t state:_POLL_NUM_STATES;
 DECL|status|member|uint32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
 DECL|tcs|macro|tcs
+DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|timeout|member|struct _timeout timeout;
@@ -223,6 +273,8 @@ DECL|tx_block|member|struct k_mem_block tx_block;
 DECL|tx_data|member|void *tx_data;
 DECL|tx_msg_queue|member|_wait_q_t tx_msg_queue;
 DECL|tx_target_thread|member|k_tid_t tx_target_thread;
+DECL|type|member|uint32_t type:_POLL_NUM_TYPES;
+DECL|unused|member|uint32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|uint32_t used_msgs;
 DECL|user_data|member|void *user_data;
 DECL|wait_q|member|_wait_q_t wait_q;
