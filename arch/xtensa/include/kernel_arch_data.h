@@ -22,7 +22,6 @@ DECL|flags|member|uint32_t flags;
 DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
 DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
 DECL|preempCoprocReg|member|tPreempCoprocReg preempCoprocReg; /* volatile coprocessor's register storage */
-DECL|prio|member|int prio; /* thread priority used to sort linked list */
 DECL|retval|member|uint32_t retval; /* a2 */
 DECL|s_coopCoprocReg|struct|typedef struct s_coopCoprocReg {
 DECL|s_preempCoprocReg|struct|typedef struct s_preempCoprocReg {
