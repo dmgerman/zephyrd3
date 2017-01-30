@@ -72,71 +72,71 @@ DECL|flash_swap_function_option_t|typedef|} flash_swap_function_option_t;
 DECL|flash_swap_ifr_field_config_t|typedef|} flash_swap_ifr_field_config_t;
 DECL|flash_swap_state_config_t|typedef|} flash_swap_state_config_t;
 DECL|flash_swap_state_t|typedef|} flash_swap_state_t;
-DECL|kFLASH_accessStateExecuteOnly|enumerator|kFLASH_accessStateExecuteOnly, /*!< Flash region is execute only.*/
-DECL|kFLASH_accessStateMixed|enumerator|kFLASH_accessStateMixed /*!< Flash is mixed with unLimited and execute only region.*/
-DECL|kFLASH_accessStateUnLimited|enumerator|kFLASH_accessStateUnLimited, /*!< Flash region is unLimited.*/
-DECL|kFLASH_apiEraseKey|enumerator|kFLASH_apiEraseKey = FOUR_CHAR_CODE('k', 'f', 'e', 'k') /*!< Key value used to validate all flash erase APIs.*/
-DECL|kFLASH_driverVersionBugfix|enumerator|kFLASH_driverVersionBugfix = 0 /*!< Bugfix for flash driver version.*/
-DECL|kFLASH_driverVersionMajor|enumerator|kFLASH_driverVersionMajor = 2, /*!< Major flash driver version.*/
-DECL|kFLASH_driverVersionMinor|enumerator|kFLASH_driverVersionMinor = 1, /*!< Minor flash driver version.*/
-DECL|kFLASH_driverVersionName|enumerator|kFLASH_driverVersionName = 'F', /*!< Flash driver version name.*/
-DECL|kFLASH_executeInRamFunctionMaxSize|enumerator|kFLASH_executeInRamFunctionMaxSize = 64U, /*!< Max size of execute-in-ram function.*/
-DECL|kFLASH_executeInRamFunctionTotalNum|enumerator|kFLASH_executeInRamFunctionTotalNum = 2U /*!< Total number of execute-in-ram functions.*/
-DECL|kFLASH_flexramFunctionOptionAvailableAsRam|enumerator|kFLASH_flexramFunctionOptionAvailableAsRam = 0xFFU, /*!< Option used to make FlexRAM available as RAM */
-DECL|kFLASH_flexramFunctionOptionAvailableForEeprom|enumerator|kFLASH_flexramFunctionOptionAvailableForEeprom = 0x00U /*!< Option used to make FlexRAM available for EEPROM */
-DECL|kFLASH_marginValueFactory|enumerator|kFLASH_marginValueFactory, /*!< Apply the 'Factory' margin to the normal read-1 level.*/
-DECL|kFLASH_marginValueInvalid|enumerator|kFLASH_marginValueInvalid /*!< Not real margin level, Used to determine the range of valid margin level. */
-DECL|kFLASH_marginValueNormal|enumerator|kFLASH_marginValueNormal, /*!< Use the 'normal' read level for 1s.*/
-DECL|kFLASH_marginValueUser|enumerator|kFLASH_marginValueUser, /*!< Apply the 'User' margin to the normal read-1 level.*/
-DECL|kFLASH_partitionFlexramLoadOptionLoadedWithValidEepromData|enumerator|kFLASH_partitionFlexramLoadOptionLoadedWithValidEepromData =
-DECL|kFLASH_partitionFlexramLoadOptionNotLoaded|enumerator|kFLASH_partitionFlexramLoadOptionNotLoaded = 0x01U /*!< FlexRAM is not loaded during reset sequence.*/
-DECL|kFLASH_propertyDflashBlockBaseAddr|enumerator|kFLASH_propertyDflashBlockBaseAddr = 0x14U, /*!< Eeprom total size property.*/
-DECL|kFLASH_propertyDflashBlockCount|enumerator|kFLASH_propertyDflashBlockCount = 0x13U, /*!< Dflash block base address property.*/
-DECL|kFLASH_propertyDflashBlockSize|enumerator|kFLASH_propertyDflashBlockSize = 0x12U, /*!< Dflash block count property.*/
-DECL|kFLASH_propertyDflashSectorSize|enumerator|kFLASH_propertyDflashSectorSize = 0x10U, /*!< Dflash sector size property.*/
-DECL|kFLASH_propertyDflashTotalSize|enumerator|kFLASH_propertyDflashTotalSize = 0x11U, /*!< Dflash total size property.*/
-DECL|kFLASH_propertyEepromTotalSize|enumerator|kFLASH_propertyEepromTotalSize = 0x15U
-DECL|kFLASH_propertyFlexRamBlockBaseAddr|enumerator|kFLASH_propertyFlexRamBlockBaseAddr = 0x08U, /*!< FlexRam block base address property.*/
-DECL|kFLASH_propertyFlexRamTotalSize|enumerator|kFLASH_propertyFlexRamTotalSize = 0x09U, /*!< FlexRam total size property.*/
-DECL|kFLASH_propertyPflashAccessSegmentCount|enumerator|kFLASH_propertyPflashAccessSegmentCount = 0x07U, /*!< Pflash access segment count property.*/
-DECL|kFLASH_propertyPflashAccessSegmentSize|enumerator|kFLASH_propertyPflashAccessSegmentSize = 0x06U, /*!< Pflash access segment size property.*/
-DECL|kFLASH_propertyPflashBlockBaseAddr|enumerator|kFLASH_propertyPflashBlockBaseAddr = 0x04U, /*!< Pflash block base address property.*/
-DECL|kFLASH_propertyPflashBlockCount|enumerator|kFLASH_propertyPflashBlockCount = 0x03U, /*!< Pflash block count property.*/
-DECL|kFLASH_propertyPflashBlockSize|enumerator|kFLASH_propertyPflashBlockSize = 0x02U, /*!< Pflash block size property.*/
-DECL|kFLASH_propertyPflashFacSupport|enumerator|kFLASH_propertyPflashFacSupport = 0x05U, /*!< Pflash fac support property.*/
-DECL|kFLASH_propertyPflashSectorSize|enumerator|kFLASH_propertyPflashSectorSize = 0x00U, /*!< Pflash sector size property.*/
-DECL|kFLASH_propertyPflashTotalSize|enumerator|kFLASH_propertyPflashTotalSize = 0x01U, /*!< Pflash total size property.*/
-DECL|kFLASH_protectionStateMixed|enumerator|kFLASH_protectionStateMixed /*!< Flash is mixed with protected and unprotected region.*/
-DECL|kFLASH_protectionStateProtected|enumerator|kFLASH_protectionStateProtected, /*!< Flash region is protected.*/
-DECL|kFLASH_protectionStateUnprotected|enumerator|kFLASH_protectionStateUnprotected, /*!< Flash region is not protected.*/
-DECL|kFLASH_resourceOptionFlashIfr|enumerator|kFLASH_resourceOptionFlashIfr =
-DECL|kFLASH_resourceOptionVersionId|enumerator|kFLASH_resourceOptionVersionId = 0x01U /*!< Select code for Version ID*/
-DECL|kFLASH_resourceRangeDflashIfrEnd|enumerator|kFLASH_resourceRangeDflashIfrEnd = 0x8003FFU, /*!< Dflash IFR end address.*/
-DECL|kFLASH_resourceRangeDflashIfrStart|enumerator|kFLASH_resourceRangeDflashIfrStart = 0x800000U, /*!< Dflash IFR start address.*/
-DECL|kFLASH_resourceRangePflashIfrSizeInBytes|enumerator|kFLASH_resourceRangePflashIfrSizeInBytes = 1024U, /*!< Pflash IFR size in byte.*/
-DECL|kFLASH_resourceRangePflashSwapIfrEnd|enumerator|kFLASH_resourceRangePflashSwapIfrEnd = 0x403FFU, /*!< Pflash swap IFR end address.*/
-DECL|kFLASH_resourceRangePflashSwapIfrStart|enumerator|kFLASH_resourceRangePflashSwapIfrStart = 0x40000U, /*!< Pflash swap IFR start address.*/
-DECL|kFLASH_resourceRangeVersionIdEnd|enumerator|kFLASH_resourceRangeVersionIdEnd = 0x0FU, /*!< Version ID IFR end address.*/
-DECL|kFLASH_resourceRangeVersionIdSizeInBytes|enumerator|kFLASH_resourceRangeVersionIdSizeInBytes = 8U, /*!< Version ID IFR size in byte.*/
-DECL|kFLASH_resourceRangeVersionIdStart|enumerator|kFLASH_resourceRangeVersionIdStart = 0x08U, /*!< Version ID IFR start address.*/
-DECL|kFLASH_securityStateBackdoorDisabled|enumerator|kFLASH_securityStateBackdoorDisabled /*!< Flash backdoor is disabled.*/
-DECL|kFLASH_securityStateBackdoorEnabled|enumerator|kFLASH_securityStateBackdoorEnabled, /*!< Flash backdoor is enabled.*/
-DECL|kFLASH_securityStateNotSecure|enumerator|kFLASH_securityStateNotSecure, /*!< Flash is not secure.*/
-DECL|kFLASH_swapBlockStatusLowerHalfProgramBlocksAtZero|enumerator|kFLASH_swapBlockStatusLowerHalfProgramBlocksAtZero =
-DECL|kFLASH_swapBlockStatusUpperHalfProgramBlocksAtZero|enumerator|kFLASH_swapBlockStatusUpperHalfProgramBlocksAtZero =
-DECL|kFLASH_swapControlOptionDisableSystem|enumerator|kFLASH_swapControlOptionDisableSystem = 0x10U /*!< Option used to Disable Swap Status */
-DECL|kFLASH_swapControlOptionIntializeSystem|enumerator|kFLASH_swapControlOptionIntializeSystem = 0x01U, /*!< Option used to Intialize Swap System */
-DECL|kFLASH_swapControlOptionReportStatus|enumerator|kFLASH_swapControlOptionReportStatus = 0x08U, /*!< Option used to Report Swap Status */
-DECL|kFLASH_swapControlOptionSetInCompleteState|enumerator|kFLASH_swapControlOptionSetInCompleteState = 0x04U, /*!< Option used to Set Swap in Complete State */
-DECL|kFLASH_swapControlOptionSetInUpdateState|enumerator|kFLASH_swapControlOptionSetInUpdateState = 0x02U, /*!< Option used to Set Swap in Update State */
-DECL|kFLASH_swapFunctionOptionDisable|enumerator|kFLASH_swapFunctionOptionDisable = 0x01U /*!< Option used to Disable Swap function */
-DECL|kFLASH_swapFunctionOptionEnable|enumerator|kFLASH_swapFunctionOptionEnable = 0x00U, /*!< Option used to enable Swap function */
-DECL|kFLASH_swapStateComplete|enumerator|kFLASH_swapStateComplete = 0x04U, /*!< Flash swap system is in complete state.*/
-DECL|kFLASH_swapStateDisabled|enumerator|kFLASH_swapStateDisabled = 0x05U /*!< Flash swap system is in disabled state.*/
-DECL|kFLASH_swapStateReady|enumerator|kFLASH_swapStateReady = 0x01U, /*!< Flash swap system is in ready state.*/
-DECL|kFLASH_swapStateUninitialized|enumerator|kFLASH_swapStateUninitialized = 0x00U, /*!< Flash swap system is in uninitialized state.*/
-DECL|kFLASH_swapStateUpdateErased|enumerator|kFLASH_swapStateUpdateErased = 0x03U, /*!< Flash swap system is in updateErased state.*/
-DECL|kFLASH_swapStateUpdate|enumerator|kFLASH_swapStateUpdate = 0x02U, /*!< Flash swap system is in update state.*/
+DECL|kFLASH_AccessStateExecuteOnly|enumerator|kFLASH_AccessStateExecuteOnly, /*!< Flash region is execute only.*/
+DECL|kFLASH_AccessStateMixed|enumerator|kFLASH_AccessStateMixed /*!< Flash is mixed with unLimited and execute only region.*/
+DECL|kFLASH_AccessStateUnLimited|enumerator|kFLASH_AccessStateUnLimited, /*!< Flash region is unLimited.*/
+DECL|kFLASH_ApiEraseKey|enumerator|kFLASH_ApiEraseKey = FOUR_CHAR_CODE('k', 'f', 'e', 'k') /*!< Key value used to validate all flash erase APIs.*/
+DECL|kFLASH_DriverVersionBugfix|enumerator|kFLASH_DriverVersionBugfix = 0 /*!< Bugfix for flash driver version.*/
+DECL|kFLASH_DriverVersionMajor|enumerator|kFLASH_DriverVersionMajor = 2, /*!< Major flash driver version.*/
+DECL|kFLASH_DriverVersionMinor|enumerator|kFLASH_DriverVersionMinor = 1, /*!< Minor flash driver version.*/
+DECL|kFLASH_DriverVersionName|enumerator|kFLASH_DriverVersionName = 'F', /*!< Flash driver version name.*/
+DECL|kFLASH_ExecuteInRamFunctionMaxSize|enumerator|kFLASH_ExecuteInRamFunctionMaxSize = 64U, /*!< Max size of execute-in-ram function.*/
+DECL|kFLASH_ExecuteInRamFunctionTotalNum|enumerator|kFLASH_ExecuteInRamFunctionTotalNum = 2U /*!< Total number of execute-in-ram functions.*/
+DECL|kFLASH_FlexramFunctionOptionAvailableAsRam|enumerator|kFLASH_FlexramFunctionOptionAvailableAsRam = 0xFFU, /*!< Option used to make FlexRAM available as RAM */
+DECL|kFLASH_FlexramFunctionOptionAvailableForEeprom|enumerator|kFLASH_FlexramFunctionOptionAvailableForEeprom = 0x00U /*!< Option used to make FlexRAM available for EEPROM */
+DECL|kFLASH_MarginValueFactory|enumerator|kFLASH_MarginValueFactory, /*!< Apply the 'Factory' margin to the normal read-1 level.*/
+DECL|kFLASH_MarginValueInvalid|enumerator|kFLASH_MarginValueInvalid /*!< Not real margin level, Used to determine the range of valid margin level. */
+DECL|kFLASH_MarginValueNormal|enumerator|kFLASH_MarginValueNormal, /*!< Use the 'normal' read level for 1s.*/
+DECL|kFLASH_MarginValueUser|enumerator|kFLASH_MarginValueUser, /*!< Apply the 'User' margin to the normal read-1 level.*/
+DECL|kFLASH_PartitionFlexramLoadOptionLoadedWithValidEepromData|enumerator|kFLASH_PartitionFlexramLoadOptionLoadedWithValidEepromData =
+DECL|kFLASH_PartitionFlexramLoadOptionNotLoaded|enumerator|kFLASH_PartitionFlexramLoadOptionNotLoaded = 0x01U /*!< FlexRAM is not loaded during reset sequence.*/
+DECL|kFLASH_PropertyDflashBlockBaseAddr|enumerator|kFLASH_PropertyDflashBlockBaseAddr = 0x14U, /*!< Eeprom total size property.*/
+DECL|kFLASH_PropertyDflashBlockCount|enumerator|kFLASH_PropertyDflashBlockCount = 0x13U, /*!< Dflash block base address property.*/
+DECL|kFLASH_PropertyDflashBlockSize|enumerator|kFLASH_PropertyDflashBlockSize = 0x12U, /*!< Dflash block count property.*/
+DECL|kFLASH_PropertyDflashSectorSize|enumerator|kFLASH_PropertyDflashSectorSize = 0x10U, /*!< Dflash sector size property.*/
+DECL|kFLASH_PropertyDflashTotalSize|enumerator|kFLASH_PropertyDflashTotalSize = 0x11U, /*!< Dflash total size property.*/
+DECL|kFLASH_PropertyEepromTotalSize|enumerator|kFLASH_PropertyEepromTotalSize = 0x15U
+DECL|kFLASH_PropertyFlexRamBlockBaseAddr|enumerator|kFLASH_PropertyFlexRamBlockBaseAddr = 0x08U, /*!< FlexRam block base address property.*/
+DECL|kFLASH_PropertyFlexRamTotalSize|enumerator|kFLASH_PropertyFlexRamTotalSize = 0x09U, /*!< FlexRam total size property.*/
+DECL|kFLASH_PropertyPflashAccessSegmentCount|enumerator|kFLASH_PropertyPflashAccessSegmentCount = 0x07U, /*!< Pflash access segment count property.*/
+DECL|kFLASH_PropertyPflashAccessSegmentSize|enumerator|kFLASH_PropertyPflashAccessSegmentSize = 0x06U, /*!< Pflash access segment size property.*/
+DECL|kFLASH_PropertyPflashBlockBaseAddr|enumerator|kFLASH_PropertyPflashBlockBaseAddr = 0x04U, /*!< Pflash block base address property.*/
+DECL|kFLASH_PropertyPflashBlockCount|enumerator|kFLASH_PropertyPflashBlockCount = 0x03U, /*!< Pflash block count property.*/
+DECL|kFLASH_PropertyPflashBlockSize|enumerator|kFLASH_PropertyPflashBlockSize = 0x02U, /*!< Pflash block size property.*/
+DECL|kFLASH_PropertyPflashFacSupport|enumerator|kFLASH_PropertyPflashFacSupport = 0x05U, /*!< Pflash fac support property.*/
+DECL|kFLASH_PropertyPflashSectorSize|enumerator|kFLASH_PropertyPflashSectorSize = 0x00U, /*!< Pflash sector size property.*/
+DECL|kFLASH_PropertyPflashTotalSize|enumerator|kFLASH_PropertyPflashTotalSize = 0x01U, /*!< Pflash total size property.*/
+DECL|kFLASH_ProtectionStateMixed|enumerator|kFLASH_ProtectionStateMixed /*!< Flash is mixed with protected and unprotected region.*/
+DECL|kFLASH_ProtectionStateProtected|enumerator|kFLASH_ProtectionStateProtected, /*!< Flash region is protected.*/
+DECL|kFLASH_ProtectionStateUnprotected|enumerator|kFLASH_ProtectionStateUnprotected, /*!< Flash region is not protected.*/
+DECL|kFLASH_ResourceOptionFlashIfr|enumerator|kFLASH_ResourceOptionFlashIfr =
+DECL|kFLASH_ResourceOptionVersionId|enumerator|kFLASH_ResourceOptionVersionId = 0x01U /*!< Select code for Version ID*/
+DECL|kFLASH_ResourceRangeDflashIfrEnd|enumerator|kFLASH_ResourceRangeDflashIfrEnd = 0x8003FFU, /*!< Dflash IFR end address.*/
+DECL|kFLASH_ResourceRangeDflashIfrStart|enumerator|kFLASH_ResourceRangeDflashIfrStart = 0x800000U, /*!< Dflash IFR start address.*/
+DECL|kFLASH_ResourceRangePflashIfrSizeInBytes|enumerator|kFLASH_ResourceRangePflashIfrSizeInBytes = 1024U, /*!< Pflash IFR size in byte.*/
+DECL|kFLASH_ResourceRangePflashSwapIfrEnd|enumerator|kFLASH_ResourceRangePflashSwapIfrEnd = 0x403FFU, /*!< Pflash swap IFR end address.*/
+DECL|kFLASH_ResourceRangePflashSwapIfrStart|enumerator|kFLASH_ResourceRangePflashSwapIfrStart = 0x40000U, /*!< Pflash swap IFR start address.*/
+DECL|kFLASH_ResourceRangeVersionIdEnd|enumerator|kFLASH_ResourceRangeVersionIdEnd = 0x0FU, /*!< Version ID IFR end address.*/
+DECL|kFLASH_ResourceRangeVersionIdSizeInBytes|enumerator|kFLASH_ResourceRangeVersionIdSizeInBytes = 8U, /*!< Version ID IFR size in byte.*/
+DECL|kFLASH_ResourceRangeVersionIdStart|enumerator|kFLASH_ResourceRangeVersionIdStart = 0x08U, /*!< Version ID IFR start address.*/
+DECL|kFLASH_SecurityStateBackdoorDisabled|enumerator|kFLASH_SecurityStateBackdoorDisabled /*!< Flash backdoor is disabled.*/
+DECL|kFLASH_SecurityStateBackdoorEnabled|enumerator|kFLASH_SecurityStateBackdoorEnabled, /*!< Flash backdoor is enabled.*/
+DECL|kFLASH_SecurityStateNotSecure|enumerator|kFLASH_SecurityStateNotSecure, /*!< Flash is not secure.*/
+DECL|kFLASH_SwapBlockStatusLowerHalfProgramBlocksAtZero|enumerator|kFLASH_SwapBlockStatusLowerHalfProgramBlocksAtZero =
+DECL|kFLASH_SwapBlockStatusUpperHalfProgramBlocksAtZero|enumerator|kFLASH_SwapBlockStatusUpperHalfProgramBlocksAtZero =
+DECL|kFLASH_SwapControlOptionDisableSystem|enumerator|kFLASH_SwapControlOptionDisableSystem = 0x10U /*!< Option used to Disable Swap Status */
+DECL|kFLASH_SwapControlOptionIntializeSystem|enumerator|kFLASH_SwapControlOptionIntializeSystem = 0x01U, /*!< Option used to Intialize Swap System */
+DECL|kFLASH_SwapControlOptionReportStatus|enumerator|kFLASH_SwapControlOptionReportStatus = 0x08U, /*!< Option used to Report Swap Status */
+DECL|kFLASH_SwapControlOptionSetInCompleteState|enumerator|kFLASH_SwapControlOptionSetInCompleteState = 0x04U, /*!< Option used to Set Swap in Complete State */
+DECL|kFLASH_SwapControlOptionSetInUpdateState|enumerator|kFLASH_SwapControlOptionSetInUpdateState = 0x02U, /*!< Option used to Set Swap in Update State */
+DECL|kFLASH_SwapFunctionOptionDisable|enumerator|kFLASH_SwapFunctionOptionDisable = 0x01U /*!< Option used to Disable Swap function */
+DECL|kFLASH_SwapFunctionOptionEnable|enumerator|kFLASH_SwapFunctionOptionEnable = 0x00U, /*!< Option used to enable Swap function */
+DECL|kFLASH_SwapStateComplete|enumerator|kFLASH_SwapStateComplete = 0x04U, /*!< Flash swap system is in complete state.*/
+DECL|kFLASH_SwapStateDisabled|enumerator|kFLASH_SwapStateDisabled = 0x05U /*!< Flash swap system is in disabled state.*/
+DECL|kFLASH_SwapStateReady|enumerator|kFLASH_SwapStateReady = 0x01U, /*!< Flash swap system is in ready state.*/
+DECL|kFLASH_SwapStateUninitialized|enumerator|kFLASH_SwapStateUninitialized = 0x00U, /*!< Flash swap system is in uninitialized state.*/
+DECL|kFLASH_SwapStateUpdateErased|enumerator|kFLASH_SwapStateUpdateErased = 0x03U, /*!< Flash swap system is in updateErased state.*/
+DECL|kFLASH_SwapStateUpdate|enumerator|kFLASH_SwapStateUpdate = 0x02U, /*!< Flash swap system is in update state.*/
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver

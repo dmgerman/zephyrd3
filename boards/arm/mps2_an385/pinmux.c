@@ -1,0 +1,6 @@
+DECL|CMSDK_AHB_GPIO0_DEV|macro|CMSDK_AHB_GPIO0_DEV
+DECL|CMSDK_AHB_GPIO1_DEV|macro|CMSDK_AHB_GPIO1_DEV
+DECL|CMSDK_AHB_GPIO2_DEV|macro|CMSDK_AHB_GPIO2_DEV
+DECL|CMSDK_AHB_GPIO3_DEV|macro|CMSDK_AHB_GPIO3_DEV
+DECL|arm_mps2_pinmux_defaults|function|static void arm_mps2_pinmux_defaults(void)
+DECL|arm_mps2_pinmux_init|function|static int arm_mps2_pinmux_init(struct device *port)

@@ -32,6 +32,7 @@ DECL|HAL_TIMEOUT_TCR|macro|HAL_TIMEOUT_TCR
 DECL|HAL_TIMEOUT_TC|macro|HAL_TIMEOUT_TC
 DECL|HAL_TIMEOUT_TXIS|macro|HAL_TIMEOUT_TXIS
 DECL|MAX_NBYTE_SIZE|macro|MAX_NBYTE_SIZE
+DECL|SMBUS_ConvertOtherXferOptions|function|static void SMBUS_ConvertOtherXferOptions(SMBUS_HandleTypeDef *hsmbus)
 DECL|SMBUS_Disable_IRQ|function|static HAL_StatusTypeDef SMBUS_Disable_IRQ(SMBUS_HandleTypeDef *hsmbus, uint16_t InterruptRequest)
 DECL|SMBUS_Enable_IRQ|function|static HAL_StatusTypeDef SMBUS_Enable_IRQ(SMBUS_HandleTypeDef *hsmbus, uint16_t InterruptRequest)
 DECL|SMBUS_Master_ISR|function|static HAL_StatusTypeDef SMBUS_Master_ISR(SMBUS_HandleTypeDef *hsmbus)

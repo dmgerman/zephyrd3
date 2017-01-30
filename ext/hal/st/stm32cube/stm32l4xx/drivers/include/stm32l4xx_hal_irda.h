@@ -109,7 +109,7 @@ DECL|Prescaler|member|uint8_t Prescaler; /*!< Specifies the Prescaler value for 
 DECL|RxState|member|__IO HAL_IRDA_StateTypeDef RxState; /*!< IRDA state information related to Rx operations.
 DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< IRDA Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< IRDA Rx Transfer size */
-DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< IRDA Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /* !<IRDA Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< IRDA Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
 DECL|__HAL_IRDA_CLEAR_FEFLAG|macro|__HAL_IRDA_CLEAR_FEFLAG

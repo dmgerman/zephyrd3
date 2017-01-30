@@ -1,7 +1,3 @@
-DECL|_SCB_SCR_SEVONPEND|macro|_SCB_SCR_SEVONPEND
-DECL|_SCB_SCR_SLEEPDEEP|macro|_SCB_SCR_SLEEPDEEP
-DECL|_SCB_SCR_SLEEPONEXIT|macro|_SCB_SCR_SLEEPONEXIT
-DECL|_SCB_SCR|macro|_SCB_SCR
 DECL|_SCB__H_|macro|_SCB__H_
 DECL|_ScbActiveVectorGet|function|static inline uint32_t _ScbActiveVectorGet(void)
 DECL|_ScbBusFaultAddrGet|function|static inline uint32_t _ScbBusFaultAddrGet(void)
@@ -15,12 +11,10 @@ DECL|_ScbBusFaultIsPrecise|function|static inline int _ScbBusFaultIsPrecise(void
 DECL|_ScbBusFaultIsStacking|function|static inline int _ScbBusFaultIsStacking(void)
 DECL|_ScbBusFaultIsUnstacking|function|static inline int _ScbBusFaultIsUnstacking(void)
 DECL|_ScbDivByZeroFaultEnable|function|static inline void _ScbDivByZeroFaultEnable(void)
-DECL|_ScbExcPrioSet|function|static inline void _ScbExcPrioSet(uint8_t exc, uint8_t pri)
 DECL|_ScbHardFaultAllFaultsReset|function|static inline int _ScbHardFaultAllFaultsReset(void)
 DECL|_ScbHardFaultIsBusErrOnVectorRead|function|static inline int _ScbHardFaultIsBusErrOnVectorRead(void)
 DECL|_ScbHardFaultIsForced|function|static inline int _ScbHardFaultIsForced(void)
 DECL|_ScbIsBusFault|function|static inline int _ScbIsBusFault(void)
-DECL|_ScbIsInThreadMode|function|static inline int _ScbIsInThreadMode(void)
 DECL|_ScbIsMemFault|function|static inline int _ScbIsMemFault(void)
 DECL|_ScbIsNestedExc|function|static inline int _ScbIsNestedExc(void)
 DECL|_ScbIsUsageFault|function|static inline int _ScbIsUsageFault(void)
@@ -33,8 +27,6 @@ DECL|_ScbMemFaultIsMmfarValid|function|static inline int _ScbMemFaultIsMmfarVali
 DECL|_ScbMemFaultIsStacking|function|static inline int _ScbMemFaultIsStacking(void)
 DECL|_ScbMemFaultIsUnstacking|function|static inline int _ScbMemFaultIsUnstacking(void)
 DECL|_ScbMemFaultMmfarReset|function|static inline void _ScbMemFaultMmfarReset(void)
-DECL|_ScbNmiPend|function|static inline void _ScbNmiPend(void)
-DECL|_ScbPendsvSet|function|static inline void _ScbPendsvSet(void)
 DECL|_ScbUsageFaultAllFaultsReset|function|static inline void _ScbUsageFaultAllFaultsReset(void)
 DECL|_ScbUsageFaultEnable|function|static inline void _ScbUsageFaultEnable(void)
 DECL|_ScbUsageFaultIsDivByZero|function|static inline int _ScbUsageFaultIsDivByZero(void)

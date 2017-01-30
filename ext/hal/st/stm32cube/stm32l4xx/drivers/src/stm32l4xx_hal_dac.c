@@ -16,7 +16,9 @@ DECL|HAL_DAC_MspDeInit|function|__weak void HAL_DAC_MspDeInit(DAC_HandleTypeDef*
 DECL|HAL_DAC_MspInit|function|__weak void HAL_DAC_MspInit(DAC_HandleTypeDef* hdac)
 DECL|HAL_DAC_SetValue|function|HAL_StatusTypeDef HAL_DAC_SetValue(DAC_HandleTypeDef* hdac, uint32_t Channel, uint32_t Alignment, uint32_t Data)
 DECL|HAL_DAC_Start_DMA|function|HAL_StatusTypeDef HAL_DAC_Start_DMA(DAC_HandleTypeDef* hdac, uint32_t Channel, uint32_t* pData, uint32_t Length, uint32_t Alignment)
+DECL|HAL_DAC_Start_DMA|function|HAL_StatusTypeDef HAL_DAC_Start_DMA(DAC_HandleTypeDef* hdac, uint32_t Channel, uint32_t* pData, uint32_t Length, uint32_t Alignment)
 DECL|HAL_DAC_Start|function|HAL_StatusTypeDef HAL_DAC_Start(DAC_HandleTypeDef* hdac, uint32_t Channel)
 DECL|HAL_DAC_Stop_DMA|function|HAL_StatusTypeDef HAL_DAC_Stop_DMA(DAC_HandleTypeDef* hdac, uint32_t Channel)
 DECL|HAL_DAC_Stop|function|HAL_StatusTypeDef HAL_DAC_Stop(DAC_HandleTypeDef* hdac, uint32_t Channel)
+DECL|HFSEL_ENABLE_THRESHOLD_80MHZ|macro|HFSEL_ENABLE_THRESHOLD_80MHZ
 DECL|TIMEOUT_DAC_CALIBCONFIG|macro|TIMEOUT_DAC_CALIBCONFIG
