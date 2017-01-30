@@ -19,7 +19,7 @@ DECL|AT_STATE_UNSOLICITED_CMD|enumerator|AT_STATE_UNSOLICITED_CMD,
 DECL|at_client|struct|struct at_client {
 DECL|at_cmd_state|enum|enum at_cmd_state {
 DECL|at_cmd_type|enum|enum at_cmd_type {
-DECL|at_finish_cb_t|typedef|typedef int (*at_finish_cb_t)(struct at_client *at, struct net_buf *buf,
+DECL|at_finish_cb_t|typedef|typedef int (*at_finish_cb_t)(struct at_client *at, enum at_result result);
 DECL|at_resp_cb_t|typedef|typedef int (*at_resp_cb_t)(struct at_client *at, struct net_buf *buf);
 DECL|at_result|enum|enum at_result {
 DECL|at_state|enum|enum at_state {
