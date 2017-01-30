@@ -36,7 +36,6 @@ DECL|bit|member|} bit;
 DECL|bit|member|} bit;
 DECL|buf|member|uint8_t *buf;
 DECL|busy|member|uint32_t busy :1 __packed;
-DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|clock|member|struct device *clock;
 DECL|cr1|member|union __cr1 cr1;
 DECL|cr2|member|union __cr2 cr2;
