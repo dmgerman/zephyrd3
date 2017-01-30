@@ -31,6 +31,8 @@ DECL|data|member|uint8_t *volatile data; /*!< Transfer buffer. */
 DECL|data|member|uint8_t *volatile data; /*!< Transfer buffer. */
 DECL|direction|member|i2c_direction_t direction; /*!< Transfer direction, read or write. */
 DECL|enableBaudRateCtl|member|bool enableBaudRateCtl; /*!< Enables/disables independent slave baud rate on SCL in very fast I2C modes. */
+DECL|enableDoubleBuffering|member|bool enableDoubleBuffering; /*!< Controls double buffer enable, notice that
+DECL|enableDoubleBuffering|member|bool enableDoubleBuffering; /*!< Controls double buffer enable, notice that
 DECL|enableGeneralCall|member|bool enableGeneralCall; /*!< Enable general call addressing mode. */
 DECL|enableHighDrive|member|bool enableHighDrive; /*!< Controls the drive capability of the I2C pads. */
 DECL|enableHighDrive|member|bool enableHighDrive; /*!< Controls the drive capability of the I2C pads. */

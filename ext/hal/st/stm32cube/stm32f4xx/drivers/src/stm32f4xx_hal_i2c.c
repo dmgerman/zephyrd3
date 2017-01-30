@@ -73,7 +73,6 @@ DECL|I2C_SlaveTransmit_TXE|function|static HAL_StatusTypeDef I2C_SlaveTransmit_T
 DECL|I2C_Slave_ADDR|function|static HAL_StatusTypeDef I2C_Slave_ADDR(I2C_HandleTypeDef *hi2c)
 DECL|I2C_Slave_AF|function|static HAL_StatusTypeDef I2C_Slave_AF(I2C_HandleTypeDef *hi2c)
 DECL|I2C_Slave_STOPF|function|static HAL_StatusTypeDef I2C_Slave_STOPF(I2C_HandleTypeDef *hi2c)
-DECL|I2C_TIMEOUT_ADDR_SLAVE|macro|I2C_TIMEOUT_ADDR_SLAVE
 DECL|I2C_TIMEOUT_BUSY_FLAG|macro|I2C_TIMEOUT_BUSY_FLAG
 DECL|I2C_TIMEOUT_FLAG|macro|I2C_TIMEOUT_FLAG
 DECL|I2C_WaitOnBTFFlagUntilTimeout|function|static HAL_StatusTypeDef I2C_WaitOnBTFFlagUntilTimeout(I2C_HandleTypeDef *hi2c, uint32_t Timeout, uint32_t Tickstart)

@@ -1,3 +1,6 @@
+DECL|BIT_FROM_IRQ|macro|BIT_FROM_IRQ
+DECL|NUM_IRQS_PER_REG|macro|NUM_IRQS_PER_REG
+DECL|REG_FROM_IRQ|macro|REG_FROM_IRQ
 DECL|_arch_irq_disable|function|void _arch_irq_disable(unsigned int irq)
 DECL|_arch_irq_enable|function|void _arch_irq_enable(unsigned int irq)
 DECL|_arch_irq_is_enabled|function|int _arch_irq_is_enabled(unsigned int irq)

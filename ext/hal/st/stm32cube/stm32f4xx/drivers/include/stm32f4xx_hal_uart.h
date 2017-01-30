@@ -36,10 +36,10 @@ DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit m
 DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to fPCLK/8).
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|RxState|member|__IO HAL_UART_StateTypeDef RxState; /*!< UART state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< UART Rx Transfer size */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< UART Tx Transfer size */
 DECL|UART_BRR_SAMPLING16|macro|UART_BRR_SAMPLING16
 DECL|UART_BRR_SAMPLING8|macro|UART_BRR_SAMPLING8

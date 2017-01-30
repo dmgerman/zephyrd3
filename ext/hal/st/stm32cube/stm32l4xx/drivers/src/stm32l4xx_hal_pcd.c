@@ -35,3 +35,5 @@ DECL|PCD_EP_ISR_Handler|function|static HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD
 DECL|PCD_MAX|macro|PCD_MAX
 DECL|PCD_MIN|macro|PCD_MIN
 DECL|PCD_WriteEmptyTxFifo|function|static HAL_StatusTypeDef PCD_WriteEmptyTxFifo(PCD_HandleTypeDef *hpcd, uint32_t epnum)
+DECL|USB_OTG_CORE_ID_310A|macro|USB_OTG_CORE_ID_310A
+DECL|USB_OTG_CORE_ID_320A|macro|USB_OTG_CORE_ID_320A
