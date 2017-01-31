@@ -48,7 +48,6 @@ DECL|bt_conn_ssp_auth|function|void bt_conn_ssp_auth(struct bt_conn *conn, uint3
 DECL|bt_conn_ssp_get_auth|function|uint8_t bt_conn_ssp_get_auth(const struct bt_conn *conn)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_br_cancel|function|static int bt_hci_connect_br_cancel(struct bt_conn *conn)
-DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
 DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_le_set_auto_conn|function|int bt_le_set_auto_conn(bt_addr_le_t *addr,const struct bt_le_conn_param *param)
 DECL|callback_list|variable|callback_list
@@ -76,4 +75,3 @@ DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_c
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static inline const char *state2str(bt_conn_state_t state)
-DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)
