@@ -1,0 +1,298 @@
+DECL|CAS|member|uint32_t CAS:2; /**< bit: 5..6 CAS Latency */
+DECL|COMPONENT_TYPEDEF_STYLE|macro|COMPONENT_TYPEDEF_STYLE
+DECL|COUNT|member|uint32_t COUNT:12; /**< bit: 0..11 SDRAMC Refresh Timer Count */
+DECL|DBW|member|uint32_t DBW:1; /**< bit: 7 Data Bus Width */
+DECL|DS|member|uint32_t DS:2; /**< bit: 10..11 Drive Strength (only for low-power SDRAM) */
+DECL|KEY1|member|uint32_t KEY1:32; /**< bit: 0..31 Off-chip Memory Scrambling (OCMS) Key Part 1 */
+DECL|KEY2|member|uint32_t KEY2:32; /**< bit: 0..31 Off-chip Memory Scrambling (OCMS) Key Part 2 */
+DECL|LPCB|member|uint32_t LPCB:2; /**< bit: 0..1 Low-power Configuration Bits */
+DECL|MD|member|uint32_t MD:2; /**< bit: 0..1 Memory Device Type */
+DECL|MODE|member|uint32_t MODE:3; /**< bit: 0..2 SDRAMC Command Mode */
+DECL|NB|member|uint32_t NB:1; /**< bit: 4 Number of Banks */
+DECL|NC|member|uint32_t NC:2; /**< bit: 0..1 Number of Column Bits */
+DECL|NR|member|uint32_t NR:2; /**< bit: 2..3 Number of Row Bits */
+DECL|PASR|member|uint32_t PASR:3; /**< bit: 4..6 Partial Array Self-refresh (only for low-power SDRAM) */
+DECL|RES|member|uint32_t RES:1; /**< bit: 0 Refresh Error Status (cleared on read) */
+DECL|RES|member|uint32_t RES:1; /**< bit: 0 Refresh Error Status */
+DECL|RES|member|uint32_t RES:1; /**< bit: 0 Refresh Error Status */
+DECL|RES|member|uint32_t RES:1; /**< bit: 0 Refresh Error Status */
+DECL|REV_SDRAMC|macro|REV_SDRAMC
+DECL|Reserved1|member|RoReg8 Reserved1[0x4];
+DECL|Reserved1|member|__I uint32_t Reserved1[1];
+DECL|SDRAMC_6100|macro|SDRAMC_6100
+DECL|SDRAMC_CFR1_MASK|macro|SDRAMC_CFR1_MASK
+DECL|SDRAMC_CFR1_Msk|macro|SDRAMC_CFR1_Msk
+DECL|SDRAMC_CFR1_OFFSET|macro|SDRAMC_CFR1_OFFSET
+DECL|SDRAMC_CFR1_TMRD_Msk|macro|SDRAMC_CFR1_TMRD_Msk
+DECL|SDRAMC_CFR1_TMRD_Pos|macro|SDRAMC_CFR1_TMRD_Pos
+DECL|SDRAMC_CFR1_TMRD|macro|SDRAMC_CFR1_TMRD
+DECL|SDRAMC_CFR1_Type|typedef|} SDRAMC_CFR1_Type;
+DECL|SDRAMC_CFR1_UNAL_Msk|macro|SDRAMC_CFR1_UNAL_Msk
+DECL|SDRAMC_CFR1_UNAL_Pos|macro|SDRAMC_CFR1_UNAL_Pos
+DECL|SDRAMC_CFR1_UNAL_SUPPORTED_Val|macro|SDRAMC_CFR1_UNAL_SUPPORTED_Val
+DECL|SDRAMC_CFR1_UNAL_SUPPORTED|macro|SDRAMC_CFR1_UNAL_SUPPORTED
+DECL|SDRAMC_CFR1_UNAL_UNSUPPORTED_Val|macro|SDRAMC_CFR1_UNAL_UNSUPPORTED_Val
+DECL|SDRAMC_CFR1_UNAL_UNSUPPORTED|macro|SDRAMC_CFR1_UNAL_UNSUPPORTED
+DECL|SDRAMC_CFR1_UNAL|macro|SDRAMC_CFR1_UNAL
+DECL|SDRAMC_CFR1|member|__IO SDRAMC_CFR1_Type SDRAMC_CFR1; /**< Offset: 0x28 (R/W 32) SDRAMC Configuration Register 1 */
+DECL|SDRAMC_CFR1|member|__IO uint32_t SDRAMC_CFR1; /**< (SDRAMC Offset: 0x28) SDRAMC Configuration Register 1 */
+DECL|SDRAMC_CR_CAS_LATENCY1_Val|macro|SDRAMC_CR_CAS_LATENCY1_Val
+DECL|SDRAMC_CR_CAS_LATENCY1|macro|SDRAMC_CR_CAS_LATENCY1
+DECL|SDRAMC_CR_CAS_LATENCY2_Val|macro|SDRAMC_CR_CAS_LATENCY2_Val
+DECL|SDRAMC_CR_CAS_LATENCY2|macro|SDRAMC_CR_CAS_LATENCY2
+DECL|SDRAMC_CR_CAS_LATENCY3_Val|macro|SDRAMC_CR_CAS_LATENCY3_Val
+DECL|SDRAMC_CR_CAS_LATENCY3|macro|SDRAMC_CR_CAS_LATENCY3
+DECL|SDRAMC_CR_CAS_Msk|macro|SDRAMC_CR_CAS_Msk
+DECL|SDRAMC_CR_CAS_Pos|macro|SDRAMC_CR_CAS_Pos
+DECL|SDRAMC_CR_CAS|macro|SDRAMC_CR_CAS
+DECL|SDRAMC_CR_DBW_Msk|macro|SDRAMC_CR_DBW_Msk
+DECL|SDRAMC_CR_DBW_Pos|macro|SDRAMC_CR_DBW_Pos
+DECL|SDRAMC_CR_DBW|macro|SDRAMC_CR_DBW
+DECL|SDRAMC_CR_MASK|macro|SDRAMC_CR_MASK
+DECL|SDRAMC_CR_Msk|macro|SDRAMC_CR_Msk
+DECL|SDRAMC_CR_NB_BANK2_Val|macro|SDRAMC_CR_NB_BANK2_Val
+DECL|SDRAMC_CR_NB_BANK2|macro|SDRAMC_CR_NB_BANK2
+DECL|SDRAMC_CR_NB_BANK4_Val|macro|SDRAMC_CR_NB_BANK4_Val
+DECL|SDRAMC_CR_NB_BANK4|macro|SDRAMC_CR_NB_BANK4
+DECL|SDRAMC_CR_NB_Msk|macro|SDRAMC_CR_NB_Msk
+DECL|SDRAMC_CR_NB_Pos|macro|SDRAMC_CR_NB_Pos
+DECL|SDRAMC_CR_NB|macro|SDRAMC_CR_NB
+DECL|SDRAMC_CR_NC_COL10_Val|macro|SDRAMC_CR_NC_COL10_Val
+DECL|SDRAMC_CR_NC_COL10|macro|SDRAMC_CR_NC_COL10
+DECL|SDRAMC_CR_NC_COL11_Val|macro|SDRAMC_CR_NC_COL11_Val
+DECL|SDRAMC_CR_NC_COL11|macro|SDRAMC_CR_NC_COL11
+DECL|SDRAMC_CR_NC_COL8_Val|macro|SDRAMC_CR_NC_COL8_Val
+DECL|SDRAMC_CR_NC_COL8|macro|SDRAMC_CR_NC_COL8
+DECL|SDRAMC_CR_NC_COL9_Val|macro|SDRAMC_CR_NC_COL9_Val
+DECL|SDRAMC_CR_NC_COL9|macro|SDRAMC_CR_NC_COL9
+DECL|SDRAMC_CR_NC_Msk|macro|SDRAMC_CR_NC_Msk
+DECL|SDRAMC_CR_NC_Pos|macro|SDRAMC_CR_NC_Pos
+DECL|SDRAMC_CR_NC|macro|SDRAMC_CR_NC
+DECL|SDRAMC_CR_NR_Msk|macro|SDRAMC_CR_NR_Msk
+DECL|SDRAMC_CR_NR_Pos|macro|SDRAMC_CR_NR_Pos
+DECL|SDRAMC_CR_NR_ROW11_Val|macro|SDRAMC_CR_NR_ROW11_Val
+DECL|SDRAMC_CR_NR_ROW11|macro|SDRAMC_CR_NR_ROW11
+DECL|SDRAMC_CR_NR_ROW12_Val|macro|SDRAMC_CR_NR_ROW12_Val
+DECL|SDRAMC_CR_NR_ROW12|macro|SDRAMC_CR_NR_ROW12
+DECL|SDRAMC_CR_NR_ROW13_Val|macro|SDRAMC_CR_NR_ROW13_Val
+DECL|SDRAMC_CR_NR_ROW13|macro|SDRAMC_CR_NR_ROW13
+DECL|SDRAMC_CR_NR|macro|SDRAMC_CR_NR
+DECL|SDRAMC_CR_OFFSET|macro|SDRAMC_CR_OFFSET
+DECL|SDRAMC_CR_TRAS_Msk|macro|SDRAMC_CR_TRAS_Msk
+DECL|SDRAMC_CR_TRAS_Pos|macro|SDRAMC_CR_TRAS_Pos
+DECL|SDRAMC_CR_TRAS|macro|SDRAMC_CR_TRAS
+DECL|SDRAMC_CR_TRCD_Msk|macro|SDRAMC_CR_TRCD_Msk
+DECL|SDRAMC_CR_TRCD_Pos|macro|SDRAMC_CR_TRCD_Pos
+DECL|SDRAMC_CR_TRCD|macro|SDRAMC_CR_TRCD
+DECL|SDRAMC_CR_TRC_TRFC_Msk|macro|SDRAMC_CR_TRC_TRFC_Msk
+DECL|SDRAMC_CR_TRC_TRFC_Pos|macro|SDRAMC_CR_TRC_TRFC_Pos
+DECL|SDRAMC_CR_TRC_TRFC|macro|SDRAMC_CR_TRC_TRFC
+DECL|SDRAMC_CR_TRP_Msk|macro|SDRAMC_CR_TRP_Msk
+DECL|SDRAMC_CR_TRP_Pos|macro|SDRAMC_CR_TRP_Pos
+DECL|SDRAMC_CR_TRP|macro|SDRAMC_CR_TRP
+DECL|SDRAMC_CR_TWR_Msk|macro|SDRAMC_CR_TWR_Msk
+DECL|SDRAMC_CR_TWR_Pos|macro|SDRAMC_CR_TWR_Pos
+DECL|SDRAMC_CR_TWR|macro|SDRAMC_CR_TWR
+DECL|SDRAMC_CR_TXSR_Msk|macro|SDRAMC_CR_TXSR_Msk
+DECL|SDRAMC_CR_TXSR_Pos|macro|SDRAMC_CR_TXSR_Pos
+DECL|SDRAMC_CR_TXSR|macro|SDRAMC_CR_TXSR
+DECL|SDRAMC_CR_Type|typedef|} SDRAMC_CR_Type;
+DECL|SDRAMC_CR|member|__IO SDRAMC_CR_Type SDRAMC_CR; /**< Offset: 0x08 (R/W 32) SDRAMC Configuration Register */
+DECL|SDRAMC_CR|member|__IO uint32_t SDRAMC_CR; /**< (SDRAMC Offset: 0x08) SDRAMC Configuration Register */
+DECL|SDRAMC_IDR_MASK|macro|SDRAMC_IDR_MASK
+DECL|SDRAMC_IDR_Msk|macro|SDRAMC_IDR_Msk
+DECL|SDRAMC_IDR_OFFSET|macro|SDRAMC_IDR_OFFSET
+DECL|SDRAMC_IDR_RES_Msk|macro|SDRAMC_IDR_RES_Msk
+DECL|SDRAMC_IDR_RES_Pos|macro|SDRAMC_IDR_RES_Pos
+DECL|SDRAMC_IDR_RES|macro|SDRAMC_IDR_RES
+DECL|SDRAMC_IDR_Type|typedef|} SDRAMC_IDR_Type;
+DECL|SDRAMC_IDR|member|__O SDRAMC_IDR_Type SDRAMC_IDR; /**< Offset: 0x18 ( /W 32) SDRAMC Interrupt Disable Register */
+DECL|SDRAMC_IDR|member|__O uint32_t SDRAMC_IDR; /**< (SDRAMC Offset: 0x18) SDRAMC Interrupt Disable Register */
+DECL|SDRAMC_IER_MASK|macro|SDRAMC_IER_MASK
+DECL|SDRAMC_IER_Msk|macro|SDRAMC_IER_Msk
+DECL|SDRAMC_IER_OFFSET|macro|SDRAMC_IER_OFFSET
+DECL|SDRAMC_IER_RES_Msk|macro|SDRAMC_IER_RES_Msk
+DECL|SDRAMC_IER_RES_Pos|macro|SDRAMC_IER_RES_Pos
+DECL|SDRAMC_IER_RES|macro|SDRAMC_IER_RES
+DECL|SDRAMC_IER_Type|typedef|} SDRAMC_IER_Type;
+DECL|SDRAMC_IER|member|__O SDRAMC_IER_Type SDRAMC_IER; /**< Offset: 0x14 ( /W 32) SDRAMC Interrupt Enable Register */
+DECL|SDRAMC_IER|member|__O uint32_t SDRAMC_IER; /**< (SDRAMC Offset: 0x14) SDRAMC Interrupt Enable Register */
+DECL|SDRAMC_IMR_MASK|macro|SDRAMC_IMR_MASK
+DECL|SDRAMC_IMR_Msk|macro|SDRAMC_IMR_Msk
+DECL|SDRAMC_IMR_OFFSET|macro|SDRAMC_IMR_OFFSET
+DECL|SDRAMC_IMR_RES_Msk|macro|SDRAMC_IMR_RES_Msk
+DECL|SDRAMC_IMR_RES_Pos|macro|SDRAMC_IMR_RES_Pos
+DECL|SDRAMC_IMR_RES|macro|SDRAMC_IMR_RES
+DECL|SDRAMC_IMR_Type|typedef|} SDRAMC_IMR_Type;
+DECL|SDRAMC_IMR|member|__I SDRAMC_IMR_Type SDRAMC_IMR; /**< Offset: 0x1C (R/ 32) SDRAMC Interrupt Mask Register */
+DECL|SDRAMC_IMR|member|__I uint32_t SDRAMC_IMR; /**< (SDRAMC Offset: 0x1C) SDRAMC Interrupt Mask Register */
+DECL|SDRAMC_ISR_MASK|macro|SDRAMC_ISR_MASK
+DECL|SDRAMC_ISR_Msk|macro|SDRAMC_ISR_Msk
+DECL|SDRAMC_ISR_OFFSET|macro|SDRAMC_ISR_OFFSET
+DECL|SDRAMC_ISR_RES_Msk|macro|SDRAMC_ISR_RES_Msk
+DECL|SDRAMC_ISR_RES_Pos|macro|SDRAMC_ISR_RES_Pos
+DECL|SDRAMC_ISR_RES|macro|SDRAMC_ISR_RES
+DECL|SDRAMC_ISR_Type|typedef|} SDRAMC_ISR_Type;
+DECL|SDRAMC_ISR|member|__I SDRAMC_ISR_Type SDRAMC_ISR; /**< Offset: 0x20 (R/ 32) SDRAMC Interrupt Status Register */
+DECL|SDRAMC_ISR|member|__I uint32_t SDRAMC_ISR; /**< (SDRAMC Offset: 0x20) SDRAMC Interrupt Status Register */
+DECL|SDRAMC_LPR_DS_Msk|macro|SDRAMC_LPR_DS_Msk
+DECL|SDRAMC_LPR_DS_Pos|macro|SDRAMC_LPR_DS_Pos
+DECL|SDRAMC_LPR_DS|macro|SDRAMC_LPR_DS
+DECL|SDRAMC_LPR_LPCB_DEEP_POWER_DOWN_Val|macro|SDRAMC_LPR_LPCB_DEEP_POWER_DOWN_Val
+DECL|SDRAMC_LPR_LPCB_DEEP_POWER_DOWN|macro|SDRAMC_LPR_LPCB_DEEP_POWER_DOWN
+DECL|SDRAMC_LPR_LPCB_DISABLED_Val|macro|SDRAMC_LPR_LPCB_DISABLED_Val
+DECL|SDRAMC_LPR_LPCB_DISABLED|macro|SDRAMC_LPR_LPCB_DISABLED
+DECL|SDRAMC_LPR_LPCB_Msk|macro|SDRAMC_LPR_LPCB_Msk
+DECL|SDRAMC_LPR_LPCB_POWER_DOWN_Val|macro|SDRAMC_LPR_LPCB_POWER_DOWN_Val
+DECL|SDRAMC_LPR_LPCB_POWER_DOWN|macro|SDRAMC_LPR_LPCB_POWER_DOWN
+DECL|SDRAMC_LPR_LPCB_Pos|macro|SDRAMC_LPR_LPCB_Pos
+DECL|SDRAMC_LPR_LPCB_SELF_REFRESH_Val|macro|SDRAMC_LPR_LPCB_SELF_REFRESH_Val
+DECL|SDRAMC_LPR_LPCB_SELF_REFRESH|macro|SDRAMC_LPR_LPCB_SELF_REFRESH
+DECL|SDRAMC_LPR_LPCB|macro|SDRAMC_LPR_LPCB
+DECL|SDRAMC_LPR_MASK|macro|SDRAMC_LPR_MASK
+DECL|SDRAMC_LPR_Msk|macro|SDRAMC_LPR_Msk
+DECL|SDRAMC_LPR_OFFSET|macro|SDRAMC_LPR_OFFSET
+DECL|SDRAMC_LPR_PASR_Msk|macro|SDRAMC_LPR_PASR_Msk
+DECL|SDRAMC_LPR_PASR_Pos|macro|SDRAMC_LPR_PASR_Pos
+DECL|SDRAMC_LPR_PASR|macro|SDRAMC_LPR_PASR
+DECL|SDRAMC_LPR_TCSR_Msk|macro|SDRAMC_LPR_TCSR_Msk
+DECL|SDRAMC_LPR_TCSR_Pos|macro|SDRAMC_LPR_TCSR_Pos
+DECL|SDRAMC_LPR_TCSR|macro|SDRAMC_LPR_TCSR
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_128_Val|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_128_Val
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_128|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_128
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_64_Val|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_64_Val
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_64|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_64
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_Val|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER_Val
+DECL|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER|macro|SDRAMC_LPR_TIMEOUT_LP_LAST_XFER
+DECL|SDRAMC_LPR_TIMEOUT_Msk|macro|SDRAMC_LPR_TIMEOUT_Msk
+DECL|SDRAMC_LPR_TIMEOUT_Pos|macro|SDRAMC_LPR_TIMEOUT_Pos
+DECL|SDRAMC_LPR_TIMEOUT|macro|SDRAMC_LPR_TIMEOUT
+DECL|SDRAMC_LPR_Type|typedef|} SDRAMC_LPR_Type;
+DECL|SDRAMC_LPR|member|__IO SDRAMC_LPR_Type SDRAMC_LPR; /**< Offset: 0x10 (R/W 32) SDRAMC Low Power Register */
+DECL|SDRAMC_LPR|member|__IO uint32_t SDRAMC_LPR; /**< (SDRAMC Offset: 0x10) SDRAMC Low Power Register */
+DECL|SDRAMC_MDR_MASK|macro|SDRAMC_MDR_MASK
+DECL|SDRAMC_MDR_MD_LPSDRAM_Val|macro|SDRAMC_MDR_MD_LPSDRAM_Val
+DECL|SDRAMC_MDR_MD_LPSDRAM|macro|SDRAMC_MDR_MD_LPSDRAM
+DECL|SDRAMC_MDR_MD_Msk|macro|SDRAMC_MDR_MD_Msk
+DECL|SDRAMC_MDR_MD_Pos|macro|SDRAMC_MDR_MD_Pos
+DECL|SDRAMC_MDR_MD_SDRAM_Val|macro|SDRAMC_MDR_MD_SDRAM_Val
+DECL|SDRAMC_MDR_MD_SDRAM|macro|SDRAMC_MDR_MD_SDRAM
+DECL|SDRAMC_MDR_MD|macro|SDRAMC_MDR_MD
+DECL|SDRAMC_MDR_Msk|macro|SDRAMC_MDR_Msk
+DECL|SDRAMC_MDR_OFFSET|macro|SDRAMC_MDR_OFFSET
+DECL|SDRAMC_MDR_Type|typedef|} SDRAMC_MDR_Type;
+DECL|SDRAMC_MDR|member|__IO SDRAMC_MDR_Type SDRAMC_MDR; /**< Offset: 0x24 (R/W 32) SDRAMC Memory Device Register */
+DECL|SDRAMC_MDR|member|__IO uint32_t SDRAMC_MDR; /**< (SDRAMC Offset: 0x24) SDRAMC Memory Device Register */
+DECL|SDRAMC_MR_MASK|macro|SDRAMC_MR_MASK
+DECL|SDRAMC_MR_MODE_ALLBANKS_PRECHARGE_Val|macro|SDRAMC_MR_MODE_ALLBANKS_PRECHARGE_Val
+DECL|SDRAMC_MR_MODE_ALLBANKS_PRECHARGE|macro|SDRAMC_MR_MODE_ALLBANKS_PRECHARGE
+DECL|SDRAMC_MR_MODE_AUTO_REFRESH_Val|macro|SDRAMC_MR_MODE_AUTO_REFRESH_Val
+DECL|SDRAMC_MR_MODE_AUTO_REFRESH|macro|SDRAMC_MR_MODE_AUTO_REFRESH
+DECL|SDRAMC_MR_MODE_DEEP_POWERDOWN_Val|macro|SDRAMC_MR_MODE_DEEP_POWERDOWN_Val
+DECL|SDRAMC_MR_MODE_DEEP_POWERDOWN|macro|SDRAMC_MR_MODE_DEEP_POWERDOWN
+DECL|SDRAMC_MR_MODE_EXT_LOAD_MODEREG_Val|macro|SDRAMC_MR_MODE_EXT_LOAD_MODEREG_Val
+DECL|SDRAMC_MR_MODE_EXT_LOAD_MODEREG|macro|SDRAMC_MR_MODE_EXT_LOAD_MODEREG
+DECL|SDRAMC_MR_MODE_LOAD_MODEREG_Val|macro|SDRAMC_MR_MODE_LOAD_MODEREG_Val
+DECL|SDRAMC_MR_MODE_LOAD_MODEREG|macro|SDRAMC_MR_MODE_LOAD_MODEREG
+DECL|SDRAMC_MR_MODE_Msk|macro|SDRAMC_MR_MODE_Msk
+DECL|SDRAMC_MR_MODE_NOP_Val|macro|SDRAMC_MR_MODE_NOP_Val
+DECL|SDRAMC_MR_MODE_NOP|macro|SDRAMC_MR_MODE_NOP
+DECL|SDRAMC_MR_MODE_NORMAL_Val|macro|SDRAMC_MR_MODE_NORMAL_Val
+DECL|SDRAMC_MR_MODE_NORMAL|macro|SDRAMC_MR_MODE_NORMAL
+DECL|SDRAMC_MR_MODE_Pos|macro|SDRAMC_MR_MODE_Pos
+DECL|SDRAMC_MR_MODE|macro|SDRAMC_MR_MODE
+DECL|SDRAMC_MR_Msk|macro|SDRAMC_MR_Msk
+DECL|SDRAMC_MR_OFFSET|macro|SDRAMC_MR_OFFSET
+DECL|SDRAMC_MR_Type|typedef|} SDRAMC_MR_Type;
+DECL|SDRAMC_MR|member|__IO SDRAMC_MR_Type SDRAMC_MR; /**< Offset: 0x00 (R/W 32) SDRAMC Mode Register */
+DECL|SDRAMC_MR|member|__IO uint32_t SDRAMC_MR; /**< (SDRAMC Offset: 0x00) SDRAMC Mode Register */
+DECL|SDRAMC_OCMS_KEY1_KEY1_Msk|macro|SDRAMC_OCMS_KEY1_KEY1_Msk
+DECL|SDRAMC_OCMS_KEY1_KEY1_Pos|macro|SDRAMC_OCMS_KEY1_KEY1_Pos
+DECL|SDRAMC_OCMS_KEY1_KEY1|macro|SDRAMC_OCMS_KEY1_KEY1
+DECL|SDRAMC_OCMS_KEY1_MASK|macro|SDRAMC_OCMS_KEY1_MASK
+DECL|SDRAMC_OCMS_KEY1_Msk|macro|SDRAMC_OCMS_KEY1_Msk
+DECL|SDRAMC_OCMS_KEY1_OFFSET|macro|SDRAMC_OCMS_KEY1_OFFSET
+DECL|SDRAMC_OCMS_KEY1_Type|typedef|} SDRAMC_OCMS_KEY1_Type;
+DECL|SDRAMC_OCMS_KEY1|member|__O SDRAMC_OCMS_KEY1_Type SDRAMC_OCMS_KEY1; /**< Offset: 0x30 ( /W 32) SDRAMC OCMS KEY1 Register */
+DECL|SDRAMC_OCMS_KEY1|member|__O uint32_t SDRAMC_OCMS_KEY1; /**< (SDRAMC Offset: 0x30) SDRAMC OCMS KEY1 Register */
+DECL|SDRAMC_OCMS_KEY2_KEY2_Msk|macro|SDRAMC_OCMS_KEY2_KEY2_Msk
+DECL|SDRAMC_OCMS_KEY2_KEY2_Pos|macro|SDRAMC_OCMS_KEY2_KEY2_Pos
+DECL|SDRAMC_OCMS_KEY2_KEY2|macro|SDRAMC_OCMS_KEY2_KEY2
+DECL|SDRAMC_OCMS_KEY2_MASK|macro|SDRAMC_OCMS_KEY2_MASK
+DECL|SDRAMC_OCMS_KEY2_Msk|macro|SDRAMC_OCMS_KEY2_Msk
+DECL|SDRAMC_OCMS_KEY2_OFFSET|macro|SDRAMC_OCMS_KEY2_OFFSET
+DECL|SDRAMC_OCMS_KEY2_Type|typedef|} SDRAMC_OCMS_KEY2_Type;
+DECL|SDRAMC_OCMS_KEY2|member|__O SDRAMC_OCMS_KEY2_Type SDRAMC_OCMS_KEY2; /**< Offset: 0x34 ( /W 32) SDRAMC OCMS KEY2 Register */
+DECL|SDRAMC_OCMS_KEY2|member|__O uint32_t SDRAMC_OCMS_KEY2; /**< (SDRAMC Offset: 0x34) SDRAMC OCMS KEY2 Register */
+DECL|SDRAMC_OCMS_MASK|macro|SDRAMC_OCMS_MASK
+DECL|SDRAMC_OCMS_Msk|macro|SDRAMC_OCMS_Msk
+DECL|SDRAMC_OCMS_OFFSET|macro|SDRAMC_OCMS_OFFSET
+DECL|SDRAMC_OCMS_SDR_SE_Msk|macro|SDRAMC_OCMS_SDR_SE_Msk
+DECL|SDRAMC_OCMS_SDR_SE_Pos|macro|SDRAMC_OCMS_SDR_SE_Pos
+DECL|SDRAMC_OCMS_SDR_SE|macro|SDRAMC_OCMS_SDR_SE
+DECL|SDRAMC_OCMS_Type|typedef|} SDRAMC_OCMS_Type;
+DECL|SDRAMC_OCMS|member|__IO SDRAMC_OCMS_Type SDRAMC_OCMS; /**< Offset: 0x2C (R/W 32) SDRAMC OCMS Register */
+DECL|SDRAMC_OCMS|member|__IO uint32_t SDRAMC_OCMS; /**< (SDRAMC Offset: 0x2C) SDRAMC OCMS Register */
+DECL|SDRAMC_TR_COUNT_Msk|macro|SDRAMC_TR_COUNT_Msk
+DECL|SDRAMC_TR_COUNT_Pos|macro|SDRAMC_TR_COUNT_Pos
+DECL|SDRAMC_TR_COUNT|macro|SDRAMC_TR_COUNT
+DECL|SDRAMC_TR_MASK|macro|SDRAMC_TR_MASK
+DECL|SDRAMC_TR_Msk|macro|SDRAMC_TR_Msk
+DECL|SDRAMC_TR_OFFSET|macro|SDRAMC_TR_OFFSET
+DECL|SDRAMC_TR_Type|typedef|} SDRAMC_TR_Type;
+DECL|SDRAMC_TR|member|__IO SDRAMC_TR_Type SDRAMC_TR; /**< Offset: 0x04 (R/W 32) SDRAMC Refresh Timer Register */
+DECL|SDRAMC_TR|member|__IO uint32_t SDRAMC_TR; /**< (SDRAMC Offset: 0x04) SDRAMC Refresh Timer Register */
+DECL|SDR_SE|member|uint32_t SDR_SE:1; /**< bit: 0 SDRAM Memory Controller Scrambling Enable */
+DECL|Sdramc|typedef|} Sdramc;
+DECL|Sdramc|typedef|} Sdramc;
+DECL|TCSR|member|uint32_t TCSR:2; /**< bit: 8..9 Temperature Compensated Self-Refresh (only for low-power SDRAM) */
+DECL|TIMEOUT|member|uint32_t TIMEOUT:2; /**< bit: 12..13 Time to Define When Low-power Mode Is Enabled */
+DECL|TMRD|member|uint32_t TMRD:4; /**< bit: 0..3 Load Mode Register Command to Active or Refresh Command */
+DECL|TRAS|member|uint32_t TRAS:4; /**< bit: 24..27 Active to Precharge Delay */
+DECL|TRCD|member|uint32_t TRCD:4; /**< bit: 20..23 Row to Column Delay */
+DECL|TRC_TRFC|member|uint32_t TRC_TRFC:4; /**< bit: 12..15 Row Cycle Delay and Row Refresh Cycle */
+DECL|TRP|member|uint32_t TRP:4; /**< bit: 16..19 Row Precharge Delay */
+DECL|TWR|member|uint32_t TWR:4; /**< bit: 8..11 Write Recovery Delay */
+DECL|TXSR|member|uint32_t TXSR:4; /**< bit: 28..31 Exit Self Refresh to Active Delay */
+DECL|UNAL|member|uint32_t UNAL:1; /**< bit: 8 Support Unaligned Access */
+DECL|_SAME70_SDRAMC_COMPONENT_H_|macro|_SAME70_SDRAMC_COMPONENT_H_
+DECL|_SAME70_SDRAMC_COMPONENT_|macro|_SAME70_SDRAMC_COMPONENT_
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
+DECL|uint32_t|member|uint32_t :18; /**< bit: 14..31 Reserved */
+DECL|uint32_t|member|uint32_t :1; /**< bit: 7 Reserved */
+DECL|uint32_t|member|uint32_t :20; /**< bit: 12..31 Reserved */
+DECL|uint32_t|member|uint32_t :23; /**< bit: 9..31 Reserved */
+DECL|uint32_t|member|uint32_t :29; /**< bit: 3..31 Reserved */
+DECL|uint32_t|member|uint32_t :2; /**< bit: 2..3 Reserved */
+DECL|uint32_t|member|uint32_t :30; /**< bit: 2..31 Reserved */
+DECL|uint32_t|member|uint32_t :31; /**< bit: 1..31 Reserved */
+DECL|uint32_t|member|uint32_t :31; /**< bit: 1..31 Reserved */
+DECL|uint32_t|member|uint32_t :31; /**< bit: 1..31 Reserved */
+DECL|uint32_t|member|uint32_t :31; /**< bit: 1..31 Reserved */
+DECL|uint32_t|member|uint32_t :31; /**< bit: 1..31 Reserved */
+DECL|uint32_t|member|uint32_t :4; /**< bit: 4..7 Reserved */

@@ -1,0 +1,19 @@
+DECL|COMPONENT_TYPEDEF_STYLE|macro|COMPONENT_TYPEDEF_STYLE
+DECL|GPBR_6378|macro|GPBR_6378
+DECL|GPBR_SYS_GPBR_GPBR_VALUE_Msk|macro|GPBR_SYS_GPBR_GPBR_VALUE_Msk
+DECL|GPBR_SYS_GPBR_GPBR_VALUE_Pos|macro|GPBR_SYS_GPBR_GPBR_VALUE_Pos
+DECL|GPBR_SYS_GPBR_GPBR_VALUE|macro|GPBR_SYS_GPBR_GPBR_VALUE
+DECL|GPBR_SYS_GPBR_MASK|macro|GPBR_SYS_GPBR_MASK
+DECL|GPBR_SYS_GPBR_Msk|macro|GPBR_SYS_GPBR_Msk
+DECL|GPBR_SYS_GPBR_OFFSET|macro|GPBR_SYS_GPBR_OFFSET
+DECL|GPBR_SYS_GPBR_Type|typedef|} GPBR_SYS_GPBR_Type;
+DECL|GPBR_VALUE|member|uint32_t GPBR_VALUE:32; /**< bit: 0..31 Value of GPBR x */
+DECL|Gpbr|typedef|} Gpbr;
+DECL|Gpbr|typedef|} Gpbr;
+DECL|REV_GPBR|macro|REV_GPBR
+DECL|SYS_GPBR|member|__IO GPBR_SYS_GPBR_Type SYS_GPBR[8]; /**< Offset: 0x00 (R/W 32) General Purpose Backup Register 0 */
+DECL|SYS_GPBR|member|__IO uint32_t SYS_GPBR[8]; /**< (GPBR Offset: 0x00) General Purpose Backup Register 0 */
+DECL|_SAME70_GPBR_COMPONENT_H_|macro|_SAME70_GPBR_COMPONENT_H_
+DECL|_SAME70_GPBR_COMPONENT_|macro|_SAME70_GPBR_COMPONENT_
+DECL|bit|member|} bit; /**< Structure used for bit access */
+DECL|reg|member|uint32_t reg; /**< Type used for register access */
