@@ -54,6 +54,7 @@ DECL|coord_addr_len|member|uint8_t coord_addr_len;
 DECL|coord|member|} coord;
 DECL|duration|member|uint32_t duration;
 DECL|ext_addr|member|uint8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|ext_addr|member|uint8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
 DECL|ieee802154_context|struct|struct ieee802154_context {
 DECL|ieee802154_req_params|struct|struct ieee802154_req_params {
 DECL|len|member|uint8_t len;
@@ -66,5 +67,6 @@ DECL|req_lock|member|struct k_sem req_lock;
 DECL|res_lock|member|struct k_sem res_lock;
 DECL|scan_ctx|member|struct ieee802154_req_params *scan_ctx;
 DECL|sequence|member|uint8_t sequence;
+DECL|short_addr|member|uint16_t short_addr;
 DECL|short_addr|member|uint16_t short_addr;
 DECL|short_addr|member|uint16_t short_addr;
