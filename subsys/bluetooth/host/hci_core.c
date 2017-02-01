@@ -22,6 +22,7 @@ DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
+DECL|bt_buf_get_cmd_complete|function|struct net_buf *bt_buf_get_cmd_complete(int32_t timeout)
 DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
@@ -149,7 +150,8 @@ DECL|show_dev_info|function|static inline void show_dev_info(void)
 DECL|show_dev_info|function|static void show_dev_info(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
-DECL|sync|member|void *sync;
+DECL|status|member|uint8_t status;
+DECL|sync|member|struct k_sem *sync;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)

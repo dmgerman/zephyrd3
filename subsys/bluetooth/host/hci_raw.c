@@ -1,5 +1,6 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|bt_buf_get_acl|function|struct net_buf *bt_buf_get_acl(int32_t timeout)
+DECL|bt_buf_get_cmd_complete|function|struct net_buf *bt_buf_get_cmd_complete(int32_t timeout)
 DECL|bt_buf_get_evt|function|struct net_buf *bt_buf_get_evt(uint8_t opcode, int timeout)
 DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev

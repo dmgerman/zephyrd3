@@ -18,6 +18,7 @@ DECL|fifo|member|struct k_fifo fifo;
 DECL|fifo|member|struct k_fifo fifo;
 DECL|get_acl_hdr|function|static inline void get_acl_hdr(void)
 DECL|get_evt_hdr|function|static inline void get_evt_hdr(void)
+DECL|get_rx|function|static struct net_buf *get_rx(int timeout)
 DECL|h4_dev|variable|h4_dev
 DECL|h4_discard|function|static size_t h4_discard(struct device *uart, size_t len)
 DECL|h4_get_type|function|static inline void h4_get_type(void)
