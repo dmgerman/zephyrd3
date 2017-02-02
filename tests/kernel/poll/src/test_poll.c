@@ -1,5 +1,8 @@
 DECL|FIFO_MSG_VALUE|macro|FIFO_MSG_VALUE
 DECL|SIGNAL_RESULT|macro|SIGNAL_RESULT
+DECL|TAG_0|macro|TAG_0
+DECL|TAG_1|macro|TAG_1
+DECL|TAG_2|macro|TAG_2
 DECL|eaddrinuse_hogger_stack|variable|eaddrinuse_hogger_stack
 DECL|eaddrinuse_hogger|function|static void eaddrinuse_hogger(void *p1, void *p2, void *p3)
 DECL|eaddrinuse_ready_sem|variable|eaddrinuse_ready_sem
