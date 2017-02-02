@@ -39,6 +39,7 @@ DECL|K_NO_WAIT|macro|K_NO_WAIT
 DECL|K_PIPE_DEFINE|macro|K_PIPE_DEFINE
 DECL|K_PIPE_INITIALIZER|macro|K_PIPE_INITIALIZER
 DECL|K_POLL_EVENT_INITIALIZER|macro|K_POLL_EVENT_INITIALIZER
+DECL|K_POLL_EVENT_STATIC_INITIALIZER|macro|K_POLL_EVENT_STATIC_INITIALIZER
 DECL|K_POLL_MODE_NOTIFY_ONLY|enumerator|K_POLL_MODE_NOTIFY_ONLY = 0,
 DECL|K_POLL_NUM_MODES|enumerator|K_POLL_NUM_MODES
 DECL|K_POLL_SIGNAL_INITIALIZER|macro|K_POLL_SIGNAL_INITIALIZER
@@ -262,6 +263,7 @@ DECL|size|member|size_t size; /* Buffer size */
 DECL|state|member|uint32_t state:_POLL_NUM_STATES;
 DECL|status|member|uint32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
+DECL|tag|member|uint32_t tag:8;
 DECL|tcs|macro|tcs
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
