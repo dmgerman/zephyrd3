@@ -1,12 +1,16 @@
-DECL|QM_SS_SLEEP_MODE_CORE_OFF_TIMER_OFF|macro|QM_SS_SLEEP_MODE_CORE_OFF_TIMER_OFF
-DECL|QM_SS_SLEEP_MODE_CORE_OFF|macro|QM_SS_SLEEP_MODE_CORE_OFF
-DECL|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF|macro|QM_SS_SLEEP_MODE_CORE_TIMERS_RTC_OFF
+DECL|SLEEP_INT_EN|macro|SLEEP_INT_EN
+DECL|SLEEP_TIMER_OFF|macro|SLEEP_TIMER_OFF
+DECL|SLEEP_TIMER_ON|macro|SLEEP_TIMER_ON
+DECL|SLEEP_TIMER_RTC_OFF|macro|SLEEP_TIMER_RTC_OFF
+DECL|SS_STATE_1_TIMER_OFF|macro|SS_STATE_1_TIMER_OFF
+DECL|SS_STATE_1_TIMER_ON|macro|SS_STATE_1_TIMER_ON
+DECL|SS_STATE_2|macro|SS_STATE_2
 DECL|cpu_context|variable|cpu_context
-DECL|power_soc_set_ss_restore_flag|function|void power_soc_set_ss_restore_flag(void)
-DECL|ss_power_cpu_ss1|function|void ss_power_cpu_ss1(const ss_power_cpu_ss1_mode_t mode)
-DECL|ss_power_cpu_ss2|function|void ss_power_cpu_ss2(void)
-DECL|ss_power_sleep_wait|function|void ss_power_sleep_wait(void)
-DECL|ss_power_soc_deep_sleep_restore|function|void ss_power_soc_deep_sleep_restore(void)
-DECL|ss_power_soc_lpss_disable|function|void ss_power_soc_lpss_disable()
-DECL|ss_power_soc_lpss_enable|function|void ss_power_soc_lpss_enable()
-DECL|ss_power_soc_sleep_restore|function|void ss_power_soc_sleep_restore(void)
+DECL|qm_power_soc_set_ss_restore_flag|function|void qm_power_soc_set_ss_restore_flag(void)
+DECL|qm_ss_power_cpu_ss1|function|void qm_ss_power_cpu_ss1(const qm_ss_power_cpu_ss1_mode_t mode)
+DECL|qm_ss_power_cpu_ss2|function|void qm_ss_power_cpu_ss2(void)
+DECL|qm_ss_power_sleep_wait|function|void qm_ss_power_sleep_wait(void)
+DECL|qm_ss_power_soc_deep_sleep_restore|function|void qm_ss_power_soc_deep_sleep_restore(void)
+DECL|qm_ss_power_soc_lpss_disable|function|void qm_ss_power_soc_lpss_disable()
+DECL|qm_ss_power_soc_lpss_enable|function|void qm_ss_power_soc_lpss_enable()
+DECL|qm_ss_power_soc_sleep_restore|function|void qm_ss_power_soc_sleep_restore(void)

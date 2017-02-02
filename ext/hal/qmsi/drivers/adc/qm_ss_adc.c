@@ -30,6 +30,8 @@ DECL|qm_ss_adc_isr_err_handler|function|static void qm_ss_adc_isr_err_handler(co
 DECL|qm_ss_adc_isr_handler|function|static void qm_ss_adc_isr_handler(const qm_ss_adc_t adc)
 DECL|qm_ss_adc_isr_pwr_handler|function|static void qm_ss_adc_isr_pwr_handler(const qm_ss_adc_t adc)
 DECL|qm_ss_adc_restore_context|function|int qm_ss_adc_restore_context(const qm_ss_adc_t adc, const qm_ss_adc_context_t *const ctx)
+DECL|qm_ss_adc_restore_context|function|int qm_ss_adc_restore_context(const qm_ss_adc_t adc, const qm_ss_adc_context_t *const ctx)
+DECL|qm_ss_adc_save_context|function|int qm_ss_adc_save_context(const qm_ss_adc_t adc, qm_ss_adc_context_t *const ctx)
 DECL|qm_ss_adc_save_context|function|int qm_ss_adc_save_context(const qm_ss_adc_t adc, qm_ss_adc_context_t *const ctx)
 DECL|qm_ss_adc_set_calibration|function|int qm_ss_adc_set_calibration(const qm_ss_adc_t adc __attribute__((unused)), const qm_ss_adc_calibration_t cal_data)
 DECL|qm_ss_adc_set_config|function|int qm_ss_adc_set_config(const qm_ss_adc_t adc, const qm_ss_adc_config_t *const cfg)

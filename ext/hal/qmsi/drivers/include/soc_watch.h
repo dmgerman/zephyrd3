@@ -1,7 +1,10 @@
+DECL|SOCW_ARC_EVENT_SS1|macro|SOCW_ARC_EVENT_SS1
+DECL|SOCW_ARC_EVENT_SS2|macro|SOCW_ARC_EVENT_SS2
 DECL|SOCW_EVENT_APP|enumerator|SOCW_EVENT_APP = 4, /**< Application-defined event. */
+DECL|SOCW_EVENT_FREQ|enumerator|SOCW_EVENT_FREQ = 5, /**< Frequency altered. */
 DECL|SOCW_EVENT_HALT|enumerator|SOCW_EVENT_HALT = 0, /**< CPU Halt. */
 DECL|SOCW_EVENT_INTERRUPT|enumerator|SOCW_EVENT_INTERRUPT = 1, /**< CPU interrupt generated. */
-DECL|SOCW_EVENT_MAX|enumerator|SOCW_EVENT_MAX = 5 /**< End of events sentinel. */
+DECL|SOCW_EVENT_MAX|enumerator|SOCW_EVENT_MAX = 6 /**< End of events sentinel. */
 DECL|SOCW_EVENT_REGISTER|enumerator|SOCW_EVENT_REGISTER = 3, /**< SOC register altered. */
 DECL|SOCW_EVENT_SLEEP|enumerator|SOCW_EVENT_SLEEP = 2, /**< Sleep mode entered. */
 DECL|SOCW_REG_CCU_EXT_CLK_CTL|enumerator|SOCW_REG_CCU_EXT_CLK_CTL = 4, /**< 0x024 CCU Ext Clock Gate Ctl.*/

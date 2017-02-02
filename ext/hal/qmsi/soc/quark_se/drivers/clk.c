@@ -1,4 +1,6 @@
 DECL|apply_flash_timings|function|static void apply_flash_timings(uint32_t sys_ticks_per_us)
+DECL|clk_dma_disable|function|int clk_dma_disable(void)
+DECL|clk_dma_enable|function|int clk_dma_enable(void)
 DECL|clk_ext_set_div|function|int clk_ext_set_div(const clk_ext_div_t div)
 DECL|clk_gpio_db_set_div|function|int clk_gpio_db_set_div(const clk_gpio_db_div_t div)
 DECL|clk_periph_disable|function|int clk_periph_disable(const clk_periph_t clocks)
@@ -13,6 +15,7 @@ DECL|clk_sys_usb_disable|function|int clk_sys_usb_disable(void)
 DECL|clk_sys_usb_enable|function|int clk_sys_usb_enable(void)
 DECL|clk_trim_apply|function|int clk_trim_apply(const uint32_t value)
 DECL|clk_trim_read|function|int clk_trim_read(uint32_t *const value)
+DECL|get_i2c_clk_freq_in_mhz|function|uint32_t get_i2c_clk_freq_in_mhz(void)
 DECL|get_ticks|macro|get_ticks
 DECL|get_ticks|macro|get_ticks
 DECL|get_ticks|macro|get_ticks

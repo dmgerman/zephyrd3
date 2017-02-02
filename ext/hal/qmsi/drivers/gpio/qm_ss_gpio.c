@@ -7,6 +7,8 @@ DECL|qm_ss_gpio_clear_pin|function|int qm_ss_gpio_clear_pin(const qm_ss_gpio_t g
 DECL|qm_ss_gpio_read_pin|function|int qm_ss_gpio_read_pin(const qm_ss_gpio_t gpio, const uint8_t pin,qm_ss_gpio_state_t *const state)
 DECL|qm_ss_gpio_read_port|function|int qm_ss_gpio_read_port(const qm_ss_gpio_t gpio, uint32_t *const port)
 DECL|qm_ss_gpio_restore_context|function|int qm_ss_gpio_restore_context(const qm_ss_gpio_t gpio, const qm_ss_gpio_context_t *const ctx)
+DECL|qm_ss_gpio_restore_context|function|int qm_ss_gpio_restore_context(const qm_ss_gpio_t gpio, const qm_ss_gpio_context_t *const ctx)
+DECL|qm_ss_gpio_save_context|function|int qm_ss_gpio_save_context(const qm_ss_gpio_t gpio, qm_ss_gpio_context_t *const ctx)
 DECL|qm_ss_gpio_save_context|function|int qm_ss_gpio_save_context(const qm_ss_gpio_t gpio, qm_ss_gpio_context_t *const ctx)
 DECL|qm_ss_gpio_set_config|function|int qm_ss_gpio_set_config(const qm_ss_gpio_t gpio, const qm_ss_gpio_port_config_t *const cfg)
 DECL|qm_ss_gpio_set_pin_state|function|int qm_ss_gpio_set_pin_state(const qm_ss_gpio_t gpio, const uint8_t pin, const qm_ss_gpio_state_t state)

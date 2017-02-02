@@ -29,16 +29,8 @@ DECL|QM_UART_RX_FE|enumerator|QM_UART_RX_FE = BIT(3), /**< Framing error. */
 DECL|QM_UART_RX_NEMPTY|enumerator|QM_UART_RX_NEMPTY = BIT(8), /**< RX FIFO not empty. */
 DECL|QM_UART_RX_OE|enumerator|QM_UART_RX_OE = BIT(1), /**< Receiver overrun. */
 DECL|QM_UART_RX_PE|enumerator|QM_UART_RX_PE = BIT(2), /**< Parity error. */
-DECL|QM_UART_RX_WM_HALF|enumerator|QM_UART_RX_WM_HALF, /* FIFO 1/2 full */
-DECL|QM_UART_RX_WM_ONEBYTE|enumerator|QM_UART_RX_WM_ONEBYTE = 0, /* 1 character in the FIFO */
-DECL|QM_UART_RX_WM_QUARTER|enumerator|QM_UART_RX_WM_QUARTER, /* FIFO 1/4 full */
-DECL|QM_UART_RX_WM_TWOLESS|enumerator|QM_UART_RX_WM_TWOLESS, /* FIFO 2 less than full */
 DECL|QM_UART_TX_BUSY|enumerator|QM_UART_TX_BUSY = BIT(5), /**< TX Busy flag. */
 DECL|QM_UART_TX_NFULL|enumerator|QM_UART_TX_NFULL = BIT(7), /**< TX FIFO not full. */
-DECL|QM_UART_TX_WM_EMPTY|enumerator|QM_UART_TX_WM_EMPTY = 0, /* FIFO empty */
-DECL|QM_UART_TX_WM_HALF|enumerator|QM_UART_TX_WM_HALF, /* FIFO 1/2 full */
-DECL|QM_UART_TX_WM_QUARTER|enumerator|QM_UART_TX_WM_QUARTER, /* FIFO 1/4 full */
-DECL|QM_UART_TX_WM_TWOCHAR|enumerator|QM_UART_TX_WM_TWOCHAR, /* 2 characters in the FIFO */
 DECL|__QM_UART_H__|macro|__QM_UART_H__
 DECL|baud_divisor|member|uint32_t baud_divisor; /**< Baud Divisor. */
 DECL|callback_data|member|void *callback_data; /**< Callback identifier. */
@@ -49,9 +41,5 @@ DECL|hw_fc|member|bool hw_fc; /**< Hardware Automatic Flow Control. */
 DECL|line_control|member|qm_uart_lc_t line_control; /**< Line control (enum). */
 DECL|qm_uart_config_t|typedef|} qm_uart_config_t;
 DECL|qm_uart_lc_t|typedef|} qm_uart_lc_t;
-DECL|qm_uart_rx_water_mark_t|typedef|} qm_uart_rx_water_mark_t;
 DECL|qm_uart_status_t|typedef|} qm_uart_status_t;
 DECL|qm_uart_transfer_t|typedef|} qm_uart_transfer_t;
-DECL|qm_uart_tx_water_mark_t|typedef|} qm_uart_tx_water_mark_t;
-DECL|rx_water_mark|member|qm_uart_rx_water_mark_t rx_water_mark; /* UART Rx FIFO Water Mark */
-DECL|tx_water_mark|member|qm_uart_tx_water_mark_t tx_water_mark; /* UART Tx FIFO Water Mark */

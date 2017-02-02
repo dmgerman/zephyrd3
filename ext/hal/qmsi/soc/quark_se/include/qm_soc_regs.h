@@ -45,17 +45,27 @@ DECL|DMA_HW_IF_UART_B_TX|enumerator|DMA_HW_IF_UART_B_TX = 0x2, /**< UART_B_TX*/
 DECL|ER_DONE|macro|ER_DONE
 DECL|ER_REQ|macro|ER_REQ
 DECL|FIX_1|macro|FIX_1
+DECL|FIX_2|macro|FIX_2
+DECL|FIX_3|macro|FIX_3
 DECL|HAS_4_TIMERS|macro|HAS_4_TIMERS
+DECL|HAS_AONPT_BUSY_BIT|macro|HAS_AONPT_BUSY_BIT
 DECL|HAS_AON_GPIO|macro|HAS_AON_GPIO
 DECL|HAS_APIC|macro|HAS_APIC
+DECL|HAS_FLASH_WRITE_DISABLE|macro|HAS_FLASH_WRITE_DISABLE
 DECL|HAS_MAILBOX_LAKEMONT_DEST|macro|HAS_MAILBOX_LAKEMONT_DEST
 DECL|HAS_MAILBOX_SENSOR_SUB_SYSTEM_DEST|macro|HAS_MAILBOX_SENSOR_SUB_SYSTEM_DEST
 DECL|HAS_MAILBOX|macro|HAS_MAILBOX
 DECL|HAS_MAILBOX|macro|HAS_MAILBOX
+DECL|HAS_SW_SOCWATCH|macro|HAS_SW_SOCWATCH
 DECL|HAS_USB|macro|HAS_USB
+DECL|HAS_WDT_CLOCK_ENABLE|macro|HAS_WDT_CLOCK_ENABLE
+DECL|HAS_WDT_PAUSE|macro|HAS_WDT_PAUSE
 DECL|MASS_ERASE_INFO|macro|MASS_ERASE_INFO
 DECL|MASS_ERASE|macro|MASS_ERASE
+DECL|NUM_FLASH_CONTROLLERS|macro|NUM_FLASH_CONTROLLERS
 DECL|NUM_MAILBOXES|macro|NUM_MAILBOXES
+DECL|NUM_PWM_CONTROLLER_INTERRUPTS|macro|NUM_PWM_CONTROLLER_INTERRUPTS
+DECL|NUM_WDT_CONTROLLERS|macro|NUM_WDT_CONTROLLERS
 DECL|OSC0_CFG0_OSC0_XTAL_COUNT_VALUE_MASK|macro|OSC0_CFG0_OSC0_XTAL_COUNT_VALUE_MASK
 DECL|OSC0_CFG0_OSC0_XTAL_COUNT_VALUE_OFFS|macro|OSC0_CFG0_OSC0_XTAL_COUNT_VALUE_OFFS
 DECL|OSC0_CFG1_FTRIMOTP_MASK|macro|OSC0_CFG1_FTRIMOTP_MASK
@@ -66,11 +76,16 @@ DECL|OSC0_CFG1_SI_FREQ_SEL_MASK|macro|OSC0_CFG1_SI_FREQ_SEL_MASK
 DECL|OSC0_CFG1_SI_FREQ_SEL_OFFS|macro|OSC0_CFG1_SI_FREQ_SEL_OFFS
 DECL|PWM_START|macro|PWM_START
 DECL|QM_AC_HP_COMPARATORS_MASK|macro|QM_AC_HP_COMPARATORS_MASK
+DECL|QM_AONC_0_BASE|macro|QM_AONC_0_BASE
 DECL|QM_AONC_0|enumerator|typedef enum { QM_AONC_0 = 0, QM_AONC_NUM } qm_aonc_t;
-DECL|QM_AONC_BASE|macro|QM_AONC_BASE
+DECL|QM_AONC_DISABLE|macro|QM_AONC_DISABLE
+DECL|QM_AONC_ENABLE|macro|QM_AONC_ENABLE
 DECL|QM_AONC_NUM|enumerator|typedef enum { QM_AONC_0 = 0, QM_AONC_NUM } qm_aonc_t;
 DECL|QM_AONC|macro|QM_AONC
 DECL|QM_AONC|macro|QM_AONC
+DECL|QM_AONPT_CLR|macro|QM_AONPT_CLR
+DECL|QM_AONPT_INTERRUPT|macro|QM_AONPT_INTERRUPT
+DECL|QM_AONPT_RST|macro|QM_AONPT_RST
 DECL|QM_AON_GPIO_0|enumerator|typedef enum { QM_GPIO_0 = 0, QM_AON_GPIO_0 = 1, QM_GPIO_NUM } qm_gpio_t;
 DECL|QM_AON_GPIO_BASE|macro|QM_AON_GPIO_BASE
 DECL|QM_AON_VR_EN|macro|QM_AON_VR_EN
@@ -148,6 +163,7 @@ DECL|QM_DMA_CTL_L_SRC_TR_WIDTH_MASK|macro|QM_DMA_CTL_L_SRC_TR_WIDTH_MASK
 DECL|QM_DMA_CTL_L_SRC_TR_WIDTH_OFFSET|macro|QM_DMA_CTL_L_SRC_TR_WIDTH_OFFSET
 DECL|QM_DMA_CTL_L_TT_FC_MASK|macro|QM_DMA_CTL_L_TT_FC_MASK
 DECL|QM_DMA_CTL_L_TT_FC_OFFSET|macro|QM_DMA_CTL_L_TT_FC_OFFSET
+DECL|QM_DMA_ENABLE_CLOCK|macro|QM_DMA_ENABLE_CLOCK
 DECL|QM_DMA_INT_STATUS_BLOCK|macro|QM_DMA_INT_STATUS_BLOCK
 DECL|QM_DMA_INT_STATUS_ERR|macro|QM_DMA_INT_STATUS_ERR
 DECL|QM_DMA_INT_STATUS_TFR|macro|QM_DMA_INT_STATUS_TFR
@@ -183,6 +199,7 @@ DECL|QM_FLASH_REGION_SYS_0_BASE|macro|QM_FLASH_REGION_SYS_0_BASE
 DECL|QM_FLASH_REGION_SYS_0_BASE|macro|QM_FLASH_REGION_SYS_0_BASE
 DECL|QM_FLASH_REGION_SYS_1_BASE|macro|QM_FLASH_REGION_SYS_1_BASE
 DECL|QM_FLASH_REGION_SYS_1_BASE|macro|QM_FLASH_REGION_SYS_1_BASE
+DECL|QM_FLASH_STTS_ROM_PROG|macro|QM_FLASH_STTS_ROM_PROG
 DECL|QM_FLASH_TMG_DEF_MASK|macro|QM_FLASH_TMG_DEF_MASK
 DECL|QM_FLASH_WAIT_STATE_MASK|macro|QM_FLASH_WAIT_STATE_MASK
 DECL|QM_FLASH_WAIT_STATE_OFFSET|macro|QM_FLASH_WAIT_STATE_OFFSET
@@ -194,6 +211,7 @@ DECL|QM_FPR_0|enumerator|QM_FPR_0, /**< FPR 0. */
 DECL|QM_FPR_1|enumerator|QM_FPR_1, /**< FPR 1. */
 DECL|QM_FPR_2|enumerator|QM_FPR_2, /**< FPR 2. */
 DECL|QM_FPR_3|enumerator|QM_FPR_3, /**< FPR 3. */
+DECL|QM_FPR_GRANULARITY|macro|QM_FPR_GRANULARITY
 DECL|QM_FPR_NUM|enumerator|QM_FPR_NUM
 DECL|QM_GPIO_0|enumerator|typedef enum { QM_GPIO_0 = 0, QM_AON_GPIO_0 = 1, QM_GPIO_NUM } qm_gpio_t;
 DECL|QM_GPIO_BASE|macro|QM_GPIO_BASE
@@ -266,6 +284,7 @@ DECL|QM_I2C_IC_STATUS_RFF|macro|QM_I2C_IC_STATUS_RFF
 DECL|QM_I2C_IC_STATUS_RFNE|macro|QM_I2C_IC_STATUS_RFNE
 DECL|QM_I2C_IC_STATUS_TFE|macro|QM_I2C_IC_STATUS_TFE
 DECL|QM_I2C_IC_STATUS_TNF|macro|QM_I2C_IC_STATUS_TNF
+DECL|QM_I2C_IC_TAR_MASK|macro|QM_I2C_IC_TAR_MASK
 DECL|QM_I2C_IC_TX_ABRT_SOURCE_ABRT_SBYTE_NORSTRT|macro|QM_I2C_IC_TX_ABRT_SOURCE_ABRT_SBYTE_NORSTRT
 DECL|QM_I2C_IC_TX_ABRT_SOURCE_ALL_MASK|macro|QM_I2C_IC_TX_ABRT_SOURCE_ALL_MASK
 DECL|QM_I2C_IC_TX_ABRT_SOURCE_ARB_LOST|macro|QM_I2C_IC_TX_ABRT_SOURCE_ARB_LOST
@@ -295,28 +314,12 @@ DECL|QM_MBOX_CH_CTRL_MASK|macro|QM_MBOX_CH_CTRL_MASK
 DECL|QM_MBOX_CH_CTRL_SHIFT|macro|QM_MBOX_CH_CTRL_SHIFT
 DECL|QM_MBOX_CH_STS_CTRL_INT|macro|QM_MBOX_CH_STS_CTRL_INT
 DECL|QM_MBOX_CH_STS|macro|QM_MBOX_CH_STS
-DECL|QM_MBOX_DISABLE_LMT_INT_HALT_MASK|macro|QM_MBOX_DISABLE_LMT_INT_HALT_MASK
-DECL|QM_MBOX_DISABLE_LMT_INT_MASK|macro|QM_MBOX_DISABLE_LMT_INT_MASK
-DECL|QM_MBOX_DISABLE_SS_INT_HALT_MASK|macro|QM_MBOX_DISABLE_SS_INT_HALT_MASK
-DECL|QM_MBOX_DISABLE_SS_INT_MASK|macro|QM_MBOX_DISABLE_SS_INT_MASK
-DECL|QM_MBOX_ENABLE_LMT_INT_HALT_MASK|macro|QM_MBOX_ENABLE_LMT_INT_HALT_MASK
-DECL|QM_MBOX_ENABLE_LMT_INT_MASK|macro|QM_MBOX_ENABLE_LMT_INT_MASK
-DECL|QM_MBOX_ENABLE_SS_INT_HALT_MASK|macro|QM_MBOX_ENABLE_SS_INT_HALT_MASK
-DECL|QM_MBOX_ENABLE_SS_INT_MASK|macro|QM_MBOX_ENABLE_SS_INT_MASK
 DECL|QM_MBOX_HOST_HALT_MASK_MASK|macro|QM_MBOX_HOST_HALT_MASK_MASK
 DECL|QM_MBOX_HOST_HALT_MASK_OFFSET|macro|QM_MBOX_HOST_HALT_MASK_OFFSET
 DECL|QM_MBOX_HOST_MASK_MASK|macro|QM_MBOX_HOST_MASK_MASK
 DECL|QM_MBOX_HOST_MASK_OFFSET|macro|QM_MBOX_HOST_MASK_OFFSET
-DECL|QM_MBOX_LMT_INT_HALT_MASK|macro|QM_MBOX_LMT_INT_HALT_MASK
-DECL|QM_MBOX_LMT_INT_LOCK_HALT_MASK|macro|QM_MBOX_LMT_INT_LOCK_HALT_MASK
-DECL|QM_MBOX_LMT_INT_LOCK_MASK|macro|QM_MBOX_LMT_INT_LOCK_MASK
-DECL|QM_MBOX_LMT_INT_MASK|macro|QM_MBOX_LMT_INT_MASK
 DECL|QM_MBOX_SS_HALT_MASK_MASK|macro|QM_MBOX_SS_HALT_MASK_MASK
 DECL|QM_MBOX_SS_HALT_MASK_OFFSET|macro|QM_MBOX_SS_HALT_MASK_OFFSET
-DECL|QM_MBOX_SS_INT_HALT_MASK|macro|QM_MBOX_SS_INT_HALT_MASK
-DECL|QM_MBOX_SS_INT_LOCK_HALT_MASK|macro|QM_MBOX_SS_INT_LOCK_HALT_MASK
-DECL|QM_MBOX_SS_INT_LOCK_MASK|macro|QM_MBOX_SS_INT_LOCK_MASK
-DECL|QM_MBOX_SS_INT_MASK|macro|QM_MBOX_SS_INT_MASK
 DECL|QM_MBOX_SS_MASK_MASK|macro|QM_MBOX_SS_MASK_MASK
 DECL|QM_MBOX_SS_MASK_OFFSET|macro|QM_MBOX_SS_MASK_OFFSET
 DECL|QM_MBOX_STATUS_MASK|macro|QM_MBOX_STATUS_MASK
@@ -327,6 +330,7 @@ DECL|QM_MPR_3|enumerator|QM_MPR_3, /**< Memory Protection Region 3. */
 DECL|QM_MPR_BASE|macro|QM_MPR_BASE
 DECL|QM_MPR_EN_LOCK_MASK|macro|QM_MPR_EN_LOCK_MASK
 DECL|QM_MPR_EN_LOCK_OFFSET|macro|QM_MPR_EN_LOCK_OFFSET
+DECL|QM_MPR_GRANULARITY|macro|QM_MPR_GRANULARITY
 DECL|QM_MPR_NUM|enumerator|QM_MPR_NUM /**< Number of Memory Protection Regions. */
 DECL|QM_MPR_RD_EN_MASK|macro|QM_MPR_RD_EN_MASK
 DECL|QM_MPR_RD_EN_OFFSET|macro|QM_MPR_RD_EN_OFFSET
@@ -432,6 +436,7 @@ DECL|QM_SPI_CTRLR0_FRF_MASK|macro|QM_SPI_CTRLR0_FRF_MASK
 DECL|QM_SPI_CTRLR0_FRF_OFFSET|macro|QM_SPI_CTRLR0_FRF_OFFSET
 DECL|QM_SPI_CTRLR0_SCPOL_SCPH_MASK|macro|QM_SPI_CTRLR0_SCPOL_SCPH_MASK
 DECL|QM_SPI_CTRLR0_SCPOL_SCPH_OFFSET|macro|QM_SPI_CTRLR0_SCPOL_SCPH_OFFSET
+DECL|QM_SPI_CTRLR0_SLV_OE|macro|QM_SPI_CTRLR0_SLV_OE
 DECL|QM_SPI_CTRLR0_TMOD_MASK|macro|QM_SPI_CTRLR0_TMOD_MASK
 DECL|QM_SPI_CTRLR0_TMOD_OFFSET|macro|QM_SPI_CTRLR0_TMOD_OFFSET
 DECL|QM_SPI_DMACR_RDMAE|macro|QM_SPI_DMACR_RDMAE
@@ -448,15 +453,16 @@ DECL|QM_SPI_ISR_RXUIS|macro|QM_SPI_ISR_RXUIS
 DECL|QM_SPI_ISR_TXEIS|macro|QM_SPI_ISR_TXEIS
 DECL|QM_SPI_ISR_TXOIS|macro|QM_SPI_ISR_TXOIS
 DECL|QM_SPI_MST_0_BASE|macro|QM_SPI_MST_0_BASE
-DECL|QM_SPI_MST_0|enumerator|typedef enum { QM_SPI_MST_0 = 0, QM_SPI_MST_1, QM_SPI_NUM } qm_spi_t;
+DECL|QM_SPI_MST_0|enumerator|QM_SPI_MST_0 = 0,
 DECL|QM_SPI_MST_1_BASE|macro|QM_SPI_MST_1_BASE
-DECL|QM_SPI_MST_1|enumerator|typedef enum { QM_SPI_MST_0 = 0, QM_SPI_MST_1, QM_SPI_NUM } qm_spi_t;
-DECL|QM_SPI_NUM|enumerator|typedef enum { QM_SPI_MST_0 = 0, QM_SPI_MST_1, QM_SPI_NUM } qm_spi_t;
+DECL|QM_SPI_MST_1|enumerator|QM_SPI_MST_1,
+DECL|QM_SPI_NUM|enumerator|QM_SPI_NUM
 DECL|QM_SPI_RISR_RXFIR|macro|QM_SPI_RISR_RXFIR
 DECL|QM_SPI_RISR_RXOIR|macro|QM_SPI_RISR_RXOIR
 DECL|QM_SPI_RISR_RXUIR|macro|QM_SPI_RISR_RXUIR
 DECL|QM_SPI_RISR_TXEIR|macro|QM_SPI_RISR_TXEIR
 DECL|QM_SPI_RISR_TXOIR|macro|QM_SPI_RISR_TXOIR
+DECL|QM_SPI_SLV_0|enumerator|QM_SPI_SLV_0,
 DECL|QM_SPI_SLV_BASE|macro|QM_SPI_SLV_BASE
 DECL|QM_SPI_SR_BUSY|macro|QM_SPI_SR_BUSY
 DECL|QM_SPI_SR_RFF|macro|QM_SPI_SR_RFF
@@ -539,16 +545,20 @@ DECL|QM_USB_PLL_LOCK|macro|QM_USB_PLL_LOCK
 DECL|QM_USB_PLL_PDLD|macro|QM_USB_PLL_PDLD
 DECL|QM_USB|macro|QM_USB
 DECL|QM_USB|macro|QM_USB
+DECL|QM_WDT_0_BASE|macro|QM_WDT_0_BASE
 DECL|QM_WDT_0|enumerator|typedef enum { QM_WDT_0 = 0, QM_WDT_NUM } qm_wdt_t;
-DECL|QM_WDT_BASE|macro|QM_WDT_BASE
+DECL|QM_WDT_CLOCK_EN_MASK|macro|QM_WDT_CLOCK_EN_MASK
 DECL|QM_WDT_CR_RMOD_OFFSET|macro|QM_WDT_CR_RMOD_OFFSET
 DECL|QM_WDT_CR_RMOD|macro|QM_WDT_CR_RMOD
 DECL|QM_WDT_CR_WDT_ENABLE|macro|QM_WDT_CR_WDT_ENABLE
 DECL|QM_WDT_NUM|enumerator|typedef enum { QM_WDT_0 = 0, QM_WDT_NUM } qm_wdt_t;
+DECL|QM_WDT_RELOAD_VALUE|macro|QM_WDT_RELOAD_VALUE
 DECL|QM_WDT_TORR_TOP_MASK|macro|QM_WDT_TORR_TOP_MASK
 DECL|QM_WDT|macro|QM_WDT
 DECL|QM_WDT|macro|QM_WDT
 DECL|QUARK_SE|macro|QUARK_SE
+DECL|ROM_RD_DIS_L|macro|ROM_RD_DIS_L
+DECL|ROM_RD_DIS_U|macro|ROM_RD_DIS_U
 DECL|ROM_VERSION_ADDRESS|macro|ROM_VERSION_ADDRESS
 DECL|ROM_VERSION_ADDRESS|macro|ROM_VERSION_ADDRESS
 DECL|WR_ADDR_OFFSET|macro|WR_ADDR_OFFSET
@@ -744,7 +754,7 @@ DECL|ic_comp_type|member|QM_RW uint32_t ic_comp_type; /**< Component Type */
 DECL|ic_comp_version|member|QM_RW uint32_t ic_comp_version; /**< Component Version */
 DECL|ic_con|member|QM_RW uint32_t ic_con; /**< Control Register */
 DECL|ic_data_cmd|member|QM_RW uint32_t ic_data_cmd; /**< Data Buffer and Command */
-DECL|ic_dma_cr|member|QM_RW uint32_t ic_dma_cr; /**< SDA Setup */
+DECL|ic_dma_cr|member|QM_RW uint32_t ic_dma_cr; /**< DMA Control Register for Tx and Rx
 DECL|ic_dma_rdlr|member|QM_RW uint32_t ic_dma_rdlr; /**< I2C Receive Data Level Register */
 DECL|ic_dma_tdlr|member|QM_RW uint32_t ic_dma_tdlr; /**< DMA Transmit Data Level Register */
 DECL|ic_enable_status|member|QM_RW uint32_t ic_enable_status; /**< Enable Status */
@@ -865,6 +875,7 @@ DECL|pmux_sel|member|QM_RW uint32_t pmux_sel[5]; /**< Pin Mux Select */
 DECL|pmux_slew_lock|member|QM_RW uint32_t pmux_slew_lock; /**< Pin Mux Slew Rate Lock */
 DECL|pmux_slew|member|QM_RW uint32_t pmux_slew[4]; /**< Pin Mux Slew Rate */
 DECL|ppr|member|QM_RW apic_reg_pad_t ppr; /**< Processor priority */
+DECL|qm_aonc_context_t|macro|qm_aonc_context_t
 DECL|qm_aonc_reg_t|typedef|} qm_aonc_reg_t;
 DECL|qm_aonc_t|typedef|typedef enum { QM_AONC_0 = 0, QM_AONC_NUM } qm_aonc_t;
 DECL|qm_dma_chan_reg_t|typedef|} qm_dma_chan_reg_t;
@@ -900,6 +911,7 @@ DECL|qm_pwm_context_t|typedef|} qm_pwm_context_t;
 DECL|qm_pwm_id_t|typedef|} qm_pwm_id_t;
 DECL|qm_pwm_reg_t|typedef|} qm_pwm_reg_t;
 DECL|qm_pwm_t|typedef|typedef enum { QM_PWM_0 = 0, QM_PWM_NUM } qm_pwm_t;
+DECL|qm_rtc_context_t|macro|qm_rtc_context_t
 DECL|qm_rtc_reg_t|typedef|} qm_rtc_reg_t;
 DECL|qm_rtc_t|typedef|typedef enum { QM_RTC_0 = 0, QM_RTC_NUM } qm_rtc_t;
 DECL|qm_scss_ccu_reg_t|typedef|} qm_scss_ccu_reg_t;
@@ -913,7 +925,7 @@ DECL|qm_scss_pmux_reg_t|typedef|} qm_scss_pmux_reg_t;
 DECL|qm_scss_ss_reg_t|typedef|} qm_scss_ss_reg_t;
 DECL|qm_spi_context_t|typedef|} qm_spi_context_t;
 DECL|qm_spi_reg_t|typedef|} qm_spi_reg_t;
-DECL|qm_spi_t|typedef|typedef enum { QM_SPI_MST_0 = 0, QM_SPI_MST_1, QM_SPI_NUM } qm_spi_t;
+DECL|qm_spi_t|typedef|} qm_spi_t;
 DECL|qm_uart_context_t|typedef|} qm_uart_context_t;
 DECL|qm_uart_reg_t|typedef|} qm_uart_reg_t;
 DECL|qm_uart_t|typedef|typedef enum { QM_UART_0 = 0, QM_UART_1, QM_UART_NUM } qm_uart_t;
@@ -995,6 +1007,7 @@ DECL|rtc_eoi|member|QM_RW uint32_t rtc_eoi; /**< End of Interrupt Register */
 DECL|rtc_rstat|member|QM_RW uint32_t rtc_rstat; /**< Interrupt Raw Status Register */
 DECL|rtc_stat|member|QM_RW uint32_t rtc_stat; /**< Interrupt Status Register */
 DECL|rx_sample_dly|member|QM_RW uint32_t rx_sample_dly; /**< RX Sample Delay Register */
+DECL|rx_tl|member|uint32_t rx_tl; /** Receive FIFO threshold register. */
 DECL|rxflr|member|QM_RW uint32_t rxflr; /**< Receive FIFO Level Register */
 DECL|rxftlr|member|QM_RW uint32_t rxftlr; /**< Receive FIFO Threshold Level */
 DECL|rxoicr|member|QM_RW uint32_t rxoicr; /**< Rx FIFO Overflow Interrupt Clear Register */
@@ -1033,6 +1046,7 @@ DECL|status_src_trans_low|member|QM_RW uint32_t status_src_trans_low; /**< Statu
 DECL|status_tfr_high|member|QM_RW uint32_t status_tfr_high; /**< StatusTfr */
 DECL|status_tfr_low|member|QM_RW uint32_t status_tfr_low; /**< StatusTfr */
 DECL|svr|member|QM_RW apic_reg_pad_t svr; /**< Spurious vector */
+DECL|test_aonc_instance|variable|test_aonc_instance
 DECL|test_aonc|variable|test_aonc
 DECL|test_dma_instance|variable|test_dma_instance
 DECL|test_dma|variable|test_dma
@@ -1049,8 +1063,10 @@ DECL|test_lapic|variable|test_lapic
 DECL|test_low|member|QM_RW uint32_t test_low; /**< DmaTestReg */
 DECL|test_mailbox|variable|test_mailbox
 DECL|test_mpr|variable|test_mpr
-DECL|test_pwm_t|variable|test_pwm_t
+DECL|test_pwm_instance|variable|test_pwm_instance
+DECL|test_pwm|variable|test_pwm
 DECL|test_rom_version|variable|test_rom_version
+DECL|test_rtc_instance|variable|test_rtc_instance
 DECL|test_rtc|variable|test_rtc
 DECL|test_scss_ccu|variable|test_scss_ccu
 DECL|test_scss_cmp|variable|test_scss_cmp
@@ -1067,6 +1083,7 @@ DECL|test_uart_instance|variable|test_uart_instance
 DECL|test_uart|variable|test_uart
 DECL|test_usb_pll|variable|test_usb_pll
 DECL|test_usb|variable|test_usb
+DECL|test_wdt_instance|variable|test_wdt_instance
 DECL|test_wdt|variable|test_wdt
 DECL|timer_ccr|member|QM_RW apic_reg_pad_t timer_ccr; /**< Timer current count */
 DECL|timer_dcr|member|QM_RW apic_reg_pad_t timer_dcr; /**< Timer divide configuration */
@@ -1083,6 +1100,7 @@ DECL|tmg_ctrl|member|QM_RW uint32_t tmg_ctrl; /**< TMG_CTRL. */
 DECL|tmg_ctrl|member|uint32_t tmg_ctrl;
 DECL|tmr|member|QM_RW apic_reg_pad_t tmr[8]; /**< Trigger mode */
 DECL|tpr|member|QM_RW apic_reg_pad_t tpr; /**< Task priority*/
+DECL|tx_tl|member|uint32_t tx_tl; /** Transmit FIFO threshold register. */
 DECL|txflr|member|QM_RW uint32_t txflr; /**< Transmit FIFO Level Register */
 DECL|txftlr|member|QM_RW uint32_t txftlr; /**< Transmit FIFO Threshold Level */
 DECL|txoicr|member|QM_RW uint32_t txoicr; /**< Tx FIFO Overflow Interrupt Clear Register*/

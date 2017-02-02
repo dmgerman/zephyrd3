@@ -10,4 +10,4 @@ DECL|qm_flash_disable_t|typedef|} qm_flash_disable_t;
 DECL|qm_flash_region_t|typedef|} qm_flash_region_t;
 DECL|us_count|member|uint8_t us_count;
 DECL|wait_states|member|uint8_t wait_states; /**< Read wait state. */
-DECL|write_disable|member|qm_flash_disable_t write_disable; /**< Write disable. */
+DECL|write_disable|member|qm_flash_disable_t write_disable;

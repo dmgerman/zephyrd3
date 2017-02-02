@@ -33,7 +33,7 @@ DECL|dma_set_transfer_direction|function|dma_set_transfer_direction(const qm_dma
 DECL|dma_set_transfer_type|function|dma_set_transfer_type(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const qm_dma_transfer_type_t transfer_type, const qm_dma_channel_direction_t channel_direction)
 DECL|get_transfer_length|function|get_transfer_length(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, const dma_cfg_prv_t *prv_cfg)
 DECL|lli_tail|member|qm_dma_linked_list_item_t *lli_tail;
+DECL|num_blocks_int_pending|member|uint16_t num_blocks_int_pending;
 DECL|num_blocks_per_buffer|member|uint16_t num_blocks_per_buffer;
-DECL|num_blocks_remaining|member|uint16_t num_blocks_remaining;
 DECL|qm_dma_address_increment_t|typedef|} qm_dma_address_increment_t;
 DECL|transfer_type_ll_circular|member|bool transfer_type_ll_circular;

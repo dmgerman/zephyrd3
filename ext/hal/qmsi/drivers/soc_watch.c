@@ -10,6 +10,8 @@ DECL|SOC_WATCH_EVENT_BUFFER_SIZE|macro|SOC_WATCH_EVENT_BUFFER_SIZE
 DECL|SOC_WATCH_TRACE|macro|SOC_WATCH_TRACE
 DECL|SOC_WATCH_TRACE|macro|SOC_WATCH_TRACE
 DECL|SW_EB_HIGH_WATER|macro|SW_EB_HIGH_WATER
+DECL|SW_OSC0_CFG1|macro|SW_OSC0_CFG1
+DECL|SW_SYS_CLK_CTL|macro|SW_SYS_CLK_CTL
 DECL|X86_FLAGS_IF|macro|X86_FLAGS_IF
 DECL|eb_idx|member|uint8_t eb_idx; /* Index of next byte to be written */
 DECL|eb_size|member|uint8_t eb_size; /* Buffer size == SOC_WATCH_EVENT_BUFFER_SIZE */
@@ -17,6 +19,8 @@ DECL|eb_write_char|function|static void eb_write_char(uint8_t data)
 DECL|eb_write_uint32|function|static void eb_write_uint32(uint32_t *data)
 DECL|ev_strs|variable|ev_strs
 DECL|event_data|member|uint8_t event_data[SOC_WATCH_EVENT_BUFFER_SIZE - 2]; /* Event data -
+DECL|get_ticks|macro|get_ticks
+DECL|get_ticks|macro|get_ticks
 DECL|mlog_byte|function|void mlog_byte(uint8_t byte)
 DECL|mlog_events|variable|mlog_events
 DECL|mlog_idx|variable|mlog_idx
@@ -28,7 +32,10 @@ DECL|soc_watch_event_buffer_flush|function|static void soc_watch_event_buffer_fl
 DECL|soc_watch_event_buffer|variable|soc_watch_event_buffer
 DECL|soc_watch_flush_flag|variable|soc_watch_flush_flag
 DECL|soc_watch_irq_lock|function|static inline unsigned int soc_watch_irq_lock(void)
+DECL|soc_watch_irq_lock|function|static inline unsigned int soc_watch_irq_lock(void)
+DECL|soc_watch_irq_unlock|function|static inline void soc_watch_irq_unlock(unsigned int key)
 DECL|soc_watch_irq_unlock|function|static inline void soc_watch_irq_unlock(unsigned int key)
 DECL|soc_watch_log_app_event|function|void soc_watch_log_app_event(soc_watch_event_t event_id, uint8_t ev_subtype, uintptr_t ev_data)
 DECL|soc_watch_log_event|function|void soc_watch_log_event(soc_watch_event_t event_id, uintptr_t ev_data)
+DECL|soc_watch_trigger_flush|function|void soc_watch_trigger_flush()
 DECL|sw_profiling_event_buffer|struct|struct sw_profiling_event_buffer {

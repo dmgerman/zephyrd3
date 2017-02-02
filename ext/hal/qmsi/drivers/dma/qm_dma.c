@@ -15,6 +15,8 @@ DECL|qm_dma_isr_err_handler|function|static void qm_dma_isr_err_handler(const qm
 DECL|qm_dma_isr_handler|function|static void qm_dma_isr_handler(const qm_dma_t dma, const qm_dma_channel_id_t channel_id)
 DECL|qm_dma_multi_transfer_set_config|function|int qm_dma_multi_transfer_set_config( const qm_dma_t dma, const qm_dma_channel_id_t channel_id, qm_dma_multi_transfer_t *const multi_transfer_config)
 DECL|qm_dma_restore_context|function|int qm_dma_restore_context(const qm_dma_t dma, const qm_dma_context_t *const ctx)
+DECL|qm_dma_restore_context|function|int qm_dma_restore_context(const qm_dma_t dma, const qm_dma_context_t *const ctx)
+DECL|qm_dma_save_context|function|int qm_dma_save_context(const qm_dma_t dma, qm_dma_context_t *const ctx)
 DECL|qm_dma_save_context|function|int qm_dma_save_context(const qm_dma_t dma, qm_dma_context_t *const ctx)
 DECL|qm_dma_transfer_mem_to_mem|function|int qm_dma_transfer_mem_to_mem(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, qm_dma_transfer_t *const transfer_config)
 DECL|qm_dma_transfer_set_config|function|int qm_dma_transfer_set_config(const qm_dma_t dma, const qm_dma_channel_id_t channel_id, qm_dma_transfer_t *const transfer_config)

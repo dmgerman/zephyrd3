@@ -1,6 +1,5 @@
-DECL|INTERRUPT_ROUTER_LMT_INT_MASK_BASE|macro|INTERRUPT_ROUTER_LMT_INT_MASK_BASE
 DECL|X86_FLAGS_IF|macro|X86_FLAGS_IF
-DECL|_qm_irq_setup|function|void _qm_irq_setup(uint32_t irq, uint16_t register_offset)
+DECL|_qm_irq_setup|function|void _qm_irq_setup(uint32_t irq)
 DECL|_qm_register_isr|function|void _qm_register_isr(uint32_t vector, qm_isr_t isr)
 DECL|qm_irq_disable|function|void qm_irq_disable(void)
 DECL|qm_irq_enable|function|void qm_irq_enable(void)
@@ -9,6 +8,8 @@ DECL|qm_irq_lock|function|unsigned int qm_irq_lock(void)
 DECL|qm_irq_mask|function|void qm_irq_mask(uint32_t irq)
 DECL|qm_irq_restore_context|function|int qm_irq_restore_context(const qm_irq_context_t *const ctx)
 DECL|qm_irq_restore_context|function|int qm_irq_restore_context(const qm_irq_context_t *const ctx)
+DECL|qm_irq_restore_context|function|int qm_irq_restore_context(const qm_irq_context_t *const ctx)
+DECL|qm_irq_save_context|function|int qm_irq_save_context(qm_irq_context_t *const ctx)
 DECL|qm_irq_save_context|function|int qm_irq_save_context(qm_irq_context_t *const ctx)
 DECL|qm_irq_save_context|function|int qm_irq_save_context(qm_irq_context_t *const ctx)
 DECL|qm_irq_unlock|function|void qm_irq_unlock(unsigned int key)

@@ -1,0 +1,3 @@
+DECL|INTERRUPT_ROUTER_LMT_INT_MASK_BASE|macro|INTERRUPT_ROUTER_LMT_INT_MASK_BASE
+DECL|_qm_ir_mask_int|function|void _qm_ir_mask_int(uint32_t irq, uint32_t register_offset)
+DECL|_qm_ir_unmask_int|function|void _qm_ir_unmask_int(uint32_t irq, uint32_t register_offset)
