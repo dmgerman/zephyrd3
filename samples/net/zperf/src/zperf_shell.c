@@ -15,6 +15,8 @@ DECL|in6_addr_my|variable|in6_addr_my
 DECL|ipv4|variable|ipv4
 DECL|ipv6|variable|ipv6
 DECL|main|function|void main(void)
+DECL|parse_ipv4_addr|function|static int parse_ipv4_addr(char *host, char *port, struct sockaddr_in *addr, const char *str)
+DECL|parse_ipv6_addr|function|static int parse_ipv6_addr(char *host, char *port, struct sockaddr_in6 *addr, const char *str)
 DECL|setup_contexts|function|static int setup_contexts(struct net_context **context6, struct net_context **context4, sa_family_t family, struct sockaddr_in6 *ipv6, struct sockaddr_in *ipv4,
 DECL|shell_cmd_connectap|function|static int shell_cmd_connectap(int argc, char *argv[])
 DECL|shell_cmd_setip|function|static int shell_cmd_setip(int argc, char *argv[])
