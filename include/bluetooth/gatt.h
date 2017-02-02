@@ -36,6 +36,7 @@ DECL|BT_GATT_PERM_WRITE|enumerator|BT_GATT_PERM_WRITE = BIT(1),
 DECL|BT_GATT_PRIMARY_SERVICE|macro|BT_GATT_PRIMARY_SERVICE
 DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
+DECL|BT_GATT_SUBSCRIBE_FLAG_VOLATILE|enumerator|BT_GATT_SUBSCRIBE_FLAG_VOLATILE = BIT(0),
 DECL|BT_GATT_WRITE_FLAG_PREPARE|enumerator|BT_GATT_WRITE_FLAG_PREPARE = BIT(0),
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|__packed|variable|__packed
@@ -85,6 +86,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|exponent|member|int8_t exponent;
 DECL|flags|member|uint16_t flags;
+DECL|flags|member|uint8_t flags;
 DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;

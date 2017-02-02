@@ -75,7 +75,7 @@ DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_co
 DECL|start_handle|member|uint16_t start_handle;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|uint16_t type;
-DECL|update_subscriptions|function|static void update_subscriptions(struct bt_conn *conn)
+DECL|update_subscription|function|static void update_subscription(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid|member|uint8_t uuid[16];
