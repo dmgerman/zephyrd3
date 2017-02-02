@@ -36,6 +36,8 @@ DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(cons
 DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
 DECL|bt_conn_lookup_state_le|function|struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,const bt_conn_state_t state)
 DECL|bt_conn_pin_code_req|function|void bt_conn_pin_code_req(struct bt_conn *conn)
+DECL|bt_conn_prepare_events|function|int bt_conn_prepare_events(struct k_poll_event events[])
+DECL|bt_conn_process_tx|function|void bt_conn_process_tx(struct bt_conn *conn)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct net_buf *buf, uint8_t flags)
 DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
@@ -55,7 +57,6 @@ DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
 DECL|conn_change|variable|conn_change
 DECL|conn_mtu|function|static inline uint16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
-DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void *p3)
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
@@ -66,9 +67,6 @@ DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_con
 DECL|pairing_method|enum|enum pairing_method {
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, uint8_t len)
-DECL|prepare_events|function|static int prepare_events(struct k_poll_event events[])
-DECL|process_events|function|static void process_events(struct k_poll_event *ev, int count)
-DECL|process_fifo|function|static void process_fifo(struct k_fifo *fifo)
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
 DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, uint8_t flags, bool always_consume)
 DECL|ssp_confirm_neg_reply|function|static int ssp_confirm_neg_reply(struct bt_conn *conn)
