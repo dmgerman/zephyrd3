@@ -1,5 +1,3 @@
-DECL|MAX_ADDRESSES|macro|MAX_ADDRESSES
-DECL|RC_STR|macro|RC_STR
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|addresses|variable|addresses
 DECL|addresses|variable|addresses
