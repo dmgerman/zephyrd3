@@ -1,3 +1,3 @@
-DECL|_Restrict_defined|macro|_Restrict_defined
-DECL|_Restrict|macro|_Restrict
-DECL|_Restrict|macro|_Restrict
+DECL|_MLIBC_RESTRICT_defined|macro|_MLIBC_RESTRICT_defined
+DECL|_MLIBC_RESTRICT|macro|_MLIBC_RESTRICT
+DECL|_MLIBC_RESTRICT|macro|_MLIBC_RESTRICT
