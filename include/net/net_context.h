@@ -38,6 +38,7 @@ DECL|net_context|struct|struct net_context {
 DECL|net_tcp_accept_cb_t|typedef|typedef void (*net_tcp_accept_cb_t)(struct net_context *new_context,
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_data_wait|member|struct k_sem recv_data_wait;
+DECL|refcount|member|atomic_t refcount;
 DECL|remote|member|struct sockaddr remote;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
 DECL|tcp|member|struct net_tcp *tcp;

@@ -6,6 +6,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|buf_copy|variable|buf_copy
 DECL|buf_orig|variable|buf_orig
+DECL|calc_fragments|function|static int calc_fragments(struct net_buf *buf)
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
 DECL|code|member|uint8_t code;
@@ -28,6 +29,7 @@ DECL|src_port|member|uint16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|tcflow|member|uint8_t tcflow;
 DECL|test_data|variable|test_data
+DECL|test_fragment_compact|function|static int test_fragment_compact(void)
 DECL|test_fragment_copy|function|static int test_fragment_copy(void)
 DECL|test_fragment_pull|function|static int test_fragment_pull(void)
 DECL|test_fragment_push|function|static int test_fragment_push(void)

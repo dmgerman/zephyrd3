@@ -83,6 +83,7 @@ DECL|tkl|member|uint8_t tkl;
 DECL|token|member|uint8_t token[8];
 DECL|token|member|uint8_t token[8];
 DECL|total_size|member|size_t total_size;
+DECL|total_size|member|uint16_t total_size;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|value|member|uint8_t *value;

@@ -73,3 +73,4 @@ DECL|ra_input_handler|variable|ra_input_handler
 DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
+DECL|update_ll_reserve|function|static struct net_buf *update_ll_reserve(struct net_buf *buf, struct in6_addr *addr)
