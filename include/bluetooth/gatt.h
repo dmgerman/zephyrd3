@@ -43,7 +43,6 @@ DECL|__single|struct|struct __single {
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
 DECL|_included|member|} _included;
 DECL|_next|member|struct bt_gatt_attr *_next;
-DECL|_next|member|struct bt_gatt_subscribe_params *_next;
 DECL|_peer|member|bt_addr_le_t _peer;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
@@ -100,6 +99,7 @@ DECL|handle|member|uint16_t handle;
 DECL|length|member|uint16_t length;
 DECL|len|member|uint16_t len;
 DECL|name_space|member|uint8_t name_space;
+DECL|node|member|sys_snode_t node;
 DECL|notify|member|bt_gatt_notify_func_t notify;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;
