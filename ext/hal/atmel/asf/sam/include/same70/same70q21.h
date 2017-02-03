@@ -19,8 +19,6 @@ DECL|AFEC_INST_NUM|macro|AFEC_INST_NUM
 DECL|AXIMX_ADDR|macro|AXIMX_ADDR
 DECL|AXIMX_SIZE|macro|AXIMX_SIZE
 DECL|BusFault_IRQn|enumerator|BusFault_IRQn = -11, /**< 5 Cortex-M7 Bus Fault Interrupt */
-DECL|CAST|macro|CAST
-DECL|CAST|macro|CAST
 DECL|CHIPID_INSTS|macro|CHIPID_INSTS
 DECL|CHIPID_INST_NUM|macro|CHIPID_INST_NUM
 DECL|CHIPID|macro|CHIPID
@@ -231,8 +229,6 @@ DECL|QSPI_INST_NUM|macro|QSPI_INST_NUM
 DECL|QSPI_IRQn|enumerator|QSPI_IRQn = 43 , /**< 43 SAME70Q21 Quad Serial Peripheral Interface (QSPI) */
 DECL|QSPI|macro|QSPI
 DECL|QSPI|macro|QSPI
-DECL|REG_ACCESS|macro|REG_ACCESS
-DECL|REG_ACCESS|macro|REG_ACCESS
 DECL|RSTC_INSTS|macro|RSTC_INSTS
 DECL|RSTC_INST_NUM|macro|RSTC_INST_NUM
 DECL|RSTC_IRQn|enumerator|RSTC_IRQn = 1 , /**< 1 SAME70Q21 Reset Controller (RSTC) */
@@ -385,13 +381,7 @@ DECL|XDMAC_IRQn|enumerator|XDMAC_IRQn = 58 , /**< 58 SAME70Q21 Extensible DMA Co
 DECL|XDMAC|macro|XDMAC
 DECL|XDMAC|macro|XDMAC
 DECL|_DeviceVectors|struct|typedef struct _DeviceVectors
-DECL|_L|macro|_L
-DECL|_L|macro|_L
 DECL|_SAME70Q21_H_|macro|_SAME70Q21_H_
-DECL|_UL|macro|_UL
-DECL|_UL|macro|_UL
-DECL|_U|macro|_U
-DECL|_U|macro|_U
 DECL|__CM7_REV|macro|__CM7_REV
 DECL|__DCACHE_PRESENT|macro|__DCACHE_PRESENT
 DECL|__DTCM_PRESENT|macro|__DTCM_PRESENT
