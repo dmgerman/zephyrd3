@@ -44,4 +44,3 @@ DECL|send_syn|function|static inline int send_syn(struct net_context *context, c
 DECL|sendto|function|static int sendto(struct net_buf *buf, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, int32_t timeout,
 DECL|set_appdata_values|function|static void set_appdata_values(struct net_buf *buf, enum net_ip_protocol proto, size_t total_len)
 DECL|tcp_hdr_len|function|static int tcp_hdr_len(struct net_buf *buf)
-DECL|update_ll_reserve|function|static inline struct net_buf *update_ll_reserve(struct net_buf *buf,struct in6_addr *addr)
