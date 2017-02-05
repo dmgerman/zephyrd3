@@ -1,6 +1,5 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|EXCEPTION_UARTA0|macro|EXCEPTION_UARTA0
 DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
 DECL|uart_cc32xx_dev_cfg_0|variable|uart_cc32xx_dev_cfg_0
 DECL|uart_cc32xx_dev_data_0|variable|uart_cc32xx_dev_data_0
