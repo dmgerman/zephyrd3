@@ -33,12 +33,12 @@ DECL|i2c_configure|function|static inline int i2c_configure(struct device *dev, 
 DECL|i2c_driver_api|struct|struct i2c_driver_api {
 DECL|i2c_master|member|char *i2c_master;
 DECL|i2c_msg|struct|struct i2c_msg {
-DECL|i2c_read|function|static inline int i2c_read(struct device *dev, uint8_t *buf, uint32_t len, uint16_t addr)
+DECL|i2c_read|function|static inline int i2c_read(struct device *dev, uint8_t *buf, uint32_t num_bytes, uint16_t addr)
 DECL|i2c_reg_read_byte|function|static inline int i2c_reg_read_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t *value)
 DECL|i2c_reg_update_byte|function|static inline int i2c_reg_update_byte(struct device *dev, uint8_t dev_addr, uint8_t reg_addr, uint8_t mask, uint8_t value)
 DECL|i2c_reg_write_byte|function|static inline int i2c_reg_write_byte(struct device *dev, uint16_t dev_addr, uint8_t reg_addr, uint8_t value)
 DECL|i2c_transfer|function|static inline int i2c_transfer(struct device *dev, struct i2c_msg *msgs, uint8_t num_msgs, uint16_t addr)
-DECL|i2c_write|function|static inline int i2c_write(struct device *dev, uint8_t *buf, uint32_t len, uint16_t addr)
+DECL|i2c_write|function|static inline int i2c_write(struct device *dev, uint8_t *buf, uint32_t num_bytes, uint16_t addr)
 DECL|is_master_device|member|uint32_t is_master_device : 1;
 DECL|is_slave_read|member|uint32_t is_slave_read : 1;
 DECL|len|member|uint32_t len;
