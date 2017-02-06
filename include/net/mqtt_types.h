@@ -19,7 +19,7 @@ DECL|MQTT_UNSUBACK|enumerator|MQTT_UNSUBACK,
 DECL|MQTT_UNSUBSCRIBE|enumerator|MQTT_UNSUBSCRIBE,
 DECL|_MQTT_TYPES_H_|macro|_MQTT_TYPES_H_
 DECL|clean_session|member|uint8_t clean_session:1;
-DECL|client_id_len|member|uint16_t client_id_len; /* only required for unpacking */
+DECL|client_id_len|member|uint16_t client_id_len;
 DECL|client_id|member|char *client_id;
 DECL|dup|member|uint8_t dup;
 DECL|keep_alive|member|uint16_t keep_alive;
@@ -37,7 +37,7 @@ DECL|qos|member|enum mqtt_qos qos;
 DECL|retain|member|uint8_t retain;
 DECL|topic_len|member|uint16_t topic_len;
 DECL|topic|member|char *topic;
-DECL|user_name_len|member|uint16_t user_name_len; /*only required for unpacking */
+DECL|user_name_len|member|uint16_t user_name_len;
 DECL|user_name|member|const char *user_name;
 DECL|will_flag|member|uint8_t will_flag:1;
 DECL|will_msg_len|member|uint16_t will_msg_len;
