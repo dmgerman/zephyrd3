@@ -112,6 +112,7 @@ DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
+DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
@@ -196,6 +197,10 @@ DECL|k_cycle_get_32|macro|k_cycle_get_32
 DECL|k_delayed_work_remaining_get|function|static inline s32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,s32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
+DECL|k_disable_sys_clock_always_on|function|static inline void k_disable_sys_clock_always_on(void)
+DECL|k_disable_sys_clock_always_on|macro|k_disable_sys_clock_always_on
+DECL|k_enable_sys_clock_always_on|function|static inline int k_enable_sys_clock_always_on(void)
+DECL|k_enable_sys_clock_always_on|macro|k_enable_sys_clock_always_on
 DECL|k_fifo_get|macro|k_fifo_get
 DECL|k_fifo_init|macro|k_fifo_init
 DECL|k_fifo_is_empty|macro|k_fifo_is_empty

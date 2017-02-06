@@ -12,3 +12,4 @@ DECL|USEC|macro|USEC
 DECL|_SYS_CLOCK__H_|macro|_SYS_CLOCK__H_
 DECL|sys_clock_hw_cycles_per_sec|macro|sys_clock_hw_cycles_per_sec
 DECL|sys_clock_ticks_per_sec|macro|sys_clock_ticks_per_sec
+DECL|sys_clock_ticks_per_sec|macro|sys_clock_ticks_per_sec
