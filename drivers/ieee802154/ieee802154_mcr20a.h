@@ -17,7 +17,7 @@ DECL|irqb_cb|member|struct gpio_callback irqb_cb;
 DECL|lqi|member|uint8_t lqi;
 DECL|mac_addr|member|uint8_t mac_addr[8];
 DECL|mcr20a_context|struct|struct mcr20a_context {
-DECL|mcr20a_rx_stack|member|char __stack mcr20a_rx_stack[CONFIG_NXP_MCR20A_RX_STACK_SIZE];
+DECL|mcr20a_rx_stack|member|char __stack mcr20a_rx_stack[CONFIG_IEEE802154_MCR20A_RX_STACK_SIZE];
 DECL|mcr20a_spi|struct|struct mcr20a_spi {
 DECL|reset_gpio|member|struct device *reset_gpio;
 DECL|seq_retval|member|atomic_t seq_retval;
