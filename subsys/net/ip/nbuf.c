@@ -70,7 +70,6 @@ DECL|net_nbuf_linear_copy|function|int net_nbuf_linear_copy(struct net_buf *dst,
 DECL|net_nbuf_print_frags|function|void net_nbuf_print_frags(struct net_buf *buf)
 DECL|net_nbuf_print|function|void net_nbuf_print(void)
 DECL|net_nbuf_pull|function|struct net_buf *net_nbuf_pull(struct net_buf *buf, size_t amount)
-DECL|net_nbuf_push|function|struct net_buf *net_nbuf_push(struct net_buf *parent, struct net_buf *buf, size_t amount, int32_t timeout)
 DECL|net_nbuf_read_be16|function|struct net_buf *net_nbuf_read_be16(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint16_t *value)
 DECL|net_nbuf_read_be32|function|struct net_buf *net_nbuf_read_be32(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint32_t *value)
 DECL|net_nbuf_read_byte|function|static inline struct net_buf *net_nbuf_read_byte(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint8_t *data)
