@@ -10,6 +10,7 @@ DECL|reentrancy_protection|variable|reentrancy_protection
 DECL|rtc_context|variable|rtc_context
 DECL|rtc_critical_region_end|function|static void rtc_critical_region_end(struct device *dev)
 DECL|rtc_critical_region_start|function|static void rtc_critical_region_start(struct device *dev)
+DECL|rtc_ctx|variable|rtc_ctx
 DECL|rtc_data|struct|struct rtc_data {
 DECL|rtc_qmsi_device_ctrl|function|static int rtc_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command,void *context)
 DECL|rtc_qmsi_disable|function|static void rtc_qmsi_disable(struct device *dev)
