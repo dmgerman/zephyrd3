@@ -11,6 +11,7 @@ DECL|aon_timer_qmsi_read|function|static uint32_t aon_timer_qmsi_read(struct dev
 DECL|aon_timer_qmsi_set_alarm|function|static int aon_timer_qmsi_set_alarm(struct device *dev, counter_callback_t callback, uint32_t count, void *user_data)
 DECL|aon_timer_qmsi_start|function|static int aon_timer_qmsi_start(struct device *dev)
 DECL|aon_timer_qmsi_stop|function|static int aon_timer_qmsi_stop(struct device *dev)
+DECL|aonc_ctx|variable|aonc_ctx
 DECL|aonpt_context|variable|aonpt_context
 DECL|aonpt_int_callback|function|static void aonpt_int_callback(void *user_data)
 DECL|aonpt_qmsi_device_ctrl|function|static int aonpt_qmsi_device_ctrl(struct device *dev, uint32_t ctrl_command, void *context)
