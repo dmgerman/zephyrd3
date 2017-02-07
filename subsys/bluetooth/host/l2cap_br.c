@@ -79,6 +79,6 @@ DECL|l2cap_br_lookup_chan|macro|l2cap_br_lookup_chan
 DECL|l2cap_br_recv|function|static void l2cap_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_br_remove_tx_cid|function|static struct bt_l2cap_br_chan *l2cap_br_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|l2cap_br_rtx_timeout|function|static void l2cap_br_rtx_timeout(struct k_work *work)
-DECL|l2cap_br_send_conn_rsp|function|static int l2cap_br_send_conn_rsp(struct bt_conn *conn, uint16_t scid, uint16_t dcid, uint8_t ident, uint16_t result)
+DECL|l2cap_br_send_conn_rsp|function|static void l2cap_br_send_conn_rsp(struct bt_conn *conn, uint16_t scid, uint16_t dcid, uint8_t ident, uint16_t result)
 DECL|l2cap_br_send_reject|function|static void l2cap_br_send_reject(struct bt_conn *conn, uint8_t ident, uint16_t reason, void *data, uint8_t data_len)
 DECL|l2cap_br_server_lookup_psm|function|static struct bt_l2cap_server *l2cap_br_server_lookup_psm(uint16_t psm)
