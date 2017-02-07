@@ -46,7 +46,7 @@ DECL|insert_data|function|static inline bool insert_data(struct net_buf *buf, st
 DECL|is_from_data_pool|function|static inline bool is_from_data_pool(struct net_buf *buf)
 DECL|net_nbuf_append_bytes|function|static inline bool net_nbuf_append_bytes(struct net_buf *buf, uint8_t *value, uint16_t len, int32_t timeout)
 DECL|net_nbuf_append|function|bool net_nbuf_append(struct net_buf *buf, uint16_t len, uint8_t *data, int32_t timeout)
-DECL|net_nbuf_compact|function|struct net_buf *net_nbuf_compact(struct net_buf *buf)
+DECL|net_nbuf_compact|function|bool net_nbuf_compact(struct net_buf *buf)
 DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *orig, size_t amount, size_t reserve, int32_t timeout)
 DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_data|function|struct net_buf *net_nbuf_get_data(struct net_context *context, int32_t timeout)
