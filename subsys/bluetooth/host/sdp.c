@@ -16,7 +16,7 @@ DECL|bt_sdp_attr_item|struct|struct bt_sdp_attr_item {
 DECL|bt_sdp_client_pool|variable|bt_sdp_client_pool
 DECL|bt_sdp_client|struct|struct bt_sdp_client {
 DECL|bt_sdp_connected|function|static void bt_sdp_connected(struct bt_l2cap_chan *chan)
-DECL|bt_sdp_create_pdu|function|struct net_buf *bt_sdp_create_pdu(void)
+DECL|bt_sdp_create_pdu|function|static struct net_buf *bt_sdp_create_pdu(void)
 DECL|bt_sdp_disconnected|function|static void bt_sdp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_sdp_discover|function|int bt_sdp_discover(struct bt_conn *conn, const struct bt_sdp_discover_params *params)
 DECL|bt_sdp_get_attr|function|static int bt_sdp_get_attr(const struct net_buf *buf, struct bt_sdp_attr_item *attr, uint16_t attr_id)
