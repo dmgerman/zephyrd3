@@ -6,6 +6,8 @@ DECL|net_hexdump_frags|function|static inline void net_hexdump_frags(const char 
 DECL|net_hexdump_frags|macro|net_hexdump_frags
 DECL|net_hexdump|function|static inline void net_hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|net_hexdump|macro|net_hexdump
+DECL|net_print_frags|function|static inline void net_print_frags(const char *str, struct net_buf *buf)
+DECL|net_print_frags|macro|net_print_frags
 DECL|net_sprint_ip_addr|function|static inline char *net_sprint_ip_addr(const struct net_addr *addr)
 DECL|net_sprint_ip_addr|function|static inline char *net_sprint_ip_addr(const struct net_addr *addr)
 DECL|net_sprint_ipv4_addr|function|static inline char *net_sprint_ipv4_addr(const struct in_addr *addr)

@@ -12,7 +12,6 @@ DECL|chksum|member|uint16_t chksum;
 DECL|code|member|uint8_t code;
 DECL|dst_port|member|uint16_t dst_port;
 DECL|dst|member|struct in6_addr dst;
-DECL|empty_data|variable|empty_data
 DECL|example_data|variable|example_data
 DECL|flow|member|uint16_t flow;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
@@ -32,7 +31,6 @@ DECL|test_data|variable|test_data
 DECL|test_fragment_compact|function|static int test_fragment_compact(void)
 DECL|test_fragment_copy|function|static int test_fragment_copy(void)
 DECL|test_fragment_pull|function|static int test_fragment_pull(void)
-DECL|test_fragment_push|function|static int test_fragment_push(void)
 DECL|test_ipv6_multi_frags|function|static int test_ipv6_multi_frags(void)
 DECL|test_nbuf_read_append|function|static int test_nbuf_read_append(void)
 DECL|test_nbuf_read_write_insert|function|static int test_nbuf_read_write_insert(void)
