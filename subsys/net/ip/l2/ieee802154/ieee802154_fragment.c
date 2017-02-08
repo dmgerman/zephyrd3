@@ -7,7 +7,7 @@ DECL|buf|member|struct net_buf *buf; /* Reassemble buffer */
 DECL|cache|variable|cache
 DECL|calc_max_payload|function|static inline uint8_t calc_max_payload(struct net_buf *buf, struct net_buf *frag, uint8_t offset)
 DECL|clear_reass_cache|function|static inline void clear_reass_cache(uint16_t size, uint16_t tag)
-DECL|compact_frag|function|static inline uint8_t compact_frag(struct net_buf *frag, uint8_t moved)
+DECL|compact_frag|function|static inline void compact_frag(struct net_buf *frag, uint8_t moved)
 DECL|copy_frag|function|static inline bool copy_frag(struct net_buf *buf, struct net_buf *frag, uint16_t offset)
 DECL|datagram_tag|variable|datagram_tag
 DECL|frag_cache|struct|struct frag_cache {
@@ -16,7 +16,8 @@ DECL|get_datagram_tag|function|static inline uint16_t get_datagram_tag(uint8_t *
 DECL|get_reass_cache|function|static inline struct frag_cache *get_reass_cache(uint16_t size, uint16_t tag)
 DECL|ieee802154_fragment|function|bool ieee802154_fragment(struct net_buf *buf, int hdr_diff)
 DECL|ieee802154_reassemble|function|enum net_verdict ieee802154_reassemble(struct net_buf *buf)
-DECL|move_frag_data|function|static inline uint8_t move_frag_data(struct net_buf *frag, struct net_buf *next, uint8_t max, uint8_t moved, uint8_t offset, int hdr_diff)
+DECL|move_frag_data|function|static inline uint8_t move_frag_data(struct net_buf *frag, struct net_buf *next, uint8_t max, bool first, int hdr_diff,
+DECL|prepare_new_fragment|function|static inline struct net_buf *prepare_new_fragment(struct net_buf *buf, uint8_t offset)
 DECL|reass_timeout|function|static void reass_timeout(struct k_work *work)
 DECL|remove_frag_header|function|static inline void remove_frag_header(struct net_buf *frag, uint8_t hdr_len)
 DECL|set_datagram_size|function|static inline void set_datagram_size(uint8_t *ptr, uint16_t size)
