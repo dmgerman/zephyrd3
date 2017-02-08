@@ -3,6 +3,8 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|CONN_UPDATE_TIMEOUT|macro|CONN_UPDATE_TIMEOUT
 DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
+DECL|EV_COUNT|macro|EV_COUNT
+DECL|EV_COUNT|macro|EV_COUNT
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
@@ -22,6 +24,7 @@ DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
+DECL|bt_buf_get_cmd_complete|function|struct net_buf *bt_buf_get_cmd_complete(int32_t timeout)
 DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
@@ -73,7 +76,6 @@ DECL|hci_acl|function|static void hci_acl(struct net_buf *buf)
 DECL|hci_cmd_complete|function|static void hci_cmd_complete(struct net_buf *buf)
 DECL|hci_cmd_done|function|static void hci_cmd_done(uint16_t opcode, uint8_t status, struct net_buf *buf)
 DECL|hci_cmd_status|function|static void hci_cmd_status(struct net_buf *buf)
-DECL|hci_cmd_tx_thread|function|static void hci_cmd_tx_thread(void)
 DECL|hci_disconn_complete|function|static void hci_disconn_complete(struct net_buf *buf)
 DECL|hci_encrypt_change|function|static void hci_encrypt_change(struct net_buf *buf)
 DECL|hci_encrypt_key_refresh_complete|function|static void hci_encrypt_key_refresh_complete(struct net_buf *buf)
@@ -85,6 +87,7 @@ DECL|hci_le_read_remote_features|function|static int hci_le_read_remote_features
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct net_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_thread|function|static void hci_rx_thread(void)
+DECL|hci_tx_thread|function|static void hci_tx_thread(void *p1, void *p2, void *p3)
 DECL|init_work|function|static void init_work(struct k_work *work)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
 DECL|inquiry_result_with_rssi|function|static void inquiry_result_with_rssi(struct net_buf *buf)
@@ -117,6 +120,7 @@ DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
 DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
 DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
 DECL|prng|variable|prng
+DECL|process_events|function|static void process_events(struct k_poll_event *ev, int count)
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pub_key_cb|variable|pub_key_cb
 DECL|pub_key|variable|pub_key
@@ -140,6 +144,7 @@ DECL|resolving|member|uint8_t resolving;
 DECL|role_change|function|static void role_change(struct net_buf *buf)
 DECL|rpa_timeout|function|static void rpa_timeout(struct k_work *work)
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
+DECL|send_cmd|function|static void send_cmd(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
 DECL|set_ad|function|static int set_ad(uint16_t hci_op, const struct bt_data *ad, size_t ad_len)
 DECL|set_event_mask|function|static int set_event_mask(void)
@@ -149,7 +154,8 @@ DECL|show_dev_info|function|static inline void show_dev_info(void)
 DECL|show_dev_info|function|static void show_dev_info(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
-DECL|sync|member|void *sync;
+DECL|status|member|uint8_t status;
+DECL|sync|member|struct k_sem *sync;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;
 DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)

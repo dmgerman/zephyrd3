@@ -7,6 +7,7 @@ DECL|HELP_ADDR_LE|macro|HELP_ADDR_LE
 DECL|HELP_NONE|macro|HELP_NONE
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|MY_SHELL_MODULE|macro|MY_SHELL_MODULE
+DECL|SDP_CLIENT_USER_BUF_LEN|macro|SDP_CLIENT_USER_BUF_LEN
 DECL|ad_discov|variable|ad_discov
 DECL|appearance_value|variable|appearance_value
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
@@ -40,6 +41,7 @@ DECL|cmd_bredr_discovery|function|static int cmd_bredr_discovery(int argc, char 
 DECL|cmd_bredr_l2cap_register|function|static int cmd_bredr_l2cap_register(int argc, char *argv[])
 DECL|cmd_bredr_oob|function|static int cmd_bredr_oob(int argc, char *argv[])
 DECL|cmd_bredr_rfcomm_register|function|static int cmd_bredr_rfcomm_register(int argc, char *argv[])
+DECL|cmd_bredr_sdp_find_record|function|static int cmd_bredr_sdp_find_record(int argc, char *argv[])
 DECL|cmd_clear|function|static int cmd_clear(int argc, char *argv[])
 DECL|cmd_connect_bredr|function|static int cmd_connect_bredr(int argc, char *argv[])
 DECL|cmd_connect_le|function|static int cmd_connect_le(int argc, char *argv[])
@@ -76,8 +78,11 @@ DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t evtype, struct net_buf_simple *buf)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
+DECL|discov_a2src|variable|discov_a2src
+DECL|discov_hfpag|variable|discov_hfpag
 DECL|discover_func|function|static uint8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
+DECL|discov|variable|discov
 DECL|exchange_func|function|static void exchange_func(struct bt_conn *conn, uint8_t err, struct bt_gatt_exchange_params *params)
 DECL|exchange_params|variable|exchange_params
 DECL|hrs_simulate|variable|hrs_simulate
@@ -112,6 +117,8 @@ DECL|rfcomm_bredr_ops|variable|rfcomm_bredr_ops
 DECL|rfcomm_bredr_recv|function|static void rfcomm_bredr_recv(struct bt_rfcomm_dlc *dlci, struct net_buf *buf)
 DECL|rfcomm_dlc|variable|rfcomm_dlc
 DECL|rfcomm_server|variable|rfcomm_server
+DECL|sdp_a2src_user|function|static uint8_t sdp_a2src_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
+DECL|sdp_hfp_ag_user|function|static uint8_t sdp_hfp_ag_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server

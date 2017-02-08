@@ -36,6 +36,7 @@ DECL|BT_GATT_PERM_WRITE|enumerator|BT_GATT_PERM_WRITE = BIT(1),
 DECL|BT_GATT_PRIMARY_SERVICE|macro|BT_GATT_PRIMARY_SERVICE
 DECL|BT_GATT_SECONDARY_SERVICE|macro|BT_GATT_SECONDARY_SERVICE
 DECL|BT_GATT_SERVICE|macro|BT_GATT_SERVICE
+DECL|BT_GATT_SUBSCRIBE_FLAG_VOLATILE|enumerator|BT_GATT_SUBSCRIBE_FLAG_VOLATILE = BIT(0),
 DECL|BT_GATT_WRITE_FLAG_PREPARE|enumerator|BT_GATT_WRITE_FLAG_PREPARE = BIT(0),
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|__packed|variable|__packed
@@ -43,7 +44,6 @@ DECL|__single|struct|struct __single {
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
 DECL|_included|member|} _included;
 DECL|_next|member|struct bt_gatt_attr *_next;
-DECL|_next|member|struct bt_gatt_subscribe_params *_next;
 DECL|_peer|member|bt_addr_le_t _peer;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
@@ -86,6 +86,7 @@ DECL|end_handle|member|uint16_t end_handle;
 DECL|end_handle|member|uint16_t end_handle;
 DECL|exponent|member|int8_t exponent;
 DECL|flags|member|uint16_t flags;
+DECL|flags|member|uint8_t flags;
 DECL|format|member|uint8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;
@@ -100,6 +101,7 @@ DECL|handle|member|uint16_t handle;
 DECL|length|member|uint16_t length;
 DECL|len|member|uint16_t len;
 DECL|name_space|member|uint8_t name_space;
+DECL|node|member|sys_snode_t node;
 DECL|notify|member|bt_gatt_notify_func_t notify;
 DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint16_t offset;

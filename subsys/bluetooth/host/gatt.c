@@ -57,7 +57,7 @@ DECL|gatt_read_type_rsp|function|static void gatt_read_type_rsp(struct bt_conn *
 DECL|gatt_read_type|function|static int gatt_read_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct net_buf *buf, bt_att_func_t func, void *params, bt_att_destroy_t destroy)
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
-DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, struct bt_gatt_subscribe_params *prev, struct bt_gatt_subscribe_params *params)
+DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, sys_snode_t *prev, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_ccc_rsp|function|static void gatt_write_ccc_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, uint16_t handle, uint16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_rsp|function|static void gatt_write_rsp(struct bt_conn *conn, uint8_t err, const void *pdu, uint16_t length, void *user_data)
@@ -75,7 +75,7 @@ DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_co
 DECL|start_handle|member|uint16_t start_handle;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|uint16_t type;
-DECL|update_subscriptions|function|static void update_subscriptions(struct bt_conn *conn)
+DECL|update_subscription|function|static void update_subscription(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid16|member|uint16_t uuid16;
 DECL|uuid|member|uint8_t uuid[16];

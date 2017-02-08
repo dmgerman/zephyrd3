@@ -153,6 +153,8 @@ DECL|BT_SDP_PBAP_SVCLASS|macro|BT_SDP_PBAP_SVCLASS
 DECL|BT_SDP_PNP_INFO_SVCLASS|macro|BT_SDP_PNP_INFO_SVCLASS
 DECL|BT_SDP_PRIMARY_LANG_BASE|macro|BT_SDP_PRIMARY_LANG_BASE
 DECL|BT_SDP_PRINTING_STATUS_SVCLASS|macro|BT_SDP_PRINTING_STATUS_SVCLASS
+DECL|BT_SDP_PROTO_L2CAP|enumerator|BT_SDP_PROTO_L2CAP = BT_UUID_L2CAP_VAL,
+DECL|BT_SDP_PROTO_RFCOMM|enumerator|BT_SDP_PROTO_RFCOMM = BT_UUID_RFCOMM_VAL,
 DECL|BT_SDP_PUBLIC_BROWSE_GROUP|macro|BT_SDP_PUBLIC_BROWSE_GROUP
 DECL|BT_SDP_RECORD|macro|BT_SDP_RECORD
 DECL|BT_SDP_REFERENCE_PRINTING_SVCLASS|macro|BT_SDP_REFERENCE_PRINTING_SVCLASS
@@ -208,6 +210,7 @@ DECL|bt_sdp_client_result|struct|struct bt_sdp_client_result {
 DECL|bt_sdp_data_elem|struct|struct bt_sdp_data_elem {
 DECL|bt_sdp_discover_func_t|typedef|typedef uint8_t (*bt_sdp_discover_func_t)
 DECL|bt_sdp_discover_params|struct|struct bt_sdp_discover_params {
+DECL|bt_sdp_proto|enum|enum bt_sdp_proto {
 DECL|bt_sdp_record|struct|struct bt_sdp_record {
 DECL|data|member|void *data; /* Data */
 DECL|func|member|bt_sdp_discover_func_t func;

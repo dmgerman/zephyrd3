@@ -36,6 +36,8 @@ DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(cons
 DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
 DECL|bt_conn_lookup_state_le|function|struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,const bt_conn_state_t state)
 DECL|bt_conn_pin_code_req|function|void bt_conn_pin_code_req(struct bt_conn *conn)
+DECL|bt_conn_prepare_events|function|int bt_conn_prepare_events(struct k_poll_event events[])
+DECL|bt_conn_process_tx|function|void bt_conn_process_tx(struct bt_conn *conn)
 DECL|bt_conn_recv|function|void bt_conn_recv(struct bt_conn *conn, struct net_buf *buf, uint8_t flags)
 DECL|bt_conn_ref|function|struct bt_conn *bt_conn_ref(struct bt_conn *conn)
 DECL|bt_conn_reset_rx_state|function|static void bt_conn_reset_rx_state(struct bt_conn *conn)
@@ -48,14 +50,13 @@ DECL|bt_conn_ssp_auth|function|void bt_conn_ssp_auth(struct bt_conn *conn, uint3
 DECL|bt_conn_ssp_get_auth|function|uint8_t bt_conn_ssp_get_auth(const struct bt_conn *conn)
 DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_br_cancel|function|static int bt_hci_connect_br_cancel(struct bt_conn *conn)
-DECL|bt_hci_connect_le_cancel|function|static int bt_hci_connect_le_cancel(struct bt_conn *conn)
 DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_le_set_auto_conn|function|int bt_le_set_auto_conn(bt_addr_le_t *addr,const struct bt_le_conn_param *param)
 DECL|callback_list|variable|callback_list
 DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
+DECL|conn_change|variable|conn_change
 DECL|conn_mtu|function|static inline uint16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
-DECL|conn_tx_thread|function|static void conn_tx_thread(void *p1, void *p2, void *p3)
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
@@ -76,4 +77,3 @@ DECL|ssp_passkey_neg_reply|function|static int ssp_passkey_neg_reply(struct bt_c
 DECL|ssp_passkey_reply|function|static int ssp_passkey_reply(struct bt_conn *conn, unsigned int passkey)
 DECL|start_security|function|static int start_security(struct bt_conn *conn)
 DECL|state2str|function|static inline const char *state2str(bt_conn_state_t state)
-DECL|timeout_thread|function|static void timeout_thread(void *p1, void *p2, void *p3)

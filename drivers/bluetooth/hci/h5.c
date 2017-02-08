@@ -42,6 +42,7 @@ DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|conf_req|variable|conf_req
 DECL|conf_rsp|variable|conf_rsp
 DECL|drv|variable|drv
+DECL|get_evt_buf|function|static inline struct net_buf *get_evt_buf(uint8_t evt)
 DECL|h5_dev|variable|h5_dev
 DECL|h5_get_type|function|static uint8_t h5_get_type(struct net_buf *buf)
 DECL|h5_init|function|static void h5_init(void)
