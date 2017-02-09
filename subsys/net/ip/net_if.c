@@ -18,6 +18,18 @@ DECL|ipv6_addr_find|function|static struct net_if_addr *ipv6_addr_find(struct ne
 DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_find(struct net_if *iface, struct in6_addr *prefix, uint8_t prefix_len)
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
+DECL|join_mcast_allnodes|function|static void join_mcast_allnodes(struct net_if *iface)
+DECL|join_mcast_allnodes|macro|join_mcast_allnodes
+DECL|join_mcast_allnodes|macro|join_mcast_allnodes
+DECL|join_mcast_solicit_node|function|static void join_mcast_solicit_node(struct net_if *iface, struct in6_addr *my_addr)
+DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
+DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
+DECL|leave_mcast_allnodes|function|static void leave_mcast_allnodes(struct net_if *iface)
+DECL|leave_mcast_allnodes|macro|leave_mcast_allnodes
+DECL|leave_mcast_allnodes|macro|leave_mcast_allnodes
+DECL|leave_mcast_solicit_node_all|function|static void leave_mcast_solicit_node_all(struct net_if *iface)
+DECL|leave_mcast_solicit_node_all|macro|leave_mcast_solicit_node_all
+DECL|leave_mcast_solicit_node_all|macro|leave_mcast_solicit_node_all
 DECL|link_callbacks|variable|link_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
