@@ -4,4 +4,5 @@ DECL|__noinit|macro|__noinit
 DECL|__scp_section|macro|__scp_section
 DECL|__scs_section|macro|__scs_section
 DECL|__security_frdm_k64f_section|macro|__security_frdm_k64f_section
+DECL|__sw_isr_table|macro|__sw_isr_table
 DECL|_section_tags__h_|macro|_section_tags__h_

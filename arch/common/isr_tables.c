@@ -1,0 +1,7 @@
+DECL|ISR_WRAPPER|macro|ISR_WRAPPER
+DECL|ISR_WRAPPER|macro|ISR_WRAPPER
+DECL|_irq_handler_ptr|variable|_irq_handler_ptr
+DECL|_irq_spurious_ptr|variable|_irq_spurious_ptr
+DECL|_irq_table_size|variable|_irq_table_size
+DECL|_irq_vector_table|variable|_irq_vector_table
+DECL|_sw_isr_table|variable|_sw_isr_table
