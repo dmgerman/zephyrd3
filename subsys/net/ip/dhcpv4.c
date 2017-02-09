@@ -53,6 +53,7 @@ DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_
 DECL|giaddr|member|uint8_t giaddr[4]; /* Relat agent IP address */
 DECL|handle_ack|function|static void handle_ack(struct net_if *iface)
 DECL|handle_dhcpv4_reply|function|static void handle_dhcpv4_reply(struct net_if *iface,enum dhcpv4_msg_type msg_type)
+DECL|handle_nak|function|static void handle_nak(struct net_if *iface)
 DECL|handle_offer|function|static inline void handle_offer(struct net_if *iface)
 DECL|hlen|member|uint8_t hlen; /* Hardware Address length */
 DECL|hops|member|uint8_t hops; /* used by relay agents when booting via relay
