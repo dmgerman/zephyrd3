@@ -25,7 +25,7 @@ DECL|coap_parse_option|function|static int coap_parse_option(const struct zoap_p
 DECL|decode_delta|function|static int decode_delta(int num, const uint8_t *buf, int16_t buflen,uint16_t *decoded)
 DECL|delta_encode|function|static int delta_encode(int num, uint8_t *value, uint8_t *buf, size_t buflen)
 DECL|delta|member|int delta;
-DECL|get_block_option|function|static unsigned int get_block_option(struct zoap_packet *pkt, uint16_t code)
+DECL|get_block_option|function|static int get_block_option(struct zoap_packet *pkt, uint16_t code)
 DECL|get_observe_option|function|static int get_observe_option(const struct zoap_packet *pkt)
 DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
 DECL|is_request|function|static bool is_request(struct zoap_packet *pkt)
