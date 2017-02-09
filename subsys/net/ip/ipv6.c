@@ -1,10 +1,12 @@
 DECL|MAX_MULTICAST_SOLICIT|macro|MAX_MULTICAST_SOLICIT
 DECL|MAX_UNICAST_SOLICIT|macro|MAX_UNICAST_SOLICIT
+DECL|MLDv2_LEN|macro|MLDv2_LEN
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
+DECL|create_mldv2|function|static struct net_buf *create_mldv2(struct net_buf *buf, const struct in6_addr *addr, uint16_t record_type)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
@@ -51,6 +53,8 @@ DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_con
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(uint8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
+DECL|net_ipv6_mld_join|function|int net_ipv6_mld_join(struct net_if *iface, const struct in6_addr *addr)
+DECL|net_ipv6_mld_leave|function|int net_ipv6_mld_leave(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_ipv6_nbr_add|function|struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|net_ipv6_nbr_foreach|function|void net_ipv6_nbr_foreach(net_nbr_cb_t cb, void *user_data)
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, uint8_t idx)
@@ -73,6 +77,7 @@ DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
 DECL|ra_input_handler|variable|ra_input_handler
 DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
+DECL|send_mldv2|function|static int send_mldv2(struct net_if *iface, const struct in6_addr *addr, uint8_t mode)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
 DECL|update_ll_reserve|function|static struct net_buf *update_ll_reserve(struct net_buf *buf, struct in6_addr *addr)
