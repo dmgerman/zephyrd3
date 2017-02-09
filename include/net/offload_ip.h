@@ -4,7 +4,7 @@ DECL|bind|member|int (*bind)(struct net_context *context,
 DECL|connect|member|int (*connect)(struct net_context *context,
 DECL|get|member|int (*get)(sa_family_t family,
 DECL|listen|member|int (*listen)(struct net_context *context, int backlog);
-DECL|net_l2_offload_ip_accept|function|static inline int net_l2_offload_ip_accept(struct net_if *iface, struct net_context *context, net_context_accept_cb_t cb, int32_t timeout, void *user_data)
+DECL|net_l2_offload_ip_accept|function|static inline int net_l2_offload_ip_accept(struct net_if *iface, struct net_context *context, net_tcp_accept_cb_t cb, int32_t timeout, void *user_data)
 DECL|net_l2_offload_ip_bind|function|static inline int net_l2_offload_ip_bind(struct net_if *iface, struct net_context *context, const struct sockaddr *addr, socklen_t addrlen)
 DECL|net_l2_offload_ip_connect|function|static inline int net_l2_offload_ip_connect(struct net_if *iface, struct net_context *context, const struct sockaddr *addr, socklen_t addrlen, net_context_connect_cb_t cb,
 DECL|net_l2_offload_ip_get|function|static inline int net_l2_offload_ip_get(struct net_if *iface,sa_family_t family, enum net_sock_type type, enum net_ip_protocol ip_proto, struct net_context **context)

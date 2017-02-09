@@ -1,4 +1,7 @@
 DECL|DHCPV4_CLIENT_PORT|macro|DHCPV4_CLIENT_PORT
+DECL|DHCPV4_INITIAL_DELAY_MAX|macro|DHCPV4_INITIAL_DELAY_MAX
+DECL|DHCPV4_INITIAL_DELAY_MIN|macro|DHCPV4_INITIAL_DELAY_MIN
+DECL|DHCPV4_INITIAL_RETRY_TIMEOUT|macro|DHCPV4_INITIAL_RETRY_TIMEOUT
 DECL|DHCPV4_MAX_NUMBER_OF_ATTEMPTS|macro|DHCPV4_MAX_NUMBER_OF_ATTEMPTS
 DECL|DHCPV4_MSG_BOOT_REPLY|macro|DHCPV4_MSG_BOOT_REPLY
 DECL|DHCPV4_MSG_BOOT_REQUEST|macro|DHCPV4_MSG_BOOT_REQUEST
@@ -45,7 +48,6 @@ DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *wor
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
 DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
-DECL|get_dhcpv4_timeout|function|static inline uint32_t get_dhcpv4_timeout(void)
 DECL|giaddr|member|uint8_t giaddr[4]; /* Relat agent IP address */
 DECL|handle_dhcpv4_reply|function|static inline void handle_dhcpv4_reply(struct net_if *iface, uint8_t msg_type)
 DECL|hlen|member|uint8_t hlen; /* Hardware Address length */
@@ -53,7 +55,9 @@ DECL|hops|member|uint8_t hops; /* used by relay agents when booting via relay
 DECL|htype|member|uint8_t htype; /* Hardware Address Type */
 DECL|magic_cookie|variable|magic_cookie
 DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|net_dhcpv4_msg_type_name|function|net_dhcpv4_msg_type_name(uint8_t msg_type)
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
+DECL|net_dhcpv4_state_name|function|net_dhcpv4_state_name(enum net_dhcpv4_state state)
 DECL|op|member|uint8_t op; /* Message type, 1:BOOTREQUEST, 2:BOOTREPLY */
 DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint16_t offset, uint8_t *msg_type)
 DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
