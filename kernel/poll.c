@@ -4,7 +4,7 @@ DECL|clear_event_registrations|function|static inline void clear_event_registrat
 DECL|clear_event_registration|function|static inline void clear_event_registration(struct k_poll_event *event)
 DECL|clear_polling_state|function|static inline void clear_polling_state(struct k_thread *thread)
 DECL|is_condition_met|function|static inline int is_condition_met(struct k_poll_event *event, uint32_t *state)
-DECL|is_polling|function|static inline int is_polling(struct k_thread *thread)
+DECL|is_polling|function|static inline int is_polling(void)
 DECL|k_poll_event_init|function|void k_poll_event_init(struct k_poll_event *event, uint32_t type, int mode, void *obj)
 DECL|k_poll_signal_init|function|void k_poll_signal_init(struct k_poll_signal *signal)
 DECL|k_poll_signal|function|int k_poll_signal(struct k_poll_signal *signal, int result)
