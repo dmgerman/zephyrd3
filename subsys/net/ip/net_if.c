@@ -11,6 +11,7 @@ DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline uint8_t get_length(struct in6_addr *src, struct in6_addr *dst)
+DECL|iface_send_data|function|static void iface_send_data(struct net_if *iface, struct net_buf *buf)
 DECL|init_tx_queue|function|static inline void init_tx_queue(struct net_if *iface)
 DECL|ipv4_addr_find|function|static struct net_if_addr *ipv4_addr_find(struct net_if *iface, struct in_addr *addr)
 DECL|ipv6_addr_expired|function|static void ipv6_addr_expired(struct k_work *work)
@@ -31,6 +32,7 @@ DECL|link_callbacks|variable|link_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
 DECL|net_if_down|function|int net_if_down(struct net_if *iface)
+DECL|net_if_flush_tx|function|static void net_if_flush_tx(struct net_if *iface)
 DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
 DECL|net_if_get_by_iface|function|uint8_t net_if_get_by_iface(struct net_if *iface)
 DECL|net_if_get_by_index|function|struct net_if *net_if_get_by_index(uint8_t index)
