@@ -7,7 +7,7 @@ DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
 DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
-DECL|create_mldv2|function|static struct net_buf *create_mldv2(struct net_buf *buf, const struct in6_addr *addr, uint16_t record_type)
+DECL|create_mldv2|function|static struct net_buf *create_mldv2(struct net_buf *buf, const struct in6_addr *addr, uint16_t record_type, uint8_t num_sources)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
@@ -28,6 +28,7 @@ DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
+DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_buf *buf)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_buf *buf)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
 DECL|handle_ns_input|function|static enum net_verdict handle_ns_input(struct net_buf *buf)
@@ -38,6 +39,7 @@ DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct n
 DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_buf *buf)
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
+DECL|mld_query_input_handler|variable|mld_query_input_handler
 DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_ipv6_nbr_data *data)
@@ -78,6 +80,8 @@ DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
 DECL|ra_input_handler|variable|ra_input_handler
 DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
+DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
+DECL|send_mldv2_raw|function|static int send_mldv2_raw(struct net_if *iface, struct net_buf *frags)
 DECL|send_mldv2|function|static int send_mldv2(struct net_if *iface, const struct in6_addr *addr, uint8_t mode)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_buf *buf, uint8_t nd6_len, uint8_t icmp_type)
