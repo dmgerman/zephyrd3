@@ -13,15 +13,15 @@ DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
 DECL|_kernel_arch|struct|struct _kernel_arch {
 DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
 DECL|_thread_arch|struct|struct _thread_arch {
-DECL|coopCoprocReg|member|tCoopCoprocReg coopCoprocReg; /* non-volatile coprocessor's register storage */
+DECL|coopCoprocReg|member|tCoopCoprocReg coopCoprocReg;
 DECL|cpStack|member|char *cpStack;
 DECL|custom_data|member|void *custom_data; /* available for custom use */
-DECL|entry|member|struct __thread_entry *entry; /* thread entry and parameters description */
+DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
 DECL|flags|member|uint32_t flags;
 DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
-DECL|next_thread|member|struct tcs *next_thread; /* next item in list of ALL fiber+tasks */
-DECL|preempCoprocReg|member|tPreempCoprocReg preempCoprocReg; /* volatile coprocessor's register storage */
+DECL|next_thread|member|struct tcs *next_thread;
+DECL|preempCoprocReg|member|tPreempCoprocReg preempCoprocReg;
 DECL|retval|member|uint32_t retval; /* a2 */
 DECL|s_coopCoprocReg|struct|typedef struct s_coopCoprocReg {
 DECL|s_preempCoprocReg|struct|typedef struct s_preempCoprocReg {
