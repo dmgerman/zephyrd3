@@ -24,12 +24,9 @@ DECL|join_mcast_allnodes|macro|join_mcast_allnodes
 DECL|join_mcast_solicit_node|function|static void join_mcast_solicit_node(struct net_if *iface, struct in6_addr *my_addr)
 DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
 DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
-DECL|leave_mcast_allnodes|function|static void leave_mcast_allnodes(struct net_if *iface)
-DECL|leave_mcast_allnodes|macro|leave_mcast_allnodes
-DECL|leave_mcast_allnodes|macro|leave_mcast_allnodes
-DECL|leave_mcast_solicit_node_all|function|static void leave_mcast_solicit_node_all(struct net_if *iface)
-DECL|leave_mcast_solicit_node_all|macro|leave_mcast_solicit_node_all
-DECL|leave_mcast_solicit_node_all|macro|leave_mcast_solicit_node_all
+DECL|leave_mcast_all|function|static void leave_mcast_all(struct net_if *iface)
+DECL|leave_mcast_all|macro|leave_mcast_all
+DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|link_callbacks|variable|link_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)

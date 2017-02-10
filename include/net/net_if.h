@@ -17,6 +17,7 @@ DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
 DECL|__net_if_align|variable|__net_if_align
+DECL|_unused|member|uint8_t _unused : 6;
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
@@ -40,10 +41,11 @@ DECL|is_default|member|bool is_default;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
+DECL|is_joined|member|uint8_t is_joined : 1;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
-DECL|is_used|member|bool is_used;
+DECL|is_used|member|uint8_t is_used : 1;
 DECL|l2_data|member|void *l2_data;
 DECL|l2|member|const struct net_l2 * const l2;
 DECL|lease_time|member|uint32_t lease_time;
@@ -70,6 +72,8 @@ DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_a
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_retrans_timer|function|static inline uint32_t net_if_ipv6_get_retrans_timer(struct net_if *iface)
+DECL|net_if_ipv6_maddr_join|function|static inline void net_if_ipv6_maddr_join(struct net_if_mcast_addr *addr)
+DECL|net_if_ipv6_maddr_leave|function|static inline void net_if_ipv6_maddr_leave(struct net_if_mcast_addr *addr)
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
