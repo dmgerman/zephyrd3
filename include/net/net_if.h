@@ -72,6 +72,7 @@ DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_a
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_retrans_timer|function|static inline uint32_t net_if_ipv6_get_retrans_timer(struct net_if *iface)
+DECL|net_if_ipv6_maddr_is_joined|function|static inline bool net_if_ipv6_maddr_is_joined(struct net_if_mcast_addr *addr)
 DECL|net_if_ipv6_maddr_join|function|static inline void net_if_ipv6_maddr_join(struct net_if_mcast_addr *addr)
 DECL|net_if_ipv6_maddr_leave|function|static inline void net_if_ipv6_maddr_leave(struct net_if_mcast_addr *addr)
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
