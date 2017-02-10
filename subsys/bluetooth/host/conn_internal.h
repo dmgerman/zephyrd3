@@ -3,6 +3,7 @@ DECL|BT_CONN_BR_LEGACY_SECURE|enumerator|BT_CONN_BR_LEGACY_SECURE, /* 16 digits 
 DECL|BT_CONN_BR_NOBOND|enumerator|BT_CONN_BR_NOBOND, /* SSP no bond pairing tracker */
 DECL|BT_CONN_BR_PAIRING_INITIATOR|enumerator|BT_CONN_BR_PAIRING_INITIATOR, /* local host starts authentication */
 DECL|BT_CONN_BR_PAIRING|enumerator|BT_CONN_BR_PAIRING, /* BR connection in pairing context */
+DECL|BT_CONN_CLEANUP|enumerator|BT_CONN_CLEANUP, /* Disconnected, pending cleanup */
 DECL|BT_CONN_CONNECTED|enumerator|BT_CONN_CONNECTED,
 DECL|BT_CONN_CONNECT_SCAN|enumerator|BT_CONN_CONNECT_SCAN,
 DECL|BT_CONN_CONNECT|enumerator|BT_CONN_CONNECT,
