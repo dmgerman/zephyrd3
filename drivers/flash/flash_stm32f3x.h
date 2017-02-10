@@ -9,7 +9,7 @@ DECL|FLASH_ER_PRG_TIMEOUT|macro|FLASH_ER_PRG_TIMEOUT
 DECL|FLASH_STRUCT|macro|FLASH_STRUCT
 DECL|FLASH_TIMEOUT|enumerator|FLASH_TIMEOUT
 DECL|base|member|uint32_t *base;
-DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|flash_status|enum|enum flash_status {
 DECL|flash_stm32_dev_config|struct|struct flash_stm32_dev_config {
 DECL|flash_stm32_dev_data|struct|struct flash_stm32_dev_data {
+DECL|pclken|member|struct stm32_pclken pclken;
