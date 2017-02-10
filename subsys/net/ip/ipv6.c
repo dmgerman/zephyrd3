@@ -4,6 +4,7 @@ DECL|MLDv2_LEN|macro|MLDv2_LEN
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
+DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
 DECL|create_mldv2|function|static struct net_buf *create_mldv2(struct net_buf *buf, const struct in6_addr *addr, uint16_t record_type)
