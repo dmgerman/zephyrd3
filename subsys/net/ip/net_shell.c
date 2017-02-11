@@ -4,7 +4,6 @@ DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
 DECL|context_cb|function|static void context_cb(struct net_context *context, void *user_data)
-DECL|dhcpv4state2str|function|static inline const char *dhcpv4state2str(enum net_dhcpv4_state state)
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
