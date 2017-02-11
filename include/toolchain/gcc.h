@@ -43,6 +43,7 @@ DECL|__printf_like|macro|__printf_like
 DECL|__unused|macro|__unused
 DECL|__used|macro|__used
 DECL|__weak|macro|__weak
+DECL|compiler_barrier|macro|compiler_barrier
 DECL|likely|macro|likely
 DECL|popcount|macro|popcount
 DECL|subsection|variable|subsection
