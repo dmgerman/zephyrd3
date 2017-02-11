@@ -51,7 +51,9 @@ DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
 DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
 DECL|giaddr|member|uint8_t giaddr[4]; /* Relat agent IP address */
-DECL|handle_dhcpv4_reply|function|static inline void handle_dhcpv4_reply(struct net_if *iface, enum dhcpv4_msg_type msg_type)
+DECL|handle_ack|function|static void handle_ack(struct net_if *iface)
+DECL|handle_dhcpv4_reply|function|static void handle_dhcpv4_reply(struct net_if *iface,enum dhcpv4_msg_type msg_type)
+DECL|handle_offer|function|static inline void handle_offer(struct net_if *iface)
 DECL|hlen|member|uint8_t hlen; /* Hardware Address length */
 DECL|hops|member|uint8_t hops; /* used by relay agents when booting via relay
 DECL|htype|member|uint8_t htype; /* Hardware Address Type */
