@@ -19,6 +19,7 @@ DECL|DHCPV4_OPTIONS_DNS_SERVER|macro|DHCPV4_OPTIONS_DNS_SERVER
 DECL|DHCPV4_OPTIONS_END|macro|DHCPV4_OPTIONS_END
 DECL|DHCPV4_OPTIONS_LEASE_TIME|macro|DHCPV4_OPTIONS_LEASE_TIME
 DECL|DHCPV4_OPTIONS_MSG_TYPE|macro|DHCPV4_OPTIONS_MSG_TYPE
+DECL|DHCPV4_OPTIONS_REBINDING|macro|DHCPV4_OPTIONS_REBINDING
 DECL|DHCPV4_OPTIONS_RENEWAL|macro|DHCPV4_OPTIONS_RENEWAL
 DECL|DHCPV4_OPTIONS_REQ_IPADDR|macro|DHCPV4_OPTIONS_REQ_IPADDR
 DECL|DHCPV4_OPTIONS_REQ_LIST|macro|DHCPV4_OPTIONS_REQ_LIST
@@ -48,11 +49,12 @@ DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dhcpv4_init|function|int dhcpv4_init(void)
 DECL|dhcpv4_msg_type|enum|enum dhcpv4_msg_type {
 DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *work)
+DECL|dhcpv4_t2_timeout|function|static void dhcpv4_t2_timeout(struct k_work *work)
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
+DECL|enter_bound|function|static void enter_bound(struct net_if *iface)
 DECL|enter_requesting|function|static void enter_requesting(struct net_if *iface)
 DECL|enter_selecting|function|static void enter_selecting(struct net_if *iface)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
-DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
 DECL|giaddr|member|uint8_t giaddr[4]; /* Relat agent IP address */
 DECL|handle_ack|function|static void handle_ack(struct net_if *iface)
 DECL|handle_dhcpv4_reply|function|static void handle_dhcpv4_reply(struct net_if *iface,enum dhcpv4_msg_type msg_type)
@@ -69,7 +71,7 @@ DECL|net_dhcpv4_state_name|function|const char *net_dhcpv4_state_name(enum net_d
 DECL|net_dhcpv4_stop|function|void net_dhcpv4_stop(struct net_if *iface)
 DECL|op|member|uint8_t op; /* Message type, 1:BOOTREQUEST, 2:BOOTREPLY */
 DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint16_t offset, enum dhcpv4_msg_type *msg_type)
-DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
+DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type, const struct in_addr *ciaddr)
 DECL|secs|member|uint16_t secs; /* Seconds elapsed since client began address
 DECL|send_discover|function|static void send_discover(struct net_if *iface)
 DECL|send_request|function|static void send_request(struct net_if *iface)
