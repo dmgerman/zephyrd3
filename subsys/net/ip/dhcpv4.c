@@ -36,10 +36,11 @@ DECL|__packed|variable|__packed
 DECL|add_cookie|function|static inline bool add_cookie(struct net_buf *buf)
 DECL|add_end|function|static inline bool add_end(struct net_buf *buf)
 DECL|add_file|function|static inline bool add_file(struct net_buf *buf)
-DECL|add_msg_type|function|static inline bool add_msg_type(struct net_buf *buf, uint8_t type)
-DECL|add_req_ipaddr|function|static inline bool add_req_ipaddr(struct net_buf *buf)
-DECL|add_req_options|function|static inline bool add_req_options(struct net_buf *buf)
-DECL|add_server_id|function|static inline bool add_server_id(struct net_buf *buf)
+DECL|add_msg_type|function|static bool add_msg_type(struct net_buf *buf, uint8_t type)
+DECL|add_option_length_value|function|static bool add_option_length_value(struct net_buf *buf, uint8_t option, uint8_t size, const uint8_t *value)
+DECL|add_req_ipaddr|function|static bool add_req_ipaddr(struct net_buf *buf, const struct in_addr *addr)
+DECL|add_req_options|function|static bool add_req_options(struct net_buf *buf)
+DECL|add_server_id|function|static bool add_server_id(struct net_buf *buf, const struct in_addr *addr)
 DECL|add_sname|function|static inline bool add_sname(struct net_buf *buf)
 DECL|chaddr|member|uint8_t chaddr[16]; /* Client hardware address */
 DECL|ciaddr|member|uint8_t ciaddr[4]; /* Client IP Address */
