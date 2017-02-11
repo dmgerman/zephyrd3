@@ -68,7 +68,7 @@ DECL|parse_options|function|static enum net_verdict parse_options(struct net_if 
 DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
 DECL|secs|member|uint16_t secs; /* Seconds elapsed since client began address
 DECL|send_discover|function|static void send_discover(struct net_if *iface)
-DECL|send_request|function|static void send_request(struct net_if *iface, bool renewal)
+DECL|send_request|function|static void send_request(struct net_if *iface)
 DECL|setup_header|function|static void setup_header(struct net_buf *buf)
 DECL|siaddr|member|uint8_t siaddr[4]; /* IP address of next server to use in bootstrap
 DECL|unset_dhcpv4_on_iface|function|static inline void unset_dhcpv4_on_iface(struct net_if *iface)
