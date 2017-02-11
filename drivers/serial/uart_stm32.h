@@ -2,6 +2,7 @@ DECL|_STM32_UART_H_|macro|_STM32_UART_H_
 DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|clock|member|struct device *clock;
 DECL|huart|member|UART_HandleTypeDef huart;
+DECL|pclken|member|struct stm32_pclken pclken;
 DECL|pclken|member|struct stm32f4x_pclken pclken;
 DECL|uart_stm32_config|struct|struct uart_stm32_config {
 DECL|uart_stm32_data|struct|struct uart_stm32_data {
