@@ -66,6 +66,7 @@ DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct n
 DECL|net_dhcpv4_msg_type_name|function|net_dhcpv4_msg_type_name(enum dhcpv4_msg_type msg_type)
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
 DECL|net_dhcpv4_state_name|function|const char *net_dhcpv4_state_name(enum net_dhcpv4_state state)
+DECL|net_dhcpv4_stop|function|void net_dhcpv4_stop(struct net_if *iface)
 DECL|op|member|uint8_t op; /* Message type, 1:BOOTREQUEST, 2:BOOTREPLY */
 DECL|parse_options|function|static enum net_verdict parse_options(struct net_if *iface, struct net_buf *buf, uint16_t offset, enum dhcpv4_msg_type *msg_type)
 DECL|prepare_message|function|static struct net_buf *prepare_message(struct net_if *iface, uint8_t type)
@@ -74,6 +75,5 @@ DECL|send_discover|function|static void send_discover(struct net_if *iface)
 DECL|send_request|function|static void send_request(struct net_if *iface)
 DECL|setup_header|function|static void setup_header(struct net_buf *buf)
 DECL|siaddr|member|uint8_t siaddr[4]; /* IP address of next server to use in bootstrap
-DECL|unset_dhcpv4_on_iface|function|static inline void unset_dhcpv4_on_iface(struct net_if *iface)
 DECL|xid|member|uint32_t xid; /* Transaction ID, random number */
 DECL|yiaddr|member|uint8_t yiaddr[4]; /* your (client) IP address */
