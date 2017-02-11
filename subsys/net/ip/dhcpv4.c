@@ -48,6 +48,7 @@ DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dhcpv4_msg_type|enum|enum dhcpv4_msg_type {
 DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *work)
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
+DECL|enter_requesting|function|static void enter_requesting(struct net_if *iface)
 DECL|enter_selecting|function|static void enter_selecting(struct net_if *iface)
 DECL|flags|member|uint16_t flags; /* Broadcast or Unicast */
 DECL|get_dhcpv4_renewal_time|function|static inline uint32_t get_dhcpv4_renewal_time(struct net_if *iface)
