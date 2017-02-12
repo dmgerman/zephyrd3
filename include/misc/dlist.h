@@ -3,6 +3,7 @@ DECL|SYS_DLIST_FOR_EACH_CONTAINER_SAFE|macro|SYS_DLIST_FOR_EACH_CONTAINER_SAFE
 DECL|SYS_DLIST_FOR_EACH_CONTAINER|macro|SYS_DLIST_FOR_EACH_CONTAINER
 DECL|SYS_DLIST_FOR_EACH_NODE_SAFE|macro|SYS_DLIST_FOR_EACH_NODE_SAFE
 DECL|SYS_DLIST_FOR_EACH_NODE|macro|SYS_DLIST_FOR_EACH_NODE
+DECL|SYS_DLIST_ITERATE_FROM_NODE|macro|SYS_DLIST_ITERATE_FROM_NODE
 DECL|SYS_DLIST_PEEK_HEAD_CONTAINER|macro|SYS_DLIST_PEEK_HEAD_CONTAINER
 DECL|SYS_DLIST_PEEK_NEXT_CONTAINER|macro|SYS_DLIST_PEEK_NEXT_CONTAINER
 DECL|SYS_DLIST_STATIC_INIT|macro|SYS_DLIST_STATIC_INIT
@@ -22,6 +23,7 @@ DECL|sys_dlist_is_head|function|static inline int sys_dlist_is_head(sys_dlist_t 
 DECL|sys_dlist_is_tail|function|static inline int sys_dlist_is_tail(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_peek_head_not_empty|function|static inline sys_dnode_t *sys_dlist_peek_head_not_empty(sys_dlist_t *list)
 DECL|sys_dlist_peek_head|function|static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
+DECL|sys_dlist_peek_next_no_check|function|static inline sys_dnode_t *sys_dlist_peek_next_no_check(sys_dlist_t *list,sys_dnode_t *node)
 DECL|sys_dlist_peek_next|function|static inline sys_dnode_t *sys_dlist_peek_next(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_peek_tail|function|static inline sys_dnode_t *sys_dlist_peek_tail(sys_dlist_t *list)
 DECL|sys_dlist_prepend|function|static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
