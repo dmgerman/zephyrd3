@@ -1,12 +1,12 @@
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
+DECL|_find_first_thread_to_unpend|function|_find_first_thread_to_unpend(_wait_q_t *wait_q, struct k_thread *from)
 DECL|_get_highest_ready_prio|function|static inline int _get_highest_ready_prio(void)
 DECL|_get_new_prio_with_ceiling|function|static inline int _get_new_prio_with_ceiling(int prio)
 DECL|_get_next_ready_thread|function|static ALWAYS_INLINE struct k_thread *_get_next_ready_thread(void)
 DECL|_get_ready_q_prio_bit|function|static inline int _get_ready_q_prio_bit(int prio)
 DECL|_get_ready_q_prio_bmap_index|function|static inline int _get_ready_q_prio_bmap_index(int prio)
 DECL|_get_ready_q_q_index|function|static inline int _get_ready_q_q_index(int prio)
-DECL|_get_thread_to_unpend|function|static inline struct k_thread *_get_thread_to_unpend(_wait_q_t *wait_q)
 DECL|_has_thread_started|function|static inline int _has_thread_started(struct k_thread *thread)
 DECL|_is_coop|function|static inline int _is_coop(struct k_thread *thread)
 DECL|_is_current_execution_context_preemptible|function|static inline int _is_current_execution_context_preemptible(void)
