@@ -35,7 +35,7 @@ DECL|reply_timeout|variable|reply_timeout
 DECL|sem_thread|variable|sem_thread
 DECL|test_busy_wait|function|static void test_busy_wait(void *mseconds, void *arg2, void *arg3)
 DECL|test_k_yield|function|static int test_k_yield(void)
-DECL|test_kernel_cpu_idle|function|static int test_kernel_cpu_idle(void)
+DECL|test_kernel_cpu_idle|function|static int test_kernel_cpu_idle(int atomic)
 DECL|test_kernel_ctx_task|function|static int test_kernel_ctx_task(void)
 DECL|test_kernel_interrupts|function|static int test_kernel_interrupts(disable_int_func disable_int, enable_int_func enable_int, int irq)
 DECL|test_kernel_thread|function|static int test_kernel_thread(k_tid_t task_thread_id)
