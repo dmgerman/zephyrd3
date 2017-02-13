@@ -1,6 +1,5 @@
 DECL|mslab|variable|mslab
 DECL|test_mslab_alloc_align|function|void test_mslab_alloc_align(void)
-DECL|test_mslab_alloc_free_isr|function|void test_mslab_alloc_free_isr(void)
 DECL|test_mslab_alloc_free_thread|function|void test_mslab_alloc_free_thread(void)
 DECL|test_mslab_alloc_timeout|function|void test_mslab_alloc_timeout(void)
 DECL|test_mslab_kdefine|function|void test_mslab_kdefine(void)
