@@ -11,4 +11,4 @@ DECL|vendor_handle_req|function|int vendor_handle_req(struct usb_setup_packet *p
 DECL|webusb_allowed_origins|variable|webusb_allowed_origins
 DECL|webusb_bos_descriptor|variable|webusb_bos_descriptor
 DECL|webusb_origin_url|variable|webusb_origin_url
-DECL|write_data|function|static void write_data(struct device *dev, const char *buf, int len)
+DECL|write_data|function|static void write_data(struct device *dev, const uint8_t *buf, int len)
