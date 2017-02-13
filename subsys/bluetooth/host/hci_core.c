@@ -61,6 +61,7 @@ DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|create_random_addr|function|static inline int create_random_addr(bt_addr_le_t *addr)
+DECL|device_supported_pkt_type|function|void device_supported_pkt_type(void)
 DECL|dh_key_cb|variable|dh_key_cb
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_priv|struct|struct discovery_priv {

@@ -21,10 +21,12 @@ DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
 DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
 DECL|br|member|struct bt_dev_br br;
 DECL|bt_dev_br|struct|struct bt_dev_br {
+DECL|bt_dev_esco|struct|struct bt_dev_esco {
 DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
 DECL|cmd_tx_queue|member|struct k_fifo cmd_tx_queue;
 DECL|drv|member|struct bt_hci_driver *drv;
+DECL|esco|member|struct bt_dev_esco esco;
 DECL|features|member|uint8_t features[1][8];
 DECL|features|member|uint8_t features[LMP_FEAT_PAGES_COUNT][8];
 DECL|hci_revision|member|uint16_t hci_revision;
@@ -39,6 +41,7 @@ DECL|manufacturer|member|uint16_t manufacturer;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
 DECL|ncmd_sem|member|struct k_sem ncmd_sem;
+DECL|pkt_type|member|uint16_t pkt_type;
 DECL|pkts|member|struct k_sem pkts;
 DECL|pkts|member|struct k_sem pkts;
 DECL|random_addr|member|bt_addr_le_t random_addr;
