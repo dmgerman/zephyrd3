@@ -45,7 +45,7 @@ DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|l2_data|member|void *l2_data;
-DECL|l2|member|const struct net_l2 const *l2;
+DECL|l2|member|const struct net_l2 * const l2;
 DECL|lease_time|member|uint32_t lease_time;
 DECL|len|member|uint8_t len;
 DECL|lifetime|member|struct k_delayed_work lifetime;
