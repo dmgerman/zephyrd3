@@ -169,11 +169,15 @@ DECL|BT_SDP_SERIAL_PORT_SVCLASS|macro|BT_SDP_SERIAL_PORT_SVCLASS
 DECL|BT_SDP_SERVER_RECORD_HANDLE|macro|BT_SDP_SERVER_RECORD_HANDLE
 DECL|BT_SDP_SERVICE_ID|macro|BT_SDP_SERVICE_ID
 DECL|BT_SDP_SERVICE_NAME|macro|BT_SDP_SERVICE_NAME
+DECL|BT_SDP_SIZE_DESC_MASK|macro|BT_SDP_SIZE_DESC_MASK
+DECL|BT_SDP_SIZE_INDEX_OFFSET|macro|BT_SDP_SIZE_INDEX_OFFSET
 DECL|BT_SDP_SUPPORTED_FEATURES|macro|BT_SDP_SUPPORTED_FEATURES
 DECL|BT_SDP_TEXT_STR16|macro|BT_SDP_TEXT_STR16
 DECL|BT_SDP_TEXT_STR32|macro|BT_SDP_TEXT_STR32
 DECL|BT_SDP_TEXT_STR8|macro|BT_SDP_TEXT_STR8
 DECL|BT_SDP_TEXT_STR_UNSPEC|macro|BT_SDP_TEXT_STR_UNSPEC
+DECL|BT_SDP_TYPE_DESC_MASK|macro|BT_SDP_TYPE_DESC_MASK
+DECL|BT_SDP_TYPE_SIZE_VAR|macro|BT_SDP_TYPE_SIZE_VAR
 DECL|BT_SDP_TYPE_SIZE|macro|BT_SDP_TYPE_SIZE
 DECL|BT_SDP_UDI_MT_SVCLASS|macro|BT_SDP_UDI_MT_SVCLASS
 DECL|BT_SDP_UDI_TA_SVCLASS|macro|BT_SDP_UDI_TA_SVCLASS
@@ -212,16 +216,18 @@ DECL|bt_sdp_discover_func_t|typedef|typedef uint8_t (*bt_sdp_discover_func_t)
 DECL|bt_sdp_discover_params|struct|struct bt_sdp_discover_params {
 DECL|bt_sdp_proto|enum|enum bt_sdp_proto {
 DECL|bt_sdp_record|struct|struct bt_sdp_record {
-DECL|data|member|void *data; /* Data */
+DECL|data_size|member|uint32_t data_size;
+DECL|data|member|const void *data;
 DECL|func|member|bt_sdp_discover_func_t func;
 DECL|handle|member|uint32_t handle; /* Redundant, for quick ref */
-DECL|header|member|uint8_t *header; /* Type and size descriptor */
 DECL|id|member|uint16_t id; /* Attribute ID */
 DECL|index|member|uint8_t index; /* Index of the record in LL */
 DECL|next_record_hint|member|bool next_record_hint;
 DECL|next|member|struct bt_sdp_record *next;
 DECL|pool|member|struct net_buf_pool *pool;
 DECL|resp_buf|member|struct net_buf *resp_buf;
+DECL|total_size|member|uint32_t total_size;
+DECL|type|member|uint8_t type;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|val|member|struct bt_sdp_data_elem val; /* Attribute data */
