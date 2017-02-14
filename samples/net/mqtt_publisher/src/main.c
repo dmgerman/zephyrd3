@@ -1,5 +1,9 @@
 DECL|PRINT_RESULT|macro|PRINT_RESULT
 DECL|RC_STR|macro|RC_STR
+DECL|bt_conn_cb|variable|bt_conn_cb
+DECL|bt_connect_cb|function|void bt_connect_cb(struct bt_conn *conn, uint8_t err)
+DECL|bt_connected|variable|bt_connected
+DECL|bt_disconnect_cb|function|void bt_disconnect_cb(struct bt_conn *conn, uint8_t reason)
 DECL|client_ctx|variable|client_ctx
 DECL|connect_cb|function|void connect_cb(struct mqtt_ctx *mqtt_ctx)
 DECL|connect_data|member|void *connect_data;

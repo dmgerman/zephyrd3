@@ -25,10 +25,10 @@ DECL|coap_parse_option|function|static int coap_parse_option(const struct zoap_p
 DECL|decode_delta|function|static int decode_delta(int num, const uint8_t *buf, int16_t buflen,uint16_t *decoded)
 DECL|delta_encode|function|static int delta_encode(int num, uint8_t *value, uint8_t *buf, size_t buflen)
 DECL|delta|member|int delta;
-DECL|get_block_option|function|static unsigned int get_block_option(struct zoap_packet *pkt, uint16_t code)
+DECL|get_block_option|function|static int get_block_option(const struct zoap_packet *pkt, uint16_t code)
 DECL|get_observe_option|function|static int get_observe_option(const struct zoap_packet *pkt)
 DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
-DECL|is_request|function|static bool is_request(struct zoap_packet *pkt)
+DECL|is_request|function|static bool is_request(const struct zoap_packet *pkt)
 DECL|match_response|function|static bool match_response(const struct zoap_packet *request, const struct zoap_packet *response)
 DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, uint8_t code)
 DECL|more|member|bool more;
@@ -85,4 +85,4 @@ DECL|zoap_reply_next_unused|function|struct zoap_reply *zoap_reply_next_unused(s
 DECL|zoap_request_is_observe|function|bool zoap_request_is_observe(const struct zoap_packet *request)
 DECL|zoap_resource_notify|function|int zoap_resource_notify(struct zoap_resource *resource)
 DECL|zoap_response_received|function|struct zoap_reply *zoap_response_received(const struct zoap_packet *response, const struct sockaddr *from, struct zoap_reply *replies, size_t len)
-DECL|zoap_update_from_block|function|int zoap_update_from_block(struct zoap_packet *pkt, struct zoap_block_context *ctx)
+DECL|zoap_update_from_block|function|int zoap_update_from_block(const struct zoap_packet *pkt, struct zoap_block_context *ctx)
