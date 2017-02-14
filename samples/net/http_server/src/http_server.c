@@ -1,6 +1,7 @@
 DECL|HTTP_BUF_CTR|macro|HTTP_BUF_CTR
 DECL|HTTP_BUF_SIZE|macro|HTTP_BUF_SIZE
 DECL|URL_DEFAULT_HANDLER_INDEX|macro|URL_DEFAULT_HANDLER_INDEX
+DECL|http_accept_cb|function|void http_accept_cb(struct net_context *net_ctx, struct sockaddr *addr, socklen_t addr_len, int status, void *data)
 DECL|http_ctx_get|function|struct http_server_ctx *http_ctx_get(void)
 DECL|http_ctx_init|function|int http_ctx_init(void)
 DECL|http_ctx_release|function|int http_ctx_release(struct http_server_ctx *http_ctx)
