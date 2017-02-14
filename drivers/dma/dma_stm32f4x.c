@@ -88,6 +88,7 @@ DECL|dma_stm32_2_cdata|variable|dma_stm32_2_cdata
 DECL|dma_stm32_2_config|function|static void dma_stm32_2_config(struct dma_stm32_device *ddata)
 DECL|dma_stm32_chan_reg|struct|struct dma_stm32_chan_reg {
 DECL|dma_stm32_chan|struct|struct dma_stm32_chan {
+DECL|dma_stm32_config_devcpy|function|static int dma_stm32_config_devcpy(struct device *dev, uint32_t channel, struct dma_config *config)
 DECL|dma_stm32_config_memcpy|function|static int dma_stm32_config_memcpy(struct device *dev, uint32_t channel)
 DECL|dma_stm32_config|function|static int dma_stm32_config(struct device *dev, uint32_t channel, struct dma_config *config)
 DECL|dma_stm32_config|struct|struct dma_stm32_config {
