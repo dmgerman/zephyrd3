@@ -90,7 +90,7 @@ DECL|dma_stm32_2_config|function|static void dma_stm32_2_config(struct dma_stm32
 DECL|dma_stm32_chan_reg|struct|struct dma_stm32_chan_reg {
 DECL|dma_stm32_channel_config|function|static int dma_stm32_channel_config(struct device *dev, uint32_t channel, struct dma_channel_config *config)
 DECL|dma_stm32_chan|struct|struct dma_stm32_chan {
-DECL|dma_stm32_config_memcpy|function|static int dma_stm32_config_memcpy(struct device *dev, uint32_t channel, struct dma_channel_config *config)
+DECL|dma_stm32_config_memcpy|function|static int dma_stm32_config_memcpy(struct device *dev, uint32_t channel)
 DECL|dma_stm32_config|struct|struct dma_stm32_config {
 DECL|dma_stm32_device|struct|static struct dma_stm32_device {
 DECL|dma_stm32_disable_chan|function|static int dma_stm32_disable_chan(struct dma_stm32_device *ddata, uint32_t channel)
