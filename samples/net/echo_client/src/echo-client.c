@@ -16,6 +16,8 @@ DECL|cb|variable|cb
 DECL|compare_tcp_data|function|static bool compare_tcp_data(struct net_buf *buf, int expecting_len, int received_len)
 DECL|compare_udp_data|function|static bool compare_udp_data(struct net_buf *buf, int expecting_len)
 DECL|conf|variable|conf
+DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
+DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|data|struct|struct data {
 DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
 DECL|expecting_tcp|member|uint32_t expecting_tcp;
@@ -56,6 +58,8 @@ DECL|tcp_connect6|function|static void tcp_connect6(struct net_context *tcp_send
 DECL|tcp_connected|function|static void tcp_connected(struct net_context *context, int status, void *user_data)
 DECL|tcp_received|function|static void tcp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|tcp_sent|function|static void tcp_sent(struct net_context *context, int status, void *token, void *user_data)
+DECL|tx_tcp_pool|function|static struct net_buf_pool *tx_tcp_pool(void)
+DECL|tx_udp_pool|function|static struct net_buf_pool *tx_udp_pool(void)
 DECL|udp_received|function|static void udp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|udp_sent|function|static inline void udp_sent(struct net_context *context, int status, void *bytes_sent, void *user_data)
 DECL|wait_reply|function|static inline bool wait_reply(const char *name, struct k_sem *sem)

@@ -11,6 +11,8 @@ DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|build_reply_buf|function|static struct net_buf *build_reply_buf(const char *name, struct net_context *context, struct net_buf *buf)
+DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
+DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
 DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_mcast|variable|in6addr_mcast
@@ -27,4 +29,6 @@ DECL|setup_udp_recv|function|static void setup_udp_recv(struct net_context *udp_
 DECL|tcp_accepted|function|static void tcp_accepted(struct net_context *context, struct sockaddr *addr, socklen_t addrlen, int error, void *user_data)
 DECL|tcp_received|function|static void tcp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
 DECL|thread_stack|variable|thread_stack
+DECL|tx_tcp_pool|function|static struct net_buf_pool *tx_tcp_pool(void)
+DECL|tx_udp_pool|function|static struct net_buf_pool *tx_udp_pool(void)
 DECL|udp_received|function|static void udp_received(struct net_context *context, struct net_buf *buf, int status, void *user_data)
