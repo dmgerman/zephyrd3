@@ -1,6 +1,8 @@
 DECL|NET_ICMP_BUF|macro|NET_ICMP_BUF
 DECL|NET_IPV4_BUF|macro|NET_IPV4_BUF
 DECL|NET_IPV6_BUF|macro|NET_IPV6_BUF
+DECL|NET_NBUF_DATA_POOL_DEFINE|macro|NET_NBUF_DATA_POOL_DEFINE
+DECL|NET_NBUF_TX_POOL_DEFINE|macro|NET_NBUF_TX_POOL_DEFINE
 DECL|NET_TCP_BUF|macro|NET_TCP_BUF
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
@@ -31,10 +33,12 @@ DECL|net_nbuf_ext_len|function|static inline uint8_t net_nbuf_ext_len(struct net
 DECL|net_nbuf_ext_opt_len|function|static inline uint8_t net_nbuf_ext_opt_len(struct net_buf *buf)
 DECL|net_nbuf_family|function|static inline uint8_t net_nbuf_family(struct net_buf *buf)
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
+DECL|net_nbuf_get_frag|macro|net_nbuf_get_frag
 DECL|net_nbuf_get_len|function|static inline uint16_t net_nbuf_get_len(struct net_buf *buf)
 DECL|net_nbuf_get_reserve_data|macro|net_nbuf_get_reserve_data
 DECL|net_nbuf_get_reserve_rx|macro|net_nbuf_get_reserve_rx
 DECL|net_nbuf_get_reserve_tx|macro|net_nbuf_get_reserve_tx
+DECL|net_nbuf_get_reserve|macro|net_nbuf_get_reserve
 DECL|net_nbuf_get_rx|macro|net_nbuf_get_rx
 DECL|net_nbuf_get_tx|macro|net_nbuf_get_tx
 DECL|net_nbuf_icmp_data|function|static inline uint8_t *net_nbuf_icmp_data(struct net_buf *buf)

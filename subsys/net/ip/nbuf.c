@@ -23,8 +23,14 @@ DECL|adjust_insert_offset|function|static inline struct net_buf *adjust_insert_o
 DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|adjust_write_offset|function|static inline struct net_buf *adjust_write_offset(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos, int32_t timeout)
 DECL|check_and_create_data|function|static inline struct net_buf *check_and_create_data(struct net_buf *buf, struct net_buf *data, int32_t timeout)
+DECL|get_data_pool|function|static inline struct net_buf_pool *get_data_pool(struct net_context *context)
+DECL|get_data_pool|macro|get_data_pool
 DECL|get_frees|function|static inline int16_t get_frees(struct net_buf_pool *pool)
+DECL|get_tx_pool|function|static inline struct net_buf_pool *get_tx_pool(struct net_context *context)
+DECL|get_tx_pool|macro|get_tx_pool
 DECL|insert_data|function|static inline bool insert_data(struct net_buf *buf, struct net_buf *frag, struct net_buf *temp, uint16_t offset, uint16_t len, uint8_t *data, int32_t timeout)
+DECL|is_data_pool|function|static inline bool is_data_pool(struct net_buf_pool *pool)
+DECL|is_external_pool|function|static inline bool is_external_pool(struct net_buf_pool *pool)
 DECL|is_from_data_pool|function|static inline bool is_from_data_pool(struct net_buf *buf)
 DECL|net_nbuf_append_bytes|function|static inline bool net_nbuf_append_bytes(struct net_buf *buf, const uint8_t *value, uint16_t len, int32_t timeout)
 DECL|net_nbuf_append|function|bool net_nbuf_append(struct net_buf *buf, uint16_t len, const uint8_t *data, int32_t timeout)
@@ -33,10 +39,11 @@ DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *orig, 
 DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_data|function|struct net_buf *net_nbuf_get_data(struct net_context *context, int32_t timeout)
 DECL|net_nbuf_get_debug|function|static struct net_buf *net_nbuf_get_debug(struct net_buf_pool *pool, struct net_context *context, int32_t timeout, const char *caller, int line) #else
+DECL|net_nbuf_get_frag_debug|function|struct net_buf *net_nbuf_get_frag_debug(struct net_buf *buf,int32_t timeout, const char *caller, int line) #else struct net_buf *net_nbuf_get_frag(struct net_buf *buf,
 DECL|net_nbuf_get_info|function|void net_nbuf_get_info(size_t *tx_size, size_t *rx_size, size_t *data_size, int *tx, int *rx, int *data)
 DECL|net_nbuf_get_reserve_data_debug|function|struct net_buf *net_nbuf_get_reserve_data_debug(uint16_t reserve_head,int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_reserve_data|function|struct net_buf *net_nbuf_get_reserve_data(uint16_t reserve_head, int32_t timeout)
-DECL|net_nbuf_get_reserve_debug|function|static struct net_buf *net_nbuf_get_reserve_debug(struct net_buf_pool *pool, uint16_t reserve_head, int32_t timeout, const char *caller, int line)
+DECL|net_nbuf_get_reserve_debug|function|struct net_buf *net_nbuf_get_reserve_debug(struct net_buf_pool *pool, uint16_t reserve_head, int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_reserve_rx_debug|function|struct net_buf *net_nbuf_get_reserve_rx_debug(uint16_t reserve_head, int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_reserve_rx|function|struct net_buf *net_nbuf_get_reserve_rx(uint16_t reserve_head,int32_t timeout)
 DECL|net_nbuf_get_reserve_tx_debug|function|struct net_buf *net_nbuf_get_reserve_tx_debug(uint16_t reserve_head, int32_t timeout, const char *caller, int line)

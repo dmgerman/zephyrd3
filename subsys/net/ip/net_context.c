@@ -11,6 +11,8 @@ DECL|buf_get_sockaddr|function|static void buf_get_sockaddr(sa_family_t family, 
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, uint16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
+DECL|copy_pool_vars|function|static inline void copy_pool_vars(struct net_context *new_context, struct net_context *listen_context)
+DECL|copy_pool_vars|macro|copy_pool_vars
 DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net_buf *buf,struct sockaddr *addr)
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_buf *buf, const struct sockaddr *dst_addr, struct net_buf **out_buf)
 DECL|find_available_port|function|static uint16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
