@@ -175,6 +175,7 @@ DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
+DECL|k_cycle_get_32|macro|k_cycle_get_32
 DECL|k_delayed_work_remaining_get|function|static inline int32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {

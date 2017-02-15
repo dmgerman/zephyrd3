@@ -22,6 +22,7 @@ DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
+DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* parameter is not used */ )
@@ -32,7 +33,6 @@ DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|divide_configuration_register_set|function|static inline void divide_configuration_register_set(void)
 DECL|initial_count_register_get|function|static inline uint32_t initial_count_register_get(void)
 DECL|initial_count_register_set|function|static inline void initial_count_register_set(uint32_t count)
-DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|loapic_timer_device_power_state|variable|loapic_timer_device_power_state
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)

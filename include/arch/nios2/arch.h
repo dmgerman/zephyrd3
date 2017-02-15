@@ -37,6 +37,7 @@ DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
 DECL|__esf|struct|struct __esf {
 DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
 DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
+DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32
 DECL|estatus|member|uint32_t estatus;
 DECL|instr|member|uint32_t instr; /* Instruction being executed when exc occurred */
 DECL|nios2_exception_cause|enum|enum nios2_exception_cause {

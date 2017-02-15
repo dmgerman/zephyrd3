@@ -1,1 +1,2 @@
 DECL|_ARCH_ARM_CORTEXM_MISC_H_|macro|_ARCH_ARM_CORTEXM_MISC_H_
+DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32

@@ -25,6 +25,6 @@ DECL|ALTERA_AVALON_TIMER_STATUS_RUN_OFST|macro|ALTERA_AVALON_TIMER_STATUS_RUN_OF
 DECL|ALTERA_AVALON_TIMER_STATUS_TO_MSK|macro|ALTERA_AVALON_TIMER_STATUS_TO_MSK
 DECL|ALTERA_AVALON_TIMER_STATUS_TO_OFST|macro|ALTERA_AVALON_TIMER_STATUS_TO_OFST
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
+DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
 DECL|accumulated_cycle_count|variable|accumulated_cycle_count
-DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|timer_irq_handler|function|static void timer_irq_handler(void *unused)

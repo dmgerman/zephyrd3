@@ -11,6 +11,7 @@ DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
 DECL|__BYTE_ORDER__|macro|__BYTE_ORDER__
 DECL|__ORDER_BIG_ENDIAN__|macro|__ORDER_BIG_ENDIAN__
 DECL|__ORDER_LITTLE_ENDIAN__|macro|__ORDER_LITTLE_ENDIAN__
+DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32
 DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(uint32_t op)
 DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(uint32_t op)
 DECL|sys_define_gpr_with_alias|macro|sys_define_gpr_with_alias

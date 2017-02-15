@@ -3,13 +3,13 @@ DECL|_ARC_V2_TMR_CTRL_IP|macro|_ARC_V2_TMR_CTRL_IP
 DECL|_ARC_V2_TMR_CTRL_NH|macro|_ARC_V2_TMR_CTRL_NH
 DECL|_ARC_V2_TMR_CTRL_W|macro|_ARC_V2_TMR_CTRL_W
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
+DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|accumulated_cycle_count|variable|accumulated_cycle_count
 DECL|arcv2_timer0_device_power_state|variable|arcv2_timer0_device_power_state
 DECL|cycles_per_tick|variable|cycles_per_tick
-DECL|k_cycle_get_32|function|uint32_t k_cycle_get_32(void)
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|programmed_limit|variable|programmed_limit
 DECL|programmed_ticks|variable|programmed_ticks
