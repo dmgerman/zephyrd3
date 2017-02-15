@@ -17,9 +17,11 @@ DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
 DECL|bt_conn_get_pkts|function|static inline struct k_sem *bt_conn_get_pkts(struct bt_conn *conn)
 DECL|bt_conn_le|struct|struct bt_conn_le {
+DECL|bt_conn_sco|struct|struct bt_conn_sco {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
 DECL|channels|member|void *channels;
+DECL|conn|member|struct bt_conn *conn;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
@@ -37,6 +39,7 @@ DECL|le|member|struct bt_conn_le le;
 DECL|link_key|member|struct bt_keys_link_key *link_key;
 DECL|pairing_method|member|uint8_t pairing_method;
 DECL|pending_pkts|member|uint8_t pending_pkts;
+DECL|pkt_type|member|uint16_t pkt_type;
 DECL|ref|member|atomic_t ref;
 DECL|remote_auth|member|uint8_t remote_auth;
 DECL|remote_io_capa|member|uint8_t remote_io_capa;
@@ -45,6 +48,7 @@ DECL|resp_addr|member|bt_addr_le_t resp_addr;
 DECL|role|member|uint8_t role;
 DECL|rx_len|member|uint16_t rx_len;
 DECL|rx|member|struct net_buf *rx;
+DECL|sco|member|struct bt_conn_sco sco;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|bt_conn_state_t state;
 DECL|timeout|member|uint16_t timeout;
