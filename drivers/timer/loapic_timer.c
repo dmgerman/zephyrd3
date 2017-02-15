@@ -26,7 +26,6 @@ DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused /* parameter is not used */ )
-DECL|accumulated_cycle_count|variable|accumulated_cycle_count
 DECL|current_count_register_get|function|static inline uint32_t current_count_register_get(void)
 DECL|cycles_per_max_ticks|variable|cycles_per_max_ticks
 DECL|cycles_per_tick|variable|cycles_per_tick
