@@ -158,6 +158,7 @@ DECL|show_dev_info|function|static void show_dev_info(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|status|member|uint8_t status;
+DECL|synchronous_conn_complete|function|static void synchronous_conn_complete(struct net_buf *buf)
 DECL|sync|member|struct k_sem *sync;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;

@@ -130,6 +130,7 @@ DECL|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLETE|macro|BT_HCI_EVT_REMOTE_NAME_REQ_COMPLE
 DECL|BT_HCI_EVT_REMOTE_VERSION_INFO|macro|BT_HCI_EVT_REMOTE_VERSION_INFO
 DECL|BT_HCI_EVT_ROLE_CHANGE|macro|BT_HCI_EVT_ROLE_CHANGE
 DECL|BT_HCI_EVT_SSP_COMPLETE|macro|BT_HCI_EVT_SSP_COMPLETE
+DECL|BT_HCI_EVT_SYNC_CONN_COMPLETE|macro|BT_HCI_EVT_SYNC_CONN_COMPLETE
 DECL|BT_HCI_EVT_USER_CONFIRM_REQ|macro|BT_HCI_EVT_USER_CONFIRM_REQ
 DECL|BT_HCI_EVT_USER_PASSKEY_NOTIFY|macro|BT_HCI_EVT_USER_PASSKEY_NOTIFY
 DECL|BT_HCI_EVT_USER_PASSKEY_REQ|macro|BT_HCI_EVT_USER_PASSKEY_REQ
@@ -449,6 +450,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|uint16_t acl_max_len;
 DECL|acl_max_num|member|uint16_t acl_max_num;
 DECL|acl_mtu|member|uint16_t acl_mtu;
@@ -461,10 +463,12 @@ DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|adv_info|member|struct bt_hci_ev_le_advertising_info adv_info[0];
+DECL|air_mode|member|uint8_t air_mode;
 DECL|allow_role_switch|member|uint8_t allow_role_switch;
 DECL|authentication|member|uint8_t authentication;
 DECL|authentication|member|uint8_t authentication;
 DECL|a|member|bt_addr_t a;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
@@ -616,6 +620,7 @@ DECL|bt_hci_evt_remote_name_req_complete|struct|struct bt_hci_evt_remote_name_re
 DECL|bt_hci_evt_remote_version_info|struct|struct bt_hci_evt_remote_version_info {
 DECL|bt_hci_evt_role_change|struct|struct bt_hci_evt_role_change {
 DECL|bt_hci_evt_ssp_complete|struct|struct bt_hci_evt_ssp_complete {
+DECL|bt_hci_evt_sync_conn_complete|struct|struct bt_hci_evt_sync_conn_complete {
 DECL|bt_hci_evt_user_confirm_req|struct|struct bt_hci_evt_user_confirm_req {
 DECL|bt_hci_evt_user_passkey_notify|struct|struct bt_hci_evt_user_passkey_notify {
 DECL|bt_hci_evt_user_passkey_req|struct|struct bt_hci_evt_user_passkey_req {
@@ -749,6 +754,7 @@ DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
+DECL|handle|member|uint16_t handle;
 DECL|hci_cp_le_conn_update|struct|struct hci_cp_le_conn_update {
 DECL|hci_revision|member|uint16_t hci_revision;
 DECL|hci_version|member|uint8_t hci_version;
@@ -785,6 +791,7 @@ DECL|len|member|uint8_t len;
 DECL|le|member|uint8_t le;
 DECL|link_key|member|uint8_t link_key[16];
 DECL|link_key|member|uint8_t link_key[16];
+DECL|link_type|member|uint8_t link_type;
 DECL|link_type|member|uint8_t link_type;
 DECL|link_type|member|uint8_t link_type;
 DECL|lmp_subversion|member|uint16_t lmp_subversion;
@@ -878,6 +885,7 @@ DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
+DECL|retansmission_window|member|uint8_t retansmission_window;
 DECL|retrans_effort|member|uint8_t retrans_effort;
 DECL|rl_size|member|uint8_t rl_size;
 DECL|role|member|uint8_t role;
@@ -891,6 +899,7 @@ DECL|rssi|member|int8_t rssi;
 DECL|rx_bandwidth|member|uint32_t rx_bandwidth;
 DECL|rx_ch|member|uint8_t rx_ch;
 DECL|rx_pkt_count|member|uint16_t rx_pkt_count;
+DECL|rx_pkt_length|member|uint16_t rx_pkt_length;
 DECL|sc_support|member|uint8_t sc_support;
 DECL|scan_interval|member|uint16_t scan_interval;
 DECL|scan_type|member|uint8_t scan_type;
@@ -900,6 +909,7 @@ DECL|sco_max_num|member|uint16_t sco_max_num;
 DECL|sco_mtu|member|uint8_t sco_mtu;
 DECL|sco_pkts|member|uint16_t sco_pkts;
 DECL|simul|member|uint8_t simul;
+DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
 DECL|status|member|uint8_t status;
@@ -963,7 +973,9 @@ DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|tx_bandwidth|member|uint32_t tx_bandwidth;
 DECL|tx_ch|member|uint8_t tx_ch;
+DECL|tx_interval|member|uint8_t tx_interval;
 DECL|tx_octets|member|uint16_t tx_octets;
+DECL|tx_pkt_length|member|uint16_t tx_pkt_length;
 DECL|tx_power_level|member|int8_t tx_power_level;
 DECL|tx_time|member|uint16_t tx_time;
 DECL|type|member|uint8_t type;
