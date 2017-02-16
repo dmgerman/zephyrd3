@@ -1,4 +1,5 @@
 DECL|__INC_ctype_h__|macro|__INC_ctype_h__
+DECL|isalnum|function|static inline int isalnum(int chr)
 DECL|isalpha|function|static inline int isalpha(int c)
 DECL|isdigit|function|static inline int isdigit(int a)
 DECL|isgraph|function|static inline int isgraph(int c)
