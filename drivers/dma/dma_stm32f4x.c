@@ -112,7 +112,6 @@ DECL|dma_stm32_stream|struct|struct dma_stm32_stream {
 DECL|dma_stm32_write|function|static void dma_stm32_write(struct dma_stm32_device *ddata, uint32_t reg, uint32_t val)
 DECL|hifcr|member|uint32_t hifcr;
 DECL|hisr|member|uint32_t hisr;
-DECL|id|member|uint32_t id;
 DECL|lifcr|member|uint32_t lifcr;
 DECL|lisr|member|uint32_t lisr;
 DECL|mem2mem|member|bool mem2mem;
