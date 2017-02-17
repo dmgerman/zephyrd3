@@ -28,6 +28,7 @@ DECL|net_nbuf_append_u8|function|static inline bool net_nbuf_append_u8(struct ne
 DECL|net_nbuf_buf_sent|function|static inline uint8_t net_nbuf_buf_sent(struct net_buf *buf)
 DECL|net_nbuf_context|function|static inline struct net_context *net_nbuf_context(struct net_buf *buf)
 DECL|net_nbuf_copy_all|function|static inline struct net_buf *net_nbuf_copy_all(struct net_buf *buf,size_t reserve, int32_t timeout)
+DECL|net_nbuf_copy_user_data|function|static inline void net_nbuf_copy_user_data(struct net_buf *new, struct net_buf *orig)
 DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(struct net_buf *buf)
 DECL|net_nbuf_ext_len|function|static inline uint8_t net_nbuf_ext_len(struct net_buf *buf)
 DECL|net_nbuf_ext_opt_len|function|static inline uint8_t net_nbuf_ext_opt_len(struct net_buf *buf)
