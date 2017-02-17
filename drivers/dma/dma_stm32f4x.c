@@ -82,7 +82,7 @@ DECL|channel_rx|member|uint8_t channel_rx;
 DECL|channel_tx|member|uint8_t channel_tx;
 DECL|clk|member|struct device *clk;
 DECL|config|member|void (*config)(struct dma_stm32_device *);
-DECL|ddata|variable|ddata
+DECL|device_data|variable|device_data
 DECL|dev|member|struct device *dev;
 DECL|direction|member|uint32_t direction;
 DECL|dma_callback|member|void (*dma_callback)(struct device *dev, uint32_t id,
