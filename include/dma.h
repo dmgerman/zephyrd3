@@ -49,6 +49,7 @@ DECL|dma_api_transfer_config|typedef|typedef int (*dma_api_transfer_config)(stru
 DECL|dma_api_transfer_start|typedef|typedef int (*dma_api_transfer_start)(struct device *dev, uint32_t channel);
 DECL|dma_api_transfer_stop|typedef|typedef int (*dma_api_transfer_stop)(struct device *dev, uint32_t channel);
 DECL|dma_block_config|struct|struct dma_block_config {
+DECL|dma_burst_index|function|static inline enum dma_burst_length dma_burst_index(uint32_t burst)
 DECL|dma_burst_length|enum|enum dma_burst_length {
 DECL|dma_callback|member|void (*dma_callback)(struct device *dev, uint32_t channel,
 DECL|dma_channel_config|function|static inline int __deprecated dma_channel_config(struct device *dev,uint32_t channel, struct dma_channel_config *config)
@@ -68,6 +69,7 @@ DECL|dma_transfer_start|function|static inline int __deprecated dma_transfer_sta
 DECL|dma_transfer_stop|function|static inline int __deprecated dma_transfer_stop(struct device *dev, uint32_t channel)
 DECL|dma_transfer_width|enum|enum dma_transfer_width {
 DECL|dma_transfer|member|void (*dma_transfer)(struct device *dev, void *data);
+DECL|dma_width_index|function|static inline enum dma_burst_length dma_width_index(uint32_t size)
 DECL|error_callback_en|member|uint32_t error_callback_en : 1;
 DECL|fifo_mode_control|member|uint16_t fifo_mode_control : 4;
 DECL|flow_control_mode|member|uint16_t flow_control_mode : 1;
