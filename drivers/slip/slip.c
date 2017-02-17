@@ -20,6 +20,7 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
+DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
