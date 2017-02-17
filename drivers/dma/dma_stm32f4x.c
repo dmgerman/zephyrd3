@@ -1,7 +1,11 @@
 DECL|BITS_PER_LONG|macro|BITS_PER_LONG
 DECL|DMA_STM32_1_BASE|macro|DMA_STM32_1_BASE
+DECL|DMA_STM32_1_RX_CHANNEL_ID|macro|DMA_STM32_1_RX_CHANNEL_ID
+DECL|DMA_STM32_1_TX_CHANNEL_ID|macro|DMA_STM32_1_TX_CHANNEL_ID
 DECL|DMA_STM32_1|macro|DMA_STM32_1
 DECL|DMA_STM32_2_BASE|macro|DMA_STM32_2_BASE
+DECL|DMA_STM32_2_RX_CHANNEL_ID|macro|DMA_STM32_2_RX_CHANNEL_ID
+DECL|DMA_STM32_2_TX_CHANNEL_ID|macro|DMA_STM32_2_TX_CHANNEL_ID
 DECL|DMA_STM32_2|macro|DMA_STM32_2
 DECL|DMA_STM32_DEV_TO_MEM|macro|DMA_STM32_DEV_TO_MEM
 DECL|DMA_STM32_DMEI|macro|DMA_STM32_DMEI
@@ -74,6 +78,8 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SYS_LOG_U32|macro|SYS_LOG_U32
 DECL|base|member|uint32_t base;
 DECL|busy|member|bool busy;
+DECL|channel_rx|member|uint8_t channel_rx;
+DECL|channel_tx|member|uint8_t channel_tx;
 DECL|clk|member|struct device *clk;
 DECL|config|member|void (*config)(struct dma_stm32_device *);
 DECL|ddata|variable|ddata
