@@ -34,6 +34,7 @@ DECL|link_up|member|bool link_up;
 DECL|mac_addr|member|uint8_t mac_addr[6];
 DECL|phy_duplex|member|phy_duplex_t phy_duplex;
 DECL|phy_speed|member|phy_speed_t phy_speed;
+DECL|phy_state_name|function|static const char *phy_state_name(enum eth_mcux_phy_state state)
 DECL|phy_state|member|enum eth_mcux_phy_state phy_state;
 DECL|phy_work|member|struct k_work phy_work;
 DECL|tx_buf_sem|member|struct k_sem tx_buf_sem;
