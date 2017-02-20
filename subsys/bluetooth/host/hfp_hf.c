@@ -33,6 +33,7 @@ DECL|hfp_hf_unsol_lookup|function|static const struct unsolicited *hfp_hf_unsol_
 DECL|max|member|uint32_t max;
 DECL|min|member|uint32_t min;
 DECL|name|member|char *name;
+DECL|ring_handle|function|int ring_handle(struct at_client *hf_at)
 DECL|slc_completed|function|static void slc_completed(struct at_client *hf_at)
 DECL|type|member|enum at_cmd_type type;
 DECL|unsolicited_cb|function|int unsolicited_cb(struct at_client *hf_at, struct net_buf *buf)
