@@ -130,6 +130,7 @@ DECL|_poll_states_bits|enum|enum _poll_states_bits {
 DECL|_poll_types_bits|enum|enum _poll_types_bits {
 DECL|_poller|struct|struct _poller {
 DECL|_queue|member|struct k_queue _queue;
+DECL|_queue|member|struct k_queue _queue;
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {
@@ -191,6 +192,9 @@ DECL|k_fifo_put_list|macro|k_fifo_put_list
 DECL|k_fifo_put_slist|macro|k_fifo_put_slist
 DECL|k_fifo_put|macro|k_fifo_put
 DECL|k_fifo|struct|struct k_fifo {
+DECL|k_lifo_get|macro|k_lifo_get
+DECL|k_lifo_init|macro|k_lifo_init
+DECL|k_lifo_put|macro|k_lifo_put
 DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
 DECL|k_mbox|struct|struct k_mbox {
@@ -231,7 +235,6 @@ DECL|k_work_submit_to_queue|function|static inline void k_work_submit_to_queue(s
 DECL|k_work_submit|function|static inline void k_work_submit(struct k_work *work)
 DECL|k_work|struct|struct k_work {
 DECL|limit|member|unsigned int limit;
-DECL|list|member|void *list;
 DECL|lock_count|member|uint32_t lock_count;
 DECL|max_block_size|member|size_t max_block_size;
 DECL|max_msgs|member|uint32_t max_msgs;
@@ -295,7 +298,6 @@ DECL|type|member|uint32_t type:_POLL_NUM_TYPES;
 DECL|unused|member|uint32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|uint32_t used_msgs;
 DECL|user_data|member|void *user_data;
-DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
