@@ -97,7 +97,6 @@ DECL|_POLL_EVENT|macro|_POLL_EVENT
 DECL|_POLL_EVENT|macro|_POLL_EVENT
 DECL|_POLL_EVENT|member|_POLL_EVENT;
 DECL|_POLL_EVENT|member|_POLL_EVENT;
-DECL|_POLL_EVENT|member|_POLL_EVENT;
 DECL|_POLL_NUM_STATES|enumerator|_POLL_NUM_STATES
 DECL|_POLL_NUM_TYPES|enumerator|_POLL_NUM_TYPES
 DECL|_POLL_STATE_BIT|macro|_POLL_STATE_BIT
@@ -130,6 +129,7 @@ DECL|_ms_to_ticks|function|static ALWAYS_INLINE int32_t _ms_to_ticks(int32_t ms)
 DECL|_poll_states_bits|enum|enum _poll_states_bits {
 DECL|_poll_types_bits|enum|enum _poll_types_bits {
 DECL|_poller|struct|struct _poller {
+DECL|_queue|member|struct k_queue _queue;
 DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {
@@ -150,7 +150,6 @@ DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
 DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
 DECL|count|member|int count;
 DECL|count|member|unsigned int count;
-DECL|data_q|member|sys_slist_t data_q;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
 DECL|delete|function|inline void operator delete(void *ptr)
@@ -185,7 +184,12 @@ DECL|k_cycle_get_32|macro|k_cycle_get_32
 DECL|k_delayed_work_remaining_get|function|static inline int32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,int32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
-DECL|k_fifo_is_empty|function|static inline int k_fifo_is_empty(struct k_fifo *fifo)
+DECL|k_fifo_get|macro|k_fifo_get
+DECL|k_fifo_init|macro|k_fifo_init
+DECL|k_fifo_is_empty|macro|k_fifo_is_empty
+DECL|k_fifo_put_list|macro|k_fifo_put_list
+DECL|k_fifo_put_slist|macro|k_fifo_put_slist
+DECL|k_fifo_put|macro|k_fifo_put
 DECL|k_fifo|struct|struct k_fifo {
 DECL|k_lifo|struct|struct k_lifo {
 DECL|k_mbox_msg|struct|struct k_mbox_msg {
@@ -257,6 +261,7 @@ DECL|poll_event|member|struct k_poll_event *poll_event;
 DECL|poller|member|struct _poller *poller;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
 DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
+DECL|queue|member|struct k_queue *queue;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
@@ -290,7 +295,6 @@ DECL|type|member|uint32_t type:_POLL_NUM_TYPES;
 DECL|unused|member|uint32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|uint32_t used_msgs;
 DECL|user_data|member|void *user_data;
-DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
