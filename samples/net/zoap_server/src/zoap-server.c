@@ -9,6 +9,11 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|context|variable|context
 DECL|context|variable|context
+DECL|core_1_attributes|variable|core_1_attributes
+DECL|core_1_path|variable|core_1_path
+DECL|core_2_attributes|variable|core_2_attributes
+DECL|core_2_path|variable|core_2_path
+DECL|core_get|function|static int core_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|find_resouce_by_observer|function|static struct zoap_resource *find_resouce_by_observer(struct zoap_resource *resources, struct zoap_observer *o)
 DECL|join_coap_multicast_group|function|static bool join_coap_multicast_group(void)
 DECL|large_create_path|variable|large_create_path
