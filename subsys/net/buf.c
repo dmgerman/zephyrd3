@@ -25,7 +25,7 @@ DECL|UNINIT_BUF|macro|UNINIT_BUF
 DECL|net_buf_alloc_debug|function|struct net_buf *net_buf_alloc_debug(struct net_buf_pool *pool, int32_t timeout, const char *func, int line) #else struct net_buf *net_buf_alloc(struct net_buf_pool *pool, int32_t timeout) #endif
 DECL|net_buf_clone|function|struct net_buf *net_buf_clone(struct net_buf *buf, int32_t timeout)
 DECL|net_buf_frag_add|function|struct net_buf *net_buf_frag_add(struct net_buf *head, struct net_buf *frag)
-DECL|net_buf_frag_del|function|struct net_buf *net_buf_frag_del(struct net_buf *parent, struct net_buf *frag)
+DECL|net_buf_frag_del_debug|function|struct net_buf *net_buf_frag_del_debug(struct net_buf *parent, struct net_buf *frag, const char *func, int line) #else struct net_buf *net_buf_frag_del(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_insert|function|void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_last|function|struct net_buf *net_buf_frag_last(struct net_buf *buf)
 DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo *fifo, int32_t timeout, const char *func, int line) #else struct net_buf *net_buf_get(struct k_fifo *fifo, int32_t timeout) #endif
