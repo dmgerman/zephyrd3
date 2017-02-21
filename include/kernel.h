@@ -43,11 +43,13 @@ DECL|K_POLL_EVENT_STATIC_INITIALIZER|macro|K_POLL_EVENT_STATIC_INITIALIZER
 DECL|K_POLL_MODE_NOTIFY_ONLY|enumerator|K_POLL_MODE_NOTIFY_ONLY = 0,
 DECL|K_POLL_NUM_MODES|enumerator|K_POLL_NUM_MODES
 DECL|K_POLL_SIGNAL_INITIALIZER|macro|K_POLL_SIGNAL_INITIALIZER
+DECL|K_POLL_STATE_DATA_AVAILABLE|macro|K_POLL_STATE_DATA_AVAILABLE
 DECL|K_POLL_STATE_EADDRINUSE|macro|K_POLL_STATE_EADDRINUSE
 DECL|K_POLL_STATE_FIFO_DATA_AVAILABLE|macro|K_POLL_STATE_FIFO_DATA_AVAILABLE
 DECL|K_POLL_STATE_NOT_READY|macro|K_POLL_STATE_NOT_READY
 DECL|K_POLL_STATE_SEM_AVAILABLE|macro|K_POLL_STATE_SEM_AVAILABLE
 DECL|K_POLL_STATE_SIGNALED|macro|K_POLL_STATE_SIGNALED
+DECL|K_POLL_TYPE_DATA_AVAILABLE|macro|K_POLL_TYPE_DATA_AVAILABLE
 DECL|K_POLL_TYPE_FIFO_DATA_AVAILABLE|macro|K_POLL_TYPE_FIFO_DATA_AVAILABLE
 DECL|K_POLL_TYPE_IGNORE|macro|K_POLL_TYPE_IGNORE
 DECL|K_POLL_TYPE_SEM_AVAILABLE|macro|K_POLL_TYPE_SEM_AVAILABLE
@@ -55,6 +57,8 @@ DECL|K_POLL_TYPE_SIGNAL|macro|K_POLL_TYPE_SIGNAL
 DECL|K_PREEMPT_THREAD|enumerator|K_PREEMPT_THREAD,
 DECL|K_PRIO_COOP|macro|K_PRIO_COOP
 DECL|K_PRIO_PREEMPT|macro|K_PRIO_PREEMPT
+DECL|K_QUEUE_DEFINE|macro|K_QUEUE_DEFINE
+DECL|K_QUEUE_INITIALIZER|macro|K_QUEUE_INITIALIZER
 DECL|K_SECONDS|macro|K_SECONDS
 DECL|K_SEM_DEFINE|macro|K_SEM_DEFINE
 DECL|K_SEM_INITIALIZER|macro|K_SEM_INITIALIZER
@@ -93,16 +97,17 @@ DECL|_POLL_EVENT|macro|_POLL_EVENT
 DECL|_POLL_EVENT|macro|_POLL_EVENT
 DECL|_POLL_EVENT|member|_POLL_EVENT;
 DECL|_POLL_EVENT|member|_POLL_EVENT;
+DECL|_POLL_EVENT|member|_POLL_EVENT;
 DECL|_POLL_NUM_STATES|enumerator|_POLL_NUM_STATES
 DECL|_POLL_NUM_TYPES|enumerator|_POLL_NUM_TYPES
 DECL|_POLL_STATE_BIT|macro|_POLL_STATE_BIT
+DECL|_POLL_STATE_DATA_AVAILABLE|enumerator|_POLL_STATE_DATA_AVAILABLE,
 DECL|_POLL_STATE_EADDRINUSE|enumerator|_POLL_STATE_EADDRINUSE,
-DECL|_POLL_STATE_FIFO_DATA_AVAILABLE|enumerator|_POLL_STATE_FIFO_DATA_AVAILABLE,
 DECL|_POLL_STATE_NOT_READY|enumerator|_POLL_STATE_NOT_READY,
 DECL|_POLL_STATE_SEM_AVAILABLE|enumerator|_POLL_STATE_SEM_AVAILABLE,
 DECL|_POLL_STATE_SIGNALED|enumerator|_POLL_STATE_SIGNALED,
 DECL|_POLL_TYPE_BIT|macro|_POLL_TYPE_BIT
-DECL|_POLL_TYPE_FIFO_DATA_AVAILABLE|enumerator|_POLL_TYPE_FIFO_DATA_AVAILABLE,
+DECL|_POLL_TYPE_DATA_AVAILABLE|enumerator|_POLL_TYPE_DATA_AVAILABLE,
 DECL|_POLL_TYPE_IGNORE|enumerator|_POLL_TYPE_IGNORE,
 DECL|_POLL_TYPE_SEM_AVAILABLE|enumerator|_POLL_TYPE_SEM_AVAILABLE,
 DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
@@ -145,6 +150,7 @@ DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
 DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
 DECL|count|member|int count;
 DECL|count|member|unsigned int count;
+DECL|data_q|member|sys_slist_t data_q;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
 DECL|delete|function|inline void operator delete(void *ptr)
@@ -199,6 +205,8 @@ DECL|k_pipe|struct|struct k_pipe {
 DECL|k_poll_event|struct|struct k_poll_event {
 DECL|k_poll_modes|enum|enum k_poll_modes {
 DECL|k_poll_signal|struct|struct k_poll_signal {
+DECL|k_queue_is_empty|function|static inline int k_queue_is_empty(struct k_queue *queue)
+DECL|k_queue|struct|struct k_queue {
 DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
 DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
@@ -282,6 +290,7 @@ DECL|type|member|uint32_t type:_POLL_NUM_TYPES;
 DECL|unused|member|uint32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|uint32_t used_msgs;
 DECL|user_data|member|void *user_data;
+DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
