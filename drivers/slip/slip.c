@@ -20,16 +20,14 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
+DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
 DECL|init_done|member|bool init_done;
-DECL|ip_drop|member|uint16_t ip_drop;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[6];
-DECL|multi_packets|member|uint16_t multi_packets;
-DECL|overflows|member|uint16_t overflows;
 DECL|process_msg|function|static void process_msg(struct slip_context *slip)
 DECL|ptr|member|uint8_t *ptr; /* Where in net_buf to add data */
 DECL|recv_cb|function|static uint8_t *recv_cb(uint8_t *buf, size_t *off)
