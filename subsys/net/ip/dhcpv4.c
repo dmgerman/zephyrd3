@@ -45,6 +45,7 @@ DECL|add_sname|function|static inline bool add_sname(struct net_buf *buf)
 DECL|chaddr|member|uint8_t chaddr[16]; /* Client hardware address */
 DECL|ciaddr|member|uint8_t ciaddr[4]; /* Client IP Address */
 DECL|dhcp_msg|struct|struct dhcp_msg {
+DECL|dhcpv4_init|function|int dhcpv4_init(void)
 DECL|dhcpv4_msg_type|enum|enum dhcpv4_msg_type {
 DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *work)
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
