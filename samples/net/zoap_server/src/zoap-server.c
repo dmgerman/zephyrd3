@@ -4,6 +4,7 @@ DECL|MY_COAP_PORT|macro|MY_COAP_PORT
 DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NUM_OBSERVERS|macro|NUM_OBSERVERS
+DECL|NUM_PENDINGS|macro|NUM_PENDINGS
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
@@ -31,12 +32,15 @@ DECL|obs_notify|function|static void obs_notify(struct zoap_resource *resource, 
 DECL|obs_path|variable|obs_path
 DECL|observer_work|variable|observer_work
 DECL|observers|variable|observers
+DECL|pendings|variable|pendings
 DECL|piggyback_get|function|static int piggyback_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|plain_text_format|variable|plain_text_format
 DECL|query_get|function|static int query_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|query_path|variable|query_path
 DECL|resource_to_notify|variable|resource_to_notify
 DECL|resources|variable|resources
+DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
+DECL|retransmit_work|variable|retransmit_work
 DECL|segments_path|variable|segments_path
 DECL|send_notification_packet|function|static int send_notification_packet(const struct sockaddr *addr, uint16_t age, socklen_t addrlen, uint16_t id, const uint8_t *token, uint8_t tkl, bool is_response)
 DECL|separate_get|function|static int separate_get(struct zoap_resource *resource,struct zoap_packet *request, const struct sockaddr *from)
