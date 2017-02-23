@@ -22,6 +22,7 @@ DECL|free|member|struct k_lifo free;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
+DECL|name|member|const char *name;
 DECL|net_buf_add_be16|macro|net_buf_add_be16
 DECL|net_buf_add_be32|macro|net_buf_add_be32
 DECL|net_buf_add_le16|macro|net_buf_add_le16
