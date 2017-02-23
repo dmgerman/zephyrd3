@@ -3,7 +3,9 @@ DECL|NET_IPV4_BUF|macro|NET_IPV4_BUF
 DECL|NET_IPV6_BUF|macro|NET_IPV6_BUF
 DECL|NET_NBUF_DATA_POOL_DEFINE|macro|NET_NBUF_DATA_POOL_DEFINE
 DECL|NET_NBUF_TX_POOL_DEFINE|macro|NET_NBUF_TX_POOL_DEFINE
+DECL|NET_RX|enumerator|NET_RX = 1,
 DECL|NET_TCP_BUF|macro|NET_TCP_BUF
+DECL|NET_TX|enumerator|NET_TX = 0,
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NBUF_H|macro|__NBUF_H
 DECL|appdatalen|member|uint16_t appdatalen;
@@ -19,6 +21,8 @@ DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func 
 DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
 DECL|lladdr_dst|member|struct net_linkaddr lladdr_dst;
 DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
+DECL|net_dir|enum|enum net_dir {
+DECL|net_dir|member|uint8_t net_dir; /* is this RX or TX buf */
 DECL|net_nbuf_add_ext_bitmap|function|static inline void net_nbuf_add_ext_bitmap(struct net_buf *buf, uint8_t bm)
 DECL|net_nbuf_appdatalen|function|static inline uint16_t net_nbuf_appdatalen(struct net_buf *buf)
 DECL|net_nbuf_appdata|function|static inline uint8_t *net_nbuf_appdata(struct net_buf *buf)
@@ -29,6 +33,7 @@ DECL|net_nbuf_buf_sent|function|static inline uint8_t net_nbuf_buf_sent(struct n
 DECL|net_nbuf_context|function|static inline struct net_context *net_nbuf_context(struct net_buf *buf)
 DECL|net_nbuf_copy_all|function|static inline struct net_buf *net_nbuf_copy_all(struct net_buf *buf,size_t reserve, int32_t timeout)
 DECL|net_nbuf_copy_user_data|function|static inline void net_nbuf_copy_user_data(struct net_buf *new, struct net_buf *orig)
+DECL|net_nbuf_dir|function|static inline uint8_t net_nbuf_dir(struct net_buf *buf)
 DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(struct net_buf *buf)
 DECL|net_nbuf_ext_len|function|static inline uint8_t net_nbuf_ext_len(struct net_buf *buf)
 DECL|net_nbuf_ext_opt_len|function|static inline uint8_t net_nbuf_ext_opt_len(struct net_buf *buf)
@@ -36,8 +41,9 @@ DECL|net_nbuf_family|function|static inline uint8_t net_nbuf_family(struct net_b
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
 DECL|net_nbuf_get_frag|macro|net_nbuf_get_frag
 DECL|net_nbuf_get_len|function|static inline uint16_t net_nbuf_get_len(struct net_buf *buf)
-DECL|net_nbuf_get_reserve_data|macro|net_nbuf_get_reserve_data
+DECL|net_nbuf_get_reserve_rx_data|macro|net_nbuf_get_reserve_rx_data
 DECL|net_nbuf_get_reserve_rx|macro|net_nbuf_get_reserve_rx
+DECL|net_nbuf_get_reserve_tx_data|macro|net_nbuf_get_reserve_tx_data
 DECL|net_nbuf_get_reserve_tx|macro|net_nbuf_get_reserve_tx
 DECL|net_nbuf_get_reserve|macro|net_nbuf_get_reserve
 DECL|net_nbuf_get_rx|macro|net_nbuf_get_rx
@@ -66,6 +72,7 @@ DECL|net_nbuf_set_appdatalen|function|static inline void net_nbuf_set_appdatalen
 DECL|net_nbuf_set_appdata|function|static inline void net_nbuf_set_appdata(struct net_buf *buf, uint8_t *data)
 DECL|net_nbuf_set_buf_sent|function|static inline void net_nbuf_set_buf_sent(struct net_buf *buf, bool sent)
 DECL|net_nbuf_set_context|function|static inline void net_nbuf_set_context(struct net_buf *buf,struct net_context *ctx)
+DECL|net_nbuf_set_dir|function|static inline void net_nbuf_set_dir(struct net_buf *buf, enum net_dir dir)
 DECL|net_nbuf_set_ext_bitmap|function|static inline void net_nbuf_set_ext_bitmap(struct net_buf *buf, uint8_t bm)
 DECL|net_nbuf_set_ext_len|function|static inline void net_nbuf_set_ext_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_ext_opt_len|function|static inline void net_nbuf_set_ext_opt_len(struct net_buf *buf, uint8_t len)
