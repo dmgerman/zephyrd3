@@ -40,7 +40,7 @@ DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(st
 DECL|net_nbuf_get_data|function|struct net_buf *net_nbuf_get_data(struct net_context *context, int32_t timeout)
 DECL|net_nbuf_get_debug|function|static struct net_buf *net_nbuf_get_debug(struct net_buf_pool *pool, struct net_context *context, int32_t timeout, const char *caller, int line) #else
 DECL|net_nbuf_get_frag_debug|function|struct net_buf *net_nbuf_get_frag_debug(struct net_buf *buf,int32_t timeout, const char *caller, int line) #else struct net_buf *net_nbuf_get_frag(struct net_buf *buf,
-DECL|net_nbuf_get_info|function|void net_nbuf_get_info(size_t *tx_size, size_t *rx_size, size_t *data_size, int *tx, int *rx, int *data)
+DECL|net_nbuf_get_info|function|void net_nbuf_get_info(struct net_buf_pool **rx, struct net_buf_pool **tx, struct net_buf_pool **data)
 DECL|net_nbuf_get_reserve_data_debug|function|struct net_buf *net_nbuf_get_reserve_data_debug(uint16_t reserve_head,int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_reserve_data|function|struct net_buf *net_nbuf_get_reserve_data(uint16_t reserve_head, int32_t timeout)
 DECL|net_nbuf_get_reserve_debug|function|struct net_buf *net_nbuf_get_reserve_debug(struct net_buf_pool *pool, uint16_t reserve_head, int32_t timeout, const char *caller, int line)
