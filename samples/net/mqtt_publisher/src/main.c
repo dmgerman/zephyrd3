@@ -1,4 +1,3 @@
-DECL|CLIENTID|macro|CLIENTID
 DECL|PRINT_RESULT|macro|PRINT_RESULT
 DECL|RC_STR|macro|RC_STR
 DECL|bt_conn_cb|variable|bt_conn_cb
