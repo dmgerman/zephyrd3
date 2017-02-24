@@ -84,8 +84,8 @@ DECL|req|member|struct bt_avdtp_req *req;
 DECL|req|member|struct bt_avdtp_req req;
 DECL|seid|member|uint8_t seid;
 DECL|signal_id|member|uint8_t signal_id;
-DECL|signal_id|member|uint8_t signal_id;
+DECL|sig|member|uint8_t sig;
 DECL|status|member|uint8_t status;
 DECL|streams|member|struct bt_avdtp_stream *streams; /* List of AV streams */
+DECL|tid|member|uint8_t tid;
 DECL|timeout_work|member|struct k_delayed_work timeout_work;
-DECL|transaction_id|member|uint8_t transaction_id;
