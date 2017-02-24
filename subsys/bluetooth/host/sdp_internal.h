@@ -21,10 +21,14 @@ DECL|BT_SDP_SVC_UPDATE_REQ|macro|BT_SDP_SVC_UPDATE_REQ
 DECL|BT_SDP_SVC_UPDATE_RSP|macro|BT_SDP_SVC_UPDATE_RSP
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|bt_sdp_hdr|struct|struct bt_sdp_hdr {
 DECL|bt_sdp_pdu_cstate|struct|struct bt_sdp_pdu_cstate {
+DECL|bt_sdp_svc_rsp|struct|struct bt_sdp_svc_rsp {
+DECL|current_recs|member|uint16_t current_recs;
 DECL|data|member|uint8_t data[BT_SDP_MAX_PDU_CSTATE_LEN];
 DECL|length|member|uint8_t length;
 DECL|op_code|member|uint8_t op_code;
 DECL|param_len|member|uint16_t param_len;
 DECL|tid|member|uint16_t tid;
+DECL|total_recs|member|uint16_t total_recs;
