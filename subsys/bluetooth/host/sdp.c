@@ -5,10 +5,12 @@ DECL|GET_PARAM|macro|GET_PARAM
 DECL|SDP_CHAN|macro|SDP_CHAN
 DECL|SDP_CLIENT_CHAN|macro|SDP_CLIENT_CHAN
 DECL|SDP_CLIENT_MTU|macro|SDP_CLIENT_MTU
+DECL|SDP_DATA_ELEM_NEST_LEVEL_MAX|macro|SDP_DATA_ELEM_NEST_LEVEL_MAX
 DECL|SDP_DATA_MTU|macro|SDP_DATA_MTU
 DECL|SDP_MTU|macro|SDP_MTU
 DECL|SDP_PSM|macro|SDP_PSM
 DECL|SDP_SERVICE_HANDLE_BASE|macro|SDP_SERVICE_HANDLE_BASE
+DECL|SDP_SS_CONT_STATE_SIZE|macro|SDP_SS_CONT_STATE_SIZE
 DECL|UUID_NOT_RESOLVED|enumerator|UUID_NOT_RESOLVED,
 DECL|UUID_RESOLVED|enumerator|UUID_RESOLVED,
 DECL|attr_id|member|uint16_t attr_id;
@@ -74,6 +76,7 @@ DECL|sdp_get_str_len|function|static inline ssize_t sdp_get_str_len(const uint8_
 DECL|sdp_get_uuid_data|function|static int sdp_get_uuid_data(const struct bt_sdp_attr_item *attr, struct bt_sdp_uuid_desc *pd, uint16_t proto_profile)
 DECL|sdp_get_uuid_len|function|static inline ssize_t sdp_get_uuid_len(const uint8_t *data, size_t len)
 DECL|sdp_svc_search_req|function|static uint16_t sdp_svc_search_req(struct bt_sdp *sdp, struct net_buf *buf, uint16_t tid)
+DECL|search_uuid|function|static uint32_t search_uuid(struct bt_sdp_data_elem *elem, struct bt_uuid *uuid, bool *found, uint8_t nest_level)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
 DECL|tid|member|uint16_t tid;
 DECL|uuid16|member|struct bt_uuid_16 uuid16;
