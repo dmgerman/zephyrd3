@@ -3,6 +3,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
+DECL|allocs_cb|function|static void allocs_cb(struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free, int line_free,
 DECL|are_external_pools|member|bool are_external_pools;
 DECL|context_cb|function|static void context_cb(struct net_context *context, void *user_data)
 DECL|context_info|function|static void context_info(struct net_context *context, void *user_data)
@@ -20,6 +21,7 @@ DECL|pool_found_already|function|static bool pool_found_already(struct ctx_info 
 DECL|pos|member|int pos;
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
 DECL|route_mcast_cb|function|static void route_mcast_cb(struct net_route_entry_mcast *entry, void *user_data)
+DECL|shell_cmd_allocs|function|static int shell_cmd_allocs(int argc, char *argv[])
 DECL|shell_cmd_conn|function|static int shell_cmd_conn(int argc, char *argv[])
 DECL|shell_cmd_help|function|static int shell_cmd_help(int argc, char *argv[])
 DECL|shell_cmd_iface|function|static int shell_cmd_iface(int argc, char *argv[])
