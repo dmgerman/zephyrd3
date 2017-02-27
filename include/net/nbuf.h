@@ -39,6 +39,7 @@ DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(stru
 DECL|net_nbuf_ext_len|function|static inline uint8_t net_nbuf_ext_len(struct net_buf *buf)
 DECL|net_nbuf_ext_opt_len|function|static inline uint8_t net_nbuf_ext_opt_len(struct net_buf *buf)
 DECL|net_nbuf_family|function|static inline uint8_t net_nbuf_family(struct net_buf *buf)
+DECL|net_nbuf_frag_del|macro|net_nbuf_frag_del
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
 DECL|net_nbuf_get_frag|macro|net_nbuf_get_frag
 DECL|net_nbuf_get_len|function|static inline uint16_t net_nbuf_get_len(struct net_buf *buf)

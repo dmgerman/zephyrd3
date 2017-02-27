@@ -49,6 +49,7 @@ DECL|net_nbuf_append_bytes|function|static inline bool net_nbuf_append_bytes(str
 DECL|net_nbuf_append|function|bool net_nbuf_append(struct net_buf *buf, uint16_t len, const uint8_t *data, int32_t timeout)
 DECL|net_nbuf_compact|function|bool net_nbuf_compact(struct net_buf *buf)
 DECL|net_nbuf_copy|function|struct net_buf *net_nbuf_copy(struct net_buf *buf, size_t amount, size_t reserve, int32_t timeout)
+DECL|net_nbuf_frag_del_debug|function|struct net_buf *net_nbuf_frag_del_debug(struct net_buf *parent,struct net_buf *frag, const char *caller, int line) #else struct net_buf *net_nbuf_frag_del(struct net_buf *parent,
 DECL|net_nbuf_get_data_debug|function|struct net_buf *net_nbuf_get_data_debug(struct net_context *context,int32_t timeout, const char *caller, int line)
 DECL|net_nbuf_get_data|function|struct net_buf *net_nbuf_get_data(struct net_context *context, int32_t timeout)
 DECL|net_nbuf_get_debug|function|static struct net_buf *net_nbuf_get_debug(struct net_buf_pool *pool, struct net_context *context, int32_t timeout, const char *caller, int line) #else
