@@ -81,7 +81,7 @@ DECL|ind|member|struct bt_avdtp_ind_cb *ind;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|req|member|struct bt_avdtp_req *req;
-DECL|req|member|struct bt_avdtp_req *req;
+DECL|req|member|struct bt_avdtp_req req;
 DECL|seid|member|uint8_t seid;
 DECL|signal_id|member|uint8_t signal_id;
 DECL|signal_id|member|uint8_t signal_id;
