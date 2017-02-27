@@ -67,7 +67,6 @@ DECL|net_nbuf_print_frags|macro|net_nbuf_print_frags
 DECL|net_nbuf_print|macro|net_nbuf_print
 DECL|net_nbuf_read_u8|function|static inline struct net_buf *net_nbuf_read_u8(struct net_buf *buf, uint16_t offset, uint16_t *pos, uint8_t *value)
 DECL|net_nbuf_ref|macro|net_nbuf_ref
-DECL|net_nbuf_reserve|function|static inline uint16_t net_nbuf_reserve(struct net_buf *buf)
 DECL|net_nbuf_set_appdatalen|function|static inline void net_nbuf_set_appdatalen(struct net_buf *buf, uint16_t len)
 DECL|net_nbuf_set_appdata|function|static inline void net_nbuf_set_appdata(struct net_buf *buf, uint8_t *data)
 DECL|net_nbuf_set_buf_sent|function|static inline void net_nbuf_set_buf_sent(struct net_buf *buf, bool sent)
@@ -94,5 +93,4 @@ DECL|net_nbuf_write_be32|function|static inline struct net_buf *net_nbuf_write_b
 DECL|net_nbuf_write_u8|function|static inline struct net_buf *net_nbuf_write_u8(struct net_buf *buf,struct net_buf *frag, uint16_t offset, uint16_t *pos, uint8_t data)
 DECL|net_nbuf|struct|struct net_nbuf {
 DECL|next_hdr|member|uint8_t *next_hdr; /* where is the next header */
-DECL|reserve|member|uint16_t reserve; /* length of the protocol headers */
 DECL|token|member|void *token;
