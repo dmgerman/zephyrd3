@@ -24,6 +24,7 @@ DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
 DECL|net_dir|enum|enum net_dir {
 DECL|net_dir|member|uint8_t net_dir; /* is this RX or TX buf */
 DECL|net_nbuf_add_ext_bitmap|function|static inline void net_nbuf_add_ext_bitmap(struct net_buf *buf, uint8_t bm)
+DECL|net_nbuf_allocs_cb_t|typedef|typedef void (*net_nbuf_allocs_cb_t)(struct net_buf *buf,
 DECL|net_nbuf_appdatalen|function|static inline uint16_t net_nbuf_appdatalen(struct net_buf *buf)
 DECL|net_nbuf_appdata|function|static inline uint8_t *net_nbuf_appdata(struct net_buf *buf)
 DECL|net_nbuf_append_be16|function|static inline bool net_nbuf_append_be16(struct net_buf *buf, uint16_t data)
