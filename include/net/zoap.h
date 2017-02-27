@@ -60,13 +60,16 @@ DECL|ZOAP_TYPE_NON_CON|enumerator|ZOAP_TYPE_NON_CON = 1,
 DECL|ZOAP_TYPE_RESET|enumerator|ZOAP_TYPE_RESET = 3
 DECL|__ZOAP_H__|macro|__ZOAP_H__
 DECL|addr|member|struct sockaddr addr;
+DECL|addr|member|struct sockaddr addr;
 DECL|age|member|int age;
 DECL|age|member|int age;
 DECL|block_size|member|enum zoap_block_size block_size;
 DECL|buf|member|struct net_buf *buf;
+DECL|buf|member|struct net_buf *buf;
 DECL|current|member|size_t current;
 DECL|del|member|zoap_method_t get, post, put, del;
 DECL|get|member|zoap_method_t get, post, put, del;
+DECL|id|member|uint16_t id;
 DECL|len|member|uint16_t len;
 DECL|list|member|sys_snode_t list;
 DECL|notify|member|zoap_notify_t notify;
@@ -75,7 +78,6 @@ DECL|path|member|const char * const *path;
 DECL|post|member|zoap_method_t get, post, put, del;
 DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
-DECL|request|member|struct zoap_packet request;
 DECL|start|member|uint8_t *start; /* Start of the payload */
 DECL|timeout|member|int32_t timeout;
 DECL|tkl|member|uint8_t tkl;

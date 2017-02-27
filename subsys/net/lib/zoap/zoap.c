@@ -29,7 +29,6 @@ DECL|get_block_option|function|static int get_block_option(const struct zoap_pac
 DECL|get_observe_option|function|static int get_observe_option(const struct zoap_packet *pkt)
 DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
 DECL|is_request|function|static bool is_request(const struct zoap_packet *pkt)
-DECL|match_response|function|static bool match_response(const struct zoap_packet *request, const struct zoap_packet *response)
 DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, uint8_t code)
 DECL|more|member|bool more;
 DECL|next_timeout|function|static int32_t next_timeout(int32_t previous)
@@ -73,7 +72,7 @@ DECL|zoap_packet_parse|function|int zoap_packet_parse(struct zoap_packet *pkt, s
 DECL|zoap_packet_set_used|function|int zoap_packet_set_used(struct zoap_packet *pkt, uint16_t len)
 DECL|zoap_pending_clear|function|void zoap_pending_clear(struct zoap_pending *pending)
 DECL|zoap_pending_cycle|function|bool zoap_pending_cycle(struct zoap_pending *pending)
-DECL|zoap_pending_init|function|int zoap_pending_init(struct zoap_pending *pending, const struct zoap_packet *request)
+DECL|zoap_pending_init|function|int zoap_pending_init(struct zoap_pending *pending, const struct zoap_packet *request, const struct sockaddr *addr)
 DECL|zoap_pending_next_to_expire|function|struct zoap_pending *zoap_pending_next_to_expire(struct zoap_pending *pendings, size_t len)
 DECL|zoap_pending_next_unused|function|struct zoap_pending *zoap_pending_next_unused(struct zoap_pending *pendings, size_t len)
 DECL|zoap_pending_received|function|struct zoap_pending *zoap_pending_received(const struct zoap_packet *response, struct zoap_pending *pendings, size_t len)
