@@ -29,6 +29,7 @@ DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_
 DECL|net_ipv6_nbr_lookup|function|static inline struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_set_reachable_timer|function|static inline void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_prepare_for_send|function|static inline struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
+DECL|net_nbr_cb_t|typedef|typedef void (*net_nbr_cb_t)(struct net_nbr *nbr, void *user_data);
 DECL|net_nbr_state|enum|enum net_nbr_state {
 DECL|ns_count|member|uint8_t ns_count;
 DECL|pending|member|struct net_buf *pending;
