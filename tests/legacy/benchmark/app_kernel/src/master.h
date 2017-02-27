@@ -19,6 +19,7 @@ DECL|SLINE_LEN|macro|SLINE_LEN
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_MASTER_H|macro|_MASTER_H
 DECL|check_result|macro|check_result
+DECL|dashline|macro|dashline
 DECL|event_test|macro|event_test
 DECL|mailbox_test|macro|mailbox_test
 DECL|memorymap_test|macro|memorymap_test

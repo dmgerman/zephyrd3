@@ -2,3 +2,15 @@ DECL|BENCH_START|function|static inline uint32_t BENCH_START(void)
 DECL|NUMBER_OF_LOOPS|macro|NUMBER_OF_LOOPS
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYSKERNEK_H|macro|SYSKERNEK_H
+DECL|sz_case_details_fmt|macro|sz_case_details_fmt
+DECL|sz_case_end_fmt|macro|sz_case_end_fmt
+DECL|sz_case_result_fmt|macro|sz_case_result_fmt
+DECL|sz_case_timing_fmt|macro|sz_case_timing_fmt
+DECL|sz_date_fmt|macro|sz_date_fmt
+DECL|sz_description|macro|sz_description
+DECL|sz_kernel_ver_fmt|macro|sz_kernel_ver_fmt
+DECL|sz_module_end_fmt|macro|sz_module_end_fmt
+DECL|sz_module_result_fmt|macro|sz_module_result_fmt
+DECL|sz_module_title_fmt|macro|sz_module_title_fmt
+DECL|sz_test_case_fmt|macro|sz_test_case_fmt
+DECL|sz_test_start_fmt|macro|sz_test_start_fmt
