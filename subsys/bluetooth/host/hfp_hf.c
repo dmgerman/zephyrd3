@@ -6,8 +6,10 @@ DECL|brsf_finish|function|int brsf_finish(struct at_client *hf_at, enum at_resul
 DECL|brsf_handle|function|int brsf_handle(struct at_client *hf_at)
 DECL|brsf_resp|function|int brsf_resp(struct at_client *hf_at, struct net_buf *buf)
 DECL|bt_hfp_hf_accept|function|static int bt_hfp_hf_accept(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc)
+DECL|bt_hfp_hf_lookup_bt_conn|function|static struct bt_hfp_hf *bt_hfp_hf_lookup_bt_conn(struct bt_conn *conn)
 DECL|bt_hfp_hf_pool|variable|bt_hfp_hf_pool
 DECL|bt_hfp_hf_register|function|int bt_hfp_hf_register(struct bt_hfp_hf_cb *cb)
+DECL|bt_hfp_hf_send_cmd|function|int bt_hfp_hf_send_cmd(struct bt_conn *conn, enum bt_hfp_hf_at_cmd cmd)
 DECL|bt_hf|variable|bt_hf
 DECL|ciev_handle|function|int ciev_handle(struct at_client *hf_at)
 DECL|cind_finish|function|int cind_finish(struct at_client *hf_at, enum at_result result,enum at_cme cme_err)
@@ -17,6 +19,7 @@ DECL|cind_resp|function|int cind_resp(struct at_client *hf_at, struct net_buf *b
 DECL|cind_status_finish|function|int cind_status_finish(struct at_client *hf_at, enum at_result result, enum at_cme cme_err)
 DECL|cind_status_handle|function|int cind_status_handle(struct at_client *hf_at)
 DECL|cind_status_resp|function|int cind_status_resp(struct at_client *hf_at, struct net_buf *buf)
+DECL|cmd_complete|function|int cmd_complete(struct at_client *hf_at, enum at_result result, enum at_cme cme_err)
 DECL|cmd|member|const char *cmd;
 DECL|cmee_finish|function|int cmee_finish(struct at_client *hf_at, enum at_result result,enum at_cme cme_err)
 DECL|cmer_finish|function|int cmer_finish(struct at_client *hf_at, enum at_result result,enum at_cme cme_err)
