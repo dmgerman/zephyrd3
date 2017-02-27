@@ -20,6 +20,7 @@ DECL|bt_gatt_disconnected|function|void bt_gatt_disconnected(struct bt_conn *con
 DECL|bt_gatt_discover|function|int bt_gatt_discover(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|bt_gatt_exchange_mtu|function|int bt_gatt_exchange_mtu(struct bt_conn *conn, struct bt_gatt_exchange_params *params)
 DECL|bt_gatt_foreach_attr|function|void bt_gatt_foreach_attr(uint16_t start_handle, uint16_t end_handle, bt_gatt_attr_func_t func, void *user_data)
+DECL|bt_gatt_get_mtu|function|uint16_t bt_gatt_get_mtu(struct bt_conn *conn)
 DECL|bt_gatt_indicate|function|int bt_gatt_indicate(struct bt_conn *conn, struct bt_gatt_indicate_params *params)
 DECL|bt_gatt_notification|function|void bt_gatt_notification(struct bt_conn *conn, uint16_t handle, const void *data, uint16_t length)
 DECL|bt_gatt_notify|function|int bt_gatt_notify(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *data, uint16_t len)
