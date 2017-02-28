@@ -5,11 +5,11 @@ DECL|_do_read_cpu_timestamp32|function|uint32_t _do_read_cpu_timestamp32(void)
 DECL|_tsc_read|function|static inline uint64_t _tsc_read(void)
 DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(uint32_t op)
 DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(uint32_t op)
-DECL|sys_bitfield_clear_bit|function|void sys_bitfield_clear_bit(void *addr, unsigned int bit)
-DECL|sys_bitfield_set_bit|function|void sys_bitfield_set_bit(void *addr, unsigned int bit)
-DECL|sys_bitfield_test_and_clear_bit|function|int sys_bitfield_test_and_clear_bit(void *addr, unsigned int bit)
-DECL|sys_bitfield_test_and_set_bit|function|int sys_bitfield_test_and_set_bit(void *addr, unsigned int bit)
-DECL|sys_bitfield_test_bit|function|int sys_bitfield_test_bit(void *addr, unsigned int bit)
+DECL|sys_bitfield_clear_bit|macro|sys_bitfield_clear_bit
+DECL|sys_bitfield_set_bit|macro|sys_bitfield_set_bit
+DECL|sys_bitfield_test_and_clear_bit|macro|sys_bitfield_test_and_clear_bit
+DECL|sys_bitfield_test_and_set_bit|macro|sys_bitfield_test_and_set_bit
+DECL|sys_bitfield_test_bit|macro|sys_bitfield_test_bit
 DECL|sys_clear_bit|function|void sys_clear_bit(mem_addr_t addr, unsigned int bit)
 DECL|sys_in16|function|uint16_t sys_in16(io_port_t port)
 DECL|sys_in32|function|uint32_t sys_in32(io_port_t port)
