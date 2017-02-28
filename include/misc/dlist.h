@@ -14,6 +14,7 @@ DECL|next|member|struct _dnode *next; /* ptr to next node (sys_dnode_t) */
 DECL|prev|member|struct _dnode *prev; /* ptr to previous node (sys_dnode_t) */
 DECL|sys_dlist_append|function|static inline void sys_dlist_append(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_get|function|static inline sys_dnode_t *sys_dlist_get(sys_dlist_t *list)
+DECL|sys_dlist_has_multiple_nodes|function|static inline int sys_dlist_has_multiple_nodes(sys_dlist_t *list)
 DECL|sys_dlist_init|function|static inline void sys_dlist_init(sys_dlist_t *list)
 DECL|sys_dlist_insert_after|function|static inline void sys_dlist_insert_after(sys_dlist_t *list,sys_dnode_t *insert_point, sys_dnode_t *node)
 DECL|sys_dlist_insert_at|function|static inline void sys_dlist_insert_at(sys_dlist_t *list, sys_dnode_t *node,int (*cond)(sys_dnode_t *, void *), void *data)
