@@ -44,7 +44,13 @@ DECL|_HPET_MAIN_COUNTER_VALUE|macro|_HPET_MAIN_COUNTER_VALUE
 DECL|_HPET_TIMER0_COMPARATOR|macro|_HPET_TIMER0_COMPARATOR
 DECL|_HPET_TIMER0_CONFIG_CAPS|macro|_HPET_TIMER0_CONFIG_CAPS
 DECL|_HPET_TIMER0_FSB_INT_ROUTE|macro|_HPET_TIMER0_FSB_INT_ROUTE
+DECL|_enable_sys_clock|function|void _enable_sys_clock(void)
+DECL|_get_elapsed_clock_time|function|u64_t _get_elapsed_clock_time(void)
+DECL|_get_elapsed_program_time|function|u32_t _get_elapsed_program_time(void)
+DECL|_get_program_time|function|u32_t _get_program_time(void)
+DECL|_get_remaining_program_time|function|u32_t _get_remaining_program_time(void)
 DECL|_hpetMainCounterAtomic|function|static u64_t _hpetMainCounterAtomic(void)
+DECL|_set_time|function|void _set_time(u32_t time)
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_cycle_get_32|function|u32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t ticks /* system ticks */)
@@ -54,6 +60,7 @@ DECL|counter_last_value|variable|counter_last_value
 DECL|counter_load_value|variable|counter_load_value
 DECL|main_count_expected_value|variable|main_count_expected_value
 DECL|main_count_first_irq_value|variable|main_count_first_irq_value
+DECL|program_max_cycles|function|static inline void program_max_cycles(void)
 DECL|programmed_ticks|variable|programmed_ticks
 DECL|stale_irq_check|variable|stale_irq_check
 DECL|sys_clock_disable|function|void sys_clock_disable(void)
