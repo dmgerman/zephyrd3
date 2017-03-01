@@ -12,13 +12,13 @@ DECL|init_testing|function|static void init_testing(void)
 DECL|init_testing|function|static void init_testing(void)
 DECL|main|function|int main(void)
 DECL|main|function|void main(void)
-DECL|mutex|variable|mutex
 DECL|phase|variable|phase
 DECL|run_test_functions|function|static void run_test_functions(struct unit_test *test)
 DECL|run_test|function|static int run_test(struct unit_test *test)
 DECL|run_test|function|static int run_test(struct unit_test *test)
 DECL|stack_fail|variable|stack_fail
 DECL|test_cb|function|static void test_cb(void *a, void *dummy2, void *dummy)
+DECL|test_end_signal|variable|test_end_signal
 DECL|test_fail|variable|test_fail
 DECL|test_result|variable|test_result
 DECL|test_status|variable|test_status
