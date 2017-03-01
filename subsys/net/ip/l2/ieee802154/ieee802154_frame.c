@@ -5,7 +5,7 @@ DECL|data_addr_to_fs_settings|function|void data_addr_to_fs_settings(struct net_
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|generate_addressing_fields|function|uint8_t *generate_addressing_fields(struct net_if *iface, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params, uint8_t *p_buf)
-DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(uint8_t **p_buf, uint8_t ack)
+DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(uint8_t **p_buf, bool ack)
 DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_if *iface, struct net_linkaddr *dst, bool *broadcast)
 DECL|ieee802154_compute_header_size|function|uint16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
 DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_buf *buf, uint8_t seq)
