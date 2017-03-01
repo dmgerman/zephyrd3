@@ -42,6 +42,7 @@ DECL|line_alloc|member|uint16_t line_alloc;
 DECL|line_free|member|uint16_t line_free;
 DECL|nbuf_alloc_add|function|static bool nbuf_alloc_add(struct net_buf *buf, const char *func, int line)
 DECL|nbuf_alloc_del|function|static bool nbuf_alloc_del(struct net_buf *buf, const char *func, int line)
+DECL|nbuf_alloc_find|function|static bool nbuf_alloc_find(struct net_buf *buf, const char **func_free, int *line_free)
 DECL|nbuf_allocs|variable|nbuf_allocs
 DECL|nbuf_alloc|struct|struct nbuf_alloc {
 DECL|net_nbuf_allocs_foreach|function|void net_nbuf_allocs_foreach(net_nbuf_allocs_cb_t cb, void *user_data)
