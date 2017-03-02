@@ -2,6 +2,7 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|BT_SDP_ITER_CONTINUE|enumerator|BT_SDP_ITER_CONTINUE,
 DECL|BT_SDP_ITER_STOP|enumerator|BT_SDP_ITER_STOP,
 DECL|GET_PARAM|macro|GET_PARAM
+DECL|IN_RANGE|macro|IN_RANGE
 DECL|MAX_NUM_ATT_ID_FILTER|macro|MAX_NUM_ATT_ID_FILTER
 DECL|SDP_CHAN|macro|SDP_CHAN
 DECL|SDP_CLIENT_CHAN|macro|SDP_CLIENT_CHAN
@@ -18,6 +19,7 @@ DECL|UUID_RESOLVED|enumerator|UUID_RESOLVED,
 DECL|attr_id|member|uint16_t attr_id;
 DECL|attr_id|member|uint16_t attr_id;
 DECL|bt_sdp_accept|function|static int bt_sdp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
+DECL|bt_sdp_attr_func_t|typedef|typedef uint8_t (*bt_sdp_attr_func_t)(struct bt_sdp_attribute *attr,
 DECL|bt_sdp_attr_item|struct|struct bt_sdp_attr_item {
 DECL|bt_sdp_client_pool|variable|bt_sdp_client_pool
 DECL|bt_sdp_client|struct|struct bt_sdp_client {
@@ -25,6 +27,7 @@ DECL|bt_sdp_connected|function|static void bt_sdp_connected(struct bt_l2cap_chan
 DECL|bt_sdp_create_pdu|function|static struct net_buf *bt_sdp_create_pdu(void)
 DECL|bt_sdp_disconnected|function|static void bt_sdp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_sdp_discover|function|int bt_sdp_discover(struct bt_conn *conn, const struct bt_sdp_discover_params *params)
+DECL|bt_sdp_foreach_attr|function|static uint8_t bt_sdp_foreach_attr(struct bt_sdp_record *record, uint8_t idx, bt_sdp_attr_func_t func, void *user_data)
 DECL|bt_sdp_foreach_svc|function|static struct bt_sdp_record *bt_sdp_foreach_svc(bt_sdp_svc_func_t func,void *user_data)
 DECL|bt_sdp_get_attr|function|static int bt_sdp_get_attr(const struct net_buf *buf, struct bt_sdp_attr_item *attr, uint16_t attr_id)
 DECL|bt_sdp_get_features|function|int bt_sdp_get_features(const struct net_buf *buf, uint16_t *features)
@@ -40,8 +43,11 @@ DECL|bt_sdp_uuid_desc|struct|struct bt_sdp_uuid_desc {
 DECL|bt_sdp|struct|struct bt_sdp {
 DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_br_chan chan;
+DECL|create_attr_resp|function|static void create_attr_resp(struct bt_sdp *sdp, struct bt_sdp_record *record, uint32_t *filter, uint8_t num_filters, uint16_t max_att_len, uint8_t next_att)
 DECL|cstate|member|struct bt_sdp_pdu_cstate cstate;
 DECL|db|variable|db
+DECL|filter|member|uint32_t *filter;
+DECL|find_handle|function|static uint8_t find_handle(struct bt_sdp_record *rec, void *user_data)
 DECL|find_services|function|static uint16_t find_services(struct net_buf *buf, struct bt_sdp_record **matching_recs)
 DECL|func|member|uint16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
 DECL|get_att_search_list|function|static uint16_t get_att_search_list(struct net_buf *buf, uint32_t *filter, uint8_t *num_filters)
@@ -49,6 +55,8 @@ DECL|get_record_len|function|static uint16_t get_record_len(struct net_buf *buf)
 DECL|handlers|variable|handlers
 DECL|insert_record|function|static uint8_t insert_record(struct bt_sdp_record *rec, void *user_data)
 DECL|len|member|uint16_t len;
+DECL|max_att_len|member|uint16_t max_att_len;
+DECL|num_filters|member|uint8_t num_filters;
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
 DECL|params_len|member|uint16_t params_len;
@@ -57,6 +65,7 @@ DECL|param|member|const struct bt_sdp_discover_params *param;
 DECL|parse_data_elem|function|static uint16_t parse_data_elem(struct net_buf *buf,struct bt_sdp_data_elem *data_elem)
 DECL|partial_resp_queue|member|struct k_fifo partial_resp_queue;
 DECL|rec_buf|member|struct net_buf *rec_buf;
+DECL|rec|member|struct bt_sdp_record *rec;
 DECL|reqs|member|sys_slist_t reqs;
 DECL|sdp_client_alloc_buf|function|static struct net_buf *sdp_client_alloc_buf(struct bt_l2cap_chan *chan)
 DECL|sdp_client_chan_connect|function|static int sdp_client_chan_connect(struct bt_sdp_client *session)
@@ -80,7 +89,10 @@ DECL|sdp_get_uuid_data|function|static int sdp_get_uuid_data(const struct bt_sdp
 DECL|sdp_get_uuid_len|function|static inline ssize_t sdp_get_uuid_len(const uint8_t *data, size_t len)
 DECL|sdp_svc_att_req|function|static uint16_t sdp_svc_att_req(struct bt_sdp *sdp, struct net_buf *buf,uint16_t tid)
 DECL|sdp_svc_search_req|function|static uint16_t sdp_svc_search_req(struct bt_sdp *sdp, struct net_buf *buf, uint16_t tid)
+DECL|sdp|member|struct bt_sdp *sdp;
 DECL|search_uuid|function|static uint32_t search_uuid(struct bt_sdp_data_elem *elem, struct bt_uuid *uuid, bool *found, uint8_t nest_level)
+DECL|select_attrs_data|struct|struct select_attrs_data {
+DECL|select_attrs|function|static uint8_t select_attrs(struct bt_sdp_attribute *attr, uint8_t att_idx, void *user_data)
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_l2cap_chan *chan, uint16_t err, uint16_t tid)
 DECL|tid|member|uint16_t tid;
 DECL|uuid16|member|struct bt_uuid_16 uuid16;
