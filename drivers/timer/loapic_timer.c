@@ -21,6 +21,12 @@ DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER_ICR|macro|_REG_TIMER_ICR
 DECL|_REG_TIMER|macro|_REG_TIMER
 DECL|_REG_TIMER|macro|_REG_TIMER
+DECL|_enable_sys_clock|function|void _enable_sys_clock(void)
+DECL|_get_elapsed_clock_time|function|u64_t _get_elapsed_clock_time(void)
+DECL|_get_elapsed_program_time|function|u32_t _get_elapsed_program_time(void)
+DECL|_get_program_time|function|u32_t _get_program_time(void)
+DECL|_get_remaining_program_time|function|u32_t _get_remaining_program_time(void)
+DECL|_set_time|function|void _set_time(u32_t time)
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_cycle_get_32|function|u32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t ticks /* system ticks */)
@@ -36,6 +42,7 @@ DECL|loapic_timer_device_power_state|variable|loapic_timer_device_power_state
 DECL|max_system_ticks|variable|max_system_ticks
 DECL|one_shot_mode_set|function|static inline void one_shot_mode_set(void)
 DECL|periodic_mode_set|function|static inline void periodic_mode_set(void)
+DECL|program_max_cycles|function|static inline void program_max_cycles(void)
 DECL|programmed_cycles|variable|programmed_cycles
 DECL|programmed_full_ticks|variable|programmed_full_ticks
 DECL|reg_timer_cfg_save|variable|reg_timer_cfg_save
