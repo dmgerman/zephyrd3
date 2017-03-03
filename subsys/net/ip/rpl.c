@@ -123,7 +123,7 @@ DECL|net_rpl_set_root_with_version|function|struct net_rpl_dag *net_rpl_set_root
 DECL|net_rpl_set_root|function|struct net_rpl_dag *net_rpl_set_root(struct net_if *iface, uint8_t instance_id, struct in6_addr *dag_id)
 DECL|net_rpl_update_header_empty|function|static int net_rpl_update_header_empty(struct net_buf *buf)
 DECL|net_rpl_update_header|function|int net_rpl_update_header(struct net_buf *buf, struct in6_addr *addr)
-DECL|net_rpl_verify_header|function|bool net_rpl_verify_header(struct net_buf *buf, uint16_t offset, uint16_t *pos)
+DECL|net_rpl_verify_header|function|struct net_buf *net_rpl_verify_header(struct net_buf *buf, struct net_buf *frag, uint16_t offset, uint16_t *pos, bool *result)
 DECL|new_dio_interval|function|static void new_dio_interval(struct net_rpl_instance *instance)
 DECL|nullify_parents|function|static void nullify_parents(struct net_if *iface, struct net_rpl_dag *dag, uint16_t minimum_rank)
 DECL|remove_parents|function|static void remove_parents(struct net_if *iface, struct net_rpl_dag *dag, uint16_t minimum_rank)
