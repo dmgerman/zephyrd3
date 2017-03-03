@@ -6,6 +6,7 @@ DECL|check_ip_addr|macro|check_ip_addr
 DECL|check_unknown_option|function|static inline struct net_buf *check_unknown_option(struct net_buf *buf, uint8_t opt_type, uint16_t length)
 DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_buf *buf, struct net_buf *frag, int total_len, uint16_t len, uint16_t offset,
 DECL|init_rx_queue|function|static void init_rx_queue(void)
+DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(uint8_t proto)
 DECL|l2_init|function|static inline void l2_init(void)
 DECL|l3_init|function|static inline void l3_init(void)
 DECL|net_init|function|static int net_init(struct device *unused)
