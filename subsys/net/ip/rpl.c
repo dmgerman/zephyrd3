@@ -109,6 +109,7 @@ DECL|net_rpl_remove_parent|function|static void net_rpl_remove_parent(struct net
 DECL|net_rpl_remove_routes|function|static void net_rpl_remove_routes(struct net_rpl_dag *dag)
 DECL|net_rpl_repair_root|function|static bool net_rpl_repair_root(uint8_t instance_id)
 DECL|net_rpl_reset_dio_timer|function|static void net_rpl_reset_dio_timer(struct net_rpl_instance *instance)
+DECL|net_rpl_revert_header|function|int net_rpl_revert_header(struct net_buf *buf, uint16_t offset, uint16_t *pos)
 DECL|net_rpl_schedule_dao_now|function|static inline void net_rpl_schedule_dao_now(struct net_rpl_instance *instance)
 DECL|net_rpl_schedule_dao|function|static inline void net_rpl_schedule_dao(struct net_rpl_instance *instance)
 DECL|net_rpl_schedule_probing|function|static void net_rpl_schedule_probing(struct net_rpl_instance *instance)
