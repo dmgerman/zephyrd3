@@ -46,4 +46,6 @@ DECL|s_sdhcBase|variable|s_sdhcBase
 DECL|s_sdhcClock|variable|s_sdhcClock
 DECL|s_sdhcHandle|variable|s_sdhcHandle
 DECL|s_sdhcIRQ|variable|s_sdhcIRQ
+DECL|s_sdhcIsr|variable|s_sdhcIsr
 DECL|sdhc_adma_table_config_t|typedef|} sdhc_adma_table_config_t;
+DECL|sdhc_isr_t|typedef|typedef void (*sdhc_isr_t)(SDHC_Type *base, sdhc_handle_t *handle);

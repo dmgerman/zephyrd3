@@ -68,13 +68,13 @@ DECL|_sdhc_transfer_config|struct|typedef struct _sdhc_transfer_config
 DECL|_sdhc_transfer_flag|enum|enum _sdhc_transfer_flag
 DECL|_sdhc_transfer|struct|typedef struct _sdhc_transfer
 DECL|_sdhc_wakeup_event|enum|enum _sdhc_wakeup_event
-DECL|ackTimeoutCount|member|uint32_t ackTimeoutCount; /*!< Timeout value for the boot ACK */
+DECL|ackTimeoutCount|member|uint32_t ackTimeoutCount; /*!< Timeout value for the boot ACK. The available range is 0 ~ 15. */
 DECL|address|member|const uint32_t *address; /*!< The address field */
 DECL|argument|member|uint32_t argument; /*!< Command argument */
 DECL|attribute|member|uint32_t attribute; /*!< The control and status field */
 DECL|base|member|SDHC_Type *base; /*!< SDHC peripheral base address */
 DECL|blockCount|member|uint32_t blockCount; /*!< Block count */
-DECL|blockCount|member|uint32_t blockCount; /*!< Stop at block gap value of automatic mode */
+DECL|blockCount|member|uint32_t blockCount; /*!< Stop at block gap value of automatic mode. Available range is 0 ~ 65535. */
 DECL|blockSize|member|size_t blockSize; /*!< Block size */
 DECL|bootMode|member|sdhc_boot_mode_t bootMode; /*!< Boot mode selection. */
 DECL|callback|member|sdhc_transfer_callback_t callback; /*!< Callback function */
@@ -256,7 +256,7 @@ DECL|kStatus_SDHC_SendCommandFailed|enumerator|kStatus_SDHC_SendCommandFailed = 
 DECL|kStatus_SDHC_TransferDataFailed|enumerator|kStatus_SDHC_TransferDataFailed = MAKE_STATUS(kStatusGroup_SDHC, 3U), /*!< Transfer data failed */
 DECL|maxBlockCount|member|uint32_t maxBlockCount; /*!< Maximum block count can be set one time */
 DECL|maxBlockLength|member|uint32_t maxBlockLength; /*!< Maximum block length united as byte */
-DECL|readWatermarkLevel|member|uint32_t readWatermarkLevel; /*!< Watermark level for DMA read operation */
+DECL|readWatermarkLevel|member|uint32_t readWatermarkLevel; /*!< Watermark level for DMA read operation. Available range is 1 ~ 128. */
 DECL|responseType|member|sdhc_response_type_t responseType; /*!< Command response type */
 DECL|response|member|uint32_t response[4U]; /*!< Response for this command */
 DECL|rxData|member|uint32_t *rxData; /*!< Buffer to save data read */
@@ -288,4 +288,4 @@ DECL|txData|member|const uint32_t *txData; /*!< Data buffer to write */
 DECL|type|member|sdhc_command_type_t type; /*!< Command type */
 DECL|userData|member|void *userData; /*!< Parameter for transfer complete callback */
 DECL|vendorVersion|member|uint32_t vendorVersion; /*!< Vendor version */
-DECL|writeWatermarkLevel|member|uint32_t writeWatermarkLevel; /*!< Watermark level for DMA write operation */
+DECL|writeWatermarkLevel|member|uint32_t writeWatermarkLevel; /*!< Watermark level for DMA write operation. Available range is 1 ~ 128. */

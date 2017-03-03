@@ -1,3 +1,7 @@
+DECL|DisableDeepSleepIRQ|function|void DisableDeepSleepIRQ(IRQn_Type interrupt)
+DECL|DisableDeepSleepIRQ|function|void DisableDeepSleepIRQ(IRQn_Type interrupt)
+DECL|EnableDeepSleepIRQ|function|void EnableDeepSleepIRQ(IRQn_Type interrupt)
+DECL|EnableDeepSleepIRQ|function|void EnableDeepSleepIRQ(IRQn_Type interrupt)
 DECL|InstallIRQHandler|function|void InstallIRQHandler(IRQn_Type irq, uint32_t irqHandler)
 DECL|__RAM_VECTOR_TABLE_SIZE|macro|__RAM_VECTOR_TABLE_SIZE
 DECL|__VECTOR_RAM|macro|__VECTOR_RAM

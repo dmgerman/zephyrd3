@@ -1,4 +1,7 @@
 DECL|FSL_FTM_DRIVER_VERSION|macro|FSL_FTM_DRIVER_VERSION
+DECL|FTM_ClearQuadDecoderCounterValue|function|static inline void FTM_ClearQuadDecoderCounterValue(FTM_Type *base)
+DECL|FTM_GetQuadDecoderCounterValue|function|static inline uint32_t FTM_GetQuadDecoderCounterValue(FTM_Type *base)
+DECL|FTM_GetQuadDecoderFlags|function|static inline uint32_t FTM_GetQuadDecoderFlags(FTM_Type *base)
 DECL|FTM_SetComplementaryEnable|function|static inline void FTM_SetComplementaryEnable(FTM_Type *base, ftm_chnl_t chnlPairNumber, bool value)
 DECL|FTM_SetDeadTimeEnable|function|static inline void FTM_SetDeadTimeEnable(FTM_Type *base, ftm_chnl_t chnlPairNumber, bool value)
 DECL|FTM_SetFaultControlEnable|function|static inline void FTM_SetFaultControlEnable(FTM_Type *base, ftm_chnl_t chnlPairNumber, bool value)
@@ -6,6 +9,7 @@ DECL|FTM_SetGlobalTimeBaseOutputEnable|function|static inline void FTM_SetGlobal
 DECL|FTM_SetInvertEnable|function|static inline void FTM_SetInvertEnable(FTM_Type *base, ftm_chnl_t chnlPairNumber, bool value)
 DECL|FTM_SetOutputMask|function|static inline void FTM_SetOutputMask(FTM_Type *base, ftm_chnl_t chnlNumber, bool mask)
 DECL|FTM_SetPwmOutputEnable|function|static inline void FTM_SetPwmOutputEnable(FTM_Type *base, ftm_chnl_t chnlNumber, bool value)
+DECL|FTM_SetQuadDecoderModuloValue|function|static inline void FTM_SetQuadDecoderModuloValue(FTM_Type *base, uint32_t startValue, uint32_t overValue)
 DECL|FTM_SetSoftwareCtrlEnable|function|static inline void FTM_SetSoftwareCtrlEnable(FTM_Type *base, ftm_chnl_t chnlNumber, bool value)
 DECL|FTM_SetSoftwareCtrlVal|function|static inline void FTM_SetSoftwareCtrlVal(FTM_Type *base, ftm_chnl_t chnlNumber, bool value)
 DECL|FTM_SetSoftwareTrigger|function|static inline void FTM_SetSoftwareTrigger(FTM_Type *base, bool enable)
@@ -35,6 +39,7 @@ DECL|_ftm_pwm_level_select|enum|typedef enum _ftm_pwm_level_select
 DECL|_ftm_pwm_mode|enum|typedef enum _ftm_pwm_mode
 DECL|_ftm_pwm_sync_method|enum|typedef enum _ftm_pwm_sync_method
 DECL|_ftm_quad_decode_mode|enum|typedef enum _ftm_quad_decode_mode
+DECL|_ftm_quad_decoder_flags|enum|enum _ftm_quad_decoder_flags
 DECL|_ftm_reload_point|enum|typedef enum _ftm_reload_point
 DECL|_ftm_status_flags|enum|typedef enum _ftm_status_flags
 DECL|bdmMode|member|ftm_bdm_mode_t bdmMode; /*!< FTM behavior in BDM mode */
@@ -43,13 +48,13 @@ DECL|chnlNumber|member|ftm_chnl_t chnlNumber; /*!< The channel/channel pair numb
 DECL|chnlPolarity|member|uint8_t chnlPolarity; /*!< Defines the output polarity of the channels in POL register */
 DECL|currChanEdgeMode|member|ftm_input_capture_edge_t currChanEdgeMode; /*!< Input capture edge select for channel n */
 DECL|deadTimePrescale|member|ftm_deadtime_prescale_t deadTimePrescale; /*!< The dead time prescalar value */
-DECL|deadTimeValue|member|uint8_t deadTimeValue; /*!< The dead time value */
+DECL|deadTimeValue|member|uint32_t deadTimeValue; /*!< The dead time value
 DECL|dutyCyclePercent|member|uint8_t dutyCyclePercent; /*!< PWM pulse width, value should be between 0 to 100
 DECL|enableFaultInput|member|bool enableFaultInput; /*!< True: Fault input is enabled; false: Fault input is disabled */
 DECL|enablePhaseFilter|member|bool enablePhaseFilter; /*!< True: enable phase filter; false: disable filter */
 DECL|extTriggers|member|uint32_t extTriggers; /*!< External triggers to enable. Multiple trigger sources can be
 DECL|faultFilterValue|member|uint8_t faultFilterValue; /*!< Fault input filter value */
-DECL|faultLevel|member|bool faultLevel; /*!< True: Fault polarity is active low i.e '0' indicates a fault;
+DECL|faultLevel|member|bool faultLevel; /*!< True: Fault polarity is active low; in other words, '0' indicates a fault;
 DECL|faultMode|member|ftm_fault_mode_t faultMode; /*!< FTM fault control mode */
 DECL|firstEdgeDelayPercent|member|uint8_t firstEdgeDelayPercent; /*!< Used only in combined PWM mode to generate an asymmetrical PWM.
 DECL|ftm_bdm_mode_t|typedef|} ftm_bdm_mode_t;
@@ -163,6 +168,8 @@ DECL|kFTM_Prescale_Divide_4|enumerator|kFTM_Prescale_Divide_4, /*!< Divide by 4 
 DECL|kFTM_Prescale_Divide_64|enumerator|kFTM_Prescale_Divide_64, /*!< Divide by 64 */
 DECL|kFTM_Prescale_Divide_8|enumerator|kFTM_Prescale_Divide_8, /*!< Divide by 8 */
 DECL|kFTM_QuadCountAndDir|enumerator|kFTM_QuadCountAndDir /*!< Count and direction encoding mode */
+DECL|kFTM_QuadDecoderCountingIncreaseFlag|enumerator|kFTM_QuadDecoderCountingIncreaseFlag = FTM_QDCTRL_QUADIR_MASK, /*!< Counting direction is increasing (FTM counter
+DECL|kFTM_QuadDecoderCountingOverflowOnTopFlag|enumerator|kFTM_QuadDecoderCountingOverflowOnTopFlag = FTM_QDCTRL_TOFDIR_MASK, /*!< Indicates if the TOF bit was set on the top
 DECL|kFTM_QuadPhaseEncode|enumerator|kFTM_QuadPhaseEncode = 0U, /*!< Phase A and Phase B encoding mode */
 DECL|kFTM_QuadPhaseInvert|enumerator|kFTM_QuadPhaseInvert /*!< Phase input signal is inverted */
 DECL|kFTM_QuadPhaseNormal|enumerator|kFTM_QuadPhaseNormal = 0U, /*!< Phase input signal is not inverted */

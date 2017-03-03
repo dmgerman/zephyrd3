@@ -1,6 +1,8 @@
 DECL|FSL_SMC_DRIVER_VERSION|macro|FSL_SMC_DRIVER_VERSION
 DECL|SMC_GetPowerModeState|function|static inline smc_power_state_t SMC_GetPowerModeState(SMC_Type *base)
 DECL|SMC_GetVersionId|function|static inline void SMC_GetVersionId(SMC_Type *base, smc_version_id_t *versionId)
+DECL|SMC_PostExitWaitModes|function|static inline void SMC_PostExitWaitModes(void)
+DECL|SMC_PreEnterWaitModes|function|static inline void SMC_PreEnterWaitModes(void)
 DECL|SMC_SetPowerModeProtection|function|static inline void SMC_SetPowerModeProtection(SMC_Type *base, uint8_t allowedModes)
 DECL|_FSL_SMC_H_|macro|_FSL_SMC_H_
 DECL|_smc_param|struct|typedef struct _smc_param
@@ -21,11 +23,11 @@ DECL|enableRam2InVlls2|member|bool enableRam2InVlls2; /*!< Enable RAM2 power in 
 DECL|feature|member|uint16_t feature; /*!< Feature Specification Number. */
 DECL|hsrunEnable|member|bool hsrunEnable; /*!< HSRUN mode enable. */
 DECL|kSMC_AllowPowerModeAll|enumerator|kSMC_AllowPowerModeAll = (0U
-DECL|kSMC_AllowPowerModeHsrun|enumerator|kSMC_AllowPowerModeHsrun = SMC_PMPROT_AHSRUN_MASK, /*!< Allow High Speed Run mode. */
-DECL|kSMC_AllowPowerModeLls|enumerator|kSMC_AllowPowerModeLls = SMC_PMPROT_ALLS_MASK, /*!< Allow Low-Leakage Stop Mode. */
-DECL|kSMC_AllowPowerModeVlls|enumerator|kSMC_AllowPowerModeVlls = SMC_PMPROT_AVLLS_MASK, /*!< Allow Very-Low-Leakage Stop Mode. */
-DECL|kSMC_AllowPowerModeVlp|enumerator|kSMC_AllowPowerModeVlp = SMC_PMPROT_AVLP_MASK, /*!< Allow Very-Low-Power Mode. */
-DECL|kSMC_Hsrun|enumerator|kSMC_Hsrun = 3U /*!< High Speed Run mode (HSRUN). */
+DECL|kSMC_AllowPowerModeHsrun|enumerator|kSMC_AllowPowerModeHsrun = SMC_PMPROT_AHSRUN_MASK, /*!< Allow High-speed Run mode. */
+DECL|kSMC_AllowPowerModeLls|enumerator|kSMC_AllowPowerModeLls = SMC_PMPROT_ALLS_MASK, /*!< Allow Low-leakage Stop Mode. */
+DECL|kSMC_AllowPowerModeVlls|enumerator|kSMC_AllowPowerModeVlls = SMC_PMPROT_AVLLS_MASK, /*!< Allow Very-low-leakage Stop Mode. */
+DECL|kSMC_AllowPowerModeVlp|enumerator|kSMC_AllowPowerModeVlp = SMC_PMPROT_AVLP_MASK, /*!< Allow Very-Low-power Mode. */
+DECL|kSMC_Hsrun|enumerator|kSMC_Hsrun = 3U /*!< High-speed Run mode (HSRUN). */
 DECL|kSMC_PartialStop1|enumerator|kSMC_PartialStop1 = 1U, /*!< Partial Stop with both system and bus clocks disabled*/
 DECL|kSMC_PartialStop2|enumerator|kSMC_PartialStop2 = 2U, /*!< Partial Stop with system clock disabled and bus clock enabled*/
 DECL|kSMC_PartialStop|enumerator|kSMC_PartialStop = 0U, /*!< STOP - Normal Stop mode*/
@@ -37,16 +39,16 @@ DECL|kSMC_PowerStateVlls|enumerator|kSMC_PowerStateVlls = 0x01U << 6U, /*!< 0100
 DECL|kSMC_PowerStateVlpr|enumerator|kSMC_PowerStateVlpr = 0x01U << 2U, /*!< 0000_0100 - Current power mode is VLPR */
 DECL|kSMC_PowerStateVlps|enumerator|kSMC_PowerStateVlps = 0x01U << 4U, /*!< 0001_0000 - Current power mode is VLPS */
 DECL|kSMC_PowerStateVlpw|enumerator|kSMC_PowerStateVlpw = 0x01U << 3U, /*!< 0000_1000 - Current power mode is VLPW */
-DECL|kSMC_RunNormal|enumerator|kSMC_RunNormal = 0U, /*!< normal RUN mode. */
-DECL|kSMC_RunVlpr|enumerator|kSMC_RunVlpr = 2U, /*!< Very-Low-Power RUN mode. */
-DECL|kSMC_StopLls|enumerator|kSMC_StopLls = 3U, /*!< Low-Leakage Stop mode. */
+DECL|kSMC_RunNormal|enumerator|kSMC_RunNormal = 0U, /*!< Normal RUN mode. */
+DECL|kSMC_RunVlpr|enumerator|kSMC_RunVlpr = 2U, /*!< Very-low-power RUN mode. */
+DECL|kSMC_StopLls|enumerator|kSMC_StopLls = 3U, /*!< Low-leakage Stop mode. */
 DECL|kSMC_StopNormal|enumerator|kSMC_StopNormal = 0U, /*!< Normal STOP mode. */
 DECL|kSMC_StopSub0|enumerator|kSMC_StopSub0 = 0U, /*!< Stop submode 0, for VLLS0/LLS0. */
 DECL|kSMC_StopSub1|enumerator|kSMC_StopSub1 = 1U, /*!< Stop submode 1, for VLLS1/LLS1. */
 DECL|kSMC_StopSub2|enumerator|kSMC_StopSub2 = 2U, /*!< Stop submode 2, for VLLS2/LLS2. */
 DECL|kSMC_StopSub3|enumerator|kSMC_StopSub3 = 3U /*!< Stop submode 3, for VLLS3/LLS3. */
-DECL|kSMC_StopVlls|enumerator|kSMC_StopVlls = 4U /*!< Very-Low-Leakage Stop mode. */
-DECL|kSMC_StopVlps|enumerator|kSMC_StopVlps = 2U, /*!< Very-Low-Power STOP mode. */
+DECL|kSMC_StopVlls|enumerator|kSMC_StopVlls = 4U /*!< Very-low-leakage Stop mode. */
+DECL|kSMC_StopVlps|enumerator|kSMC_StopVlps = 2U, /*!< Very-low-power STOP mode. */
 DECL|kStatus_SMC_StopAbort|enumerator|kStatus_SMC_StopAbort = MAKE_STATUS(kStatusGroup_POWER, 0) /*!< Entering Stop mode is abort*/
 DECL|lls2Enable|member|bool lls2Enable; /*!< LLS2 mode enable. */
 DECL|llsEnable|member|bool llsEnable; /*!< LLS mode enable. */

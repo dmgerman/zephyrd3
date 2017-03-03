@@ -3,9 +3,8 @@ DECL|MPU_GetDetailErrorAccessInfo|function|void MPU_GetDetailErrorAccessInfo(MPU
 DECL|MPU_GetHardwareInfo|function|void MPU_GetHardwareInfo(MPU_Type *base, mpu_hardware_info_t *hardwareInform)
 DECL|MPU_GetSlavePortErrorStatus|function|bool MPU_GetSlavePortErrorStatus(MPU_Type *base, mpu_slave_t slaveNum)
 DECL|MPU_Init|function|void MPU_Init(MPU_Type *base, const mpu_config_t *config)
-DECL|MPU_REGIONDESCRIPTOR_WROD_REGNUM|macro|MPU_REGIONDESCRIPTOR_WROD_REGNUM
-DECL|MPU_SetRegionAddr|function|void MPU_SetRegionAddr(MPU_Type *base, mpu_region_num_t regionNum, uint32_t startAddr, uint32_t endAddr)
+DECL|MPU_SetRegionAddr|function|void MPU_SetRegionAddr(MPU_Type *base, uint32_t regionNum, uint32_t startAddr, uint32_t endAddr)
 DECL|MPU_SetRegionConfig|function|void MPU_SetRegionConfig(MPU_Type *base, const mpu_region_config_t *regionConfig)
-DECL|MPU_SetRegionHighMasterAccessRights|function|void MPU_SetRegionHighMasterAccessRights(MPU_Type *base, mpu_region_num_t regionNum, mpu_master_t masterNum, const mpu_high_masters_access_rights_t *accessRights)
-DECL|MPU_SetRegionLowMasterAccessRights|function|void MPU_SetRegionLowMasterAccessRights(MPU_Type *base, mpu_region_num_t regionNum, mpu_master_t masterNum, const mpu_low_masters_access_rights_t *accessRights)
+DECL|MPU_SetRegionRwMasterAccessRights|function|void MPU_SetRegionRwMasterAccessRights(MPU_Type *base, uint32_t regionNum, uint32_t masterNum, const mpu_rwrights_master_access_control_t *accessRights)
+DECL|MPU_SetRegionRwxMasterAccessRights|function|void MPU_SetRegionRwxMasterAccessRights(MPU_Type *base, uint32_t regionNum, uint32_t masterNum, const mpu_rwxrights_master_access_control_t *accessRights)
 DECL|g_mpuClock|variable|g_mpuClock

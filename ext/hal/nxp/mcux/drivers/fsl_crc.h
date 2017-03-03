@@ -1,8 +1,5 @@
 DECL|CRC_DRIVER_USE_CRC16_CCIT_FALSE_AS_DEFAULT|macro|CRC_DRIVER_USE_CRC16_CCIT_FALSE_AS_DEFAULT
 DECL|CRC_Deinit|function|static inline void CRC_Deinit(CRC_Type *base)
-DECL|CRC_Get32bitResult|function|static inline uint32_t CRC_Get32bitResult(CRC_Type *base)
-DECL|DATALL|macro|DATALL
-DECL|DATA|macro|DATA
 DECL|FSL_CRC_DRIVER_VERSION|macro|FSL_CRC_DRIVER_VERSION
 DECL|_FSL_CRC_H_|macro|_FSL_CRC_H_
 DECL|_crc_bits|enum|typedef enum _crc_bits

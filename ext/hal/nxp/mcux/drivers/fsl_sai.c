@@ -40,4 +40,8 @@ DECL|s_saiBases|variable|s_saiBases
 DECL|s_saiClock|variable|s_saiClock
 DECL|s_saiHandle|variable|s_saiHandle
 DECL|s_saiRxIRQ|variable|s_saiRxIRQ
+DECL|s_saiRxIsr|variable|s_saiRxIsr
 DECL|s_saiTxIRQ|variable|s_saiTxIRQ
+DECL|s_saiTxIsr|variable|s_saiTxIsr
+DECL|sai_rx_isr_t|typedef|typedef void (*sai_rx_isr_t)(I2S_Type *base, sai_handle_t *saiHandle);
+DECL|sai_tx_isr_t|typedef|typedef void (*sai_tx_isr_t)(I2S_Type *base, sai_handle_t *saiHandle);

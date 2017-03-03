@@ -53,16 +53,16 @@ DECL|_dspi_transfer_state|enum|enum _dspi_transfer_state
 DECL|_dspi_transfer|struct|typedef struct _dspi_transfer
 DECL|_dspi_which_pcs_config|enum|typedef enum _dspi_which_pcs_config
 DECL|baudRate|member|uint32_t baudRate; /*!< Baud Rate for DSPI. */
-DECL|betweenTransferDelayInNanoSec|member|uint32_t betweenTransferDelayInNanoSec; /*!< After SCK delay time with nanosecond , set to 0 sets the minimum
+DECL|betweenTransferDelayInNanoSec|member|uint32_t betweenTransferDelayInNanoSec; /*!< After the SCK delay time in nanoseconds; setting to 0 sets the minimum
 DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Bits per frame, minimum 4, maximum 16.*/
 DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Bits per frame, minimum 4, maximum 16.*/
-DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Desired number of bits per frame. */
-DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Desired number of bits per frame. */
+DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< The desired number of bits per frame. */
+DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< The desired number of bits per frame. */
 DECL|callback|member|dspi_master_transfer_callback_t callback; /*!< Completion callback. */
 DECL|callback|member|dspi_slave_transfer_callback_t callback; /*!< Completion callback. */
-DECL|clearTransferCount|member|bool clearTransferCount; /*!< Clears SPI Transfer Counter (SPI_TCNT) before transmission starts.*/
-DECL|command|member|volatile uint32_t command; /*!< Desired data command. */
-DECL|configFlags|member|configFlags; /*!< Transfer transfer configuration flags , set from _dspi_transfer_config_flag_for_master if the
+DECL|clearTransferCount|member|bool clearTransferCount; /*!< Clears the SPI Transfer Counter (SPI_TCNT) before transmission starts.*/
+DECL|command|member|volatile uint32_t command; /*!< The desired data command. */
+DECL|configFlags|member|configFlags; /*!< Transfer transfer configuration flags; set from _dspi_transfer_config_flag_for_master if the
 DECL|cpha|member|dspi_clock_phase_t cpha; /*!< Clock phase. */
 DECL|cpha|member|dspi_clock_phase_t cpha; /*!< Clock phase. */
 DECL|cpol|member|dspi_clock_polarity_t cpol; /*!< Clock polarity. */
@@ -90,19 +90,19 @@ DECL|dspi_slave_handle_t|typedef|typedef struct _dspi_slave_handle dspi_slave_ha
 DECL|dspi_slave_transfer_callback_t|typedef|typedef void (*dspi_slave_transfer_callback_t)(SPI_Type *base,
 DECL|dspi_transfer_t|typedef|} dspi_transfer_t;
 DECL|dspi_which_pcs_t|typedef|} dspi_which_pcs_t;
-DECL|enableContinuousSCK|member|bool enableContinuousSCK; /*!< CONT_SCKE, continuous SCK enable . Note that continuous SCK is only
-DECL|enableContinuousSCK|member|bool enableContinuousSCK; /*!< CONT_SCKE, continuous SCK enable. Note that continuous SCK is only
-DECL|enableModifiedTimingFormat|member|bool enableModifiedTimingFormat; /*!< Enables a modified transfer format to be used if it's true.*/
-DECL|enableModifiedTimingFormat|member|bool enableModifiedTimingFormat; /*!< Enables a modified transfer format to be used if it's true.*/
-DECL|enableRxFifoOverWrite|member|bool enableRxFifoOverWrite; /*!< ROOE, Receive FIFO overflow overwrite enable. ROOE = 0, the incoming
-DECL|enableRxFifoOverWrite|member|bool enableRxFifoOverWrite; /*!< ROOE, Receive FIFO overflow overwrite enable. ROOE = 0, the incoming
+DECL|enableContinuousSCK|member|bool enableContinuousSCK; /*!< CONT_SCKE, continuous SCK enable. Note that the continuous SCK is only
+DECL|enableContinuousSCK|member|bool enableContinuousSCK; /*!< CONT_SCKE, continuous SCK enable. Note that the continuous SCK is only
+DECL|enableModifiedTimingFormat|member|bool enableModifiedTimingFormat; /*!< Enables a modified transfer format to be used if true.*/
+DECL|enableModifiedTimingFormat|member|bool enableModifiedTimingFormat; /*!< Enables a modified transfer format to be used if true.*/
+DECL|enableRxFifoOverWrite|member|bool enableRxFifoOverWrite; /*!< ROOE, receive FIFO overflow overwrite enable. If ROOE = 0, the incoming
+DECL|enableRxFifoOverWrite|member|bool enableRxFifoOverWrite; /*!< ROOE, receive FIFO overflow overwrite enable. If ROOE = 0, the incoming
 DECL|errorCount|member|volatile uint32_t errorCount; /*!< Error count for slave transfer.*/
 DECL|fifoSize|member|uint8_t fifoSize; /*!< FIFO dataSize. */
 DECL|isEndOfQueue|member|bool isEndOfQueue; /*!< Signals that the current transfer is the last in the queue.*/
-DECL|isPcsActiveAfterTransfer|member|volatile bool isPcsActiveAfterTransfer; /*!< Is PCS signal keep active after the last frame transfer.*/
-DECL|isPcsContinuous|member|bool isPcsContinuous; /*!< Option to enable the continuous assertion of chip select between transfers.*/
-DECL|isThereExtraByte|member|volatile bool isThereExtraByte; /*!< Is there extra byte.*/
-DECL|isThereExtraByte|member|volatile bool isThereExtraByte; /*!< Is there extra byte.*/
+DECL|isPcsActiveAfterTransfer|member|volatile bool isPcsActiveAfterTransfer; /*!< Indicates whether the PCS signal is active after the last frame transfer.*/
+DECL|isPcsContinuous|member|bool isPcsContinuous; /*!< Option to enable the continuous assertion of the chip select between transfers.*/
+DECL|isThereExtraByte|member|volatile bool isThereExtraByte; /*!< Indicates whether there are extra bytes.*/
+DECL|isThereExtraByte|member|volatile bool isThereExtraByte; /*!< Indicates whether there are extra bytes.*/
 DECL|kDSPI_AllInterruptEnable|enumerator|kDSPI_AllInterruptEnable = SPI_RSER_TCF_RE_MASK | SPI_RSER_EOQF_RE_MASK | SPI_RSER_TFUF_RE_MASK |
 DECL|kDSPI_AllStatusFlag|enumerator|kDSPI_AllStatusFlag = SPI_SR_TCF_MASK | SPI_SR_EOQF_MASK | SPI_SR_TFUF_MASK | SPI_SR_TFFF_MASK | SPI_SR_RFOF_MASK |
 DECL|kDSPI_BetweenTransfer|enumerator|kDSPI_BetweenTransfer /*!< Delay between transfers. */
@@ -111,21 +111,21 @@ DECL|kDSPI_ClockPhaseFirstEdge|enumerator|kDSPI_ClockPhaseFirstEdge = 0U, /*!< C
 DECL|kDSPI_ClockPhaseSecondEdge|enumerator|kDSPI_ClockPhaseSecondEdge = 1U /*!< CPHA=1. Data is changed on the leading edge of the SCK and captured on the
 DECL|kDSPI_ClockPolarityActiveHigh|enumerator|kDSPI_ClockPolarityActiveHigh = 0U, /*!< CPOL=0. Active-high DSPI clock (idles low).*/
 DECL|kDSPI_ClockPolarityActiveLow|enumerator|kDSPI_ClockPolarityActiveLow = 1U /*!< CPOL=1. Active-low DSPI clock (idles high).*/
-DECL|kDSPI_Ctar0|enumerator|kDSPI_Ctar0 = 0U, /*!< CTAR0 selection option for master or slave mode, note that CTAR0 and CTAR0_SLAVE are the
+DECL|kDSPI_Ctar0|enumerator|kDSPI_Ctar0 = 0U, /*!< CTAR0 selection option for master or slave mode; note that CTAR0 and CTAR0_SLAVE are the
 DECL|kDSPI_Ctar1|enumerator|kDSPI_Ctar1 = 1U, /*!< CTAR1 selection option for master mode only. */
-DECL|kDSPI_Ctar2|enumerator|kDSPI_Ctar2 = 2U, /*!< CTAR2 selection option for master mode only , note that some device do not support CTAR2. */
-DECL|kDSPI_Ctar3|enumerator|kDSPI_Ctar3 = 3U, /*!< CTAR3 selection option for master mode only , note that some device do not support CTAR3. */
-DECL|kDSPI_Ctar4|enumerator|kDSPI_Ctar4 = 4U, /*!< CTAR4 selection option for master mode only , note that some device do not support CTAR4. */
-DECL|kDSPI_Ctar5|enumerator|kDSPI_Ctar5 = 5U, /*!< CTAR5 selection option for master mode only , note that some device do not support CTAR5. */
-DECL|kDSPI_Ctar6|enumerator|kDSPI_Ctar6 = 6U, /*!< CTAR6 selection option for master mode only , note that some device do not support CTAR6. */
-DECL|kDSPI_Ctar7|enumerator|kDSPI_Ctar7 = 7U /*!< CTAR7 selection option for master mode only , note that some device do not support CTAR7. */
+DECL|kDSPI_Ctar2|enumerator|kDSPI_Ctar2 = 2U, /*!< CTAR2 selection option for master mode only; note that some devices do not support CTAR2. */
+DECL|kDSPI_Ctar3|enumerator|kDSPI_Ctar3 = 3U, /*!< CTAR3 selection option for master mode only; note that some devices do not support CTAR3. */
+DECL|kDSPI_Ctar4|enumerator|kDSPI_Ctar4 = 4U, /*!< CTAR4 selection option for master mode only; note that some devices do not support CTAR4. */
+DECL|kDSPI_Ctar5|enumerator|kDSPI_Ctar5 = 5U, /*!< CTAR5 selection option for master mode only; note that some devices do not support CTAR5. */
+DECL|kDSPI_Ctar6|enumerator|kDSPI_Ctar6 = 6U, /*!< CTAR6 selection option for master mode only; note that some devices do not support CTAR6. */
+DECL|kDSPI_Ctar7|enumerator|kDSPI_Ctar7 = 7U /*!< CTAR7 selection option for master mode only; note that some devices do not support CTAR7. */
 DECL|kDSPI_EndOfQueueFlag|enumerator|kDSPI_EndOfQueueFlag = SPI_SR_EOQF_MASK, /*!< End of Queue Flag.*/
 DECL|kDSPI_EndOfQueueInterruptEnable|enumerator|kDSPI_EndOfQueueInterruptEnable = SPI_RSER_EOQF_RE_MASK, /*!< EOQF interrupt enable.*/
 DECL|kDSPI_Error|enumerator|kDSPI_Error /*!< Transfer error. */
 DECL|kDSPI_Idle|enumerator|kDSPI_Idle = 0x0U, /*!< Nothing in the transmitter/receiver. */
-DECL|kDSPI_LastSckToPcs|enumerator|kDSPI_LastSckToPcs, /*!< Last SCK edge to Pcs delay. */
-DECL|kDSPI_LsbFirst|enumerator|kDSPI_LsbFirst = 1U /*!< Data transfers start with least significant bit.*/
-DECL|kDSPI_MasterActiveAfterTransfer|enumerator|kDSPI_MasterActiveAfterTransfer = 1U << 21, /*!< Is PCS signal active after last frame transfer.*/
+DECL|kDSPI_LastSckToPcs|enumerator|kDSPI_LastSckToPcs, /*!< The last SCK edge to Pcs delay. */
+DECL|kDSPI_LsbFirst|enumerator|kDSPI_LsbFirst = 1U /*!< Data transfers start with least significant bit.
+DECL|kDSPI_MasterActiveAfterTransfer|enumerator|kDSPI_MasterActiveAfterTransfer = 1U << 21, /*!< Indicates whether the PCS signal is active after the last frame transfer.*/
 DECL|kDSPI_MasterCtar0|enumerator|kDSPI_MasterCtar0 = 0U << DSPI_MASTER_CTAR_SHIFT, /*!< DSPI master transfer use CTAR0 setting. */
 DECL|kDSPI_MasterCtar1|enumerator|kDSPI_MasterCtar1 = 1U << DSPI_MASTER_CTAR_SHIFT, /*!< DSPI master transfer use CTAR1 setting. */
 DECL|kDSPI_MasterCtar2|enumerator|kDSPI_MasterCtar2 = 2U << DSPI_MASTER_CTAR_SHIFT, /*!< DSPI master transfer use CTAR2 setting. */
@@ -140,7 +140,7 @@ DECL|kDSPI_MasterPcs2|enumerator|kDSPI_MasterPcs2 = 2U << DSPI_MASTER_PCS_SHIFT,
 DECL|kDSPI_MasterPcs3|enumerator|kDSPI_MasterPcs3 = 3U << DSPI_MASTER_PCS_SHIFT, /*!< DSPI master transfer use PCS3 signal. */
 DECL|kDSPI_MasterPcs4|enumerator|kDSPI_MasterPcs4 = 4U << DSPI_MASTER_PCS_SHIFT, /*!< DSPI master transfer use PCS4 signal. */
 DECL|kDSPI_MasterPcs5|enumerator|kDSPI_MasterPcs5 = 5U << DSPI_MASTER_PCS_SHIFT, /*!< DSPI master transfer use PCS5 signal. */
-DECL|kDSPI_MasterPcsContinuous|enumerator|kDSPI_MasterPcsContinuous = 1U << 20, /*!< Is PCS signal continuous. */
+DECL|kDSPI_MasterPcsContinuous|enumerator|kDSPI_MasterPcsContinuous = 1U << 20, /*!< Indicates whether the PCS signal is continuous. */
 DECL|kDSPI_Master|enumerator|kDSPI_Master = 1U, /*!< DSPI peripheral operates in master mode.*/
 DECL|kDSPI_MsbFirst|enumerator|kDSPI_MsbFirst = 0U, /*!< Data transfers start with most significant bit.*/
 DECL|kDSPI_Pcs0ActiveLow|enumerator|kDSPI_Pcs0ActiveLow = 1U << 0, /*!< Pcs0 Active Low (idles high). */
@@ -180,31 +180,31 @@ DECL|kDSPI_TxFifoUnderflowInterruptEnable|enumerator|kDSPI_TxFifoUnderflowInterr
 DECL|kStatus_DSPI_Busy|enumerator|kStatus_DSPI_Busy = MAKE_STATUS(kStatusGroup_DSPI, 0), /*!< DSPI transfer is busy.*/
 DECL|kStatus_DSPI_Error|enumerator|kStatus_DSPI_Error = MAKE_STATUS(kStatusGroup_DSPI, 1), /*!< DSPI driver error. */
 DECL|kStatus_DSPI_Idle|enumerator|kStatus_DSPI_Idle = MAKE_STATUS(kStatusGroup_DSPI, 2), /*!< DSPI is idle.*/
-DECL|kStatus_DSPI_OutOfRange|enumerator|kStatus_DSPI_OutOfRange = MAKE_STATUS(kStatusGroup_DSPI, 3) /*!< DSPI transfer out Of range. */
-DECL|lastCommand|member|volatile uint32_t lastCommand; /*!< Desired last data command. */
-DECL|lastSckToPcsDelayInNanoSec|member|uint32_t lastSckToPcsDelayInNanoSec; /*!< Last SCK to PCS delay time with nanosecond , set to 0 sets the
-DECL|pcsActiveHighOrLow|member|dspi_pcs_polarity_config_t pcsActiveHighOrLow; /*!< Desired PCS active high or low. */
-DECL|pcsToSckDelayInNanoSec|member|uint32_t pcsToSckDelayInNanoSec; /*!< PCS to SCK delay time with nanosecond , set to 0 sets the minimum
-DECL|remainingReceiveByteCount|member|volatile size_t remainingReceiveByteCount; /*!< Number of bytes remaining to receive.*/
-DECL|remainingReceiveByteCount|member|volatile size_t remainingReceiveByteCount; /*!< Number of bytes remaining to receive.*/
-DECL|remainingSendByteCount|member|volatile size_t remainingSendByteCount; /*!< Number of bytes remaining to send.*/
-DECL|remainingSendByteCount|member|volatile size_t remainingSendByteCount; /*!< Number of bytes remaining to send.*/
+DECL|kStatus_DSPI_OutOfRange|enumerator|kStatus_DSPI_OutOfRange = MAKE_STATUS(kStatusGroup_DSPI, 3) /*!< DSPI transfer out of range. */
+DECL|lastCommand|member|volatile uint32_t lastCommand; /*!< The desired last data command. */
+DECL|lastSckToPcsDelayInNanoSec|member|uint32_t lastSckToPcsDelayInNanoSec; /*!< The last SCK to PCS delay time in nanoseconds; setting to 0 sets the
+DECL|pcsActiveHighOrLow|member|dspi_pcs_polarity_config_t pcsActiveHighOrLow; /*!< The desired PCS active high or low. */
+DECL|pcsToSckDelayInNanoSec|member|uint32_t pcsToSckDelayInNanoSec; /*!< PCS to SCK delay time in nanoseconds; setting to 0 sets the minimum
+DECL|remainingReceiveByteCount|member|volatile size_t remainingReceiveByteCount; /*!< A number of bytes remaining to receive.*/
+DECL|remainingReceiveByteCount|member|volatile size_t remainingReceiveByteCount; /*!< A number of bytes remaining to receive.*/
+DECL|remainingSendByteCount|member|volatile size_t remainingSendByteCount; /*!< A number of bytes remaining to send.*/
+DECL|remainingSendByteCount|member|volatile size_t remainingSendByteCount; /*!< A number of bytes remaining to send.*/
 DECL|rxData|member|uint8_t *rxData; /*!< Receive buffer. */
 DECL|rxData|member|uint8_t *volatile rxData; /*!< Receive buffer. */
 DECL|rxData|member|uint8_t *volatile rxData; /*!< Receive buffer. */
-DECL|samplePoint|member|dspi_master_sample_point_t samplePoint; /*!< Controls when the module master samples SIN in Modified Transfer
-DECL|samplePoint|member|dspi_master_sample_point_t samplePoint; /*!< Controls when the module master samples SIN in Modified Transfer
-DECL|state|member|volatile uint8_t state; /*!< DSPI transfer state , _dspi_transfer_state.*/
+DECL|samplePoint|member|dspi_master_sample_point_t samplePoint; /*!< Controls when the module master samples SIN in the Modified Transfer
+DECL|samplePoint|member|dspi_master_sample_point_t samplePoint; /*!< Controls when the module master samples SIN in the Modified Transfer
+DECL|state|member|volatile uint8_t state; /*!< DSPI transfer state, see _dspi_transfer_state.*/
 DECL|state|member|volatile uint8_t state; /*!< DSPI transfer state.*/
-DECL|totalByteCount|member|size_t totalByteCount; /*!< Number of transfer bytes*/
-DECL|totalByteCount|member|size_t totalByteCount; /*!< Number of transfer bytes*/
+DECL|totalByteCount|member|size_t totalByteCount; /*!< A number of transfer bytes*/
+DECL|totalByteCount|member|size_t totalByteCount; /*!< A number of transfer bytes*/
 DECL|txData|member|uint8_t *txData; /*!< Send buffer. */
 DECL|txData|member|uint8_t *volatile txData; /*!< Send buffer. */
 DECL|txData|member|uint8_t *volatile txData; /*!< Send buffer. */
 DECL|userData|member|void *userData; /*!< Callback user data. */
 DECL|userData|member|void *userData; /*!< Callback user data. */
-DECL|whichCtar|member|dspi_ctar_selection_t whichCtar; /*!< Desired CTAR to use. */
-DECL|whichCtar|member|dspi_ctar_selection_t whichCtar; /*!< Desired CTAR to use. */
+DECL|whichCtar|member|dspi_ctar_selection_t whichCtar; /*!< The desired CTAR to use. */
+DECL|whichCtar|member|dspi_ctar_selection_t whichCtar; /*!< The desired CTAR to use. */
 DECL|whichCtar|member|dspi_ctar_selection_t whichCtar; /*!< The desired Clock and Transfer Attributes
-DECL|whichPcs|member|dspi_which_pcs_t whichPcs; /*!< Desired Peripheral Chip Select (pcs). */
 DECL|whichPcs|member|dspi_which_pcs_t whichPcs; /*!< The desired PCS signal to use for the data transfer.*/
+DECL|whichPcs|member|dspi_which_pcs_t whichPcs; /*!< The desired Peripheral Chip Select (pcs). */

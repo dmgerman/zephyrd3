@@ -179,7 +179,7 @@ DECL|kENET_RxAccelMacCheckEnabled|enumerator|kENET_RxAccelMacCheckEnabled = ENET
 DECL|kENET_RxAccelPadRemoveEnabled|enumerator|kENET_RxAccelPadRemoveEnabled = ENET_RACC_PADREM_MASK, /*!< Padding removal for short IP frames. */
 DECL|kENET_RxAccelProtoCheckEnabled|enumerator|kENET_RxAccelProtoCheckEnabled = ENET_RACC_PRODIS_MASK, /*!< Discard with wrong protocol checksum. */
 DECL|kENET_RxAccelisShift16Enabled|enumerator|kENET_RxAccelisShift16Enabled = ENET_RACC_SHIFT16_MASK /*!< Receive FIFO shift-16. */
-DECL|kENET_RxByteInterrupt|enumerator|kENET_RxByteInterrupt = ENET_EIR_RXB_MASK, /*!< RX BYTE interrupt source */
+DECL|kENET_RxBufferInterrupt|enumerator|kENET_RxBufferInterrupt = ENET_EIR_RXB_MASK, /*!< RX BUFFER interrupt source */
 DECL|kENET_RxEvent|enumerator|kENET_RxEvent, /*!< Receive event. */
 DECL|kENET_RxFrameInterrupt|enumerator|kENET_RxFrameInterrupt = ENET_EIR_RXF_MASK, /*!< RX FRAME interrupt source */
 DECL|kENET_TimeStampAvailEvent|enumerator|kENET_TimeStampAvailEvent /*!< Time stamp available event.*/
@@ -189,7 +189,7 @@ DECL|kENET_TsTimerInterrupt|enumerator|kENET_TsTimerInterrupt = ENET_EIR_TS_TIME
 DECL|kENET_TxAccelIpCheckEnabled|enumerator|kENET_TxAccelIpCheckEnabled = ENET_TACC_IPCHK_MASK, /*!< Insert IP header checksum. */
 DECL|kENET_TxAccelIsShift16Enabled|enumerator|kENET_TxAccelIsShift16Enabled = ENET_TACC_SHIFT16_MASK, /*!< Transmit FIFO shift-16. */
 DECL|kENET_TxAccelProtoCheckEnabled|enumerator|kENET_TxAccelProtoCheckEnabled = ENET_TACC_PROCHK_MASK /*!< Insert protocol checksum. */
-DECL|kENET_TxByteInterrupt|enumerator|kENET_TxByteInterrupt = ENET_EIR_TXB_MASK, /*!< TX BYTE interrupt source */
+DECL|kENET_TxBufferInterrupt|enumerator|kENET_TxBufferInterrupt = ENET_EIR_TXB_MASK, /*!< TX BUFFER interrupt source */
 DECL|kENET_TxEvent|enumerator|kENET_TxEvent, /*!< Transmit event. */
 DECL|kENET_TxFrameInterrupt|enumerator|kENET_TxFrameInterrupt = ENET_EIR_TXF_MASK, /*!< TX FRAME interrupt source */
 DECL|kENET_UnderrunInterrupt|enumerator|kENET_UnderrunInterrupt = ENET_EIR_UN_MASK, /*!< Transmit FIFO underrun interrupt source */
@@ -233,7 +233,6 @@ DECL|reserved6|member|uint16_t reserved6;
 DECL|rxAccelerConfig|member|uint8_t rxAccelerConfig; /*!< Receive accelerator, A logical OR of "enet_rx_accelerator_t". */
 DECL|rxBdBase|member|volatile enet_rx_bd_struct_t *rxBdBase; /*!< Receive buffer descriptor base address pointer. */
 DECL|rxBdCurrent|member|volatile enet_rx_bd_struct_t *rxBdCurrent; /*!< The current available receive buffer descriptor pointer. */
-DECL|rxBdDirty|member|volatile enet_rx_bd_struct_t *rxBdDirty; /*!< The dirty receive buffer descriptor needed to be updated from. */
 DECL|rxBdNumber|member|uint16_t rxBdNumber; /*!< Receive buffer descriptor number. */
 DECL|rxBdStartAddrAlign|member|volatile enet_rx_bd_struct_t *rxBdStartAddrAlign; /*!< Aligned receive buffer descriptor start address. */
 DECL|rxBuffSizeAlign|member|uint32_t rxBuffSizeAlign; /*!< Aligned receive data buffer size. */

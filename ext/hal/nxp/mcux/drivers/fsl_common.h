@@ -1,6 +1,7 @@
 DECL|ARRAY_SIZE|macro|ARRAY_SIZE
 DECL|COUNT_TO_MSEC|macro|COUNT_TO_MSEC
 DECL|COUNT_TO_USEC|macro|COUNT_TO_USEC
+DECL|DEBUG_CONSOLE_DEVICE_TYPE_FLEXCOMM|macro|DEBUG_CONSOLE_DEVICE_TYPE_FLEXCOMM
 DECL|DEBUG_CONSOLE_DEVICE_TYPE_LPSCI|macro|DEBUG_CONSOLE_DEVICE_TYPE_LPSCI
 DECL|DEBUG_CONSOLE_DEVICE_TYPE_LPUART|macro|DEBUG_CONSOLE_DEVICE_TYPE_LPUART
 DECL|DEBUG_CONSOLE_DEVICE_TYPE_NONE|macro|DEBUG_CONSOLE_DEVICE_TYPE_NONE
@@ -28,8 +29,10 @@ DECL|kStatusGroup_DSPI|enumerator|kStatusGroup_DSPI = 6, /*!< Group number for D
 DECL|kStatusGroup_DebugConsole|enumerator|kStatusGroup_DebugConsole = 99, /*!< Group number for debug console status codes. */
 DECL|kStatusGroup_EDMA|enumerator|kStatusGroup_EDMA = 51, /*!< Group number for EDMA status codes. */
 DECL|kStatusGroup_ENET|enumerator|kStatusGroup_ENET = 40, /*!< Group number for ENET status codes. */
+DECL|kStatusGroup_FLASHIAP|enumerator|kStatusGroup_FLASHIAP = 25, /*!< Group number for FLASHIAP status codes */
 DECL|kStatusGroup_FLASH|enumerator|kStatusGroup_FLASH = 1, /*!< Group number for FLASH status codes. */
 DECL|kStatusGroup_FLEXCAN|enumerator|kStatusGroup_FLEXCAN = 53, /*!< Group number for FlexCAN status codes. */
+DECL|kStatusGroup_FLEXCOMM_I2C|enumerator|kStatusGroup_FLEXCOMM_I2C = 26, /*!< Group number for FLEXCOMM I2C status codes */
 DECL|kStatusGroup_FLEXIO_CAMERA|enumerator|kStatusGroup_FLEXIO_CAMERA = 55, /*!< Group number for FLEXIO CAMERA status codes. */
 DECL|kStatusGroup_FLEXIO_I2C|enumerator|kStatusGroup_FLEXIO_I2C = 8, /*!< Group number for FLEXIO I2C status codes. */
 DECL|kStatusGroup_FLEXIO_I2S|enumerator|kStatusGroup_FLEXIO_I2S = 23, /*!< Group number for FLEXIO I2S status codes */
@@ -37,7 +40,10 @@ DECL|kStatusGroup_FLEXIO_SPI|enumerator|kStatusGroup_FLEXIO_SPI = 5, /*!< Group 
 DECL|kStatusGroup_FLEXIO_UART|enumerator|kStatusGroup_FLEXIO_UART = 7, /*!< Group number for FLEXIO UART status codes. */
 DECL|kStatusGroup_Generic|enumerator|kStatusGroup_Generic = 0, /*!< Group number for generic status codes. */
 DECL|kStatusGroup_I2C|enumerator|kStatusGroup_I2C = 11, /*!< Group number for UART status codes. */
+DECL|kStatusGroup_I2S|enumerator|kStatusGroup_I2S = 27, /*!< Group number for I2S status codes */
 DECL|kStatusGroup_LMEM|enumerator|kStatusGroup_LMEM = 44, /*!< Group number for LMEM status codes. */
+DECL|kStatusGroup_LPC_SPI|enumerator|kStatusGroup_LPC_SPI = 56, /*!< Group number for LPC_SPI status codes. */
+DECL|kStatusGroup_LPC_USART|enumerator|kStatusGroup_LPC_USART = 57, /*!< Group number for LPC_USART status codes. */
 DECL|kStatusGroup_LPI2C|enumerator|kStatusGroup_LPI2C = 9, /*!< Group number for LPI2C status codes. */
 DECL|kStatusGroup_LPSCI|enumerator|kStatusGroup_LPSCI = 12, /*!< Group number for LPSCI status codes. */
 DECL|kStatusGroup_LPSPI|enumerator|kStatusGroup_LPSPI = 4, /*!< Group number for LPSPI status codes. */

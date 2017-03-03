@@ -77,10 +77,14 @@ DECL|ENET_TransmitIRQHandler|function|void ENET_TransmitIRQHandler(ENET_Type *ba
 DECL|ENET_Transmit_IRQHandler|function|void ENET_Transmit_IRQHandler(void)
 DECL|ENET_UDPVERSION|macro|ENET_UDPVERSION
 DECL|ENET_UpdateReadBuffers|function|static void ENET_UpdateReadBuffers(ENET_Type *base, enet_handle_t *handle)
+DECL|enet_isr_t|typedef|typedef void (*enet_isr_t)(ENET_Type *base, enet_handle_t *handle);
 DECL|s_ENETHandle|variable|s_ENETHandle
 DECL|s_enetBases|variable|s_enetBases
 DECL|s_enetClock|variable|s_enetClock
 DECL|s_enetErrIrqId|variable|s_enetErrIrqId
+DECL|s_enetErrIsr|variable|s_enetErrIsr
 DECL|s_enetRxIrqId|variable|s_enetRxIrqId
+DECL|s_enetRxIsr|variable|s_enetRxIsr
 DECL|s_enetTsIrqId|variable|s_enetTsIrqId
 DECL|s_enetTxIrqId|variable|s_enetTxIrqId
+DECL|s_enetTxIsr|variable|s_enetTxIsr

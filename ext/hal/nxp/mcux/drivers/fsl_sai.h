@@ -34,8 +34,8 @@ DECL|_sai_transfer_format|struct|typedef struct _sai_transfer_format
 DECL|_sai_transfer|struct|typedef struct _sai_transfer
 DECL|_sai_word_width|enum|typedef enum _sai_word_width
 DECL|bclkSource|member|sai_bclk_source_t bclkSource; /*!< Bit Clock source */
-DECL|bitWidth|member|uint32_t bitWidth; /*!< Data length of audio data, usually 8/16/24/32bits */
-DECL|bitWidth|member|uint8_t bitWidth; /*!< Bit width for transfer, 8/16/24/32bits */
+DECL|bitWidth|member|uint32_t bitWidth; /*!< Data length of audio data, usually 8/16/24/32 bits */
+DECL|bitWidth|member|uint8_t bitWidth; /*!< Bit width for transfer, 8/16/24/32 bits */
 DECL|callback|member|sai_transfer_callback_t callback; /*!< Callback function called at transfer event*/
 DECL|channel|member|uint8_t channel; /*!< Data channel used in transfer.*/
 DECL|channel|member|uint8_t channel; /*!< Transfer channel */
@@ -75,16 +75,16 @@ DECL|kSAI_MonoRight|enumerator|kSAI_MonoRight /*!< Only Right channel have sound
 DECL|kSAI_ResetAll|enumerator|kSAI_ResetAll = I2S_TCSR_SR_MASK | I2S_TCSR_FR_MASK /*!< All reset. */
 DECL|kSAI_ResetTypeFIFO|enumerator|kSAI_ResetTypeFIFO = I2S_TCSR_FR_MASK, /*!< FIFO reset, reset the FIFO read and write pointer */
 DECL|kSAI_ResetTypeSoftware|enumerator|kSAI_ResetTypeSoftware = I2S_TCSR_SR_MASK, /*!< Software reset, reset the logic state */
-DECL|kSAI_SampleRate11025Hz|enumerator|kSAI_SampleRate11025Hz = 11025U, /*!< Sample rate 11025Hz */
-DECL|kSAI_SampleRate12KHz|enumerator|kSAI_SampleRate12KHz = 12000U, /*!< Sample rate 12000Hz */
-DECL|kSAI_SampleRate16KHz|enumerator|kSAI_SampleRate16KHz = 16000U, /*!< Sample rate 16000Hz */
-DECL|kSAI_SampleRate22050Hz|enumerator|kSAI_SampleRate22050Hz = 22050U, /*!< Sample rate 22050Hz */
-DECL|kSAI_SampleRate24KHz|enumerator|kSAI_SampleRate24KHz = 24000U, /*!< Sample rate 24000Hz */
-DECL|kSAI_SampleRate32KHz|enumerator|kSAI_SampleRate32KHz = 32000U, /*!< Sample rate 32000Hz */
-DECL|kSAI_SampleRate44100Hz|enumerator|kSAI_SampleRate44100Hz = 44100U, /*!< Sample rate 44100Hz */
-DECL|kSAI_SampleRate48KHz|enumerator|kSAI_SampleRate48KHz = 48000U, /*!< Sample rate 48000Hz */
-DECL|kSAI_SampleRate8KHz|enumerator|kSAI_SampleRate8KHz = 8000U, /*!< Sample rate 8000Hz */
-DECL|kSAI_SampleRate96KHz|enumerator|kSAI_SampleRate96KHz = 96000U /*!< Sample rate 96000Hz */
+DECL|kSAI_SampleRate11025Hz|enumerator|kSAI_SampleRate11025Hz = 11025U, /*!< Sample rate 11025 Hz */
+DECL|kSAI_SampleRate12KHz|enumerator|kSAI_SampleRate12KHz = 12000U, /*!< Sample rate 12000 Hz */
+DECL|kSAI_SampleRate16KHz|enumerator|kSAI_SampleRate16KHz = 16000U, /*!< Sample rate 16000 Hz */
+DECL|kSAI_SampleRate22050Hz|enumerator|kSAI_SampleRate22050Hz = 22050U, /*!< Sample rate 22050 Hz */
+DECL|kSAI_SampleRate24KHz|enumerator|kSAI_SampleRate24KHz = 24000U, /*!< Sample rate 24000 Hz */
+DECL|kSAI_SampleRate32KHz|enumerator|kSAI_SampleRate32KHz = 32000U, /*!< Sample rate 32000 Hz */
+DECL|kSAI_SampleRate44100Hz|enumerator|kSAI_SampleRate44100Hz = 44100U, /*!< Sample rate 44100 Hz */
+DECL|kSAI_SampleRate48KHz|enumerator|kSAI_SampleRate48KHz = 48000U, /*!< Sample rate 48000 Hz */
+DECL|kSAI_SampleRate8KHz|enumerator|kSAI_SampleRate8KHz = 8000U, /*!< Sample rate 8000 Hz */
+DECL|kSAI_SampleRate96KHz|enumerator|kSAI_SampleRate96KHz = 96000U /*!< Sample rate 96000 Hz */
 DECL|kSAI_Slave|enumerator|kSAI_Slave = 0x1U /*!< Slave mode */
 DECL|kSAI_Stereo|enumerator|kSAI_Stereo = 0x0U, /*!< Stereo sound. */
 DECL|kSAI_SyncErrorFlag|enumerator|kSAI_SyncErrorFlag = I2S_TCSR_SEF_MASK, /*!< Sync error flag, means the sync error is detected */
