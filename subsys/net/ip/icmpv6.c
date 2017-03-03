@@ -1,5 +1,9 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|echo_reply_debug|function|static inline void echo_reply_debug(struct net_buf *buf)
+DECL|echo_reply_debug|macro|echo_reply_debug
+DECL|echo_request_debug|function|static inline void echo_request_debug(struct net_buf *buf)
+DECL|echo_request_debug|macro|echo_request_debug
 DECL|echo_request_handler|variable|echo_request_handler
 DECL|handle_echo_request|function|static enum net_verdict handle_echo_request(struct net_buf *orig)
 DECL|handlers|variable|handlers
