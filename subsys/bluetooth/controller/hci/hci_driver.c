@@ -10,7 +10,7 @@ DECL|cmd_handle|function|static int cmd_handle(struct net_buf *buf)
 DECL|drv|variable|drv
 DECL|hci_driver_open|function|static int hci_driver_open(void)
 DECL|hci_driver_send|function|static int hci_driver_send(struct net_buf *buf)
-DECL|mayfly_enable|function|void mayfly_enable(uint8_t caller_id, uint8_t callee_id, uint8_t enable)
+DECL|mayfly_enable_cb|function|void mayfly_enable_cb(uint8_t caller_id, uint8_t callee_id, uint8_t enable)
 DECL|mayfly_is_enabled|function|uint32_t mayfly_is_enabled(uint8_t caller_id, uint8_t callee_id)
 DECL|mayfly_pend|function|void mayfly_pend(uint8_t caller_id, uint8_t callee_id)
 DECL|mayfly_prio_is_equal|function|uint32_t mayfly_prio_is_equal(uint8_t caller_id, uint8_t callee_id)
