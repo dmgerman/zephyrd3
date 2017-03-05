@@ -1,3 +1,4 @@
+DECL|DAD_TIMEOUT|macro|DAD_TIMEOUT
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|MY_PORT|macro|MY_PORT
@@ -43,7 +44,9 @@ DECL|net_test_mld|struct|struct net_test_mld {
 DECL|peer_addr|variable|peer_addr
 DECL|send_query|function|static void send_query(struct net_if *iface)
 DECL|setup_mgmt_events|function|static void setup_mgmt_events(void)
+DECL|test_allnodes|function|static void test_allnodes(void)
 DECL|test_main|function|void test_main(void)
+DECL|test_solicit_node|function|static void test_solicit_node(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
 DECL|verify_join_group|function|static void verify_join_group(void)
 DECL|verify_leave_group|function|static void verify_leave_group(void)
