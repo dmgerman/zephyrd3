@@ -225,6 +225,7 @@ DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_REMOTE_NAME_CANCEL|macro|BT_HCI_OP_REMOTE_NAME_CANCEL
 DECL|BT_HCI_OP_REMOTE_NAME_REQUEST|macro|BT_HCI_OP_REMOTE_NAME_REQUEST
 DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
+DECL|BT_HCI_OP_SETUP_SYNC_CONN|macro|BT_HCI_OP_SETUP_SYNC_CONN
 DECL|BT_HCI_OP_SET_CONN_ENCRYPT|macro|BT_HCI_OP_SET_CONN_ENCRYPT
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
@@ -309,6 +310,7 @@ DECL|HCI_PKT_TYPE_HV2|macro|HCI_PKT_TYPE_HV2
 DECL|HCI_PKT_TYPE_HV3|macro|HCI_PKT_TYPE_HV3
 DECL|SCO_PKT_MASK|macro|SCO_PKT_MASK
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -573,6 +575,7 @@ DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
 DECL|bt_hci_cp_set_conn_encrypt|struct|struct bt_hci_cp_set_conn_encrypt {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
+DECL|bt_hci_cp_setup_sync_conn|struct|struct bt_hci_cp_setup_sync_conn {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
 DECL|bt_hci_cp_user_passkey_neg_reply|struct|struct bt_hci_cp_user_passkey_neg_reply {
 DECL|bt_hci_cp_user_passkey_reply|struct|struct bt_hci_cp_user_passkey_reply {
@@ -679,6 +682,7 @@ DECL|conn_interval_min|member|uint16_t conn_interval_min;
 DECL|conn_latency|member|uint16_t conn_latency;
 DECL|conn_latency|member|uint16_t conn_latency;
 DECL|content_format|member|uint16_t content_format;
+DECL|content_format|member|uint16_t content_format;
 DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
@@ -713,6 +717,7 @@ DECL|filter_dup|member|uint8_t filter_dup;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
 DECL|filter_policy|member|uint8_t filter_policy;
+DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
 DECL|handle|member|uint16_t handle;
@@ -809,6 +814,7 @@ DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_interval|member|uint16_t max_interval;
 DECL|max_latency|member|uint16_t max_latency;
+DECL|max_latency|member|uint16_t max_latency;
 DECL|max_page|member|uint8_t max_page;
 DECL|max_page|member|uint8_t max_page;
 DECL|max_rx_octets|member|uint16_t max_rx_octets;
@@ -868,6 +874,7 @@ DECL|pin_code|member|uint8_t pin_code[16];
 DECL|pin_len|member|uint8_t pin_len;
 DECL|pkt_payload|member|uint8_t pkt_payload;
 DECL|pkt_type|member|uint16_t pkt_type;
+DECL|pkt_type|member|uint16_t pkt_type;
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
@@ -887,6 +894,7 @@ DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|retansmission_window|member|uint8_t retansmission_window;
 DECL|retrans_effort|member|uint8_t retrans_effort;
+DECL|retrans_effort|member|uint8_t retrans_effort;
 DECL|rl_size|member|uint8_t rl_size;
 DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
@@ -896,6 +904,7 @@ DECL|rpa_timeout|member|uint8_t rpa_timeout;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
+DECL|rx_bandwidth|member|uint32_t rx_bandwidth;
 DECL|rx_bandwidth|member|uint32_t rx_bandwidth;
 DECL|rx_ch|member|uint8_t rx_ch;
 DECL|rx_pkt_count|member|uint16_t rx_pkt_count;
@@ -971,6 +980,7 @@ DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|test_data_len|member|uint8_t test_data_len;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
+DECL|tx_bandwidth|member|uint32_t tx_bandwidth;
 DECL|tx_bandwidth|member|uint32_t tx_bandwidth;
 DECL|tx_ch|member|uint8_t tx_ch;
 DECL|tx_interval|member|uint8_t tx_interval;

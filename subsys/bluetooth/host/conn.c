@@ -20,6 +20,7 @@ DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb
 DECL|bt_conn_create_br|function|struct bt_conn *bt_conn_create_br(const bt_addr_t *peer, const struct bt_br_conn_param *param)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer, const struct bt_le_conn_param *param)
 DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct net_buf_pool *pool, size_t reserve)
+DECL|bt_conn_create_sco|function|struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer)
 DECL|bt_conn_create_slave_le|function|struct bt_conn *bt_conn_create_slave_le(const bt_addr_le_t *peer,const struct bt_le_adv_param *param)
 DECL|bt_conn_disconnect_all|function|void bt_conn_disconnect_all(void)
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
