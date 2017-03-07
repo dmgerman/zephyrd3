@@ -1,3 +1,4 @@
+DECL|CYCLE_NOP|macro|CYCLE_NOP
 DECL|bst_index|function|static int bst_index(uint32_t num_units, uint32_t *index)
 DECL|callback_data|member|void *callback_data[QM_DMA_CHANNEL_NUM];
 DECL|device_power_state|member|uint32_t device_power_state;
