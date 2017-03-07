@@ -74,6 +74,7 @@ DECL|net_ipv6_unspecified_address|function|const struct in6_addr *net_ipv6_unspe
 DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
 DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)
+DECL|net_nbr_state2str|function|const char *net_nbr_state2str(enum net_nbr_state state)
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_input_handler|variable|ns_input_handler
