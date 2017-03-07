@@ -48,6 +48,7 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
+DECL|nbr_set_state|function|static void nbr_set_state(struct net_nbr *nbr, enum net_nbr_state new_state)
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
 DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, uint8_t next_header)
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst)
