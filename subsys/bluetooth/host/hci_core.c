@@ -8,6 +8,7 @@ DECL|EV_COUNT|macro|EV_COUNT
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
+DECL|accept_sco_conn|function|static int accept_sco_conn(const bt_addr_t *bdaddr, struct bt_conn *sco_conn)
 DECL|acl_data|struct|struct acl_data {
 DECL|acl|macro|acl
 DECL|auth_complete|function|static void auth_complete(struct net_buf *buf)
@@ -29,6 +30,7 @@ DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(int32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const uint8_t remote_pk[64], bt_dh_key_cb_t cb)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
+DECL|bt_esco_conn_req|function|static void bt_esco_conn_req(struct bt_hci_evt_conn_request *evt)
 DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
@@ -61,6 +63,7 @@ DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|create_random_addr|function|static inline int create_random_addr(bt_addr_le_t *addr)
+DECL|device_supported_pkt_type|function|void device_supported_pkt_type(void)
 DECL|dh_key_cb|variable|dh_key_cb
 DECL|discovery_cb|variable|discovery_cb
 DECL|discovery_priv|struct|struct discovery_priv {

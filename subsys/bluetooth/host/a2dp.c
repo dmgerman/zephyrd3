@@ -5,6 +5,7 @@ DECL|a2dp_accept|function|int a2dp_accept(struct bt_conn *conn, struct bt_avdtp 
 DECL|avdtp_cb|variable|avdtp_cb
 DECL|bt_a2dp_connect|function|struct bt_a2dp *bt_a2dp_connect(struct bt_conn *conn)
 DECL|bt_a2dp_init|function|int bt_a2dp_init(void)
+DECL|bt_a2dp_register_endpoint|function|int bt_a2dp_register_endpoint(struct bt_a2dp_endpoint *endpoint, uint8_t media_type, uint8_t role)
 DECL|bt_a2dp|struct|struct bt_a2dp {
 DECL|cb_ind|variable|cb_ind
 DECL|connection|variable|connection

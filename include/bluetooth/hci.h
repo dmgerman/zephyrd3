@@ -37,14 +37,22 @@ DECL|BT_DATA_UUID16_ALL|macro|BT_DATA_UUID16_ALL
 DECL|BT_DATA_UUID16_SOME|macro|BT_DATA_UUID16_SOME
 DECL|BT_DATA_UUID32_ALL|macro|BT_DATA_UUID32_ALL
 DECL|BT_DATA_UUID32_SOME|macro|BT_DATA_UUID32_SOME
+DECL|BT_FEAT_2EV3_PKT|macro|BT_FEAT_2EV3_PKT
+DECL|BT_FEAT_3EV3_PKT|macro|BT_FEAT_3EV3_PKT
+DECL|BT_FEAT_3SLOT_PKT|macro|BT_FEAT_3SLOT_PKT
 DECL|BT_FEAT_BREDR|macro|BT_FEAT_BREDR
+DECL|BT_FEAT_EV4_PKT|macro|BT_FEAT_EV4_PKT
+DECL|BT_FEAT_EV5_PKT|macro|BT_FEAT_EV5_PKT
 DECL|BT_FEAT_EXT_FEATURES|macro|BT_FEAT_EXT_FEATURES
 DECL|BT_FEAT_HOST_SSP|macro|BT_FEAT_HOST_SSP
+DECL|BT_FEAT_HV2_PKT|macro|BT_FEAT_HV2_PKT
+DECL|BT_FEAT_HV3_PKT|macro|BT_FEAT_HV3_PKT
 DECL|BT_FEAT_LE_CONN_PARAM_REQ_PROC|macro|BT_FEAT_LE_CONN_PARAM_REQ_PROC
 DECL|BT_FEAT_LE_DLE|macro|BT_FEAT_LE_DLE
 DECL|BT_FEAT_LE_ENCR|macro|BT_FEAT_LE_ENCR
 DECL|BT_FEAT_LE_SLAVE_FEATURE_XCHG|macro|BT_FEAT_LE_SLAVE_FEATURE_XCHG
 DECL|BT_FEAT_LE|macro|BT_FEAT_LE
+DECL|BT_FEAT_LMP_ESCO_CAPABLE|macro|BT_FEAT_LMP_ESCO_CAPABLE
 DECL|BT_FEAT_SC|macro|BT_FEAT_SC
 DECL|BT_FEAT_TEST|macro|BT_FEAT_TEST
 DECL|BT_GAP_ADV_FAST_INT_MAX_1|macro|BT_GAP_ADV_FAST_INT_MAX_1
@@ -140,6 +148,7 @@ DECL|BT_HCI_LE_SCAN_PASSIVE|macro|BT_HCI_LE_SCAN_PASSIVE
 DECL|BT_HCI_NO_BONDING_MITM|macro|BT_HCI_NO_BONDING_MITM
 DECL|BT_HCI_NO_BONDING|macro|BT_HCI_NO_BONDING
 DECL|BT_HCI_OP_ACCEPT_CONN_REQ|macro|BT_HCI_OP_ACCEPT_CONN_REQ
+DECL|BT_HCI_OP_ACCEPT_SYNC_CONN_REQ|macro|BT_HCI_OP_ACCEPT_SYNC_CONN_REQ
 DECL|BT_HCI_OP_AUTH_REQUESTED|macro|BT_HCI_OP_AUTH_REQUESTED
 DECL|BT_HCI_OP_CONNECT_CANCEL|macro|BT_HCI_OP_CONNECT_CANCEL
 DECL|BT_HCI_OP_CONNECT|macro|BT_HCI_OP_CONNECT
@@ -240,6 +249,7 @@ DECL|BT_HCI_VERSION_3_0|macro|BT_HCI_VERSION_3_0
 DECL|BT_HCI_VERSION_4_0|macro|BT_HCI_VERSION_4_0
 DECL|BT_HCI_VERSION_4_1|macro|BT_HCI_VERSION_4_1
 DECL|BT_HCI_VERSION_4_2|macro|BT_HCI_VERSION_4_2
+DECL|BT_HCI_VERSION_5_0|macro|BT_HCI_VERSION_5_0
 DECL|BT_IO_DISPLAY_ONLY|macro|BT_IO_DISPLAY_ONLY
 DECL|BT_IO_DISPLAY_YESNO|macro|BT_IO_DISPLAY_YESNO
 DECL|BT_IO_KEYBOARD_ONLY|macro|BT_IO_KEYBOARD_ONLY
@@ -281,7 +291,24 @@ DECL|BT_OGF_STATUS|macro|BT_OGF_STATUS
 DECL|BT_OGF_VS|macro|BT_OGF_VS
 DECL|BT_OGF|macro|BT_OGF
 DECL|BT_OP|macro|BT_OP
+DECL|EDR_ESCO_PKT_MASK|macro|EDR_ESCO_PKT_MASK
+DECL|ESCO_PKT_MASK|macro|ESCO_PKT_MASK
+DECL|HCI_PKT_TYPE_ESCO_2EV3|macro|HCI_PKT_TYPE_ESCO_2EV3
+DECL|HCI_PKT_TYPE_ESCO_2EV5|macro|HCI_PKT_TYPE_ESCO_2EV5
+DECL|HCI_PKT_TYPE_ESCO_3EV3|macro|HCI_PKT_TYPE_ESCO_3EV3
+DECL|HCI_PKT_TYPE_ESCO_3EV5|macro|HCI_PKT_TYPE_ESCO_3EV5
+DECL|HCI_PKT_TYPE_ESCO_EV3|macro|HCI_PKT_TYPE_ESCO_EV3
+DECL|HCI_PKT_TYPE_ESCO_EV4|macro|HCI_PKT_TYPE_ESCO_EV4
+DECL|HCI_PKT_TYPE_ESCO_EV5|macro|HCI_PKT_TYPE_ESCO_EV5
+DECL|HCI_PKT_TYPE_ESCO_HV1|macro|HCI_PKT_TYPE_ESCO_HV1
+DECL|HCI_PKT_TYPE_ESCO_HV2|macro|HCI_PKT_TYPE_ESCO_HV2
+DECL|HCI_PKT_TYPE_ESCO_HV3|macro|HCI_PKT_TYPE_ESCO_HV3
+DECL|HCI_PKT_TYPE_HV1|macro|HCI_PKT_TYPE_HV1
+DECL|HCI_PKT_TYPE_HV2|macro|HCI_PKT_TYPE_HV2
+DECL|HCI_PKT_TYPE_HV3|macro|HCI_PKT_TYPE_HV3
+DECL|SCO_PKT_MASK|macro|SCO_PKT_MASK
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -473,6 +500,7 @@ DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bdaddr|member|bt_addr_t bdaddr;
+DECL|bdaddr|member|bt_addr_t bdaddr;
 DECL|bt_acl_flags|macro|bt_acl_flags
 DECL|bt_acl_handle_pack|macro|bt_acl_handle_pack
 DECL|bt_acl_handle|macro|bt_acl_handle
@@ -487,6 +515,7 @@ DECL|bt_addr_t|typedef|} bt_addr_t;
 DECL|bt_hci_acl_hdr|struct|struct bt_hci_acl_hdr {
 DECL|bt_hci_cmd_hdr|struct|struct bt_hci_cmd_hdr {
 DECL|bt_hci_cp_accept_conn_req|struct|struct bt_hci_cp_accept_conn_req {
+DECL|bt_hci_cp_accept_sync_conn_req|struct|struct bt_hci_cp_accept_sync_conn_req {
 DECL|bt_hci_cp_auth_requested|struct|struct bt_hci_cp_auth_requested {
 DECL|bt_hci_cp_connect_cancel|struct|struct bt_hci_cp_connect_cancel {
 DECL|bt_hci_cp_connect|struct|struct bt_hci_cp_connect {
@@ -644,6 +673,7 @@ DECL|conn_interval_min|member|uint16_t conn_interval_min;
 DECL|conn_interval_min|member|uint16_t conn_interval_min;
 DECL|conn_latency|member|uint16_t conn_latency;
 DECL|conn_latency|member|uint16_t conn_latency;
+DECL|content_format|member|uint16_t content_format;
 DECL|count|member|uint16_t count;
 DECL|data|member|uint8_t data[0];
 DECL|data|member|uint8_t data[31];
@@ -771,6 +801,7 @@ DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_ce_len|member|uint16_t max_ce_len;
 DECL|max_interval|member|uint16_t max_interval;
+DECL|max_latency|member|uint16_t max_latency;
 DECL|max_page|member|uint8_t max_page;
 DECL|max_page|member|uint8_t max_page;
 DECL|max_rx_octets|member|uint16_t max_rx_octets;
@@ -829,6 +860,7 @@ DECL|peer_rpa|member|bt_addr_t peer_rpa;
 DECL|pin_code|member|uint8_t pin_code[16];
 DECL|pin_len|member|uint8_t pin_len;
 DECL|pkt_payload|member|uint8_t pkt_payload;
+DECL|pkt_type|member|uint16_t pkt_type;
 DECL|plaintext|member|uint8_t plaintext[16];
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
@@ -846,6 +878,7 @@ DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
 DECL|reserved|member|uint8_t reserved;
+DECL|retrans_effort|member|uint8_t retrans_effort;
 DECL|rl_size|member|uint8_t rl_size;
 DECL|role|member|uint8_t role;
 DECL|role|member|uint8_t role;
@@ -855,6 +888,7 @@ DECL|rpa_timeout|member|uint8_t rpa_timeout;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
 DECL|rssi|member|int8_t rssi;
+DECL|rx_bandwidth|member|uint32_t rx_bandwidth;
 DECL|rx_ch|member|uint8_t rx_ch;
 DECL|rx_pkt_count|member|uint16_t rx_pkt_count;
 DECL|sc_support|member|uint8_t sc_support;
@@ -927,6 +961,7 @@ DECL|supv_timeout|member|uint16_t supv_timeout;
 DECL|test_data_len|member|uint8_t test_data_len;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
+DECL|tx_bandwidth|member|uint32_t tx_bandwidth;
 DECL|tx_ch|member|uint8_t tx_ch;
 DECL|tx_octets|member|uint16_t tx_octets;
 DECL|tx_power_level|member|int8_t tx_power_level;

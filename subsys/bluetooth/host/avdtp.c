@@ -26,4 +26,7 @@ DECL|bt_avdtp_l2cap_recv|function|void bt_avdtp_l2cap_recv(struct bt_l2cap_chan 
 DECL|bt_avdtp_register_sep|function|int bt_avdtp_register_sep(uint8_t media_type, uint8_t role, struct bt_avdtp_seid_lsep *lsep)
 DECL|bt_avdtp_register|function|int bt_avdtp_register(struct bt_avdtp_event_cb *cb)
 DECL|event_cb|variable|event_cb
+DECL|func|member|void (*func)(struct bt_avdtp *session, struct net_buf *buf,
+DECL|handler|variable|handler
 DECL|lseps|variable|lseps
+DECL|sig_id|member|uint8_t sig_id;

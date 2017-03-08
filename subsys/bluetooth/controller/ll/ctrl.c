@@ -254,10 +254,15 @@ DECL|state|member|enum state state;
 DECL|terminate_ind_rx_enqueue|function|static void terminate_ind_rx_enqueue(struct connection *conn, uint8_t reason)
 DECL|ticker_id_event|member|uint8_t volatile ticker_id_event;
 DECL|ticker_id_prepare|member|uint8_t volatile ticker_id_prepare;
+DECL|ticker_id_stop|member|uint8_t volatile ticker_id_stop;
 DECL|ticker_if_done|function|static void ticker_if_done(uint32_t status, void *ops_context)
 DECL|ticker_job_disable|function|static void ticker_job_disable(uint32_t status, void *op_context)
 DECL|ticker_op_latency_cancelled|function|static void ticker_op_latency_cancelled(uint32_t ticker_status, void *params)
+DECL|ticker_stop_adv_assert|function|static void ticker_stop_adv_assert(uint32_t status, void *params)
+DECL|ticker_stop_obs_assert|function|static void ticker_stop_obs_assert(uint32_t status, void *params)
 DECL|ticker_success_assert|function|static void ticker_success_assert(uint32_t status, void *params)
+DECL|ticker_update_adv_assert|function|static void ticker_update_adv_assert(uint32_t status, void *params)
+DECL|ticker_update_slave_assert|function|static void ticker_update_slave_assert(uint32_t status, void *params)
 DECL|ticks_active_to_start|member|uint32_t ticks_active_to_start;
 DECL|ticks_anchor|member|uint32_t ticks_anchor;
 DECL|ticks_conn_slot|member|uint32_t ticks_conn_slot;
