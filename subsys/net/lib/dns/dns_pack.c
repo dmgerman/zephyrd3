@@ -14,7 +14,7 @@ DECL|DNS_QDCOUNT_LEN|macro|DNS_QDCOUNT_LEN
 DECL|DNS_QTYPE_LEN|macro|DNS_QTYPE_LEN
 DECL|DNS_RECURSION|macro|DNS_RECURSION
 DECL|dns_copy_qname|function|int dns_copy_qname(uint8_t *buf, uint16_t *len, uint16_t size, struct dns_msg_t *dns_msg, uint16_t pos)
-DECL|dns_find_null|function|int dns_find_null(int *qname_size, uint8_t *buf, uint16_t size)
+DECL|dns_find_null|function|static int dns_find_null(int *qname_size, uint8_t *buf, uint16_t size)
 DECL|dns_msg_pack_qname|function|int dns_msg_pack_qname(uint16_t *len, uint8_t *buf, uint16_t size, const char *domain_name)
 DECL|dns_msg_pack_query_header|function|static int dns_msg_pack_query_header(uint8_t *buf, uint16_t size, uint16_t id)
 DECL|dns_msg_pack_query|function|int dns_msg_pack_query(uint8_t *buf, uint16_t *len, uint16_t size, uint8_t *qname, uint16_t qname_len, uint16_t id, enum dns_rr_type qtype)
