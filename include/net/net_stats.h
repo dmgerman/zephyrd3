@@ -50,6 +50,7 @@ DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
+DECL|drop|member|net_stats_t drop;
 DECL|forward_errors|member|uint16_t forward_errors;
 DECL|forwarded|member|net_stats_t forwarded;
 DECL|forwarded|member|net_stats_t forwarded;
@@ -60,6 +61,7 @@ DECL|icmp|member|struct net_stats_icmp icmp;
 DECL|interval|member|net_stats_t interval;
 DECL|ip_errors|member|struct net_stats_ip_errors ip_errors;
 DECL|ipv4|member|struct net_stats_ip ipv4;
+DECL|ipv6_mld|member|struct net_stats_ipv6_mld ipv6_mld;
 DECL|ipv6_nd|member|struct net_stats_ipv6_nd ipv6_nd;
 DECL|ipv6|member|struct net_stats_ip ipv6;
 DECL|lblenerr|member|net_stats_t lblenerr;
@@ -72,6 +74,7 @@ DECL|net_request_stats_cmd|enum|enum net_request_stats_cmd {
 DECL|net_stats_bytes|struct|struct net_stats_bytes {
 DECL|net_stats_icmp|struct|struct net_stats_icmp {
 DECL|net_stats_ip_errors|struct|struct net_stats_ip_errors {
+DECL|net_stats_ipv6_mld|struct|struct net_stats_ipv6_mld {
 DECL|net_stats_ipv6_nd|struct|struct net_stats_ipv6_nd {
 DECL|net_stats_ip|struct|struct net_stats_ip {
 DECL|net_stats_rpl_dao_ack|struct|struct net_stats_rpl_dao_ack {
@@ -96,11 +99,13 @@ DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
+DECL|recv|member|net_stats_t recv;
 DECL|resets|member|uint16_t resets;
 DECL|rexmit|member|net_stats_t rexmit;
 DECL|root_repairs|member|uint16_t root_repairs;
 DECL|rpl|member|struct net_stats_rpl rpl;
 DECL|rst|member|net_stats_t rst;
+DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;

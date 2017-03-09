@@ -6,6 +6,7 @@ DECL|NET_MAX_TCP_CONTEXT|macro|NET_MAX_TCP_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|ack|member|uint32_t ack;
+DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_buf *buf)
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
 DECL|finalize_segment|function|static void finalize_segment(struct net_context *context, struct net_buf *buf)
 DECL|flags|member|uint8_t flags;
@@ -14,8 +15,9 @@ DECL|get_size|function|static inline uint32_t get_size(uint32_t pos1, uint32_t p
 DECL|init_isn|function|static inline uint32_t init_isn(void)
 DECL|ip_max_packet_len|function|static inline size_t ip_max_packet_len(struct in_addr *dest_ip)
 DECL|ip_max_packet_len|macro|ip_max_packet_len
+DECL|is_6lo_technology|macro|is_6lo_technology
 DECL|net_tcp_ack_received|function|void net_tcp_ack_received(struct net_context *ctx, uint32_t ack)
-DECL|net_tcp_add_options|function|static inline int net_tcp_add_options(struct net_buf *header, size_t len, void *data)
+DECL|net_tcp_add_options|function|static inline uint8_t net_tcp_add_options(struct net_buf *header, size_t len, void *data)
 DECL|net_tcp_alloc|function|struct net_tcp *net_tcp_alloc(struct net_context *context)
 DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp, enum net_tcp_state new_state)
 DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_data)

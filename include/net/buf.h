@@ -1,6 +1,7 @@
 DECL|NET_BUF_FRAGS|macro|NET_BUF_FRAGS
 DECL|NET_BUF_POOL_DEFINE|macro|NET_BUF_POOL_DEFINE
 DECL|NET_BUF_POOL_INITIALIZER|macro|NET_BUF_POOL_INITIALIZER
+DECL|NET_BUF_POOL_INITIALIZER|macro|NET_BUF_POOL_INITIALIZER
 DECL|NET_BUF_SIMPLE|macro|NET_BUF_SIMPLE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__bufs|member|struct net_buf * const __bufs;
@@ -8,6 +9,7 @@ DECL|__net_buf_align|macro|__net_buf_align
 DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
 DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
 DECL|_unused|member|int _unused;
+DECL|avail_count|member|int16_t avail_count;
 DECL|buf_count|member|const uint16_t buf_count;
 DECL|buf_size|member|const uint16_t buf_size;
 DECL|b|member|struct net_buf_simple b;
@@ -20,6 +22,7 @@ DECL|free|member|struct k_lifo free;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
 DECL|len|member|uint16_t len;
+DECL|name|member|const char *name;
 DECL|net_buf_add_be16|macro|net_buf_add_be16
 DECL|net_buf_add_be32|macro|net_buf_add_be32
 DECL|net_buf_add_le16|macro|net_buf_add_le16
@@ -56,6 +59,7 @@ DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|offset|member|uint16_t offset;
+DECL|pool_size|member|const uint16_t pool_size;
 DECL|pool|member|struct net_buf_pool *pool;
 DECL|ref|member|uint8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;

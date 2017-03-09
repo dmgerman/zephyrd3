@@ -1,7 +1,2 @@
 DECL|http_init|function|int http_init(struct http_client_ctx *http_ctx)
 DECL|http_reset_ctx|function|int http_reset_ctx(struct http_client_ctx *http_ctx)
-DECL|http_send_get|function|int http_send_get(struct http_client_ctx *http_ctx, const char *url)
-DECL|http_send_head|function|int http_send_head(struct http_client_ctx *http_ctx, const char *url)
-DECL|http_send_options|function|int http_send_options(struct http_client_ctx *http_ctx, const char *url, const char *content_type_value, const char *payload)
-DECL|http_send_post|function|int http_send_post(struct http_client_ctx *http_ctx, const char *url, const char *content_type_value, const char *payload)
-DECL|http_send_request|function|int http_send_request(struct http_client_ctx *http_ctx, const char *method, const char *url, const char *protocol, const char *content_type_value, const char *payload)

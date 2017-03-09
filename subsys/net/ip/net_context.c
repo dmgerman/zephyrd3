@@ -11,6 +11,8 @@ DECL|buf_get_sockaddr|function|static void buf_get_sockaddr(sa_family_t family, 
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, uint16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
+DECL|copy_pool_vars|function|static inline void copy_pool_vars(struct net_context *new_context, struct net_context *listen_context)
+DECL|copy_pool_vars|macro|copy_pool_vars
 DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net_buf *buf,struct sockaddr *addr)
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_buf *buf, const struct sockaddr *dst_addr, struct net_buf **out_buf)
 DECL|find_available_port|function|static uint16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
@@ -32,7 +34,7 @@ DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
 DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
-DECL|packet_received|function|enum net_verdict packet_received(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|packet_received|function|static enum net_verdict packet_received(struct net_conn *conn, struct net_buf *buf, void *user_data)
 DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, int32_t timeout, void *user_data)
 DECL|send_ack|function|static inline int send_ack(struct net_context *context, struct sockaddr *remote)
