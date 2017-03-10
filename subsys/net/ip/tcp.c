@@ -8,7 +8,7 @@ DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|ack|member|uint32_t ack;
 DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_buf *buf)
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
-DECL|finalize_segment|function|static void finalize_segment(struct net_context *context, struct net_buf *buf)
+DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_buf *buf)
 DECL|flags|member|uint8_t flags;
 DECL|get_recv_wnd|function|static inline uint32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline uint32_t get_size(uint32_t pos1, uint32_t pos2)
