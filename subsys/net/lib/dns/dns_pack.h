@@ -23,6 +23,7 @@ DECL|answer_offset|member|uint16_t answer_offset;
 DECL|dns_answer_class|function|static inline int dns_answer_class(uint16_t dname_size, uint8_t *answer)
 DECL|dns_answer_rdlength|function|static inline int dns_answer_rdlength(uint16_t dname_size, uint8_t *answer)
 DECL|dns_answer_ttl|function|static inline int dns_answer_ttl(uint16_t dname_size, uint8_t *answer)
+DECL|dns_answer_type|function|static inline int dns_answer_type(uint16_t dname_size, uint8_t *answer)
 DECL|dns_class|enum|enum dns_class {
 DECL|dns_header_aa|function|static inline int dns_header_aa(uint8_t *header)
 DECL|dns_header_ancount|function|static inline int dns_header_ancount(uint8_t *header)
@@ -43,7 +44,6 @@ DECL|dns_msg_t|struct|struct dns_msg_t {
 DECL|dns_query_qclass|function|static inline int dns_query_qclass(uint8_t *question)
 DECL|dns_query_qtype|function|static inline int dns_query_qtype(uint8_t *question)
 DECL|dns_response_type|enum|enum dns_response_type {
-DECL|dns_response_type|function|static inline int dns_response_type(uint16_t dname_size, uint8_t *answer)
 DECL|dns_rr_type|enum|enum dns_rr_type {
 DECL|dns_unpack_answer_rdlength|function|static inline int dns_unpack_answer_rdlength(uint16_t dname_size, uint8_t *answer)
 DECL|dns_unpack_header_ancount|function|static inline int dns_unpack_header_ancount(uint8_t *header)
