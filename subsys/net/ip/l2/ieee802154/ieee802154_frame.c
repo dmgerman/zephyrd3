@@ -13,11 +13,11 @@ DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struc
 DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct net_if *iface, struct net_linkaddr *dst, struct net_buf *frag, uint8_t reserved_len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct net_if *iface,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
 DECL|ieee802154_decipher_data_frame|function|bool ieee802154_decipher_data_frame(struct net_if *iface, struct net_buf *buf, struct ieee802154_mpdu *mpdu)
+DECL|ieee802154_validate_aux_security_hdr|function|ieee802154_validate_aux_security_hdr(uint8_t *buf, uint8_t **p_buf)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
 DECL|level_2_tag_size|variable|level_2_tag_size
 DECL|mac_command_length|function|static inline uint8_t mac_command_length(enum ieee802154_cfi cfi)
 DECL|validate_addr|function|validate_addr(uint8_t *buf, uint8_t **p_buf, enum ieee802154_addressing_mode mode, bool pan_id_compression)
-DECL|validate_auxiliary_security_header|function|validate_auxiliary_security_header(uint8_t *buf, uint8_t **p_buf)
 DECL|validate_beacon|function|validate_beacon(struct ieee802154_mpdu *mpdu, uint8_t *buf, uint8_t length)
 DECL|validate_fc_seq|function|validate_fc_seq(uint8_t *buf, uint8_t **p_buf)
 DECL|validate_mac_command_cfi_to_mhr|function|validate_mac_command_cfi_to_mhr(struct ieee802154_mhr *mhr,uint8_t ar, uint8_t comp, uint8_t src, bool src_pan_brdcst_chk, uint8_t dst, bool dst_brdcst_chk)
