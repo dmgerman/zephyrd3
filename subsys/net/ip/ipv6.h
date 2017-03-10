@@ -9,6 +9,12 @@ DECL|NET_IPV6_EXT_HDR_BITMAP_ROUTING|macro|NET_IPV6_EXT_HDR_BITMAP_ROUTING
 DECL|NET_IPV6_EXT_HDR_OPT_PAD1|macro|NET_IPV6_EXT_HDR_OPT_PAD1
 DECL|NET_IPV6_EXT_HDR_OPT_PADN|macro|NET_IPV6_EXT_HDR_OPT_PADN
 DECL|NET_IPV6_EXT_HDR_OPT_RPL|macro|NET_IPV6_EXT_HDR_OPT_RPL
+DECL|NET_IPV6_MLDv2_ALLOW_NEW_SOURCES|macro|NET_IPV6_MLDv2_ALLOW_NEW_SOURCES
+DECL|NET_IPV6_MLDv2_BLOCK_OLD_SOURCES|macro|NET_IPV6_MLDv2_BLOCK_OLD_SOURCES
+DECL|NET_IPV6_MLDv2_CHANGE_TO_EXCLUDE_MODE|macro|NET_IPV6_MLDv2_CHANGE_TO_EXCLUDE_MODE
+DECL|NET_IPV6_MLDv2_CHANGE_TO_INCLUDE_MODE|macro|NET_IPV6_MLDv2_CHANGE_TO_INCLUDE_MODE
+DECL|NET_IPV6_MLDv2_MODE_IS_EXCLUDE|macro|NET_IPV6_MLDv2_MODE_IS_EXCLUDE
+DECL|NET_IPV6_MLDv2_MODE_IS_INCLUDE|macro|NET_IPV6_MLDv2_MODE_IS_INCLUDE
 DECL|NET_IPV6_ND_HOP_LIMIT|macro|NET_IPV6_ND_HOP_LIMIT
 DECL|NET_IPV6_ND_INFINITE_LIFETIME|macro|NET_IPV6_ND_INFINITE_LIFETIME
 DECL|NET_MAX_RS_COUNT|macro|NET_MAX_RS_COUNT
@@ -22,6 +28,8 @@ DECL|addr|member|struct in6_addr addr;
 DECL|is_router|member|bool is_router;
 DECL|link_metric|member|uint16_t link_metric;
 DECL|net_ipv6_init|macro|net_ipv6_init
+DECL|net_ipv6_mld_join|macro|net_ipv6_mld_join
+DECL|net_ipv6_mld_leave|macro|net_ipv6_mld_leave
 DECL|net_ipv6_nbr_add|function|static inline struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
 DECL|net_ipv6_nbr_data|function|static inline struct net_ipv6_nbr_data *net_ipv6_nbr_data(struct net_nbr *nbr)
 DECL|net_ipv6_nbr_data|struct|struct net_ipv6_nbr_data {

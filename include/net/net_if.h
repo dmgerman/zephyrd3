@@ -1,6 +1,8 @@
-DECL|CONFIG_NET_TX_STACK_SIZE|macro|CONFIG_NET_TX_STACK_SIZE
 DECL|NET_DEVICE_INIT_INSTANCE|macro|NET_DEVICE_INIT_INSTANCE
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
+DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
+DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
+DECL|NET_IF_EVENT_GET_NAME|macro|NET_IF_EVENT_GET_NAME
 DECL|NET_IF_GET_NAME|macro|NET_IF_GET_NAME
 DECL|NET_IF_GET|macro|NET_IF_GET
 DECL|NET_IF_INIT|macro|NET_IF_INIT
@@ -15,6 +17,7 @@ DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
 DECL|__net_if_align|variable|__net_if_align
+DECL|_unused|member|uint8_t _unused : 6;
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
@@ -27,8 +30,6 @@ DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_count|member|uint8_t dad_count;
 DECL|dad_timer|member|struct k_delayed_work dad_timer;
 DECL|dev|member|struct device *dev;
-DECL|dhcpv4_t1_timer|member|struct k_delayed_work dhcpv4_t1_timer;
-DECL|dhcpv4_timeout|member|struct k_delayed_work dhcpv4_timeout;
 DECL|dhcpv4|member|} dhcpv4;
 DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|uint8_t hop_limit;
@@ -40,10 +41,11 @@ DECL|is_default|member|bool is_default;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
+DECL|is_joined|member|uint8_t is_joined : 1;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
 DECL|is_used|member|bool is_used;
-DECL|is_used|member|bool is_used;
+DECL|is_used|member|uint8_t is_used : 1;
 DECL|l2_data|member|void *l2_data;
 DECL|l2|member|const struct net_l2 * const l2;
 DECL|lease_time|member|uint32_t lease_time;
@@ -70,6 +72,9 @@ DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_a
 DECL|net_if_ipv6_get_hop_limit|function|static inline uint8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline uint32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_retrans_timer|function|static inline uint32_t net_if_ipv6_get_retrans_timer(struct net_if *iface)
+DECL|net_if_ipv6_maddr_is_joined|function|static inline bool net_if_ipv6_maddr_is_joined(struct net_if_mcast_addr *addr)
+DECL|net_if_ipv6_maddr_join|function|static inline void net_if_ipv6_maddr_join(struct net_if_mcast_addr *addr)
+DECL|net_if_ipv6_maddr_leave|function|static inline void net_if_ipv6_maddr_leave(struct net_if_mcast_addr *addr)
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
@@ -96,6 +101,7 @@ DECL|offload_ip|member|bool offload_ip;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|reachable_time|member|uint32_t reachable_time;
+DECL|rebinding_time|member|uint32_t rebinding_time;
 DECL|renewal_time|member|uint32_t renewal_time;
 DECL|requested_ip|member|struct in_addr requested_ip;
 DECL|retrans_timer|member|uint32_t retrans_timer;
@@ -104,6 +110,9 @@ DECL|rs_timer|member|struct k_delayed_work rs_timer;
 DECL|send|member|int (*send)(struct net_if *iface, struct net_buf *buf);
 DECL|server_id|member|struct in_addr server_id;
 DECL|state|member|enum net_dhcpv4_state state;
+DECL|t1_timer|member|struct k_delayed_work t1_timer;
+DECL|t2_timer|member|struct k_delayed_work t2_timer;
+DECL|timer|member|struct k_delayed_work timer;
 DECL|ttl|member|uint8_t ttl;
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];

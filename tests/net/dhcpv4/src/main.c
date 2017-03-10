@@ -13,7 +13,7 @@ DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
-DECL|nbuf_get_data|function|static struct net_buf *nbuf_get_data(struct net_if *iface)
+DECL|nbuf_get_data|function|static struct net_buf *nbuf_get_data(struct net_buf *buf, struct net_if *iface)
 DECL|net_dhcpv4_context_data|variable|net_dhcpv4_context_data
 DECL|net_dhcpv4_context|struct|struct net_dhcpv4_context {
 DECL|net_dhcpv4_dev_init|function|static int net_dhcpv4_dev_init(struct device *dev)
