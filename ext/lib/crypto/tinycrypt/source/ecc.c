@@ -10,7 +10,8 @@ DECL|EccPoint_add|function|void EccPoint_add(EccPointJacobi *P1, EccPointJacobi 
 DECL|EccPoint_double|function|static void EccPoint_double(EccPointJacobi *P)
 DECL|EccPoint_fromAffine|function|static void EccPoint_fromAffine(EccPointJacobi *p_point_jacobi,EccPoint *p_point)
 DECL|EccPoint_isZero|function|uint32_t EccPoint_isZero(EccPoint *p_point)
-DECL|EccPoint_mult|function|void EccPoint_mult(EccPointJacobi *p_result, EccPoint *p_point, uint32_t *p_scalar)
+DECL|EccPoint_mult_safe|function|void EccPoint_mult_safe(EccPointJacobi *p_result, EccPoint *p_point, uint32_t *p_scalar)
+DECL|EccPoint_mult_unsafe|function|void EccPoint_mult_unsafe(EccPointJacobi *p_result, EccPoint *p_point, uint32_t *p_scalar)
 DECL|EccPoint_toAffine|function|void EccPoint_toAffine(EccPoint *p_point, EccPointJacobi *p_point_jacobi)
 DECL|curve_G|variable|curve_G
 DECL|curve_b|variable|curve_b
@@ -25,7 +26,7 @@ DECL|vli_clear|function|static void vli_clear(uint32_t *p_vli)
 DECL|vli_cmp|function|int32_t vli_cmp(uint32_t *p_left, uint32_t *p_right, int32_t word_size)
 DECL|vli_cond_set|function|void vli_cond_set(uint32_t *output, uint32_t *p_true, uint32_t *p_false,uint32_t cond)
 DECL|vli_isZero|function|uint32_t vli_isZero(uint32_t *p_vli)
-DECL|vli_mmod_barrett|function|static void vli_mmod_barrett(uint32_t *p_result, uint32_t *p_product, uint32_t *p_mod, uint32_t *p_barrett)
+DECL|vli_mmod_barrett|function|void vli_mmod_barrett(uint32_t *p_result, uint32_t *p_product, uint32_t *p_mod, uint32_t *p_barrett)
 DECL|vli_modAdd|function|void vli_modAdd(uint32_t *p_result, uint32_t *p_left, uint32_t *p_right,uint32_t *p_mod)
 DECL|vli_modExp|function|static void vli_modExp(uint32_t *p_result, uint32_t *p_base, uint32_t *p_exp, uint32_t *p_mod, uint32_t *p_barrett)
 DECL|vli_modInv|function|void vli_modInv(uint32_t *p_result, uint32_t *p_input, uint32_t *p_mod,uint32_t *p_barrett)

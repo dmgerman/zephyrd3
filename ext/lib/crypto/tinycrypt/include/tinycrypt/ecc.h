@@ -4,6 +4,7 @@ DECL|EccPoint|struct|typedef struct EccPoint {
 DECL|EccPoint|typedef|} EccPoint;
 DECL|NUM_ECC_BYTES|macro|NUM_ECC_BYTES
 DECL|NUM_ECC_DIGITS|macro|NUM_ECC_DIGITS
+DECL|WORD_SIZE|macro|WORD_SIZE
 DECL|X|member|uint32_t X[NUM_ECC_DIGITS];
 DECL|Y|member|uint32_t Y[NUM_ECC_DIGITS];
 DECL|Z|member|uint32_t Z[NUM_ECC_DIGITS];
