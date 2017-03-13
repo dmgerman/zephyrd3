@@ -25,6 +25,7 @@ DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
+DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
