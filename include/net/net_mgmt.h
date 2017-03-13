@@ -28,6 +28,7 @@ DECL|net_mgmt_event_callback|struct|struct net_mgmt_event_callback {
 DECL|net_mgmt_event_handler_t|typedef|typedef void (*net_mgmt_event_handler_t)(struct net_mgmt_event_callback *cb,
 DECL|net_mgmt_event_init|macro|net_mgmt_event_init
 DECL|net_mgmt_event_notify|macro|net_mgmt_event_notify
+DECL|net_mgmt_event_wait_on_iface|function|static inline int net_mgmt_event_wait_on_iface(struct net_if *iface, uint32_t mgmt_event_mask, uint32_t *raised_event, int timeout)
 DECL|net_mgmt_event_wait|function|static inline int net_mgmt_event_wait(uint32_t mgmt_event_mask, uint32_t *raised_event, struct net_if **iface, int timeout)
 DECL|net_mgmt_init_event_callback|function|void net_mgmt_init_event_callback(struct net_mgmt_event_callback *cb, net_mgmt_event_handler_t handler, uint32_t mgmt_event_mask)
 DECL|net_mgmt_init_event_callback|macro|net_mgmt_init_event_callback
