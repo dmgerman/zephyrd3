@@ -24,6 +24,5 @@ DECL|net_mgmt_event_init|function|void net_mgmt_event_init(void)
 DECL|net_mgmt_event_notify|function|void net_mgmt_event_notify(uint32_t mgmt_event, struct net_if *iface)
 DECL|net_mgmt_event_wait_on_iface|function|int net_mgmt_event_wait_on_iface(struct net_if *iface, uint32_t mgmt_event_mask, uint32_t *raised_event, int timeout)
 DECL|net_mgmt_event_wait|function|int net_mgmt_event_wait(uint32_t mgmt_event_mask,uint32_t *raised_event, struct net_if **iface, int timeout)
-DECL|network_event|variable|network_event
 DECL|out_event|variable|out_event
 DECL|sync_call|member|struct k_sem sync_call;
