@@ -46,6 +46,7 @@ DECL|FXOS8700_REG_PULSE_THSZ|macro|FXOS8700_REG_PULSE_THSZ
 DECL|FXOS8700_REG_PULSE_TMLT|macro|FXOS8700_REG_PULSE_TMLT
 DECL|FXOS8700_REG_PULSE_WIND|macro|FXOS8700_REG_PULSE_WIND
 DECL|FXOS8700_REG_STATUS|macro|FXOS8700_REG_STATUS
+DECL|FXOS8700_REG_TEMP|macro|FXOS8700_REG_TEMP
 DECL|FXOS8700_REG_WHOAMI|macro|FXOS8700_REG_WHOAMI
 DECL|FXOS8700_REG_XYZ_DATA_CFG|macro|FXOS8700_REG_XYZ_DATA_CFG
 DECL|FXOS8700_XYZ_DATA_CFG_FS_MASK|macro|FXOS8700_XYZ_DATA_CFG_FS_MASK
@@ -81,6 +82,7 @@ DECL|sem|member|struct k_sem sem;
 DECL|start_addr|member|uint8_t start_addr;
 DECL|start_channel|member|uint8_t start_channel;
 DECL|tap_handler|member|sensor_trigger_handler_t tap_handler;
+DECL|temp|member|int8_t temp;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXOS8700_THREAD_STACK_SIZE];
 DECL|trig_sem|member|struct k_sem trig_sem;
 DECL|whoami|member|uint8_t whoami;
