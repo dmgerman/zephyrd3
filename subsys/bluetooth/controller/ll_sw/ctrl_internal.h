@@ -1,12 +1,16 @@
 DECL|CONNECTION_T_SIZE|macro|CONNECTION_T_SIZE
 DECL|LLCP_CHAN_MAP|enumerator|LLCP_CHAN_MAP,
-DECL|LLCP_CONNECTION_UPDATE|enumerator|LLCP_CONNECTION_UPDATE,
-DECL|LLCP_CONN_STATE_APP_WAIT|macro|LLCP_CONN_STATE_APP_WAIT
-DECL|LLCP_CONN_STATE_INITIATE|macro|LLCP_CONN_STATE_INITIATE
-DECL|LLCP_CONN_STATE_INPROG|macro|LLCP_CONN_STATE_INPROG
-DECL|LLCP_CONN_STATE_REQ|macro|LLCP_CONN_STATE_REQ
-DECL|LLCP_CONN_STATE_RSP_WAIT|macro|LLCP_CONN_STATE_RSP_WAIT
-DECL|LLCP_CONN_STATE_RSP|macro|LLCP_CONN_STATE_RSP
+DECL|LLCP_CONNECTION_PARAM_REQ|enumerator|LLCP_CONNECTION_PARAM_REQ,
+DECL|LLCP_CONN_UPD|enumerator|LLCP_CONN_UPD,
+DECL|LLCP_CPR_STATE_APP_REQ|enumerator|LLCP_CPR_STATE_APP_REQ,
+DECL|LLCP_CPR_STATE_APP_WAIT|enumerator|LLCP_CPR_STATE_APP_WAIT,
+DECL|LLCP_CPR_STATE_REQ|enumerator|LLCP_CPR_STATE_REQ,
+DECL|LLCP_CPR_STATE_RSP_WAIT|enumerator|LLCP_CPR_STATE_RSP_WAIT,
+DECL|LLCP_CPR_STATE_RSP|enumerator|LLCP_CPR_STATE_RSP,
+DECL|LLCP_CPR_STATE_UPD|enumerator|LLCP_CPR_STATE_UPD
+DECL|LLCP_CUI_STATE_INPROG|enumerator|LLCP_CUI_STATE_INPROG,
+DECL|LLCP_CUI_STATE_SELECT|enumerator|LLCP_CUI_STATE_SELECT
+DECL|LLCP_CUI_STATE_USE|enumerator|LLCP_CUI_STATE_USE,
 DECL|LLCP_ENCRYPTION|enumerator|LLCP_ENCRYPTION,
 DECL|LLCP_FEATURE_EXCHANGE|enumerator|LLCP_FEATURE_EXCHANGE,
 DECL|LLCP_LENGTH_STATE_ACK_WAIT|macro|LLCP_LENGTH_STATE_ACK_WAIT
@@ -38,6 +42,7 @@ DECL|access_addr|member|u8_t access_addr[4];
 DECL|ack|member|u8_t ack;
 DECL|ack|member|u8_t ack;
 DECL|ack|member|u8_t ack;
+DECL|ack|member|u8_t ack;
 DECL|appto_expire|member|u16_t appto_expire;
 DECL|appto_reload|member|u16_t appto_reload;
 DECL|apto_expire|member|u16_t apto_expire;
@@ -49,11 +54,12 @@ DECL|chm_update|member|u8_t chm_update;
 DECL|chm|member|u8_t chm[5];
 DECL|cmd|member|u8_t cmd:1;
 DECL|cmd|member|u8_t cmd:1;
+DECL|cmd|member|u8_t cmd:1;
 DECL|common|member|} common;
 DECL|company_id|member|u16_t company_id;
 DECL|conn_interval|member|u16_t conn_interval;
+DECL|conn_upd|member|} conn_upd;
 DECL|connect_expire|member|u16_t connect_expire;
-DECL|connection_update|member|} connection_update;
 DECL|connection|struct|struct connection {
 DECL|crc_init|member|u8_t crc_init[3];
 DECL|data_chan_count|member|u8_t data_chan_count:6;
@@ -86,14 +92,17 @@ DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
 DECL|interval|member|u16_t interval;
-DECL|is_internal|member|u8_t is_internal:2;
+DECL|interval|member|u16_t interval;
+DECL|is_internal|member|u8_t is_internal:1;
 DECL|latency_cancel|member|u8_t latency_cancel:1;
 DECL|latency_enabled|member|u8_t latency_enabled:1;
 DECL|latency_event|member|u16_t latency_event;
 DECL|latency_prepare|member|u16_t latency_prepare;
 DECL|latency|member|u16_t latency;
 DECL|latency|member|u16_t latency;
+DECL|latency|member|u16_t latency;
 DECL|llcp_ack|member|u8_t llcp_ack;
+DECL|llcp_conn_param|member|} llcp_conn_param;
 DECL|llcp_features|member|u32_t llcp_features;
 DECL|llcp_length|member|} llcp_length;
 DECL|llcp_phy|member|} llcp_phy;
@@ -122,6 +131,7 @@ DECL|packet_tx_head_offset|member|u8_t packet_tx_head_offset;
 DECL|pause_rx|member|u8_t pause_rx:1;
 DECL|pause_tx|member|u8_t pause_tx:1;
 DECL|pdu_data_q_tx|struct|struct pdu_data_q_tx {
+DECL|pdu_win_offset0|member|u16_t *pdu_win_offset0;
 DECL|pdu_win_offset|member|u16_t *pdu_win_offset;
 DECL|phy_flags|member|u8_t phy_flags:1;
 DECL|phy_pref_flags|member|u8_t phy_pref_flags:1;
@@ -144,7 +154,9 @@ DECL|rand|member|u8_t rand[8];
 DECL|reason_own|member|u8_t reason_own;
 DECL|reason_peer|member|u8_t reason_peer;
 DECL|reason|member|u8_t reason;
+DECL|reference_conn_event_count|member|u16_t reference_conn_event_count;
 DECL|refresh|member|u8_t refresh:1;
+DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
@@ -166,18 +178,22 @@ DECL|slave|member|} slave;
 DECL|sn|member|u8_t sn:1;
 DECL|state|member|u8_t state:2;
 DECL|state|member|u8_t state:2;
-DECL|state|member|u8_t state:3;
+DECL|state|member|} state:2 __packed;
+DECL|state|member|} state:3 __packed;
+DECL|status|member|u8_t status;
 DECL|sub_version_number|member|u16_t sub_version_number;
 DECL|supervision_expire|member|u16_t supervision_expire;
 DECL|supervision_reload|member|u16_t supervision_reload;
 DECL|terminate_ack|member|u8_t terminate_ack:1;
 DECL|ticks_active_to_start|member|u32_t ticks_active_to_start;
+DECL|ticks_anchor|member|u32_t ticks_anchor;
 DECL|ticks_preempt_to_start|member|u32_t ticks_preempt_to_start;
 DECL|ticks_ref|member|u32_t ticks_ref;
 DECL|ticks_slot|member|u32_t ticks_slot;
 DECL|ticks_to_offset_next|member|u32_t ticks_to_offset_next;
 DECL|ticks_to_offset|member|u32_t ticks_to_offset;
 DECL|ticks_xtal_to_start|member|u32_t ticks_xtal_to_start;
+DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
 DECL|tx_octets|member|u16_t tx_octets;
 DECL|tx_time|member|u16_t tx_time;

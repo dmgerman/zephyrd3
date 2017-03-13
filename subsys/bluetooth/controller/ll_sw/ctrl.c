@@ -87,10 +87,12 @@ DECL|event_adv_stop|function|void event_adv_stop(u32_t ticks_at_expire, u32_t re
 DECL|event_adv|function|static void event_adv(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_ch_map_prep|function|static inline void event_ch_map_prep(struct connection *conn, u16_t event_counter)
 DECL|event_common_prepare|function|static void event_common_prepare(u32_t ticks_at_expire, u32_t remainder, u32_t *ticks_xtal_to_start, u32_t *ticks_active_to_start, u32_t ticks_preempt_to_start,
-DECL|event_conn_update_prep|function|static inline u32_t event_conn_update_prep(struct connection *conn, u16_t event_counter, u32_t ticks_at_expire)
-DECL|event_conn_update_st_init|function|event_conn_update_st_init(struct connection *conn, u16_t event_counter, struct pdu_data *pdu_ctrl_tx, u32_t ticks_at_expire, struct mayfly *mayfly_sched_offset,
-DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, u16_t event_counter, struct pdu_data *pdu_ctrl_tx, u32_t ticks_at_expire, struct mayfly *mayfly_sched_offset)
-DECL|event_conn_update_st_rsp|function|static inline void event_conn_update_st_rsp(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
+DECL|event_conn_param_app_req|function|static inline void event_conn_param_app_req(struct connection *conn)
+DECL|event_conn_param_prep|function|static inline void event_conn_param_prep(struct connection *conn, u16_t event_counter, u32_t ticks_at_expire)
+DECL|event_conn_param_req|function|static inline void event_conn_param_req(struct connection *conn,u16_t event_counter, u32_t ticks_at_expire)
+DECL|event_conn_param_rsp|function|static inline void event_conn_param_rsp(struct connection *conn)
+DECL|event_conn_upd_init|function|static inline void event_conn_upd_init(struct connection *conn, u16_t event_counter, u32_t ticks_at_expire, struct pdu_data *pdu_ctrl_tx, struct mayfly *mayfly_sched_offset,
+DECL|event_conn_upd_prep|function|static inline u32_t event_conn_upd_prep(struct connection *conn,u16_t event_counter, u32_t ticks_at_expire)
 DECL|event_connection_prepare|function|static void event_connection_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, struct connection *conn)
 DECL|event_enc_prep|function|static inline void event_enc_prep(struct connection *conn)
 DECL|event_enc_reject_prep|function|static inline void event_enc_reject_prep(struct connection *conn, struct pdu_data *pdu)
@@ -125,7 +127,6 @@ DECL|init_addr_type|member|u8_t init_addr_type:1;
 DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_enabled|member|u8_t is_enabled:1;
-DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
 DECL|isr_adv_ci_adva_check|function|static inline bool isr_adv_ci_adva_check(struct pdu_adv *adv, struct pdu_adv *ci)
 DECL|isr_adv_ci_check|function|static inline bool isr_adv_ci_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t devmatch_ok, u8_t *rl_idx)
 DECL|isr_adv_ci_tgta_check|function|static inline bool isr_adv_ci_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
@@ -265,7 +266,7 @@ DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_s
 DECL|radio_tx_mem_acquire|function|struct radio_pdu_node_tx *radio_tx_mem_acquire(void)
 DECL|radio_tx_mem_enqueue|function|u32_t radio_tx_mem_enqueue(u16_t handle, struct radio_pdu_node_tx *node_tx)
 DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_node_tx *node_tx)
-DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
+DECL|reject_ext_ind_send|function|static void reject_ext_ind_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
