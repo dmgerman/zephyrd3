@@ -1,8 +1,4 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
-DECL|HCI_ACL|macro|HCI_ACL
-DECL|HCI_CMD|macro|HCI_CMD
-DECL|HCI_EVT|macro|HCI_EVT
-DECL|HCI_SCO|macro|HCI_SCO
 DECL|ISR_DIRECT_DECLARE|function|ISR_DIRECT_DECLARE(radio_nrf5_isr)
 DECL|_hci_driver_init|function|static int _hci_driver_init(struct device *unused)
 DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
