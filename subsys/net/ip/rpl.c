@@ -50,7 +50,7 @@ DECL|find_parent_any_dag_any_instance|function|struct net_rpl_parent *find_paren
 DECL|find_parent_any_dag|function|struct net_rpl_parent *find_parent_any_dag(struct net_if *iface, struct net_rpl_instance *instance, struct in6_addr *addr)
 DECL|find_parent_dag|function|static struct net_rpl_dag *find_parent_dag(struct net_if *iface, struct net_rpl_instance *instance, struct in6_addr *addr)
 DECL|find_parent|function|static struct net_rpl_parent *find_parent(struct net_if *iface, struct net_rpl_dag *dag, struct in6_addr *addr)
-DECL|forwarding_dao|function|static void forwarding_dao(struct net_rpl_instance *instance, struct net_rpl_dag *dag, struct in6_addr *dao_sender, struct net_buf *buf, uint8_t sequence,
+DECL|forwarding_dao|function|static int forwarding_dao(struct net_rpl_instance *instance, struct net_rpl_dag *dag, struct in6_addr *dao_sender, struct net_buf *buf, uint8_t sequence,
 DECL|get_best_dag|function|struct net_rpl_dag *get_best_dag(struct net_rpl_instance *instance, struct net_rpl_parent *parent)
 DECL|get_dag|function|static struct net_rpl_dag *get_dag(uint8_t instance_id, struct in6_addr *dag_id)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
