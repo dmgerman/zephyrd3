@@ -34,7 +34,7 @@ DECL|bt_esco_conn_req|function|static void bt_esco_conn_req(struct bt_hci_evt_co
 DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
-DECL|bt_hci_driver_register|function|int bt_hci_driver_register(struct bt_hci_driver *drv)
+DECL|bt_hci_driver_register|function|int bt_hci_driver_register(const struct bt_hci_driver *drv)
 DECL|bt_hci_get_cmd_opcode|function|uint16_t bt_hci_get_cmd_opcode(struct net_buf *buf)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|static int bt_init(void)

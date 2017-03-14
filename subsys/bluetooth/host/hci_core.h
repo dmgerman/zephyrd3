@@ -26,7 +26,7 @@ DECL|bt_dev_esco|struct|struct bt_dev_esco {
 DECL|bt_dev_le|struct|struct bt_dev_le {
 DECL|bt_dev|struct|struct bt_dev {
 DECL|cmd_tx_queue|member|struct k_fifo cmd_tx_queue;
-DECL|drv|member|struct bt_hci_driver *drv;
+DECL|drv|member|const struct bt_hci_driver *drv;
 DECL|esco|member|struct bt_dev_esco esco;
 DECL|features|member|uint8_t features[1][8];
 DECL|features|member|uint8_t features[LMP_FEAT_PAGES_COUNT][8];
