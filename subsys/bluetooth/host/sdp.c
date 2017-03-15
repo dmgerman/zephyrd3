@@ -14,10 +14,12 @@ DECL|SDP_MTU|macro|SDP_MTU
 DECL|SDP_PSM|macro|SDP_PSM
 DECL|SDP_SA_CONT_STATE_SIZE|macro|SDP_SA_CONT_STATE_SIZE
 DECL|SDP_SERVICE_HANDLE_BASE|macro|SDP_SERVICE_HANDLE_BASE
+DECL|SDP_SSA_CONT_STATE_SIZE|macro|SDP_SSA_CONT_STATE_SIZE
 DECL|SDP_SS_CONT_STATE_SIZE|macro|SDP_SS_CONT_STATE_SIZE
 DECL|UUID_NOT_RESOLVED|enumerator|UUID_NOT_RESOLVED,
 DECL|UUID_RESOLVED|enumerator|UUID_RESOLVED,
 DECL|att_list_len|member|uint16_t att_list_len;
+DECL|att_list_size|member|uint16_t att_list_size;
 DECL|attr_id|member|uint16_t attr_id;
 DECL|attr_id|member|uint16_t attr_id;
 DECL|bt_sdp_accept|function|static int bt_sdp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
@@ -62,6 +64,7 @@ DECL|insert_record|function|static uint8_t insert_record(struct bt_sdp_record *r
 DECL|last_att|member|uint8_t last_att;
 DECL|len|member|uint16_t len;
 DECL|max_att_len|member|uint16_t max_att_len;
+DECL|new_service|member|bool new_service;
 DECL|num_filters|member|uint8_t num_filters;
 DECL|num_services|variable|num_services
 DECL|op_code|member|uint8_t op_code;
@@ -96,6 +99,7 @@ DECL|sdp_get_str_len|function|static inline ssize_t sdp_get_str_len(const uint8_
 DECL|sdp_get_uuid_data|function|static int sdp_get_uuid_data(const struct bt_sdp_attr_item *attr, struct bt_sdp_uuid_desc *pd, uint16_t proto_profile)
 DECL|sdp_get_uuid_len|function|static inline ssize_t sdp_get_uuid_len(const uint8_t *data, size_t len)
 DECL|sdp_svc_att_req|function|static uint16_t sdp_svc_att_req(struct bt_sdp *sdp, struct net_buf *buf,uint16_t tid)
+DECL|sdp_svc_search_att_req|function|static uint16_t sdp_svc_search_att_req(struct bt_sdp *sdp, struct net_buf *buf, uint16_t tid)
 DECL|sdp_svc_search_req|function|static uint16_t sdp_svc_search_req(struct bt_sdp *sdp, struct net_buf *buf, uint16_t tid)
 DECL|sdp|member|struct bt_sdp *sdp;
 DECL|search_state|struct|struct search_state {
