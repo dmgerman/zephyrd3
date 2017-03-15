@@ -74,6 +74,7 @@ DECL|rx_nbuf_list|member|struct ring_buf rx_nbuf_list;
 DECL|tail|member|uint16_t tail;
 DECL|tail|member|uint16_t tail;
 DECL|tx_desc_list|member|struct gmac_desc_list tx_desc_list;
+DECL|tx_desc_sem|member|struct k_sem tx_desc_sem;
 DECL|tx_frames|member|struct ring_buf tx_frames;
 DECL|w0|member|uint32_t w0;
 DECL|w1|member|uint32_t w1;
