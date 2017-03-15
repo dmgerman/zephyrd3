@@ -47,7 +47,6 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_pub_key_gen|function|int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
 DECL|bt_pub_key_get|function|const uint8_t *bt_pub_key_get(void)
-DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv_prio|function|int bt_recv_prio(struct net_buf *buf)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
@@ -120,9 +119,6 @@ DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr,
 DECL|link_key_req|function|static void link_key_req(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
-DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
-DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
-DECL|prng|variable|prng
 DECL|process_events|function|static void process_events(struct k_poll_event *ev, int count)
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pub_key_cb|variable|pub_key_cb
