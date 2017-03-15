@@ -1,0 +1,1 @@
+DECL|ieee802154_sample_setup|function|int ieee802154_sample_setup(void)
