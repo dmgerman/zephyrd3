@@ -29,6 +29,7 @@ DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|link_callbacks|variable|link_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
+DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, uint32_t vlifetime)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
 DECL|net_if_down|function|int net_if_down(struct net_if *iface)
 DECL|net_if_flush_tx|function|static void net_if_flush_tx(struct net_if *iface)
@@ -58,6 +59,7 @@ DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(const struct in6_addr *maddr, struct net_if **ret)
 DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_prefix_add|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_add(struct net_if *iface, struct in6_addr *prefix, uint8_t len, uint32_t lifetime)
+DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if_ipv6_prefix *prefix, struct in6_addr *addr, uint8_t len, uint32_t lifetime)
 DECL|net_if_ipv6_prefix_lookup|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_lookup(struct net_if *iface, struct in6_addr *addr, uint8_t len)
 DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *iface, struct in6_addr *addr, uint8_t len)
 DECL|net_if_ipv6_prefix_set_timer|function|void net_if_ipv6_prefix_set_timer(struct net_if_ipv6_prefix *prefix, uint32_t lifetime)
@@ -75,6 +77,7 @@ DECL|net_if_post_init|function|void net_if_post_init(void)
 DECL|net_if_prepare_events|function|static int net_if_prepare_events(void)
 DECL|net_if_process_events|function|static void net_if_process_events(struct k_poll_event *event, int ev_count)
 DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if_link_cb *link, net_if_link_callback_t cb)
+DECL|net_if_router_init|function|static inline void net_if_router_init(struct net_if_router *router, struct net_if *iface, struct in6_addr *addr, uint16_t lifetime)
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_buf *buf)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
