@@ -1,3 +1,4 @@
+DECL|accept_run|function|static int accept_run(struct lexer *lexer, const char *run)
 DECL|append_bytes_to_buf|function|static int append_bytes_to_buf(const uint8_t *bytes, size_t len, void *data)
 DECL|appender|struct|struct appender {
 DECL|arr_encode|function|static int arr_encode(const struct json_obj_descr *descr, const void *field, const void *val, json_append_bytes_t append_bytes, void *data)
