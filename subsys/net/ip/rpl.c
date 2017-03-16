@@ -93,6 +93,7 @@ DECL|net_rpl_info|macro|net_rpl_info
 DECL|net_rpl_init_timers|function|static inline void net_rpl_init_timers(void)
 DECL|net_rpl_init|function|void net_rpl_init(void)
 DECL|net_rpl_insert_header|function|int net_rpl_insert_header(struct net_buf *buf)
+DECL|net_rpl_instance_init|function|static inline void net_rpl_instance_init(struct net_rpl_instance *instance, uint8_t id)
 DECL|net_rpl_join_instance|function|static void net_rpl_join_instance(struct net_if *iface, struct in6_addr *from, struct net_rpl_dio *dio)
 DECL|net_rpl_lifetime|function|static inline uint32_t net_rpl_lifetime(struct net_rpl_instance *instance,uint8_t lifetime)
 DECL|net_rpl_link_neighbor_callback|function|static void net_rpl_link_neighbor_callback(struct net_if *iface, struct net_linkaddr *lladdr, int status)
