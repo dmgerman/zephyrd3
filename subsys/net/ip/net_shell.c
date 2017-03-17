@@ -13,7 +13,6 @@ DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_dat
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
-DECL|nbrstate2str|function|static inline const char *nbrstate2str(enum net_nbr_state state)
 DECL|net_commands|variable|net_commands
 DECL|net_shell_init|function|void net_shell_init(void)
 DECL|net_shell_print_statistics|function|static inline void net_shell_print_statistics(void)

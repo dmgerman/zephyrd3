@@ -19,11 +19,13 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_SLIP_MTU|macro|_SLIP_MTU
+DECL|_slip_mac_addr_from_str|function|static inline int _slip_mac_addr_from_str(struct slip_context *slip, const char *src)
 DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
 DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|uint16_t garbage;
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
+DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
