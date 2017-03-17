@@ -33,7 +33,7 @@ DECL|bt_l2cap_le_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_le_lookup
 DECL|bt_l2cap_le_lookup_tx_cid|function|struct bt_l2cap_chan *bt_l2cap_le_lookup_tx_cid(struct bt_conn *conn,uint16_t cid)
 DECL|bt_l2cap_pool|variable|bt_l2cap_pool
 DECL|bt_l2cap_recv|function|void bt_l2cap_recv(struct bt_conn *conn, struct net_buf *buf)
-DECL|bt_l2cap_send|function|void bt_l2cap_send(struct bt_conn *conn, uint16_t cid, struct net_buf *buf)
+DECL|bt_l2cap_send_cb|function|void bt_l2cap_send_cb(struct bt_conn *conn, uint16_t cid, struct net_buf *buf, bt_conn_tx_cb_t cb)
 DECL|bt_l2cap_server_register|function|int bt_l2cap_server_register(struct bt_l2cap_server *server)
 DECL|bt_l2cap_update_conn_param|function|int bt_l2cap_update_conn_param(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_l2cap|struct|struct bt_l2cap {

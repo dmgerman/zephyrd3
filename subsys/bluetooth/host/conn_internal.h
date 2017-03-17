@@ -18,8 +18,12 @@ DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
 DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_sco|struct|struct bt_conn_sco {
+DECL|bt_conn_send|function|static inline int bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
+DECL|bt_conn_tx_cb_t|typedef|typedef void (*bt_conn_tx_cb_t)(struct bt_conn *conn);
+DECL|bt_conn_tx|struct|struct bt_conn_tx {
 DECL|bt_conn|struct|struct bt_conn {
+DECL|cb|member|bt_conn_tx_cb_t cb;
 DECL|channels|member|sys_slist_t channels;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
@@ -36,8 +40,8 @@ DECL|keys|member|struct bt_keys *keys;
 DECL|latency|member|uint16_t latency;
 DECL|le|member|struct bt_conn_le le;
 DECL|link_key|member|struct bt_keys_link_key *link_key;
+DECL|node|member|sys_snode_t node;
 DECL|pairing_method|member|uint8_t pairing_method;
-DECL|pending_pkts|member|uint8_t pending_pkts;
 DECL|pkt_type|member|uint16_t pkt_type;
 DECL|ref|member|atomic_t ref;
 DECL|remote_auth|member|uint8_t remote_auth;
@@ -51,6 +55,8 @@ DECL|sco|member|struct bt_conn_sco sco;
 DECL|sec_level|member|bt_security_t sec_level;
 DECL|state|member|bt_conn_state_t state;
 DECL|timeout|member|uint16_t timeout;
+DECL|tx_notify|member|struct k_fifo tx_notify;
+DECL|tx_pending|member|sys_slist_t tx_pending;
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|type|member|uint8_t type;
 DECL|update_work|member|struct k_delayed_work update_work;
