@@ -21,7 +21,7 @@ DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_sco|struct|struct bt_conn_sco {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
-DECL|channels|member|void *channels;
+DECL|channels|member|struct bt_l2cap_chan *channels;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
