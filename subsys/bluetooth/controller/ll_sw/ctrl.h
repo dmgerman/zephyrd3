@@ -63,7 +63,7 @@ DECL|RADIO_TICKER_USER_WORKER_OPS|macro|RADIO_TICKER_USER_WORKER_OPS
 DECL|_CTRL_H_|macro|_CTRL_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|data|member|uint8_t data[DOUBLE_BUFFER_SIZE][RADIO_ACPDU_SIZE_MAX];
+DECL|data|member|uint8_t data[DOUBLE_BUFFER_SIZE][PDU_AC_SIZE_MAX];
 DECL|first|member|uint8_t first;
 DECL|handle|member|uint16_t handle;
 DECL|hdr|member|struct radio_pdu_node_rx_hdr hdr;
