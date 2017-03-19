@@ -28,6 +28,7 @@ DECL|bt_conn_enc_key_size|function|uint8_t bt_conn_enc_key_size(struct bt_conn *
 DECL|bt_conn_get_dst|function|const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn)
 DECL|bt_conn_get_info|function|int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info)
 DECL|bt_conn_get_io_capa|function|uint8_t bt_conn_get_io_capa(void)
+DECL|bt_conn_get_pkts|function|struct k_sem *bt_conn_get_pkts(struct bt_conn *conn)
 DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt_conn *conn)
 DECL|bt_conn_init|function|int bt_conn_init(void)
 DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, const struct bt_le_conn_param *param)

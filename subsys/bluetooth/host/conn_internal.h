@@ -16,7 +16,6 @@ DECL|__packed|enum|typedef enum __packed {
 DECL|acl|member|struct bt_conn *acl;
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
-DECL|bt_conn_get_pkts|function|static inline struct k_sem *bt_conn_get_pkts(struct bt_conn *conn)
 DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_sco|struct|struct bt_conn_sco {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
