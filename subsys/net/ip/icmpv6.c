@@ -1,3 +1,4 @@
+DECL|BUF_WAIT_TIME|macro|BUF_WAIT_TIME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|echo_reply_debug|function|static inline void echo_reply_debug(struct net_buf *buf)

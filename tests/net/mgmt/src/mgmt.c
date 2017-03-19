@@ -19,6 +19,8 @@ DECL|test_core_event|function|static int test_core_event(uint32_t event, bool (*
 DECL|test_mgmt_request|function|static int test_mgmt_request(uint32_t mgmt_request, struct net_if *iface, void *data, uint32_t len)
 DECL|test_requesting_nm|function|static inline int test_requesting_nm(void)
 DECL|test_sending_event|function|static inline int test_sending_event(uint32_t times, bool receiver)
+DECL|test_synchronous_event_listener|function|static int test_synchronous_event_listener(uint32_t times, bool on_iface)
+DECL|throw_sleep|variable|throw_sleep
 DECL|throw_times|variable|throw_times
 DECL|thrower_lock|variable|thrower_lock
 DECL|thrower_stack|variable|thrower_stack

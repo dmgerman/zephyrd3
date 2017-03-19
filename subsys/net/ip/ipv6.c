@@ -1,9 +1,11 @@
+DECL|DELAY_FIRST_PROBE_TIME|macro|DELAY_FIRST_PROBE_TIME
 DECL|MAX_MULTICAST_SOLICIT|macro|MAX_MULTICAST_SOLICIT
 DECL|MAX_UNICAST_SOLICIT|macro|MAX_UNICAST_SOLICIT
 DECL|MLDv2_LEN|macro|MLDv2_LEN
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
+DECL|RETRANS_TIMER|macro|RETRANS_TIMER
 DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
@@ -48,11 +50,12 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
+DECL|nbr_set_state|function|static void nbr_set_state(struct net_nbr *nbr, enum net_nbr_state new_state)
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
 DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, uint8_t next_header)
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst)
-DECL|net_ipv6_finalize_raw|function|struct net_buf *net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
-DECL|net_ipv6_finalize|function|struct net_buf *net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
+DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
+DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(uint8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
@@ -74,6 +77,7 @@ DECL|net_ipv6_unspecified_address|function|const struct in6_addr *net_ipv6_unspe
 DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
 DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)
+DECL|net_nbr_state2str|function|const char *net_nbr_state2str(enum net_nbr_state state)
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_input_handler|variable|ns_input_handler

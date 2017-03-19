@@ -8,7 +8,7 @@ DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|ack|member|uint32_t ack;
 DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_buf *buf)
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
-DECL|finalize_segment|function|static void finalize_segment(struct net_context *context, struct net_buf *buf)
+DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_buf *buf)
 DECL|flags|member|uint8_t flags;
 DECL|get_recv_wnd|function|static inline uint32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline uint32_t get_size(uint32_t pos1, uint32_t pos2)
@@ -32,7 +32,7 @@ DECL|net_tcp_send_buf|function|int net_tcp_send_buf(struct net_buf *buf)
 DECL|net_tcp_send_data|function|int net_tcp_send_data(struct net_context *context)
 DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp *tcp, uint8_t *options,uint8_t *optionlen)
 DECL|net_tcp_state_str|function|const char * const net_tcp_state_str(enum net_tcp_state state)
-DECL|net_tcp_trace|function|static void net_tcp_trace(char *str, struct net_buf *buf)
+DECL|net_tcp_trace|function|static void net_tcp_trace(struct net_buf *buf, struct net_tcp *tcp)
 DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|options|member|void *options;
 DECL|optlen|member|uint8_t optlen;
