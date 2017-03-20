@@ -19,9 +19,11 @@ DECL|ns_pkt|variable|ns_pkt
 DECL|parsing_ack_pkt|function|static void parsing_ack_pkt(void)
 DECL|parsing_beacon_pkt|function|static void parsing_beacon_pkt(void)
 DECL|parsing_ns_pkt|function|static void parsing_ns_pkt(void)
+DECL|parsing_sec_data_pkt|function|static void parsing_sec_data_pkt(void)
 DECL|pkt_hexdump|function|static void pkt_hexdump(uint8_t *pkt, uint8_t length)
 DECL|pkt|member|uint8_t *pkt;
 DECL|replying_ack_pkt|function|static void replying_ack_pkt(void)
+DECL|sec_data_pkt|variable|sec_data_pkt
 DECL|sending_ns_pkt|function|static void sending_ns_pkt(void)
 DECL|src_addr|member|struct ieee802154_address_field *src_addr;
 DECL|src|member|struct in6_addr src;
@@ -32,3 +34,4 @@ DECL|test_main|function|void test_main(void)
 DECL|test_ns_pkt|variable|test_ns_pkt
 DECL|test_ns_sending|function|static bool test_ns_sending(struct ieee802154_pkt_test *t)
 DECL|test_packet_parsing|function|static bool test_packet_parsing(struct ieee802154_pkt_test *t)
+DECL|test_sec_data_pkt|variable|test_sec_data_pkt
