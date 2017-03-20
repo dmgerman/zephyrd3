@@ -30,6 +30,7 @@ DECL|buf_timeout|member|int32_t buf_timeout;
 DECL|cb|member|dns_resolve_cb_t cb;
 DECL|ctx|member|struct dns_resolve_context *ctx;
 DECL|dns_addrinfo|struct|struct dns_addrinfo {
+DECL|dns_init_resolver|macro|dns_init_resolver
 DECL|dns_pending_query|struct|struct dns_pending_query {
 DECL|dns_query_type|enum|enum dns_query_type {
 DECL|dns_resolve_cb_t|typedef|typedef void (*dns_resolve_cb_t)(enum dns_resolve_status status,
