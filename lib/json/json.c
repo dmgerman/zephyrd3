@@ -15,7 +15,7 @@ DECL|encode|function|static int encode(const struct json_obj_descr *descr, const
 DECL|end|member|char *end;
 DECL|end|member|char *end;
 DECL|equivalent_types|function|static bool equivalent_types(enum json_tokens type1, enum json_tokens type2)
-DECL|escapable|variable|escapable
+DECL|escape_as|function|static uint8_t escape_as(uint8_t chr)
 DECL|get_elem_size|function|static ptrdiff_t get_elem_size(const struct json_obj_descr *descr)
 DECL|ignore|function|static void ignore(struct lexer *lexer)
 DECL|json_calc_encoded_len|function|ssize_t json_calc_encoded_len(const struct json_obj_descr *descr, size_t descr_len, const void *val)
