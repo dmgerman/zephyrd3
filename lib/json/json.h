@@ -1,8 +1,12 @@
+DECL|JSON_OBJ_DESCR_ARRAY|macro|JSON_OBJ_DESCR_ARRAY
+DECL|JSON_OBJ_DESCR_OBJECT|macro|JSON_OBJ_DESCR_OBJECT
 DECL|JSON_TOK_COLON|enumerator|JSON_TOK_COLON = ':',
 DECL|JSON_TOK_COMMA|enumerator|JSON_TOK_COMMA = ',',
 DECL|JSON_TOK_EOF|enumerator|JSON_TOK_EOF = '\0',
 DECL|JSON_TOK_ERROR|enumerator|JSON_TOK_ERROR = '!',
 DECL|JSON_TOK_FALSE|enumerator|JSON_TOK_FALSE = 'f',
+DECL|JSON_TOK_LIST_END|enumerator|JSON_TOK_LIST_END = ']',
+DECL|JSON_TOK_LIST_START|enumerator|JSON_TOK_LIST_START = '[',
 DECL|JSON_TOK_NONE|enumerator|JSON_TOK_NONE = '_',
 DECL|JSON_TOK_NULL|enumerator|JSON_TOK_NULL = 'n',
 DECL|JSON_TOK_NUMBER|enumerator|JSON_TOK_NUMBER = '0',
@@ -11,9 +15,13 @@ DECL|JSON_TOK_OBJECT_START|enumerator|JSON_TOK_OBJECT_START = '{',
 DECL|JSON_TOK_STRING|enumerator|JSON_TOK_STRING = '"',
 DECL|JSON_TOK_TRUE|enumerator|JSON_TOK_TRUE = 't',
 DECL|__JSON_H|macro|__JSON_H
+DECL|element_descr|member|const struct json_obj_descr *element_descr;
 DECL|field_name_len|member|size_t field_name_len;
 DECL|field_name|member|const char *field_name;
 DECL|json_obj_descr|struct|struct json_obj_descr {
 DECL|json_tokens|enum|enum json_tokens {
+DECL|n_elements|member|size_t n_elements;
 DECL|offset|member|size_t offset;
+DECL|sub_descr_len|member|size_t sub_descr_len;
+DECL|sub_descr|member|const struct json_obj_descr *sub_descr;
 DECL|type|member|enum json_tokens type;
