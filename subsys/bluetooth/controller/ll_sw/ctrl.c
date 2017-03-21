@@ -170,7 +170,7 @@ DECL|mayfly_sched_after_mstr_free_offset_get|function|static void mayfly_sched_a
 DECL|mayfly_sched_free_win_offset_calc|function|static void mayfly_sched_free_win_offset_calc(void *params)
 DECL|mayfly_sched_win_offset_select|function|static void mayfly_sched_win_offset_select(void *params)
 DECL|mayfly_sched_win_offset_use|function|static void mayfly_sched_win_offset_use(void *params)
-DECL|mayfly_xtal_retain|function|static void mayfly_xtal_retain(uint8_t retain)
+DECL|mayfly_xtal_retain|function|static void mayfly_xtal_retain(uint8_t caller_id, uint8_t retain)
 DECL|mayfly_xtal_start|function|static void mayfly_xtal_start(void *params)
 DECL|mayfly_xtal_stop_calc|function|static void mayfly_xtal_stop_calc(void *params)
 DECL|mayfly_xtal_stop|function|static void mayfly_xtal_stop(void *params)
