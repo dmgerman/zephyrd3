@@ -25,7 +25,6 @@ DECL|L2CAP_FLAG_CONN_RCONF_DONE|enumerator|L2CAP_FLAG_CONN_RCONF_DONE, /* remote
 DECL|L2CAP_FLAG_FIXED_CONNECTED|enumerator|L2CAP_FLAG_FIXED_CONNECTED, /* fixed connected */
 DECL|L2CAP_FLAG_SIG_INFO_DONE|enumerator|L2CAP_FLAG_SIG_INFO_DONE, /* remote l2cap info is done */
 DECL|L2CAP_FLAG_SIG_INFO_PENDING|enumerator|L2CAP_FLAG_SIG_INFO_PENDING, /* retrieving remote l2cap info */
-DECL|__l2cap_chan|function|static struct bt_l2cap_br_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|br_fixed_channels|variable|br_fixed_channels
 DECL|br_servers|variable|br_servers
 DECL|bt_l2cap_br_chan_connect|function|int bt_l2cap_br_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
@@ -35,7 +34,7 @@ DECL|bt_l2cap_br_connected|function|void bt_l2cap_br_connected(struct bt_conn *c
 DECL|bt_l2cap_br_fixed_chan_register|function|void bt_l2cap_br_fixed_chan_register(struct bt_l2cap_fixed_chan *chan)
 DECL|bt_l2cap_br_init|function|void bt_l2cap_br_init(void)
 DECL|bt_l2cap_br_lookup_rx_cid|function|struct bt_l2cap_chan *bt_l2cap_br_lookup_rx_cid(struct bt_conn *conn,uint16_t cid)
-DECL|bt_l2cap_br_lookup_tx_cid|function|static struct bt_l2cap_chan *bt_l2cap_br_lookup_tx_cid(struct bt_conn *conn, uint16_t cid)
+DECL|bt_l2cap_br_lookup_tx_cid|function|struct bt_l2cap_chan *bt_l2cap_br_lookup_tx_cid(struct bt_conn *conn,uint16_t cid)
 DECL|bt_l2cap_br_pool|variable|bt_l2cap_br_pool
 DECL|bt_l2cap_br_recv|function|void bt_l2cap_br_recv(struct bt_conn *conn, struct net_buf *buf)
 DECL|bt_l2cap_br_server_register|function|int bt_l2cap_br_server_register(struct bt_l2cap_server *server)
@@ -66,7 +65,6 @@ DECL|l2cap_br_conn_rsp|function|static void l2cap_br_conn_rsp(struct bt_l2cap_br
 DECL|l2cap_br_conn_security_result|enum|enum l2cap_br_conn_security_result {
 DECL|l2cap_br_conn_security|function|l2cap_br_conn_security(struct bt_l2cap_chan *chan, const uint16_t psm)
 DECL|l2cap_br_connected|function|static void l2cap_br_connected(struct bt_l2cap_chan *chan)
-DECL|l2cap_br_detach_chan|macro|l2cap_br_detach_chan
 DECL|l2cap_br_disconn_req|function|static void l2cap_br_disconn_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_disconn_rsp|function|static void l2cap_br_disconn_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_disconnected|function|static void l2cap_br_disconnected(struct bt_l2cap_chan *chan)
@@ -75,7 +73,6 @@ DECL|l2cap_br_get_ident|function|static uint8_t l2cap_br_get_ident(void)
 DECL|l2cap_br_get_info|function|static void l2cap_br_get_info(struct bt_l2cap_br *l2cap, uint16_t info_type)
 DECL|l2cap_br_info_req|function|static int l2cap_br_info_req(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
 DECL|l2cap_br_info_rsp|function|static int l2cap_br_info_rsp(struct bt_l2cap_br *l2cap, uint8_t ident, struct net_buf *buf)
-DECL|l2cap_br_lookup_chan|macro|l2cap_br_lookup_chan
 DECL|l2cap_br_recv|function|static void l2cap_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_br_remove_tx_cid|function|static struct bt_l2cap_br_chan *l2cap_br_remove_tx_cid(struct bt_conn *conn, uint16_t cid)
 DECL|l2cap_br_rtx_timeout|function|static void l2cap_br_rtx_timeout(struct k_work *work)
