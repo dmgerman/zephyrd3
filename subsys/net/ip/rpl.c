@@ -34,7 +34,7 @@ DECL|best_parent|function|static struct net_rpl_parent *best_parent(struct net_i
 DECL|check_prefix|function|static void check_prefix(struct net_if *iface, struct net_rpl_prefix *last_prefix, struct net_rpl_prefix *new_prefix)
 DECL|create_linklocal_rplnodes_mcast|function|static inline void create_linklocal_rplnodes_mcast(struct in6_addr *addr)
 DECL|dao_ack_handler|variable|dao_ack_handler
-DECL|dao_ack_send|function|static int dao_ack_send(struct in6_addr *src,struct in6_addr *dst, struct net_if *iface, struct net_rpl_instance *instance, uint8_t sequence)
+DECL|dao_ack_send|function|static int dao_ack_send(struct in6_addr *src,struct in6_addr *dst, struct net_if *iface, struct net_rpl_instance *instance, uint8_t sequence,
 DECL|dao_forward|function|static inline int dao_forward(struct net_if *iface, struct net_buf *orig, struct in6_addr *dst)
 DECL|dao_lifetime_timer|function|static void dao_lifetime_timer(struct k_work *work)
 DECL|dao_send_timer|function|static void dao_send_timer(struct k_work *work)
