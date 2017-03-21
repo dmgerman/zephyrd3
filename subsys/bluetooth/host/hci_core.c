@@ -5,6 +5,7 @@ DECL|EIR_COMPLETE_NAME|macro|EIR_COMPLETE_NAME
 DECL|EIR_SHORT_NAME|macro|EIR_SHORT_NAME
 DECL|EV_COUNT|macro|EV_COUNT
 DECL|EV_COUNT|macro|EV_COUNT
+DECL|HCI_CMD_TIMEOUT|macro|HCI_CMD_TIMEOUT
 DECL|RPA_TIMEOUT|macro|RPA_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|accept_conn|function|static int accept_conn(const bt_addr_t *bdaddr)
