@@ -8,7 +8,6 @@ DECL|BT_L2CAP_DISCONNECT|enumerator|BT_L2CAP_DISCONNECT,
 DECL|BT_L2CAP_HDR_SIZE|macro|BT_L2CAP_HDR_SIZE
 DECL|BT_L2CAP_LE_CHAN|macro|BT_L2CAP_LE_CHAN
 DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
-DECL|_next|member|struct bt_l2cap_server *_next;
 DECL|_sdu_len|member|uint16_t _sdu_len;
 DECL|_sdu|member|struct net_buf *_sdu;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
@@ -39,6 +38,7 @@ DECL|init_credits|member|uint16_t init_credits;
 DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|ops|member|struct bt_l2cap_chan_ops *ops;
 DECL|psm|member|uint16_t psm;
