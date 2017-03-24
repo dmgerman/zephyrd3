@@ -3,6 +3,10 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|TCP_CONNECT_TIMEOUT|macro|TCP_CONNECT_TIMEOUT
 DECL|TCP_TIMEOUT|macro|TCP_TIMEOUT
+DECL|_ping_ipv4|function|static int _ping_ipv4(char *host)
+DECL|_ping_ipv4|macro|_ping_ipv4
+DECL|_ping_ipv6|function|static int _ping_ipv6(char *host)
+DECL|_ping_ipv6|macro|_ping_ipv6
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
 DECL|allocs_cb|function|static void allocs_cb(struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free, int line_free,
