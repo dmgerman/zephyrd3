@@ -1,1 +1,0 @@
-DECL|tmpString|variable|tmpString
