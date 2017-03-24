@@ -33,6 +33,7 @@ DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_ga
 DECL|connected_cb|function|static uint8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|data|member|const void *data;
 DECL|db|variable|db
+DECL|db|variable|db
 DECL|disconnected_cb|function|static uint8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|uint16_t end_handle;
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(const struct bt_gatt_attr *attr, struct _bt_gatt_ccc *ccc)
