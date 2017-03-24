@@ -64,7 +64,6 @@ DECL|lollipop_greater_than|function|static int lollipop_greater_than(int a, int 
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr)
 DECL|nbr_data|function|static inline struct net_rpl_parent *nbr_data(struct net_nbr *nbr)
 DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
-DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
 DECL|net_route_info|macro|net_route_info
 DECL|net_route_info|macro|net_route_info
 DECL|net_rpl_add_dag|function|static void net_rpl_add_dag(struct net_if *iface, struct in6_addr *from, struct net_rpl_dio *dio)
