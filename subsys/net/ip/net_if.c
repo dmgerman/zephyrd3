@@ -70,8 +70,8 @@ DECL|net_if_ipv6_router_lookup|function|struct net_if_router *net_if_ipv6_router
 DECL|net_if_ipv6_router_rm|function|bool net_if_ipv6_router_rm(struct net_if_router *router)
 DECL|net_if_ipv6_router_update_lifetime|function|void net_if_ipv6_router_update_lifetime(struct net_if_router *router,uint32_t lifetime)
 DECL|net_if_ipv6_select_src_addr|function|const struct in6_addr *net_if_ipv6_select_src_addr(struct net_if *dst_iface, struct in6_addr *dst)
+DECL|net_if_ipv6_start_dad|function|static inline void net_if_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
 DECL|net_if_ipv6_start_dad|function|static void net_if_ipv6_start_dad(struct net_if *iface, struct net_if_addr *ifaddr)
-DECL|net_if_ipv6_start_dad|macro|net_if_ipv6_start_dad
 DECL|net_if_lookup_by_dev|function|struct net_if *net_if_lookup_by_dev(struct device *dev)
 DECL|net_if_post_init|function|void net_if_post_init(void)
 DECL|net_if_prepare_events|function|static int net_if_prepare_events(void)
