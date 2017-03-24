@@ -97,7 +97,7 @@ DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, uint8_t hop_limit)
 DECL|netmask|member|struct in_addr netmask;
 DECL|node|member|sys_snode_t node;
-DECL|offload_ip|member|bool offload_ip;
+DECL|offload|member|struct net_offload *offload;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|reachable_time|member|uint32_t reachable_time;
