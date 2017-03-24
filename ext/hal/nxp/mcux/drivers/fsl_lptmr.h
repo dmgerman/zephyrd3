@@ -1,13 +1,13 @@
 DECL|FSL_LPTMR_DRIVER_VERSION|macro|FSL_LPTMR_DRIVER_VERSION
-DECL|LPTMR_ClearStatusFlags|function|static inline void LPTMR_ClearStatusFlags(LPTMR_Type* base, uint32_t mask)
-DECL|LPTMR_DisableInterrupts|function|static inline void LPTMR_DisableInterrupts(LPTMR_Type* base, uint32_t mask)
-DECL|LPTMR_EnableInterrupts|function|static inline void LPTMR_EnableInterrupts(LPTMR_Type* base, uint32_t mask)
-DECL|LPTMR_GetCurrentTimerCount|function|static inline uint16_t LPTMR_GetCurrentTimerCount(LPTMR_Type* base)
-DECL|LPTMR_GetEnabledInterrupts|function|static inline uint32_t LPTMR_GetEnabledInterrupts(LPTMR_Type* base)
-DECL|LPTMR_GetStatusFlags|function|static inline uint32_t LPTMR_GetStatusFlags(LPTMR_Type* base)
-DECL|LPTMR_SetTimerPeriod|function|static inline void LPTMR_SetTimerPeriod(LPTMR_Type* base, uint16_t ticks)
-DECL|LPTMR_StartTimer|function|static inline void LPTMR_StartTimer(LPTMR_Type* base)
-DECL|LPTMR_StopTimer|function|static inline void LPTMR_StopTimer(LPTMR_Type* base)
+DECL|LPTMR_ClearStatusFlags|function|static inline void LPTMR_ClearStatusFlags(LPTMR_Type *base, uint32_t mask)
+DECL|LPTMR_DisableInterrupts|function|static inline void LPTMR_DisableInterrupts(LPTMR_Type *base, uint32_t mask)
+DECL|LPTMR_EnableInterrupts|function|static inline void LPTMR_EnableInterrupts(LPTMR_Type *base, uint32_t mask)
+DECL|LPTMR_GetCurrentTimerCount|function|static inline uint32_t LPTMR_GetCurrentTimerCount(LPTMR_Type *base)
+DECL|LPTMR_GetEnabledInterrupts|function|static inline uint32_t LPTMR_GetEnabledInterrupts(LPTMR_Type *base)
+DECL|LPTMR_GetStatusFlags|function|static inline uint32_t LPTMR_GetStatusFlags(LPTMR_Type *base)
+DECL|LPTMR_SetTimerPeriod|function|static inline void LPTMR_SetTimerPeriod(LPTMR_Type *base, uint32_t ticks)
+DECL|LPTMR_StartTimer|function|static inline void LPTMR_StartTimer(LPTMR_Type *base)
+DECL|LPTMR_StopTimer|function|static inline void LPTMR_StopTimer(LPTMR_Type *base)
 DECL|_FSL_LPTMR_H_|macro|_FSL_LPTMR_H_
 DECL|_lptmr_config|struct|typedef struct _lptmr_config
 DECL|_lptmr_interrupt_enable|enum|typedef enum _lptmr_interrupt_enable

@@ -47,7 +47,8 @@ DECL|_sdhc_boot_config|struct|typedef struct _sdhc_boot_config
 DECL|_sdhc_boot_mode|enum|typedef enum _sdhc_boot_mode
 DECL|_sdhc_capability_flag|enum|enum _sdhc_capability_flag
 DECL|_sdhc_capability|struct|typedef struct _sdhc_capability
-DECL|_sdhc_command_type|enum|typedef enum _sdhc_command_type
+DECL|_sdhc_card_command_type|enum|typedef enum _sdhc_card_command_type
+DECL|_sdhc_card_response_type|enum|typedef enum _sdhc_card_response_type
 DECL|_sdhc_command|struct|typedef struct _sdhc_command
 DECL|_sdhc_config|struct|typedef struct _sdhc_config
 DECL|_sdhc_data_bus_width|enum|typedef enum _sdhc_data_bus_width
@@ -60,7 +61,6 @@ DECL|_sdhc_host|struct|typedef struct _sdhc_host
 DECL|_sdhc_interrupt_status_flag|enum|enum _sdhc_interrupt_status_flag
 DECL|_sdhc_present_status_flag|enum|enum _sdhc_present_status_flag
 DECL|_sdhc_reset|enum|enum _sdhc_reset
-DECL|_sdhc_response_type|enum|typedef enum _sdhc_response_type
 DECL|_sdhc_sdio_control_flag|enum|enum _sdhc_sdio_control_flag
 DECL|_sdhc_status|enum|enum _sdhc_status
 DECL|_sdhc_transfer_callback|struct|typedef struct _sdhc_transfer_callback
@@ -100,6 +100,20 @@ DECL|flags|member|uint32_t flags; /*!< Capability flags to indicate the support 
 DECL|flags|member|uint32_t flags; /*!< Transfer flags(_sdhc_transfer_flag) */
 DECL|index|member|uint32_t index; /*!< Command index */
 DECL|interruptFlags|member|volatile uint32_t interruptFlags; /*!< Interrupt flags of last transaction */
+DECL|kCARD_CommandTypeAbort|enumerator|kCARD_CommandTypeAbort = 3U, /*!< Abort command */
+DECL|kCARD_CommandTypeNormal|enumerator|kCARD_CommandTypeNormal = 0U, /*!< Normal command */
+DECL|kCARD_CommandTypeResume|enumerator|kCARD_CommandTypeResume = 2U, /*!< Resume command */
+DECL|kCARD_CommandTypeSuspend|enumerator|kCARD_CommandTypeSuspend = 1U, /*!< Suspend command */
+DECL|kCARD_ResponseTypeNone|enumerator|kCARD_ResponseTypeNone = 0U, /*!< Response type: none */
+DECL|kCARD_ResponseTypeR1b|enumerator|kCARD_ResponseTypeR1b = 2U, /*!< Response type: R1b */
+DECL|kCARD_ResponseTypeR1|enumerator|kCARD_ResponseTypeR1 = 1U, /*!< Response type: R1 */
+DECL|kCARD_ResponseTypeR2|enumerator|kCARD_ResponseTypeR2 = 3U, /*!< Response type: R2 */
+DECL|kCARD_ResponseTypeR3|enumerator|kCARD_ResponseTypeR3 = 4U, /*!< Response type: R3 */
+DECL|kCARD_ResponseTypeR4|enumerator|kCARD_ResponseTypeR4 = 5U, /*!< Response type: R4 */
+DECL|kCARD_ResponseTypeR5b|enumerator|kCARD_ResponseTypeR5b = 7U, /*!< Response type: R5b */
+DECL|kCARD_ResponseTypeR5|enumerator|kCARD_ResponseTypeR5 = 6U, /*!< Response type: R5 */
+DECL|kCARD_ResponseTypeR6|enumerator|kCARD_ResponseTypeR6 = 8U, /*!< Response type: R6 */
+DECL|kCARD_ResponseTypeR7|enumerator|kCARD_ResponseTypeR7 = 9U, /*!< Response type: R7 */
 DECL|kSDHC_Adma1DescriptorActivity1Flag|enumerator|kSDHC_Adma1DescriptorActivity1Flag = (1U << 4U), /*!< Activity 1 flag */
 DECL|kSDHC_Adma1DescriptorActivity2Flag|enumerator|kSDHC_Adma1DescriptorActivity2Flag = (1U << 5U), /*!< Activity 2 flag */
 DECL|kSDHC_Adma1DescriptorEndFlag|enumerator|kSDHC_Adma1DescriptorEndFlag = (1U << 1U), /*!< End flag */
@@ -154,12 +168,8 @@ DECL|kSDHC_CommandInhibitFlag|enumerator|kSDHC_CommandInhibitFlag = SDHC_PRSSTAT
 DECL|kSDHC_CommandLineLevelFlag|enumerator|kSDHC_CommandLineLevelFlag = SDHC_PRSSTAT_CLSL_MASK, /*!< Command line signal level */
 DECL|kSDHC_CommandTimeoutFlag|enumerator|kSDHC_CommandTimeoutFlag = SDHC_IRQSTAT_CTOE_MASK, /*!< Command timeout error */
 DECL|kSDHC_CommandTypeAbortFlag|enumerator|kSDHC_CommandTypeAbortFlag = (SDHC_XFERTYP_CMDTYP(3U)), /*!< Abort command */
-DECL|kSDHC_CommandTypeAbort|enumerator|kSDHC_CommandTypeAbort = 3U, /*!< Abort command */
-DECL|kSDHC_CommandTypeNormal|enumerator|kSDHC_CommandTypeNormal = 0U, /*!< Normal command */
 DECL|kSDHC_CommandTypeResumeFlag|enumerator|kSDHC_CommandTypeResumeFlag = (SDHC_XFERTYP_CMDTYP(2U)), /*!< Resume command */
-DECL|kSDHC_CommandTypeResume|enumerator|kSDHC_CommandTypeResume = 2U, /*!< Resume command */
 DECL|kSDHC_CommandTypeSuspendFlag|enumerator|kSDHC_CommandTypeSuspendFlag = (SDHC_XFERTYP_CMDTYP(1U)), /*!< Suspend command */
-DECL|kSDHC_CommandTypeSuspend|enumerator|kSDHC_CommandTypeSuspend = 1U, /*!< Suspend command */
 DECL|kSDHC_Data0LineLevelFlag|enumerator|kSDHC_Data0LineLevelFlag = (1U << 24U), /*!< Data0 line signal level */
 DECL|kSDHC_Data1LineLevelFlag|enumerator|kSDHC_Data1LineLevelFlag = (1U << 25U), /*!< Data1 line signal level */
 DECL|kSDHC_Data2LineLevelFlag|enumerator|kSDHC_Data2LineLevelFlag = (1U << 26U), /*!< Data2 line signal level */
@@ -224,16 +234,6 @@ DECL|kSDHC_ResetsAll|enumerator|kSDHC_ResetsAll = (kSDHC_ResetAll | kSDHC_ResetC
 DECL|kSDHC_ResponseLength136Flag|enumerator|kSDHC_ResponseLength136Flag = SDHC_XFERTYP_RSPTYP(1U), /*!< 136 bit response length */
 DECL|kSDHC_ResponseLength48BusyFlag|enumerator|kSDHC_ResponseLength48BusyFlag = SDHC_XFERTYP_RSPTYP(3U), /*!< 48 bit response length with busy status */
 DECL|kSDHC_ResponseLength48Flag|enumerator|kSDHC_ResponseLength48Flag = SDHC_XFERTYP_RSPTYP(2U), /*!< 48 bit response length */
-DECL|kSDHC_ResponseTypeNone|enumerator|kSDHC_ResponseTypeNone = 0U, /*!< Response type: none */
-DECL|kSDHC_ResponseTypeR1b|enumerator|kSDHC_ResponseTypeR1b = 2U, /*!< Response type: R1b */
-DECL|kSDHC_ResponseTypeR1|enumerator|kSDHC_ResponseTypeR1 = 1U, /*!< Response type: R1 */
-DECL|kSDHC_ResponseTypeR2|enumerator|kSDHC_ResponseTypeR2 = 3U, /*!< Response type: R2 */
-DECL|kSDHC_ResponseTypeR3|enumerator|kSDHC_ResponseTypeR3 = 4U, /*!< Response type: R3 */
-DECL|kSDHC_ResponseTypeR4|enumerator|kSDHC_ResponseTypeR4 = 5U, /*!< Response type: R4 */
-DECL|kSDHC_ResponseTypeR5b|enumerator|kSDHC_ResponseTypeR5b = 7U, /*!< Response type: R5b */
-DECL|kSDHC_ResponseTypeR5|enumerator|kSDHC_ResponseTypeR5 = 6U, /*!< Response type: R5 */
-DECL|kSDHC_ResponseTypeR6|enumerator|kSDHC_ResponseTypeR6 = 8U, /*!< Response type: R6 */
-DECL|kSDHC_ResponseTypeR7|enumerator|kSDHC_ResponseTypeR7 = 9U, /*!< Response type: R7 */
 DECL|kSDHC_SdClockStableFlag|enumerator|kSDHC_SdClockStableFlag = SDHC_PRSSTAT_SDSTB_MASK, /*!< SD bus clock stable */
 DECL|kSDHC_StopAtBlockGapFlag|enumerator|kSDHC_StopAtBlockGapFlag = 0x01, /*!< Stop at block gap */
 DECL|kSDHC_Support4BitFlag|enumerator|kSDHC_Support4BitFlag = (SDHC_HTCAPBLT_MBL_SHIFT << 0U), /*!< Support 4 bit mode */
@@ -251,13 +251,15 @@ DECL|kSDHC_WakeupEventOnCardRemove|enumerator|kSDHC_WakeupEventOnCardRemove = SD
 DECL|kSDHC_WakeupEventsAll|enumerator|kSDHC_WakeupEventsAll = (kSDHC_WakeupEventOnCardInt | kSDHC_WakeupEventOnCardInsert |
 DECL|kSDHC_WriteTransferActiveFlag|enumerator|kSDHC_WriteTransferActiveFlag = SDHC_PRSSTAT_WTA_MASK, /*!< Write transfer active */
 DECL|kStatus_SDHC_BusyTransferring|enumerator|kStatus_SDHC_BusyTransferring = MAKE_STATUS(kStatusGroup_SDHC, 0U), /*!< Transfer is on-going */
+DECL|kStatus_SDHC_DMADataBufferAddrNotAlign|enumerator|kStatus_SDHC_DMADataBufferAddrNotAlign =
 DECL|kStatus_SDHC_PrepareAdmaDescriptorFailed|enumerator|kStatus_SDHC_PrepareAdmaDescriptorFailed = MAKE_STATUS(kStatusGroup_SDHC, 1U), /*!< Set DMA descriptor failed */
 DECL|kStatus_SDHC_SendCommandFailed|enumerator|kStatus_SDHC_SendCommandFailed = MAKE_STATUS(kStatusGroup_SDHC, 2U), /*!< Send command failed */
 DECL|kStatus_SDHC_TransferDataFailed|enumerator|kStatus_SDHC_TransferDataFailed = MAKE_STATUS(kStatusGroup_SDHC, 3U), /*!< Transfer data failed */
 DECL|maxBlockCount|member|uint32_t maxBlockCount; /*!< Maximum block count can be set one time */
 DECL|maxBlockLength|member|uint32_t maxBlockLength; /*!< Maximum block length united as byte */
 DECL|readWatermarkLevel|member|uint32_t readWatermarkLevel; /*!< Watermark level for DMA read operation. Available range is 1 ~ 128. */
-DECL|responseType|member|sdhc_response_type_t responseType; /*!< Command response type */
+DECL|responseErrorFlags|member|uint32_t responseErrorFlags; /*!< response error flag, the flag which need to check
+DECL|responseType|member|sdhc_card_response_type_t responseType; /*!< Command response type */
 DECL|response|member|uint32_t response[4U]; /*!< Response for this command */
 DECL|rxData|member|uint32_t *rxData; /*!< Buffer to save data read */
 DECL|sdhc_adma1_descriptor_t|typedef|typedef uint32_t sdhc_adma1_descriptor_t;
@@ -266,7 +268,8 @@ DECL|sdhc_adma_error_state_t|typedef|} sdhc_adma_error_state_t;
 DECL|sdhc_boot_config_t|typedef|} sdhc_boot_config_t;
 DECL|sdhc_boot_mode_t|typedef|} sdhc_boot_mode_t;
 DECL|sdhc_capability_t|typedef|} sdhc_capability_t;
-DECL|sdhc_command_type_t|typedef|} sdhc_command_type_t;
+DECL|sdhc_card_command_type_t|typedef|} sdhc_card_command_type_t;
+DECL|sdhc_card_response_type_t|typedef|} sdhc_card_response_type_t;
 DECL|sdhc_command_t|typedef|} sdhc_command_t;
 DECL|sdhc_config_t|typedef|} sdhc_config_t;
 DECL|sdhc_data_bus_width_t|typedef|} sdhc_data_bus_width_t;
@@ -275,7 +278,6 @@ DECL|sdhc_dma_mode_t|typedef|} sdhc_dma_mode_t;
 DECL|sdhc_endian_mode_t|typedef|} sdhc_endian_mode_t;
 DECL|sdhc_handle_t|typedef|typedef struct _sdhc_handle sdhc_handle_t;
 DECL|sdhc_host_t|typedef|} sdhc_host_t;
-DECL|sdhc_response_type_t|typedef|} sdhc_response_type_t;
 DECL|sdhc_transfer_callback_t|typedef|} sdhc_transfer_callback_t;
 DECL|sdhc_transfer_config_t|typedef|} sdhc_transfer_config_t;
 DECL|sdhc_transfer_function_t|typedef|typedef status_t (*sdhc_transfer_function_t)(SDHC_Type *base, sdhc_transfer_t *content);
@@ -285,7 +287,7 @@ DECL|specVersion|member|uint32_t specVersion; /*!< Specification version */
 DECL|transferredWords|member|volatile uint32_t transferredWords; /*!< Words transferred by DATAPORT way */
 DECL|transfer|member|sdhc_transfer_function_t transfer; /*!< SDHC transfer function */
 DECL|txData|member|const uint32_t *txData; /*!< Data buffer to write */
-DECL|type|member|sdhc_command_type_t type; /*!< Command type */
+DECL|type|member|sdhc_card_command_type_t type; /*!< Command type */
 DECL|userData|member|void *userData; /*!< Parameter for transfer complete callback */
 DECL|vendorVersion|member|uint32_t vendorVersion; /*!< Vendor version */
 DECL|writeWatermarkLevel|member|uint32_t writeWatermarkLevel; /*!< Watermark level for DMA write operation. Available range is 1 ~ 128. */

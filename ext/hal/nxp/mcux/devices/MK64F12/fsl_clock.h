@@ -49,8 +49,8 @@ DECL|I2C2_CLK_SRC|macro|I2C2_CLK_SRC
 DECL|I2C_CLOCKS|macro|I2C_CLOCKS
 DECL|LPO_CLK_FREQ|macro|LPO_CLK_FREQ
 DECL|LPTMR_CLOCKS|macro|LPTMR_CLOCKS
+DECL|MCG_CONFIG_CHECK_PARAM|macro|MCG_CONFIG_CHECK_PARAM
 DECL|MCG_INTERNAL_IRC_48M|macro|MCG_INTERNAL_IRC_48M
-DECL|MPU_CLOCKS|macro|MPU_CLOCKS
 DECL|OSC0|macro|OSC0
 DECL|OSC_SetCapLoad|function|static inline void OSC_SetCapLoad(OSC_Type *base, uint8_t capLoad)
 DECL|OSC_SetExtRefClkConfig|function|static inline void OSC_SetExtRefClkConfig(OSC_Type *base, oscer_config_t const *config)
@@ -61,6 +61,7 @@ DECL|RNGA_CLOCKS|macro|RNGA_CLOCKS
 DECL|RTC_CLOCKS|macro|RTC_CLOCKS
 DECL|SAI_CLOCKS|macro|SAI_CLOCKS
 DECL|SDHC_CLOCKS|macro|SDHC_CLOCKS
+DECL|SYSMPU_CLOCKS|macro|SYSMPU_CLOCKS
 DECL|SYS_CLK|macro|SYS_CLK
 DECL|UART0_CLK_SRC|macro|UART0_CLK_SRC
 DECL|UART1_CLK_SRC|macro|UART1_CLK_SRC
@@ -152,7 +153,6 @@ DECL|kCLOCK_McgIrc48MClk|enumerator|kCLOCK_McgIrc48MClk, /*!< MCG IRC48M clock *
 DECL|kCLOCK_McgPeriphClk|enumerator|kCLOCK_McgPeriphClk, /*!< MCG peripheral clock (MCGPCLK) */
 DECL|kCLOCK_McgPll0Clk|enumerator|kCLOCK_McgPll0Clk, /*!< MCGPLL0CLK */
 DECL|kCLOCK_McgPll1Clk|enumerator|kCLOCK_McgPll1Clk, /*!< MCGPLL1CLK */
-DECL|kCLOCK_Mpu0|enumerator|kCLOCK_Mpu0 = CLK_GATE_DEFINE(0x1040U, 2U),
 DECL|kCLOCK_Osc0ErClkUndiv|enumerator|kCLOCK_Osc0ErClkUndiv, /*!< OSC0 external reference undivided clock(OSC0ERCLK_UNDIV). */
 DECL|kCLOCK_Osc0ErClk|enumerator|kCLOCK_Osc0ErClk, /*!< OSC0 external reference clock (OSC0ERCLK) */
 DECL|kCLOCK_Osc1ErClk|enumerator|kCLOCK_Osc1ErClk, /*!< OSC1 external reference clock (OSC1ERCLK) */
@@ -172,6 +172,7 @@ DECL|kCLOCK_Sdhc0|enumerator|kCLOCK_Sdhc0 = CLK_GATE_DEFINE(0x1030U, 17U),
 DECL|kCLOCK_Spi0|enumerator|kCLOCK_Spi0 = CLK_GATE_DEFINE(0x103CU, 12U),
 DECL|kCLOCK_Spi1|enumerator|kCLOCK_Spi1 = CLK_GATE_DEFINE(0x103CU, 13U),
 DECL|kCLOCK_Spi2|enumerator|kCLOCK_Spi2 = CLK_GATE_DEFINE(0x1030U, 12U),
+DECL|kCLOCK_Sysmpu0|enumerator|kCLOCK_Sysmpu0 = CLK_GATE_DEFINE(0x1040U, 2U),
 DECL|kCLOCK_Uart0|enumerator|kCLOCK_Uart0 = CLK_GATE_DEFINE(0x1034U, 10U),
 DECL|kCLOCK_Uart1|enumerator|kCLOCK_Uart1 = CLK_GATE_DEFINE(0x1034U, 11U),
 DECL|kCLOCK_Uart2|enumerator|kCLOCK_Uart2 = CLK_GATE_DEFINE(0x1034U, 12U),

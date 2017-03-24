@@ -1,38 +1,39 @@
-DECL|DFlashBlockBase|member|DFlashBlockBase; /*!< For the FlexNVM device, this is the base address of the D-Flash memory (FlexNVM memory)
-DECL|DFlashTotalSize|member|uint32_t DFlashTotalSize; /*!< For the FlexNVM device, this is the total size of the FlexNVM memory;
-DECL|EEpromTotalSize|member|EEpromTotalSize; /*!< For the FlexNVM device, this is the size in bytes of the EEPROM area which was partitioned
+DECL|DFlashBlockBase|member|DFlashBlockBase; /*!< For the FlexNVM device, this is the base address of the D-Flash memory (FlexNVM memory) */
+DECL|DFlashTotalSize|member|uint32_t DFlashTotalSize; /*!< For the FlexNVM device, this is the total size of the FlexNVM memory; */
+DECL|EEpromTotalSize|member|uint32_t EEpromTotalSize; /*!< For the FlexNVM device, this is the size in bytes of the EEPROM area which was
 DECL|FLASH_DRIVER_IS_EXPORTED|macro|FLASH_DRIVER_IS_EXPORTED
 DECL|FLASH_DRIVER_IS_EXPORTED|macro|FLASH_DRIVER_IS_EXPORTED
 DECL|FLASH_DRIVER_IS_FLASH_RESIDENT|macro|FLASH_DRIVER_IS_FLASH_RESIDENT
 DECL|FLASH_DRIVER_IS_FLASH_RESIDENT|macro|FLASH_DRIVER_IS_FLASH_RESIDENT
 DECL|FLASH_SSD_CONFIG_ENABLE_FLEXNVM_SUPPORT|macro|FLASH_SSD_CONFIG_ENABLE_FLEXNVM_SUPPORT
+DECL|FLASH_SSD_CONFIG_ENABLE_SECONDARY_FLASH_SUPPORT|macro|FLASH_SSD_CONFIG_ENABLE_SECONDARY_FLASH_SUPPORT
 DECL|FLASH_SSD_IS_FLEXNVM_ENABLED|macro|FLASH_SSD_IS_FLEXNVM_ENABLED
-DECL|FLASH_SSD_IS_SECONDARY_FLASH_SUPPORTED|macro|FLASH_SSD_IS_SECONDARY_FLASH_SUPPORTED
-DECL|FLASH_SSD_IS_SECONDARY_FLASH_SUPPORTED|macro|FLASH_SSD_IS_SECONDARY_FLASH_SUPPORTED
-DECL|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_ACCESS_REGISTER|macro|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_ACCESS_REGISTER
-DECL|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_ACCESS_REGISTER|macro|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_ACCESS_REGISTER
-DECL|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_PROTECTION_REGISTER|macro|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_PROTECTION_REGISTER
-DECL|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_PROTECTION_REGISTER|macro|FLASH_SSD_SECONDARY_FLASH_HAS_ITS_OWN_PROTECTION_REGISTER
+DECL|FLASH_SSD_IS_SECONDARY_FLASH_ENABLED|macro|FLASH_SSD_IS_SECONDARY_FLASH_ENABLED
+DECL|FLASH_SSD_IS_SECONDARY_FLASH_ENABLED|macro|FLASH_SSD_IS_SECONDARY_FLASH_ENABLED
 DECL|FOUR_CHAR_CODE|macro|FOUR_CHAR_CODE
 DECL|FSL_FLASH_DRIVER_VERSION|macro|FSL_FLASH_DRIVER_VERSION
-DECL|FlashMemoryIndex|member|uint32_t FlashMemoryIndex; /*!< 0 - primary flash; 1 - secondary flash*/
-DECL|FlexRAMBlockBase|member|FlexRAMBlockBase; /*!< For the FlexNVM device, this is the base address of the FlexRAM
-DECL|FlexRAMTotalSize|member|uint32_t FlexRAMTotalSize; /*!< For the FlexNVM device, this is the size of the FlexRAM
+DECL|FlashCacheControllerIndex|member|uint8_t FlashCacheControllerIndex; /*!< 0 - Controller for core 0; 1 - Controller for core 1 */
+DECL|FlashMemoryIndex|member|uint8_t FlashMemoryIndex; /*!< 0 - primary flash; 1 - secondary flash*/
+DECL|FlexRAMBlockBase|member|uint32_t FlexRAMBlockBase; /*!< For the FlexNVM device, this is the base address of the FlexRAM */
+DECL|FlexRAMTotalSize|member|uint32_t FlexRAMTotalSize; /*!< For the FlexNVM device, this is the size of the FlexRAM */
 DECL|MAKE_STATUS|macro|MAKE_STATUS
 DECL|MAKE_VERSION|macro|MAKE_VERSION
 DECL|PFlashAccessSegmentCount|member|uint32_t PFlashAccessSegmentCount; /*!< A number of PFlash access segments. */
 DECL|PFlashAccessSegmentSize|member|uint32_t PFlashAccessSegmentSize; /*!< A size in bytes of an access segment of PFlash. */
 DECL|PFlashBlockBase|member|uint32_t PFlashBlockBase; /*!< A base address of the first PFlash block */
-DECL|PFlashBlockCount|member|uint32_t PFlashBlockCount; /*!< A number of PFlash blocks. */
+DECL|PFlashBlockCount|member|uint8_t PFlashBlockCount; /*!< A number of PFlash blocks. */
 DECL|PFlashCallback|member|flash_callback_t PFlashCallback; /*!< The callback function for the flash API. */
 DECL|PFlashSectorSize|member|uint32_t PFlashSectorSize; /*!< The size in bytes of a sector of PFlash. */
 DECL|PFlashTotalSize|member|uint32_t PFlashTotalSize; /*!< The size of the combined PFlash block. */
+DECL|Reserved0|member|uint8_t Reserved0; /*!< Reserved field 0 */
 DECL|SegmentBase|member|uint32_t SegmentBase; /*!< Base address of flash Execute-Only segment.*/
 DECL|SegmentCount|member|uint32_t SegmentCount; /*!< flash Execute-Only segment count.*/
 DECL|SegmentSize|member|uint32_t SegmentSize; /*!< size of flash Execute-Only segment.*/
 DECL|_FSL_FLASH_H_|macro|_FSL_FLASH_H_
 DECL|_flash_acceleration_ram_property|enum|enum _flash_acceleration_ram_property
 DECL|_flash_access_config|struct|typedef struct _flash_access_config
+DECL|_flash_cache_clear_process|enum|typedef enum _flash_cache_clear_process
+DECL|_flash_cache_controller_index|enum|typedef enum _flash_cache_controller_index
 DECL|_flash_config|struct|typedef struct _flash_config
 DECL|_flash_driver_api_keys|enum|enum _flash_driver_api_keys
 DECL|_flash_driver_version_constants|enum|enum _flash_driver_version_constants
@@ -60,6 +61,7 @@ DECL|_flash_swap_ifr_field_config|struct|typedef struct _flash_swap_ifr_field_co
 DECL|_flash_swap_ifr_field_data|union|typedef union _flash_swap_ifr_field_data
 DECL|_flash_swap_state_config|struct|typedef struct _flash_swap_state_config
 DECL|_flash_swap_state|enum|typedef enum _flash_swap_state
+DECL|_k3_flash_read_once_index|enum|enum _k3_flash_read_once_index
 DECL|_pflash_protection_status_low|union|typedef union _pflash_protection_status_low
 DECL|_pflash_protection_status|struct|typedef struct _pflash_protection_status
 DECL|activeBlockSize|member|uint32_t activeBlockSize; /*!< A block size of the current flash type.*/
@@ -77,6 +79,8 @@ DECL|flashSwapIfrData|member|uint32_t flashSwapIfrData[2]; /*!< A flash Swap IFR
 DECL|flashSwapIfrField|member|flash_swap_ifr_field_config_t flashSwapIfrField; /*!< A flash Swap IFR field structure.*/
 DECL|flashSwapState|member|flash_swap_state_t flashSwapState; /*!<The current Swap system status.*/
 DECL|flash_access_config_t|typedef|} flash_access_config_t;
+DECL|flash_cache_clear_process_t|typedef|} flash_cache_clear_process_t;
+DECL|flash_cache_controller_index_t|typedef|} flash_cache_controller_index_t;
 DECL|flash_callback_t|typedef|typedef void (*flash_callback_t)(void);
 DECL|flash_config_t|typedef|} flash_config_t;
 DECL|flash_execute_in_ram_function_config_t|typedef|} flash_execute_in_ram_function_config_t;
@@ -106,9 +110,13 @@ DECL|kFLASH_AccessStateExecuteOnly|enumerator|kFLASH_AccessStateExecuteOnly, /*!
 DECL|kFLASH_AccessStateMixed|enumerator|kFLASH_AccessStateMixed /*!< Flash is mixed with unlimited and execute only region.*/
 DECL|kFLASH_AccessStateUnLimited|enumerator|kFLASH_AccessStateUnLimited, /*!< Flash region is unlimited.*/
 DECL|kFLASH_ApiEraseKey|enumerator|kFLASH_ApiEraseKey = FOUR_CHAR_CODE('k', 'f', 'e', 'k') /*!< Key value used to validate all flash erase APIs.*/
-DECL|kFLASH_DriverVersionBugfix|enumerator|kFLASH_DriverVersionBugfix = 0 /*!< Bugfix for flash driver version.*/
+DECL|kFLASH_CacheClearProcessPost|enumerator|kFLASH_CacheClearProcessPost = 0x01U, /*!< Post flash cache clear process.*/
+DECL|kFLASH_CacheClearProcessPre|enumerator|kFLASH_CacheClearProcessPre = 0x00U, /*!< Pre flash cache clear process.*/
+DECL|kFLASH_CacheControllerIndexForCore0|enumerator|kFLASH_CacheControllerIndexForCore0 = 0x00U, /*!< Current flash cache controller is for core 0.*/
+DECL|kFLASH_CacheControllerIndexForCore1|enumerator|kFLASH_CacheControllerIndexForCore1 = 0x01U, /*!< Current flash cache controller is for core 1.*/
+DECL|kFLASH_DriverVersionBugfix|enumerator|kFLASH_DriverVersionBugfix = 1 /*!< Bugfix for flash driver version.*/
 DECL|kFLASH_DriverVersionMajor|enumerator|kFLASH_DriverVersionMajor = 2, /*!< Major flash driver version.*/
-DECL|kFLASH_DriverVersionMinor|enumerator|kFLASH_DriverVersionMinor = 2, /*!< Minor flash driver version.*/
+DECL|kFLASH_DriverVersionMinor|enumerator|kFLASH_DriverVersionMinor = 3, /*!< Minor flash driver version.*/
 DECL|kFLASH_DriverVersionName|enumerator|kFLASH_DriverVersionName = 'F', /*!< Flash driver version name.*/
 DECL|kFLASH_ExecuteInRamFunctionMaxSizeInWords|enumerator|kFLASH_ExecuteInRamFunctionMaxSizeInWords = 16U, /*!< The maximum size of execute-in-RAM function.*/
 DECL|kFLASH_ExecuteInRamFunctionTotalNum|enumerator|kFLASH_ExecuteInRamFunctionTotalNum = 2U /*!< Total number of execute-in-RAM functions.*/
@@ -128,7 +136,8 @@ DECL|kFLASH_PropertyDflashBlockSize|enumerator|kFLASH_PropertyDflashBlockSize = 
 DECL|kFLASH_PropertyDflashSectorSize|enumerator|kFLASH_PropertyDflashSectorSize = 0x10U, /*!< Dflash sector size property.*/
 DECL|kFLASH_PropertyDflashTotalSize|enumerator|kFLASH_PropertyDflashTotalSize = 0x11U, /*!< Dflash total size property.*/
 DECL|kFLASH_PropertyEepromTotalSize|enumerator|kFLASH_PropertyEepromTotalSize = 0x15U, /*!< EEPROM total size property.*/
-DECL|kFLASH_PropertyFlashMemoryIndex|enumerator|kFLASH_PropertyFlashMemoryIndex = 0x20U /*!< Flash memory index property.*/
+DECL|kFLASH_PropertyFlashCacheControllerIndex|enumerator|kFLASH_PropertyFlashCacheControllerIndex = 0x21U /*!< Flash cache controller index property.*/
+DECL|kFLASH_PropertyFlashMemoryIndex|enumerator|kFLASH_PropertyFlashMemoryIndex = 0x20U, /*!< Flash memory index property.*/
 DECL|kFLASH_PropertyFlexRamBlockBaseAddr|enumerator|kFLASH_PropertyFlexRamBlockBaseAddr = 0x08U, /*!< FlexRam block base address property.*/
 DECL|kFLASH_PropertyFlexRamTotalSize|enumerator|kFLASH_PropertyFlexRamTotalSize = 0x09U, /*!< FlexRam total size property.*/
 DECL|kFLASH_PropertyPflashAccessSegmentCount|enumerator|kFLASH_PropertyPflashAccessSegmentCount = 0x07U, /*!< Pflash access segment count property.*/
@@ -142,6 +151,9 @@ DECL|kFLASH_PropertyPflashTotalSize|enumerator|kFLASH_PropertyPflashTotalSize = 
 DECL|kFLASH_ProtectionStateMixed|enumerator|kFLASH_ProtectionStateMixed /*!< Flash is mixed with protected and unprotected region.*/
 DECL|kFLASH_ProtectionStateProtected|enumerator|kFLASH_ProtectionStateProtected, /*!< Flash region is protected.*/
 DECL|kFLASH_ProtectionStateUnprotected|enumerator|kFLASH_ProtectionStateUnprotected, /*!< Flash region is not protected.*/
+DECL|kFLASH_RecordIndexSwapAddr|enumerator|kFLASH_RecordIndexSwapAddr = 0xA1U, /*!< Index of Swap indicator address.*/
+DECL|kFLASH_RecordIndexSwapDisable|enumerator|kFLASH_RecordIndexSwapDisable = 0xA3U, /*!< Index of Swap system disable.*/
+DECL|kFLASH_RecordIndexSwapEnable|enumerator|kFLASH_RecordIndexSwapEnable = 0xA2U, /*!< Index of Swap system enable.*/
 DECL|kFLASH_ResourceOptionFlashIfr|enumerator|kFLASH_ResourceOptionFlashIfr =
 DECL|kFLASH_ResourceOptionVersionId|enumerator|kFLASH_ResourceOptionVersionId = 0x01U /*!< Select code for the version ID*/
 DECL|kFLASH_ResourceRangeDflashIfrEnd|enumerator|kFLASH_ResourceRangeDflashIfrEnd = 0x8003FFU, /*!< Dflash IFR end address.*/
@@ -170,8 +182,8 @@ DECL|kFLASH_SwapStateReady|enumerator|kFLASH_SwapStateReady = 0x01U, /*!< Flash 
 DECL|kFLASH_SwapStateUninitialized|enumerator|kFLASH_SwapStateUninitialized = 0x00U, /*!< Flash Swap system is in an uninitialized state.*/
 DECL|kFLASH_SwapStateUpdateErased|enumerator|kFLASH_SwapStateUpdateErased = 0x03U, /*!< Flash Swap system is in an updateErased state.*/
 DECL|kFLASH_SwapStateUpdate|enumerator|kFLASH_SwapStateUpdate = 0x02U, /*!< Flash Swap system is in an update state.*/
-DECL|kFLASH_prefetchSpeculationOptionDisable|enumerator|kFLASH_prefetchSpeculationOptionDisable = 0xFFFFFFFFU
-DECL|kFLASH_prefetchSpeculationOptionEnable|enumerator|kFLASH_prefetchSpeculationOptionEnable = 0x00000000U,
+DECL|kFLASH_prefetchSpeculationOptionDisable|enumerator|kFLASH_prefetchSpeculationOptionDisable = 0x01U
+DECL|kFLASH_prefetchSpeculationOptionEnable|enumerator|kFLASH_prefetchSpeculationOptionEnable = 0x00U,
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver
 DECL|kStatusGroupFlashDriver|macro|kStatusGroupFlashDriver

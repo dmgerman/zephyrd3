@@ -3,18 +3,14 @@ DECL|SDHC_DriverIRQHandler|function|void SDHC_DriverIRQHandler(void)
 DECL|SDHC_EnableSdioControl|function|void SDHC_EnableSdioControl(SDHC_Type *base, uint32_t mask, bool enable)
 DECL|SDHC_GetCapability|function|void SDHC_GetCapability(SDHC_Type *base, sdhc_capability_t *capability)
 DECL|SDHC_GetInstance|function|static uint32_t SDHC_GetInstance(SDHC_Type *base)
-DECL|SDHC_INITIAL_CLKFS|macro|SDHC_INITIAL_CLKFS
-DECL|SDHC_INITIAL_DVS|macro|SDHC_INITIAL_DVS
 DECL|SDHC_Init|function|void SDHC_Init(SDHC_Type *base, const sdhc_config_t *config)
 DECL|SDHC_MAX_CLKFS|macro|SDHC_MAX_CLKFS
 DECL|SDHC_MAX_DVS|macro|SDHC_MAX_DVS
-DECL|SDHC_NEXT_CLKFS|macro|SDHC_NEXT_CLKFS
-DECL|SDHC_NEXT_DVS|macro|SDHC_NEXT_DVS
 DECL|SDHC_PREV_CLKFS|macro|SDHC_PREV_CLKFS
 DECL|SDHC_PREV_DVS|macro|SDHC_PREV_DVS
 DECL|SDHC_ReadByDataPortBlocking|function|static status_t SDHC_ReadByDataPortBlocking(SDHC_Type *base, sdhc_data_t *data)
 DECL|SDHC_ReadDataPort|function|static uint32_t SDHC_ReadDataPort(SDHC_Type *base, sdhc_data_t *data, uint32_t transferredWords)
-DECL|SDHC_ReceiveCommandResponse|function|static void SDHC_ReceiveCommandResponse(SDHC_Type *base, sdhc_command_t *command)
+DECL|SDHC_ReceiveCommandResponse|function|static status_t SDHC_ReceiveCommandResponse(SDHC_Type *base, sdhc_command_t *command)
 DECL|SDHC_Reset|function|bool SDHC_Reset(SDHC_Type *base, uint32_t mask, uint32_t timeout)
 DECL|SDHC_SendCommandBlocking|function|static status_t SDHC_SendCommandBlocking(SDHC_Type *base, sdhc_command_t *command)
 DECL|SDHC_SetAdmaTableConfig|function|status_t SDHC_SetAdmaTableConfig(SDHC_Type *base, sdhc_dma_mode_t dmaMode, uint32_t *table, uint32_t tableWords, const uint32_t *data,
@@ -23,7 +19,7 @@ DECL|SDHC_SetMmcBootConfig|function|void SDHC_SetMmcBootConfig(SDHC_Type *base, 
 DECL|SDHC_SetSdClock|function|uint32_t SDHC_SetSdClock(SDHC_Type *base, uint32_t srcClock_Hz, uint32_t busClock_Hz)
 DECL|SDHC_SetTransferConfig|function|void SDHC_SetTransferConfig(SDHC_Type *base, const sdhc_transfer_config_t *config)
 DECL|SDHC_SetTransferInterrupt|function|static void SDHC_SetTransferInterrupt(SDHC_Type *base, bool usingInterruptSignal)
-DECL|SDHC_StartTransfer|function|static void SDHC_StartTransfer(SDHC_Type *base, sdhc_command_t *command, sdhc_data_t *data)
+DECL|SDHC_StartTransfer|function|static void SDHC_StartTransfer(SDHC_Type *base, sdhc_command_t *command, sdhc_data_t *data, sdhc_dma_mode_t dmaMode)
 DECL|SDHC_TransferBlocking|function|status_t SDHC_TransferBlocking(SDHC_Type *base, uint32_t *admaTable, uint32_t admaTableWords, sdhc_transfer_t *transfer)
 DECL|SDHC_TransferByAdma1Blocking|macro|SDHC_TransferByAdma1Blocking
 DECL|SDHC_TransferByAdma2Blocking|function|static status_t SDHC_TransferByAdma2Blocking(SDHC_Type *base, sdhc_data_t *data)

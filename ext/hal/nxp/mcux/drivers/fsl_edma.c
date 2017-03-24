@@ -123,4 +123,3 @@ DECL|s_EDMAHandle|variable|s_EDMAHandle
 DECL|s_edmaBases|variable|s_edmaBases
 DECL|s_edmaClockName|variable|s_edmaClockName
 DECL|s_edmaIRQNumber|variable|s_edmaIRQNumber
-DECL|s_edmaIRQNumber|variable|s_edmaIRQNumber

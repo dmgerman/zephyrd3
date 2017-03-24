@@ -3,6 +3,9 @@ DECL|CAN1_DriverIRQHandler|function|void CAN1_DriverIRQHandler(void)
 DECL|CAN2_DriverIRQHandler|function|void CAN2_DriverIRQHandler(void)
 DECL|CAN3_DriverIRQHandler|function|void CAN3_DriverIRQHandler(void)
 DECL|CAN4_DriverIRQHandler|function|void CAN4_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN0_DriverIRQHandler|function|void DMA_FLEXCAN0_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN1_DriverIRQHandler|function|void DMA_FLEXCAN1_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN2_DriverIRQHandler|function|void DMA_FLEXCAN2_DriverIRQHandler(void)
 DECL|FLEXCAN_Deinit|function|void FLEXCAN_Deinit(CAN_Type *base)
 DECL|FLEXCAN_EnableRxFifoDMA|function|void FLEXCAN_EnableRxFifoDMA(CAN_Type *base, bool enable)
 DECL|FLEXCAN_EnterFreezeMode|function|static void FLEXCAN_EnterFreezeMode(CAN_Type *base)
@@ -66,6 +69,7 @@ DECL|s_flexcanErrorIRQ|variable|s_flexcanErrorIRQ
 DECL|s_flexcanHandle|variable|s_flexcanHandle
 DECL|s_flexcanIsr|variable|s_flexcanIsr
 DECL|s_flexcanMbIRQ|variable|s_flexcanMbIRQ
+DECL|s_flexcanPeriphClock|variable|s_flexcanPeriphClock
 DECL|s_flexcanRxWarningIRQ|variable|s_flexcanRxWarningIRQ
 DECL|s_flexcanTxWarningIRQ|variable|s_flexcanTxWarningIRQ
 DECL|s_flexcanWakeUpIRQ|variable|s_flexcanWakeUpIRQ

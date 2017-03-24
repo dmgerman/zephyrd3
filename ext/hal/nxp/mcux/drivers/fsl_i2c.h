@@ -34,8 +34,6 @@ DECL|enableBaudRateCtl|member|bool enableBaudRateCtl; /*!< Enables/disables inde
 DECL|enableDoubleBuffering|member|bool enableDoubleBuffering; /*!< Controls a double buffer enable; notice that
 DECL|enableDoubleBuffering|member|bool enableDoubleBuffering; /*!< Controls double buffer enable; notice that
 DECL|enableGeneralCall|member|bool enableGeneralCall; /*!< Enables the general call addressing mode. */
-DECL|enableHighDrive|member|bool enableHighDrive; /*!< Controls the drive capability of the I2C pads. */
-DECL|enableHighDrive|member|bool enableHighDrive; /*!< Controls the drive capability of the I2C pads. */
 DECL|enableMaster|member|bool enableMaster; /*!< Enables the I2C peripheral at initialization time. */
 DECL|enableSlave|member|bool enableSlave; /*!< Enables the I2C peripheral at initialization time. */
 DECL|enableStopHold|member|bool enableStopHold; /*!< Controls the stop hold enable. */

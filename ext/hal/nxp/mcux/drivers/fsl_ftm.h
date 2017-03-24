@@ -1,5 +1,6 @@
 DECL|FSL_FTM_DRIVER_VERSION|macro|FSL_FTM_DRIVER_VERSION
 DECL|FTM_ClearQuadDecoderCounterValue|function|static inline void FTM_ClearQuadDecoderCounterValue(FTM_Type *base)
+DECL|FTM_GetCurrentTimerCount|function|static inline uint32_t FTM_GetCurrentTimerCount(FTM_Type *base)
 DECL|FTM_GetQuadDecoderCounterValue|function|static inline uint32_t FTM_GetQuadDecoderCounterValue(FTM_Type *base)
 DECL|FTM_GetQuadDecoderFlags|function|static inline uint32_t FTM_GetQuadDecoderFlags(FTM_Type *base)
 DECL|FTM_SetComplementaryEnable|function|static inline void FTM_SetComplementaryEnable(FTM_Type *base, ftm_chnl_t chnlPairNumber, bool value)
@@ -13,6 +14,7 @@ DECL|FTM_SetQuadDecoderModuloValue|function|static inline void FTM_SetQuadDecode
 DECL|FTM_SetSoftwareCtrlEnable|function|static inline void FTM_SetSoftwareCtrlEnable(FTM_Type *base, ftm_chnl_t chnlNumber, bool value)
 DECL|FTM_SetSoftwareCtrlVal|function|static inline void FTM_SetSoftwareCtrlVal(FTM_Type *base, ftm_chnl_t chnlNumber, bool value)
 DECL|FTM_SetSoftwareTrigger|function|static inline void FTM_SetSoftwareTrigger(FTM_Type *base, bool enable)
+DECL|FTM_SetTimerPeriod|function|static inline void FTM_SetTimerPeriod(FTM_Type *base, uint32_t ticks)
 DECL|FTM_SetWriteProtection|function|static inline void FTM_SetWriteProtection(FTM_Type *base, bool enable)
 DECL|FTM_StartTimer|function|static inline void FTM_StartTimer(FTM_Type *base, ftm_clock_source_t clockSource)
 DECL|FTM_StopTimer|function|static inline void FTM_StopTimer(FTM_Type *base)
