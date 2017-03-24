@@ -1,0 +1,1 @@
+DECL|__CONSOLE_H__|macro|__CONSOLE_H__
