@@ -20,6 +20,7 @@ DECL|bt_conn_cb_register|function|void bt_conn_cb_register(struct bt_conn_cb *cb
 DECL|bt_conn_create_br|function|struct bt_conn *bt_conn_create_br(const bt_addr_t *peer, const struct bt_br_conn_param *param)
 DECL|bt_conn_create_le|function|struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer, const struct bt_le_conn_param *param)
 DECL|bt_conn_create_pdu|function|struct net_buf *bt_conn_create_pdu(struct net_buf_pool *pool, size_t reserve)
+DECL|bt_conn_create_sco|function|struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer)
 DECL|bt_conn_create_slave_le|function|struct bt_conn *bt_conn_create_slave_le(const bt_addr_le_t *peer,const struct bt_le_adv_param *param)
 DECL|bt_conn_disconnect_all|function|void bt_conn_disconnect_all(void)
 DECL|bt_conn_disconnect|function|int bt_conn_disconnect(struct bt_conn *conn, uint8_t reason)
@@ -34,6 +35,7 @@ DECL|bt_conn_le_param_update|function|int bt_conn_le_param_update(struct bt_conn
 DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, uint64_t rand,uint16_t ediv, const uint8_t *ltk, size_t len)
 DECL|bt_conn_lookup_addr_br|function|struct bt_conn *bt_conn_lookup_addr_br(const bt_addr_t *peer)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
+DECL|bt_conn_lookup_addr_sco|function|struct bt_conn *bt_conn_lookup_addr_sco(const bt_addr_t *peer)
 DECL|bt_conn_lookup_handle|function|struct bt_conn *bt_conn_lookup_handle(uint16_t handle)
 DECL|bt_conn_lookup_state_le|function|struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,const bt_conn_state_t state)
 DECL|bt_conn_pin_code_req|function|void bt_conn_pin_code_req(struct bt_conn *conn)
@@ -53,6 +55,7 @@ DECL|bt_conn_unref|function|void bt_conn_unref(struct bt_conn *conn)
 DECL|bt_hci_connect_br_cancel|function|static int bt_hci_connect_br_cancel(struct bt_conn *conn)
 DECL|bt_hci_disconnect|function|static int bt_hci_disconnect(struct bt_conn *conn, uint8_t reason)
 DECL|bt_le_set_auto_conn|function|int bt_le_set_auto_conn(bt_addr_le_t *addr,const struct bt_le_conn_param *param)
+DECL|bt_sco_cleanup|function|void bt_sco_cleanup(struct bt_conn *sco_conn)
 DECL|callback_list|variable|callback_list
 DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
 DECL|conn_change|variable|conn_change

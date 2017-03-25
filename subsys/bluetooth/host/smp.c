@@ -103,7 +103,6 @@ DECL|get_io_capa|function|static uint8_t get_io_capa(void)
 DECL|get_pair_method|function|static uint8_t get_pair_method(struct bt_smp *smp, uint8_t remote_io)
 DECL|handlers|variable|handlers
 DECL|key|variable|key
-DECL|le_encrypt|function|static int le_encrypt(const uint8_t key[16], const uint8_t plaintext[16], uint8_t enc_data[16])
 DECL|le_sc_supported|function|static bool le_sc_supported(void)
 DECL|legacy_distribute_keys|function|static void legacy_distribute_keys(struct bt_smp *smp)
 DECL|legacy_get_pair_method|function|static uint8_t legacy_get_pair_method(struct bt_smp *smp, uint8_t remote_io)

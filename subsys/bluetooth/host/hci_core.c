@@ -34,7 +34,7 @@ DECL|bt_esco_conn_req|function|static void bt_esco_conn_req(struct bt_hci_evt_co
 DECL|bt_hci_cmd_create|function|struct net_buf *bt_hci_cmd_create(uint16_t opcode, uint8_t param_len)
 DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(uint16_t opcode, struct net_buf *buf, struct net_buf **rsp)
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(uint16_t opcode, struct net_buf *buf)
-DECL|bt_hci_driver_register|function|int bt_hci_driver_register(struct bt_hci_driver *drv)
+DECL|bt_hci_driver_register|function|int bt_hci_driver_register(const struct bt_hci_driver *drv)
 DECL|bt_hci_get_cmd_opcode|function|uint16_t bt_hci_get_cmd_opcode(struct net_buf *buf)
 DECL|bt_hci_stop_scanning|function|static int bt_hci_stop_scanning(void)
 DECL|bt_init|function|static int bt_init(void)
@@ -47,7 +47,6 @@ DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
 DECL|bt_pub_key_gen|function|int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
 DECL|bt_pub_key_get|function|const uint8_t *bt_pub_key_get(void)
-DECL|bt_rand|function|int bt_rand(void *buf, size_t len)
 DECL|bt_recv_prio|function|int bt_recv_prio(struct net_buf *buf)
 DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
@@ -120,9 +119,6 @@ DECL|link_key_reply|function|static void link_key_reply(const bt_addr_t *bdaddr,
 DECL|link_key_req|function|static void link_key_req(struct net_buf *buf)
 DECL|opcode|member|uint16_t opcode;
 DECL|pin_code_req|function|static void pin_code_req(struct net_buf *buf)
-DECL|prng_init|function|static int prng_init(struct tc_hmac_prng_struct *h)
-DECL|prng_reseed|function|static int prng_reseed(struct tc_hmac_prng_struct *h)
-DECL|prng|variable|prng
 DECL|process_events|function|static void process_events(struct k_poll_event *ev, int count)
 DECL|pscan_rep_mode|member|uint8_t pscan_rep_mode;
 DECL|pub_key_cb|variable|pub_key_cb
@@ -158,6 +154,7 @@ DECL|show_dev_info|function|static void show_dev_info(void)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(uint8_t scan_type, uint16_t interval, uint16_t window, uint8_t filter_dup)
 DECL|status|member|uint8_t status;
+DECL|synchronous_conn_complete|function|static void synchronous_conn_complete(struct net_buf *buf)
 DECL|sync|member|struct k_sem *sync;
 DECL|type|member|uint8_t type;
 DECL|type|member|uint8_t type;

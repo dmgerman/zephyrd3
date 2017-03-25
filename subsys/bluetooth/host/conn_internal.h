@@ -13,6 +13,7 @@ DECL|BT_CONN_NUM_FLAGS|enumerator|BT_CONN_NUM_FLAGS,
 DECL|BT_CONN_USER|enumerator|BT_CONN_USER, /* user I/O when pairing */
 DECL|LMP_MAX_PAGES|macro|LMP_MAX_PAGES
 DECL|__packed|enum|typedef enum __packed {
+DECL|acl|member|struct bt_conn *acl;
 DECL|br|member|struct bt_conn_br br;
 DECL|bt_conn_br|struct|struct bt_conn_br {
 DECL|bt_conn_get_pkts|function|static inline struct k_sem *bt_conn_get_pkts(struct bt_conn *conn)
@@ -20,8 +21,7 @@ DECL|bt_conn_le|struct|struct bt_conn_le {
 DECL|bt_conn_sco|struct|struct bt_conn_sco {
 DECL|bt_conn_state_t|typedef|} bt_conn_state_t;
 DECL|bt_conn|struct|struct bt_conn {
-DECL|channels|member|void *channels;
-DECL|conn|member|struct bt_conn *conn;
+DECL|channels|member|sys_slist_t channels;
 DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|uint8_t encrypt;
