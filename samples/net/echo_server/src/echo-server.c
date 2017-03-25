@@ -1,6 +1,4 @@
 DECL|MAX_DBG_PRINT|macro|MAX_DBG_PRINT
-DECL|MCAST_IP4ADDR|macro|MCAST_IP4ADDR
-DECL|MCAST_IP6ADDR|macro|MCAST_IP6ADDR
 DECL|MY_IP4ADDR|macro|MY_IP4ADDR
 DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|MY_PORT|macro|MY_PORT
@@ -13,9 +11,8 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|build_reply_buf|function|static struct net_buf *build_reply_buf(const char *name, struct net_context *context, struct net_buf *buf)
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
-DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
+DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6)
 DECL|in4addr_my|variable|in4addr_my
-DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|in6addr_my|variable|in6addr_my
 DECL|init_app|function|static inline void init_app(void)
 DECL|main|function|void main(void)

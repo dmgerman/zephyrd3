@@ -1,5 +1,3 @@
-DECL|MCAST_IP4ADDR|macro|MCAST_IP4ADDR
-DECL|MCAST_IP6ADDR|macro|MCAST_IP6ADDR
 DECL|MY_IP4ADDR|macro|MY_IP4ADDR
 DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|MY_PORT|macro|MY_PORT
@@ -22,10 +20,9 @@ DECL|data|struct|struct data {
 DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
 DECL|expecting_tcp|member|uint32_t expecting_tcp;
 DECL|expecting_udp|member|uint32_t expecting_udp;
-DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
+DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6)
 DECL|in4addr_my|variable|in4addr_my
 DECL|in4addr_peer|variable|in4addr_peer
-DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|in6addr_my|variable|in6addr_my
 DECL|in6addr_peer|variable|in6addr_peer
 DECL|init_app|function|static inline void init_app(void)
@@ -38,7 +35,6 @@ DECL|ipv6_udp_stack|variable|ipv6_udp_stack
 DECL|ipv6|member|struct data ipv6;
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
-DECL|mcast_addr6|variable|mcast_addr6
 DECL|my_addr4|variable|my_addr4
 DECL|my_addr6|variable|my_addr6
 DECL|peer_addr4|variable|peer_addr4

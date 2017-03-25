@@ -16,6 +16,7 @@ DECL|ext_bitmap|member|uint8_t ext_bitmap;
 DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
 DECL|ext_opt_len|member|uint8_t ext_opt_len; /* IPv6 ND option length */
 DECL|family|member|uint8_t family; /* IPv4 vs IPv6 */
+DECL|forwarding|member|bool forwarding; /* Are we forwarding this buf */
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func call */
 DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
@@ -39,6 +40,8 @@ DECL|net_nbuf_ext_bitmap|function|static inline uint8_t net_nbuf_ext_bitmap(stru
 DECL|net_nbuf_ext_len|function|static inline uint8_t net_nbuf_ext_len(struct net_buf *buf)
 DECL|net_nbuf_ext_opt_len|function|static inline uint8_t net_nbuf_ext_opt_len(struct net_buf *buf)
 DECL|net_nbuf_family|function|static inline uint8_t net_nbuf_family(struct net_buf *buf)
+DECL|net_nbuf_forwarding|function|static inline bool net_nbuf_forwarding(struct net_buf *buf)
+DECL|net_nbuf_forwarding|function|static inline bool net_nbuf_forwarding(struct net_buf *buf)
 DECL|net_nbuf_frag_del|macro|net_nbuf_frag_del
 DECL|net_nbuf_get_data|macro|net_nbuf_get_data
 DECL|net_nbuf_get_frag|macro|net_nbuf_get_frag
@@ -78,6 +81,7 @@ DECL|net_nbuf_set_ext_bitmap|function|static inline void net_nbuf_set_ext_bitmap
 DECL|net_nbuf_set_ext_len|function|static inline void net_nbuf_set_ext_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_ext_opt_len|function|static inline void net_nbuf_set_ext_opt_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_family|function|static inline void net_nbuf_set_family(struct net_buf *buf, uint8_t family)
+DECL|net_nbuf_set_forwarding|function|static inline void net_nbuf_set_forwarding(struct net_buf *buf, bool forward)
 DECL|net_nbuf_set_iface|function|static inline void net_nbuf_set_iface(struct net_buf *buf, struct net_if *iface)
 DECL|net_nbuf_set_ip_hdr_len|function|static inline void net_nbuf_set_ip_hdr_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_len|function|static inline void net_nbuf_set_len(struct net_buf *buf, uint16_t len)

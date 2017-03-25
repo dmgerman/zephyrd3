@@ -41,16 +41,16 @@ DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct n
 DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_buf *buf)
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
+DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
 DECL|mld_query_input_handler|variable|mld_query_input_handler
 DECL|na_input_handler|variable|na_input_handler
-DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
+DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_ipv6_nbr_data *data)
 DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
-DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_nbr_state state)
+DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_ipv6_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
-DECL|nbr_set_state|function|static void nbr_set_state(struct net_nbr *nbr, enum net_nbr_state new_state)
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
 DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, uint8_t next_header)
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst)
@@ -61,12 +61,13 @@ DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *i
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_mld_join|function|int net_ipv6_mld_join(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_ipv6_mld_leave|function|int net_ipv6_mld_leave(struct net_if *iface, const struct in6_addr *addr)
-DECL|net_ipv6_nbr_add|function|struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_nbr_state state)
+DECL|net_ipv6_nbr_add|function|struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|net_ipv6_nbr_foreach|function|void net_ipv6_nbr_foreach(net_nbr_cb_t cb, void *user_data)
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_nbr_lookup|function|struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_rm|function|bool net_ipv6_nbr_rm(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
+DECL|net_ipv6_nbr_state2str|function|const char *net_ipv6_nbr_state2str(enum net_ipv6_nbr_state state)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
 DECL|net_ipv6_send_na|function|int net_ipv6_send_na(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt, uint8_t flags)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
@@ -77,7 +78,6 @@ DECL|net_ipv6_unspecified_address|function|const struct in6_addr *net_ipv6_unspe
 DECL|net_is_override|function|static inline bool net_is_override(struct net_buf *buf)
 DECL|net_is_router|function|static inline bool net_is_router(struct net_buf *buf)
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_buf *buf)
-DECL|net_nbr_state2str|function|const char *net_nbr_state2str(enum net_nbr_state state)
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_input_handler|variable|ns_input_handler
