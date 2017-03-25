@@ -12,12 +12,12 @@ DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
 DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
 DECL|LE_CHAN_RTX|macro|LE_CHAN_RTX
-DECL|__l2cap_chan|function|static struct bt_l2cap_le_chan *__l2cap_chan(struct bt_conn *conn, struct bt_l2cap_chan *ch, enum l2cap_conn_list_action action)
 DECL|__l2cap_lookup_ident|function|__l2cap_lookup_ident(struct bt_conn *conn, uint16_t ident, bool remove)
 DECL|bt_l2cap_chan_add|function|void bt_l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
 DECL|bt_l2cap_chan_connect|function|int bt_l2cap_chan_connect(struct bt_conn *conn, struct bt_l2cap_chan *chan, uint16_t psm)
 DECL|bt_l2cap_chan_del|function|void bt_l2cap_chan_del(struct bt_l2cap_chan *chan)
 DECL|bt_l2cap_chan_disconnect|function|int bt_l2cap_chan_disconnect(struct bt_l2cap_chan *chan)
+DECL|bt_l2cap_chan_remove|function|void bt_l2cap_chan_remove(struct bt_conn *conn, struct bt_l2cap_chan *ch)
 DECL|bt_l2cap_chan_send|function|int bt_l2cap_chan_send(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_l2cap_chan_set_state_debug|function|void bt_l2cap_chan_set_state_debug(struct bt_l2cap_chan *chan, bt_l2cap_chan_state_t state, const char *func, int line)
 DECL|bt_l2cap_chan_set_state|function|void bt_l2cap_chan_set_state(struct bt_l2cap_chan *chan, bt_l2cap_chan_state_t state)
@@ -60,12 +60,10 @@ DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(st
 DECL|l2cap_change_security|function|static int l2cap_change_security(struct bt_l2cap_le_chan *chan, uint16_t err)
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_create_le_sig_pdu|function|static struct net_buf *l2cap_create_le_sig_pdu(uint8_t code, uint8_t ident, uint16_t len)
-DECL|l2cap_detach_chan|macro|l2cap_detach_chan
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_le_conn_req|function|static int l2cap_le_conn_req(struct bt_l2cap_le_chan *ch)
 DECL|l2cap_le_connect|function|static int l2cap_le_connect(struct bt_conn *conn, struct bt_l2cap_le_chan *ch, uint16_t psm)
 DECL|l2cap_le_encrypt_change|function|static void l2cap_le_encrypt_change(struct bt_l2cap_chan *chan, uint8_t status)
-DECL|l2cap_lookup_chan|macro|l2cap_lookup_chan
 DECL|l2cap_lookup_ident|macro|l2cap_lookup_ident
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_remove_ident|macro|l2cap_remove_ident

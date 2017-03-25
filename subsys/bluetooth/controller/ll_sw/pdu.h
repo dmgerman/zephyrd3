@@ -1,26 +1,40 @@
 DECL|BDADDR_SIZE|macro|BDADDR_SIZE
+DECL|PDU_AC_SIZE_MAX|macro|PDU_AC_SIZE_MAX
+DECL|PDU_AC_SIZE_OVERHEAD|macro|PDU_AC_SIZE_OVERHEAD
 DECL|PDU_ADV_TYPE_ADV_IND|enumerator|PDU_ADV_TYPE_ADV_IND = 0x00,
-DECL|PDU_ADV_TYPE_CONNECT_REQ|enumerator|PDU_ADV_TYPE_CONNECT_REQ = 0x05,
+DECL|PDU_ADV_TYPE_AUX_ADV_IND|enumerator|PDU_ADV_TYPE_AUX_ADV_IND = PDU_ADV_TYPE_EXT_IND,
+DECL|PDU_ADV_TYPE_AUX_CHAIN_IND|enumerator|PDU_ADV_TYPE_AUX_CHAIN_IND = PDU_ADV_TYPE_EXT_IND,
+DECL|PDU_ADV_TYPE_AUX_CONNECT_REQ|enumerator|PDU_ADV_TYPE_AUX_CONNECT_REQ = PDU_ADV_TYPE_CONNECT_IND,
+DECL|PDU_ADV_TYPE_AUX_CONNECT_RSP|enumerator|PDU_ADV_TYPE_AUX_CONNECT_RSP = 0x08,
+DECL|PDU_ADV_TYPE_AUX_SCAN_REQ|enumerator|PDU_ADV_TYPE_AUX_SCAN_REQ = PDU_ADV_TYPE_SCAN_REQ,
+DECL|PDU_ADV_TYPE_AUX_SCAN_RSP|enumerator|PDU_ADV_TYPE_AUX_SCAN_RSP = PDU_ADV_TYPE_EXT_IND,
+DECL|PDU_ADV_TYPE_AUX_SYNC_IND|enumerator|PDU_ADV_TYPE_AUX_SYNC_IND = PDU_ADV_TYPE_EXT_IND,
+DECL|PDU_ADV_TYPE_CONNECT_IND|enumerator|PDU_ADV_TYPE_CONNECT_IND = 0x05,
 DECL|PDU_ADV_TYPE_DIRECT_IND|enumerator|PDU_ADV_TYPE_DIRECT_IND = 0x01,
+DECL|PDU_ADV_TYPE_EXT_IND|enumerator|PDU_ADV_TYPE_EXT_IND = 0x07,
 DECL|PDU_ADV_TYPE_NONCONN_IND|enumerator|PDU_ADV_TYPE_NONCONN_IND = 0x02,
 DECL|PDU_ADV_TYPE_SCAN_IND|enumerator|PDU_ADV_TYPE_SCAN_IND = 0x06,
 DECL|PDU_ADV_TYPE_SCAN_REQ|enumerator|PDU_ADV_TYPE_SCAN_REQ = 0x03,
-DECL|PDU_ADV_TYPE_SCAN_RESP|enumerator|PDU_ADV_TYPE_SCAN_RESP = 0x04,
-DECL|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_REQ = 0x01,
+DECL|PDU_ADV_TYPE_SCAN_RSP|enumerator|PDU_ADV_TYPE_SCAN_RSP = 0x04,
+DECL|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_IND|enumerator|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_IND = 0x01,
 DECL|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_REQ = 0x0F,
 DECL|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_RSP = 0x10,
-DECL|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_REQ = 0x00,
+DECL|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_IND|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_IND = 0x00,
 DECL|PDU_DATA_LLCTRL_TYPE_ENC_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_ENC_REQ = 0x03,
 DECL|PDU_DATA_LLCTRL_TYPE_ENC_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_ENC_RSP = 0x04,
 DECL|PDU_DATA_LLCTRL_TYPE_FEATURE_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_FEATURE_REQ = 0x08,
 DECL|PDU_DATA_LLCTRL_TYPE_FEATURE_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_FEATURE_RSP = 0x09,
 DECL|PDU_DATA_LLCTRL_TYPE_LENGTH_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_LENGTH_REQ = 0x14,
 DECL|PDU_DATA_LLCTRL_TYPE_LENGTH_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_LENGTH_RSP = 0x15,
+DECL|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHNLS_IND|enumerator|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHNLS_IND = 0x19,
 DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_REQ = 0x0A,
 DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP = 0x0B,
+DECL|PDU_DATA_LLCTRL_TYPE_PHY_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_REQ = 0x16,
+DECL|PDU_DATA_LLCTRL_TYPE_PHY_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_RSP = 0x17,
+DECL|PDU_DATA_LLCTRL_TYPE_PHY_UPDATE_IND|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_UPDATE_IND = 0x18,
 DECL|PDU_DATA_LLCTRL_TYPE_PING_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PING_REQ = 0x12,
 DECL|PDU_DATA_LLCTRL_TYPE_PING_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PING_RSP = 0x13,
-DECL|PDU_DATA_LLCTRL_TYPE_REJECT_IND_EXT|enumerator|PDU_DATA_LLCTRL_TYPE_REJECT_IND_EXT = 0x11,
+DECL|PDU_DATA_LLCTRL_TYPE_REJECT_EXT_IND|enumerator|PDU_DATA_LLCTRL_TYPE_REJECT_EXT_IND = 0x11,
 DECL|PDU_DATA_LLCTRL_TYPE_REJECT_IND|enumerator|PDU_DATA_LLCTRL_TYPE_REJECT_IND = 0x0D,
 DECL|PDU_DATA_LLCTRL_TYPE_SLAVE_FEATURE_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_SLAVE_FEATURE_REQ = 0x0E,
 DECL|PDU_DATA_LLCTRL_TYPE_START_ENC_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_START_ENC_REQ = 0x05,
@@ -32,6 +46,7 @@ DECL|PDU_DATA_LLID_CTRL|enumerator|PDU_DATA_LLID_CTRL = 0x03,
 DECL|PDU_DATA_LLID_DATA_CONTINUE|enumerator|PDU_DATA_LLID_DATA_CONTINUE = 0x01,
 DECL|PDU_DATA_LLID_DATA_START|enumerator|PDU_DATA_LLID_DATA_START = 0x02,
 DECL|PDU_DATA_LLID_RESV|enumerator|PDU_DATA_LLID_RESV = 0x00,
+DECL|PDU_EM_SIZE_MAX|macro|PDU_EM_SIZE_MAX
 DECL|_PDU_H_|macro|_PDU_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -64,14 +79,15 @@ DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_ind|member|struct pdu_adv_payload_adv_ind adv_ind;
-DECL|channel_map_req|member|struct pdu_data_llctrl_channel_map_req channel_map_req;
+DECL|ch_sel|member|uint8_t ch_sel:1;
+DECL|channel_map_ind|member|struct pdu_data_llctrl_channel_map_ind channel_map_ind;
 DECL|channel_map|member|uint8_t channel_map[5];
 DECL|chm|member|uint8_t chm[5];
 DECL|company_id|member|uint16_t company_id;
 DECL|conn_param_req|member|struct pdu_data_llctrl_conn_param_req conn_param_req;
 DECL|conn_param_rsp|member|struct pdu_data_llctrl_conn_param_rsp conn_param_rsp;
-DECL|conn_update_req|member|struct pdu_data_llctrl_conn_update_req conn_update_req;
-DECL|connect_req|member|struct pdu_adv_payload_connect_req connect_req;
+DECL|conn_update_ind|member|struct pdu_data_llctrl_conn_update_ind conn_update_ind;
+DECL|connect_ind|member|struct pdu_adv_payload_connect_ind connect_ind;
 DECL|crc_init|member|uint8_t crc_init[3];
 DECL|ctrldata|member|} __packed ctrldata;
 DECL|cur|member|uint8_t cur;
@@ -90,7 +106,6 @@ DECL|features|member|uint8_t features[8];
 DECL|features|member|uint8_t features[8];
 DECL|hop|member|uint8_t hop:5;
 DECL|init_addr|member|uint8_t init_addr[BDADDR_SIZE];
-DECL|init_addr|member|uint8_t init_addr[BDADDR_SIZE];
 DECL|instant|member|uint16_t instant;
 DECL|instant|member|uint16_t instant;
 DECL|interval_max|member|uint16_t interval_max;
@@ -108,7 +123,7 @@ DECL|latency|member|uint16_t latency;
 DECL|lcur|member|uint8_t lcur;
 DECL|length_req|member|struct pdu_data_llctrl_length_req_rsp length_req;
 DECL|length_rsp|member|struct pdu_data_llctrl_length_req_rsp length_rsp;
-DECL|len|member|uint8_t len:6;
+DECL|len|member|uint8_t len:8;
 DECL|len|member|uint8_t len:8;
 DECL|ll_id|member|uint8_t ll_id:2;
 DECL|llctrl|member|struct pdu_data_llctrl llctrl;
@@ -124,7 +139,6 @@ DECL|max|member|uint8_t max;
 DECL|md|member|uint8_t md:1;
 DECL|min|member|uint8_t min;
 DECL|nesn|member|uint8_t nesn:1;
-DECL|nrf_radio_s1|member|uint8_t nrf_radio_s1;
 DECL|offset0|member|uint16_t offset0;
 DECL|offset0|member|uint16_t offset0;
 DECL|offset1|member|uint16_t offset1;
@@ -141,22 +155,22 @@ DECL|opcode|member|uint8_t opcode;
 DECL|payload|member|} __packed payload;
 DECL|payload|member|} __packed payload;
 DECL|pdu_adv_payload_adv_ind|struct|struct pdu_adv_payload_adv_ind {
-DECL|pdu_adv_payload_connect_req|struct|struct pdu_adv_payload_connect_req {
+DECL|pdu_adv_payload_connect_ind|struct|struct pdu_adv_payload_connect_ind {
 DECL|pdu_adv_payload_direct_ind|struct|struct pdu_adv_payload_direct_ind {
 DECL|pdu_adv_payload_scan_req|struct|struct pdu_adv_payload_scan_req {
-DECL|pdu_adv_payload_scan_resp|struct|struct pdu_adv_payload_scan_resp {
+DECL|pdu_adv_payload_scan_rsp|struct|struct pdu_adv_payload_scan_rsp {
 DECL|pdu_adv_type|enum|enum pdu_adv_type {
 DECL|pdu_adv|struct|struct pdu_adv {
-DECL|pdu_data_llctrl_channel_map_req|struct|struct pdu_data_llctrl_channel_map_req {
+DECL|pdu_data_llctrl_channel_map_ind|struct|struct pdu_data_llctrl_channel_map_ind {
 DECL|pdu_data_llctrl_conn_param_req|struct|struct pdu_data_llctrl_conn_param_req {
 DECL|pdu_data_llctrl_conn_param_rsp|struct|struct pdu_data_llctrl_conn_param_rsp {
-DECL|pdu_data_llctrl_conn_update_req|struct|struct pdu_data_llctrl_conn_update_req {
+DECL|pdu_data_llctrl_conn_update_ind|struct|struct pdu_data_llctrl_conn_update_ind {
 DECL|pdu_data_llctrl_enc_req|struct|struct pdu_data_llctrl_enc_req {
 DECL|pdu_data_llctrl_enc_rsp|struct|struct pdu_data_llctrl_enc_rsp {
 DECL|pdu_data_llctrl_feature_req|struct|struct pdu_data_llctrl_feature_req {
 DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
 DECL|pdu_data_llctrl_length_req_rsp|struct|struct pdu_data_llctrl_length_req_rsp {
-DECL|pdu_data_llctrl_reject_ind_ext|struct|struct pdu_data_llctrl_reject_ind_ext {
+DECL|pdu_data_llctrl_reject_ext_ind|struct|struct pdu_data_llctrl_reject_ext_ind {
 DECL|pdu_data_llctrl_reject_ind|struct|struct pdu_data_llctrl_reject_ind {
 DECL|pdu_data_llctrl_terminate_ind|struct|struct pdu_data_llctrl_terminate_ind {
 DECL|pdu_data_llctrl_type|enum|enum pdu_data_llctrl_type {
@@ -172,18 +186,18 @@ DECL|profile|struct|struct profile {
 DECL|rand|member|uint8_t rand[8];
 DECL|reference_conn_event_count|member|uint16_t reference_conn_event_count;
 DECL|reference_conn_event_count|member|uint16_t reference_conn_event_count;
-DECL|reject_ind_ext|member|struct pdu_data_llctrl_reject_ind_ext reject_ind_ext;
+DECL|reject_ext_ind|member|struct pdu_data_llctrl_reject_ext_ind reject_ext_ind;
 DECL|reject_ind|member|struct pdu_data_llctrl_reject_ind reject_ind;
 DECL|reject_opcode|member|uint8_t reject_opcode;
-DECL|resv|member|uint8_t resv:8;
-DECL|rfu0|member|uint8_t rfu0:2;
-DECL|rfu0|member|uint8_t rfu0:3;
-DECL|rfu1|member|uint8_t rfu1:2;
+DECL|resv|member|uint8_t resv:8; /* TODO: remove nRF specific code */
+DECL|resv|member|uint8_t resv:8; /* TODO: remove nRF specific code */
+DECL|rfu|member|uint8_t rfu:1;
+DECL|rfu|member|uint8_t rfu:3;
 DECL|rssi|member|uint8_t rssi;
 DECL|rx_addr|member|uint8_t rx_addr:1;
 DECL|scan_addr|member|uint8_t scan_addr[BDADDR_SIZE];
 DECL|scan_req|member|struct pdu_adv_payload_scan_req scan_req;
-DECL|scan_resp|member|struct pdu_adv_payload_scan_resp scan_resp;
+DECL|scan_rsp|member|struct pdu_adv_payload_scan_rsp scan_rsp;
 DECL|sca|member|uint8_t sca:3;
 DECL|skdm|member|uint8_t skdm[8];
 DECL|skds|member|uint8_t skds[8];
@@ -191,6 +205,7 @@ DECL|slave_feature_req|member|struct pdu_data_llctrl_feature_req slave_feature_r
 DECL|sn|member|uint8_t sn:1;
 DECL|sub_version_number|member|uint16_t sub_version_number;
 DECL|terminate_ind|member|struct pdu_data_llctrl_terminate_ind terminate_ind;
+DECL|tgt_addr|member|uint8_t tgt_addr[BDADDR_SIZE];
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;

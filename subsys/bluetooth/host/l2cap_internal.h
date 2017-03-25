@@ -74,7 +74,6 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|_next|member|struct bt_l2cap_fixed_chan *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);
 DECL|bt_l2cap_chan_set_state|macro|bt_l2cap_chan_set_state
 DECL|bt_l2cap_cmd_reject_cid_data|struct|struct bt_l2cap_cmd_reject_cid_data {
@@ -128,6 +127,7 @@ DECL|mps|member|uint16_t mps;
 DECL|mps|member|uint16_t mps;
 DECL|mtu|member|uint16_t mtu;
 DECL|mtu|member|uint16_t mtu;
+DECL|node|member|sys_snode_t node;
 DECL|psm|member|uint16_t psm;
 DECL|psm|member|uint16_t psm;
 DECL|reason|member|uint16_t reason;

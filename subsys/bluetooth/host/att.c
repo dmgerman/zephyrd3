@@ -1,12 +1,18 @@
 DECL|ATT_CHAN|macro|ATT_CHAN
+DECL|ATT_COMMAND|enumerator|ATT_COMMAND,
+DECL|ATT_CONFIRMATION|enumerator|ATT_CONFIRMATION,
+DECL|ATT_INDICATION|enumerator|ATT_INDICATION,
+DECL|ATT_NOTIFICATION|enumerator|ATT_NOTIFICATION,
+DECL|ATT_REQUEST|enumerator|ATT_REQUEST,
 DECL|ATT_REQ|macro|ATT_REQ
+DECL|ATT_RESPONSE|enumerator|ATT_RESPONSE,
 DECL|ATT_TIMEOUT|macro|ATT_TIMEOUT
-DECL|BT_ATT_OP_CMD_FLAG|macro|BT_ATT_OP_CMD_FLAG
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|BT_GATT_PERM_AUTHEN_MASK|macro|BT_GATT_PERM_AUTHEN_MASK
 DECL|BT_GATT_PERM_ENCRYPT_MASK|macro|BT_GATT_PERM_ENCRYPT_MASK
 DECL|BT_GATT_PERM_READ_MASK|macro|BT_GATT_PERM_READ_MASK
 DECL|BT_GATT_PERM_WRITE_MASK|macro|BT_GATT_PERM_WRITE_MASK
+DECL|__packed|enum|enum __packed {
 DECL|att_chan_get|function|static struct bt_att *att_chan_get(struct bt_conn *conn)
 DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
 DECL|att_confirm|function|static uint8_t att_confirm(struct bt_att *att, struct net_buf *buf)
@@ -27,6 +33,7 @@ DECL|att_handle_read_rsp|function|static uint8_t att_handle_read_rsp(struct bt_a
 DECL|att_handle_read_type_rsp|function|static uint8_t att_handle_read_type_rsp(struct bt_att *att,struct net_buf *buf)
 DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_att *att, void *pdu, uint16_t len, uint8_t err)
 DECL|att_handle_write_rsp|function|static uint8_t att_handle_write_rsp(struct bt_att *att, struct net_buf *buf)
+DECL|att_handler|struct|static const struct att_handler {
 DECL|att_indicate|function|static uint8_t att_indicate(struct bt_att *att, struct net_buf *buf)
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_att *att, struct net_buf *buf)
@@ -125,6 +132,7 @@ DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|timeout_work|member|struct k_delayed_work timeout_work;
+DECL|type|member|} type;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
 DECL|uuid|member|struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
