@@ -1,0 +1,10 @@
+DECL|SYSMPU_Deinit|function|void SYSMPU_Deinit(SYSMPU_Type *base)
+DECL|SYSMPU_GetDetailErrorAccessInfo|function|void SYSMPU_GetDetailErrorAccessInfo(SYSMPU_Type *base, sysmpu_slave_t slaveNum, sysmpu_access_err_info_t *errInform)
+DECL|SYSMPU_GetHardwareInfo|function|void SYSMPU_GetHardwareInfo(SYSMPU_Type *base, sysmpu_hardware_info_t *hardwareInform)
+DECL|SYSMPU_GetSlavePortErrorStatus|function|bool SYSMPU_GetSlavePortErrorStatus(SYSMPU_Type *base, sysmpu_slave_t slaveNum)
+DECL|SYSMPU_Init|function|void SYSMPU_Init(SYSMPU_Type *base, const sysmpu_config_t *config)
+DECL|SYSMPU_SetRegionAddr|function|void SYSMPU_SetRegionAddr(SYSMPU_Type *base, uint32_t regionNum, uint32_t startAddr, uint32_t endAddr)
+DECL|SYSMPU_SetRegionConfig|function|void SYSMPU_SetRegionConfig(SYSMPU_Type *base, const sysmpu_region_config_t *regionConfig)
+DECL|SYSMPU_SetRegionRwMasterAccessRights|function|void SYSMPU_SetRegionRwMasterAccessRights(SYSMPU_Type *base, uint32_t regionNum, uint32_t masterNum, const sysmpu_rwrights_master_access_control_t *accessRights)
+DECL|SYSMPU_SetRegionRwxMasterAccessRights|function|void SYSMPU_SetRegionRwxMasterAccessRights(SYSMPU_Type *base, uint32_t regionNum, uint32_t masterNum, const sysmpu_rwxrights_master_access_control_t *accessRights)
+DECL|g_sysmpuClock|variable|g_sysmpuClock

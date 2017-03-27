@@ -10,14 +10,14 @@ DECL|_llwu_external_pin_mode|enum|typedef enum _llwu_external_pin_mode
 DECL|_llwu_param|struct|typedef struct _llwu_param
 DECL|_llwu_pin_filter_mode|enum|typedef enum _llwu_pin_filter_mode
 DECL|_llwu_version_id|struct|typedef struct _llwu_version_id
-DECL|dmas|member|uint8_t dmas; /*!< Number of wakeup DMA. */
-DECL|feature|member|uint16_t feature; /*!< Feature Specification Number. */
+DECL|dmas|member|uint8_t dmas; /*!< A number of the wakeup DMA. */
+DECL|feature|member|uint16_t feature; /*!< A feature specification number. */
 DECL|filterMode|member|llwu_pin_filter_mode_t filterMode; /*!< Filter mode */
-DECL|filters|member|uint8_t filters; /*!< Number of pin filter. */
+DECL|filters|member|uint8_t filters; /*!< A number of the pin filter. */
 DECL|kLLWU_ExternalPinAnyEdge|enumerator|kLLWU_ExternalPinAnyEdge = 3U /*!< Pin enabled with any change detection. */
-DECL|kLLWU_ExternalPinDisable|enumerator|kLLWU_ExternalPinDisable = 0U, /*!< Pin disabled as wakeup input. */
-DECL|kLLWU_ExternalPinFallingEdge|enumerator|kLLWU_ExternalPinFallingEdge = 2U, /*!< Pin enabled with falling edge detection.*/
-DECL|kLLWU_ExternalPinRisingEdge|enumerator|kLLWU_ExternalPinRisingEdge = 1U, /*!< Pin enabled with rising edge detection. */
+DECL|kLLWU_ExternalPinDisable|enumerator|kLLWU_ExternalPinDisable = 0U, /*!< Pin disabled as a wakeup input. */
+DECL|kLLWU_ExternalPinFallingEdge|enumerator|kLLWU_ExternalPinFallingEdge = 2U, /*!< Pin enabled with the falling edge detection.*/
+DECL|kLLWU_ExternalPinRisingEdge|enumerator|kLLWU_ExternalPinRisingEdge = 1U, /*!< Pin enabled with the rising edge detection. */
 DECL|kLLWU_PinFilterAnyEdge|enumerator|kLLWU_PinFilterAnyEdge = 3U /*!< Filter any edge detection. */
 DECL|kLLWU_PinFilterDisable|enumerator|kLLWU_PinFilterDisable = 0U, /*!< Filter disabled. */
 DECL|kLLWU_PinFilterFallingEdge|enumerator|kLLWU_PinFilterFallingEdge = 2U, /*!< Filter negative edge detection.*/
@@ -27,8 +27,8 @@ DECL|llwu_external_pin_mode_t|typedef|} llwu_external_pin_mode_t;
 DECL|llwu_param_t|typedef|} llwu_param_t;
 DECL|llwu_pin_filter_mode_t|typedef|} llwu_pin_filter_mode_t;
 DECL|llwu_version_id_t|typedef|} llwu_version_id_t;
-DECL|major|member|uint8_t major; /*!< Major version number. */
-DECL|minor|member|uint8_t minor; /*!< Minor version number. */
-DECL|modules|member|uint8_t modules; /*!< Number of wakeup module. */
-DECL|pinIndex|member|uint32_t pinIndex; /*!< Pin number */
-DECL|pins|member|uint8_t pins; /*!< Number of wake up pin. */
+DECL|major|member|uint8_t major; /*!< The major version number. */
+DECL|minor|member|uint8_t minor; /*!< The minor version number. */
+DECL|modules|member|uint8_t modules; /*!< A number of the wakeup module. */
+DECL|pinIndex|member|uint32_t pinIndex; /*!< A pin number */
+DECL|pins|member|uint8_t pins; /*!< A number of the wake up pin. */

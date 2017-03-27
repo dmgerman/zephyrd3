@@ -40,7 +40,7 @@ DECL|enableAsynchronousClock|member|bool enableAsynchronousClock; /*!< Enable th
 DECL|enableContinuousConversion|member|bool enableContinuousConversion; /*!< Enable continuous conversion mode. */
 DECL|enableDifferentialConversion|member|bool enableDifferentialConversion; /*!< Using Differential sample mode. */
 DECL|enableHighSpeed|member|bool enableHighSpeed; /*!< Enable the high-speed mode. */
-DECL|enableInterruptOnConversionCompleted|member|bool enableInterruptOnConversionCompleted; /*!< Generate a interrupt request once the conversion is completed. */
+DECL|enableInterruptOnConversionCompleted|member|bool enableInterruptOnConversionCompleted; /*!< Generate an interrupt request once the conversion is completed. */
 DECL|enableLowPower|member|bool enableLowPower; /*!< Enable low power. */
 DECL|enableRunInNormalMode|member|bool enableRunInNormalMode; /*!< Enable PGA working in normal mode, or low power mode by default. */
 DECL|enableRunInOffsetMeasurement|member|bool enableRunInOffsetMeasurement; /*!< Enable the PGA working in offset measurement mode.

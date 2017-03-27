@@ -4,3 +4,4 @@ DECL|LPTMR_GetInstance|function|static uint32_t LPTMR_GetInstance(LPTMR_Type *ba
 DECL|LPTMR_Init|function|void LPTMR_Init(LPTMR_Type *base, const lptmr_config_t *config)
 DECL|s_lptmrBases|variable|s_lptmrBases
 DECL|s_lptmrClocks|variable|s_lptmrClocks
+DECL|s_lptmrPeriphClocks|variable|s_lptmrPeriphClocks

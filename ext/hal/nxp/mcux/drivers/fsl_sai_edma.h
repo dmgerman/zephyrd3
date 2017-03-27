@@ -5,6 +5,7 @@ DECL|callback|member|sai_edma_callback_t callback; /*!< Callback for users while
 DECL|channel|member|uint8_t channel; /*!< Which data channel */
 DECL|count|member|uint8_t count; /*!< The transfer data count in a DMA request */
 DECL|dmaHandle|member|edma_handle_t *dmaHandle; /*!< DMA handler for SAI send */
+DECL|nbytes|member|uint8_t nbytes; /*!< eDMA minor byte transfer count initially configured. */
 DECL|queueDriver|member|volatile uint8_t queueDriver; /*!< Index for driver to get the transfer data and size */
 DECL|queueUser|member|volatile uint8_t queueUser; /*!< Index for user to queue transfer. */
 DECL|saiQueue|member|sai_transfer_t saiQueue[SAI_XFER_QUEUE_SIZE]; /*!< Transfer queue storing queued transfer. */

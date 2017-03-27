@@ -1,10 +1,15 @@
 DECL|BOARD_BootClockRUN|function|void BOARD_BootClockRUN(void)
 DECL|BOARD_BootClockVLPR|function|void BOARD_BootClockVLPR(void)
-DECL|_clock_config|struct|typedef struct _clock_config
-DECL|clock_config_t|typedef|} clock_config_t;
-DECL|coreClock|member|uint32_t coreClock; /*!< core clock frequency. */
-DECL|g_defaultClockConfigRun|variable|g_defaultClockConfigRun
-DECL|g_defaultClockConfigVlpr|variable|g_defaultClockConfigVlpr
-DECL|mcgConfig|member|mcg_config_t mcgConfig; /*!< MCG configuration. */
-DECL|oscConfig|member|osc_config_t oscConfig; /*!< OSC configuration. */
-DECL|simConfig|member|sim_clock_config_t simConfig; /*!< SIM configuration. */
+DECL|CLOCK_CONFIG_SetFllExtRefDiv|function|static void CLOCK_CONFIG_SetFllExtRefDiv(uint8_t frdiv)
+DECL|MCG_PLL_DISABLE|macro|MCG_PLL_DISABLE
+DECL|OSC_CAP0P|macro|OSC_CAP0P
+DECL|OSC_ER_CLK_DISABLE|macro|OSC_ER_CLK_DISABLE
+DECL|SIM_OSC32KSEL_RTC32KCLK_CLK|macro|SIM_OSC32KSEL_RTC32KCLK_CLK
+DECL|SIM_PLLFLLSEL_IRC48MCLK_CLK|macro|SIM_PLLFLLSEL_IRC48MCLK_CLK
+DECL|SIM_PLLFLLSEL_MCGPLLCLK_CLK|macro|SIM_PLLFLLSEL_MCGPLLCLK_CLK
+DECL|mcgConfig_BOARD_BootClockRUN|variable|mcgConfig_BOARD_BootClockRUN
+DECL|mcgConfig_BOARD_BootClockVLPR|variable|mcgConfig_BOARD_BootClockVLPR
+DECL|oscConfig_BOARD_BootClockRUN|variable|oscConfig_BOARD_BootClockRUN
+DECL|oscConfig_BOARD_BootClockVLPR|variable|oscConfig_BOARD_BootClockVLPR
+DECL|simConfig_BOARD_BootClockRUN|variable|simConfig_BOARD_BootClockRUN
+DECL|simConfig_BOARD_BootClockVLPR|variable|simConfig_BOARD_BootClockVLPR

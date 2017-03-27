@@ -39,14 +39,13 @@ DECL|ENET_BUFFDESCRIPTOR_TX_TIMESTAMP_MASK|macro|ENET_BUFFDESCRIPTOR_TX_TIMESTAM
 DECL|ENET_BUFFDESCRIPTOR_TX_TRANMITCRC_MASK|macro|ENET_BUFFDESCRIPTOR_TX_TRANMITCRC_MASK
 DECL|ENET_BUFFDESCRIPTOR_TX_UNDERFLOWERR_MASK|macro|ENET_BUFFDESCRIPTOR_TX_UNDERFLOWERR_MASK
 DECL|ENET_BUFFDESCRIPTOR_TX_WRAP_MASK|macro|ENET_BUFFDESCRIPTOR_TX_WRAP_MASK
-DECL|ENET_BUFF_ALIGNMENT|macro|ENET_BUFF_ALIGNMENT
 DECL|ENET_ClearInterruptStatus|function|static inline void ENET_ClearInterruptStatus(ENET_Type *base, uint32_t mask)
 DECL|ENET_DisableInterrupts|function|static inline void ENET_DisableInterrupts(ENET_Type *base, uint32_t mask)
+DECL|ENET_ERR_INTERRUPT|macro|ENET_ERR_INTERRUPT
 DECL|ENET_EnableInterrupts|function|static inline void ENET_EnableInterrupts(ENET_Type *base, uint32_t mask)
 DECL|ENET_EnableSleepMode|function|static inline void ENET_EnableSleepMode(ENET_Type *base, bool enable)
 DECL|ENET_FIFO_MIN_RX_FULL|macro|ENET_FIFO_MIN_RX_FULL
 DECL|ENET_FRAME_MAX_FRAMELEN|macro|ENET_FRAME_MAX_FRAMELEN
-DECL|ENET_FRAME_MAX_VALNFRAMELEN|macro|ENET_FRAME_MAX_VALNFRAMELEN
 DECL|ENET_GetAccelFunction|function|static inline void ENET_GetAccelFunction(ENET_Type *base, uint32_t *txAccelOption, uint32_t *rxAccelOption)
 DECL|ENET_GetInterruptStatus|function|static inline uint32_t ENET_GetInterruptStatus(ENET_Type *base)
 DECL|ENET_GetSMI|function|static inline bool ENET_GetSMI(ENET_Type *base)
@@ -55,10 +54,14 @@ DECL|ENET_Ptp1588ClearChannelStatus|function|static inline void ENET_Ptp1588Clea
 DECL|ENET_Ptp1588GetChannelStatus|function|static inline bool ENET_Ptp1588GetChannelStatus(ENET_Type *base, enet_ptp_timer_channel_t channel)
 DECL|ENET_Ptp1588SetChannelCmpValue|function|static inline void ENET_Ptp1588SetChannelCmpValue(ENET_Type *base, enet_ptp_timer_channel_t channel, uint32_t cmpValue)
 DECL|ENET_Ptp1588SetChannelMode|function|static inline void ENET_Ptp1588SetChannelMode(ENET_Type *base, enet_ptp_timer_channel_t channel, enet_ptp_timer_channel_mode_t mode, bool intEnable)
+DECL|ENET_Ptp1588SetChannelOutputPulseWidth|function|static inline void ENET_Ptp1588SetChannelOutputPulseWidth(ENET_Type *base, enet_ptp_timer_channel_t channel, bool isOutputLow, uint8_t pulseWidth, bool intEnable)
 DECL|ENET_Ptp1588StopTimer|function|static inline void ENET_Ptp1588StopTimer(ENET_Type *base)
+DECL|ENET_RX_INTERRUPT|macro|ENET_RX_INTERRUPT
 DECL|ENET_RX_MIN_BUFFERSIZE|macro|ENET_RX_MIN_BUFFERSIZE
 DECL|ENET_ReadSMIData|function|static inline uint32_t ENET_ReadSMIData(ENET_Type *base)
 DECL|ENET_Reset|function|static inline void ENET_Reset(ENET_Type *base)
+DECL|ENET_TS_INTERRUPT|macro|ENET_TS_INTERRUPT
+DECL|ENET_TX_INTERRUPT|macro|ENET_TX_INTERRUPT
 DECL|FSL_ENET_DRIVER_VERSION|macro|FSL_ENET_DRIVER_VERSION
 DECL|_FSL_ENET_H_|macro|_FSL_ENET_H_
 DECL|_enet_buffer_config|struct|typedef struct _enet_buffer_config
@@ -66,8 +69,10 @@ DECL|_enet_config|struct|typedef struct _enet_config
 DECL|_enet_data_error_stats|struct|typedef struct _enet_data_error_stats
 DECL|_enet_event|enum|typedef enum _enet_event
 DECL|_enet_handle|struct|struct _enet_handle
+DECL|_enet_intcoalesce_config|struct|typedef struct _enet_intcoalesce_config
 DECL|_enet_interrupt_enable|enum|typedef enum _enet_interrupt_enable
 DECL|_enet_mii_duplex|enum|typedef enum _enet_mii_duplex
+DECL|_enet_mii_extend_opcode|enum|typedef enum _enet_mii_extend_opcode {
 DECL|_enet_mii_mode|enum|typedef enum _enet_mii_mode
 DECL|_enet_mii_read|enum|typedef enum _enet_mii_read
 DECL|_enet_mii_speed|enum|typedef enum _enet_mii_speed
@@ -104,8 +109,10 @@ DECL|enet_config_t|typedef|} enet_config_t;
 DECL|enet_data_error_stats_t|typedef|} enet_data_error_stats_t;
 DECL|enet_event_t|typedef|} enet_event_t;
 DECL|enet_handle_t|typedef|typedef struct _enet_handle enet_handle_t;
+DECL|enet_intcoalesce_config_t|typedef|} enet_intcoalesce_config_t;
 DECL|enet_interrupt_enable_t|typedef|} enet_interrupt_enable_t;
 DECL|enet_mii_duplex_t|typedef|} enet_mii_duplex_t;
+DECL|enet_mii_extend_opcode|typedef|} enet_mii_extend_opcode;
 DECL|enet_mii_mode_t|typedef|} enet_mii_mode_t;
 DECL|enet_mii_read_t|typedef|} enet_mii_read_t;
 DECL|enet_mii_speed_t|typedef|} enet_mii_speed_t;
@@ -124,6 +131,7 @@ DECL|enet_tx_accelerator_t|typedef|} enet_tx_accelerator_t;
 DECL|enet_tx_bd_struct_t|typedef|} enet_tx_bd_struct_t;
 DECL|front|member|uint32_t front; /*!< The first index of the ring. */
 DECL|headerLength|member|uint8_t headerLength; /*!< Header length. */
+DECL|intCoalesceCfg|member|enet_intcoalesce_config_t *intCoalesceCfg; /* If the interrupt coalsecence is not required in the ring n(0,1,2), please set
 DECL|interrupt|member|uint32_t interrupt; /*!< Mac interrupt source. A logical OR of "enet_interrupt_enable_t". */
 DECL|kENET_BabrInterrupt|enumerator|kENET_BabrInterrupt = ENET_EIR_BABR_MASK, /*!< Babbling receive error interrupt source */
 DECL|kENET_BabtInterrupt|enumerator|kENET_BabtInterrupt = ENET_EIR_BABT_MASK, /*!< Babbling transmit error interrupt source */
@@ -141,14 +149,17 @@ DECL|kENET_EBusERInterrupt|enumerator|kENET_EBusERInterrupt = ENET_EIR_EBERR_MAS
 DECL|kENET_ErrEvent|enumerator|kENET_ErrEvent, /*!< Error event: BABR/BABT/EBERR/LC/RL/UN/PLR . */
 DECL|kENET_GraceStopInterrupt|enumerator|kENET_GraceStopInterrupt = ENET_EIR_GRA_MASK, /*!< Graceful stop complete interrupt source */
 DECL|kENET_LateCollisionInterrupt|enumerator|kENET_LateCollisionInterrupt = ENET_EIR_LC_MASK, /*!< Late collision interrupt source */
+DECL|kENET_MiiAddrWrite_C45|enumerator|kENET_MiiAddrWrite_C45 = 0U, /*!< Address Write operation. */
 DECL|kENET_MiiFullDuplex|enumerator|kENET_MiiFullDuplex /*!< Full duplex mode. */
 DECL|kENET_MiiHalfDuplex|enumerator|kENET_MiiHalfDuplex = 0U, /*!< Half duplex mode. */
 DECL|kENET_MiiInterrupt|enumerator|kENET_MiiInterrupt = ENET_EIR_MII_MASK, /*!< MII interrupt source */
 DECL|kENET_MiiMode|enumerator|kENET_MiiMode = 0U, /*!< MII mode for data interface. */
+DECL|kENET_MiiReadFrame_C45|enumerator|kENET_MiiReadFrame_C45 = 3U /*!< Read frame operation for a valid MII management frame. */
 DECL|kENET_MiiReadNoCompliant|enumerator|kENET_MiiReadNoCompliant = 3U /*!< Read frame operation, but not MII-compliant. */
 DECL|kENET_MiiReadValidFrame|enumerator|kENET_MiiReadValidFrame = 2U, /*!< Read frame operation for a valid MII management frame. */
 DECL|kENET_MiiSpeed100M|enumerator|kENET_MiiSpeed100M /*!< Speed 100 Mbps. */
 DECL|kENET_MiiSpeed10M|enumerator|kENET_MiiSpeed10M = 0U, /*!< Speed 10 Mbps. */
+DECL|kENET_MiiWriteFrame_C45|enumerator|kENET_MiiWriteFrame_C45 = 1U, /*!< Write frame operation for a valid MII management frame. */
 DECL|kENET_MiiWriteNoCompliant|enumerator|kENET_MiiWriteNoCompliant = 0U, /*!< Write frame operation, but not MII-compliant. */
 DECL|kENET_MiiWriteValidFrame|enumerator|kENET_MiiWriteValidFrame /*!< Write frame operation for a valid MII management frame. */
 DECL|kENET_PayloadRxInterrupt|enumerator|kENET_PayloadRxInterrupt = ENET_EIR_PLR_MASK, /*!< Payload Receive interrupt source */
@@ -179,7 +190,7 @@ DECL|kENET_RxAccelMacCheckEnabled|enumerator|kENET_RxAccelMacCheckEnabled = ENET
 DECL|kENET_RxAccelPadRemoveEnabled|enumerator|kENET_RxAccelPadRemoveEnabled = ENET_RACC_PADREM_MASK, /*!< Padding removal for short IP frames. */
 DECL|kENET_RxAccelProtoCheckEnabled|enumerator|kENET_RxAccelProtoCheckEnabled = ENET_RACC_PRODIS_MASK, /*!< Discard with wrong protocol checksum. */
 DECL|kENET_RxAccelisShift16Enabled|enumerator|kENET_RxAccelisShift16Enabled = ENET_RACC_SHIFT16_MASK /*!< Receive FIFO shift-16. */
-DECL|kENET_RxByteInterrupt|enumerator|kENET_RxByteInterrupt = ENET_EIR_RXB_MASK, /*!< RX BYTE interrupt source */
+DECL|kENET_RxBufferInterrupt|enumerator|kENET_RxBufferInterrupt = ENET_EIR_RXB_MASK, /*!< RX BUFFER interrupt source */
 DECL|kENET_RxEvent|enumerator|kENET_RxEvent, /*!< Receive event. */
 DECL|kENET_RxFrameInterrupt|enumerator|kENET_RxFrameInterrupt = ENET_EIR_RXF_MASK, /*!< RX FRAME interrupt source */
 DECL|kENET_TimeStampAvailEvent|enumerator|kENET_TimeStampAvailEvent /*!< Time stamp available event.*/
@@ -189,12 +200,12 @@ DECL|kENET_TsTimerInterrupt|enumerator|kENET_TsTimerInterrupt = ENET_EIR_TS_TIME
 DECL|kENET_TxAccelIpCheckEnabled|enumerator|kENET_TxAccelIpCheckEnabled = ENET_TACC_IPCHK_MASK, /*!< Insert IP header checksum. */
 DECL|kENET_TxAccelIsShift16Enabled|enumerator|kENET_TxAccelIsShift16Enabled = ENET_TACC_SHIFT16_MASK, /*!< Transmit FIFO shift-16. */
 DECL|kENET_TxAccelProtoCheckEnabled|enumerator|kENET_TxAccelProtoCheckEnabled = ENET_TACC_PROCHK_MASK /*!< Insert protocol checksum. */
-DECL|kENET_TxByteInterrupt|enumerator|kENET_TxByteInterrupt = ENET_EIR_TXB_MASK, /*!< TX BYTE interrupt source */
+DECL|kENET_TxBufferInterrupt|enumerator|kENET_TxBufferInterrupt = ENET_EIR_TXB_MASK, /*!< TX BUFFER interrupt source */
 DECL|kENET_TxEvent|enumerator|kENET_TxEvent, /*!< Transmit event. */
 DECL|kENET_TxFrameInterrupt|enumerator|kENET_TxFrameInterrupt = ENET_EIR_TXF_MASK, /*!< TX FRAME interrupt source */
 DECL|kENET_UnderrunInterrupt|enumerator|kENET_UnderrunInterrupt = ENET_EIR_UN_MASK, /*!< Transmit FIFO underrun interrupt source */
 DECL|kENET_WakeUpEvent|enumerator|kENET_WakeUpEvent, /*!< Wake up from sleep mode event. */
-DECL|kENET_WakeupInterrupt|enumerator|kENET_WakeupInterrupt = ENET_EIR_WAKEUP_MASK /*!< WAKEUP interrupt source */
+DECL|kENET_WakeupInterrupt|enumerator|kENET_WakeupInterrupt = ENET_EIR_WAKEUP_MASK, /*!< WAKEUP interrupt source */
 DECL|kStatus_ENET_PtpTsRingEmpty|enumerator|kStatus_ENET_PtpTsRingEmpty = MAKE_STATUS(kStatusGroup_ENET, 6U) /*!< Timestamp ring empty. */
 DECL|kStatus_ENET_PtpTsRingFull|enumerator|kStatus_ENET_PtpTsRingFull = MAKE_STATUS(kStatusGroup_ENET, 5U), /*!< Timestamp ring full. */
 DECL|kStatus_ENET_RxFrameEmpty|enumerator|kStatus_ENET_RxFrameEmpty = MAKE_STATUS(kStatusGroup_ENET, 2U), /*!< No frame arrive. */
@@ -233,12 +244,13 @@ DECL|reserved6|member|uint16_t reserved6;
 DECL|rxAccelerConfig|member|uint8_t rxAccelerConfig; /*!< Receive accelerator, A logical OR of "enet_rx_accelerator_t". */
 DECL|rxBdBase|member|volatile enet_rx_bd_struct_t *rxBdBase; /*!< Receive buffer descriptor base address pointer. */
 DECL|rxBdCurrent|member|volatile enet_rx_bd_struct_t *rxBdCurrent; /*!< The current available receive buffer descriptor pointer. */
-DECL|rxBdDirty|member|volatile enet_rx_bd_struct_t *rxBdDirty; /*!< The dirty receive buffer descriptor needed to be updated from. */
 DECL|rxBdNumber|member|uint16_t rxBdNumber; /*!< Receive buffer descriptor number. */
 DECL|rxBdStartAddrAlign|member|volatile enet_rx_bd_struct_t *rxBdStartAddrAlign; /*!< Aligned receive buffer descriptor start address. */
 DECL|rxBuffSizeAlign|member|uint32_t rxBuffSizeAlign; /*!< Aligned receive data buffer size. */
 DECL|rxBuffSizeAlign|member|uint32_t rxBuffSizeAlign; /*!< Receive buffer size alignment. */
 DECL|rxBufferAlign|member|uint8_t *rxBufferAlign; /*!< Receive data buffer start address. */
+DECL|rxCoalesceFrameCount|member|uint8_t rxCoalesceFrameCount[FSL_FEATURE_ENET_QUEUE]; /*!< Receive interrupt coalescing frame count threshold. */
+DECL|rxCoalesceTimeCount|member|uint16_t rxCoalesceTimeCount[FSL_FEATURE_ENET_QUEUE]; /*!< Receive interrupt coalescing timer count threshold. */
 DECL|rxFifoEmptyThreshold|member|uint8_t rxFifoEmptyThreshold; /*!< For flow control enabled case: when RX FIFO level reaches this value,
 DECL|rxFifoFullThreshold|member|uint8_t rxFifoFullThreshold; /*!< For store and forward disable case, the data required in RX FIFO to notify
 DECL|rxFifoStatEmptyThreshold|member|uint8_t rxFifoStatEmptyThreshold; /*!< For flow control enabled case: number of frames in the receive FIFO,
@@ -279,6 +291,8 @@ DECL|txBdStartAddrAlign|member|volatile enet_tx_bd_struct_t *txBdStartAddrAlign;
 DECL|txBuffSizeAlign|member|uint32_t txBuffSizeAlign; /*!< Aligned transmit data buffer size. */
 DECL|txBuffSizeAlign|member|uint32_t txBuffSizeAlign; /*!< Transmit buffer size alignment. */
 DECL|txBufferAlign|member|uint8_t *txBufferAlign; /*!< Transmit data buffer start address. */
+DECL|txCoalesceFrameCount|member|uint8_t txCoalesceFrameCount[FSL_FEATURE_ENET_QUEUE]; /*!< Transmit interrupt coalescing frame count threshold. */
+DECL|txCoalesceTimeCount|member|uint16_t txCoalesceTimeCount[FSL_FEATURE_ENET_QUEUE]; /*!< Transmit interrupt coalescing timer count threshold. */
 DECL|txFifoWatermark|member|uint8_t txFifoWatermark; /*!< For store and forward disable case, the data required in TX FIFO
 DECL|txPtpTsDataRing|member|enet_ptp_time_data_ring_t txPtpTsDataRing; /*!< Transmit PTP 1588 time stamp data ring buffer. */
 DECL|txPtpTsData|member|enet_ptp_time_data_t *txPtpTsData; /*!< The start address of 1588 transmit timestamp buffers */

@@ -9,7 +9,6 @@ DECL|CMT_GetInstance|function|static uint32_t CMT_GetInstance(CMT_Type *base)
 DECL|CMT_GetMode|function|cmt_mode_t CMT_GetMode(CMT_Type *base)
 DECL|CMT_INTERMEDIATEFREQUENCY_8MHZ|macro|CMT_INTERMEDIATEFREQUENCY_8MHZ
 DECL|CMT_Init|function|void CMT_Init(CMT_Type *base, const cmt_config_t *config, uint32_t busClock_Hz)
-DECL|CMT_MODE_BIT_MASK|macro|CMT_MODE_BIT_MASK
 DECL|CMT_MODULATE_COUNT_WIDTH|macro|CMT_MODULATE_COUNT_WIDTH
 DECL|CMT_SetIroState|function|void CMT_SetIroState(CMT_Type *base, cmt_infrared_output_state_t state)
 DECL|CMT_SetMode|function|void CMT_SetMode(CMT_Type *base, cmt_mode_t mode, cmt_modulate_config_t *modulateConfig)

@@ -29,28 +29,28 @@ DECL|_pdb_prescaler_divider|enum|typedef enum _pdb_prescaler_divider
 DECL|_pdb_status_flags|enum|enum _pdb_status_flags
 DECL|_pdb_trigger_input_source|enum|typedef enum _pdb_trigger_input_source
 DECL|dividerMultiplicationFactor|member|pdb_divider_multiplication_factor_t dividerMultiplicationFactor; /*!< Multiplication factor select for prescaler. */
-DECL|enableBackToBackOperationMask|member|uint32_t enableBackToBackOperationMask; /*!< PDB Channel Pre-Trigger Back-to-Back Operation Enable.
+DECL|enableBackToBackOperationMask|member|uint32_t enableBackToBackOperationMask; /*!< PDB Channel pre-trigger Back-to-Back Operation Enable.
 DECL|enableContinuousMode|member|bool enableContinuousMode; /*!< Enable the PDB operation in Continuous mode.*/
 DECL|enableExternalTriggerInput|member|bool enableExternalTriggerInput; /*!< Enables the external trigger for DAC interval counter. */
 DECL|enableIntervalTrigger|member|bool enableIntervalTrigger; /*!< Enables the DAC interval trigger. */
-DECL|enableOutputMask|member|uint32_t enableOutputMask; /*!< PDB Channel Pre-Trigger Output Select.
-DECL|enablePreTriggerMask|member|uint32_t enablePreTriggerMask; /*!< PDB Channel Pre-Trigger Enable. */
-DECL|kPDB_ADCPreTriggerChannel0ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel0ErrorFlag = PDB_S_ERR(1U << 0), /*!< Pre-Trigger 0 Error. */
-DECL|kPDB_ADCPreTriggerChannel0Flag|enumerator|kPDB_ADCPreTriggerChannel0Flag = PDB_S_CF(1U << 0), /*!< Pre-Trigger 0 flag. */
-DECL|kPDB_ADCPreTriggerChannel1ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel1ErrorFlag = PDB_S_ERR(1U << 1), /*!< Pre-Trigger 1 Error. */
-DECL|kPDB_ADCPreTriggerChannel1Flag|enumerator|kPDB_ADCPreTriggerChannel1Flag = PDB_S_CF(1U << 1), /*!< Pre-Trigger 1 flag. */
-DECL|kPDB_ADCPreTriggerChannel2ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel2ErrorFlag = PDB_S_ERR(1U << 2), /*!< Pre-Trigger 2 Error. */
-DECL|kPDB_ADCPreTriggerChannel2Flag|enumerator|kPDB_ADCPreTriggerChannel2Flag = PDB_S_CF(1U << 2), /*!< Pre-Trigger 2 flag. */
-DECL|kPDB_ADCPreTriggerChannel3ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel3ErrorFlag = PDB_S_ERR(1U << 3), /*!< Pre-Trigger 3 Error. */
-DECL|kPDB_ADCPreTriggerChannel3Flag|enumerator|kPDB_ADCPreTriggerChannel3Flag = PDB_S_CF(1U << 3), /*!< Pre-Trigger 3 flag. */
-DECL|kPDB_ADCPreTriggerChannel4ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel4ErrorFlag = PDB_S_ERR(1U << 4), /*!< Pre-Trigger 4 Error. */
-DECL|kPDB_ADCPreTriggerChannel4Flag|enumerator|kPDB_ADCPreTriggerChannel4Flag = PDB_S_CF(1U << 4), /*!< Pre-Trigger 4 flag. */
-DECL|kPDB_ADCPreTriggerChannel5ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel5ErrorFlag = PDB_S_ERR(1U << 5), /*!< Pre-Trigger 5 Error. */
-DECL|kPDB_ADCPreTriggerChannel5Flag|enumerator|kPDB_ADCPreTriggerChannel5Flag = PDB_S_CF(1U << 5), /*!< Pre-Trigger 5 flag. */
-DECL|kPDB_ADCPreTriggerChannel6ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel6ErrorFlag = PDB_S_ERR(1U << 6), /*!< Pre-Trigger 6 Error. */
-DECL|kPDB_ADCPreTriggerChannel6Flag|enumerator|kPDB_ADCPreTriggerChannel6Flag = PDB_S_CF(1U << 6), /*!< Pre-Trigger 6 flag. */
-DECL|kPDB_ADCPreTriggerChannel7ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel7ErrorFlag = PDB_S_ERR(1U << 7), /*!< Pre-Trigger 7 Error. */
-DECL|kPDB_ADCPreTriggerChannel7Flag|enumerator|kPDB_ADCPreTriggerChannel7Flag = PDB_S_CF(1U << 7), /*!< Pre-Trigger 7 flag. */
+DECL|enableOutputMask|member|uint32_t enableOutputMask; /*!< PDB Channel Pre-trigger Output Select.
+DECL|enablePreTriggerMask|member|uint32_t enablePreTriggerMask; /*!< PDB Channel Pre-trigger Enable. */
+DECL|kPDB_ADCPreTriggerChannel0ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel0ErrorFlag = PDB_S_ERR(1U << 0), /*!< Pre-trigger 0 Error. */
+DECL|kPDB_ADCPreTriggerChannel0Flag|enumerator|kPDB_ADCPreTriggerChannel0Flag = PDB_S_CF(1U << 0), /*!< Pre-trigger 0 flag. */
+DECL|kPDB_ADCPreTriggerChannel1ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel1ErrorFlag = PDB_S_ERR(1U << 1), /*!< Pre-trigger 1 Error. */
+DECL|kPDB_ADCPreTriggerChannel1Flag|enumerator|kPDB_ADCPreTriggerChannel1Flag = PDB_S_CF(1U << 1), /*!< Pre-trigger 1 flag. */
+DECL|kPDB_ADCPreTriggerChannel2ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel2ErrorFlag = PDB_S_ERR(1U << 2), /*!< Pre-trigger 2 Error. */
+DECL|kPDB_ADCPreTriggerChannel2Flag|enumerator|kPDB_ADCPreTriggerChannel2Flag = PDB_S_CF(1U << 2), /*!< Pre-trigger 2 flag. */
+DECL|kPDB_ADCPreTriggerChannel3ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel3ErrorFlag = PDB_S_ERR(1U << 3), /*!< Pre-trigger 3 Error. */
+DECL|kPDB_ADCPreTriggerChannel3Flag|enumerator|kPDB_ADCPreTriggerChannel3Flag = PDB_S_CF(1U << 3), /*!< Pre-trigger 3 flag. */
+DECL|kPDB_ADCPreTriggerChannel4ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel4ErrorFlag = PDB_S_ERR(1U << 4), /*!< Pre-trigger 4 Error. */
+DECL|kPDB_ADCPreTriggerChannel4Flag|enumerator|kPDB_ADCPreTriggerChannel4Flag = PDB_S_CF(1U << 4), /*!< Pre-trigger 4 flag. */
+DECL|kPDB_ADCPreTriggerChannel5ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel5ErrorFlag = PDB_S_ERR(1U << 5), /*!< Pre-trigger 5 Error. */
+DECL|kPDB_ADCPreTriggerChannel5Flag|enumerator|kPDB_ADCPreTriggerChannel5Flag = PDB_S_CF(1U << 5), /*!< Pre-trigger 5 flag. */
+DECL|kPDB_ADCPreTriggerChannel6ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel6ErrorFlag = PDB_S_ERR(1U << 6), /*!< Pre-trigger 6 Error. */
+DECL|kPDB_ADCPreTriggerChannel6Flag|enumerator|kPDB_ADCPreTriggerChannel6Flag = PDB_S_CF(1U << 6), /*!< Pre-trigger 6 flag. */
+DECL|kPDB_ADCPreTriggerChannel7ErrorFlag|enumerator|kPDB_ADCPreTriggerChannel7ErrorFlag = PDB_S_ERR(1U << 7), /*!< Pre-trigger 7 Error. */
+DECL|kPDB_ADCPreTriggerChannel7Flag|enumerator|kPDB_ADCPreTriggerChannel7Flag = PDB_S_CF(1U << 7), /*!< Pre-trigger 7 flag. */
 DECL|kPDB_DelayEventFlag|enumerator|kPDB_DelayEventFlag = PDB_SC_PDBIF_MASK, /*!< PDB timer delay event flag. */
 DECL|kPDB_DelayInterruptEnable|enumerator|kPDB_DelayInterruptEnable = PDB_SC_PDBIE_MASK, /*!< PDB delay interrupt enable. */
 DECL|kPDB_DividerMultiplicationFactor10|enumerator|kPDB_DividerMultiplicationFactor10 = 1U, /*!< Multiplication factor is 10. */
@@ -86,7 +86,7 @@ DECL|kPDB_TriggerInput6|enumerator|kPDB_TriggerInput6 = 6U, /*!< Trigger-In 6. *
 DECL|kPDB_TriggerInput7|enumerator|kPDB_TriggerInput7 = 7U, /*!< Trigger-In 7. */
 DECL|kPDB_TriggerInput8|enumerator|kPDB_TriggerInput8 = 8U, /*!< Trigger-In 8. */
 DECL|kPDB_TriggerInput9|enumerator|kPDB_TriggerInput9 = 9U, /*!< Trigger-In 9. */
-DECL|kPDB_TriggerSoftware|enumerator|kPDB_TriggerSoftware = 15U, /*!< Trigger-In 15. */
+DECL|kPDB_TriggerSoftware|enumerator|kPDB_TriggerSoftware = 15U, /*!< Trigger-In 15, software trigger. */
 DECL|loadValueMode|member|pdb_load_value_mode_t loadValueMode; /*!< Select the load value mode. */
 DECL|pdb_adc_pretrigger_config_t|typedef|} pdb_adc_pretrigger_config_t;
 DECL|pdb_config_t|typedef|} pdb_config_t;

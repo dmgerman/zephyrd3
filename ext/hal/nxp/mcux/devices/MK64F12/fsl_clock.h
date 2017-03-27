@@ -14,6 +14,7 @@ DECL|CLOCK_EnableClock|function|static inline void CLOCK_EnableClock(clock_ip_na
 DECL|CLOCK_SetClkOutClock|function|static inline void CLOCK_SetClkOutClock(uint32_t src)
 DECL|CLOCK_SetEnetTime0Clock|function|static inline void CLOCK_SetEnetTime0Clock(uint32_t src)
 DECL|CLOCK_SetEr32kClock|function|static inline void CLOCK_SetEr32kClock(uint32_t src)
+DECL|CLOCK_SetFllExtRefDiv|function|static inline void CLOCK_SetFllExtRefDiv(uint8_t frdiv)
 DECL|CLOCK_SetLowPowerEnable|function|static inline void CLOCK_SetLowPowerEnable(bool enable)
 DECL|CLOCK_SetOutDiv|function|static inline void CLOCK_SetOutDiv(uint32_t outdiv1, uint32_t outdiv2, uint32_t outdiv3, uint32_t outdiv4)
 DECL|CLOCK_SetPllFllSelClock|function|static inline void CLOCK_SetPllFllSelClock(uint32_t src)
@@ -39,6 +40,7 @@ DECL|EWM_CLOCKS|macro|EWM_CLOCKS
 DECL|FLEXBUS_CLOCKS|macro|FLEXBUS_CLOCKS
 DECL|FLEXCAN_CLOCKS|macro|FLEXCAN_CLOCKS
 DECL|FSL_CLOCK_DRIVER_VERSION|macro|FSL_CLOCK_DRIVER_VERSION
+DECL|FSL_SDK_DISABLE_DRIVER_CLOCK_CONTROL|macro|FSL_SDK_DISABLE_DRIVER_CLOCK_CONTROL
 DECL|FTF_CLOCKS|macro|FTF_CLOCKS
 DECL|FTM_CLOCKS|macro|FTM_CLOCKS
 DECL|I2C0_CLK_SRC|macro|I2C0_CLK_SRC
@@ -47,9 +49,8 @@ DECL|I2C2_CLK_SRC|macro|I2C2_CLK_SRC
 DECL|I2C_CLOCKS|macro|I2C_CLOCKS
 DECL|LPO_CLK_FREQ|macro|LPO_CLK_FREQ
 DECL|LPTMR_CLOCKS|macro|LPTMR_CLOCKS
+DECL|MCG_CONFIG_CHECK_PARAM|macro|MCG_CONFIG_CHECK_PARAM
 DECL|MCG_INTERNAL_IRC_48M|macro|MCG_INTERNAL_IRC_48M
-DECL|MMCAU_CLOCKS|macro|MMCAU_CLOCKS
-DECL|MPU_CLOCKS|macro|MPU_CLOCKS
 DECL|OSC0|macro|OSC0
 DECL|OSC_SetCapLoad|function|static inline void OSC_SetCapLoad(OSC_Type *base, uint8_t capLoad)
 DECL|OSC_SetExtRefClkConfig|function|static inline void OSC_SetExtRefClkConfig(OSC_Type *base, oscer_config_t const *config)
@@ -60,6 +61,7 @@ DECL|RNGA_CLOCKS|macro|RNGA_CLOCKS
 DECL|RTC_CLOCKS|macro|RTC_CLOCKS
 DECL|SAI_CLOCKS|macro|SAI_CLOCKS
 DECL|SDHC_CLOCKS|macro|SDHC_CLOCKS
+DECL|SYSMPU_CLOCKS|macro|SYSMPU_CLOCKS
 DECL|SYS_CLK|macro|SYS_CLK
 DECL|UART0_CLK_SRC|macro|UART0_CLK_SRC
 DECL|UART1_CLK_SRC|macro|UART1_CLK_SRC
@@ -151,7 +153,6 @@ DECL|kCLOCK_McgIrc48MClk|enumerator|kCLOCK_McgIrc48MClk, /*!< MCG IRC48M clock *
 DECL|kCLOCK_McgPeriphClk|enumerator|kCLOCK_McgPeriphClk, /*!< MCG peripheral clock (MCGPCLK) */
 DECL|kCLOCK_McgPll0Clk|enumerator|kCLOCK_McgPll0Clk, /*!< MCGPLL0CLK */
 DECL|kCLOCK_McgPll1Clk|enumerator|kCLOCK_McgPll1Clk, /*!< MCGPLL1CLK */
-DECL|kCLOCK_Mpu0|enumerator|kCLOCK_Mpu0 = CLK_GATE_DEFINE(0x1040U, 2U),
 DECL|kCLOCK_Osc0ErClkUndiv|enumerator|kCLOCK_Osc0ErClkUndiv, /*!< OSC0 external reference undivided clock(OSC0ERCLK_UNDIV). */
 DECL|kCLOCK_Osc0ErClk|enumerator|kCLOCK_Osc0ErClk, /*!< OSC0 external reference clock (OSC0ERCLK) */
 DECL|kCLOCK_Osc1ErClk|enumerator|kCLOCK_Osc1ErClk, /*!< OSC1 external reference clock (OSC1ERCLK) */
@@ -171,6 +172,7 @@ DECL|kCLOCK_Sdhc0|enumerator|kCLOCK_Sdhc0 = CLK_GATE_DEFINE(0x1030U, 17U),
 DECL|kCLOCK_Spi0|enumerator|kCLOCK_Spi0 = CLK_GATE_DEFINE(0x103CU, 12U),
 DECL|kCLOCK_Spi1|enumerator|kCLOCK_Spi1 = CLK_GATE_DEFINE(0x103CU, 13U),
 DECL|kCLOCK_Spi2|enumerator|kCLOCK_Spi2 = CLK_GATE_DEFINE(0x1030U, 12U),
+DECL|kCLOCK_Sysmpu0|enumerator|kCLOCK_Sysmpu0 = CLK_GATE_DEFINE(0x1040U, 2U),
 DECL|kCLOCK_Uart0|enumerator|kCLOCK_Uart0 = CLK_GATE_DEFINE(0x1034U, 10U),
 DECL|kCLOCK_Uart1|enumerator|kCLOCK_Uart1 = CLK_GATE_DEFINE(0x1034U, 11U),
 DECL|kCLOCK_Uart2|enumerator|kCLOCK_Uart2 = CLK_GATE_DEFINE(0x1034U, 12U),
@@ -222,7 +224,7 @@ DECL|kMCG_Pll0LostFlag|enumerator|kMCG_Pll0LostFlag = (1U << 5U), /*!< PLL0 lost
 DECL|kMCG_PllClkSelPll0|enumerator|kMCG_PllClkSelPll0, /*!< PLL0 output clock is selected */
 DECL|kMCG_PllClkSelPll1|enumerator|kMCG_PllClkSelPll1 /* PLL1 output clock is selected */
 DECL|kMCG_PllEnableInStop|enumerator|kMCG_PllEnableInStop = MCG_C5_PLLSTEN0_MASK /*!< MCGPLLCLK enable in STOP mode. */
-DECL|kMCG_PllEnableIndependent|enumerator|kMCG_PllEnableIndependent = MCG_C5_PLLCLKEN0_MASK, /*!< MCGPLLCLK enable indepencent of
+DECL|kMCG_PllEnableIndependent|enumerator|kMCG_PllEnableIndependent = MCG_C5_PLLCLKEN0_MASK, /*!< MCGPLLCLK enable independent of the
 DECL|kMCG_PllRefOsc0|enumerator|kMCG_PllRefOsc0, /*!< Selects OSC0 as PLL reference clock */
 DECL|kMCG_PllRefOsc1|enumerator|kMCG_PllRefOsc1 /*!< Selects OSC1 as PLL reference clock */
 DECL|kMCG_RtcOscLostFlag|enumerator|kMCG_RtcOscLostFlag = (1U << 4U), /*!< RTC OSC lost. */
@@ -232,7 +234,7 @@ DECL|kOSC_Cap4P|enumerator|kOSC_Cap4P = OSC_CR_SC4P_MASK, /*!< 4 pF capacitor lo
 DECL|kOSC_Cap8P|enumerator|kOSC_Cap8P = OSC_CR_SC8P_MASK, /*!< 8 pF capacitor load */
 DECL|kOSC_ErClkEnableInStop|enumerator|kOSC_ErClkEnableInStop = OSC_CR_EREFSTEN_MASK /*!< Enable in stop mode. */
 DECL|kOSC_ErClkEnable|enumerator|kOSC_ErClkEnable = OSC_CR_ERCLKEN_MASK, /*!< Enable. */
-DECL|kOSC_ModeExt|enumerator|kOSC_ModeExt = 0U, /*!< Use external clock. */
+DECL|kOSC_ModeExt|enumerator|kOSC_ModeExt = 0U, /*!< Use an external clock. */
 DECL|kOSC_ModeOscHighGain|enumerator|kOSC_ModeOscHighGain = 0U
 DECL|kOSC_ModeOscLowPower|enumerator|kOSC_ModeOscLowPower = MCG_C2_EREFS_MASK, /*!< Oscillator low power. */
 DECL|kStatus_MCG_AtmBusClockInvalid|enumerator|kStatus_MCG_AtmBusClockInvalid = MAKE_STATUS(kStatusGroup_MCG, 2), /*!< Invalid bus clock for ATM. */
@@ -241,7 +243,7 @@ DECL|kStatus_MCG_AtmHardwareFail|enumerator|kStatus_MCG_AtmHardwareFail = MAKE_S
 DECL|kStatus_MCG_AtmIrcUsed|enumerator|kStatus_MCG_AtmIrcUsed = MAKE_STATUS(kStatusGroup_MCG, 4), /*!< IRC is used when using ATM. */
 DECL|kStatus_MCG_ModeInvalid|enumerator|kStatus_MCG_ModeInvalid = MAKE_STATUS(kStatusGroup_MCG, 1), /*!< Current mode invalid for the specific
 DECL|kStatus_MCG_ModeUnreachable|enumerator|kStatus_MCG_ModeUnreachable = MAKE_STATUS(kStatusGroup_MCG, 0), /*!< Can't switch to target mode. */
-DECL|kStatus_MCG_SourceUsed|enumerator|kStatus_MCG_SourceUsed = MAKE_STATUS(kStatusGroup_MCG, 6) /*!< Could not change clock source because
+DECL|kStatus_MCG_SourceUsed|enumerator|kStatus_MCG_SourceUsed = MAKE_STATUS(kStatusGroup_MCG, 6) /*!< Can't change the clock source because
 DECL|mcgMode|member|mcg_mode_t mcgMode; /*!< MCG mode. */
 DECL|mcg_atm_select_t|typedef|} mcg_atm_select_t;
 DECL|mcg_clkout_src_t|typedef|} mcg_clkout_src_t;

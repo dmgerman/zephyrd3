@@ -1,8 +1,15 @@
 DECL|I2S0_DriverIRQHandler|function|void I2S0_DriverIRQHandler(void)
 DECL|I2S0_Rx_DriverIRQHandler|function|void I2S0_Rx_DriverIRQHandler(void)
 DECL|I2S0_Tx_DriverIRQHandler|function|void I2S0_Tx_DriverIRQHandler(void)
+DECL|I2S1_DriverIRQHandler|function|void I2S1_DriverIRQHandler(void)
 DECL|I2S1_Rx_DriverIRQHandler|function|void I2S1_Rx_DriverIRQHandler(void)
 DECL|I2S1_Tx_DriverIRQHandler|function|void I2S1_Tx_DriverIRQHandler(void)
+DECL|I2S2_DriverIRQHandler|function|void I2S2_DriverIRQHandler(void)
+DECL|I2S2_Rx_DriverIRQHandler|function|void I2S2_Rx_DriverIRQHandler(void)
+DECL|I2S2_Tx_DriverIRQHandler|function|void I2S2_Tx_DriverIRQHandler(void)
+DECL|I2S3_DriverIRQHandler|function|void I2S3_DriverIRQHandler(void)
+DECL|I2S3_Rx_DriverIRQHandler|function|void I2S3_Rx_DriverIRQHandler(void)
+DECL|I2S3_Tx_DriverIRQHandler|function|void I2S3_Tx_DriverIRQHandler(void)
 DECL|SAI_Deinit|function|void SAI_Deinit(I2S_Type *base)
 DECL|SAI_GetInstance|function|uint32_t SAI_GetInstance(I2S_Type *base)
 DECL|SAI_ReadBlocking|function|void SAI_ReadBlocking(I2S_Type *base, uint32_t channel, uint32_t bitWidth, uint8_t *buffer, uint32_t size)
@@ -40,4 +47,8 @@ DECL|s_saiBases|variable|s_saiBases
 DECL|s_saiClock|variable|s_saiClock
 DECL|s_saiHandle|variable|s_saiHandle
 DECL|s_saiRxIRQ|variable|s_saiRxIRQ
+DECL|s_saiRxIsr|variable|s_saiRxIsr
 DECL|s_saiTxIRQ|variable|s_saiTxIRQ
+DECL|s_saiTxIsr|variable|s_saiTxIsr
+DECL|sai_rx_isr_t|typedef|typedef void (*sai_rx_isr_t)(I2S_Type *base, sai_handle_t *saiHandle);
+DECL|sai_tx_isr_t|typedef|typedef void (*sai_tx_isr_t)(I2S_Type *base, sai_handle_t *saiHandle);

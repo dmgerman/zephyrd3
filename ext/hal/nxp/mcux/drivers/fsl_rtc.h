@@ -20,10 +20,10 @@ DECL|day|member|uint8_t day; /*!< Range from 1 to 31 (depending on month).*/
 DECL|hour|member|uint8_t hour; /*!< Range from 0 to 23.*/
 DECL|kRTC_AlarmFlag|enumerator|kRTC_AlarmFlag = RTC_SR_TAF_MASK /*!< Alarm flag*/
 DECL|kRTC_AlarmInterruptEnable|enumerator|kRTC_AlarmInterruptEnable = RTC_IER_TAIE_MASK, /*!< Alarm interrupt.*/
-DECL|kRTC_Capacitor_16p|enumerator|kRTC_Capacitor_16p = RTC_CR_SC16P_MASK /*!< 16pF capacitor load */
-DECL|kRTC_Capacitor_2p|enumerator|kRTC_Capacitor_2p = RTC_CR_SC2P_MASK, /*!< 2pF capacitor load */
-DECL|kRTC_Capacitor_4p|enumerator|kRTC_Capacitor_4p = RTC_CR_SC4P_MASK, /*!< 4pF capacitor load */
-DECL|kRTC_Capacitor_8p|enumerator|kRTC_Capacitor_8p = RTC_CR_SC8P_MASK, /*!< 8pF capacitor load */
+DECL|kRTC_Capacitor_16p|enumerator|kRTC_Capacitor_16p = RTC_CR_SC16P_MASK /*!< 16 pF capacitor load */
+DECL|kRTC_Capacitor_2p|enumerator|kRTC_Capacitor_2p = RTC_CR_SC2P_MASK, /*!< 2 pF capacitor load */
+DECL|kRTC_Capacitor_4p|enumerator|kRTC_Capacitor_4p = RTC_CR_SC4P_MASK, /*!< 4 pF capacitor load */
+DECL|kRTC_Capacitor_8p|enumerator|kRTC_Capacitor_8p = RTC_CR_SC8P_MASK, /*!< 8 pF capacitor load */
 DECL|kRTC_SecondsInterruptEnable|enumerator|kRTC_SecondsInterruptEnable = RTC_IER_TSIE_MASK /*!< Seconds interrupt.*/
 DECL|kRTC_TimeInvalidFlag|enumerator|kRTC_TimeInvalidFlag = RTC_SR_TIF_MASK, /*!< Time invalid flag */
 DECL|kRTC_TimeInvalidInterruptEnable|enumerator|kRTC_TimeInvalidInterruptEnable = RTC_IER_TIIE_MASK, /*!< Time invalid interrupt.*/
@@ -39,5 +39,5 @@ DECL|rtc_status_flags_t|typedef|} rtc_status_flags_t;
 DECL|second|member|uint8_t second; /*!< Range from 0 to 59.*/
 DECL|supervisorAccess|member|bool supervisorAccess; /*!< true: Non-supervisor accesses are allowed;
 DECL|updateMode|member|bool updateMode; /*!< true: Registers can be written even when locked under certain
-DECL|wakeupSelect|member|bool wakeupSelect; /*!< true: Wakeup pin outputs the 32KHz clock;
+DECL|wakeupSelect|member|bool wakeupSelect; /*!< true: Wakeup pin outputs the 32 KHz clock;
 DECL|year|member|uint16_t year; /*!< Range from 1970 to 2099.*/
