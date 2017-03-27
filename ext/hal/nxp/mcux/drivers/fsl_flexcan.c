@@ -3,19 +3,28 @@ DECL|CAN1_DriverIRQHandler|function|void CAN1_DriverIRQHandler(void)
 DECL|CAN2_DriverIRQHandler|function|void CAN2_DriverIRQHandler(void)
 DECL|CAN3_DriverIRQHandler|function|void CAN3_DriverIRQHandler(void)
 DECL|CAN4_DriverIRQHandler|function|void CAN4_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN0_DriverIRQHandler|function|void DMA_FLEXCAN0_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN1_DriverIRQHandler|function|void DMA_FLEXCAN1_DriverIRQHandler(void)
+DECL|DMA_FLEXCAN2_DriverIRQHandler|function|void DMA_FLEXCAN2_DriverIRQHandler(void)
 DECL|FLEXCAN_Deinit|function|void FLEXCAN_Deinit(CAN_Type *base)
 DECL|FLEXCAN_EnableRxFifoDMA|function|void FLEXCAN_EnableRxFifoDMA(CAN_Type *base, bool enable)
-DECL|FLEXCAN_EnterFrazeMode|function|static void FLEXCAN_EnterFrazeMode(CAN_Type *base)
-DECL|FLEXCAN_ExitFrazeMode|function|static void FLEXCAN_ExitFrazeMode(CAN_Type *base)
+DECL|FLEXCAN_EnterFreezeMode|function|static void FLEXCAN_EnterFreezeMode(CAN_Type *base)
+DECL|FLEXCAN_ExitFreezeMode|function|static void FLEXCAN_ExitFreezeMode(CAN_Type *base)
 DECL|FLEXCAN_GetDefaultConfig|function|void FLEXCAN_GetDefaultConfig(flexcan_config_t *config)
+DECL|FLEXCAN_GetFirstValidMb|function|static uint32_t FLEXCAN_GetFirstValidMb(CAN_Type *base)
 DECL|FLEXCAN_GetInstance|function|uint32_t FLEXCAN_GetInstance(CAN_Type *base)
 DECL|FLEXCAN_Init|function|void FLEXCAN_Init(CAN_Type *base, const flexcan_config_t *config, uint32_t sourceClock_Hz)
 DECL|FLEXCAN_IsMbIntEnabled|function|static bool FLEXCAN_IsMbIntEnabled(CAN_Type *base, uint8_t mbIdx)
 DECL|FLEXCAN_IsMbOccupied|function|static bool FLEXCAN_IsMbOccupied(CAN_Type *base, uint8_t mbIdx)
+DECL|FLEXCAN_ReadRxFifo|function|status_t FLEXCAN_ReadRxFifo(CAN_Type *base, flexcan_frame_t *rxFrame)
 DECL|FLEXCAN_ReadRxMb|function|status_t FLEXCAN_ReadRxMb(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *rxFrame)
 DECL|FLEXCAN_Reset|function|static void FLEXCAN_Reset(CAN_Type *base)
 DECL|FLEXCAN_SetBaudRate|function|static void FLEXCAN_SetBaudRate(CAN_Type *base, uint32_t sourceClock_Hz, uint32_t baudRate_Bps)
+DECL|FLEXCAN_SetRxFifoConfig|function|void FLEXCAN_SetRxFifoConfig(CAN_Type *base, const flexcan_rx_fifo_config_t *config, bool enable)
+DECL|FLEXCAN_SetRxFifoGlobalMask|function|void FLEXCAN_SetRxFifoGlobalMask(CAN_Type *base, uint32_t mask)
+DECL|FLEXCAN_SetRxIndividualMask|function|void FLEXCAN_SetRxIndividualMask(CAN_Type *base, uint8_t maskIdx, uint32_t mask)
 DECL|FLEXCAN_SetRxMbConfig|function|void FLEXCAN_SetRxMbConfig(CAN_Type *base, uint8_t mbIdx, const flexcan_rx_mb_config_t *config, bool enable)
+DECL|FLEXCAN_SetRxMbGlobalMask|function|void FLEXCAN_SetRxMbGlobalMask(CAN_Type *base, uint32_t mask)
 DECL|FLEXCAN_SetTimingConfig|function|void FLEXCAN_SetTimingConfig(CAN_Type *base, const flexcan_timing_config_t *config)
 DECL|FLEXCAN_SetTxMbConfig|function|void FLEXCAN_SetTxMbConfig(CAN_Type *base, uint8_t mbIdx, bool enable)
 DECL|FLEXCAN_TIME_QUANTA_NUM|macro|FLEXCAN_TIME_QUANTA_NUM
@@ -24,21 +33,17 @@ DECL|FLEXCAN_TransferAbortReceive|function|void FLEXCAN_TransferAbortReceive(CAN
 DECL|FLEXCAN_TransferAbortSend|function|void FLEXCAN_TransferAbortSend(CAN_Type *base, flexcan_handle_t *handle, uint8_t mbIdx)
 DECL|FLEXCAN_TransferCreateHandle|function|void FLEXCAN_TransferCreateHandle(CAN_Type *base, flexcan_handle_t *handle, flexcan_transfer_callback_t callback, void *userData)
 DECL|FLEXCAN_TransferHandleIRQ|function|void FLEXCAN_TransferHandleIRQ(CAN_Type *base, flexcan_handle_t *handle)
+DECL|FLEXCAN_TransferReceiveBlocking|function|status_t FLEXCAN_TransferReceiveBlocking(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *rxFrame)
+DECL|FLEXCAN_TransferReceiveFifoBlocking|function|status_t FLEXCAN_TransferReceiveFifoBlocking(CAN_Type *base, flexcan_frame_t *rxFrame)
 DECL|FLEXCAN_TransferReceiveFifoNonBlocking|function|status_t FLEXCAN_TransferReceiveFifoNonBlocking(CAN_Type *base, flexcan_handle_t *handle, flexcan_fifo_transfer_t *xfer)
 DECL|FLEXCAN_TransferReceiveNonBlocking|function|status_t FLEXCAN_TransferReceiveNonBlocking(CAN_Type *base, flexcan_handle_t *handle, flexcan_mb_transfer_t *xfer)
+DECL|FLEXCAN_TransferSendBlocking|function|status_t FLEXCAN_TransferSendBlocking(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *txFrame)
 DECL|FLEXCAN_TransferSendNonBlocking|function|status_t FLEXCAN_TransferSendNonBlocking(CAN_Type *base, flexcan_handle_t *handle, flexcan_mb_transfer_t *xfer)
 DECL|FLEXCAN_WriteTxMb|function|status_t FLEXCAN_WriteTxMb(CAN_Type *base, uint8_t mbIdx, const flexcan_frame_t *txFrame)
-DECL|FlEXCAN_ReadRxFifo|function|status_t FlEXCAN_ReadRxFifo(CAN_Type *base, flexcan_frame_t *rxFrame)
-DECL|FlEXCAN_SetRxFifoConfig|function|void FlEXCAN_SetRxFifoConfig(CAN_Type *base, const flexcan_rx_fifo_config_t *config, bool enable)
-DECL|FlEXCAN_SetRxFifoGlobalMask|function|void FlEXCAN_SetRxFifoGlobalMask(CAN_Type *base, uint32_t mask)
-DECL|FlEXCAN_SetRxIndividualMask|function|void FlEXCAN_SetRxIndividualMask(CAN_Type *base, uint8_t maskIdx, uint32_t mask)
-DECL|FlEXCAN_SetRxMbGlobalMask|function|void FlEXCAN_SetRxMbGlobalMask(CAN_Type *base, uint32_t mask)
-DECL|FlEXCAN_TransferReceiveBlocking|function|status_t FlEXCAN_TransferReceiveBlocking(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *rxFrame)
-DECL|FlEXCAN_TransferReceiveFifoBlocking|function|status_t FlEXCAN_TransferReceiveFifoBlocking(CAN_Type *base, flexcan_frame_t *rxFrame)
-DECL|FlEXCAN_TransferSendBlocking|function|status_t FlEXCAN_TransferSendBlocking(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *txFrame)
 DECL|_flexcan_mb_code_rx|enum|enum _flexcan_mb_code_rx
 DECL|_flexcan_mb_code_tx|enum|enum _flexcan_mb_code_tx
 DECL|_flexcan_state|enum|enum _flexcan_state
+DECL|flexcan_isr_t|typedef|typedef void (*flexcan_isr_t)(CAN_Type *base, flexcan_handle_t *handle);
 DECL|kFLEXCAN_RxMbBusy|enumerator|kFLEXCAN_RxMbBusy = 0x8, /*!< FlexCAN is updating the contents of the MB.*/
 DECL|kFLEXCAN_RxMbEmpty|enumerator|kFLEXCAN_RxMbEmpty = 0x4, /*!< MB is active and empty.*/
 DECL|kFLEXCAN_RxMbFull|enumerator|kFLEXCAN_RxMbFull = 0x2, /*!< MB is full.*/
@@ -62,7 +67,9 @@ DECL|s_flexcanBusOffIRQ|variable|s_flexcanBusOffIRQ
 DECL|s_flexcanClock|variable|s_flexcanClock
 DECL|s_flexcanErrorIRQ|variable|s_flexcanErrorIRQ
 DECL|s_flexcanHandle|variable|s_flexcanHandle
+DECL|s_flexcanIsr|variable|s_flexcanIsr
 DECL|s_flexcanMbIRQ|variable|s_flexcanMbIRQ
+DECL|s_flexcanPeriphClock|variable|s_flexcanPeriphClock
 DECL|s_flexcanRxWarningIRQ|variable|s_flexcanRxWarningIRQ
 DECL|s_flexcanTxWarningIRQ|variable|s_flexcanTxWarningIRQ
 DECL|s_flexcanWakeUpIRQ|variable|s_flexcanWakeUpIRQ

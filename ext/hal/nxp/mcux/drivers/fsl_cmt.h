@@ -22,8 +22,8 @@ DECL|cmt_modulate_config_t|typedef|} cmt_modulate_config_t;
 DECL|cmt_primary_clkdiv_t|typedef|} cmt_primary_clkdiv_t;
 DECL|cmt_second_clkdiv_t|typedef|} cmt_second_clkdiv_t;
 DECL|divider|member|cmt_second_clkdiv_t divider; /*!< The CMT clock divide prescaler. */
-DECL|highCount1|member|uint8_t highCount1; /*!< The high time for carrier generator first register. */
-DECL|highCount2|member|uint8_t highCount2; /*!< The high time for carrier generator second register for FSK mode. */
+DECL|highCount1|member|uint8_t highCount1; /*!< The high-time for carrier generator first register. */
+DECL|highCount2|member|uint8_t highCount2; /*!< The high-time for carrier generator second register for FSK mode. */
 DECL|iroPolarity|member|cmt_infrared_output_polarity_t iroPolarity; /*!< The IRO polarity. */
 DECL|isInterruptEnabled|member|bool isInterruptEnabled; /*!< Timer interrupt 0-disable, 1-enable. */
 DECL|isIroEnabled|member|bool isIroEnabled; /*!< The IRO output 0-disabled, 1-enabled. */
@@ -56,7 +56,7 @@ DECL|kCMT_SecondClkDiv2|enumerator|kCMT_SecondClkDiv2 = 1U, /*!< The CMT clock i
 DECL|kCMT_SecondClkDiv4|enumerator|kCMT_SecondClkDiv4 = 2U, /*!< The CMT clock is the intermediate frequency frequency divided by 4. */
 DECL|kCMT_SecondClkDiv8|enumerator|kCMT_SecondClkDiv8 = 3U /*!< The CMT clock is the intermediate frequency frequency divided by 8. */
 DECL|kCMT_TimeMode|enumerator|kCMT_TimeMode = 0x01U, /*!< Carrier modulator is enabled in time mode. */
-DECL|lowCount1|member|uint8_t lowCount1; /*!< The low time for carrier generator first register. */
-DECL|lowCount2|member|uint8_t lowCount2; /*!< The low time for carrier generator second register for FSK mode. */
+DECL|lowCount1|member|uint8_t lowCount1; /*!< The low-time for carrier generator first register. */
+DECL|lowCount2|member|uint8_t lowCount2; /*!< The low-time for carrier generator second register for FSK mode. */
 DECL|markCount|member|uint16_t markCount; /*!< The mark time for the modulator gate. */
 DECL|spaceCount|member|uint16_t spaceCount; /*!< The space time for the modulator gate. */

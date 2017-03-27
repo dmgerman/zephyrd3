@@ -19,7 +19,7 @@ DECL|dac_buffer_watermark_t|typedef|} dac_buffer_watermark_t;
 DECL|dac_buffer_work_mode_t|typedef|} dac_buffer_work_mode_t;
 DECL|dac_config_t|typedef|} dac_config_t;
 DECL|dac_reference_voltage_source_t|typedef|} dac_reference_voltage_source_t;
-DECL|enableLowPowerMode|member|bool enableLowPowerMode; /*!< Enable the low power mode. */
+DECL|enableLowPowerMode|member|bool enableLowPowerMode; /*!< Enable the low-power mode. */
 DECL|kDAC_BufferReadPointerBottomInterruptEnable|enumerator|kDAC_BufferReadPointerBottomInterruptEnable = DAC_C0_DACBBIEN_MASK, /*!< DAC Buffer Read Pointer Bottom Flag
 DECL|kDAC_BufferReadPointerBottomPositionFlag|enumerator|kDAC_BufferReadPointerBottomPositionFlag = DAC_SR_DACBFRPBF_MASK, /*!< DAC Buffer Read Pointer Bottom Position
 DECL|kDAC_BufferReadPointerTopInterruptEnable|enumerator|kDAC_BufferReadPointerTopInterruptEnable = DAC_C0_DACBTIEN_MASK, /*!< DAC Buffer Read Pointer Top Flag Interrupt
@@ -40,6 +40,6 @@ DECL|kDAC_ReferenceVoltageSourceVref1|enumerator|kDAC_ReferenceVoltageSourceVref
 DECL|kDAC_ReferenceVoltageSourceVref2|enumerator|kDAC_ReferenceVoltageSourceVref2 = 1U, /*!< The DAC selects DACREF_2 as the reference voltage. */
 DECL|referenceVoltageSource|member|dac_reference_voltage_source_t referenceVoltageSource; /*!< Select the DAC reference voltage source. */
 DECL|triggerMode|member|dac_buffer_trigger_mode_t triggerMode; /*!< Select the buffer's trigger mode. */
-DECL|upperLimit|member|uint8_t upperLimit; /*!< Set the upper limit for buffer index.
+DECL|upperLimit|member|uint8_t upperLimit; /*!< Set the upper limit for the buffer index.
 DECL|watermark|member|dac_buffer_watermark_t watermark; /*!< Select the buffer's watermark. */
 DECL|workMode|member|dac_buffer_work_mode_t workMode; /*!< Select the buffer's work mode. */

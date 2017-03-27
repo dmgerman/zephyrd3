@@ -24,10 +24,10 @@ DECL|UART_HANDLE_ARRAY_SIZE|macro|UART_HANDLE_ARRAY_SIZE
 DECL|UART_HANDLE_ARRAY_SIZE|macro|UART_HANDLE_ARRAY_SIZE
 DECL|UART_HANDLE_ARRAY_SIZE|macro|UART_HANDLE_ARRAY_SIZE
 DECL|UART_HANDLE_ARRAY_SIZE|macro|UART_HANDLE_ARRAY_SIZE
-DECL|UART_Init|function|void UART_Init(UART_Type *base, const uart_config_t *config, uint32_t srcClock_Hz)
+DECL|UART_Init|function|status_t UART_Init(UART_Type *base, const uart_config_t *config, uint32_t srcClock_Hz)
 DECL|UART_ReadBlocking|function|status_t UART_ReadBlocking(UART_Type *base, uint8_t *data, size_t length)
 DECL|UART_ReadNonBlocking|function|static void UART_ReadNonBlocking(UART_Type *base, uint8_t *data, size_t length)
-DECL|UART_SetBaudRate|function|void UART_SetBaudRate(UART_Type *base, uint32_t baudRate_Bps, uint32_t srcClock_Hz)
+DECL|UART_SetBaudRate|function|status_t UART_SetBaudRate(UART_Type *base, uint32_t baudRate_Bps, uint32_t srcClock_Hz)
 DECL|UART_TransferAbortReceive|function|void UART_TransferAbortReceive(UART_Type *base, uart_handle_t *handle)
 DECL|UART_TransferAbortSend|function|void UART_TransferAbortSend(UART_Type *base, uart_handle_t *handle)
 DECL|UART_TransferCreateHandle|function|void UART_TransferCreateHandle(UART_Type *base, uart_handle_t *handle, uart_transfer_callback_t callback, void *userData)
@@ -44,8 +44,10 @@ DECL|UART_TransferStopRingBuffer|function|void UART_TransferStopRingBuffer(UART_
 DECL|UART_WriteBlocking|function|void UART_WriteBlocking(UART_Type *base, const uint8_t *data, size_t length)
 DECL|UART_WriteNonBlocking|function|static void UART_WriteNonBlocking(UART_Type *base, const uint8_t *data, size_t length)
 DECL|_uart_tansfer_states|enum|enum _uart_tansfer_states
-DECL|kUART_RxBusy|enumerator|kUART_RxBusy /* RX busy. */
+DECL|kUART_RxBusy|enumerator|kUART_RxBusy, /* RX busy. */
+DECL|kUART_RxFramingError|enumerator|kUART_RxFramingError, /* Rx framing error */
 DECL|kUART_RxIdle|enumerator|kUART_RxIdle, /* RX idle. */
+DECL|kUART_RxParityError|enumerator|kUART_RxParityError /* Rx parity error */
 DECL|kUART_TxBusy|enumerator|kUART_TxBusy, /* TX busy. */
 DECL|kUART_TxIdle|enumerator|kUART_TxIdle, /* TX idle. */
 DECL|s_uartBases|variable|s_uartBases

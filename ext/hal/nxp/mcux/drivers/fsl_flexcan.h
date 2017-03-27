@@ -6,6 +6,7 @@ DECL|FLEXCAN_DisableMbInterrupts|function|static inline void FLEXCAN_DisableMbIn
 DECL|FLEXCAN_EnableInterrupts|function|static inline void FLEXCAN_EnableInterrupts(CAN_Type *base, uint32_t mask)
 DECL|FLEXCAN_EnableMbInterrupts|function|static inline void FLEXCAN_EnableMbInterrupts(CAN_Type *base, uint64_t mask)
 DECL|FLEXCAN_Enable|function|static inline void FLEXCAN_Enable(CAN_Type *base, bool enable)
+DECL|FLEXCAN_GetBusErrCount|function|static inline void FLEXCAN_GetBusErrCount(CAN_Type *base, uint8_t *txErrBuf, uint8_t *rxErrBuf)
 DECL|FLEXCAN_GetMbStatusFlags|function|static inline uint64_t FLEXCAN_GetMbStatusFlags(CAN_Type *base, uint64_t mask)
 DECL|FLEXCAN_GetRxFifoHeadAddr|function|static inline uint32_t FLEXCAN_GetRxFifoHeadAddr(CAN_Type *base)
 DECL|FLEXCAN_GetStatusFlags|function|static inline uint32_t FLEXCAN_GetStatusFlags(CAN_Type *base)
@@ -41,7 +42,6 @@ DECL|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_HIGH|macro|FLEXCAN_RX_FIFO_STD_MASK_TYP
 DECL|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_LOW|macro|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_LOW
 DECL|FLEXCAN_RX_MB_EXT_MASK|macro|FLEXCAN_RX_MB_EXT_MASK
 DECL|FLEXCAN_RX_MB_STD_MASK|macro|FLEXCAN_RX_MB_STD_MASK
-DECL|FlEXCAN_GetBusErrCount|function|static inline void FlEXCAN_GetBusErrCount(CAN_Type *base, uint8_t *txErrBuf, uint8_t *rxErrBuf)
 DECL|_FSL_FLEXCAN_H_|macro|_FSL_FLEXCAN_H_
 DECL|_flexcan_clock_source|enum|typedef enum _flexcan_clock_source
 DECL|_flexcan_config|struct|typedef struct _flexcan_config
@@ -97,7 +97,7 @@ DECL|format|member|uint32_t format : 1; /*!< CAN Frame Identifier(STD or EXT for
 DECL|frame|member|flexcan_frame_t *frame; /*!< The buffer of CAN Message to be received from Rx FIFO. */
 DECL|frame|member|flexcan_frame_t *frame; /*!< The buffer of CAN Message to be transfer. */
 DECL|idFilterNum|member|uint8_t idFilterNum; /*!< The quantity of filter elements. */
-DECL|idFilterTable|member|uint32_t *idFilterTable; /*!< Pointer to FlexCAN Rx FIFO identifier filter table. */
+DECL|idFilterTable|member|uint32_t *idFilterTable; /*!< Pointer to the FlexCAN Rx FIFO identifier filter table. */
 DECL|idFilterType|member|flexcan_rx_fifo_filter_type_t idFilterType; /*!< The FlexCAN Rx FIFO Filter type. */
 DECL|idhit|member|uint32_t idhit : 9; /*!< CAN Rx FIFO filter hit id(This value is only used in Rx FIFO receive mode). */
 DECL|id|member|uint32_t id : 29; /*!< CAN Frame Identifier, should be set using FLEXCAN_ID_EXT() or FLEXCAN_ID_STD() macro. */
@@ -146,7 +146,7 @@ DECL|kStatus_FLEXCAN_RxBusy|enumerator|kStatus_FLEXCAN_RxBusy = MAKE_STATUS(kSta
 DECL|kStatus_FLEXCAN_RxFifoBusy|enumerator|kStatus_FLEXCAN_RxFifoBusy = MAKE_STATUS(kStatusGroup_FLEXCAN, 6), /*!< Rx Message FIFO is Busy. */
 DECL|kStatus_FLEXCAN_RxFifoIdle|enumerator|kStatus_FLEXCAN_RxFifoIdle = MAKE_STATUS(kStatusGroup_FLEXCAN, 7), /*!< Rx Message FIFO is Idle. */
 DECL|kStatus_FLEXCAN_RxFifoOverflow|enumerator|kStatus_FLEXCAN_RxFifoOverflow = MAKE_STATUS(kStatusGroup_FLEXCAN, 8), /*!< Rx Message FIFO is overflowed. */
-DECL|kStatus_FLEXCAN_RxFifoWarning|enumerator|kStatus_FLEXCAN_RxFifoWarning = MAKE_STATUS(kStatusGroup_FLEXCAN, 0), /*!< Rx Message FIFO is almost overflowed. */
+DECL|kStatus_FLEXCAN_RxFifoWarning|enumerator|kStatus_FLEXCAN_RxFifoWarning = MAKE_STATUS(kStatusGroup_FLEXCAN, 9), /*!< Rx Message FIFO is almost overflowed. */
 DECL|kStatus_FLEXCAN_RxIdle|enumerator|kStatus_FLEXCAN_RxIdle = MAKE_STATUS(kStatusGroup_FLEXCAN, 4), /*!< Rx Message Buffer is Idle. */
 DECL|kStatus_FLEXCAN_RxOverflow|enumerator|kStatus_FLEXCAN_RxOverflow = MAKE_STATUS(kStatusGroup_FLEXCAN, 5), /*!< Rx Message Buffer is Overflowed. */
 DECL|kStatus_FLEXCAN_TxBusy|enumerator|kStatus_FLEXCAN_TxBusy = MAKE_STATUS(kStatusGroup_FLEXCAN, 0), /*!< Tx Message Buffer is Busy. */
@@ -164,11 +164,11 @@ DECL|preDivider|member|uint8_t preDivider; /*!< Clock Pre-scaler Division Factor
 DECL|priority|member|flexcan_rx_fifo_priority_t priority; /*!< The FlexCAN Rx FIFO receive priority. */
 DECL|propSeg|member|uint8_t propSeg; /*!< Propagation Segment. */
 DECL|rJumpwidth|member|uint8_t rJumpwidth; /*!< Re-sync Jump Width. */
-DECL|reserve1|member|uint32_t reserve1 : 1; /*!< Reserved for placeholder. */
-DECL|reserve2|member|uint32_t reserve2 : 3; /*!< Reserved for place holder. */
 DECL|rxFifoFrameBuf|member|flexcan_frame_t *volatile rxFifoFrameBuf; /*!< The buffer for received data from Rx FIFO. */
 DECL|rxFifoState|member|volatile uint8_t rxFifoState; /*!< Rx FIFO transfer state. */
 DECL|timestamp|member|uint32_t timestamp : 16; /*!< FlexCAN internal Free-Running Counter Time Stamp. */
 DECL|type|member|flexcan_frame_type_t type; /*!< CAN Frame Type(Data or Remote). */
 DECL|type|member|uint32_t type : 1; /*!< CAN Frame Type(DATA or REMOTE). */
+DECL|uint32_t|member|uint32_t : 1; /*!< Reserved. */
+DECL|uint32_t|member|uint32_t : 3; /*!< Reserved. */
 DECL|userData|member|void *userData; /*!< FlexCAN callback function parameter.*/

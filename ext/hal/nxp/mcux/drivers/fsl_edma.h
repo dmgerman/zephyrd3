@@ -57,16 +57,16 @@ DECL|edma_tcd_t|typedef|} edma_tcd_t;
 DECL|edma_transfer_config_t|typedef|} edma_transfer_config_t;
 DECL|edma_transfer_size_t|typedef|} edma_transfer_size_t;
 DECL|edma_transfer_type_t|typedef|} edma_transfer_type_t;
-DECL|enableChannelPreemption|member|bool enableChannelPreemption; /*!< If true: channel can be suspended by other channel with higher priority */
+DECL|enableChannelPreemption|member|bool enableChannelPreemption; /*!< If true: a channel can be suspended by other channel with higher priority */
 DECL|enableContinuousLinkMode|member|bool enableContinuousLinkMode; /*!< Enable (true) continuous link mode. Upon minor loop completion, the channel
 DECL|enableDebugMode|member|bool enableDebugMode; /*!< Enable(true) eDMA debug mode. When in debug mode, the eDMA stalls the start of
 DECL|enableDestMinorOffset|member|bool enableDestMinorOffset; /*!< Enable(true) or Disable(false) destination minor loop offset. */
 DECL|enableHaltOnError|member|bool enableHaltOnError; /*!< Enable (true) transfer halt on error. Any error causes the HALT bit to set.
-DECL|enablePreemptAbility|member|bool enablePreemptAbility; /*!< If true: channel can suspend other channel with low priority */
-DECL|enableRoundRobinArbitration|member|bool enableRoundRobinArbitration; /*!< Enable (true) round robin channel arbitration method, or fixed priority
+DECL|enablePreemptAbility|member|bool enablePreemptAbility; /*!< If true: a channel can suspend other channel with low priority */
+DECL|enableRoundRobinArbitration|member|bool enableRoundRobinArbitration; /*!< Enable (true) round robin channel arbitration method or fixed priority
 DECL|enableSrcMinorOffset|member|bool enableSrcMinorOffset; /*!< Enable(true) or Disable(false) source minor loop offset. */
 DECL|flags|member|uint8_t flags; /*!< The status of the current channel. */
-DECL|header|member|volatile int8_t header; /*!< The first TCD index. */
+DECL|header|member|volatile int8_t header; /*!< The first TCD index. Should point to the next TCD to be loaded into the eDMA engine. */
 DECL|kEDMA_BandwidthStall4Cycle|enumerator|kEDMA_BandwidthStall4Cycle = 0x2U, /*!< eDMA engine stalls for 4 cycles after each read/write. */
 DECL|kEDMA_BandwidthStall8Cycle|enumerator|kEDMA_BandwidthStall8Cycle = 0x3U, /*!< eDMA engine stalls for 8 cycles after each read/write. */
 DECL|kEDMA_BandwidthStallNone|enumerator|kEDMA_BandwidthStallNone = 0x0U, /*!< No eDMA engine stalls. */
@@ -87,36 +87,36 @@ DECL|kEDMA_MajorLink|enumerator|kEDMA_MajorLink, /*!< Channel link while major l
 DECL|kEDMA_MemoryToMemory|enumerator|kEDMA_MemoryToMemory = 0x0U, /*!< Transfer from memory to memory */
 DECL|kEDMA_MemoryToPeripheral|enumerator|kEDMA_MemoryToPeripheral, /*!< Transfer from memory to peripheral */
 DECL|kEDMA_MinorLink|enumerator|kEDMA_MinorLink, /*!< Channel link after each minor loop */
-DECL|kEDMA_Modulo128Kbytes|enumerator|kEDMA_Modulo128Kbytes, /*!< Circular buffer size is 128K bytes. */
-DECL|kEDMA_Modulo128Mbytes|enumerator|kEDMA_Modulo128Mbytes, /*!< Circular buffer size is 128M bytes. */
+DECL|kEDMA_Modulo128Kbytes|enumerator|kEDMA_Modulo128Kbytes, /*!< Circular buffer size is 128 K bytes. */
+DECL|kEDMA_Modulo128Mbytes|enumerator|kEDMA_Modulo128Mbytes, /*!< Circular buffer size is 128 M bytes. */
 DECL|kEDMA_Modulo128bytes|enumerator|kEDMA_Modulo128bytes, /*!< Circular buffer size is 128 bytes. */
-DECL|kEDMA_Modulo16Kbytes|enumerator|kEDMA_Modulo16Kbytes, /*!< Circular buffer size is 16K bytes. */
-DECL|kEDMA_Modulo16Mbytes|enumerator|kEDMA_Modulo16Mbytes, /*!< Circular buffer size is 16M bytes. */
+DECL|kEDMA_Modulo16Kbytes|enumerator|kEDMA_Modulo16Kbytes, /*!< Circular buffer size is 16 K bytes. */
+DECL|kEDMA_Modulo16Mbytes|enumerator|kEDMA_Modulo16Mbytes, /*!< Circular buffer size is 16 M bytes. */
 DECL|kEDMA_Modulo16bytes|enumerator|kEDMA_Modulo16bytes, /*!< Circular buffer size is 16 bytes. */
-DECL|kEDMA_Modulo1Gbytes|enumerator|kEDMA_Modulo1Gbytes, /*!< Circular buffer size is 1G bytes. */
-DECL|kEDMA_Modulo1Kbytes|enumerator|kEDMA_Modulo1Kbytes, /*!< Circular buffer size is 1K bytes. */
-DECL|kEDMA_Modulo1Mbytes|enumerator|kEDMA_Modulo1Mbytes, /*!< Circular buffer size is 1M bytes. */
-DECL|kEDMA_Modulo256Kbytes|enumerator|kEDMA_Modulo256Kbytes, /*!< Circular buffer size is 256K bytes. */
-DECL|kEDMA_Modulo256Mbytes|enumerator|kEDMA_Modulo256Mbytes, /*!< Circular buffer size is 256M bytes. */
+DECL|kEDMA_Modulo1Gbytes|enumerator|kEDMA_Modulo1Gbytes, /*!< Circular buffer size is 1 G bytes. */
+DECL|kEDMA_Modulo1Kbytes|enumerator|kEDMA_Modulo1Kbytes, /*!< Circular buffer size is 1 K bytes. */
+DECL|kEDMA_Modulo1Mbytes|enumerator|kEDMA_Modulo1Mbytes, /*!< Circular buffer size is 1 M bytes. */
+DECL|kEDMA_Modulo256Kbytes|enumerator|kEDMA_Modulo256Kbytes, /*!< Circular buffer size is 256 K bytes. */
+DECL|kEDMA_Modulo256Mbytes|enumerator|kEDMA_Modulo256Mbytes, /*!< Circular buffer size is 256 M bytes. */
 DECL|kEDMA_Modulo256bytes|enumerator|kEDMA_Modulo256bytes, /*!< Circular buffer size is 256 bytes. */
-DECL|kEDMA_Modulo2Gbytes|enumerator|kEDMA_Modulo2Gbytes, /*!< Circular buffer size is 2G bytes. */
-DECL|kEDMA_Modulo2Kbytes|enumerator|kEDMA_Modulo2Kbytes, /*!< Circular buffer size is 2K bytes. */
-DECL|kEDMA_Modulo2Mbytes|enumerator|kEDMA_Modulo2Mbytes, /*!< Circular buffer size is 2M bytes. */
+DECL|kEDMA_Modulo2Gbytes|enumerator|kEDMA_Modulo2Gbytes, /*!< Circular buffer size is 2 G bytes. */
+DECL|kEDMA_Modulo2Kbytes|enumerator|kEDMA_Modulo2Kbytes, /*!< Circular buffer size is 2 K bytes. */
+DECL|kEDMA_Modulo2Mbytes|enumerator|kEDMA_Modulo2Mbytes, /*!< Circular buffer size is 2 M bytes. */
 DECL|kEDMA_Modulo2bytes|enumerator|kEDMA_Modulo2bytes, /*!< Circular buffer size is 2 bytes. */
-DECL|kEDMA_Modulo32Kbytes|enumerator|kEDMA_Modulo32Kbytes, /*!< Circular buffer size is 32K bytes. */
-DECL|kEDMA_Modulo32Mbytes|enumerator|kEDMA_Modulo32Mbytes, /*!< Circular buffer size is 32M bytes. */
+DECL|kEDMA_Modulo32Kbytes|enumerator|kEDMA_Modulo32Kbytes, /*!< Circular buffer size is 32 K bytes. */
+DECL|kEDMA_Modulo32Mbytes|enumerator|kEDMA_Modulo32Mbytes, /*!< Circular buffer size is 32 M bytes. */
 DECL|kEDMA_Modulo32bytes|enumerator|kEDMA_Modulo32bytes, /*!< Circular buffer size is 32 bytes. */
-DECL|kEDMA_Modulo4Kbytes|enumerator|kEDMA_Modulo4Kbytes, /*!< Circular buffer size is 4K bytes. */
-DECL|kEDMA_Modulo4Mbytes|enumerator|kEDMA_Modulo4Mbytes, /*!< Circular buffer size is 4M bytes. */
+DECL|kEDMA_Modulo4Kbytes|enumerator|kEDMA_Modulo4Kbytes, /*!< Circular buffer size is 4 K bytes. */
+DECL|kEDMA_Modulo4Mbytes|enumerator|kEDMA_Modulo4Mbytes, /*!< Circular buffer size is 4 M bytes. */
 DECL|kEDMA_Modulo4bytes|enumerator|kEDMA_Modulo4bytes, /*!< Circular buffer size is 4 bytes. */
-DECL|kEDMA_Modulo512Kbytes|enumerator|kEDMA_Modulo512Kbytes, /*!< Circular buffer size is 512K bytes. */
-DECL|kEDMA_Modulo512Mbytes|enumerator|kEDMA_Modulo512Mbytes, /*!< Circular buffer size is 512M bytes. */
+DECL|kEDMA_Modulo512Kbytes|enumerator|kEDMA_Modulo512Kbytes, /*!< Circular buffer size is 512 K bytes. */
+DECL|kEDMA_Modulo512Mbytes|enumerator|kEDMA_Modulo512Mbytes, /*!< Circular buffer size is 512 M bytes. */
 DECL|kEDMA_Modulo512bytes|enumerator|kEDMA_Modulo512bytes, /*!< Circular buffer size is 512 bytes. */
-DECL|kEDMA_Modulo64Kbytes|enumerator|kEDMA_Modulo64Kbytes, /*!< Circular buffer size is 64K bytes. */
-DECL|kEDMA_Modulo64Mbytes|enumerator|kEDMA_Modulo64Mbytes, /*!< Circular buffer size is 64M bytes. */
+DECL|kEDMA_Modulo64Kbytes|enumerator|kEDMA_Modulo64Kbytes, /*!< Circular buffer size is 64 K bytes. */
+DECL|kEDMA_Modulo64Mbytes|enumerator|kEDMA_Modulo64Mbytes, /*!< Circular buffer size is 64 M bytes. */
 DECL|kEDMA_Modulo64bytes|enumerator|kEDMA_Modulo64bytes, /*!< Circular buffer size is 64 bytes. */
-DECL|kEDMA_Modulo8Kbytes|enumerator|kEDMA_Modulo8Kbytes, /*!< Circular buffer size is 8K bytes. */
-DECL|kEDMA_Modulo8Mbytes|enumerator|kEDMA_Modulo8Mbytes, /*!< Circular buffer size is 8M bytes. */
+DECL|kEDMA_Modulo8Kbytes|enumerator|kEDMA_Modulo8Kbytes, /*!< Circular buffer size is 8 K bytes. */
+DECL|kEDMA_Modulo8Mbytes|enumerator|kEDMA_Modulo8Mbytes, /*!< Circular buffer size is 8 M bytes. */
 DECL|kEDMA_Modulo8bytes|enumerator|kEDMA_Modulo8bytes, /*!< Circular buffer size is 8 bytes. */
 DECL|kEDMA_ModuloDisable|enumerator|kEDMA_ModuloDisable = 0x0U, /*!< Disable modulo */
 DECL|kEDMA_NbytesErrorFlag|enumerator|kEDMA_NbytesErrorFlag = DMA_ES_NCE_MASK, /*!< NBYTES/CITER configuration error */
@@ -131,17 +131,17 @@ DECL|kEDMA_TransferSize1Bytes|enumerator|kEDMA_TransferSize1Bytes = 0x0U, /*!< S
 DECL|kEDMA_TransferSize2Bytes|enumerator|kEDMA_TransferSize2Bytes = 0x1U, /*!< Source/Destination data transfer size is 2 bytes every time */
 DECL|kEDMA_TransferSize32Bytes|enumerator|kEDMA_TransferSize32Bytes = 0x5U, /*!< Source/Destination data transfer size is 32 bytes every time */
 DECL|kEDMA_TransferSize4Bytes|enumerator|kEDMA_TransferSize4Bytes = 0x2U, /*!< Source/Destination data transfer size is 4 bytes every time */
-DECL|kEDMA_ValidFlag|enumerator|kEDMA_ValidFlag = DMA_ES_VLD_MASK, /*!< No error occurred, this bit will be 0, otherwise be 1 */
+DECL|kEDMA_ValidFlag|enumerator|kEDMA_ValidFlag = DMA_ES_VLD_MASK, /*!< No error occurred, this bit is 0. Otherwise, it is 1. */
 DECL|kStatus_EDMA_Busy|enumerator|kStatus_EDMA_Busy = MAKE_STATUS(kStatusGroup_EDMA, 1), /*!< Channel is busy and can't handle the
 DECL|kStatus_EDMA_QueueFull|enumerator|kStatus_EDMA_QueueFull = MAKE_STATUS(kStatusGroup_EDMA, 0), /*!< TCD queue is full. */
 DECL|majorLoopCounts|member|uint32_t majorLoopCounts; /*!< Major loop iteration count. */
-DECL|minorLoopBytes|member|uint16_t minorLoopBytes; /*!< Bytes to transfer in a minor loop*/
-DECL|minorOffset|member|uint32_t minorOffset; /*!< Offset for minor loop mapping. */
+DECL|minorLoopBytes|member|uint32_t minorLoopBytes; /*!< Bytes to transfer in a minor loop*/
+DECL|minorOffset|member|uint32_t minorOffset; /*!< Offset for a minor loop mapping. */
 DECL|srcAddr|member|uint32_t srcAddr; /*!< Source data address. */
 DECL|srcOffset|member|int16_t srcOffset; /*!< Sign-extended offset applied to the current source address to
 DECL|srcTransferSize|member|edma_transfer_size_t srcTransferSize; /*!< Source data transfer size. */
-DECL|tail|member|volatile int8_t tail; /*!< The last TCD index. */
+DECL|tail|member|volatile int8_t tail; /*!< The last TCD index. Should point to the next TCD to be stored into the memory pool. */
 DECL|tcdPool|member|edma_tcd_t *tcdPool; /*!< Pointer to memory stored TCDs. */
 DECL|tcdSize|member|volatile int8_t tcdSize; /*!< The total number of TCD slots in the queue. */
-DECL|tcdUsed|member|volatile int8_t tcdUsed; /*!< The number of used TCD slots. */
+DECL|tcdUsed|member|volatile int8_t tcdUsed; /*!< The number of used TCD slots. Should reflect the number of TCDs can be used/loaded in
 DECL|userData|member|void *userData; /*!< Callback function parameter. */
