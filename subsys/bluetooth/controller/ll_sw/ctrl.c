@@ -32,7 +32,6 @@ DECL|STATE_NONE|enumerator|STATE_NONE,
 DECL|STATE_RX|enumerator|STATE_RX,
 DECL|STATE_STOP|enumerator|STATE_STOP,
 DECL|STATE_TX|enumerator|STATE_TX,
-DECL|XTAL_ADVANCED|macro|XTAL_ADVANCED
 DECL|_radio|variable|_radio
 DECL|access_addr_get|function|static uint32_t access_addr_get(void)
 DECL|adv_addr_type|member|uint8_t adv_addr_type:1;
