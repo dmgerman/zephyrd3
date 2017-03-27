@@ -18,6 +18,7 @@ DECL|_ready_q|struct|struct _ready_q {
 DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
 DECL|_thread_base_t|typedef|typedef struct _thread_base _thread_base_t;
 DECL|_thread_base|struct|struct _thread_base {
+DECL|_thread_stack_info|struct|struct _thread_stack_info {
 DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_threads|macro|_threads
 DECL|_timeout_q|macro|_timeout_q
@@ -50,6 +51,9 @@ DECL|prio|member|s8_t prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
 DECL|sched_locked|member|u8_t sched_locked;
+DECL|size|member|u32_t size;
+DECL|stack_info|member|struct _thread_stack_info stack_info;
+DECL|start|member|u32_t start;
 DECL|swap_data|member|void *swap_data;
 DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
 DECL|thread_monitor_init|macro|thread_monitor_init
