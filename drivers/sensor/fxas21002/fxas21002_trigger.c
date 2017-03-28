@@ -1,0 +1,7 @@
+DECL|fxas21002_gpio_callback|function|static void fxas21002_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pin_mask)
+DECL|fxas21002_handle_drdy_int|function|static int fxas21002_handle_drdy_int(struct device *dev)
+DECL|fxas21002_handle_int|function|static void fxas21002_handle_int(void *arg)
+DECL|fxas21002_thread_main|function|static void fxas21002_thread_main(void *arg1, void *unused1, void *unused2)
+DECL|fxas21002_trigger_init|function|int fxas21002_trigger_init(struct device *dev)
+DECL|fxas21002_trigger_set|function|int fxas21002_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
+DECL|fxas21002_work_handler|function|static void fxas21002_work_handler(struct k_work *work)
