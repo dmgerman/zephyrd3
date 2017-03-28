@@ -1,4 +1,7 @@
 DECL|DELAY_FIRST_PROBE_TIME|macro|DELAY_FIRST_PROBE_TIME
+DECL|FRAG_BUF_WAIT|macro|FRAG_BUF_WAIT
+DECL|IPV6_REASSEMBLY_TIMEOUT|macro|IPV6_REASSEMBLY_TIMEOUT
+DECL|IPV6_REASSEMBLY_TIMEOUT|macro|IPV6_REASSEMBLY_TIMEOUT
 DECL|MAX_MULTICAST_SOLICIT|macro|MAX_MULTICAST_SOLICIT
 DECL|MAX_UNICAST_SOLICIT|macro|MAX_UNICAST_SOLICIT
 DECL|MLDv2_LEN|macro|MLDv2_LEN
@@ -28,10 +31,12 @@ DECL|dbg_update_neighbor_lladdr_raw|function|static inline void dbg_update_neigh
 DECL|dbg_update_neighbor_lladdr_raw|macro|dbg_update_neighbor_lladdr_raw
 DECL|dbg_update_neighbor_lladdr|function|static inline void dbg_update_neighbor_lladdr(struct net_linkaddr *new_lladdr,struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
 DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
+DECL|fragment_verify|function|static bool fragment_verify(struct net_ipv6_reassembly *reass)
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
 DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_buf *buf, struct net_buf *frag, int total_len, uint16_t len, uint16_t offset,
+DECL|handle_fragment_hdr|function|static enum net_verdict handle_fragment_hdr(struct net_buf *buf, struct net_buf *frag, int total_len, uint16_t buf_offset)
 DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_buf *buf)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_buf *buf)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
@@ -59,6 +64,7 @@ DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst)
 DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
 DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
+DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(uint8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, uint8_t idx)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
@@ -73,6 +79,7 @@ DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_t
 DECL|net_ipv6_nbr_state2str|function|const char *net_ipv6_nbr_state2str(enum net_ipv6_nbr_state state)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
 DECL|net_ipv6_process_pkt|function|enum net_verdict net_ipv6_process_pkt(struct net_buf *buf)
+DECL|net_ipv6_send_fragmented_pkt|function|int net_ipv6_send_fragmented_pkt(struct net_if *iface, struct net_buf *buf, uint16_t pkt_len)
 DECL|net_ipv6_send_na|function|int net_ipv6_send_na(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt, uint8_t flags)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
@@ -88,7 +95,14 @@ DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
 DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_buf *buf, struct net_ipv6_hdr *ipv6)
 DECL|ra_input_handler|variable|ra_input_handler
+DECL|reassemble_packet|function|static void reassemble_packet(struct net_ipv6_reassembly *reass)
+DECL|reassembly_cancel|function|static bool reassembly_cancel(uint32_t id, struct in6_addr *src, struct in6_addr *dst)
+DECL|reassembly_get|function|static struct net_ipv6_reassembly *reassembly_get(uint32_t id, struct in6_addr *src, struct in6_addr *dst)
+DECL|reassembly_info|function|static void reassembly_info(char *str, struct net_ipv6_reassembly *reass)
+DECL|reassembly_timeout|function|static void reassembly_timeout(struct k_work *work)
+DECL|reassembly|variable|reassembly
 DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
+DECL|send_ipv6_fragment|function|static int send_ipv6_fragment(struct net_if *iface, struct net_buf *buf, struct net_buf *orig, struct net_buf *prev, struct net_buf *frag,
 DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
 DECL|send_mldv2_raw|function|static int send_mldv2_raw(struct net_if *iface, struct net_buf *frags)
 DECL|send_mldv2|function|static int send_mldv2(struct net_if *iface, const struct in6_addr *addr, uint8_t mode)
