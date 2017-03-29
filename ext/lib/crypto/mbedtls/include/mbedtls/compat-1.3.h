@@ -1998,7 +1998,6 @@ DECL|ssl_set_alpn_protocols|macro|ssl_set_alpn_protocols
 DECL|ssl_set_arc4_support|macro|ssl_set_arc4_support
 DECL|ssl_set_authmode|macro|ssl_set_authmode
 DECL|ssl_set_bio|macro|ssl_set_bio
-DECL|ssl_set_bio|macro|ssl_set_bio
 DECL|ssl_set_ca_chain|macro|ssl_set_ca_chain
 DECL|ssl_set_cbc_record_splitting|macro|ssl_set_cbc_record_splitting
 DECL|ssl_set_ciphersuites_for_version|macro|ssl_set_ciphersuites_for_version
