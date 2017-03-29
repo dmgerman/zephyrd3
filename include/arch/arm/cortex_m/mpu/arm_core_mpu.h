@@ -1,0 +1,1 @@
+DECL|_ARM_CORE_MPU_H_|macro|_ARM_CORE_MPU_H_
