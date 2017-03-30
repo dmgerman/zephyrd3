@@ -1,4 +1,5 @@
 DECL|HAL_NAND_Address_Inc|function|uint32_t HAL_NAND_Address_Inc(NAND_HandleTypeDef *hnand, NAND_AddressTypeDef *pAddress)
+DECL|HAL_NAND_ConfigDevice|function|HAL_StatusTypeDef HAL_NAND_ConfigDevice(NAND_HandleTypeDef *hnand, NAND_DeviceConfigTypeDef *pDeviceConfig)
 DECL|HAL_NAND_DeInit|function|HAL_StatusTypeDef HAL_NAND_DeInit(NAND_HandleTypeDef *hnand)
 DECL|HAL_NAND_ECC_Disable|function|HAL_StatusTypeDef HAL_NAND_ECC_Disable(NAND_HandleTypeDef *hnand)
 DECL|HAL_NAND_ECC_Enable|function|HAL_StatusTypeDef HAL_NAND_ECC_Enable(NAND_HandleTypeDef *hnand)

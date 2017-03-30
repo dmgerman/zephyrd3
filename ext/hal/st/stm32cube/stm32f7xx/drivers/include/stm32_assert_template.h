@@ -1,0 +1,3 @@
+DECL|__STM32_ASSERT_H|macro|__STM32_ASSERT_H
+DECL|assert_param|macro|assert_param
+DECL|assert_param|macro|assert_param

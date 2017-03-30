@@ -98,7 +98,7 @@ DECL|DLC|member|uint32_t DLC; /*!< Specifies the length of the frame that will b
 DECL|DLC|member|uint32_t DLC; /*!< Specifies the length of the frame that will be transmitted.
 DECL|Data|member|uint8_t Data[8]; /*!< Contains the data to be received.
 DECL|Data|member|uint8_t Data[8]; /*!< Contains the data to be transmitted.
-DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< CAN Error code */
+DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< CAN Error code
 DECL|ExtId|member|uint32_t ExtId; /*!< Specifies the extended identifier.
 DECL|ExtId|member|uint32_t ExtId; /*!< Specifies the extended identifier.
 DECL|FIFONumber|member|uint32_t FIFONumber; /*!< Specifies the receive FIFO number.

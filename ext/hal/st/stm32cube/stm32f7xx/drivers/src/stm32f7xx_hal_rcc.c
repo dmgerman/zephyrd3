@@ -11,7 +11,7 @@ DECL|HAL_RCC_GetPCLK2Freq|function|uint32_t HAL_RCC_GetPCLK2Freq(void)
 DECL|HAL_RCC_GetSysClockFreq|function|uint32_t HAL_RCC_GetSysClockFreq(void)
 DECL|HAL_RCC_MCOConfig|function|void HAL_RCC_MCOConfig(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv)
 DECL|HAL_RCC_NMI_IRQHandler|function|void HAL_RCC_NMI_IRQHandler(void)
-DECL|HAL_RCC_OscConfig|function|__weak HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct)
+DECL|HAL_RCC_OscConfig|function|HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef *RCC_OscInitStruct)
 DECL|MCO1_CLK_ENABLE|macro|MCO1_CLK_ENABLE
 DECL|MCO1_GPIO_PORT|macro|MCO1_GPIO_PORT
 DECL|MCO1_PIN|macro|MCO1_PIN

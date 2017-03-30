@@ -71,6 +71,7 @@ DECL|JPEG_DMA_EndProcess|function|static uint32_t JPEG_DMA_EndProcess(JPEG_Handl
 DECL|JPEG_DMA_IDMA|macro|JPEG_DMA_IDMA
 DECL|JPEG_DMA_MASK|macro|JPEG_DMA_MASK
 DECL|JPEG_DMA_ODMA|macro|JPEG_DMA_ODMA
+DECL|JPEG_DMA_PollResidualData|function|static void JPEG_DMA_PollResidualData(JPEG_HandleTypeDef *hjpeg)
 DECL|JPEG_DMA_StartProcess|function|static HAL_StatusTypeDef JPEG_DMA_StartProcess(JPEG_HandleTypeDef *hjpeg)
 DECL|JPEG_ENABLE_DMA|macro|JPEG_ENABLE_DMA
 DECL|JPEG_FIFO_SIZE|macro|JPEG_FIFO_SIZE

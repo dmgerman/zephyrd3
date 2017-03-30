@@ -22,10 +22,11 @@ DECL|IRDA_CLEAR_OREF|macro|IRDA_CLEAR_OREF
 DECL|IRDA_CLEAR_PEF|macro|IRDA_CLEAR_PEF
 DECL|IRDA_CLEAR_TCF|macro|IRDA_CLEAR_TCF
 DECL|IRDA_CLOCKSOURCE_HSI|enumerator|IRDA_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
-DECL|IRDA_CLOCKSOURCE_LSE|enumerator|IRDA_CLOCKSOURCE_LSE = 0x08U /*!< LSE clock source */
+DECL|IRDA_CLOCKSOURCE_LSE|enumerator|IRDA_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
 DECL|IRDA_CLOCKSOURCE_PCLK1|enumerator|IRDA_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
 DECL|IRDA_CLOCKSOURCE_PCLK2|enumerator|IRDA_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
 DECL|IRDA_CLOCKSOURCE_SYSCLK|enumerator|IRDA_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|IRDA_CLOCKSOURCE_UNDEFINED|enumerator|IRDA_CLOCKSOURCE_UNDEFINED = 0x10 /*!< Undefined clock source */
 DECL|IRDA_ClockSourceTypeDef|typedef|}IRDA_ClockSourceTypeDef;
 DECL|IRDA_DMA_RX_DISABLE|macro|IRDA_DMA_RX_DISABLE
 DECL|IRDA_DMA_RX_ENABLE|macro|IRDA_DMA_RX_ENABLE
@@ -91,16 +92,23 @@ DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|PowerMode|member|uint16_t PowerMode; /*!< Specifies the IRDA power mode.
 DECL|Prescaler|member|uint8_t Prescaler; /*!< Specifies the Prescaler value for dividing the UART/USART source clock
 DECL|RxState|member|__IO HAL_IRDA_StateTypeDef RxState; /* IRDA state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /* IRDA Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /* IRDA Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /* IRDA Rx Transfer size */
-DECL|TxXferCount|member|uint16_t TxXferCount; /* IRDA Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /* IRDA Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /* IRDA Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
+DECL|__HAL_IRDA_CLEAR_FEFLAG|macro|__HAL_IRDA_CLEAR_FEFLAG
+DECL|__HAL_IRDA_CLEAR_FLAG|macro|__HAL_IRDA_CLEAR_FLAG
+DECL|__HAL_IRDA_CLEAR_IDLEFLAG|macro|__HAL_IRDA_CLEAR_IDLEFLAG
 DECL|__HAL_IRDA_CLEAR_IT|macro|__HAL_IRDA_CLEAR_IT
+DECL|__HAL_IRDA_CLEAR_NEFLAG|macro|__HAL_IRDA_CLEAR_NEFLAG
+DECL|__HAL_IRDA_CLEAR_OREFLAG|macro|__HAL_IRDA_CLEAR_OREFLAG
+DECL|__HAL_IRDA_CLEAR_PEFLAG|macro|__HAL_IRDA_CLEAR_PEFLAG
 DECL|__HAL_IRDA_DISABLE_IT|macro|__HAL_IRDA_DISABLE_IT
 DECL|__HAL_IRDA_DISABLE|macro|__HAL_IRDA_DISABLE
 DECL|__HAL_IRDA_ENABLE_IT|macro|__HAL_IRDA_ENABLE_IT
 DECL|__HAL_IRDA_ENABLE|macro|__HAL_IRDA_ENABLE
+DECL|__HAL_IRDA_FLUSH_DRREGISTER|macro|__HAL_IRDA_FLUSH_DRREGISTER
 DECL|__HAL_IRDA_GET_FLAG|macro|__HAL_IRDA_GET_FLAG
 DECL|__HAL_IRDA_GET_IT_SOURCE|macro|__HAL_IRDA_GET_IT_SOURCE
 DECL|__HAL_IRDA_GET_IT|macro|__HAL_IRDA_GET_IT
