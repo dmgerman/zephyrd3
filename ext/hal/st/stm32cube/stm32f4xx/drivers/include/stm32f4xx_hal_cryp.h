@@ -90,35 +90,35 @@ DECL|GCMCMACPhase|member|uint32_t GCMCMACPhase; /*!< Indicates the processing ph
 DECL|HAL_CRYP_BUSY_ERROR|macro|HAL_CRYP_BUSY_ERROR
 DECL|HAL_CRYP_DMA_ERROR|macro|HAL_CRYP_DMA_ERROR
 DECL|HAL_CRYP_ERROR_NONE|macro|HAL_CRYP_ERROR_NONE
-DECL|HAL_CRYP_PHASE_FINAL_OVER|enumerator|HAL_CRYP_PHASE_FINAL_OVER = 0x07, /*!< GCM/GMAC/CMAC(/CCM) final phase has been carried out */
+DECL|HAL_CRYP_PHASE_FINAL_OVER|enumerator|HAL_CRYP_PHASE_FINAL_OVER = 0x07U, /*!< GCM/GMAC/CMAC(/CCM) final phase has been carried out */
 DECL|HAL_CRYP_PHASE_FINAL|enumerator|HAL_CRYP_PHASE_FINAL = 0x03U /*!< CRYP peripheral is in final phase
-DECL|HAL_CRYP_PHASE_HEADER_OVER|enumerator|HAL_CRYP_PHASE_HEADER_OVER = 0x05, /*!< GCM/GMAC/CMAC(/CCM) header phase has been carried out */
-DECL|HAL_CRYP_PHASE_HEADER_SUSPENDED|enumerator|HAL_CRYP_PHASE_HEADER_SUSPENDED = 0x08, /*!< GCM/GMAC/CMAC(/CCM) header phase has been suspended */
-DECL|HAL_CRYP_PHASE_INIT_OVER|enumerator|HAL_CRYP_PHASE_INIT_OVER = 0x04, /*!< GCM/GMAC/CMAC(/CCM) init phase has been carried out */
-DECL|HAL_CRYP_PHASE_NOT_USED|enumerator|HAL_CRYP_PHASE_NOT_USED = 0x0a /*!< Phase is irrelevant to the current chaining mode */
-DECL|HAL_CRYP_PHASE_PAYLOAD_OVER|enumerator|HAL_CRYP_PHASE_PAYLOAD_OVER = 0x06, /*!< GCM(/CCM) payload phase has been carried out */
-DECL|HAL_CRYP_PHASE_PAYLOAD_SUSPENDED|enumerator|HAL_CRYP_PHASE_PAYLOAD_SUSPENDED = 0x09, /*!< GCM(/CCM) payload phase has been suspended */
-DECL|HAL_CRYP_PHASE_PROCESS|enumerator|HAL_CRYP_PHASE_PROCESS = 0x02, /*!< CRYP peripheral is in processing phase */
+DECL|HAL_CRYP_PHASE_HEADER_OVER|enumerator|HAL_CRYP_PHASE_HEADER_OVER = 0x05U, /*!< GCM/GMAC/CMAC(/CCM) header phase has been carried out */
+DECL|HAL_CRYP_PHASE_HEADER_SUSPENDED|enumerator|HAL_CRYP_PHASE_HEADER_SUSPENDED = 0x08U, /*!< GCM/GMAC/CMAC(/CCM) header phase has been suspended */
+DECL|HAL_CRYP_PHASE_INIT_OVER|enumerator|HAL_CRYP_PHASE_INIT_OVER = 0x04U, /*!< GCM/GMAC/CMAC(/CCM) init phase has been carried out */
+DECL|HAL_CRYP_PHASE_NOT_USED|enumerator|HAL_CRYP_PHASE_NOT_USED = 0x0AU /*!< Phase is irrelevant to the current chaining mode */
+DECL|HAL_CRYP_PHASE_PAYLOAD_OVER|enumerator|HAL_CRYP_PHASE_PAYLOAD_OVER = 0x06U, /*!< GCM(/CCM) payload phase has been carried out */
+DECL|HAL_CRYP_PHASE_PAYLOAD_SUSPENDED|enumerator|HAL_CRYP_PHASE_PAYLOAD_SUSPENDED = 0x09U, /*!< GCM(/CCM) payload phase has been suspended */
 DECL|HAL_CRYP_PHASE_PROCESS|enumerator|HAL_CRYP_PHASE_PROCESS = 0x02U, /*!< CRYP peripheral is in processing phase */
-DECL|HAL_CRYP_PHASE_READY|enumerator|HAL_CRYP_PHASE_READY = 0x01, /*!< CRYP peripheral is ready for initialization. */
+DECL|HAL_CRYP_PHASE_PROCESS|enumerator|HAL_CRYP_PHASE_PROCESS = 0x02U, /*!< CRYP peripheral is in processing phase */
 DECL|HAL_CRYP_PHASE_READY|enumerator|HAL_CRYP_PHASE_READY = 0x01U, /*!< CRYP peripheral is ready for initialization. */
-DECL|HAL_CRYP_PHASE_START|enumerator|HAL_CRYP_PHASE_START = 0x03, /*!< CRYP peripheral has been initialized but
+DECL|HAL_CRYP_PHASE_READY|enumerator|HAL_CRYP_PHASE_READY = 0x01U, /*!< CRYP peripheral is ready for initialization. */
+DECL|HAL_CRYP_PHASE_START|enumerator|HAL_CRYP_PHASE_START = 0x03U, /*!< CRYP peripheral has been initialized but
 DECL|HAL_CRYP_READ_ERROR|macro|HAL_CRYP_READ_ERROR
 DECL|HAL_CRYP_STATETypeDef|typedef|}HAL_CRYP_STATETypeDef;
 DECL|HAL_CRYP_STATETypeDef|typedef|}HAL_CRYP_STATETypeDef;
-DECL|HAL_CRYP_STATE_BUSY|enumerator|HAL_CRYP_STATE_BUSY = 0x02, /*!< CRYP internal processing is ongoing */
 DECL|HAL_CRYP_STATE_BUSY|enumerator|HAL_CRYP_STATE_BUSY = 0x02U, /*!< CRYP internal processing is ongoing */
-DECL|HAL_CRYP_STATE_ERROR|enumerator|HAL_CRYP_STATE_ERROR = 0x04, /*!< CRYP error state */
+DECL|HAL_CRYP_STATE_BUSY|enumerator|HAL_CRYP_STATE_BUSY = 0x02U, /*!< CRYP internal processing is ongoing */
 DECL|HAL_CRYP_STATE_ERROR|enumerator|HAL_CRYP_STATE_ERROR = 0x04U /*!< CRYP error state */
-DECL|HAL_CRYP_STATE_READY|enumerator|HAL_CRYP_STATE_READY = 0x01, /*!< CRYP initialized and ready for use */
+DECL|HAL_CRYP_STATE_ERROR|enumerator|HAL_CRYP_STATE_ERROR = 0x04U, /*!< CRYP error state */
 DECL|HAL_CRYP_STATE_READY|enumerator|HAL_CRYP_STATE_READY = 0x01U, /*!< CRYP initialized and ready for use */
-DECL|HAL_CRYP_STATE_RESET|enumerator|HAL_CRYP_STATE_RESET = 0x00, /*!< CRYP not yet initialized or disabled */
+DECL|HAL_CRYP_STATE_READY|enumerator|HAL_CRYP_STATE_READY = 0x01U, /*!< CRYP initialized and ready for use */
 DECL|HAL_CRYP_STATE_RESET|enumerator|HAL_CRYP_STATE_RESET = 0x00U, /*!< CRYP not yet initialized or disabled */
-DECL|HAL_CRYP_STATE_SUSPENDED|enumerator|HAL_CRYP_STATE_SUSPENDED = 0x05 /*!< CRYP suspended */
-DECL|HAL_CRYP_STATE_TIMEOUT|enumerator|HAL_CRYP_STATE_TIMEOUT = 0x03, /*!< CRYP timeout state */
+DECL|HAL_CRYP_STATE_RESET|enumerator|HAL_CRYP_STATE_RESET = 0x00U, /*!< CRYP not yet initialized or disabled */
+DECL|HAL_CRYP_STATE_SUSPENDED|enumerator|HAL_CRYP_STATE_SUSPENDED = 0x05U /*!< CRYP suspended */
 DECL|HAL_CRYP_STATE_TIMEOUT|enumerator|HAL_CRYP_STATE_TIMEOUT = 0x03U, /*!< CRYP timeout state */
-DECL|HAL_CRYP_SUSPEND_NONE|enumerator|HAL_CRYP_SUSPEND_NONE = 0x00, /*!< CRYP peripheral suspension not requested */
-DECL|HAL_CRYP_SUSPEND|enumerator|HAL_CRYP_SUSPEND = 0x01 /*!< CRYP peripheral suspension requested */
+DECL|HAL_CRYP_STATE_TIMEOUT|enumerator|HAL_CRYP_STATE_TIMEOUT = 0x03U, /*!< CRYP timeout state */
+DECL|HAL_CRYP_SUSPEND_NONE|enumerator|HAL_CRYP_SUSPEND_NONE = 0x00U, /*!< CRYP peripheral suspension not requested */
+DECL|HAL_CRYP_SUSPEND|enumerator|HAL_CRYP_SUSPEND = 0x01U /*!< CRYP peripheral suspension requested */
 DECL|HAL_CRYP_WRITE_ERROR|macro|HAL_CRYP_WRITE_ERROR
 DECL|HAL_PhaseTypeDef|typedef|}HAL_PhaseTypeDef;
 DECL|HAL_PhaseTypeDef|typedef|}HAL_PhaseTypeDef;
