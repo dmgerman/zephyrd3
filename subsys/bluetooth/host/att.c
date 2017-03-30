@@ -1,6 +1,7 @@
 DECL|ATT_CHAN|macro|ATT_CHAN
 DECL|ATT_COMMAND|enumerator|ATT_COMMAND,
 DECL|ATT_CONFIRMATION|enumerator|ATT_CONFIRMATION,
+DECL|ATT_DISCONNECTED|enumerator|ATT_DISCONNECTED,
 DECL|ATT_INDICATION|enumerator|ATT_INDICATION,
 DECL|ATT_NOTIFICATION|enumerator|ATT_NOTIFICATION,
 DECL|ATT_NUM_FLAGS|enumerator|ATT_NUM_FLAGS,
@@ -21,7 +22,6 @@ DECL|att_cb|function|static bt_conn_tx_cb_t att_cb(struct net_buf *buf)
 DECL|att_cfm_sent|function|static void att_cfm_sent(struct bt_conn *conn)
 DECL|att_chan_get|function|static struct bt_att *att_chan_get(struct bt_conn *conn)
 DECL|att_change_security|function|static int att_change_security(struct bt_conn *conn, uint8_t err)
-DECL|att_clear_flag|function|static void att_clear_flag(struct bt_conn *conn, int flag)
 DECL|att_confirm|function|static uint8_t att_confirm(struct bt_att *att, struct net_buf *buf)
 DECL|att_error_rsp|function|static uint8_t att_error_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_exec_write_req|function|static uint8_t att_exec_write_req(struct bt_att *att, struct net_buf *buf)
@@ -30,6 +30,7 @@ DECL|att_find_info_req|function|static uint8_t att_find_info_req(struct bt_att *
 DECL|att_find_info_rsp|function|static uint8_t att_find_info_rsp(struct bt_att *att, uint16_t start_handle, uint16_t end_handle)
 DECL|att_find_type_req|function|static uint8_t att_find_type_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_find_type_rsp|function|static uint8_t att_find_type_rsp(struct bt_att *att, uint16_t start_handle, uint16_t end_handle, const void *value, uint8_t value_len)
+DECL|att_get|function|static struct bt_att *att_get(struct bt_conn *conn)
 DECL|att_handle_exec_write_rsp|function|static uint8_t att_handle_exec_write_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_find_info_rsp|function|static uint8_t att_handle_find_info_rsp(struct bt_att *att,struct net_buf *buf)
 DECL|att_handle_find_type_rsp|function|static uint8_t att_handle_find_type_rsp(struct bt_att *att,struct net_buf *buf)
@@ -42,10 +43,12 @@ DECL|att_handle_rsp|function|static uint8_t att_handle_rsp(struct bt_att *att, v
 DECL|att_handle_write_rsp|function|static uint8_t att_handle_write_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handler|struct|static const struct att_handler {
 DECL|att_indicate|function|static uint8_t att_indicate(struct bt_att *att, struct net_buf *buf)
+DECL|att_is_connected|function|static inline bool att_is_connected(struct bt_att *att)
 DECL|att_mtu_req|function|static uint8_t att_mtu_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_mtu_rsp|function|static uint8_t att_mtu_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_notify|function|static uint8_t att_notify(struct bt_att *att, struct net_buf *buf)
 DECL|att_op_get_type|function|static att_type_t att_op_get_type(uint8_t op)
+DECL|att_pdu_sent|function|static void att_pdu_sent(struct bt_conn *conn)
 DECL|att_prep_write_rsp|function|static uint8_t att_prep_write_rsp(struct bt_att *att, uint16_t handle, uint16_t offset, const void *value, uint8_t len)
 DECL|att_prepare_write_req|function|static uint8_t att_prepare_write_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_process|function|static void att_process(struct bt_att *att)
@@ -142,6 +145,7 @@ DECL|rsp|member|struct bt_att_read_rsp *rsp;
 DECL|rsp|member|struct bt_att_read_type_rsp *rsp;
 DECL|send_err_rsp|function|static void send_err_rsp(struct bt_conn *conn, uint8_t req, uint16_t handle, uint8_t err)
 DECL|timeout_work|member|struct k_delayed_work timeout_work;
+DECL|tx_sem|member|struct k_sem tx_sem;
 DECL|type|member|att_type_t type;
 DECL|uuid_create|function|static bool uuid_create(struct bt_uuid *uuid, struct net_buf *buf)
 DECL|uuid|member|struct bt_uuid *uuid;
