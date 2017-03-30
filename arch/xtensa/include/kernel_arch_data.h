@@ -20,7 +20,7 @@ DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
 DECL|flags|member|uint32_t flags;
 DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
-DECL|next_thread|member|struct tcs *next_thread;
+DECL|next_thread|member|struct k_thread *next_thread;
 DECL|preempCoprocReg|member|tPreempCoprocReg preempCoprocReg;
 DECL|retval|member|uint32_t retval; /* a2 */
 DECL|s_coopCoprocReg|struct|typedef struct s_coopCoprocReg {
