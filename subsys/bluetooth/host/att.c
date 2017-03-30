@@ -61,6 +61,7 @@ DECL|att_read_rsp|function|static uint8_t att_read_rsp(struct bt_att *att, uint8
 DECL|att_read_type_req|function|static uint8_t att_read_type_req(struct bt_att *att, struct net_buf *buf)
 DECL|att_read_type_rsp|function|static uint8_t att_read_type_rsp(struct bt_att *att, struct bt_uuid *uuid, uint16_t start_handle, uint16_t end_handle)
 DECL|att_req_destroy|function|static void att_req_destroy(struct bt_att_req *req)
+DECL|att_req_sent|function|static void att_req_sent(struct bt_conn *conn)
 DECL|att_reset|function|static void att_reset(struct bt_att *att)
 DECL|att_rsp_sent|function|static void att_rsp_sent(struct bt_conn *conn)
 DECL|att_send_req|function|static int att_send_req(struct bt_att *att, struct bt_att_req *req)
