@@ -18,6 +18,7 @@ DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_t
 DECL|k_busy_wait|function|void k_busy_wait(u32_t usec_to_wait)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)
 DECL|k_thread_cancel|function|int k_thread_cancel(k_tid_t tid)
+DECL|k_thread_create|function|k_tid_t k_thread_create(struct k_thread *new_thread, char *stack,size_t stack_size, void (*entry)(void *, void *, void*), void *p1, void *p2, void *p3, int prio, u32_t options, s32_t delay)
 DECL|k_thread_custom_data_get|function|void *k_thread_custom_data_get(void)
 DECL|k_thread_custom_data_set|function|void k_thread_custom_data_set(void *value)
 DECL|k_thread_resume|function|void k_thread_resume(struct k_thread *thread)

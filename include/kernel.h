@@ -191,6 +191,7 @@ DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|char *init_stack;
+DECL|init_thread|member|struct k_thread *init_thread;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
 DECL|k_cycle_get_32|macro|k_cycle_get_32
@@ -318,7 +319,7 @@ DECL|tcs|macro|tcs
 DECL|thread_state|member|u8_t thread_state;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
-DECL|thread|member|struct k_thread *thread;
+DECL|thread|member|struct k_thread thread;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
