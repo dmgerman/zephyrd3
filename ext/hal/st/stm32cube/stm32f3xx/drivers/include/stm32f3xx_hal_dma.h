@@ -1,5 +1,5 @@
+DECL|ChannelIndex|member|uint32_t ChannelIndex; /*!< DMA Channel Index */
 DECL|DMA_CIRCULAR|macro|DMA_CIRCULAR
-DECL|DMA_ControlTypeDef|typedef|} DMA_ControlTypeDef;
 DECL|DMA_FLAG_GL1|macro|DMA_FLAG_GL1
 DECL|DMA_FLAG_GL2|macro|DMA_FLAG_GL2
 DECL|DMA_FLAG_GL3|macro|DMA_FLAG_GL3
@@ -40,7 +40,6 @@ DECL|DMA_MEMORY_TO_MEMORY|macro|DMA_MEMORY_TO_MEMORY
 DECL|DMA_MEMORY_TO_PERIPH|macro|DMA_MEMORY_TO_PERIPH
 DECL|DMA_MINC_DISABLE|macro|DMA_MINC_DISABLE
 DECL|DMA_MINC_ENABLE|macro|DMA_MINC_ENABLE
-DECL|DMA_MODE|enumerator|DMA_MODE = 0, /*!< Control related DMA mode Parameter in DMA_InitTypeDef */
 DECL|DMA_NORMAL|macro|DMA_NORMAL
 DECL|DMA_PDATAALIGN_BYTE|macro|DMA_PDATAALIGN_BYTE
 DECL|DMA_PDATAALIGN_HALFWORD|macro|DMA_PDATAALIGN_HALFWORD
@@ -52,23 +51,28 @@ DECL|DMA_PRIORITY_HIGH|macro|DMA_PRIORITY_HIGH
 DECL|DMA_PRIORITY_LOW|macro|DMA_PRIORITY_LOW
 DECL|DMA_PRIORITY_MEDIUM|macro|DMA_PRIORITY_MEDIUM
 DECL|DMA_PRIORITY_VERY_HIGH|macro|DMA_PRIORITY_VERY_HIGH
-DECL|DMA_PRIORITY|enumerator|DMA_PRIORITY = 1, /*!< Control related priority level Parameter in DMA_InitTypeDef */
 DECL|Direction|member|uint32_t Direction; /*!< Specifies if the data will be transferred from memory to peripheral,
+DECL|DmaBaseAddress|member|DMA_TypeDef *DmaBaseAddress; /*!< DMA Channel Base Address */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DMA Error code */
+DECL|HAL_DMA_CallbackIDTypeDef|typedef|}HAL_DMA_CallbackIDTypeDef;
 DECL|HAL_DMA_ERROR_NONE|macro|HAL_DMA_ERROR_NONE
+DECL|HAL_DMA_ERROR_NOT_SUPPORTED|macro|HAL_DMA_ERROR_NOT_SUPPORTED
 DECL|HAL_DMA_ERROR_NO_XFER|macro|HAL_DMA_ERROR_NO_XFER
 DECL|HAL_DMA_ERROR_TE|macro|HAL_DMA_ERROR_TE
 DECL|HAL_DMA_ERROR_TIMEOUT|macro|HAL_DMA_ERROR_TIMEOUT
-DECL|HAL_DMA_FULL_TRANSFER|enumerator|HAL_DMA_FULL_TRANSFER = 0x00, /*!< Full transfer */
-DECL|HAL_DMA_HALF_TRANSFER|enumerator|HAL_DMA_HALF_TRANSFER = 0x01, /*!< Half Transfer */
+DECL|HAL_DMA_FULL_TRANSFER|enumerator|HAL_DMA_FULL_TRANSFER = 0x00U, /*!< Full transfer */
+DECL|HAL_DMA_HALF_TRANSFER|enumerator|HAL_DMA_HALF_TRANSFER = 0x01 /*!< Half Transfer */
 DECL|HAL_DMA_LevelCompleteTypeDef|typedef|}HAL_DMA_LevelCompleteTypeDef;
-DECL|HAL_DMA_STATE_BUSY|enumerator|HAL_DMA_STATE_BUSY = 0x02, /*!< DMA process is ongoing */
-DECL|HAL_DMA_STATE_ERROR|enumerator|HAL_DMA_STATE_ERROR = 0x04, /*!< DMA error state */
-DECL|HAL_DMA_STATE_READY_HALF|enumerator|HAL_DMA_STATE_READY_HALF = 0x11, /*!< DMA Half process success */
-DECL|HAL_DMA_STATE_READY|enumerator|HAL_DMA_STATE_READY = 0x01, /*!< DMA initialized and ready for use */
-DECL|HAL_DMA_STATE_RESET|enumerator|HAL_DMA_STATE_RESET = 0x00, /*!< DMA not yet initialized or disabled */
-DECL|HAL_DMA_STATE_TIMEOUT|enumerator|HAL_DMA_STATE_TIMEOUT = 0x03, /*!< DMA timeout state */
+DECL|HAL_DMA_STATE_BUSY|enumerator|HAL_DMA_STATE_BUSY = 0x02U, /*!< DMA process is ongoing */
+DECL|HAL_DMA_STATE_READY|enumerator|HAL_DMA_STATE_READY = 0x01U, /*!< DMA initialized and ready for use */
+DECL|HAL_DMA_STATE_RESET|enumerator|HAL_DMA_STATE_RESET = 0x00U, /*!< DMA not yet initialized or disabled */
+DECL|HAL_DMA_STATE_TIMEOUT|enumerator|HAL_DMA_STATE_TIMEOUT = 0x03 /*!< DMA timeout state */
 DECL|HAL_DMA_StateTypeDef|typedef|}HAL_DMA_StateTypeDef;
+DECL|HAL_DMA_XFER_ABORT_CB_ID|enumerator|HAL_DMA_XFER_ABORT_CB_ID = 0x03U, /*!< Abort */
+DECL|HAL_DMA_XFER_ALL_CB_ID|enumerator|HAL_DMA_XFER_ALL_CB_ID = 0x04 /*!< All */
+DECL|HAL_DMA_XFER_CPLT_CB_ID|enumerator|HAL_DMA_XFER_CPLT_CB_ID = 0x00U, /*!< Full transfer */
+DECL|HAL_DMA_XFER_ERROR_CB_ID|enumerator|HAL_DMA_XFER_ERROR_CB_ID = 0x02U, /*!< Error */
+DECL|HAL_DMA_XFER_HALFCPLT_CB_ID|enumerator|HAL_DMA_XFER_HALFCPLT_CB_ID = 0x01U, /*!< Half transfer */
 DECL|IS_DMA_BUFFER_SIZE|macro|IS_DMA_BUFFER_SIZE
 DECL|IS_DMA_DIRECTION|macro|IS_DMA_DIRECTION
 DECL|IS_DMA_MEMORY_DATA_SIZE|macro|IS_DMA_MEMORY_DATA_SIZE

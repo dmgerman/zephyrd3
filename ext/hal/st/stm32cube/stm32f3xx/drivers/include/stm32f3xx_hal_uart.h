@@ -1,5 +1,5 @@
 DECL|AddressLength|member|uint16_t AddressLength; /*!< Specifies whether the address is 4 or 7-bit long.
-DECL|Address|member|uint8_t Address; /*!< UART/USART node address (7-bit long max) */
+DECL|Address|member|uint8_t Address; /*!< UART/USART node address (7-bit long max). */
 DECL|AdvFeatureInit|member|uint32_t AdvFeatureInit; /*!< Specifies which advanced UART features is initialized. Several
 DECL|AdvancedInit|member|UART_AdvFeatureInitTypeDef AdvancedInit; /*!< UART Advanced Features initialization parameters */
 DECL|AutoBaudRateEnable|member|uint32_t AutoBaudRateEnable; /*!< Specifies whether auto Baud rate detection is enabled.
@@ -8,6 +8,7 @@ DECL|BaudRate|member|uint32_t BaudRate; /*!< This member configures the UART com
 DECL|DMADisableonRxError|member|uint32_t DMADisableonRxError; /*!< Specifies whether the DMA is disabled in case of reception error.
 DECL|DataInvert|member|uint32_t DataInvert; /*!< Specifies whether data are inverted (positive/direct logic
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< UART Error code */
+DECL|HAL_UART_ERROR_BUSY|macro|HAL_UART_ERROR_BUSY
 DECL|HAL_UART_ERROR_DMA|macro|HAL_UART_ERROR_DMA
 DECL|HAL_UART_ERROR_FE|macro|HAL_UART_ERROR_FE
 DECL|HAL_UART_ERROR_NE|macro|HAL_UART_ERROR_NE
@@ -65,17 +66,17 @@ DECL|MSBFirst|member|uint32_t MSBFirst; /*!< Specifies whether MSB is sent first
 DECL|Mask|member|uint16_t Mask; /*!< UART Rx RDR register mask */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|OneBitSampling|member|uint32_t OneBitSampling; /*!< Specifies whether a single sample or three samples' majority vote is selected.
-DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to f_PCLK/8).
+DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to f_PCLK/8U).
 DECL|OverrunDisable|member|uint32_t OverrunDisable; /*!< Specifies whether the reception overrun detection is disabled.
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|RxPinLevelInvert|member|uint32_t RxPinLevelInvert; /*!< Specifies whether the RX pin active level is inverted.
 DECL|RxState|member|__IO HAL_UART_StateTypeDef RxState; /*!< UART state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< UART Rx Transfer size */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
 DECL|Swap|member|uint32_t Swap; /*!< Specifies whether TX and RX pins are swapped.
 DECL|TxPinLevelInvert|member|uint32_t TxPinLevelInvert; /*!< Specifies whether the TX pin active level is inverted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< UART Tx Transfer size */
 DECL|UART_ADDRESS_DETECT_4B|macro|UART_ADDRESS_DETECT_4B
 DECL|UART_ADDRESS_DETECT_7B|macro|UART_ADDRESS_DETECT_7B
@@ -126,12 +127,12 @@ DECL|UART_CLEAR_PEF|macro|UART_CLEAR_PEF
 DECL|UART_CLEAR_RTOF|macro|UART_CLEAR_RTOF
 DECL|UART_CLEAR_TCF|macro|UART_CLEAR_TCF
 DECL|UART_CLEAR_WUF|macro|UART_CLEAR_WUF
-DECL|UART_CLOCKSOURCE_HSI|enumerator|UART_CLOCKSOURCE_HSI = 0x02, /*!< HSI clock source */
-DECL|UART_CLOCKSOURCE_LSE|enumerator|UART_CLOCKSOURCE_LSE = 0x08, /*!< LSE clock source */
-DECL|UART_CLOCKSOURCE_PCLK1|enumerator|UART_CLOCKSOURCE_PCLK1 = 0x00, /*!< PCLK1 clock source */
-DECL|UART_CLOCKSOURCE_PCLK2|enumerator|UART_CLOCKSOURCE_PCLK2 = 0x01, /*!< PCLK2 clock source */
-DECL|UART_CLOCKSOURCE_SYSCLK|enumerator|UART_CLOCKSOURCE_SYSCLK = 0x04, /*!< SYSCLK clock source */
-DECL|UART_CLOCKSOURCE_UNDEFINED|enumerator|UART_CLOCKSOURCE_UNDEFINED = 0x10 /*!< Undefined clock source */
+DECL|UART_CLOCKSOURCE_HSI|enumerator|UART_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
+DECL|UART_CLOCKSOURCE_LSE|enumerator|UART_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
+DECL|UART_CLOCKSOURCE_PCLK1|enumerator|UART_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
+DECL|UART_CLOCKSOURCE_PCLK2|enumerator|UART_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
+DECL|UART_CLOCKSOURCE_SYSCLK|enumerator|UART_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|UART_CLOCKSOURCE_UNDEFINED|enumerator|UART_CLOCKSOURCE_UNDEFINED = 0x10U /*!< Undefined clock source */
 DECL|UART_CR1_DEAT_ADDRESS_LSB_POS|macro|UART_CR1_DEAT_ADDRESS_LSB_POS
 DECL|UART_CR1_DEDT_ADDRESS_LSB_POS|macro|UART_CR1_DEDT_ADDRESS_LSB_POS
 DECL|UART_CR2_ADDRESS_LSB_POS|macro|UART_CR2_ADDRESS_LSB_POS

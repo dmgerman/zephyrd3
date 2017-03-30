@@ -1,15 +1,15 @@
-DECL|CommonMode|member|uint32_t CommonMode; /*!< Specifies the common mode setting (VSSA, VDDA, VDDA/2).
+DECL|CommonMode|member|uint32_t CommonMode; /*!< Specifies the common mode setting (VSSA, VDDA, VDDA/2U).
 DECL|ErrorCode|member|uint32_t ErrorCode; /*!< SDADC Error code */
 DECL|ExtTriggerEdge|member|uint32_t ExtTriggerEdge; /*!< Rising, falling or both edges selected */
 DECL|FastConversionMode|member|uint32_t FastConversionMode; /*!< Specifies if Fast conversion mode is enabled or not.
 DECL|Gain|member|uint32_t Gain; /*!< Specifies the gain setting.
-DECL|HAL_SDADC_STATE_CALIB|enumerator|HAL_SDADC_STATE_CALIB = 0x02, /*!< SDADC calibration in progress */
-DECL|HAL_SDADC_STATE_ERROR|enumerator|HAL_SDADC_STATE_ERROR = 0xFF, /*!< SDADC state error */
-DECL|HAL_SDADC_STATE_INJ|enumerator|HAL_SDADC_STATE_INJ = 0x04, /*!< SDADC injected conversion in progress */
-DECL|HAL_SDADC_STATE_READY|enumerator|HAL_SDADC_STATE_READY = 0x01, /*!< SDADC initialized and ready for use */
-DECL|HAL_SDADC_STATE_REG_INJ|enumerator|HAL_SDADC_STATE_REG_INJ = 0x05, /*!< SDADC regular and injected conversions in progress */
-DECL|HAL_SDADC_STATE_REG|enumerator|HAL_SDADC_STATE_REG = 0x03, /*!< SDADC regular conversion in progress */
-DECL|HAL_SDADC_STATE_RESET|enumerator|HAL_SDADC_STATE_RESET = 0x00, /*!< SDADC not initialized */
+DECL|HAL_SDADC_STATE_CALIB|enumerator|HAL_SDADC_STATE_CALIB = 0x02U, /*!< SDADC calibration in progress */
+DECL|HAL_SDADC_STATE_ERROR|enumerator|HAL_SDADC_STATE_ERROR = 0xFFU, /*!< SDADC state error */
+DECL|HAL_SDADC_STATE_INJ|enumerator|HAL_SDADC_STATE_INJ = 0x04U, /*!< SDADC injected conversion in progress */
+DECL|HAL_SDADC_STATE_READY|enumerator|HAL_SDADC_STATE_READY = 0x01U, /*!< SDADC initialized and ready for use */
+DECL|HAL_SDADC_STATE_REG_INJ|enumerator|HAL_SDADC_STATE_REG_INJ = 0x05U, /*!< SDADC regular and injected conversions in progress */
+DECL|HAL_SDADC_STATE_REG|enumerator|HAL_SDADC_STATE_REG = 0x03U, /*!< SDADC regular conversion in progress */
+DECL|HAL_SDADC_STATE_RESET|enumerator|HAL_SDADC_STATE_RESET = 0x00U, /*!< SDADC not initialized */
 DECL|HAL_SDADC_StateTypeDef|typedef|}HAL_SDADC_StateTypeDef;
 DECL|IS_SDADC_CALIB_SEQUENCE|macro|IS_SDADC_CALIB_SEQUENCE
 DECL|IS_SDADC_COMMON_MODE|macro|IS_SDADC_COMMON_MODE

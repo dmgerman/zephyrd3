@@ -9,7 +9,7 @@ DECL|CLKPolarity|member|uint16_t CLKPolarity; /*!< Specifies the steady state of
 DECL|DMADisableonRxError|member|uint32_t DMADisableonRxError; /*!< Specifies whether the DMA is disabled in case of reception error.
 DECL|DataInvert|member|uint32_t DataInvert; /*!< Specifies whether data are inverted (positive/direct logic
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< SmartCard Error code
-DECL|GuardTime|member|uint8_t GuardTime; /*!< Specifies the SmartCard Guard Time */
+DECL|GuardTime|member|uint8_t GuardTime; /*!< Specifies the SmartCard Guard Time applied after stop bits. */
 DECL|HAL_SMARTCARD_ERROR_DMA|macro|HAL_SMARTCARD_ERROR_DMA
 DECL|HAL_SMARTCARD_ERROR_FE|macro|HAL_SMARTCARD_ERROR_FE
 DECL|HAL_SMARTCARD_ERROR_NE|macro|HAL_SMARTCARD_ERROR_NE
@@ -58,10 +58,10 @@ DECL|NACKEnable|member|uint16_t NACKEnable; /*!< Specifies whether the SmartCard
 DECL|OneBitSampling|member|uint16_t OneBitSampling; /*!< Specifies whether a single sample or three samples' majority vote is selected.
 DECL|OverrunDisable|member|uint32_t OverrunDisable; /*!< Specifies whether the reception overrun detection is disabled.
 DECL|Parity|member|uint16_t Parity; /*!< Specifies the parity mode.
-DECL|Prescaler|member|uint8_t Prescaler; /*!< Specifies the SmartCard Prescaler */
+DECL|Prescaler|member|uint8_t Prescaler; /*!< Specifies the SmartCard Prescaler. */
 DECL|RxPinLevelInvert|member|uint32_t RxPinLevelInvert; /*!< Specifies whether the RX pin active level is inverted.
 DECL|RxState|member|__IO HAL_SMARTCARD_StateTypeDef RxState; /*!< SmartCard state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< SmartCard Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< SmartCard Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SmartCard Rx Transfer size */
 DECL|SMARTCARD_ADVFEATURE_DATAINVERT_INIT|macro|SMARTCARD_ADVFEATURE_DATAINVERT_INIT
 DECL|SMARTCARD_ADVFEATURE_DATAINV_DISABLE|macro|SMARTCARD_ADVFEATURE_DATAINV_DISABLE
@@ -94,12 +94,12 @@ DECL|SMARTCARD_CLEAR_OREF|macro|SMARTCARD_CLEAR_OREF
 DECL|SMARTCARD_CLEAR_PEF|macro|SMARTCARD_CLEAR_PEF
 DECL|SMARTCARD_CLEAR_RTOF|macro|SMARTCARD_CLEAR_RTOF
 DECL|SMARTCARD_CLEAR_TCF|macro|SMARTCARD_CLEAR_TCF
-DECL|SMARTCARD_CLOCKSOURCE_HSI|enumerator|SMARTCARD_CLOCKSOURCE_HSI = 0x02, /*!< HSI clock source */
-DECL|SMARTCARD_CLOCKSOURCE_LSE|enumerator|SMARTCARD_CLOCKSOURCE_LSE = 0x08, /*!< LSE clock source */
-DECL|SMARTCARD_CLOCKSOURCE_PCLK1|enumerator|SMARTCARD_CLOCKSOURCE_PCLK1 = 0x00, /*!< PCLK1 clock source */
-DECL|SMARTCARD_CLOCKSOURCE_PCLK2|enumerator|SMARTCARD_CLOCKSOURCE_PCLK2 = 0x01, /*!< PCLK2 clock source */
-DECL|SMARTCARD_CLOCKSOURCE_SYSCLK|enumerator|SMARTCARD_CLOCKSOURCE_SYSCLK = 0x04, /*!< SYSCLK clock source */
-DECL|SMARTCARD_CLOCKSOURCE_UNDEFINED|enumerator|SMARTCARD_CLOCKSOURCE_UNDEFINED = 0x10 /*!< undefined clock source */
+DECL|SMARTCARD_CLOCKSOURCE_HSI|enumerator|SMARTCARD_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
+DECL|SMARTCARD_CLOCKSOURCE_LSE|enumerator|SMARTCARD_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
+DECL|SMARTCARD_CLOCKSOURCE_PCLK1|enumerator|SMARTCARD_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
+DECL|SMARTCARD_CLOCKSOURCE_PCLK2|enumerator|SMARTCARD_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
+DECL|SMARTCARD_CLOCKSOURCE_SYSCLK|enumerator|SMARTCARD_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|SMARTCARD_CLOCKSOURCE_UNDEFINED|enumerator|SMARTCARD_CLOCKSOURCE_UNDEFINED = 0x10U /*!< undefined clock source */
 DECL|SMARTCARD_CR3_SCARCNT_LSB_POS|macro|SMARTCARD_CR3_SCARCNT_LSB_POS
 DECL|SMARTCARD_ClockSourceTypeDef|typedef|}SMARTCARD_ClockSourceTypeDef;
 DECL|SMARTCARD_FLAG_BUSY|macro|SMARTCARD_FLAG_BUSY
@@ -153,12 +153,12 @@ DECL|SMARTCARD_TIMEOUT_DISABLE|macro|SMARTCARD_TIMEOUT_DISABLE
 DECL|SMARTCARD_TIMEOUT_ENABLE|macro|SMARTCARD_TIMEOUT_ENABLE
 DECL|SMARTCARD_TXDATA_FLUSH_REQUEST|macro|SMARTCARD_TXDATA_FLUSH_REQUEST
 DECL|SMARTCARD_WORDLENGTH_9B|macro|SMARTCARD_WORDLENGTH_9B
-DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits @ref SMARTCARD_Stop_Bits.
+DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits.
 DECL|Swap|member|uint32_t Swap; /*!< Specifies whether TX and RX pins are swapped.
 DECL|TimeOutEnable|member|uint32_t TimeOutEnable; /*!< Specifies whether the receiver timeout is enabled.
 DECL|TimeOutValue|member|uint32_t TimeOutValue; /*!< Specifies the receiver time out value in number of baud blocks:
 DECL|TxPinLevelInvert|member|uint32_t TxPinLevelInvert; /*!< Specifies whether the TX pin active level is inverted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< SmartCard Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< SmartCard Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SmartCard Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
 DECL|__HAL_SMARTCARD_CLEAR_FEFLAG|macro|__HAL_SMARTCARD_CLEAR_FEFLAG

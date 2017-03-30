@@ -51,6 +51,22 @@ DECL|CEC_InitTypeDef|typedef|}CEC_InitTypeDef;
 DECL|CEC_LBPE_ERRORBIT_GENERATION|macro|CEC_LBPE_ERRORBIT_GENERATION
 DECL|CEC_LBPE_ERRORBIT_NO_GENERATION|macro|CEC_LBPE_ERRORBIT_NO_GENERATION
 DECL|CEC_NO_RX_STOP_ON_BRE|macro|CEC_NO_RX_STOP_ON_BRE
+DECL|CEC_OWN_ADDRESS_0|macro|CEC_OWN_ADDRESS_0
+DECL|CEC_OWN_ADDRESS_10|macro|CEC_OWN_ADDRESS_10
+DECL|CEC_OWN_ADDRESS_11|macro|CEC_OWN_ADDRESS_11
+DECL|CEC_OWN_ADDRESS_12|macro|CEC_OWN_ADDRESS_12
+DECL|CEC_OWN_ADDRESS_13|macro|CEC_OWN_ADDRESS_13
+DECL|CEC_OWN_ADDRESS_14|macro|CEC_OWN_ADDRESS_14
+DECL|CEC_OWN_ADDRESS_1|macro|CEC_OWN_ADDRESS_1
+DECL|CEC_OWN_ADDRESS_2|macro|CEC_OWN_ADDRESS_2
+DECL|CEC_OWN_ADDRESS_3|macro|CEC_OWN_ADDRESS_3
+DECL|CEC_OWN_ADDRESS_4|macro|CEC_OWN_ADDRESS_4
+DECL|CEC_OWN_ADDRESS_5|macro|CEC_OWN_ADDRESS_5
+DECL|CEC_OWN_ADDRESS_6|macro|CEC_OWN_ADDRESS_6
+DECL|CEC_OWN_ADDRESS_7|macro|CEC_OWN_ADDRESS_7
+DECL|CEC_OWN_ADDRESS_8|macro|CEC_OWN_ADDRESS_8
+DECL|CEC_OWN_ADDRESS_9|macro|CEC_OWN_ADDRESS_9
+DECL|CEC_OWN_ADDRESS_NONE|macro|CEC_OWN_ADDRESS_NONE
 DECL|CEC_REDUCED_LISTENING_MODE|macro|CEC_REDUCED_LISTENING_MODE
 DECL|CEC_RX_STOP_ON_BRE|macro|CEC_RX_STOP_ON_BRE
 DECL|CEC_SFT_START_ON_TXSOM|macro|CEC_SFT_START_ON_TXSOM
@@ -67,14 +83,13 @@ DECL|HAL_CEC_ERROR_SBPE|macro|HAL_CEC_ERROR_SBPE
 DECL|HAL_CEC_ERROR_TXACKE|macro|HAL_CEC_ERROR_TXACKE
 DECL|HAL_CEC_ERROR_TXERR|macro|HAL_CEC_ERROR_TXERR
 DECL|HAL_CEC_ERROR_TXUDR|macro|HAL_CEC_ERROR_TXUDR
-DECL|HAL_CEC_STATE_BUSY_RX|enumerator|HAL_CEC_STATE_BUSY_RX = 0x04, /*!< Data Reception process is ongoing */
-DECL|HAL_CEC_STATE_BUSY_TX|enumerator|HAL_CEC_STATE_BUSY_TX = 0x03, /*!< Data Transmission process is ongoing */
-DECL|HAL_CEC_STATE_BUSY|enumerator|HAL_CEC_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_CEC_STATE_ERROR|enumerator|HAL_CEC_STATE_ERROR = 0x07 /*!< State Error */
-DECL|HAL_CEC_STATE_READY|enumerator|HAL_CEC_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_CEC_STATE_RESET|enumerator|HAL_CEC_STATE_RESET = 0x00, /*!< Peripheral Reset state */
-DECL|HAL_CEC_STATE_STANDBY_RX|enumerator|HAL_CEC_STATE_STANDBY_RX = 0x05, /*!< IP ready to receive, doesn't prevent IP to transmit */
-DECL|HAL_CEC_STATE_TIMEOUT|enumerator|HAL_CEC_STATE_TIMEOUT = 0x06, /*!< Timeout state */
+DECL|HAL_CEC_STATE_BUSY_RX_TX|enumerator|HAL_CEC_STATE_BUSY_RX_TX = 0x23U, /*!< an internal process is ongoing
+DECL|HAL_CEC_STATE_BUSY_RX|enumerator|HAL_CEC_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing
+DECL|HAL_CEC_STATE_BUSY_TX|enumerator|HAL_CEC_STATE_BUSY_TX = 0x21U, /*!< Data Transmission process is ongoing
+DECL|HAL_CEC_STATE_BUSY|enumerator|HAL_CEC_STATE_BUSY = 0x24U, /*!< an internal process is ongoing
+DECL|HAL_CEC_STATE_ERROR|enumerator|HAL_CEC_STATE_ERROR = 0x60U /*!< Error Value is allowed for gState only */
+DECL|HAL_CEC_STATE_READY|enumerator|HAL_CEC_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use
+DECL|HAL_CEC_STATE_RESET|enumerator|HAL_CEC_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized
 DECL|HAL_CEC_StateTypeDef|typedef|}HAL_CEC_StateTypeDef;
 DECL|IS_CEC_ADDRESS|macro|IS_CEC_ADDRESS
 DECL|IS_CEC_BREERRORBITGEN|macro|IS_CEC_BREERRORBITGEN
@@ -83,21 +98,21 @@ DECL|IS_CEC_BROADCASTERROR_NO_ERRORBIT_GENERATION|macro|IS_CEC_BROADCASTERROR_NO
 DECL|IS_CEC_LBPEERRORBITGEN|macro|IS_CEC_LBPEERRORBITGEN
 DECL|IS_CEC_LISTENING_MODE|macro|IS_CEC_LISTENING_MODE
 DECL|IS_CEC_MSGSIZE|macro|IS_CEC_MSGSIZE
-DECL|IS_CEC_OAR_ADDRESS|macro|IS_CEC_OAR_ADDRESS
+DECL|IS_CEC_OWN_ADDRESS|macro|IS_CEC_OWN_ADDRESS
 DECL|IS_CEC_SFTOP|macro|IS_CEC_SFTOP
 DECL|IS_CEC_SIGNALFREETIME|macro|IS_CEC_SIGNALFREETIME
 DECL|IS_CEC_TOLERANCE|macro|IS_CEC_TOLERANCE
-DECL|InitiatorAddress|member|uint8_t InitiatorAddress; /* Initiator address (source logical address, sent in each header) */
 DECL|Init|member|CEC_InitTypeDef Init; /*!< CEC communication parameters */
 DECL|Instance|member|CEC_TypeDef *Instance; /*!< CEC registers base address */
 DECL|LBPEErrorBitGen|member|uint32_t LBPEErrorBitGen; /*!< Set LBPEGEN bit @ref CEC_LBPEErrorBitGen : specifies whether or not an Error-Bit is generated on the
 DECL|ListenMode|member|uint32_t ListenMode; /*!< Set LSTN bit @ref CEC_Listening_Mode : specifies device listening mode. It can take two values:
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
-DECL|OwnAddress|member|uint32_t OwnAddress; /*!< Set OAR field, specifies CEC device address within a 15-bit long field */
+DECL|OwnAddress|member|uint16_t OwnAddress; /*!< Own addresses configuration
+DECL|RxBuffer|member|uint8_t *RxBuffer; /*!< CEC Rx buffer pointeur */
+DECL|RxState|member|HAL_CEC_StateTypeDef RxState; /*!< CEC state information related to Rx operations.
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< CEC Rx Transfer size, 0: header received only */
 DECL|SignalFreeTimeOption|member|uint32_t SignalFreeTimeOption; /*!< Set SFTOP bit @ref CEC_SFT_Option : specifies when SFT timer starts.
 DECL|SignalFreeTime|member|uint32_t SignalFreeTime; /*!< Set SFT field, specifies the Signal Free Time.
-DECL|State|member|HAL_CEC_StateTypeDef State; /*!< CEC communication state */
 DECL|Tolerance|member|uint32_t Tolerance; /*!< Set RXTOL bit, specifies the tolerance accepted on the received waveforms,
 DECL|TxXferCount|member|uint16_t TxXferCount; /*!< CEC Tx Transfer Counter */
 DECL|__HAL_CEC_CLEAR_FLAG|macro|__HAL_CEC_CLEAR_FLAG
@@ -115,5 +130,5 @@ DECL|__HAL_CEC_LAST_BYTE_TX_SET|macro|__HAL_CEC_LAST_BYTE_TX_SET
 DECL|__HAL_CEC_RESET_HANDLE_STATE|macro|__HAL_CEC_RESET_HANDLE_STATE
 DECL|__HAL_CEC_SET_OAR|macro|__HAL_CEC_SET_OAR
 DECL|__STM32F3xx_HAL_CEC_H|macro|__STM32F3xx_HAL_CEC_H
-DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to CEC Rx transfer Buffer */
+DECL|gState|member|HAL_CEC_StateTypeDef gState; /*!< CEC state information related to global Handle management
 DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to CEC Tx transfer Buffer */

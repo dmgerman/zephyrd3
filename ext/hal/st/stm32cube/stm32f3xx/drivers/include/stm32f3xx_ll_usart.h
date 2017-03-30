@@ -327,12 +327,6 @@ DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether USART ove
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
 DECL|TransferDirection|member|uint32_t TransferDirection; /*!< Specifies whether the Receive and/or Transmit mode is enabled or disabled.
-DECL|USART_POSITION_CR1_DEAT|macro|USART_POSITION_CR1_DEAT
-DECL|USART_POSITION_CR1_DEDT|macro|USART_POSITION_CR1_DEDT
-DECL|USART_POSITION_CR2_ADD|macro|USART_POSITION_CR2_ADD
-DECL|USART_POSITION_CR3_SCARCNT|macro|USART_POSITION_CR3_SCARCNT
-DECL|USART_POSITION_GTPR_GT|macro|USART_POSITION_GTPR_GT
-DECL|USART_POSITION_RTOR_BLEN|macro|USART_POSITION_RTOR_BLEN
 DECL|__LL_USART_DIV_SAMPLING16|macro|__LL_USART_DIV_SAMPLING16
 DECL|__LL_USART_DIV_SAMPLING8|macro|__LL_USART_DIV_SAMPLING8
 DECL|__STM32F3xx_LL_USART_H|macro|__STM32F3xx_LL_USART_H

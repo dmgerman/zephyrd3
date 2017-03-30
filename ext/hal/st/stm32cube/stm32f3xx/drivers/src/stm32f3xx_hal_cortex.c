@@ -1,4 +1,6 @@
 DECL|HAL_MPU_ConfigRegion|function|void HAL_MPU_ConfigRegion(MPU_Region_InitTypeDef *MPU_Init)
+DECL|HAL_MPU_Disable|function|void HAL_MPU_Disable(void)
+DECL|HAL_MPU_Enable|function|void HAL_MPU_Enable(uint32_t MPU_Control)
 DECL|HAL_NVIC_ClearPendingIRQ|function|void HAL_NVIC_ClearPendingIRQ(IRQn_Type IRQn)
 DECL|HAL_NVIC_DisableIRQ|function|void HAL_NVIC_DisableIRQ(IRQn_Type IRQn)
 DECL|HAL_NVIC_EnableIRQ|function|void HAL_NVIC_EnableIRQ(IRQn_Type IRQn)
