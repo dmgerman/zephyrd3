@@ -60,8 +60,6 @@ DECL|_NET_IEEE802154_CODE|macro|_NET_IEEE802154_CODE
 DECL|_NET_IEEE802154_EVENT|macro|_NET_IEEE802154_EVENT
 DECL|_NET_IEEE802154_LAYER|macro|_NET_IEEE802154_LAYER
 DECL|__IEEE802154_H__|macro|__IEEE802154_H__
-DECL|__packed|variable|__packed
-DECL|__packed|variable|__packed
 DECL|_unused|member|uint8_t _unused : 3;
 DECL|_unused|member|uint8_t _unused : 3;
 DECL|_unused|member|uint8_t _unused : 5;
