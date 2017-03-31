@@ -3,12 +3,15 @@ DECL|CC2520_FCS_LENGTH|macro|CC2520_FCS_LENGTH
 DECL|CC2520_TX_THRESHOLD|macro|CC2520_TX_THRESHOLD
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|_cc2520_crypto_ccm|function|static int _cc2520_crypto_ccm(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, uint8_t *ccm_nonce)
+DECL|_cc2520_crypto_uccm|function|static int _cc2520_crypto_uccm(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, uint8_t *ccm_nonce)
 DECL|_cc2520_print_errors|function|static inline void _cc2520_print_errors(struct cc2520_context *cc2520)
 DECL|_cc2520_print_errors|macro|_cc2520_print_errors
 DECL|_cc2520_print_exceptions|function|static inline void _cc2520_print_exceptions(struct cc2520_context *cc2520)
 DECL|_cc2520_print_exceptions|macro|_cc2520_print_exceptions
 DECL|_cc2520_print_gpio_config|function|static inline void _cc2520_print_gpio_config(struct device *dev)
 DECL|_cc2520_print_gpio_config|macro|_cc2520_print_gpio_config
+DECL|_cc2520_read_ram|function|static bool _cc2520_read_ram(struct cc2520_spi *spi, uint16_t addr, uint8_t *data_buf, uint8_t len)
 DECL|_cc2520_read_reg|function|uint8_t _cc2520_read_reg(struct cc2520_spi *spi, bool freg, uint8_t addr)
 DECL|_cc2520_status|function|static uint8_t _cc2520_status(struct cc2520_spi *spi)
 DECL|_cc2520_write_ram|function|bool _cc2520_write_ram(struct cc2520_spi *spi, uint16_t addr, uint8_t *data_buf, uint8_t len)
@@ -16,6 +19,11 @@ DECL|_cc2520_write_reg|function|bool _cc2520_write_reg(struct cc2520_spi *spi, b
 DECL|_usleep|macro|_usleep
 DECL|cc2520_cca|function|static int cc2520_cca(struct device *dev)
 DECL|cc2520_context_data|variable|cc2520_context_data
+DECL|cc2520_crypto_api|variable|cc2520_crypto_api
+DECL|cc2520_crypto_begin_session|function|static int cc2520_crypto_begin_session(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)
+DECL|cc2520_crypto_free_session|function|static int cc2520_crypto_free_session(struct device *dev, struct cipher_ctx *ctx)
+DECL|cc2520_crypto_hw_caps|function|static int cc2520_crypto_hw_caps(struct device *dev)
+DECL|cc2520_crypto_init|function|static int cc2520_crypto_init(struct device *dev)
 DECL|cc2520_get_lqi|function|static uint8_t cc2520_get_lqi(struct device *dev)
 DECL|cc2520_iface_init|function|static void cc2520_iface_init(struct net_if *iface)
 DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
@@ -34,10 +42,14 @@ DECL|enable_fifop_interrupt|function|static void enable_fifop_interrupt(struct c
 DECL|enable_sfd_interrupt|function|static void enable_sfd_interrupt(struct cc2520_context *cc2520, bool enable)
 DECL|fifop_int_handler|function|static inline void fifop_int_handler(struct device *port, struct gpio_callback *cb, uint32_t pins)
 DECL|flush_rxfifo|function|static inline void flush_rxfifo(struct cc2520_context *cc2520)
+DECL|generate_nonce|function|static inline void generate_nonce(uint8_t *ccm_nonce, uint8_t *nonce, struct cipher_aead_pkt *apkt, uint8_t m)
 DECL|get_cca|function|static inline uint32_t get_cca(struct cc2520_context *cc2520)
 DECL|get_fifop|function|static inline uint32_t get_fifop(struct cc2520_context *cc2520)
 DECL|get_fifo|function|static inline uint32_t get_fifo(struct cc2520_context *cc2520)
 DECL|get_mac|function|static inline uint8_t *get_mac(struct device *dev)
+DECL|insert_crypto_parameters|function|static int insert_crypto_parameters(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, uint8_t *ccm_nonce, uint8_t *auth_crypt)
+DECL|instruct_ccm|function|static inline bool instruct_ccm(struct cc2520_context *cc2520,uint8_t key_addr, uint8_t auth_crypt, uint8_t nonce_addr, uint16_t input_addr,
+DECL|instruct_uccm|function|static inline bool instruct_uccm(struct cc2520_context *cc2520, uint8_t key_addr, uint8_t auth_crypt, uint8_t nonce_addr, uint16_t input_addr,
 DECL|power_on_and_setup|function|static int power_on_and_setup(struct device *dev)
 DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct cc2520_spi *spi, struct net_buf *buf, uint8_t len)
 DECL|read_rxfifo_length|function|static inline uint8_t read_rxfifo_length(struct cc2520_spi *spi)

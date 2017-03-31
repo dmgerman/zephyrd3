@@ -10,6 +10,7 @@ DECL|DEFINE_STROBE_SNOP_INSTRUCTION|macro|DEFINE_STROBE_SNOP_INSTRUCTION
 DECL|__IEEE802154_CC2520_H__|macro|__IEEE802154_CC2520_H__
 DECL|_cc2520_command_strobe_snop|function|static inline bool _cc2520_command_strobe_snop(struct cc2520_spi *spi, uint8_t instruction)
 DECL|_cc2520_command_strobe|function|static inline bool _cc2520_command_strobe(struct cc2520_spi *spi, uint8_t instruction)
+DECL|access_lock|member|struct k_sem access_lock;
 DECL|cc2520_context|struct|struct cc2520_context {
 DECL|cc2520_rx_stack|member|char __stack cc2520_rx_stack[CONFIG_IEEE802154_CC2520_RX_STACK_SIZE];
 DECL|cc2520_spi|struct|struct cc2520_spi {

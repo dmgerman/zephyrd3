@@ -1,3 +1,5 @@
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|fake_cca|function|static int fake_cca(struct device *dev)
 DECL|fake_iface_init|function|static void fake_iface_init(struct net_if *iface)
 DECL|fake_init|function|static int fake_init(struct device *dev)
