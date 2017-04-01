@@ -1,11 +1,5 @@
-DECL|IEEE802154_DRV_NAME|macro|IEEE802154_DRV_NAME
-DECL|IEEE802154_DRV_NAME|macro|IEEE802154_DRV_NAME
-DECL|IEEE802154_DRV_NAME|macro|IEEE802154_DRV_NAME
-DECL|PRINT|macro|PRINT
-DECL|init_device|function|static struct net_if *init_device(void)
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|main|function|void main(void)
-DECL|scan_cb|variable|scan_cb
-DECL|scan_ctx|variable|scan_ctx
-DECL|scan_result_cb|function|static void scan_result_cb(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
-DECL|scan|function|static inline void scan(struct net_if *iface)
-DECL|scan|macro|scan
+DECL|setup_ipv6|function|static void setup_ipv6(struct net_if *iface)

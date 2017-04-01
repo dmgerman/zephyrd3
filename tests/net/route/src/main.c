@@ -33,7 +33,6 @@ DECL|net_route_if_api|variable|net_route_if_api
 DECL|net_route_iface_init|function|static void net_route_iface_init(struct net_if *iface)
 DECL|net_route_test|struct|struct net_route_test {
 DECL|net_test_nbr_lookup_ok|function|static bool net_test_nbr_lookup_ok(struct net_if *iface, struct in6_addr *addr)
-DECL|net_test_send_na|function|static bool net_test_send_na(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, struct in6_addr *dst)
 DECL|net_test_send_ns|function|static bool net_test_send_ns(struct net_if *iface, struct in6_addr *addr)
 DECL|peer_addr|variable|peer_addr
 DECL|peer_iface|variable|peer_iface

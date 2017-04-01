@@ -39,7 +39,6 @@ DECL|test_dio_receive_dest|function|static bool test_dio_receive_dest(void)
 DECL|test_dis_sending|function|static bool test_dis_sending(void)
 DECL|test_failed|variable|test_failed
 DECL|test_init|function|static bool test_init(void)
-DECL|test_link_cb|function|static bool test_link_cb(void)
 DECL|test_rpl_mcast_addr|function|static bool test_rpl_mcast_addr(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
 DECL|tests|variable|tests
