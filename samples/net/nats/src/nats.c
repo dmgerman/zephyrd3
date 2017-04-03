@@ -7,7 +7,7 @@ DECL|TRANSMITV_LITERAL|macro|TRANSMITV_LITERAL
 DECL|auth_required|member|bool auth_required;
 DECL|base|member|const void *base;
 DECL|char_in_set|function|static bool char_in_set(char chr, const char *set)
-DECL|copy_nbuf_to_buf|function|static int copy_nbuf_to_buf(struct net_buf *src, uint16_t offset, char *dst, size_t dst_size, size_t n_bytes)
+DECL|copy_pkt_to_buf|function|static int copy_pkt_to_buf(struct net_buf *src, uint16_t offset, char *dst, size_t dst_size, size_t n_bytes)
 DECL|go|member|const char *go;
 DECL|handle_server_cmd|function|static int handle_server_cmd(struct nats *nats, char *cmd, size_t len, struct net_buf *buf, uint16_t offset)
 DECL|handle_server_info|function|static int handle_server_info(struct nats *nats, char *payload, size_t len, struct net_buf *buf, uint16_t offset)

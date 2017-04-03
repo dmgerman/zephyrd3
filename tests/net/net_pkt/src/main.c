@@ -37,8 +37,8 @@ DECL|test_fragment_copy|function|static int test_fragment_copy(void)
 DECL|test_fragment_pull|function|static int test_fragment_pull(void)
 DECL|test_fragment_split|function|static int test_fragment_split(void)
 DECL|test_ipv6_multi_frags|function|static int test_ipv6_multi_frags(void)
-DECL|test_nbuf_read_append|function|static int test_nbuf_read_append(void)
-DECL|test_nbuf_read_write_insert|function|static int test_nbuf_read_write_insert(void)
+DECL|test_pkt_read_append|function|static int test_pkt_read_append(void)
+DECL|test_pkt_read_write_insert|function|static int test_pkt_read_write_insert(void)
 DECL|test_rw_long|variable|test_rw_long
 DECL|test_rw_short|variable|test_rw_short
 DECL|type|member|uint8_t type;

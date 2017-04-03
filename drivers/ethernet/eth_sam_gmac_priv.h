@@ -70,7 +70,7 @@ DECL|queue_list|member|struct gmac_queue queue_list[GMAC_QUEUE_NO];
 DECL|regs|member|Gmac *regs;
 DECL|ring_buf|struct|struct ring_buf {
 DECL|rx_desc_list|member|struct gmac_desc_list rx_desc_list;
-DECL|rx_nbuf_list|member|struct ring_buf rx_nbuf_list;
+DECL|rx_pkt_list|member|struct ring_buf rx_pkt_list;
 DECL|tail|member|uint16_t tail;
 DECL|tail|member|uint16_t tail;
 DECL|tx_desc_list|member|struct gmac_desc_list tx_desc_list;

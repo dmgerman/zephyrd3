@@ -13,7 +13,6 @@ DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
-DECL|nbuf_get_data|function|static struct net_buf *nbuf_get_data(struct net_buf *buf, struct net_if *iface)
 DECL|net_dhcpv4_context_data|variable|net_dhcpv4_context_data
 DECL|net_dhcpv4_context|struct|struct net_dhcpv4_context {
 DECL|net_dhcpv4_dev_init|function|static int net_dhcpv4_dev_init(struct device *dev)
@@ -22,6 +21,7 @@ DECL|net_dhcpv4_if_api|variable|net_dhcpv4_if_api
 DECL|net_dhcpv4_iface_init|function|static void net_dhcpv4_iface_init(struct net_if *iface)
 DECL|offer|variable|offer
 DECL|parse_dhcp_message|function|static int parse_dhcp_message(struct net_buf *buf, struct dhcp_msg *msg)
+DECL|pkt_get_data|function|static struct net_buf *pkt_get_data(struct net_buf *buf, struct net_if *iface)
 DECL|prepare_dhcp_ack|function|struct net_buf *prepare_dhcp_ack(struct net_if *iface, uint32_t xid)
 DECL|prepare_dhcp_offer|function|struct net_buf *prepare_dhcp_offer(struct net_if *iface, uint32_t xid)
 DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_callback *cb,uint32_t nm_event, struct net_if *iface)
