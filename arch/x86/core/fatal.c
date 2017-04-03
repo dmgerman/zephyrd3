@@ -1,5 +1,6 @@
 DECL|EXC_FUNC_CODE|macro|EXC_FUNC_CODE
 DECL|EXC_FUNC_NOCODE|macro|EXC_FUNC_NOCODE
+DECL|ID|macro|ID
 DECL|IV_ALIGNMENT_CHECK|variable|IV_ALIGNMENT_CHECK
 DECL|IV_BOUND_RANGE|variable|IV_BOUND_RANGE
 DECL|IV_DEVICE_NOT_AVAILABLE|variable|IV_DEVICE_NOT_AVAILABLE
@@ -11,10 +12,15 @@ DECL|IV_INVALID_TSS|variable|IV_INVALID_TSS
 DECL|IV_MACHINE_CHECK|variable|IV_MACHINE_CHECK
 DECL|IV_NON_MASKABLE_INTERRUPT|variable|IV_NON_MASKABLE_INTERRUPT
 DECL|IV_OVERFLOW|variable|IV_OVERFLOW
-DECL|IV_PAGE_FAULT|variable|IV_PAGE_FAULT
 DECL|IV_SEGMENT_NOT_PRESENT|variable|IV_SEGMENT_NOT_PRESENT
 DECL|IV_STACK_FAULT|variable|IV_STACK_FAULT
 DECL|IV_X87_FPU_FP_ERROR|variable|IV_X87_FPU_FP_ERROR
+DECL|PK|macro|PK
+DECL|PRESENT|macro|PRESENT
+DECL|RSVD|macro|RSVD
+DECL|SGX|macro|SGX
+DECL|US|macro|US
+DECL|WR|macro|WR
 DECL|_EXC_FUNC_CODE|macro|_EXC_FUNC_CODE
 DECL|_EXC_FUNC_NOCODE|macro|_EXC_FUNC_NOCODE
 DECL|_EXC_FUNC|macro|_EXC_FUNC
@@ -22,3 +28,4 @@ DECL|_NanoFatalErrorHandler|function|FUNC_NORETURN void _NanoFatalErrorHandler(u
 DECL|_debug_fatal_hook|function|__weak void _debug_fatal_hook(const NANO_ESF *esf) { ARG_UNUSED(esf); }
 DECL|_default_esf|variable|_default_esf
 DECL|generic_exc_handle|function|static FUNC_NORETURN void generic_exc_handle(unsigned int vector, const NANO_ESF *pEsf)
+DECL|page_fault_handler|function|FUNC_NORETURN void page_fault_handler(const NANO_ESF *pEsf)
