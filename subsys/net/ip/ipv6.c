@@ -64,6 +64,7 @@ DECL|net_ipv6_create_raw|function|struct net_buf *net_ipv6_create_raw(struct net
 DECL|net_ipv6_create|function|struct net_buf *net_ipv6_create(struct net_context *context,struct net_buf *buf, const struct in6_addr *src, const struct in6_addr *dst)
 DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_buf *buf, uint8_t next_header)
 DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_buf *buf)
+DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_buf *buf)
 DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(uint8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, uint8_t idx)
