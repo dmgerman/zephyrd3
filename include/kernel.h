@@ -112,11 +112,7 @@ DECL|_POLL_TYPE_SEM_AVAILABLE|enumerator|_POLL_TYPE_SEM_AVAILABLE,
 DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
 DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
-DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
-DECL|_THREAD_ERRNO_INIT|macro|_THREAD_ERRNO_INIT
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
-DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
-DECL|_THREAD_TIMEOUT_INIT|macro|_THREAD_TIMEOUT_INIT
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
 DECL|__ticks_to_ms|function|static inline int64_t __ticks_to_ms(int64_t ticks)
