@@ -1,5 +1,6 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|_opcode|variable|_opcode
+DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf **buf, uint8_t plen)
 DECL|cmd_status|function|static struct net_buf *cmd_status(uint8_t status)
@@ -7,6 +8,10 @@ DECL|controller_cmd_handle|function|static int controller_cmd_handle(uint8_t ocf
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(uint8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|disconnect|function|static void disconnect(struct net_buf *buf, struct net_buf **evt)
+DECL|dup_count|variable|dup_count
+DECL|dup_curr|variable|dup_curr
+DECL|dup_filter|variable|dup_filter
+DECL|dup|struct|struct dup {
 DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
 DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
@@ -60,6 +65,7 @@ DECL|le_start_encryption|function|static void le_start_encryption(struct net_buf
 DECL|le_unknown_rsp|function|static void le_unknown_rsp(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_write_default_data_len|function|static void le_write_default_data_len(struct net_buf *buf, struct net_buf **evt)
 DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(uint8_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|mask|member|uint8_t mask;
 DECL|meta_evt|function|static void *meta_evt(struct net_buf *buf, uint8_t subevt, uint8_t melen)
 DECL|read_bd_addr|function|static void read_bd_addr(struct net_buf *buf, struct net_buf **evt)
 DECL|read_local_features|function|static void read_local_features(struct net_buf *buf, struct net_buf **evt)

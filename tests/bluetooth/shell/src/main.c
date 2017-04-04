@@ -26,7 +26,7 @@ DECL|br_discovery_results|variable|br_discovery_results
 DECL|br_server|variable|br_server
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|char2hex|function|static int char2hex(const char *c, uint8_t *x)
-DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(void)
+DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(int dups)
 DECL|cmd_advertise|function|static int cmd_advertise(int argc, char *argv[])
 DECL|cmd_auth_cancel|function|static int cmd_auth_cancel(int argc, char *argv[])
 DECL|cmd_auth_pairing_confirm|function|static int cmd_auth_pairing_confirm(int argc, char *argv[])
@@ -64,7 +64,7 @@ DECL|cmd_l2cap_disconnect|function|static int cmd_l2cap_disconnect(int argc, cha
 DECL|cmd_l2cap_register|function|static int cmd_l2cap_register(int argc, char *argv[])
 DECL|cmd_l2cap_send|function|static int cmd_l2cap_send(int argc, char *argv[])
 DECL|cmd_oob|function|static int cmd_oob(int argc, char *argv[])
-DECL|cmd_passive_scan_on|function|static void cmd_passive_scan_on(void)
+DECL|cmd_passive_scan_on|function|static void cmd_passive_scan_on(int dups)
 DECL|cmd_rfcomm_connect|function|static int cmd_rfcomm_connect(int argc, char *argv[])
 DECL|cmd_rfcomm_disconnect|function|static int cmd_rfcomm_disconnect(int argc, char *argv[])
 DECL|cmd_rfcomm_send|function|static int cmd_rfcomm_send(int argc, char *argv[])
