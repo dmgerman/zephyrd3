@@ -113,6 +113,7 @@ DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
+DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
@@ -131,10 +132,17 @@ DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {
 DECL|_syncing_thread|member|k_tid_t _syncing_thread;
+DECL|_thread_base_t|typedef|typedef struct _thread_base _thread_base_t;
+DECL|_thread_base|struct|struct _thread_base {
+DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(void *, void *, void *);
+DECL|_thread_stack_info|struct|struct _thread_stack_info {
+DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|addr_in_pool|member|void *addr_in_pool;
+DECL|arch|member|struct _thread_arch arch;
+DECL|base|member|struct _thread_base base;
 DECL|base|member|u32_t *base, *next, *top;
 DECL|block_set|member|struct k_mem_pool_block_set *block_set;
 DECL|block_size|member|size_t block_size;
@@ -145,8 +153,11 @@ DECL|buffer_start|member|char *buffer_start;
 DECL|buffer|member|char *buffer;
 DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
 DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
+DECL|callee_saved|member|struct _callee_saved callee_saved;
+DECL|caller_saved|member|struct _caller_saved caller_saved;
 DECL|count|member|int count;
 DECL|count|member|unsigned int count;
+DECL|custom_data|member|void *custom_data;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|void *data;
 DECL|delete|function|inline void operator delete(void *ptr)
@@ -154,17 +165,21 @@ DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
 DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|s32_t delta_ticks_from_prev;
+DECL|entry|member|struct __thread_entry *entry;
+DECL|errno_var|member|int errno_var;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
 DECL|fifo|member|struct k_fifo fifo;
 DECL|flags|member|atomic_t flags[1];
+DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
 DECL|handler|member|k_alert_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
 DECL|info|member|u32_t info;
 DECL|init_abort|member|void (*init_abort)(void);
+DECL|init_data|member|void *init_data;
 DECL|init_delay|member|s32_t init_delay;
 DECL|init_entry|member|void (*init_entry)(void *, void *, void *);
 DECL|init_groups|member|u32_t init_groups;
@@ -211,6 +226,7 @@ DECL|k_pipe|struct|struct k_pipe {
 DECL|k_poll_event|struct|struct k_poll_event {
 DECL|k_poll_modes|enum|enum k_poll_modes {
 DECL|k_poll_signal|struct|struct k_poll_signal {
+DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_queue_is_empty|function|static inline int k_queue_is_empty(struct k_queue *queue)
 DECL|k_queue|struct|struct k_queue {
 DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
@@ -218,6 +234,7 @@ DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
+DECL|k_thread|struct|struct k_thread {
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
 DECL|k_timer_remaining_get|function|static inline s32_t k_timer_remaining_get(struct k_timer *timer)
@@ -245,6 +262,7 @@ DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new(size_t size, void *ptr)
 DECL|new|function|inline void *operator new[](size_t size)
 DECL|new|function|inline void *operator new[](size_t size, void *ptr)
+DECL|next_thread|member|struct k_thread *next_thread;
 DECL|next|member|u32_t *base, *next, *top;
 DECL|node|member|sys_dnode_t node;
 DECL|nr_of_block_sets|member|u32_t nr_of_block_sets;
@@ -255,10 +273,16 @@ DECL|num_used|member|u32_t num_used;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
+DECL|pEntry|member|_thread_entry_t pEntry;
+DECL|parameter1|member|void *parameter1;
+DECL|parameter2|member|void *parameter2;
+DECL|parameter3|member|void *parameter3;
 DECL|period|member|s32_t period;
 DECL|poll_event|member|struct k_poll_event *poll_event;
 DECL|poller|member|struct _poller *poller;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
+DECL|preempt|member|u16_t preempt;
+DECL|prio|member|s8_t prio;
 DECL|quad_block|member|struct k_mem_pool_quad_block *quad_block;
 DECL|queue|member|struct k_queue *queue;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
@@ -268,6 +292,7 @@ DECL|req_size|member|size_t req_size;
 DECL|result|member|int result;
 DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
 DECL|rx_source_thread|member|k_tid_t rx_source_thread;
+DECL|sched_locked|member|u8_t sched_locked;
 DECL|sem|member|struct k_sem *sem;
 DECL|sem|member|struct k_sem sem;
 DECL|send_count|member|atomic_t send_count;
@@ -275,14 +300,20 @@ DECL|signaled|member|unsigned int signaled;
 DECL|signal|member|struct k_poll_signal *signal;
 DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
+DECL|size|member|u32_t size;
+DECL|stack_info|member|struct _thread_stack_info stack_info;
+DECL|start|member|u32_t start;
 DECL|state|member|u32_t state:_POLL_NUM_STATES;
 DECL|status|member|u32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
+DECL|swap_data|member|void *swap_data;
 DECL|tag|member|u32_t tag:8;
 DECL|tcs|macro|tcs
+DECL|thread_state|member|u8_t thread_state;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
+DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
 DECL|top|member|u32_t *base, *next, *top;
@@ -294,6 +325,7 @@ DECL|type|member|u32_t type:_POLL_NUM_TYPES;
 DECL|unused|member|u32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|u32_t used_msgs;
 DECL|user_data|member|void *user_data;
+DECL|user_options|member|u8_t user_options;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;

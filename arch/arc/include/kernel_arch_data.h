@@ -1,27 +1,16 @@
 DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
 DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
 DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
-DECL|_CAUSE_COOP|macro|_CAUSE_COOP
-DECL|_CAUSE_FIRQ|macro|_CAUSE_FIRQ
-DECL|_CAUSE_NONE|macro|_CAUSE_NONE
-DECL|_CAUSE_RIRQ|macro|_CAUSE_RIRQ
 DECL|_callee_saved_stack_t|typedef|typedef struct _callee_saved_stack _callee_saved_stack_t;
 DECL|_callee_saved_stack|struct|struct _callee_saved_stack {
-DECL|_callee_saved_t|typedef|typedef struct _callee_saved _callee_saved_t;
-DECL|_callee_saved|struct|struct _callee_saved {
-DECL|_caller_saved_t|typedef|typedef struct _caller_saved _caller_saved_t;
-DECL|_caller_saved|struct|struct _caller_saved {
 DECL|_irq_stack_frame|struct|struct _irq_stack_frame {
 DECL|_isf_t|typedef|typedef struct _irq_stack_frame _isf_t;
 DECL|_kernel_arch_data__h_|macro|_kernel_arch_data__h_
 DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
 DECL|_kernel_arch|struct|struct _kernel_arch {
-DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
-DECL|_thread_arch|struct|struct _thread_arch {
 DECL|blink|member|u32_t blink;
 DECL|ei_base|member|u32_t ei_base;
 DECL|fp|member|u32_t fp; /* r27 */
-DECL|intlock_key|member|u32_t intlock_key;
 DECL|jli_base|member|u32_t jli_base;
 DECL|ldi_base|member|u32_t ldi_base;
 DECL|lp_count|member|u32_t lp_count;
@@ -57,9 +46,5 @@ DECL|r6|member|u32_t r6;
 DECL|r7|member|u32_t r7;
 DECL|r8|member|u32_t r8;
 DECL|r9|member|u32_t r9;
-DECL|relinquish_cause|member|int relinquish_cause;
-DECL|return_value|member|unsigned int return_value;
 DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
-DECL|sp|member|u32_t sp; /* r28 */
-DECL|stack_top|member|u32_t stack_top;
 DECL|status32|member|u32_t status32;
