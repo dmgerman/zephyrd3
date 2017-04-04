@@ -1,4 +1,7 @@
+DECL|BIT64|macro|BIT64
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|DEFAULT_EVENT_MASK|macro|DEFAULT_EVENT_MASK
+DECL|DEFAULT_LE_EVENT_MASK|macro|DEFAULT_LE_EVENT_MASK
 DECL|_opcode|variable|_opcode
 DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
@@ -16,6 +19,7 @@ DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_d
 DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
 DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
 DECL|encrypt_change|function|static void encrypt_change(uint8_t err, uint16_t handle, struct net_buf *buf)
+DECL|event_mask|variable|event_mask
 DECL|evt_create|function|static void evt_create(struct net_buf *buf, uint8_t evt, uint8_t len)
 DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf)
@@ -37,6 +41,7 @@ DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(struct net
 DECL|le_create_connection|function|static void le_create_connection(struct net_buf *buf, struct net_buf **evt)
 DECL|le_data_len_change|function|static void le_data_len_change(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_encrypt|function|static void le_encrypt(struct net_buf *buf, struct net_buf **evt)
+DECL|le_event_mask|variable|le_event_mask
 DECL|le_ltk_req_neg_reply|function|static void le_ltk_req_neg_reply(struct net_buf *buf, struct net_buf **evt)
 DECL|le_ltk_req_reply|function|static void le_ltk_req_reply(struct net_buf *buf, struct net_buf **evt)
 DECL|le_ltk_request|function|static void le_ltk_request(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
