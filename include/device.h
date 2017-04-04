@@ -28,13 +28,8 @@ DECL|device_config|struct|struct device_config {
 DECL|device_get_power_state|function|static inline int device_get_power_state(struct device *device, uint32_t *device_power_state)
 DECL|device_pm_control|member|int (*device_pm_control)(struct device *device, uint32_t command,
 DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, uint32_t device_power_state)
-DECL|device_sync_call_complete|function|device_sync_call_complete(device_sync_call_t *sync)
-DECL|device_sync_call_init|function|static inline void __deprecated device_sync_call_init(device_sync_call_t *sync)
-DECL|device_sync_call_t|typedef|} device_sync_call_t;
-DECL|device_sync_call_wait|function|static inline void __deprecated device_sync_call_wait(device_sync_call_t *sync)
 DECL|device|struct|struct device {
 DECL|driver_api|member|const void *driver_api;
 DECL|driver_data|member|void *driver_data;
-DECL|f_sem|member|struct k_sem f_sem;
 DECL|init|member|int (*init)(struct device *device);
 DECL|name|member|char *name;
