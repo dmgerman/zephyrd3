@@ -1,0 +1,3 @@
+DECL|_TEST_ASM_INLINE_GCC_H|macro|_TEST_ASM_INLINE_GCC_H
+DECL|_trigger_isr_handler|macro|_trigger_isr_handler
+DECL|_trigger_spur_handler|macro|_trigger_spur_handler
