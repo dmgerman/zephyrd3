@@ -11,8 +11,6 @@ DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_b
 DECL|net_rx_thread|function|static void net_rx_thread(void)
 DECL|net_send_data|function|int net_send_data(struct net_buf *buf)
 DECL|process_data|function|static inline enum net_verdict process_data(struct net_buf *buf, bool is_loopback)
-DECL|process_icmpv4_pkt|function|static inline enum net_verdict process_icmpv4_pkt(struct net_buf *buf, struct net_ipv4_hdr *ipv4)
-DECL|process_ipv4_pkt|function|static inline enum net_verdict process_ipv4_pkt(struct net_buf *buf)
 DECL|processing_data|function|static void processing_data(struct net_buf *buf, bool is_loopback)
 DECL|rx_queue|variable|rx_queue
 DECL|rx_tid|variable|rx_tid
