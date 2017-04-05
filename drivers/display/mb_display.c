@@ -13,8 +13,6 @@ DECL|display|variable|display
 DECL|duration|member|int32_t duration; /* Duration for each shown image */
 DECL|expiry|member|int64_t expiry; /* When to stop showing current image */
 DECL|get_font|function|static inline const struct mb_image *get_font(char ch)
-DECL|img_copy|function|static inline void img_copy(struct mb_image *dst, const struct mb_image *src)
-DECL|img|member|struct mb_image img[2]; /* Current and next image */
 DECL|map|variable|map
 DECL|mb_display_char|function|void mb_display_char(struct mb_display *disp, char chr, int32_t duration)
 DECL|mb_display_get|function|struct mb_display *mb_display_get(void)
@@ -26,7 +24,7 @@ DECL|mb_display_string|function|void mb_display_string(struct mb_display *disp, 
 DECL|mb_display|struct|struct mb_display {
 DECL|reset_display|function|static void reset_display(struct mb_display *disp)
 DECL|row|member|uint32_t row[3]; /* Content (columns) for each row */
-DECL|scroll|member|uint16_t scroll; /* Scroll shift */
+DECL|scroll|member|uint8_t scroll; /* Scroll shift */
 DECL|show_row|function|static void show_row(struct k_timer *timer)
 DECL|start_image|function|static void start_image(struct mb_display *disp, const struct mb_image *img)
 DECL|str_buf|member|char str_buf[CONFIG_MICROBIT_DISPLAY_STR_MAX];
