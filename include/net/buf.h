@@ -62,7 +62,6 @@ DECL|offset|member|uint16_t offset;
 DECL|pool_size|member|const uint16_t pool_size;
 DECL|pool|member|struct net_buf_pool *pool;
 DECL|ref|member|uint8_t ref;
-DECL|sent_list|member|sys_snode_t sent_list;
 DECL|size|member|uint16_t size;
 DECL|size|member|uint16_t size;
 DECL|uninit_count|member|uint16_t uninit_count;

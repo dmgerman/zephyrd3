@@ -9,10 +9,10 @@ DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_i
 DECL|iface|member|struct net_if *iface;
 DECL|ip|member|struct in_addr ip;
 DECL|net_arp_init|function|void net_arp_init(void)
-DECL|net_arp_input|function|enum net_verdict net_arp_input(struct net_buf *buf)
-DECL|net_arp_prepare|function|struct net_buf *net_arp_prepare(struct net_buf *buf)
-DECL|pending|member|struct net_buf *pending;
-DECL|prepare_arp_reply|function|static inline struct net_buf *prepare_arp_reply(struct net_if *iface,struct net_buf *req)
-DECL|prepare_arp|function|static inline struct net_buf *prepare_arp(struct net_if *iface, struct in_addr *next_addr, struct arp_entry *entry, struct net_buf *pending)
-DECL|send_pending|function|static inline void send_pending(struct net_if *iface, struct net_buf **buf)
+DECL|net_arp_input|function|enum net_verdict net_arp_input(struct net_pkt *pkt)
+DECL|net_arp_prepare|function|struct net_pkt *net_arp_prepare(struct net_pkt *pkt)
+DECL|pending|member|struct net_pkt *pending;
+DECL|prepare_arp_reply|function|static inline struct net_pkt *prepare_arp_reply(struct net_if *iface,struct net_pkt *req)
+DECL|prepare_arp|function|static inline struct net_pkt *prepare_arp(struct net_if *iface, struct in_addr *next_addr, struct arp_entry *entry, struct net_pkt *pending)
+DECL|send_pending|function|static inline void send_pending(struct net_if *iface, struct net_pkt **pkt)
 DECL|time|member|uint32_t time; /* FIXME - implement timeout functionality */

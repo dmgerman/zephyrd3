@@ -42,7 +42,7 @@ DECL|net_iface_api|variable|net_iface_api
 DECL|net_iface_dev_init|function|static int net_iface_dev_init(struct device *dev)
 DECL|net_iface_get_mac|function|static uint8_t *net_iface_get_mac(struct device *dev)
 DECL|net_iface_init|function|static void net_iface_init(struct net_if *iface)
-DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_buf *buf)
+DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_pkt *pkt)
 DECL|status1|member|int status1;
 DECL|status2|member|int status2;
 DECL|test_failed|variable|test_failed

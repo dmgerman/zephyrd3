@@ -7,9 +7,9 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|ack|member|uint32_t ack;
-DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_buf *buf)
+DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_pkt *pkt)
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
-DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_buf *buf)
+DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_pkt *pkt)
 DECL|flags|member|uint8_t flags;
 DECL|get_recv_wnd|function|static inline uint32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline uint32_t get_size(uint32_t pos1, uint32_t pos2)
@@ -24,20 +24,20 @@ DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp
 DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_data)
 DECL|net_tcp_get_recv_mss|function|uint16_t net_tcp_get_recv_mss(const struct net_tcp *tcp)
 DECL|net_tcp_init|function|void net_tcp_init(void)
-DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_buf **buf)
-DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_buf **buf)
-DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, uint8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_buf **send_buf)
-DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_buf *buf)
+DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_pkt **pkt)
+DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
+DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, uint8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
+DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
-DECL|net_tcp_send_buf|function|int net_tcp_send_buf(struct net_buf *buf)
 DECL|net_tcp_send_data|function|int net_tcp_send_data(struct net_context *context)
+DECL|net_tcp_send_pkt|function|int net_tcp_send_pkt(struct net_pkt *pkt)
 DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp *tcp, uint8_t *options,uint8_t *optionlen)
 DECL|net_tcp_state_str|function|const char * const net_tcp_state_str(enum net_tcp_state state)
-DECL|net_tcp_trace|function|static void net_tcp_trace(struct net_buf *buf, struct net_tcp *tcp)
+DECL|net_tcp_trace|function|static void net_tcp_trace(struct net_pkt *pkt, struct net_tcp *tcp)
 DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|options|member|void *options;
 DECL|optlen|member|uint8_t optlen;
-DECL|prepare_segment|function|static struct net_buf *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_buf *buf)
+DECL|prepare_segment|function|static struct net_pkt *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt)
 DECL|restart_timer|function|static void restart_timer(struct net_tcp *tcp)
 DECL|retry_timeout|function|static inline uint32_t retry_timeout(const struct net_tcp *tcp)
 DECL|seq_greater|function|static inline bool seq_greater(uint32_t seq1, uint32_t seq2)

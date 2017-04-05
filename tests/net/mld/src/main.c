@@ -16,7 +16,7 @@ DECL|cb|member|struct net_mgmt_event_callback cb;
 DECL|event|member|uint32_t event;
 DECL|group_joined|function|static void group_joined(struct net_mgmt_event_callback *cb, uint32_t nm_event, struct net_if *iface)
 DECL|group_left|function|static void group_left(struct net_mgmt_event_callback *cb, uint32_t nm_event, struct net_if *iface)
-DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_buf *buf)
+DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_pkt *pkt)
 DECL|handler|member|net_mgmt_event_handler_t handler;
 DECL|iface|variable|iface
 DECL|is_group_joined|variable|is_group_joined
@@ -47,7 +47,7 @@ DECL|setup_mgmt_events|function|static void setup_mgmt_events(void)
 DECL|test_allnodes|function|static void test_allnodes(void)
 DECL|test_main|function|void test_main(void)
 DECL|test_solicit_node|function|static void test_solicit_node(void)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|verify_join_group|function|static void verify_join_group(void)
 DECL|verify_leave_group|function|static void verify_leave_group(void)
 DECL|verify_send_report|function|static void verify_send_report(void)

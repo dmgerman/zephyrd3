@@ -9,7 +9,7 @@ DECL|NET_IPV6_EXT_HDR_BITMAP_ROUTING|macro|NET_IPV6_EXT_HDR_BITMAP_ROUTING
 DECL|NET_IPV6_EXT_HDR_OPT_PAD1|macro|NET_IPV6_EXT_HDR_OPT_PAD1
 DECL|NET_IPV6_EXT_HDR_OPT_PADN|macro|NET_IPV6_EXT_HDR_OPT_PADN
 DECL|NET_IPV6_EXT_HDR_OPT_RPL|macro|NET_IPV6_EXT_HDR_OPT_RPL
-DECL|NET_IPV6_FRAGMENTS_MAX_BUF|macro|NET_IPV6_FRAGMENTS_MAX_BUF
+DECL|NET_IPV6_FRAGMENTS_MAX_PKT|macro|NET_IPV6_FRAGMENTS_MAX_PKT
 DECL|NET_IPV6_MLDv2_ALLOW_NEW_SOURCES|macro|NET_IPV6_MLDv2_ALLOW_NEW_SOURCES
 DECL|NET_IPV6_MLDv2_BLOCK_OLD_SOURCES|macro|NET_IPV6_MLDv2_BLOCK_OLD_SOURCES
 DECL|NET_IPV6_MLDv2_CHANGE_TO_EXCLUDE_MODE|macro|NET_IPV6_MLDv2_CHANGE_TO_EXCLUDE_MODE
@@ -26,7 +26,6 @@ DECL|NET_IPV6_ND_INFINITE_LIFETIME|macro|NET_IPV6_ND_INFINITE_LIFETIME
 DECL|NET_MAX_RS_COUNT|macro|NET_MAX_RS_COUNT
 DECL|__IPV6_H|macro|__IPV6_H
 DECL|addr|member|struct in6_addr addr;
-DECL|buf|member|struct net_buf *buf[NET_IPV6_FRAGMENTS_MAX_BUF];
 DECL|dst|member|struct in6_addr dst;
 DECL|id|member|uint32_t id;
 DECL|is_router|member|bool is_router;
@@ -44,11 +43,12 @@ DECL|net_ipv6_nbr_lookup|function|static inline struct net_nbr *net_ipv6_nbr_loo
 DECL|net_ipv6_nbr_rm|function|static inline bool net_ipv6_nbr_rm(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_set_reachable_timer|function|static inline void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_nbr_state|enum|enum net_ipv6_nbr_state {
-DECL|net_ipv6_prepare_for_send|function|static inline struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
+DECL|net_ipv6_prepare_for_send|function|static inline struct net_pkt *net_ipv6_prepare_for_send(struct net_pkt *pkt)
 DECL|net_ipv6_reassembly|struct|struct net_ipv6_reassembly {
 DECL|net_nbr_cb_t|typedef|typedef void (*net_nbr_cb_t)(struct net_nbr *nbr, void *user_data);
 DECL|ns_count|member|uint8_t ns_count;
-DECL|pending|member|struct net_buf *pending;
+DECL|pending|member|struct net_pkt *pending;
+DECL|pkt|member|struct net_pkt *pkt[NET_IPV6_FRAGMENTS_MAX_PKT];
 DECL|reachable|member|struct k_delayed_work reachable;
 DECL|send_ns|member|struct k_delayed_work send_ns;
 DECL|src|member|struct in6_addr src;

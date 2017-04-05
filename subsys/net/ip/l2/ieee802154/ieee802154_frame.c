@@ -9,10 +9,10 @@ DECL|generate_aux_security_hdr|function|uint8_t *generate_aux_security_hdr(struc
 DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(uint8_t **p_buf, bool ack)
 DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_linkaddr *dst, bool *broadcast)
 DECL|ieee802154_compute_header_size|function|uint16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
-DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_buf *buf, uint8_t seq)
+DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_pkt *pkt, uint8_t seq)
 DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct ieee802154_context *ctx, struct net_linkaddr *dst, struct net_buf *frag, uint8_t reserved_len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct ieee802154_context *ctx,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
-DECL|ieee802154_decipher_data_frame|function|bool ieee802154_decipher_data_frame(struct net_if *iface, struct net_buf *buf, struct ieee802154_mpdu *mpdu)
+DECL|ieee802154_decipher_data_frame|function|bool ieee802154_decipher_data_frame(struct net_if *iface, struct net_pkt *pkt, struct ieee802154_mpdu *mpdu)
 DECL|ieee802154_validate_aux_security_hdr|function|ieee802154_validate_aux_security_hdr(uint8_t *buf, uint8_t **p_buf)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(uint8_t *buf, uint8_t length, struct ieee802154_mpdu *mpdu)
 DECL|level_2_tag_size|variable|level_2_tag_size

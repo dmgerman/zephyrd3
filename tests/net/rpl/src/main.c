@@ -32,7 +32,7 @@ DECL|net_test_send_ns|function|static bool net_test_send_ns(void)
 DECL|peer_addr|variable|peer_addr
 DECL|populate_nbr_cache|function|static bool populate_nbr_cache(void)
 DECL|send_link_cb|function|static void send_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
-DECL|set_buf_ll_addr|function|static void set_buf_ll_addr(struct device *dev, struct net_buf *buf)
+DECL|set_pkt_ll_addr|function|static void set_pkt_ll_addr(struct device *dev, struct net_pkt *pkt)
 DECL|test_dao_sending_fail|function|static bool test_dao_sending_fail(void)
 DECL|test_dio_dummy_input|function|static bool test_dio_dummy_input(void)
 DECL|test_dio_receive_dest|function|static bool test_dio_receive_dest(void)
@@ -40,7 +40,7 @@ DECL|test_dis_sending|function|static bool test_dis_sending(void)
 DECL|test_failed|variable|test_failed
 DECL|test_init|function|static bool test_init(void)
 DECL|test_rpl_mcast_addr|function|static bool test_rpl_mcast_addr(void)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|udp_ctx|variable|udp_ctx
 DECL|wait_data|variable|wait_data

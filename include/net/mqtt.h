@@ -15,6 +15,6 @@ DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|net_timeout|member|int32_t net_timeout;
 DECL|publish_rx|member|int (*publish_rx)(struct mqtt_ctx *ctx, struct mqtt_publish_msg *msg,
 DECL|publish_tx|member|int (*publish_tx)(struct mqtt_ctx *ctx, uint16_t pkt_id,
-DECL|rcv|member|int (*rcv)(struct mqtt_ctx *ctx, struct net_buf *);
+DECL|rcv|member|int (*rcv)(struct mqtt_ctx *ctx, struct net_pkt *);
 DECL|subscribe|member|int (*subscribe)(struct mqtt_ctx *ctx, uint16_t pkt_id,
 DECL|unsubscribe|member|int (*unsubscribe)(struct mqtt_ctx *ctx, uint16_t pkt_id);

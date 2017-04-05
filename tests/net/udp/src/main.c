@@ -35,11 +35,11 @@ DECL|send_ipv4_udp_msg|function|static bool send_ipv4_udp_msg(struct net_if *ifa
 DECL|send_ipv6_udp_msg|function|static bool send_ipv6_udp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, uint16_t src_port, uint16_t dst_port,
 DECL|send_status|variable|send_status
 DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr *raddr, struct sockaddr *laddr, uint16_t rport, uint16_t lport)
-DECL|setup_ipv4_udp|function|static void setup_ipv4_udp(struct net_buf *buf, struct in_addr *remote_addr, struct in_addr *local_addr, uint16_t remote_port, uint16_t local_port)
-DECL|setup_ipv6_udp|function|static void setup_ipv6_udp(struct net_buf *buf, struct in6_addr *remote_addr, struct in6_addr *local_addr, uint16_t remote_port, uint16_t local_port)
-DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_buf *buf, void *user_data)
-DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_buf *buf, void *user_data)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|setup_ipv4_udp|function|static void setup_ipv4_udp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, uint16_t remote_port, uint16_t local_port)
+DECL|setup_ipv6_udp|function|static void setup_ipv6_udp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, uint16_t remote_port, uint16_t local_port)
+DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
+DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|test|member|char *test;
 DECL|thread_stack|variable|thread_stack
 DECL|ud|struct|struct ud {

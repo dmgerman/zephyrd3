@@ -27,7 +27,7 @@ DECL|nats_publish|function|int nats_publish(const struct nats *nats, const char 
 DECL|nats_subscribe|function|int nats_subscribe(const struct nats *nats, const char *subject, size_t subject_len, const char *queue_group, size_t queue_group_len, const char *sid, size_t sid_len)
 DECL|nats_unsubscribe|function|int nats_unsubscribe(const struct nats *nats, const char *sid, size_t sid_len, size_t max_msgs)
 DECL|port|member|uint16_t port;
-DECL|receive_cb|function|static void receive_cb(struct net_context *ctx, struct net_buf *buf, int status, void *user_data)
+DECL|receive_cb|function|static void receive_cb(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|server_id|member|const char *server_id;
 DECL|ssl_required|member|bool ssl_required;
 DECL|strsep|function|static char *strsep(char *strp, const char *delims)

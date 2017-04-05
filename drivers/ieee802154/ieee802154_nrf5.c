@@ -22,7 +22,7 @@ DECL|nrf5_set_short_addr|function|static int nrf5_set_short_addr(struct device *
 DECL|nrf5_set_txpower|function|static int nrf5_set_txpower(struct device *dev, int16_t dbm)
 DECL|nrf5_start|function|static int nrf5_start(struct device *dev)
 DECL|nrf5_stop|function|static int nrf5_stop(struct device *dev)
-DECL|nrf5_tx|function|static int nrf5_tx(struct device *dev, struct net_buf *buf, struct net_buf *frag)
+DECL|nrf5_tx|function|static int nrf5_tx(struct device *dev, struct net_pkt *pkt, struct net_buf *frag)
 DECL|nrf_drv_radio802154_busy_channel|function|void nrf_drv_radio802154_busy_channel(void)
 DECL|nrf_drv_radio802154_energy_detected|function|void nrf_drv_radio802154_energy_detected(int8_t result)
 DECL|nrf_drv_radio802154_received|function|void nrf_drv_radio802154_received(uint8_t *p_data, int8_t power, int8_t lqi)

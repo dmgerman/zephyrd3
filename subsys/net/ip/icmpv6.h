@@ -61,7 +61,7 @@ DECL|flags|member|uint8_t flags;
 DECL|flags|member|uint8_t flags;
 DECL|flag|member|uint8_t flag; /*res:3,c:1,cid:4 */
 DECL|handler|member|icmpv6_callback_handler_t handler;
-DECL|icmpv6_callback_handler_t|typedef|typedef enum net_verdict (*icmpv6_callback_handler_t)(struct net_buf *buf);
+DECL|icmpv6_callback_handler_t|typedef|typedef enum net_verdict (*icmpv6_callback_handler_t)(struct net_pkt *pkt);
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;
 DECL|len|member|uint8_t len;

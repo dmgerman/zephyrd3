@@ -27,5 +27,5 @@ DECL|led_toggle_on|variable|led_toggle_on
 DECL|main|function|void main(void)
 DECL|read_led|function|static bool read_led(void)
 DECL|resources|variable|resources
-DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_buf *buf, int status, void *user_data)
+DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_pkt *pkt, int status, void *user_data)
 DECL|write_led|function|static void write_led(bool led)

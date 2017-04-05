@@ -58,12 +58,12 @@ DECL|net_ctx_sendto_v4_wrong_src|function|static bool net_ctx_sendto_v4_wrong_sr
 DECL|net_ctx_sendto_v4|function|static bool net_ctx_sendto_v4(void)
 DECL|net_ctx_sendto_v6_wrong_src|function|static bool net_ctx_sendto_v6_wrong_src(void)
 DECL|net_ctx_sendto_v6|function|static bool net_ctx_sendto_v6(void)
-DECL|recv_cb_another|function|static void recv_cb_another(struct net_context *context, struct net_buf *buf, int status, void *user_data)
+DECL|recv_cb_another|function|static void recv_cb_another(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|recv_cb_called|variable|recv_cb_called
 DECL|recv_cb_reconfig_called|variable|recv_cb_reconfig_called
 DECL|recv_cb_timeout_called|variable|recv_cb_timeout_called
-DECL|recv_cb_timeout|function|static void recv_cb_timeout(struct net_context *context, struct net_buf *buf, int status, void *user_data)
-DECL|recv_cb|function|static void recv_cb(struct net_context *context, struct net_buf *buf, int status, void *user_data)
+DECL|recv_cb_timeout|function|static void recv_cb_timeout(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
+DECL|recv_cb|function|static void recv_cb(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|send_cb|function|static void send_cb(struct net_context *context, int status, void *token, void *user_data)
 DECL|start_timeout_v4_thread|function|static void start_timeout_v4_thread(void)
 DECL|start_timeout_v6_thread|function|static void start_timeout_v6_thread(void)
@@ -73,7 +73,7 @@ DECL|test_data|variable|test_data
 DECL|test_failed|variable|test_failed
 DECL|test_init|function|static bool test_init(void)
 DECL|test_token|variable|test_token
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|thread_stack|variable|thread_stack
 DECL|timeout_thread|function|void timeout_thread(struct net_context *ctx, sa_family_t *family)

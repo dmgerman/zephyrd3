@@ -25,12 +25,12 @@ DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
 DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
-DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_buf *buf)
-DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_buf *buf)
+DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_pkt *pkt)
+DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|interface_data|member|uint8_t interface_data[WPANUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
-DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_buf *buf)
+DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_pkt *pkt)
 DECL|notification_sent|member|uint8_t notification_sent;
 DECL|radio_api|variable|radio_api
 DECL|set_channel|function|static int set_channel(void *data, int len)
@@ -44,7 +44,7 @@ DECL|try_write|function|static int try_write(uint8_t ep, uint8_t *data, uint16_t
 DECL|tx_queue|variable|tx_queue
 DECL|tx_stack|variable|tx_stack
 DECL|tx_thread|function|static void tx_thread(void)
-DECL|tx|function|static int tx(struct net_buf *pkt)
+DECL|tx|function|static int tx(struct net_pkt *pkt)
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
 DECL|wpanusb_bulk_in|function|static void wpanusb_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|wpanusb_class_handler|function|static int wpanusb_class_handler(struct usb_setup_packet *setup, int32_t *len, uint8_t **data)

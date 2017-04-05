@@ -20,5 +20,5 @@ DECL|net_test_if_api|variable|net_test_if_api
 DECL|net_test_iface_init|function|static void net_test_iface_init(struct net_if *iface)
 DECL|net_test_init|function|int net_test_init(struct device *dev)
 DECL|run_tests|function|static bool run_tests(void)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|thread_stack|variable|thread_stack

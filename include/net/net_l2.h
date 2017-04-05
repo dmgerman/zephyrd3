@@ -20,6 +20,6 @@ DECL|OFFLOAD_IP_L2|macro|OFFLOAD_IP_L2
 DECL|__NET_L2_H__|macro|__NET_L2_H__
 DECL|enable|member|int (*enable)(struct net_if *iface, bool state);
 DECL|net_l2|struct|struct net_l2 {
-DECL|recv|member|enum net_verdict (*recv)(struct net_if *iface, struct net_buf *buf);
+DECL|recv|member|enum net_verdict (*recv)(struct net_if *iface, struct net_pkt *pkt);
 DECL|reserve|member|uint16_t (*reserve)(struct net_if *iface, void *data);
-DECL|send|member|enum net_verdict (*send)(struct net_if *iface, struct net_buf *buf);
+DECL|send|member|enum net_verdict (*send)(struct net_if *iface, struct net_pkt *pkt);

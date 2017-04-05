@@ -30,7 +30,7 @@ DECL|send_iface1|function|static void send_iface1(void)
 DECL|send_iface2|function|static void send_iface2(void)
 DECL|send_iface3|function|static void send_iface3(void)
 DECL|send_iface|function|static bool send_iface(struct net_if *iface, int val, bool expect_fail)
-DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_buf *buf)
+DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_pkt *pkt)
 DECL|test_failed|variable|test_failed
 DECL|test_main|function|void test_main(void)
 DECL|test_started|variable|test_started

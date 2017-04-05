@@ -1,7 +1,7 @@
 DECL|__UDP_H|macro|__UDP_H
-DECL|net_udp_append_raw|function|static inline struct net_buf *net_udp_append_raw(struct net_buf *buf, uint16_t src_port, uint16_t dst_port)
+DECL|net_udp_append_raw|function|static inline struct net_pkt *net_udp_append_raw(struct net_pkt *pkt, uint16_t src_port, uint16_t dst_port)
 DECL|net_udp_append_raw|macro|net_udp_append_raw
-DECL|net_udp_append|function|static inline struct net_buf *net_udp_append(struct net_context *context, struct net_buf *buf, uint16_t port)
+DECL|net_udp_append|function|static inline struct net_pkt *net_udp_append(struct net_context *context, struct net_pkt *pkt, uint16_t port)
 DECL|net_udp_append|macro|net_udp_append
 DECL|net_udp_init|function|static inline void net_udp_init(void)
 DECL|net_udp_init|macro|net_udp_init
