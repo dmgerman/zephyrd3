@@ -7,7 +7,7 @@ DECL|SCROLL_OFF|macro|SCROLL_OFF
 DECL|SCROLL_START|macro|SCROLL_START
 DECL|clear_display|function|static void clear_display(struct k_timer *timer)
 DECL|col_mask|variable|col_mask
-DECL|cur|member|int cur; /* Currently rendered row */
+DECL|cur|member|uint8_t cur; /* Currently rendered row */
 DECL|dev|member|struct device *dev; /* GPIO device */
 DECL|display|variable|display
 DECL|duration|member|int32_t duration; /* Duration for each shown image */
