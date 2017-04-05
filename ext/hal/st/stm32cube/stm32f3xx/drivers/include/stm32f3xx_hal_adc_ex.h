@@ -122,6 +122,8 @@ DECL|ADC1_EXTERNALTRIGINJEC_T15_TRGO|macro|ADC1_EXTERNALTRIGINJEC_T15_TRGO
 DECL|ADC1_EXTERNALTRIGINJEC_T1_CC4|macro|ADC1_EXTERNALTRIGINJEC_T1_CC4
 DECL|ADC1_EXTERNALTRIGINJEC_T1_TRGO2|macro|ADC1_EXTERNALTRIGINJEC_T1_TRGO2
 DECL|ADC1_EXTERNALTRIGINJEC_T1_TRGO|macro|ADC1_EXTERNALTRIGINJEC_T1_TRGO
+DECL|ADC1_EXTERNALTRIGINJEC_T2_CC1|macro|ADC1_EXTERNALTRIGINJEC_T2_CC1
+DECL|ADC1_EXTERNALTRIGINJEC_T2_TRGO|macro|ADC1_EXTERNALTRIGINJEC_T2_TRGO
 DECL|ADC1_EXTERNALTRIGINJEC_T6_TRGO|macro|ADC1_EXTERNALTRIGINJEC_T6_TRGO
 DECL|ADC1_EXTERNALTRIG_EXT_IT11|macro|ADC1_EXTERNALTRIG_EXT_IT11
 DECL|ADC1_EXTERNALTRIG_T15_TRGO|macro|ADC1_EXTERNALTRIG_T15_TRGO
@@ -449,6 +451,8 @@ DECL|ADC_EXTERNALTRIGINJECCONV_T2_CC1|macro|ADC_EXTERNALTRIGINJECCONV_T2_CC1
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_CC1|macro|ADC_EXTERNALTRIGINJECCONV_T2_CC1
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_CC1|macro|ADC_EXTERNALTRIGINJECCONV_T2_CC1
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_CC1|macro|ADC_EXTERNALTRIGINJECCONV_T2_CC1
+DECL|ADC_EXTERNALTRIGINJECCONV_T2_CC1|macro|ADC_EXTERNALTRIGINJECCONV_T2_CC1
+DECL|ADC_EXTERNALTRIGINJECCONV_T2_TRGO|macro|ADC_EXTERNALTRIGINJECCONV_T2_TRGO
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_TRGO|macro|ADC_EXTERNALTRIGINJECCONV_T2_TRGO
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_TRGO|macro|ADC_EXTERNALTRIGINJECCONV_T2_TRGO
 DECL|ADC_EXTERNALTRIGINJECCONV_T2_TRGO|macro|ADC_EXTERNALTRIGINJECCONV_T2_TRGO
@@ -736,8 +740,8 @@ DECL|ContinuousConvMode|member|uint32_t ContinuousConvMode; /*!< Specifies wheth
 DECL|ContinuousConvMode|member|uint32_t ContinuousConvMode; /*!< Specifies whether the conversion is performed in single mode (one conversion) or continuous mode for regular group,
 DECL|DMAAccessMode|member|uint32_t DMAAccessMode; /*!< Configures the DMA mode for multi ADC mode:
 DECL|DMAContinuousRequests|member|uint32_t DMAContinuousRequests; /*!< Specifies whether the DMA requests are performed in one shot mode (DMA transfer stop when number of conversions is reached)
-DECL|DataAlign|member|uint32_t DataAlign; /*!< Specifies ADC data alignment to right (MSB on register bit 11 and LSB on register bit 0) (default setting)
-DECL|DataAlign|member|uint32_t DataAlign; /*!< Specifies ADC data alignment to right (for resolution 12 bits: MSB on register bit 11 and LSB on register bit 0) (default setting)
+DECL|DataAlign|member|uint32_t DataAlign; /*!< Specifies ADC data alignment to right (MSB on register bit 11 and LSB on register bit 0U) (default setting)
+DECL|DataAlign|member|uint32_t DataAlign; /*!< Specifies ADC data alignment to right (for resolution 12 bits: MSB on register bit 11 and LSB on register bit 0U) (default setting)
 DECL|DiscontinuousConvMode|member|uint32_t DiscontinuousConvMode; /*!< Specifies whether the conversions sequence of regular group is performed in Complete-sequence/Discontinuous-sequence (main sequence subdivided in successive parts).
 DECL|DiscontinuousConvMode|member|uint32_t DiscontinuousConvMode; /*!< Specifies whether the conversions sequence of regular group is performed in Complete-sequence/Discontinuous-sequence (main sequence subdivided in successive parts).
 DECL|EOCSelection|member|uint32_t EOCSelection; /*!< Specifies what EOC (End Of Conversion) flag is used for conversion by polling and interruption: end of conversion of each rank or complete sequence.
@@ -854,7 +858,7 @@ DECL|SingleDiff|member|uint32_t SingleDiff; /*!< Selection of single-ended or di
 DECL|TwoSamplingDelay|member|uint32_t TwoSamplingDelay; /*!< Configures the Delay between 2 sampling phases.
 DECL|WatchdogMode|member|uint32_t WatchdogMode; /*!< Configures the ADC analog watchdog mode: single/all channels, regular/injected group.
 DECL|WatchdogMode|member|uint32_t WatchdogMode; /*!< For Analog Watchdog 1: Configures the ADC analog watchdog mode: single channel/overall group of channels, regular/injected group.
-DECL|WatchdogNumber|member|uint32_t WatchdogNumber; /*!< Reserved for future use, can be set to 0 */
+DECL|WatchdogNumber|member|uint32_t WatchdogNumber; /*!< Reserved for future use, can be set to 0U */
 DECL|WatchdogNumber|member|uint32_t WatchdogNumber; /*!< Selects which ADC analog watchdog to apply to the selected channel.
 DECL|__HAL_ADC_CLEAR_FLAG|macro|__HAL_ADC_CLEAR_FLAG
 DECL|__HAL_ADC_CLEAR_FLAG|macro|__HAL_ADC_CLEAR_FLAG

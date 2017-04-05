@@ -1,3 +1,4 @@
+DECL|AutoReloadPreload|member|uint32_t AutoReloadPreload; /*!< Specifies the auto-reload preload.
 DECL|Channel|member|HAL_TIM_ActiveChannel Channel; /*!< Active channel */
 DECL|ClearInputFilter|member|uint32_t ClearInputFilter; /*!< TIM Clear Input filter.
 DECL|ClearInputPolarity|member|uint32_t ClearInputPolarity; /*!< TIM Clear Input polarity.
@@ -39,6 +40,7 @@ DECL|ICPrescaler|member|uint32_t ICPrescaler; /*!< Specifies the Input Capture P
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
 DECL|IS_TIM_AUTOMATIC_OUTPUT_STATE|macro|IS_TIM_AUTOMATIC_OUTPUT_STATE
+DECL|IS_TIM_AUTORELOAD_PRELOAD|macro|IS_TIM_AUTORELOAD_PRELOAD
 DECL|IS_TIM_BREAK_POLARITY|macro|IS_TIM_BREAK_POLARITY
 DECL|IS_TIM_BREAK_STATE|macro|IS_TIM_BREAK_STATE
 DECL|IS_TIM_CLEARINPUT_FILTER|macro|IS_TIM_CLEARINPUT_FILTER
@@ -106,6 +108,8 @@ DECL|SlaveMode|member|uint32_t SlaveMode; /*!< Slave mode selection
 DECL|State|member|__IO HAL_TIM_StateTypeDef State; /*!< TIM operation state */
 DECL|TIM_AUTOMATICOUTPUT_DISABLE|macro|TIM_AUTOMATICOUTPUT_DISABLE
 DECL|TIM_AUTOMATICOUTPUT_ENABLE|macro|TIM_AUTOMATICOUTPUT_ENABLE
+DECL|TIM_AUTORELOAD_PRELOAD_DISABLE|macro|TIM_AUTORELOAD_PRELOAD_DISABLE
+DECL|TIM_AUTORELOAD_PRELOAD_ENABLE|macro|TIM_AUTORELOAD_PRELOAD_ENABLE
 DECL|TIM_BREAKPOLARITY_HIGH|macro|TIM_BREAKPOLARITY_HIGH
 DECL|TIM_BREAKPOLARITY_LOW|macro|TIM_BREAKPOLARITY_LOW
 DECL|TIM_BREAK_DISABLE|macro|TIM_BREAK_DISABLE

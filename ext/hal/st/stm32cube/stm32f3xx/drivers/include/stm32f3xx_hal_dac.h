@@ -41,18 +41,18 @@ DECL|DAC_TRIANGLEAMPLITUDE_511|macro|DAC_TRIANGLEAMPLITUDE_511
 DECL|DAC_TRIANGLEAMPLITUDE_63|macro|DAC_TRIANGLEAMPLITUDE_63
 DECL|DAC_TRIANGLEAMPLITUDE_7|macro|DAC_TRIANGLEAMPLITUDE_7
 DECL|DAC_Trigger|member|uint32_t DAC_Trigger; /*!< Specifies the external trigger for the selected DAC channel.
-DECL|DMA_Handle1|member|DMA_HandleTypeDef *DMA_Handle1; /*!< Pointer DMA handler for channel 1 */
-DECL|DMA_Handle2|member|DMA_HandleTypeDef *DMA_Handle2; /*!< Pointer DMA handler for channel 2 */
+DECL|DMA_Handle1|member|DMA_HandleTypeDef *DMA_Handle1; /*!< Pointer DMA handler for channel 1U */
+DECL|DMA_Handle2|member|DMA_HandleTypeDef *DMA_Handle2; /*!< Pointer DMA handler for channel 2U */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DAC Error code */
 DECL|HAL_DAC_ERROR_DMAUNDERRUNCH1|macro|HAL_DAC_ERROR_DMAUNDERRUNCH1
 DECL|HAL_DAC_ERROR_DMAUNDERRUNCH2|macro|HAL_DAC_ERROR_DMAUNDERRUNCH2
 DECL|HAL_DAC_ERROR_DMA|macro|HAL_DAC_ERROR_DMA
 DECL|HAL_DAC_ERROR_NONE|macro|HAL_DAC_ERROR_NONE
-DECL|HAL_DAC_STATE_BUSY|enumerator|HAL_DAC_STATE_BUSY = 0x02, /*!< DAC internal processing is ongoing */
+DECL|HAL_DAC_STATE_BUSY|enumerator|HAL_DAC_STATE_BUSY = 0x02U, /*!< DAC internal processing is ongoing */
 DECL|HAL_DAC_STATE_ERROR|enumerator|HAL_DAC_STATE_ERROR = 0x04 /*!< DAC error state */
-DECL|HAL_DAC_STATE_READY|enumerator|HAL_DAC_STATE_READY = 0x01, /*!< DAC initialized and ready for use */
-DECL|HAL_DAC_STATE_RESET|enumerator|HAL_DAC_STATE_RESET = 0x00, /*!< DAC not yet initialized or disabled */
-DECL|HAL_DAC_STATE_TIMEOUT|enumerator|HAL_DAC_STATE_TIMEOUT = 0x03, /*!< DAC timeout state */
+DECL|HAL_DAC_STATE_READY|enumerator|HAL_DAC_STATE_READY = 0x01U, /*!< DAC initialized and ready for use */
+DECL|HAL_DAC_STATE_RESET|enumerator|HAL_DAC_STATE_RESET = 0x00U, /*!< DAC not yet initialized or disabled */
+DECL|HAL_DAC_STATE_TIMEOUT|enumerator|HAL_DAC_STATE_TIMEOUT = 0x03U, /*!< DAC timeout state */
 DECL|HAL_DAC_StateTypeDef|typedef|}HAL_DAC_StateTypeDef;
 DECL|IS_DAC_ALIGN|macro|IS_DAC_ALIGN
 DECL|IS_DAC_DATA|macro|IS_DAC_DATA

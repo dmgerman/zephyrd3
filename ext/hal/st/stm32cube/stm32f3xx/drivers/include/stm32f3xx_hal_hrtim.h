@@ -39,10 +39,10 @@ DECL|FaultLock|member|uint32_t FaultLock; /*!< Relevant for Timer A to Timer E.
 DECL|Filter|member|uint32_t Filter; /*!< Defines the frequency used to sample the External Event and the length of the digital filter.
 DECL|Filter|member|uint32_t Filter; /*!< Defines the frequency used to sample the Fault input and the length of the digital filter.
 DECL|Filter|member|uint32_t Filter; /*!< Specifies the type of event filtering within the timing unit.
-DECL|HAL_HRTIM_STATE_BUSY|enumerator|HAL_HRTIM_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_HRTIM_STATE_ERROR|enumerator|HAL_HRTIM_STATE_ERROR = 0x07, /*!< Error state */
-DECL|HAL_HRTIM_STATE_READY|enumerator|HAL_HRTIM_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_HRTIM_STATE_TIMEOUT|enumerator|HAL_HRTIM_STATE_TIMEOUT = 0x06, /*!< Timeout state */
+DECL|HAL_HRTIM_STATE_BUSY|enumerator|HAL_HRTIM_STATE_BUSY = 0x02U, /*!< an internal process is ongoing */
+DECL|HAL_HRTIM_STATE_ERROR|enumerator|HAL_HRTIM_STATE_ERROR = 0x07U, /*!< Error state */
+DECL|HAL_HRTIM_STATE_READY|enumerator|HAL_HRTIM_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_HRTIM_STATE_TIMEOUT|enumerator|HAL_HRTIM_STATE_TIMEOUT = 0x06U, /*!< Timeout state */
 DECL|HAL_HRTIM_StateTypeDef|typedef|} HAL_HRTIM_StateTypeDef;
 DECL|HRIM_BURSTMODEPRELOAD_DISABLED|macro|HRIM_BURSTMODEPRELOAD_DISABLED
 DECL|HRIM_BURSTMODEPRELOAD_ENABLED|macro|HRIM_BURSTMODEPRELOAD_ENABLED

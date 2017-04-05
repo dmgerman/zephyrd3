@@ -13,5 +13,5 @@ DECL|I2S_FullDuplexWaitFlagStateUntilTimeout|function|static HAL_StatusTypeDef I
 DECL|I2S_TxRxDMACplt|function|static void I2S_TxRxDMACplt(DMA_HandleTypeDef *hdma)
 DECL|I2S_TxRxDMAError|function|static void I2S_TxRxDMAError(DMA_HandleTypeDef *hdma)
 DECL|I2S_USE_I2SEXT|enumerator|I2S_USE_I2SEXT = 0x01 /*!< I2Sx_ext should be used */
-DECL|I2S_USE_I2S|enumerator|I2S_USE_I2S = 0x00, /*!< I2Sx should be used */
+DECL|I2S_USE_I2S|enumerator|I2S_USE_I2S = 0x00U, /*!< I2Sx should be used */
 DECL|I2S_UseTypeDef|typedef|}I2S_UseTypeDef;

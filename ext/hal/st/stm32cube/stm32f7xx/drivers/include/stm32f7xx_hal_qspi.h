@@ -138,8 +138,8 @@ DECL|QSPI_SIOO_INST_EVERY_CMD|macro|QSPI_SIOO_INST_EVERY_CMD
 DECL|QSPI_SIOO_INST_ONLY_FIRST_CMD|macro|QSPI_SIOO_INST_ONLY_FIRST_CMD
 DECL|QSPI_TIMEOUT_COUNTER_DISABLE|macro|QSPI_TIMEOUT_COUNTER_DISABLE
 DECL|QSPI_TIMEOUT_COUNTER_ENABLE|macro|QSPI_TIMEOUT_COUNTER_ENABLE
-DECL|RxXferCount|member|__IO uint16_t RxXferCount; /* QSPI Rx Transfer Counter */
-DECL|RxXferSize|member|__IO uint16_t RxXferSize; /* QSPI Rx Transfer size */
+DECL|RxXferCount|member|__IO uint32_t RxXferCount; /* QSPI Rx Transfer Counter */
+DECL|RxXferSize|member|__IO uint32_t RxXferSize; /* QSPI Rx Transfer size */
 DECL|SIOOMode|member|uint32_t SIOOMode; /* Specifies the send instruction only once mode
 DECL|SampleShifting|member|uint32_t SampleShifting; /* Specifies the Sample Shift. The data is sampled 1/2 clock cycle delay later to
 DECL|State|member|__IO HAL_QSPI_StateTypeDef State; /* QSPI communication state */
@@ -147,8 +147,8 @@ DECL|StatusBytesSize|member|uint32_t StatusBytesSize; /* Specifies the size of t
 DECL|TimeOutActivation|member|uint32_t TimeOutActivation; /* Specifies if the time out counter is enabled to release the chip select.
 DECL|TimeOutPeriod|member|uint32_t TimeOutPeriod; /* Specifies the number of clock to wait when the FIFO is full before to release the chip select.
 DECL|Timeout|member|uint32_t Timeout; /* Timeout for the QSPI memory access */
-DECL|TxXferCount|member|__IO uint16_t TxXferCount; /* QSPI Tx Transfer Counter */
-DECL|TxXferSize|member|__IO uint16_t TxXferSize; /* QSPI Tx Transfer size */
+DECL|TxXferCount|member|__IO uint32_t TxXferCount; /* QSPI Tx Transfer Counter */
+DECL|TxXferSize|member|__IO uint32_t TxXferSize; /* QSPI Tx Transfer size */
 DECL|__HAL_QSPI_CLEAR_FLAG|macro|__HAL_QSPI_CLEAR_FLAG
 DECL|__HAL_QSPI_DISABLE_IT|macro|__HAL_QSPI_DISABLE_IT
 DECL|__HAL_QSPI_DISABLE|macro|__HAL_QSPI_DISABLE

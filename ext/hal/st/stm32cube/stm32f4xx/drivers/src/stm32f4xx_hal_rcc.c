@@ -1,4 +1,3 @@
-DECL|APBAHBPrescTable|variable|APBAHBPrescTable
 DECL|CLOCKSWITCH_TIMEOUT_VALUE|macro|CLOCKSWITCH_TIMEOUT_VALUE
 DECL|HAL_RCC_CSSCallback|function|__weak void HAL_RCC_CSSCallback(void)
 DECL|HAL_RCC_ClockConfig|function|HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency)

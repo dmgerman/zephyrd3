@@ -30,5 +30,5 @@ DECL|__HAL_HCD_MASK_HALT_HC_INT|macro|__HAL_HCD_MASK_HALT_HC_INT
 DECL|__HAL_HCD_UNMASK_ACK_HC_INT|macro|__HAL_HCD_UNMASK_ACK_HC_INT
 DECL|__HAL_HCD_UNMASK_HALT_HC_INT|macro|__HAL_HCD_UNMASK_HALT_HC_INT
 DECL|__STM32F4xx_HAL_HCD_H|macro|__STM32F4xx_HAL_HCD_H
-DECL|hc|member|HCD_HCTypeDef hc[15]; /*!< Host channels parameters */
+DECL|hc|member|HCD_HCTypeDef hc[15U]; /*!< Host channels parameters */
 DECL|pData|member|void *pData; /*!< Pointer Stack Handler */

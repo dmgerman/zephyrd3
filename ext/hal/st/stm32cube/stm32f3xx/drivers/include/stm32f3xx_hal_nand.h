@@ -10,10 +10,10 @@ DECL|Block|member|uint16_t Block; /*!< NAND memory Block address */
 DECL|CMD_AREA|macro|CMD_AREA
 DECL|Device_Id|member|uint8_t Device_Id;
 DECL|Fourth_Id|member|uint8_t Fourth_Id;
-DECL|HAL_NAND_STATE_BUSY|enumerator|HAL_NAND_STATE_BUSY = 0x02, /*!< NAND internal process is ongoing */
+DECL|HAL_NAND_STATE_BUSY|enumerator|HAL_NAND_STATE_BUSY = 0x02U, /*!< NAND internal process is ongoing */
 DECL|HAL_NAND_STATE_ERROR|enumerator|HAL_NAND_STATE_ERROR = 0x03 /*!< NAND error state */
-DECL|HAL_NAND_STATE_READY|enumerator|HAL_NAND_STATE_READY = 0x01, /*!< NAND initialized and ready for use */
-DECL|HAL_NAND_STATE_RESET|enumerator|HAL_NAND_STATE_RESET = 0x00, /*!< NAND not yet initialized or disabled */
+DECL|HAL_NAND_STATE_READY|enumerator|HAL_NAND_STATE_READY = 0x01U, /*!< NAND initialized and ready for use */
+DECL|HAL_NAND_STATE_RESET|enumerator|HAL_NAND_STATE_RESET = 0x00U, /*!< NAND not yet initialized or disabled */
 DECL|HAL_NAND_StateTypeDef|typedef|}HAL_NAND_StateTypeDef;
 DECL|Info|member|NAND_InfoTypeDef Info; /*!< NAND characteristic information structure */
 DECL|Init|member|FMC_NAND_InitTypeDef Init; /*!< NAND device control configuration parameters */

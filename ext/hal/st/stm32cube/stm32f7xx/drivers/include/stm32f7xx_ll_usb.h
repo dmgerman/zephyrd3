@@ -61,6 +61,8 @@ DECL|URB_IDLE|enumerator|URB_IDLE = 0U,
 DECL|URB_NOTREADY|enumerator|URB_NOTREADY,
 DECL|URB_NYET|enumerator|URB_NYET,
 DECL|URB_STALL|enumerator|URB_STALL
+DECL|USBPHYC|macro|USBPHYC
+DECL|USB_HS_PHYC_TUNE_VALUE|macro|USB_HS_PHYC_TUNE_VALUE
 DECL|USB_MASK_INTERRUPT|macro|USB_MASK_INTERRUPT
 DECL|USB_OTG_CfgTypeDef|typedef|}USB_OTG_CfgTypeDef;
 DECL|USB_OTG_DEVICE_MODE|enumerator|USB_OTG_DEVICE_MODE = 0U,
@@ -71,6 +73,7 @@ DECL|USB_OTG_FS_MAX_PACKET_SIZE|macro|USB_OTG_FS_MAX_PACKET_SIZE
 DECL|USB_OTG_HCStateTypeDef|typedef|}USB_OTG_HCStateTypeDef;
 DECL|USB_OTG_HCTypeDef|typedef|}USB_OTG_HCTypeDef;
 DECL|USB_OTG_HOST_MODE|enumerator|USB_OTG_HOST_MODE = 1U,
+DECL|USB_OTG_HS_EMBEDDED_PHY|macro|USB_OTG_HS_EMBEDDED_PHY
 DECL|USB_OTG_HS_MAX_PACKET_SIZE|macro|USB_OTG_HS_MAX_PACKET_SIZE
 DECL|USB_OTG_MAX_EP0_SIZE|macro|USB_OTG_MAX_EP0_SIZE
 DECL|USB_OTG_MODE_DEVICE|macro|USB_OTG_MODE_DEVICE
@@ -93,6 +96,7 @@ DECL|USBx_INEP|macro|USBx_INEP
 DECL|USBx_OUTEP|macro|USBx_OUTEP
 DECL|USBx_PCGCCTL|macro|USBx_PCGCCTL
 DECL|__STM32F7xx_LL_USB_H|macro|__STM32F7xx_LL_USB_H
+DECL|battery_charging_enable|member|uint32_t battery_charging_enable; /*!< Enable or disable Battery charging. */
 DECL|ch_num|member|uint8_t ch_num; /*!< Host channel number.
 DECL|data_pid_start|member|uint8_t data_pid_start; /*!< Initial data PID
 DECL|data_pid|member|uint8_t data_pid; /*!< Initial data PID.

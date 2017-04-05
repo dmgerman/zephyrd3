@@ -63,6 +63,7 @@ DECL|I2C_ITSlaveSequentialCplt|function|static void I2C_ITSlaveSequentialCplt(I2
 DECL|I2C_IsAcknowledgeFailed|function|static HAL_StatusTypeDef I2C_IsAcknowledgeFailed(I2C_HandleTypeDef *hi2c, uint32_t Timeout, uint32_t Tickstart)
 DECL|I2C_Master_ISR_DMA|function|static HAL_StatusTypeDef I2C_Master_ISR_DMA(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources)
 DECL|I2C_Master_ISR_IT|function|static HAL_StatusTypeDef I2C_Master_ISR_IT(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources)
+DECL|I2C_NO_OPTION_FRAME|macro|I2C_NO_OPTION_FRAME
 DECL|I2C_RequestMemoryRead|function|static HAL_StatusTypeDef I2C_RequestMemoryRead(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint32_t Timeout, uint32_t Tickstart)
 DECL|I2C_RequestMemoryWrite|function|static HAL_StatusTypeDef I2C_RequestMemoryWrite(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint32_t Timeout, uint32_t Tickstart)
 DECL|I2C_STATE_MASTER_BUSY_RX|macro|I2C_STATE_MASTER_BUSY_RX

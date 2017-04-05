@@ -17,18 +17,18 @@ DECL|DEFAULT_POLYNOMIAL_DISABLE|macro|DEFAULT_POLYNOMIAL_DISABLE
 DECL|DEFAULT_POLYNOMIAL_ENABLE|macro|DEFAULT_POLYNOMIAL_ENABLE
 DECL|DefaultInitValueUse|member|uint8_t DefaultInitValueUse; /*!< This parameter is a value of @ref CRC_Default_InitValue_Use and indicates if default init value is used.
 DECL|DefaultPolynomialUse|member|uint8_t DefaultPolynomialUse; /*!< This parameter is a value of @ref CRC_Default_Polynomial and indicates if default polynomial is used.
-DECL|GeneratingPolynomial|member|uint32_t GeneratingPolynomial; /*!< Set CRC generating polynomial as a 7, 8, 16 or 32-bit long value for a polynomial degree
+DECL|GeneratingPolynomial|member|uint32_t GeneratingPolynomial; /*!< Set CRC generating polynomial as a 7U, 8U, 16 or 32-bit long value for a polynomial degree
 DECL|HAL_CRC_Input_Data_Reverse|macro|HAL_CRC_Input_Data_Reverse
 DECL|HAL_CRC_LENGTH_16B|macro|HAL_CRC_LENGTH_16B
 DECL|HAL_CRC_LENGTH_32B|macro|HAL_CRC_LENGTH_32B
 DECL|HAL_CRC_LENGTH_7B|macro|HAL_CRC_LENGTH_7B
 DECL|HAL_CRC_LENGTH_8B|macro|HAL_CRC_LENGTH_8B
 DECL|HAL_CRC_Output_Data_Reverse|macro|HAL_CRC_Output_Data_Reverse
-DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02, /*!< CRC internal process is ongoing */
+DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02U, /*!< CRC internal process is ongoing */
 DECL|HAL_CRC_STATE_ERROR|enumerator|HAL_CRC_STATE_ERROR = 0x04 /*!< CRC error state */
-DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01, /*!< CRC initialized and ready for use */
-DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00, /*!< CRC not yet initialized or disabled */
-DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03, /*!< CRC timeout state */
+DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01U, /*!< CRC initialized and ready for use */
+DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00U, /*!< CRC not yet initialized or disabled */
+DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03U, /*!< CRC timeout state */
 DECL|HAL_CRC_StateTypeDef|typedef|}HAL_CRC_StateTypeDef;
 DECL|IS_CRC_INPUTDATA_FORMAT|macro|IS_CRC_INPUTDATA_FORMAT
 DECL|IS_CRC_POL_LENGTH|macro|IS_CRC_POL_LENGTH

@@ -3,10 +3,10 @@ DECL|CTPulseHighLength|member|uint32_t CTPulseHighLength; /*!< Charge-transfer h
 DECL|CTPulseLowLength|member|uint32_t CTPulseLowLength; /*!< Charge-transfer low pulse length
 DECL|ChannelIOs|member|uint32_t ChannelIOs; /*!< Channel IOs mask */
 DECL|ChannelIOs|member|uint32_t ChannelIOs; /*!< Channel IOs mask */
-DECL|HAL_TSC_STATE_BUSY|enumerator|HAL_TSC_STATE_BUSY = 0x02, /*!< TSC initialization or acquisition is on-going */
-DECL|HAL_TSC_STATE_ERROR|enumerator|HAL_TSC_STATE_ERROR = 0x03 /*!< Acquisition is completed with max count error */
-DECL|HAL_TSC_STATE_READY|enumerator|HAL_TSC_STATE_READY = 0x01, /*!< TSC registers are initialized or acquisition is completed with success */
-DECL|HAL_TSC_STATE_RESET|enumerator|HAL_TSC_STATE_RESET = 0x00, /*!< TSC registers have their reset value */
+DECL|HAL_TSC_STATE_BUSY|enumerator|HAL_TSC_STATE_BUSY = 0x02U, /*!< TSC initialization or acquisition is on-going */
+DECL|HAL_TSC_STATE_ERROR|enumerator|HAL_TSC_STATE_ERROR = 0x03U /*!< Acquisition is completed with max count error */
+DECL|HAL_TSC_STATE_READY|enumerator|HAL_TSC_STATE_READY = 0x01U, /*!< TSC registers are initialized or acquisition is completed with success */
+DECL|HAL_TSC_STATE_RESET|enumerator|HAL_TSC_STATE_RESET = 0x00U, /*!< TSC registers have their reset value */
 DECL|HAL_TSC_StateTypeDef|typedef|} HAL_TSC_StateTypeDef;
 DECL|IODefaultMode|member|uint32_t IODefaultMode; /*!< IO default mode
 DECL|IS_TSC_ACQ_MODE|macro|IS_TSC_ACQ_MODE
@@ -131,8 +131,8 @@ DECL|TSC_GROUP8_IO2|macro|TSC_GROUP8_IO2
 DECL|TSC_GROUP8_IO3|macro|TSC_GROUP8_IO3
 DECL|TSC_GROUP8_IO4|macro|TSC_GROUP8_IO4
 DECL|TSC_GROUP8|macro|TSC_GROUP8
-DECL|TSC_GROUP_COMPLETED|enumerator|TSC_GROUP_COMPLETED = 0x01 /*!< Acquisition on group is completed with success (no max count error) */
-DECL|TSC_GROUP_ONGOING|enumerator|TSC_GROUP_ONGOING = 0x00, /*!< Acquisition on group is on-going or not started */
+DECL|TSC_GROUP_COMPLETED|enumerator|TSC_GROUP_COMPLETED = 0x01U /*!< Acquisition on group is completed with success (no max count error) */
+DECL|TSC_GROUP_ONGOING|enumerator|TSC_GROUP_ONGOING = 0x00U, /*!< Acquisition on group is on-going or not started */
 DECL|TSC_GroupStatusTypeDef|typedef|} TSC_GroupStatusTypeDef;
 DECL|TSC_HandleTypeDef|typedef|} TSC_HandleTypeDef;
 DECL|TSC_IOConfigTypeDef|typedef|} TSC_IOConfigTypeDef;

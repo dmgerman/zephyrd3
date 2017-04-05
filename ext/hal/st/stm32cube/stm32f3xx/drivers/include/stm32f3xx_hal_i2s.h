@@ -10,14 +10,14 @@ DECL|HAL_I2S_ERROR_OVR|macro|HAL_I2S_ERROR_OVR
 DECL|HAL_I2S_ERROR_TIMEOUT|macro|HAL_I2S_ERROR_TIMEOUT
 DECL|HAL_I2S_ERROR_UDR|macro|HAL_I2S_ERROR_UDR
 DECL|HAL_I2S_ERROR_UNKNOW|macro|HAL_I2S_ERROR_UNKNOW
-DECL|HAL_I2S_STATE_BUSY_RX|enumerator|HAL_I2S_STATE_BUSY_RX = 0x04, /*!< Data Reception process is ongoing */
-DECL|HAL_I2S_STATE_BUSY_TX_RX|enumerator|HAL_I2S_STATE_BUSY_TX_RX = 0x05, /*!< Data Transmission and Reception process is ongoing */
-DECL|HAL_I2S_STATE_BUSY_TX|enumerator|HAL_I2S_STATE_BUSY_TX = 0x03, /*!< Data Transmission process is ongoing */
-DECL|HAL_I2S_STATE_BUSY|enumerator|HAL_I2S_STATE_BUSY = 0x02, /*!< I2S internal process is ongoing */
+DECL|HAL_I2S_STATE_BUSY_RX|enumerator|HAL_I2S_STATE_BUSY_RX = 0x04U, /*!< Data Reception process is ongoing */
+DECL|HAL_I2S_STATE_BUSY_TX_RX|enumerator|HAL_I2S_STATE_BUSY_TX_RX = 0x05U, /*!< Data Transmission and Reception process is ongoing */
+DECL|HAL_I2S_STATE_BUSY_TX|enumerator|HAL_I2S_STATE_BUSY_TX = 0x03U, /*!< Data Transmission process is ongoing */
+DECL|HAL_I2S_STATE_BUSY|enumerator|HAL_I2S_STATE_BUSY = 0x02U, /*!< I2S internal process is ongoing */
 DECL|HAL_I2S_STATE_ERROR|enumerator|HAL_I2S_STATE_ERROR = 0x07 /*!< I2S error state */
-DECL|HAL_I2S_STATE_READY|enumerator|HAL_I2S_STATE_READY = 0x01, /*!< I2S initialized and ready for use */
-DECL|HAL_I2S_STATE_RESET|enumerator|HAL_I2S_STATE_RESET = 0x00, /*!< I2S not yet initialized or disabled */
-DECL|HAL_I2S_STATE_TIMEOUT|enumerator|HAL_I2S_STATE_TIMEOUT = 0x06, /*!< I2S timeout state */
+DECL|HAL_I2S_STATE_READY|enumerator|HAL_I2S_STATE_READY = 0x01U, /*!< I2S initialized and ready for use */
+DECL|HAL_I2S_STATE_RESET|enumerator|HAL_I2S_STATE_RESET = 0x00U, /*!< I2S not yet initialized or disabled */
+DECL|HAL_I2S_STATE_TIMEOUT|enumerator|HAL_I2S_STATE_TIMEOUT = 0x06U, /*!< I2S timeout state */
 DECL|HAL_I2S_StateTypeDef|typedef|}HAL_I2S_StateTypeDef;
 DECL|I2S_AUDIOFREQ_11K|macro|I2S_AUDIOFREQ_11K
 DECL|I2S_AUDIOFREQ_16K|macro|I2S_AUDIOFREQ_16K

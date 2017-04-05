@@ -4,7 +4,7 @@ DECL|HAL_PCD_STATE_ERROR|enumerator|HAL_PCD_STATE_ERROR = 0x02U,
 DECL|HAL_PCD_STATE_READY|enumerator|HAL_PCD_STATE_READY = 0x01U,
 DECL|HAL_PCD_STATE_RESET|enumerator|HAL_PCD_STATE_RESET = 0x00U,
 DECL|HAL_PCD_STATE_TIMEOUT|enumerator|HAL_PCD_STATE_TIMEOUT = 0x04U
-DECL|IN_ep|member|PCD_EPTypeDef IN_ep[15]; /*!< IN endpoint parameters */
+DECL|IN_ep|member|PCD_EPTypeDef IN_ep[16]; /*!< IN endpoint parameters */
 DECL|IS_PCD_ALL_INSTANCE|macro|IS_PCD_ALL_INSTANCE
 DECL|Init|member|PCD_InitTypeDef Init; /*!< PCD required parameters */
 DECL|Instance|member|PCD_TypeDef *Instance; /*!< Register base address */
@@ -14,13 +14,14 @@ DECL|LPM_L2|enumerator|LPM_L2 = 0x02U, /* suspend */
 DECL|LPM_L3|enumerator|LPM_L3 = 0x03U, /* off */
 DECL|LPM_State|member|PCD_LPM_StateTypeDef LPM_State; /*!< LPM State */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< PCD peripheral status */
-DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[15]; /*!< OUT endpoint parameters */
+DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[16]; /*!< OUT endpoint parameters */
 DECL|PCD_EPTypeDef|typedef|typedef USB_OTG_EPTypeDef PCD_EPTypeDef ;
 DECL|PCD_HandleTypeDef|typedef|} PCD_HandleTypeDef;
 DECL|PCD_InitTypeDef|typedef|typedef USB_OTG_CfgTypeDef PCD_InitTypeDef;
 DECL|PCD_LPM_StateTypeDef|typedef|}PCD_LPM_StateTypeDef;
 DECL|PCD_PHY_EMBEDDED|macro|PCD_PHY_EMBEDDED
 DECL|PCD_PHY_ULPI|macro|PCD_PHY_ULPI
+DECL|PCD_PHY_UTMI|macro|PCD_PHY_UTMI
 DECL|PCD_SPEED_FULL|macro|PCD_SPEED_FULL
 DECL|PCD_SPEED_HIGH_IN_FULL|macro|PCD_SPEED_HIGH_IN_FULL
 DECL|PCD_SPEED_HIGH|macro|PCD_SPEED_HIGH
@@ -63,5 +64,6 @@ DECL|__HAL_USB_OTG_HS_WAKEUP_EXTI_ENABLE_RISING_FALLING_EDGE|macro|__HAL_USB_OTG
 DECL|__HAL_USB_OTG_HS_WAKEUP_EXTI_GENERATE_SWIT|macro|__HAL_USB_OTG_HS_WAKEUP_EXTI_GENERATE_SWIT
 DECL|__HAL_USB_OTG_HS_WAKEUP_EXTI_GET_FLAG|macro|__HAL_USB_OTG_HS_WAKEUP_EXTI_GET_FLAG
 DECL|__STM32F7xx_HAL_PCD_H|macro|__STM32F7xx_HAL_PCD_H
+DECL|battery_charging_active|member|uint32_t battery_charging_active; /*!< Enable or disable Battery charging.
 DECL|lpm_active|member|uint32_t lpm_active; /*!< Enable or disable the Link Power Management .
 DECL|pData|member|void *pData; /*!< Pointer to upper stack Handler */

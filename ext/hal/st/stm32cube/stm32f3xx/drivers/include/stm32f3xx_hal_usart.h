@@ -9,14 +9,14 @@ DECL|HAL_USART_ERROR_NE|macro|HAL_USART_ERROR_NE
 DECL|HAL_USART_ERROR_NONE|macro|HAL_USART_ERROR_NONE
 DECL|HAL_USART_ERROR_ORE|macro|HAL_USART_ERROR_ORE
 DECL|HAL_USART_ERROR_PE|macro|HAL_USART_ERROR_PE
-DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00, /*!< Peripheral is not initialized */
-DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32U, /*!< Data Transmission Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12U, /*!< Data Transmission process is ongoing */
+DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02U, /*!< an internal process is ongoing */
+DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04U /*!< Error */
+DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00U, /*!< Peripheral is not initialized */
+DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_USART_StateTypeDef|typedef|}HAL_USART_StateTypeDef;
 DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_CLOCK|macro|IS_USART_CLOCK
@@ -33,11 +33,11 @@ DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mask|member|uint16_t Mask; /*!< USART Rx RDR register mask */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< USART Rx Transfer size */
 DECL|State|member|__IO HAL_USART_StateTypeDef State; /*!< USART communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< USART Tx Transfer size */
 DECL|USART_CLEAR_CTSF|macro|USART_CLEAR_CTSF
 DECL|USART_CLEAR_FEF|macro|USART_CLEAR_FEF
@@ -46,12 +46,12 @@ DECL|USART_CLEAR_NEF|macro|USART_CLEAR_NEF
 DECL|USART_CLEAR_OREF|macro|USART_CLEAR_OREF
 DECL|USART_CLEAR_PEF|macro|USART_CLEAR_PEF
 DECL|USART_CLEAR_TCF|macro|USART_CLEAR_TCF
-DECL|USART_CLOCKSOURCE_HSI|enumerator|USART_CLOCKSOURCE_HSI = 0x02, /*!< HSI clock source */
-DECL|USART_CLOCKSOURCE_LSE|enumerator|USART_CLOCKSOURCE_LSE = 0x08, /*!< LSE clock source */
-DECL|USART_CLOCKSOURCE_PCLK1|enumerator|USART_CLOCKSOURCE_PCLK1 = 0x00, /*!< PCLK1 clock source */
-DECL|USART_CLOCKSOURCE_PCLK2|enumerator|USART_CLOCKSOURCE_PCLK2 = 0x01, /*!< PCLK2 clock source */
-DECL|USART_CLOCKSOURCE_SYSCLK|enumerator|USART_CLOCKSOURCE_SYSCLK = 0x04, /*!< SYSCLK clock source */
-DECL|USART_CLOCKSOURCE_UNDEFINED|enumerator|USART_CLOCKSOURCE_UNDEFINED = 0x10 /*!< Undefined clock source */
+DECL|USART_CLOCKSOURCE_HSI|enumerator|USART_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
+DECL|USART_CLOCKSOURCE_LSE|enumerator|USART_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
+DECL|USART_CLOCKSOURCE_PCLK1|enumerator|USART_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
+DECL|USART_CLOCKSOURCE_PCLK2|enumerator|USART_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
+DECL|USART_CLOCKSOURCE_SYSCLK|enumerator|USART_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|USART_CLOCKSOURCE_UNDEFINED|enumerator|USART_CLOCKSOURCE_UNDEFINED = 0x10U /*!< Undefined clock source */
 DECL|USART_CLOCK_DISABLE|macro|USART_CLOCK_DISABLE
 DECL|USART_CLOCK_ENABLE|macro|USART_CLOCK_ENABLE
 DECL|USART_ClockSourceTypeDef|typedef|}USART_ClockSourceTypeDef;
@@ -60,6 +60,7 @@ DECL|USART_FLAG_CTSIF|macro|USART_FLAG_CTSIF
 DECL|USART_FLAG_CTS|macro|USART_FLAG_CTS
 DECL|USART_FLAG_FE|macro|USART_FLAG_FE
 DECL|USART_FLAG_IDLE|macro|USART_FLAG_IDLE
+DECL|USART_FLAG_LBDF|macro|USART_FLAG_LBDF
 DECL|USART_FLAG_NE|macro|USART_FLAG_NE
 DECL|USART_FLAG_ORE|macro|USART_FLAG_ORE
 DECL|USART_FLAG_PE|macro|USART_FLAG_PE
