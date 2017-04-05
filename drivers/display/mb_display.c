@@ -24,6 +24,7 @@ DECL|mb_display_print|function|void mb_display_print(struct mb_display *disp, co
 DECL|mb_display_stop|function|void mb_display_stop(struct mb_display *disp)
 DECL|mb_display_string|function|void mb_display_string(struct mb_display *disp, int32_t duration, const char *fmt, ...)
 DECL|mb_display|struct|struct mb_display {
+DECL|reset_display|function|static void reset_display(struct mb_display *disp)
 DECL|row|member|uint32_t row[3]; /* Content (columns) for each row */
 DECL|scroll|member|uint16_t scroll; /* Scroll shift */
 DECL|show_row|function|static void show_row(struct k_timer *timer)
