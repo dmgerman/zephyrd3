@@ -65,12 +65,12 @@ DECL|OverrunDisable|member|uint32_t OverrunDisable; /*!< Specifies whether the r
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|RxPinLevelInvert|member|uint32_t RxPinLevelInvert; /*!< Specifies whether the RX pin active level is inverted.
 DECL|RxState|member|__IO HAL_UART_StateTypeDef RxState; /*!< UART state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< UART Rx Transfer size */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
 DECL|Swap|member|uint32_t Swap; /*!< Specifies whether TX and RX pins are swapped.
 DECL|TxPinLevelInvert|member|uint32_t TxPinLevelInvert; /*!< Specifies whether the TX pin active level is inverted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< UART Tx Transfer size */
 DECL|UART_ADVFEATURE_AUTOBAUDRATE_DISABLE|macro|UART_ADVFEATURE_AUTOBAUDRATE_DISABLE
 DECL|UART_ADVFEATURE_AUTOBAUDRATE_ENABLE|macro|UART_ADVFEATURE_AUTOBAUDRATE_ENABLE

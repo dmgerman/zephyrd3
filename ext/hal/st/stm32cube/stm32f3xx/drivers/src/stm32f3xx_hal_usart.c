@@ -1,3 +1,6 @@
+DECL|HAL_USART_AbortCpltCallback|function|__weak void HAL_USART_AbortCpltCallback (USART_HandleTypeDef *husart)
+DECL|HAL_USART_Abort_IT|function|HAL_StatusTypeDef HAL_USART_Abort_IT(USART_HandleTypeDef *husart)
+DECL|HAL_USART_Abort|function|HAL_StatusTypeDef HAL_USART_Abort(USART_HandleTypeDef *husart)
 DECL|HAL_USART_DMAPause|function|HAL_StatusTypeDef HAL_USART_DMAPause(USART_HandleTypeDef *husart)
 DECL|HAL_USART_DMAResume|function|HAL_StatusTypeDef HAL_USART_DMAResume(USART_HandleTypeDef *husart)
 DECL|HAL_USART_DMAStop|function|HAL_StatusTypeDef HAL_USART_DMAStop(USART_HandleTypeDef *husart)
@@ -26,18 +29,20 @@ DECL|HAL_USART_TxRxCpltCallback|function|__weak void HAL_USART_TxRxCpltCallback(
 DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
 DECL|USART_CR2_FIELDS|macro|USART_CR2_FIELDS
 DECL|USART_CheckIdleState|function|static HAL_StatusTypeDef USART_CheckIdleState(USART_HandleTypeDef *husart)
+DECL|USART_DMAAbortOnError|function|static void USART_DMAAbortOnError(DMA_HandleTypeDef *hdma)
 DECL|USART_DMAError|function|static void USART_DMAError(DMA_HandleTypeDef *hdma)
 DECL|USART_DMAReceiveCplt|function|static void USART_DMAReceiveCplt(DMA_HandleTypeDef *hdma)
+DECL|USART_DMARxAbortCallback|function|static void USART_DMARxAbortCallback(DMA_HandleTypeDef *hdma)
 DECL|USART_DMARxHalfCplt|function|static void USART_DMARxHalfCplt(DMA_HandleTypeDef *hdma)
 DECL|USART_DMATransmitCplt|function|static void USART_DMATransmitCplt(DMA_HandleTypeDef *hdma)
+DECL|USART_DMATxAbortCallback|function|static void USART_DMATxAbortCallback(DMA_HandleTypeDef *hdma)
 DECL|USART_DMATxHalfCplt|function|static void USART_DMATxHalfCplt(DMA_HandleTypeDef *hdma)
 DECL|USART_DUMMY_DATA|macro|USART_DUMMY_DATA
+DECL|USART_EndTransfer|function|static void USART_EndTransfer(USART_HandleTypeDef *husart)
 DECL|USART_EndTransmit_IT|function|static HAL_StatusTypeDef USART_EndTransmit_IT(USART_HandleTypeDef *husart)
 DECL|USART_Receive_IT|function|static HAL_StatusTypeDef USART_Receive_IT(USART_HandleTypeDef *husart)
 DECL|USART_SetConfig|function|static HAL_StatusTypeDef USART_SetConfig(USART_HandleTypeDef *husart)
 DECL|USART_TEACK_REACK_TIMEOUT|macro|USART_TEACK_REACK_TIMEOUT
-DECL|USART_TIMEOUT_VALUE|macro|USART_TIMEOUT_VALUE
-DECL|USART_TXDMA_TIMEOUTVALUE|macro|USART_TXDMA_TIMEOUTVALUE
 DECL|USART_TransmitReceive_IT|function|static HAL_StatusTypeDef USART_TransmitReceive_IT(USART_HandleTypeDef *husart)
 DECL|USART_Transmit_IT|function|static HAL_StatusTypeDef USART_Transmit_IT(USART_HandleTypeDef *husart)
-DECL|USART_WaitOnFlagUntilTimeout|function|static HAL_StatusTypeDef USART_WaitOnFlagUntilTimeout(USART_HandleTypeDef *husart, uint32_t Flag, FlagStatus Status, uint32_t Timeout)
+DECL|USART_WaitOnFlagUntilTimeout|function|static HAL_StatusTypeDef USART_WaitOnFlagUntilTimeout(USART_HandleTypeDef *husart, uint32_t Flag, FlagStatus Status, uint32_t Tickstart, uint32_t Timeout)

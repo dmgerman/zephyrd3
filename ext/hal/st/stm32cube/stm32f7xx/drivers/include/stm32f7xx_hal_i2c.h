@@ -3,7 +3,6 @@ DECL|AddressingMode|member|uint32_t AddressingMode; /*!< Specifies if 7-bit or 1
 DECL|DualAddressMode|member|uint32_t DualAddressMode; /*!< Specifies if dual addressing mode is selected.
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< I2C Error code */
 DECL|GeneralCallMode|member|uint32_t GeneralCallMode; /*!< Specifies if general call mode is selected.
-DECL|HAL_I2C_ERROR_ABORT|macro|HAL_I2C_ERROR_ABORT
 DECL|HAL_I2C_ERROR_AF|macro|HAL_I2C_ERROR_AF
 DECL|HAL_I2C_ERROR_ARLO|macro|HAL_I2C_ERROR_ARLO
 DECL|HAL_I2C_ERROR_BERR|macro|HAL_I2C_ERROR_BERR
@@ -17,7 +16,7 @@ DECL|HAL_I2C_MODE_MEM|enumerator|HAL_I2C_MODE_MEM = 0x40U /*!< I2C communication
 DECL|HAL_I2C_MODE_NONE|enumerator|HAL_I2C_MODE_NONE = 0x00U, /*!< No I2C communication on going */
 DECL|HAL_I2C_MODE_SLAVE|enumerator|HAL_I2C_MODE_SLAVE = 0x20U, /*!< I2C communication is in Slave Mode */
 DECL|HAL_I2C_ModeTypeDef|typedef|}HAL_I2C_ModeTypeDef;
-DECL|HAL_I2C_STATE_ABORT|enumerator|HAL_I2C_STATE_ABORT = 0x60, /*!< Abort user request ongoing */
+DECL|HAL_I2C_STATE_ABORT|enumerator|HAL_I2C_STATE_ABORT = 0x60U, /*!< Abort user request ongoing */
 DECL|HAL_I2C_STATE_BUSY_RX_LISTEN|enumerator|HAL_I2C_STATE_BUSY_RX_LISTEN = 0x2AU, /*!< Address Listen Mode and Data Reception
 DECL|HAL_I2C_STATE_BUSY_RX|enumerator|HAL_I2C_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
 DECL|HAL_I2C_STATE_BUSY_TX_LISTEN|enumerator|HAL_I2C_STATE_BUSY_TX_LISTEN = 0x29U, /*!< Address Listen Mode and Data Transmission
@@ -37,6 +36,7 @@ DECL|I2C_DIRECTION_TRANSMIT|macro|I2C_DIRECTION_TRANSMIT
 DECL|I2C_DUALADDRESS_DISABLE|macro|I2C_DUALADDRESS_DISABLE
 DECL|I2C_DUALADDRESS_ENABLE|macro|I2C_DUALADDRESS_ENABLE
 DECL|I2C_FIRST_AND_LAST_FRAME|macro|I2C_FIRST_AND_LAST_FRAME
+DECL|I2C_FIRST_AND_NEXT_FRAME|macro|I2C_FIRST_AND_NEXT_FRAME
 DECL|I2C_FIRST_FRAME|macro|I2C_FIRST_FRAME
 DECL|I2C_FLAG_ADDR|macro|I2C_FLAG_ADDR
 DECL|I2C_FLAG_AF|macro|I2C_FLAG_AF
@@ -82,7 +82,6 @@ DECL|I2C_MEM_ADD_MSB|macro|I2C_MEM_ADD_MSB
 DECL|I2C_NEXT_FRAME|macro|I2C_NEXT_FRAME
 DECL|I2C_NOSTRETCH_DISABLE|macro|I2C_NOSTRETCH_DISABLE
 DECL|I2C_NOSTRETCH_ENABLE|macro|I2C_NOSTRETCH_ENABLE
-DECL|I2C_NO_OPTION_FRAME|macro|I2C_NO_OPTION_FRAME
 DECL|I2C_NO_STARTSTOP|macro|I2C_NO_STARTSTOP
 DECL|I2C_OA2_MASK01|macro|I2C_OA2_MASK01
 DECL|I2C_OA2_MASK02|macro|I2C_OA2_MASK02

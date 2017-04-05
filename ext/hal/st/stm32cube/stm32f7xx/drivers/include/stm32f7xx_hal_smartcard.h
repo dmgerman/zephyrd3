@@ -1,5 +1,5 @@
 DECL|AdvFeatureInit|member|uint32_t AdvFeatureInit; /*!< Specifies which advanced SMARTCARD features is initialized. Several
-DECL|AdvancedInit|member|SMARTCARD_AdvFeatureInitTypeDef AdvancedInit; /* SmartCard advanced features initialization parameters */
+DECL|AdvancedInit|member|SMARTCARD_AdvFeatureInitTypeDef AdvancedInit; /*!< SmartCard advanced features initialization parameters */
 DECL|AutoRetryCount|member|uint32_t AutoRetryCount; /*!< Specifies the SmartCard auto-retry count (number of retries in
 DECL|BaudRate|member|uint32_t BaudRate; /*!< Configures the SmartCard communication baud rate.
 DECL|BlockLength|member|uint32_t BlockLength; /*!< Specifies the SmartCard Block Length in T=1 Reception mode.
@@ -23,7 +23,7 @@ DECL|HAL_SMARTCARD_STATE_BUSY_TX|enumerator|HAL_SMARTCARD_STATE_BUSY_TX = 0x21U,
 DECL|HAL_SMARTCARD_STATE_BUSY|enumerator|HAL_SMARTCARD_STATE_BUSY = 0x24U, /*!< an internal process is ongoing
 DECL|HAL_SMARTCARD_STATE_ERROR|enumerator|HAL_SMARTCARD_STATE_ERROR = 0xE0U /*!< Error
 DECL|HAL_SMARTCARD_STATE_READY|enumerator|HAL_SMARTCARD_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use
-DECL|HAL_SMARTCARD_STATE_RESET|enumerator|HAL_SMARTCARD_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized
+DECL|HAL_SMARTCARD_STATE_RESET|enumerator|HAL_SMARTCARD_STATE_RESET = 0x00U, /*!< Peripheral is not initialized
 DECL|HAL_SMARTCARD_STATE_TIMEOUT|enumerator|HAL_SMARTCARD_STATE_TIMEOUT = 0xA0U, /*!< Timeout state
 DECL|HAL_SMARTCARD_StateTypeDef|typedef|}HAL_SMARTCARD_StateTypeDef;
 DECL|IS_SMARTCARD_ADVFEATURE_DATAINV|macro|IS_SMARTCARD_ADVFEATURE_DATAINV
@@ -49,20 +49,20 @@ DECL|IS_SMARTCARD_STOPBITS|macro|IS_SMARTCARD_STOPBITS
 DECL|IS_SMARTCARD_TIMEOUT_VALUE|macro|IS_SMARTCARD_TIMEOUT_VALUE
 DECL|IS_SMARTCARD_TIMEOUT|macro|IS_SMARTCARD_TIMEOUT
 DECL|IS_SMARTCARD_WORD_LENGTH|macro|IS_SMARTCARD_WORD_LENGTH
-DECL|Init|member|SMARTCARD_InitTypeDef Init; /* SmartCard communication parameters */
-DECL|Instance|member|USART_TypeDef *Instance; /* USART registers base address */
-DECL|Lock|member|HAL_LockTypeDef Lock; /* Locking object */
+DECL|Init|member|SMARTCARD_InitTypeDef Init; /*!< SmartCard communication parameters */
+DECL|Instance|member|USART_TypeDef *Instance; /*!< USART registers base address */
+DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|MSBFirst|member|uint32_t MSBFirst; /*!< Specifies whether MSB is sent first on UART line.
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
-DECL|NACKState|member|uint32_t NACKState; /*!< Specifies whether the SmartCard NACK transmission is enabled
+DECL|NACKEnable|member|uint16_t NACKEnable; /*!< Specifies whether the SmartCard NACK transmission is enabled
 DECL|OneBitSampling|member|uint32_t OneBitSampling; /*!< Specifies whether a single sample or three samples' majority vote is selected.
 DECL|OverrunDisable|member|uint32_t OverrunDisable; /*!< Specifies whether the reception overrun detection is disabled.
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the SmartCard Prescaler */
 DECL|RxPinLevelInvert|member|uint32_t RxPinLevelInvert; /*!< Specifies whether the RX pin active level is inverted.
-DECL|RxState|member|__IO HAL_SMARTCARD_StateTypeDef RxState; /*!< UART state information related to Rx operations.
-DECL|RxXferCount|member|uint16_t RxXferCount; /* SmartCard Rx Transfer Counter */
-DECL|RxXferSize|member|uint16_t RxXferSize; /* SmartCard Rx Transfer size */
+DECL|RxState|member|__IO HAL_SMARTCARD_StateTypeDef RxState; /*!< SmartCard state information related to Rx operations.
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< SmartCard Rx Transfer Counter */
+DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SmartCard Rx Transfer size */
 DECL|SMARTCARD_ADVFEATURE_DATAINVERT_INIT|macro|SMARTCARD_ADVFEATURE_DATAINVERT_INIT
 DECL|SMARTCARD_ADVFEATURE_DATAINV_DISABLE|macro|SMARTCARD_ADVFEATURE_DATAINV_DISABLE
 DECL|SMARTCARD_ADVFEATURE_DATAINV_ENABLE|macro|SMARTCARD_ADVFEATURE_DATAINV_ENABLE
@@ -95,10 +95,11 @@ DECL|SMARTCARD_CLEAR_PEF|macro|SMARTCARD_CLEAR_PEF
 DECL|SMARTCARD_CLEAR_RTOF|macro|SMARTCARD_CLEAR_RTOF
 DECL|SMARTCARD_CLEAR_TCF|macro|SMARTCARD_CLEAR_TCF
 DECL|SMARTCARD_CLOCKSOURCE_HSI|enumerator|SMARTCARD_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
-DECL|SMARTCARD_CLOCKSOURCE_LSE|enumerator|SMARTCARD_CLOCKSOURCE_LSE = 0x08U /*!< LSE clock source */
+DECL|SMARTCARD_CLOCKSOURCE_LSE|enumerator|SMARTCARD_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
 DECL|SMARTCARD_CLOCKSOURCE_PCLK1|enumerator|SMARTCARD_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
 DECL|SMARTCARD_CLOCKSOURCE_PCLK2|enumerator|SMARTCARD_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
 DECL|SMARTCARD_CLOCKSOURCE_SYSCLK|enumerator|SMARTCARD_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|SMARTCARD_CLOCKSOURCE_UNDEFINED|enumerator|SMARTCARD_CLOCKSOURCE_UNDEFINED = 0x10 /*!< undefined clock source */
 DECL|SMARTCARD_CR3_SCARCNT_LSB_POS|macro|SMARTCARD_CR3_SCARCNT_LSB_POS
 DECL|SMARTCARD_ClockSourceTypeDef|typedef|}SMARTCARD_ClockSourceTypeDef;
 DECL|SMARTCARD_DMAREQ_RX|macro|SMARTCARD_DMAREQ_RX
@@ -153,15 +154,22 @@ DECL|SMARTCARD_TIMEOUT_DISABLE|macro|SMARTCARD_TIMEOUT_DISABLE
 DECL|SMARTCARD_TIMEOUT_ENABLE|macro|SMARTCARD_TIMEOUT_ENABLE
 DECL|SMARTCARD_TXDATA_FLUSH_REQUEST|macro|SMARTCARD_TXDATA_FLUSH_REQUEST
 DECL|SMARTCARD_WORDLENGTH_9B|macro|SMARTCARD_WORDLENGTH_9B
-DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits @ref SMARTCARD_Stop_Bits.
+DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits.
 DECL|Swap|member|uint32_t Swap; /*!< Specifies whether TX and RX pins are swapped.
 DECL|TimeOutEnable|member|uint32_t TimeOutEnable; /*!< Specifies whether the receiver timeout is enabled.
 DECL|TimeOutValue|member|uint32_t TimeOutValue; /*!< Specifies the receiver time out value in number of baud blocks:
+DECL|TxCompletionIndication|member|uint16_t TxCompletionIndication; /*!< Specifies which transmission completion indication is used: before (when
 DECL|TxPinLevelInvert|member|uint32_t TxPinLevelInvert; /*!< Specifies whether the TX pin active level is inverted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /* SmartCard Tx Transfer Counter */
-DECL|TxXferSize|member|uint16_t TxXferSize; /* SmartCard Tx Transfer size */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< SmartCard Tx Transfer Counter */
+DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SmartCard Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
+DECL|__HAL_SMARTCARD_CLEAR_FEFLAG|macro|__HAL_SMARTCARD_CLEAR_FEFLAG
+DECL|__HAL_SMARTCARD_CLEAR_FLAG|macro|__HAL_SMARTCARD_CLEAR_FLAG
+DECL|__HAL_SMARTCARD_CLEAR_IDLEFLAG|macro|__HAL_SMARTCARD_CLEAR_IDLEFLAG
 DECL|__HAL_SMARTCARD_CLEAR_IT|macro|__HAL_SMARTCARD_CLEAR_IT
+DECL|__HAL_SMARTCARD_CLEAR_NEFLAG|macro|__HAL_SMARTCARD_CLEAR_NEFLAG
+DECL|__HAL_SMARTCARD_CLEAR_OREFLAG|macro|__HAL_SMARTCARD_CLEAR_OREFLAG
+DECL|__HAL_SMARTCARD_CLEAR_PEFLAG|macro|__HAL_SMARTCARD_CLEAR_PEFLAG
 DECL|__HAL_SMARTCARD_DISABLE_IT|macro|__HAL_SMARTCARD_DISABLE_IT
 DECL|__HAL_SMARTCARD_DISABLE|macro|__HAL_SMARTCARD_DISABLE
 DECL|__HAL_SMARTCARD_DMA_REQUEST_DISABLE|macro|__HAL_SMARTCARD_DMA_REQUEST_DISABLE
@@ -175,8 +183,8 @@ DECL|__HAL_SMARTCARD_GET_IT|macro|__HAL_SMARTCARD_GET_IT
 DECL|__HAL_SMARTCARD_RESET_HANDLE_STATE|macro|__HAL_SMARTCARD_RESET_HANDLE_STATE
 DECL|__HAL_SMARTCARD_SEND_REQ|macro|__HAL_SMARTCARD_SEND_REQ
 DECL|__STM32F7xx_HAL_SMARTCARD_H|macro|__STM32F7xx_HAL_SMARTCARD_H
-DECL|gState|member|__IO HAL_SMARTCARD_StateTypeDef gState; /*!< UART state information related to global Handle management
-DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /* SmartCard Rx DMA Handle parameters */
-DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /* SmartCard Tx DMA Handle parameters */
-DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /* Pointer to SmartCard Rx transfer Buffer */
-DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /* Pointer to SmartCard Tx transfer Buffer */
+DECL|gState|member|__IO HAL_SMARTCARD_StateTypeDef gState; /*!< SmartCard state information related to global Handle management
+DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SmartCard Rx DMA Handle parameters */
+DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SmartCard Tx DMA Handle parameters */
+DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to SmartCard Rx transfer Buffer */
+DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to SmartCard Tx transfer Buffer */

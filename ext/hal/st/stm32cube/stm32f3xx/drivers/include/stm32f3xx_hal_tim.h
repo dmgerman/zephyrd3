@@ -1,3 +1,4 @@
+DECL|AutoReloadPreload|member|uint32_t AutoReloadPreload; /*!< Specifies the auto-reload preload.
 DECL|Channel|member|HAL_TIM_ActiveChannel Channel; /*!< Active channel */
 DECL|ClearInputFilter|member|uint32_t ClearInputFilter; /*!< TIM Clear Input filter
 DECL|ClearInputPolarity|member|uint32_t ClearInputPolarity; /*!< TIM Clear Input polarity
@@ -11,17 +12,17 @@ DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< TIM clock prescaler
 DECL|ClockSource|member|uint32_t ClockSource; /*!< TIM clock sources
 DECL|CounterMode|member|uint32_t CounterMode; /*!< Specifies the counter mode.
 DECL|EncoderMode|member|uint32_t EncoderMode; /*!< Specifies the active edge of the input signal.
-DECL|HAL_TIM_ACTIVE_CHANNEL_1|enumerator|HAL_TIM_ACTIVE_CHANNEL_1 = 0x01, /*!< The active channel is 1 */
-DECL|HAL_TIM_ACTIVE_CHANNEL_2|enumerator|HAL_TIM_ACTIVE_CHANNEL_2 = 0x02, /*!< The active channel is 2 */
-DECL|HAL_TIM_ACTIVE_CHANNEL_3|enumerator|HAL_TIM_ACTIVE_CHANNEL_3 = 0x04, /*!< The active channel is 3 */
-DECL|HAL_TIM_ACTIVE_CHANNEL_4|enumerator|HAL_TIM_ACTIVE_CHANNEL_4 = 0x08, /*!< The active channel is 4 */
+DECL|HAL_TIM_ACTIVE_CHANNEL_1|enumerator|HAL_TIM_ACTIVE_CHANNEL_1 = 0x01U, /*!< The active channel is 1 */
+DECL|HAL_TIM_ACTIVE_CHANNEL_2|enumerator|HAL_TIM_ACTIVE_CHANNEL_2 = 0x02U, /*!< The active channel is 2 */
+DECL|HAL_TIM_ACTIVE_CHANNEL_3|enumerator|HAL_TIM_ACTIVE_CHANNEL_3 = 0x04U, /*!< The active channel is 3 */
+DECL|HAL_TIM_ACTIVE_CHANNEL_4|enumerator|HAL_TIM_ACTIVE_CHANNEL_4 = 0x08U, /*!< The active channel is 4 */
 DECL|HAL_TIM_ACTIVE_CHANNEL_CLEARED|enumerator|HAL_TIM_ACTIVE_CHANNEL_CLEARED = 0x00 /*!< All active channels cleared */
 DECL|HAL_TIM_ActiveChannel|typedef|}HAL_TIM_ActiveChannel;
-DECL|HAL_TIM_STATE_BUSY|enumerator|HAL_TIM_STATE_BUSY = 0x02, /*!< An internal process is ongoing */
+DECL|HAL_TIM_STATE_BUSY|enumerator|HAL_TIM_STATE_BUSY = 0x02U, /*!< An internal process is ongoing */
 DECL|HAL_TIM_STATE_ERROR|enumerator|HAL_TIM_STATE_ERROR = 0x04 /*!< Reception process is ongoing */
-DECL|HAL_TIM_STATE_READY|enumerator|HAL_TIM_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_TIM_STATE_RESET|enumerator|HAL_TIM_STATE_RESET = 0x00, /*!< Peripheral not yet initialized or disabled */
-DECL|HAL_TIM_STATE_TIMEOUT|enumerator|HAL_TIM_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_TIM_STATE_READY|enumerator|HAL_TIM_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_TIM_STATE_RESET|enumerator|HAL_TIM_STATE_RESET = 0x00U, /*!< Peripheral not yet initialized or disabled */
+DECL|HAL_TIM_STATE_TIMEOUT|enumerator|HAL_TIM_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_TIM_StateTypeDef|typedef|}HAL_TIM_StateTypeDef;
 DECL|IC1Filter|member|uint32_t IC1Filter; /*!< Specifies the input capture filter.
 DECL|IC1Polarity|member|uint32_t IC1Polarity; /*!< Specifies the active edge of the input signal.
@@ -39,6 +40,7 @@ DECL|ICPrescaler|member|uint32_t ICPrescaler; /*!< Specifies the Input Capture P
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
 DECL|IS_TIM_AUTOMATIC_OUTPUT_STATE|macro|IS_TIM_AUTOMATIC_OUTPUT_STATE
+DECL|IS_TIM_AUTORELOAD_PRELOAD|macro|IS_TIM_AUTORELOAD_PRELOAD
 DECL|IS_TIM_BREAK_POLARITY|macro|IS_TIM_BREAK_POLARITY
 DECL|IS_TIM_BREAK_STATE|macro|IS_TIM_BREAK_STATE
 DECL|IS_TIM_CLEARINPUT_FILTER|macro|IS_TIM_CLEARINPUT_FILTER
@@ -98,6 +100,8 @@ DECL|SlaveMode|member|uint32_t SlaveMode; /*!< Slave mode selection
 DECL|State|member|__IO HAL_TIM_StateTypeDef State; /*!< TIM operation state */
 DECL|TIM_AUTOMATICOUTPUT_DISABLE|macro|TIM_AUTOMATICOUTPUT_DISABLE
 DECL|TIM_AUTOMATICOUTPUT_ENABLE|macro|TIM_AUTOMATICOUTPUT_ENABLE
+DECL|TIM_AUTORELOAD_PRELOAD_DISABLE|macro|TIM_AUTORELOAD_PRELOAD_DISABLE
+DECL|TIM_AUTORELOAD_PRELOAD_ENABLE|macro|TIM_AUTORELOAD_PRELOAD_ENABLE
 DECL|TIM_BREAKPOLARITY_HIGH|macro|TIM_BREAKPOLARITY_HIGH
 DECL|TIM_BREAKPOLARITY_LOW|macro|TIM_BREAKPOLARITY_LOW
 DECL|TIM_BREAK_DISABLE|macro|TIM_BREAK_DISABLE
@@ -298,6 +302,7 @@ DECL|__HAL_TIM_GET_FLAG|macro|__HAL_TIM_GET_FLAG
 DECL|__HAL_TIM_GET_ICPRESCALER|macro|__HAL_TIM_GET_ICPRESCALER
 DECL|__HAL_TIM_GET_IT_SOURCE|macro|__HAL_TIM_GET_IT_SOURCE
 DECL|__HAL_TIM_IS_TIM_COUNTING_DOWN|macro|__HAL_TIM_IS_TIM_COUNTING_DOWN
+DECL|__HAL_TIM_MOE_DISABLE_UNCONDITIONALLY|macro|__HAL_TIM_MOE_DISABLE_UNCONDITIONALLY
 DECL|__HAL_TIM_MOE_DISABLE|macro|__HAL_TIM_MOE_DISABLE
 DECL|__HAL_TIM_MOE_ENABLE|macro|__HAL_TIM_MOE_ENABLE
 DECL|__HAL_TIM_RESET_HANDLE_STATE|macro|__HAL_TIM_RESET_HANDLE_STATE

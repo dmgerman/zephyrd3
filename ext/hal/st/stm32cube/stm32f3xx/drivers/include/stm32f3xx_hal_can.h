@@ -102,7 +102,7 @@ DECL|ExtId|member|uint32_t ExtId; /*!< Specifies the extended identifier.
 DECL|FIFONumber|member|uint32_t FIFONumber; /*!< Specifies the receive FIFO number.
 DECL|FMI|member|uint32_t FMI; /*!< Specifies the index of the filter the message stored in the mailbox passes through.
 DECL|FilterActivation|member|uint32_t FilterActivation; /*!< Enable or disable the filter.
-DECL|FilterFIFOAssignment|member|uint32_t FilterFIFOAssignment; /*!< Specifies the FIFO (0 or 1) which will be assigned to the filter.
+DECL|FilterFIFOAssignment|member|uint32_t FilterFIFOAssignment; /*!< Specifies the FIFO (0 or 1U) which will be assigned to the filter.
 DECL|FilterIdHigh|member|uint32_t FilterIdHigh; /*!< Specifies the filter identification number (MSBs for a 32-bit
 DECL|FilterIdLow|member|uint32_t FilterIdLow; /*!< Specifies the filter identification number (LSBs for a 32-bit
 DECL|FilterMaskIdHigh|member|uint32_t FilterMaskIdHigh; /*!< Specifies the filter mask number or identification number,
@@ -120,14 +120,14 @@ DECL|HAL_CAN_ERROR_EWG|macro|HAL_CAN_ERROR_EWG
 DECL|HAL_CAN_ERROR_FOR|macro|HAL_CAN_ERROR_FOR
 DECL|HAL_CAN_ERROR_NONE|macro|HAL_CAN_ERROR_NONE
 DECL|HAL_CAN_ERROR_STF|macro|HAL_CAN_ERROR_STF
-DECL|HAL_CAN_STATE_BUSY_RX|enumerator|HAL_CAN_STATE_BUSY_RX = 0x22, /*!< CAN process is ongoing */
-DECL|HAL_CAN_STATE_BUSY_TX_RX|enumerator|HAL_CAN_STATE_BUSY_TX_RX = 0x32, /*!< CAN process is ongoing */
-DECL|HAL_CAN_STATE_BUSY_TX|enumerator|HAL_CAN_STATE_BUSY_TX = 0x12, /*!< CAN process is ongoing */
-DECL|HAL_CAN_STATE_BUSY|enumerator|HAL_CAN_STATE_BUSY = 0x02, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_RX|enumerator|HAL_CAN_STATE_BUSY_RX = 0x22U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_TX_RX|enumerator|HAL_CAN_STATE_BUSY_TX_RX = 0x32U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_TX|enumerator|HAL_CAN_STATE_BUSY_TX = 0x12U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY|enumerator|HAL_CAN_STATE_BUSY = 0x02U, /*!< CAN process is ongoing */
 DECL|HAL_CAN_STATE_ERROR|enumerator|HAL_CAN_STATE_ERROR = 0x04 /*!< CAN error state */
-DECL|HAL_CAN_STATE_READY|enumerator|HAL_CAN_STATE_READY = 0x01, /*!< CAN initialized and ready for use */
-DECL|HAL_CAN_STATE_RESET|enumerator|HAL_CAN_STATE_RESET = 0x00, /*!< CAN not yet initialized or disabled */
-DECL|HAL_CAN_STATE_TIMEOUT|enumerator|HAL_CAN_STATE_TIMEOUT = 0x03, /*!< CAN in Timeout state */
+DECL|HAL_CAN_STATE_READY|enumerator|HAL_CAN_STATE_READY = 0x01U, /*!< CAN initialized and ready for use */
+DECL|HAL_CAN_STATE_RESET|enumerator|HAL_CAN_STATE_RESET = 0x00U, /*!< CAN not yet initialized or disabled */
+DECL|HAL_CAN_STATE_TIMEOUT|enumerator|HAL_CAN_STATE_TIMEOUT = 0x03U, /*!< CAN in Timeout state */
 DECL|HAL_CAN_StateTypeDef|typedef|}HAL_CAN_StateTypeDef;
 DECL|IDE|member|uint32_t IDE; /*!< Specifies the type of identifier for the message that will be received.
 DECL|IDE|member|uint32_t IDE; /*!< Specifies the type of identifier for the message that will be transmitted.

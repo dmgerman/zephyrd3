@@ -28,6 +28,7 @@ DECL|USB_HC_Halt|function|HAL_StatusTypeDef USB_HC_Halt(USB_OTG_GlobalTypeDef *U
 DECL|USB_HC_Init|function|HAL_StatusTypeDef USB_HC_Init(USB_OTG_GlobalTypeDef *USBx, uint8_t ch_num, uint8_t epnum, uint8_t dev_address, uint8_t speed,
 DECL|USB_HC_ReadInterrupt|function|uint32_t USB_HC_ReadInterrupt (USB_OTG_GlobalTypeDef *USBx)
 DECL|USB_HC_StartXfer|function|HAL_StatusTypeDef USB_HC_StartXfer(USB_OTG_GlobalTypeDef *USBx, USB_OTG_HCTypeDef *hc, uint8_t dma)
+DECL|USB_HS_PHYCInit|function|static HAL_StatusTypeDef USB_HS_PHYCInit(USB_OTG_GlobalTypeDef *USBx)
 DECL|USB_HostInit|function|HAL_StatusTypeDef USB_HostInit (USB_OTG_GlobalTypeDef *USBx, USB_OTG_CfgTypeDef cfg)
 DECL|USB_InitFSLSPClkSel|function|HAL_StatusTypeDef USB_InitFSLSPClkSel(USB_OTG_GlobalTypeDef *USBx , uint8_t freq)
 DECL|USB_ReadDevAllInEpInterrupt|function|uint32_t USB_ReadDevAllInEpInterrupt (USB_OTG_GlobalTypeDef *USBx)

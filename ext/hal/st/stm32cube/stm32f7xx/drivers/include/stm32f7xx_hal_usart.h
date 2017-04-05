@@ -35,11 +35,11 @@ DECL|Mask|member|uint16_t Mask; /*!< USART Rx RDR register mask */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to fPCLK/8).
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< USART Rx Transfer size */
 DECL|State|member|HAL_USART_StateTypeDef State; /*!< USART communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< USART Tx Transfer size */
 DECL|USART_CLEAR_CTSF|macro|USART_CLEAR_CTSF
 DECL|USART_CLEAR_FEF|macro|USART_CLEAR_FEF

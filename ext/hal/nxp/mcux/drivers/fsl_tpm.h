@@ -1,7 +1,9 @@
 DECL|FSL_TPM_DRIVER_VERSION|macro|FSL_TPM_DRIVER_VERSION
 DECL|TPM_ClearStatusFlags|function|static inline void TPM_ClearStatusFlags(TPM_Type *base, uint32_t mask)
+DECL|TPM_GetCurrentTimerCount|function|static inline uint32_t TPM_GetCurrentTimerCount(TPM_Type *base)
 DECL|TPM_GetStatusFlags|function|static inline uint32_t TPM_GetStatusFlags(TPM_Type *base)
 DECL|TPM_Reset|function|static inline void TPM_Reset(TPM_Type *base)
+DECL|TPM_SetTimerPeriod|function|static inline void TPM_SetTimerPeriod(TPM_Type *base, uint32_t ticks)
 DECL|TPM_StartTimer|function|static inline void TPM_StartTimer(TPM_Type *base, tpm_clock_source_t clockSource)
 DECL|TPM_StopTimer|function|static inline void TPM_StopTimer(TPM_Type *base)
 DECL|_FSL_TPM_H_|macro|_FSL_TPM_H_

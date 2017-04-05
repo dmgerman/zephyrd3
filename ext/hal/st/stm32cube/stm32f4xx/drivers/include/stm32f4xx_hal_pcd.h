@@ -4,7 +4,7 @@ DECL|HAL_PCD_STATE_ERROR|enumerator|HAL_PCD_STATE_ERROR = 0x02U,
 DECL|HAL_PCD_STATE_READY|enumerator|HAL_PCD_STATE_READY = 0x01U,
 DECL|HAL_PCD_STATE_RESET|enumerator|HAL_PCD_STATE_RESET = 0x00U,
 DECL|HAL_PCD_STATE_TIMEOUT|enumerator|HAL_PCD_STATE_TIMEOUT = 0x04U
-DECL|IN_ep|member|PCD_EPTypeDef IN_ep[16]; /*!< IN endpoint parameters */
+DECL|IN_ep|member|PCD_EPTypeDef IN_ep[16U]; /*!< IN endpoint parameters */
 DECL|Init|member|PCD_InitTypeDef Init; /*!< PCD required parameters */
 DECL|Instance|member|PCD_TypeDef *Instance; /*!< Register base address */
 DECL|LPM_L0|enumerator|LPM_L0 = 0x00U, /* on */
@@ -13,7 +13,7 @@ DECL|LPM_L2|enumerator|LPM_L2 = 0x02U, /* suspend */
 DECL|LPM_L3|enumerator|LPM_L3 = 0x03U /* off */
 DECL|LPM_State|member|PCD_LPM_StateTypeDef LPM_State; /*!< LPM State */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< PCD peripheral status */
-DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[16]; /*!< OUT endpoint parameters */
+DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[16U]; /*!< OUT endpoint parameters */
 DECL|PCD_EPTypeDef|typedef|typedef USB_OTG_EPTypeDef PCD_EPTypeDef ;
 DECL|PCD_HandleTypeDef|typedef|} PCD_HandleTypeDef;
 DECL|PCD_InitTypeDef|typedef|typedef USB_OTG_CfgTypeDef PCD_InitTypeDef;
@@ -25,7 +25,7 @@ DECL|PCD_SPEED_HIGH_IN_FULL|macro|PCD_SPEED_HIGH_IN_FULL
 DECL|PCD_SPEED_HIGH|macro|PCD_SPEED_HIGH
 DECL|PCD_StateTypeDef|typedef|} PCD_StateTypeDef;
 DECL|PCD_TypeDef|typedef|typedef USB_OTG_GlobalTypeDef PCD_TypeDef;
-DECL|Setup|member|uint32_t Setup[12]; /*!< Setup packet buffer */
+DECL|Setup|member|uint32_t Setup[12U]; /*!< Setup packet buffer */
 DECL|State|member|__IO PCD_StateTypeDef State; /*!< PCD communication state */
 DECL|USBD_FS_TRDT_VALUE|macro|USBD_FS_TRDT_VALUE
 DECL|USBD_HS_TRDT_VALUE|macro|USBD_HS_TRDT_VALUE
