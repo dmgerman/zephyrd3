@@ -29,6 +29,7 @@ DECL|hci_num_cmplt_encode|function|void hci_num_cmplt_encode(struct net_buf *buf
 DECL|info_cmd_handle|function|static int info_cmd_handle(uint8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_advertising_report|function|static void le_advertising_report(struct pdu_data *pdu_data, uint8_t *b, struct net_buf *buf)
+DECL|le_chan_sel_algo|function|static void le_chan_sel_algo(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_clear_wl|function|static void le_clear_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_conn_complete|function|static void le_conn_complete(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(struct net_buf *buf,struct net_buf **evt)

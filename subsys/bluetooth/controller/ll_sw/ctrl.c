@@ -41,8 +41,15 @@ DECL|adv_obs_conn_configure|function|static void adv_obs_conn_configure(uint8_t 
 DECL|adv_setup|function|static void adv_setup(void)
 DECL|advertiser|member|struct advertiser advertiser;
 DECL|advertiser|struct|struct advertiser {
-DECL|chan_calc|function|static uint8_t chan_calc(uint8_t *chan_use, uint8_t hop, uint16_t latency, uint8_t *chan_map, uint8_t chan_count)
+DECL|chan_mam|function|static uint16_t chan_mam(uint16_t a, uint16_t b)
 DECL|chan_map_update|function|static uint32_t chan_map_update(struct connection *conn,struct pdu_data *pdu_data_rx)
+DECL|chan_perm|function|static uint16_t chan_perm(uint16_t i)
+DECL|chan_prn|function|static uint16_t chan_prn(uint16_t counter, uint16_t chan_id)
+DECL|chan_rev_8|function|static uint8_t chan_rev_8(uint8_t i)
+DECL|chan_sel_1|function|static uint8_t chan_sel_1(uint8_t *chan_use, uint8_t hop, uint16_t latency, uint8_t *chan_map, uint8_t chan_count)
+DECL|chan_sel_2_ut|function|static void chan_sel_2_ut(void)
+DECL|chan_sel_2|function|static uint8_t chan_sel_2(uint16_t counter, uint16_t chan_id, uint8_t *chan_map, uint8_t chan_count)
+DECL|chan_sel_remap|function|static uint8_t chan_sel_remap(uint8_t *chan_map, uint8_t chan_index)
 DECL|chan_set|function|static void chan_set(uint32_t chan)
 DECL|chl_map_current|member|uint8_t chl_map_current:3;
 DECL|chl_map|member|uint8_t chl_map:3;
