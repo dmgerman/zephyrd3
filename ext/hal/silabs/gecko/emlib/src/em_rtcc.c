@@ -1,0 +1,5 @@
+DECL|RTCC_ChannelInit|function|void RTCC_ChannelInit( int ch, RTCC_CCChConf_TypeDef const *confPtr )
+DECL|RTCC_Enable|function|void RTCC_Enable( bool enable )
+DECL|RTCC_Init|function|void RTCC_Init( const RTCC_Init_TypeDef *init )
+DECL|RTCC_Reset|function|void RTCC_Reset( void )
+DECL|RTCC_StatusClear|function|void RTCC_StatusClear( void )

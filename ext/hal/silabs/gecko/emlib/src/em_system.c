@@ -1,0 +1,2 @@
+DECL|SYSTEM_ChipRevisionGet|function|void SYSTEM_ChipRevisionGet(SYSTEM_ChipRevision_TypeDef *rev)
+DECL|SYSTEM_GetCalibrationValue|function|bool SYSTEM_GetCalibrationValue(volatile uint32_t *regAddress)

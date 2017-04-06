@@ -1,0 +1,8 @@
+DECL|BURTC_ClockFreqGet|function|uint32_t BURTC_ClockFreqGet(void)
+DECL|BURTC_CompareGet|function|uint32_t BURTC_CompareGet(unsigned int comp)
+DECL|BURTC_CompareSet|function|void BURTC_CompareSet(unsigned int comp, uint32_t value)
+DECL|BURTC_CounterReset|function|void BURTC_CounterReset(void)
+DECL|BURTC_Init|function|void BURTC_Init(const BURTC_Init_TypeDef *burtcInit)
+DECL|BURTC_Reset|function|void BURTC_Reset(void)
+DECL|divToLog2|function|__STATIC_INLINE uint32_t divToLog2(uint32_t div)
+DECL|regSync|function|__STATIC_INLINE void regSync(uint32_t mask)

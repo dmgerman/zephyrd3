@@ -1,0 +1,16 @@
+DECL|LEUART_BaudrateCalc|function|uint32_t LEUART_BaudrateCalc(uint32_t refFreq, uint32_t clkdiv)
+DECL|LEUART_BaudrateGet|function|uint32_t LEUART_BaudrateGet(LEUART_TypeDef *leuart)
+DECL|LEUART_BaudrateSet|function|void LEUART_BaudrateSet(LEUART_TypeDef *leuart, uint32_t refFreq, uint32_t baudrate)
+DECL|LEUART_Enable|function|void LEUART_Enable(LEUART_TypeDef *leuart, LEUART_Enable_TypeDef enable)
+DECL|LEUART_FreezeEnable|function|void LEUART_FreezeEnable(LEUART_TypeDef *leuart, bool enable)
+DECL|LEUART_Init|function|void LEUART_Init(LEUART_TypeDef *leuart, LEUART_Init_TypeDef const *init)
+DECL|LEUART_REF_VALID|macro|LEUART_REF_VALID
+DECL|LEUART_REF_VALID|macro|LEUART_REF_VALID
+DECL|LEUART_Reset|function|void LEUART_Reset(LEUART_TypeDef *leuart)
+DECL|LEUART_RxDmaInEM2Enable|function|void LEUART_RxDmaInEM2Enable(LEUART_TypeDef *leuart, bool enable)
+DECL|LEUART_RxExt|function|uint16_t LEUART_RxExt(LEUART_TypeDef *leuart)
+DECL|LEUART_Rx|function|uint8_t LEUART_Rx(LEUART_TypeDef *leuart)
+DECL|LEUART_Sync|function|__STATIC_INLINE void LEUART_Sync(LEUART_TypeDef *leuart, uint32_t mask)
+DECL|LEUART_TxDmaInEM2Enable|function|void LEUART_TxDmaInEM2Enable(LEUART_TypeDef *leuart, bool enable)
+DECL|LEUART_TxExt|function|void LEUART_TxExt(LEUART_TypeDef *leuart, uint16_t data)
+DECL|LEUART_Tx|function|void LEUART_Tx(LEUART_TypeDef *leuart, uint8_t data)

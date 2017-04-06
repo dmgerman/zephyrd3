@@ -1,0 +1,31 @@
+DECL|DACOUT_SUPPORT|macro|DACOUT_SUPPORT
+DECL|DACOUT_SUPPORT|macro|DACOUT_SUPPORT
+DECL|GENERIC_LESENSE_ROUTE|macro|GENERIC_LESENSE_ROUTE
+DECL|GENERIC_LESENSE_ROUTE|macro|GENERIC_LESENSE_ROUTE
+DECL|LESENSE_AltExConfig|function|void LESENSE_AltExConfig(const LESENSE_ConfAltEx_TypeDef * confAltEx)
+DECL|LESENSE_ChannelAllConfig|function|void LESENSE_ChannelAllConfig(const LESENSE_ChAll_TypeDef * confChAll)
+DECL|LESENSE_ChannelConfig|function|void LESENSE_ChannelConfig(const LESENSE_ChDesc_TypeDef * confCh, uint32_t chIdx)
+DECL|LESENSE_ChannelEnableMask|function|void LESENSE_ChannelEnableMask(uint16_t chMask, uint16_t pinMask)
+DECL|LESENSE_ChannelEnable|function|void LESENSE_ChannelEnable(uint8_t chIdx, bool enaScanCh, bool enaPin)
+DECL|LESENSE_ChannelSlidingWindow|function|void LESENSE_ChannelSlidingWindow(uint8_t chIdx, uint32_t windowSize, uint32_t initValue)
+DECL|LESENSE_ChannelStepDetection|function|void LESENSE_ChannelStepDetection(uint8_t chIdx, uint32_t stepSize, uint32_t initValue)
+DECL|LESENSE_ChannelThresSet|function|void LESENSE_ChannelThresSet(uint8_t chIdx, uint16_t acmpThres, uint16_t cntThres)
+DECL|LESENSE_ChannelTimingSet|function|void LESENSE_ChannelTimingSet(uint8_t chIdx, uint8_t exTime, uint8_t sampleDelay, uint16_t measDelay)
+DECL|LESENSE_ClkDivSet|function|void LESENSE_ClkDivSet(LESENSE_ChClk_TypeDef clk, LESENSE_ClkPresc_TypeDef clkDiv)
+DECL|LESENSE_DecoderPrsOut|function|void LESENSE_DecoderPrsOut(bool enable, uint32_t decMask, uint32_t decVal)
+DECL|LESENSE_DecoderStart|function|void LESENSE_DecoderStart(void)
+DECL|LESENSE_DecoderStateAllConfig|function|void LESENSE_DecoderStateAllConfig(const LESENSE_DecStAll_TypeDef * confDecStAll)
+DECL|LESENSE_DecoderStateConfig|function|void LESENSE_DecoderStateConfig(const LESENSE_DecStDesc_TypeDef * confDecSt, uint32_t decSt)
+DECL|LESENSE_DecoderStateGet|function|uint32_t LESENSE_DecoderStateGet(void)
+DECL|LESENSE_DecoderStateSet|function|void LESENSE_DecoderStateSet(uint32_t decSt)
+DECL|LESENSE_Init|function|void LESENSE_Init(const LESENSE_Init_TypeDef * init, bool reqReset)
+DECL|LESENSE_Reset|function|void LESENSE_Reset(void)
+DECL|LESENSE_ResultBufferClear|function|void LESENSE_ResultBufferClear(void)
+DECL|LESENSE_ScanFreqSet|function|uint32_t LESENSE_ScanFreqSet(uint32_t refFreq, uint32_t scanFreq)
+DECL|LESENSE_ScanModeSet|function|void LESENSE_ScanModeSet(LESENSE_ScanMode_TypeDef scanMode, bool start)
+DECL|LESENSE_ScanStart|function|void LESENSE_ScanStart(void)
+DECL|LESENSE_ScanStop|function|void LESENSE_ScanStop(void)
+DECL|LESENSE_StartDelaySet|function|void LESENSE_StartDelaySet(uint8_t startDelay)
+DECL|LESENSE_StepSizeSet|function|void LESENSE_StepSizeSet(uint32_t stepSize)
+DECL|LESENSE_WindowSizeSet|function|void LESENSE_WindowSizeSet(uint32_t windowSize)
+DECL|UINT32_MAX|macro|UINT32_MAX
