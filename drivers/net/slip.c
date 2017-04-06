@@ -30,6 +30,9 @@ DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
+DECL|lldpdu_ptr|macro|lldpdu_ptr
+DECL|lldpdu_ptr|macro|lldpdu_ptr
+DECL|lldpdu|variable|lldpdu
 DECL|mac_addr|member|u8_t mac_addr[6];
 DECL|process_msg|function|static void process_msg(struct slip_context *slip)
 DECL|ptr|member|u8_t *ptr; /* Where in net_pkt to add data */
