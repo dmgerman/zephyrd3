@@ -18,6 +18,7 @@ DECL|ETHERNET_L2_CTX_TYPE|macro|ETHERNET_L2_CTX_TYPE
 DECL|ETHERNET_LINK_1000BASE_T|enumerator|ETHERNET_LINK_1000BASE_T = BIT(6),
 DECL|ETHERNET_LINK_100BASE_T|enumerator|ETHERNET_LINK_100BASE_T = BIT(5),
 DECL|ETHERNET_LINK_10BASE_T|enumerator|ETHERNET_LINK_10BASE_T = BIT(4),
+DECL|ETHERNET_LLDP|enumerator|ETHERNET_LLDP = BIT(13),
 DECL|ETHERNET_PRIORITY_QUEUES|enumerator|ETHERNET_PRIORITY_QUEUES = BIT(11),
 DECL|ETHERNET_PROMISC_MODE|enumerator|ETHERNET_PROMISC_MODE = BIT(10),
 DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
@@ -34,6 +35,7 @@ DECL|NET_ETH_MINIMAL_FRAME_SIZE|macro|NET_ETH_MINIMAL_FRAME_SIZE
 DECL|NET_ETH_PTYPE_ARP|macro|NET_ETH_PTYPE_ARP
 DECL|NET_ETH_PTYPE_IPV6|macro|NET_ETH_PTYPE_IPV6
 DECL|NET_ETH_PTYPE_IP|macro|NET_ETH_PTYPE_IP
+DECL|NET_ETH_PTYPE_LLDP|macro|NET_ETH_PTYPE_LLDP
 DECL|NET_ETH_PTYPE_PTP|macro|NET_ETH_PTYPE_PTP
 DECL|NET_ETH_PTYPE_VLAN|macro|NET_ETH_PTYPE_VLAN
 DECL|NET_VLAN_MAX_COUNT|macro|NET_VLAN_MAX_COUNT
@@ -55,6 +57,7 @@ DECL|ethernet_context|struct|struct ethernet_context {
 DECL|ethernet_filter_type|enum|enum ethernet_filter_type {
 DECL|ethernet_filter|struct|struct ethernet_filter {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
+DECL|ethernet_lldp|struct|struct ethernet_lldp {
 DECL|ethernet_qav_param_type|enum|enum ethernet_qav_param_type {
 DECL|ethernet_qav_param|struct|struct ethernet_qav_param {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
@@ -68,10 +71,13 @@ DECL|idle_slope|member|unsigned int idle_slope;
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
+DECL|iface|member|struct net_if *iface;
 DECL|is_init|member|bool is_init;
 DECL|link_1000bt|member|bool link_1000bt;
 DECL|link_100bt|member|bool link_100bt;
 DECL|link_10bt|member|bool link_10bt;
+DECL|lldpdu|member|const struct net_lldpdu *lldpdu;
+DECL|lldp|member|struct ethernet_lldp lldp[NET_VLAN_MAX_COUNT];
 DECL|l|member|} l;
 DECL|mac_address|member|struct net_eth_addr mac_address;
 DECL|mac_address|member|struct net_eth_addr mac_address;
@@ -85,9 +91,12 @@ DECL|net_eth_hdr|struct|struct net_eth_hdr {
 DECL|net_eth_is_addr_broadcast|function|static inline bool net_eth_is_addr_broadcast(struct net_eth_addr *addr)
 DECL|net_eth_is_addr_lldp_multicast|function|static inline bool net_eth_is_addr_lldp_multicast(struct net_eth_addr *addr)
 DECL|net_eth_is_addr_multicast|function|static inline bool net_eth_is_addr_multicast(struct net_eth_addr *addr)
+DECL|net_eth_set_lldpdu|function|static inline int net_eth_set_lldpdu(struct net_if *iface, const struct net_lldpdu *lldpdu)
+DECL|net_eth_unset_lldpdu|function|static inline void net_eth_unset_lldpdu(struct net_if *iface)
 DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
+DECL|node|member|sys_snode_t node;
 DECL|oper_idle_slope|member|unsigned int oper_idle_slope;
 DECL|port|member|int port;
 DECL|priority_queues_num|member|int priority_queues_num;
@@ -102,6 +111,8 @@ DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
 DECL|traffic_class|member|unsigned int traffic_class;
+DECL|tx_timer_start|member|s64_t tx_timer_start;
+DECL|tx_timer_timeout|member|u32_t tx_timer_timeout;
 DECL|type|member|enum ethernet_filter_type type;
 DECL|type|member|enum ethernet_qav_param_type type;
 DECL|type|member|u16_t type;

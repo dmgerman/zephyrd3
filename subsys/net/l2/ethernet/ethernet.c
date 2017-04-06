@@ -28,7 +28,9 @@ DECL|net_eth_get_vlan_tag|function|u16_t net_eth_get_vlan_tag(struct net_if *ifa
 DECL|net_eth_ipv6_mcast_to_mac_addr|function|void net_eth_ipv6_mcast_to_mac_addr(const struct in6_addr *ipv6_addr, struct net_eth_addr *mac_addr)
 DECL|net_eth_is_vlan_enabled|function|bool net_eth_is_vlan_enabled(struct ethernet_context *ctx, struct net_if *iface)
 DECL|net_eth_promisc_mode|function|int net_eth_promisc_mode(struct net_if *iface, bool enable)
+DECL|net_eth_set_lldpdu|function|int net_eth_set_lldpdu(struct net_if *iface, const struct net_lldpdu *lldpdu)
 DECL|net_eth_set_ptp_port|function|void net_eth_set_ptp_port(struct net_if *iface, int port)
+DECL|net_eth_unset_lldpdu|function|void net_eth_unset_lldpdu(struct net_if *iface)
 DECL|net_eth_vlan_disable|function|int net_eth_vlan_disable(struct net_if *iface, u16_t tag)
 DECL|net_eth_vlan_enable|function|int net_eth_vlan_enable(struct net_if *iface, u16_t tag)
 DECL|print_ll_addrs|macro|print_ll_addrs
