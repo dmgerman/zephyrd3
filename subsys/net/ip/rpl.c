@@ -1,6 +1,7 @@
 DECL|DIO_TIMEOUT|macro|DIO_TIMEOUT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_RPL_DAO_EXPIRATION_TIMEOUT|macro|NET_RPL_DAO_EXPIRATION_TIMEOUT
+DECL|NET_RPL_DAO_RETRANSMIT_TIMEOUT|macro|NET_RPL_DAO_RETRANSMIT_TIMEOUT
 DECL|NET_RPL_DIO_GROUNDED|macro|NET_RPL_DIO_GROUNDED
 DECL|NET_RPL_DIO_MOP_MASK|macro|NET_RPL_DIO_MOP_MASK
 DECL|NET_RPL_DIO_MOP_SHIFT|macro|NET_RPL_DIO_MOP_SHIFT
@@ -37,6 +38,7 @@ DECL|dao_ack_handler|variable|dao_ack_handler
 DECL|dao_ack_send|function|static int dao_ack_send(struct in6_addr *src,struct in6_addr *dst, struct net_if *iface, struct net_rpl_instance *instance, uint8_t sequence,
 DECL|dao_forward|function|static inline int dao_forward(struct net_if *iface, struct net_buf *orig, struct in6_addr *dst)
 DECL|dao_lifetime_timer|function|static void dao_lifetime_timer(struct k_work *work)
+DECL|dao_retransmit_timer|function|static void dao_retransmit_timer(struct k_work *work)
 DECL|dao_send_timer|function|static void dao_send_timer(struct k_work *work)
 DECL|dao_send|function|static int dao_send(struct net_rpl_parent *parent, uint8_t lifetime, struct net_if *iface)
 DECL|dao_timer|function|static void dao_timer(struct net_rpl_instance *instance)

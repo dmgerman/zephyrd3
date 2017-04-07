@@ -9,6 +9,7 @@ DECL|RETRANS_TIMER|macro|RETRANS_TIMER
 DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
+DECL|check_unknown_option|function|static inline struct net_buf *check_unknown_option(struct net_buf *buf, uint8_t opt_type, uint16_t length)
 DECL|create_mldv2|function|static struct net_buf *create_mldv2(struct net_buf *buf, const struct in6_addr *addr, uint16_t record_type, uint8_t num_sources)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
@@ -30,6 +31,7 @@ DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
 DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
+DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_buf *buf, struct net_buf *frag, int total_len, uint16_t len, uint16_t offset,
 DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_buf *buf)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_buf *buf)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_buf *buf, struct net_icmpv6_nd_opt_hdr *hdr, uint8_t *tllao)
@@ -42,6 +44,7 @@ DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_buf *buf, struct net_buf *frag, uint8_t len, uint16_t offset, uint16_t *pos)
 DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
+DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(uint8_t proto)
 DECL|mld_query_input_handler|variable|mld_query_input_handler
 DECL|na_input_handler|variable|na_input_handler
 DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
@@ -69,6 +72,7 @@ DECL|net_ipv6_nbr_rm|function|bool net_ipv6_nbr_rm(struct net_if *iface, struct 
 DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_nbr_state2str|function|const char *net_ipv6_nbr_state2str(enum net_ipv6_nbr_state state)
 DECL|net_ipv6_prepare_for_send|function|struct net_buf *net_ipv6_prepare_for_send(struct net_buf *buf)
+DECL|net_ipv6_process_pkt|function|enum net_verdict net_ipv6_process_pkt(struct net_buf *buf)
 DECL|net_ipv6_send_na|function|int net_ipv6_send_na(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt, uint8_t flags)
 DECL|net_ipv6_send_ns|function|int net_ipv6_send_ns(struct net_if *iface, struct net_buf *pending, struct in6_addr *src, struct in6_addr *dst, struct in6_addr *tgt,
 DECL|net_ipv6_send_rs|function|int net_ipv6_send_rs(struct net_if *iface)
@@ -82,6 +86,7 @@ DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
+DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_buf *buf, struct net_ipv6_hdr *ipv6)
 DECL|ra_input_handler|variable|ra_input_handler
 DECL|remaining|function|static inline uint32_t remaining(struct k_delayed_work *work)
 DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
