@@ -6,6 +6,7 @@ DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf **buf, u8_t plen)
 DECL|cmd_status|function|static struct net_buf *cmd_status(u8_t status)
+DECL|conn_count|variable|conn_count
 DECL|controller_cmd_handle|function|static int controller_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
@@ -20,12 +21,21 @@ DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_nod
 DECL|encrypt_change|function|static void encrypt_change(u8_t err, u16_t handle, struct net_buf *buf)
 DECL|event_mask|variable|event_mask
 DECL|evt_create|function|static void evt_create(struct net_buf *buf, u8_t evt, u8_t len)
+DECL|hbuf_signal|variable|hbuf_signal
 DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf)
 DECL|hci_cmd_handle|function|struct net_buf *hci_cmd_handle(struct net_buf *cmd)
 DECL|hci_evt_encode|function|void hci_evt_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_evt_is_discardable|function|bool hci_evt_is_discardable(struct radio_pdu_node_rx *node_rx)
+DECL|hci_get_class|function|s8_t hci_get_class(struct radio_pdu_node_rx *node_rx)
+DECL|hci_hbuf_acked|variable|hci_hbuf_acked
+DECL|hci_hbuf_sent|variable|hci_hbuf_sent
+DECL|hci_hbuf_total|variable|hci_hbuf_total
+DECL|hci_init|function|void hci_init(struct k_poll_signal *signal_host_buf)
 DECL|hci_num_cmplt_encode|function|void hci_num_cmplt_encode(struct net_buf *buf, u16_t handle, u8_t num)
+DECL|hci_state_mask|variable|hci_state_mask
+DECL|host_buffer_size|function|static void host_buffer_size(struct net_buf *buf, struct net_buf **evt)
+DECL|host_num_completed_packets|function|static void host_num_completed_packets(struct net_buf *buf, struct net_buf **evt)
 DECL|info_cmd_handle|function|static int info_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_advertising_report|function|static void le_advertising_report(struct pdu_data *pdu_data, u8_t *b, struct net_buf *buf)
@@ -79,4 +89,5 @@ DECL|read_remote_ver_info|function|static void read_remote_ver_info(struct net_b
 DECL|read_supported_commands|function|static void read_supported_commands(struct net_buf *buf, struct net_buf **evt)
 DECL|remote_version_info|function|static void remote_version_info(struct pdu_data *pdu_data, u16_t handle,struct net_buf *buf)
 DECL|reset|function|static void reset(struct net_buf *buf, struct net_buf **evt)
+DECL|set_ctl_to_host_flow|function|static void set_ctl_to_host_flow(struct net_buf *buf, struct net_buf **evt)
 DECL|set_event_mask|function|static void set_event_mask(struct net_buf *buf, struct net_buf **evt)

@@ -122,6 +122,7 @@ DECL|BT_HCI_ACL|macro|BT_HCI_ACL
 DECL|BT_HCI_ADDR_RES_DISABLE|macro|BT_HCI_ADDR_RES_DISABLE
 DECL|BT_HCI_ADDR_RES_ENABLE|macro|BT_HCI_ADDR_RES_ENABLE
 DECL|BT_HCI_CMD_HDR_SIZE|macro|BT_HCI_CMD_HDR_SIZE
+DECL|BT_HCI_CTL_TO_HOST_FLOW_DISABLE|macro|BT_HCI_CTL_TO_HOST_FLOW_DISABLE
 DECL|BT_HCI_CTL_TO_HOST_FLOW_ENABLE|macro|BT_HCI_CTL_TO_HOST_FLOW_ENABLE
 DECL|BT_HCI_DEDICATED_BONDING_MITM|macro|BT_HCI_DEDICATED_BONDING_MITM
 DECL|BT_HCI_DEDICATED_BONDING|macro|BT_HCI_DEDICATED_BONDING
@@ -630,6 +631,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|u16_t acl_max_len;
 DECL|acl_max_num|member|u16_t acl_max_num;
 DECL|acl_mtu|member|u16_t acl_mtu;
@@ -785,6 +787,7 @@ DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
 DECL|bt_hci_cp_set_conn_encrypt|struct|struct bt_hci_cp_set_conn_encrypt {
+DECL|bt_hci_cp_set_ctl_to_host_flow|struct|struct bt_hci_cp_set_ctl_to_host_flow {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_setup_sync_conn|struct|struct bt_hci_cp_setup_sync_conn {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
@@ -973,6 +976,7 @@ DECL|filter_policy|member|u8_t filter_policy;
 DECL|filter_policy|member|u8_t filter_policy;
 DECL|filter_policy|member|u8_t filter_policy;
 DECL|filter_policy|member|u8_t filter_policy;
+DECL|flow_enable|member|u8_t flow_enable;
 DECL|frag_pref|member|u8_t frag_pref;
 DECL|frag_pref|member|u8_t frag_pref;
 DECL|handle|member|u16_t handle;

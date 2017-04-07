@@ -85,6 +85,7 @@ DECL|link|member|void *link;
 DECL|mca|member|u8_t mca;
 DECL|next|member|void *next;
 DECL|next|member|void *next; /* used also by k_fifo once pulled */
+DECL|node|member|sys_snode_t node; /* used by slist */
 DECL|onion|member|} onion;
 DECL|own_addr_type|member|u8_t own_addr_type;
 DECL|own_addr|member|u8_t own_addr[BDADDR_SIZE];
