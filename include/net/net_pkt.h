@@ -3,9 +3,7 @@ DECL|NET_IPV4_BUF|macro|NET_IPV4_BUF
 DECL|NET_IPV6_BUF|macro|NET_IPV6_BUF
 DECL|NET_PKT_DATA_POOL_DEFINE|macro|NET_PKT_DATA_POOL_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
-DECL|NET_RX|enumerator|NET_RX = 1,
 DECL|NET_TCP_BUF|macro|NET_TCP_BUF
-DECL|NET_TX|enumerator|NET_TX = 0,
 DECL|NET_UDP_BUF|macro|NET_UDP_BUF
 DECL|__NET_PKT_H__|macro|__NET_PKT_H__
 DECL|_unused|member|int _unused;
@@ -29,8 +27,6 @@ DECL|ipv6_prev_hdr_start|member|uint16_t ipv6_prev_hdr_start;
 DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
 DECL|lladdr_dst|member|struct net_linkaddr lladdr_dst;
 DECL|lladdr_src|member|struct net_linkaddr lladdr_src;
-DECL|net_dir|enum|enum net_dir {
-DECL|net_dir|member|uint8_t net_dir; /* is this RX or TX pkt */
 DECL|net_frag_read_u8|function|static inline struct net_buf *net_frag_read_u8(struct net_buf *frag, uint16_t offset, uint16_t *pos, uint8_t *value)
 DECL|net_frag_skip|function|static inline struct net_buf *net_frag_skip(struct net_buf *frag, uint16_t offset, uint16_t *pos, uint16_t len)
 DECL|net_pkt_add_ext_bitmap|function|static inline void net_pkt_add_ext_bitmap(struct net_pkt *pkt, uint8_t bm)
@@ -43,7 +39,6 @@ DECL|net_pkt_append_le32|function|static inline bool net_pkt_append_le32(struct 
 DECL|net_pkt_append_u8|function|static inline bool net_pkt_append_u8(struct net_pkt *pkt, uint8_t data)
 DECL|net_pkt_context|function|static inline struct net_context *net_pkt_context(struct net_pkt *pkt)
 DECL|net_pkt_copy_all|function|static inline struct net_buf *net_pkt_copy_all(struct net_pkt *pkt, size_t reserve, int32_t timeout)
-DECL|net_pkt_dir|function|static inline uint8_t net_pkt_dir(struct net_pkt *pkt)
 DECL|net_pkt_ext_bitmap|function|static inline uint8_t net_pkt_ext_bitmap(struct net_pkt *pkt)
 DECL|net_pkt_ext_len|function|static inline uint8_t net_pkt_ext_len(struct net_pkt *pkt)
 DECL|net_pkt_ext_opt_len|function|static inline uint8_t net_pkt_ext_opt_len(struct net_pkt *pkt)
@@ -94,7 +89,6 @@ DECL|net_pkt_sent|function|static inline uint8_t net_pkt_sent(struct net_pkt *pk
 DECL|net_pkt_set_appdatalen|function|static inline void net_pkt_set_appdatalen(struct net_pkt *pkt, uint16_t len)
 DECL|net_pkt_set_appdata|function|static inline void net_pkt_set_appdata(struct net_pkt *pkt, uint8_t *data)
 DECL|net_pkt_set_context|function|static inline void net_pkt_set_context(struct net_pkt *pkt,struct net_context *ctx)
-DECL|net_pkt_set_dir|function|static inline void net_pkt_set_dir(struct net_pkt *pkt, enum net_dir dir)
 DECL|net_pkt_set_ext_bitmap|function|static inline void net_pkt_set_ext_bitmap(struct net_pkt *pkt, uint8_t bm)
 DECL|net_pkt_set_ext_len|function|static inline void net_pkt_set_ext_len(struct net_pkt *pkt, uint8_t len)
 DECL|net_pkt_set_ext_opt_len|function|static inline void net_pkt_set_ext_opt_len(struct net_pkt *pkt, uint8_t len)
