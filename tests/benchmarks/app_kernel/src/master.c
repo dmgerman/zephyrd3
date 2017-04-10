@@ -1,4 +1,6 @@
-DECL|BenchTask|function|void BenchTask(void)
+DECL|BenchTask|function|void BenchTask(void *p1, void *p2, void *p3)
+DECL|DEMO_MUTEX|variable|DEMO_MUTEX
+DECL|MAILB1|variable|MAILB1
 DECL|Msg|variable|Msg
 DECL|TestPipes|variable|TestPipes
 DECL|WAIT_FOR_USER|macro|WAIT_FOR_USER
