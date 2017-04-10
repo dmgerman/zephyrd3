@@ -77,8 +77,6 @@ DECL|_INIT_OBJ_POLL_EVENT|macro|_INIT_OBJ_POLL_EVENT
 DECL|_MEMORY_POOL_BLOCK_SETS_DEFINE|macro|_MEMORY_POOL_BLOCK_SETS_DEFINE
 DECL|_MEMORY_POOL_BUFFER_DEFINE|macro|_MEMORY_POOL_BUFFER_DEFINE
 DECL|_MEMORY_POOL_QUAD_BLOCK_DEFINE|macro|_MEMORY_POOL_QUAD_BLOCK_DEFINE
-DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
-DECL|_MUTEX_INIT_OBJECT_MONITOR|macro|_MUTEX_INIT_OBJECT_MONITOR
 DECL|_NON_OPTIMIZED_TICKS_PER_SEC|macro|_NON_OPTIMIZED_TICKS_PER_SEC
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
@@ -249,8 +247,6 @@ DECL|nr_of_block_sets|member|uint32_t nr_of_block_sets;
 DECL|nr_of_entries|member|uint32_t nr_of_entries; /* nr of quad block structures in the array */
 DECL|nr_of_maxblocks|member|uint32_t nr_of_maxblocks;
 DECL|num_blocks|member|uint32_t num_blocks;
-DECL|num_conflicts|member|int num_conflicts;
-DECL|num_lock_state_changes|member|int num_lock_state_changes;
 DECL|num_used|member|uint32_t num_used;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;

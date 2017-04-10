@@ -1,8 +1,4 @@
-DECL|INIT_OBJECT_MONITOR|macro|INIT_OBJECT_MONITOR
-DECL|INIT_OBJECT_MONITOR|macro|INIT_OBJECT_MONITOR
 DECL|RECORD_CONFLICT|macro|RECORD_CONFLICT
-DECL|RECORD_CONFLICT|macro|RECORD_CONFLICT
-DECL|RECORD_STATE_CHANGE|macro|RECORD_STATE_CHANGE
 DECL|RECORD_STATE_CHANGE|macro|RECORD_STATE_CHANGE
 DECL|_trace_list_k_mutex|variable|_trace_list_k_mutex
 DECL|adjust_owner_prio|function|static void adjust_owner_prio(struct k_mutex *mutex, int new_prio)
