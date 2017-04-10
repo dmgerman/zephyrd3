@@ -14,7 +14,7 @@ DECL|_kernel_arch|struct|struct _kernel_arch {
 DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
 DECL|_thread_arch|struct|struct _thread_arch {
 DECL|coopCoprocReg|member|tCoopCoprocReg coopCoprocReg;
-DECL|cpStack|member|char *cpStack;
+DECL|cpStack|member|char __aligned(4) cpStack[XT_CP_SIZE];
 DECL|custom_data|member|void *custom_data; /* available for custom use */
 DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
