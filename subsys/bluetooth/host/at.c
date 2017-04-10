@@ -28,6 +28,7 @@ DECL|cme_handle|function|int cme_handle(struct at_client *at)
 DECL|get_cmd_value|function|static int get_cmd_value(struct at_client *at, struct net_buf *buf, char stop_byte, enum at_cmd_state cmd_state)
 DECL|get_response_string|function|static int get_response_string(struct at_client *at, struct net_buf *buf, char stop_byte, enum at_state state)
 DECL|is_cmer|function|static bool is_cmer(struct at_client *at)
+DECL|is_ring|function|static bool is_ring(struct at_client *at)
 DECL|next_list|function|static void next_list(struct at_client *at)
 DECL|parser_cb|variable|parser_cb
 DECL|reset_buffer|function|static void reset_buffer(struct at_client *at)

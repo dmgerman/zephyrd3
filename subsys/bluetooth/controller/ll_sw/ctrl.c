@@ -24,7 +24,6 @@ DECL|ROLE_MASTER|enumerator|ROLE_MASTER,
 DECL|ROLE_NONE|enumerator|ROLE_NONE,
 DECL|ROLE_OBS|enumerator|ROLE_OBS,
 DECL|ROLE_SLAVE|enumerator|ROLE_SLAVE,
-DECL|SCHED_ADVANCED|macro|SCHED_ADVANCED
 DECL|SILENT_CONNECTION|macro|SILENT_CONNECTION
 DECL|STATE_ABORT|enumerator|STATE_ABORT,
 DECL|STATE_CLOSE|enumerator|STATE_CLOSE,
@@ -32,7 +31,6 @@ DECL|STATE_NONE|enumerator|STATE_NONE,
 DECL|STATE_RX|enumerator|STATE_RX,
 DECL|STATE_STOP|enumerator|STATE_STOP,
 DECL|STATE_TX|enumerator|STATE_TX,
-DECL|XTAL_ADVANCED|macro|XTAL_ADVANCED
 DECL|_radio|variable|_radio
 DECL|access_addr_get|function|static uint32_t access_addr_get(void)
 DECL|adv_addr_type|member|uint8_t adv_addr_type:1;

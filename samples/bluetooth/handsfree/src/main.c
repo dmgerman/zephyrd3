@@ -8,6 +8,7 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn)
 DECL|handsfree_enable|function|static void handsfree_enable(void)
 DECL|hf_cb|variable|hf_cb
 DECL|main|function|void main(void)
+DECL|ring_cb|function|static void ring_cb(struct bt_conn *conn)
 DECL|roam|function|static void roam(struct bt_conn *conn, uint32_t value)
 DECL|service|function|static void service(struct bt_conn *conn, uint32_t value)
 DECL|signal|function|static void signal(struct bt_conn *conn, uint32_t value)

@@ -72,6 +72,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|access_addr|member|uint8_t access_addr[4];
 DECL|addr|member|uint8_t addr[BDADDR_SIZE];
 DECL|addr|member|uint8_t addr[BDADDR_SIZE];
@@ -108,6 +111,7 @@ DECL|hop|member|uint8_t hop:5;
 DECL|init_addr|member|uint8_t init_addr[BDADDR_SIZE];
 DECL|instant|member|uint16_t instant;
 DECL|instant|member|uint16_t instant;
+DECL|instant|member|uint16_t instant;
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_max|member|uint16_t interval_max;
 DECL|interval_min|member|uint16_t interval_min;
@@ -131,12 +135,15 @@ DECL|lldata|member|uint8_t lldata[1];
 DECL|lldata|member|} __packed lldata;
 DECL|lmax|member|uint8_t lmax;
 DECL|lmin|member|uint8_t lmin;
+DECL|m_to_s_phy|member|uint8_t m_to_s_phy;
 DECL|max_rx_octets|member|uint16_t max_rx_octets;
 DECL|max_rx_time|member|uint16_t max_rx_time;
 DECL|max_tx_octets|member|uint16_t max_tx_octets;
 DECL|max_tx_time|member|uint16_t max_tx_time;
 DECL|max|member|uint8_t max;
 DECL|md|member|uint8_t md:1;
+DECL|min_used_chans_ind|member|struct pdu_data_llctrl_min_used_chans_ind min_used_chans_ind;
+DECL|min_used_chans|member|uint8_t min_used_chans;
 DECL|min|member|uint8_t min;
 DECL|nesn|member|uint8_t nesn:1;
 DECL|offset0|member|uint16_t offset0;
@@ -170,6 +177,9 @@ DECL|pdu_data_llctrl_enc_rsp|struct|struct pdu_data_llctrl_enc_rsp {
 DECL|pdu_data_llctrl_feature_req|struct|struct pdu_data_llctrl_feature_req {
 DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
 DECL|pdu_data_llctrl_length_req_rsp|struct|struct pdu_data_llctrl_length_req_rsp {
+DECL|pdu_data_llctrl_min_used_chans_ind|struct|struct pdu_data_llctrl_min_used_chans_ind {
+DECL|pdu_data_llctrl_phy_req_rsp|struct|struct pdu_data_llctrl_phy_req_rsp {
+DECL|pdu_data_llctrl_phy_update_ind|struct|struct pdu_data_llctrl_phy_update_ind {
 DECL|pdu_data_llctrl_reject_ext_ind|struct|struct pdu_data_llctrl_reject_ext_ind {
 DECL|pdu_data_llctrl_reject_ind|struct|struct pdu_data_llctrl_reject_ind {
 DECL|pdu_data_llctrl_terminate_ind|struct|struct pdu_data_llctrl_terminate_ind {
@@ -179,6 +189,10 @@ DECL|pdu_data_llctrl_version_ind|struct|struct pdu_data_llctrl_version_ind {
 DECL|pdu_data_llctrl|struct|struct pdu_data_llctrl {
 DECL|pdu_data_llid|enum|enum pdu_data_llid {
 DECL|pdu_data|struct|struct pdu_data {
+DECL|phy_req|member|struct pdu_data_llctrl_phy_req_rsp phy_req;
+DECL|phy_rsp|member|struct pdu_data_llctrl_phy_req_rsp phy_rsp;
+DECL|phy_update_ind|member|struct pdu_data_llctrl_phy_update_ind phy_update_ind;
+DECL|phys|member|uint8_t phys;
 DECL|preferred_periodicity|member|uint8_t preferred_periodicity;
 DECL|preferred_periodicity|member|uint8_t preferred_periodicity;
 DECL|profile|member|struct profile profile;
@@ -195,6 +209,8 @@ DECL|rfu|member|uint8_t rfu:1;
 DECL|rfu|member|uint8_t rfu:3;
 DECL|rssi|member|uint8_t rssi;
 DECL|rx_addr|member|uint8_t rx_addr:1;
+DECL|rx_phys|member|uint8_t rx_phys;
+DECL|s_to_m_phy|member|uint8_t s_to_m_phy;
 DECL|scan_addr|member|uint8_t scan_addr[BDADDR_SIZE];
 DECL|scan_req|member|struct pdu_adv_payload_scan_req scan_req;
 DECL|scan_rsp|member|struct pdu_adv_payload_scan_rsp scan_rsp;
@@ -211,6 +227,7 @@ DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|timeout|member|uint16_t timeout;
 DECL|tx_addr|member|uint8_t tx_addr:1;
+DECL|tx_phys|member|uint8_t tx_phys;
 DECL|type|member|uint8_t type:4;
 DECL|type|member|uint8_t type;
 DECL|unknown_rsp|member|struct pdu_data_llctrl_unknown_rsp unknown_rsp;
