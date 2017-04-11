@@ -1,12 +1,5 @@
-DECL|STM32F4X_FLASH_LATENCY_0|enumerator|STM32F4X_FLASH_LATENCY_0 = 0x0,
-DECL|STM32F4X_FLASH_LATENCY_1|enumerator|STM32F4X_FLASH_LATENCY_1 = 0x1,
-DECL|STM32F4X_FLASH_LATENCY_2|enumerator|STM32F4X_FLASH_LATENCY_2 = 0x2,
-DECL|STM32F4X_FLASH_LATENCY_3|enumerator|STM32F4X_FLASH_LATENCY_3 = 0x3,
-DECL|STM32F4X_FLASH_LATENCY_4|enumerator|STM32F4X_FLASH_LATENCY_4 = 0x4,
-DECL|STM32F4X_FLASH_LATENCY_5|enumerator|STM32F4X_FLASH_LATENCY_5 = 0x5,
 DECL|_STM32F4X_FLASH_REGISTERS_H_|macro|_STM32F4X_FLASH_REGISTERS_H_
 DECL|__flash_acr|union|union __flash_acr {
-DECL|__setup_flash|function|static inline void __setup_flash(void)
 DECL|acr|member|volatile union __flash_acr acr;
 DECL|bit|member|} bit;
 DECL|ctrl|member|volatile u32_t ctrl;
