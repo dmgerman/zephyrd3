@@ -1,3 +1,5 @@
+DECL|CONFIG_DNS_NUM_CONCUR_QUERIES|macro|CONFIG_DNS_NUM_CONCUR_QUERIES
+DECL|CONFIG_DNS_RESOLVER_MAX_SERVERS|macro|CONFIG_DNS_RESOLVER_MAX_SERVERS
 DECL|DNS_EAI_ADDRFAMILY|enumerator|DNS_EAI_ADDRFAMILY = -9, /* Address family for NAME not supported */
 DECL|DNS_EAI_AGAIN|enumerator|DNS_EAI_AGAIN = -3, /* Temporary failure in name resolution */
 DECL|DNS_EAI_ALLDONE|enumerator|DNS_EAI_ALLDONE = -103, /* All requests done */
