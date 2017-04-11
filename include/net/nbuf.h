@@ -22,6 +22,7 @@ DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func 
 DECL|ipv6_frag_hdr_start|member|uint8_t *ipv6_frag_hdr_start;
 DECL|ipv6_fragment_id|member|uint32_t ipv6_fragment_id;
 DECL|ipv6_fragment_offset|member|uint16_t ipv6_fragment_offset;
+DECL|ipv6_hop_limit|member|uint8_t ipv6_hop_limit;
 DECL|ipv6_prev_hdr_start|member|uint16_t ipv6_prev_hdr_start;
 DECL|ll_reserve|member|uint8_t ll_reserve; /* link layer header length */
 DECL|lladdr_dst|member|struct net_linkaddr lladdr_dst;
@@ -68,6 +69,7 @@ DECL|net_nbuf_ipv6_fragment_id|function|static inline uint32_t net_nbuf_ipv6_fra
 DECL|net_nbuf_ipv6_fragment_offset|function|static inline uint16_t net_nbuf_ipv6_fragment_offset(struct net_buf *buf)
 DECL|net_nbuf_ipv6_fragment_start|function|static inline uint8_t *net_nbuf_ipv6_fragment_start(struct net_buf *buf)
 DECL|net_nbuf_ipv6_hdr_prev|function|static inline uint16_t net_nbuf_ipv6_hdr_prev(struct net_buf *buf)
+DECL|net_nbuf_ipv6_hop_limit|function|static inline uint8_t net_nbuf_ipv6_hop_limit(struct net_buf *buf)
 DECL|net_nbuf_ll_clear|function|static inline void net_nbuf_ll_clear(struct net_buf *buf)
 DECL|net_nbuf_ll_dst|function|static inline struct net_linkaddr *net_nbuf_ll_dst(struct net_buf *buf)
 DECL|net_nbuf_ll_if|function|static inline struct net_linkaddr *net_nbuf_ll_if(struct net_buf *buf)
@@ -96,6 +98,7 @@ DECL|net_nbuf_set_ipv6_fragment_id|function|static inline void net_nbuf_set_ipv6
 DECL|net_nbuf_set_ipv6_fragment_offset|function|static inline void net_nbuf_set_ipv6_fragment_offset(struct net_buf *buf, uint16_t offset)
 DECL|net_nbuf_set_ipv6_fragment_start|function|static inline void net_nbuf_set_ipv6_fragment_start(struct net_buf *buf, uint8_t *start)
 DECL|net_nbuf_set_ipv6_hdr_prev|function|static inline void net_nbuf_set_ipv6_hdr_prev(struct net_buf *buf, uint16_t offset)
+DECL|net_nbuf_set_ipv6_hop_limit|function|static inline void net_nbuf_set_ipv6_hop_limit(struct net_buf *buf, uint8_t hop_limit)
 DECL|net_nbuf_set_len|function|static inline void net_nbuf_set_len(struct net_buf *buf, uint16_t len)
 DECL|net_nbuf_set_ll_reserve|function|static inline void net_nbuf_set_ll_reserve(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_next_hdr|function|static inline void net_nbuf_set_next_hdr(struct net_buf *buf, uint8_t *hdr)
