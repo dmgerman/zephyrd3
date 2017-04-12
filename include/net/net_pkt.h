@@ -11,14 +11,14 @@ DECL|_unused|member|uint8_t _unused : 4;
 DECL|appdatalen|member|uint16_t appdatalen;
 DECL|appdata|member|uint8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
-DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
-DECL|ext_opt_len|member|uint8_t ext_opt_len; /* IPv6 ND option length */
 DECL|family|member|uint8_t family : 4; /* IPv4 vs IPv6 */
 DECL|forwarding|member|uint8_t forwarding : 1; /* Are we forwarding this pkt
 DECL|frags|member|struct net_buf *frags;
 DECL|ieee802154_rssi|member|uint8_t ieee802154_rssi;
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func call */
+DECL|ipv6_ext_len|member|uint8_t ipv6_ext_len; /* length of extension headers */
+DECL|ipv6_ext_opt_len|member|uint8_t ipv6_ext_opt_len; /* IPv6 ND option length */
 DECL|ipv6_frag_hdr_start|member|uint8_t *ipv6_frag_hdr_start; /* Where starts the fragment header */
 DECL|ipv6_fragment_id|member|uint32_t ipv6_fragment_id; /* Fragment id */
 DECL|ipv6_fragment_offset|member|uint16_t ipv6_fragment_offset; /* Fragment offset of this packet */
@@ -38,9 +38,6 @@ DECL|net_pkt_append_le32|function|static inline bool net_pkt_append_le32(struct 
 DECL|net_pkt_append_u8|function|static inline bool net_pkt_append_u8(struct net_pkt *pkt, uint8_t data)
 DECL|net_pkt_context|function|static inline struct net_context *net_pkt_context(struct net_pkt *pkt)
 DECL|net_pkt_copy_all|function|static inline struct net_buf *net_pkt_copy_all(struct net_pkt *pkt, size_t reserve, int32_t timeout)
-DECL|net_pkt_ext_len|function|static inline uint8_t net_pkt_ext_len(struct net_pkt *pkt)
-DECL|net_pkt_ext_len|macro|net_pkt_ext_len
-DECL|net_pkt_ext_opt_len|function|static inline uint8_t net_pkt_ext_opt_len(struct net_pkt *pkt)
 DECL|net_pkt_family|function|static inline uint8_t net_pkt_family(struct net_pkt *pkt)
 DECL|net_pkt_forwarding|function|static inline bool net_pkt_forwarding(struct net_pkt *pkt)
 DECL|net_pkt_forwarding|function|static inline bool net_pkt_forwarding(struct net_pkt *pkt)
@@ -68,6 +65,9 @@ DECL|net_pkt_insert_be32|function|static inline bool net_pkt_insert_be32(struct 
 DECL|net_pkt_insert_u8|function|static inline bool net_pkt_insert_u8(struct net_pkt *pkt, struct net_buf *frag, uint16_t offset, uint8_t data)
 DECL|net_pkt_ip_data|function|static inline uint8_t *net_pkt_ip_data(struct net_pkt *pkt)
 DECL|net_pkt_ip_hdr_len|function|static inline uint8_t net_pkt_ip_hdr_len(struct net_pkt *pkt)
+DECL|net_pkt_ipv6_ext_len|function|static inline uint8_t net_pkt_ipv6_ext_len(struct net_pkt *pkt)
+DECL|net_pkt_ipv6_ext_len|macro|net_pkt_ipv6_ext_len
+DECL|net_pkt_ipv6_ext_opt_len|function|static inline uint8_t net_pkt_ipv6_ext_opt_len(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_fragment_id|function|static inline uint32_t net_pkt_ipv6_fragment_id(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_fragment_offset|function|static inline uint16_t net_pkt_ipv6_fragment_offset(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_fragment_start|function|static inline uint8_t *net_pkt_ipv6_fragment_start(struct net_pkt *pkt)
@@ -88,14 +88,14 @@ DECL|net_pkt_sent|function|static inline uint8_t net_pkt_sent(struct net_pkt *pk
 DECL|net_pkt_set_appdatalen|function|static inline void net_pkt_set_appdatalen(struct net_pkt *pkt, uint16_t len)
 DECL|net_pkt_set_appdata|function|static inline void net_pkt_set_appdata(struct net_pkt *pkt, uint8_t *data)
 DECL|net_pkt_set_context|function|static inline void net_pkt_set_context(struct net_pkt *pkt,struct net_context *ctx)
-DECL|net_pkt_set_ext_len|function|static inline void net_pkt_set_ext_len(struct net_pkt *pkt, uint8_t len)
-DECL|net_pkt_set_ext_len|macro|net_pkt_set_ext_len
-DECL|net_pkt_set_ext_opt_len|function|static inline void net_pkt_set_ext_opt_len(struct net_pkt *pkt, uint8_t len)
 DECL|net_pkt_set_family|function|static inline void net_pkt_set_family(struct net_pkt *pkt, uint8_t family)
 DECL|net_pkt_set_forwarding|function|static inline void net_pkt_set_forwarding(struct net_pkt *pkt, bool forward)
 DECL|net_pkt_set_ieee802154_rssi|function|static inline void net_pkt_set_ieee802154_rssi(struct net_pkt *pkt,uint8_t rssi)
 DECL|net_pkt_set_iface|function|static inline void net_pkt_set_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_ip_hdr_len|function|static inline void net_pkt_set_ip_hdr_len(struct net_pkt *pkt, uint8_t len)
+DECL|net_pkt_set_ipv6_ext_len|function|static inline void net_pkt_set_ipv6_ext_len(struct net_pkt *pkt, uint8_t len)
+DECL|net_pkt_set_ipv6_ext_len|macro|net_pkt_set_ipv6_ext_len
+DECL|net_pkt_set_ipv6_ext_opt_len|function|static inline void net_pkt_set_ipv6_ext_opt_len(struct net_pkt *pkt,uint8_t len)
 DECL|net_pkt_set_ipv6_fragment_id|function|static inline void net_pkt_set_ipv6_fragment_id(struct net_pkt *pkt,uint32_t id)
 DECL|net_pkt_set_ipv6_fragment_offset|function|static inline void net_pkt_set_ipv6_fragment_offset(struct net_pkt *pkt, uint16_t offset)
 DECL|net_pkt_set_ipv6_fragment_start|function|static inline void net_pkt_set_ipv6_fragment_start(struct net_pkt *pkt, uint8_t *start)
