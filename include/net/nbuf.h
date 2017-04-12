@@ -17,6 +17,7 @@ DECL|ext_len|member|uint8_t ext_len; /* length of extension headers */
 DECL|ext_opt_len|member|uint8_t ext_opt_len; /* IPv6 ND option length */
 DECL|family|member|uint8_t family; /* IPv4 vs IPv6 */
 DECL|forwarding|member|bool forwarding; /* Are we forwarding this buf */
+DECL|ieee802154_rssi|member|uint8_t ieee802154_rssi;
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|uint8_t ip_hdr_len; /* pre-filled in order to avoid func call */
 DECL|ipv6_frag_hdr_start|member|uint8_t *ipv6_frag_hdr_start;
@@ -59,6 +60,7 @@ DECL|net_nbuf_get_reserve|macro|net_nbuf_get_reserve
 DECL|net_nbuf_get_rx|macro|net_nbuf_get_rx
 DECL|net_nbuf_get_tx|macro|net_nbuf_get_tx
 DECL|net_nbuf_icmp_data|function|static inline uint8_t *net_nbuf_icmp_data(struct net_buf *buf)
+DECL|net_nbuf_ieee802154_rssi|function|static inline uint8_t net_nbuf_ieee802154_rssi(struct net_buf *buf)
 DECL|net_nbuf_iface|function|static inline struct net_if *net_nbuf_iface(struct net_buf *buf)
 DECL|net_nbuf_insert_be16|function|static inline bool net_nbuf_insert_be16(struct net_buf *buf,struct net_buf *frag, uint16_t offset, uint16_t data)
 DECL|net_nbuf_insert_be32|function|static inline bool net_nbuf_insert_be32(struct net_buf *buf,struct net_buf *frag, uint16_t offset, uint32_t data)
@@ -92,6 +94,7 @@ DECL|net_nbuf_set_ext_len|function|static inline void net_nbuf_set_ext_len(struc
 DECL|net_nbuf_set_ext_opt_len|function|static inline void net_nbuf_set_ext_opt_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_family|function|static inline void net_nbuf_set_family(struct net_buf *buf, uint8_t family)
 DECL|net_nbuf_set_forwarding|function|static inline void net_nbuf_set_forwarding(struct net_buf *buf, bool forward)
+DECL|net_nbuf_set_ieee802154_rssi|function|static inline void net_nbuf_set_ieee802154_rssi(struct net_buf *buf,uint8_t rssi)
 DECL|net_nbuf_set_iface|function|static inline void net_nbuf_set_iface(struct net_buf *buf, struct net_if *iface)
 DECL|net_nbuf_set_ip_hdr_len|function|static inline void net_nbuf_set_ip_hdr_len(struct net_buf *buf, uint8_t len)
 DECL|net_nbuf_set_ipv6_fragment_id|function|static inline void net_nbuf_set_ipv6_fragment_id(struct net_buf *buf, uint32_t id)
