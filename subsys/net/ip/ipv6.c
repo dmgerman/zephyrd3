@@ -52,12 +52,12 @@ DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *
 DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(uint8_t proto)
 DECL|mld_query_input_handler|variable|mld_query_input_handler
 DECL|na_input_handler|variable|na_input_handler
-DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
+DECL|nbr_add|function|static inline struct net_nbr *nbr_add(struct net_buf *buf, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|nbr_clear_ns_pending|function|static inline void nbr_clear_ns_pending(struct net_ipv6_nbr_data *data)
 DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
 DECL|nbr_init|function|static void nbr_init(struct net_nbr *nbr, struct net_if *iface, struct in6_addr *addr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct in6_addr *addr)
-DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, enum net_ipv6_nbr_state state)
+DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
