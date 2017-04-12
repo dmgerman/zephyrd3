@@ -107,7 +107,7 @@ DECL|net_ipv6_addr_based_on_ll|function|static inline bool net_ipv6_addr_based_o
 DECL|net_ipv6_addr_cmp|function|static inline bool net_ipv6_addr_cmp(const struct in6_addr *addr1, const struct in6_addr *addr2)
 DECL|net_ipv6_addr_create_iid|function|static inline void net_ipv6_addr_create_iid(struct in6_addr *addr, struct net_linkaddr *lladdr)
 DECL|net_ipv6_addr_create_ll_allnodes_mcast|function|static inline void net_ipv6_addr_create_ll_allnodes_mcast(struct in6_addr *addr)
-DECL|net_ipv6_addr_create_solicited_node|function|static inline void net_ipv6_addr_create_solicited_node(struct in6_addr *src, struct in6_addr *dst)
+DECL|net_ipv6_addr_create_solicited_node|function|void net_ipv6_addr_create_solicited_node(const struct in6_addr *src, struct in6_addr *dst)
 DECL|net_ipv6_addr_create|function|static inline void net_ipv6_addr_create(struct in6_addr *addr,uint16_t addr0, uint16_t addr1, uint16_t addr2, uint16_t addr3, uint16_t addr4, uint16_t addr5, uint16_t addr6, uint16_t addr7)
 DECL|net_ipv6_frag_hdr|struct|struct net_ipv6_frag_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {

@@ -48,7 +48,7 @@ DECL|net_if_ipv4_router_lookup|function|struct net_if_router *net_if_ipv4_router
 DECL|net_if_ipv6_addr_add|function|struct net_if_addr *net_if_ipv6_addr_add(struct net_if *iface, struct in6_addr *addr, enum net_addr_type addr_type, uint32_t vlifetime)
 DECL|net_if_ipv6_addr_lookup|function|struct net_if_addr *net_if_ipv6_addr_lookup(const struct in6_addr *addr, struct net_if **ret)
 DECL|net_if_ipv6_addr_onlink|function|bool net_if_ipv6_addr_onlink(struct net_if **iface, struct in6_addr *addr)
-DECL|net_if_ipv6_addr_rm|function|bool net_if_ipv6_addr_rm(struct net_if *iface, struct in6_addr *addr)
+DECL|net_if_ipv6_addr_rm|function|bool net_if_ipv6_addr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_addr_update_lifetime|function|void net_if_ipv6_addr_update_lifetime(struct net_if_addr *ifaddr, uint32_t vlifetime)
 DECL|net_if_ipv6_calc_reachable_time|function|uint32_t net_if_ipv6_calc_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_best_match|function|static inline struct in6_addr *net_if_ipv6_get_best_match(struct net_if *iface, struct in6_addr *dst, uint8_t *best_so_far)
