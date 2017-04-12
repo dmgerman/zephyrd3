@@ -57,7 +57,7 @@ DECL|set_reset|function|static inline void set_reset(struct device *dev, uint32_
 DECL|set_vreg_en|function|static inline void set_vreg_en(struct device *dev, uint32_t value)
 DECL|setup_gpio_callbacks|function|static inline void setup_gpio_callbacks(struct device *dev)
 DECL|sfd_int_handler|function|static inline void sfd_int_handler(struct device *port, struct gpio_callback *cb, uint32_t pins)
-DECL|verify_crc|function|static inline bool verify_crc(struct cc2520_context *cc2520)
+DECL|verify_crc|function|static inline bool verify_crc(struct cc2520_context *cc2520, struct net_buf *buf)
 DECL|verify_osc_stabilization|function|static bool verify_osc_stabilization(struct cc2520_context *cc2520)
 DECL|verify_rxfifo_validity|function|static inline bool verify_rxfifo_validity(struct cc2520_spi *spi, uint8_t pkt_len)
 DECL|verify_tx_done|function|static inline bool verify_tx_done(struct cc2520_context *cc2520)
