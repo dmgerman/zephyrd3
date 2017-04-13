@@ -36,6 +36,7 @@ DECL|net_nbuf_appdatalen|function|static inline uint16_t net_nbuf_appdatalen(str
 DECL|net_nbuf_appdata|function|static inline uint8_t *net_nbuf_appdata(struct net_buf *buf)
 DECL|net_nbuf_append_be16|function|static inline bool net_nbuf_append_be16(struct net_buf *buf, uint16_t data)
 DECL|net_nbuf_append_be32|function|static inline bool net_nbuf_append_be32(struct net_buf *buf, uint32_t data)
+DECL|net_nbuf_append_le32|function|static inline bool net_nbuf_append_le32(struct net_buf *buf, uint32_t data)
 DECL|net_nbuf_append_u8|function|static inline bool net_nbuf_append_u8(struct net_buf *buf, uint8_t data)
 DECL|net_nbuf_buf_sent|function|static inline uint8_t net_nbuf_buf_sent(struct net_buf *buf)
 DECL|net_nbuf_context|function|static inline struct net_context *net_nbuf_context(struct net_buf *buf)
