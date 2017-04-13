@@ -1,6 +1,9 @@
+DECL|FRAGA|macro|FRAGA
+DECL|FRAGB|macro|FRAGB
 DECL|FRAG_COUNT|macro|FRAG_COUNT
 DECL|LL_RESERVE|macro|LL_RESERVE
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|TEST_FRAG_COUNT|macro|TEST_FRAG_COUNT
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -14,6 +17,7 @@ DECL|dst_port|member|uint16_t dst_port;
 DECL|dst|member|struct in6_addr dst;
 DECL|example_data|variable|example_data
 DECL|flow|member|uint16_t flow;
+DECL|frag_data|variable|frag_data
 DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|icmp_hdr|struct|struct icmp_hdr {
@@ -31,6 +35,7 @@ DECL|test_data|variable|test_data
 DECL|test_fragment_compact|function|static int test_fragment_compact(void)
 DECL|test_fragment_copy|function|static int test_fragment_copy(void)
 DECL|test_fragment_pull|function|static int test_fragment_pull(void)
+DECL|test_fragment_split|function|static int test_fragment_split(void)
 DECL|test_ipv6_multi_frags|function|static int test_ipv6_multi_frags(void)
 DECL|test_nbuf_read_append|function|static int test_nbuf_read_append(void)
 DECL|test_nbuf_read_write_insert|function|static int test_nbuf_read_write_insert(void)
