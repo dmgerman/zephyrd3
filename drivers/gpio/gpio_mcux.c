@@ -1,4 +1,5 @@
 DECL|callbacks|member|sys_slist_t callbacks;
+DECL|flags|member|unsigned int flags;
 DECL|gpio_base|member|GPIO_Type *gpio_base;
 DECL|gpio_mcux_configure|function|static int gpio_mcux_configure(struct device *dev, int access_op, uint32_t pin, int flags)
 DECL|gpio_mcux_config|struct|struct gpio_mcux_config {
