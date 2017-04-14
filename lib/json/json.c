@@ -13,7 +13,7 @@ DECL|element_token|function|static int element_token(enum json_tokens token)
 DECL|emit|function|static void emit(struct lexer *lexer, enum json_tokens token)
 DECL|encode|function|static int encode(const struct json_obj_descr *descr, const void *val, json_append_bytes_t append_bytes, void *data)
 DECL|end|member|char *end;
-DECL|end|member|char *end;
+DECL|end|member|unsigned char *end;
 DECL|equivalent_types|function|static bool equivalent_types(enum json_tokens type1, enum json_tokens type2)
 DECL|escape_as|function|static uint8_t escape_as(uint8_t chr)
 DECL|get_elem_size|function|static ptrdiff_t get_elem_size(const struct json_obj_descr *descr)
@@ -41,17 +41,17 @@ DECL|lexer_string|function|static void *lexer_string(struct lexer *lexer)
 DECL|lexer|member|struct lexer lexer;
 DECL|lexer|struct|struct lexer {
 DECL|measure_bytes|function|static int measure_bytes(const uint8_t *bytes, size_t len, void *data)
-DECL|next|function|static char next(struct lexer *lexer)
+DECL|next|function|static unsigned char next(struct lexer *lexer)
 DECL|num_encode|function|static int num_encode(const int32_t *num, json_append_bytes_t append_bytes, void *data)
 DECL|obj_encode|function|static int obj_encode(const struct json_obj_descr *descr, size_t descr_len, const void *val, json_append_bytes_t append_bytes, void *data)
 DECL|obj_init|function|static int obj_init(struct json_obj *json, char *data, size_t len)
 DECL|obj_next|function|static int obj_next(struct json_obj *json, struct json_obj_key_value *kv)
 DECL|obj_parse|function|static int obj_parse(struct json_obj *obj, const struct json_obj_descr *descr, size_t descr_len, void *val)
-DECL|peek|function|static char peek(struct lexer *lexer)
-DECL|pos|member|char *pos;
+DECL|peek|function|static unsigned char peek(struct lexer *lexer)
+DECL|pos|member|unsigned char *pos;
 DECL|size|member|size_t size;
 DECL|start|member|char *start;
-DECL|start|member|char *start;
+DECL|start|member|unsigned char *start;
 DECL|state|member|void *(*state)(struct lexer *lexer);
 DECL|str_encode|function|static int str_encode(const char **str, json_append_bytes_t append_bytes, void *data)
 DECL|token|member|struct token token;
