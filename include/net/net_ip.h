@@ -57,6 +57,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|ack|member|uint8_t ack[4];
 DECL|chksum|member|uint16_t chksum;
 DECL|chksum|member|uint16_t chksum;
@@ -77,6 +78,7 @@ DECL|flow|member|uint16_t flow;
 DECL|hop_limit|member|uint8_t hop_limit;
 DECL|htonl|macro|htonl
 DECL|htons|macro|htons
+DECL|id|member|uint32_t id;
 DECL|id|member|uint8_t id[2];
 DECL|in4_u|member|} in4_u;
 DECL|in6_addr|member|struct in6_addr in6_addr;
@@ -105,8 +107,9 @@ DECL|net_ipv6_addr_based_on_ll|function|static inline bool net_ipv6_addr_based_o
 DECL|net_ipv6_addr_cmp|function|static inline bool net_ipv6_addr_cmp(const struct in6_addr *addr1, const struct in6_addr *addr2)
 DECL|net_ipv6_addr_create_iid|function|static inline void net_ipv6_addr_create_iid(struct in6_addr *addr, struct net_linkaddr *lladdr)
 DECL|net_ipv6_addr_create_ll_allnodes_mcast|function|static inline void net_ipv6_addr_create_ll_allnodes_mcast(struct in6_addr *addr)
-DECL|net_ipv6_addr_create_solicited_node|function|static inline void net_ipv6_addr_create_solicited_node(struct in6_addr *src, struct in6_addr *dst)
+DECL|net_ipv6_addr_create_solicited_node|function|void net_ipv6_addr_create_solicited_node(const struct in6_addr *src, struct in6_addr *dst)
 DECL|net_ipv6_addr_create|function|static inline void net_ipv6_addr_create(struct in6_addr *addr,uint16_t addr0, uint16_t addr1, uint16_t addr2, uint16_t addr3, uint16_t addr4, uint16_t addr5, uint16_t addr6, uint16_t addr7)
+DECL|net_ipv6_frag_hdr|struct|struct net_ipv6_frag_hdr {
 DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
 DECL|net_is_ipv4_addr_loopback|function|static inline bool net_is_ipv4_addr_loopback(struct in_addr *addr)
 DECL|net_is_ipv4_addr_mcast|function|static inline bool net_is_ipv4_addr_mcast(const struct in_addr *addr)
@@ -130,14 +133,17 @@ DECL|net_tcp_hdr|struct|struct net_tcp_hdr {
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|uint8_t nexthdr;
+DECL|nexthdr|member|uint8_t nexthdr;
 DECL|ntohl|macro|ntohl
 DECL|ntohs|macro|ntohs
+DECL|offset|member|uint16_t offset;
 DECL|offset|member|uint8_t offset;
 DECL|offset|member|uint8_t offset[2];
 DECL|optdata|member|uint8_t optdata[0];
 DECL|proto|member|uint8_t proto;
 DECL|remote_addr|member|struct net_addr *remote_addr;
 DECL|remote_port|member|uint16_t remote_port;
+DECL|reserved|member|uint8_t reserved;
 DECL|s4_addr16|macro|s4_addr16
 DECL|s4_addr32|macro|s4_addr32
 DECL|s4_addr|macro|s4_addr

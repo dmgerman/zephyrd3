@@ -28,6 +28,7 @@ DECL|get_my_ipv6_addr|function|static void get_my_ipv6_addr(struct net_if *iface
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
+DECL|ipv6_frag_cb|function|static void ipv6_frag_cb(struct net_ipv6_reassembly *reass, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
 DECL|net_commands|variable|net_commands
 DECL|net_shell_init|function|void net_shell_init(void)
