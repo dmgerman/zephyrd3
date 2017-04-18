@@ -14,10 +14,5 @@ DECL|k_mbox_data_get|function|void k_mbox_data_get(struct k_mbox_msg *rx_msg, vo
 DECL|k_mbox_get|function|int k_mbox_get(struct k_mbox *mbox, struct k_mbox_msg *rx_msg, void *buffer, int32_t timeout)
 DECL|k_mbox_init|function|void k_mbox_init(struct k_mbox *mbox_ptr)
 DECL|k_mbox_put|function|int k_mbox_put(struct k_mbox *mbox, struct k_mbox_msg *tx_msg, int32_t timeout)
-DECL|task_mbox_block_put|function|void task_mbox_block_put(kmbox_t mbox, kpriority_t prio, struct k_msg *msg, ksem_t sema)
-DECL|task_mbox_data_block_get|function|int task_mbox_data_block_get(struct k_msg *msg, struct k_block *block, kmemory_pool_t pool_id, int32_t timeout)
-DECL|task_mbox_data_get|function|void task_mbox_data_get(struct k_msg *msg)
-DECL|task_mbox_get|function|int task_mbox_get(kmbox_t mbox, struct k_msg *msg, int32_t timeout)
-DECL|task_mbox_put|function|int task_mbox_put(kmbox_t mbox, kpriority_t prio, struct k_msg *msg, int32_t timeout)
 DECL|thread|member|struct _thread_base thread; /* dummy thread object */
 DECL|tx_msg|member|struct k_mbox_msg tx_msg; /* transmit message descriptor */
