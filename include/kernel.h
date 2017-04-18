@@ -116,6 +116,8 @@ DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((us
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
+DECL|_k_except_reason|macro|_k_except_reason
+DECL|_k_except_reason|macro|_k_except_reason
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
@@ -203,6 +205,8 @@ DECL|k_msgq_num_free_get|function|static inline u32_t k_msgq_num_free_get(struct
 DECL|k_msgq_num_used_get|function|static inline u32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
+DECL|k_oops|macro|k_oops
+DECL|k_panic|macro|k_panic
 DECL|k_pipe|struct|struct k_pipe {
 DECL|k_poll_event|struct|struct k_poll_event {
 DECL|k_poll_modes|enum|enum k_poll_modes {
