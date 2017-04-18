@@ -34,6 +34,7 @@ DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo 
 DECL|net_buf_put|function|void net_buf_put(struct k_fifo *fifo, struct net_buf *buf)
 DECL|net_buf_ref|function|struct net_buf *net_buf_ref(struct net_buf *buf)
 DECL|net_buf_reserve|function|void net_buf_reserve(struct net_buf *buf, size_t reserve)
+DECL|net_buf_reset|function|void net_buf_reset(struct net_buf *buf)
 DECL|net_buf_simple_add_be16|function|void net_buf_simple_add_be16(struct net_buf_simple *buf, uint16_t val)
 DECL|net_buf_simple_add_be32|function|void net_buf_simple_add_be32(struct net_buf_simple *buf, uint32_t val)
 DECL|net_buf_simple_add_le16|function|void net_buf_simple_add_le16(struct net_buf_simple *buf, uint16_t val)
