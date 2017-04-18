@@ -1,1 +1,0 @@
-DECL|__NANOKERNEL_H__|macro|__NANOKERNEL_H__
