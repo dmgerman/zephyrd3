@@ -100,6 +100,7 @@ DECL|fc_ack|member|uint8_t fc_ack;
 DECL|fc_ena|member|uint8_t fc_ena;
 DECL|fc_handle|member|uint16_t fc_handle[TRIPLE_BUFFER_SIZE];
 DECL|fc_req|member|uint8_t volatile fc_req;
+DECL|feat_get|function|static inline uint32_t feat_get(uint8_t *features)
 DECL|feature_rsp_send|function|static void feature_rsp_send(struct connection *conn)
 DECL|filter_addr_type_bitmask|member|uint8_t filter_addr_type_bitmask;
 DECL|filter_addr_type_bitmask|member|uint8_t filter_addr_type_bitmask;

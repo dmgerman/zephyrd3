@@ -72,7 +72,7 @@ DECL|latency_prepare|member|uint16_t latency_prepare;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|llcp_ack|member|uint8_t llcp_ack;
-DECL|llcp_features|member|uint8_t llcp_features;
+DECL|llcp_features|member|uint32_t llcp_features;
 DECL|llcp_length|member|} llcp_length;
 DECL|llcp_req|member|uint8_t llcp_req;
 DECL|llcp_terminate|member|} llcp_terminate;
