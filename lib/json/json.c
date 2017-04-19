@@ -1,5 +1,5 @@
 DECL|accept_run|function|static int accept_run(struct lexer *lexer, const char *run)
-DECL|append_bytes_to_buf|function|static int append_bytes_to_buf(const uint8_t *bytes, size_t len, void *data)
+DECL|append_bytes_to_buf|function|static int append_bytes_to_buf(const u8_t *bytes, size_t len, void *data)
 DECL|appender|struct|struct appender {
 DECL|arr_encode|function|static int arr_encode(const struct json_obj_descr *descr, const void *field, const void *val, json_append_bytes_t append_bytes, void *data)
 DECL|arr_next|function|static int arr_next(struct json_obj *json, struct token *value)
@@ -7,7 +7,7 @@ DECL|arr_parse|function|static int arr_parse(struct json_obj *obj, const struct 
 DECL|backup|function|static void backup(struct lexer *lexer)
 DECL|bool_encode|function|static int bool_encode(const bool *value, json_append_bytes_t append_bytes, void *data)
 DECL|buffer|member|char *buffer;
-DECL|decode_num|function|static int decode_num(const struct token *token, int32_t *num)
+DECL|decode_num|function|static int decode_num(const struct token *token, s32_t *num)
 DECL|decode_value|function|static int decode_value(struct json_obj *obj,const struct json_obj_descr *descr, struct token *value, void *field, void *val)
 DECL|element_token|function|static int element_token(enum json_tokens token)
 DECL|emit|function|static void emit(struct lexer *lexer, enum json_tokens token)
@@ -15,7 +15,7 @@ DECL|encode|function|static int encode(const struct json_obj_descr *descr, const
 DECL|end|member|char *end;
 DECL|end|member|unsigned char *end;
 DECL|equivalent_types|function|static bool equivalent_types(enum json_tokens type1, enum json_tokens type2)
-DECL|escape_as|function|static uint8_t escape_as(uint8_t chr)
+DECL|escape_as|function|static u8_t escape_as(u8_t chr)
 DECL|get_elem_size|function|static ptrdiff_t get_elem_size(const struct json_obj_descr *descr)
 DECL|ignore|function|static void ignore(struct lexer *lexer)
 DECL|json_calc_encoded_len|function|ssize_t json_calc_encoded_len(const struct json_obj_descr *descr, size_t descr_len, const void *val)
@@ -40,9 +40,9 @@ DECL|lexer_number|function|static void *lexer_number(struct lexer *lexer)
 DECL|lexer_string|function|static void *lexer_string(struct lexer *lexer)
 DECL|lexer|member|struct lexer lexer;
 DECL|lexer|struct|struct lexer {
-DECL|measure_bytes|function|static int measure_bytes(const uint8_t *bytes, size_t len, void *data)
+DECL|measure_bytes|function|static int measure_bytes(const u8_t *bytes, size_t len, void *data)
 DECL|next|function|static unsigned char next(struct lexer *lexer)
-DECL|num_encode|function|static int num_encode(const int32_t *num, json_append_bytes_t append_bytes, void *data)
+DECL|num_encode|function|static int num_encode(const s32_t *num, json_append_bytes_t append_bytes, void *data)
 DECL|obj_encode|function|static int obj_encode(const struct json_obj_descr *descr, size_t descr_len, const void *val, json_append_bytes_t append_bytes, void *data)
 DECL|obj_init|function|static int obj_init(struct json_obj *json, char *data, size_t len)
 DECL|obj_next|function|static int obj_next(struct json_obj *json, struct json_obj_key_value *kv)
