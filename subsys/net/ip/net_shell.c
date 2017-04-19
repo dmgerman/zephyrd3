@@ -1,4 +1,5 @@
 DECL|ADDR_LEN|macro|ADDR_LEN
+DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
@@ -18,6 +19,7 @@ DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_add
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
 DECL|allocs_cb|function|static void allocs_cb(struct net_pkt *pkt, struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free,
 DECL|are_external_pools|member|bool are_external_pools;
+DECL|conn_handler_cb|function|static void conn_handler_cb(struct net_conn *conn, void *user_data)
 DECL|context_cb|function|static void context_cb(struct net_context *context, void *user_data)
 DECL|context_info|function|static void context_info(struct net_context *context, void *user_data)
 DECL|ctx_info|struct|struct ctx_info {
