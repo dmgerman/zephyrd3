@@ -42,39 +42,39 @@ DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|conf_req|variable|conf_req
 DECL|conf_rsp|variable|conf_rsp
 DECL|drv|variable|drv
-DECL|get_evt_buf|function|static inline struct net_buf *get_evt_buf(uint8_t evt)
+DECL|get_evt_buf|function|static inline struct net_buf *get_evt_buf(u8_t evt)
 DECL|h5_dev|variable|h5_dev
-DECL|h5_get_type|function|static uint8_t h5_get_type(struct net_buf *buf)
+DECL|h5_get_type|function|static u8_t h5_get_type(struct net_buf *buf)
 DECL|h5_init|function|static void h5_init(void)
 DECL|h5_open|function|static int h5_open(void)
-DECL|h5_print_header|function|static void h5_print_header(const uint8_t *hdr, const char *str)
-DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(uint8_t *hdr)
+DECL|h5_print_header|function|static void h5_print_header(const u8_t *hdr, const char *str)
+DECL|h5_process_complete_packet|function|static void h5_process_complete_packet(u8_t *hdr)
 DECL|h5_queue|function|static int h5_queue(struct net_buf *buf)
 DECL|h5_reset_rx|function|static void h5_reset_rx(void)
-DECL|h5_send|function|static void h5_send(const uint8_t *payload, uint8_t type, int len)
-DECL|h5_set_txwin|function|static void h5_set_txwin(uint8_t *conf)
-DECL|h5_slip_byte|function|static uint8_t h5_slip_byte(uint8_t byte)
-DECL|h5_unslip_byte|function|static int h5_unslip_byte(uint8_t *byte)
+DECL|h5_send|function|static void h5_send(const u8_t *payload, u8_t type, int len)
+DECL|h5_set_txwin|function|static void h5_set_txwin(u8_t *conf)
+DECL|h5_slip_byte|function|static u8_t h5_slip_byte(u8_t byte)
+DECL|h5_unslip_byte|function|static int h5_unslip_byte(u8_t *byte)
 DECL|h5|struct|static struct h5 {
 DECL|h5|variable|h5
-DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
+DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|link_state|member|} link_state;
 DECL|process_unack|function|static void process_unack(void)
-DECL|reliable_packet|function|static bool reliable_packet(uint8_t type)
+DECL|reliable_packet|function|static bool reliable_packet(u8_t type)
 DECL|retx_timeout|function|static void retx_timeout(struct k_work *work)
 DECL|retx_work|variable|retx_work
-DECL|rx_ack|member|uint8_t rx_ack;
+DECL|rx_ack|member|u8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|rx_state|member|} rx_state;
 DECL|rx_thread|function|static void rx_thread(void)
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
-DECL|tx_ack|member|uint8_t tx_ack;
+DECL|tx_ack|member|u8_t tx_ack;
 DECL|tx_queue|member|struct k_fifo tx_queue;
-DECL|tx_seq|member|uint8_t tx_seq;
+DECL|tx_seq|member|u8_t tx_seq;
 DECL|tx_thread|function|static void tx_thread(void)
-DECL|tx_win|member|uint8_t tx_win;
+DECL|tx_win|member|u8_t tx_win;
 DECL|unack_queue_len|variable|unack_queue_len
 DECL|unack_queue|member|struct k_fifo unack_queue;

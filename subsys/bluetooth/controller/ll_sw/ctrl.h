@@ -71,29 +71,29 @@ DECL|_CTRL_H_|macro|_CTRL_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|chan_sel_algo|member|uint8_t chan_sel_algo;
-DECL|data|member|uint8_t data[DOUBLE_BUFFER_SIZE][PDU_AC_SIZE_MAX];
-DECL|first|member|uint8_t first;
-DECL|handle|member|uint16_t handle;
+DECL|chan_sel_algo|member|u8_t chan_sel_algo;
+DECL|data|member|u8_t data[DOUBLE_BUFFER_SIZE][PDU_AC_SIZE_MAX];
+DECL|first|member|u8_t first;
+DECL|handle|member|u16_t handle;
 DECL|hdr|member|struct radio_pdu_node_rx_hdr hdr;
-DECL|interval|member|uint16_t interval;
-DECL|interval|member|uint16_t interval;
-DECL|last|member|uint8_t last;
-DECL|latency|member|uint16_t latency;
-DECL|latency|member|uint16_t latency;
+DECL|interval|member|u16_t interval;
+DECL|interval|member|u16_t interval;
+DECL|last|member|u8_t last;
+DECL|latency|member|u16_t latency;
+DECL|latency|member|u16_t latency;
 DECL|link|member|void *link;
-DECL|mca|member|uint8_t mca;
+DECL|mca|member|u8_t mca;
 DECL|next|member|void *next;
 DECL|next|member|void *next; /* used also by k_fifo once pulled */
 DECL|onion|member|} onion;
-DECL|own_addr_type|member|uint8_t own_addr_type;
-DECL|own_addr|member|uint8_t own_addr[BDADDR_SIZE];
-DECL|packet_release_last|member|uint8_t packet_release_last;
-DECL|pdu_data|member|uint8_t pdu_data[1];
-DECL|pdu_data|member|uint8_t pdu_data[1];
-DECL|peer_addr_type|member|uint8_t peer_addr_type;
-DECL|peer_addr|member|uint8_t peer_addr[BDADDR_SIZE];
-DECL|peer_irk_index|member|uint8_t peer_irk_index;
+DECL|own_addr_type|member|u8_t own_addr_type;
+DECL|own_addr|member|u8_t own_addr[BDADDR_SIZE];
+DECL|packet_release_last|member|u8_t packet_release_last;
+DECL|pdu_data|member|u8_t pdu_data[1];
+DECL|pdu_data|member|u8_t pdu_data[1];
+DECL|peer_addr_type|member|u8_t peer_addr_type;
+DECL|peer_addr|member|u8_t peer_addr[BDADDR_SIZE];
+DECL|peer_irk_index|member|u8_t peer_irk_index;
 DECL|radio_adv_data|struct|struct radio_adv_data {
 DECL|radio_le_chan_sel_algo|struct|struct radio_le_chan_sel_algo {
 DECL|radio_le_conn_cmplt|struct|struct radio_le_conn_cmplt {
@@ -102,9 +102,9 @@ DECL|radio_pdu_node_rx_hdr|struct|struct radio_pdu_node_rx_hdr {
 DECL|radio_pdu_node_rx_type|enum|enum radio_pdu_node_rx_type {
 DECL|radio_pdu_node_rx|struct|struct radio_pdu_node_rx {
 DECL|radio_pdu_node_tx|struct|struct radio_pdu_node_tx {
-DECL|role|member|uint8_t role;
-DECL|status|member|uint8_t status;
-DECL|status|member|uint8_t status;
-DECL|timeout|member|uint16_t timeout;
-DECL|timeout|member|uint16_t timeout;
+DECL|role|member|u8_t role;
+DECL|status|member|u8_t status;
+DECL|status|member|u8_t status;
+DECL|timeout|member|u16_t timeout;
+DECL|timeout|member|u16_t timeout;
 DECL|type|member|enum radio_pdu_node_rx_type type;

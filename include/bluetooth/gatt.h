@@ -50,81 +50,81 @@ DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
-DECL|attr_handle|member|uint16_t attr_handle;
+DECL|attr_handle|member|u16_t attr_handle;
 DECL|attr|member|const struct bt_gatt_attr *attr;
-DECL|bt_gatt_attr_func_t|typedef|typedef uint8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
+DECL|bt_gatt_attr_func_t|typedef|typedef u8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
 DECL|bt_gatt_attr|struct|struct bt_gatt_attr {
 DECL|bt_gatt_ccc_cfg|struct|struct bt_gatt_ccc_cfg {
 DECL|bt_gatt_ccc|struct|struct bt_gatt_ccc {
 DECL|bt_gatt_cep|struct|struct bt_gatt_cep {
 DECL|bt_gatt_chrc|struct|struct bt_gatt_chrc {
 DECL|bt_gatt_cpf|struct|struct bt_gatt_cpf {
-DECL|bt_gatt_discover_func_t|typedef|typedef uint8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
+DECL|bt_gatt_discover_func_t|typedef|typedef u8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_discover_params|struct|struct bt_gatt_discover_params {
 DECL|bt_gatt_exchange_params|struct|struct bt_gatt_exchange_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
 DECL|bt_gatt_indicate_func_t|typedef|typedef void (*bt_gatt_indicate_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_indicate_params|struct|struct bt_gatt_indicate_params {
-DECL|bt_gatt_notify_func_t|typedef|typedef uint8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
-DECL|bt_gatt_read_func_t|typedef|typedef uint8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, uint8_t err,
+DECL|bt_gatt_notify_func_t|typedef|typedef u8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
+DECL|bt_gatt_read_func_t|typedef|typedef u8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, u8_t err,
 DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
-DECL|bt_gatt_write_func_t|typedef|typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, uint8_t err,
+DECL|bt_gatt_write_func_t|typedef|typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, u8_t err,
 DECL|bt_gatt_write_params|struct|struct bt_gatt_write_params {
-DECL|ccc_handle|member|uint16_t ccc_handle;
+DECL|ccc_handle|member|u16_t ccc_handle;
 DECL|cfg_changed|member|void (*cfg_changed)(const struct bt_gatt_attr *attr,
 DECL|cfg_len|member|size_t cfg_len;
 DECL|cfg|member|struct bt_gatt_ccc_cfg *cfg;
 DECL|data|member|const void *data;
 DECL|data|member|const void *data;
-DECL|description|member|uint16_t description;
-DECL|end_handle|member|uint16_t end_handle;
-DECL|end_handle|member|uint16_t end_handle;
-DECL|end_handle|member|uint16_t end_handle;
-DECL|end_handle|member|uint16_t end_handle;
-DECL|exponent|member|int8_t exponent;
-DECL|flags|member|uint16_t flags;
-DECL|flags|member|uint8_t flags;
-DECL|format|member|uint8_t format;
+DECL|description|member|u16_t description;
+DECL|end_handle|member|u16_t end_handle;
+DECL|end_handle|member|u16_t end_handle;
+DECL|end_handle|member|u16_t end_handle;
+DECL|end_handle|member|u16_t end_handle;
+DECL|exponent|member|s8_t exponent;
+DECL|flags|member|u16_t flags;
+DECL|flags|member|u8_t flags;
+DECL|format|member|u8_t format;
 DECL|func|member|bt_gatt_discover_func_t func;
 DECL|func|member|bt_gatt_indicate_func_t func;
 DECL|func|member|bt_gatt_read_func_t func;
 DECL|func|member|bt_gatt_write_func_t func;
-DECL|func|member|void (*func)(struct bt_conn *conn, uint8_t err,
+DECL|func|member|void (*func)(struct bt_conn *conn, u8_t err,
 DECL|handle_count|member|size_t handle_count;
-DECL|handles|member|uint16_t *handles;
-DECL|handle|member|uint16_t handle;
-DECL|handle|member|uint16_t handle;
-DECL|handle|member|uint16_t handle;
-DECL|length|member|uint16_t length;
-DECL|len|member|uint16_t len;
-DECL|name_space|member|uint8_t name_space;
+DECL|handles|member|u16_t *handles;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
+DECL|length|member|u16_t length;
+DECL|len|member|u16_t len;
+DECL|name_space|member|u8_t name_space;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|notify|member|bt_gatt_notify_func_t notify;
-DECL|offset|member|uint16_t offset;
-DECL|offset|member|uint16_t offset;
+DECL|offset|member|u16_t offset;
+DECL|offset|member|u16_t offset;
 DECL|peer|member|bt_addr_le_t peer;
-DECL|perm|member|uint8_t perm;
-DECL|properties|member|uint16_t properties;
-DECL|properties|member|uint8_t properties;
+DECL|perm|member|u8_t perm;
+DECL|properties|member|u16_t properties;
+DECL|properties|member|u8_t properties;
 DECL|read|member|ssize_t (*read)(struct bt_conn *conn,
 DECL|single|member|} single;
-DECL|start_handle|member|uint16_t start_handle;
-DECL|start_handle|member|uint16_t start_handle;
-DECL|start_handle|member|uint16_t start_handle;
-DECL|type|member|uint8_t type;
-DECL|unit|member|uint16_t unit;
+DECL|start_handle|member|u16_t start_handle;
+DECL|start_handle|member|u16_t start_handle;
+DECL|start_handle|member|u16_t start_handle;
+DECL|type|member|u8_t type;
+DECL|unit|member|u16_t unit;
 DECL|user_data|member|void *user_data;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
-DECL|valid|member|uint8_t valid;
-DECL|value_handle|member|uint16_t value_handle;
-DECL|value|member|uint16_t value;
-DECL|value|member|uint16_t value;
-DECL|value|member|uint16_t value;
+DECL|valid|member|u8_t valid;
+DECL|value_handle|member|u16_t value_handle;
+DECL|value|member|u16_t value;
+DECL|value|member|u16_t value;
+DECL|value|member|u16_t value;
 DECL|write|member|ssize_t (*write)(struct bt_conn *conn,

@@ -22,6 +22,6 @@ DECL|BT_A2DP_SBC_SUB_BAND|macro|BT_A2DP_SBC_SUB_BAND
 DECL|__BT_A2DP_SBC_H|macro|__BT_A2DP_SBC_H
 DECL|__packed|variable|__packed
 DECL|bt_a2dp_codec_sbc_params|struct|struct bt_a2dp_codec_sbc_params {
-DECL|config|member|uint8_t config[2];
-DECL|max_bitpool|member|uint8_t max_bitpool;
-DECL|min_bitpool|member|uint8_t min_bitpool;
+DECL|config|member|u8_t config[2];
+DECL|max_bitpool|member|u8_t max_bitpool;
+DECL|min_bitpool|member|u8_t min_bitpool;

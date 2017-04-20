@@ -19,18 +19,18 @@ DECL|bt_irk|struct|struct bt_irk {
 DECL|bt_keys_link_key|struct|struct bt_keys_link_key {
 DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
-DECL|cnt|member|uint32_t cnt;
-DECL|ediv|member|uint16_t ediv;
-DECL|enc_size|member|uint8_t enc_size;
+DECL|cnt|member|u32_t cnt;
+DECL|ediv|member|u16_t ediv;
+DECL|enc_size|member|u8_t enc_size;
 DECL|irk|member|struct bt_irk irk;
-DECL|keys|member|uint16_t keys;
+DECL|keys|member|u16_t keys;
 DECL|local_csrk|member|struct bt_csrk local_csrk;
 DECL|ltk|member|struct bt_ltk ltk;
-DECL|rand|member|uint64_t rand;
+DECL|rand|member|u64_t rand;
 DECL|remote_csrk|member|struct bt_csrk remote_csrk;
 DECL|rpa|member|bt_addr_t rpa;
 DECL|slave_ltk|member|struct bt_ltk slave_ltk;
-DECL|val|member|uint8_t val[16];
-DECL|val|member|uint8_t val[16];
-DECL|val|member|uint8_t val[16];
-DECL|val|member|uint8_t val[16];
+DECL|val|member|u8_t val[16];
+DECL|val|member|u8_t val[16];
+DECL|val|member|u8_t val[16];
+DECL|val|member|u8_t val[16];

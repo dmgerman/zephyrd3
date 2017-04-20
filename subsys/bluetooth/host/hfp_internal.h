@@ -32,11 +32,11 @@ DECL|HF_MAX_BUF_LEN|macro|HF_MAX_BUF_LEN
 DECL|HF_ROAM_IND|enumerator|HF_ROAM_IND,
 DECL|HF_SERVICE_IND|enumerator|HF_SERVICE_IND,
 DECL|HF_SINGNAL_IND|enumerator|HF_SINGNAL_IND,
-DECL|ag_features|member|uint32_t ag_features;
+DECL|ag_features|member|u32_t ag_features;
 DECL|at|member|struct at_client at;
 DECL|bt_hfp_hf|struct|struct bt_hfp_hf {
 DECL|hf_buffer|member|char hf_buffer[HF_MAX_BUF_LEN];
-DECL|hf_features|member|uint32_t hf_features;
+DECL|hf_features|member|u32_t hf_features;
 DECL|hfp_hf_ag_indicators|enum|enum hfp_hf_ag_indicators {
-DECL|ind_table|member|int8_t ind_table[HF_MAX_AG_INDICATORS];
+DECL|ind_table|member|s8_t ind_table[HF_MAX_AG_INDICATORS];
 DECL|rfcomm_dlc|member|struct bt_rfcomm_dlc rfcomm_dlc;

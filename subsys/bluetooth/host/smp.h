@@ -59,8 +59,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|addr|member|bt_addr_le_t addr;
-DECL|auth_req|member|uint8_t auth_req;
-DECL|auth_req|member|uint8_t auth_req;
+DECL|auth_req|member|u8_t auth_req;
+DECL|auth_req|member|u8_t auth_req;
 DECL|bt_smp_dhkey_check|struct|struct bt_smp_dhkey_check {
 DECL|bt_smp_encrypt_info|struct|struct bt_smp_encrypt_info {
 DECL|bt_smp_hdr|struct|struct bt_smp_hdr {
@@ -74,20 +74,20 @@ DECL|bt_smp_pairing|struct|struct bt_smp_pairing {
 DECL|bt_smp_public_key|struct|struct bt_smp_public_key {
 DECL|bt_smp_security_request|struct|struct bt_smp_security_request {
 DECL|bt_smp_signing_info|struct|struct bt_smp_signing_info {
-DECL|code|member|uint8_t code;
-DECL|csrk|member|uint8_t csrk[16];
-DECL|ediv|member|uint16_t ediv;
-DECL|e|member|uint8_t e[16];
-DECL|init_key_dist|member|uint8_t init_key_dist;
-DECL|io_capability|member|uint8_t io_capability;
-DECL|irk|member|uint8_t irk[16];
-DECL|ltk|member|uint8_t ltk[16];
-DECL|max_key_size|member|uint8_t max_key_size;
-DECL|oob_flag|member|uint8_t oob_flag;
-DECL|rand|member|uint64_t rand;
-DECL|reason|member|uint8_t reason;
-DECL|resp_key_dist|member|uint8_t resp_key_dist;
-DECL|val|member|uint8_t val[16];
-DECL|val|member|uint8_t val[16];
-DECL|x|member|uint8_t x[32];
-DECL|y|member|uint8_t y[32];
+DECL|code|member|u8_t code;
+DECL|csrk|member|u8_t csrk[16];
+DECL|ediv|member|u16_t ediv;
+DECL|e|member|u8_t e[16];
+DECL|init_key_dist|member|u8_t init_key_dist;
+DECL|io_capability|member|u8_t io_capability;
+DECL|irk|member|u8_t irk[16];
+DECL|ltk|member|u8_t ltk[16];
+DECL|max_key_size|member|u8_t max_key_size;
+DECL|oob_flag|member|u8_t oob_flag;
+DECL|rand|member|u64_t rand;
+DECL|reason|member|u8_t reason;
+DECL|resp_key_dist|member|u8_t resp_key_dist;
+DECL|val|member|u8_t val[16];
+DECL|val|member|u8_t val[16];
+DECL|x|member|u8_t x[32];
+DECL|y|member|u8_t y[32];

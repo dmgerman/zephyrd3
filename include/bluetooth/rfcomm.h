@@ -14,18 +14,18 @@ DECL|bt_rfcomm_dlc|struct|struct bt_rfcomm_dlc {
 DECL|bt_rfcomm_role_t|typedef|} __packed bt_rfcomm_role_t;
 DECL|bt_rfcomm_role|enum|typedef enum bt_rfcomm_role {
 DECL|bt_rfcomm_server|struct|struct bt_rfcomm_server {
-DECL|channel|member|uint8_t channel;
+DECL|channel|member|u8_t channel;
 DECL|connected|member|void (*connected)(struct bt_rfcomm_dlc *dlc);
 DECL|disconnected|member|void (*disconnected)(struct bt_rfcomm_dlc *dlc);
-DECL|dlci|member|uint8_t dlci;
-DECL|mtu|member|uint16_t mtu;
+DECL|dlci|member|u8_t dlci;
+DECL|mtu|member|u16_t mtu;
 DECL|ops|member|struct bt_rfcomm_dlc_ops *ops;
 DECL|recv|member|void (*recv)(struct bt_rfcomm_dlc *dlc, struct net_buf *buf);
 DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|role|member|bt_rfcomm_role_t role;
 DECL|rtx_work|member|struct k_delayed_work rtx_work;
-DECL|rx_credit|member|uint8_t rx_credit;
+DECL|rx_credit|member|u8_t rx_credit;
 DECL|session|member|struct bt_rfcomm_session *session;
-DECL|state|member|uint8_t state;
+DECL|state|member|u8_t state;
 DECL|tx_credits|member|struct k_sem tx_credits;
 DECL|tx_queue|member|struct k_fifo tx_queue;

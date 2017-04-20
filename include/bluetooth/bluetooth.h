@@ -11,7 +11,7 @@ DECL|BT_LE_SCAN_ACTIVE|macro|BT_LE_SCAN_ACTIVE
 DECL|BT_LE_SCAN_PARAM|macro|BT_LE_SCAN_PARAM
 DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|__BT_BLUETOOTH_H|macro|__BT_BLUETOOTH_H
-DECL|_priv|member|uint8_t _priv[4];
+DECL|_priv|member|u8_t _priv[4];
 DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
@@ -24,22 +24,22 @@ DECL|bt_br_oob|struct|struct bt_br_oob {
 DECL|bt_data|struct|struct bt_data {
 DECL|bt_le_adv_param|struct|struct bt_le_adv_param {
 DECL|bt_le_oob|struct|struct bt_le_oob {
-DECL|bt_le_scan_cb_t|typedef|typedef void bt_le_scan_cb_t(const bt_addr_le_t *addr, int8_t rssi,
+DECL|bt_le_scan_cb_t|typedef|typedef void bt_le_scan_cb_t(const bt_addr_le_t *addr, s8_t rssi,
 DECL|bt_le_scan_param|struct|struct bt_le_scan_param {
 DECL|bt_ready_cb_t|typedef|typedef void (*bt_ready_cb_t)(int err);
-DECL|cod|member|uint8_t cod[3];
-DECL|data_len|member|uint8_t data_len;
-DECL|data|member|const uint8_t *data;
-DECL|eir|member|uint8_t eir[240];
-DECL|filter_dup|member|uint8_t filter_dup;
-DECL|interval_max|member|uint16_t interval_max;
-DECL|interval_min|member|uint16_t interval_min;
-DECL|interval|member|uint16_t interval;
-DECL|length|member|uint8_t length;
+DECL|cod|member|u8_t cod[3];
+DECL|data_len|member|u8_t data_len;
+DECL|data|member|const u8_t *data;
+DECL|eir|member|u8_t eir[240];
+DECL|filter_dup|member|u8_t filter_dup;
+DECL|interval_max|member|u16_t interval_max;
+DECL|interval_min|member|u16_t interval_min;
+DECL|interval|member|u16_t interval;
+DECL|length|member|u8_t length;
 DECL|limited|member|bool limited;
-DECL|options|member|uint8_t options;
+DECL|options|member|u8_t options;
 DECL|own_addr|member|const bt_addr_t *own_addr;
-DECL|rssi|member|int8_t rssi;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|window|member|uint16_t window;
+DECL|rssi|member|s8_t rssi;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;
+DECL|window|member|u16_t window;

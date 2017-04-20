@@ -24,18 +24,18 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|att_list_len|member|uint16_t att_list_len;
+DECL|att_list_len|member|u16_t att_list_len;
 DECL|bt_sdp_att_rsp|struct|struct bt_sdp_att_rsp {
 DECL|bt_sdp_data_elem_seq|struct|struct bt_sdp_data_elem_seq {
 DECL|bt_sdp_hdr|struct|struct bt_sdp_hdr {
 DECL|bt_sdp_pdu_cstate|struct|struct bt_sdp_pdu_cstate {
 DECL|bt_sdp_svc_rsp|struct|struct bt_sdp_svc_rsp {
-DECL|current_recs|member|uint16_t current_recs;
-DECL|data|member|uint8_t data[BT_SDP_MAX_PDU_CSTATE_LEN];
-DECL|length|member|uint8_t length;
-DECL|op_code|member|uint8_t op_code;
-DECL|param_len|member|uint16_t param_len;
-DECL|size|member|uint16_t size; /* We only support 2 byte sizes for now */
-DECL|tid|member|uint16_t tid;
-DECL|total_recs|member|uint16_t total_recs;
-DECL|type|member|uint8_t type; /* Type: Will be data element sequence */
+DECL|current_recs|member|u16_t current_recs;
+DECL|data|member|u8_t data[BT_SDP_MAX_PDU_CSTATE_LEN];
+DECL|length|member|u8_t length;
+DECL|op_code|member|u8_t op_code;
+DECL|param_len|member|u16_t param_len;
+DECL|size|member|u16_t size; /* We only support 2 byte sizes for now */
+DECL|tid|member|u16_t tid;
+DECL|total_recs|member|u16_t total_recs;
+DECL|type|member|u8_t type; /* Type: Will be data element sequence */

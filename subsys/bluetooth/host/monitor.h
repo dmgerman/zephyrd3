@@ -30,23 +30,23 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|bdaddr|member|uint8_t bdaddr[6];
+DECL|bdaddr|member|u8_t bdaddr[6];
 DECL|bt_monitor_hdr|struct|struct bt_monitor_hdr {
 DECL|bt_monitor_new_index|macro|bt_monitor_new_index
 DECL|bt_monitor_new_index|struct|struct bt_monitor_new_index {
-DECL|bt_monitor_opcode|function|static inline uint8_t bt_monitor_opcode(struct net_buf *buf)
+DECL|bt_monitor_opcode|function|static inline u8_t bt_monitor_opcode(struct net_buf *buf)
 DECL|bt_monitor_send|macro|bt_monitor_send
 DECL|bt_monitor_ts32|struct|struct bt_monitor_ts32 {
 DECL|bt_monitor_user_logging|struct|struct bt_monitor_user_logging {
-DECL|bus|member|uint8_t bus;
-DECL|data_len|member|uint16_t data_len;
-DECL|ext|member|uint8_t ext[BT_MONITOR_EXT_HDR_MAX];
-DECL|flags|member|uint8_t flags;
-DECL|hdr_len|member|uint8_t hdr_len;
-DECL|ident_len|member|uint8_t ident_len;
+DECL|bus|member|u8_t bus;
+DECL|data_len|member|u16_t data_len;
+DECL|ext|member|u8_t ext[BT_MONITOR_EXT_HDR_MAX];
+DECL|flags|member|u8_t flags;
+DECL|hdr_len|member|u8_t hdr_len;
+DECL|ident_len|member|u8_t ident_len;
 DECL|name|member|char name[8];
-DECL|opcode|member|uint16_t opcode;
-DECL|priority|member|uint8_t priority;
-DECL|ts32|member|uint32_t ts32;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
+DECL|opcode|member|u16_t opcode;
+DECL|priority|member|u8_t priority;
+DECL|ts32|member|u32_t ts32;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;

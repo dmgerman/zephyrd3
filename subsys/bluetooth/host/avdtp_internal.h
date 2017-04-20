@@ -73,19 +73,19 @@ DECL|bt_avdtp_single_sig_hdr|struct|struct bt_avdtp_single_sig_hdr {
 DECL|bt_avdtp|struct|struct bt_avdtp {
 DECL|caps|member|struct bt_avdtp_cap caps[0];
 DECL|caps|member|struct bt_avdtp_sep *caps;
-DECL|cat|member|uint8_t cat;
-DECL|data|member|uint8_t data[0];
+DECL|cat|member|u8_t cat;
+DECL|data|member|u8_t data[0];
 DECL|func|member|bt_avdtp_func_t func;
-DECL|hdr|member|uint8_t hdr;
+DECL|hdr|member|u8_t hdr;
 DECL|ind|member|struct bt_avdtp_ind_cb *ind;
-DECL|len|member|uint8_t len;
-DECL|len|member|uint8_t len;
+DECL|len|member|u8_t len;
+DECL|len|member|u8_t len;
 DECL|req|member|struct bt_avdtp_req *req;
 DECL|req|member|struct bt_avdtp_req req;
-DECL|seid|member|uint8_t seid;
-DECL|signal_id|member|uint8_t signal_id;
-DECL|sig|member|uint8_t sig;
-DECL|status|member|uint8_t status;
+DECL|seid|member|u8_t seid;
+DECL|signal_id|member|u8_t signal_id;
+DECL|sig|member|u8_t sig;
+DECL|status|member|u8_t status;
 DECL|streams|member|struct bt_avdtp_stream *streams; /* List of AV streams */
-DECL|tid|member|uint8_t tid;
+DECL|tid|member|u8_t tid;
 DECL|timeout_work|member|struct k_delayed_work timeout_work;

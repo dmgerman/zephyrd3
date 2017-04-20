@@ -74,9 +74,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|ack_timer|member|uint8_t ack_timer;
-DECL|address|member|uint8_t address;
-DECL|baud_rate|member|uint8_t baud_rate;
+DECL|ack_timer|member|u8_t ack_timer;
+DECL|address|member|u8_t address;
+DECL|baud_rate|member|u8_t baud_rate;
 DECL|br_chan|member|struct bt_l2cap_br_chan br_chan;
 DECL|bt_rfcomm_cfc_t|typedef|} __packed bt_rfcomm_cfc_t;
 DECL|bt_rfcomm_hdr|struct|struct bt_rfcomm_hdr {
@@ -87,29 +87,29 @@ DECL|bt_rfcomm_rls|struct|struct bt_rfcomm_rls {
 DECL|bt_rfcomm_rpn|struct|struct bt_rfcomm_rpn {
 DECL|bt_rfcomm_session|struct|struct bt_rfcomm_session {
 DECL|cfc|member|bt_rfcomm_cfc_t cfc;
-DECL|control|member|uint8_t control;
-DECL|credits|member|uint8_t credits;
-DECL|dlci|member|uint8_t dlci;
-DECL|dlci|member|uint8_t dlci;
-DECL|dlci|member|uint8_t dlci;
-DECL|dlci|member|uint8_t dlci;
+DECL|control|member|u8_t control;
+DECL|credits|member|u8_t credits;
+DECL|dlci|member|u8_t dlci;
+DECL|dlci|member|u8_t dlci;
+DECL|dlci|member|u8_t dlci;
+DECL|dlci|member|u8_t dlci;
 DECL|dlcs|member|struct bt_rfcomm_dlc *dlcs;
 DECL|fc|member|struct k_sem fc;
-DECL|flow_control|member|uint8_t flow_control;
-DECL|flow_ctrl|member|uint8_t flow_ctrl;
-DECL|length|member|uint8_t length;
-DECL|len|member|uint8_t len;
-DECL|line_settings|member|uint8_t line_settings;
-DECL|line_status|member|uint8_t line_status;
-DECL|max_retrans|member|uint8_t max_retrans;
-DECL|mtu|member|uint16_t mtu;
-DECL|mtu|member|uint16_t mtu;
-DECL|param_mask|member|uint16_t param_mask;
-DECL|priority|member|uint8_t priority;
+DECL|flow_control|member|u8_t flow_control;
+DECL|flow_ctrl|member|u8_t flow_ctrl;
+DECL|length|member|u8_t length;
+DECL|len|member|u8_t len;
+DECL|line_settings|member|u8_t line_settings;
+DECL|line_status|member|u8_t line_status;
+DECL|max_retrans|member|u8_t max_retrans;
+DECL|mtu|member|u16_t mtu;
+DECL|mtu|member|u16_t mtu;
+DECL|param_mask|member|u16_t param_mask;
+DECL|priority|member|u8_t priority;
 DECL|role|member|bt_rfcomm_role_t role;
 DECL|rtx_work|member|struct k_delayed_work rtx_work;
-DECL|state|member|uint8_t state;
-DECL|type|member|uint8_t type;
-DECL|v24_signal|member|uint8_t v24_signal;
-DECL|xoff_char|member|uint8_t xoff_char;
-DECL|xon_char|member|uint8_t xon_char;
+DECL|state|member|u8_t state;
+DECL|type|member|u8_t type;
+DECL|v24_signal|member|u8_t v24_signal;
+DECL|xoff_char|member|u8_t xoff_char;
+DECL|xon_char|member|u8_t xon_char;

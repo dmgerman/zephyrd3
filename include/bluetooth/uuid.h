@@ -205,10 +205,10 @@ DECL|bt_uuid_32|struct|struct bt_uuid_32 {
 DECL|bt_uuid_str|function|static inline const char *bt_uuid_str(const struct bt_uuid *uuid)
 DECL|bt_uuid_to_str|function|static inline void bt_uuid_to_str(const struct bt_uuid *uuid, char *str, size_t len)
 DECL|bt_uuid|struct|struct bt_uuid {
-DECL|type|member|uint8_t type;
+DECL|type|member|u8_t type;
 DECL|uuid|member|struct bt_uuid uuid;
 DECL|uuid|member|struct bt_uuid uuid;
 DECL|uuid|member|struct bt_uuid uuid;
-DECL|val|member|uint16_t val;
-DECL|val|member|uint32_t val;
-DECL|val|member|uint8_t val[16];
+DECL|val|member|u16_t val;
+DECL|val|member|u32_t val;
+DECL|val|member|u8_t val[16];

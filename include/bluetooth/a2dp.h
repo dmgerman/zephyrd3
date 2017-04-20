@@ -16,8 +16,8 @@ DECL|bt_a2dp_endpoint|struct|struct bt_a2dp_endpoint {
 DECL|bt_a2dp_preset|struct|struct bt_a2dp_preset {
 DECL|bt_a2dp_stream|struct|struct bt_a2dp_stream {
 DECL|caps|member|struct bt_a2dp_preset *caps;
-DECL|codec_id|member|uint8_t codec_id;
+DECL|codec_id|member|u8_t codec_id;
 DECL|info|member|struct bt_avdtp_seid_lsep info;
-DECL|len|member|uint8_t len;
+DECL|len|member|u8_t len;
 DECL|preset|member|struct bt_a2dp_preset *preset;
-DECL|preset|member|uint8_t preset[0];
+DECL|preset|member|u8_t preset[0];

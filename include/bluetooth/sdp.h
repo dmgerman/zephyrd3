@@ -212,22 +212,22 @@ DECL|attrs|member|struct bt_sdp_attribute *attrs; /* Base addr of attr array */
 DECL|bt_sdp_attribute|struct|struct bt_sdp_attribute {
 DECL|bt_sdp_client_result|struct|struct bt_sdp_client_result {
 DECL|bt_sdp_data_elem|struct|struct bt_sdp_data_elem {
-DECL|bt_sdp_discover_func_t|typedef|typedef uint8_t (*bt_sdp_discover_func_t)
+DECL|bt_sdp_discover_func_t|typedef|typedef u8_t (*bt_sdp_discover_func_t)
 DECL|bt_sdp_discover_params|struct|struct bt_sdp_discover_params {
 DECL|bt_sdp_proto|enum|enum bt_sdp_proto {
 DECL|bt_sdp_record|struct|struct bt_sdp_record {
-DECL|data_size|member|uint32_t data_size;
+DECL|data_size|member|u32_t data_size;
 DECL|data|member|const void *data;
 DECL|func|member|bt_sdp_discover_func_t func;
-DECL|handle|member|uint32_t handle; /* Redundant, for quick ref */
-DECL|id|member|uint16_t id; /* Attribute ID */
-DECL|index|member|uint8_t index; /* Index of the record in LL */
+DECL|handle|member|u32_t handle; /* Redundant, for quick ref */
+DECL|id|member|u16_t id; /* Attribute ID */
+DECL|index|member|u8_t index; /* Index of the record in LL */
 DECL|next_record_hint|member|bool next_record_hint;
 DECL|next|member|struct bt_sdp_record *next;
 DECL|pool|member|struct net_buf_pool *pool;
 DECL|resp_buf|member|struct net_buf *resp_buf;
-DECL|total_size|member|uint32_t total_size;
-DECL|type|member|uint8_t type;
+DECL|total_size|member|u32_t total_size;
+DECL|type|member|u8_t type;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|val|member|struct bt_sdp_data_elem val; /* Attribute data */

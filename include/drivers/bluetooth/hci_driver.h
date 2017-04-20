@@ -10,7 +10,7 @@ DECL|BT_HCI_DRIVER_BUS_VIRTUAL|enumerator|BT_HCI_DRIVER_BUS_VIRTUAL = 0,
 DECL|__BT_HCI_DRIVER_H|macro|__BT_HCI_DRIVER_H
 DECL|bt_hci_driver_bus|enum|enum bt_hci_driver_bus {
 DECL|bt_hci_driver|struct|struct bt_hci_driver {
-DECL|bt_hci_evt_is_prio|function|static inline bool bt_hci_evt_is_prio(uint8_t evt)
+DECL|bt_hci_evt_is_prio|function|static inline bool bt_hci_evt_is_prio(u8_t evt)
 DECL|bus|member|enum bt_hci_driver_bus bus;
 DECL|name|member|const char *name;
 DECL|open|member|int (*open)(void);
