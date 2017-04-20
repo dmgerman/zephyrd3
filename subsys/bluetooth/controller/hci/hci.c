@@ -1,4 +1,3 @@
-DECL|BIT64|macro|BIT64
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_EVENT_MASK|macro|DEFAULT_EVENT_MASK
 DECL|DEFAULT_LE_EVENT_MASK|macro|DEFAULT_LE_EVENT_MASK
@@ -30,6 +29,7 @@ DECL|hci_num_cmplt_encode|function|void hci_num_cmplt_encode(struct net_buf *buf
 DECL|info_cmd_handle|function|static int info_cmd_handle(uint8_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_advertising_report|function|static void le_advertising_report(struct pdu_data *pdu_data, uint8_t *b, struct net_buf *buf)
+DECL|le_chan_sel_algo|function|static void le_chan_sel_algo(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_clear_wl|function|static void le_clear_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_conn_complete|function|static void le_conn_complete(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(struct net_buf *buf,struct net_buf **evt)
@@ -46,7 +46,7 @@ DECL|le_ltk_req_neg_reply|function|static void le_ltk_req_neg_reply(struct net_b
 DECL|le_ltk_req_reply|function|static void le_ltk_req_reply(struct net_buf *buf, struct net_buf **evt)
 DECL|le_ltk_request|function|static void le_ltk_request(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)
 DECL|le_rand|function|static void le_rand(struct net_buf *buf, struct net_buf **evt)
-DECL|le_read_adv_ch_tx_power|function|static void le_read_adv_ch_tx_power(struct net_buf *buf, struct net_buf **evt)
+DECL|le_read_adv_chan_tx_power|function|static void le_read_adv_chan_tx_power(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_buffer_size|function|static void le_read_buffer_size(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_default_data_len|function|static void le_read_default_data_len(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_local_features|function|static void le_read_local_features(struct net_buf *buf, struct net_buf **evt)
@@ -61,10 +61,10 @@ DECL|le_set_adv_enable|function|static void le_set_adv_enable(struct net_buf *bu
 DECL|le_set_adv_param|function|static void le_set_adv_param(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_data_len|function|static void le_set_data_len(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_event_mask|function|static void le_set_event_mask(struct net_buf *buf, struct net_buf **evt)
-DECL|le_set_host_ch_classif|function|static void le_set_host_ch_classif(struct net_buf *buf, struct net_buf **evt)
+DECL|le_set_host_chan_classif|function|static void le_set_host_chan_classif(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_random_address|function|static void le_set_random_address(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_scan_enable|function|static void le_set_scan_enable(struct net_buf *buf, struct net_buf **evt)
-DECL|le_set_scan_params|function|static void le_set_scan_params(struct net_buf *buf, struct net_buf **evt)
+DECL|le_set_scan_param|function|static void le_set_scan_param(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_scan_rsp_data|function|static void le_set_scan_rsp_data(struct net_buf *buf, struct net_buf **evt)
 DECL|le_start_encryption|function|static void le_start_encryption(struct net_buf *buf, struct net_buf **evt)
 DECL|le_unknown_rsp|function|static void le_unknown_rsp(struct pdu_data *pdu_data, uint16_t handle, struct net_buf *buf)

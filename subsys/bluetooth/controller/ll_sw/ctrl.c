@@ -41,9 +41,16 @@ DECL|adv_obs_conn_configure|function|static void adv_obs_conn_configure(uint8_t 
 DECL|adv_setup|function|static void adv_setup(void)
 DECL|advertiser|member|struct advertiser advertiser;
 DECL|advertiser|struct|struct advertiser {
-DECL|channel_calc|function|static uint8_t channel_calc(uint8_t *channel_use, uint8_t hop, uint16_t latency, uint8_t *channel_map, uint8_t channel_count)
-DECL|channel_map_update|function|static uint32_t channel_map_update(struct connection *conn, struct pdu_data *pdu_data_rx)
-DECL|channel_set|function|static void channel_set(uint32_t channel)
+DECL|chan_mam|function|static uint16_t chan_mam(uint16_t a, uint16_t b)
+DECL|chan_map_update|function|static uint32_t chan_map_update(struct connection *conn,struct pdu_data *pdu_data_rx)
+DECL|chan_perm|function|static uint16_t chan_perm(uint16_t i)
+DECL|chan_prn|function|static uint16_t chan_prn(uint16_t counter, uint16_t chan_id)
+DECL|chan_rev_8|function|static uint8_t chan_rev_8(uint8_t i)
+DECL|chan_sel_1|function|static uint8_t chan_sel_1(uint8_t *chan_use, uint8_t hop, uint16_t latency, uint8_t *chan_map, uint8_t chan_count)
+DECL|chan_sel_2_ut|function|static void chan_sel_2_ut(void)
+DECL|chan_sel_2|function|static uint8_t chan_sel_2(uint16_t counter, uint16_t chan_id, uint8_t *chan_map, uint8_t chan_count)
+DECL|chan_sel_remap|function|static uint8_t chan_sel_remap(uint8_t *chan_map, uint8_t chan_index)
+DECL|chan_set|function|static void chan_set(uint32_t chan)
 DECL|chl_map_current|member|uint8_t chl_map_current:3;
 DECL|chl_map|member|uint8_t chl_map:3;
 DECL|common_init|function|static void common_init(void)
@@ -64,8 +71,8 @@ DECL|conn|member|struct connection *conn;
 DECL|conn|member|struct connection *conn;
 DECL|crc_expire|member|uint8_t crc_expire;
 DECL|ctrl_tx_enqueue|function|static void ctrl_tx_enqueue(struct connection *conn, struct radio_pdu_node_tx *node_tx)
-DECL|data_channel_count|member|uint8_t data_channel_count;
-DECL|data_channel_map|member|uint8_t data_channel_map[5];
+DECL|data_chan_count|member|uint8_t data_chan_count;
+DECL|data_chan_map|member|uint8_t data_chan_map[5];
 DECL|default_tx_octets|member|uint16_t default_tx_octets;
 DECL|default_tx_time|member|uint16_t default_tx_time;
 DECL|do_radio_rx_fc_set|function|uint8_t do_radio_rx_fc_set(uint16_t handle, uint8_t req,uint8_t ack)
@@ -100,6 +107,7 @@ DECL|fc_ack|member|uint8_t fc_ack;
 DECL|fc_ena|member|uint8_t fc_ena;
 DECL|fc_handle|member|uint16_t fc_handle[TRIPLE_BUFFER_SIZE];
 DECL|fc_req|member|uint8_t volatile fc_req;
+DECL|feat_get|function|static inline uint32_t feat_get(uint8_t *features)
 DECL|feature_rsp_send|function|static void feature_rsp_send(struct connection *conn)
 DECL|filter_addr_type_bitmask|member|uint8_t filter_addr_type_bitmask;
 DECL|filter_addr_type_bitmask|member|uint8_t filter_addr_type_bitmask;
@@ -238,7 +246,7 @@ DECL|role|enum|enum role {
 DECL|role|member|enum role volatile role;
 DECL|rx_fc_lock|function|static void rx_fc_lock(uint16_t handle)
 DECL|rx_packet_set|function|static void rx_packet_set(struct connection *conn, struct pdu_data *pdu_data_rx)
-DECL|scan_channel|member|uint8_t scan_channel:2;
+DECL|scan_chan|member|uint8_t scan_chan:2;
 DECL|scan_data|member|struct radio_adv_data scan_data;
 DECL|scan_state|member|uint8_t scan_state:1;
 DECL|scan_type|member|uint8_t scan_type:1;
