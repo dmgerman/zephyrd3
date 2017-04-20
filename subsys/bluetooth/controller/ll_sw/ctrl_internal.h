@@ -1,5 +1,5 @@
 DECL|CONNECTION_T_SIZE|macro|CONNECTION_T_SIZE
-DECL|LLCP_CHANNEL_MAP|enumerator|LLCP_CHANNEL_MAP,
+DECL|LLCP_CHAN_MAP|enumerator|LLCP_CHAN_MAP,
 DECL|LLCP_CONNECTION_UPDATE|enumerator|LLCP_CONNECTION_UPDATE,
 DECL|LLCP_CONN_STATE_APP_WAIT|macro|LLCP_CONN_STATE_APP_WAIT
 DECL|LLCP_CONN_STATE_INITIATE|macro|LLCP_CONN_STATE_INITIATE
@@ -36,7 +36,7 @@ DECL|apto_expire|member|uint16_t apto_expire;
 DECL|apto_reload|member|uint16_t apto_reload;
 DECL|ccm_rx|member|struct ccm ccm_rx;
 DECL|ccm_tx|member|struct ccm ccm_tx;
-DECL|channel_map|member|} channel_map;
+DECL|chan_map|member|} chan_map;
 DECL|chm|member|uint8_t chm[5];
 DECL|company_id|member|uint16_t company_id;
 DECL|conn_interval|member|uint16_t conn_interval;
@@ -44,10 +44,12 @@ DECL|connect_expire|member|uint8_t connect_expire;
 DECL|connection_update|member|} connection_update;
 DECL|connection|struct|struct connection {
 DECL|crc_init|member|uint8_t crc_init[3];
-DECL|data_channel_count|member|uint8_t data_channel_count;
-DECL|data_channel_hop|member|uint8_t data_channel_hop;
-DECL|data_channel_map|member|uint8_t data_channel_map[5];
-DECL|data_channel_use|member|uint8_t data_channel_use;
+DECL|data_chan_count|member|uint8_t data_chan_count:6;
+DECL|data_chan_hop|member|uint8_t data_chan_hop;
+DECL|data_chan_id|member|uint16_t data_chan_id;
+DECL|data_chan_map|member|uint8_t data_chan_map[5];
+DECL|data_chan_sel|member|uint8_t data_chan_sel:1;
+DECL|data_chan_use|member|uint8_t data_chan_use;
 DECL|default_tx_octets|member|uint16_t default_tx_octets;
 DECL|ediv|member|uint8_t ediv[2];
 DECL|empty|member|uint8_t empty:1;
@@ -72,7 +74,7 @@ DECL|latency_prepare|member|uint16_t latency_prepare;
 DECL|latency|member|uint16_t latency;
 DECL|latency|member|uint16_t latency;
 DECL|llcp_ack|member|uint8_t llcp_ack;
-DECL|llcp_features|member|uint8_t llcp_features;
+DECL|llcp_features|member|uint32_t llcp_features;
 DECL|llcp_length|member|} llcp_length;
 DECL|llcp_req|member|uint8_t llcp_req;
 DECL|llcp_terminate|member|} llcp_terminate;
@@ -113,6 +115,7 @@ DECL|reason|member|uint8_t reason;
 DECL|refresh|member|uint8_t refresh:1;
 DECL|req|member|uint8_t req;
 DECL|req|member|uint8_t req;
+DECL|rfu|member|uint8_t rfu:1;
 DECL|role|member|uint8_t role:1;
 DECL|role|member|uint8_t role:1;
 DECL|role|member|} role;

@@ -16,7 +16,7 @@ DECL|PDU_ADV_TYPE_NONCONN_IND|enumerator|PDU_ADV_TYPE_NONCONN_IND = 0x02,
 DECL|PDU_ADV_TYPE_SCAN_IND|enumerator|PDU_ADV_TYPE_SCAN_IND = 0x06,
 DECL|PDU_ADV_TYPE_SCAN_REQ|enumerator|PDU_ADV_TYPE_SCAN_REQ = 0x03,
 DECL|PDU_ADV_TYPE_SCAN_RSP|enumerator|PDU_ADV_TYPE_SCAN_RSP = 0x04,
-DECL|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_IND|enumerator|PDU_DATA_LLCTRL_TYPE_CHANNEL_MAP_IND = 0x01,
+DECL|PDU_DATA_LLCTRL_TYPE_CHAN_MAP_IND|enumerator|PDU_DATA_LLCTRL_TYPE_CHAN_MAP_IND = 0x01,
 DECL|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_REQ = 0x0F,
 DECL|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_PARAM_RSP = 0x10,
 DECL|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_IND|enumerator|PDU_DATA_LLCTRL_TYPE_CONN_UPDATE_IND = 0x00,
@@ -26,7 +26,7 @@ DECL|PDU_DATA_LLCTRL_TYPE_FEATURE_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_FEATURE_RE
 DECL|PDU_DATA_LLCTRL_TYPE_FEATURE_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_FEATURE_RSP = 0x09,
 DECL|PDU_DATA_LLCTRL_TYPE_LENGTH_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_LENGTH_REQ = 0x14,
 DECL|PDU_DATA_LLCTRL_TYPE_LENGTH_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_LENGTH_RSP = 0x15,
-DECL|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHNLS_IND|enumerator|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHNLS_IND = 0x19,
+DECL|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHAN_IND|enumerator|PDU_DATA_LLCTRL_TYPE_MIN_USED_CHAN_IND = 0x19,
 DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_REQ = 0x0A,
 DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP = 0x0B,
 DECL|PDU_DATA_LLCTRL_TYPE_PHY_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_REQ = 0x16,
@@ -82,9 +82,9 @@ DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|uint8_t adv_addr[BDADDR_SIZE];
 DECL|adv_ind|member|struct pdu_adv_payload_adv_ind adv_ind;
-DECL|ch_sel|member|uint8_t ch_sel:1;
-DECL|channel_map_ind|member|struct pdu_data_llctrl_channel_map_ind channel_map_ind;
-DECL|channel_map|member|uint8_t channel_map[5];
+DECL|chan_map_ind|member|struct pdu_data_llctrl_chan_map_ind chan_map_ind;
+DECL|chan_map|member|uint8_t chan_map[5];
+DECL|chan_sel|member|uint8_t chan_sel:1;
 DECL|chm|member|uint8_t chm[5];
 DECL|company_id|member|uint16_t company_id;
 DECL|conn_param_req|member|struct pdu_data_llctrl_conn_param_req conn_param_req;
@@ -168,7 +168,7 @@ DECL|pdu_adv_payload_scan_req|struct|struct pdu_adv_payload_scan_req {
 DECL|pdu_adv_payload_scan_rsp|struct|struct pdu_adv_payload_scan_rsp {
 DECL|pdu_adv_type|enum|enum pdu_adv_type {
 DECL|pdu_adv|struct|struct pdu_adv {
-DECL|pdu_data_llctrl_channel_map_ind|struct|struct pdu_data_llctrl_channel_map_ind {
+DECL|pdu_data_llctrl_chan_map_ind|struct|struct pdu_data_llctrl_chan_map_ind {
 DECL|pdu_data_llctrl_conn_param_req|struct|struct pdu_data_llctrl_conn_param_req {
 DECL|pdu_data_llctrl_conn_param_rsp|struct|struct pdu_data_llctrl_conn_param_rsp {
 DECL|pdu_data_llctrl_conn_update_ind|struct|struct pdu_data_llctrl_conn_update_ind {

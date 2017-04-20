@@ -20,7 +20,7 @@ DECL|radio_filter_configure|function|void radio_filter_configure(uint8_t bitmask
 DECL|radio_filter_disable|function|void radio_filter_disable(void)
 DECL|radio_filter_has_match|function|uint32_t radio_filter_has_match(void)
 DECL|radio_filter_status_reset|function|void radio_filter_status_reset(void)
-DECL|radio_freq_chnl_set|function|void radio_freq_chnl_set(uint32_t chnl)
+DECL|radio_freq_chan_set|function|void radio_freq_chan_set(uint32_t chan)
 DECL|radio_has_disabled|function|uint32_t radio_has_disabled(void)
 DECL|radio_is_done|function|uint32_t radio_is_done(void)
 DECL|radio_is_idle|function|uint32_t radio_is_idle(void)

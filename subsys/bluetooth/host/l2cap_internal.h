@@ -94,6 +94,7 @@ DECL|bt_l2cap_info_rsp|struct|struct bt_l2cap_info_rsp {
 DECL|bt_l2cap_le_conn_req|struct|struct bt_l2cap_le_conn_req {
 DECL|bt_l2cap_le_conn_rsp|struct|struct bt_l2cap_le_conn_rsp {
 DECL|bt_l2cap_le_credits|struct|struct bt_l2cap_le_credits {
+DECL|bt_l2cap_send|function|static inline void bt_l2cap_send(struct bt_conn *conn, uint16_t cid, struct net_buf *buf)
 DECL|bt_l2cap_sig_hdr|struct|struct bt_l2cap_sig_hdr {
 DECL|cid|member|uint16_t cid;
 DECL|cid|member|uint16_t cid;
