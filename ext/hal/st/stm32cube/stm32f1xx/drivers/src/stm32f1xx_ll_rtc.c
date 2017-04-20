@@ -1,0 +1,22 @@
+DECL|IS_LL_RTC_ASYNCH_PREDIV|macro|IS_LL_RTC_ASYNCH_PREDIV
+DECL|IS_LL_RTC_CALIB_OUTPUT|macro|IS_LL_RTC_CALIB_OUTPUT
+DECL|IS_LL_RTC_FORMAT|macro|IS_LL_RTC_FORMAT
+DECL|IS_LL_RTC_HOUR24|macro|IS_LL_RTC_HOUR24
+DECL|IS_LL_RTC_MINUTES|macro|IS_LL_RTC_MINUTES
+DECL|IS_LL_RTC_SECONDS|macro|IS_LL_RTC_SECONDS
+DECL|LL_RTC_ALARM_Init|function|ErrorStatus LL_RTC_ALARM_Init(RTC_TypeDef *RTCx, uint32_t RTC_Format, LL_RTC_AlarmTypeDef *RTC_AlarmStruct)
+DECL|LL_RTC_ALARM_SetCounter|function|ErrorStatus LL_RTC_ALARM_SetCounter(RTC_TypeDef *RTCx, uint32_t AlarmCounter)
+DECL|LL_RTC_ALARM_StructInit|function|void LL_RTC_ALARM_StructInit(LL_RTC_AlarmTypeDef *RTC_AlarmStruct)
+DECL|LL_RTC_DeInit|function|ErrorStatus LL_RTC_DeInit(RTC_TypeDef *RTCx)
+DECL|LL_RTC_EnterInitMode|function|ErrorStatus LL_RTC_EnterInitMode(RTC_TypeDef *RTCx)
+DECL|LL_RTC_ExitInitMode|function|ErrorStatus LL_RTC_ExitInitMode(RTC_TypeDef *RTCx)
+DECL|LL_RTC_Init|function|ErrorStatus LL_RTC_Init(RTC_TypeDef *RTCx, LL_RTC_InitTypeDef *RTC_InitStruct)
+DECL|LL_RTC_StructInit|function|void LL_RTC_StructInit(LL_RTC_InitTypeDef *RTC_InitStruct)
+DECL|LL_RTC_TIME_Init|function|ErrorStatus LL_RTC_TIME_Init(RTC_TypeDef *RTCx, uint32_t RTC_Format, LL_RTC_TimeTypeDef *RTC_TimeStruct)
+DECL|LL_RTC_TIME_SetCounter|function|ErrorStatus LL_RTC_TIME_SetCounter(RTC_TypeDef *RTCx, uint32_t TimeCounter)
+DECL|LL_RTC_TIME_StructInit|function|void LL_RTC_TIME_StructInit(LL_RTC_TimeTypeDef *RTC_TimeStruct)
+DECL|LL_RTC_WaitForSynchro|function|ErrorStatus LL_RTC_WaitForSynchro(RTC_TypeDef *RTCx)
+DECL|RTC_ASYNCH_PRESC_DEFAULT|macro|RTC_ASYNCH_PRESC_DEFAULT
+DECL|RTC_INITMODE_TIMEOUT|macro|RTC_INITMODE_TIMEOUT
+DECL|RTC_SYNCHRO_TIMEOUT|macro|RTC_SYNCHRO_TIMEOUT
+DECL|assert_param|macro|assert_param

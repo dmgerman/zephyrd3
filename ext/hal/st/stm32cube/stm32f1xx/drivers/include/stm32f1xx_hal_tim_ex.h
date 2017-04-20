@@ -15,4 +15,6 @@ DECL|OffStateRunMode|member|uint32_t OffStateRunMode; /*!< TIM off state in run 
 DECL|TIM_BreakDeadTimeConfigTypeDef|typedef|} TIM_BreakDeadTimeConfigTypeDef;
 DECL|TIM_HallSensor_InitTypeDef|typedef|} TIM_HallSensor_InitTypeDef;
 DECL|TIM_MasterConfigTypeDef|typedef|}TIM_MasterConfigTypeDef;
+DECL|__HAL_TIM_DISABLE_OCxPRELOAD|macro|__HAL_TIM_DISABLE_OCxPRELOAD
+DECL|__HAL_TIM_ENABLE_OCxPRELOAD|macro|__HAL_TIM_ENABLE_OCxPRELOAD
 DECL|__STM32F1xx_HAL_TIM_EX_H|macro|__STM32F1xx_HAL_TIM_EX_H

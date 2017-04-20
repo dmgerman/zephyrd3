@@ -6,7 +6,7 @@ DECL|HAL_FLASH_EndOfOperationCallback|function|__weak void HAL_FLASH_EndOfOperat
 DECL|HAL_FLASH_GetError|function|uint32_t HAL_FLASH_GetError(void)
 DECL|HAL_FLASH_IRQHandler|function|void HAL_FLASH_IRQHandler(void)
 DECL|HAL_FLASH_Lock|function|HAL_StatusTypeDef HAL_FLASH_Lock(void)
-DECL|HAL_FLASH_OB_Launch|function|HAL_StatusTypeDef HAL_FLASH_OB_Launch(void)
+DECL|HAL_FLASH_OB_Launch|function|void HAL_FLASH_OB_Launch(void)
 DECL|HAL_FLASH_OB_Lock|function|HAL_StatusTypeDef HAL_FLASH_OB_Lock(void)
 DECL|HAL_FLASH_OB_Unlock|function|HAL_StatusTypeDef HAL_FLASH_OB_Unlock(void)
 DECL|HAL_FLASH_OperationErrorCallback|function|__weak void HAL_FLASH_OperationErrorCallback(uint32_t ReturnValue)

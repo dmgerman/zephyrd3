@@ -4,11 +4,11 @@ DECL|AsynchPrediv|member|uint32_t AsynchPrediv; /*!< Specifies the RTC Asynchron
 DECL|DateToUpdate|member|RTC_DateTypeDef DateToUpdate; /*!< Current date set by user and updated automatically */
 DECL|Date|member|uint8_t Date; /*!< Specifies the RTC Date.
 DECL|HAL_RTCStateTypeDef|typedef|}HAL_RTCStateTypeDef;
-DECL|HAL_RTC_STATE_BUSY|enumerator|HAL_RTC_STATE_BUSY = 0x02, /*!< RTC process is ongoing */
-DECL|HAL_RTC_STATE_ERROR|enumerator|HAL_RTC_STATE_ERROR = 0x04 /*!< RTC error state */
-DECL|HAL_RTC_STATE_READY|enumerator|HAL_RTC_STATE_READY = 0x01, /*!< RTC initialized and ready for use */
-DECL|HAL_RTC_STATE_RESET|enumerator|HAL_RTC_STATE_RESET = 0x00, /*!< RTC not yet initialized or disabled */
-DECL|HAL_RTC_STATE_TIMEOUT|enumerator|HAL_RTC_STATE_TIMEOUT = 0x03, /*!< RTC timeout state */
+DECL|HAL_RTC_STATE_BUSY|enumerator|HAL_RTC_STATE_BUSY = 0x02U, /*!< RTC process is ongoing */
+DECL|HAL_RTC_STATE_ERROR|enumerator|HAL_RTC_STATE_ERROR = 0x04U /*!< RTC error state */
+DECL|HAL_RTC_STATE_READY|enumerator|HAL_RTC_STATE_READY = 0x01U, /*!< RTC initialized and ready for use */
+DECL|HAL_RTC_STATE_RESET|enumerator|HAL_RTC_STATE_RESET = 0x00U, /*!< RTC not yet initialized or disabled */
+DECL|HAL_RTC_STATE_TIMEOUT|enumerator|HAL_RTC_STATE_TIMEOUT = 0x03U, /*!< RTC timeout state */
 DECL|Hours|member|uint8_t Hours; /*!< Specifies the RTC Time Hour.
 DECL|IS_RTC_ALARM|macro|IS_RTC_ALARM
 DECL|IS_RTC_ASYNCH_PREDIV|macro|IS_RTC_ASYNCH_PREDIV
