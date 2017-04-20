@@ -21,4 +21,5 @@ DECL|snprintk|function|int snprintk(char *str, size_t size, const char *fmt, ...
 DECL|str_context|struct|struct str_context {
 DECL|str_out|function|static int str_out(int c, struct str_context *ctx)
 DECL|str|member|char *str;
+DECL|vprintk|function|int vprintk(const char *fmt, va_list ap)
 DECL|vsnprintk|function|int vsnprintk(char *str, size_t size, const char *fmt, va_list ap)
