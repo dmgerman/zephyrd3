@@ -24,12 +24,12 @@ DECL|SOC_GPIO_OPENDRAIN|macro|SOC_GPIO_OPENDRAIN
 DECL|SOC_GPIO_PULLDOWN|macro|SOC_GPIO_PULLDOWN
 DECL|SOC_GPIO_PULLUP|macro|SOC_GPIO_PULLUP
 DECL|_ATMEL_SAM_SOC_GPIO_H_|macro|_ATMEL_SAM_SOC_GPIO_H_
-DECL|flags|member|uint32_t flags; /** pin flags/attributes */
-DECL|mask|member|uint32_t mask; /** pin(s) bit mask */
-DECL|periph_id|member|uint8_t periph_id; /** peripheral ID of the PIO controller */
+DECL|flags|member|u32_t flags; /** pin flags/attributes */
+DECL|mask|member|u32_t mask; /** pin(s) bit mask */
+DECL|periph_id|member|u8_t periph_id; /** peripheral ID of the PIO controller */
 DECL|regs|member|Pio *regs; /** pointer to registers of the PIO controller */
 DECL|soc_gpio_clear|function|static inline void soc_gpio_clear(const struct soc_gpio_pin *pin)
-DECL|soc_gpio_debounce_length_set|function|static inline void soc_gpio_debounce_length_set(const struct soc_gpio_pin *pin,uint32_t div)
-DECL|soc_gpio_get|function|static inline uint32_t soc_gpio_get(const struct soc_gpio_pin *pin)
+DECL|soc_gpio_debounce_length_set|function|static inline void soc_gpio_debounce_length_set(const struct soc_gpio_pin *pin,u32_t div)
+DECL|soc_gpio_get|function|static inline u32_t soc_gpio_get(const struct soc_gpio_pin *pin)
 DECL|soc_gpio_pin|struct|struct soc_gpio_pin {
 DECL|soc_gpio_set|function|static inline void soc_gpio_set(const struct soc_gpio_pin *pin)

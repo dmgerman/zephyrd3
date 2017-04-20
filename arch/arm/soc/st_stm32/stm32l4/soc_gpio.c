@@ -16,23 +16,23 @@ DECL|STM32L4X_PUPDR_MASK|enumerator|STM32L4X_PUPDR_MASK = 0x3,
 DECL|STM32L4X_PUPDR_NO_PULL|enumerator|STM32L4X_PUPDR_NO_PULL = 0x0,
 DECL|STM32L4X_PUPDR_PULL_DOWN|enumerator|STM32L4X_PUPDR_PULL_DOWN = 0x2,
 DECL|STM32L4X_PUPDR_PULL_UP|enumerator|STM32L4X_PUPDR_PULL_UP = 0x1,
-DECL|afr|member|uint32_t afr[2];
-DECL|ascr|member|uint32_t ascr; /* Only present on STM32L4x1, STM32L4x5, STM32L4x6 */
-DECL|brr|member|uint32_t brr;
-DECL|bsrr|member|uint32_t bsrr;
-DECL|func_to_mode|function|static uint32_t func_to_mode(int conf, unsigned int afnum)
-DECL|func_to_otype|function|static uint32_t func_to_otype(int conf)
-DECL|func_to_pupd|function|static uint32_t func_to_pupd(int conf)
-DECL|idr|member|uint32_t idr;
-DECL|lckr|member|uint32_t lckr;
-DECL|moder|member|uint32_t moder;
-DECL|odr|member|uint32_t odr;
-DECL|ospeedr|member|uint32_t ospeedr;
-DECL|otyper|member|uint32_t otyper;
-DECL|pupdr|member|uint32_t pupdr;
-DECL|stm32_gpio_configure|function|int stm32_gpio_configure(uint32_t *base_addr, int pin, int pinconf, int afnum)
+DECL|afr|member|u32_t afr[2];
+DECL|ascr|member|u32_t ascr; /* Only present on STM32L4x1, STM32L4x5, STM32L4x6 */
+DECL|brr|member|u32_t brr;
+DECL|bsrr|member|u32_t bsrr;
+DECL|func_to_mode|function|static u32_t func_to_mode(int conf, unsigned int afnum)
+DECL|func_to_otype|function|static u32_t func_to_otype(int conf)
+DECL|func_to_pupd|function|static u32_t func_to_pupd(int conf)
+DECL|idr|member|u32_t idr;
+DECL|lckr|member|u32_t lckr;
+DECL|moder|member|u32_t moder;
+DECL|odr|member|u32_t odr;
+DECL|ospeedr|member|u32_t ospeedr;
+DECL|otyper|member|u32_t otyper;
+DECL|pupdr|member|u32_t pupdr;
+DECL|stm32_gpio_configure|function|int stm32_gpio_configure(u32_t *base_addr, int pin, int pinconf, int afnum)
 DECL|stm32_gpio_enable_int|function|int stm32_gpio_enable_int(int port, int pin)
 DECL|stm32_gpio_flags_to_conf|function|int stm32_gpio_flags_to_conf(int flags, int *pincfg)
-DECL|stm32_gpio_get|function|int stm32_gpio_get(uint32_t *base, int pin)
-DECL|stm32_gpio_set|function|int stm32_gpio_set(uint32_t *base, int pin, int value)
+DECL|stm32_gpio_get|function|int stm32_gpio_get(u32_t *base, int pin)
+DECL|stm32_gpio_set|function|int stm32_gpio_set(u32_t *base, int pin, int value)
 DECL|stm32l4x_gpio|struct|struct stm32l4x_gpio {

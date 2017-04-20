@@ -11,9 +11,9 @@ DECL|DC_CTRL_INVALID_FLUSH|macro|DC_CTRL_INVALID_FLUSH
 DECL|DC_CTRL_INVALID_ONLY|macro|DC_CTRL_INVALID_ONLY
 DECL|DC_CTRL_OP_SUCCEEDED|macro|DC_CTRL_OP_SUCCEEDED
 DECL|dcache_available|function|static int dcache_available(void)
-DECL|dcache_dc_ctrl|function|static void dcache_dc_ctrl(uint32_t dcache_en_mask)
+DECL|dcache_dc_ctrl|function|static void dcache_dc_ctrl(u32_t dcache_en_mask)
 DECL|dcache_enable|function|static void dcache_enable(void)
-DECL|dcache_flush_mlines|function|static void dcache_flush_mlines(uint32_t start_addr, uint32_t size)
+DECL|dcache_flush_mlines|function|static void dcache_flush_mlines(u32_t start_addr, u32_t size)
 DECL|init_dcache_line_size|function|static void init_dcache_line_size(void)
 DECL|init_dcache|function|static int init_dcache(struct device *unused)
 DECL|sys_cache_flush|function|void sys_cache_flush(vaddr_t start_addr, size_t size)
