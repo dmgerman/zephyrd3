@@ -42,7 +42,7 @@ DECL|resources|variable|resources
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|retransmit_work|variable|retransmit_work
 DECL|segments_path|variable|segments_path
-DECL|send_notification_packet|function|static int send_notification_packet(const struct sockaddr *addr, uint16_t age, socklen_t addrlen, uint16_t id, const uint8_t *token, uint8_t tkl, bool is_response)
+DECL|send_notification_packet|function|static int send_notification_packet(const struct sockaddr *addr, u16_t age, socklen_t addrlen, u16_t id, const u8_t *token, u8_t tkl, bool is_response)
 DECL|separate_get|function|static int separate_get(struct zoap_resource *resource,struct zoap_packet *request, const struct sockaddr *from)
 DECL|separate_path|variable|separate_path
 DECL|test_del|function|static int test_del(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)

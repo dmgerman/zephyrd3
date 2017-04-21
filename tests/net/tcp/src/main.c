@@ -27,8 +27,8 @@ DECL|in4addr_any|variable|in4addr_any
 DECL|in6addr_any|variable|in6addr_any
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
-DECL|local_port|member|uint16_t local_port;
-DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
+DECL|local_port|member|u16_t local_port;
+DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main|function|void main(void)
 DECL|my_v4_addr|variable|my_v4_addr
 DECL|my_v4_inaddr|variable|my_v4_inaddr
@@ -39,7 +39,7 @@ DECL|net_tcp_context_data_peer|variable|net_tcp_context_data_peer
 DECL|net_tcp_context_data|variable|net_tcp_context_data
 DECL|net_tcp_context|struct|struct net_tcp_context {
 DECL|net_tcp_dev_init|function|int net_tcp_dev_init(struct device *dev)
-DECL|net_tcp_get_mac|function|static uint8_t *net_tcp_get_mac(struct device *dev)
+DECL|net_tcp_get_mac|function|static u8_t *net_tcp_get_mac(struct device *dev)
 DECL|net_tcp_if_api_peer|variable|net_tcp_if_api_peer
 DECL|net_tcp_if_api|variable|net_tcp_if_api
 DECL|net_tcp_iface_init|function|static void net_tcp_iface_init(struct net_if *iface)
@@ -49,16 +49,16 @@ DECL|peer_v6_addr|variable|peer_v6_addr
 DECL|peer_v6_inaddr|variable|peer_v6_inaddr
 DECL|recv_lock|variable|recv_lock
 DECL|remote_addr|member|const struct sockaddr *remote_addr;
-DECL|remote_port|member|uint16_t remote_port;
+DECL|remote_port|member|u16_t remote_port;
 DECL|reply_v4_ctx|variable|reply_v4_ctx
 DECL|reply_v6_ctx|variable|reply_v6_ctx
 DECL|returned_ud|variable|returned_ud
-DECL|send_ipv4_tcp_msg|function|static bool send_ipv4_tcp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, uint16_t src_port, uint16_t dst_port,
-DECL|send_ipv6_tcp_msg|function|static bool send_ipv6_tcp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, uint16_t src_port, uint16_t dst_port,
+DECL|send_ipv4_tcp_msg|function|static bool send_ipv4_tcp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, u16_t src_port, u16_t dst_port,
+DECL|send_ipv6_tcp_msg|function|static bool send_ipv6_tcp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_status|variable|send_status
-DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr *raddr, struct sockaddr *laddr, uint16_t rport, uint16_t lport)
-DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, uint16_t remote_port, uint16_t local_port)
-DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, uint16_t remote_port, uint16_t local_port)
+DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr *raddr, struct sockaddr *laddr, u16_t rport, u16_t lport)
+DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, u16_t remote_port, u16_t local_port)
+DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|syn_v6_sent|variable|syn_v6_sent
 DECL|test_cleanup|function|static bool test_cleanup(void)
 DECL|test_create_v4_fin_packet|function|static bool test_create_v4_fin_packet(void)
@@ -84,9 +84,9 @@ DECL|tester_send|function|static int tester_send(struct net_if *iface, struct ne
 DECL|tests|variable|tests
 DECL|test|member|char *test;
 DECL|ud|struct|struct ud {
-DECL|v4_check_port_and_address|function|static bool v4_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in_addr *expected_dst_addr, uint16_t expected_dst_port)
+DECL|v4_check_port_and_address|function|static bool v4_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in_addr *expected_dst_addr, u16_t expected_dst_port)
 DECL|v4_ctx|variable|v4_ctx
-DECL|v6_check_port_and_address|function|static bool v6_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in6_addr *expected_dst_addr, uint16_t expected_dst_port)
+DECL|v6_check_port_and_address|function|static bool v6_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in6_addr *expected_dst_addr, u16_t expected_dst_port)
 DECL|v6_ctx|variable|v6_ctx
 DECL|v6_send_syn_ack|function|static void v6_send_syn_ack(struct net_if *iface, struct net_pkt *req)
 DECL|wait_connect|variable|wait_connect

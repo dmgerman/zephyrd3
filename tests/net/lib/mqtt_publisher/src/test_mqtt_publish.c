@@ -9,17 +9,17 @@ DECL|disconnect_data|member|void *disconnect_data;
 DECL|get_mqtt_payload|function|static char *get_mqtt_payload(enum mqtt_qos qos)
 DECL|get_mqtt_topic|function|static char *get_mqtt_topic(void)
 DECL|init_network|function|static int init_network(void)
-DECL|malformed_cb|function|static void malformed_cb(struct mqtt_ctx *mqtt_ctx, uint16_t pkt_type)
+DECL|malformed_cb|function|static void malformed_cb(struct mqtt_ctx *mqtt_ctx, u16_t pkt_type)
 DECL|mqtt_client_ctx|struct|struct mqtt_client_ctx {
 DECL|mqtt_ctx|member|struct mqtt_ctx mqtt_ctx;
 DECL|net_ctx|variable|net_ctx
-DECL|network_setup|function|static int network_setup(struct net_context **net_ctx, const char *local_addr,const char *server_addr, uint16_t server_port)
+DECL|network_setup|function|static int network_setup(struct net_context **net_ctx, const char *local_addr,const char *server_addr, u16_t server_port)
 DECL|payload|variable|payload
 DECL|prepare_mqtt_publish_msg|function|static void prepare_mqtt_publish_msg(struct mqtt_publish_msg *pub_msg,enum mqtt_qos qos)
 DECL|pub_msg|member|struct mqtt_publish_msg pub_msg;
-DECL|publish_cb|function|static int publish_cb(struct mqtt_ctx *mqtt_ctx, uint16_t pkt_id,enum mqtt_packet type)
+DECL|publish_cb|function|static int publish_cb(struct mqtt_ctx *mqtt_ctx, u16_t pkt_id,enum mqtt_packet type)
 DECL|publish_data|member|void *publish_data;
-DECL|set_addr|function|static int set_addr(struct sockaddr *sock_addr, const char *addr, uint16_t port)
+DECL|set_addr|function|static int set_addr(struct sockaddr *sock_addr, const char *addr, u16_t port)
 DECL|test_connect|function|static int test_connect(void)
 DECL|test_disconnect|function|static int test_disconnect(void)
 DECL|test_mqtt_connect|function|void test_mqtt_connect(void)

@@ -1,9 +1,9 @@
 DECL|GET_STAT|macro|GET_STAT
 DECL|__NET_STATS_H__|macro|__NET_STATS_H__
 DECL|net_print_statistics|macro|net_print_statistics
-DECL|net_stats_update_bytes_recv|function|static inline void net_stats_update_bytes_recv(uint32_t bytes)
+DECL|net_stats_update_bytes_recv|function|static inline void net_stats_update_bytes_recv(u32_t bytes)
 DECL|net_stats_update_bytes_recv|macro|net_stats_update_bytes_recv
-DECL|net_stats_update_bytes_sent|function|static inline void net_stats_update_bytes_sent(uint32_t bytes)
+DECL|net_stats_update_bytes_sent|function|static inline void net_stats_update_bytes_sent(u32_t bytes)
 DECL|net_stats_update_bytes_sent|macro|net_stats_update_bytes_sent
 DECL|net_stats_update_icmp_drop|function|static inline void net_stats_update_icmp_drop(void)
 DECL|net_stats_update_icmp_drop|macro|net_stats_update_icmp_drop

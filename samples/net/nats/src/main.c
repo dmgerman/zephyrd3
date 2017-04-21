@@ -17,7 +17,7 @@ DECL|NATS_PEER_IP_ADDR|macro|NATS_PEER_IP_ADDR
 DECL|NATS_PEER_IP_ADDR|macro|NATS_PEER_IP_ADDR
 DECL|NATS_SOCKADDR_IN|macro|NATS_SOCKADDR_IN
 DECL|NATS_SOCKADDR_IN|macro|NATS_SOCKADDR_IN
-DECL|connect|function|static int connect(struct nats *nats, uint16_t port)
+DECL|connect|function|static int connect(struct nats *nats, u16_t port)
 DECL|fake_led|variable|fake_led
 DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char *ip_addr, int port, struct sockaddr *_sockaddr)
 DECL|initialize_hardware|function|static void initialize_hardware(void)

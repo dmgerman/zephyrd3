@@ -8,4 +8,4 @@ DECL|CC2520_GPIO_IDX_VREG_EN|enumerator|CC2520_GPIO_IDX_VREG_EN = 0,
 DECL|cc2520_gpio_configuration|struct|struct cc2520_gpio_configuration {
 DECL|cc2520_gpio_index|enum|enum cc2520_gpio_index {
 DECL|dev|member|struct device *dev;
-DECL|pin|member|uint32_t pin;
+DECL|pin|member|u32_t pin;

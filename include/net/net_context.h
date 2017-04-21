@@ -16,8 +16,8 @@ DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
 DECL|conn_handler|member|struct net_conn_handle *conn_handler;
 DECL|connect_cb|member|net_context_connect_cb_t connect_cb;
 DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
-DECL|flags|member|uint8_t flags;
-DECL|iface|member|uint8_t iface;
+DECL|flags|member|u8_t flags;
+DECL|iface|member|u8_t iface;
 DECL|local|member|struct sockaddr_ptr local;
 DECL|net_context_cb_t|typedef|typedef void (*net_context_cb_t)(struct net_context *context, void *user_data);
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,

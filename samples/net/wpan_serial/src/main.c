@@ -7,8 +7,8 @@ DECL|STATE_GARBAGE|enumerator|STATE_GARBAGE,
 DECL|STATE_OK|enumerator|STATE_OK,
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_ieee_addr|function|static void get_ieee_addr(void)
-DECL|get_mac|function|static uint8_t *get_mac(struct device *dev)
-DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
+DECL|get_mac|function|static u8_t *get_mac(struct device *dev)
+DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
 DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
@@ -29,10 +29,10 @@ DECL|radio_api|variable|radio_api
 DECL|rx_queue|variable|rx_queue
 DECL|rx_stack|variable|rx_stack
 DECL|rx_thread|function|static void rx_thread(void)
-DECL|send_data|function|static void send_data(uint8_t *cfg, uint8_t *data, size_t len)
-DECL|send_pkt_report|function|static void send_pkt_report(uint8_t seq, uint8_t status, uint8_t num_tx)
-DECL|set_channel|function|static void set_channel(uint8_t chan)
-DECL|slip_buffer|function|static size_t slip_buffer(uint8_t *sbuf, struct net_buf *buf)
+DECL|send_data|function|static void send_data(u8_t *cfg, u8_t *data, size_t len)
+DECL|send_pkt_report|function|static void send_pkt_report(u8_t seq, u8_t status, u8_t num_tx)
+DECL|set_channel|function|static void set_channel(u8_t chan)
+DECL|slip_buffer|function|static size_t slip_buffer(u8_t *sbuf, struct net_buf *buf)
 DECL|slip_buf|variable|slip_buf
 DECL|slip_process_byte|function|static int slip_process_byte(unsigned char c)
 DECL|slip_state|enum|enum slip_state {

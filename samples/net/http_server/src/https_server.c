@@ -18,5 +18,5 @@ DECL|pers|variable|pers
 DECL|server_addr|variable|server_addr
 DECL|server_addr|variable|server_addr
 DECL|stack|variable|stack
-DECL|url_len|member|uint16_t url_len;
+DECL|url_len|member|u16_t url_len;
 DECL|url|member|const char *url;

@@ -67,8 +67,8 @@ DECL|block_size|member|enum zoap_block_size block_size;
 DECL|current|member|size_t current;
 DECL|del|member|zoap_method_t get, post, put, del;
 DECL|get|member|zoap_method_t get, post, put, del;
-DECL|id|member|uint16_t id;
-DECL|len|member|uint16_t len;
+DECL|id|member|u16_t id;
+DECL|len|member|u16_t len;
 DECL|list|member|sys_snode_t list;
 DECL|notify|member|zoap_notify_t notify;
 DECL|observers|member|sys_slist_t observers;
@@ -78,25 +78,25 @@ DECL|pkt|member|struct net_pkt *pkt;
 DECL|post|member|zoap_method_t get, post, put, del;
 DECL|put|member|zoap_method_t get, post, put, del;
 DECL|reply|member|zoap_reply_t reply;
-DECL|start|member|uint8_t *start; /* Start of the payload */
-DECL|timeout|member|int32_t timeout;
-DECL|tkl|member|uint8_t tkl;
-DECL|tkl|member|uint8_t tkl;
-DECL|token|member|uint8_t token[8];
-DECL|token|member|uint8_t token[8];
+DECL|start|member|u8_t *start; /* Start of the payload */
+DECL|timeout|member|s32_t timeout;
+DECL|tkl|member|u8_t tkl;
+DECL|tkl|member|u8_t tkl;
+DECL|token|member|u8_t token[8];
+DECL|token|member|u8_t token[8];
 DECL|total_size|member|size_t total_size;
-DECL|total_size|member|uint16_t total_size;
+DECL|total_size|member|u16_t total_size;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
-DECL|value|member|uint8_t *value;
+DECL|value|member|u8_t *value;
 DECL|zoap_block_context|struct|struct zoap_block_context {
-DECL|zoap_block_size_to_bytes|function|static inline uint16_t zoap_block_size_to_bytes(enum zoap_block_size block_size)
+DECL|zoap_block_size_to_bytes|function|static inline u16_t zoap_block_size_to_bytes(enum zoap_block_size block_size)
 DECL|zoap_block_size|enum|enum zoap_block_size {
 DECL|zoap_make_response_code|macro|zoap_make_response_code
 DECL|zoap_method_t|typedef|typedef int (*zoap_method_t)(struct zoap_resource *resource,
 DECL|zoap_method|enum|enum zoap_method {
 DECL|zoap_msgtype|enum|enum zoap_msgtype {
-DECL|zoap_next_id|function|static inline uint16_t zoap_next_id(void)
+DECL|zoap_next_id|function|static inline u16_t zoap_next_id(void)
 DECL|zoap_notify_t|typedef|typedef void (*zoap_notify_t)(struct zoap_resource *resource,
 DECL|zoap_observer|struct|struct zoap_observer {
 DECL|zoap_option_num|enum|enum zoap_option_num {

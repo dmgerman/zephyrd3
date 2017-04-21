@@ -57,7 +57,7 @@ DECL|shell_cmd_tcp|function|static int shell_cmd_tcp(int argc, char *argv[])
 DECL|slab_pool_found_already|function|static bool slab_pool_found_already(struct ctx_info *info, struct k_mem_slab *slab, struct net_buf_pool *pool)
 DECL|tcp_cb|function|static void tcp_cb(struct net_tcp *tcp, void *user_data)
 DECL|tcp_connected|function|static void tcp_connected(struct net_context *context, int status, void *user_data)
-DECL|tcp_connect|function|static int tcp_connect(char *host, uint16_t port, struct net_context **ctx)
+DECL|tcp_connect|function|static int tcp_connect(char *host, u16_t port, struct net_context **ctx)
 DECL|tcp_ctx|variable|tcp_ctx
 DECL|tcp_sent_cb|function|static void tcp_sent_cb(struct net_context *context,int status, void *token, void *user_data)
 DECL|tx_slabs|member|struct k_mem_slab *tx_slabs[CONFIG_NET_MAX_CONTEXTS];

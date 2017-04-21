@@ -20,7 +20,7 @@ DECL|connect6|variable|connect6
 DECL|connect7|variable|connect7
 DECL|disconnect1|variable|disconnect1
 DECL|elements|member|int elements;
-DECL|eval_buffers|function|int eval_buffers(uint8_t *buf, uint16_t buf_len, uint8_t *expected, uint16_t len)
+DECL|eval_buffers|function|int eval_buffers(u8_t *buf, u16_t buf_len, u8_t *expected, u16_t len)
 DECL|eval_fcn|member|int (*eval_fcn)(struct mqtt_test *);
 DECL|eval_msg_connect|function|static int eval_msg_connect(struct mqtt_test *mqtt_test)
 DECL|eval_msg_disconnect|function|static int eval_msg_disconnect(struct mqtt_test *mqtt_test)
@@ -35,8 +35,8 @@ DECL|eval_msg_pubrel|function|static int eval_msg_pubrel(struct mqtt_test *mqtt_
 DECL|eval_msg_suback|function|static int eval_msg_suback(struct mqtt_test *mqtt_test)
 DECL|eval_msg_subscribe|function|static int eval_msg_subscribe(struct mqtt_test *mqtt_test)
 DECL|eval_msg_unsuback|function|static int eval_msg_unsuback(struct mqtt_test *mqtt_test)
-DECL|expected_len|member|uint16_t expected_len;
-DECL|expected|member|uint8_t *expected;
+DECL|expected_len|member|u16_t expected_len;
+DECL|expected|member|u8_t *expected;
 DECL|items|member|int items;
 DECL|main|function|void main(void)
 DECL|mqtt_tests|variable|mqtt_tests
@@ -69,10 +69,10 @@ DECL|msg_unsuback1|variable|msg_unsuback1
 DECL|msg|member|void *msg;
 DECL|pingreq1|variable|pingreq1
 DECL|pingresp1|variable|pingresp1
-DECL|pkt_id|member|uint16_t pkt_id;
-DECL|pkt_id|member|uint16_t pkt_id;
-DECL|pkt_id|member|uint16_t pkt_id;
-DECL|print_array|function|static void print_array(uint8_t *a, uint16_t size)
+DECL|pkt_id|member|u16_t pkt_id;
+DECL|pkt_id|member|u16_t pkt_id;
+DECL|pkt_id|member|u16_t pkt_id;
+DECL|print_array|function|static void print_array(u8_t *a, u16_t size)
 DECL|puback1|variable|puback1
 DECL|pubcomp1|variable|pubcomp1
 DECL|publish1|variable|publish1

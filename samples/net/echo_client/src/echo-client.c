@@ -17,9 +17,9 @@ DECL|conf|variable|conf
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|data|struct|struct data {
-DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
-DECL|expecting_tcp|member|uint32_t expecting_tcp;
-DECL|expecting_udp|member|uint32_t expecting_udp;
+DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
+DECL|expecting_tcp|member|u32_t expecting_tcp;
+DECL|expecting_udp|member|u32_t expecting_udp;
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv4, struct net_context **udp_recv6, struct net_context **tcp_recv4, struct net_context **tcp_recv6)
 DECL|in4addr_my|variable|in4addr_my
 DECL|in4addr_peer|variable|in4addr_peer
@@ -40,7 +40,7 @@ DECL|my_addr6|variable|my_addr6
 DECL|peer_addr4|variable|peer_addr4
 DECL|peer_addr6|variable|peer_addr6
 DECL|prepare_send_pkt|function|static struct net_pkt *prepare_send_pkt(const char *name,struct net_context *context, int expecting_len)
-DECL|received_tcp|member|uint32_t received_tcp;
+DECL|received_tcp|member|u32_t received_tcp;
 DECL|recv_ipv4|member|struct k_sem recv_ipv4;
 DECL|recv_ipv6|member|struct k_sem recv_ipv6;
 DECL|send_tcp_data|function|static bool send_tcp_data(struct net_context *ctx, char *proto, struct data *data)

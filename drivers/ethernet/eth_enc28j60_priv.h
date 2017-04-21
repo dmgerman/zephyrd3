@@ -151,21 +151,21 @@ DECL|TSV_SIZE|macro|TSV_SIZE
 DECL|_ENC28J60_|macro|_ENC28J60_
 DECL|eth_enc28j60_config|struct|struct eth_enc28j60_config {
 DECL|eth_enc28j60_runtime|struct|struct eth_enc28j60_runtime {
-DECL|full_duplex|member|uint8_t full_duplex;
+DECL|full_duplex|member|u8_t full_duplex;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
-DECL|gpio_pin|member|uint8_t gpio_pin;
+DECL|gpio_pin|member|u8_t gpio_pin;
 DECL|gpio_port|member|const char *gpio_port;
 DECL|gpio|member|struct device *gpio;
 DECL|iface|member|struct net_if *iface;
 DECL|int_sem|member|struct k_sem int_sem;
-DECL|mem_buf|member|uint8_t mem_buf[MAX_BUFFER_LENGTH + 1];
-DECL|rx_rsv|member|uint8_t rx_rsv[RSV_SIZE];
-DECL|spi_freq|member|uint32_t spi_freq;
+DECL|mem_buf|member|u8_t mem_buf[MAX_BUFFER_LENGTH + 1];
+DECL|rx_rsv|member|u8_t rx_rsv[RSV_SIZE];
+DECL|spi_freq|member|u32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
 DECL|spi_sem|member|struct k_sem spi_sem;
-DECL|spi_slave|member|uint8_t spi_slave;
+DECL|spi_slave|member|u8_t spi_slave;
 DECL|spi|member|struct device *spi;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_ETH_ENC28J60_RX_THREAD_STACK_SIZE];
-DECL|timeout|member|int32_t timeout;
+DECL|timeout|member|s32_t timeout;
 DECL|tx_rx_sem|member|struct k_sem tx_rx_sem;
-DECL|tx_tsv|member|uint8_t tx_tsv[TSV_SIZE];
+DECL|tx_tsv|member|u8_t tx_tsv[TSV_SIZE];

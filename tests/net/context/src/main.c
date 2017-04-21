@@ -17,13 +17,13 @@ DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|in6addr_my|variable|in6addr_my
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
-DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
+DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main|function|void main(void)
 DECL|mcast_v6_ctx|variable|mcast_v6_ctx
 DECL|name|member|const char *name;
 DECL|net_context_data|variable|net_context_data
 DECL|net_context_dev_init|function|int net_context_dev_init(struct device *dev)
-DECL|net_context_get_mac|function|static uint8_t *net_context_get_mac(struct device *dev)
+DECL|net_context_get_mac|function|static u8_t *net_context_get_mac(struct device *dev)
 DECL|net_context_if_api|variable|net_context_if_api
 DECL|net_context_iface_init|function|static void net_context_iface_init(struct net_if *iface)
 DECL|net_context_test|struct|struct net_context_test {

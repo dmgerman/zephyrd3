@@ -6,22 +6,22 @@ DECL|NET_BUF_SIMPLE|macro|NET_BUF_SIMPLE
 DECL|__NET_BUF_H|macro|__NET_BUF_H
 DECL|__bufs|member|struct net_buf * const __bufs;
 DECL|__net_buf_align|macro|__net_buf_align
-DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
-DECL|__net_buf_align|member|uint8_t __buf[0] __net_buf_align;
+DECL|__net_buf_align|member|u8_t __buf[0] __net_buf_align;
+DECL|__net_buf_align|member|u8_t __buf[0] __net_buf_align;
 DECL|_unused|member|int _unused;
-DECL|avail_count|member|int16_t avail_count;
-DECL|buf_count|member|const uint16_t buf_count;
-DECL|buf_size|member|const uint16_t buf_size;
+DECL|avail_count|member|s16_t avail_count;
+DECL|buf_count|member|const u16_t buf_count;
+DECL|buf_size|member|const u16_t buf_size;
 DECL|b|member|struct net_buf_simple b;
-DECL|data|member|uint8_t *data;
-DECL|data|member|uint8_t *data;
+DECL|data|member|u8_t *data;
+DECL|data|member|u8_t *data;
 DECL|destroy|member|void (*const destroy)(struct net_buf *buf);
-DECL|flags|member|uint8_t flags;
+DECL|flags|member|u8_t flags;
 DECL|frags|member|struct net_buf *frags;
 DECL|free|member|struct k_lifo free;
-DECL|len|member|uint16_t len;
-DECL|len|member|uint16_t len;
-DECL|len|member|uint16_t len;
+DECL|len|member|u16_t len;
+DECL|len|member|u16_t len;
+DECL|len|member|u16_t len;
 DECL|name|member|const char *name;
 DECL|net_buf_add_be16|macro|net_buf_add_be16
 DECL|net_buf_add_be32|macro|net_buf_add_be32
@@ -51,18 +51,18 @@ DECL|net_buf_simple_init|function|static inline void net_buf_simple_init(struct 
 DECL|net_buf_simple_restore|function|static inline void net_buf_simple_restore(struct net_buf_simple *buf, struct net_buf_simple_state *state)
 DECL|net_buf_simple_save|function|static inline void net_buf_simple_save(struct net_buf_simple *buf, struct net_buf_simple_state *state)
 DECL|net_buf_simple_state|struct|struct net_buf_simple_state {
-DECL|net_buf_simple_tail|function|static inline uint8_t *net_buf_simple_tail(struct net_buf_simple *buf)
+DECL|net_buf_simple_tail|function|static inline u8_t *net_buf_simple_tail(struct net_buf_simple *buf)
 DECL|net_buf_simple|struct|struct net_buf_simple {
 DECL|net_buf_tailroom|macro|net_buf_tailroom
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
-DECL|offset|member|uint16_t offset;
-DECL|pool_size|member|const uint16_t pool_size;
+DECL|offset|member|u16_t offset;
+DECL|pool_size|member|const u16_t pool_size;
 DECL|pool|member|struct net_buf_pool *pool;
-DECL|ref|member|uint8_t ref;
-DECL|size|member|uint16_t size;
-DECL|size|member|uint16_t size;
-DECL|uninit_count|member|uint16_t uninit_count;
-DECL|user_data_size|member|const uint16_t user_data_size;
+DECL|ref|member|u8_t ref;
+DECL|size|member|u16_t size;
+DECL|size|member|u16_t size;
+DECL|uninit_count|member|u16_t uninit_count;
+DECL|user_data_size|member|const u16_t user_data_size;

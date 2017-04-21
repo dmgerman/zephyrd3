@@ -15,7 +15,7 @@ DECL|generic_addr|variable|generic_addr
 DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|ll_addr|variable|ll_addr
-DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
+DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main|function|void main(void)
 DECL|max_routes|variable|max_routes
 DECL|msg_sending|variable|msg_sending
@@ -26,7 +26,7 @@ DECL|net_ctx_create|function|static bool net_ctx_create(void)
 DECL|net_route_data_peer|variable|net_route_data_peer
 DECL|net_route_data|variable|net_route_data
 DECL|net_route_dev_init|function|int net_route_dev_init(struct device *dev)
-DECL|net_route_get_mac|function|static uint8_t *net_route_get_mac(struct device *dev)
+DECL|net_route_get_mac|function|static u8_t *net_route_get_mac(struct device *dev)
 DECL|net_route_if_api_peer|variable|net_route_if_api_peer
 DECL|net_route_if_api|variable|net_route_if_api
 DECL|net_route_iface_init|function|static void net_route_iface_init(struct net_if *iface)

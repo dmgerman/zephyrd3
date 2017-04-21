@@ -11,7 +11,7 @@ DECL|eth_0_iface_init|function|static void eth_0_iface_init(struct net_if *iface
 DECL|eth_0_init|function|static int eth_0_init(struct device *dev)
 DECL|eth_callback|function|static void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
 DECL|eth_context|struct|struct eth_context {
-DECL|eth_mcux_decode_duplex_and_speed|function|static void eth_mcux_decode_duplex_and_speed(uint32_t status, phy_duplex_t *p_phy_duplex, phy_speed_t *p_phy_speed)
+DECL|eth_mcux_decode_duplex_and_speed|function|static void eth_mcux_decode_duplex_and_speed(u32_t status, phy_duplex_t *p_phy_duplex, phy_speed_t *p_phy_speed)
 DECL|eth_mcux_delayed_phy_work|function|static void eth_mcux_delayed_phy_work(struct k_work *item)
 DECL|eth_mcux_error_isr|function|static void eth_mcux_error_isr(void *p)
 DECL|eth_mcux_phy_enter_reset|function|static void eth_mcux_phy_enter_reset(struct eth_context *context)
@@ -32,11 +32,11 @@ DECL|eth_mcux_rx_isr|function|static void eth_mcux_rx_isr(void *p)
 DECL|eth_mcux_tx_isr|function|static void eth_mcux_tx_isr(void *p)
 DECL|eth_rx|function|static void eth_rx(struct device *iface)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
-DECL|frame_buf|member|uint8_t frame_buf[1500];
-DECL|generate_mac|function|static void generate_mac(uint8_t *mac_addr)
+DECL|frame_buf|member|u8_t frame_buf[1500];
+DECL|generate_mac|function|static void generate_mac(u8_t *mac_addr)
 DECL|iface|member|struct net_if *iface;
 DECL|link_up|member|bool link_up;
-DECL|mac_addr|member|uint8_t mac_addr[6];
+DECL|mac_addr|member|u8_t mac_addr[6];
 DECL|phy_duplex|member|phy_duplex_t phy_duplex;
 DECL|phy_speed|member|phy_speed_t phy_speed;
 DECL|phy_state_name|function|static const char *phy_state_name(enum eth_mcux_phy_state state)

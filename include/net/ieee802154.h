@@ -66,49 +66,49 @@ DECL|_NET_IEEE802154_CODE|macro|_NET_IEEE802154_CODE
 DECL|_NET_IEEE802154_EVENT|macro|_NET_IEEE802154_EVENT
 DECL|_NET_IEEE802154_LAYER|macro|_NET_IEEE802154_LAYER
 DECL|__IEEE802154_H__|macro|__IEEE802154_H__
-DECL|_unused|member|uint8_t _unused : 3;
-DECL|_unused|member|uint8_t _unused : 3;
-DECL|_unused|member|uint8_t _unused : 5;
+DECL|_unused|member|u8_t _unused : 3;
+DECL|_unused|member|u8_t _unused : 3;
+DECL|_unused|member|u8_t _unused : 5;
 DECL|ack_lock|member|struct k_sem ack_lock;
-DECL|ack_received|member|uint8_t ack_received : 1;
-DECL|ack_requested|member|uint8_t ack_requested : 1;
-DECL|addr|member|uint8_t addr[IEEE802154_MAX_ADDR_LENGTH];
-DECL|associated|member|uint8_t associated : 1;
-DECL|channel_set|member|uint32_t channel_set;
-DECL|channel|member|uint16_t channel;
-DECL|channel|member|uint16_t channel;
-DECL|coord_addr_len|member|uint8_t coord_addr_len;
+DECL|ack_received|member|u8_t ack_received : 1;
+DECL|ack_requested|member|u8_t ack_requested : 1;
+DECL|addr|member|u8_t addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|associated|member|u8_t associated : 1;
+DECL|channel_set|member|u32_t channel_set;
+DECL|channel|member|u16_t channel;
+DECL|channel|member|u16_t channel;
+DECL|coord_addr_len|member|u8_t coord_addr_len;
 DECL|coord|member|} coord;
 DECL|dec|member|struct cipher_ctx dec;
-DECL|duration|member|uint32_t duration;
+DECL|duration|member|u32_t duration;
 DECL|enc|member|struct cipher_ctx enc;
-DECL|ext_addr|member|uint8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
-DECL|ext_addr|member|uint8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
-DECL|frame_counter|member|uint32_t frame_counter;
+DECL|ext_addr|member|u8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|ext_addr|member|u8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|frame_counter|member|u32_t frame_counter;
 DECL|ieee802154_context|struct|struct ieee802154_context {
 DECL|ieee802154_req_params|struct|struct ieee802154_req_params {
 DECL|ieee802154_security_ctx|struct|struct ieee802154_security_ctx {
 DECL|ieee802154_security_params|struct|struct ieee802154_security_params {
-DECL|key_len|member|uint8_t key_len;
-DECL|key_len|member|uint8_t key_len;
-DECL|key_mode|member|uint8_t key_mode : 2;
-DECL|key_mode|member|uint8_t key_mode : 2;
-DECL|key|member|uint8_t key[16];
-DECL|key|member|uint8_t key[16];
-DECL|len|member|uint8_t len;
-DECL|level|member|uint8_t level : 3;
-DECL|level|member|uint8_t level : 3;
-DECL|lqi|member|uint8_t lqi;
+DECL|key_len|member|u8_t key_len;
+DECL|key_len|member|u8_t key_len;
+DECL|key_mode|member|u8_t key_mode : 2;
+DECL|key_mode|member|u8_t key_mode : 2;
+DECL|key|member|u8_t key[16];
+DECL|key|member|u8_t key[16];
+DECL|len|member|u8_t len;
+DECL|level|member|u8_t level : 3;
+DECL|level|member|u8_t level : 3;
+DECL|lqi|member|u8_t lqi;
 DECL|net_event_ieee802154_cmd|enum|enum net_event_ieee802154_cmd {
 DECL|net_request_ieee802154_cmd|enum|enum net_request_ieee802154_cmd {
-DECL|pan_id|member|uint16_t pan_id;
-DECL|pan_id|member|uint16_t pan_id;
+DECL|pan_id|member|u16_t pan_id;
+DECL|pan_id|member|u16_t pan_id;
 DECL|req_lock|member|struct k_sem req_lock;
 DECL|res_lock|member|struct k_sem res_lock;
 DECL|scan_ctx|member|struct ieee802154_req_params *scan_ctx;
 DECL|sec_ctx|member|struct ieee802154_security_ctx sec_ctx;
-DECL|sequence|member|uint8_t sequence;
-DECL|short_addr|member|uint16_t short_addr;
-DECL|short_addr|member|uint16_t short_addr;
-DECL|short_addr|member|uint16_t short_addr;
-DECL|tx_power|member|int16_t tx_power;
+DECL|sequence|member|u8_t sequence;
+DECL|short_addr|member|u16_t short_addr;
+DECL|short_addr|member|u16_t short_addr;
+DECL|short_addr|member|u16_t short_addr;
+DECL|tx_power|member|s16_t tx_power;

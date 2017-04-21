@@ -24,16 +24,16 @@ DECL|_DNS_RESOLVE_H|macro|_DNS_RESOLVE_H
 DECL|ai_addrlen|member|socklen_t ai_addrlen;
 DECL|ai_addr|member|struct sockaddr ai_addr;
 DECL|ai_canonname|member|char ai_canonname[DNS_MAX_NAME_SIZE + 1];
-DECL|ai_family|member|uint8_t ai_family;
-DECL|ai_flags|member|uint16_t ai_flags;
-DECL|ai_protocol|member|uint8_t ai_protocol;
-DECL|ai_socktype|member|uint8_t ai_socktype;
-DECL|buf_timeout|member|int32_t buf_timeout;
+DECL|ai_family|member|u8_t ai_family;
+DECL|ai_flags|member|u16_t ai_flags;
+DECL|ai_protocol|member|u8_t ai_protocol;
+DECL|ai_socktype|member|u8_t ai_socktype;
+DECL|buf_timeout|member|s32_t buf_timeout;
 DECL|cb|member|dns_resolve_cb_t cb;
 DECL|ctx|member|struct dns_resolve_context *ctx;
 DECL|dns_addrinfo|struct|struct dns_addrinfo {
-DECL|dns_cancel_addr_info|function|static inline int dns_cancel_addr_info(uint16_t dns_id)
-DECL|dns_get_addr_info|function|static inline int dns_get_addr_info(const char *query, enum dns_query_type type, uint16_t *dns_id, dns_resolve_cb_t cb, void *user_data,
+DECL|dns_cancel_addr_info|function|static inline int dns_cancel_addr_info(u16_t dns_id)
+DECL|dns_get_addr_info|function|static inline int dns_get_addr_info(const char *query, enum dns_query_type type, u16_t *dns_id, dns_resolve_cb_t cb, void *user_data,
 DECL|dns_init_resolver|macro|dns_init_resolver
 DECL|dns_pending_query|struct|struct dns_pending_query {
 DECL|dns_query_type|enum|enum dns_query_type {
@@ -41,13 +41,13 @@ DECL|dns_resolve_cb_t|typedef|typedef void (*dns_resolve_cb_t)(enum dns_resolve_
 DECL|dns_resolve_context|struct|struct dns_resolve_context {
 DECL|dns_resolve_status|enum|enum dns_resolve_status {
 DECL|dns_server|member|struct sockaddr dns_server;
-DECL|id|member|uint16_t id;
+DECL|id|member|u16_t id;
 DECL|is_used|member|bool is_used;
 DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|queries|member|} queries[CONFIG_DNS_NUM_CONCUR_QUERIES];
 DECL|query_type|member|enum dns_query_type query_type;
 DECL|query|member|const char *query;
 DECL|servers|member|} servers[CONFIG_DNS_RESOLVER_MAX_SERVERS];
-DECL|timeout|member|int32_t timeout;
+DECL|timeout|member|s32_t timeout;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|user_data|member|void *user_data;

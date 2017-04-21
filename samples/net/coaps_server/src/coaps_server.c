@@ -7,12 +7,12 @@ DECL|curr_ctx|variable|curr_ctx
 DECL|dtls_server|function|void dtls_server(void)
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|int dtls_timing_get_delay(void *data)
-DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
+DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, u32_t int_ms, u32_t fin_ms)
 DECL|entropy_source|function|static int entropy_source(void *data, unsigned char *output, size_t len, size_t *olen)
-DECL|fin_ms|member|uint32_t fin_ms;
+DECL|fin_ms|member|u32_t fin_ms;
 DECL|heap|variable|heap
 DECL|init_app|function|static inline int init_app(void)
-DECL|int_ms|member|uint32_t int_ms;
+DECL|int_ms|member|u32_t int_ms;
 DECL|main|function|void main(void)
 DECL|mbedtls_time_t|macro|mbedtls_time_t
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)
@@ -24,8 +24,8 @@ DECL|query_get|function|static int query_get(struct zoap_resource *resource, str
 DECL|query_path|variable|query_path
 DECL|resources|variable|resources
 DECL|segments_path|variable|segments_path
-DECL|send_response|function|static int send_response(struct zoap_packet *request, uint8_t response_code)
-DECL|snapshot|member|uint32_t snapshot;
+DECL|send_response|function|static int send_response(struct zoap_packet *request, u8_t response_code)
+DECL|snapshot|member|u32_t snapshot;
 DECL|stack|variable|stack
 DECL|test_del|function|static int test_del(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|test_path|variable|test_path

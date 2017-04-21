@@ -44,25 +44,25 @@ DECL|MAIN_QUEUE_TX_DESC_COUNT|macro|MAIN_QUEUE_TX_DESC_COUNT
 DECL|PRIORITY_QUEUE_DESC_COUNT|macro|PRIORITY_QUEUE_DESC_COUNT
 DECL|_ETH_SAM_GMAC_PRIV_H_|macro|_ETH_SAM_GMAC_PRIV_H_
 DECL|buf|member|struct gmac_desc *buf;
-DECL|buf|member|uint32_t *buf;
+DECL|buf|member|u32_t *buf;
 DECL|config_func|member|void (*config_func)(void);
-DECL|err_rx_flushed_count|member|volatile uint32_t err_rx_flushed_count;
-DECL|err_rx_frames_dropped|member|volatile uint32_t err_rx_frames_dropped;
-DECL|err_tx_flushed_count|member|volatile uint32_t err_tx_flushed_count;
+DECL|err_rx_flushed_count|member|volatile u32_t err_rx_flushed_count;
+DECL|err_rx_frames_dropped|member|volatile u32_t err_rx_frames_dropped;
+DECL|err_tx_flushed_count|member|volatile u32_t err_tx_flushed_count;
 DECL|eth_sam_dev_cfg|struct|struct eth_sam_dev_cfg {
 DECL|eth_sam_dev_data|struct|struct eth_sam_dev_data {
 DECL|gmac_desc_list|struct|struct gmac_desc_list {
 DECL|gmac_desc|struct|struct gmac_desc {
 DECL|gmac_queue|struct|struct gmac_queue {
-DECL|head|member|uint16_t head;
-DECL|head|member|uint16_t head;
+DECL|head|member|u16_t head;
+DECL|head|member|u16_t head;
 DECL|iface|member|struct net_if *iface;
-DECL|len|member|uint16_t len;
-DECL|len|member|uint16_t len;
-DECL|mac_addr|member|uint8_t mac_addr[6];
-DECL|periph_id|member|uint32_t periph_id;
+DECL|len|member|u16_t len;
+DECL|len|member|u16_t len;
+DECL|mac_addr|member|u8_t mac_addr[6];
+DECL|periph_id|member|u32_t periph_id;
 DECL|phy|member|struct phy_sam_gmac_dev phy;
-DECL|pin_list_size|member|uint32_t pin_list_size;
+DECL|pin_list_size|member|u32_t pin_list_size;
 DECL|pin_list|member|const struct soc_gpio_pin *pin_list;
 DECL|que_idx|member|enum queue_idx que_idx;
 DECL|queue_idx|enum|enum queue_idx {
@@ -71,10 +71,10 @@ DECL|regs|member|Gmac *regs;
 DECL|ring_buf|struct|struct ring_buf {
 DECL|rx_desc_list|member|struct gmac_desc_list rx_desc_list;
 DECL|rx_pkt_list|member|struct ring_buf rx_pkt_list;
-DECL|tail|member|uint16_t tail;
-DECL|tail|member|uint16_t tail;
+DECL|tail|member|u16_t tail;
+DECL|tail|member|u16_t tail;
 DECL|tx_desc_list|member|struct gmac_desc_list tx_desc_list;
 DECL|tx_desc_sem|member|struct k_sem tx_desc_sem;
 DECL|tx_frames|member|struct ring_buf tx_frames;
-DECL|w0|member|uint32_t w0;
-DECL|w1|member|uint32_t w1;
+DECL|w0|member|u32_t w0;
+DECL|w1|member|u32_t w1;

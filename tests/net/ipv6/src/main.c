@@ -12,7 +12,7 @@ DECL|icmpv6_ns_no_sllao|variable|icmpv6_ns_no_sllao
 DECL|icmpv6_ra|variable|icmpv6_ra
 DECL|ipv6_hbho|variable|ipv6_hbho
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
-DECL|mac_addr|member|uint8_t mac_addr[sizeof(struct net_eth_addr)];
+DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main|function|void main(void)
 DECL|mcast_addr|variable|mcast_addr
 DECL|my_addr|variable|my_addr
@@ -21,7 +21,7 @@ DECL|net_test_change_ll_addr|function|static bool net_test_change_ll_addr(void)
 DECL|net_test_cmp_prefix|function|static bool net_test_cmp_prefix(void)
 DECL|net_test_data|variable|net_test_data
 DECL|net_test_dev_init|function|int net_test_dev_init(struct device *dev)
-DECL|net_test_get_mac|function|static uint8_t *net_test_get_mac(struct device *dev)
+DECL|net_test_get_mac|function|static u8_t *net_test_get_mac(struct device *dev)
 DECL|net_test_hbho_message|function|static bool net_test_hbho_message(void)
 DECL|net_test_if_api|variable|net_test_if_api
 DECL|net_test_iface_init|function|static void net_test_iface_init(struct net_if *iface)

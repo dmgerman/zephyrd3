@@ -2,7 +2,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(struct net_nbr *start, int idx)
 DECL|net_nbr_clear_table|function|void net_nbr_clear_table(struct net_nbr_table *table)
-DECL|net_nbr_get_lladdr|function|struct net_linkaddr_storage *net_nbr_get_lladdr(uint8_t idx)
+DECL|net_nbr_get_lladdr|function|struct net_linkaddr_storage *net_nbr_get_lladdr(u8_t idx)
 DECL|net_nbr_get|function|struct net_nbr *net_nbr_get(struct net_nbr_table *table)
 DECL|net_nbr_link|function|int net_nbr_link(struct net_nbr *nbr, struct net_if *iface, struct net_linkaddr *lladdr)
 DECL|net_nbr_lookup|function|struct net_nbr *net_nbr_lookup(struct net_nbr_table *table, struct net_if *iface, struct net_linkaddr *lladdr)

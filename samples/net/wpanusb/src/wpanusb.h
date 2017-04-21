@@ -17,13 +17,13 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|channel|member|uint8_t channel;
-DECL|ieee_addr|member|uint64_t ieee_addr;
-DECL|page|member|uint8_t page;
-DECL|pan_id|member|uint16_t pan_id;
+DECL|channel|member|u8_t channel;
+DECL|ieee_addr|member|u64_t ieee_addr;
+DECL|page|member|u8_t page;
+DECL|pan_id|member|u16_t pan_id;
 DECL|set_channel|struct|struct set_channel {
 DECL|set_ieee_addr|struct|struct set_ieee_addr {
 DECL|set_pan_id|struct|struct set_pan_id {
 DECL|set_short_addr|struct|struct set_short_addr {
-DECL|short_addr|member|uint16_t short_addr;
+DECL|short_addr|member|u16_t short_addr;
 DECL|wpanusb_requests|enum|enum wpanusb_requests {

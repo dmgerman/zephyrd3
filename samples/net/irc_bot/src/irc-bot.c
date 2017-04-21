@@ -40,8 +40,8 @@ DECL|fake_led|variable|fake_led
 DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char *ip_addr, int port, struct sockaddr *_sockaddr)
 DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|initialize_network|function|initialize_network(struct zirc *irc)
-DECL|ipv4_addr_add_handler|function|static void ipv4_addr_add_handler(struct net_mgmt_event_callback *cb, uint32_t mgmt_event, struct net_if *iface)
-DECL|ipv6_dad_ok_handler|function|static void ipv6_dad_ok_handler(struct net_mgmt_event_callback *cb,uint32_t mgmt_event, struct net_if *iface)
+DECL|ipv4_addr_add_handler|function|static void ipv4_addr_add_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
+DECL|ipv6_dad_ok_handler|function|static void ipv6_dad_ok_handler(struct net_mgmt_event_callback *cb,u32_t mgmt_event, struct net_if *iface)
 DECL|irc_bot|function|static void irc_bot(void)
 DECL|irc|member|struct zirc *irc;
 DECL|laddr|variable|laddr

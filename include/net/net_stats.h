@@ -51,11 +51,11 @@ DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
 DECL|drop|member|net_stats_t drop;
-DECL|forward_errors|member|uint16_t forward_errors;
+DECL|forward_errors|member|u16_t forward_errors;
 DECL|forwarded|member|net_stats_t forwarded;
 DECL|forwarded|member|net_stats_t forwarded;
 DECL|fragerr|member|net_stats_t fragerr;
-DECL|global_repairs|member|uint16_t global_repairs;
+DECL|global_repairs|member|u16_t global_repairs;
 DECL|hblenerr|member|net_stats_t hblenerr;
 DECL|icmp|member|struct net_stats_icmp icmp;
 DECL|interval|member|net_stats_t interval;
@@ -65,11 +65,11 @@ DECL|ipv6_mld|member|struct net_stats_ipv6_mld ipv6_mld;
 DECL|ipv6_nd|member|struct net_stats_ipv6_nd ipv6_nd;
 DECL|ipv6|member|struct net_stats_ip ipv6;
 DECL|lblenerr|member|net_stats_t lblenerr;
-DECL|local_repairs|member|uint16_t local_repairs;
-DECL|loop_errors|member|uint16_t loop_errors;
-DECL|loop_warnings|member|uint16_t loop_warnings;
-DECL|malformed_msgs|member|uint16_t malformed_msgs;
-DECL|mem_overflows|member|uint16_t mem_overflows;
+DECL|local_repairs|member|u16_t local_repairs;
+DECL|loop_errors|member|u16_t loop_errors;
+DECL|loop_warnings|member|u16_t loop_warnings;
+DECL|malformed_msgs|member|u16_t malformed_msgs;
+DECL|mem_overflows|member|u16_t mem_overflows;
 DECL|net_request_stats_cmd|enum|enum net_request_stats_cmd {
 DECL|net_stats_bytes|struct|struct net_stats_bytes {
 DECL|net_stats_icmp|struct|struct net_stats_icmp {
@@ -83,13 +83,13 @@ DECL|net_stats_rpl_dio|struct|struct net_stats_rpl_dio {
 DECL|net_stats_rpl_dis|struct|struct net_stats_rpl_dis {
 DECL|net_stats_rpl|struct|struct net_stats_rpl {
 DECL|net_stats_tcp|struct|struct net_stats_tcp {
-DECL|net_stats_t|typedef|typedef uint32_t net_stats_t;
+DECL|net_stats_t|typedef|typedef u32_t net_stats_t;
 DECL|net_stats_udp|struct|struct net_stats_udp {
 DECL|net_stats|struct|struct net_stats {
-DECL|parent_switch|member|uint16_t parent_switch;
+DECL|parent_switch|member|u16_t parent_switch;
 DECL|processing_error|member|net_stats_t processing_error;
 DECL|protoerr|member|net_stats_t protoerr;
-DECL|received|member|uint32_t received;
+DECL|received|member|u32_t received;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
@@ -100,9 +100,9 @@ DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
-DECL|resets|member|uint16_t resets;
+DECL|resets|member|u16_t resets;
 DECL|rexmit|member|net_stats_t rexmit;
-DECL|root_repairs|member|uint16_t root_repairs;
+DECL|root_repairs|member|u16_t root_repairs;
 DECL|rpl|member|struct net_stats_rpl rpl;
 DECL|rst|member|net_stats_t rst;
 DECL|sent|member|net_stats_t sent;
@@ -115,7 +115,7 @@ DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
-DECL|sent|member|uint32_t sent;
+DECL|sent|member|u32_t sent;
 DECL|syndrop|member|net_stats_t syndrop;
 DECL|synrst|member|net_stats_t synrst;
 DECL|tcp|member|struct net_stats_tcp tcp;

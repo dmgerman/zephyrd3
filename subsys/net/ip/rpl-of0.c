@@ -6,11 +6,11 @@ DECL|net_rpl_of0_best_dag|function|static struct net_rpl_dag *net_rpl_of0_best_d
 DECL|net_rpl_of0_best_dag|variable|net_rpl_of0_best_dag
 DECL|net_rpl_of0_best_parent|function|net_rpl_of0_best_parent(struct net_if *iface,struct net_rpl_parent *parent1, struct net_rpl_parent *parent2)
 DECL|net_rpl_of0_best_parent|variable|net_rpl_of0_best_parent
-DECL|net_rpl_of0_calc_rank|function|static uint16_t net_rpl_of0_calc_rank(struct net_rpl_parent *parent, uint16_t base_rank)
+DECL|net_rpl_of0_calc_rank|function|static u16_t net_rpl_of0_calc_rank(struct net_rpl_parent *parent, u16_t base_rank)
 DECL|net_rpl_of0_calc_rank|variable|net_rpl_of0_calc_rank
-DECL|net_rpl_of0_find|function|static bool net_rpl_of0_find(uint16_t ocp)
+DECL|net_rpl_of0_find|function|static bool net_rpl_of0_find(u16_t ocp)
 DECL|net_rpl_of0_find|variable|net_rpl_of0_find
-DECL|net_rpl_of0_get|function|static uint16_t net_rpl_of0_get(void)
+DECL|net_rpl_of0_get|function|static u16_t net_rpl_of0_get(void)
 DECL|net_rpl_of0_get|variable|net_rpl_of0_get
 DECL|net_rpl_of0_neighbor_link_cb|function|int net_rpl_of0_neighbor_link_cb(struct net_if *iface, struct net_rpl_parent *parent, int status, int numtx)
 DECL|net_rpl_of0_neighbor_link_cb|variable|net_rpl_of0_neighbor_link_cb

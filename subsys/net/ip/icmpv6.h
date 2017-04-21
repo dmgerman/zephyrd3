@@ -53,21 +53,21 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|code|member|uint8_t code;
-DECL|context_len|member|uint8_t context_len;
-DECL|cur_hop_limit|member|uint8_t cur_hop_limit;
-DECL|flags|member|uint8_t flags;
-DECL|flags|member|uint8_t flags;
-DECL|flags|member|uint8_t flags;
-DECL|flag|member|uint8_t flag; /*res:3,c:1,cid:4 */
+DECL|code|member|u8_t code;
+DECL|context_len|member|u8_t context_len;
+DECL|cur_hop_limit|member|u8_t cur_hop_limit;
+DECL|flags|member|u8_t flags;
+DECL|flags|member|u8_t flags;
+DECL|flags|member|u8_t flags;
+DECL|flag|member|u8_t flag; /*res:3,c:1,cid:4 */
 DECL|handler|member|icmpv6_callback_handler_t handler;
 DECL|icmpv6_callback_handler_t|typedef|typedef enum net_verdict (*icmpv6_callback_handler_t)(struct net_pkt *pkt);
-DECL|len|member|uint8_t len;
-DECL|len|member|uint8_t len;
-DECL|len|member|uint8_t len;
-DECL|len|member|uint8_t len;
-DECL|lifetime|member|uint16_t lifetime;
-DECL|mtu|member|uint32_t mtu;
+DECL|len|member|u8_t len;
+DECL|len|member|u8_t len;
+DECL|len|member|u8_t len;
+DECL|len|member|u8_t len;
+DECL|lifetime|member|u16_t lifetime;
+DECL|mtu|member|u32_t mtu;
 DECL|net_icmpv6_handler|struct|struct net_icmpv6_handler {
 DECL|net_icmpv6_init|macro|net_icmpv6_init
 DECL|net_icmpv6_na_hdr|struct|struct net_icmpv6_na_hdr {
@@ -79,24 +79,24 @@ DECL|net_icmpv6_ns_hdr|struct|struct net_icmpv6_ns_hdr {
 DECL|net_icmpv6_ra_hdr|struct|struct net_icmpv6_ra_hdr {
 DECL|net_icmpv6_rs_hdr|struct|struct net_icmpv6_rs_hdr {
 DECL|node|member|sys_snode_t node;
-DECL|preferred_lifetime|member|uint32_t preferred_lifetime;
-DECL|prefix_len|member|uint8_t prefix_len;
+DECL|preferred_lifetime|member|u32_t preferred_lifetime;
+DECL|prefix_len|member|u8_t prefix_len;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct in6_addr prefix;
-DECL|reachable_time|member|uint32_t reachable_time;
-DECL|reserved|member|uint16_t reserved;
-DECL|reserved|member|uint16_t reserved;
-DECL|reserved|member|uint32_t reserved;
-DECL|reserved|member|uint32_t reserved;
-DECL|reserved|member|uint32_t reserved;
-DECL|reserved|member|uint8_t reserved[3];
-DECL|retrans_timer|member|uint32_t retrans_timer;
-DECL|router_lifetime|member|uint16_t router_lifetime;
+DECL|reachable_time|member|u32_t reachable_time;
+DECL|reserved|member|u16_t reserved;
+DECL|reserved|member|u16_t reserved;
+DECL|reserved|member|u32_t reserved;
+DECL|reserved|member|u32_t reserved;
+DECL|reserved|member|u32_t reserved;
+DECL|reserved|member|u8_t reserved[3];
+DECL|retrans_timer|member|u32_t retrans_timer;
+DECL|router_lifetime|member|u16_t router_lifetime;
 DECL|tgt|member|struct in6_addr tgt;
 DECL|tgt|member|struct in6_addr tgt;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|type|member|uint8_t type;
-DECL|valid_lifetime|member|uint32_t valid_lifetime;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;
+DECL|type|member|u8_t type;
+DECL|valid_lifetime|member|u32_t valid_lifetime;
