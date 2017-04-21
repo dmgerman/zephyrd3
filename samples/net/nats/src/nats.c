@@ -7,7 +7,7 @@ DECL|TRANSMITV_LITERAL|macro|TRANSMITV_LITERAL
 DECL|auth_required|member|bool auth_required;
 DECL|base|member|const void *base;
 DECL|char_in_set|function|static bool char_in_set(char chr, const char *set)
-DECL|copy_nbuf_to_buf|function|static int copy_nbuf_to_buf(struct net_buf *src, uint16_t offset, char *dst, size_t dst_size, size_t n_bytes)
+DECL|copy_pkt_to_buf|function|static int copy_pkt_to_buf(struct net_buf *src, uint16_t offset, char *dst, size_t dst_size, size_t n_bytes)
 DECL|go|member|const char *go;
 DECL|handle_server_cmd|function|static int handle_server_cmd(struct nats *nats, char *cmd, size_t len, struct net_buf *buf, uint16_t offset)
 DECL|handle_server_info|function|static int handle_server_info(struct nats *nats, char *payload, size_t len, struct net_buf *buf, uint16_t offset)
@@ -27,7 +27,7 @@ DECL|nats_publish|function|int nats_publish(const struct nats *nats, const char 
 DECL|nats_subscribe|function|int nats_subscribe(const struct nats *nats, const char *subject, size_t subject_len, const char *queue_group, size_t queue_group_len, const char *sid, size_t sid_len)
 DECL|nats_unsubscribe|function|int nats_unsubscribe(const struct nats *nats, const char *sid, size_t sid_len, size_t max_msgs)
 DECL|port|member|uint16_t port;
-DECL|receive_cb|function|static void receive_cb(struct net_context *ctx, struct net_buf *buf, int status, void *user_data)
+DECL|receive_cb|function|static void receive_cb(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|server_id|member|const char *server_id;
 DECL|ssl_required|member|bool ssl_required;
 DECL|strsep|function|static char *strsep(char *strp, const char *delims)

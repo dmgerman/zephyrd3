@@ -4,8 +4,8 @@ DECL|SIZE_OF_LARGE_DATA|macro|SIZE_OF_LARGE_DATA
 DECL|SIZE_OF_SMALL_DATA|macro|SIZE_OF_SMALL_DATA
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|__packed|variable|__packed
-DECL|compare_data|function|static bool compare_data(struct net_buf *buf, struct net_6lo_data *data)
-DECL|create_buf|function|static struct net_buf *create_buf(struct net_6lo_data *data)
+DECL|compare_data|function|static bool compare_data(struct net_pkt *pkt, struct net_6lo_data *data)
+DECL|create_pkt|function|static struct net_pkt *create_pkt(struct net_6lo_data *data)
 DECL|ctx1_prefix|macro|ctx1_prefix
 DECL|ctx1|variable|ctx1
 DECL|ctx2_prefix|macro|ctx2_prefix
@@ -69,7 +69,7 @@ DECL|test_data_6|variable|test_data_6
 DECL|test_data_7|variable|test_data_7
 DECL|test_data_8|variable|test_data_8
 DECL|test_data_9|variable|test_data_9
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|thread_stack|variable|thread_stack
 DECL|udp_dst_port_16bit|macro|udp_dst_port_16bit

@@ -8,7 +8,7 @@ DECL|parser|member|struct http_parser parser;
 DECL|remaining|member|int remaining;
 DECL|rx_fifo_block|struct|struct rx_fifo_block {
 DECL|rx_fifo|member|struct k_fifo rx_fifo;
-DECL|rx_nbuf|member|struct net_buf *rx_nbuf;
+DECL|rx_pkt|member|struct net_buf *rx_pkt;
 DECL|snode|member|sys_snode_t snode;
 DECL|ssl_context|struct|struct ssl_context {
 DECL|tx_sem|member|struct k_sem tx_sem;

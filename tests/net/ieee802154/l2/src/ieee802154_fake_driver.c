@@ -11,5 +11,5 @@ DECL|fake_set_short_addr|function|static int fake_set_short_addr(struct device *
 DECL|fake_set_txpower|function|static int fake_set_txpower(struct device *dev, int16_t dbm)
 DECL|fake_start|function|static int fake_start(struct device *dev)
 DECL|fake_stop|function|static int fake_stop(struct device *dev)
-DECL|fake_tx|function|static int fake_tx(struct device *dev, struct net_buf *buf, struct net_buf *frag)
-DECL|insert_frag_dummy_way|function|static inline void insert_frag_dummy_way(struct net_buf *buf)
+DECL|fake_tx|function|static int fake_tx(struct device *dev, struct net_pkt *pkt, struct net_buf *frag)
+DECL|insert_frag_dummy_way|function|static inline void insert_frag_dummy_way(struct net_pkt *pkt)

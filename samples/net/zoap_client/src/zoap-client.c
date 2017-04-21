@@ -14,4 +14,4 @@ DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_p
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|retransmit_work|variable|retransmit_work
 DECL|test_path|variable|test_path
-DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_buf *buf, int status, void *user_data)
+DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_pkt *pkt, int status, void *user_data)

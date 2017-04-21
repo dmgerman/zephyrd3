@@ -31,7 +31,7 @@ DECL|eth_mcux_phy_work|function|static void eth_mcux_phy_work(struct k_work *ite
 DECL|eth_mcux_rx_isr|function|static void eth_mcux_rx_isr(void *p)
 DECL|eth_mcux_tx_isr|function|static void eth_mcux_tx_isr(void *p)
 DECL|eth_rx|function|static void eth_rx(struct device *iface)
-DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_buf *buf)
+DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_buf|member|uint8_t frame_buf[1500];
 DECL|generate_mac|function|static void generate_mac(uint8_t *mac_addr)
 DECL|iface|member|struct net_if *iface;

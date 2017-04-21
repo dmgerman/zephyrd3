@@ -11,7 +11,7 @@ DECL|bt_context|struct|struct bt_context {
 DECL|bt_disconnect|function|static int bt_disconnect(uint32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_if_api|variable|bt_if_api
 DECL|bt_iface_init|function|static void bt_iface_init(struct net_if *iface)
-DECL|bt_iface_send|function|static int bt_iface_send(struct net_if *iface, struct net_buf *buf)
+DECL|bt_iface_send|function|static int bt_iface_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|bt_passive_scan|function|static void bt_passive_scan(void)
 DECL|bt_scan_off|function|static void bt_scan_off(void)
 DECL|bt_scan|function|static int bt_scan(uint32_t mgmt_request, struct net_if *iface, void *data, size_t len)
@@ -32,8 +32,8 @@ DECL|ipsp_ops|variable|ipsp_ops
 DECL|ipsp_recv|function|static void ipsp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|net_bt_enable|function|static int net_bt_enable(struct net_if *iface, bool state)
 DECL|net_bt_init|function|static int net_bt_init(struct device *dev)
-DECL|net_bt_recv|function|static enum net_verdict net_bt_recv(struct net_if *iface, struct net_buf *buf)
+DECL|net_bt_recv|function|static enum net_verdict net_bt_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_bt_reserve|function|static inline uint16_t net_bt_reserve(struct net_if *iface, void *unused)
-DECL|net_bt_send|function|static enum net_verdict net_bt_send(struct net_if *iface, struct net_buf *buf)
+DECL|net_bt_send|function|static enum net_verdict net_bt_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|server|variable|server
 DECL|src|member|bt_addr_t src;

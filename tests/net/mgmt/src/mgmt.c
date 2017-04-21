@@ -8,7 +8,7 @@ DECL|event2throw|variable|event2throw
 DECL|fake_dev_init|function|int fake_dev_init(struct device *dev)
 DECL|fake_iface_api|variable|fake_iface_api
 DECL|fake_iface_init|function|static void fake_iface_init(struct net_if *iface)
-DECL|fake_iface_send|function|static int fake_iface_send(struct net_if *iface, struct net_buf *buf)
+DECL|fake_iface_send|function|static int fake_iface_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|initialize_event_tests|function|static void initialize_event_tests(void)
 DECL|main|function|void main(void)
 DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_callback *cb,uint32_t nm_event, struct net_if *iface)

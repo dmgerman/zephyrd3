@@ -29,7 +29,7 @@ DECL|net_route_mcast_del|function|bool net_route_mcast_del(struct net_route_entr
 DECL|net_route_mcast_foreach|function|int net_route_mcast_foreach(net_route_mcast_cb_t cb, struct in6_addr *skip, void *user_data)
 DECL|net_route_mcast_lookup|function|net_route_mcast_lookup(struct in6_addr *group)
 DECL|net_route_nexthop_remove|function|static void net_route_nexthop_remove(struct net_nbr *nbr)
-DECL|net_route_packet|function|int net_route_packet(struct net_buf *buf, struct in6_addr *nexthop)
+DECL|net_route_packet|function|int net_route_packet(struct net_pkt *pkt, struct in6_addr *nexthop)
 DECL|net_routes_print|function|void net_routes_print(void)
 DECL|net_routes_print|macro|net_routes_print
 DECL|route_mcast_entries|variable|route_mcast_entries

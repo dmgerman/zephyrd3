@@ -17,12 +17,12 @@ DECL|net_arp_dev_init|function|int net_arp_dev_init(struct device *dev)
 DECL|net_arp_get_mac|function|static uint8_t *net_arp_get_mac(struct device *dev)
 DECL|net_arp_if_api|variable|net_arp_if_api
 DECL|net_arp_iface_init|function|static void net_arp_iface_init(struct net_if *iface)
-DECL|pending_buf|variable|pending_buf
-DECL|prepare_arp_reply|function|static inline struct net_buf *prepare_arp_reply(struct net_if *iface,struct net_buf *req, struct net_eth_addr *addr)
-DECL|prepare_arp_request|function|static inline struct net_buf *prepare_arp_request(struct net_if *iface, struct net_buf *req, struct net_eth_addr *addr)
+DECL|pending_pkt|variable|pending_pkt
+DECL|prepare_arp_reply|function|static inline struct net_pkt *prepare_arp_reply(struct net_if *iface,struct net_pkt *req, struct net_eth_addr *addr)
+DECL|prepare_arp_request|function|static inline struct net_pkt *prepare_arp_request(struct net_if *iface, struct net_pkt *req, struct net_eth_addr *addr)
 DECL|req_test|variable|req_test
 DECL|run_tests|function|static bool run_tests(void)
 DECL|send_status|variable|send_status
-DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_buf *buf, struct net_eth_addr *hwaddr, uint16_t type)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_pkt *pkt, struct net_eth_addr *hwaddr, uint16_t type)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|thread_stack|variable|thread_stack

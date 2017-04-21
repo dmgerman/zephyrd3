@@ -49,5 +49,5 @@ DECL|test_del|function|static int test_del(struct zoap_resource *resource, struc
 DECL|test_path|variable|test_path
 DECL|test_post|function|static int test_post(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|test_put|function|static int test_put(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
-DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_buf *buf, int status, void *user_data)
+DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_pkt *pkt, int status, void *user_data)
 DECL|update_counter|function|static void update_counter(struct k_work *work)

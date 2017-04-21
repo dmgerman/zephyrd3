@@ -1,5 +1,5 @@
 DECL|if_addr_add|function|int if_addr_add(struct sockaddr *local_sock)
-DECL|recv_cb|function|void recv_cb(struct net_context *net_ctx, struct net_buf *rx, int status, void *data)
+DECL|recv_cb|function|void recv_cb(struct net_context *net_ctx, struct net_pkt *rx, int status, void *data)
 DECL|set_addr|function|int set_addr(struct sockaddr *sock_addr, const char *addr, uint16_t server_port)
 DECL|tcp_connect|function|int tcp_connect(struct tcp_client_ctx *ctx, const char *server_addr,uint16_t server_port)
 DECL|tcp_disconnect|function|int tcp_disconnect(struct tcp_client_ctx *ctx)

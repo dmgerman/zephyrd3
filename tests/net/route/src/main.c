@@ -12,7 +12,6 @@ DECL|entry|variable|entry
 DECL|feed_data|variable|feed_data
 DECL|func|member|bool (*func)(void);
 DECL|generic_addr|variable|generic_addr
-DECL|get_llao_len|function|static inline uint8_t get_llao_len(struct net_if *iface)
 DECL|in6addr_mcast|variable|in6addr_mcast
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|ll_addr|variable|ll_addr
@@ -49,13 +48,11 @@ DECL|route_get_nexthop|function|static bool route_get_nexthop(void)
 DECL|route_lookup_fail|function|static bool route_lookup_fail(void)
 DECL|route_lookup_ok|function|static bool route_lookup_ok(void)
 DECL|route_update|function|static bool route_update(void)
-DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, uint8_t *llao, uint8_t llao_len, uint8_t type)
-DECL|setup_icmpv6_hdr|function|static inline void setup_icmpv6_hdr(struct net_buf *buf, uint8_t type, uint8_t code)
 DECL|test_failed|variable|test_failed
 DECL|test_init|function|static bool test_init(void)
 DECL|test_routes|variable|test_routes
-DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface, struct net_buf *buf)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface, struct net_pkt *pkt)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|udp_ctx|variable|udp_ctx
 DECL|wait_data|variable|wait_data

@@ -12,18 +12,18 @@ DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
 DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
-DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_buf *buf)
-DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_buf *buf)
+DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_pkt *pkt)
+DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|init_ieee802154|function|static bool init_ieee802154(void)
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|interrupt_handler|function|static void interrupt_handler(struct device *dev)
 DECL|mac_addr|variable|mac_addr
 DECL|main|function|void main(void)
-DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_buf *pkt)
+DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_pkt *pkt)
 DECL|pkt_curr|variable|pkt_curr
-DECL|process_config|function|static void process_config(struct net_buf *pkt)
-DECL|process_data|function|static void process_data(struct net_buf *pkt)
+DECL|process_config|function|static void process_config(struct net_pkt *pkt)
+DECL|process_data|function|static void process_data(struct net_pkt *pkt)
 DECL|process_request|function|static void process_request(struct net_buf *buf)
 DECL|radio_api|variable|radio_api
 DECL|rx_queue|variable|rx_queue

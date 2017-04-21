@@ -10,10 +10,10 @@ DECL|DNS_RESOLVER_MAX_BUF_SIZE|macro|DNS_RESOLVER_MAX_BUF_SIZE
 DECL|DNS_RESOLVER_MIN_BUF|macro|DNS_RESOLVER_MIN_BUF
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|cb_recv|function|static void cb_recv(struct net_context *net_ctx, struct net_buf *buf, int status, void *user_data)
+DECL|cb_recv|function|static void cb_recv(struct net_context *net_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|dns_default_ctx|variable|dns_default_ctx
 DECL|dns_init_resolver|function|void dns_init_resolver(void)
-DECL|dns_read|function|static int dns_read(struct dns_resolve_context *ctx, struct net_buf *buf, struct net_buf *dns_data, uint16_t *dns_id, struct net_buf *dns_cname,
+DECL|dns_read|function|static int dns_read(struct dns_resolve_context *ctx, struct net_pkt *pkt, struct net_buf *dns_data, uint16_t *dns_id, struct net_buf *dns_cname,
 DECL|dns_resolve_cancel|function|int dns_resolve_cancel(struct dns_resolve_context *ctx, uint16_t dns_id)
 DECL|dns_resolve_close|function|int dns_resolve_close(struct dns_resolve_context *ctx)
 DECL|dns_resolve_get_default|function|struct dns_resolve_context *dns_resolve_get_default(void)

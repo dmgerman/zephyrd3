@@ -15,4 +15,4 @@ DECL|upipe_set_short_addr|function|static int upipe_set_short_addr(struct device
 DECL|upipe_set_txpower|function|static int upipe_set_txpower(struct device *dev, int16_t dbm)
 DECL|upipe_start|function|static int upipe_start(struct device *dev)
 DECL|upipe_stop|function|static int upipe_stop(struct device *dev)
-DECL|upipe_tx|function|static int upipe_tx(struct device *dev, struct net_buf *buf, struct net_buf *frag)
+DECL|upipe_tx|function|static int upipe_tx(struct device *dev, struct net_pkt *pkt, struct net_buf *frag)

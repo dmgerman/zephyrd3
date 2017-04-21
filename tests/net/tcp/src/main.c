@@ -57,8 +57,8 @@ DECL|send_ipv4_tcp_msg|function|static bool send_ipv4_tcp_msg(struct net_if *ifa
 DECL|send_ipv6_tcp_msg|function|static bool send_ipv6_tcp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, uint16_t src_port, uint16_t dst_port,
 DECL|send_status|variable|send_status
 DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr *raddr, struct sockaddr *laddr, uint16_t rport, uint16_t lport)
-DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_buf *buf, struct in_addr *remote_addr, struct in_addr *local_addr, uint16_t remote_port, uint16_t local_port)
-DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_buf *buf, struct in6_addr *remote_addr, struct in6_addr *local_addr, uint16_t remote_port, uint16_t local_port)
+DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, uint16_t remote_port, uint16_t local_port)
+DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, uint16_t remote_port, uint16_t local_port)
 DECL|syn_v6_sent|variable|syn_v6_sent
 DECL|test_cleanup|function|static bool test_cleanup(void)
 DECL|test_create_v4_fin_packet|function|static bool test_create_v4_fin_packet(void)
@@ -70,23 +70,23 @@ DECL|test_create_v6_reset_packet|function|static bool test_create_v6_reset_packe
 DECL|test_create_v6_syn_packet|function|static bool test_create_v6_syn_packet(void)
 DECL|test_create_v6_synack_packet|function|static bool test_create_v6_synack_packet(void)
 DECL|test_failed|variable|test_failed
-DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_buf *buf, void *user_data)
+DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
 DECL|test_init_tcp_accept|function|static bool test_init_tcp_accept(void)
 DECL|test_init_tcp_context|function|static bool test_init_tcp_context(void)
 DECL|test_init_tcp_reply_context|function|static bool test_init_tcp_reply_context(void)
 DECL|test_init|function|static bool test_init(void)
-DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_buf *buf, void *user_data)
+DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|test_register|function|static bool test_register(void)
 DECL|test_v4_seq_check|function|static bool test_v4_seq_check(void)
 DECL|test_v6_seq_check|function|static bool test_v6_seq_check(void)
-DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface, struct net_buf *buf)
-DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_buf *buf)
+DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface, struct net_pkt *pkt)
+DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|test|member|char *test;
 DECL|ud|struct|struct ud {
-DECL|v4_check_port_and_address|function|static bool v4_check_port_and_address(char *test_str, struct net_buf *buf, const struct in_addr *expected_dst_addr, uint16_t expected_dst_port)
+DECL|v4_check_port_and_address|function|static bool v4_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in_addr *expected_dst_addr, uint16_t expected_dst_port)
 DECL|v4_ctx|variable|v4_ctx
-DECL|v6_check_port_and_address|function|static bool v6_check_port_and_address(char *test_str, struct net_buf *buf, const struct in6_addr *expected_dst_addr, uint16_t expected_dst_port)
+DECL|v6_check_port_and_address|function|static bool v6_check_port_and_address(char *test_str, struct net_pkt *pkt, const struct in6_addr *expected_dst_addr, uint16_t expected_dst_port)
 DECL|v6_ctx|variable|v6_ctx
-DECL|v6_send_syn_ack|function|static void v6_send_syn_ack(struct net_if *iface, struct net_buf *req)
+DECL|v6_send_syn_ack|function|static void v6_send_syn_ack(struct net_if *iface, struct net_pkt *req)
 DECL|wait_connect|variable|wait_connect
