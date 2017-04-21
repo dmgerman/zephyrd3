@@ -57,7 +57,7 @@ DECL|gpio_enable_callback_t|typedef|typedef int (*gpio_enable_callback_t)(struct
 DECL|gpio_get_pending_int|function|static inline int gpio_get_pending_int(struct device *dev)
 DECL|gpio_init_callback|function|static inline void gpio_init_callback(struct gpio_callback *callback, gpio_callback_handler_t handler, uint32_t pin_mask)
 DECL|gpio_manage_callback_t|typedef|typedef int (*gpio_manage_callback_t)(struct device *port,
-DECL|gpio_pin_configure|function|static inline int gpio_pin_configure(struct device *port, uint8_t pin, int flags)
+DECL|gpio_pin_configure|function|static inline int gpio_pin_configure(struct device *port, uint32_t pin, int flags)
 DECL|gpio_pin_config|struct|struct gpio_pin_config {
 DECL|gpio_pin_disable_callback|function|static inline int gpio_pin_disable_callback(struct device *port, uint32_t pin)
 DECL|gpio_pin_enable_callback|function|static inline int gpio_pin_enable_callback(struct device *port, uint32_t pin)
