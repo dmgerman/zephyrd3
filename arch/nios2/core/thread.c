@@ -4,5 +4,3 @@ DECL|arg2|member|void *arg2;
 DECL|arg3|member|void *arg3;
 DECL|entry_point|member|_thread_entry_t entry_point;
 DECL|init_stack_frame|struct|struct init_stack_frame {
-DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
-DECL|thread_monitor_init|macro|thread_monitor_init

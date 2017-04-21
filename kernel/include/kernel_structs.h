@@ -51,6 +51,8 @@ DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
 DECL|sched_locked|member|u8_t sched_locked;
 DECL|swap_data|member|void *swap_data;
+DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
+DECL|thread_monitor_init|macro|thread_monitor_init
 DECL|thread_state|member|u8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
