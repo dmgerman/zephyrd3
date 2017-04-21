@@ -11,6 +11,7 @@ DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
 DECL|_kernel_t|typedef|typedef struct _kernel _kernel_t;
 DECL|_kernel|struct|struct _kernel {
+DECL|_new_thread_init|function|static ALWAYS_INLINE struct k_thread *_new_thread_init(char *pStack, size_t stackSize, int prio, unsigned int options)
 DECL|_ready_q_t|typedef|typedef struct _ready_q _ready_q_t;
 DECL|_ready_q|macro|_ready_q
 DECL|_ready_q|struct|struct _ready_q {
