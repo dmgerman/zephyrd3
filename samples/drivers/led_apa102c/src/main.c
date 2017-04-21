@@ -9,4 +9,4 @@ DECL|NUM_RGB|macro|NUM_RGB
 DECL|SLEEPTIME|macro|SLEEPTIME
 DECL|main|function|void main(void)
 DECL|rgb|variable|rgb
-DECL|send_rgb|function|void send_rgb(struct device *gpio_dev, uint32_t rgb)
+DECL|send_rgb|function|void send_rgb(struct device *gpio_dev, u32_t rgb)

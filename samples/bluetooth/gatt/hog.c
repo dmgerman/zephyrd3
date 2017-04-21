@@ -6,23 +6,23 @@ DECL|HIDS_REMOTE_WAKE|enumerator|HIDS_REMOTE_WAKE = BIT(0),
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|attrs|variable|attrs
-DECL|code|member|uint8_t code; /* country HID Device hardware is localized for. */
+DECL|code|member|u8_t code; /* country HID Device hardware is localized for. */
 DECL|ctrl_point|variable|ctrl_point
-DECL|flags|member|uint8_t flags;
+DECL|flags|member|u8_t flags;
 DECL|hids_info|struct|struct hids_info {
 DECL|hids_report|struct|struct hids_report {
 DECL|hog_init|function|void hog_init(void)
-DECL|id|member|uint8_t id; /* report id */
+DECL|id|member|u8_t id; /* report id */
 DECL|info|variable|info
 DECL|input_ccc_cfg|variable|input_ccc_cfg
-DECL|input_ccc_changed|function|static void input_ccc_changed(const struct bt_gatt_attr *attr, uint16_t value)
+DECL|input_ccc_changed|function|static void input_ccc_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|input|variable|input
-DECL|read_info|function|static ssize_t read_info(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_input_report|function|static ssize_t read_input_report(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_report_map|function|static ssize_t read_report_map(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_report|function|static ssize_t read_report(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
+DECL|read_info|function|static ssize_t read_info(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_input_report|function|static ssize_t read_input_report(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_report_map|function|static ssize_t read_report_map(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_report|function|static ssize_t read_report(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|report_map|variable|report_map
 DECL|simulate_input|variable|simulate_input
-DECL|type|member|uint8_t type; /* report type */
-DECL|version|member|uint16_t version; /* version number of base USB HID Specification */
-DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
+DECL|type|member|u8_t type; /* report type */
+DECL|version|member|u16_t version; /* version number of base USB HID Specification */
+DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)

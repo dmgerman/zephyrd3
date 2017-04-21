@@ -16,5 +16,5 @@ DECL|message_source_task_1|function|void message_source_task_1(void)
 DECL|message_source_task_2|function|void message_source_task_2(void)
 DECL|message_source|function|void message_source(struct device *ipm)
 DECL|ping_source_thread|function|void ping_source_thread(void *arg1, void *arg2, void *arg3)
-DECL|scss_reg|function|uint32_t scss_reg(uint32_t offset)
+DECL|scss_reg|function|u32_t scss_reg(u32_t offset)
 DECL|thread_stacks|variable|thread_stacks

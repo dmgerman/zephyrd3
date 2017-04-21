@@ -29,9 +29,9 @@ DECL|HIGH_BYTE|macro|HIGH_BYTE
 DECL|INTEL_VENDOR_ID|macro|INTEL_VENDOR_ID
 DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|PRODUCT_ID|macro|PRODUCT_ID
-DECL|btusb_bulk_in|function|static void btusb_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|btusb_bulk_out|function|static void btusb_bulk_out(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|btusb_class_handler|function|static int btusb_class_handler(struct usb_setup_packet *setup, int32_t *len, uint8_t **data)
+DECL|btusb_bulk_in|function|static void btusb_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|btusb_bulk_out|function|static void btusb_bulk_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|btusb_class_handler|function|static int btusb_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|btusb_config|variable|btusb_config
 DECL|btusb_desc|variable|btusb_desc
 DECL|btusb_dev_data_t|struct|struct btusb_dev_data_t {
@@ -39,13 +39,13 @@ DECL|btusb_dev_data|variable|btusb_dev_data
 DECL|btusb_dev|variable|btusb_dev
 DECL|btusb_ep|variable|btusb_ep
 DECL|btusb_init|function|static int btusb_init(struct device *dev)
-DECL|btusb_int_in|function|static void btusb_int_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|btusb_iso_in|function|static void btusb_iso_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|btusb_iso_out|function|static void btusb_iso_out(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|btusb_int_in|function|static void btusb_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|btusb_iso_in|function|static void btusb_iso_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|btusb_iso_out|function|static void btusb_iso_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_status_cb|function|static void btusb_status_cb(enum usb_dc_status_code status)
-DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length)
-DECL|interface_data|member|uint8_t interface_data[BTUSB_CLASS_MAX_DATA_SIZE];
+DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
+DECL|interface_data|member|u8_t interface_data[BTUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
-DECL|notification_sent|member|uint8_t notification_sent;
-DECL|try_write|function|static int try_write(uint8_t ep, struct net_buf *buf)
+DECL|notification_sent|member|u8_t notification_sent;
+DECL|try_write|function|static int try_write(u8_t ep, struct net_buf *buf)
 DECL|usb_status|member|enum usb_dc_status_code usb_status;

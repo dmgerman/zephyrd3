@@ -7,7 +7,7 @@ DECL|US_TO_HZ|macro|US_TO_HZ
 DECL|beep_active|variable|beep_active
 DECL|beep_work|variable|beep_work
 DECL|beep|function|static void beep(struct k_work *work)
-DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|gpio|variable|gpio
 DECL|main|function|void main(void)
 DECL|period|variable|period

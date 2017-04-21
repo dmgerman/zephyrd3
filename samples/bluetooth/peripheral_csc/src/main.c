@@ -41,45 +41,45 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|ad|variable|ad
 DECL|bt_ready|function|static void bt_ready(int err)
-DECL|ccr|member|uint16_t ccr;
+DECL|ccr|member|u16_t ccr;
 DECL|ccr|variable|ccr
 DECL|conn_callbacks|variable|conn_callbacks
-DECL|connected|function|static void connected(struct bt_conn *conn, uint8_t err)
+DECL|connected|function|static void connected(struct bt_conn *conn, u8_t err)
 DECL|crank_rev_data_nfy|struct|struct crank_rev_data_nfy {
 DECL|csc_attrs|variable|csc_attrs
-DECL|csc_meas_ccc_cfg_changed|function|static void csc_meas_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
+DECL|csc_meas_ccc_cfg_changed|function|static void csc_meas_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|csc_meas_ccc_cfg|variable|csc_meas_ccc_cfg
 DECL|csc_measurement_nfy|struct|struct csc_measurement_nfy {
 DECL|csc_simulate|variable|csc_simulate
 DECL|csc_simulation|function|static void csc_simulation(void)
-DECL|ctrl_point_ccc_cfg_changed|function|static void ctrl_point_ccc_cfg_changed(const struct bt_gatt_attr *attr, uint16_t value)
+DECL|ctrl_point_ccc_cfg_changed|function|static void ctrl_point_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|ctrl_point_ccc_cfg|variable|ctrl_point_ccc_cfg
 DECL|ctrl_point_configured|variable|ctrl_point_configured
-DECL|ctrl_point_ind|function|static void ctrl_point_ind(struct bt_conn *conn, uint8_t req_op, uint8_t status, const void *data, uint16_t data_len)
-DECL|cwr|member|uint32_t cwr;
-DECL|cwr|member|uint32_t cwr;
+DECL|ctrl_point_ind|function|static void ctrl_point_ind(struct bt_conn *conn, u8_t req_op, u8_t status, const void *data, u16_t data_len)
+DECL|cwr|member|u32_t cwr;
+DECL|cwr|member|u32_t cwr;
 DECL|cwr|variable|cwr
-DECL|data|member|uint8_t data[];
-DECL|data|member|uint8_t data[];
-DECL|disconnected|function|static void disconnected(struct bt_conn *conn, uint8_t reason)
-DECL|flags|member|uint8_t flags;
-DECL|lcet|member|uint16_t lcet;
+DECL|data|member|u8_t data[];
+DECL|data|member|u8_t data[];
+DECL|disconnected|function|static void disconnected(struct bt_conn *conn, u8_t reason)
+DECL|flags|member|u8_t flags;
+DECL|lcet|member|u16_t lcet;
 DECL|lcet|variable|lcet
-DECL|location|member|uint8_t location;
-DECL|lwet|member|uint16_t lwet;
+DECL|location|member|u8_t location;
+DECL|lwet|member|u16_t lwet;
 DECL|lwet|variable|lwet
 DECL|main|function|void main(void)
-DECL|measurement_nfy|function|static void measurement_nfy(struct bt_conn *conn, uint32_t cwr, uint16_t lwet, uint16_t ccr, uint16_t lcet)
-DECL|op|member|uint8_t op;
-DECL|op|member|uint8_t op;
-DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, uint16_t len, uint16_t offset)
-DECL|req_op|member|uint8_t req_op;
+DECL|measurement_nfy|function|static void measurement_nfy(struct bt_conn *conn, u32_t cwr, u16_t lwet, u16_t ccr, u16_t lcet)
+DECL|op|member|u8_t op;
+DECL|op|member|u8_t op;
+DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *conn,const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|req_op|member|u8_t req_op;
 DECL|sc_ctrl_point_ind|struct|struct sc_ctrl_point_ind {
 DECL|sd|variable|sd
 DECL|sensor_location|variable|sensor_location
-DECL|status|member|uint8_t status;
+DECL|status|member|u8_t status;
 DECL|supported_locations|variable|supported_locations
 DECL|wheel_rev_data_nfy|struct|struct wheel_rev_data_nfy {
-DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, uint16_t len, uint16_t offset, uint8_t flags)
+DECL|write_ctrl_point|function|static ssize_t write_ctrl_point(struct bt_conn *conn,const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|write_sc_ctrl_point_req|struct|struct write_sc_ctrl_point_req {

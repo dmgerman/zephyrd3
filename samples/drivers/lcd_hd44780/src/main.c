@@ -44,17 +44,17 @@ DECL|LCD_SET_CGRAM_ADDR|macro|LCD_SET_CGRAM_ADDR
 DECL|LCD_SET_DDRAM_ADDR|macro|LCD_SET_DDRAM_ADDR
 DECL|LCD_WIDTH|macro|LCD_WIDTH
 DECL|LOW|macro|LOW
-DECL|_pi_lcd_4bits_wr|function|void _pi_lcd_4bits_wr(struct device *gpio_dev, uint8_t bits)
-DECL|_pi_lcd_8bits_wr|function|void _pi_lcd_8bits_wr(struct device *gpio_dev, uint8_t bits)
-DECL|_pi_lcd_command|function|void _pi_lcd_command(struct device *gpio_dev, uint8_t bits)
-DECL|_pi_lcd_data|function|void _pi_lcd_data(struct device *gpio_dev, uint8_t bits)
+DECL|_pi_lcd_4bits_wr|function|void _pi_lcd_4bits_wr(struct device *gpio_dev, u8_t bits)
+DECL|_pi_lcd_8bits_wr|function|void _pi_lcd_8bits_wr(struct device *gpio_dev, u8_t bits)
+DECL|_pi_lcd_command|function|void _pi_lcd_command(struct device *gpio_dev, u8_t bits)
+DECL|_pi_lcd_data|function|void _pi_lcd_data(struct device *gpio_dev, u8_t bits)
 DECL|_pi_lcd_toggle_enable|function|void _pi_lcd_toggle_enable(struct device *gpio_dev)
-DECL|_pi_lcd_write|function|void _pi_lcd_write(struct device *gpio_dev, uint8_t bits)
-DECL|_set_row_offsets|function|void _set_row_offsets(int8_t row0, int8_t row1, int8_t row2, int8_t row3)
-DECL|cfg_rows|member|uint8_t cfg_rows;
-DECL|disp_cntl|member|uint8_t disp_cntl; /* Display Control */
-DECL|disp_func|member|uint8_t disp_func; /* Display Function */
-DECL|disp_mode|member|uint8_t disp_mode; /* Display Mode */
+DECL|_pi_lcd_write|function|void _pi_lcd_write(struct device *gpio_dev, u8_t bits)
+DECL|_set_row_offsets|function|void _set_row_offsets(s8_t row0, s8_t row1, s8_t row2, s8_t row3)
+DECL|cfg_rows|member|u8_t cfg_rows;
+DECL|disp_cntl|member|u8_t disp_cntl; /* Display Control */
+DECL|disp_func|member|u8_t disp_func; /* Display Function */
+DECL|disp_mode|member|u8_t disp_mode; /* Display Mode */
 DECL|lcd_data|variable|lcd_data
 DECL|main|function|void main(void)
 DECL|pi_lcd_auto_scroll_left|function|void pi_lcd_auto_scroll_left(struct device *gpio_dev)
@@ -68,11 +68,11 @@ DECL|pi_lcd_data|struct|struct pi_lcd_data {
 DECL|pi_lcd_display_off|function|void pi_lcd_display_off(struct device *gpio_dev)
 DECL|pi_lcd_display_on|function|void pi_lcd_display_on(struct device *gpio_dev)
 DECL|pi_lcd_home|function|void pi_lcd_home(struct device *gpio_dev)
-DECL|pi_lcd_init|function|void pi_lcd_init(struct device *gpio_dev, uint8_t cols, uint8_t rows, uint8_t dotsize)
+DECL|pi_lcd_init|function|void pi_lcd_init(struct device *gpio_dev, u8_t cols, u8_t rows, u8_t dotsize)
 DECL|pi_lcd_left_to_right|function|void pi_lcd_left_to_right(struct device *gpio_dev)
 DECL|pi_lcd_right_to_left|function|void pi_lcd_right_to_left(struct device *gpio_dev)
 DECL|pi_lcd_scroll_left|function|void pi_lcd_scroll_left(struct device *gpio_dev)
 DECL|pi_lcd_scroll_right|function|void pi_lcd_scroll_right(struct device *gpio_dev)
-DECL|pi_lcd_set_cursor|function|void pi_lcd_set_cursor(struct device *gpio_dev, uint8_t col, uint8_t row)
+DECL|pi_lcd_set_cursor|function|void pi_lcd_set_cursor(struct device *gpio_dev, u8_t col, u8_t row)
 DECL|pi_lcd_string|function|void pi_lcd_string(struct device *gpio_dev, char *msg)
-DECL|row_offsets|member|uint8_t row_offsets[4];
+DECL|row_offsets|member|u8_t row_offsets[4];

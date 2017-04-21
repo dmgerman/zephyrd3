@@ -1,7 +1,7 @@
 DECL|BUF_MAXSIZE|macro|BUF_MAXSIZE
 DECL|SLEEP_TIME|macro|SLEEP_TIME
 DECL|main|function|void main(void)
-DECL|msg_dump|function|static void msg_dump(const char *s, uint8_t *data, unsigned len)
+DECL|msg_dump|function|static void msg_dump(const char *s, u8_t *data, unsigned len)
 DECL|nci_reset|variable|nci_reset
 DECL|rx_buf|variable|rx_buf
 DECL|tx_buf|variable|tx_buf
