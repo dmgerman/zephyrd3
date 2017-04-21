@@ -1,3 +1,4 @@
+DECL|COAP_MARKER|macro|COAP_MARKER
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
 DECL|_zoap_well_known_core_get|function|int _zoap_well_known_core_get(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|format_attributes|function|static int format_attributes(const char * const *attributes, struct net_buf *buf)
