@@ -1,11 +1,11 @@
 DECL|_SHIRQ_H_|macro|_SHIRQ_H_
-DECL|client_count|member|uint32_t client_count;
+DECL|client_count|member|u32_t client_count;
 DECL|client|member|struct shared_irq_client client[CONFIG_SHARED_IRQ_NUM_CLIENTS];
 DECL|config|member|shared_irq_config_irq_t config;
 DECL|disable|member|shared_irq_disable_t disable;
-DECL|enabled|member|uint32_t enabled;
+DECL|enabled|member|u32_t enabled;
 DECL|enable|member|shared_irq_enable_t enable;
-DECL|irq_num|member|uint32_t irq_num;
+DECL|irq_num|member|u32_t irq_num;
 DECL|isr_dev|member|struct device *isr_dev;
 DECL|isr_func|member|isr_t isr_func;
 DECL|isr_register|member|shared_irq_register_t isr_register;

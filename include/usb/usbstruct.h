@@ -47,6 +47,6 @@ DECL|REQ_SET_FEATURE|macro|REQ_SET_FEATURE
 DECL|REQ_SET_INTERFACE|macro|REQ_SET_INTERFACE
 DECL|REQ_SYNCH_FRAME|macro|REQ_SYNCH_FRAME
 DECL|_USBSTRUCT_H_|macro|_USBSTRUCT_H_
-DECL|bDescriptorType|member|uint8_t bDescriptorType; /**< descriptor type */
-DECL|bLength|member|uint8_t bLength; /**< descriptor length */
+DECL|bDescriptorType|member|u8_t bDescriptorType; /**< descriptor type */
+DECL|bLength|member|u8_t bLength; /**< descriptor length */
 DECL|usb_desc_header|struct|struct usb_desc_header {

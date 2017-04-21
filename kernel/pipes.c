@@ -1,4 +1,4 @@
-DECL|_k_pipe_put_internal|function|int _k_pipe_put_internal(struct k_pipe *pipe, struct k_pipe_async *async_desc, unsigned char *data, size_t bytes_to_write, size_t *bytes_written, size_t min_xfer, int32_t timeout)
+DECL|_k_pipe_put_internal|function|int _k_pipe_put_internal(struct k_pipe *pipe, struct k_pipe_async *async_desc, unsigned char *data, size_t bytes_to_write, size_t *bytes_written, size_t min_xfer, s32_t timeout)
 DECL|_pipe_async_alloc|function|static void _pipe_async_alloc(struct k_pipe_async **async)
 DECL|_pipe_async_finish|function|static void _pipe_async_finish(struct k_pipe_async *async_desc)
 DECL|_pipe_async_free|function|static void _pipe_async_free(struct k_pipe_async *async)
@@ -19,8 +19,8 @@ DECL|init_pipes_module|function|static int init_pipes_module(struct device *dev)
 DECL|k_pipe_async|struct|struct k_pipe_async {
 DECL|k_pipe_block_put|function|void k_pipe_block_put(struct k_pipe *pipe, struct k_mem_block *block, size_t bytes_to_write, struct k_sem *sem)
 DECL|k_pipe_desc|struct|struct k_pipe_desc {
-DECL|k_pipe_get|function|int k_pipe_get(struct k_pipe *pipe, void *data, size_t bytes_to_read, size_t *bytes_read, size_t min_xfer, int32_t timeout)
+DECL|k_pipe_get|function|int k_pipe_get(struct k_pipe *pipe, void *data, size_t bytes_to_read, size_t *bytes_read, size_t min_xfer, s32_t timeout)
 DECL|k_pipe_init|function|void k_pipe_init(struct k_pipe *pipe, unsigned char *buffer, size_t size)
-DECL|k_pipe_put|function|int k_pipe_put(struct k_pipe *pipe, void *data, size_t bytes_to_write, size_t *bytes_written, size_t min_xfer, int32_t timeout)
+DECL|k_pipe_put|function|int k_pipe_put(struct k_pipe *pipe, void *data, size_t bytes_to_write, size_t *bytes_written, size_t min_xfer, s32_t timeout)
 DECL|sem|member|struct k_sem *sem; /* Semaphore to give if async */
 DECL|thread|member|struct _thread_base thread; /* Dummy thread object */

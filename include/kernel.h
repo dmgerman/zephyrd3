@@ -113,13 +113,13 @@ DECL|_SECTION_TYPE_SIGN|macro|_SECTION_TYPE_SIGN
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|__k_mem_pool_quad_block_size_define|function|static void __attribute__ ((used)) __k_mem_pool_quad_block_size_define(void)
-DECL|__ticks_to_ms|function|static inline int64_t __ticks_to_ms(int64_t ticks)
+DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_kernel__h_|macro|_kernel__h_
-DECL|_mailbox|member|uint32_t _mailbox;
+DECL|_mailbox|member|u32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
-DECL|_ms_to_ticks|function|static ALWAYS_INLINE int32_t _ms_to_ticks(int32_t ms)
+DECL|_ms_to_ticks|function|static ALWAYS_INLINE s32_t _ms_to_ticks(s32_t ms)
 DECL|_poll_states_bits|enum|enum _poll_states_bits {
 DECL|_poll_types_bits|enum|enum _poll_types_bits {
 DECL|_poller|struct|struct _poller {
@@ -133,7 +133,7 @@ DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t)
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|addr_in_pool|member|void *addr_in_pool;
-DECL|base|member|uint32_t *base, *next, *top;
+DECL|base|member|u32_t *base, *next, *top;
 DECL|block_set|member|struct k_mem_pool_block_set *block_set;
 DECL|block_size|member|size_t block_size;
 DECL|block_size|member|size_t block_size; /* memory block size */
@@ -151,7 +151,7 @@ DECL|delete|function|inline void operator delete(void *ptr)
 DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
 DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
-DECL|delta_ticks_from_prev|member|int32_t delta_ticks_from_prev;
+DECL|delta_ticks_from_prev|member|s32_t delta_ticks_from_prev;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
@@ -161,12 +161,12 @@ DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
 DECL|handler|member|k_alert_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
-DECL|info|member|uint32_t info;
+DECL|info|member|u32_t info;
 DECL|init_abort|member|void (*init_abort)(void);
-DECL|init_delay|member|int32_t init_delay;
+DECL|init_delay|member|s32_t init_delay;
 DECL|init_entry|member|void (*init_entry)(void *, void *, void *);
-DECL|init_groups|member|uint32_t init_groups;
-DECL|init_options|member|uint32_t init_options;
+DECL|init_groups|member|u32_t init_groups;
+DECL|init_options|member|u32_t init_options;
 DECL|init_p1|member|void *init_p1;
 DECL|init_p2|member|void *init_p2;
 DECL|init_p3|member|void *init_p3;
@@ -176,8 +176,8 @@ DECL|init_stack|member|char *init_stack;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
 DECL|k_cycle_get_32|macro|k_cycle_get_32
-DECL|k_delayed_work_remaining_get|function|static inline int32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
-DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,int32_t delay)
+DECL|k_delayed_work_remaining_get|function|static inline s32_t k_delayed_work_remaining_get(struct k_delayed_work *work)
+DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,s32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
 DECL|k_fifo_get|macro|k_fifo_get
 DECL|k_fifo_init|macro|k_fifo_init
@@ -196,11 +196,11 @@ DECL|k_mem_block|struct|struct k_mem_block {
 DECL|k_mem_pool_block_set|struct|struct k_mem_pool_block_set {
 DECL|k_mem_pool_quad_block|struct|struct k_mem_pool_quad_block {
 DECL|k_mem_pool|struct|struct k_mem_pool {
-DECL|k_mem_slab_num_free_get|function|static inline uint32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
-DECL|k_mem_slab_num_used_get|function|static inline uint32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
+DECL|k_mem_slab_num_free_get|function|static inline u32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
+DECL|k_mem_slab_num_used_get|function|static inline u32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
 DECL|k_mem_slab|struct|struct k_mem_slab {
-DECL|k_msgq_num_free_get|function|static inline uint32_t k_msgq_num_free_get(struct k_msgq *q)
-DECL|k_msgq_num_used_get|function|static inline uint32_t k_msgq_num_used_get(struct k_msgq *q)
+DECL|k_msgq_num_free_get|function|static inline u32_t k_msgq_num_free_get(struct k_msgq *q)
+DECL|k_msgq_num_used_get|function|static inline u32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
 DECL|k_pipe|struct|struct k_pipe {
@@ -216,7 +216,7 @@ DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
-DECL|k_timer_remaining_get|function|static inline int32_t k_timer_remaining_get(struct k_timer *timer)
+DECL|k_timer_remaining_get|function|static inline s32_t k_timer_remaining_get(struct k_timer *timer)
 DECL|k_timer_stop_t|typedef|typedef void (*k_timer_stop_t)(struct k_timer *timer);
 DECL|k_timer_user_data_get|function|static inline void *k_timer_user_data_get(struct k_timer *timer)
 DECL|k_timer_user_data_set|function|static inline void k_timer_user_data_set(struct k_timer *timer, void *user_data)
@@ -229,29 +229,29 @@ DECL|k_work_submit_to_queue|function|static inline void k_work_submit_to_queue(s
 DECL|k_work_submit|function|static inline void k_work_submit(struct k_work *work)
 DECL|k_work|struct|struct k_work {
 DECL|limit|member|unsigned int limit;
-DECL|lock_count|member|uint32_t lock_count;
+DECL|lock_count|member|u32_t lock_count;
 DECL|max_block_size|member|size_t max_block_size;
-DECL|max_msgs|member|uint32_t max_msgs;
+DECL|max_msgs|member|u32_t max_msgs;
 DECL|mem_blocks|member|char *mem_blocks; /* pointer to the first of four memory blocks */
-DECL|mem_status|member|uint32_t mem_status; /* four bits. If bit is set, memory block is
+DECL|mem_status|member|u32_t mem_status; /* four bits. If bit is set, memory block is
 DECL|min_block_size|member|size_t min_block_size;
-DECL|mode|member|uint32_t mode:1;
+DECL|mode|member|u32_t mode:1;
 DECL|msg_size|member|size_t msg_size;
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new(size_t size, void *ptr)
 DECL|new|function|inline void *operator new[](size_t size)
 DECL|new|function|inline void *operator new[](size_t size, void *ptr)
-DECL|next|member|uint32_t *base, *next, *top;
+DECL|next|member|u32_t *base, *next, *top;
 DECL|node|member|sys_dnode_t node;
-DECL|nr_of_block_sets|member|uint32_t nr_of_block_sets;
-DECL|nr_of_entries|member|uint32_t nr_of_entries; /* nr of quad block structures in the array */
-DECL|nr_of_maxblocks|member|uint32_t nr_of_maxblocks;
-DECL|num_blocks|member|uint32_t num_blocks;
-DECL|num_used|member|uint32_t num_used;
+DECL|nr_of_block_sets|member|u32_t nr_of_block_sets;
+DECL|nr_of_entries|member|u32_t nr_of_entries; /* nr of quad block structures in the array */
+DECL|nr_of_maxblocks|member|u32_t nr_of_maxblocks;
+DECL|num_blocks|member|u32_t num_blocks;
+DECL|num_used|member|u32_t num_used;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
-DECL|period|member|int32_t period;
+DECL|period|member|s32_t period;
 DECL|poll_event|member|struct k_poll_event *poll_event;
 DECL|poller|member|struct _poller *poller;
 DECL|pool_id|member|struct k_mem_pool *pool_id;
@@ -271,24 +271,24 @@ DECL|signaled|member|unsigned int signaled;
 DECL|signal|member|struct k_poll_signal *signal;
 DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
-DECL|state|member|uint32_t state:_POLL_NUM_STATES;
-DECL|status|member|uint32_t status;
+DECL|state|member|u32_t state:_POLL_NUM_STATES;
+DECL|status|member|u32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
-DECL|tag|member|uint32_t tag:8;
+DECL|tag|member|u32_t tag:8;
 DECL|tcs|macro|tcs
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|timeout|member|struct _timeout timeout;
 DECL|timeout|member|struct _timeout timeout;
-DECL|top|member|uint32_t *base, *next, *top;
+DECL|top|member|u32_t *base, *next, *top;
 DECL|tx_block|member|struct k_mem_block tx_block;
 DECL|tx_data|member|void *tx_data;
 DECL|tx_msg_queue|member|_wait_q_t tx_msg_queue;
 DECL|tx_target_thread|member|k_tid_t tx_target_thread;
-DECL|type|member|uint32_t type:_POLL_NUM_TYPES;
-DECL|unused|member|uint32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
-DECL|used_msgs|member|uint32_t used_msgs;
+DECL|type|member|u32_t type:_POLL_NUM_TYPES;
+DECL|unused|member|u32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
+DECL|used_msgs|member|u32_t used_msgs;
 DECL|user_data|member|void *user_data;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;

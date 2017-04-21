@@ -38,24 +38,24 @@ DECL|__esf|struct|struct __esf {
 DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
 DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
 DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32
-DECL|estatus|member|uint32_t estatus;
-DECL|instr|member|uint32_t instr; /* Instruction being executed when exc occurred */
+DECL|estatus|member|u32_t estatus;
+DECL|instr|member|u32_t instr; /* Instruction being executed when exc occurred */
 DECL|nios2_exception_cause|enum|enum nios2_exception_cause {
 DECL|paddr_t|typedef|typedef unsigned int paddr_t;
-DECL|r10|member|uint32_t r10; /* Caller-saved general purpose */
-DECL|r11|member|uint32_t r11; /* Caller-saved general purpose */
-DECL|r12|member|uint32_t r12; /* Caller-saved general purpose */
-DECL|r13|member|uint32_t r13; /* Caller-saved general purpose */
-DECL|r14|member|uint32_t r14; /* Caller-saved general purpose */
-DECL|r15|member|uint32_t r15; /* Caller-saved general purpose */
-DECL|r1|member|uint32_t r1; /* at */
-DECL|r2|member|uint32_t r2; /* return value */
-DECL|r3|member|uint32_t r3; /* return value */
-DECL|r4|member|uint32_t r4; /* register args */
-DECL|r5|member|uint32_t r5; /* register args */
-DECL|r6|member|uint32_t r6; /* register args */
-DECL|r7|member|uint32_t r7; /* register args */
-DECL|r8|member|uint32_t r8; /* Caller-saved general purpose */
-DECL|r9|member|uint32_t r9; /* Caller-saved general purpose */
-DECL|ra|member|uint32_t ra; /* return address r31 */
+DECL|r10|member|u32_t r10; /* Caller-saved general purpose */
+DECL|r11|member|u32_t r11; /* Caller-saved general purpose */
+DECL|r12|member|u32_t r12; /* Caller-saved general purpose */
+DECL|r13|member|u32_t r13; /* Caller-saved general purpose */
+DECL|r14|member|u32_t r14; /* Caller-saved general purpose */
+DECL|r15|member|u32_t r15; /* Caller-saved general purpose */
+DECL|r1|member|u32_t r1; /* at */
+DECL|r2|member|u32_t r2; /* return value */
+DECL|r3|member|u32_t r3; /* return value */
+DECL|r4|member|u32_t r4; /* register args */
+DECL|r5|member|u32_t r5; /* register args */
+DECL|r6|member|u32_t r6; /* register args */
+DECL|r7|member|u32_t r7; /* register args */
+DECL|r8|member|u32_t r8; /* Caller-saved general purpose */
+DECL|r9|member|u32_t r9; /* Caller-saved general purpose */
+DECL|ra|member|u32_t ra; /* return address r31 */
 DECL|vaddr_t|typedef|typedef unsigned int vaddr_t;

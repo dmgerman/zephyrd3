@@ -24,7 +24,7 @@ DECL|_IS_ENABLED2|macro|_IS_ENABLED2
 DECL|_IS_ENABLED3|macro|_IS_ENABLED3
 DECL|_UTIL__H_|macro|_UTIL__H_
 DECL|_XXXX1|macro|_XXXX1
-DECL|arithmetic_shift_right|function|static inline int64_t arithmetic_shift_right(int64_t value, uint8_t shift)
+DECL|arithmetic_shift_right|function|static inline s64_t arithmetic_shift_right(s64_t value, u8_t shift)
 DECL|ceiling_fraction|macro|ceiling_fraction
 DECL|is_power_of_two|function|static inline int is_power_of_two(unsigned int x)
 DECL|max|macro|max

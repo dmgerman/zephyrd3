@@ -6,8 +6,8 @@ DECL|_SW_ISR_TABLE__H_|macro|_SW_ISR_TABLE__H_
 DECL|_isr_list|struct|struct _isr_list {
 DECL|_isr_table_entry|struct|struct _isr_table_entry {
 DECL|arg|member|void *arg;
-DECL|flags|member|int32_t flags;
+DECL|flags|member|s32_t flags;
 DECL|func|member|void *func;
-DECL|irq|member|int32_t irq;
+DECL|irq|member|s32_t irq;
 DECL|isr|member|void (*isr)(void *);
 DECL|param|member|void *param;

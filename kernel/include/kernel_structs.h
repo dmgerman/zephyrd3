@@ -32,26 +32,26 @@ DECL|custom_data|member|void *custom_data;
 DECL|entry|member|struct __thread_entry *entry;
 DECL|errno_var|member|int errno_var;
 DECL|fn_abort|member|void (*fn_abort)(void);
-DECL|idle|member|int32_t idle; /* Number of ticks for kernel idling */
+DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
 DECL|init_data|member|void *init_data;
 DECL|irq_stack|member|char *irq_stack;
 DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_thread|struct|struct k_thread {
-DECL|nested|member|uint32_t nested;
+DECL|nested|member|u32_t nested;
 DECL|next_thread|member|struct k_thread *next_thread;
 DECL|pEntry|member|_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
-DECL|preempt|member|uint16_t preempt;
-DECL|prio_bmap|member|uint32_t prio_bmap[K_NUM_PRIO_BITMAPS];
-DECL|prio|member|int8_t prio;
+DECL|preempt|member|u16_t preempt;
+DECL|prio_bmap|member|u32_t prio_bmap[K_NUM_PRIO_BITMAPS];
+DECL|prio|member|s8_t prio;
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
-DECL|sched_locked|member|uint8_t sched_locked;
+DECL|sched_locked|member|u8_t sched_locked;
 DECL|swap_data|member|void *swap_data;
-DECL|thread_state|member|uint8_t thread_state;
+DECL|thread_state|member|u8_t thread_state;
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
 DECL|timeout_q|member|sys_dlist_t timeout_q;
 DECL|timeout|member|struct _timeout timeout;
-DECL|user_options|member|uint8_t user_options;
+DECL|user_options|member|u8_t user_options;

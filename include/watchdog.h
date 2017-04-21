@@ -27,7 +27,7 @@ DECL|interrupt_fn|member|void (*interrupt_fn)(struct device *dev);
 DECL|mode|member|enum wdt_mode mode;
 DECL|reload|member|wdt_api_reload reload;
 DECL|set_config|member|wdt_api_set_config set_config;
-DECL|timeout|member|uint32_t timeout;
+DECL|timeout|member|u32_t timeout;
 DECL|wdt_api_disable|typedef|typedef void (*wdt_api_disable)(struct device *dev);
 DECL|wdt_api_enable|typedef|typedef void (*wdt_api_enable)(struct device *dev);
 DECL|wdt_api_get_config|typedef|typedef void (*wdt_api_get_config)(struct device *dev,

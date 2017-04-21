@@ -17,10 +17,10 @@ DECL|USB_EP_DIR_IN|macro|USB_EP_DIR_IN
 DECL|USB_EP_DIR_MASK|macro|USB_EP_DIR_MASK
 DECL|USB_EP_DIR_OUT|macro|USB_EP_DIR_OUT
 DECL|__USB_DC_H__|macro|__USB_DC_H__
-DECL|ep_addr|member|uint8_t ep_addr;
-DECL|ep_mps|member|uint16_t ep_mps; /** Endpoint max packet size */
+DECL|ep_addr|member|u8_t ep_addr;
+DECL|ep_mps|member|u16_t ep_mps; /** Endpoint max packet size */
 DECL|ep_type|member|enum usb_dc_ep_type ep_type; /** Endpoint type */
-DECL|usb_dc_ep_callback|typedef|typedef void (*usb_dc_ep_callback)(uint8_t ep,
+DECL|usb_dc_ep_callback|typedef|typedef void (*usb_dc_ep_callback)(u8_t ep,
 DECL|usb_dc_ep_cb_status_code|enum|enum usb_dc_ep_cb_status_code {
 DECL|usb_dc_ep_cfg_data|struct|struct usb_dc_ep_cfg_data {
 DECL|usb_dc_ep_type|enum|enum usb_dc_ep_type {

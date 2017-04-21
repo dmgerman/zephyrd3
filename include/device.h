@@ -20,9 +20,9 @@ DECL|_INIT_LEVEL_PRE_KERNEL_2|variable|_INIT_LEVEL_PRE_KERNEL_2
 DECL|config_info|member|const void *config_info;
 DECL|config|member|struct device_config *config;
 DECL|device_config|struct|struct device_config {
-DECL|device_get_power_state|function|static inline int device_get_power_state(struct device *device, uint32_t *device_power_state)
-DECL|device_pm_control|member|int (*device_pm_control)(struct device *device, uint32_t command,
-DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, uint32_t device_power_state)
+DECL|device_get_power_state|function|static inline int device_get_power_state(struct device *device, u32_t *device_power_state)
+DECL|device_pm_control|member|int (*device_pm_control)(struct device *device, u32_t command,
+DECL|device_set_power_state|function|static inline int device_set_power_state(struct device *device, u32_t device_power_state)
 DECL|device|struct|struct device {
 DECL|driver_api|member|const void *driver_api;
 DECL|driver_data|member|void *driver_data;

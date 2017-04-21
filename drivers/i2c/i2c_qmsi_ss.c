@@ -12,7 +12,7 @@ DECL|i2c_ctx|member|qm_ss_i2c_context_t i2c_ctx;
 DECL|i2c_qmsi_ss_config_info|struct|struct i2c_qmsi_ss_config_info {
 DECL|i2c_qmsi_ss_config_irq_0|function|static void i2c_qmsi_ss_config_irq_0(void)
 DECL|i2c_qmsi_ss_config_irq_1|function|static void i2c_qmsi_ss_config_irq_1(void)
-DECL|i2c_qmsi_ss_configure|function|static int i2c_qmsi_ss_configure(struct device *dev, uint32_t config)
+DECL|i2c_qmsi_ss_configure|function|static int i2c_qmsi_ss_configure(struct device *dev, u32_t config)
 DECL|i2c_qmsi_ss_driver_data|struct|struct i2c_qmsi_ss_driver_data {
 DECL|i2c_qmsi_ss_init|function|static int i2c_qmsi_ss_init(struct device *dev)
 DECL|i2c_qmsi_ss_transfer|function|static int i2c_qmsi_ss_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)

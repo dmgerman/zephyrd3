@@ -40,7 +40,7 @@ DECL|glcd_function_set|function|void glcd_function_set(struct device *port, u8_t
 DECL|glcd_initialize|function|int glcd_initialize(struct device *port)
 DECL|glcd_input_state_get|function|u8_t glcd_input_state_get(struct device *port)
 DECL|glcd_input_state_set|function|void glcd_input_state_set(struct device *port, u8_t opt)
-DECL|glcd_print|function|void glcd_print(struct device *port, char *data, uint32_t size)
+DECL|glcd_print|function|void glcd_print(struct device *port, char *data, u32_t size)
 DECL|grove_lcd_config|variable|grove_lcd_config
 DECL|grove_lcd_driver|variable|grove_lcd_driver
 DECL|i2c|member|struct device *i2c;

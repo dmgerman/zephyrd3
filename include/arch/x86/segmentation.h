@@ -39,95 +39,95 @@ DECL|_SEGMENTATION_H|macro|_SEGMENTATION_H
 DECL|_SEGMENT_AND_OFFSET|macro|_SEGMENT_AND_OFFSET
 DECL|_SYS_DESC|macro|_SYS_DESC
 DECL|__packed|macro|__packed
-DECL|_far_call|function|static inline void _far_call(uint16_t sel, void *offset)
-DECL|_far_jump|function|static inline void _far_jump(uint16_t sel, void *offset)
-DECL|_get_cs|function|static inline uint16_t _get_cs(void)
-DECL|_get_ds|function|static inline uint16_t _get_ds(void)
+DECL|_far_call|function|static inline void _far_call(u16_t sel, void *offset)
+DECL|_far_jump|function|static inline void _far_jump(u16_t sel, void *offset)
+DECL|_get_cs|function|static inline u16_t _get_cs(void)
+DECL|_get_ds|function|static inline u16_t _get_ds(void)
 DECL|_get_gdt|function|static inline void _get_gdt(struct pseudo_descriptor *gdt)
 DECL|_get_idt|function|static inline void _get_idt(struct pseudo_descriptor *idt)
-DECL|_get_ldt|function|static inline uint16_t _get_ldt(void)
-DECL|_get_tss|function|static inline uint16_t _get_tss(void)
-DECL|_init_irq_gate|function|static inline void _init_irq_gate(struct segment_descriptor *sd, uint16_t seg_selector, uint32_t offset, uint32_t dpl)
-DECL|_sd_set_seg_offset|function|static inline void _sd_set_seg_offset(struct segment_descriptor *sd, uint16_t segment_selector, uint32_t offset)
+DECL|_get_ldt|function|static inline u16_t _get_ldt(void)
+DECL|_get_tss|function|static inline u16_t _get_tss(void)
+DECL|_init_irq_gate|function|static inline void _init_irq_gate(struct segment_descriptor *sd, u16_t seg_selector, u32_t offset, u32_t dpl)
+DECL|_sd_set_seg_offset|function|static inline void _sd_set_seg_offset(struct segment_descriptor *sd, u16_t segment_selector, u32_t offset)
 DECL|_set_gdt|function|static inline void _set_gdt(const struct pseudo_descriptor *gdt)
 DECL|_set_idt|function|static inline void _set_idt(const struct pseudo_descriptor *idt)
-DECL|_set_ldt|function|static inline void _set_ldt(uint16_t ldt)
-DECL|_set_tss|function|static inline void _set_tss(uint16_t sel)
-DECL|accessed|member|uint8_t accessed:1;
-DECL|always_0_0|member|uint8_t always_0_0:3;
-DECL|avl|member|uint8_t avl:1; /* CPU ignores this */
-DECL|backlink|member|uint16_t backlink;
-DECL|base_hi|member|uint8_t base_hi; /* Bits 24-31 */
-DECL|base_low|member|uint16_t base_low; /* Bits 0-15 */
-DECL|base_mid|member|uint8_t base_mid; /* Bits 16-23 */
-DECL|cd|member|uint8_t cd:1;
-DECL|cr3|member|uint32_t cr3;
-DECL|cs|member|uint16_t cs;
-DECL|db|member|uint8_t db:1; /* D/B field 1=32-bit 0=16-bit*/
-DECL|descriptor_type|member|uint8_t descriptor_type:1;
-DECL|dpl|member|uint8_t dpl:2;
-DECL|ds|member|uint16_t ds;
-DECL|eax|member|uint32_t eax;
-DECL|ebp|member|uint32_t ebp;
-DECL|ebx|member|uint32_t ebx;
-DECL|ecx|member|uint32_t ecx;
-DECL|edi|member|uint32_t edi;
-DECL|edx|member|uint32_t edx;
-DECL|eflags|member|uint32_t eflags;
-DECL|eip|member|uint32_t eip;
+DECL|_set_ldt|function|static inline void _set_ldt(u16_t ldt)
+DECL|_set_tss|function|static inline void _set_tss(u16_t sel)
+DECL|accessed|member|u8_t accessed:1;
+DECL|always_0_0|member|u8_t always_0_0:3;
+DECL|avl|member|u8_t avl:1; /* CPU ignores this */
+DECL|backlink|member|u16_t backlink;
+DECL|base_hi|member|u8_t base_hi; /* Bits 24-31 */
+DECL|base_low|member|u16_t base_low; /* Bits 0-15 */
+DECL|base_mid|member|u8_t base_mid; /* Bits 16-23 */
+DECL|cd|member|u8_t cd:1;
+DECL|cr3|member|u32_t cr3;
+DECL|cs|member|u16_t cs;
+DECL|db|member|u8_t db:1; /* D/B field 1=32-bit 0=16-bit*/
+DECL|descriptor_type|member|u8_t descriptor_type:1;
+DECL|dpl|member|u8_t dpl:2;
+DECL|ds|member|u16_t ds;
+DECL|eax|member|u32_t eax;
+DECL|ebp|member|u32_t ebp;
+DECL|ebx|member|u32_t ebx;
+DECL|ecx|member|u32_t ecx;
+DECL|edi|member|u32_t edi;
+DECL|edx|member|u32_t edx;
+DECL|eflags|member|u32_t eflags;
+DECL|eip|member|u32_t eip;
 DECL|entries|member|struct segment_descriptor *entries;
-DECL|esi|member|uint32_t esi;
-DECL|esp0|member|uint32_t esp0;
-DECL|esp1|member|uint32_t esp1;
-DECL|esp2|member|uint32_t esp2;
-DECL|esp|member|uint32_t esp;
-DECL|es|member|uint16_t es;
-DECL|executable|member|uint8_t executable:1;
+DECL|esi|member|u32_t esi;
+DECL|esp0|member|u32_t esp0;
+DECL|esp1|member|u32_t esp1;
+DECL|esp2|member|u32_t esp2;
+DECL|esp|member|u32_t esp;
+DECL|es|member|u16_t es;
+DECL|executable|member|u8_t executable:1;
 DECL|far_ptr|struct|struct __packed far_ptr {
-DECL|flags_l|member|uint8_t flags_l:1; /* L field */
-DECL|fs|member|uint16_t fs;
-DECL|granularity|member|uint8_t granularity:1;
-DECL|gs|member|uint16_t gs;
-DECL|index|member|uint16_t index:13;
-DECL|iomap|member|uint16_t iomap;
-DECL|ldt_ss|member|uint16_t ldt_ss;
-DECL|limit_hi|member|uint8_t limit_hi:4;
-DECL|limit_low|member|uint16_t limit_low;
-DECL|offset_hi|member|uint16_t offset_hi;
-DECL|offset_low|member|uint16_t offset_low;
+DECL|flags_l|member|u8_t flags_l:1; /* L field */
+DECL|fs|member|u16_t fs;
+DECL|granularity|member|u8_t granularity:1;
+DECL|gs|member|u16_t gs;
+DECL|index|member|u16_t index:13;
+DECL|iomap|member|u16_t iomap;
+DECL|ldt_ss|member|u16_t ldt_ss;
+DECL|limit_hi|member|u8_t limit_hi:4;
+DECL|limit_low|member|u16_t limit_low;
+DECL|offset_hi|member|u16_t offset_hi;
+DECL|offset_low|member|u16_t offset_low;
 DECL|offset|member|void *offset;
-DECL|present|member|uint8_t present:1;
+DECL|present|member|u8_t present:1;
 DECL|pseudo_descriptor|struct|struct __packed pseudo_descriptor {
-DECL|reserved_10|member|uint16_t reserved_10;
-DECL|reserved_11|member|uint16_t reserved_11;
-DECL|reserved_12|member|uint16_t reserved_12:15;
-DECL|reserved_1|member|uint16_t reserved_1;
-DECL|reserved_2|member|uint16_t reserved_2;
-DECL|reserved_3|member|uint16_t reserved_3;
-DECL|reserved_4|member|uint16_t reserved_4;
-DECL|reserved_5|member|uint16_t reserved_5;
-DECL|reserved_6|member|uint16_t reserved_6;
-DECL|reserved_7|member|uint16_t reserved_7;
-DECL|reserved_8|member|uint16_t reserved_8;
-DECL|reserved_9|member|uint16_t reserved_9;
-DECL|reserved_or_param|member|uint8_t reserved_or_param:5;
-DECL|reserved_task_gate_0|member|uint16_t reserved_task_gate_0;
-DECL|reserved_task_gate_1|member|uint8_t reserved_task_gate_1;
-DECL|reserved_task_gate_2|member|uint16_t reserved_task_gate_2;
-DECL|rpl|member|uint8_t rpl:2;
-DECL|rw|member|uint8_t rw:1;
+DECL|reserved_10|member|u16_t reserved_10;
+DECL|reserved_11|member|u16_t reserved_11;
+DECL|reserved_12|member|u16_t reserved_12:15;
+DECL|reserved_1|member|u16_t reserved_1;
+DECL|reserved_2|member|u16_t reserved_2;
+DECL|reserved_3|member|u16_t reserved_3;
+DECL|reserved_4|member|u16_t reserved_4;
+DECL|reserved_5|member|u16_t reserved_5;
+DECL|reserved_6|member|u16_t reserved_6;
+DECL|reserved_7|member|u16_t reserved_7;
+DECL|reserved_8|member|u16_t reserved_8;
+DECL|reserved_9|member|u16_t reserved_9;
+DECL|reserved_or_param|member|u8_t reserved_or_param:5;
+DECL|reserved_task_gate_0|member|u16_t reserved_task_gate_0;
+DECL|reserved_task_gate_1|member|u8_t reserved_task_gate_1;
+DECL|reserved_task_gate_2|member|u16_t reserved_task_gate_2;
+DECL|rpl|member|u8_t rpl:2;
+DECL|rw|member|u8_t rw:1;
 DECL|segment_descriptor|struct|struct __packed segment_descriptor {
-DECL|segment_selector|member|uint16_t segment_selector;
+DECL|segment_selector|member|u16_t segment_selector;
 DECL|segment_selector|struct|struct __packed segment_selector {
-DECL|sel|member|uint16_t sel;
-DECL|size|member|uint16_t size;
-DECL|ss0|member|uint16_t ss0;
-DECL|ss1|member|uint16_t ss1;
-DECL|ss2|member|uint16_t ss2;
-DECL|ss|member|uint16_t ss;
-DECL|table|member|uint8_t table:1; /* 0=gdt 1=ldt */
+DECL|sel|member|u16_t sel;
+DECL|size|member|u16_t size;
+DECL|ss0|member|u16_t ss0;
+DECL|ss1|member|u16_t ss1;
+DECL|ss2|member|u16_t ss2;
+DECL|ss|member|u16_t ss;
+DECL|table|member|u8_t table:1; /* 0=gdt 1=ldt */
 DECL|task_state_segment|struct|struct __packed task_state_segment {
-DECL|type|member|uint8_t type:4;
-DECL|t|member|uint8_t t:1; /* Trap bit */
-DECL|use_other_union|member|uint8_t use_other_union:4;
-DECL|val|member|uint16_t val;
+DECL|type|member|u8_t type:4;
+DECL|t|member|u8_t t:1; /* Trap bit */
+DECL|use_other_union|member|u8_t use_other_union:4;
+DECL|val|member|u16_t val;

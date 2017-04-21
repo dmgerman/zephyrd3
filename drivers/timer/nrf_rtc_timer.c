@@ -7,7 +7,7 @@ DECL|RTC_MIN_DELTA|macro|RTC_MIN_DELTA
 DECL|RTC_TICKS_PER_SYS_TICK|macro|RTC_TICKS_PER_SYS_TICK
 DECL|SYS_CLOCK_RTC|macro|SYS_CLOCK_RTC
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
-DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
+DECL|_timer_cycle_get_32|function|u32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t sys_ticks)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|expected_sys_ticks|variable|expected_sys_ticks

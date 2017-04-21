@@ -8,5 +8,5 @@ DECL|arm_bus_type_t|enum|enum arm_bus_type_t {
 DECL|arm_clock_control_t|struct|struct arm_clock_control_t {
 DECL|arm_soc_state_t|enum|enum arm_soc_state_t {
 DECL|bus|member|enum arm_bus_type_t bus;
-DECL|device|member|uint32_t device;
+DECL|device|member|u32_t device;
 DECL|state|member|enum arm_soc_state_t state;

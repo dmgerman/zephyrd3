@@ -132,14 +132,14 @@ DECL|_nios2_break|function|static inline void _nios2_break(void)
 DECL|_nios2_creg_read|macro|_nios2_creg_read
 DECL|_nios2_creg_write|macro|_nios2_creg_write
 DECL|_nios2_dcache_addr_flush|function|static inline void _nios2_dcache_addr_flush(void *addr)
-DECL|_nios2_dcache_flush|function|static inline void _nios2_dcache_flush(uint32_t offset)
+DECL|_nios2_dcache_flush|function|static inline void _nios2_dcache_flush(u32_t offset)
 DECL|_nios2_get_register_address|macro|_nios2_get_register_address
-DECL|_nios2_icache_flush|function|static inline void _nios2_icache_flush(uint32_t offset)
+DECL|_nios2_icache_flush|function|static inline void _nios2_icache_flush(u32_t offset)
 DECL|_nios2_pipeline_flush|function|static inline void _nios2_pipeline_flush(void)
-DECL|_nios2_read_et|function|static inline uint32_t _nios2_read_et(void)
-DECL|_nios2_read_sp|function|static inline uint32_t _nios2_read_sp(void)
-DECL|_nios2_reg_read|function|static inline uint32_t _nios2_reg_read(void *base, int regnum)
-DECL|_nios2_reg_write|function|static inline void _nios2_reg_write(void *base, int regnum, uint32_t data)
+DECL|_nios2_read_et|function|static inline u32_t _nios2_read_et(void)
+DECL|_nios2_read_sp|function|static inline u32_t _nios2_read_sp(void)
+DECL|_nios2_reg_read|function|static inline u32_t _nios2_reg_read(void *base, int regnum)
+DECL|_nios2_reg_write|function|static inline void _nios2_reg_write(void *base, int regnum, u32_t data)
 DECL|_nios2_report_stack_overflow|function|static inline void _nios2_report_stack_overflow(void)
-DECL|_nios2_write_et|function|static inline void _nios2_write_et(uint32_t et)
+DECL|_nios2_write_et|function|static inline void _nios2_write_et(u32_t et)
 DECL|nios2_creg|enum|enum nios2_creg {

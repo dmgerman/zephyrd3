@@ -6,5 +6,5 @@ DECL|_SCS_ICSR_UNPENDSV|macro|_SCS_ICSR_UNPENDSV
 DECL|_SCS_ICSR|macro|_SCS_ICSR
 DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
 DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
-DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(uint32_t op)
-DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(uint32_t op)
+DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(u32_t op)
+DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(u32_t op)

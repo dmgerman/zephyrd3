@@ -16,6 +16,6 @@ DECL|lb_size|member|unsigned int lb_size;
 DECL|line_buf|member|char *line_buf;
 DECL|rb_size32|member|unsigned int rb_size32;
 DECL|rb|member|struct ring_buf rb;
-DECL|ring_buf_data|member|uint32_t *ring_buf_data;
+DECL|ring_buf_data|member|u32_t *ring_buf_data;
 DECL|sem|member|struct k_sem sem;
 DECL|thread_stack|member|char *thread_stack;

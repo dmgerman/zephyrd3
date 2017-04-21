@@ -52,11 +52,11 @@ DECL|sensor_attribute|enum|enum sensor_attribute {
 DECL|sensor_channel_get_t|typedef|typedef int (*sensor_channel_get_t)(struct device *dev,
 DECL|sensor_channel_get|function|static inline int sensor_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|sensor_channel|enum|enum sensor_channel {
-DECL|sensor_degrees_to_rad|function|static inline void sensor_degrees_to_rad(int32_t d, struct sensor_value *rad)
+DECL|sensor_degrees_to_rad|function|static inline void sensor_degrees_to_rad(s32_t d, struct sensor_value *rad)
 DECL|sensor_driver_api|struct|struct sensor_driver_api {
-DECL|sensor_g_to_ms2|function|static inline void sensor_g_to_ms2(int32_t g, struct sensor_value *ms2)
-DECL|sensor_ms2_to_g|function|static inline int32_t sensor_ms2_to_g(const struct sensor_value *ms2)
-DECL|sensor_rad_to_degrees|function|static inline int32_t sensor_rad_to_degrees(const struct sensor_value *rad)
+DECL|sensor_g_to_ms2|function|static inline void sensor_g_to_ms2(s32_t g, struct sensor_value *ms2)
+DECL|sensor_ms2_to_g|function|static inline s32_t sensor_ms2_to_g(const struct sensor_value *ms2)
+DECL|sensor_rad_to_degrees|function|static inline s32_t sensor_rad_to_degrees(const struct sensor_value *rad)
 DECL|sensor_sample_fetch_chan|function|static inline int sensor_sample_fetch_chan(struct device *dev, enum sensor_channel type)
 DECL|sensor_sample_fetch_t|typedef|typedef int (*sensor_sample_fetch_t)(struct device *dev,
 DECL|sensor_sample_fetch|function|static inline int sensor_sample_fetch(struct device *dev)
@@ -69,5 +69,5 @@ DECL|sensor_value_to_double|function|static inline double sensor_value_to_double
 DECL|sensor_value|struct|struct sensor_value {
 DECL|trigger_set|member|sensor_trigger_set_t trigger_set;
 DECL|type|member|enum sensor_trigger_type type;
-DECL|val1|member|int32_t val1;
-DECL|val2|member|int32_t val2;
+DECL|val1|member|s32_t val1;
+DECL|val2|member|s32_t val2;

@@ -87,6 +87,6 @@ DECL|STM32F4X_CLOCK_ENABLE_USART3|enumerator|STM32F4X_CLOCK_ENABLE_USART3 = 1 <<
 DECL|STM32F4X_CLOCK_ENABLE_USART6|enumerator|STM32F4X_CLOCK_ENABLE_USART6 = 1 << 5,
 DECL|STM32F4X_CLOCK_ENABLE_WWDG|enumerator|STM32F4X_CLOCK_ENABLE_WWDG = 1 << 11,
 DECL|_STM32F4_CLOCK_CONTROL_H_|macro|_STM32F4_CLOCK_CONTROL_H_
-DECL|bus|member|uint32_t bus;
-DECL|enr|member|uint32_t enr;
+DECL|bus|member|u32_t bus;
+DECL|enr|member|u32_t enr;
 DECL|stm32f4x_pclken|struct|struct stm32f4x_pclken {

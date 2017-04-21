@@ -9,7 +9,7 @@ DECL|_IRQ_PRIO_OFFSET|macro|_IRQ_PRIO_OFFSET
 DECL|_ZERO_LATENCY_IRQS_RESERVED_PRIO|macro|_ZERO_LATENCY_IRQS_RESERVED_PRIO
 DECL|_ZERO_LATENCY_IRQS_RESERVED_PRIO|macro|_ZERO_LATENCY_IRQS_RESERVED_PRIO
 DECL|__esf|struct|struct __esf {
-DECL|fpscr|member|uint32_t fpscr;
+DECL|fpscr|member|u32_t fpscr;
 DECL|s|member|float s[16];
-DECL|undefined|member|uint32_t undefined;
-DECL|xpsr|member|uint32_t xpsr;
+DECL|undefined|member|u32_t undefined;
+DECL|xpsr|member|u32_t xpsr;

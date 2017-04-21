@@ -663,119 +663,119 @@ DECL|SYS_PCI_REQUEST_WRITE_ADDR|macro|SYS_PCI_REQUEST_WRITE_ADDR
 DECL|SYS_PCI_REQUEST_WRITE_DATA|macro|SYS_PCI_REQUEST_WRITE_DATA
 DECL|__inc_pci_mgr_h|macro|__inc_pci_mgr_h
 DECL|_pci_msi_hdr|struct|struct _pci_msi_hdr {
-DECL|addr_high|member|uint32_t addr_high; /* message address register
-DECL|addr_low|member|uint32_t addr_low; /* message address register
-DECL|addr|member|uint32_t addr; /* message address register */
-DECL|bar0|member|uint32_t bar0; /* offset 10: base address register 0 */
-DECL|bar0|member|uint32_t bar0; /* offset 10: base address register 0 */
-DECL|bar1|member|uint32_t bar1; /* offset 14: base address register 0 */
-DECL|bar1|member|uint32_t bar1; /* offset 14: base address register 0 */
-DECL|bar2|member|uint32_t bar2; /* offset 18: base address register 0 */
-DECL|bar3|member|uint32_t bar3; /* offset 1C: base address register 0 */
-DECL|bar4|member|uint32_t bar4; /* offset 20: base address register 0 */
-DECL|bar5|member|uint32_t bar5; /* offset 24: base address register 0 */
-DECL|bist|member|uint32_t bist : 8;
-DECL|bist|member|uint32_t bist : 8;
-DECL|bist|member|uint32_t bist : 8;
-DECL|bist|member|uint32_t bist : 8;
-DECL|bridge_control|member|uint32_t bridge_control : 16;
-DECL|bridge_control|member|uint32_t bridge_control : 16;
+DECL|addr_high|member|u32_t addr_high; /* message address register
+DECL|addr_low|member|u32_t addr_low; /* message address register
+DECL|addr|member|u32_t addr; /* message address register */
+DECL|bar0|member|u32_t bar0; /* offset 10: base address register 0 */
+DECL|bar0|member|u32_t bar0; /* offset 10: base address register 0 */
+DECL|bar1|member|u32_t bar1; /* offset 14: base address register 0 */
+DECL|bar1|member|u32_t bar1; /* offset 14: base address register 0 */
+DECL|bar2|member|u32_t bar2; /* offset 18: base address register 0 */
+DECL|bar3|member|u32_t bar3; /* offset 1C: base address register 0 */
+DECL|bar4|member|u32_t bar4; /* offset 20: base address register 0 */
+DECL|bar5|member|u32_t bar5; /* offset 24: base address register 0 */
+DECL|bist|member|u32_t bist : 8;
+DECL|bist|member|u32_t bist : 8;
+DECL|bist|member|u32_t bist : 8;
+DECL|bist|member|u32_t bist : 8;
+DECL|bridge_control|member|u32_t bridge_control : 16;
+DECL|bridge_control|member|u32_t bridge_control : 16;
 DECL|bridge_field|member|} bridge_field;
-DECL|bus_no|member|uint32_t bus_no;
-DECL|bus|member|uint32_t bus : 8; /* PCI bus number */
-DECL|bus|member|uint32_t bus : 8; /* PCI bus number */
-DECL|cache_line|member|uint32_t cache_line : 8;
-DECL|cache_line|member|uint32_t cache_line : 8;
-DECL|cache_line|member|uint32_t cache_line : 8;
-DECL|cache_line|member|uint32_t cache_line : 8;
-DECL|capability_ptr|member|uint32_t capability_ptr : 8;
-DECL|capability_ptr|member|uint32_t capability_ptr : 8;
-DECL|capability_ptr|member|uint32_t capability_ptr : 8;
-DECL|capability_ptr|member|uint32_t capability_ptr : 8;
+DECL|bus_no|member|u32_t bus_no;
+DECL|bus|member|u32_t bus : 8; /* PCI bus number */
+DECL|bus|member|u32_t bus : 8; /* PCI bus number */
+DECL|cache_line|member|u32_t cache_line : 8;
+DECL|cache_line|member|u32_t cache_line : 8;
+DECL|cache_line|member|u32_t cache_line : 8;
+DECL|cache_line|member|u32_t cache_line : 8;
+DECL|capability_ptr|member|u32_t capability_ptr : 8;
+DECL|capability_ptr|member|u32_t capability_ptr : 8;
+DECL|capability_ptr|member|u32_t capability_ptr : 8;
+DECL|capability_ptr|member|u32_t capability_ptr : 8;
 DECL|cap|member|} cap;
-DECL|cardbus|member|uint32_t cardbus; /* offset 28: base address register 0 */
+DECL|cardbus|member|u32_t cardbus; /* offset 28: base address register 0 */
 DECL|class|macro|class
 DECL|class|macro|class
-DECL|class|member|uint32_t class : 8;
-DECL|class|member|uint32_t class : 8;
-DECL|class|member|uint32_t class : 8;
-DECL|class|member|uint32_t class : 8;
-DECL|command|member|uint32_t command
-DECL|command|member|uint32_t command
-DECL|command|member|uint32_t command : 16; /* device command register */
-DECL|command|member|uint32_t command : 16; /* device command register */
-DECL|data|member|uint32_t data : 16; /* message data register */
-DECL|data|member|uint32_t data : 16; /* message data register */
-DECL|dev_no|member|uint32_t dev_no;
-DECL|device_id|member|uint32_t device_id
-DECL|device_id|member|uint32_t device_id
-DECL|device|member|uint32_t device : 5; /* PCI device number */
-DECL|device|member|uint32_t device : 5; /* PCI device number */
-DECL|enabled|member|uint32_t enabled : 1; /* MSI enabled */
-DECL|enabled|member|uint32_t enabled : 1; /* MSI-x enabled */
-DECL|enable|member|uint32_t enable : 1; /* access enabled */
-DECL|entry|member|uint16_t entry; /* driver to specify entry, guest OS writes */
-DECL|feature|member|uint32_t feature
+DECL|class|member|u32_t class : 8;
+DECL|class|member|u32_t class : 8;
+DECL|class|member|u32_t class : 8;
+DECL|class|member|u32_t class : 8;
+DECL|command|member|u32_t command
+DECL|command|member|u32_t command
+DECL|command|member|u32_t command : 16; /* device command register */
+DECL|command|member|u32_t command : 16; /* device command register */
+DECL|data|member|u32_t data : 16; /* message data register */
+DECL|data|member|u32_t data : 16; /* message data register */
+DECL|dev_no|member|u32_t dev_no;
+DECL|device_id|member|u32_t device_id
+DECL|device_id|member|u32_t device_id
+DECL|device|member|u32_t device : 5; /* PCI device number */
+DECL|device|member|u32_t device : 5; /* PCI device number */
+DECL|enabled|member|u32_t enabled : 1; /* MSI enabled */
+DECL|enabled|member|u32_t enabled : 1; /* MSI-x enabled */
+DECL|enable|member|u32_t enable : 1; /* access enabled */
+DECL|entry|member|u16_t entry; /* driver to specify entry, guest OS writes */
+DECL|feature|member|u32_t feature
 DECL|field|member|struct _pci_msi_hdr field; /* MSI header fields */
 DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
 DECL|field|member|} field;
-DECL|func_mask|member|uint32_t func_mask : 1; /* 1 for vectors masked */
-DECL|func_no|member|uint32_t func_no;
-DECL|func|member|uint32_t func : 3; /* device function number */
-DECL|func|member|uint32_t func : 3; /* device function number */
-DECL|hdr_type|member|uint32_t hdr_type : 8;
-DECL|hdr_type|member|uint32_t hdr_type : 8;
-DECL|hdr_type|member|uint32_t hdr_type : 8;
-DECL|hdr_type|member|uint32_t hdr_type : 8;
-DECL|id|member|uint32_t id : 16; /* capability ID */
-DECL|id|member|uint32_t id : 8; /* capability ID */
-DECL|id|member|uint32_t id : 8; /* capability ID */
-DECL|id|member|uint32_t id : 8; /* capability ID */
-DECL|interrupt_line|member|uint32_t interrupt_line
-DECL|interrupt_line|member|uint32_t interrupt_line
-DECL|interrupt_line|member|uint32_t interrupt_line
-DECL|interrupt_line|member|uint32_t interrupt_line
-DECL|interrupt_pin|member|uint32_t interrupt_pin
-DECL|interrupt_pin|member|uint32_t interrupt_pin
-DECL|interrupt_pin|member|uint32_t interrupt_pin
-DECL|interrupt_pin|member|uint32_t interrupt_pin
-DECL|io_base_upper|member|uint32_t io_base_upper : 16;
-DECL|io_base_upper|member|uint32_t io_base_upper : 16;
-DECL|io_base|member|uint32_t io_base : 8;
-DECL|io_base|member|uint32_t io_base : 8;
-DECL|io_limit_upper|member|uint32_t io_limit_upper : 16;
-DECL|io_limit_upper|member|uint32_t io_limit_upper : 16;
-DECL|io_limit|member|uint32_t io_limit : 8;
-DECL|io_limit|member|uint32_t io_limit : 8;
-DECL|is_64_bit|member|uint32_t is_64_bit : 1; /* 64-bit capable */
-DECL|latency_timer|member|uint32_t latency_timer : 8;
-DECL|latency_timer|member|uint32_t latency_timer : 8;
-DECL|latency_timer|member|uint32_t latency_timer : 8;
-DECL|latency_timer|member|uint32_t latency_timer : 8;
-DECL|max_latency|member|uint32_t max_latency : 8;
-DECL|max_latency|member|uint32_t max_latency : 8;
-DECL|mem_base|member|uint32_t mem_base : 16;
-DECL|mem_base|member|uint32_t mem_base : 16;
-DECL|mem_limit|member|uint32_t mem_limit : 16;
-DECL|mem_limit|member|uint32_t mem_limit : 16;
-DECL|min_grant|member|uint32_t min_grant : 8;
-DECL|min_grant|member|uint32_t min_grant : 8;
-DECL|msg_addr_high|member|uint32_t msg_addr_high;
-DECL|msg_addr|member|uint32_t msg_addr;
-DECL|msg_data|member|uint32_t msg_data;
-DECL|msg_grant|member|uint32_t msg_grant : 3; /* granted message count */
-DECL|msg_req|member|uint32_t msg_req : 3; /* requested message count */
+DECL|func_mask|member|u32_t func_mask : 1; /* 1 for vectors masked */
+DECL|func_no|member|u32_t func_no;
+DECL|func|member|u32_t func : 3; /* device function number */
+DECL|func|member|u32_t func : 3; /* device function number */
+DECL|hdr_type|member|u32_t hdr_type : 8;
+DECL|hdr_type|member|u32_t hdr_type : 8;
+DECL|hdr_type|member|u32_t hdr_type : 8;
+DECL|hdr_type|member|u32_t hdr_type : 8;
+DECL|id|member|u32_t id : 16; /* capability ID */
+DECL|id|member|u32_t id : 8; /* capability ID */
+DECL|id|member|u32_t id : 8; /* capability ID */
+DECL|id|member|u32_t id : 8; /* capability ID */
+DECL|interrupt_line|member|u32_t interrupt_line
+DECL|interrupt_line|member|u32_t interrupt_line
+DECL|interrupt_line|member|u32_t interrupt_line
+DECL|interrupt_line|member|u32_t interrupt_line
+DECL|interrupt_pin|member|u32_t interrupt_pin
+DECL|interrupt_pin|member|u32_t interrupt_pin
+DECL|interrupt_pin|member|u32_t interrupt_pin
+DECL|interrupt_pin|member|u32_t interrupt_pin
+DECL|io_base_upper|member|u32_t io_base_upper : 16;
+DECL|io_base_upper|member|u32_t io_base_upper : 16;
+DECL|io_base|member|u32_t io_base : 8;
+DECL|io_base|member|u32_t io_base : 8;
+DECL|io_limit_upper|member|u32_t io_limit_upper : 16;
+DECL|io_limit_upper|member|u32_t io_limit_upper : 16;
+DECL|io_limit|member|u32_t io_limit : 8;
+DECL|io_limit|member|u32_t io_limit : 8;
+DECL|is_64_bit|member|u32_t is_64_bit : 1; /* 64-bit capable */
+DECL|latency_timer|member|u32_t latency_timer : 8;
+DECL|latency_timer|member|u32_t latency_timer : 8;
+DECL|latency_timer|member|u32_t latency_timer : 8;
+DECL|latency_timer|member|u32_t latency_timer : 8;
+DECL|max_latency|member|u32_t max_latency : 8;
+DECL|max_latency|member|u32_t max_latency : 8;
+DECL|mem_base|member|u32_t mem_base : 16;
+DECL|mem_base|member|u32_t mem_base : 16;
+DECL|mem_limit|member|u32_t mem_limit : 16;
+DECL|mem_limit|member|u32_t mem_limit : 16;
+DECL|min_grant|member|u32_t min_grant : 8;
+DECL|min_grant|member|u32_t min_grant : 8;
+DECL|msg_addr_high|member|u32_t msg_addr_high;
+DECL|msg_addr|member|u32_t msg_addr;
+DECL|msg_data|member|u32_t msg_data;
+DECL|msg_grant|member|u32_t msg_grant : 3; /* granted message count */
+DECL|msg_req|member|u32_t msg_req : 3; /* requested message count */
 DECL|msi_cap|member|} msi_cap;
 DECL|msix_cap|member|} msix_cap;
-DECL|msix_vec|member|uint32_t msix_vec;
-DECL|next_ptr|member|uint32_t next_ptr
-DECL|next_ptr|member|uint32_t next_ptr
-DECL|next_ptr|member|uint32_t next_ptr : 8; /* pointer to next capability */
-DECL|next_ptr|member|uint32_t next_ptr : 8; /* pointer to next capability */
-DECL|offset|member|uint32_t offset : 2; /* offset for access data */
+DECL|msix_vec|member|u32_t msix_vec;
+DECL|next_ptr|member|u32_t next_ptr
+DECL|next_ptr|member|u32_t next_ptr
+DECL|next_ptr|member|u32_t next_ptr : 8; /* pointer to next capability */
+DECL|next_ptr|member|u32_t next_ptr : 8; /* pointer to next capability */
+DECL|offset|member|u32_t offset : 2; /* offset for access data */
 DECL|pci_addr_reg|union|union pci_addr_reg {
 DECL|pci_cap_hdr_t|variable|pci_cap_hdr_t
 DECL|pci_cap_hdr|union|union pci_cap_hdr {
@@ -786,88 +786,88 @@ DECL|pci_msix_info|struct|struct pci_msix_info {
 DECL|pci_msix_table|struct|struct pci_msix_table {
 DECL|pcie_addr_reg|union|union pcie_addr_reg {
 DECL|pcie_cap_hdr|union|union pcie_cap_hdr {
-DECL|pre_mem_base_upper|member|uint32_t pre_mem_base_upper;
-DECL|pre_mem_base|member|uint32_t pre_mem_base : 16;
-DECL|pre_mem_base|member|uint32_t pre_mem_base : 16;
-DECL|pre_mem_limit_upper|member|uint32_t pre_mem_limit_upper;
-DECL|pre_mem_limit|member|uint32_t pre_mem_limit : 16;
-DECL|pre_mem_limit|member|uint32_t pre_mem_limit : 16;
-DECL|primary_bus|member|uint32_t primary_bus : 8;
-DECL|primary_bus|member|uint32_t primary_bus : 8;
-DECL|reg_if|member|uint32_t reg_if : 8;
-DECL|reg_if|member|uint32_t reg_if : 8;
-DECL|reg_if|member|uint32_t reg_if : 8;
-DECL|reg_if|member|uint32_t reg_if : 8;
+DECL|pre_mem_base_upper|member|u32_t pre_mem_base_upper;
+DECL|pre_mem_base|member|u32_t pre_mem_base : 16;
+DECL|pre_mem_base|member|u32_t pre_mem_base : 16;
+DECL|pre_mem_limit_upper|member|u32_t pre_mem_limit_upper;
+DECL|pre_mem_limit|member|u32_t pre_mem_limit : 16;
+DECL|pre_mem_limit|member|u32_t pre_mem_limit : 16;
+DECL|primary_bus|member|u32_t primary_bus : 8;
+DECL|primary_bus|member|u32_t primary_bus : 8;
+DECL|reg_if|member|u32_t reg_if : 8;
+DECL|reg_if|member|u32_t reg_if : 8;
+DECL|reg_if|member|u32_t reg_if : 8;
+DECL|reg_if|member|u32_t reg_if : 8;
 DECL|regs32|member|} regs32;
 DECL|regs64|member|} regs64;
 DECL|regs|member|} regs;
-DECL|reg|member|uint32_t reg : 10; /* config space register number */
-DECL|reg|member|uint32_t reg : 6; /* config space register number */
-DECL|reserved0|member|uint32_t reserved0 : 2;
-DECL|reserved1|member|uint32_t reserved1 : 24;
-DECL|reserved1|member|uint32_t reserved1 : 24;
-DECL|reserved1|member|uint32_t reserved1 : 4;
-DECL|reserved1|member|uint32_t reserved1 : 7;
-DECL|reserved2|member|uint32_t reserved2; /* offset 38: */
-DECL|reserved|member|uint32_t reserved : 24;
-DECL|reserved|member|uint32_t reserved : 24;
-DECL|reserved|member|uint32_t reserved : 3; /* */
-DECL|reserved|member|uint32_t reserved : 8; /* */
-DECL|revision|member|uint32_t revision : 8;
-DECL|revision|member|uint32_t revision : 8;
-DECL|revision|member|uint32_t revision : 8;
-DECL|revision|member|uint32_t revision : 8;
-DECL|rom_address|member|uint32_t rom_address;
-DECL|rom_address|member|uint32_t rom_address;
-DECL|secondary_bus|member|uint32_t secondary_bus : 8;
-DECL|secondary_bus|member|uint32_t secondary_bus : 8;
-DECL|secondary_latency|member|uint32_t secondary_latency : 8;
-DECL|secondary_latency|member|uint32_t secondary_latency : 8;
-DECL|secondary_status|member|uint32_t secondary_status : 16;
-DECL|secondary_status|member|uint32_t secondary_status : 16;
-DECL|spare|member|uint32_t spare : 16; /* */
-DECL|spare|member|uint32_t spare : 16; /* */
-DECL|status|member|uint32_t status : 16; /* device status */
-DECL|status|member|uint32_t status : 16; /* device status */
-DECL|status|member|uint32_t status : 16; /* device status */
-DECL|status|member|uint32_t status : 16; /* device status */
-DECL|subclass|member|uint32_t subclass : 8;
-DECL|subclass|member|uint32_t subclass : 8;
-DECL|subclass|member|uint32_t subclass : 8;
-DECL|subclass|member|uint32_t subclass : 8;
-DECL|subord_bus|member|uint32_t subord_bus : 8;
-DECL|subord_bus|member|uint32_t subord_bus : 8;
-DECL|subsys_id|member|uint32_t subsys_id
-DECL|subsys_id|member|uint32_t subsys_id
-DECL|subvendor_id|member|uint32_t subvendor_id
-DECL|subvendor_id|member|uint32_t subvendor_id
-DECL|table_size|member|uint32_t table_size : 11; /* MSI-x table size */
-DECL|value|member|uint32_t value;
-DECL|value|member|uint32_t value;
-DECL|vec_ctrl|member|uint32_t vec_ctrl;
-DECL|vector|member|uint32_t vector; /* guest to write a vector */
-DECL|vendor_id|member|uint32_t vendor_id
-DECL|vendor_id|member|uint32_t vendor_id
-DECL|version|member|uint32_t version : 4; /* version */
-DECL|word0|member|uint32_t word0; /* word 0: offset 00 */
-DECL|word10|member|uint32_t word10; /* word 10: offset 28 */
-DECL|word11|member|uint32_t word11; /* word 11: offset 2C */
-DECL|word12|member|uint32_t word12; /* word 12: offset 30 */
-DECL|word13|member|uint32_t word13; /* word 13: offset 34 */
-DECL|word14|member|uint32_t word14; /* word 14: offset 38 */
-DECL|word15|member|uint32_t word15; /* word 15: offset 3C */
-DECL|word1|member|uint32_t word1; /* word 1: offset 04 */
-DECL|word2|member|uint32_t word2; /* word 2: offset 08 */
-DECL|word3|member|uint32_t word3; /* word 3: offset 0C */
-DECL|word4|member|uint32_t word4; /* word 4: offset 10 */
-DECL|word5|member|uint32_t word5; /* word 5: offset 14 */
-DECL|word6|member|uint32_t word6; /* word 6: offset 18 */
-DECL|word7|member|uint32_t word7; /* word 7: offset 1C */
-DECL|word8|member|uint32_t word8; /* word 8: offset 20 */
-DECL|word9|member|uint32_t word9; /* word 9: offset 24 */
+DECL|reg|member|u32_t reg : 10; /* config space register number */
+DECL|reg|member|u32_t reg : 6; /* config space register number */
+DECL|reserved0|member|u32_t reserved0 : 2;
+DECL|reserved1|member|u32_t reserved1 : 24;
+DECL|reserved1|member|u32_t reserved1 : 24;
+DECL|reserved1|member|u32_t reserved1 : 4;
+DECL|reserved1|member|u32_t reserved1 : 7;
+DECL|reserved2|member|u32_t reserved2; /* offset 38: */
+DECL|reserved|member|u32_t reserved : 24;
+DECL|reserved|member|u32_t reserved : 24;
+DECL|reserved|member|u32_t reserved : 3; /* */
+DECL|reserved|member|u32_t reserved : 8; /* */
+DECL|revision|member|u32_t revision : 8;
+DECL|revision|member|u32_t revision : 8;
+DECL|revision|member|u32_t revision : 8;
+DECL|revision|member|u32_t revision : 8;
+DECL|rom_address|member|u32_t rom_address;
+DECL|rom_address|member|u32_t rom_address;
+DECL|secondary_bus|member|u32_t secondary_bus : 8;
+DECL|secondary_bus|member|u32_t secondary_bus : 8;
+DECL|secondary_latency|member|u32_t secondary_latency : 8;
+DECL|secondary_latency|member|u32_t secondary_latency : 8;
+DECL|secondary_status|member|u32_t secondary_status : 16;
+DECL|secondary_status|member|u32_t secondary_status : 16;
+DECL|spare|member|u32_t spare : 16; /* */
+DECL|spare|member|u32_t spare : 16; /* */
+DECL|status|member|u32_t status : 16; /* device status */
+DECL|status|member|u32_t status : 16; /* device status */
+DECL|status|member|u32_t status : 16; /* device status */
+DECL|status|member|u32_t status : 16; /* device status */
+DECL|subclass|member|u32_t subclass : 8;
+DECL|subclass|member|u32_t subclass : 8;
+DECL|subclass|member|u32_t subclass : 8;
+DECL|subclass|member|u32_t subclass : 8;
+DECL|subord_bus|member|u32_t subord_bus : 8;
+DECL|subord_bus|member|u32_t subord_bus : 8;
+DECL|subsys_id|member|u32_t subsys_id
+DECL|subsys_id|member|u32_t subsys_id
+DECL|subvendor_id|member|u32_t subvendor_id
+DECL|subvendor_id|member|u32_t subvendor_id
+DECL|table_size|member|u32_t table_size : 11; /* MSI-x table size */
+DECL|value|member|u32_t value;
+DECL|value|member|u32_t value;
+DECL|vec_ctrl|member|u32_t vec_ctrl;
+DECL|vector|member|u32_t vector; /* guest to write a vector */
+DECL|vendor_id|member|u32_t vendor_id
+DECL|vendor_id|member|u32_t vendor_id
+DECL|version|member|u32_t version : 4; /* version */
+DECL|word0|member|u32_t word0; /* word 0: offset 00 */
+DECL|word10|member|u32_t word10; /* word 10: offset 28 */
+DECL|word11|member|u32_t word11; /* word 11: offset 2C */
+DECL|word12|member|u32_t word12; /* word 12: offset 30 */
+DECL|word13|member|u32_t word13; /* word 13: offset 34 */
+DECL|word14|member|u32_t word14; /* word 14: offset 38 */
+DECL|word15|member|u32_t word15; /* word 15: offset 3C */
+DECL|word1|member|u32_t word1; /* word 1: offset 04 */
+DECL|word2|member|u32_t word2; /* word 2: offset 08 */
+DECL|word3|member|u32_t word3; /* word 3: offset 0C */
+DECL|word4|member|u32_t word4; /* word 4: offset 10 */
+DECL|word5|member|u32_t word5; /* word 5: offset 14 */
+DECL|word6|member|u32_t word6; /* word 6: offset 18 */
+DECL|word7|member|u32_t word7; /* word 7: offset 1C */
+DECL|word8|member|u32_t word8; /* word 8: offset 20 */
+DECL|word9|member|u32_t word9; /* word 9: offset 24 */
 DECL|words|member|} words;
-DECL|word|member|uint32_t word; /* array of words for the header */
-DECL|word|member|uint32_t word; /* array of words for the header */
-DECL|word|member|uint32_t word[4]; /* array of words for the header */
-DECL|word|member|uint32_t word[PCI_HEADER_WORDS];
+DECL|word|member|u32_t word; /* array of words for the header */
+DECL|word|member|u32_t word; /* array of words for the header */
+DECL|word|member|u32_t word[4]; /* array of words for the header */
+DECL|word|member|u32_t word[PCI_HEADER_WORDS];
 DECL|word|member|} word;
