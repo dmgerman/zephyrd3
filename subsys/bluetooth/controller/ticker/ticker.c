@@ -38,7 +38,7 @@ DECL|node|member|struct ticker_node *node;
 DECL|op_context|member|void *op_context;
 DECL|op|member|enum ticker_user_op_type op;
 DECL|params|member|} params;
-DECL|prepare_ticks_to_expire|function|static void prepare_ticks_to_expire(struct ticker_node *ticker,u32_t ticks_current, u32_t ticks_at_start)
+DECL|prepare_ticks_to_expire|function|static void prepare_ticks_to_expire(struct ticker_node *ticker, u32_t ticks_current, u32_t ticks_at_start)
 DECL|remainder_current|member|u32_t remainder_current;
 DECL|remainder_periodic|member|u32_t remainder_periodic;
 DECL|remainder_periodic|member|u32_t remainder_periodic;
@@ -47,8 +47,8 @@ DECL|slot_get|member|struct ticker_user_op_slot_get slot_get;
 DECL|start|member|struct ticker_user_op_start start;
 DECL|status|member|u32_t status;
 DECL|ticker_by_next_slot_get|function|static void ticker_by_next_slot_get(struct ticker_instance *instance, u8_t *ticker_id_head, u32_t *ticks_current, u32_t *ticks_to_expire)
-DECL|ticker_by_slot_get|function|static u8_t ticker_by_slot_get(struct ticker_node *node,u8_t ticker_id_head, u32_t ticks_slot)
-DECL|ticker_dequeue|function|static u32_t ticker_dequeue(struct ticker_instance *instance,u8_t id)
+DECL|ticker_by_slot_get|function|static u8_t ticker_by_slot_get(struct ticker_node *node, u8_t ticker_id_head, u32_t ticks_slot)
+DECL|ticker_dequeue|function|static u32_t ticker_dequeue(struct ticker_instance *instance, u8_t id)
 DECL|ticker_enqueue|function|static u8_t ticker_enqueue(struct ticker_instance *instance, u8_t id)
 DECL|ticker_id_head|member|u8_t ticker_id_head;
 DECL|ticker_id_slot_previous|member|u8_t ticker_id_slot_previous;
@@ -66,7 +66,7 @@ DECL|ticker_job_idle_get|function|u32_t ticker_job_idle_get(u8_t instance_index,
 DECL|ticker_job_list_inquire|function|static inline void ticker_job_list_inquire(struct ticker_instance *instance)
 DECL|ticker_job_list_insert|function|static inline void ticker_job_list_insert(struct ticker_instance *instance, u8_t insert_head)
 DECL|ticker_job_list_manage|function|static inline u8_t ticker_job_list_manage(struct ticker_instance *instance, u32_t ticks_elapsed, u8_t *insert_head)
-DECL|ticker_job_node_update|function|static inline void ticker_job_node_update(struct ticker_node *ticker,struct ticker_user_op *user_op, u32_t ticks_current, u32_t ticks_elapsed, u8_t *insert_head)
+DECL|ticker_job_node_update|function|static inline void ticker_job_node_update(struct ticker_node *ticker, struct ticker_user_op *user_op, u32_t ticks_current, u32_t ticks_elapsed, u8_t *insert_head)
 DECL|ticker_job_sched|function|void ticker_job_sched(u8_t instance_index, u8_t user_id)
 DECL|ticker_job_worker_bottom_half|function|static inline void ticker_job_worker_bottom_half(struct ticker_instance *instance, u32_t ticks_previous, u32_t ticks_elapsed, u8_t *insert_head)
 DECL|ticker_job|function|static inline void ticker_job(struct ticker_instance *instance)
@@ -74,7 +74,7 @@ DECL|ticker_next_slot_get|function|u32_t ticker_next_slot_get(u8_t instance_inde
 DECL|ticker_node|struct|struct ticker_node {
 DECL|ticker_remainder_decrement|function|static u8_t ticker_remainder_decrement(struct ticker_node *ticker)
 DECL|ticker_remainder_increment|function|static u8_t ticker_remainder_increment(struct ticker_node *ticker)
-DECL|ticker_start|function|u32_t ticker_start(u8_t instance_index, u8_t user_id, u8_t _ticker_id, u32_t ticks_anchor, u32_t ticks_first, u32_t ticks_periodic, u32_t remainder_periodic, u16_t lazy, u16_t ticks_slot,
+DECL|ticker_start|function|u32_t ticker_start(u8_t instance_index, u8_t user_id, u8_t _ticker_id, u32_t ticks_anchor, u32_t ticks_first, u32_t ticks_periodic, u32_t remainder_periodic, u16_t lazy, u16_t ticks_slot, ticker_timeout_func ticker_timeout_func, void *context, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_stop|function|u32_t ticker_stop(u8_t instance_index, u8_t user_id, u8_t _ticker_id, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_ticks_diff_get|function|u32_t ticker_ticks_diff_get(u32_t ticks_now, u32_t ticks_old)
 DECL|ticker_ticks_now_get|function|u32_t ticker_ticks_now_get(void)

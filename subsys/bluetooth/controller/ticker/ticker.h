@@ -14,4 +14,4 @@ DECL|TICKER_USER_T_SIZE|macro|TICKER_USER_T_SIZE
 DECL|TICKER_US_TO_TICKS|macro|TICKER_US_TO_TICKS
 DECL|_TICKER_H_|macro|_TICKER_H_
 DECL|ticker_op_func|typedef|typedef void (*ticker_op_func) (u32_t status, void *op_context);
-DECL|ticker_timeout_func|typedef|typedef void (*ticker_timeout_func) (u32_t ticks_at_expire,
+DECL|ticker_timeout_func|typedef|typedef void (*ticker_timeout_func) (u32_t ticks_at_expire, u32_t remainder,
