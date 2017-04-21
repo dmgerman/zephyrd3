@@ -56,10 +56,10 @@ DECL|MAX30101_SPO2_PW_SHIFT|macro|MAX30101_SPO2_PW_SHIFT
 DECL|MAX30101_SPO2_SR_SHIFT|macro|MAX30101_SPO2_SR_SHIFT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|fifo|member|uint8_t fifo;
+DECL|fifo|member|u8_t fifo;
 DECL|i2c|member|struct device *i2c;
-DECL|led_pa|member|uint8_t led_pa[MAX30101_MAX_NUM_CHANNELS];
-DECL|map|member|uint8_t map[MAX30101_MAX_NUM_CHANNELS];
+DECL|led_pa|member|u8_t led_pa[MAX30101_MAX_NUM_CHANNELS];
+DECL|map|member|u8_t map[MAX30101_MAX_NUM_CHANNELS];
 DECL|max30101_config|struct|struct max30101_config {
 DECL|max30101_data|struct|struct max30101_data {
 DECL|max30101_led_channel|enum|enum max30101_led_channel {
@@ -67,7 +67,7 @@ DECL|max30101_mode|enum|enum max30101_mode {
 DECL|max30101_pw|enum|enum max30101_pw {
 DECL|max30101_slot|enum|enum max30101_slot {
 DECL|mode|member|enum max30101_mode mode;
-DECL|num_channels|member|uint8_t num_channels;
-DECL|raw|member|uint32_t raw[MAX30101_MAX_NUM_CHANNELS];
+DECL|num_channels|member|u8_t num_channels;
+DECL|raw|member|u32_t raw[MAX30101_MAX_NUM_CHANNELS];
 DECL|slot|member|enum max30101_slot slot[4];
-DECL|spo2|member|uint8_t spo2;
+DECL|spo2|member|u8_t spo2;

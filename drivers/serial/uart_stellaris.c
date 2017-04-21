@@ -48,47 +48,47 @@ DECL|UARTTIM_RTIM|macro|UARTTIM_RTIM
 DECL|UARTTIM_RXIM|macro|UARTTIM_RXIM
 DECL|UARTTIM_TXIM|macro|UARTTIM_TXIM
 DECL|UART_STRUCT|macro|UART_STRUCT
-DECL|_cr|member|uint32_t _cr;
-DECL|_res1|member|uint8_t _res1[0x010];
-DECL|_res2|member|uint8_t _res2[0x04];
-DECL|_res3|member|uint8_t _res3[0xf8c];
-DECL|_sr|member|uint32_t _sr;
+DECL|_cr|member|u32_t _cr;
+DECL|_res1|member|u8_t _res1[0x010];
+DECL|_res2|member|u8_t _res2[0x04];
+DECL|_res3|member|u8_t _res3[0xf8c];
+DECL|_sr|member|u32_t _sr;
 DECL|_uart|struct|struct _uart {
-DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
-DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
+DECL|baud_rate|member|u32_t baud_rate; /* Baud rate */
+DECL|baudrate_set|function|static void baudrate_set(struct device *dev, u32_t baudrate, u32_t sys_clk_freq_hz)
 DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
 DECL|cr|macro|cr
-DECL|ctl|member|uint32_t ctl;
+DECL|ctl|member|u32_t ctl;
 DECL|disable|function|static inline void disable(struct device *dev)
-DECL|dr|member|uint32_t dr;
+DECL|dr|member|u32_t dr;
 DECL|enable|function|static inline void enable(struct device *dev)
-DECL|fbrd|member|uint32_t fbrd;
-DECL|fr|member|uint32_t fr;
-DECL|ibrd|member|uint32_t ibrd;
-DECL|icr|member|uint32_t icr;
-DECL|ifls|member|uint32_t ifls;
-DECL|ilpr|member|uint32_t ilpr;
-DECL|im|member|uint32_t im;
+DECL|fbrd|member|u32_t fbrd;
+DECL|fr|member|u32_t fr;
+DECL|ibrd|member|u32_t ibrd;
+DECL|icr|member|u32_t icr;
+DECL|ifls|member|u32_t ifls;
+DECL|ilpr|member|u32_t ilpr;
+DECL|im|member|u32_t im;
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
 DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
 DECL|irq_config_func_2|function|static void irq_config_func_2(struct device *dev)
-DECL|lcrh|member|uint32_t lcrh;
+DECL|lcrh|member|u32_t lcrh;
 DECL|line_control_defaults_set|function|static inline void line_control_defaults_set(struct device *dev)
-DECL|mis|member|uint32_t mis;
-DECL|p_cell_id0|member|uint32_t p_cell_id0;
-DECL|p_cell_id1|member|uint32_t p_cell_id1;
-DECL|p_cell_id2|member|uint32_t p_cell_id2;
-DECL|p_cell_id3|member|uint32_t p_cell_id3;
-DECL|peripd_id0|member|uint32_t peripd_id0;
-DECL|peripd_id1|member|uint32_t peripd_id1;
-DECL|peripd_id2|member|uint32_t peripd_id2;
-DECL|peripd_id3|member|uint32_t peripd_id3;
-DECL|peripd_id4|member|uint32_t peripd_id4;
-DECL|peripd_id5|member|uint32_t peripd_id5;
-DECL|peripd_id6|member|uint32_t peripd_id6;
-DECL|peripd_id7|member|uint32_t peripd_id7;
+DECL|mis|member|u32_t mis;
+DECL|p_cell_id0|member|u32_t p_cell_id0;
+DECL|p_cell_id1|member|u32_t p_cell_id1;
+DECL|p_cell_id2|member|u32_t p_cell_id2;
+DECL|p_cell_id3|member|u32_t p_cell_id3;
+DECL|peripd_id0|member|u32_t peripd_id0;
+DECL|peripd_id1|member|u32_t peripd_id1;
+DECL|peripd_id2|member|u32_t peripd_id2;
+DECL|peripd_id3|member|u32_t peripd_id3;
+DECL|peripd_id4|member|u32_t peripd_id4;
+DECL|peripd_id5|member|u32_t peripd_id5;
+DECL|peripd_id6|member|u32_t peripd_id6;
+DECL|peripd_id7|member|u32_t peripd_id7;
 DECL|poll_tx_ready|function|static int poll_tx_ready(struct device *dev)
-DECL|ris|member|uint32_t ris;
+DECL|ris|member|u32_t ris;
 DECL|sr|macro|sr
 DECL|u1|member|} u1;
 DECL|uart_stellaris_dev_cfg_0|variable|uart_stellaris_dev_cfg_0
@@ -100,8 +100,8 @@ DECL|uart_stellaris_dev_data_2|variable|uart_stellaris_dev_data_2
 DECL|uart_stellaris_dev_data_t|struct|struct uart_stellaris_dev_data_t {
 DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
 DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
-DECL|uart_stellaris_fifo_fill|function|static int uart_stellaris_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
-DECL|uart_stellaris_fifo_read|function|static int uart_stellaris_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_stellaris_fifo_fill|function|static int uart_stellaris_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
+DECL|uart_stellaris_fifo_read|function|static int uart_stellaris_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_stellaris_init|function|static int uart_stellaris_init(struct device *dev)
 DECL|uart_stellaris_irq_callback_set|function|static void uart_stellaris_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_stellaris_irq_err_disable|function|static void uart_stellaris_irq_err_disable(struct device *dev)

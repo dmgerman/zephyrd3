@@ -86,21 +86,21 @@ DECL|REG_THR|macro|REG_THR
 DECL|THR|macro|THR
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
-DECL|baud_rate|member|uint32_t baud_rate; /**< Baud rate */
+DECL|baud_rate|member|u32_t baud_rate; /**< Baud rate */
 DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
-DECL|dlf|member|uint8_t dlf; /**< DLF value */
-DECL|iir_cache|member|uint8_t iir_cache; /**< cache of IIR since it clears when read */
+DECL|dlf|member|u8_t dlf; /**< DLF value */
+DECL|iir_cache|member|u8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
 DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
 DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
-DECL|options|member|uint8_t options; /**< Serial port options */
+DECL|options|member|u8_t options; /**< Serial port options */
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
-DECL|port|member|uint32_t port;
-DECL|set_baud_rate|function|static void set_baud_rate(struct device *dev, uint32_t baud_rate)
-DECL|set_dlf|function|static inline void set_dlf(struct device *dev, uint32_t val)
-DECL|sys_clk_freq|member|uint32_t sys_clk_freq;
+DECL|port|member|u32_t port;
+DECL|set_baud_rate|function|static void set_baud_rate(struct device *dev, u32_t baud_rate)
+DECL|set_dlf|function|static inline void set_dlf(struct device *dev, u32_t val)
+DECL|sys_clk_freq|member|u32_t sys_clk_freq;
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0
@@ -109,10 +109,10 @@ DECL|uart_ns16550_dev_data_t|struct|struct uart_ns16550_dev_data_t {
 DECL|uart_ns16550_device_config|struct|struct uart_ns16550_device_config {
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
-DECL|uart_ns16550_drv_cmd|function|static int uart_ns16550_drv_cmd(struct device *dev, uint32_t cmd, uint32_t p)
+DECL|uart_ns16550_drv_cmd|function|static int uart_ns16550_drv_cmd(struct device *dev, u32_t cmd, u32_t p)
 DECL|uart_ns16550_err_check|function|static int uart_ns16550_err_check(struct device *dev)
-DECL|uart_ns16550_fifo_fill|function|static int uart_ns16550_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
-DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_ns16550_fifo_fill|function|static int uart_ns16550_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
+DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_ns16550_init|function|static int uart_ns16550_init(struct device *dev)
 DECL|uart_ns16550_irq_callback_set|function|static void uart_ns16550_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_ns16550_irq_err_disable|function|static void uart_ns16550_irq_err_disable(struct device *dev)
@@ -127,6 +127,6 @@ DECL|uart_ns16550_irq_tx_enable|function|static void uart_ns16550_irq_tx_enable(
 DECL|uart_ns16550_irq_tx_ready|function|static int uart_ns16550_irq_tx_ready(struct device *dev)
 DECL|uart_ns16550_irq_update|function|static int uart_ns16550_irq_update(struct device *dev)
 DECL|uart_ns16550_isr|function|static void uart_ns16550_isr(void *arg)
-DECL|uart_ns16550_line_ctrl_set|function|static int uart_ns16550_line_ctrl_set(struct device *dev, uint32_t ctrl, uint32_t val)
+DECL|uart_ns16550_line_ctrl_set|function|static int uart_ns16550_line_ctrl_set(struct device *dev, u32_t ctrl, u32_t val)
 DECL|uart_ns16550_poll_in|function|static int uart_ns16550_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_ns16550_poll_out|function|static unsigned char uart_ns16550_poll_out(struct device *dev, unsigned char c)

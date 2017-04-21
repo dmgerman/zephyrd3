@@ -13,16 +13,16 @@ DECL|buf|member|char buf[TELNET_LINE_SIZE];
 DECL|client_cnx|variable|client_cnx
 DECL|input_queue|variable|input_queue
 DECL|l_bufs|member|struct line_buf l_bufs[TELNET_LINES];
-DECL|len|member|uint16_t len;
+DECL|len|member|u16_t len;
 DECL|line_buf_rb|struct|struct line_buf_rb {
 DECL|line_buf|struct|struct line_buf {
-DECL|line_in|member|uint16_t line_in;
-DECL|line_out|member|uint16_t line_out;
+DECL|line_in|member|u16_t line_in;
+DECL|line_out|member|u16_t line_out;
 DECL|orig_printk_hook|variable|orig_printk_hook
 DECL|out_pkt|variable|out_pkt
 DECL|telnet_accept|function|static void telnet_accept(struct net_context *client, struct sockaddr *addr, socklen_t addrlen, int error, void *user_data)
 DECL|telnet_cmd|variable|telnet_cmd
-DECL|telnet_command_send_reply|function|static inline void telnet_command_send_reply(uint8_t *msg, uint16_t len)
+DECL|telnet_command_send_reply|function|static inline void telnet_command_send_reply(u8_t *msg, u16_t len)
 DECL|telnet_console_init|function|static int telnet_console_init(struct device *arg)
 DECL|telnet_console_out_nothing|function|static int telnet_console_out_nothing(int c)
 DECL|telnet_console_out|function|static int telnet_console_out(int c)
@@ -35,7 +35,7 @@ DECL|telnet_rb_init|function|static void telnet_rb_init(void)
 DECL|telnet_rb_switch|function|static void telnet_rb_switch(void)
 DECL|telnet_rb|variable|telnet_rb
 DECL|telnet_recv|function|static void telnet_recv(struct net_context *client,struct net_pkt *pkt, int status, void *user_data)
-DECL|telnet_register_input|function|void telnet_register_input(struct k_fifo *avail, struct k_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
+DECL|telnet_register_input|function|void telnet_register_input(struct k_fifo *avail, struct k_fifo *lines, u8_t (*completion)(char *str, u8_t len))
 DECL|telnet_reply_ay_command|function|static inline void telnet_reply_ay_command(void)
 DECL|telnet_reply_command|function|static inline void telnet_reply_command(void)
 DECL|telnet_reply_command|macro|telnet_reply_command

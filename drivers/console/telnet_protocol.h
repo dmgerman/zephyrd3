@@ -77,8 +77,8 @@ DECL|NVT_OPT_X_3_PAD|macro|NVT_OPT_X_3_PAD
 DECL|NVT_OPT_X_LOC|macro|NVT_OPT_X_LOC
 DECL|NVT_VT|macro|NVT_VT
 DECL|__TELNET_PROTOCOL_H__|macro|__TELNET_PROTOCOL_H__
-DECL|iac|member|uint8_t iac;
-DECL|opt|member|uint8_t opt;
-DECL|op|member|uint8_t op;
+DECL|iac|member|u8_t iac;
+DECL|opt|member|u8_t opt;
+DECL|op|member|u8_t op;
 DECL|telnet_command_cpy|function|static inline void telnet_command_cpy(struct telnet_simple_command *dst, struct telnet_simple_command *src)
 DECL|telnet_simple_command|struct|struct telnet_simple_command {

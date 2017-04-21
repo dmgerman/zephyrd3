@@ -1,4 +1,4 @@
-DECL|hmc5883l_gpio_callback|function|static void hmc5883l_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|hmc5883l_gpio_callback|function|static void hmc5883l_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|hmc5883l_init_interrupt|function|int hmc5883l_init_interrupt(struct device *dev)
 DECL|hmc5883l_thread_cb|function|static void hmc5883l_thread_cb(void *arg)
 DECL|hmc5883l_thread|function|static void hmc5883l_thread(int dev_ptr, int unused)

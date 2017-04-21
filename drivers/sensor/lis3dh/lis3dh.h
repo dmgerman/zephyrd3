@@ -48,6 +48,6 @@ DECL|i2c|member|struct device *i2c;
 DECL|lis3dh_data|struct|struct lis3dh_data {
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_LIS3DH_THREAD_STACK_SIZE];
 DECL|work|member|struct k_work work;
-DECL|x_sample|member|int16_t x_sample;
-DECL|y_sample|member|int16_t y_sample;
-DECL|z_sample|member|int16_t z_sample;
+DECL|x_sample|member|s16_t x_sample;
+DECL|y_sample|member|s16_t y_sample;
+DECL|z_sample|member|s16_t z_sample;

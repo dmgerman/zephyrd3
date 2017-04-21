@@ -169,7 +169,7 @@ DECL|STM32_PORT|macro|STM32_PORT
 DECL|_STM32_PINMUX_H_|macro|_STM32_PINMUX_H_
 DECL|funcs|member|const stm32_pin_func_t *funcs; /* functions array, indexed with
 DECL|nfuncs|member|const size_t nfuncs; /* number of alternate functions, not
-DECL|pin|member|uint32_t pin; /* pin ID */
+DECL|pin|member|u32_t pin; /* pin ID */
 DECL|stm32_pin_alt_func|enum|enum stm32_pin_alt_func {
 DECL|stm32_pin_func_t|typedef|typedef int stm32_pin_func_t;
 DECL|stm32_pin_port|enum|enum stm32_pin_port {

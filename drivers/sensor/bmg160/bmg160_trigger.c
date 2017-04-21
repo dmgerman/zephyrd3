@@ -1,6 +1,6 @@
 DECL|bmg160_anymotion_set|function|static int bmg160_anymotion_set(struct device *dev,sensor_trigger_handler_t handler)
 DECL|bmg160_drdy_set|function|static int bmg160_drdy_set(struct device *dev, sensor_trigger_handler_t handler)
-DECL|bmg160_gpio_callback|function|static void bmg160_gpio_callback(struct device *port, struct gpio_callback *cb, uint32_t pin)
+DECL|bmg160_gpio_callback|function|static void bmg160_gpio_callback(struct device *port, struct gpio_callback *cb, u32_t pin)
 DECL|bmg160_handle_anymotion_int|function|static int bmg160_handle_anymotion_int(struct device *dev)
 DECL|bmg160_handle_dataready_int|function|static int bmg160_handle_dataready_int(struct device *dev)
 DECL|bmg160_handle_int|function|static void bmg160_handle_int(void *arg)

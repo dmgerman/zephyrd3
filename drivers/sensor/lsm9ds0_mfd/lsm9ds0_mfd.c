@@ -6,9 +6,9 @@ DECL|fs|member|int fs;
 DECL|fs|member|int fs;
 DECL|lsm9ds0_mfd_accel_fs_map|variable|lsm9ds0_mfd_accel_fs_map
 DECL|lsm9ds0_mfd_accel_odr_map|variable|lsm9ds0_mfd_accel_odr_map
-DECL|lsm9ds0_mfd_accel_set_fs_raw|function|static inline int lsm9ds0_mfd_accel_set_fs_raw(struct device *dev, uint8_t fs)
+DECL|lsm9ds0_mfd_accel_set_fs_raw|function|static inline int lsm9ds0_mfd_accel_set_fs_raw(struct device *dev, u8_t fs)
 DECL|lsm9ds0_mfd_accel_set_fs|function|static int lsm9ds0_mfd_accel_set_fs(struct device *dev, int val)
-DECL|lsm9ds0_mfd_accel_set_odr_raw|function|static inline int lsm9ds0_mfd_accel_set_odr_raw(struct device *dev, uint8_t odr)
+DECL|lsm9ds0_mfd_accel_set_odr_raw|function|static inline int lsm9ds0_mfd_accel_set_odr_raw(struct device *dev, u8_t odr)
 DECL|lsm9ds0_mfd_accel_set_odr|function|static int lsm9ds0_mfd_accel_set_odr(struct device *dev, const struct sensor_value *val)
 DECL|lsm9ds0_mfd_api_funcs|variable|lsm9ds0_mfd_api_funcs
 DECL|lsm9ds0_mfd_attr_set_accel|function|static inline int lsm9ds0_mfd_attr_set_accel(struct device *dev, enum sensor_attribute attr, const struct sensor_value *val)
@@ -27,9 +27,9 @@ DECL|lsm9ds0_mfd_init_chip|function|static int lsm9ds0_mfd_init_chip(struct devi
 DECL|lsm9ds0_mfd_init|function|int lsm9ds0_mfd_init(struct device *dev)
 DECL|lsm9ds0_mfd_magn_fs_map|variable|lsm9ds0_mfd_magn_fs_map
 DECL|lsm9ds0_mfd_magn_odr_map|variable|lsm9ds0_mfd_magn_odr_map
-DECL|lsm9ds0_mfd_magn_set_fs_raw|function|static inline int lsm9ds0_mfd_magn_set_fs_raw(struct device *dev, uint8_t fs)
+DECL|lsm9ds0_mfd_magn_set_fs_raw|function|static inline int lsm9ds0_mfd_magn_set_fs_raw(struct device *dev, u8_t fs)
 DECL|lsm9ds0_mfd_magn_set_fs|function|static int lsm9ds0_mfd_magn_set_fs(struct device *dev, const struct sensor_value *val)
-DECL|lsm9ds0_mfd_magn_set_odr_raw|function|static inline int lsm9ds0_mfd_magn_set_odr_raw(struct device *dev, uint8_t odr)
+DECL|lsm9ds0_mfd_magn_set_odr_raw|function|static inline int lsm9ds0_mfd_magn_set_odr_raw(struct device *dev, u8_t odr)
 DECL|lsm9ds0_mfd_magn_set_odr|function|static int lsm9ds0_mfd_magn_set_odr(struct device *dev, const struct sensor_value *val)
 DECL|lsm9ds0_mfd_reboot_memory|function|static inline int lsm9ds0_mfd_reboot_memory(struct device *dev)
 DECL|lsm9ds0_mfd_sample_fetch_accel|function|static inline int lsm9ds0_mfd_sample_fetch_accel(struct device *dev)

@@ -335,7 +335,7 @@ DECL|gyro_sample_y|member|int gyro_sample_y;
 DECL|gyro_sample_z|member|int gyro_sample_z;
 DECL|i2c_master_dev_name|member|char *i2c_master_dev_name;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
 DECL|lsm6ds0_config|struct|struct lsm6ds0_config {
 DECL|lsm6ds0_data|struct|struct lsm6ds0_data {
 DECL|temp_sample|member|int temp_sample;

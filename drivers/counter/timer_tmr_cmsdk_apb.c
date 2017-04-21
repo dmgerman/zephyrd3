@@ -1,7 +1,7 @@
 DECL|TIMER_DISABLED|enumerator|TIMER_DISABLED = 0,
 DECL|TIMER_ENABLED|enumerator|TIMER_ENABLED,
 DECL|TIMER_MAX_RELOAD|macro|TIMER_MAX_RELOAD
-DECL|load|member|uint32_t load;
+DECL|load|member|u32_t load;
 DECL|status|member|enum timer_status_t status;
 DECL|timer_cc_as|member|const struct arm_clock_control_t timer_cc_as;
 DECL|timer_cc_dss|member|const struct arm_clock_control_t timer_cc_dss;
@@ -18,11 +18,11 @@ DECL|timer_tmr_cmsdk_apb_cfg|struct|struct timer_tmr_cmsdk_apb_cfg {
 DECL|timer_tmr_cmsdk_apb_dev_data_0|variable|timer_tmr_cmsdk_apb_dev_data_0
 DECL|timer_tmr_cmsdk_apb_dev_data_1|variable|timer_tmr_cmsdk_apb_dev_data_1
 DECL|timer_tmr_cmsdk_apb_dev_data|struct|struct timer_tmr_cmsdk_apb_dev_data {
-DECL|timer_tmr_cmsdk_apb_get_pending_int|function|static uint32_t timer_tmr_cmsdk_apb_get_pending_int(struct device *dev)
+DECL|timer_tmr_cmsdk_apb_get_pending_int|function|static u32_t timer_tmr_cmsdk_apb_get_pending_int(struct device *dev)
 DECL|timer_tmr_cmsdk_apb_init|function|static int timer_tmr_cmsdk_apb_init(struct device *dev)
 DECL|timer_tmr_cmsdk_apb_isr|function|static void timer_tmr_cmsdk_apb_isr(void *arg)
-DECL|timer_tmr_cmsdk_apb_read|function|static uint32_t timer_tmr_cmsdk_apb_read(struct device *dev)
-DECL|timer_tmr_cmsdk_apb_set_alarm|function|static int timer_tmr_cmsdk_apb_set_alarm(struct device *dev, counter_callback_t callback, uint32_t count, void *user_data)
+DECL|timer_tmr_cmsdk_apb_read|function|static u32_t timer_tmr_cmsdk_apb_read(struct device *dev)
+DECL|timer_tmr_cmsdk_apb_set_alarm|function|static int timer_tmr_cmsdk_apb_set_alarm(struct device *dev, counter_callback_t callback, u32_t count, void *user_data)
 DECL|timer_tmr_cmsdk_apb_start|function|static int timer_tmr_cmsdk_apb_start(struct device *dev)
 DECL|timer_tmr_cmsdk_apb_stop|function|static int timer_tmr_cmsdk_apb_stop(struct device *dev)
 DECL|timer|member|volatile struct timer_cmsdk_apb *timer;

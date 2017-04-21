@@ -16,15 +16,15 @@ DECL|UART_TX_IN_EN|macro|UART_TX_IN_EN
 DECL|UART_TX_IN|macro|UART_TX_IN
 DECL|UART_TX_OV_EN|macro|UART_TX_OV_EN
 DECL|UART_TX_OV_IN|macro|UART_TX_OV_IN
-DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
-DECL|bauddiv|member|volatile uint32_t bauddiv;
+DECL|baud_rate|member|u32_t baud_rate; /* Baud rate */
+DECL|bauddiv|member|volatile u32_t bauddiv;
 DECL|baudrate_set|function|static void baudrate_set(struct device *dev)
-DECL|ctrl|member|volatile uint32_t ctrl;
-DECL|data|member|volatile uint32_t data;
-DECL|intclear|member|volatile uint32_t intclear;
-DECL|intstatus|member|volatile uint32_t intstatus;
+DECL|ctrl|member|volatile u32_t ctrl;
+DECL|data|member|volatile u32_t data;
+DECL|intclear|member|volatile u32_t intclear;
+DECL|intstatus|member|volatile u32_t intstatus;
 DECL|irq_cb|member|uart_irq_callback_t irq_cb;
-DECL|state|member|volatile uint32_t state;
+DECL|state|member|volatile u32_t state;
 DECL|uart_cc_as|member|const struct arm_clock_control_t uart_cc_as;
 DECL|uart_cc_dss|member|const struct arm_clock_control_t uart_cc_dss;
 DECL|uart_cc_ss|member|const struct arm_clock_control_t uart_cc_ss;
@@ -41,8 +41,8 @@ DECL|uart_cmsdk_apb_dev_data_4|variable|uart_cmsdk_apb_dev_data_4
 DECL|uart_cmsdk_apb_dev_data|struct|struct uart_cmsdk_apb_dev_data {
 DECL|uart_cmsdk_apb_driver_api|variable|uart_cmsdk_apb_driver_api
 DECL|uart_cmsdk_apb_driver_api|variable|uart_cmsdk_apb_driver_api
-DECL|uart_cmsdk_apb_fifo_fill|function|static int uart_cmsdk_apb_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
-DECL|uart_cmsdk_apb_fifo_read|function|static int uart_cmsdk_apb_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_cmsdk_apb_fifo_fill|function|static int uart_cmsdk_apb_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
+DECL|uart_cmsdk_apb_fifo_read|function|static int uart_cmsdk_apb_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_cmsdk_apb_init|function|static int uart_cmsdk_apb_init(struct device *dev)
 DECL|uart_cmsdk_apb_irq_callback_set|function|static void uart_cmsdk_apb_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_cmsdk_apb_irq_config_func_0|function|static void uart_cmsdk_apb_irq_config_func_0(struct device *dev)

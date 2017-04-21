@@ -41,28 +41,28 @@ DECL|UART_SR|macro|UART_SR
 DECL|UART_STRUCT|macro|UART_STRUCT
 DECL|UART_THR|macro|UART_THR
 DECL|_uart|struct|struct _uart {
-DECL|baud_rate|member|uint32_t baud_rate; /* Baud rate */
-DECL|baudrate_set|function|static void baudrate_set(struct device *dev, uint32_t baudrate, uint32_t sys_clk_freq_hz)
-DECL|brgr|member|uint32_t brgr; /* 0x20 Baud Rate Generator Register */
-DECL|cr|member|uint32_t cr; /* 0x00 Control Register */
-DECL|idr|member|uint32_t idr; /* 0x0C Interrupt Disable Register */
-DECL|ier|member|uint32_t ier; /* 0x08 Interrupt Enable Register */
-DECL|imr|member|uint32_t imr; /* 0x10 Interrupt Mask Register */
-DECL|mr|member|uint32_t mr; /* 0x04 Mode Register */
-DECL|pdc_ptcr|member|uint32_t pdc_ptcr; /* 0x120 Transfer Control Reg */
-DECL|pdc_ptsr|member|uint32_t pdc_ptsr; /* 0x124 Transfer Status Reg */
-DECL|pdc_rcr|member|uint32_t pdc_rcr; /* 0x104 Receive Counter Reg */
-DECL|pdc_rncr|member|uint32_t pdc_rncr; /* 0x114 Receive Next Counter */
-DECL|pdc_rnpr|member|uint32_t pdc_rnpr; /* 0x110 Receive Next Pointer */
-DECL|pdc_rpr|member|uint32_t pdc_rpr; /* 0x100 Receive Pointer Reg */
-DECL|pdc_tcr|member|uint32_t pdc_tcr; /* 0x10C Transmit Counter Reg */
-DECL|pdc_tncr|member|uint32_t pdc_tncr; /* 0x11C Transmit Next Counter */
-DECL|pdc_tnpr|member|uint32_t pdc_tnpr; /* 0x118 Transmit Next Pointer */
-DECL|pdc_tpr|member|uint32_t pdc_tpr; /* 0x108 Transmit Pointer Reg */
-DECL|reserved|member|uint32_t reserved[55]; /* 0x24 - 0xFF */
-DECL|rhr|member|uint32_t rhr; /* 0x18 Receive Holding Register */
-DECL|sr|member|uint32_t sr; /* 0x14 Status Register */
-DECL|thr|member|uint32_t thr; /* 0x1C Transmit Holding Register */
+DECL|baud_rate|member|u32_t baud_rate; /* Baud rate */
+DECL|baudrate_set|function|static void baudrate_set(struct device *dev, u32_t baudrate, u32_t sys_clk_freq_hz)
+DECL|brgr|member|u32_t brgr; /* 0x20 Baud Rate Generator Register */
+DECL|cr|member|u32_t cr; /* 0x00 Control Register */
+DECL|idr|member|u32_t idr; /* 0x0C Interrupt Disable Register */
+DECL|ier|member|u32_t ier; /* 0x08 Interrupt Enable Register */
+DECL|imr|member|u32_t imr; /* 0x10 Interrupt Mask Register */
+DECL|mr|member|u32_t mr; /* 0x04 Mode Register */
+DECL|pdc_ptcr|member|u32_t pdc_ptcr; /* 0x120 Transfer Control Reg */
+DECL|pdc_ptsr|member|u32_t pdc_ptsr; /* 0x124 Transfer Status Reg */
+DECL|pdc_rcr|member|u32_t pdc_rcr; /* 0x104 Receive Counter Reg */
+DECL|pdc_rncr|member|u32_t pdc_rncr; /* 0x114 Receive Next Counter */
+DECL|pdc_rnpr|member|u32_t pdc_rnpr; /* 0x110 Receive Next Pointer */
+DECL|pdc_rpr|member|u32_t pdc_rpr; /* 0x100 Receive Pointer Reg */
+DECL|pdc_tcr|member|u32_t pdc_tcr; /* 0x10C Transmit Counter Reg */
+DECL|pdc_tncr|member|u32_t pdc_tncr; /* 0x11C Transmit Next Counter */
+DECL|pdc_tnpr|member|u32_t pdc_tnpr; /* 0x118 Transmit Next Pointer */
+DECL|pdc_tpr|member|u32_t pdc_tpr; /* 0x108 Transmit Pointer Reg */
+DECL|reserved|member|u32_t reserved[55]; /* 0x24 - 0xFF */
+DECL|rhr|member|u32_t rhr; /* 0x18 Receive Holding Register */
+DECL|sr|member|u32_t sr; /* 0x14 Status Register */
+DECL|thr|member|u32_t thr; /* 0x1C Transmit Holding Register */
 DECL|uart_sam3_dev_cfg_0|variable|uart_sam3_dev_cfg_0
 DECL|uart_sam3_dev_data_0|variable|uart_sam3_dev_data_0
 DECL|uart_sam3_dev_data_t|struct|struct uart_sam3_dev_data_t {

@@ -11,5 +11,5 @@ DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio|member|struct device *gpio;
 DECL|hdc1008_data|struct|struct hdc1008_data {
 DECL|i2c|member|struct device *i2c;
-DECL|rh_sample|member|uint16_t rh_sample;
-DECL|t_sample|member|uint16_t t_sample;
+DECL|rh_sample|member|u16_t rh_sample;
+DECL|t_sample|member|u16_t t_sample;

@@ -1,8 +1,8 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|baud_rate|member|uint32_t baud_rate;
-DECL|baudrate_set|function|static int baudrate_set(Usart *const usart, uint32_t baudrate,uint32_t mck_freq_hz)
-DECL|periph_id|member|uint32_t periph_id;
+DECL|baud_rate|member|u32_t baud_rate;
+DECL|baudrate_set|function|static int baudrate_set(Usart *const usart, u32_t baudrate,u32_t mck_freq_hz)
+DECL|periph_id|member|u32_t periph_id;
 DECL|pin_rx|member|struct soc_gpio_pin pin_rx;
 DECL|pin_tx|member|struct soc_gpio_pin pin_tx;
 DECL|regs|member|Usart *regs;

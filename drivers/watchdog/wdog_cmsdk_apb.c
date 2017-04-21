@@ -12,20 +12,20 @@ DECL|CMSDK_APB_WDOG_RELOAD|macro|CMSDK_APB_WDOG_RELOAD
 DECL|CMSDK_APB_WDOG_UNLOCK_VALUE|macro|CMSDK_APB_WDOG_UNLOCK_VALUE
 DECL|CMSDK_APB_WDOG_VALUE|macro|CMSDK_APB_WDOG_VALUE
 DECL|WDOG_STRUCT|macro|WDOG_STRUCT
-DECL|ctrl|member|volatile uint32_t ctrl;
-DECL|intclr|member|volatile uint32_t intclr;
-DECL|itcr|member|volatile uint32_t itcr;
-DECL|itop|member|volatile uint32_t itop;
-DECL|load|member|volatile uint32_t load;
-DECL|lock|member|volatile uint32_t lock;
-DECL|maskintstat|member|volatile uint32_t maskintstat;
+DECL|ctrl|member|volatile u32_t ctrl;
+DECL|intclr|member|volatile u32_t intclr;
+DECL|itcr|member|volatile u32_t itcr;
+DECL|itop|member|volatile u32_t itop;
+DECL|load|member|volatile u32_t load;
+DECL|lock|member|volatile u32_t lock;
+DECL|maskintstat|member|volatile u32_t maskintstat;
 DECL|mode|variable|mode
-DECL|rawintstat|member|volatile uint32_t rawintstat;
+DECL|rawintstat|member|volatile u32_t rawintstat;
 DECL|reload_s|variable|reload_s
-DECL|reserved0|member|volatile uint32_t reserved0[762];
-DECL|reserved1|member|volatile uint32_t reserved1[191];
+DECL|reserved0|member|volatile u32_t reserved0[762];
+DECL|reserved1|member|volatile u32_t reserved1[191];
 DECL|user_cb|variable|user_cb
-DECL|value|member|volatile uint32_t value;
+DECL|value|member|volatile u32_t value;
 DECL|wdog_cmsdk_apb_api|variable|wdog_cmsdk_apb_api
 DECL|wdog_cmsdk_apb_disable|function|static void wdog_cmsdk_apb_disable(struct device *dev)
 DECL|wdog_cmsdk_apb_enable|function|static void wdog_cmsdk_apb_enable(struct device *dev)

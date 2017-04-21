@@ -60,7 +60,7 @@ DECL|ISL29035_OPMODE_SHIFT|macro|ISL29035_OPMODE_SHIFT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_ISL29035_H_|macro|_SENSOR_ISL29035_H_
-DECL|data_sample|member|uint16_t data_sample;
+DECL|data_sample|member|u16_t data_sample;
 DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct k_sem gpio_sem;

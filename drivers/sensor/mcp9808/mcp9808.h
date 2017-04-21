@@ -17,12 +17,12 @@ DECL|__SENSOR_MCP9808_H__|macro|__SENSOR_MCP9808_H__
 DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
 DECL|mcp9808_attr_set|function|static inline int mcp9808_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|mcp9808_data|struct|struct mcp9808_data {
 DECL|mcp9808_setup_interrupt|function|static void mcp9808_setup_interrupt(struct device *dev)
 DECL|mcp9808_trigger_set|function|static inline int mcp9808_trigger_set(struct device *dev, const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
-DECL|reg_val|member|uint16_t reg_val;
+DECL|reg_val|member|u16_t reg_val;
 DECL|sem|member|struct k_sem sem;
 DECL|trigger_handler|member|sensor_trigger_handler_t trigger_handler;
 DECL|trig|member|struct sensor_trigger trig;

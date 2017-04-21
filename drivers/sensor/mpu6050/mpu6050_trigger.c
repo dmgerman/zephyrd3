@@ -1,4 +1,4 @@
-DECL|mpu6050_gpio_callback|function|static void mpu6050_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|mpu6050_gpio_callback|function|static void mpu6050_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|mpu6050_init_interrupt|function|int mpu6050_init_interrupt(struct device *dev)
 DECL|mpu6050_thread_cb|function|static void mpu6050_thread_cb(void *arg)
 DECL|mpu6050_thread|function|static void mpu6050_thread(int dev_ptr, int unused)

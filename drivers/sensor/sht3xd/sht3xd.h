@@ -25,15 +25,15 @@ DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|handler|member|sensor_trigger_handler_t handler;
 DECL|i2c|member|struct device *i2c;
-DECL|rh_high|member|uint16_t rh_high;
-DECL|rh_low|member|uint16_t rh_low;
-DECL|rh_sample|member|uint16_t rh_sample;
+DECL|rh_high|member|u16_t rh_high;
+DECL|rh_low|member|u16_t rh_low;
+DECL|rh_sample|member|u16_t rh_sample;
 DECL|sht3xd_data|struct|struct sht3xd_data {
 DECL|sht3xd_measure_cmd|variable|sht3xd_measure_cmd
 DECL|sht3xd_measure_wait|variable|sht3xd_measure_wait
-DECL|t_high|member|uint16_t t_high;
-DECL|t_low|member|uint16_t t_low;
-DECL|t_sample|member|uint16_t t_sample;
+DECL|t_high|member|u16_t t_high;
+DECL|t_low|member|u16_t t_low;
+DECL|t_sample|member|u16_t t_sample;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_SHT3XD_THREAD_STACK_SIZE];
 DECL|trigger|member|struct sensor_trigger trigger;
 DECL|work|member|struct k_work work;

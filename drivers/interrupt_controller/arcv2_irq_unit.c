@@ -1,4 +1,4 @@
-DECL|_arc_v2_irq_unit_device_ctrl|function|static int _arc_v2_irq_unit_device_ctrl(struct device *device,uint32_t ctrl_command, void *context)
+DECL|_arc_v2_irq_unit_device_ctrl|function|static int _arc_v2_irq_unit_device_ctrl(struct device *device,u32_t ctrl_command, void *context)
 DECL|_arc_v2_irq_unit_device_power_state|variable|_arc_v2_irq_unit_device_power_state
 DECL|_arc_v2_irq_unit_get_state|function|static int _arc_v2_irq_unit_get_state(struct device *dev)
 DECL|_arc_v2_irq_unit_init|function|static int _arc_v2_irq_unit_init(struct device *unused)
@@ -10,6 +10,6 @@ DECL|_arc_v2_irq_unit_trigger_set|function|void _arc_v2_irq_unit_trigger_set(int
 DECL|_saved_firq_stack|variable|_saved_firq_stack
 DECL|arc_v2_irq_unit_ctx|struct|struct arc_v2_irq_unit_ctx {
 DECL|ctx|variable|ctx
-DECL|irq_config|member|uint8_t irq_config[CONFIG_NUM_IRQS - 16];
-DECL|irq_ctrl|member|uint32_t irq_ctrl; /* Interrupt Context Saving Control Register. */
-DECL|irq_vect_base|member|uint32_t irq_vect_base; /* Interrupt Vector Base. */
+DECL|irq_config|member|u8_t irq_config[CONFIG_NUM_IRQS - 16];
+DECL|irq_ctrl|member|u32_t irq_ctrl; /* Interrupt Context Saving Control Register. */
+DECL|irq_vect_base|member|u32_t irq_vect_base; /* Interrupt Vector Base. */

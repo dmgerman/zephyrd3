@@ -44,5 +44,5 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_HP206C_H_|macro|_SENSOR_HP206C_H_
 DECL|hp206c_device_data|struct|struct hp206c_device_data {
 DECL|i2c|member|struct device *i2c;
-DECL|osr|member|uint8_t osr;
+DECL|osr|member|u8_t osr;
 DECL|tmr|member|struct k_timer tmr;

@@ -10,8 +10,8 @@ DECL|uart_stm32_dev_data_1|variable|uart_stm32_dev_data_1
 DECL|uart_stm32_dev_data_2|variable|uart_stm32_dev_data_2
 DECL|uart_stm32_dev_data_3|variable|uart_stm32_dev_data_3
 DECL|uart_stm32_driver_api|variable|uart_stm32_driver_api
-DECL|uart_stm32_fifo_fill|function|static int uart_stm32_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
-DECL|uart_stm32_fifo_read|function|static int uart_stm32_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_stm32_fifo_fill|function|static int uart_stm32_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
+DECL|uart_stm32_fifo_read|function|static int uart_stm32_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_stm32_init|function|static int uart_stm32_init(struct device *dev)
 DECL|uart_stm32_irq_callback_set|function|static void uart_stm32_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
 DECL|uart_stm32_irq_config_func_1|function|static void uart_stm32_irq_config_func_1(struct device *dev)

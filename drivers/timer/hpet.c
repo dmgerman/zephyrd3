@@ -44,10 +44,10 @@ DECL|_HPET_MAIN_COUNTER_VALUE|macro|_HPET_MAIN_COUNTER_VALUE
 DECL|_HPET_TIMER0_COMPARATOR|macro|_HPET_TIMER0_COMPARATOR
 DECL|_HPET_TIMER0_CONFIG_CAPS|macro|_HPET_TIMER0_CONFIG_CAPS
 DECL|_HPET_TIMER0_FSB_INT_ROUTE|macro|_HPET_TIMER0_FSB_INT_ROUTE
-DECL|_hpetMainCounterAtomic|function|static uint64_t _hpetMainCounterAtomic(void)
+DECL|_hpetMainCounterAtomic|function|static u64_t _hpetMainCounterAtomic(void)
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
 DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
-DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks /* system ticks */)
+DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t ticks /* system ticks */)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *unused)
 DECL|counter_last_value|variable|counter_last_value

@@ -20,19 +20,19 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_slip_mac_addr_from_str|function|static inline int _slip_mac_addr_from_str(struct slip_context *slip, const char *src)
-DECL|buf|member|uint8_t buf[1]; /* SLIP data is read into this buf */
+DECL|buf|member|u8_t buf[1]; /* SLIP data is read into this buf */
 DECL|first|member|bool first; /* SLIP received it's byte or not after
-DECL|garbage|member|uint16_t garbage;
-DECL|hexdump|function|static void hexdump(const char *str, const uint8_t *packet, size_t length, size_t ll_reserve)
+DECL|garbage|member|u16_t garbage;
+DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
 DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
-DECL|mac_addr|member|uint8_t mac_addr[6];
+DECL|mac_addr|member|u8_t mac_addr[6];
 DECL|process_msg|function|static void process_msg(struct slip_context *slip)
-DECL|ptr|member|uint8_t *ptr; /* Where in net_pkt to add data */
-DECL|recv_cb|function|static uint8_t *recv_cb(uint8_t *buf, size_t *off)
+DECL|ptr|member|u8_t *ptr; /* Where in net_pkt to add data */
+DECL|recv_cb|function|static u8_t *recv_cb(u8_t *buf, size_t *off)
 DECL|rx|member|struct net_pkt *rx; /* and then placed into this net_pkt */
 DECL|slip_context_data|variable|slip_context_data
 DECL|slip_context|struct|struct slip_context {
@@ -45,4 +45,4 @@ DECL|slip_poll_handler|function|static struct net_pkt *slip_poll_handler(struct 
 DECL|slip_send|function|static int slip_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|slip_state|enum|enum slip_state {
 DECL|slip_writeb|function|static inline void slip_writeb(unsigned char c)
-DECL|state|member|uint8_t state;
+DECL|state|member|u8_t state;

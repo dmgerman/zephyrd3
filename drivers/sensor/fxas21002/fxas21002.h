@@ -31,7 +31,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|dev|member|struct device *dev;
 DECL|drdy_handler|member|sensor_trigger_handler_t drdy_handler;
-DECL|dr|member|uint8_t dr;
+DECL|dr|member|u8_t dr;
 DECL|fxas21002_channel|enum|enum fxas21002_channel {
 DECL|fxas21002_config|struct|struct fxas21002_config {
 DECL|fxas21002_data|struct|struct fxas21002_data {
@@ -39,16 +39,16 @@ DECL|fxas21002_power|enum|enum fxas21002_power {
 DECL|fxas21002_range|enum|enum fxas21002_range {
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_name|member|char *gpio_name;
-DECL|gpio_pin|member|uint8_t gpio_pin;
-DECL|gpio_pin|member|uint8_t gpio_pin;
+DECL|gpio_pin|member|u8_t gpio_pin;
+DECL|gpio_pin|member|u8_t gpio_pin;
 DECL|gpio|member|struct device *gpio;
-DECL|i2c_address|member|uint8_t i2c_address;
+DECL|i2c_address|member|u8_t i2c_address;
 DECL|i2c_name|member|char *i2c_name;
 DECL|i2c|member|struct device *i2c;
 DECL|range|member|enum fxas21002_range range;
-DECL|raw|member|int16_t raw[FXAS21002_MAX_NUM_CHANNELS];
+DECL|raw|member|s16_t raw[FXAS21002_MAX_NUM_CHANNELS];
 DECL|sem|member|struct k_sem sem;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXAS21002_THREAD_STACK_SIZE];
 DECL|trig_sem|member|struct k_sem trig_sem;
-DECL|whoami|member|uint8_t whoami;
+DECL|whoami|member|u8_t whoami;
 DECL|work|member|struct k_work work;

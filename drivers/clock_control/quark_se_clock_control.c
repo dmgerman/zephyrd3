@@ -1,5 +1,5 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|base_address|member|uint32_t base_address;
+DECL|base_address|member|u32_t base_address;
 DECL|clock_quark_se_external_config|variable|clock_quark_se_external_config
 DECL|clock_quark_se_peripheral_config|variable|clock_quark_se_peripheral_config
 DECL|clock_quark_se_sensor_config|variable|clock_quark_se_sensor_config

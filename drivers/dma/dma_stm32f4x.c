@@ -76,28 +76,28 @@ DECL|RESERVED_1|macro|RESERVED_1
 DECL|RESERVED_6|macro|RESERVED_6
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SYS_LOG_U32|macro|SYS_LOG_U32
-DECL|base|member|uint32_t base;
+DECL|base|member|u32_t base;
 DECL|busy|member|bool busy;
-DECL|channel_rx|member|uint8_t channel_rx;
-DECL|channel_tx|member|uint8_t channel_tx;
+DECL|channel_rx|member|u8_t channel_rx;
+DECL|channel_tx|member|u8_t channel_tx;
 DECL|clk|member|struct device *clk;
 DECL|config|member|void (*config)(struct dma_stm32_device *);
 DECL|device_data|variable|device_data
 DECL|dev|member|struct device *dev;
-DECL|direction|member|uint32_t direction;
-DECL|dma_callback|member|void (*dma_callback)(struct device *dev, uint32_t id,
+DECL|direction|member|u32_t direction;
+DECL|dma_callback|member|void (*dma_callback)(struct device *dev, u32_t id,
 DECL|dma_funcs|variable|dma_funcs
 DECL|dma_stm32_1_cdata|variable|dma_stm32_1_cdata
 DECL|dma_stm32_1_config|function|static void dma_stm32_1_config(struct dma_stm32_device *ddata)
 DECL|dma_stm32_2_cdata|variable|dma_stm32_2_cdata
 DECL|dma_stm32_2_config|function|static void dma_stm32_2_config(struct dma_stm32_device *ddata)
-DECL|dma_stm32_config_devcpy|function|static int dma_stm32_config_devcpy(struct device *dev, uint32_t id, struct dma_config *config)
-DECL|dma_stm32_config_memcpy|function|static int dma_stm32_config_memcpy(struct device *dev, uint32_t id)
-DECL|dma_stm32_config|function|static int dma_stm32_config(struct device *dev, uint32_t id, struct dma_config *config)
+DECL|dma_stm32_config_devcpy|function|static int dma_stm32_config_devcpy(struct device *dev, u32_t id, struct dma_config *config)
+DECL|dma_stm32_config_memcpy|function|static int dma_stm32_config_memcpy(struct device *dev, u32_t id)
+DECL|dma_stm32_config|function|static int dma_stm32_config(struct device *dev, u32_t id, struct dma_config *config)
 DECL|dma_stm32_config|struct|struct dma_stm32_config {
 DECL|dma_stm32_device|struct|static struct dma_stm32_device {
-DECL|dma_stm32_disable_stream|function|static int dma_stm32_disable_stream(struct dma_stm32_device *ddata, uint32_t id)
-DECL|dma_stm32_dump_reg|function|static void dma_stm32_dump_reg(struct dma_stm32_device *ddata, uint32_t id)
+DECL|dma_stm32_disable_stream|function|static int dma_stm32_disable_stream(struct dma_stm32_device *ddata, u32_t id)
+DECL|dma_stm32_dump_reg|function|static void dma_stm32_dump_reg(struct dma_stm32_device *ddata, u32_t id)
 DECL|dma_stm32_init|function|static int dma_stm32_init(struct device *dev)
 DECL|dma_stm32_irq_0|function|static void dma_stm32_irq_0(void *arg) { dma_stm32_irq_handler(arg, 0); }
 DECL|dma_stm32_irq_1|function|static void dma_stm32_irq_1(void *arg) { dma_stm32_irq_handler(arg, 1); }
@@ -107,26 +107,26 @@ DECL|dma_stm32_irq_4|function|static void dma_stm32_irq_4(void *arg) { dma_stm32
 DECL|dma_stm32_irq_5|function|static void dma_stm32_irq_5(void *arg) { dma_stm32_irq_handler(arg, 5); }
 DECL|dma_stm32_irq_6|function|static void dma_stm32_irq_6(void *arg) { dma_stm32_irq_handler(arg, 6); }
 DECL|dma_stm32_irq_7|function|static void dma_stm32_irq_7(void *arg) { dma_stm32_irq_handler(arg, 7); }
-DECL|dma_stm32_irq_clear|function|static void dma_stm32_irq_clear(struct dma_stm32_device *ddata,uint32_t id, uint32_t irqs)
-DECL|dma_stm32_irq_handler|function|static void dma_stm32_irq_handler(void *arg, uint32_t id)
-DECL|dma_stm32_irq_status|function|static uint32_t dma_stm32_irq_status(struct dma_stm32_device *ddata, uint32_t id)
-DECL|dma_stm32_read|function|static uint32_t dma_stm32_read(struct dma_stm32_device *ddata, uint32_t reg)
-DECL|dma_stm32_start|function|static int dma_stm32_start(struct device *dev, uint32_t id)
-DECL|dma_stm32_stop|function|static int dma_stm32_stop(struct device *dev, uint32_t id)
+DECL|dma_stm32_irq_clear|function|static void dma_stm32_irq_clear(struct dma_stm32_device *ddata,u32_t id, u32_t irqs)
+DECL|dma_stm32_irq_handler|function|static void dma_stm32_irq_handler(void *arg, u32_t id)
+DECL|dma_stm32_irq_status|function|static u32_t dma_stm32_irq_status(struct dma_stm32_device *ddata, u32_t id)
+DECL|dma_stm32_read|function|static u32_t dma_stm32_read(struct dma_stm32_device *ddata, u32_t reg)
+DECL|dma_stm32_start|function|static int dma_stm32_start(struct device *dev, u32_t id)
+DECL|dma_stm32_stop|function|static int dma_stm32_stop(struct device *dev, u32_t id)
 DECL|dma_stm32_stream_reg|struct|struct dma_stm32_stream_reg {
 DECL|dma_stm32_stream|struct|struct dma_stm32_stream {
-DECL|dma_stm32_write|function|static void dma_stm32_write(struct dma_stm32_device *ddata, uint32_t reg, uint32_t val)
-DECL|hifcr|member|uint32_t hifcr;
-DECL|hisr|member|uint32_t hisr;
-DECL|lifcr|member|uint32_t lifcr;
-DECL|lisr|member|uint32_t lisr;
+DECL|dma_stm32_write|function|static void dma_stm32_write(struct dma_stm32_device *ddata, u32_t reg, u32_t val)
+DECL|hifcr|member|u32_t hifcr;
+DECL|hisr|member|u32_t hisr;
+DECL|lifcr|member|u32_t lifcr;
+DECL|lisr|member|u32_t lisr;
 DECL|mem2mem|member|bool mem2mem;
 DECL|pclken|member|struct stm32f4x_pclken pclken;
 DECL|regs|member|struct dma_stm32_stream_reg regs;
-DECL|scr|member|uint32_t scr;
-DECL|sfcr|member|uint32_t sfcr;
-DECL|sm0ar|member|uint32_t sm0ar;
-DECL|sm1ar|member|uint32_t sm1ar;
-DECL|sndtr|member|uint32_t sndtr;
-DECL|spar|member|uint32_t spar;
+DECL|scr|member|u32_t scr;
+DECL|sfcr|member|u32_t sfcr;
+DECL|sm0ar|member|u32_t sm0ar;
+DECL|sm1ar|member|u32_t sm1ar;
+DECL|sndtr|member|u32_t sndtr;
+DECL|spar|member|u32_t spar;
 DECL|stream|member|struct dma_stm32_stream stream[DMA_STM32_MAX_STREAMS];

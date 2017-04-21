@@ -13,8 +13,8 @@ DECL|TIMER_MODE_PERIODIC|macro|TIMER_MODE_PERIODIC
 DECL|XT_SR_CCOMPARE|macro|XT_SR_CCOMPARE
 DECL|_XT_SR_CCOMPARE|macro|_XT_SR_CCOMPARE
 DECL|_sys_clock_driver_init|function|int _sys_clock_driver_init(struct device *device)
-DECL|_timer_cycle_get_32|function|uint32_t _timer_cycle_get_32(void)
-DECL|_timer_idle_enter|function|void _timer_idle_enter(int32_t ticks)
+DECL|_timer_cycle_get_32|function|u32_t _timer_cycle_get_32(void)
+DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t ticks)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *params)
 DECL|_xt_tick_divisor_init|function|void _xt_tick_divisor_init(void)

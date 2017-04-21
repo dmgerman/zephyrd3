@@ -13,8 +13,8 @@ DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
 DECL|handler_near_far|member|sensor_trigger_handler_t handler_near_far;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
-DECL|prox_stat|member|uint8_t prox_stat;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
+DECL|prox_stat|member|u8_t prox_stat;
 DECL|sem|member|struct k_sem sem;
 DECL|sx9500_data|struct|struct sx9500_data {
 DECL|sx9500_setup_interrupt|function|static inline int sx9500_setup_interrupt(struct device *dev)

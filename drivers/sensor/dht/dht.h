@@ -6,4 +6,4 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_DHT|macro|_SENSOR_DHT
 DECL|dht_data|struct|struct dht_data {
 DECL|gpio|member|struct device *gpio;
-DECL|sample|member|uint8_t sample[4];
+DECL|sample|member|u8_t sample[4];

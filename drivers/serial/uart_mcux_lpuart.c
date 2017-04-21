@@ -1,5 +1,5 @@
 DECL|base|member|LPUART_Type *base;
-DECL|baud_rate|member|uint32_t baud_rate;
+DECL|baud_rate|member|u32_t baud_rate;
 DECL|callback|member|uart_irq_callback_t callback;
 DECL|clock_source|member|clock_name_t clock_source;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
@@ -10,8 +10,8 @@ DECL|mcux_lpuart_config|struct|struct mcux_lpuart_config {
 DECL|mcux_lpuart_data|struct|struct mcux_lpuart_data {
 DECL|mcux_lpuart_driver_api|variable|mcux_lpuart_driver_api
 DECL|mcux_lpuart_err_check|function|static int mcux_lpuart_err_check(struct device *dev)
-DECL|mcux_lpuart_fifo_fill|function|static int mcux_lpuart_fifo_fill(struct device *dev, const uint8_t *tx_data, int len)
-DECL|mcux_lpuart_fifo_read|function|static int mcux_lpuart_fifo_read(struct device *dev, uint8_t *rx_data, const int len)
+DECL|mcux_lpuart_fifo_fill|function|static int mcux_lpuart_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
+DECL|mcux_lpuart_fifo_read|function|static int mcux_lpuart_fifo_read(struct device *dev, u8_t *rx_data, const int len)
 DECL|mcux_lpuart_init|function|static int mcux_lpuart_init(struct device *dev)
 DECL|mcux_lpuart_irq_callback_set|function|static void mcux_lpuart_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|mcux_lpuart_irq_err_disable|function|static void mcux_lpuart_irq_err_disable(struct device *dev)

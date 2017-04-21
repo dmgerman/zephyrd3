@@ -12,23 +12,23 @@ DECL|MPU6050_SLEEP_EN|macro|MPU6050_SLEEP_EN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_MPU6050_H__|macro|__SENSOR_MPU6050_H__
-DECL|accel_sensitivity_shift|member|uint16_t accel_sensitivity_shift;
-DECL|accel_x|member|int16_t accel_x;
-DECL|accel_y|member|int16_t accel_y;
-DECL|accel_z|member|int16_t accel_z;
+DECL|accel_sensitivity_shift|member|u16_t accel_sensitivity_shift;
+DECL|accel_x|member|s16_t accel_x;
+DECL|accel_y|member|s16_t accel_y;
+DECL|accel_z|member|s16_t accel_z;
 DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
 DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
-DECL|gyro_sensitivity_x10|member|uint16_t gyro_sensitivity_x10;
-DECL|gyro_x|member|int16_t gyro_x;
-DECL|gyro_y|member|int16_t gyro_y;
-DECL|gyro_z|member|int16_t gyro_z;
+DECL|gyro_sensitivity_x10|member|u16_t gyro_sensitivity_x10;
+DECL|gyro_x|member|s16_t gyro_x;
+DECL|gyro_y|member|s16_t gyro_y;
+DECL|gyro_z|member|s16_t gyro_z;
 DECL|i2c|member|struct device *i2c;
 DECL|mpu6050_data|struct|struct mpu6050_data {
 DECL|mpu6050_gyro_sensitivity_x10|variable|mpu6050_gyro_sensitivity_x10
-DECL|temp|member|int16_t temp;
+DECL|temp|member|s16_t temp;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_MPU6050_THREAD_STACK_SIZE];
 DECL|work|member|struct k_work work;

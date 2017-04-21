@@ -1,4 +1,4 @@
-DECL|bmc150_magn_gpio_drdy_callback|function|static void bmc150_magn_gpio_drdy_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|bmc150_magn_gpio_drdy_callback|function|static void bmc150_magn_gpio_drdy_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|bmc150_magn_init_interrupt|function|int bmc150_magn_init_interrupt(struct device *dev)
 DECL|bmc150_magn_set_drdy_polarity|function|static int bmc150_magn_set_drdy_polarity(struct device *dev, int state)
 DECL|bmc150_magn_thread_main|function|static void bmc150_magn_thread_main(void *arg1, void *arg2, void *arg3)

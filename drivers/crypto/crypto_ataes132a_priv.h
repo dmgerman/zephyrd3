@@ -51,28 +51,28 @@ DECL|ATAES_VOLATILE_RNDNNC|macro|ATAES_VOLATILE_RNDNNC
 DECL|ATAES_ZONECFG_REG|macro|ATAES_ZONECFG_REG
 DECL|CRC16_POLY|macro|CRC16_POLY
 DECL|_ATAES132A_PRIV_|macro|_ATAES132A_PRIV_
-DECL|ataes132a_atmel_crc|function|void ataes132a_atmel_crc(uint8_t *input, uint8_t length, uint8_t *output)
+DECL|ataes132a_atmel_crc|function|void ataes132a_atmel_crc(u8_t *input, u8_t length, u8_t *output)
 DECL|ataes132a_device_config|struct|struct ataes132a_device_config {
 DECL|ataes132a_device_data|struct|struct ataes132a_device_data {
 DECL|ataes132a_driver_state|struct|struct ataes132a_driver_state {
 DECL|ataes132a_mac_mode|struct|struct ataes132a_mac_mode {
 DECL|ataes132a_mac_packet|struct|struct ataes132a_mac_packet {
-DECL|burst_read_i2c|function|static inline int burst_read_i2c(struct device *dev, uint16_t dev_addr, uint16_t start_addr, uint8_t *buf, uint8_t num_bytes)
-DECL|burst_write_i2c|function|static inline int burst_write_i2c(struct device *dev, uint16_t dev_addr, uint16_t start_addr, uint8_t *buf, uint8_t num_bytes)
-DECL|chip_config|member|uint8_t chip_config;
-DECL|command_buffer|member|uint8_t command_buffer[64];
+DECL|burst_read_i2c|function|static inline int burst_read_i2c(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u8_t num_bytes)
+DECL|burst_write_i2c|function|static inline int burst_write_i2c(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u8_t num_bytes)
+DECL|chip_config|member|u8_t chip_config;
+DECL|command_buffer|member|u8_t command_buffer[64];
 DECL|device_sem|member|struct k_sem device_sem;
-DECL|encryption_key_id|member|uint8_t encryption_key_id;
-DECL|encryption_mac_count|member|uint8_t encryption_mac_count;
-DECL|i2c_addr|member|uint16_t i2c_addr;
+DECL|encryption_key_id|member|u8_t encryption_key_id;
+DECL|encryption_mac_count|member|u8_t encryption_mac_count;
+DECL|i2c_addr|member|u16_t i2c_addr;
 DECL|i2c_port|member|const char *i2c_port;
-DECL|i2c_speed|member|uint8_t i2c_speed;
+DECL|i2c_speed|member|u8_t i2c_speed;
 DECL|i2c|member|struct device *i2c;
 DECL|in_use|member|bool in_use;
 DECL|include_counter|member|bool include_counter;
 DECL|include_serial|member|bool include_serial;
 DECL|include_smallzone|member|bool include_smallzone;
-DECL|key_config|member|uint8_t key_config;
-DECL|key_id|member|uint8_t key_id;
-DECL|read_reg_i2c|function|static inline int read_reg_i2c(struct device *dev, uint16_t dev_addr, uint16_t reg_addr, uint8_t *value)
-DECL|write_reg_i2c|function|static inline int write_reg_i2c(struct device *dev, uint16_t dev_addr,uint16_t reg_addr, uint8_t value)
+DECL|key_config|member|u8_t key_config;
+DECL|key_id|member|u8_t key_id;
+DECL|read_reg_i2c|function|static inline int read_reg_i2c(struct device *dev, u16_t dev_addr, u16_t reg_addr, u8_t *value)
+DECL|write_reg_i2c|function|static inline int write_reg_i2c(struct device *dev, u16_t dev_addr,u16_t reg_addr, u8_t value)

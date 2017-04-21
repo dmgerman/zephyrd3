@@ -22,7 +22,7 @@ DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
-DECL|sample|member|int16_t sample;
+DECL|sample|member|s16_t sample;
 DECL|th_handler|member|sensor_trigger_handler_t th_handler;
 DECL|th_trigger|member|struct sensor_trigger th_trigger;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_TMP007_THREAD_STACK_SIZE];

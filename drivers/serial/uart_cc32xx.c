@@ -6,8 +6,8 @@ DECL|uart_cc32xx_dev_data_0|variable|uart_cc32xx_dev_data_0
 DECL|uart_cc32xx_dev_data_t|struct|struct uart_cc32xx_dev_data_t {
 DECL|uart_cc32xx_driver_api|variable|uart_cc32xx_driver_api
 DECL|uart_cc32xx_err_check|function|static int uart_cc32xx_err_check(struct device *dev)
-DECL|uart_cc32xx_fifo_fill|function|static int uart_cc32xx_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
-DECL|uart_cc32xx_fifo_read|function|static int uart_cc32xx_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
+DECL|uart_cc32xx_fifo_fill|function|static int uart_cc32xx_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
+DECL|uart_cc32xx_fifo_read|function|static int uart_cc32xx_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_cc32xx_init|function|static int uart_cc32xx_init(struct device *dev)
 DECL|uart_cc32xx_irq_callback_set|function|static void uart_cc32xx_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_cc32xx_irq_err_disable|function|static void uart_cc32xx_irq_err_disable(struct device *dev)

@@ -40,24 +40,24 @@ DECL|INTEL_SPI_SSSR_TNF|macro|INTEL_SPI_SSSR_TNF
 DECL|__SPI_INTEL_PRIV_H__|macro|__SPI_INTEL_PRIV_H__
 DECL|config_func|member|spi_intel_config_t config_func;
 DECL|cs_gpio_name|member|char *cs_gpio_name;
-DECL|cs_gpio_pin|member|uint32_t cs_gpio_pin;
+DECL|cs_gpio_pin|member|u32_t cs_gpio_pin;
 DECL|cs_gpio_port|member|struct device *cs_gpio_port;
-DECL|device_power_state|member|uint32_t device_power_state;
+DECL|device_power_state|member|u32_t device_power_state;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
-DECL|error|member|uint8_t error;
-DECL|irq|member|uint32_t irq;
-DECL|padding|member|uint8_t padding[3];
+DECL|error|member|u8_t error;
+DECL|irq|member|u32_t irq;
+DECL|padding|member|u8_t padding[3];
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
-DECL|r_buf_len|member|uint32_t r_buf_len;
-DECL|received|member|uint32_t received;
-DECL|regs|member|uint32_t regs;
-DECL|rx_buf|member|uint8_t *rx_buf;
+DECL|r_buf_len|member|u32_t r_buf_len;
+DECL|received|member|u32_t received;
+DECL|regs|member|u32_t regs;
+DECL|rx_buf|member|u8_t *rx_buf;
 DECL|spi_intel_config_t|typedef|typedef void (*spi_intel_config_t)(void);
 DECL|spi_intel_config|struct|struct spi_intel_config {
 DECL|spi_intel_data|struct|struct spi_intel_data {
-DECL|sscr0|member|uint32_t sscr0;
-DECL|sscr1|member|uint32_t sscr1;
-DECL|t_buf_len|member|uint32_t t_buf_len;
-DECL|trans_len|member|uint32_t trans_len;
-DECL|transmitted|member|uint32_t transmitted;
-DECL|tx_buf|member|const uint8_t *tx_buf;
+DECL|sscr0|member|u32_t sscr0;
+DECL|sscr1|member|u32_t sscr1;
+DECL|t_buf_len|member|u32_t t_buf_len;
+DECL|trans_len|member|u32_t trans_len;
+DECL|transmitted|member|u32_t transmitted;
+DECL|tx_buf|member|const u8_t *tx_buf;

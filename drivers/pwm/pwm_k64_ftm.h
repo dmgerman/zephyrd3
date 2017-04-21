@@ -88,16 +88,16 @@ DECL|PWM_K64_FTM_SYNC_TRIG1|macro|PWM_K64_FTM_SYNC_TRIG1
 DECL|PWM_K64_FTM_SYNC_TRIG2|macro|PWM_K64_FTM_SYNC_TRIG2
 DECL|PWM_K64_FTM_SYNC|macro|PWM_K64_FTM_SYNC
 DECL|__PWM_K64_FTM_H__|macro|__PWM_K64_FTM_H__
-DECL|clock_source|member|uint32_t clock_source;
-DECL|device_power_state|member|uint32_t device_power_state;
-DECL|ftm_num|member|uint32_t ftm_num;
-DECL|period|member|uint32_t period;
+DECL|clock_source|member|u32_t clock_source;
+DECL|device_power_state|member|u32_t device_power_state;
+DECL|ftm_num|member|u32_t ftm_num;
+DECL|period|member|u32_t period;
 DECL|phase_enable0|member|bool phase_enable0; /* combine pwm0, pwm1 for phase capability */
 DECL|phase_enable2|member|bool phase_enable2; /* combine pwm2, pwm3 for phase capability */
 DECL|phase_enable4|member|bool phase_enable4; /* combine pwm4, pwm4 for phase capability */
 DECL|phase_enable6|member|bool phase_enable6; /* combine pwm6, pwm5 for phase capability */
-DECL|phase|member|uint32_t phase[4];
-DECL|prescale|member|uint32_t prescale;
+DECL|phase|member|u32_t phase[4];
+DECL|prescale|member|u32_t prescale;
 DECL|pwm_ftm_config|struct|struct pwm_ftm_config {
 DECL|pwm_ftm_drv_data|struct|struct pwm_ftm_drv_data {
-DECL|reg_base|member|uint32_t reg_base;
+DECL|reg_base|member|u32_t reg_base;

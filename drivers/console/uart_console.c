@@ -31,18 +31,18 @@ DECL|cursor_save|function|static inline void cursor_save(void)
 DECL|cur|variable|cur
 DECL|debug_hook_in|variable|debug_hook_in
 DECL|debug_hook_out|variable|debug_hook_out
-DECL|del_char|function|static void del_char(char *pos, uint8_t end)
+DECL|del_char|function|static void del_char(char *pos, u8_t end)
 DECL|end|variable|end
 DECL|esc_state|variable|esc_state
-DECL|handle_ansi|function|static void handle_ansi(uint8_t byte, char *line)
-DECL|insert_char|function|static void insert_char(char *pos, char c, uint8_t end)
+DECL|handle_ansi|function|static void handle_ansi(u8_t byte, char *line)
+DECL|insert_char|function|static void insert_char(char *pos, char c, u8_t end)
 DECL|lines_queue|variable|lines_queue
-DECL|read_uart|function|static int read_uart(struct device *uart, uint8_t *buf, unsigned int size)
+DECL|read_uart|function|static int read_uart(struct device *uart, u8_t *buf, unsigned int size)
 DECL|uart_console_dev|variable|uart_console_dev
 DECL|uart_console_hook_install|function|void uart_console_hook_install(void)
 DECL|uart_console_in_debug_hook_install|function|void uart_console_in_debug_hook_install(uart_console_in_debug_hook_t hook)
 DECL|uart_console_init|function|static int uart_console_init(struct device *arg)
 DECL|uart_console_isr|function|void uart_console_isr(struct device *unused)
 DECL|uart_console_out_debug_hook_install|function|void uart_console_out_debug_hook_install(uart_console_out_debug_hook_t *hook)
-DECL|uart_register_input|function|void uart_register_input(struct k_fifo *avail, struct k_fifo *lines, uint8_t (*completion)(char *str, uint8_t len))
+DECL|uart_register_input|function|void uart_register_input(struct k_fifo *avail, struct k_fifo *lines, u8_t (*completion)(char *str, u8_t len))
 DECL|uart_register_input|macro|uart_register_input

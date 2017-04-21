@@ -22,5 +22,5 @@ DECL|spi_dw_data_port_0|variable|spi_dw_data_port_0
 DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)
 DECL|spi_dw_isr|function|void spi_dw_isr(void *arg)
-DECL|spi_dw_slave_select|function|static int spi_dw_slave_select(struct device *dev, uint32_t slave)
-DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct device *dev, const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
+DECL|spi_dw_slave_select|function|static int spi_dw_slave_select(struct device *dev, u32_t slave)
+DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct device *dev, const void *tx_buf, u32_t tx_buf_len, void *rx_buf, u32_t rx_buf_len)

@@ -6,24 +6,24 @@ DECL|ds|member|unsigned int ds;
 DECL|fall_ie|member|unsigned int fall_ie;
 DECL|fall_ip|member|unsigned int fall_ip;
 DECL|fe310_cfg_func_t|typedef|typedef void (*fe310_cfg_func_t)(void);
-DECL|gpio_base_addr|member|uint32_t gpio_base_addr;
+DECL|gpio_base_addr|member|u32_t gpio_base_addr;
 DECL|gpio_cfg_func|member|fe310_cfg_func_t gpio_cfg_func;
 DECL|gpio_fe310_cfg_0|function|static void gpio_fe310_cfg_0(void)
 DECL|gpio_fe310_config0|variable|gpio_fe310_config0
-DECL|gpio_fe310_config|function|static int gpio_fe310_config(struct device *dev, int access_op, uint32_t pin, int flags)
+DECL|gpio_fe310_config|function|static int gpio_fe310_config(struct device *dev, int access_op, u32_t pin, int flags)
 DECL|gpio_fe310_config|struct|struct gpio_fe310_config {
 DECL|gpio_fe310_data0|variable|gpio_fe310_data0
 DECL|gpio_fe310_data|struct|struct gpio_fe310_data {
-DECL|gpio_fe310_disable_callback|function|static int gpio_fe310_disable_callback(struct device *dev, int access_op, uint32_t pin)
+DECL|gpio_fe310_disable_callback|function|static int gpio_fe310_disable_callback(struct device *dev, int access_op, u32_t pin)
 DECL|gpio_fe310_driver|variable|gpio_fe310_driver
-DECL|gpio_fe310_enable_callback|function|static int gpio_fe310_enable_callback(struct device *dev, int access_op, uint32_t pin)
+DECL|gpio_fe310_enable_callback|function|static int gpio_fe310_enable_callback(struct device *dev, int access_op, u32_t pin)
 DECL|gpio_fe310_init|function|static int gpio_fe310_init(struct device *dev)
 DECL|gpio_fe310_irq_handler|function|static void gpio_fe310_irq_handler(void *arg)
 DECL|gpio_fe310_manage_callback|function|static int gpio_fe310_manage_callback(struct device *dev, struct gpio_callback *callback, bool set)
-DECL|gpio_fe310_read|function|static int gpio_fe310_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
+DECL|gpio_fe310_read|function|static int gpio_fe310_read(struct device *dev, int access_op, u32_t pin, u32_t *value)
 DECL|gpio_fe310_t|struct|struct gpio_fe310_t {
-DECL|gpio_fe310_write|function|static int gpio_fe310_write(struct device *dev, int access_op, uint32_t pin, uint32_t value)
-DECL|gpio_irq_base|member|uint32_t gpio_irq_base;
+DECL|gpio_fe310_write|function|static int gpio_fe310_write(struct device *dev, int access_op, u32_t pin, u32_t value)
+DECL|gpio_irq_base|member|u32_t gpio_irq_base;
 DECL|high_ie|member|unsigned int high_ie;
 DECL|high_ip|member|unsigned int high_ip;
 DECL|in_en|member|unsigned int in_en;

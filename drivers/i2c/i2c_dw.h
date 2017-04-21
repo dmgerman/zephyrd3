@@ -26,22 +26,22 @@ DECL|IC_ACTIVITY|macro|IC_ACTIVITY
 DECL|IC_ENABLE_BIT|macro|IC_ENABLE_BIT
 DECL|__DRIVERS_I2C_DW_H|macro|__DRIVERS_I2C_DW_H
 DECL|app_config|member|union dev_config app_config;
-DECL|base_address|member|uint32_t base_address;
+DECL|base_address|member|u32_t base_address;
 DECL|config_func|member|i2c_isr_cb_t config_func;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
-DECL|hcnt|member|uint16_t hcnt;
+DECL|hcnt|member|u16_t hcnt;
 DECL|i2c_dw_dev_config|struct|struct i2c_dw_dev_config {
 DECL|i2c_dw_rom_config|struct|struct i2c_dw_rom_config {
 DECL|i2c_isr_cb_t|typedef|typedef void (*i2c_isr_cb_t)(struct device *port);
-DECL|interrupt_mask|member|uint32_t interrupt_mask;
-DECL|irq_num|member|uint32_t irq_num;
-DECL|lcnt|member|uint16_t lcnt;
+DECL|interrupt_mask|member|u32_t interrupt_mask;
+DECL|irq_num|member|u32_t irq_num;
+DECL|lcnt|member|u16_t lcnt;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
-DECL|request_bytes|member|uint8_t request_bytes;
-DECL|rx_pending|member|uint32_t rx_pending;
+DECL|request_bytes|member|u8_t request_bytes;
+DECL|rx_pending|member|u32_t rx_pending;
 DECL|shared_irq_dev_name|member|char *shared_irq_dev_name;
-DECL|state|member|volatile uint8_t state; /* last direction of transfer */
+DECL|state|member|volatile u8_t state; /* last direction of transfer */
 DECL|support_hs_mode|member|bool support_hs_mode;
-DECL|xfr_buf|member|uint8_t *xfr_buf;
-DECL|xfr_flags|member|uint8_t xfr_flags;
-DECL|xfr_len|member|uint32_t xfr_len;
+DECL|xfr_buf|member|u8_t *xfr_buf;
+DECL|xfr_flags|member|u8_t xfr_flags;
+DECL|xfr_len|member|u32_t xfr_len;

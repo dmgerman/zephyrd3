@@ -1,7 +1,7 @@
 DECL|bmi160_acc_slope_config|function|int bmi160_acc_slope_config(struct device *dev, enum sensor_attribute attr, const struct sensor_value *val)
-DECL|bmi160_gpio_callback|function|static void bmi160_gpio_callback(struct device *port, struct gpio_callback *cb, uint32_t pin)
+DECL|bmi160_gpio_callback|function|static void bmi160_gpio_callback(struct device *port, struct gpio_callback *cb, u32_t pin)
 DECL|bmi160_handle_anymotion|function|static void bmi160_handle_anymotion(struct device *dev)
-DECL|bmi160_handle_drdy|function|static void bmi160_handle_drdy(struct device *dev, uint8_t status)
+DECL|bmi160_handle_drdy|function|static void bmi160_handle_drdy(struct device *dev, u8_t status)
 DECL|bmi160_handle_interrupts|function|static void bmi160_handle_interrupts(void *arg)
 DECL|bmi160_thread_main|function|static void bmi160_thread_main(void *arg1, void *unused1, void *unused2)
 DECL|bmi160_thread_stack|variable|bmi160_thread_stack

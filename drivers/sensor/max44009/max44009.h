@@ -12,4 +12,4 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SENSOR_MAX44009|macro|_SENSOR_MAX44009
 DECL|i2c|member|struct device *i2c;
 DECL|max44009_data|struct|struct max44009_data {
-DECL|sample|member|uint16_t sample;
+DECL|sample|member|u16_t sample;

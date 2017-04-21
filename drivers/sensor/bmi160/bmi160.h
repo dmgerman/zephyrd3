@@ -258,41 +258,41 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_BMI160_H_|macro|_BMI160_H_
 DECL|__packed|member|} __packed;
-DECL|acc|member|uint16_t acc; /* micro m/s^2/lsb */
-DECL|acc|member|uint16_t acc[3];
-DECL|acc|member|uint8_t acc : 2;
+DECL|acc|member|u16_t acc; /* micro m/s^2/lsb */
+DECL|acc|member|u16_t acc[3];
+DECL|acc|member|u8_t acc : 2;
 DECL|bmi160_device_config|struct|struct bmi160_device_config {
 DECL|bmi160_device_data|struct|struct bmi160_device_data {
 DECL|bmi160_odr|enum|enum bmi160_odr {
 DECL|bmi160_pmu_status|union|union bmi160_pmu_status {
 DECL|bmi160_range|struct|struct bmi160_range {
-DECL|bmi160_reg_update|function|static inline int bmi160_reg_update(struct device *dev, uint8_t reg_addr, uint8_t mask, uint8_t val)
+DECL|bmi160_reg_update|function|static inline int bmi160_reg_update(struct device *dev, u8_t reg_addr, u8_t mask, u8_t val)
 DECL|bmi160_sample|union|union bmi160_sample {
 DECL|bmi160_scale|struct|struct bmi160_scale {
 DECL|dev|member|struct device *dev;
-DECL|dummy_byte|member|uint8_t dummy_byte;
+DECL|dummy_byte|member|u8_t dummy_byte;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_port|member|const char *gpio_port;
 DECL|gpio|member|struct device *gpio;
-DECL|gyr|member|uint16_t gyr; /* micro radians/s/lsb */
-DECL|gyr|member|uint16_t gyr[3];
-DECL|gyr|member|uint8_t gyr : 2;
+DECL|gyr|member|u16_t gyr; /* micro radians/s/lsb */
+DECL|gyr|member|u16_t gyr[3];
+DECL|gyr|member|u8_t gyr : 2;
 DECL|handler_anymotion|member|sensor_trigger_handler_t handler_anymotion;
 DECL|handler_drdy_acc|member|sensor_trigger_handler_t handler_drdy_acc;
 DECL|handler_drdy_gyr|member|sensor_trigger_handler_t handler_drdy_gyr;
-DECL|int_pin|member|uint8_t int_pin;
-DECL|mag|member|uint8_t mag : 2;
+DECL|int_pin|member|u8_t int_pin;
+DECL|mag|member|u8_t mag : 2;
 DECL|pmu_sts|member|union bmi160_pmu_status pmu_sts;
-DECL|range|member|uint16_t range;
-DECL|raw|member|uint8_t raw;
-DECL|raw|member|uint8_t raw[BMI160_BUF_SIZE];
-DECL|reg_val|member|uint8_t reg_val;
-DECL|res|member|uint8_t res : 2;
+DECL|range|member|u16_t range;
+DECL|raw|member|u8_t raw;
+DECL|raw|member|u8_t raw[BMI160_BUF_SIZE];
+DECL|reg_val|member|u8_t reg_val;
+DECL|res|member|u8_t res : 2;
 DECL|sample|member|union bmi160_sample sample;
 DECL|scale|member|struct bmi160_scale scale;
 DECL|sem|member|struct k_sem sem;
-DECL|spi_freq|member|uint32_t spi_freq;
+DECL|spi_freq|member|u32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
-DECL|spi_slave|member|uint8_t spi_slave;
+DECL|spi_slave|member|u8_t spi_slave;
 DECL|spi|member|struct device *spi;
 DECL|work|member|struct k_work work;

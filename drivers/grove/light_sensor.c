@@ -1,6 +1,6 @@
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|adc_buffer|member|uint8_t adc_buffer[4];
+DECL|adc_buffer|member|u8_t adc_buffer[4];
 DECL|adc_table|member|struct adc_seq_table adc_table;
 DECL|adc|member|struct device *adc;
 DECL|gls_api|variable|gls_api

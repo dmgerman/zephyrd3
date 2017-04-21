@@ -13,6 +13,6 @@ DECL|TH02_STATUS_RDY_MASK|macro|TH02_STATUS_RDY_MASK
 DECL|TH02_WR_REG_MODE|macro|TH02_WR_REG_MODE
 DECL|_SENSOR_TH02|macro|_SENSOR_TH02
 DECL|i2c|member|struct device *i2c;
-DECL|rh_sample|member|uint16_t rh_sample;
-DECL|t_sample|member|uint16_t t_sample;
+DECL|rh_sample|member|u16_t rh_sample;
+DECL|t_sample|member|u16_t t_sample;
 DECL|th02_data|struct|struct th02_data {

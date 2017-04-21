@@ -13,9 +13,9 @@ DECL|lsm9ds0_gyro_init|function|static int lsm9ds0_gyro_init(struct device *dev)
 DECL|lsm9ds0_gyro_power_ctrl|function|static inline int lsm9ds0_gyro_power_ctrl(struct device *dev, int power, int x_en, int y_en, int z_en)
 DECL|lsm9ds0_gyro_samp_freq_table|variable|lsm9ds0_gyro_samp_freq_table
 DECL|lsm9ds0_gyro_sample_fetch|function|static int lsm9ds0_gyro_sample_fetch(struct device *dev, enum sensor_channel chan)
-DECL|lsm9ds0_gyro_set_fs_raw|function|static int lsm9ds0_gyro_set_fs_raw(struct device *dev, uint8_t fs)
+DECL|lsm9ds0_gyro_set_fs_raw|function|static int lsm9ds0_gyro_set_fs_raw(struct device *dev, u8_t fs)
 DECL|lsm9ds0_gyro_set_fs|function|static int lsm9ds0_gyro_set_fs(struct device *dev, int fs)
-DECL|lsm9ds0_gyro_set_odr_raw|function|static inline int lsm9ds0_gyro_set_odr_raw(struct device *dev, uint8_t odr)
+DECL|lsm9ds0_gyro_set_odr_raw|function|static inline int lsm9ds0_gyro_set_odr_raw(struct device *dev, u8_t odr)
 DECL|lsm9ds0_gyro_set_odr|function|static int lsm9ds0_gyro_set_odr(struct device *dev, int odr)
-DECL|reg_val|member|uint8_t reg_val;
-DECL|reg_val|member|uint8_t reg_val;
+DECL|reg_val|member|u8_t reg_val;
+DECL|reg_val|member|u8_t reg_val;

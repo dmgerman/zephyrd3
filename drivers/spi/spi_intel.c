@@ -7,7 +7,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *dev)
 DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
-DECL|completed|function|static void completed(struct device *dev, uint32_t error)
+DECL|completed|function|static void completed(struct device *dev, u32_t error)
 DECL|intel_spi_api|variable|intel_spi_api
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
@@ -18,15 +18,15 @@ DECL|spi_intel_config_1|variable|spi_intel_config_1
 DECL|spi_intel_configure|function|static int spi_intel_configure(struct device *dev,struct spi_config *config)
 DECL|spi_intel_data_port_0|variable|spi_intel_data_port_0
 DECL|spi_intel_data_port_1|variable|spi_intel_data_port_1
-DECL|spi_intel_device_ctrl|function|static int spi_intel_device_ctrl(struct device *dev, uint32_t ctrl_command, void *context)
-DECL|spi_intel_get_power_state|function|static uint32_t spi_intel_get_power_state(struct device *dev)
+DECL|spi_intel_device_ctrl|function|static int spi_intel_device_ctrl(struct device *dev, u32_t ctrl_command, void *context)
+DECL|spi_intel_get_power_state|function|static u32_t spi_intel_get_power_state(struct device *dev)
 DECL|spi_intel_init|function|int spi_intel_init(struct device *dev)
 DECL|spi_intel_isr|function|void spi_intel_isr(void *arg)
 DECL|spi_intel_resume_from_suspend|function|static int spi_intel_resume_from_suspend(struct device *dev)
-DECL|spi_intel_set_power_state|function|static void spi_intel_set_power_state(struct device *dev, uint32_t power_state)
+DECL|spi_intel_set_power_state|function|static void spi_intel_set_power_state(struct device *dev, u32_t power_state)
 DECL|spi_intel_set_power_state|macro|spi_intel_set_power_state
 DECL|spi_intel_set_power_state|macro|spi_intel_set_power_state
 DECL|spi_intel_setup|function|static inline int spi_intel_setup(struct device *dev)
 DECL|spi_intel_setup|macro|spi_intel_setup
 DECL|spi_intel_suspend|function|static int spi_intel_suspend(struct device *dev)
-DECL|spi_intel_transceive|function|static int spi_intel_transceive(struct device *dev,const void *tx_buf, uint32_t tx_buf_len, void *rx_buf, uint32_t rx_buf_len)
+DECL|spi_intel_transceive|function|static int spi_intel_transceive(struct device *dev,const void *tx_buf, u32_t tx_buf_len, void *rx_buf, u32_t rx_buf_len)

@@ -68,22 +68,22 @@ DECL|START_ADC_SEQ|macro|START_ADC_SEQ
 DECL|adc_config|struct|struct adc_config {
 DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(void);
 DECL|adc_info|struct|struct adc_info {
-DECL|calibration_value|member|uint8_t calibration_value;
-DECL|capture_mode|member|uint8_t capture_mode;
-DECL|clock_ratio|member|uint32_t clock_ratio;
+DECL|calibration_value|member|u8_t calibration_value;
+DECL|capture_mode|member|u8_t capture_mode;
+DECL|clock_ratio|member|u32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
-DECL|dummy_conversion|member|uint8_t dummy_conversion;
+DECL|dummy_conversion|member|u8_t dummy_conversion;
 DECL|entries|member|struct adc_seq_entry *entries;
-DECL|index|member|uint8_t index[BUFS_NUM];
-DECL|out_mode|member|uint8_t out_mode;
-DECL|padding|member|uint8_t padding[3];
-DECL|reg_base|member|uint32_t reg_base;
-DECL|reg_err_mask|member|uint32_t reg_err_mask;
-DECL|reg_irq_mask|member|uint32_t reg_irq_mask;
-DECL|sample_width|member|uint8_t sample_width;
-DECL|seq_mode|member|uint8_t seq_mode;
-DECL|seq_size|member|uint8_t seq_size;
-DECL|serial_dly|member|uint8_t serial_dly;
+DECL|index|member|u8_t index[BUFS_NUM];
+DECL|out_mode|member|u8_t out_mode;
+DECL|padding|member|u8_t padding[3];
+DECL|reg_base|member|u32_t reg_base;
+DECL|reg_err_mask|member|u32_t reg_err_mask;
+DECL|reg_irq_mask|member|u32_t reg_irq_mask;
+DECL|sample_width|member|u8_t sample_width;
+DECL|seq_mode|member|u8_t seq_mode;
+DECL|seq_size|member|u8_t seq_size;
+DECL|serial_dly|member|u8_t serial_dly;
 DECL|ss_adc_data_to_mv|macro|ss_adc_data_to_mv
-DECL|state|member|uint8_t state;
+DECL|state|member|u8_t state;

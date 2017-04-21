@@ -1,4 +1,4 @@
-DECL|fxas21002_gpio_callback|function|static void fxas21002_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pin_mask)
+DECL|fxas21002_gpio_callback|function|static void fxas21002_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pin_mask)
 DECL|fxas21002_handle_drdy_int|function|static int fxas21002_handle_drdy_int(struct device *dev)
 DECL|fxas21002_handle_int|function|static void fxas21002_handle_int(void *arg)
 DECL|fxas21002_thread_main|function|static void fxas21002_thread_main(void *arg1, void *unused1, void *unused2)

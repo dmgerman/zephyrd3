@@ -19,9 +19,9 @@ DECL|UART_ALTERA_JTAG_DATA_RAVAIL_OFST|macro|UART_ALTERA_JTAG_DATA_RAVAIL_OFST
 DECL|UART_ALTERA_JTAG_DATA_REG|macro|UART_ALTERA_JTAG_DATA_REG
 DECL|UART_ALTERA_JTAG_DATA_RVALID_MSK|macro|UART_ALTERA_JTAG_DATA_RVALID_MSK
 DECL|UART_ALTERA_JTAG_DATA_RVALID_OFST|macro|UART_ALTERA_JTAG_DATA_RVALID_OFST
-DECL|control_reg_read|function|static uint32_t control_reg_read(void *base)
-DECL|control_reg_write|function|static void control_reg_write(void *base, uint32_t data)
-DECL|data_reg_write|function|static void data_reg_write(void *base, uint32_t data)
+DECL|control_reg_read|function|static u32_t control_reg_read(void *base)
+DECL|control_reg_write|function|static void control_reg_write(void *base, u32_t data)
+DECL|data_reg_write|function|static void data_reg_write(void *base, u32_t data)
 DECL|uart_altera_jtag_dev_cfg_0|variable|uart_altera_jtag_dev_cfg_0
 DECL|uart_altera_jtag_driver_api|variable|uart_altera_jtag_driver_api
 DECL|uart_altera_jtag_init|function|static int uart_altera_jtag_init(struct device *dev)

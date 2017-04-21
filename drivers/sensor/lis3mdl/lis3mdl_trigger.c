@@ -1,4 +1,4 @@
-DECL|lis3mdl_gpio_callback|function|static void lis3mdl_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|lis3mdl_gpio_callback|function|static void lis3mdl_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|lis3mdl_init_interrupt|function|int lis3mdl_init_interrupt(struct device *dev)
 DECL|lis3mdl_thread_cb|function|static void lis3mdl_thread_cb(void *arg)
 DECL|lis3mdl_thread|function|static void lis3mdl_thread(int dev_ptr, int unused)

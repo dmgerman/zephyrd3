@@ -1,5 +1,5 @@
 DECL|tmp007_attr_set|function|int tmp007_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
-DECL|tmp007_gpio_callback|function|static void tmp007_gpio_callback(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|tmp007_gpio_callback|function|static void tmp007_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|tmp007_init_interrupt|function|int tmp007_init_interrupt(struct device *dev)
 DECL|tmp007_thread_cb|function|static void tmp007_thread_cb(void *arg)
 DECL|tmp007_thread|function|static void tmp007_thread(int dev_ptr, int unused)

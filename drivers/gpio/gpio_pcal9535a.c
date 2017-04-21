@@ -23,11 +23,11 @@ DECL|REG_PUD_SEL_PORT0|macro|REG_PUD_SEL_PORT0
 DECL|REG_PUD_SEL_PORT1|macro|REG_PUD_SEL_PORT1
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_has_i2c_master|function|static inline int _has_i2c_master(struct device *dev)
-DECL|_read_port_regs|function|static int _read_port_regs(struct device *dev, uint8_t reg, union gpio_pcal9535a_port_data *buf)
-DECL|_setup_pin_dir|function|static int _setup_pin_dir(struct device *dev, int access_op, uint32_t pin, int flags)
-DECL|_setup_pin_polarity|function|static int _setup_pin_polarity(struct device *dev, int access_op, uint32_t pin, int flags)
-DECL|_setup_pin_pullupdown|function|static int _setup_pin_pullupdown(struct device *dev, int access_op, uint32_t pin, int flags)
-DECL|_write_port_regs|function|static int _write_port_regs(struct device *dev, uint8_t reg, union gpio_pcal9535a_port_data *buf)
+DECL|_read_port_regs|function|static int _read_port_regs(struct device *dev, u8_t reg, union gpio_pcal9535a_port_data *buf)
+DECL|_setup_pin_dir|function|static int _setup_pin_dir(struct device *dev, int access_op, u32_t pin, int flags)
+DECL|_setup_pin_polarity|function|static int _setup_pin_polarity(struct device *dev, int access_op, u32_t pin, int flags)
+DECL|_setup_pin_pullupdown|function|static int _setup_pin_pullupdown(struct device *dev, int access_op, u32_t pin, int flags)
+DECL|_write_port_regs|function|static int _write_port_regs(struct device *dev, u8_t reg, union gpio_pcal9535a_port_data *buf)
 DECL|gpio_pcal9535a_0_cfg|variable|gpio_pcal9535a_0_cfg
 DECL|gpio_pcal9535a_0_drvdata|variable|gpio_pcal9535a_0_drvdata
 DECL|gpio_pcal9535a_1_cfg|variable|gpio_pcal9535a_1_cfg
@@ -36,11 +36,11 @@ DECL|gpio_pcal9535a_2_cfg|variable|gpio_pcal9535a_2_cfg
 DECL|gpio_pcal9535a_2_drvdata|variable|gpio_pcal9535a_2_drvdata
 DECL|gpio_pcal9535a_3_cfg|variable|gpio_pcal9535a_3_cfg
 DECL|gpio_pcal9535a_3_drvdata|variable|gpio_pcal9535a_3_drvdata
-DECL|gpio_pcal9535a_config|function|static int gpio_pcal9535a_config(struct device *dev, int access_op, uint32_t pin, int flags)
-DECL|gpio_pcal9535a_disable_callback|function|static int gpio_pcal9535a_disable_callback(struct device *dev, int access_op, uint32_t pin)
+DECL|gpio_pcal9535a_config|function|static int gpio_pcal9535a_config(struct device *dev, int access_op, u32_t pin, int flags)
+DECL|gpio_pcal9535a_disable_callback|function|static int gpio_pcal9535a_disable_callback(struct device *dev, int access_op, u32_t pin)
 DECL|gpio_pcal9535a_drv_api_funcs|variable|gpio_pcal9535a_drv_api_funcs
-DECL|gpio_pcal9535a_enable_callback|function|static int gpio_pcal9535a_enable_callback(struct device *dev, int access_op, uint32_t pin)
+DECL|gpio_pcal9535a_enable_callback|function|static int gpio_pcal9535a_enable_callback(struct device *dev, int access_op, u32_t pin)
 DECL|gpio_pcal9535a_init|function|static int gpio_pcal9535a_init(struct device *dev)
 DECL|gpio_pcal9535a_manage_callback|function|static int gpio_pcal9535a_manage_callback(struct device *dev, struct gpio_callback *callback, bool set)
-DECL|gpio_pcal9535a_read|function|static int gpio_pcal9535a_read(struct device *dev, int access_op, uint32_t pin, uint32_t *value)
-DECL|gpio_pcal9535a_write|function|static int gpio_pcal9535a_write(struct device *dev, int access_op,uint32_t pin, uint32_t value)
+DECL|gpio_pcal9535a_read|function|static int gpio_pcal9535a_read(struct device *dev, int access_op, u32_t pin, u32_t *value)
+DECL|gpio_pcal9535a_write|function|static int gpio_pcal9535a_write(struct device *dev, int access_op,u32_t pin, u32_t value)

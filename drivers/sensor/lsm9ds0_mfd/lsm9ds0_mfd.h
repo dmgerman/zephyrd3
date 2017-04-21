@@ -371,18 +371,18 @@ DECL|LSM9DS0_MFD_VAL_WHO_AM_I_XM|macro|LSM9DS0_MFD_VAL_WHO_AM_I_XM
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LSM9DS0_MFD_H__|macro|__SENSOR_LSM9DS0_MFD_H__
-DECL|accel_fs|member|uint8_t accel_fs, sample_accel_fs;
+DECL|accel_fs|member|u8_t accel_fs, sample_accel_fs;
 DECL|i2c_master_dev_name|member|char *i2c_master_dev_name;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
 DECL|lsm9ds0_mfd_config|struct|struct lsm9ds0_mfd_config {
 DECL|lsm9ds0_mfd_data|struct|struct lsm9ds0_mfd_data {
-DECL|magn_fs|member|uint8_t magn_fs, sample_magn_fs;
-DECL|sample_accel_fs|member|uint8_t accel_fs, sample_accel_fs;
+DECL|magn_fs|member|u8_t magn_fs, sample_magn_fs;
+DECL|sample_accel_fs|member|u8_t accel_fs, sample_accel_fs;
 DECL|sample_accel_x|member|int sample_accel_x, sample_accel_y, sample_accel_z;
 DECL|sample_accel_y|member|int sample_accel_x, sample_accel_y, sample_accel_z;
 DECL|sample_accel_z|member|int sample_accel_x, sample_accel_y, sample_accel_z;
-DECL|sample_magn_fs|member|uint8_t magn_fs, sample_magn_fs;
+DECL|sample_magn_fs|member|u8_t magn_fs, sample_magn_fs;
 DECL|sample_magn_x|member|int sample_magn_x, sample_magn_y, sample_magn_z;
 DECL|sample_magn_y|member|int sample_magn_x, sample_magn_y, sample_magn_z;
 DECL|sample_magn_z|member|int sample_magn_x, sample_magn_y, sample_magn_z;

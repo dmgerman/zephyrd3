@@ -109,8 +109,8 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LPS25HB_H__|macro|__SENSOR_LPS25HB_H__
 DECL|i2c_master_dev_name|member|char *i2c_master_dev_name;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
 DECL|lps25hb_config|struct|struct lps25hb_config {
 DECL|lps25hb_data|struct|struct lps25hb_data {
-DECL|sample_press|member|int32_t sample_press;
-DECL|sample_temp|member|int16_t sample_temp;
+DECL|sample_press|member|s32_t sample_press;
+DECL|sample_temp|member|s16_t sample_temp;

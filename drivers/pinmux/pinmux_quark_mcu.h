@@ -4,4 +4,4 @@ DECL|PINMUX_SELECT_OFFSET|macro|PINMUX_SELECT_OFFSET
 DECL|PINMUX_SELECT_REGISTER|macro|PINMUX_SELECT_REGISTER
 DECL|PINMUX_SLEW_OFFSET|macro|PINMUX_SLEW_OFFSET
 DECL|PIN_CONFIG|macro|PIN_CONFIG
-DECL|_quark_mcu_set_mux|function|static inline int _quark_mcu_set_mux(uint32_t base, uint32_t pin, uint8_t func)
+DECL|_quark_mcu_set_mux|function|static inline int _quark_mcu_set_mux(u32_t base, u32_t pin, u8_t func)

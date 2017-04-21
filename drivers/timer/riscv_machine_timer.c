@@ -5,5 +5,5 @@ DECL|mtime|variable|mtime
 DECL|riscv_machine_rearm_timer|function|static ALWAYS_INLINE void riscv_machine_rearm_timer(void)
 DECL|riscv_machine_timer_irq_handler|function|static void riscv_machine_timer_irq_handler(void *unused)
 DECL|riscv_machine_timer_t|typedef|} riscv_machine_timer_t;
-DECL|val_high|member|uint32_t val_high;
-DECL|val_low|member|uint32_t val_low;
+DECL|val_high|member|u32_t val_high;
+DECL|val_low|member|u32_t val_low;

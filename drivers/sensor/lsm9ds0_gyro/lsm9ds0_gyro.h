@@ -152,18 +152,18 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LSM9DS0_GYRO_H__|macro|__SENSOR_LSM9DS0_GYRO_H__
 DECL|dev|member|struct device *dev;
-DECL|fs|member|uint8_t fs;
+DECL|fs|member|u8_t fs;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|gpio_drdy_dev_name|member|char *gpio_drdy_dev_name;
-DECL|gpio_drdy_int_pin|member|uint8_t gpio_drdy_int_pin;
+DECL|gpio_drdy_int_pin|member|u8_t gpio_drdy_int_pin;
 DECL|gpio_drdy|member|struct device *gpio_drdy;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
 DECL|i2c_master_dev_name|member|char *i2c_master_dev_name;
 DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|uint16_t i2c_slave_addr;
+DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
 DECL|lsm9ds0_gyro_config|struct|struct lsm9ds0_gyro_config {
 DECL|lsm9ds0_gyro_data|struct|struct lsm9ds0_gyro_data {
-DECL|sample_fs|member|uint8_t sample_fs;
+DECL|sample_fs|member|u8_t sample_fs;
 DECL|sample_x|member|int sample_x, sample_y, sample_z;
 DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;

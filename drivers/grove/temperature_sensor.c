@@ -2,7 +2,7 @@ DECL|B_CONST|macro|B_CONST
 DECL|B_CONST|macro|B_CONST
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|adc_buffer|member|uint8_t adc_buffer[4];
+DECL|adc_buffer|member|u8_t adc_buffer[4];
 DECL|adc_table|member|struct adc_seq_table adc_table;
 DECL|adc|member|struct device *adc;
 DECL|gts_api|variable|gts_api

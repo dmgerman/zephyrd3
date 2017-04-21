@@ -22,19 +22,19 @@ DECL|callback|member|ipm_callback_t callback;
 DECL|channel|member|int channel;
 DECL|controller_init|member|int (*controller_init)(void);
 DECL|ctrl|member|struct quark_se_ipm_ch_ctrl ctrl;
-DECL|ctrl|member|uint32_t ctrl : 31;
-DECL|data|member|uint8_t data[QUARK_SE_IPM_DATA_BYTES]; /* contiguous 32-bit registers */
+DECL|ctrl|member|u32_t ctrl : 31;
+DECL|data|member|u8_t data[QUARK_SE_IPM_DATA_BYTES]; /* contiguous 32-bit registers */
 DECL|direction|member|int direction;
 DECL|ipm_quark_se_api_funcs|variable|ipm_quark_se_api_funcs
 DECL|ipm|member|volatile struct quark_se_ipm *ipm;
-DECL|irq|member|uint32_t irq : 1;
-DECL|irq|member|uint32_t irq : 1;
+DECL|irq|member|u32_t irq : 1;
+DECL|irq|member|u32_t irq : 1;
 DECL|quark_se_ipm_ch_ctrl|struct|struct __packed quark_se_ipm_ch_ctrl {
 DECL|quark_se_ipm_ch_sts|struct|struct __packed quark_se_ipm_ch_sts {
 DECL|quark_se_ipm_config_info|struct|struct quark_se_ipm_config_info {
 DECL|quark_se_ipm_controller_config_info|struct|struct quark_se_ipm_controller_config_info {
 DECL|quark_se_ipm_driver_data|struct|struct quark_se_ipm_driver_data {
 DECL|quark_se_ipm|struct|struct __packed quark_se_ipm {
-DECL|reserved|member|uint32_t reserved : 30;
+DECL|reserved|member|u32_t reserved : 30;
 DECL|sts|member|struct quark_se_ipm_ch_sts sts;
-DECL|sts|member|uint32_t sts : 1;
+DECL|sts|member|u32_t sts : 1;

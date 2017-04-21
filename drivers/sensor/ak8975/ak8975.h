@@ -18,9 +18,9 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_AK8975__|macro|__SENSOR_AK8975__
 DECL|ak8975_data|struct|struct ak8975_data {
 DECL|i2c|member|struct device *i2c;
-DECL|x_adj|member|uint8_t x_adj;
-DECL|x_sample|member|int16_t x_sample;
-DECL|y_adj|member|uint8_t y_adj;
-DECL|y_sample|member|int16_t y_sample;
-DECL|z_adj|member|uint8_t z_adj;
-DECL|z_sample|member|int16_t z_sample;
+DECL|x_adj|member|u8_t x_adj;
+DECL|x_sample|member|s16_t x_sample;
+DECL|y_adj|member|u8_t y_adj;
+DECL|y_sample|member|s16_t y_sample;
+DECL|z_adj|member|u8_t z_adj;
+DECL|z_sample|member|s16_t z_sample;
