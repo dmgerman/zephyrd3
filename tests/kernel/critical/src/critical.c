@@ -4,7 +4,7 @@ DECL|RegressionTask|function|void RegressionTask(void *arg1, void *arg2, void *a
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|TEST_TIMEOUT|macro|TEST_TIMEOUT
 DECL|altTaskIterations|variable|altTaskIterations
-DECL|criticalLoop|function|uint32_t criticalLoop(uint32_t count)
+DECL|criticalLoop|function|u32_t criticalLoop(u32_t count)
 DECL|criticalRtn|function|void criticalRtn(struct k_work *unused)
 DECL|criticalVar|variable|criticalVar
 DECL|init_objects|function|static void init_objects(void)

@@ -3,12 +3,12 @@ DECL|MAX_EXPECTED_STRING|macro|MAX_EXPECTED_STRING
 DECL|RC_STR|macro|RC_STR
 DECL|ai1|variable|ai1
 DECL|ai2|variable|ai2
-DECL|char_to_nibble|function|uint8_t char_to_nibble(char c)
+DECL|char_to_nibble|function|u8_t char_to_nibble(char c)
 DECL|entropy|member|char *entropy;
 DECL|expected|member|char *expected;
 DECL|extra1|member|char *extra1; /* may be null */
 DECL|extra2|member|char *extra2; /* may be null */
-DECL|hex_str_to_num|function|void hex_str_to_num(uint8_t *buf, char *in)
+DECL|hex_str_to_num|function|void hex_str_to_num(u8_t *buf, char *in)
 DECL|main|function|int main(void)
 DECL|personal|member|char *personal; /* may be null */
 DECL|per|variable|per

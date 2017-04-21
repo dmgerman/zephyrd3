@@ -4,7 +4,7 @@ DECL|MAX_SUSPEND_DEVICE_COUNT|macro|MAX_SUSPEND_DEVICE_COUNT
 DECL|NB_STATES|macro|NB_STATES
 DECL|TIMEOUT|macro|TIMEOUT
 DECL|_sys_soc_resume|function|void _sys_soc_resume(void)
-DECL|_sys_soc_suspend|function|int _sys_soc_suspend(int32_t ticks)
+DECL|_sys_soc_suspend|function|int _sys_soc_suspend(s32_t ticks)
 DECL|build_suspend_device_list|function|static void build_suspend_device_list(void)
 DECL|cmp_dev|variable|cmp_dev
 DECL|counter_dev|variable|counter_dev

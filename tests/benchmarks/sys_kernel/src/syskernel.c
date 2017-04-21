@@ -1,6 +1,6 @@
 DECL|Msg|variable|Msg
 DECL|begin_test|function|void begin_test(void)
-DECL|check_result|function|int check_result(int i, uint32_t t)
+DECL|check_result|function|int check_result(int i, u32_t t)
 DECL|init_output|function|void init_output(int *continuously)
 DECL|kbhit|function|int kbhit(void)
 DECL|main|function|void main(void)

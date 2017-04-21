@@ -1,5 +1,5 @@
-DECL|callback_1|function|static void callback_1(struct device *dev, struct gpio_callback *gpio_cb, uint32_t pins)
-DECL|callback_2|function|static void callback_2(struct device *dev, struct gpio_callback *gpio_cb, uint32_t pins)
+DECL|callback_1|function|static void callback_1(struct device *dev, struct gpio_callback *gpio_cb, u32_t pins)
+DECL|callback_2|function|static void callback_2(struct device *dev, struct gpio_callback *gpio_cb, u32_t pins)
 DECL|cb_cnt|variable|cb_cnt
 DECL|cb_data|variable|cb_data
 DECL|init_callback|function|static void init_callback(struct device *dev)

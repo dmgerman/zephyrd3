@@ -2,7 +2,7 @@ DECL|DURATION|macro|DURATION
 DECL|EXPIRE_TIMES|macro|EXPIRE_TIMES
 DECL|PERIOD|macro|PERIOD
 DECL|TIMER_ASSERT|macro|TIMER_ASSERT
-DECL|busy_wait_ms|function|static void busy_wait_ms(int32_t ms)
+DECL|busy_wait_ms|function|static void busy_wait_ms(s32_t ms)
 DECL|duration_expire|function|static void duration_expire(struct k_timer *timer)
 DECL|duration_stop|function|static void duration_stop(struct k_timer *timer)
 DECL|init_timer_data|function|static void init_timer_data(void)

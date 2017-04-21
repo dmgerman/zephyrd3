@@ -17,25 +17,25 @@ DECL|coop_low_state|variable|coop_low_state
 DECL|coop_low|function|static void coop_low(void *arg1, void *arg2, void *arg3)
 DECL|coop_stack|variable|coop_stack
 DECL|counter|variable|counter
-DECL|data|member|uint32_t data;
-DECL|data|member|uint32_t data;
+DECL|data|member|u32_t data;
+DECL|data|member|u32_t data;
 DECL|end_test_sem|variable|end_test_sem
 DECL|fifo_data|struct|struct fifo_data {
 DECL|fifo_test_data|variable|fifo_test_data
-DECL|fifo_tests|function|static void fifo_tests(int32_t timeout, volatile int *state, void *(*get)(struct k_fifo *, int32_t), int (*sem_take)(struct k_sem *, int32_t))
+DECL|fifo_tests|function|static void fifo_tests(s32_t timeout, volatile int *state, void *(*get)(struct k_fifo *, s32_t), int (*sem_take)(struct k_sem *, s32_t))
 DECL|fifo|variable|fifo
 DECL|increment_counter|function|static int increment_counter(void)
 DECL|lifo_data|struct|struct lifo_data {
 DECL|lifo_test_data|variable|lifo_test_data
-DECL|lifo_tests|function|static void lifo_tests(int32_t timeout, volatile int *state, void *(*get)(struct k_lifo *, int32_t), int (*sem_take)(struct k_sem *, int32_t))
+DECL|lifo_tests|function|static void lifo_tests(s32_t timeout, volatile int *state, void *(*get)(struct k_lifo *, s32_t), int (*sem_take)(struct k_sem *, s32_t))
 DECL|lifo|variable|lifo
-DECL|my_fifo_get|function|static inline void *my_fifo_get(struct k_fifo *fifo, int32_t timeout)
-DECL|my_lifo_get|function|static inline void *my_lifo_get(struct k_lifo *lifo, int32_t timeout)
+DECL|my_fifo_get|function|static inline void *my_fifo_get(struct k_fifo *fifo, s32_t timeout)
+DECL|my_lifo_get|function|static inline void *my_lifo_get(struct k_lifo *lifo, s32_t timeout)
 DECL|offload_work_q_stack|variable|offload_work_q_stack
 DECL|offload_work_q|variable|offload_work_q
 DECL|offload_work|struct|struct offload_work {
-DECL|reserved|member|uint32_t reserved;
-DECL|reserved|member|uint32_t reserved;
+DECL|reserved|member|u32_t reserved;
+DECL|reserved|member|u32_t reserved;
 DECL|sem|member|struct k_sem *sem;
 DECL|start_test_sem|variable|start_test_sem
 DECL|sync_test_sem|variable|sync_test_sem

@@ -13,7 +13,7 @@ DECL|INIT_PREEMPT_P3|macro|INIT_PREEMPT_P3
 DECL|INIT_PREEMPT_PRIO|macro|INIT_PREEMPT_PRIO
 DECL|INIT_PREEMPT_STACK_SIZE|macro|INIT_PREEMPT_STACK_SIZE
 DECL|expected|variable|expected
-DECL|init_delay|member|int32_t init_delay;
+DECL|init_delay|member|s32_t init_delay;
 DECL|init_p1|member|void *init_p1;
 DECL|init_p2|member|void *init_p2;
 DECL|init_p3|member|void *init_p3;

@@ -3,7 +3,7 @@ DECL|RC_STR|macro|RC_STR
 DECL|cavp_sign|function|int cavp_sign(int verbose)
 DECL|cavp_verify|function|int cavp_verify(int verbose)
 DECL|main|function|int main(void)
-DECL|montecarlo_signverify|function|int montecarlo_signverify(uint32_t num, int verbose)
+DECL|montecarlo_signverify|function|int montecarlo_signverify(u32_t num, int verbose)
 DECL|sign_d|variable|sign_d
 DECL|sign_k|variable|sign_k
 DECL|sign_msg|variable|sign_msg

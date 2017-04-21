@@ -9,7 +9,7 @@ DECL|eaddrinuse_ready_sem|variable|eaddrinuse_ready_sem
 DECL|eaddrinuse_reply|variable|eaddrinuse_reply
 DECL|eaddrinuse_sem|variable|eaddrinuse_sem
 DECL|fifo_msg|struct|struct fifo_msg {
-DECL|msg|member|uint32_t msg;
+DECL|msg|member|u32_t msg;
 DECL|no_wait_fifo|variable|no_wait_fifo
 DECL|no_wait_sem|variable|no_wait_sem
 DECL|no_wait_signal|variable|no_wait_signal

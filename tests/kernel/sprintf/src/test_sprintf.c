@@ -20,7 +20,7 @@ DECL|sprintfMiscTest|function|int sprintfMiscTest(void)
 DECL|sprintfStringTest|function|int sprintfStringTest(void)
 DECL|tvsnprintf|function|int tvsnprintf(char *s, size_t len, const char *format, ...)
 DECL|tvsprintf|function|int tvsprintf(char *s, const char *format, ...)
-DECL|u1|member|uint32_t u1; /* This part contains the exponent */
-DECL|u2|member|uint32_t u2; /* This part contains the fraction */
+DECL|u1|member|u32_t u1; /* This part contains the exponent */
+DECL|u2|member|u32_t u2; /* This part contains the fraction */
 DECL|vsnprintfTest|function|int vsnprintfTest(void)
 DECL|vsprintfTest|function|int vsprintfTest(void)

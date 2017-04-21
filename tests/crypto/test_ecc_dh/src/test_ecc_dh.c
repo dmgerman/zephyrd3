@@ -11,7 +11,7 @@ DECL|gen_d|variable|gen_d
 DECL|gen_x|variable|gen_x
 DECL|gen_y|variable|gen_y
 DECL|main|function|int main(void)
-DECL|montecarlo_ecdh|function|int montecarlo_ecdh(uint32_t num, int verbose)
+DECL|montecarlo_ecdh|function|int montecarlo_ecdh(u32_t num, int verbose)
 DECL|names|variable|names
 DECL|pkv_vectors|function|int pkv_vectors(char **qx_vec, char **qy_vec, char **res_vec, int *results,int tests, int verbose)
 DECL|results|variable|results

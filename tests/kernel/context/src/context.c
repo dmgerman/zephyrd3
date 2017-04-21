@@ -52,6 +52,6 @@ DECL|timeout_order|member|int timeout_order;
 DECL|timeout_order|struct|struct timeout_order {
 DECL|timeout_stacks|variable|timeout_stacks
 DECL|timeouts|variable|timeouts
-DECL|timeout|member|int32_t timeout;
+DECL|timeout|member|s32_t timeout;
 DECL|timer|variable|timer
 DECL|value|member|int value; /* value to be passed or returned */

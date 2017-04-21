@@ -7,4 +7,4 @@ DECL|TIMEOUT_TEN_INTERVALS|macro|TIMEOUT_TEN_INTERVALS
 DECL|TIMEOUT_TWO_INTERVALS|macro|TIMEOUT_TWO_INTERVALS
 DECL|TIMEOUT|macro|TIMEOUT
 DECL|_samples_include_tc_nano_timeout_common__h_|macro|_samples_include_tc_nano_timeout_common__h_
-DECL|is_timeout_in_range|function|static inline int is_timeout_in_range(int32_t orig_ticks, int32_t expected)
+DECL|is_timeout_in_range|function|static inline int is_timeout_in_range(s32_t orig_ticks, s32_t expected)

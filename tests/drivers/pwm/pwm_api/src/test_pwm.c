@@ -9,4 +9,4 @@ DECL|PWM1_PIN|macro|PWM1_PIN
 DECL|PWM_DEV_NAME|macro|PWM_DEV_NAME
 DECL|test_pwm_cycle|function|void test_pwm_cycle(void)
 DECL|test_pwm_usec|function|void test_pwm_usec(void)
-DECL|test_task|function|static int test_task(uint32_t port, uint32_t period, uint32_t pulse, bool cycle)
+DECL|test_task|function|static int test_task(u32_t port, u32_t period, u32_t pulse, bool cycle)

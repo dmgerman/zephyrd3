@@ -13,13 +13,13 @@ DECL|M_LEN10|macro|M_LEN10
 DECL|M_LEN8|macro|M_LEN8
 DECL|NONCE_LEN|macro|NONCE_LEN
 DECL|NUM_NIST_KEYS|macro|NUM_NIST_KEYS
-DECL|do_test|function|uint32_t do_test(const uint8_t *key, uint8_t *nonce, size_t nlen, const uint8_t *hdr, size_t hlen, const uint8_t *data, size_t dlen, const uint8_t *expected, size_t elen,
+DECL|do_test|function|u32_t do_test(const u8_t *key, u8_t *nonce, size_t nlen, const u8_t *hdr, size_t hlen, const u8_t *data, size_t dlen, const u8_t *expected, size_t elen,
 DECL|main|function|void main(void)
-DECL|test_vector_1|function|uint32_t test_vector_1(void)
-DECL|test_vector_2|function|uint32_t test_vector_2(void)
-DECL|test_vector_3|function|uint32_t test_vector_3(void)
-DECL|test_vector_4|function|uint32_t test_vector_4(void)
-DECL|test_vector_5|function|uint32_t test_vector_5(void)
-DECL|test_vector_6|function|uint32_t test_vector_6(void)
-DECL|test_vector_7|function|uint32_t test_vector_7(void)
-DECL|test_vector_8|function|uint32_t test_vector_8(void)
+DECL|test_vector_1|function|u32_t test_vector_1(void)
+DECL|test_vector_2|function|u32_t test_vector_2(void)
+DECL|test_vector_3|function|u32_t test_vector_3(void)
+DECL|test_vector_4|function|u32_t test_vector_4(void)
+DECL|test_vector_5|function|u32_t test_vector_5(void)
+DECL|test_vector_6|function|u32_t test_vector_6(void)
+DECL|test_vector_7|function|u32_t test_vector_7(void)
+DECL|test_vector_8|function|u32_t test_vector_8(void)

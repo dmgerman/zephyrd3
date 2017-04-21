@@ -16,7 +16,7 @@ DECL|TABLE_INDEX|macro|TABLE_INDEX
 DECL|TABLE_INDEX|macro|TABLE_INDEX
 DECL|TRIG_CHECK_SIZE|macro|TRIG_CHECK_SIZE
 DECL|TRIG_CHECK_SIZE|macro|TRIG_CHECK_SIZE
-DECL|check_sw_isr|function|static int check_sw_isr(void *isr, uint32_t arg, int offset)
+DECL|check_sw_isr|function|static int check_sw_isr(void *isr, u32_t arg, int offset)
 DECL|check_vector|function|static int check_vector(void *isr, int offset)
 DECL|isr3|function|void isr3(void *param)
 DECL|isr4|function|void isr4(void *param)
