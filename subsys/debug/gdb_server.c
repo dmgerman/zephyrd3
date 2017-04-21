@@ -33,7 +33,7 @@ DECL|cmds_queue|variable|cmds_queue
 DECL|compress|function|static unsigned char *compress(unsigned char *buf)
 DECL|concat_reboot_feature_if_supported|function|static size_t concat_reboot_feature_if_supported(size_t size)
 DECL|concat_reboot_feature_if_supported|macro|concat_reboot_feature_if_supported
-DECL|console_irq_input_hook|function|static int console_irq_input_hook(uint8_t ch)
+DECL|console_irq_input_hook|function|static int console_irq_input_hook(u8_t ch)
 DECL|control_loop|function|static void control_loop(void)
 DECL|cpu_pending_signal|variable|cpu_pending_signal
 DECL|cpu_stop_bp_type|variable|cpu_stop_bp_type
@@ -125,7 +125,7 @@ DECL|valid_registers|variable|valid_registers
 DECL|valid|member|char valid; /* breakpoint is valid? */
 DECL|write_mem_t|typedef|typedef WRITE_MEM_SIG (write_mem_t);
 DECL|write_regs_to_buffer|function|static void write_regs_to_buffer(unsigned char **buf, size_t *buf_size)
-DECL|write_to_console|function|static uint32_t write_to_console(char *buf, uint32_t len)
+DECL|write_to_console|function|static u32_t write_to_console(char *buf, u32_t len)
 DECL|write_xml_string|function|static void write_xml_string(char *buf, const char *xml_str, int off, int len)
 DECL|xml_target_footer|variable|xml_target_footer
 DECL|xml_target_header|variable|xml_target_header

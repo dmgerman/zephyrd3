@@ -1,5 +1,5 @@
 DECL|BLOCK_SIZE|macro|BLOCK_SIZE
-DECL|CBWDecode|function|static void CBWDecode(uint8_t *buf, uint16_t size)
+DECL|CBWDecode|function|static void CBWDecode(u8_t *buf, u16_t size)
 DECL|CSW_ERROR|enumerator|CSW_ERROR,
 DECL|CSW_FAILED|enumerator|CSW_FAILED,
 DECL|CSW_PASSED|enumerator|CSW_PASSED,
@@ -28,9 +28,9 @@ DECL|inquiryRequest|function|static bool inquiryRequest(void)
 DECL|interface_data|variable|interface_data
 DECL|length|variable|length
 DECL|mass_ep_data|variable|mass_ep_data
-DECL|mass_storage_bulk_in|function|static void mass_storage_bulk_in(uint8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|mass_storage_bulk_out|function|static void mass_storage_bulk_out(uint8_t ep,enum usb_dc_ep_cb_status_code ep_status)
-DECL|mass_storage_class_handle_req|function|static int mass_storage_class_handle_req(struct usb_setup_packet *pSetup,int32_t *len, uint8_t **data)
+DECL|mass_storage_bulk_in|function|static void mass_storage_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|mass_storage_bulk_out|function|static void mass_storage_bulk_out(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)
+DECL|mass_storage_class_handle_req|function|static int mass_storage_class_handle_req(struct usb_setup_packet *pSetup,s32_t *len, u8_t **data)
 DECL|mass_storage_config|variable|mass_storage_config
 DECL|mass_storage_init|function|static int mass_storage_init(struct device *dev)
 DECL|mass_storage_status_cb|function|static void mass_storage_status_cb(enum usb_dc_status_code status)
@@ -40,8 +40,8 @@ DECL|mass_usb_description|variable|mass_usb_description
 DECL|max_lun_count|variable|max_lun_count
 DECL|memOK|variable|memOK
 DECL|memoryRead|function|static void memoryRead(void)
-DECL|memoryVerify|function|static void memoryVerify(uint8_t *buf, uint16_t size)
-DECL|memoryWrite|function|static void memoryWrite(uint8_t *buf, uint16_t size)
+DECL|memoryVerify|function|static void memoryVerify(u8_t *buf, u16_t size)
+DECL|memoryWrite|function|static void memoryWrite(u8_t *buf, u16_t size)
 DECL|memory_size|variable|memory_size
 DECL|modeSense6|function|static bool modeSense6(void)
 DECL|msd_init|function|static void msd_init(void)
@@ -56,4 +56,4 @@ DECL|testUnitReady|function|static void testUnitReady(void)
 DECL|thread_memory_read_done|function|static void thread_memory_read_done(void)
 DECL|thread_memory_write_done|function|static void thread_memory_write_done(void)
 DECL|thread_op|variable|thread_op
-DECL|write|function|static bool write(uint8_t *buf, uint16_t size)
+DECL|write|function|static bool write(u8_t *buf, u16_t size)

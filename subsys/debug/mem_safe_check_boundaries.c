@@ -13,7 +13,7 @@ DECL|_mem_safe_write_to_text_section|function|int _mem_safe_write_to_text_sectio
 DECL|_mem_safe_write_to_text_section|function|int _mem_safe_write_to_text_section(void *dest, char *buf, size_t num_bytes)
 DECL|_mem_safe_write|function|int _mem_safe_write(void *dest, char *buf, size_t num_bytes, int width)
 DECL|addr|member|vaddr_t addr;
-DECL|get_align|function|static inline int get_align(const uint32_t value)
+DECL|get_align|function|static inline int get_align(const u32_t value)
 DECL|get_width|function|static inline int get_width(const void *p1, const void *p2, size_t num_bytes, int width)
 DECL|init|function|static int init(struct device *unused)
 DECL|is_in_a_ro_region|function|static inline int is_in_a_ro_region(vaddr_t addr, vaddr_t end_addr)

@@ -32,15 +32,15 @@ DECL|USB_UFUNC_SUBDESC|macro|USB_UFUNC_SUBDESC
 DECL|__CDC_ACM_H__|macro|__CDC_ACM_H__
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|bCharFormat|member|uint8_t bCharFormat;
-DECL|bDataBits|member|uint8_t bDataBits;
-DECL|bNotificationType|member|uint8_t bNotificationType;
-DECL|bParityType|member|uint8_t bParityType;
-DECL|bmRequestType|member|uint8_t bmRequestType;
+DECL|bCharFormat|member|u8_t bCharFormat;
+DECL|bDataBits|member|u8_t bDataBits;
+DECL|bNotificationType|member|u8_t bNotificationType;
+DECL|bParityType|member|u8_t bParityType;
+DECL|bmRequestType|member|u8_t bmRequestType;
 DECL|cdc_acm_line_coding|struct|struct cdc_acm_line_coding {
 DECL|cdc_acm_notification|struct|struct cdc_acm_notification {
-DECL|data|member|uint16_t data;
-DECL|dwDTERate|member|uint32_t dwDTERate;
-DECL|wIndex|member|uint16_t wIndex;
-DECL|wLength|member|uint16_t wLength;
-DECL|wValue|member|uint16_t wValue;
+DECL|data|member|u16_t data;
+DECL|dwDTERate|member|u32_t dwDTERate;
+DECL|wIndex|member|u16_t wIndex;
+DECL|wLength|member|u16_t wLength;
+DECL|wValue|member|u16_t wValue;

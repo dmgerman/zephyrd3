@@ -11,7 +11,7 @@ DECL|app_prompt_handler|variable|app_prompt_handler
 DECL|avail_queue|variable|avail_queue
 DECL|buf|variable|buf
 DECL|cmds_queue|variable|cmds_queue
-DECL|completion|function|static uint8_t completion(char *line, uint8_t len)
+DECL|completion|function|static u8_t completion(char *line, u8_t len)
 DECL|default_module_prompt|variable|default_module_prompt
 DECL|default_module|variable|default_module
 DECL|get_cb|function|static shell_cmd_function_t get_cb(int argc, char *argv[])
