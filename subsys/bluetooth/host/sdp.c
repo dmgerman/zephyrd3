@@ -31,7 +31,7 @@ DECL|bt_sdp_connected|function|static void bt_sdp_connected(struct bt_l2cap_chan
 DECL|bt_sdp_create_pdu|function|static struct net_buf *bt_sdp_create_pdu(void)
 DECL|bt_sdp_disconnected|function|static void bt_sdp_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_sdp_discover|function|int bt_sdp_discover(struct bt_conn *conn, const struct bt_sdp_discover_params *params)
-DECL|bt_sdp_foreach_attr|function|static u8_t bt_sdp_foreach_attr(struct bt_sdp_record *record, u8_t idx, bt_sdp_attr_func_t func, void *user_data)
+DECL|bt_sdp_foreach_attr|function|static u8_t bt_sdp_foreach_attr(struct bt_sdp_record *record, u8_t idx,bt_sdp_attr_func_t func, void *user_data)
 DECL|bt_sdp_foreach_svc|function|static struct bt_sdp_record *bt_sdp_foreach_svc(bt_sdp_svc_func_t func,void *user_data)
 DECL|bt_sdp_get_attr|function|static int bt_sdp_get_attr(const struct net_buf *buf, struct bt_sdp_attr_item *attr, u16_t attr_id)
 DECL|bt_sdp_get_features|function|int bt_sdp_get_features(const struct net_buf *buf, u16_t *features)
@@ -49,14 +49,14 @@ DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|chan|member|struct bt_l2cap_br_chan chan;
 DECL|cont_state_size|member|u8_t cont_state_size;
 DECL|copy_attribute|function|static u32_t copy_attribute(struct bt_sdp_data_elem *elem, struct net_buf *buf, u8_t nest_level)
-DECL|create_attr_list|function|static u16_t create_attr_list(struct bt_sdp *sdp, struct bt_sdp_record *record, u32_t *filter, u8_t num_filters, u16_t max_att_len, u8_t cont_state_size, u8_t next_att, struct search_state *state,
+DECL|create_attr_list|function|static u16_t create_attr_list(struct bt_sdp *sdp, struct bt_sdp_record *record, u32_t *filter, u8_t num_filters, u16_t max_att_len, u8_t cont_state_size, u8_t next_att, struct search_state *state, struct net_buf *rsp_buf)
 DECL|cstate|member|struct bt_sdp_pdu_cstate cstate;
 DECL|current_svc|member|u8_t current_svc;
 DECL|db|variable|db
 DECL|filter|member|u32_t *filter;
 DECL|find_handle|function|static u8_t find_handle(struct bt_sdp_record *rec, void *user_data)
 DECL|find_services|function|static u16_t find_services(struct net_buf *buf, struct bt_sdp_record **matching_recs)
-DECL|func|member|u16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf,
+DECL|func|member|u16_t (*func)(struct bt_sdp *sdp, struct net_buf *buf, u16_t tid);
 DECL|get_att_search_list|function|static u16_t get_att_search_list(struct net_buf *buf, u32_t *filter, u8_t *num_filters)
 DECL|get_record_len|function|static u16_t get_record_len(struct net_buf *buf)
 DECL|handlers|variable|handlers
@@ -98,9 +98,9 @@ DECL|sdp_get_seq_len|function|static inline ssize_t sdp_get_seq_len(const u8_t *
 DECL|sdp_get_str_len|function|static inline ssize_t sdp_get_str_len(const u8_t *data, size_t len)
 DECL|sdp_get_uuid_data|function|static int sdp_get_uuid_data(const struct bt_sdp_attr_item *attr, struct bt_sdp_uuid_desc *pd, u16_t proto_profile)
 DECL|sdp_get_uuid_len|function|static inline ssize_t sdp_get_uuid_len(const u8_t *data, size_t len)
-DECL|sdp_svc_att_req|function|static u16_t sdp_svc_att_req(struct bt_sdp *sdp, struct net_buf *buf,u16_t tid)
+DECL|sdp_svc_att_req|function|static u16_t sdp_svc_att_req(struct bt_sdp *sdp, struct net_buf *buf, u16_t tid)
 DECL|sdp_svc_search_att_req|function|static u16_t sdp_svc_search_att_req(struct bt_sdp *sdp, struct net_buf *buf, u16_t tid)
-DECL|sdp_svc_search_req|function|static u16_t sdp_svc_search_req(struct bt_sdp *sdp, struct net_buf *buf, u16_t tid)
+DECL|sdp_svc_search_req|function|static u16_t sdp_svc_search_req(struct bt_sdp *sdp, struct net_buf *buf,u16_t tid)
 DECL|sdp|member|struct bt_sdp *sdp;
 DECL|search_state|struct|struct search_state {
 DECL|search_uuid|function|static u32_t search_uuid(struct bt_sdp_data_elem *elem, struct bt_uuid *uuid, bool *found, u8_t nest_level)
