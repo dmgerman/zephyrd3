@@ -8,6 +8,7 @@ DECL|find_entry|function|static inline struct arp_entry *find_entry(struct net_i
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|iface|member|struct net_if *iface;
 DECL|ip|member|struct in_addr ip;
+DECL|net_arp_clear_cache|function|void net_arp_clear_cache(void)
 DECL|net_arp_init|function|void net_arp_init(void)
 DECL|net_arp_input|function|enum net_verdict net_arp_input(struct net_pkt *pkt)
 DECL|net_arp_prepare|function|struct net_pkt *net_arp_prepare(struct net_pkt *pkt)
