@@ -17,6 +17,7 @@ DECL|slave_select|member|spi_api_slave_select slave_select;
 DECL|spi_api_configure|typedef|typedef int (*spi_api_configure)(struct device *dev,
 DECL|spi_api_io|typedef|typedef int (*spi_api_io)(struct device *dev,
 DECL|spi_api_slave_select|typedef|typedef int (*spi_api_slave_select)(struct device *dev, u32_t slave);
+DECL|spi_buf|struct|struct spi_buf {
 DECL|spi_configure|function|static inline int spi_configure(struct device *dev,struct spi_config *config)
 DECL|spi_config|struct|struct spi_config {
 DECL|spi_driver_api|struct|struct spi_driver_api {
