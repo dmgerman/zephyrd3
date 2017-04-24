@@ -44,5 +44,6 @@ DECL|slip_input_byte|function|static inline int slip_input_byte(struct slip_cont
 DECL|slip_poll_handler|function|static struct net_pkt *slip_poll_handler(struct slip_context *slip)
 DECL|slip_send|function|static int slip_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|slip_state|enum|enum slip_state {
+DECL|slip_writeb_esc|function|static void slip_writeb_esc(unsigned char c)
 DECL|slip_writeb|function|static inline void slip_writeb(unsigned char c)
 DECL|state|member|u8_t state;
