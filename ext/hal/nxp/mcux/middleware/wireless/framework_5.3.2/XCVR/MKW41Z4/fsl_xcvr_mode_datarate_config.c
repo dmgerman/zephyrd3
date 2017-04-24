@@ -1,0 +1,3 @@
+DECL|xcvr_1mbps_config|variable|xcvr_1mbps_config
+DECL|xcvr_250kbps_config|variable|xcvr_250kbps_config
+DECL|xcvr_500kbps_config|variable|xcvr_500kbps_config

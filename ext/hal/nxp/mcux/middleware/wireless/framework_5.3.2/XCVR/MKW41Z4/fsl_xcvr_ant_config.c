@@ -1,0 +1,2 @@
+DECL|ant_mode_config|variable|ant_mode_config
+DECL|xcvr_ANT_1mbps_config|variable|xcvr_ANT_1mbps_config
