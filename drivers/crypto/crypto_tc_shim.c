@@ -1,6 +1,5 @@
 DECL|CRYPTO_MAX_SESSION|macro|CRYPTO_MAX_SESSION
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|SYS_LOG_NO_NEWLINE|macro|SYS_LOG_NO_NEWLINE
 DECL|crypto_enc_funcs|variable|crypto_enc_funcs
 DECL|do_cbc_decrypt|function|static int do_cbc_decrypt(struct cipher_ctx *ctx, struct cipher_pkt *op, u8_t *iv)
 DECL|do_cbc_encrypt|function|static int do_cbc_encrypt(struct cipher_ctx *ctx, struct cipher_pkt *op, u8_t *iv)
