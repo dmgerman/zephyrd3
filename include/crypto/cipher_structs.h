@@ -56,6 +56,5 @@ DECL|out_buf_max|member|int out_buf_max;
 DECL|out_buf|member|u8_t *out_buf;
 DECL|out_len|member|int out_len;
 DECL|pkt|member|struct cipher_pkt *pkt;
-DECL|status|member|u8_t status;
 DECL|tag_len|member|u16_t tag_len;
 DECL|tag|member|u8_t *tag;
