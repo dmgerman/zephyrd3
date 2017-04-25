@@ -1,6 +1,4 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
-DECL|BT_L2CAP_MAX_LE_MPS|macro|BT_L2CAP_MAX_LE_MPS
-DECL|BT_L2CAP_MAX_LE_MTU|macro|BT_L2CAP_MAX_LE_MTU
 DECL|L2CAP_CONN_TIMEOUT|macro|L2CAP_CONN_TIMEOUT
 DECL|L2CAP_DISC_TIMEOUT|macro|L2CAP_DISC_TIMEOUT
 DECL|L2CAP_LE_CID_DYN_END|macro|L2CAP_LE_CID_DYN_END
@@ -11,6 +9,8 @@ DECL|L2CAP_LE_MAX_CREDITS|macro|L2CAP_LE_MAX_CREDITS
 DECL|L2CAP_LE_MIN_MTU|macro|L2CAP_LE_MIN_MTU
 DECL|L2CAP_LE_PSM_END|macro|L2CAP_LE_PSM_END
 DECL|L2CAP_LE_PSM_START|macro|L2CAP_LE_PSM_START
+DECL|L2CAP_MAX_LE_MPS|macro|L2CAP_MAX_LE_MPS
+DECL|L2CAP_MAX_LE_MTU|macro|L2CAP_MAX_LE_MTU
 DECL|LE_CHAN_RTX|macro|LE_CHAN_RTX
 DECL|__l2cap_lookup_ident|function|__l2cap_lookup_ident(struct bt_conn *conn, u16_t ident, bool remove)
 DECL|bt_l2cap_chan_add|function|void bt_l2cap_chan_add(struct bt_conn *conn, struct bt_l2cap_chan *chan, bt_l2cap_chan_destroy_t destroy)
