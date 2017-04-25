@@ -8,16 +8,16 @@ DECL|interrupt|variable|interrupt
 DECL|main|function|void main(void)
 DECL|printer_stack|variable|printer_stack
 DECL|printer_thread|function|static void printer_thread(void)
-DECL|publish_context_switch|function|static void publish_context_switch(uint32_t *event_data)
-DECL|publish_interrupt|function|static void publish_interrupt(uint32_t *event_data)
-DECL|publish_sleep|function|static void publish_sleep(uint32_t *event_data)
-DECL|publish_task|function|static void publish_task(uint32_t *event_data)
+DECL|publish_context_switch|function|static void publish_context_switch(u32_t *event_data)
+DECL|publish_interrupt|function|static void publish_interrupt(u32_t *event_data)
+DECL|publish_sleep|function|static void publish_sleep(u32_t *event_data)
+DECL|publish_task|function|static void publish_task(u32_t *event_data)
 DECL|send_system_desc|function|static void send_system_desc(void)
 DECL|sysview_api_send_task_list|function|static void sysview_api_send_task_list(void)
-DECL|sysview_get_interrupt|function|uint32_t sysview_get_interrupt(void)
-DECL|sysview_get_timestamp|function|uint32_t sysview_get_timestamp(void)
+DECL|sysview_get_interrupt|function|u32_t sysview_get_interrupt(void)
+DECL|sysview_get_timestamp|function|u32_t sysview_get_timestamp(void)
 DECL|sysview_setup|function|static void sysview_setup(void)
 DECL|sysview_stack|variable|sysview_stack
 DECL|sysview_thread|function|static void sysview_thread(void)
 DECL|timestamp|variable|timestamp
-DECL|zephyr_to_sysview|function|static uint32_t zephyr_to_sysview(int event_type)
+DECL|zephyr_to_sysview|function|static u32_t zephyr_to_sysview(int event_type)
