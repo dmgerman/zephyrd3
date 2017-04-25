@@ -3,6 +3,7 @@ DECL|handle_poll_event|function|static inline int handle_poll_event(struct k_que
 DECL|init_queue_module|function|static int init_queue_module(struct device *dev)
 DECL|k_queue_append_list|function|void k_queue_append_list(struct k_queue *queue, void *head, void *tail)
 DECL|k_queue_append|function|void k_queue_append(struct k_queue *queue, void *data)
+DECL|k_queue_cancel_wait|function|void k_queue_cancel_wait(struct k_queue *queue)
 DECL|k_queue_get|function|void *k_queue_get(struct k_queue *queue, s32_t timeout)
 DECL|k_queue_init|function|void k_queue_init(struct k_queue *queue)
 DECL|k_queue_insert|function|void k_queue_insert(struct k_queue *queue, void *prev, void *data)

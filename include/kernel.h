@@ -201,6 +201,7 @@ DECL|k_disable_sys_clock_always_on|function|static inline void k_disable_sys_clo
 DECL|k_disable_sys_clock_always_on|macro|k_disable_sys_clock_always_on
 DECL|k_enable_sys_clock_always_on|function|static inline int k_enable_sys_clock_always_on(void)
 DECL|k_enable_sys_clock_always_on|macro|k_enable_sys_clock_always_on
+DECL|k_fifo_cancel_wait|macro|k_fifo_cancel_wait
 DECL|k_fifo_get|macro|k_fifo_get
 DECL|k_fifo_init|macro|k_fifo_init
 DECL|k_fifo_is_empty|macro|k_fifo_is_empty
