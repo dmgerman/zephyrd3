@@ -1,7 +1,20 @@
 DECL|MAX_ITERATIONS|macro|MAX_ITERATIONS
-DECL|POST_CONTENT_TYPE|macro|POST_CONTENT_TYPE
-DECL|POST_PAYLOAD|macro|POST_PAYLOAD
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|WAIT_TIME|macro|WAIT_TIME
+DECL|ctx|member|struct http_client_ctx *ctx;
+DECL|do_async_http_req|function|static int do_async_http_req(struct http_client_ctx *ctx, enum http_method method, const char *url, const char *content_type, const char *payload)
+DECL|do_async_reqs|function|static inline int do_async_reqs(struct http_client_ctx *ctx, int count)
+DECL|do_sync_http_req|function|static int do_sync_http_req(struct http_client_ctx *ctx, enum http_method method, const char *url, const char *content_type, const char *payload)
+DECL|do_sync_reqs|function|static inline int do_sync_reqs(struct http_client_ctx *ctx, int count)
+DECL|header_len|member|size_t header_len;
 DECL|http_ctx|variable|http_ctx
 DECL|main|function|void main(void)
-DECL|print_banner|function|void print_banner(enum http_method method)
-DECL|send_http_method|function|static void send_http_method(enum http_method method, char *url, char *content_type, char *payload)
+DECL|panic|function|void panic(const char *msg)
+DECL|response|function|void response(struct http_client_ctx *ctx, u8_t *data, size_t buflen, size_t datalen, enum http_final_call data_end, void *user_data)
+DECL|result|variable|result
+DECL|total_len|member|size_t total_len;
+DECL|waiter|struct|struct waiter {
+DECL|wait|member|struct k_sem wait;

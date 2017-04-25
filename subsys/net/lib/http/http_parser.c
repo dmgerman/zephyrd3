@@ -79,7 +79,7 @@ DECL|http_message_needs_eof|function|int http_message_needs_eof(const struct htt
 DECL|http_method_str|function|const char *http_method_str(enum http_method m)
 DECL|http_parse_host_char|function|http_parse_host_char(enum http_host_state s, const char ch)
 DECL|http_parse_host|function|int http_parse_host(const char *buf, struct http_parser_url *u, int found_at)
-DECL|http_parser_execute|function|int http_parser_execute(struct http_parser *parser,const struct http_parser_settings *settings, const char *data, size_t len)
+DECL|http_parser_execute|function|size_t http_parser_execute(struct http_parser *parser, const struct http_parser_settings *settings, const char *data, size_t len)
 DECL|http_parser_init|function|void http_parser_init(struct http_parser *parser, enum http_parser_type t)
 DECL|http_parser_parse_url|function|http_parser_parse_url(const char *buf, size_t buflen, int is_connect, struct http_parser_url *u)
 DECL|http_parser_pause|function|void http_parser_pause(struct http_parser *parser, int paused)
