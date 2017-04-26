@@ -1,4 +1,5 @@
 DECL|BDADDR_SIZE|macro|BDADDR_SIZE
+DECL|PDU_AC_PAYLOAD_SIZE_MAX|macro|PDU_AC_PAYLOAD_SIZE_MAX
 DECL|PDU_AC_SIZE_MAX|macro|PDU_AC_SIZE_MAX
 DECL|PDU_AC_SIZE_OVERHEAD|macro|PDU_AC_SIZE_OVERHEAD
 DECL|PDU_ADV_TYPE_ADV_IND|enumerator|PDU_ADV_TYPE_ADV_IND = 0x00,
@@ -203,7 +204,6 @@ DECL|reference_conn_event_count|member|u16_t reference_conn_event_count;
 DECL|reject_ext_ind|member|struct pdu_data_llctrl_reject_ext_ind reject_ext_ind;
 DECL|reject_ind|member|struct pdu_data_llctrl_reject_ind reject_ind;
 DECL|reject_opcode|member|u8_t reject_opcode;
-DECL|resv|member|u8_t resv:8; /* TODO: remove nRF specific code */
 DECL|resv|member|u8_t resv:8; /* TODO: remove nRF specific code */
 DECL|rfu|member|u8_t rfu:1;
 DECL|rfu|member|u8_t rfu:3;
