@@ -8,8 +8,6 @@ DECL|LAST_TIMEOUT|macro|LAST_TIMEOUT
 DECL|SET_BLOCK_SIZE|macro|SET_BLOCK_SIZE
 DECL|SET_MORE|macro|SET_MORE
 DECL|SET_NUM|macro|SET_NUM
-DECL|block_size|member|int block_size;
-DECL|block_transfer|struct|struct block_transfer {
 DECL|buflen|member|int buflen;
 DECL|buf|member|u8_t *buf;
 DECL|coap_get_header_len|function|static int coap_get_header_len(const struct zoap_packet *zpkt)
@@ -30,9 +28,7 @@ DECL|get_observe_option|function|static int get_observe_option(const struct zoap
 DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
 DECL|is_request|function|static bool is_request(const struct zoap_packet *zpkt)
 DECL|method_from_code|function|static zoap_method_t method_from_code(const struct zoap_resource *resource, u8_t code)
-DECL|more|member|bool more;
 DECL|next_timeout|function|static s32_t next_timeout(s32_t previous)
-DECL|num|member|int num;
 DECL|option_context|struct|struct option_context {
 DECL|sockaddr_equal|function|static bool sockaddr_equal(const struct sockaddr *a, const struct sockaddr *b)
 DECL|update_control_block1|function|static int update_control_block1(struct zoap_block_context *ctx, int block, int size)
