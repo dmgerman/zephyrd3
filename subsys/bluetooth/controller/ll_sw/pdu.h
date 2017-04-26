@@ -1,4 +1,14 @@
 DECL|BDADDR_SIZE|macro|BDADDR_SIZE
+DECL|EXT_ADV_AUX_PHY_LE_1M|enumerator|EXT_ADV_AUX_PHY_LE_1M = 0x00,
+DECL|EXT_ADV_AUX_PHY_LE_2M|enumerator|EXT_ADV_AUX_PHY_LE_2M = 0x01,
+DECL|EXT_ADV_AUX_PHY_LE_COD|enumerator|EXT_ADV_AUX_PHY_LE_COD = 0x02,
+DECL|EXT_ADV_AUX_PTR_CA_500_PPM|enumerator|EXT_ADV_AUX_PTR_CA_500_PPM = 0x00,
+DECL|EXT_ADV_AUX_PTR_CA_50_PPM|enumerator|EXT_ADV_AUX_PTR_CA_50_PPM = 0x01,
+DECL|EXT_ADV_AUX_PTR_OFFS_UNITS_300|enumerator|EXT_ADV_AUX_PTR_OFFS_UNITS_300 = 0x01,
+DECL|EXT_ADV_AUX_PTR_OFFS_UNITS_30|enumerator|EXT_ADV_AUX_PTR_OFFS_UNITS_30 = 0x00,
+DECL|EXT_ADV_MODE_CONN_NON_SCAN|enumerator|EXT_ADV_MODE_CONN_NON_SCAN = 0x01,
+DECL|EXT_ADV_MODE_NON_CONN_NON_SCAN|enumerator|EXT_ADV_MODE_NON_CONN_NON_SCAN = 0x00,
+DECL|EXT_ADV_MODE_NON_CONN_SCAN|enumerator|EXT_ADV_MODE_NON_CONN_SCAN = 0x02,
 DECL|PDU_AC_PAYLOAD_SIZE_MAX|macro|PDU_AC_PAYLOAD_SIZE_MAX
 DECL|PDU_AC_SIZE_MAX|macro|PDU_AC_SIZE_MAX
 DECL|PDU_ADV_TYPE_ADV_IND|enumerator|PDU_ADV_TYPE_ADV_IND = 0x00,
@@ -75,13 +85,26 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|aa|member|u32_t aa;
 DECL|access_addr|member|u8_t access_addr[4];
 DECL|addr|member|u8_t addr[BDADDR_SIZE];
 DECL|addr|member|u8_t addr[BDADDR_SIZE];
+DECL|adi|member|u8_t adi:1;
+DECL|adv_addr|member|u8_t adv_addr:1;
 DECL|adv_addr|member|u8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|u8_t adv_addr[BDADDR_SIZE];
 DECL|adv_addr|member|u8_t adv_addr[BDADDR_SIZE];
+DECL|adv_ext_ind|member|struct pdu_adv_payload_com_ext_adv adv_ext_ind;
 DECL|adv_ind|member|struct pdu_adv_payload_adv_ind adv_ind;
+DECL|adv_mode|member|u8_t adv_mode:2;
+DECL|aux_ptr|member|u8_t aux_ptr:1;
+DECL|ca|member|u8_t ca:1;
+DECL|chan_idx|member|u8_t chan_idx:6;
 DECL|chan_map_ind|member|struct pdu_data_llctrl_chan_map_ind chan_map_ind;
 DECL|chan_map|member|u8_t chan_map[5];
 DECL|chan_sel|member|u8_t chan_sel:1;
@@ -92,10 +115,12 @@ DECL|conn_param_rsp|member|struct pdu_data_llctrl_conn_param_rsp conn_param_rsp;
 DECL|conn_update_ind|member|struct pdu_data_llctrl_conn_update_ind conn_update_ind;
 DECL|connect_ind|member|struct pdu_adv_payload_connect_ind connect_ind;
 DECL|crc_init|member|u8_t crc_init[3];
+DECL|crc_init|member|u8_t crc_init[3];
 DECL|ctrldata|member|} __packed ctrldata;
 DECL|cur|member|u8_t cur;
 DECL|data|member|u8_t data[31];
 DECL|data|member|u8_t data[31];
+DECL|did|member|u16_t did:12;
 DECL|direct_ind|member|struct pdu_adv_payload_direct_ind direct_ind;
 DECL|ediv|member|u8_t ediv[2];
 DECL|enc_req|member|struct pdu_data_llctrl_enc_req enc_req;
@@ -103,6 +128,17 @@ DECL|enc_rsp|member|struct pdu_data_llctrl_enc_rsp enc_rsp;
 DECL|error_code|member|u8_t error_code;
 DECL|error_code|member|u8_t error_code;
 DECL|error_code|member|u8_t error_code;
+DECL|evt_cntr|member|u16_t evt_cntr;
+DECL|ext_adv_adi|struct|struct ext_adv_adi {
+DECL|ext_adv_aux_phy|enum|enum ext_adv_aux_phy {
+DECL|ext_adv_aux_ptr_ca|enum|enum ext_adv_aux_ptr_ca {
+DECL|ext_adv_aux_ptr|struct|struct ext_adv_aux_ptr {
+DECL|ext_adv_hdr|struct|struct ext_adv_hdr {
+DECL|ext_adv_mode|enum|enum ext_adv_mode {
+DECL|ext_adv_offs_units|enum|enum ext_adv_offs_units {
+DECL|ext_adv_sync_info|struct|struct ext_adv_sync_info {
+DECL|ext_hdr_adi_adv_data|member|u8_t ext_hdr_adi_adv_data[254];
+DECL|ext_hdr_len|member|u8_t ext_hdr_len:6;
 DECL|feature_req|member|struct pdu_data_llctrl_feature_req feature_req;
 DECL|feature_rsp|member|struct pdu_data_llctrl_feature_rsp feature_rsp;
 DECL|features|member|u8_t features[8];
@@ -116,6 +152,7 @@ DECL|interval_max|member|u16_t interval_max;
 DECL|interval_max|member|u16_t interval_max;
 DECL|interval_min|member|u16_t interval_min;
 DECL|interval_min|member|u16_t interval_min;
+DECL|interval|member|u16_t interval;
 DECL|interval|member|u16_t interval;
 DECL|interval|member|u16_t interval;
 DECL|ivm|member|u8_t ivm[4];
@@ -146,6 +183,8 @@ DECL|min_used_chans_ind|member|struct pdu_data_llctrl_min_used_chans_ind min_use
 DECL|min_used_chans|member|u8_t min_used_chans;
 DECL|min|member|u8_t min;
 DECL|nesn|member|u8_t nesn:1;
+DECL|offs_units|member|u16_t offs_units:1;
+DECL|offs_units|member|u8_t offs_units:1;
 DECL|offset0|member|u16_t offset0;
 DECL|offset0|member|u16_t offset0;
 DECL|offset1|member|u16_t offset1;
@@ -158,10 +197,12 @@ DECL|offset4|member|u16_t offset4;
 DECL|offset4|member|u16_t offset4;
 DECL|offset5|member|u16_t offset5;
 DECL|offset5|member|u16_t offset5;
+DECL|offs|member|u16_t offs:13;
 DECL|opcode|member|u8_t opcode;
 DECL|payload|member|} __packed payload;
 DECL|payload|member|} __packed payload;
 DECL|pdu_adv_payload_adv_ind|struct|struct pdu_adv_payload_adv_ind {
+DECL|pdu_adv_payload_com_ext_adv|struct|struct pdu_adv_payload_com_ext_adv {
 DECL|pdu_adv_payload_connect_ind|struct|struct pdu_adv_payload_connect_ind {
 DECL|pdu_adv_payload_direct_ind|struct|struct pdu_adv_payload_direct_ind {
 DECL|pdu_adv_payload_scan_req|struct|struct pdu_adv_payload_scan_req {
@@ -193,6 +234,7 @@ DECL|phy_req|member|struct pdu_data_llctrl_phy_req_rsp phy_req;
 DECL|phy_rsp|member|struct pdu_data_llctrl_phy_req_rsp phy_rsp;
 DECL|phy_upd_ind|member|struct pdu_data_llctrl_phy_upd_ind phy_upd_ind;
 DECL|phys|member|u8_t phys;
+DECL|phy|member|u16_t phy:3;
 DECL|preferred_periodicity|member|u8_t preferred_periodicity;
 DECL|preferred_periodicity|member|u8_t preferred_periodicity;
 DECL|profile|member|struct profile profile;
@@ -204,22 +246,30 @@ DECL|reject_ext_ind|member|struct pdu_data_llctrl_reject_ext_ind reject_ext_ind;
 DECL|reject_ind|member|struct pdu_data_llctrl_reject_ind reject_ind;
 DECL|reject_opcode|member|u8_t reject_opcode;
 DECL|resv|member|u8_t resv:8; /* TODO: remove nRF specific code */
+DECL|rfu0|member|u8_t rfu0:1;
+DECL|rfu1|member|u8_t rfu1:1;
+DECL|rfu|member|u16_t rfu:2;
 DECL|rfu|member|u8_t rfu:1;
 DECL|rfu|member|u8_t rfu:3;
 DECL|rssi|member|u8_t rssi;
 DECL|rx_addr|member|u8_t rx_addr:1;
 DECL|rx_phys|member|u8_t rx_phys;
 DECL|s_to_m_phy|member|u8_t s_to_m_phy;
+DECL|sca_chm|member|u8_t sca_chm[5];
 DECL|scan_addr|member|u8_t scan_addr[BDADDR_SIZE];
 DECL|scan_req|member|struct pdu_adv_payload_scan_req scan_req;
 DECL|scan_rsp|member|struct pdu_adv_payload_scan_rsp scan_rsp;
 DECL|sca|member|u8_t sca:3;
+DECL|sid|member|u16_t sid:4;
 DECL|skdm|member|u8_t skdm[8];
 DECL|skds|member|u8_t skds[8];
 DECL|slave_feature_req|member|struct pdu_data_llctrl_feature_req slave_feature_req;
 DECL|sn|member|u8_t sn:1;
 DECL|sub_version_number|member|u16_t sub_version_number;
+DECL|sync_info|member|u8_t sync_info:1;
+DECL|sync_pkt_offs|member|u16_t sync_pkt_offs:13;
 DECL|terminate_ind|member|struct pdu_data_llctrl_terminate_ind terminate_ind;
+DECL|tgt_addr|member|u8_t tgt_addr:1;
 DECL|tgt_addr|member|u8_t tgt_addr[BDADDR_SIZE];
 DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
@@ -227,6 +277,7 @@ DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
 DECL|tx_addr|member|u8_t tx_addr:1;
 DECL|tx_phys|member|u8_t tx_phys;
+DECL|tx_pwr|member|u8_t tx_pwr:1;
 DECL|type|member|u8_t type:4;
 DECL|type|member|u8_t type;
 DECL|unknown_rsp|member|struct pdu_data_llctrl_unknown_rsp unknown_rsp;
