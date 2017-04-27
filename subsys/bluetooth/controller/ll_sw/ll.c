@@ -4,7 +4,6 @@ DECL|_ll_adv_params|variable|_ll_adv_params
 DECL|_ll_context|variable|_ll_context
 DECL|_ll_scan_params|variable|_ll_scan_params
 DECL|adv_addr|member|u8_t adv_addr[BDADDR_SIZE];
-DECL|adv_type|member|u8_t adv_type:4;
 DECL|chl_map|member|u8_t chl_map:3;
 DECL|direct_addr|member|u8_t direct_addr[BDADDR_SIZE];
 DECL|filter_policy|member|u8_t filter_policy:1;
@@ -25,6 +24,7 @@ DECL|mayfly_enable_cb|function|void mayfly_enable_cb(u8_t caller_id, u8_t callee
 DECL|mayfly_is_enabled|function|u32_t mayfly_is_enabled(u8_t caller_id, u8_t callee_id)
 DECL|mayfly_pend|function|void mayfly_pend(u8_t caller_id, u8_t callee_id)
 DECL|mayfly_prio_is_equal|function|u32_t mayfly_prio_is_equal(u8_t caller_id, u8_t callee_id)
+DECL|pdu_adv_type|member|u8_t pdu_adv_type:4;
 DECL|pub_addr|member|u8_t pub_addr[BDADDR_SIZE];
 DECL|radio_active_callback|function|void radio_active_callback(u8_t active)
 DECL|radio_event_callback|function|void radio_event_callback(void)
