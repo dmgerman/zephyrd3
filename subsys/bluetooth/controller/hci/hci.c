@@ -65,6 +65,7 @@ DECL|le_read_supp_states|function|static void le_read_supp_states(struct net_buf
 DECL|le_read_wl_size|function|static void le_read_wl_size(struct net_buf *buf, struct net_buf **evt)
 DECL|le_rem_dev_from_wl|function|static void le_rem_dev_from_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(u8_t status, struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
+DECL|le_scan_req_received|function|static void le_scan_req_received(struct pdu_data *pdu_data, u8_t *b, struct net_buf *buf)
 DECL|le_set_adv_data|function|static void le_set_adv_data(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_adv_enable|function|static void le_set_adv_enable(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_adv_param|function|static void le_set_adv_param(struct net_buf *buf, struct net_buf **evt)
