@@ -648,8 +648,8 @@ DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|adv_addr|member|bt_addr_le_t adv_addr;
 DECL|adv_handle|member|u8_t adv_handle;
-DECL|adv_info|member|struct bt_hci_ev_le_advertising_info adv_info[0];
-DECL|adv_info|member|struct bt_hci_ev_le_ext_advertising_info adv_info[0];
+DECL|adv_info|member|struct bt_hci_evt_le_advertising_info adv_info[0];
+DECL|adv_info|member|struct bt_hci_evt_le_ext_advertising_info adv_info[0];
 DECL|air_mode|member|u8_t air_mode;
 DECL|all_phys|member|u8_t all_phys;
 DECL|all_phys|member|u8_t all_phys;
@@ -794,15 +794,6 @@ DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_cp_write_sc_host_supp|struct|struct bt_hci_cp_write_sc_host_supp {
 DECL|bt_hci_cp_write_ssp_mode|struct|struct bt_hci_cp_write_ssp_mode {
-DECL|bt_hci_ev_le_advertising_info|struct|struct bt_hci_ev_le_advertising_info {
-DECL|bt_hci_ev_le_advertising_report|struct|struct bt_hci_ev_le_advertising_report {
-DECL|bt_hci_ev_le_direct_adv_info|struct|struct bt_hci_ev_le_direct_adv_info {
-DECL|bt_hci_ev_le_direct_adv_report|struct|struct bt_hci_ev_le_direct_adv_report {
-DECL|bt_hci_ev_le_ext_advertising_info|struct|struct bt_hci_ev_le_ext_advertising_info {
-DECL|bt_hci_ev_le_ext_advertising_report|struct|struct bt_hci_ev_le_ext_advertising_report {
-DECL|bt_hci_ev_le_per_advertising_report|struct|struct bt_hci_ev_le_per_advertising_report {
-DECL|bt_hci_ev_le_remote_feat_complete|struct|struct bt_hci_ev_le_remote_feat_complete {
-DECL|bt_hci_ev_link_key_notify|struct|struct bt_hci_ev_link_key_notify {
 DECL|bt_hci_evt_auth_complete|struct|struct bt_hci_evt_auth_complete {
 DECL|bt_hci_evt_auth_payload_timeout_exp|struct|struct bt_hci_evt_auth_payload_timeout_exp {
 DECL|bt_hci_evt_cc_status|struct|struct bt_hci_evt_cc_status {
@@ -819,12 +810,18 @@ DECL|bt_hci_evt_inquiry_complete|struct|struct bt_hci_evt_inquiry_complete {
 DECL|bt_hci_evt_inquiry_result_with_rssi|struct|struct bt_hci_evt_inquiry_result_with_rssi {
 DECL|bt_hci_evt_io_capa_req|struct|struct bt_hci_evt_io_capa_req {
 DECL|bt_hci_evt_io_capa_resp|struct|struct bt_hci_evt_io_capa_resp {
+DECL|bt_hci_evt_le_advertising_info|struct|struct bt_hci_evt_le_advertising_info {
+DECL|bt_hci_evt_le_advertising_report|struct|struct bt_hci_evt_le_advertising_report {
 DECL|bt_hci_evt_le_chan_sel_algo|struct|struct bt_hci_evt_le_chan_sel_algo {
 DECL|bt_hci_evt_le_conn_complete|struct|struct bt_hci_evt_le_conn_complete {
 DECL|bt_hci_evt_le_conn_param_req|struct|struct bt_hci_evt_le_conn_param_req {
 DECL|bt_hci_evt_le_conn_update_complete|struct|struct bt_hci_evt_le_conn_update_complete {
 DECL|bt_hci_evt_le_data_len_change|struct|struct bt_hci_evt_le_data_len_change {
+DECL|bt_hci_evt_le_direct_adv_info|struct|struct bt_hci_evt_le_direct_adv_info {
+DECL|bt_hci_evt_le_direct_adv_report|struct|struct bt_hci_evt_le_direct_adv_report {
 DECL|bt_hci_evt_le_enh_conn_complete|struct|struct bt_hci_evt_le_enh_conn_complete {
+DECL|bt_hci_evt_le_ext_advertising_info|struct|struct bt_hci_evt_le_ext_advertising_info {
+DECL|bt_hci_evt_le_ext_advertising_report|struct|struct bt_hci_evt_le_ext_advertising_report {
 DECL|bt_hci_evt_le_generate_dhkey_complete|struct|struct bt_hci_evt_le_generate_dhkey_complete {
 DECL|bt_hci_evt_le_ltk_request|struct|struct bt_hci_evt_le_ltk_request {
 DECL|bt_hci_evt_le_meta_event|struct|struct bt_hci_evt_le_meta_event {
@@ -832,8 +829,11 @@ DECL|bt_hci_evt_le_p256_public_key_complete|struct|struct bt_hci_evt_le_p256_pub
 DECL|bt_hci_evt_le_per_adv_set_terminated|struct|struct bt_hci_evt_le_per_adv_set_terminated {
 DECL|bt_hci_evt_le_per_adv_sync_established|struct|struct bt_hci_evt_le_per_adv_sync_established {
 DECL|bt_hci_evt_le_per_adv_sync_lost|struct|struct bt_hci_evt_le_per_adv_sync_lost {
+DECL|bt_hci_evt_le_per_advertising_report|struct|struct bt_hci_evt_le_per_advertising_report {
 DECL|bt_hci_evt_le_phy_update_complete|struct|struct bt_hci_evt_le_phy_update_complete {
+DECL|bt_hci_evt_le_remote_feat_complete|struct|struct bt_hci_evt_le_remote_feat_complete {
 DECL|bt_hci_evt_le_scan_req_received|struct|struct bt_hci_evt_le_scan_req_received {
+DECL|bt_hci_evt_link_key_notify|struct|struct bt_hci_evt_link_key_notify {
 DECL|bt_hci_evt_link_key_req|struct|struct bt_hci_evt_link_key_req {
 DECL|bt_hci_evt_num_completed_packets|struct|struct bt_hci_evt_num_completed_packets {
 DECL|bt_hci_evt_pin_code_req|struct|struct bt_hci_evt_pin_code_req {
@@ -936,7 +936,7 @@ DECL|dhkey|member|u8_t dhkey[32];
 DECL|dir_addr|member|bt_addr_le_t dir_addr;
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
 DECL|direct_addr|member|bt_addr_le_t direct_addr;
-DECL|direct_adv_info|member|struct bt_hci_ev_le_direct_adv_info direct_adv_info[0];
+DECL|direct_adv_info|member|struct bt_hci_evt_le_direct_adv_info direct_adv_info[0];
 DECL|duration|member|u16_t duration;
 DECL|duration|member|u16_t duration;
 DECL|ediv|member|u16_t ediv;
