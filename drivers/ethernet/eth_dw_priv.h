@@ -1,4 +1,5 @@
 DECL|DRIVERS_ETHERNET_ETH_DW_PRIV_H_|macro|DRIVERS_ETHERNET_ETH_DW_PRIV_H_
+DECL|ETH_DW_MTU|macro|ETH_DW_MTU
 DECL|INT_ENABLE_NORMAL|macro|INT_ENABLE_NORMAL
 DECL|INT_ENABLE_RX|macro|INT_ENABLE_RX
 DECL|MAC_CONF_11_DUPLEX|macro|MAC_CONF_11_DUPLEX
@@ -27,6 +28,7 @@ DECL|REG_MMC_RX_IPC_INTR_MASK|macro|REG_MMC_RX_IPC_INTR_MASK
 DECL|REG_MMC_TX_INTR_MASK|macro|REG_MMC_TX_INTR_MASK
 DECL|STATUS_NORMAL_INT|macro|STATUS_NORMAL_INT
 DECL|STATUS_RX_INT|macro|STATUS_RX_INT
+DECL|__packed|member|} __packed;
 DECL|addr2_chained|member|u32_t addr2_chained : 1;
 DECL|addr2_chained|member|u32_t addr2_chained : 1;
 DECL|base_addr|member|u32_t base_addr;
@@ -34,6 +36,7 @@ DECL|buf1_ptr|member|u8_t *buf1_ptr;
 DECL|buf1_ptr|member|u8_t *buf1_ptr;
 DECL|buf2_ptr|member|u8_t *buf2_ptr;
 DECL|buf2_ptr|member|u8_t *buf2_ptr;
+DECL|bytes|member|u8_t bytes[6];
 DECL|chksum_ins_ctrl|member|u32_t chksum_ins_ctrl : 2;
 DECL|coll_cnt_slot_num|member|u32_t coll_cnt_slot_num : 4;
 DECL|config_func|member|eth_config_irq_t config_func;
@@ -72,20 +75,23 @@ DECL|first_seg_in_frm|member|u32_t first_seg_in_frm : 1;
 DECL|frm_len|member|u32_t frm_len : 14;
 DECL|frm_type|member|u32_t frm_type : 1;
 DECL|giant_frm|member|u32_t giant_frm : 1;
+DECL|iface|member|struct net_if *iface;
 DECL|intr_on_complete|member|u32_t intr_on_complete : 1;
 DECL|irq_num|member|u32_t irq_num;
 DECL|last_desc|member|u32_t last_desc : 1;
 DECL|last_seg_in_frm|member|u32_t last_seg_in_frm : 1;
 DECL|length_err|member|u32_t length_err : 1;
+DECL|mac_addr|member|} mac_addr;
 DECL|own|member|u32_t own : 1;
 DECL|own|member|u32_t own : 1;
+DECL|pad|member|u8_t pad[2];
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|rdes0|member|u32_t rdes0;
 DECL|rdes1|member|u32_t rdes1;
 DECL|replace_crc|member|u32_t replace_crc : 1;
 DECL|rx_buf1_sz|member|u32_t rx_buf1_sz : 13;
 DECL|rx_buf2_sz|member|u32_t rx_buf2_sz : 13;
-DECL|rx_buf|member|volatile u8_t rx_buf[UIP_BUFSIZE];
+DECL|rx_buf|member|volatile u8_t rx_buf[ETH_DW_MTU];
 DECL|rx_desc|member|volatile struct eth_rx_desc rx_desc;
 DECL|rx_end_of_ring|member|u32_t rx_end_of_ring : 1;
 DECL|s_addr_filt_fail|member|u32_t s_addr_filt_fail : 1;
@@ -95,7 +101,6 @@ DECL|tdes0|member|u32_t tdes0;
 DECL|tdes1|member|u32_t tdes1;
 DECL|tx_buf1_sz|member|u32_t tx_buf1_sz : 13;
 DECL|tx_buf2_sz|member|u32_t tx_buf2_sz : 13;
-DECL|tx_buf|member|volatile u8_t tx_buf[UIP_BUFSIZE];
 DECL|tx_desc|member|volatile struct eth_tx_desc tx_desc;
 DECL|tx_end_of_ring|member|u32_t tx_end_of_ring : 1;
 DECL|tx_timestamp_en|member|u32_t tx_timestamp_en : 1;
@@ -106,3 +111,4 @@ DECL|u32_t|member|u32_t : 3;
 DECL|vlan_frm|member|u32_t vlan_frm : 1;
 DECL|vlan_ins_ctrl|member|u32_t vlan_ins_ctrl : 2;
 DECL|vlan_tag|member|u32_t vlan_tag : 1;
+DECL|words|member|u32_t words[2];
