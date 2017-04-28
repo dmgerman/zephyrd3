@@ -8,6 +8,7 @@ DECL|dst_hwaddr|member|struct net_eth_addr dst_hwaddr; /* THA */
 DECL|dst_ipaddr|member|struct in_addr dst_ipaddr; /* TPA */
 DECL|hwlen|member|u8_t hwlen; /* HLEN */
 DECL|hwtype|member|u16_t hwtype; /* HTYPE */
+DECL|net_arp_clear_cache|macro|net_arp_clear_cache
 DECL|net_arp_hdr|struct|struct net_arp_hdr {
 DECL|net_arp_init|macro|net_arp_init
 DECL|opcode|member|u16_t opcode;

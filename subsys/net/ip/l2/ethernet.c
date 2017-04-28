@@ -2,6 +2,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|broadcast_eth_addr|variable|broadcast_eth_addr
 DECL|check_if_dst_is_broadcast_or_mcast|function|static inline bool check_if_dst_is_broadcast_or_mcast(struct net_if *iface, struct net_pkt *pkt)
+DECL|ethernet_enable|function|static inline int ethernet_enable(struct net_if *iface, bool state)
 DECL|ethernet_recv|function|static enum net_verdict ethernet_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|ethernet_reserve|function|static inline u16_t ethernet_reserve(struct net_if *iface, void *unused)
 DECL|ethernet_send|function|static enum net_verdict ethernet_send(struct net_if *iface, struct net_pkt *pkt)

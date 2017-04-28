@@ -1,0 +1,2 @@
+DECL|ble_mode_config|variable|ble_mode_config
+DECL|xcvr_BLE_1mbps_config|variable|xcvr_BLE_1mbps_config

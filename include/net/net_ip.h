@@ -49,8 +49,8 @@ DECL|NET_UDPH_LEN|macro|NET_UDPH_LEN
 DECL|PF_INET6|macro|PF_INET6
 DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
-DECL|SOCK_DGRAM|enumerator|SOCK_DGRAM = 1,
-DECL|SOCK_STREAM|enumerator|SOCK_STREAM,
+DECL|SOCK_DGRAM|enumerator|SOCK_DGRAM,
+DECL|SOCK_STREAM|enumerator|SOCK_STREAM = 1,
 DECL|__NET_IP_H|macro|__NET_IP_H
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
