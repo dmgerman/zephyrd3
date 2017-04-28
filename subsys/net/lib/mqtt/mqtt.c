@@ -3,7 +3,7 @@ DECL|MQTT_PUBLISHER_MIN_MSG_SIZE|macro|MQTT_PUBLISHER_MIN_MSG_SIZE
 DECL|MSG_SIZE|macro|MSG_SIZE
 DECL|mqtt_init|function|int mqtt_init(struct mqtt_ctx *ctx, enum mqtt_app app_type)
 DECL|mqtt_linearize_packet|function|struct net_buf *mqtt_linearize_packet(struct mqtt_ctx *ctx, struct net_pkt *rx, u16_t min_size)
-DECL|mqtt_publisher_parser|function|int mqtt_publisher_parser(struct mqtt_ctx *ctx, struct net_pkt *rx)
+DECL|mqtt_parser|function|int mqtt_parser(struct mqtt_ctx *ctx, struct net_pkt *rx)
 DECL|mqtt_recv|function|void mqtt_recv(struct net_context *net_ctx, struct net_pkt *pkt, int status, void *data)
 DECL|mqtt_rx_connack|function|int mqtt_rx_connack(struct mqtt_ctx *ctx, struct net_buf *rx, int clean_session)
 DECL|mqtt_rx_pingresp|function|int mqtt_rx_pingresp(struct mqtt_ctx *ctx, struct net_buf *rx)
@@ -15,7 +15,6 @@ DECL|mqtt_rx_pubrec|function|int mqtt_rx_pubrec(struct mqtt_ctx *ctx, struct net
 DECL|mqtt_rx_pubrel|function|int mqtt_rx_pubrel(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_suback|function|int mqtt_rx_suback(struct mqtt_ctx *ctx, struct net_buf *rx)
 DECL|mqtt_rx_unsuback|function|int mqtt_rx_unsuback(struct mqtt_ctx *ctx, struct net_buf *rx)
-DECL|mqtt_subscriber_parser|function|int mqtt_subscriber_parser(struct mqtt_ctx *ctx, struct net_pkt *rx)
 DECL|mqtt_tx_connect|function|int mqtt_tx_connect(struct mqtt_ctx *ctx, struct mqtt_connect_msg *msg)
 DECL|mqtt_tx_disconnect|function|int mqtt_tx_disconnect(struct mqtt_ctx *ctx)
 DECL|mqtt_tx_pingreq|function|int mqtt_tx_pingreq(struct mqtt_ctx *ctx)
