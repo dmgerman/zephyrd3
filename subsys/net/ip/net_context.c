@@ -36,6 +36,7 @@ DECL|net_context_ref|function|int net_context_ref(struct net_context *context)
 DECL|net_context_sendto|function|int net_context_sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, s32_t timeout,
 DECL|net_context_send|function|int net_context_send(struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token, void *user_data)
 DECL|net_context_unref|function|int net_context_unref(struct net_context *context)
+DECL|net_context_update_recv_wnd|function|int net_context_update_recv_wnd(struct net_context *context,s32_t delta)
 DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
 DECL|net_tcp_print_recv_info|macro|net_tcp_print_recv_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info

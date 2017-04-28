@@ -15,7 +15,6 @@ DECL|dst_addr|member|const struct sockaddr *dst_addr;
 DECL|fin_timer_cancel|function|static void fin_timer_cancel(struct net_tcp *tcp)
 DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_pkt *pkt)
 DECL|flags|member|u8_t flags;
-DECL|get_recv_wnd|function|static inline u32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline u32_t get_size(u32_t pos1, u32_t pos2)
 DECL|ip_max_packet_len|function|static inline size_t ip_max_packet_len(struct in_addr *dest_ip)
 DECL|ip_max_packet_len|macro|ip_max_packet_len
@@ -28,6 +27,7 @@ DECL|net_tcp_foreach|function|void net_tcp_foreach(net_tcp_cb_t cb, void *user_d
 DECL|net_tcp_get_chksum|function|u16_t net_tcp_get_chksum(struct net_pkt *pkt, struct net_buf *frag)
 DECL|net_tcp_get_hdr|function|struct net_tcp_hdr *net_tcp_get_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_get_recv_mss|function|u16_t net_tcp_get_recv_mss(const struct net_tcp *tcp)
+DECL|net_tcp_get_recv_wnd|function|u32_t net_tcp_get_recv_wnd(const struct net_tcp *tcp)
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_pkt **pkt)
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
