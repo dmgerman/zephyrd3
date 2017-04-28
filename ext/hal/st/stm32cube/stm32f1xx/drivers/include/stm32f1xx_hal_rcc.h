@@ -25,7 +25,6 @@ DECL|IS_RCC_RTCCLKSOURCE|macro|IS_RCC_RTCCLKSOURCE
 DECL|IS_RCC_SYSCLKSOURCE_STATUS|macro|IS_RCC_SYSCLKSOURCE_STATUS
 DECL|IS_RCC_SYSCLKSOURCE|macro|IS_RCC_SYSCLKSOURCE
 DECL|LSI_TIMEOUT_VALUE|macro|LSI_TIMEOUT_VALUE
-DECL|LSI_VALUE|macro|LSI_VALUE
 DECL|PLLMUL|member|uint32_t PLLMUL; /*!< PLLMUL: Multiplication factor for PLL VCO input clock
 DECL|PLLSource|member|uint32_t PLLSource; /*!< PLLSource: PLL entry clock source.
 DECL|PLLState|member|uint32_t PLLState; /*!< PLLState: The new state of the PLL.

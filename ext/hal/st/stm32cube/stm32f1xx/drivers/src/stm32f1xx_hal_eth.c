@@ -1,8 +1,8 @@
-DECL|AUTONEGO_COMPLETED_TIMEOUT_VALUE|macro|AUTONEGO_COMPLETED_TIMEOUT_VALUE
 DECL|ETH_DMAReceptionDisable|function|static void ETH_DMAReceptionDisable(ETH_HandleTypeDef *heth)
 DECL|ETH_DMAReceptionEnable|function|static void ETH_DMAReceptionEnable(ETH_HandleTypeDef *heth)
 DECL|ETH_DMATransmissionDisable|function|static void ETH_DMATransmissionDisable(ETH_HandleTypeDef *heth)
 DECL|ETH_DMATransmissionEnable|function|static void ETH_DMATransmissionEnable(ETH_HandleTypeDef *heth)
+DECL|ETH_Delay|function|static void ETH_Delay(uint32_t mdelay)
 DECL|ETH_FlushTransmitFIFO|function|static void ETH_FlushTransmitFIFO(ETH_HandleTypeDef *heth)
 DECL|ETH_MACAddressConfig|function|static void ETH_MACAddressConfig(ETH_HandleTypeDef *heth, uint32_t MacAddr, uint8_t *Addr)
 DECL|ETH_MACDMAConfig|function|static void ETH_MACDMAConfig(ETH_HandleTypeDef *heth, uint32_t err)
@@ -10,6 +10,9 @@ DECL|ETH_MACReceptionDisable|function|static void ETH_MACReceptionDisable(ETH_Ha
 DECL|ETH_MACReceptionEnable|function|static void ETH_MACReceptionEnable(ETH_HandleTypeDef *heth)
 DECL|ETH_MACTransmissionDisable|function|static void ETH_MACTransmissionDisable(ETH_HandleTypeDef *heth)
 DECL|ETH_MACTransmissionEnable|function|static void ETH_MACTransmissionEnable(ETH_HandleTypeDef *heth)
+DECL|ETH_TIMEOUT_AUTONEGO_COMPLETED|macro|ETH_TIMEOUT_AUTONEGO_COMPLETED
+DECL|ETH_TIMEOUT_LINKED_STATE|macro|ETH_TIMEOUT_LINKED_STATE
+DECL|ETH_TIMEOUT_SWRESET|macro|ETH_TIMEOUT_SWRESET
 DECL|HAL_ETH_ConfigDMA|function|HAL_StatusTypeDef HAL_ETH_ConfigDMA(ETH_HandleTypeDef *heth, ETH_DMAInitTypeDef *dmaconf)
 DECL|HAL_ETH_ConfigMAC|function|HAL_StatusTypeDef HAL_ETH_ConfigMAC(ETH_HandleTypeDef *heth, ETH_MACInitTypeDef *macconf)
 DECL|HAL_ETH_DMARxDescListInit|function|HAL_StatusTypeDef HAL_ETH_DMARxDescListInit(ETH_HandleTypeDef *heth, ETH_DMADescTypeDef *DMARxDescTab, uint8_t *RxBuff, uint32_t RxBuffCount)
@@ -30,4 +33,3 @@ DECL|HAL_ETH_Stop|function|HAL_StatusTypeDef HAL_ETH_Stop(ETH_HandleTypeDef *het
 DECL|HAL_ETH_TransmitFrame|function|HAL_StatusTypeDef HAL_ETH_TransmitFrame(ETH_HandleTypeDef *heth, uint32_t FrameLength)
 DECL|HAL_ETH_TxCpltCallback|function|__weak void HAL_ETH_TxCpltCallback(ETH_HandleTypeDef *heth)
 DECL|HAL_ETH_WritePHYRegister|function|HAL_StatusTypeDef HAL_ETH_WritePHYRegister(ETH_HandleTypeDef *heth, uint16_t PHYReg, uint32_t RegValue)
-DECL|LINKED_STATE_TIMEOUT_VALUE|macro|LINKED_STATE_TIMEOUT_VALUE

@@ -1,9 +1,9 @@
 DECL|CRC_HandleTypeDef|typedef|}CRC_HandleTypeDef;
-DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02, /*!< CRC internal process is ongoing */
-DECL|HAL_CRC_STATE_ERROR|enumerator|HAL_CRC_STATE_ERROR = 0x04 /*!< CRC error state */
-DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01, /*!< CRC initialized and ready for use */
-DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00, /*!< CRC not yet initialized or disabled */
-DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03, /*!< CRC timeout state */
+DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02U, /*!< CRC internal process is ongoing */
+DECL|HAL_CRC_STATE_ERROR|enumerator|HAL_CRC_STATE_ERROR = 0x04U /*!< CRC error state */
+DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01U, /*!< CRC initialized and ready for use */
+DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00U, /*!< CRC not yet initialized or disabled */
+DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03U, /*!< CRC timeout state */
 DECL|HAL_CRC_StateTypeDef|typedef|}HAL_CRC_StateTypeDef;
 DECL|Instance|member|CRC_TypeDef *Instance; /*!< Register base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< CRC locking object */

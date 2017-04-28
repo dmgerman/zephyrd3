@@ -121,7 +121,7 @@ DECL|hisr|member|u32_t hisr;
 DECL|lifcr|member|u32_t lifcr;
 DECL|lisr|member|u32_t lisr;
 DECL|mem2mem|member|bool mem2mem;
-DECL|pclken|member|struct stm32f4x_pclken pclken;
+DECL|pclken|member|struct stm32_pclken pclken;
 DECL|regs|member|struct dma_stm32_stream_reg regs;
 DECL|scr|member|u32_t scr;
 DECL|sfcr|member|u32_t sfcr;

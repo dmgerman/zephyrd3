@@ -6,16 +6,16 @@ DECL|HAL_UART_ERROR_NE|macro|HAL_UART_ERROR_NE
 DECL|HAL_UART_ERROR_NONE|macro|HAL_UART_ERROR_NONE
 DECL|HAL_UART_ERROR_ORE|macro|HAL_UART_ERROR_ORE
 DECL|HAL_UART_ERROR_PE|macro|HAL_UART_ERROR_PE
-DECL|HAL_UART_STATE_BUSY_RX|enumerator|HAL_UART_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_UART_STATE_BUSY_TX_RX|enumerator|HAL_UART_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission and Reception process is ongoing */
-DECL|HAL_UART_STATE_BUSY_TX|enumerator|HAL_UART_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_UART_STATE_BUSY|enumerator|HAL_UART_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_UART_STATE_ERROR|enumerator|HAL_UART_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_UART_STATE_READY|enumerator|HAL_UART_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_UART_STATE_RESET|enumerator|HAL_UART_STATE_RESET = 0x00, /*!< Peripheral is not initialized */
-DECL|HAL_UART_STATE_TIMEOUT|enumerator|HAL_UART_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_UART_STATE_BUSY_RX|enumerator|HAL_UART_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing
+DECL|HAL_UART_STATE_BUSY_TX_RX|enumerator|HAL_UART_STATE_BUSY_TX_RX = 0x23U, /*!< Data Transmission and Reception process is ongoing
+DECL|HAL_UART_STATE_BUSY_TX|enumerator|HAL_UART_STATE_BUSY_TX = 0x21U, /*!< Data Transmission process is ongoing
+DECL|HAL_UART_STATE_BUSY|enumerator|HAL_UART_STATE_BUSY = 0x24U, /*!< an internal process is ongoing
+DECL|HAL_UART_STATE_ERROR|enumerator|HAL_UART_STATE_ERROR = 0xE0U /*!< Error
+DECL|HAL_UART_STATE_READY|enumerator|HAL_UART_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use
+DECL|HAL_UART_STATE_RESET|enumerator|HAL_UART_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized
+DECL|HAL_UART_STATE_TIMEOUT|enumerator|HAL_UART_STATE_TIMEOUT = 0xA0U, /*!< Timeout state
 DECL|HAL_UART_StateTypeDef|typedef|}HAL_UART_StateTypeDef;
-DECL|HwFlowCtl|member|uint32_t HwFlowCtl; /*!< Specifies wether the hardware flow control mode is enabled
+DECL|HwFlowCtl|member|uint32_t HwFlowCtl; /*!< Specifies whether the hardware flow control mode is enabled or disabled.
 DECL|IS_UART_ADDRESS|macro|IS_UART_ADDRESS
 DECL|IS_UART_BAUDRATE|macro|IS_UART_BAUDRATE
 DECL|IS_UART_HARDWARE_FLOW_CONTROL|macro|IS_UART_HARDWARE_FLOW_CONTROL
@@ -32,22 +32,26 @@ DECL|IS_UART_WORD_LENGTH|macro|IS_UART_WORD_LENGTH
 DECL|Init|member|UART_InitTypeDef Init; /*!< UART communication parameters */
 DECL|Instance|member|USART_TypeDef *Instance; /*!< UART registers base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
-DECL|Mode|member|uint32_t Mode; /*!< Specifies wether the Receive or Transmit mode is enabled or disabled.
+DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether the Over sampling 8 is enabled or disabled, to achieve higher speed (up to fPCLK/8).
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
+DECL|RxState|member|__IO HAL_UART_StateTypeDef RxState; /*!< UART state information related to Rx operations.
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< UART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< UART Rx Transfer size */
-DECL|State|member|__IO HAL_UART_StateTypeDef State; /*!< UART communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< UART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< UART Tx Transfer size */
 DECL|UART_BRR_SAMPLING16|macro|UART_BRR_SAMPLING16
+DECL|UART_BRR_SAMPLING8|macro|UART_BRR_SAMPLING8
 DECL|UART_CR1_REG_INDEX|macro|UART_CR1_REG_INDEX
 DECL|UART_CR2_REG_INDEX|macro|UART_CR2_REG_INDEX
 DECL|UART_CR3_REG_INDEX|macro|UART_CR3_REG_INDEX
 DECL|UART_DIVFRAQ_SAMPLING16|macro|UART_DIVFRAQ_SAMPLING16
+DECL|UART_DIVFRAQ_SAMPLING8|macro|UART_DIVFRAQ_SAMPLING8
 DECL|UART_DIVMANT_SAMPLING16|macro|UART_DIVMANT_SAMPLING16
+DECL|UART_DIVMANT_SAMPLING8|macro|UART_DIVMANT_SAMPLING8
 DECL|UART_DIV_SAMPLING16|macro|UART_DIV_SAMPLING16
+DECL|UART_DIV_SAMPLING8|macro|UART_DIV_SAMPLING8
 DECL|UART_FLAG_CTS|macro|UART_FLAG_CTS
 DECL|UART_FLAG_FE|macro|UART_FLAG_FE
 DECL|UART_FLAG_IDLE|macro|UART_FLAG_IDLE
@@ -79,6 +83,7 @@ DECL|UART_MODE_RX|macro|UART_MODE_RX
 DECL|UART_MODE_TX_RX|macro|UART_MODE_TX_RX
 DECL|UART_MODE_TX|macro|UART_MODE_TX
 DECL|UART_OVERSAMPLING_16|macro|UART_OVERSAMPLING_16
+DECL|UART_OVERSAMPLING_8|macro|UART_OVERSAMPLING_8
 DECL|UART_PARITY_EVEN|macro|UART_PARITY_EVEN
 DECL|UART_PARITY_NONE|macro|UART_PARITY_NONE
 DECL|UART_PARITY_ODD|macro|UART_PARITY_ODD
@@ -108,8 +113,11 @@ DECL|__HAL_UART_HWCONTROL_CTS_DISABLE|macro|__HAL_UART_HWCONTROL_CTS_DISABLE
 DECL|__HAL_UART_HWCONTROL_CTS_ENABLE|macro|__HAL_UART_HWCONTROL_CTS_ENABLE
 DECL|__HAL_UART_HWCONTROL_RTS_DISABLE|macro|__HAL_UART_HWCONTROL_RTS_DISABLE
 DECL|__HAL_UART_HWCONTROL_RTS_ENABLE|macro|__HAL_UART_HWCONTROL_RTS_ENABLE
+DECL|__HAL_UART_ONE_BIT_SAMPLE_DISABLE|macro|__HAL_UART_ONE_BIT_SAMPLE_DISABLE
+DECL|__HAL_UART_ONE_BIT_SAMPLE_ENABLE|macro|__HAL_UART_ONE_BIT_SAMPLE_ENABLE
 DECL|__HAL_UART_RESET_HANDLE_STATE|macro|__HAL_UART_RESET_HANDLE_STATE
 DECL|__STM32F1xx_HAL_UART_H|macro|__STM32F1xx_HAL_UART_H
+DECL|gState|member|__IO HAL_UART_StateTypeDef gState; /*!< UART state information related to global Handle management
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< UART Rx DMA Handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< UART Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to UART Rx transfer Buffer */

@@ -6,14 +6,14 @@ DECL|HAL_IRDA_ERROR_NE|macro|HAL_IRDA_ERROR_NE
 DECL|HAL_IRDA_ERROR_NONE|macro|HAL_IRDA_ERROR_NONE
 DECL|HAL_IRDA_ERROR_ORE|macro|HAL_IRDA_ERROR_ORE
 DECL|HAL_IRDA_ERROR_PE|macro|HAL_IRDA_ERROR_PE
-DECL|HAL_IRDA_STATE_BUSY_RX|enumerator|HAL_IRDA_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_IRDA_STATE_BUSY_TX_RX|enumerator|HAL_IRDA_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission and Reception process is ongoing */
-DECL|HAL_IRDA_STATE_BUSY_TX|enumerator|HAL_IRDA_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_IRDA_STATE_BUSY|enumerator|HAL_IRDA_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_IRDA_STATE_ERROR|enumerator|HAL_IRDA_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_IRDA_STATE_READY|enumerator|HAL_IRDA_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_IRDA_STATE_RESET|enumerator|HAL_IRDA_STATE_RESET = 0x00, /*!< Peripheral is not initialized */
-DECL|HAL_IRDA_STATE_TIMEOUT|enumerator|HAL_IRDA_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_IRDA_STATE_BUSY_RX|enumerator|HAL_IRDA_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing
+DECL|HAL_IRDA_STATE_BUSY_TX_RX|enumerator|HAL_IRDA_STATE_BUSY_TX_RX = 0x23U, /*!< Data Transmission and Reception process is ongoing
+DECL|HAL_IRDA_STATE_BUSY_TX|enumerator|HAL_IRDA_STATE_BUSY_TX = 0x21U, /*!< Data Transmission process is ongoing
+DECL|HAL_IRDA_STATE_BUSY|enumerator|HAL_IRDA_STATE_BUSY = 0x24U, /*!< An internal process is ongoing
+DECL|HAL_IRDA_STATE_ERROR|enumerator|HAL_IRDA_STATE_ERROR = 0xE0U /*!< Error
+DECL|HAL_IRDA_STATE_READY|enumerator|HAL_IRDA_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use
+DECL|HAL_IRDA_STATE_RESET|enumerator|HAL_IRDA_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized
+DECL|HAL_IRDA_STATE_TIMEOUT|enumerator|HAL_IRDA_STATE_TIMEOUT = 0xA0U, /*!< Timeout state
 DECL|HAL_IRDA_StateTypeDef|typedef|}HAL_IRDA_StateTypeDef;
 DECL|IRDA_BRR|macro|IRDA_BRR
 DECL|IRDA_CR1_REG_INDEX|macro|IRDA_CR1_REG_INDEX
@@ -60,13 +60,13 @@ DECL|Init|member|IRDA_InitTypeDef Init; /*!< IRDA communication parameters */
 DECL|Instance|member|USART_TypeDef *Instance; /*!< USART registers base address */
 DECL|IrDAMode|member|uint32_t IrDAMode; /*!< Specifies the IrDA mode
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
-DECL|Mode|member|uint32_t Mode; /*!< Specifies wether the Receive or Transmit mode is enabled or disabled.
+DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|Prescaler|member|uint8_t Prescaler; /*!< Specifies the Prescaler value prescaler value to be programmed
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< IRDA Rx Transfer Counter */
+DECL|RxState|member|__IO HAL_IRDA_StateTypeDef RxState; /*!< IRDA state information related to Rx operations.
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< IRDA Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< IRDA Rx Transfer size */
-DECL|State|member|__IO HAL_IRDA_StateTypeDef State; /*!< IRDA communication state */
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< IRDA Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< IRDA Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< IRDA Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
 DECL|__HAL_IRDA_CLEAR_FEFLAG|macro|__HAL_IRDA_CLEAR_FEFLAG
@@ -84,6 +84,7 @@ DECL|__HAL_IRDA_GET_FLAG|macro|__HAL_IRDA_GET_FLAG
 DECL|__HAL_IRDA_GET_IT_SOURCE|macro|__HAL_IRDA_GET_IT_SOURCE
 DECL|__HAL_IRDA_RESET_HANDLE_STATE|macro|__HAL_IRDA_RESET_HANDLE_STATE
 DECL|__STM32F1xx_HAL_IRDA_H|macro|__STM32F1xx_HAL_IRDA_H
+DECL|gState|member|__IO HAL_IRDA_StateTypeDef gState; /*!< IRDA state information related to global Handle management
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< IRDA Rx DMA Handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< IRDA Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to IRDA Rx transfer Buffer */
