@@ -10,7 +10,7 @@ DECL|HAL_HCD_HC_GetXferCount|function|uint32_t HAL_HCD_HC_GetXferCount(HCD_Handl
 DECL|HAL_HCD_HC_Halt|function|HAL_StatusTypeDef HAL_HCD_HC_Halt(HCD_HandleTypeDef *hhcd, uint8_t ch_num)
 DECL|HAL_HCD_HC_Init|function|HAL_StatusTypeDef HAL_HCD_HC_Init(HCD_HandleTypeDef *hhcd, uint8_t ch_num, uint8_t epnum, uint8_t dev_address, uint8_t speed,
 DECL|HAL_HCD_HC_NotifyURBChange_Callback|function|__weak void HAL_HCD_HC_NotifyURBChange_Callback(HCD_HandleTypeDef *hhcd, uint8_t chnum, HCD_URBStateTypeDef urb_state)
-DECL|HAL_HCD_HC_SubmitRequest|function|HAL_StatusTypeDef HAL_HCD_HC_SubmitRequest(HCD_HandleTypeDef *hhcd, uint8_t ch_num, uint8_t direction , uint8_t ep_type, uint8_t token,
+DECL|HAL_HCD_HC_SubmitRequest|function|HAL_StatusTypeDef HAL_HCD_HC_SubmitRequest(HCD_HandleTypeDef *hhcd, uint8_t ch_num, uint8_t direction, uint8_t ep_type, uint8_t token,
 DECL|HAL_HCD_IRQHandler|function|void HAL_HCD_IRQHandler(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_Init|function|HAL_StatusTypeDef HAL_HCD_Init(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_MspDeInit|function|__weak void HAL_HCD_MspDeInit(HCD_HandleTypeDef *hhcd)

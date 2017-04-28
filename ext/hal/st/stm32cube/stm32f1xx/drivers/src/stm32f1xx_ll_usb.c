@@ -36,7 +36,7 @@ DECL|USB_EnableGlobalInt|function|HAL_StatusTypeDef USB_EnableGlobalInt(USB_Type
 DECL|USB_FlushRxFifo|function|HAL_StatusTypeDef USB_FlushRxFifo(USB_OTG_GlobalTypeDef *USBx)
 DECL|USB_FlushRxFifo|function|HAL_StatusTypeDef USB_FlushRxFifo(USB_TypeDef *USBx)
 DECL|USB_FlushTxFifo|function|HAL_StatusTypeDef USB_FlushTxFifo (USB_OTG_GlobalTypeDef *USBx, uint32_t num )
-DECL|USB_FlushTxFifo|function|HAL_StatusTypeDef USB_FlushTxFifo (USB_TypeDef *USBx, uint32_t num )
+DECL|USB_FlushTxFifo|function|HAL_StatusTypeDef USB_FlushTxFifo (USB_TypeDef *USBx, uint32_t num)
 DECL|USB_GetCurrentFrame|function|uint32_t USB_GetCurrentFrame (USB_OTG_GlobalTypeDef *USBx)
 DECL|USB_GetDevSpeed|function|uint8_t USB_GetDevSpeed(USB_OTG_GlobalTypeDef *USBx)
 DECL|USB_GetHostSpeed|function|uint32_t USB_GetHostSpeed (USB_OTG_GlobalTypeDef *USBx)

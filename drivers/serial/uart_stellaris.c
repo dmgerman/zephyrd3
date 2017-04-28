@@ -114,6 +114,6 @@ DECL|uart_stellaris_irq_tx_disable|function|static void uart_stellaris_irq_tx_di
 DECL|uart_stellaris_irq_tx_enable|function|static void uart_stellaris_irq_tx_enable(struct device *dev)
 DECL|uart_stellaris_irq_tx_ready|function|static int uart_stellaris_irq_tx_ready(struct device *dev)
 DECL|uart_stellaris_irq_update|function|static int uart_stellaris_irq_update(struct device *dev)
-DECL|uart_stellaris_isr|function|void uart_stellaris_isr(void *arg)
+DECL|uart_stellaris_isr|function|static void uart_stellaris_isr(void *arg)
 DECL|uart_stellaris_poll_in|function|static int uart_stellaris_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_stellaris_poll_out|function|static unsigned char uart_stellaris_poll_out(struct device *dev, unsigned char c)

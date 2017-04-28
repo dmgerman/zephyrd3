@@ -9,14 +9,14 @@ DECL|HAL_USART_ERROR_NE|macro|HAL_USART_ERROR_NE
 DECL|HAL_USART_ERROR_NONE|macro|HAL_USART_ERROR_NONE
 DECL|HAL_USART_ERROR_ORE|macro|HAL_USART_ERROR_ORE
 DECL|HAL_USART_ERROR_PE|macro|HAL_USART_ERROR_PE
-DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00, /*!< Peripheral is not initialized */
-DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32U, /*!< Data Transmission Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12U, /*!< Data Transmission process is ongoing */
+DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02U, /*!< an internal process is ongoing */
+DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04U /*!< Error */
+DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00U, /*!< Peripheral is not yet initialized */
+DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_USART_StateTypeDef|typedef|}HAL_USART_StateTypeDef;
 DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_CLOCK|macro|IS_USART_CLOCK
@@ -31,7 +31,7 @@ DECL|IS_USART_WORD_LENGTH|macro|IS_USART_WORD_LENGTH
 DECL|Init|member|USART_InitTypeDef Init; /*!< Usart communication parameters */
 DECL|Instance|member|USART_TypeDef *Instance; /*!< USART registers base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
-DECL|Mode|member|uint32_t Mode; /*!< Specifies wether the Receive or Transmit mode is enabled or disabled.
+DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< Usart Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< Usart Rx Transfer size */
@@ -48,10 +48,8 @@ DECL|USART_CR3_REG_INDEX|macro|USART_CR3_REG_INDEX
 DECL|USART_DIVFRAQ|macro|USART_DIVFRAQ
 DECL|USART_DIVMANT|macro|USART_DIVMANT
 DECL|USART_DIV|macro|USART_DIV
-DECL|USART_FLAG_CTS|macro|USART_FLAG_CTS
 DECL|USART_FLAG_FE|macro|USART_FLAG_FE
 DECL|USART_FLAG_IDLE|macro|USART_FLAG_IDLE
-DECL|USART_FLAG_LBD|macro|USART_FLAG_LBD
 DECL|USART_FLAG_NE|macro|USART_FLAG_NE
 DECL|USART_FLAG_ORE|macro|USART_FLAG_ORE
 DECL|USART_FLAG_PE|macro|USART_FLAG_PE

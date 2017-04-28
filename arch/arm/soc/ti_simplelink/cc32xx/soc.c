@@ -1,1 +1,1 @@
-DECL|ti_cc3200_init|function|static int ti_cc3200_init(struct device *arg)
+DECL|ti_cc32xx_init|function|static int ti_cc32xx_init(struct device *arg)

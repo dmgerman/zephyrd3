@@ -1,14 +1,14 @@
-DECL|HAL_PCD_STATE_BUSY|enumerator|HAL_PCD_STATE_BUSY = 0x03,
-DECL|HAL_PCD_STATE_ERROR|enumerator|HAL_PCD_STATE_ERROR = 0x02,
-DECL|HAL_PCD_STATE_READY|enumerator|HAL_PCD_STATE_READY = 0x01,
-DECL|HAL_PCD_STATE_RESET|enumerator|HAL_PCD_STATE_RESET = 0x00,
-DECL|HAL_PCD_STATE_TIMEOUT|enumerator|HAL_PCD_STATE_TIMEOUT = 0x04
-DECL|IN_ep|member|PCD_EPTypeDef IN_ep[15]; /*!< IN endpoint parameters */
+DECL|HAL_PCD_STATE_BUSY|enumerator|HAL_PCD_STATE_BUSY = 0x03U,
+DECL|HAL_PCD_STATE_ERROR|enumerator|HAL_PCD_STATE_ERROR = 0x02U,
+DECL|HAL_PCD_STATE_READY|enumerator|HAL_PCD_STATE_READY = 0x01U,
+DECL|HAL_PCD_STATE_RESET|enumerator|HAL_PCD_STATE_RESET = 0x00U,
+DECL|HAL_PCD_STATE_TIMEOUT|enumerator|HAL_PCD_STATE_TIMEOUT = 0x04U
+DECL|IN_ep|member|PCD_EPTypeDef IN_ep[16]; /*!< IN endpoint parameters */
 DECL|IS_PCD_ALL_INSTANCE|macro|IS_PCD_ALL_INSTANCE
 DECL|Init|member|PCD_InitTypeDef Init; /*!< PCD required parameters */
 DECL|Instance|member|PCD_TypeDef *Instance; /*!< Register base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< PCD peripheral status */
-DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[15]; /*!< OUT endpoint parameters */
+DECL|OUT_ep|member|PCD_EPTypeDef OUT_ep[16]; /*!< OUT endpoint parameters */
 DECL|PCD_CALC_BLK2|macro|PCD_CALC_BLK2
 DECL|PCD_CALC_BLK32|macro|PCD_CALC_BLK32
 DECL|PCD_CLEAR_EP_DBUF|macro|PCD_CLEAR_EP_DBUF
@@ -98,7 +98,7 @@ DECL|PCD_StateTypeDef|typedef|} PCD_StateTypeDef;
 DECL|PCD_TX_DTOG|macro|PCD_TX_DTOG
 DECL|PCD_TypeDef|typedef|typedef USB_OTG_GlobalTypeDef PCD_TypeDef;
 DECL|PCD_TypeDef|typedef|typedef USB_TypeDef PCD_TypeDef;
-DECL|Setup|member|uint32_t Setup[12]; /*!< Setup packet buffer */
+DECL|Setup|member|uint32_t Setup[12U]; /*!< Setup packet buffer */
 DECL|State|member|__IO PCD_StateTypeDef State; /*!< PCD communication state */
 DECL|USBD_FS_TRDT_VALUE|macro|USBD_FS_TRDT_VALUE
 DECL|USB_Address|member|__IO uint8_t USB_Address; /*!< USB Address: not used by USB OTG FS */

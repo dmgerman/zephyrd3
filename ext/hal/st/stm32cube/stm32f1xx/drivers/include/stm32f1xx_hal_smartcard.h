@@ -10,14 +10,14 @@ DECL|HAL_SMARTCARD_ERROR_NE|macro|HAL_SMARTCARD_ERROR_NE
 DECL|HAL_SMARTCARD_ERROR_NONE|macro|HAL_SMARTCARD_ERROR_NONE
 DECL|HAL_SMARTCARD_ERROR_ORE|macro|HAL_SMARTCARD_ERROR_ORE
 DECL|HAL_SMARTCARD_ERROR_PE|macro|HAL_SMARTCARD_ERROR_PE
-DECL|HAL_SMARTCARD_STATE_BUSY_RX|enumerator|HAL_SMARTCARD_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_SMARTCARD_STATE_BUSY_TX_RX|enumerator|HAL_SMARTCARD_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission and Reception process is ongoing */
-DECL|HAL_SMARTCARD_STATE_BUSY_TX|enumerator|HAL_SMARTCARD_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_SMARTCARD_STATE_BUSY|enumerator|HAL_SMARTCARD_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_SMARTCARD_STATE_ERROR|enumerator|HAL_SMARTCARD_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_SMARTCARD_STATE_READY|enumerator|HAL_SMARTCARD_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_SMARTCARD_STATE_RESET|enumerator|HAL_SMARTCARD_STATE_RESET = 0x00, /*!< Peripheral is not yet Initialized */
-DECL|HAL_SMARTCARD_STATE_TIMEOUT|enumerator|HAL_SMARTCARD_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_SMARTCARD_STATE_BUSY_RX|enumerator|HAL_SMARTCARD_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing
+DECL|HAL_SMARTCARD_STATE_BUSY_TX_RX|enumerator|HAL_SMARTCARD_STATE_BUSY_TX_RX = 0x23U, /*!< Data Transmission and Reception process is ongoing
+DECL|HAL_SMARTCARD_STATE_BUSY_TX|enumerator|HAL_SMARTCARD_STATE_BUSY_TX = 0x21U, /*!< Data Transmission process is ongoing
+DECL|HAL_SMARTCARD_STATE_BUSY|enumerator|HAL_SMARTCARD_STATE_BUSY = 0x24U, /*!< an internal process is ongoing
+DECL|HAL_SMARTCARD_STATE_ERROR|enumerator|HAL_SMARTCARD_STATE_ERROR = 0xE0U /*!< Error
+DECL|HAL_SMARTCARD_STATE_READY|enumerator|HAL_SMARTCARD_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use
+DECL|HAL_SMARTCARD_STATE_RESET|enumerator|HAL_SMARTCARD_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized
+DECL|HAL_SMARTCARD_STATE_TIMEOUT|enumerator|HAL_SMARTCARD_STATE_TIMEOUT = 0xA0U, /*!< Timeout state
 DECL|HAL_SMARTCARD_StateTypeDef|typedef|}HAL_SMARTCARD_StateTypeDef;
 DECL|IS_SMARTCARD_BAUDRATE|macro|IS_SMARTCARD_BAUDRATE
 DECL|IS_SMARTCARD_LASTBIT|macro|IS_SMARTCARD_LASTBIT
@@ -26,7 +26,6 @@ DECL|IS_SMARTCARD_NACK_STATE|macro|IS_SMARTCARD_NACK_STATE
 DECL|IS_SMARTCARD_PARITY|macro|IS_SMARTCARD_PARITY
 DECL|IS_SMARTCARD_PHASE|macro|IS_SMARTCARD_PHASE
 DECL|IS_SMARTCARD_POLARITY|macro|IS_SMARTCARD_POLARITY
-DECL|IS_SMARTCARD_PRESCALER|macro|IS_SMARTCARD_PRESCALER
 DECL|IS_SMARTCARD_STOPBITS|macro|IS_SMARTCARD_STOPBITS
 DECL|IS_SMARTCARD_WORD_LENGTH|macro|IS_SMARTCARD_WORD_LENGTH
 DECL|Init|member|SMARTCARD_InitTypeDef Init; /*!< SmartCard communication parameters */
@@ -36,7 +35,8 @@ DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit m
 DECL|NACKState|member|uint32_t NACKState; /*!< Specifies the SmartCard NACK Transmission state
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the SmartCard Prescaler value used for dividing the system clock
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< SmartCard Rx Transfer Counter */
+DECL|RxState|member|__IO HAL_SMARTCARD_StateTypeDef RxState; /*!< SmartCard state information related to Rx operations.
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< SmartCard Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SmartCard Rx Transfer size */
 DECL|SMARTCARD_BRR|macro|SMARTCARD_BRR
 DECL|SMARTCARD_CR1_REG_INDEX|macro|SMARTCARD_CR1_REG_INDEX
@@ -110,9 +110,8 @@ DECL|SMARTCARD_PRESCALER_SYSCLK_DIV8|macro|SMARTCARD_PRESCALER_SYSCLK_DIV8
 DECL|SMARTCARD_STOPBITS_0_5|macro|SMARTCARD_STOPBITS_0_5
 DECL|SMARTCARD_STOPBITS_1_5|macro|SMARTCARD_STOPBITS_1_5
 DECL|SMARTCARD_WORDLENGTH_9B|macro|SMARTCARD_WORDLENGTH_9B
-DECL|State|member|__IO HAL_SMARTCARD_StateTypeDef State; /*!< SmartCard communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< SmartCard Tx Transfer Counter */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< SmartCard Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SmartCard Tx Transfer size */
 DECL|WordLength|member|uint32_t WordLength; /*!< Specifies the number of data bits transmitted or received in a frame.
 DECL|__HAL_SMARTCARD_CLEAR_FEFLAG|macro|__HAL_SMARTCARD_CLEAR_FEFLAG
@@ -132,6 +131,7 @@ DECL|__HAL_SMARTCARD_GET_FLAG|macro|__HAL_SMARTCARD_GET_FLAG
 DECL|__HAL_SMARTCARD_GET_IT_SOURCE|macro|__HAL_SMARTCARD_GET_IT_SOURCE
 DECL|__HAL_SMARTCARD_RESET_HANDLE_STATE|macro|__HAL_SMARTCARD_RESET_HANDLE_STATE
 DECL|__STM32F1xx_HAL_SMARTCARD_H|macro|__STM32F1xx_HAL_SMARTCARD_H
+DECL|gState|member|__IO HAL_SMARTCARD_StateTypeDef gState; /*!< SmartCard state information related to global Handle management
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SmartCard Rx DMA Handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SmartCard Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to SmartCard Rx transfer Buffer */

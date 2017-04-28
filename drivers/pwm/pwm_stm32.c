@@ -5,7 +5,6 @@ DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|PWM_STRUCT|macro|PWM_STRUCT
 DECL|__get_tim_clk|function|static u32_t __get_tim_clk(u32_t bus_clk, clock_control_subsys_t *sub_system)
-DECL|__get_tim_clk|function|static u32_t __get_tim_clk(u32_t bus_clk, clock_control_subsys_t *sub_system)
 DECL|__get_tim_clk|function|static u32_t __get_tim_clk(u32_t bus_clk, clock_control_subsys_t sub_system)
 DECL|__pwm_stm32_get_clock|function|static inline void __pwm_stm32_get_clock(struct device *dev)
 DECL|pwm_stm32_dev_cfg_1|variable|pwm_stm32_dev_cfg_1

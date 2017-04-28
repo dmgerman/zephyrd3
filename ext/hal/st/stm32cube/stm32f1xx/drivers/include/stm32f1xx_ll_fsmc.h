@@ -2,6 +2,10 @@ DECL|AccessMode|member|uint32_t AccessMode; /*!< Specifies the asynchronous acce
 DECL|AddressHoldTime|member|uint32_t AddressHoldTime; /*!< Defines the number of HCLK cycles to configure
 DECL|AddressSetupTime|member|uint32_t AddressSetupTime; /*!< Defines the number of HCLK cycles to configure
 DECL|AsynchronousWait|member|uint32_t AsynchronousWait; /*!< Enables or disables wait signal during asynchronous transfers,
+DECL|BCR_CLEAR_MASK|macro|BCR_CLEAR_MASK
+DECL|BTR_CLEAR_MASK|macro|BTR_CLEAR_MASK
+DECL|BWTR_CLEAR_MASK|macro|BWTR_CLEAR_MASK
+DECL|BWTR_CLEAR_MASK|macro|BWTR_CLEAR_MASK
 DECL|BurstAccessMode|member|uint32_t BurstAccessMode; /*!< Enables or disables the burst access mode for Flash memory,
 DECL|BusTurnAroundDuration|member|uint32_t BusTurnAroundDuration; /*!< Defines the number of HCLK cycles to configure
 DECL|CLKDivision|member|uint32_t CLKDivision; /*!< Defines the period of CLK clock output signal, expressed in number of
@@ -125,6 +129,10 @@ DECL|MemoryDataWidth|member|uint32_t MemoryDataWidth; /*!< Specifies the externa
 DECL|MemoryType|member|uint32_t MemoryType; /*!< Specifies the type of external memory attached to
 DECL|NSBank|member|uint32_t NSBank; /*!< Specifies the NORSRAM memory device that will be used.
 DECL|NandBank|member|uint32_t NandBank; /*!< Specifies the NAND memory device that will be used.
+DECL|PATT_CLEAR_MASK|macro|PATT_CLEAR_MASK
+DECL|PCR_CLEAR_MASK|macro|PCR_CLEAR_MASK
+DECL|PIO4_CLEAR_MASK|macro|PIO4_CLEAR_MASK
+DECL|PMEM_CLEAR_MASK|macro|PMEM_CLEAR_MASK
 DECL|SetupTime|member|uint32_t SetupTime; /*!< Defines the number of HCLK cycles to setup address before
 DECL|TARSetupTime|member|uint32_t TARSetupTime; /*!< Defines the number of HCLK cycles to configure the
 DECL|TARSetupTime|member|uint32_t TARSetupTime; /*!< Defines the number of HCLK cycles to configure the

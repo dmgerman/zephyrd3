@@ -10,16 +10,17 @@ DECL|FirstBit|member|uint32_t FirstBit; /*!< Specifies whether data transfers st
 DECL|HAL_SPI_ERROR_CRC|macro|HAL_SPI_ERROR_CRC
 DECL|HAL_SPI_ERROR_DMA|macro|HAL_SPI_ERROR_DMA
 DECL|HAL_SPI_ERROR_FLAG|macro|HAL_SPI_ERROR_FLAG
+DECL|HAL_SPI_ERROR_FRE|macro|HAL_SPI_ERROR_FRE
 DECL|HAL_SPI_ERROR_MODF|macro|HAL_SPI_ERROR_MODF
 DECL|HAL_SPI_ERROR_NONE|macro|HAL_SPI_ERROR_NONE
 DECL|HAL_SPI_ERROR_OVR|macro|HAL_SPI_ERROR_OVR
-DECL|HAL_SPI_STATE_BUSY_RX|enumerator|HAL_SPI_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_SPI_STATE_BUSY_TX_RX|enumerator|HAL_SPI_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission and Reception process is ongoing */
-DECL|HAL_SPI_STATE_BUSY_TX|enumerator|HAL_SPI_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_SPI_STATE_BUSY|enumerator|HAL_SPI_STATE_BUSY = 0x02, /*!< SPI process is ongoing */
-DECL|HAL_SPI_STATE_ERROR|enumerator|HAL_SPI_STATE_ERROR = 0x03 /*!< SPI error state */
-DECL|HAL_SPI_STATE_READY|enumerator|HAL_SPI_STATE_READY = 0x01, /*!< SPI initialized and ready for use */
-DECL|HAL_SPI_STATE_RESET|enumerator|HAL_SPI_STATE_RESET = 0x00, /*!< SPI not yet initialized or disabled */
+DECL|HAL_SPI_STATE_BUSY_RX|enumerator|HAL_SPI_STATE_BUSY_RX = 0x04U, /*!< Data Reception process is ongoing */
+DECL|HAL_SPI_STATE_BUSY_TX_RX|enumerator|HAL_SPI_STATE_BUSY_TX_RX = 0x05U, /*!< Data Transmission and Reception process is ongoing */
+DECL|HAL_SPI_STATE_BUSY_TX|enumerator|HAL_SPI_STATE_BUSY_TX = 0x03U, /*!< Data Transmission process is ongoing */
+DECL|HAL_SPI_STATE_BUSY|enumerator|HAL_SPI_STATE_BUSY = 0x02U, /*!< an internal process is ongoing */
+DECL|HAL_SPI_STATE_ERROR|enumerator|HAL_SPI_STATE_ERROR = 0x06U /*!< SPI error state */
+DECL|HAL_SPI_STATE_READY|enumerator|HAL_SPI_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_SPI_STATE_RESET|enumerator|HAL_SPI_STATE_RESET = 0x00U, /*!< Peripheral not Initialized */
 DECL|HAL_SPI_StateTypeDef|typedef|}HAL_SPI_StateTypeDef;
 DECL|IS_SPI_BAUDRATE_PRESCALER|macro|IS_SPI_BAUDRATE_PRESCALER
 DECL|IS_SPI_CPHA|macro|IS_SPI_CPHA
@@ -29,19 +30,18 @@ DECL|IS_SPI_CRC_POLYNOMIAL|macro|IS_SPI_CRC_POLYNOMIAL
 DECL|IS_SPI_DATASIZE|macro|IS_SPI_DATASIZE
 DECL|IS_SPI_DIRECTION_2LINES_OR_1LINE|macro|IS_SPI_DIRECTION_2LINES_OR_1LINE
 DECL|IS_SPI_DIRECTION_2LINES|macro|IS_SPI_DIRECTION_2LINES
-DECL|IS_SPI_DIRECTION_MODE|macro|IS_SPI_DIRECTION_MODE
+DECL|IS_SPI_DIRECTION|macro|IS_SPI_DIRECTION
 DECL|IS_SPI_FIRST_BIT|macro|IS_SPI_FIRST_BIT
 DECL|IS_SPI_MODE|macro|IS_SPI_MODE
 DECL|IS_SPI_NSS|macro|IS_SPI_NSS
-DECL|IS_SPI_TIMODE|macro|IS_SPI_TIMODE
 DECL|Init|member|SPI_InitTypeDef Init; /*!< SPI communication parameters */
 DECL|Instance|member|SPI_TypeDef *Instance; /*!< SPI registers base address */
-DECL|Lock|member|HAL_LockTypeDef Lock; /*!< SPI locking object */
+DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies the SPI operating mode.
 DECL|NSS|member|uint32_t NSS; /*!< Specifies whether the NSS signal is managed by
 DECL|RxISR|member|void (*RxISR)(struct __SPI_HandleTypeDef * hspi); /*!< function pointer on Rx ISR */
-DECL|RxXferCount|member|uint16_t RxXferCount; /*!< SPI Rx Transfer Counter */
-DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SPI Rx transfer size */
+DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< SPI Rx Transfer Counter */
+DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SPI Rx Transfer size */
 DECL|SPI_1LINE_RX|macro|SPI_1LINE_RX
 DECL|SPI_1LINE_TX|macro|SPI_1LINE_TX
 DECL|SPI_BAUDRATEPRESCALER_128|macro|SPI_BAUDRATEPRESCALER_128
@@ -88,8 +88,8 @@ DECL|SPI_VALID_CRC_ERROR|macro|SPI_VALID_CRC_ERROR
 DECL|State|member|__IO HAL_SPI_StateTypeDef State; /*!< SPI communication state */
 DECL|TIMode|member|uint32_t TIMode; /*!< Specifies if the TI mode is enabled or not.
 DECL|TxISR|member|void (*TxISR)(struct __SPI_HandleTypeDef * hspi); /*!< function pointer on Tx ISR */
-DECL|TxXferCount|member|uint16_t TxXferCount; /*!< SPI Tx Transfer Counter */
-DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SPI Tx transfer size */
+DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< SPI Tx Transfer Counter */
+DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SPI Tx Transfer size */
 DECL|__HAL_SPI_CLEAR_CRCERRFLAG|macro|__HAL_SPI_CLEAR_CRCERRFLAG
 DECL|__HAL_SPI_CLEAR_MODFFLAG|macro|__HAL_SPI_CLEAR_MODFFLAG
 DECL|__HAL_SPI_CLEAR_OVRFLAG|macro|__HAL_SPI_CLEAR_OVRFLAG
@@ -102,7 +102,7 @@ DECL|__HAL_SPI_GET_IT_SOURCE|macro|__HAL_SPI_GET_IT_SOURCE
 DECL|__HAL_SPI_RESET_HANDLE_STATE|macro|__HAL_SPI_RESET_HANDLE_STATE
 DECL|__SPI_HandleTypeDef|struct|typedef struct __SPI_HandleTypeDef
 DECL|__STM32F1xx_HAL_SPI_H|macro|__STM32F1xx_HAL_SPI_H
-DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SPI Rx DMA handle parameters */
-DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SPI Tx DMA handle parameters */
+DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SPI Rx DMA Handle parameters */
+DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SPI Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to SPI Rx transfer Buffer */
 DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to SPI Tx transfer Buffer */
