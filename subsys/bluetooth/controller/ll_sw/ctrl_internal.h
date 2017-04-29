@@ -14,6 +14,11 @@ DECL|LLCP_LENGTH_STATE_REQ|macro|LLCP_LENGTH_STATE_REQ
 DECL|LLCP_LENGTH_STATE_RESIZE|macro|LLCP_LENGTH_STATE_RESIZE
 DECL|LLCP_LENGTH_STATE_RSP_WAIT|macro|LLCP_LENGTH_STATE_RSP_WAIT
 DECL|LLCP_NONE|enumerator|LLCP_NONE,
+DECL|LLCP_PHY_STATE_ACK_WAIT|macro|LLCP_PHY_STATE_ACK_WAIT
+DECL|LLCP_PHY_STATE_REQ|macro|LLCP_PHY_STATE_REQ
+DECL|LLCP_PHY_STATE_RSP_WAIT|macro|LLCP_PHY_STATE_RSP_WAIT
+DECL|LLCP_PHY_STATE_UPD|macro|LLCP_PHY_STATE_UPD
+DECL|LLCP_PHY_UPD|enumerator|LLCP_PHY_UPD,
 DECL|LLCP_PING|enumerator|LLCP_PING,
 DECL|LLCP_VERSION_EXCHANGE|enumerator|LLCP_VERSION_EXCHANGE,
 DECL|LL_MEM_CONN|macro|LL_MEM_CONN
@@ -30,6 +35,7 @@ DECL|PACKET_TX_CTRL_SIZE_MIN|macro|PACKET_TX_CTRL_SIZE_MIN
 DECL|access_addr|member|u8_t access_addr[4];
 DECL|ack|member|u8_t ack;
 DECL|ack|member|u8_t ack;
+DECL|ack|member|u8_t ack;
 DECL|appto_expire|member|u16_t appto_expire;
 DECL|appto_reload|member|u16_t appto_reload;
 DECL|apto_expire|member|u16_t apto_expire;
@@ -38,6 +44,8 @@ DECL|ccm_rx|member|struct ccm ccm_rx;
 DECL|ccm_tx|member|struct ccm ccm_tx;
 DECL|chan_map|member|} chan_map;
 DECL|chm|member|u8_t chm[5];
+DECL|cmd|member|u8_t cmd:1;
+DECL|cmd|member|u8_t cmd:1;
 DECL|company_id|member|u16_t company_id;
 DECL|conn_interval|member|u16_t conn_interval;
 DECL|connect_expire|member|u8_t connect_expire;
@@ -58,12 +66,15 @@ DECL|enc_tx|member|u8_t enc_tx:1;
 DECL|encryption|member|} encryption;
 DECL|error_code|member|u8_t error_code;
 DECL|event_counter|member|u16_t event_counter;
+DECL|flags|member|u8_t flags:1;
 DECL|force|member|u32_t force;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|hdr|member|struct radio_pdu_node_rx_hdr hdr;
 DECL|hdr|member|struct shdr hdr;
+DECL|initiate|member|u8_t initiate:1;
 DECL|initiate|member|u8_t initiate;
+DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
 DECL|interval|member|u16_t interval;
@@ -76,6 +87,7 @@ DECL|latency|member|u16_t latency;
 DECL|llcp_ack|member|u8_t llcp_ack;
 DECL|llcp_features|member|u32_t llcp_features;
 DECL|llcp_length|member|} llcp_length;
+DECL|llcp_phy|member|} llcp_phy;
 DECL|llcp_req|member|u8_t llcp_req;
 DECL|llcp_terminate|member|} llcp_terminate;
 DECL|llcp_type|member|enum llcp llcp_type;
@@ -100,6 +112,13 @@ DECL|pause_rx|member|u8_t pause_rx:1;
 DECL|pause_tx|member|u8_t pause_tx:1;
 DECL|pdu_data_q_tx|struct|struct pdu_data_q_tx {
 DECL|pdu_win_offset|member|u16_t *pdu_win_offset;
+DECL|phy_flags|member|u8_t phy_flags:1;
+DECL|phy_pref_flags|member|u8_t phy_pref_flags:1;
+DECL|phy_pref_rx|member|u8_t phy_pref_rx:3;
+DECL|phy_pref_tx|member|u8_t phy_pref_tx:3;
+DECL|phy_rx|member|u8_t phy_rx:3;
+DECL|phy_tx|member|u8_t phy_tx:3;
+DECL|phy_upd_ind|member|} phy_upd_ind;
 DECL|pkt_tx_ctrl|member|struct radio_pdu_node_tx *pkt_tx_ctrl;
 DECL|pkt_tx_data|member|struct radio_pdu_node_tx *pkt_tx_data;
 DECL|pkt_tx_head|member|struct radio_pdu_node_tx *pkt_tx_head;
@@ -115,6 +134,7 @@ DECL|reason|member|u8_t reason;
 DECL|refresh|member|u8_t refresh:1;
 DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
+DECL|req|member|u8_t req;
 DECL|rfu|member|u8_t rfu:1;
 DECL|role|member|u8_t role:1;
 DECL|role|member|u8_t role:1;
@@ -124,11 +144,14 @@ DECL|rssi_reported|member|u8_t rssi_reported;
 DECL|rssi_sample_count|member|u8_t rssi_sample_count;
 DECL|rx_octets|member|u16_t rx_octets;
 DECL|rx|member|u8_t rx:1;
+DECL|rx|member|u8_t rx:3;
+DECL|rx|member|u8_t rx:3;
 DECL|sca|member|u8_t sca:3;
 DECL|shdr|struct|struct shdr {
 DECL|skd|member|u8_t skd[16];
 DECL|slave|member|} slave;
 DECL|sn|member|u8_t sn:1;
+DECL|state|member|u8_t state:2;
 DECL|state|member|u8_t state:2;
 DECL|state|member|u8_t state:3;
 DECL|sub_version_number|member|u16_t sub_version_number;
@@ -144,6 +167,8 @@ DECL|ticks_xtal_to_start|member|u32_t ticks_xtal_to_start;
 DECL|timeout|member|u16_t timeout;
 DECL|tx_octets|member|u16_t tx_octets;
 DECL|tx|member|u8_t tx:1;
+DECL|tx|member|u8_t tx:3;
+DECL|tx|member|u8_t tx:3;
 DECL|version_number|member|u8_t version_number;
 DECL|win_offset_us|member|u32_t win_offset_us;
 DECL|win_size|member|u8_t win_size;

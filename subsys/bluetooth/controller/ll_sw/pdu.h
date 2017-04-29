@@ -32,7 +32,7 @@ DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_EN
 DECL|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PAUSE_ENC_RSP = 0x0B,
 DECL|PDU_DATA_LLCTRL_TYPE_PHY_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_REQ = 0x16,
 DECL|PDU_DATA_LLCTRL_TYPE_PHY_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_RSP = 0x17,
-DECL|PDU_DATA_LLCTRL_TYPE_PHY_UPDATE_IND|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_UPDATE_IND = 0x18,
+DECL|PDU_DATA_LLCTRL_TYPE_PHY_UPD_IND|enumerator|PDU_DATA_LLCTRL_TYPE_PHY_UPD_IND = 0x18,
 DECL|PDU_DATA_LLCTRL_TYPE_PING_REQ|enumerator|PDU_DATA_LLCTRL_TYPE_PING_REQ = 0x12,
 DECL|PDU_DATA_LLCTRL_TYPE_PING_RSP|enumerator|PDU_DATA_LLCTRL_TYPE_PING_RSP = 0x13,
 DECL|PDU_DATA_LLCTRL_TYPE_REJECT_EXT_IND|enumerator|PDU_DATA_LLCTRL_TYPE_REJECT_EXT_IND = 0x11,
@@ -180,7 +180,7 @@ DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
 DECL|pdu_data_llctrl_length_req_rsp|struct|struct pdu_data_llctrl_length_req_rsp {
 DECL|pdu_data_llctrl_min_used_chans_ind|struct|struct pdu_data_llctrl_min_used_chans_ind {
 DECL|pdu_data_llctrl_phy_req_rsp|struct|struct pdu_data_llctrl_phy_req_rsp {
-DECL|pdu_data_llctrl_phy_update_ind|struct|struct pdu_data_llctrl_phy_update_ind {
+DECL|pdu_data_llctrl_phy_upd_ind|struct|struct pdu_data_llctrl_phy_upd_ind {
 DECL|pdu_data_llctrl_reject_ext_ind|struct|struct pdu_data_llctrl_reject_ext_ind {
 DECL|pdu_data_llctrl_reject_ind|struct|struct pdu_data_llctrl_reject_ind {
 DECL|pdu_data_llctrl_terminate_ind|struct|struct pdu_data_llctrl_terminate_ind {
@@ -192,7 +192,7 @@ DECL|pdu_data_llid|enum|enum pdu_data_llid {
 DECL|pdu_data|struct|struct pdu_data {
 DECL|phy_req|member|struct pdu_data_llctrl_phy_req_rsp phy_req;
 DECL|phy_rsp|member|struct pdu_data_llctrl_phy_req_rsp phy_rsp;
-DECL|phy_update_ind|member|struct pdu_data_llctrl_phy_update_ind phy_update_ind;
+DECL|phy_upd_ind|member|struct pdu_data_llctrl_phy_upd_ind phy_upd_ind;
 DECL|phys|member|u8_t phys;
 DECL|preferred_periodicity|member|u8_t preferred_periodicity;
 DECL|preferred_periodicity|member|u8_t preferred_periodicity;

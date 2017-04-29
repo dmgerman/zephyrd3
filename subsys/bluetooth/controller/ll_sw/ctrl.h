@@ -1,3 +1,4 @@
+DECL|BIT64|macro|BIT64
 DECL|NODE_RX_TYPE_ADV_INDICATION|enumerator|NODE_RX_TYPE_ADV_INDICATION,
 DECL|NODE_RX_TYPE_APTO|enumerator|NODE_RX_TYPE_APTO,
 DECL|NODE_RX_TYPE_CHAN_SEL_ALGO|enumerator|NODE_RX_TYPE_CHAN_SEL_ALGO,
@@ -6,6 +7,7 @@ DECL|NODE_RX_TYPE_CONN_UPDATE|enumerator|NODE_RX_TYPE_CONN_UPDATE,
 DECL|NODE_RX_TYPE_DC_PDU|enumerator|NODE_RX_TYPE_DC_PDU,
 DECL|NODE_RX_TYPE_ENC_REFRESH|enumerator|NODE_RX_TYPE_ENC_REFRESH,
 DECL|NODE_RX_TYPE_NONE|enumerator|NODE_RX_TYPE_NONE,
+DECL|NODE_RX_TYPE_PHY_UPDATE|enumerator|NODE_RX_TYPE_PHY_UPDATE,
 DECL|NODE_RX_TYPE_PROFILE|enumerator|NODE_RX_TYPE_PROFILE,
 DECL|NODE_RX_TYPE_REPORT|enumerator|NODE_RX_TYPE_REPORT,
 DECL|NODE_RX_TYPE_RSSI|enumerator|NODE_RX_TYPE_RSSI,
@@ -19,6 +21,10 @@ DECL|RADIO_BLE_FEAT_BIT_DLE|macro|RADIO_BLE_FEAT_BIT_DLE
 DECL|RADIO_BLE_FEAT_BIT_DLE|macro|RADIO_BLE_FEAT_BIT_DLE
 DECL|RADIO_BLE_FEAT_BIT_MASK_VALID|macro|RADIO_BLE_FEAT_BIT_MASK_VALID
 DECL|RADIO_BLE_FEAT_BIT_MASK|macro|RADIO_BLE_FEAT_BIT_MASK
+DECL|RADIO_BLE_FEAT_BIT_PHY_2M|macro|RADIO_BLE_FEAT_BIT_PHY_2M
+DECL|RADIO_BLE_FEAT_BIT_PHY_2M|macro|RADIO_BLE_FEAT_BIT_PHY_2M
+DECL|RADIO_BLE_FEAT_BIT_PHY_CODED|macro|RADIO_BLE_FEAT_BIT_PHY_CODED
+DECL|RADIO_BLE_FEAT_BIT_PHY_CODED|macro|RADIO_BLE_FEAT_BIT_PHY_CODED
 DECL|RADIO_BLE_FEAT_BIT_PING|macro|RADIO_BLE_FEAT_BIT_PING
 DECL|RADIO_BLE_FEAT_BIT_PING|macro|RADIO_BLE_FEAT_BIT_PING
 DECL|RADIO_BLE_FEAT|macro|RADIO_BLE_FEAT
@@ -72,6 +78,7 @@ DECL|_CTRL_H_|macro|_CTRL_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|chan_sel_algo|member|u8_t chan_sel_algo;
 DECL|data|member|u8_t data[DOUBLE_BUFFER_SIZE][PDU_AC_SIZE_MAX];
 DECL|first|member|u8_t first;
@@ -100,13 +107,17 @@ DECL|radio_adv_data|struct|struct radio_adv_data {
 DECL|radio_le_chan_sel_algo|struct|struct radio_le_chan_sel_algo {
 DECL|radio_le_conn_cmplt|struct|struct radio_le_conn_cmplt {
 DECL|radio_le_conn_update_cmplt|struct|struct radio_le_conn_update_cmplt {
+DECL|radio_le_phy_upd_cmplt|struct|struct radio_le_phy_upd_cmplt {
 DECL|radio_pdu_node_rx_hdr|struct|struct radio_pdu_node_rx_hdr {
 DECL|radio_pdu_node_rx_type|enum|enum radio_pdu_node_rx_type {
 DECL|radio_pdu_node_rx|struct|struct radio_pdu_node_rx {
 DECL|radio_pdu_node_tx|struct|struct radio_pdu_node_tx {
 DECL|role|member|u8_t role;
+DECL|rx|member|u8_t rx;
+DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
+DECL|tx|member|u8_t tx;
 DECL|type|member|enum radio_pdu_node_rx_type type;
