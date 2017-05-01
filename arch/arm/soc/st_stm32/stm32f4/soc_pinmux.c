@@ -1,3 +1,4 @@
+DECL|PAD|macro|PAD
 DECL|pin_pa0_funcs|variable|pin_pa0_funcs
 DECL|pin_pa10_funcs|variable|pin_pa10_funcs
 DECL|pin_pa2_funcs|variable|pin_pa2_funcs
