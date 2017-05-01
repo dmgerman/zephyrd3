@@ -57,3 +57,5 @@ DECL|radio_tx_enable|function|void radio_tx_enable(void)
 DECL|radio_tx_power_set|function|void radio_tx_power_set(u32_t power)
 DECL|radio_whiten_iv_set|function|void radio_whiten_iv_set(u32_t iv)
 DECL|sfp_radio_isr|variable|sfp_radio_isr
+DECL|sw_switch|function|static void sw_switch(u8_t dir)
+DECL|sw_tifs_toggle|variable|sw_tifs_toggle
