@@ -7,5 +7,5 @@ DECL|_STM32F4X_FLASH_MAP_H_|macro|_STM32F4X_FLASH_MAP_H_
 DECL|end|member|const off_t end;
 DECL|start|member|const off_t start;
 DECL|stm32f4x_flash_sector|struct|struct stm32f4x_flash_sector {
-DECL|stm32f4x_get_sector|function|int stm32f4x_get_sector(off_t offset)
+DECL|stm32f4x_get_sector|function|static int stm32f4x_get_sector(off_t offset)
 DECL|stm32f4xx_sectors|variable|stm32f4xx_sectors
