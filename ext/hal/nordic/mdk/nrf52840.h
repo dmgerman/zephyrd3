@@ -1,14 +1,14 @@
-DECL|A0|member|__I uint32_t A0; /*!< Slope definition A0. */
+DECL|A0|member|__I uint32_t A0; /*!< Slope definition A0 */
 DECL|A0|member|__IO uint32_t A0; /*!< Slope of 1st piece wise linear function */
-DECL|A1|member|__I uint32_t A1; /*!< Slope definition A1. */
+DECL|A1|member|__I uint32_t A1; /*!< Slope definition A1 */
 DECL|A1|member|__IO uint32_t A1; /*!< Slope of 2nd piece wise linear function */
-DECL|A2|member|__I uint32_t A2; /*!< Slope definition A2. */
+DECL|A2|member|__I uint32_t A2; /*!< Slope definition A2 */
 DECL|A2|member|__IO uint32_t A2; /*!< Slope of 3rd piece wise linear function */
-DECL|A3|member|__I uint32_t A3; /*!< Slope definition A3. */
+DECL|A3|member|__I uint32_t A3; /*!< Slope definition A3 */
 DECL|A3|member|__IO uint32_t A3; /*!< Slope of 4th piece wise linear function */
-DECL|A4|member|__I uint32_t A4; /*!< Slope definition A4. */
+DECL|A4|member|__I uint32_t A4; /*!< Slope definition A4 */
 DECL|A4|member|__IO uint32_t A4; /*!< Slope of 5th piece wise linear function */
-DECL|A5|member|__I uint32_t A5; /*!< Slope definition A5. */
+DECL|A5|member|__I uint32_t A5; /*!< Slope definition A5 */
 DECL|A5|member|__IO uint32_t A5; /*!< Slope of 6th piece wise linear function */
 DECL|ACCDBLREAD|member|__I uint32_t ACCDBLREAD; /*!< Snapshot of the ACCDBL, updated by the READCLRACC or RDCLRDBL
 DECL|ACCDBL|member|__I uint32_t ACCDBL; /*!< Register accumulating the number of detected double transitions */
@@ -44,17 +44,17 @@ DECL|ANADETECT|member|__IO uint32_t ANADETECT; /*!< Analog detect configuration 
 DECL|APPROTECT|member|__IO uint32_t APPROTECT; /*!< Access port protection */
 DECL|AUTOCOLRESCONFIG|member|__IO uint32_t AUTOCOLRESCONFIG; /*!< Controls the auto collision resolution function. This setting
 DECL|A|member|__IO uint32_t A; /*!< Pin select for A signal */
-DECL|B0|member|__I uint32_t B0; /*!< y-intercept B0. */
+DECL|B0|member|__I uint32_t B0; /*!< Y-intercept B0 */
 DECL|B0|member|__IO uint32_t B0; /*!< y-intercept of 1st piece wise linear function */
-DECL|B1|member|__I uint32_t B1; /*!< y-intercept B1. */
+DECL|B1|member|__I uint32_t B1; /*!< Y-intercept B1 */
 DECL|B1|member|__IO uint32_t B1; /*!< y-intercept of 2nd piece wise linear function */
-DECL|B2|member|__I uint32_t B2; /*!< y-intercept B2. */
+DECL|B2|member|__I uint32_t B2; /*!< Y-intercept B2 */
 DECL|B2|member|__IO uint32_t B2; /*!< y-intercept of 3rd piece wise linear function */
-DECL|B3|member|__I uint32_t B3; /*!< y-intercept B3. */
+DECL|B3|member|__I uint32_t B3; /*!< Y-intercept B3 */
 DECL|B3|member|__IO uint32_t B3; /*!< y-intercept of 4th piece wise linear function */
-DECL|B4|member|__I uint32_t B4; /*!< y-intercept B4. */
+DECL|B4|member|__I uint32_t B4; /*!< Y-intercept B4 */
 DECL|B4|member|__IO uint32_t B4; /*!< y-intercept of 5th piece wise linear function */
-DECL|B5|member|__I uint32_t B5; /*!< y-intercept B5. */
+DECL|B5|member|__I uint32_t B5; /*!< Y-intercept B5 */
 DECL|B5|member|__IO uint32_t B5; /*!< y-intercept of 6th piece wise linear function */
 DECL|BASE0|member|__IO uint32_t BASE0; /*!< Base address 0 */
 DECL|BASE1|member|__IO uint32_t BASE1; /*!< Base address 1 */
@@ -83,7 +83,7 @@ DECL|CINSTRDAT0|member|__IO uint32_t CINSTRDAT0; /*!< Custom instruction data re
 DECL|CINSTRDAT1|member|__IO uint32_t CINSTRDAT1; /*!< Custom instruction data register 1. */
 DECL|CLK|member|__IO uint32_t CLK; /*!< Pin number configuration for PDM CLK signal */
 DECL|CNFPTR|member|__IO uint32_t CNFPTR; /*!< Pointer to data structure holding AES key and NONCE vector */
-DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in sequence
+DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in this
 DECL|CNT|member|__IO uint32_t CNT; /*!< Read transfer length */
 DECL|CNT|member|__IO uint32_t CNT; /*!< Write transfer length */
 DECL|CODEPAGESIZE|member|__I uint32_t CODEPAGESIZE; /*!< Code memory page size */
@@ -183,10 +183,10 @@ DECL|EPOUT|member|__IO uint32_t EPOUT[8]; /*!< Description collection[0]: Amount
 DECL|EPSTALL|member|__O uint32_t EPSTALL; /*!< STALL endpoints */
 DECL|EPSTATUS|member|__IO uint32_t EPSTATUS; /*!< Provides information on which endpoint's EasyDMA registers have
 DECL|ERASEALL|member|__IO uint32_t ERASEALL; /*!< Register for erasing all non-volatile user memory */
-DECL|ERASEPAGE|member|__IO uint32_t ERASEPAGE; /*!< Register for erasing a page in Code area */
-DECL|ERASEPCR0|member|__IO uint32_t ERASEPCR0; /*!< Deprecated register - Register for erasing a page in Code area.
-DECL|ERASEPCR1|member|__IO uint32_t ERASEPCR1; /*!< Deprecated register - Register for erasing a page in Code area.
-DECL|ERASEUICR|member|__IO uint32_t ERASEUICR; /*!< Register for erasing User Information Configuration Registers */
+DECL|ERASEPAGE|member|__IO uint32_t ERASEPAGE; /*!< Register for erasing a page in code area */
+DECL|ERASEPCR0|member|__IO uint32_t ERASEPCR0; /*!< Deprecated register - Register for erasing a page in code area.
+DECL|ERASEPCR1|member|__IO uint32_t ERASEPCR1; /*!< Deprecated register - Register for erasing a page in code area.
+DECL|ERASEUICR|member|__IO uint32_t ERASEUICR; /*!< Register for erasing user information configuration registers */
 DECL|ERASE|member|QSPI_ERASE_Type ERASE; /*!< Unspecified */
 DECL|ERRORSRC|member|__IO uint32_t ERRORSRC; /*!< Error source */
 DECL|ERRORSRC|member|__IO uint32_t ERRORSRC; /*!< Error source */
@@ -394,13 +394,13 @@ DECL|I2S_PSEL_Type|typedef|} I2S_PSEL_Type;
 DECL|I2S_RXD_Type|typedef|} I2S_RXD_Type;
 DECL|I2S_RXTXD_Type|typedef|} I2S_RXTXD_Type;
 DECL|I2S_TXD_Type|typedef|} I2S_TXD_Type;
-DECL|ICACHECNF|member|__IO uint32_t ICACHECNF; /*!< I-Code cache configuration register. */
+DECL|ICACHECNF|member|__IO uint32_t ICACHECNF; /*!< I-code cache configuration register. */
 DECL|IFCONFIG0|member|__IO uint32_t IFCONFIG0; /*!< Interface configuration. */
 DECL|IFCONFIG1|member|__IO uint32_t IFCONFIG1; /*!< Interface configuration. */
 DECL|IFTIMING|member|SPIM_IFTIMING_Type IFTIMING; /*!< Unspecified */
 DECL|IFTIMING|member|__IO uint32_t IFTIMING; /*!< SPI interface timing. */
-DECL|IHIT|member|__IO uint32_t IHIT; /*!< I-Code cache hit counter. */
-DECL|IMISS|member|__IO uint32_t IMISS; /*!< I-Code cache miss counter. */
+DECL|IHIT|member|__IO uint32_t IHIT; /*!< I-code cache hit counter. */
+DECL|IMISS|member|__IO uint32_t IMISS; /*!< I-code cache miss counter. */
 DECL|INFO|member|FICR_INFO_Type INFO; /*!< Device info */
 DECL|INPTR|member|__IO uint32_t INPTR; /*!< Input pointer */
 DECL|INTENCLR|member|__IO uint32_t INTENCLR; /*!< Disable interrupt */
@@ -503,6 +503,7 @@ DECL|LFCLKRUN|member|__I uint32_t LFCLKRUN; /*!< Status indicating that LFCLKSTA
 DECL|LFCLKSRCCOPY|member|__I uint32_t LFCLKSRCCOPY; /*!< Copy of LFCLKSRC register, set when LFCLKSTART task was triggered */
 DECL|LFCLKSRC|member|__IO uint32_t LFCLKSRC; /*!< Clock source for the LFCLK */
 DECL|LFCLKSTAT|member|__I uint32_t LFCLKSTAT; /*!< LFCLK status */
+DECL|LFRCMODE|member|__IO uint32_t LFRCMODE; /*!< LFRC mode configuration */
 DECL|LIMITH|member|__IO uint32_t LIMITH; /*!< Description cluster[0]: Last results is equal or above CH[0].LIMIT.HIGH */
 DECL|LIMITL|member|__IO uint32_t LIMITL; /*!< Description cluster[0]: Last results is equal or below CH[0].LIMIT.LOW */
 DECL|LIMIT|member|__IO uint32_t LIMIT; /*!< Description cluster[0]: High/low limits for event monitoring
@@ -828,7 +829,7 @@ DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of sequence
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of this
 DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RAM address pointer to write samples to with EasyDMA */
@@ -871,7 +872,7 @@ DECL|REGIONENCLR|member|__IO uint32_t REGIONENCLR; /*!< Disable regions watch */
 DECL|REGIONENSET|member|__IO uint32_t REGIONENSET; /*!< Enable regions watch */
 DECL|REGIONEN|member|__IO uint32_t REGIONEN; /*!< Enable/disable regions watch */
 DECL|REGION|member|MWU_REGION_Type REGION[4]; /*!< Unspecified */
-DECL|REGOUT0|member|__IO uint32_t REGOUT0; /*!< GPIO reference voltage / external output supply voltage in 'High
+DECL|REGOUT0|member|__IO uint32_t REGOUT0; /*!< GPIO reference voltage / external output supply voltage in high
 DECL|REPORTPER|member|__IO uint32_t REPORTPER; /*!< Number of samples to be taken before REPORTRDY and DBLRDY events
 DECL|REQSTATUS|member|__I uint32_t REQSTATUS; /*!< Request status */
 DECL|RESERVED0|member|__I uint32_t RESERVED0;
@@ -1171,6 +1172,7 @@ DECL|RESERVED7|member|__I uint32_t RESERVED7[8];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[93];
 DECL|RESERVED8|member|__I uint32_t RESERVED8;
 DECL|RESERVED8|member|__I uint32_t RESERVED8[15];
+DECL|RESERVED8|member|__I uint32_t RESERVED8[21];
 DECL|RESERVED8|member|__I uint32_t RESERVED8[31];
 DECL|RESERVED8|member|__I uint32_t RESERVED8[3];
 DECL|RESERVED8|member|__I uint32_t RESERVED8[45];
@@ -1309,20 +1311,20 @@ DECL|SWI5_EGU5_IRQn|enumerator|SWI5_EGU5_IRQn = 25, /*!< 25 SWI5_EGU5 */
 DECL|SWIDTH|member|__IO uint32_t SWIDTH; /*!< Sample width. */
 DECL|SYSTEMOFF|member|__O uint32_t SYSTEMOFF; /*!< System OFF register */
 DECL|SysTick_IRQn|enumerator|SysTick_IRQn = -1, /*!< 15 System Tick Timer */
-DECL|T0|member|__I uint32_t T0; /*!< Segment end T0. */
+DECL|T0|member|__I uint32_t T0; /*!< Segment end T0 */
 DECL|T0|member|__IO uint32_t T0; /*!< End point of 1st piece wise linear function */
-DECL|T1|member|__I uint32_t T1; /*!< Segment end T1. */
+DECL|T1|member|__I uint32_t T1; /*!< Segment end T1 */
 DECL|T1|member|__IO uint32_t T1; /*!< End point of 2nd piece wise linear function */
-DECL|T2|member|__I uint32_t T2; /*!< Segment end T2. */
+DECL|T2|member|__I uint32_t T2; /*!< Segment end T2 */
 DECL|T2|member|__IO uint32_t T2; /*!< End point of 3rd piece wise linear function */
-DECL|T3|member|__I uint32_t T3; /*!< Segment end T3. */
+DECL|T3|member|__I uint32_t T3; /*!< Segment end T3 */
 DECL|T3|member|__IO uint32_t T3; /*!< End point of 4th piece wise linear function */
-DECL|T4|member|__I uint32_t T4; /*!< Segment end T4. */
+DECL|T4|member|__I uint32_t T4; /*!< Segment end T4 */
 DECL|T4|member|__IO uint32_t T4; /*!< End point of 5th piece wise linear function */
-DECL|TAGHEADER0|member|__I uint32_t TAGHEADER0; /*!< Default header for NFC Tag. Software can read these values to
-DECL|TAGHEADER1|member|__I uint32_t TAGHEADER1; /*!< Default header for NFC Tag. Software can read these values to
-DECL|TAGHEADER2|member|__I uint32_t TAGHEADER2; /*!< Default header for NFC Tag. Software can read these values to
-DECL|TAGHEADER3|member|__I uint32_t TAGHEADER3; /*!< Default header for NFC Tag. Software can read these values to
+DECL|TAGHEADER0|member|__I uint32_t TAGHEADER0; /*!< Default header for NFC tag. Software can read these values to
+DECL|TAGHEADER1|member|__I uint32_t TAGHEADER1; /*!< Default header for NFC tag. Software can read these values to
+DECL|TAGHEADER2|member|__I uint32_t TAGHEADER2; /*!< Default header for NFC tag. Software can read these values to
+DECL|TAGHEADER3|member|__I uint32_t TAGHEADER3; /*!< Default header for NFC tag. Software can read these values to
 DECL|TASKS_ACQUIRE|member|__O uint32_t TASKS_ACQUIRE; /*!< Acquire SPI semaphore */
 DECL|TASKS_ACTIVATE|member|__O uint32_t TASKS_ACTIVATE; /*!< Activate NFCT peripheral for incoming and outgoing frames, change
 DECL|TASKS_ACTIVATE|member|__O uint32_t TASKS_ACTIVATE; /*!< Activate QSPI interface */
@@ -1507,7 +1509,7 @@ DECL|USBPULLUP|member|__IO uint32_t USBPULLUP; /*!< Control of the USB pull-up *
 DECL|USBREGSTATUS|member|__I uint32_t USBREGSTATUS; /*!< USB supply status */
 DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10, /*!< 6 Usage Fault, i.e. Undef Instruction, Illegal State Transition */
 DECL|VALUE|member|__I uint32_t VALUE; /*!< Output random number */
-DECL|VARIANT|member|__I uint32_t VARIANT; /*!< Part variant (hardware version and production configuration). */
+DECL|VARIANT|member|__I uint32_t VARIANT; /*!< Part variant (hardware version and production configuration) */
 DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[0]: Write access to peripheral region 0
 DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[0]: Write access to region 0 detected */
 DECL|WDT_IRQn|enumerator|WDT_IRQn = 16, /*!< 16 WDT */
