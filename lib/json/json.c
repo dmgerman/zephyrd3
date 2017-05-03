@@ -20,7 +20,6 @@ DECL|get_elem_size|function|static ptrdiff_t get_elem_size(const struct json_obj
 DECL|ignore|function|static void ignore(struct lexer *lexer)
 DECL|json_calc_encoded_len|function|ssize_t json_calc_encoded_len(const struct json_obj_descr *descr, size_t descr_len, const void *val)
 DECL|json_calc_escaped_len|function|size_t json_calc_escaped_len(const char *str, size_t len)
-DECL|json_escape_buf|function|static int json_escape_buf(char *str, size_t *len, size_t buf_size)
 DECL|json_escape_internal|function|static int json_escape_internal(const char *str,json_append_bytes_t append_bytes, void *data)
 DECL|json_escape|function|ssize_t json_escape(char *str, size_t *len, size_t buf_size)
 DECL|json_obj_encode_buf|function|int json_obj_encode_buf(const struct json_obj_descr *descr, size_t descr_len,const void *val, char *buffer, size_t buf_size)
