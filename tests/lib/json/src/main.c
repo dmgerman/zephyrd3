@@ -11,6 +11,11 @@ DECL|some_string|member|const char *some_string;
 DECL|test_descr|variable|test_descr
 DECL|test_json_decoding|function|static void test_json_decoding(void)
 DECL|test_json_encoding|function|static void test_json_encoding(void)
+DECL|test_json_escape_bounds_check|function|static void test_json_escape_bounds_check(void)
+DECL|test_json_escape_empty|function|static void test_json_escape_empty(void)
+DECL|test_json_escape_no_op|function|static void test_json_escape_no_op(void)
+DECL|test_json_escape_one|function|static void test_json_escape_one(void)
+DECL|test_json_escape|function|static void test_json_escape(void)
 DECL|test_json_invalid_unicode|function|static void test_json_invalid_unicode(void)
 DECL|test_json_item_wrong_type|function|static void test_json_item_wrong_type(void)
 DECL|test_json_key_not_in_descr|function|static void test_json_key_not_in_descr(void)
