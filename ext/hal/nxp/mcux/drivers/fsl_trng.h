@@ -16,7 +16,7 @@ DECL|kTRNG_RingOscDiv4|enumerator|kTRNG_RingOscDiv4 = 2U, /*!< Ring oscillator d
 DECL|kTRNG_RingOscDiv8|enumerator|kTRNG_RingOscDiv8 = 3U /*!< Ring oscillator divided-by-8. */
 DECL|kTRNG_SampleModeRaw|enumerator|kTRNG_SampleModeRaw = 1U, /*!< Use raw data into both Entropy shifter and Statistical Checker. */
 DECL|kTRNG_SampleModeVonNeumannRaw|enumerator|kTRNG_SampleModeVonNeumannRaw =
-DECL|kTRNG_SampleModeVonNeumann|enumerator|kTRNG_SampleModeVonNeumann = 0U, /*!< Use Von Neumann data into both Entropy shifter and Statistical Checker. */
+DECL|kTRNG_SampleModeVonNeumann|enumerator|kTRNG_SampleModeVonNeumann = 0U, /*!< Use von Neumann data in both Entropy shifter and Statistical Checker. */
 DECL|lock|member|bool lock; /*!< @brief Disable programmability of TRNG registers. */
 DECL|longRunMaxLimit|member|uint8_t longRunMaxLimit; /*!< @brief Largest allowable number of consecutive samples of all 1, or all 0,
 DECL|maximum|member|uint32_t maximum; /*!< Maximum limit.*/

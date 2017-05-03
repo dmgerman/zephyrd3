@@ -5,7 +5,7 @@ DECL|CLOCK_BootToFeiMode|function|status_t CLOCK_BootToFeiMode(mcg_dmx32_t dmx32
 DECL|CLOCK_ClearStatusFlags|function|void CLOCK_ClearStatusFlags(uint32_t mask)
 DECL|CLOCK_DeinitOsc0|function|void CLOCK_DeinitOsc0(void)
 DECL|CLOCK_ExternalModeToFbeModeQuick|function|status_t CLOCK_ExternalModeToFbeModeQuick(void)
-DECL|CLOCK_FllStableDelay|function|static void CLOCK_FllStableDelay(void)
+DECL|CLOCK_FllStableDelay|function|void CLOCK_FllStableDelay(void)
 DECL|CLOCK_GetBusClkFreq|function|uint32_t CLOCK_GetBusClkFreq(void)
 DECL|CLOCK_GetCoreSysClkFreq|function|uint32_t CLOCK_GetCoreSysClkFreq(void)
 DECL|CLOCK_GetEr32kClkFreq|function|uint32_t CLOCK_GetEr32kClkFreq(void)

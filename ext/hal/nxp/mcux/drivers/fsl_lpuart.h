@@ -5,9 +5,11 @@ DECL|LPUART_EnableTxDMA|function|static inline void LPUART_EnableTxDMA(LPUART_Ty
 DECL|LPUART_EnableTx|function|static inline void LPUART_EnableTx(LPUART_Type *base, bool enable)
 DECL|LPUART_GetDataRegisterAddress|function|static inline uint32_t LPUART_GetDataRegisterAddress(LPUART_Type *base)
 DECL|LPUART_ReadByte|function|static inline uint8_t LPUART_ReadByte(LPUART_Type *base)
+DECL|LPUART_SoftwareReset|function|static inline void LPUART_SoftwareReset(LPUART_Type *base)
 DECL|LPUART_WriteByte|function|static inline void LPUART_WriteByte(LPUART_Type *base, uint8_t data)
 DECL|_FSL_LPUART_H_|macro|_FSL_LPUART_H_
 DECL|_lpuart_config|struct|typedef struct _lpuart_config
+DECL|_lpuart_data_bits|enum|typedef enum _lpuart_data_bits
 DECL|_lpuart_flags|enum|enum _lpuart_flags
 DECL|_lpuart_handle|struct|struct _lpuart_handle
 DECL|_lpuart_interrupt_enable|enum|enum _lpuart_interrupt_enable
@@ -17,12 +19,16 @@ DECL|_lpuart_stop_bit_count|enum|typedef enum _lpuart_stop_bit_count
 DECL|_lpuart_transfer|struct|typedef struct _lpuart_transfer
 DECL|baudRate_Bps|member|uint32_t baudRate_Bps; /*!< LPUART baud rate */
 DECL|callback|member|lpuart_transfer_callback_t callback; /*!< Callback function. */
+DECL|dataBitsCount|member|lpuart_data_bits_t dataBitsCount; /*!< Data bits count, eight (default), seven */
 DECL|dataSize|member|size_t dataSize; /*!< The byte count to be transfer. */
 DECL|data|member|uint8_t *data; /*!< The buffer of data to be transfer.*/
 DECL|enableRx|member|bool enableRx; /*!< Enable RX */
 DECL|enableTx|member|bool enableTx; /*!< Enable TX */
+DECL|isMsb|member|bool isMsb; /*!< Data bits order, LSB (default), MSB */
+DECL|isSevenDataBits|member|bool isSevenDataBits; /*!< Seven data bits flag. */
 DECL|kLPUART_DataMatch1Flag|enumerator|kLPUART_DataMatch1Flag = LPUART_STAT_MA1F_MASK, /*!< The next character to be read from LPUART_DATA matches MA1*/
 DECL|kLPUART_DataMatch2Flag|enumerator|kLPUART_DataMatch2Flag = LPUART_STAT_MA2F_MASK, /*!< The next character to be read from LPUART_DATA matches MA2*/
+DECL|kLPUART_EightDataBits|enumerator|kLPUART_EightDataBits = 0x0U, /*!< Eight data bit */
 DECL|kLPUART_FramingErrorFlag|enumerator|kLPUART_FramingErrorFlag =
 DECL|kLPUART_FramingErrorInterruptEnable|enumerator|kLPUART_FramingErrorInterruptEnable = (LPUART_CTRL_FEIE_MASK), /*!< Framing error flag. */
 DECL|kLPUART_IdleLineFlag|enumerator|kLPUART_IdleLineFlag = (LPUART_STAT_IDLE_MASK), /*!< Idle line detect flag, sets when idle line detected */
@@ -49,6 +55,7 @@ DECL|kLPUART_RxFifoUnderflowFlag|enumerator|kLPUART_RxFifoUnderflowFlag =
 DECL|kLPUART_RxFifoUnderflowInterruptEnable|enumerator|kLPUART_RxFifoUnderflowInterruptEnable = (LPUART_FIFO_RXUFE_MASK >> 8), /*!< Receive FIFO Underflow. */
 DECL|kLPUART_RxOverrunFlag|enumerator|kLPUART_RxOverrunFlag = (LPUART_STAT_OR_MASK), /*!< Receive Overrun, sets when new data is received before data is
 DECL|kLPUART_RxOverrunInterruptEnable|enumerator|kLPUART_RxOverrunInterruptEnable = (LPUART_CTRL_ORIE_MASK), /*!< Receiver Overrun. */
+DECL|kLPUART_SevenDataBits|enumerator|kLPUART_SevenDataBits = 0x1U, /*!< Seven data bit */
 DECL|kLPUART_TransmissionCompleteFlag|enumerator|kLPUART_TransmissionCompleteFlag =
 DECL|kLPUART_TransmissionCompleteInterruptEnable|enumerator|kLPUART_TransmissionCompleteInterruptEnable = (LPUART_CTRL_TCIE_MASK), /*!< Transmission complete. */
 DECL|kLPUART_TwoStopBit|enumerator|kLPUART_TwoStopBit = 1U, /*!< Two stop bits */
@@ -57,8 +64,9 @@ DECL|kLPUART_TxDataRegEmptyInterruptEnable|enumerator|kLPUART_TxDataRegEmptyInte
 DECL|kLPUART_TxFifoEmptyFlag|enumerator|kLPUART_TxFifoEmptyFlag = (LPUART_FIFO_TXEMPT_MASK >> 16), /*!< TXEMPT bit, sets if transmit buffer is empty */
 DECL|kLPUART_TxFifoOverflowFlag|enumerator|kLPUART_TxFifoOverflowFlag =
 DECL|kLPUART_TxFifoOverflowInterruptEnable|enumerator|kLPUART_TxFifoOverflowInterruptEnable = (LPUART_FIFO_TXOFE_MASK >> 8), /*!< Transmit FIFO Overflow. */
+DECL|kStatus_LPUART_BaudrateNotSupport|enumerator|kStatus_LPUART_BaudrateNotSupport =
 DECL|kStatus_LPUART_Error|enumerator|kStatus_LPUART_Error = MAKE_STATUS(kStatusGroup_LPUART, 7), /*!< Error happens on LPUART. */
-DECL|kStatus_LPUART_FlagCannotClearManually|enumerator|kStatus_LPUART_FlagCannotClearManually =
+DECL|kStatus_LPUART_FlagCannotClearManually|enumerator|kStatus_LPUART_FlagCannotClearManually = MAKE_STATUS(kStatusGroup_LPUART, 6), /*!< Some flag can't manually clear */
 DECL|kStatus_LPUART_FramingError|enumerator|kStatus_LPUART_FramingError = MAKE_STATUS(kStatusGroup_LPUART, 11), /*!< LPUART framing error. */
 DECL|kStatus_LPUART_NoiseError|enumerator|kStatus_LPUART_NoiseError = MAKE_STATUS(kStatusGroup_LPUART, 10), /*!< LPUART noise error. */
 DECL|kStatus_LPUART_ParityError|enumerator|kStatus_LPUART_ParityError = MAKE_STATUS(kStatusGroup_LPUART, 12), /*!< LPUART parity error. */
@@ -71,6 +79,7 @@ DECL|kStatus_LPUART_TxBusy|enumerator|kStatus_LPUART_TxBusy = MAKE_STATUS(kStatu
 DECL|kStatus_LPUART_TxIdle|enumerator|kStatus_LPUART_TxIdle = MAKE_STATUS(kStatusGroup_LPUART, 2), /*!< LPUART transmitter is idle. */
 DECL|kStatus_LPUART_TxWatermarkTooLarge|enumerator|kStatus_LPUART_TxWatermarkTooLarge = MAKE_STATUS(kStatusGroup_LPUART, 4), /*!< TX FIFO watermark too large */
 DECL|lpuart_config_t|typedef|} lpuart_config_t;
+DECL|lpuart_data_bits_t|typedef|} lpuart_data_bits_t;
 DECL|lpuart_handle_t|typedef|typedef struct _lpuart_handle lpuart_handle_t;
 DECL|lpuart_parity_mode_t|typedef|} lpuart_parity_mode_t;
 DECL|lpuart_stop_bit_count_t|typedef|} lpuart_stop_bit_count_t;
@@ -85,7 +94,7 @@ DECL|rxRingBufferHead|member|volatile uint16_t rxRingBufferHead; /*!< Index for 
 DECL|rxRingBufferSize|member|size_t rxRingBufferSize; /*!< Size of the ring buffer. */
 DECL|rxRingBufferTail|member|volatile uint16_t rxRingBufferTail; /*!< Index for the user to get data from the ring buffer. */
 DECL|rxRingBuffer|member|uint8_t *rxRingBuffer; /*!< Start address of the receiver ring buffer. */
-DECL|rxState|member|volatile uint8_t rxState; /*!< RX transfer state */
+DECL|rxState|member|volatile uint8_t rxState; /*!< RX transfer state. */
 DECL|stopBitCount|member|lpuart_stop_bit_count_t stopBitCount; /*!< Number of stop bits, 1 stop bit (default) or 2 stop bits */
 DECL|txDataSizeAll|member|size_t txDataSizeAll; /*!< Size of the data to send out. */
 DECL|txDataSize|member|volatile size_t txDataSize; /*!< Size of the remaining data to send. */

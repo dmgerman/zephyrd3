@@ -3303,6 +3303,8 @@ DECL|NV_FSEC_SEC_MASK|macro|NV_FSEC_SEC_MASK
 DECL|NV_FSEC_SEC_SHIFT|macro|NV_FSEC_SEC_SHIFT
 DECL|NV_FSEC_SEC|macro|NV_FSEC_SEC
 DECL|NV_Type|typedef|} NV_Type;
+DECL|NXP_FLD2VAL|macro|NXP_FLD2VAL
+DECL|NXP_VAL2FLD|macro|NXP_VAL2FLD
 DECL|NonMaskableInt_IRQn|enumerator|NonMaskableInt_IRQn = -14, /**< Non Maskable Interrupt */
 DECL|NotAvail_IRQn|enumerator|NotAvail_IRQn = -128, /**< Not available device specific interrupt */
 DECL|OC|member|__IO uint8_t OC; /**< CMT Output Control Register, offset: 0x4 */

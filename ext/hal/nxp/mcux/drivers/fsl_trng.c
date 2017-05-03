@@ -172,7 +172,10 @@ DECL|kTRNG_StatisticalCheckRunBit5|enumerator|kTRNG_StatisticalCheckRunBit5, /*!
 DECL|kTRNG_StatisticalCheckRunBit6Plus|enumerator|kTRNG_StatisticalCheckRunBit6Plus, /*!< Statistical check of number of runs of length 6 or more detected during
 DECL|kTRNG_WorkModeProgram|enumerator|kTRNG_WorkModeProgram = 1U /*!< Program Mode. */
 DECL|kTRNG_WorkModeRun|enumerator|kTRNG_WorkModeRun = 0U, /*!< Run Mode. */
+DECL|s_trngBases|variable|s_trngBases
+DECL|s_trngClock|variable|s_trngClock
 DECL|trng_ApplyUserConfig|function|static status_t trng_ApplyUserConfig(TRNG_Type *base, const trng_config_t *userConfig)
+DECL|trng_GetInstance|function|static uint32_t trng_GetInstance(TRNG_Type *base)
 DECL|trng_ReadEntropy|function|static uint32_t trng_ReadEntropy(TRNG_Type *base, uint32_t index)
 DECL|trng_SetRetryCount|function|static status_t trng_SetRetryCount(TRNG_Type *base, uint8_t retry_count)
 DECL|trng_SetStatisticalCheckLimit|function|static status_t trng_SetStatisticalCheckLimit(TRNG_Type *base, trng_statistical_check_t statistical_check, const trng_statistical_check_limit_t *limit)

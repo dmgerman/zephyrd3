@@ -1,4 +1,4 @@
-DECL|DCDC_AdjustTargetVoltage|function|void DCDC_AdjustTargetVoltage(DCDC_Type *base, uint32_t vdd1p45Boost, uint32_t vdd1p45Buck, uint32_t vdd1p8)
+DECL|DCDC_AdjustTargetVoltage|function|void DCDC_AdjustTargetVoltage(DCDC_Type *base, uint32_t vdd1p5xBoost, uint32_t vdd1p5xBuck, uint32_t vdd1p8)
 DECL|DCDC_ClearStatusFlags|function|void DCDC_ClearStatusFlags(DCDC_Type *base, uint32_t mask) /* Clear flags indicated by mask. */
 DECL|DCDC_Deinit|function|void DCDC_Deinit(DCDC_Type *base)
 DECL|DCDC_GetDefaultLoopControlConfig|function|void DCDC_GetDefaultLoopControlConfig(dcdc_loop_control_config_t *config)
