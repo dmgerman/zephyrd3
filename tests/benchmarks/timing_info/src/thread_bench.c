@@ -1,0 +1,32 @@
+DECL|STACK_SIZE|macro|STACK_SIZE
+DECL|__common_var_swap_end_tsc|variable|__common_var_swap_end_tsc
+DECL|__read_swap_end_tsc_value_test|variable|__read_swap_end_tsc_value_test
+DECL|__read_swap_end_tsc_value|variable|__read_swap_end_tsc_value
+DECL|benchmarking_overhead_swap|function|u32_t benchmarking_overhead_swap(void)
+DECL|consumer_tid|variable|consumer_tid
+DECL|dummy_time|variable|dummy_time
+DECL|heap_malloc_free_bench|function|void heap_malloc_free_bench(void)
+DECL|my_stack_area_0|variable|my_stack_area_0
+DECL|my_stack_area|variable|my_stack_area
+DECL|producer_tid|variable|producer_tid
+DECL|read_systick_end_of_isr|function|void read_systick_end_of_isr(void)
+DECL|read_systick_end_of_swap|function|void read_systick_end_of_swap(void)
+DECL|read_systick_end_of_tick_handler|function|void read_systick_end_of_tick_handler(void)
+DECL|read_systick_start_of_isr|function|void read_systick_start_of_isr(void)
+DECL|read_systick_start_of_swap|function|void read_systick_start_of_swap(void)
+DECL|read_systick_start_of_tick_handler|function|void read_systick_start_of_tick_handler(void)
+DECL|sline|variable|sline
+DECL|start_time|variable|start_time
+DECL|system_thread_bench|function|void system_thread_bench(void)
+DECL|test_end_time|variable|test_end_time
+DECL|test_thread_entry|function|void test_thread_entry(void *p, void *p1, void *p2)
+DECL|thread_abort_end_tsc|variable|thread_abort_end_tsc
+DECL|thread_abort_start_tsc|variable|thread_abort_start_tsc
+DECL|thread_resume_end_tsc|variable|thread_resume_end_tsc
+DECL|thread_resume_start_tsc|variable|thread_resume_start_tsc
+DECL|thread_sleep_end_tsc|variable|thread_sleep_end_tsc
+DECL|thread_sleep_start_tsc|variable|thread_sleep_start_tsc
+DECL|thread_suspend_end_tsc|variable|thread_suspend_end_tsc
+DECL|thread_suspend_start_tsc|variable|thread_suspend_start_tsc
+DECL|thread_suspend_test|function|void thread_suspend_test(void *p1, void *p2, void *p3)
+DECL|thread_swap_test|function|void thread_swap_test(void *p1, void *p2, void *p3)

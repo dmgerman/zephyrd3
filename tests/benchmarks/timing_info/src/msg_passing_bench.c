@@ -1,0 +1,48 @@
+DECL|STACK_SIZE|macro|STACK_SIZE
+DECL|__mbox_sync_get_state|variable|__mbox_sync_get_state
+DECL|__mbox_sync_put_state|variable|__mbox_sync_put_state
+DECL|__msg_q_get_state|variable|__msg_q_get_state
+DECL|__msg_q_get_w_cxt_end_tsc|variable|__msg_q_get_w_cxt_end_tsc
+DECL|__msg_q_get_w_cxt_start_tsc|variable|__msg_q_get_w_cxt_start_tsc
+DECL|__msg_q_put_state|variable|__msg_q_put_state
+DECL|__msg_q_put_w_cxt_end_tsc|variable|__msg_q_put_w_cxt_end_tsc
+DECL|__msg_q_put_w_cxt_start_tsc|variable|__msg_q_put_w_cxt_start_tsc
+DECL|__msg_q_put_wo_cxt_end_tsc|variable|__msg_q_put_wo_cxt_end_tsc
+DECL|__msg_q_put_wo_cxt_start_tsc|variable|__msg_q_put_wo_cxt_start_tsc
+DECL|benchmark_mbox|variable|benchmark_mbox
+DECL|consumer_get_w_cxt_switch_tid|variable|consumer_get_w_cxt_switch_tid
+DECL|consumer_tid|variable|consumer_tid
+DECL|data_to_send|variable|data_to_send
+DECL|mbox_async_put_end_tsc|variable|mbox_async_put_end_tsc
+DECL|mbox_async_put_start_tsc|variable|mbox_async_put_start_tsc
+DECL|mbox_get_w_cxt_end_tsc|variable|mbox_get_w_cxt_end_tsc
+DECL|mbox_get_w_cxt_start_tsc|variable|mbox_get_w_cxt_start_tsc
+DECL|mbox_sync_get_end_tsc|variable|mbox_sync_get_end_tsc
+DECL|mbox_sync_get_start_tsc|variable|mbox_sync_get_start_tsc
+DECL|mbox_sync_put_end_tsc|variable|mbox_sync_put_end_tsc
+DECL|mbox_sync_put_start_tsc|variable|mbox_sync_put_start_tsc
+DECL|msg_passing_bench|function|void msg_passing_bench(void)
+DECL|msg_q_get_wo_cxt_end_tsc|variable|msg_q_get_wo_cxt_end_tsc
+DECL|msg_q_get_wo_cxt_start_tsc|variable|msg_q_get_wo_cxt_start_tsc
+DECL|producer_get_w_cxt_switch_tid|variable|producer_get_w_cxt_switch_tid
+DECL|producer_w_cxt_switch_tid|variable|producer_w_cxt_switch_tid
+DECL|producer_wo_cxt_switch_tid|variable|producer_wo_cxt_switch_tid
+DECL|received_data_consumer|variable|received_data_consumer
+DECL|received_data_get|variable|received_data_get
+DECL|thread_consumer_get_msgq_w_cxt_switch|function|void thread_consumer_get_msgq_w_cxt_switch(void *p1, void *p2, void *p3)
+DECL|thread_mbox_async_put_receive_tid|variable|thread_mbox_async_put_receive_tid
+DECL|thread_mbox_async_put_receive|function|void thread_mbox_async_put_receive(void *p1, void *p2, void *p3)
+DECL|thread_mbox_async_put_send_tid|variable|thread_mbox_async_put_send_tid
+DECL|thread_mbox_async_put_send|function|void thread_mbox_async_put_send(void *p1, void *p2, void *p3)
+DECL|thread_mbox_sync_get_receive_tid|variable|thread_mbox_sync_get_receive_tid
+DECL|thread_mbox_sync_get_receive|function|void thread_mbox_sync_get_receive(void *p1, void *p2, void *p3)
+DECL|thread_mbox_sync_get_send_tid|variable|thread_mbox_sync_get_send_tid
+DECL|thread_mbox_sync_get_send|function|void thread_mbox_sync_get_send(void *p1, void *p2, void *p3)
+DECL|thread_mbox_sync_put_receive_tid|variable|thread_mbox_sync_put_receive_tid
+DECL|thread_mbox_sync_put_receive|function|void thread_mbox_sync_put_receive(void *p1, void *p2, void *p3)
+DECL|thread_mbox_sync_put_send_tid|variable|thread_mbox_sync_put_send_tid
+DECL|thread_mbox_sync_put_send|function|void thread_mbox_sync_put_send(void *p1, void *p2, void *p3)
+DECL|thread_producer_get_msgq_w_cxt_switch|function|void thread_producer_get_msgq_w_cxt_switch(void *p1, void *p2, void *p3)
+DECL|thread_producer_msgq_w_cxt_switch|function|void thread_producer_msgq_w_cxt_switch(void *p1, void *p2, void *p3)
+DECL|thread_producer_msgq_wo_cxt_switch|function|void thread_producer_msgq_wo_cxt_switch(void *p1, void *p2, void *p3)
+DECL|time_check|variable|time_check
