@@ -1,5 +1,3 @@
-DECL|FIELD|macro|FIELD
-DECL|FIELD|macro|FIELD
 DECL|nested_bool|member|bool nested_bool;
 DECL|nested_descr|variable|nested_descr
 DECL|nested_int|member|int nested_int;
