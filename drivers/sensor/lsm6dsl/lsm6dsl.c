@@ -1,0 +1,22 @@
+DECL|lsm6dsl_accel_channel_get|function|static int lsm6dsl_accel_channel_get(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_accel_convert|function|static inline void lsm6dsl_accel_convert(struct sensor_value *val, int raw_val, float sensitivity)
+DECL|lsm6dsl_accel_get_channel|function|static inline int lsm6dsl_accel_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data, float sensitivity)
+DECL|lsm6dsl_accel_set_fs_raw|function|static int lsm6dsl_accel_set_fs_raw(struct device *dev, u8_t fs)
+DECL|lsm6dsl_accel_set_odr_raw|function|static int lsm6dsl_accel_set_odr_raw(struct device *dev, u8_t odr)
+DECL|lsm6dsl_api_funcs|variable|lsm6dsl_api_funcs
+DECL|lsm6dsl_channel_get|function|static int lsm6dsl_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
+DECL|lsm6dsl_config|variable|lsm6dsl_config
+DECL|lsm6dsl_data|variable|lsm6dsl_data
+DECL|lsm6dsl_gyro_channel_get_temp|function|static void lsm6dsl_gyro_channel_get_temp(struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_gyro_channel_get|function|static int lsm6dsl_gyro_channel_get(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_gyro_convert|function|static inline void lsm6dsl_gyro_convert(struct sensor_value *val, int raw_val,float sensitivity)
+DECL|lsm6dsl_gyro_get_channel|function|static inline int lsm6dsl_gyro_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data, float sensitivity)
+DECL|lsm6dsl_gyro_set_fs_raw|function|static int lsm6dsl_gyro_set_fs_raw(struct device *dev, u8_t fs)
+DECL|lsm6dsl_gyro_set_odr_raw|function|static int lsm6dsl_gyro_set_odr_raw(struct device *dev, u8_t odr)
+DECL|lsm6dsl_init_chip|function|static int lsm6dsl_init_chip(struct device *dev)
+DECL|lsm6dsl_init|function|static int lsm6dsl_init(struct device *dev)
+DECL|lsm6dsl_reboot|function|static inline int lsm6dsl_reboot(struct device *dev)
+DECL|lsm6dsl_sample_fetch_accel|function|static int lsm6dsl_sample_fetch_accel(struct device *dev)
+DECL|lsm6dsl_sample_fetch_gyro|function|static int lsm6dsl_sample_fetch_gyro(struct device *dev)
+DECL|lsm6dsl_sample_fetch_temp|function|static int lsm6dsl_sample_fetch_temp(struct device *dev)
+DECL|lsm6dsl_sample_fetch|function|static int lsm6dsl_sample_fetch(struct device *dev, enum sensor_channel chan)
