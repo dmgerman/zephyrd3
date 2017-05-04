@@ -44,7 +44,9 @@ DECL|DW_SPI_SR_RFNE_BIT|macro|DW_SPI_SR_RFNE_BIT
 DECL|DW_SPI_SR_TFNF_BIT|macro|DW_SPI_SR_TFNF_BIT
 DECL|DW_SPI_SSIENR_SSIEN_BIT|macro|DW_SPI_SSIENR_SSIEN_BIT
 DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
-DECL|SPI_DFS_TO_BYTES|macro|SPI_DFS_TO_BYTES
+DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
+DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
+DECL|SPI_WS_TO_DFS|macro|SPI_WS_TO_DFS
 DECL|_INT_UNMASK|macro|_INT_UNMASK
 DECL|_INT_UNMASK|macro|_INT_UNMASK
 DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
@@ -65,16 +67,20 @@ DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_unused|member|u32_t _unused:1;
+DECL|_unused|member|u8_t _unused;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
+DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
-DECL|cs_gpio_name|member|char *cs_gpio_name;
-DECL|cs_gpio_pin|member|u32_t cs_gpio_pin;
-DECL|cs_gpio_port|member|struct device *cs_gpio_port;
+DECL|ctx|member|struct spi_context ctx;
+DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dfs|member|u32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
+DECL|dfs|member|u8_t dfs; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|u32_t error:1;
+DECL|error|member|u8_t error;
 DECL|fifo_diff|member|u32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
+DECL|fifo_diff|member|u8_t fifo_diff; /* cannot be bigger than FIFO depth */
 DECL|last_tx|member|u32_t last_tx:1;
 DECL|regs|member|u32_t regs;
 DECL|rx_buf_len|member|u32_t rx_buf_len;
@@ -82,6 +88,7 @@ DECL|rx_buf|member|u8_t *rx_buf;
 DECL|slave|member|u32_t slave:17; /* up 16 slaves */
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
+DECL|spi_dw_data|struct|struct spi_dw_data {
 DECL|spi_dw_data|struct|struct spi_dw_data {
 DECL|tx_buf_len|member|u32_t tx_buf_len;
 DECL|tx_buf|member|const u8_t *tx_buf;
