@@ -1,6 +1,8 @@
 DECL|ADD_FOR_26MHZ|macro|ADD_FOR_26MHZ
+DECL|ADD_FOR_26MHZ|macro|ADD_FOR_26MHZ
 DECL|ANT_LL|enumerator|ANT_LL = 2, /* Must match bit assignment in RADIO1_IRQ_SEL */
 DECL|ANT_MODE|enumerator|ANT_MODE = 2,
+DECL|AUX_PLL_DELAY|macro|AUX_PLL_DELAY
 DECL|AUX_PLL_DELAY|macro|AUX_PLL_DELAY
 DECL|B0|macro|B0
 DECL|B1|macro|B1
@@ -15,20 +17,37 @@ DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
 DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
 DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
 DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
+DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
+DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
+DECL|DATA_PADDING_EN|macro|DATA_PADDING_EN
 DECL|DR_1MBPS|enumerator|DR_1MBPS = 0, /* Must match bit assignment in BITRATE field */
 DECL|DR_250KBPS|enumerator|DR_250KBPS = 2, /* Must match bit assignment in BITRATE field */
+DECL|DR_2MBPS|enumerator|DR_2MBPS = 3, /* Must match bit assignment in BITRATE field */
 DECL|DR_500KBPS|enumerator|DR_500KBPS = 1, /* Must match bit assignment in BITRATE field */
-DECL|DR_UNASSIGNED|enumerator|DR_UNASSIGNED = 3, /* Must match bit assignment in BITRATE field */
+DECL|DR_UNASSIGNED|enumerator|DR_UNASSIGNED = 4, /* Must match bit assignment in BITRATE field */
+DECL|END_OF_RX_WD_26MHZ|macro|END_OF_RX_WD_26MHZ
 DECL|END_OF_RX_WD_26MHZ|macro|END_OF_RX_WD_26MHZ
 DECL|END_OF_RX_WD|macro|END_OF_RX_WD
 DECL|END_OF_RX_WD|macro|END_OF_RX_WD
+DECL|END_OF_RX_WD|macro|END_OF_RX_WD
+DECL|END_OF_RX_WD|macro|END_OF_RX_WD
+DECL|END_OF_RX_WU_26MHZ|macro|END_OF_RX_WU_26MHZ
 DECL|END_OF_RX_WU_26MHZ|macro|END_OF_RX_WU_26MHZ
 DECL|END_OF_RX_WU|macro|END_OF_RX_WU
+DECL|END_OF_RX_WU|macro|END_OF_RX_WU
+DECL|END_OF_SEQinit|macro|END_OF_SEQinit
+DECL|END_OF_SEQinit|macro|END_OF_SEQinit
+DECL|END_OF_TX_WD_NORAMP|macro|END_OF_TX_WD_NORAMP
 DECL|END_OF_TX_WD_NORAMP|macro|END_OF_TX_WD_NORAMP
 DECL|END_OF_TX_WD|macro|END_OF_TX_WD
 DECL|END_OF_TX_WD|macro|END_OF_TX_WD
 DECL|END_OF_TX_WD|macro|END_OF_TX_WD
+DECL|END_OF_TX_WD|macro|END_OF_TX_WD
+DECL|END_OF_TX_WD|macro|END_OF_TX_WD
 DECL|END_OF_TX_WU_NORAMP|macro|END_OF_TX_WU_NORAMP
+DECL|END_OF_TX_WU_NORAMP|macro|END_OF_TX_WU_NORAMP
+DECL|END_OF_TX_WU|macro|END_OF_TX_WU
+DECL|END_OF_TX_WU|macro|END_OF_TX_WU
 DECL|END_OF_TX_WU|macro|END_OF_TX_WU
 DECL|END_OF_TX_WU|macro|END_OF_TX_WU
 DECL|END_OF_TX_WU|macro|END_OF_TX_WU
@@ -50,17 +69,46 @@ DECL|NONE|enumerator|NONE = 0,
 DECL|NO_ERRORS|enumerator|NO_ERRORS = 0,
 DECL|NUM_RADIO_MODES|enumerator|NUM_RADIO_MODES = 10,
 DECL|PA_RAMP_0|macro|PA_RAMP_0
+DECL|PA_RAMP_0|macro|PA_RAMP_0
+DECL|PA_RAMP_10|macro|PA_RAMP_10
+DECL|PA_RAMP_11|macro|PA_RAMP_11
+DECL|PA_RAMP_12|macro|PA_RAMP_12
+DECL|PA_RAMP_13|macro|PA_RAMP_13
+DECL|PA_RAMP_14|macro|PA_RAMP_14
+DECL|PA_RAMP_15|macro|PA_RAMP_15
+DECL|PA_RAMP_1|macro|PA_RAMP_1
 DECL|PA_RAMP_1|macro|PA_RAMP_1
 DECL|PA_RAMP_2|macro|PA_RAMP_2
+DECL|PA_RAMP_2|macro|PA_RAMP_2
+DECL|PA_RAMP_3|macro|PA_RAMP_3
 DECL|PA_RAMP_3|macro|PA_RAMP_3
 DECL|PA_RAMP_4|macro|PA_RAMP_4
+DECL|PA_RAMP_4|macro|PA_RAMP_4
+DECL|PA_RAMP_5|macro|PA_RAMP_5
 DECL|PA_RAMP_5|macro|PA_RAMP_5
 DECL|PA_RAMP_6|macro|PA_RAMP_6
+DECL|PA_RAMP_6|macro|PA_RAMP_6
 DECL|PA_RAMP_7|macro|PA_RAMP_7
+DECL|PA_RAMP_7|macro|PA_RAMP_7
+DECL|PA_RAMP_8|macro|PA_RAMP_8
+DECL|PA_RAMP_9|macro|PA_RAMP_9
+DECL|PA_RAMP_SEL_0US|macro|PA_RAMP_SEL_0US
+DECL|PA_RAMP_SEL_0US|macro|PA_RAMP_SEL_0US
+DECL|PA_RAMP_SEL_1US|macro|PA_RAMP_SEL_1US
+DECL|PA_RAMP_SEL_2US|macro|PA_RAMP_SEL_2US
+DECL|PA_RAMP_SEL_2US|macro|PA_RAMP_SEL_2US
+DECL|PA_RAMP_SEL_4US|macro|PA_RAMP_SEL_4US
+DECL|PA_RAMP_SEL_4US|macro|PA_RAMP_SEL_4US
+DECL|PA_RAMP_SEL_8US|macro|PA_RAMP_SEL_8US
 DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
 DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
 DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
 DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
+DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
+DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
+DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
+DECL|PA_RAMP_SEL|macro|PA_RAMP_SEL
+DECL|PA_RAMP_TIME|macro|PA_RAMP_TIME
 DECL|PA_RAMP_TIME|macro|PA_RAMP_TIME
 DECL|PD_CYCLE_SLIP_TX_HI_ADJ|macro|PD_CYCLE_SLIP_TX_HI_ADJ
 DECL|PD_CYCLE_SLIP_TX_HI_ADJ|macro|PD_CYCLE_SLIP_TX_HI_ADJ
@@ -73,14 +121,135 @@ DECL|PLL_CYCLE_SLIP_FAIL|enumerator|PLL_CYCLE_SLIP_FAIL = 2,
 DECL|PLL_FREQ_TARG_FAIL|enumerator|PLL_FREQ_TARG_FAIL = 4,
 DECL|PLL_TSM_ABORT_FAIL|enumerator|PLL_TSM_ABORT_FAIL = 8,
 DECL|PRESLOW_ENA|macro|PRESLOW_ENA
+DECL|RADIO_IS_GEN_2P0|macro|RADIO_IS_GEN_2P0
 DECL|RW0PS|macro|RW0PS
 DECL|RW1PS|macro|RW1PS
 DECL|RW2PS|macro|RW2PS
 DECL|RX_ON_DELAY_26MHZ|macro|RX_ON_DELAY_26MHZ
 DECL|RX_ON_DELAY|macro|RX_ON_DELAY
 DECL|RX_SYNTH_DELAY|macro|RX_SYNTH_DELAY
+DECL|TBD_ZERO|macro|TBD_ZERO
 DECL|TRIM_BBA_DCOC_DAC_AT_INIT|macro|TRIM_BBA_DCOC_DAC_AT_INIT
+DECL|TSM_TIMING00init|macro|TSM_TIMING00init
+DECL|TSM_TIMING00init|macro|TSM_TIMING00init
+DECL|TSM_TIMING01init|macro|TSM_TIMING01init
+DECL|TSM_TIMING01init|macro|TSM_TIMING01init
+DECL|TSM_TIMING02init|macro|TSM_TIMING02init
+DECL|TSM_TIMING02init|macro|TSM_TIMING02init
+DECL|TSM_TIMING03init|macro|TSM_TIMING03init
+DECL|TSM_TIMING03init|macro|TSM_TIMING03init
+DECL|TSM_TIMING04init|macro|TSM_TIMING04init
+DECL|TSM_TIMING04init|macro|TSM_TIMING04init
+DECL|TSM_TIMING05init|macro|TSM_TIMING05init
+DECL|TSM_TIMING05init|macro|TSM_TIMING05init
+DECL|TSM_TIMING06init|macro|TSM_TIMING06init
+DECL|TSM_TIMING06init|macro|TSM_TIMING06init
+DECL|TSM_TIMING07init|macro|TSM_TIMING07init
+DECL|TSM_TIMING07init|macro|TSM_TIMING07init
+DECL|TSM_TIMING08init|macro|TSM_TIMING08init
+DECL|TSM_TIMING08init|macro|TSM_TIMING08init
+DECL|TSM_TIMING09init|macro|TSM_TIMING09init
+DECL|TSM_TIMING09init|macro|TSM_TIMING09init
+DECL|TSM_TIMING10init|macro|TSM_TIMING10init
+DECL|TSM_TIMING10init|macro|TSM_TIMING10init
+DECL|TSM_TIMING11init|macro|TSM_TIMING11init
+DECL|TSM_TIMING11init|macro|TSM_TIMING11init
+DECL|TSM_TIMING12init|macro|TSM_TIMING12init
+DECL|TSM_TIMING12init|macro|TSM_TIMING12init
+DECL|TSM_TIMING13init|macro|TSM_TIMING13init
+DECL|TSM_TIMING13init|macro|TSM_TIMING13init
+DECL|TSM_TIMING14init|macro|TSM_TIMING14init
+DECL|TSM_TIMING14init|macro|TSM_TIMING14init
+DECL|TSM_TIMING15init|macro|TSM_TIMING15init
+DECL|TSM_TIMING15init|macro|TSM_TIMING15init
+DECL|TSM_TIMING16init|macro|TSM_TIMING16init
+DECL|TSM_TIMING16init|macro|TSM_TIMING16init
+DECL|TSM_TIMING17init|macro|TSM_TIMING17init
+DECL|TSM_TIMING17init|macro|TSM_TIMING17init
+DECL|TSM_TIMING18init|macro|TSM_TIMING18init
+DECL|TSM_TIMING18init|macro|TSM_TIMING18init
+DECL|TSM_TIMING19init|macro|TSM_TIMING19init
+DECL|TSM_TIMING19init|macro|TSM_TIMING19init
+DECL|TSM_TIMING20init|macro|TSM_TIMING20init
+DECL|TSM_TIMING20init|macro|TSM_TIMING20init
+DECL|TSM_TIMING21init|macro|TSM_TIMING21init
+DECL|TSM_TIMING21init|macro|TSM_TIMING21init
+DECL|TSM_TIMING22init|macro|TSM_TIMING22init
+DECL|TSM_TIMING22init|macro|TSM_TIMING22init
+DECL|TSM_TIMING23init|macro|TSM_TIMING23init
+DECL|TSM_TIMING23init|macro|TSM_TIMING23init
+DECL|TSM_TIMING24init|macro|TSM_TIMING24init
+DECL|TSM_TIMING24init|macro|TSM_TIMING24init
+DECL|TSM_TIMING25init|macro|TSM_TIMING25init
+DECL|TSM_TIMING25init|macro|TSM_TIMING25init
+DECL|TSM_TIMING26init|macro|TSM_TIMING26init
+DECL|TSM_TIMING26init|macro|TSM_TIMING26init
+DECL|TSM_TIMING27init|macro|TSM_TIMING27init
+DECL|TSM_TIMING27init|macro|TSM_TIMING27init
+DECL|TSM_TIMING28init|macro|TSM_TIMING28init
+DECL|TSM_TIMING28init|macro|TSM_TIMING28init
+DECL|TSM_TIMING29init|macro|TSM_TIMING29init
+DECL|TSM_TIMING29init|macro|TSM_TIMING29init
+DECL|TSM_TIMING30init|macro|TSM_TIMING30init
+DECL|TSM_TIMING30init|macro|TSM_TIMING30init
+DECL|TSM_TIMING31init|macro|TSM_TIMING31init
+DECL|TSM_TIMING31init|macro|TSM_TIMING31init
+DECL|TSM_TIMING32init|macro|TSM_TIMING32init
+DECL|TSM_TIMING32init|macro|TSM_TIMING32init
+DECL|TSM_TIMING33init|macro|TSM_TIMING33init
+DECL|TSM_TIMING33init|macro|TSM_TIMING33init
+DECL|TSM_TIMING34init|macro|TSM_TIMING34init
+DECL|TSM_TIMING34init|macro|TSM_TIMING34init
+DECL|TSM_TIMING35init|macro|TSM_TIMING35init
+DECL|TSM_TIMING35init|macro|TSM_TIMING35init
+DECL|TSM_TIMING36init|macro|TSM_TIMING36init
+DECL|TSM_TIMING36init|macro|TSM_TIMING36init
+DECL|TSM_TIMING37init|macro|TSM_TIMING37init
+DECL|TSM_TIMING37init|macro|TSM_TIMING37init
+DECL|TSM_TIMING38init|macro|TSM_TIMING38init
+DECL|TSM_TIMING38init|macro|TSM_TIMING38init
+DECL|TSM_TIMING39init|macro|TSM_TIMING39init
+DECL|TSM_TIMING39init|macro|TSM_TIMING39init
+DECL|TSM_TIMING40init|macro|TSM_TIMING40init
+DECL|TSM_TIMING40init|macro|TSM_TIMING40init
+DECL|TSM_TIMING41init|macro|TSM_TIMING41init
+DECL|TSM_TIMING41init|macro|TSM_TIMING41init
+DECL|TSM_TIMING42init|macro|TSM_TIMING42init
+DECL|TSM_TIMING42init|macro|TSM_TIMING42init
+DECL|TSM_TIMING43init|macro|TSM_TIMING43init
+DECL|TSM_TIMING43init|macro|TSM_TIMING43init
+DECL|TSM_TIMING44init|macro|TSM_TIMING44init
+DECL|TSM_TIMING44init|macro|TSM_TIMING44init
+DECL|TSM_TIMING45init|macro|TSM_TIMING45init
+DECL|TSM_TIMING45init|macro|TSM_TIMING45init
+DECL|TSM_TIMING46init|macro|TSM_TIMING46init
+DECL|TSM_TIMING46init|macro|TSM_TIMING46init
+DECL|TSM_TIMING47init|macro|TSM_TIMING47init
+DECL|TSM_TIMING47init|macro|TSM_TIMING47init
+DECL|TSM_TIMING48init|macro|TSM_TIMING48init
+DECL|TSM_TIMING48init|macro|TSM_TIMING48init
+DECL|TSM_TIMING49init|macro|TSM_TIMING49init
+DECL|TSM_TIMING49init|macro|TSM_TIMING49init
+DECL|TSM_TIMING50init|macro|TSM_TIMING50init
+DECL|TSM_TIMING50init|macro|TSM_TIMING50init
+DECL|TSM_TIMING51init|macro|TSM_TIMING51init
+DECL|TSM_TIMING51init|macro|TSM_TIMING51init
+DECL|TSM_TIMING52init|macro|TSM_TIMING52init
+DECL|TSM_TIMING52init|macro|TSM_TIMING52init
+DECL|TSM_TIMING53init|macro|TSM_TIMING53init
+DECL|TSM_TIMING53init|macro|TSM_TIMING53init
+DECL|TSM_TIMING54init|macro|TSM_TIMING54init
+DECL|TSM_TIMING54init|macro|TSM_TIMING54init
+DECL|TSM_TIMING55init|macro|TSM_TIMING55init
+DECL|TSM_TIMING55init|macro|TSM_TIMING55init
+DECL|TSM_TIMING56init|macro|TSM_TIMING56init
+DECL|TSM_TIMING56init|macro|TSM_TIMING56init
+DECL|TSM_TIMING57init|macro|TSM_TIMING57init
+DECL|TSM_TIMING57init|macro|TSM_TIMING57init
+DECL|TSM_TIMING58init|macro|TSM_TIMING58init
+DECL|TSM_TIMING58init|macro|TSM_TIMING58init
 DECL|TX_DIG_EN_ASSERT_MSK500|macro|TX_DIG_EN_ASSERT_MSK500
+DECL|TX_DIG_EN_ASSERT|macro|TX_DIG_EN_ASSERT
 DECL|TX_DIG_EN_ASSERT|macro|TX_DIG_EN_ASSERT
 DECL|TX_DIG_EN_TX_HI_ADJ|macro|TX_DIG_EN_TX_HI_ADJ
 DECL|TX_DIG_EN_TX_HI_ADJ|macro|TX_DIG_EN_TX_HI_ADJ
@@ -89,7 +258,11 @@ DECL|TX_DIG_EN_TX_HI_ADJ|macro|TX_DIG_EN_TX_HI_ADJ
 DECL|TX_ON_DELAY|macro|TX_ON_DELAY
 DECL|TX_RX_ON_DELAY_VAL_26MHZ|macro|TX_RX_ON_DELAY_VAL_26MHZ
 DECL|TX_RX_ON_DELAY_VAL|macro|TX_RX_ON_DELAY_VAL
+DECL|TX_RX_ON_DELinit|macro|TX_RX_ON_DELinit
+DECL|TX_RX_ON_DELinit|macro|TX_RX_ON_DELinit
 DECL|TX_RX_SYNTH_DELAY_VAL|macro|TX_RX_SYNTH_DELAY_VAL
+DECL|TX_RX_SYNTH_init|macro|TX_RX_SYNTH_init
+DECL|TX_RX_SYNTH_init|macro|TX_RX_SYNTH_init
 DECL|TX_SYNTH_DELAY_ADJ|macro|TX_SYNTH_DELAY_ADJ
 DECL|TX_SYNTH_DELAY_ADJ|macro|TX_SYNTH_DELAY_ADJ
 DECL|TX_SYNTH_DELAY_ADJ|macro|TX_SYNTH_DELAY_ADJ
@@ -104,6 +277,7 @@ DECL|XCVR_FIRST_INIT|enumerator|XCVR_FIRST_INIT = 1,
 DECL|XCVR_INIT_MODE_CHG_T|typedef|} XCVR_INIT_MODE_CHG_T;
 DECL|XCVR_MODE_CHANGE|enumerator|XCVR_MODE_CHANGE = 0,
 DECL|XCVR_PANIC_ID_T|typedef|} XCVR_PANIC_ID_T;
+DECL|ZGBE_TX_DIG_EN_ASSERT|macro|ZGBE_TX_DIG_EN_ASSERT
 DECL|ZGBE_TX_DIG_EN_ASSERT|macro|ZGBE_TX_DIG_EN_ASSERT
 DECL|ZGBE_TX_DIG_EN_TX_HI_ADJ|macro|ZGBE_TX_DIG_EN_TX_HI_ADJ
 DECL|ZGBE_TX_DIG_EN_TX_HI_ADJ|macro|ZGBE_TX_DIG_EN_TX_HI_ADJ
@@ -127,10 +301,12 @@ DECL|_xcvr_masked_init_32|struct|typedef struct _xcvr_masked_init_32
 DECL|_xcvr_mode_config|struct|typedef struct _xcvr_mode_config
 DECL|_xcvr_mode_datarate_config|struct|typedef struct _xcvr_mode_datarate_config
 DECL|_xcvr_rx_chf_coeffs|struct|typedef struct _xcvr_rx_chf_coeffs
-DECL|agc_ctrl_0_init|member|uint32_t agc_ctrl_0_init;
+DECL|agc_ctrl_0_init|member|uint32_t agc_ctrl_0_init; /* NOTE: Common init and mode init will be OR'd together for AGC_CTRL_0 to form complete register initialization */
 DECL|agc_ctrl_0_init|member|uint32_t agc_ctrl_0_init; /* NOTE: Common init and mode init will be OR'd together for AGC_CTRL_0 to form complete register initialization */
 DECL|agc_ctrl_1_init_26mhz|member|uint32_t agc_ctrl_1_init_26mhz;
+DECL|agc_ctrl_1_init_26mhz|member|uint32_t agc_ctrl_1_init_26mhz; /* NOTE: This will be OR'd with datarate specific init to form complete register initialization */
 DECL|agc_ctrl_1_init_32mhz|member|uint32_t agc_ctrl_1_init_32mhz;
+DECL|agc_ctrl_1_init_32mhz|member|uint32_t agc_ctrl_1_init_32mhz; /* NOTE: This will be OR'd with datarate specific init to form complete register initialization */
 DECL|agc_ctrl_2_init_26mhz|member|uint32_t agc_ctrl_2_init_26mhz;
 DECL|agc_ctrl_2_init_32mhz|member|uint32_t agc_ctrl_2_init_32mhz;
 DECL|agc_ctrl_3_init|member|uint32_t agc_ctrl_3_init;
@@ -148,6 +324,8 @@ DECL|ana_sy_ctrl2|member|xcvr_masked_init_32_t ana_sy_ctrl2;
 DECL|bba_res_tune_lin_val_10_8_init|member|uint32_t bba_res_tune_lin_val_10_8_init;
 DECL|bba_res_tune_lin_val_3_0_init|member|uint32_t bba_res_tune_lin_val_3_0_init;
 DECL|bba_res_tune_lin_val_7_4_init|member|uint32_t bba_res_tune_lin_val_7_4_init;
+DECL|bba_res_tune_val_10_8|member|uint32_t bba_res_tune_val_10_8;
+DECL|bba_res_tune_val_7_0|member|uint32_t bba_res_tune_val_7_0;
 DECL|cca_ed_lqi_ctrl_0_init|member|uint32_t cca_ed_lqi_ctrl_0_init;
 DECL|cca_ed_lqi_ctrl_1_init|member|uint32_t cca_ed_lqi_ctrl_1_init;
 DECL|data_rate_t|typedef|} data_rate_t;
@@ -158,9 +336,11 @@ DECL|dc_resid_ctrl_26mhz|member|uint32_t dc_resid_ctrl_26mhz;/* NOTE: This will 
 DECL|dc_resid_ctrl_32mhz|member|uint32_t dc_resid_ctrl_32mhz;/* NOTE: This will be OR'd with common init for DCOC_RESID_CTRL to form complete register initialization */
 DECL|dc_resid_ctrl_init|member|uint32_t dc_resid_ctrl_init; /* NOTE: This will be OR'd with datarate specific init for DCOC_RESID_CTRL to form complete register initialization */
 DECL|dcoc_bba_step_init|member|uint32_t dcoc_bba_step_init;
+DECL|dcoc_cal_fail_th_init|member|uint32_t dcoc_cal_fail_th_init;
 DECL|dcoc_cal_gain_init|member|uint32_t dcoc_cal_gain_init;
 DECL|dcoc_cal_iir_init_26mhz|member|uint32_t dcoc_cal_iir_init_26mhz;
 DECL|dcoc_cal_iir_init_32mhz|member|uint32_t dcoc_cal_iir_init_32mhz;
+DECL|dcoc_cal_pass_th_init|member|uint32_t dcoc_cal_pass_th_init;
 DECL|dcoc_cal_rcp_init|member|uint32_t dcoc_cal_rcp_init;
 DECL|dcoc_ctrl_0_init_26mhz|member|uint32_t dcoc_ctrl_0_init_26mhz; /* NOTE: This will be OR'd with common init for DCOC_CTRL_0 to form complete register initialization */
 DECL|dcoc_ctrl_0_init_26mhz|member|uint32_t dcoc_ctrl_0_init_26mhz; /* NOTE: This will be OR'd with mode specific init for DCOC_CTRL_0 to form complete register initialization */
@@ -169,6 +349,8 @@ DECL|dcoc_ctrl_0_init_32mhz|member|uint32_t dcoc_ctrl_0_init_32mhz; /* NOTE: Thi
 DECL|dcoc_ctrl_1_init_26mhz|member|uint32_t dcoc_ctrl_1_init_26mhz; /* NOTE: This will be OR'd with common init for DCOC_CTRL_1 to form complete register initialization */
 DECL|dcoc_ctrl_1_init_32mhz|member|uint32_t dcoc_ctrl_1_init_32mhz; /* NOTE: This will be OR'd with common init for DCOC_CTRL_1 to form complete register initialization */
 DECL|dcoc_ctrl_1_init|member|uint32_t dcoc_ctrl_1_init;
+DECL|dcoc_ctrl_2_init_26mhz|member|uint32_t dcoc_ctrl_2_init_26mhz;
+DECL|dcoc_ctrl_2_init_32mhz|member|uint32_t dcoc_ctrl_2_init_32mhz;
 DECL|dcoc_tza_step_00_init|member|uint32_t dcoc_tza_step_00_init;
 DECL|dcoc_tza_step_01_init|member|uint32_t dcoc_tza_step_01_init;
 DECL|dcoc_tza_step_02_init|member|uint32_t dcoc_tza_step_02_init;
@@ -194,15 +376,26 @@ DECL|lna_gain_lin_val_2_0_init|member|uint32_t lna_gain_lin_val_2_0_init;
 DECL|lna_gain_lin_val_5_3_init|member|uint32_t lna_gain_lin_val_5_3_init;
 DECL|lna_gain_lin_val_8_6_init|member|uint32_t lna_gain_lin_val_8_6_init;
 DECL|lna_gain_lin_val_9_init|member|uint32_t lna_gain_lin_val_9_init;
+DECL|lna_gain_val_3_0|member|uint32_t lna_gain_val_3_0;
+DECL|lna_gain_val_7_4|member|uint32_t lna_gain_val_7_4;
+DECL|lna_gain_val_8|member|uint32_t lna_gain_val_8;
 DECL|lpps_ctrl_init|member|uint32_t lpps_ctrl_init;
 DECL|mask|member|uint32_t mask;
 DECL|pa_ramp_tbl_0_init|member|uint32_t pa_ramp_tbl_0_init;
 DECL|pa_ramp_tbl_1_init|member|uint32_t pa_ramp_tbl_1_init;
+DECL|pa_ramp_tbl_2_init|member|uint32_t pa_ramp_tbl_2_init;
+DECL|pa_ramp_tbl_3_init|member|uint32_t pa_ramp_tbl_3_init;
 DECL|panic_fptr|typedef|typedef void (*panic_fptr)(uint32_t panic_id, uint32_t location, uint32_t extra1, uint32_t extra2);
 DECL|phy_cfg1_init|member|uint32_t phy_cfg1_init;
 DECL|phy_cfg2_init|member|uint32_t phy_cfg2_init;
 DECL|phy_el_cfg_init|member|uint32_t phy_el_cfg_init; /* Note: EL_ENABLE is set in xcvr_mode_config_t settings */
 DECL|phy_el_cfg_init|member|uint32_t phy_el_cfg_init; /* Should leave EL_WIN_SIZE and EL_INTERVAL to the data_rate specific configuration */
+DECL|phy_fad_ctrl|member|uint32_t phy_fad_ctrl;
+DECL|phy_fsk_cfg|member|uint32_t phy_fsk_cfg;
+DECL|phy_fsk_misc_mode_datarate|member|uint32_t phy_fsk_misc_mode_datarate;
+DECL|phy_fsk_misc|member|uint32_t phy_fsk_misc;
+DECL|phy_fsk_pd_cfg0|member|uint32_t phy_fsk_pd_cfg0;
+DECL|phy_fsk_pd_cfg1|member|uint32_t phy_fsk_pd_cfg1;
 DECL|phy_pre_ref0_init|member|uint32_t phy_pre_ref0_init;
 DECL|phy_pre_ref1_init|member|uint32_t phy_pre_ref1_init;
 DECL|phy_pre_ref2_init|member|uint32_t phy_pre_ref2_init;
@@ -226,6 +419,7 @@ DECL|recycle_count_init_32mhz|member|uint32_t recycle_count_init_32mhz;
 DECL|rf_dft_bist_1|member|uint32_t rf_dft_bist_1;
 DECL|rf_dft_bist_2|member|uint32_t rf_dft_bist_2;
 DECL|rssi_ctrl_0_init|member|uint32_t rssi_ctrl_0_init;
+DECL|rssi_ctrl_1_init|member|uint32_t rssi_ctrl_1_init;
 DECL|rx_chf_coef_0|member|uint16_t rx_chf_coef_0; /* < 6 bit two's complement stored in a uint16_t */
 DECL|rx_chf_coef_10|member|uint16_t rx_chf_coef_10; /* < 10 bit two's complement stored in a uint16_t */
 DECL|rx_chf_coef_11|member|uint16_t rx_chf_coef_11; /* < 10 bit two's complement stored in a uint16_t */
