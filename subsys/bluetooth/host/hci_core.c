@@ -27,7 +27,7 @@ DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
 DECL|bt_br_set_connectable|function|int bt_br_set_connectable(bool enable)
 DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_cmd_complete|function|struct net_buf *bt_buf_get_cmd_complete(s32_t timeout)
-DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(s32_t timeout)
+DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(enum bt_buf_type type, s32_t timeout)
 DECL|bt_dev|variable|bt_dev
 DECL|bt_dh_key_gen|function|int bt_dh_key_gen(const u8_t remote_pk[64], bt_dh_key_cb_t cb)
 DECL|bt_enable|function|int bt_enable(bt_ready_cb_t cb)
