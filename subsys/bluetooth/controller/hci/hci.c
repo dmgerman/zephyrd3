@@ -26,7 +26,6 @@ DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf)
 DECL|hci_cmd_handle|function|struct net_buf *hci_cmd_handle(struct net_buf *cmd)
 DECL|hci_evt_encode|function|void hci_evt_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
-DECL|hci_evt_is_discardable|function|bool hci_evt_is_discardable(struct radio_pdu_node_rx *node_rx)
 DECL|hci_get_class|function|s8_t hci_get_class(struct radio_pdu_node_rx *node_rx)
 DECL|hci_hbuf_acked|variable|hci_hbuf_acked
 DECL|hci_hbuf_sent|variable|hci_hbuf_sent
