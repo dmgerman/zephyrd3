@@ -74,7 +74,6 @@ DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
 DECL|ctx|member|struct spi_context ctx;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
-DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dfs|member|u32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|dfs|member|u8_t dfs; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|u32_t error:1;
