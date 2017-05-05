@@ -19,4 +19,4 @@ DECL|spi_dw_data_port_0|variable|spi_dw_data_port_0
 DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)
 DECL|spi_dw_isr|function|void spi_dw_isr(struct device *dev)
-DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct device *dev, struct spi_config *config, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs)
+DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct spi_config *config, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs)
