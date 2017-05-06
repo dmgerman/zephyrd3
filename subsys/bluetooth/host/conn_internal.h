@@ -29,7 +29,7 @@ DECL|dst|member|bt_addr_le_t dst;
 DECL|dst|member|bt_addr_t dst;
 DECL|encrypt|member|u8_t encrypt;
 DECL|err|member|u8_t err;
-DECL|features|member|u8_t features[1][8];
+DECL|features|member|u8_t features[8];
 DECL|features|member|u8_t features[LMP_MAX_PAGES][8];
 DECL|handle|member|u16_t handle;
 DECL|init_addr|member|bt_addr_le_t init_addr;
