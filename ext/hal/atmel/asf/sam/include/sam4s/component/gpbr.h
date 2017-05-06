@@ -1,0 +1,6 @@
+DECL|Gpbr|typedef|} Gpbr;
+DECL|SYS_GPBR_GPBR_VALUE_Msk|macro|SYS_GPBR_GPBR_VALUE_Msk
+DECL|SYS_GPBR_GPBR_VALUE_Pos|macro|SYS_GPBR_GPBR_VALUE_Pos
+DECL|SYS_GPBR_GPBR_VALUE|macro|SYS_GPBR_GPBR_VALUE
+DECL|SYS_GPBR|member|__IO uint32_t SYS_GPBR[8]; /**< \brief (Gpbr Offset: 0x0) General Purpose Backup Register */
+DECL|_SAM4S_GPBR_COMPONENT_|macro|_SAM4S_GPBR_COMPONENT_
