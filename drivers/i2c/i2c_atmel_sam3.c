@@ -6,11 +6,12 @@ DECL|STATE_READY|macro|STATE_READY
 DECL|STATE_RX|macro|STATE_RX
 DECL|STATE_TX|macro|STATE_TX
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|TWI_IRQ_PDC|macro|TWI_IRQ_PDC
 DECL|api_funcs|variable|api_funcs
 DECL|clk_div_calc|function|static u32_t clk_div_calc(struct device *dev)
 DECL|config_func_0|function|static void config_func_0(struct device *dev)
 DECL|config_func_1|function|static void config_func_1(struct device *dev)
-DECL|config_func_t|typedef|typedef void (*config_func_t)(struct device *port);
+DECL|config_func_t|typedef|typedef void (*config_func_t)(struct device *dev);
 DECL|config_func|member|config_func_t config_func;
 DECL|dev_config_0|variable|dev_config_0
 DECL|dev_config_1|variable|dev_config_1
@@ -26,7 +27,7 @@ DECL|i2c_sam3_runtime_configure|function|static int i2c_sam3_runtime_configure(s
 DECL|i2c_sam3_transfer|function|static int i2c_sam3_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t slave_address)
 DECL|msg_read|function|static inline int msg_read(struct device *dev)
 DECL|msg_write|function|static inline int msg_write(struct device *dev)
-DECL|port|member|volatile struct __twi *port;
+DECL|regs|member|Twi *regs;
 DECL|sr_bits_set_wait|function|static inline void sr_bits_set_wait(struct device *dev, u32_t bits)
 DECL|state|member|volatile u32_t state;
 DECL|status_reg_clear|function|static inline void status_reg_clear(struct device *dev)

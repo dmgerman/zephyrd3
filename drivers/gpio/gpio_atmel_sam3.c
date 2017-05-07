@@ -1,6 +1,6 @@
 DECL|_config|function|static void _config(struct device *dev, u32_t mask, int flags)
 DECL|cb|member|sys_slist_t cb;
-DECL|config_func_t|typedef|typedef void (*config_func_t)(struct device *port);
+DECL|config_func_t|typedef|typedef void (*config_func_t)(struct device *dev);
 DECL|config_func|member|config_func_t config_func;
 DECL|gpio_sam3_a_cfg|variable|gpio_sam3_a_cfg
 DECL|gpio_sam3_a_runtime|variable|gpio_sam3_a_runtime
@@ -25,4 +25,4 @@ DECL|gpio_sam3_manage_callback|function|static int gpio_sam3_manage_callback(str
 DECL|gpio_sam3_read|function|static int gpio_sam3_read(struct device *dev, int access_op, u32_t pin, u32_t *value)
 DECL|gpio_sam3_runtime|struct|struct gpio_sam3_runtime {
 DECL|gpio_sam3_write|function|static int gpio_sam3_write(struct device *dev, int access_op, u32_t pin, u32_t value)
-DECL|port|member|volatile struct __pio *port;
+DECL|port|member|Pio *port;

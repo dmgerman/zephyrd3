@@ -1,4 +1,4 @@
-DECL|_get_port|function|static volatile struct __pio *_get_port(u32_t pin)
+DECL|_get_port|function|static Pio *_get_port(u32_t pin)
 DECL|api_funcs|variable|api_funcs
 DECL|pinmux_dev_init|function|static int pinmux_dev_init(struct device *port)
 DECL|pinmux_get|function|static int pinmux_get(struct device *dev, u32_t pin, u32_t *func)
