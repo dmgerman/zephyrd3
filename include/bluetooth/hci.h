@@ -1185,7 +1185,7 @@ DECL|peer_irk|member|u8_t peer_irk[16];
 DECL|peer_rpa|member|bt_addr_t peer_rpa;
 DECL|peer_rpa|member|bt_addr_t peer_rpa;
 DECL|period|member|u16_t period;
-DECL|phy_opts|member|u8_t phy_opts;
+DECL|phy_opts|member|u16_t phy_opts;
 DECL|phys|member|u8_t phys;
 DECL|phys|member|u8_t phys;
 DECL|phy|member|u8_t phy;
