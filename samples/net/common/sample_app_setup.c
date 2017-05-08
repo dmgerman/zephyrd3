@@ -1,6 +1,8 @@
+DECL|LOOP_DEVIDER|macro|LOOP_DEVIDER
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|counter|variable|counter
 DECL|ipv4_addr_add_handler|function|static void ipv4_addr_add_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
 DECL|ipv6_event_handler|function|static void ipv6_event_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
 DECL|laddr|variable|laddr
