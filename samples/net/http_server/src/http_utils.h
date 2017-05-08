@@ -1,2 +1,0 @@
-DECL|RC_STR|macro|RC_STR
-DECL|__HTTP_UTILS_H__|macro|__HTTP_UTILS_H__
