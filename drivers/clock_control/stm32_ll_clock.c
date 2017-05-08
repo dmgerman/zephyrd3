@@ -11,3 +11,4 @@ DECL|stm32_clock_control_get_subsys_rate|function|static int stm32_clock_control
 DECL|stm32_clock_control_init|function|static int stm32_clock_control_init(struct device *dev)
 DECL|stm32_clock_control_off|function|static inline int stm32_clock_control_off(struct device *dev, clock_control_subsys_t sub_system)
 DECL|stm32_clock_control_on|function|static inline int stm32_clock_control_on(struct device *dev, clock_control_subsys_t sub_system)
+DECL|stm32_clock_switch_to_hsi|function|static void stm32_clock_switch_to_hsi(uint32_t ahb_prescaler)
