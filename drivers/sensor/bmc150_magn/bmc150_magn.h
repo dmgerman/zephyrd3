@@ -98,6 +98,7 @@ DECL|sample_y|member|int sample_x, sample_y, sample_z;
 DECL|sample_z|member|int sample_x, sample_y, sample_z;
 DECL|sem|member|struct k_sem sem;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_BMC150_MAGN_TRIGGER_THREAD_STACK];
+DECL|thread|member|struct k_thread thread;
 DECL|tregs|member|struct bmc150_magn_trim_regs tregs;
 DECL|trigger_drdy|member|struct sensor_trigger trigger_drdy;
 DECL|x1|member|s8_t x1;

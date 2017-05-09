@@ -33,4 +33,5 @@ DECL|t1_degc_x8|member|u16_t t1_degc_x8;
 DECL|t1_out|member|s16_t t1_out;
 DECL|t_sample|member|s16_t t_sample;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_HTS221_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;

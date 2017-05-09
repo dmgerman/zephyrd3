@@ -35,5 +35,6 @@ DECL|t_high|member|u16_t t_high;
 DECL|t_low|member|u16_t t_low;
 DECL|t_sample|member|u16_t t_sample;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_SHT3XD_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|trigger|member|struct sensor_trigger trigger;
 DECL|work|member|struct k_work work;

@@ -26,6 +26,7 @@ DECL|hmc5883l_gain|variable|hmc5883l_gain
 DECL|hmc5883l_odr_strings|variable|hmc5883l_odr_strings
 DECL|i2c|member|struct device *i2c;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_HMC5883L_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;
 DECL|x_sample|member|s16_t x_sample;
 DECL|y_sample|member|s16_t y_sample;

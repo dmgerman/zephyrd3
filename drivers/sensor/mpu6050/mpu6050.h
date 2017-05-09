@@ -31,4 +31,5 @@ DECL|mpu6050_data|struct|struct mpu6050_data {
 DECL|mpu6050_gyro_sensitivity_x10|variable|mpu6050_gyro_sensitivity_x10
 DECL|temp|member|s16_t temp;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_MPU6050_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;

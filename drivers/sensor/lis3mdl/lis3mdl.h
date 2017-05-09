@@ -42,6 +42,7 @@ DECL|lis3mdl_odr_bits|variable|lis3mdl_odr_bits
 DECL|lis3mdl_odr_strings|variable|lis3mdl_odr_strings
 DECL|temp_sample|member|s16_t temp_sample;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_LIS3MDL_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;
 DECL|x_sample|member|s16_t x_sample;
 DECL|y_sample|member|s16_t y_sample;

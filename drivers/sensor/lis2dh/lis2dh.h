@@ -120,6 +120,7 @@ DECL|sample|member|union lis2dh_sample sample;
 DECL|scale|member|u16_t scale;
 DECL|status|member|u8_t status;
 DECL|thread_stack|member|char __stack thread_stack[CONFIG_LIS2DH_THREAD_STACK_SIZE];
+DECL|thread|member|struct k_thread thread;
 DECL|trig_flags|member|atomic_t trig_flags;
 DECL|work|member|struct k_work work;
 DECL|xyz|member|s16_t xyz[3];
