@@ -29,3 +29,4 @@ DECL|session|member|struct bt_rfcomm_session *session;
 DECL|state|member|u8_t state;
 DECL|tx_credits|member|struct k_sem tx_credits;
 DECL|tx_queue|member|struct k_fifo tx_queue;
+DECL|tx_thread|member|struct k_thread tx_thread;

@@ -34,6 +34,7 @@ DECL|drv|variable|drv
 DECL|gpio_cb|variable|gpio_cb
 DECL|irq_dev|variable|irq_dev
 DECL|rst_dev|variable|rst_dev
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|rxmsg|variable|rxmsg
 DECL|spi_conf|variable|spi_conf
 DECL|spi_dev|variable|spi_dev

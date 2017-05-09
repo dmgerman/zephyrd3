@@ -33,6 +33,7 @@ DECL|read_header|function|static inline void read_header(void)
 DECL|read_payload|function|static inline void read_payload(void)
 DECL|remaining|member|u16_t remaining;
 DECL|reset_rx|function|static void reset_rx(void)
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|rx_thread|function|static void rx_thread(void *p1, void *p2, void *p3)
 DECL|rx|variable|rx
 DECL|tx|variable|tx

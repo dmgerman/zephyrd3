@@ -68,12 +68,14 @@ DECL|rx_ack|member|u8_t rx_ack;
 DECL|rx_buf|member|struct net_buf *rx_buf;
 DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|rx_state|member|} rx_state;
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|rx_thread|function|static void rx_thread(void)
 DECL|sync_req|variable|sync_req
 DECL|sync_rsp|variable|sync_rsp
 DECL|tx_ack|member|u8_t tx_ack;
 DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|tx_seq|member|u8_t tx_seq;
+DECL|tx_thread_data|variable|tx_thread_data
 DECL|tx_thread|function|static void tx_thread(void)
 DECL|tx_win|member|u8_t tx_win;
 DECL|unack_queue_len|variable|unack_queue_len

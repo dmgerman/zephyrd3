@@ -148,6 +148,7 @@ DECL|reset_pairing|function|static void reset_pairing(struct bt_conn *conn)
 DECL|resolving|member|u8_t resolving;
 DECL|role_change|function|static void role_change(struct net_buf *buf)
 DECL|rpa_timeout|function|static void rpa_timeout(struct k_work *work)
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|send_cmd|function|static void send_cmd(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
@@ -163,6 +164,7 @@ DECL|start_le_scan|function|static int start_le_scan(u8_t scan_type, u16_t inter
 DECL|status|member|u8_t status;
 DECL|synchronous_conn_complete|function|static void synchronous_conn_complete(struct net_buf *buf)
 DECL|sync|member|struct k_sem *sync;
+DECL|tx_thread_data|variable|tx_thread_data
 DECL|type|member|u8_t type;
 DECL|type|member|u8_t type;
 DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)
