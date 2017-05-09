@@ -32,7 +32,7 @@ DECL|net_frag_skip|function|static inline struct net_buf *net_frag_skip(struct n
 DECL|net_pkt_allocs_cb_t|typedef|typedef void (*net_pkt_allocs_cb_t)(struct net_pkt *pkt,
 DECL|net_pkt_appdatalen|function|static inline u16_t net_pkt_appdatalen(struct net_pkt *pkt)
 DECL|net_pkt_appdata|function|static inline u8_t *net_pkt_appdata(struct net_pkt *pkt)
-DECL|net_pkt_append_all|function|static inline bool net_pkt_append_all(struct net_pkt *pkt, u16_t len, const u8_t *data, int32_t timeout)
+DECL|net_pkt_append_all|function|static inline bool net_pkt_append_all(struct net_pkt *pkt, u16_t len, const u8_t *data, s32_t timeout)
 DECL|net_pkt_append_be16|function|static inline bool net_pkt_append_be16(struct net_pkt *pkt, u16_t data)
 DECL|net_pkt_append_be32|function|static inline bool net_pkt_append_be32(struct net_pkt *pkt, u32_t data)
 DECL|net_pkt_append_le32|function|static inline bool net_pkt_append_le32(struct net_pkt *pkt, u32_t data)
