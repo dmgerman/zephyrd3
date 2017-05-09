@@ -44,7 +44,7 @@ DECL|kw41z_set_ieee_addr|function|static int kw41z_set_ieee_addr(struct device *
 DECL|kw41z_set_pan_id|function|static int kw41z_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|kw41z_set_seq_state|function|static inline void kw41z_set_seq_state(u8_t state)
 DECL|kw41z_set_short_addr|function|static int kw41z_set_short_addr(struct device *dev, u16_t short_addr)
-DECL|kw41z_set_txpower|function|static int kw41z_set_txpower(struct device *dev, int16_t dbm)
+DECL|kw41z_set_txpower|function|static int kw41z_set_txpower(struct device *dev, s16_t dbm)
 DECL|kw41z_start|function|static int kw41z_start(struct device *dev)
 DECL|kw41z_stop|function|static int kw41z_stop(struct device *dev)
 DECL|kw41z_tmr1_disable|function|static inline void kw41z_tmr1_disable(void)
