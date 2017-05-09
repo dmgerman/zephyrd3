@@ -17,6 +17,7 @@ DECL|mgmt_pop_event|function|static inline struct mgmt_event_entry *mgmt_pop_eve
 DECL|mgmt_push_event|function|static inline void mgmt_push_event(u32_t mgmt_event, struct net_if *iface)
 DECL|mgmt_rebuild_global_event_mask|function|static inline void mgmt_rebuild_global_event_mask(void)
 DECL|mgmt_run_callbacks|function|static inline void mgmt_run_callbacks(struct mgmt_event_entry *mgmt_event)
+DECL|mgmt_thread_data|variable|mgmt_thread_data
 DECL|mgmt_thread|function|static void mgmt_thread(void)
 DECL|net_mgmt_add_event_callback|function|void net_mgmt_add_event_callback(struct net_mgmt_event_callback *cb)
 DECL|net_mgmt_del_event_callback|function|void net_mgmt_del_event_callback(struct net_mgmt_event_callback *cb)

@@ -13,4 +13,5 @@ DECL|net_send_data|function|int net_send_data(struct net_pkt *pkt)
 DECL|process_data|function|static inline enum net_verdict process_data(struct net_pkt *pkt, bool is_loopback)
 DECL|processing_data|function|static void processing_data(struct net_pkt *pkt, bool is_loopback)
 DECL|rx_queue|variable|rx_queue
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|rx_tid|variable|rx_tid

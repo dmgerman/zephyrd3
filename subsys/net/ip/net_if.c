@@ -89,3 +89,4 @@ DECL|net_if_up|function|int net_if_up(struct net_if *iface)
 DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct k_work *work)
+DECL|tx_thread_data|variable|tx_thread_data
