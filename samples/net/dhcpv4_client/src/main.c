@@ -6,4 +6,5 @@ DECL|handler|function|static void handler(struct net_mgmt_event_callback *cb, u3
 DECL|main_thread|function|static void main_thread(void)
 DECL|main|function|void main(void)
 DECL|mgmt_cb|variable|mgmt_cb
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack

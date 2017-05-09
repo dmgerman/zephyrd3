@@ -28,6 +28,7 @@ DECL|process_request|function|static void process_request(struct net_buf *buf)
 DECL|radio_api|variable|radio_api
 DECL|rx_queue|variable|rx_queue
 DECL|rx_stack|variable|rx_stack
+DECL|rx_thread_data|variable|rx_thread_data
 DECL|rx_thread|function|static void rx_thread(void)
 DECL|send_data|function|static void send_data(u8_t *cfg, u8_t *data, size_t len)
 DECL|send_pkt_report|function|static void send_pkt_report(u8_t seq, u8_t status, u8_t num_tx)
@@ -40,5 +41,6 @@ DECL|slip_state|variable|slip_state
 DECL|tx_queue|variable|tx_queue
 DECL|tx_sem|variable|tx_sem
 DECL|tx_stack|variable|tx_stack
+DECL|tx_thread_data|variable|tx_thread_data
 DECL|tx_thread|function|static void tx_thread(void)
 DECL|uart_dev|variable|uart_dev

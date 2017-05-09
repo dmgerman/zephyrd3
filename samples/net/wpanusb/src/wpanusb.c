@@ -43,6 +43,7 @@ DECL|stop|function|static int stop(void)
 DECL|try_write|function|static int try_write(u8_t ep, u8_t *data, u16_t len)
 DECL|tx_queue|variable|tx_queue
 DECL|tx_stack|variable|tx_stack
+DECL|tx_thread_data|variable|tx_thread_data
 DECL|tx_thread|function|static void tx_thread(void)
 DECL|tx|function|static int tx(struct net_pkt *pkt)
 DECL|usb_status|member|enum usb_dc_status_code usb_status;

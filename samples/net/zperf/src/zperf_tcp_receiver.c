@@ -7,4 +7,5 @@ DECL|tcp_accepted|function|static void tcp_accepted(struct net_context *context,
 DECL|tcp_received|function|static void tcp_received(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|zperf_tcp_receiver_init|function|void zperf_tcp_receiver_init(int port)
 DECL|zperf_tcp_rx_stack|variable|zperf_tcp_rx_stack
+DECL|zperf_tcp_rx_thread_data|variable|zperf_tcp_rx_thread_data
 DECL|zperf_tcp_rx_thread|function|static void zperf_tcp_rx_thread(int port)

@@ -51,3 +51,4 @@ DECL|take|macro|take
 DECL|take|macro|take
 DECL|take|macro|take
 DECL|take|macro|take
+DECL|threads|variable|threads

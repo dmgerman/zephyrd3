@@ -25,4 +25,5 @@ DECL|ssl_setup_failed|enumerator|ssl_setup_failed,
 DECL|ssl_write_failed|enumerator|ssl_write_failed,
 DECL|stack|variable|stack
 DECL|tls_client|function|void tls_client(void)
+DECL|tls_thread|variable|tls_thread
 DECL|x509_crt_parse_failed|enumerator|x509_crt_parse_failed,

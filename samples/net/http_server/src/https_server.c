@@ -8,6 +8,7 @@ DECL|entropy_source|function|static int entropy_source(void *data, unsigned char
 DECL|heap|variable|heap
 DECL|https_server_start|function|void https_server_start(void)
 DECL|https_server|function|void https_server(void)
+DECL|https_thread|variable|https_thread
 DECL|init_app|function|static inline int init_app(void)
 DECL|mbedtls_time_t|macro|mbedtls_time_t
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)

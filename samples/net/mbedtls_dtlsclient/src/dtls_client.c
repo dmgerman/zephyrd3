@@ -8,6 +8,7 @@ DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|connect_failed|enumerator|connect_failed,
 DECL|ctr_drbg_seed_failed|enumerator|ctr_drbg_seed_failed,
 DECL|dtls_client|function|void dtls_client(void)
+DECL|dtls_thread|variable|dtls_thread
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|int dtls_timing_get_delay(void *data)
 DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, u32_t int_ms, u32_t fin_ms)

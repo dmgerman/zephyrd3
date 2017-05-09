@@ -25,6 +25,7 @@ DECL|setup_tcp_accept|function|static void setup_tcp_accept(struct net_context *
 DECL|setup_udp_recv|function|static void setup_udp_recv(struct net_context *udp_recv4, struct net_context *udp_recv6)
 DECL|tcp_accepted|function|static void tcp_accepted(struct net_context *context, struct sockaddr *addr, socklen_t addrlen, int error, void *user_data)
 DECL|tcp_received|function|static void tcp_received(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|tx_tcp_slab|function|static struct k_mem_slab *tx_tcp_slab(void)
 DECL|tx_udp_slab|function|static struct k_mem_slab *tx_udp_slab(void)

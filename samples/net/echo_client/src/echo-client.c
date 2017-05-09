@@ -28,10 +28,14 @@ DECL|in6addr_peer|variable|in6addr_peer
 DECL|init_app|function|static inline void init_app(void)
 DECL|ipsum_len|variable|ipsum_len
 DECL|ipv4_tcp_stack|variable|ipv4_tcp_stack
+DECL|ipv4_tcp_thread_data|variable|ipv4_tcp_thread_data
 DECL|ipv4_udp_stack|variable|ipv4_udp_stack
+DECL|ipv4_udp_thread_data|variable|ipv4_udp_thread_data
 DECL|ipv4|member|struct data ipv4;
 DECL|ipv6_tcp_stack|variable|ipv6_tcp_stack
+DECL|ipv6_tcp_thread_data|variable|ipv6_tcp_thread_data
 DECL|ipv6_udp_stack|variable|ipv6_udp_stack
+DECL|ipv6_udp_thread_data|variable|ipv6_udp_thread_data
 DECL|ipv6|member|struct data ipv6;
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)

@@ -31,3 +31,4 @@ DECL|test_del|function|static int test_del(struct zoap_resource *resource, struc
 DECL|test_path|variable|test_path
 DECL|test_post|function|static int test_post(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|test_put|function|static int test_put(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
+DECL|thread_data|variable|thread_data

@@ -13,4 +13,5 @@ DECL|setup_ipv4|function|static void setup_ipv4(struct net_if *iface)
 DECL|setup_ipv4|macro|setup_ipv4
 DECL|setup_ipv6|function|static void setup_ipv6(struct net_if *iface)
 DECL|setup_ipv6|macro|setup_ipv6
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack

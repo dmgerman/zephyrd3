@@ -28,6 +28,7 @@ DECL|ZIRC_PEER_IP_ADDR|macro|ZIRC_PEER_IP_ADDR
 DECL|ZIRC_PEER_IP_ADDR|macro|ZIRC_PEER_IP_ADDR
 DECL|ZIRC_SOCKADDR_IN|macro|ZIRC_SOCKADDR_IN
 DECL|ZIRC_SOCKADDR_IN|macro|ZIRC_SOCKADDR_IN
+DECL|bot_thread|variable|bot_thread
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
 DECL|cmd_buf|variable|cmd_buf

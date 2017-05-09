@@ -27,3 +27,4 @@ DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_p
 DECL|snapshot|member|u32_t snapshot;
 DECL|stack|variable|stack
 DECL|test_path|variable|test_path
+DECL|thread_data|variable|thread_data

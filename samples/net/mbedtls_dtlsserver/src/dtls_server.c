@@ -4,6 +4,7 @@ DECL|MBEDTLS_EXIT_FAILURE|macro|MBEDTLS_EXIT_FAILURE
 DECL|MBEDTLS_EXIT_SUCCESS|macro|MBEDTLS_EXIT_SUCCESS
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|dtls_server|function|void dtls_server(void)
+DECL|dtls_thread|variable|dtls_thread
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|int dtls_timing_get_delay(void *data)
 DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, u32_t int_ms, u32_t fin_ms)
