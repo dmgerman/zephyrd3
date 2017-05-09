@@ -38,6 +38,7 @@ DECL|is_pkt|member|bool is_pkt;
 DECL|line_alloc|member|u16_t line_alloc;
 DECL|line_free|member|u16_t line_free;
 DECL|net_frag_linear_copy|function|int net_frag_linear_copy(struct net_buf *dst, struct net_buf *src, u16_t offset, u16_t len)
+DECL|net_frag_linearize|function|int net_frag_linearize(u8_t *dst, size_t dst_len, struct net_pkt *src, u16_t offset, u16_t len)
 DECL|net_frag_read_be16|function|struct net_buf *net_frag_read_be16(struct net_buf *frag, u16_t offset, u16_t *pos, u16_t *value)
 DECL|net_frag_read_be32|function|struct net_buf *net_frag_read_be32(struct net_buf *frag, u16_t offset, u16_t *pos, u32_t *value)
 DECL|net_frag_read_byte|function|static inline struct net_buf *net_frag_read_byte(struct net_buf *frag, u16_t offset, u16_t *pos, u8_t *data)
