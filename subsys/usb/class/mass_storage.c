@@ -34,6 +34,7 @@ DECL|mass_storage_class_handle_req|function|static int mass_storage_class_handle
 DECL|mass_storage_config|variable|mass_storage_config
 DECL|mass_storage_init|function|static int mass_storage_init(struct device *dev)
 DECL|mass_storage_status_cb|function|static void mass_storage_status_cb(enum usb_dc_status_code status)
+DECL|mass_thread_data|variable|mass_thread_data
 DECL|mass_thread_main|function|static void mass_thread_main(int arg1, int unused)
 DECL|mass_thread_stack|variable|mass_thread_stack
 DECL|mass_usb_description|variable|mass_usb_description
