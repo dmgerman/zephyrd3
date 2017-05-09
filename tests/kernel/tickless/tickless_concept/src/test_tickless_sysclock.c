@@ -7,6 +7,7 @@ DECL|SLEEP_TICKLESS|macro|SLEEP_TICKLESS
 DECL|SLICE_SIZE|macro|SLICE_SIZE
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|elapsed_slice|variable|elapsed_slice
+DECL|tdata|variable|tdata
 DECL|test_tickless_slice|function|void test_tickless_slice(void)
 DECL|test_tickless_sysclock|function|void test_tickless_sysclock(void)
 DECL|thread_tslice|function|static void thread_tslice(void *p1, void *p2, void *p3)

@@ -52,6 +52,7 @@ DECL|run_net_addr_tests|function|static bool run_net_addr_tests(void)
 DECL|run_tests|function|static bool run_tests(void)
 DECL|test_net_addr|function|static bool test_net_addr(struct net_addr_test_data *data)
 DECL|tests|variable|tests
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|verify|member|struct in6_addr verify;
 DECL|verify|member|struct in_addr verify;

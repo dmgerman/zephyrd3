@@ -6,6 +6,7 @@ DECL|end_sema|variable|end_sema
 DECL|lifo|variable|lifo
 DECL|tIsr_entry|function|static void tIsr_entry(void *p)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_lifo_loop|function|void test_lifo_loop(void)
 DECL|tlifo_get|function|static void tlifo_get(struct k_lifo *plifo)
 DECL|tlifo_put|function|static void tlifo_put(struct k_lifo *plifo)

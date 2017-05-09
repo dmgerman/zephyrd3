@@ -41,6 +41,8 @@ DECL|test_kernel_interrupts|function|static int test_kernel_interrupts(disable_i
 DECL|test_kernel_thread|function|static int test_kernel_thread(k_tid_t task_thread_id)
 DECL|test_thread_sleep|function|static void test_thread_sleep(void *delta, void *arg2, void *arg3)
 DECL|test_timeout|function|static int test_timeout(void)
+DECL|thread_data1|variable|thread_data1
+DECL|thread_data2|variable|thread_data2
 DECL|thread_detected_error|variable|thread_detected_error
 DECL|thread_entry|function|static void thread_entry(void *task_thread_id, void *arg1, void *arg2)
 DECL|thread_evidence|variable|thread_evidence
@@ -51,6 +53,7 @@ DECL|timeout_order_fifo|variable|timeout_order_fifo
 DECL|timeout_order|member|int timeout_order;
 DECL|timeout_order|struct|struct timeout_order {
 DECL|timeout_stacks|variable|timeout_stacks
+DECL|timeout_threads|variable|timeout_threads
 DECL|timeouts|variable|timeouts
 DECL|timeout|member|s32_t timeout;
 DECL|timer|variable|timer

@@ -12,4 +12,5 @@ DECL|Task09|function|void Task09(void)
 DECL|Task11|function|void Task11(void)
 DECL|private_mutex|variable|private_mutex
 DECL|task12_stack_area|variable|task12_stack_area
+DECL|task12_thread_data|variable|task12_thread_data
 DECL|tcRC|variable|tcRC

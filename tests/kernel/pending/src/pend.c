@@ -16,6 +16,7 @@ DECL|coop_high|function|static void coop_high(void *arg1, void *arg2, void *arg3
 DECL|coop_low_state|variable|coop_low_state
 DECL|coop_low|function|static void coop_low(void *arg1, void *arg2, void *arg3)
 DECL|coop_stack|variable|coop_stack
+DECL|coop_thread|variable|coop_thread
 DECL|counter|variable|counter
 DECL|data|member|u32_t data;
 DECL|data|member|u32_t data;

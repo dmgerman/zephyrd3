@@ -6,6 +6,7 @@ DECL|tThread_entry_lock_forever|function|static void tThread_entry_lock_forever(
 DECL|tThread_entry_lock_no_wait|function|static void tThread_entry_lock_no_wait(void *p1, void *p2, void *p3)
 DECL|tThread_entry_lock_timeout_fail|function|static void tThread_entry_lock_timeout_fail(void *p1, void *p2, void *p3)
 DECL|tThread_entry_lock_timeout_pass|function|static void tThread_entry_lock_timeout_pass(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_mutex_lock_unlock|function|void test_mutex_lock_unlock(void)
 DECL|test_mutex_reent_lock_forever|function|void test_mutex_reent_lock_forever(void)
 DECL|test_mutex_reent_lock_no_wait|function|void test_mutex_reent_lock_no_wait(void)

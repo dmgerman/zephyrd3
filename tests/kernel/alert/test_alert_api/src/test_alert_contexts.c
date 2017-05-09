@@ -10,6 +10,7 @@ DECL|isr_alert|function|static void isr_alert(void)
 DECL|palert|variable|palert
 DECL|tIsr_entry|function|static void tIsr_entry(void *p)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_isr_alert_consumed|function|void test_isr_alert_consumed(void)
 DECL|test_isr_alert_default|function|void test_isr_alert_default(void)
 DECL|test_isr_alert_ignore|function|void test_isr_alert_ignore(void)

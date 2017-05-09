@@ -1,5 +1,6 @@
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|execute_flag|variable|execute_flag
+DECL|tdata|variable|tdata
 DECL|test_threads_abort_others|function|void test_threads_abort_others(void)
 DECL|test_threads_abort_self|function|void test_threads_abort_self(void)
 DECL|test_threads_cancel_delayed|function|void test_threads_cancel_delayed(void)

@@ -13,4 +13,5 @@ DECL|net_neighbor_data_remove|function|static void net_neighbor_data_remove(stru
 DECL|net_neighbor_table_clear|function|static void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|remove_count|variable|remove_count
 DECL|run_tests|function|static bool run_tests(void)
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack

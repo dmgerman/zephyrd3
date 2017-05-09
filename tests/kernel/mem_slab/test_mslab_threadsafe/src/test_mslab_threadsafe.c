@@ -11,6 +11,7 @@ DECL|mslab2|variable|mslab2
 DECL|slab_id|variable|slab_id
 DECL|slabs|variable|slabs
 DECL|sync_sema|variable|sync_sema
+DECL|tdata|variable|tdata
 DECL|test_mslab_threadsafe|function|void test_mslab_threadsafe(void)
 DECL|tmslab_api|function|static void tmslab_api(void *p1, void *p2, void *p3)
 DECL|tstack|variable|tstack

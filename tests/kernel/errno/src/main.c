@@ -9,3 +9,4 @@ DECL|q|member|void *q;
 DECL|result|struct|struct result {
 DECL|result|variable|result
 DECL|stacks|variable|stacks
+DECL|threads|variable|threads

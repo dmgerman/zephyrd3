@@ -24,4 +24,5 @@ DECL|throw_sleep|variable|throw_sleep
 DECL|throw_times|variable|throw_times
 DECL|thrower_lock|variable|thrower_lock
 DECL|thrower_stack|variable|thrower_stack
+DECL|thrower_thread_data|variable|thrower_thread_data
 DECL|thrower_thread|function|static void thrower_thread(void)

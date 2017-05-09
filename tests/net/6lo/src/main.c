@@ -71,6 +71,7 @@ DECL|test_data_8|variable|test_data_8
 DECL|test_data_9|variable|test_data_9
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|udp_dst_port_16bit|macro|udp_dst_port_16bit
 DECL|udp_dst_port_4bit|macro|udp_dst_port_4bit

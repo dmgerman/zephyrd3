@@ -17,6 +17,7 @@ DECL|mmsg_type|enum|static enum mmsg_type {
 DECL|receiver_tid|variable|receiver_tid
 DECL|sender_tid|variable|sender_tid
 DECL|sync_sema|variable|sync_sema
+DECL|tdata|variable|tdata
 DECL|test_mbox_async_put_get_block|function|void test_mbox_async_put_get_block(void)
 DECL|test_mbox_async_put_get_buffer|function|void test_mbox_async_put_get_buffer(void)
 DECL|test_mbox_kdefine|function|void test_mbox_kdefine(void)

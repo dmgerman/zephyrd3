@@ -7,6 +7,7 @@ DECL|lifo|variable|lifo
 DECL|tIsr_entry_get|function|static void tIsr_entry_get(void *p)
 DECL|tIsr_entry_put|function|static void tIsr_entry_put(void *p)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_lifo_isr2thread|function|void test_lifo_isr2thread(void)
 DECL|test_lifo_thread2isr|function|void test_lifo_thread2isr(void)
 DECL|test_lifo_thread2thread|function|void test_lifo_thread2thread(void)

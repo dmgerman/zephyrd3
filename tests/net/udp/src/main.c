@@ -41,5 +41,6 @@ DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn,
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|test|member|char *test;
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|ud|struct|struct ud {

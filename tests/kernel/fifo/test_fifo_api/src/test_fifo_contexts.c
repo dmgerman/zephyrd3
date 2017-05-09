@@ -9,6 +9,7 @@ DECL|kfifo|variable|kfifo
 DECL|tIsr_entry_get|function|static void tIsr_entry_get(void *p)
 DECL|tIsr_entry_put|function|static void tIsr_entry_put(void *p)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_fifo_is_empty_isr|function|void test_fifo_is_empty_isr(void)
 DECL|test_fifo_is_empty_thread|function|void test_fifo_is_empty_thread(void)
 DECL|test_fifo_isr2thread|function|void test_fifo_isr2thread(void)

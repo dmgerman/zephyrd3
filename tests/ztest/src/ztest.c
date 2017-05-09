@@ -25,3 +25,4 @@ DECL|test_status|variable|test_status
 DECL|thread_stack|variable|thread_stack
 DECL|ztest_test_fail|function|void ztest_test_fail(void)
 DECL|ztest_test_fail|function|void ztest_test_fail(void)
+DECL|ztest_thread|variable|ztest_thread

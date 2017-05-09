@@ -5,6 +5,7 @@ DECL|THREAD_STACK|macro|THREAD_STACK
 DECL|THREAD_STACK|macro|THREAD_STACK
 DECL|TICKS_PER_MS|macro|TICKS_PER_MS
 DECL|align_to_tick_boundary|function|static void align_to_tick_boundary(void)
+DECL|helper_thread_data|variable|helper_thread_data
 DECL|helper_thread_id|variable|helper_thread_id
 DECL|helper_thread_sem|variable|helper_thread_sem
 DECL|helper_thread_stack|variable|helper_thread_stack
@@ -15,6 +16,7 @@ DECL|sleep_time_valid|function|static int sleep_time_valid(u32_t start, u32_t en
 DECL|task_sem|variable|task_sem
 DECL|test_failure|variable|test_failure
 DECL|test_objects_init|function|static void test_objects_init(void)
+DECL|test_thread_data|variable|test_thread_data
 DECL|test_thread_id|variable|test_thread_id
 DECL|test_thread_sem|variable|test_thread_sem
 DECL|test_thread_stack|variable|test_thread_stack

@@ -9,6 +9,8 @@ DECL|output_file|variable|output_file
 DECL|sz_fail|variable|sz_fail
 DECL|sz_partial|variable|sz_partial
 DECL|sz_success|variable|sz_success
+DECL|thread_data1|variable|thread_data1
+DECL|thread_data2|variable|thread_data2
 DECL|thread_stack1|variable|thread_stack1
 DECL|thread_stack2|variable|thread_stack2
 DECL|tm_off|variable|tm_off

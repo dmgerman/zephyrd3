@@ -15,3 +15,5 @@ DECL|stack2|variable|stack2
 DECL|start_threads|function|static void start_threads(void)
 DECL|test_critical|function|void test_critical(void)
 DECL|test_main|function|void test_main(void)
+DECL|thread1|variable|thread1
+DECL|thread2|variable|thread2

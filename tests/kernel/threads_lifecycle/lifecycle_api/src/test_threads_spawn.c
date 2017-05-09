@@ -1,5 +1,6 @@
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|spawn_prio|variable|spawn_prio
+DECL|tdata|variable|tdata
 DECL|test_threads_spawn_delay|function|void test_threads_spawn_delay(void)
 DECL|test_threads_spawn_params|function|void test_threads_spawn_params(void)
 DECL|test_threads_spawn_priority|function|void test_threads_spawn_priority(void)

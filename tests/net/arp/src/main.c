@@ -25,4 +25,5 @@ DECL|run_tests|function|static bool run_tests(void)
 DECL|send_status|variable|send_status
 DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_pkt *pkt, struct net_eth_addr *hwaddr, u16_t type)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack

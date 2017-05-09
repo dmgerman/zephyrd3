@@ -8,6 +8,8 @@ DECL|dummy_time|variable|dummy_time
 DECL|heap_malloc_free_bench|function|void heap_malloc_free_bench(void)
 DECL|my_stack_area_0|variable|my_stack_area_0
 DECL|my_stack_area|variable|my_stack_area
+DECL|my_thread_0|variable|my_thread_0
+DECL|my_thread|variable|my_thread
 DECL|producer_tid|variable|producer_tid
 DECL|read_systick_end_of_isr|function|void read_systick_end_of_isr(void)
 DECL|read_systick_end_of_swap|function|void read_systick_end_of_swap(void)

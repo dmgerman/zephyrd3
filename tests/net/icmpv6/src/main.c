@@ -8,4 +8,5 @@ DECL|main|function|void main(void)
 DECL|run_tests|function|static bool run_tests(void)
 DECL|test_handler1|variable|test_handler1
 DECL|test_handler2|variable|test_handler2
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack

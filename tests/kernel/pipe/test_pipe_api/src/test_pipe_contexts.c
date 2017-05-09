@@ -6,6 +6,7 @@ DECL|end_sema|variable|end_sema
 DECL|pipe|variable|pipe
 DECL|tThread_block_put|function|static void tThread_block_put(void *p1, void *p2, void *p3)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_pipe_block_put_sema|function|void test_pipe_block_put_sema(void)
 DECL|test_pipe_block_put|function|void test_pipe_block_put(void)
 DECL|test_pipe_get_put|function|void test_pipe_get_put(void)

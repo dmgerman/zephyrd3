@@ -32,6 +32,7 @@ DECL|set_udp_header|function|static void set_udp_header(struct net_pkt *pkt)
 DECL|src_addr|variable|src_addr
 DECL|test_result|function|static void test_result(bool pass)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|type|member|u8_t type;
 DECL|xid|member|u32_t xid;

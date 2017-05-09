@@ -6,6 +6,7 @@ DECL|end_sema|variable|end_sema
 DECL|fifo|variable|fifo
 DECL|tIsr_entry|function|static void tIsr_entry(void *p)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
+DECL|tdata|variable|tdata
 DECL|test_fifo_loop|function|void test_fifo_loop(void)
 DECL|tfifo_get|function|static void tfifo_get(struct k_fifo *pfifo)
 DECL|tfifo_put|function|static void tfifo_put(struct k_fifo *pfifo)

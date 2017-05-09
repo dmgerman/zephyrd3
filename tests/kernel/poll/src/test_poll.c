@@ -4,6 +4,7 @@ DECL|TAG_0|macro|TAG_0
 DECL|TAG_1|macro|TAG_1
 DECL|TAG_2|macro|TAG_2
 DECL|eaddrinuse_hogger_stack|variable|eaddrinuse_hogger_stack
+DECL|eaddrinuse_hogger_thread|variable|eaddrinuse_hogger_thread
 DECL|eaddrinuse_hogger|function|static void eaddrinuse_hogger(void *p1, void *p2, void *p3)
 DECL|eaddrinuse_ready_sem|variable|eaddrinuse_ready_sem
 DECL|eaddrinuse_reply|variable|eaddrinuse_reply
@@ -14,6 +15,7 @@ DECL|no_wait_fifo|variable|no_wait_fifo
 DECL|no_wait_sem|variable|no_wait_sem
 DECL|no_wait_signal|variable|no_wait_signal
 DECL|poll_wait_helper_stack|variable|poll_wait_helper_stack
+DECL|poll_wait_helper_thread|variable|poll_wait_helper_thread
 DECL|poll_wait_helper|function|static void poll_wait_helper(void *use_fifo, void *p2, void *p3)
 DECL|private|member|void *private;
 DECL|test_poll_eaddrinuse|function|void test_poll_eaddrinuse(void)

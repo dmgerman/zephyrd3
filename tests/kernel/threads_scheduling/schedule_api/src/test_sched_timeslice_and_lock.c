@@ -15,3 +15,4 @@ DECL|test_unlock_preemptible|function|void test_unlock_preemptible(void)
 DECL|test_yield_cooperative|function|void test_yield_cooperative(void)
 DECL|thread_entry|function|static void thread_entry(void *p1, void *p2, void *p3)
 DECL|tstack|variable|tstack
+DECL|tthread|variable|tthread

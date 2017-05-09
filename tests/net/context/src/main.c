@@ -75,6 +75,7 @@ DECL|test_init|function|static bool test_init(void)
 DECL|test_token|variable|test_token
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
+DECL|thread_data|variable|thread_data
 DECL|thread_stack|variable|thread_stack
 DECL|timeout_thread|function|void timeout_thread(struct net_context *ctx, sa_family_t *family)
 DECL|timeout_token|variable|timeout_token
