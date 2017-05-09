@@ -38,6 +38,7 @@ DECL|SAI_FillFifo|function|static void SAI_FillFifo(SAI_HandleTypeDef *hsai)
 DECL|SAI_InitI2S|function|static HAL_StatusTypeDef SAI_InitI2S(SAI_HandleTypeDef *hsai, uint32_t protocol, uint32_t datasize, uint32_t nbslot)
 DECL|SAI_InitPCM|function|static HAL_StatusTypeDef SAI_InitPCM(SAI_HandleTypeDef *hsai, uint32_t protocol, uint32_t datasize, uint32_t nbslot)
 DECL|SAI_InterruptFlag|function|static uint32_t SAI_InterruptFlag(SAI_HandleTypeDef *hsai, uint32_t mode)
+DECL|SAI_LONG_TIMEOUT|macro|SAI_LONG_TIMEOUT
 DECL|SAI_MODE_DMA|enumerator|SAI_MODE_DMA,
 DECL|SAI_MODE_IT|enumerator|SAI_MODE_IT
 DECL|SAI_ModeTypedef|typedef|}SAI_ModeTypedef;

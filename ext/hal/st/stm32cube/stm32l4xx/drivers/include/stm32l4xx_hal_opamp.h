@@ -17,7 +17,6 @@ DECL|IS_OPAMP_POWERMODE|macro|IS_OPAMP_POWERMODE
 DECL|IS_OPAMP_POWER_SUPPLY_RANGE|macro|IS_OPAMP_POWER_SUPPLY_RANGE
 DECL|IS_OPAMP_TRIMMINGVALUE|macro|IS_OPAMP_TRIMMINGVALUE
 DECL|IS_OPAMP_TRIMMING|macro|IS_OPAMP_TRIMMING
-DECL|IS_OPAMP_TRIMMING|macro|IS_OPAMP_TRIMMING
 DECL|Init|member|OPAMP_InitTypeDef Init; /*!< OPAMP required parameters */
 DECL|Instance|member|OPAMP_TypeDef *Instance; /*!< OPAMP instance's registers base address */
 DECL|InvertingInput|member|uint32_t InvertingInput; /*!< Specifies the inverting input in Standalone & PGA modes

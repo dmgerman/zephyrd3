@@ -59,6 +59,7 @@ DECL|LL_PWR_GPIO_E|macro|LL_PWR_GPIO_E
 DECL|LL_PWR_GPIO_F|macro|LL_PWR_GPIO_F
 DECL|LL_PWR_GPIO_G|macro|LL_PWR_GPIO_G
 DECL|LL_PWR_GPIO_H|macro|LL_PWR_GPIO_H
+DECL|LL_PWR_GPIO_I|macro|LL_PWR_GPIO_I
 DECL|LL_PWR_GetBattChargResistor|function|__STATIC_INLINE uint32_t LL_PWR_GetBattChargResistor(void)
 DECL|LL_PWR_GetPVDLevel|function|__STATIC_INLINE uint32_t LL_PWR_GetPVDLevel(void)
 DECL|LL_PWR_GetPowerMode|function|__STATIC_INLINE uint32_t LL_PWR_GetPowerMode(void)
@@ -72,7 +73,8 @@ DECL|LL_PWR_IsActiveFlag_PVMO4|function|__STATIC_INLINE uint32_t LL_PWR_IsActive
 DECL|LL_PWR_IsActiveFlag_REGLPF|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_REGLPF(void)
 DECL|LL_PWR_IsActiveFlag_REGLPS|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_REGLPS(void)
 DECL|LL_PWR_IsActiveFlag_SB|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_SB(void)
-DECL|LL_PWR_IsActiveFlag_VOSF|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_VOSF(void)
+DECL|LL_PWR_IsActiveFlag_VOSF|macro|LL_PWR_IsActiveFlag_VOSF
+DECL|LL_PWR_IsActiveFlag_VOS|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_VOS(void)
 DECL|LL_PWR_IsActiveFlag_WU1|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_WU1(void)
 DECL|LL_PWR_IsActiveFlag_WU2|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_WU2(void)
 DECL|LL_PWR_IsActiveFlag_WU3|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_WU3(void)

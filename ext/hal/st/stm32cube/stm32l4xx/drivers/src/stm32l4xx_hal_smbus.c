@@ -1,4 +1,6 @@
 DECL|HAL_SMBUS_AddrCallback|function|__weak void HAL_SMBUS_AddrCallback(SMBUS_HandleTypeDef *hsmbus, uint8_t TransferDirection, uint16_t AddrMatchCode)
+DECL|HAL_SMBUS_ConfigAnalogFilter|function|HAL_StatusTypeDef HAL_SMBUS_ConfigAnalogFilter(SMBUS_HandleTypeDef *hsmbus, uint32_t AnalogFilter)
+DECL|HAL_SMBUS_ConfigDigitalFilter|function|HAL_StatusTypeDef HAL_SMBUS_ConfigDigitalFilter(SMBUS_HandleTypeDef *hsmbus, uint32_t DigitalFilter)
 DECL|HAL_SMBUS_DeInit|function|HAL_StatusTypeDef HAL_SMBUS_DeInit(SMBUS_HandleTypeDef *hsmbus)
 DECL|HAL_SMBUS_DisableAlert_IT|function|HAL_StatusTypeDef HAL_SMBUS_DisableAlert_IT(SMBUS_HandleTypeDef *hsmbus)
 DECL|HAL_SMBUS_DisableListen_IT|function|HAL_StatusTypeDef HAL_SMBUS_DisableListen_IT(SMBUS_HandleTypeDef *hsmbus)

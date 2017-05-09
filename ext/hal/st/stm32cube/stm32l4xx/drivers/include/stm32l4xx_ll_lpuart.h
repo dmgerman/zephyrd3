@@ -211,9 +211,6 @@ DECL|LL_LPUART_WriteReg|macro|LL_LPUART_WriteReg
 DECL|LPUART_BRR_MASK|macro|LPUART_BRR_MASK
 DECL|LPUART_BRR_MIN_VALUE|macro|LPUART_BRR_MIN_VALUE
 DECL|LPUART_LPUARTDIV_FREQ_MUL|macro|LPUART_LPUARTDIV_FREQ_MUL
-DECL|LPUART_POSITION_CR1_DEAT|macro|LPUART_POSITION_CR1_DEAT
-DECL|LPUART_POSITION_CR1_DEDT|macro|LPUART_POSITION_CR1_DEDT
-DECL|LPUART_POSITION_CR2_ADD|macro|LPUART_POSITION_CR2_ADD
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
 DECL|TransferDirection|member|uint32_t TransferDirection; /*!< Specifies whether the Receive and/or Transmit mode is enabled or disabled.
