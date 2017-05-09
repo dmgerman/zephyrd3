@@ -19,6 +19,7 @@ DECL|gtpe|member|u32_t gtpe;
 DECL|int_regs|member|} int_regs;
 DECL|poll_timer|member|struct k_timer poll_timer;
 DECL|polling_stack|member|char __stack polling_stack[GPIO_SCH_POLLING_STACK_SIZE];
+DECL|polling_thread|member|struct k_thread polling_thread;
 DECL|poll|member|u8_t poll;
 DECL|regs|member|u32_t regs;
 DECL|stride|member|u8_t stride[3];
