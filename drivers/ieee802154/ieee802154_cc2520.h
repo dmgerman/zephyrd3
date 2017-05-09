@@ -13,6 +13,7 @@ DECL|_cc2520_command_strobe|function|static inline bool _cc2520_command_strobe(s
 DECL|access_lock|member|struct k_sem access_lock;
 DECL|cc2520_context|struct|struct cc2520_context {
 DECL|cc2520_rx_stack|member|char __stack cc2520_rx_stack[CONFIG_IEEE802154_CC2520_RX_STACK_SIZE];
+DECL|cc2520_rx_thread|member|struct k_thread cc2520_rx_thread;
 DECL|cc2520_spi|struct|struct cc2520_spi {
 DECL|cmd_buf|member|u8_t cmd_buf[12];
 DECL|dev|member|struct device *dev;
