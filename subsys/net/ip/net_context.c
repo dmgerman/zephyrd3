@@ -38,7 +38,7 @@ DECL|packet_received|function|static enum net_verdict packet_received(struct net
 DECL|pkt_get_sockaddr|function|static void pkt_get_sockaddr(sa_family_t family, struct net_pkt *pkt, struct sockaddr_ptr *addr)
 DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, s32_t timeout, void *user_data)
-DECL|send_ack|function|static inline int send_ack(struct net_context *context, struct sockaddr *remote)
+DECL|send_ack|function|static int send_ack(struct net_context *context, struct sockaddr *remote, bool force)
 DECL|send_control_segment|function|static inline int send_control_segment(struct net_context *context, const struct sockaddr_ptr *local, const struct sockaddr *remote, int flags, const char *msg)
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token,
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
