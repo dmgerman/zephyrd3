@@ -18,6 +18,7 @@ DECL|spi_context_lock|function|static inline void spi_context_lock(struct spi_co
 DECL|spi_context_release|function|static inline void spi_context_release(struct spi_context *ctx, int status)
 DECL|spi_context_rx_on|function|bool spi_context_rx_on(struct spi_context *ctx)
 DECL|spi_context_tx_on|function|bool spi_context_tx_on(struct spi_context *ctx)
+DECL|spi_context_unlock_unconditionally|function|static inline void spi_context_unlock_unconditionally(struct spi_context *ctx)
 DECL|spi_context_update_rx|function|void spi_context_update_rx(struct spi_context *ctx, uint8_t dfs)
 DECL|spi_context_update_tx|function|void spi_context_update_tx(struct spi_context *ctx, uint8_t dfs)
 DECL|spi_context_wait_for_completion|function|static inline void spi_context_wait_for_completion(struct spi_context *ctx)
