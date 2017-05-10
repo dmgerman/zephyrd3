@@ -1,4 +1,5 @@
 DECL|NUM_TIMEOUTS|macro|NUM_TIMEOUTS
+DECL|STACKSIZE|macro|STACKSIZE
 DECL|cur|variable|cur
 DECL|results|variable|results
 DECL|sem|variable|sem
