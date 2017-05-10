@@ -35,6 +35,7 @@ DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp
 DECL|net_tcp_state_str|function|const char * const net_tcp_state_str(enum net_tcp_state state)
 DECL|net_tcp_trace|function|static void net_tcp_trace(struct net_pkt *pkt, struct net_tcp *tcp)
 DECL|net_tcp_trace|macro|net_tcp_trace
+DECL|net_tcp_validate_seq|function|bool net_tcp_validate_seq(struct net_tcp *tcp, struct net_pkt *pkt)
 DECL|options|member|void *options;
 DECL|optlen|member|u8_t optlen;
 DECL|prepare_segment|function|static struct net_pkt *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt)
