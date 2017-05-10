@@ -20,8 +20,6 @@ DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_di
 DECL|bt_addr_le_create_nrpa|function|int bt_addr_le_create_nrpa(bt_addr_le_t *addr)
 DECL|bt_addr_le_create_static|function|int bt_addr_le_create_static(bt_addr_le_t *addr)
 DECL|bt_addr_le_is_bonded|function|bool bt_addr_le_is_bonded(const bt_addr_le_t *addr)
-DECL|bt_addr_le_str|function|const char *bt_addr_le_str(const bt_addr_le_t *addr)
-DECL|bt_addr_str|function|const char *bt_addr_str(const bt_addr_t *addr)
 DECL|bt_br_discovery_start|function|int bt_br_discovery_start(const struct bt_br_discovery_param *param, struct bt_br_discovery_result *results, size_t cnt, bt_br_discovery_cb_t cb)
 DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
