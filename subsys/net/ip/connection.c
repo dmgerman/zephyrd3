@@ -25,6 +25,7 @@ DECL|conn_cache|variable|conn_cache
 DECL|conn_hash_neg|struct|struct conn_hash_neg {
 DECL|conn_hash|struct|struct conn_hash {
 DECL|conns|variable|conns
+DECL|find_conn_handler|function|static int find_conn_handler(enum net_ip_protocol proto, const struct sockaddr *remote_addr, const struct sockaddr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|get_conn|function|static inline s32_t get_conn(enum net_ip_protocol proto, sa_family_t family, struct net_pkt *pkt, u32_t *cache_value)
 DECL|idx|member|s32_t idx;
 DECL|ipv4_to_hash|function|static inline u16_t ipv4_to_hash(struct in_addr *addr)
