@@ -39,6 +39,7 @@ DECL|net_pkt_append_le32|function|static inline bool net_pkt_append_le32(struct 
 DECL|net_pkt_append_u8|function|static inline bool net_pkt_append_u8(struct net_pkt *pkt, u8_t data)
 DECL|net_pkt_context|function|static inline struct net_context *net_pkt_context(struct net_pkt *pkt)
 DECL|net_pkt_copy_all|function|static inline struct net_buf *net_pkt_copy_all(struct net_pkt *pkt, size_t reserve, s32_t timeout)
+DECL|net_pkt_eof|function|static inline u8_t net_pkt_eof(struct net_pkt *pkt)
 DECL|net_pkt_family|function|static inline u8_t net_pkt_family(struct net_pkt *pkt)
 DECL|net_pkt_forwarding|function|static inline bool net_pkt_forwarding(struct net_pkt *pkt)
 DECL|net_pkt_forwarding|function|static inline bool net_pkt_forwarding(struct net_pkt *pkt)
@@ -89,6 +90,7 @@ DECL|net_pkt_sent|function|static inline u8_t net_pkt_sent(struct net_pkt *pkt)
 DECL|net_pkt_set_appdatalen|function|static inline void net_pkt_set_appdatalen(struct net_pkt *pkt, u16_t len)
 DECL|net_pkt_set_appdata|function|static inline void net_pkt_set_appdata(struct net_pkt *pkt, u8_t *data)
 DECL|net_pkt_set_context|function|static inline void net_pkt_set_context(struct net_pkt *pkt,struct net_context *ctx)
+DECL|net_pkt_set_eof|function|static inline void net_pkt_set_eof(struct net_pkt *pkt, bool eof)
 DECL|net_pkt_set_family|function|static inline void net_pkt_set_family(struct net_pkt *pkt, u8_t family)
 DECL|net_pkt_set_forwarding|function|static inline void net_pkt_set_forwarding(struct net_pkt *pkt, bool forward)
 DECL|net_pkt_set_ieee802154_rssi|function|static inline void net_pkt_set_ieee802154_rssi(struct net_pkt *pkt,u8_t rssi)
@@ -118,6 +120,6 @@ DECL|net_pkt|struct|struct net_pkt {
 DECL|next_hdr|member|u8_t *next_hdr; /* where is the next header */
 DECL|ref|member|u8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;
-DECL|sent|member|u8_t sent : 1; /* Is this sent or not
+DECL|sent_or_eof|member|u8_t sent_or_eof: 1; /* For outgoing packet: is this sent or not
 DECL|slab|member|struct k_mem_slab *slab;
 DECL|token|member|void *token;

@@ -13,6 +13,7 @@ DECL|NET_CONTEXT_STATE_SHIFT|macro|NET_CONTEXT_STATE_SHIFT
 DECL|NET_CONTEXT_TYPE|macro|NET_CONTEXT_TYPE
 DECL|NET_CONTEXT_UNCONNECTED|enumerator|NET_CONTEXT_UNCONNECTED = 0,
 DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
+DECL|accept_q|member|struct k_fifo accept_q;
 DECL|conn_handler|member|struct net_conn_handle *conn_handler;
 DECL|connect_cb|member|net_context_connect_cb_t connect_cb;
 DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
@@ -43,6 +44,7 @@ DECL|net_pkt_get_slab_func_t|typedef|typedef struct k_mem_slab *(*net_pkt_get_sl
 DECL|net_tcp_accept_cb_t|typedef|typedef void (*net_tcp_accept_cb_t)(struct net_context *new_context,
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_data_wait|member|struct k_sem recv_data_wait;
+DECL|recv_q|member|struct k_fifo recv_q;
 DECL|refcount|member|atomic_t refcount;
 DECL|remote|member|struct sockaddr remote;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
