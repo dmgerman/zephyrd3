@@ -137,6 +137,7 @@ DECL|_syncing_thread|member|k_tid_t _syncing_thread;
 DECL|_thread_base_t|typedef|typedef struct _thread_base _thread_base_t;
 DECL|_thread_base|struct|struct _thread_base {
 DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(void *, void *, void *);
+DECL|_thread_stack_info_t|typedef|typedef struct _thread_stack_info _thread_stack_info_t;
 DECL|_thread_stack_info|struct|struct _thread_stack_info {
 DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
