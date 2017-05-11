@@ -13,4 +13,4 @@ DECL|intlock_key|member|u32_t intlock_key;
 DECL|relinquish_cause|member|int relinquish_cause;
 DECL|return_value|member|unsigned int return_value;
 DECL|sp|member|u32_t sp; /* r28 */
-DECL|stack_top|member|u32_t stack_top;
+DECL|stack_base|member|u32_t stack_base;
