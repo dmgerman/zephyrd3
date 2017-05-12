@@ -3,5 +3,3 @@ DECL|_SpuriousIntNoErrCodeHandler|variable|_SpuriousIntNoErrCodeHandler
 DECL|_arch_irq_direct_pm|function|void _arch_irq_direct_pm(void)
 DECL|_arch_isr_direct_footer|function|void _arch_isr_direct_footer(int swap)
 DECL|_arch_isr_direct_header|function|void _arch_isr_direct_header(void)
-DECL|_dummy_exception_vector_stub|variable|_dummy_exception_vector_stub
-DECL|_dummy_spurious_interrupt|variable|_dummy_spurious_interrupt
