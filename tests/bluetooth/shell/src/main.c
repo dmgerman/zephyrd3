@@ -61,6 +61,7 @@ DECL|cmd_hrs_simulate|function|static int cmd_hrs_simulate(int argc, char *argv[
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_l2cap_connect|function|static int cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_disconnect|function|static int cmd_l2cap_disconnect(int argc, char *argv[])
+DECL|cmd_l2cap_metrics|function|static int cmd_l2cap_metrics(int argc, char *argv[])
 DECL|cmd_l2cap_register|function|static int cmd_l2cap_register(int argc, char *argv[])
 DECL|cmd_l2cap_send|function|static int cmd_l2cap_send(int argc, char *argv[])
 DECL|cmd_oob|function|static int cmd_oob(int argc, char *argv[])
@@ -105,6 +106,8 @@ DECL|l2cap_chan|variable|l2cap_chan
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_ops|variable|l2cap_ops
+DECL|l2cap_rate|variable|l2cap_rate
+DECL|l2cap_recv_metrics|function|static void l2cap_recv_metrics(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|le_param_req|function|static bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|le_param_updated|function|static void le_param_updated(struct bt_conn *conn, u16_t interval, u16_t latency, u16_t timeout)
