@@ -1,3 +1,4 @@
+DECL|CHAR_SIZE_MAX|macro|CHAR_SIZE_MAX
 DECL|CREDITS|macro|CREDITS
 DECL|DATA_BREDR_MTU|macro|DATA_BREDR_MTU
 DECL|DATA_MTU|macro|DATA_MTU
@@ -54,7 +55,9 @@ DECL|cmd_gatt_read|function|static int cmd_gatt_read(int argc, char *argv[])
 DECL|cmd_gatt_register_test_svc|function|static int cmd_gatt_register_test_svc(int argc, char *argv[])
 DECL|cmd_gatt_subscribe|function|static int cmd_gatt_subscribe(int argc, char *argv[])
 DECL|cmd_gatt_unsubscribe|function|static int cmd_gatt_unsubscribe(int argc, char *argv[])
+DECL|cmd_gatt_write_cmd_metrics|function|static int cmd_gatt_write_cmd_metrics(int argc, char *argv[])
 DECL|cmd_gatt_write_signed|function|static int cmd_gatt_write_signed(int argc, char *argv[])
+DECL|cmd_gatt_write_without_rsp_repeated|function|static int cmd_gatt_write_without_rsp_repeated(int argc, char *argv[])
 DECL|cmd_gatt_write_without_rsp|function|static int cmd_gatt_write_without_rsp(int argc, char *argv[])
 DECL|cmd_gatt_write|function|static int cmd_gatt_write(int argc, char *argv[])
 DECL|cmd_hrs_simulate|function|static int cmd_hrs_simulate(int argc, char *argv[])
@@ -112,11 +115,16 @@ DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, stru
 DECL|le_param_req|function|static bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|le_param_updated|function|static void le_param_updated(struct bt_conn *conn, u16_t interval, u16_t latency, u16_t timeout)
 DECL|main|function|void main(void)
+DECL|met_attrs|variable|met_attrs
+DECL|met_char_uuid|variable|met_char_uuid
+DECL|met_char_value|variable|met_char_value
+DECL|met_svc_uuid|variable|met_svc_uuid
 DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
 DECL|pairing_conn|variable|pairing_conn
 DECL|print_chrc_props|function|static void print_chrc_props(u8_t properties)
 DECL|read_func|function|static u8_t read_func(struct bt_conn *conn, u8_t err, struct bt_gatt_read_params *params, const void *data, u16_t length)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_met|function|static ssize_t read_met(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, u16_t len, u16_t offset)
 DECL|read_params|variable|read_params
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, u16_t len, u16_t offset)
 DECL|rfcomm_bredr_accept|function|static int rfcomm_bredr_accept(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc)
@@ -148,7 +156,11 @@ DECL|vnd_long_value1|variable|vnd_long_value1
 DECL|vnd_long_value2|variable|vnd_long_value2
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
+DECL|write_count|variable|write_count
 DECL|write_func|function|static void write_func(struct bt_conn *conn, u8_t err, struct bt_gatt_write_params *params)
+DECL|write_len|variable|write_len
 DECL|write_long_vnd|function|static ssize_t write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
+DECL|write_met|function|static ssize_t write_met(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|write_params|variable|write_params
+DECL|write_rate|variable|write_rate
 DECL|write_vnd|function|static ssize_t write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
