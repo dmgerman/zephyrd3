@@ -40,7 +40,6 @@ DECL|optlen|member|u8_t optlen;
 DECL|prepare_segment|function|static struct net_pkt *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt)
 DECL|restart_timer|function|static void restart_timer(struct net_tcp *tcp)
 DECL|retry_timeout|function|static inline u32_t retry_timeout(const struct net_tcp *tcp)
-DECL|seq_greater|function|static inline bool seq_greater(u32_t seq1, u32_t seq2)
 DECL|seq|member|u32_t seq;
 DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context

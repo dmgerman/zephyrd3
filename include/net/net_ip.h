@@ -130,6 +130,8 @@ DECL|net_sin_ptr|function|struct sockaddr_in_ptr *net_sin_ptr(const struct socka
 DECL|net_sin|function|static inline struct sockaddr_in *net_sin(const struct sockaddr *addr)
 DECL|net_sock_type|enum|enum net_sock_type {
 DECL|net_tcp_hdr|struct|struct net_tcp_hdr {
+DECL|net_tcp_seq_cmp|function|static inline s32_t net_tcp_seq_cmp(u32_t seq1, u32_t seq2)
+DECL|net_tcp_seq_greater|function|static inline bool net_tcp_seq_greater(u32_t seq1, u32_t seq2)
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|nexthdr|member|u8_t nexthdr;
