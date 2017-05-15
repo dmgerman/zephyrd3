@@ -12,6 +12,7 @@ DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
 DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
 DECL|spi_config_1_irq|function|void spi_config_1_irq(void)
+DECL|spi_dw_compute_ndf|function|static uint32_t spi_dw_compute_ndf(const struct spi_buf *rx_bufs, size_t rx_count, u8_t dfs)
 DECL|spi_dw_config_0|variable|spi_dw_config_0
 DECL|spi_dw_config_1|variable|spi_dw_config_1
 DECL|spi_dw_configure|function|static int spi_dw_configure(const struct spi_dw_config *info, struct spi_dw_data *spi, const struct spi_config *config)
