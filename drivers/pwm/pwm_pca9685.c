@@ -14,8 +14,6 @@ DECL|REG_PRE_SCALE|macro|REG_PRE_SCALE
 DECL|_has_i2c_master|function|static inline int _has_i2c_master(struct device *dev)
 DECL|pwm_pca9685_0_cfg|variable|pwm_pca9685_0_cfg
 DECL|pwm_pca9685_0_drvdata|variable|pwm_pca9685_0_drvdata
-DECL|pwm_pca9685_configure|function|static int pwm_pca9685_configure(struct device *dev, int access_op, u32_t pwm, int flags)
 DECL|pwm_pca9685_drv_api_funcs|variable|pwm_pca9685_drv_api_funcs
 DECL|pwm_pca9685_init|function|int pwm_pca9685_init(struct device *dev)
-DECL|pwm_pca9685_set_duty_cycle|function|static int pwm_pca9685_set_duty_cycle(struct device *dev, int access_op, u32_t pwm, u8_t duty)
-DECL|pwm_pca9685_set_values|function|static int pwm_pca9685_set_values(struct device *dev, int access_op, u32_t pwm, u32_t on, u32_t off)
+DECL|pwm_pca9685_pin_set_cycles|function|static int pwm_pca9685_pin_set_cycles(struct device *dev, u32_t pwm, u32_t period_count, u32_t pulse_count)

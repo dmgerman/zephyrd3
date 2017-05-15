@@ -9,11 +9,9 @@ DECL|__set_one_port|function|static int __set_one_port(struct device *dev, u32_t
 DECL|addr|member|u32_t addr;
 DECL|num_ports|member|u32_t num_ports;
 DECL|pwm_dw_cfg|variable|pwm_dw_cfg
-DECL|pwm_dw_configure|function|static int pwm_dw_configure(struct device *dev, int access_op, u32_t pwm, int flags)
 DECL|pwm_dw_config|struct|struct pwm_dw_config {
 DECL|pwm_dw_drv_api_funcs|variable|pwm_dw_drv_api_funcs
 DECL|pwm_dw_init|function|int pwm_dw_init(struct device *dev)
-DECL|pwm_dw_set_duty_cycle|function|static int pwm_dw_set_duty_cycle(struct device *dev, int access_op, u32_t pwm, u8_t duty)
-DECL|pwm_dw_set_values|function|static int pwm_dw_set_values(struct device *dev, int access_op, u32_t pwm, u32_t on, u32_t off)
+DECL|pwm_dw_pin_set_cycles|function|static int pwm_dw_pin_set_cycles(struct device *dev, u32_t pwm, u32_t period_cycles, u32_t pulse_cycles)
 DECL|pwm_dw_timer_base_addr|function|static inline int pwm_dw_timer_base_addr(struct device *dev, u32_t timer)
 DECL|pwm_dw_timer_ldcnt2_addr|function|static inline int pwm_dw_timer_ldcnt2_addr(struct device *dev, u32_t timer)
