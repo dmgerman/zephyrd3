@@ -9,7 +9,13 @@ DECL|_kernel_arch_data__h_|macro|_kernel_arch_data__h_
 DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
 DECL|_kernel_arch|struct|struct _kernel_arch {
 DECL|blink|member|u32_t blink;
+DECL|dpfp1h|member|u32_t dpfp1h;
+DECL|dpfp1l|member|u32_t dpfp1l;
+DECL|dpfp2h|member|u32_t dpfp2h;
+DECL|dpfp2l|member|u32_t dpfp2l;
 DECL|ei_base|member|u32_t ei_base;
+DECL|fpu_ctrl|member|u32_t fpu_ctrl;
+DECL|fpu_status|member|u32_t fpu_status;
 DECL|fp|member|u32_t fp; /* r27 */
 DECL|jli_base|member|u32_t jli_base;
 DECL|ldi_base|member|u32_t ldi_base;
@@ -41,6 +47,8 @@ DECL|r2|member|u32_t r2;
 DECL|r30|member|u32_t r30;
 DECL|r3|member|u32_t r3;
 DECL|r4|member|u32_t r4;
+DECL|r58|member|u32_t r58;
+DECL|r59|member|u32_t r59;
 DECL|r5|member|u32_t r5;
 DECL|r6|member|u32_t r6;
 DECL|r7|member|u32_t r7;
