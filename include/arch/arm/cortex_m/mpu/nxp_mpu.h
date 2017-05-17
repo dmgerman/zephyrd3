@@ -1,3 +1,4 @@
+DECL|ENDADDR_ROUND|macro|ENDADDR_ROUND
 DECL|MPU_REGION_ENTRY|macro|MPU_REGION_ENTRY
 DECL|MPU_REGION_EXEC|macro|MPU_REGION_EXEC
 DECL|MPU_REGION_READ|macro|MPU_REGION_READ
@@ -8,6 +9,7 @@ DECL|NXP_MPU_REGION_NUMBER|macro|NXP_MPU_REGION_NUMBER
 DECL|REGION_FLASH_ATTR|macro|REGION_FLASH_ATTR
 DECL|REGION_IO_ATTR|macro|REGION_IO_ATTR
 DECL|REGION_RAM_ATTR|macro|REGION_RAM_ATTR
+DECL|REGION_RO_ATTR|macro|REGION_RO_ATTR
 DECL|_NXP_MPU_H_|macro|_NXP_MPU_H_
 DECL|attr|member|u32_t attr;
 DECL|base|member|u32_t base;
@@ -17,3 +19,4 @@ DECL|name|member|const char *name;
 DECL|num_regions|member|u32_t num_regions;
 DECL|nxp_mpu_config|struct|struct nxp_mpu_config {
 DECL|nxp_mpu_region|struct|struct nxp_mpu_region {
+DECL|sram_region|member|u32_t sram_region;
