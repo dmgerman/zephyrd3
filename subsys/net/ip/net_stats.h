@@ -101,6 +101,8 @@ DECL|net_stats_update_tcp_seg_sent|function|static inline void net_stats_update_
 DECL|net_stats_update_tcp_seg_sent|macro|net_stats_update_tcp_seg_sent
 DECL|net_stats_update_tcp_sent|function|static inline void net_stats_update_tcp_sent(u32_t bytes)
 DECL|net_stats_update_tcp_sent|macro|net_stats_update_tcp_sent
+DECL|net_stats_update_udp_chkerr|function|static inline void net_stats_update_udp_chkerr(void)
+DECL|net_stats_update_udp_chkerr|macro|net_stats_update_udp_chkerr
 DECL|net_stats_update_udp_drop|function|static inline void net_stats_update_udp_drop(void)
 DECL|net_stats_update_udp_drop|macro|net_stats_update_udp_drop
 DECL|net_stats_update_udp_recv|function|static inline void net_stats_update_udp_recv(void)
