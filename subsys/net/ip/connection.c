@@ -18,6 +18,8 @@ DECL|cache_check|function|static inline enum net_verdict cache_check(enum net_ip
 DECL|cache_check|macro|cache_check
 DECL|cache_clear|function|static void cache_clear(void)
 DECL|cache_clear|macro|cache_clear
+DECL|cache_remove|function|static inline void cache_remove(struct net_conn *conn)
+DECL|cache_remove|macro|cache_remove
 DECL|check_addr|function|static bool check_addr(struct net_pkt *pkt, struct sockaddr *addr, bool is_remote)
 DECL|check_hash|function|static s32_t check_hash(enum net_ip_protocol proto, sa_family_t family, void *remote_addr, void *local_addr, u16_t remote_port,
 DECL|conn_cache_neg|variable|conn_cache_neg
