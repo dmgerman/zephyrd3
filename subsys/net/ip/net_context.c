@@ -1,4 +1,5 @@
 DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
+DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_established)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_syn_rcvd)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_synack_received)
