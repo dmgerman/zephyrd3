@@ -5,6 +5,7 @@ DECL|off_t|typedef|typedef int off_t;
 DECL|off_t|typedef|typedef int off_t;
 DECL|off_t|typedef|typedef int off_t;
 DECL|off_t|typedef|typedef int off_t;
+DECL|off_t|typedef|typedef int off_t;
 DECL|off_t|typedef|typedef long int off_t;
 DECL|ssize_t|typedef|typedef __SIZE_TYPE__ ssize_t;
 DECL|unsigned|macro|unsigned
