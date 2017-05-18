@@ -1,7 +1,7 @@
 DECL|__must_switch_threads|function|int __must_switch_threads(void)
 DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct k_thread *thread)
 DECL|_clear_ready_q_prio_bit|function|static void _clear_ready_q_prio_bit(int prio)
-DECL|_dump_ready_q|function|void _dump_ready_q(void)
+DECL|_dump_ready_q|function|static void _dump_ready_q(void)
 DECL|_get_ready_q_head|function|static struct k_thread *_get_ready_q_head(void)
 DECL|_is_thread_time_slicing|function|int _is_thread_time_slicing(struct k_thread *thread)
 DECL|_kernel|variable|_kernel
