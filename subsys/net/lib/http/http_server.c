@@ -26,6 +26,7 @@ DECL|http_recv|function|static void http_recv(struct net_context *net_ctx, struc
 DECL|http_response_400|function|int http_response_400(struct http_server_ctx *ctx, const char *html_payload)
 DECL|http_response_403|function|int http_response_403(struct http_server_ctx *ctx, const char *html_payload)
 DECL|http_response_404|function|int http_response_404(struct http_server_ctx *ctx, const char *html_payload)
+DECL|http_response_wait|function|int http_response_wait(struct http_server_ctx *ctx, const char *http_header, const char *html_payload, s32_t timeout)
 DECL|http_response|function|int http_response(struct http_server_ctx *ctx, const char *http_header, const char *html_payload)
 DECL|http_server_add_default|function|struct http_root_url *http_server_add_default(struct http_server_urls *my, http_url_cb_t write_cb)
 DECL|http_server_add_url|function|struct http_root_url *http_server_add_url(struct http_server_urls *my, const char *url, u8_t flags, http_url_cb_t write_cb)
@@ -57,6 +58,8 @@ DECL|pkt_sent|function|static void pkt_sent(struct net_context *context, int sta
 DECL|pkt|member|struct net_pkt *pkt;
 DECL|print_error|macro|print_error
 DECL|print_error|macro|print_error
+DECL|req_timeout|function|static void req_timeout(struct k_work *work)
+DECL|req_timer_cancel|function|static void req_timer_cancel(struct http_server_ctx *ctx)
 DECL|rx_fifo_block|struct|struct rx_fifo_block {
 DECL|set_net_ctx|function|static int set_net_ctx(struct http_server_ctx *http_ctx, struct net_context *ctx, struct sockaddr *addr, socklen_t socklen)
 DECL|setup_ipv4_ctx|function|static int setup_ipv4_ctx(struct http_server_ctx *http_ctx, struct sockaddr *addr)

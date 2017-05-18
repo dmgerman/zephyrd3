@@ -109,6 +109,8 @@ DECL|thread|member|struct k_thread thread;
 DECL|tid|member|k_tid_t tid;
 DECL|timeout|member|s32_t timeout;
 DECL|timeout|member|s32_t timeout;
+DECL|timer_cancelled|member|u8_t timer_cancelled;
+DECL|timer|member|struct k_delayed_work timer;
 DECL|tx_sem|member|struct k_sem tx_sem;
 DECL|url_len|member|u16_t url_len;
 DECL|urls|member|struct http_root_url urls[CONFIG_HTTP_SERVER_NUM_URLS];
