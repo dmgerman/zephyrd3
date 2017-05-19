@@ -1,4 +1,5 @@
 DECL|BT_CONN_AUTO_CONNECT|enumerator|BT_CONN_AUTO_CONNECT,
+DECL|BT_CONN_AUTO_PHY_UPDATE|enumerator|BT_CONN_AUTO_PHY_UPDATE, /* Auto-update PHY */
 DECL|BT_CONN_BR_LEGACY_SECURE|enumerator|BT_CONN_BR_LEGACY_SECURE, /* 16 digits legacy PIN tracker */
 DECL|BT_CONN_BR_NOBOND|enumerator|BT_CONN_BR_NOBOND, /* SSP no bond pairing tracker */
 DECL|BT_CONN_BR_PAIRING_INITIATOR|enumerator|BT_CONN_BR_PAIRING_INITIATOR, /* local host starts authentication */
