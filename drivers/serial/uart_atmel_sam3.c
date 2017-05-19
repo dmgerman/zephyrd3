@@ -57,6 +57,6 @@ DECL|uart_sam3_dev_data_0|variable|uart_sam3_dev_data_0
 DECL|uart_sam3_dev_data_t|struct|struct uart_sam3_dev_data_t {
 DECL|uart_sam3_driver_api|variable|uart_sam3_driver_api
 DECL|uart_sam3_driver_api|variable|uart_sam3_driver_api
-DECL|uart_sam3_init|function|static int uart_sam3_init(struct device *dev)
+DECL|uart_sam3_init|function|static int __deprecated uart_sam3_init(struct device *dev)
 DECL|uart_sam3_poll_in|function|static int uart_sam3_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_sam3_poll_out|function|static unsigned char uart_sam3_poll_out(struct device *dev, unsigned char c)
