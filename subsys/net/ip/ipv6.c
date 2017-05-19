@@ -110,4 +110,5 @@ DECL|send_mldv2_raw|function|static int send_mldv2_raw(struct net_if *iface, str
 DECL|send_mldv2|function|static int send_mldv2(struct net_if *iface, const struct in6_addr *addr, u8_t mode)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, u8_t *llao, u8_t llao_len, u8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_pkt *pkt, u8_t nd6_len, u8_t icmp_type)
+DECL|shift_packets|function|static int shift_packets(struct net_ipv6_reassembly *reass, int pos)
 DECL|update_ll_reserve|function|static struct net_pkt *update_ll_reserve(struct net_pkt *pkt, struct in6_addr *addr)
