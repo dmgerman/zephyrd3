@@ -14,6 +14,7 @@ DECL|MMU_4MB_PDE_RW_MASK|macro|MMU_4MB_PDE_RW_MASK
 DECL|MMU_4MB_PDE_SET_PS|macro|MMU_4MB_PDE_SET_PS
 DECL|MMU_4MB_PDE_US_MASK|macro|MMU_4MB_PDE_US_MASK
 DECL|MMU_ARE_IN_SAME_PAGE|macro|MMU_ARE_IN_SAME_PAGE
+DECL|MMU_BOOT_REGION|macro|MMU_BOOT_REGION
 DECL|MMU_ENTRIES_PER_PGT|macro|MMU_ENTRIES_PER_PGT
 DECL|MMU_ENTRY_ACCESSED|macro|MMU_ENTRY_ACCESSED
 DECL|MMU_ENTRY_ALLOC|macro|MMU_ENTRY_ALLOC
@@ -67,6 +68,7 @@ DECL|MMU_PTE_RW_MASK|macro|MMU_PTE_RW_MASK
 DECL|MMU_PTE_US_MASK|macro|MMU_PTE_US_MASK
 DECL|PAGES|macro|PAGES
 DECL|_MMUSTRUCTS_H|macro|_MMUSTRUCTS_H
+DECL|address|member|u32_t address; /*Start address of the memory region */
 DECL|alloc|member|u32_t alloc:1;
 DECL|a|member|u32_t a:1;
 DECL|a|member|u32_t a:1;
@@ -76,6 +78,7 @@ DECL|d|member|u32_t d:1;
 DECL|d|member|u32_t d:1;
 DECL|entry|member|union x86_mmu_pde entry[1024];
 DECL|entry|member|union x86_mmu_pte entry[1024];
+DECL|flags|member|u32_t flags; /* Permissions needed for this region*/
 DECL|fourmb|member|union x86_mmu_pde_4mb fourmb;
 DECL|g|member|u32_t g:1;
 DECL|g|member|u32_t g:1;
@@ -83,6 +86,7 @@ DECL|ignored1|member|u32_t ignored1:1;
 DECL|ignored1|member|u32_t ignored1:3;
 DECL|ignored2|member|u32_t ignored2:3;
 DECL|ignored2|member|u32_t ignored2:4;
+DECL|mmu_region|struct|struct mmu_region {
 DECL|page_table|member|u32_t page_table:20;
 DECL|page_table|member|u32_t page_table:6;
 DECL|page|member|u32_t page:10;
@@ -104,6 +108,7 @@ DECL|p|member|u32_t p:1;
 DECL|rw|member|u32_t rw:1;
 DECL|rw|member|u32_t rw:1;
 DECL|rw|member|u32_t rw:1;
+DECL|size|member|u32_t size; /* Size of the memory region*/
 DECL|us|member|u32_t us:1;
 DECL|us|member|u32_t us:1;
 DECL|us|member|u32_t us:1;
