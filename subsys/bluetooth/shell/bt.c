@@ -1,0 +1,2 @@
+DECL|BT_SHELL_MODULE|macro|BT_SHELL_MODULE
+DECL|bt_commands|variable|bt_commands
