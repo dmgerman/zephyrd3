@@ -1,3 +1,5 @@
+DECL|SHELL_REGISTER_WITH_PROMPT|macro|SHELL_REGISTER_WITH_PROMPT
+DECL|SHELL_REGISTER_WITH_PROMPT|macro|SHELL_REGISTER_WITH_PROMPT
 DECL|SHELL_REGISTER|macro|SHELL_REGISTER
 DECL|SHELL_REGISTER|macro|SHELL_REGISTER
 DECL|cb|member|shell_cmd_function_t cb;
@@ -5,6 +7,7 @@ DECL|cmd_name|member|const char *cmd_name;
 DECL|commands|member|const struct shell_cmd *commands;
 DECL|help|member|const char *help;
 DECL|module_name|member|const char *module_name;
+DECL|prompt|member|shell_prompt_function_t prompt;
 DECL|shell_cmd_function_t|typedef|typedef int (*shell_cmd_function_t)(int argc, char *argv[]);
 DECL|shell_cmd|struct|struct shell_cmd {
 DECL|shell_module|struct|struct shell_module {
