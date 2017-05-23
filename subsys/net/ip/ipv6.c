@@ -35,6 +35,7 @@ DECL|fragment_verify|function|static bool fragment_verify(struct net_ipv6_reasse
 DECL|get_llao_len|function|static inline u8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
+DECL|get_next_hdr|function|static int get_next_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx,u16_t *last_hdr_idx, u8_t *next_hdr)
 DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t len, u16_t offset,
 DECL|handle_fragment_hdr|function|static enum net_verdict handle_fragment_hdr(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t buf_offset)
 DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_pkt *pkt)
@@ -65,7 +66,7 @@ DECL|net_ipv6_create_raw|function|struct net_pkt *net_ipv6_create_raw(struct net
 DECL|net_ipv6_create|function|struct net_pkt *net_ipv6_create(struct net_context *context,struct net_pkt *pkt, const struct in6_addr *src, const struct in6_addr *dst)
 DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_pkt *pkt, u8_t next_header)
 DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_pkt *pkt)
-DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt)
+DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx, u16_t *last_hdr_idx)
 DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)
 DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(u8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, u8_t idx)
