@@ -16,9 +16,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|accept_cb|function|static void accept_cb(struct net_context *net_ctx, struct sockaddr *addr, socklen_t addrlen, int status, void *data)
 DECL|block|member|struct k_mem_block block;
 DECL|entropy_source|function|static int entropy_source(void *data, unsigned char *output, size_t len, size_t *olen)
-DECL|heap_init|function|static void heap_init(struct http_server_ctx *ctx)
-DECL|heap_init|macro|heap_init
-DECL|heap|variable|heap
 DECL|http_add_chunk|function|static int http_add_chunk(struct net_pkt *pkt, s32_t timeout, const char *str)
 DECL|http_add_header|function|static int http_add_header(struct net_pkt *pkt, s32_t timeout, const char *str)
 DECL|http_process_recv|function|static int http_process_recv(struct http_server_ctx *http_ctx)

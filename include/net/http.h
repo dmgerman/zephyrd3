@@ -45,6 +45,7 @@ DECL|http_client_send_get_req|function|static inline int http_client_send_get_re
 DECL|http_client_send_post_req|function|static inline int http_client_send_post_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, const char *content_type,
 DECL|http_field_value|struct|struct http_field_value {
 DECL|http_final_call|enum|enum http_final_call {
+DECL|http_heap_init|macro|http_heap_init
 DECL|http_receive_cb_t|typedef|typedef void (*http_receive_cb_t)(struct http_client_ctx *ctx,
 DECL|http_response_cb_t|typedef|typedef void (*http_response_cb_t)(struct http_client_ctx *ctx,
 DECL|http_root_url|struct|struct http_root_url {
