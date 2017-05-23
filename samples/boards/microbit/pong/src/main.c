@@ -16,6 +16,12 @@ DECL|REAL_TO_VIRT|macro|REAL_TO_VIRT
 DECL|RESTART_THRESHOLD|macro|RESTART_THRESHOLD
 DECL|SCROLL_SPEED|macro|SCROLL_SPEED
 DECL|SINGLE|enumerator|SINGLE,
+DECL|SOUND_IDLE|enumerator|SOUND_IDLE, /* No sound */
+DECL|SOUND_PADDLE|enumerator|SOUND_PADDLE, /* Ball has hit the paddle */
+DECL|SOUND_PERIOD_PADDLE|macro|SOUND_PERIOD_PADDLE
+DECL|SOUND_PERIOD_WALL|macro|SOUND_PERIOD_WALL
+DECL|SOUND_PIN|macro|SOUND_PIN
+DECL|SOUND_WALL|enumerator|SOUND_WALL, /* Ball has hit a wall */
 DECL|START_THRESHOLD|macro|START_THRESHOLD
 DECL|VIRT_TO_REAL|macro|VIRT_TO_REAL
 DECL|a_timestamp|variable|a_timestamp
@@ -23,6 +29,7 @@ DECL|b_timestamp|variable|b_timestamp
 DECL|ball_pos|variable|ball_pos
 DECL|ball_vel|variable|ball_vel
 DECL|ball_visible|function|static bool ball_visible(void)
+DECL|beep|function|static inline void beep(int period)
 DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|check_start|function|static void check_start(void)
 DECL|choice_count|member|size_t choice_count;
@@ -49,10 +56,14 @@ DECL|pong_select_complete|function|static void pong_select_complete(void)
 DECL|pong_selection|struct|struct pong_selection {
 DECL|pong_select|function|static void pong_select(const struct pong_selection *sel)
 DECL|pong_state|enum|enum pong_state {
+DECL|pwm|variable|pwm
 DECL|refresh|variable|refresh
 DECL|remote_lost|variable|remote_lost
 DECL|select_idx|variable|select_idx
 DECL|select|variable|select
+DECL|sound_set|function|static void sound_set(enum sound_state state)
+DECL|sound_state|enum|static enum sound_state {
+DECL|sound_state|variable|sound_state
 DECL|started|variable|started
 DECL|state|variable|state
 DECL|str|member|const char *str;
