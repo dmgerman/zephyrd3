@@ -55,6 +55,10 @@ DECL|pin_pa15_funcs|variable|pin_pa15_funcs
 DECL|pin_pa1_funcs|variable|pin_pa1_funcs
 DECL|pin_pa2_funcs|variable|pin_pa2_funcs
 DECL|pin_pa3_funcs|variable|pin_pa3_funcs
+DECL|pin_pa4_funcs|variable|pin_pa4_funcs
+DECL|pin_pa5_funcs|variable|pin_pa5_funcs
+DECL|pin_pa6_funcs|variable|pin_pa6_funcs
+DECL|pin_pa7_funcs|variable|pin_pa7_funcs
 DECL|pin_pa8_funcs|variable|pin_pa8_funcs
 DECL|pin_pa9_funcs|variable|pin_pa9_funcs
 DECL|pin_pb10_funcs|variable|pin_pb10_funcs
