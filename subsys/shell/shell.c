@@ -27,6 +27,7 @@ DECL|print_module_commands|function|static void print_module_commands(const int 
 DECL|prompt|variable|prompt
 DECL|select_module|function|static int select_module(int argc, char *argv[])
 DECL|set_default_module|function|static int set_default_module(const char *name)
+DECL|shell_exec|function|int shell_exec(char *line)
 DECL|shell_init|function|void shell_init(const char *str)
 DECL|shell_register_app_cmd_handler|function|void shell_register_app_cmd_handler(shell_cmd_function_t handler)
 DECL|shell_register_default_module|function|void shell_register_default_module(const char *name)
