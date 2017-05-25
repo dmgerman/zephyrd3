@@ -1,3 +1,4 @@
+DECL|DISABLE_OVERHEAD_MEASUREMENT|macro|DISABLE_OVERHEAD_MEASUREMENT
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|__common_var_swap_end_tsc|variable|__common_var_swap_end_tsc
 DECL|__read_swap_end_tsc_value_test|variable|__read_swap_end_tsc_value_test
