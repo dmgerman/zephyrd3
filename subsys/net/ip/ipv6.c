@@ -102,6 +102,7 @@ DECL|reassemble_packet|function|static void reassemble_packet(struct net_ipv6_re
 DECL|reassembly_cancel|function|static bool reassembly_cancel(u32_t id, struct in6_addr *src, struct in6_addr *dst)
 DECL|reassembly_get|function|static struct net_ipv6_reassembly *reassembly_get(u32_t id, struct in6_addr *src, struct in6_addr *dst)
 DECL|reassembly_info|function|static void reassembly_info(char *str, struct net_ipv6_reassembly *reass)
+DECL|reassembly_init_done|variable|reassembly_init_done
 DECL|reassembly_timeout|function|static void reassembly_timeout(struct k_work *work)
 DECL|reassembly|variable|reassembly
 DECL|remaining|function|static inline u32_t remaining(struct k_delayed_work *work)
