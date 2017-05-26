@@ -36,7 +36,6 @@ DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
 DECL|net_shell_cmd_conn|function|int net_shell_cmd_conn(int argc, char *argv[])
 DECL|net_shell_cmd_dns|function|int net_shell_cmd_dns(int argc, char *argv[])
-DECL|net_shell_cmd_help|function|int net_shell_cmd_help(int argc, char *argv[])
 DECL|net_shell_cmd_iface|function|int net_shell_cmd_iface(int argc, char *argv[])
 DECL|net_shell_cmd_mem|function|int net_shell_cmd_mem(int argc, char *argv[])
 DECL|net_shell_cmd_nbr|function|int net_shell_cmd_nbr(int argc, char *argv[])
