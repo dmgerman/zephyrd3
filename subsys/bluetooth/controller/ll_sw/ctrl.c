@@ -205,6 +205,7 @@ DECL|packet_tx_first|member|u8_t volatile packet_tx_first;
 DECL|packet_tx_last|member|u8_t packet_tx_last;
 DECL|pause_enc_rsp_send|function|static void pause_enc_rsp_send(struct connection *conn)
 DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,struct radio_pdu_node_tx *node_tx)
+DECL|phy_p|member|u8_t phy_p:3;
 DECL|phy_rsp_send|function|static void phy_rsp_send(struct connection *conn)
 DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *radio_pdu_node_rx,u8_t *rx_enqueue)
 DECL|ping_resp_send|function|static void ping_resp_send(struct connection *conn)
@@ -223,7 +224,7 @@ DECL|prepare_pdu_data_tx|function|static void prepare_pdu_data_tx(struct connect
 DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op_context)
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
-DECL|radio_adv_enable|function|u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy)
+DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chl_map, u8_t filter_policy) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy) #endif /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
 DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)
@@ -245,6 +246,7 @@ DECL|radio_tx_mem_enqueue|function|u32_t radio_tx_mem_enqueue(u16_t handle, stru
 DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_node_tx *node_tx)
 DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
+DECL|rfu|member|u8_t rfu:4;
 DECL|role_active_disable|function|static inline void role_active_disable(u8_t ticker_id_stop, u32_t ticks_xtal_to_start, u32_t ticks_active_to_start)
 DECL|role_disable|function|static u32_t role_disable(u8_t ticker_id_primary, u8_t ticker_id_stop)
 DECL|role|enum|enum role {
