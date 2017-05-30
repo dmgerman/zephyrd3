@@ -3,13 +3,14 @@ DECL|SPI_CONTEXT_INIT_SYNC|macro|SPI_CONTEXT_INIT_SYNC
 DECL|__SPI_DRIVER_COMMON_H__|macro|__SPI_DRIVER_COMMON_H__
 DECL|asynchronous|member|bool asynchronous;
 DECL|config|member|struct spi_config *config;
-DECL|current_rx|member|struct spi_buf **current_rx;
-DECL|current_tx|member|const struct spi_buf **current_tx;
+DECL|current_rx|member|struct spi_buf *current_rx;
+DECL|current_tx|member|const struct spi_buf *current_tx;
 DECL|lock|member|struct k_sem lock;
 DECL|rx_buf|member|void *rx_buf;
-DECL|rx_len|member|u32_t rx_len;
+DECL|rx_count|member|size_t rx_count;
+DECL|rx_len|member|size_t rx_len;
 DECL|signal|member|struct k_poll_signal *signal;
-DECL|spi_context_buffers_setup|function|static inline void spi_context_buffers_setup(struct spi_context *ctx, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs, uint8_t dfs)
+DECL|spi_context_buffers_setup|function|static inline void spi_context_buffers_setup(struct spi_context *ctx, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count,
 DECL|spi_context_complete|function|static inline void spi_context_complete(struct spi_context *ctx, int status)
 DECL|spi_context_configured|function|static inline bool spi_context_configured(struct spi_context *ctx, struct spi_config *config)
 DECL|spi_context_cs_configure|function|static inline void spi_context_cs_configure(struct spi_context *ctx)
@@ -25,4 +26,5 @@ DECL|spi_context_wait_for_completion|function|static inline void spi_context_wai
 DECL|spi_context|struct|struct spi_context {
 DECL|sync|member|struct k_sem sync;
 DECL|tx_buf|member|void *tx_buf;
-DECL|tx_len|member|u32_t tx_len;
+DECL|tx_count|member|size_t tx_count;
+DECL|tx_len|member|size_t tx_len;

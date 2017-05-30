@@ -20,6 +20,6 @@ DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)
 DECL|spi_dw_isr|function|void spi_dw_isr(struct device *dev)
 DECL|spi_dw_release|function|static int spi_dw_release(struct spi_config *config)
-DECL|spi_dw_transceive_async|function|static int spi_dw_transceive_async(struct spi_config *config, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs, struct k_poll_signal *async)
-DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct spi_config *config, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs)
-DECL|transceive|function|static int transceive(struct spi_config *config, const struct spi_buf **tx_bufs, struct spi_buf **rx_bufs, bool asynchronous, struct k_poll_signal *signal)
+DECL|spi_dw_transceive_async|function|static int spi_dw_transceive_async(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count,
+DECL|spi_dw_transceive|function|static int spi_dw_transceive(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count)
+DECL|transceive|function|static int transceive(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count,
