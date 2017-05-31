@@ -1,3 +1,7 @@
+DECL|another_array_len|member|size_t another_array_len;
+DECL|another_array|member|int another_array[10]; /* JSON: "another-array" */
+DECL|another_bxxl|member|bool another_bxxl; /* JSON field: "another_b!@l" */
+DECL|if_|member|bool if_; /* JSON: "if" */
 DECL|nested_bool|member|bool nested_bool;
 DECL|nested_descr|variable|nested_descr
 DECL|nested_int|member|int nested_int;
@@ -24,3 +28,4 @@ DECL|test_json_wrong_token|function|static void test_json_wrong_token(void)
 DECL|test_main|function|void test_main(void)
 DECL|test_nested|struct|struct test_nested {
 DECL|test_struct|struct|struct test_struct {
+DECL|xnother_nexx|member|struct test_nested xnother_nexx; /* JSON: "4nother_ne$+" */
