@@ -1,0 +1,10 @@
+DECL|app_cmd_handler|function|static int app_cmd_handler(int argc, char *argv[])
+DECL|dummy_cmds|variable|dummy_cmds
+DECL|dummy_cmd|function|static int dummy_cmd(int argc, char *argv[])
+DECL|test_app_handler|function|static void test_app_handler(void)
+DECL|test_exit|function|static void test_exit(void)
+DECL|test_help|function|static void test_help(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_module|function|static void test_module(void)
+DECL|test_select|function|static void test_select(void)
+DECL|test_shell_exec|function|static void test_shell_exec(const char *line, int result)
