@@ -2,7 +2,6 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|add_subscriptions|function|static void add_subscriptions(struct bt_conn *conn)
-DECL|attr_count|variable|attr_count
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|bt_gatt_attr_next|function|struct bt_gatt_attr *bt_gatt_attr_next(const struct bt_gatt_attr *attr)
 DECL|bt_gatt_attr_read_ccc|function|ssize_t bt_gatt_attr_read_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
@@ -32,7 +31,6 @@ DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
 DECL|connected_cb|function|static u8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|data|member|const void *data;
-DECL|db|variable|db
 DECL|db|variable|db
 DECL|disconnected_cb|function|static u8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|u16_t end_handle;
