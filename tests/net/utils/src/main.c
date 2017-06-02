@@ -1,5 +1,4 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|addr|member|struct in6_addr addr;
 DECL|addr|member|struct in_addr addr;
 DECL|c_addr|member|char c_addr[16];
@@ -38,7 +37,6 @@ DECL|ipv6_pton_4|variable|ipv6_pton_4
 DECL|ipv6_pton_5|variable|ipv6_pton_5
 DECL|ipv6_pton_6|variable|ipv6_pton_6
 DECL|ipv6|member|} ipv6;
-DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|name|member|const char *name;
 DECL|net_addr_test_data|struct|struct net_addr_test_data {
@@ -52,7 +50,5 @@ DECL|run_net_addr_tests|function|static bool run_net_addr_tests(void)
 DECL|run_tests|function|static bool run_tests(void)
 DECL|test_net_addr|function|static bool test_net_addr(struct net_addr_test_data *data)
 DECL|tests|variable|tests
-DECL|thread_data|variable|thread_data
-DECL|thread_stack|variable|thread_stack
 DECL|verify|member|struct in6_addr verify;
 DECL|verify|member|struct in_addr verify;

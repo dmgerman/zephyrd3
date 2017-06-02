@@ -4,14 +4,12 @@ DECL|MSG_TYPE|macro|MSG_TYPE
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|REQUEST|macro|REQUEST
 DECL|SERVER_PORT|macro|SERVER_PORT
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|ack|variable|ack
 DECL|client_addr|variable|client_addr
 DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dst_addr|variable|dst_addr
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|net_dhcpv4_context_data|variable|net_dhcpv4_context_data
 DECL|net_dhcpv4_context|struct|struct net_dhcpv4_context {
@@ -32,7 +30,5 @@ DECL|set_udp_header|function|static void set_udp_header(struct net_pkt *pkt)
 DECL|src_addr|variable|src_addr
 DECL|test_result|function|static void test_result(bool pass)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
-DECL|thread_data|variable|thread_data
-DECL|thread_stack|variable|thread_stack
 DECL|type|member|u8_t type;
 DECL|xid|member|u32_t xid;

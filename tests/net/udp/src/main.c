@@ -2,7 +2,6 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|REGISTER_FAIL|macro|REGISTER_FAIL
 DECL|REGISTER|macro|REGISTER
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|TEST_IPV4_FAIL|macro|TEST_IPV4_FAIL
 DECL|TEST_IPV4_OK|macro|TEST_IPV4_OK
 DECL|TEST_IPV6_FAIL|macro|TEST_IPV6_FAIL
@@ -18,7 +17,6 @@ DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|u16_t local_port;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main_thread|function|void main_thread(void)
 DECL|main|function|void main(void)
 DECL|net_udp_context_data|variable|net_udp_context_data
 DECL|net_udp_context|struct|struct net_udp_context {
@@ -41,6 +39,4 @@ DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn,
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|test|member|char *test;
-DECL|thread_data|variable|thread_data
-DECL|thread_stack|variable|thread_stack
 DECL|ud|struct|struct ud {

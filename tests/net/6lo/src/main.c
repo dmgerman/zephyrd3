@@ -2,7 +2,6 @@ DECL|DEBUG|macro|DEBUG
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SIZE_OF_LARGE_DATA|macro|SIZE_OF_LARGE_DATA
 DECL|SIZE_OF_SMALL_DATA|macro|SIZE_OF_SMALL_DATA
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|__packed|variable|__packed
 DECL|compare_data|function|static bool compare_data(struct net_pkt *pkt, struct net_6lo_data *data)
 DECL|create_pkt|function|static struct net_pkt *create_pkt(struct net_6lo_data *data)
@@ -26,7 +25,6 @@ DECL|dst_mac|variable|dst_mac
 DECL|icmp|member|struct net_icmp_hdr icmp;
 DECL|iphc|member|bool iphc;
 DECL|ipv6|member|struct net_ipv6_hdr ipv6;
-DECL|main_thread|function|static void main_thread(void)
 DECL|main|function|void main(void)
 DECL|name|member|const char *name;
 DECL|net_6lo_data|struct|struct net_6lo_data {
@@ -72,8 +70,6 @@ DECL|test_data_8|variable|test_data_8
 DECL|test_data_9|variable|test_data_9
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
-DECL|thread_data|variable|thread_data
-DECL|thread_stack|variable|thread_stack
 DECL|udp_dst_port_16bit|macro|udp_dst_port_16bit
 DECL|udp_dst_port_4bit|macro|udp_dst_port_4bit
 DECL|udp_dst_port_8bit_y|macro|udp_dst_port_8bit_y
