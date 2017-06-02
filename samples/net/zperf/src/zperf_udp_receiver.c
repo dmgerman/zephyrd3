@@ -10,6 +10,5 @@ DECL|set_dst_addr|function|static inline void set_dst_addr(sa_family_t family,st
 DECL|udp_received|function|static void udp_received(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|zperf_receiver_init|function|void zperf_receiver_init(int port)
 DECL|zperf_receiver_send_stat|function|static int zperf_receiver_send_stat(struct net_context *context, struct net_pkt *pkt, struct zperf_udp_datagram *hdr, struct zperf_server_hdr *stat)
-DECL|zperf_rx_stack|variable|zperf_rx_stack
 DECL|zperf_rx_thread_data|variable|zperf_rx_thread_data
 DECL|zperf_rx_thread|function|static void zperf_rx_thread(int port)
