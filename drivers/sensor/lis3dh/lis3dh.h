@@ -46,7 +46,6 @@ DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
 DECL|lis3dh_data|struct|struct lis3dh_data {
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_LIS3DH_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;
 DECL|x_sample|member|s16_t x_sample;

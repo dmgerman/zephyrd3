@@ -11,7 +11,6 @@ DECL|mac|member|u8_t mac[8];
 DECL|nrf5_802154_data|struct|struct nrf5_802154_data {
 DECL|rssi|member|s8_t rssi;
 DECL|rx_psdu|member|u8_t *rx_psdu;
-DECL|rx_stack|member|char __stack rx_stack[CONFIG_IEEE802154_NRF5_RX_STACK_SIZE];
 DECL|rx_thread|member|struct k_thread rx_thread;
 DECL|rx_wait|member|struct k_sem rx_wait;
 DECL|tx_psdu|member|u8_t tx_psdu[NRF5_PHR_LENGTH + NRF5_PSDU_LENGTH];

@@ -69,6 +69,5 @@ DECL|i2c|member|struct device *i2c;
 DECL|isl29035_driver_data|struct|struct isl29035_driver_data {
 DECL|th_handler|member|sensor_trigger_handler_t th_handler;
 DECL|th_trigger|member|struct sensor_trigger th_trigger;
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_ISL29035_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|work|member|struct k_work work;

@@ -48,7 +48,6 @@ DECL|i2c|member|struct device *i2c;
 DECL|range|member|enum fxas21002_range range;
 DECL|raw|member|s16_t raw[FXAS21002_MAX_NUM_CHANNELS];
 DECL|sem|member|struct k_sem sem;
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXAS21002_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|trig_sem|member|struct k_sem trig_sem;
 DECL|whoami|member|u8_t whoami;

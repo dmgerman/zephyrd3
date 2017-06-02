@@ -25,7 +25,6 @@ DECL|i2c|member|struct device *i2c;
 DECL|sample|member|s16_t sample;
 DECL|th_handler|member|sensor_trigger_handler_t th_handler;
 DECL|th_trigger|member|struct sensor_trigger th_trigger;
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_TMP007_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|tmp007_data|struct|struct tmp007_data {
 DECL|work|member|struct k_work work;

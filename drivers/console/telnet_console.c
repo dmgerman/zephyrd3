@@ -46,5 +46,4 @@ DECL|telnet_send|function|static inline bool telnet_send(void)
 DECL|telnet_sent_cb|function|static void telnet_sent_cb(struct net_context *client, int status, void *token, void *user_data)
 DECL|telnet_setup_out_pkt|function|static int telnet_setup_out_pkt(struct net_context *client)
 DECL|telnet_setup_server|function|static void telnet_setup_server(struct net_context **ctx, sa_family_t family,struct sockaddr *addr, socklen_t addrlen)
-DECL|telnet_stack|variable|telnet_stack
 DECL|telnet_thread_data|variable|telnet_thread_data

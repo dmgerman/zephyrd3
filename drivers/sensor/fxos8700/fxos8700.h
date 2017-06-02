@@ -83,7 +83,6 @@ DECL|start_addr|member|u8_t start_addr;
 DECL|start_channel|member|u8_t start_channel;
 DECL|tap_handler|member|sensor_trigger_handler_t tap_handler;
 DECL|temp|member|s8_t temp;
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_FXOS8700_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|trig_sem|member|struct k_sem trig_sem;
 DECL|whoami|member|u8_t whoami;

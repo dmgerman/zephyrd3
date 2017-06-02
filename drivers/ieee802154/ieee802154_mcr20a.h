@@ -17,7 +17,6 @@ DECL|isr_sem|member|struct k_sem isr_sem;
 DECL|lqi|member|u8_t lqi;
 DECL|mac_addr|member|u8_t mac_addr[8];
 DECL|mcr20a_context|struct|struct mcr20a_context {
-DECL|mcr20a_rx_stack|member|char __stack mcr20a_rx_stack[CONFIG_IEEE802154_MCR20A_RX_STACK_SIZE];
 DECL|mcr20a_rx_thread|member|struct k_thread mcr20a_rx_thread;
 DECL|mcr20a_spi|struct|struct mcr20a_spi {
 DECL|phy_mutex|member|struct k_mutex phy_mutex;

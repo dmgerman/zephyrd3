@@ -165,7 +165,6 @@ DECL|spi_port|member|const char *spi_port;
 DECL|spi_sem|member|struct k_sem spi_sem;
 DECL|spi_slave|member|u8_t spi_slave;
 DECL|spi|member|struct device *spi;
-DECL|thread_stack|member|char __stack thread_stack[CONFIG_ETH_ENC28J60_RX_THREAD_STACK_SIZE];
 DECL|thread|member|struct k_thread thread;
 DECL|timeout|member|s32_t timeout;
 DECL|tx_rx_sem|member|struct k_sem tx_rx_sem;
