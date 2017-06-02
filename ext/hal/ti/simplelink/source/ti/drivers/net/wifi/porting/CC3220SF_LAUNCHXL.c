@@ -1,0 +1,16 @@
+DECL|CC3220SF_LAUNCHXL_SPI0|enumerator|CC3220SF_LAUNCHXL_SPI0 = 0,
+DECL|CC3220SF_LAUNCHXL_SPICOUNT|enumerator|CC3220SF_LAUNCHXL_SPICOUNT
+DECL|CC3220SF_LAUNCHXL_SPIName|enum|typedef enum CC3220SF_LAUNCHXL_SPIName {
+DECL|CC3220SF_LAUNCHXL_SPIName|typedef|} CC3220SF_LAUNCHXL_SPIName;
+DECL|CC3220SF_LAUNCHXL_init|function|void CC3220SF_LAUNCHXL_init()
+DECL|SPI_config|variable|SPI_config
+DECL|SPI_count|variable|SPI_count
+DECL|UDMACC32XX_config|variable|UDMACC32XX_config
+DECL|dmaControlTable|variable|dmaControlTable
+DECL|dmaErrorFxn|function|static void dmaErrorFxn(uintptr_t arg)
+DECL|spiCC3220SDMAHWAttrs|variable|spiCC3220SDMAHWAttrs
+DECL|spiCC3220SDMAObjects|variable|spiCC3220SDMAObjects
+DECL|spiCC3220SDMAscratchBuf|variable|spiCC3220SDMAscratchBuf
+DECL|udmaCC3220SHWAttrs|variable|udmaCC3220SHWAttrs
+DECL|udmaCC3220SObject|variable|udmaCC3220SObject
+DECL|ulDebugHeader|variable|ulDebugHeader

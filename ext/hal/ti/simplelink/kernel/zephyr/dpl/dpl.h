@@ -1,0 +1,1 @@
+DECL|MEM_ALIGN|macro|MEM_ALIGN
