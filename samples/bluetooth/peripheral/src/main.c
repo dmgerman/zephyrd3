@@ -1,6 +1,5 @@
 DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
-DECL|HEART_RATE_APPEARANCE|macro|HEART_RATE_APPEARANCE
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad|variable|ad
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)

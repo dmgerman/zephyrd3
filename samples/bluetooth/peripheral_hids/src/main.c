@@ -1,6 +1,5 @@
 DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
-DECL|HOG_APPEARANCE|macro|HOG_APPEARANCE
 DECL|ad|variable|ad
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_display|variable|auth_cb_display
