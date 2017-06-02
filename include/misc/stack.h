@@ -1,3 +1,4 @@
+DECL|STACK_ANALYZE|macro|STACK_ANALYZE
 DECL|_MISC_STACK_H_|macro|_MISC_STACK_H_
 DECL|stack_analyze|function|static inline void stack_analyze(const char *name, const char *stack, unsigned int size)
 DECL|stack_analyze|function|static inline void stack_analyze(const char *name, const char *stack, unsigned int size)

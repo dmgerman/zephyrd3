@@ -17,11 +17,8 @@ DECL|__start_tick_tsc|variable|__start_tick_tsc
 DECL|__start_tsc|variable|__start_tsc
 DECL|_bss_zero|function|void _bss_zero(void)
 DECL|_data_copy|function|void _data_copy(void)
-DECL|_idle_stack|variable|_idle_stack
 DECL|_idle_thread_s|variable|_idle_thread_s
 DECL|_idle_thread|variable|_idle_thread
-DECL|_interrupt_stack|variable|_interrupt_stack
-DECL|_main_stack|variable|_main_stack
 DECL|_main_thread_s|variable|_main_thread_s
 DECL|_main_thread|variable|_main_thread
 DECL|_main|function|static void _main(void *unused1, void *unused2, void *unused3)
