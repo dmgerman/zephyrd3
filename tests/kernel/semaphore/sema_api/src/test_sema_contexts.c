@@ -12,4 +12,3 @@ DECL|test_sema_thread2isr|function|void test_sema_thread2isr(void)
 DECL|test_sema_thread2thread|function|void test_sema_thread2thread(void)
 DECL|tsema_thread_isr|function|static void tsema_thread_isr(struct k_sem *psem)
 DECL|tsema_thread_thread|function|static void tsema_thread_thread(struct k_sem *psem)
-DECL|tstack|variable|tstack

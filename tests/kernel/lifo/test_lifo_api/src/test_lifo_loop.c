@@ -11,4 +11,3 @@ DECL|test_lifo_loop|function|void test_lifo_loop(void)
 DECL|tlifo_get|function|static void tlifo_get(struct k_lifo *plifo)
 DECL|tlifo_put|function|static void tlifo_put(struct k_lifo *plifo)
 DECL|tlifo_read_write|function|static void tlifo_read_write(struct k_lifo *plifo)
-DECL|tstack|variable|tstack

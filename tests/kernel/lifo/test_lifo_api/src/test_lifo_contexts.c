@@ -16,4 +16,3 @@ DECL|tlifo_isr_thread|function|static void tlifo_isr_thread(struct k_lifo *plifo
 DECL|tlifo_put|function|static void tlifo_put(struct k_lifo *plifo)
 DECL|tlifo_thread_isr|function|static void tlifo_thread_isr(struct k_lifo *plifo)
 DECL|tlifo_thread_thread|function|static void tlifo_thread_thread(struct k_lifo *plifo)
-DECL|tstack|variable|tstack

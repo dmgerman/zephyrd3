@@ -8,4 +8,3 @@ DECL|test_threads_cancel_started|function|void test_threads_cancel_started(void)
 DECL|test_threads_cancel_undelayed|function|void test_threads_cancel_undelayed(void)
 DECL|thread_entry_abort|function|static void thread_entry_abort(void *p1, void *p2, void *p3)
 DECL|thread_entry|function|static void thread_entry(void *p1, void *p2, void *p3)
-DECL|tstack|variable|tstack

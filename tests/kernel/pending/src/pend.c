@@ -15,7 +15,6 @@ DECL|coop_high_state|variable|coop_high_state
 DECL|coop_high|function|static void coop_high(void *arg1, void *arg2, void *arg3)
 DECL|coop_low_state|variable|coop_low_state
 DECL|coop_low|function|static void coop_low(void *arg1, void *arg2, void *arg3)
-DECL|coop_stack|variable|coop_stack
 DECL|coop_thread|variable|coop_thread
 DECL|counter|variable|counter
 DECL|data|member|u32_t data;
@@ -32,7 +31,6 @@ DECL|lifo_tests|function|static void lifo_tests(s32_t timeout, volatile int *sta
 DECL|lifo|variable|lifo
 DECL|my_fifo_get|function|static inline void *my_fifo_get(struct k_fifo *fifo, s32_t timeout)
 DECL|my_lifo_get|function|static inline void *my_lifo_get(struct k_lifo *lifo, s32_t timeout)
-DECL|offload_work_q_stack|variable|offload_work_q_stack
 DECL|offload_work_q|variable|offload_work_q
 DECL|offload_work|struct|struct offload_work {
 DECL|reserved|member|u32_t reserved;

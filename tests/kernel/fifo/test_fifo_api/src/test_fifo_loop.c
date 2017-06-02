@@ -11,4 +11,3 @@ DECL|test_fifo_loop|function|void test_fifo_loop(void)
 DECL|tfifo_get|function|static void tfifo_get(struct k_fifo *pfifo)
 DECL|tfifo_put|function|static void tfifo_put(struct k_fifo *pfifo)
 DECL|tfifo_read_write|function|static void tfifo_read_write(struct k_fifo *pfifo)
-DECL|tstack|variable|tstack

@@ -19,7 +19,6 @@ DECL|test_work_submit_thread|function|void test_work_submit_thread(void)
 DECL|test_work_submit_to_queue_isr|function|void test_work_submit_to_queue_isr(void)
 DECL|test_work_submit_to_queue_thread|function|void test_work_submit_to_queue_thread(void)
 DECL|test_workq_start_before_submit|function|void test_workq_start_before_submit(void)
-DECL|tstack|variable|tstack
 DECL|twork_submit|function|static void twork_submit(void *data)
 DECL|work_handler|function|static void work_handler(struct k_work *w)
 DECL|work_sleepy|function|static void work_sleepy(struct k_work *w)

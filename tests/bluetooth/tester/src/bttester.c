@@ -6,7 +6,6 @@ DECL|cmd_thread|variable|cmd_thread
 DECL|handle_core|function|static void handle_core(u8_t opcode, u8_t index, u8_t *data,u16_t len)
 DECL|recv_cb|function|static u8_t *recv_cb(u8_t *buf, size_t *off)
 DECL|register_service|function|static void register_service(u8_t *data, u16_t len)
-DECL|stack|variable|stack
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
 DECL|supported_services|function|static void supported_services(u8_t *data, u16_t len)
 DECL|tester_init|function|void tester_init(void)

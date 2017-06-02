@@ -22,7 +22,6 @@ DECL|test_end_signal|variable|test_end_signal
 DECL|test_fail|variable|test_fail
 DECL|test_result|variable|test_result
 DECL|test_status|variable|test_status
-DECL|thread_stack|variable|thread_stack
 DECL|ztest_test_fail|function|void ztest_test_fail(void)
 DECL|ztest_test_fail|function|void ztest_test_fail(void)
 DECL|ztest_thread|variable|ztest_thread

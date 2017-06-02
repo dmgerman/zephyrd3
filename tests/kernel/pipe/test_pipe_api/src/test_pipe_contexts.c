@@ -15,4 +15,3 @@ DECL|tpipe_block_put|function|static void tpipe_block_put(struct k_pipe *ppipe, 
 DECL|tpipe_get|function|static void tpipe_get(struct k_pipe *ppipe)
 DECL|tpipe_put|function|static void tpipe_put(struct k_pipe *ppipe)
 DECL|tpipe_thread_thread|function|static void tpipe_thread_thread(struct k_pipe *ppipe)
-DECL|tstack|variable|tstack

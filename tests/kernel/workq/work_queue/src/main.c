@@ -4,7 +4,6 @@ DECL|SUBMIT_WAIT|macro|SUBMIT_WAIT
 DECL|WORK_ITEM_WAIT|macro|WORK_ITEM_WAIT
 DECL|check_results|function|static int check_results(int num_tests)
 DECL|co_op_data|variable|co_op_data
-DECL|co_op_stack|variable|co_op_stack
 DECL|coop_delayed_work_cancel_main|function|static void coop_delayed_work_cancel_main(int arg1, int arg2)
 DECL|coop_delayed_work_main|function|static void coop_delayed_work_main(int arg1, int arg2)
 DECL|coop_delayed_work_resubmit|function|static void coop_delayed_work_resubmit(int arg1, int arg2)

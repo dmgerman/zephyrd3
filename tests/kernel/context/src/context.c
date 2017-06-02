@@ -47,12 +47,9 @@ DECL|thread_detected_error|variable|thread_detected_error
 DECL|thread_entry|function|static void thread_entry(void *task_thread_id, void *arg1, void *arg2)
 DECL|thread_evidence|variable|thread_evidence
 DECL|thread_helper|function|static void thread_helper(void *arg1, void *arg2, void *arg3)
-DECL|thread_stack1|variable|thread_stack1
-DECL|thread_stack2|variable|thread_stack2
 DECL|timeout_order_fifo|variable|timeout_order_fifo
 DECL|timeout_order|member|int timeout_order;
 DECL|timeout_order|struct|struct timeout_order {
-DECL|timeout_stacks|variable|timeout_stacks
 DECL|timeout_threads|variable|timeout_threads
 DECL|timeouts|variable|timeouts
 DECL|timeout|member|s32_t timeout;

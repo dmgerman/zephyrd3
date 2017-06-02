@@ -9,6 +9,5 @@ DECL|func_array|variable|func_array
 DECL|i|variable|i
 DECL|main|function|void main(void)
 DECL|objects_thread|variable|objects_thread
-DECL|pStack|variable|pStack
 DECL|pfunc|typedef|typedef void * (*pfunc) (void *);
 DECL|thread_entry|function|static void thread_entry(void *arg1, void *arg2, void *arg3)

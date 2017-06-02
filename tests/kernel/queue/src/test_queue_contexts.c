@@ -19,4 +19,3 @@ DECL|tqueue_get|function|static void tqueue_get(struct k_queue *pqueue)
 DECL|tqueue_isr_thread|function|static void tqueue_isr_thread(struct k_queue *pqueue)
 DECL|tqueue_thread_isr|function|static void tqueue_thread_isr(struct k_queue *pqueue)
 DECL|tqueue_thread_thread|function|static void tqueue_thread_thread(struct k_queue *pqueue)
-DECL|tstack|variable|tstack

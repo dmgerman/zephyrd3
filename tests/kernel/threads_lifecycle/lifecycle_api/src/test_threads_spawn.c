@@ -10,4 +10,3 @@ DECL|thread_entry_priority|function|static void thread_entry_priority(void *p1, 
 DECL|tp1|variable|tp1
 DECL|tp2|variable|tp2
 DECL|tp3|variable|tp3
-DECL|tstack|variable|tstack

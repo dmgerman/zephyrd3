@@ -30,4 +30,3 @@ DECL|tmbox_entry|function|static void tmbox_entry(void *p1, void *p2, void *p3)
 DECL|tmbox_get|function|static void tmbox_get(struct k_mbox *pmbox)
 DECL|tmbox_put|function|static void tmbox_put(struct k_mbox *pmbox)
 DECL|tmbox|function|static void tmbox(struct k_mbox *pmbox)
-DECL|tstack|variable|tstack

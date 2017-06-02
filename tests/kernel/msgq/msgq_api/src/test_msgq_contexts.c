@@ -10,4 +10,3 @@ DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *
 DECL|tdata|variable|tdata
 DECL|test_msgq_isr|function|void test_msgq_isr(void)
 DECL|test_msgq_thread|function|void test_msgq_thread(void)
-DECL|tstack|variable|tstack

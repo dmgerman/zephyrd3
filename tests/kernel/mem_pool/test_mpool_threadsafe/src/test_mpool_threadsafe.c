@@ -13,4 +13,3 @@ DECL|sync_sema|variable|sync_sema
 DECL|tdata|variable|tdata
 DECL|test_mpool_threadsafe|function|void test_mpool_threadsafe(void)
 DECL|tmpool_api|function|static void tmpool_api(void *p1, void *p2, void *p3)
-DECL|tstack|variable|tstack

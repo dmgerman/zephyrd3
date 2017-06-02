@@ -21,4 +21,3 @@ DECL|tfifo_isr_thread|function|static void tfifo_isr_thread(struct k_fifo *pfifo
 DECL|tfifo_put|function|static void tfifo_put(struct k_fifo *pfifo)
 DECL|tfifo_thread_isr|function|static void tfifo_thread_isr(struct k_fifo *pfifo)
 DECL|tfifo_thread_thread|function|static void tfifo_thread_thread(struct k_fifo *pfifo)
-DECL|tstack|variable|tstack

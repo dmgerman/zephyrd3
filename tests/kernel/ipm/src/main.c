@@ -14,4 +14,3 @@ DECL|receiver_data|variable|receiver_data
 DECL|ring_buf_data|variable|ring_buf_data
 DECL|sender_config|variable|sender_config
 DECL|thestr|variable|thestr
-DECL|thread_stack|variable|thread_stack

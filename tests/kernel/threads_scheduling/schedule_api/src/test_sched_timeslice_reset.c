@@ -8,4 +8,3 @@ DECL|expected_slice|variable|expected_slice
 DECL|test_slice_reset|function|void test_slice_reset(void)
 DECL|thread_idx|variable|thread_idx
 DECL|thread_tslice|function|static void thread_tslice(void *p1, void *p2, void *p3)
-DECL|tstack|variable|tstack

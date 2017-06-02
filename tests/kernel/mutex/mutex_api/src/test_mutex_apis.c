@@ -15,4 +15,3 @@ DECL|test_mutex_reent_lock_timeout_pass|function|void test_mutex_reent_lock_time
 DECL|tmutex_test_lock_timeout|function|static void tmutex_test_lock_timeout(struct k_mutex *pmutex, void (*entry_fn)(void *, void *, void *))
 DECL|tmutex_test_lock_unlock|function|static void tmutex_test_lock_unlock(struct k_mutex *pmutex)
 DECL|tmutex_test_lock|function|static void tmutex_test_lock(struct k_mutex *pmutex, void (*entry_fn)(void *, void *, void *))
-DECL|tstack|variable|tstack

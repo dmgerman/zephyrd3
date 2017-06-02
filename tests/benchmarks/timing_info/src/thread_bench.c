@@ -7,8 +7,6 @@ DECL|benchmarking_overhead_swap|function|u32_t benchmarking_overhead_swap(void)
 DECL|consumer_tid|variable|consumer_tid
 DECL|dummy_time|variable|dummy_time
 DECL|heap_malloc_free_bench|function|void heap_malloc_free_bench(void)
-DECL|my_stack_area_0|variable|my_stack_area_0
-DECL|my_stack_area|variable|my_stack_area
 DECL|my_thread_0|variable|my_thread_0
 DECL|my_thread|variable|my_thread
 DECL|producer_tid|variable|producer_tid

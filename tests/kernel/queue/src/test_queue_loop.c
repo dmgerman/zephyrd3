@@ -12,4 +12,3 @@ DECL|test_queue_loop|function|void test_queue_loop(void)
 DECL|tqueue_append|function|static void tqueue_append(struct k_queue *pqueue)
 DECL|tqueue_get|function|static void tqueue_get(struct k_queue *pqueue)
 DECL|tqueue_read_write|function|static void tqueue_read_write(struct k_queue *pqueue)
-DECL|tstack|variable|tstack

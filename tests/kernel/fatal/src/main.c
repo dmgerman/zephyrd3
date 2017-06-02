@@ -4,7 +4,6 @@ DECL|OVERFLOW_STACKSIZE|macro|OVERFLOW_STACKSIZE
 DECL|PRIORITY|macro|PRIORITY
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|_SysFatalErrorHandler|function|void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
-DECL|alt_stack|variable|alt_stack
 DECL|alt_thread1|function|void alt_thread1(void)
 DECL|alt_thread2|function|void alt_thread2(void)
 DECL|alt_thread3|function|void alt_thread3(void)

@@ -22,4 +22,3 @@ DECL|test_thread_alert_ignore|function|void test_thread_alert_ignore(void)
 DECL|test_thread_alert_pending|function|void test_thread_alert_pending(void)
 DECL|test_thread_kinit_alert|function|void test_thread_kinit_alert(void)
 DECL|thread_alert|function|static void thread_alert(void)
-DECL|tstack|variable|tstack
