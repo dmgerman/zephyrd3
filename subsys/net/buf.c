@@ -31,6 +31,7 @@ DECL|net_buf_frag_del_debug|function|struct net_buf *net_buf_frag_del_debug(stru
 DECL|net_buf_frag_insert|function|void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_last|function|struct net_buf *net_buf_frag_last(struct net_buf *buf)
 DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo *fifo, s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_get(struct k_fifo *fifo, s32_t timeout) #endif
+DECL|net_buf_pool_get|function|struct net_buf_pool *net_buf_pool_get(int id)
 DECL|net_buf_put|function|void net_buf_put(struct k_fifo *fifo, struct net_buf *buf)
 DECL|net_buf_ref|function|struct net_buf *net_buf_ref(struct net_buf *buf)
 DECL|net_buf_reserve|function|void net_buf_reserve(struct net_buf *buf, size_t reserve)
@@ -56,3 +57,4 @@ DECL|net_buf_simple_push|function|void *net_buf_simple_push(struct net_buf_simpl
 DECL|net_buf_simple_tailroom|function|size_t net_buf_simple_tailroom(struct net_buf_simple *buf)
 DECL|net_buf_unref_debug|function|void net_buf_unref_debug(struct net_buf *buf, const char *func, int line)
 DECL|pool_get_uninit|function|static inline struct net_buf *pool_get_uninit(struct net_buf_pool *pool, u16_t uninit_count)
+DECL|pool_id|function|static int pool_id(struct net_buf_pool *pool)

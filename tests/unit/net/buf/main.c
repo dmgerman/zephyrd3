@@ -1,5 +1,6 @@
 DECL|TEST_BUF_COUNT|macro|TEST_BUF_COUNT
 DECL|TEST_BUF_SIZE|macro|TEST_BUF_SIZE
+DECL|_net_buf_pool_list|variable|_net_buf_pool_list
 DECL|irq_lock|function|unsigned int irq_lock(void)
 DECL|irq_unlock|function|void irq_unlock(unsigned int key)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)

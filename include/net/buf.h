@@ -59,8 +59,8 @@ DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|offset|member|u16_t offset;
+DECL|pool_id|member|u8_t pool_id;
 DECL|pool_size|member|const u16_t pool_size;
-DECL|pool|member|struct net_buf_pool *pool;
 DECL|ref|member|u8_t ref;
 DECL|size|member|u16_t size;
 DECL|size|member|u16_t size;
