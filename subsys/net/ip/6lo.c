@@ -35,7 +35,7 @@ DECL|net_6lo_uncompress|function|bool net_6lo_uncompress(struct net_pkt *pkt)
 DECL|prefix|member|struct in6_addr prefix;
 DECL|set_6lo_context|function|static inline void set_6lo_context(struct net_if *iface, u8_t index, struct net_icmpv6_nd_opt_6co *context)
 DECL|uncompress_IPHC_header|function|static inline bool uncompress_IPHC_header(struct net_pkt *pkt)
-DECL|uncompress_cid|function|static inline bool uncompress_cid(struct net_pkt *pkt, struct net_6lo_context **src, struct net_6lo_context **dst)
+DECL|uncompress_cid|function|static inline void uncompress_cid(struct net_pkt *pkt, struct net_6lo_context **src, struct net_6lo_context **dst)
 DECL|uncompress_da_ctx|function|static inline u8_t uncompress_da_ctx(struct net_pkt *pkt,struct net_ipv6_hdr *ipv6, u8_t offset, struct net_6lo_context *ctx)
 DECL|uncompress_da_mcast|function|static inline u8_t uncompress_da_mcast(struct net_pkt *pkt, struct net_ipv6_hdr *ipv6, u8_t offset)
 DECL|uncompress_da|function|static inline u8_t uncompress_da(struct net_pkt *pkt, struct net_ipv6_hdr *ipv6, u8_t offset)
