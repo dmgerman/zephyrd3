@@ -18,6 +18,7 @@ DECL|block|member|struct k_mem_block block;
 DECL|entropy_source|function|static int entropy_source(void *data, unsigned char *output, size_t len, size_t *olen)
 DECL|http_add_chunk|function|static int http_add_chunk(struct net_pkt *pkt, s32_t timeout, const char *str)
 DECL|http_add_header|function|static int http_add_header(struct net_pkt *pkt, s32_t timeout, const char *str)
+DECL|http_conn|variable|http_conn
 DECL|http_process_recv|function|static int http_process_recv(struct http_server_ctx *http_ctx)
 DECL|http_recv|function|static void http_recv(struct net_context *net_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|http_response_400|function|int http_response_400(struct http_server_ctx *ctx, const char *html_payload)
@@ -27,6 +28,11 @@ DECL|http_response_wait|function|int http_response_wait(struct http_server_ctx *
 DECL|http_response|function|int http_response(struct http_server_ctx *ctx, const char *http_header, const char *html_payload)
 DECL|http_server_add_default|function|struct http_root_url *http_server_add_default(struct http_server_urls *my, http_url_cb_t write_cb)
 DECL|http_server_add_url|function|struct http_root_url *http_server_add_url(struct http_server_urls *my, const char *url, u8_t flags, http_url_cb_t write_cb)
+DECL|http_server_conn_add|function|static void http_server_conn_add(struct http_server_ctx *ctx)
+DECL|http_server_conn_add|macro|http_server_conn_add
+DECL|http_server_conn_del|function|static void http_server_conn_del(struct http_server_ctx *ctx)
+DECL|http_server_conn_del|macro|http_server_conn_del
+DECL|http_server_conn_foreach|function|void http_server_conn_foreach(http_server_cb_t cb, void *user_data)
 DECL|http_server_del_default|function|int http_server_del_default(struct http_server_urls *my)
 DECL|http_server_del_url|function|int http_server_del_url(struct http_server_urls *my, const char *url)
 DECL|http_server_disable|function|bool http_server_disable(struct http_server_ctx *http_ctx)

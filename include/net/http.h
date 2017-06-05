@@ -57,6 +57,8 @@ DECL|http_receive_cb_t|typedef|typedef void (*http_receive_cb_t)(struct http_cli
 DECL|http_response_cb_t|typedef|typedef void (*http_response_cb_t)(struct http_client_ctx *ctx,
 DECL|http_root_url|struct|struct http_root_url {
 DECL|http_send_data_t|typedef|typedef int (*http_send_data_t)(struct net_pkt *pkt,
+DECL|http_server_cb_t|typedef|typedef void (*http_server_cb_t)(struct http_server_ctx *entry,
+DECL|http_server_conn_foreach|macro|http_server_conn_foreach
 DECL|http_server_ctx|struct|struct http_server_ctx {
 DECL|http_server_urls|struct|struct http_server_urls {
 DECL|http_status|member|char http_status[HTTP_STATUS_STR_SIZE];
@@ -82,6 +84,7 @@ DECL|method|member|enum http_method method;
 DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|net_ipv4_ctx|member|struct net_context *net_ipv4_ctx;
 DECL|net_ipv6_ctx|member|struct net_context *net_ipv6_ctx;
+DECL|node|member|sys_snode_t node;
 DECL|parser|member|struct http_parser parser;
 DECL|parser|member|struct http_parser parser;
 DECL|payload_size|member|u16_t payload_size;
