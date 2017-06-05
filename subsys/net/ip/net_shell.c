@@ -1,6 +1,7 @@
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
+DECL|MAX_HTTP_OUTPUT_LEN|macro|MAX_HTTP_OUTPUT_LEN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|TCP_CONNECT_TIMEOUT|macro|TCP_CONNECT_TIMEOUT
@@ -25,8 +26,11 @@ DECL|context_info|function|static void context_info(struct net_context *context,
 DECL|ctx_info|struct|struct ctx_info {
 DECL|data_pools|member|struct net_buf_pool *data_pools[CONFIG_NET_MAX_CONTEXTS];
 DECL|dns_result_cb|function|static void dns_result_cb(enum dns_resolve_status status, struct dns_addrinfo *info, void *user_data)
+DECL|get_addresses|function|static void get_addresses(struct net_context *context, char addr_local[], int local_len, char addr_remote[], int remote_len)
 DECL|get_my_ipv4_addr|function|static void get_my_ipv4_addr(struct net_if *iface, struct sockaddr *myaddr)
 DECL|get_my_ipv6_addr|function|static void get_my_ipv6_addr(struct net_if *iface, struct sockaddr *myaddr)
+DECL|http_server_cb|function|static void http_server_cb(struct http_server_ctx *entry, void *user_data)
+DECL|http_str_output|function|static char *http_str_output(char *output, int outlen, const char *str, int len)
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
@@ -36,6 +40,7 @@ DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
 DECL|net_shell_cmd_conn|function|int net_shell_cmd_conn(int argc, char *argv[])
 DECL|net_shell_cmd_dns|function|int net_shell_cmd_dns(int argc, char *argv[])
+DECL|net_shell_cmd_http|function|int net_shell_cmd_http(int argc, char *argv[])
 DECL|net_shell_cmd_iface|function|int net_shell_cmd_iface(int argc, char *argv[])
 DECL|net_shell_cmd_mem|function|int net_shell_cmd_mem(int argc, char *argv[])
 DECL|net_shell_cmd_nbr|function|int net_shell_cmd_nbr(int argc, char *argv[])
