@@ -15,6 +15,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|accept_cb|function|static void accept_cb(struct net_context *net_ctx, struct sockaddr *addr, socklen_t addrlen, int status, void *data)
 DECL|block|member|struct k_mem_block block;
+DECL|ctx_mon|variable|ctx_mon
 DECL|entropy_source|function|static int entropy_source(void *data, unsigned char *output, size_t len, size_t *olen)
 DECL|http_add_chunk|function|static int http_add_chunk(struct net_pkt *pkt, s32_t timeout, const char *str)
 DECL|http_add_header|function|static int http_add_header(struct net_pkt *pkt, s32_t timeout, const char *str)
@@ -33,6 +34,7 @@ DECL|http_server_conn_add|macro|http_server_conn_add
 DECL|http_server_conn_del|function|static void http_server_conn_del(struct http_server_ctx *ctx)
 DECL|http_server_conn_del|macro|http_server_conn_del
 DECL|http_server_conn_foreach|function|void http_server_conn_foreach(http_server_cb_t cb, void *user_data)
+DECL|http_server_conn_monitor|function|void http_server_conn_monitor(http_server_cb_t cb, void *user_data)
 DECL|http_server_del_default|function|int http_server_del_default(struct http_server_urls *my)
 DECL|http_server_del_url|function|int http_server_del_url(struct http_server_urls *my, const char *url)
 DECL|http_server_disable|function|bool http_server_disable(struct http_server_ctx *http_ctx)
@@ -50,6 +52,7 @@ DECL|https_init|function|static int https_init(struct http_server_ctx *ctx)
 DECL|https_send|function|static int https_send(struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token, void *user_data)
 DECL|https_server_init|function|int https_server_init(struct http_server_ctx *ctx, struct http_server_urls *urls, struct sockaddr *server_addr, u8_t *request_buf, size_t request_buf_len,
 DECL|init_net|function|static int init_net(struct http_server_ctx *ctx, struct sockaddr *server_addr, u16_t port)
+DECL|mon_user_data|variable|mon_user_data
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)
 DECL|new_client|function|static inline void new_client(struct http_server_ctx *http_ctx, struct net_context *net_ctx, const struct sockaddr *addr)
 DECL|new_server|function|static inline void new_server(struct http_server_ctx *ctx, const char *server_banner, const struct sockaddr *addr)

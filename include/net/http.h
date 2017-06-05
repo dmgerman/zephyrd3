@@ -59,6 +59,7 @@ DECL|http_root_url|struct|struct http_root_url {
 DECL|http_send_data_t|typedef|typedef int (*http_send_data_t)(struct net_pkt *pkt,
 DECL|http_server_cb_t|typedef|typedef void (*http_server_cb_t)(struct http_server_ctx *entry,
 DECL|http_server_conn_foreach|macro|http_server_conn_foreach
+DECL|http_server_conn_monitor|macro|http_server_conn_monitor
 DECL|http_server_ctx|struct|struct http_server_ctx {
 DECL|http_server_urls|struct|struct http_server_urls {
 DECL|http_status|member|char http_status[HTTP_STATUS_STR_SIZE];
