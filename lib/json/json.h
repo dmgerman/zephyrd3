@@ -22,7 +22,7 @@ DECL|__JSON_H|macro|__JSON_H
 DECL|element_descr|member|const struct json_obj_descr *element_descr;
 DECL|field_name_len|member|size_t field_name_len;
 DECL|field_name|member|const char *field_name;
-DECL|json_append_bytes_t|typedef|typedef int (*json_append_bytes_t)(const u8_t *bytes, size_t len,
+DECL|json_append_bytes_t|typedef|typedef int (*json_append_bytes_t)(const char *bytes, size_t len,
 DECL|json_obj_descr|struct|struct json_obj_descr {
 DECL|json_tokens|enum|enum json_tokens {
 DECL|n_elements|member|size_t n_elements;
