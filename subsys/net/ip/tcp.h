@@ -33,13 +33,12 @@ DECL|NET_TCP_URG|macro|NET_TCP_URG
 DECL|NET_TCP_WINDOW_HEADER|macro|NET_TCP_WINDOW_HEADER
 DECL|NET_TCP_WINDOW_SIZE|macro|NET_TCP_WINDOW_SIZE
 DECL|__TCP_H|macro|__TCP_H
-DECL|_padding|member|u32_t _padding : 11;
+DECL|_padding|member|u32_t _padding : 12;
 DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|ack_timer_cancelled|member|u32_t ack_timer_cancelled : 1;
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|connect_wait|member|struct k_sem connect_wait;
 DECL|context|member|struct net_context *context;
-DECL|fin_queued|member|u32_t fin_queued : 1;
 DECL|fin_rcvd|member|u32_t fin_rcvd : 1;
 DECL|fin_sent|member|u32_t fin_sent : 1;
 DECL|flags|member|u32_t flags : 8;
