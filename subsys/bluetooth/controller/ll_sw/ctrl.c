@@ -208,6 +208,7 @@ DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,s
 DECL|phy_p|member|u8_t phy_p:3;
 DECL|phy_rsp_send|function|static void phy_rsp_send(struct connection *conn)
 DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *radio_pdu_node_rx,u8_t *rx_enqueue)
+DECL|phy|member|u8_t phy:3;
 DECL|ping_resp_send|function|static void ping_resp_send(struct connection *conn)
 DECL|pkt_release|member|struct pdu_data_q_tx *pkt_release;
 DECL|pkt_rx_data_free|member|void *pkt_rx_data_free;
@@ -246,6 +247,7 @@ DECL|radio_tx_mem_enqueue|function|u32_t radio_tx_mem_enqueue(u16_t handle, stru
 DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_node_tx *node_tx)
 DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
+DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
 DECL|role_active_disable|function|static inline void role_active_disable(u8_t ticker_id_stop, u32_t ticks_xtal_to_start, u32_t ticks_active_to_start)
 DECL|role_disable|function|static u32_t role_disable(u8_t ticker_id_primary, u8_t ticker_id_stop)

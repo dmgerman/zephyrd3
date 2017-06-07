@@ -5,4 +5,5 @@ DECL|ll_scan_params_set|function|u32_t ll_scan_params_set(u8_t type, u16_t inter
 DECL|ll_scan|variable|ll_scan
 DECL|tx_addr|member|u8_t tx_addr:1;
 DECL|type|member|u8_t type:1;
+DECL|type|member|u8_t type:4;
 DECL|window|member|u16_t window;
