@@ -17,7 +17,7 @@ DECL|RADIO_TIFS|macro|RADIO_TIFS
 DECL|ROLE_ADV|enumerator|ROLE_ADV,
 DECL|ROLE_MASTER|enumerator|ROLE_MASTER,
 DECL|ROLE_NONE|enumerator|ROLE_NONE,
-DECL|ROLE_OBS|enumerator|ROLE_OBS,
+DECL|ROLE_SCAN|enumerator|ROLE_SCAN,
 DECL|ROLE_SLAVE|enumerator|ROLE_SLAVE,
 DECL|SILENT_CONNECTION|macro|SILENT_CONNECTION
 DECL|STATE_ABORT|enumerator|STATE_ABORT,
@@ -32,8 +32,8 @@ DECL|addr_us_get|function|static inline u32_t addr_us_get(u8_t phy)
 DECL|adv_addr_type|member|u8_t adv_addr_type:1;
 DECL|adv_addr|member|u8_t adv_addr[BDADDR_SIZE];
 DECL|adv_data|member|struct radio_adv_data adv_data;
-DECL|adv_obs_configure|function|static void adv_obs_configure(u8_t phy, u8_t flags)
-DECL|adv_obs_conn_configure|function|static void adv_obs_conn_configure(void)
+DECL|adv_scan_configure|function|static void adv_scan_configure(u8_t phy, u8_t flags)
+DECL|adv_scan_conn_configure|function|static void adv_scan_conn_configure(void)
 DECL|adv_setup|function|static void adv_setup(void)
 DECL|advertiser|member|struct advertiser advertiser;
 DECL|advertiser|struct|struct advertiser {
@@ -95,11 +95,11 @@ DECL|event_inactive|function|static void event_inactive(u32_t ticks_at_expire, u
 DECL|event_len_prep|function|static inline void event_len_prep(struct connection *conn)
 DECL|event_master_prepare|function|static void event_master_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_master|function|static void event_master(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
-DECL|event_obs_prepare|function|static void event_obs_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
-DECL|event_obs|function|static void event_obs(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_phy_req_prep|function|static inline void event_phy_req_prep(struct connection *conn)
 DECL|event_phy_upd_ind_prep|function|static inline void event_phy_upd_ind_prep(struct connection *conn, u16_t event_counter)
 DECL|event_ping_prep|function|static inline void event_ping_prep(struct connection *conn)
+DECL|event_scan_prepare|function|static void event_scan_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
+DECL|event_scan|function|static void event_scan(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_slave_prepare|function|static void event_slave_prepare(u32_t ticks_at_expire, u32_t remainder,u16_t lazy, void *context)
 DECL|event_slave|function|static void event_slave(u32_t ticks_at_expire, u32_t remainder, u16_t lazy,void *context)
 DECL|event_stop|function|static void event_stop(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
@@ -132,7 +132,7 @@ DECL|irk|member|u8_t irk[RADIO_IRK_COUNT_MAX][16];
 DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
 DECL|isr_close_adv|function|static inline u32_t isr_close_adv(void)
 DECL|isr_close_conn|function|static inline void isr_close_conn(void)
-DECL|isr_close_obs|function|static inline u32_t isr_close_obs(void)
+DECL|isr_close_scan|function|static inline u32_t isr_close_scan(void)
 DECL|isr_radio_state_close|function|static inline void isr_radio_state_close(void)
 DECL|isr_radio_state_rx|function|static inline void isr_radio_state_rx(u8_t trx_done, u8_t crc_ok, u8_t devmatch_ok, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
 DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
@@ -148,8 +148,8 @@ DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx
 DECL|isr_rx_conn_pkt_release|function|isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
 DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct radio_pdu_node_tx **tx_release, u8_t *rx_enqueue)
 DECL|isr_rx_conn|function|static inline void isr_rx_conn(u8_t crc_ok, u8_t trx_done, u8_t rssi_ready)
-DECL|isr_rx_obs_report|function|static u32_t isr_rx_obs_report(u8_t rssi_ready)
-DECL|isr_rx_obs|function|static inline u32_t isr_rx_obs(u8_t irkmatch_id, u8_t rssi_ready)
+DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready)
+DECL|isr_rx_scan|function|static inline u32_t isr_rx_scan(u8_t irkmatch_id, u8_t rssi_ready)
 DECL|isr|function|static void isr(void)
 DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets)
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
@@ -191,8 +191,6 @@ DECL|mayfly_xtal_start|function|static void mayfly_xtal_start(void *params)
 DECL|mayfly_xtal_stop_calc|function|static void mayfly_xtal_stop_calc(void *params)
 DECL|mayfly_xtal_stop|function|static void mayfly_xtal_stop(void *params)
 DECL|nirk|member|u8_t nirk;
-DECL|observer|member|struct observer observer;
-DECL|observer|struct|struct observer {
 DECL|packet_counter|member|u8_t packet_counter;
 DECL|packet_data_octets_max|member|u16_t packet_data_octets_max;
 DECL|packet_release_first|member|u8_t packet_release_first;
@@ -262,6 +260,8 @@ DECL|scan_chan|member|u8_t scan_chan:2;
 DECL|scan_data|member|struct radio_adv_data scan_data;
 DECL|scan_state|member|u8_t scan_state:1;
 DECL|scan_type|member|u8_t scan_type:1;
+DECL|scanner|member|struct scanner scanner;
+DECL|scanner|struct|struct scanner {
 DECL|sca|member|u8_t sca;
 DECL|sched_after_mstr_free_offset_get|function|static void sched_after_mstr_free_offset_get(u16_t conn_interval, u32_t ticks_slot, u32_t ticks_anchor, u32_t *win_offset_us)
 DECL|sched_after_mstr_free_slot_get|function|static void sched_after_mstr_free_slot_get(u8_t user_id, u32_t ticks_slot_abs, u32_t *ticks_anchor, u32_t *us_offset)
@@ -277,7 +277,7 @@ DECL|ticker_if_done|function|static void ticker_if_done(u32_t status, void *ops_
 DECL|ticker_job_disable|function|static void ticker_job_disable(u32_t status, void *op_context)
 DECL|ticker_op_latency_cancelled|function|static void ticker_op_latency_cancelled(u32_t ticker_status, void *params)
 DECL|ticker_stop_adv_assert|function|static void ticker_stop_adv_assert(u32_t status, void *params)
-DECL|ticker_stop_obs_assert|function|static void ticker_stop_obs_assert(u32_t status, void *params)
+DECL|ticker_stop_scan_assert|function|static void ticker_stop_scan_assert(u32_t status, void *params)
 DECL|ticker_success_assert|function|static void ticker_success_assert(u32_t status, void *params)
 DECL|ticker_update_adv_assert|function|static void ticker_update_adv_assert(u32_t status, void *params)
 DECL|ticker_update_slave_assert|function|static void ticker_update_slave_assert(u32_t status, void *params)
