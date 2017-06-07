@@ -1,7 +1,7 @@
 DECL|accept_run|function|static int accept_run(struct lexer *lexer, const char *run)
 DECL|append_bytes_to_buf|function|static int append_bytes_to_buf(const char *bytes, size_t len, void *data)
 DECL|appender|struct|struct appender {
-DECL|arr_encode|function|static int arr_encode(const struct json_obj_descr *descr, const void *field, const void *val, json_append_bytes_t append_bytes, void *data)
+DECL|arr_encode|function|static int arr_encode(const struct json_obj_descr *elem_descr, const void *field, const void *val, json_append_bytes_t append_bytes, void *data)
 DECL|arr_next|function|static int arr_next(struct json_obj *json, struct token *value)
 DECL|arr_parse|function|static int arr_parse(struct json_obj *obj, const struct json_obj_descr *elem_descr, size_t max_elements, void *field, void *val)
 DECL|backup|function|static void backup(struct lexer *lexer)
