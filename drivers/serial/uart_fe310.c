@@ -36,7 +36,7 @@ DECL|uart_fe310_fifo_read|function|static int uart_fe310_fifo_read(struct device
 DECL|uart_fe310_init|function|static int uart_fe310_init(struct device *dev)
 DECL|uart_fe310_irq_callback_set|function|static void uart_fe310_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
 DECL|uart_fe310_irq_cfg_func_0|function|static void uart_fe310_irq_cfg_func_0(void)
-DECL|uart_fe310_irq_cfg_func_0|function|static void uart_fe310_irq_cfg_func_0(void)
+DECL|uart_fe310_irq_cfg_func_1|function|static void uart_fe310_irq_cfg_func_1(void)
 DECL|uart_fe310_irq_err_disable|function|static void uart_fe310_irq_err_disable(struct device *dev)
 DECL|uart_fe310_irq_err_enable|function|static void uart_fe310_irq_err_enable(struct device *dev)
 DECL|uart_fe310_irq_handler|function|static void uart_fe310_irq_handler(void *arg)
