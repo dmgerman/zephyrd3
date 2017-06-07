@@ -47,6 +47,7 @@ DECL|chan_sel_2_ut|function|static void chan_sel_2_ut(void)
 DECL|chan_sel_2|function|static u8_t chan_sel_2(u16_t counter, u16_t chan_id, u8_t *chan_map, u8_t chan_count)
 DECL|chan_sel_remap|function|static u8_t chan_sel_remap(u8_t *chan_map, u8_t chan_index)
 DECL|chan_set|function|static void chan_set(u32_t chan)
+DECL|chan|member|u8_t chan:2;
 DECL|chl_map_current|member|u8_t chl_map_current:3;
 DECL|chl_map|member|u8_t chl_map:3;
 DECL|common_init|function|static void common_init(void)
@@ -246,7 +247,7 @@ DECL|radio_rx_get|function|u8_t radio_rx_get(struct radio_pdu_node_rx **radio_pd
 DECL|radio_rx_mem_release|function|void radio_rx_mem_release(struct radio_pdu_node_rx **radio_pdu_node_rx)
 DECL|radio_scan_data_get|function|struct radio_adv_data *radio_scan_data_get(void)
 DECL|radio_scan_disable|function|u32_t radio_scan_disable(void)
-DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t scan_type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy)
+DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy)
 DECL|radio_scan_is_enabled|function|u32_t radio_scan_is_enabled(void)
 DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_set(u32_t ticks_active_to_start)
 DECL|radio_tx_mem_acquire|function|struct radio_pdu_node_tx *radio_tx_mem_acquire(void)
@@ -260,10 +261,7 @@ DECL|role|enum|enum role {
 DECL|role|member|enum role volatile role;
 DECL|rx_fc_lock|function|static void rx_fc_lock(u16_t handle)
 DECL|rx_packet_set|function|static void rx_packet_set(struct connection *conn, struct pdu_data *pdu_data_rx)
-DECL|scan_chan|member|u8_t scan_chan:2;
 DECL|scan_data|member|struct radio_adv_data scan_data;
-DECL|scan_state|member|u8_t scan_state:1;
-DECL|scan_type|member|u8_t scan_type:1;
 DECL|scanner|member|struct scanner scanner;
 DECL|scanner|struct|struct scanner {
 DECL|sca|member|u8_t sca;
@@ -273,6 +271,7 @@ DECL|sched_free_win_offset_calc|function|static void sched_free_win_offset_calc(
 DECL|start_enc_rsp_send|function|static void start_enc_rsp_send(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|state|enum|enum state {
 DECL|state|member|enum state state;
+DECL|state|member|u8_t state:1;
 DECL|terminate_ind_rx_enqueue|function|static void terminate_ind_rx_enqueue(struct connection *conn, u8_t reason)
 DECL|ticker_id_event|member|u8_t volatile ticker_id_event;
 DECL|ticker_id_prepare|member|u8_t volatile ticker_id_prepare;
@@ -291,6 +290,7 @@ DECL|ticks_conn_slot|member|u32_t ticks_conn_slot;
 DECL|ticks_window|member|u32_t ticks_window;
 DECL|tx_cmplt_get|function|static u8_t tx_cmplt_get(u16_t *handle, u8_t *first, u8_t last)
 DECL|tx_packet_set|function|static void tx_packet_set(struct connection *conn, struct pdu_data *pdu_data_tx)
+DECL|type|member|u8_t type:1;
 DECL|unknown_rsp_send|function|static void unknown_rsp_send(struct connection *conn, u8_t type)
 DECL|version_ind_send|function|static void version_ind_send(struct connection *conn)
 DECL|win_offset_us|member|u32_t win_offset_us;
