@@ -129,6 +129,7 @@ DECL|hf_clock|member|struct device *hf_clock;
 DECL|init_addr_type|member|u8_t init_addr_type:1;
 DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|irk|member|u8_t irk[RADIO_IRK_COUNT_MAX][16];
+DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
 DECL|isr_close_adv|function|static inline u32_t isr_close_adv(void)
 DECL|isr_close_conn|function|static inline void isr_close_conn(void)
@@ -244,6 +245,7 @@ DECL|radio_rx_mem_release|function|void radio_rx_mem_release(struct radio_pdu_no
 DECL|radio_scan_data_get|function|struct radio_adv_data *radio_scan_data_get(void)
 DECL|radio_scan_disable|function|u32_t radio_scan_disable(void)
 DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t scan_type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy)
+DECL|radio_scan_is_enabled|function|u32_t radio_scan_is_enabled(void)
 DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_set(u32_t ticks_active_to_start)
 DECL|radio_tx_mem_acquire|function|struct radio_pdu_node_tx *radio_tx_mem_acquire(void)
 DECL|radio_tx_mem_enqueue|function|u32_t radio_tx_mem_enqueue(u16_t handle, struct radio_pdu_node_tx *node_tx)
