@@ -130,6 +130,7 @@ DECL|init_addr_type|member|u8_t init_addr_type:1;
 DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|irk|member|u8_t irk[RADIO_IRK_COUNT_MAX][16];
 DECL|is_enabled|member|u8_t is_enabled:1;
+DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
 DECL|isr_close_adv|function|static inline u32_t isr_close_adv(void)
 DECL|isr_close_conn|function|static inline void isr_close_conn(void)
@@ -234,6 +235,7 @@ DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
 DECL|radio_adv_enable|function|u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy)
+DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)
 DECL|radio_event_adv_prepare|function|void radio_event_adv_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|radio_init|function|u32_t radio_init(void *hf_clock, u8_t sca, u8_t connection_count_max, u8_t rx_count_max, u8_t tx_count_max, u16_t packet_data_octets_max, u16_t packet_tx_data_size, u8_t *mem_radio, u16_t mem_size)
