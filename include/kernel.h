@@ -219,6 +219,8 @@ DECL|k_fifo_cancel_wait|macro|k_fifo_cancel_wait
 DECL|k_fifo_get|macro|k_fifo_get
 DECL|k_fifo_init|macro|k_fifo_init
 DECL|k_fifo_is_empty|macro|k_fifo_is_empty
+DECL|k_fifo_peek_head|macro|k_fifo_peek_head
+DECL|k_fifo_peek_tail|macro|k_fifo_peek_tail
 DECL|k_fifo_put_list|macro|k_fifo_put_list
 DECL|k_fifo_put_slist|macro|k_fifo_put_slist
 DECL|k_fifo_put|macro|k_fifo_put
@@ -249,6 +251,8 @@ DECL|k_poll_modes|enum|enum k_poll_modes {
 DECL|k_poll_signal|struct|struct k_poll_signal {
 DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_queue_is_empty|function|static inline int k_queue_is_empty(struct k_queue *queue)
+DECL|k_queue_peek_head|function|static inline void *k_queue_peek_head(struct k_queue *queue)
+DECL|k_queue_peek_tail|function|static inline void *k_queue_peek_tail(struct k_queue *queue)
 DECL|k_queue|struct|struct k_queue {
 DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
 DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
