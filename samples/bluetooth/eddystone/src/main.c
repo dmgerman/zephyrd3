@@ -47,6 +47,7 @@ DECL|eds_slot_restart|function|static int eds_slot_restart(struct eds_slot *slot
 DECL|eds_slot_uuid|variable|eds_slot_uuid
 DECL|eds_slots|variable|eds_slots
 DECL|eds_slot|struct|struct eds_slot {
+DECL|eds_svc|variable|eds_svc
 DECL|eds_tx_uuid|variable|eds_tx_uuid
 DECL|eds_unlock_uuid|variable|eds_unlock_uuid
 DECL|eds_uuid|variable|eds_uuid

@@ -50,6 +50,7 @@ DECL|pong_ccc_cfg_changed|function|static void pong_ccc_cfg_changed(const struct
 DECL|pong_ccc_cfg|variable|pong_ccc_cfg
 DECL|pong_chr_uuid|variable|pong_chr_uuid
 DECL|pong_svc_uuid|variable|pong_svc_uuid
+DECL|pong_svc|variable|pong_svc
 DECL|pong_uuid_match|function|static bool pong_uuid_match(const u8_t *data, u8_t len)
 DECL|remote_handle|variable|remote_handle
 DECL|remote_ready|variable|remote_ready

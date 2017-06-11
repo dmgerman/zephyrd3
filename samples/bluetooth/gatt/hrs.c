@@ -5,5 +5,6 @@ DECL|hrmc_ccc_cfg|variable|hrmc_ccc_cfg
 DECL|hrs_blsc|variable|hrs_blsc
 DECL|hrs_init|function|void hrs_init(u8_t blsc)
 DECL|hrs_notify|function|void hrs_notify(void)
+DECL|hrs_svc|variable|hrs_svc
 DECL|read_blsc|function|static ssize_t read_blsc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|simulate_hrm|variable|simulate_hrm

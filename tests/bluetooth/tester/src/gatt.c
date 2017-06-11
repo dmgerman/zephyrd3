@@ -12,6 +12,7 @@ DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
 DECL|NEXT_DB_ATTR|macro|NEXT_DB_ATTR
 DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
 DECL|SERVER_MAX_ATTRIBUTES|macro|SERVER_MAX_ATTRIBUTES
+DECL|SERVER_MAX_SERVICES|macro|SERVER_MAX_SERVICES
 DECL|add_ccc|function|static struct bt_gatt_attr *add_ccc(const struct bt_gatt_attr *attr)
 DECL|add_cep|function|static struct bt_gatt_attr *add_cep(const struct bt_gatt_attr *attr_chrc)
 DECL|add_characteristic|function|static void add_characteristic(u8_t *data, u16_t len)
@@ -81,10 +82,12 @@ DECL|read_multiple|function|static void read_multiple(u8_t *data, u16_t len)
 DECL|read_params|variable|read_params
 DECL|read_value|function|static ssize_t read_value(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read|function|static void read(u8_t *data, u16_t len)
+DECL|register_service|function|static int register_service(void)
 DECL|server_buf_pull|macro|server_buf_pull
 DECL|server_buf_push|macro|server_buf_push
 DECL|server_buf|variable|server_buf
 DECL|server_db|variable|server_db
+DECL|server_svcs|variable|server_svcs
 DECL|set_attr_enc_key_size|function|static int set_attr_enc_key_size(const struct bt_gatt_attr *attr, u8_t key_size)
 DECL|set_cep_value|function|static u8_t set_cep_value(struct bt_gatt_attr *attr, const void *value, const u16_t len)
 DECL|set_enc_key_size|function|static void set_enc_key_size(u8_t *data, u16_t len)

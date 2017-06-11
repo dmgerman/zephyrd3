@@ -51,6 +51,7 @@ DECL|csc_meas_ccc_cfg|variable|csc_meas_ccc_cfg
 DECL|csc_measurement_nfy|struct|struct csc_measurement_nfy {
 DECL|csc_simulate|variable|csc_simulate
 DECL|csc_simulation|function|static void csc_simulation(void)
+DECL|csc_svc|variable|csc_svc
 DECL|ctrl_point_ccc_cfg_changed|function|static void ctrl_point_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|ctrl_point_ccc_cfg|variable|ctrl_point_ccc_cfg
 DECL|ctrl_point_configured|variable|ctrl_point_configured

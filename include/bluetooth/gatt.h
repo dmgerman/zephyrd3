@@ -50,7 +50,9 @@ DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
+DECL|attr_count|member|u16_t attr_count;
 DECL|attr_handle|member|u16_t attr_handle;
+DECL|attrs|member|struct bt_gatt_attr *attrs;
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|bt_gatt_attr_func_t|typedef|typedef u8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
 DECL|bt_gatt_attr|struct|struct bt_gatt_attr {
@@ -68,6 +70,7 @@ DECL|bt_gatt_indicate_params|struct|struct bt_gatt_indicate_params {
 DECL|bt_gatt_notify_func_t|typedef|typedef u8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_read_func_t|typedef|typedef u8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, u8_t err,
 DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
+DECL|bt_gatt_service_val|struct|struct bt_gatt_service_val {
 DECL|bt_gatt_service|struct|struct bt_gatt_service {
 DECL|bt_gatt_subscribe_params|struct|struct bt_gatt_subscribe_params {
 DECL|bt_gatt_write_func_t|typedef|typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, u8_t err,

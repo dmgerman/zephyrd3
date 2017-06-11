@@ -19,6 +19,7 @@ DECL|met_attrs|variable|met_attrs
 DECL|met_char_uuid|variable|met_char_uuid
 DECL|met_char_value|variable|met_char_value
 DECL|met_svc_uuid|variable|met_svc_uuid
+DECL|met_svc|variable|met_svc
 DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
 DECL|print_chrc_props|function|static void print_chrc_props(u8_t properties)
 DECL|read_func|function|static u8_t read_func(struct bt_conn *conn, u8_t err, struct bt_gatt_read_params *params, const void *data, u16_t length)
@@ -34,6 +35,7 @@ DECL|vnd_long_uuid1|variable|vnd_long_uuid1
 DECL|vnd_long_uuid2|variable|vnd_long_uuid2
 DECL|vnd_long_value1|variable|vnd_long_value1
 DECL|vnd_long_value2|variable|vnd_long_value2
+DECL|vnd_svc|variable|vnd_svc
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
 DECL|write_count|variable|write_count

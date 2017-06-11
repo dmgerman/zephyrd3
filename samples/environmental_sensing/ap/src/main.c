@@ -6,6 +6,7 @@ DECL|TEMPERATURE_CUD|macro|TEMPERATURE_CUD
 DECL|ad|variable|ad
 DECL|attrs|variable|attrs
 DECL|bt_ready|function|static void bt_ready(int err)
+DECL|env_svc|variable|env_svc
 DECL|humidity_value|variable|humidity_value
 DECL|main|function|void main(void)
 DECL|pressure_value|variable|pressure_value

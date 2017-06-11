@@ -12,6 +12,7 @@ DECL|flags|member|u8_t flags;
 DECL|hids_info|struct|struct hids_info {
 DECL|hids_report|struct|struct hids_report {
 DECL|hog_init|function|void hog_init(void)
+DECL|hog_svc|variable|hog_svc
 DECL|id|member|u8_t id; /* report id */
 DECL|info|variable|info
 DECL|input_ccc_cfg|variable|input_ccc_cfg

@@ -41,6 +41,7 @@ DECL|es_trigger_setting_reference|struct|struct es_trigger_setting_reference {
 DECL|es_trigger_setting_seconds|struct|struct es_trigger_setting_seconds {
 DECL|ess_attrs|variable|ess_attrs
 DECL|ess_simulate|function|static void ess_simulate(void)
+DECL|ess_svc|variable|ess_svc
 DECL|flags|member|u16_t flags; /* Reserved for Future Use */
 DECL|flags|member|u16_t flags; /* Reserved for Future Use */
 DECL|humid_value|member|s16_t humid_value;

@@ -28,6 +28,7 @@ DECL|vnd_long_cep|variable|vnd_long_cep
 DECL|vnd_long_uuid|variable|vnd_long_uuid
 DECL|vnd_long_value|variable|vnd_long_value
 DECL|vnd_signed_uuid|variable|vnd_signed_uuid
+DECL|vnd_svc|variable|vnd_svc
 DECL|vnd_uuid|variable|vnd_uuid
 DECL|vnd_value|variable|vnd_value
 DECL|write_long_vnd|function|static ssize_t write_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
