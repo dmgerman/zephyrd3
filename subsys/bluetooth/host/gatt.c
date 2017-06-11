@@ -35,6 +35,7 @@ DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|disconnected_cb|function|static u8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|u16_t end_handle;
+DECL|err|member|int err;
 DECL|gap_appearance|variable|gap_appearance
 DECL|gap_attrs|variable|gap_attrs
 DECL|gap_name|variable|gap_name
@@ -82,6 +83,9 @@ DECL|read_name|function|static ssize_t read_name(struct bt_conn *conn, const str
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|sc_ccc_cfg_changed|function|static void sc_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|sc_ccc_cfg|variable|sc_ccc_cfg
+DECL|sc_indicate_rsp|function|static void sc_indicate_rsp(struct bt_conn *conn, const struct bt_gatt_attr *attr, u8_t err)
+DECL|sc_indicate|function|static void sc_indicate(struct bt_gatt_attr *start, struct bt_gatt_attr *end)
+DECL|sc_sem|variable|sc_sem
 DECL|start_handle|member|u16_t start_handle;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|u16_t type;
