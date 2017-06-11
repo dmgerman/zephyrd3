@@ -38,6 +38,7 @@ DECL|end_handle|member|u16_t end_handle;
 DECL|gap_appearance|variable|gap_appearance
 DECL|gap_attrs|variable|gap_attrs
 DECL|gap_name|variable|gap_name
+DECL|gatt_attrs|variable|gatt_attrs
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(const struct bt_gatt_attr *attr, struct _bt_gatt_ccc *ccc)
 DECL|gatt_chrc|struct|struct gatt_chrc {
 DECL|gatt_discover_next|function|static void gatt_discover_next(struct bt_conn *conn, u16_t last_handle, struct bt_gatt_discover_params *params)
@@ -79,6 +80,8 @@ DECL|read_included_uuid_cb|function|static void read_included_uuid_cb(struct bt_
 DECL|read_included_uuid|function|static int read_included_uuid(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|read_name|function|static ssize_t read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
+DECL|sc_ccc_cfg_changed|function|static void sc_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
+DECL|sc_ccc_cfg|variable|sc_ccc_cfg
 DECL|start_handle|member|u16_t start_handle;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|u16_t type;
