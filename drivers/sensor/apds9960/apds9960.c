@@ -1,0 +1,12 @@
+DECL|apds9960_ambient_setup|function|static int apds9960_ambient_setup(struct device *dev, int gain)
+DECL|apds9960_channel_get|function|static int apds9960_channel_get(struct device *dev,enum sensor_channel chan, struct sensor_value *val)
+DECL|apds9960_data|variable|apds9960_data
+DECL|apds9960_driver_api|variable|apds9960_driver_api
+DECL|apds9960_init|function|static int apds9960_init(struct device *dev)
+DECL|apds9960_proxy_setup|function|static int apds9960_proxy_setup(struct device *dev, int gain)
+DECL|apds9960_sample_fetch|function|static int apds9960_sample_fetch(struct device *dev, enum sensor_channel chan)
+DECL|apds9960_sensor_setup|function|static int apds9960_sensor_setup(struct device *dev, int gain)
+DECL|apds9960_setlightint_highthresh|function|static int apds9960_setlightint_highthresh(struct device *dev, u16_t threshold)
+DECL|apds9960_setlightint_lowthresh|function|static int apds9960_setlightint_lowthresh(struct device *dev, u16_t threshold)
+DECL|apds9960_setproxint_highthresh|function|static int apds9960_setproxint_highthresh(struct device *dev, u8_t threshold)
+DECL|apds9960_setproxint_lowthresh|function|static int apds9960_setproxint_lowthresh(struct device *dev, u8_t threshold)
