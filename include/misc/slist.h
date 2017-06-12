@@ -15,7 +15,7 @@ DECL|head|member|sys_snode_t *head;
 DECL|next|member|struct _snode *next;
 DECL|sys_slist_append_list|function|static inline void sys_slist_append_list(sys_slist_t *list, void *head, void *tail)
 DECL|sys_slist_append|function|static inline void sys_slist_append(sys_slist_t *list, sys_snode_t *node)
-DECL|sys_slist_find_and_remove|function|static inline void sys_slist_find_and_remove(sys_slist_t *list, sys_snode_t *node)
+DECL|sys_slist_find_and_remove|function|static inline bool sys_slist_find_and_remove(sys_slist_t *list, sys_snode_t *node)
 DECL|sys_slist_get_not_empty|function|static inline sys_snode_t *sys_slist_get_not_empty(sys_slist_t *list)
 DECL|sys_slist_get|function|static inline sys_snode_t *sys_slist_get(sys_slist_t *list)
 DECL|sys_slist_init|function|static inline void sys_slist_init(sys_slist_t *list)
