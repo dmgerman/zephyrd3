@@ -112,15 +112,6 @@ DECL|fc_handle|member|u16_t fc_handle[TRIPLE_BUFFER_SIZE];
 DECL|fc_req|member|u8_t volatile fc_req;
 DECL|feat_get|function|static inline u32_t feat_get(u8_t *features)
 DECL|feature_rsp_send|function|static void feature_rsp_send(struct connection *conn)
-DECL|filter_addr_type_bitmask|member|u8_t filter_addr_type_bitmask;
-DECL|filter_addr_type_bitmask|member|u8_t filter_addr_type_bitmask;
-DECL|filter_addr_type_bitmask|member|u8_t filter_addr_type_bitmask;
-DECL|filter_bdaddr|member|u8_t filter_bdaddr[8][BDADDR_SIZE];
-DECL|filter_bdaddr|member|u8_t filter_bdaddr[8][BDADDR_SIZE];
-DECL|filter_bdaddr|member|u8_t filter_bdaddr[8][BDADDR_SIZE];
-DECL|filter_enable_bitmask|member|u8_t filter_enable_bitmask;
-DECL|filter_enable_bitmask|member|u8_t filter_enable_bitmask;
-DECL|filter_enable_bitmask|member|u8_t filter_enable_bitmask;
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
@@ -166,9 +157,6 @@ DECL|ll_conn_update|function|u32_t ll_conn_update(u16_t handle, u8_t cmd, u8_t s
 DECL|ll_connect_disable|function|u32_t ll_connect_disable(void)
 DECL|ll_enc_req_send|function|u32_t ll_enc_req_send(u16_t handle, u8_t *rand, u8_t *ediv, u8_t *ltk)
 DECL|ll_feature_req_send|function|u32_t ll_feature_req_send(u16_t handle)
-DECL|ll_filter_add|function|u32_t ll_filter_add(u8_t addr_type, u8_t *addr)
-DECL|ll_filter_clear|function|void ll_filter_clear(void)
-DECL|ll_filter_remove|function|u32_t ll_filter_remove(u8_t addr_type, u8_t *addr)
 DECL|ll_irk_add|function|u32_t ll_irk_add(u8_t *irk)
 DECL|ll_irk_clear|function|void ll_irk_clear(void)
 DECL|ll_length_default_get|function|void ll_length_default_get(u16_t *max_tx_octets, u16_t *max_tx_time)
