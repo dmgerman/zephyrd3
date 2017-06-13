@@ -9,6 +9,7 @@ DECL|zsock_accept|function|int zsock_accept(int sock, struct sockaddr *addr, soc
 DECL|zsock_bind|function|int zsock_bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|zsock_close|function|int zsock_close(int sock)
 DECL|zsock_connect|function|int zsock_connect(int sock, const struct sockaddr *addr, socklen_t addrlen)
+DECL|zsock_flush_queue|function|static void zsock_flush_queue(struct net_context *ctx)
 DECL|zsock_listen|function|int zsock_listen(int sock, int backlog)
 DECL|zsock_received_cb|function|static void zsock_received_cb(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|zsock_recv_stream|function|static inline ssize_t zsock_recv_stream(struct net_context *ctx, void *buf, size_t max_len)
