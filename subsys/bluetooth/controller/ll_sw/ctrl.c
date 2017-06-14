@@ -151,6 +151,7 @@ DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
 DECL|link_rx_pool|member|void *link_rx_pool;
 DECL|link_rx_tail|member|void *volatile link_rx_tail;
+DECL|ll_adv_scan_state_cb|function|void __weak ll_adv_scan_state_cb(u8_t bm)
 DECL|ll_chm_get|function|u32_t ll_chm_get(u16_t handle, u8_t *chm)
 DECL|ll_chm_update|function|u32_t ll_chm_update(u8_t *chm)
 DECL|ll_conn_update|function|u32_t ll_conn_update(u16_t handle, u8_t cmd, u8_t status, u16_t interval, u16_t latency, u16_t timeout)
