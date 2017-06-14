@@ -9,12 +9,12 @@ DECL|_Cstart|function|FUNC_NORETURN void _Cstart(void)
 DECL|__end_intr_tsc|variable|__end_intr_tsc
 DECL|__end_swap_tsc|variable|__end_swap_tsc
 DECL|__end_tick_tsc|variable|__end_tick_tsc
-DECL|__idle_tsc|variable|__idle_tsc
-DECL|__main_tsc|variable|__main_tsc
+DECL|__idle_time_stamp|variable|__idle_time_stamp
+DECL|__main_time_stamp|variable|__main_time_stamp
 DECL|__start_intr_tsc|variable|__start_intr_tsc
 DECL|__start_swap_tsc|variable|__start_swap_tsc
 DECL|__start_tick_tsc|variable|__start_tick_tsc
-DECL|__start_tsc|variable|__start_tsc
+DECL|__start_time_stamp|variable|__start_time_stamp
 DECL|_bss_zero|function|void _bss_zero(void)
 DECL|_data_copy|function|void _data_copy(void)
 DECL|_idle_thread_s|variable|_idle_thread_s
