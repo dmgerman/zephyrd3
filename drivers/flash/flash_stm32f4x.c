@@ -1,5 +1,5 @@
 DECL|erase_sector|function|static int erase_sector(u16_t sector, struct flash_stm32_priv *p)
 DECL|flash_stm32_block_erase_loop|function|int flash_stm32_block_erase_loop(unsigned int offset, unsigned int len, struct flash_stm32_priv *p)
-DECL|flash_stm32_valid_range|function|bool flash_stm32_valid_range(off_t offset, u32_t len)
+DECL|flash_stm32_valid_range|function|bool flash_stm32_valid_range(off_t offset, u32_t len, bool write)
 DECL|flash_stm32_write_range|function|int flash_stm32_write_range(unsigned int offset, const void *data, unsigned int len, struct flash_stm32_priv *p)
 DECL|write_byte|function|static int write_byte(off_t offset, u8_t val, struct flash_stm32_priv *p)
