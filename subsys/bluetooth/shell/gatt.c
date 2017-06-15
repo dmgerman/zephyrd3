@@ -5,6 +5,7 @@ DECL|cmd_gatt_exchange_mtu|function|int cmd_gatt_exchange_mtu(int argc, char *ar
 DECL|cmd_gatt_mread|function|int cmd_gatt_mread(int argc, char *argv[])
 DECL|cmd_gatt_read|function|int cmd_gatt_read(int argc, char *argv[])
 DECL|cmd_gatt_register_test_svc|function|int cmd_gatt_register_test_svc(int argc, char *argv[])
+DECL|cmd_gatt_show_db|function|int cmd_gatt_show_db(int argc, char *argv[])
 DECL|cmd_gatt_subscribe|function|int cmd_gatt_subscribe(int argc, char *argv[])
 DECL|cmd_gatt_unregister_test_svc|function|int cmd_gatt_unregister_test_svc(int argc, char *argv[])
 DECL|cmd_gatt_unsubscribe|function|int cmd_gatt_unsubscribe(int argc, char *argv[])
@@ -22,6 +23,7 @@ DECL|met_char_value|variable|met_char_value
 DECL|met_svc_uuid|variable|met_svc_uuid
 DECL|met_svc|variable|met_svc
 DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
+DECL|print_attr|function|static u8_t print_attr(const struct bt_gatt_attr *attr, void *user_data)
 DECL|print_chrc_props|function|static void print_chrc_props(u8_t properties)
 DECL|read_func|function|static u8_t read_func(struct bt_conn *conn, u8_t err, struct bt_gatt_read_params *params, const void *data, u16_t length)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
