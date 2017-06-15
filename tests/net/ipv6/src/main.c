@@ -17,6 +17,7 @@ DECL|main|function|void main(void)
 DECL|mcast_addr|variable|mcast_addr
 DECL|my_addr|variable|my_addr
 DECL|name|member|const char *name;
+DECL|net_test_add_neighbor|function|static bool net_test_add_neighbor(void)
 DECL|net_test_change_ll_addr|function|static bool net_test_change_ll_addr(void)
 DECL|net_test_cmp_prefix|function|static bool net_test_cmp_prefix(void)
 DECL|net_test_data|variable|net_test_data
@@ -31,9 +32,7 @@ DECL|net_test_nbr_lookup_ok|function|static bool net_test_nbr_lookup_ok(void)
 DECL|net_test_prefix_timeout|function|static bool net_test_prefix_timeout(void)
 DECL|net_test_ra_message|function|static bool net_test_ra_message(void)
 DECL|net_test_send_ns_extra_options|function|static bool net_test_send_ns_extra_options(void)
-DECL|net_test_send_ns_mcast|function|static bool net_test_send_ns_mcast(void)
 DECL|net_test_send_ns_no_options|function|static bool net_test_send_ns_no_options(void)
-DECL|net_test_send_ns|function|static bool net_test_send_ns(void)
 DECL|peer_addr|variable|peer_addr
 DECL|prepare_ra_message|function|static struct net_pkt *prepare_ra_message(void)
 DECL|test_failed|variable|test_failed
