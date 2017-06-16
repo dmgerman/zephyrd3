@@ -15,12 +15,12 @@ DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(st
 DECL|ieee802154_decipher_data_frame|function|bool ieee802154_decipher_data_frame(struct net_if *iface, struct net_pkt *pkt, struct ieee802154_mpdu *mpdu)
 DECL|ieee802154_is_ar_flag_set|function|bool ieee802154_is_ar_flag_set(struct net_pkt *pkt)
 DECL|ieee802154_validate_aux_security_hdr|function|ieee802154_validate_aux_security_hdr(u8_t *buf, u8_t **p_buf)
+DECL|ieee802154_validate_fc_seq|function|struct ieee802154_fcf_seq *ieee802154_validate_fc_seq(u8_t *buf, u8_t **p_buf)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(u8_t *buf, u8_t length, struct ieee802154_mpdu *mpdu)
 DECL|level_2_tag_size|variable|level_2_tag_size
 DECL|mac_command_length|function|static inline u8_t mac_command_length(enum ieee802154_cfi cfi)
 DECL|validate_addr|function|validate_addr(u8_t *buf, u8_t **p_buf, enum ieee802154_addressing_mode mode, bool pan_id_compression)
 DECL|validate_beacon|function|validate_beacon(struct ieee802154_mpdu *mpdu, u8_t *buf, u8_t length)
-DECL|validate_fc_seq|function|validate_fc_seq(u8_t *buf, u8_t **p_buf)
 DECL|validate_mac_command_cfi_to_mhr|function|validate_mac_command_cfi_to_mhr(struct ieee802154_mhr *mhr,u8_t ar, u8_t comp, u8_t src, bool src_pan_brdcst_chk, u8_t dst, bool dst_brdcst_chk)
 DECL|validate_mac_command|function|validate_mac_command(struct ieee802154_mpdu *mpdu, u8_t *buf, u8_t length)
 DECL|validate_payload_and_mfr|function|validate_payload_and_mfr(struct ieee802154_mpdu *mpdu, u8_t *buf, u8_t *p_buf, u8_t length)
