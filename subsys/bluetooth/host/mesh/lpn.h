@@ -1,0 +1,2 @@
+DECL|bt_mesh_lpn_established|function|static inline bool bt_mesh_lpn_established(void)
+DECL|bt_mesh_lpn_waiting_update|function|static inline bool bt_mesh_lpn_waiting_update(void)
