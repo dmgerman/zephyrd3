@@ -12,6 +12,7 @@ DECL|accept_cb|function|static void accept_cb(struct net_context *context, struc
 DECL|cb_failure|variable|cb_failure
 DECL|connect_cb|function|static void connect_cb(struct net_context *context, int status, void *user_data)
 DECL|data_failure|variable|data_failure
+DECL|expecting_cb_failure|variable|expecting_cb_failure
 DECL|func|member|bool (*func)(void);
 DECL|in4addr_my|variable|in4addr_my
 DECL|in6addr_mcast|variable|in6addr_mcast
