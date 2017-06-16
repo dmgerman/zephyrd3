@@ -21,7 +21,6 @@ DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_nod
 DECL|encrypt_change|function|static void encrypt_change(u8_t err, u16_t handle, struct net_buf *buf)
 DECL|event_mask|variable|event_mask
 DECL|evt_create|function|static void evt_create(struct net_buf *buf, u8_t evt, u8_t len)
-DECL|ffs|function|static u8_t ffs(u8_t x)
 DECL|hbuf_signal|variable|hbuf_signal
 DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf)
