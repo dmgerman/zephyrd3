@@ -72,6 +72,7 @@ DECL|_unused|member|u8_t _unused : 5;
 DECL|ack_lock|member|struct k_sem ack_lock;
 DECL|ack_received|member|u8_t ack_received : 1;
 DECL|ack_requested|member|u8_t ack_requested : 1;
+DECL|ack_seq|member|u8_t ack_seq;
 DECL|addr|member|u8_t addr[IEEE802154_MAX_ADDR_LENGTH];
 DECL|associated|member|u8_t associated : 1;
 DECL|channel_set|member|u32_t channel_set;
