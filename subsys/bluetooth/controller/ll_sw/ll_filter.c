@@ -2,8 +2,11 @@ DECL|ADDR_TYPE_ANON|macro|ADDR_TYPE_ANON
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_RPA_TIMEOUT_MS|macro|DEFAULT_RPA_TIMEOUT_MS
 DECL|RL_MATCH|macro|RL_MATCH
+DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(void)
 DECL|ctrl_rl_enabled|function|bool ctrl_rl_enabled(void)
-DECL|ctrl_wl_get|function|struct ll_wl *ctrl_wl_get(void)
+DECL|filter_add|function|static u32_t filter_add(struct ll_filter *filter, u8_t addr_type, u8_t *bdaddr)
+DECL|filter_clear|function|static void filter_clear(struct ll_filter *filter)
+DECL|filter_remove|function|static u32_t filter_remove(struct ll_filter *filter, u8_t addr_type, u8_t *bdaddr)
 DECL|lirk|member|u8_t lirk:1;
 DECL|ll_adv_scan_state_cb|function|void ll_adv_scan_state_cb(u8_t bm)
 DECL|ll_filter_reset|function|void ll_filter_reset(bool init)
@@ -45,5 +48,5 @@ DECL|rpa_timeout|function|static void rpa_timeout(struct k_work *work)
 DECL|rpa_work|variable|rpa_work
 DECL|rpas_ready|member|u8_t rpas_ready:1;
 DECL|taken|member|u8_t taken:1;
-DECL|wl_clear|function|static void wl_clear(void)
+DECL|wl_anon|variable|wl_anon
 DECL|wl|variable|wl
