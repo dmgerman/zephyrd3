@@ -1,4 +1,3 @@
-DECL|Message|variable|Message
 DECL|PRINT_HEADER|macro|PRINT_HEADER
 DECL|PRINT_HEADER|macro|PRINT_HEADER
 DECL|PRINT_ONE_RESULT|macro|PRINT_ONE_RESULT
@@ -9,3 +8,4 @@ DECL|PRINT_XFER_RATE|macro|PRINT_XFER_RATE
 DECL|PRINT_XFER_RATE|macro|PRINT_XFER_RATE
 DECL|mailbox_put|function|void mailbox_put(u32_t size, int count, u32_t *time)
 DECL|mailbox_test|function|void mailbox_test(void)
+DECL|message|variable|message

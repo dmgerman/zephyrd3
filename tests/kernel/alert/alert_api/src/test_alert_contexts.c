@@ -8,8 +8,6 @@ DECL|alert_send|function|static void alert_send(void)
 DECL|handler_executed|variable|handler_executed
 DECL|isr_alert|function|static void isr_alert(void)
 DECL|palert|variable|palert
-DECL|tIsr_entry|function|static void tIsr_entry(void *p)
-DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
 DECL|tdata|variable|tdata
 DECL|test_isr_alert_consumed|function|void test_isr_alert_consumed(void)
 DECL|test_isr_alert_default|function|void test_isr_alert_default(void)
@@ -22,3 +20,5 @@ DECL|test_thread_alert_ignore|function|void test_thread_alert_ignore(void)
 DECL|test_thread_alert_pending|function|void test_thread_alert_pending(void)
 DECL|test_thread_kinit_alert|function|void test_thread_kinit_alert(void)
 DECL|thread_alert|function|static void thread_alert(void)
+DECL|thread_entry|function|static void thread_entry(void *p1, void *p2, void *p3)
+DECL|tisr_entry|function|static void tisr_entry(void *p)

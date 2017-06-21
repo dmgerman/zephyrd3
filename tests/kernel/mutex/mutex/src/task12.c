@@ -1,2 +1,2 @@
-DECL|Task12|function|void Task12(void)
-DECL|tcRC|variable|tcRC
+DECL|task12|function|void task12(void)
+DECL|tc_rc|variable|tc_rc

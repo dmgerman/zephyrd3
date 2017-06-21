@@ -21,14 +21,14 @@ DECL|_0_TO_N|enumerator|_0_TO_N = 0x0,
 DECL|_1_TO_N|enumerator|_1_TO_N = 0x1,
 DECL|_ALL_N|enumerator|_ALL_N = 0x2,
 DECL|_MASTER_H|macro|_MASTER_H
-DECL|check_result|macro|check_result
+DECL|check_result|function|static inline void check_result(void)
 DECL|dashline|macro|dashline
 DECL|event_test|macro|event_test
 DECL|mailbox_test|macro|mailbox_test
 DECL|memorymap_test|macro|memorymap_test
 DECL|mempool_test|macro|mempool_test
 DECL|mutex_test|macro|mutex_test
-DECL|pipe_options|typedef|} pipe_options;
+DECL|pipe_options|enum|enum pipe_options {
 DECL|pipe_test|macro|pipe_test
 DECL|queue_test|macro|queue_test
 DECL|sema_test|macro|sema_test

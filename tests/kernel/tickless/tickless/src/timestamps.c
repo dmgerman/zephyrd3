@@ -34,12 +34,12 @@ DECL|_TIMESTAMP_VAL|macro|_TIMESTAMP_VAL
 DECL|_TIMESTAMP_VAL|macro|_TIMESTAMP_VAL
 DECL|_TIMESTAMP_VAL|macro|_TIMESTAMP_VAL
 DECL|_TIMESTAMP_WACCESS|macro|_TIMESTAMP_WACCESS
-DECL|_TimestampClose|function|void _TimestampClose(void)
-DECL|_TimestampClose|function|void _TimestampClose(void)
-DECL|_TimestampClose|function|void _TimestampClose(void)
-DECL|_TimestampOpen|function|void _TimestampOpen(void)
-DECL|_TimestampOpen|function|void _TimestampOpen(void)
-DECL|_TimestampOpen|function|void _TimestampOpen(void)
-DECL|_TimestampRead|function|u32_t _TimestampRead(void)
-DECL|_TimestampRead|function|u32_t _TimestampRead(void)
-DECL|_TimestampRead|function|u32_t _TimestampRead(void)
+DECL|_timestamp_close|function|void _timestamp_close(void)
+DECL|_timestamp_close|function|void _timestamp_close(void)
+DECL|_timestamp_close|function|void _timestamp_close(void)
+DECL|_timestamp_open|function|void _timestamp_open(void)
+DECL|_timestamp_open|function|void _timestamp_open(void)
+DECL|_timestamp_open|function|void _timestamp_open(void)
+DECL|_timestamp_read|function|u32_t _timestamp_read(void)
+DECL|_timestamp_read|function|u32_t _timestamp_read(void)
+DECL|_timestamp_read|function|u32_t _timestamp_read(void)
