@@ -7,8 +7,8 @@ DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(stru
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf **buf, u8_t plen)
 DECL|cmd_status|function|static struct net_buf *cmd_status(u8_t status)
 DECL|conn_count|variable|conn_count
-DECL|controller_cmd_handle|function|static int controller_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
-DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|controller_cmd_handle|function|static int controller_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|disconnect|function|static void disconnect(struct net_buf *buf, struct net_buf **evt)
 DECL|dup_count|variable|dup_count
@@ -35,7 +35,7 @@ DECL|hci_num_cmplt_encode|function|void hci_num_cmplt_encode(struct net_buf *buf
 DECL|hci_state_mask|variable|hci_state_mask
 DECL|host_buffer_size|function|static void host_buffer_size(struct net_buf *buf, struct net_buf **evt)
 DECL|host_num_completed_packets|function|static void host_num_completed_packets(struct net_buf *buf, struct net_buf **evt)
-DECL|info_cmd_handle|function|static int info_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|info_cmd_handle|function|static int info_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|le_add_dev_to_rl|function|static void le_add_dev_to_rl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_add_dev_to_wl|function|static void le_add_dev_to_wl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_adv_ext_1M_report|function|static void le_adv_ext_1M_report(struct pdu_data *pdu_data, u8_t *b, struct net_buf *buf)
@@ -94,7 +94,7 @@ DECL|le_set_scan_rsp_data|function|static void le_set_scan_rsp_data(struct net_b
 DECL|le_start_encryption|function|static void le_start_encryption(struct net_buf *buf, struct net_buf **evt)
 DECL|le_unknown_rsp|function|static void le_unknown_rsp(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_write_default_data_len|function|static void le_write_default_data_len(struct net_buf *buf, struct net_buf **evt)
-DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(u8_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|mask|member|u8_t mask;
 DECL|meta_evt|function|static void *meta_evt(struct net_buf *buf, u8_t subevt, u8_t melen)
 DECL|read_bd_addr|function|static void read_bd_addr(struct net_buf *buf, struct net_buf **evt)
