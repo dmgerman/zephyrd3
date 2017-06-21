@@ -1,4 +1,6 @@
 DECL|BOOT_BANNER|macro|BOOT_BANNER
+DECL|BOOT_DELAY_BANNER|macro|BOOT_DELAY_BANNER
+DECL|BOOT_DELAY_BANNER|macro|BOOT_DELAY_BANNER
 DECL|BUILD_TIMESTAMP|macro|BUILD_TIMESTAMP
 DECL|IDLE_STACK_SIZE|macro|IDLE_STACK_SIZE
 DECL|MAIN_STACK_SIZE|macro|MAIN_STACK_SIZE
@@ -22,6 +24,9 @@ DECL|_idle_thread|variable|_idle_thread
 DECL|_main_thread_s|variable|_main_thread_s
 DECL|_main_thread|variable|_main_thread
 DECL|_main|function|static void _main(void *unused1, void *unused2, void *unused3)
+DECL|boot_delay|variable|boot_delay
+DECL|boot_delay|variable|boot_delay
+DECL|boot_delay|variable|boot_delay
 DECL|build_timestamp|variable|build_timestamp
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
