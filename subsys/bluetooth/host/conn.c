@@ -5,7 +5,7 @@ DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
 DECL|PASSKEY_DISPLAY|enumerator|PASSKEY_DISPLAY, /* Passkey Entry display */
 DECL|PASSKEY_INPUT|enumerator|PASSKEY_INPUT, /* Passkey Entry input */
-DECL|add_pending_tx|function|static void add_pending_tx(struct bt_conn *conn, bt_conn_tx_cb_t cb)
+DECL|add_pending_tx|function|static sys_snode_t *add_pending_tx(struct bt_conn *conn, bt_conn_tx_cb_t cb)
 DECL|bt_auth|variable|bt_auth
 DECL|bt_conn_add_br|function|struct bt_conn *bt_conn_add_br(const bt_addr_t *peer)
 DECL|bt_conn_add_le|function|struct bt_conn *bt_conn_add_le(const bt_addr_le_t *peer)
@@ -81,6 +81,7 @@ DECL|pairing_method|enum|enum pairing_method {
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, u8_t len)
 DECL|process_unack_tx|function|static void process_unack_tx(struct bt_conn *conn)
+DECL|remove_pending_tx|function|static void remove_pending_tx(struct bt_conn *conn, sys_snode_t *node)
 DECL|sco_conn_new|function|static struct bt_conn *sco_conn_new(void)
 DECL|sco_conns|variable|sco_conns
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
