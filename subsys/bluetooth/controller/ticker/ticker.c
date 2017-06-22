@@ -60,6 +60,7 @@ DECL|ticker_instance1_caller_id_get|function|static u8_t ticker_instance1_caller
 DECL|ticker_instance1_cmp_set|function|static void ticker_instance1_cmp_set(u32_t value)
 DECL|ticker_instance1_sched|function|static void ticker_instance1_sched(u8_t caller_id, u8_t callee_id, u8_t chain)
 DECL|ticker_instance|struct|struct ticker_instance {
+DECL|ticker_is_initialized|function|bool ticker_is_initialized(u8_t instance_index)
 DECL|ticker_job_compare_update|function|static inline void ticker_job_compare_update(struct ticker_instance *instance, u8_t ticker_id_old_head)
 DECL|ticker_job_idle_get|function|u32_t ticker_job_idle_get(u8_t instance_index, u8_t user_id, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_job_insert|function|static inline u32_t ticker_job_insert(struct ticker_instance *instance, u8_t id_insert, struct ticker_node *ticker, u8_t *insert_head)

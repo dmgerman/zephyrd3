@@ -167,6 +167,8 @@ DECL|ll_length_req_send|function|u32_t ll_length_req_send(u16_t handle, u16_t tx
 DECL|ll_phy_default_set|function|u32_t ll_phy_default_set(u8_t tx, u8_t rx)
 DECL|ll_phy_get|function|u32_t ll_phy_get(u16_t handle, u8_t *tx, u8_t *rx)
 DECL|ll_phy_req_send|function|u32_t ll_phy_req_send(u16_t handle, u8_t tx, u8_t flags, u8_t rx)
+DECL|ll_radio_state_abort|function|void ll_radio_state_abort(void)
+DECL|ll_radio_state_is_idle|function|u32_t ll_radio_state_is_idle(void)
 DECL|ll_reset|function|void ll_reset(void)
 DECL|ll_start_enc_req_send|function|u32_t ll_start_enc_req_send(u16_t handle, u8_t error_code, u8_t const *const ltk)
 DECL|ll_terminate_ind_send|function|u32_t ll_terminate_ind_send(u16_t handle, u8_t reason)
