@@ -1,6 +1,10 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_EVENT_MASK|macro|DEFAULT_EVENT_MASK
 DECL|DEFAULT_LE_EVENT_MASK|macro|DEFAULT_LE_EVENT_MASK
+DECL|ST_ADV|macro|ST_ADV
+DECL|ST_MAS|macro|ST_MAS
+DECL|ST_SCA|macro|ST_SCA
+DECL|ST_SLA|macro|ST_SLA
 DECL|_opcode|variable|_opcode
 DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
