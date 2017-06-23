@@ -1,4 +1,7 @@
 DECL|PAD|macro|PAD
+DECL|PINMUX_ETH|macro|PINMUX_ETH
+DECL|PINMUX_ETH|macro|PINMUX_ETH
+DECL|PINMUX_ETH|macro|PINMUX_ETH
 DECL|PINMUX_I2C1|macro|PINMUX_I2C1
 DECL|PINMUX_I2C1|macro|PINMUX_I2C1
 DECL|PINMUX_I2C1|macro|PINMUX_I2C1
@@ -44,6 +47,7 @@ DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART|macro|PINMUX_UART
+DECL|_PINMUX_ETH|macro|_PINMUX_ETH
 DECL|_PINMUX_I2C|macro|_PINMUX_I2C
 DECL|_PINMUX_PWM|macro|_PINMUX_PWM
 DECL|_PINMUX_UART|macro|_PINMUX_UART
@@ -77,6 +81,8 @@ DECL|pin_pb9_funcs|variable|pin_pb9_funcs
 DECL|pin_pc10_funcs|variable|pin_pc10_funcs
 DECL|pin_pc11_funcs|variable|pin_pc11_funcs
 DECL|pin_pc12_funcs|variable|pin_pc12_funcs
+DECL|pin_pc1_funcs|variable|pin_pc1_funcs
+DECL|pin_pc4_funcs|variable|pin_pc4_funcs
 DECL|pin_pc5_funcs|variable|pin_pc5_funcs
 DECL|pin_pc6_funcs|variable|pin_pc6_funcs
 DECL|pin_pc7_funcs|variable|pin_pc7_funcs
@@ -105,6 +111,7 @@ DECL|pin_pf9_funcs|variable|pin_pf9_funcs
 DECL|pin_pg0_funcs|variable|pin_pg0_funcs
 DECL|pin_pg11_funcs|variable|pin_pg11_funcs
 DECL|pin_pg12_funcs|variable|pin_pg12_funcs
+DECL|pin_pg13_funcs|variable|pin_pg13_funcs
 DECL|pin_pg14_funcs|variable|pin_pg14_funcs
 DECL|pin_pg1_funcs|variable|pin_pg1_funcs
 DECL|pin_pg9_funcs|variable|pin_pg9_funcs
