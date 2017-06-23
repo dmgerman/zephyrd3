@@ -1,4 +1,14 @@
 DECL|PAD|macro|PAD
+DECL|PINMUX_I2C1|macro|PINMUX_I2C1
+DECL|PINMUX_I2C1|macro|PINMUX_I2C1
+DECL|PINMUX_I2C1|macro|PINMUX_I2C1
+DECL|PINMUX_I2C2|macro|PINMUX_I2C2
+DECL|PINMUX_I2C2|macro|PINMUX_I2C2
+DECL|PINMUX_I2C2|macro|PINMUX_I2C2
+DECL|PINMUX_I2C3|macro|PINMUX_I2C3
+DECL|PINMUX_I2C3|macro|PINMUX_I2C3
+DECL|PINMUX_I2C3|macro|PINMUX_I2C3
+DECL|PINMUX_I2C|macro|PINMUX_I2C
 DECL|PINMUX_PWM2|macro|PINMUX_PWM2
 DECL|PINMUX_PWM2|macro|PINMUX_PWM2
 DECL|PINMUX_PWM2|macro|PINMUX_PWM2
@@ -34,6 +44,7 @@ DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART9|macro|PINMUX_UART9
 DECL|PINMUX_UART|macro|PINMUX_UART
+DECL|_PINMUX_I2C|macro|_PINMUX_I2C
 DECL|_PINMUX_PWM|macro|_PINMUX_PWM
 DECL|_PINMUX_UART|macro|_PINMUX_UART
 DECL|pin_pa0_funcs|variable|pin_pa0_funcs
@@ -63,6 +74,7 @@ DECL|pin_pc12_funcs|variable|pin_pc12_funcs
 DECL|pin_pc5_funcs|variable|pin_pc5_funcs
 DECL|pin_pc6_funcs|variable|pin_pc6_funcs
 DECL|pin_pc7_funcs|variable|pin_pc7_funcs
+DECL|pin_pc9_funcs|variable|pin_pc9_funcs
 DECL|pin_pd0_funcs|variable|pin_pd0_funcs
 DECL|pin_pd10_funcs|variable|pin_pd10_funcs
 DECL|pin_pd14_funcs|variable|pin_pd14_funcs
@@ -78,6 +90,8 @@ DECL|pin_pe2_funcs|variable|pin_pe2_funcs
 DECL|pin_pe3_funcs|variable|pin_pe3_funcs
 DECL|pin_pe7_funcs|variable|pin_pe7_funcs
 DECL|pin_pe8_funcs|variable|pin_pe8_funcs
+DECL|pin_pf0_funcs|variable|pin_pf0_funcs
+DECL|pin_pf1_funcs|variable|pin_pf1_funcs
 DECL|pin_pf6_funcs|variable|pin_pf6_funcs
 DECL|pin_pf7_funcs|variable|pin_pf7_funcs
 DECL|pin_pf8_funcs|variable|pin_pf8_funcs
@@ -88,5 +102,9 @@ DECL|pin_pg12_funcs|variable|pin_pg12_funcs
 DECL|pin_pg14_funcs|variable|pin_pg14_funcs
 DECL|pin_pg1_funcs|variable|pin_pg1_funcs
 DECL|pin_pg9_funcs|variable|pin_pg9_funcs
+DECL|pin_ph4_funcs|variable|pin_ph4_funcs
+DECL|pin_ph5_funcs|variable|pin_ph5_funcs
+DECL|pin_ph7_funcs|variable|pin_ph7_funcs
+DECL|pin_ph8_funcs|variable|pin_ph8_funcs
 DECL|pins|variable|pins
 DECL|stm32_get_pin_config|function|int stm32_get_pin_config(int pin, int func)
