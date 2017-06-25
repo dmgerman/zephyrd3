@@ -9,6 +9,7 @@ DECL|filter_add|function|static u32_t filter_add(struct ll_filter *filter, u8_t 
 DECL|filter_clear|function|static void filter_clear(struct ll_filter *filter)
 DECL|filter_insert|function|static void filter_insert(struct ll_filter *filter, int index, u8_t addr_type, u8_t *bdaddr)
 DECL|filter_remove|function|static u32_t filter_remove(struct ll_filter *filter, u8_t addr_type, u8_t *bdaddr)
+DECL|filter_rl_update|function|static void filter_rl_update(void)
 DECL|filter_wl_update|function|static void filter_wl_update(void)
 DECL|id_addr_type|member|u8_t id_addr_type:1;
 DECL|id_addr_type|member|u8_t id_addr_type:1;
@@ -45,6 +46,7 @@ DECL|rl_access_check|function|static int rl_access_check(bool check_ar)
 DECL|rl_clear|function|static void rl_clear(void)
 DECL|rl_dev|struct|static struct rl_dev {
 DECL|rl_enable|variable|rl_enable
+DECL|rl_filter|variable|rl_filter
 DECL|rl_idx|member|u8_t rl_idx:4;
 DECL|rl|variable|rl
 DECL|rpa_adv_refresh|function|static void rpa_adv_refresh(void)
