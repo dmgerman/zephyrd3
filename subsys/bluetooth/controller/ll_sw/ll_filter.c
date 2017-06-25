@@ -5,6 +5,7 @@ DECL|IDX_NONE|macro|IDX_NONE
 DECL|LIST_MATCH|macro|LIST_MATCH
 DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(void)
 DECL|ctrl_rl_enabled|function|bool ctrl_rl_enabled(void)
+DECL|dev|member|u8_t dev:1;
 DECL|filter_add|function|static u32_t filter_add(struct ll_filter *filter, u8_t addr_type, u8_t *bdaddr)
 DECL|filter_clear|function|static void filter_clear(struct ll_filter *filter)
 DECL|filter_insert|function|static void filter_insert(struct ll_filter *filter, int index, u8_t addr_type, u8_t *bdaddr)
@@ -20,6 +21,7 @@ DECL|ll_adv_scan_state_cb|function|void ll_adv_scan_state_cb(u8_t bm)
 DECL|ll_filter_reset|function|void ll_filter_reset(bool init)
 DECL|ll_filters_adv_update|function|void ll_filters_adv_update(u8_t adv_fp)
 DECL|ll_filters_scan_update|function|void ll_filters_scan_update(u8_t scan_fp)
+DECL|ll_priv_mode_set|function|u32_t ll_priv_mode_set(bt_addr_le_t *id_addr, u8_t mode)
 DECL|ll_rl_add|function|u32_t ll_rl_add(bt_addr_le_t *id_addr, const u8_t pirk[16],const u8_t lirk[16])
 DECL|ll_rl_clear|function|u32_t ll_rl_clear(void)
 DECL|ll_rl_enable|function|u32_t ll_rl_enable(u8_t enable)

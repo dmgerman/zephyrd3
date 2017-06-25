@@ -90,6 +90,7 @@ DECL|le_set_default_phy|function|static void le_set_default_phy(struct net_buf *
 DECL|le_set_event_mask|function|static void le_set_event_mask(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_host_chan_classif|function|static void le_set_host_chan_classif(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_phy|function|static void le_set_phy(struct net_buf *buf, struct net_buf **evt)
+DECL|le_set_privacy_mode|function|static void le_set_privacy_mode(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_random_address|function|static void le_set_random_address(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_rpa_timeout|function|static void le_set_rpa_timeout(struct net_buf *buf, struct net_buf **evt)
 DECL|le_set_scan_enable|function|static void le_set_scan_enable(struct net_buf *buf, struct net_buf **evt)
