@@ -40,6 +40,7 @@ DECL|ll_wl_size_get|function|u32_t ll_wl_size_get(void)
 DECL|local_irk|member|u8_t local_irk[16];
 DECL|local_rpa|member|bt_addr_t local_rpa;
 DECL|peer_irk_count|variable|peer_irk_count
+DECL|peer_irk_rl_ids|variable|peer_irk_rl_ids
 DECL|peer_irks|variable|peer_irks
 DECL|peer_rpa|member|bt_addr_t peer_rpa;
 DECL|pirk_idx|member|u8_t pirk_idx:3;
