@@ -1,10 +1,13 @@
 DECL|ADDR_TYPE_ANON|macro|ADDR_TYPE_ANON
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_RPA_TIMEOUT_MS|macro|DEFAULT_RPA_TIMEOUT_MS
-DECL|IDX_NONE|macro|IDX_NONE
 DECL|LIST_MATCH|macro|LIST_MATCH
-DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(void)
+DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(bool whitelist)
+DECL|ctrl_irk_whitelisted|function|bool ctrl_irk_whitelisted(u8_t irkmatch_id)
+DECL|ctrl_irks_get|function|u8_t *ctrl_irks_get(u8_t *count)
+DECL|ctrl_rl_allowed|function|bool ctrl_rl_allowed(u8_t id_addr_type, u8_t *id_addr)
 DECL|ctrl_rl_enabled|function|bool ctrl_rl_enabled(void)
+DECL|ctrl_rl_idx_match|function|bool ctrl_rl_idx_match(u8_t irkmatch_id, u8_t rl_idx)
 DECL|dev|member|u8_t dev:1;
 DECL|filter_add|function|static u32_t filter_add(struct ll_filter *filter, u8_t addr_type, u8_t *bdaddr)
 DECL|filter_clear|function|static void filter_clear(struct ll_filter *filter)

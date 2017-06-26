@@ -120,18 +120,21 @@ DECL|hdr|member|struct shdr hdr;
 DECL|hf_clock|member|struct device *hf_clock;
 DECL|init_addr_type|member|u8_t init_addr_type:1;
 DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
-DECL|irk|member|u8_t irk[RADIO_IRK_COUNT_MAX][16];
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
+DECL|isr_adv_ci_check|function|static inline bool isr_adv_ci_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t devmatch_ok, u8_t irkmatch_ok, u8_t irkmatch_id)
+DECL|isr_adv_ci_direct_check|function|static inline bool isr_adv_ci_direct_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t irkmatch_ok, u8_t irkmatch_id)
+DECL|isr_adv_sr_check|function|static inline bool isr_adv_sr_check(struct pdu_adv *pdu, u8_t devmatch_ok, u8_t irkmatch_ok, u8_t irkmatch_id)
+DECL|isr_adv_tgta_check|function|static inline bool isr_adv_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t irkmatch_ok, u8_t irkmatch_id)
 DECL|isr_close_adv|function|static inline u32_t isr_close_adv(void)
 DECL|isr_close_conn|function|static inline void isr_close_conn(void)
 DECL|isr_close_scan|function|static inline u32_t isr_close_scan(void)
 DECL|isr_radio_state_close|function|static inline void isr_radio_state_close(void)
-DECL|isr_radio_state_rx|function|static inline void isr_radio_state_rx(u8_t trx_done, u8_t crc_ok, u8_t devmatch_ok, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
+DECL|isr_radio_state_rx|function|static inline void isr_radio_state_rx(u8_t trx_done, u8_t crc_ok, u8_t devmatch_ok, u8_t devmatch_id, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
 DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
 DECL|isr_rx_adv_sr_report|function|static u32_t isr_rx_adv_sr_report(struct pdu_adv *pdu_adv_rx, u8_t rssi_ready)
-DECL|isr_rx_adv|function|static inline u32_t isr_rx_adv(u8_t devmatch_ok, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
+DECL|isr_rx_adv|function|static inline u32_t isr_rx_adv(u8_t devmatch_ok, u8_t devmatch_id, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
 DECL|isr_rx_conn_pkt_ack|function|static inline u8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
 DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline u8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx, u8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_ctrl_rej_conn_upd|function|isr_rx_conn_pkt_ctrl_rej_conn_upd(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
@@ -158,8 +161,6 @@ DECL|ll_conn_update|function|u32_t ll_conn_update(u16_t handle, u8_t cmd, u8_t s
 DECL|ll_connect_disable|function|u32_t ll_connect_disable(void)
 DECL|ll_enc_req_send|function|u32_t ll_enc_req_send(u16_t handle, u8_t *rand, u8_t *ediv, u8_t *ltk)
 DECL|ll_feature_req_send|function|u32_t ll_feature_req_send(u16_t handle)
-DECL|ll_irk_add|function|u32_t ll_irk_add(u8_t *irk)
-DECL|ll_irk_clear|function|void ll_irk_clear(void)
 DECL|ll_length_default_get|function|void ll_length_default_get(u16_t *max_tx_octets, u16_t *max_tx_time)
 DECL|ll_length_default_set|function|u32_t ll_length_default_set(u16_t max_tx_octets, u16_t max_tx_time)
 DECL|ll_length_max_get|function|void ll_length_max_get(u16_t *max_tx_octets, u16_t *max_tx_time, u16_t *max_rx_octets, u16_t *max_rx_time)
@@ -184,7 +185,6 @@ DECL|mayfly_xtal_retain|function|static void mayfly_xtal_retain(u8_t caller_id, 
 DECL|mayfly_xtal_start|function|static void mayfly_xtal_start(void *params)
 DECL|mayfly_xtal_stop_calc|function|static void mayfly_xtal_stop_calc(void *params)
 DECL|mayfly_xtal_stop|function|static void mayfly_xtal_stop(void *params)
-DECL|nirk|member|u8_t nirk;
 DECL|packet_counter|member|u8_t packet_counter;
 DECL|packet_data_octets_max|member|u16_t packet_data_octets_max;
 DECL|packet_release_first|member|u8_t packet_release_first;
@@ -228,7 +228,7 @@ DECL|prepare_pdu_data_tx|function|static void prepare_pdu_data_tx(struct connect
 DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op_context)
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
-DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chl_map, u8_t filter_policy) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy) #endif /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */
+DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chl_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy, u8_t rl_idx)
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
 DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)
@@ -252,6 +252,7 @@ DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connect
 DECL|remainder_anchor|member|u32_t remainder_anchor;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
+DECL|rl_idx|member|u8_t rl_idx:4;
 DECL|role_active_disable|function|static inline void role_active_disable(u8_t ticker_id_stop, u32_t ticks_xtal_to_start, u32_t ticks_active_to_start)
 DECL|role_disable|function|static u32_t role_disable(u8_t ticker_id_primary, u8_t ticker_id_stop)
 DECL|role|enum|enum role {
