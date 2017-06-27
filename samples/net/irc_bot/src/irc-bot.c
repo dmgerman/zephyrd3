@@ -33,10 +33,8 @@ DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
 DECL|cmd_buf|variable|cmd_buf
 DECL|conn|member|struct net_context *conn;
-DECL|dad_ok|variable|dad_ok
 DECL|data|member|void *data;
 DECL|data|member|void *data;
-DECL|dhcpv4_ok|variable|dhcpv4_ok
 DECL|fake_led|variable|fake_led
 DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char *ip_addr, int port, struct sockaddr *_sockaddr)
 DECL|initialize_hardware|function|initialize_hardware(void)

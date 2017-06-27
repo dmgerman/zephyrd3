@@ -36,7 +36,6 @@ DECL|choice_count|member|size_t choice_count;
 DECL|choice|member|const struct pong_choice *choice;
 DECL|complete|member|void (*complete)(int val);
 DECL|configure_buttons|function|static void configure_buttons(void)
-DECL|disp_update|variable|disp_update
 DECL|ended|variable|ended
 DECL|game_ended|function|static void game_ended(bool won)
 DECL|game_init|function|static void game_init(bool initiator)

@@ -25,7 +25,6 @@ DECL|async_evt|variable|async_evt
 DECL|async_sig|variable|async_sig
 DECL|buffer_rx|variable|buffer_rx
 DECL|buffer_tx|variable|buffer_tx
-DECL|caller|variable|caller
 DECL|cs_ctrl_gpio_config|function|static int cs_ctrl_gpio_config(struct spi_cs_control *cs)
 DECL|main|function|void main(void)
 DECL|result|variable|result
