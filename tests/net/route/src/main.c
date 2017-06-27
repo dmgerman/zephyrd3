@@ -55,4 +55,3 @@ DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface,
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|udp_ctx|variable|udp_ctx
-DECL|wait_data|variable|wait_data
