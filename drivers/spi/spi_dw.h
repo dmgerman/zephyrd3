@@ -11,6 +11,8 @@ DECL|DW_SPI_CTRLR0_SCPH_BIT|macro|DW_SPI_CTRLR0_SCPH_BIT
 DECL|DW_SPI_CTRLR0_SCPH|macro|DW_SPI_CTRLR0_SCPH
 DECL|DW_SPI_CTRLR0_SCPOL_BIT|macro|DW_SPI_CTRLR0_SCPOL_BIT
 DECL|DW_SPI_CTRLR0_SCPOL|macro|DW_SPI_CTRLR0_SCPOL
+DECL|DW_SPI_CTRLR0_SLV_OE_BIT|macro|DW_SPI_CTRLR0_SLV_OE_BIT
+DECL|DW_SPI_CTRLR0_SLV_OE|macro|DW_SPI_CTRLR0_SLV_OE
 DECL|DW_SPI_CTRLR0_SRL_BIT|macro|DW_SPI_CTRLR0_SRL_BIT
 DECL|DW_SPI_CTRLR0_SRL|macro|DW_SPI_CTRLR0_SRL
 DECL|DW_SPI_CTRLR0_TMOD_EEPROM|macro|DW_SPI_CTRLR0_TMOD_EEPROM
@@ -80,6 +82,7 @@ DECL|config_func|member|spi_dw_config_t config_func;
 DECL|ctx|member|struct spi_context ctx;
 DECL|dfs|member|u8_t dfs; /* dfs in bytes: 1,2 or 4 */
 DECL|fifo_diff|member|u8_t fifo_diff; /* cannot be bigger than FIFO depth */
+DECL|op_modes|member|u8_t op_modes;
 DECL|regs|member|u32_t regs;
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
