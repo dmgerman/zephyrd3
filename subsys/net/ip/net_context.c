@@ -38,13 +38,24 @@ DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|packet_received|function|static enum net_verdict packet_received(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|pkt_get_sockaddr|function|static void pkt_get_sockaddr(sa_family_t family, struct net_pkt *pkt, struct sockaddr_ptr *addr)
 DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
+DECL|recv_max_ack|member|u32_t recv_max_ack;
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, s32_t timeout, void *user_data)
+DECL|remote|member|struct sockaddr remote;
 DECL|send_ack|function|static int send_ack(struct net_context *context, struct sockaddr *remote, bool force)
+DECL|send_ack|member|u32_t send_ack;
 DECL|send_control_segment|function|static inline int send_control_segment(struct net_context *context, const struct sockaddr_ptr *local, const struct sockaddr *remote, int flags, const char *msg)
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token,
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
+DECL|send_seq|member|u32_t send_seq;
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr_ptr *local, struct sockaddr *remote)
 DECL|send_syn|function|static inline int send_syn(struct net_context *context, const struct sockaddr *remote)
 DECL|sendto|function|static int sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, s32_t timeout,
 DECL|set_appdata_values|function|static void set_appdata_values(struct net_pkt *pkt, enum net_ip_protocol proto)
+DECL|tcp_backlog_ack|function|static int tcp_backlog_ack(struct net_pkt *pkt, struct net_context *context)
+DECL|tcp_backlog_entry|struct|static struct tcp_backlog_entry {
+DECL|tcp_backlog_find|function|static int tcp_backlog_find(struct net_pkt *pkt, int *empty_slot)
+DECL|tcp_backlog_rst|function|static int tcp_backlog_rst(struct net_pkt *pkt)
+DECL|tcp_backlog_syn|function|static int tcp_backlog_syn(struct net_pkt *pkt, struct net_context *context)
+DECL|tcp_backlog|variable|tcp_backlog
 DECL|tcp_hdr_len|function|static int tcp_hdr_len(struct net_pkt *pkt)
+DECL|tcp|member|struct net_tcp *tcp;
