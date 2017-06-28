@@ -1,5 +1,7 @@
 DECL|SPI_CONTEXT_INIT_LOCK|macro|SPI_CONTEXT_INIT_LOCK
 DECL|SPI_CONTEXT_INIT_SYNC|macro|SPI_CONTEXT_INIT_SYNC
+DECL|SPI_CTX_RUNTIME_OP_MODE_MASTER|enumerator|SPI_CTX_RUNTIME_OP_MODE_MASTER = BIT(0),
+DECL|SPI_CTX_RUNTIME_OP_MODE_SLAVE|enumerator|SPI_CTX_RUNTIME_OP_MODE_SLAVE = BIT(1),
 DECL|__SPI_DRIVER_COMMON_H__|macro|__SPI_DRIVER_COMMON_H__
 DECL|asynchronous|member|bool asynchronous;
 DECL|config|member|const struct spi_config *config;
@@ -15,6 +17,7 @@ DECL|spi_context_complete|function|static inline void spi_context_complete(struc
 DECL|spi_context_configured|function|static inline bool spi_context_configured(struct spi_context *ctx, const struct spi_config *config)
 DECL|spi_context_cs_configure|function|static inline void spi_context_cs_configure(struct spi_context *ctx)
 DECL|spi_context_cs_control|function|static inline void spi_context_cs_control(struct spi_context *ctx, bool on)
+DECL|spi_context_is_slave|function|static inline bool spi_context_is_slave(struct spi_context *ctx)
 DECL|spi_context_lock|function|static inline void spi_context_lock(struct spi_context *ctx, bool asynchronous, struct k_poll_signal *signal)
 DECL|spi_context_longest_current_buf|function|static inline size_t spi_context_longest_current_buf(struct spi_context *ctx)
 DECL|spi_context_release|function|static inline void spi_context_release(struct spi_context *ctx, int status)
@@ -27,6 +30,7 @@ DECL|spi_context_update_rx|function|void spi_context_update_rx(struct spi_contex
 DECL|spi_context_update_tx|function|void spi_context_update_tx(struct spi_context *ctx, u8_t dfs, u32_t len)
 DECL|spi_context_wait_for_completion|function|static inline int spi_context_wait_for_completion(struct spi_context *ctx)
 DECL|spi_context|struct|struct spi_context {
+DECL|spi_ctx_runtime_op_mode|enum|enum spi_ctx_runtime_op_mode {
 DECL|sync_status|member|int sync_status;
 DECL|sync|member|struct k_sem sync;
 DECL|tx_buf|member|const u8_t *tx_buf;
