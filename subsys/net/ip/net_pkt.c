@@ -37,6 +37,7 @@ DECL|insert_data|function|static inline bool insert_data(struct net_pkt *pkt, st
 DECL|is_pkt|member|bool is_pkt;
 DECL|line_alloc|member|u16_t line_alloc;
 DECL|line_free|member|u16_t line_free;
+DECL|net_frag_get_pos|function|struct net_buf *net_frag_get_pos(struct net_pkt *pkt, u16_t offset, u16_t *pos)
 DECL|net_frag_linear_copy|function|int net_frag_linear_copy(struct net_buf *dst, struct net_buf *src, u16_t offset, u16_t len)
 DECL|net_frag_linearize|function|int net_frag_linearize(u8_t *dst, size_t dst_len, struct net_pkt *src, u16_t offset, u16_t len)
 DECL|net_frag_read_be16|function|struct net_buf *net_frag_read_be16(struct net_buf *frag, u16_t offset, u16_t *pos, u16_t *value)
@@ -77,6 +78,8 @@ DECL|net_pkt_get_rx_debug|function|struct net_pkt *net_pkt_get_rx_debug(struct n
 DECL|net_pkt_get_rx|function|struct net_pkt *net_pkt_get_rx(struct net_context *context, s32_t timeout)
 DECL|net_pkt_get_tx_debug|function|struct net_pkt *net_pkt_get_tx_debug(struct net_context *context, s32_t timeout, const char *caller, int line)
 DECL|net_pkt_get_tx|function|struct net_pkt *net_pkt_get_tx(struct net_context *context, s32_t timeout)
+DECL|net_pkt_icmp_data|function|struct net_icmp_hdr *net_pkt_icmp_data(struct net_pkt *pkt)
+DECL|net_pkt_icmp_opt_data|function|u8_t *net_pkt_icmp_opt_data(struct net_pkt *pkt, size_t opt_len)
 DECL|net_pkt_init|function|void net_pkt_init(void)
 DECL|net_pkt_insert|function|bool net_pkt_insert(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t len, u8_t *data, s32_t timeout)
 DECL|net_pkt_pool2str|function|const char *net_pkt_pool2str(struct net_buf_pool *pool)

@@ -1,4 +1,3 @@
-DECL|NET_ICMP_HDR|macro|NET_ICMP_HDR
 DECL|NET_IPV4_HDR|macro|NET_IPV4_HDR
 DECL|NET_IPV6_HDR|macro|NET_IPV6_HDR
 DECL|NET_PKT_DATA_POOL_DEFINE|macro|NET_PKT_DATA_POOL_DEFINE
@@ -59,7 +58,6 @@ DECL|net_pkt_get_reserve_tx|macro|net_pkt_get_reserve_tx
 DECL|net_pkt_get_reserve|macro|net_pkt_get_reserve
 DECL|net_pkt_get_rx|macro|net_pkt_get_rx
 DECL|net_pkt_get_tx|macro|net_pkt_get_tx
-DECL|net_pkt_icmp_data|function|static inline u8_t *net_pkt_icmp_data(struct net_pkt *pkt)
 DECL|net_pkt_ieee802154_rssi|function|static inline u8_t net_pkt_ieee802154_rssi(struct net_pkt *pkt)
 DECL|net_pkt_iface|function|static inline struct net_if *net_pkt_iface(struct net_pkt *pkt)
 DECL|net_pkt_insert_be16|function|static inline bool net_pkt_insert_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t data)
