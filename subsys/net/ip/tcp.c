@@ -15,7 +15,6 @@ DECL|finalize_segment|function|static int finalize_segment(struct net_context *c
 DECL|flags|member|u8_t flags;
 DECL|get_recv_wnd|function|static inline u32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|get_size|function|static inline u32_t get_size(u32_t pos1, u32_t pos2)
-DECL|init_isn|function|static inline u32_t init_isn(void)
 DECL|ip_max_packet_len|function|static inline size_t ip_max_packet_len(struct in_addr *dest_ip)
 DECL|ip_max_packet_len|macro|ip_max_packet_len
 DECL|is_6lo_technology|macro|is_6lo_technology
