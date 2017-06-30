@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|NUM_FLAGS|enumerator|NUM_FLAGS,
 DECL|PENDING_DHKEY|enumerator|PENDING_DHKEY,
 DECL|PENDING_PUB_KEY|enumerator|PENDING_PUB_KEY,
 DECL|bt_hci_ecc_init|function|void bt_hci_ecc_init(void)
@@ -12,7 +13,6 @@ DECL|ecc_thread|function|static void ecc_thread(void *p1, void *p2, void *p3)
 DECL|ecc|variable|ecc
 DECL|emulate_le_generate_dhkey|function|static void emulate_le_generate_dhkey(void)
 DECL|emulate_le_p256_public_key_cmd|function|static void emulate_le_p256_public_key_cmd(void)
-DECL|flags|variable|flags
 DECL|generate_keys|function|static u8_t generate_keys(void)
 DECL|le_gen_dhkey|function|static void le_gen_dhkey(struct net_buf *buf)
 DECL|le_p256_pub_key|function|static void le_p256_pub_key(struct net_buf *buf)
