@@ -3,7 +3,6 @@ DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|ack_pkt|variable|ack_pkt
 DECL|beacon_pkt|variable|beacon_pkt
 DECL|current_pkt|variable|current_pkt
-DECL|driver_lock|variable|driver_lock
 DECL|dst_addr|member|struct ieee802154_address_field *dst_addr;
 DECL|dst|member|struct in6_addr dst;
 DECL|fc_seq|member|struct ieee802154_fcf_seq *fc_seq;
