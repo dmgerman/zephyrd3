@@ -11,5 +11,5 @@ DECL|net_app_server_tls_disable|function|bool net_app_server_tls_disable(struct 
 DECL|net_app_server_tls_enable|function|bool net_app_server_tls_enable(struct net_app_ctx *ctx)
 DECL|net_app_server_tls|function|int net_app_server_tls(struct net_app_ctx *ctx, u8_t *request_buf, size_t request_buf_len, const char *server_banner, u8_t *personalization_data,
 DECL|new_client|function|static void new_client(struct net_context *net_ctx, const struct sockaddr *addr)
-DECL|new_server|function|static inline void new_server(struct net_app_ctx *ctx, const char *server_banner, const struct sockaddr *addr)
+DECL|new_server|function|static inline void new_server(struct net_app_ctx *ctx, const char *server_banner)
 DECL|tls_server_handler|function|static void tls_server_handler(struct net_app_ctx *ctx, struct k_sem *startup_sync)

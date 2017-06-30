@@ -24,15 +24,17 @@ DECL|connect_cb_called|member|bool connect_cb_called;
 DECL|connect_wait|member|struct k_sem connect_wait;
 DECL|connect|member|net_app_connect_cb_t connect;
 DECL|ctr_drbg|member|mbedtls_ctr_drbg_context ctr_drbg;
+DECL|ctx|member|struct net_context *ctx;
 DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
+DECL|default_ctx|member|struct net_app_endpoint *default_ctx;
 DECL|dir|member|u8_t dir;
 DECL|dns_id|member|u16_t dns_id;
 DECL|dns_wait|member|struct k_sem dns_wait;
 DECL|entropy_src_cb|member|net_app_entropy_src_cb_t entropy_src_cb;
 DECL|entropy|member|mbedtls_entropy_context entropy;
 DECL|frag|member|struct net_buf *frag;
-DECL|ipv4_ctx|member|struct net_context *ipv4_ctx;
-DECL|ipv6_ctx|member|struct net_context *ipv6_ctx;
+DECL|ipv4|member|struct net_app_endpoint ipv4;
+DECL|ipv6|member|struct net_app_endpoint ipv6;
 DECL|is_enabled|member|u8_t is_enabled : 1;
 DECL|is_init|member|u8_t is_init : 1;
 DECL|is_tls|member|u8_t is_tls : 1;
@@ -45,6 +47,7 @@ DECL|net_app_cert_cb_t|typedef|typedef int (*net_app_cert_cb_t)(struct net_app_c
 DECL|net_app_close_cb_t|typedef|typedef void (*net_app_close_cb_t)(struct net_app_ctx *ctx,
 DECL|net_app_connect_cb_t|typedef|typedef void (*net_app_connect_cb_t)(struct net_app_ctx *ctx,
 DECL|net_app_ctx|struct|struct net_app_ctx {
+DECL|net_app_endpoint|struct|struct net_app_endpoint {
 DECL|net_app_entropy_src_cb_t|typedef|typedef int (*net_app_entropy_src_cb_t)(void *data, unsigned char *output,
 DECL|net_app_fifo_block|struct|struct net_app_fifo_block {
 DECL|net_app_init_tcp_client|function|static inline int net_app_init_tcp_client(struct net_app_ctx *ctx, struct sockaddr *client_addr, struct sockaddr *peer_addr, const char *peer_addr_str, u16_t peer_port,
