@@ -11,8 +11,11 @@ DECL|disconnect|member|void (*disconnect)(struct mqtt_ctx *ctx);
 DECL|malformed|member|void (*malformed)(struct mqtt_ctx *ctx, u16_t pkt_type);
 DECL|mqtt_app|enum|enum mqtt_app {
 DECL|mqtt_ctx|struct|struct mqtt_ctx {
-DECL|net_ctx|member|struct net_context *net_ctx;
+DECL|net_app_ctx|member|struct net_app_ctx net_app_ctx;
+DECL|net_init_timeout|member|s32_t net_init_timeout;
 DECL|net_timeout|member|s32_t net_timeout;
+DECL|peer_addr_str|member|char *peer_addr_str;
+DECL|peer_port|member|u16_t peer_port;
 DECL|publish_rx|member|int (*publish_rx)(struct mqtt_ctx *ctx, struct mqtt_publish_msg *msg,
 DECL|publish_tx|member|int (*publish_tx)(struct mqtt_ctx *ctx, u16_t pkt_id,
 DECL|rcv|member|int (*rcv)(struct mqtt_ctx *ctx, struct net_pkt *);
