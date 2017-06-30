@@ -2,12 +2,15 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|MY_TCP_PORT|macro|MY_TCP_PORT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_TCP_HDR|macro|NET_TCP_HDR
 DECL|PEER_TCP_PORT|macro|PEER_TCP_PORT
 DECL|REGISTER_FAIL|macro|REGISTER_FAIL
 DECL|REGISTER|macro|REGISTER
 DECL|TEST_IPV4_FAIL|macro|TEST_IPV4_FAIL
+DECL|TEST_IPV4_LONG_OK|macro|TEST_IPV4_LONG_OK
 DECL|TEST_IPV4_OK|macro|TEST_IPV4_OK
 DECL|TEST_IPV6_FAIL|macro|TEST_IPV6_FAIL
+DECL|TEST_IPV6_LONG_OK|macro|TEST_IPV6_LONG_OK
 DECL|TEST_IPV6_OK|macro|TEST_IPV6_OK
 DECL|TIMEOUT|macro|TIMEOUT
 DECL|UNREGISTER|macro|UNREGISTER
@@ -25,6 +28,7 @@ DECL|handle|member|struct net_conn_handle *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|in4addr_any|variable|in4addr_any
 DECL|in6addr_any|variable|in6addr_any
+DECL|ipv6_hop_by_hop_ext_hdr|variable|ipv6_hop_by_hop_ext_hdr
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|u16_t local_port;
@@ -54,10 +58,12 @@ DECL|reply_v4_ctx|variable|reply_v4_ctx
 DECL|reply_v6_ctx|variable|reply_v6_ctx
 DECL|returned_ud|variable|returned_ud
 DECL|send_ipv4_tcp_msg|function|static bool send_ipv4_tcp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, u16_t src_port, u16_t dst_port,
+DECL|send_ipv6_tcp_long_msg|function|static bool send_ipv6_tcp_long_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_ipv6_tcp_msg|function|static bool send_ipv6_tcp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_status|variable|send_status
 DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr *raddr, struct sockaddr *laddr, u16_t rport, u16_t lport)
 DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, u16_t remote_port, u16_t local_port)
+DECL|setup_ipv6_tcp_long|function|static void setup_ipv6_tcp_long(struct net_pkt *pkt,struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|syn_v6_sent|variable|syn_v6_sent
 DECL|test_cleanup|function|static bool test_cleanup(void)

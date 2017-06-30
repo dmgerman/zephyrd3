@@ -17,4 +17,5 @@ DECL|net_sprint_ipv6_addr|function|static inline char *net_sprint_ipv6_addr(cons
 DECL|net_sprint_ipv6_addr|function|static inline char *net_sprint_ipv6_addr(const struct in6_addr *addr)
 DECL|net_sprint_ll_addr|function|static inline char *net_sprint_ll_addr(const u8_t *ll, u8_t ll_len)
 DECL|net_sprint_ll_addr|function|static inline char *net_sprint_ll_addr(const u8_t *ll, u8_t ll_len)
+DECL|net_tcp_header_fits|function|struct net_tcp_hdr *net_tcp_header_fits(struct net_pkt *pkt,struct net_tcp_hdr *hdr)
 DECL|net_udp_header_fits|function|struct net_udp_hdr *net_udp_header_fits(struct net_pkt *pkt,struct net_udp_hdr *hdr)
