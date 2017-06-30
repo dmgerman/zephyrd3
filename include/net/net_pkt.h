@@ -3,7 +3,6 @@ DECL|NET_IPV6_HDR|macro|NET_IPV6_HDR
 DECL|NET_PKT_DATA_POOL_DEFINE|macro|NET_PKT_DATA_POOL_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
 DECL|NET_TCP_HDR|macro|NET_TCP_HDR
-DECL|NET_UDP_HDR|macro|NET_UDP_HDR
 DECL|__NET_PKT_H__|macro|__NET_PKT_H__
 DECL|_reserved|member|int _reserved;
 DECL|_unused|member|u8_t _unused : 4;
@@ -109,7 +108,6 @@ DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_
 DECL|net_pkt_set_token|function|static inline void net_pkt_set_token(struct net_pkt *pkt, void *token)
 DECL|net_pkt_tcp_data|function|static inline u8_t *net_pkt_tcp_data(struct net_pkt *pkt)
 DECL|net_pkt_token|function|static inline void *net_pkt_token(struct net_pkt *pkt)
-DECL|net_pkt_udp_data|function|static inline u8_t *net_pkt_udp_data(struct net_pkt *pkt)
 DECL|net_pkt_unref|macro|net_pkt_unref
 DECL|net_pkt_write_be16|function|static inline struct net_buf *net_pkt_write_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u16_t data)
 DECL|net_pkt_write_be32|function|static inline struct net_buf *net_pkt_write_be32(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u32_t data)

@@ -88,6 +88,7 @@ DECL|net_pkt_print|function|void net_pkt_print(void)
 DECL|net_pkt_ref_debug|function|struct net_pkt *net_pkt_ref_debug(struct net_pkt *pkt, const char *caller, int line) #else struct net_pkt *net_pkt_ref(struct net_pkt *pkt) #endif /* CONFIG_NET_DEBUG_NET_PKT */
 DECL|net_pkt_slab2str|function|const char *net_pkt_slab2str(struct k_mem_slab *slab)
 DECL|net_pkt_split|function|int net_pkt_split(struct net_pkt *pkt, struct net_buf *orig_frag, u16_t len, struct net_buf **fragA, struct net_buf **fragB, s32_t timeout)
+DECL|net_pkt_udp_data|function|struct net_udp_hdr *net_pkt_udp_data(struct net_pkt *pkt)
 DECL|net_pkt_unref_debug|function|void net_pkt_unref_debug(struct net_pkt *pkt, const char *caller, int line)
 DECL|net_pkt_write|function|struct net_buf *net_pkt_write(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u16_t len, u8_t *data, s32_t timeout)
 DECL|pkt|member|struct net_pkt *pkt;
