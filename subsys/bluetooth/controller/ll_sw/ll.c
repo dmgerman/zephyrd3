@@ -1,8 +1,12 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|FLASH_TICKER_NODES|macro|FLASH_TICKER_NODES
 DECL|FLASH_TICKER_NODES|macro|FLASH_TICKER_NODES
+DECL|FLASH_TICKER_USER_APP_OPS|macro|FLASH_TICKER_USER_APP_OPS
+DECL|FLASH_TICKER_USER_APP_OPS|macro|FLASH_TICKER_USER_APP_OPS
 DECL|ISR_DIRECT_DECLARE|function|ISR_DIRECT_DECLARE(radio_nrf5_isr)
 DECL|TICKER_NODES|macro|TICKER_NODES
+DECL|TICKER_USER_APP_OPS|macro|TICKER_USER_APP_OPS
+DECL|TICKER_USER_OPS|macro|TICKER_USER_OPS
 DECL|_ll_context|variable|_ll_context
 DECL|ll_addr_get|function|u8_t *ll_addr_get(u8_t addr_type, u8_t *bdaddr)
 DECL|ll_addr_set|function|void ll_addr_set(u8_t addr_type, u8_t const *const bdaddr)
