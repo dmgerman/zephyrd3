@@ -155,7 +155,7 @@ DECL|_poll_types_bits|enum|enum _poll_types_bits {
 DECL|_poller|struct|struct _poller {
 DECL|_queue|member|struct k_queue _queue;
 DECL|_queue|member|struct k_queue _queue;
-DECL|_reserved|member|void *_reserved; /* Used by k_fifo implementation. */
+DECL|_reserved|member|void *_reserved; /* Used by k_queue implementation. */
 DECL|_rx_data|member|void *_rx_data;
 DECL|_static_thread_data|struct|struct _static_thread_data {
 DECL|_syncing_thread|member|k_tid_t _syncing_thread;
@@ -198,7 +198,6 @@ DECL|errno_var|member|int errno_var;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
-DECL|fifo|member|struct k_fifo fifo;
 DECL|flags|member|atomic_t flags[1];
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
@@ -326,6 +325,7 @@ DECL|pool|member|u32_t pool : 8;
 DECL|preempt|member|u16_t preempt;
 DECL|prio|member|s8_t prio;
 DECL|queue|member|struct k_queue *queue;
+DECL|queue|member|struct k_queue queue;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
