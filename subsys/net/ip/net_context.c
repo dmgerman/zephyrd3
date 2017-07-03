@@ -7,7 +7,6 @@ DECL|NET_CONN_CB|macro|NET_CONN_CB
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|ack_timeout|function|static void ack_timeout(struct k_work *work)
 DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|backlog_ack_timeout|function|static void backlog_ack_timeout(struct k_work *work)
