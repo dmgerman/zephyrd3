@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|DEFAULT_EVENT_MASK_PAGE_2|macro|DEFAULT_EVENT_MASK_PAGE_2
 DECL|DEFAULT_EVENT_MASK|macro|DEFAULT_EVENT_MASK
 DECL|DEFAULT_LE_EVENT_MASK|macro|DEFAULT_LE_EVENT_MASK
 DECL|ST_ADV|macro|ST_ADV
@@ -23,6 +24,7 @@ DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_d
 DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
 DECL|encode_data_ctrl|function|static void encode_data_ctrl(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
 DECL|encrypt_change|function|static void encrypt_change(u8_t err, u16_t handle, struct net_buf *buf)
+DECL|event_mask_page_2|variable|event_mask_page_2
 DECL|event_mask|variable|event_mask
 DECL|evt_create|function|static void evt_create(struct net_buf *buf, u8_t evt, u8_t len)
 DECL|hbuf_signal|variable|hbuf_signal
@@ -110,4 +112,5 @@ DECL|read_supported_commands|function|static void read_supported_commands(struct
 DECL|remote_version_info|function|static void remote_version_info(struct pdu_data *pdu_data, u16_t handle,struct net_buf *buf)
 DECL|reset|function|static void reset(struct net_buf *buf, struct net_buf **evt)
 DECL|set_ctl_to_host_flow|function|static void set_ctl_to_host_flow(struct net_buf *buf, struct net_buf **evt)
+DECL|set_event_mask_page_2|function|static void set_event_mask_page_2(struct net_buf *buf, struct net_buf **evt)
 DECL|set_event_mask|function|static void set_event_mask(struct net_buf *buf, struct net_buf **evt)

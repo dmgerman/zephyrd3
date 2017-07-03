@@ -358,6 +358,7 @@ DECL|BT_HCI_OP_RESET|macro|BT_HCI_OP_RESET
 DECL|BT_HCI_OP_SETUP_SYNC_CONN|macro|BT_HCI_OP_SETUP_SYNC_CONN
 DECL|BT_HCI_OP_SET_CONN_ENCRYPT|macro|BT_HCI_OP_SET_CONN_ENCRYPT
 DECL|BT_HCI_OP_SET_CTL_TO_HOST_FLOW|macro|BT_HCI_OP_SET_CTL_TO_HOST_FLOW
+DECL|BT_HCI_OP_SET_EVENT_MASK_PAGE_2|macro|BT_HCI_OP_SET_EVENT_MASK_PAGE_2
 DECL|BT_HCI_OP_SET_EVENT_MASK|macro|BT_HCI_OP_SET_EVENT_MASK
 DECL|BT_HCI_OP_USER_CONFIRM_NEG_REPLY|macro|BT_HCI_OP_USER_CONFIRM_NEG_REPLY
 DECL|BT_HCI_OP_USER_CONFIRM_REPLY|macro|BT_HCI_OP_USER_CONFIRM_REPLY
@@ -450,6 +451,7 @@ DECL|HCI_PKT_TYPE_HV2|macro|HCI_PKT_TYPE_HV2
 DECL|HCI_PKT_TYPE_HV3|macro|HCI_PKT_TYPE_HV3
 DECL|SCO_PKT_MASK|macro|SCO_PKT_MASK
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -792,6 +794,7 @@ DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
 DECL|bt_hci_cp_set_conn_encrypt|struct|struct bt_hci_cp_set_conn_encrypt {
 DECL|bt_hci_cp_set_ctl_to_host_flow|struct|struct bt_hci_cp_set_ctl_to_host_flow {
+DECL|bt_hci_cp_set_event_mask_page_2|struct|struct bt_hci_cp_set_event_mask_page_2 {
 DECL|bt_hci_cp_set_event_mask|struct|struct bt_hci_cp_set_event_mask {
 DECL|bt_hci_cp_setup_sync_conn|struct|struct bt_hci_cp_setup_sync_conn {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
@@ -957,6 +960,7 @@ DECL|enc_data|member|u8_t enc_data[16];
 DECL|encr_enabled|member|u8_t encr_enabled;
 DECL|encrypt|member|u8_t encrypt;
 DECL|encrypt|member|u8_t encrypt;
+DECL|events_page_2|member|u8_t events_page_2[8];
 DECL|events|member|u8_t events[8];
 DECL|events|member|u8_t events[8];
 DECL|evt_type|member|u8_t evt_type;
