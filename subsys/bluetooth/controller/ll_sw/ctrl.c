@@ -38,7 +38,9 @@ DECL|adv_setup|function|static void adv_setup(void)
 DECL|advertiser|member|struct advertiser advertiser;
 DECL|advertiser|struct|struct advertiser {
 DECL|chan_mam|function|static u16_t chan_mam(u16_t a, u16_t b)
+DECL|chan_map_current|member|u8_t chan_map_current:3;
 DECL|chan_map_update|function|static u32_t chan_map_update(struct connection *conn, struct pdu_data *pdu_data_rx)
+DECL|chan_map|member|u8_t chan_map:3;
 DECL|chan_perm|function|static u16_t chan_perm(u16_t i)
 DECL|chan_prn|function|static u16_t chan_prn(u16_t counter, u16_t chan_id)
 DECL|chan_rev_8|function|static u8_t chan_rev_8(u8_t i)
@@ -48,8 +50,6 @@ DECL|chan_sel_2|function|static u8_t chan_sel_2(u16_t counter, u16_t chan_id, u8
 DECL|chan_sel_remap|function|static u8_t chan_sel_remap(u8_t *chan_map, u8_t chan_index)
 DECL|chan_set|function|static void chan_set(u32_t chan)
 DECL|chan|member|u8_t chan:2;
-DECL|chl_map_current|member|u8_t chl_map_current:3;
-DECL|chl_map|member|u8_t chl_map:3;
 DECL|common_init|function|static void common_init(void)
 DECL|conn_curr|member|struct connection *conn_curr;
 DECL|conn_free|member|void *conn_free;
@@ -228,7 +228,7 @@ DECL|prepare_pdu_data_tx|function|static void prepare_pdu_data_tx(struct connect
 DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op_context)
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
-DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chl_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chl_map, u8_t filter_policy, u8_t rl_idx)
+DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
 DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)

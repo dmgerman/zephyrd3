@@ -1,4 +1,4 @@
-DECL|chl_map|member|u8_t chl_map:3;
+DECL|chan_map|member|u8_t chan_map:3;
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|id_addr_type|member|u8_t id_addr_type:1;
 DECL|id_addr|member|u8_t id_addr[BDADDR_SIZE];
