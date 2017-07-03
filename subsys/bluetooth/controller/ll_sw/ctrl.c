@@ -149,8 +149,12 @@ DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx
 DECL|isr_rx_conn_pkt_release|function|isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
 DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct radio_pdu_node_tx **tx_release, u8_t *rx_enqueue)
 DECL|isr_rx_conn|function|static inline void isr_rx_conn(u8_t crc_ok, u8_t trx_done, u8_t rssi_ready)
+DECL|isr_rx_scan_check|function|static inline bool isr_rx_scan_check(u8_t irkmatch_ok, u8_t devmatch_ok, u8_t rl_idx)
 DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready)
-DECL|isr_rx_scan|function|static inline u32_t isr_rx_scan(u8_t irkmatch_id, u8_t rssi_ready)
+DECL|isr_rx_scan|function|static inline u32_t isr_rx_scan(u8_t devmatch_ok, u8_t devmatch_id,u8_t irkmatch_id, u8_t rl_idx, u8_t rssi_ready)
+DECL|isr_scan_init_adva_check|function|static inline bool isr_scan_init_adva_check(struct pdu_adv *pdu, u8_t rl_idx)
+DECL|isr_scan_init_check|function|static inline bool isr_scan_init_check(struct pdu_adv *pdu, u8_t rl_idx)
+DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx)
 DECL|isr|function|static void isr(void)
 DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets)
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
@@ -247,7 +251,7 @@ DECL|radio_rx_get|function|u8_t radio_rx_get(struct radio_pdu_node_rx **radio_pd
 DECL|radio_rx_mem_release|function|void radio_rx_mem_release(struct radio_pdu_node_rx **radio_pdu_node_rx)
 DECL|radio_scan_data_get|function|struct radio_adv_data *radio_scan_data_get(void)
 DECL|radio_scan_disable|function|u32_t radio_scan_disable(void)
-DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy)
+DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy, u8_t rpa_gen, u8_t rl_idx)
 DECL|radio_scan_filter_pol_get|function|u32_t radio_scan_filter_pol_get(void)
 DECL|radio_scan_is_enabled|function|u32_t radio_scan_is_enabled(void)
 DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_set(u32_t ticks_active_to_start)
@@ -259,10 +263,12 @@ DECL|remainder_anchor|member|u32_t remainder_anchor;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rl_idx|member|u8_t rl_idx;
+DECL|rl_idx|member|u8_t rl_idx;
 DECL|role_active_disable|function|static inline void role_active_disable(u8_t ticker_id_stop, u32_t ticks_xtal_to_start, u32_t ticks_active_to_start)
 DECL|role_disable|function|static u32_t role_disable(u8_t ticker_id_primary, u8_t ticker_id_stop)
 DECL|role|enum|enum role {
 DECL|role|member|enum role volatile role;
+DECL|rpa_gen|member|u8_t rpa_gen:1;
 DECL|rx_fc_lock|function|static void rx_fc_lock(u16_t handle)
 DECL|rx_packet_set|function|static void rx_packet_set(struct connection *conn, struct pdu_data *pdu_data_rx)
 DECL|scan_data|member|struct radio_adv_data scan_data;
