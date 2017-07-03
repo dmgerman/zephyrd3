@@ -269,6 +269,7 @@ DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_queue_is_empty|function|static inline int k_queue_is_empty(struct k_queue *queue)
 DECL|k_queue_peek_head|function|static inline void *k_queue_peek_head(struct k_queue *queue)
 DECL|k_queue_peek_tail|function|static inline void *k_queue_peek_tail(struct k_queue *queue)
+DECL|k_queue_remove|function|static inline bool k_queue_remove(struct k_queue *queue, void *data)
 DECL|k_queue|struct|struct k_queue {
 DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
 DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
