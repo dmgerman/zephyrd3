@@ -48,7 +48,7 @@ DECL|cmd|member|u8_t cmd:1;
 DECL|cmd|member|u8_t cmd:1;
 DECL|company_id|member|u16_t company_id;
 DECL|conn_interval|member|u16_t conn_interval;
-DECL|connect_expire|member|u8_t connect_expire;
+DECL|connect_expire|member|u16_t connect_expire;
 DECL|connection_update|member|} connection_update;
 DECL|connection|struct|struct connection {
 DECL|crc_init|member|u8_t crc_init[3];
@@ -95,7 +95,6 @@ DECL|llcp_version|member|} llcp_version;
 DECL|llcp|enum|enum llcp {
 DECL|llcp|member|} llcp;
 DECL|ltk|member|u8_t ltk[16];
-DECL|master|member|} master;
 DECL|max_rx_octets|member|u16_t max_rx_octets;
 DECL|max_tx_octets|member|u16_t max_tx_octets;
 DECL|nesn|member|u8_t nesn:1;
@@ -135,10 +134,7 @@ DECL|refresh|member|u8_t refresh:1;
 DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
 DECL|req|member|u8_t req;
-DECL|rfu|member|u8_t rfu:1;
 DECL|role|member|u8_t role:1;
-DECL|role|member|u8_t role:1;
-DECL|role|member|} role;
 DECL|rssi_latest|member|u8_t rssi_latest;
 DECL|rssi_reported|member|u8_t rssi_reported;
 DECL|rssi_sample_count|member|u8_t rssi_sample_count;
