@@ -1,0 +1,1 @@
+DECL|__MCUBOOT_H__|macro|__MCUBOOT_H__
