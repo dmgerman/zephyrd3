@@ -27,6 +27,7 @@ DECL|SCSI_TRANSPARENT_SUBCLASS|macro|SCSI_TRANSPARENT_SUBCLASS
 DECL|USB_1_1|macro|USB_1_1
 DECL|USB_2_0|macro|USB_2_0
 DECL|USB_2_1|macro|USB_2_1
+DECL|USB_ASSOCIATION_DESC|macro|USB_ASSOCIATION_DESC
 DECL|USB_COMMON_H_|macro|USB_COMMON_H_
 DECL|USB_CONFIGURATION_ATTRIBUTES|macro|USB_CONFIGURATION_ATTRIBUTES
 DECL|USB_CONFIGURATION_DESC_SIZE|macro|USB_CONFIGURATION_DESC_SIZE
@@ -50,3 +51,63 @@ DECL|USB_STRING_DESC_SIZE|macro|USB_STRING_DESC_SIZE
 DECL|USB_STRING_DESC|macro|USB_STRING_DESC
 DECL|V25TER_PROTOCOL|macro|V25TER_PROTOCOL
 DECL|WIRELESS_DEVICE_CLASS|macro|WIRELESS_DEVICE_CLASS
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|bAlternateSetting|member|u8_t bAlternateSetting;
+DECL|bConfigurationValue|member|u8_t bConfigurationValue;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDeviceClass|member|u8_t bDeviceClass;
+DECL|bDeviceProtocol|member|u8_t bDeviceProtocol;
+DECL|bDeviceSubClass|member|u8_t bDeviceSubClass;
+DECL|bEndpointAddress|member|u8_t bEndpointAddress;
+DECL|bFirstInterface|member|u8_t bFirstInterface;
+DECL|bFunctionClass|member|u8_t bFunctionClass;
+DECL|bFunctionProtocol|member|u8_t bFunctionProtocol;
+DECL|bFunctionSubClass|member|u8_t bFunctionSubClass;
+DECL|bInterfaceClass|member|u8_t bInterfaceClass;
+DECL|bInterfaceCount|member|u8_t bInterfaceCount;
+DECL|bInterfaceNumber|member|u8_t bInterfaceNumber;
+DECL|bInterfaceProtocol|member|u8_t bInterfaceProtocol;
+DECL|bInterfaceSubClass|member|u8_t bInterfaceSubClass;
+DECL|bInterval|member|u8_t bInterval;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bMaxPacketSize0|member|u8_t bMaxPacketSize0;
+DECL|bMaxPower|member|u8_t bMaxPower;
+DECL|bNumConfigurations|member|u8_t bNumConfigurations;
+DECL|bNumEndpoints|member|u8_t bNumEndpoints;
+DECL|bNumInterfaces|member|u8_t bNumInterfaces;
+DECL|bString|member|u16_t bString;
+DECL|bcdDevice|member|u16_t bcdDevice;
+DECL|bcdUSB|member|u16_t bcdUSB;
+DECL|bmAttributes|member|u8_t bmAttributes;
+DECL|bmAttributes|member|u8_t bmAttributes;
+DECL|iConfiguration|member|u8_t iConfiguration;
+DECL|iFunction|member|u8_t iFunction;
+DECL|iInterface|member|u8_t iInterface;
+DECL|iManufacturer|member|u8_t iManufacturer;
+DECL|iProduct|member|u8_t iProduct;
+DECL|iSerialNumber|member|u8_t iSerialNumber;
+DECL|idProduct|member|u16_t idProduct;
+DECL|idVendor|member|u16_t idVendor;
+DECL|usb_association_descriptor|struct|struct usb_association_descriptor {
+DECL|usb_cfg_descriptor|struct|struct usb_cfg_descriptor {
+DECL|usb_device_descriptor|struct|struct usb_device_descriptor {
+DECL|usb_ep_descriptor|struct|struct usb_ep_descriptor {
+DECL|usb_if_descriptor|struct|struct usb_if_descriptor {
+DECL|usb_string_descriptor|struct|struct usb_string_descriptor {
+DECL|wMaxPacketSize|member|u16_t wMaxPacketSize;
+DECL|wTotalLength|member|u16_t wTotalLength;
