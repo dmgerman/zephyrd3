@@ -80,6 +80,7 @@ DECL|instant|member|u16_t instant;
 DECL|interval|member|u16_t interval;
 DECL|is_internal|member|u8_t is_internal:2;
 DECL|latency_cancel|member|u8_t latency_cancel:1;
+DECL|latency_enabled|member|u8_t latency_enabled:1;
 DECL|latency_event|member|u16_t latency_event;
 DECL|latency_prepare|member|u16_t latency_prepare;
 DECL|latency|member|u16_t latency;
