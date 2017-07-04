@@ -1363,7 +1363,7 @@ DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|subevent|member|u8_t subevent;
-DECL|subversion|member|u8_t subversion;
+DECL|subversion|member|u16_t subversion;
 DECL|supervision_timeout|member|u16_t supervision_timeout;
 DECL|supervision_timeout|member|u16_t supervision_timeout;
 DECL|supervision_timeout|member|u16_t supervision_timeout;
