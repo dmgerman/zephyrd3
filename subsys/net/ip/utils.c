@@ -7,6 +7,7 @@ DECL|net_addr_pton|function|int net_addr_pton(sa_family_t family, const char *sr
 DECL|net_byte_to_hex|function|char *net_byte_to_hex(char *ptr, u8_t byte, char base, bool pad)
 DECL|net_calc_chksum_ipv4|function|u16_t net_calc_chksum_ipv4(struct net_pkt *pkt)
 DECL|net_calc_chksum|function|u16_t net_calc_chksum(struct net_pkt *pkt, u8_t proto)
+DECL|net_header_fits|function|bool net_header_fits(struct net_pkt *pkt, u8_t *hdr, size_t hdr_size)
 DECL|net_proto2str|function|const char *net_proto2str(enum net_ip_protocol proto)
 DECL|net_sprint_ll_addr_buf|function|char *net_sprint_ll_addr_buf(const u8_t *ll, u8_t ll_len, char *buf, int buflen)
 DECL|net_value_to_udec|function|static int net_value_to_udec(char *buf, u32_t value, int precision)
