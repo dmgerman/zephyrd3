@@ -28,7 +28,7 @@ DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|bt_ready|function|static void bt_ready(int err)
-DECL|ccc_cfg|member|struct bt_gatt_ccc_cfg ccc_cfg[CONFIG_BLUETOOTH_MAX_PAIRED];
+DECL|ccc_cfg|member|struct bt_gatt_ccc_cfg ccc_cfg[BT_GATT_CCC_MAX];
 DECL|check_condition|function|static bool check_condition(u8_t condition, s16_t old_val, s16_t new_val, s16_t ref_val)
 DECL|condition|member|u8_t condition;
 DECL|condition|member|u8_t condition;
