@@ -68,6 +68,8 @@ DECL|MMU_PTE_RW_MASK|macro|MMU_PTE_RW_MASK
 DECL|MMU_PTE_US_MASK|macro|MMU_PTE_US_MASK
 DECL|PAGES|macro|PAGES
 DECL|_MMUSTRUCTS_H|macro|_MMUSTRUCTS_H
+DECL|_MMU_BOOT_REGION|macro|_MMU_BOOT_REGION
+DECL|__MMU_BOOT_REGION|macro|__MMU_BOOT_REGION
 DECL|address|member|u32_t address; /*Start address of the memory region */
 DECL|alloc|member|u32_t alloc:1;
 DECL|a|member|u32_t a:1;
