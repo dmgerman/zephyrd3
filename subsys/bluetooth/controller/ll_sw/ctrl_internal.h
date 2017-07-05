@@ -96,6 +96,7 @@ DECL|llcp_version|member|} llcp_version;
 DECL|llcp|enum|enum llcp {
 DECL|llcp|member|} llcp;
 DECL|ltk|member|u8_t ltk[16];
+DECL|master|member|} master;
 DECL|max_rx_octets|member|u16_t max_rx_octets;
 DECL|max_tx_octets|member|u16_t max_tx_octets;
 DECL|nesn|member|u8_t nesn:1;
@@ -154,6 +155,7 @@ DECL|state|member|u8_t state:3;
 DECL|sub_version_number|member|u16_t sub_version_number;
 DECL|supervision_expire|member|u16_t supervision_expire;
 DECL|supervision_reload|member|u16_t supervision_reload;
+DECL|terminate_ack|member|u8_t terminate_ack:1;
 DECL|ticks_active_to_start|member|u32_t ticks_active_to_start;
 DECL|ticks_preempt_to_start|member|u32_t ticks_preempt_to_start;
 DECL|ticks_ref|member|u32_t ticks_ref;
