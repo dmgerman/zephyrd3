@@ -4,7 +4,6 @@ DECL|I2C_DECLARE_CLIENT_CONFIG|macro|I2C_DECLARE_CLIENT_CONFIG
 DECL|I2C_GET_ADDR|macro|I2C_GET_ADDR
 DECL|I2C_GET_MASTER|macro|I2C_GET_MASTER
 DECL|I2C_MODE_MASTER|macro|I2C_MODE_MASTER
-DECL|I2C_MODE_SLAVE_READ|macro|I2C_MODE_SLAVE_READ
 DECL|I2C_MSG_READ|macro|I2C_MSG_READ
 DECL|I2C_MSG_RESTART|macro|I2C_MSG_RESTART
 DECL|I2C_MSG_RW_MASK|macro|I2C_MSG_RW_MASK
@@ -50,7 +49,6 @@ DECL|i2c_reg_write_byte|function|static inline int i2c_reg_write_byte(struct dev
 DECL|i2c_transfer|function|static inline int i2c_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)
 DECL|i2c_write|function|static inline int i2c_write(struct device *dev, u8_t *buf, u32_t num_bytes, u16_t addr)
 DECL|is_master_device|member|u32_t is_master_device : 1;
-DECL|is_slave_read|member|u32_t is_slave_read : 1;
 DECL|len|member|u32_t len;
 DECL|raw|member|u32_t raw;
 DECL|reserved|member|u32_t reserved : 26;
