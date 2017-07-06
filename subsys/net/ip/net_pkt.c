@@ -95,3 +95,5 @@ DECL|net_pkt_write|function|struct net_buf *net_pkt_write(struct net_pkt *pkt, s
 DECL|pkt|member|struct net_pkt *pkt;
 DECL|pool2str|function|static inline const char *pool2str(struct net_buf_pool *pool)
 DECL|slab2str|function|static inline const char *slab2str(struct k_mem_slab *slab)
+DECL|too_short_msg|function|static void too_short_msg(struct net_pkt *pkt, u16_t offset, size_t extra_len)
+DECL|too_short_msg|macro|too_short_msg
