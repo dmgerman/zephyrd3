@@ -77,6 +77,7 @@ DECL|le_param_req|function|bool le_param_req(struct bt_conn *conn, struct bt_le_
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
 DECL|notify_le_param_updated|function|void notify_le_param_updated(struct bt_conn *conn)
+DECL|notify_tx|function|static void notify_tx(void)
 DECL|pairing_method|enum|enum pairing_method {
 DECL|pin_code_neg_reply|function|static int pin_code_neg_reply(const bt_addr_t *bdaddr)
 DECL|pin_code_reply|function|static int pin_code_reply(struct bt_conn *conn, const char *pin, u8_t len)
