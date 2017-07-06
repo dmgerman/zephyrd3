@@ -1,0 +1,44 @@
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bString|member|u8_t bString[MFR_DESC_LENGTH - 2];
+DECL|bString|member|u8_t bString[PRODUCT_DESC_LENGTH - 2];
+DECL|bString|member|u8_t bString[SN_DESC_LENGTH - 2];
+DECL|cdc_acm_cfg|member|} __packed cdc_acm_cfg;
+DECL|cfg_descr|member|struct usb_cfg_descriptor cfg_descr;
+DECL|common_desc|variable|common_desc
+DECL|dev_common_descriptor|struct|struct dev_common_descriptor {
+DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
+DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
+DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
+DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;
+DECL|if0_header|member|struct cdc_header_descriptor if0_header;
+DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
+DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
+DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
+DECL|if0|member|struct usb_if_descriptor if0;
+DECL|if1_in_ep|member|struct usb_ep_descriptor if1_in_ep;
+DECL|if1_out_ep|member|struct usb_ep_descriptor if1_out_ep;
+DECL|if1|member|struct usb_if_descriptor if1;
+DECL|lang_descr|member|struct usb_string_descriptor lang_descr;
+DECL|mass_cfg|member|} __packed mass_cfg;
+DECL|string_descr|member|} __packed string_descr;
+DECL|term_descr|member|struct usb_desc_header term_descr;
+DECL|unicode_mfr|member|} __packed unicode_mfr;
+DECL|unicode_product|member|} __packed unicode_product;
+DECL|unicode_sn|member|} __packed unicode_sn;
+DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
+DECL|usb_fix_unicode_string|function|void usb_fix_unicode_string(int idx_max, int asci_idx_max, u8_t *buf)
+DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
+DECL|usb_mass_config|struct|struct usb_mass_config {
+DECL|usb_mfr_descriptor|struct|struct usb_mfr_descriptor {
+DECL|usb_product_descriptor|struct|struct usb_product_descriptor {
+DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {
+DECL|usb_string_desription|struct|struct usb_string_desription {
