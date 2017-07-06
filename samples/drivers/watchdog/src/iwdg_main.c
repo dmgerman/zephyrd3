@@ -1,0 +1,3 @@
+DECL|TIMEOUT_INVALID|macro|TIMEOUT_INVALID
+DECL|TIMEOUT_VALID|macro|TIMEOUT_VALID
+DECL|main|function|void main(void)
