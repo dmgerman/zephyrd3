@@ -28,7 +28,7 @@ DECL|ll_priv_mode_set|function|u32_t ll_priv_mode_set(bt_addr_le_t *id_addr, u8_
 DECL|ll_rl_add|function|u32_t ll_rl_add(bt_addr_le_t *id_addr, const u8_t pirk[16],const u8_t lirk[16])
 DECL|ll_rl_clear|function|u32_t ll_rl_clear(void)
 DECL|ll_rl_enable|function|u32_t ll_rl_enable(u8_t enable)
-DECL|ll_rl_find|function|int ll_rl_find(u8_t id_addr_type, u8_t *id_addr)
+DECL|ll_rl_find|function|u8_t ll_rl_find(u8_t id_addr_type, u8_t *id_addr, u8_t *free)
 DECL|ll_rl_lrpa_get|function|u32_t ll_rl_lrpa_get(bt_addr_le_t *id_addr, bt_addr_t *lrpa)
 DECL|ll_rl_pdu_adv_update|function|void ll_rl_pdu_adv_update(int idx, struct pdu_adv *pdu)
 DECL|ll_rl_prpa_get|function|u32_t ll_rl_prpa_get(bt_addr_le_t *id_addr, bt_addr_t *prpa)
@@ -46,14 +46,14 @@ DECL|peer_irk_count|variable|peer_irk_count
 DECL|peer_irk_rl_ids|variable|peer_irk_rl_ids
 DECL|peer_irks|variable|peer_irks
 DECL|peer_rpa|member|bt_addr_t peer_rpa;
-DECL|pirk_idx|member|u8_t pirk_idx:3;
+DECL|pirk_idx|member|u8_t pirk_idx;
 DECL|pirk|member|u8_t pirk:1;
 DECL|rl_access_check|function|static int rl_access_check(bool check_ar)
 DECL|rl_clear|function|static void rl_clear(void)
 DECL|rl_dev|struct|static struct rl_dev {
 DECL|rl_enable|variable|rl_enable
 DECL|rl_filter|variable|rl_filter
-DECL|rl_idx|member|u8_t rl_idx:4;
+DECL|rl_idx|member|u8_t rl_idx;
 DECL|rl|variable|rl
 DECL|rpa_adv_refresh|function|static void rpa_adv_refresh(void)
 DECL|rpa_last_ms|variable|rpa_last_ms
@@ -68,7 +68,7 @@ DECL|taken|member|u8_t taken:1;
 DECL|wl_anon|variable|wl_anon
 DECL|wl_peers_add|function|static u32_t wl_peers_add(bt_addr_le_t *id_addr)
 DECL|wl_peers_clear|function|static void wl_peers_clear(void)
-DECL|wl_peers_find|function|static int wl_peers_find(u8_t addr_type, u8_t *addr)
+DECL|wl_peers_find|function|static u8_t wl_peers_find(u8_t addr_type, u8_t *addr, u8_t *free)
 DECL|wl_peers_remove|function|static u32_t wl_peers_remove(bt_addr_le_t *id_addr)
 DECL|wl_peers|variable|wl_peers
 DECL|wl|member|u8_t wl:1;

@@ -252,7 +252,7 @@ DECL|reject_ind_ext_send|function|static void reject_ind_ext_send(struct connect
 DECL|remainder_anchor|member|u32_t remainder_anchor;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
-DECL|rl_idx|member|u8_t rl_idx:4;
+DECL|rl_idx|member|u8_t rl_idx;
 DECL|role_active_disable|function|static inline void role_active_disable(u8_t ticker_id_stop, u32_t ticks_xtal_to_start, u32_t ticks_active_to_start)
 DECL|role_disable|function|static u32_t role_disable(u8_t ticker_id_primary, u8_t ticker_id_stop)
 DECL|role|enum|enum role {
