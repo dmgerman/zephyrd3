@@ -1,4 +1,8 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|SC_INDICATE_PENDING|enumerator|SC_INDICATE_PENDING, /* SC indicate pending */
+DECL|SC_NUM_FLAGS|enumerator|SC_NUM_FLAGS,
+DECL|SC_RANGE_CHANGED|enumerator|SC_RANGE_CHANGED, /* SC range changed */
+DECL|SC_TIMEOUT|macro|SC_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|add_subscriptions|function|static void add_subscriptions(struct bt_conn *conn)
@@ -36,6 +40,7 @@ DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|disconnected_cb|function|static u8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|u16_t end_handle;
+DECL|end|member|u16_t end;
 DECL|err|member|int err;
 DECL|find_next|function|static u8_t find_next(const struct bt_gatt_attr *attr, void *user_data)
 DECL|gap_appearance|variable|gap_appearance
@@ -65,6 +70,8 @@ DECL|gatt_read_rsp|function|static void gatt_read_rsp(struct bt_conn *conn, u8_t
 DECL|gatt_read_type_rsp|function|static void gatt_read_type_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_read_type|function|static int gatt_read_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|gatt_register|function|static int gatt_register(struct bt_gatt_service *svc)
+DECL|gatt_sc|struct|static struct gatt_sc {
+DECL|gatt_sc|variable|gatt_sc
 DECL|gatt_send|function|static int gatt_send(struct bt_conn *conn, struct net_buf *buf, bt_att_func_t func, void *params, bt_att_destroy_t destroy)
 DECL|gatt_subscription_add|function|static void gatt_subscription_add(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|gatt_subscription_remove|function|static void gatt_subscription_remove(struct bt_conn *conn, sys_snode_t *prev, struct bt_gatt_subscribe_params *params)
@@ -77,6 +84,7 @@ DECL|len|member|u16_t len;
 DECL|notify_cb|function|static u8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
 DECL|params|member|struct bt_gatt_indicate_params *params;
+DECL|params|member|struct bt_gatt_indicate_params params;
 DECL|parse_characteristic|function|static u16_t parse_characteristic(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, u16_t length)
 DECL|parse_include|function|static u16_t parse_include(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, u16_t length)
 DECL|properties|member|u8_t properties;
@@ -88,9 +96,10 @@ DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_co
 DECL|sc_ccc_cfg_changed|function|static void sc_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|sc_ccc_cfg|variable|sc_ccc_cfg
 DECL|sc_indicate_rsp|function|static void sc_indicate_rsp(struct bt_conn *conn, const struct bt_gatt_attr *attr, u8_t err)
-DECL|sc_indicate|function|static void sc_indicate(struct bt_gatt_attr *start, struct bt_gatt_attr *end)
-DECL|sc_sem|variable|sc_sem
+DECL|sc_indicate|function|static void sc_indicate(struct gatt_sc *sc, struct bt_gatt_attr *start,struct bt_gatt_attr *end)
+DECL|sc_process|function|static void sc_process(struct k_work *work)
 DECL|start_handle|member|u16_t start_handle;
+DECL|start|member|u16_t start;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|u16_t type;
 DECL|update_subscription|function|static void update_subscription(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
@@ -98,3 +107,4 @@ DECL|uuid16|member|u16_t uuid16;
 DECL|uuid16|member|u16_t uuid16;
 DECL|uuid|member|u8_t uuid[16];
 DECL|value_handle|member|u16_t value_handle;
+DECL|work|member|struct k_delayed_work work;
