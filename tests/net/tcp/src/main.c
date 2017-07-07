@@ -24,6 +24,7 @@ DECL|any_addr4|variable|any_addr4
 DECL|any_addr6|variable|any_addr6
 DECL|fail|variable|fail
 DECL|func|member|bool (*func)(void);
+DECL|get_recv_wnd|function|static inline u32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|handle|member|struct net_conn_handle *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|in4addr_any|variable|in4addr_any
@@ -83,6 +84,7 @@ DECL|test_init_tcp_reply_context|function|static bool test_init_tcp_reply_contex
 DECL|test_init|function|static bool test_init(void)
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|test_register|function|static bool test_register(void)
+DECL|test_tcp_seq_validity|function|static bool test_tcp_seq_validity(void)
 DECL|test_v4_seq_check|function|static bool test_v4_seq_check(void)
 DECL|test_v6_seq_check|function|static bool test_v6_seq_check(void)
 DECL|tester_send_peer|function|static int tester_send_peer(struct net_if *iface, struct net_pkt *pkt)
