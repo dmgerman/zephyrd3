@@ -6,6 +6,7 @@ DECL|STATE_CONNECTING|macro|STATE_CONNECTING
 DECL|STATE_IDLE|macro|STATE_IDLE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|default_block_size|function|static enum zoap_block_size default_block_size(void)
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|firmware_addr|variable|firmware_addr
 DECL|firmware_block_ctx|variable|firmware_block_ctx
