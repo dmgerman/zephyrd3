@@ -68,6 +68,7 @@ DECL|current|member|size_t current;
 DECL|del|member|zoap_method_t get, post, put, del;
 DECL|get|member|zoap_method_t get, post, put, del;
 DECL|id|member|u16_t id;
+DECL|id|member|u16_t id;
 DECL|len|member|u16_t len;
 DECL|list|member|sys_snode_t list;
 DECL|notify|member|zoap_notify_t notify;
