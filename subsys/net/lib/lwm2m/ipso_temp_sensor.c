@@ -1,0 +1,26 @@
+DECL|MAX_INSTANCE_COUNT|macro|MAX_INSTANCE_COUNT
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|TEMP_MAX_ID|macro|TEMP_MAX_ID
+DECL|TEMP_MAX_MEASURED_VALUE_ID|macro|TEMP_MAX_MEASURED_VALUE_ID
+DECL|TEMP_MAX_RANGE_VALUE_ID|macro|TEMP_MAX_RANGE_VALUE_ID
+DECL|TEMP_MIN_MEASURED_VALUE_ID|macro|TEMP_MIN_MEASURED_VALUE_ID
+DECL|TEMP_MIN_RANGE_VALUE_ID|macro|TEMP_MIN_RANGE_VALUE_ID
+DECL|TEMP_RESET_MIN_MAX_MEASURED_VALUES_ID|macro|TEMP_RESET_MIN_MAX_MEASURED_VALUES_ID
+DECL|TEMP_SENSOR_VALUE_ID|macro|TEMP_SENSOR_VALUE_ID
+DECL|TEMP_STRING_SHORT|macro|TEMP_STRING_SHORT
+DECL|TEMP_UNITS_ID|macro|TEMP_UNITS_ID
+DECL|fields|variable|fields
+DECL|inst|variable|inst
+DECL|ipso_temp_sensor_init|function|static int ipso_temp_sensor_init(struct device *dev)
+DECL|max_measured_value|variable|max_measured_value
+DECL|max_range_value|variable|max_range_value
+DECL|min_measured_value|variable|min_measured_value
+DECL|min_range_value|variable|min_range_value
+DECL|reset_min_max_measured_values_cb|function|static int reset_min_max_measured_values_cb(u16_t obj_inst_id)
+DECL|res|variable|res
+DECL|sensor_value_write_cb|function|static int sensor_value_write_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
+DECL|sensor_value|variable|sensor_value
+DECL|temp_sensor_create|function|static struct lwm2m_engine_obj_inst *temp_sensor_create(u16_t obj_inst_id)
+DECL|temp_sensor|variable|temp_sensor
+DECL|units|variable|units
