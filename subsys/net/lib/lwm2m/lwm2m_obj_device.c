@@ -1,0 +1,70 @@
+DECL|DEVICE_AVAILABLE_POWER_SOURCES_ID|macro|DEVICE_AVAILABLE_POWER_SOURCES_ID
+DECL|DEVICE_BATTERY_LEVEL_ID|macro|DEVICE_BATTERY_LEVEL_ID
+DECL|DEVICE_BATTERY_STATUS_ID|macro|DEVICE_BATTERY_STATUS_ID
+DECL|DEVICE_CURRENT_TIME_ID|macro|DEVICE_CURRENT_TIME_ID
+DECL|DEVICE_ERROR_CODE_ID|macro|DEVICE_ERROR_CODE_ID
+DECL|DEVICE_ERROR_CODE_MAX|macro|DEVICE_ERROR_CODE_MAX
+DECL|DEVICE_ERROR_CODE_MAX|macro|DEVICE_ERROR_CODE_MAX
+DECL|DEVICE_FACTORY_DEFAULT_ID|macro|DEVICE_FACTORY_DEFAULT_ID
+DECL|DEVICE_FIRMWARE_VERSION_ID|macro|DEVICE_FIRMWARE_VERSION_ID
+DECL|DEVICE_HARDWARE_VERSION_ID|macro|DEVICE_HARDWARE_VERSION_ID
+DECL|DEVICE_MANUFACTURER_ID|macro|DEVICE_MANUFACTURER_ID
+DECL|DEVICE_MAX_ID|macro|DEVICE_MAX_ID
+DECL|DEVICE_MEMORY_FREE_ID|macro|DEVICE_MEMORY_FREE_ID
+DECL|DEVICE_MEMORY_TOTAL_ID|macro|DEVICE_MEMORY_TOTAL_ID
+DECL|DEVICE_MODEL_NUMBER_ID|macro|DEVICE_MODEL_NUMBER_ID
+DECL|DEVICE_POWER_SOURCE_CURRENT_ID|macro|DEVICE_POWER_SOURCE_CURRENT_ID
+DECL|DEVICE_POWER_SOURCE_VOLTAGE_ID|macro|DEVICE_POWER_SOURCE_VOLTAGE_ID
+DECL|DEVICE_PWRSRC_MAX|macro|DEVICE_PWRSRC_MAX
+DECL|DEVICE_PWRSRC_MAX|macro|DEVICE_PWRSRC_MAX
+DECL|DEVICE_REBOOT_ID|macro|DEVICE_REBOOT_ID
+DECL|DEVICE_RESET_ERROR_CODE_ID|macro|DEVICE_RESET_ERROR_CODE_ID
+DECL|DEVICE_SERIAL_NUMBER_ID|macro|DEVICE_SERIAL_NUMBER_ID
+DECL|DEVICE_SOFTWARE_VERSION_ID|macro|DEVICE_SOFTWARE_VERSION_ID
+DECL|DEVICE_STRING_LONG|macro|DEVICE_STRING_LONG
+DECL|DEVICE_STRING_SHORT|macro|DEVICE_STRING_SHORT
+DECL|DEVICE_SUPPORTED_BINDING_MODES_ID|macro|DEVICE_SUPPORTED_BINDING_MODES_ID
+DECL|DEVICE_TIMEZONE_ID|macro|DEVICE_TIMEZONE_ID
+DECL|DEVICE_TYPE_ID|macro|DEVICE_TYPE_ID
+DECL|DEVICE_UTC_OFFSET_ID|macro|DEVICE_UTC_OFFSET_ID
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|battery_level|variable|battery_level
+DECL|battery_status|variable|battery_status
+DECL|binding_mode|variable|binding_mode
+DECL|current_time_post_write_cb|function|static int current_time_post_write_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
+DECL|current_time_pre_write_cb|function|static void *current_time_pre_write_cb(u16_t obj_inst_id, size_t *data_len)
+DECL|current_time_read_cb|function|static void *current_time_read_cb(u16_t obj_inst_id, size_t *data_len)
+DECL|device_create|function|static struct lwm2m_engine_obj_inst *device_create(u16_t obj_inst_id)
+DECL|device_periodic_service|function|static void device_periodic_service(void)
+DECL|device_thread_data|variable|device_thread_data
+DECL|device_type|variable|device_type
+DECL|device|variable|device
+DECL|error_code_count|variable|error_code_count
+DECL|error_code_list|variable|error_code_list
+DECL|factory_default_cb|function|static int factory_default_cb(u16_t obj_inst_id)
+DECL|fields|variable|fields
+DECL|firmware_version|variable|firmware_version
+DECL|hardware_version|variable|hardware_version
+DECL|inst|variable|inst
+DECL|lwm2m_device_add_err|function|int lwm2m_device_add_err(u8_t error_code)
+DECL|lwm2m_device_add_pwrsrc|function|int lwm2m_device_add_pwrsrc(u8_t pwrsrc_type)
+DECL|lwm2m_device_init|function|static int lwm2m_device_init(struct device *dev)
+DECL|lwm2m_device_remove_pwrsrc|function|int lwm2m_device_remove_pwrsrc(int index)
+DECL|lwm2m_device_set_pwrsrc_current_ma|function|int lwm2m_device_set_pwrsrc_current_ma(int index, int current_ma)
+DECL|lwm2m_device_set_pwrsrc_voltage_mv|function|int lwm2m_device_set_pwrsrc_voltage_mv(int index, int voltage_mv)
+DECL|manufacturer|variable|manufacturer
+DECL|mem_free_kb|variable|mem_free_kb
+DECL|mem_total_kb|variable|mem_total_kb
+DECL|model_no|variable|model_no
+DECL|pwrsrc_available|variable|pwrsrc_available
+DECL|pwrsrc_count|variable|pwrsrc_count
+DECL|pwrsrc_current_ma|variable|pwrsrc_current_ma
+DECL|pwrsrc_voltage_mv|variable|pwrsrc_voltage_mv
+DECL|reboot_cb|function|static int reboot_cb(u16_t obj_inst_id)
+DECL|reset_error_list_cb|function|static int reset_error_list_cb(u16_t obj_inst_id)
+DECL|res|variable|res
+DECL|serial_no|variable|serial_no
+DECL|software_version|variable|software_version
+DECL|time_offset|variable|time_offset
+DECL|time_temp|variable|time_temp

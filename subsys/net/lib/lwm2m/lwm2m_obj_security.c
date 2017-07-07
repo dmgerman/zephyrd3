@@ -1,0 +1,22 @@
+DECL|MAX_INSTANCE_COUNT|macro|MAX_INSTANCE_COUNT
+DECL|SECURITY_BOOTSTRAP_FLAG_ID|macro|SECURITY_BOOTSTRAP_FLAG_ID
+DECL|SECURITY_CLIENT_PK_ID|macro|SECURITY_CLIENT_PK_ID
+DECL|SECURITY_MAX_ID|macro|SECURITY_MAX_ID
+DECL|SECURITY_MODE_ID|macro|SECURITY_MODE_ID
+DECL|SECURITY_SECRET_KEY_ID|macro|SECURITY_SECRET_KEY_ID
+DECL|SECURITY_SERVER_PK_ID|macro|SECURITY_SERVER_PK_ID
+DECL|SECURITY_SERVER_URI_ID|macro|SECURITY_SERVER_URI_ID
+DECL|SECURITY_SHORT_SERVER_ID|macro|SECURITY_SHORT_SERVER_ID
+DECL|SECURITY_URI_LEN|macro|SECURITY_URI_LEN
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|bootstrap_flag|variable|bootstrap_flag
+DECL|fields|variable|fields
+DECL|inst|variable|inst
+DECL|lwm2m_security_init|function|static int lwm2m_security_init(struct device *dev)
+DECL|res|variable|res
+DECL|security_create|function|static struct lwm2m_engine_obj_inst *security_create(u16_t obj_inst_id)
+DECL|security_mode|variable|security_mode
+DECL|security_uri|variable|security_uri
+DECL|security|variable|security
+DECL|short_server_id|variable|short_server_id

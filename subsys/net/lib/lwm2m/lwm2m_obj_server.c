@@ -1,0 +1,32 @@
+DECL|MAX_INSTANCE_COUNT|macro|MAX_INSTANCE_COUNT
+DECL|SERVER_DEFAULT_MAX_PERIOD_ID|macro|SERVER_DEFAULT_MAX_PERIOD_ID
+DECL|SERVER_DEFAULT_MIN_PERIOD_ID|macro|SERVER_DEFAULT_MIN_PERIOD_ID
+DECL|SERVER_DISABLE_ID|macro|SERVER_DISABLE_ID
+DECL|SERVER_DISABLE_TIMEOUT_ID|macro|SERVER_DISABLE_TIMEOUT_ID
+DECL|SERVER_FLAG_DISABLED|macro|SERVER_FLAG_DISABLED
+DECL|SERVER_FLAG_STORE_NOTIFY|macro|SERVER_FLAG_STORE_NOTIFY
+DECL|SERVER_LIFETIME_ID|macro|SERVER_LIFETIME_ID
+DECL|SERVER_MAX_ID|macro|SERVER_MAX_ID
+DECL|SERVER_REG_UPDATE_TRIGGER_ID|macro|SERVER_REG_UPDATE_TRIGGER_ID
+DECL|SERVER_SHORT_SERVER_ID|macro|SERVER_SHORT_SERVER_ID
+DECL|SERVER_STORE_NOTIFY_ID|macro|SERVER_STORE_NOTIFY_ID
+DECL|SERVER_TRANSPORT_BINDING_ID|macro|SERVER_TRANSPORT_BINDING_ID
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|TRANSPORT_BINDING_LEN|macro|TRANSPORT_BINDING_LEN
+DECL|default_max_period|variable|default_max_period
+DECL|default_min_period|variable|default_min_period
+DECL|disable_cb|function|static int disable_cb(u16_t obj_inst_id)
+DECL|disabled_timeout|variable|disabled_timeout
+DECL|fields|variable|fields
+DECL|inst|variable|inst
+DECL|lifetime|variable|lifetime
+DECL|lwm2m_server_init|function|static int lwm2m_server_init(struct device *dev)
+DECL|res|variable|res
+DECL|server_create|function|static struct lwm2m_engine_obj_inst *server_create(u16_t obj_inst_id)
+DECL|server_flag_disabled|variable|server_flag_disabled
+DECL|server_flag_store_notify|variable|server_flag_store_notify
+DECL|server_id|variable|server_id
+DECL|server|variable|server
+DECL|transport_binding|variable|transport_binding
+DECL|update_trigger_cb|function|static int update_trigger_cb(u16_t obj_inst_id)
