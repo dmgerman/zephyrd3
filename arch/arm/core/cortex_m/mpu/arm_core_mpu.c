@@ -1,1 +1,3 @@
+DECL|_arch_mem_domain_max_partitions_get|function|int _arch_mem_domain_max_partitions_get(void)
+DECL|configure_mpu_mem_domain|function|void configure_mpu_mem_domain(struct k_thread *thread)
 DECL|configure_mpu_stack_guard|function|void configure_mpu_stack_guard(struct k_thread *thread)

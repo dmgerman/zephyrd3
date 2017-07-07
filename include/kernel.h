@@ -26,6 +26,8 @@ DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_LOWEST_THREAD_PRIO|macro|K_LOWEST_THREAD_PRIO
 DECL|K_MBOX_DEFINE|macro|K_MBOX_DEFINE
 DECL|K_MBOX_INITIALIZER|macro|K_MBOX_INITIALIZER
+DECL|K_MEM_PARTITION_DEFINE|macro|K_MEM_PARTITION_DEFINE
+DECL|K_MEM_PARTITION_DEFINE|macro|K_MEM_PARTITION_DEFINE
 DECL|K_MEM_POOL_DEFINE|macro|K_MEM_POOL_DEFINE
 DECL|K_MEM_SLAB_DEFINE|macro|K_MEM_SLAB_DEFINE
 DECL|K_MEM_SLAB_INITIALIZER|macro|K_MEM_SLAB_INITIALIZER
@@ -116,6 +118,7 @@ DECL|K_USER|macro|K_USER
 DECL|K_WORK_DEFINE|macro|K_WORK_DEFINE
 DECL|K_WORK_INITIALIZER|macro|K_WORK_INITIALIZER
 DECL|K_WORK_STATE_PENDING|enumerator|K_WORK_STATE_PENDING, /* Work item pending state */
+DECL|MEM_PARTITION_ENTRY|macro|MEM_PARTITION_ENTRY
 DECL|_ALIGN4|macro|_ALIGN4
 DECL|_EXPIRED|macro|_EXPIRED
 DECL|_INACTIVE|macro|_INACTIVE
@@ -188,6 +191,7 @@ DECL|_k_object|struct|struct _k_object {
 DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
+DECL|_mem_domain_info|struct|struct _mem_domain_info {
 DECL|_ms_per_tick|macro|_ms_per_tick
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE s32_t _ms_to_ticks(s32_t ms)
 DECL|_node|member|sys_dnode_t _node;
@@ -209,6 +213,7 @@ DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t)
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|arch|member|struct _thread_arch arch;
+DECL|attr|member|u32_t attr;
 DECL|base|member|struct _thread_base base;
 DECL|base|member|u32_t *base, *next, *top;
 DECL|bits_p|member|u32_t *bits_p;
@@ -289,6 +294,8 @@ DECL|k_mbox_msg|struct|struct k_mbox_msg {
 DECL|k_mbox|struct|struct k_mbox {
 DECL|k_mem_block_id|struct|struct k_mem_block_id {
 DECL|k_mem_block|struct|struct k_mem_block {
+DECL|k_mem_domain|struct|struct k_mem_domain {
+DECL|k_mem_partition|struct|struct k_mem_partition {
 DECL|k_mem_pool_defrag|function|static inline void __deprecated k_mem_pool_defrag(struct k_mem_pool *pool) {}
 DECL|k_mem_pool_lvl|struct|struct k_mem_pool_lvl {
 DECL|k_mem_pool|struct|struct k_mem_pool {
@@ -339,6 +346,10 @@ DECL|lock_count|member|u32_t lock_count;
 DECL|max_inline_level|member|u8_t max_inline_level;
 DECL|max_msgs|member|u32_t max_msgs;
 DECL|max_sz|member|size_t max_sz;
+DECL|mem_domain_info|member|struct _mem_domain_info mem_domain_info;
+DECL|mem_domain_q_node|member|sys_dnode_t mem_domain_q_node;
+DECL|mem_domain_q|member|sys_dlist_t mem_domain_q;
+DECL|mem_domain|member|struct k_mem_domain *mem_domain;
 DECL|mode|member|u32_t mode:1;
 DECL|msg_size|member|size_t msg_size;
 DECL|n_levels|member|u8_t n_levels;
@@ -352,6 +363,7 @@ DECL|next_thread|member|struct k_thread *next_thread;
 DECL|next|member|u32_t *base, *next, *top;
 DECL|node|member|sys_dnode_t node;
 DECL|num_blocks|member|u32_t num_blocks;
+DECL|num_partitions|member|u32_t num_partitions;
 DECL|num_used|member|u32_t num_used;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
@@ -360,6 +372,7 @@ DECL|pEntry|member|k_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
+DECL|partitions|member|struct k_mem_partition partitions[CONFIG_MAX_DOMAIN_PARTITIONS];
 DECL|period|member|s32_t period;
 DECL|perm_index|member|unsigned int perm_index;
 DECL|perms|member|char perms[CONFIG_MAX_THREAD_BYTES];
@@ -385,7 +398,9 @@ DECL|signal|member|struct k_poll_signal *signal;
 DECL|size|member|size_t size;
 DECL|size|member|size_t size; /* Buffer size */
 DECL|size|member|u32_t size;
+DECL|size|member|u32_t size;
 DECL|stack_info|member|struct _thread_stack_info stack_info;
+DECL|start|member|u32_t start;
 DECL|start|member|u32_t start;
 DECL|state|member|u32_t state:_POLL_NUM_STATES;
 DECL|status|member|u32_t status;
