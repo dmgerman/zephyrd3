@@ -1,5 +1,0 @@
-DECL|nrf_nvmc_page_erase|function|void nrf_nvmc_page_erase(uint32_t address)
-DECL|nrf_nvmc_write_bytes|function|void nrf_nvmc_write_bytes(uint32_t address, const uint8_t * src, uint32_t num_bytes)
-DECL|nrf_nvmc_write_byte|function|void nrf_nvmc_write_byte(uint32_t address, uint8_t value)
-DECL|nrf_nvmc_write_words|function|void nrf_nvmc_write_words(uint32_t address, const uint32_t * src, uint32_t num_words)
-DECL|nrf_nvmc_write_word|function|void nrf_nvmc_write_word(uint32_t address, uint32_t value)
