@@ -14,6 +14,7 @@ DECL|cmd_gatt_write_without_rsp|function|int cmd_gatt_write_without_rsp(int argc
 DECL|cmd_gatt_write|function|int cmd_gatt_write(int argc, char *argv[])
 DECL|discover_func|function|static u8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
+DECL|echo_enabled|variable|echo_enabled
 DECL|exchange_func|function|static void exchange_func(struct bt_conn *conn, u8_t err, struct bt_gatt_exchange_params *params)
 DECL|exchange_params|variable|exchange_params
 DECL|gatt_write_buf|variable|gatt_write_buf
@@ -32,6 +33,12 @@ DECL|read_params|variable|read_params
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, u16_t len, u16_t offset)
 DECL|subscribe_params|variable|subscribe_params
 DECL|uuid|variable|uuid
+DECL|vnd1_attrs|variable|vnd1_attrs
+DECL|vnd1_ccc_cfg_changed|function|static void vnd1_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
+DECL|vnd1_ccc_cfg|variable|vnd1_ccc_cfg
+DECL|vnd1_echo_uuid|variable|vnd1_echo_uuid
+DECL|vnd1_svc|variable|vnd1_svc
+DECL|vnd1_uuid|variable|vnd1_uuid
 DECL|vnd_attrs|variable|vnd_attrs
 DECL|vnd_auth_uuid|variable|vnd_auth_uuid
 DECL|vnd_long_uuid1|variable|vnd_long_uuid1
@@ -48,4 +55,5 @@ DECL|write_long_vnd|function|static ssize_t write_long_vnd(struct bt_conn *conn,
 DECL|write_met|function|static ssize_t write_met(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|write_params|variable|write_params
 DECL|write_rate|variable|write_rate
+DECL|write_vnd1|function|static ssize_t write_vnd1(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|write_vnd|function|static ssize_t write_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
