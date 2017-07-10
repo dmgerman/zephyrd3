@@ -1,6 +1,9 @@
 DECL|CONN_TRIES|macro|CONN_TRIES
 DECL|PRINT_RESULT|macro|PRINT_RESULT
 DECL|RC_STR|macro|RC_STR
+DECL|TLS_PRIVATE_DATA|macro|TLS_PRIVATE_DATA
+DECL|TLS_REQUEST_BUF_SIZE|macro|TLS_REQUEST_BUF_SIZE
+DECL|TLS_SNI_HOSTNAME|macro|TLS_SNI_HOSTNAME
 DECL|bt_conn_cb|variable|bt_conn_cb
 DECL|bt_connect_cb|function|void bt_connect_cb(struct bt_conn *conn, u8_t err)
 DECL|bt_connected|variable|bt_connected
@@ -23,4 +26,6 @@ DECL|pub_msg|member|struct mqtt_publish_msg pub_msg;
 DECL|publish_cb|function|static int publish_cb(struct mqtt_ctx *mqtt_ctx, u16_t pkt_id, enum mqtt_packet type)
 DECL|publish_data|member|void *publish_data;
 DECL|publisher|function|static void publisher(void)
+DECL|setup_cert|function|int setup_cert(struct net_app_ctx *ctx, void *cert)
+DECL|tls_request_buf|variable|tls_request_buf
 DECL|try_to_connect|function|static int try_to_connect(struct mqtt_client_ctx *client_ctx)

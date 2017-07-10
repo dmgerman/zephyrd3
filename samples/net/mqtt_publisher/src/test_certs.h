@@ -1,0 +1,4 @@
+DECL|__TEST_CERTS_H__|macro|__TEST_CERTS_H__
+DECL|ca_certificate|variable|ca_certificate
+DECL|client_psk_id|variable|client_psk_id
+DECL|client_psk|variable|client_psk
