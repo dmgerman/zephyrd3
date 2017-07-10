@@ -7,7 +7,6 @@ DECL|NET_CONN_CB|macro|NET_CONN_CB
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|backlog_ack_timeout|function|static void backlog_ack_timeout(struct k_work *work)
 DECL|cancelled|member|bool cancelled;
@@ -20,6 +19,7 @@ DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_pkt *pkt, const struct sockaddr *dst_addr, struct net_pkt **out_pkt)
 DECL|find_available_port|function|static u16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)
+DECL|handle_ack_timeout|function|static void handle_ack_timeout(struct k_work *work)
 DECL|net_context_accept|function|int net_context_accept(struct net_context *context, net_tcp_accept_cb_t cb, s32_t timeout, void *user_data)
 DECL|net_context_bind|function|int net_context_bind(struct net_context *context, const struct sockaddr *addr, socklen_t addrlen)
 DECL|net_context_connect|function|int net_context_connect(struct net_context *context,const struct sockaddr *addr, socklen_t addrlen, net_context_connect_cb_t cb, s32_t timeout,

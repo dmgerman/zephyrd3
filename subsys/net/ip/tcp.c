@@ -8,6 +8,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|abort_connection|function|static void abort_connection(struct net_tcp *tcp)
+DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack|member|u32_t ack;
 DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_pkt *pkt)
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
