@@ -3,6 +3,7 @@ DECL|accept|macro|accept
 DECL|bind|macro|bind
 DECL|close|macro|close
 DECL|connect|macro|connect
+DECL|fcntl|macro|fcntl
 DECL|inet_ntop|macro|inet_ntop
 DECL|inet_pton|macro|inet_pton
 DECL|listen|macro|listen
