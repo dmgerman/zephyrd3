@@ -65,11 +65,11 @@ DECL|rpa_work|variable|rpa_work
 DECL|rpas_ready|member|u8_t rpas_ready:1;
 DECL|taken|member|u8_t taken:1;
 DECL|taken|member|u8_t taken:1;
+DECL|wl_add|function|static u32_t wl_add(bt_addr_le_t *id_addr)
 DECL|wl_anon|variable|wl_anon
-DECL|wl_peers_add|function|static u32_t wl_peers_add(bt_addr_le_t *id_addr)
-DECL|wl_peers_clear|function|static void wl_peers_clear(void)
-DECL|wl_peers_find|function|static u8_t wl_peers_find(u8_t addr_type, u8_t *addr, u8_t *free)
-DECL|wl_peers_remove|function|static u32_t wl_peers_remove(bt_addr_le_t *id_addr)
-DECL|wl_peers|variable|wl_peers
+DECL|wl_clear|function|static void wl_clear(void)
+DECL|wl_filter|variable|wl_filter
+DECL|wl_find|function|static u8_t wl_find(u8_t addr_type, u8_t *addr, u8_t *free)
+DECL|wl_remove|function|static u32_t wl_remove(bt_addr_le_t *id_addr)
 DECL|wl|member|u8_t wl:1;
 DECL|wl|variable|wl
