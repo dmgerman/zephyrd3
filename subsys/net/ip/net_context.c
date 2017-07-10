@@ -1,5 +1,6 @@
 DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
 DECL|ACK_TIMEOUT|macro|ACK_TIMEOUT
+DECL|FIN_TIMEOUT|macro|FIN_TIMEOUT
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_established)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_syn_rcvd)
 DECL|NET_CONN_CB|function|NET_CONN_CB(tcp_synack_received)
@@ -20,6 +21,7 @@ DECL|create_udp_packet|function|static int create_udp_packet(struct net_context 
 DECL|find_available_port|function|static u16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)
 DECL|handle_ack_timeout|function|static void handle_ack_timeout(struct k_work *work)
+DECL|handle_fin_timeout|function|static void handle_fin_timeout(struct k_work *work)
 DECL|net_context_accept|function|int net_context_accept(struct net_context *context, net_tcp_accept_cb_t cb, s32_t timeout, void *user_data)
 DECL|net_context_bind|function|int net_context_bind(struct net_context *context, const struct sockaddr *addr, socklen_t addrlen)
 DECL|net_context_connect|function|int net_context_connect(struct net_context *context,const struct sockaddr *addr, socklen_t addrlen, net_context_connect_cb_t cb, s32_t timeout,
