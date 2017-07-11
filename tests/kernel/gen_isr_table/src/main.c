@@ -25,3 +25,4 @@ DECL|test_irq|function|int test_irq(int offset)
 DECL|trigger_check|variable|trigger_check
 DECL|trigger_irq|function|void trigger_irq(int irq)
 DECL|trigger_irq|function|void trigger_irq(int irq)
+DECL|trigger_irq|function|void trigger_irq(int irq)
