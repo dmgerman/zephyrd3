@@ -123,10 +123,10 @@ DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_peer_compatible|function|static u32_t is_peer_compatible(struct connection *conn)
+DECL|isr_adv_ci_adva_check|function|static inline bool isr_adv_ci_adva_check(struct pdu_adv *adv, struct pdu_adv *ci)
 DECL|isr_adv_ci_check|function|static inline bool isr_adv_ci_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t devmatch_ok, u8_t rl_idx)
-DECL|isr_adv_ci_direct_check|function|static inline bool isr_adv_ci_direct_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
+DECL|isr_adv_ci_tgta_check|function|static inline bool isr_adv_ci_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
 DECL|isr_adv_sr_check|function|static inline bool isr_adv_sr_check(struct pdu_adv *pdu, u8_t devmatch_ok, u8_t rl_idx)
-DECL|isr_adv_tgta_check|function|static inline bool isr_adv_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
 DECL|isr_close_adv|function|static inline u32_t isr_close_adv(void)
 DECL|isr_close_conn|function|static inline void isr_close_conn(void)
 DECL|isr_close_scan|function|static inline u32_t isr_close_scan(void)
