@@ -25,7 +25,6 @@ DECL|bt_l2cap_chan_set_state|function|void bt_l2cap_chan_set_state(struct bt_l2c
 DECL|bt_l2cap_chan_state_str|function|const char *bt_l2cap_chan_state_str(bt_l2cap_chan_state_t state)
 DECL|bt_l2cap_connected|function|void bt_l2cap_connected(struct bt_conn *conn)
 DECL|bt_l2cap_create_pdu|function|struct net_buf *bt_l2cap_create_pdu(struct net_buf_pool *pool, size_t reserve)
-DECL|bt_l2cap_create_rsp|function|struct net_buf *bt_l2cap_create_rsp(struct net_buf *buf, size_t reserve)
 DECL|bt_l2cap_disconnected|function|void bt_l2cap_disconnected(struct bt_conn *conn)
 DECL|bt_l2cap_encrypt_change|function|void bt_l2cap_encrypt_change(struct bt_conn *conn, u8_t hci_status)
 DECL|bt_l2cap_init|function|void bt_l2cap_init(void)
