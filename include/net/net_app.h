@@ -55,6 +55,7 @@ DECL|net_app_cb|struct|struct net_app_cb {
 DECL|net_app_cert_cb_t|typedef|typedef int (*net_app_cert_cb_t)(struct net_app_ctx *ctx,
 DECL|net_app_close_cb_t|typedef|typedef void (*net_app_close_cb_t)(struct net_app_ctx *ctx,
 DECL|net_app_connect_cb_t|typedef|typedef void (*net_app_connect_cb_t)(struct net_app_ctx *ctx,
+DECL|net_app_ctx_cb_t|typedef|typedef void (*net_app_ctx_cb_t)(struct net_app_ctx *ctx, void *user_data);
 DECL|net_app_ctx|struct|struct net_app_ctx {
 DECL|net_app_endpoint|struct|struct net_app_endpoint {
 DECL|net_app_entropy_src_cb_t|typedef|typedef int (*net_app_entropy_src_cb_t)(void *data, unsigned char *output,
@@ -69,6 +70,7 @@ DECL|net_app_send_data_t|typedef|typedef int (*net_app_send_data_t)(struct net_p
 DECL|net_app_set_net_pkt_pool|macro|net_app_set_net_pkt_pool
 DECL|net_app_type|enum|enum net_app_type {
 DECL|net_ctx|member|struct net_context *net_ctx;
+DECL|node|member|sys_snode_t node;
 DECL|personalization_data_len|member|size_t personalization_data_len;
 DECL|personalization_data|member|u8_t *personalization_data;
 DECL|pkey|member|mbedtls_pk_context pkey;
