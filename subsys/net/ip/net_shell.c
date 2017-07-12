@@ -1,5 +1,6 @@
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|ADDR_LEN|macro|ADDR_LEN
+DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
 DECL|MAX_HTTP_OUTPUT_LEN|macro|MAX_HTTP_OUTPUT_LEN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
@@ -36,8 +37,10 @@ DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(stru
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
 DECL|ipv6_frag_cb|function|static void ipv6_frag_cb(struct net_ipv6_reassembly *reass, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
+DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data)
 DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
+DECL|net_shell_cmd_app|function|int net_shell_cmd_app(int argc, char *argv[])
 DECL|net_shell_cmd_conn|function|int net_shell_cmd_conn(int argc, char *argv[])
 DECL|net_shell_cmd_dns|function|int net_shell_cmd_dns(int argc, char *argv[])
 DECL|net_shell_cmd_http|function|int net_shell_cmd_http(int argc, char *argv[])
