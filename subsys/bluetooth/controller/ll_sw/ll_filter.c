@@ -5,7 +5,7 @@ DECL|LIST_MATCH|macro|LIST_MATCH
 DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(bool whitelist)
 DECL|ctrl_irk_whitelisted|function|bool ctrl_irk_whitelisted(u8_t rl_idx)
 DECL|ctrl_irks_get|function|u8_t *ctrl_irks_get(u8_t *count)
-DECL|ctrl_rl_allowed|function|bool ctrl_rl_allowed(u8_t id_addr_type, u8_t *id_addr)
+DECL|ctrl_rl_allowed|function|bool ctrl_rl_allowed(u8_t id_addr_type, u8_t *id_addr, u8_t *rl_idx)
 DECL|ctrl_rl_enabled|function|bool ctrl_rl_enabled(void)
 DECL|ctrl_rl_idx|function|u8_t ctrl_rl_idx(u8_t irkmatch_id)
 DECL|dev|member|u8_t dev:1;
