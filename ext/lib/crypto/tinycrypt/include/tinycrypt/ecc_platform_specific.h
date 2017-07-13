@@ -1,0 +1,2 @@
+DECL|__UECC_PLATFORM_SPECIFIC_H_|macro|__UECC_PLATFORM_SPECIFIC_H_
+DECL|default_RNG_defined|macro|default_RNG_defined
