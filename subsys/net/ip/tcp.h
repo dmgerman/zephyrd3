@@ -47,6 +47,7 @@ DECL|flags|member|u32_t flags : 8;
 DECL|net_tcp_cb_t|typedef|typedef void (*net_tcp_cb_t)(struct net_tcp *tcp, void *user_data);
 DECL|net_tcp_change_state|macro|net_tcp_change_state
 DECL|net_tcp_get_chksum|macro|net_tcp_get_chksum
+DECL|net_tcp_get_hdr|macro|net_tcp_get_hdr
 DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
