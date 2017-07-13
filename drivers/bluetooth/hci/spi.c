@@ -22,6 +22,7 @@ DECL|SPI_WRITE|macro|SPI_WRITE
 DECL|STATUS_HEADER_READY|macro|STATUS_HEADER_READY
 DECL|STATUS_HEADER_TOREAD|macro|STATUS_HEADER_TOREAD
 DECL|_bt_spi_init|function|static int _bt_spi_init(struct device *unused)
+DECL|bt_spi_dev_configure|function|static inline int bt_spi_dev_configure(void)
 DECL|bt_spi_get_cmd|function|static inline u16_t bt_spi_get_cmd(u8_t *txmsg)
 DECL|bt_spi_get_evt|function|static inline u16_t bt_spi_get_evt(u8_t *rxmsg)
 DECL|bt_spi_handle_vendor_evt|function|static void bt_spi_handle_vendor_evt(u8_t *rxmsg)
@@ -29,6 +30,7 @@ DECL|bt_spi_isr|function|static void bt_spi_isr(struct device *unused1, struct g
 DECL|bt_spi_open|function|static int bt_spi_open(void)
 DECL|bt_spi_rx_thread|function|static void bt_spi_rx_thread(void)
 DECL|bt_spi_send|function|static int bt_spi_send(struct net_buf *buf)
+DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(const void *tx, u32_t tx_len, void *rx, u32_t rx_len)
 DECL|cs_dev|variable|cs_dev
 DECL|drv|variable|drv
 DECL|gpio_cb|variable|gpio_cb
