@@ -1,0 +1,10 @@
+DECL|DebugP_ASSERT_ENABLED|macro|DebugP_ASSERT_ENABLED
+DECL|DebugP_LOG_ENABLED|macro|DebugP_LOG_ENABLED
+DECL|DebugP_assert|macro|DebugP_assert
+DECL|DebugP_assert|macro|DebugP_assert
+DECL|DebugP_log0|macro|DebugP_log0
+DECL|DebugP_log1|macro|DebugP_log1
+DECL|DebugP_log2|macro|DebugP_log2
+DECL|DebugP_log3|macro|DebugP_log3
+DECL|DebugP_log4|macro|DebugP_log4
+DECL|ti_dpl_DebugP__include|macro|ti_dpl_DebugP__include
