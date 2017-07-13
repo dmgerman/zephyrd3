@@ -84,7 +84,7 @@ DECL|event_active|function|static void event_active(u32_t ticks_at_expire, u32_t
 DECL|event_adv_stop|function|void event_adv_stop(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_adv|function|static void event_adv(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_ch_map_prep|function|static inline void event_ch_map_prep(struct connection *conn, u16_t event_counter)
-DECL|event_common_prepare|function|static u32_t event_common_prepare(u32_t ticks_at_expire, u32_t remainder, u32_t *ticks_xtal_to_start, u32_t *ticks_active_to_start, u32_t ticks_preempt_to_start,
+DECL|event_common_prepare|function|static void event_common_prepare(u32_t ticks_at_expire, u32_t remainder, u32_t *ticks_xtal_to_start, u32_t *ticks_active_to_start, u32_t ticks_preempt_to_start,
 DECL|event_conn_update_prep|function|static inline u32_t event_conn_update_prep(struct connection *conn, u16_t event_counter, u32_t ticks_at_expire)
 DECL|event_conn_update_st_init|function|event_conn_update_st_init(struct connection *conn, u16_t event_counter, struct pdu_data *pdu_ctrl_tx, u32_t ticks_at_expire, struct mayfly *mayfly_sched_offset,
 DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_req(struct connection *conn, u16_t event_counter, struct pdu_data *pdu_ctrl_tx, u32_t ticks_at_expire, struct mayfly *mayfly_sched_offset)
