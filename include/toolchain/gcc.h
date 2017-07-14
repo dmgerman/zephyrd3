@@ -40,6 +40,12 @@ DECL|__aligned|macro|__aligned
 DECL|__deprecated|macro|__deprecated
 DECL|__in_section_unique|macro|__in_section_unique
 DECL|__in_section|macro|__in_section
+DECL|__kernel_bss|macro|__kernel_bss
+DECL|__kernel_bss|macro|__kernel_bss
+DECL|__kernel_noinit|macro|__kernel_noinit
+DECL|__kernel_noinit|macro|__kernel_noinit
+DECL|__kernel|macro|__kernel
+DECL|__kernel|macro|__kernel
 DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
 DECL|__printf_like|macro|__printf_like
