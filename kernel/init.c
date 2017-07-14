@@ -31,6 +31,7 @@ DECL|build_timestamp|variable|build_timestamp
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|k_call_stacks_analyze|function|void k_call_stacks_analyze(void)
+DECL|k_call_stacks_analyze|function|void k_call_stacks_analyze(void) { }
 DECL|main|function|void __weak main(void)
 DECL|prepare_multithreading|function|static void prepare_multithreading(struct k_thread *dummy_thread)
 DECL|switch_to_main_thread|function|static void switch_to_main_thread(void)
