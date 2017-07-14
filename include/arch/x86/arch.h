@@ -38,6 +38,7 @@ DECL|_NANO_ERR_SPURIOUS_INT|macro|_NANO_ERR_SPURIOUS_INT
 DECL|_NANO_ERR_STACK_CHK_FAIL|macro|_NANO_ERR_STACK_CHK_FAIL
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
 DECL|_VECTOR_ARG|macro|_VECTOR_ARG
+DECL|_X86_IDT_TSS_REGISTER|macro|_X86_IDT_TSS_REGISTER
 DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
 DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
 DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32
@@ -73,4 +74,5 @@ DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
 DECL|priority|member|unsigned int priority;
 DECL|s_isrList|struct|typedef struct s_isrList {
+DECL|tss|member|unsigned int tss;
 DECL|vec|member|unsigned int vec;
