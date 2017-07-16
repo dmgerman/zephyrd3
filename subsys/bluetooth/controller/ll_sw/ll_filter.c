@@ -5,6 +5,7 @@ DECL|LIST_MATCH|macro|LIST_MATCH
 DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(bool whitelist)
 DECL|ctrl_irk_whitelisted|function|bool ctrl_irk_whitelisted(u8_t rl_idx)
 DECL|ctrl_irks_get|function|u8_t *ctrl_irks_get(u8_t *count)
+DECL|ctrl_lrpa_get|function|bt_addr_t *ctrl_lrpa_get(u8_t rl_idx)
 DECL|ctrl_rl_addr_allowed|function|bool ctrl_rl_addr_allowed(u8_t id_addr_type, u8_t *id_addr, u8_t *rl_idx)
 DECL|ctrl_rl_addr_resolve|function|bool ctrl_rl_addr_resolve(u8_t id_addr_type, u8_t *id_addr, u8_t rl_idx)
 DECL|ctrl_rl_enabled|function|bool ctrl_rl_enabled(void)
@@ -44,7 +45,8 @@ DECL|ll_wl_clear|function|u32_t ll_wl_clear(void)
 DECL|ll_wl_remove|function|u32_t ll_wl_remove(bt_addr_le_t *addr)
 DECL|ll_wl_size_get|function|u32_t ll_wl_size_get(void)
 DECL|local_irk|member|u8_t local_irk[16];
-DECL|local_rpa|member|bt_addr_t local_rpa;
+DECL|local_rpas|variable|local_rpas
+DECL|local_rpa|member|bt_addr_t *local_rpa;
 DECL|peer_irk_count|variable|peer_irk_count
 DECL|peer_irk_rl_ids|variable|peer_irk_rl_ids
 DECL|peer_irks|variable|peer_irks
