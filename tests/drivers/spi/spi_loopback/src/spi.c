@@ -35,7 +35,7 @@ DECL|spi_complete_loop|function|static int spi_complete_loop(struct spi_config *
 DECL|spi_cs|variable|spi_cs
 DECL|spi_cs|variable|spi_cs
 DECL|spi_fast|variable|spi_fast
-DECL|spi_ressource_lock_test|function|static int spi_ressource_lock_test(struct spi_config *spi_conf_lock, struct spi_config *spi_conf_try)
+DECL|spi_resource_lock_test|function|static int spi_resource_lock_test(struct spi_config *spi_conf_lock, struct spi_config *spi_conf_try)
 DECL|spi_rx_every_4|function|static int spi_rx_every_4(struct spi_config *spi_conf)
 DECL|spi_rx_half_end|function|static int spi_rx_half_end(struct spi_config *spi_conf)
 DECL|spi_rx_half_start|function|static int spi_rx_half_start(struct spi_config *spi_conf)
