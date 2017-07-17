@@ -22,8 +22,9 @@ DECL|spi_context_tx_on|function|bool spi_context_tx_on(struct spi_context *ctx)
 DECL|spi_context_unlock_unconditionally|function|static inline void spi_context_unlock_unconditionally(struct spi_context *ctx)
 DECL|spi_context_update_rx|function|void spi_context_update_rx(struct spi_context *ctx, u8_t dfs)
 DECL|spi_context_update_tx|function|void spi_context_update_tx(struct spi_context *ctx, u8_t dfs)
-DECL|spi_context_wait_for_completion|function|static inline void spi_context_wait_for_completion(struct spi_context *ctx)
+DECL|spi_context_wait_for_completion|function|static inline int spi_context_wait_for_completion(struct spi_context *ctx)
 DECL|spi_context|struct|struct spi_context {
+DECL|sync_status|member|int sync_status;
 DECL|sync|member|struct k_sem sync;
 DECL|tx_buf|member|u8_t *tx_buf;
 DECL|tx_count|member|size_t tx_count;
