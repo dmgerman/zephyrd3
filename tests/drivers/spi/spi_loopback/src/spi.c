@@ -27,6 +27,8 @@ DECL|SPI_SLAVE|macro|SPI_SLAVE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|async_evt|variable|async_evt
 DECL|async_sig|variable|async_sig
+DECL|buffer_print_rx|variable|buffer_print_rx
+DECL|buffer_print_tx|variable|buffer_print_tx
 DECL|buffer_rx|variable|buffer_rx
 DECL|buffer_tx|variable|buffer_tx
 DECL|cs_ctrl_gpio_config|function|static int cs_ctrl_gpio_config(struct spi_cs_control *cs)
@@ -45,3 +47,4 @@ DECL|spi_rx_every_4|function|static int spi_rx_every_4(struct spi_config *spi_co
 DECL|spi_rx_half_end|function|static int spi_rx_half_end(struct spi_config *spi_conf)
 DECL|spi_rx_half_start|function|static int spi_rx_half_start(struct spi_config *spi_conf)
 DECL|spi_slow|variable|spi_slow
+DECL|to_display_format|function|static void to_display_format(const u8_t *src, size_t size, char *dst)
