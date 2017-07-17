@@ -31,3 +31,4 @@ DECL|sys_clock_disable|function|void sys_clock_disable(void)
 DECL|sys_tick_reload|function|static ALWAYS_INLINE void sys_tick_reload(void)
 DECL|timer_idle_skew|variable|timer_idle_skew
 DECL|timer_mode|variable|timer_mode
+DECL|timer_overflow|variable|timer_overflow
