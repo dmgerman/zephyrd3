@@ -10,6 +10,7 @@ DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
 DECL|backlog_ack_timeout|function|static void backlog_ack_timeout(struct k_work *work)
+DECL|bind_default|function|static int bind_default(struct net_context *context)
 DECL|cancelled|member|bool cancelled;
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, u16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock
