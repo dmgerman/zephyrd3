@@ -6,7 +6,7 @@ DECL|config|member|struct spi_config *config;
 DECL|current_rx|member|struct spi_buf *current_rx;
 DECL|current_tx|member|const struct spi_buf *current_tx;
 DECL|lock|member|struct k_sem lock;
-DECL|rx_buf|member|void *rx_buf;
+DECL|rx_buf|member|u8_t *rx_buf;
 DECL|rx_count|member|size_t rx_count;
 DECL|rx_len|member|size_t rx_len;
 DECL|signal|member|struct k_poll_signal *signal;
@@ -25,6 +25,6 @@ DECL|spi_context_update_tx|function|void spi_context_update_tx(struct spi_contex
 DECL|spi_context_wait_for_completion|function|static inline void spi_context_wait_for_completion(struct spi_context *ctx)
 DECL|spi_context|struct|struct spi_context {
 DECL|sync|member|struct k_sem sync;
-DECL|tx_buf|member|void *tx_buf;
+DECL|tx_buf|member|u8_t *tx_buf;
 DECL|tx_count|member|size_t tx_count;
 DECL|tx_len|member|size_t tx_len;
