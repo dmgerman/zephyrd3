@@ -1,12 +1,24 @@
+DECL|CONFIG_NET_APP_TLS_STACK_SIZE|macro|CONFIG_NET_APP_TLS_STACK_SIZE
+DECL|HOSTNAME|macro|HOSTNAME
+DECL|INSTANCE_INFO|macro|INSTANCE_INFO
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|UDP_SLEEP|macro|UDP_SLEEP
+DECL|VERIFY_CERTS|macro|VERIFY_CERTS
 DECL|compare_udp_data|function|static bool compare_udp_data(struct net_pkt *pkt, int expecting_len)
-DECL|connect_udp|function|static int connect_udp(struct net_app_ctx *ctx, const char *peer, void *user_data)
+DECL|connect_udp|function|static int connect_udp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *dtls_result_buf, size_t dtls_result_buf_len, u8_t *stack, size_t stack_size)
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|data_udp_pool|macro|data_udp_pool
+DECL|dtls_result_ipv4|macro|dtls_result_ipv4
+DECL|dtls_result_ipv4|variable|dtls_result_ipv4
+DECL|dtls_result_ipv6|macro|dtls_result_ipv6
+DECL|dtls_result_ipv6|variable|dtls_result_ipv6
+DECL|net_app_dtls_stack_ipv4|macro|net_app_dtls_stack_ipv4
+DECL|net_app_dtls_stack_ipv6|macro|net_app_dtls_stack_ipv6
 DECL|send_udp_data|function|static void send_udp_data(struct net_app_ctx *ctx, struct data *data)
+DECL|setup_cert|function|static int setup_cert(struct net_app_ctx *ctx, void *cert)
 DECL|start_udp|function|void start_udp(void)
 DECL|stop_udp|function|void stop_udp(void)
 DECL|tx_udp_slab|function|static struct k_mem_slab *tx_udp_slab(void)
