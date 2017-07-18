@@ -4,6 +4,7 @@ DECL|SOCK_EOF|macro|SOCK_EOF
 DECL|SOCK_NONBLOCK|macro|SOCK_NONBLOCK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_k_fifo_wait_non_empty|function|static inline void _k_fifo_wait_non_empty(struct k_fifo *fifo, int32_t timeout)
+DECL|poll_events|variable|poll_events
 DECL|sock_get_flag|function|static inline u32_t sock_get_flag(struct net_context *ctx, u32_t mask)
 DECL|sock_is_eof|macro|sock_is_eof
 DECL|sock_is_nonblock|macro|sock_is_nonblock
@@ -17,6 +18,7 @@ DECL|zsock_connect|function|int zsock_connect(int sock, const struct sockaddr *a
 DECL|zsock_fcntl|function|int zsock_fcntl(int sock, int cmd, int flags)
 DECL|zsock_flush_queue|function|static void zsock_flush_queue(struct net_context *ctx)
 DECL|zsock_listen|function|int zsock_listen(int sock, int backlog)
+DECL|zsock_poll|function|int zsock_poll(struct zsock_pollfd *fds, int nfds, int timeout)
 DECL|zsock_received_cb|function|static void zsock_received_cb(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|zsock_recv_stream|function|static inline ssize_t zsock_recv_stream(struct net_context *ctx, void *buf, size_t max_len)
 DECL|zsock_recv|function|ssize_t zsock_recv(int sock, void *buf, size_t max_len, int flags)
