@@ -1,0 +1,19 @@
+DECL|RangingMeasurementData|member|VL53L0X_RangingMeasurementData_t RangingMeasurementData;
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|VL53L0X_CHIP_ID|macro|VL53L0X_CHIP_ID
+DECL|VL53L0X_REG_WHO_AM_I|macro|VL53L0X_REG_WHO_AM_I
+DECL|VL53L0X_SETUP_FINAL_RANGE_VCSEL_PERIOD|macro|VL53L0X_SETUP_FINAL_RANGE_VCSEL_PERIOD
+DECL|VL53L0X_SETUP_MAX_TIME_FOR_RANGING|macro|VL53L0X_SETUP_MAX_TIME_FOR_RANGING
+DECL|VL53L0X_SETUP_PRE_RANGE_VCSEL_PERIOD|macro|VL53L0X_SETUP_PRE_RANGE_VCSEL_PERIOD
+DECL|VL53L0X_SETUP_SIGMA_LIMIT|macro|VL53L0X_SETUP_SIGMA_LIMIT
+DECL|VL53L0X_SETUP_SIGNAL_LIMIT|macro|VL53L0X_SETUP_SIGNAL_LIMIT
+DECL|i2c|member|struct device *i2c;
+DECL|vl53l0x_api_funcs|variable|vl53l0x_api_funcs
+DECL|vl53l0x_channel_get|function|static int vl53l0x_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
+DECL|vl53l0x_data|struct|struct vl53l0x_data {
+DECL|vl53l0x_driver|variable|vl53l0x_driver
+DECL|vl53l0x_init|function|static int vl53l0x_init(struct device *dev)
+DECL|vl53l0x_sample_fetch|function|static int vl53l0x_sample_fetch(struct device *dev, enum sensor_channel chan)
+DECL|vl53l0x_setup_single_shot|function|static int vl53l0x_setup_single_shot(struct device *dev)
+DECL|vl53l0x|member|VL53L0X_Dev_t vl53l0x;
