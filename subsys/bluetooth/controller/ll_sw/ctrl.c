@@ -136,6 +136,7 @@ DECL|isr_radio_state_rx|function|static inline void isr_radio_state_rx(u8_t trx_
 DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
 DECL|isr_rx_adv_sr_report|function|static u32_t isr_rx_adv_sr_report(struct pdu_adv *pdu_adv_rx, u8_t rssi_ready)
 DECL|isr_rx_adv|function|static inline u32_t isr_rx_adv(u8_t devmatch_ok, u8_t devmatch_id, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
+DECL|isr_rx_conn_enc_unexpected|function|static inline bool isr_rx_conn_enc_unexpected(struct connection *conn, struct pdu_data *pdu_data)
 DECL|isr_rx_conn_pkt_ack|function|static inline u8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
 DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline u8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx, u8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_ctrl_rej_conn_upd|function|isr_rx_conn_pkt_ctrl_rej_conn_upd(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
