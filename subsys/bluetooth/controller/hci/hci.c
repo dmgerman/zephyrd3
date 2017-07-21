@@ -104,6 +104,7 @@ DECL|le_write_default_data_len|function|static void le_write_default_data_len(st
 DECL|link_control_cmd_handle|function|static int link_control_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|mask|member|u8_t mask;
 DECL|meta_evt|function|static void *meta_evt(struct net_buf *buf, u8_t subevt, u8_t melen)
+DECL|read_auth_payload_timeout|function|static void read_auth_payload_timeout(struct net_buf *buf, struct net_buf **evt)
 DECL|read_bd_addr|function|static void read_bd_addr(struct net_buf *buf, struct net_buf **evt)
 DECL|read_local_features|function|static void read_local_features(struct net_buf *buf, struct net_buf **evt)
 DECL|read_local_version_info|function|static void read_local_version_info(struct net_buf *buf, struct net_buf **evt)
@@ -118,3 +119,4 @@ DECL|vendor_cmd_handle|function|static int vendor_cmd_handle(u16_t ocf, struct n
 DECL|vs_read_supported_commands|function|static void vs_read_supported_commands(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_supported_features|function|static void vs_read_supported_features(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_version_info|function|static void vs_read_version_info(struct net_buf *buf, struct net_buf **evt)
+DECL|write_auth_payload_timeout|function|static void write_auth_payload_timeout(struct net_buf *buf, struct net_buf **evt)

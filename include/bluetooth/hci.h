@@ -369,6 +369,7 @@ DECL|BT_HCI_OP_LINK_KEY_NEG_REPLY|macro|BT_HCI_OP_LINK_KEY_NEG_REPLY
 DECL|BT_HCI_OP_LINK_KEY_REPLY|macro|BT_HCI_OP_LINK_KEY_REPLY
 DECL|BT_HCI_OP_PIN_CODE_NEG_REPLY|macro|BT_HCI_OP_PIN_CODE_NEG_REPLY
 DECL|BT_HCI_OP_PIN_CODE_REPLY|macro|BT_HCI_OP_PIN_CODE_REPLY
+DECL|BT_HCI_OP_READ_AUTH_PAYLOAD_TIMEOUT|macro|BT_HCI_OP_READ_AUTH_PAYLOAD_TIMEOUT
 DECL|BT_HCI_OP_READ_BD_ADDR|macro|BT_HCI_OP_READ_BD_ADDR
 DECL|BT_HCI_OP_READ_BUFFER_SIZE|macro|BT_HCI_OP_READ_BUFFER_SIZE
 DECL|BT_HCI_OP_READ_ENCRYPTION_KEY_SIZE|macro|BT_HCI_OP_READ_ENCRYPTION_KEY_SIZE
@@ -392,6 +393,7 @@ DECL|BT_HCI_OP_USER_CONFIRM_NEG_REPLY|macro|BT_HCI_OP_USER_CONFIRM_NEG_REPLY
 DECL|BT_HCI_OP_USER_CONFIRM_REPLY|macro|BT_HCI_OP_USER_CONFIRM_REPLY
 DECL|BT_HCI_OP_USER_PASSKEY_NEG_REPLY|macro|BT_HCI_OP_USER_PASSKEY_NEG_REPLY
 DECL|BT_HCI_OP_USER_PASSKEY_REPLY|macro|BT_HCI_OP_USER_PASSKEY_REPLY
+DECL|BT_HCI_OP_WRITE_AUTH_PAYLOAD_TIMEOUT|macro|BT_HCI_OP_WRITE_AUTH_PAYLOAD_TIMEOUT
 DECL|BT_HCI_OP_WRITE_INQUIRY_MODE|macro|BT_HCI_OP_WRITE_INQUIRY_MODE
 DECL|BT_HCI_OP_WRITE_LOCAL_NAME|macro|BT_HCI_OP_WRITE_LOCAL_NAME
 DECL|BT_HCI_OP_WRITE_PAGE_TIMEOUT|macro|BT_HCI_OP_WRITE_PAGE_TIMEOUT
@@ -666,6 +668,10 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|acl_max_len|member|u16_t acl_max_len;
 DECL|acl_max_num|member|u16_t acl_max_num;
 DECL|acl_mtu|member|u16_t acl_mtu;
@@ -690,6 +696,8 @@ DECL|air_mode|member|u8_t air_mode;
 DECL|all_phys|member|u8_t all_phys;
 DECL|all_phys|member|u8_t all_phys;
 DECL|allow_role_switch|member|u8_t allow_role_switch;
+DECL|auth_payload_timeout|member|u16_t auth_payload_timeout;
+DECL|auth_payload_timeout|member|u16_t auth_payload_timeout;
 DECL|authentication|member|u8_t authentication;
 DECL|authentication|member|u8_t authentication;
 DECL|a|member|bt_addr_t a;
@@ -812,6 +820,7 @@ DECL|bt_hci_cp_link_key_neg_reply|struct|struct bt_hci_cp_link_key_neg_reply {
 DECL|bt_hci_cp_link_key_reply|struct|struct bt_hci_cp_link_key_reply {
 DECL|bt_hci_cp_pin_code_neg_reply|struct|struct bt_hci_cp_pin_code_neg_reply {
 DECL|bt_hci_cp_pin_code_reply|struct|struct bt_hci_cp_pin_code_reply {
+DECL|bt_hci_cp_read_auth_payload_timeout|struct|struct bt_hci_cp_read_auth_payload_timeout {
 DECL|bt_hci_cp_read_encryption_key_size|struct|struct bt_hci_cp_read_encryption_key_size {
 DECL|bt_hci_cp_read_local_ext_features|struct|struct bt_hci_cp_read_local_ext_features {
 DECL|bt_hci_cp_read_remote_ext_features|struct|struct bt_hci_cp_read_remote_ext_features {
@@ -828,6 +837,7 @@ DECL|bt_hci_cp_setup_sync_conn|struct|struct bt_hci_cp_setup_sync_conn {
 DECL|bt_hci_cp_user_confirm_reply|struct|struct bt_hci_cp_user_confirm_reply {
 DECL|bt_hci_cp_user_passkey_neg_reply|struct|struct bt_hci_cp_user_passkey_neg_reply {
 DECL|bt_hci_cp_user_passkey_reply|struct|struct bt_hci_cp_user_passkey_reply {
+DECL|bt_hci_cp_write_auth_payload_timeout|struct|struct bt_hci_cp_write_auth_payload_timeout {
 DECL|bt_hci_cp_write_inquiry_mode|struct|struct bt_hci_cp_write_inquiry_mode {
 DECL|bt_hci_cp_write_le_host_supp|struct|struct bt_hci_cp_write_le_host_supp {
 DECL|bt_hci_cp_write_sc_host_supp|struct|struct bt_hci_cp_write_sc_host_supp {
@@ -919,6 +929,7 @@ DECL|bt_hci_rp_le_set_ext_adv_param|struct|struct bt_hci_rp_le_set_ext_adv_param
 DECL|bt_hci_rp_le_test_end|struct|struct bt_hci_rp_le_test_end {
 DECL|bt_hci_rp_pin_code_neg_reply|struct|struct bt_hci_rp_pin_code_neg_reply {
 DECL|bt_hci_rp_pin_code_reply|struct|struct bt_hci_rp_pin_code_reply {
+DECL|bt_hci_rp_read_auth_payload_timeout|struct|struct bt_hci_rp_read_auth_payload_timeout {
 DECL|bt_hci_rp_read_bd_addr|struct|struct bt_hci_rp_read_bd_addr {
 DECL|bt_hci_rp_read_buffer_size|struct|struct bt_hci_rp_read_buffer_size {
 DECL|bt_hci_rp_read_encryption_key_size|struct|struct bt_hci_rp_read_encryption_key_size {
@@ -928,6 +939,7 @@ DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_versio
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
 DECL|bt_hci_rp_remote_name_cancel|struct|struct bt_hci_rp_remote_name_cancel {
 DECL|bt_hci_rp_user_confirm_reply|struct|struct bt_hci_rp_user_confirm_reply {
+DECL|bt_hci_rp_write_auth_payload_timeout|struct|struct bt_hci_rp_write_auth_payload_timeout {
 DECL|bt_hci_write_local_name|struct|struct bt_hci_write_local_name {
 DECL|capability|member|u8_t capability;
 DECL|capability|member|u8_t capability;
@@ -1013,6 +1025,10 @@ DECL|filter_policy|member|u8_t filter_policy;
 DECL|flow_enable|member|u8_t flow_enable;
 DECL|frag_pref|member|u8_t frag_pref;
 DECL|frag_pref|member|u8_t frag_pref;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
@@ -1303,6 +1319,8 @@ DECL|sid|member|u8_t sid;
 DECL|sid|member|u8_t sid;
 DECL|simul|member|u8_t simul;
 DECL|skip|member|u16_t skip;
+DECL|status|member|u8_t status;
+DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
