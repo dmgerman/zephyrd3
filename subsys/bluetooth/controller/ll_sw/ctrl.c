@@ -91,6 +91,7 @@ DECL|event_conn_update_st_req|function|static inline void event_conn_update_st_r
 DECL|event_conn_update_st_rsp|function|static inline void event_conn_update_st_rsp(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|event_connection_prepare|function|static void event_connection_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, struct connection *conn)
 DECL|event_enc_prep|function|static inline void event_enc_prep(struct connection *conn)
+DECL|event_enc_reject_prep|function|static inline void event_enc_reject_prep(struct connection *conn, struct pdu_data *pdu)
 DECL|event_fex_prep|function|static inline void event_fex_prep(struct connection *conn)
 DECL|event_inactive|function|static void event_inactive(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_len_prep|function|static inline void event_len_prep(struct connection *conn)
