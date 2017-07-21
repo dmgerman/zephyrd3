@@ -41,6 +41,7 @@ DECL|db|variable|db
 DECL|disconnected_cb|function|static u8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|u16_t end_handle;
 DECL|end|member|u16_t end;
+DECL|end|member|u16_t end;
 DECL|err|member|int err;
 DECL|find_next|function|static u8_t find_next(const struct bt_gatt_attr *attr, void *user_data)
 DECL|gap_appearance|variable|gap_appearance
@@ -95,13 +96,18 @@ DECL|read_name|function|static ssize_t read_name(struct bt_conn *conn, const str
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|sc_ccc_cfg_changed|function|static void sc_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|sc_ccc_cfg|variable|sc_ccc_cfg
+DECL|sc_data|struct|struct sc_data {
 DECL|sc_indicate_rsp|function|static void sc_indicate_rsp(struct bt_conn *conn, const struct bt_gatt_attr *attr, u8_t err)
-DECL|sc_indicate|function|static void sc_indicate(struct gatt_sc *sc, struct bt_gatt_attr *start,struct bt_gatt_attr *end)
+DECL|sc_indicate|function|static void sc_indicate(struct gatt_sc *sc, uint16_t start, uint16_t end)
 DECL|sc_process|function|static void sc_process(struct k_work *work)
+DECL|sc_restore|function|static void sc_restore(struct bt_gatt_ccc_cfg *cfg)
+DECL|sc_save|function|static void sc_save(struct bt_gatt_ccc_cfg *cfg, struct bt_gatt_indicate_params *params)
 DECL|start_handle|member|u16_t start_handle;
+DECL|start|member|u16_t start;
 DECL|start|member|u16_t start;
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|u16_t type;
+DECL|update_range|function|static bool update_range(u16_t *start, u16_t *end, u16_t new_start, u16_t new_end)
 DECL|update_subscription|function|static void update_subscription(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|uuid16|member|u16_t uuid16;
 DECL|uuid16|member|u16_t uuid16;
