@@ -67,8 +67,9 @@ DECL|connection_release|function|static void connection_release(struct connectio
 DECL|conn|member|struct connection *conn;
 DECL|conn|member|struct connection *conn;
 DECL|crc_expire|member|u8_t crc_expire;
-DECL|ctrl_tx_enqueue_tail|function|static void ctrl_tx_enqueue_tail(struct connection *conn, struct radio_pdu_node_tx *node_tx)
 DECL|ctrl_tx_enqueue|function|static void ctrl_tx_enqueue(struct connection *conn, struct radio_pdu_node_tx *node_tx)
+DECL|ctrl_tx_last_enqueue|function|static void ctrl_tx_last_enqueue(struct connection *conn, struct radio_pdu_node_tx *node_tx)
+DECL|ctrl_tx_sec_enqueue|function|static void ctrl_tx_sec_enqueue(struct connection *conn, struct radio_pdu_node_tx *node_tx)
 DECL|data_chan_count|member|u8_t data_chan_count;
 DECL|data_chan_map|member|u8_t data_chan_map[5];
 DECL|default_phy_rx|member|u16_t default_phy_rx;

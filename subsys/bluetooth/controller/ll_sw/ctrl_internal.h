@@ -124,6 +124,7 @@ DECL|phy_pref_tx|member|u8_t phy_pref_tx:3;
 DECL|phy_rx|member|u8_t phy_rx:3;
 DECL|phy_tx|member|u8_t phy_tx:3;
 DECL|phy_upd_ind|member|} phy_upd_ind;
+DECL|pkt_tx_ctrl_last|member|struct radio_pdu_node_tx *pkt_tx_ctrl_last;
 DECL|pkt_tx_ctrl|member|struct radio_pdu_node_tx *pkt_tx_ctrl;
 DECL|pkt_tx_data|member|struct radio_pdu_node_tx *pkt_tx_data;
 DECL|pkt_tx_head|member|struct radio_pdu_node_tx *pkt_tx_head;
