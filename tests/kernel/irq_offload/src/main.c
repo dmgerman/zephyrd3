@@ -1,4 +1,1 @@
-DECL|SENTINEL_VALUE|macro|SENTINEL_VALUE
-DECL|main|function|void main(void)
-DECL|offload_function|function|void offload_function(void *param)
-DECL|sentinel|variable|sentinel
+DECL|test_main|function|void test_main(void *p1, void *p2, void *p3)
