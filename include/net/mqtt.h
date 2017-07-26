@@ -31,5 +31,5 @@ DECL|tls_hs_timeout|member|s32_t tls_hs_timeout;
 DECL|tls_hs_wait|member|struct k_sem tls_hs_wait;
 DECL|tls_mem_pool|member|struct k_mem_pool *tls_mem_pool;
 DECL|tls_stack_size|member|size_t tls_stack_size;
-DECL|tls_stack|member|u8_t *tls_stack;
+DECL|tls_stack|member|k_thread_stack_t tls_stack;
 DECL|unsubscribe|member|int (*unsubscribe)(struct mqtt_ctx *ctx, u16_t pkt_id);

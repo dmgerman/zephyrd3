@@ -36,4 +36,4 @@ DECL|net_verdict|enum|enum net_verdict {
 DECL|orig_size|member|size_t orig_size;
 DECL|pretty_name|member|const char *pretty_name;
 DECL|size|member|size_t size;
-DECL|stack|member|char *stack;
+DECL|stack|member|k_thread_stack_t stack;

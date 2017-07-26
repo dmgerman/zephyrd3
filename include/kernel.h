@@ -68,8 +68,8 @@ DECL|K_STACK_INITIALIZER|macro|K_STACK_INITIALIZER
 DECL|K_THREAD_DEFINE|macro|K_THREAD_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
-DECL|K_THREAD_STACK_BUFFER|macro|K_THREAD_STACK_BUFFER
-DECL|K_THREAD_STACK_BUFFER|macro|K_THREAD_STACK_BUFFER
+DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t sym)
+DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t sym)
 DECL|K_THREAD_STACK_DEFINE|macro|K_THREAD_STACK_DEFINE
 DECL|K_THREAD_STACK_DEFINE|macro|K_THREAD_STACK_DEFINE
 DECL|K_THREAD_STACK_MEMBER|macro|K_THREAD_STACK_MEMBER
@@ -145,6 +145,7 @@ DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
+DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
@@ -185,6 +186,7 @@ DECL|caller_saved|member|struct _caller_saved caller_saved;
 DECL|count|member|unsigned int count;
 DECL|custom_data|member|void *custom_data;
 DECL|data_q|member|sys_slist_t data_q;
+DECL|data|member|char data;
 DECL|data|member|void *data;
 DECL|delete|function|inline void operator delete(void *ptr)
 DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
@@ -217,7 +219,7 @@ DECL|init_p2|member|void *init_p2;
 DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
-DECL|init_stack|member|char *init_stack;
+DECL|init_stack|member|k_thread_stack_t init_stack;
 DECL|init_thread|member|struct k_thread *init_thread;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
@@ -273,6 +275,7 @@ DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
+DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element *k_thread_stack_t;
 DECL|k_thread|struct|struct k_thread {
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);

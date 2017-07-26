@@ -93,7 +93,7 @@ DECL|srvcert|member|mbedtls_x509_crt srvcert;
 DECL|ssl_ctx|member|struct tls_context ssl_ctx;
 DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|stack_size|member|int stack_size;
-DECL|stack|member|u8_t *stack;
+DECL|stack|member|k_thread_stack_t stack;
 DECL|thread|member|struct k_thread thread;
 DECL|tid|member|k_tid_t tid;
 DECL|timing_ctx|member|struct dtls_timing_context timing_ctx;
