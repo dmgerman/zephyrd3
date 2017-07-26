@@ -25,7 +25,7 @@ DECL|counter|member|u32_t counter;
 DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context)
 DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
-DECL|engine_add_observer|function|static int engine_add_observer(struct net_context *net_ctx, struct sockaddr *addr, const u8_t *token, u8_t tkl, struct lwm2m_obj_path *path)
+DECL|engine_add_observer|function|static int engine_add_observer(struct net_context *net_ctx, struct sockaddr *addr, const u8_t *token, u8_t tkl, struct lwm2m_obj_path *path, u16_t format)
 DECL|engine_clear_context|function|static void engine_clear_context(struct lwm2m_engine_context *context)
 DECL|engine_get_resource_from_pathstr|function|static int engine_get_resource_from_pathstr(char *pathstr, struct lwm2m_engine_res_inst **res)
 DECL|engine_get_resource|function|static int engine_get_resource(struct lwm2m_obj_path *path, struct lwm2m_engine_res_inst **res)
@@ -37,6 +37,7 @@ DECL|engine_remove_observer|function|static int engine_remove_observer(const u8_
 DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|event_timestamp|member|s64_t event_timestamp;
+DECL|format|member|u16_t format;
 DECL|generate_notify_message|function|static int generate_notify_message(struct observe_node *obs, bool manual_trigger)
 DECL|get_engine_obj_inst|function|static struct lwm2m_engine_obj_inst *get_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|get_engine_obj|function|static struct lwm2m_engine_obj *get_engine_obj(int obj_id)
