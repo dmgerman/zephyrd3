@@ -1,6 +1,5 @@
 DECL|_STM32F3X_GPIO_REGISTERS_H_|macro|_STM32F3X_GPIO_REGISTERS_H_
-DECL|afrh|member|u32_t afrh;
-DECL|afrl|member|u32_t afrl;
+DECL|afr|member|u32_t afr[2];
 DECL|bit|member|} bit;
 DECL|bit|member|} bit;
 DECL|bit|member|} bit;

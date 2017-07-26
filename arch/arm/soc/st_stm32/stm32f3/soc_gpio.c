@@ -1,4 +1,3 @@
-DECL|func_to_mode|function|static u32_t func_to_mode(int func)
 DECL|stm32_gpio_configure|function|int stm32_gpio_configure(u32_t *base_addr, int pin, int conf, int altf)
 DECL|stm32_gpio_enable_int|function|int stm32_gpio_enable_int(int port, int pin)
 DECL|stm32_gpio_flags_to_conf|function|int stm32_gpio_flags_to_conf(int flags, int *pincfg)
