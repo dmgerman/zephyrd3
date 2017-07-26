@@ -238,6 +238,7 @@ DECL|STM32_PUPD_PULL_DOWN|macro|STM32_PUPD_PULL_DOWN
 DECL|STM32_PUPD_PULL_UP|macro|STM32_PUPD_PULL_UP
 DECL|STM32_PUPD_SHIFT|macro|STM32_PUPD_SHIFT
 DECL|STM32_PUSHPULL_NOPULL|macro|STM32_PUSHPULL_NOPULL
+DECL|STM32_PUSHPULL_PULLUP|macro|STM32_PUSHPULL_PULLUP
 DECL|_STM32_PINMUX_H_|macro|_STM32_PINMUX_H_
 DECL|funcs|member|const stm32_pin_func_t *funcs; /* functions array, indexed with
 DECL|nfuncs|member|const size_t nfuncs; /* number of alternate functions, not
