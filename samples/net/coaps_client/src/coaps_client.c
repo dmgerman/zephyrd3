@@ -25,6 +25,5 @@ DECL|psk|variable|psk
 DECL|replies|variable|replies
 DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|snapshot|member|u32_t snapshot;
-DECL|stack|variable|stack
 DECL|test_path|variable|test_path
 DECL|thread_data|variable|thread_data

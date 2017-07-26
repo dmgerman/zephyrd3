@@ -32,5 +32,4 @@ DECL|ssl_config_defaults_failed|enumerator|ssl_config_defaults_failed,
 DECL|ssl_handshake_failed|enumerator|ssl_handshake_failed,
 DECL|ssl_setup_failed|enumerator|ssl_setup_failed,
 DECL|ssl_write_failed|enumerator|ssl_write_failed,
-DECL|stack|variable|stack
 DECL|x509_crt_parse_failed|enumerator|x509_crt_parse_failed,

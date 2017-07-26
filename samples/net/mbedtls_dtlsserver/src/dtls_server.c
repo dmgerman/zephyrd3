@@ -20,4 +20,3 @@ DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *fi
 DECL|payload|variable|payload
 DECL|pers|variable|pers
 DECL|snapshot|member|u32_t snapshot;
-DECL|stack|variable|stack

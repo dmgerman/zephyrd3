@@ -26,7 +26,6 @@ DECL|resources|variable|resources
 DECL|segments_path|variable|segments_path
 DECL|send_response|function|static int send_response(struct zoap_packet *request, u8_t response_code)
 DECL|snapshot|member|u32_t snapshot;
-DECL|stack|variable|stack
 DECL|test_del|function|static int test_del(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
 DECL|test_path|variable|test_path
 DECL|test_post|function|static int test_post(struct zoap_resource *resource, struct zoap_packet *request, const struct sockaddr *from)
