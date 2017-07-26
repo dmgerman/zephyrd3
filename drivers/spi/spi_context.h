@@ -16,6 +16,7 @@ DECL|spi_context_configured|function|static inline bool spi_context_configured(s
 DECL|spi_context_cs_configure|function|static inline void spi_context_cs_configure(struct spi_context *ctx)
 DECL|spi_context_cs_control|function|static inline void spi_context_cs_control(struct spi_context *ctx, bool on)
 DECL|spi_context_lock|function|static inline void spi_context_lock(struct spi_context *ctx, bool asynchronous, struct k_poll_signal *signal)
+DECL|spi_context_longest_current_buf|function|static inline size_t spi_context_longest_current_buf(struct spi_context *ctx)
 DECL|spi_context_release|function|static inline void spi_context_release(struct spi_context *ctx, int status)
 DECL|spi_context_rx_on|function|bool spi_context_rx_on(struct spi_context *ctx)
 DECL|spi_context_tx_on|function|bool spi_context_tx_on(struct spi_context *ctx)
