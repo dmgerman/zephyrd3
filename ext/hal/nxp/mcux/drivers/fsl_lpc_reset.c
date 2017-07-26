@@ -1,0 +1,3 @@
+DECL|RESET_ClearPeripheralReset|function|void RESET_ClearPeripheralReset(reset_ip_name_t peripheral)
+DECL|RESET_PeripheralReset|function|void RESET_PeripheralReset(reset_ip_name_t peripheral)
+DECL|RESET_SetPeripheralReset|function|void RESET_SetPeripheralReset(reset_ip_name_t peripheral)

@@ -1,0 +1,11 @@
+DECL|CRC_DRIVER_DEFAULT_COMPLEMENT_IN|macro|CRC_DRIVER_DEFAULT_COMPLEMENT_IN
+DECL|CRC_DRIVER_DEFAULT_COMPLEMENT_OUT|macro|CRC_DRIVER_DEFAULT_COMPLEMENT_OUT
+DECL|CRC_DRIVER_DEFAULT_POLYNOMIAL|macro|CRC_DRIVER_DEFAULT_POLYNOMIAL
+DECL|CRC_DRIVER_DEFAULT_REVERSE_IN|macro|CRC_DRIVER_DEFAULT_REVERSE_IN
+DECL|CRC_DRIVER_DEFAULT_REVERSE_OUT|macro|CRC_DRIVER_DEFAULT_REVERSE_OUT
+DECL|CRC_DRIVER_DEFAULT_SEED|macro|CRC_DRIVER_DEFAULT_SEED
+DECL|CRC_GetConfig|function|void CRC_GetConfig(CRC_Type *base, crc_config_t *config)
+DECL|CRC_GetDefaultConfig|function|void CRC_GetDefaultConfig(crc_config_t *config)
+DECL|CRC_Init|function|void CRC_Init(CRC_Type *base, const crc_config_t *config)
+DECL|CRC_Reset|function|void CRC_Reset(CRC_Type *base)
+DECL|CRC_WriteData|function|void CRC_WriteData(CRC_Type *base, const uint8_t *data, size_t dataSize)

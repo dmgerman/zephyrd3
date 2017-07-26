@@ -1,0 +1,3 @@
+DECL|FMEAS_GetFrequency|function|uint32_t FMEAS_GetFrequency(SYSCON_Type *base, uint32_t refClockRate)
+DECL|REFERENCE_CLOCK_COUNT|macro|REFERENCE_CLOCK_COUNT
+DECL|TARGET_CLOCK_COUNT|macro|TARGET_CLOCK_COUNT
