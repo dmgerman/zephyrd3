@@ -82,6 +82,7 @@ DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6
 DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, u32_t retrans_timer)
 DECL|net_if_is_ip_offloaded|function|static inline bool net_if_is_ip_offloaded(struct net_if *iface)
+DECL|net_if_is_up|function|static inline bool net_if_is_up(struct net_if *iface)
 DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
 DECL|net_if_link_callback_t|typedef|typedef void (*net_if_link_callback_t)(struct net_if *iface,
 DECL|net_if_link_cb|struct|struct net_if_link_cb {
