@@ -3,6 +3,7 @@ DECL|NETWORK_CONNECT_TIMEOUT|macro|NETWORK_CONNECT_TIMEOUT
 DECL|NETWORK_INIT_TIMEOUT|macro|NETWORK_INIT_TIMEOUT
 DECL|PACKAGE_URI_LEN|macro|PACKAGE_URI_LEN
 DECL|PACKET_TRANSFER_RETRY_MAX|macro|PACKET_TRANSFER_RETRY_MAX
+DECL|PROXY_URI_LEN|macro|PROXY_URI_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
@@ -17,4 +18,6 @@ DECL|firmware_work|variable|firmware_work
 DECL|lwm2m_firmware_cancel_transfer|function|int lwm2m_firmware_cancel_transfer(void)
 DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(char *package_uri)
 DECL|parsed_uri|variable|parsed_uri
+DECL|proxy_uri|variable|proxy_uri
+DECL|transfer_empty_ack|function|static int transfer_empty_ack(u16_t mid)
 DECL|transfer_request|function|static int transfer_request(struct zoap_block_context *ctx, const u8_t *token, u8_t tkl, zoap_reply_t reply_cb)
