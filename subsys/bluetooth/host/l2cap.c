@@ -50,7 +50,7 @@ DECL|l2cap_chan_le_get_tx_buf|function|static struct net_buf *l2cap_chan_le_get_
 DECL|l2cap_chan_le_recv_sdu|function|static void l2cap_chan_le_recv_sdu(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_recv|function|static void l2cap_chan_le_recv(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_le_send_resume|function|static void l2cap_chan_le_send_resume(struct bt_l2cap_le_chan *ch)
-DECL|l2cap_chan_le_send_sdu|function|static int l2cap_chan_le_send_sdu(struct bt_l2cap_le_chan *ch, struct net_buf *buf, int sent)
+DECL|l2cap_chan_le_send_sdu|function|static int l2cap_chan_le_send_sdu(struct bt_l2cap_le_chan *ch, struct net_buf **buf, int sent)
 DECL|l2cap_chan_le_send|function|static int l2cap_chan_le_send(struct bt_l2cap_le_chan *ch, struct net_buf *buf, u16_t sdu_hdr_len)
 DECL|l2cap_chan_recv|function|static void l2cap_chan_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan_rx_give_credits|function|static void l2cap_chan_rx_give_credits(struct bt_l2cap_le_chan *chan, u16_t credits)
