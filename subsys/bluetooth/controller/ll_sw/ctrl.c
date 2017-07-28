@@ -5,6 +5,7 @@ DECL|RADIO_CONN_EVENTS|macro|RADIO_CONN_EVENTS
 DECL|RADIO_DEFERRED_PREEMPT|macro|RADIO_DEFERRED_PREEMPT
 DECL|RADIO_DEFERRED_PREEMPT|macro|RADIO_DEFERRED_PREEMPT
 DECL|RADIO_IRK_COUNT_MAX|macro|RADIO_IRK_COUNT_MAX
+DECL|RADIO_PKT_TIME|macro|RADIO_PKT_TIME
 DECL|RADIO_RSSI_SAMPLE_COUNT|macro|RADIO_RSSI_SAMPLE_COUNT
 DECL|RADIO_RSSI_THRESHOLD|macro|RADIO_RSSI_THRESHOLD
 DECL|RADIO_TICKER_JITTER_US|macro|RADIO_TICKER_JITTER_US
@@ -139,6 +140,7 @@ DECL|isr_radio_state_tx|function|static inline void isr_radio_state_tx(void)
 DECL|isr_rx_adv_sr_report|function|static u32_t isr_rx_adv_sr_report(struct pdu_adv *pdu_adv_rx, u8_t rssi_ready)
 DECL|isr_rx_adv|function|static inline u32_t isr_rx_adv(u8_t devmatch_ok, u8_t devmatch_id, u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rssi_ready)
 DECL|isr_rx_conn_enc_unexpected|function|static inline bool isr_rx_conn_enc_unexpected(struct connection *conn, struct pdu_data *pdu_data)
+DECL|isr_rx_conn_phy_tx_time_set|function|static inline void isr_rx_conn_phy_tx_time_set(void)
 DECL|isr_rx_conn_pkt_ack|function|static inline u8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
 DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline u8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx, u8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_ctrl_rej_conn_upd|function|isr_rx_conn_pkt_ctrl_rej_conn_upd(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
@@ -157,7 +159,7 @@ DECL|isr_scan_init_check|function|static inline bool isr_scan_init_check(struct 
 DECL|isr_scan_rsp_adva_matches|function|static inline bool isr_scan_rsp_adva_matches(struct pdu_adv *srsp)
 DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx)
 DECL|isr|function|static void isr(void)
-DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets)
+DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CONTROLLER_PHY */ static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_rx_time, u16_t eff_tx_octets,
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
 DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
@@ -175,7 +177,7 @@ DECL|ll_feature_req_send|function|u32_t ll_feature_req_send(u16_t handle)
 DECL|ll_length_default_get|function|void ll_length_default_get(u16_t *max_tx_octets, u16_t *max_tx_time)
 DECL|ll_length_default_set|function|u32_t ll_length_default_set(u16_t max_tx_octets, u16_t max_tx_time)
 DECL|ll_length_max_get|function|void ll_length_max_get(u16_t *max_tx_octets, u16_t *max_tx_time, u16_t *max_rx_octets, u16_t *max_rx_time)
-DECL|ll_length_req_send|function|u32_t ll_length_req_send(u16_t handle, u16_t tx_octets)
+DECL|ll_length_req_send|function|u32_t ll_length_req_send(u16_t handle, u16_t tx_octets, u16_t tx_time)
 DECL|ll_phy_default_set|function|u32_t ll_phy_default_set(u8_t tx, u8_t rx)
 DECL|ll_phy_get|function|u32_t ll_phy_get(u16_t handle, u8_t *tx, u8_t *rx)
 DECL|ll_phy_req_send|function|u32_t ll_phy_req_send(u16_t handle, u8_t tx, u8_t flags, u8_t rx)
