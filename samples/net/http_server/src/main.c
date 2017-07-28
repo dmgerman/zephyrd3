@@ -14,6 +14,8 @@ DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|RX_FIFO_DEPTH|macro|RX_FIFO_DEPTH
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|data_pool|function|static struct net_buf_pool *data_pool(void)
+DECL|data_pool|macro|data_pool
 DECL|http_basic_auth|function|static int http_basic_auth(struct http_server_ctx *ctx)
 DECL|http_ctx|variable|http_ctx
 DECL|http_response_401|function|int http_response_401(struct http_server_ctx *ctx, s32_t timeout)
@@ -29,3 +31,5 @@ DECL|main|function|void main(void)
 DECL|panic|function|void panic(const char *msg)
 DECL|print_http_headers|function|static void print_http_headers(struct http_server_ctx *ctx, char *str, int size)
 DECL|setup_cert|function|static int setup_cert(struct http_server_ctx *ctx, mbedtls_x509_crt *cert, mbedtls_pk_context *pkey)
+DECL|tx_slab|function|static struct k_mem_slab *tx_slab(void)
+DECL|tx_slab|macro|tx_slab
