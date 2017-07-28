@@ -22,6 +22,7 @@ DECL|get_local_addr|function|static int get_local_addr(struct http_client_ctx *c
 DECL|http_client_init|function|int http_client_init(struct http_client_ctx *ctx, const char *server, u16_t server_port)
 DECL|http_client_release|function|void http_client_release(struct http_client_ctx *ctx)
 DECL|http_client_send_req|function|int http_client_send_req(struct http_client_ctx *ctx, struct http_client_request *req, http_response_cb_t cb, u8_t *response_buf, size_t response_buf_len,
+DECL|http_client_set_net_pkt_pool|function|int http_client_set_net_pkt_pool(struct http_client_ctx *ctx, net_pkt_get_slab_func_t tx_slab, net_pkt_get_pool_func_t data_pool)
 DECL|http_receive_cb|function|static void http_receive_cb(struct http_client_ctx *ctx, struct net_pkt *pkt)
 DECL|http_request|function|int http_request(struct http_client_ctx *ctx, struct http_client_request *req, s32_t timeout)
 DECL|https_client_init|function|int https_client_init(struct http_client_ctx *ctx, const char *server, u16_t server_port, u8_t *personalization_data, size_t personalization_data_len, https_ca_cert_cb_t cert_cb,

@@ -33,6 +33,7 @@ DECL|ctx|member|struct net_context *ctx;
 DECL|data_len|member|size_t data_len;
 DECL|data_len|member|size_t data_len;
 DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
+DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
 DECL|default_url|member|struct http_root_url default_url;
 DECL|dns_id|member|u16_t dns_id;
 DECL|enabled|member|bool enabled;
@@ -51,6 +52,7 @@ DECL|http_client_ctx|struct|struct http_client_ctx {
 DECL|http_client_request|struct|struct http_client_request {
 DECL|http_client_send_get_req|function|static inline int http_client_send_get_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, http_response_cb_t cb,
 DECL|http_client_send_post_req|function|static inline int http_client_send_post_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, const char *content_type,
+DECL|http_client_set_net_pkt_pool|macro|http_client_set_net_pkt_pool
 DECL|http_field_value|struct|struct http_field_value {
 DECL|http_final_call|enum|enum http_final_call {
 DECL|http_heap_init|macro|http_heap_init
@@ -142,6 +144,7 @@ DECL|timer_cancelled|member|u8_t timer_cancelled;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|tx_fifo|member|struct k_fifo tx_fifo;
 DECL|tx_sem|member|struct k_sem tx_sem;
+DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
 DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
 DECL|url_len|member|u16_t url_len;
 DECL|urls|member|struct http_root_url urls[CONFIG_HTTP_SERVER_NUM_URLS];
