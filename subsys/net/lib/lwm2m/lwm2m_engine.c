@@ -93,6 +93,7 @@ DECL|lwm2m_read_handler|function|static int lwm2m_read_handler(struct lwm2m_engi
 DECL|lwm2m_register_obj|function|void lwm2m_register_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_sprint_ip_addr|function|char *lwm2m_sprint_ip_addr(const struct sockaddr *addr)
 DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct net_context *ctx, struct net_pkt *pkt, struct zoap_pending *zpendings, int num_zpendings, struct zoap_reply *zreplies, int num_zreplies, int (*udp_request_handler)(struct zoap_packet *, struct zoap_packet *,
+DECL|lwm2m_udp_sendto|function|int lwm2m_udp_sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr)
 DECL|lwm2m_unregister_obj|function|void lwm2m_unregister_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|lwm2m_write_handler|function|int lwm2m_write_handler(struct lwm2m_engine_obj_inst *obj_inst,struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
