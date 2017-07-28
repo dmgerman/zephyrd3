@@ -42,6 +42,7 @@ DECL|http_server_enable|function|bool http_server_enable(struct http_server_ctx 
 DECL|http_server_init|function|int http_server_init(struct http_server_ctx *http_ctx, struct http_server_urls *urls, struct sockaddr *server_addr, u8_t *request_buf, size_t request_buf_len,
 DECL|http_server_release|function|void http_server_release(struct http_server_ctx *http_ctx)
 DECL|http_server_set_local_addr|function|int http_server_set_local_addr(struct sockaddr *addr, const char *myaddr, u16_t port)
+DECL|http_server_set_net_pkt_pool|function|int http_server_set_net_pkt_pool(struct http_server_ctx *ctx, net_pkt_get_slab_func_t tx_slab, net_pkt_get_pool_func_t data_pool)
 DECL|http_strlen|function|static inline u16_t http_strlen(const char *str)
 DECL|http_url_cmp|function|static int http_url_cmp(const char *url, u16_t url_len,const char *root_url, u16_t root_url_len)
 DECL|http_url_find|function|static struct http_root_url *http_url_find(struct http_server_ctx *http_ctx)
