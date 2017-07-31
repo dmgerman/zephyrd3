@@ -1,10 +1,15 @@
 DECL|CHAN_CTXT|macro|CHAN_CTXT
+DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
+DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|L2CAP_IPSP_MTU|macro|L2CAP_IPSP_MTU
 DECL|L2CAP_IPSP_PSM|macro|L2CAP_IPSP_PSM
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|UNKNOWN_APPEARANCE|macro|UNKNOWN_APPEARANCE
 DECL|ad_parse|function|static bool ad_parse(struct net_buf_simple *ad, bool (*func)(u8_t type, const u8_t *data, u8_t data_len, void *user_data), void *user_data)
+DECL|ad|variable|ad
 DECL|bt_active_scan|function|static void bt_active_scan(void)
+DECL|bt_advertise|function|static int bt_advertise(u32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_connect|function|static int bt_connect(u32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|bt_context_data|variable|bt_context_data
 DECL|bt_context|struct|struct bt_context {
@@ -35,5 +40,6 @@ DECL|net_bt_init|function|static int net_bt_init(struct device *dev)
 DECL|net_bt_recv|function|static enum net_verdict net_bt_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_bt_reserve|function|static inline u16_t net_bt_reserve(struct net_if *iface, void *unused)
 DECL|net_bt_send|function|static enum net_verdict net_bt_send(struct net_if *iface, struct net_pkt *pkt)
+DECL|sd|variable|sd
 DECL|server|variable|server
 DECL|src|member|bt_addr_t src;
