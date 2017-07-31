@@ -28,6 +28,4 @@ DECL|nats_client|function|static void nats_client(void)
 DECL|on_msg_received|function|static int on_msg_received(const struct nats *nats, const struct nats_msg *msg)
 DECL|panic|function|static void panic(const char *msg)
 DECL|read_led|function|static bool read_led(void)
-DECL|stack|variable|stack
-DECL|thread_data|variable|thread_data
 DECL|write_led|function|static void write_led(const struct nats *nats, const struct nats_msg *msg, bool state)

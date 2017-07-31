@@ -14,7 +14,6 @@ DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
 DECL|LED_PIN|macro|LED_PIN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|ZIRC_AF_INET|macro|ZIRC_AF_INET
 DECL|ZIRC_AF_INET|macro|ZIRC_AF_INET
@@ -28,7 +27,6 @@ DECL|ZIRC_PEER_IP_ADDR|macro|ZIRC_PEER_IP_ADDR
 DECL|ZIRC_PEER_IP_ADDR|macro|ZIRC_PEER_IP_ADDR
 DECL|ZIRC_SOCKADDR_IN|macro|ZIRC_SOCKADDR_IN
 DECL|ZIRC_SOCKADDR_IN|macro|ZIRC_SOCKADDR_IN
-DECL|bot_thread|variable|bot_thread
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
 DECL|cmd_buf|variable|cmd_buf
@@ -41,7 +39,6 @@ DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|initialize_network|function|initialize_network(struct zirc *irc)
 DECL|ipv4_addr_add_handler|function|static void ipv4_addr_add_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
 DECL|ipv6_dad_ok_handler|function|static void ipv6_dad_ok_handler(struct net_mgmt_event_callback *cb,u32_t mgmt_event, struct net_if *iface)
-DECL|irc_bot|function|static void irc_bot(void)
 DECL|irc|member|struct zirc *irc;
 DECL|laddr|variable|laddr
 DECL|led0|variable|led0
