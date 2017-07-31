@@ -1,0 +1,1 @@
+DECL|_net_app_bt_setup|macro|_net_app_bt_setup
