@@ -49,7 +49,6 @@ DECL|net_shell_cmd_route|function|int net_shell_cmd_route(int argc, char *argv[]
 DECL|net_shell_cmd_stacks|function|int net_shell_cmd_stacks(int argc, char *argv[])
 DECL|net_shell_cmd_stats|function|int net_shell_cmd_stats(int argc, char *argv[])
 DECL|net_shell_cmd_tcp|function|int net_shell_cmd_tcp(int argc, char *argv[])
-DECL|net_shell_init|function|void net_shell_init(void)
 DECL|net_shell_print_statistics|function|static inline void net_shell_print_statistics(void)
 DECL|ping4_handler|variable|ping4_handler
 DECL|ping6_handler|variable|ping6_handler

@@ -1,2 +1,1 @@
 DECL|__NET_SHELL_H|macro|__NET_SHELL_H
-DECL|net_shell_init|macro|net_shell_init
