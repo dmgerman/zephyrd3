@@ -111,7 +111,7 @@ DECL|net_rpl_process_dio|function|static void net_rpl_process_dio(struct net_if 
 DECL|net_rpl_process_parent_event|function|static bool net_rpl_process_parent_event(struct net_if *iface, struct net_rpl_instance *instance, struct net_rpl_parent *parent)
 DECL|net_rpl_remove_parent|function|static void net_rpl_remove_parent(struct net_if *iface, struct net_rpl_parent *parent, struct net_nbr *nbr)
 DECL|net_rpl_remove_routes|function|static void net_rpl_remove_routes(struct net_rpl_dag *dag)
-DECL|net_rpl_repair_root|function|static bool net_rpl_repair_root(u8_t instance_id)
+DECL|net_rpl_repair_root|function|bool net_rpl_repair_root(u8_t instance_id)
 DECL|net_rpl_reset_dio_timer|function|static void net_rpl_reset_dio_timer(struct net_rpl_instance *instance)
 DECL|net_rpl_revert_header|function|int net_rpl_revert_header(struct net_pkt *pkt, u16_t offset, u16_t *pos)
 DECL|net_rpl_schedule_dao_now|function|static inline void net_rpl_schedule_dao_now(struct net_rpl_instance *instance)
