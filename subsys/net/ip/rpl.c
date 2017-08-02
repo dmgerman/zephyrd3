@@ -82,6 +82,7 @@ DECL|net_rpl_dao_send|function|int net_rpl_dao_send(struct net_if *iface, struct
 DECL|net_rpl_dio_reset_timer|function|static void net_rpl_dio_reset_timer(struct net_rpl_instance *instance)
 DECL|net_rpl_dio_send|function|int net_rpl_dio_send(struct net_if *iface, struct net_rpl_instance *instance, struct in6_addr *src, struct in6_addr *dst)
 DECL|net_rpl_dis_send|function|int net_rpl_dis_send(struct in6_addr *dst, struct net_if *iface)
+DECL|net_rpl_foreach_parent|function|int net_rpl_foreach_parent(net_rpl_parent_cb_t cb, void *user_data)
 DECL|net_rpl_free_dag|function|static void net_rpl_free_dag(struct net_if *iface, struct net_rpl_dag *dag)
 DECL|net_rpl_get_any_dag|function|struct net_rpl_dag *net_rpl_get_any_dag(void)
 DECL|net_rpl_get_default_instance|function|struct net_rpl_instance *net_rpl_get_default_instance(void)

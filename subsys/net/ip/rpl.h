@@ -170,6 +170,7 @@ DECL|net_rpl_lollipop_is_init|function|static inline bool net_rpl_lollipop_is_in
 DECL|net_rpl_metric_container|struct|struct net_rpl_metric_container {
 DECL|net_rpl_mode|enum|enum net_rpl_mode {
 DECL|net_rpl_node_energy_object|struct|struct net_rpl_node_energy_object {
+DECL|net_rpl_parent_cb_t|typedef|typedef void (*net_rpl_parent_cb_t)(struct net_rpl_parent *parent,
 DECL|net_rpl_parent|struct|struct net_rpl_parent {
 DECL|net_rpl_prefix|struct|struct net_rpl_prefix {
 DECL|net_rpl_route_entry|struct|struct net_rpl_route_entry {
