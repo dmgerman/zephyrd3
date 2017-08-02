@@ -27,11 +27,13 @@ DECL|_EXC_FUNC|macro|_EXC_FUNC
 DECL|_NanoFatalErrorHandler|function|FUNC_NORETURN void _NanoFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
 DECL|_debug_fatal_hook|function|__weak void _debug_fatal_hook(const NANO_ESF *esf) { ARG_UNUSED(esf); }
 DECL|_default_esf|variable|_default_esf
+DECL|_df_esf|variable|_df_esf
+DECL|_df_handler_bottom|function|static FUNC_NORETURN __used void _df_handler_bottom(void)
+DECL|_df_handler_top|function|static FUNC_NORETURN __used void _df_handler_top(void)
+DECL|_df_stack|variable|_df_stack
 DECL|_df_tss|variable|_df_tss
 DECL|_do_kernel_oops|function|FUNC_NORETURN void _do_kernel_oops(const struct oops_esf *esf)
 DECL|_main_tss|variable|_main_tss
-DECL|df_handler|function|void df_handler(void)
-DECL|df_stack|variable|df_stack
 DECL|dump_entry_flags|function|static void dump_entry_flags(u32_t flags)
 DECL|dump_mmu_flags|function|static void dump_mmu_flags(void *addr)
 DECL|generic_exc_handle|function|static FUNC_NORETURN void generic_exc_handle(unsigned int vector, const NANO_ESF *pEsf)
