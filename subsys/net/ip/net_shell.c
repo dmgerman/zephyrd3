@@ -49,6 +49,7 @@ DECL|net_shell_cmd_mem|function|int net_shell_cmd_mem(int argc, char *argv[])
 DECL|net_shell_cmd_nbr|function|int net_shell_cmd_nbr(int argc, char *argv[])
 DECL|net_shell_cmd_ping|function|int net_shell_cmd_ping(int argc, char *argv[])
 DECL|net_shell_cmd_route|function|int net_shell_cmd_route(int argc, char *argv[])
+DECL|net_shell_cmd_rpl|function|int net_shell_cmd_rpl(int argc, char *argv[])
 DECL|net_shell_cmd_stacks|function|int net_shell_cmd_stacks(int argc, char *argv[])
 DECL|net_shell_cmd_stats|function|int net_shell_cmd_stats(int argc, char *argv[])
 DECL|net_shell_cmd_tcp|function|int net_shell_cmd_tcp(int argc, char *argv[])
@@ -56,10 +57,12 @@ DECL|net_shell_print_statistics|function|static inline void net_shell_print_stat
 DECL|ping4_handler|variable|ping4_handler
 DECL|ping6_handler|variable|ping6_handler
 DECL|pos|member|int pos;
+DECL|power|function|static int power(int base, unsigned int exp)
 DECL|print_connect_info|function|static void print_connect_info(int family, struct sockaddr *myaddr, struct sockaddr *addr)
 DECL|print_dns_info|function|static void print_dns_info(struct dns_resolve_context *ctx)
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
 DECL|route_mcast_cb|function|static void route_mcast_cb(struct net_route_entry_mcast *entry, void *user_data)
+DECL|rpl_parent|function|static void rpl_parent(struct net_rpl_parent *parent, void *user_data)
 DECL|slab_pool_found_already|function|static bool slab_pool_found_already(struct ctx_info *info, struct k_mem_slab *slab, struct net_buf_pool *pool)
 DECL|tcp_cb|function|static void tcp_cb(struct net_tcp *tcp, void *user_data)
 DECL|tcp_connected|function|static void tcp_connected(struct net_context *context, int status, void *user_data)
