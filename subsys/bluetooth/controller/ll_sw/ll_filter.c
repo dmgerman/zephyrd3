@@ -3,6 +3,7 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_RPA_TIMEOUT_MS|macro|DEFAULT_RPA_TIMEOUT_MS
 DECL|LIST_MATCH|macro|LIST_MATCH
 DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(bool whitelist)
+DECL|ctrl_id_addr_get|function|void ctrl_id_addr_get(u8_t rl_idx, u8_t *id_addr_type, u8_t *id_addr)
 DECL|ctrl_irk_whitelisted|function|bool ctrl_irk_whitelisted(u8_t rl_idx)
 DECL|ctrl_irks_get|function|u8_t *ctrl_irks_get(u8_t *count)
 DECL|ctrl_lrpa_get|function|bt_addr_t *ctrl_lrpa_get(u8_t rl_idx)

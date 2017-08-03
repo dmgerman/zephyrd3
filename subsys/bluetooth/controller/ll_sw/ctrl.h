@@ -108,7 +108,7 @@ DECL|pdu_data|member|u8_t pdu_data[1];
 DECL|pdu_data|member|u8_t pdu_data[1];
 DECL|peer_addr_type|member|u8_t peer_addr_type;
 DECL|peer_addr|member|u8_t peer_addr[BDADDR_SIZE];
-DECL|peer_irk_index|member|u8_t peer_irk_index;
+DECL|peer_rpa|member|u8_t peer_rpa[BDADDR_SIZE];
 DECL|radio_adv_data|struct|struct radio_adv_data {
 DECL|radio_le_chan_sel_algo|struct|struct radio_le_chan_sel_algo {
 DECL|radio_le_conn_cmplt|struct|struct radio_le_conn_cmplt {
