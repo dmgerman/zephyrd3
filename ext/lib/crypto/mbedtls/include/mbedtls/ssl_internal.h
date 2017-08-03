@@ -43,6 +43,7 @@ DECL|cur_msg|member|mbedtls_ssl_flight_item *cur_msg; /*!< Current message in fl
 DECL|curves|member|const mbedtls_ecp_curve_info **curves; /*!< Supported elliptic curves */
 DECL|dhm_ctx|member|mbedtls_dhm_context dhm_ctx; /*!< DHM key exchange */
 DECL|ecdh_ctx|member|mbedtls_ecdh_context ecdh_ctx; /*!< ECDH key exchange */
+DECL|ecdsa|member|mbedtls_md_type_t ecdsa;
 DECL|ecjpake_cache_len|member|size_t ecjpake_cache_len; /*!< Length of cached data */
 DECL|ecjpake_cache|member|unsigned char *ecjpake_cache; /*!< Cache for ClientHello ext */
 DECL|ecjpake_ctx|member|mbedtls_ecjpake_context ecjpake_ctx; /*!< EC J-PAKE key exchange */
@@ -53,6 +54,7 @@ DECL|fin_sha256|member|mbedtls_sha256_context fin_sha256;
 DECL|fin_sha512|member|mbedtls_sha512_context fin_sha512;
 DECL|fixed_ivlen|member|size_t fixed_ivlen; /*!< Fixed part of IV (AEAD) */
 DECL|flight|member|mbedtls_ssl_flight_item *flight; /*!< Current outgoing flight */
+DECL|hash_algs|member|mbedtls_ssl_sig_hash_set_t hash_algs; /*!< Set of suitable sig-hash pairs */
 DECL|hs_msg|member|unsigned char *hs_msg; /*!< Reassembled handshake message */
 DECL|in_flight_start_seq|member|unsigned int in_flight_start_seq; /*!< Minimum message sequence in the
 DECL|in_msg_seq|member|unsigned int in_msg_seq; /*!< Incoming handshake sequence number */
@@ -77,6 +79,8 @@ DECL|mbedtls_ssl_key_cert|struct|struct mbedtls_ssl_key_cert
 DECL|mbedtls_ssl_own_cert|function|static inline mbedtls_x509_crt *mbedtls_ssl_own_cert( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_own_key|function|static inline mbedtls_pk_context *mbedtls_ssl_own_key( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_safer_memcmp|function|static inline int mbedtls_ssl_safer_memcmp( const void *a, const void *b, size_t n )
+DECL|mbedtls_ssl_sig_hash_set_init|function|static inline void mbedtls_ssl_sig_hash_set_init( mbedtls_ssl_sig_hash_set_t *set )
+DECL|mbedtls_ssl_sig_hash_set_t|struct|struct mbedtls_ssl_sig_hash_set_t
 DECL|mbedtls_ssl_transform|struct|struct mbedtls_ssl_transform
 DECL|md_ctx_dec|member|mbedtls_md_context_t md_ctx_dec; /*!< MAC (decryption) */
 DECL|md_ctx_enc|member|mbedtls_md_context_t md_ctx_enc; /*!< MAC (encryption) */
@@ -94,7 +98,7 @@ DECL|randbytes|member|unsigned char randbytes[64]; /*!< random bytes */
 DECL|resume|member|int resume; /*!< session resume indicator*/
 DECL|retransmit_state|member|unsigned char retransmit_state; /*!< Retransmission state */
 DECL|retransmit_timeout|member|uint32_t retransmit_timeout; /*!< Current value of timeout */
-DECL|sig_alg|member|int sig_alg; /*!< Hash algorithm for signature */
+DECL|rsa|member|mbedtls_md_type_t rsa;
 DECL|sni_authmode|member|int sni_authmode; /*!< authmode from SNI callback */
 DECL|sni_ca_chain|member|mbedtls_x509_crt *sni_ca_chain; /*!< trusted CAs from SNI callback */
 DECL|sni_ca_crl|member|mbedtls_x509_crl *sni_ca_crl; /*!< trusted CAs CRLs from SNI */
@@ -104,4 +108,3 @@ DECL|type|member|unsigned char type; /*!< type of the message: handshake or CCS 
 DECL|update_checksum|member|void (*update_checksum)(mbedtls_ssl_context *, const unsigned char *, size_t);
 DECL|verify_cookie_len|member|unsigned char verify_cookie_len; /*!< Cli: cookie length
 DECL|verify_cookie|member|unsigned char *verify_cookie; /*!< Cli: HelloVerifyRequest cookie
-DECL|verify_sig_alg|member|int verify_sig_alg; /*!< Signature algorithm for verify */

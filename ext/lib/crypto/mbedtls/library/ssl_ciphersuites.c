@@ -3,10 +3,9 @@ DECL|ciphersuite_definitions|variable|ciphersuite_definitions
 DECL|ciphersuite_preference|variable|ciphersuite_preference
 DECL|mbedtls_ssl_ciphersuite_from_id|function|const mbedtls_ssl_ciphersuite_t *mbedtls_ssl_ciphersuite_from_id( int ciphersuite )
 DECL|mbedtls_ssl_ciphersuite_from_string|function|const mbedtls_ssl_ciphersuite_t *mbedtls_ssl_ciphersuite_from_string( const char *ciphersuite_name )
-DECL|mbedtls_ssl_ciphersuite_uses_ec|function|int mbedtls_ssl_ciphersuite_uses_ec( const mbedtls_ssl_ciphersuite_t *info )
-DECL|mbedtls_ssl_ciphersuite_uses_psk|function|int mbedtls_ssl_ciphersuite_uses_psk( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_get_ciphersuite_id|function|int mbedtls_ssl_get_ciphersuite_id( const char *ciphersuite_name )
 DECL|mbedtls_ssl_get_ciphersuite_name|function|const char *mbedtls_ssl_get_ciphersuite_name( const int ciphersuite_id )
+DECL|mbedtls_ssl_get_ciphersuite_sig_alg|function|mbedtls_pk_type_t mbedtls_ssl_get_ciphersuite_sig_alg( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_get_ciphersuite_sig_pk_alg|function|mbedtls_pk_type_t mbedtls_ssl_get_ciphersuite_sig_pk_alg( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_list_ciphersuites|function|const int *mbedtls_ssl_list_ciphersuites( void )
 DECL|mbedtls_ssl_list_ciphersuites|function|const int *mbedtls_ssl_list_ciphersuites( void )

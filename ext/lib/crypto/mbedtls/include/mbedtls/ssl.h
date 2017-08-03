@@ -90,6 +90,8 @@ DECL|MBEDTLS_SSL_CBC_RECORD_SPLITTING_DISABLED|macro|MBEDTLS_SSL_CBC_RECORD_SPLI
 DECL|MBEDTLS_SSL_CBC_RECORD_SPLITTING_ENABLED|macro|MBEDTLS_SSL_CBC_RECORD_SPLITTING_ENABLED
 DECL|MBEDTLS_SSL_CERTIFICATE_REQUEST|enumerator|MBEDTLS_SSL_CERTIFICATE_REQUEST,
 DECL|MBEDTLS_SSL_CERTIFICATE_VERIFY|enumerator|MBEDTLS_SSL_CERTIFICATE_VERIFY,
+DECL|MBEDTLS_SSL_CERT_REQ_CA_LIST_DISABLED|macro|MBEDTLS_SSL_CERT_REQ_CA_LIST_DISABLED
+DECL|MBEDTLS_SSL_CERT_REQ_CA_LIST_ENABLED|macro|MBEDTLS_SSL_CERT_REQ_CA_LIST_ENABLED
 DECL|MBEDTLS_SSL_CERT_TYPE_ECDSA_SIGN|macro|MBEDTLS_SSL_CERT_TYPE_ECDSA_SIGN
 DECL|MBEDTLS_SSL_CERT_TYPE_RSA_SIGN|macro|MBEDTLS_SSL_CERT_TYPE_RSA_SIGN
 DECL|MBEDTLS_SSL_CHANNEL_INBOUND|macro|MBEDTLS_SSL_CHANNEL_INBOUND
@@ -223,6 +225,7 @@ DECL|ca_chain|member|mbedtls_x509_crt *ca_chain; /*!< trusted CAs */
 DECL|ca_crl|member|mbedtls_x509_crl *ca_crl; /*!< trusted CAs CRLs */
 DECL|cbc_record_splitting|member|unsigned int cbc_record_splitting : 1; /*!< do cbc record splitting */
 DECL|cert_profile|member|const mbedtls_x509_crt_profile *cert_profile; /*!< verification profile */
+DECL|cert_req_ca_list|member|unsigned int cert_req_ca_list : 1; /*!< enable sending CA list in
 DECL|ciphersuite_list|member|const int *ciphersuite_list[4]; /*!< allowed ciphersuites per version */
 DECL|ciphersuite|member|int ciphersuite; /*!< chosen ciphersuite */
 DECL|cli_id_len|member|size_t cli_id_len; /*!< length of cli_id */
@@ -278,6 +281,7 @@ DECL|in_msg|member|unsigned char *in_msg; /*!< message contents (in_iv+ivlen) */
 DECL|in_offt|member|unsigned char *in_offt; /*!< read offset in application data */
 DECL|in_window_top|member|uint64_t in_window_top; /*!< last validated record seq_num */
 DECL|in_window|member|uint64_t in_window; /*!< bitmask for replay detection */
+DECL|keep_current_message|member|int keep_current_message; /*!< drop or reuse current message
 DECL|key_cert|member|mbedtls_ssl_key_cert *key_cert; /*!< own certificate/key pair(s) */
 DECL|major_ver|member|int major_ver; /*!< equal to MBEDTLS_SSL_MAJOR_VERSION_3 */
 DECL|master|member|unsigned char master[48]; /*!< the master secret */
@@ -301,6 +305,7 @@ DECL|mbedtls_ssl_send_t|typedef|typedef int mbedtls_ssl_send_t( void *ctx,
 DECL|mbedtls_ssl_session|struct|struct mbedtls_ssl_session
 DECL|mbedtls_ssl_session|typedef|typedef struct mbedtls_ssl_session mbedtls_ssl_session;
 DECL|mbedtls_ssl_set_timer_t|typedef|typedef void mbedtls_ssl_set_timer_t( void * ctx,
+DECL|mbedtls_ssl_sig_hash_set_t|typedef|typedef struct mbedtls_ssl_sig_hash_set_t mbedtls_ssl_sig_hash_set_t;
 DECL|mbedtls_ssl_states|typedef|mbedtls_ssl_states;
 DECL|mbedtls_ssl_ticket_parse_t|typedef|typedef int mbedtls_ssl_ticket_parse_t( void *p_ticket,
 DECL|mbedtls_ssl_ticket_write_t|typedef|typedef int mbedtls_ssl_ticket_write_t( void *p_ticket,
@@ -340,7 +345,6 @@ DECL|psk_identity|member|unsigned char *psk_identity; /*!< identity for PSK nego
 DECL|psk_len|member|size_t psk_len; /*!< length of the pre-shared key */
 DECL|psk|member|unsigned char *psk; /*!< pre-shared key */
 DECL|read_timeout|member|uint32_t read_timeout; /*!< timeout for mbedtls_ssl_read (ms) */
-DECL|record_read|member|int record_read; /*!< record is already present */
 DECL|renego_max_records|member|int renego_max_records; /*!< grace period for renegotiation */
 DECL|renego_period|member|unsigned char renego_period[8]; /*!< value of the record counters
 DECL|renego_records_seen|member|int renego_records_seen; /*!< Records since renego request, or with DTLS,

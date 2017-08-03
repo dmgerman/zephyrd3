@@ -90,7 +90,6 @@ DECL|KU_KEY_ENCIPHERMENT|macro|KU_KEY_ENCIPHERMENT
 DECL|KU_NON_REPUDIATION|macro|KU_NON_REPUDIATION
 DECL|LN_2_DIV_LN_10_SCALE100|macro|LN_2_DIV_LN_10_SCALE100
 DECL|MBEDTLS_COMPAT13_H|macro|MBEDTLS_COMPAT13_H
-DECL|MD_CONTEXT_T_INIT|macro|MD_CONTEXT_T_INIT
 DECL|MEMORY_VERIFY_ALLOC|macro|MEMORY_VERIFY_ALLOC
 DECL|MEMORY_VERIFY_ALWAYS|macro|MEMORY_VERIFY_ALWAYS
 DECL|MEMORY_VERIFY_FREE|macro|MEMORY_VERIFY_FREE
@@ -383,8 +382,6 @@ DECL|POLARSSL_CTR_DRBG_C|macro|POLARSSL_CTR_DRBG_C
 DECL|POLARSSL_CTR_DRBG_H|macro|POLARSSL_CTR_DRBG_H
 DECL|POLARSSL_DEBUG_C|macro|POLARSSL_DEBUG_C
 DECL|POLARSSL_DEBUG_H|macro|POLARSSL_DEBUG_H
-DECL|POLARSSL_DEBUG_LOG_FULL|macro|POLARSSL_DEBUG_LOG_FULL
-DECL|POLARSSL_DEBUG_LOG_RAW|macro|POLARSSL_DEBUG_LOG_RAW
 DECL|POLARSSL_DECRYPT|macro|POLARSSL_DECRYPT
 DECL|POLARSSL_DEPRECATED_REMOVED|macro|POLARSSL_DEPRECATED_REMOVED
 DECL|POLARSSL_DEPRECATED_WARNING|macro|POLARSSL_DEPRECATED_WARNING
@@ -393,14 +390,10 @@ DECL|POLARSSL_DES_C|macro|POLARSSL_DES_C
 DECL|POLARSSL_DES_H|macro|POLARSSL_DES_H
 DECL|POLARSSL_DHM_C|macro|POLARSSL_DHM_C
 DECL|POLARSSL_DHM_H|macro|POLARSSL_DHM_H
-DECL|POLARSSL_DHM_RFC2409_MODP_1024_G|macro|POLARSSL_DHM_RFC2409_MODP_1024_G
-DECL|POLARSSL_DHM_RFC2409_MODP_1024_P|macro|POLARSSL_DHM_RFC2409_MODP_1024_P
 DECL|POLARSSL_DHM_RFC3526_MODP_2048_G|macro|POLARSSL_DHM_RFC3526_MODP_2048_G
 DECL|POLARSSL_DHM_RFC3526_MODP_2048_P|macro|POLARSSL_DHM_RFC3526_MODP_2048_P
 DECL|POLARSSL_DHM_RFC3526_MODP_3072_G|macro|POLARSSL_DHM_RFC3526_MODP_3072_G
 DECL|POLARSSL_DHM_RFC3526_MODP_3072_P|macro|POLARSSL_DHM_RFC3526_MODP_3072_P
-DECL|POLARSSL_DHM_RFC5114_MODP_1024_G|macro|POLARSSL_DHM_RFC5114_MODP_1024_G
-DECL|POLARSSL_DHM_RFC5114_MODP_1024_P|macro|POLARSSL_DHM_RFC5114_MODP_1024_P
 DECL|POLARSSL_DHM_RFC5114_MODP_2048_G|macro|POLARSSL_DHM_RFC5114_MODP_2048_G
 DECL|POLARSSL_DHM_RFC5114_MODP_2048_P|macro|POLARSSL_DHM_RFC5114_MODP_2048_P
 DECL|POLARSSL_ECDH_C|macro|POLARSSL_ECDH_C
@@ -457,7 +450,6 @@ DECL|POLARSSL_ENTROPY_SHA256_ACCUMULATOR|macro|POLARSSL_ENTROPY_SHA256_ACCUMULAT
 DECL|POLARSSL_ENTROPY_SHA512_ACCUMULATOR|macro|POLARSSL_ENTROPY_SHA512_ACCUMULATOR
 DECL|POLARSSL_ERROR_C|macro|POLARSSL_ERROR_C
 DECL|POLARSSL_ERROR_H|macro|POLARSSL_ERROR_H
-DECL|POLARSSL_ERROR_STRERROR_BC|macro|POLARSSL_ERROR_STRERROR_BC
 DECL|POLARSSL_ERROR_STRERROR_DUMMY|macro|POLARSSL_ERROR_STRERROR_DUMMY
 DECL|POLARSSL_ERR_AES_INVALID_INPUT_LENGTH|macro|POLARSSL_ERR_AES_INVALID_INPUT_LENGTH
 DECL|POLARSSL_ERR_AES_INVALID_KEY_LENGTH|macro|POLARSSL_ERR_AES_INVALID_KEY_LENGTH
@@ -514,9 +506,6 @@ DECL|POLARSSL_ERR_HMAC_DRBG_ENTROPY_SOURCE_FAILED|macro|POLARSSL_ERR_HMAC_DRBG_E
 DECL|POLARSSL_ERR_HMAC_DRBG_FILE_IO_ERROR|macro|POLARSSL_ERR_HMAC_DRBG_FILE_IO_ERROR
 DECL|POLARSSL_ERR_HMAC_DRBG_INPUT_TOO_BIG|macro|POLARSSL_ERR_HMAC_DRBG_INPUT_TOO_BIG
 DECL|POLARSSL_ERR_HMAC_DRBG_REQUEST_TOO_BIG|macro|POLARSSL_ERR_HMAC_DRBG_REQUEST_TOO_BIG
-DECL|POLARSSL_ERR_MD2_FILE_IO_ERROR|macro|POLARSSL_ERR_MD2_FILE_IO_ERROR
-DECL|POLARSSL_ERR_MD4_FILE_IO_ERROR|macro|POLARSSL_ERR_MD4_FILE_IO_ERROR
-DECL|POLARSSL_ERR_MD5_FILE_IO_ERROR|macro|POLARSSL_ERR_MD5_FILE_IO_ERROR
 DECL|POLARSSL_ERR_MD_ALLOC_FAILED|macro|POLARSSL_ERR_MD_ALLOC_FAILED
 DECL|POLARSSL_ERR_MD_BAD_INPUT_DATA|macro|POLARSSL_ERR_MD_BAD_INPUT_DATA
 DECL|POLARSSL_ERR_MD_FEATURE_UNAVAILABLE|macro|POLARSSL_ERR_MD_FEATURE_UNAVAILABLE
@@ -544,7 +533,6 @@ DECL|POLARSSL_ERR_NET_WANT_WRITE|macro|POLARSSL_ERR_NET_WANT_WRITE
 DECL|POLARSSL_ERR_OID_BUF_TOO_SMALL|macro|POLARSSL_ERR_OID_BUF_TOO_SMALL
 DECL|POLARSSL_ERR_OID_NOT_FOUND|macro|POLARSSL_ERR_OID_NOT_FOUND
 DECL|POLARSSL_ERR_PADLOCK_DATA_MISALIGNED|macro|POLARSSL_ERR_PADLOCK_DATA_MISALIGNED
-DECL|POLARSSL_ERR_PBKDF2_BAD_INPUT_DATA|macro|POLARSSL_ERR_PBKDF2_BAD_INPUT_DATA
 DECL|POLARSSL_ERR_PEM_BAD_INPUT_DATA|macro|POLARSSL_ERR_PEM_BAD_INPUT_DATA
 DECL|POLARSSL_ERR_PEM_FEATURE_UNAVAILABLE|macro|POLARSSL_ERR_PEM_FEATURE_UNAVAILABLE
 DECL|POLARSSL_ERR_PEM_INVALID_DATA|macro|POLARSSL_ERR_PEM_INVALID_DATA
@@ -576,7 +564,6 @@ DECL|POLARSSL_ERR_PK_SIG_LEN_MISMATCH|macro|POLARSSL_ERR_PK_SIG_LEN_MISMATCH
 DECL|POLARSSL_ERR_PK_TYPE_MISMATCH|macro|POLARSSL_ERR_PK_TYPE_MISMATCH
 DECL|POLARSSL_ERR_PK_UNKNOWN_NAMED_CURVE|macro|POLARSSL_ERR_PK_UNKNOWN_NAMED_CURVE
 DECL|POLARSSL_ERR_PK_UNKNOWN_PK_ALG|macro|POLARSSL_ERR_PK_UNKNOWN_PK_ALG
-DECL|POLARSSL_ERR_RIPEMD160_FILE_IO_ERROR|macro|POLARSSL_ERR_RIPEMD160_FILE_IO_ERROR
 DECL|POLARSSL_ERR_RSA_BAD_INPUT_DATA|macro|POLARSSL_ERR_RSA_BAD_INPUT_DATA
 DECL|POLARSSL_ERR_RSA_INVALID_PADDING|macro|POLARSSL_ERR_RSA_INVALID_PADDING
 DECL|POLARSSL_ERR_RSA_KEY_CHECK_FAILED|macro|POLARSSL_ERR_RSA_KEY_CHECK_FAILED
@@ -586,9 +573,6 @@ DECL|POLARSSL_ERR_RSA_PRIVATE_FAILED|macro|POLARSSL_ERR_RSA_PRIVATE_FAILED
 DECL|POLARSSL_ERR_RSA_PUBLIC_FAILED|macro|POLARSSL_ERR_RSA_PUBLIC_FAILED
 DECL|POLARSSL_ERR_RSA_RNG_FAILED|macro|POLARSSL_ERR_RSA_RNG_FAILED
 DECL|POLARSSL_ERR_RSA_VERIFY_FAILED|macro|POLARSSL_ERR_RSA_VERIFY_FAILED
-DECL|POLARSSL_ERR_SHA1_FILE_IO_ERROR|macro|POLARSSL_ERR_SHA1_FILE_IO_ERROR
-DECL|POLARSSL_ERR_SHA256_FILE_IO_ERROR|macro|POLARSSL_ERR_SHA256_FILE_IO_ERROR
-DECL|POLARSSL_ERR_SHA512_FILE_IO_ERROR|macro|POLARSSL_ERR_SHA512_FILE_IO_ERROR
 DECL|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE_REQUEST|macro|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE_REQUEST
 DECL|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE_VERIFY|macro|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE_VERIFY
 DECL|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE|macro|POLARSSL_ERR_SSL_BAD_HS_CERTIFICATE
@@ -737,9 +721,7 @@ DECL|POLARSSL_MEMORY_ALIGN_MULTIPLE|macro|POLARSSL_MEMORY_ALIGN_MULTIPLE
 DECL|POLARSSL_MEMORY_BACKTRACE|macro|POLARSSL_MEMORY_BACKTRACE
 DECL|POLARSSL_MEMORY_BUFFER_ALLOC_C|macro|POLARSSL_MEMORY_BUFFER_ALLOC_C
 DECL|POLARSSL_MEMORY_BUFFER_ALLOC_H|macro|POLARSSL_MEMORY_BUFFER_ALLOC_H
-DECL|POLARSSL_MEMORY_C|macro|POLARSSL_MEMORY_C
 DECL|POLARSSL_MEMORY_DEBUG|macro|POLARSSL_MEMORY_DEBUG
-DECL|POLARSSL_MEMORY_H|macro|POLARSSL_MEMORY_H
 DECL|POLARSSL_MODE_CBC|macro|POLARSSL_MODE_CBC
 DECL|POLARSSL_MODE_CCM|macro|POLARSSL_MODE_CCM
 DECL|POLARSSL_MODE_CFB|macro|POLARSSL_MODE_CFB
@@ -770,8 +752,6 @@ DECL|POLARSSL_PADDING_ZEROS_AND_LEN|macro|POLARSSL_PADDING_ZEROS_AND_LEN
 DECL|POLARSSL_PADDING_ZEROS|macro|POLARSSL_PADDING_ZEROS
 DECL|POLARSSL_PADLOCK_C|macro|POLARSSL_PADLOCK_C
 DECL|POLARSSL_PADLOCK_H|macro|POLARSSL_PADLOCK_H
-DECL|POLARSSL_PBKDF2_C|macro|POLARSSL_PBKDF2_C
-DECL|POLARSSL_PBKDF2_H|macro|POLARSSL_PBKDF2_H
 DECL|POLARSSL_PEM_H|macro|POLARSSL_PEM_H
 DECL|POLARSSL_PEM_PARSE_C|macro|POLARSSL_PEM_PARSE_C
 DECL|POLARSSL_PEM_WRITE_C|macro|POLARSSL_PEM_WRITE_C
@@ -817,7 +797,6 @@ DECL|POLARSSL_PLATFORM_SNPRINTF_MACRO|macro|POLARSSL_PLATFORM_SNPRINTF_MACRO
 DECL|POLARSSL_PLATFORM_STD_EXIT|macro|POLARSSL_PLATFORM_STD_EXIT
 DECL|POLARSSL_PLATFORM_STD_FPRINTF|macro|POLARSSL_PLATFORM_STD_FPRINTF
 DECL|POLARSSL_PLATFORM_STD_FREE|macro|POLARSSL_PLATFORM_STD_FREE
-DECL|POLARSSL_PLATFORM_STD_MALLOC|macro|POLARSSL_PLATFORM_STD_MALLOC
 DECL|POLARSSL_PLATFORM_STD_MEM_HDR|macro|POLARSSL_PLATFORM_STD_MEM_HDR
 DECL|POLARSSL_PLATFORM_STD_PRINTF|macro|POLARSSL_PLATFORM_STD_PRINTF
 DECL|POLARSSL_PLATFORM_STD_SNPRINTF|macro|POLARSSL_PLATFORM_STD_SNPRINTF
@@ -844,8 +823,6 @@ DECL|POLARSSL_SHA512_ALT|macro|POLARSSL_SHA512_ALT
 DECL|POLARSSL_SHA512_C|macro|POLARSSL_SHA512_C
 DECL|POLARSSL_SHA512_H|macro|POLARSSL_SHA512_H
 DECL|POLARSSL_SHA512_PROCESS_ALT|macro|POLARSSL_SHA512_PROCESS_ALT
-DECL|POLARSSL_SSL_AEAD_RANDOM_IV|macro|POLARSSL_SSL_AEAD_RANDOM_IV
-DECL|POLARSSL_SSL_ALERT_MESSAGES|macro|POLARSSL_SSL_ALERT_MESSAGES
 DECL|POLARSSL_SSL_ALL_ALERT_MESSAGES|macro|POLARSSL_SSL_ALL_ALERT_MESSAGES
 DECL|POLARSSL_SSL_ALPN|macro|POLARSSL_SSL_ALPN
 DECL|POLARSSL_SSL_CACHE_C|macro|POLARSSL_SSL_CACHE_C
@@ -857,7 +834,6 @@ DECL|POLARSSL_SSL_COOKIE_C|macro|POLARSSL_SSL_COOKIE_C
 DECL|POLARSSL_SSL_COOKIE_H|macro|POLARSSL_SSL_COOKIE_H
 DECL|POLARSSL_SSL_COOKIE_TIMEOUT|macro|POLARSSL_SSL_COOKIE_TIMEOUT
 DECL|POLARSSL_SSL_DEBUG_ALL|macro|POLARSSL_SSL_DEBUG_ALL
-DECL|POLARSSL_SSL_DISABLE_RENEGOTIATION|macro|POLARSSL_SSL_DISABLE_RENEGOTIATION
 DECL|POLARSSL_SSL_DTLS_ANTI_REPLAY|macro|POLARSSL_SSL_DTLS_ANTI_REPLAY
 DECL|POLARSSL_SSL_DTLS_BADMAC_LIMIT|macro|POLARSSL_SSL_DTLS_BADMAC_LIMIT
 DECL|POLARSSL_SSL_DTLS_HELLO_VERIFY|macro|POLARSSL_SSL_DTLS_HELLO_VERIFY
@@ -1257,7 +1233,6 @@ DECL|TLS_RSA_WITH_NULL_SHA256|macro|TLS_RSA_WITH_NULL_SHA256
 DECL|TLS_RSA_WITH_NULL_SHA|macro|TLS_RSA_WITH_NULL_SHA
 DECL|TLS_RSA_WITH_RC4_128_MD5|macro|TLS_RSA_WITH_RC4_128_MD5
 DECL|TLS_RSA_WITH_RC4_128_SHA|macro|TLS_RSA_WITH_RC4_128_SHA
-DECL|UL64|macro|UL64
 DECL|X509_CRT_VERSION_1|macro|X509_CRT_VERSION_1
 DECL|X509_CRT_VERSION_2|macro|X509_CRT_VERSION_2
 DECL|X509_CRT_VERSION_3|macro|X509_CRT_VERSION_3
@@ -1281,7 +1256,6 @@ DECL|_ssl_handshake_params|macro|_ssl_handshake_params
 DECL|_ssl_key_cert|macro|_ssl_key_cert
 DECL|_ssl_premaster_secret|macro|_ssl_premaster_secret
 DECL|_ssl_session|macro|_ssl_session
-DECL|_ssl_ticket_keys|macro|_ssl_ticket_keys
 DECL|_ssl_transform|macro|_ssl_transform
 DECL|_x509_crl_entry|macro|_x509_crl_entry
 DECL|_x509_crl|macro|_x509_crl
@@ -1380,7 +1354,6 @@ DECL|cipher_crypt|macro|cipher_crypt
 DECL|cipher_definition_t|macro|cipher_definition_t
 DECL|cipher_definitions|macro|cipher_definitions
 DECL|cipher_finish|macro|cipher_finish
-DECL|cipher_free_ctx|macro|cipher_free_ctx
 DECL|cipher_free|macro|cipher_free
 DECL|cipher_get_block_size|macro|cipher_get_block_size
 DECL|cipher_get_cipher_mode|macro|cipher_get_cipher_mode
@@ -1400,7 +1373,6 @@ DECL|cipher_list|macro|cipher_list
 DECL|cipher_mode_t|macro|cipher_mode_t
 DECL|cipher_padding_t|macro|cipher_padding_t
 DECL|cipher_reset|macro|cipher_reset
-DECL|cipher_self_test|macro|cipher_self_test
 DECL|cipher_set_iv|macro|cipher_set_iv
 DECL|cipher_set_padding_mode|macro|cipher_set_padding_mode
 DECL|cipher_setkey|macro|cipher_setkey
@@ -1410,7 +1382,6 @@ DECL|cipher_update|macro|cipher_update
 DECL|cipher_write_tag|macro|cipher_write_tag
 DECL|ctr_drbg_context|macro|ctr_drbg_context
 DECL|ctr_drbg_free|macro|ctr_drbg_free
-DECL|ctr_drbg_init_entropy_len|macro|ctr_drbg_init_entropy_len
 DECL|ctr_drbg_init|macro|ctr_drbg_init
 DECL|ctr_drbg_random_with_add|macro|ctr_drbg_random_with_add
 DECL|ctr_drbg_random|macro|ctr_drbg_random
@@ -1422,14 +1393,12 @@ DECL|ctr_drbg_set_reseed_interval|macro|ctr_drbg_set_reseed_interval
 DECL|ctr_drbg_update_seed_file|macro|ctr_drbg_update_seed_file
 DECL|ctr_drbg_update|macro|ctr_drbg_update
 DECL|ctr_drbg_write_seed_file|macro|ctr_drbg_write_seed_file
-DECL|debug_fmt|macro|debug_fmt
 DECL|debug_print_buf|macro|debug_print_buf
 DECL|debug_print_crt|macro|debug_print_crt
 DECL|debug_print_ecp|macro|debug_print_ecp
 DECL|debug_print_mpi|macro|debug_print_mpi
 DECL|debug_print_msg|macro|debug_print_msg
 DECL|debug_print_ret|macro|debug_print_ret
-DECL|debug_set_log_mode|macro|debug_set_log_mode
 DECL|debug_set_threshold|macro|debug_set_threshold
 DECL|des3_context|macro|des3_context
 DECL|des3_crypt_cbc|macro|des3_crypt_cbc
@@ -1473,7 +1442,6 @@ DECL|ecdh_make_params|macro|ecdh_make_params
 DECL|ecdh_make_public|macro|ecdh_make_public
 DECL|ecdh_read_params|macro|ecdh_read_params
 DECL|ecdh_read_public|macro|ecdh_read_public
-DECL|ecdh_self_test|macro|ecdh_self_test
 DECL|ecdh_side|macro|ecdh_side
 DECL|ecdsa_context|macro|ecdsa_context
 DECL|ecdsa_free|macro|ecdsa_free
@@ -1482,7 +1450,6 @@ DECL|ecdsa_genkey|macro|ecdsa_genkey
 DECL|ecdsa_info|macro|ecdsa_info
 DECL|ecdsa_init|macro|ecdsa_init
 DECL|ecdsa_read_signature|macro|ecdsa_read_signature
-DECL|ecdsa_self_test|macro|ecdsa_self_test
 DECL|ecdsa_sign_det|macro|ecdsa_sign_det
 DECL|ecdsa_sign|macro|ecdsa_sign
 DECL|ecdsa_verify|macro|ecdsa_verify
@@ -1490,7 +1457,6 @@ DECL|ecdsa_write_signature_det|macro|ecdsa_write_signature_det
 DECL|ecdsa_write_signature|macro|ecdsa_write_signature
 DECL|eckey_info|macro|eckey_info
 DECL|eckeydh_info|macro|eckeydh_info
-DECL|ecp_add|macro|ecp_add
 DECL|ecp_check_privkey|macro|ecp_check_privkey
 DECL|ecp_check_pub_priv|macro|ecp_check_pub_priv
 DECL|ecp_check_pubkey|macro|ecp_check_pubkey
@@ -1506,7 +1472,6 @@ DECL|ecp_group_copy|macro|ecp_group_copy
 DECL|ecp_group_free|macro|ecp_group_free
 DECL|ecp_group_id|macro|ecp_group_id
 DECL|ecp_group_init|macro|ecp_group_init
-DECL|ecp_group_read_string|macro|ecp_group_read_string
 DECL|ecp_group|macro|ecp_group
 DECL|ecp_grp_id_list|macro|ecp_grp_id_list
 DECL|ecp_is_zero|macro|ecp_is_zero
@@ -1522,7 +1487,6 @@ DECL|ecp_point_write_binary|macro|ecp_point_write_binary
 DECL|ecp_point|macro|ecp_point
 DECL|ecp_self_test|macro|ecp_self_test
 DECL|ecp_set_zero|macro|ecp_set_zero
-DECL|ecp_sub|macro|ecp_sub
 DECL|ecp_tls_read_group|macro|ecp_tls_read_group
 DECL|ecp_tls_read_point|macro|ecp_tls_read_point
 DECL|ecp_tls_write_group|macro|ecp_tls_write_group
@@ -1559,7 +1523,6 @@ DECL|havege_random|macro|havege_random
 DECL|havege_state|macro|havege_state
 DECL|hmac_drbg_context|macro|hmac_drbg_context
 DECL|hmac_drbg_free|macro|hmac_drbg_free
-DECL|hmac_drbg_init_buf|macro|hmac_drbg_init_buf
 DECL|hmac_drbg_init|macro|hmac_drbg_init
 DECL|hmac_drbg_random_with_add|macro|hmac_drbg_random_with_add
 DECL|hmac_drbg_random|macro|hmac_drbg_random
@@ -1574,14 +1537,8 @@ DECL|hmac_drbg_write_seed_file|macro|hmac_drbg_write_seed_file
 DECL|hr_time|macro|hr_time
 DECL|key_exchange_type_t|macro|key_exchange_type_t
 DECL|md2_context|macro|md2_context
-DECL|md2_file|macro|md2_file
 DECL|md2_finish|macro|md2_finish
 DECL|md2_free|macro|md2_free
-DECL|md2_hmac_finish|macro|md2_hmac_finish
-DECL|md2_hmac_reset|macro|md2_hmac_reset
-DECL|md2_hmac_starts|macro|md2_hmac_starts
-DECL|md2_hmac_update|macro|md2_hmac_update
-DECL|md2_hmac|macro|md2_hmac
 DECL|md2_info|macro|md2_info
 DECL|md2_init|macro|md2_init
 DECL|md2_process|macro|md2_process
@@ -1590,14 +1547,8 @@ DECL|md2_starts|macro|md2_starts
 DECL|md2_update|macro|md2_update
 DECL|md2|macro|md2
 DECL|md4_context|macro|md4_context
-DECL|md4_file|macro|md4_file
 DECL|md4_finish|macro|md4_finish
 DECL|md4_free|macro|md4_free
-DECL|md4_hmac_finish|macro|md4_hmac_finish
-DECL|md4_hmac_reset|macro|md4_hmac_reset
-DECL|md4_hmac_starts|macro|md4_hmac_starts
-DECL|md4_hmac_update|macro|md4_hmac_update
-DECL|md4_hmac|macro|md4_hmac
 DECL|md4_info|macro|md4_info
 DECL|md4_init|macro|md4_init
 DECL|md4_process|macro|md4_process
@@ -1606,14 +1557,8 @@ DECL|md4_starts|macro|md4_starts
 DECL|md4_update|macro|md4_update
 DECL|md4|macro|md4
 DECL|md5_context|macro|md5_context
-DECL|md5_file|macro|md5_file
 DECL|md5_finish|macro|md5_finish
 DECL|md5_free|macro|md5_free
-DECL|md5_hmac_finish|macro|md5_hmac_finish
-DECL|md5_hmac_reset|macro|md5_hmac_reset
-DECL|md5_hmac_starts|macro|md5_hmac_starts
-DECL|md5_hmac_update|macro|md5_hmac_update
-DECL|md5_hmac|macro|md5_hmac
 DECL|md5_info|macro|md5_info
 DECL|md5_init|macro|md5_init
 DECL|md5_process|macro|md5_process
@@ -1624,7 +1569,6 @@ DECL|md5|macro|md5
 DECL|md_context_t|macro|md_context_t
 DECL|md_file|macro|md_file
 DECL|md_finish|macro|md_finish
-DECL|md_free_ctx|macro|md_free_ctx
 DECL|md_free|macro|md_free
 DECL|md_get_name|macro|md_get_name
 DECL|md_get_size|macro|md_get_size
@@ -1654,7 +1598,6 @@ DECL|memory_buffer_alloc_self_test|macro|memory_buffer_alloc_self_test
 DECL|memory_buffer_alloc_status|macro|memory_buffer_alloc_status
 DECL|memory_buffer_alloc_verify|macro|memory_buffer_alloc_verify
 DECL|memory_buffer_set_verify|macro|memory_buffer_set_verify
-DECL|memory_set_own|macro|memory_set_own
 DECL|mpi_add_abs|macro|mpi_add_abs
 DECL|mpi_add_int|macro|mpi_add_int
 DECL|mpi_add_mpi|macro|mpi_add_mpi
@@ -1730,8 +1673,6 @@ DECL|operation_t|macro|operation_t
 DECL|padlock_supports|macro|padlock_supports
 DECL|padlock_xcryptcbc|macro|padlock_xcryptcbc
 DECL|padlock_xcryptecb|macro|padlock_xcryptecb
-DECL|pbkdf2_hmac|macro|pbkdf2_hmac
-DECL|pbkdf2_self_test|macro|pbkdf2_self_test
 DECL|pem_context|macro|pem_context
 DECL|pem_free|macro|pem_free
 DECL|pem_init|macro|pem_init
@@ -1791,13 +1732,11 @@ DECL|pkcs5_self_test|macro|pkcs5_self_test
 DECL|platform_entropy_poll|macro|platform_entropy_poll
 DECL|platform_set_exit|macro|platform_set_exit
 DECL|platform_set_fprintf|macro|platform_set_fprintf
-DECL|platform_set_malloc_free|macro|platform_set_malloc_free
 DECL|platform_set_printf|macro|platform_set_printf
 DECL|platform_set_snprintf|macro|platform_set_snprintf
 DECL|polarssl_exit|macro|polarssl_exit
 DECL|polarssl_fprintf|macro|polarssl_fprintf
 DECL|polarssl_free|macro|polarssl_free
-DECL|polarssl_malloc|macro|polarssl_malloc
 DECL|polarssl_mutex_free|macro|polarssl_mutex_free
 DECL|polarssl_mutex_init|macro|polarssl_mutex_init
 DECL|polarssl_mutex_lock|macro|polarssl_mutex_lock
@@ -1806,14 +1745,8 @@ DECL|polarssl_printf|macro|polarssl_printf
 DECL|polarssl_snprintf|macro|polarssl_snprintf
 DECL|polarssl_strerror|macro|polarssl_strerror
 DECL|ripemd160_context|macro|ripemd160_context
-DECL|ripemd160_file|macro|ripemd160_file
 DECL|ripemd160_finish|macro|ripemd160_finish
 DECL|ripemd160_free|macro|ripemd160_free
-DECL|ripemd160_hmac_finish|macro|ripemd160_hmac_finish
-DECL|ripemd160_hmac_reset|macro|ripemd160_hmac_reset
-DECL|ripemd160_hmac_starts|macro|ripemd160_hmac_starts
-DECL|ripemd160_hmac_update|macro|ripemd160_hmac_update
-DECL|ripemd160_hmac|macro|ripemd160_hmac
 DECL|ripemd160_info|macro|ripemd160_info
 DECL|ripemd160_init|macro|ripemd160_init
 DECL|ripemd160_process|macro|ripemd160_process
@@ -1828,12 +1761,10 @@ DECL|rsa_check_pub_priv|macro|rsa_check_pub_priv
 DECL|rsa_check_pubkey|macro|rsa_check_pubkey
 DECL|rsa_context|macro|rsa_context
 DECL|rsa_copy|macro|rsa_copy
-DECL|rsa_decrypt_func|macro|rsa_decrypt_func
 DECL|rsa_free|macro|rsa_free
 DECL|rsa_gen_key|macro|rsa_gen_key
 DECL|rsa_info|macro|rsa_info
 DECL|rsa_init|macro|rsa_init
-DECL|rsa_key_len_func|macro|rsa_key_len_func
 DECL|rsa_pkcs1_decrypt|macro|rsa_pkcs1_decrypt
 DECL|rsa_pkcs1_encrypt|macro|rsa_pkcs1_encrypt
 DECL|rsa_pkcs1_sign|macro|rsa_pkcs1_sign
@@ -1851,18 +1782,11 @@ DECL|rsa_rsassa_pss_verify_ext|macro|rsa_rsassa_pss_verify_ext
 DECL|rsa_rsassa_pss_verify|macro|rsa_rsassa_pss_verify
 DECL|rsa_self_test|macro|rsa_self_test
 DECL|rsa_set_padding|macro|rsa_set_padding
-DECL|rsa_sign_func|macro|rsa_sign_func
 DECL|safer_memcmp|macro|safer_memcmp
 DECL|set_alarm|macro|set_alarm
 DECL|sha1_context|macro|sha1_context
-DECL|sha1_file|macro|sha1_file
 DECL|sha1_finish|macro|sha1_finish
 DECL|sha1_free|macro|sha1_free
-DECL|sha1_hmac_finish|macro|sha1_hmac_finish
-DECL|sha1_hmac_reset|macro|sha1_hmac_reset
-DECL|sha1_hmac_starts|macro|sha1_hmac_starts
-DECL|sha1_hmac_update|macro|sha1_hmac_update
-DECL|sha1_hmac|macro|sha1_hmac
 DECL|sha1_info|macro|sha1_info
 DECL|sha1_init|macro|sha1_init
 DECL|sha1_process|macro|sha1_process
@@ -1872,14 +1796,8 @@ DECL|sha1_update|macro|sha1_update
 DECL|sha1|macro|sha1
 DECL|sha224_info|macro|sha224_info
 DECL|sha256_context|macro|sha256_context
-DECL|sha256_file|macro|sha256_file
 DECL|sha256_finish|macro|sha256_finish
 DECL|sha256_free|macro|sha256_free
-DECL|sha256_hmac_finish|macro|sha256_hmac_finish
-DECL|sha256_hmac_reset|macro|sha256_hmac_reset
-DECL|sha256_hmac_starts|macro|sha256_hmac_starts
-DECL|sha256_hmac_update|macro|sha256_hmac_update
-DECL|sha256_hmac|macro|sha256_hmac
 DECL|sha256_info|macro|sha256_info
 DECL|sha256_init|macro|sha256_init
 DECL|sha256_process|macro|sha256_process
@@ -1889,14 +1807,8 @@ DECL|sha256_update|macro|sha256_update
 DECL|sha256|macro|sha256
 DECL|sha384_info|macro|sha384_info
 DECL|sha512_context|macro|sha512_context
-DECL|sha512_file|macro|sha512_file
 DECL|sha512_finish|macro|sha512_finish
 DECL|sha512_free|macro|sha512_free
-DECL|sha512_hmac_finish|macro|sha512_hmac_finish
-DECL|sha512_hmac_reset|macro|sha512_hmac_reset
-DECL|sha512_hmac_starts|macro|sha512_hmac_starts
-DECL|sha512_hmac_update|macro|sha512_hmac_update
-DECL|sha512_hmac|macro|sha512_hmac
 DECL|sha512_info|macro|sha512_info
 DECL|sha512_init|macro|sha512_init
 DECL|sha512_process|macro|sha512_process
@@ -1930,7 +1842,6 @@ DECL|ssl_cookie_set_timeout|macro|ssl_cookie_set_timeout
 DECL|ssl_cookie_setup|macro|ssl_cookie_setup
 DECL|ssl_cookie_write_t|macro|ssl_cookie_write_t
 DECL|ssl_cookie_write|macro|ssl_cookie_write
-DECL|ssl_curve_is_acceptable|macro|ssl_curve_is_acceptable
 DECL|ssl_derive_keys|macro|ssl_derive_keys
 DECL|ssl_dtls_replay_check|macro|ssl_dtls_replay_check
 DECL|ssl_dtls_replay_update|macro|ssl_dtls_replay_update
@@ -2019,8 +1930,6 @@ DECL|ssl_set_hostname|macro|ssl_set_hostname
 DECL|ssl_set_max_frag_len|macro|ssl_set_max_frag_len
 DECL|ssl_set_max_version|macro|ssl_set_max_version
 DECL|ssl_set_min_version|macro|ssl_set_min_version
-DECL|ssl_set_own_cert_alt|macro|ssl_set_own_cert_alt
-DECL|ssl_set_own_cert_rsa|macro|ssl_set_own_cert_rsa
 DECL|ssl_set_own_cert|macro|ssl_set_own_cert
 DECL|ssl_set_psk_cb|macro|ssl_set_psk_cb
 DECL|ssl_set_psk|macro|ssl_set_psk
@@ -2029,7 +1938,6 @@ DECL|ssl_set_renegotiation_period|macro|ssl_set_renegotiation_period
 DECL|ssl_set_renegotiation|macro|ssl_set_renegotiation
 DECL|ssl_set_rng|macro|ssl_set_rng
 DECL|ssl_set_session_cache|macro|ssl_set_session_cache
-DECL|ssl_set_session_ticket_lifetime|macro|ssl_set_session_ticket_lifetime
 DECL|ssl_set_session_tickets|macro|ssl_set_session_tickets
 DECL|ssl_set_session|macro|ssl_set_session
 DECL|ssl_set_sni|macro|ssl_set_sni
@@ -2038,7 +1946,6 @@ DECL|ssl_set_truncated_hmac|macro|ssl_set_truncated_hmac
 DECL|ssl_set_verify|macro|ssl_set_verify
 DECL|ssl_sig_from_pk|macro|ssl_sig_from_pk
 DECL|ssl_states|macro|ssl_states
-DECL|ssl_ticket_keys|macro|ssl_ticket_keys
 DECL|ssl_transform_free|macro|ssl_transform_free
 DECL|ssl_transform|macro|ssl_transform
 DECL|ssl_write_certificate|macro|ssl_write_certificate
@@ -2067,7 +1974,6 @@ DECL|test_cli_crt|macro|test_cli_crt
 DECL|test_cli_key_ec|macro|test_cli_key_ec
 DECL|test_cli_key_rsa|macro|test_cli_key_rsa
 DECL|test_cli_key|macro|test_cli_key
-DECL|test_dhm_params|macro|test_dhm_params
 DECL|test_srv_crt_ec|macro|test_srv_crt_ec
 DECL|test_srv_crt_rsa|macro|test_srv_crt_rsa
 DECL|test_srv_crt|macro|test_srv_crt
@@ -2122,8 +2028,6 @@ DECL|x509_get_sig|macro|x509_get_sig
 DECL|x509_get_time|macro|x509_get_time
 DECL|x509_key_size_helper|macro|x509_key_size_helper
 DECL|x509_name|macro|x509_name
-DECL|x509_oid_get_description|macro|x509_oid_get_description
-DECL|x509_oid_get_numeric_string|macro|x509_oid_get_numeric_string
 DECL|x509_self_test|macro|x509_self_test
 DECL|x509_sequence|macro|x509_sequence
 DECL|x509_serial_gets|macro|x509_serial_gets
