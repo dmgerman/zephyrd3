@@ -150,7 +150,7 @@ DECL|isr_rx_conn_pkt_release|function|isr_rx_conn_pkt_release(struct radio_pdu_n
 DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct radio_pdu_node_tx **tx_release, u8_t *rx_enqueue)
 DECL|isr_rx_conn|function|static inline void isr_rx_conn(u8_t crc_ok, u8_t trx_done, u8_t rssi_ready)
 DECL|isr_rx_scan_check|function|static inline bool isr_rx_scan_check(u8_t irkmatch_ok, u8_t devmatch_ok, u8_t rl_idx)
-DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready)
+DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready, u8_t rl_idx)
 DECL|isr_rx_scan|function|static inline u32_t isr_rx_scan(u8_t devmatch_ok, u8_t devmatch_id,u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rl_idx, u8_t rssi_ready)
 DECL|isr_scan_init_adva_check|function|static inline bool isr_scan_init_adva_check(struct pdu_adv *pdu, u8_t rl_idx)
 DECL|isr_scan_init_check|function|static inline bool isr_scan_init_check(struct pdu_adv *pdu, u8_t rl_idx)

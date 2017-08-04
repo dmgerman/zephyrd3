@@ -3,7 +3,6 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|DEFAULT_RPA_TIMEOUT_MS|macro|DEFAULT_RPA_TIMEOUT_MS
 DECL|LIST_MATCH|macro|LIST_MATCH
 DECL|ctrl_filter_get|function|struct ll_filter *ctrl_filter_get(bool whitelist)
-DECL|ctrl_id_addr_get|function|void ctrl_id_addr_get(u8_t rl_idx, u8_t *id_addr_type, u8_t *id_addr)
 DECL|ctrl_irk_whitelisted|function|bool ctrl_irk_whitelisted(u8_t rl_idx)
 DECL|ctrl_irks_get|function|u8_t *ctrl_irks_get(u8_t *count)
 DECL|ctrl_lrpa_get|function|bt_addr_t *ctrl_lrpa_get(u8_t rl_idx)
@@ -34,6 +33,7 @@ DECL|ll_rl_add|function|u32_t ll_rl_add(bt_addr_le_t *id_addr, const u8_t pirk[1
 DECL|ll_rl_clear|function|u32_t ll_rl_clear(void)
 DECL|ll_rl_enable|function|u32_t ll_rl_enable(u8_t enable)
 DECL|ll_rl_find|function|u8_t ll_rl_find(u8_t id_addr_type, u8_t *id_addr, u8_t *free)
+DECL|ll_rl_id_addr_get|function|void ll_rl_id_addr_get(u8_t rl_idx, u8_t *id_addr_type, u8_t *id_addr)
 DECL|ll_rl_lrpa_get|function|u32_t ll_rl_lrpa_get(bt_addr_le_t *id_addr, bt_addr_t *lrpa)
 DECL|ll_rl_pdu_adv_update|function|void ll_rl_pdu_adv_update(int idx, struct pdu_adv *pdu)
 DECL|ll_rl_prpa_get|function|u32_t ll_rl_prpa_get(bt_addr_le_t *id_addr, bt_addr_t *prpa)
