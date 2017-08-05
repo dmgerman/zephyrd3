@@ -3,6 +3,7 @@ DECL|I2C_REQUEST_READ|macro|I2C_REQUEST_READ
 DECL|I2C_REQUEST_WRITE|macro|I2C_REQUEST_WRITE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|handle_addr|function|static inline void handle_addr(I2C_TypeDef *i2c, struct i2c_stm32_data *data)
+DECL|handle_btf|function|static inline void handle_btf(I2C_TypeDef *i2c, struct i2c_stm32_data *data)
 DECL|handle_rxne|function|static inline void handle_rxne(I2C_TypeDef *i2c, struct i2c_stm32_data *data)
 DECL|handle_sb|function|static inline void handle_sb(I2C_TypeDef *i2c, struct i2c_stm32_data *data)
 DECL|handle_txe|function|static inline void handle_txe(I2C_TypeDef *i2c, struct i2c_stm32_data *data)
