@@ -62,6 +62,7 @@ DECL|handle_dao_ack|function|static enum net_verdict handle_dao_ack(struct net_p
 DECL|handle_dao|function|static enum net_verdict handle_dao(struct net_pkt *pkt)
 DECL|handle_dio|function|static enum net_verdict handle_dio(struct net_pkt *pkt)
 DECL|handle_dis|function|static enum net_verdict handle_dis(struct net_pkt *pkt)
+DECL|is_root|function|static bool is_root(struct net_rpl_instance *instance)
 DECL|lollipop_greater_than|function|static int lollipop_greater_than(int a, int b)
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr)
 DECL|nbr_data|function|static inline struct net_rpl_parent *nbr_data(struct net_nbr *nbr)
