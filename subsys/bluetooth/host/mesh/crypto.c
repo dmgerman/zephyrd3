@@ -9,7 +9,7 @@ DECL|bt_mesh_ccm_encrypt|function|static int bt_mesh_ccm_encrypt(const u8_t key[
 DECL|bt_mesh_fcs_calc|function|u8_t bt_mesh_fcs_calc(const u8_t *data, u8_t data_len)
 DECL|bt_mesh_fcs_check|function|bool bt_mesh_fcs_check(struct net_buf_simple *buf, u8_t received_fcs)
 DECL|bt_mesh_id128|function|int bt_mesh_id128(const u8_t n[16], const char *s, u8_t out[16])
-DECL|bt_mesh_k1|function|int bt_mesh_k1(const u8_t *ikm, size_t ikm_len, const u8_t salt[16], const u8_t *info, size_t info_len, u8_t okm[16])
+DECL|bt_mesh_k1|function|int bt_mesh_k1(const u8_t *ikm, size_t ikm_len, const u8_t salt[16], const char *info, u8_t okm[16])
 DECL|bt_mesh_k2|function|int bt_mesh_k2(const u8_t n[16], const u8_t *p, size_t p_len, u8_t net_id[1], u8_t enc_key[16], u8_t priv_key[16])
 DECL|bt_mesh_k3|function|int bt_mesh_k3(const u8_t n[16], u8_t out[8])
 DECL|bt_mesh_k4|function|int bt_mesh_k4(const u8_t n[16], u8_t out[1])
