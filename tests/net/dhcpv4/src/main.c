@@ -10,7 +10,6 @@ DECL|dhcp_msg|struct|struct dhcp_msg {
 DECL|dst_addr|variable|dst_addr
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main|function|void main(void)
 DECL|net_dhcpv4_context_data|variable|net_dhcpv4_context_data
 DECL|net_dhcpv4_context|struct|struct net_dhcpv4_context {
 DECL|net_dhcpv4_dev_init|function|static int net_dhcpv4_dev_init(struct device *dev)
@@ -28,6 +27,8 @@ DECL|server_addr|variable|server_addr
 DECL|set_ipv4_header|function|static void set_ipv4_header(struct net_pkt *pkt)
 DECL|set_udp_header|function|static void set_udp_header(struct net_pkt *pkt)
 DECL|src_addr|variable|src_addr
+DECL|test_dhcp|function|void test_dhcp(void)
+DECL|test_main|function|void test_main(void)
 DECL|test_result|function|static void test_result(bool pass)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|type|member|u8_t type;
