@@ -8,7 +8,6 @@ DECL|hwaddr|variable|hwaddr
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main|function|void main(void)
 DECL|net_arp_context_data|variable|net_arp_context_data
 DECL|net_arp_context|struct|struct net_arp_context {
 DECL|net_arp_dev_init|function|int net_arp_dev_init(struct device *dev)
@@ -19,7 +18,8 @@ DECL|pending_pkt|variable|pending_pkt
 DECL|prepare_arp_reply|function|static inline struct net_pkt *prepare_arp_reply(struct net_if *iface,struct net_pkt *req, struct net_eth_addr *addr)
 DECL|prepare_arp_request|function|static inline struct net_pkt *prepare_arp_request(struct net_if *iface, struct net_pkt *req, struct net_eth_addr *addr)
 DECL|req_test|variable|req_test
-DECL|run_tests|function|static bool run_tests(void)
+DECL|run_tests|function|void run_tests(void)
 DECL|send_status|variable|send_status
 DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_pkt *pkt, struct net_eth_addr *hwaddr, u16_t type)
+DECL|test_main|function|void test_main(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
