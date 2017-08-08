@@ -137,6 +137,7 @@ DECL|remove_parents|function|static void remove_parents(struct net_if *iface, st
 DECL|route_mcast_rm_cb|function|static void route_mcast_rm_cb(struct net_route_entry_mcast *route, void *user_data)
 DECL|route_rm_cb|function|static void route_rm_cb(struct net_route_entry *entry, void *user_data)
 DECL|rpl_dao_sequence|variable|rpl_dao_sequence
+DECL|rpl_default_iface|variable|rpl_default_iface
 DECL|rpl_default_instance|variable|rpl_default_instance
 DECL|rpl_dio_send_ok|variable|rpl_dio_send_ok
 DECL|rpl_instances|variable|rpl_instances
