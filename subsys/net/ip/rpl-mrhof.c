@@ -10,7 +10,7 @@ DECL|net_rpl_mrhof_best_dag|function|static struct net_rpl_dag *net_rpl_mrhof_be
 DECL|net_rpl_mrhof_best_dag|variable|net_rpl_mrhof_best_dag
 DECL|net_rpl_mrhof_best_parent|function|net_rpl_mrhof_best_parent(struct net_if *iface, struct net_rpl_parent *parent1, struct net_rpl_parent *parent2)
 DECL|net_rpl_mrhof_best_parent|variable|net_rpl_mrhof_best_parent
-DECL|net_rpl_mrhof_calc_rank|function|static u16_t net_rpl_mrhof_calc_rank(struct net_rpl_parent *parent,u16_t base_rank)
+DECL|net_rpl_mrhof_calc_rank|function|static u16_t net_rpl_mrhof_calc_rank(struct net_rpl_parent *parent, u16_t base_rank)
 DECL|net_rpl_mrhof_calc_rank|variable|net_rpl_mrhof_calc_rank
 DECL|net_rpl_mrhof_find|function|static bool net_rpl_mrhof_find(u16_t ocp)
 DECL|net_rpl_mrhof_find|variable|net_rpl_mrhof_find

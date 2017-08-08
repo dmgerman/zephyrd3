@@ -5,10 +5,10 @@ DECL|data_addr_to_fs_settings|function|bool data_addr_to_fs_settings(struct net_
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|generate_addressing_fields|function|u8_t *generate_addressing_fields(struct ieee802154_context *ctx, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params, u8_t *p_buf)
-DECL|generate_aux_security_hdr|function|u8_t *generate_aux_security_hdr(struct ieee802154_security_ctx *sec_ctx, u8_t *p_buf)
+DECL|generate_aux_security_hdr|function|u8_t *generate_aux_security_hdr(struct ieee802154_security_ctx *sec_ctx,u8_t *p_buf)
 DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(u8_t **p_buf, bool ack)
 DECL|get_dst_addr_mode|function|get_dst_addr_mode(struct net_linkaddr *dst, bool *broadcast)
-DECL|ieee802154_compute_header_size|function|u16_t ieee802154_compute_header_size(struct net_if *iface,struct in6_addr *dst)
+DECL|ieee802154_compute_header_size|function|u16_t ieee802154_compute_header_size(struct net_if *iface, struct in6_addr *dst)
 DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struct net_if *iface, struct net_pkt *pkt, u8_t seq)
 DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct ieee802154_context *ctx, struct net_linkaddr *dst, struct net_buf *frag, u8_t reserved_len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct ieee802154_context *ctx,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
