@@ -38,7 +38,6 @@ DECL|eval_msg_unsuback|function|static int eval_msg_unsuback(struct mqtt_test *m
 DECL|expected_len|member|u16_t expected_len;
 DECL|expected|member|u8_t *expected;
 DECL|items|member|int items;
-DECL|main|function|void main(void)
 DECL|mqtt_tests|variable|mqtt_tests
 DECL|mqtt_test|struct|struct mqtt_test {
 DECL|msg_connect1|variable|msg_connect1
@@ -83,13 +82,14 @@ DECL|pubrec1|variable|pubrec1
 DECL|pubrel1|variable|pubrel1
 DECL|qos|member|enum mqtt_qos qos[MAX_TOPICS];
 DECL|qos|member|enum mqtt_qos qos[MAX_TOPICS];
-DECL|run_tests|function|static int run_tests(void)
+DECL|run_tests|function|void run_tests(void)
 DECL|suback1|variable|suback1
 DECL|suback2|variable|suback2
 DECL|suback3|variable|suback3
 DECL|subscribe1|variable|subscribe1
 DECL|subscribe2|variable|subscribe2
 DECL|subscribe3|variable|subscribe3
+DECL|test_main|function|void test_main(void)
 DECL|test_name|member|const char *test_name;
 DECL|test_strlen|function|static size_t test_strlen(const char *str)
 DECL|topics|member|const char *topics[MAX_TOPICS];
