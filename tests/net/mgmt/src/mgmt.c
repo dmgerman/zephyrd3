@@ -10,14 +10,15 @@ DECL|fake_iface_api|variable|fake_iface_api
 DECL|fake_iface_init|function|static void fake_iface_init(struct net_if *iface)
 DECL|fake_iface_send|function|static int fake_iface_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|initialize_event_tests|function|static void initialize_event_tests(void)
-DECL|main|function|void main(void)
 DECL|receiver_cb|function|static void receiver_cb(struct net_mgmt_event_callback *cb,u32_t nm_event, struct net_if *iface)
 DECL|rx_calls|variable|rx_calls
 DECL|rx_cb|variable|rx_cb
 DECL|rx_event|variable|rx_event
 DECL|test_core_event|function|static int test_core_event(u32_t event, bool (*func)(void))
+DECL|test_main|function|void test_main(void)
 DECL|test_mgmt_request|function|static int test_mgmt_request(u32_t mgmt_request, struct net_if *iface, void *data, u32_t len)
-DECL|test_requesting_nm|function|static inline int test_requesting_nm(void)
+DECL|test_mgmt|function|void test_mgmt(void)
+DECL|test_requesting_nm|function|void test_requesting_nm(void)
 DECL|test_sending_event|function|static inline int test_sending_event(u32_t times, bool receiver)
 DECL|test_synchronous_event_listener|function|static int test_synchronous_event_listener(u32_t times, bool on_iface)
 DECL|throw_sleep|variable|throw_sleep
