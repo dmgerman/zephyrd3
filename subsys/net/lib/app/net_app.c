@@ -31,7 +31,7 @@ DECL|dtls_cleanup|function|static void dtls_cleanup(struct net_app_ctx *ctx, boo
 DECL|dtls_cleanup|macro|dtls_cleanup
 DECL|dtls_timeout|function|static void dtls_timeout(struct k_work *work)
 DECL|dtls_timing_get_delay|function|static int dtls_timing_get_delay(void *data)
-DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, u32_t int_ms, u32_t fin_ms)
+DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)
 DECL|net_app_client_foreach|function|void net_app_client_foreach(net_app_ctx_cb_t cb, void *user_data)
 DECL|net_app_close|function|int net_app_close(struct net_app_ctx *ctx)
