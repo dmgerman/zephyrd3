@@ -154,6 +154,7 @@ DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready
 DECL|isr_rx_scan|function|static inline u32_t isr_rx_scan(u8_t devmatch_ok, u8_t devmatch_id,u8_t irkmatch_ok, u8_t irkmatch_id, u8_t rl_idx, u8_t rssi_ready)
 DECL|isr_scan_init_adva_check|function|static inline bool isr_scan_init_adva_check(struct pdu_adv *pdu, u8_t rl_idx)
 DECL|isr_scan_init_check|function|static inline bool isr_scan_init_check(struct pdu_adv *pdu, u8_t rl_idx)
+DECL|isr_scan_rsp_adva_matches|function|static inline bool isr_scan_rsp_adva_matches(struct pdu_adv *srsp)
 DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx)
 DECL|isr|function|static void isr(void)
 DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets)
