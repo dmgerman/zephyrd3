@@ -21,7 +21,6 @@ DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|u16_t local_port;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
-DECL|main|function|void main(void)
 DECL|net_udp_context_data|variable|net_udp_context_data
 DECL|net_udp_context|struct|struct net_udp_context {
 DECL|net_udp_dev_init|function|int net_udp_dev_init(struct device *dev)
@@ -33,7 +32,7 @@ DECL|recv_lock|variable|recv_lock
 DECL|remote_addr|member|const struct sockaddr *remote_addr;
 DECL|remote_port|member|u16_t remote_port;
 DECL|returned_ud|variable|returned_ud
-DECL|run_tests|function|static bool run_tests(void)
+DECL|run_tests|function|void run_tests(void)
 DECL|send_ipv4_udp_msg|function|static bool send_ipv4_udp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_ipv6_udp_long_msg|function|static bool send_ipv6_udp_long_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_ipv6_udp_msg|function|static bool send_ipv6_udp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
@@ -44,6 +43,7 @@ DECL|setup_ipv6_udp_long|function|static void setup_ipv6_udp_long(struct net_pkt
 DECL|setup_ipv6_udp|function|static void setup_ipv6_udp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|test_failed|variable|test_failed
 DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
+DECL|test_main|function|void test_main(void)
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|test|member|char *test;
