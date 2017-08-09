@@ -9,6 +9,10 @@ DECL|CONFIG_NET_APP_PEER_IPV4_ADDR|macro|CONFIG_NET_APP_PEER_IPV4_ADDR
 DECL|CONFIG_NET_APP_PEER_IPV6_ADDR|macro|CONFIG_NET_APP_PEER_IPV6_ADDR
 DECL|CONNECT_TIME|macro|CONNECT_TIME
 DECL|ENDPOINT_LEN|macro|ENDPOINT_LEN
+DECL|LED_GPIO_PIN|macro|LED_GPIO_PIN
+DECL|LED_GPIO_PIN|macro|LED_GPIO_PIN
+DECL|LED_GPIO_PORT|macro|LED_GPIO_PORT
+DECL|LED_GPIO_PORT|macro|LED_GPIO_PORT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
@@ -21,6 +25,10 @@ DECL|device_factory_default_cb|function|static int device_factory_default_cb(u16
 DECL|device_reboot_cb|function|static int device_reboot_cb(u16_t obj_inst_id)
 DECL|firmware_block_received_cb|function|static int firmware_block_received_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
 DECL|firmware_update_cb|function|static int firmware_update_cb(u16_t obj_inst_id)
+DECL|init_led_device|function|static int init_led_device(void)
+DECL|led_dev|variable|led_dev
+DECL|led_on_off_cb|function|static int led_on_off_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
+DECL|led_state|variable|led_state
 DECL|lwm2m_setup|function|static int lwm2m_setup(void)
 DECL|main|function|void main(void)
 DECL|pwrsrc_bat|variable|pwrsrc_bat
