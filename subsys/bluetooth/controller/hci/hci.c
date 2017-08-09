@@ -19,6 +19,7 @@ DECL|disconnect|function|static void disconnect(struct net_buf *buf, struct net_
 DECL|dup_count|variable|dup_count
 DECL|dup_curr|variable|dup_curr
 DECL|dup_filter|variable|dup_filter
+DECL|dup_found|function|static inline bool dup_found(struct pdu_adv *adv)
 DECL|dup|struct|struct dup {
 DECL|enc_refresh_complete|function|static void enc_refresh_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|encode_control|function|static void encode_control(struct radio_pdu_node_rx *node_rx, struct pdu_data *pdu_data, struct net_buf *buf)
