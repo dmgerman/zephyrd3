@@ -4,6 +4,8 @@ DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|MY_PORT|macro|MY_PORT
 DECL|MY_PREFIX_LEN|macro|MY_PREFIX_LEN
 DECL|STACKSIZE|macro|STACKSIZE
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|build_reply_pkt|function|static struct net_pkt *build_reply_pkt(const char *name, struct net_context *context, struct net_pkt *pkt)
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
 DECL|get_context|function|static inline bool get_context(struct net_context **udp_recv6, struct net_context **tcp_recv6, struct net_context **mcast_recv6)
