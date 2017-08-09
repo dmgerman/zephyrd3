@@ -78,6 +78,7 @@ DECL|net_pkt_get_reserve_tx_debug|function|struct net_pkt *net_pkt_get_reserve_t
 DECL|net_pkt_get_reserve_tx|function|struct net_pkt *net_pkt_get_reserve_tx(u16_t reserve_head, s32_t timeout)
 DECL|net_pkt_get_rx_debug|function|struct net_pkt *net_pkt_get_rx_debug(struct net_context *context, s32_t timeout, const char *caller, int line)
 DECL|net_pkt_get_rx|function|struct net_pkt *net_pkt_get_rx(struct net_context *context, s32_t timeout)
+DECL|net_pkt_get_src_addr|function|int net_pkt_get_src_addr(struct net_pkt *pkt, struct sockaddr *addr, socklen_t addrlen)
 DECL|net_pkt_get_tx_debug|function|struct net_pkt *net_pkt_get_tx_debug(struct net_context *context, s32_t timeout, const char *caller, int line)
 DECL|net_pkt_get_tx|function|struct net_pkt *net_pkt_get_tx(struct net_context *context, s32_t timeout)
 DECL|net_pkt_icmp_data|function|struct net_icmp_hdr *net_pkt_icmp_data(struct net_pkt *pkt)
