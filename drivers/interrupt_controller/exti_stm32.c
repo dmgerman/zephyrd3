@@ -4,8 +4,10 @@ DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|EXTI_LINES|macro|EXTI_LINES
+DECL|EXTI_LINES|macro|EXTI_LINES
 DECL|__exti_cb|struct|struct __exti_cb {
 DECL|__stm32_exti_connect_irqs|function|static void __stm32_exti_connect_irqs(struct device *dev)
+DECL|__stm32_exti_isr_0_1|function|static inline void __stm32_exti_isr_0_1(void *arg)
 DECL|__stm32_exti_isr_0|function|static inline void __stm32_exti_isr_0(void *arg)
 DECL|__stm32_exti_isr_15_10|function|static inline void __stm32_exti_isr_15_10(void *arg)
 DECL|__stm32_exti_isr_16|function|static inline void __stm32_exti_isr_16(void *arg)
@@ -14,8 +16,10 @@ DECL|__stm32_exti_isr_18|function|static inline void __stm32_exti_isr_18(void *a
 DECL|__stm32_exti_isr_1|function|static inline void __stm32_exti_isr_1(void *arg)
 DECL|__stm32_exti_isr_21|function|static inline void __stm32_exti_isr_21(void *arg)
 DECL|__stm32_exti_isr_22|function|static inline void __stm32_exti_isr_22(void *arg)
+DECL|__stm32_exti_isr_2_3|function|static inline void __stm32_exti_isr_2_3(void *arg)
 DECL|__stm32_exti_isr_2|function|static inline void __stm32_exti_isr_2(void *arg)
 DECL|__stm32_exti_isr_3|function|static inline void __stm32_exti_isr_3(void *arg)
+DECL|__stm32_exti_isr_4_15|function|static inline void __stm32_exti_isr_4_15(void *arg)
 DECL|__stm32_exti_isr_4|function|static inline void __stm32_exti_isr_4(void *arg)
 DECL|__stm32_exti_isr_9_5|function|static inline void __stm32_exti_isr_9_5(void *arg)
 DECL|__stm32_exti_isr|function|static void __stm32_exti_isr(int min, int max, void *arg)
