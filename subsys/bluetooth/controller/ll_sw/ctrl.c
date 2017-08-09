@@ -239,7 +239,7 @@ DECL|prepare_pdu_data_tx|function|static void prepare_pdu_data_tx(struct connect
 DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op_context)
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
-DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BLUETOOTH_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
+DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BT_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
 DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)

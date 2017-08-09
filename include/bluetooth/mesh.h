@@ -148,7 +148,7 @@ DECL|func|member|void (*const func)(struct bt_mesh_model *model,
 DECL|func|member|void (*func)(struct bt_mesh_model *mod);
 DECL|func|member|void (*func)(u8_t hops, u16_t feat);
 DECL|gatt_proxy|member|u8_t gatt_proxy; /* GATT Proxy state */
-DECL|groups|member|u16_t groups[CONFIG_BLUETOOTH_MESH_MODEL_GROUP_COUNT];
+DECL|groups|member|u16_t groups[CONFIG_BT_MESH_MODEL_GROUP_COUNT];
 DECL|hb_pub|member|} hb_pub;
 DECL|hb_sub|member|} hb_sub;
 DECL|id|member|const u16_t id;
@@ -156,7 +156,7 @@ DECL|id|member|u16_t id;
 DECL|input_actions|member|u16_t input_actions;
 DECL|input_size|member|u8_t input_size;
 DECL|input|member|int (*input)(bt_mesh_input_action act, u8_t size);
-DECL|keys|member|u16_t keys[CONFIG_BLUETOOTH_MESH_MODEL_KEY_COUNT];
+DECL|keys|member|u16_t keys[CONFIG_BT_MESH_MODEL_KEY_COUNT];
 DECL|key|member|u16_t key; /* Publish AppKey Index */
 DECL|loc|member|const u16_t loc;
 DECL|max_hops|member|u8_t max_hops;

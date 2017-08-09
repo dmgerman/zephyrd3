@@ -25,7 +25,7 @@ DECL|bt_mesh_trans_init|function|void bt_mesh_trans_init(void)
 DECL|bt_mesh_trans_recv|function|int bt_mesh_trans_recv(struct net_buf_simple *buf, struct bt_mesh_net_rx *rx)
 DECL|bt_mesh_trans_send|function|int bt_mesh_trans_send(struct bt_mesh_net_tx *tx, struct net_buf_simple *msg, bt_mesh_cb_t cb, void *cb_data)
 DECL|bt_mesh_tx_in_progress|function|bool bt_mesh_tx_in_progress(void)
-DECL|buf_data|member|u8_t buf_data[CONFIG_BLUETOOTH_MESH_RX_SDU_MAX];
+DECL|buf_data|member|u8_t buf_data[CONFIG_BT_MESH_RX_SDU_MAX];
 DECL|buf|member|struct net_buf_simple buf;
 DECL|cb_data|member|void *cb_data;
 DECL|cb|member|bt_mesh_cb_t cb;

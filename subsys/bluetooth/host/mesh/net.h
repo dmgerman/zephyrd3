@@ -25,7 +25,7 @@ DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|__packed|enum|enum __packed {
 DECL|addr|member|u16_t addr;
 DECL|app_idx|member|u16_t app_idx;
-DECL|app_keys|member|struct bt_mesh_app_key app_keys[CONFIG_BLUETOOTH_MESH_APP_KEY_COUNT];
+DECL|app_keys|member|struct bt_mesh_app_key app_keys[CONFIG_BT_MESH_APP_KEY_COUNT];
 DECL|auth|member|u8_t auth[8]; /* Beacon Authentication Value */
 DECL|beacon_sent|member|s64_t beacon_sent; /* Time stamp of last sent beacon */
 DECL|beacons_cur|member|u8_t beacons_cur; /* Number of beaconds observed during
@@ -103,7 +103,7 @@ DECL|queue|member|struct k_fifo queue;
 DECL|recv_delay|member|u8_t recv_delay;
 DECL|recv_win|member|u8_t recv_win;
 DECL|req_attempts|member|u8_t req_attempts; /* Number of Request attempts */
-DECL|rpl|member|struct bt_mesh_rpl rpl[CONFIG_BLUETOOTH_MESH_CRPL];
+DECL|rpl|member|struct bt_mesh_rpl rpl[CONFIG_BT_MESH_CRPL];
 DECL|rssi|member|s8_t rssi;
 DECL|rssi|member|s8_t rssi;
 DECL|send_last|member|send_last:1,
@@ -118,7 +118,7 @@ DECL|src|member|u16_t src;
 DECL|state|member|} state;
 DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet *sub;
-DECL|sub|member|struct bt_mesh_subnet sub[CONFIG_BLUETOOTH_MESH_SUBNET_COUNT];
+DECL|sub|member|struct bt_mesh_subnet sub[CONFIG_BT_MESH_SUBNET_COUNT];
 DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|updated|member|bool updated;

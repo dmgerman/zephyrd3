@@ -1,1 +1,2 @@
-Unmatched braces in function declaration
+DECL|CONFIG_BT_HCI_TX_PRIO|variable|CONFIG_BT_HCI_TX_PRIO
+DECL|CONFIG_BT_RX_PRIO|variable|CONFIG_BT_RX_PRIO

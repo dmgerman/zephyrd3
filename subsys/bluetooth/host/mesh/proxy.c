@@ -50,7 +50,7 @@ DECL|filter_add|function|static void filter_add(struct bt_mesh_proxy_client *cli
 DECL|filter_remove|function|static void filter_remove(struct bt_mesh_proxy_client *client, u16_t addr)
 DECL|filter_set|function|static int filter_set(struct bt_mesh_proxy_client *client, struct net_buf_simple *buf)
 DECL|filter_type|member|} filter_type;
-DECL|filter|member|u16_t filter[CONFIG_BLUETOOTH_MESH_PROXY_FILTER_SIZE];
+DECL|filter|member|u16_t filter[CONFIG_BT_MESH_PROXY_FILTER_SIZE];
 DECL|find_client|function|static struct bt_mesh_proxy_client *find_client(struct bt_conn *conn)
 DECL|gatt_proxy_advertise|function|static s32_t gatt_proxy_advertise(void)
 DECL|gatt_svc|variable|gatt_svc
