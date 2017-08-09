@@ -32,8 +32,10 @@ DECL|inet_pton|macro|inet_pton
 DECL|listen|macro|listen
 DECL|pollfd|macro|pollfd
 DECL|poll|macro|poll
+DECL|recvfrom|macro|recvfrom
 DECL|recv|macro|recv
 DECL|revents|member|short revents;
+DECL|sendto|macro|sendto
 DECL|send|macro|send
 DECL|socket|macro|socket
 DECL|zsock_addrinfo|struct|struct zsock_addrinfo {
