@@ -37,7 +37,6 @@ DECL|ipv6_pton_4|variable|ipv6_pton_4
 DECL|ipv6_pton_5|variable|ipv6_pton_5
 DECL|ipv6_pton_6|variable|ipv6_pton_6
 DECL|ipv6|member|} ipv6;
-DECL|main|function|void main(void)
 DECL|name|member|const char *name;
 DECL|net_addr_test_data|struct|struct net_addr_test_data {
 DECL|pkt1|variable|pkt1
@@ -46,8 +45,9 @@ DECL|pkt3|variable|pkt3
 DECL|pkt4|variable|pkt4
 DECL|pkt5|variable|pkt5
 DECL|pton|member|bool pton;
-DECL|run_net_addr_tests|function|static bool run_net_addr_tests(void)
-DECL|run_tests|function|static bool run_tests(void)
+DECL|run_net_addr_tests|function|void run_net_addr_tests(void)
+DECL|run_tests|function|void run_tests(void)
+DECL|test_main|function|void test_main(void)
 DECL|test_net_addr|function|static bool test_net_addr(struct net_addr_test_data *data)
 DECL|tests|variable|tests
 DECL|verify|member|struct in6_addr verify;
