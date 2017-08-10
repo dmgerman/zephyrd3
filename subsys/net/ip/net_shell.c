@@ -32,6 +32,7 @@ DECL|get_my_ipv4_addr|function|static void get_my_ipv4_addr(struct net_if *iface
 DECL|get_my_ipv6_addr|function|static void get_my_ipv6_addr(struct net_if *iface, struct sockaddr *myaddr)
 DECL|http_server_cb|function|static void http_server_cb(struct http_server_ctx *entry, void *user_data)
 DECL|http_str_output|function|static char *http_str_output(char *output, int outlen, const char *str, int len)
+DECL|iface2str|function|static const char *iface2str(struct net_if *iface, const char **extra)
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
