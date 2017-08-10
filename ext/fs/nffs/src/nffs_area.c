@@ -1,0 +1,7 @@
+DECL|nffs_area_find_corrupt_scratch|function|nffs_area_find_corrupt_scratch(uint16_t *out_good_idx, uint16_t *out_bad_idx)
+DECL|nffs_area_free_space|function|nffs_area_free_space(const struct nffs_area *area)
+DECL|nffs_area_is_current_version|function|nffs_area_is_current_version(const struct nffs_disk_area *disk_area)
+DECL|nffs_area_is_scratch|function|nffs_area_is_scratch(const struct nffs_disk_area *disk_area)
+DECL|nffs_area_magic_is_set|function|nffs_area_magic_is_set(const struct nffs_disk_area *disk_area)
+DECL|nffs_area_set_magic|function|nffs_area_set_magic(struct nffs_disk_area *disk_area)
+DECL|nffs_area_to_disk|function|nffs_area_to_disk(const struct nffs_area *area, struct nffs_disk_area *out_disk_area)

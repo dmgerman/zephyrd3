@@ -1,0 +1,5 @@
+DECL|nffs_dir_alloc|function|nffs_dir_alloc(void)
+DECL|nffs_dir_close|function|nffs_dir_close(struct nffs_dir *dir)
+DECL|nffs_dir_free|function|nffs_dir_free(struct nffs_dir *dir)
+DECL|nffs_dir_open|function|nffs_dir_open(const char *path, struct nffs_dir **out_dir)
+DECL|nffs_dir_read|function|nffs_dir_read(struct nffs_dir *dir, struct nffs_dirent **out_dirent)

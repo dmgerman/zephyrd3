@@ -1,0 +1,8 @@
+DECL|nffs_path_find_child|function|nffs_path_find_child(struct nffs_inode_entry *parent, const char *name, int name_len, struct nffs_inode_entry **out_inode_entry)
+DECL|nffs_path_find_inode_entry|function|nffs_path_find_inode_entry(const char *filename, struct nffs_inode_entry **out_inode_entry)
+DECL|nffs_path_find|function|nffs_path_find(struct nffs_path_parser *parser, struct nffs_inode_entry **out_inode_entry, struct nffs_inode_entry **out_parent)
+DECL|nffs_path_new_dir|function|nffs_path_new_dir(const char *path, struct nffs_inode_entry **out_inode_entry)
+DECL|nffs_path_parse_next|function|nffs_path_parse_next(struct nffs_path_parser *parser)
+DECL|nffs_path_parser_new|function|nffs_path_parser_new(struct nffs_path_parser *parser, const char *path)
+DECL|nffs_path_rename|function|nffs_path_rename(const char *from, const char *to)
+DECL|nffs_path_unlink|function|nffs_path_unlink(const char *path)

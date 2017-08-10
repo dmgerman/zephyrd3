@@ -1,0 +1,5 @@
+DECL|nffs_write_append|function|nffs_write_append(struct nffs_cache_inode *cache_inode, const void *data, uint16_t len)
+DECL|nffs_write_chunk|function|nffs_write_chunk(struct nffs_inode_entry *inode_entry, uint32_t file_offset, const void *data, uint16_t data_len)
+DECL|nffs_write_fill_crc16_overwrite|function|nffs_write_fill_crc16_overwrite(struct nffs_disk_block *disk_block, uint8_t src_area_idx, uint32_t src_area_offset, uint16_t left_copy_len, uint16_t right_copy_len, const void *new_data, uint16_t new_data_len)
+DECL|nffs_write_over_block|function|nffs_write_over_block(struct nffs_hash_entry *entry, uint16_t left_copy_len, const void *new_data, uint16_t new_data_len)
+DECL|nffs_write_to_file|function|nffs_write_to_file(struct nffs_file *file, const void *data, int len)
