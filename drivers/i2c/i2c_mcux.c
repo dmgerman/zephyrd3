@@ -2,9 +2,9 @@ DECL|DEV_BASE|macro|DEV_BASE
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|base|member|I2C_Type *base;
+DECL|bitrate|member|u32_t bitrate;
 DECL|callback_status|member|status_t callback_status;
 DECL|clock_source|member|clock_name_t clock_source;
-DECL|default_cfg|member|union dev_config default_cfg;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|handle|member|i2c_master_handle_t handle;
 DECL|i2c_mcux_config_0|variable|i2c_mcux_config_0
