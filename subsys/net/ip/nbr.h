@@ -13,6 +13,7 @@ DECL|extra_data_size|member|const u16_t extra_data_size;
 DECL|idx|member|u8_t idx;
 DECL|iface|member|struct net_if *iface;
 DECL|lladdr|member|struct net_linkaddr_storage lladdr;
+DECL|nbr_count|member|const u16_t nbr_count;
 DECL|nbr|member|struct net_nbr *nbr;
 DECL|net_nbr_extra_data|function|static inline void *net_nbr_extra_data(struct net_nbr *nbr)
 DECL|net_nbr_lladdr|struct|struct net_nbr_lladdr {
