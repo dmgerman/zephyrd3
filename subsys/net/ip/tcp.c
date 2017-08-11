@@ -10,7 +10,7 @@ DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|abort_connection|function|static void abort_connection(struct net_tcp *tcp)
 DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack|member|u32_t ack;
-DECL|do_ref_if_needed|function|static inline void do_ref_if_needed(struct net_pkt *pkt)
+DECL|do_ref_if_needed|macro|do_ref_if_needed
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
 DECL|fin_timer_cancel|function|static void fin_timer_cancel(struct net_tcp *tcp)
 DECL|finalize_segment|function|static int finalize_segment(struct net_context *context, struct net_pkt *pkt)
