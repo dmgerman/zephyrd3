@@ -70,4 +70,5 @@ DECL|tcp_connected|function|static void tcp_connected(struct net_context *contex
 DECL|tcp_connect|function|static int tcp_connect(char *host, u16_t port, struct net_context **ctx)
 DECL|tcp_ctx|variable|tcp_ctx
 DECL|tcp_sent_cb|function|static void tcp_sent_cb(struct net_context *context,int status, void *token, void *user_data)
+DECL|tcp_sent_list_cb|function|static void tcp_sent_list_cb(struct net_tcp *tcp, void *user_data)
 DECL|tx_slabs|member|struct k_mem_slab *tx_slabs[CONFIG_NET_MAX_CONTEXTS];
