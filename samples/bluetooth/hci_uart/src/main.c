@@ -9,7 +9,7 @@ DECL|H4_EVT|macro|H4_EVT
 DECL|H4_SCO|macro|H4_SCO
 DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
 DECL|TX_BUF_COUNT|macro|TX_BUF_COUNT
-DECL|bt_controller_assert_handle|function|void bt_controller_assert_handle(char *file, u32_t line)
+DECL|bt_ctlr_assert_handle|function|void bt_ctlr_assert_handle(char *file, u32_t line)
 DECL|bt_uart_isr|function|static void bt_uart_isr(struct device *unused)
 DECL|h4_acl_recv|function|static struct net_buf *h4_acl_recv(int *remaining)
 DECL|h4_cmd_recv|function|static struct net_buf *h4_cmd_recv(int *remaining)

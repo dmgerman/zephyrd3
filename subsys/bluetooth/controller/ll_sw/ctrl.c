@@ -160,7 +160,7 @@ DECL|isr_scan_rsp_adva_matches|function|static inline bool isr_scan_rsp_adva_mat
 DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx, bool *dir_report)
 DECL|isr_scan_tgta_rpa_check|function|static inline bool isr_scan_tgta_rpa_check(struct pdu_adv *pdu, bool *dir_report)
 DECL|isr|function|static void isr(void)
-DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CONTROLLER_PHY */ static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_rx_time, u16_t eff_tx_octets,
+DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CTLR_PHY */ static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_rx_time, u16_t eff_tx_octets,
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
 DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
@@ -242,7 +242,7 @@ DECL|prepare_pdu_data_tx|function|static void prepare_pdu_data_tx(struct connect
 DECL|prepare_reduced|function|static void prepare_reduced(u32_t status, void *op_context)
 DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
-DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BT_CONTROLLER_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
+DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BT_CTLR_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
 DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)
