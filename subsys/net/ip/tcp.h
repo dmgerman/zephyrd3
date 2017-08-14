@@ -67,4 +67,4 @@ DECL|send_seq|member|u32_t send_seq;
 DECL|sent_ack|member|u32_t sent_ack;
 DECL|sent_list|member|sys_slist_t sent_list;
 DECL|state|member|u32_t state : 4;
-DECL|tcp_init_isn|function|inline u32_t tcp_init_isn(void)
+DECL|tcp_init_isn|function|static inline u32_t tcp_init_isn(void)
