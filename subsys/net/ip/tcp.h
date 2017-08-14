@@ -46,14 +46,14 @@ DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|flags|member|u32_t flags : 8;
 DECL|net_tcp_cb_t|typedef|typedef void (*net_tcp_cb_t)(struct net_tcp *tcp, void *user_data);
 DECL|net_tcp_change_state|macro|net_tcp_change_state
-DECL|net_tcp_get_chksum|macro|net_tcp_get_chksum
-DECL|net_tcp_get_hdr|macro|net_tcp_get_hdr
+DECL|net_tcp_get_chksum|function|static inline u16_t net_tcp_get_chksum(struct net_pkt *pkt, struct net_buf *frag)
+DECL|net_tcp_get_hdr|function|static inline struct net_tcp_hdr *net_tcp_get_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
 DECL|net_tcp_register|function|static inline int net_tcp_register(const struct sockaddr *remote_addr, const struct sockaddr *local_addr, u16_t remote_port, u16_t local_port, net_conn_cb_t cb,
-DECL|net_tcp_set_chksum|macro|net_tcp_set_chksum
-DECL|net_tcp_set_hdr|macro|net_tcp_set_hdr
+DECL|net_tcp_set_chksum|function|static inline struct net_buf *net_tcp_set_chksum(struct net_pkt *pkt, struct net_buf *frag)
+DECL|net_tcp_set_hdr|function|static inline struct net_tcp_hdr *net_tcp_set_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
 DECL|net_tcp|struct|struct net_tcp {
