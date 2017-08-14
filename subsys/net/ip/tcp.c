@@ -39,7 +39,7 @@ DECL|net_tcp_send_pkt|function|int net_tcp_send_pkt(struct net_pkt *pkt)
 DECL|net_tcp_set_chksum|function|struct net_buf *net_tcp_set_chksum(struct net_pkt *pkt, struct net_buf *frag)
 DECL|net_tcp_set_hdr|function|struct net_tcp_hdr *net_tcp_set_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_set_syn_opt|function|static void net_tcp_set_syn_opt(struct net_tcp *tcp, u8_t *options,u8_t *optionlen)
-DECL|net_tcp_state_str|function|const char * const net_tcp_state_str(enum net_tcp_state state)
+DECL|net_tcp_state_str|function|const char *net_tcp_state_str(enum net_tcp_state state)
 DECL|net_tcp_trace|function|static void net_tcp_trace(struct net_pkt *pkt, struct net_tcp *tcp)
 DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|net_tcp_validate_seq|function|bool net_tcp_validate_seq(struct net_tcp *tcp, struct net_pkt *pkt)
