@@ -140,7 +140,6 @@ DECL|tid|member|k_tid_t tid;
 DECL|tid|member|k_tid_t tid;
 DECL|timeout|member|s32_t timeout;
 DECL|timeout|member|s32_t timeout;
-DECL|timer_cancelled|member|u8_t timer_cancelled;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|tx_fifo|member|struct k_fifo tx_fifo;
 DECL|tx_sem|member|struct k_sem tx_sem;

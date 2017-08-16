@@ -38,7 +38,6 @@ DECL|dtls|member|} dtls;
 DECL|entropy_src_cb|member|net_app_entropy_src_cb_t entropy_src_cb;
 DECL|entropy|member|mbedtls_entropy_context entropy;
 DECL|fin_ms|member|u32_t fin_ms;
-DECL|fin_timer_cancelled|member|bool fin_timer_cancelled;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|frag|member|struct net_buf *frag;
 DECL|int_ms|member|u32_t int_ms;
