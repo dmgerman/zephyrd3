@@ -122,6 +122,7 @@ DECL|set_event_mask_page_2|function|static void set_event_mask_page_2(struct net
 DECL|set_event_mask|function|static void set_event_mask(struct net_buf *buf, struct net_buf **evt)
 DECL|status_cmd_handle|function|static int status_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|vendor_cmd_handle|function|static int vendor_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|vs_read_static_addrs|function|static void vs_read_static_addrs(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_supported_commands|function|static void vs_read_supported_commands(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_supported_features|function|static void vs_read_supported_features(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_version_info|function|static void vs_read_version_info(struct net_buf *buf, struct net_buf **evt)
