@@ -4,7 +4,7 @@ DECL|NET_PKT_DATA_POOL_DEFINE|macro|NET_PKT_DATA_POOL_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
 DECL|__NET_PKT_H__|macro|__NET_PKT_H__
 DECL|_reserved|member|int _reserved;
-DECL|_unused|member|u8_t _unused : 4;
+DECL|_unused|member|u8_t _unused : 3;
 DECL|appdatalen|member|u16_t appdatalen;
 DECL|appdata|member|u8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
@@ -81,6 +81,7 @@ DECL|net_pkt_ll|function|static inline u8_t *net_pkt_ll(struct net_pkt *pkt)
 DECL|net_pkt_next_hdr|function|static inline u8_t *net_pkt_next_hdr(struct net_pkt *pkt)
 DECL|net_pkt_print_frags|macro|net_pkt_print_frags
 DECL|net_pkt_print|macro|net_pkt_print
+DECL|net_pkt_queued|function|static inline u8_t net_pkt_queued(struct net_pkt *pkt)
 DECL|net_pkt_ref|macro|net_pkt_ref
 DECL|net_pkt_sent|function|static inline u8_t net_pkt_sent(struct net_pkt *pkt)
 DECL|net_pkt_set_appdatalen|function|static inline void net_pkt_set_appdatalen(struct net_pkt *pkt, u16_t len)
@@ -102,6 +103,7 @@ DECL|net_pkt_set_ipv6_hdr_prev|function|static inline void net_pkt_set_ipv6_hdr_
 DECL|net_pkt_set_ipv6_hop_limit|function|static inline void net_pkt_set_ipv6_hop_limit(struct net_pkt *pkt, u8_t hop_limit)
 DECL|net_pkt_set_ll_reserve|function|static inline void net_pkt_set_ll_reserve(struct net_pkt *pkt, u8_t len)
 DECL|net_pkt_set_next_hdr|function|static inline void net_pkt_set_next_hdr(struct net_pkt *pkt, u8_t *hdr)
+DECL|net_pkt_set_queued|function|static inline void net_pkt_set_queued(struct net_pkt *pkt, bool send)
 DECL|net_pkt_set_sent|function|static inline void net_pkt_set_sent(struct net_pkt *pkt, bool sent)
 DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_addr(struct net_pkt *pkt)
 DECL|net_pkt_set_token|function|static inline void net_pkt_set_token(struct net_pkt *pkt, void *token)
@@ -112,6 +114,7 @@ DECL|net_pkt_write_be32|function|static inline struct net_buf *net_pkt_write_be3
 DECL|net_pkt_write_u8|function|static inline struct net_buf *net_pkt_write_u8(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u8_t data)
 DECL|net_pkt|struct|struct net_pkt {
 DECL|next_hdr|member|u8_t *next_hdr; /* where is the next header */
+DECL|pkt_queued|member|u8_t pkt_queued: 1; /* For outgoing packet: is this packet queued
 DECL|ref|member|u8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;
 DECL|sent_or_eof|member|u8_t sent_or_eof: 1; /* For outgoing packet: is this sent or not
