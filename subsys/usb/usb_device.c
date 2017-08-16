@@ -7,6 +7,7 @@ DECL|ENDP_DESC_bEndpointAddress|macro|ENDP_DESC_bEndpointAddress
 DECL|ENDP_DESC_bmAttributes|macro|ENDP_DESC_bmAttributes
 DECL|ENDP_DESC_wMaxPacketSize|macro|ENDP_DESC_wMaxPacketSize
 DECL|INTF_DESC_bAlternateSetting|macro|INTF_DESC_bAlternateSetting
+DECL|INTF_DESC_bInterfaceNumber|macro|INTF_DESC_bInterfaceNumber
 DECL|MAX_DESC_HANDLERS|macro|MAX_DESC_HANDLERS
 DECL|MAX_NUM_REQ_HANDLERS|macro|MAX_NUM_REQ_HANDLERS
 DECL|MAX_STD_REQ_MSG_SIZE|macro|MAX_STD_REQ_MSG_SIZE
@@ -51,5 +52,6 @@ DECL|usb_register_request_handler|function|static void usb_register_request_hand
 DECL|usb_register_status_callback|function|static void usb_register_status_callback(usb_status_callback cb)
 DECL|usb_set_configuration|function|static bool usb_set_configuration(u8_t config_index, u8_t alt_setting)
 DECL|usb_set_config|function|int usb_set_config(struct usb_cfg_data *config)
+DECL|usb_set_interface|function|static bool usb_set_interface(u8_t iface, u8_t alt_setting)
 DECL|usb_vbus_set|function|static int usb_vbus_set(bool on)
 DECL|usb_write|function|int usb_write(u8_t ep, const u8_t *data, u32_t data_len,u32_t *bytes_ret)
