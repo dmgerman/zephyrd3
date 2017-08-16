@@ -13,7 +13,9 @@ DECL|RETRANS_TIMER|macro|RETRANS_TIMER
 DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
+DECL|add_route|function|static struct net_route_entry *add_route(struct net_if *iface, struct in6_addr *addr, u8_t prefix_len)
 DECL|cb|member|net_nbr_cb_t cb;
+DECL|check_route|function|static struct in6_addr *check_route(struct net_if *iface, struct in6_addr *dst, bool *try_route)
 DECL|check_unknown_option|function|static inline struct net_pkt *check_unknown_option(struct net_pkt *pkt, u8_t opt_type, u16_t length)
 DECL|create_mldv2|function|static struct net_pkt *create_mldv2(struct net_pkt *pkt, const struct in6_addr *addr, u16_t record_type, u8_t num_sources)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
@@ -100,8 +102,10 @@ DECL|net_is_router|function|static inline bool net_is_router(struct net_pkt *pkt
 DECL|net_is_solicited|function|static inline bool net_is_solicited(struct net_pkt *pkt)
 DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
+DECL|no_route_info|function|static void no_route_info(struct net_pkt *pkt, struct in6_addr *src, struct in6_addr *dst)
 DECL|ns_input_handler|variable|ns_input_handler
 DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
+DECL|ns_routing_info|function|static void ns_routing_info(struct net_pkt *pkt, struct in6_addr *nexthop, struct in6_addr *tgt)
 DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_pkt *pkt, struct net_ipv6_hdr *ipv6)
 DECL|ra_input_handler|variable|ra_input_handler
 DECL|reassemble_packet|function|static void reassemble_packet(struct net_ipv6_reassembly *reass)
@@ -112,6 +116,7 @@ DECL|reassembly_init_done|variable|reassembly_init_done
 DECL|reassembly_timeout|function|static void reassembly_timeout(struct k_work *work)
 DECL|reassembly|variable|reassembly
 DECL|remaining|function|static inline u32_t remaining(struct k_delayed_work *work)
+DECL|route_ipv6_packet|function|static enum net_verdict route_ipv6_packet(struct net_pkt *pkt, struct net_ipv6_hdr *hdr)
 DECL|send_ipv6_fragment|function|static int send_ipv6_fragment(struct net_if *iface, struct net_pkt *pkt, struct net_buf *orig, struct net_buf *prev, struct net_buf *frag,
 DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
 DECL|send_mldv2_raw|function|static int send_mldv2_raw(struct net_if *iface, struct net_buf *frags)

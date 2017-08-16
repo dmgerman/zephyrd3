@@ -85,6 +85,7 @@ DECL|net_pkt_ll_src|function|static inline struct net_linkaddr *net_pkt_ll_src(s
 DECL|net_pkt_ll_swap|function|static inline void net_pkt_ll_swap(struct net_pkt *pkt)
 DECL|net_pkt_ll|function|static inline u8_t *net_pkt_ll(struct net_pkt *pkt)
 DECL|net_pkt_next_hdr|function|static inline u8_t *net_pkt_next_hdr(struct net_pkt *pkt)
+DECL|net_pkt_orig_iface|function|static inline struct net_if *net_pkt_orig_iface(struct net_pkt *pkt)
 DECL|net_pkt_print_frags|macro|net_pkt_print_frags
 DECL|net_pkt_print|macro|net_pkt_print
 DECL|net_pkt_queued|function|static inline u8_t net_pkt_queued(struct net_pkt *pkt)
@@ -111,6 +112,7 @@ DECL|net_pkt_set_ipv6_hdr_prev|function|static inline void net_pkt_set_ipv6_hdr_
 DECL|net_pkt_set_ipv6_hop_limit|function|static inline void net_pkt_set_ipv6_hop_limit(struct net_pkt *pkt, u8_t hop_limit)
 DECL|net_pkt_set_ll_reserve|function|static inline void net_pkt_set_ll_reserve(struct net_pkt *pkt, u8_t len)
 DECL|net_pkt_set_next_hdr|function|static inline void net_pkt_set_next_hdr(struct net_pkt *pkt, u8_t *hdr)
+DECL|net_pkt_set_orig_iface|function|static inline void net_pkt_set_orig_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_queued|function|static inline void net_pkt_set_queued(struct net_pkt *pkt, bool send)
 DECL|net_pkt_set_sent|function|static inline void net_pkt_set_sent(struct net_pkt *pkt, bool sent)
 DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_addr(struct net_pkt *pkt)
@@ -122,6 +124,7 @@ DECL|net_pkt_write_be32|function|static inline struct net_buf *net_pkt_write_be3
 DECL|net_pkt_write_u8|function|static inline struct net_buf *net_pkt_write_u8(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u8_t data)
 DECL|net_pkt|struct|struct net_pkt {
 DECL|next_hdr|member|u8_t *next_hdr; /* where is the next header */
+DECL|orig_iface|member|struct net_if *orig_iface; /* Original network interface */
 DECL|pkt_queued|member|u8_t pkt_queued: 1; /* For outgoing packet: is this packet queued
 DECL|ref|member|u8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;
