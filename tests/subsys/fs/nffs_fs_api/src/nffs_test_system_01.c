@@ -1,0 +1,2 @@
+DECL|nffs_test_system_01_rm_1014_mk10|variable|nffs_test_system_01_rm_1014_mk10
+DECL|nffs_test_system_01|variable|nffs_test_system_01
