@@ -7,6 +7,7 @@ DECL|FLASH_TIMEOUT_MS|macro|FLASH_TIMEOUT_MS
 DECL|addr|member|u32_t addr; /* Address off the 1st page to erase */
 DECL|context|member|void *context; /* [in,out] */
 DECL|data_addr|member|u32_t data_addr;
+DECL|dev_layout|variable|dev_layout
 DECL|enable_time_limit|member|u8_t enable_time_limit; /* execution limited to timeslot */
 DECL|enable_time_limit|member|u8_t enable_time_limit; /* execution limited to timeslot*/
 DECL|erase_context|struct|struct erase_context {
@@ -16,6 +17,7 @@ DECL|erase|function|static int erase(u32_t addr, u32_t size)
 DECL|flash_addr|member|u32_t flash_addr; /* Address off the 1st page to erase */
 DECL|flash_nrf5_api|variable|flash_nrf5_api
 DECL|flash_nrf5_erase|function|static int flash_nrf5_erase(struct device *dev, off_t addr, size_t size)
+DECL|flash_nrf5_pages_layout|function|static void flash_nrf5_pages_layout(struct device *dev, const struct flash_pages_layout **layout, size_t *layout_size)
 DECL|flash_nrf5_read|function|static int flash_nrf5_read(struct device *dev, off_t addr, void *data, size_t len)
 DECL|flash_nrf5_write_protection|function|static int flash_nrf5_write_protection(struct device *dev, bool enable)
 DECL|flash_nrf5_write|function|static int flash_nrf5_write(struct device *dev, off_t addr, const void *data, size_t len)
