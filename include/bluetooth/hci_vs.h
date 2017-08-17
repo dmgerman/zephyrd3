@@ -106,6 +106,7 @@ DECL|num_addrs|member|u8_t num_addrs;
 DECL|num_cmds|member|u8_t num_cmds;
 DECL|opcode_base|member|u16_t opcode_base;
 DECL|pc|member|u64_t pc;
+DECL|rssi|member|s8_t rssi;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
