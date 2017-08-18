@@ -73,7 +73,6 @@ DECL|dst|member|struct in6_addr dst;
 DECL|dst|member|struct in_addr dst;
 DECL|family|member|sa_family_t family;
 DECL|family|member|sa_family_t family;
-DECL|family|member|sa_family_t family;
 DECL|flags|member|u8_t flags;
 DECL|flow|member|u16_t flow;
 DECL|hop_limit|member|u8_t hop_limit;
@@ -155,6 +154,7 @@ DECL|s6_addr32|macro|s6_addr32
 DECL|s6_addr|macro|s6_addr
 DECL|s_addr|macro|s_addr
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
+DECL|sa_family|member|sa_family_t sa_family;
 DECL|seq|member|u8_t seq[4];
 DECL|sin6_addr|member|struct in6_addr *sin6_addr; /* IPv6 address */
 DECL|sin6_addr|member|struct in6_addr sin6_addr; /* IPv6 address */
