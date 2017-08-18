@@ -65,6 +65,7 @@ DECL|chksum|member|u16_t chksum;
 DECL|chksum|member|u16_t chksum;
 DECL|code|member|u8_t code;
 DECL|data|member|char data[NET_SOCKADDR_MAX_SIZE - sizeof(sa_family_t)];
+DECL|data|member|char data[NET_SOCKADDR_MAX_SIZE - sizeof(sa_family_t)];
 DECL|data|member|char data[NET_SOCKADDR_PTR_MAX_SIZE - sizeof(sa_family_t)];
 DECL|dst_port|member|u16_t dst_port;
 DECL|dst_port|member|u16_t dst_port;
@@ -174,12 +175,14 @@ DECL|sockaddr_in6|struct|struct sockaddr_in6 {
 DECL|sockaddr_in_ptr|struct|struct sockaddr_in_ptr {
 DECL|sockaddr_in|struct|struct sockaddr_in {
 DECL|sockaddr_ptr|struct|struct sockaddr_ptr {
+DECL|sockaddr_storage|struct|struct sockaddr_storage {
 DECL|sockaddr|struct|struct sockaddr {
 DECL|socklen_t|typedef|typedef size_t socklen_t;
 DECL|src_port|member|u16_t src_port;
 DECL|src_port|member|u16_t src_port;
 DECL|src|member|struct in6_addr src;
 DECL|src|member|struct in_addr src;
+DECL|ss_family|member|sa_family_t ss_family;
 DECL|tcflow|member|u8_t tcflow;
 DECL|tos|member|u8_t tos;
 DECL|ttl|member|u8_t ttl;
