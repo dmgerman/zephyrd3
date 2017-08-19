@@ -39,6 +39,7 @@ DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *i
 DECL|ipv6_frag_cb|function|static void ipv6_frag_cb(struct net_ipv6_reassembly *reass, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
 DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data)
+DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data) {}
 DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
 DECL|net_shell_cmd_app|function|int net_shell_cmd_app(int argc, char *argv[])
