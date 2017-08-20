@@ -45,6 +45,7 @@ DECL|pkt3|variable|pkt3
 DECL|pkt4|variable|pkt4
 DECL|pkt5|variable|pkt5
 DECL|pton|member|bool pton;
+DECL|run_addr_parse_tests|function|void run_addr_parse_tests(void)
 DECL|run_net_addr_tests|function|void run_net_addr_tests(void)
 DECL|run_tests|function|void run_tests(void)
 DECL|test_main|function|void test_main(void)
