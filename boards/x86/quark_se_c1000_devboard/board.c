@@ -1,2 +1,4 @@
+DECL|cc1200_configure_gpios|function|struct cc1200_gpio_configuration *cc1200_configure_gpios(void)
+DECL|cc1200_gpios|variable|cc1200_gpios
 DECL|cc2520_configure_gpios|function|struct cc2520_gpio_configuration *cc2520_configure_gpios(void)
 DECL|cc2520_gpios|variable|cc2520_gpios
