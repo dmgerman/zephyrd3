@@ -44,7 +44,6 @@ DECL|K_POLL_MODE_NOTIFY_ONLY|enumerator|K_POLL_MODE_NOTIFY_ONLY = 0,
 DECL|K_POLL_NUM_MODES|enumerator|K_POLL_NUM_MODES
 DECL|K_POLL_SIGNAL_INITIALIZER|macro|K_POLL_SIGNAL_INITIALIZER
 DECL|K_POLL_STATE_DATA_AVAILABLE|macro|K_POLL_STATE_DATA_AVAILABLE
-DECL|K_POLL_STATE_EADDRINUSE|macro|K_POLL_STATE_EADDRINUSE
 DECL|K_POLL_STATE_FIFO_DATA_AVAILABLE|macro|K_POLL_STATE_FIFO_DATA_AVAILABLE
 DECL|K_POLL_STATE_NOT_READY|macro|K_POLL_STATE_NOT_READY
 DECL|K_POLL_STATE_SEM_AVAILABLE|macro|K_POLL_STATE_SEM_AVAILABLE
@@ -127,7 +126,6 @@ DECL|_POLL_NUM_STATES|enumerator|_POLL_NUM_STATES
 DECL|_POLL_NUM_TYPES|enumerator|_POLL_NUM_TYPES
 DECL|_POLL_STATE_BIT|macro|_POLL_STATE_BIT
 DECL|_POLL_STATE_DATA_AVAILABLE|enumerator|_POLL_STATE_DATA_AVAILABLE,
-DECL|_POLL_STATE_EADDRINUSE|enumerator|_POLL_STATE_EADDRINUSE,
 DECL|_POLL_STATE_NOT_READY|enumerator|_POLL_STATE_NOT_READY,
 DECL|_POLL_STATE_SEM_AVAILABLE|enumerator|_POLL_STATE_SEM_AVAILABLE,
 DECL|_POLL_STATE_SIGNALED|enumerator|_POLL_STATE_SIGNALED,
@@ -150,6 +148,7 @@ DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
 DECL|_ms_per_tick|macro|_ms_per_tick
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE s32_t _ms_to_ticks(s32_t ms)
+DECL|_node|member|sys_dnode_t _node;
 DECL|_poll_states_bits|enum|enum _poll_states_bits {
 DECL|_poll_types_bits|enum|enum _poll_types_bits {
 DECL|_poller|struct|struct _poller {
@@ -319,7 +318,7 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|period|member|s32_t period;
-DECL|poll_event|member|struct k_poll_event *poll_event;
+DECL|poll_events|member|sys_dlist_t poll_events;
 DECL|poller|member|struct _poller *poller;
 DECL|pool|member|u32_t pool : 8;
 DECL|preempt|member|u16_t preempt;
