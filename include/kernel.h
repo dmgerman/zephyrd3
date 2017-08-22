@@ -36,6 +36,20 @@ DECL|K_MSGQ_INITIALIZER|macro|K_MSGQ_INITIALIZER
 DECL|K_MUTEX_DEFINE|macro|K_MUTEX_DEFINE
 DECL|K_MUTEX_INITIALIZER|macro|K_MUTEX_INITIALIZER
 DECL|K_NO_WAIT|macro|K_NO_WAIT
+DECL|K_OBJ_ALERT|enumerator|K_OBJ_ALERT,
+DECL|K_OBJ_DELAYED_WORK|enumerator|K_OBJ_DELAYED_WORK,
+DECL|K_OBJ_FLAG_INITIALIZED|macro|K_OBJ_FLAG_INITIALIZED
+DECL|K_OBJ_LAST|enumerator|K_OBJ_LAST
+DECL|K_OBJ_MEM_SLAB|enumerator|K_OBJ_MEM_SLAB,
+DECL|K_OBJ_MSGQ|enumerator|K_OBJ_MSGQ,
+DECL|K_OBJ_MUTEX|enumerator|K_OBJ_MUTEX,
+DECL|K_OBJ_PIPE|enumerator|K_OBJ_PIPE,
+DECL|K_OBJ_SEM|enumerator|K_OBJ_SEM,
+DECL|K_OBJ_STACK|enumerator|K_OBJ_STACK,
+DECL|K_OBJ_THREAD|enumerator|K_OBJ_THREAD,
+DECL|K_OBJ_TIMER|enumerator|K_OBJ_TIMER,
+DECL|K_OBJ_WORK_Q|enumerator|K_OBJ_WORK_Q,
+DECL|K_OBJ_WORK|enumerator|K_OBJ_WORK,
 DECL|K_PIPE_DEFINE|macro|K_PIPE_DEFINE
 DECL|K_PIPE_INITIALIZER|macro|K_PIPE_INITIALIZER
 DECL|K_POLL_EVENT_INITIALIZER|macro|K_POLL_EVENT_INITIALIZER
@@ -137,12 +151,16 @@ DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
+DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
+DECL|_k_object_init|function|static inline void _k_object_init(void *obj)
+DECL|_k_object_validate|function|static inline int _k_object_validate(void *obj, enum k_objects otype, int init)
+DECL|_k_object|struct|struct _k_object {
 DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
@@ -198,6 +216,7 @@ DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
 DECL|flags|member|atomic_t flags[1];
+DECL|flags|member|char flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
 DECL|free_list|member|sys_dlist_t free_list;
@@ -257,6 +276,8 @@ DECL|k_msgq_num_free_get|function|static inline u32_t k_msgq_num_free_get(struct
 DECL|k_msgq_num_used_get|function|static inline u32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
+DECL|k_object_grant_access|function|static inline void k_object_grant_access(void *object, struct k_thread *thread)
+DECL|k_objects|enum|enum k_objects {
 DECL|k_oops|macro|k_oops
 DECL|k_panic|macro|k_panic
 DECL|k_pipe|struct|struct k_pipe {
@@ -301,6 +322,7 @@ DECL|mode|member|u32_t mode:1;
 DECL|msg_size|member|size_t msg_size;
 DECL|n_levels|member|u8_t n_levels;
 DECL|n_max|member|u16_t n_max;
+DECL|name|member|char *name;
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new(size_t size, void *ptr)
 DECL|new|function|inline void *operator new[](size_t size)
@@ -318,6 +340,7 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|period|member|s32_t period;
+DECL|perms|member|char perms[CONFIG_MAX_THREAD_BYTES];
 DECL|poll_events|member|sys_dlist_t poll_events;
 DECL|poller|member|struct _poller *poller;
 DECL|pool|member|u32_t pool : 8;
@@ -360,6 +383,7 @@ DECL|tx_block|member|struct k_mem_block tx_block;
 DECL|tx_data|member|void *tx_data;
 DECL|tx_msg_queue|member|_wait_q_t tx_msg_queue;
 DECL|tx_target_thread|member|k_tid_t tx_target_thread;
+DECL|type|member|char type;
 DECL|type|member|u32_t type:_POLL_NUM_TYPES;
 DECL|unused|member|u32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
 DECL|used_msgs|member|u32_t used_msgs;
