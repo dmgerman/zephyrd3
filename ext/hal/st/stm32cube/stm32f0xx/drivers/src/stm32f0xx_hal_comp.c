@@ -1,0 +1,20 @@
+DECL|COMP_CSR_COMP1_SHIFT|macro|COMP_CSR_COMP1_SHIFT
+DECL|COMP_CSR_COMP2_SHIFT|macro|COMP_CSR_COMP2_SHIFT
+DECL|COMP_CSR_COMPxNONINSEL_MASK|macro|COMP_CSR_COMPxNONINSEL_MASK
+DECL|COMP_CSR_RESET_PARAMETERS_MASK|macro|COMP_CSR_RESET_PARAMETERS_MASK
+DECL|COMP_CSR_RESET_VALUE|macro|COMP_CSR_RESET_VALUE
+DECL|COMP_CSR_UPDATE_PARAMETERS_MASK|macro|COMP_CSR_UPDATE_PARAMETERS_MASK
+DECL|COMP_DELAY_STARTUP_US|macro|COMP_DELAY_STARTUP_US
+DECL|HAL_COMP_DeInit|function|HAL_StatusTypeDef HAL_COMP_DeInit(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_GetOutputLevel|function|uint32_t HAL_COMP_GetOutputLevel(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_GetState|function|uint32_t HAL_COMP_GetState(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_IRQHandler|function|void HAL_COMP_IRQHandler(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Init|function|HAL_StatusTypeDef HAL_COMP_Init(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Lock|function|HAL_StatusTypeDef HAL_COMP_Lock(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_MspDeInit|function|__weak void HAL_COMP_MspDeInit(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_MspInit|function|__weak void HAL_COMP_MspInit(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Start_IT|function|HAL_StatusTypeDef HAL_COMP_Start_IT(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Start|function|HAL_StatusTypeDef HAL_COMP_Start(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Stop_IT|function|HAL_StatusTypeDef HAL_COMP_Stop_IT(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_Stop|function|HAL_StatusTypeDef HAL_COMP_Stop(COMP_HandleTypeDef *hcomp)
+DECL|HAL_COMP_TriggerCallback|function|__weak void HAL_COMP_TriggerCallback(COMP_HandleTypeDef *hcomp)

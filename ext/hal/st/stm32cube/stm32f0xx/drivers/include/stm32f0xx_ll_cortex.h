@@ -1,0 +1,20 @@
+DECL|LL_CPUID_GetArchitecture|function|__STATIC_INLINE uint32_t LL_CPUID_GetArchitecture(void)
+DECL|LL_CPUID_GetImplementer|function|__STATIC_INLINE uint32_t LL_CPUID_GetImplementer(void)
+DECL|LL_CPUID_GetParNo|function|__STATIC_INLINE uint32_t LL_CPUID_GetParNo(void)
+DECL|LL_CPUID_GetRevision|function|__STATIC_INLINE uint32_t LL_CPUID_GetRevision(void)
+DECL|LL_CPUID_GetVariant|function|__STATIC_INLINE uint32_t LL_CPUID_GetVariant(void)
+DECL|LL_LPM_DisableEventOnPend|function|__STATIC_INLINE void LL_LPM_DisableEventOnPend(void)
+DECL|LL_LPM_DisableSleepOnExit|function|__STATIC_INLINE void LL_LPM_DisableSleepOnExit(void)
+DECL|LL_LPM_EnableDeepSleep|function|__STATIC_INLINE void LL_LPM_EnableDeepSleep(void)
+DECL|LL_LPM_EnableEventOnPend|function|__STATIC_INLINE void LL_LPM_EnableEventOnPend(void)
+DECL|LL_LPM_EnableSleepOnExit|function|__STATIC_INLINE void LL_LPM_EnableSleepOnExit(void)
+DECL|LL_LPM_EnableSleep|function|__STATIC_INLINE void LL_LPM_EnableSleep(void)
+DECL|LL_SYSTICK_CLKSOURCE_HCLK_DIV8|macro|LL_SYSTICK_CLKSOURCE_HCLK_DIV8
+DECL|LL_SYSTICK_CLKSOURCE_HCLK|macro|LL_SYSTICK_CLKSOURCE_HCLK
+DECL|LL_SYSTICK_DisableIT|function|__STATIC_INLINE void LL_SYSTICK_DisableIT(void)
+DECL|LL_SYSTICK_EnableIT|function|__STATIC_INLINE void LL_SYSTICK_EnableIT(void)
+DECL|LL_SYSTICK_GetClkSource|function|__STATIC_INLINE uint32_t LL_SYSTICK_GetClkSource(void)
+DECL|LL_SYSTICK_IsActiveCounterFlag|function|__STATIC_INLINE uint32_t LL_SYSTICK_IsActiveCounterFlag(void)
+DECL|LL_SYSTICK_IsEnabledIT|function|__STATIC_INLINE uint32_t LL_SYSTICK_IsEnabledIT(void)
+DECL|LL_SYSTICK_SetClkSource|function|__STATIC_INLINE void LL_SYSTICK_SetClkSource(uint32_t Source)
+DECL|__STM32F0xx_LL_CORTEX_H|macro|__STM32F0xx_LL_CORTEX_H

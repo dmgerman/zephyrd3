@@ -1,0 +1,13 @@
+DECL|HAL_InitTick|function|HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority)
+DECL|HAL_RTCEx_WakeUpTimerEventCallback|function|void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef *hrtc)
+DECL|HAL_ResumeTick|function|void HAL_ResumeTick(void)
+DECL|HAL_SuspendTick|function|void HAL_SuspendTick(void)
+DECL|RTC_ASYNCH_PREDIV|macro|RTC_ASYNCH_PREDIV
+DECL|RTC_ASYNCH_PREDIV|macro|RTC_ASYNCH_PREDIV
+DECL|RTC_ASYNCH_PREDIV|macro|RTC_ASYNCH_PREDIV
+DECL|RTC_CLOCK_SOURCE_HSE|macro|RTC_CLOCK_SOURCE_HSE
+DECL|RTC_IRQHandler|function|void RTC_IRQHandler(void)
+DECL|RTC_SYNCH_PREDIV|macro|RTC_SYNCH_PREDIV
+DECL|RTC_SYNCH_PREDIV|macro|RTC_SYNCH_PREDIV
+DECL|RTC_SYNCH_PREDIV|macro|RTC_SYNCH_PREDIV
+DECL|hRTC_Handle|variable|hRTC_Handle
