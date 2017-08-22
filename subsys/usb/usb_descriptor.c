@@ -21,6 +21,8 @@ DECL|cfg_descr|member|struct usb_cfg_descriptor cfg_descr;
 DECL|common_desc|variable|common_desc
 DECL|dev_common_descriptor|struct|struct dev_common_descriptor {
 DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
+DECL|dfu_cfg|member|} __packed dfu_cfg;
+DECL|dfu_descr|member|struct dfu_runtime_descriptor dfu_descr;
 DECL|hid_cfg|member|} __packed hid_cfg;
 DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
 DECL|iad|member|struct usb_association_descriptor iad;
@@ -56,6 +58,7 @@ DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if1_0|member|struct usb_if_descriptor if1_0;
 DECL|if1_1_in_ep|member|struct usb_ep_descriptor if1_1_in_ep;
 DECL|if1_1_out_ep|member|struct usb_ep_descriptor if1_1_out_ep;
@@ -76,6 +79,7 @@ DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
 DECL|usb_cdc_eem_config|struct|struct usb_cdc_eem_config {
+DECL|usb_dfu_config|struct|struct usb_dfu_config {
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
 DECL|usb_hid_config|struct|struct usb_hid_config {
 DECL|usb_mass_config|struct|struct usb_mass_config {
