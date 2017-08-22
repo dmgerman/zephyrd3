@@ -83,6 +83,7 @@ DECL|local|member|struct sockaddr local;
 DECL|mbedtls_time_t|macro|mbedtls_time_t
 DECL|mbedtls|member|} mbedtls;
 DECL|mbedtls|member|} mbedtls;
+DECL|message_complete|member|u8_t message_complete:1;
 DECL|method|member|enum http_method method;
 DECL|method|member|enum http_method method;
 DECL|net_ctx|member|struct net_context *net_ctx;
