@@ -379,6 +379,7 @@ DECL|BT_HCI_OP_READ_LOCAL_VERSION_INFO|macro|BT_HCI_OP_READ_LOCAL_VERSION_INFO
 DECL|BT_HCI_OP_READ_REMOTE_EXT_FEATURES|macro|BT_HCI_OP_READ_REMOTE_EXT_FEATURES
 DECL|BT_HCI_OP_READ_REMOTE_FEATURES|macro|BT_HCI_OP_READ_REMOTE_FEATURES
 DECL|BT_HCI_OP_READ_REMOTE_VERSION_INFO|macro|BT_HCI_OP_READ_REMOTE_VERSION_INFO
+DECL|BT_HCI_OP_READ_RSSI|macro|BT_HCI_OP_READ_RSSI
 DECL|BT_HCI_OP_READ_SUPPORTED_COMMANDS|macro|BT_HCI_OP_READ_SUPPORTED_COMMANDS
 DECL|BT_HCI_OP_REJECT_CONN_REQ|macro|BT_HCI_OP_REJECT_CONN_REQ
 DECL|BT_HCI_OP_REMOTE_NAME_CANCEL|macro|BT_HCI_OP_REMOTE_NAME_CANCEL
@@ -481,6 +482,8 @@ DECL|HCI_PKT_TYPE_HV2|macro|HCI_PKT_TYPE_HV2
 DECL|HCI_PKT_TYPE_HV3|macro|HCI_PKT_TYPE_HV3
 DECL|SCO_PKT_MASK|macro|SCO_PKT_MASK
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -826,6 +829,7 @@ DECL|bt_hci_cp_read_local_ext_features|struct|struct bt_hci_cp_read_local_ext_fe
 DECL|bt_hci_cp_read_remote_ext_features|struct|struct bt_hci_cp_read_remote_ext_features {
 DECL|bt_hci_cp_read_remote_features|struct|struct bt_hci_cp_read_remote_features {
 DECL|bt_hci_cp_read_remote_version_info|struct|struct bt_hci_cp_read_remote_version_info {
+DECL|bt_hci_cp_read_rssi|struct|struct bt_hci_cp_read_rssi {
 DECL|bt_hci_cp_reject_conn_req|struct|struct bt_hci_cp_reject_conn_req {
 DECL|bt_hci_cp_remote_name_cancel|struct|struct bt_hci_cp_remote_name_cancel {
 DECL|bt_hci_cp_remote_name_request|struct|struct bt_hci_cp_remote_name_request {
@@ -936,6 +940,7 @@ DECL|bt_hci_rp_read_encryption_key_size|struct|struct bt_hci_rp_read_encryption_
 DECL|bt_hci_rp_read_local_ext_features|struct|struct bt_hci_rp_read_local_ext_features {
 DECL|bt_hci_rp_read_local_features|struct|struct bt_hci_rp_read_local_features {
 DECL|bt_hci_rp_read_local_version_info|struct|struct bt_hci_rp_read_local_version_info {
+DECL|bt_hci_rp_read_rssi|struct|struct bt_hci_rp_read_rssi {
 DECL|bt_hci_rp_read_supported_commands|struct|struct bt_hci_rp_read_supported_commands {
 DECL|bt_hci_rp_remote_name_cancel|struct|struct bt_hci_rp_remote_name_cancel {
 DECL|bt_hci_rp_user_confirm_reply|struct|struct bt_hci_rp_user_confirm_reply {
@@ -1025,6 +1030,8 @@ DECL|filter_policy|member|u8_t filter_policy;
 DECL|flow_enable|member|u8_t flow_enable;
 DECL|frag_pref|member|u8_t frag_pref;
 DECL|frag_pref|member|u8_t frag_pref;
+DECL|handle|member|u16_t handle;
+DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
@@ -1286,6 +1293,7 @@ DECL|rssi|member|s8_t rssi;
 DECL|rssi|member|s8_t rssi;
 DECL|rssi|member|s8_t rssi;
 DECL|rssi|member|s8_t rssi;
+DECL|rssi|member|s8_t rssi;
 DECL|rx_bandwidth|member|u32_t rx_bandwidth;
 DECL|rx_bandwidth|member|u32_t rx_bandwidth;
 DECL|rx_ch|member|u8_t rx_ch;
@@ -1319,6 +1327,7 @@ DECL|sid|member|u8_t sid;
 DECL|sid|member|u8_t sid;
 DECL|simul|member|u8_t simul;
 DECL|skip|member|u16_t skip;
+DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
 DECL|status|member|u8_t status;
