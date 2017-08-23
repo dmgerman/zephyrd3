@@ -70,6 +70,7 @@ DECL|le_phy_upd_complete|function|static void le_phy_upd_complete(struct pdu_dat
 DECL|le_rand|function|static void le_rand(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_adv_chan_tx_power|function|static void le_read_adv_chan_tx_power(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_buffer_size|function|static void le_read_buffer_size(struct net_buf *buf, struct net_buf **evt)
+DECL|le_read_chan_map|function|static void le_read_chan_map(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_default_data_len|function|static void le_read_default_data_len(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_local_features|function|static void le_read_local_features(struct net_buf *buf, struct net_buf **evt)
 DECL|le_read_local_rpa|function|static void le_read_local_rpa(struct net_buf *buf, struct net_buf **evt)

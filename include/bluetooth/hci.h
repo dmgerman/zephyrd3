@@ -918,7 +918,7 @@ DECL|bt_hci_rp_le_ltk_req_neg_reply|struct|struct bt_hci_rp_le_ltk_req_neg_reply
 DECL|bt_hci_rp_le_ltk_req_reply|struct|struct bt_hci_rp_le_ltk_req_reply {
 DECL|bt_hci_rp_le_rand|struct|struct bt_hci_rp_le_rand {
 DECL|bt_hci_rp_le_read_buffer_size|struct|struct bt_hci_rp_le_read_buffer_size {
-DECL|bt_hci_rp_le_read_ch_map|struct|struct bt_hci_rp_le_read_ch_map {
+DECL|bt_hci_rp_le_read_chan_map|struct|struct bt_hci_rp_le_read_chan_map {
 DECL|bt_hci_rp_le_read_chan_tx_power|struct|struct bt_hci_rp_le_read_chan_tx_power {
 DECL|bt_hci_rp_le_read_default_data_len|struct|struct bt_hci_rp_le_read_default_data_len {
 DECL|bt_hci_rp_le_read_local_features|struct|struct bt_hci_rp_le_read_local_features {

@@ -45,6 +45,7 @@ DECL|apto_reload|member|u16_t apto_reload;
 DECL|ccm_rx|member|struct ccm ccm_rx;
 DECL|ccm_tx|member|struct ccm ccm_tx;
 DECL|chan_map|member|} chan_map;
+DECL|chm_update|member|u8_t chm_update;
 DECL|chm|member|u8_t chm[5];
 DECL|cmd|member|u8_t cmd:1;
 DECL|cmd|member|u8_t cmd:1;
