@@ -1,15 +1,15 @@
 DECL|STACKSIZE|macro|STACKSIZE
-DECL|mutex1|variable|mutex1
-DECL|mutex2|variable|mutex2
-DECL|mutex3|variable|mutex3
-DECL|mutex4|variable|mutex4
+DECL|main|function|void main(void)
+DECL|mutex_1|variable|mutex_1
+DECL|mutex_2|variable|mutex_2
+DECL|mutex_3|variable|mutex_3
+DECL|mutex_4|variable|mutex_4
 DECL|private_mutex|variable|private_mutex
-DECL|regression_task|function|void regression_task(void)
-DECL|task05|function|void task05(void)
-DECL|task06|function|void task06(void)
-DECL|task07|function|void task07(void)
-DECL|task08|function|void task08(void)
-DECL|task09|function|void task09(void)
-DECL|task11|function|void task11(void)
-DECL|task12_thread_data|variable|task12_thread_data
 DECL|tc_rc|variable|tc_rc
+DECL|thread_05|function|void thread_05(void)
+DECL|thread_06|function|void thread_06(void)
+DECL|thread_07|function|void thread_07(void)
+DECL|thread_08|function|void thread_08(void)
+DECL|thread_09|function|void thread_09(void)
+DECL|thread_11|function|void thread_11(void)
+DECL|thread_12_thread_data|variable|thread_12_thread_data
