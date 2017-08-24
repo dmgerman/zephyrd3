@@ -4,7 +4,7 @@ DECL|set_interrupt_enabled|function|static void set_interrupt_enabled(bool setti
 DECL|shared_data|variable|shared_data
 DECL|wdt_api|variable|wdt_api
 DECL|wdt_esp32_data|struct|struct wdt_esp32_data {
-DECL|wdt_esp32_disable|function|static void wdt_esp32_disable(struct device *dev)
+DECL|wdt_esp32_disable|function|static int wdt_esp32_disable(struct device *dev)
 DECL|wdt_esp32_enable|function|static void wdt_esp32_enable(struct device *dev)
 DECL|wdt_esp32_get_config|function|static void wdt_esp32_get_config(struct device *dev, struct wdt_config *config)
 DECL|wdt_esp32_init|function|static int wdt_esp32_init(struct device *dev)

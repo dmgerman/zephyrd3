@@ -27,7 +27,7 @@ DECL|reserved1|member|volatile u32_t reserved1[191];
 DECL|user_cb|variable|user_cb
 DECL|value|member|volatile u32_t value;
 DECL|wdog_cmsdk_apb_api|variable|wdog_cmsdk_apb_api
-DECL|wdog_cmsdk_apb_disable|function|static void wdog_cmsdk_apb_disable(struct device *dev)
+DECL|wdog_cmsdk_apb_disable|function|static int wdog_cmsdk_apb_disable(struct device *dev)
 DECL|wdog_cmsdk_apb_enable|function|static void wdog_cmsdk_apb_enable(struct device *dev)
 DECL|wdog_cmsdk_apb_get_config|function|static void wdog_cmsdk_apb_get_config(struct device *dev, struct wdt_config *config)
 DECL|wdog_cmsdk_apb_has_fired|function|static int wdog_cmsdk_apb_has_fired(void)

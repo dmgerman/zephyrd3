@@ -5,7 +5,7 @@ DECL|WDT_CONTEXT|macro|WDT_CONTEXT
 DECL|WDT_HAS_CONTEXT_DATA|macro|WDT_HAS_CONTEXT_DATA
 DECL|api|variable|api
 DECL|device_power_state|member|u32_t device_power_state;
-DECL|disable|function|static void disable(struct device *dev)
+DECL|disable|function|static int disable(struct device *dev)
 DECL|enable|function|static void enable(struct device *dev)
 DECL|get_config|function|static void get_config(struct device *dev, struct wdt_config *cfg)
 DECL|init|function|static int init(struct device *dev)
