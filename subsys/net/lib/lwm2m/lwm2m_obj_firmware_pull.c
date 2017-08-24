@@ -20,6 +20,5 @@ DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(ch
 DECL|pendings|variable|pendings
 DECL|replies|variable|replies
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
-DECL|retransmit_work|variable|retransmit_work
 DECL|transfer_request|function|static int transfer_request(struct zoap_block_context *ctx, const u8_t *token, u8_t tkl, zoap_reply_t reply_cb)
 DECL|transfer_state|variable|transfer_state

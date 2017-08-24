@@ -104,7 +104,6 @@ DECL|path|member|struct lwm2m_obj_path path;
 DECL|pendings|variable|pendings
 DECL|replies|variable|replies
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
-DECL|retransmit_work|variable|retransmit_work
 DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_context *out, u16_t accept)
 DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl)
