@@ -1,6 +1,4 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
-DECL|NUM_PENDINGS|macro|NUM_PENDINGS
-DECL|NUM_REPLIES|macro|NUM_REPLIES
 DECL|PACKAGE_URI_LEN|macro|PACKAGE_URI_LEN
 DECL|STATE_CONNECTING|macro|STATE_CONNECTING
 DECL|STATE_IDLE|macro|STATE_IDLE
@@ -17,8 +15,6 @@ DECL|firmware_uri|variable|firmware_uri
 DECL|firmware_work|variable|firmware_work
 DECL|lwm2m_firmware_cancel_transfer|function|int lwm2m_firmware_cancel_transfer(void)
 DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(char *package_uri)
-DECL|pendings|variable|pendings
-DECL|replies|variable|replies
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|transfer_request|function|static int transfer_request(struct zoap_block_context *ctx, const u8_t *token, u8_t tkl, zoap_reply_t reply_cb)
 DECL|transfer_state|variable|transfer_state

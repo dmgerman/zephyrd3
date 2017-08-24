@@ -57,6 +57,8 @@ DECL|lwm2m_engine_exec_cb_t|typedef|typedef int (*lwm2m_engine_exec_cb_t)(u16_t 
 DECL|lwm2m_engine_get_data_cb_t|typedef|typedef void *(*lwm2m_engine_get_data_cb_t)(u16_t obj_inst_id,
 DECL|lwm2m_engine_set_data_cb_t|typedef|typedef int (*lwm2m_engine_set_data_cb_t)(u16_t obj_inst_id,
 DECL|net_ctx|member|struct net_context *net_ctx;
+DECL|pendings|member|struct zoap_pending pendings[CONFIG_LWM2M_ENGINE_MAX_PENDING];
+DECL|replies|member|struct zoap_reply replies[CONFIG_LWM2M_ENGINE_MAX_REPLIES];
 DECL|retransmit_work|member|struct k_delayed_work retransmit_work;
 DECL|val1|member|s32_t val1;
 DECL|val1|member|s64_t val1;

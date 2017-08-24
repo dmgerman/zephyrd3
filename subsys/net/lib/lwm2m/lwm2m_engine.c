@@ -4,8 +4,6 @@ DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|MATCH_ALL|macro|MATCH_ALL
 DECL|MATCH_NONE|macro|MATCH_NONE
 DECL|MATCH_SINGLE|macro|MATCH_SINGLE
-DECL|NUM_PENDINGS|macro|NUM_PENDINGS
-DECL|NUM_REPLIES|macro|NUM_REPLIES
 DECL|REG_PREFACE|macro|REG_PREFACE
 DECL|REG_PREFACE|macro|REG_PREFACE
 DECL|RESOURCE_TYPE|macro|RESOURCE_TYPE
@@ -79,14 +77,14 @@ DECL|lwm2m_get_engine_obj_field|function|lwm2m_get_engine_obj_field(struct lwm2m
 DECL|lwm2m_get_or_create_engine_obj|function|int lwm2m_get_or_create_engine_obj(struct lwm2m_engine_context *context, struct lwm2m_engine_obj_inst **obj_inst, u8_t *created)
 DECL|lwm2m_get_rd_data|function|u16_t lwm2m_get_rd_data(u8_t *client_data, u16_t size)
 DECL|lwm2m_init_message_cleanup|function|void lwm2m_init_message_cleanup(struct net_pkt *pkt,struct zoap_pending *pending, struct zoap_reply *reply)
-DECL|lwm2m_init_message_pending|function|struct zoap_pending *lwm2m_init_message_pending(struct zoap_packet *zpkt,struct sockaddr *addr, struct zoap_pending *zpendings, int num_zpendings)
+DECL|lwm2m_init_message_pending|function|struct zoap_pending *lwm2m_init_message_pending(struct lwm2m_ctx *client_ctx,struct zoap_packet *zpkt, struct sockaddr *addr)
 DECL|lwm2m_init_message|function|int lwm2m_init_message(struct net_context *net_ctx, struct zoap_packet *zpkt, struct net_pkt **pkt, u8_t type, u8_t code, u16_t mid, const u8_t *token, u8_t tkl)
 DECL|lwm2m_notify_observer_path|function|int lwm2m_notify_observer_path(struct lwm2m_obj_path *path)
 DECL|lwm2m_notify_observer|function|int lwm2m_notify_observer(u16_t obj_id, u16_t obj_inst_id, u16_t res_id)
 DECL|lwm2m_read_handler|function|static int lwm2m_read_handler(struct lwm2m_engine_obj_inst *obj_inst, struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|lwm2m_register_obj|function|void lwm2m_register_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_sprint_ip_addr|function|char *lwm2m_sprint_ip_addr(const struct sockaddr *addr)
-DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct net_context *ctx, struct net_pkt *pkt, struct zoap_pending *zpendings, int num_zpendings, struct zoap_reply *zreplies, int num_zreplies, bool handle_separate_response, int (*udp_request_handler)(struct zoap_packet *,
+DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct lwm2m_ctx *client_ctx, struct net_context *net_ctx, struct net_pkt *pkt, bool handle_separate_response, int (*udp_request_handler)(struct zoap_packet *, struct zoap_packet *,
 DECL|lwm2m_udp_sendto|function|int lwm2m_udp_sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr)
 DECL|lwm2m_unregister_obj|function|void lwm2m_unregister_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
@@ -101,8 +99,6 @@ DECL|observe_node_data|variable|observe_node_data
 DECL|observe_node|struct|struct observe_node {
 DECL|outbuf_init_check|function|static void outbuf_init_check(struct lwm2m_output_context *out)
 DECL|path|member|struct lwm2m_obj_path path;
-DECL|pendings|variable|pendings
-DECL|replies|variable|replies
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_context *out, u16_t accept)
@@ -110,6 +106,6 @@ DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl
 DECL|string_to_path|function|static int string_to_path(char *pathstr, struct lwm2m_obj_path *path, char delim)
 DECL|tkl|member|u8_t tkl;
 DECL|token|member|u8_t token[8];
-DECL|udp_receive|function|static void udp_receive(struct net_context *ctx, struct net_pkt *pkt,int status, void *user_data)
+DECL|udp_receive|function|static void udp_receive(struct net_context *net_ctx, struct net_pkt *pkt,int status, void *user_data)
 DECL|used|member|bool used;
 DECL|zoap_options_to_path|function|static void zoap_options_to_path(struct zoap_option *opt, int options_count, struct lwm2m_obj_path *path)
