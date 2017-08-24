@@ -37,7 +37,7 @@ DECL|pwrsrc_bat|variable|pwrsrc_bat
 DECL|pwrsrc_usb|variable|pwrsrc_usb
 DECL|quit_lock|variable|quit_lock
 DECL|set_endpoint_name|function|static int set_endpoint_name(char *ep_name, sa_family_t family)
-DECL|setup_net_app_ctx|function|int setup_net_app_ctx(struct net_app_ctx *ctx, const char *peer)
+DECL|setup_net_app_ctx|function|int setup_net_app_ctx(struct lwm2m_ctx *client_ctx, struct net_app_ctx *ctx, const char *peer)
 DECL|tx_udp_slab|function|static struct k_mem_slab *tx_udp_slab(void)
 DECL|tx_udp_slab|macro|tx_udp_slab
 DECL|udp4|variable|udp4
