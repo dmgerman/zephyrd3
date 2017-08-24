@@ -73,7 +73,7 @@ DECL|lwm2m_engine_set_u32|function|int lwm2m_engine_set_u32(char *pathstr, u32_t
 DECL|lwm2m_engine_set_u64|function|int lwm2m_engine_set_u64(char *pathstr, u64_t value)
 DECL|lwm2m_engine_set_u8|function|int lwm2m_engine_set_u8(char *pathstr, u8_t value)
 DECL|lwm2m_engine_set|function|static int lwm2m_engine_set(char *pathstr, void *value, u16_t len)
-DECL|lwm2m_engine_start|function|int lwm2m_engine_start(struct net_context *net_ctx)
+DECL|lwm2m_engine_start|function|int lwm2m_engine_start(struct lwm2m_ctx *client_ctx)
 DECL|lwm2m_exec_handler|function|static int lwm2m_exec_handler(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|lwm2m_get_engine_obj_field|function|lwm2m_get_engine_obj_field(struct lwm2m_engine_obj *obj, int res_id)
 DECL|lwm2m_get_or_create_engine_obj|function|int lwm2m_get_or_create_engine_obj(struct lwm2m_engine_context *context, struct lwm2m_engine_obj_inst **obj_inst, u8_t *created)

@@ -26,6 +26,7 @@ DECL|bs_server|member|struct sockaddr bs_server;
 DECL|client_count|variable|client_count
 DECL|client_data|variable|client_data
 DECL|clients|variable|clients
+DECL|ctx|member|struct lwm2m_ctx *ctx;
 DECL|do_bootstrap_reply_cb|function|static int do_bootstrap_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|do_deregister_reply_cb|function|static int do_deregister_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|do_registration_reply_cb|function|static int do_registration_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
@@ -42,9 +43,8 @@ DECL|lifetime|member|u16_t lifetime;
 DECL|lwm2m_rd_client_info|struct|struct lwm2m_rd_client_info {
 DECL|lwm2m_rd_client_init|function|static int lwm2m_rd_client_init(struct device *dev)
 DECL|lwm2m_rd_client_service|function|static void lwm2m_rd_client_service(void)
-DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct net_context *net_ctx, struct sockaddr *peer_addr, const char *ep_name)
+DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, struct sockaddr *peer_addr, const char *ep_name)
 DECL|lwm2m_rd_client_thread_data|variable|lwm2m_rd_client_thread_data
-DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|peer_addr_exist|function|static bool peer_addr_exist(struct sockaddr *peer_addr)
 DECL|query_buffer|variable|query_buffer
 DECL|reg_server|member|struct sockaddr reg_server;

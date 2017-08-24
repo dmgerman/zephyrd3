@@ -10,7 +10,7 @@ DECL|default_block_size|function|static enum zoap_block_size default_block_size(
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|firmware_addr|variable|firmware_addr
 DECL|firmware_block_ctx|variable|firmware_block_ctx
-DECL|firmware_net_ctx|variable|firmware_net_ctx
+DECL|firmware_ctx|variable|firmware_ctx
 DECL|firmware_transfer|function|static void firmware_transfer(struct k_work *work)
 DECL|firmware_udp_receive|function|firmware_udp_receive(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|firmware_uri|variable|firmware_uri

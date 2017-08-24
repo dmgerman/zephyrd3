@@ -17,6 +17,8 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|WAIT_TIME|macro|WAIT_TIME
+DECL|app_udp4|variable|app_udp4
+DECL|app_udp6|variable|app_udp6
 DECL|battery_current|variable|battery_current
 DECL|battery_voltage|variable|battery_voltage
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)

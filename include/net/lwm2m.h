@@ -52,9 +52,11 @@ DECL|float32_value_t|typedef|} float32_value_t;
 DECL|float32_value|struct|typedef struct float32_value {
 DECL|float64_value_t|typedef|} float64_value_t;
 DECL|float64_value|struct|typedef struct float64_value {
+DECL|lwm2m_ctx|struct|struct lwm2m_ctx {
 DECL|lwm2m_engine_exec_cb_t|typedef|typedef int (*lwm2m_engine_exec_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_engine_get_data_cb_t|typedef|typedef void *(*lwm2m_engine_get_data_cb_t)(u16_t obj_inst_id,
 DECL|lwm2m_engine_set_data_cb_t|typedef|typedef int (*lwm2m_engine_set_data_cb_t)(u16_t obj_inst_id,
+DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|val1|member|s32_t val1;
 DECL|val1|member|s64_t val1;
 DECL|val2|member|s32_t val2;
