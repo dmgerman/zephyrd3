@@ -33,7 +33,7 @@ DECL|generate_notify_message|function|static int generate_notify_message(struct 
 DECL|get_engine_obj_inst|function|static struct lwm2m_engine_obj_inst *get_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|get_engine_obj|function|static struct lwm2m_engine_obj *get_engine_obj(int obj_id)
 DECL|get_observe_option|function|static int get_observe_option(const struct zoap_packet *zpkt)
-DECL|handle_request|function|static int handle_request(struct zoap_packet *request, struct zoap_packet *response, struct sockaddr *from_addr)
+DECL|handle_request|function|static int handle_request(struct net_context *net_ctx, struct zoap_packet *request, struct zoap_packet *response, struct sockaddr *from_addr)
 DECL|last_timestamp|member|s64_t last_timestamp;
 DECL|lwm2m_create_obj_inst|function|int lwm2m_create_obj_inst(u16_t obj_id, u16_t obj_inst_id, struct lwm2m_engine_obj_inst **obj_inst)
 DECL|lwm2m_delete_handler|function|static int lwm2m_delete_handler(struct lwm2m_engine_obj *obj,struct lwm2m_engine_context *context)
@@ -84,8 +84,8 @@ DECL|lwm2m_notify_observer|function|int lwm2m_notify_observer(u16_t obj_id, u16_
 DECL|lwm2m_read_handler|function|static int lwm2m_read_handler(struct lwm2m_engine_obj_inst *obj_inst, struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|lwm2m_register_obj|function|void lwm2m_register_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_sprint_ip_addr|function|char *lwm2m_sprint_ip_addr(const struct sockaddr *addr)
-DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct lwm2m_ctx *client_ctx, struct net_pkt *pkt, bool handle_separate_response, int (*udp_request_handler)(struct zoap_packet *, struct zoap_packet *, struct sockaddr *))
-DECL|lwm2m_udp_sendto|function|int lwm2m_udp_sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr)
+DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct lwm2m_ctx *client_ctx, struct net_pkt *pkt, bool handle_separate_response, int (*udp_request_handler)(struct net_context *net_ctx, struct zoap_packet *, struct zoap_packet *,
+DECL|lwm2m_udp_sendto|function|int lwm2m_udp_sendto(struct net_context *net_ctx, struct net_pkt *pkt, const struct sockaddr *dst_addr)
 DECL|lwm2m_unregister_obj|function|void lwm2m_unregister_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|lwm2m_write_handler|function|int lwm2m_write_handler(struct lwm2m_engine_obj_inst *obj_inst,struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
