@@ -20,6 +20,7 @@ DECL|group_left|function|static void group_left(struct net_mgmt_event_callback *
 DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_pkt *pkt)
 DECL|handler|member|net_mgmt_event_handler_t handler;
 DECL|iface|variable|iface
+DECL|ignore_already|variable|ignore_already
 DECL|is_group_joined|variable|is_group_joined
 DECL|is_group_left|variable|is_group_left
 DECL|is_join_msg_ok|variable|is_join_msg_ok
