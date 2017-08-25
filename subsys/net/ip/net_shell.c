@@ -60,6 +60,7 @@ DECL|ping4_handler|variable|ping4_handler
 DECL|ping6_handler|variable|ping6_handler
 DECL|pos|member|int pos;
 DECL|power|function|static int power(int base, unsigned int exp)
+DECL|print_app_sec_info|function|static void print_app_sec_info(struct net_app_ctx *ctx, const char *sec_type)
 DECL|print_connect_info|function|static void print_connect_info(int family, struct sockaddr *myaddr, struct sockaddr *addr)
 DECL|print_dns_info|function|static void print_dns_info(struct dns_resolve_context *ctx)
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
