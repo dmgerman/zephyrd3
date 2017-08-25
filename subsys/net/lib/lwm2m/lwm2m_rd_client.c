@@ -46,7 +46,6 @@ DECL|lwm2m_rd_client_thread_data|variable|lwm2m_rd_client_thread_data
 DECL|peer_addr_exist|function|static bool peer_addr_exist(struct sockaddr *peer_addr)
 DECL|query_buffer|variable|query_buffer
 DECL|reg_server|member|struct sockaddr reg_server;
-DECL|registered|member|u8_t registered;
 DECL|server_ep|member|char server_ep[CLIENT_EP_LEN];
 DECL|set_sm_state|function|static void set_sm_state(int index, u8_t state)
 DECL|sm_bootstrap_done|function|static int sm_bootstrap_done(int index)
@@ -55,6 +54,7 @@ DECL|sm_do_deregister|function|static int sm_do_deregister(int index)
 DECL|sm_do_init|function|static int sm_do_init(int index)
 DECL|sm_do_registration|function|static int sm_do_registration(int index)
 DECL|sm_engine_state|enum|enum sm_engine_state {
+DECL|sm_is_registered|function|static bool sm_is_registered(int index)
 DECL|sm_registration_done|function|static int sm_registration_done(int index)
 DECL|sm_send_registration|function|static int sm_send_registration(int index, bool send_obj_support_data,zoap_reply_t reply_cb)
 DECL|trigger_update|member|u8_t trigger_update;
