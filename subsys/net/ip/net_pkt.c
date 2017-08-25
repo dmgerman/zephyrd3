@@ -53,6 +53,7 @@ DECL|net_pkt_allocs|variable|net_pkt_allocs
 DECL|net_pkt_alloc|struct|struct net_pkt_alloc {
 DECL|net_pkt_append_bytes|function|static inline u16_t net_pkt_append_bytes(struct net_pkt *pkt, const u8_t *value, u16_t len, s32_t timeout)
 DECL|net_pkt_append|function|u16_t net_pkt_append(struct net_pkt *pkt, u16_t len, const u8_t *data, s32_t timeout)
+DECL|net_pkt_clone|function|struct net_pkt *net_pkt_clone(struct net_pkt *pkt, s32_t timeout)
 DECL|net_pkt_compact|function|bool net_pkt_compact(struct net_pkt *pkt)
 DECL|net_pkt_copy|function|struct net_buf *net_pkt_copy(struct net_pkt *pkt, size_t amount, size_t reserve, s32_t timeout)
 DECL|net_pkt_frag_add_debug|function|void net_pkt_frag_add_debug(struct net_pkt *pkt, struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_add(struct net_pkt *pkt, struct net_buf *frag) #endif
