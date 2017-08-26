@@ -1,7 +1,8 @@
 DECL|base|member|UART_Type *base;
 DECL|baud_rate|member|u32_t baud_rate;
 DECL|callback|member|uart_irq_callback_t callback;
-DECL|clock_source|member|clock_name_t clock_source;
+DECL|clock_name|member|char *clock_name;
+DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
 DECL|uart_mcux_0_config|variable|uart_mcux_0_config
 DECL|uart_mcux_0_data|variable|uart_mcux_0_data
