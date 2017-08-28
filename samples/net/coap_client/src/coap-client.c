@@ -5,12 +5,13 @@ DECL|NUM_REPLIES|macro|NUM_REPLIES
 DECL|cb|variable|cb
 DECL|context|variable|context
 DECL|event_iface_up|function|static void event_iface_up(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
+DECL|get_from_ip_addr|function|static void get_from_ip_addr(struct coap_packet *cpkt, struct sockaddr_in6 *from)
 DECL|main|function|void main(void)
 DECL|mcast_addr|variable|mcast_addr
 DECL|msg_dump|function|static void msg_dump(const char *s, u8_t *data, unsigned len)
 DECL|pendings|variable|pendings
 DECL|replies|variable|replies
-DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|resource_reply_cb|function|static int resource_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|retransmit_work|variable|retransmit_work
 DECL|test_path|variable|test_path
