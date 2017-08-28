@@ -1,0 +1,82 @@
+DECL|BASIC_HEADER_SIZE|macro|BASIC_HEADER_SIZE
+DECL|COAP_MARKER|macro|COAP_MARKER
+DECL|COAP_VERSION|macro|COAP_VERSION
+DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
+DECL|GET_MORE|macro|GET_MORE
+DECL|GET_NUM|macro|GET_NUM
+DECL|LAST_TIMEOUT|macro|LAST_TIMEOUT
+DECL|SET_BLOCK_SIZE|macro|SET_BLOCK_SIZE
+DECL|SET_MORE|macro|SET_MORE
+DECL|SET_NUM|macro|SET_NUM
+DECL|buflen|member|int buflen;
+DECL|buf|member|u8_t *buf;
+DECL|coap_add_block1_option|function|int coap_add_block1_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|coap_add_block2_option|function|int coap_add_block2_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|coap_add_option_int|function|int coap_add_option_int(struct coap_packet *cpkt, u16_t code,unsigned int val)
+DECL|coap_add_option|function|int coap_add_option(struct coap_packet *cpkt, u16_t code, const void *value, u16_t len)
+DECL|coap_add_size1_option|function|int coap_add_size1_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|coap_add_size2_option|function|int coap_add_size2_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|coap_block_transfer_init|function|int coap_block_transfer_init(struct coap_block_context *ctx, enum coap_block_size block_size, size_t total_size)
+DECL|coap_find_observer_by_addr|function|struct coap_observer *coap_find_observer_by_addr(struct coap_observer *observers, size_t len, const struct sockaddr *addr)
+DECL|coap_find_options|function|int coap_find_options(const struct coap_packet *cpkt, u16_t code, struct coap_option *options, u16_t veclen)
+DECL|coap_get_header_len|function|static int coap_get_header_len(const struct coap_packet *cpkt)
+DECL|coap_handle_request|function|int coap_handle_request(struct coap_packet *cpkt,struct coap_resource *resources, const struct sockaddr *from)
+DECL|coap_header_get_code|function|u8_t coap_header_get_code(const struct coap_packet *cpkt)
+DECL|coap_header_get_code|function|u8_t coap_header_get_code(const struct coap_packet *cpkt)
+DECL|coap_header_get_id|function|u16_t coap_header_get_id(const struct coap_packet *cpkt)
+DECL|coap_header_get_tkl|function|static u8_t coap_header_get_tkl(const struct coap_packet *cpkt)
+DECL|coap_header_get_token|function|const u8_t *coap_header_get_token(const struct coap_packet *cpkt, u8_t *len)
+DECL|coap_header_get_type|function|u8_t coap_header_get_type(const struct coap_packet *cpkt)
+DECL|coap_header_get_version|function|u8_t coap_header_get_version(const struct coap_packet *cpkt)
+DECL|coap_header_set_code|function|void coap_header_set_code(struct coap_packet *cpkt, u8_t code)
+DECL|coap_header_set_id|function|void coap_header_set_id(struct coap_packet *cpkt, u16_t id)
+DECL|coap_header_set_token|function|int coap_header_set_token(struct coap_packet *cpkt, const u8_t *token, u8_t tokenlen)
+DECL|coap_header_set_type|function|void coap_header_set_type(struct coap_packet *cpkt, u8_t type)
+DECL|coap_header_set_version|function|void coap_header_set_version(struct coap_packet *cpkt, u8_t ver)
+DECL|coap_next_block|function|size_t coap_next_block(const struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|coap_next_token|function|u8_t *coap_next_token(void)
+DECL|coap_observer_init|function|void coap_observer_init(struct coap_observer *observer,const struct coap_packet *request, const struct sockaddr *addr)
+DECL|coap_observer_next_unused|function|struct coap_observer *coap_observer_next_unused(struct coap_observer *observers, size_t len)
+DECL|coap_option_encode|function|static int coap_option_encode(struct option_context *context, u16_t code, const void *value, u16_t len)
+DECL|coap_option_header_get_delta|function|static u8_t coap_option_header_get_delta(u8_t buf)
+DECL|coap_option_header_get_len|function|static u8_t coap_option_header_get_len(u8_t buf)
+DECL|coap_option_header_set_delta|function|static void coap_option_header_set_delta(u8_t *buf, u8_t delta)
+DECL|coap_option_header_set_len|function|static void coap_option_header_set_len(u8_t *buf, u8_t len)
+DECL|coap_option_value_to_int|function|unsigned int coap_option_value_to_int(const struct coap_option *option)
+DECL|coap_packet_get_payload|function|u8_t *coap_packet_get_payload(struct coap_packet *cpkt, u16_t *len)
+DECL|coap_packet_init|function|int coap_packet_init(struct coap_packet *cpkt, struct net_pkt *pkt)
+DECL|coap_packet_parse|function|int coap_packet_parse(struct coap_packet *cpkt, struct net_pkt *pkt)
+DECL|coap_packet_set_used|function|int coap_packet_set_used(struct coap_packet *cpkt, u16_t len)
+DECL|coap_parse_options|function|static int coap_parse_options(struct coap_packet *cpkt, unsigned int offset)
+DECL|coap_parse_option|function|static int coap_parse_option(const struct coap_packet *cpkt, struct option_context *context, u8_t **value, u16_t *vlen)
+DECL|coap_pending_clear|function|void coap_pending_clear(struct coap_pending *pending)
+DECL|coap_pending_cycle|function|bool coap_pending_cycle(struct coap_pending *pending)
+DECL|coap_pending_init|function|int coap_pending_init(struct coap_pending *pending, const struct coap_packet *request, const struct sockaddr *addr)
+DECL|coap_pending_next_to_expire|function|struct coap_pending *coap_pending_next_to_expire(struct coap_pending *pendings, size_t len)
+DECL|coap_pending_next_unused|function|struct coap_pending *coap_pending_next_unused(struct coap_pending *pendings, size_t len)
+DECL|coap_pending_received|function|struct coap_pending *coap_pending_received(const struct coap_packet *response, struct coap_pending *pendings, size_t len)
+DECL|coap_register_observer|function|bool coap_register_observer(struct coap_resource *resource, struct coap_observer *observer)
+DECL|coap_remove_observer|function|void coap_remove_observer(struct coap_resource *resource, struct coap_observer *observer)
+DECL|coap_reply_clear|function|void coap_reply_clear(struct coap_reply *reply)
+DECL|coap_reply_init|function|void coap_reply_init(struct coap_reply *reply, const struct coap_packet *request)
+DECL|coap_reply_next_unused|function|struct coap_reply *coap_reply_next_unused(struct coap_reply *replies, size_t len)
+DECL|coap_request_is_observe|function|bool coap_request_is_observe(const struct coap_packet *request)
+DECL|coap_resource_notify|function|int coap_resource_notify(struct coap_resource *resource)
+DECL|coap_response_received|function|struct coap_reply *coap_response_received(const struct coap_packet *response, const struct sockaddr *from, struct coap_reply *replies, size_t len)
+DECL|coap_update_from_block|function|int coap_update_from_block(const struct coap_packet *cpkt, struct coap_block_context *ctx)
+DECL|decode_delta|function|static int decode_delta(int num, const u8_t *buf, s16_t buflen,u16_t *decoded)
+DECL|delta_encode|function|static int delta_encode(int num, u8_t *value, u8_t *buf, size_t buflen)
+DECL|delta|member|int delta;
+DECL|get_block_option|function|static int get_block_option(const struct coap_packet *cpkt, u16_t code)
+DECL|get_observe_option|function|static int get_observe_option(const struct coap_packet *cpkt)
+DECL|is_addr_unspecified|function|static inline bool is_addr_unspecified(const struct sockaddr *addr)
+DECL|is_request|function|static bool is_request(const struct coap_packet *cpkt)
+DECL|method_from_code|function|static coap_method_t method_from_code(const struct coap_resource *resource, u8_t code)
+DECL|next_timeout|function|static s32_t next_timeout(s32_t previous)
+DECL|option_context|struct|struct option_context {
+DECL|sockaddr_equal|function|static bool sockaddr_equal(const struct sockaddr *a, const struct sockaddr *b)
+DECL|update_control_block1|function|static int update_control_block1(struct coap_block_context *ctx, int block, int size)
+DECL|update_control_block2|function|static int update_control_block2(struct coap_block_context *ctx, int block, int size)
+DECL|update_descriptive_block|function|static int update_descriptive_block(struct coap_block_context *ctx, int block, int size)
+DECL|uri_path_eq|function|static bool uri_path_eq(const struct coap_packet *cpkt,const char * const *path)
+DECL|used|member|int used; /* size used of options */
