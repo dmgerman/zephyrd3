@@ -127,4 +127,4 @@ DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
 DECL|used|member|bool used;
-DECL|zoap_options_to_path|function|static void zoap_options_to_path(struct zoap_option *opt, int options_count, struct lwm2m_obj_path *path)
+DECL|zoap_options_to_path|function|static int zoap_options_to_path(struct zoap_option *opt, int options_count, struct lwm2m_obj_path *path)
