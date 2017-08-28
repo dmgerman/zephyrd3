@@ -1,5 +1,7 @@
 DECL|PWM_0_DATA_SIZE|macro|PWM_0_DATA_SIZE
 DECL|PWM_0_MAP_SIZE|macro|PWM_0_MAP_SIZE
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|chan_map|struct|struct chan_map {
 DECL|gpiote_base|member|u8_t gpiote_base;
 DECL|map_size|member|u8_t map_size;
