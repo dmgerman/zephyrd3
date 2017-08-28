@@ -48,11 +48,11 @@ DECL|COAP_RESPONSE_CODE_NOT_FOUND|enumerator|COAP_RESPONSE_CODE_NOT_FOUND = coap
 DECL|COAP_RESPONSE_CODE_NOT_IMPLEMENTED|enumerator|COAP_RESPONSE_CODE_NOT_IMPLEMENTED = coap_make_response_code(5, 1),
 DECL|COAP_RESPONSE_CODE_OK|enumerator|COAP_RESPONSE_CODE_OK = coap_make_response_code(2, 0),
 DECL|COAP_RESPONSE_CODE_PRECONDITION_FAILED|enumerator|COAP_RESPONSE_CODE_PRECONDITION_FAILED = coap_make_response_code(4, 12),
-DECL|COAP_RESPONSE_CODE_PROXYING_NOT_SUPPORTED|enumerator|COAP_RESPONSE_CODE_PROXYING_NOT_SUPPORTED = coap_make_response_code(5, 5)
+DECL|COAP_RESPONSE_CODE_PROXYING_NOT_SUPPORTED|enumerator|COAP_RESPONSE_CODE_PROXYING_NOT_SUPPORTED =
 DECL|COAP_RESPONSE_CODE_REQUEST_TOO_LARGE|enumerator|COAP_RESPONSE_CODE_REQUEST_TOO_LARGE = coap_make_response_code(4, 13),
 DECL|COAP_RESPONSE_CODE_SERVICE_UNAVAILABLE|enumerator|COAP_RESPONSE_CODE_SERVICE_UNAVAILABLE = coap_make_response_code(5, 3),
 DECL|COAP_RESPONSE_CODE_UNAUTHORIZED|enumerator|COAP_RESPONSE_CODE_UNAUTHORIZED = coap_make_response_code(4, 1),
-DECL|COAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT|enumerator|COAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT = coap_make_response_code(4, 15),
+DECL|COAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT|enumerator|COAP_RESPONSE_CODE_UNSUPPORTED_CONTENT_FORMAT =
 DECL|COAP_RESPONSE_CODE_VALID|enumerator|COAP_RESPONSE_CODE_VALID = coap_make_response_code(2, 3),
 DECL|COAP_TYPE_ACK|enumerator|COAP_TYPE_ACK = 2,
 DECL|COAP_TYPE_CON|enumerator|COAP_TYPE_CON = 0,
@@ -83,28 +83,34 @@ DECL|coap_reply|struct|struct coap_reply {
 DECL|coap_resource|struct|struct coap_resource {
 DECL|coap_response_code|enum|enum coap_response_code {
 DECL|current|member|size_t current;
+DECL|delta|member|u16_t delta;
 DECL|del|member|coap_method_t get, post, put, del;
+DECL|frag|member|struct net_buf *frag; /* Where CoAP header resides */
 DECL|get|member|coap_method_t get, post, put, del;
+DECL|hdr_len|member|u8_t hdr_len; /* CoAP header length */
 DECL|id|member|u16_t id;
 DECL|id|member|u16_t id;
+DECL|last_delta|member|u16_t last_delta; /* Used only when preparing CoAP packet */
 DECL|len|member|u16_t len;
+DECL|len|member|u8_t len;
 DECL|list|member|sys_snode_t list;
 DECL|notify|member|coap_notify_t notify;
 DECL|observers|member|sys_slist_t observers;
+DECL|offset|member|u16_t offset; /* Where CoAP header starts.*/
+DECL|opt_len|member|u8_t opt_len; /* Total options length (delta + len + value) */
 DECL|path|member|const char * const *path;
 DECL|pkt|member|struct net_pkt *pkt;
 DECL|pkt|member|struct net_pkt *pkt;
 DECL|post|member|coap_method_t get, post, put, del;
 DECL|put|member|coap_method_t get, post, put, del;
 DECL|reply|member|coap_reply_t reply;
-DECL|start|member|u8_t *start; /* Start of the payload */
 DECL|timeout|member|s32_t timeout;
 DECL|tkl|member|u8_t tkl;
 DECL|tkl|member|u8_t tkl;
 DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[8];
 DECL|total_size|member|size_t total_size;
-DECL|total_size|member|u16_t total_size;
 DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
-DECL|value|member|u8_t *value;
+DECL|value|member|u8_t value[12];
+DECL|value|member|u8_t value[CONFIG_COAP_EXTENDED_OPTIONS_LEN_VALUE];
