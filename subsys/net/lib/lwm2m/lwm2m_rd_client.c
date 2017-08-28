@@ -41,14 +41,13 @@ DECL|lifetime|member|u16_t lifetime;
 DECL|lwm2m_rd_client_info|struct|struct lwm2m_rd_client_info {
 DECL|lwm2m_rd_client_init|function|static int lwm2m_rd_client_init(struct device *dev)
 DECL|lwm2m_rd_client_service|function|static void lwm2m_rd_client_service(void)
-DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, struct sockaddr *peer_addr, const char *ep_name)
+DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, char *peer_str, u16_t peer_port, const char *ep_name)
 DECL|lwm2m_rd_client_thread_data|variable|lwm2m_rd_client_thread_data
 DECL|peer_addr_exist|function|static bool peer_addr_exist(struct sockaddr *peer_addr)
 DECL|query_buffer|variable|query_buffer
 DECL|reg_server|member|struct sockaddr reg_server;
 DECL|registered|member|u8_t registered;
 DECL|server_ep|member|char server_ep[CLIENT_EP_LEN];
-DECL|set_ep_ports|function|static void set_ep_ports(int index)
 DECL|set_sm_state|function|static void set_sm_state(int index, u8_t state)
 DECL|sm_bootstrap_done|function|static int sm_bootstrap_done(int index)
 DECL|sm_do_bootstrap|function|static int sm_do_bootstrap(int index)

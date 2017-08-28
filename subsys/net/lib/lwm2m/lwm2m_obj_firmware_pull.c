@@ -1,4 +1,6 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
+DECL|NETWORK_CONNECT_TIMEOUT|macro|NETWORK_CONNECT_TIMEOUT
+DECL|NETWORK_INIT_TIMEOUT|macro|NETWORK_INIT_TIMEOUT
 DECL|PACKAGE_URI_LEN|macro|PACKAGE_URI_LEN
 DECL|STATE_CONNECTING|macro|STATE_CONNECTING
 DECL|STATE_IDLE|macro|STATE_IDLE
@@ -10,7 +12,7 @@ DECL|firmware_addr|variable|firmware_addr
 DECL|firmware_block_ctx|variable|firmware_block_ctx
 DECL|firmware_ctx|variable|firmware_ctx
 DECL|firmware_transfer|function|static void firmware_transfer(struct k_work *work)
-DECL|firmware_udp_receive|function|firmware_udp_receive(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
+DECL|firmware_udp_receive|function|firmware_udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|firmware_uri|variable|firmware_uri
 DECL|firmware_work|variable|firmware_work
 DECL|lwm2m_firmware_cancel_transfer|function|int lwm2m_firmware_cancel_transfer(void)

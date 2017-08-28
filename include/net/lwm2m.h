@@ -48,6 +48,7 @@ DECL|STATE_DOWNLOADING|macro|STATE_DOWNLOADING
 DECL|STATE_IDLE|macro|STATE_IDLE
 DECL|STATE_UPDATING|macro|STATE_UPDATING
 DECL|__LWM2M_H__|macro|__LWM2M_H__
+DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
 DECL|float32_value_t|typedef|} float32_value_t;
 DECL|float32_value|struct|typedef struct float32_value {
 DECL|float64_value_t|typedef|} float64_value_t;
@@ -56,10 +57,13 @@ DECL|lwm2m_ctx|struct|struct lwm2m_ctx {
 DECL|lwm2m_engine_exec_cb_t|typedef|typedef int (*lwm2m_engine_exec_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_engine_get_data_cb_t|typedef|typedef void *(*lwm2m_engine_get_data_cb_t)(u16_t obj_inst_id,
 DECL|lwm2m_engine_set_data_cb_t|typedef|typedef int (*lwm2m_engine_set_data_cb_t)(u16_t obj_inst_id,
-DECL|net_ctx|member|struct net_context *net_ctx;
+DECL|net_app_ctx|member|struct net_app_ctx net_app_ctx;
+DECL|net_init_timeout|member|s32_t net_init_timeout;
+DECL|net_timeout|member|s32_t net_timeout;
 DECL|pendings|member|struct zoap_pending pendings[CONFIG_LWM2M_ENGINE_MAX_PENDING];
 DECL|replies|member|struct zoap_reply replies[CONFIG_LWM2M_ENGINE_MAX_REPLIES];
 DECL|retransmit_work|member|struct k_delayed_work retransmit_work;
+DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
 DECL|val1|member|s32_t val1;
 DECL|val1|member|s64_t val1;
 DECL|val2|member|s32_t val2;
