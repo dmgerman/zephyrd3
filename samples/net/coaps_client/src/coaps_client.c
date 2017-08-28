@@ -1,9 +1,9 @@
+DECL|COAP_BUF_SIZE|macro|COAP_BUF_SIZE
 DECL|DEBUG_THRESHOLD|macro|DEBUG_THRESHOLD
 DECL|MBEDTLS_EXIT_FAILURE|macro|MBEDTLS_EXIT_FAILURE
 DECL|MBEDTLS_EXIT_SUCCESS|macro|MBEDTLS_EXIT_SUCCESS
 DECL|NUM_REPLIES|macro|NUM_REPLIES
 DECL|STACK_SIZE|macro|STACK_SIZE
-DECL|ZOAP_BUF_SIZE|macro|ZOAP_BUF_SIZE
 DECL|dtls_client|function|void dtls_client(void)
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|int dtls_timing_get_delay(void *data)
@@ -23,7 +23,7 @@ DECL|pers|variable|pers
 DECL|psk_id|variable|psk_id
 DECL|psk|variable|psk
 DECL|replies|variable|replies
-DECL|resource_reply_cb|function|static int resource_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|resource_reply_cb|function|static int resource_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|snapshot|member|u32_t snapshot;
 DECL|test_path|variable|test_path
 DECL|thread_data|variable|thread_data
