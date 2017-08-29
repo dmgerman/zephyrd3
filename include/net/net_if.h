@@ -26,6 +26,7 @@ DECL|address|member|struct net_addr address;
 DECL|attempts|member|u8_t attempts;
 DECL|base_reachable_time|member|u32_t base_reachable_time;
 DECL|cb|member|net_if_link_callback_t cb;
+DECL|cb|member|net_if_mcast_callback_t cb;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_timer|member|struct k_delayed_work dad_timer;
@@ -33,6 +34,7 @@ DECL|dev|member|struct device *dev;
 DECL|dhcpv4|member|} dhcpv4;
 DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|u8_t hop_limit;
+DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
 DECL|ipv4|member|} ipv4;
@@ -88,6 +90,8 @@ DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *i
 DECL|net_if_link_callback_t|typedef|typedef void (*net_if_link_callback_t)(struct net_if *iface,
 DECL|net_if_link_cb|struct|struct net_if_link_cb {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
+DECL|net_if_mcast_callback_t|typedef|typedef void (*net_if_mcast_callback_t)(struct net_if *iface,
+DECL|net_if_mcast_monitor|struct|struct net_if_mcast_monitor {
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_pkt *pkt)
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
@@ -98,6 +102,7 @@ DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, u8_t hop_limit)
 DECL|netmask|member|struct in_addr netmask;
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|offload|member|struct net_offload *offload;
 DECL|prefix|member|struct in6_addr prefix;
