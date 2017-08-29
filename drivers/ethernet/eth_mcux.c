@@ -37,6 +37,7 @@ DECL|generate_mac|function|static void generate_mac(u8_t *mac_addr)
 DECL|iface|member|struct net_if *iface;
 DECL|link_up|member|bool link_up;
 DECL|mac_addr|member|u8_t mac_addr[6];
+DECL|net_if_mcast_cb|function|static void net_if_mcast_cb(struct net_if *iface, const struct in6_addr *addr, bool is_joined)
 DECL|phy_duplex|member|phy_duplex_t phy_duplex;
 DECL|phy_speed|member|phy_speed_t phy_speed;
 DECL|phy_state_name|function|static const char *phy_state_name(enum eth_mcux_phy_state state)
