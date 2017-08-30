@@ -26,6 +26,7 @@ DECL|k_thread_custom_data_set|function|void k_thread_custom_data_set(void *value
 DECL|k_thread_resume|function|void k_thread_resume(struct k_thread *thread)
 DECL|k_thread_start|function|void k_thread_start(struct k_thread *thread)
 DECL|k_thread_suspend|function|void k_thread_suspend(struct k_thread *thread)
+DECL|k_thread_user_mode_enter|function|FUNC_NORETURN void k_thread_user_mode_enter(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
 DECL|thread_index_get|function|static unsigned int thread_index_get(void)
 DECL|thread_index|variable|thread_index
