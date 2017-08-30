@@ -340,6 +340,7 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|period|member|s32_t period;
+DECL|perm_index|member|unsigned int perm_index;
 DECL|perms|member|char perms[CONFIG_MAX_THREAD_BYTES];
 DECL|poll_events|member|sys_dlist_t poll_events;
 DECL|poller|member|struct _poller *poller;

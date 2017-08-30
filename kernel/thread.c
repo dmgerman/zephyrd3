@@ -11,6 +11,7 @@ DECL|_k_thread_single_abort|function|void _k_thread_single_abort(struct k_thread
 DECL|_k_thread_single_resume|function|void _k_thread_single_resume(struct k_thread *thread)
 DECL|_k_thread_single_start|function|void _k_thread_single_start(struct k_thread *thread)
 DECL|_k_thread_single_suspend|function|void _k_thread_single_suspend(struct k_thread *thread)
+DECL|_setup_new_thread|function|void _setup_new_thread(struct k_thread *new_thread, k_thread_stack_t stack, size_t stack_size, k_thread_entry_t entry, void *p1, void *p2, void *p3, int prio, u32_t options)
 DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
@@ -26,3 +27,5 @@ DECL|k_thread_resume|function|void k_thread_resume(struct k_thread *thread)
 DECL|k_thread_start|function|void k_thread_start(struct k_thread *thread)
 DECL|k_thread_suspend|function|void k_thread_suspend(struct k_thread *thread)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
+DECL|thread_index_get|function|static unsigned int thread_index_get(void)
+DECL|thread_index|variable|thread_index
