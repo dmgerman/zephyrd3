@@ -201,8 +201,6 @@ DECL|mbedtls_ssl_ciphersuite_t|typedef|typedef struct mbedtls_ssl_ciphersuite_t 
 DECL|mbedtls_ssl_ciphersuite_uses_dhe|function|static inline int mbedtls_ssl_ciphersuite_uses_dhe( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_ciphersuite_uses_ecdhe|function|static inline int mbedtls_ssl_ciphersuite_uses_ecdhe( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_ciphersuite_uses_ecdh|function|static inline int mbedtls_ssl_ciphersuite_uses_ecdh( const mbedtls_ssl_ciphersuite_t *info )
-DECL|mbedtls_ssl_ciphersuite_uses_ec|function|static inline int mbedtls_ssl_ciphersuite_uses_ec( const mbedtls_ssl_ciphersuite_t *info )
-DECL|mbedtls_ssl_ciphersuite_uses_psk|function|static inline int mbedtls_ssl_ciphersuite_uses_psk( const mbedtls_ssl_ciphersuite_t *info )
 DECL|mbedtls_ssl_ciphersuite_uses_server_signature|function|static inline int mbedtls_ssl_ciphersuite_uses_server_signature( const mbedtls_ssl_ciphersuite_t *info )
 DECL|min_major_ver|member|int min_major_ver;
 DECL|min_minor_ver|member|int min_minor_ver;

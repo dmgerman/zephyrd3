@@ -20,8 +20,10 @@ DECL|mbedtls_platform_set_nv_seed|function|int mbedtls_platform_set_nv_seed( int
 DECL|mbedtls_platform_set_printf|function|int mbedtls_platform_set_printf( int (*printf_func)( const char *, ... ) )
 DECL|mbedtls_platform_set_snprintf|function|int mbedtls_platform_set_snprintf( int (*snprintf_func)( char * s, size_t n, const char * format, ... ) )
 DECL|mbedtls_platform_set_time|function|int mbedtls_platform_set_time( mbedtls_time_t (*time_func)( mbedtls_time_t* timer ) )
+DECL|mbedtls_platform_setup|function|int mbedtls_platform_setup( mbedtls_platform_context *ctx )
 DECL|mbedtls_platform_std_nv_seed_read|function|int mbedtls_platform_std_nv_seed_read( unsigned char *buf, size_t buf_len )
 DECL|mbedtls_platform_std_nv_seed_write|function|int mbedtls_platform_std_nv_seed_write( unsigned char *buf, size_t buf_len )
+DECL|mbedtls_platform_teardown|function|void mbedtls_platform_teardown( mbedtls_platform_context *ctx )
 DECL|mbedtls_platform_win32_snprintf|function|int mbedtls_platform_win32_snprintf( char *s, size_t n, const char *fmt, ... )
 DECL|mbedtls_printf|variable|mbedtls_printf
 DECL|mbedtls_snprintf|variable|mbedtls_snprintf

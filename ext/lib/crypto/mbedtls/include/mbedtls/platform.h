@@ -16,6 +16,7 @@ DECL|MBEDTLS_PLATFORM_STD_PRINTF|macro|MBEDTLS_PLATFORM_STD_PRINTF
 DECL|MBEDTLS_PLATFORM_STD_SNPRINTF|macro|MBEDTLS_PLATFORM_STD_SNPRINTF
 DECL|MBEDTLS_PLATFORM_STD_SNPRINTF|macro|MBEDTLS_PLATFORM_STD_SNPRINTF
 DECL|MBEDTLS_PLATFORM_STD_TIME|macro|MBEDTLS_PLATFORM_STD_TIME
+DECL|dummy|member|char dummy; /**< Placeholder member as empty structs are not portable */
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_exit|macro|mbedtls_exit
@@ -28,6 +29,7 @@ DECL|mbedtls_nv_seed_read|macro|mbedtls_nv_seed_read
 DECL|mbedtls_nv_seed_read|macro|mbedtls_nv_seed_read
 DECL|mbedtls_nv_seed_write|macro|mbedtls_nv_seed_write
 DECL|mbedtls_nv_seed_write|macro|mbedtls_nv_seed_write
+DECL|mbedtls_platform_context|typedef|mbedtls_platform_context;
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_snprintf|macro|mbedtls_snprintf

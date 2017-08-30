@@ -68,6 +68,8 @@ DECL|mbedtls_aes_crypt_cfb128|function|int mbedtls_aes_crypt_cfb128( mbedtls_aes
 DECL|mbedtls_aes_crypt_cfb8|function|int mbedtls_aes_crypt_cfb8( mbedtls_aes_context *ctx, int mode, size_t length, unsigned char iv[16], const unsigned char *input,
 DECL|mbedtls_aes_crypt_ctr|function|int mbedtls_aes_crypt_ctr( mbedtls_aes_context *ctx, size_t length, size_t *nc_off, unsigned char nonce_counter[16], unsigned char stream_block[16],
 DECL|mbedtls_aes_crypt_ecb|function|int mbedtls_aes_crypt_ecb( mbedtls_aes_context *ctx, int mode, const unsigned char input[16], unsigned char output[16] )
+DECL|mbedtls_aes_decrypt|function|void mbedtls_aes_decrypt( mbedtls_aes_context *ctx, const unsigned char input[16], unsigned char output[16] )
+DECL|mbedtls_aes_encrypt|function|void mbedtls_aes_encrypt( mbedtls_aes_context *ctx, const unsigned char input[16], unsigned char output[16] )
 DECL|mbedtls_aes_free|function|void mbedtls_aes_free( mbedtls_aes_context *ctx )
 DECL|mbedtls_aes_init|function|void mbedtls_aes_init( mbedtls_aes_context *ctx )
 DECL|mbedtls_aes_self_test|function|int mbedtls_aes_self_test( int verbose )
