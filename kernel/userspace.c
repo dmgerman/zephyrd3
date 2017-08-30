@@ -1,4 +1,3 @@
-DECL|_is_thread_user|function|static int _is_thread_user(void)
 DECL|_k_object_init|function|void _k_object_init(void *object)
 DECL|_k_object_validate|function|int _k_object_validate(void *obj, enum k_objects otype, int init)
 DECL|_k_syscall_entry|function|u32_t _k_syscall_entry(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t call_id)

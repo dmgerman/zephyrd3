@@ -31,6 +31,7 @@ DECL|_is_thread_ready|function|static inline int _is_thread_ready(struct k_threa
 DECL|_is_thread_state_set|function|static inline int _is_thread_state_set(struct k_thread *thread, u32_t state)
 DECL|_is_thread_timeout_active|function|static inline int _is_thread_timeout_active(struct k_thread *thread)
 DECL|_is_thread_timeout_expired|function|static ALWAYS_INLINE int _is_thread_timeout_expired(struct k_thread *thread)
+DECL|_is_thread_user|function|static inline int _is_thread_user(void)
 DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(int prio)
 DECL|_ksched__h_|macro|_ksched__h_
 DECL|_mark_thread_as_dead|function|static inline void _mark_thread_as_dead(struct k_thread *thread)
