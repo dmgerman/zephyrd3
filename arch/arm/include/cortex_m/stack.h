@@ -1,4 +1,2 @@
-DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
-DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
 DECL|_ARM_CORTEXM_STACK__H_|macro|_ARM_CORTEXM_STACK__H_
 DECL|_InterruptStackSetup|function|static ALWAYS_INLINE void _InterruptStackSetup(void)
