@@ -1,0 +1,1 @@
+DECL|__WS_CONSOLE_H__|macro|__WS_CONSOLE_H__
