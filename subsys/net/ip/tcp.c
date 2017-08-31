@@ -33,6 +33,7 @@ DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, c
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, u8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
 DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
+DECL|net_tcp_queue_pkt|function|void net_tcp_queue_pkt(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
 DECL|net_tcp_send_data|function|int net_tcp_send_data(struct net_context *context)
 DECL|net_tcp_send_pkt|function|int net_tcp_send_pkt(struct net_pkt *pkt)
