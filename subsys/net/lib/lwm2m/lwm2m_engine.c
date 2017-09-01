@@ -11,6 +11,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|counter|member|u32_t counter;
+DECL|ctx|member|struct lwm2m_ctx *ctx;
 DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context)
 DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
@@ -91,7 +92,6 @@ DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struc
 DECL|lwm2m_write_handler|function|int lwm2m_write_handler(struct lwm2m_engine_obj_inst *obj_inst,struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|max_period_sec|member|u32_t max_period_sec;
 DECL|min_period_sec|member|u32_t min_period_sec;
-DECL|net_app_ctx|member|struct net_app_ctx *net_app_ctx;
 DECL|next_engine_obj_inst|function|next_engine_obj_inst(struct lwm2m_engine_obj_inst *last, int obj_id, int obj_inst_id)
 DECL|node|member|sys_snode_t node;
 DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
