@@ -8,6 +8,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|default_block_size|function|static enum zoap_block_size default_block_size(void)
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_transmit_timeout_cb|function|static void do_transmit_timeout_cb(struct lwm2m_message *msg)
 DECL|firmware_addr|variable|firmware_addr
 DECL|firmware_block_ctx|variable|firmware_block_ctx
 DECL|firmware_ctx|variable|firmware_ctx
@@ -17,6 +18,5 @@ DECL|firmware_uri|variable|firmware_uri
 DECL|firmware_work|variable|firmware_work
 DECL|lwm2m_firmware_cancel_transfer|function|int lwm2m_firmware_cancel_transfer(void)
 DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(char *package_uri)
-DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|transfer_request|function|static int transfer_request(struct zoap_block_context *ctx, const u8_t *token, u8_t tkl, zoap_reply_t reply_cb)
 DECL|transfer_state|variable|transfer_state

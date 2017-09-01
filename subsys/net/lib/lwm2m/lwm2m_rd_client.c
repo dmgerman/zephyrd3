@@ -53,7 +53,7 @@ DECL|sm_do_registration|function|static int sm_do_registration(int index)
 DECL|sm_engine_state|enum|enum sm_engine_state {
 DECL|sm_is_registered|function|static bool sm_is_registered(int index)
 DECL|sm_registration_done|function|static int sm_registration_done(int index)
-DECL|sm_send_registration|function|static int sm_send_registration(int index, bool send_obj_support_data,zoap_reply_t reply_cb)
+DECL|sm_send_registration|function|static int sm_send_registration(int index, bool send_obj_support_data,zoap_reply_t reply_cb, lwm2m_message_timeout_cb_t timeout_cb)
 DECL|trigger_update|member|u8_t trigger_update;
 DECL|use_bootstrap|member|u8_t use_bootstrap;
 DECL|use_registration|member|u8_t use_registration;
