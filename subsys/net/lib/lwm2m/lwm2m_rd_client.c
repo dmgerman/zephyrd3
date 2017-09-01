@@ -20,7 +20,6 @@ DECL|STATE_MACHINE_UPDATE_INTERVAL|macro|STATE_MACHINE_UPDATE_INTERVAL
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|bootstrapped|member|u8_t bootstrapped; /* bootstrap done */
-DECL|bs_server|member|struct sockaddr bs_server;
 DECL|client_count|variable|client_count
 DECL|client_data|variable|client_data
 DECL|clients|variable|clients
@@ -32,7 +31,7 @@ DECL|do_update_reply_cb|function|static int do_update_reply_cb(const struct zoap
 DECL|engine_state|member|u8_t engine_state;
 DECL|engine_trigger_update|function|void engine_trigger_update(void)
 DECL|ep_name|member|char ep_name[CLIENT_EP_LEN];
-DECL|find_clients_index|function|static int find_clients_index(const struct sockaddr *addr, bool check_bs_server)
+DECL|find_clients_index|function|static int find_clients_index(const struct sockaddr *addr)
 DECL|get_sm_state|function|static u8_t get_sm_state(int index)
 DECL|has_bs_server_info|member|u8_t has_bs_server_info;
 DECL|has_registration_info|member|u8_t has_registration_info;
@@ -43,9 +42,7 @@ DECL|lwm2m_rd_client_init|function|static int lwm2m_rd_client_init(struct device
 DECL|lwm2m_rd_client_service|function|static void lwm2m_rd_client_service(void)
 DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, char *peer_str, u16_t peer_port, const char *ep_name)
 DECL|lwm2m_rd_client_thread_data|variable|lwm2m_rd_client_thread_data
-DECL|peer_addr_exist|function|static bool peer_addr_exist(struct sockaddr *peer_addr)
 DECL|query_buffer|variable|query_buffer
-DECL|reg_server|member|struct sockaddr reg_server;
 DECL|server_ep|member|char server_ep[CLIENT_EP_LEN];
 DECL|set_sm_state|function|static void set_sm_state(int index, u8_t state)
 DECL|sm_bootstrap_done|function|static int sm_bootstrap_done(int index)
