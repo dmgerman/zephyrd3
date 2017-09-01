@@ -11,7 +11,8 @@ DECL|context|member|struct net_context *context;
 DECL|family|member|u8_t family : 4; /* IPv4 vs IPv6 */
 DECL|forwarding|member|u8_t forwarding : 1; /* Are we forwarding this pkt
 DECL|frags|member|struct net_buf *frags;
-DECL|ieee802154_rssi|member|u8_t ieee802154_rssi;
+DECL|ieee802154_lqi|member|u8_t ieee802154_lqi; /* Link Quality Indicator */
+DECL|ieee802154_rssi|member|u8_t ieee802154_rssi; /* Received Signal Strength Indication */
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|u8_t ip_hdr_len; /* pre-filled in order to avoid func call */
 DECL|ipv4_ttl|member|u8_t ipv4_ttl;
@@ -57,6 +58,7 @@ DECL|net_pkt_get_reserve_tx|macro|net_pkt_get_reserve_tx
 DECL|net_pkt_get_reserve|macro|net_pkt_get_reserve
 DECL|net_pkt_get_rx|macro|net_pkt_get_rx
 DECL|net_pkt_get_tx|macro|net_pkt_get_tx
+DECL|net_pkt_ieee802154_lqi|function|static inline u8_t net_pkt_ieee802154_lqi(struct net_pkt *pkt)
 DECL|net_pkt_ieee802154_rssi|function|static inline u8_t net_pkt_ieee802154_rssi(struct net_pkt *pkt)
 DECL|net_pkt_iface|function|static inline struct net_if *net_pkt_iface(struct net_pkt *pkt)
 DECL|net_pkt_insert_be16|function|static inline bool net_pkt_insert_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t data)
@@ -92,6 +94,7 @@ DECL|net_pkt_set_context|function|static inline void net_pkt_set_context(struct 
 DECL|net_pkt_set_eof|function|static inline void net_pkt_set_eof(struct net_pkt *pkt, bool eof)
 DECL|net_pkt_set_family|function|static inline void net_pkt_set_family(struct net_pkt *pkt, u8_t family)
 DECL|net_pkt_set_forwarding|function|static inline void net_pkt_set_forwarding(struct net_pkt *pkt, bool forward)
+DECL|net_pkt_set_ieee802154_lqi|function|static inline void net_pkt_set_ieee802154_lqi(struct net_pkt *pkt, u8_t lqi)
 DECL|net_pkt_set_ieee802154_rssi|function|static inline void net_pkt_set_ieee802154_rssi(struct net_pkt *pkt, u8_t rssi)
 DECL|net_pkt_set_iface|function|static inline void net_pkt_set_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_ip_hdr_len|function|static inline void net_pkt_set_ip_hdr_len(struct net_pkt *pkt, u8_t len)
