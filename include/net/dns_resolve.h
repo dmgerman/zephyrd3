@@ -17,9 +17,13 @@ DECL|DNS_EAI_OVERFLOW|enumerator|DNS_EAI_OVERFLOW = -12, /* Argument buffer over
 DECL|DNS_EAI_SERVICE|enumerator|DNS_EAI_SERVICE = -8, /* SRV not supported for `ai_socktype' */
 DECL|DNS_EAI_SOCKTYPE|enumerator|DNS_EAI_SOCKTYPE = -7, /* `ai_socktype' not supported */
 DECL|DNS_EAI_SYSTEM|enumerator|DNS_EAI_SYSTEM = -11, /* System error returned in `errno' */
+DECL|DNS_MAX_MCAST_SERVERS|macro|DNS_MAX_MCAST_SERVERS
 DECL|DNS_MAX_NAME_SIZE|macro|DNS_MAX_NAME_SIZE
 DECL|DNS_QUERY_TYPE_AAAA|enumerator|DNS_QUERY_TYPE_AAAA = 28 /* IPv6 */
 DECL|DNS_QUERY_TYPE_A|enumerator|DNS_QUERY_TYPE_A = 1, /* IPv4 */
+DECL|LLMNR_SERVER_COUNT|macro|LLMNR_SERVER_COUNT
+DECL|LLMNR_SERVER_COUNT|macro|LLMNR_SERVER_COUNT
+DECL|LLMNR_SERVER_COUNT|macro|LLMNR_SERVER_COUNT
 DECL|MDNS_SERVER_COUNT|macro|MDNS_SERVER_COUNT
 DECL|MDNS_SERVER_COUNT|macro|MDNS_SERVER_COUNT
 DECL|MDNS_SERVER_COUNT|macro|MDNS_SERVER_COUNT
@@ -42,13 +46,14 @@ DECL|dns_resolve_context|struct|struct dns_resolve_context {
 DECL|dns_resolve_status|enum|enum dns_resolve_status {
 DECL|dns_server|member|struct sockaddr dns_server;
 DECL|id|member|u16_t id;
-DECL|is_mdns|member|bool is_mdns;
+DECL|is_llmnr|member|u8_t is_llmnr : 1;
+DECL|is_mdns|member|u8_t is_mdns : 1;
 DECL|is_used|member|bool is_used;
 DECL|net_ctx|member|struct net_context *net_ctx;
 DECL|queries|member|} queries[CONFIG_DNS_NUM_CONCUR_QUERIES];
 DECL|query_type|member|enum dns_query_type query_type;
 DECL|query|member|const char *query;
-DECL|servers|member|} servers[CONFIG_DNS_RESOLVER_MAX_SERVERS + MDNS_SERVER_COUNT];
+DECL|servers|member|} servers[CONFIG_DNS_RESOLVER_MAX_SERVERS + DNS_MAX_MCAST_SERVERS];
 DECL|timeout|member|s32_t timeout;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|user_data|member|void *user_data;
