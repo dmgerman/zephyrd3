@@ -44,6 +44,7 @@ DECL|irqb_int_handler|function|static inline void irqb_int_handler(struct device
 DECL|mcr20a_abort_sequence|function|static inline int mcr20a_abort_sequence(struct mcr20a_context *mcr20a,bool force)
 DECL|mcr20a_cca|function|static int mcr20a_cca(struct device *dev)
 DECL|mcr20a_context_data|variable|mcr20a_context_data
+DECL|mcr20a_get_capabilities|function|static enum ieee802154_hw_caps mcr20a_get_capabilities(struct device *dev)
 DECL|mcr20a_get_rssi|function|static inline u32_t mcr20a_get_rssi(u32_t lqi)
 DECL|mcr20a_iface_init|function|static void mcr20a_iface_init(struct net_if *iface)
 DECL|mcr20a_init|function|static int mcr20a_init(struct device *dev)

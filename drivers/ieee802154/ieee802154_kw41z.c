@@ -32,6 +32,7 @@ DECL|kw41z_context|struct|struct kw41z_context {
 DECL|kw41z_convert_lqi|function|static u8_t kw41z_convert_lqi(u8_t hw_lqi)
 DECL|kw41z_disable_seq_irq|function|static inline void kw41z_disable_seq_irq(void)
 DECL|kw41z_enable_seq_irq|function|static inline void kw41z_enable_seq_irq(void)
+DECL|kw41z_get_capabilities|function|static enum ieee802154_hw_caps kw41z_get_capabilities(struct device *dev)
 DECL|kw41z_get_instant_state|function|static inline u8_t kw41z_get_instant_state(void)
 DECL|kw41z_get_seq_state|function|static inline u8_t kw41z_get_seq_state(void)
 DECL|kw41z_iface_init|function|static void kw41z_iface_init(struct net_if *iface)

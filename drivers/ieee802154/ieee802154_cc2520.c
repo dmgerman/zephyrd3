@@ -24,6 +24,7 @@ DECL|cc2520_crypto_begin_session|function|static int cc2520_crypto_begin_session
 DECL|cc2520_crypto_free_session|function|static int cc2520_crypto_free_session(struct device *dev, struct cipher_ctx *ctx)
 DECL|cc2520_crypto_hw_caps|function|static int cc2520_crypto_hw_caps(struct device *dev)
 DECL|cc2520_crypto_init|function|static int cc2520_crypto_init(struct device *dev)
+DECL|cc2520_get_capabilities|function|static enum ieee802154_hw_caps cc2520_get_capabilities(struct device *dev)
 DECL|cc2520_iface_init|function|static void cc2520_iface_init(struct net_if *iface)
 DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_radio_api|variable|cc2520_radio_api

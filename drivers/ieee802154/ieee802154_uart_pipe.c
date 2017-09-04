@@ -4,6 +4,7 @@ DECL|get_mac|function|static inline u8_t *get_mac(struct device *dev)
 DECL|upipe_cca|function|static int upipe_cca(struct device *dev)
 DECL|upipe_context_data|variable|upipe_context_data
 DECL|upipe_dev|variable|upipe_dev
+DECL|upipe_get_capabilities|function|static enum ieee802154_hw_caps upipe_get_capabilities(struct device *dev)
 DECL|upipe_iface_init|function|static void upipe_iface_init(struct net_if *iface)
 DECL|upipe_init|function|static int upipe_init(struct device *dev)
 DECL|upipe_radio_api|variable|upipe_radio_api
