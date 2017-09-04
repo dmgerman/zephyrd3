@@ -159,6 +159,7 @@ DECL|net_rpl_dag_set_used|function|static inline void net_rpl_dag_set_used(struc
 DECL|net_rpl_dag_unjoin|function|static inline void net_rpl_dag_unjoin(struct net_rpl_dag *dag)
 DECL|net_rpl_dag|struct|struct net_rpl_dag {
 DECL|net_rpl_dio|struct|struct net_rpl_dio {
+DECL|net_rpl_get_interface|function|static inline struct net_if *net_rpl_get_interface(void)
 DECL|net_rpl_global_repair|macro|net_rpl_global_repair
 DECL|net_rpl_init|macro|net_rpl_init
 DECL|net_rpl_instance|struct|struct net_rpl_instance {

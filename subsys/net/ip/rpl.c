@@ -87,6 +87,7 @@ DECL|net_rpl_free_dag|function|static void net_rpl_free_dag(struct net_if *iface
 DECL|net_rpl_get_any_dag|function|struct net_rpl_dag *net_rpl_get_any_dag(void)
 DECL|net_rpl_get_default_instance|function|struct net_rpl_instance *net_rpl_get_default_instance(void)
 DECL|net_rpl_get_instance|function|static struct net_rpl_instance *net_rpl_get_instance(u8_t instance_id)
+DECL|net_rpl_get_interface|function|struct net_if *net_rpl_get_interface(void)
 DECL|net_rpl_get_ipv6_nbr_data|function|net_rpl_get_ipv6_nbr_data(struct net_rpl_parent *parent)
 DECL|net_rpl_get_mode|function|enum net_rpl_mode net_rpl_get_mode(void)
 DECL|net_rpl_get_nbr|function|struct net_nbr *net_rpl_get_nbr(struct net_rpl_parent *data)
