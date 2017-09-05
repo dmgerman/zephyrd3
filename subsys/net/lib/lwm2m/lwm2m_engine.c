@@ -25,6 +25,7 @@ DECL|engine_obj_inst_list|variable|engine_obj_inst_list
 DECL|engine_obj_list|variable|engine_obj_list
 DECL|engine_observer_list|variable|engine_observer_list
 DECL|engine_register_obj_inst|function|static void engine_register_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
+DECL|engine_remove_observer_by_id|function|static void engine_remove_observer_by_id(u16_t obj_id, s32_t obj_inst_id)
 DECL|engine_remove_observer|function|static int engine_remove_observer(const u8_t *token, u8_t tkl)
 DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
