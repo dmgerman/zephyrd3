@@ -21,6 +21,7 @@ DECL|JSON_TOK_OBJECT_START|enumerator|JSON_TOK_OBJECT_START = '{',
 DECL|JSON_TOK_STRING|enumerator|JSON_TOK_STRING = '"',
 DECL|JSON_TOK_TRUE|enumerator|JSON_TOK_TRUE = 't',
 DECL|__JSON_H|macro|__JSON_H
+DECL|alignment|member|size_t alignment;
 DECL|array|member|} array;
 DECL|element_descr|member|const struct json_obj_descr *element_descr;
 DECL|field_name_len|member|size_t field_name_len;
