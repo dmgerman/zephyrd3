@@ -42,6 +42,7 @@ DECL|kw41z_prepare_for_new_state|function|static int kw41z_prepare_for_new_state
 DECL|kw41z_radio_api|variable|kw41z_radio_api
 DECL|kw41z_rx|function|static inline void kw41z_rx(struct kw41z_context *kw41z, u8_t len)
 DECL|kw41z_set_channel|function|static int kw41z_set_channel(struct device *dev, u16_t channel)
+DECL|kw41z_set_filter|function|static int kw41z_set_filter(struct device *dev, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|kw41z_set_ieee_addr|function|static int kw41z_set_ieee_addr(struct device *dev, const u8_t *ieee_addr)
 DECL|kw41z_set_pan_id|function|static int kw41z_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|kw41z_set_seq_state|function|static inline void kw41z_set_seq_state(u8_t state)

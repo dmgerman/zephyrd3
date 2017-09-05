@@ -16,6 +16,7 @@ DECL|nrf5_radio_cfg|variable|nrf5_radio_cfg
 DECL|nrf5_radio_irq|function|static void nrf5_radio_irq(void *arg)
 DECL|nrf5_rx_thread|function|static void nrf5_rx_thread(void *arg1, void *arg2, void *arg3)
 DECL|nrf5_set_channel|function|static int nrf5_set_channel(struct device *dev, u16_t channel)
+DECL|nrf5_set_filter|function|static int nrf5_set_filter(struct device *dev, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|nrf5_set_ieee_addr|function|static int nrf5_set_ieee_addr(struct device *dev, const u8_t *ieee_addr)
 DECL|nrf5_set_pan_id|function|static int nrf5_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|nrf5_set_short_addr|function|static int nrf5_set_short_addr(struct device *dev, u16_t short_addr)

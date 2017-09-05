@@ -30,6 +30,7 @@ DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_radio_api|variable|cc2520_radio_api
 DECL|cc2520_rx|function|static void cc2520_rx(int arg)
 DECL|cc2520_set_channel|function|static int cc2520_set_channel(struct device *dev, u16_t channel)
+DECL|cc2520_set_filter|function|static int cc2520_set_filter(struct device *dev, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|cc2520_set_ieee_addr|function|static int cc2520_set_ieee_addr(struct device *dev, const u8_t *ieee_addr)
 DECL|cc2520_set_pan_id|function|static int cc2520_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|cc2520_set_short_addr|function|static int cc2520_set_short_addr(struct device *dev, u16_t short_addr)
