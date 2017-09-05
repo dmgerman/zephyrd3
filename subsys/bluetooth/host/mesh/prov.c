@@ -104,6 +104,7 @@ DECL|gen_prov_start|function|static void gen_prov_start(struct prov_rx *rx, stru
 DECL|gen_prov|variable|gen_prov
 DECL|gpc|member|u8_t gpc;
 DECL|id|member|u32_t id; /* Link ID */
+DECL|id|member|u8_t id;
 DECL|id|member|u8_t id; /* Transaction ID */
 DECL|input_action|function|static bt_mesh_input_action input_action(u8_t action)
 DECL|last_seg|function|static u8_t last_seg(u8_t len)
@@ -115,6 +116,7 @@ DECL|link_id|member|u32_t link_id;
 DECL|link_open|function|static void link_open(struct prov_rx *rx, struct net_buf_simple *buf)
 DECL|link|variable|link
 DECL|min_len|member|const u8_t min_len;
+DECL|next_transaction_id|function|static inline u8_t next_transaction_id(void)
 DECL|oob_action|member|u8_t oob_action;
 DECL|oob_method|member|u8_t oob_method;
 DECL|oob_size|member|u8_t oob_size;
