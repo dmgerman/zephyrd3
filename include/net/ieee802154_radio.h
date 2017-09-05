@@ -19,9 +19,6 @@ DECL|iface_api|member|struct net_if_api iface_api;
 DECL|pan_id|member|u16_t pan_id;
 DECL|set_channel|member|int (*set_channel)(struct device *dev, u16_t channel);
 DECL|set_filter|member|int (*set_filter)(struct device *dev,
-DECL|set_ieee_addr|member|int (*set_ieee_addr)(struct device *dev, const u8_t *ieee_addr);
-DECL|set_pan_id|member|int (*set_pan_id)(struct device *dev, u16_t pan_id);
-DECL|set_short_addr|member|int (*set_short_addr)(struct device *dev, u16_t short_addr);
 DECL|set_txpower|member|int (*set_txpower)(struct device *dev, s16_t dbm);
 DECL|short_addr|member|u16_t short_addr;
 DECL|start|member|int (*start)(struct device *dev);
