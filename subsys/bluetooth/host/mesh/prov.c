@@ -141,6 +141,7 @@ DECL|prov_retransmit|function|static void prov_retransmit(struct k_work *work)
 DECL|prov_rx|struct|struct prov_rx {
 DECL|prov_salt|member|u8_t prov_salt[16]; /* Provisioning Salt */
 DECL|prov_send_adv|function|static int prov_send_adv(struct net_buf_simple *msg)
+DECL|prov_send_fail_msg|function|static void prov_send_fail_msg(u8_t err)
 DECL|prov_send_gatt|function|static int prov_send_gatt(struct net_buf_simple *msg)
 DECL|prov_send|function|static inline int prov_send(struct net_buf_simple *buf)
 DECL|prov_start|function|static void prov_start(const u8_t *data)
