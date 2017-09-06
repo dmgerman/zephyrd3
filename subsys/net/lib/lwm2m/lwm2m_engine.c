@@ -37,7 +37,7 @@ DECL|engine_remove_observer|function|static int engine_remove_observer(const u8_
 DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|event_timestamp|member|s64_t event_timestamp;
-DECL|find_msg_from_pending|function|struct lwm2m_message *find_msg_from_pending(struct zoap_pending *pending)
+DECL|find_msg|function|static struct lwm2m_message *find_msg(struct zoap_pending *pending, struct zoap_reply *reply)
 DECL|format|member|u16_t format;
 DECL|free_block_ctx|function|static void free_block_ctx(struct block_context *ctx)
 DECL|generate_notify_message|function|static int generate_notify_message(struct observe_node *obs, bool manual_trigger)
