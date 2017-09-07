@@ -207,7 +207,7 @@ DECL|packet_counter|member|u8_t packet_counter;
 DECL|packet_data_octets_max|member|u16_t packet_data_octets_max;
 DECL|packet_release_first|member|u8_t packet_release_first;
 DECL|packet_release_last|member|u8_t volatile packet_release_last;
-DECL|packet_rx_acquired_count_get|function|static u8_t packet_rx_acquired_count_get(void)
+DECL|packet_rx_acquired_count_get|function|static inline u8_t packet_rx_acquired_count_get(void)
 DECL|packet_rx_acquire|member|u8_t packet_rx_acquire;
 DECL|packet_rx_allocate|function|static void packet_rx_allocate(u8_t max)
 DECL|packet_rx_callback|function|static void packet_rx_callback(void)
@@ -217,7 +217,7 @@ DECL|packet_rx_data_pool_size|member|u16_t packet_rx_data_pool_size;
 DECL|packet_rx_data_size|member|u16_t packet_rx_data_size;
 DECL|packet_rx_enqueue|function|static void packet_rx_enqueue(void)
 DECL|packet_rx_last|member|u8_t volatile packet_rx_last;
-DECL|packet_rx_reserve_get|function|static struct radio_pdu_node_rx *packet_rx_reserve_get(u8_t count)
+DECL|packet_rx_reserve_get|function|static inline struct radio_pdu_node_rx *packet_rx_reserve_get(u8_t count)
 DECL|packet_rx|member|struct radio_pdu_node_rx **packet_rx;
 DECL|packet_tx_count|member|u8_t packet_tx_count;
 DECL|packet_tx_data_size|member|u16_t packet_tx_data_size;
