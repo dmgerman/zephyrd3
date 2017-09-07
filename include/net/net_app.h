@@ -69,7 +69,7 @@ DECL|net_app_send_cb_t|typedef|typedef void (*net_app_send_cb_t)(struct net_app_
 DECL|net_app_send_data_t|typedef|typedef int (*net_app_send_data_t)(struct net_pkt *pkt,
 DECL|net_app_set_net_pkt_pool|macro|net_app_set_net_pkt_pool
 DECL|net_app_type|enum|enum net_app_type {
-DECL|net_ctx|member|struct net_context *net_ctx;
+DECL|net_ctxs|member|struct net_context *net_ctxs[CONFIG_NET_APP_SERVER_NUM_CONN];
 DECL|node|member|sys_snode_t node;
 DECL|personalization_data_len|member|size_t personalization_data_len;
 DECL|personalization_data|member|u8_t *personalization_data;

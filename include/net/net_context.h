@@ -20,6 +20,7 @@ DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
 DECL|flags|member|u8_t flags;
 DECL|iface|member|u8_t iface;
 DECL|local|member|struct sockaddr_ptr local;
+DECL|net_app|member|void *net_app;
 DECL|net_context_cb_t|typedef|typedef void (*net_context_cb_t)(struct net_context *context, void *user_data);
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,
 DECL|net_context_get_family|function|static inline sa_family_t net_context_get_family(struct net_context *context)

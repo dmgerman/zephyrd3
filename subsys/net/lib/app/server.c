@@ -7,6 +7,8 @@ DECL|TLS_STARTUP_TIMEOUT|macro|TLS_STARTUP_TIMEOUT
 DECL|_net_app_accept_cb|function|void _net_app_accept_cb(struct net_context *net_ctx,struct sockaddr *addr, socklen_t addrlen, int status, void *data)
 DECL|_net_app_server_tls_disable|function|bool _net_app_server_tls_disable(struct net_app_ctx *ctx)
 DECL|_net_app_server_tls_enable|function|bool _net_app_server_tls_enable(struct net_app_ctx *ctx)
+DECL|find_net_ctx|function|static struct net_context *find_net_ctx(struct net_app_ctx *ctx,int *idx)
+DECL|get_avail_net_ctx|function|static int get_avail_net_ctx(struct net_app_ctx *ctx)
 DECL|net_app_init_server|function|int net_app_init_server(struct net_app_ctx *ctx,enum net_sock_type sock_type, enum net_ip_protocol proto, struct sockaddr *server_addr, u16_t port,
 DECL|net_app_listen|function|int net_app_listen(struct net_app_ctx *ctx)
 DECL|net_app_server_disable|function|bool net_app_server_disable(struct net_app_ctx *ctx)
