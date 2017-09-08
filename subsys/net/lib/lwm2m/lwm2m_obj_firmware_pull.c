@@ -2,12 +2,14 @@ DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|NETWORK_CONNECT_TIMEOUT|macro|NETWORK_CONNECT_TIMEOUT
 DECL|NETWORK_INIT_TIMEOUT|macro|NETWORK_INIT_TIMEOUT
 DECL|PACKAGE_URI_LEN|macro|PACKAGE_URI_LEN
+DECL|PACKET_TRANSFER_RETRY_MAX|macro|PACKET_TRANSFER_RETRY_MAX
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
 DECL|do_transmit_timeout_cb|function|static void do_transmit_timeout_cb(struct lwm2m_message *msg)
 DECL|firmware_block_ctx|variable|firmware_block_ctx
 DECL|firmware_ctx|variable|firmware_ctx
+DECL|firmware_retry|variable|firmware_retry
 DECL|firmware_transfer|function|static void firmware_transfer(struct k_work *work)
 DECL|firmware_udp_receive|function|firmware_udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|firmware_uri|variable|firmware_uri
