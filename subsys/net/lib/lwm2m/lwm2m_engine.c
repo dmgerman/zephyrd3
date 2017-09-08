@@ -52,6 +52,7 @@ DECL|lwm2m_create_obj_inst|function|int lwm2m_create_obj_inst(u16_t obj_id, u16_
 DECL|lwm2m_default_block_size|function|enum zoap_block_size lwm2m_default_block_size(void)
 DECL|lwm2m_delete_handler|function|static int lwm2m_delete_handler(struct lwm2m_engine_obj *obj,struct lwm2m_engine_context *context)
 DECL|lwm2m_delete_obj_inst|function|int lwm2m_delete_obj_inst(u16_t obj_id, u16_t obj_inst_id)
+DECL|lwm2m_engine_context_init|function|void lwm2m_engine_context_init(struct lwm2m_ctx *client_ctx)
 DECL|lwm2m_engine_create_obj_inst|function|int lwm2m_engine_create_obj_inst(char *pathstr)
 DECL|lwm2m_engine_get_bool|function|bool lwm2m_engine_get_bool(char *pathstr)
 DECL|lwm2m_engine_get_float32|function|int lwm2m_engine_get_float32(char *pathstr, float32_value_t *buf)
