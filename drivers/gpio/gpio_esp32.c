@@ -3,6 +3,7 @@ DECL|ack_reg|member|volatile u32_t *ack_reg;
 DECL|cb_pins|member|u32_t cb_pins;
 DECL|cb|member|sys_slist_t cb;
 DECL|clear_reg|member|volatile u32_t *clear_reg;
+DECL|config_drive_strength|function|static void config_drive_strength(u32_t pin, int flags)
 DECL|config_interrupt|function|static int config_interrupt(u32_t pin, int flags)
 DECL|config_polarity|function|static void config_polarity(u32_t pin, int flags)
 DECL|convert_int_type|function|static int convert_int_type(int flags)
