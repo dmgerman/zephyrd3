@@ -1,12 +1,13 @@
 DECL|BUS_SPEED_FAST_HZ|macro|BUS_SPEED_FAST_HZ
 DECL|BUS_SPEED_HIGH_HZ|macro|BUS_SPEED_HIGH_HZ
 DECL|BUS_SPEED_STANDARD_HZ|macro|BUS_SPEED_STANDARD_HZ
+DECL|CKDIV_MAX|macro|CKDIV_MAX
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
+DECL|DEV_NAME|macro|DEV_NAME
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|buf|member|u8_t *buf;
-DECL|clk_div_calc|function|static u32_t clk_div_calc(u32_t speed)
 DECL|flags|member|u8_t flags;
 DECL|i2c0_sam_config|variable|i2c0_sam_config
 DECL|i2c0_sam_data|variable|i2c0_sam_data
@@ -17,6 +18,7 @@ DECL|i2c1_sam_irq_config|function|static void i2c1_sam_irq_config(void)
 DECL|i2c2_sam_config|variable|i2c2_sam_config
 DECL|i2c2_sam_data|variable|i2c2_sam_data
 DECL|i2c2_sam_irq_config|function|static void i2c2_sam_irq_config(void)
+DECL|i2c_clk_set|function|static int i2c_clk_set(Twihs *const twihs, u32_t speed)
 DECL|idx|member|u32_t idx;
 DECL|irq_config|member|void (*irq_config)(void);
 DECL|irq_id|member|u8_t irq_id;
