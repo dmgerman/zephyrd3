@@ -21,7 +21,7 @@ DECL|dev_data_1|variable|dev_data_1
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|i2c_sam3_dev_config|struct|struct i2c_sam3_dev_config {
 DECL|i2c_sam3_dev_data|struct|struct i2c_sam3_dev_data {
-DECL|i2c_sam3_init|function|static int i2c_sam3_init(struct device *dev)
+DECL|i2c_sam3_init|function|static int __deprecated i2c_sam3_init(struct device *dev)
 DECL|i2c_sam3_isr|function|static void i2c_sam3_isr(void *arg)
 DECL|i2c_sam3_runtime_configure|function|static int i2c_sam3_runtime_configure(struct device *dev, u32_t config)
 DECL|i2c_sam3_transfer|function|static int i2c_sam3_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t slave_address)
