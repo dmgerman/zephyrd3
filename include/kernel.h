@@ -178,7 +178,6 @@ DECL|_static_thread_data|struct|struct _static_thread_data {
 DECL|_syncing_thread|member|k_tid_t _syncing_thread;
 DECL|_thread_base_t|typedef|typedef struct _thread_base _thread_base_t;
 DECL|_thread_base|struct|struct _thread_base {
-DECL|_thread_entry_t|typedef|typedef void (*_thread_entry_t)(void *, void *, void *);
 DECL|_thread_stack_info_t|typedef|typedef struct _thread_stack_info _thread_stack_info_t;
 DECL|_thread_stack_info|struct|struct _thread_stack_info {
 DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
@@ -228,7 +227,7 @@ DECL|info|member|u32_t info;
 DECL|init_abort|member|void (*init_abort)(void);
 DECL|init_data|member|void *init_data;
 DECL|init_delay|member|s32_t init_delay;
-DECL|init_entry|member|void (*init_entry)(void *, void *, void *);
+DECL|init_entry|member|k_thread_entry_t init_entry;
 DECL|init_groups|member|u32_t init_groups;
 DECL|init_options|member|u32_t init_options;
 DECL|init_p1|member|void *init_p1;
@@ -335,7 +334,7 @@ DECL|num_used|member|u32_t num_used;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
-DECL|pEntry|member|_thread_entry_t pEntry;
+DECL|pEntry|member|k_thread_entry_t pEntry;
 DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
