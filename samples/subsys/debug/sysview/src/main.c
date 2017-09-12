@@ -2,12 +2,10 @@ DECL|ENABLE_SYSVIEW_EVENT|macro|ENABLE_SYSVIEW_EVENT
 DECL|ENABLE_SYSVIEW_EVENT|macro|ENABLE_SYSVIEW_EVENT
 DECL|MUST_LOG|macro|MUST_LOG
 DECL|MUST_LOG|macro|MUST_LOG
-DECL|calc_stack|variable|calc_stack
 DECL|calc_thread_data|variable|calc_thread_data
 DECL|calc_thread|function|static void calc_thread(void)
 DECL|interrupt|variable|interrupt
 DECL|main|function|void main(void)
-DECL|printer_stack|variable|printer_stack
 DECL|printer_thread_data|variable|printer_thread_data
 DECL|printer_thread|function|static void printer_thread(void)
 DECL|publish_context_switch|function|static void publish_context_switch(u32_t *event_data)
@@ -19,7 +17,6 @@ DECL|sysview_api_send_task_list|function|static void sysview_api_send_task_list(
 DECL|sysview_get_interrupt|function|u32_t sysview_get_interrupt(void)
 DECL|sysview_get_timestamp|function|u32_t sysview_get_timestamp(void)
 DECL|sysview_setup|function|static void sysview_setup(void)
-DECL|sysview_stack|variable|sysview_stack
 DECL|sysview_thread_data|variable|sysview_thread_data
 DECL|sysview_thread|function|static void sysview_thread(void)
 DECL|timestamp|variable|timestamp
