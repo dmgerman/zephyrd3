@@ -42,7 +42,7 @@ DECL|btusb_init|function|static int btusb_init(struct device *dev)
 DECL|btusb_int_in|function|static void btusb_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_iso_in|function|static void btusb_iso_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_iso_out|function|static void btusb_iso_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|btusb_status_cb|function|static void btusb_status_cb(enum usb_dc_status_code status)
+DECL|btusb_status_cb|function|static void btusb_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
 DECL|interface_data|member|u8_t interface_data[BTUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)

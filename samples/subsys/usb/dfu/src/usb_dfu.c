@@ -17,7 +17,7 @@ DECL|dfu_mode_usb_description|variable|dfu_mode_usb_description
 DECL|dfu_reset_counters|function|static void dfu_reset_counters(void)
 DECL|dfu_runtime_usb_description|variable|dfu_runtime_usb_description
 DECL|dfu_start|function|int dfu_start(struct device *flash_dev, u32_t flash_base_addr,u32_t flash_page_size, u32_t flash_upload_size)
-DECL|dfu_status_cb|function|static void dfu_status_cb(enum usb_dc_status_code status)
+DECL|dfu_status_cb|function|static void dfu_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|flash_base_addr|member|u32_t flash_base_addr;
 DECL|flash_dev|member|struct device *flash_dev;
 DECL|flash_page_size|member|u32_t flash_page_size;

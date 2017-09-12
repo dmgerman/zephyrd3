@@ -18,7 +18,7 @@ DECL|usb_ep_cfg_data|struct|struct usb_ep_cfg_data {
 DECL|usb_interface_cfg_data|struct|struct usb_interface_cfg_data {
 DECL|usb_request_handler|typedef|typedef int (*usb_request_handler) (struct usb_setup_packet *detup,
 DECL|usb_setup_packet|struct|struct usb_setup_packet {
-DECL|usb_status_callback|typedef|typedef void (*usb_status_callback)(enum usb_dc_status_code status_code);
+DECL|usb_status_callback|typedef|typedef void (*usb_status_callback)(enum usb_dc_status_code status_code,
 DECL|vendor_data|member|u8_t *vendor_data;
 DECL|vendor_handler|member|usb_request_handler vendor_handler;
 DECL|wIndex|member|u16_t wIndex; /**< request specific parameter */

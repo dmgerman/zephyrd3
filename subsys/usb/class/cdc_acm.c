@@ -12,7 +12,7 @@ DECL|cdc_acm_class_handle_req|function|int cdc_acm_class_handle_req(struct usb_s
 DECL|cdc_acm_config|variable|cdc_acm_config
 DECL|cdc_acm_dev_data_t|struct|struct cdc_acm_dev_data_t {
 DECL|cdc_acm_dev_data|variable|cdc_acm_dev_data
-DECL|cdc_acm_dev_status_cb|function|static void cdc_acm_dev_status_cb(enum usb_dc_status_code status)
+DECL|cdc_acm_dev_status_cb|function|static void cdc_acm_dev_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|cdc_acm_dev|variable|cdc_acm_dev
 DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api
 DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api

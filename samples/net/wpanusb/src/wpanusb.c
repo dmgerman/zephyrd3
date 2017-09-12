@@ -58,5 +58,5 @@ DECL|wpanusb_ep|variable|wpanusb_ep
 DECL|wpanusb_init|function|static int wpanusb_init(struct device *dev)
 DECL|wpanusb_start|function|static void wpanusb_start(struct device *dev)
 DECL|wpanusb_start|macro|wpanusb_start
-DECL|wpanusb_status_cb|function|static void wpanusb_status_cb(enum usb_dc_status_code status)
+DECL|wpanusb_status_cb|function|static void wpanusb_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|wpanusb_vendor_handler|function|static int wpanusb_vendor_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)

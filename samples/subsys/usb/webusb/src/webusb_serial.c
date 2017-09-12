@@ -27,7 +27,7 @@ DECL|webusb_serial_config|variable|webusb_serial_config
 DECL|webusb_serial_custom_handle_req|function|int webusb_serial_custom_handle_req(struct usb_setup_packet *pSetup,s32_t *len, u8_t **data)
 DECL|webusb_serial_dev_data_t|struct|struct webusb_serial_dev_data_t {
 DECL|webusb_serial_dev_data|variable|webusb_serial_dev_data
-DECL|webusb_serial_dev_status_cb|function|static void webusb_serial_dev_status_cb(enum usb_dc_status_code status)
+DECL|webusb_serial_dev_status_cb|function|static void webusb_serial_dev_status_cb(enum usb_dc_status_code status,u8_t *param)
 DECL|webusb_serial_dev|variable|webusb_serial_dev
 DECL|webusb_serial_driver_api|variable|webusb_serial_driver_api
 DECL|webusb_serial_driver_api|variable|webusb_serial_driver_api
