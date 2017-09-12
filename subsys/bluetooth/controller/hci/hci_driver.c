@@ -1,6 +1,7 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|NODE_RX|macro|NODE_RX
 DECL|_hci_driver_init|function|static int _hci_driver_init(struct device *unused)
+DECL|acl_handle|function|static int acl_handle(struct net_buf *buf)
 DECL|cmd_handle|function|static int cmd_handle(struct net_buf *buf)
 DECL|drv|variable|drv
 DECL|encode_node|function|static inline struct net_buf *encode_node(struct radio_pdu_node_rx *node_rx, s8_t class)

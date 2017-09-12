@@ -181,6 +181,7 @@ DECL|BT_HCI_EVT_CMD_COMPLETE|macro|BT_HCI_EVT_CMD_COMPLETE
 DECL|BT_HCI_EVT_CMD_STATUS|macro|BT_HCI_EVT_CMD_STATUS
 DECL|BT_HCI_EVT_CONN_COMPLETE|macro|BT_HCI_EVT_CONN_COMPLETE
 DECL|BT_HCI_EVT_CONN_REQUEST|macro|BT_HCI_EVT_CONN_REQUEST
+DECL|BT_HCI_EVT_DATA_BUF_OVERFLOW|macro|BT_HCI_EVT_DATA_BUF_OVERFLOW
 DECL|BT_HCI_EVT_DISCONN_COMPLETE|macro|BT_HCI_EVT_DISCONN_COMPLETE
 DECL|BT_HCI_EVT_ENCRYPT_CHANGE|macro|BT_HCI_EVT_ENCRYPT_CHANGE
 DECL|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE|macro|BT_HCI_EVT_ENCRYPT_KEY_REFRESH_COMPLETE
@@ -466,6 +467,8 @@ DECL|BT_OGF_STATUS|macro|BT_OGF_STATUS
 DECL|BT_OGF_VS|macro|BT_OGF_VS
 DECL|BT_OGF|macro|BT_OGF
 DECL|BT_OP|macro|BT_OP
+DECL|BT_OVERFLOW_LINK_ACL|macro|BT_OVERFLOW_LINK_ACL
+DECL|BT_OVERFLOW_LINK_SYNCH|macro|BT_OVERFLOW_LINK_SYNCH
 DECL|BT_TX_POWER_LEVEL_CURRENT|macro|BT_TX_POWER_LEVEL_CURRENT
 DECL|BT_TX_POWER_LEVEL_MAX|macro|BT_TX_POWER_LEVEL_MAX
 DECL|EDR_ESCO_PKT_MASK|macro|EDR_ESCO_PKT_MASK
@@ -485,6 +488,7 @@ DECL|HCI_PKT_TYPE_HV2|macro|HCI_PKT_TYPE_HV2
 DECL|HCI_PKT_TYPE_HV3|macro|HCI_PKT_TYPE_HV3
 DECL|SCO_PKT_MASK|macro|SCO_PKT_MASK
 DECL|__BT_HCI_H|macro|__BT_HCI_H
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -859,6 +863,7 @@ DECL|bt_hci_evt_cmd_complete|struct|struct bt_hci_evt_cmd_complete {
 DECL|bt_hci_evt_cmd_status|struct|struct bt_hci_evt_cmd_status {
 DECL|bt_hci_evt_conn_complete|struct|struct bt_hci_evt_conn_complete {
 DECL|bt_hci_evt_conn_request|struct|struct bt_hci_evt_conn_request {
+DECL|bt_hci_evt_data_buf_overflow|struct|struct bt_hci_evt_data_buf_overflow {
 DECL|bt_hci_evt_disconn_complete|struct|struct bt_hci_evt_disconn_complete {
 DECL|bt_hci_evt_encrypt_change|struct|struct bt_hci_evt_encrypt_change {
 DECL|bt_hci_evt_encrypt_key_refresh_complete|struct|struct bt_hci_evt_encrypt_key_refresh_complete {
@@ -1153,6 +1158,7 @@ DECL|len|member|u8_t len;
 DECL|le|member|u8_t le;
 DECL|link_key|member|u8_t link_key[16];
 DECL|link_key|member|u8_t link_key[16];
+DECL|link_type|member|u8_t link_type;
 DECL|link_type|member|u8_t link_type;
 DECL|link_type|member|u8_t link_type;
 DECL|link_type|member|u8_t link_type;
