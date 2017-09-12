@@ -21,6 +21,7 @@ DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_add
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
 DECL|allocs_cb|function|static void allocs_cb(struct net_pkt *pkt, struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free,
 DECL|are_external_pools|member|bool are_external_pools;
+DECL|arp_cb|function|static void arp_cb(struct arp_entry *entry, void *user_data)
 DECL|conn_handler_cb|function|static void conn_handler_cb(struct net_conn *conn, void *user_data)
 DECL|context_cb|function|static void context_cb(struct net_context *context, void *user_data)
 DECL|context_info|function|static void context_info(struct net_context *context, void *user_data)
@@ -43,6 +44,7 @@ DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *u
 DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
 DECL|net_shell_cmd_app|function|int net_shell_cmd_app(int argc, char *argv[])
+DECL|net_shell_cmd_arp|function|int net_shell_cmd_arp(int argc, char *argv[])
 DECL|net_shell_cmd_conn|function|int net_shell_cmd_conn(int argc, char *argv[])
 DECL|net_shell_cmd_dns|function|int net_shell_cmd_dns(int argc, char *argv[])
 DECL|net_shell_cmd_http|function|int net_shell_cmd_http(int argc, char *argv[])
