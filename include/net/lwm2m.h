@@ -33,6 +33,15 @@ DECL|LWM2M_OBJECT_FIRMWARE_ID|macro|LWM2M_OBJECT_FIRMWARE_ID
 DECL|LWM2M_OBJECT_LOCATION_ID|macro|LWM2M_OBJECT_LOCATION_ID
 DECL|LWM2M_OBJECT_SECURITY_ID|macro|LWM2M_OBJECT_SECURITY_ID
 DECL|LWM2M_OBJECT_SERVER_ID|macro|LWM2M_OBJECT_SERVER_ID
+DECL|LWM2M_RD_CLIENT_EVENT_BOOTSTRAP_COMPLETE|enumerator|LWM2M_RD_CLIENT_EVENT_BOOTSTRAP_COMPLETE,
+DECL|LWM2M_RD_CLIENT_EVENT_BOOTSTRAP_FAILURE|enumerator|LWM2M_RD_CLIENT_EVENT_BOOTSTRAP_FAILURE,
+DECL|LWM2M_RD_CLIENT_EVENT_DEREGISTER_FAILURE|enumerator|LWM2M_RD_CLIENT_EVENT_DEREGISTER_FAILURE,
+DECL|LWM2M_RD_CLIENT_EVENT_DISCONNECT|enumerator|LWM2M_RD_CLIENT_EVENT_DISCONNECT
+DECL|LWM2M_RD_CLIENT_EVENT_NONE|enumerator|LWM2M_RD_CLIENT_EVENT_NONE,
+DECL|LWM2M_RD_CLIENT_EVENT_REGISTRATION_COMPLETE|enumerator|LWM2M_RD_CLIENT_EVENT_REGISTRATION_COMPLETE,
+DECL|LWM2M_RD_CLIENT_EVENT_REGISTRATION_FAILURE|enumerator|LWM2M_RD_CLIENT_EVENT_REGISTRATION_FAILURE,
+DECL|LWM2M_RD_CLIENT_EVENT_REG_UPDATE_COMPLETE|enumerator|LWM2M_RD_CLIENT_EVENT_REG_UPDATE_COMPLETE,
+DECL|LWM2M_RD_CLIENT_EVENT_REG_UPDATE_FAILURE|enumerator|LWM2M_RD_CLIENT_EVENT_REG_UPDATE_FAILURE,
 DECL|RESULT_CONNECTION_LOST|macro|RESULT_CONNECTION_LOST
 DECL|RESULT_DEFAULT|macro|RESULT_DEFAULT
 DECL|RESULT_INTEGRITY_FAILED|macro|RESULT_INTEGRITY_FAILED
@@ -53,10 +62,12 @@ DECL|float32_value_t|typedef|} float32_value_t;
 DECL|float32_value|struct|typedef struct float32_value {
 DECL|float64_value_t|typedef|} float64_value_t;
 DECL|float64_value|struct|typedef struct float64_value {
+DECL|lwm2m_ctx_event_cb_t|typedef|typedef void (*lwm2m_ctx_event_cb_t)(struct lwm2m_ctx *ctx,
 DECL|lwm2m_ctx|struct|struct lwm2m_ctx {
 DECL|lwm2m_engine_exec_cb_t|typedef|typedef int (*lwm2m_engine_exec_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_engine_get_data_cb_t|typedef|typedef void *(*lwm2m_engine_get_data_cb_t)(u16_t obj_inst_id,
 DECL|lwm2m_engine_set_data_cb_t|typedef|typedef int (*lwm2m_engine_set_data_cb_t)(u16_t obj_inst_id,
+DECL|lwm2m_rd_client_event|enum|enum lwm2m_rd_client_event {
 DECL|net_app_ctx|member|struct net_app_ctx net_app_ctx;
 DECL|net_init_timeout|member|s32_t net_init_timeout;
 DECL|net_timeout|member|s32_t net_timeout;

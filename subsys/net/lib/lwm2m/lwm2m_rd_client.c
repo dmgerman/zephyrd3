@@ -35,6 +35,7 @@ DECL|do_update_timeout_cb|function|static void do_update_timeout_cb(struct lwm2m
 DECL|engine_state|member|u8_t engine_state;
 DECL|engine_trigger_update|function|void engine_trigger_update(void)
 DECL|ep_name|member|char ep_name[CLIENT_EP_LEN];
+DECL|event_cb|member|lwm2m_ctx_event_cb_t event_cb;
 DECL|find_clients_index|function|static int find_clients_index(const struct sockaddr *addr)
 DECL|find_rd_client_from_msg|function|static int find_rd_client_from_msg(struct lwm2m_message *msg, struct lwm2m_rd_client_info *rd_clients, size_t len)
 DECL|get_sm_state|function|static u8_t get_sm_state(int index)
@@ -45,11 +46,11 @@ DECL|lifetime|member|u16_t lifetime;
 DECL|lwm2m_rd_client_info|struct|struct lwm2m_rd_client_info {
 DECL|lwm2m_rd_client_init|function|static int lwm2m_rd_client_init(struct device *dev)
 DECL|lwm2m_rd_client_service|function|static void lwm2m_rd_client_service(void)
-DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, char *peer_str, u16_t peer_port, const char *ep_name)
+DECL|lwm2m_rd_client_start|function|int lwm2m_rd_client_start(struct lwm2m_ctx *client_ctx, char *peer_str, u16_t peer_port, const char *ep_name, lwm2m_ctx_event_cb_t event_cb)
 DECL|lwm2m_rd_client_thread_data|variable|lwm2m_rd_client_thread_data
 DECL|query_buffer|variable|query_buffer
 DECL|server_ep|member|char server_ep[CLIENT_EP_LEN];
-DECL|set_sm_state|function|static void set_sm_state(int index, u8_t state)
+DECL|set_sm_state|function|static void set_sm_state(int index, u8_t sm_state)
 DECL|sm_bootstrap_done|function|static int sm_bootstrap_done(int index)
 DECL|sm_do_bootstrap|function|static int sm_do_bootstrap(int index)
 DECL|sm_do_deregister|function|static int sm_do_deregister(int index)

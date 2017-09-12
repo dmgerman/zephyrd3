@@ -35,6 +35,7 @@ DECL|main|function|void main(void)
 DECL|pwrsrc_bat|variable|pwrsrc_bat
 DECL|pwrsrc_usb|variable|pwrsrc_usb
 DECL|quit_lock|variable|quit_lock
+DECL|rd_client_event|function|static void rd_client_event(struct lwm2m_ctx *client, enum lwm2m_rd_client_event client_event)
 DECL|tx_udp_slab|function|static struct k_mem_slab *tx_udp_slab(void)
 DECL|tx_udp_slab|macro|tx_udp_slab
 DECL|usb_current|variable|usb_current
