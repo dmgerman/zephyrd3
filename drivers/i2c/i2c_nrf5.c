@@ -4,7 +4,7 @@ DECL|NRF5_TWI_INT_STOPPED|macro|NRF5_TWI_INT_STOPPED
 DECL|NRF5_TWI_INT_TXDSENT|macro|NRF5_TWI_INT_TXDSENT
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|base|member|volatile NRF_TWI_Type *base;
-DECL|default_cfg|member|union dev_config default_cfg;
+DECL|default_cfg|member|u32_t default_cfg;
 DECL|err|member|u32_t err:1;
 DECL|gpio|member|struct device *gpio;
 DECL|i2c_nrf5_config_0|variable|i2c_nrf5_config_0

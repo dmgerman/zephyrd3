@@ -4,7 +4,7 @@ DECL|_STM32_I2C_H_|macro|_STM32_I2C_H_
 DECL|bitrate|member|u32_t bitrate;
 DECL|buf|member|u8_t *buf;
 DECL|current|member|} current;
-DECL|dev_config|member|union dev_config dev_config;
+DECL|dev_config|member|u32_t dev_config;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|flags|member|unsigned int flags;
 DECL|i2c_stm32_config|struct|struct i2c_stm32_config {

@@ -21,7 +21,7 @@ DECL|idx|member|u32_t idx;
 DECL|irq_config|member|void (*irq_config)(void);
 DECL|irq_id|member|u8_t irq_id;
 DECL|len|member|u32_t len;
-DECL|mode_config|member|union dev_config mode_config;
+DECL|mode_config|member|u32_t mode_config;
 DECL|msg|member|struct twihs_msg msg;
 DECL|periph_id|member|u8_t periph_id;
 DECL|pin_list_size|member|u8_t pin_list_size;

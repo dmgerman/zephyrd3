@@ -15,7 +15,7 @@ DECL|config_func_t|typedef|typedef void (*config_func_t)(struct device *dev);
 DECL|config_func|member|config_func_t config_func;
 DECL|dev_config_0|variable|dev_config_0
 DECL|dev_config_1|variable|dev_config_1
-DECL|dev_config|member|union dev_config dev_config;
+DECL|dev_config|member|u32_t dev_config;
 DECL|dev_data_0|variable|dev_data_0
 DECL|dev_data_1|variable|dev_data_1
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
