@@ -14,6 +14,7 @@ DECL|I2C_SPEED_FAST|macro|I2C_SPEED_FAST
 DECL|I2C_SPEED_GET|macro|I2C_SPEED_GET
 DECL|I2C_SPEED_HIGH|macro|I2C_SPEED_HIGH
 DECL|I2C_SPEED_MASK|macro|I2C_SPEED_MASK
+DECL|I2C_SPEED_SET|macro|I2C_SPEED_SET
 DECL|I2C_SPEED_SHIFT|macro|I2C_SPEED_SHIFT
 DECL|I2C_SPEED_STANDARD|macro|I2C_SPEED_STANDARD
 DECL|I2C_SPEED_ULTRA|macro|I2C_SPEED_ULTRA
@@ -22,7 +23,7 @@ DECL|__bits|struct|struct __bits {
 DECL|bits|member|} bits;
 DECL|buf|member|u8_t *buf;
 DECL|configure|member|i2c_api_configure_t configure;
-DECL|dev_config|union|union dev_config {
+DECL|dev_config|union|union __deprecated dev_config {
 DECL|flags|member|u8_t flags;
 DECL|i2c_addr|member|u16_t i2c_addr;
 DECL|i2c_api_configure_t|typedef|typedef int (*i2c_api_configure_t)(struct device *dev,
