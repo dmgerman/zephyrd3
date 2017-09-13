@@ -66,8 +66,8 @@ DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *
 DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
+DECL|_unused|member|u16_t _unused;
 DECL|_unused|member|u32_t _unused:1;
-DECL|_unused|member|u8_t _unused;
 DECL|clock_data|member|void *clock_data;
 DECL|clock|member|struct device *clock;
 DECL|clock|member|struct device *clock;
@@ -77,7 +77,6 @@ DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|dfs|member|u32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|dfs|member|u8_t dfs; /* dfs in bytes: 1,2 or 4 */
 DECL|error|member|u32_t error:1;
-DECL|error|member|u8_t error;
 DECL|fifo_diff|member|u32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
 DECL|fifo_diff|member|u8_t fifo_diff; /* cannot be bigger than FIFO depth */
 DECL|last_tx|member|u32_t last_tx:1;
