@@ -25,6 +25,7 @@ DECL|_EXC_FUNC_CODE|macro|_EXC_FUNC_CODE
 DECL|_EXC_FUNC_NOCODE|macro|_EXC_FUNC_NOCODE
 DECL|_EXC_FUNC|macro|_EXC_FUNC
 DECL|_NanoFatalErrorHandler|function|FUNC_NORETURN void _NanoFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
+DECL|_arch_syscall_oops|function|FUNC_NORETURN void _arch_syscall_oops(void *ssf_ptr)
 DECL|_debug_fatal_hook|function|__weak void _debug_fatal_hook(const NANO_ESF *esf) { ARG_UNUSED(esf); }
 DECL|_default_esf|variable|_default_esf
 DECL|_df_esf|variable|_df_esf

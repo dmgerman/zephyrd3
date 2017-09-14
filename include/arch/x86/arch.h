@@ -62,6 +62,8 @@ DECL|_arch_syscall_invoke4|function|static inline u32_t _arch_syscall_invoke4(u3
 DECL|_arch_syscall_invoke5|function|static inline u32_t _arch_syscall_invoke5(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t call_id)
 DECL|_int_latency_start|macro|_int_latency_start
 DECL|_int_latency_stop|macro|_int_latency_stop
+DECL|_x86_syscall_stack_frame|struct|struct _x86_syscall_stack_frame {
+DECL|cs|member|u32_t cs;
 DECL|cs|member|unsigned int cs;
 DECL|cs|member|unsigned int cs;
 DECL|dpl|member|unsigned int dpl;
@@ -77,13 +79,16 @@ DECL|edi|member|unsigned int edi;
 DECL|edi|member|unsigned int edi;
 DECL|edx|member|unsigned int edx;
 DECL|edx|member|unsigned int edx;
+DECL|eflags|member|u32_t eflags;
 DECL|eflags|member|unsigned int eflags;
 DECL|eflags|member|unsigned int eflags;
+DECL|eip|member|u32_t eip;
 DECL|eip|member|unsigned int eip;
 DECL|eip|member|unsigned int eip;
 DECL|errorCode|member|unsigned int errorCode;
 DECL|esi|member|unsigned int esi;
 DECL|esi|member|unsigned int esi;
+DECL|esp|member|u32_t esp;
 DECL|esp|member|unsigned int esp;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
@@ -92,5 +97,6 @@ DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
 DECL|priority|member|unsigned int priority;
 DECL|s_isrList|struct|typedef struct s_isrList {
+DECL|ss|member|u32_t ss;
 DECL|tss|member|unsigned int tss;
 DECL|vec|member|unsigned int vec;
