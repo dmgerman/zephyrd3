@@ -212,7 +212,6 @@ DECL|LL_SPI_SR_MODF|macro|LL_SPI_SR_MODF
 DECL|LL_SPI_SR_OVR|macro|LL_SPI_SR_OVR
 DECL|LL_SPI_SR_RXNE|macro|LL_SPI_SR_RXNE
 DECL|LL_SPI_SR_TXE|macro|LL_SPI_SR_TXE
-DECL|LL_SPI_SR_UDR|macro|LL_SPI_SR_UDR
 DECL|LL_SPI_SetBaudRatePrescaler|function|__STATIC_INLINE void LL_SPI_SetBaudRatePrescaler(SPI_TypeDef *SPIx, uint32_t BaudRate)
 DECL|LL_SPI_SetCRCNext|function|__STATIC_INLINE void LL_SPI_SetCRCNext(SPI_TypeDef *SPIx)
 DECL|LL_SPI_SetCRCPolynomial|function|__STATIC_INLINE void LL_SPI_SetCRCPolynomial(SPI_TypeDef *SPIx, uint32_t CRCPoly)

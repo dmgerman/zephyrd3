@@ -1,5 +1,6 @@
 DECL|BDTR_BK2F_SHIFT|macro|BDTR_BK2F_SHIFT
 DECL|BDTR_BKF_SHIFT|macro|BDTR_BKF_SHIFT
+DECL|HAL_TIMEx_Break2Callback|function|__weak void HAL_TIMEx_Break2Callback(TIM_HandleTypeDef *htim)
 DECL|HAL_TIMEx_BreakCallback|function|__weak void HAL_TIMEx_BreakCallback(TIM_HandleTypeDef *htim)
 DECL|HAL_TIMEx_CommutationCallback|function|__weak void HAL_TIMEx_CommutationCallback(TIM_HandleTypeDef *htim)
 DECL|HAL_TIMEx_ConfigBreakDeadTime|function|HAL_StatusTypeDef HAL_TIMEx_ConfigBreakDeadTime(TIM_HandleTypeDef *htim, TIM_BreakDeadTimeConfigTypeDef * sBreakDeadTimeConfig)

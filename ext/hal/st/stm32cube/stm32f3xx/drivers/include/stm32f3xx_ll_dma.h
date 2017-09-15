@@ -1,6 +1,4 @@
 DECL|CHANNEL_OFFSET_TAB|variable|CHANNEL_OFFSET_TAB
-DECL|DMA_CSELR_OFFSET|macro|DMA_CSELR_OFFSET
-DECL|DMA_POSITION_CSELR_CXS|macro|DMA_POSITION_CSELR_CXS
 DECL|Direction|member|uint32_t Direction; /*!< Specifies if the data will be transferred from memory to peripheral,
 DECL|LL_DMA_CCR_HTIE|macro|LL_DMA_CCR_HTIE
 DECL|LL_DMA_CCR_TCIE|macro|LL_DMA_CCR_TCIE

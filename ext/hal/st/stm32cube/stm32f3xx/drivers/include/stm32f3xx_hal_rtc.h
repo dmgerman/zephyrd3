@@ -9,7 +9,7 @@ DECL|Date|member|uint8_t Date; /*!< Specifies the RTC Date.
 DECL|DayLightSaving|member|uint32_t DayLightSaving; /*!< Specifies RTC_DayLightSaveOperation: the value of hour adjustment.
 DECL|HAL_RTCStateTypeDef|typedef|}HAL_RTCStateTypeDef;
 DECL|HAL_RTC_STATE_BUSY|enumerator|HAL_RTC_STATE_BUSY = 0x02U, /*!< RTC process is ongoing */
-DECL|HAL_RTC_STATE_ERROR|enumerator|HAL_RTC_STATE_ERROR = 0x04 /*!< RTC error state */
+DECL|HAL_RTC_STATE_ERROR|enumerator|HAL_RTC_STATE_ERROR = 0x04U /*!< RTC error state */
 DECL|HAL_RTC_STATE_READY|enumerator|HAL_RTC_STATE_READY = 0x01U, /*!< RTC initialized and ready for use */
 DECL|HAL_RTC_STATE_RESET|enumerator|HAL_RTC_STATE_RESET = 0x00U, /*!< RTC not yet initialized or disabled */
 DECL|HAL_RTC_STATE_TIMEOUT|enumerator|HAL_RTC_STATE_TIMEOUT = 0x03U, /*!< RTC timeout state */
