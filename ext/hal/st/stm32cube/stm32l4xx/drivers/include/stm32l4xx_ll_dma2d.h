@@ -104,6 +104,7 @@ DECL|LL_DMA2D_FLAG_TCIF|macro|LL_DMA2D_FLAG_TCIF
 DECL|LL_DMA2D_FLAG_TEIF|macro|LL_DMA2D_FLAG_TEIF
 DECL|LL_DMA2D_FLAG_TWIF|macro|LL_DMA2D_FLAG_TWIF
 DECL|LL_DMA2D_GetDeadTime|function|__STATIC_INLINE uint32_t LL_DMA2D_GetDeadTime(DMA2D_TypeDef *DMA2Dx)
+DECL|LL_DMA2D_GetLineOffsetMode|function|__STATIC_INLINE uint32_t LL_DMA2D_GetLineOffsetMode(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_GetLineOffset|function|__STATIC_INLINE uint32_t LL_DMA2D_GetLineOffset(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_GetLineWatermark|function|__STATIC_INLINE uint32_t LL_DMA2D_GetLineWatermark(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_GetMode|function|__STATIC_INLINE uint32_t LL_DMA2D_GetMode(DMA2D_TypeDef *DMA2Dx)
@@ -114,6 +115,7 @@ DECL|LL_DMA2D_GetOutputColorMode|function|__STATIC_INLINE uint32_t LL_DMA2D_GetO
 DECL|LL_DMA2D_GetOutputColor|function|__STATIC_INLINE uint32_t LL_DMA2D_GetOutputColor(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_GetOutputMemAddr|function|__STATIC_INLINE uint32_t LL_DMA2D_GetOutputMemAddr(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_GetOutputRBSwapMode|function|__STATIC_INLINE uint32_t LL_DMA2D_GetOutputRBSwapMode(DMA2D_TypeDef *DMA2Dx)
+DECL|LL_DMA2D_GetOutputSwapMode|function|__STATIC_INLINE uint32_t LL_DMA2D_GetOutputSwapMode(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_INPUT_MODE_A4|macro|LL_DMA2D_INPUT_MODE_A4
 DECL|LL_DMA2D_INPUT_MODE_A8|macro|LL_DMA2D_INPUT_MODE_A8
 DECL|LL_DMA2D_INPUT_MODE_AL44|macro|LL_DMA2D_INPUT_MODE_AL44
@@ -148,7 +150,11 @@ DECL|LL_DMA2D_IsEnabledIT_TE|function|__STATIC_INLINE uint32_t LL_DMA2D_IsEnable
 DECL|LL_DMA2D_IsEnabledIT_TW|function|__STATIC_INLINE uint32_t LL_DMA2D_IsEnabledIT_TW(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_IsSuspended|function|__STATIC_INLINE uint32_t LL_DMA2D_IsSuspended(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_IsTransferOngoing|function|__STATIC_INLINE uint32_t LL_DMA2D_IsTransferOngoing(DMA2D_TypeDef *DMA2Dx)
+DECL|LL_DMA2D_LINE_OFFSET_BYTES|macro|LL_DMA2D_LINE_OFFSET_BYTES
+DECL|LL_DMA2D_LINE_OFFSET_PIXELS|macro|LL_DMA2D_LINE_OFFSET_PIXELS
 DECL|LL_DMA2D_LayerCfgTypeDef|typedef|} LL_DMA2D_LayerCfgTypeDef;
+DECL|LL_DMA2D_MODE_M2M_BLEND_FIXED_COLOR_BG|macro|LL_DMA2D_MODE_M2M_BLEND_FIXED_COLOR_BG
+DECL|LL_DMA2D_MODE_M2M_BLEND_FIXED_COLOR_FG|macro|LL_DMA2D_MODE_M2M_BLEND_FIXED_COLOR_FG
 DECL|LL_DMA2D_MODE_M2M_BLEND|macro|LL_DMA2D_MODE_M2M_BLEND
 DECL|LL_DMA2D_MODE_M2M_PFC|macro|LL_DMA2D_MODE_M2M_PFC
 DECL|LL_DMA2D_MODE_M2M|macro|LL_DMA2D_MODE_M2M
@@ -162,7 +168,10 @@ DECL|LL_DMA2D_RB_MODE_REGULAR|macro|LL_DMA2D_RB_MODE_REGULAR
 DECL|LL_DMA2D_RB_MODE_SWAP|macro|LL_DMA2D_RB_MODE_SWAP
 DECL|LL_DMA2D_ReadReg|macro|LL_DMA2D_ReadReg
 DECL|LL_DMA2D_Resume|function|__STATIC_INLINE void LL_DMA2D_Resume(DMA2D_TypeDef *DMA2Dx)
+DECL|LL_DMA2D_SWAP_MODE_REGULAR|macro|LL_DMA2D_SWAP_MODE_REGULAR
+DECL|LL_DMA2D_SWAP_MODE_TWO_BY_TWO|macro|LL_DMA2D_SWAP_MODE_TWO_BY_TWO
 DECL|LL_DMA2D_SetDeadTime|function|__STATIC_INLINE void LL_DMA2D_SetDeadTime(DMA2D_TypeDef *DMA2Dx, uint32_t DeadTime)
+DECL|LL_DMA2D_SetLineOffsetMode|function|__STATIC_INLINE void LL_DMA2D_SetLineOffsetMode(DMA2D_TypeDef *DMA2Dx, uint32_t LineOffsetMode)
 DECL|LL_DMA2D_SetLineOffset|function|__STATIC_INLINE void LL_DMA2D_SetLineOffset(DMA2D_TypeDef *DMA2Dx, uint32_t LineOffset)
 DECL|LL_DMA2D_SetLineWatermark|function|__STATIC_INLINE void LL_DMA2D_SetLineWatermark(DMA2D_TypeDef *DMA2Dx, uint32_t LineWatermark)
 DECL|LL_DMA2D_SetMode|function|__STATIC_INLINE void LL_DMA2D_SetMode(DMA2D_TypeDef *DMA2Dx, uint32_t Mode)
@@ -173,9 +182,11 @@ DECL|LL_DMA2D_SetOutputColorMode|function|__STATIC_INLINE void LL_DMA2D_SetOutpu
 DECL|LL_DMA2D_SetOutputColor|function|__STATIC_INLINE void LL_DMA2D_SetOutputColor(DMA2D_TypeDef *DMA2Dx, uint32_t OutputColor)
 DECL|LL_DMA2D_SetOutputMemAddr|function|__STATIC_INLINE void LL_DMA2D_SetOutputMemAddr(DMA2D_TypeDef *DMA2Dx, uint32_t OutputMemoryAddress)
 DECL|LL_DMA2D_SetOutputRBSwapMode|function|__STATIC_INLINE void LL_DMA2D_SetOutputRBSwapMode(DMA2D_TypeDef *DMA2Dx, uint32_t RBSwapMode)
+DECL|LL_DMA2D_SetOutputSwapMode|function|__STATIC_INLINE void LL_DMA2D_SetOutputSwapMode(DMA2D_TypeDef *DMA2Dx, uint32_t OutputSwapMode)
 DECL|LL_DMA2D_Start|function|__STATIC_INLINE void LL_DMA2D_Start(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_Suspend|function|__STATIC_INLINE void LL_DMA2D_Suspend(DMA2D_TypeDef *DMA2Dx)
 DECL|LL_DMA2D_WriteReg|macro|LL_DMA2D_WriteReg
+DECL|LineOffsetMode|member|uint32_t LineOffsetMode; /*!< Specifies the output line offset mode.
 DECL|LineOffset|member|uint32_t LineOffset; /*!< Specifies the foreground or background line offset value.
 DECL|LineOffset|member|uint32_t LineOffset; /*!< Specifies the output line offset value.
 DECL|MemoryAddress|member|uint32_t MemoryAddress; /*!< Specifies the foreground or background memory address.
@@ -191,6 +202,7 @@ DECL|OutputGreen|member|uint32_t OutputGreen; /*!< Specifies the Green value of 
 DECL|OutputMemoryAddress|member|uint32_t OutputMemoryAddress; /*!< Specifies the memory address.
 DECL|OutputRed|member|uint32_t OutputRed; /*!< Specifies the Red value of the output image.
 DECL|OutputRed|member|uint32_t OutputRed; /*!< Specifies the Red value of the output image.
+DECL|OutputSwapMode|member|uint32_t OutputSwapMode; /*!< Specifies the output swap mode color format of the output image.
 DECL|RBSwapMode|member|uint32_t RBSwapMode; /*!< Specifies the foreground or background Red Blue swap mode.
 DECL|RBSwapMode|member|uint32_t RBSwapMode; /*!< Specifies the output Red Blue swap mode.
 DECL|Red|member|uint32_t Red; /*!< Specifies the foreground or background Red color value.

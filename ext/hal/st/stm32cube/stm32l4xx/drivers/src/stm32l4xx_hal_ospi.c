@@ -1,0 +1,52 @@
+DECL|HAL_OSPIM_Config|function|HAL_StatusTypeDef HAL_OSPIM_Config(OSPI_HandleTypeDef *hospi, OSPIM_CfgTypeDef *cfg, uint32_t Timeout)
+DECL|HAL_OSPI_AbortCpltCallback|function|__weak void HAL_OSPI_AbortCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Abort_IT|function|HAL_StatusTypeDef HAL_OSPI_Abort_IT(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Abort|function|HAL_StatusTypeDef HAL_OSPI_Abort(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_AutoPolling_IT|function|HAL_StatusTypeDef HAL_OSPI_AutoPolling_IT(OSPI_HandleTypeDef *hospi, OSPI_AutoPollingTypeDef *cfg)
+DECL|HAL_OSPI_AutoPolling|function|HAL_StatusTypeDef HAL_OSPI_AutoPolling(OSPI_HandleTypeDef *hospi, OSPI_AutoPollingTypeDef *cfg, uint32_t Timeout)
+DECL|HAL_OSPI_CmdCpltCallback|function|__weak void HAL_OSPI_CmdCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Command_IT|function|HAL_StatusTypeDef HAL_OSPI_Command_IT(OSPI_HandleTypeDef *hospi, OSPI_RegularCmdTypeDef *cmd)
+DECL|HAL_OSPI_Command|function|HAL_StatusTypeDef HAL_OSPI_Command(OSPI_HandleTypeDef *hospi, OSPI_RegularCmdTypeDef *cmd, uint32_t Timeout)
+DECL|HAL_OSPI_DeInit|function|HAL_StatusTypeDef HAL_OSPI_DeInit(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_ErrorCallback|function|__weak void HAL_OSPI_ErrorCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_FifoThresholdCallback|function|__weak void HAL_OSPI_FifoThresholdCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_GetError|function|uint32_t HAL_OSPI_GetError(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_GetFifoThreshold|function|uint32_t HAL_OSPI_GetFifoThreshold(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_GetState|function|uint32_t HAL_OSPI_GetState(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_HyperbusCfg|function|HAL_StatusTypeDef HAL_OSPI_HyperbusCfg(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCfgTypeDef *cfg, uint32_t Timeout)
+DECL|HAL_OSPI_HyperbusCmd|function|HAL_StatusTypeDef HAL_OSPI_HyperbusCmd(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCmdTypeDef *cmd, uint32_t Timeout)
+DECL|HAL_OSPI_IRQHandler|function|void HAL_OSPI_IRQHandler(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Init|function|HAL_StatusTypeDef HAL_OSPI_Init (OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_MemoryMapped|function|HAL_StatusTypeDef HAL_OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMappedTypeDef *cfg)
+DECL|HAL_OSPI_MspDeInit|function|__weak void HAL_OSPI_MspDeInit(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_MspInit|function|__weak void HAL_OSPI_MspInit(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Receive_DMA|function|HAL_StatusTypeDef HAL_OSPI_Receive_DMA(OSPI_HandleTypeDef *hospi, uint8_t *pData)
+DECL|HAL_OSPI_Receive_IT|function|HAL_StatusTypeDef HAL_OSPI_Receive_IT(OSPI_HandleTypeDef *hospi, uint8_t *pData)
+DECL|HAL_OSPI_Receive|function|HAL_StatusTypeDef HAL_OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
+DECL|HAL_OSPI_RxCpltCallback|function|__weak void HAL_OSPI_RxCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_RxHalfCpltCallback|function|__weak void HAL_OSPI_RxHalfCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_SetFifoThreshold|function|HAL_StatusTypeDef HAL_OSPI_SetFifoThreshold(OSPI_HandleTypeDef *hospi, uint32_t Threshold)
+DECL|HAL_OSPI_SetTimeout|function|HAL_StatusTypeDef HAL_OSPI_SetTimeout(OSPI_HandleTypeDef *hospi, uint32_t Timeout)
+DECL|HAL_OSPI_StatusMatchCallback|function|__weak void HAL_OSPI_StatusMatchCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_TimeOutCallback|function|__weak void HAL_OSPI_TimeOutCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_Transmit_DMA|function|HAL_StatusTypeDef HAL_OSPI_Transmit_DMA(OSPI_HandleTypeDef *hospi, uint8_t *pData)
+DECL|HAL_OSPI_Transmit_IT|function|HAL_StatusTypeDef HAL_OSPI_Transmit_IT(OSPI_HandleTypeDef *hospi, uint8_t *pData)
+DECL|HAL_OSPI_Transmit|function|HAL_StatusTypeDef HAL_OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
+DECL|HAL_OSPI_TxCpltCallback|function|__weak void HAL_OSPI_TxCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_TxHalfCpltCallback|function|__weak void HAL_OSPI_TxHalfCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|IS_OSPI_FUNCTIONAL_MODE|macro|IS_OSPI_FUNCTIONAL_MODE
+DECL|OSPIM_GetConfig|function|static HAL_StatusTypeDef OSPIM_GetConfig(uint8_t instance_nb, OSPIM_CfgTypeDef *cfg)
+DECL|OSPI_BUSY_STATE_MASK|macro|OSPI_BUSY_STATE_MASK
+DECL|OSPI_CFG_STATE_MASK|macro|OSPI_CFG_STATE_MASK
+DECL|OSPI_ConfigCmd|function|static HAL_StatusTypeDef OSPI_ConfigCmd(OSPI_HandleTypeDef *hospi, OSPI_RegularCmdTypeDef *cmd)
+DECL|OSPI_DMAAbortCplt|function|static void OSPI_DMAAbortCplt(DMA_HandleTypeDef *hdma)
+DECL|OSPI_DMACplt|function|static void OSPI_DMACplt(DMA_HandleTypeDef *hdma)
+DECL|OSPI_DMAError|function|static void OSPI_DMAError(DMA_HandleTypeDef *hdma)
+DECL|OSPI_DMAHalfCplt|function|static void OSPI_DMAHalfCplt(DMA_HandleTypeDef *hdma)
+DECL|OSPI_FUNCTIONAL_MODE_AUTO_POLLING|macro|OSPI_FUNCTIONAL_MODE_AUTO_POLLING
+DECL|OSPI_FUNCTIONAL_MODE_INDIRECT_READ|macro|OSPI_FUNCTIONAL_MODE_INDIRECT_READ
+DECL|OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE|macro|OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE
+DECL|OSPI_FUNCTIONAL_MODE_MEMORY_MAPPED|macro|OSPI_FUNCTIONAL_MODE_MEMORY_MAPPED
+DECL|OSPI_IOM_NB_PORTS|macro|OSPI_IOM_NB_PORTS
+DECL|OSPI_NB_INSTANCE|macro|OSPI_NB_INSTANCE
+DECL|OSPI_WaitFlagStateUntilTimeout|function|static HAL_StatusTypeDef OSPI_WaitFlagStateUntilTimeout(OSPI_HandleTypeDef *hospi, uint32_t Flag, FlagStatus State, uint32_t Tickstart, uint32_t Timeout)

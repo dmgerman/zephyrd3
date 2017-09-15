@@ -2,8 +2,11 @@ DECL|AlphaInverted|member|uint32_t AlphaInverted; /*!< Select regular or inverte
 DECL|AlphaInverted|member|uint32_t AlphaInverted; /*!< Select regular or inverted alpha value.
 DECL|AlphaMode|member|uint32_t AlphaMode; /*!< Configures the DMA2D foreground or background alpha mode.
 DECL|Blue|member|uint32_t Blue; /*!< Configures the blue value.
+DECL|BytesSwap|member|uint32_t BytesSwap; /*!< Select byte regular mode or bytes swap mode (two by two).
 DECL|CLUTColorMode|member|uint32_t CLUTColorMode; /*!< Configures the DMA2D CLUT color mode.
 DECL|ColorMode|member|uint32_t ColorMode; /*!< Configures the color format of the output image.
+DECL|DMA2D_BYTES_REGULAR|macro|DMA2D_BYTES_REGULAR
+DECL|DMA2D_BYTES_SWAP|macro|DMA2D_BYTES_SWAP
 DECL|DMA2D_CCM_ARGB8888|macro|DMA2D_CCM_ARGB8888
 DECL|DMA2D_CCM_RGB888|macro|DMA2D_CCM_RGB888
 DECL|DMA2D_CLUTCfgTypeDef|typedef|} DMA2D_CLUTCfgTypeDef;
@@ -39,7 +42,11 @@ DECL|DMA2D_IT_TW|macro|DMA2D_IT_TW
 DECL|DMA2D_InitTypeDef|typedef|} DMA2D_InitTypeDef;
 DECL|DMA2D_LINE_WATERMARK_MAX|macro|DMA2D_LINE_WATERMARK_MAX
 DECL|DMA2D_LINE|macro|DMA2D_LINE
+DECL|DMA2D_LOM_BYTES|macro|DMA2D_LOM_BYTES
+DECL|DMA2D_LOM_PIXELS|macro|DMA2D_LOM_PIXELS
 DECL|DMA2D_LayerCfgTypeDef|typedef|} DMA2D_LayerCfgTypeDef;
+DECL|DMA2D_M2M_BLEND_BG|macro|DMA2D_M2M_BLEND_BG
+DECL|DMA2D_M2M_BLEND_FG|macro|DMA2D_M2M_BLEND_FG
 DECL|DMA2D_M2M_BLEND|macro|DMA2D_M2M_BLEND
 DECL|DMA2D_M2M_PFC|macro|DMA2D_M2M_PFC
 DECL|DMA2D_M2M|macro|DMA2D_M2M
@@ -74,6 +81,7 @@ DECL|HAL_DMA2D_STATE_TIMEOUT|enumerator|HAL_DMA2D_STATE_TIMEOUT = 0x03U, /*!< Ti
 DECL|HAL_DMA2D_StateTypeDef|typedef|}HAL_DMA2D_StateTypeDef;
 DECL|IS_DMA2D_ALPHA_INVERTED|macro|IS_DMA2D_ALPHA_INVERTED
 DECL|IS_DMA2D_ALPHA_MODE|macro|IS_DMA2D_ALPHA_MODE
+DECL|IS_DMA2D_BYTES_SWAP|macro|IS_DMA2D_BYTES_SWAP
 DECL|IS_DMA2D_CLUT_CM|macro|IS_DMA2D_CLUT_CM
 DECL|IS_DMA2D_CLUT_SIZE|macro|IS_DMA2D_CLUT_SIZE
 DECL|IS_DMA2D_CMODE|macro|IS_DMA2D_CMODE
@@ -84,6 +92,8 @@ DECL|IS_DMA2D_IT|macro|IS_DMA2D_IT
 DECL|IS_DMA2D_LAYER|macro|IS_DMA2D_LAYER
 DECL|IS_DMA2D_LINEWATERMARK|macro|IS_DMA2D_LINEWATERMARK
 DECL|IS_DMA2D_LINE|macro|IS_DMA2D_LINE
+DECL|IS_DMA2D_LOM_MODE|macro|IS_DMA2D_LOM_MODE
+DECL|IS_DMA2D_MODE|macro|IS_DMA2D_MODE
 DECL|IS_DMA2D_MODE|macro|IS_DMA2D_MODE
 DECL|IS_DMA2D_OFFSET|macro|IS_DMA2D_OFFSET
 DECL|IS_DMA2D_PIXEL|macro|IS_DMA2D_PIXEL
@@ -94,6 +104,7 @@ DECL|InputColorMode|member|uint32_t InputColorMode; /*!< Configures the DMA2D fo
 DECL|InputOffset|member|uint32_t InputOffset; /*!< Configures the DMA2D foreground or background offset.
 DECL|Instance|member|DMA2D_TypeDef *Instance; /*!< DMA2D register base address. */
 DECL|LayerCfg|member|DMA2D_LayerCfgTypeDef LayerCfg[MAX_DMA2D_LAYER]; /*!< DMA2D Layers parameters */
+DECL|LineOffsetMode|member|uint32_t LineOffsetMode; /*!< Configures how is expressed the line offset for the foreground, background and output.
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< DMA2D lock. */
 DECL|MAX_DMA2D_LAYER|macro|MAX_DMA2D_LAYER
 DECL|Mode|member|uint32_t Mode; /*!< Configures the DMA2D transfer mode.

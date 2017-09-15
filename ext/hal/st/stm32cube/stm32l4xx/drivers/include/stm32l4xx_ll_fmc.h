@@ -7,6 +7,7 @@ DECL|BusTurnAroundDuration|member|uint32_t BusTurnAroundDuration; /*!< Defines t
 DECL|CLKDivision|member|uint32_t CLKDivision; /*!< Defines the period of CLK clock output signal, expressed in number of
 DECL|ContinuousClock|member|uint32_t ContinuousClock; /*!< Enables or disables the FMC clock output to external memory devices.
 DECL|DataAddressMux|member|uint32_t DataAddressMux; /*!< Specifies whether the address and data values are
+DECL|DataHoldTime|member|uint32_t DataHoldTime; /*!< Defines the number of HCLK cycles to configure
 DECL|DataLatency|member|uint32_t DataLatency; /*!< Defines the number of memory clock cycles to issue
 DECL|DataSetupTime|member|uint32_t DataSetupTime; /*!< Defines the number of HCLK cycles to configure
 DECL|ECCPageSize|member|uint32_t ECCPageSize; /*!< Defines the page size for the extended ECC.
@@ -95,6 +96,7 @@ DECL|IS_FMC_ASYNWAIT|macro|IS_FMC_ASYNWAIT
 DECL|IS_FMC_BURSTMODE|macro|IS_FMC_BURSTMODE
 DECL|IS_FMC_CLK_DIV|macro|IS_FMC_CLK_DIV
 DECL|IS_FMC_CONTINOUS_CLOCK|macro|IS_FMC_CONTINOUS_CLOCK
+DECL|IS_FMC_DATAHOLD_TIME|macro|IS_FMC_DATAHOLD_TIME
 DECL|IS_FMC_DATASETUP_TIME|macro|IS_FMC_DATASETUP_TIME
 DECL|IS_FMC_DATA_LATENCY|macro|IS_FMC_DATA_LATENCY
 DECL|IS_FMC_ECCPAGE_SIZE|macro|IS_FMC_ECCPAGE_SIZE
@@ -107,6 +109,7 @@ DECL|IS_FMC_MUX|macro|IS_FMC_MUX
 DECL|IS_FMC_NAND_BANK|macro|IS_FMC_NAND_BANK
 DECL|IS_FMC_NAND_DEVICE|macro|IS_FMC_NAND_DEVICE
 DECL|IS_FMC_NAND_MEMORY_WIDTH|macro|IS_FMC_NAND_MEMORY_WIDTH
+DECL|IS_FMC_NBLSETUP_TIME|macro|IS_FMC_NBLSETUP_TIME
 DECL|IS_FMC_NORSRAM_BANK|macro|IS_FMC_NORSRAM_BANK
 DECL|IS_FMC_NORSRAM_DEVICE|macro|IS_FMC_NORSRAM_DEVICE
 DECL|IS_FMC_NORSRAM_EXTENDED_DEVICE|macro|IS_FMC_NORSRAM_EXTENDED_DEVICE
@@ -127,6 +130,7 @@ DECL|IS_FMC_WRITE_OPERATION|macro|IS_FMC_WRITE_OPERATION
 DECL|MemoryDataWidth|member|uint32_t MemoryDataWidth; /*!< Specifies the external memory device width.
 DECL|MemoryDataWidth|member|uint32_t MemoryDataWidth; /*!< Specifies the external memory device width.
 DECL|MemoryType|member|uint32_t MemoryType; /*!< Specifies the type of external memory attached to
+DECL|NBLSetupTime|member|uint32_t NBLSetupTime; /*!< Defines the number of HCLK cycles to configure
 DECL|NSBank|member|uint32_t NSBank; /*!< Specifies the NORSRAM memory device that will be used.
 DECL|NandBank|member|uint32_t NandBank; /*!< Specifies the NAND memory device that will be used.
 DECL|PageSize|member|uint32_t PageSize; /*!< Specifies the memory page size.

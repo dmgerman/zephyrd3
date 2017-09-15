@@ -1,6 +1,8 @@
+DECL|Activation|member|FunctionalState Activation; /*!< Enable/disable PDM interface */
 DECL|ActiveFrameLength|member|uint32_t ActiveFrameLength; /*!< Specifies the Frame synchronization active level length.
 DECL|AudioFrequency|member|uint32_t AudioFrequency; /*!< Specifies the audio frequency sampling.
 DECL|AudioMode|member|uint32_t AudioMode; /*!< Specifies the SAI Block audio Mode.
+DECL|ClockEnable|member|uint32_t ClockEnable; /*!< Specifies which clock must be enabled.
 DECL|ClockStrobing|member|uint32_t ClockStrobing; /*!< Specifies the SAI Block clock strobing edge sensitivity.
 DECL|CompandingMode|member|uint32_t CompandingMode; /*!< Specifies the companding mode type.
 DECL|DataSize|member|uint32_t DataSize; /*!< Specifies the SAI Block data size.
@@ -41,6 +43,7 @@ DECL|IS_SAI_BLOCK_FS_DEFINITION|macro|IS_SAI_BLOCK_FS_DEFINITION
 DECL|IS_SAI_BLOCK_FS_OFFSET|macro|IS_SAI_BLOCK_FS_OFFSET
 DECL|IS_SAI_BLOCK_FS_POLARITY|macro|IS_SAI_BLOCK_FS_POLARITY
 DECL|IS_SAI_BLOCK_MASTER_DIVIDER|macro|IS_SAI_BLOCK_MASTER_DIVIDER
+DECL|IS_SAI_BLOCK_MCK_OVERSAMPLING|macro|IS_SAI_BLOCK_MCK_OVERSAMPLING
 DECL|IS_SAI_BLOCK_MODE|macro|IS_SAI_BLOCK_MODE
 DECL|IS_SAI_BLOCK_MUTE_COUNTER|macro|IS_SAI_BLOCK_MUTE_COUNTER
 DECL|IS_SAI_BLOCK_MUTE_VALUE|macro|IS_SAI_BLOCK_MUTE_VALUE
@@ -53,6 +56,8 @@ DECL|IS_SAI_BLOCK_SYNCEXT|macro|IS_SAI_BLOCK_SYNCEXT
 DECL|IS_SAI_BLOCK_SYNCHRO|macro|IS_SAI_BLOCK_SYNCHRO
 DECL|IS_SAI_BLOCK_TRISTATE_MANAGEMENT|macro|IS_SAI_BLOCK_TRISTATE_MANAGEMENT
 DECL|IS_SAI_MONO_STEREO_MODE|macro|IS_SAI_MONO_STEREO_MODE
+DECL|IS_SAI_PDM_CLOCK_ENABLE|macro|IS_SAI_PDM_CLOCK_ENABLE
+DECL|IS_SAI_PDM_MIC_PAIRS_NUMBER|macro|IS_SAI_PDM_MIC_PAIRS_NUMBER
 DECL|IS_SAI_PROTOCOL_DATASIZE|macro|IS_SAI_PROTOCOL_DATASIZE
 DECL|IS_SAI_SLOT_ACTIVE|macro|IS_SAI_SLOT_ACTIVE
 DECL|IS_SAI_SUPPORTED_PROTOCOL|macro|IS_SAI_SUPPORTED_PROTOCOL
@@ -60,10 +65,13 @@ DECL|Init|member|SAI_InitTypeDef Init; /*!< SAI communication parameters */
 DECL|Instance|member|SAI_Block_TypeDef *Instance; /*!< SAI Blockx registers base address */
 DECL|InterruptServiceRoutine|member|void (*InterruptServiceRoutine)(struct __SAI_HandleTypeDef *hsai); /* function pointer for IRQ handler */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< SAI locking object */
+DECL|MckOverSampling|member|uint32_t MckOverSampling; /*!< Specifies the master clock oversampling.
 DECL|Mckdiv|member|uint32_t Mckdiv; /*!< Specifies the master clock divider, the parameter will be used if for
+DECL|MicPairsNbr|member|uint32_t MicPairsNbr; /*!< Specifies the number of microphone pairs used.
 DECL|MonoStereoMode|member|uint32_t MonoStereoMode; /*!< Specifies if the mono or stereo mode is selected.
 DECL|NoDivider|member|uint32_t NoDivider; /*!< Specifies whether master clock will be divided or not.
 DECL|OutputDrive|member|uint32_t OutputDrive; /*!< Specifies when SAI Block outputs are driven.
+DECL|PdmInit|member|SAI_PdmInitTypeDef PdmInit; /*!< Specifies the PDM configuration. */
 DECL|Protocol|member|uint32_t Protocol; /*!< Specifies the SAI Block protocol.
 DECL|SAI_AC97_PROTOCOL|macro|SAI_AC97_PROTOCOL
 DECL|SAI_ALAW_1CPL_COMPANDING|macro|SAI_ALAW_1CPL_COMPANDING
@@ -129,7 +137,10 @@ DECL|SAI_IT_WCKCFG|macro|SAI_IT_WCKCFG
 DECL|SAI_InitTypeDef|typedef|}SAI_InitTypeDef;
 DECL|SAI_LAST_SENT_VALUE|macro|SAI_LAST_SENT_VALUE
 DECL|SAI_MASTERDIVIDER_DISABLE|macro|SAI_MASTERDIVIDER_DISABLE
+DECL|SAI_MASTERDIVIDER_DISABLE|macro|SAI_MASTERDIVIDER_DISABLE
 DECL|SAI_MASTERDIVIDER_ENABLE|macro|SAI_MASTERDIVIDER_ENABLE
+DECL|SAI_MCK_OVERSAMPLING_DISABLE|macro|SAI_MCK_OVERSAMPLING_DISABLE
+DECL|SAI_MCK_OVERSAMPLING_ENABLE|macro|SAI_MCK_OVERSAMPLING_ENABLE
 DECL|SAI_MODEMASTER_RX|macro|SAI_MODEMASTER_RX
 DECL|SAI_MODEMASTER_TX|macro|SAI_MODEMASTER_TX
 DECL|SAI_MODESLAVE_RX|macro|SAI_MODESLAVE_RX
@@ -142,10 +153,13 @@ DECL|SAI_OUTPUT_NOTRELEASED|macro|SAI_OUTPUT_NOTRELEASED
 DECL|SAI_OUTPUT_RELEASED|macro|SAI_OUTPUT_RELEASED
 DECL|SAI_PCM_LONG|macro|SAI_PCM_LONG
 DECL|SAI_PCM_SHORT|macro|SAI_PCM_SHORT
+DECL|SAI_PDM_CLOCK1_ENABLE|macro|SAI_PDM_CLOCK1_ENABLE
+DECL|SAI_PDM_CLOCK2_ENABLE|macro|SAI_PDM_CLOCK2_ENABLE
 DECL|SAI_PROTOCOL_DATASIZE_16BITEXTENDED|macro|SAI_PROTOCOL_DATASIZE_16BITEXTENDED
 DECL|SAI_PROTOCOL_DATASIZE_16BIT|macro|SAI_PROTOCOL_DATASIZE_16BIT
 DECL|SAI_PROTOCOL_DATASIZE_24BIT|macro|SAI_PROTOCOL_DATASIZE_24BIT
 DECL|SAI_PROTOCOL_DATASIZE_32BIT|macro|SAI_PROTOCOL_DATASIZE_32BIT
+DECL|SAI_PdmInitTypeDef|typedef|}SAI_PdmInitTypeDef;
 DECL|SAI_SLOTACTIVE_0|macro|SAI_SLOTACTIVE_0
 DECL|SAI_SLOTACTIVE_10|macro|SAI_SLOTACTIVE_10
 DECL|SAI_SLOTACTIVE_11|macro|SAI_SLOTACTIVE_11

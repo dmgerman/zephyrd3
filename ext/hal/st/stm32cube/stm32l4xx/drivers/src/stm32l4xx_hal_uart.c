@@ -37,8 +37,11 @@ DECL|HAL_UART_Transmit_IT|function|HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_H
 DECL|HAL_UART_Transmit|function|HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)
 DECL|HAL_UART_TxCpltCallback|function|__weak void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 DECL|HAL_UART_TxHalfCpltCallback|function|__weak void HAL_UART_TxHalfCpltCallback(UART_HandleTypeDef *huart)
+DECL|LPUART_BRR_MAX|macro|LPUART_BRR_MAX
+DECL|LPUART_BRR_MIN|macro|LPUART_BRR_MIN
 DECL|UART_AdvFeatureConfig|function|void UART_AdvFeatureConfig(UART_HandleTypeDef *huart)
-DECL|UART_CR1_FIELDS|macro|UART_CR1_FIELDS
+DECL|UART_BRR_MAX|macro|UART_BRR_MAX
+DECL|UART_BRR_MIN|macro|UART_BRR_MIN
 DECL|UART_CheckIdleState|function|HAL_StatusTypeDef UART_CheckIdleState(UART_HandleTypeDef *huart)
 DECL|UART_DMAAbortOnError|function|static void UART_DMAAbortOnError(DMA_HandleTypeDef *hdma)
 DECL|UART_DMAError|function|static void UART_DMAError(DMA_HandleTypeDef *hdma)
@@ -51,11 +54,19 @@ DECL|UART_DMATxAbortCallback|function|static void UART_DMATxAbortCallback(DMA_Ha
 DECL|UART_DMATxHalfCplt|function|static void UART_DMATxHalfCplt(DMA_HandleTypeDef *hdma)
 DECL|UART_DMATxOnlyAbortCallback|function|static void UART_DMATxOnlyAbortCallback(DMA_HandleTypeDef *hdma)
 DECL|UART_EndRxTransfer|function|static void UART_EndRxTransfer(UART_HandleTypeDef *huart)
-DECL|UART_EndTransmit_IT|function|static HAL_StatusTypeDef UART_EndTransmit_IT(UART_HandleTypeDef *huart)
+DECL|UART_EndTransmit_IT|function|static void UART_EndTransmit_IT(UART_HandleTypeDef *huart)
 DECL|UART_EndTxTransfer|function|static void UART_EndTxTransfer(UART_HandleTypeDef *huart)
-DECL|UART_LPUART_BRR_MAX|macro|UART_LPUART_BRR_MAX
-DECL|UART_LPUART_BRR_MIN|macro|UART_LPUART_BRR_MIN
-DECL|UART_Receive_IT|function|static HAL_StatusTypeDef UART_Receive_IT(UART_HandleTypeDef *huart)
+DECL|UART_RxISR_16BIT_FIFOEN|function|static void UART_RxISR_16BIT_FIFOEN(UART_HandleTypeDef *huart)
+DECL|UART_RxISR_16BIT|function|static void UART_RxISR_16BIT(UART_HandleTypeDef *huart)
+DECL|UART_RxISR_8BIT_FIFOEN|function|static void UART_RxISR_8BIT_FIFOEN(UART_HandleTypeDef *huart)
+DECL|UART_RxISR_8BIT|function|static void UART_RxISR_8BIT(UART_HandleTypeDef *huart)
 DECL|UART_SetConfig|function|HAL_StatusTypeDef UART_SetConfig(UART_HandleTypeDef *huart)
-DECL|UART_Transmit_IT|function|static HAL_StatusTypeDef UART_Transmit_IT(UART_HandleTypeDef *huart)
+DECL|UART_TxISR_16BIT_FIFOEN|function|static void UART_TxISR_16BIT_FIFOEN(UART_HandleTypeDef *huart)
+DECL|UART_TxISR_16BIT|function|static void UART_TxISR_16BIT(UART_HandleTypeDef *huart)
+DECL|UART_TxISR_8BIT_FIFOEN|function|static void UART_TxISR_8BIT_FIFOEN(UART_HandleTypeDef *huart)
+DECL|UART_TxISR_8BIT|function|static void UART_TxISR_8BIT(UART_HandleTypeDef *huart)
 DECL|UART_WaitOnFlagUntilTimeout|function|HAL_StatusTypeDef UART_WaitOnFlagUntilTimeout(UART_HandleTypeDef *huart, uint32_t Flag, FlagStatus Status, uint32_t Tickstart, uint32_t Timeout)
+DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
+DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
+DECL|USART_CR3_FIELDS|macro|USART_CR3_FIELDS
+DECL|USART_CR3_FIELDS|macro|USART_CR3_FIELDS

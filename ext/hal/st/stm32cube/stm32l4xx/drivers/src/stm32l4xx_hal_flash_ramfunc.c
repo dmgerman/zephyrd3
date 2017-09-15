@@ -1,2 +1,3 @@
 DECL|HAL_FLASHEx_DisableRunPowerDown|function|__RAM_FUNC HAL_FLASHEx_DisableRunPowerDown(void)
 DECL|HAL_FLASHEx_EnableRunPowerDown|function|__RAM_FUNC HAL_FLASHEx_EnableRunPowerDown(void)
+DECL|HAL_FLASHEx_OB_DBankConfig|function|__RAM_FUNC HAL_FLASHEx_OB_DBankConfig(uint32_t DBankConfig)

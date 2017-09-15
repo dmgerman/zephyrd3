@@ -2,23 +2,27 @@ DECL|BaudRate|member|uint32_t BaudRate; /*!< This member configures the Usart co
 DECL|CLKLastBit|member|uint32_t CLKLastBit; /*!< Specifies whether the clock pulse corresponding to the last transmitted
 DECL|CLKPhase|member|uint32_t CLKPhase; /*!< Specifies the clock transition on which the bit capture is made.
 DECL|CLKPolarity|member|uint32_t CLKPolarity; /*!< Specifies the steady state of the serial clock.
+DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Specifies the prescaler value used to divide the USART clock source.
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< USART Error code */
-DECL|HAL_USART_ERROR_DMA|enumerator|HAL_USART_ERROR_DMA = 0x10 /*!< DMA transfer error */
-DECL|HAL_USART_ERROR_FE|enumerator|HAL_USART_ERROR_FE = 0x04, /*!< frame error */
-DECL|HAL_USART_ERROR_NE|enumerator|HAL_USART_ERROR_NE = 0x02, /*!< Noise error */
-DECL|HAL_USART_ERROR_NONE|enumerator|HAL_USART_ERROR_NONE = 0x00, /*!< No error */
-DECL|HAL_USART_ERROR_ORE|enumerator|HAL_USART_ERROR_ORE = 0x08, /*!< Overrun error */
-DECL|HAL_USART_ERROR_PE|enumerator|HAL_USART_ERROR_PE = 0x01, /*!< Parity error */
+DECL|FifoMode|member|uint32_t FifoMode; /*!< Specifies if the FIFO mode is being used.
+DECL|HAL_USART_ERROR_DMA|enumerator|HAL_USART_ERROR_DMA = 0x10U, /*!< DMA transfer error */
+DECL|HAL_USART_ERROR_FE|enumerator|HAL_USART_ERROR_FE = 0x04U, /*!< frame error */
+DECL|HAL_USART_ERROR_NE|enumerator|HAL_USART_ERROR_NE = 0x02U, /*!< Noise error */
+DECL|HAL_USART_ERROR_NONE|enumerator|HAL_USART_ERROR_NONE = 0x00U, /*!< No error */
+DECL|HAL_USART_ERROR_ORE|enumerator|HAL_USART_ERROR_ORE = 0x08U, /*!< Overrun error */
+DECL|HAL_USART_ERROR_PE|enumerator|HAL_USART_ERROR_PE = 0x01U, /*!< Parity error */
+DECL|HAL_USART_ERROR_UDR|enumerator|HAL_USART_ERROR_UDR = 0x20U /*!< SPI slave underrun error */
 DECL|HAL_USART_ErrorTypeDef|typedef|}HAL_USART_ErrorTypeDef;
-DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22, /*!< Data Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32, /*!< Data Transmission Reception process is ongoing */
-DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12, /*!< Data Transmission process is ongoing */
-DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02, /*!< an internal process is ongoing */
-DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04 /*!< Error */
-DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01, /*!< Peripheral Initialized and ready for use */
-DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00, /*!< Peripheral is not initialized */
-DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03, /*!< Timeout state */
+DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32U, /*!< Data Transmission Reception process is ongoing */
+DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12U, /*!< Data Transmission process is ongoing */
+DECL|HAL_USART_STATE_BUSY|enumerator|HAL_USART_STATE_BUSY = 0x02U, /*!< an internal process is ongoing */
+DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04U /*!< Error */
+DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
+DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00U, /*!< Peripheral is not initialized */
+DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_USART_StateTypeDef|typedef|}HAL_USART_StateTypeDef;
+DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_CLOCK|macro|IS_USART_CLOCK
 DECL|IS_USART_LASTBIT|macro|IS_USART_LASTBIT
@@ -27,6 +31,7 @@ DECL|IS_USART_OVERSAMPLING|macro|IS_USART_OVERSAMPLING
 DECL|IS_USART_PARITY|macro|IS_USART_PARITY
 DECL|IS_USART_PHASE|macro|IS_USART_PHASE
 DECL|IS_USART_POLARITY|macro|IS_USART_POLARITY
+DECL|IS_USART_PRESCALER|macro|IS_USART_PRESCALER
 DECL|IS_USART_REQUEST_PARAMETER|macro|IS_USART_REQUEST_PARAMETER
 DECL|IS_USART_STOPBITS|macro|IS_USART_STOPBITS
 DECL|Init|member|USART_InitTypeDef Init; /*!< USART communication parameters */
@@ -34,43 +39,58 @@ DECL|Instance|member|USART_TypeDef *Instance; /*!< USART registers base address 
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mask|member|uint16_t Mask; /*!< USART Rx RDR register mask */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
+DECL|NbRxDataToProcess|member|uint16_t NbRxDataToProcess; /*!< Number of data to process during RX ISR execution */
+DECL|NbTxDataToProcess|member|uint16_t NbTxDataToProcess; /*!< Number of data to process during TX ISR execution */
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
+DECL|RxISR|member|void (*RxISR)(struct __USART_HandleTypeDef *husart); /*!< Function pointer on Rx IRQ handler */
 DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< USART Rx Transfer size */
+DECL|SlaveMode|member|uint32_t SlaveMode; /*!< Specifies if the UART SPI Slave mode is being used.
 DECL|State|member|__IO HAL_USART_StateTypeDef State; /*!< USART communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
+DECL|TxISR|member|void (*TxISR)(struct __USART_HandleTypeDef *husart); /*!< Function pointer on Tx IRQ handler */
 DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< USART Tx Transfer size */
-DECL|USART_CLEAR_CTSF|macro|USART_CLEAR_CTSF
+DECL|USARTPrescTable|variable|USARTPrescTable
 DECL|USART_CLEAR_FEF|macro|USART_CLEAR_FEF
 DECL|USART_CLEAR_IDLEF|macro|USART_CLEAR_IDLEF
 DECL|USART_CLEAR_NEF|macro|USART_CLEAR_NEF
 DECL|USART_CLEAR_OREF|macro|USART_CLEAR_OREF
 DECL|USART_CLEAR_PEF|macro|USART_CLEAR_PEF
 DECL|USART_CLEAR_TCF|macro|USART_CLEAR_TCF
-DECL|USART_CLOCKSOURCE_HSI|enumerator|USART_CLOCKSOURCE_HSI = 0x02, /*!< HSI clock source */
-DECL|USART_CLOCKSOURCE_LSE|enumerator|USART_CLOCKSOURCE_LSE = 0x08, /*!< LSE clock source */
-DECL|USART_CLOCKSOURCE_PCLK1|enumerator|USART_CLOCKSOURCE_PCLK1 = 0x00, /*!< PCLK1 clock source */
-DECL|USART_CLOCKSOURCE_PCLK2|enumerator|USART_CLOCKSOURCE_PCLK2 = 0x01, /*!< PCLK2 clock source */
-DECL|USART_CLOCKSOURCE_SYSCLK|enumerator|USART_CLOCKSOURCE_SYSCLK = 0x04, /*!< SYSCLK clock source */
-DECL|USART_CLOCKSOURCE_UNDEFINED|enumerator|USART_CLOCKSOURCE_UNDEFINED = 0x10 /*!< Undefined clock source */
+DECL|USART_CLEAR_TXFECF|macro|USART_CLEAR_TXFECF
+DECL|USART_CLEAR_UDRF|macro|USART_CLEAR_UDRF
+DECL|USART_CLOCKSOURCE_HSI|enumerator|USART_CLOCKSOURCE_HSI = 0x02U, /*!< HSI clock source */
+DECL|USART_CLOCKSOURCE_LSE|enumerator|USART_CLOCKSOURCE_LSE = 0x08U, /*!< LSE clock source */
+DECL|USART_CLOCKSOURCE_PCLK1|enumerator|USART_CLOCKSOURCE_PCLK1 = 0x00U, /*!< PCLK1 clock source */
+DECL|USART_CLOCKSOURCE_PCLK2|enumerator|USART_CLOCKSOURCE_PCLK2 = 0x01U, /*!< PCLK2 clock source */
+DECL|USART_CLOCKSOURCE_SYSCLK|enumerator|USART_CLOCKSOURCE_SYSCLK = 0x04U, /*!< SYSCLK clock source */
+DECL|USART_CLOCKSOURCE_UNDEFINED|enumerator|USART_CLOCKSOURCE_UNDEFINED = 0x10U /*!< Undefined clock source */
 DECL|USART_CLOCK_DISABLE|macro|USART_CLOCK_DISABLE
 DECL|USART_CLOCK_ENABLE|macro|USART_CLOCK_ENABLE
 DECL|USART_ClockSourceTypeDef|typedef|}USART_ClockSourceTypeDef;
+DECL|USART_DIV_SAMPLING8|macro|USART_DIV_SAMPLING8
+DECL|USART_DIV_SAMPLING8|macro|USART_DIV_SAMPLING8
 DECL|USART_FLAG_BUSY|macro|USART_FLAG_BUSY
-DECL|USART_FLAG_CTSIF|macro|USART_FLAG_CTSIF
-DECL|USART_FLAG_CTS|macro|USART_FLAG_CTS
 DECL|USART_FLAG_FE|macro|USART_FLAG_FE
 DECL|USART_FLAG_IDLE|macro|USART_FLAG_IDLE
-DECL|USART_FLAG_LBDF|macro|USART_FLAG_LBDF
 DECL|USART_FLAG_NE|macro|USART_FLAG_NE
 DECL|USART_FLAG_ORE|macro|USART_FLAG_ORE
 DECL|USART_FLAG_PE|macro|USART_FLAG_PE
 DECL|USART_FLAG_REACK|macro|USART_FLAG_REACK
+DECL|USART_FLAG_RXFF|macro|USART_FLAG_RXFF
+DECL|USART_FLAG_RXFNE|macro|USART_FLAG_RXFNE
+DECL|USART_FLAG_RXFT|macro|USART_FLAG_RXFT
+DECL|USART_FLAG_RXNE|macro|USART_FLAG_RXNE
 DECL|USART_FLAG_RXNE|macro|USART_FLAG_RXNE
 DECL|USART_FLAG_TC|macro|USART_FLAG_TC
 DECL|USART_FLAG_TEACK|macro|USART_FLAG_TEACK
 DECL|USART_FLAG_TXE|macro|USART_FLAG_TXE
+DECL|USART_FLAG_TXE|macro|USART_FLAG_TXE
+DECL|USART_FLAG_TXFE|macro|USART_FLAG_TXFE
+DECL|USART_FLAG_TXFNF|macro|USART_FLAG_TXFNF
+DECL|USART_FLAG_TXFT|macro|USART_FLAG_TXFT
+DECL|USART_FLAG_UDR|macro|USART_FLAG_UDR
 DECL|USART_HandleTypeDef|typedef|}USART_HandleTypeDef;
 DECL|USART_IT_ERR|macro|USART_IT_ERR
 DECL|USART_IT_FE|macro|USART_IT_FE
@@ -79,9 +99,15 @@ DECL|USART_IT_MASK|macro|USART_IT_MASK
 DECL|USART_IT_NE|macro|USART_IT_NE
 DECL|USART_IT_ORE|macro|USART_IT_ORE
 DECL|USART_IT_PE|macro|USART_IT_PE
+DECL|USART_IT_RXFF|macro|USART_IT_RXFF
+DECL|USART_IT_RXFNE|macro|USART_IT_RXFNE
+DECL|USART_IT_RXFT|macro|USART_IT_RXFT
 DECL|USART_IT_RXNE|macro|USART_IT_RXNE
 DECL|USART_IT_TC|macro|USART_IT_TC
 DECL|USART_IT_TXE|macro|USART_IT_TXE
+DECL|USART_IT_TXFE|macro|USART_IT_TXFE
+DECL|USART_IT_TXFNF|macro|USART_IT_TXFNF
+DECL|USART_IT_TXFT|macro|USART_IT_TXFT
 DECL|USART_InitTypeDef|typedef|}USART_InitTypeDef;
 DECL|USART_LASTBIT_DISABLE|macro|USART_LASTBIT_DISABLE
 DECL|USART_LASTBIT_ENABLE|macro|USART_LASTBIT_ENABLE
@@ -97,6 +123,18 @@ DECL|USART_PHASE_1EDGE|macro|USART_PHASE_1EDGE
 DECL|USART_PHASE_2EDGE|macro|USART_PHASE_2EDGE
 DECL|USART_POLARITY_HIGH|macro|USART_POLARITY_HIGH
 DECL|USART_POLARITY_LOW|macro|USART_POLARITY_LOW
+DECL|USART_PRESCALER_DIV10|macro|USART_PRESCALER_DIV10
+DECL|USART_PRESCALER_DIV128|macro|USART_PRESCALER_DIV128
+DECL|USART_PRESCALER_DIV12|macro|USART_PRESCALER_DIV12
+DECL|USART_PRESCALER_DIV16|macro|USART_PRESCALER_DIV16
+DECL|USART_PRESCALER_DIV1|macro|USART_PRESCALER_DIV1
+DECL|USART_PRESCALER_DIV256|macro|USART_PRESCALER_DIV256
+DECL|USART_PRESCALER_DIV2|macro|USART_PRESCALER_DIV2
+DECL|USART_PRESCALER_DIV32|macro|USART_PRESCALER_DIV32
+DECL|USART_PRESCALER_DIV4|macro|USART_PRESCALER_DIV4
+DECL|USART_PRESCALER_DIV64|macro|USART_PRESCALER_DIV64
+DECL|USART_PRESCALER_DIV6|macro|USART_PRESCALER_DIV6
+DECL|USART_PRESCALER_DIV8|macro|USART_PRESCALER_DIV8
 DECL|USART_RXDATA_FLUSH_REQUEST|macro|USART_RXDATA_FLUSH_REQUEST
 DECL|USART_STOPBITS_0_5|macro|USART_STOPBITS_0_5
 DECL|USART_STOPBITS_1_5|macro|USART_STOPBITS_1_5
@@ -111,6 +149,8 @@ DECL|__HAL_USART_CLEAR_IT|macro|__HAL_USART_CLEAR_IT
 DECL|__HAL_USART_CLEAR_NEFLAG|macro|__HAL_USART_CLEAR_NEFLAG
 DECL|__HAL_USART_CLEAR_OREFLAG|macro|__HAL_USART_CLEAR_OREFLAG
 DECL|__HAL_USART_CLEAR_PEFLAG|macro|__HAL_USART_CLEAR_PEFLAG
+DECL|__HAL_USART_CLEAR_TXFECF|macro|__HAL_USART_CLEAR_TXFECF
+DECL|__HAL_USART_CLEAR_UDRFLAG|macro|__HAL_USART_CLEAR_UDRFLAG
 DECL|__HAL_USART_DISABLE_IT|macro|__HAL_USART_DISABLE_IT
 DECL|__HAL_USART_DISABLE|macro|__HAL_USART_DISABLE
 DECL|__HAL_USART_ENABLE_IT|macro|__HAL_USART_ENABLE_IT
@@ -123,6 +163,7 @@ DECL|__HAL_USART_ONE_BIT_SAMPLE_ENABLE|macro|__HAL_USART_ONE_BIT_SAMPLE_ENABLE
 DECL|__HAL_USART_RESET_HANDLE_STATE|macro|__HAL_USART_RESET_HANDLE_STATE
 DECL|__HAL_USART_SEND_REQ|macro|__HAL_USART_SEND_REQ
 DECL|__STM32L4xx_HAL_USART_H|macro|__STM32L4xx_HAL_USART_H
+DECL|__USART_HandleTypeDef|struct|typedef struct __USART_HandleTypeDef
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< USART Rx DMA Handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< USART Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to USART Rx transfer Buffer */

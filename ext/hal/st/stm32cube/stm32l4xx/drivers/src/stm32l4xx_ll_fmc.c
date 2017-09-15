@@ -1,6 +1,9 @@
 DECL|BCR_CLEAR_MASK|macro|BCR_CLEAR_MASK
 DECL|BCR_CLEAR_MASK|macro|BCR_CLEAR_MASK
+DECL|BCR_CLEAR_MASK|macro|BCR_CLEAR_MASK
 DECL|BTR_CLEAR_MASK|macro|BTR_CLEAR_MASK
+DECL|BTR_CLEAR_MASK|macro|BTR_CLEAR_MASK
+DECL|BWTR_CLEAR_MASK|macro|BWTR_CLEAR_MASK
 DECL|BWTR_CLEAR_MASK|macro|BWTR_CLEAR_MASK
 DECL|FMC_NAND_AttributeSpace_Timing_Init|function|HAL_StatusTypeDef FMC_NAND_AttributeSpace_Timing_Init(FMC_NAND_TypeDef *Device, FMC_NAND_PCC_TimingTypeDef *Timing, uint32_t Bank)
 DECL|FMC_NAND_CommonSpace_Timing_Init|function|HAL_StatusTypeDef FMC_NAND_CommonSpace_Timing_Init(FMC_NAND_TypeDef *Device, FMC_NAND_PCC_TimingTypeDef *Timing, uint32_t Bank)

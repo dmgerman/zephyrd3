@@ -48,4 +48,3 @@ DECL|SAI_Receive_IT8Bit|function|static void SAI_Receive_IT8Bit(SAI_HandleTypeDe
 DECL|SAI_Transmit_IT16Bit|function|static void SAI_Transmit_IT16Bit(SAI_HandleTypeDef *hsai)
 DECL|SAI_Transmit_IT32Bit|function|static void SAI_Transmit_IT32Bit(SAI_HandleTypeDef *hsai)
 DECL|SAI_Transmit_IT8Bit|function|static void SAI_Transmit_IT8Bit(SAI_HandleTypeDef *hsai)
-DECL|SAI_xCR2_MUTECNT_OFFSET|macro|SAI_xCR2_MUTECNT_OFFSET

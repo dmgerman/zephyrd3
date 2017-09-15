@@ -9,6 +9,7 @@ DECL|FLASH_OB_RDPConfig|function|static HAL_StatusTypeDef FLASH_OB_RDPConfig(uin
 DECL|FLASH_OB_UserConfig|function|static HAL_StatusTypeDef FLASH_OB_UserConfig(uint32_t UserType, uint32_t UserConfig)
 DECL|FLASH_OB_WRPConfig|function|static HAL_StatusTypeDef FLASH_OB_WRPConfig(uint32_t WRPArea, uint32_t WRPStartOffset, uint32_t WRDPEndOffset)
 DECL|FLASH_PageErase|function|void FLASH_PageErase(uint32_t Page, uint32_t Banks)
+DECL|HAL_FLASHEx_ConfigLVEPin|function|HAL_StatusTypeDef HAL_FLASHEx_ConfigLVEPin(uint32_t ConfigLVE)
 DECL|HAL_FLASHEx_Erase_IT|function|HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit)
 DECL|HAL_FLASHEx_Erase|function|HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError)
 DECL|HAL_FLASHEx_OBGetConfig|function|void HAL_FLASHEx_OBGetConfig(FLASH_OBProgramInitTypeDef *pOBInit)

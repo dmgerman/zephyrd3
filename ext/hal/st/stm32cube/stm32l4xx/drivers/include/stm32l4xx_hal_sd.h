@@ -2,9 +2,12 @@ DECL|AllocationUnitSize|member|__IO uint8_t AllocationUnitSize; /*!< Carries inf
 DECL|BLOCKSIZE|macro|BLOCKSIZE
 DECL|BlockNbr|member|uint32_t BlockNbr; /*!< Specifies the Card Capacity in blocks */
 DECL|BlockSize|member|uint32_t BlockSize; /*!< Specifies one block size in bytes */
+DECL|CARD_HIGH_SPEED|macro|CARD_HIGH_SPEED
+DECL|CARD_NORMAL_SPEED|macro|CARD_NORMAL_SPEED
 DECL|CARD_SDHC_SDXC|macro|CARD_SDHC_SDXC
 DECL|CARD_SDSC|macro|CARD_SDSC
 DECL|CARD_SECURED|macro|CARD_SECURED
+DECL|CARD_ULTRA_HIGH_SPEED|macro|CARD_ULTRA_HIGH_SPEED
 DECL|CARD_V1_X|macro|CARD_V1_X
 DECL|CARD_V2_X|macro|CARD_V2_X
 DECL|CID_CRC|member|__IO uint8_t CID_CRC; /*!< CID CRC */
@@ -13,6 +16,7 @@ DECL|CSDStruct|member|__IO uint8_t CSDStruct; /*!< CSD structure */
 DECL|CSD_CRC|member|__IO uint8_t CSD_CRC; /*!< CSD CRC */
 DECL|CSD|member|uint32_t CSD[4]; /*!< SD card specific data table */
 DECL|CardComdClasses|member|__IO uint16_t CardComdClasses; /*!< Card command classes */
+DECL|CardSpeed|member|uint32_t CardSpeed; /*!< Specifies the card Speed */
 DECL|CardType|member|__IO uint16_t CardType; /*!< Carries information about card type */
 DECL|CardType|member|uint32_t CardType; /*!< Specifies the card Type */
 DECL|CardVersion|member|uint32_t CardVersion; /*!< Specifies the card version */

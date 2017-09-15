@@ -1,3 +1,17 @@
+DECL|ADC_ANALOGWATCHDOG_1|macro|ADC_ANALOGWATCHDOG_1
+DECL|ADC_ANALOGWATCHDOG_2|macro|ADC_ANALOGWATCHDOG_2
+DECL|ADC_ANALOGWATCHDOG_3|macro|ADC_ANALOGWATCHDOG_3
+DECL|ADC_ANALOGWATCHDOG_ALL_INJEC|macro|ADC_ANALOGWATCHDOG_ALL_INJEC
+DECL|ADC_ANALOGWATCHDOG_ALL_REGINJEC|macro|ADC_ANALOGWATCHDOG_ALL_REGINJEC
+DECL|ADC_ANALOGWATCHDOG_ALL_REG|macro|ADC_ANALOGWATCHDOG_ALL_REG
+DECL|ADC_ANALOGWATCHDOG_NONE|macro|ADC_ANALOGWATCHDOG_NONE
+DECL|ADC_ANALOGWATCHDOG_SINGLE_INJEC|macro|ADC_ANALOGWATCHDOG_SINGLE_INJEC
+DECL|ADC_ANALOGWATCHDOG_SINGLE_REGINJEC|macro|ADC_ANALOGWATCHDOG_SINGLE_REGINJEC
+DECL|ADC_ANALOGWATCHDOG_SINGLE_REG|macro|ADC_ANALOGWATCHDOG_SINGLE_REG
+DECL|ADC_AWD1_EVENT|macro|ADC_AWD1_EVENT
+DECL|ADC_AWD2_EVENT|macro|ADC_AWD2_EVENT
+DECL|ADC_AWD3_EVENT|macro|ADC_AWD3_EVENT
+DECL|ADC_AWD_EVENT|macro|ADC_AWD_EVENT
 DECL|ADC_AnalogWDGConfTypeDef|typedef|}ADC_AnalogWDGConfTypeDef;
 DECL|ADC_CHANNEL_0|macro|ADC_CHANNEL_0
 DECL|ADC_CHANNEL_10|macro|ADC_CHANNEL_10
@@ -51,7 +65,7 @@ DECL|ADC_DATAALIGN_LEFT|macro|ADC_DATAALIGN_LEFT
 DECL|ADC_DATAALIGN_RIGHT|macro|ADC_DATAALIGN_RIGHT
 DECL|ADC_EOC_SEQ_CONV|macro|ADC_EOC_SEQ_CONV
 DECL|ADC_EOC_SINGLE_CONV|macro|ADC_EOC_SINGLE_CONV
-DECL|ADC_EOC_SINGLE_SEQ_CONV|macro|ADC_EOC_SINGLE_SEQ_CONV
+DECL|ADC_EOSMP_EVENT|macro|ADC_EOSMP_EVENT
 DECL|ADC_EXTERNALTRIGCONVEDGE_FALLING|macro|ADC_EXTERNALTRIGCONVEDGE_FALLING
 DECL|ADC_EXTERNALTRIGCONVEDGE_NONE|macro|ADC_EXTERNALTRIGCONVEDGE_NONE
 DECL|ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING|macro|ADC_EXTERNALTRIGCONVEDGE_RISINGFALLING
@@ -72,14 +86,54 @@ DECL|ADC_EXTERNALTRIG_T4_TRGO|macro|ADC_EXTERNALTRIG_T4_TRGO
 DECL|ADC_EXTERNALTRIG_T6_TRGO|macro|ADC_EXTERNALTRIG_T6_TRGO
 DECL|ADC_EXTERNALTRIG_T8_TRGO2|macro|ADC_EXTERNALTRIG_T8_TRGO2
 DECL|ADC_EXTERNALTRIG_T8_TRGO|macro|ADC_EXTERNALTRIG_T8_TRGO
+DECL|ADC_FLAG_ALL|macro|ADC_FLAG_ALL
+DECL|ADC_FLAG_AWD1|macro|ADC_FLAG_AWD1
+DECL|ADC_FLAG_AWD2|macro|ADC_FLAG_AWD2
+DECL|ADC_FLAG_AWD3|macro|ADC_FLAG_AWD3
+DECL|ADC_FLAG_AWD|macro|ADC_FLAG_AWD
+DECL|ADC_FLAG_EOC|macro|ADC_FLAG_EOC
+DECL|ADC_FLAG_EOSMP|macro|ADC_FLAG_EOSMP
+DECL|ADC_FLAG_EOS|macro|ADC_FLAG_EOS
+DECL|ADC_FLAG_JEOC|macro|ADC_FLAG_JEOC
+DECL|ADC_FLAG_JEOS|macro|ADC_FLAG_JEOS
+DECL|ADC_FLAG_JQOVF|macro|ADC_FLAG_JQOVF
+DECL|ADC_FLAG_OVR|macro|ADC_FLAG_OVR
+DECL|ADC_FLAG_POSTCONV_ALL|macro|ADC_FLAG_POSTCONV_ALL
+DECL|ADC_FLAG_RDY|macro|ADC_FLAG_RDY
 DECL|ADC_GET_RESOLUTION|macro|ADC_GET_RESOLUTION
+DECL|ADC_HandleTypeDef|typedef|}ADC_HandleTypeDef;
 DECL|ADC_IS_CONVERSION_ONGOING_REGULAR|macro|ADC_IS_CONVERSION_ONGOING_REGULAR
 DECL|ADC_IS_ENABLE|macro|ADC_IS_ENABLE
 DECL|ADC_IS_SOFTWARE_START_REGULAR|macro|ADC_IS_SOFTWARE_START_REGULAR
+DECL|ADC_IT_AWD1|macro|ADC_IT_AWD1
+DECL|ADC_IT_AWD2|macro|ADC_IT_AWD2
+DECL|ADC_IT_AWD3|macro|ADC_IT_AWD3
+DECL|ADC_IT_AWD|macro|ADC_IT_AWD
+DECL|ADC_IT_EOC|macro|ADC_IT_EOC
+DECL|ADC_IT_EOSMP|macro|ADC_IT_EOSMP
+DECL|ADC_IT_EOS|macro|ADC_IT_EOS
+DECL|ADC_IT_JEOC|macro|ADC_IT_JEOC
+DECL|ADC_IT_JEOS|macro|ADC_IT_JEOS
+DECL|ADC_IT_JQOVF|macro|ADC_IT_JQOVF
+DECL|ADC_IT_OVR|macro|ADC_IT_OVR
+DECL|ADC_IT_RDY|macro|ADC_IT_RDY
 DECL|ADC_InitTypeDef|typedef|}ADC_InitTypeDef;
+DECL|ADC_InjectionConfigTypeDef|typedef|}ADC_InjectionConfigTypeDef;
+DECL|ADC_JQOVF_EVENT|macro|ADC_JQOVF_EVENT
+DECL|ADC_OVERSAMPLING_RATIO_128|macro|ADC_OVERSAMPLING_RATIO_128
+DECL|ADC_OVERSAMPLING_RATIO_16|macro|ADC_OVERSAMPLING_RATIO_16
+DECL|ADC_OVERSAMPLING_RATIO_256|macro|ADC_OVERSAMPLING_RATIO_256
+DECL|ADC_OVERSAMPLING_RATIO_2|macro|ADC_OVERSAMPLING_RATIO_2
+DECL|ADC_OVERSAMPLING_RATIO_32|macro|ADC_OVERSAMPLING_RATIO_32
+DECL|ADC_OVERSAMPLING_RATIO_4|macro|ADC_OVERSAMPLING_RATIO_4
+DECL|ADC_OVERSAMPLING_RATIO_64|macro|ADC_OVERSAMPLING_RATIO_64
+DECL|ADC_OVERSAMPLING_RATIO_8|macro|ADC_OVERSAMPLING_RATIO_8
 DECL|ADC_OVR_DATA_OVERWRITTEN|macro|ADC_OVR_DATA_OVERWRITTEN
 DECL|ADC_OVR_DATA_PRESERVED|macro|ADC_OVR_DATA_PRESERVED
+DECL|ADC_OVR_EVENT|macro|ADC_OVR_EVENT
 DECL|ADC_OversamplingTypeDef|typedef|}ADC_OversamplingTypeDef;
+DECL|ADC_REGOVERSAMPLING_CONTINUED_MODE|macro|ADC_REGOVERSAMPLING_CONTINUED_MODE
+DECL|ADC_REGOVERSAMPLING_RESUMED_MODE|macro|ADC_REGOVERSAMPLING_RESUMED_MODE
 DECL|ADC_REGULAR_RANK_10|macro|ADC_REGULAR_RANK_10
 DECL|ADC_REGULAR_RANK_11|macro|ADC_REGULAR_RANK_11
 DECL|ADC_REGULAR_RANK_12|macro|ADC_REGULAR_RANK_12
@@ -100,21 +154,45 @@ DECL|ADC_RESOLUTION_10B|macro|ADC_RESOLUTION_10B
 DECL|ADC_RESOLUTION_12B|macro|ADC_RESOLUTION_12B
 DECL|ADC_RESOLUTION_6B|macro|ADC_RESOLUTION_6B
 DECL|ADC_RESOLUTION_8B|macro|ADC_RESOLUTION_8B
+DECL|ADC_RIGHTBITSHIFT_1|macro|ADC_RIGHTBITSHIFT_1
+DECL|ADC_RIGHTBITSHIFT_2|macro|ADC_RIGHTBITSHIFT_2
+DECL|ADC_RIGHTBITSHIFT_3|macro|ADC_RIGHTBITSHIFT_3
+DECL|ADC_RIGHTBITSHIFT_4|macro|ADC_RIGHTBITSHIFT_4
+DECL|ADC_RIGHTBITSHIFT_5|macro|ADC_RIGHTBITSHIFT_5
+DECL|ADC_RIGHTBITSHIFT_6|macro|ADC_RIGHTBITSHIFT_6
+DECL|ADC_RIGHTBITSHIFT_7|macro|ADC_RIGHTBITSHIFT_7
+DECL|ADC_RIGHTBITSHIFT_8|macro|ADC_RIGHTBITSHIFT_8
+DECL|ADC_RIGHTBITSHIFT_NONE|macro|ADC_RIGHTBITSHIFT_NONE
+DECL|ADC_SAMPLETIME_12CYCLES_5|macro|ADC_SAMPLETIME_12CYCLES_5
+DECL|ADC_SAMPLETIME_247CYCLES_5|macro|ADC_SAMPLETIME_247CYCLES_5
+DECL|ADC_SAMPLETIME_24CYCLES_5|macro|ADC_SAMPLETIME_24CYCLES_5
+DECL|ADC_SAMPLETIME_2CYCLES_5|macro|ADC_SAMPLETIME_2CYCLES_5
+DECL|ADC_SAMPLETIME_3CYCLES_5|macro|ADC_SAMPLETIME_3CYCLES_5
+DECL|ADC_SAMPLETIME_47CYCLES_5|macro|ADC_SAMPLETIME_47CYCLES_5
+DECL|ADC_SAMPLETIME_640CYCLES_5|macro|ADC_SAMPLETIME_640CYCLES_5
+DECL|ADC_SAMPLETIME_6CYCLES_5|macro|ADC_SAMPLETIME_6CYCLES_5
+DECL|ADC_SAMPLETIME_92CYCLES_5|macro|ADC_SAMPLETIME_92CYCLES_5
 DECL|ADC_SCAN_DISABLE|macro|ADC_SCAN_DISABLE
 DECL|ADC_SCAN_ENABLE|macro|ADC_SCAN_ENABLE
 DECL|ADC_SOFTWARE_START|macro|ADC_SOFTWARE_START
 DECL|ADC_STATE_CLR_SET|macro|ADC_STATE_CLR_SET
 DECL|ADC_STOP_CONVERSION_TIMEOUT|macro|ADC_STOP_CONVERSION_TIMEOUT
 DECL|ADC_TEMPSENSOR_DELAY_US|macro|ADC_TEMPSENSOR_DELAY_US
+DECL|ADC_TRIGGEREDMODE_MULTI_TRIGGER|macro|ADC_TRIGGEREDMODE_MULTI_TRIGGER
+DECL|ADC_TRIGGEREDMODE_SINGLE_TRIGGER|macro|ADC_TRIGGEREDMODE_SINGLE_TRIGGER
+DECL|ChannelCount|member|uint32_t ChannelCount; /*!< Number of channels in the injected sequence */
 DECL|Channel|member|uint32_t Channel; /*!< Select which ADC channel to monitor by analog watchdog.
 DECL|Channel|member|uint32_t Channel; /*!< Specify the channel to configure into ADC regular group.
-DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Select ADC clock source (synchronous clock derived from APB clock or asynchronous clock derived from System/PLLSAI1/PLLSAI2 clocks) and clock prescaler.
+DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Select ADC clock source (synchronous clock derived from APB clock or asynchronous clock derived from system clock or PLL (Refer to reference manual for list of clocks available)) and clock prescaler.
+DECL|ContextQueue|member|uint32_t ContextQueue; /*!< Injected channel configuration context: build-up over each
 DECL|ContinuousConvMode|member|uint32_t ContinuousConvMode; /*!< Specify whether the conversion is performed in single mode (one conversion) or continuous mode for ADC group regular,
 DECL|DFSDMConfig|member|uint32_t DFSDMConfig; /*!< Specify whether ADC conversion data is sent directly to DFSDM.
 DECL|DMAContinuousRequests|member|uint32_t DMAContinuousRequests; /*!< Specify whether the DMA requests are performed in one shot mode (DMA transfer stops when number of conversions is reached)
+DECL|DMA_Handle|member|DMA_HandleTypeDef *DMA_Handle; /*!< Pointer DMA Handler */
 DECL|DataAlign|member|uint32_t DataAlign; /*!< Specify ADC data alignment in conversion data register (right or left).
 DECL|DiscontinuousConvMode|member|uint32_t DiscontinuousConvMode; /*!< Specify whether the conversions sequence of ADC group regular is performed in Complete-sequence/Discontinuous-sequence
 DECL|EOCSelection|member|uint32_t EOCSelection; /*!< Specify which EOC (End Of Conversion) flag is used for conversion by polling and interruption: end of unitary conversion or end of sequence conversions.
+DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< ADC Error code */
 DECL|ExternalTrigConvEdge|member|uint32_t ExternalTrigConvEdge; /*!< Select the external event edge used to trigger ADC group regular conversion start.
 DECL|ExternalTrigConv|member|uint32_t ExternalTrigConv; /*!< Select the external event source used to trigger ADC group regular conversion start.
 DECL|HAL_ADC_ERROR_DMA|macro|HAL_ADC_ERROR_DMA
@@ -157,6 +235,10 @@ DECL|IS_ADC_SAMPLE_TIME|macro|IS_ADC_SAMPLE_TIME
 DECL|IS_ADC_SAMPLE_TIME|macro|IS_ADC_SAMPLE_TIME
 DECL|IS_ADC_SCAN_MODE|macro|IS_ADC_SCAN_MODE
 DECL|ITMode|member|uint32_t ITMode; /*!< Specify whether the analog watchdog is configured in interrupt or polling mode.
+DECL|Init|member|ADC_InitTypeDef Init; /*!< ADC initialization parameters and regular conversions setting */
+DECL|InjectionConfig|member|ADC_InjectionConfigTypeDef InjectionConfig ; /*!< ADC injected channel configuration build-up structure */
+DECL|Instance|member|ADC_TypeDef *Instance; /*!< Register base address */
+DECL|Lock|member|HAL_LockTypeDef Lock; /*!< ADC locking object */
 DECL|LowPowerAutoWait|member|uint32_t LowPowerAutoWait; /*!< Select the dynamic low power Auto Delay: new conversion start only when the previous
 DECL|LowThreshold|member|uint32_t LowThreshold; /*!< Configures the ADC analog watchdog Low threshold value.
 DECL|NbrOfConversion|member|uint32_t NbrOfConversion; /*!< Specify the number of ranks that will be converted within the regular group sequencer.
@@ -174,13 +256,28 @@ DECL|RightBitShift|member|uint32_t RightBitShift; /*!< Configures the division c
 DECL|SamplingTime|member|uint32_t SamplingTime; /*!< Sampling time value to be set for the selected channel.
 DECL|ScanConvMode|member|uint32_t ScanConvMode; /*!< Configure the sequencer of ADC groups regular and injected.
 DECL|SingleDiff|member|uint32_t SingleDiff; /*!< Select single-ended or differential input.
+DECL|State|member|__IO uint32_t State; /*!< ADC communication state (bitmap of ADC states) */
 DECL|TriggeredMode|member|uint32_t TriggeredMode; /*!< Selects the regular triggered oversampling mode.
 DECL|WatchdogMode|member|uint32_t WatchdogMode; /*!< Configure the ADC analog watchdog mode: single/all/none channels.
 DECL|WatchdogNumber|member|uint32_t WatchdogNumber; /*!< Select which ADC analog watchdog is monitoring the selected channel.
+DECL|__HAL_ADC_CALC_DATA_TO_VOLTAGE|macro|__HAL_ADC_CALC_DATA_TO_VOLTAGE
+DECL|__HAL_ADC_CALC_TEMPERATURE_TYP_PARAMS|macro|__HAL_ADC_CALC_TEMPERATURE_TYP_PARAMS
+DECL|__HAL_ADC_CALC_TEMPERATURE|macro|__HAL_ADC_CALC_TEMPERATURE
+DECL|__HAL_ADC_CALC_VREFANALOG_VOLTAGE|macro|__HAL_ADC_CALC_VREFANALOG_VOLTAGE
+DECL|__HAL_ADC_CHANNEL_INTERNAL_TO_EXTERNAL|macro|__HAL_ADC_CHANNEL_INTERNAL_TO_EXTERNAL
+DECL|__HAL_ADC_CHANNEL_TO_DECIMAL_NB|macro|__HAL_ADC_CHANNEL_TO_DECIMAL_NB
 DECL|__HAL_ADC_CLEAR_FLAG|macro|__HAL_ADC_CLEAR_FLAG
+DECL|__HAL_ADC_COMMON_INSTANCE|macro|__HAL_ADC_COMMON_INSTANCE
+DECL|__HAL_ADC_CONVERT_DATA_RESOLUTION|macro|__HAL_ADC_CONVERT_DATA_RESOLUTION
+DECL|__HAL_ADC_DECIMAL_NB_TO_CHANNEL|macro|__HAL_ADC_DECIMAL_NB_TO_CHANNEL
+DECL|__HAL_ADC_DIGITAL_SCALE|macro|__HAL_ADC_DIGITAL_SCALE
 DECL|__HAL_ADC_DISABLE_IT|macro|__HAL_ADC_DISABLE_IT
 DECL|__HAL_ADC_ENABLE_IT|macro|__HAL_ADC_ENABLE_IT
 DECL|__HAL_ADC_GET_FLAG|macro|__HAL_ADC_GET_FLAG
 DECL|__HAL_ADC_GET_IT_SOURCE|macro|__HAL_ADC_GET_IT_SOURCE
+DECL|__HAL_ADC_IS_CHANNEL_INTERNAL_AVAILABLE|macro|__HAL_ADC_IS_CHANNEL_INTERNAL_AVAILABLE
+DECL|__HAL_ADC_IS_CHANNEL_INTERNAL|macro|__HAL_ADC_IS_CHANNEL_INTERNAL
+DECL|__HAL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE|macro|__HAL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE
+DECL|__HAL_ADC_MULTI_CONV_DATA_MASTER_SLAVE|macro|__HAL_ADC_MULTI_CONV_DATA_MASTER_SLAVE
 DECL|__HAL_ADC_RESET_HANDLE_STATE|macro|__HAL_ADC_RESET_HANDLE_STATE
 DECL|__STM32L4xx_HAL_ADC_H|macro|__STM32L4xx_HAL_ADC_H

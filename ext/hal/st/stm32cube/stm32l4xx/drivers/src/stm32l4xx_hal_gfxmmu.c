@@ -1,0 +1,15 @@
+DECL|GFXMMU_CR_ITS_MASK|macro|GFXMMU_CR_ITS_MASK
+DECL|GFXMMU_LUTXL_FVB_OFFSET|macro|GFXMMU_LUTXL_FVB_OFFSET
+DECL|GFXMMU_LUTXL_LVB_OFFSET|macro|GFXMMU_LUTXL_LVB_OFFSET
+DECL|HAL_GFXMMU_ConfigLutLine|function|HAL_StatusTypeDef HAL_GFXMMU_ConfigLutLine(GFXMMU_HandleTypeDef *hgfxmmu, GFXMMU_LutLineTypeDef *lutLine)
+DECL|HAL_GFXMMU_ConfigLut|function|HAL_StatusTypeDef HAL_GFXMMU_ConfigLut(GFXMMU_HandleTypeDef *hgfxmmu, uint32_t FirstLine, uint32_t LinesNumber, uint32_t Address)
+DECL|HAL_GFXMMU_DeInit|function|HAL_StatusTypeDef HAL_GFXMMU_DeInit(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_DisableLutLines|function|HAL_StatusTypeDef HAL_GFXMMU_DisableLutLines(GFXMMU_HandleTypeDef *hgfxmmu, uint32_t FirstLine, uint32_t LinesNumber)
+DECL|HAL_GFXMMU_ErrorCallback|function|__weak void HAL_GFXMMU_ErrorCallback(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_GetError|function|uint32_t HAL_GFXMMU_GetError(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_GetState|function|HAL_GFXMMU_StateTypeDef HAL_GFXMMU_GetState(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_IRQHandler|function|void HAL_GFXMMU_IRQHandler(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_Init|function|HAL_StatusTypeDef HAL_GFXMMU_Init(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_ModifyBuffers|function|HAL_StatusTypeDef HAL_GFXMMU_ModifyBuffers(GFXMMU_HandleTypeDef *hgfxmmu, GFXMMU_BuffersTypeDef *Buffers)
+DECL|HAL_GFXMMU_MspDeInit|function|__weak void HAL_GFXMMU_MspDeInit(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_MspInit|function|__weak void HAL_GFXMMU_MspInit(GFXMMU_HandleTypeDef *hgfxmmu)

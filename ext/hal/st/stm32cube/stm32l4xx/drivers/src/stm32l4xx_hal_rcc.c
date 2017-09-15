@@ -20,6 +20,7 @@ DECL|MCO1_GPIO_PORT|macro|MCO1_GPIO_PORT
 DECL|MCO1_PIN|macro|MCO1_PIN
 DECL|MSI_TIMEOUT_VALUE|macro|MSI_TIMEOUT_VALUE
 DECL|PLL_TIMEOUT_VALUE|macro|PLL_TIMEOUT_VALUE
+DECL|RCC_GetSysClockFreqFromPLLSource|function|static uint32_t RCC_GetSysClockFreqFromPLLSource(void)
 DECL|RCC_PLL_OSCSOURCE_CONFIG|macro|RCC_PLL_OSCSOURCE_CONFIG
 DECL|RCC_SetFlashLatencyFromMSIRange|function|static HAL_StatusTypeDef RCC_SetFlashLatencyFromMSIRange(uint32_t msirange)
 DECL|__MCO1_CLK_ENABLE|macro|__MCO1_CLK_ENABLE

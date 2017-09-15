@@ -33,6 +33,7 @@ DECL|HASH_DIGEST_CALCULATION_NOT_STARTED|macro|HASH_DIGEST_CALCULATION_NOT_START
 DECL|HASH_DIGEST_CALCULATION_STARTED|macro|HASH_DIGEST_CALCULATION_STARTED
 DECL|HASH_DMAError|function|static void HASH_DMAError(DMA_HandleTypeDef *hdma)
 DECL|HASH_DMAXferCplt|function|static void HASH_DMAXferCplt(DMA_HandleTypeDef *hdma)
+DECL|HASH_DMA_SUSPENSION_WORDS_LIMIT|macro|HASH_DMA_SUSPENSION_WORDS_LIMIT
 DECL|HASH_Finish|function|HAL_StatusTypeDef HASH_Finish(HASH_HandleTypeDef *hhash, uint8_t* pOutBuffer, uint32_t Timeout)
 DECL|HASH_GetDigest|function|static void HASH_GetDigest(uint8_t *pMsgDigest, uint8_t Size)
 DECL|HASH_IT|function|static HAL_StatusTypeDef HASH_IT(HASH_HandleTypeDef *hhash)

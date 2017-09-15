@@ -26,8 +26,12 @@ DECL|HAL_USART_Transmit|function|HAL_StatusTypeDef HAL_USART_Transmit(USART_Hand
 DECL|HAL_USART_TxCpltCallback|function|__weak void HAL_USART_TxCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_TxHalfCpltCallback|function|__weak void HAL_USART_TxHalfCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_TxRxCpltCallback|function|__weak void HAL_USART_TxRxCpltCallback(USART_HandleTypeDef *husart)
+DECL|USART_BRR_MIN|macro|USART_BRR_MIN
+DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
 DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
 DECL|USART_CR2_FIELDS|macro|USART_CR2_FIELDS
+DECL|USART_CR2_FIELDS|macro|USART_CR2_FIELDS
+DECL|USART_CR3_FIELDS|macro|USART_CR3_FIELDS
 DECL|USART_CheckIdleState|function|static HAL_StatusTypeDef USART_CheckIdleState(USART_HandleTypeDef *husart)
 DECL|USART_DMAAbortOnError|function|static void USART_DMAAbortOnError(DMA_HandleTypeDef *hdma)
 DECL|USART_DMAError|function|static void USART_DMAError(DMA_HandleTypeDef *hdma)
@@ -39,10 +43,15 @@ DECL|USART_DMATxAbortCallback|function|static void USART_DMATxAbortCallback(DMA_
 DECL|USART_DMATxHalfCplt|function|static void USART_DMATxHalfCplt(DMA_HandleTypeDef *hdma)
 DECL|USART_DUMMY_DATA|macro|USART_DUMMY_DATA
 DECL|USART_EndTransfer|function|static void USART_EndTransfer(USART_HandleTypeDef *husart)
-DECL|USART_EndTransmit_IT|function|static HAL_StatusTypeDef USART_EndTransmit_IT(USART_HandleTypeDef *husart)
-DECL|USART_Receive_IT|function|static HAL_StatusTypeDef USART_Receive_IT(USART_HandleTypeDef *husart)
+DECL|USART_EndTransmit_IT|function|static void USART_EndTransmit_IT(USART_HandleTypeDef *husart)
+DECL|USART_RxISR_16BIT_FIFOEN|function|static void USART_RxISR_16BIT_FIFOEN(USART_HandleTypeDef *husart)
+DECL|USART_RxISR_16BIT|function|static void USART_RxISR_16BIT(USART_HandleTypeDef *husart)
+DECL|USART_RxISR_8BIT_FIFOEN|function|static void USART_RxISR_8BIT_FIFOEN(USART_HandleTypeDef *husart)
+DECL|USART_RxISR_8BIT|function|static void USART_RxISR_8BIT(USART_HandleTypeDef *husart)
 DECL|USART_SetConfig|function|static HAL_StatusTypeDef USART_SetConfig(USART_HandleTypeDef *husart)
 DECL|USART_TEACK_REACK_TIMEOUT|macro|USART_TEACK_REACK_TIMEOUT
-DECL|USART_TransmitReceive_IT|function|static HAL_StatusTypeDef USART_TransmitReceive_IT(USART_HandleTypeDef *husart)
-DECL|USART_Transmit_IT|function|static HAL_StatusTypeDef USART_Transmit_IT(USART_HandleTypeDef *husart)
+DECL|USART_TxISR_16BIT_FIFOEN|function|static void USART_TxISR_16BIT_FIFOEN(USART_HandleTypeDef *husart)
+DECL|USART_TxISR_16BIT|function|static void USART_TxISR_16BIT(USART_HandleTypeDef *husart)
+DECL|USART_TxISR_8BIT_FIFOEN|function|static void USART_TxISR_8BIT_FIFOEN(USART_HandleTypeDef *husart)
+DECL|USART_TxISR_8BIT|function|static void USART_TxISR_8BIT(USART_HandleTypeDef *husart)
 DECL|USART_WaitOnFlagUntilTimeout|function|static HAL_StatusTypeDef USART_WaitOnFlagUntilTimeout(USART_HandleTypeDef *husart, uint32_t Flag, FlagStatus Status, uint32_t Tickstart, uint32_t Timeout)

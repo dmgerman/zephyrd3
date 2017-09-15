@@ -28,8 +28,11 @@ DECL|HAL_IRDA_Transmit_IT|function|HAL_StatusTypeDef HAL_IRDA_Transmit_IT(IRDA_H
 DECL|HAL_IRDA_Transmit|function|HAL_StatusTypeDef HAL_IRDA_Transmit(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size, uint32_t Timeout)
 DECL|HAL_IRDA_TxCpltCallback|function|__weak void HAL_IRDA_TxCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_TxHalfCpltCallback|function|__weak void HAL_IRDA_TxHalfCpltCallback(IRDA_HandleTypeDef *hirda)
+DECL|IRDAPrescTable|variable|IRDAPrescTable
 DECL|IRDA_CR1_FIELDS|macro|IRDA_CR1_FIELDS
 DECL|IRDA_CheckIdleState|function|static HAL_StatusTypeDef IRDA_CheckIdleState(IRDA_HandleTypeDef *hirda)
+DECL|IRDA_DIV_SAMPLING16|macro|IRDA_DIV_SAMPLING16
+DECL|IRDA_DIV_SAMPLING16|macro|IRDA_DIV_SAMPLING16
 DECL|IRDA_DMAAbortOnError|function|static void IRDA_DMAAbortOnError(DMA_HandleTypeDef *hdma)
 DECL|IRDA_DMAError|function|static void IRDA_DMAError(DMA_HandleTypeDef *hdma)
 DECL|IRDA_DMAReceiveCplt|function|static void IRDA_DMAReceiveCplt(DMA_HandleTypeDef *hdma)
@@ -41,10 +44,12 @@ DECL|IRDA_DMATransmitHalfCplt|function|static void IRDA_DMATransmitHalfCplt(DMA_
 DECL|IRDA_DMATxAbortCallback|function|static void IRDA_DMATxAbortCallback(DMA_HandleTypeDef *hdma)
 DECL|IRDA_DMATxOnlyAbortCallback|function|static void IRDA_DMATxOnlyAbortCallback(DMA_HandleTypeDef *hdma)
 DECL|IRDA_EndRxTransfer|function|static void IRDA_EndRxTransfer(IRDA_HandleTypeDef *hirda)
-DECL|IRDA_EndTransmit_IT|function|static HAL_StatusTypeDef IRDA_EndTransmit_IT(IRDA_HandleTypeDef *hirda)
+DECL|IRDA_EndTransmit_IT|function|static void IRDA_EndTransmit_IT(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_EndTxTransfer|function|static void IRDA_EndTxTransfer(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_Receive_IT|function|static HAL_StatusTypeDef IRDA_Receive_IT(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_SetConfig|function|static HAL_StatusTypeDef IRDA_SetConfig(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_TEACK_REACK_TIMEOUT|macro|IRDA_TEACK_REACK_TIMEOUT
 DECL|IRDA_Transmit_IT|function|static HAL_StatusTypeDef IRDA_Transmit_IT(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_WaitOnFlagUntilTimeout|function|static HAL_StatusTypeDef IRDA_WaitOnFlagUntilTimeout(IRDA_HandleTypeDef *hirda, uint32_t Flag, FlagStatus Status, uint32_t Tickstart, uint32_t Timeout)
+DECL|USART_BRR_MAX|macro|USART_BRR_MAX
+DECL|USART_BRR_MIN|macro|USART_BRR_MIN

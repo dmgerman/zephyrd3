@@ -1,4 +1,5 @@
 DECL|FLASH_NB_DOUBLE_WORDS_IN_ROW|macro|FLASH_NB_DOUBLE_WORDS_IN_ROW
+DECL|FLASH_NB_DOUBLE_WORDS_IN_ROW|macro|FLASH_NB_DOUBLE_WORDS_IN_ROW
 DECL|FLASH_Program_DoubleWord|function|static void FLASH_Program_DoubleWord(uint32_t Address, uint64_t Data)
 DECL|FLASH_Program_Fast|function|static void FLASH_Program_Fast(uint32_t Address, uint32_t DataAddress)
 DECL|FLASH_SetErrorCode|function|static void FLASH_SetErrorCode(void)

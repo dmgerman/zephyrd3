@@ -1,0 +1,2 @@
+DECL|HAL_DFDSMEx_ChannelGetPulsesSkipping|function|HAL_StatusTypeDef HAL_DFDSMEx_ChannelGetPulsesSkipping(DFSDM_Channel_HandleTypeDef *hdfsdm_channel, uint32_t *PulsesValue)
+DECL|HAL_DFDSMEx_ChannelSetPulsesSkipping|function|HAL_StatusTypeDef HAL_DFDSMEx_ChannelSetPulsesSkipping(DFSDM_Channel_HandleTypeDef *hdfsdm_channel, uint32_t PulsesValue)
