@@ -120,16 +120,23 @@ DECL|HAL_CAN_ERROR_CRC|macro|HAL_CAN_ERROR_CRC
 DECL|HAL_CAN_ERROR_EPV|macro|HAL_CAN_ERROR_EPV
 DECL|HAL_CAN_ERROR_EWG|macro|HAL_CAN_ERROR_EWG
 DECL|HAL_CAN_ERROR_FOR|macro|HAL_CAN_ERROR_FOR
+DECL|HAL_CAN_ERROR_FOV0|macro|HAL_CAN_ERROR_FOV0
+DECL|HAL_CAN_ERROR_FOV1|macro|HAL_CAN_ERROR_FOV1
 DECL|HAL_CAN_ERROR_NONE|macro|HAL_CAN_ERROR_NONE
 DECL|HAL_CAN_ERROR_STF|macro|HAL_CAN_ERROR_STF
-DECL|HAL_CAN_STATE_BUSY_RX|enumerator|HAL_CAN_STATE_BUSY_RX = 0x22U, /*!< CAN process is ongoing */
-DECL|HAL_CAN_STATE_BUSY_TX_RX|enumerator|HAL_CAN_STATE_BUSY_TX_RX = 0x32U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_ERROR_TXFAIL|macro|HAL_CAN_ERROR_TXFAIL
+DECL|HAL_CAN_STATE_BUSY_RX0_RX1|enumerator|HAL_CAN_STATE_BUSY_RX0_RX1 = 0x62U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_RX0|enumerator|HAL_CAN_STATE_BUSY_RX0 = 0x22U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_RX1|enumerator|HAL_CAN_STATE_BUSY_RX1 = 0x32U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_TX_RX0_RX1|enumerator|HAL_CAN_STATE_BUSY_TX_RX0_RX1 = 0x72U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_TX_RX0|enumerator|HAL_CAN_STATE_BUSY_TX_RX0 = 0x42U, /*!< CAN process is ongoing */
+DECL|HAL_CAN_STATE_BUSY_TX_RX1|enumerator|HAL_CAN_STATE_BUSY_TX_RX1 = 0x52U, /*!< CAN process is ongoing */
 DECL|HAL_CAN_STATE_BUSY_TX|enumerator|HAL_CAN_STATE_BUSY_TX = 0x12U, /*!< CAN process is ongoing */
 DECL|HAL_CAN_STATE_BUSY|enumerator|HAL_CAN_STATE_BUSY = 0x02U, /*!< CAN process is ongoing */
 DECL|HAL_CAN_STATE_ERROR|enumerator|HAL_CAN_STATE_ERROR = 0x04U /*!< CAN error state */
 DECL|HAL_CAN_STATE_READY|enumerator|HAL_CAN_STATE_READY = 0x01U, /*!< CAN initialized and ready for use */
 DECL|HAL_CAN_STATE_RESET|enumerator|HAL_CAN_STATE_RESET = 0x00U, /*!< CAN not yet initialized or disabled */
-DECL|HAL_CAN_STATE_TIMEOUT|enumerator|HAL_CAN_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
+DECL|HAL_CAN_STATE_TIMEOUT|enumerator|HAL_CAN_STATE_TIMEOUT = 0x03U, /*!< CAN in Timeout state */
 DECL|HAL_CAN_StateTypeDef|typedef|}HAL_CAN_StateTypeDef;
 DECL|IDE|member|uint32_t IDE; /*!< Specifies the type of identifier for the message that will be received.
 DECL|IDE|member|uint32_t IDE; /*!< Specifies the type of identifier for the message that will be transmitted.
@@ -177,5 +184,6 @@ DECL|__HAL_CAN_MSG_PENDING|macro|__HAL_CAN_MSG_PENDING
 DECL|__HAL_CAN_RESET_HANDLE_STATE|macro|__HAL_CAN_RESET_HANDLE_STATE
 DECL|__HAL_CAN_TRANSMIT_STATUS|macro|__HAL_CAN_TRANSMIT_STATUS
 DECL|__STM32F4xx_HAL_CAN_H|macro|__STM32F4xx_HAL_CAN_H
-DECL|pRxMsg|member|CanRxMsgTypeDef* pRxMsg; /*!< Pointer to reception structure */
+DECL|pRx1Msg|member|CanRxMsgTypeDef* pRx1Msg; /*!< Pointer to reception structure for RX FIFO1 msg */
+DECL|pRxMsg|member|CanRxMsgTypeDef* pRxMsg; /*!< Pointer to reception structure for RX FIFO0 msg */
 DECL|pTxMsg|member|CanTxMsgTypeDef* pTxMsg; /*!< Pointer to transmit structure */
