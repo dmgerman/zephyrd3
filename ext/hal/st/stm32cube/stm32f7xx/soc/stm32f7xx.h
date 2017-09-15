@@ -1,8 +1,8 @@
 DECL|CLEAR_BIT|macro|CLEAR_BIT
 DECL|CLEAR_REG|macro|CLEAR_REG
-DECL|DISABLE|enumerator|DISABLE = 0,
+DECL|DISABLE|enumerator|DISABLE = 0U,
 DECL|ENABLE|enumerator|ENABLE = !DISABLE
-DECL|ERROR|enumerator|ERROR = 0,
+DECL|ERROR|enumerator|ERROR = 0U,
 DECL|ErrorStatus|typedef|} ErrorStatus;
 DECL|FlagStatus|typedef|} FlagStatus, ITStatus;
 DECL|FunctionalState|typedef|} FunctionalState;
@@ -12,7 +12,7 @@ DECL|MODIFY_REG|macro|MODIFY_REG
 DECL|POSITION_VAL|macro|POSITION_VAL
 DECL|READ_BIT|macro|READ_BIT
 DECL|READ_REG|macro|READ_REG
-DECL|RESET|enumerator|RESET = 0,
+DECL|RESET|enumerator|RESET = 0U,
 DECL|SET_BIT|macro|SET_BIT
 DECL|SET|enumerator|SET = !RESET
 DECL|STM32F7|macro|STM32F7

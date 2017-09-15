@@ -1,10 +1,5 @@
 DECL|DCMI_DMAError|function|static void DCMI_DMAError(DMA_HandleTypeDef *hdma)
 DECL|DCMI_DMAXferCplt|function|static void DCMI_DMAXferCplt(DMA_HandleTypeDef *hdma)
-DECL|DCMI_POSITION_CWSIZE_VLINE|macro|DCMI_POSITION_CWSIZE_VLINE
-DECL|DCMI_POSITION_CWSTRT_VST|macro|DCMI_POSITION_CWSTRT_VST
-DECL|DCMI_POSITION_ESCR_FEC|macro|DCMI_POSITION_ESCR_FEC
-DECL|DCMI_POSITION_ESCR_LEC|macro|DCMI_POSITION_ESCR_LEC
-DECL|DCMI_POSITION_ESCR_LSC|macro|DCMI_POSITION_ESCR_LSC
 DECL|HAL_DCMI_ConfigCrop|function|HAL_StatusTypeDef HAL_DCMI_ConfigCrop(DCMI_HandleTypeDef *hdcmi, uint32_t X0, uint32_t Y0, uint32_t XSize, uint32_t YSize)
 DECL|HAL_DCMI_DeInit|function|HAL_StatusTypeDef HAL_DCMI_DeInit(DCMI_HandleTypeDef *hdcmi)
 DECL|HAL_DCMI_DisableCrop|function|HAL_StatusTypeDef HAL_DCMI_DisableCrop(DCMI_HandleTypeDef *hdcmi)

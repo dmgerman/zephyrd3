@@ -19,7 +19,7 @@ DECL|HAL_LTDC_GetError|function|uint32_t HAL_LTDC_GetError(LTDC_HandleTypeDef *h
 DECL|HAL_LTDC_GetState|function|HAL_LTDC_StateTypeDef HAL_LTDC_GetState(LTDC_HandleTypeDef *hltdc)
 DECL|HAL_LTDC_IRQHandler|function|void HAL_LTDC_IRQHandler(LTDC_HandleTypeDef *hltdc)
 DECL|HAL_LTDC_Init|function|HAL_StatusTypeDef HAL_LTDC_Init(LTDC_HandleTypeDef *hltdc)
-DECL|HAL_LTDC_LineEvenCallback|function|__weak void HAL_LTDC_LineEvenCallback(LTDC_HandleTypeDef *hltdc)
+DECL|HAL_LTDC_LineEventCallback|function|__weak void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef *hltdc)
 DECL|HAL_LTDC_MspDeInit|function|__weak void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* hltdc)
 DECL|HAL_LTDC_MspInit|function|__weak void HAL_LTDC_MspInit(LTDC_HandleTypeDef* hltdc)
 DECL|HAL_LTDC_ProgramLineEvent|function|HAL_StatusTypeDef HAL_LTDC_ProgramLineEvent(LTDC_HandleTypeDef *hltdc, uint32_t Line)

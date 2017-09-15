@@ -13,6 +13,7 @@ DECL|IC1Polarity|member|uint32_t IC1Polarity; /*!< Specifies the active edge of 
 DECL|IC1Prescaler|member|uint32_t IC1Prescaler; /*!< Specifies the Input Capture Prescaler.
 DECL|IS_TIM_BREAK2_POLARITY|macro|IS_TIM_BREAK2_POLARITY
 DECL|IS_TIM_BREAK2_STATE|macro|IS_TIM_BREAK2_STATE
+DECL|IS_TIM_BREAKINPUTSOURCE_POLARITY|macro|IS_TIM_BREAKINPUTSOURCE_POLARITY
 DECL|IS_TIM_BREAKINPUTSOURCE_STATE|macro|IS_TIM_BREAKINPUTSOURCE_STATE
 DECL|IS_TIM_BREAKINPUTSOURCE|macro|IS_TIM_BREAKINPUTSOURCE
 DECL|IS_TIM_BREAKINPUT|macro|IS_TIM_BREAKINPUT
@@ -35,6 +36,7 @@ DECL|MasterOutputTrigger|member|uint32_t MasterOutputTrigger; /*!< Trigger outpu
 DECL|MasterSlaveMode|member|uint32_t MasterSlaveMode; /*!< Master/slave mode selection.
 DECL|OffStateIDLEMode|member|uint32_t OffStateIDLEMode; /*!< TIM off state in IDLE mode.
 DECL|OffStateRunMode|member|uint32_t OffStateRunMode; /*!< TIM off state in run mode.
+DECL|Polarity|member|uint32_t Polarity; /*!< Specifies the break input source polarity.
 DECL|Source|member|uint32_t Source; /*!< Specifies the source of the timer break input.
 DECL|TIMEx_BreakInputConfigTypeDef|typedef|} TIMEx_BreakInputConfigTypeDef;
 DECL|TIM_BREAK2POLARITY_HIGH|macro|TIM_BREAK2POLARITY_HIGH
@@ -45,6 +47,8 @@ DECL|TIM_BREAKINPUTSOURCE_BKIN|macro|TIM_BREAKINPUTSOURCE_BKIN
 DECL|TIM_BREAKINPUTSOURCE_DFSDM1|macro|TIM_BREAKINPUTSOURCE_DFSDM1
 DECL|TIM_BREAKINPUTSOURCE_DISABLE|macro|TIM_BREAKINPUTSOURCE_DISABLE
 DECL|TIM_BREAKINPUTSOURCE_ENABLE|macro|TIM_BREAKINPUTSOURCE_ENABLE
+DECL|TIM_BREAKINPUTSOURCE_POLARITY_HIGH|macro|TIM_BREAKINPUTSOURCE_POLARITY_HIGH
+DECL|TIM_BREAKINPUTSOURCE_POLARITY_LOW|macro|TIM_BREAKINPUTSOURCE_POLARITY_LOW
 DECL|TIM_BREAKINPUT_BRK2|macro|TIM_BREAKINPUT_BRK2
 DECL|TIM_BREAKINPUT_BRK|macro|TIM_BREAKINPUT_BRK
 DECL|TIM_BreakDeadTimeConfigTypeDef|typedef|} TIM_BreakDeadTimeConfigTypeDef;
