@@ -48,6 +48,9 @@ DECL|radio_switch_complete_and_rx|function|void radio_switch_complete_and_rx(u8_
 DECL|radio_switch_complete_and_tx|function|void radio_switch_complete_and_tx(u8_t phy_rx, u8_t flags_rx, u8_t phy_tx, u8_t flags_tx)
 DECL|radio_tmr_aa_capture|function|void radio_tmr_aa_capture(void)
 DECL|radio_tmr_aa_get|function|u32_t radio_tmr_aa_get(void)
+DECL|radio_tmr_aa_restore|function|u32_t radio_tmr_aa_restore(void)
+DECL|radio_tmr_aa_save|function|void radio_tmr_aa_save(u32_t aa)
+DECL|radio_tmr_aa|variable|radio_tmr_aa
 DECL|radio_tmr_end_capture|function|void radio_tmr_end_capture(void)
 DECL|radio_tmr_end_get|function|u32_t radio_tmr_end_get(void)
 DECL|radio_tmr_hcto_configure|function|void radio_tmr_hcto_configure(u32_t hcto)
