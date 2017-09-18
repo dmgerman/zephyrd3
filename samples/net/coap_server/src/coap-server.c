@@ -1,5 +1,8 @@
 DECL|ALL_NODES_LOCAL_COAP_MCAST|macro|ALL_NODES_LOCAL_COAP_MCAST
 DECL|BLOCK_WISE_TRANSFER_SIZE_GET|macro|BLOCK_WISE_TRANSFER_SIZE_GET
+DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
+DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
+DECL|GET_MORE|macro|GET_MORE
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
 DECL|MY_IP6ADDR|macro|MY_IP6ADDR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
@@ -17,6 +20,7 @@ DECL|core_2_path|variable|core_2_path
 DECL|core_get|function|static int core_get(struct coap_resource *resource, struct coap_packet *request)
 DECL|find_resouce_by_observer|function|static struct coap_resource *find_resouce_by_observer(struct coap_resource *resources, struct coap_observer *o)
 DECL|get_from_ip_addr|function|static void get_from_ip_addr(struct coap_packet *cpkt, struct sockaddr_in6 *from)
+DECL|get_option_int|function|static int get_option_int(const struct coap_packet *pkt, u8_t opt)
 DECL|join_coap_multicast_group|function|static bool join_coap_multicast_group(void)
 DECL|large_create_path|variable|large_create_path
 DECL|large_create_post|function|static int large_create_post(struct coap_resource *resource, struct coap_packet *request)
