@@ -12,3 +12,5 @@ DECL|test_num_rx|variable|test_num_rx
 DECL|test_phy_flags|variable|test_phy_flags
 DECL|test_phy|variable|test_phy
 DECL|test_sync_word|variable|test_sync_word
+DECL|tx_ack|variable|tx_ack
+DECL|tx_req|variable|tx_req
