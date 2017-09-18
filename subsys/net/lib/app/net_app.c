@@ -37,6 +37,7 @@ DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data
 DECL|get_server_ctx|function|static struct net_context *get_server_ctx(struct net_app_ctx *ctx, const struct sockaddr *dst)
 DECL|my_debug|function|static void my_debug(void *ctx, int level, const char *file, int line, const char *str)
 DECL|net_app_client_foreach|function|void net_app_client_foreach(net_app_ctx_cb_t cb, void *user_data)
+DECL|net_app_close2|function|int net_app_close2(struct net_app_ctx *ctx, struct net_context *net_ctx)
 DECL|net_app_close|function|int net_app_close(struct net_app_ctx *ctx)
 DECL|net_app_foreach|function|static void net_app_foreach(net_app_ctx_cb_t cb, enum net_app_type type, void *user_data)
 DECL|net_app_get_net_buf|function|struct net_buf *net_app_get_net_buf(struct net_app_ctx *ctx, struct net_pkt *pkt, s32_t timeout)
