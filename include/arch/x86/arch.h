@@ -60,6 +60,7 @@ DECL|_arch_syscall_invoke2|function|static inline u32_t _arch_syscall_invoke2(u3
 DECL|_arch_syscall_invoke3|function|static inline u32_t _arch_syscall_invoke3(u32_t arg1, u32_t arg2, u32_t arg3, u32_t call_id)
 DECL|_arch_syscall_invoke4|function|static inline u32_t _arch_syscall_invoke4(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t call_id)
 DECL|_arch_syscall_invoke5|function|static inline u32_t _arch_syscall_invoke5(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t call_id)
+DECL|_arch_syscall_invoke6|function|static inline u32_t _arch_syscall_invoke6(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, u32_t call_id)
 DECL|_int_latency_start|macro|_int_latency_start
 DECL|_int_latency_stop|macro|_int_latency_stop
 DECL|_x86_syscall_stack_frame|struct|struct _x86_syscall_stack_frame {
