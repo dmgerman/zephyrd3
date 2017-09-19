@@ -71,8 +71,8 @@ DECL|lwm2m_rd_client_event|enum|enum lwm2m_rd_client_event {
 DECL|net_app_ctx|member|struct net_app_ctx net_app_ctx;
 DECL|net_init_timeout|member|s32_t net_init_timeout;
 DECL|net_timeout|member|s32_t net_timeout;
-DECL|pendings|member|struct zoap_pending pendings[CONFIG_LWM2M_ENGINE_MAX_PENDING];
-DECL|replies|member|struct zoap_reply replies[CONFIG_LWM2M_ENGINE_MAX_REPLIES];
+DECL|pendings|member|struct coap_pending pendings[CONFIG_LWM2M_ENGINE_MAX_PENDING];
+DECL|replies|member|struct coap_reply replies[CONFIG_LWM2M_ENGINE_MAX_REPLIES];
 DECL|retransmit_work|member|struct k_delayed_work retransmit_work;
 DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
 DECL|val1|member|s32_t val1;

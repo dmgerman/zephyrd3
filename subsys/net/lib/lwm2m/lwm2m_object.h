@@ -76,7 +76,7 @@ DECL|get_float64fix|member|size_t (*get_float64fix)(struct lwm2m_input_context *
 DECL|get_s32|member|size_t (*get_s32)(struct lwm2m_input_context *in,
 DECL|get_s64|member|size_t (*get_s64)(struct lwm2m_input_context *in,
 DECL|get_string|member|size_t (*get_string)(struct lwm2m_input_context *in,
-DECL|in_zpkt|member|struct zoap_packet *in_zpkt;
+DECL|in_cpkt|member|struct coap_packet *in_cpkt;
 DECL|inbuf|member|u8_t *inbuf;
 DECL|inpos|member|s32_t inpos;
 DECL|insize|member|u16_t insize;
@@ -107,7 +107,7 @@ DECL|obj_inst_id|member|u16_t obj_inst_id;
 DECL|obj_inst_id|member|u16_t obj_inst_id;
 DECL|obj|member|struct lwm2m_engine_obj *obj;
 DECL|operation|member|u8_t operation;
-DECL|out_zpkt|member|struct zoap_packet *out_zpkt;
+DECL|out_cpkt|member|struct coap_packet *out_cpkt;
 DECL|outbuf|member|u8_t *outbuf;
 DECL|outlen|member|u32_t outlen;
 DECL|outsize|member|u16_t outsize;

@@ -6,7 +6,7 @@ DECL|PACKET_TRANSFER_RETRY_MAX|macro|PACKET_TRANSFER_RETRY_MAX
 DECL|PROXY_URI_LEN|macro|PROXY_URI_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_transmit_timeout_cb|function|static void do_transmit_timeout_cb(struct lwm2m_message *msg)
 DECL|firmware_block_ctx|variable|firmware_block_ctx
 DECL|firmware_ctx|variable|firmware_ctx
@@ -20,4 +20,4 @@ DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(ch
 DECL|parsed_uri|variable|parsed_uri
 DECL|proxy_uri|variable|proxy_uri
 DECL|transfer_empty_ack|function|static int transfer_empty_ack(u16_t mid)
-DECL|transfer_request|function|static int transfer_request(struct zoap_block_context *ctx, const u8_t *token, u8_t tkl, zoap_reply_t reply_cb)
+DECL|transfer_request|function|static int transfer_request(struct coap_block_context *ctx, u8_t *token, u8_t tkl, coap_reply_t reply_cb)

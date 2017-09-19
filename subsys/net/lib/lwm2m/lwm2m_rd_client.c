@@ -24,13 +24,13 @@ DECL|client_count|variable|client_count
 DECL|client_data|variable|client_data
 DECL|clients|variable|clients
 DECL|ctx|member|struct lwm2m_ctx *ctx;
-DECL|do_bootstrap_reply_cb|function|static int do_bootstrap_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_bootstrap_reply_cb|function|static int do_bootstrap_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_bootstrap_timeout_cb|function|static void do_bootstrap_timeout_cb(struct lwm2m_message *msg)
-DECL|do_deregister_reply_cb|function|static int do_deregister_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_deregister_reply_cb|function|static int do_deregister_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_deregister_timeout_cb|function|static void do_deregister_timeout_cb(struct lwm2m_message *msg)
-DECL|do_registration_reply_cb|function|static int do_registration_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_registration_reply_cb|function|static int do_registration_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_registration_timeout_cb|function|static void do_registration_timeout_cb(struct lwm2m_message *msg)
-DECL|do_update_reply_cb|function|static int do_update_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|do_update_reply_cb|function|static int do_update_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_update_timeout_cb|function|static void do_update_timeout_cb(struct lwm2m_message *msg)
 DECL|engine_state|member|u8_t engine_state;
 DECL|engine_trigger_update|function|void engine_trigger_update(void)
@@ -60,7 +60,7 @@ DECL|sm_engine_state|enum|enum sm_engine_state {
 DECL|sm_handle_timeout_state|function|static void sm_handle_timeout_state(struct lwm2m_message *msg, enum sm_engine_state sm_state)
 DECL|sm_is_registered|function|static bool sm_is_registered(int index)
 DECL|sm_registration_done|function|static int sm_registration_done(int index)
-DECL|sm_send_registration|function|static int sm_send_registration(int index, bool send_obj_support_data,zoap_reply_t reply_cb, lwm2m_message_timeout_cb_t timeout_cb)
+DECL|sm_send_registration|function|static int sm_send_registration(int index, bool send_obj_support_data,coap_reply_t reply_cb, lwm2m_message_timeout_cb_t timeout_cb)
 DECL|trigger_update|member|u8_t trigger_update;
 DECL|use_bootstrap|member|u8_t use_bootstrap;
 DECL|use_registration|member|u8_t use_registration;

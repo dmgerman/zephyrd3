@@ -1,4 +1,5 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
+DECL|COAP_MARKER|macro|COAP_MARKER
 DECL|DISCOVER_PREFACE|macro|DISCOVER_PREFACE
 DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
@@ -18,9 +19,12 @@ DECL|TIMEOUT_BLOCKWISE_TRANSFER|macro|TIMEOUT_BLOCKWISE_TRANSFER
 DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|block1_contexts|variable|block1_contexts
 DECL|block_context|struct|struct block_context {
+DECL|coap_options_to_path|function|static int coap_options_to_path(struct coap_option *opt, int options_count,struct lwm2m_obj_path *path)
+DECL|coap_packet_get_payload_ptr|function|u8_t *coap_packet_get_payload_ptr(struct coap_packet *cpkt, u16_t *len, bool start_marker)
+DECL|coap_packet_set_used|function|int coap_packet_set_used(struct coap_packet *cpkt, u16_t len)
 DECL|counter|member|u32_t counter;
+DECL|ctx|member|struct coap_block_context ctx;
 DECL|ctx|member|struct lwm2m_ctx *ctx;
-DECL|ctx|member|struct zoap_block_context ctx;
 DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context)
 DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
@@ -37,19 +41,20 @@ DECL|engine_remove_observer|function|static int engine_remove_observer(const u8_
 DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|event_timestamp|member|s64_t event_timestamp;
-DECL|find_msg|function|static struct lwm2m_message *find_msg(struct zoap_pending *pending, struct zoap_reply *reply)
+DECL|find_msg|function|static struct lwm2m_message *find_msg(struct coap_pending *pending, struct coap_reply *reply)
 DECL|format|member|u16_t format;
 DECL|free_block_ctx|function|static void free_block_ctx(struct block_context *ctx)
 DECL|generate_notify_message|function|static int generate_notify_message(struct observe_node *obs, bool manual_trigger)
 DECL|get_block_ctx|function|get_block_ctx(const u8_t *token, u8_t tkl, struct block_context **ctx)
+DECL|get_coap_packet_len|function|static int get_coap_packet_len(struct net_pkt *pkt)
 DECL|get_engine_obj_inst|function|static struct lwm2m_engine_obj_inst *get_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|get_engine_obj|function|static struct lwm2m_engine_obj *get_engine_obj(int obj_id)
-DECL|get_option_int|function|static int get_option_int(const struct zoap_packet *zpkt, u8_t opt)
-DECL|handle_request|function|static int handle_request(struct zoap_packet *request, struct lwm2m_message *msg)
+DECL|get_option_int|function|static int get_option_int(const struct coap_packet *cpkt, u8_t opt)
+DECL|handle_request|function|static int handle_request(struct coap_packet *request, struct lwm2m_message *msg)
 DECL|init_block_ctx|function|init_block_ctx(const u8_t *token, u8_t tkl, struct block_context **ctx)
 DECL|last_timestamp|member|s64_t last_timestamp;
 DECL|lwm2m_create_obj_inst|function|int lwm2m_create_obj_inst(u16_t obj_id, u16_t obj_inst_id, struct lwm2m_engine_obj_inst **obj_inst)
-DECL|lwm2m_default_block_size|function|enum zoap_block_size lwm2m_default_block_size(void)
+DECL|lwm2m_default_block_size|function|enum coap_block_size lwm2m_default_block_size(void)
 DECL|lwm2m_delete_handler|function|static int lwm2m_delete_handler(struct lwm2m_engine_obj *obj,struct lwm2m_engine_context *context)
 DECL|lwm2m_delete_obj_inst|function|int lwm2m_delete_obj_inst(u16_t obj_id, u16_t obj_inst_id)
 DECL|lwm2m_engine_context_init|function|void lwm2m_engine_context_init(struct lwm2m_ctx *client_ctx)
@@ -110,7 +115,7 @@ DECL|messages|variable|messages
 DECL|min_period_sec|member|u32_t min_period_sec;
 DECL|next_engine_obj_inst|function|next_engine_obj_inst(struct lwm2m_engine_obj_inst *last, int obj_id, int obj_inst_id)
 DECL|node|member|sys_snode_t node;
-DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct zoap_packet *response, struct zoap_reply *reply, const struct sockaddr *from)
+DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|observe_node_data|variable|observe_node_data
 DECL|observe_node|struct|struct observe_node {
 DECL|outbuf_init_check|function|static void outbuf_init_check(struct lwm2m_output_context *out)
@@ -127,4 +132,3 @@ DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
 DECL|used|member|bool used;
-DECL|zoap_options_to_path|function|static int zoap_options_to_path(struct zoap_option *opt, int options_count, struct lwm2m_obj_path *path)
