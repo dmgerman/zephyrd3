@@ -13,6 +13,7 @@ DECL|RETRANS_TIMER|macro|RETRANS_TIMER
 DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
+DECL|cb|member|net_nbr_cb_t cb;
 DECL|check_unknown_option|function|static inline struct net_pkt *check_unknown_option(struct net_pkt *pkt, u8_t opt_type, u16_t length)
 DECL|create_mldv2|function|static struct net_pkt *create_mldv2(struct net_pkt *pkt, const struct in6_addr *addr, u16_t record_type, u8_t num_sources)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
@@ -50,6 +51,8 @@ DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct n
 DECL|handle_ra_input|function|static enum net_verdict handle_ra_input(struct net_pkt *pkt)
 DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbor(struct net_pkt *pkt, struct net_buf *frag, u8_t len, u16_t offset, u16_t *pos, struct net_nbr **nbr)
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_pkt *pkt, struct net_buf *frag, u8_t len, u16_t offset, u16_t *pos)
+DECL|iface_cb_data|struct|struct iface_cb_data {
+DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
 DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(u8_t proto)
 DECL|mld_query_input_handler|variable|mld_query_input_handler
@@ -115,3 +118,4 @@ DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, 
 DECL|setup_headers|function|static void setup_headers(struct net_pkt *pkt, u8_t nd6_len, u8_t icmp_type)
 DECL|shift_packets|function|static int shift_packets(struct net_ipv6_reassembly *reass, int pos)
 DECL|update_ll_reserve|function|static struct net_pkt *update_ll_reserve(struct net_pkt *pkt, struct in6_addr *addr)
+DECL|user_data|member|void *user_data;
