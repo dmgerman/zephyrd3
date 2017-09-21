@@ -3,12 +3,10 @@ DECL|bst_index|function|static int bst_index(u32_t num_units, u32_t *index)
 DECL|callback_data|member|void *callback_data[QM_DMA_CHANNEL_NUM];
 DECL|device_power_state|member|u32_t device_power_state;
 DECL|dev|member|struct device *dev;
-DECL|dma_callback|function|static void dma_callback(void *callback_context, u32_t len, int error_code)
 DECL|dma_context|variable|dma_context
 DECL|dma_drv_callback|function|static void dma_drv_callback(void *callback_context, u32_t len, int error_code)
 DECL|dma_funcs|variable|dma_funcs
 DECL|dma_qmsi_chan_config|function|static int dma_qmsi_chan_config(struct device *dev, u32_t channel,struct dma_config *config)
-DECL|dma_qmsi_channel_config|function|static int dma_qmsi_channel_config(struct device *dev, u32_t channel, struct dma_channel_config *config)
 DECL|dma_qmsi_config_data|variable|dma_qmsi_config_data
 DECL|dma_qmsi_config_info|struct|struct dma_qmsi_config_info {
 DECL|dma_qmsi_config|function|static void dma_qmsi_config(struct device *dev)
@@ -22,9 +20,6 @@ DECL|dma_qmsi_set_power_state|function|static void dma_qmsi_set_power_state(stru
 DECL|dma_qmsi_set_power_state|macro|dma_qmsi_set_power_state
 DECL|dma_qmsi_start|function|static int dma_qmsi_start(struct device *dev, u32_t channel)
 DECL|dma_qmsi_stop|function|static int dma_qmsi_stop(struct device *dev, u32_t channel)
-DECL|dma_qmsi_transfer_config|function|static int dma_qmsi_transfer_config(struct device *dev, u32_t channel, struct dma_transfer_config *config)
-DECL|dma_qmsi_transfer_start|function|static int dma_qmsi_transfer_start(struct device *dev, u32_t channel)
-DECL|dma_qmsi_transfer_stop|function|static int dma_qmsi_transfer_stop(struct device *dev, u32_t channel)
 DECL|dma_resume_device|function|static int dma_resume_device(struct device *dev)
 DECL|dma_suspend_device|function|static int dma_suspend_device(struct device *dev)
 DECL|dma_user_callback|member|void (*dma_user_callback[QM_DMA_CHANNEL_NUM])(struct device *dev,
