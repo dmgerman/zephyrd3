@@ -48,8 +48,8 @@ DECL|dns_rr_type|enum|enum dns_rr_type {
 DECL|dns_unpack_header_ancount|function|static inline int dns_unpack_header_ancount(u8_t *header)
 DECL|dns_unpack_header_id|function|static inline int dns_unpack_header_id(u8_t *header)
 DECL|dns_unpack_header_qdcount|function|static inline int dns_unpack_header_qdcount(u8_t *header)
-DECL|dns_unpack_query_qclass|function|static inline int dns_unpack_query_qclass(u8_t *question)
-DECL|dns_unpack_query_qtype|function|static inline int dns_unpack_query_qtype(u8_t *question)
+DECL|dns_unpack_query_qclass|function|static inline int dns_unpack_query_qclass(const u8_t *question)
+DECL|dns_unpack_query_qtype|function|static inline int dns_unpack_query_qtype(const u8_t *question)
 DECL|msg_size|member|u16_t msg_size;
 DECL|msg|member|u8_t *msg;
 DECL|query_offset|member|u16_t query_offset;
