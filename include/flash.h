@@ -7,6 +7,7 @@ DECL|flash_api_write_protection|typedef|typedef int (*flash_api_write_protection
 DECL|flash_api_write|typedef|typedef int (*flash_api_write)(struct device *dev, off_t offset,
 DECL|flash_driver_api|struct|struct flash_driver_api {
 DECL|flash_erase|function|static inline int flash_erase(struct device *dev, off_t offset, size_t size)
+DECL|flash_page_cb|typedef|typedef bool (*flash_page_cb)(const struct flash_pages_info *info, void *data);
 DECL|flash_pages_info|struct|struct flash_pages_info {
 DECL|flash_pages_layout|struct|struct flash_pages_layout {
 DECL|flash_read|function|static inline int flash_read(struct device *dev, off_t offset, void *data, size_t len)
