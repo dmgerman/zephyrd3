@@ -156,6 +156,8 @@ DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
+DECL|_impl_k_sem_count_get|function|static inline unsigned int _impl_k_sem_count_get(struct k_sem *sem)
+DECL|_impl_k_sem_reset|function|static inline void _impl_k_sem_reset(struct k_sem *sem)
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
@@ -290,8 +292,6 @@ DECL|k_queue_peek_head|function|static inline void *k_queue_peek_head(struct k_q
 DECL|k_queue_peek_tail|function|static inline void *k_queue_peek_tail(struct k_queue *queue)
 DECL|k_queue_remove|function|static inline bool k_queue_remove(struct k_queue *queue, void *data)
 DECL|k_queue|struct|struct k_queue {
-DECL|k_sem_count_get|function|static inline unsigned int k_sem_count_get(struct k_sem *sem)
-DECL|k_sem_reset|function|static inline void k_sem_reset(struct k_sem *sem)
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
