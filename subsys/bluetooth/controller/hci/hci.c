@@ -1,7 +1,10 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|BUILD_INFO_EVT_LEN|macro|BUILD_INFO_EVT_LEN
+DECL|BUILD_TIMESTAMP|macro|BUILD_TIMESTAMP
 DECL|DEFAULT_EVENT_MASK_PAGE_2|macro|DEFAULT_EVENT_MASK_PAGE_2
 DECL|DEFAULT_EVENT_MASK|macro|DEFAULT_EVENT_MASK
 DECL|DEFAULT_LE_EVENT_MASK|macro|DEFAULT_LE_EVENT_MASK
+DECL|HCI_VS_BUILD_INFO|macro|HCI_VS_BUILD_INFO
 DECL|ST_ADV|macro|ST_ADV
 DECL|ST_MAS|macro|ST_MAS
 DECL|ST_SCA|macro|ST_SCA
@@ -128,6 +131,7 @@ DECL|set_event_mask_page_2|function|static void set_event_mask_page_2(struct net
 DECL|set_event_mask|function|static void set_event_mask(struct net_buf *buf, struct net_buf **evt)
 DECL|status_cmd_handle|function|static int status_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|vendor_cmd_handle|function|static int vendor_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|vs_read_build_info|function|static void vs_read_build_info(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_key_hierarchy_roots|function|static void vs_read_key_hierarchy_roots(struct net_buf *buf,struct net_buf **evt)
 DECL|vs_read_static_addrs|function|static void vs_read_static_addrs(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_supported_commands|function|static void vs_read_supported_commands(struct net_buf *buf, struct net_buf **evt)
