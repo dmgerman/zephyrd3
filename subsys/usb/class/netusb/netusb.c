@@ -1,5 +1,7 @@
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|VERBOSE_DEBUG|macro|VERBOSE_DEBUG
 DECL|__netusb|struct|static struct __netusb {
 DECL|api_funcs|variable|api_funcs
 DECL|configured|member|bool configured;
