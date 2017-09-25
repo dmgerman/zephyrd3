@@ -133,4 +133,5 @@ DECL|vs_read_static_addrs|function|static void vs_read_static_addrs(struct net_b
 DECL|vs_read_supported_commands|function|static void vs_read_supported_commands(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_supported_features|function|static void vs_read_supported_features(struct net_buf *buf, struct net_buf **evt)
 DECL|vs_read_version_info|function|static void vs_read_version_info(struct net_buf *buf, struct net_buf **evt)
+DECL|vs_write_bd_addr|function|static void vs_write_bd_addr(struct net_buf *buf, struct net_buf **evt)
 DECL|write_auth_payload_timeout|function|static void write_auth_payload_timeout(struct net_buf *buf, struct net_buf **evt)
