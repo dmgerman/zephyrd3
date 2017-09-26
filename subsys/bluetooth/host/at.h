@@ -52,7 +52,7 @@ DECL|at_resp_cb_t|typedef|typedef int (*at_resp_cb_t)(struct at_client *at, stru
 DECL|at_result|enum|enum at_result {
 DECL|at_state|enum|enum at_state {
 DECL|buf_max_len|member|u8_t buf_max_len;
-DECL|buf|member|unsigned char *buf;
+DECL|buf|member|char *buf;
 DECL|cmd_state|member|u8_t cmd_state;
 DECL|finish|member|at_finish_cb_t finish;
 DECL|handle_cmd_input_t|typedef|typedef int (*handle_cmd_input_t)(struct at_client *at, struct net_buf *buf,
