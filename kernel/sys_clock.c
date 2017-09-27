@@ -1,4 +1,6 @@
+DECL|_handler_k_uptime_get_32|function|u32_t _handler_k_uptime_get_32(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|_handling_timeouts|variable|_handling_timeouts
+DECL|_impl_k_uptime_get_32|function|u32_t _impl_k_uptime_get_32(void)
 DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(s32_t ticks)
 DECL|_nano_tick_delta|function|static ALWAYS_INLINE s64_t _nano_tick_delta(s64_t *reftime)
 DECL|_sys_clock_always_on|variable|_sys_clock_always_on
@@ -15,7 +17,6 @@ DECL|handle_timeouts|function|static inline void handle_timeouts(s32_t ticks)
 DECL|handle_timeouts|macro|handle_timeouts
 DECL|k_uptime_delta_32|function|u32_t k_uptime_delta_32(s64_t *reftime)
 DECL|k_uptime_delta|function|s64_t k_uptime_delta(s64_t *reftime)
-DECL|k_uptime_get_32|function|u32_t k_uptime_get_32(void)
 DECL|k_uptime_get|function|s64_t k_uptime_get(void)
 DECL|next_ts|variable|next_ts
 DECL|sys_clock_hw_cycles_per_sec|variable|sys_clock_hw_cycles_per_sec
