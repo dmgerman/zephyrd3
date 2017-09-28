@@ -181,7 +181,6 @@ DECL|output_string|member|int (*output_string)(const char *str);
 DECL|period_div|member|period_div:4, /* Divisor for the Period */
 DECL|period|member|period:8, /* Publish Period */
 DECL|period|member|u8_t period;
-DECL|period|member|u8_t period;
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;
 DECL|recv_ttl|member|u8_t recv_ttl:7;
