@@ -49,6 +49,8 @@ DECL|__kernel|macro|__kernel
 DECL|__may_alias|macro|__may_alias
 DECL|__packed|macro|__packed
 DECL|__printf_like|macro|__printf_like
+DECL|__syscall_inline|macro|__syscall_inline
+DECL|__syscall|macro|__syscall
 DECL|__unused|macro|__unused
 DECL|__used|macro|__used
 DECL|__weak|macro|__weak
