@@ -48,4 +48,3 @@ DECL|spi_write_async|function|static inline int spi_write_async(struct spi_confi
 DECL|spi_write|function|static inline int spi_write(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count)
 DECL|transceive_async|member|spi_api_io_async transceive_async;
 DECL|transceive|member|spi_api_io transceive;
-DECL|vendor|member|u16_t vendor;
