@@ -184,6 +184,9 @@ DECL|_impl_k_object_access_all_grant|function|static inline void _impl_k_object_
 DECL|_impl_k_object_access_grant|function|static inline void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_sem_count_get|function|static inline unsigned int _impl_k_sem_count_get(struct k_sem *sem)
 DECL|_impl_k_sem_reset|function|static inline void _impl_k_sem_reset(struct k_sem *sem)
+DECL|_impl_k_timer_remaining_get|function|static inline s32_t _impl_k_timer_remaining_get(struct k_timer *timer)
+DECL|_impl_k_timer_user_data_get|function|static inline void *_impl_k_timer_user_data_get(struct k_timer *timer)
+DECL|_impl_k_timer_user_data_set|function|static inline void _impl_k_timer_user_data_set(struct k_timer *timer, void *user_data)
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
@@ -328,10 +331,7 @@ DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element *k_thread_s
 DECL|k_thread|struct|struct k_thread {
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
-DECL|k_timer_remaining_get|function|static inline s32_t k_timer_remaining_get(struct k_timer *timer)
 DECL|k_timer_stop_t|typedef|typedef void (*k_timer_stop_t)(struct k_timer *timer);
-DECL|k_timer_user_data_get|function|static inline void *k_timer_user_data_get(struct k_timer *timer)
-DECL|k_timer_user_data_set|function|static inline void k_timer_user_data_set(struct k_timer *timer, void *user_data)
 DECL|k_timer|struct|struct k_timer {
 DECL|k_work_handler_t|typedef|typedef void (*k_work_handler_t)(struct k_work *work);
 DECL|k_work_init|function|static inline void k_work_init(struct k_work *work, k_work_handler_t handler)
