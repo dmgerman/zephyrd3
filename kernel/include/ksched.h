@@ -1,5 +1,7 @@
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
+DECL|_VALID_PRIO|macro|_VALID_PRIO
+DECL|_VALID_PRIO|macro|_VALID_PRIO
 DECL|_find_first_thread_to_unpend|function|_find_first_thread_to_unpend(_wait_q_t *wait_q, struct k_thread *from)
 DECL|_get_highest_ready_prio|function|static inline int _get_highest_ready_prio(void)
 DECL|_get_new_prio_with_ceiling|function|static inline int _get_new_prio_with_ceiling(int prio)
