@@ -32,7 +32,7 @@ DECL|eth_mcux_rx_isr|function|static void eth_mcux_rx_isr(void *p)
 DECL|eth_mcux_tx_isr|function|static void eth_mcux_tx_isr(void *p)
 DECL|eth_rx|function|static void eth_rx(struct device *iface)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
-DECL|frame_buf|member|u8_t frame_buf[1500];
+DECL|frame_buf|member|u8_t frame_buf[1500 + 14]; /* Max MTU + ethernet header size */
 DECL|generate_mac|function|static void generate_mac(u8_t *mac_addr)
 DECL|iface|member|struct net_if *iface;
 DECL|link_up|member|bool link_up;
