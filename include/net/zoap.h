@@ -91,13 +91,13 @@ DECL|user_data|member|void *user_data;
 DECL|user_data|member|void *user_data;
 DECL|value|member|u8_t *value;
 DECL|zoap_block_context|struct|struct zoap_block_context {
-DECL|zoap_block_size_to_bytes|function|static inline u16_t zoap_block_size_to_bytes(enum zoap_block_size block_size)
+DECL|zoap_block_size_to_bytes|function|static inline u16_t __deprecated zoap_block_size_to_bytes(enum zoap_block_size block_size)
 DECL|zoap_block_size|enum|enum zoap_block_size {
 DECL|zoap_make_response_code|macro|zoap_make_response_code
 DECL|zoap_method_t|typedef|typedef int (*zoap_method_t)(struct zoap_resource *resource,
 DECL|zoap_method|enum|enum zoap_method {
 DECL|zoap_msgtype|enum|enum zoap_msgtype {
-DECL|zoap_next_id|function|static inline u16_t zoap_next_id(void)
+DECL|zoap_next_id|function|static inline u16_t __deprecated zoap_next_id(void)
 DECL|zoap_notify_t|typedef|typedef void (*zoap_notify_t)(struct zoap_resource *resource,
 DECL|zoap_observer|struct|struct zoap_observer {
 DECL|zoap_option_num|enum|enum zoap_option_num {
