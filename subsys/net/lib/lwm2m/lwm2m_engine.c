@@ -4,6 +4,7 @@ DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|MATCH_ALL|macro|MATCH_ALL
 DECL|MATCH_NONE|macro|MATCH_NONE
 DECL|MATCH_SINGLE|macro|MATCH_SINGLE
+DECL|MAX_TOKEN_LEN|macro|MAX_TOKEN_LEN
 DECL|REG_PREFACE|macro|REG_PREFACE
 DECL|REG_PREFACE|macro|REG_PREFACE
 DECL|RESOURCE_TYPE|macro|RESOURCE_TYPE
@@ -105,7 +106,7 @@ DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_conte
 DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl)
 DECL|string_to_path|function|static int string_to_path(char *pathstr, struct lwm2m_obj_path *path, char delim)
 DECL|tkl|member|u8_t tkl;
-DECL|token|member|u8_t token[8];
+DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
 DECL|used|member|bool used;
 DECL|zoap_options_to_path|function|static void zoap_options_to_path(struct zoap_option *opt, int options_count, struct lwm2m_obj_path *path)
