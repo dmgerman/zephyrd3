@@ -14,7 +14,6 @@ DECL|iface|member|struct net_if *iface;
 DECL|irq_gpio|member|struct device *irq_gpio;
 DECL|irqb_cb|member|struct gpio_callback irqb_cb;
 DECL|isr_sem|member|struct k_sem isr_sem;
-DECL|lqi|member|u8_t lqi;
 DECL|mac_addr|member|u8_t mac_addr[8];
 DECL|mcr20a_context|struct|struct mcr20a_context {
 DECL|mcr20a_rx_thread|member|struct k_thread mcr20a_rx_thread;

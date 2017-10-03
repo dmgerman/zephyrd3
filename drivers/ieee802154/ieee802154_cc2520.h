@@ -19,7 +19,6 @@ DECL|dev|member|struct device *dev;
 DECL|fifop_cb|member|struct gpio_callback fifop_cb;
 DECL|gpios|member|struct cc2520_gpio_configuration *gpios;
 DECL|iface|member|struct net_if *iface;
-DECL|lqi|member|u8_t lqi;
 DECL|mac_addr|member|u8_t mac_addr[8];
 DECL|overflow|member|bool overflow;
 DECL|rx_lock|member|struct k_sem rx_lock;

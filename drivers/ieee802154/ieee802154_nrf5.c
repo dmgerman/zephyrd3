@@ -8,7 +8,6 @@ DECL|nrf5_cca|function|static int nrf5_cca(struct device *dev)
 DECL|nrf5_config|function|static void nrf5_config(struct device *dev)
 DECL|nrf5_data|variable|nrf5_data
 DECL|nrf5_get_eui64|function|static void nrf5_get_eui64(u8_t *mac)
-DECL|nrf5_get_lqi|function|static u8_t nrf5_get_lqi(struct device *dev)
 DECL|nrf5_iface_init|function|static void nrf5_iface_init(struct net_if *iface)
 DECL|nrf5_init|function|static int nrf5_init(struct device *dev)
 DECL|nrf5_radio_api|variable|nrf5_radio_api

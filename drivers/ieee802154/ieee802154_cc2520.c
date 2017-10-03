@@ -24,7 +24,6 @@ DECL|cc2520_crypto_begin_session|function|static int cc2520_crypto_begin_session
 DECL|cc2520_crypto_free_session|function|static int cc2520_crypto_free_session(struct device *dev, struct cipher_ctx *ctx)
 DECL|cc2520_crypto_hw_caps|function|static int cc2520_crypto_hw_caps(struct device *dev)
 DECL|cc2520_crypto_init|function|static int cc2520_crypto_init(struct device *dev)
-DECL|cc2520_get_lqi|function|static u8_t cc2520_get_lqi(struct device *dev)
 DECL|cc2520_iface_init|function|static void cc2520_iface_init(struct net_if *iface)
 DECL|cc2520_init|function|static int cc2520_init(struct device *dev)
 DECL|cc2520_radio_api|variable|cc2520_radio_api
@@ -48,6 +47,7 @@ DECL|get_fifop|function|static inline u32_t get_fifop(struct cc2520_context *cc2
 DECL|get_fifo|function|static inline u32_t get_fifo(struct cc2520_context *cc2520)
 DECL|get_mac|function|static inline u8_t *get_mac(struct device *dev)
 DECL|insert_crypto_parameters|function|static int insert_crypto_parameters(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, u8_t *ccm_nonce, u8_t *auth_crypt)
+DECL|insert_radio_noise_details|function|static inline void insert_radio_noise_details(struct net_pkt *pkt, u8_t *buf)
 DECL|instruct_ccm|function|static inline bool instruct_ccm(struct cc2520_context *cc2520,u8_t key_addr, u8_t auth_crypt, u8_t nonce_addr, u16_t input_addr,
 DECL|instruct_uccm|function|static inline bool instruct_uccm(struct cc2520_context *cc2520, u8_t key_addr, u8_t auth_crypt, u8_t nonce_addr, u16_t input_addr,
 DECL|power_on_and_setup|function|static int power_on_and_setup(struct device *dev)

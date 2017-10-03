@@ -33,7 +33,6 @@ DECL|kw41z_convert_lqi|function|static u8_t kw41z_convert_lqi(u8_t hw_lqi)
 DECL|kw41z_disable_seq_irq|function|static inline void kw41z_disable_seq_irq(void)
 DECL|kw41z_enable_seq_irq|function|static inline void kw41z_enable_seq_irq(void)
 DECL|kw41z_get_instant_state|function|static inline u8_t kw41z_get_instant_state(void)
-DECL|kw41z_get_lqi|function|static u8_t kw41z_get_lqi(struct device *dev)
 DECL|kw41z_get_seq_state|function|static inline u8_t kw41z_get_seq_state(void)
 DECL|kw41z_iface_init|function|static void kw41z_iface_init(struct net_if *iface)
 DECL|kw41z_init|function|static int kw41z_init(struct device *dev)
@@ -55,7 +54,6 @@ DECL|kw41z_tmr2_disable|function|static inline void kw41z_tmr2_disable(void)
 DECL|kw41z_tmr2_set_timeout|function|static void kw41z_tmr2_set_timeout(u32_t timeout)
 DECL|kw41z_tx|function|static int kw41z_tx(struct device *dev, struct net_pkt *pkt, struct net_buf *frag)
 DECL|kw41z_wait_for_idle|function|static inline void kw41z_wait_for_idle(void)
-DECL|lqi|member|u8_t lqi;
 DECL|mac_addr|member|u8_t mac_addr[8];
 DECL|pa_pwr_lt|variable|pa_pwr_lt
 DECL|rx_warmup_time|member|u32_t rx_warmup_time;
