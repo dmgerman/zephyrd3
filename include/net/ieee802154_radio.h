@@ -6,6 +6,7 @@ DECL|IEEE802154_HW_CSMA|enumerator|IEEE802154_HW_CSMA = BIT(3), /* CSMA-CA suppo
 DECL|IEEE802154_HW_FCS|enumerator|IEEE802154_HW_FCS = BIT(0), /* Frame Check-Sum supported */
 DECL|IEEE802154_HW_FILTER|enumerator|IEEE802154_HW_FILTER = BIT(2), /* Filters PAN ID, long/short addr */
 DECL|IEEE802154_HW_PROMISC|enumerator|IEEE802154_HW_PROMISC = BIT(1), /* Promiscuous mode supported */
+DECL|IEEE802154_HW_TX_RX_ACK|enumerator|IEEE802154_HW_TX_RX_ACK = BIT(5), /* Handles ACK request on TX */
 DECL|__IEEE802154_RADIO_H__|macro|__IEEE802154_RADIO_H__
 DECL|__packed|variable|__packed
 DECL|cca|member|int (*cca)(struct device *dev);
