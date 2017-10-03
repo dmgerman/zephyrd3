@@ -1,0 +1,1 @@
+DECL|_SOC_IRQ_H|macro|_SOC_IRQ_H
