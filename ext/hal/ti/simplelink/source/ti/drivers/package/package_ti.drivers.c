@@ -1,0 +1,6 @@
+DECL|__local_include|macro|__local_include
+DECL|__stringify|macro|__stringify
+DECL|__xdc_PKGNAME|macro|__xdc_PKGNAME
+DECL|__xdc_PKGPREFIX|macro|__xdc_PKGPREFIX
+DECL|__xdc_PKGVERS|macro|__xdc_PKGVERS
+DECL|ti_drivers__dummy__|variable|ti_drivers__dummy__

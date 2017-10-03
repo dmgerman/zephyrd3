@@ -1,0 +1,5 @@
+DECL|CRCConfigSet|function|CRCConfigSet(uint32_t ui32Base, uint32_t ui32CRCConfig)
+DECL|CRCDataProcess|function|CRCDataProcess(uint32_t ui32Base, void *puiDataIn, uint32_t ui32DataLength, uint32_t ui32Config)
+DECL|CRCDataWrite|function|CRCDataWrite(uint32_t ui32Base, uint32_t ui32Data)
+DECL|CRCResultRead|function|CRCResultRead(uint32_t ui32Base)
+DECL|CRCSeedSet|function|CRCSeedSet(uint32_t ui32Base, uint32_t ui32Seed)

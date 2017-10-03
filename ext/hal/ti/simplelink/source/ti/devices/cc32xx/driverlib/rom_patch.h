@@ -50,6 +50,8 @@ DECL|ROM_SDHostDataNonBlockingWrite|macro|ROM_SDHostDataNonBlockingWrite
 DECL|ROM_SDHostDataRead|macro|ROM_SDHostDataRead
 DECL|ROM_SDHostDataWrite|macro|ROM_SDHostDataWrite
 DECL|ROM_SDHostIntStatus|macro|ROM_SDHostIntStatus
+DECL|ROM_SHAMD5ConfigSet|macro|ROM_SHAMD5ConfigSet
+DECL|ROM_SHAMD5HMACKeySet|macro|ROM_SHAMD5HMACKeySet
 DECL|ROM_SPIConfigSetExpClk|macro|ROM_SPIConfigSetExpClk
 DECL|ROM_SPIDmaDisable|macro|ROM_SPIDmaDisable
 DECL|ROM_TimerConfigure|macro|ROM_TimerConfigure

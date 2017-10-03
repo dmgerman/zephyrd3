@@ -2,7 +2,7 @@ DECL|PAD_CONFIG_BASE|macro|PAD_CONFIG_BASE
 DECL|PAD_MODE_MASK|macro|PAD_MODE_MASK
 DECL|PAD_STRENGTH_MASK|macro|PAD_STRENGTH_MASK
 DECL|PAD_TYPE_MASK|macro|PAD_TYPE_MASK
-DECL|PinConfigGet|function|void PinConfigGet(unsigned long ulPin,unsigned long *pulPinStrength,unsigned long *pulPinType)
+DECL|PinConfigGet|function|void PinConfigGet(unsigned long ulPin,unsigned long *pulPinStrength, unsigned long *pulPinType)
 DECL|PinConfigSet|function|void PinConfigSet(unsigned long ulPin,unsigned long ulPinStrength,unsigned long ulPinType)
 DECL|PinDirModeGet|function|unsigned long PinDirModeGet(unsigned long ulPin)
 DECL|PinDirModeSet|function|void PinDirModeSet(unsigned long ulPin, unsigned long ulPinIO)

@@ -1,0 +1,7 @@
+DECL|RingBuf_construct|function|void RingBuf_construct(RingBuf_Handle object, unsigned char *bufPtr, size_t bufSize)
+DECL|RingBuf_getCount|function|int RingBuf_getCount(RingBuf_Handle object)
+DECL|RingBuf_getMaxCount|function|int RingBuf_getMaxCount(RingBuf_Handle object)
+DECL|RingBuf_get|function|int RingBuf_get(RingBuf_Handle object, unsigned char *data)
+DECL|RingBuf_isFull|function|bool RingBuf_isFull(RingBuf_Handle object)
+DECL|RingBuf_peek|function|int RingBuf_peek(RingBuf_Handle object, unsigned char *data)
+DECL|RingBuf_put|function|int RingBuf_put(RingBuf_Handle object, unsigned char data)

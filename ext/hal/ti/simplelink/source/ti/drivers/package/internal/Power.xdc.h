@@ -1,0 +1,5 @@
+DECL|ti_drivers_Power__INTERNAL__|macro|ti_drivers_Power__INTERNAL__
+DECL|ti_drivers_Power__internalaccess|macro|ti_drivers_Power__internalaccess
+DECL|xdc_FILE__|macro|xdc_FILE__
+DECL|xdc_FILE__|macro|xdc_FILE__
+DECL|xdc_FILE__|macro|xdc_FILE__

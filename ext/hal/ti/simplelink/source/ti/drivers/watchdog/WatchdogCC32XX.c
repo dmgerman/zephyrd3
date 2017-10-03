@@ -1,0 +1,12 @@
+DECL|DebugP_ASSERT_ENABLED|macro|DebugP_ASSERT_ENABLED
+DECL|DebugP_LOG_ENABLED|macro|DebugP_LOG_ENABLED
+DECL|MAX_RELOAD_VALUE|macro|MAX_RELOAD_VALUE
+DECL|MS_RATIO|macro|MS_RATIO
+DECL|WatchdogCC32XX_clear|function|void WatchdogCC32XX_clear(Watchdog_Handle handle)
+DECL|WatchdogCC32XX_close|function|void WatchdogCC32XX_close(Watchdog_Handle handle)
+DECL|WatchdogCC32XX_control|function|int_fast16_t WatchdogCC32XX_control(Watchdog_Handle handle, uint_fast16_t cmd, void *arg)
+DECL|WatchdogCC32XX_convertMsToTicks|function|uint32_t WatchdogCC32XX_convertMsToTicks(Watchdog_Handle handle, uint32_t milliseconds)
+DECL|WatchdogCC32XX_fxnTable|variable|WatchdogCC32XX_fxnTable
+DECL|WatchdogCC32XX_init|function|void WatchdogCC32XX_init(Watchdog_Handle handle)
+DECL|WatchdogCC32XX_open|function|Watchdog_Handle WatchdogCC32XX_open(Watchdog_Handle handle, Watchdog_Params *params)
+DECL|WatchdogCC32XX_setReload|function|int_fast16_t WatchdogCC32XX_setReload(Watchdog_Handle handle, uint32_t value)
