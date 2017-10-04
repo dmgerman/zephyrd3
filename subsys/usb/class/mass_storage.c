@@ -6,8 +6,6 @@ DECL|CSW_PASSED|enumerator|CSW_PASSED,
 DECL|DISK_THREAD_PRIO|macro|DISK_THREAD_PRIO
 DECL|DISK_THREAD_STACK_SZ|macro|DISK_THREAD_STACK_SZ
 DECL|ERROR|enumerator|ERROR, /* error */
-DECL|HIGH_BYTE|macro|HIGH_BYTE
-DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|MAX_PACKET|macro|MAX_PACKET
 DECL|PROCESS_CBW|enumerator|PROCESS_CBW, /* process a CBW request */
 DECL|READ_CBW|enumerator|READ_CBW, /* wait a CBW */
@@ -15,6 +13,9 @@ DECL|SEND_CSW|enumerator|SEND_CSW, /* send a CSW */
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|Stage|enum|enum Stage {
 DECL|Status|enum|enum Status {
+DECL|THREAD_OP_READ_QUEUED|macro|THREAD_OP_READ_QUEUED
+DECL|THREAD_OP_WRITE_DONE|macro|THREAD_OP_WRITE_DONE
+DECL|THREAD_OP_WRITE_QUEUED|macro|THREAD_OP_WRITE_QUEUED
 DECL|WAIT_CSW|enumerator|WAIT_CSW /* wait that a CSW has been effectively sent */
 DECL|addr|variable|addr
 DECL|block_count|variable|block_count
@@ -36,7 +37,6 @@ DECL|mass_storage_init|function|static int mass_storage_init(struct device *dev)
 DECL|mass_storage_status_cb|function|static void mass_storage_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|mass_thread_data|variable|mass_thread_data
 DECL|mass_thread_main|function|static void mass_thread_main(int arg1, int unused)
-DECL|mass_usb_description|variable|mass_usb_description
 DECL|max_lun_count|variable|max_lun_count
 DECL|memOK|variable|memOK
 DECL|memoryRead|function|static void memoryRead(void)
