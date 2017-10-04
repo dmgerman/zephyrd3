@@ -1,3 +1,6 @@
+DECL|__ccm_bss_section|macro|__ccm_bss_section
+DECL|__ccm_data_section|macro|__ccm_data_section
+DECL|__ccm_noinit_section|macro|__ccm_noinit_section
 DECL|__irq_vector_table|macro|__irq_vector_table
 DECL|__kinetis_flash_config_section|macro|__kinetis_flash_config_section
 DECL|__noinit|macro|__noinit
