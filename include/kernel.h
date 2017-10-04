@@ -306,7 +306,7 @@ DECL|k_msgq_num_free_get|function|static inline u32_t k_msgq_num_free_get(struct
 DECL|k_msgq_num_used_get|function|static inline u32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
-DECL|k_object_grant_access|function|static inline void k_object_grant_access(void *object, struct k_thread *thread)
+DECL|k_object_access_grant|function|static inline void k_object_access_grant(void *object, struct k_thread *thread)
 DECL|k_objects|enum|enum k_objects {
 DECL|k_oops|macro|k_oops
 DECL|k_panic|macro|k_panic
