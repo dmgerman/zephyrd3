@@ -180,6 +180,8 @@ DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
+DECL|_impl_k_object_access_all_grant|function|static inline void _impl_k_object_access_all_grant(void *object)
+DECL|_impl_k_object_access_grant|function|static inline void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_sem_count_get|function|static inline unsigned int _impl_k_sem_count_get(struct k_sem *sem)
 DECL|_impl_k_sem_reset|function|static inline void _impl_k_sem_reset(struct k_sem *sem)
 DECL|_init_static_threads|macro|_init_static_threads
@@ -306,7 +308,6 @@ DECL|k_msgq_num_free_get|function|static inline u32_t k_msgq_num_free_get(struct
 DECL|k_msgq_num_used_get|function|static inline u32_t k_msgq_num_used_get(struct k_msgq *q)
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
-DECL|k_object_access_grant|function|static inline void k_object_access_grant(void *object, struct k_thread *thread)
 DECL|k_objects|enum|enum k_objects {
 DECL|k_oops|macro|k_oops
 DECL|k_panic|macro|k_panic
