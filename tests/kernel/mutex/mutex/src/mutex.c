@@ -13,3 +13,4 @@ DECL|thread_08|function|void thread_08(void)
 DECL|thread_09|function|void thread_09(void)
 DECL|thread_11|function|void thread_11(void)
 DECL|thread_12_thread_data|variable|thread_12_thread_data
+DECL|user_main|function|void user_main(void)
