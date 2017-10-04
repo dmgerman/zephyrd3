@@ -692,7 +692,6 @@ DECL|BITC|macro|BITC
 DECL|BITD|macro|BITD
 DECL|BITE|macro|BITE
 DECL|BITF|macro|BITF
-DECL|BIT|macro|BIT
 DECL|BMRK_CMP|member|__IO uint32_t BMRK_CMP; /*!< Benchmark Count Compare Register */
 DECL|BMRK_CTLSTAT|member|__IO uint32_t BMRK_CTLSTAT; /*!< Benchmark Control and Status Register */
 DECL|BMRK_DREAD|member|__IO uint32_t BMRK_DREAD; /*!< Benchmark Data Read Count Register */

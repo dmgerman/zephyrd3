@@ -716,7 +716,6 @@ DECL|BITC|macro|BITC
 DECL|BITD|macro|BITD
 DECL|BITE|macro|BITE
 DECL|BITF|macro|BITF
-DECL|BIT|macro|BIT
 DECL|BMCTL|member|__IO uint32_t BMCTL; /*!< LCD_F blinking and memory control */
 DECL|BMRK_CMP|member|__IO uint32_t BMRK_CMP; /*!< Benchmark Count Compare Register */
 DECL|BMRK_CMP|member|__IO uint32_t BMRK_CMP; /*!< Benchmark Count Compare Register */
