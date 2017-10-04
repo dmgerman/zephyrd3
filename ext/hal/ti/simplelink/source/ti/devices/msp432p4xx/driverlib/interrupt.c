@@ -1,0 +1,29 @@
+DECL|IntDefaultHandler|function|static void IntDefaultHandler(void)
+DECL|Interrupt_disableInterrupt|function|void Interrupt_disableInterrupt(uint32_t interruptNumber)
+DECL|Interrupt_disableMaster|function|bool Interrupt_disableMaster(void)
+DECL|Interrupt_disableSleepOnIsrExit|function|void Interrupt_disableSleepOnIsrExit(void)
+DECL|Interrupt_enableInterrupt|function|void Interrupt_enableInterrupt(uint32_t interruptNumber)
+DECL|Interrupt_enableMaster|function|bool Interrupt_enableMaster(void)
+DECL|Interrupt_enableSleepOnIsrExit|function|void Interrupt_enableSleepOnIsrExit(void)
+DECL|Interrupt_getPriorityGrouping|function|uint32_t Interrupt_getPriorityGrouping(void)
+DECL|Interrupt_getPriorityMask|function|uint8_t Interrupt_getPriorityMask(void)
+DECL|Interrupt_getPriority|function|uint8_t Interrupt_getPriority(uint32_t interruptNumber)
+DECL|Interrupt_getVectorTableAddress|function|uint32_t Interrupt_getVectorTableAddress(void)
+DECL|Interrupt_isEnabled|function|bool Interrupt_isEnabled(uint32_t interruptNumber)
+DECL|Interrupt_pendInterrupt|function|void Interrupt_pendInterrupt(uint32_t interruptNumber)
+DECL|Interrupt_registerInterrupt|function|void Interrupt_registerInterrupt(uint32_t interruptNumber, void (*intHandler)(void))
+DECL|Interrupt_setPriorityGrouping|function|void Interrupt_setPriorityGrouping(uint32_t bits)
+DECL|Interrupt_setPriorityMask|function|void Interrupt_setPriorityMask(uint8_t priorityMask)
+DECL|Interrupt_setPriority|function|void Interrupt_setPriority(uint32_t interruptNumber, uint8_t priority)
+DECL|Interrupt_setVectorTableAddress|function|void Interrupt_setVectorTableAddress(uint32_t addr)
+DECL|Interrupt_unpendInterrupt|function|void Interrupt_unpendInterrupt(uint32_t interruptNumber)
+DECL|Interrupt_unregisterInterrupt|function|void Interrupt_unregisterInterrupt(uint32_t interruptNumber)
+DECL|g_pfnRAMVectors|variable|g_pfnRAMVectors
+DECL|g_pfnRAMVectors|variable|g_pfnRAMVectors
+DECL|g_pfnRAMVectors|variable|g_pfnRAMVectors
+DECL|g_pulDisRegs|variable|g_pulDisRegs
+DECL|g_pulEnRegs|variable|g_pulEnRegs
+DECL|g_pulPendRegs|variable|g_pulPendRegs
+DECL|g_pulPriority|variable|g_pulPriority
+DECL|g_pulRegs|variable|g_pulRegs
+DECL|g_pulUnpendRegs|variable|g_pulUnpendRegs
