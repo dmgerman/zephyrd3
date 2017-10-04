@@ -1,8 +1,8 @@
 DECL|CDC_ACM_BUFFER_SIZE|macro|CDC_ACM_BUFFER_SIZE
 DECL|CDC_ACM_DEFAUL_BAUDRATE|macro|CDC_ACM_DEFAUL_BAUDRATE
+DECL|CDC_CLASS_REQ_MAX_DATA_SIZE|macro|CDC_CLASS_REQ_MAX_DATA_SIZE
+DECL|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US|macro|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|HIGH_BYTE|macro|HIGH_BYTE
-DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|cb|member|uart_irq_callback_t cb;
 DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct device *dev, u32_t baudrate)
@@ -35,7 +35,6 @@ DECL|cdc_acm_line_ctrl_set|function|static int cdc_acm_line_ctrl_set(struct devi
 DECL|cdc_acm_poll_in|function|static int cdc_acm_poll_in(struct device *dev, unsigned char *c)
 DECL|cdc_acm_poll_out|function|static unsigned char cdc_acm_poll_out(struct device *dev, unsigned char c)
 DECL|cdc_acm_send_notification|function|static int cdc_acm_send_notification(struct device *dev, u16_t serial_state)
-DECL|cdc_acm_usb_description|variable|cdc_acm_usb_description
 DECL|interface_data|member|u8_t interface_data[CDC_CLASS_REQ_MAX_DATA_SIZE];
 DECL|line_coding|member|struct cdc_acm_line_coding line_coding;
 DECL|line_state|member|u8_t line_state;
