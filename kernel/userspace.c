@@ -5,6 +5,7 @@ DECL|_impl_k_object_access_all_grant|function|void _impl_k_object_access_all_gra
 DECL|_impl_k_object_access_grant|function|void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_object_access_revoke|function|void _impl_k_object_access_revoke(void *object, struct k_thread *thread)
 DECL|_k_object_init|function|void _k_object_init(void *object)
+DECL|_k_object_uninit|function|void _k_object_uninit(void *object)
 DECL|_k_object_validate|function|int _k_object_validate(struct _k_object *ko, enum k_objects otype, int init)
 DECL|_thread_perms_all_set|function|void _thread_perms_all_set(struct _k_object *ko)
 DECL|_thread_perms_clear|function|void _thread_perms_clear(struct _k_object *ko, struct k_thread *thread)
