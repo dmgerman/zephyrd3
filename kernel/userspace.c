@@ -6,7 +6,13 @@ DECL|_impl_k_object_access_grant|function|void _impl_k_object_access_grant(void 
 DECL|_k_object_init|function|void _k_object_init(void *object)
 DECL|_k_object_validate|function|int _k_object_validate(struct _k_object *ko, enum k_objects otype, int init)
 DECL|_thread_perms_all_set|function|void _thread_perms_all_set(struct _k_object *ko)
+DECL|_thread_perms_inherit|function|void _thread_perms_inherit(struct k_thread *parent, struct k_thread *child)
 DECL|_thread_perms_set|function|void _thread_perms_set(struct _k_object *ko, struct k_thread *thread)
+DECL|child_id|member|int child_id;
 DECL|dump_permission_error|function|static void dump_permission_error(struct _k_object *ko)
 DECL|otype_to_str|function|const char *otype_to_str(enum k_objects otype)
+DECL|parent_id|member|int parent_id;
+DECL|parent|member|struct k_thread *parent;
+DECL|perm_ctx|struct|struct perm_ctx {
 DECL|thread_perms_test|function|static int thread_perms_test(struct _k_object *ko)
+DECL|wordlist_cb|function|static void wordlist_cb(struct _k_object *ko, void *ctx_ptr)
