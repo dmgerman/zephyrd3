@@ -1,1 +1,0 @@
-DECL|ieee802154_sample_setup|macro|ieee802154_sample_setup
