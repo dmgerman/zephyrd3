@@ -36,7 +36,6 @@ DECL|_is_thread_timeout_expired|function|static ALWAYS_INLINE int _is_thread_tim
 DECL|_is_thread_user|function|static inline int _is_thread_user(void)
 DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(int prio)
 DECL|_ksched__h_|macro|_ksched__h_
-DECL|_mark_thread_as_dead|function|static inline void _mark_thread_as_dead(struct k_thread *thread)
 DECL|_mark_thread_as_not_pending|function|static inline void _mark_thread_as_not_pending(struct k_thread *thread)
 DECL|_mark_thread_as_not_polling|function|static inline void _mark_thread_as_not_polling(struct k_thread *thread)
 DECL|_mark_thread_as_not_suspended|function|static inline void _mark_thread_as_not_suspended(struct k_thread *thread)
