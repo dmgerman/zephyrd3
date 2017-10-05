@@ -37,8 +37,8 @@ DECL|bt_hci_cmd_send_sync|function|int bt_hci_cmd_send_sync(u16_t opcode, struct
 DECL|bt_hci_cmd_send|function|int bt_hci_cmd_send(u16_t opcode, struct net_buf *buf)
 DECL|bt_hci_driver_register|function|int bt_hci_driver_register(const struct bt_hci_driver *drv)
 DECL|bt_hci_get_cmd_opcode|function|u16_t bt_hci_get_cmd_opcode(struct net_buf *buf)
-DECL|bt_id_add|function|int bt_id_add(const bt_addr_le_t *addr, u8_t val[16])
-DECL|bt_id_del|function|int bt_id_del(const bt_addr_le_t *addr)
+DECL|bt_id_add|function|int bt_id_add(struct bt_keys *keys)
+DECL|bt_id_del|function|int bt_id_del(struct bt_keys *keys)
 DECL|bt_init|function|static int bt_init(void)
 DECL|bt_le_adv_start|function|int bt_le_adv_start(const struct bt_le_adv_param *param, const struct bt_data *ad, size_t ad_len, const struct bt_data *sd, size_t sd_len)
 DECL|bt_le_adv_stop|function|int bt_le_adv_stop(void)
@@ -176,6 +176,7 @@ DECL|tx_thread_data|variable|tx_thread_data
 DECL|type|member|u8_t type;
 DECL|type|member|u8_t type;
 DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)
+DECL|update_pending_id|function|static void update_pending_id(struct bt_keys *keys)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
 DECL|user_confirm_req|function|static void user_confirm_req(struct net_buf *buf)
