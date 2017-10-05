@@ -29,6 +29,7 @@ DECL|GPIO_DRIVE_S0H1|macro|GPIO_DRIVE_S0H1
 DECL|GPIO_DRIVE_S0S1|macro|GPIO_DRIVE_S0S1
 DECL|GPIO_INPUT_CONNECT|macro|GPIO_INPUT_CONNECT
 DECL|GPIO_INPUT_DISCONNECT|macro|GPIO_INPUT_DISCONNECT
+DECL|GPIO_PIN_CNF_SENSE_Invalid|macro|GPIO_PIN_CNF_SENSE_Invalid
 DECL|GPIO_PULL_DISABLE|macro|GPIO_PULL_DISABLE
 DECL|GPIO_PULL_DOWN|macro|GPIO_PULL_DOWN
 DECL|GPIO_PULL_UP|macro|GPIO_PULL_UP
@@ -53,7 +54,6 @@ DECL|RESERVED2|member|__I u32_t RESERVED2[32];
 DECL|RESERVED3|member|__I u32_t RESERVED3[23];
 DECL|RESERVED4|member|__I u32_t RESERVED4[97];
 DECL|RESERVED5|member|__I u32_t RESERVED5[129];
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|TASKS_CLR|member|__O u32_t TASKS_CLR[8];
 DECL|TASKS_OUT|member|__O u32_t TASKS_OUT[8];
 DECL|TASKS_SET|member|__O u32_t TASKS_SET[8];
@@ -77,5 +77,8 @@ DECL|gpio_nrf5_write|function|static int gpio_nrf5_write(struct device *dev, int
 DECL|gpiote_base_addr|member|u32_t gpiote_base_addr;
 DECL|gpiote_chan_mask|member|u32_t gpiote_chan_mask;
 DECL|gpiote_find_channel|function|static int gpiote_find_channel(struct device *dev, u32_t pin)
+DECL|nrf_gpiote_clear_port_event|function|void nrf_gpiote_clear_port_event(void)
+DECL|nrf_gpiote_interrupt_disable|function|void nrf_gpiote_interrupt_disable(uint32_t mask)
+DECL|nrf_gpiote_interrupt_enable|function|void nrf_gpiote_interrupt_enable(uint32_t mask)
 DECL|pin_callback_enables|member|u32_t pin_callback_enables;
 DECL|port_base_addr|member|u32_t port_base_addr;
