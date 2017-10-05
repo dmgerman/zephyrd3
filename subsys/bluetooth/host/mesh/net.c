@@ -28,6 +28,7 @@ DECL|bt_mesh_net_local|function|static void bt_mesh_net_local(struct k_work *wor
 DECL|bt_mesh_net_recv|function|void bt_mesh_net_recv(struct net_buf_simple *data, s8_t rssi, enum bt_mesh_net_if net_if)
 DECL|bt_mesh_net_relay|function|static void bt_mesh_net_relay(struct net_buf_simple *sbuf, struct bt_mesh_net_rx *rx)
 DECL|bt_mesh_net_resend|function|int bt_mesh_net_resend(struct bt_mesh_subnet *sub, struct net_buf *buf, bool new_key, bool friend_cred, bt_mesh_adv_func_t cb)
+DECL|bt_mesh_net_revoke_keys|function|void bt_mesh_net_revoke_keys(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_send|function|int bt_mesh_net_send(struct bt_mesh_net_tx *tx, struct net_buf *buf, bt_mesh_adv_func_t cb)
 DECL|bt_mesh_rpl_reset|function|void bt_mesh_rpl_reset(void)
 DECL|bt_mesh_subnet_find|function|struct bt_mesh_subnet *bt_mesh_subnet_find(const u8_t net_id[8], u8_t flags, u32_t iv_index, const u8_t auth[8], bool *new_key)
