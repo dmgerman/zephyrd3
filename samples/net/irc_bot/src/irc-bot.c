@@ -19,6 +19,8 @@ DECL|app_ctx|variable|app_ctx
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
 DECL|cmd_buf|variable|cmd_buf
+DECL|data_pool|function|static struct net_buf_pool *data_pool(void)
+DECL|data_pool|macro|data_pool
 DECL|data|member|void *data;
 DECL|data|member|void *data;
 DECL|fake_led|variable|fake_led
@@ -44,6 +46,8 @@ DECL|panic|function|panic(const char *msg)
 DECL|process_command|function|process_command(struct zirc *irc, char *cmd, size_t len)
 DECL|read_led|function|read_led(void)
 DECL|transmit|function|transmit(char buffer[], size_t len)
+DECL|tx_slab|function|static struct k_mem_slab *tx_slab(void)
+DECL|tx_slab|macro|tx_slab
 DECL|write_led|function|write_led(bool led)
 DECL|zirc_chan_join|function|zirc_chan_join(struct zirc *irc, struct zirc_chan *chan, const char *channel, on_privmsg_rcvd_cb_t on_privmsg_rcvd, void *data)
 DECL|zirc_chan_part|function|zirc_chan_part(struct zirc_chan *chan)
