@@ -13,6 +13,7 @@ DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
 DECL|LED_PIN|macro|LED_PIN
+DECL|NICK_BUFFER_SIZE|macro|NICK_BUFFER_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|WAIT_TIMEOUT|macro|WAIT_TIMEOUT
@@ -24,6 +25,7 @@ DECL|data_pool|macro|data_pool
 DECL|fake_led|variable|fake_led
 DECL|led0|variable|led0
 DECL|main|function|void main(void)
+DECL|nick_buf|variable|nick_buf
 DECL|on_cmd_disconnect|function|on_cmd_disconnect(char *chan_name, const char *nick, const char *msg)
 DECL|on_cmd_hello|function|on_cmd_hello(char *chan_name, const char *nick, const char *msg)
 DECL|on_cmd_led_off|function|on_cmd_led_off(char *chan_name, const char *nick, const char *msg)
