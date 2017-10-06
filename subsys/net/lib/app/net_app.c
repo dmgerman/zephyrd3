@@ -25,6 +25,7 @@ DECL|_net_app_tls_handler_stop|function|void _net_app_tls_handler_stop(struct ne
 DECL|_net_app_tls_init|function|int _net_app_tls_init(struct net_app_ctx *ctx, int client_or_server)
 DECL|_net_app_tls_received|function|void _net_app_tls_received(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|_net_app_tls_sendto|function|int _net_app_tls_sendto(struct net_pkt *pkt,const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, s32_t timeout,
+DECL|_net_app_tls_trigger_close|function|int _net_app_tls_trigger_close(struct net_app_ctx *ctx)
 DECL|_net_app_unregister|function|void _net_app_unregister(struct net_app_ctx *ctx)
 DECL|accept_dtls|function|static int accept_dtls(struct net_app_ctx *ctx, struct net_context *context, struct net_pkt *pkt)
 DECL|copy_pool_vars|function|static inline void copy_pool_vars(struct net_context *new_context, struct net_context *listen_context)

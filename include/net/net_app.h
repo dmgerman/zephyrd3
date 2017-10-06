@@ -19,6 +19,7 @@ DECL|cert_cb|member|net_app_cert_cb_t cert_cb;
 DECL|cert_host|member|const char *cert_host;
 DECL|client_id|member|char client_id;
 DECL|client|member|} client;
+DECL|close_requested|member|bool close_requested;
 DECL|close|member|net_app_close_cb_t close;
 DECL|conf|member|mbedtls_ssl_config conf;
 DECL|connect_cb_called|member|bool connect_cb_called;
@@ -100,6 +101,7 @@ DECL|timing_ctx|member|struct dtls_timing_context timing_ctx;
 DECL|tls_context|struct|struct tls_context {
 DECL|tls|member|} tls;
 DECL|token|member|void *token; /* Used when sending data */
+DECL|tx_pending|member|bool tx_pending;
 DECL|tx_rx_fifo|member|struct k_fifo tx_rx_fifo;
 DECL|tx_sem|member|struct k_sem tx_sem;
 DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
