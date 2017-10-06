@@ -83,6 +83,7 @@ DECL|GATT_DISC_ALL_CHRC|macro|GATT_DISC_ALL_CHRC
 DECL|GATT_DISC_ALL_DESC|macro|GATT_DISC_ALL_DESC
 DECL|GATT_DISC_CHRC_UUID|macro|GATT_DISC_CHRC_UUID
 DECL|GATT_DISC_PRIM_UUID|macro|GATT_DISC_PRIM_UUID
+DECL|GATT_EV_ATTR_VALUE_CHANGED|macro|GATT_EV_ATTR_VALUE_CHANGED
 DECL|GATT_EV_NOTIFICATION|macro|GATT_EV_NOTIFICATION
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
 DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
@@ -113,6 +114,7 @@ DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -304,7 +306,9 @@ DECL|data_length|member|u16_t data_length;
 DECL|data_length|member|u16_t data_length;
 DECL|data_length|member|u16_t data_length;
 DECL|data_length|member|u16_t data_length;
+DECL|data_length|member|u16_t data_length;
 DECL|data_len|member|u16_t data_len;
+DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
@@ -379,6 +383,7 @@ DECL|gatt_add_included_service_cmd|struct|struct gatt_add_included_service_cmd {
 DECL|gatt_add_included_service_rp|struct|struct gatt_add_included_service_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
+DECL|gatt_attr_value_changed_ev|struct|struct gatt_attr_value_changed_ev {
 DECL|gatt_cfg_notify_cmd|struct|struct gatt_cfg_notify_cmd {
 DECL|gatt_characteristic|struct|struct gatt_characteristic {
 DECL|gatt_descriptor|struct|struct gatt_descriptor {
@@ -408,6 +413,7 @@ DECL|gatt_write_long_cmd|struct|struct gatt_write_long_cmd {
 DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
 DECL|handles_count|member|u8_t handles_count;
 DECL|handles|member|u16_t handles[0];
+DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;

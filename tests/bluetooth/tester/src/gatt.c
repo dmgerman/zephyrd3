@@ -26,6 +26,7 @@ DECL|alloc_descriptor|function|static int alloc_descriptor(const struct bt_gatt_
 DECL|alloc_included|function|static int alloc_included(struct bt_gatt_attr *attr, u16_t *included_service_id, u16_t svc_handle)
 DECL|alloc_value|function|static u8_t alloc_value(struct bt_gatt_attr *attr, struct set_value *data)
 DECL|attr_count|variable|attr_count
+DECL|attr_value_changed_ev|function|static void attr_value_changed_ev(u16_t handle, const u8_t *value, u16_t len)
 DECL|btp2bt_uuid|function|static u8_t btp2bt_uuid(const u8_t *uuid, u8_t len, struct bt_uuid *bt_uuid)
 DECL|btp_opcode|variable|btp_opcode
 DECL|buf|member|u8_t buf[MAX_BUFFER_SIZE];
