@@ -26,7 +26,6 @@ DECL|data_pool|macro|data_pool
 DECL|data|member|void *data;
 DECL|data|member|void *data;
 DECL|fake_led|variable|fake_led
-DECL|initialize_hardware|function|initialize_hardware(void)
 DECL|irc|member|struct zirc *irc;
 DECL|led0|variable|led0
 DECL|main|function|void main(void)
