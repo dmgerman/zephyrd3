@@ -218,7 +218,7 @@ DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t)
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
 DECL|arch|member|struct _thread_arch arch;
-DECL|attr|member|u32_t attr;
+DECL|attr|member|k_mem_partition_attr_t attr;
 DECL|base|member|struct _thread_base base;
 DECL|base|member|u32_t *base, *next, *top;
 DECL|bits_p|member|u32_t *bits_p;
