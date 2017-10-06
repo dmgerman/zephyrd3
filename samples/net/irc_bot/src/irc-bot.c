@@ -19,6 +19,7 @@ DECL|app_ctx|variable|app_ctx
 DECL|chans|member|struct zirc_chan *chans;
 DECL|chan|member|const char *chan;
 DECL|cmd_buf|variable|cmd_buf
+DECL|cmd_len|variable|cmd_len
 DECL|data_pool|function|static struct net_buf_pool *data_pool(void)
 DECL|data_pool|macro|data_pool
 DECL|data|member|void *data;
