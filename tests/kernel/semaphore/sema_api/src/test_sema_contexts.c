@@ -4,6 +4,7 @@ DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|TIMEOUT|macro|TIMEOUT
 DECL|sema|variable|sema
 DECL|tdata|variable|tdata
+DECL|test_main|function|void test_main(void)
 DECL|test_sema_count_get|function|void test_sema_count_get(void)
 DECL|test_sema_reset|function|void test_sema_reset(void)
 DECL|test_sema_thread2isr|function|void test_sema_thread2isr(void)
