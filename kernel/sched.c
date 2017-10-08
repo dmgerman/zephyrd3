@@ -1,5 +1,5 @@
 DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_sleep, duration)
-DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_thread_priority_set, thread, prio)
+DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_thread_priority_set, thread_p, prio)
 DECL|__must_switch_threads|function|int __must_switch_threads(void)
 DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct k_thread *thread)
 DECL|_clear_ready_q_prio_bit|function|static void _clear_ready_q_prio_bit(int prio)
