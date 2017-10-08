@@ -23,6 +23,7 @@ DECL|test_kdefine_coop_thread|function|void test_kdefine_coop_thread(void)
 DECL|test_kdefine_preempt_thread|function|void test_kdefine_preempt_thread(void)
 DECL|test_kinit_coop_thread|function|void test_kinit_coop_thread(void)
 DECL|test_kinit_preempt_thread|function|void test_kinit_preempt_thread(void)
+DECL|test_main|function|void test_main(void)
 DECL|thread_coop|variable|thread_coop
 DECL|thread_data|struct|static struct thread_data {
 DECL|thread_entry|function|static void thread_entry(void *p1, void *p2, void *p3)
