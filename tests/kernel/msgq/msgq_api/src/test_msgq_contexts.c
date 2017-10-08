@@ -3,6 +3,7 @@ DECL|end_sema|variable|end_sema
 DECL|get_msgq|function|static void get_msgq(struct k_msgq *pmsgq)
 DECL|msgq_isr|function|static void msgq_isr(struct k_msgq *pmsgq)
 DECL|msgq_thread|function|static void msgq_thread(struct k_msgq *pmsgq)
+DECL|msgq|variable|msgq
 DECL|purge_msgq|function|static void purge_msgq(struct k_msgq *pmsgq)
 DECL|put_msgq|function|static void put_msgq(struct k_msgq *pmsgq)
 DECL|tdata|variable|tdata
