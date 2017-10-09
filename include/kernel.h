@@ -182,6 +182,7 @@ DECL|_impl_k_msgq_num_free_get|function|static inline u32_t _impl_k_msgq_num_fre
 DECL|_impl_k_msgq_num_used_get|function|static inline u32_t _impl_k_msgq_num_used_get(struct k_msgq *q)
 DECL|_impl_k_object_access_all_grant|function|static inline void _impl_k_object_access_all_grant(void *object)
 DECL|_impl_k_object_access_grant|function|static inline void _impl_k_object_access_grant(void *object, struct k_thread *thread)
+DECL|_impl_k_object_access_revoke|function|static inline void _impl_k_object_access_revoke(void *object,struct k_thread *thread)
 DECL|_impl_k_sem_count_get|function|static inline unsigned int _impl_k_sem_count_get(struct k_sem *sem)
 DECL|_impl_k_sem_reset|function|static inline void _impl_k_sem_reset(struct k_sem *sem)
 DECL|_impl_k_timer_remaining_get|function|static inline s32_t _impl_k_timer_remaining_get(struct k_timer *timer)
