@@ -141,7 +141,6 @@ DECL|gts_request|member|struct ieee802154_gts_request gts_request;
 DECL|gts|member|struct ieee802154_gts_spec gts;
 DECL|gts|member|} gts;
 DECL|ie_list|member|u16_t ie_list :1;
-DECL|ieee802154_ack_required|function|static inline bool ieee802154_ack_required(struct net_pkt *pkt)
 DECL|ieee802154_address_field_comp|struct|struct ieee802154_address_field_comp {
 DECL|ieee802154_address_field_plain|struct|struct ieee802154_address_field_plain {
 DECL|ieee802154_address_field|struct|struct ieee802154_address_field {

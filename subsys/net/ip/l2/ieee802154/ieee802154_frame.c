@@ -13,6 +13,7 @@ DECL|ieee802154_create_ack_frame|function|bool ieee802154_create_ack_frame(struc
 DECL|ieee802154_create_data_frame|function|bool ieee802154_create_data_frame(struct ieee802154_context *ctx, struct net_linkaddr *dst, struct net_buf *frag, u8_t reserved_len)
 DECL|ieee802154_create_mac_cmd_frame|function|ieee802154_create_mac_cmd_frame(struct ieee802154_context *ctx,enum ieee802154_cfi type, struct ieee802154_frame_params *params)
 DECL|ieee802154_decipher_data_frame|function|bool ieee802154_decipher_data_frame(struct net_if *iface, struct net_pkt *pkt, struct ieee802154_mpdu *mpdu)
+DECL|ieee802154_is_ar_flag_set|function|bool ieee802154_is_ar_flag_set(struct net_pkt *pkt)
 DECL|ieee802154_validate_aux_security_hdr|function|ieee802154_validate_aux_security_hdr(u8_t *buf, u8_t **p_buf)
 DECL|ieee802154_validate_frame|function|bool ieee802154_validate_frame(u8_t *buf, u8_t length, struct ieee802154_mpdu *mpdu)
 DECL|level_2_tag_size|variable|level_2_tag_size
