@@ -189,7 +189,6 @@ DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_object_init|function|static inline void _k_object_init(void *obj)
-DECL|_k_object_validate|function|static inline int _k_object_validate(void *obj, enum k_objects otype, int init)
 DECL|_k_object|struct|struct _k_object {
 DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
 DECL|_kernel__h_|macro|_kernel__h_
