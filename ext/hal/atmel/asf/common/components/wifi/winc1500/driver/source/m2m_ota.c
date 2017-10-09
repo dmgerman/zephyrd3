@@ -1,0 +1,15 @@
+DECL|gpfOtaNotifCb|variable|gpfOtaNotifCb
+DECL|gpfOtaUpdateCb|variable|gpfOtaUpdateCb
+DECL|m2m_ota_abort|function|NMI_API sint8 m2m_ota_abort(void)
+DECL|m2m_ota_cb|function|static void m2m_ota_cb(uint8 u8OpCode, uint16 u16DataSize, uint32 u32Addr)
+DECL|m2m_ota_get_firmware_version|function|NMI_API sint8 m2m_ota_get_firmware_version(tstrM2mRev * pstrRev)
+DECL|m2m_ota_init|function|NMI_API sint8 m2m_ota_init(tpfOtaUpdateCb pfOtaUpdateCb, tpfOtaNotifCb pfOtaNotifCb)
+DECL|m2m_ota_notif_check_for_update|function|NMI_API sint8 m2m_ota_notif_check_for_update(void)
+DECL|m2m_ota_notif_sched|function|NMI_API sint8 m2m_ota_notif_sched(uint32 u32Period)
+DECL|m2m_ota_notif_set_url|function|NMI_API sint8 m2m_ota_notif_set_url(uint8 * u8Url)
+DECL|m2m_ota_rollback_crt|function|NMI_API sint8 m2m_ota_rollback_crt(void)
+DECL|m2m_ota_rollback|function|NMI_API sint8 m2m_ota_rollback(void)
+DECL|m2m_ota_start_update_crt|function|NMI_API sint8 m2m_ota_start_update_crt(uint8 * u8DownloadUrl)
+DECL|m2m_ota_start_update|function|NMI_API sint8 m2m_ota_start_update(uint8 * u8DownloadUrl)
+DECL|m2m_ota_switch_crt|function|NMI_API sint8 m2m_ota_switch_crt(void)
+DECL|m2m_ota_switch_firmware|function|NMI_API sint8 m2m_ota_switch_firmware(void)

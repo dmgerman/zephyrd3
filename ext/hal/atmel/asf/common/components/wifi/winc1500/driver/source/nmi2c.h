@@ -1,0 +1,1 @@
+DECL|_NMI2C_H_|macro|_NMI2C_H_

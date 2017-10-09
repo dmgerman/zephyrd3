@@ -1,0 +1,1 @@
+DECL|__SPI_FLASH_H__|macro|__SPI_FLASH_H__

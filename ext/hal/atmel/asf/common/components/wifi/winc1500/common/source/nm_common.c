@@ -1,0 +1,7 @@
+DECL|m2m_checksum|function|uint8 m2m_checksum(uint8* buf, int sz)
+DECL|m2m_memcmp|function|sint8 m2m_memcmp(uint8 *pu8Buff1,uint8 *pu8Buff2 ,uint32 u32Size)
+DECL|m2m_memcpy|function|void m2m_memcpy(uint8* pDst,uint8* pSrc,uint32 sz)
+DECL|m2m_memset|function|void m2m_memset(uint8* pBuf,uint8 val,uint32 sz)
+DECL|m2m_strlen|function|uint16 m2m_strlen(uint8 * pcStr)
+DECL|m2m_strncmp|function|uint8 m2m_strncmp(uint8 *pcS1, uint8 *pcS2, uint16 u16Len)
+DECL|m2m_strstr|function|uint8 * m2m_strstr(uint8 *pcIn, uint8 *pcStr)

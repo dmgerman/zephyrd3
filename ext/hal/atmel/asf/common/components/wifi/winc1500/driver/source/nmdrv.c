@@ -1,0 +1,6 @@
+DECL|nm_drv_deinit|function|sint8 nm_drv_deinit(void * arg)
+DECL|nm_drv_init_download_mode|function|sint8 nm_drv_init_download_mode()
+DECL|nm_drv_init|function|sint8 nm_drv_init(void * arg)
+DECL|nm_get_firmware_full_info|function|sint8 nm_get_firmware_full_info(tstrM2mRev* pstrRev)
+DECL|nm_get_firmware_info|function|sint8 nm_get_firmware_info(tstrM2mRev* M2mRev)
+DECL|nm_get_ota_firmware_info|function|sint8 nm_get_ota_firmware_info(tstrM2mRev* pstrRev)

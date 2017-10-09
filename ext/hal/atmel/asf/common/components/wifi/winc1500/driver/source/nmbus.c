@@ -1,0 +1,12 @@
+DECL|MAX_TRX_CFG_SZ|macro|MAX_TRX_CFG_SZ
+DECL|nm_bus_iface_deinit|function|sint8 nm_bus_iface_deinit(void)
+DECL|nm_bus_iface_init|function|sint8 nm_bus_iface_init(void *pvInitVal)
+DECL|nm_bus_iface_reconfigure|function|sint8 nm_bus_iface_reconfigure(void *ptr)
+DECL|nm_bus_reset|function|sint8 nm_bus_reset(void)
+DECL|nm_read_block|function|sint8 nm_read_block(uint32 u32Addr, uint8 *puBuf, uint32 u32Sz)
+DECL|nm_read_reg_with_ret|function|sint8 nm_read_reg_with_ret(uint32 u32Addr, uint32* pu32RetVal)
+DECL|nm_read_reg|function|uint32 nm_read_reg(uint32 u32Addr)
+DECL|nm_write_block|function|sint8 nm_write_block(uint32 u32Addr, uint8 *puBuf, uint32 u32Sz)
+DECL|nm_write_reg|function|sint8 nm_write_reg(uint32 u32Addr, uint32 u32Val)
+DECL|p_nm_read_block|function|static sint8 p_nm_read_block(uint32 u32Addr, uint8 *puBuf, uint16 u16Sz)
+DECL|p_nm_write_block|function|static sint8 p_nm_write_block(uint32 u32Addr, uint8 *puBuf, uint16 u16Sz)

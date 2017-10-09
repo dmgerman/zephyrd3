@@ -1,0 +1,59 @@
+DECL|TX_DGAIN_MAX_NUM_REGS|macro|TX_DGAIN_MAX_NUM_REGS
+DECL|TX_DGAIN_REG_BASE_ADDRESS|macro|TX_DGAIN_REG_BASE_ADDRESS
+DECL|TX_GAIN_CODE_BASE_ADDRESS|macro|TX_GAIN_CODE_BASE_ADDRESS
+DECL|TX_GAIN_CODE_MAX_NUM_REGS|macro|TX_GAIN_CODE_MAX_NUM_REGS
+DECL|TX_PA_BASE_ADDRESS|macro|TX_PA_BASE_ADDRESS
+DECL|TX_PA_MAX_NUM_REGS|macro|TX_PA_MAX_NUM_REGS
+DECL|gaAteFwTxRates|variable|gaAteFwTxRates
+DECL|gu8AteIsRunning|variable|gu8AteIsRunning
+DECL|gu8RxState|variable|gu8RxState
+DECL|gu8TxState|variable|gu8TxState
+DECL|m2m_ate_deinit|function|sint8 m2m_ate_deinit(void)
+DECL|m2m_ate_get_dig_gain|function|sint8 m2m_ate_get_dig_gain(double * dGaindB)
+DECL|m2m_ate_get_fw_state|function|sint8 m2m_ate_get_fw_state(void)
+DECL|m2m_ate_get_pa_gain|function|sint8 m2m_ate_get_pa_gain(double *paGaindB)
+DECL|m2m_ate_get_ppa_gain|function|sint8 m2m_ate_get_ppa_gain(double * ppaGaindB)
+DECL|m2m_ate_get_rx_status|function|sint8 m2m_ate_get_rx_status(void)
+DECL|m2m_ate_get_tot_gain|function|sint8 m2m_ate_get_tot_gain(double * totGaindB)
+DECL|m2m_ate_get_tx_rate|function|uint32 m2m_ate_get_tx_rate(uint8 u8Index)
+DECL|m2m_ate_get_tx_status|function|sint8 m2m_ate_get_tx_status(void)
+DECL|m2m_ate_init_param|function|sint8 m2m_ate_init_param(tstrM2mAteInit *pstrInit)
+DECL|m2m_ate_init|function|sint8 m2m_ate_init(void)
+DECL|m2m_ate_read_rx_status|function|sint8 m2m_ate_read_rx_status(tstrM2mAteRxStatus *strM2mAteRxStatus)
+DECL|m2m_ate_set_dig_gain|function|sint8 m2m_ate_set_dig_gain(double dGaindB)
+DECL|m2m_ate_set_fw_state|function|sint8 m2m_ate_set_fw_state(uint8 u8State)
+DECL|m2m_ate_set_pa_gain|function|void m2m_ate_set_pa_gain(uint8 gain_db)
+DECL|m2m_ate_set_rx_status|function|static void m2m_ate_set_rx_status(uint8 u8Value)
+DECL|m2m_ate_set_tx_status|function|static void m2m_ate_set_tx_status(uint8 u8Value)
+DECL|m2m_ate_start_rx|function|sint8 m2m_ate_start_rx(tstrM2mAteRx * strM2mAteRxStr)
+DECL|m2m_ate_start_tx|function|sint8 m2m_ate_start_tx(tstrM2mAteTx * strM2mAteTx)
+DECL|m2m_ate_stop_rx|function|sint8 m2m_ate_stop_rx(void)
+DECL|m2m_ate_stop_tx|function|sint8 m2m_ate_stop_tx(void)
+DECL|rBurstRx_NMI_RX_ALL_PKTS_CONT|macro|rBurstRx_NMI_RX_ALL_PKTS_CONT
+DECL|rBurstRx_NMI_RX_ERR_PKTS_CONT|macro|rBurstRx_NMI_RX_ERR_PKTS_CONT
+DECL|rBurstTx_NMI_MAC_ADDR_HI_PEER|macro|rBurstTx_NMI_MAC_ADDR_HI_PEER
+DECL|rBurstTx_NMI_MAC_ADDR_HI_SA|macro|rBurstTx_NMI_MAC_ADDR_HI_SA
+DECL|rBurstTx_NMI_MAC_ADDR_HI_SELF|macro|rBurstTx_NMI_MAC_ADDR_HI_SELF
+DECL|rBurstTx_NMI_MAC_ADDR_LO_PEER|macro|rBurstTx_NMI_MAC_ADDR_LO_PEER
+DECL|rBurstTx_NMI_MAC_ADDR_LO_SA|macro|rBurstTx_NMI_MAC_ADDR_LO_SA
+DECL|rBurstTx_NMI_MAC_ADDR_LO_SELF|macro|rBurstTx_NMI_MAC_ADDR_LO_SELF
+DECL|rBurstTx_NMI_MAC_FILTER_ENABLE_DA|macro|rBurstTx_NMI_MAC_FILTER_ENABLE_DA
+DECL|rBurstTx_NMI_MAC_FILTER_ENABLE_SA|macro|rBurstTx_NMI_MAC_FILTER_ENABLE_SA
+DECL|rBurstTx_NMI_NUM_TX_FRAMES|macro|rBurstTx_NMI_NUM_TX_FRAMES
+DECL|rBurstTx_NMI_RX_PKT_CNT_FAIL|macro|rBurstTx_NMI_RX_PKT_CNT_FAIL
+DECL|rBurstTx_NMI_RX_PKT_CNT_SUCCESS|macro|rBurstTx_NMI_RX_PKT_CNT_SUCCESS
+DECL|rBurstTx_NMI_SET_SELF_MAC_ADDR|macro|rBurstTx_NMI_SET_SELF_MAC_ADDR
+DECL|rBurstTx_NMI_TEST_CH|macro|rBurstTx_NMI_TEST_CH
+DECL|rBurstTx_NMI_TEST_XO_OFF|macro|rBurstTx_NMI_TEST_XO_OFF
+DECL|rBurstTx_NMI_TX_CW_MODE|macro|rBurstTx_NMI_TX_CW_MODE
+DECL|rBurstTx_NMI_TX_CW_PARAM|macro|rBurstTx_NMI_TX_CW_PARAM
+DECL|rBurstTx_NMI_TX_DPD_CTRL|macro|rBurstTx_NMI_TX_DPD_CTRL
+DECL|rBurstTx_NMI_TX_FRAME_LEN|macro|rBurstTx_NMI_TX_FRAME_LEN
+DECL|rBurstTx_NMI_TX_GAIN|macro|rBurstTx_NMI_TX_GAIN
+DECL|rBurstTx_NMI_TX_PHY_CONT|macro|rBurstTx_NMI_TX_PHY_CONT
+DECL|rBurstTx_NMI_TX_RATE|macro|rBurstTx_NMI_TX_RATE
+DECL|rBurstTx_NMI_USE_EFUSE_XO_OFF|macro|rBurstTx_NMI_USE_EFUSE_XO_OFF
+DECL|rBurstTx_NMI_USE_PMU|macro|rBurstTx_NMI_USE_PMU
+DECL|rInterrupt_CORTUS_0|macro|rInterrupt_CORTUS_0
+DECL|rInterrupt_CORTUS_1|macro|rInterrupt_CORTUS_1
+DECL|rInterrupt_CORTUS_2|macro|rInterrupt_CORTUS_2
