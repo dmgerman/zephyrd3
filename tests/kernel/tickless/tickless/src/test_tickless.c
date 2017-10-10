@@ -13,4 +13,7 @@ DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
 DECL|_TIMESTAMP_READ|macro|_TIMESTAMP_READ
 DECL|_timer_res_t|typedef|typedef u32_t _timer_res_t;
 DECL|_timer_res_t|typedef|typedef u64_t _timer_res_t;
+DECL|test_main|function|void test_main(void)
+DECL|test_tickless|function|void test_tickless(void)
+DECL|thread_tickless|variable|thread_tickless
 DECL|ticklessTestThread|function|void ticklessTestThread(void)
