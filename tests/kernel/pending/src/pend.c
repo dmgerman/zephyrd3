@@ -43,7 +43,8 @@ DECL|task_high_state|variable|task_high_state
 DECL|task_high|function|void task_high(void)
 DECL|task_low_state|variable|task_low_state
 DECL|task_low|function|void task_low(void)
-DECL|task_monitor|function|void task_monitor(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_pending|function|void test_pending(void)
 DECL|timer_data|variable|timer_data
 DECL|timer_end_tick|variable|timer_end_tick
 DECL|timer_start_tick|variable|timer_start_tick
