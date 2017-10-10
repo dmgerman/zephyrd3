@@ -16,3 +16,4 @@ DECL|_SYSCALL_OBJ|macro|_SYSCALL_OBJ
 DECL|_SYSCALL_VERIFY_MSG|macro|_SYSCALL_VERIFY_MSG
 DECL|_SYSCALL_VERIFY|macro|_SYSCALL_VERIFY
 DECL|_ZEPHYR_SYSCALL_HANDLER_H_|macro|_ZEPHYR_SYSCALL_HANDLER_H_
+DECL|_obj_validation_check|function|static inline int _obj_validation_check(void *obj, enum k_objects otype,int init)
