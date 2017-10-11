@@ -82,7 +82,6 @@ DECL|inpos|member|s32_t inpos;
 DECL|insize|member|u16_t insize;
 DECL|instance_count|member|u16_t instance_count;
 DECL|in|member|struct lwm2m_input_context *in;
-DECL|last_value_len|member|u16_t last_value_len;
 DECL|level|member|u8_t level; /* 0/1/2/3 = 3 = resource */
 DECL|lwm2m_engine_context|struct|struct lwm2m_engine_context {
 DECL|lwm2m_engine_obj_create_cb_t|typedef|(*lwm2m_engine_obj_create_cb_t)(u16_t obj_inst_id);
