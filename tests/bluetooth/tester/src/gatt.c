@@ -102,7 +102,6 @@ DECL|tester_handle_gatt|function|void tester_handle_gatt(u8_t opcode, u8_t index
 DECL|tester_init_gatt|function|u8_t tester_init_gatt(void)
 DECL|u128|member|struct bt_uuid_128 u128;
 DECL|u16|member|struct bt_uuid_16 u16;
-DECL|update_incl_svc_offset|function|static void update_incl_svc_offset(u16_t db_attr_off)
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid uuid;
