@@ -11,7 +11,6 @@ DECL|T_OBJ|macro|T_OBJ
 DECL|T_STRING_B|macro|T_STRING_B
 DECL|T_STRING|macro|T_STRING
 DECL|T_VAL|macro|T_VAL
-DECL|T_VNUM|macro|T_VNUM
 DECL|do_write_op_json|function|int do_write_op_json(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|json_next_token|function|int json_next_token(struct lwm2m_input_context *in, struct json_data *json)
 DECL|json_writer|variable|json_writer
