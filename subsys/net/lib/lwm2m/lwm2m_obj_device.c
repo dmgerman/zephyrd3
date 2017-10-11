@@ -20,6 +20,7 @@ DECL|DEVICE_PWRSRC_MAX|macro|DEVICE_PWRSRC_MAX
 DECL|DEVICE_REBOOT_ID|macro|DEVICE_REBOOT_ID
 DECL|DEVICE_RESET_ERROR_CODE_ID|macro|DEVICE_RESET_ERROR_CODE_ID
 DECL|DEVICE_SERIAL_NUMBER_ID|macro|DEVICE_SERIAL_NUMBER_ID
+DECL|DEVICE_SERVICE_INTERVAL|macro|DEVICE_SERVICE_INTERVAL
 DECL|DEVICE_SOFTWARE_VERSION_ID|macro|DEVICE_SOFTWARE_VERSION_ID
 DECL|DEVICE_STRING_LONG|macro|DEVICE_STRING_LONG
 DECL|DEVICE_STRING_SHORT|macro|DEVICE_STRING_SHORT
@@ -37,7 +38,6 @@ DECL|current_time_pre_write_cb|function|static void *current_time_pre_write_cb(u
 DECL|current_time_read_cb|function|static void *current_time_read_cb(u16_t obj_inst_id, size_t *data_len)
 DECL|device_create|function|static struct lwm2m_engine_obj_inst *device_create(u16_t obj_inst_id)
 DECL|device_periodic_service|function|static void device_periodic_service(void)
-DECL|device_thread_data|variable|device_thread_data
 DECL|device_type|variable|device_type
 DECL|device|variable|device
 DECL|error_code_count|variable|error_code_count
