@@ -12,8 +12,11 @@ DECL|T_STRING_B|macro|T_STRING_B
 DECL|T_STRING|macro|T_STRING
 DECL|T_VAL|macro|T_VAL
 DECL|do_write_op_json|function|int do_write_op_json(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
+DECL|json_data|struct|struct json_data {
 DECL|json_next_token|function|int json_next_token(struct lwm2m_input_context *in, struct json_data *json)
 DECL|json_writer|variable|json_writer
+DECL|name_len|member|u8_t name_len;
+DECL|name|member|u8_t *name;
 DECL|parse_path|function|static int parse_path(const u8_t *buf, u16_t buflen, struct lwm2m_obj_path *path)
 DECL|put_begin_ri|function|static size_t put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_begin|function|static size_t put_begin(struct lwm2m_output_context *out,struct lwm2m_obj_path *path)
@@ -27,3 +30,5 @@ DECL|put_s32|function|static size_t put_s32(struct lwm2m_output_context *out, st
 DECL|put_s64|function|static size_t put_s64(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s64_t value)
 DECL|put_s8|function|static size_t put_s8(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s8_t value)
 DECL|put_string|function|static size_t put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
+DECL|value_len|member|u8_t value_len;
+DECL|value|member|u8_t *value;
