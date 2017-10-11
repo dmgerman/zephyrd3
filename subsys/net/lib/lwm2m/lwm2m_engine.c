@@ -8,6 +8,7 @@ DECL|GET_MORE|macro|GET_MORE
 DECL|MATCH_ALL|macro|MATCH_ALL
 DECL|MATCH_NONE|macro|MATCH_NONE
 DECL|MATCH_SINGLE|macro|MATCH_SINGLE
+DECL|MAX_PERIODIC_SERVICE|macro|MAX_PERIODIC_SERVICE
 DECL|MAX_TOKEN_LEN|macro|MAX_TOKEN_LEN
 DECL|NUM_BLOCK1_CONTEXT|macro|NUM_BLOCK1_CONTEXT
 DECL|REG_PREFACE|macro|REG_PREFACE
@@ -32,12 +33,14 @@ DECL|engine_add_observer|function|static int engine_add_observer(struct lwm2m_me
 DECL|engine_clear_context|function|static void engine_clear_context(struct lwm2m_engine_context *context)
 DECL|engine_get_resource_from_pathstr|function|static int engine_get_resource_from_pathstr(char *pathstr, struct lwm2m_engine_res_inst **res)
 DECL|engine_get_resource|function|static int engine_get_resource(struct lwm2m_obj_path *path, struct lwm2m_engine_res_inst **res)
+DECL|engine_next_service_timeout_ms|function|s32_t engine_next_service_timeout_ms(u32_t max_timeout)
 DECL|engine_obj_inst_list|variable|engine_obj_inst_list
 DECL|engine_obj_list|variable|engine_obj_list
 DECL|engine_observer_list|variable|engine_observer_list
 DECL|engine_register_obj_inst|function|static void engine_register_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|engine_remove_observer_by_id|function|static void engine_remove_observer_by_id(u16_t obj_id, s32_t obj_inst_id)
 DECL|engine_remove_observer|function|static int engine_remove_observer(const u8_t *token, u8_t tkl)
+DECL|engine_service_list|variable|engine_service_list
 DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|event_timestamp|member|s64_t event_timestamp;
@@ -53,10 +56,12 @@ DECL|get_option_int|function|static int get_option_int(const struct coap_packet 
 DECL|handle_request|function|static int handle_request(struct coap_packet *request, struct lwm2m_message *msg)
 DECL|init_block_ctx|function|init_block_ctx(const u8_t *token, u8_t tkl, struct block_context **ctx)
 DECL|last_timestamp|member|s64_t last_timestamp;
+DECL|last_timestamp|member|u64_t last_timestamp;
 DECL|lwm2m_create_obj_inst|function|int lwm2m_create_obj_inst(u16_t obj_id, u16_t obj_inst_id, struct lwm2m_engine_obj_inst **obj_inst)
 DECL|lwm2m_default_block_size|function|enum coap_block_size lwm2m_default_block_size(void)
 DECL|lwm2m_delete_handler|function|static int lwm2m_delete_handler(struct lwm2m_engine_obj *obj,struct lwm2m_engine_context *context)
 DECL|lwm2m_delete_obj_inst|function|int lwm2m_delete_obj_inst(u16_t obj_id, u16_t obj_inst_id)
+DECL|lwm2m_engine_add_service|function|int lwm2m_engine_add_service(void (*service)(void), u32_t period_ms)
 DECL|lwm2m_engine_context_init|function|void lwm2m_engine_context_init(struct lwm2m_ctx *client_ctx)
 DECL|lwm2m_engine_create_obj_inst|function|int lwm2m_engine_create_obj_inst(char *pathstr)
 DECL|lwm2m_engine_get_bool|function|bool lwm2m_engine_get_bool(char *pathstr)
@@ -112,8 +117,10 @@ DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struc
 DECL|lwm2m_write_handler|function|int lwm2m_write_handler(struct lwm2m_engine_obj_inst *obj_inst,struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|max_period_sec|member|u32_t max_period_sec;
 DECL|messages|variable|messages
+DECL|min_call_period|member|u32_t min_call_period;
 DECL|min_period_sec|member|u32_t min_period_sec;
 DECL|next_engine_obj_inst|function|next_engine_obj_inst(struct lwm2m_engine_obj_inst *last, int obj_id, int obj_inst_id)
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|observe_node_data|variable|observe_node_data
@@ -123,6 +130,9 @@ DECL|path|member|struct lwm2m_obj_path path;
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_context *out, u16_t accept)
+DECL|service_fn|member|void (*service_fn)(void);
+DECL|service_node_data|variable|service_node_data
+DECL|service_node|struct|struct service_node {
 DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl)
 DECL|string_to_path|function|static int string_to_path(char *pathstr, struct lwm2m_obj_path *path, char delim)
 DECL|timestamp|member|s64_t timestamp;
