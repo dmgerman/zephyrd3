@@ -54,7 +54,7 @@ DECL|engine_get_float32fix|function|static inline size_t engine_get_float32fix(s
 DECL|engine_get_float64fix|function|static inline size_t engine_get_float64fix(struct lwm2m_input_context *in, float64_value_t *value)
 DECL|engine_get_s32|function|static inline size_t engine_get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|engine_get_s64|function|static inline size_t engine_get_s64(struct lwm2m_input_context *in, s64_t *value)
-DECL|engine_get_string|function|static inline size_t engine_get_string(struct lwm2m_input_context *in, u8_t *value, size_t strlen)
+DECL|engine_get_string|function|static inline size_t engine_get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
 DECL|engine_put_begin_ri|function|static inline size_t engine_put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_begin|function|static inline size_t engine_put_begin(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_bool|function|static inline size_t engine_put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
@@ -66,7 +66,7 @@ DECL|engine_put_s16|function|static inline size_t engine_put_s16(struct lwm2m_ou
 DECL|engine_put_s32|function|static inline size_t engine_put_s32(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s32_t value)
 DECL|engine_put_s64|function|static inline size_t engine_put_s64(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s64_t value)
 DECL|engine_put_s8|function|static inline size_t engine_put_s8(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s8_t value)
-DECL|engine_put_string|function|static inline size_t engine_put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, const char *value, size_t strlen)
+DECL|engine_put_string|function|static inline size_t engine_put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
 DECL|execute_cb|member|lwm2m_engine_exec_cb_t execute_cb;
 DECL|field_count|member|u16_t field_count;
 DECL|fields|member|struct lwm2m_engine_obj_field *fields;
