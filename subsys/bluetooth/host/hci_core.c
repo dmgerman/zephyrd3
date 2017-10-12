@@ -92,6 +92,7 @@ DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(st
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_thread|function|static void hci_rx_thread(void)
 DECL|hci_tx_thread|function|static void hci_tx_thread(void *p1, void *p2, void *p3)
+DECL|id|member|u8_t id;
 DECL|init_work|function|static void init_work(struct k_work *work)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
 DECL|inquiry_result_with_rssi|function|static void inquiry_result_with_rssi(struct net_buf *buf)
