@@ -1,6 +1,5 @@
+DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_alert_recv, alert, timeout)
 DECL|_alert_deliver|function|void _alert_deliver(struct k_work *work)
-DECL|_handler_k_alert_recv|function|u32_t _handler_k_alert_recv(u32_t alert, u32_t timeout, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_alert_send|function|u32_t _handler_k_alert_send(u32_t alert, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|_impl_k_alert_recv|function|int _impl_k_alert_recv(struct k_alert *alert, s32_t timeout)
 DECL|_impl_k_alert_send|function|void _impl_k_alert_send(struct k_alert *alert)
 DECL|_trace_list_k_alert|variable|_trace_list_k_alert

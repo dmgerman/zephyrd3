@@ -1,3 +1,3 @@
-DECL|_handler_k_object_access_all_grant|function|u32_t _handler_k_object_access_all_grant(u32_t object, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_object_access_grant|function|u32_t _handler_k_object_access_grant(u32_t object, u32_t thread, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
+DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_object_access_all_grant, object)
+DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_object_access_grant, object, thread)
 DECL|validate_any_object|function|static struct _k_object *validate_any_object(void *obj)

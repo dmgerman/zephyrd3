@@ -1,4 +1,4 @@
-DECL|_handler_k_uptime_get_32|function|u32_t _handler_k_uptime_get_32(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
+DECL|_SYSCALL_HANDLER0|function|_SYSCALL_HANDLER0(k_uptime_get_32)
 DECL|_handling_timeouts|variable|_handling_timeouts
 DECL|_impl_k_uptime_get_32|function|u32_t _impl_k_uptime_get_32(void)
 DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(s32_t ticks)

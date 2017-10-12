@@ -1,11 +1,6 @@
 DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
+DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_thread_custom_data_set, data)
 DECL|_check_stack_sentinel|function|void _check_stack_sentinel(void)
-DECL|_handler_k_thread_cancel|function|u32_t _handler_k_thread_cancel(u32_t thread, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_thread_custom_data_get|function|u32_t _handler_k_thread_custom_data_get(u32_t arg1, u32_t arg2, u32_t arg3,u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_thread_custom_data_set|function|u32_t _handler_k_thread_custom_data_set(u32_t arg1, u32_t arg2, u32_t arg3,u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_thread_resume|function|u32_t _handler_k_thread_resume(u32_t thread, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_thread_start|function|u32_t _handler_k_thread_start(u32_t thread, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_k_thread_suspend|function|u32_t _handler_k_thread_suspend(u32_t thread, u32_t arg2, u32_t arg3,u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|_impl_k_thread_cancel|function|int _impl_k_thread_cancel(k_tid_t tid)
 DECL|_impl_k_thread_custom_data_get|function|void *_impl_k_thread_custom_data_get(void)
 DECL|_impl_k_thread_custom_data_set|function|void _impl_k_thread_custom_data_set(void *value)
@@ -32,6 +27,7 @@ DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_t
 DECL|k_busy_wait|function|void k_busy_wait(u32_t usec_to_wait)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)
 DECL|k_thread_create|function|k_tid_t k_thread_create(struct k_thread *new_thread,k_thread_stack_t stack, size_t stack_size, k_thread_entry_t entry, void *p1, void *p2, void *p3, int prio, u32_t options, s32_t delay)
+DECL|k_thread_custom_data_get|variable|k_thread_custom_data_get
 DECL|k_thread_user_mode_enter|function|FUNC_NORETURN void k_thread_user_mode_enter(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
 DECL|thread_index_get|function|static unsigned int thread_index_get(void)

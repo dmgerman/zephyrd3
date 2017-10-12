@@ -2,10 +2,10 @@ DECL|PAD_NONE|enumerator|PAD_NONE,
 DECL|PAD_SPACE_AFTER|enumerator|PAD_SPACE_AFTER,
 DECL|PAD_SPACE_BEFORE|enumerator|PAD_SPACE_BEFORE,
 DECL|PAD_ZERO_BEFORE|enumerator|PAD_ZERO_BEFORE,
+DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_str_out, c, n)
 DECL|__printk_get_hook|function|void *__printk_get_hook(void)
 DECL|__printk_hook_install|function|void __printk_hook_install(int (*fn)(int))
 DECL|_char_out|variable|_char_out
-DECL|_handler_k_str_out|function|u32_t _handler_k_str_out(u32_t c, u32_t n, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|_impl_k_str_out|function|void _impl_k_str_out(char *c, size_t n)
 DECL|_nop_char_out|function|static int _nop_char_out(int c)
 DECL|_printk_dec_ulong|function|static void _printk_dec_ulong(out_func_t out, void *ctx, const unsigned long num, enum pad_type padding, int min_width)
