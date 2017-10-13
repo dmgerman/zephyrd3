@@ -39,6 +39,7 @@ DECL|hci_cmd_handle|function|struct net_buf *hci_cmd_handle(struct net_buf *cmd)
 DECL|hci_evt_encode|function|void hci_evt_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_get_class|function|s8_t hci_get_class(struct radio_pdu_node_rx *node_rx)
 DECL|hci_hbuf_acked|variable|hci_hbuf_acked
+DECL|hci_hbuf_pend|variable|hci_hbuf_pend
 DECL|hci_hbuf_sent|variable|hci_hbuf_sent
 DECL|hci_hbuf_total|variable|hci_hbuf_total
 DECL|hci_init|function|void hci_init(struct k_poll_signal *signal_host_buf)
