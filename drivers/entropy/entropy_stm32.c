@@ -13,4 +13,3 @@ DECL|entropy_stm32_rng_reset|function|static void entropy_stm32_rng_reset(RNG_Ty
 DECL|entropy_stm32_wait_ready|function|static int entropy_stm32_wait_ready(RNG_TypeDef *rng)
 DECL|pclken|member|struct stm32_pclken pclken;
 DECL|rng|member|RNG_TypeDef *rng;
-DECL|sys_rand32_get|function|u32_t sys_rand32_get(void)
