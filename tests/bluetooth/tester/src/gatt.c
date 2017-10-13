@@ -9,6 +9,7 @@ DECL|GATT_VALUE_READ_AUTHOR_FLAG|enumerator|GATT_VALUE_READ_AUTHOR_FLAG,
 DECL|GATT_VALUE_WRITE_AUTHOR_FLAG|enumerator|GATT_VALUE_WRITE_AUTHOR_FLAG,
 DECL|LAST_DB_ATTR|macro|LAST_DB_ATTR
 DECL|MAX_BUFFER_SIZE|macro|MAX_BUFFER_SIZE
+DECL|MAX_UUID_LEN|macro|MAX_UUID_LEN
 DECL|NEXT_DB_ATTR|macro|NEXT_DB_ATTR
 DECL|SERVER_BUF_SIZE|macro|SERVER_BUF_SIZE
 DECL|SERVER_MAX_ATTRIBUTES|macro|SERVER_MAX_ATTRIBUTES
@@ -29,6 +30,7 @@ DECL|attr_count|variable|attr_count
 DECL|attr_value_changed_ev|function|static void attr_value_changed_ev(u16_t handle, const u8_t *value, u16_t len)
 DECL|btp2bt_uuid|function|static u8_t btp2bt_uuid(const u8_t *uuid, u8_t len, struct bt_uuid *bt_uuid)
 DECL|btp_opcode|variable|btp_opcode
+DECL|buf|member|struct net_buf_simple *buf;
 DECL|buf|member|u8_t buf[MAX_BUFFER_SIZE];
 DECL|ccc_added|variable|ccc_added
 DECL|ccc_cfg_changed|function|static void ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
@@ -37,6 +39,7 @@ DECL|ccc_value|variable|ccc_value
 DECL|ccc|variable|ccc
 DECL|char_id|member|u16_t char_id;
 DECL|config_subscription|function|static void config_subscription(u8_t *data, u16_t len, u16_t op)
+DECL|count|member|u8_t count;
 DECL|data|member|u8_t *data;
 DECL|desc_id|member|u16_t desc_id;
 DECL|disable_subscription|function|static int disable_subscription(struct bt_conn *conn, u16_t ccc_handle)
@@ -66,6 +69,9 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
+DECL|get_attrs_foreach_data|struct|struct get_attrs_foreach_data {
+DECL|get_attrs_rp|function|static u8_t get_attrs_rp(const struct bt_gatt_attr *attr, void *user_data)
+DECL|get_attrs|function|static void get_attrs(u8_t *data, u16_t len)
 DECL|get_base_chrc|function|static struct bt_gatt_attr *get_base_chrc(struct bt_gatt_attr *attr)
 DECL|indicate_cb|function|static void indicate_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr,u8_t err)
 DECL|indicate_params|variable|indicate_params
@@ -105,6 +111,7 @@ DECL|u128|member|struct bt_uuid_128 u128;
 DECL|u16|member|struct bt_uuid_16 u16;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
+DECL|uuid|member|struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid uuid;
 DECL|uuid|union|union uuid {
 DECL|uuid|variable|uuid

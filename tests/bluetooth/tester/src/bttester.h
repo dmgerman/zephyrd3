@@ -1,3 +1,4 @@
+DECL|BTP_DATA_MAX_SIZE|macro|BTP_DATA_MAX_SIZE
 DECL|BTP_INDEX_NONE|macro|BTP_INDEX_NONE
 DECL|BTP_MTU|macro|BTP_MTU
 DECL|BTP_SERVICE_ID_CORE|macro|BTP_SERVICE_ID_CORE
@@ -87,6 +88,7 @@ DECL|GATT_EV_ATTR_VALUE_CHANGED|macro|GATT_EV_ATTR_VALUE_CHANGED
 DECL|GATT_EV_NOTIFICATION|macro|GATT_EV_NOTIFICATION
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
 DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
+DECL|GATT_GET_ATTRIBUTES|macro|GATT_GET_ATTRIBUTES
 DECL|GATT_READ_LONG|macro|GATT_READ_LONG
 DECL|GATT_READ_MULTIPLE|macro|GATT_READ_MULTIPLE
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
@@ -114,6 +116,9 @@ DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -267,6 +272,8 @@ DECL|adv_data|member|u8_t adv_data[0];
 DECL|att_response|member|u8_t att_response;
 DECL|attr_id|member|u16_t attr_id;
 DECL|attr_id|member|u16_t attr_id;
+DECL|attrs_count|member|u8_t attrs_count;
+DECL|attrs|member|u8_t attrs[0];
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|ccc_handle|member|u16_t ccc_handle;
@@ -338,6 +345,7 @@ DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
+DECL|end_handle|member|u16_t end_handle;
 DECL|fast_connectable|member|u8_t fast_connectable;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
@@ -384,6 +392,7 @@ DECL|gatt_add_included_service_rp|struct|struct gatt_add_included_service_rp {
 DECL|gatt_add_service_cmd|struct|struct gatt_add_service_cmd {
 DECL|gatt_add_service_rp|struct|struct gatt_add_service_rp {
 DECL|gatt_attr_value_changed_ev|struct|struct gatt_attr_value_changed_ev {
+DECL|gatt_attr|struct|struct gatt_attr {
 DECL|gatt_cfg_notify_cmd|struct|struct gatt_cfg_notify_cmd {
 DECL|gatt_characteristic|struct|struct gatt_characteristic {
 DECL|gatt_descriptor|struct|struct gatt_descriptor {
@@ -396,6 +405,8 @@ DECL|gatt_disc_prim_uuid_cmd|struct|struct gatt_disc_prim_uuid_cmd {
 DECL|gatt_disc_prim_uuid_rp|struct|struct gatt_disc_prim_uuid_rp {
 DECL|gatt_find_included_cmd|struct|struct gatt_find_included_cmd {
 DECL|gatt_find_included_rp|struct|struct gatt_find_included_rp {
+DECL|gatt_get_attributes_cmd|struct|struct gatt_get_attributes_cmd {
+DECL|gatt_get_attributes_rp|struct|struct gatt_get_attributes_rp {
 DECL|gatt_included|struct|struct gatt_included {
 DECL|gatt_notification_ev|struct|struct gatt_notification_ev {
 DECL|gatt_read_cmd|struct|struct gatt_read_cmd {
@@ -413,6 +424,7 @@ DECL|gatt_write_long_cmd|struct|struct gatt_write_long_cmd {
 DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
 DECL|handles_count|member|u8_t handles_count;
 DECL|handles|member|u16_t handles[0];
+DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
@@ -455,6 +467,7 @@ DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
 DECL|permissions|member|u8_t permissions;
 DECL|permissions|member|u8_t permissions;
+DECL|permission|member|u8_t permission;
 DECL|powered|member|u8_t powered;
 DECL|properties|member|u8_t properties;
 DECL|properties|member|u8_t properties;
@@ -479,6 +492,7 @@ DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
+DECL|start_handle|member|u16_t start_handle;
 DECL|supported_settings|member|u32_t supported_settings;
 DECL|svc_id|member|u16_t svc_id;
 DECL|svc_id|member|u16_t svc_id;
@@ -486,8 +500,12 @@ DECL|svc_id|member|u16_t svc_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(u8_t *addr, unsigned int bit)
 DECL|tester_test_bit|function|static inline u8_t tester_test_bit(const u8_t *addr, unsigned int bit)
 DECL|transport|member|u8_t transport;
+DECL|type_length|member|u8_t type_length;
+DECL|type_length|member|u8_t type_length;
 DECL|type|member|u8_t type;
 DECL|type|member|u8_t type;
+DECL|type|member|u8_t type[0];
+DECL|type|member|u8_t type[0];
 DECL|uuid_length|member|u8_t uuid_length;
 DECL|uuid_length|member|u8_t uuid_length;
 DECL|uuid_length|member|u8_t uuid_length;
