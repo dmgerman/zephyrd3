@@ -1,5 +1,5 @@
-DECL|_SYSCALL_HANDLER0|function|_SYSCALL_HANDLER0(k_uptime_get_32)
-DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_uptime_get, ret_p)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_uptime_get, ret_p)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_uptime_get_32)
 DECL|_handling_timeouts|variable|_handling_timeouts
 DECL|_impl_k_uptime_get_32|function|u32_t _impl_k_uptime_get_32(void)
 DECL|_impl_k_uptime_get|function|s64_t _impl_k_uptime_get(void)

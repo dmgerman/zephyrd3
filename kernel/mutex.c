@@ -1,7 +1,7 @@
 DECL|RECORD_CONFLICT|macro|RECORD_CONFLICT
 DECL|RECORD_STATE_CHANGE|macro|RECORD_STATE_CHANGE
-DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_mutex_init, mutex)
-DECL|_SYSCALL_HANDLER2|function|_SYSCALL_HANDLER2(k_mutex_lock, mutex, timeout)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_mutex_init, mutex)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_mutex_lock, mutex, timeout)
 DECL|_impl_k_mutex_init|function|void _impl_k_mutex_init(struct k_mutex *mutex)
 DECL|_impl_k_mutex_lock|function|int _impl_k_mutex_lock(struct k_mutex *mutex, s32_t timeout)
 DECL|_impl_k_mutex_unlock|function|void _impl_k_mutex_unlock(struct k_mutex *mutex)

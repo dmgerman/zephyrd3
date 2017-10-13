@@ -1,5 +1,5 @@
 DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
-DECL|_SYSCALL_HANDLER1|function|_SYSCALL_HANDLER1(k_thread_custom_data_set, data)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_thread_custom_data_set, data)
 DECL|_check_stack_sentinel|function|void _check_stack_sentinel(void)
 DECL|_impl_k_thread_cancel|function|int _impl_k_thread_cancel(k_tid_t tid)
 DECL|_impl_k_thread_custom_data_get|function|void *_impl_k_thread_custom_data_get(void)
