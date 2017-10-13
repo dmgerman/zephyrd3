@@ -23,6 +23,8 @@ DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(k_thread_entry_t en
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
 DECL|_thread_monitor_exit|function|void _thread_monitor_exit(struct k_thread *thread)
+DECL|free_thread_index|function|static void free_thread_index(int id)
+DECL|get_next_thread_index|function|static int get_next_thread_index(void)
 DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_thread_data *thread_data, u32_t groups)
 DECL|k_busy_wait|function|void k_busy_wait(u32_t usec_to_wait)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)
@@ -30,5 +32,4 @@ DECL|k_thread_create|function|k_tid_t k_thread_create(struct k_thread *new_threa
 DECL|k_thread_custom_data_get|variable|k_thread_custom_data_get
 DECL|k_thread_user_mode_enter|function|FUNC_NORETURN void k_thread_user_mode_enter(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
-DECL|thread_index_get|function|static unsigned int thread_index_get(void)
-DECL|thread_index|variable|thread_index
+DECL|thread_count|variable|thread_count
