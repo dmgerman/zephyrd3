@@ -72,6 +72,7 @@ DECL|K_OBJ_SEM|enumerator|K_OBJ_SEM,
 DECL|K_OBJ_STACK|enumerator|K_OBJ_STACK,
 DECL|K_OBJ_THREAD|enumerator|K_OBJ_THREAD,
 DECL|K_OBJ_TIMER|enumerator|K_OBJ_TIMER,
+DECL|K_OBJ__THREAD_STACK_ELEMENT|enumerator|K_OBJ__THREAD_STACK_ELEMENT,
 DECL|K_PIPE_DEFINE|macro|K_PIPE_DEFINE
 DECL|K_PIPE_INITIALIZER|macro|K_PIPE_INITIALIZER
 DECL|K_POLL_EVENT_INITIALIZER|macro|K_POLL_EVENT_INITIALIZER
@@ -237,6 +238,7 @@ DECL|count|member|unsigned int count;
 DECL|custom_data|member|void *custom_data;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|char data;
+DECL|data|member|u32_t data;
 DECL|data|member|void *data;
 DECL|delete|function|inline void operator delete(void *ptr)
 DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
@@ -400,6 +402,7 @@ DECL|size|member|size_t size; /* Buffer size */
 DECL|size|member|u32_t size;
 DECL|size|member|u32_t size;
 DECL|stack_info|member|struct _thread_stack_info stack_info;
+DECL|stack_obj|member|k_thread_stack_t stack_obj;
 DECL|start|member|u32_t start;
 DECL|start|member|u32_t start;
 DECL|state|member|u32_t state:_POLL_NUM_STATES;
