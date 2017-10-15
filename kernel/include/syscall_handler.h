@@ -1,3 +1,6 @@
+DECL|_OBJ_INIT_ANY|enumerator|_OBJ_INIT_ANY = 1
+DECL|_OBJ_INIT_FALSE|enumerator|_OBJ_INIT_FALSE = -1,
+DECL|_OBJ_INIT_TRUE|enumerator|_OBJ_INIT_TRUE = 0,
 DECL|_SYSCALL_CONCAT|macro|_SYSCALL_CONCAT
 DECL|_SYSCALL_HANDLER0_SIMPLE_VOID|macro|_SYSCALL_HANDLER0_SIMPLE_VOID
 DECL|_SYSCALL_HANDLER0_SIMPLE|macro|_SYSCALL_HANDLER0_SIMPLE
@@ -13,6 +16,7 @@ DECL|_SYSCALL_MEMORY_WRITE|macro|_SYSCALL_MEMORY_WRITE
 DECL|_SYSCALL_MEMORY|macro|_SYSCALL_MEMORY
 DECL|_SYSCALL_NARG|macro|_SYSCALL_NARG
 DECL|_SYSCALL_OBJ_INIT|macro|_SYSCALL_OBJ_INIT
+DECL|_SYSCALL_OBJ_NEVER_INIT|macro|_SYSCALL_OBJ_NEVER_INIT
 DECL|_SYSCALL_OBJ|macro|_SYSCALL_OBJ
 DECL|_SYSCALL_VERIFY_MSG|macro|_SYSCALL_VERIFY_MSG
 DECL|_SYSCALL_VERIFY|macro|_SYSCALL_VERIFY
@@ -29,5 +33,6 @@ DECL|__SYSCALL_HANDLER6|macro|__SYSCALL_HANDLER6
 DECL|__SYSCALL_NARG|macro|__SYSCALL_NARG
 DECL|__SYSCALL_RSEQ_N|macro|__SYSCALL_RSEQ_N
 DECL|___SYSCALL_CONCAT|macro|___SYSCALL_CONCAT
-DECL|_obj_validation_check|function|static inline int _obj_validation_check(void *obj, enum k_objects otype,int init)
+DECL|_obj_init_check|enum|enum _obj_init_check {
+DECL|_obj_validation_check|function|static inline int _obj_validation_check(struct _k_object *ko,void *obj, enum k_objects otype, enum _obj_init_check init)
 DECL|_wordlist_cb_func_t|typedef|typedef void (*_wordlist_cb_func_t)(struct _k_object *ko, void *context);
