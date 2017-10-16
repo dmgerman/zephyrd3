@@ -15,17 +15,20 @@ DECL|HAL_PCD_ResetCallback|function|void HAL_PCD_ResetCallback(PCD_HandleTypeDef
 DECL|HAL_PCD_ResumeCallback|function|void HAL_PCD_ResumeCallback(PCD_HandleTypeDef *hpcd)
 DECL|HAL_PCD_SetupStageCallback|function|void HAL_PCD_SetupStageCallback(PCD_HandleTypeDef *hpcd)
 DECL|HAL_PCD_SuspendCallback|function|void HAL_PCD_SuspendCallback(PCD_HandleTypeDef *hpcd)
+DECL|NUM_BIDIR_EP|macro|NUM_BIDIR_EP
+DECL|NUM_IN_EP|macro|NUM_IN_EP
+DECL|NUM_OUT_EP|macro|NUM_OUT_EP
 DECL|SETUP_SIZE|macro|SETUP_SIZE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__legacy_in_cb|function|static void __legacy_in_cb(u8_t ep, int status, size_t tsize)
 DECL|__legacy_out_cb|function|static void __legacy_out_cb(u8_t ep, int status, size_t tsize)
 DECL|cb|member|usb_dc_ep_callback cb; /** Endpoint callback function */
-DECL|ep_buf|member|u8_t ep_buf[CONFIG_USB_DC_STM32_EP_NUM][USB_OTG_FS_MAX_PACKET_SIZE];
+DECL|ep_buf|member|u8_t ep_buf[NUM_OUT_EP][USB_OTG_FS_MAX_PACKET_SIZE];
 DECL|ep_mps|member|u16_t ep_mps; /** Endpoint max packet size */
 DECL|ep_stalled|member|u8_t ep_stalled; /** Endpoint stall flag */
 DECL|ep_type|member|u8_t ep_type; /** Endpoint type (STM32 HAL enum) */
-DECL|in_ep_state|member|struct usb_dc_stm32_ep_state in_ep_state[CONFIG_USB_DC_STM32_EP_NUM];
-DECL|out_ep_state|member|struct usb_dc_stm32_ep_state out_ep_state[CONFIG_USB_DC_STM32_EP_NUM];
+DECL|in_ep_state|member|struct usb_dc_stm32_ep_state in_ep_state[NUM_IN_EP];
+DECL|out_ep_state|member|struct usb_dc_stm32_ep_state out_ep_state[NUM_OUT_EP];
 DECL|pcd|member|PCD_HandleTypeDef pcd; /* Storage for the HAL_PCD api */
 DECL|read_count|member|u32_t read_count; /** Number of bytes in read buffer */
 DECL|read_offset|member|u32_t read_offset; /** Current offset in read buffer */
