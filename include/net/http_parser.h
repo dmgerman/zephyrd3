@@ -80,19 +80,9 @@ DECL|HTTP_UNBIND|enumerator|HTTP_UNBIND = 18,
 DECL|HTTP_UNLINK|enumerator|HTTP_UNLINK = 32
 DECL|HTTP_UNLOCK|enumerator|HTTP_UNLOCK = 15,
 DECL|HTTP_UNSUBSCRIBE|enumerator|HTTP_UNSUBSCRIBE = 27,
-DECL|UF_FRAGMENT|enumerator|, UF_FRAGMENT = 5
-DECL|UF_HOST|enumerator|, UF_HOST = 1
-DECL|UF_MAX|enumerator|, UF_MAX = 7
-DECL|UF_PATH|enumerator|, UF_PATH = 3
-DECL|UF_PORT|enumerator|, UF_PORT = 2
-DECL|UF_QUERY|enumerator|, UF_QUERY = 4
-DECL|UF_SCHEMA|enumerator|UF_SCHEMA = 0
-DECL|UF_USERINFO|enumerator|, UF_USERINFO = 6
 DECL|_HTTP_PARSER_H_|macro|_HTTP_PARSER_H_
 DECL|content_length|member|u64_t content_length; /* # bytes in body (0 if no Content-Length
 DECL|data|member|void *data; /* A pointer to get hook to the "connection" or "socket"
-DECL|field_data|member|} field_data[UF_MAX];
-DECL|field_set|member|u16_t field_set; /* Bitmask of (1 << UF_*) values */
 DECL|flags|enum|enum flags {
 DECL|flags|member|unsigned int flags : 8; /* F_xxx values from 'flags' enum;
 DECL|header_state|member|unsigned int header_state : 7; /* enum header_state from http_parser.c
@@ -105,15 +95,11 @@ DECL|http_method|enum|enum http_method {
 DECL|http_minor|member|unsigned short http_minor;
 DECL|http_parser_settings|struct|struct http_parser_settings {
 DECL|http_parser_type|enum|enum http_parser_type { HTTP_REQUEST, HTTP_RESPONSE, HTTP_BOTH };
-DECL|http_parser_url_fields|enum|enum http_parser_url_fields {
-DECL|http_parser_url|struct|struct http_parser_url {
 DECL|http_parser|struct|struct http_parser {
 DECL|index|member|unsigned int index : 7; /* index into current matcher */
 DECL|lenient_http_headers|member|unsigned int lenient_http_headers : 1;
-DECL|len|member|u16_t len; /* Length of run in buffer */
 DECL|method|member|unsigned int method : 8; /* requests only */
 DECL|nread|member|u32_t nread; /* # bytes read in various scenarios */
-DECL|off|member|u16_t off; /* Offset into buffer in which field
 DECL|on_body|member|http_data_cb on_body;
 DECL|on_chunk_complete|member|http_cb on_chunk_complete;
 DECL|on_chunk_header|member|http_cb on_chunk_header;
@@ -124,7 +110,6 @@ DECL|on_message_begin|member|http_cb on_message_begin;
 DECL|on_message_complete|member|http_cb on_message_complete;
 DECL|on_status|member|http_data_cb on_status;
 DECL|on_url|member|http_data_cb on_url;
-DECL|port|member|u16_t port; /* Converted UF_PORT string */
 DECL|s16_t|typedef|typedef __int16 s16_t;
 DECL|s32_t|typedef|typedef __int32 s32_t;
 DECL|s64_t|typedef|typedef __int64 s64_t;
