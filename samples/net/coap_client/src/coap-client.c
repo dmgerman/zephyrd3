@@ -14,5 +14,6 @@ DECL|replies|variable|replies
 DECL|resource_reply_cb|function|static int resource_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|retransmit_work|variable|retransmit_work
+DECL|strip_headers|function|static void strip_headers(struct net_pkt *pkt)
 DECL|test_path|variable|test_path
 DECL|udp_receive|function|static void udp_receive(struct net_context *context,struct net_pkt *pkt, int status, void *user_data)
