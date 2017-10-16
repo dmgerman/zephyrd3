@@ -104,10 +104,11 @@ DECL|K_STACK_INITIALIZER|macro|K_STACK_INITIALIZER
 DECL|K_THREAD_DEFINE|macro|K_THREAD_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
-DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t sym)
-DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t sym)
+DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t *sym)
+DECL|K_THREAD_STACK_BUFFER|function|static inline char *K_THREAD_STACK_BUFFER(k_thread_stack_t *sym)
 DECL|K_THREAD_STACK_DEFINE|macro|K_THREAD_STACK_DEFINE
 DECL|K_THREAD_STACK_DEFINE|macro|K_THREAD_STACK_DEFINE
+DECL|K_THREAD_STACK_EXTERN|macro|K_THREAD_STACK_EXTERN
 DECL|K_THREAD_STACK_MEMBER|macro|K_THREAD_STACK_MEMBER
 DECL|K_THREAD_STACK_MEMBER|macro|K_THREAD_STACK_MEMBER
 DECL|K_THREAD_STACK_SIZEOF|macro|K_THREAD_STACK_SIZEOF
@@ -271,7 +272,7 @@ DECL|init_p2|member|void *init_p2;
 DECL|init_p3|member|void *init_p3;
 DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
-DECL|init_stack|member|k_thread_stack_t init_stack;
+DECL|init_stack|member|k_thread_stack_t *init_stack;
 DECL|init_thread|member|struct k_thread *init_thread;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
@@ -328,7 +329,7 @@ DECL|k_queue|struct|struct k_queue {
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
-DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element *k_thread_stack_t;
+DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element k_thread_stack_t;
 DECL|k_thread|struct|struct k_thread {
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
@@ -402,7 +403,7 @@ DECL|size|member|size_t size; /* Buffer size */
 DECL|size|member|u32_t size;
 DECL|size|member|u32_t size;
 DECL|stack_info|member|struct _thread_stack_info stack_info;
-DECL|stack_obj|member|k_thread_stack_t stack_obj;
+DECL|stack_obj|member|k_thread_stack_t *stack_obj;
 DECL|start|member|u32_t start;
 DECL|start|member|u32_t start;
 DECL|state|member|u32_t state:_POLL_NUM_STATES;
