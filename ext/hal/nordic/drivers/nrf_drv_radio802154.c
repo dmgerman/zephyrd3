@@ -56,7 +56,6 @@ DECL|SRC_ADDR_TYPE_SHORT|macro|SRC_ADDR_TYPE_SHORT
 DECL|TIFS_ACK_US|macro|TIFS_ACK_US
 DECL|UNUSED_PENDING_EXTENDED_ADDRESS|macro|UNUSED_PENDING_EXTENDED_ADDRESS
 DECL|UNUSED_PENDING_SHORT_ADDRESS|macro|UNUSED_PENDING_SHORT_ADDRESS
-DECL|__IN_SECTION|macro|__IN_SECTION
 DECL|ack_is_requested|function|static inline bool ack_is_requested(const uint8_t * p_frame)
 DECL|ack_pending_bit_set|function|static inline void ack_pending_bit_set(void)
 DECL|ack_prepare|function|static inline void ack_prepare(void)
@@ -74,6 +73,7 @@ DECL|free_rx_buffer_find|function|static rx_buffer_t * free_rx_buffer_find(void)
 DECL|free|member|bool free; // If this buffer is free or contains a frame.
 DECL|irq_init|function|static void irq_init(void)
 DECL|last_ed_result_get|function|static inline int8_t last_ed_result_get(void)
+DECL|m_ack_psdu|variable|m_ack_psdu
 DECL|m_extended_addr|variable|m_extended_addr
 DECL|m_flags|variable|m_flags
 DECL|m_mutex|variable|m_mutex
@@ -81,6 +81,7 @@ DECL|m_pan_id|variable|m_pan_id
 DECL|m_pending_extended|variable|m_pending_extended
 DECL|m_pending_short|variable|m_pending_short
 DECL|m_promiscuous|variable|m_promiscuous
+DECL|m_receive_buffers|variable|m_receive_buffers
 DECL|m_setting_pending_bit_enabled|variable|m_setting_pending_bit_enabled
 DECL|m_short_addr|variable|m_short_addr
 DECL|m_state|variable|m_state
