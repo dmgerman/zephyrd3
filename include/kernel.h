@@ -101,6 +101,8 @@ DECL|K_SEM_INITIALIZER|macro|K_SEM_INITIALIZER
 DECL|K_SSE_REGS|macro|K_SSE_REGS
 DECL|K_STACK_DEFINE|macro|K_STACK_DEFINE
 DECL|K_STACK_INITIALIZER|macro|K_STACK_INITIALIZER
+DECL|K_THREAD_ACCESS_GRANT|macro|K_THREAD_ACCESS_GRANT
+DECL|K_THREAD_ACCESS_GRANT|macro|K_THREAD_ACCESS_GRANT
 DECL|K_THREAD_DEFINE|macro|K_THREAD_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
 DECL|K_THREAD_STACK_ARRAY_DEFINE|macro|K_THREAD_STACK_ARRAY_DEFINE
@@ -193,6 +195,7 @@ DECL|_impl_k_timer_user_data_set|function|static inline void _impl_k_timer_user_
 DECL|_init_static_threads|macro|_init_static_threads
 DECL|_k_except_reason|macro|_k_except_reason
 DECL|_k_except_reason|macro|_k_except_reason
+DECL|_k_object_assignment|struct|struct _k_object_assignment {
 DECL|_k_object_init|function|static inline void _k_object_init(void *obj)
 DECL|_k_object|struct|struct _k_object {
 DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
@@ -368,6 +371,7 @@ DECL|node|member|sys_dnode_t node;
 DECL|num_blocks|member|u32_t num_blocks;
 DECL|num_partitions|member|u32_t num_partitions;
 DECL|num_used|member|u32_t num_used;
+DECL|objects|member|void * const *objects;
 DECL|obj|member|void *obj;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
@@ -413,6 +417,7 @@ DECL|swap_data|member|void *swap_data;
 DECL|tag|member|u32_t tag:8;
 DECL|tcs|macro|tcs
 DECL|thread_state|member|u8_t thread_state;
+DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread *thread;
 DECL|thread|member|struct k_thread thread;
