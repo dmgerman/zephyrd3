@@ -31,6 +31,7 @@ DECL|grant_static_access|function|static void grant_static_access(void)
 DECL|is_in_any_group|function|static inline int is_in_any_group(struct _static_thread_data *thread_data, u32_t groups)
 DECL|k_busy_wait|function|void k_busy_wait(u32_t usec_to_wait)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)
+DECL|k_thread_access_grant|function|void k_thread_access_grant(struct k_thread *thread, ...)
 DECL|k_thread_custom_data_get|variable|k_thread_custom_data_get
 DECL|k_thread_user_mode_enter|function|FUNC_NORETURN void k_thread_user_mode_enter(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
