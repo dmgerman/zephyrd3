@@ -92,6 +92,7 @@ DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(st
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_thread|function|static void hci_rx_thread(void)
 DECL|hci_tx_thread|function|static void hci_tx_thread(void *p1, void *p2, void *p3)
+DECL|hci_vs_init|function|static void hci_vs_init(void)
 DECL|id|member|u8_t id;
 DECL|init_work|function|static void init_work(struct k_work *work)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
@@ -178,4 +179,7 @@ DECL|valid_adv_param|function|static bool valid_adv_param(const struct bt_le_adv
 DECL|valid_br_discov_param|function|static bool valid_br_discov_param(const struct bt_br_discovery_param *param, size_t num_results)
 DECL|valid_le_scan_param|function|static bool valid_le_scan_param(const struct bt_le_scan_param *param)
 DECL|ver_str|function|static const char *ver_str(u8_t ver)
+DECL|vs_fw_variant|function|static const char *vs_fw_variant(u8_t variant)
+DECL|vs_hw_platform|function|static const char *vs_hw_platform(u16_t platform)
+DECL|vs_hw_variant|function|static const char *vs_hw_variant(u16_t platform, u16_t variant)
 DECL|write_scan_enable|function|static int write_scan_enable(u8_t scan)

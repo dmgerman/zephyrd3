@@ -13,6 +13,8 @@ DECL|BT_DEV_PUB_KEY_BUSY|enumerator|BT_DEV_PUB_KEY_BUSY,
 DECL|BT_DEV_READY|enumerator|BT_DEV_READY,
 DECL|BT_DEV_RPA_VALID|enumerator|BT_DEV_RPA_VALID,
 DECL|BT_DEV_SCANNING|enumerator|BT_DEV_SCANNING,
+DECL|BT_DEV_VS_CMDS_MAX|macro|BT_DEV_VS_CMDS_MAX
+DECL|BT_DEV_VS_FEAT_MAX|macro|BT_DEV_VS_FEAT_MAX
 DECL|BT_EVENT_CMD_TX|enumerator|BT_EVENT_CMD_TX,
 DECL|BT_EVENT_CONN_TX_NOTIFY|enumerator|BT_EVENT_CONN_TX_NOTIFY,
 DECL|BT_EVENT_CONN_TX_QUEUE|enumerator|BT_EVENT_CONN_TX_QUEUE,
@@ -51,3 +53,5 @@ DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
 DECL|states|member|u64_t states;
 DECL|supported_commands|member|u8_t supported_commands[64];
+DECL|vs_commands|member|u8_t vs_commands[BT_DEV_VS_CMDS_MAX];
+DECL|vs_features|member|u8_t vs_features[BT_DEV_VS_FEAT_MAX];
