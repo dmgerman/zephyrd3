@@ -13,7 +13,7 @@ DECL|hci_driver_send|function|static int hci_driver_send(struct net_buf *buf)
 DECL|prio_recv_thread_data|variable|prio_recv_thread_data
 DECL|prio_recv_thread|function|static void prio_recv_thread(void *p1, void *p2, void *p3)
 DECL|prio_ts|variable|prio_ts
-DECL|process_hbuf|function|static inline struct net_buf *process_hbuf(void)
+DECL|process_hbuf|function|static inline struct net_buf *process_hbuf(struct radio_pdu_node_rx *n)
 DECL|process_node|function|static inline struct net_buf *process_node(struct radio_pdu_node_rx *node_rx)
 DECL|recv_thread_data|variable|recv_thread_data
 DECL|recv_thread|function|static void recv_thread(void *p1, void *p2, void *p3)
