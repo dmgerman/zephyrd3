@@ -16,7 +16,7 @@ DECL|attention_off|function|static void attention_off(struct bt_mesh_model *mode
 DECL|attention_on|function|static void attention_on(struct bt_mesh_model *model)
 DECL|board_button_1_pressed|function|void board_button_1_pressed(void)
 DECL|board_play|function|void board_play(const char *str)
-DECL|board_toggle_relay|function|bool board_toggle_relay(void)
+DECL|board_set_target|function|u16_t board_set_target(void)
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
@@ -33,6 +33,7 @@ DECL|net_idx|variable|net_idx
 DECL|net_key|variable|net_key
 DECL|root_models|variable|root_models
 DECL|seq|variable|seq
+DECL|target|variable|target
 DECL|tune_sem|variable|tune_sem
 DECL|tune_str|variable|tune_str
 DECL|vnd_button_pressed|function|static void vnd_button_pressed(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
