@@ -1,4 +1,3 @@
-DECL|COAP_MARKER|macro|COAP_MARKER
 DECL|DISCOVER_PREFACE|macro|DISCOVER_PREFACE
 DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
@@ -20,13 +19,11 @@ DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|block1_contexts|variable|block1_contexts
 DECL|block_context|struct|struct block_context {
 DECL|coap_options_to_path|function|static int coap_options_to_path(struct coap_option *opt, int options_count,struct lwm2m_obj_path *path)
-DECL|coap_packet_get_payload_ptr|function|u8_t *coap_packet_get_payload_ptr(struct coap_packet *cpkt, u16_t *len, bool start_marker)
-DECL|coap_packet_set_used|function|int coap_packet_set_used(struct coap_packet *cpkt, u16_t len)
 DECL|counter|member|u32_t counter;
 DECL|ctx|member|struct coap_block_context ctx;
 DECL|ctx|member|struct lwm2m_ctx *ctx;
 DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context)
-DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
+DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t content_format)
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
 DECL|engine_add_observer|function|static int engine_add_observer(struct lwm2m_message *msg, const u8_t *token, u8_t tkl, struct lwm2m_obj_path *path, u16_t format)
 DECL|engine_clear_context|function|static void engine_clear_context(struct lwm2m_engine_context *context)
@@ -48,7 +45,6 @@ DECL|format|member|u16_t format;
 DECL|free_block_ctx|function|static void free_block_ctx(struct block_context *ctx)
 DECL|generate_notify_message|function|static int generate_notify_message(struct observe_node *obs, bool manual_trigger)
 DECL|get_block_ctx|function|get_block_ctx(const u8_t *token, u8_t tkl, struct block_context **ctx)
-DECL|get_coap_packet_len|function|static int get_coap_packet_len(struct net_pkt *pkt)
 DECL|get_engine_obj_inst|function|static struct lwm2m_engine_obj_inst *get_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|get_engine_obj|function|static struct lwm2m_engine_obj *get_engine_obj(int obj_id)
 DECL|get_option_int|function|static int get_option_int(const struct coap_packet *cpkt, u8_t opt)
@@ -124,7 +120,6 @@ DECL|node|member|sys_snode_t node;
 DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|observe_node_data|variable|observe_node_data
 DECL|observe_node|struct|struct observe_node {
-DECL|outbuf_init_check|function|static void outbuf_init_check(struct lwm2m_output_context *out)
 DECL|path|member|struct lwm2m_obj_path path;
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)

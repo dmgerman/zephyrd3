@@ -7,10 +7,12 @@ DECL|get_float64fix|function|static size_t get_float64fix(struct lwm2m_input_con
 DECL|get_s32|function|static size_t get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|get_s64|function|static size_t get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|get_string|function|static size_t get_string(struct lwm2m_input_context *in, u8_t *value, size_t buflen)
-DECL|plain_text_put_float32fix|function|size_t plain_text_put_float32fix(u8_t *outbuf, size_t outlen, float32_value_t *value)
-DECL|plain_text_put_float64fix|function|size_t plain_text_put_float64fix(u8_t *outbuf, size_t outlen, float64_value_t *value)
+DECL|pkt_length_left|function|static int pkt_length_left(struct lwm2m_input_context *in)
+DECL|plain_text_put_format|function|size_t plain_text_put_format(struct lwm2m_output_context *out, const char *format, ...)
+DECL|plain_text_read_number|function|static size_t plain_text_read_number(struct lwm2m_input_context *in, s64_t *value1, s64_t *value2, bool accept_sign, bool accept_dot)
 DECL|plain_text_reader|variable|plain_text_reader
 DECL|plain_text_writer|variable|plain_text_writer
+DECL|pt_buffer|variable|pt_buffer
 DECL|put_bool|function|static size_t put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
 DECL|put_float32fix|function|static size_t put_float32fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float32_value_t *value)
 DECL|put_float64fix|function|static size_t put_float64fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float64_value_t *value)
