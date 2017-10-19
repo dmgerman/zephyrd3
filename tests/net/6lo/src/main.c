@@ -60,6 +60,8 @@ DECL|test_data_20|variable|test_data_20
 DECL|test_data_21|variable|test_data_21
 DECL|test_data_22|variable|test_data_22
 DECL|test_data_23|variable|test_data_23
+DECL|test_data_24|variable|test_data_24
+DECL|test_data_25|variable|test_data_25
 DECL|test_data_2|variable|test_data_2
 DECL|test_data_3|variable|test_data_3
 DECL|test_data_4|variable|test_data_4
