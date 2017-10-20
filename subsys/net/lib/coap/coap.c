@@ -1,5 +1,10 @@
 DECL|BASIC_HEADER_SIZE|macro|BASIC_HEADER_SIZE
 DECL|COAP_MARKER|macro|COAP_MARKER
+DECL|COAP_OPTION_EXT_13|macro|COAP_OPTION_EXT_13
+DECL|COAP_OPTION_EXT_14|macro|COAP_OPTION_EXT_14
+DECL|COAP_OPTION_EXT_15|macro|COAP_OPTION_EXT_15
+DECL|COAP_OPTION_EXT_269|macro|COAP_OPTION_EXT_269
+DECL|COAP_OPTION_NO_EXT|macro|COAP_OPTION_NO_EXT
 DECL|COAP_VERSION|macro|COAP_VERSION
 DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
 DECL|GET_MORE|macro|GET_MORE
@@ -12,6 +17,7 @@ DECL|SET_MORE|macro|SET_MORE
 DECL|SET_NUM|macro|SET_NUM
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|__coap_header_get_code|function|static u8_t __coap_header_get_code(const struct coap_packet *cpkt)
+DECL|check_frag_read_status|function|static int check_frag_read_status(const struct net_buf *frag, u16_t offset)
 DECL|coap_append_block1_option|function|int coap_append_block1_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
 DECL|coap_append_block2_option|function|int coap_append_block2_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
 DECL|coap_append_option_int|function|int coap_append_option_int(struct coap_packet *cpkt, u16_t code, unsigned int val)
@@ -52,13 +58,13 @@ DECL|coap_request_is_observe|function|bool coap_request_is_observe(const struct 
 DECL|coap_resource_notify|function|int coap_resource_notify(struct coap_resource *resource)
 DECL|coap_response_received|function|struct coap_reply *coap_response_received(const struct coap_packet *response, const struct sockaddr *from, struct coap_reply *replies, size_t len)
 DECL|coap_update_from_block|function|int coap_update_from_block(const struct coap_packet *cpkt, struct coap_block_context *ctx)
-DECL|decode_delta|function|static int decode_delta(u16_t num, struct option_context *context,u16_t *decoded)
+DECL|decode_delta|function|static int decode_delta(struct option_context *context, u16_t opt,u16_t *opt_ext, u16_t *hdr_len)
 DECL|delta|member|u16_t delta;
 DECL|encode_extended_option|function|static u8_t encode_extended_option(u16_t num, u8_t *opt, u16_t *ext)
 DECL|encode_option|function|static int encode_option(struct coap_packet *cpkt, u16_t code, const u8_t *value, u16_t len)
 DECL|frag|member|struct net_buf *frag;
 DECL|get_block_option|function|static int get_block_option(const struct coap_packet *cpkt, u16_t code)
-DECL|get_coap_packet_len|function|static int get_coap_packet_len(struct net_pkt *pkt)
+DECL|get_coap_packet_len|function|static u16_t get_coap_packet_len(struct net_pkt *pkt)
 DECL|get_header_len|function|static int get_header_len(struct coap_packet *cpkt)
 DECL|get_header_tkl|function|static u8_t get_header_tkl(const struct coap_packet *cpkt)
 DECL|get_observe_option|function|static int get_observe_option(const struct coap_packet *cpkt)
@@ -74,7 +80,7 @@ DECL|option_header_get_len|function|static u8_t option_header_get_len(u8_t opt)
 DECL|option_header_set_delta|function|static void option_header_set_delta(u8_t *opt, u8_t delta)
 DECL|option_header_set_len|function|static void option_header_set_len(u8_t *opt, u8_t len)
 DECL|parse_options|function|static int parse_options(const struct coap_packet *cpkt, struct coap_option *options, u8_t opt_num)
-DECL|parse_option|function|static int parse_option(const struct coap_packet *cpkt,struct option_context *context, struct coap_option *option)
+DECL|parse_option|function|static int parse_option(const struct coap_packet *cpkt,struct option_context *context, struct coap_option *option, u16_t *opt_len)
 DECL|sockaddr_equal|function|static bool sockaddr_equal(const struct sockaddr *a, const struct sockaddr *b)
 DECL|update_control_block1|function|static int update_control_block1(struct coap_block_context *ctx, int block, int size)
 DECL|update_control_block2|function|static int update_control_block2(struct coap_block_context *ctx, int block, int size)
