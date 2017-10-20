@@ -1,5 +1,3 @@
-DECL|_arch_mem_domain_destroy|function|void _arch_mem_domain_destroy(struct k_mem_domain *domain)
 DECL|_arch_mem_domain_max_partitions_get|function|int _arch_mem_domain_max_partitions_get(void)
-DECL|_arch_mem_domain_remove_partition|function|void _arch_mem_domain_remove_partition(struct k_mem_domain *domain, u32_t partition_id)
 DECL|configure_mpu_mem_domain|function|void configure_mpu_mem_domain(struct k_thread *thread)
 DECL|configure_mpu_stack_guard|function|void configure_mpu_stack_guard(struct k_thread *thread)
