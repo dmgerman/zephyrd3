@@ -82,7 +82,7 @@ DECL|do_radio_rx_fc_set|function|u8_t do_radio_rx_fc_set(u16_t handle, u8_t req,
 DECL|empty_pkt_us_get|function|static inline u32_t empty_pkt_us_get(u8_t phy)
 DECL|empty_tx_enqueue|function|static struct pdu_data *empty_tx_enqueue(struct connection *conn)
 DECL|enc_req_reused_send|function|static void enc_req_reused_send(struct connection *conn,struct radio_pdu_node_tx *node_tx)
-DECL|enc_rsp_send|function|static void enc_rsp_send(struct connection *conn)
+DECL|enc_rsp_send|function|static u8_t enc_rsp_send(struct connection *conn)
 DECL|event_active|function|static void event_active(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_adv_stop|function|void event_adv_stop(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|event_adv|function|static void event_adv(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
@@ -117,7 +117,7 @@ DECL|fc_ena|member|u8_t fc_ena;
 DECL|fc_handle|member|u16_t fc_handle[TRIPLE_BUFFER_SIZE];
 DECL|fc_req|member|u8_t volatile fc_req;
 DECL|feat_get|function|static inline u32_t feat_get(u8_t *features)
-DECL|feature_rsp_send|function|static void feature_rsp_send(struct connection *conn)
+DECL|feature_rsp_send|function|static u8_t feature_rsp_send(struct connection *conn, struct pdu_data *pdu_data_rx)
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
@@ -162,7 +162,7 @@ DECL|isr_scan_rsp_adva_matches|function|static inline bool isr_scan_rsp_adva_mat
 DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx, bool *dir_report)
 DECL|isr_scan_tgta_rpa_check|function|static inline bool isr_scan_tgta_rpa_check(struct pdu_adv *pdu, bool *dir_report)
 DECL|isr|function|static void isr(void)
-DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CTLR_PHY */ static void length_resp_send(struct connection *conn, u16_t eff_rx_octets, u16_t eff_rx_time, u16_t eff_tx_octets,
+DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, struct radio_pdu_node_tx *node_tx, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CTLR_PHY */ static void length_resp_send(struct connection *conn,
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
 DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|void *link_rx_head;
@@ -226,13 +226,13 @@ DECL|packet_tx_data_size|member|u16_t packet_tx_data_size;
 DECL|packet_tx_enqueue|function|static void packet_tx_enqueue(u8_t max)
 DECL|packet_tx_first|member|u8_t volatile packet_tx_first;
 DECL|packet_tx_last|member|u8_t packet_tx_last;
-DECL|pause_enc_rsp_send|function|static void pause_enc_rsp_send(struct connection *conn)
+DECL|pause_enc_rsp_send|function|static u8_t pause_enc_rsp_send(struct connection *conn, u8_t req)
 DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,struct radio_pdu_node_tx *node_tx)
 DECL|phy_p|member|u8_t phy_p:3;
-DECL|phy_rsp_send|function|static void phy_rsp_send(struct connection *conn)
+DECL|phy_rsp_send|function|static u8_t phy_rsp_send(struct connection *conn, struct pdu_data *pdu_data_rx)
 DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *radio_pdu_node_rx,u8_t *rx_enqueue)
 DECL|phy|member|u8_t phy:3;
-DECL|ping_resp_send|function|static void ping_resp_send(struct connection *conn)
+DECL|ping_resp_send|function|static u8_t ping_resp_send(struct connection *conn)
 DECL|pkt_release|member|struct pdu_data_q_tx *pkt_release;
 DECL|pkt_rx_data_free|member|void *pkt_rx_data_free;
 DECL|pkt_rx_data_pool|member|void *pkt_rx_data_pool;
@@ -269,7 +269,7 @@ DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_s
 DECL|radio_tx_mem_acquire|function|struct radio_pdu_node_tx *radio_tx_mem_acquire(void)
 DECL|radio_tx_mem_enqueue|function|u32_t radio_tx_mem_enqueue(u16_t handle, struct radio_pdu_node_tx *node_tx)
 DECL|radio_tx_mem_release|function|void radio_tx_mem_release(struct radio_pdu_node_tx *node_tx)
-DECL|reject_ext_ind_send|function|static void reject_ext_ind_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
+DECL|reject_ext_ind_send|function|static u8_t reject_ext_ind_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rfu|member|u8_t rfu:4;
@@ -289,7 +289,7 @@ DECL|sca|member|u8_t sca;
 DECL|sched_after_mstr_free_offset_get|function|static void sched_after_mstr_free_offset_get(u16_t conn_interval, u32_t ticks_slot, u32_t ticks_anchor, u32_t *win_offset_us)
 DECL|sched_after_mstr_free_slot_get|function|static void sched_after_mstr_free_slot_get(u8_t user_id, u32_t ticks_slot_abs, u32_t *ticks_anchor, u32_t *us_offset)
 DECL|sched_free_win_offset_calc|function|static void sched_free_win_offset_calc(struct connection *conn_curr, u8_t is_select, u32_t *ticks_to_offset_next, u16_t conn_interval, u8_t *offset_max,
-DECL|start_enc_rsp_send|function|static void start_enc_rsp_send(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
+DECL|start_enc_rsp_send|function|static u8_t start_enc_rsp_send(struct connection *conn, struct pdu_data *pdu_ctrl_tx)
 DECL|state|enum|enum state {
 DECL|state|member|enum state state;
 DECL|state|member|u8_t state:1;
@@ -314,6 +314,6 @@ DECL|ticks_window|member|u32_t ticks_window;
 DECL|tx_cmplt_get|function|static u8_t tx_cmplt_get(u16_t *handle, u8_t *first, u8_t last)
 DECL|tx_packet_set|function|static void tx_packet_set(struct connection *conn, struct pdu_data *pdu_data_tx)
 DECL|type|member|u8_t type:1;
-DECL|unknown_rsp_send|function|static void unknown_rsp_send(struct connection *conn, u8_t type)
-DECL|version_ind_send|function|static void version_ind_send(struct connection *conn)
+DECL|unknown_rsp_send|function|static u8_t unknown_rsp_send(struct connection *conn, u8_t type)
+DECL|version_ind_send|function|static u8_t version_ind_send(struct connection *conn, struct pdu_data *pdu_data_rx, u8_t *rx_enqueue)
 DECL|win_offset_us|member|u32_t win_offset_us;
