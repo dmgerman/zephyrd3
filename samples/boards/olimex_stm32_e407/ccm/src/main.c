@@ -1,0 +1,17 @@
+DECL|CCM_BSS_ARRAY_SIZE|macro|CCM_BSS_ARRAY_SIZE
+DECL|CCM_DATA_ARRAY_SIZE|macro|CCM_DATA_ARRAY_SIZE
+DECL|CCM_DATA_ARRAY_VAL|macro|CCM_DATA_ARRAY_VAL
+DECL|CCM_DATA_VAR_16_VAL|macro|CCM_DATA_VAR_16_VAL
+DECL|CCM_DATA_VAR_32_VAL|macro|CCM_DATA_VAR_32_VAL
+DECL|CCM_DATA_VAR_8_VAL|macro|CCM_DATA_VAR_8_VAL
+DECL|CCM_NOINIT_ARRAY_SIZE|macro|CCM_NOINIT_ARRAY_SIZE
+DECL|ccm_bss_array|variable|ccm_bss_array
+DECL|ccm_data_array|variable|ccm_data_array
+DECL|ccm_data_var_16|variable|ccm_data_var_16
+DECL|ccm_data_var_32|variable|ccm_data_var_32
+DECL|ccm_data_var_8|variable|ccm_data_var_8
+DECL|ccm_noinit_array|variable|ccm_noinit_array
+DECL|check_initial_var_values|function|void check_initial_var_values(void)
+DECL|main|function|void main(void)
+DECL|print_array|function|void print_array(const void *array, u32_t size)
+DECL|print_var_values|function|void print_var_values(void)
