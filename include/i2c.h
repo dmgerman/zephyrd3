@@ -20,6 +20,8 @@ DECL|I2C_SPEED_STANDARD|macro|I2C_SPEED_STANDARD
 DECL|I2C_SPEED_ULTRA|macro|I2C_SPEED_ULTRA
 DECL|__DRIVERS_I2C_H|macro|__DRIVERS_I2C_H
 DECL|__bits|struct|struct __bits {
+DECL|_impl_i2c_configure|function|static inline int _impl_i2c_configure(struct device *dev, u32_t dev_config)
+DECL|_impl_i2c_transfer|function|static inline int _impl_i2c_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)
 DECL|bits|member|} bits;
 DECL|buf|member|u8_t *buf;
 DECL|configure|member|i2c_api_configure_t configure;
@@ -35,7 +37,6 @@ DECL|i2c_burst_write16|function|static inline int i2c_burst_write16(struct devic
 DECL|i2c_burst_write_addr|function|static inline int i2c_burst_write_addr(struct device *dev, u16_t dev_addr, u8_t *start_addr, const u8_t addr_size, u8_t *buf, u8_t num_bytes)
 DECL|i2c_burst_write|function|static inline int i2c_burst_write(struct device *dev, u16_t dev_addr, u8_t start_addr, u8_t *buf, u8_t num_bytes)
 DECL|i2c_client_config|struct|struct i2c_client_config {
-DECL|i2c_configure|function|static inline int i2c_configure(struct device *dev, u32_t dev_config)
 DECL|i2c_driver_api|struct|struct i2c_driver_api {
 DECL|i2c_master|member|char *i2c_master;
 DECL|i2c_msg|struct|struct i2c_msg {
@@ -49,7 +50,6 @@ DECL|i2c_reg_update_byte|function|static inline int i2c_reg_update_byte(struct d
 DECL|i2c_reg_write16|function|static inline int i2c_reg_write16(struct device *dev, u16_t dev_addr, u16_t reg_addr, u8_t value)
 DECL|i2c_reg_write_addr|function|static inline int i2c_reg_write_addr(struct device *dev, u16_t dev_addr, u8_t *reg_addr, const u8_t addr_size, u8_t value)
 DECL|i2c_reg_write_byte|function|static inline int i2c_reg_write_byte(struct device *dev, u16_t dev_addr, u8_t reg_addr, u8_t value)
-DECL|i2c_transfer|function|static inline int i2c_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)
 DECL|i2c_write|function|static inline int i2c_write(struct device *dev, u8_t *buf, u32_t num_bytes, u16_t addr)
 DECL|is_master_device|member|u32_t is_master_device : 1;
 DECL|len|member|u32_t len;
