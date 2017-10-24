@@ -19,6 +19,13 @@ DECL|i2c2_sam_config|variable|i2c2_sam_config
 DECL|i2c2_sam_data|variable|i2c2_sam_data
 DECL|i2c2_sam_irq_config|function|static void i2c2_sam_irq_config(void)
 DECL|i2c_clk_set|function|static int i2c_clk_set(Twihs *const twihs, u32_t speed)
+DECL|i2c_sam_twihs_configure|function|static int i2c_sam_twihs_configure(struct device *dev, u32_t config)
+DECL|i2c_sam_twihs_dev_cfg|struct|struct i2c_sam_twihs_dev_cfg {
+DECL|i2c_sam_twihs_dev_data|struct|struct i2c_sam_twihs_dev_data {
+DECL|i2c_sam_twihs_driver_api|variable|i2c_sam_twihs_driver_api
+DECL|i2c_sam_twihs_initialize|function|static int i2c_sam_twihs_initialize(struct device *dev)
+DECL|i2c_sam_twihs_isr|function|static void i2c_sam_twihs_isr(void *arg)
+DECL|i2c_sam_twihs_transfer|function|static int i2c_sam_twihs_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)
 DECL|idx|member|u32_t idx;
 DECL|irq_config|member|void (*irq_config)(void);
 DECL|irq_id|member|u8_t irq_id;
@@ -35,12 +42,5 @@ DECL|read_msg_start|function|static void read_msg_start(Twihs *const twihs, stru
 DECL|regs|member|Twihs *regs;
 DECL|sem|member|struct k_sem sem;
 DECL|twihs_msg|struct|struct twihs_msg {
-DECL|twihs_sam_configure|function|static int twihs_sam_configure(struct device *dev, u32_t config)
-DECL|twihs_sam_dev_cfg|struct|struct twihs_sam_dev_cfg {
-DECL|twihs_sam_dev_data|struct|struct twihs_sam_dev_data {
-DECL|twihs_sam_driver_api|variable|twihs_sam_driver_api
-DECL|twihs_sam_initialize|function|static int twihs_sam_initialize(struct device *dev)
-DECL|twihs_sam_isr|function|static void twihs_sam_isr(void *arg)
-DECL|twihs_sam_transfer|function|static int twihs_sam_transfer(struct device *dev, struct i2c_msg *msgs, u8_t num_msgs, u16_t addr)
 DECL|twihs_sr|member|u32_t twihs_sr;
 DECL|write_msg_start|function|static void write_msg_start(Twihs *const twihs, struct twihs_msg *msg, u8_t daddr)
