@@ -41,11 +41,10 @@ DECL|friend_cred_get|function|static inline int friend_cred_get(u16_t net_idx, u
 DECL|friend_cred_get|function|static int friend_cred_get(u16_t net_idx, u16_t addr, u8_t idx, u8_t *nid, const u8_t **enc, const u8_t **priv)
 DECL|friend_cred|variable|friend_cred
 DECL|ivu_complete|function|static void ivu_complete(struct k_work *work)
-DECL|msg_cache_add|function|static void msg_cache_add(u64_t new_hash)
+DECL|msg_cache_match|function|static bool msg_cache_match(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|msg_cache_next|variable|msg_cache_next
 DECL|msg_cache|variable|msg_cache
-DECL|msg_hash|function|static u64_t msg_hash(struct net_buf_simple *pdu)
-DECL|msg_is_known|function|static bool msg_is_known(u64_t hash)
+DECL|msg_hash|function|static u64_t msg_hash(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, u8_t idx, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_find_and_decrypt|function|static int net_find_and_decrypt(const u8_t *data, size_t data_len,struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_seq|function|static inline u32_t net_seq(struct net_buf_simple *buf)

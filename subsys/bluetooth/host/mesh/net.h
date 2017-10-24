@@ -61,7 +61,6 @@ DECL|fsn|member|fsn:1; /* Friend Sequence Number */
 DECL|fsn|member|u8_t fsn:1,
 DECL|groups_changed|member|u8_t groups_changed:1, /* Friend Subscription List needs updating */
 DECL|groups|member|u16_t groups[LPN_GROUPS];
-DECL|hash|member|u64_t hash; /* Hash for the relay cache */
 DECL|identity|member|u8_t identity[16]; /* IdentityKey */
 DECL|id|member|u8_t id;
 DECL|iv_index|member|u32_t iv_index; /* Current IV Index */
