@@ -7,7 +7,7 @@ DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|VERIFY_CERTS|macro|VERIFY_CERTS
 DECL|compare_tcp_data|function|static bool compare_tcp_data(struct net_pkt *pkt, int expecting_len, int received_len)
-DECL|connect_tcp|function|static int connect_tcp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *result_buf, size_t result_buf_len, u8_t *stack, size_t stack_size)
+DECL|connect_tcp|function|static int connect_tcp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *result_buf, size_t result_buf_len, k_thread_stack_t *stack, size_t stack_size)
 DECL|connected_count|variable|connected_count
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
 DECL|data_tcp_pool|macro|data_tcp_pool
