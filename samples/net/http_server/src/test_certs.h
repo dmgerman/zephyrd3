@@ -1,5 +1,0 @@
-DECL|__TEST_CERTS_H__|macro|__TEST_CERTS_H__
-DECL|rsa_example_cert_der_len|variable|rsa_example_cert_der_len
-DECL|rsa_example_cert_der|variable|rsa_example_cert_der
-DECL|rsa_example_keypair_der_len|variable|rsa_example_keypair_der_len
-DECL|rsa_example_keypair_der|variable|rsa_example_keypair_der
