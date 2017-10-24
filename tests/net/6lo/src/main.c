@@ -25,7 +25,6 @@ DECL|dst_mac|variable|dst_mac
 DECL|icmp|member|struct net_icmp_hdr icmp;
 DECL|iphc|member|bool iphc;
 DECL|ipv6|member|struct net_ipv6_hdr ipv6;
-DECL|main|function|void main(void)
 DECL|name|member|const char *name;
 DECL|net_6lo_data|struct|struct net_6lo_data {
 DECL|net_6lo_dev_init|function|int net_6lo_dev_init(struct device *dev)
@@ -44,7 +43,7 @@ DECL|src_sam00|macro|src_sam00
 DECL|src_sam01|macro|src_sam01
 DECL|src_sam10|macro|src_sam10
 DECL|src_sam11|macro|src_sam11
-DECL|test_6lo|function|static int test_6lo(struct net_6lo_data *data)
+DECL|test_6lo|function|static void test_6lo(struct net_6lo_data *data)
 DECL|test_data_10|variable|test_data_10
 DECL|test_data_11|variable|test_data_11
 DECL|test_data_12|variable|test_data_12
@@ -70,6 +69,8 @@ DECL|test_data_6|variable|test_data_6
 DECL|test_data_7|variable|test_data_7
 DECL|test_data_8|variable|test_data_8
 DECL|test_data_9|variable|test_data_9
+DECL|test_loop|function|void test_loop(void)
+DECL|test_main|function|void test_main(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|tests|variable|tests
 DECL|udp_dst_port_16bit|macro|udp_dst_port_16bit
