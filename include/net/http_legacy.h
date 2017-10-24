@@ -49,8 +49,8 @@ DECL|host|member|const char *host;
 DECL|host|member|const char *host;
 DECL|http_client_ctx|struct|struct http_client_ctx {
 DECL|http_client_request|struct|struct http_client_request {
-DECL|http_client_send_get_req|function|static inline int http_client_send_get_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, http_response_cb_t cb,
-DECL|http_client_send_post_req|function|static inline int http_client_send_post_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, const char *content_type,
+DECL|http_client_send_get_req|function|int __deprecated http_client_send_get_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, http_response_cb_t cb,
+DECL|http_client_send_post_req|function|int __deprecated http_client_send_post_req(struct http_client_ctx *http_ctx, const char *url, const char *host, const char *extra_header_fields, const char *content_type,
 DECL|http_client_set_net_pkt_pool|macro|http_client_set_net_pkt_pool
 DECL|http_field_value|struct|struct http_field_value {
 DECL|http_final_call|enum|enum http_final_call {
