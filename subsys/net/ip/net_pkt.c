@@ -55,9 +55,11 @@ DECL|net_pkt_frag_del_debug|function|struct net_buf *net_pkt_frag_del_debug(stru
 DECL|net_pkt_frag_insert_debug|function|void net_pkt_frag_insert_debug(struct net_pkt *pkt, struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_insert(struct net_pkt *pkt, struct net_buf *frag) #endif
 DECL|net_pkt_frag_ref_debug|function|struct net_buf *net_pkt_frag_ref_debug(struct net_buf *frag, const char *caller, int line) #else struct net_buf *net_pkt_frag_ref(struct net_buf *frag) #endif /* CONFIG_NET_DEBUG_NET_PKT */
 DECL|net_pkt_frag_unref_debug|function|void net_pkt_frag_unref_debug(struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_unref(struct net_buf *frag) #endif /* CONFIG_NET_DEBUG_NET_PKT */
+DECL|net_pkt_get_addr|function|static int net_pkt_get_addr(struct net_pkt *pkt, bool is_src, struct sockaddr *addr, socklen_t addrlen)
 DECL|net_pkt_get_data_debug|function|struct net_buf *net_pkt_get_data_debug(struct net_context *context, s32_t timeout, const char *caller, int line)
 DECL|net_pkt_get_data|function|struct net_buf *net_pkt_get_data(struct net_context *context, s32_t timeout)
 DECL|net_pkt_get_debug|function|static struct net_pkt *net_pkt_get_debug(struct k_mem_slab *slab, struct net_context *context, s32_t timeout, const char *caller, int line) #else
+DECL|net_pkt_get_dst_addr|function|int net_pkt_get_dst_addr(struct net_pkt *pkt, struct sockaddr *addr, socklen_t addrlen)
 DECL|net_pkt_get_frag_debug|function|struct net_buf *net_pkt_get_frag_debug(struct net_pkt *pkt, s32_t timeout, const char *caller, int line) #else struct net_buf *net_pkt_get_frag(struct net_pkt *pkt,
 DECL|net_pkt_get_info|function|void net_pkt_get_info(struct k_mem_slab **rx, struct k_mem_slab **tx, struct net_buf_pool **rx_data, struct net_buf_pool **tx_data)
 DECL|net_pkt_get_reserve_data_debug|function|struct net_buf *net_pkt_get_reserve_data_debug(struct net_buf_pool *pool, u16_t reserve_head, s32_t timeout, const char *caller, int line)
