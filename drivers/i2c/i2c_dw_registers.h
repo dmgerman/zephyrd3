@@ -121,7 +121,7 @@ DECL|ic_raw_intr_stat|member|union ic_interrupt_register ic_raw_intr_stat; /* of
 DECL|ic_rx_tl|member|u16_t ic_rx_tl; /* offset 0x38 */
 DECL|ic_rxflr|member|u32_t ic_rxflr; /* offset 0x78 */
 DECL|ic_sar_register|union|union ic_sar_register {
-DECL|ic_sar|member|u16_t ic_sar : 9 __packed;
+DECL|ic_sar|member|u16_t ic_sar : 10 __packed;
 DECL|ic_sar|member|union ic_sar_register ic_sar; /* offset 0x08 */
 DECL|ic_sda_hold|member|u32_t ic_sda_hold; /* offset 0x7C */
 DECL|ic_sda_setup|member|u32_t ic_sda_setup; /* offset 0x94 */
@@ -131,7 +131,7 @@ DECL|ic_ss_scl_lcnt|member|u16_t ic_ss_scl_lcnt; /* offset 0x18 */
 DECL|ic_status_register|union|union ic_status_register {
 DECL|ic_status|member|union ic_status_register ic_status; /* offset 0x70 */
 DECL|ic_tar_register|union|union ic_tar_register {
-DECL|ic_tar|member|u16_t ic_tar : 9 __packed;
+DECL|ic_tar|member|u16_t ic_tar : 10 __packed;
 DECL|ic_tar|member|union ic_tar_register ic_tar; /* offset 0x04 */
 DECL|ic_tx_abrt_source|member|u32_t ic_tx_abrt_source; /* offset 0x80 */
 DECL|ic_tx_tl|member|u16_t ic_tx_tl; /* offset 0x3C */
