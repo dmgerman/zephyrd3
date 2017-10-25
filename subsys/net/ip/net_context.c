@@ -17,7 +17,6 @@ DECL|contexts_lock|variable|contexts_lock
 DECL|contexts|variable|contexts
 DECL|copy_pool_vars|function|static inline void copy_pool_vars(struct net_context *new_context, struct net_context *listen_context)
 DECL|copy_pool_vars|macro|copy_pool_vars
-DECL|create_sockaddr|function|static struct sockaddr *create_sockaddr(struct net_pkt *pkt,struct sockaddr *addr)
 DECL|create_udp_packet|function|static int create_udp_packet(struct net_context *context, struct net_pkt *pkt, const struct sockaddr *dst_addr, struct net_pkt **out_pkt)
 DECL|find_available_port|function|static u16_t find_available_port(struct net_context *context, const struct sockaddr *addr)
 DECL|find_context|function|static inline struct net_context *find_context(void *conn_handler)
