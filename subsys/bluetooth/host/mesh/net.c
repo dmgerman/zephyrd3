@@ -1,5 +1,6 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CTL|macro|CTL
+DECL|DST|macro|DST
 DECL|FRIEND_CRED_COUNT|macro|FRIEND_CRED_COUNT
 DECL|FRIEND_CRED_COUNT|macro|FRIEND_CRED_COUNT
 DECL|FRIEND_CRED_COUNT|macro|FRIEND_CRED_COUNT
@@ -8,6 +9,8 @@ DECL|IV_UPDATE_SEQ_LIMIT|macro|IV_UPDATE_SEQ_LIMIT
 DECL|IV_UPDATE_TIMEOUT|macro|IV_UPDATE_TIMEOUT
 DECL|IV_UPDATE_TIMEOUT|macro|IV_UPDATE_TIMEOUT
 DECL|NID|macro|NID
+DECL|SEQ|macro|SEQ
+DECL|SRC|macro|SRC
 DECL|TTL|macro|TTL
 DECL|auth_match|function|static bool auth_match(struct bt_mesh_subnet_keys *keys, const u8_t net_id[8], u8_t flags, u32_t iv_index, const u8_t auth[8])
 DECL|bt_mesh_friend_cred_add|function|struct bt_mesh_friend_cred *bt_mesh_friend_cred_add(u16_t net_idx, const u8_t net_key[16], u8_t idx, u16_t addr, u16_t lpn_counter, u16_t frnd_counter)
@@ -20,7 +23,7 @@ DECL|bt_mesh_iv_update|function|void bt_mesh_iv_update(u32_t iv_index, bool iv_u
 DECL|bt_mesh_kr_update|function|bool bt_mesh_kr_update(struct bt_mesh_subnet *sub, u8_t new_kr, bool new_key)
 DECL|bt_mesh_net_beacon_update|function|int bt_mesh_net_beacon_update(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_create|function|int bt_mesh_net_create(u16_t idx, u8_t flags, const u8_t key[16], u32_t iv_index)
-DECL|bt_mesh_net_decode|function|int bt_mesh_net_decode(struct net_buf_simple *data, enum bt_mesh_net_if net_if, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf, struct net_buf_simple_state *state)
+DECL|bt_mesh_net_decode|function|int bt_mesh_net_decode(struct net_buf_simple *data, enum bt_mesh_net_if net_if, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_net_encode|function|int bt_mesh_net_encode(struct bt_mesh_net_tx *tx, struct net_buf_simple *buf, bool proxy)
 DECL|bt_mesh_net_init|function|void bt_mesh_net_init(void)
 DECL|bt_mesh_net_keys_create|function|int bt_mesh_net_keys_create(struct bt_mesh_subnet_keys *keys, const u8_t key[16])
@@ -47,4 +50,3 @@ DECL|msg_cache|variable|msg_cache
 DECL|msg_hash|function|static u64_t msg_hash(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, u8_t idx, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_find_and_decrypt|function|static int net_find_and_decrypt(const u8_t *data, size_t data_len,struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|net_seq|function|static inline u32_t net_seq(struct net_buf_simple *buf)
