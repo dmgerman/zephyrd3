@@ -11,6 +11,7 @@ DECL|ipaddr_cmp|function|static bool ipaddr_cmp(const struct sockaddr *a, const 
 DECL|ipv6_block|variable|ipv6_block
 DECL|ipv6_empty_pdu_1|variable|ipv6_empty_pdu_1
 DECL|ipv6_empty_pdu|variable|ipv6_empty_pdu
+DECL|ipv6_malformed_marker|variable|ipv6_malformed_marker
 DECL|ipv6_not_found_req|variable|ipv6_not_found_req
 DECL|ipv6_obs_client|variable|ipv6_obs_client
 DECL|ipv6_resource1|variable|ipv6_resource1
@@ -39,6 +40,7 @@ DECL|test_observer_client|function|static int test_observer_client(void)
 DECL|test_observer_server|function|static int test_observer_server(void)
 DECL|test_parse_empty_pdu_1|function|static int test_parse_empty_pdu_1(void)
 DECL|test_parse_empty_pdu|function|static int test_parse_empty_pdu(void)
+DECL|test_parse_malformed_marker|function|static int test_parse_malformed_marker(void)
 DECL|test_parse_malformed_opt_ext|function|static int test_parse_malformed_opt_ext(void)
 DECL|test_parse_malformed_opt_len_ext|function|static int test_parse_malformed_opt_len_ext(void)
 DECL|test_parse_malformed_opt_len|function|static int test_parse_malformed_opt_len(void)
