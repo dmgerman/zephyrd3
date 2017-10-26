@@ -19,11 +19,12 @@ DECL|cert_cb|member|net_app_cert_cb_t cert_cb;
 DECL|cert_host|member|const char *cert_host;
 DECL|client_id|member|char client_id;
 DECL|client|member|} client;
-DECL|close_requested|member|bool close_requested;
+DECL|close_requested|member|u8_t close_requested : 1;
 DECL|close|member|net_app_close_cb_t close;
 DECL|conf|member|mbedtls_ssl_config conf;
-DECL|connect_cb_called|member|bool connect_cb_called;
+DECL|connect_cb_called|member|u8_t connect_cb_called : 1;
 DECL|connect_wait|member|struct k_sem connect_wait;
+DECL|connection_closing|member|u8_t connection_closing : 1;
 DECL|connect|member|net_app_connect_cb_t connect;
 DECL|cookie_ctx|member|mbedtls_ssl_cookie_ctx cookie_ctx;
 DECL|ctr_drbg|member|mbedtls_ctr_drbg_context ctr_drbg;
@@ -102,7 +103,7 @@ DECL|timing_ctx|member|struct dtls_timing_context timing_ctx;
 DECL|tls_context|struct|struct tls_context {
 DECL|tls|member|} tls;
 DECL|token|member|void *token; /* Used when sending data */
-DECL|tx_pending|member|bool tx_pending;
+DECL|tx_pending|member|u8_t tx_pending : 1;
 DECL|tx_rx_fifo|member|struct k_fifo tx_rx_fifo;
 DECL|tx_sem|member|struct k_sem tx_sem;
 DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
