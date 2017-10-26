@@ -9,6 +9,20 @@ DECL|UART_ERROR_OVERRUN|macro|UART_ERROR_OVERRUN
 DECL|UART_ERROR_PARITY|macro|UART_ERROR_PARITY
 DECL|UART_OPTION_AFCE|macro|UART_OPTION_AFCE
 DECL|__INCuarth|macro|__INCuarth
+DECL|_impl_uart_drv_cmd|function|static inline int _impl_uart_drv_cmd(struct device *dev, u32_t cmd, u32_t p)
+DECL|_impl_uart_err_check|function|static inline int _impl_uart_err_check(struct device *dev)
+DECL|_impl_uart_irq_err_disable|function|static inline void _impl_uart_irq_err_disable(struct device *dev)
+DECL|_impl_uart_irq_err_enable|function|static inline void _impl_uart_irq_err_enable(struct device *dev)
+DECL|_impl_uart_irq_is_pending|function|static inline int _impl_uart_irq_is_pending(struct device *dev)
+DECL|_impl_uart_irq_rx_disable|function|static inline void _impl_uart_irq_rx_disable(struct device *dev)
+DECL|_impl_uart_irq_rx_enable|function|static inline void _impl_uart_irq_rx_enable(struct device *dev)
+DECL|_impl_uart_irq_tx_disable|function|static inline void _impl_uart_irq_tx_disable(struct device *dev)
+DECL|_impl_uart_irq_tx_enable|function|static inline void _impl_uart_irq_tx_enable(struct device *dev)
+DECL|_impl_uart_irq_update|function|static inline int _impl_uart_irq_update(struct device *dev)
+DECL|_impl_uart_line_ctrl_get|function|static inline int _impl_uart_line_ctrl_get(struct device *dev, u32_t ctrl, u32_t *val)
+DECL|_impl_uart_line_ctrl_set|function|static inline int _impl_uart_line_ctrl_set(struct device *dev, u32_t ctrl, u32_t val)
+DECL|_impl_uart_poll_in|function|static inline int _impl_uart_poll_in(struct device *dev, unsigned char *p_char)
+DECL|_impl_uart_poll_out|function|static inline unsigned char _impl_uart_poll_out(struct device *dev,unsigned char out_char)
 DECL|base|member|u8_t *base;
 DECL|drv_cmd|member|int (*drv_cmd)(struct device *dev, u32_t cmd, u32_t p);
 DECL|err_check|member|int (*err_check)(struct device *dev);
@@ -37,26 +51,12 @@ DECL|regs|member|u32_t regs;
 DECL|sys_clk_freq|member|u32_t sys_clk_freq;
 DECL|uart_device_config|struct|struct uart_device_config {
 DECL|uart_driver_api|struct|struct uart_driver_api {
-DECL|uart_drv_cmd|function|static inline int uart_drv_cmd(struct device *dev, u32_t cmd, u32_t p)
-DECL|uart_err_check|function|static inline int uart_err_check(struct device *dev)
 DECL|uart_fifo_fill|function|static inline int uart_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
 DECL|uart_fifo_read|function|static inline int uart_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_irq_callback_set|function|static inline void uart_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
 DECL|uart_irq_callback_t|typedef|typedef void (*uart_irq_callback_t)(struct device *port);
 DECL|uart_irq_config_func_t|typedef|typedef void (*uart_irq_config_func_t)(struct device *port);
-DECL|uart_irq_err_disable|function|static inline void uart_irq_err_disable(struct device *dev)
-DECL|uart_irq_err_enable|function|static inline void uart_irq_err_enable(struct device *dev)
-DECL|uart_irq_is_pending|function|static inline int uart_irq_is_pending(struct device *dev)
-DECL|uart_irq_rx_disable|function|static inline void uart_irq_rx_disable(struct device *dev)
-DECL|uart_irq_rx_enable|function|static inline void uart_irq_rx_enable(struct device *dev)
 DECL|uart_irq_rx_ready|function|static inline int uart_irq_rx_ready(struct device *dev)
 DECL|uart_irq_tx_complete|function|static inline int uart_irq_tx_complete(struct device *dev)
-DECL|uart_irq_tx_disable|function|static inline void uart_irq_tx_disable(struct device *dev)
 DECL|uart_irq_tx_empty|function|static inline int __deprecated uart_irq_tx_empty(struct device *dev)
-DECL|uart_irq_tx_enable|function|static inline void uart_irq_tx_enable(struct device *dev)
 DECL|uart_irq_tx_ready|function|static inline int uart_irq_tx_ready(struct device *dev)
-DECL|uart_irq_update|function|static inline int uart_irq_update(struct device *dev)
-DECL|uart_line_ctrl_get|function|static inline int uart_line_ctrl_get(struct device *dev, u32_t ctrl, u32_t *val)
-DECL|uart_line_ctrl_set|function|static inline int uart_line_ctrl_set(struct device *dev, u32_t ctrl, u32_t val)
-DECL|uart_poll_in|function|static inline int uart_poll_in(struct device *dev, unsigned char *p_char)
-DECL|uart_poll_out|function|static inline unsigned char uart_poll_out(struct device *dev, unsigned char out_char)
