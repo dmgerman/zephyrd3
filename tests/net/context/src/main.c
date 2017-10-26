@@ -43,11 +43,13 @@ DECL|net_ctx_put|function|static void net_ctx_put(void)
 DECL|net_ctx_recv_v4_again|function|static void net_ctx_recv_v4_again(void)
 DECL|net_ctx_recv_v4_fail|function|static void net_ctx_recv_v4_fail(void)
 DECL|net_ctx_recv_v4_reconfig|function|static void net_ctx_recv_v4_reconfig(void)
+DECL|net_ctx_recv_v4_timeout_forever|function|static void net_ctx_recv_v4_timeout_forever(void)
 DECL|net_ctx_recv_v4_timeout|function|static void net_ctx_recv_v4_timeout(void)
 DECL|net_ctx_recv_v4|function|static void net_ctx_recv_v4(void)
 DECL|net_ctx_recv_v6_again|function|static void net_ctx_recv_v6_again(void)
 DECL|net_ctx_recv_v6_fail|function|static void net_ctx_recv_v6_fail(void)
 DECL|net_ctx_recv_v6_reconfig|function|static void net_ctx_recv_v6_reconfig(void)
+DECL|net_ctx_recv_v6_timeout_forever|function|static void net_ctx_recv_v6_timeout_forever(void)
 DECL|net_ctx_recv_v6_timeout|function|static void net_ctx_recv_v6_timeout(void)
 DECL|net_ctx_recv_v6|function|static void net_ctx_recv_v6(void)
 DECL|net_ctx_send_v4|function|static void net_ctx_send_v4(void)
@@ -63,8 +65,8 @@ DECL|recv_cb_timeout_called|variable|recv_cb_timeout_called
 DECL|recv_cb_timeout|function|static void recv_cb_timeout(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|recv_cb|function|static void recv_cb(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
 DECL|send_cb|function|static void send_cb(struct net_context *context, int status, void *token, void *user_data)
-DECL|start_timeout_v4_thread|function|static void start_timeout_v4_thread(void)
-DECL|start_timeout_v6_thread|function|static void start_timeout_v6_thread(void)
+DECL|start_timeout_v4_thread|function|static k_tid_t start_timeout_v4_thread(s32_t timeout)
+DECL|start_timeout_v6_thread|function|static k_tid_t start_timeout_v6_thread(s32_t timeout)
 DECL|tcp_v4_ctx|variable|tcp_v4_ctx
 DECL|tcp_v6_ctx|variable|tcp_v6_ctx
 DECL|test_data|variable|test_data
@@ -74,7 +76,7 @@ DECL|test_main|function|void test_main(void)
 DECL|test_token|variable|test_token
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|thread_data|variable|thread_data
-DECL|timeout_thread|function|void timeout_thread(struct net_context *ctx, sa_family_t *family)
+DECL|timeout_thread|function|void timeout_thread(struct net_context *ctx, void *param2, void *param3)
 DECL|timeout_token|variable|timeout_token
 DECL|udp_v4_ctx|variable|udp_v4_ctx
 DECL|udp_v6_ctx|variable|udp_v6_ctx
