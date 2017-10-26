@@ -1,0 +1,5 @@
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(gpio_config, port, access_op, pin, flags)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(gpio_disable_callback, port, access_op, pin)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(gpio_enable_callback, port, access_op, pin)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(gpio_read, port, access_op, pin, value)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(gpio_write, port, access_op, pin, value)
