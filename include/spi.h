@@ -21,6 +21,8 @@ DECL|SPI_WORD_SIZE_GET|macro|SPI_WORD_SIZE_GET
 DECL|SPI_WORD_SIZE_MASK|macro|SPI_WORD_SIZE_MASK
 DECL|SPI_WORD_SIZE_SHIFT|macro|SPI_WORD_SIZE_SHIFT
 DECL|__SPI_H__|macro|__SPI_H__
+DECL|_impl_spi_release|function|static inline int _impl_spi_release(struct spi_config *config)
+DECL|_impl_spi_transceive|function|static inline int _impl_spi_transceive(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count)
 DECL|buf|member|void *buf;
 DECL|cs|member|struct spi_cs_control *cs;
 DECL|delay|member|u32_t delay;
@@ -41,9 +43,7 @@ DECL|spi_cs_control|struct|struct spi_cs_control {
 DECL|spi_driver_api|struct|struct spi_driver_api {
 DECL|spi_read_async|function|static inline int spi_read_async(struct spi_config *config, struct spi_buf *rx_bufs, size_t rx_count, struct k_poll_signal *async)
 DECL|spi_read|function|static inline int spi_read(struct spi_config *config, struct spi_buf *rx_bufs, size_t rx_count)
-DECL|spi_release|function|static inline int spi_release(struct spi_config *config)
 DECL|spi_transceive_async|function|static inline int spi_transceive_async(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count,
-DECL|spi_transceive|function|static inline int spi_transceive(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct spi_buf *rx_bufs, size_t rx_count)
 DECL|spi_write_async|function|static inline int spi_write_async(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count, struct k_poll_signal *async)
 DECL|spi_write|function|static inline int spi_write(struct spi_config *config, const struct spi_buf *tx_bufs, size_t tx_count)
 DECL|transceive_async|member|spi_api_io_async transceive_async;
