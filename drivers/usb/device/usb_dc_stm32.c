@@ -15,6 +15,7 @@ DECL|EP_TYPE_ISOC|macro|EP_TYPE_ISOC
 DECL|FIFO_EP_WORDS|macro|FIFO_EP_WORDS
 DECL|FIFO_NUM|macro|FIFO_NUM
 DECL|FIFO_WORDS|macro|FIFO_WORDS
+DECL|HAL_PCDEx_SetConnectionState|function|void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
 DECL|HAL_PCD_ConnectCallback|function|void HAL_PCD_ConnectCallback(PCD_HandleTypeDef *hpcd)
 DECL|HAL_PCD_DataInStageCallback|function|void HAL_PCD_DataInStageCallback(PCD_HandleTypeDef *hpcd, u8_t epnum)
 DECL|HAL_PCD_DataOutStageCallback|function|void HAL_PCD_DataOutStageCallback(PCD_HandleTypeDef *hpcd, u8_t epnum)
