@@ -2,11 +2,10 @@ DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|NETWORK_CONNECT_TIMEOUT|macro|NETWORK_CONNECT_TIMEOUT
 DECL|NETWORK_INIT_TIMEOUT|macro|NETWORK_INIT_TIMEOUT
 DECL|OPAQUE_BUF_LEN|macro|OPAQUE_BUF_LEN
-DECL|PACKAGE_URI_LEN|macro|PACKAGE_URI_LEN
 DECL|PACKET_TRANSFER_RETRY_MAX|macro|PACKET_TRANSFER_RETRY_MAX
-DECL|PROXY_URI_LEN|macro|PROXY_URI_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|URI_LEN|macro|URI_LEN
 DECL|do_firmware_transfer_reply_cb|function|do_firmware_transfer_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|do_transmit_timeout_cb|function|static void do_transmit_timeout_cb(struct lwm2m_message *msg)
 DECL|firmware_block_ctx|variable|firmware_block_ctx
