@@ -62,6 +62,7 @@ DECL|lwm2m_engine_get_bool|function|bool lwm2m_engine_get_bool(char *pathstr)
 DECL|lwm2m_engine_get_float32|function|int lwm2m_engine_get_float32(char *pathstr, float32_value_t *buf)
 DECL|lwm2m_engine_get_float64|function|int lwm2m_engine_get_float64(char *pathstr, float64_value_t *buf)
 DECL|lwm2m_engine_get_opaque_more|function|size_t lwm2m_engine_get_opaque_more(struct lwm2m_input_context *in, u8_t *buf, size_t buflen, bool *last_block)
+DECL|lwm2m_engine_get_opaque|function|int lwm2m_engine_get_opaque(char *pathstr, void *buf, u16_t buflen)
 DECL|lwm2m_engine_get_resource|function|int lwm2m_engine_get_resource(char *pathstr, struct lwm2m_engine_res_inst **res)
 DECL|lwm2m_engine_get_s16|function|s16_t lwm2m_engine_get_s16(char *pathstr)
 DECL|lwm2m_engine_get_s32|function|s32_t lwm2m_engine_get_s32(char *pathstr)
@@ -83,6 +84,7 @@ DECL|lwm2m_engine_set_bool|function|int lwm2m_engine_set_bool(char *pathstr, boo
 DECL|lwm2m_engine_set_float32|function|int lwm2m_engine_set_float32(char *pathstr, float32_value_t *value)
 DECL|lwm2m_engine_set_float64|function|int lwm2m_engine_set_float64(char *pathstr, float64_value_t *value)
 DECL|lwm2m_engine_set_net_pkt_pool|function|int lwm2m_engine_set_net_pkt_pool(struct lwm2m_ctx *ctx, net_pkt_get_slab_func_t tx_slab, net_pkt_get_pool_func_t data_pool)
+DECL|lwm2m_engine_set_opaque|function|int lwm2m_engine_set_opaque(char *pathstr, char *data_ptr, u16_t data_len)
 DECL|lwm2m_engine_set_s16|function|int lwm2m_engine_set_s16(char *pathstr, s16_t value)
 DECL|lwm2m_engine_set_s32|function|int lwm2m_engine_set_s32(char *pathstr, s32_t value)
 DECL|lwm2m_engine_set_s64|function|int lwm2m_engine_set_s64(char *pathstr, s64_t value)
@@ -110,6 +112,7 @@ DECL|lwm2m_sprint_ip_addr|function|char *lwm2m_sprint_ip_addr(const struct socka
 DECL|lwm2m_udp_receive|function|void lwm2m_udp_receive(struct lwm2m_ctx *client_ctx, struct net_pkt *pkt, bool handle_separate_response, udp_request_handler_cb_t udp_request_handler)
 DECL|lwm2m_unregister_obj|function|void lwm2m_unregister_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_write_attr_handler|function|static int lwm2m_write_attr_handler(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
+DECL|lwm2m_write_handler_opaque|function|static int lwm2m_write_handler_opaque(struct lwm2m_engine_obj_inst *obj_inst, struct lwm2m_engine_res_inst *res, struct lwm2m_input_context *in, void *data_ptr, size_t data_len, bool last_block, size_t total_size)
 DECL|lwm2m_write_handler|function|int lwm2m_write_handler(struct lwm2m_engine_obj_inst *obj_inst,struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|max_period_sec|member|u32_t max_period_sec;
 DECL|messages|variable|messages
