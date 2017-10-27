@@ -25,6 +25,8 @@ DECL|data_udp_pool|macro|data_udp_pool
 DECL|device_factory_default_cb|function|static int device_factory_default_cb(u16_t obj_inst_id)
 DECL|device_reboot_cb|function|static int device_reboot_cb(u16_t obj_inst_id)
 DECL|firmware_block_received_cb|function|static int firmware_block_received_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
+DECL|firmware_buf|variable|firmware_buf
+DECL|firmware_get_buf|function|static void *firmware_get_buf(u16_t obj_inst_id, size_t *data_len)
 DECL|firmware_update_cb|function|static int firmware_update_cb(u16_t obj_inst_id)
 DECL|init_led_device|function|static int init_led_device(void)
 DECL|led_dev|variable|led_dev
