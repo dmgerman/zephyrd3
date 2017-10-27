@@ -62,6 +62,7 @@ DECL|lwm2m_engine_create_obj_inst|function|int lwm2m_engine_create_obj_inst(char
 DECL|lwm2m_engine_get_bool|function|bool lwm2m_engine_get_bool(char *pathstr)
 DECL|lwm2m_engine_get_float32|function|int lwm2m_engine_get_float32(char *pathstr, float32_value_t *buf)
 DECL|lwm2m_engine_get_float64|function|int lwm2m_engine_get_float64(char *pathstr, float64_value_t *buf)
+DECL|lwm2m_engine_get_opaque_more|function|size_t lwm2m_engine_get_opaque_more(struct lwm2m_input_context *in, u8_t *buf, size_t buflen, bool *last_block)
 DECL|lwm2m_engine_get_s16|function|s16_t lwm2m_engine_get_s16(char *pathstr)
 DECL|lwm2m_engine_get_s32|function|s32_t lwm2m_engine_get_s32(char *pathstr)
 DECL|lwm2m_engine_get_s64|function|s64_t lwm2m_engine_get_s64(char *pathstr)

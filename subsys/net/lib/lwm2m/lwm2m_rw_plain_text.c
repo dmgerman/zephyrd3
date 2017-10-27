@@ -4,6 +4,7 @@ DECL|do_write_op_plain_text|function|int do_write_op_plain_text(struct lwm2m_eng
 DECL|get_bool|function|static size_t get_bool(struct lwm2m_input_context *in, bool *value)
 DECL|get_float32fix|function|static size_t get_float32fix(struct lwm2m_input_context *in, float32_value_t *value)
 DECL|get_float64fix|function|static size_t get_float64fix(struct lwm2m_input_context *in, float64_value_t *value)
+DECL|get_opaque|function|static size_t get_opaque(struct lwm2m_input_context *in, u8_t *value, size_t buflen, bool *last_block)
 DECL|get_s32|function|static size_t get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|get_s64|function|static size_t get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|get_string|function|static size_t get_string(struct lwm2m_input_context *in, u8_t *value, size_t buflen)

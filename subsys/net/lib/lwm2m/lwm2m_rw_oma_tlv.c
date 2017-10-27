@@ -11,6 +11,7 @@ DECL|get_float32fix|function|static size_t get_float32fix(struct lwm2m_input_con
 DECL|get_float64fix|function|static size_t get_float64fix(struct lwm2m_input_context *in, float64_value_t *value)
 DECL|get_len_type|function|static u8_t get_len_type(const struct oma_tlv *tlv)
 DECL|get_number|function|static size_t get_number(struct lwm2m_input_context *in, s64_t *value, u8_t max_len)
+DECL|get_opaque|function|static size_t get_opaque(struct lwm2m_input_context *in, u8_t *value, size_t buflen, bool *last_block)
 DECL|get_s32|function|static size_t get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|get_s64|function|static size_t get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|get_string|function|static size_t get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)

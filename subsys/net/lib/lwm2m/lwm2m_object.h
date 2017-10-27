@@ -52,6 +52,7 @@ DECL|delete_cb|member|lwm2m_engine_obj_delete_cb_t delete_cb;
 DECL|engine_get_bool|function|static inline size_t engine_get_bool(struct lwm2m_input_context *in, bool *value)
 DECL|engine_get_float32fix|function|static inline size_t engine_get_float32fix(struct lwm2m_input_context *in, float32_value_t *value)
 DECL|engine_get_float64fix|function|static inline size_t engine_get_float64fix(struct lwm2m_input_context *in, float64_value_t *value)
+DECL|engine_get_opaque|function|static inline size_t engine_get_opaque(struct lwm2m_input_context *in, u8_t *buf, size_t buflen, bool *last_block)
 DECL|engine_get_s32|function|static inline size_t engine_get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|engine_get_s64|function|static inline size_t engine_get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|engine_get_string|function|static inline size_t engine_get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
@@ -62,6 +63,7 @@ DECL|engine_put_end_ri|function|static inline size_t engine_put_end_ri(struct lw
 DECL|engine_put_end|function|static inline size_t engine_put_end(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_float32fix|function|static inline size_t engine_put_float32fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float32_value_t *value)
 DECL|engine_put_float64fix|function|static inline size_t engine_put_float64fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float64_value_t *value)
+DECL|engine_put_opaque|function|static inline size_t engine_put_opaque(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
 DECL|engine_put_s16|function|static inline size_t engine_put_s16(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s16_t value)
 DECL|engine_put_s32|function|static inline size_t engine_put_s32(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s32_t value)
 DECL|engine_put_s64|function|static inline size_t engine_put_s64(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s64_t value)
@@ -75,6 +77,7 @@ DECL|frag|member|struct net_buf *frag;
 DECL|get_bool|member|size_t (*get_bool)(struct lwm2m_input_context *in,
 DECL|get_float32fix|member|size_t (*get_float32fix)(struct lwm2m_input_context *in,
 DECL|get_float64fix|member|size_t (*get_float64fix)(struct lwm2m_input_context *in,
+DECL|get_opaque|member|size_t (*get_opaque)(struct lwm2m_input_context *in,
 DECL|get_s32|member|size_t (*get_s32)(struct lwm2m_input_context *in,
 DECL|get_s64|member|size_t (*get_s64)(struct lwm2m_input_context *in,
 DECL|get_string|member|size_t (*get_string)(struct lwm2m_input_context *in,
@@ -108,6 +111,7 @@ DECL|obj_inst_id|member|u16_t obj_inst_id;
 DECL|obj|member|struct lwm2m_engine_obj *obj;
 DECL|offset|member|u16_t offset;
 DECL|offset|member|u16_t offset;
+DECL|opaque_len|member|u16_t opaque_len;
 DECL|operation|member|u8_t operation;
 DECL|out_cpkt|member|struct coap_packet *out_cpkt;
 DECL|out|member|struct lwm2m_output_context *out;
@@ -125,6 +129,7 @@ DECL|put_end_ri|member|size_t (*put_end_ri)(struct lwm2m_output_context *out,
 DECL|put_end|member|size_t (*put_end)(struct lwm2m_output_context *out,
 DECL|put_float32fix|member|size_t (*put_float32fix)(struct lwm2m_output_context *out,
 DECL|put_float64fix|member|size_t (*put_float64fix)(struct lwm2m_output_context *out,
+DECL|put_opaque|member|size_t (*put_opaque)(struct lwm2m_output_context *out,
 DECL|put_s16|member|size_t (*put_s16)(struct lwm2m_output_context *out,
 DECL|put_s32|member|size_t (*put_s32)(struct lwm2m_output_context *out,
 DECL|put_s64|member|size_t (*put_s64)(struct lwm2m_output_context *out,
