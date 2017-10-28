@@ -32,6 +32,7 @@ DECL|cb|member|bt_mesh_cb_t cb;
 DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, struct net_buf_simple *buf)
 DECL|ctl|member|ctl:1,
 DECL|dst|member|u16_t dst;
+DECL|dst|member|u16_t dst;
 DECL|hdr|member|u8_t hdr;
 DECL|in_use|member|in_use:1;
 DECL|is_replay|function|static bool is_replay(struct bt_mesh_net_rx *rx)
@@ -53,6 +54,7 @@ DECL|seg_rx|struct|static struct seg_rx {
 DECL|seg_rx|variable|seg_rx
 DECL|seg_sent|function|static void seg_sent(struct net_buf *buf, int err)
 DECL|seg_tx_complete|function|static inline void seg_tx_complete(struct seg_tx *tx, int err)
+DECL|seg_tx_lookup|function|static struct seg_tx *seg_tx_lookup(u16_t seq_zero, u8_t obo, u16_t addr)
 DECL|seg_tx_reset|function|static void seg_tx_reset(struct seg_tx *tx)
 DECL|seg_tx_send_unacked|function|static void seg_tx_send_unacked(struct seg_tx *tx)
 DECL|seg_tx|struct|static struct seg_tx {
