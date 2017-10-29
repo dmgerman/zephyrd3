@@ -31,5 +31,5 @@ DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
 DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
 DECL|thread_monitor_init|macro|thread_monitor_init
-DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL fiber+tasks */
+DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL threads */
 DECL|timeout_q|member|sys_dlist_t timeout_q;

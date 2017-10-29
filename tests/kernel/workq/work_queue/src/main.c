@@ -18,7 +18,7 @@ DECL|resubmit_work_handler|function|static void resubmit_work_handler(struct k_w
 DECL|results|variable|results
 DECL|test_delayed_cancel|function|static int test_delayed_cancel(void)
 DECL|test_delayed_init|function|static void test_delayed_init(void)
-DECL|test_delayed_resubmit_fiber|function|static int test_delayed_resubmit_fiber(void)
+DECL|test_delayed_resubmit_thread|function|static int test_delayed_resubmit_thread(void)
 DECL|test_delayed_resubmit|function|static int test_delayed_resubmit(void)
 DECL|test_delayed_submit|function|static int test_delayed_submit(void)
 DECL|test_delayed|function|static int test_delayed(void)
