@@ -16,6 +16,8 @@ DECL|auth_match|function|static bool auth_match(struct bt_mesh_subnet_keys *keys
 DECL|bt_mesh_friend_cred_add|function|struct bt_mesh_friend_cred *bt_mesh_friend_cred_add(u16_t net_idx, const u8_t net_key[16], u8_t idx, u16_t addr, u16_t lpn_counter, u16_t frnd_counter)
 DECL|bt_mesh_friend_cred_clear|function|void bt_mesh_friend_cred_clear(struct bt_mesh_friend_cred *cred)
 DECL|bt_mesh_friend_cred_del|function|int bt_mesh_friend_cred_del(u16_t net_idx, u16_t addr)
+DECL|bt_mesh_friend_cred_get|function|int bt_mesh_friend_cred_get(u16_t net_idx, u16_t addr, u8_t idx, u8_t *nid, const u8_t **enc, const u8_t **priv)
+DECL|bt_mesh_friend_cred_get|function|int bt_mesh_friend_cred_get(u16_t net_idx, u16_t addr, u8_t idx, u8_t *nid, const u8_t **enc, const u8_t **priv)
 DECL|bt_mesh_friend_cred_refresh|function|void bt_mesh_friend_cred_refresh(u16_t net_idx)
 DECL|bt_mesh_friend_cred_set|function|int bt_mesh_friend_cred_set(struct bt_mesh_friend_cred *cred, u8_t idx, const u8_t net_key[16])
 DECL|bt_mesh_friend_cred_update|function|int bt_mesh_friend_cred_update(u16_t net_idx, u8_t idx, const u8_t net_key[16])
@@ -41,8 +43,6 @@ DECL|bt_mesh|variable|bt_mesh
 DECL|check_dup|function|static bool check_dup(struct net_buf_simple *data)
 DECL|dup_cache_next|variable|dup_cache_next
 DECL|dup_cache|variable|dup_cache
-DECL|friend_cred_get|function|static inline int friend_cred_get(u16_t net_idx, u16_t addr, u8_t idx, u8_t *nid, const u8_t **enc, const u8_t **priv)
-DECL|friend_cred_get|function|static int friend_cred_get(u16_t net_idx, u16_t addr, u8_t idx, u8_t *nid, const u8_t **enc, const u8_t **priv)
 DECL|friend_cred|variable|friend_cred
 DECL|ivu_complete|function|static void ivu_complete(struct k_work *work)
 DECL|msg_cache_match|function|static bool msg_cache_match(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
