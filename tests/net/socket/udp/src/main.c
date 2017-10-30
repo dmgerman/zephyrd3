@@ -1,15 +1,15 @@
+DECL|ANY_PORT|macro|ANY_PORT
 DECL|BUF_AND_SIZE|macro|BUF_AND_SIZE
-DECL|LOCAL_PORT|macro|LOCAL_PORT
-DECL|REMOTE_PORT|macro|REMOTE_PORT
+DECL|CLIENT_PORT|macro|CLIENT_PORT
+DECL|SERVER_PORT|macro|SERVER_PORT
 DECL|STRLEN|macro|STRLEN
 DECL|TEST_STR_SMALL|macro|TEST_STR_SMALL
-DECL|V4_ANY_ADDR|macro|V4_ANY_ADDR
-DECL|V4_REMOTE_ADDR|macro|V4_REMOTE_ADDR
-DECL|V6_ANY_ADDR|macro|V6_ANY_ADDR
-DECL|V6_REMOTE_ADDR|macro|V6_REMOTE_ADDR
+DECL|prepare_sock_v4|function|static void prepare_sock_v4(const char *addr, u16_t port, int *sock, struct sockaddr_in *sockaddr)
+DECL|prepare_sock_v6|function|static void prepare_sock_v6(const char *addr, u16_t port, int *sock, struct sockaddr_in6 *sockaddr)
 DECL|test_main|function|void test_main(void)
 DECL|test_send_recv_2_sock|function|void test_send_recv_2_sock(void)
-DECL|test_v4_bind_sendto|function|static void test_v4_bind_sendto(void)
-DECL|test_v4_sendto_recvfrom|function|static void test_v4_sendto_recvfrom(void)
-DECL|test_v6_bind_sendto|function|static void test_v6_bind_sendto(void)
-DECL|test_v6_sendto_recvfrom|function|static void test_v6_sendto_recvfrom(void)
+DECL|test_sendto_recvfrom|function|static void test_sendto_recvfrom(int client_sock, struct sockaddr *client_addr, socklen_t client_addrlen, int server_sock, struct sockaddr *server_addr,
+DECL|test_v4_bind_sendto|function|void test_v4_bind_sendto(void)
+DECL|test_v4_sendto_recvfrom|function|void test_v4_sendto_recvfrom(void)
+DECL|test_v6_bind_sendto|function|void test_v6_bind_sendto(void)
+DECL|test_v6_sendto_recvfrom|function|void test_v6_sendto_recvfrom(void)
