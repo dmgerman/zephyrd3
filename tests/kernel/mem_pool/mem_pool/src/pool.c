@@ -17,7 +17,6 @@ DECL|get_set|variable|get_set
 DECL|getwt_set|variable|getwt_set
 DECL|helper_block|variable|helper_block
 DECL|helper_task|function|void helper_task(void)
-DECL|main|function|void main(void)
 DECL|pool_block_get_func_t|typedef|typedef int (*pool_block_get_func_t)(struct k_mem_block *, struct k_mem_pool *,
 DECL|pool_block_get_func|function|int pool_block_get_func(struct k_mem_block *block, struct k_mem_pool *pool,int size, s32_t unused)
 DECL|pool_block_get_test|function|int pool_block_get_test(void)
@@ -32,4 +31,6 @@ DECL|pool_malloc_test|function|int pool_malloc_test(void)
 DECL|pool_move_block_func_t|typedef|typedef int (*pool_move_block_func_t)(struct k_mem_block *, struct k_mem_pool *);
 DECL|rcode|member|int rcode; /* expected return code */
 DECL|size|member|int size; /* request size in bytes */
+DECL|test_main|function|void test_main(void)
+DECL|test_mem_pool|function|void test_mem_pool(void)
 DECL|timeout|member|s32_t timeout; /* # of ticks to wait */
