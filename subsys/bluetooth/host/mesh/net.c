@@ -25,6 +25,7 @@ DECL|bt_mesh_net_beacon_update|function|int bt_mesh_net_beacon_update(struct bt_
 DECL|bt_mesh_net_create|function|int bt_mesh_net_create(u16_t idx, u8_t flags, const u8_t key[16], u32_t iv_index)
 DECL|bt_mesh_net_decode|function|int bt_mesh_net_decode(struct net_buf_simple *data, enum bt_mesh_net_if net_if, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_net_encode|function|int bt_mesh_net_encode(struct bt_mesh_net_tx *tx, struct net_buf_simple *buf, bool proxy)
+DECL|bt_mesh_net_flags|function|u8_t bt_mesh_net_flags(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_init|function|void bt_mesh_net_init(void)
 DECL|bt_mesh_net_keys_create|function|int bt_mesh_net_keys_create(struct bt_mesh_subnet_keys *keys, const u8_t key[16])
 DECL|bt_mesh_net_local|function|static void bt_mesh_net_local(struct k_work *work)
