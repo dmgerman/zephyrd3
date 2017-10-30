@@ -1,11 +1,11 @@
 DECL|STACKSIZE|macro|STACKSIZE
-DECL|main|function|void main(void)
 DECL|mutex_1|variable|mutex_1
 DECL|mutex_2|variable|mutex_2
 DECL|mutex_3|variable|mutex_3
 DECL|mutex_4|variable|mutex_4
 DECL|private_mutex|variable|private_mutex
 DECL|tc_rc|variable|tc_rc
+DECL|test_main|function|void test_main(void)
 DECL|thread_05|function|void thread_05(void)
 DECL|thread_06|function|void thread_06(void)
 DECL|thread_07|function|void thread_07(void)
