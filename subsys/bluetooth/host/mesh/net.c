@@ -21,7 +21,7 @@ DECL|bt_mesh_friend_cred_get|function|int bt_mesh_friend_cred_get(u16_t net_idx,
 DECL|bt_mesh_friend_cred_refresh|function|void bt_mesh_friend_cred_refresh(u16_t net_idx)
 DECL|bt_mesh_friend_cred_set|function|int bt_mesh_friend_cred_set(struct bt_mesh_friend_cred *cred, u8_t idx, const u8_t net_key[16])
 DECL|bt_mesh_friend_cred_update|function|int bt_mesh_friend_cred_update(u16_t net_idx, u8_t idx, const u8_t net_key[16])
-DECL|bt_mesh_iv_update|function|void bt_mesh_iv_update(u32_t iv_index, bool iv_update)
+DECL|bt_mesh_iv_update|function|bool bt_mesh_iv_update(u32_t iv_index, bool iv_update)
 DECL|bt_mesh_kr_update|function|bool bt_mesh_kr_update(struct bt_mesh_subnet *sub, u8_t new_kr, bool new_key)
 DECL|bt_mesh_net_beacon_update|function|int bt_mesh_net_beacon_update(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_create|function|int bt_mesh_net_create(u16_t idx, u8_t flags, const u8_t key[16], u32_t iv_index)
