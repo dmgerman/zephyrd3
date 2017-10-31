@@ -4,6 +4,7 @@ DECL|NET_TCP_CLOSED|enumerator|NET_TCP_CLOSED = 0,
 DECL|NET_TCP_CLOSE_WAIT|enumerator|NET_TCP_CLOSE_WAIT,
 DECL|NET_TCP_CLOSING|enumerator|NET_TCP_CLOSING,
 DECL|NET_TCP_CTL|macro|NET_TCP_CTL
+DECL|NET_TCP_DEFAULT_MSS|macro|NET_TCP_DEFAULT_MSS
 DECL|NET_TCP_ESTABLISHED|enumerator|NET_TCP_ESTABLISHED,
 DECL|NET_TCP_FINAL_RECV|macro|NET_TCP_FINAL_RECV
 DECL|NET_TCP_FINAL_SENT|macro|NET_TCP_FINAL_SENT
@@ -61,6 +62,7 @@ DECL|recv_wnd|member|u16_t recv_wnd;
 DECL|retry_timeout_shift|member|u32_t retry_timeout_shift : 5;
 DECL|retry_timer|member|struct k_delayed_work retry_timer;
 DECL|send_ack|member|u32_t send_ack;
+DECL|send_mss|member|u16_t send_mss;
 DECL|send_seq|member|u32_t send_seq;
 DECL|sent_ack|member|u32_t sent_ack;
 DECL|sent_list|member|sys_slist_t sent_list;

@@ -50,6 +50,7 @@ DECL|remote|member|struct sockaddr remote;
 DECL|send_ack|function|static int send_ack(struct net_context *context, struct sockaddr *remote, bool force)
 DECL|send_ack|member|u32_t send_ack;
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token,
+DECL|send_mss|member|u16_t send_mss;
 DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
 DECL|send_seq|member|u32_t send_seq;
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr_ptr *local, struct sockaddr *remote)
@@ -61,7 +62,7 @@ DECL|tcp_backlog_ack|function|static int tcp_backlog_ack(struct net_pkt *pkt, st
 DECL|tcp_backlog_entry|struct|static struct tcp_backlog_entry {
 DECL|tcp_backlog_find|function|static int tcp_backlog_find(struct net_pkt *pkt, int *empty_slot)
 DECL|tcp_backlog_rst|function|static int tcp_backlog_rst(struct net_pkt *pkt)
-DECL|tcp_backlog_syn|function|static int tcp_backlog_syn(struct net_pkt *pkt, struct net_context *context)
+DECL|tcp_backlog_syn|function|static int tcp_backlog_syn(struct net_pkt *pkt, struct net_context *context, u16_t send_mss)
 DECL|tcp_backlog|variable|tcp_backlog
 DECL|tcp_hdr_len|function|static int tcp_hdr_len(struct net_pkt *pkt)
 DECL|tcp|member|struct net_tcp *tcp;
