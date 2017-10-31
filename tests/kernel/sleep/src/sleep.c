@@ -10,12 +10,13 @@ DECL|helper_thread_id|variable|helper_thread_id
 DECL|helper_thread_sem|variable|helper_thread_sem
 DECL|helper_thread|function|static void helper_thread(int arg1, int arg2)
 DECL|irq_offload_isr|function|static void irq_offload_isr(void *arg)
-DECL|main|function|void main(void)
 DECL|sleep_time_valid|function|static int sleep_time_valid(u32_t start, u32_t end, u32_t dur)
 DECL|task_sem|variable|task_sem
 DECL|test_failure|variable|test_failure
+DECL|test_main|function|void test_main(void)
 DECL|test_objects_init|function|static void test_objects_init(void)
 DECL|test_thread_data|variable|test_thread_data
 DECL|test_thread_id|variable|test_thread_id
 DECL|test_thread_sem|variable|test_thread_sem
 DECL|test_thread|function|static void test_thread(int arg1, int arg2)
+DECL|testing_sleep|function|void testing_sleep(void)
