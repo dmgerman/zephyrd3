@@ -31,6 +31,7 @@ DECL|net_buf_frag_del_debug|function|struct net_buf *net_buf_frag_del_debug(stru
 DECL|net_buf_frag_insert|function|void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_last|function|struct net_buf *net_buf_frag_last(struct net_buf *buf)
 DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo *fifo, s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_get(struct k_fifo *fifo, s32_t timeout) #endif
+DECL|net_buf_id|function|int net_buf_id(struct net_buf *buf)
 DECL|net_buf_pool_get|function|struct net_buf_pool *net_buf_pool_get(int id)
 DECL|net_buf_put|function|void net_buf_put(struct k_fifo *fifo, struct net_buf *buf)
 DECL|net_buf_ref|function|struct net_buf *net_buf_ref(struct net_buf *buf)
