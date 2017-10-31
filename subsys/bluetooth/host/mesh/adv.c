@@ -11,6 +11,7 @@ DECL|adv_sent|function|static inline void adv_sent(struct net_buf *buf, int err)
 DECL|adv_thread_data|variable|adv_thread_data
 DECL|adv_thread|function|static void adv_thread(void *p1, void *p2, void *p3)
 DECL|adv_type|variable|adv_type
+DECL|bt_mesh_adv_create_from_pool|function|struct net_buf *bt_mesh_adv_create_from_pool(struct net_buf_pool *pool, enum bt_mesh_adv_type type, u8_t xmit_count, u8_t xmit_int, s32_t timeout)
 DECL|bt_mesh_adv_create|function|struct net_buf *bt_mesh_adv_create(enum bt_mesh_adv_type type, u8_t xmit_count, u8_t xmit_int, s32_t timeout)
 DECL|bt_mesh_adv_init|function|void bt_mesh_adv_init(void)
 DECL|bt_mesh_adv_send|function|void bt_mesh_adv_send(struct net_buf *buf, bt_mesh_adv_func_t sent)
