@@ -1,1 +1,0 @@
-DECL|_MYLIB_H_|macro|_MYLIB_H_
