@@ -8,14 +8,8 @@ DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|_Cstart|function|FUNC_NORETURN void _Cstart(void)
-DECL|__end_intr_time|variable|__end_intr_time
-DECL|__end_swap_time|variable|__end_swap_time
-DECL|__end_tick_time|variable|__end_tick_time
 DECL|__idle_time_stamp|variable|__idle_time_stamp
 DECL|__main_time_stamp|variable|__main_time_stamp
-DECL|__start_intr_time|variable|__start_intr_time
-DECL|__start_swap_time|variable|__start_swap_time
-DECL|__start_tick_time|variable|__start_tick_time
 DECL|__start_time_stamp|variable|__start_time_stamp
 DECL|_bss_zero|function|void _bss_zero(void)
 DECL|_data_copy|function|void _data_copy(void)
