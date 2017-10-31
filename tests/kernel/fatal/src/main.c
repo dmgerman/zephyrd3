@@ -10,8 +10,9 @@ DECL|alt_thread3|function|void alt_thread3(void)
 DECL|alt_thread|variable|alt_thread
 DECL|blow_up_stack|function|void blow_up_stack(void)
 DECL|crash_reason|variable|crash_reason
-DECL|main|function|void main(void)
 DECL|overflow_stack|variable|overflow_stack
 DECL|rv|variable|rv
 DECL|stack_thread1|function|void stack_thread1(void)
 DECL|stack_thread2|function|void stack_thread2(void)
+DECL|test_main|function|void test_main(void)
+DECL|testing_fatal|function|void testing_fatal(void)
