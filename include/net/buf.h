@@ -8,7 +8,6 @@ DECL|__bufs|member|struct net_buf * const __bufs;
 DECL|__net_buf_align|macro|__net_buf_align
 DECL|__net_buf_align|member|u8_t __buf[0] __net_buf_align;
 DECL|__net_buf_align|member|u8_t __buf[0] __net_buf_align;
-DECL|_unused|member|int _unused;
 DECL|avail_count|member|s16_t avail_count;
 DECL|buf_count|member|const u16_t buf_count;
 DECL|buf_size|member|const u16_t buf_size;
@@ -58,6 +57,7 @@ DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf_unref|macro|net_buf_unref
 DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
+DECL|node|member|sys_snode_t node;
 DECL|offset|member|u16_t offset;
 DECL|pool_id|member|u8_t pool_id;
 DECL|pool_size|member|const u16_t pool_size;
