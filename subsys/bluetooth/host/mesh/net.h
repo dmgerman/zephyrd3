@@ -21,6 +21,10 @@ DECL|BT_MESH_NET_IF_PROXY_CFG|enumerator|BT_MESH_NET_IF_PROXY_CFG,
 DECL|BT_MESH_NET_IF_PROXY|enumerator|BT_MESH_NET_IF_PROXY,
 DECL|BT_MESH_NET_IVI_RX|macro|BT_MESH_NET_IVI_RX
 DECL|BT_MESH_NET_IVI_TX|macro|BT_MESH_NET_IVI_TX
+DECL|FRIEND_SEG_RX|macro|FRIEND_SEG_RX
+DECL|FRIEND_SEG_RX|macro|FRIEND_SEG_RX
+DECL|FRIEND_SUB_LIST_SIZE|macro|FRIEND_SUB_LIST_SIZE
+DECL|FRIEND_SUB_LIST_SIZE|macro|FRIEND_SUB_LIST_SIZE
 DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|__packed|enum|enum __packed {
@@ -35,6 +39,7 @@ DECL|beacon|member|u8_t beacon[16]; /* BeaconKey */
 DECL|bt_mesh_app_keys|struct|struct bt_mesh_app_keys {
 DECL|bt_mesh_app_key|struct|struct bt_mesh_app_key {
 DECL|bt_mesh_friend_cred|struct|struct bt_mesh_friend_cred {
+DECL|bt_mesh_friend_seg|struct|struct bt_mesh_friend_seg {
 DECL|bt_mesh_friend|struct|struct bt_mesh_friend {
 DECL|bt_mesh_lpn|struct|struct bt_mesh_lpn {
 DECL|bt_mesh_net_if|enum|enum bt_mesh_net_if {
@@ -55,8 +60,10 @@ DECL|disable|member|disable:1, /* Disable LPN after clearing */
 DECL|dst|member|u16_t dst; /* Destination address */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
+DECL|established|member|established:1;
+DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
-DECL|frnd|member|struct bt_mesh_friend frnd; /* Friend state */
+DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
 DECL|frnd|member|u16_t frnd;
 DECL|fsn|member|fsn:1; /* Friend Sequence Number */
 DECL|fsn|member|u8_t fsn:1,
@@ -74,6 +81,7 @@ DECL|kr_flag|member|bool kr_flag; /* Key Refresh Flag */
 DECL|kr_phase|member|u8_t kr_phase; /* Key Refresh Phase */
 DECL|last_update|member|s64_t last_update; /* Time since last IV Update change */
 DECL|last|member|struct net_buf *last;
+DECL|local_match|member|local_match:1, /* Matched a local element */
 DECL|local_queue|member|struct k_fifo local_queue;
 DECL|local_work|member|struct k_work local_work;
 DECL|lpn_counter|member|u16_t lpn_counter;
@@ -82,9 +90,10 @@ DECL|lpn|member|struct bt_mesh_lpn lpn; /* Low Power Node state */
 DECL|lpn|member|u16_t lpn;
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_idx|member|u16_t net_idx;
+DECL|net_idx|member|u16_t net_idx;
 DECL|net_idx|member|u16_t net_idx; /* NetKeyIndex */
 DECL|net_id|member|u8_t net_id[8]; /* Network ID */
-DECL|net_if|member|net_if:2; /* Network interface */
+DECL|net_if|member|net_if:2, /* Network interface */
 DECL|net|member|u8_t net[16]; /* NetKey */
 DECL|new_key|member|new_key:1, /* Data was encrypted with updated key */
 DECL|nid|member|u8_t nid; /* NID */
@@ -92,23 +101,25 @@ DECL|nid|member|u8_t nid; /* NID */
 DECL|node_id|member|u8_t node_id; /* Node Identity State */
 DECL|old_iv|member|bool old_iv;
 DECL|old_iv|member|u8_t old_iv:1, /* iv_index - 1 was used */
+DECL|pending_buf|member|pending_buf:1,
 DECL|pending_poll|member|pending_poll:1, /* Poll to be sent after subscription */
 DECL|pending_update|member|pending_update:1, /* Update blocked by SDU in progress */
 DECL|poll_timeout|member|s32_t poll_timeout;
 DECL|poll_to|member|s32_t poll_to;
 DECL|privacy|member|u8_t privacy[16]; /* PrivacyKey */
 DECL|privacy|member|u8_t privacy[16]; /* PrivacyKey */
+DECL|queue_size|member|u32_t queue_size;
 DECL|queue_size|member|u8_t queue_size;
-DECL|queue|member|struct k_fifo queue;
+DECL|queue|member|sys_slist_t queue;
+DECL|queue|member|sys_slist_t queue;
 DECL|recv_delay|member|u8_t recv_delay;
 DECL|recv_win|member|u8_t recv_win;
 DECL|req_attempts|member|u8_t req_attempts; /* Number of Request attempts */
 DECL|rpl|member|struct bt_mesh_rpl rpl[CONFIG_BT_MESH_CRPL];
 DECL|rssi|member|s8_t rssi;
-DECL|rssi|member|s8_t rssi;
+DECL|sec_update|member|sec_update:1,
+DECL|seg|member|} seg[FRIEND_SEG_RX];
 DECL|send_last|member|send_last:1,
-DECL|send_offer|member|send_offer:1,
-DECL|send_update|member|send_update:1;
 DECL|sent_req|member|u8_t sent_req;
 DECL|seq|member|u32_t seq:24, /* Next outgoing sequence number */
 DECL|seq|member|u32_t seq;
@@ -116,6 +127,7 @@ DECL|seq|member|u32_t seq; /* Sequence Number */
 DECL|src|member|u16_t src;
 DECL|src|member|u16_t src;
 DECL|state|member|} state;
+DECL|sub_list|member|u16_t sub_list[FRIEND_SUB_LIST_SIZE];
 DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet sub[CONFIG_BT_MESH_SUBNET_COUNT];

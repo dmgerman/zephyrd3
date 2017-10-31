@@ -1,1 +1,4 @@
-DECL|bt_mesh_friend_dst_is_lpn|function|static inline bool bt_mesh_friend_dst_is_lpn(u16_t dst)
+DECL|BT_MESH_FRIEND_PDU_COMPLETE|enumerator|BT_MESH_FRIEND_PDU_COMPLETE,
+DECL|BT_MESH_FRIEND_PDU_PARTIAL|enumerator|BT_MESH_FRIEND_PDU_PARTIAL,
+DECL|BT_MESH_FRIEND_PDU_SINGLE|enumerator|BT_MESH_FRIEND_PDU_SINGLE,
+DECL|bt_mesh_friend_pdu_type|enum|enum bt_mesh_friend_pdu_type {

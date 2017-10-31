@@ -16,7 +16,7 @@ DECL|ack_timeout|function|static inline s32_t ack_timeout(struct seg_rx *rx)
 DECL|ack|member|struct k_delayed_work ack;
 DECL|block|member|u32_t block;
 DECL|bt_mesh_app_key_find|function|struct bt_mesh_app_key *bt_mesh_app_key_find(u16_t app_idx)
-DECL|bt_mesh_ctl_send|function|int bt_mesh_ctl_send(struct bt_mesh_net_tx *tx, u8_t ctl_op, void *data, size_t data_len, bt_mesh_adv_func_t cb)
+DECL|bt_mesh_ctl_send|function|int bt_mesh_ctl_send(struct bt_mesh_net_tx *tx, u8_t ctl_op, void *data, size_t data_len, u64_t *seq_auth, bt_mesh_adv_func_t cb)
 DECL|bt_mesh_rx_reset|function|void bt_mesh_rx_reset(void)
 DECL|bt_mesh_trans_init|function|void bt_mesh_trans_init(void)
 DECL|bt_mesh_trans_recv|function|int bt_mesh_trans_recv(struct net_buf_simple *buf, struct bt_mesh_net_rx *rx)
@@ -26,15 +26,16 @@ DECL|buf_data|member|u8_t buf_data[CONFIG_BT_MESH_RX_SDU_MAX];
 DECL|buf|member|struct net_buf_simple buf;
 DECL|cb_data|member|void *cb_data;
 DECL|cb|member|bt_mesh_cb_t cb;
-DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, struct net_buf_simple *buf)
+DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, struct net_buf_simple *buf, u64_t *seq_auth)
 DECL|ctl|member|ctl:1,
 DECL|dst|member|u16_t dst;
 DECL|dst|member|u16_t dst;
 DECL|hdr|member|u8_t hdr;
-DECL|in_use|member|in_use:1;
+DECL|in_use|member|in_use:1,
 DECL|is_replay|function|static bool is_replay(struct bt_mesh_net_rx *rx)
 DECL|last|member|u32_t last;
 DECL|nack_count|member|u8_t nack_count; /* Number of not acked segments */
+DECL|obo|member|obo:1;
 DECL|retransmit|member|struct k_delayed_work retransmit; /* Retransmit timer */
 DECL|sdu_len_is_ok|function|static inline bool sdu_len_is_ok(bool ctl, u8_t seg_n)
 DECL|sdu_recv|function|static int sdu_recv(struct bt_mesh_net_rx *rx, u8_t hdr, u8_t mic_size, u8_t aszmic, struct net_buf_simple *buf)
@@ -57,7 +58,7 @@ DECL|seg_tx_send_unacked|function|static void seg_tx_send_unacked(struct seg_tx 
 DECL|seg_tx|struct|static struct seg_tx {
 DECL|seg_tx|variable|seg_tx
 DECL|seg|member|struct net_buf *seg[BT_MESH_TX_SEG_COUNT];
-DECL|send_ack|function|static int send_ack(struct bt_mesh_subnet *sub, u16_t src, u16_t dst, u8_t ttl, u16_t seq_zero, u32_t block)
+DECL|send_ack|function|static int send_ack(struct bt_mesh_subnet *sub, u16_t src, u16_t dst, u8_t ttl, u64_t *seq_auth, u32_t block, u8_t obo)
 DECL|send_seg|function|static int send_seg(struct bt_mesh_net_tx *net_tx, u8_t aid, u8_t mic_len, struct net_buf_simple *sdu, bt_mesh_cb_t cb, void *cb_data)
 DECL|send_unseg|function|static int send_unseg(struct bt_mesh_net_tx *tx, u8_t aid, struct net_buf_simple *sdu)
 DECL|seq_auth|member|u64_t seq_auth;
@@ -65,8 +66,8 @@ DECL|seq_auth|member|u64_t seq_auth;
 DECL|src|member|u16_t src;
 DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet *sub;
-DECL|trans_ack|function|static int trans_ack(struct bt_mesh_net_rx *rx, u8_t hdr, struct net_buf_simple *buf)
+DECL|trans_ack|function|static int trans_ack(struct bt_mesh_net_rx *rx, u8_t hdr, struct net_buf_simple *buf, u64_t *seq_auth)
 DECL|trans_heartbeat|function|static int trans_heartbeat(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|trans_seg|function|static int trans_seg(struct net_buf_simple *buf, struct bt_mesh_net_rx *net_rx)
-DECL|trans_unseg|function|static int trans_unseg(struct net_buf_simple *buf, struct bt_mesh_net_rx *rx)
+DECL|trans_seg|function|static int trans_seg(struct net_buf_simple *buf, struct bt_mesh_net_rx *net_rx, enum bt_mesh_friend_pdu_type *pdu_type, u64_t *seq_auth)
+DECL|trans_unseg|function|static int trans_unseg(struct net_buf_simple *buf, struct bt_mesh_net_rx *rx, u64_t *seq_auth)
 DECL|ttl|member|u8_t ttl;
