@@ -88,6 +88,7 @@ DECL|hdr|member|struct radio_pdu_node_rx_hdr hdr;
 DECL|hdr|member|struct shdr hdr;
 DECL|initiate|member|u8_t initiate:1;
 DECL|initiate|member|u8_t initiate;
+DECL|initiate|member|u8_t initiate;
 DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
 DECL|instant|member|u16_t instant;
