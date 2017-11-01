@@ -12,6 +12,8 @@ DECL|EDMA_EnableAsyncRequest|function|static inline void EDMA_EnableAsyncRequest
 DECL|EDMA_EnableAutoStopRequest|function|static inline void EDMA_EnableAutoStopRequest(DMA_Type *base, uint32_t channel, bool enable)
 DECL|EDMA_EnableChannelRequest|function|static inline void EDMA_EnableChannelRequest(DMA_Type *base, uint32_t channel)
 DECL|EDMA_GetErrorStatusFlags|function|static inline uint32_t EDMA_GetErrorStatusFlags(DMA_Type *base)
+DECL|EDMA_GetNextTCDAddress|function|static inline uint32_t EDMA_GetNextTCDAddress(edma_handle_t *handle)
+DECL|EDMA_GetUnusedTCDNumber|function|static inline uint32_t EDMA_GetUnusedTCDNumber(edma_handle_t *handle)
 DECL|EDMA_SetChannelPreemptionConfig|function|static inline void EDMA_SetChannelPreemptionConfig(DMA_Type *base, uint32_t channel, const edma_channel_Preemption_config_t *config)
 DECL|EDMA_TcdEnableAutoStopRequest|function|static inline void EDMA_TcdEnableAutoStopRequest(edma_tcd_t *tcd, bool enable)
 DECL|EDMA_TcdSetBandWidth|function|static inline void EDMA_TcdSetBandWidth(edma_tcd_t *tcd, edma_bandwidth_t bandWidth)

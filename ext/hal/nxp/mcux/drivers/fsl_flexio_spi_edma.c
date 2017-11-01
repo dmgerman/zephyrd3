@@ -1,0 +1,15 @@
+DECL|FLEXIO_SPI_EDMAConfig|function|static void FLEXIO_SPI_EDMAConfig(FLEXIO_SPI_Type *base, flexio_spi_master_edma_handle_t *handle, flexio_spi_transfer_t *xfer)
+DECL|FLEXIO_SPI_HANDLE_COUNT|macro|FLEXIO_SPI_HANDLE_COUNT
+DECL|FLEXIO_SPI_MasterTransferAbortEDMA|function|void FLEXIO_SPI_MasterTransferAbortEDMA(FLEXIO_SPI_Type *base, flexio_spi_master_edma_handle_t *handle)
+DECL|FLEXIO_SPI_MasterTransferCreateHandleEDMA|function|status_t FLEXIO_SPI_MasterTransferCreateHandleEDMA(FLEXIO_SPI_Type *base, flexio_spi_master_edma_handle_t *handle, flexio_spi_master_edma_transfer_callback_t callback, void *userData, edma_handle_t *txHandle,
+DECL|FLEXIO_SPI_MasterTransferEDMA|function|status_t FLEXIO_SPI_MasterTransferEDMA(FLEXIO_SPI_Type *base, flexio_spi_master_edma_handle_t *handle, flexio_spi_transfer_t *xfer)
+DECL|FLEXIO_SPI_MasterTransferGetCountEDMA|function|status_t FLEXIO_SPI_MasterTransferGetCountEDMA(FLEXIO_SPI_Type *base, flexio_spi_master_edma_handle_t *handle, size_t *count)
+DECL|FLEXIO_SPI_RxEDMACallback|function|static void FLEXIO_SPI_RxEDMACallback(edma_handle_t *handle, void *param, bool transferDone, uint32_t tcds)
+DECL|FLEXIO_SPI_SlaveTransferEDMA|function|status_t FLEXIO_SPI_SlaveTransferEDMA(FLEXIO_SPI_Type *base, flexio_spi_slave_edma_handle_t *handle, flexio_spi_transfer_t *xfer)
+DECL|FLEXIO_SPI_TxEDMACallback|function|static void FLEXIO_SPI_TxEDMACallback(edma_handle_t *handle, void *param, bool transferDone, uint32_t tcds)
+DECL|_flexio_spi_master_edma_private_handle|struct|typedef struct _flexio_spi_master_edma_private_handle
+DECL|base|member|FLEXIO_SPI_Type *base;
+DECL|flexio_spi_master_edma_private_handle_t|typedef|} flexio_spi_master_edma_private_handle_t;
+DECL|handle|member|flexio_spi_master_edma_handle_t *handle;
+DECL|s_dummyData|variable|s_dummyData
+DECL|s_edmaPrivateHandle|variable|s_edmaPrivateHandle

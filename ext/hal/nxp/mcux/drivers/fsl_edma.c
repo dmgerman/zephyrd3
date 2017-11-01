@@ -45,12 +45,16 @@ DECL|DMA17_DriverIRQHandler|function|void DMA17_DriverIRQHandler(void)
 DECL|DMA18_DriverIRQHandler|function|void DMA18_DriverIRQHandler(void)
 DECL|DMA19_DriverIRQHandler|function|void DMA19_DriverIRQHandler(void)
 DECL|DMA1_04_DriverIRQHandler|function|void DMA1_04_DriverIRQHandler(void)
+DECL|DMA1_04_DriverIRQHandler|function|void DMA1_04_DriverIRQHandler(void)
 DECL|DMA1_08_DriverIRQHandler|function|void DMA1_08_DriverIRQHandler(void)
+DECL|DMA1_15_DriverIRQHandler|function|void DMA1_15_DriverIRQHandler(void)
 DECL|DMA1_15_DriverIRQHandler|function|void DMA1_15_DriverIRQHandler(void)
 DECL|DMA1_19_DriverIRQHandler|function|void DMA1_19_DriverIRQHandler(void)
 DECL|DMA1_210_DriverIRQHandler|function|void DMA1_210_DriverIRQHandler(void)
 DECL|DMA1_26_DriverIRQHandler|function|void DMA1_26_DriverIRQHandler(void)
+DECL|DMA1_26_DriverIRQHandler|function|void DMA1_26_DriverIRQHandler(void)
 DECL|DMA1_311_DriverIRQHandler|function|void DMA1_311_DriverIRQHandler(void)
+DECL|DMA1_37_DriverIRQHandler|function|void DMA1_37_DriverIRQHandler(void)
 DECL|DMA1_37_DriverIRQHandler|function|void DMA1_37_DriverIRQHandler(void)
 DECL|DMA1_412_DriverIRQHandler|function|void DMA1_412_DriverIRQHandler(void)
 DECL|DMA1_513_DriverIRQHandler|function|void DMA1_513_DriverIRQHandler(void)
@@ -99,7 +103,7 @@ DECL|EDMA_GetRemainingMajorLoopCount|function|uint32_t EDMA_GetRemainingMajorLoo
 DECL|EDMA_HandleIRQ|function|void EDMA_HandleIRQ(edma_handle_t *handle)
 DECL|EDMA_Init|function|void EDMA_Init(DMA_Type *base, const edma_config_t *config)
 DECL|EDMA_InstallTCDMemory|function|void EDMA_InstallTCDMemory(edma_handle_t *handle, edma_tcd_t *tcdPool, uint32_t tcdSize)
-DECL|EDMA_InstallTCD|function|static void EDMA_InstallTCD(DMA_Type *base, uint32_t channel, edma_tcd_t *tcd)
+DECL|EDMA_InstallTCD|function|void EDMA_InstallTCD(DMA_Type *base, uint32_t channel, edma_tcd_t *tcd)
 DECL|EDMA_PrepareTransfer|function|void EDMA_PrepareTransfer(edma_transfer_config_t *config, void *srcAddr, uint32_t srcWidth, void *destAddr, uint32_t destWidth,
 DECL|EDMA_ResetChannel|function|void EDMA_ResetChannel(DMA_Type *base, uint32_t channel)
 DECL|EDMA_SetBandWidth|function|void EDMA_SetBandWidth(DMA_Type *base, uint32_t channel, edma_bandwidth_t bandWidth)
@@ -119,6 +123,7 @@ DECL|EDMA_TcdSetChannelLink|function|void EDMA_TcdSetChannelLink(edma_tcd_t *tcd
 DECL|EDMA_TcdSetMinorOffsetConfig|function|void EDMA_TcdSetMinorOffsetConfig(edma_tcd_t *tcd, const edma_minor_offset_config_t *config)
 DECL|EDMA_TcdSetModulo|function|void EDMA_TcdSetModulo(edma_tcd_t *tcd, edma_modulo_t srcModulo, edma_modulo_t destModulo)
 DECL|EDMA_TcdSetTransferConfig|function|void EDMA_TcdSetTransferConfig(edma_tcd_t *tcd, const edma_transfer_config_t *config, edma_tcd_t *nextTcd)
+DECL|Get_StartInstance|function|static uint8_t Get_StartInstance(void)
 DECL|s_EDMAHandle|variable|s_EDMAHandle
 DECL|s_edmaBases|variable|s_edmaBases
 DECL|s_edmaClockName|variable|s_edmaClockName

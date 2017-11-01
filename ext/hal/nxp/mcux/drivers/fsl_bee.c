@@ -1,0 +1,8 @@
+DECL|BEE_ClearStatusFlags|function|void BEE_ClearStatusFlags(BEE_Type *base, uint32_t mask)
+DECL|BEE_Deinit|function|void BEE_Deinit(BEE_Type *base)
+DECL|BEE_GetDefaultConfig|function|void BEE_GetDefaultConfig(bee_region_config_t *config)
+DECL|BEE_GetStatusFlags|function|uint32_t BEE_GetStatusFlags(BEE_Type *base)
+DECL|BEE_Init|function|void BEE_Init(BEE_Type *base)
+DECL|BEE_SetRegionConfig|function|status_t BEE_SetRegionConfig(BEE_Type *base, bee_region_t region, const bee_region_config_t *config)
+DECL|BEE_SetRegionKey|function|status_t BEE_SetRegionKey( BEE_Type *base, bee_region_t region, const uint8_t *key, size_t keySize, const uint8_t *nonce, size_t nonceSize)
+DECL|aligned_memcpy|function|static void aligned_memcpy(void *dst, const void *src, size_t size)

@@ -41,6 +41,7 @@ DECL|channel|member|uint8_t channel; /*!< Data channel used in transfer.*/
 DECL|channel|member|uint8_t channel; /*!< Transfer channel */
 DECL|dataSize|member|size_t dataSize; /*!< Transfer size. */
 DECL|data|member|uint8_t *data; /*!< Data start address to transfer. */
+DECL|isFrameSyncCompact|member|bool isFrameSyncCompact; /*!< True means Frame sync length is configurable according to bitWidth, false means frame
 DECL|kSAI_BclkSourceBusclk|enumerator|kSAI_BclkSourceBusclk = 0x0U, /*!< Bit clock using bus clock */
 DECL|kSAI_BclkSourceMclkDiv|enumerator|kSAI_BclkSourceMclkDiv, /*!< Bit clock using master clock divider */
 DECL|kSAI_BclkSourceOtherSai0|enumerator|kSAI_BclkSourceOtherSai0, /*!< Bit clock from other SAI device */
@@ -70,8 +71,8 @@ DECL|kSAI_ModeAsync|enumerator|kSAI_ModeAsync = 0x0U, /*!< Asynchronous mode */
 DECL|kSAI_ModeSyncWithOtherRx|enumerator|kSAI_ModeSyncWithOtherRx /*!< Synchronous with another SAI receiver */
 DECL|kSAI_ModeSyncWithOtherTx|enumerator|kSAI_ModeSyncWithOtherTx, /*!< Synchronous with another SAI transmit */
 DECL|kSAI_ModeSync|enumerator|kSAI_ModeSync, /*!< Synchronous mode (with receiver or transmit) */
-DECL|kSAI_MonoLeft|enumerator|kSAI_MonoLeft, /*!< Only left channel have sound. */
-DECL|kSAI_MonoRight|enumerator|kSAI_MonoRight /*!< Only Right channel have sound. */
+DECL|kSAI_MonoLeft|enumerator|kSAI_MonoLeft /*!< Only left channel have sound. */
+DECL|kSAI_MonoRight|enumerator|kSAI_MonoRight, /*!< Only Right channel have sound. */
 DECL|kSAI_ResetAll|enumerator|kSAI_ResetAll = I2S_TCSR_SR_MASK | I2S_TCSR_FR_MASK /*!< All reset. */
 DECL|kSAI_ResetTypeFIFO|enumerator|kSAI_ResetTypeFIFO = I2S_TCSR_FR_MASK, /*!< FIFO reset, reset the FIFO read and write pointer */
 DECL|kSAI_ResetTypeSoftware|enumerator|kSAI_ResetTypeSoftware = I2S_TCSR_SR_MASK, /*!< Software reset, reset the logic state */

@@ -1,0 +1,28 @@
+DECL|DCACHE_CleanByRange|function|void DCACHE_CleanByRange(uint32_t address, uint32_t size_byte)
+DECL|DCACHE_CleanInvalidateByRange|function|void DCACHE_CleanInvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|DCACHE_InvalidateByRange|function|void DCACHE_InvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|ICACHE_InvalidateByRange|function|void ICACHE_InvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|L1CACHE_InvalidateICacheByRange|function|void L1CACHE_InvalidateICacheByRange(uint32_t address, uint32_t size_byte)
+DECL|L2CACHE_16WAYS_MASK|macro|L2CACHE_16WAYS_MASK
+DECL|L2CACHE_1KBCOVERTOB|macro|L2CACHE_1KBCOVERTOB
+DECL|L2CACHE_8WAYS_MASK|macro|L2CACHE_8WAYS_MASK
+DECL|L2CACHE_CleanByRange|function|void L2CACHE_CleanByRange(uint32_t address, uint32_t size_byte)
+DECL|L2CACHE_CleanInvalidateByRange|function|void L2CACHE_CleanInvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|L2CACHE_CleanInvalidateLineByAddr|function|static uint32_t L2CACHE_CleanInvalidateLineByAddr(uint32_t address)
+DECL|L2CACHE_CleanInvalidate|function|void L2CACHE_CleanInvalidate(void)
+DECL|L2CACHE_CleanLineByAddr|function|static uint32_t L2CACHE_CleanLineByAddr(uint32_t address)
+DECL|L2CACHE_Clean|function|void L2CACHE_Clean(void)
+DECL|L2CACHE_Disable|function|void L2CACHE_Disable(void)
+DECL|L2CACHE_Enable|function|void L2CACHE_Enable(void)
+DECL|L2CACHE_GetDefaultConfig|function|void L2CACHE_GetDefaultConfig(l2cache_config_t *config)
+DECL|L2CACHE_GetWayNumSize|function|static void L2CACHE_GetWayNumSize(uint32_t *num_ways, uint32_t *size_way)
+DECL|L2CACHE_Init|function|void L2CACHE_Init(l2cache_config_t *config)
+DECL|L2CACHE_InvalidateByRange|function|void L2CACHE_InvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|L2CACHE_InvalidateLineByAddr|function|static uint32_t L2CACHE_InvalidateLineByAddr(uint32_t address)
+DECL|L2CACHE_Invalidate|function|void L2CACHE_Invalidate(void)
+DECL|L2CACHE_LOCKDOWN_REGNUM|macro|L2CACHE_LOCKDOWN_REGNUM
+DECL|L2CACHE_LockdownByWayEnable|function|void L2CACHE_LockdownByWayEnable(uint32_t masterId, uint32_t mask, bool enable)
+DECL|L2CACHE_OPERATION_TIMEOUT|macro|L2CACHE_OPERATION_TIMEOUT
+DECL|L2CACHE_SAMLLWAYS_SIZE|macro|L2CACHE_SAMLLWAYS_SIZE
+DECL|L2CACHE_SMALLWAYS_NUM|macro|L2CACHE_SMALLWAYS_NUM
+DECL|L2CACHE_SetAndWaitBackGroundOperate|function|static void L2CACHE_SetAndWaitBackGroundOperate(uint32_t auxCtlReg, uint32_t regAddr)
