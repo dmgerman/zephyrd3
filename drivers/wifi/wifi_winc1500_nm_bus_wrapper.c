@@ -3,6 +3,7 @@ DECL|NM_BUS_MAX_TRX_SZ|macro|NM_BUS_MAX_TRX_SZ
 DECL|SLAVE_ADDRESS|macro|SLAVE_ADDRESS
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|cs_ctrl|variable|cs_ctrl
 DECL|egstrNmBusCapabilities|variable|egstrNmBusCapabilities
 DECL|nm_bus_deinit|function|s8_t nm_bus_deinit(void)
 DECL|nm_bus_init|function|s8_t nm_bus_init(void *pvinit)
