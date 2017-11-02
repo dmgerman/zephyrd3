@@ -28,6 +28,7 @@ DECL|net_tcp_get_hdr|function|struct net_tcp_hdr *net_tcp_get_hdr(struct net_pkt
 DECL|net_tcp_get_recv_mss|function|u16_t net_tcp_get_recv_mss(const struct net_tcp *tcp)
 DECL|net_tcp_get_recv_wnd|function|u32_t net_tcp_get_recv_wnd(const struct net_tcp *tcp)
 DECL|net_tcp_init|function|void net_tcp_init(void)
+DECL|net_tcp_parse_opts|function|int net_tcp_parse_opts(struct net_pkt *pkt, int opt_totlen, struct net_tcp_options *opts)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_pkt **pkt)
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, u8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
