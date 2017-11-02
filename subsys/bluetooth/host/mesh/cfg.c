@@ -44,6 +44,7 @@ DECL|gatt_proxy_get|function|static void gatt_proxy_get(struct bt_mesh_model *mo
 DECL|gatt_proxy_set|function|static void gatt_proxy_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|get_model|function|static struct bt_mesh_model *get_model(struct bt_mesh_elem *elem, struct net_buf_simple *buf, bool *vnd)
 DECL|hb_log|function|static u8_t hb_log(u16_t val)
+DECL|hb_pub_count_log|function|static u8_t hb_pub_count_log(u16_t val)
 DECL|hb_pub_disable|function|static void hb_pub_disable(struct bt_mesh_cfg *cfg)
 DECL|hb_pub_param|struct|struct hb_pub_param {
 DECL|hb_pub_send_status|function|static void hb_pub_send_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, u8_t status, struct hb_pub_param *orig_msg)
