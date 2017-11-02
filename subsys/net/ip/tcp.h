@@ -59,7 +59,7 @@ DECL|recv_max_ack|member|u32_t recv_max_ack;
 DECL|recv_user_data|member|void *recv_user_data;
 DECL|recv_wnd|member|u16_t recv_wnd;
 DECL|retry_timeout_shift|member|u32_t retry_timeout_shift : 5;
-DECL|retry_timer|member|struct k_timer retry_timer;
+DECL|retry_timer|member|struct k_delayed_work retry_timer;
 DECL|send_ack|member|u32_t send_ack;
 DECL|send_seq|member|u32_t send_seq;
 DECL|sent_ack|member|u32_t sent_ack;
