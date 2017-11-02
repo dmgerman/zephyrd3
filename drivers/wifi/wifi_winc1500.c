@@ -1,8 +1,3 @@
-DECL|CONFIG_OFFLOAD_MAX_SOCKETS|macro|CONFIG_OFFLOAD_MAX_SOCKETS
-DECL|CONFIG_WINC1500_BUF_CTR|macro|CONFIG_WINC1500_BUF_CTR
-DECL|CONFIG_WINC1500_MAX_PACKET_SIZE|macro|CONFIG_WINC1500_MAX_PACKET_SIZE
-DECL|CONFIG_WINC1500_THREAD_PRIO|macro|CONFIG_WINC1500_THREAD_PRIO
-DECL|CONFIG_WINC1500_THREAD_STACK_SIZE|macro|CONFIG_WINC1500_THREAD_STACK_SIZE
 DECL|HOSTNAME_MAX_SIZE|macro|HOSTNAME_MAX_SIZE
 DECL|SOCKET_MSG_ACCEPT|enumerator|SOCKET_MSG_ACCEPT,
 DECL|SOCKET_MSG_BIND|enumerator|SOCKET_MSG_BIND = 1,
@@ -48,7 +43,7 @@ DECL|s16BufferSize|member|sint16 s16BufferSize;
 DECL|s8Error|member|sint8 s8Error;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
 DECL|send_user_data|member|void *send_user_data;
-DECL|socket_data|member|struct socket_data socket_data[CONFIG_OFFLOAD_MAX_SOCKETS];
+DECL|socket_data|member|struct socket_data socket_data[
 DECL|socket_data|struct|struct socket_data {
 DECL|socket_error_string|function|static char *socket_error_string(s8_t err)
 DECL|socket_errors|enum|enum socket_errors {
