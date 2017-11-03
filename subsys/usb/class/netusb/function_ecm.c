@@ -12,8 +12,5 @@ DECL|ecm_ep_data|variable|ecm_ep_data
 DECL|ecm_function|variable|ecm_function
 DECL|ecm_int_in|function|static void ecm_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|ecm_send|function|static int ecm_send(struct net_pkt *pkt)
-DECL|ecm|struct|struct ecm {
-DECL|ecm|variable|ecm
-DECL|iface|member|struct net_if *iface;
 DECL|in_pkt|variable|in_pkt
-DECL|skip|member|bool skip;
+DECL|skip|variable|skip
