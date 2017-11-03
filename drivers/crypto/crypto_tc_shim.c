@@ -8,7 +8,7 @@ DECL|do_ccm_encrypt_mac|function|static int do_ccm_encrypt_mac(struct cipher_ctx
 DECL|do_ctr_op|function|static int do_ctr_op(struct cipher_ctx *ctx, struct cipher_pkt *op, u8_t *iv)
 DECL|get_unused_session|function|static int get_unused_session(void)
 DECL|tc_driver_state|variable|tc_driver_state
-DECL|tc_query_caps|function|int tc_query_caps(struct device *dev)
-DECL|tc_session_free|function|int tc_session_free(struct device *dev, struct cipher_ctx *sessn)
-DECL|tc_session_setup|function|int tc_session_setup(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)
+DECL|tc_query_caps|function|static int tc_query_caps(struct device *dev)
+DECL|tc_session_free|function|static int tc_session_free(struct device *dev, struct cipher_ctx *sessn)
+DECL|tc_session_setup|function|static int tc_session_setup(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)
 DECL|tc_shim_init|function|static int tc_shim_init(struct device *dev)
