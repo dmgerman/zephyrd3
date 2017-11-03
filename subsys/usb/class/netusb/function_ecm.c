@@ -7,11 +7,11 @@ DECL|VERBOSE_DEBUG|macro|VERBOSE_DEBUG
 DECL|append_bytes|function|static int append_bytes(u8_t *out_buf, u16_t buf_len, u8_t *data,u16_t len, u16_t remaining)
 DECL|ecm_bulk_in|function|void ecm_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|ecm_bulk_out|function|void ecm_bulk_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|ecm_class_handler|function|int ecm_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
+DECL|ecm_class_handler|function|static int ecm_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|ecm_function|variable|ecm_function
 DECL|ecm_int_in|function|void ecm_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|ecm_register_function|function|struct netusb_function *ecm_register_function(struct net_if *iface, u8_t in)
-DECL|ecm_send|function|int ecm_send(struct net_pkt *pkt)
+DECL|ecm_send|function|static int ecm_send(struct net_pkt *pkt)
 DECL|ecm|struct|struct ecm {
 DECL|ecm|variable|ecm
 DECL|ep_in|member|u8_t ep_in;
