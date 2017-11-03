@@ -1,11 +1,9 @@
-DECL|NETUSB_NUM_CONF|macro|NETUSB_NUM_CONF
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__netusb|struct|static struct __netusb {
 DECL|api_funcs|variable|api_funcs
-DECL|conf_index|member|u8_t conf_index;
 DECL|conf|member|u8_t conf;
-DECL|func|member|struct netusb_function *func[NETUSB_NUM_CONF];
+DECL|func|member|struct netusb_function *func;
 DECL|iface|member|struct net_if *iface;
 DECL|interface_data|variable|interface_data
 DECL|netusb_class_handler|function|static int netusb_class_handler(struct usb_setup_packet *setup,s32_t *len, u8_t **data)
