@@ -2,6 +2,7 @@ DECL|NET_EVENT_IF_CMD_DOWN|enumerator|NET_EVENT_IF_CMD_DOWN = 1,
 DECL|NET_EVENT_IF_CMD_UP|enumerator|NET_EVENT_IF_CMD_UP,
 DECL|NET_EVENT_IF_DOWN|macro|NET_EVENT_IF_DOWN
 DECL|NET_EVENT_IF_UP|macro|NET_EVENT_IF_UP
+DECL|NET_EVENT_INFO_MAX_SIZE|macro|NET_EVENT_INFO_MAX_SIZE
 DECL|NET_EVENT_IPV4_ADDR_ADD|macro|NET_EVENT_IPV4_ADDR_ADD
 DECL|NET_EVENT_IPV4_ADDR_DEL|macro|NET_EVENT_IPV4_ADDR_DEL
 DECL|NET_EVENT_IPV4_CMD_ADDR_ADD|enumerator|NET_EVENT_IPV4_CMD_ADDR_ADD = 1,
@@ -50,6 +51,15 @@ DECL|_NET_IPV4_LAYER|macro|_NET_IPV4_LAYER
 DECL|_NET_IPV6_CORE_CODE|macro|_NET_IPV6_CORE_CODE
 DECL|_NET_IPV6_LAYER|macro|_NET_IPV6_LAYER
 DECL|__NET_EVENT_H__|macro|__NET_EVENT_H__
+DECL|addr|member|struct in6_addr addr;
+DECL|addr|member|struct in6_addr addr;
+DECL|addr|member|struct in6_addr addr; /* addr/prefix */
+DECL|idx|member|int idx; /* NBR index*/
 DECL|net_event_if_cmd|enum|enum net_event_if_cmd {
 DECL|net_event_ipv4_cmd|enum|enum net_event_ipv4_cmd {
+DECL|net_event_ipv6_addr|struct|struct net_event_ipv6_addr {
 DECL|net_event_ipv6_cmd|enum|enum net_event_ipv6_cmd {
+DECL|net_event_ipv6_nbr|struct|struct net_event_ipv6_nbr {
+DECL|net_event_ipv6_route|struct|struct net_event_ipv6_route {
+DECL|nexthop|member|struct in6_addr nexthop;
+DECL|prefix_len|member|u8_t prefix_len;

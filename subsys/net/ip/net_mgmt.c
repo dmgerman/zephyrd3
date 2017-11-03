@@ -8,7 +8,7 @@ DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|in_event|variable|in_event
 DECL|info_length|member|size_t info_length;
-DECL|info|member|u8_t info[CONFIG_NET_MGMT_EVENT_INFO_SIZE];
+DECL|info|member|u8_t info[NET_EVENT_INFO_MAX_SIZE];
 DECL|mgmt_add_event_mask|function|static inline void mgmt_add_event_mask(u32_t event_mask)
 DECL|mgmt_clean_event|function|static inline void mgmt_clean_event(struct mgmt_event_entry *mgmt_event)
 DECL|mgmt_event_entry|struct|struct mgmt_event_entry {
