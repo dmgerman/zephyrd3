@@ -11,7 +11,6 @@ DECL|netusb_config|variable|netusb_config
 DECL|netusb_connect_media|function|static int netusb_connect_media(void)
 DECL|netusb_custom_handler|function|static int netusb_custom_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|netusb_disconnect_media|function|static int netusb_disconnect_media(void)
-DECL|netusb_ep_data|variable|netusb_ep_data
 DECL|netusb_init_dev|function|static int netusb_init_dev(struct device *dev)
 DECL|netusb_init|function|static void netusb_init(struct net_if *iface)
 DECL|netusb_recv|function|void netusb_recv(struct net_pkt *pkt)
