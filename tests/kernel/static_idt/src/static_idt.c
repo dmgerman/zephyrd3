@@ -8,6 +8,7 @@ DECL|idt_spur_task|function|void idt_spur_task(void *arg1, void *arg2, void *arg
 DECL|idt_stub_test|function|int idt_stub_test(void)
 DECL|int_handler_executed|variable|int_handler_executed
 DECL|isr_handler|function|void isr_handler(void)
-DECL|main|function|void main(void)
 DECL|my_thread|variable|my_thread
 DECL|spur_handler_aborted_thread|variable|spur_handler_aborted_thread
+DECL|test_main|function|void test_main(void)
+DECL|testing_static_idt|function|void testing_static_idt(void)
