@@ -22,7 +22,6 @@ DECL|arch|member|struct _kernel_arch arch;
 DECL|cache|member|struct k_thread *cache;
 DECL|current_fp|member|struct k_thread *current_fp;
 DECL|current|member|struct k_thread *current;
-DECL|free_thread_ids|member|u8_t free_thread_ids[CONFIG_MAX_THREAD_BYTES];
 DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
 DECL|irq_stack|member|char *irq_stack;
 DECL|nested|member|u32_t nested;

@@ -19,5 +19,6 @@ DECL|otype_to_str|function|const char *otype_to_str(enum k_objects otype)
 DECL|parent_id|member|int parent_id;
 DECL|parent|member|struct k_thread *parent;
 DECL|perm_ctx|struct|struct perm_ctx {
+DECL|thread_index_get|function|static int thread_index_get(struct k_thread *t)
 DECL|thread_perms_test|function|static int thread_perms_test(struct _k_object *ko)
 DECL|wordlist_cb|function|static void wordlist_cb(struct _k_object *ko, void *ctx_ptr)
