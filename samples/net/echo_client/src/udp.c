@@ -8,7 +8,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|UDP_SLEEP|macro|UDP_SLEEP
 DECL|VERIFY_CERTS|macro|VERIFY_CERTS
 DECL|compare_udp_data|function|static bool compare_udp_data(struct net_pkt *pkt, int expecting_len)
-DECL|connect_udp|function|static int connect_udp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *dtls_result_buf, size_t dtls_result_buf_len, u8_t *stack, size_t stack_size)
+DECL|connect_udp|function|static int connect_udp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *dtls_result_buf, size_t dtls_result_buf_len, k_thread_stack_t *stack, size_t stack_size)
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|data_udp_pool|macro|data_udp_pool
 DECL|dtls_result_ipv4|macro|dtls_result_ipv4
