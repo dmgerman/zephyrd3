@@ -30,6 +30,13 @@ DECL|accept_user_data|member|void *accept_user_data;
 DECL|connect_cb|member|net_context_connect_cb_t connect_cb;
 DECL|connect_user_data|member|void *connect_user_data;
 DECL|context|member|struct net_context *context;
+DECL|handle_socket_msg_accept|function|static void handle_socket_msg_accept(struct socket_data *sd, void *pvMsg)
+DECL|handle_socket_msg_bind|function|static void handle_socket_msg_bind(struct socket_data *sd, void *pvMsg)
+DECL|handle_socket_msg_connect|function|static void handle_socket_msg_connect(struct socket_data *sd, void *pvMsg)
+DECL|handle_socket_msg_listen|function|static void handle_socket_msg_listen(struct socket_data *sd, void *pvMsg)
+DECL|handle_socket_msg_recv|function|static bool handle_socket_msg_recv(SOCKET sock, struct socket_data *sd, void *pvMsg)
+DECL|handle_wifi_con_state_changed|function|static void handle_wifi_con_state_changed(void *pvMsg)
+DECL|handle_wifi_dhcp_conf|function|static void handle_wifi_dhcp_conf(void *pvMsg)
 DECL|iface|member|struct net_if *iface;
 DECL|mac|member|unsigned char mac[6];
 DECL|pkt_buf|member|struct net_buf *pkt_buf;
