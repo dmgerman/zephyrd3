@@ -10,10 +10,10 @@ DECL|ataes132a_config|variable|ataes132a_config
 DECL|ataes132a_data|variable|ataes132a_data
 DECL|ataes132a_init_states|function|static void ataes132a_init_states(void)
 DECL|ataes132a_init|function|int ataes132a_init(struct device *dev)
-DECL|ataes132a_query_caps|function|int ataes132a_query_caps(struct device *dev)
+DECL|ataes132a_query_caps|function|static int ataes132a_query_caps(struct device *dev)
 DECL|ataes132a_send_command|function|static int ataes132a_send_command(struct device *dev, u8_t opcode, u8_t mode, u8_t *params, u8_t nparams, u8_t *response, u8_t *nresponse)
-DECL|ataes132a_session_free|function|int ataes132a_session_free(struct device *dev, struct cipher_ctx *session)
-DECL|ataes132a_session_setup|function|int ataes132a_session_setup(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)
+DECL|ataes132a_session_free|function|static int ataes132a_session_free(struct device *dev, struct cipher_ctx *session)
+DECL|ataes132a_session_setup|function|static int ataes132a_session_setup(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)
 DECL|ataes132a_state|variable|ataes132a_state
 DECL|crypto_enc_funcs|variable|crypto_enc_funcs
 DECL|do_block|function|static int do_block(struct cipher_ctx *ctx, struct cipher_pkt *pkt)
