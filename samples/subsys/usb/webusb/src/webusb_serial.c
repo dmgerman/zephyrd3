@@ -1,10 +1,49 @@
+DECL|CDC1_NUM_EP|macro|CDC1_NUM_EP
+DECL|CDC2_NUM_EP|macro|CDC2_NUM_EP
+DECL|CDC_BULK_EP_MPS|macro|CDC_BULK_EP_MPS
+DECL|CDC_CLASS_REQ_MAX_DATA_SIZE|macro|CDC_CLASS_REQ_MAX_DATA_SIZE
+DECL|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US|macro|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US
+DECL|CDC_ENDP_INT|macro|CDC_ENDP_INT
+DECL|CDC_ENDP_IN|macro|CDC_ENDP_IN
+DECL|CDC_ENDP_OUT|macro|CDC_ENDP_OUT
+DECL|CDC_INTERRUPT_EP_MPS|macro|CDC_INTERRUPT_EP_MPS
 DECL|DEFAUL_BAUDRATE|macro|DEFAUL_BAUDRATE
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|HIGH_BYTE|macro|HIGH_BYTE
-DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|WEBUSB_BUFFER_SIZE|macro|WEBUSB_BUFFER_SIZE
+DECL|WEBUSB_ENDP_IN|macro|WEBUSB_ENDP_IN
+DECL|WEBUSB_ENDP_OUT|macro|WEBUSB_ENDP_OUT
+DECL|WEBUSB_NUM_EP|macro|WEBUSB_NUM_EP
+DECL|WEBUSB_NUM_ITF|macro|WEBUSB_NUM_ITF
+DECL|__packed|variable|__packed
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bLength|member|u8_t bLength;
+DECL|bString|member|u8_t bString[0x0C - 1];
+DECL|bString|member|u8_t bString[0x0C - 2];
+DECL|bString|member|u8_t bString[0x0E - 1];
 DECL|cb|member|uart_irq_callback_t cb;
+DECL|cdc_acm_cfg|member|} __packed cdc_acm_cfg;
+DECL|cfg_descr|member|struct usb_cfg_descriptor cfg_descr;
+DECL|dev_common_descriptor|struct|struct dev_common_descriptor {
+DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
+DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
+DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
+DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;
+DECL|if0_header|member|struct cdc_header_descriptor if0_header;
+DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
+DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
+DECL|if1_in_ep|member|struct usb_ep_descriptor if1_in_ep;
+DECL|if1_out_ep|member|struct usb_ep_descriptor if1_out_ep;
+DECL|if1|member|struct usb_if_descriptor if1;
+DECL|if2_in_ep|member|struct usb_ep_descriptor if2_in_ep;
+DECL|if2_out_ep|member|struct usb_ep_descriptor if2_out_ep;
+DECL|if2|member|struct usb_if_descriptor if2;
 DECL|interface_data|member|u8_t interface_data[CDC_CLASS_REQ_MAX_DATA_SIZE];
+DECL|lang_descr|member|struct usb_string_descriptor lang_descr;
 DECL|line_coding|member|struct cdc_acm_line_coding line_coding;
 DECL|line_state|member|u8_t line_state;
 DECL|notification_sent|member|u8_t notification_sent;
@@ -15,9 +54,19 @@ DECL|rx_buf|member|u8_t rx_buf[WEBUSB_BUFFER_SIZE];/* Internal Rx buffer */
 DECL|rx_irq_ena|member|u8_t rx_irq_ena; /* Rx interrupt enable status */
 DECL|rx_ready|member|u8_t rx_ready; /* Rx ready status */
 DECL|serial_state|member|u8_t serial_state;
+DECL|string_descr|member|} __packed string_descr;
+DECL|term_descr|member|struct usb_desc_header term_descr;
 DECL|tx_irq_ena|member|u8_t tx_irq_ena; /* Tx interrupt enable status */
 DECL|tx_ready|member|u8_t tx_ready;
+DECL|unicode_mfr|member|} __packed unicode_mfr;
+DECL|unicode_product|member|} __packed unicode_product;
+DECL|unicode_sn|member|} __packed unicode_sn;
+DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
+DECL|usb_mfr_descriptor|struct|struct usb_mfr_descriptor {
+DECL|usb_product_descriptor|struct|struct usb_product_descriptor {
+DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
+DECL|usb_string_desription|struct|struct usb_string_desription {
 DECL|webusb_register_request_handlers|function|void webusb_register_request_handlers(struct webusb_req_handlers *handlers)
 DECL|webusb_serial_baudrate_set|function|static void webusb_serial_baudrate_set(struct device *dev, u32_t baudrate)
 DECL|webusb_serial_bulk_in|function|static void webusb_serial_bulk_in(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)
