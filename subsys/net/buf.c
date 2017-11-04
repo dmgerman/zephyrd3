@@ -56,6 +56,8 @@ DECL|net_buf_simple_push_le16|function|void net_buf_simple_push_le16(struct net_
 DECL|net_buf_simple_push_u8|function|void net_buf_simple_push_u8(struct net_buf_simple *buf, u8_t val)
 DECL|net_buf_simple_push|function|void *net_buf_simple_push(struct net_buf_simple *buf, size_t len)
 DECL|net_buf_simple_tailroom|function|size_t net_buf_simple_tailroom(struct net_buf_simple *buf)
+DECL|net_buf_slist_get|function|struct net_buf *net_buf_slist_get(sys_slist_t *list)
+DECL|net_buf_slist_put|function|void net_buf_slist_put(sys_slist_t *list, struct net_buf *buf)
 DECL|net_buf_unref_debug|function|void net_buf_unref_debug(struct net_buf *buf, const char *func, int line)
 DECL|pool_get_uninit|function|static inline struct net_buf *pool_get_uninit(struct net_buf_pool *pool, u16_t uninit_count)
 DECL|pool_id|function|static int pool_id(struct net_buf_pool *pool)
