@@ -31,12 +31,14 @@ DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, 
 DECL|ctl|member|ctl:1,
 DECL|dst|member|u16_t dst;
 DECL|dst|member|u16_t dst;
+DECL|friend_cred|member|friend_cred:1, /* Use Friendship creds */
 DECL|hb_sub_dst|variable|hb_sub_dst
 DECL|hdr|member|u8_t hdr;
 DECL|in_use|member|in_use:1,
 DECL|is_replay|function|static bool is_replay(struct bt_mesh_net_rx *rx)
 DECL|last|member|u32_t last;
-DECL|nack_count|member|u8_t nack_count; /* Number of not acked segments */
+DECL|nack_count|member|u8_t nack_count; /* Number of unacked segs */
+DECL|new_key|member|new_key:1; /* New/old key */
 DECL|obo|member|obo:1;
 DECL|retransmit|member|struct k_delayed_work retransmit; /* Retransmit timer */
 DECL|sdu_len_is_ok|function|static inline bool sdu_len_is_ok(bool ctl, u8_t seg_n)
@@ -44,7 +46,7 @@ DECL|sdu_recv|function|static int sdu_recv(struct bt_mesh_net_rx *rx, u8_t hdr, 
 DECL|seg_ack|function|static void seg_ack(struct k_work *work)
 DECL|seg_len|function|static inline u8_t seg_len(bool ctl)
 DECL|seg_n|member|u8_t seg_n:5,
-DECL|seg_n|member|u8_t seg_n; /* Last segment index */
+DECL|seg_n|member|u8_t seg_n:5, /* Last segment index */
 DECL|seg_retransmit|function|static void seg_retransmit(struct k_work *work)
 DECL|seg_rx_alloc|function|static struct seg_rx *seg_rx_alloc(struct bt_mesh_net_rx *net_rx, const u8_t *hdr, const u64_t *seq_auth, u8_t seg_n)
 DECL|seg_rx_find|function|static struct seg_rx *seg_rx_find(struct bt_mesh_net_rx *net_rx, const u64_t *seq_auth)
