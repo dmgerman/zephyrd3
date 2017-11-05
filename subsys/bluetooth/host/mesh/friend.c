@@ -11,6 +11,7 @@ DECL|bt_mesh_friend_clear_net_idx|function|void bt_mesh_friend_clear_net_idx(u16
 DECL|bt_mesh_friend_clear|function|int bt_mesh_friend_clear(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_friend_enqueue_rx|function|void bt_mesh_friend_enqueue_rx(struct bt_mesh_net_rx *rx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
 DECL|bt_mesh_friend_enqueue_tx|function|bool bt_mesh_friend_enqueue_tx(struct bt_mesh_net_tx *tx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
+DECL|bt_mesh_friend_find|function|struct bt_mesh_friend *bt_mesh_friend_find(u16_t net_idx, u16_t lpn_addr, bool established)
 DECL|bt_mesh_friend_init|function|int bt_mesh_friend_init(void)
 DECL|bt_mesh_friend_match|function|bool bt_mesh_friend_match(u16_t net_idx, u16_t addr)
 DECL|bt_mesh_friend_poll|function|int bt_mesh_friend_poll(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
@@ -35,7 +36,6 @@ DECL|friend_buf_alloc|function|static struct net_buf *friend_buf_alloc(u16_t src
 DECL|friend_clear|function|static void friend_clear(struct bt_mesh_friend *frnd)
 DECL|friend_lpn_enqueue_rx|function|static void friend_lpn_enqueue_rx(struct bt_mesh_friend *frnd, struct bt_mesh_net_rx *rx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
 DECL|friend_lpn_enqueue_tx|function|static void friend_lpn_enqueue_tx(struct bt_mesh_friend *frnd, struct bt_mesh_net_tx *tx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
-DECL|friend_lpn_find|function|static struct bt_mesh_friend *friend_lpn_find(u16_t net_idx, u16_t addr, bool established)
 DECL|friend_lpn_matches|function|static bool friend_lpn_matches(struct bt_mesh_friend *frnd, u16_t net_idx, u16_t addr)
 DECL|friend_pdu_info|struct|struct friend_pdu_info {
 DECL|friend_purge_old_ack|function|static void friend_purge_old_ack(struct bt_mesh_friend *frnd, u64_t *seq_auth, u16_t src)
