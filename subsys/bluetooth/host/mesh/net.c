@@ -44,10 +44,11 @@ DECL|check_dup|function|static bool check_dup(struct net_buf_simple *data)
 DECL|dup_cache_next|variable|dup_cache_next
 DECL|dup_cache|variable|dup_cache
 DECL|friend_cred|variable|friend_cred
+DECL|friend_decrypt|function|static int friend_decrypt(struct bt_mesh_subnet *sub, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|ivu_complete|function|static void ivu_complete(struct k_work *work)
 DECL|msg_cache_match|function|static bool msg_cache_match(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|msg_cache_next|variable|msg_cache_next
 DECL|msg_cache|variable|msg_cache
 DECL|msg_hash|function|static u64_t msg_hash(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
-DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, u8_t idx, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
+DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, const u8_t *enc, const u8_t *priv, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_find_and_decrypt|function|static int net_find_and_decrypt(const u8_t *data, size_t data_len,struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
