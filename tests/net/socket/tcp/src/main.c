@@ -5,7 +5,7 @@ DECL|TCP_TEARDOWN_TIMEOUT|macro|TCP_TEARDOWN_TIMEOUT
 DECL|TEST_STR_SMALL|macro|TEST_STR_SMALL
 DECL|prepare_sock_v4|function|static void prepare_sock_v4(const char *addr, u16_t port, int *sock, struct sockaddr_in *sockaddr)
 DECL|prepare_sock_v6|function|static void prepare_sock_v6(const char *addr, u16_t port, int *sock, struct sockaddr_in6 *sockaddr)
-DECL|test_accept|function|static int test_accept(int sock)
+DECL|test_accept|function|static void test_accept(int sock, int *new_sock, struct sockaddr *addr,socklen_t *addrlen)
 DECL|test_bind|function|static void test_bind(int sock, struct sockaddr *addr, socklen_t addrlen)
 DECL|test_close|function|static void test_close(int sock)
 DECL|test_connect|function|static void test_connect(int sock, struct sockaddr *addr, socklen_t addrlen)
