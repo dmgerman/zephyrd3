@@ -11,11 +11,10 @@ DECL|fault_get_reg|function|static int fault_get_reg(struct bt_mesh_model *model
 DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint8_t test_id, uint16_t company_id)
 DECL|has_reg_fault|variable|has_reg_fault
 DECL|health_srv|variable|health_srv
+DECL|main|function|void main(void)
 DECL|prov_complete|function|static void prov_complete(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
-DECL|test_main|function|void test_main(void)
-DECL|test_mesh|function|void test_mesh(void)
 DECL|timer|variable|timer
 DECL|vnd_models|variable|vnd_models
 DECL|vnd_ops|variable|vnd_ops
