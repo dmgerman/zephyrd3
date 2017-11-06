@@ -47,9 +47,14 @@ DECL|pkt5|variable|pkt5
 DECL|pton|member|bool pton;
 DECL|run_addr_parse_tests|function|void run_addr_parse_tests(void)
 DECL|run_net_addr_tests|function|void run_net_addr_tests(void)
+DECL|run_net_pkt_addr_parse_tests|function|void run_net_pkt_addr_parse_tests(void)
 DECL|run_tests|function|void run_tests(void)
 DECL|test_main|function|void test_main(void)
 DECL|test_net_addr|function|static bool test_net_addr(struct net_addr_test_data *data)
 DECL|tests|variable|tests
+DECL|v4_tcp_pkt1|variable|v4_tcp_pkt1
+DECL|v4_udp_pkt1|variable|v4_udp_pkt1
+DECL|v6_tcp_pkt1|variable|v6_tcp_pkt1
+DECL|v6_udp_pkt1|variable|v6_udp_pkt1
 DECL|verify|member|struct in6_addr verify;
 DECL|verify|member|struct in_addr verify;
