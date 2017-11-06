@@ -2,7 +2,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__netusb|struct|static struct __netusb {
 DECL|api_funcs|variable|api_funcs
-DECL|conf|member|u8_t conf;
+DECL|configured|member|bool configured;
 DECL|func|member|struct netusb_function *func;
 DECL|iface|member|struct net_if *iface;
 DECL|interface_data|variable|interface_data
