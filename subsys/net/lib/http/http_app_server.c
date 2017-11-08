@@ -3,6 +3,7 @@ DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|HTTPS_DEFAULT_PORT|macro|HTTPS_DEFAULT_PORT
 DECL|HTTP_DEFAULT_PORT|macro|HTTP_DEFAULT_PORT
 DECL|HTTP_STATUS_400_BR|macro|HTTP_STATUS_400_BR
+DECL|MAX_DESCRIPTION_LEN|macro|MAX_DESCRIPTION_LEN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|PORT_LEN|macro|PORT_LEN
@@ -18,7 +19,7 @@ DECL|http_conn|variable|http_conn
 DECL|http_data_sent|function|static void http_data_sent(struct net_app_ctx *app_ctx, int status, void *user_data_send, void *user_data)
 DECL|http_process_recv|function|static int http_process_recv(struct http_ctx *ctx)
 DECL|http_received|function|static void http_received(struct net_app_ctx *app_ctx, struct net_pkt *pkt, int status, void *user_data)
-DECL|http_send_error|function|int http_send_error(struct http_ctx *ctx, int code, u8_t *html_payload, size_t html_len)
+DECL|http_send_error|function|int http_send_error(struct http_ctx *ctx, int code, const char *description, u8_t *html_payload, size_t html_len)
 DECL|http_server_add_default|function|struct http_root_url *http_server_add_default(struct http_server_urls *my, http_url_cb_t cb)
 DECL|http_server_add_url|function|struct http_root_url *http_server_add_url(struct http_server_urls *my, const char *url, u8_t flags)
 DECL|http_server_conn_add|function|void http_server_conn_add(struct http_ctx *ctx)
