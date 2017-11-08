@@ -49,3 +49,4 @@ DECL|usb_dc_stm32_init|function|static int usb_dc_stm32_init(void)
 DECL|usb_dc_stm32_isr|function|static void usb_dc_stm32_isr(void *arg)
 DECL|usb_dc_stm32_state|struct|struct usb_dc_stm32_state {
 DECL|usb_dc_stm32_state|variable|usb_dc_stm32_state
+DECL|write_sem|member|struct k_sem write_sem; /** Write boolean semaphore */
