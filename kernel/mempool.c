@@ -11,6 +11,7 @@ DECL|get_bit_ptr|function|static int get_bit_ptr(struct k_mem_pool *p, int level
 DECL|get_pool|function|static struct k_mem_pool *get_pool(int id)
 DECL|init_mem_pool|function|static void init_mem_pool(struct k_mem_pool *p)
 DECL|init_static_pools|function|int init_static_pools(struct device *unused)
+DECL|k_calloc|function|void *k_calloc(size_t nmemb, size_t size)
 DECL|k_free|function|void k_free(void *ptr)
 DECL|k_malloc|function|void *k_malloc(size_t size)
 DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(struct k_mem_pool *p, struct k_mem_block *block, size_t size, s32_t timeout)
