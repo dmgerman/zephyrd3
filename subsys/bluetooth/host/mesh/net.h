@@ -52,6 +52,7 @@ DECL|bt_mesh_rpl|struct|struct bt_mesh_rpl {
 DECL|bt_mesh_subnet_keys|struct|struct bt_mesh_subnet_keys {
 DECL|bt_mesh_subnet|struct|struct bt_mesh_subnet {
 DECL|clear_success|member|clear_success:1; /* Friend Clear Confirm received */
+DECL|clear|member|} clear;
 DECL|counter|member|u16_t counter;
 DECL|counter|member|u16_t counter;
 DECL|cred|member|} cred[2];
@@ -71,6 +72,7 @@ DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
 DECL|frnd|member|u16_t frnd;
+DECL|frnd|member|u16_t frnd; /* Previous Friend's address */
 DECL|fsn|member|fsn:1, /* Friend Sequence Number */
 DECL|fsn|member|u8_t fsn:1,
 DECL|groups_changed|member|u8_t groups_changed:1, /* Friend Subscription List needs updating */
@@ -121,6 +123,7 @@ DECL|queue|member|sys_slist_t queue;
 DECL|queue|member|sys_slist_t queue;
 DECL|recv_delay|member|u8_t recv_delay;
 DECL|recv_win|member|u8_t recv_win;
+DECL|repeat_sec|member|u16_t repeat_sec; /* Repeat timeout in seconds */
 DECL|req_attempts|member|u8_t req_attempts; /* Number of Request attempts */
 DECL|rpl|member|struct bt_mesh_rpl rpl[CONFIG_BT_MESH_CRPL];
 DECL|rssi|member|s8_t rssi;
@@ -133,6 +136,7 @@ DECL|seq|member|u32_t seq;
 DECL|seq|member|u32_t seq; /* Sequence Number */
 DECL|src|member|u16_t src;
 DECL|src|member|u16_t src;
+DECL|start|member|u32_t start; /* Clear Procedure start */
 DECL|state|member|} state;
 DECL|sub_list|member|u16_t sub_list[FRIEND_SUB_LIST_SIZE];
 DECL|sub|member|struct bt_mesh_subnet *sub;
@@ -140,6 +144,7 @@ DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet sub[CONFIG_BT_MESH_SUBNET_COUNT];
 DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer;
+DECL|timer|member|struct k_delayed_work timer; /* Repeat timer */
 DECL|updated|member|bool updated;
 DECL|valid|member|valid:1; /* 0 if unused */
 DECL|val|member|u8_t val[16];
