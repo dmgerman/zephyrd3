@@ -19,7 +19,7 @@ DECL|bt_mesh_friend_req|function|int bt_mesh_friend_req(struct bt_mesh_net_rx *r
 DECL|bt_mesh_friend_sec_update|function|void bt_mesh_friend_sec_update(u16_t net_idx)
 DECL|bt_mesh_friend_sub_add|function|int bt_mesh_friend_sub_add(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_friend_sub_rem|function|int bt_mesh_friend_sub_rem(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, int err)
+DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|buf_seq_auth|variable|buf_seq_auth
 DECL|create_friend_pdu|function|static struct net_buf *create_friend_pdu(struct bt_mesh_friend *frnd, struct friend_pdu_info *info, struct net_buf_simple *sdu)
 DECL|ctl|member|ctl:1;

@@ -7,7 +7,7 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|MESH_SCAN_INTERVAL|macro|MESH_SCAN_INTERVAL
 DECL|MESH_SCAN_WINDOW|macro|MESH_SCAN_WINDOW
 DECL|adv_send|function|static inline void adv_send(struct net_buf *buf)
-DECL|adv_sent|function|static inline void adv_sent(struct net_buf *buf, int err)
+DECL|adv_sent|function|static inline void adv_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|adv_thread_data|variable|adv_thread_data
 DECL|adv_thread|function|static void adv_thread(void *p1, void *p2, void *p3)
 DECL|adv_type|variable|adv_type

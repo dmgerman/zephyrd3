@@ -30,6 +30,7 @@ DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|__packed|enum|enum __packed {
 DECL|addr|member|u16_t addr;
+DECL|adv_duration|member|u16_t adv_duration;
 DECL|app_idx|member|u16_t app_idx;
 DECL|app_keys|member|struct bt_mesh_app_key app_keys[CONFIG_BT_MESH_APP_KEY_COUNT];
 DECL|auth|member|u8_t auth[8]; /* Beacon Authentication Value */

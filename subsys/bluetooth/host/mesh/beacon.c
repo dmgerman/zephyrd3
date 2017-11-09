@@ -9,7 +9,7 @@ DECL|UNPROVISIONED_INTERVAL|macro|UNPROVISIONED_INTERVAL
 DECL|UNPROV_XMIT_COUNT|macro|UNPROV_XMIT_COUNT
 DECL|UNPROV_XMIT_INT|macro|UNPROV_XMIT_INT
 DECL|beacon_cache|variable|beacon_cache
-DECL|beacon_complete|function|static void beacon_complete(struct net_buf *buf, int err)
+DECL|beacon_complete|function|static void beacon_complete(struct net_buf *buf, u16_t duration, int err)
 DECL|beacon_send|function|static void beacon_send(struct k_work *work)
 DECL|beacon_timer|variable|beacon_timer
 DECL|bt_mesh_beacon_create|function|void bt_mesh_beacon_create(struct bt_mesh_subnet *sub, struct net_buf_simple *buf)

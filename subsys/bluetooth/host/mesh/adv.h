@@ -6,7 +6,7 @@ DECL|BT_MESH_ADV|macro|BT_MESH_ADV
 DECL|addr|member|u16_t addr;
 DECL|adv_int|member|adv_int:5;
 DECL|attempts|member|u8_t attempts;
-DECL|bt_mesh_adv_func_t|typedef|typedef void (*bt_mesh_adv_func_t)(struct net_buf *buf, int err);
+DECL|bt_mesh_adv_func_t|typedef|typedef void (*bt_mesh_adv_func_t)(struct net_buf *buf, u16_t duration,
 DECL|bt_mesh_adv_type|enum|enum bt_mesh_adv_type {
 DECL|bt_mesh_adv|struct|struct bt_mesh_adv {
 DECL|busy|member|busy:1;
