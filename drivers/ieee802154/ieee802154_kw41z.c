@@ -21,11 +21,23 @@ DECL|KW41Z_STATE_IDLE|enumerator|KW41Z_STATE_IDLE,
 DECL|KW41Z_STATE_RX|enumerator|KW41Z_STATE_RX,
 DECL|KW41Z_STATE_TXRX|enumerator|KW41Z_STATE_TXRX,
 DECL|KW41Z_STATE_TX|enumerator|KW41Z_STATE_TX,
+DECL|KW41_DBG_TRACE_CCA|macro|KW41_DBG_TRACE_CCA
+DECL|KW41_DBG_TRACE_RX|macro|KW41_DBG_TRACE_RX
+DECL|KW41_DBG_TRACE_SIZE|macro|KW41_DBG_TRACE_SIZE
+DECL|KW41_DBG_TRACE_TMR3|macro|KW41_DBG_TRACE_TMR3
+DECL|KW41_DBG_TRACE_TX|macro|KW41_DBG_TRACE_TX
+DECL|KW41_DBG_TRACE_WTRM|macro|KW41_DBG_TRACE_WTRM
+DECL|KW_DBG_TRACE|macro|KW_DBG_TRACE
+DECL|KW_DBG_TRACE|macro|KW_DBG_TRACE
 DECL|RADIO_0_IRQ_PRIO|macro|RADIO_0_IRQ_PRIO
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|get_mac|function|static inline u8_t *get_mac(struct device *dev)
 DECL|iface|member|struct net_if *iface;
+DECL|irqsts|member|u32_t irqsts;
+DECL|kw41_dbg_idx|variable|kw41_dbg_idx
+DECL|kw41_dbg_trace|struct|struct kw41_dbg_trace {
+DECL|kw41_dbg|variable|kw41_dbg
 DECL|kw41z_cca|function|static int kw41z_cca(struct device *dev)
 DECL|kw41z_context_data|variable|kw41z_context_data
 DECL|kw41z_context|struct|struct kw41z_context {
@@ -58,7 +70,10 @@ DECL|kw41z_tx|function|static int kw41z_tx(struct device *dev, struct net_pkt *p
 DECL|kw41z_wait_for_idle|function|static inline void kw41z_wait_for_idle(void)
 DECL|mac_addr|member|u8_t mac_addr[8];
 DECL|pa_pwr_lt|variable|pa_pwr_lt
+DECL|phy_ctrl|member|u32_t phy_ctrl;
 DECL|rx_warmup_time|member|u32_t rx_warmup_time;
 DECL|seq_retval|member|atomic_t seq_retval;
+DECL|seq_state|member|u32_t seq_state;
 DECL|seq_sync|member|struct k_sem seq_sync;
 DECL|tx_warmup_time|member|u32_t tx_warmup_time;
+DECL|type|member|u8_t type;
