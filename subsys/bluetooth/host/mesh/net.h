@@ -50,6 +50,7 @@ DECL|bt_mesh_net|struct|struct bt_mesh_net {
 DECL|bt_mesh_rpl|struct|struct bt_mesh_rpl {
 DECL|bt_mesh_subnet_keys|struct|struct bt_mesh_subnet_keys {
 DECL|bt_mesh_subnet|struct|struct bt_mesh_subnet {
+DECL|clear_success|member|clear_success:1; /* Friend Clear Confirm received */
 DECL|counter|member|u16_t counter;
 DECL|counter|member|u16_t counter;
 DECL|cred|member|} cred[2];
@@ -61,8 +62,8 @@ DECL|disable|member|disable:1, /* Disable LPN after clearing */
 DECL|dst|member|u16_t dst; /* Destination address */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
+DECL|established|member|established:1, /* Friendship established */
 DECL|established|member|established:1;
-DECL|established|member|established:1; /* Friendship established */
 DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
@@ -101,6 +102,7 @@ DECL|new_key|member|new_key:1, /* Data was encrypted with updated key */
 DECL|nid|member|u8_t nid; /* NID */
 DECL|nid|member|u8_t nid; /* NID */
 DECL|node_id|member|u8_t node_id; /* Node Identity State */
+DECL|old_friend|member|u16_t old_friend;
 DECL|old_iv|member|bool old_iv;
 DECL|old_iv|member|u8_t old_iv:1, /* iv_index - 1 was used */
 DECL|pending_buf|member|pending_buf:1,

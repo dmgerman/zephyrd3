@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|CLEAR_ATTEMPTS|macro|CLEAR_ATTEMPTS
 DECL|FRIEND_REQ_RETRY_TIMEOUT|macro|FRIEND_REQ_RETRY_TIMEOUT
 DECL|FRIEND_REQ_SCAN|macro|FRIEND_REQ_SCAN
 DECL|FRIEND_REQ_TIMEOUT|macro|FRIEND_REQ_TIMEOUT
@@ -41,7 +42,7 @@ DECL|poll_timeout|function|static s32_t poll_timeout(struct bt_mesh_lpn *lpn)
 DECL|req_sent|function|static void req_sent(struct net_buf *buf, int err)
 DECL|send_friend_clear|function|static int send_friend_clear(void)
 DECL|send_friend_poll|function|static int send_friend_poll(void)
-DECL|send_friend_req|function|static int send_friend_req(void)
+DECL|send_friend_req|function|static int send_friend_req(struct bt_mesh_lpn *lpn)
 DECL|state2str|function|static const char *state2str(int state)
 DECL|sub_update|function|static bool sub_update(u8_t op)
 DECL|update_timeout|function|static void update_timeout(struct bt_mesh_lpn *lpn)
