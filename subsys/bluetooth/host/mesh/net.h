@@ -143,3 +143,4 @@ DECL|valid|member|valid:1; /* 0 if unused */
 DECL|val|member|u8_t val[16];
 DECL|xact_next|member|u8_t xact_next;
 DECL|xact_pending|member|u8_t xact_pending;
+DECL|xmit|member|u8_t xmit;
