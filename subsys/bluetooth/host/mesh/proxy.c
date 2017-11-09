@@ -62,6 +62,8 @@ DECL|node_id_ad|variable|node_id_ad
 DECL|node_id_start|variable|node_id_start
 DECL|prov_ad|variable|prov_ad
 DECL|prov_attrs|variable|prov_attrs
+DECL|prov_ccc_read|function|static ssize_t prov_ccc_read(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|prov_ccc_val|variable|prov_ccc_val
 DECL|prov_ccc_write|function|static ssize_t prov_ccc_write(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|prov_sd|variable|prov_sd
 DECL|prov_svc_data|variable|prov_svc_data
@@ -69,6 +71,8 @@ DECL|prov_svc|variable|prov_svc
 DECL|proxy_adv_enabled|variable|proxy_adv_enabled
 DECL|proxy_adv_param|variable|proxy_adv_param
 DECL|proxy_attrs|variable|proxy_attrs
+DECL|proxy_ccc_read|function|static ssize_t proxy_ccc_read(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|proxy_ccc_val|variable|proxy_ccc_val
 DECL|proxy_ccc_write|function|static ssize_t proxy_ccc_write(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|proxy_cfg|function|static void proxy_cfg(struct bt_mesh_proxy_client *client)
 DECL|proxy_complete_pdu|function|static void proxy_complete_pdu(struct bt_mesh_proxy_client *client)
