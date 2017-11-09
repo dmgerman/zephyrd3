@@ -8,8 +8,9 @@ DECL|BT_MESH_LPN_CLEAR|enumerator|BT_MESH_LPN_CLEAR, /* Clear in progress */
 DECL|BT_MESH_LPN_DISABLED|enumerator|BT_MESH_LPN_DISABLED, /* LPN feature is disabled */
 DECL|BT_MESH_LPN_ENABLED|enumerator|BT_MESH_LPN_ENABLED, /* LPN enabled, but no Friend */
 DECL|BT_MESH_LPN_ESTABLISHED|enumerator|BT_MESH_LPN_ESTABLISHED, /* Friendship established */
-DECL|BT_MESH_LPN_ESTABLISHING|enumerator|BT_MESH_LPN_ESTABLISHING, /* First Friend Poll sent */
 DECL|BT_MESH_LPN_RECV_DELAY|enumerator|BT_MESH_LPN_RECV_DELAY, /* Poll sent, waiting ReceiveDelay */
+DECL|BT_MESH_LPN_REQ_WAIT|enumerator|BT_MESH_LPN_REQ_WAIT, /* Wait before scanning for offers */
+DECL|BT_MESH_LPN_TIMER|enumerator|BT_MESH_LPN_TIMER, /* Waiting for auto timer expiry */
 DECL|BT_MESH_LPN_WAIT_OFFER|enumerator|BT_MESH_LPN_WAIT_OFFER, /* Friend Req sent */
 DECL|BT_MESH_LPN_WAIT_UPDATE|enumerator|BT_MESH_LPN_WAIT_UPDATE, /* Waiting for Update or message */
 DECL|BT_MESH_NET_FLAG_IVU|macro|BT_MESH_NET_FLAG_IVU
@@ -61,11 +62,12 @@ DECL|dst|member|u16_t dst; /* Destination address */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|established|member|established:1;
+DECL|established|member|established:1; /* Friendship established */
 DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
 DECL|frnd|member|u16_t frnd;
-DECL|fsn|member|fsn:1; /* Friend Sequence Number */
+DECL|fsn|member|fsn:1, /* Friend Sequence Number */
 DECL|fsn|member|u8_t fsn:1,
 DECL|groups_changed|member|u8_t groups_changed:1, /* Friend Subscription List needs updating */
 DECL|groups|member|u16_t groups[LPN_GROUPS];

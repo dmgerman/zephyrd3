@@ -1,6 +1,10 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|FRIEND_REQ_RETRY_TIMEOUT|macro|FRIEND_REQ_RETRY_TIMEOUT
+DECL|FRIEND_REQ_SCAN|macro|FRIEND_REQ_SCAN
 DECL|FRIEND_REQ_TIMEOUT|macro|FRIEND_REQ_TIMEOUT
+DECL|FRIEND_REQ_WAIT|macro|FRIEND_REQ_WAIT
+DECL|LPN_AUTO_TIMEOUT|macro|LPN_AUTO_TIMEOUT
+DECL|LPN_AUTO_TIMEOUT|macro|LPN_AUTO_TIMEOUT
 DECL|LPN_CRITERIA|macro|LPN_CRITERIA
 DECL|LPN_POLL_TO|macro|LPN_POLL_TO
 DECL|LPN_RECV_DELAY|macro|LPN_RECV_DELAY
@@ -40,3 +44,4 @@ DECL|send_friend_poll|function|static int send_friend_poll(void)
 DECL|send_friend_req|function|static int send_friend_req(void)
 DECL|state2str|function|static const char *state2str(int state)
 DECL|sub_update|function|static bool sub_update(u8_t op)
+DECL|update_timeout|function|static void update_timeout(struct bt_mesh_lpn *lpn)
