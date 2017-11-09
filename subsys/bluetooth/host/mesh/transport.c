@@ -31,7 +31,6 @@ DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, 
 DECL|ctl|member|ctl:1,
 DECL|dst|member|u16_t dst;
 DECL|dst|member|u16_t dst;
-DECL|friend_cred|member|friend_cred:1, /* Use Friendship creds */
 DECL|hb_sub_dst|variable|hb_sub_dst
 DECL|hdr|member|u8_t hdr;
 DECL|in_use|member|in_use:1,

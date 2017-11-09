@@ -142,7 +142,6 @@ DECL|fault_get_cur|member|int (*fault_get_cur)(struct bt_mesh_model *model, u8_t
 DECL|fault_get_reg|member|int (*fault_get_reg)(struct bt_mesh_model *model, u16_t company_id,
 DECL|fault_test|member|int (*fault_test)(struct bt_mesh_model *model, u8_t test_id,
 DECL|feat|member|u16_t feat;
-DECL|friend_cred|member|u8_t friend_cred:1;
 DECL|frnd|member|u8_t frnd; /* Friend state */
 DECL|func|member|void (*const func)(struct bt_mesh_model *model,
 DECL|func|member|void (*func)(struct bt_mesh_model *mod);
@@ -183,7 +182,7 @@ DECL|period|member|period:8, /* Publish Period */
 DECL|period|member|u8_t period;
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;
-DECL|recv_ttl|member|u8_t recv_ttl:7;
+DECL|recv_ttl|member|u8_t recv_ttl;
 DECL|relay_retransmit|member|u8_t relay_retransmit; /* Relay Retransmit state */
 DECL|relay|member|u8_t relay; /* Relay Mode state */
 DECL|retransmit|member|retransmit:8, /* Retransmit Count & Interval Steps */

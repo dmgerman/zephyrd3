@@ -65,6 +65,8 @@ DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|established|member|established:1, /* Friendship established */
 DECL|established|member|established:1;
+DECL|friend_cred|member|bool friend_cred;
+DECL|friend_cred|member|friend_cred:1, /* Data was encrypted with friend cred */
 DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
