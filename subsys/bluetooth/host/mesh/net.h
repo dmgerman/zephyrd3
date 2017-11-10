@@ -32,7 +32,7 @@ DECL|addr|member|u16_t addr;
 DECL|app_idx|member|u16_t app_idx;
 DECL|app_keys|member|struct bt_mesh_app_key app_keys[CONFIG_BT_MESH_APP_KEY_COUNT];
 DECL|auth|member|u8_t auth[8]; /* Beacon Authentication Value */
-DECL|beacon_sent|member|s64_t beacon_sent; /* Time stamp of last sent beacon */
+DECL|beacon_sent|member|u32_t beacon_sent; /* Timestamp of last sent beacon */
 DECL|beacons_cur|member|u8_t beacons_cur; /* Number of beaconds observed during
 DECL|beacons_last|member|u8_t beacons_last; /* Number of beacons during last
 DECL|beacon|member|u8_t beacon[16]; /* BeaconKey */
