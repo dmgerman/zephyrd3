@@ -146,6 +146,7 @@ DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer; /* Repeat timer */
 DECL|updated|member|bool updated;
+DECL|valid|member|valid:1,
 DECL|valid|member|valid:1; /* 0 if unused */
 DECL|val|member|u8_t val[16];
 DECL|xact_next|member|u8_t xact_next;
