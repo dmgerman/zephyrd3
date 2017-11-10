@@ -20,3 +20,4 @@ DECL|_DO_CONCAT|macro|_DO_CONCAT
 DECL|_STRINGIFY|macro|_STRINGIFY
 DECL|__stack|macro|__stack
 DECL|__syscall|macro|__syscall
+DECL|__syscall|macro|__syscall
