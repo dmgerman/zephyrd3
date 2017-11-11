@@ -2,6 +2,7 @@ DECL|cfg_srv|variable|cfg_srv
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_input_num|function|static int cmd_input_num(int argc, char *argv[])
 DECL|cmd_input_str|function|static int cmd_input_str(int argc, char *argv[])
+DECL|cmd_lpn|function|static int cmd_lpn(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
 DECL|comp|variable|comp
 DECL|dev_uuid|variable|dev_uuid
@@ -17,3 +18,4 @@ DECL|prov_complete|function|static void prov_complete(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
 DECL|static_val|variable|static_val
+DECL|str2bool|function|static bool str2bool(const char *str)
