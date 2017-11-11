@@ -157,6 +157,7 @@ DECL|rx_buf|variable|rx_buf
 DECL|rx|member|} rx;
 DECL|seg|member|u8_t seg; /* Bit-field of unreceived segments */
 DECL|send_confirm|function|static void send_confirm(void)
+DECL|send_input_complete|function|static void send_input_complete(void)
 DECL|send_pub_key|function|static void send_pub_key(void)
 DECL|send_reliable|function|static void send_reliable(void)
 DECL|start|member|s64_t start;
