@@ -189,7 +189,7 @@ DECL|retransmit|member|retransmit:8, /* Retransmit Count & Interval Steps */
 DECL|send_ttl|member|u8_t send_ttl;
 DECL|src|member|u16_t src;
 DECL|static_val_len|member|u8_t static_val_len;
-DECL|static_val|member|u8_t *static_val;
+DECL|static_val|member|const u8_t *static_val;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|timer|member|struct k_delayed_work timer;
