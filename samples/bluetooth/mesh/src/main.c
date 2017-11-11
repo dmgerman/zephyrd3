@@ -24,4 +24,3 @@ DECL|output_number|function|static int output_number(bt_mesh_output_action actio
 DECL|prov_complete|function|static void prov_complete(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
-DECL|vnd_models|variable|vnd_models
