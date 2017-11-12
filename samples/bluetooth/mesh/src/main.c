@@ -21,6 +21,6 @@ DECL|gen_onoff_set|function|static void gen_onoff_set(struct bt_mesh_model *mode
 DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
 DECL|output_number|function|static int output_number(bt_mesh_output_action action, uint32_t number)
-DECL|prov_complete|function|static void prov_complete(void)
+DECL|prov_complete|function|static void prov_complete(u16_t addr)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models

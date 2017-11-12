@@ -17,7 +17,7 @@ DECL|link_open|function|static void link_open(void)
 DECL|mesh_commands|variable|mesh_commands
 DECL|output_number|function|static int output_number(bt_mesh_output_action action, uint32_t number)
 DECL|output_string|function|static int output_string(const char *str)
-DECL|prov_complete|function|static void prov_complete(void)
+DECL|prov_complete|function|static void prov_complete(u16_t addr)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
 DECL|static_val|variable|static_val

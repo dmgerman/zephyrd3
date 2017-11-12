@@ -32,7 +32,7 @@ DECL|__BT_MESH_MAIN_H|macro|__BT_MESH_MAIN_H
 DECL|bt_mesh_input_action|typedef|} bt_mesh_input_action;
 DECL|bt_mesh_output_action|typedef|} bt_mesh_output_action;
 DECL|bt_mesh_prov|struct|struct bt_mesh_prov {
-DECL|complete|member|void (*complete)(void);
+DECL|complete|member|void (*complete)(u16_t addr);
 DECL|input_actions|member|u16_t input_actions;
 DECL|input_size|member|u8_t input_size;
 DECL|input|member|int (*input)(bt_mesh_input_action act, u8_t size);
