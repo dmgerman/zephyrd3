@@ -102,7 +102,5 @@ DECL|STATUS_STORAGE_FAIL|macro|STATUS_STORAGE_FAIL
 DECL|STATUS_SUCCESS|macro|STATUS_SUCCESS
 DECL|STATUS_TEMP_STATE_CHG_FAIL|macro|STATUS_TEMP_STATE_CHG_FAIL
 DECL|STATUS_UNSPECIFIED|macro|STATUS_UNSPECIFIED
-DECL|TRANSMIT_COUNT|macro|TRANSMIT_COUNT
-DECL|TRANSMIT_INT|macro|TRANSMIT_INT
 DECL|key_idx_pack|function|static inline void key_idx_pack(struct net_buf_simple *buf,u16_t idx1, u16_t idx2)
 DECL|key_idx_unpack|function|static inline void key_idx_unpack(struct net_buf_simple *buf, u16_t *idx1, u16_t *idx2)
