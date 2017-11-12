@@ -1,5 +1,6 @@
 DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
+DECL|cmd_beacon|function|static int cmd_beacon(int argc, char *argv[])
 DECL|cmd_dst|function|static int cmd_dst(int argc, char *argv[])
 DECL|cmd_get_comp|function|static int cmd_get_comp(int argc, char *argv[])
 DECL|cmd_ident|function|static int cmd_ident(int argc, char *argv[])
