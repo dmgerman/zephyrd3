@@ -157,6 +157,8 @@ DECL|input_size|member|u8_t input_size;
 DECL|input|member|int (*input)(bt_mesh_input_action act, u8_t size);
 DECL|keys|member|u16_t keys[CONFIG_BT_MESH_MODEL_KEY_COUNT];
 DECL|key|member|u16_t key; /* Publish AppKey Index */
+DECL|link_close|member|void (*link_close)(void);
+DECL|link_open|member|void (*link_open)(void);
 DECL|loc|member|const u16_t loc;
 DECL|max_hops|member|u8_t max_hops;
 DECL|min_hops|member|u8_t min_hops;
