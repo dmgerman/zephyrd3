@@ -90,7 +90,7 @@ DECL|kr_phase|member|u8_t kr_phase; /* Key Refresh Phase */
 DECL|last_update|member|s64_t last_update; /* Time since last IV Update change */
 DECL|last|member|struct net_buf *last;
 DECL|local_match|member|local_match:1, /* Matched a local element */
-DECL|local_queue|member|struct k_fifo local_queue;
+DECL|local_queue|member|sys_slist_t local_queue;
 DECL|local_work|member|struct k_work local_work;
 DECL|lpn_counter|member|u16_t lpn_counter;
 DECL|lpn_counter|member|u16_t lpn_counter;
