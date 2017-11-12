@@ -11,6 +11,8 @@ DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
 DECL|input|function|static int input(bt_mesh_input_action act, u8_t size)
+DECL|link_close|function|static void link_close(void)
+DECL|link_open|function|static void link_open(void)
 DECL|mesh_commands|variable|mesh_commands
 DECL|output_number|function|static int output_number(bt_mesh_output_action action, uint32_t number)
 DECL|output_string|function|static int output_string(const char *str)
