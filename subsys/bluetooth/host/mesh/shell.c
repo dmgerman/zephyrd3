@@ -2,6 +2,8 @@ DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
 DECL|cmd_beacon|function|static int cmd_beacon(int argc, char *argv[])
 DECL|cmd_dst|function|static int cmd_dst(int argc, char *argv[])
+DECL|cmd_friend|function|static int cmd_friend(int argc, char *argv[])
+DECL|cmd_gatt_proxy|function|static int cmd_gatt_proxy(int argc, char *argv[])
 DECL|cmd_get_comp|function|static int cmd_get_comp(int argc, char *argv[])
 DECL|cmd_ident|function|static int cmd_ident(int argc, char *argv[])
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
@@ -9,7 +11,9 @@ DECL|cmd_input_num|function|static int cmd_input_num(int argc, char *argv[])
 DECL|cmd_input_str|function|static int cmd_input_str(int argc, char *argv[])
 DECL|cmd_lpn|function|static int cmd_lpn(int argc, char *argv[])
 DECL|cmd_netidx|function|static int cmd_netidx(int argc, char *argv[])
+DECL|cmd_relay|function|static int cmd_relay(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
+DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
 DECL|comp|variable|comp
 DECL|dev_uuid|variable|dev_uuid
 DECL|dst|variable|dst
