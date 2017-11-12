@@ -1,0 +1,2 @@
+DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|bt_mesh_cfg_cli_op|variable|bt_mesh_cfg_cli_op
