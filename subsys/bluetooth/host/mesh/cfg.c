@@ -56,8 +56,6 @@ DECL|heartbeat_pub_get|function|static void heartbeat_pub_get(struct bt_mesh_mod
 DECL|heartbeat_pub_set|function|static void heartbeat_pub_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|heartbeat_sub_get|function|static void heartbeat_sub_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|heartbeat_sub_set|function|static void heartbeat_sub_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|key_idx_pack|function|static inline void key_idx_pack(struct net_buf_simple *buf,u16_t idx1, u16_t idx2)
-DECL|key_idx_unpack|function|static inline void key_idx_unpack(struct net_buf_simple *buf, u16_t *idx1, u16_t *idx2)
 DECL|krp_get|function|static void krp_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|krp_set|function|static void krp_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|labels|variable|labels
