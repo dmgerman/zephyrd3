@@ -19,6 +19,7 @@ DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|configure|function|static void configure(void)
 DECL|dev_key|variable|dev_key
+DECL|dev_uuid|variable|dev_uuid
 DECL|elements|variable|elements
 DECL|flags|variable|flags
 DECL|health_srv|variable|health_srv
@@ -27,6 +28,7 @@ DECL|iv_index|variable|iv_index
 DECL|main|function|void main(void)
 DECL|net_idx|variable|net_idx
 DECL|net_key|variable|net_key
+DECL|prov|variable|prov
 DECL|root_models|variable|root_models
 DECL|seq|variable|seq
 DECL|target|variable|target
