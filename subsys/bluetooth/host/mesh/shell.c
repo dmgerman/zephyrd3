@@ -1,3 +1,4 @@
+DECL|bearer2str|function|static const char *bearer2str(bt_mesh_prov_bearer_t bearer)
 DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
 DECL|cmd_app_key_add|function|static int cmd_app_key_add(int argc, char *argv[])
@@ -15,6 +16,9 @@ DECL|cmd_lpn|function|static int cmd_lpn(int argc, char *argv[])
 DECL|cmd_mod_app_bind|function|static int cmd_mod_app_bind(int argc, char *argv[])
 DECL|cmd_mod_sub_add|function|static int cmd_mod_sub_add(int argc, char *argv[])
 DECL|cmd_netidx|function|static int cmd_netidx(int argc, char *argv[])
+DECL|cmd_pb_adv|function|static int cmd_pb_adv(int argc, char *argv[])
+DECL|cmd_pb_gatt|function|static int cmd_pb_gatt(int argc, char *argv[])
+DECL|cmd_pb|function|static int cmd_pb(bt_mesh_prov_bearer_t bearer, int argc, char *argv[])
 DECL|cmd_relay|function|static int cmd_relay(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
 DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
@@ -26,14 +30,15 @@ DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
 DECL|input|function|static int input(bt_mesh_input_action_t act, u8_t size)
-DECL|link_close|function|static void link_close(void)
-DECL|link_open|function|static void link_open(void)
+DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
+DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|variable|local
 DECL|mesh_commands|variable|mesh_commands
 DECL|net_idx|variable|net_idx
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
 DECL|output_string|function|static int output_string(const char *str)
 DECL|prov_complete|function|static void prov_complete(u16_t addr)
+DECL|prov_reset|function|static void prov_reset(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
 DECL|static_val|variable|static_val

@@ -22,5 +22,6 @@ DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
 DECL|prov_complete|function|static void prov_complete(u16_t addr)
+DECL|prov_reset|function|static void prov_reset(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models

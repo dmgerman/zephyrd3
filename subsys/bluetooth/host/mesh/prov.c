@@ -79,6 +79,7 @@ DECL|bt_mesh_pb_gatt_open|function|int bt_mesh_pb_gatt_open(struct bt_conn *conn
 DECL|bt_mesh_pb_gatt_recv|function|int bt_mesh_pb_gatt_recv(struct bt_conn *conn, struct net_buf_simple *buf)
 DECL|bt_mesh_prov_get_uuid|function|const u8_t *bt_mesh_prov_get_uuid(void)
 DECL|bt_mesh_prov_init|function|int bt_mesh_prov_init(const struct bt_mesh_prov *prov_info)
+DECL|bt_mesh_prov_reset|function|void bt_mesh_prov_reset(void)
 DECL|bt_prov_active|function|bool bt_prov_active(void)
 DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|buf|member|struct net_buf *buf[3];
