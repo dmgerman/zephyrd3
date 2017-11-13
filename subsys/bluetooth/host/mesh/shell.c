@@ -25,13 +25,13 @@ DECL|elements|variable|elements
 DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
-DECL|input|function|static int input(bt_mesh_input_action act, u8_t size)
+DECL|input|function|static int input(bt_mesh_input_action_t act, u8_t size)
 DECL|link_close|function|static void link_close(void)
 DECL|link_open|function|static void link_open(void)
 DECL|local|variable|local
 DECL|mesh_commands|variable|mesh_commands
 DECL|net_idx|variable|net_idx
-DECL|output_number|function|static int output_number(bt_mesh_output_action action, uint32_t number)
+DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
 DECL|output_string|function|static int output_string(const char *str)
 DECL|prov_complete|function|static void prov_complete(u16_t addr)
 DECL|prov|variable|prov

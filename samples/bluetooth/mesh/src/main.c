@@ -20,7 +20,7 @@ DECL|gen_onoff_set_unack|function|static void gen_onoff_set_unack(struct bt_mesh
 DECL|gen_onoff_set|function|static void gen_onoff_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
-DECL|output_number|function|static int output_number(bt_mesh_output_action action, uint32_t number)
+DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
 DECL|prov_complete|function|static void prov_complete(u16_t addr)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models

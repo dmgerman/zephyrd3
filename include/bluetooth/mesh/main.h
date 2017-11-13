@@ -29,17 +29,17 @@ DECL|BT_MESH_RELAY_NOT_SUPPORTED|macro|BT_MESH_RELAY_NOT_SUPPORTED
 DECL|BT_MESH_TWIST|enumerator|BT_MESH_TWIST = BIT(1),
 DECL|BT_MESH_VIBRATE|enumerator|BT_MESH_VIBRATE = BIT(2),
 DECL|__BT_MESH_MAIN_H|macro|__BT_MESH_MAIN_H
-DECL|bt_mesh_input_action|typedef|} bt_mesh_input_action;
-DECL|bt_mesh_output_action|typedef|} bt_mesh_output_action;
+DECL|bt_mesh_input_action_t|typedef|} bt_mesh_input_action_t;
+DECL|bt_mesh_output_action_t|typedef|} bt_mesh_output_action_t;
 DECL|bt_mesh_prov|struct|struct bt_mesh_prov {
 DECL|complete|member|void (*complete)(u16_t addr);
 DECL|input_actions|member|u16_t input_actions;
 DECL|input_size|member|u8_t input_size;
-DECL|input|member|int (*input)(bt_mesh_input_action act, u8_t size);
+DECL|input|member|int (*input)(bt_mesh_input_action_t act, u8_t size);
 DECL|link_close|member|void (*link_close)(void);
-DECL|link_open|member|void (*link_open)(void);
+DECL|link_open|member|void (*link_open)(bt);
 DECL|output_actions|member|u16_t output_actions;
-DECL|output_number|member|int (*output_number)(bt_mesh_output_action act, u32_t num);
+DECL|output_number|member|int (*output_number)(bt_mesh_output_action_t act, u32_t num);
 DECL|output_size|member|u8_t output_size;
 DECL|output_string|member|int (*output_string)(const char *str);
 DECL|static_val_len|member|u8_t static_val_len;
