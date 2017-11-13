@@ -1,7 +1,7 @@
 DECL|BT_MESH_MODEL_CFG_SRV|macro|BT_MESH_MODEL_CFG_SRV
 DECL|__BT_MESH_CFG_SRV_H|macro|__BT_MESH_CFG_SRV_H
 DECL|beacon|member|u8_t beacon; /* Secure Network Beacon state */
-DECL|bt_mesh_cfg|struct|struct bt_mesh_cfg {
+DECL|bt_mesh_cfg_srv|struct|struct bt_mesh_cfg_srv {
 DECL|count|member|u16_t count;
 DECL|count|member|u16_t count;
 DECL|default_ttl|member|u8_t default_ttl; /* Default TTL */

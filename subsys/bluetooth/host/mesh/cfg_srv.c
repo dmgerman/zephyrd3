@@ -17,8 +17,8 @@ DECL|app_key_update|function|static void app_key_update(struct bt_mesh_model *mo
 DECL|beacon_get|function|static void beacon_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|beacon_set|function|static void beacon_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|bt_mesh_beacon_get|function|u8_t bt_mesh_beacon_get(void)
-DECL|bt_mesh_cfg_op|variable|bt_mesh_cfg_op
-DECL|bt_mesh_conf_init|function|int bt_mesh_conf_init(struct bt_mesh_model *model, bool primary)
+DECL|bt_mesh_cfg_srv_init|function|int bt_mesh_cfg_srv_init(struct bt_mesh_model *model, bool primary)
+DECL|bt_mesh_cfg_srv_op|variable|bt_mesh_cfg_srv_op
 DECL|bt_mesh_default_ttl_get|function|u8_t bt_mesh_default_ttl_get(void)
 DECL|bt_mesh_friend_get|function|u8_t bt_mesh_friend_get(void)
 DECL|bt_mesh_gatt_proxy_get|function|u8_t bt_mesh_gatt_proxy_get(void)
@@ -29,7 +29,7 @@ DECL|bt_mesh_relay_get|function|u8_t bt_mesh_relay_get(void)
 DECL|bt_mesh_relay_retransmit_get|function|u8_t bt_mesh_relay_retransmit_get(void)
 DECL|comp_add_elem|function|static int comp_add_elem(struct net_buf_simple *buf, struct bt_mesh_elem *elem, bool primary)
 DECL|comp_get_page_0|function|static int comp_get_page_0(struct net_buf_simple *buf)
-DECL|conf_is_valid|function|static bool conf_is_valid(struct bt_mesh_cfg *cfg)
+DECL|conf_is_valid|function|static bool conf_is_valid(struct bt_mesh_cfg_srv *cfg)
 DECL|conf|variable|conf
 DECL|count_log|member|u8_t count_log;
 DECL|create_mod_app_status|function|static void create_mod_app_status(struct net_buf_simple *msg, struct bt_mesh_model *mod, bool vnd, u16_t elem_addr, u16_t app_idx, u8_t status, u8_t *mod_id)
@@ -45,7 +45,7 @@ DECL|gatt_proxy_set|function|static void gatt_proxy_set(struct bt_mesh_model *mo
 DECL|get_model|function|static struct bt_mesh_model *get_model(struct bt_mesh_elem *elem, struct net_buf_simple *buf, bool *vnd)
 DECL|hb_log|function|static u8_t hb_log(u16_t val)
 DECL|hb_pub_count_log|function|static u8_t hb_pub_count_log(u16_t val)
-DECL|hb_pub_disable|function|static void hb_pub_disable(struct bt_mesh_cfg *cfg)
+DECL|hb_pub_disable|function|static void hb_pub_disable(struct bt_mesh_cfg_srv *cfg)
 DECL|hb_pub_param|struct|struct hb_pub_param {
 DECL|hb_pub_send_status|function|static void hb_pub_send_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, u8_t status, struct hb_pub_param *orig_msg)
 DECL|hb_publish|function|static void hb_publish(struct k_work *work)
