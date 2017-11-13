@@ -2,7 +2,6 @@ DECL|BYTES_TO_READ|macro|BYTES_TO_READ
 DECL|BYTES_TO_WRITE|macro|BYTES_TO_WRITE
 DECL|PIPE_LEN|macro|PIPE_LEN
 DECL|STACK_SIZE|macro|STACK_SIZE
-DECL|end_sema|variable|end_sema
 DECL|pipe|variable|pipe
 DECL|tThread_block_put|function|static void tThread_block_put(void *p1, void *p2, void *p3)
 DECL|tThread_entry|function|static void tThread_entry(void *p1, void *p2, void *p3)
