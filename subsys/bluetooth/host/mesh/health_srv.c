@@ -10,9 +10,9 @@ DECL|attention_set_unrel|function|static void attention_set_unrel(struct bt_mesh
 DECL|attention_set|function|static void attention_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|bt_mesh_attention|function|void bt_mesh_attention(struct bt_mesh_model *model, u8_t time)
 DECL|bt_mesh_fault_update|function|int bt_mesh_fault_update(struct bt_mesh_elem *elem)
-DECL|bt_mesh_health_init|function|int bt_mesh_health_init(struct bt_mesh_model *model, bool primary)
-DECL|bt_mesh_health_op|variable|bt_mesh_health_op
 DECL|bt_mesh_health_pub|variable|bt_mesh_health_pub
+DECL|bt_mesh_health_srv_init|function|int bt_mesh_health_srv_init(struct bt_mesh_model *model, bool primary)
+DECL|bt_mesh_health_srv_op|variable|bt_mesh_health_srv_op
 DECL|health_fault_clear_unrel|function|static void health_fault_clear_unrel(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|health_fault_clear|function|static void health_fault_clear(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|health_fault_get|function|static void health_fault_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
