@@ -20,10 +20,12 @@ DECL|cmd_netidx|function|static int cmd_netidx(int argc, char *argv[])
 DECL|cmd_pb_adv|function|static int cmd_pb_adv(int argc, char *argv[])
 DECL|cmd_pb_gatt|function|static int cmd_pb_gatt(int argc, char *argv[])
 DECL|cmd_pb|function|static int cmd_pb(bt_mesh_prov_bearer_t bearer, int argc, char *argv[])
+DECL|cmd_provision|function|static int cmd_provision(int argc, char *argv[])
 DECL|cmd_relay|function|static int cmd_relay(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
 DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
 DECL|comp|variable|comp
+DECL|default_key|variable|default_key
 DECL|dev_uuid|variable|dev_uuid
 DECL|dst|member|u16_t dst;
 DECL|elements|variable|elements
