@@ -24,3 +24,5 @@ DECL|sensor_value|variable|sensor_value
 DECL|temp_sensor_create|function|static struct lwm2m_engine_obj_inst *temp_sensor_create(u16_t obj_inst_id)
 DECL|temp_sensor|variable|temp_sensor
 DECL|units|variable|units
+DECL|update_max_measured|function|static void update_max_measured(u16_t obj_inst_id, int index)
+DECL|update_min_measured|function|static void update_min_measured(u16_t obj_inst_id, int index)
