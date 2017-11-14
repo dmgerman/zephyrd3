@@ -11,7 +11,7 @@ DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint
 DECL|has_reg_fault|variable|has_reg_fault
 DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
-DECL|prov_complete|function|static void prov_complete(u16_t addr)
+DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models

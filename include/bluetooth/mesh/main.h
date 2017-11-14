@@ -35,7 +35,7 @@ DECL|bt_mesh_input_action_t|typedef|} bt_mesh_input_action_t;
 DECL|bt_mesh_output_action_t|typedef|} bt_mesh_output_action_t;
 DECL|bt_mesh_prov_bearer_t|typedef|} bt_mesh_prov_bearer_t;
 DECL|bt_mesh_prov|struct|struct bt_mesh_prov {
-DECL|complete|member|void (*complete)(u16_t addr);
+DECL|complete|member|void (*complete)(u16_t net_idx, u16_t addr);
 DECL|input_actions|member|u16_t input_actions;
 DECL|input_size|member|u8_t input_size;
 DECL|input|member|int (*input)(bt_mesh_input_action_t act, u8_t size);
