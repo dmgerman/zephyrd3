@@ -14,6 +14,7 @@ DECL|bt_mesh_cfg_friend_get|function|int bt_mesh_cfg_friend_get(u16_t net_idx, u
 DECL|bt_mesh_cfg_friend_set|function|int bt_mesh_cfg_friend_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
 DECL|bt_mesh_cfg_gatt_proxy_get|function|int bt_mesh_cfg_gatt_proxy_get(u16_t net_idx, u16_t addr, u8_t *status)
 DECL|bt_mesh_cfg_gatt_proxy_set|function|int bt_mesh_cfg_gatt_proxy_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
+DECL|bt_mesh_cfg_hb_pub_get|function|int bt_mesh_cfg_hb_pub_get(u16_t net_idx, u16_t addr, u16_t *pub_dst, u8_t *count, u8_t *period, u8_t *ttl, u16_t *feat, u16_t *pub_net_idx, u8_t *status)
 DECL|bt_mesh_cfg_hb_pub_set|function|int bt_mesh_cfg_hb_pub_set(u16_t net_idx, u16_t addr, u16_t pub_dst, u8_t count, u8_t period, u8_t ttl, u16_t feat, u16_t pub_net_idx, u8_t *status)
 DECL|bt_mesh_cfg_hb_sub_set|function|int bt_mesh_cfg_hb_sub_set(u16_t net_idx, u16_t addr, u16_t src, u16_t dst, u8_t period, u8_t *status)
 DECL|bt_mesh_cfg_mod_app_bind_vnd|function|int bt_mesh_cfg_mod_app_bind_vnd(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t mod_app_idx, u16_t mod_id, u16_t cid, u8_t *status)
