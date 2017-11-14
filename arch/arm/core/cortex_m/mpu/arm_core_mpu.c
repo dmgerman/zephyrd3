@@ -1,3 +1,4 @@
+DECL|_arch_buffer_validate|function|int _arch_buffer_validate(void *addr, size_t size, int write)
 DECL|_arch_mem_domain_destroy|function|void _arch_mem_domain_destroy(struct k_mem_domain *domain)
 DECL|_arch_mem_domain_max_partitions_get|function|int _arch_mem_domain_max_partitions_get(void)
 DECL|_arch_mem_domain_partition_remove|function|void _arch_mem_domain_partition_remove(struct k_mem_domain *domain, u32_t partition_id)
