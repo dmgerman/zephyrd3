@@ -8,7 +8,7 @@ DECL|cmd_friend|function|static int cmd_friend(int argc, char *argv[])
 DECL|cmd_gatt_proxy|function|static int cmd_gatt_proxy(int argc, char *argv[])
 DECL|cmd_get_comp|function|static int cmd_get_comp(int argc, char *argv[])
 DECL|cmd_hb_pub|function|static int cmd_hb_pub(int argc, char *argv[])
-DECL|cmd_hb_sub_set|function|static int cmd_hb_sub_set(int argc, char *argv[])
+DECL|cmd_hb_sub|function|static int cmd_hb_sub(int argc, char *argv[])
 DECL|cmd_ident|function|static int cmd_ident(int argc, char *argv[])
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_input_num|function|static int cmd_input_num(int argc, char *argv[])
@@ -31,6 +31,8 @@ DECL|dst|member|u16_t dst;
 DECL|elements|variable|elements
 DECL|hb_pub_get|function|static int hb_pub_get(int argc, char *argv[])
 DECL|hb_pub_set|function|static int hb_pub_set(int argc, char *argv[])
+DECL|hb_sub_get|function|static int hb_sub_get(int argc, char *argv[])
+DECL|hb_sub_set|function|static int hb_sub_set(int argc, char *argv[])
 DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
