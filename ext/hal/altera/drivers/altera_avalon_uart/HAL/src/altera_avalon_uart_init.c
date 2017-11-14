@@ -1,0 +1,5 @@
+DECL|altera_avalon_uart_close|function|int altera_avalon_uart_close(altera_avalon_uart_state* sp, int flags)
+DECL|altera_avalon_uart_init|function|altera_avalon_uart_init(altera_avalon_uart_state* sp, alt_u32 irq_controller_id, alt_u32 irq)
+DECL|altera_avalon_uart_irq|function|static void altera_avalon_uart_irq(void* context)
+DECL|altera_avalon_uart_rxirq|function|altera_avalon_uart_rxirq(altera_avalon_uart_state* sp, alt_u32 status)
+DECL|altera_avalon_uart_txirq|function|altera_avalon_uart_txirq(altera_avalon_uart_state* sp, alt_u32 status)

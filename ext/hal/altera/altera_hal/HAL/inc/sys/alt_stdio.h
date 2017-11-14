@@ -1,0 +1,1 @@
+DECL|__ALT_STDIO_H__|macro|__ALT_STDIO_H__

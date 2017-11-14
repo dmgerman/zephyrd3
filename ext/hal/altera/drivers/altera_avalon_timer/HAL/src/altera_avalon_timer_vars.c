@@ -1,0 +1,2 @@
+DECL|altera_avalon_timer_ts_base|variable|altera_avalon_timer_ts_base
+DECL|altera_avalon_timer_ts_freq|variable|altera_avalon_timer_ts_freq

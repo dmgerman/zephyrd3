@@ -1,0 +1,4 @@
+DECL|altera_avalon_jtag_uart_close|function|int altera_avalon_jtag_uart_close(altera_avalon_jtag_uart_state* sp, int flags)
+DECL|altera_avalon_jtag_uart_init|function|void altera_avalon_jtag_uart_init(altera_avalon_jtag_uart_state* sp, int irq_controller_id, int irq)
+DECL|altera_avalon_jtag_uart_irq|function|static void altera_avalon_jtag_uart_irq(void* context)
+DECL|altera_avalon_jtag_uart_timeout|function|altera_avalon_jtag_uart_timeout(void* context)

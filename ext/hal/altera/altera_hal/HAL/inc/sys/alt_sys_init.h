@@ -1,0 +1,1 @@
+DECL|__ALT_SYS_INIT_H__|macro|__ALT_SYS_INIT_H__

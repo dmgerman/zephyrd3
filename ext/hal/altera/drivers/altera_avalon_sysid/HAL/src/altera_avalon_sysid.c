@@ -1,0 +1,1 @@
+DECL|alt_avalon_sysid_test|function|alt_32 alt_avalon_sysid_test(void)

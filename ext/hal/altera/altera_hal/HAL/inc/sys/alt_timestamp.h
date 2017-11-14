@@ -1,0 +1,1 @@
+DECL|__ALT_TIMESTAMP_H__|macro|__ALT_TIMESTAMP_H__
