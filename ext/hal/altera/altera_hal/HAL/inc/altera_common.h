@@ -1,0 +1,1 @@
+DECL|__ALT_COMMON_H__|macro|__ALT_COMMON_H__
