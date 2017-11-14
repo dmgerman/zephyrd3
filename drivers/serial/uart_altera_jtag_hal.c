@@ -1,0 +1,7 @@
+DECL|DEV_CFG|macro|DEV_CFG
+DECL|UART_ALTERA_JTAG_CONTROL_REG|macro|UART_ALTERA_JTAG_CONTROL_REG
+DECL|UART_ALTERA_JTAG_DATA_REG|macro|UART_ALTERA_JTAG_DATA_REG
+DECL|uart_altera_jtag_dev_cfg_0|variable|uart_altera_jtag_dev_cfg_0
+DECL|uart_altera_jtag_driver_api|variable|uart_altera_jtag_driver_api
+DECL|uart_altera_jtag_init|function|static int uart_altera_jtag_init(struct device *dev)
+DECL|uart_altera_jtag_poll_out|function|static unsigned char uart_altera_jtag_poll_out(struct device *dev, unsigned char c)
