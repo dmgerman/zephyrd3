@@ -19,7 +19,7 @@ DECL|spi_stm32_irq_config_func_1|function|static void spi_stm32_irq_config_func_
 DECL|spi_stm32_irq_config_func_2|function|static void spi_stm32_irq_config_func_2(struct device *dev)
 DECL|spi_stm32_irq_config_func_3|function|static void spi_stm32_irq_config_func_3(struct device *dev)
 DECL|spi_stm32_isr|function|static void spi_stm32_isr(void *arg)
-DECL|spi_stm32_next_tx|function|static inline u8_t spi_stm32_next_tx(struct spi_stm32_data *data)
+DECL|spi_stm32_next_tx|function|static inline u16_t spi_stm32_next_tx(struct spi_stm32_data *data)
 DECL|spi_stm32_release|function|static int spi_stm32_release(struct spi_config *config)
 DECL|spi_stm32_shift_frames|function|static int spi_stm32_shift_frames(SPI_TypeDef *spi, struct spi_stm32_data *data)
 DECL|spi_stm32_shift_m|function|static void spi_stm32_shift_m(SPI_TypeDef *spi, struct spi_stm32_data *data)
