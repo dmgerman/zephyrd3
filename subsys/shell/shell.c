@@ -34,5 +34,5 @@ DECL|shell_register_default_module|function|void shell_register_default_module(c
 DECL|shell_register_prompt_handler|function|void shell_register_prompt_handler(shell_prompt_function_t handler)
 DECL|shell_thread|variable|shell_thread
 DECL|shell|function|static void shell(void *p1, void *p2, void *p3)
-DECL|show_cmd_help|function|static int show_cmd_help(char *argv[])
+DECL|show_cmd_help|function|static int show_cmd_help(char *argv[], bool full)
 DECL|show_help|function|static int show_help(int argc, char *argv[])

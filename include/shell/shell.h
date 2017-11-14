@@ -6,6 +6,7 @@ DECL|_SHELL_H_|macro|_SHELL_H_
 DECL|cb|member|shell_cmd_function_t cb;
 DECL|cmd_name|member|const char *cmd_name;
 DECL|commands|member|const struct shell_cmd *commands;
+DECL|desc|member|const char *desc;
 DECL|help|member|const char *help;
 DECL|module_name|member|const char *module_name;
 DECL|prompt|member|shell_prompt_function_t prompt;
