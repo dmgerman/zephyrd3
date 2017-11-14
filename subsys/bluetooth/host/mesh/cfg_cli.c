@@ -1,5 +1,4 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
-DECL|MSG_TIMEOUT|macro|MSG_TIMEOUT
 DECL|app_idx|member|u16_t app_idx;
 DECL|app_key_param|struct|struct app_key_param {
 DECL|app_key_status|function|static void app_key_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -9,6 +8,8 @@ DECL|bt_mesh_cfg_beacon_get|function|int bt_mesh_cfg_beacon_get(u16_t net_idx, u
 DECL|bt_mesh_cfg_beacon_set|function|int bt_mesh_cfg_beacon_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
 DECL|bt_mesh_cfg_cli_init|function|int bt_mesh_cfg_cli_init(struct bt_mesh_model *model, bool primary)
 DECL|bt_mesh_cfg_cli_op|variable|bt_mesh_cfg_cli_op
+DECL|bt_mesh_cfg_cli_timeout_get|function|s32_t bt_mesh_cfg_cli_timeout_get(void)
+DECL|bt_mesh_cfg_cli_timeout_set|function|void bt_mesh_cfg_cli_timeout_set(s32_t timeout)
 DECL|bt_mesh_cfg_comp_data_get|function|int bt_mesh_cfg_comp_data_get(u16_t net_idx, u16_t addr, u8_t page, u8_t *status, struct net_buf_simple *comp)
 DECL|bt_mesh_cfg_friend_get|function|int bt_mesh_cfg_friend_get(u16_t net_idx, u16_t addr, u8_t *status)
 DECL|bt_mesh_cfg_friend_set|function|int bt_mesh_cfg_friend_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
@@ -58,6 +59,7 @@ DECL|mod_id|member|u16_t mod_id;
 DECL|mod_sub_add|function|int mod_sub_add(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr,u16_t mod_id, bool vnd, u16_t cid, u8_t *status)
 DECL|mod_sub_param|struct|struct mod_sub_param {
 DECL|mod_sub_status|function|static void mod_sub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|msg_timeout|variable|msg_timeout
 DECL|net_idx|member|u16_t *net_idx;
 DECL|net_idx|member|u16_t net_idx;
 DECL|period|member|u8_t *period;
