@@ -1,4 +1,5 @@
 DECL|HOSTNAME_MAX_SIZE|macro|HOSTNAME_MAX_SIZE
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SOCKET_MSG_ACCEPT|enumerator|SOCKET_MSG_ACCEPT,
 DECL|SOCKET_MSG_BIND|enumerator|SOCKET_MSG_BIND = 1,
 DECL|SOCKET_MSG_CONNECT|enumerator|SOCKET_MSG_CONNECT,
@@ -58,6 +59,7 @@ DECL|socket_message_to_string|function|static char *socket_message_to_string(u8_
 DECL|socket_messages|enum|enum socket_messages {
 DECL|sock|member|SOCKET sock;
 DECL|sock|member|SOCKET sock;
+DECL|stack_stats|function|static void stack_stats(void)
 DECL|status|member|sint8 status;
 DECL|status|member|sint8 status;
 DECL|strAddr|member|struct sockaddr_in strAddr;
