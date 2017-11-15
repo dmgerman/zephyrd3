@@ -18,14 +18,14 @@ DECL|completion|function|static u8_t completion(char *line, u8_t len)
 DECL|default_module_prompt|variable|default_module_prompt
 DECL|default_module|variable|default_module
 DECL|get_cmd|function|static const struct shell_cmd *get_cmd(const struct shell_cmd cmds[], const char *cmd_str)
-DECL|get_command_to_complete|function|static int get_command_to_complete(char *str, char **command_prefix)
-DECL|get_destination_module|function|static int get_destination_module(const char *module_str)
+DECL|get_completion_module|function|static struct shell_module *get_completion_module(char *str, char **command_prefix)
+DECL|get_destination_module|function|static struct shell_module *get_destination_module(const char *module_str)
 DECL|get_internal|function|static const struct shell_cmd *get_internal(const char *command)
-DECL|get_mod_cmd|function|static const struct shell_cmd *get_mod_cmd(int module, const char *cmd_str)
+DECL|get_mod_cmd|function|static const struct shell_cmd *get_mod_cmd(struct shell_module *module, const char *cmd_str)
 DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
 DECL|line_queue_init|function|static void line_queue_init(void)
-DECL|print_module_commands|function|static void print_module_commands(const int module)
+DECL|print_module_commands|function|static void print_module_commands(struct shell_module *module)
 DECL|prompt|variable|prompt
 DECL|set_default_module|function|static int set_default_module(const char *name)
 DECL|shell_exec|function|int shell_exec(char *line)
