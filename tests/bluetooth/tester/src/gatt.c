@@ -56,6 +56,7 @@ DECL|discover_func|function|static u8_t discover_func(struct bt_conn *conn, cons
 DECL|discover_params|variable|discover_params
 DECL|enable_subscription|function|static int enable_subscription(struct bt_conn *conn, u16_t ccc_handle, u16_t value)
 DECL|enc_key_size|member|u8_t enc_key_size;
+DECL|err_to_att|function|static u8_t err_to_att(int err)
 DECL|ev_buf|variable|ev_buf
 DECL|exchange_func|function|static void exchange_func(struct bt_conn *conn, u8_t err, struct bt_gatt_exchange_params *params)
 DECL|exchange_mtu|function|static void exchange_mtu(u8_t *data, u16_t len)
@@ -69,6 +70,8 @@ DECL|gatt_buf_reserve|function|static void *gatt_buf_reserve(size_t len)
 DECL|gatt_buf|variable|gatt_buf
 DECL|gatt_db_add|function|static struct bt_gatt_attr *gatt_db_add(const struct bt_gatt_attr *pattern,size_t user_data_len)
 DECL|gatt_value|struct|struct gatt_value {
+DECL|get_attr_val_rp|function|static u8_t get_attr_val_rp(const struct bt_gatt_attr *attr, void *user_data)
+DECL|get_attr_val|function|static void get_attr_val(u8_t *data, u16_t len)
 DECL|get_attrs_foreach_data|struct|struct get_attrs_foreach_data {
 DECL|get_attrs_rp|function|static u8_t get_attrs_rp(const struct bt_gatt_attr *attr, void *user_data)
 DECL|get_attrs|function|static void get_attrs(u8_t *data, u16_t len)

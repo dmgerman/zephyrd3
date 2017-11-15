@@ -89,6 +89,7 @@ DECL|GATT_EV_NOTIFICATION|macro|GATT_EV_NOTIFICATION
 DECL|GATT_EXCHANGE_MTU|macro|GATT_EXCHANGE_MTU
 DECL|GATT_FIND_INCLUDED|macro|GATT_FIND_INCLUDED
 DECL|GATT_GET_ATTRIBUTES|macro|GATT_GET_ATTRIBUTES
+DECL|GATT_GET_ATTRIBUTE_VALUE|macro|GATT_GET_ATTRIBUTE_VALUE
 DECL|GATT_READ_LONG|macro|GATT_READ_LONG
 DECL|GATT_READ_MULTIPLE|macro|GATT_READ_MULTIPLE
 DECL|GATT_READ_SUPPORTED_COMMANDS|macro|GATT_READ_SUPPORTED_COMMANDS
@@ -116,6 +117,8 @@ DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -270,6 +273,7 @@ DECL|address|member|u8_t address[6];
 DECL|adv_data_len|member|u8_t adv_data_len;
 DECL|adv_data|member|u8_t adv_data[0];
 DECL|att_response|member|u8_t att_response;
+DECL|att_response|member|u8_t att_response;
 DECL|attr_id|member|u16_t attr_id;
 DECL|attr_id|member|u16_t attr_id;
 DECL|attrs_count|member|u8_t attrs_count;
@@ -405,6 +409,8 @@ DECL|gatt_disc_prim_uuid_cmd|struct|struct gatt_disc_prim_uuid_cmd {
 DECL|gatt_disc_prim_uuid_rp|struct|struct gatt_disc_prim_uuid_rp {
 DECL|gatt_find_included_cmd|struct|struct gatt_find_included_cmd {
 DECL|gatt_find_included_rp|struct|struct gatt_find_included_rp {
+DECL|gatt_get_attribute_value_cmd|struct|struct gatt_get_attribute_value_cmd {
+DECL|gatt_get_attribute_value_rp|struct|struct gatt_get_attribute_value_rp {
 DECL|gatt_get_attributes_cmd|struct|struct gatt_get_attributes_cmd {
 DECL|gatt_get_attributes_rp|struct|struct gatt_get_attributes_rp {
 DECL|gatt_included|struct|struct gatt_included {
@@ -424,6 +430,7 @@ DECL|gatt_write_long_cmd|struct|struct gatt_write_long_cmd {
 DECL|gatt_write_without_rsp_cmd|struct|struct gatt_write_without_rsp_cmd {
 DECL|handles_count|member|u8_t handles_count;
 DECL|handles|member|u16_t handles[0];
+DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
@@ -523,4 +530,6 @@ DECL|uuid|member|u8_t uuid[0];
 DECL|uuid|member|u8_t uuid[0];
 DECL|uuid|member|u8_t uuid[0];
 DECL|value_handle|member|u16_t value_handle;
+DECL|value_length|member|u16_t value_length;
+DECL|value|member|u8_t value[0];
 DECL|value|member|u8_t value[0];
