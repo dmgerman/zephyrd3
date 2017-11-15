@@ -1,4 +1,3 @@
-DECL|DISCOVER_PREFACE|macro|DISCOVER_PREFACE
 DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
 DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
@@ -15,6 +14,7 @@ DECL|RESOURCE_TYPE|macro|RESOURCE_TYPE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|TIMEOUT_BLOCKWISE_TRANSFER|macro|TIMEOUT_BLOCKWISE_TRANSFER
+DECL|WELL_KNOWN_CORE_PATH|macro|WELL_KNOWN_CORE_PATH
 DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|block1_contexts|variable|block1_contexts
 DECL|block_context|struct|struct block_context {
@@ -22,7 +22,7 @@ DECL|coap_options_to_path|function|static int coap_options_to_path(struct coap_o
 DECL|counter|member|u32_t counter;
 DECL|ctx|member|struct coap_block_context ctx;
 DECL|ctx|member|struct lwm2m_ctx *ctx;
-DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context)
+DECL|do_discover_op|function|static int do_discover_op(struct lwm2m_engine_context *context, bool well_known)
 DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t content_format)
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
 DECL|engine_add_observer|function|static int engine_add_observer(struct lwm2m_message *msg, const u8_t *token, u8_t tkl, struct lwm2m_obj_path *path, u16_t format)
