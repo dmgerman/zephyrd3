@@ -1,3 +1,4 @@
+DECL|CID_NVAL|macro|CID_NVAL
 DECL|bearer2str|function|static const char *bearer2str(bt_mesh_prov_bearer_t bearer)
 DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
@@ -15,6 +16,7 @@ DECL|cmd_input_num|function|static int cmd_input_num(int argc, char *argv[])
 DECL|cmd_input_str|function|static int cmd_input_str(int argc, char *argv[])
 DECL|cmd_lpn|function|static int cmd_lpn(int argc, char *argv[])
 DECL|cmd_mod_app_bind|function|static int cmd_mod_app_bind(int argc, char *argv[])
+DECL|cmd_mod_pub|function|static int cmd_mod_pub(int argc, char *argv[])
 DECL|cmd_mod_sub_add|function|static int cmd_mod_sub_add(int argc, char *argv[])
 DECL|cmd_netidx|function|static int cmd_netidx(int argc, char *argv[])
 DECL|cmd_pb_adv|function|static int cmd_pb_adv(int argc, char *argv[])
@@ -42,6 +44,8 @@ DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
 DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;
 DECL|mesh_commands|variable|mesh_commands
+DECL|mod_pub_get|function|static int mod_pub_get(u16_t addr, u16_t mod_id, u16_t cid)
+DECL|mod_pub_set|function|static int mod_pub_set(u16_t addr, u16_t mod_id, u16_t cid, char *argv[])
 DECL|net_idx|member|u16_t net_idx;
 DECL|net|variable|net
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
