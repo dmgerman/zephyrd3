@@ -35,6 +35,7 @@ DECL|elements|variable|elements
 DECL|hb_pub_get|function|static int hb_pub_get(int argc, char *argv[])
 DECL|hb_pub_set|function|static int hb_pub_set(int argc, char *argv[])
 DECL|hb_sub_get|function|static int hb_sub_get(int argc, char *argv[])
+DECL|hb_sub_print|function|static void hb_sub_print(struct bt_mesh_cfg_hb_sub *sub)
 DECL|hb_sub_set|function|static int hb_sub_set(int argc, char *argv[])
 DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
