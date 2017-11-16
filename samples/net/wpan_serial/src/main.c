@@ -11,9 +11,6 @@ DECL|get_mac|function|static u8_t *get_mac(struct device *dev)
 DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
-DECL|ieee802154_init|function|void ieee802154_init(struct net_if *iface)
-DECL|ieee802154_radio_handle_ack|function|extern enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_pkt *pkt)
-DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|init_ieee802154|function|static bool init_ieee802154(void)
 DECL|init_rx_queue|function|static void init_rx_queue(void)
 DECL|init_tx_queue|function|static void init_tx_queue(void)
