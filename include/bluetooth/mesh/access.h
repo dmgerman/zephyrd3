@@ -108,15 +108,15 @@ DECL|mod|member|struct bt_mesh_model *mod;
 DECL|net_idx|member|u16_t net_idx;
 DECL|opcode|member|const u32_t opcode;
 DECL|op|member|const struct bt_mesh_model_op * const op;
-DECL|period_div|member|period_div:4, /* Divisor for the Period */
-DECL|period|member|period:8, /* Publish Period */
+DECL|period_div|member|u8_t period_div:4, /* Divisor for the Period */
+DECL|period|member|u8_t period; /* Publish Period */
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;
 DECL|recv_ttl|member|u8_t recv_ttl;
-DECL|retransmit|member|retransmit:8, /* Retransmit Count & Interval Steps */
+DECL|retransmit|member|u8_t retransmit; /* Retransmit Count & Interval Steps */
 DECL|send_ttl|member|u8_t send_ttl;
 DECL|timer|member|struct k_delayed_work timer;
-DECL|ttl|member|u32_t ttl:8, /* Publish Time to Live */
+DECL|ttl|member|u8_t ttl; /* Publish Time to Live */
 DECL|user_data|member|void *user_data;
 DECL|vid|member|u16_t vid;
 DECL|vnd_model_count|member|const u8_t vnd_model_count;
