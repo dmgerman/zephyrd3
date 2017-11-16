@@ -107,9 +107,9 @@ DECL|net_rpl_move_parent|function|static void net_rpl_move_parent(struct net_if 
 DECL|net_rpl_neighbor_data_remove|function|static void net_rpl_neighbor_data_remove(struct net_nbr *nbr)
 DECL|net_rpl_neighbor_table_clear|function|static void net_rpl_neighbor_table_clear(struct net_nbr_table *table)
 DECL|net_rpl_nullify_parent|function|static void net_rpl_nullify_parent(struct net_if *iface, struct net_rpl_parent *parent)
-DECL|net_rpl_print_neighbors|function|static void net_rpl_print_neighbors(void)
-DECL|net_rpl_print_neighbors|macro|net_rpl_print_neighbors
 DECL|net_rpl_print_parent_info|macro|net_rpl_print_parent_info
+DECL|net_rpl_print_parents|function|static void net_rpl_print_parents(void)
+DECL|net_rpl_print_parents|macro|net_rpl_print_parents
 DECL|net_rpl_process_dio|function|static void net_rpl_process_dio(struct net_if *iface,struct in6_addr *from, struct net_rpl_dio *dio)
 DECL|net_rpl_process_parent_event|function|static bool net_rpl_process_parent_event(struct net_if *iface, struct net_rpl_instance *instance, struct net_rpl_parent *parent)
 DECL|net_rpl_remove_parent|function|static void net_rpl_remove_parent(struct net_if *iface, struct net_rpl_parent *parent, struct net_nbr *nbr)
