@@ -1,4 +1,6 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|FRIEND_CRED|macro|FRIEND_CRED
+DECL|IMPLICIT_BIND|macro|IMPLICIT_BIND
 DECL|bt_mesh_comp_get|function|const struct bt_mesh_comp *bt_mesh_comp_get(void)
 DECL|bt_mesh_comp_provision|function|void bt_mesh_comp_provision(u16_t addr)
 DECL|bt_mesh_comp_register|function|int bt_mesh_comp_register(const struct bt_mesh_comp *comp)
@@ -27,4 +29,4 @@ DECL|mod_init|function|static void mod_init(struct bt_mesh_model *mod, struct bt
 DECL|mod_publish|function|static void mod_publish(struct k_work *work)
 DECL|model_has_key|function|static bool model_has_key(struct bt_mesh_model *mod, u16_t key)
 DECL|model_init|variable|model_init
-DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, bool friend_cred, struct net_buf_simple *msg, bt_mesh_cb_t cb, void *cb_data)
+DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, int flags, struct net_buf_simple *msg, bt_mesh_cb_t cb, void *cb_data)
