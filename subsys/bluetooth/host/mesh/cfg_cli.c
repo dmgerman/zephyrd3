@@ -16,8 +16,8 @@ DECL|bt_mesh_cfg_friend_get|function|int bt_mesh_cfg_friend_get(u16_t net_idx, u
 DECL|bt_mesh_cfg_friend_set|function|int bt_mesh_cfg_friend_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
 DECL|bt_mesh_cfg_gatt_proxy_get|function|int bt_mesh_cfg_gatt_proxy_get(u16_t net_idx, u16_t addr, u8_t *status)
 DECL|bt_mesh_cfg_gatt_proxy_set|function|int bt_mesh_cfg_gatt_proxy_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *status)
-DECL|bt_mesh_cfg_hb_pub_get|function|int bt_mesh_cfg_hb_pub_get(u16_t net_idx, u16_t addr, u16_t *pub_dst, u8_t *count, u8_t *period, u8_t *ttl, u16_t *feat, u16_t *pub_net_idx, u8_t *status)
-DECL|bt_mesh_cfg_hb_pub_set|function|int bt_mesh_cfg_hb_pub_set(u16_t net_idx, u16_t addr, u16_t pub_dst, u8_t count, u8_t period, u8_t ttl, u16_t feat, u16_t pub_net_idx, u8_t *status)
+DECL|bt_mesh_cfg_hb_pub_get|function|int bt_mesh_cfg_hb_pub_get(u16_t net_idx, u16_t addr, struct bt_mesh_cfg_hb_pub *pub, u8_t *status)
+DECL|bt_mesh_cfg_hb_pub_set|function|int bt_mesh_cfg_hb_pub_set(u16_t net_idx, u16_t addr, const struct bt_mesh_cfg_hb_pub *pub, u8_t *status)
 DECL|bt_mesh_cfg_hb_sub_get|function|int bt_mesh_cfg_hb_sub_get(u16_t net_idx, u16_t addr, u16_t *src, u16_t *dst, u8_t *period, u8_t *count, u8_t *min, u8_t *max, u8_t *status)
 DECL|bt_mesh_cfg_hb_sub_set|function|int bt_mesh_cfg_hb_sub_set(u16_t net_idx, u16_t addr, u16_t src, u16_t dst, u8_t period, u8_t *status)
 DECL|bt_mesh_cfg_mod_app_bind_vnd|function|int bt_mesh_cfg_mod_app_bind_vnd(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t mod_app_idx, u16_t mod_id, u16_t cid, u8_t *status)
@@ -41,13 +41,10 @@ DECL|comp_data_status|function|static void comp_data_status(struct bt_mesh_model
 DECL|comp_data|struct|struct comp_data {
 DECL|comp|member|struct net_buf_simple *comp;
 DECL|count|member|u8_t *count;
-DECL|count|member|u8_t *count;
-DECL|dst|member|u16_t *dst;
 DECL|dst|member|u16_t *dst;
 DECL|elem_addr|member|u16_t elem_addr;
 DECL|elem_addr|member|u16_t elem_addr;
 DECL|elem_addr|member|u16_t elem_addr;
-DECL|feat|member|u16_t *feat;
 DECL|friend_status|function|static void friend_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gatt_proxy_status|function|static void gatt_proxy_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|get_state_u8|function|static int get_state_u8(u16_t net_idx, u16_t addr, u32_t op, u32_t rsp,u8_t *val)
@@ -72,10 +69,9 @@ DECL|mod_sub_add|function|static int mod_sub_add(u16_t net_idx, u16_t addr, u16_
 DECL|mod_sub_param|struct|struct mod_sub_param {
 DECL|mod_sub_status|function|static void mod_sub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|msg_timeout|variable|msg_timeout
-DECL|net_idx|member|u16_t *net_idx;
 DECL|net_idx|member|u16_t net_idx;
 DECL|period|member|u8_t *period;
-DECL|period|member|u8_t *period;
+DECL|pub|member|struct bt_mesh_cfg_hb_pub *pub;
 DECL|pub|member|struct bt_mesh_cfg_mod_pub *pub;
 DECL|relay_param|struct|struct relay_param {
 DECL|relay_status|function|static void relay_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -93,4 +89,3 @@ DECL|status|member|u8_t *status;
 DECL|sub_addr|member|u16_t sub_addr;
 DECL|transmit|member|u8_t *transmit;
 DECL|ttl_status|function|static void ttl_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|ttl|member|u8_t *ttl;
