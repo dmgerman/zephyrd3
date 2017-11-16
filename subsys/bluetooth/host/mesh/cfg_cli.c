@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|CID_NVAL|macro|CID_NVAL
 DECL|app_idx|member|u16_t app_idx;
 DECL|app_key_param|struct|struct app_key_param {
 DECL|app_key_status|function|static void app_key_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -50,13 +51,13 @@ DECL|hb_sub_param|struct|struct hb_sub_param {
 DECL|hb_sub_status|function|static void hb_sub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|max|member|u8_t *max;
 DECL|min|member|u8_t *min;
-DECL|mod_app_bind|function|int mod_app_bind(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t mod_app_idx, u16_t mod_id, bool vnd, u16_t cid, u8_t *status)
+DECL|mod_app_bind|function|static int mod_app_bind(u16_t net_idx, u16_t addr, u16_t elem_addr,u16_t mod_app_idx, u16_t mod_id, u16_t cid, u8_t *status)
 DECL|mod_app_idx|member|u16_t mod_app_idx;
 DECL|mod_app_param|struct|struct mod_app_param {
 DECL|mod_app_status|function|static void mod_app_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_id|member|u16_t mod_id;
 DECL|mod_id|member|u16_t mod_id;
-DECL|mod_sub_add|function|int mod_sub_add(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr,u16_t mod_id, bool vnd, u16_t cid, u8_t *status)
+DECL|mod_sub_add|function|static int mod_sub_add(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
 DECL|mod_sub_param|struct|struct mod_sub_param {
 DECL|mod_sub_status|function|static void mod_sub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|msg_timeout|variable|msg_timeout
@@ -80,5 +81,3 @@ DECL|sub_addr|member|u16_t sub_addr;
 DECL|transmit|member|u8_t *transmit;
 DECL|ttl_status|function|static void ttl_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|ttl|member|u8_t *ttl;
-DECL|vnd|member|bool vnd;
-DECL|vnd|member|bool vnd;
