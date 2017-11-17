@@ -16,7 +16,7 @@ DECL|ack_timeout|function|static inline s32_t ack_timeout(struct seg_rx *rx)
 DECL|ack|member|struct k_delayed_work ack;
 DECL|block|member|u32_t block;
 DECL|bt_mesh_app_key_find|function|struct bt_mesh_app_key *bt_mesh_app_key_find(u16_t app_idx)
-DECL|bt_mesh_ctl_send|function|int bt_mesh_ctl_send(struct bt_mesh_net_tx *tx, u8_t ctl_op, void *data, size_t data_len, u64_t *seq_auth, bt_mesh_adv_func_t cb)
+DECL|bt_mesh_ctl_send|function|int bt_mesh_ctl_send(struct bt_mesh_net_tx *tx, u8_t ctl_op, void *data, size_t data_len, u64_t *seq_auth, bt_mesh_adv_func_t cb, void *user_data)
 DECL|bt_mesh_rx_reset|function|void bt_mesh_rx_reset(void)
 DECL|bt_mesh_set_hb_sub_dst|function|void bt_mesh_set_hb_sub_dst(u16_t addr)
 DECL|bt_mesh_trans_init|function|void bt_mesh_trans_init(void)
@@ -53,7 +53,7 @@ DECL|seg_rx_is_valid|function|static bool seg_rx_is_valid(struct seg_rx *rx, str
 DECL|seg_rx_reset|function|static void seg_rx_reset(struct seg_rx *rx)
 DECL|seg_rx|struct|static struct seg_rx {
 DECL|seg_rx|variable|seg_rx
-DECL|seg_sent|function|static void seg_sent(struct net_buf *buf, u16_t duration, int err)
+DECL|seg_sent|function|static void seg_sent(struct net_buf *buf, u16_t duration, int err, void *user_data)
 DECL|seg_tx_complete|function|static inline void seg_tx_complete(struct seg_tx *tx, int err)
 DECL|seg_tx_lookup|function|static struct seg_tx *seg_tx_lookup(u16_t seq_zero, u8_t obo, u16_t addr)
 DECL|seg_tx_reset|function|static void seg_tx_reset(struct seg_tx *tx)

@@ -15,6 +15,5 @@ DECL|busy|member|busy:1;
 DECL|count|member|u8_t count:3,
 DECL|seg|member|} seg;
 DECL|sent|member|bt_mesh_adv_func_t sent;
-DECL|tx_id|member|u8_t tx_id;
 DECL|type|member|u8_t type:2,
-DECL|user_data|member|u8_t user_data[2];
+DECL|user_data|member|void *user_data;
