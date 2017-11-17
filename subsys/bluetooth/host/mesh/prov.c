@@ -67,7 +67,7 @@ DECL|WAIT_STRING|enumerator|WAIT_STRING, /* Waiting for string input from user *
 DECL|XACT_NVAL|macro|XACT_NVAL
 DECL|XACT_SEG_DATA|macro|XACT_SEG_DATA
 DECL|XACT_SEG_RECV|macro|XACT_SEG_RECV
-DECL|ack_complete|function|static void ack_complete(struct net_buf *buf, u16_t duration, int err, void *user_data)
+DECL|ack_complete|function|static void ack_complete(u16_t duration, int err, void *user_data)
 DECL|adv_buf_create|function|static struct net_buf *adv_buf_create(void)
 DECL|auth|member|u8_t auth[16]; /* Authentication Value */
 DECL|bearer_ctl_send|function|static int bearer_ctl_send(u8_t op, void *data, u8_t data_len)
@@ -82,7 +82,8 @@ DECL|bt_mesh_prov_get_uuid|function|const u8_t *bt_mesh_prov_get_uuid(void)
 DECL|bt_mesh_prov_init|function|int bt_mesh_prov_init(const struct bt_mesh_prov *prov_info)
 DECL|bt_mesh_prov_reset|function|void bt_mesh_prov_reset(void)
 DECL|bt_prov_active|function|bool bt_prov_active(void)
-DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, u16_t duration, int err, void *user_data)
+DECL|buf_sent_cb|variable|buf_sent_cb
+DECL|buf_sent|function|static void buf_sent(int err, void *user_data)
 DECL|buf|member|struct net_buf *buf[3];
 DECL|buf|member|struct net_buf_simple *buf;
 DECL|close_link|function|static void close_link(u8_t err, u8_t reason)

@@ -24,8 +24,10 @@ DECL|bt_mesh_friend_req|function|int bt_mesh_friend_req(struct bt_mesh_net_rx *r
 DECL|bt_mesh_friend_sec_update|function|void bt_mesh_friend_sec_update(u16_t net_idx)
 DECL|bt_mesh_friend_sub_add|function|int bt_mesh_friend_sub_add(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_friend_sub_rem|function|int bt_mesh_friend_sub_rem(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, u16_t duration, int err, void *user_data)
+DECL|buf_send_end|function|static void buf_send_end(int err, void *user_data)
+DECL|buf_send_start|function|static void buf_send_start(u16_t duration, int err, void *user_data)
 DECL|clear_procedure_start|function|static void clear_procedure_start(struct bt_mesh_friend *frnd)
+DECL|clear_sent_cb|variable|clear_sent_cb
 DECL|clear_timeout|function|static void clear_timeout(struct k_work *work)
 DECL|create_friend_pdu|function|static struct net_buf *create_friend_pdu(struct bt_mesh_friend *frnd, struct friend_pdu_info *info, struct net_buf_simple *sdu)
 DECL|ctl|member|ctl:1;
@@ -41,7 +43,7 @@ DECL|enqueue_update|function|static void enqueue_update(struct bt_mesh_friend *f
 DECL|find_clear|function|static struct bt_mesh_friend *find_clear(u16_t prev_friend)
 DECL|friend_adv|struct|static struct friend_adv {
 DECL|friend_buf_alloc|function|static struct net_buf *friend_buf_alloc(u16_t src)
-DECL|friend_clear_sent|function|static void friend_clear_sent(struct net_buf *buf, u16_t duration, int err, void *user_data)
+DECL|friend_clear_sent|function|static void friend_clear_sent(int err, void *user_data)
 DECL|friend_clear|function|static void friend_clear(struct bt_mesh_friend *frnd)
 DECL|friend_lpn_enqueue_rx|function|static void friend_lpn_enqueue_rx(struct bt_mesh_friend *frnd, struct bt_mesh_net_rx *rx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
 DECL|friend_lpn_enqueue_tx|function|static void friend_lpn_enqueue_tx(struct bt_mesh_friend *frnd, struct bt_mesh_net_tx *tx, enum bt_mesh_friend_pdu_type type, u64_t *seq_auth, struct net_buf_simple *sbuf)
