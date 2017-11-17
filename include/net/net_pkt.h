@@ -9,6 +9,7 @@ DECL|_unused|member|u8_t _unused : 3;
 DECL|appdatalen|member|u16_t appdatalen;
 DECL|appdata|member|u8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
+DECL|data_len|member|u16_t data_len; /* amount of payload data that can be added */
 DECL|family|member|u8_t family : 4; /* IPv4 vs IPv6 */
 DECL|forwarding|member|u8_t forwarding : 1; /* Are we forwarding this pkt
 DECL|frags|member|struct net_buf *frags;
