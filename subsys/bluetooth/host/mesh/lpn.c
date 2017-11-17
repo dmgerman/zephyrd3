@@ -16,7 +16,7 @@ DECL|POLL_XMIT|macro|POLL_XMIT
 DECL|REQ_ATTEMPTS|macro|REQ_ATTEMPTS
 DECL|REQ_RETRY_DURATION|macro|REQ_RETRY_DURATION
 DECL|SCAN_LATENCY|macro|SCAN_LATENCY
-DECL|bt_mesh_lpn_disable|function|void bt_mesh_lpn_disable(void)
+DECL|bt_mesh_lpn_disable|function|void bt_mesh_lpn_disable(bool force)
 DECL|bt_mesh_lpn_friend_clear_cfm|function|int bt_mesh_lpn_friend_clear_cfm(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_lpn_friend_offer|function|int bt_mesh_lpn_friend_offer(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_lpn_friend_poll|function|void bt_mesh_lpn_friend_poll(void)
@@ -27,7 +27,7 @@ DECL|bt_mesh_lpn_group_del|function|void bt_mesh_lpn_group_del(u16_t *groups, si
 DECL|bt_mesh_lpn_init|function|int bt_mesh_lpn_init(void)
 DECL|bt_mesh_lpn_msg_received|function|void bt_mesh_lpn_msg_received(struct bt_mesh_net_rx *rx)
 DECL|bt_mesh_lpn_set|function|int bt_mesh_lpn_set(bool enable)
-DECL|clear_friendship|function|static void clear_friendship(bool disable)
+DECL|clear_friendship|function|static void clear_friendship(bool force, bool disable)
 DECL|friend_clear_sent|function|static void friend_clear_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|friend_req_sent|function|static void friend_req_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|friend_response_received|function|static void friend_response_received(struct bt_mesh_lpn *lpn)
