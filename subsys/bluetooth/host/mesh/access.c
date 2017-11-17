@@ -17,7 +17,7 @@ DECL|bt_mesh_model_msg_init|function|void bt_mesh_model_msg_init(struct net_buf_
 DECL|bt_mesh_model_pub_period_get|function|s32_t bt_mesh_model_pub_period_get(struct bt_mesh_model *mod)
 DECL|bt_mesh_model_publish|function|int bt_mesh_model_publish(struct bt_mesh_model *model, struct net_buf_simple *msg)
 DECL|bt_mesh_model_recv|function|void bt_mesh_model_recv(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|bt_mesh_model_send|function|int bt_mesh_model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *msg, bt_mesh_cb_t cb, void *cb_data)
+DECL|bt_mesh_model_send|function|int bt_mesh_model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_primary_addr|function|u16_t bt_mesh_primary_addr(void)
 DECL|dev_comp|variable|dev_comp
 DECL|dev_primary_addr|variable|dev_primary_addr
@@ -29,4 +29,4 @@ DECL|mod_init|function|static void mod_init(struct bt_mesh_model *mod, struct bt
 DECL|mod_publish|function|static void mod_publish(struct k_work *work)
 DECL|model_has_key|function|static bool model_has_key(struct bt_mesh_model *mod, u16_t key)
 DECL|model_init|variable|model_init
-DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, int flags, struct net_buf_simple *msg, bt_mesh_cb_t cb, void *cb_data)
+DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, int flags, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)

@@ -8,15 +8,12 @@ DECL|addr|member|u16_t addr;
 DECL|adv_int|member|adv_int:5;
 DECL|attempts|member|u8_t attempts;
 DECL|bt_mesh_adv_alloc_t|typedef|typedef struct bt_mesh_adv *(*bt_mesh_adv_alloc_t)(int id);
-DECL|bt_mesh_adv_cb|struct|struct bt_mesh_adv_cb {
 DECL|bt_mesh_adv_func_t|typedef|typedef void (*bt_mesh_adv_func_t)(struct net_buf *buf, u16_t duration,
 DECL|bt_mesh_adv_type|enum|enum bt_mesh_adv_type {
 DECL|bt_mesh_adv|struct|struct bt_mesh_adv {
 DECL|busy|member|busy:1;
 DECL|cb_data|member|void *cb_data;
-DECL|cb|member|const struct bt_mesh_adv_cb *cb;
+DECL|cb|member|const struct bt_mesh_send_cb *cb;
 DECL|count|member|u8_t count:3,
 DECL|seg|member|} seg;
-DECL|send_end|member|void (*send_end)(int err, void *user_data);
-DECL|send_start|member|void (*send_start)(u16_t duration, int err, void *user_data);
 DECL|type|member|u8_t type:2,

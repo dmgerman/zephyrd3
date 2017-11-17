@@ -80,19 +80,20 @@ DECL|addr|member|u16_t addr;
 DECL|addr|member|u16_t addr;
 DECL|addr|member|u16_t addr; /* Publish Address */
 DECL|app_idx|member|u16_t app_idx;
-DECL|bt_mesh_cb_t|typedef|typedef void (*bt_mesh_cb_t)(int err, void *cb_data);
 DECL|bt_mesh_comp|struct|struct bt_mesh_comp {
 DECL|bt_mesh_elem|struct|struct bt_mesh_elem {
 DECL|bt_mesh_model_op|struct|struct bt_mesh_model_op {
 DECL|bt_mesh_model_pub|struct|struct bt_mesh_model_pub {
 DECL|bt_mesh_model|struct|struct bt_mesh_model {
 DECL|bt_mesh_msg_ctx|struct|struct bt_mesh_msg_ctx {
+DECL|bt_mesh_send_cb|struct|struct bt_mesh_send_cb {
 DECL|cid|member|u16_t cid;
 DECL|company|member|u16_t company;
 DECL|cred|member|cred:1; /* Friendship Credentials Flag */
 DECL|elem_count|member|size_t elem_count;
 DECL|elem|member|struct bt_mesh_elem *elem;
 DECL|elem|member|struct bt_mesh_elem *elem;
+DECL|end|member|void (*end)(int err, void *cb_data);
 DECL|func|member|void (*const func)(struct bt_mesh_model *model,
 DECL|func|member|void (*func)(struct bt_mesh_model *mod);
 DECL|groups|member|u16_t groups[CONFIG_BT_MESH_MODEL_GROUP_COUNT];
@@ -115,6 +116,7 @@ DECL|pub|member|struct bt_mesh_model_pub * const pub;
 DECL|recv_ttl|member|u8_t recv_ttl;
 DECL|retransmit|member|u8_t retransmit; /* Retransmit Count & Interval Steps */
 DECL|send_ttl|member|u8_t send_ttl;
+DECL|start|member|void (*start)(u16_t duration, int err, void *cb_data);
 DECL|timer|member|struct k_delayed_work timer;
 DECL|ttl|member|u8_t ttl; /* Publish Time to Live */
 DECL|user_data|member|void *user_data;
