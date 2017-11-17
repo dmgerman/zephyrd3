@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|FRIEND_ADV|macro|FRIEND_ADV
 DECL|FRIEND_BUF_COUNT|macro|FRIEND_BUF_COUNT
 DECL|FRIEND_BUF_SIZE|macro|FRIEND_BUF_SIZE
 DECL|MIN_QUEUE_SIZE_LOG|macro|MIN_QUEUE_SIZE_LOG
@@ -6,6 +7,9 @@ DECL|MIN_QUEUE_SIZE|macro|MIN_QUEUE_SIZE
 DECL|RECV_WIN_FACT|macro|RECV_WIN_FACT
 DECL|RECV_WIN|macro|RECV_WIN
 DECL|RSSI_FACT|macro|RSSI_FACT
+DECL|adv_alloc|function|static struct bt_mesh_adv *adv_alloc(int id)
+DECL|adv_pool|variable|adv_pool
+DECL|adv|member|struct bt_mesh_adv adv;
 DECL|bt_mesh_friend_clear_cfm|function|int bt_mesh_friend_clear_cfm(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_friend_clear_incomplete|function|void bt_mesh_friend_clear_incomplete(struct bt_mesh_subnet *sub, u16_t src, u16_t dst, u64_t *seq_auth)
 DECL|bt_mesh_friend_clear_net_idx|function|void bt_mesh_friend_clear_net_idx(u16_t net_idx)
@@ -21,7 +25,6 @@ DECL|bt_mesh_friend_sec_update|function|void bt_mesh_friend_sec_update(u16_t net
 DECL|bt_mesh_friend_sub_add|function|int bt_mesh_friend_sub_add(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_friend_sub_rem|function|int bt_mesh_friend_sub_rem(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|buf_sent|function|static void buf_sent(struct net_buf *buf, u16_t duration, int err)
-DECL|buf_seq_auth|variable|buf_seq_auth
 DECL|clear_procedure_start|function|static void clear_procedure_start(struct bt_mesh_friend *frnd)
 DECL|clear_timeout|function|static void clear_timeout(struct k_work *work)
 DECL|create_friend_pdu|function|static struct net_buf *create_friend_pdu(struct bt_mesh_friend *frnd, struct friend_pdu_info *info, struct net_buf_simple *sdu)
@@ -36,6 +39,7 @@ DECL|enqueue_offer|function|static void enqueue_offer(struct bt_mesh_friend *frn
 DECL|enqueue_sub_cfm|function|static void enqueue_sub_cfm(struct bt_mesh_friend *frnd, u8_t xact)
 DECL|enqueue_update|function|static void enqueue_update(struct bt_mesh_friend *frnd, u8_t md)
 DECL|find_clear|function|static struct bt_mesh_friend *find_clear(u16_t prev_friend)
+DECL|friend_adv|struct|static struct friend_adv {
 DECL|friend_buf_alloc|function|static struct net_buf *friend_buf_alloc(u16_t src)
 DECL|friend_clear_sent|function|static void friend_clear_sent(struct net_buf *buf, u16_t duration, int err)
 DECL|friend_clear|function|static void friend_clear(struct bt_mesh_friend *frnd)
@@ -52,6 +56,7 @@ DECL|iv_index|member|u32_t iv_index;
 DECL|offer_delay|function|static s32_t offer_delay(struct bt_mesh_friend *frnd, s8_t rssi, u8_t crit)
 DECL|recv_delay|function|static s32_t recv_delay(struct bt_mesh_friend *frnd)
 DECL|send_friend_clear|function|static void send_friend_clear(struct bt_mesh_friend *frnd)
+DECL|seq_auth|member|u64_t seq_auth;
 DECL|seq|member|u8_t seq[3];
 DECL|src|member|u16_t src;
 DECL|ttl|member|u8_t ttl:7,
