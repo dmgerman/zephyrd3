@@ -8,7 +8,7 @@ DECL|config_interrupt|function|static int config_interrupt(u32_t pin, int flags)
 DECL|config_polarity|function|static void config_polarity(u32_t pin, int flags)
 DECL|convert_int_type|function|static int convert_int_type(int flags)
 DECL|gpio_data_pins_0_to_31|variable|gpio_data_pins_0_to_31
-DECL|gpio_data_pins_32_to_63|variable|gpio_data_pins_32_to_63
+DECL|gpio_data_pins_32_to_39|variable|gpio_data_pins_32_to_39
 DECL|gpio_esp32_config|function|static int gpio_esp32_config(struct device *dev, int access_op, u32_t pin, int flags)
 DECL|gpio_esp32_data|struct|struct gpio_esp32_data {
 DECL|gpio_esp32_disable_callback|function|static int gpio_esp32_disable_callback(struct device *dev, int access_op, u32_t pin)
