@@ -22,6 +22,8 @@ DECL|dev_key|variable|dev_key
 DECL|dev_uuid|variable|dev_uuid
 DECL|elements|variable|elements
 DECL|flags|variable|flags
+DECL|health_pub|variable|health_pub
+DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
 DECL|heartbeat|function|static void heartbeat(u8_t hops, u16_t feat)
 DECL|iv_index|variable|iv_index

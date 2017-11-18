@@ -18,6 +18,7 @@ DECL|gen_onoff_op|variable|gen_onoff_op
 DECL|gen_onoff_pub|variable|gen_onoff_pub
 DECL|gen_onoff_set_unack|function|static void gen_onoff_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_set|function|static void gen_onoff_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|health_pub|variable|health_pub
 DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)

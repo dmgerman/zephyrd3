@@ -1,8 +1,9 @@
+DECL|APP_MIC_LEN|macro|APP_MIC_LEN
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|NET_MIC_LEN|macro|NET_MIC_LEN
 DECL|bt_mesh_aes_cmac|function|int bt_mesh_aes_cmac(const u8_t key[16], struct bt_mesh_sg *sg, size_t sg_len, u8_t mac[16])
-DECL|bt_mesh_app_decrypt|function|int bt_mesh_app_decrypt(const u8_t key[16], bool dev_key, u8_t aszmic,struct net_buf_simple *buf, u8_t mic_len, struct net_buf_simple *out, const u8_t *ad, u16_t src, u16_t dst, u32_t seq_num, u32_t iv_index)
-DECL|bt_mesh_app_encrypt|function|int bt_mesh_app_encrypt(const u8_t key[16], bool dev_key, u8_t aszmic,struct net_buf_simple *buf, const u8_t *ad, u8_t mic_len, u16_t src, u16_t dst, u32_t seq_num, u32_t iv_index)
+DECL|bt_mesh_app_decrypt|function|int bt_mesh_app_decrypt(const u8_t key[16], bool dev_key, u8_t aszmic,struct net_buf_simple *buf, struct net_buf_simple *out, const u8_t *ad, u16_t src, u16_t dst, u32_t seq_num, u32_t iv_index)
+DECL|bt_mesh_app_encrypt|function|int bt_mesh_app_encrypt(const u8_t key[16], bool dev_key, u8_t aszmic,struct net_buf_simple *buf, const u8_t *ad, u16_t src, u16_t dst, u32_t seq_num, u32_t iv_index)
 DECL|bt_mesh_beacon_auth|function|int bt_mesh_beacon_auth(const u8_t beacon_key[16], u8_t flags,const u8_t net_id[8], u32_t iv_index, u8_t auth[8])
 DECL|bt_mesh_ccm_decrypt|function|static int bt_mesh_ccm_decrypt(const u8_t key[16], u8_t nonce[13], const u8_t *enc_msg, size_t msg_len, const u8_t *aad, size_t aad_len, u8_t *out_msg, size_t mic_size)
 DECL|bt_mesh_ccm_encrypt|function|static int bt_mesh_ccm_encrypt(const u8_t key[16], u8_t nonce[13], const u8_t *msg, size_t msg_len, const u8_t *aad, size_t aad_len, u8_t *out_msg, size_t mic_size)

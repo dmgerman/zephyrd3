@@ -1,6 +1,4 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
-DECL|FRIEND_CRED|macro|FRIEND_CRED
-DECL|IMPLICIT_BIND|macro|IMPLICIT_BIND
 DECL|bt_mesh_comp_get|function|const struct bt_mesh_comp *bt_mesh_comp_get(void)
 DECL|bt_mesh_comp_provision|function|void bt_mesh_comp_provision(u16_t addr)
 DECL|bt_mesh_comp_register|function|int bt_mesh_comp_register(const struct bt_mesh_comp *comp)
@@ -15,7 +13,7 @@ DECL|bt_mesh_model_find|function|struct bt_mesh_model *bt_mesh_model_find(struct
 DECL|bt_mesh_model_foreach|function|void bt_mesh_model_foreach(void (*func)(struct bt_mesh_model *mod,struct bt_mesh_elem *elem, bool vnd, bool primary, void *user_data), void *user_data)
 DECL|bt_mesh_model_msg_init|function|void bt_mesh_model_msg_init(struct net_buf_simple *msg, u32_t opcode)
 DECL|bt_mesh_model_pub_period_get|function|s32_t bt_mesh_model_pub_period_get(struct bt_mesh_model *mod)
-DECL|bt_mesh_model_publish|function|int bt_mesh_model_publish(struct bt_mesh_model *model, struct net_buf_simple *msg)
+DECL|bt_mesh_model_publish|function|int bt_mesh_model_publish(struct bt_mesh_model *model)
 DECL|bt_mesh_model_recv|function|void bt_mesh_model_recv(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_model_send|function|int bt_mesh_model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_primary_addr|function|u16_t bt_mesh_primary_addr(void)
@@ -29,4 +27,7 @@ DECL|mod_init|function|static void mod_init(struct bt_mesh_model *mod, struct bt
 DECL|mod_publish|function|static void mod_publish(struct k_work *work)
 DECL|model_has_key|function|static bool model_has_key(struct bt_mesh_model *mod, u16_t key)
 DECL|model_init|variable|model_init
-DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, int flags, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
+DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_net_tx *tx, bool implicit_bind, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
+DECL|pub_sent_cb|variable|pub_sent_cb
+DECL|publish_retransmit|function|static int publish_retransmit(struct bt_mesh_model *mod)
+DECL|publish_sent|function|static void publish_sent(int err, void *user_data)

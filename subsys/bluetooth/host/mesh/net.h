@@ -31,8 +31,10 @@ DECL|LPN_GROUPS|macro|LPN_GROUPS
 DECL|__packed|enum|enum __packed {
 DECL|addr|member|u16_t addr;
 DECL|adv_duration|member|u16_t adv_duration;
+DECL|aid|member|aid:6;
 DECL|app_idx|member|u16_t app_idx;
 DECL|app_keys|member|struct bt_mesh_app_key app_keys[CONFIG_BT_MESH_APP_KEY_COUNT];
+DECL|aszmic|member|aszmic:1,
 DECL|auth|member|u8_t auth[8]; /* Beacon Authentication Value */
 DECL|beacon_sent|member|u32_t beacon_sent; /* Timestamp of last sent beacon */
 DECL|beacons_cur|member|u8_t beacons_cur; /* Number of beaconds observed during
@@ -66,8 +68,8 @@ DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|established|member|established:1, /* Friendship established */
 DECL|established|member|established:1;
-DECL|friend_cred|member|bool friend_cred;
 DECL|friend_cred|member|friend_cred:1, /* Data was encrypted with friend cred */
+DECL|friend_cred|member|u8_t friend_cred:1,
 DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];

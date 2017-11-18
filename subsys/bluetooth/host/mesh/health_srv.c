@@ -1,16 +1,11 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
-DECL|HEALTH_STATUS_SIZE_MAX|macro|HEALTH_STATUS_SIZE_MAX
-DECL|HEALTH_STATUS_SIZE|macro|HEALTH_STATUS_SIZE
-DECL|HEALTH_STATUS_SIZE|macro|HEALTH_STATUS_SIZE
 DECL|HEALTH_TEST_STANDARD|macro|HEALTH_TEST_STANDARD
-DECL|MAX_FAULTS|macro|MAX_FAULTS
 DECL|attention_get|function|static void attention_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|attention_off|function|static void attention_off(struct k_work *work)
 DECL|attention_set_unrel|function|static void attention_set_unrel(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|attention_set|function|static void attention_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|bt_mesh_attention|function|void bt_mesh_attention(struct bt_mesh_model *model, u8_t time)
 DECL|bt_mesh_fault_update|function|int bt_mesh_fault_update(struct bt_mesh_elem *elem)
-DECL|bt_mesh_health_pub|variable|bt_mesh_health_pub
 DECL|bt_mesh_health_srv_init|function|int bt_mesh_health_srv_init(struct bt_mesh_model *model, bool primary)
 DECL|bt_mesh_health_srv_op|variable|bt_mesh_health_srv_op
 DECL|health_fault_clear_unrel|function|static void health_fault_clear_unrel(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
