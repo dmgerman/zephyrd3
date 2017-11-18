@@ -28,6 +28,10 @@ DECL|bt_mesh_cfg_mod_pub_set_vnd|function|int bt_mesh_cfg_mod_pub_set_vnd(u16_t 
 DECL|bt_mesh_cfg_mod_pub_set|function|int bt_mesh_cfg_mod_pub_set(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t mod_id, struct bt_mesh_cfg_mod_pub *pub, u8_t *status)
 DECL|bt_mesh_cfg_mod_sub_add_vnd|function|int bt_mesh_cfg_mod_sub_add_vnd(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
 DECL|bt_mesh_cfg_mod_sub_add|function|int bt_mesh_cfg_mod_sub_add(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u8_t *status)
+DECL|bt_mesh_cfg_mod_sub_del_vnd|function|int bt_mesh_cfg_mod_sub_del_vnd(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
+DECL|bt_mesh_cfg_mod_sub_del|function|int bt_mesh_cfg_mod_sub_del(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u8_t *status)
+DECL|bt_mesh_cfg_mod_sub_overwrite_vnd|function|int bt_mesh_cfg_mod_sub_overwrite_vnd(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
+DECL|bt_mesh_cfg_mod_sub_overwrite|function|int bt_mesh_cfg_mod_sub_overwrite(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u8_t *status)
 DECL|bt_mesh_cfg_relay_get|function|int bt_mesh_cfg_relay_get(u16_t net_idx, u16_t addr, u8_t *status, u8_t *transmit)
 DECL|bt_mesh_cfg_relay_set|function|int bt_mesh_cfg_relay_set(u16_t net_idx, u16_t addr, u8_t new_relay, u8_t new_transmit, u8_t *status, u8_t *transmit)
 DECL|bt_mesh_cfg_ttl_get|function|int bt_mesh_cfg_ttl_get(u16_t net_idx, u16_t addr, u8_t *ttl)
@@ -61,9 +65,9 @@ DECL|mod_pub_get|function|static int mod_pub_get(u16_t net_idx, u16_t addr, u16_
 DECL|mod_pub_param|struct|struct mod_pub_param {
 DECL|mod_pub_set|function|static int mod_pub_set(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t mod_id, u16_t cid, struct bt_mesh_cfg_mod_pub *pub, u8_t *status)
 DECL|mod_pub_status|function|static void mod_pub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|mod_sub_add|function|static int mod_sub_add(u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
 DECL|mod_sub_param|struct|struct mod_sub_param {
 DECL|mod_sub_status|function|static void mod_sub_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|mod_sub|function|static int mod_sub(u32_t op, u16_t net_idx, u16_t addr, u16_t elem_addr, u16_t sub_addr, u16_t mod_id, u16_t cid, u8_t *status)
 DECL|msg_timeout|variable|msg_timeout
 DECL|net_idx|member|u16_t net_idx;
 DECL|pub|member|struct bt_mesh_cfg_hb_pub *pub;
