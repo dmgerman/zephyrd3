@@ -32,6 +32,7 @@ DECL|ctl_recv|function|static int ctl_recv(struct bt_mesh_net_rx *rx, u8_t hdr, 
 DECL|ctl|member|ctl:1,
 DECL|dst|member|u16_t dst;
 DECL|dst|member|u16_t dst;
+DECL|first_sent_cb|variable|first_sent_cb
 DECL|hb_sub_dst|variable|hb_sub_dst
 DECL|hdr|member|u8_t hdr;
 DECL|in_use|member|in_use:1,
@@ -54,6 +55,7 @@ DECL|seg_rx_is_valid|function|static bool seg_rx_is_valid(struct seg_rx *rx, str
 DECL|seg_rx_reset|function|static void seg_rx_reset(struct seg_rx *rx)
 DECL|seg_rx|struct|static struct seg_rx {
 DECL|seg_rx|variable|seg_rx
+DECL|seg_send_start|function|static void seg_send_start(u16_t duration, int err, void *user_data)
 DECL|seg_sent_cb|variable|seg_sent_cb
 DECL|seg_sent|function|static void seg_sent(int err, void *user_data)
 DECL|seg_tx_complete|function|static inline void seg_tx_complete(struct seg_tx *tx, int err)
