@@ -53,6 +53,8 @@ DECL|handle_ra_neighbor|function|static inline struct net_buf *handle_ra_neighbo
 DECL|handle_ra_prefix|function|static inline struct net_buf *handle_ra_prefix(struct net_pkt *pkt, struct net_buf *frag, u8_t len, u16_t offset, u16_t *pos)
 DECL|iface_cb_data|struct|struct iface_cb_data {
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
+DECL|in6addr_any|variable|in6addr_any
+DECL|in6addr_loopback|variable|in6addr_loopback
 DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
 DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(u8_t proto)
 DECL|mld_query_input_handler|variable|mld_query_input_handler

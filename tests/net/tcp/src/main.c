@@ -27,8 +27,6 @@ DECL|func|member|bool (*func)(void);
 DECL|get_recv_wnd|function|static inline u32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|handle|member|struct net_conn_handle *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
-DECL|in4addr_any|variable|in4addr_any
-DECL|in6addr_any|variable|in6addr_any
 DECL|ipv6_hop_by_hop_ext_hdr|variable|ipv6_hop_by_hop_ext_hdr
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
@@ -66,6 +64,8 @@ DECL|set_port|function|static void set_port(sa_family_t family, struct sockaddr 
 DECL|setup_ipv4_tcp|function|static void setup_ipv4_tcp(struct net_pkt *pkt, struct in_addr *remote_addr, struct in_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|setup_ipv6_tcp_long|function|static void setup_ipv6_tcp_long(struct net_pkt *pkt,struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
 DECL|setup_ipv6_tcp|function|static void setup_ipv6_tcp(struct net_pkt *pkt, struct in6_addr *remote_addr, struct in6_addr *local_addr, u16_t remote_port, u16_t local_port)
+DECL|sin6_addr_any|variable|sin6_addr_any
+DECL|sin_addr_any|variable|sin_addr_any
 DECL|syn_v6_sent|variable|syn_v6_sent
 DECL|test_cleanup|function|static bool test_cleanup(void)
 DECL|test_create_v4_fin_packet|function|static bool test_create_v4_fin_packet(void)
