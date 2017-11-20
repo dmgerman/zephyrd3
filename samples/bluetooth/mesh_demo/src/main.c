@@ -39,5 +39,3 @@ DECL|tune_str|variable|tune_str
 DECL|vnd_button_pressed|function|static void vnd_button_pressed(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|vnd_models|variable|vnd_models
 DECL|vnd_ops|variable|vnd_ops
-DECL|vnd_publish|function|static int vnd_publish(struct bt_mesh_model *mod)
-DECL|vnd_pub|variable|vnd_pub
