@@ -24,6 +24,7 @@ DECL|bt_mesh_trans_recv|function|int bt_mesh_trans_recv(struct net_buf_simple *b
 DECL|bt_mesh_trans_resend|function|int bt_mesh_trans_resend(struct bt_mesh_net_tx *tx, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_trans_send|function|int bt_mesh_trans_send(struct bt_mesh_net_tx *tx, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_tx_in_progress|function|bool bt_mesh_tx_in_progress(void)
+DECL|bt_mesh_tx_reset|function|void bt_mesh_tx_reset(void)
 DECL|buf_data|member|u8_t buf_data[CONFIG_BT_MESH_RX_SDU_MAX];
 DECL|buf|member|struct net_buf_simple buf;
 DECL|cb_data|member|void *cb_data;
