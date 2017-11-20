@@ -18,7 +18,7 @@ DECL|health_get_registered|function|static void health_get_registered(struct bt_
 DECL|health_period_get|function|static void health_period_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|health_period_set_unrel|function|static void health_period_set_unrel(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|health_period_set|function|static void health_period_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|health_pub|function|static void health_pub(struct bt_mesh_model *mod)
+DECL|health_pub_update|function|static int health_pub_update(struct bt_mesh_model *mod)
 DECL|health_srv|variable|health_srv
 DECL|send_attention_status|function|static void send_attention_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx)
 DECL|send_health_period_status|function|static void send_health_period_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx)

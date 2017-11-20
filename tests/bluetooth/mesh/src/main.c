@@ -21,5 +21,5 @@ DECL|root_models|variable|root_models
 DECL|vnd_models|variable|vnd_models
 DECL|vnd_ops|variable|vnd_ops
 DECL|vnd_pub2|variable|vnd_pub2
-DECL|vnd_publish|function|static void vnd_publish(struct bt_mesh_model *mod)
+DECL|vnd_publish|function|static int vnd_publish(struct bt_mesh_model *mod)
 DECL|vnd_pub|variable|vnd_pub

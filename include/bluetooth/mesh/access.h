@@ -99,7 +99,6 @@ DECL|elem|member|struct bt_mesh_elem *elem;
 DECL|elem|member|struct bt_mesh_elem *elem;
 DECL|end|member|void (*end)(int err, void *cb_data);
 DECL|func|member|void (*const func)(struct bt_mesh_model *model,
-DECL|func|member|void (*func)(struct bt_mesh_model *mod);
 DECL|groups|member|u16_t groups[CONFIG_BT_MESH_MODEL_GROUP_COUNT];
 DECL|id|member|const u16_t id;
 DECL|id|member|u16_t id;
@@ -125,6 +124,7 @@ DECL|send_ttl|member|u8_t send_ttl;
 DECL|start|member|void (*start)(u16_t duration, int err, void *cb_data);
 DECL|timer|member|struct k_delayed_work timer;
 DECL|ttl|member|u8_t ttl; /* Publish Time to Live */
+DECL|update|member|int (*update)(struct bt_mesh_model *mod);
 DECL|user_data|member|void *user_data;
 DECL|vid|member|u16_t vid;
 DECL|vnd_model_count|member|const u8_t vnd_model_count;
