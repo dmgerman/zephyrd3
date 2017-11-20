@@ -114,6 +114,7 @@ DECL|net_idx|member|u16_t net_idx;
 DECL|opcode|member|const u32_t opcode;
 DECL|op|member|const struct bt_mesh_model_op * const op;
 DECL|period_div|member|u8_t period_div:4, /**< Divisor for the Period. */
+DECL|period_start|member|u32_t period_start; /**< Start of the current period. */
 DECL|period|member|u8_t period; /**< Publish Period. */
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;

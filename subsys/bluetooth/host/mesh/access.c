@@ -28,6 +28,7 @@ DECL|mod_publish|function|static void mod_publish(struct k_work *work)
 DECL|model_has_key|function|static bool model_has_key(struct bt_mesh_model *mod, u16_t key)
 DECL|model_init|variable|model_init
 DECL|model_send|function|static int model_send(struct bt_mesh_model *model, struct bt_mesh_net_tx *tx, bool implicit_bind, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
+DECL|next_period|function|static s32_t next_period(struct bt_mesh_model *mod)
 DECL|pub_sent_cb|variable|pub_sent_cb
 DECL|publish_retransmit|function|static int publish_retransmit(struct bt_mesh_model *mod)
 DECL|publish_sent|function|static void publish_sent(int err, void *user_data)
