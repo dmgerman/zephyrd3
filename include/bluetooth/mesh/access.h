@@ -81,7 +81,7 @@ DECL|BT_MESH_TTL_MAX|macro|BT_MESH_TTL_MAX
 DECL|__BT_MESH_ACCESS_H|macro|__BT_MESH_ACCESS_H
 DECL|addr|member|u16_t addr;
 DECL|addr|member|u16_t addr;
-DECL|addr|member|u16_t addr; /* Publish Address */
+DECL|addr|member|u16_t addr; /**< Publish Address. */
 DECL|app_idx|member|u16_t app_idx;
 DECL|bt_mesh_comp|struct|struct bt_mesh_comp {
 DECL|bt_mesh_elem|struct|struct bt_mesh_elem {
@@ -92,8 +92,8 @@ DECL|bt_mesh_msg_ctx|struct|struct bt_mesh_msg_ctx {
 DECL|bt_mesh_send_cb|struct|struct bt_mesh_send_cb {
 DECL|cid|member|u16_t cid;
 DECL|company|member|u16_t company;
-DECL|count|member|count:3; /* Retransmissions left */
-DECL|cred|member|cred:1, /* Friendship Credentials Flag */
+DECL|count|member|count:3; /**< Retransmissions left. */
+DECL|cred|member|cred:1, /**< Friendship Credentials Flag. */
 DECL|elem_count|member|size_t elem_count;
 DECL|elem|member|struct bt_mesh_elem *elem;
 DECL|elem|member|struct bt_mesh_elem *elem;
@@ -103,7 +103,7 @@ DECL|groups|member|u16_t groups[CONFIG_BT_MESH_MODEL_GROUP_COUNT];
 DECL|id|member|const u16_t id;
 DECL|id|member|u16_t id;
 DECL|keys|member|u16_t keys[CONFIG_BT_MESH_MODEL_KEY_COUNT];
-DECL|key|member|u16_t key; /* Publish AppKey Index */
+DECL|key|member|u16_t key; /**< Publish AppKey Index. */
 DECL|loc|member|const u16_t loc;
 DECL|min_len|member|const size_t min_len;
 DECL|model_count|member|const u8_t model_count;
@@ -113,17 +113,17 @@ DECL|msg|member|struct net_buf_simple *msg;
 DECL|net_idx|member|u16_t net_idx;
 DECL|opcode|member|const u32_t opcode;
 DECL|op|member|const struct bt_mesh_model_op * const op;
-DECL|period_div|member|u8_t period_div:4, /* Divisor for the Period */
-DECL|period|member|u8_t period; /* Publish Period */
+DECL|period_div|member|u8_t period_div:4, /**< Divisor for the Period. */
+DECL|period|member|u8_t period; /**< Publish Period. */
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;
 DECL|recv_ttl|member|u8_t recv_ttl:7;
-DECL|retransmit|member|u8_t retransmit; /* Retransmit Count & Interval Steps */
+DECL|retransmit|member|u8_t retransmit; /**< Retransmit Count & Interval Steps. */
 DECL|send_rel|member|u8_t send_rel:1;
 DECL|send_ttl|member|u8_t send_ttl;
 DECL|start|member|void (*start)(u16_t duration, int err, void *cb_data);
 DECL|timer|member|struct k_delayed_work timer;
-DECL|ttl|member|u8_t ttl; /* Publish Time to Live */
+DECL|ttl|member|u8_t ttl; /**< Publish Time to Live. */
 DECL|update|member|int (*update)(struct bt_mesh_model *mod);
 DECL|user_data|member|void *user_data;
 DECL|vid|member|u16_t vid;
