@@ -11,6 +11,7 @@ DECL|bt_mesh_health_period_get|function|int bt_mesh_health_period_get(u16_t net_
 DECL|bt_mesh_health_period_set|function|int bt_mesh_health_period_set(u16_t net_idx, u16_t addr, u16_t app_idx, u8_t divisor, u8_t *updated_divisor)
 DECL|check_cli|function|static int check_cli(void)
 DECL|cid|member|u16_t cid;
+DECL|cli_wait|function|static int cli_wait(void *param, u32_t op)
 DECL|divisor|member|u8_t *divisor;
 DECL|expect_test_id|member|u8_t *expect_test_id;
 DECL|fault_count|member|size_t *fault_count;
