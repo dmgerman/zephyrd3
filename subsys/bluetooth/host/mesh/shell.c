@@ -4,9 +4,11 @@ DECL|app_idx|member|u16_t app_idx;
 DECL|bearer2str|function|static const char *bearer2str(bt_mesh_prov_bearer_t bearer)
 DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
+DECL|cmd_add_fault|function|static int cmd_add_fault(int argc, char *argv[])
 DECL|cmd_app_key_add|function|static int cmd_app_key_add(int argc, char *argv[])
 DECL|cmd_appidx|function|static int cmd_appidx(int argc, char *argv[])
 DECL|cmd_beacon|function|static int cmd_beacon(int argc, char *argv[])
+DECL|cmd_del_fault|function|static int cmd_del_fault(int argc, char *argv[])
 DECL|cmd_dst|function|static int cmd_dst(int argc, char *argv[])
 DECL|cmd_fault_get|function|static int cmd_fault_get(int argc, char *argv[])
 DECL|cmd_friend|function|static int cmd_friend(int argc, char *argv[])
@@ -33,10 +35,16 @@ DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
 DECL|cmd_timeout|function|int cmd_timeout(int argc, char *argv[])
 DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
 DECL|comp|variable|comp
+DECL|cur_faults|variable|cur_faults
 DECL|default_key|variable|default_key
 DECL|dev_uuid|variable|dev_uuid
 DECL|dst|member|u16_t dst;
 DECL|elements|variable|elements
+DECL|fault_clear|function|static int fault_clear(struct bt_mesh_model *model, uint16_t cid)
+DECL|fault_get_cur|function|static int fault_get_cur(struct bt_mesh_model *model, u8_t *test_id, u16_t *company_id, u8_t *faults, u8_t *fault_count)
+DECL|fault_get_reg|function|static int fault_get_reg(struct bt_mesh_model *model, u16_t cid, u8_t *test_id, u8_t *faults, u8_t *fault_count)
+DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint8_t test_id, uint16_t cid)
+DECL|get_faults|function|static void get_faults(u8_t *faults, u8_t faults_size, u8_t *dst, u8_t *count)
 DECL|hb_pub_get|function|static int hb_pub_get(int argc, char *argv[])
 DECL|hb_pub_set|function|static int hb_pub_set(int argc, char *argv[])
 DECL|hb_sub_get|function|static int hb_sub_get(int argc, char *argv[])
@@ -45,6 +53,7 @@ DECL|hb_sub_set|function|static int hb_sub_set(int argc, char *argv[])
 DECL|health_cli|variable|health_cli
 DECL|health_current_status|function|static void health_current_status(struct bt_mesh_health_cli *cli, u16_t addr, u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|health_pub|variable|health_pub
+DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
@@ -62,6 +71,7 @@ DECL|output_string|function|static int output_string(const char *str)
 DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
 DECL|prov|variable|prov
+DECL|reg_faults|variable|reg_faults
 DECL|root_models|variable|root_models
 DECL|show_faults|function|void show_faults(u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|static_val|variable|static_val
