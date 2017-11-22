@@ -13,13 +13,10 @@ DECL|ack_en|member|u32_t ack_en : 1;
 DECL|ack_exp|member|u32_t ack_exp : 1;
 DECL|ack_val|member|u32_t ack_val : 1;
 DECL|address|member|u16_t address;
-DECL|clear_mask32|function|static inline void clear_mask32(u32_t v, u32_t mem_addr)
-DECL|clk|member|int clk;
 DECL|connect_irq|member|irq_connect_cb connect_irq;
 DECL|default_config|member|const u32_t default_config;
 DECL|dev_config|member|u32_t dev_config;
 DECL|done|member|u32_t done : 1;
-DECL|enable_bits|member|} enable_bits;
 DECL|fifo_sem|member|struct k_sem fifo_sem;
 DECL|i2c_esp32_0|variable|i2c_esp32_0
 DECL|i2c_esp32_1|variable|i2c_esp32_1
@@ -36,8 +33,6 @@ DECL|i2c_esp32_data_0|variable|i2c_esp32_data_0
 DECL|i2c_esp32_data_1|variable|i2c_esp32_data_1
 DECL|i2c_esp32_data|struct|struct i2c_esp32_data {
 DECL|i2c_esp32_driver_api|variable|i2c_esp32_driver_api
-DECL|i2c_esp32_enable_peripheral|function|static void i2c_esp32_enable_peripheral(const struct i2c_esp32_config *config)
-DECL|i2c_esp32_get_gpio_for_pin|function|static const char *i2c_esp32_get_gpio_for_pin(int pin)
 DECL|i2c_esp32_init|function|static int i2c_esp32_init(struct device *dev)
 DECL|i2c_esp32_isr|function|static void i2c_esp32_isr(void *arg)
 DECL|i2c_esp32_opcodes|enum|enum i2c_esp32_opcodes {
@@ -57,9 +52,9 @@ DECL|line|member|int line;
 DECL|mode|member|} mode;
 DECL|num_bytes|member|u32_t num_bytes : 8;
 DECL|opcode|member|u32_t opcode : 3;
+DECL|peripheral|member|const struct esp32_peripheral peripheral;
 DECL|pins|member|} pins;
 DECL|reserved|member|u32_t reserved : 17;
-DECL|rst|member|int rst;
 DECL|rx_lsb_first|member|bool rx_lsb_first;
 DECL|scl_in|member|int scl_in;
 DECL|scl_out|member|int scl_out;
@@ -67,7 +62,6 @@ DECL|scl|member|int scl;
 DECL|sda_in|member|int sda_in;
 DECL|sda_out|member|int sda_out;
 DECL|sda|member|int sda;
-DECL|set_mask32|function|static inline void set_mask32(u32_t v, u32_t mem_addr)
 DECL|sig|member|} sig;
 DECL|source|member|int source;
 DECL|transfer_sem|member|struct k_sem transfer_sem;
