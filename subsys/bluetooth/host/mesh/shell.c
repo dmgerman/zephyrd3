@@ -42,6 +42,7 @@ DECL|hb_sub_get|function|static int hb_sub_get(int argc, char *argv[])
 DECL|hb_sub_print|function|static void hb_sub_print(struct bt_mesh_cfg_hb_sub *sub)
 DECL|hb_sub_set|function|static int hb_sub_set(int argc, char *argv[])
 DECL|health_cli|variable|health_cli
+DECL|health_current_status|function|static void health_current_status(struct bt_mesh_health_cli *cli, u16_t addr, u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|health_pub|variable|health_pub
 DECL|health_srv|variable|health_srv
 DECL|input_act|variable|input_act
