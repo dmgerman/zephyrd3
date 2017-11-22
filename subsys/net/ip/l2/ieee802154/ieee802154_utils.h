@@ -9,4 +9,4 @@ DECL|ieee802154_set_tx_power|function|static inline int ieee802154_set_tx_power(
 DECL|ieee802154_start|function|static inline int ieee802154_start(struct net_if *iface)
 DECL|ieee802154_stop|function|static inline int ieee802154_stop(struct net_if *iface)
 DECL|ieee802154_tx|function|static inline int ieee802154_tx(struct net_if *iface,struct net_pkt *pkt, struct net_buf *frag)
-DECL|ieee802154_verify_channel|function|static inline bool ieee802154_verify_channel(struct device *dev, u16_t channel)
+DECL|ieee802154_verify_channel|function|static inline bool ieee802154_verify_channel(struct net_if *iface, u16_t channel)
