@@ -165,9 +165,9 @@ DECL|isr|function|static void isr(void)
 DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, struct radio_pdu_node_tx *node_tx, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CTLR_PHY */ static void length_resp_send(struct connection *conn,
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
 DECL|link_rx_free|member|void *link_rx_free;
-DECL|link_rx_head|member|void *link_rx_head;
+DECL|link_rx_head|member|memq_link_t *link_rx_head;
 DECL|link_rx_pool|member|void *link_rx_pool;
-DECL|link_rx_tail|member|void *volatile link_rx_tail;
+DECL|link_rx_tail|member|memq_link_t *volatile link_rx_tail;
 DECL|ll_adv_scan_state_cb|function|void __weak ll_adv_scan_state_cb(u8_t bm)
 DECL|ll_apto_get|function|u32_t ll_apto_get(u16_t handle, u16_t *apto)
 DECL|ll_apto_set|function|u32_t ll_apto_set(u16_t handle, u16_t apto)

@@ -6,7 +6,7 @@ DECL|MAYFLY_CALL_ID_2|macro|MAYFLY_CALL_ID_2
 DECL|MAYFLY_CALL_ID_PROGRAM|macro|MAYFLY_CALL_ID_PROGRAM
 DECL|_MAYFLY_H_|macro|_MAYFLY_H_
 DECL|_ack|member|u8_t _ack;
-DECL|_link|member|void *_link;
+DECL|_link|member|memq_link_t *_link;
 DECL|_req|member|u8_t volatile _req;
 DECL|fp|member|void (*fp)(void *);
 DECL|mayfly|struct|struct mayfly {
