@@ -1,8 +1,10 @@
 DECL|CID_NVAL|macro|CID_NVAL
+DECL|app_idx|member|u16_t app_idx;
 DECL|bearer2str|function|static const char *bearer2str(bt_mesh_prov_bearer_t bearer)
 DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
 DECL|cmd_app_key_add|function|static int cmd_app_key_add(int argc, char *argv[])
+DECL|cmd_appidx|function|static int cmd_appidx(int argc, char *argv[])
 DECL|cmd_beacon|function|static int cmd_beacon(int argc, char *argv[])
 DECL|cmd_dst|function|static int cmd_dst(int argc, char *argv[])
 DECL|cmd_friend|function|static int cmd_friend(int argc, char *argv[])
