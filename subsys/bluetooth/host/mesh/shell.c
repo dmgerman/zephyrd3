@@ -7,6 +7,7 @@ DECL|cmd_app_key_add|function|static int cmd_app_key_add(int argc, char *argv[])
 DECL|cmd_appidx|function|static int cmd_appidx(int argc, char *argv[])
 DECL|cmd_beacon|function|static int cmd_beacon(int argc, char *argv[])
 DECL|cmd_dst|function|static int cmd_dst(int argc, char *argv[])
+DECL|cmd_fault_get|function|static int cmd_fault_get(int argc, char *argv[])
 DECL|cmd_friend|function|static int cmd_friend(int argc, char *argv[])
 DECL|cmd_gatt_proxy|function|static int cmd_gatt_proxy(int argc, char *argv[])
 DECL|cmd_get_comp|function|static int cmd_get_comp(int argc, char *argv[])
@@ -60,5 +61,6 @@ DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
+DECL|show_faults|function|void show_faults(u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|static_val|variable|static_val
 DECL|str2bool|function|static bool str2bool(const char *str)
