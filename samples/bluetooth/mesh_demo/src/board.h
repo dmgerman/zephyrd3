@@ -1,3 +1,4 @@
+DECL|NODE_ADDR|macro|NODE_ADDR
 DECL|board_attention|function|void board_attention(bool attention)
 DECL|board_heartbeat|function|void board_heartbeat(u8_t hops, u16_t feat)
 DECL|board_init|function|static inline void board_init(u16_t *addr, u32_t *seq)
