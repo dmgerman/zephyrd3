@@ -1,0 +1,2 @@
+DECL|__FLASH_PRIV_H__|macro|__FLASH_PRIV_H__
+DECL|flash_page_layout_not_implemented|function|static inline void flash_page_layout_not_implemented(void)
