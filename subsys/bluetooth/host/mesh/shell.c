@@ -39,6 +39,7 @@ DECL|cmd_pb|function|static int cmd_pb(bt_mesh_prov_bearer_t bearer, int argc, c
 DECL|cmd_period_get|function|static int cmd_period_get(int argc, char *argv[])
 DECL|cmd_period_set_unack|function|static int cmd_period_set_unack(int argc, char *argv[])
 DECL|cmd_period_set|function|static int cmd_period_set(int argc, char *argv[])
+DECL|cmd_poll|function|static int cmd_poll(int argc, char *argv[])
 DECL|cmd_provision|function|static int cmd_provision(int argc, char *argv[])
 DECL|cmd_relay|function|static int cmd_relay(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
@@ -71,6 +72,7 @@ DECL|input|function|static int input(bt_mesh_input_action_t act, u8_t size)
 DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
 DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;
+DECL|lpn_cb|function|static void lpn_cb(u16_t friend_addr, bool established)
 DECL|mesh_commands|variable|mesh_commands
 DECL|mod_pub_get|function|static int mod_pub_get(u16_t addr, u16_t mod_id, u16_t cid)
 DECL|mod_pub_set|function|static int mod_pub_set(u16_t addr, u16_t mod_id, u16_t cid, char *argv[])

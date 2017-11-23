@@ -19,13 +19,14 @@ DECL|SCAN_LATENCY|macro|SCAN_LATENCY
 DECL|bt_mesh_lpn_disable|function|void bt_mesh_lpn_disable(bool force)
 DECL|bt_mesh_lpn_friend_clear_cfm|function|int bt_mesh_lpn_friend_clear_cfm(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_lpn_friend_offer|function|int bt_mesh_lpn_friend_offer(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|bt_mesh_lpn_friend_poll|function|void bt_mesh_lpn_friend_poll(void)
 DECL|bt_mesh_lpn_friend_sub_cfm|function|int bt_mesh_lpn_friend_sub_cfm(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_lpn_friend_update|function|int bt_mesh_lpn_friend_update(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|bt_mesh_lpn_group_add|function|void bt_mesh_lpn_group_add(u16_t group)
 DECL|bt_mesh_lpn_group_del|function|void bt_mesh_lpn_group_del(u16_t *groups, size_t group_count)
 DECL|bt_mesh_lpn_init|function|int bt_mesh_lpn_init(void)
 DECL|bt_mesh_lpn_msg_received|function|void bt_mesh_lpn_msg_received(struct bt_mesh_net_rx *rx)
+DECL|bt_mesh_lpn_poll|function|int bt_mesh_lpn_poll(void)
+DECL|bt_mesh_lpn_set_cb|function|void bt_mesh_lpn_set_cb(void (*cb)(u16_t friend_addr, bool established))
 DECL|bt_mesh_lpn_set|function|int bt_mesh_lpn_set(bool enable)
 DECL|clear_friendship|function|static void clear_friendship(bool force, bool disable)
 DECL|clear_sent_cb|variable|clear_sent_cb
@@ -37,6 +38,7 @@ DECL|group_clear|function|static inline void group_clear(atomic_t *target, atomi
 DECL|group_popcount|function|static inline int group_popcount(atomic_t *target)
 DECL|group_set|function|static inline void group_set(atomic_t *target, atomic_t *source)
 DECL|group_zero|function|static inline void group_zero(atomic_t *target)
+DECL|lpn_cb|variable|lpn_cb
 DECL|lpn_group_add|function|static void lpn_group_add(u16_t group)
 DECL|lpn_group_del|function|static void lpn_group_del(u16_t group)
 DECL|lpn_set_state|function|static inline void lpn_set_state(int state)
