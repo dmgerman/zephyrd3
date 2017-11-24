@@ -85,6 +85,7 @@ DECL|iv_index|member|u32_t iv_index; /* Current IV Index */
 DECL|iv_update|member|iv_update:1, /* 1 if IV Update in Progress */
 DECL|ivu_complete|member|struct k_delayed_work ivu_complete;
 DECL|ivu_initiator|member|ivu_initiator:1, /* IV Update initiated by us */
+DECL|ivu_test|member|ivu_test:1, /* IV Update test mode */
 DECL|keys|member|} keys[2];
 DECL|keys|member|} keys[2];
 DECL|kr_flag|member|bool kr_flag; /* Key Refresh Flag */
