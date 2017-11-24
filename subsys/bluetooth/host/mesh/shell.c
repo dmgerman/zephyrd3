@@ -66,6 +66,8 @@ DECL|health_current_status|function|static void health_current_status(struct bt_
 DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
+DECL|hex2bin|function|static size_t hex2bin(const char *hex, u8_t *bin, size_t bin_len)
+DECL|hex2val|function|static u8_t hex2val(char c)
 DECL|input_act|variable|input_act
 DECL|input_size|variable|input_size
 DECL|input|function|static int input(bt_mesh_input_action_t act, u8_t size)
