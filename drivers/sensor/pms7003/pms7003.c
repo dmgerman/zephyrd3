@@ -11,5 +11,5 @@ DECL|pms7003_data|variable|pms7003_data
 DECL|pms7003_init|function|static int pms7003_init(struct device *dev)
 DECL|pms7003_sample_fetch|function|static int pms7003_sample_fetch(struct device *dev, enum sensor_channel chan)
 DECL|uart_dev|member|struct device *uart_dev;
-DECL|uart_read_bytes|function|int uart_read_bytes(struct device *dev, uint8_t *data, int len, int timeout)
-DECL|uart_wait_for|function|int uart_wait_for(struct device *dev, uint8_t *data, int len, int timeout)
+DECL|uart_read_bytes|function|static int uart_read_bytes(struct device *dev, u8_t *data, int len, int timeout)
+DECL|uart_wait_for|function|static int uart_wait_for(struct device *dev, u8_t *data, int len, int timeout)
