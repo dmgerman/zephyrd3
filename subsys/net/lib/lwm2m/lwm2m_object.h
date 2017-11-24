@@ -3,6 +3,11 @@ DECL|INIT_OBJ_RES_DUMMY|macro|INIT_OBJ_RES_DUMMY
 DECL|INIT_OBJ_RES_EXECUTE|macro|INIT_OBJ_RES_EXECUTE
 DECL|INIT_OBJ_RES_MULTI_DATA|macro|INIT_OBJ_RES_MULTI_DATA
 DECL|INIT_OBJ_RES|macro|INIT_OBJ_RES
+DECL|LWM2M_ATTR_GT|macro|LWM2M_ATTR_GT
+DECL|LWM2M_ATTR_LT|macro|LWM2M_ATTR_LT
+DECL|LWM2M_ATTR_PMAX|macro|LWM2M_ATTR_PMAX
+DECL|LWM2M_ATTR_PMIN|macro|LWM2M_ATTR_PMIN
+DECL|LWM2M_ATTR_STEP|macro|LWM2M_ATTR_STEP
 DECL|LWM2M_OBJECT_H_|macro|LWM2M_OBJECT_H_
 DECL|LWM2M_OP_BIT|macro|LWM2M_OP_BIT
 DECL|LWM2M_OP_CREATE|macro|LWM2M_OP_CREATE
@@ -38,12 +43,16 @@ DECL|LWM2M_RES_TYPE_U8|macro|LWM2M_RES_TYPE_U8
 DECL|LWM2M_RES_TYPE_UINT64|macro|LWM2M_RES_TYPE_UINT64
 DECL|LWM2M_RES_TYPE_UINT|macro|LWM2M_RES_TYPE_UINT
 DECL|MAX_RESOURCE_LEN|macro|MAX_RESOURCE_LEN
+DECL|NR_LWM2M_ATTR|macro|NR_LWM2M_ATTR
 DECL|OBJ_FIELD_DATA|macro|OBJ_FIELD_DATA
 DECL|OBJ_FIELD_EXECUTE|macro|OBJ_FIELD_EXECUTE
 DECL|OBJ_FIELD_MULTI_DATA|macro|OBJ_FIELD_MULTI_DATA
 DECL|OBJ_FIELD|macro|OBJ_FIELD
 DECL|WRITER_OUTPUT_VALUE|macro|WRITER_OUTPUT_VALUE
 DECL|WRITER_RESOURCE_INSTANCE|macro|WRITER_RESOURCE_INSTANCE
+DECL|attr_list|member|sys_slist_t attr_list;
+DECL|attr_list|member|sys_slist_t attr_list;
+DECL|attr_list|member|sys_slist_t attr_list;
 DECL|create_cb|member|lwm2m_engine_obj_create_cb_t create_cb;
 DECL|data_len|member|size_t data_len;
 DECL|data_ptr|member|void *data_ptr;
@@ -72,6 +81,7 @@ DECL|engine_put_string|function|static inline size_t engine_put_string(struct lw
 DECL|execute_cb|member|lwm2m_engine_exec_cb_t execute_cb;
 DECL|field_count|member|u16_t field_count;
 DECL|fields|member|struct lwm2m_engine_obj_field *fields;
+DECL|float_val|member|float32_value_t float_val;
 DECL|frag|member|struct net_buf *frag;
 DECL|frag|member|struct net_buf *frag;
 DECL|get_bool|member|size_t (*get_bool)(struct lwm2m_input_context *in,
@@ -83,8 +93,10 @@ DECL|get_s64|member|size_t (*get_s64)(struct lwm2m_input_context *in,
 DECL|get_string|member|size_t (*get_string)(struct lwm2m_input_context *in,
 DECL|in_cpkt|member|struct coap_packet *in_cpkt;
 DECL|instance_count|member|u16_t instance_count;
+DECL|int_val|member|s32_t int_val;
 DECL|in|member|struct lwm2m_input_context *in;
 DECL|level|member|u8_t level; /* 0/1/2/3 = 3 = resource */
+DECL|lwm2m_attr|struct|struct lwm2m_attr {
 DECL|lwm2m_engine_context|struct|struct lwm2m_engine_context {
 DECL|lwm2m_engine_obj_create_cb_t|typedef|(*lwm2m_engine_obj_create_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_engine_obj_delete_cb_t|typedef|typedef int (*lwm2m_engine_obj_delete_cb_t)(u16_t obj_inst_id);
@@ -102,6 +114,7 @@ DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|max_instance_count|member|u16_t max_instance_count;
 DECL|multi_count_var|member|u8_t *multi_count_var;
 DECL|multi_max_count|member|u8_t multi_max_count;
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|obj_id|member|u16_t obj_id;
@@ -143,5 +156,7 @@ DECL|res_id|member|u16_t res_id;
 DECL|res_inst_id|member|u16_t res_inst_id;
 DECL|resource_count|member|u16_t resource_count;
 DECL|resources|member|struct lwm2m_engine_res_inst *resources;
+DECL|type|member|u8_t type;
+DECL|used|member|bool used;
 DECL|writer_flags|member|u8_t writer_flags;
 DECL|writer|member|const struct lwm2m_writer *writer;

@@ -1,8 +1,12 @@
+DECL|COAP_OPTION_BUF_LEN|macro|COAP_OPTION_BUF_LEN
+DECL|COAP_OPTION_BUF_LEN|macro|COAP_OPTION_BUF_LEN
 DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
 DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
 DECL|GET_MORE|macro|GET_MORE
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
+DECL|LWM2M_ATTR_LEN|variable|LWM2M_ATTR_LEN
+DECL|LWM2M_ATTR_STR|variable|LWM2M_ATTR_STR
 DECL|MATCH_ALL|macro|MATCH_ALL
 DECL|MATCH_NONE|macro|MATCH_NONE
 DECL|MATCH_SINGLE|macro|MATCH_SINGLE
@@ -16,6 +20,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|TIMEOUT_BLOCKWISE_TRANSFER|macro|TIMEOUT_BLOCKWISE_TRANSFER
 DECL|WELL_KNOWN_CORE_PATH|macro|WELL_KNOWN_CORE_PATH
+DECL|atof32|function|static int atof32(const char *input, float32_value_t *out)
 DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|block1_contexts|variable|block1_contexts
 DECL|block_context|struct|struct block_context {
@@ -41,6 +46,7 @@ DECL|engine_thread_data|variable|engine_thread_data
 DECL|engine_unregister_obj_inst|function|static void engine_unregister_obj_inst(struct lwm2m_engine_obj_inst *obj_inst)
 DECL|event_timestamp|member|s64_t event_timestamp;
 DECL|find_msg|function|static struct lwm2m_message *find_msg(struct coap_pending *pending, struct coap_reply *reply)
+DECL|flags|member|u8_t flags;
 DECL|format|member|u16_t format;
 DECL|free_block_ctx|function|static void free_block_ctx(struct block_context *ctx)
 DECL|generate_notify_message|function|static int generate_notify_message(struct observe_node *obs, bool manual_trigger)
@@ -48,10 +54,12 @@ DECL|get_block_ctx|function|get_block_ctx(const u8_t *token, u8_t tkl, struct bl
 DECL|get_engine_obj_inst|function|static struct lwm2m_engine_obj_inst *get_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|get_engine_obj|function|static struct lwm2m_engine_obj *get_engine_obj(int obj_id)
 DECL|get_option_int|function|static int get_option_int(const struct coap_packet *cpkt, u8_t opt)
+DECL|gt|member|float32_value_t gt;
 DECL|handle_request|function|static int handle_request(struct coap_packet *request, struct lwm2m_message *msg)
 DECL|init_block_ctx|function|init_block_ctx(const u8_t *token, u8_t tkl, struct block_context **ctx)
 DECL|last_timestamp|member|s64_t last_timestamp;
 DECL|last_timestamp|member|u64_t last_timestamp;
+DECL|lt|member|float32_value_t lt;
 DECL|lwm2m_create_obj_inst|function|int lwm2m_create_obj_inst(u16_t obj_id, u16_t obj_inst_id, struct lwm2m_engine_obj_inst **obj_inst)
 DECL|lwm2m_default_block_size|function|enum coap_block_size lwm2m_default_block_size(void)
 DECL|lwm2m_delete_handler|function|static int lwm2m_delete_handler(struct lwm2m_engine_obj *obj,struct lwm2m_engine_context *context)
@@ -122,10 +130,13 @@ DECL|min_period_sec|member|u32_t min_period_sec;
 DECL|next_engine_obj_inst|function|next_engine_obj_inst(struct lwm2m_engine_obj_inst *last, int obj_id, int obj_inst_id)
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
+DECL|notification_attrs|struct|struct notification_attrs {
 DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|observe_node_data|variable|observe_node_data
 DECL|observe_node|struct|struct observe_node {
 DECL|path|member|struct lwm2m_obj_path path;
+DECL|pmax|member|s32_t pmax;
+DECL|pmin|member|s32_t pmin;
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_context *out, u16_t accept)
@@ -135,10 +146,13 @@ DECL|service_node|struct|struct service_node {
 DECL|setup_cert|function|static int setup_cert(struct net_app_ctx *app_ctx, void *cert)
 DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl)
 DECL|string_to_path|function|static int string_to_path(char *pathstr, struct lwm2m_obj_path *path, char delim)
+DECL|st|member|float32_value_t st;
 DECL|timestamp|member|s64_t timestamp;
 DECL|tkl|member|u8_t tkl;
 DECL|tkl|member|u8_t tkl;
 DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
+DECL|update_attrs|function|static int update_attrs(sys_slist_t *list, struct notification_attrs *out)
 DECL|used|member|bool used;
+DECL|write_attr_pool|variable|write_attr_pool
