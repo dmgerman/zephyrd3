@@ -13,6 +13,7 @@ DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|TICK_IRQ|macro|TICK_IRQ
+DECL|TICK_IRQ|macro|TICK_IRQ
 DECL|UNKNOWN_COMMAND|macro|UNKNOWN_COMMAND
 DECL|command|member|int command; /* command to process */
 DECL|data|member|void *data; /* pointer to data to use or return */
