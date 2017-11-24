@@ -32,6 +32,7 @@ DECL|cmd_mod_app_bind|function|static int cmd_mod_app_bind(int argc, char *argv[
 DECL|cmd_mod_pub|function|static int cmd_mod_pub(int argc, char *argv[])
 DECL|cmd_mod_sub_add|function|static int cmd_mod_sub_add(int argc, char *argv[])
 DECL|cmd_mod_sub_del|function|static int cmd_mod_sub_del(int argc, char *argv[])
+DECL|cmd_net_send|function|static int cmd_net_send(int argc, char *argv[])
 DECL|cmd_netidx|function|static int cmd_netidx(int argc, char *argv[])
 DECL|cmd_pb_adv|function|static int cmd_pb_adv(int argc, char *argv[])
 DECL|cmd_pb_gatt|function|static int cmd_pb_gatt(int argc, char *argv[])
