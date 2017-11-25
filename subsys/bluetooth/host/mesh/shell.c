@@ -49,6 +49,7 @@ DECL|cmd_poll|function|static int cmd_poll(int argc, char *argv[])
 DECL|cmd_provision|function|static int cmd_provision(int argc, char *argv[])
 DECL|cmd_relay|function|static int cmd_relay(int argc, char *argv[])
 DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
+DECL|cmd_static_oob|function|static int cmd_static_oob(int argc, char *argv[])
 DECL|cmd_timeout|function|int cmd_timeout(int argc, char *argv[])
 DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
 DECL|comp|variable|comp
