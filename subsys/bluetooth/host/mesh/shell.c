@@ -52,6 +52,7 @@ DECL|cmd_reset|function|static int cmd_reset(int argc, char *argv[])
 DECL|cmd_static_oob|function|static int cmd_static_oob(int argc, char *argv[])
 DECL|cmd_timeout|function|int cmd_timeout(int argc, char *argv[])
 DECL|cmd_ttl|function|static int cmd_ttl(int argc, char *argv[])
+DECL|cmd_uuid|function|static int cmd_uuid(int argc, char *argv[])
 DECL|comp|variable|comp
 DECL|cur_faults|variable|cur_faults
 DECL|default_key|variable|default_key
