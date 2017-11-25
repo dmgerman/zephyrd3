@@ -20,6 +20,7 @@ DECL|regs|member|SercomUsart *regs;
 DECL|uart_sam0_dev_cfg|struct|struct uart_sam0_dev_cfg {
 DECL|uart_sam0_dev_data|struct|struct uart_sam0_dev_data {
 DECL|uart_sam0_driver_api|variable|uart_sam0_driver_api
+DECL|uart_sam0_fifo_fill|function|static int uart_sam0_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|uart_sam0_fifo_read|function|static int uart_sam0_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_sam0_init|function|static int uart_sam0_init(struct device *dev)
 DECL|uart_sam0_irq_callback_set|function|static void uart_sam0_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
@@ -28,6 +29,8 @@ DECL|uart_sam0_irq_rx_disable|function|static void uart_sam0_irq_rx_disable(stru
 DECL|uart_sam0_irq_rx_enable|function|static void uart_sam0_irq_rx_enable(struct device *dev)
 DECL|uart_sam0_irq_rx_ready|function|static int uart_sam0_irq_rx_ready(struct device *dev)
 DECL|uart_sam0_irq_tx_disable|function|static void uart_sam0_irq_tx_disable(struct device *dev)
+DECL|uart_sam0_irq_tx_enable|function|static void uart_sam0_irq_tx_enable(struct device *dev)
+DECL|uart_sam0_irq_tx_ready|function|static int uart_sam0_irq_tx_ready(struct device *dev)
 DECL|uart_sam0_irq_update|function|static int uart_sam0_irq_update(struct device *dev) { return 1; }
 DECL|uart_sam0_isr|function|static void uart_sam0_isr(void *arg)
 DECL|uart_sam0_poll_in|function|static int uart_sam0_poll_in(struct device *dev, unsigned char *c)
