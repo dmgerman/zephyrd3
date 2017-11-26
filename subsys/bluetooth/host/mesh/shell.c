@@ -1,5 +1,6 @@
 DECL|CID_LOCAL|macro|CID_LOCAL
 DECL|CID_NVAL|macro|CID_NVAL
+DECL|CUR_FAULTS_MAX|macro|CUR_FAULTS_MAX
 DECL|app_idx|member|u16_t app_idx;
 DECL|bearer2str|function|static const char *bearer2str(bt_mesh_prov_bearer_t bearer)
 DECL|cfg_cli|variable|cfg_cli
