@@ -109,6 +109,7 @@ DECL|net|member|u8_t net[16]; /* NetKey */
 DECL|new_key|member|new_key:1, /* Data was encrypted with updated key */
 DECL|nid|member|u8_t nid; /* NID */
 DECL|nid|member|u8_t nid; /* NID */
+DECL|node_id_start|member|u32_t node_id_start; /* Node Identity started timestamp */
 DECL|node_id|member|u8_t node_id; /* Node Identity State */
 DECL|old_friend|member|u16_t old_friend;
 DECL|old_iv|member|bool old_iv;
