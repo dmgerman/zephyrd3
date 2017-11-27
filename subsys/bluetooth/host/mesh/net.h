@@ -42,7 +42,6 @@ DECL|beacons_last|member|u8_t beacons_last; /* Number of beacons during last
 DECL|beacon|member|u8_t beacon[16]; /* BeaconKey */
 DECL|bt_mesh_app_keys|struct|struct bt_mesh_app_keys {
 DECL|bt_mesh_app_key|struct|struct bt_mesh_app_key {
-DECL|bt_mesh_friend_cred|struct|struct bt_mesh_friend_cred {
 DECL|bt_mesh_friend_seg|struct|struct bt_mesh_friend_seg {
 DECL|bt_mesh_friend|struct|struct bt_mesh_friend {
 DECL|bt_mesh_lpn|struct|struct bt_mesh_lpn {
@@ -70,6 +69,7 @@ DECL|established|member|established:1, /* Friendship established */
 DECL|established|member|established:1;
 DECL|friend_cred|member|friend_cred:1, /* Data was encrypted with friend cred */
 DECL|friend_cred|member|u8_t friend_cred:1,
+DECL|friend_cred|struct|struct friend_cred {
 DECL|friend_match|member|friend_match:1; /* Matched an LPN we're friends for */
 DECL|frnd_counter|member|u16_t frnd_counter;
 DECL|frnd|member|struct bt_mesh_friend frnd[CONFIG_BT_MESH_FRIEND_LPN_COUNT];
