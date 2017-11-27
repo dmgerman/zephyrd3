@@ -1,0 +1,30 @@
+DECL|LOG_FUNCTION_END_FMT|macro|LOG_FUNCTION_END_FMT
+DECL|LOG_FUNCTION_END|macro|LOG_FUNCTION_END
+DECL|LOG_FUNCTION_START|macro|LOG_FUNCTION_START
+DECL|REF_ARRAY_SPAD_0|macro|REF_ARRAY_SPAD_0
+DECL|REF_ARRAY_SPAD_10|macro|REF_ARRAY_SPAD_10
+DECL|REF_ARRAY_SPAD_5|macro|REF_ARRAY_SPAD_5
+DECL|VL53L0X_apply_offset_adjustment|function|VL53L0X_Error VL53L0X_apply_offset_adjustment(VL53L0X_DEV Dev)
+DECL|VL53L0X_get_offset_calibration_data_micro_meter|function|VL53L0X_Error VL53L0X_get_offset_calibration_data_micro_meter(VL53L0X_DEV Dev,int32_t *pOffsetCalibrationDataMicroMeter)
+DECL|VL53L0X_get_ref_calibration|function|VL53L0X_Error VL53L0X_get_ref_calibration(VL53L0X_DEV Dev,uint8_t *pVhvSettings, uint8_t *pPhaseCal)
+DECL|VL53L0X_get_reference_spads|function|VL53L0X_Error VL53L0X_get_reference_spads(VL53L0X_DEV Dev,uint32_t *pSpadCount, uint8_t *pIsApertureSpads)
+DECL|VL53L0X_perform_offset_calibration|function|VL53L0X_Error VL53L0X_perform_offset_calibration(VL53L0X_DEV Dev,FixPoint1616_t CalDistanceMilliMeter, int32_t *pOffsetMicroMeter)
+DECL|VL53L0X_perform_phase_calibration|function|VL53L0X_Error VL53L0X_perform_phase_calibration(VL53L0X_DEV Dev,uint8_t *pPhaseCal, const uint8_t get_data_enable, const uint8_t restore_config)
+DECL|VL53L0X_perform_ref_calibration|function|VL53L0X_Error VL53L0X_perform_ref_calibration(VL53L0X_DEV Dev,uint8_t *pVhvSettings, uint8_t *pPhaseCal, uint8_t get_data_enable)
+DECL|VL53L0X_perform_ref_spad_management|function|VL53L0X_Error VL53L0X_perform_ref_spad_management(VL53L0X_DEV Dev,uint32_t *refSpadCount, uint8_t *isApertureSpads)
+DECL|VL53L0X_perform_single_ref_calibration|function|VL53L0X_Error VL53L0X_perform_single_ref_calibration(VL53L0X_DEV Dev,uint8_t vhv_init_byte)
+DECL|VL53L0X_perform_vhv_calibration|function|VL53L0X_Error VL53L0X_perform_vhv_calibration(VL53L0X_DEV Dev,uint8_t *pVhvSettings, const uint8_t get_data_enable, const uint8_t restore_config)
+DECL|VL53L0X_perform_xtalk_calibration|function|VL53L0X_Error VL53L0X_perform_xtalk_calibration(VL53L0X_DEV Dev,FixPoint1616_t XTalkCalDistance, FixPoint1616_t *pXTalkCompensationRateMegaCps)
+DECL|VL53L0X_ref_calibration_io|function|VL53L0X_Error VL53L0X_ref_calibration_io(VL53L0X_DEV Dev, uint8_t read_not_write,uint8_t VhvSettings, uint8_t PhaseCal, uint8_t *pVhvSettings, uint8_t *pPhaseCal, const uint8_t vhv_enable, const uint8_t phase_enable)
+DECL|VL53L0X_set_offset_calibration_data_micro_meter|function|VL53L0X_Error VL53L0X_set_offset_calibration_data_micro_meter(VL53L0X_DEV Dev,int32_t OffsetCalibrationDataMicroMeter)
+DECL|VL53L0X_set_ref_calibration|function|VL53L0X_Error VL53L0X_set_ref_calibration(VL53L0X_DEV Dev,uint8_t VhvSettings, uint8_t PhaseCal)
+DECL|VL53L0X_set_reference_spads|function|VL53L0X_Error VL53L0X_set_reference_spads(VL53L0X_DEV Dev, uint32_t count, uint8_t isApertureSpads)
+DECL|count_enabled_spads|function|VL53L0X_Error count_enabled_spads(uint8_t spadArray[],uint32_t byteCount, uint32_t maxSpads, uint32_t *pTotalSpadsEnabled, uint8_t *pIsAperture)
+DECL|enable_ref_spads|function|VL53L0X_Error enable_ref_spads(VL53L0X_DEV Dev,uint8_t apertureSpads, uint8_t goodSpadArray[], uint8_t spadArray[], uint32_t size,
+DECL|enable_spad_bit|function|VL53L0X_Error enable_spad_bit(uint8_t spadArray[], uint32_t size,uint32_t spadIndex)
+DECL|get_next_good_spad|function|void get_next_good_spad(uint8_t goodSpadArray[], uint32_t size,uint32_t curr, int32_t *next)
+DECL|get_ref_spad_map|function|VL53L0X_Error get_ref_spad_map(VL53L0X_DEV Dev, uint8_t *refSpadArray)
+DECL|is_aperture|function|uint8_t is_aperture(uint32_t spadIndex)
+DECL|perform_ref_signal_measurement|function|VL53L0X_Error perform_ref_signal_measurement(VL53L0X_DEV Dev,uint16_t *refSignalRate)
+DECL|refArrayQuadrants|variable|refArrayQuadrants
+DECL|set_ref_spad_map|function|VL53L0X_Error set_ref_spad_map(VL53L0X_DEV Dev, uint8_t *refSpadArray)

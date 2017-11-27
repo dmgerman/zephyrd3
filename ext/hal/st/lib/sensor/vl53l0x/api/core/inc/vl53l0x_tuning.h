@@ -1,0 +1,2 @@
+DECL|DefaultTuningSettings|variable|DefaultTuningSettings
+DECL|_VL53L0X_TUNING_H_|macro|_VL53L0X_TUNING_H_
