@@ -98,3 +98,4 @@ DECL|root_models|variable|root_models
 DECL|show_faults|function|void show_faults(u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|static_val|variable|static_val
 DECL|str2bool|function|static bool str2bool(const char *str)
+DECL|str2u8|function|static u8_t str2u8(const char *str)
