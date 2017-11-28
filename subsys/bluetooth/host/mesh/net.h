@@ -116,6 +116,7 @@ DECL|old_iv|member|bool old_iv;
 DECL|old_iv|member|u8_t old_iv:1, /* iv_index - 1 was used */
 DECL|pending_buf|member|pending_buf:1,
 DECL|pending_poll|member|pending_poll:1, /* Poll to be sent after subscription */
+DECL|pending_req|member|pending_req:1,
 DECL|pending_update|member|pending_update:1, /* Update blocked by SDU in progress */
 DECL|poll_timeout|member|s32_t poll_timeout;
 DECL|poll_to|member|s32_t poll_to;

@@ -50,6 +50,7 @@ DECL|friend_lpn_enqueue_tx|function|static void friend_lpn_enqueue_tx(struct bt_
 DECL|friend_lpn_matches|function|static bool friend_lpn_matches(struct bt_mesh_friend *frnd, u16_t net_idx, u16_t addr)
 DECL|friend_pdu_info|struct|struct friend_pdu_info {
 DECL|friend_purge_old_ack|function|static void friend_purge_old_ack(struct bt_mesh_friend *frnd, u64_t *seq_auth, u16_t src)
+DECL|friend_recv_delay|function|static void friend_recv_delay(struct bt_mesh_friend *frnd)
 DECL|friend_sub_add|function|static void friend_sub_add(struct bt_mesh_friend *frnd, u16_t addr)
 DECL|friend_sub_rem|function|static void friend_sub_rem(struct bt_mesh_friend *frnd, u16_t addr)
 DECL|friend_timeout|function|static void friend_timeout(struct k_work *work)
