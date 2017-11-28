@@ -304,7 +304,6 @@ DECL|k_mem_block_id|struct|struct k_mem_block_id {
 DECL|k_mem_block|struct|struct k_mem_block {
 DECL|k_mem_domain|struct|struct k_mem_domain {
 DECL|k_mem_partition|struct|struct k_mem_partition {
-DECL|k_mem_pool_defrag|function|static inline void __deprecated k_mem_pool_defrag(struct k_mem_pool *pool) {}
 DECL|k_mem_pool_lvl|struct|struct k_mem_pool_lvl {
 DECL|k_mem_pool|struct|struct k_mem_pool {
 DECL|k_mem_slab_num_free_get|function|static inline u32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
