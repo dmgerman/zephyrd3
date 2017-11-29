@@ -8,7 +8,6 @@ DECL|ksem|variable|ksem
 DECL|kthread_thread|variable|kthread_thread
 DECL|pass_noperms_object|function|static void pass_noperms_object(void)
 DECL|pass_user_object|function|static void pass_user_object(void)
-DECL|priv_insn|function|static void priv_insn(void)
 DECL|ptr|variable|ptr
 DECL|read_kernel_data|function|static void read_kernel_data(void)
 DECL|read_kernel_stack|function|static void read_kernel_stack(void)
