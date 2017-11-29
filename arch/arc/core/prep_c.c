@@ -1,2 +1,4 @@
+DECL|_ARC_V2_IRQ_VECT_BASE|macro|_ARC_V2_IRQ_VECT_BASE
+DECL|_ARC_V2_IRQ_VECT_BASE|macro|_ARC_V2_IRQ_VECT_BASE
 DECL|_PrepC|function|void _PrepC(void)
 DECL|adjust_vector_table_base|function|static void adjust_vector_table_base(void)

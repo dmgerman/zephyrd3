@@ -1,3 +1,5 @@
+DECL|_ARC_V2_IRQ_VECT_BASE|macro|_ARC_V2_IRQ_VECT_BASE
+DECL|_ARC_V2_IRQ_VECT_BASE|macro|_ARC_V2_IRQ_VECT_BASE
 DECL|_arc_v2_irq_unit_device_ctrl|function|static int _arc_v2_irq_unit_device_ctrl(struct device *device,u32_t ctrl_command, void *context)
 DECL|_arc_v2_irq_unit_device_power_state|variable|_arc_v2_irq_unit_device_power_state
 DECL|_arc_v2_irq_unit_get_state|function|static int _arc_v2_irq_unit_get_state(struct device *dev)
