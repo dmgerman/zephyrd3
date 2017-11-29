@@ -1,0 +1,4 @@
+DECL|SYNC_BARRIER_SEMAPHORE_INIT_COUNT|macro|SYNC_BARRIER_SEMAPHORE_INIT_COUNT
+DECL|SYNC_BARRIER_SEMAPHORE_MAX_COUNT|macro|SYNC_BARRIER_SEMAPHORE_MAX_COUNT
+DECL|_SysFatalErrorHandler|function|void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
+DECL|valid_fault|variable|valid_fault
