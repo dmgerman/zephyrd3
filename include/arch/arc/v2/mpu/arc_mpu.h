@@ -1,6 +1,8 @@
 DECL|AUX_MPU_RDP_KE|macro|AUX_MPU_RDP_KE
 DECL|AUX_MPU_RDP_KR|macro|AUX_MPU_RDP_KR
 DECL|AUX_MPU_RDP_KW|macro|AUX_MPU_RDP_KW
+DECL|AUX_MPU_RDP_N|macro|AUX_MPU_RDP_N
+DECL|AUX_MPU_RDP_S|macro|AUX_MPU_RDP_S
 DECL|AUX_MPU_RDP_UE|macro|AUX_MPU_RDP_UE
 DECL|AUX_MPU_RDP_UR|macro|AUX_MPU_RDP_UR
 DECL|AUX_MPU_RDP_UW|macro|AUX_MPU_RDP_UW
@@ -45,3 +47,4 @@ DECL|base|member|u32_t base;
 DECL|mpu_regions|member|struct arc_mpu_region *mpu_regions;
 DECL|name|member|const char *name;
 DECL|num_regions|member|u32_t num_regions;
+DECL|size|member|u32_t size;
