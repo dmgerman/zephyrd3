@@ -32,6 +32,7 @@ DECL|bt_mesh_proxy_adv_stop|function|void bt_mesh_proxy_adv_stop(void)
 DECL|bt_mesh_proxy_beacon_send|function|void bt_mesh_proxy_beacon_send(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_proxy_client|struct|static struct bt_mesh_proxy_client {
 DECL|bt_mesh_proxy_gatt_disable|function|int bt_mesh_proxy_gatt_disable(void)
+DECL|bt_mesh_proxy_gatt_disconnect|function|void bt_mesh_proxy_gatt_disconnect(void)
 DECL|bt_mesh_proxy_gatt_enable|function|int bt_mesh_proxy_gatt_enable(void)
 DECL|bt_mesh_proxy_get_buf|function|struct net_buf_simple *bt_mesh_proxy_get_buf(void)
 DECL|bt_mesh_proxy_identity_enable|function|int bt_mesh_proxy_identity_enable(void)
