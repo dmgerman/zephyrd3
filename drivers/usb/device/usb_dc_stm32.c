@@ -17,6 +17,8 @@ DECL|HAL_PCD_SetupStageCallback|function|void HAL_PCD_SetupStageCallback(PCD_Han
 DECL|HAL_PCD_SuspendCallback|function|void HAL_PCD_SuspendCallback(PCD_HandleTypeDef *hpcd)
 DECL|SETUP_SIZE|macro|SETUP_SIZE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__legacy_in_cb|function|static void __legacy_in_cb(u8_t ep, int status, size_t tsize)
+DECL|__legacy_out_cb|function|static void __legacy_out_cb(u8_t ep, int status, size_t tsize)
 DECL|cb|member|usb_dc_ep_callback cb; /** Endpoint callback function */
 DECL|ep_buf|member|u8_t ep_buf[CONFIG_USB_DC_STM32_EP_NUM][USB_OTG_FS_MAX_PACKET_SIZE];
 DECL|ep_mps|member|u16_t ep_mps; /** Endpoint max packet size */
@@ -28,6 +30,11 @@ DECL|pcd|member|PCD_HandleTypeDef pcd; /* Storage for the HAL_PCD api */
 DECL|read_count|member|u32_t read_count; /** Number of bytes in read buffer */
 DECL|read_offset|member|u32_t read_offset; /** Current offset in read buffer */
 DECL|status_cb|member|usb_dc_status_callback status_cb; /* Status callback */
+DECL|transfer_buf|member|u8_t *transfer_buf; /** IN/OUT transfer buffer */
+DECL|transfer_cb|member|usb_dc_transfer_callback transfer_cb; /** Transfer callback */
+DECL|transfer_result|member|int transfer_result; /** Transfer result */
+DECL|transfer_sem|member|struct k_sem transfer_sem; /** transfer boolean semaphore */
+DECL|transfer_size|member|u32_t transfer_size; /** number of bytes processed by the tranfer */
 DECL|usb_dc_attach|function|int usb_dc_attach(void)
 DECL|usb_dc_ep_clear_stall|function|int usb_dc_ep_clear_stall(const u8_t ep)
 DECL|usb_dc_ep_configure|function|int usb_dc_ep_configure(const struct usb_dc_ep_cfg_data * const ep_cfg)
@@ -41,6 +48,7 @@ DECL|usb_dc_ep_read|function|int usb_dc_ep_read(const u8_t ep, u8_t *const data,
 DECL|usb_dc_ep_set_callback|function|int usb_dc_ep_set_callback(const u8_t ep, const usb_dc_ep_callback cb)
 DECL|usb_dc_ep_set_stall|function|int usb_dc_ep_set_stall(const u8_t ep)
 DECL|usb_dc_ep_start_read|function|int usb_dc_ep_start_read(u8_t ep, u8_t *data, u32_t max_data_len)
+DECL|usb_dc_ep_transfer|function|static int usb_dc_ep_transfer(const u8_t ep, u8_t *buf, size_t dlen, bool is_in, usb_dc_transfer_callback cb)
 DECL|usb_dc_ep_write|function|int usb_dc_ep_write(const u8_t ep, const u8_t *const data, const u32_t data_len, u32_t * const ret_bytes)
 DECL|usb_dc_set_address|function|int usb_dc_set_address(const u8_t addr)
 DECL|usb_dc_set_status_callback|function|int usb_dc_set_status_callback(const usb_dc_status_callback cb)
@@ -51,4 +59,4 @@ DECL|usb_dc_stm32_init|function|static int usb_dc_stm32_init(void)
 DECL|usb_dc_stm32_isr|function|static void usb_dc_stm32_isr(void *arg)
 DECL|usb_dc_stm32_state|struct|struct usb_dc_stm32_state {
 DECL|usb_dc_stm32_state|variable|usb_dc_stm32_state
-DECL|write_sem|member|struct k_sem write_sem; /** Write boolean semaphore */
+DECL|usb_dc_transfer_callback|typedef|typedef void (*usb_dc_transfer_callback)(u8_t ep, int status, size_t tsize);
