@@ -1,6 +1,7 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|msg_done|function|static inline void msg_done(struct device *dev, unsigned int current_msg_flags)
 DECL|msg_init|function|static inline void msg_init(struct device *dev, struct i2c_msg *msg, u8_t *next_msg_flags, u16_t slave, uint32_t transfer)
+DECL|stm32_i2c_combined_isr|function|void stm32_i2c_combined_isr(void *arg)
 DECL|stm32_i2c_configure_timing|function|int stm32_i2c_configure_timing(struct device *dev, u32_t clock)
 DECL|stm32_i2c_error_isr|function|void stm32_i2c_error_isr(void *arg)
 DECL|stm32_i2c_event_isr|function|void stm32_i2c_event_isr(void *arg)
