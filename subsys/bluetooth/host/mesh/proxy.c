@@ -25,6 +25,7 @@ DECL|SAR_FIRST|macro|SAR_FIRST
 DECL|SAR_LAST|macro|SAR_LAST
 DECL|WHITELIST|enumerator|WHITELIST,
 DECL|__packed|enum|enum __packed {
+DECL|advertise_subnet|function|static bool advertise_subnet(struct bt_mesh_subnet *sub)
 DECL|beacon_send|function|static int beacon_send(struct bt_conn *conn, struct bt_mesh_subnet *sub)
 DECL|bt_mesh_proxy_addr_add|function|void bt_mesh_proxy_addr_add(struct net_buf_simple *buf, u16_t addr)
 DECL|bt_mesh_proxy_adv_start|function|s32_t bt_mesh_proxy_adv_start(void)
@@ -54,11 +55,12 @@ DECL|filter_set|function|static int filter_set(struct bt_mesh_proxy_client *clie
 DECL|filter_type|member|} filter_type;
 DECL|filter|member|u16_t filter[CONFIG_BT_MESH_PROXY_FILTER_SIZE];
 DECL|find_client|function|static struct bt_mesh_proxy_client *find_client(struct bt_conn *conn)
-DECL|gatt_proxy_advertise|function|static s32_t gatt_proxy_advertise(void)
+DECL|gatt_proxy_advertise|function|static s32_t gatt_proxy_advertise(struct bt_mesh_subnet *sub)
 DECL|gatt_svc|variable|gatt_svc
 DECL|msg_type|member|u8_t msg_type;
 DECL|net_id_adv|function|static int net_id_adv(struct bt_mesh_subnet *sub)
 DECL|net_id_ad|variable|net_id_ad
+DECL|next_sub|function|static struct bt_mesh_subnet *next_sub(void)
 DECL|node_id_adv|function|static int node_id_adv(struct bt_mesh_subnet *sub)
 DECL|node_id_ad|variable|node_id_ad
 DECL|prov_ad|variable|prov_ad
@@ -88,3 +90,4 @@ DECL|proxy_svc|variable|proxy_svc
 DECL|send_beacons|member|struct k_work send_beacons;
 DECL|send_filter_status|function|static void send_filter_status(struct bt_mesh_proxy_client *client, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|slow_adv_param|variable|slow_adv_param
+DECL|sub_count|function|static int sub_count(void)
