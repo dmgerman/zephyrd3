@@ -2,6 +2,7 @@ DECL|ENGINE_UPDATE_INTERVAL|macro|ENGINE_UPDATE_INTERVAL
 DECL|GET_BLOCK_NUM|macro|GET_BLOCK_NUM
 DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
 DECL|GET_MORE|macro|GET_MORE
+DECL|INSTANCE_INFO|macro|INSTANCE_INFO
 DECL|MATCH_ALL|macro|MATCH_ALL
 DECL|MATCH_NONE|macro|MATCH_NONE
 DECL|MATCH_SINGLE|macro|MATCH_SINGLE
@@ -131,6 +132,7 @@ DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_conte
 DECL|service_fn|member|void (*service_fn)(void);
 DECL|service_node_data|variable|service_node_data
 DECL|service_node|struct|struct service_node {
+DECL|setup_cert|function|static int setup_cert(struct net_app_ctx *app_ctx, void *cert)
 DECL|sprint_token|function|static char *sprint_token(const u8_t *token, u8_t tkl)
 DECL|string_to_path|function|static int string_to_path(char *pathstr, struct lwm2m_obj_path *path, char delim)
 DECL|timestamp|member|s64_t timestamp;

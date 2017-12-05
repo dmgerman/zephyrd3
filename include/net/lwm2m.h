@@ -57,7 +57,17 @@ DECL|STATE_DOWNLOADING|macro|STATE_DOWNLOADING
 DECL|STATE_IDLE|macro|STATE_IDLE
 DECL|STATE_UPDATING|macro|STATE_UPDATING
 DECL|__LWM2M_H__|macro|__LWM2M_H__
+DECL|cert_host|member|char *cert_host;
+DECL|client_psk_id_len|member|size_t client_psk_id_len;
+DECL|client_psk_id|member|char *client_psk_id;
+DECL|client_psk_len|member|size_t client_psk_len;
+DECL|client_psk|member|unsigned char *client_psk;
 DECL|data_pool|member|net_pkt_get_pool_func_t data_pool;
+DECL|dtls_pool|member|struct k_mem_pool *dtls_pool;
+DECL|dtls_result_buf_len|member|size_t dtls_result_buf_len;
+DECL|dtls_result_buf|member|u8_t *dtls_result_buf;
+DECL|dtls_stack_len|member|size_t dtls_stack_len;
+DECL|dtls_stack|member|k_thread_stack_t *dtls_stack;
 DECL|float32_value_t|typedef|} float32_value_t;
 DECL|float32_value|struct|typedef struct float32_value {
 DECL|float64_value_t|typedef|} float64_value_t;
