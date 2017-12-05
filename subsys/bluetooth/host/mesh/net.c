@@ -56,3 +56,4 @@ DECL|msg_cache|variable|msg_cache
 DECL|msg_hash|function|static u64_t msg_hash(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, const u8_t *enc, const u8_t *priv, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_find_and_decrypt|function|static bool net_find_and_decrypt(const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
+DECL|relay_to_adv|function|static bool relay_to_adv(enum bt_mesh_net_if net_if)
