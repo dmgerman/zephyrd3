@@ -62,6 +62,7 @@ DECL|gatt_svc|variable|gatt_svc
 DECL|msg_type|member|u8_t msg_type;
 DECL|net_id_adv|function|static int net_id_adv(struct bt_mesh_subnet *sub)
 DECL|net_id_ad|variable|net_id_ad
+DECL|next_idx|variable|next_idx
 DECL|next_sub|function|static struct bt_mesh_subnet *next_sub(void)
 DECL|node_id_adv|function|static int node_id_adv(struct bt_mesh_subnet *sub)
 DECL|node_id_ad|variable|node_id_ad
