@@ -7,23 +7,29 @@ DECL|CLIENT_MODEL_NUMBER|macro|CLIENT_MODEL_NUMBER
 DECL|CLIENT_SERIAL_NUMBER|macro|CLIENT_SERIAL_NUMBER
 DECL|CONFIG_NET_APP_PEER_IPV4_ADDR|macro|CONFIG_NET_APP_PEER_IPV4_ADDR
 DECL|CONFIG_NET_APP_PEER_IPV6_ADDR|macro|CONFIG_NET_APP_PEER_IPV6_ADDR
+DECL|CONFIG_NET_APP_TLS_STACK_SIZE|macro|CONFIG_NET_APP_TLS_STACK_SIZE
 DECL|CONNECT_TIME|macro|CONNECT_TIME
 DECL|ENDPOINT_LEN|macro|ENDPOINT_LEN
+DECL|HOSTNAME|macro|HOSTNAME
 DECL|LED_GPIO_PIN|macro|LED_GPIO_PIN
 DECL|LED_GPIO_PIN|macro|LED_GPIO_PIN
 DECL|LED_GPIO_PORT|macro|LED_GPIO_PORT
 DECL|LED_GPIO_PORT|macro|LED_GPIO_PORT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|battery_current|variable|battery_current
 DECL|battery_voltage|variable|battery_voltage
+DECL|client_psk_id|variable|client_psk_id
+DECL|client_psk|variable|client_psk
 DECL|client|variable|client
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
 DECL|data_udp_pool|macro|data_udp_pool
 DECL|device_factory_default_cb|function|static int device_factory_default_cb(u16_t obj_inst_id)
 DECL|device_reboot_cb|function|static int device_reboot_cb(u16_t obj_inst_id)
+DECL|dtls_result|variable|dtls_result
 DECL|firmware_block_received_cb|function|static int firmware_block_received_cb(u16_t obj_inst_id, u8_t *data, u16_t data_len, bool last_block, size_t total_size)
 DECL|firmware_buf|variable|firmware_buf
 DECL|firmware_get_buf|function|static void *firmware_get_buf(u16_t obj_inst_id, size_t *data_len)
