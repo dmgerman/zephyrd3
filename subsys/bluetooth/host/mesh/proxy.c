@@ -49,6 +49,7 @@ DECL|buf|member|struct net_buf_simple buf;
 DECL|client_filter_match|function|static bool client_filter_match(struct bt_mesh_proxy_client *client,u16_t addr)
 DECL|clients|variable|clients
 DECL|conn_callbacks|variable|conn_callbacks
+DECL|conn_count|variable|conn_count
 DECL|conn|member|struct bt_conn *conn;
 DECL|fast_adv_param|variable|fast_adv_param
 DECL|filter_add|function|static void filter_add(struct bt_mesh_proxy_client *client, u16_t addr)
