@@ -265,7 +265,6 @@ DECL|init_abort|member|void (*init_abort)(void);
 DECL|init_data|member|void *init_data;
 DECL|init_delay|member|s32_t init_delay;
 DECL|init_entry|member|k_thread_entry_t init_entry;
-DECL|init_groups|member|u32_t init_groups;
 DECL|init_options|member|u32_t init_options;
 DECL|init_p1|member|void *init_p1;
 DECL|init_p2|member|void *init_p2;
