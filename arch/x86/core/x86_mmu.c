@@ -7,6 +7,5 @@ DECL|_arch_mem_domain_max_partitions_get|function|u8_t _arch_mem_domain_max_part
 DECL|_arch_mem_domain_partition_remove|function|void _arch_mem_domain_partition_remove(struct k_mem_domain *domain, u32_t partition_id)
 DECL|_x86_mem_domain_pages_update|function|static inline void _x86_mem_domain_pages_update(struct k_mem_domain *mem_domain,u32_t page_conf)
 DECL|_x86_mmu_get_flags|function|void _x86_mmu_get_flags(void *addr,x86_page_entry_data_t *pde_flags, x86_page_entry_data_t *pte_flags)
-DECL|_x86_mmu_mem_domain_load|function|static inline void _x86_mmu_mem_domain_load(struct k_thread *thread)
 DECL|_x86_mmu_set_flags|function|void _x86_mmu_set_flags(void *ptr,size_t size, x86_page_entry_data_t flags, x86_page_entry_data_t mask)
 DECL|tlb_flush_page|function|static inline void tlb_flush_page(void *addr)
