@@ -1,4 +1,4 @@
-DECL|__IEEE802154_MGMT_H__|macro|__IEEE802154_MGMT_H__
+DECL|__IEEE802154_MGMT_PRIV_H__|macro|__IEEE802154_MGMT_PRIV_H__
 DECL|ieee802154_handle_beacon|macro|ieee802154_handle_beacon
 DECL|ieee802154_handle_mac_command|macro|ieee802154_handle_mac_command
 DECL|ieee802154_is_scanning|function|static inline bool ieee802154_is_scanning(struct net_if *iface)
