@@ -33,6 +33,7 @@ DECL|rsvd__21|member|u32_t rsvd__21 :1 __packed;
 DECL|rsvd__24_25|member|u32_t rsvd__24_25 :2 __packed;
 DECL|rsvd__27_31|member|u32_t rsvd__27_31 :5 __packed;
 DECL|rsvd__2_7|member|u32_t rsvd__2_7 :6 __packed;
+DECL|rsvd|member|u32_t rsvd;
 DECL|stm32f0x_gpio|struct|struct stm32f0x_gpio {
 DECL|stm32f0x_syscfg|struct|struct stm32f0x_syscfg {
 DECL|syscfg__exticr|union|union syscfg__exticr {
