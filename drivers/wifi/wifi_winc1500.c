@@ -25,12 +25,19 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|WINC1500_BIND_TIMEOUT|macro|WINC1500_BIND_TIMEOUT
 DECL|WINC1500_LISTEN_TIMEOUT|macro|WINC1500_LISTEN_TIMEOUT
+DECL|WINC1500_REGION|macro|WINC1500_REGION
+DECL|WINC1500_REGION|macro|WINC1500_REGION
+DECL|WINC1500_REGION|macro|WINC1500_REGION
 DECL|__SOCKET_H__|macro|__SOCKET_H__
 DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|accept_user_data|member|void *accept_user_data;
 DECL|connect_cb|member|net_context_connect_cb_t connect_cb;
 DECL|connect_user_data|member|void *connect_user_data;
+DECL|connected|member|bool connected;
+DECL|connecting|member|bool connecting;
 DECL|context|member|struct net_context *context;
+DECL|handle_scan_done|function|static void handle_scan_done(void *pvMsg)
+DECL|handle_scan_result|function|static void handle_scan_result(void *pvMsg)
 DECL|handle_socket_msg_accept|function|static void handle_socket_msg_accept(struct socket_data *sd, void *pvMsg)
 DECL|handle_socket_msg_bind|function|static void handle_socket_msg_bind(struct socket_data *sd, void *pvMsg)
 DECL|handle_socket_msg_connect|function|static void handle_socket_msg_connect(struct socket_data *sd, void *pvMsg)
@@ -45,10 +52,13 @@ DECL|prepare_pkt|function|static int prepare_pkt(struct socket_data *sock_data)
 DECL|pu8Buffer|member|uint8 *pu8Buffer;
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
 DECL|recv_user_data|member|void *recv_user_data;
+DECL|reset_scan_data|function|static void reset_scan_data(void)
 DECL|ret_code|member|int ret_code;
 DECL|rx_pkt|member|struct net_pkt *rx_pkt;
 DECL|s16BufferSize|member|sint16 s16BufferSize;
 DECL|s8Error|member|sint8 s8Error;
+DECL|scan_cb|member|scan_result_cb_t scan_cb;
+DECL|scan_result|member|u8_t scan_result;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
 DECL|send_user_data|member|void *send_user_data;
 DECL|socket_data|member|struct socket_data socket_data[
@@ -84,6 +94,9 @@ DECL|winc1500_get|function|static int winc1500_get(sa_family_t family,enum net_s
 DECL|winc1500_iface_init|function|static void winc1500_iface_init(struct net_if *iface)
 DECL|winc1500_init|function|static int winc1500_init(struct device *dev)
 DECL|winc1500_listen|function|static int winc1500_listen(struct net_context *context, int backlog)
+DECL|winc1500_mgmt_connect|function|static int winc1500_mgmt_connect(struct device *dev, struct wifi_connect_req_params *params)
+DECL|winc1500_mgmt_disconnect|function|static int winc1500_mgmt_disconnect(struct device *device)
+DECL|winc1500_mgmt_scan|function|static int winc1500_mgmt_scan(struct device *dev, scan_result_cb_t cb)
 DECL|winc1500_offload|variable|winc1500_offload
 DECL|winc1500_put|function|static int winc1500_put(struct net_context *context)
 DECL|winc1500_recv|function|static int winc1500_recv(struct net_context *context, net_context_recv_cb_t cb, s32_t timeout, void *user_data)
