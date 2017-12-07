@@ -53,4 +53,3 @@ DECL|tester_send|function|static int tester_send(struct net_if *iface, struct ne
 DECL|verify_join_group|function|static void verify_join_group(void)
 DECL|verify_leave_group|function|static void verify_leave_group(void)
 DECL|verify_send_report|function|static void verify_send_report(void)
-DECL|wait_data|variable|wait_data
