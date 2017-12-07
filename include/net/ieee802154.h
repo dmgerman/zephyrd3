@@ -1,3 +1,4 @@
+DECL|IEEE802154_L2_CTX_TYPE|macro|IEEE802154_L2_CTX_TYPE
 DECL|__IEEE802154_H__|macro|__IEEE802154_H__
 DECL|_unused|member|u8_t _unused : 3;
 DECL|_unused|member|u8_t _unused : 5;
