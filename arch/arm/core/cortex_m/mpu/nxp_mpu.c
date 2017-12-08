@@ -1,4 +1,3 @@
-DECL|STACK_GUARD_REGION_SIZE|macro|STACK_GUARD_REGION_SIZE
 DECL|_get_num_regions|function|static inline u8_t _get_num_regions(void)
 DECL|_get_region_attr_by_type|function|static inline u32_t _get_region_attr_by_type(u32_t type)
 DECL|_get_region_index_by_type|function|static inline u32_t _get_region_index_by_type(u32_t type)
@@ -19,3 +18,4 @@ DECL|arm_core_mpu_get_max_domain_partition_regions|function|int arm_core_mpu_get
 DECL|arm_core_mpu_mem_partition_remove|function|void arm_core_mpu_mem_partition_remove(u32_t part_index)
 DECL|nxp_mpu_enabled|variable|nxp_mpu_enabled
 DECL|nxp_mpu_init|function|static int nxp_mpu_init(struct device *arg)
+DECL|nxp_mpu_setup_sram_region|function|static void nxp_mpu_setup_sram_region(u32_t base, u32_t size)

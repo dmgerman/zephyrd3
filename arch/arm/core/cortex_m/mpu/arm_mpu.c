@@ -20,4 +20,3 @@ DECL|arm_core_mpu_get_max_domain_partition_regions|function|int arm_core_mpu_get
 DECL|arm_core_mpu_mem_partition_remove|function|void arm_core_mpu_mem_partition_remove(u32_t part_index)
 DECL|arm_mpu_enabled|variable|arm_mpu_enabled
 DECL|arm_mpu_init|function|static int arm_mpu_init(struct device *arg)
-DECL|round_up_to_next_power_of_two|function|static inline u32_t round_up_to_next_power_of_two(u32_t v)
