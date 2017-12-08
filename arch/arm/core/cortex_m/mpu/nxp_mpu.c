@@ -11,6 +11,7 @@ DECL|_region_init|function|static void _region_init(u32_t index, u32_t region_ba
 DECL|arm_core_mpu_buffer_validate|function|int arm_core_mpu_buffer_validate(void *addr, size_t size, int write)
 DECL|arm_core_mpu_configure_mem_domain|function|void arm_core_mpu_configure_mem_domain(struct k_mem_domain *mem_domain)
 DECL|arm_core_mpu_configure_mem_partition|function|void arm_core_mpu_configure_mem_partition(u32_t part_index, struct k_mem_partition *part)
+DECL|arm_core_mpu_configure_user_context|function|void arm_core_mpu_configure_user_context(struct k_thread *thread)
 DECL|arm_core_mpu_configure|function|void arm_core_mpu_configure(u8_t type, u32_t base, u32_t size)
 DECL|arm_core_mpu_disable|function|void arm_core_mpu_disable(void)
 DECL|arm_core_mpu_enable|function|void arm_core_mpu_enable(void)
