@@ -7,7 +7,10 @@ DECL|_preempt_float|struct|struct _preempt_float {
 DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
 DECL|_thread_arch|struct|struct _thread_arch {
 DECL|basepri|member|u32_t basepri;
+DECL|mode|member|u32_t mode;
 DECL|preempt_float|member|struct _preempt_float preempt_float;
+DECL|priv_stack_size|member|u32_t priv_stack_size;
+DECL|priv_stack_start|member|u32_t priv_stack_start;
 DECL|psp|member|u32_t psp; /* r13 */
 DECL|s16|member|float s16;
 DECL|s17|member|float s17;
