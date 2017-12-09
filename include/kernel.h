@@ -409,6 +409,8 @@ DECL|state|member|u32_t state:_POLL_NUM_STATES;
 DECL|status|member|u32_t status;
 DECL|stop_fn|member|void (*stop_fn)(struct k_timer *);
 DECL|swap_data|member|void *swap_data;
+DECL|swap_retval|member|int swap_retval;
+DECL|switch_handle|member|void *switch_handle;
 DECL|tag|member|u32_t tag:8;
 DECL|tcs|macro|tcs
 DECL|thread_state|member|u8_t thread_state;
