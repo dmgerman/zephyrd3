@@ -1,8 +1,4 @@
-DECL|ENTRY_SYM|variable|ENTRY_SYM
 DECL|NEST_OFF|variable|NEST_OFF
-DECL|a0|variable|a0
-DECL|a0|variable|a0
-DECL|a0|variable|a0
 DECL|a0|variable|a0
 DECL|a0|variable|a0
 DECL|a0|variable|a0
@@ -33,7 +29,6 @@ DECL|a1|variable|a1
 DECL|a1|variable|a1
 DECL|a1|variable|a1
 DECL|a1|variable|a1
-DECL|a1|variable|a1
 DECL|a2|variable|a2
 DECL|a2|variable|a2
 DECL|a2|variable|a2
@@ -42,11 +37,3 @@ DECL|a2|variable|a2
 DECL|a2|variable|a2
 DECL|a3|variable|a3
 DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a3|variable|a3
-DECL|a6|variable|a6
