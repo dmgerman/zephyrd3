@@ -5,6 +5,7 @@ DECL|BTP_SERVICE_ID_CORE|macro|BTP_SERVICE_ID_CORE
 DECL|BTP_SERVICE_ID_GAP|macro|BTP_SERVICE_ID_GAP
 DECL|BTP_SERVICE_ID_GATT|macro|BTP_SERVICE_ID_GATT
 DECL|BTP_SERVICE_ID_L2CAP|macro|BTP_SERVICE_ID_L2CAP
+DECL|BTP_SERVICE_ID_MESH|macro|BTP_SERVICE_ID_MESH
 DECL|BTP_STATUS_FAILED|macro|BTP_STATUS_FAILED
 DECL|BTP_STATUS_NOT_READY|macro|BTP_STATUS_NOT_READY
 DECL|BTP_STATUS_SUCCESS|macro|BTP_STATUS_SUCCESS
@@ -115,6 +116,30 @@ DECL|L2CAP_READ_SUPPORTED_COMMANDS|macro|L2CAP_READ_SUPPORTED_COMMANDS
 DECL|L2CAP_SEND_DATA|macro|L2CAP_SEND_DATA
 DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
+DECL|MESH_CONFIG_PROVISIONING|macro|MESH_CONFIG_PROVISIONING
+DECL|MESH_EV_IN_ACTION|macro|MESH_EV_IN_ACTION
+DECL|MESH_EV_OUT_NUMBER_ACTION|macro|MESH_EV_OUT_NUMBER_ACTION
+DECL|MESH_EV_OUT_STRING_ACTION|macro|MESH_EV_OUT_STRING_ACTION
+DECL|MESH_EV_PROVISIONED|macro|MESH_EV_PROVISIONED
+DECL|MESH_EV_PROV_LINK_CLOSED|macro|MESH_EV_PROV_LINK_CLOSED
+DECL|MESH_EV_PROV_LINK_OPEN|macro|MESH_EV_PROV_LINK_OPEN
+DECL|MESH_INIT|macro|MESH_INIT
+DECL|MESH_INPUT_NUMBER|macro|MESH_INPUT_NUMBER
+DECL|MESH_INPUT_STRING|macro|MESH_INPUT_STRING
+DECL|MESH_IN_ENTER_NUMBER|macro|MESH_IN_ENTER_NUMBER
+DECL|MESH_IN_ENTER_STRING|macro|MESH_IN_ENTER_STRING
+DECL|MESH_IN_PUSH|macro|MESH_IN_PUSH
+DECL|MESH_IN_TWIST|macro|MESH_IN_TWIST
+DECL|MESH_OUT_BEEP|macro|MESH_OUT_BEEP
+DECL|MESH_OUT_BLINK|macro|MESH_OUT_BLINK
+DECL|MESH_OUT_DISPLAY_NUMBER|macro|MESH_OUT_DISPLAY_NUMBER
+DECL|MESH_OUT_DISPLAY_STRING|macro|MESH_OUT_DISPLAY_STRING
+DECL|MESH_OUT_VIBRATE|macro|MESH_OUT_VIBRATE
+DECL|MESH_PROVISION_NODE|macro|MESH_PROVISION_NODE
+DECL|MESH_PROV_BEARER_PB_ADV|macro|MESH_PROV_BEARER_PB_ADV
+DECL|MESH_PROV_BEARER_PB_GATT|macro|MESH_PROV_BEARER_PB_GATT
+DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
+DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
@@ -207,6 +232,18 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|action|member|u16_t action;
+DECL|action|member|u16_t action;
 DECL|address_type|member|u8_t address_type;
 DECL|address_type|member|u8_t address_type;
 DECL|address_type|member|u8_t address_type;
@@ -270,6 +307,7 @@ DECL|address|member|u8_t address[6];
 DECL|address|member|u8_t address[6];
 DECL|address|member|u8_t address[6];
 DECL|address|member|u8_t address[6];
+DECL|addr|member|u16_t addr;
 DECL|adv_data_len|member|u8_t adv_data_len;
 DECL|adv_data|member|u8_t adv_data[0];
 DECL|att_response|member|u8_t att_response;
@@ -278,6 +316,8 @@ DECL|attr_id|member|u16_t attr_id;
 DECL|attr_id|member|u16_t attr_id;
 DECL|attrs_count|member|u8_t attrs_count;
 DECL|attrs|member|u8_t attrs[0];
+DECL|bearer|member|u8_t bearer;
+DECL|bearer|member|u8_t bearer;
 DECL|btp_hdr|struct|struct btp_hdr {
 DECL|btp_status|struct|struct btp_status {
 DECL|ccc_handle|member|u16_t ccc_handle;
@@ -333,6 +373,7 @@ DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[0];
+DECL|data|member|u8_t data[0];
 DECL|data|member|u8_t data[];
 DECL|db_attr_cnt|member|u8_t db_attr_cnt;
 DECL|db_attr_off|member|u16_t db_attr_off;
@@ -340,6 +381,7 @@ DECL|desc_id|member|u16_t desc_id;
 DECL|descriptor_handle|member|u16_t descriptor_handle;
 DECL|descriptors_count|member|u8_t descriptors_count;
 DECL|descriptors|member|struct gatt_descriptor descriptors[0];
+DECL|dev_key|member|u8_t dev_key[16];
 DECL|discoverable|member|u8_t discoverable;
 DECL|eir_data_len|member|u16_t eir_data_len;
 DECL|eir_data|member|u8_t eir_data[0];
@@ -351,6 +393,7 @@ DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
 DECL|fast_connectable|member|u8_t fast_connectable;
+DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|gap_connect_cmd|struct|struct gap_connect_cmd {
@@ -443,12 +486,15 @@ DECL|handle|member|u16_t handle;
 DECL|identity_address_type|member|u8_t identity_address_type;
 DECL|identity_address|member|u8_t identity_address[6];
 DECL|id|member|u8_t id;
+DECL|in_actions|member|u16_t in_actions;
+DECL|in_size|member|u8_t in_size;
 DECL|included_handle|member|u16_t included_handle;
 DECL|included_service_id|member|u16_t included_service_id;
 DECL|included|member|struct gatt_included included[0];
 DECL|index|member|u8_t index;
 DECL|index|member|u8_t index[0];
 DECL|io_cap|member|u8_t io_cap;
+DECL|iv_index|member|u32_t iv_index;
 DECL|key_size|member|u8_t key_size;
 DECL|l2cap_accept_connection_cmd|struct|struct l2cap_accept_connection_cmd {
 DECL|l2cap_connect_cmd|struct|struct l2cap_connect_cmd {
@@ -464,11 +510,27 @@ DECL|l2cap_send_data_cmd|struct|struct l2cap_send_data_cmd {
 DECL|len|member|u16_t len;
 DECL|len|member|u16_t len;
 DECL|match|member|u8_t match;
+DECL|mesh_config_provisioning_cmd|struct|struct mesh_config_provisioning_cmd {
+DECL|mesh_in_action_ev|struct|struct mesh_in_action_ev {
+DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
+DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
+DECL|mesh_out_number_action_ev|struct|struct mesh_out_number_action_ev {
+DECL|mesh_out_string_action_ev|struct|struct mesh_out_string_action_ev {
+DECL|mesh_prov_link_closed_ev|struct|struct mesh_prov_link_closed_ev {
+DECL|mesh_prov_link_open_ev|struct|struct mesh_prov_link_open_ev {
+DECL|mesh_provision_node_cmd|struct|struct mesh_provision_node_cmd {
+DECL|mesh_read_supported_commands_rp|struct|struct mesh_read_supported_commands_rp {
 DECL|name|member|u8_t name[249];
+DECL|net_key_idx|member|u16_t net_key_idx;
+DECL|net_key|member|u8_t net_key[16];
+DECL|number|member|u32_t number;
+DECL|number|member|u32_t number;
 DECL|num|member|u8_t num;
 DECL|offset|member|u16_t offset;
 DECL|offset|member|u16_t offset;
 DECL|opcode|member|u8_t opcode;
+DECL|out_actions|member|u16_t out_actions;
+DECL|out_size|member|u8_t out_size;
 DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
@@ -488,18 +550,25 @@ DECL|result|member|u16_t result;
 DECL|rssi|member|s8_t rssi;
 DECL|scan_rsp_len|member|u8_t scan_rsp_len;
 DECL|scan_rsp|member|u8_t scan_rsp[0];
+DECL|seq_num|member|u32_t seq_num;
 DECL|services_count|member|u8_t services_count;
 DECL|services_count|member|u8_t services_count;
 DECL|services|member|struct gatt_service services[0];
 DECL|service|member|struct gatt_service service;
 DECL|service|member|u8_t service;
 DECL|short_name|member|u8_t short_name[11];
+DECL|size|member|u8_t size;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
+DECL|static_auth|member|u8_t static_auth[16];
+DECL|string_len|member|u8_t string_len;
+DECL|string_len|member|u8_t string_len;
+DECL|string|member|u8_t string[0];
+DECL|string|member|u8_t string[0];
 DECL|supported_settings|member|u32_t supported_settings;
 DECL|svc_id|member|u16_t svc_id;
 DECL|svc_id|member|u16_t svc_id;
@@ -529,6 +598,7 @@ DECL|uuid|member|u8_t uuid[0];
 DECL|uuid|member|u8_t uuid[0];
 DECL|uuid|member|u8_t uuid[0];
 DECL|uuid|member|u8_t uuid[0];
+DECL|uuid|member|u8_t uuid[16];
 DECL|value_handle|member|u16_t value_handle;
 DECL|value_length|member|u16_t value_length;
 DECL|value|member|u8_t value[0];
