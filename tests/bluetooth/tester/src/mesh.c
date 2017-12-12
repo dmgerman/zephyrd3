@@ -29,6 +29,8 @@ DECL|iv_index|variable|iv_index
 DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
 DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;
+DECL|lpn_poll|function|static void lpn_poll(u8_t *data, u16_t len)
+DECL|lpn|function|static void lpn(u8_t *data, u16_t len)
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_idx|variable|net_key_idx
 DECL|net_key|variable|net_key
