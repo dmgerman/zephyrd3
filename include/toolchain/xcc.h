@@ -3,5 +3,8 @@ DECL|__BYTE_ORDER__|macro|__BYTE_ORDER__
 DECL|__COUNTER__|macro|__COUNTER__
 DECL|__ORDER_BIG_ENDIAN__|macro|__ORDER_BIG_ENDIAN__
 DECL|__ORDER_LITTLE_ENDIAN__|macro|__ORDER_LITTLE_ENDIAN__
+DECL|__builtin_add_overflow|macro|__builtin_add_overflow
+DECL|__builtin_mul_overflow|macro|__builtin_mul_overflow
+DECL|__builtin_unreachable|macro|__builtin_unreachable
 DECL|__in_section_unique|macro|__in_section_unique
 DECL|__in_section_unique|macro|__in_section_unique
