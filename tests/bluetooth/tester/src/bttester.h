@@ -118,6 +118,7 @@ DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|MESH_CONFIG_PROVISIONING|macro|MESH_CONFIG_PROVISIONING
 DECL|MESH_EV_IN_ACTION|macro|MESH_EV_IN_ACTION
+DECL|MESH_EV_NET_RECV|macro|MESH_EV_NET_RECV
 DECL|MESH_EV_OUT_NUMBER_ACTION|macro|MESH_EV_OUT_NUMBER_ACTION
 DECL|MESH_EV_OUT_STRING_ACTION|macro|MESH_EV_OUT_STRING_ACTION
 DECL|MESH_EV_PROVISIONED|macro|MESH_EV_PROVISIONED
@@ -147,6 +148,7 @@ DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
 DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -348,6 +350,7 @@ DECL|connectable|member|u8_t connectable;
 DECL|core_read_supported_commands_rp|struct|struct core_read_supported_commands_rp {
 DECL|core_read_supported_services_rp|struct|struct core_read_supported_services_rp {
 DECL|core_register_service_cmd|struct|struct core_register_service_cmd {
+DECL|ctl|member|u8_t ctl;
 DECL|current_settings|member|u32_t current_settings;
 DECL|current_settings|member|u32_t current_settings;
 DECL|current_settings|member|u32_t current_settings;
@@ -391,6 +394,7 @@ DECL|descriptors_count|member|u8_t descriptors_count;
 DECL|descriptors|member|struct gatt_descriptor descriptors[0];
 DECL|dev_key|member|u8_t dev_key[16];
 DECL|discoverable|member|u8_t discoverable;
+DECL|dst|member|u16_t dst;
 DECL|dst|member|u16_t dst;
 DECL|eir_data_len|member|u16_t eir_data_len;
 DECL|eir_data|member|u8_t eir_data[0];
@@ -527,6 +531,7 @@ DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
 DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
 DECL|mesh_ivu_test_mode_cmd|struct|struct mesh_ivu_test_mode_cmd {
 DECL|mesh_lpn_set_cmd|struct|struct mesh_lpn_set_cmd {
+DECL|mesh_net_recv_ev|struct|struct mesh_net_recv_ev {
 DECL|mesh_net_send_cmd|struct|struct mesh_net_send_cmd {
 DECL|mesh_out_number_action_ev|struct|struct mesh_out_number_action_ev {
 DECL|mesh_out_string_action_ev|struct|struct mesh_out_string_action_ev {
@@ -549,6 +554,8 @@ DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
 DECL|payload_len|member|u8_t payload_len;
+DECL|payload_len|member|u8_t payload_len;
+DECL|payload|member|u8_t payload[0];
 DECL|payload|member|u8_t payload[0];
 DECL|permissions|member|u8_t permissions;
 DECL|permissions|member|u8_t permissions;
@@ -575,6 +582,7 @@ DECL|service|member|u8_t service;
 DECL|short_name|member|u8_t short_name[11];
 DECL|size|member|u8_t size;
 DECL|src|member|u16_t src;
+DECL|src|member|u16_t src;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
@@ -593,6 +601,7 @@ DECL|svc_id|member|u16_t svc_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(u8_t *addr, unsigned int bit)
 DECL|tester_test_bit|function|static inline u8_t tester_test_bit(const u8_t *addr, unsigned int bit)
 DECL|transport|member|u8_t transport;
+DECL|ttl|member|u8_t ttl;
 DECL|ttl|member|u8_t ttl;
 DECL|type_length|member|u8_t type_length;
 DECL|type_length|member|u8_t type_length;

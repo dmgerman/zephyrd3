@@ -4,6 +4,7 @@ DECL|CUR_FAULTS_MAX|macro|CUR_FAULTS_MAX
 DECL|HEALTH_TEST_ID|macro|HEALTH_TEST_ID
 DECL|VND_MODEL_ID_1|macro|VND_MODEL_ID_1
 DECL|addr|variable|addr
+DECL|bt_test_cb|variable|bt_test_cb
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|config_prov|function|static void config_prov(u8_t *data, u16_t len)
@@ -37,6 +38,7 @@ DECL|lpn|function|static void lpn(u8_t *data, u16_t len)
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_idx|variable|net_key_idx
 DECL|net_key|variable|net_key
+DECL|net_recv_ev|function|void net_recv_ev(u8_t ttl, u8_t ctl, u16_t src, u16_t dst, const void *payload, size_t payload_len)
 DECL|net_send|function|static void net_send(u8_t *data, u16_t len)
 DECL|net|variable|net
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
