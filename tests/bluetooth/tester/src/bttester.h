@@ -134,6 +134,7 @@ DECL|MESH_IVU_TEST_MODE|macro|MESH_IVU_TEST_MODE
 DECL|MESH_IVU_TOGGLE_STATE|macro|MESH_IVU_TOGGLE_STATE
 DECL|MESH_LPN_POLL|macro|MESH_LPN_POLL
 DECL|MESH_LPN|macro|MESH_LPN
+DECL|MESH_NET_SEND|macro|MESH_NET_SEND
 DECL|MESH_OUT_BEEP|macro|MESH_OUT_BEEP
 DECL|MESH_OUT_BLINK|macro|MESH_OUT_BLINK
 DECL|MESH_OUT_DISPLAY_NUMBER|macro|MESH_OUT_DISPLAY_NUMBER
@@ -146,6 +147,7 @@ DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
 DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -389,6 +391,7 @@ DECL|descriptors_count|member|u8_t descriptors_count;
 DECL|descriptors|member|struct gatt_descriptor descriptors[0];
 DECL|dev_key|member|u8_t dev_key[16];
 DECL|discoverable|member|u8_t discoverable;
+DECL|dst|member|u16_t dst;
 DECL|eir_data_len|member|u16_t eir_data_len;
 DECL|eir_data|member|u8_t eir_data[0];
 DECL|enable|member|u8_t enable;
@@ -524,6 +527,7 @@ DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
 DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
 DECL|mesh_ivu_test_mode_cmd|struct|struct mesh_ivu_test_mode_cmd {
 DECL|mesh_lpn_set_cmd|struct|struct mesh_lpn_set_cmd {
+DECL|mesh_net_send_cmd|struct|struct mesh_net_send_cmd {
 DECL|mesh_out_number_action_ev|struct|struct mesh_out_number_action_ev {
 DECL|mesh_out_string_action_ev|struct|struct mesh_out_string_action_ev {
 DECL|mesh_prov_link_closed_ev|struct|struct mesh_prov_link_closed_ev {
@@ -544,6 +548,8 @@ DECL|out_size|member|u8_t out_size;
 DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
 DECL|passkey|member|u32_t passkey;
+DECL|payload_len|member|u8_t payload_len;
+DECL|payload|member|u8_t payload[0];
 DECL|permissions|member|u8_t permissions;
 DECL|permissions|member|u8_t permissions;
 DECL|permission|member|u8_t permission;
@@ -568,6 +574,7 @@ DECL|service|member|struct gatt_service service;
 DECL|service|member|u8_t service;
 DECL|short_name|member|u8_t short_name[11];
 DECL|size|member|u8_t size;
+DECL|src|member|u16_t src;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
 DECL|start_handle|member|u16_t start_handle;
@@ -586,6 +593,7 @@ DECL|svc_id|member|u16_t svc_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(u8_t *addr, unsigned int bit)
 DECL|tester_test_bit|function|static inline u8_t tester_test_bit(const u8_t *addr, unsigned int bit)
 DECL|transport|member|u8_t transport;
+DECL|ttl|member|u8_t ttl;
 DECL|type_length|member|u8_t type_length;
 DECL|type_length|member|u8_t type_length;
 DECL|type|member|u8_t type;

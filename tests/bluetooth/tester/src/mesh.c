@@ -2,6 +2,7 @@ DECL|CID_LOCAL|macro|CID_LOCAL
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CUR_FAULTS_MAX|macro|CUR_FAULTS_MAX
 DECL|HEALTH_TEST_ID|macro|HEALTH_TEST_ID
+DECL|VND_MODEL_ID_1|macro|VND_MODEL_ID_1
 DECL|addr|variable|addr
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
@@ -36,6 +37,7 @@ DECL|lpn|function|static void lpn(u8_t *data, u16_t len)
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_idx|variable|net_key_idx
 DECL|net_key|variable|net_key
+DECL|net_send|function|static void net_send(u8_t *data, u16_t len)
 DECL|net|variable|net
 DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
 DECL|output_string|function|static int output_string(const char *str)
@@ -51,3 +53,4 @@ DECL|static_auth|variable|static_auth
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
 DECL|tester_handle_mesh|function|void tester_handle_mesh(u8_t opcode, u8_t index, u8_t *data, u16_t len)
 DECL|tester_init_mesh|function|u8_t tester_init_mesh(void)
+DECL|vnd_models|variable|vnd_models
