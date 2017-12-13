@@ -26,6 +26,8 @@ DECL|input_size|variable|input_size
 DECL|input_string|function|static void input_string(u8_t *data, u16_t len)
 DECL|input|function|static int input(bt_mesh_input_action_t action, u8_t size)
 DECL|iv_index|variable|iv_index
+DECL|ivu_test_mode|function|static void ivu_test_mode(u8_t *data, u16_t len)
+DECL|ivu_toggle_state|function|static void ivu_toggle_state(u8_t *data, u16_t len)
 DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
 DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;

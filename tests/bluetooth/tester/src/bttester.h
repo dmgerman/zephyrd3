@@ -130,6 +130,8 @@ DECL|MESH_IN_ENTER_NUMBER|macro|MESH_IN_ENTER_NUMBER
 DECL|MESH_IN_ENTER_STRING|macro|MESH_IN_ENTER_STRING
 DECL|MESH_IN_PUSH|macro|MESH_IN_PUSH
 DECL|MESH_IN_TWIST|macro|MESH_IN_TWIST
+DECL|MESH_IVU_TEST_MODE|macro|MESH_IVU_TEST_MODE
+DECL|MESH_IVU_TOGGLE_STATE|macro|MESH_IVU_TOGGLE_STATE
 DECL|MESH_LPN_POLL|macro|MESH_LPN_POLL
 DECL|MESH_LPN|macro|MESH_LPN
 DECL|MESH_OUT_BEEP|macro|MESH_OUT_BEEP
@@ -144,6 +146,7 @@ DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
 DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -390,6 +393,7 @@ DECL|eir_data_len|member|u16_t eir_data_len;
 DECL|eir_data|member|u8_t eir_data[0];
 DECL|enable|member|u8_t enable;
 DECL|enable|member|u8_t enable;
+DECL|enable|member|u8_t enable;
 DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
 DECL|end_handle|member|u16_t end_handle;
@@ -518,6 +522,7 @@ DECL|mesh_config_provisioning_cmd|struct|struct mesh_config_provisioning_cmd {
 DECL|mesh_in_action_ev|struct|struct mesh_in_action_ev {
 DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
 DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
+DECL|mesh_ivu_test_mode_cmd|struct|struct mesh_ivu_test_mode_cmd {
 DECL|mesh_lpn_set_cmd|struct|struct mesh_lpn_set_cmd {
 DECL|mesh_out_number_action_ev|struct|struct mesh_out_number_action_ev {
 DECL|mesh_out_string_action_ev|struct|struct mesh_out_string_action_ev {
