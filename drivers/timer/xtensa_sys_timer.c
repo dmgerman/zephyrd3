@@ -40,6 +40,7 @@ DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|_timer_int_handler|function|void _timer_int_handler(void *params)
 DECL|_xt_tick_divisor_init|function|void _xt_tick_divisor_init(void)
 DECL|_xt_tick_divisor|variable|_xt_tick_divisor
+DECL|_zxt_tick_timer_init|function|void _zxt_tick_timer_init(void)
 DECL|cycles_per_tick|variable|cycles_per_tick
 DECL|idle_mode|variable|idle_mode
 DECL|idle_original_ticks|variable|idle_original_ticks
