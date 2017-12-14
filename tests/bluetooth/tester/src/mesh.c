@@ -19,6 +19,8 @@ DECL|fault_get_reg|function|static int fault_get_reg(struct bt_mesh_model *model
 DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint8_t test_id, uint16_t company_id)
 DECL|flags|variable|flags
 DECL|get_faults|function|static void get_faults(u8_t *faults, u8_t faults_size, u8_t *dst, u8_t *count)
+DECL|health_clear_faults|function|static void health_clear_faults(u8_t *data, u16_t len)
+DECL|health_generate_faults|function|static void health_generate_faults(u8_t *data, u16_t len)
 DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv

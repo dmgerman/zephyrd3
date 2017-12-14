@@ -124,6 +124,8 @@ DECL|MESH_EV_OUT_STRING_ACTION|macro|MESH_EV_OUT_STRING_ACTION
 DECL|MESH_EV_PROVISIONED|macro|MESH_EV_PROVISIONED
 DECL|MESH_EV_PROV_LINK_CLOSED|macro|MESH_EV_PROV_LINK_CLOSED
 DECL|MESH_EV_PROV_LINK_OPEN|macro|MESH_EV_PROV_LINK_OPEN
+DECL|MESH_HEALTH_CLEAR_FAULTS|macro|MESH_HEALTH_CLEAR_FAULTS
+DECL|MESH_HEALTH_GENERATE_FAULTS|macro|MESH_HEALTH_GENERATE_FAULTS
 DECL|MESH_INIT|macro|MESH_INIT
 DECL|MESH_INPUT_NUMBER|macro|MESH_INPUT_NUMBER
 DECL|MESH_INPUT_STRING|macro|MESH_INPUT_STRING
@@ -148,6 +150,7 @@ DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
 DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -351,6 +354,8 @@ DECL|core_read_supported_commands_rp|struct|struct core_read_supported_commands_
 DECL|core_read_supported_services_rp|struct|struct core_read_supported_services_rp {
 DECL|core_register_service_cmd|struct|struct core_register_service_cmd {
 DECL|ctl|member|u8_t ctl;
+DECL|cur_faults_count|member|u8_t cur_faults_count;
+DECL|current_faults|member|u8_t current_faults[0];
 DECL|current_settings|member|u32_t current_settings;
 DECL|current_settings|member|u32_t current_settings;
 DECL|current_settings|member|u32_t current_settings;
@@ -526,6 +531,7 @@ DECL|len|member|u16_t len;
 DECL|len|member|u16_t len;
 DECL|match|member|u8_t match;
 DECL|mesh_config_provisioning_cmd|struct|struct mesh_config_provisioning_cmd {
+DECL|mesh_health_generate_faults_rp|struct|struct mesh_health_generate_faults_rp {
 DECL|mesh_in_action_ev|struct|struct mesh_in_action_ev {
 DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
 DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
@@ -568,6 +574,8 @@ DECL|psm|member|u16_t psm;
 DECL|psm|member|u16_t psm;
 DECL|psm|member|u16_t psm;
 DECL|psm|member|u16_t psm;
+DECL|reg_faults_count|member|u8_t reg_faults_count;
+DECL|registered_faults|member|u8_t registered_faults[0];
 DECL|result|member|u16_t result;
 DECL|result|member|u16_t result;
 DECL|rssi|member|s8_t rssi;
@@ -598,6 +606,7 @@ DECL|supported_settings|member|u32_t supported_settings;
 DECL|svc_id|member|u16_t svc_id;
 DECL|svc_id|member|u16_t svc_id;
 DECL|svc_id|member|u16_t svc_id;
+DECL|test_id|member|u8_t test_id;
 DECL|tester_set_bit|function|static inline void tester_set_bit(u8_t *addr, unsigned int bit)
 DECL|tester_test_bit|function|static inline u8_t tester_test_bit(const u8_t *addr, unsigned int bit)
 DECL|transport|member|u8_t transport;
