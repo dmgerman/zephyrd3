@@ -20,5 +20,6 @@ DECL|lwm2m_firmware_cancel_transfer|function|int lwm2m_firmware_cancel_transfer(
 DECL|lwm2m_firmware_start_transfer|function|int lwm2m_firmware_start_transfer(char *package_uri)
 DECL|parsed_uri|variable|parsed_uri
 DECL|proxy_uri|variable|proxy_uri
+DECL|set_update_result_from_error|function|static void set_update_result_from_error(int error_code)
 DECL|transfer_empty_ack|function|static int transfer_empty_ack(u16_t mid)
 DECL|transfer_request|function|static int transfer_request(struct coap_block_context *ctx, u8_t *token, u8_t tkl, coap_reply_t reply_cb)
