@@ -1,0 +1,1 @@
+DECL|fcb_test_multi_scratch|function|void fcb_test_multi_scratch(void)
