@@ -54,6 +54,7 @@ DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
 DECL|tcp_retry_expired|function|static void tcp_retry_expired(struct k_work *work)
 DECL|tcp_segment|struct|struct tcp_segment {
+DECL|timewait_timer_cancel|function|static void timewait_timer_cancel(struct net_tcp *tcp)
 DECL|upper_if_set|function|static char upper_if_set(char chr, bool set)
 DECL|validate_state_transition|function|static void validate_state_transition(enum net_tcp_state current, enum net_tcp_state new)
 DECL|wnd|member|u16_t wnd;
