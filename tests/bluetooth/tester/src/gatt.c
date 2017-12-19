@@ -110,6 +110,7 @@ DECL|svc_attr_count|variable|svc_attr_count
 DECL|svc_count|variable|svc_count
 DECL|tester_handle_gatt|function|void tester_handle_gatt(u8_t opcode, u8_t index, u8_t *data, u16_t len)
 DECL|tester_init_gatt|function|u8_t tester_init_gatt(void)
+DECL|tester_unregister_gatt|function|u8_t tester_unregister_gatt(void)
 DECL|u128|member|struct bt_uuid_128 u128;
 DECL|u16|member|struct bt_uuid_16 u16;
 DECL|uuid|member|const struct bt_uuid *uuid;

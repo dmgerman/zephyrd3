@@ -24,3 +24,4 @@ DECL|servers|variable|servers
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
 DECL|tester_handle_l2cap|function|void tester_handle_l2cap(u8_t opcode, u8_t index, u8_t *data, u16_t len)
 DECL|tester_init_l2cap|function|u8_t tester_init_l2cap(void)
+DECL|tester_unregister_l2cap|function|u8_t tester_unregister_l2cap(void)

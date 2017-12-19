@@ -15,6 +15,7 @@ DECL|CORE_EV_IUT_READY|macro|CORE_EV_IUT_READY
 DECL|CORE_READ_SUPPORTED_COMMANDS|macro|CORE_READ_SUPPORTED_COMMANDS
 DECL|CORE_READ_SUPPORTED_SERVICES|macro|CORE_READ_SUPPORTED_SERVICES
 DECL|CORE_REGISTER_SERVICE|macro|CORE_REGISTER_SERVICE
+DECL|CORE_UNREGISTER_SERVICE|macro|CORE_UNREGISTER_SERVICE
 DECL|GAP_CONNECT|macro|GAP_CONNECT
 DECL|GAP_DEVICE_FOUND_FLAG_AD|macro|GAP_DEVICE_FOUND_FLAG_AD
 DECL|GAP_DEVICE_FOUND_FLAG_RSSI|macro|GAP_DEVICE_FOUND_FLAG_RSSI
@@ -255,6 +256,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|action|member|u16_t action;
 DECL|action|member|u16_t action;
 DECL|address_type|member|u8_t address_type;
@@ -353,6 +355,7 @@ DECL|connectable|member|u8_t connectable;
 DECL|core_read_supported_commands_rp|struct|struct core_read_supported_commands_rp {
 DECL|core_read_supported_services_rp|struct|struct core_read_supported_services_rp {
 DECL|core_register_service_cmd|struct|struct core_register_service_cmd {
+DECL|core_unregister_service_cmd|struct|struct core_unregister_service_cmd {
 DECL|ctl|member|u8_t ctl;
 DECL|cur_faults_count|member|u8_t cur_faults_count;
 DECL|current_faults|member|u8_t current_faults[0];
@@ -505,6 +508,7 @@ DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|identity_address_type|member|u8_t identity_address_type;
 DECL|identity_address|member|u8_t identity_address[6];
+DECL|id|member|u8_t id;
 DECL|id|member|u8_t id;
 DECL|in_actions|member|u16_t in_actions;
 DECL|in_size|member|u8_t in_size;

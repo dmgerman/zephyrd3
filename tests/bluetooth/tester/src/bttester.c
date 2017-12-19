@@ -15,3 +15,4 @@ DECL|supported_services|function|static void supported_services(u8_t *data, u16_
 DECL|tester_init|function|void tester_init(void)
 DECL|tester_rsp|function|void tester_rsp(u8_t service, u8_t opcode, u8_t index, u8_t status)
 DECL|tester_send|function|void tester_send(u8_t service, u8_t opcode, u8_t index, u8_t *data, size_t len)
+DECL|unregister_service|function|static void unregister_service(u8_t *data, u16_t len)

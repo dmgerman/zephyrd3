@@ -36,4 +36,5 @@ DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_
 DECL|tester_handle_gap|function|void tester_handle_gap(u8_t opcode, u8_t index, u8_t *data, u16_t len)
 DECL|tester_init_gap_cb|function|static void tester_init_gap_cb(int err)
 DECL|tester_init_gap|function|u8_t tester_init_gap(void)
+DECL|tester_unregister_gap|function|u8_t tester_unregister_gap(void)
 DECL|unpair|function|static void unpair(const u8_t *data, u16_t len)

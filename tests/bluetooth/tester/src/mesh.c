@@ -57,4 +57,5 @@ DECL|static_auth|variable|static_auth
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
 DECL|tester_handle_mesh|function|void tester_handle_mesh(u8_t opcode, u8_t index, u8_t *data, u16_t len)
 DECL|tester_init_mesh|function|u8_t tester_init_mesh(void)
+DECL|tester_unregister_mesh|function|u8_t tester_unregister_mesh(void)
 DECL|vnd_models|variable|vnd_models
