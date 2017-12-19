@@ -1,0 +1,4 @@
+DECL|GPIO_DRV_NAME|macro|GPIO_DRV_NAME
+DECL|LED_PINS_WIRED|macro|LED_PINS_WIRED
+DECL|LED_PIN_MASK|macro|LED_PIN_MASK
+DECL|main|function|void main(void)
