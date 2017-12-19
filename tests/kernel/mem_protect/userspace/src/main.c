@@ -20,18 +20,16 @@ DECL|ksem|variable|ksem
 DECL|kthread_thread|variable|kthread_thread
 DECL|pass_noperms_object|function|static void pass_noperms_object(void)
 DECL|pass_user_object|function|static void pass_user_object(void)
-DECL|ptr|variable|ptr
+DECL|priv_stack_ptr|variable|priv_stack_ptr
 DECL|read_kernel_data|function|static void read_kernel_data(void)
-DECL|read_kernel_stack|function|static void read_kernel_stack(void)
 DECL|read_kernram|function|static void read_kernram(void)
 DECL|read_kobject_user_pipe|function|static void read_kobject_user_pipe(void)
 DECL|read_other_stack|function|static void read_other_stack(void)
+DECL|read_priv_stack|function|static void read_priv_stack(void)
 DECL|revoke_from_parent|function|static void revoke_from_parent(k_tid_t parentThread)
 DECL|revoke_noperms_object|function|static void revoke_noperms_object(void)
 DECL|revoke_other_thread|function|static void revoke_other_thread(void)
 DECL|sem|variable|sem
-DECL|size|variable|size
-DECL|size|variable|size
 DECL|size|variable|size
 DECL|start_kernel_thread|function|static void start_kernel_thread(void)
 DECL|test_main|function|void test_main(void)
@@ -42,9 +40,9 @@ DECL|uthread_body|function|static void uthread_body(void)
 DECL|uthread_thread|variable|uthread_thread
 DECL|write_control|function|static void write_control(void)
 DECL|write_kernel_data|function|static void write_kernel_data(void)
-DECL|write_kernel_stack|function|static void write_kernel_stack(void)
 DECL|write_kernram|function|static void write_kernram(void)
 DECL|write_kernro|function|static void write_kernro(void)
 DECL|write_kerntext|function|static void write_kerntext(void)
 DECL|write_kobject_user_pipe|function|static void write_kobject_user_pipe(void)
 DECL|write_other_stack|function|static void write_other_stack(void)
+DECL|write_priv_stack|function|static void write_priv_stack(void)
