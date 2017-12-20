@@ -115,6 +115,7 @@ DECL|le_dhkey_complete|function|static void le_dhkey_complete(struct net_buf *bu
 DECL|le_enh_conn_complete|function|static void le_enh_conn_complete(struct bt_hci_evt_le_enh_conn_complete *evt)
 DECL|le_init|function|static int le_init(void)
 DECL|le_legacy_conn_complete|function|static void le_legacy_conn_complete(struct net_buf *buf)
+DECL|le_ltk_neg_reply|function|static void le_ltk_neg_reply(u16_t handle)
 DECL|le_ltk_request|function|static void le_ltk_request(struct net_buf *buf)
 DECL|le_phy_update_complete|function|static void le_phy_update_complete(struct net_buf *buf)
 DECL|le_pkey_complete|function|static void le_pkey_complete(struct net_buf *buf)
