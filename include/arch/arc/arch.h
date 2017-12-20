@@ -1,3 +1,14 @@
+DECL|K_MEM_PARTITION_IS_EXECUTABLE|macro|K_MEM_PARTITION_IS_EXECUTABLE
+DECL|K_MEM_PARTITION_IS_WRITABLE|macro|K_MEM_PARTITION_IS_WRITABLE
+DECL|K_MEM_PARTITION_P_NA_U_NA|macro|K_MEM_PARTITION_P_NA_U_NA
+DECL|K_MEM_PARTITION_P_RO_U_NA|macro|K_MEM_PARTITION_P_RO_U_NA
+DECL|K_MEM_PARTITION_P_RO_U_RO|macro|K_MEM_PARTITION_P_RO_U_RO
+DECL|K_MEM_PARTITION_P_RWX_U_RWX|macro|K_MEM_PARTITION_P_RWX_U_RWX
+DECL|K_MEM_PARTITION_P_RWX_U_RX|macro|K_MEM_PARTITION_P_RWX_U_RX
+DECL|K_MEM_PARTITION_P_RW_U_NA|macro|K_MEM_PARTITION_P_RW_U_NA
+DECL|K_MEM_PARTITION_P_RW_U_RO|macro|K_MEM_PARTITION_P_RW_U_RO
+DECL|K_MEM_PARTITION_P_RW_U_RW|macro|K_MEM_PARTITION_P_RW_U_RW
+DECL|K_MEM_PARTITION_P_RX_U_RX|macro|K_MEM_PARTITION_P_RX_U_RX
 DECL|OCTET_TO_SIZEOFUNIT|macro|OCTET_TO_SIZEOFUNIT
 DECL|SIZEOFUNIT_TO_OCTET|macro|SIZEOFUNIT_TO_OCTET
 DECL|STACK_ALIGN|macro|STACK_ALIGN
@@ -6,9 +17,20 @@ DECL|STACK_ALIGN|macro|STACK_ALIGN
 DECL|STACK_GUARD_SIZE|macro|STACK_GUARD_SIZE
 DECL|STACK_GUARD_SIZE|macro|STACK_GUARD_SIZE
 DECL|STACK_GUARD_SIZE|macro|STACK_GUARD_SIZE
+DECL|_ARCH_MEM_PARTITION_ALIGN_CHECK|macro|_ARCH_MEM_PARTITION_ALIGN_CHECK
+DECL|_ARCH_MEM_PARTITION_ALIGN_CHECK|macro|_ARCH_MEM_PARTITION_ALIGN_CHECK
 DECL|_ARCH_THREAD_STACK_ARRAY_DEFINE|macro|_ARCH_THREAD_STACK_ARRAY_DEFINE
 DECL|_ARCH_THREAD_STACK_BUFFER|macro|_ARCH_THREAD_STACK_BUFFER
 DECL|_ARCH_THREAD_STACK_DEFINE|macro|_ARCH_THREAD_STACK_DEFINE
 DECL|_ARCH_THREAD_STACK_MEMBER|macro|_ARCH_THREAD_STACK_MEMBER
 DECL|_ARCH_THREAD_STACK_SIZEOF|macro|_ARCH_THREAD_STACK_SIZEOF
 DECL|_ARC_ARCH__H_|macro|_ARC_ARCH__H_
+DECL|_arch_is_user_context|function|static inline int _arch_is_user_context(void)
+DECL|_arch_syscall_invoke0|function|static inline u32_t _arch_syscall_invoke0(u32_t call_id)
+DECL|_arch_syscall_invoke1|function|static inline u32_t _arch_syscall_invoke1(u32_t arg1, u32_t call_id)
+DECL|_arch_syscall_invoke2|function|static inline u32_t _arch_syscall_invoke2(u32_t arg1, u32_t arg2, u32_t call_id)
+DECL|_arch_syscall_invoke3|function|static inline u32_t _arch_syscall_invoke3(u32_t arg1, u32_t arg2, u32_t arg3, u32_t call_id)
+DECL|_arch_syscall_invoke4|function|static inline u32_t _arch_syscall_invoke4(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t call_id)
+DECL|_arch_syscall_invoke5|function|static inline u32_t _arch_syscall_invoke5(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t call_id)
+DECL|_arch_syscall_invoke6|function|static inline u32_t _arch_syscall_invoke6(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, u32_t call_id)
+DECL|k_mem_partition_attr_t|typedef|typedef u32_t k_mem_partition_attr_t;
