@@ -1,0 +1,31 @@
+DECL|currently_running_prio|variable|currently_running_prio
+DECL|hw_irq_ctrl_change_lock|function|u32_t hw_irq_ctrl_change_lock(u32_t new_lock)
+DECL|hw_irq_ctrl_cleanup|function|void hw_irq_ctrl_cleanup(void)
+DECL|hw_irq_ctrl_clear_all_enabled_irqs|function|void hw_irq_ctrl_clear_all_enabled_irqs(void)
+DECL|hw_irq_ctrl_clear_all_irqs|function|void hw_irq_ctrl_clear_all_irqs(void)
+DECL|hw_irq_ctrl_clear_irq|function|void hw_irq_ctrl_clear_irq(unsigned int irq)
+DECL|hw_irq_ctrl_disable_irq|function|void hw_irq_ctrl_disable_irq(unsigned int irq)
+DECL|hw_irq_ctrl_enable_irq|function|void hw_irq_ctrl_enable_irq(unsigned int irq)
+DECL|hw_irq_ctrl_get_cur_prio|function|int hw_irq_ctrl_get_cur_prio(void)
+DECL|hw_irq_ctrl_get_current_lock|function|u32_t hw_irq_ctrl_get_current_lock(void)
+DECL|hw_irq_ctrl_get_highest_prio_irq|function|int hw_irq_ctrl_get_highest_prio_irq(void)
+DECL|hw_irq_ctrl_get_irq_mask|function|u64_t hw_irq_ctrl_get_irq_mask(void)
+DECL|hw_irq_ctrl_get_irq_status|function|u64_t hw_irq_ctrl_get_irq_status(void)
+DECL|hw_irq_ctrl_get_prio|function|u8_t hw_irq_ctrl_get_prio(unsigned int irq)
+DECL|hw_irq_ctrl_init|function|void hw_irq_ctrl_init(void)
+DECL|hw_irq_ctrl_irq_raise_prefix|function|static inline void hw_irq_ctrl_irq_raise_prefix(unsigned int irq)
+DECL|hw_irq_ctrl_is_irq_enabled|function|int hw_irq_ctrl_is_irq_enabled(unsigned int irq)
+DECL|hw_irq_ctrl_prio_set|function|void hw_irq_ctrl_prio_set(unsigned int irq, unsigned int prio)
+DECL|hw_irq_ctrl_raise_im_from_sw|function|void hw_irq_ctrl_raise_im_from_sw(unsigned int irq)
+DECL|hw_irq_ctrl_raise_im|function|void hw_irq_ctrl_raise_im(unsigned int irq)
+DECL|hw_irq_ctrl_set_cur_prio|function|void hw_irq_ctrl_set_cur_prio(int new)
+DECL|hw_irq_ctrl_set_irq|function|void hw_irq_ctrl_set_irq(unsigned int irq)
+DECL|hw_irq_ctrl_timer_triggered|function|void hw_irq_ctrl_timer_triggered(void)
+DECL|irq_ctrl_timer|variable|irq_ctrl_timer
+DECL|irq_mask|variable|irq_mask
+DECL|irq_premask|variable|irq_premask
+DECL|irq_prio|variable|irq_prio
+DECL|irq_raising_from_hw_now|function|static void irq_raising_from_hw_now(void)
+DECL|irq_status|variable|irq_status
+DECL|irqs_locked|variable|irqs_locked
+DECL|lock_ignore|variable|lock_ignore
