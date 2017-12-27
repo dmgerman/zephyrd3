@@ -2,8 +2,11 @@ DECL|CID_LOCAL|macro|CID_LOCAL
 DECL|CONTROLLER_INDEX|macro|CONTROLLER_INDEX
 DECL|CUR_FAULTS_MAX|macro|CUR_FAULTS_MAX
 DECL|HEALTH_TEST_ID|macro|HEALTH_TEST_ID
+DECL|MODEL_BOUNDS_MAX|macro|MODEL_BOUNDS_MAX
 DECL|VND_MODEL_ID_1|macro|VND_MODEL_ID_1
+DECL|addr|member|u16_t addr;
 DECL|addr|variable|addr
+DECL|appkey_idx|member|u16_t appkey_idx;
 DECL|bt_test_cb|variable|bt_test_cb
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
@@ -37,6 +40,12 @@ DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;
 DECL|lpn_poll|function|static void lpn_poll(u8_t *data, u16_t len)
 DECL|lpn|function|static void lpn(u8_t *data, u16_t len)
+DECL|model_bound_cb|function|static void model_bound_cb(u16_t addr, struct bt_mesh_model *model, u16_t key_idx)
+DECL|model_bound|variable|model_bound
+DECL|model_data|struct|static struct model_data {
+DECL|model_send|function|static void model_send(u8_t *data, u16_t len)
+DECL|model_unbound_cb|function|static void model_unbound_cb(u16_t addr, struct bt_mesh_model *model, u16_t key_idx)
+DECL|model|member|struct bt_mesh_model *model;
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_idx|variable|net_key_idx
 DECL|net_key|variable|net_key
