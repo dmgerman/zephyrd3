@@ -118,6 +118,7 @@ DECL|L2CAP_SEND_DATA|macro|L2CAP_SEND_DATA
 DECL|L2CAP_TRANSPORT_BREDR|macro|L2CAP_TRANSPORT_BREDR
 DECL|L2CAP_TRANSPORT_LE|macro|L2CAP_TRANSPORT_LE
 DECL|MESH_CONFIG_PROVISIONING|macro|MESH_CONFIG_PROVISIONING
+DECL|MESH_EV_INVALID_BEARER|macro|MESH_EV_INVALID_BEARER
 DECL|MESH_EV_IN_ACTION|macro|MESH_EV_IN_ACTION
 DECL|MESH_EV_NET_RECV|macro|MESH_EV_NET_RECV
 DECL|MESH_EV_OUT_NUMBER_ACTION|macro|MESH_EV_OUT_NUMBER_ACTION
@@ -152,6 +153,7 @@ DECL|MESH_READ_SUPPORTED_COMMANDS|macro|MESH_READ_SUPPORTED_COMMANDS
 DECL|MESH_RESET|macro|MESH_RESET
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -542,6 +544,7 @@ DECL|mesh_health_generate_faults_rp|struct|struct mesh_health_generate_faults_rp
 DECL|mesh_in_action_ev|struct|struct mesh_in_action_ev {
 DECL|mesh_input_number_cmd|struct|struct mesh_input_number_cmd {
 DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
+DECL|mesh_invalid_bearer_ev|struct|struct mesh_invalid_bearer_ev {
 DECL|mesh_ivu_test_mode_cmd|struct|struct mesh_ivu_test_mode_cmd {
 DECL|mesh_lpn_set_cmd|struct|struct mesh_lpn_set_cmd {
 DECL|mesh_model_send_cmd|struct|struct mesh_model_send_cmd {
@@ -561,6 +564,7 @@ DECL|number|member|u32_t number;
 DECL|num|member|u8_t num;
 DECL|offset|member|u16_t offset;
 DECL|offset|member|u16_t offset;
+DECL|opcode|member|u8_t opcode;
 DECL|opcode|member|u8_t opcode;
 DECL|out_actions|member|u16_t out_actions;
 DECL|out_size|member|u8_t out_size;

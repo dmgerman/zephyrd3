@@ -32,6 +32,7 @@ DECL|input_number|function|static void input_number(u8_t *data, u16_t len)
 DECL|input_size|variable|input_size
 DECL|input_string|function|static void input_string(u8_t *data, u16_t len)
 DECL|input|function|static int input(bt_mesh_input_action_t action, u8_t size)
+DECL|invalid_bearer_cb|function|static void invalid_bearer_cb(u8_t opcode)
 DECL|iv_index|variable|iv_index
 DECL|ivu_test_mode|function|static void ivu_test_mode(u8_t *data, u16_t len)
 DECL|ivu_toggle_state|function|static void ivu_toggle_state(u8_t *data, u16_t len)
