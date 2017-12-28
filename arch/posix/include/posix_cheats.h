@@ -1,5 +1,17 @@
 DECL|_POSIX_CHEATS_H|macro|_POSIX_CHEATS_H
 DECL|main|macro|main
+DECL|pthread_attr_destroy|macro|pthread_attr_destroy
+DECL|pthread_attr_getdetachstate|macro|pthread_attr_getdetachstate
+DECL|pthread_attr_getschedparam|macro|pthread_attr_getschedparam
+DECL|pthread_attr_getschedpolicy|macro|pthread_attr_getschedpolicy
+DECL|pthread_attr_getstacksize|macro|pthread_attr_getstacksize
+DECL|pthread_attr_getstack|macro|pthread_attr_getstack
+DECL|pthread_attr_init|macro|pthread_attr_init
+DECL|pthread_attr_setdetachstate|macro|pthread_attr_setdetachstate
+DECL|pthread_attr_setschedparam|macro|pthread_attr_setschedparam
+DECL|pthread_attr_setschedpolicy|macro|pthread_attr_setschedpolicy
+DECL|pthread_attr_setstack|macro|pthread_attr_setstack
+DECL|pthread_attr_t|macro|pthread_attr_t
 DECL|pthread_barrier_destroy|macro|pthread_barrier_destroy
 DECL|pthread_barrier_init|macro|pthread_barrier_init
 DECL|pthread_barrier_t|macro|pthread_barrier_t
@@ -7,6 +19,7 @@ DECL|pthread_barrier_wait|macro|pthread_barrier_wait
 DECL|pthread_barrierattr_destroy|macro|pthread_barrierattr_destroy
 DECL|pthread_barrierattr_init|macro|pthread_barrierattr_init
 DECL|pthread_barrierattr_t|macro|pthread_barrierattr_t
+DECL|pthread_cancel|macro|pthread_cancel
 DECL|pthread_cond_broadcast|macro|pthread_cond_broadcast
 DECL|pthread_cond_destroy|macro|pthread_cond_destroy
 DECL|pthread_cond_init|macro|pthread_cond_init
@@ -17,6 +30,12 @@ DECL|pthread_cond_wait|macro|pthread_cond_wait
 DECL|pthread_condattr_destroy|macro|pthread_condattr_destroy
 DECL|pthread_condattr_init|macro|pthread_condattr_init
 DECL|pthread_condattr_t|macro|pthread_condattr_t
+DECL|pthread_create|macro|pthread_create
+DECL|pthread_detach|macro|pthread_detach
+DECL|pthread_equal|macro|pthread_equal
+DECL|pthread_exit|macro|pthread_exit
+DECL|pthread_getschedparam|macro|pthread_getschedparam
+DECL|pthread_join|macro|pthread_join
 DECL|pthread_mutex_destroy|macro|pthread_mutex_destroy
 DECL|pthread_mutex_init|macro|pthread_mutex_init
 DECL|pthread_mutex_lock|macro|pthread_mutex_lock
@@ -27,4 +46,7 @@ DECL|pthread_mutex_unlock|macro|pthread_mutex_unlock
 DECL|pthread_mutexattr_destroy|macro|pthread_mutexattr_destroy
 DECL|pthread_mutexattr_init|macro|pthread_mutexattr_init
 DECL|pthread_mutexattr_t|macro|pthread_mutexattr_t
+DECL|pthread_self|macro|pthread_self
+DECL|pthread_setcancelstate|macro|pthread_setcancelstate
+DECL|pthread_setschedparam|macro|pthread_setschedparam
 DECL|timespec|macro|timespec
