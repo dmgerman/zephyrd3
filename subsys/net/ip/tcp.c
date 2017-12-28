@@ -18,7 +18,7 @@ DECL|get_size|function|static inline u32_t get_size(u32_t pos1, u32_t pos2)
 DECL|ip_max_packet_len|function|static inline size_t ip_max_packet_len(struct in_addr *dest_ip)
 DECL|ip_max_packet_len|macro|ip_max_packet_len
 DECL|is_6lo_technology|macro|is_6lo_technology
-DECL|net_tcp_ack_received|function|void net_tcp_ack_received(struct net_context *ctx, u32_t ack)
+DECL|net_tcp_ack_received|function|bool net_tcp_ack_received(struct net_context *ctx, u32_t ack)
 DECL|net_tcp_add_options|function|static inline u8_t net_tcp_add_options(struct net_buf *header, size_t len, void *data)
 DECL|net_tcp_alloc|function|struct net_tcp *net_tcp_alloc(struct net_context *context)
 DECL|net_tcp_change_state|function|void net_tcp_change_state(struct net_tcp *tcp, enum net_tcp_state new_state)
