@@ -138,6 +138,8 @@ DECL|MESH_IN_TWIST|macro|MESH_IN_TWIST
 DECL|MESH_IVU_TEST_MODE|macro|MESH_IVU_TEST_MODE
 DECL|MESH_IVU_TOGGLE_STATE|macro|MESH_IVU_TOGGLE_STATE
 DECL|MESH_LPN_POLL|macro|MESH_LPN_POLL
+DECL|MESH_LPN_SUBSCRIBE|macro|MESH_LPN_SUBSCRIBE
+DECL|MESH_LPN_UNSUBSCRIBE|macro|MESH_LPN_UNSUBSCRIBE
 DECL|MESH_LPN|macro|MESH_LPN
 DECL|MESH_MODEL_SEND|macro|MESH_MODEL_SEND
 DECL|MESH_NET_SEND|macro|MESH_NET_SEND
@@ -261,6 +263,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|action|member|u16_t action;
 DECL|action|member|u16_t action;
 DECL|address_type|member|u8_t address_type;
@@ -294,6 +298,8 @@ DECL|address_type|member|u8_t address_type;
 DECL|address_type|member|u8_t address_type;
 DECL|address_type|member|u8_t address_type;
 DECL|address_type|member|u8_t address_type;
+DECL|address|member|u16_t address;
+DECL|address|member|u16_t address;
 DECL|address|member|u8_t address[6];
 DECL|address|member|u8_t address[6];
 DECL|address|member|u8_t address[6];
@@ -547,6 +553,8 @@ DECL|mesh_input_string_cmd|struct|struct mesh_input_string_cmd {
 DECL|mesh_invalid_bearer_ev|struct|struct mesh_invalid_bearer_ev {
 DECL|mesh_ivu_test_mode_cmd|struct|struct mesh_ivu_test_mode_cmd {
 DECL|mesh_lpn_set_cmd|struct|struct mesh_lpn_set_cmd {
+DECL|mesh_lpn_subscribe_cmd|struct|struct mesh_lpn_subscribe_cmd {
+DECL|mesh_lpn_unsubscribe_cmd|struct|struct mesh_lpn_unsubscribe_cmd {
 DECL|mesh_model_send_cmd|struct|struct mesh_model_send_cmd {
 DECL|mesh_net_recv_ev|struct|struct mesh_net_recv_ev {
 DECL|mesh_net_send_cmd|struct|struct mesh_net_send_cmd {

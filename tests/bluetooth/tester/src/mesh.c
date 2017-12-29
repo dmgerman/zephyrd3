@@ -40,6 +40,8 @@ DECL|link_close|function|static void link_close(bt_mesh_prov_bearer_t bearer)
 DECL|link_open|function|static void link_open(bt_mesh_prov_bearer_t bearer)
 DECL|local|member|u16_t local;
 DECL|lpn_poll|function|static void lpn_poll(u8_t *data, u16_t len)
+DECL|lpn_subscribe|function|static void lpn_subscribe(u8_t *data, u16_t len)
+DECL|lpn_unsubscribe|function|static void lpn_unsubscribe(u8_t *data, u16_t len)
 DECL|lpn|function|static void lpn(u8_t *data, u16_t len)
 DECL|model_bound_cb|function|static void model_bound_cb(u16_t addr, struct bt_mesh_model *model, u16_t key_idx)
 DECL|model_bound|variable|model_bound
