@@ -63,7 +63,6 @@ DECL|net_tcp_set_hdr|function|static inline struct net_tcp_hdr *net_tcp_set_hdr(
 DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
 DECL|net_tcp|struct|struct net_tcp {
-DECL|recv_max_ack|member|u32_t recv_max_ack;
 DECL|recv_user_data|member|void *recv_user_data;
 DECL|recv_wnd|member|u16_t recv_wnd;
 DECL|retry_timeout_shift|member|u32_t retry_timeout_shift : 5;
