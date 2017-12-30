@@ -11,6 +11,9 @@ DECL|hwm_get_time|function|u64_t hwm_get_time(void)
 DECL|hwm_init|function|void hwm_init(void)
 DECL|hwm_main_loop|function|void hwm_main_loop(void)
 DECL|hwm_set_end_of_time|function|void hwm_set_end_of_time(u64_t new_end_of_time)
+DECL|hwm_set_sig_handler|function|void hwm_set_sig_handler(void)
+DECL|hwm_signal_end_handler|function|void hwm_signal_end_handler(int sig)
 DECL|hwm_sleep_until_next_timer|function|static void hwm_sleep_until_next_timer(void)
 DECL|next_timer_index|variable|next_timer_index
 DECL|next_timer_time|variable|next_timer_time
+DECL|signaled_end|variable|signaled_end
