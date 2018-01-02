@@ -27,6 +27,7 @@ DECL|health_generate_faults|function|static void health_generate_faults(u8_t *da
 DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
+DECL|incomp_timer_exp_cb|function|static void incomp_timer_exp_cb(void)
 DECL|init|function|static void init(u8_t *data, u16_t len)
 DECL|input_number|function|static void input_number(u8_t *data, u16_t len)
 DECL|input_size|variable|input_size
