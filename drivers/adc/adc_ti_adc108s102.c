@@ -1,5 +1,4 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|SYS_LOG_NO_NEWLINE|macro|SYS_LOG_NO_NEWLINE
 DECL|_ti_adc108s102_handle_result|function|static inline void _ti_adc108s102_handle_result(struct device *dev)
 DECL|_ti_adc108s102_prepare|function|static inline s32_t _ti_adc108s102_prepare(struct device *dev)
 DECL|_ti_adc108s102_sampling|function|static inline int _ti_adc108s102_sampling(struct device *dev)
