@@ -1,0 +1,36 @@
+DECL|ANOMALY_132_DELAY_CYCLES|macro|ANOMALY_132_DELAY_CYCLES
+DECL|ANOMALY_132_NRF52832_FREQ_MHZ|macro|ANOMALY_132_NRF52832_FREQ_MHZ
+DECL|ANOMALY_132_REQ_DELAY_US|macro|ANOMALY_132_REQ_DELAY_US
+DECL|CALIBRATION_SUPPORT|macro|CALIBRATION_SUPPORT
+DECL|CALIBRATION_SUPPORT|macro|CALIBRATION_SUPPORT
+DECL|CAL_STATE_CAL|enumerator|CAL_STATE_CAL
+DECL|CAL_STATE_IDLE|enumerator|CAL_STATE_IDLE,
+DECL|EVT_TO_STR|macro|EVT_TO_STR
+DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
+DECL|NRF_CLOCK_LFCLK_RC|macro|NRF_CLOCK_LFCLK_RC
+DECL|NRF_CLOCK_LFCLK_RC|macro|NRF_CLOCK_LFCLK_RC
+DECL|NRF_CLOCK_LFCLK_Synth|macro|NRF_CLOCK_LFCLK_Synth
+DECL|NRF_CLOCK_LFCLK_Synth|macro|NRF_CLOCK_LFCLK_Synth
+DECL|NRF_CLOCK_LFCLK_Xtal|macro|NRF_CLOCK_LFCLK_Xtal
+DECL|NRF_CLOCK_LFCLK_Xtal|macro|NRF_CLOCK_LFCLK_Xtal
+DECL|cal_state|member|volatile nrfx_clock_cal_state_t cal_state;
+DECL|event_handler|member|nrfx_clock_event_handler_t event_handler;
+DECL|m_clock_cb|variable|m_clock_cb
+DECL|module_initialized|member|bool module_initialized; /*< Indicate the state of module */
+DECL|nrfx_clock_anomaly_132|function|static void nrfx_clock_anomaly_132(void)
+DECL|nrfx_clock_cal_state_t|typedef|} nrfx_clock_cal_state_t;
+DECL|nrfx_clock_calibration_start|function|nrfx_err_t nrfx_clock_calibration_start(void)
+DECL|nrfx_clock_calibration_timer_start|function|void nrfx_clock_calibration_timer_start(uint8_t interval)
+DECL|nrfx_clock_calibration_timer_stop|function|void nrfx_clock_calibration_timer_stop(void)
+DECL|nrfx_clock_cb_t|typedef|} nrfx_clock_cb_t;
+DECL|nrfx_clock_disable|function|void nrfx_clock_disable(void)
+DECL|nrfx_clock_enable|function|void nrfx_clock_enable(void)
+DECL|nrfx_clock_hfclk_start|function|void nrfx_clock_hfclk_start(void)
+DECL|nrfx_clock_hfclk_stop|function|void nrfx_clock_hfclk_stop(void)
+DECL|nrfx_clock_init|function|nrfx_err_t nrfx_clock_init(nrfx_clock_event_handler_t event_handler)
+DECL|nrfx_clock_irq_enabled|variable|nrfx_clock_irq_enabled
+DECL|nrfx_clock_irq_handler|function|void nrfx_clock_irq_handler(void)
+DECL|nrfx_clock_is_calibrating|function|nrfx_err_t nrfx_clock_is_calibrating(void)
+DECL|nrfx_clock_lfclk_start|function|void nrfx_clock_lfclk_start(void)
+DECL|nrfx_clock_lfclk_stop|function|void nrfx_clock_lfclk_stop(void)
+DECL|nrfx_clock_uninit|function|void nrfx_clock_uninit(void)

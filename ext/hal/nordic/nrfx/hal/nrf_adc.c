@@ -1,0 +1,2 @@
+DECL|nrf_adc_configure|function|void nrf_adc_configure(nrf_adc_config_t * config)
+DECL|nrf_adc_convert_single|function|int32_t nrf_adc_convert_single(nrf_adc_config_input_t input)

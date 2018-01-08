@@ -1,0 +1,9 @@
+DECL|NRFX_SWI_DEFAULT_PRIORITY|macro|NRFX_SWI_DEFAULT_PRIORITY
+DECL|NRFX_SWI_H__|macro|NRFX_SWI_H__
+DECL|NRFX_SWI_UNALLOCATED|macro|NRFX_SWI_UNALLOCATED
+DECL|nrfx_swi_egu_instance_get|function|__STATIC_INLINE NRF_EGU_Type * nrfx_swi_egu_instance_get(nrfx_swi_t swi)
+DECL|nrfx_swi_event_triggered_address_get|function|__STATIC_INLINE uint32_t nrfx_swi_event_triggered_address_get(nrfx_swi_t swi, uint8_t channel)
+DECL|nrfx_swi_flags_t|typedef|typedef uint16_t nrfx_swi_flags_t;
+DECL|nrfx_swi_handler_t|typedef|typedef void (*nrfx_swi_handler_t)(nrfx_swi_t swi, nrfx_swi_flags_t flags);
+DECL|nrfx_swi_task_trigger_address_get|function|__STATIC_INLINE uint32_t nrfx_swi_task_trigger_address_get(nrfx_swi_t swi, uint8_t channel)
+DECL|nrfx_swi_t|typedef|typedef uint8_t nrfx_swi_t;

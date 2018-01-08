@@ -1,0 +1,22 @@
+DECL|m_initialized|macro|m_initialized
+DECL|m_pofwarn_handler|variable|m_pofwarn_handler
+DECL|m_sleepevt_handler|variable|m_sleepevt_handler
+DECL|m_usbevt_handler|variable|m_usbevt_handler
+DECL|nrfx_power_init|function|nrfx_err_t nrfx_power_init(nrfx_power_config_t const * p_config)
+DECL|nrfx_power_irq_enabled|variable|nrfx_power_irq_enabled
+DECL|nrfx_power_irq_handler|function|void nrfx_power_irq_handler(void)
+DECL|nrfx_power_pof_disable|function|void nrfx_power_pof_disable(void)
+DECL|nrfx_power_pof_enable|function|void nrfx_power_pof_enable(nrfx_power_pofwarn_config_t const * p_config)
+DECL|nrfx_power_pof_handler_get|function|nrfx_power_pofwarn_event_handler_t nrfx_power_pof_handler_get(void)
+DECL|nrfx_power_pof_init|function|void nrfx_power_pof_init(nrfx_power_pofwarn_config_t const * p_config)
+DECL|nrfx_power_pof_uninit|function|void nrfx_power_pof_uninit(void)
+DECL|nrfx_power_sleepevt_disable|function|void nrfx_power_sleepevt_disable(void)
+DECL|nrfx_power_sleepevt_enable|function|void nrfx_power_sleepevt_enable(nrfx_power_sleepevt_config_t const * p_config)
+DECL|nrfx_power_sleepevt_init|function|void nrfx_power_sleepevt_init(nrfx_power_sleepevt_config_t const * p_config)
+DECL|nrfx_power_sleepevt_uninit|function|void nrfx_power_sleepevt_uninit(void)
+DECL|nrfx_power_uninit|function|void nrfx_power_uninit(void)
+DECL|nrfx_power_usb_handler_get|function|nrfx_power_usb_event_handler_t nrfx_power_usb_handler_get(void)
+DECL|nrfx_power_usbevt_disable|function|void nrfx_power_usbevt_disable(void)
+DECL|nrfx_power_usbevt_enable|function|void nrfx_power_usbevt_enable(void)
+DECL|nrfx_power_usbevt_init|function|void nrfx_power_usbevt_init(nrfx_power_usbevt_config_t const * p_config)
+DECL|nrfx_power_usbevt_uninit|function|void nrfx_power_usbevt_uninit(void)

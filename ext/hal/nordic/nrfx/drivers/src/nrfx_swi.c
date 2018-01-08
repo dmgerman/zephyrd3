@@ -1,0 +1,45 @@
+DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
+DECL|NRFX_SWI0_DISABLED_MASK|macro|NRFX_SWI0_DISABLED_MASK
+DECL|NRFX_SWI0_DISABLED_MASK|macro|NRFX_SWI0_DISABLED_MASK
+DECL|NRFX_SWI1_DISABLED_MASK|macro|NRFX_SWI1_DISABLED_MASK
+DECL|NRFX_SWI1_DISABLED_MASK|macro|NRFX_SWI1_DISABLED_MASK
+DECL|NRFX_SWI2_DISABLED_MASK|macro|NRFX_SWI2_DISABLED_MASK
+DECL|NRFX_SWI2_DISABLED_MASK|macro|NRFX_SWI2_DISABLED_MASK
+DECL|NRFX_SWI3_DISABLED_MASK|macro|NRFX_SWI3_DISABLED_MASK
+DECL|NRFX_SWI3_DISABLED_MASK|macro|NRFX_SWI3_DISABLED_MASK
+DECL|NRFX_SWI4_DISABLED_MASK|macro|NRFX_SWI4_DISABLED_MASK
+DECL|NRFX_SWI4_DISABLED_MASK|macro|NRFX_SWI4_DISABLED_MASK
+DECL|NRFX_SWI5_DISABLED_MASK|macro|NRFX_SWI5_DISABLED_MASK
+DECL|NRFX_SWI5_DISABLED_MASK|macro|NRFX_SWI5_DISABLED_MASK
+DECL|NRFX_SWI_AVAILABLE_MASK|macro|NRFX_SWI_AVAILABLE_MASK
+DECL|NRFX_SWI_DISABLED_MASK|macro|NRFX_SWI_DISABLED_MASK
+DECL|NRFX_SWI_EGU_COUNT|macro|NRFX_SWI_EGU_COUNT
+DECL|NRFX_SWI_EGU_COUNT|macro|NRFX_SWI_EGU_COUNT
+DECL|NRFX_SWI_FIRST|macro|NRFX_SWI_FIRST
+DECL|NRFX_SWI_IS_AVAILABLE|macro|NRFX_SWI_IS_AVAILABLE
+DECL|NRFX_SWI_LAST|macro|NRFX_SWI_LAST
+DECL|NRFX_SWI_PRESENT_MASK|macro|NRFX_SWI_PRESENT_MASK
+DECL|NRFX_SWI_RESERVED_MASK|macro|NRFX_SWI_RESERVED_MASK
+DECL|NRFX_SWI_RESERVED_MASK|macro|NRFX_SWI_RESERVED_MASK
+DECL|egu_irq_handler|function|static void egu_irq_handler(nrfx_swi_t swi, uint8_t egu_channel_count)
+DECL|m_swi_allocated_mask|variable|m_swi_allocated_mask
+DECL|m_swi_flags|variable|m_swi_flags
+DECL|m_swi_handlers|variable|m_swi_handlers
+DECL|nrfx_swi_0_irq_handler|function|void nrfx_swi_0_irq_handler(void)
+DECL|nrfx_swi_1_irq_handler|function|void nrfx_swi_1_irq_handler(void)
+DECL|nrfx_swi_2_irq_handler|function|void nrfx_swi_2_irq_handler(void)
+DECL|nrfx_swi_3_irq_handler|function|void nrfx_swi_3_irq_handler(void)
+DECL|nrfx_swi_4_irq_handler|function|void nrfx_swi_4_irq_handler(void)
+DECL|nrfx_swi_5_irq_handler|function|void nrfx_swi_5_irq_handler(void)
+DECL|nrfx_swi_all_free|function|void nrfx_swi_all_free(void)
+DECL|nrfx_swi_alloc|function|nrfx_err_t nrfx_swi_alloc(nrfx_swi_t * p_swi, nrfx_swi_handler_t event_handler, uint32_t irq_priority)
+DECL|nrfx_swi_free|function|void nrfx_swi_free(nrfx_swi_t * p_swi)
+DECL|nrfx_swi_is_allocated|function|bool nrfx_swi_is_allocated(nrfx_swi_t swi)
+DECL|nrfx_swi_trigger|function|void nrfx_swi_trigger(nrfx_swi_t swi, uint8_t flag_number)
+DECL|swi_handler_setup|function|static void swi_handler_setup(nrfx_swi_t swi, nrfx_swi_handler_t event_handler, uint32_t irq_priority)
+DECL|swi_irq_handler|function|static void swi_irq_handler(nrfx_swi_t swi)
+DECL|swi_irq_number_get|function|static IRQn_Type swi_irq_number_get(nrfx_swi_t swi)
+DECL|swi_is_allocated|function|static bool swi_is_allocated(nrfx_swi_t swi)
+DECL|swi_is_available|function|static bool swi_is_available(nrfx_swi_t swi)
+DECL|swi_mark_allocated|function|static void swi_mark_allocated(nrfx_swi_t swi)
+DECL|swi_mark_unallocated|function|static void swi_mark_unallocated(nrfx_swi_t swi)
