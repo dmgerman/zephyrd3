@@ -75,6 +75,8 @@ DECL|mod_sub_del_all|function|static void mod_sub_del_all(struct bt_mesh_model *
 DECL|mod_sub_del|function|static void mod_sub_del(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_get_vnd|function|static void mod_sub_get_vnd(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_get|function|static void mod_sub_get(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|mod_sub_list_clear|function|static void mod_sub_list_clear(struct bt_mesh_model *mod)
+DECL|mod_sub_list_clear|function|static void mod_sub_list_clear(struct bt_mesh_model *mod)
 DECL|mod_sub_overwrite|function|static void mod_sub_overwrite(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_va_add|function|static void mod_sub_va_add(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_va_add|function|static void mod_sub_va_add(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -94,6 +96,7 @@ DECL|node_identity_get|function|static void node_identity_get(struct bt_mesh_mod
 DECL|node_identity_set|function|static void node_identity_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|node_reset|function|static void node_reset(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|period_log|member|u8_t period_log;
+DECL|ref|member|u16_t ref;
 DECL|relay_get|function|static void relay_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|relay_set|function|static void relay_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|send_friend_status|function|static void send_friend_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx)
@@ -105,4 +108,4 @@ DECL|send_net_key_status|function|static void send_net_key_status(struct bt_mesh
 DECL|ttl|member|u8_t ttl;
 DECL|uuid|member|u8_t uuid[16];
 DECL|va_add|function|static u8_t va_add(u8_t *label_uuid, u16_t *addr)
-DECL|va_find|function|static u16_t va_find(u8_t *label_uuid, struct label **free_slot)
+DECL|va_del|function|static u8_t va_del(u8_t *label_uuid, u16_t *addr)
