@@ -1,0 +1,8 @@
+DECL|TICKER_MAYFLY_CALL_ID_JOB|macro|TICKER_MAYFLY_CALL_ID_JOB
+DECL|TICKER_MAYFLY_CALL_ID_PROGRAM|macro|TICKER_MAYFLY_CALL_ID_PROGRAM
+DECL|TICKER_MAYFLY_CALL_ID_TRIGGER|macro|TICKER_MAYFLY_CALL_ID_TRIGGER
+DECL|TICKER_MAYFLY_CALL_ID_WORKER|macro|TICKER_MAYFLY_CALL_ID_WORKER
+DECL|caller_id_lut|variable|caller_id_lut
+DECL|hal_ticker_instance0_caller_id_get|function|u8_t hal_ticker_instance0_caller_id_get(u8_t user_id)
+DECL|hal_ticker_instance0_sched|function|void hal_ticker_instance0_sched(u8_t caller_id, u8_t callee_id, u8_t chain,void *instance)
+DECL|hal_ticker_instance0_trigger_set|function|void hal_ticker_instance0_trigger_set(u32_t value)

@@ -1,7 +1,3 @@
-DECL|CALL_ID_JOB|macro|CALL_ID_JOB
-DECL|CALL_ID_TRIGGER|macro|CALL_ID_TRIGGER
-DECL|CALL_ID_USER|macro|CALL_ID_USER
-DECL|CALL_ID_WORKER|macro|CALL_ID_WORKER
 DECL|COUNTER_CMP_OFFSET_MIN|macro|COUNTER_CMP_OFFSET_MIN
 DECL|DOUBLE_BUFFER_SIZE|macro|DOUBLE_BUFFER_SIZE
 DECL|TICKER_USER_OP_TYPE_IDLE_GET|enumerator|TICKER_USER_OP_TYPE_IDLE_GET,
@@ -12,6 +8,7 @@ DECL|TICKER_USER_OP_TYPE_STOP|enumerator|TICKER_USER_OP_TYPE_STOP,
 DECL|TICKER_USER_OP_TYPE_UPDATE|enumerator|TICKER_USER_OP_TYPE_UPDATE,
 DECL|_instance|variable|_instance
 DECL|ack|member|u8_t ack;
+DECL|caller_id_get_cb|member|ticker_caller_id_get_cb_t caller_id_get_cb;
 DECL|context|member|void *context;
 DECL|context|member|void *context;
 DECL|count_node|member|u8_t count_node;
@@ -20,10 +17,7 @@ DECL|count_user|member|u8_t count_user;
 DECL|first|member|u8_t first;
 DECL|force|member|u8_t force;
 DECL|force|member|u8_t force;
-DECL|fp_caller_id_get|member|u8_t (*fp_caller_id_get)(u8_t user_id);
-DECL|fp_cmp_set|member|void (*fp_cmp_set)(u32_t value);
 DECL|fp_op_func|member|ticker_op_func fp_op_func;
-DECL|fp_sched|member|void (*fp_sched)(u8_t caller_id, u8_t callee_id, u8_t chain);
 DECL|fp_timeout_func|member|ticker_timeout_func fp_timeout_func;
 DECL|id|member|u8_t id;
 DECL|job_guard|member|u8_t job_guard;
@@ -42,6 +36,7 @@ DECL|remainder_current|member|u32_t remainder_current;
 DECL|remainder_periodic|member|u32_t remainder_periodic;
 DECL|remainder_periodic|member|u32_t remainder_periodic;
 DECL|req|member|u8_t req;
+DECL|sched_cb|member|ticker_sched_cb_t sched_cb;
 DECL|slot_get|member|struct ticker_user_op_slot_get slot_get;
 DECL|start|member|struct ticker_user_op_start start;
 DECL|status|member|u32_t status;
@@ -52,13 +47,7 @@ DECL|ticker_enqueue|function|static u8_t ticker_enqueue(struct ticker_instance *
 DECL|ticker_id_head|member|u8_t ticker_id_head;
 DECL|ticker_id_slot_previous|member|u8_t ticker_id_slot_previous;
 DECL|ticker_id|member|u8_t *ticker_id;
-DECL|ticker_init|function|u32_t ticker_init(u8_t instance_index, u8_t count_node, void *node, u8_t count_user, void *user, u8_t count_op, void *user_op)
-DECL|ticker_instance0_caller_id_get|function|static u8_t ticker_instance0_caller_id_get(u8_t user_id)
-DECL|ticker_instance0_cmp_set|function|static void ticker_instance0_cmp_set(u32_t value)
-DECL|ticker_instance0_sched|function|static void ticker_instance0_sched(u8_t caller_id, u8_t callee_id, u8_t chain)
-DECL|ticker_instance1_caller_id_get|function|static u8_t ticker_instance1_caller_id_get(u8_t user_id)
-DECL|ticker_instance1_cmp_set|function|static void ticker_instance1_cmp_set(u32_t value)
-DECL|ticker_instance1_sched|function|static void ticker_instance1_sched(u8_t caller_id, u8_t callee_id, u8_t chain)
+DECL|ticker_init|function|u32_t ticker_init(u8_t instance_index, u8_t count_node, void *node, u8_t count_user, void *user, u8_t count_op, void *user_op, ticker_caller_id_get_cb_t caller_id_get_cb, ticker_sched_cb_t sched_cb, ticker_trigger_set_cb_t trigger_set_cb)
 DECL|ticker_instance|struct|struct ticker_instance {
 DECL|ticker_is_initialized|function|bool ticker_is_initialized(u8_t instance_index)
 DECL|ticker_job_compare_update|function|static inline void ticker_job_compare_update(struct ticker_instance *instance, u8_t ticker_id_old_head)
@@ -74,7 +63,7 @@ DECL|ticker_job_op_inquire|function|static inline void ticker_job_op_inquire(str
 DECL|ticker_job_op_start|function|static inline void ticker_job_op_start(struct ticker_node *ticker, struct ticker_user_op *user_op, u32_t ticks_current)
 DECL|ticker_job_sched|function|void ticker_job_sched(u8_t instance_index, u8_t user_id)
 DECL|ticker_job_worker_bh|function|static inline void ticker_job_worker_bh(struct ticker_instance *instance,u32_t ticks_previous, u32_t ticks_elapsed, u8_t *insert_head)
-DECL|ticker_job|function|static inline void ticker_job(struct ticker_instance *instance)
+DECL|ticker_job|function|void ticker_job(void *param)
 DECL|ticker_next_slot_get|function|u32_t ticker_next_slot_get(u8_t instance_index, u8_t user_id, u8_t *ticker_id, u32_t *ticks_current, u32_t *ticks_to_expire, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_node|struct|struct ticker_node {
 DECL|ticker_remainder_dec|function|static u8_t ticker_remainder_dec(struct ticker_node *ticker)
@@ -91,7 +80,7 @@ DECL|ticker_user_op_type|enum|enum ticker_user_op_type {
 DECL|ticker_user_op_update|struct|struct ticker_user_op_update {
 DECL|ticker_user_op|struct|struct ticker_user_op {
 DECL|ticker_user|struct|struct ticker_user {
-DECL|ticker_worker|function|static inline void ticker_worker(struct ticker_instance *instance)
+DECL|ticker_worker|function|void ticker_worker(void *param)
 DECL|ticks_at_start|member|u32_t ticks_at_start;
 DECL|ticks_current|member|u32_t *ticks_current;
 DECL|ticks_current|member|u32_t ticks_current;
@@ -113,6 +102,7 @@ DECL|ticks_to_expire_prep|function|static void ticks_to_expire_prep(struct ticke
 DECL|ticks_to_expire|member|u32_t *ticks_to_expire;
 DECL|ticks_to_expire|member|u32_t ticks_to_expire;
 DECL|timeout_func|member|ticker_timeout_func timeout_func;
+DECL|trigger_set_cb|member|ticker_trigger_set_cb_t trigger_set_cb;
 DECL|update|member|struct ticker_user_op_update update;
 DECL|user_op|member|struct ticker_user_op *user_op;
 DECL|user|member|struct ticker_user *user;
