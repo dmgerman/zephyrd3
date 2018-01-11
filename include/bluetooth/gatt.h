@@ -41,7 +41,6 @@ DECL|BT_GATT_SUBSCRIBE_FLAG_VOLATILE|enumerator|BT_GATT_SUBSCRIBE_FLAG_VOLATILE 
 DECL|BT_GATT_WRITE_FLAG_PREPARE|enumerator|BT_GATT_WRITE_FLAG_PREPARE = BIT(0),
 DECL|__BT_GATT_H|macro|__BT_GATT_H
 DECL|__packed|variable|__packed
-DECL|__single|struct|struct __single {
 DECL|_bt_gatt_ccc|struct|struct _bt_gatt_ccc {
 DECL|_included|member|} _included;
 DECL|_peer|member|bt_addr_le_t _peer;
