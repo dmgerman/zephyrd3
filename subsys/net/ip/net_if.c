@@ -13,6 +13,7 @@ DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline u8_t get_length(struct in6_addr *src, struct in6_addr *dst)
+DECL|iface_tx_cb|function|static void iface_tx_cb(struct net_if *iface, void *user_data)
 DECL|init_iface|function|static inline void init_iface(struct net_if *iface)
 DECL|ipv4_addr_find|function|static struct net_if_addr *ipv4_addr_find(struct net_if *iface, struct in_addr *addr)
 DECL|ipv4_maddr_find|function|static struct net_if_mcast_addr *ipv4_maddr_find(struct net_if *iface, bool is_used, const struct in_addr *addr)

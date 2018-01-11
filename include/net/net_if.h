@@ -1,11 +1,14 @@
 DECL|NET_DEVICE_INIT_INSTANCE|macro|NET_DEVICE_INIT_INSTANCE
 DECL|NET_DEVICE_INIT|macro|NET_DEVICE_INIT
+DECL|NET_IF_CONFIG_INIT|macro|NET_IF_CONFIG_INIT
+DECL|NET_IF_DEV_GET_NAME|macro|NET_IF_DEV_GET_NAME
 DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
 DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
 DECL|NET_IF_EVENT_GET_NAME|macro|NET_IF_EVENT_GET_NAME
 DECL|NET_IF_GET_NAME|macro|NET_IF_GET_NAME
 DECL|NET_IF_GET|macro|NET_IF_GET
 DECL|NET_IF_INIT|macro|NET_IF_INIT
+DECL|NET_IF_MAX_CONFIGS|macro|NET_IF_MAX_CONFIGS
 DECL|NET_IF_MAX_IPV4_ADDR|macro|NET_IF_MAX_IPV4_ADDR
 DECL|NET_IF_MAX_IPV4_MADDR|macro|NET_IF_MAX_IPV4_MADDR
 DECL|NET_IF_MAX_IPV6_ADDR|macro|NET_IF_MAX_IPV6_ADDR
@@ -16,7 +19,6 @@ DECL|NET_IF_POINTOPOINT|enumerator|NET_IF_POINTOPOINT,
 DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
-DECL|__net_if_align|variable|__net_if_align
 DECL|_unused|member|u8_t _unused : 6;
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
@@ -27,18 +29,21 @@ DECL|attempts|member|u8_t attempts;
 DECL|base_reachable_time|member|u32_t base_reachable_time;
 DECL|cb|member|net_if_link_callback_t cb;
 DECL|cb|member|net_if_mcast_callback_t cb;
+DECL|config|member|struct net_if_config config;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_timer|member|struct k_delayed_work dad_timer;
 DECL|dev|member|struct device *dev;
-DECL|dhcpv4|member|} dhcpv4;
+DECL|dhcpv4|member|struct net_if_dhcpv4 dhcpv4;
 DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|u8_t hop_limit;
+DECL|if_dev|member|struct net_if_dev *if_dev;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
-DECL|ipv4|member|} ipv4;
-DECL|ipv6|member|} ipv6;
+DECL|ipv4|member|struct net_if_ipv4 ipv4;
+DECL|ipv6|member|struct net_if_ipv6 ipv6;
+DECL|ip|member|struct net_if_ip ip;
 DECL|is_default|member|bool is_default;
 DECL|is_infinite|member|bool is_infinite;
 DECL|is_infinite|member|bool is_infinite;
@@ -63,14 +68,21 @@ DECL|net_if_addr_set_lf|function|static inline void net_if_addr_set_lf(struct ne
 DECL|net_if_addr|struct|struct net_if_addr {
 DECL|net_if_api|struct|struct net_if_api {
 DECL|net_if_cb_t|typedef|typedef void (*net_if_cb_t)(struct net_if *iface, void *user_data);
+DECL|net_if_config_get|function|static inline struct net_if_config *net_if_config_get(struct net_if *iface)
+DECL|net_if_config|struct|struct net_if_config {
+DECL|net_if_dev|struct|struct net_if_dev {
+DECL|net_if_dhcpv4|struct|struct net_if_dhcpv4 {
+DECL|net_if_get_config|function|static inline struct net_if_config *net_if_get_config(struct net_if *iface)
 DECL|net_if_get_device|function|static inline struct device *net_if_get_device(struct net_if *iface)
 DECL|net_if_get_ieee802154|function|static inline struct net_if *net_if_get_ieee802154(void)
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
 DECL|net_if_get_ll_reserve|function|static inline u16_t net_if_get_ll_reserve(struct net_if *iface, const struct in6_addr *dst_ip6)
 DECL|net_if_get_mtu|function|static inline u16_t net_if_get_mtu(struct net_if *iface)
+DECL|net_if_get_queue_tx|function|static inline struct k_fifo *net_if_get_queue_tx(struct net_if *iface)
 DECL|net_if_ipv4_get_ttl|function|static inline u8_t net_if_ipv4_get_ttl(struct net_if *iface)
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
+DECL|net_if_ipv4|struct|struct net_if_ipv4 {
 DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_addr_lookup_by_iface(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_get_hop_limit|function|static inline u8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline u32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
@@ -84,14 +96,18 @@ DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
 DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6_set_base_reachable_time(struct net_if *iface, u32_t reachable_time)
 DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, u32_t retrans_timer)
+DECL|net_if_ipv6|struct|struct net_if_ipv6 {
+DECL|net_if_ip|struct|struct net_if_ip {
 DECL|net_if_is_ip_offloaded|function|static inline bool net_if_is_ip_offloaded(struct net_if *iface)
 DECL|net_if_is_up|function|static inline bool net_if_is_up(struct net_if *iface)
 DECL|net_if_l2_data|function|static inline void *net_if_l2_data(struct net_if *iface)
+DECL|net_if_l2|function|static inline const struct net_l2 * const net_if_l2(struct net_if *iface)
 DECL|net_if_link_callback_t|typedef|typedef void (*net_if_link_callback_t)(struct net_if *iface,
 DECL|net_if_link_cb|struct|struct net_if_link_cb {
 DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_mcast_callback_t|typedef|typedef void (*net_if_mcast_callback_t)(struct net_if *iface,
 DECL|net_if_mcast_monitor|struct|struct net_if_mcast_monitor {
+DECL|net_if_offload|function|static inline struct net_offload *net_if_offload(struct net_if *iface)
 DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_pkt *pkt)
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
