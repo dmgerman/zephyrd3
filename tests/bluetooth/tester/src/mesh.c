@@ -8,6 +8,7 @@ DECL|addr|member|u16_t addr;
 DECL|addr|variable|addr
 DECL|appkey_idx|member|u16_t appkey_idx;
 DECL|bt_test_cb|variable|bt_test_cb
+DECL|cfg_cli|variable|cfg_cli
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|config_prov|function|static void config_prov(u8_t *data, u16_t len)
@@ -23,6 +24,8 @@ DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint
 DECL|flags|variable|flags
 DECL|get_faults|function|static void get_faults(u8_t *faults, u8_t faults_size, u8_t *dst, u8_t *count)
 DECL|health_clear_faults|function|static void health_clear_faults(u8_t *data, u16_t len)
+DECL|health_cli|variable|health_cli
+DECL|health_current_status|function|static void health_current_status(struct bt_mesh_health_cli *cli, u16_t addr, u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|health_generate_faults|function|static void health_generate_faults(u8_t *data, u16_t len)
 DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
@@ -67,6 +70,7 @@ DECL|reset|function|static void reset(u8_t *data, u16_t len)
 DECL|root_models|variable|root_models
 DECL|rpl_clear|function|static void rpl_clear(u8_t *data, u16_t len)
 DECL|seq_num|variable|seq_num
+DECL|show_faults|function|void show_faults(u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|static_auth|variable|static_auth
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
 DECL|tester_handle_mesh|function|void tester_handle_mesh(u8_t opcode, u8_t index, u8_t *data, u16_t len)
