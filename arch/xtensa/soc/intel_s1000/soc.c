@@ -1,5 +1,6 @@
 DECL|_soc_irq_disable|function|void _soc_irq_disable(u32_t irq)
 DECL|_soc_irq_enable|function|void _soc_irq_enable(u32_t irq)
+DECL|dcache_writeback_region|function|void dcache_writeback_region(void *addr, size_t size)
 DECL|setup_ownership_dma0|function|void setup_ownership_dma0(void)
 DECL|setup_ownership_dma1|function|void setup_ownership_dma1(void)
 DECL|setup_ownership_dma2|function|void setup_ownership_dma2(void)
