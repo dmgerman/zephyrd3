@@ -28,5 +28,6 @@ DECL|stack|member|void *stack;
 DECL|unused|member|int unused;
 DECL|unused|member|int unused;
 DECL|unused|member|int unused;
+DECL|useconds_t|typedef|typedef unsigned long useconds_t;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;

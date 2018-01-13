@@ -52,4 +52,6 @@ DECL|pthread_setschedparam|macro|pthread_setschedparam
 DECL|sched_get_priority_max|macro|sched_get_priority_max
 DECL|sched_get_priority_min|macro|sched_get_priority_min
 DECL|sched_yield|macro|sched_yield
+DECL|sleep|macro|sleep
 DECL|timespec|macro|timespec
+DECL|usleep|macro|usleep
