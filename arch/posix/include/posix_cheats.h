@@ -49,4 +49,7 @@ DECL|pthread_mutexattr_t|macro|pthread_mutexattr_t
 DECL|pthread_self|macro|pthread_self
 DECL|pthread_setcancelstate|macro|pthread_setcancelstate
 DECL|pthread_setschedparam|macro|pthread_setschedparam
+DECL|sched_get_priority_max|macro|sched_get_priority_max
+DECL|sched_get_priority_min|macro|sched_get_priority_min
+DECL|sched_yield|macro|sched_yield
 DECL|timespec|macro|timespec
