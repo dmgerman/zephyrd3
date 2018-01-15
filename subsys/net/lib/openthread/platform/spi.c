@@ -1,0 +1,3 @@
+DECL|otPlatSpiSlaveDisable|function|void otPlatSpiSlaveDisable(void)
+DECL|otPlatSpiSlaveEnable|function|otError otPlatSpiSlaveEnable(otPlatSpiSlaveTransactionCompleteCallback aCompleteCallback, otPlatSpiSlaveTransactionProcessCallback aProcessCallback, void *aContext)
+DECL|otPlatSpiSlavePrepareTransaction|function|otError otPlatSpiSlavePrepareTransaction(u8_t *anOutputBuf, u16_t anOutputBufLen, u8_t *anInputBuf, u16_t anInputBufLen,
