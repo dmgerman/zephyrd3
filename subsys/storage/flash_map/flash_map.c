@@ -10,8 +10,9 @@ DECL|flash_area_layout|function|static int flash_area_layout(int idx, int *cnt, 
 DECL|flash_area_open|function|int flash_area_open(u8_t id, const struct flash_area **fap)
 DECL|flash_area_read|function|int flash_area_read(const struct flash_area *fa, off_t off, void *dst, size_t len)
 DECL|flash_area_write|function|int flash_area_write(const struct flash_area *fa, off_t off, const void *src, size_t len)
+DECL|flash_dev|variable|flash_dev
 DECL|flash_drivers_map|variable|flash_drivers_map
-DECL|flash_map_init|function|void flash_map_init(void)
+DECL|flash_map_init|function|static int flash_map_init(struct device *dev)
 DECL|flash_map|variable|flash_map
 DECL|get_flah_dev_from_id|function|static struct device *get_flah_dev_from_id(u8_t id)
 DECL|get_flash_area_from_id|function|struct flash_area const *get_flash_area_from_id(int idx)
