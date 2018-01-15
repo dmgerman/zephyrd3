@@ -22,7 +22,7 @@ DECL|get_cmd|function|static const struct shell_cmd *get_cmd(const struct shell_
 DECL|get_completion_module|function|static struct shell_module *get_completion_module(char *str, char **command_prefix)
 DECL|get_destination_module|function|static struct shell_module *get_destination_module(const char *module_str)
 DECL|get_internal|function|static const struct shell_cmd *get_internal(const char *command)
-DECL|get_mod_cmd|function|static const struct shell_cmd *get_mod_cmd(struct shell_module *module, const char *cmd_str)
+DECL|get_module_cmd|function|static const struct shell_cmd *get_module_cmd(struct shell_module *module, const char *cmd_str)
 DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|get_standalone|function|static const struct shell_cmd *get_standalone(const char *command)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
