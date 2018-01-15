@@ -1,0 +1,21 @@
+DECL|HAL_RADIO_NRF51_RXEN_RXIDLE_RX_NS|macro|HAL_RADIO_NRF51_RXEN_RXIDLE_RX_NS
+DECL|HAL_RADIO_NRF51_RXEN_RXIDLE_RX_US|macro|HAL_RADIO_NRF51_RXEN_RXIDLE_RX_US
+DECL|HAL_RADIO_NRF51_RX_CHAIN_DELAY_NS|macro|HAL_RADIO_NRF51_RX_CHAIN_DELAY_NS
+DECL|HAL_RADIO_NRF51_RX_CHAIN_DELAY_US|macro|HAL_RADIO_NRF51_RX_CHAIN_DELAY_US
+DECL|HAL_RADIO_NRF51_TXEN_TXIDLE_TX_NS|macro|HAL_RADIO_NRF51_TXEN_TXIDLE_TX_NS
+DECL|HAL_RADIO_NRF51_TXEN_TXIDLE_TX_US|macro|HAL_RADIO_NRF51_TXEN_TXIDLE_TX_US
+DECL|HAL_RADIO_NRF51_TX_CHAIN_DELAY_NS|macro|HAL_RADIO_NRF51_TX_CHAIN_DELAY_NS
+DECL|HAL_RADIO_NRF51_TX_CHAIN_DELAY_US|macro|HAL_RADIO_NRF51_TX_CHAIN_DELAY_US
+DECL|SW_SWITCH_TIMER_EVTS_COMP_BASE|macro|SW_SWITCH_TIMER_EVTS_COMP_BASE
+DECL|SW_SWITCH_TIMER_TASK_GROUP_BASE|macro|SW_SWITCH_TIMER_TASK_GROUP_BASE
+DECL|SW_SWITCH_TIMER|macro|SW_SWITCH_TIMER
+DECL|hal_radio_phy_mode_get|function|static inline u32_t hal_radio_phy_mode_get(u8_t phy, u8_t flags)
+DECL|hal_radio_ram_prio_setup|function|static inline void hal_radio_ram_prio_setup(void)
+DECL|hal_radio_rx_chain_delay_ns_get|function|static inline u32_t hal_radio_rx_chain_delay_ns_get(u8_t phy, u8_t flags)
+DECL|hal_radio_rx_chain_delay_us_get|function|static inline u32_t hal_radio_rx_chain_delay_us_get(u8_t phy, u8_t flags)
+DECL|hal_radio_rx_ready_delay_ns_get|function|static inline u32_t hal_radio_rx_ready_delay_ns_get(u8_t phy, u8_t flags)
+DECL|hal_radio_rx_ready_delay_us_get|function|static inline u32_t hal_radio_rx_ready_delay_us_get(u8_t phy, u8_t flags)
+DECL|hal_radio_tx_chain_delay_ns_get|function|static inline u32_t hal_radio_tx_chain_delay_ns_get(u8_t phy, u8_t flags)
+DECL|hal_radio_tx_chain_delay_us_get|function|static inline u32_t hal_radio_tx_chain_delay_us_get(u8_t phy, u8_t flags)
+DECL|hal_radio_tx_ready_delay_ns_get|function|static inline u32_t hal_radio_tx_ready_delay_ns_get(u8_t phy, u8_t flags)
+DECL|hal_radio_tx_ready_delay_us_get|function|static inline u32_t hal_radio_tx_ready_delay_us_get(u8_t phy, u8_t flags)
