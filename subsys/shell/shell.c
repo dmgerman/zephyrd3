@@ -2,6 +2,7 @@ DECL|ARGC_MAX|macro|ARGC_MAX
 DECL|COMMAND_MAX_LEN|macro|COMMAND_MAX_LEN
 DECL|MAX_CMD_QUEUED|macro|MAX_CMD_QUEUED
 DECL|MODULE_NAME_MAX_LEN|macro|MODULE_NAME_MAX_LEN
+DECL|NUM_OF_SHELL_CMDS|macro|NUM_OF_SHELL_CMDS
 DECL|NUM_OF_SHELL_ENTITIES|macro|NUM_OF_SHELL_ENTITIES
 DECL|PROMPT_MAX_LEN|macro|PROMPT_MAX_LEN
 DECL|PROMPT_SUFFIX|macro|PROMPT_SUFFIX
@@ -23,6 +24,7 @@ DECL|get_destination_module|function|static struct shell_module *get_destination
 DECL|get_internal|function|static const struct shell_cmd *get_internal(const char *command)
 DECL|get_mod_cmd|function|static const struct shell_cmd *get_mod_cmd(struct shell_module *module, const char *cmd_str)
 DECL|get_prompt|function|static const char *get_prompt(void)
+DECL|get_standalone|function|static const struct shell_cmd *get_standalone(const char *command)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
 DECL|line_queue_init|function|static void line_queue_init(void)
 DECL|print_module_commands|function|static void print_module_commands(struct shell_module *module)
