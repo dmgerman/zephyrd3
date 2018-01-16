@@ -1,4 +1,3 @@
-DECL|BypassMode|member|uint32_t BypassMode; /*!< Bypass mode */
 DECL|ClockErrorDetection|member|uint32_t ClockErrorDetection; /*!< Clock error detection */
 DECL|HAL_RNG_STATE_BUSY|enumerator|HAL_RNG_STATE_BUSY = 0x02, /*!< RNG internal process is ongoing */
 DECL|HAL_RNG_STATE_ERROR|enumerator|HAL_RNG_STATE_ERROR = 0x04 /*!< RNG error state */
@@ -6,13 +5,10 @@ DECL|HAL_RNG_STATE_READY|enumerator|HAL_RNG_STATE_READY = 0x01, /*!< RNG initial
 DECL|HAL_RNG_STATE_RESET|enumerator|HAL_RNG_STATE_RESET = 0x00, /*!< RNG not yet initialized or disabled */
 DECL|HAL_RNG_STATE_TIMEOUT|enumerator|HAL_RNG_STATE_TIMEOUT = 0x03, /*!< RNG timeout state */
 DECL|HAL_RNG_StateTypeDef|typedef|}HAL_RNG_StateTypeDef;
-DECL|IS_RNG_BYPASS|macro|IS_RNG_BYPASS
 DECL|IS_RNG_CED|macro|IS_RNG_CED
 DECL|Init|member|RNG_InitTypeDef Init; /*!< RNG configuration parameters */
 DECL|Instance|member|RNG_TypeDef *Instance; /*!< Register base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< RNG locking object */
-DECL|RNG_BYP_DISABLE|macro|RNG_BYP_DISABLE
-DECL|RNG_BYP_ENABLE|macro|RNG_BYP_ENABLE
 DECL|RNG_CED_DISABLE|macro|RNG_CED_DISABLE
 DECL|RNG_CED_ENABLE|macro|RNG_CED_ENABLE
 DECL|RNG_FLAG_CECS|macro|RNG_FLAG_CECS

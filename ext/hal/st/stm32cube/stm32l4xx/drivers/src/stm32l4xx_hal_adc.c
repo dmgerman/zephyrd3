@@ -1,6 +1,5 @@
 DECL|ADC_CFGR2_FIELDS|macro|ADC_CFGR2_FIELDS
 DECL|ADC_CFGR_FIELDS_1|macro|ADC_CFGR_FIELDS_1
-DECL|ADC_CFGR_WD_FIELDS|macro|ADC_CFGR_WD_FIELDS
 DECL|ADC_CONVERSION_TIME_MAX_CPU_CYCLES|macro|ADC_CONVERSION_TIME_MAX_CPU_CYCLES
 DECL|ADC_ConversionStop|function|HAL_StatusTypeDef ADC_ConversionStop(ADC_HandleTypeDef* hadc, uint32_t ConversionGroup)
 DECL|ADC_DISABLE_TIMEOUT|macro|ADC_DISABLE_TIMEOUT
@@ -10,8 +9,6 @@ DECL|ADC_DMAHalfConvCplt|function|void ADC_DMAHalfConvCplt(DMA_HandleTypeDef *hd
 DECL|ADC_Disable|function|HAL_StatusTypeDef ADC_Disable(ADC_HandleTypeDef* hadc)
 DECL|ADC_ENABLE_TIMEOUT|macro|ADC_ENABLE_TIMEOUT
 DECL|ADC_Enable|function|HAL_StatusTypeDef ADC_Enable(ADC_HandleTypeDef* hadc)
-DECL|ADC_OFR_FIELDS|macro|ADC_OFR_FIELDS
-DECL|ADC_STAB_DELAY_US|macro|ADC_STAB_DELAY_US
 DECL|HAL_ADC_AnalogWDGConfig|function|HAL_StatusTypeDef HAL_ADC_AnalogWDGConfig(ADC_HandleTypeDef* hadc, ADC_AnalogWDGConfTypeDef* AnalogWDGConfig)
 DECL|HAL_ADC_ConfigChannel|function|HAL_StatusTypeDef HAL_ADC_ConfigChannel(ADC_HandleTypeDef* hadc, ADC_ChannelConfTypeDef* sConfig)
 DECL|HAL_ADC_ConvCpltCallback|function|__weak void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
