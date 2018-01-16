@@ -1,6 +1,7 @@
 DECL|AHBCLKDivider|member|uint32_t AHBCLKDivider; /*!< The AHB clock (HCLK) divider. This clock is derived from the system clock (SYSCLK).
 DECL|APB1CLKDivider|member|uint32_t APB1CLKDivider; /*!< The APB1 clock (PCLK1) divider. This clock is derived from the AHB clock (HCLK).
 DECL|APB2CLKDivider|member|uint32_t APB2CLKDivider; /*!< The APB2 clock (PCLK2) divider. This clock is derived from the AHB clock (HCLK).
+DECL|CLOCKSWITCH_TIMEOUT_VALUE|macro|CLOCKSWITCH_TIMEOUT_VALUE
 DECL|ClockType|member|uint32_t ClockType; /*!< The clock to be configured.
 DECL|HSEState|member|uint32_t HSEState; /*!< The new state of the HSE.
 DECL|HSE_TIMEOUT_VALUE|macro|HSE_TIMEOUT_VALUE

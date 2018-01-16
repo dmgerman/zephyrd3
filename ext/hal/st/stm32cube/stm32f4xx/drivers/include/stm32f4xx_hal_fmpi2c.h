@@ -39,7 +39,7 @@ DECL|FMPI2C_GET_DIR|macro|FMPI2C_GET_DIR
 DECL|FMPI2C_GET_OWN_ADDRESS1|macro|FMPI2C_GET_OWN_ADDRESS1
 DECL|FMPI2C_GET_OWN_ADDRESS2|macro|FMPI2C_GET_OWN_ADDRESS2
 DECL|FMPI2C_GET_STOP_MODE|macro|FMPI2C_GET_STOP_MODE
-DECL|FMPI2C_HandleTypeDef|typedef|}FMPI2C_HandleTypeDef;
+DECL|FMPI2C_HandleTypeDef|typedef|} FMPI2C_HandleTypeDef;
 DECL|FMPI2C_IT_ADDRI|macro|FMPI2C_IT_ADDRI
 DECL|FMPI2C_IT_ERRI|macro|FMPI2C_IT_ERRI
 DECL|FMPI2C_IT_NACKI|macro|FMPI2C_IT_NACKI
@@ -47,7 +47,7 @@ DECL|FMPI2C_IT_RXI|macro|FMPI2C_IT_RXI
 DECL|FMPI2C_IT_STOPI|macro|FMPI2C_IT_STOPI
 DECL|FMPI2C_IT_TCI|macro|FMPI2C_IT_TCI
 DECL|FMPI2C_IT_TXI|macro|FMPI2C_IT_TXI
-DECL|FMPI2C_InitTypeDef|typedef|}FMPI2C_InitTypeDef;
+DECL|FMPI2C_InitTypeDef|typedef|} FMPI2C_InitTypeDef;
 DECL|FMPI2C_LAST_FRAME|macro|FMPI2C_LAST_FRAME
 DECL|FMPI2C_MEMADD_SIZE_16BIT|macro|FMPI2C_MEMADD_SIZE_16BIT
 DECL|FMPI2C_MEMADD_SIZE_8BIT|macro|FMPI2C_MEMADD_SIZE_8BIT
@@ -81,7 +81,7 @@ DECL|HAL_FMPI2C_MODE_MASTER|enumerator|HAL_FMPI2C_MODE_MASTER = 0x10U, /*!< FMPI
 DECL|HAL_FMPI2C_MODE_MEM|enumerator|HAL_FMPI2C_MODE_MEM = 0x40U /*!< FMPI2C communication is in Memory Mode */
 DECL|HAL_FMPI2C_MODE_NONE|enumerator|HAL_FMPI2C_MODE_NONE = 0x00U, /*!< No FMPI2C communication on going */
 DECL|HAL_FMPI2C_MODE_SLAVE|enumerator|HAL_FMPI2C_MODE_SLAVE = 0x20U, /*!< FMPI2C communication is in Slave Mode */
-DECL|HAL_FMPI2C_ModeTypeDef|typedef|}HAL_FMPI2C_ModeTypeDef;
+DECL|HAL_FMPI2C_ModeTypeDef|typedef|} HAL_FMPI2C_ModeTypeDef;
 DECL|HAL_FMPI2C_STATE_ABORT|enumerator|HAL_FMPI2C_STATE_ABORT = 0x60U, /*!< Abort user request ongoing */
 DECL|HAL_FMPI2C_STATE_BUSY_RX_LISTEN|enumerator|HAL_FMPI2C_STATE_BUSY_RX_LISTEN = 0x2AU, /*!< Address Listen Mode and Data Reception
 DECL|HAL_FMPI2C_STATE_BUSY_RX|enumerator|HAL_FMPI2C_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
@@ -93,7 +93,7 @@ DECL|HAL_FMPI2C_STATE_LISTEN|enumerator|HAL_FMPI2C_STATE_LISTEN = 0x28U, /*!< Ad
 DECL|HAL_FMPI2C_STATE_READY|enumerator|HAL_FMPI2C_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_FMPI2C_STATE_RESET|enumerator|HAL_FMPI2C_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized */
 DECL|HAL_FMPI2C_STATE_TIMEOUT|enumerator|HAL_FMPI2C_STATE_TIMEOUT = 0xA0U, /*!< Timeout state */
-DECL|HAL_FMPI2C_StateTypeDef|typedef|}HAL_FMPI2C_StateTypeDef;
+DECL|HAL_FMPI2C_StateTypeDef|typedef|} HAL_FMPI2C_StateTypeDef;
 DECL|IS_FMPI2C_ADDRESSING_MODE|macro|IS_FMPI2C_ADDRESSING_MODE
 DECL|IS_FMPI2C_DUAL_ADDRESS|macro|IS_FMPI2C_DUAL_ADDRESS
 DECL|IS_FMPI2C_GENERAL_CALL|macro|IS_FMPI2C_GENERAL_CALL
@@ -117,7 +117,7 @@ DECL|PreviousState|member|__IO uint32_t PreviousState; /*!< FMPI2C communication
 DECL|State|member|__IO HAL_FMPI2C_StateTypeDef State; /*!< FMPI2C communication state */
 DECL|Timing|member|uint32_t Timing; /*!< Specifies the FMPI2C_TIMINGR_register value.
 DECL|XferCount|member|__IO uint16_t XferCount; /*!< FMPI2C transfer counter */
-DECL|XferISR|member|HAL_StatusTypeDef (*XferISR)(struct __FMPI2C_HandleTypeDef *hfmpi2c, uint32_t ITFlags, uint32_t ITSources); /*!< FMPI2C transfer IRQ handler function pointer */
+DECL|XferISR|member|HAL_StatusTypeDef(*XferISR)(struct __FMPI2C_HandleTypeDef *hfmpi2c, uint32_t ITFlags, uint32_t ITSources); /*!< FMPI2C transfer IRQ handler function pointer */
 DECL|XferOptions|member|__IO uint32_t XferOptions; /*!< FMPI2C sequantial transfer options, this parameter can
 DECL|XferSize|member|uint16_t XferSize; /*!< FMPI2C transfer size */
 DECL|__FMPI2C_HandleTypeDef|struct|typedef struct __FMPI2C_HandleTypeDef
