@@ -1,3 +1,5 @@
+DECL|ENET_FRAME_MAX_VALNFRAMELEN|macro|ENET_FRAME_MAX_VALNFRAMELEN
+DECL|ETH_MCUX_BUFFER_SIZE|macro|ETH_MCUX_BUFFER_SIZE
 DECL|ETH_MCUX_BUFFER_SIZE|macro|ETH_MCUX_BUFFER_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
@@ -10,6 +12,7 @@ DECL|eth_0_context|variable|eth_0_context
 DECL|eth_0_iface_init|function|static void eth_0_iface_init(struct net_if *iface)
 DECL|eth_0_init|function|static int eth_0_init(struct device *dev)
 DECL|eth_callback|function|static void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
+DECL|eth_capabilities|function|static enum eth_hw_caps eth_capabilities(struct device *dev)
 DECL|eth_context|struct|struct eth_context {
 DECL|eth_mcux_decode_duplex_and_speed|function|static void eth_mcux_decode_duplex_and_speed(u32_t status, phy_duplex_t *p_phy_duplex, phy_speed_t *p_phy_speed)
 DECL|eth_mcux_delayed_phy_work|function|static void eth_mcux_delayed_phy_work(struct k_work *item)
@@ -34,6 +37,7 @@ DECL|eth_rx|function|static void eth_rx(struct device *iface)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_buf|member|u8_t frame_buf[1500 + 14]; /* Max MTU + ethernet header size */
 DECL|generate_mac|function|static void generate_mac(u8_t *mac_addr)
+DECL|get_iface|function|static inline struct net_if *get_iface(struct eth_context *ctx, u16_t vlan_tag)
 DECL|iface|member|struct net_if *iface;
 DECL|link_up|member|bool link_up;
 DECL|mac_addr|member|u8_t mac_addr[6];
