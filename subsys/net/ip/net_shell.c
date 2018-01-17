@@ -37,6 +37,8 @@ DECL|iface2str|function|static const char *iface2str(struct net_if *iface, const
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_mcast_route_cb|function|static void iface_per_mcast_route_cb(struct net_if *iface, void *user_data)
 DECL|iface_per_route_cb|function|static void iface_per_route_cb(struct net_if *iface, void *user_data)
+DECL|iface_vlan_cb|function|static void iface_vlan_cb(struct net_if *iface, void *user_data)
+DECL|iface_vlan_del_cb|function|static void iface_vlan_del_cb(struct net_if *iface, void *user_data)
 DECL|ipv6_frag_cb|function|static void ipv6_frag_cb(struct net_ipv6_reassembly *reass, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
 DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data)
@@ -57,6 +59,7 @@ DECL|net_shell_cmd_rpl|function|int net_shell_cmd_rpl(int argc, char *argv[])
 DECL|net_shell_cmd_stacks|function|int net_shell_cmd_stacks(int argc, char *argv[])
 DECL|net_shell_cmd_stats|function|int net_shell_cmd_stats(int argc, char *argv[])
 DECL|net_shell_cmd_tcp|function|int net_shell_cmd_tcp(int argc, char *argv[])
+DECL|net_shell_cmd_vlan|function|int net_shell_cmd_vlan(int argc, char *argv[])
 DECL|net_shell_print_statistics|function|static inline void net_shell_print_statistics(void)
 DECL|ping4_handler|variable|ping4_handler
 DECL|ping6_handler|variable|ping6_handler
