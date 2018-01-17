@@ -1,4 +1,5 @@
 DECL|__POSIX_TYPES_H__|macro|__POSIX_TYPES_H__
+DECL|clockid_t|typedef|typedef u32_t clockid_t;
 DECL|count|member|int count;
 DECL|delayedstart|member|u32_t delayedstart;
 DECL|detachstate|member|s32_t detachstate;

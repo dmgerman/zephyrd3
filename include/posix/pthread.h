@@ -11,7 +11,6 @@ DECL|PTHREAD_MUTEX_DEFINE|macro|PTHREAD_MUTEX_DEFINE
 DECL|PTHREAD_TERMINATED|enumerator|PTHREAD_TERMINATED
 DECL|_PTHREAD_CANCEL_POS|macro|_PTHREAD_CANCEL_POS
 DECL|__PTHREAD_H__|macro|__PTHREAD_H__
-DECL|_ts_to_ms|function|static inline s32_t _ts_to_ms(const struct timespec *to)
 DECL|cancel_lock_sem|member|struct k_sem cancel_lock_sem;
 DECL|cancel_lock|member|pthread_mutex_t cancel_lock;
 DECL|cancel_pending|member|int cancel_pending;
@@ -41,6 +40,3 @@ DECL|state_lock_sem|member|struct k_sem state_lock_sem;
 DECL|state_lock|member|pthread_mutex_t state_lock;
 DECL|state|member|enum pthread_state state;
 DECL|thread|member|struct k_thread thread;
-DECL|timespec|struct|struct timespec {
-DECL|tv_nsec|member|s32_t tv_nsec;
-DECL|tv_sec|member|s32_t tv_sec;

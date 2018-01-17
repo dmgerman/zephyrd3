@@ -1,4 +1,7 @@
 DECL|_POSIX_CHEATS_H|macro|_POSIX_CHEATS_H
+DECL|clock_gettime|macro|clock_gettime
+DECL|clock_settime|macro|clock_settime
+DECL|clockid_t|macro|clockid_t
 DECL|main|macro|main
 DECL|pthread_attr_destroy|macro|pthread_attr_destroy
 DECL|pthread_attr_getdetachstate|macro|pthread_attr_getdetachstate
@@ -51,6 +54,7 @@ DECL|pthread_setcancelstate|macro|pthread_setcancelstate
 DECL|pthread_setschedparam|macro|pthread_setschedparam
 DECL|sched_get_priority_max|macro|sched_get_priority_max
 DECL|sched_get_priority_min|macro|sched_get_priority_min
+DECL|sched_param|macro|sched_param
 DECL|sched_yield|macro|sched_yield
 DECL|sleep|macro|sleep
 DECL|timespec|macro|timespec
