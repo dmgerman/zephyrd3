@@ -10,6 +10,7 @@ DECL|MAX_PACKET|macro|MAX_PACKET
 DECL|PROCESS_CBW|enumerator|PROCESS_CBW, /* process a CBW request */
 DECL|READ_CBW|enumerator|READ_CBW, /* wait a CBW */
 DECL|SEND_CSW|enumerator|SEND_CSW, /* send a CSW */
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|Stage|enum|enum Stage {
 DECL|Status|enum|enum Status {
