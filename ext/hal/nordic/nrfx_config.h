@@ -1,0 +1,1 @@
+DECL|NRFX_CONFIG_H__|macro|NRFX_CONFIG_H__
