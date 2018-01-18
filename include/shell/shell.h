@@ -14,6 +14,7 @@ DECL|module_name|member|const char *module_name;
 DECL|prompt|member|shell_prompt_function_t prompt;
 DECL|shell_cmd_function_t|typedef|typedef int (*shell_cmd_function_t)(int argc, char *argv[]);
 DECL|shell_cmd|struct|struct shell_cmd {
+DECL|shell_mcumgr_function_t|typedef|typedef int (*shell_mcumgr_function_t)(const char *line, void *arg);
 DECL|shell_module|struct|struct shell_module {
 DECL|shell_prompt_function_t|typedef|typedef const char *(*shell_prompt_function_t)(void);
 DECL|shell_run|function|static inline int shell_run(struct device *dev)

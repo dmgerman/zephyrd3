@@ -29,6 +29,8 @@ DECL|get_prompt|function|static const char *get_prompt(void)
 DECL|get_standalone|function|static const struct shell_cmd *get_standalone(const char *command)
 DECL|line2argv|function|static size_t line2argv(char *str, char *argv[], size_t size)
 DECL|line_queue_init|function|static void line_queue_init(void)
+DECL|mcumgr_arg|variable|mcumgr_arg
+DECL|mcumgr_cmd_handler|variable|mcumgr_cmd_handler
 DECL|no_promt|variable|no_promt
 DECL|print_module_commands|function|static void print_module_commands(struct shell_module *module)
 DECL|prompt|variable|prompt
@@ -37,6 +39,7 @@ DECL|shell_exec|function|int shell_exec(char *line)
 DECL|shell_init|function|void shell_init(const char *str)
 DECL|shell_register_app_cmd_handler|function|void shell_register_app_cmd_handler(shell_cmd_function_t handler)
 DECL|shell_register_default_module|function|void shell_register_default_module(const char *name)
+DECL|shell_register_mcumgr_handler|function|void shell_register_mcumgr_handler(shell_mcumgr_function_t handler, void *arg)
 DECL|shell_register_prompt_handler|function|void shell_register_prompt_handler(shell_prompt_function_t handler)
 DECL|shell_thread|variable|shell_thread
 DECL|shell|function|static void shell(void *p1, void *p2, void *p3)
