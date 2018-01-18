@@ -1,0 +1,17 @@
+DECL|mgmt_ctxt_init|function|mgmt_ctxt_init(struct mgmt_ctxt *ctxt, struct mgmt_streamer *streamer)
+DECL|mgmt_err_from_cbor|function|mgmt_err_from_cbor(int cbor_status)
+DECL|mgmt_find_group|function|mgmt_find_group(uint16_t group_id)
+DECL|mgmt_find_handler|function|mgmt_find_handler(uint16_t group_id, uint16_t command_id)
+DECL|mgmt_group_list_end|variable|mgmt_group_list_end
+DECL|mgmt_group_list|variable|mgmt_group_list
+DECL|mgmt_hton_hdr|function|mgmt_hton_hdr(struct mgmt_hdr *hdr)
+DECL|mgmt_ntoh_hdr|function|mgmt_ntoh_hdr(struct mgmt_hdr *hdr)
+DECL|mgmt_register_group|function|mgmt_register_group(struct mgmt_group *group)
+DECL|mgmt_streamer_alloc_rsp|function|mgmt_streamer_alloc_rsp(struct mgmt_streamer *streamer, const void *req)
+DECL|mgmt_streamer_free_buf|function|mgmt_streamer_free_buf(struct mgmt_streamer *streamer, void *buf)
+DECL|mgmt_streamer_init_reader|function|mgmt_streamer_init_reader(struct mgmt_streamer *streamer, void *buf)
+DECL|mgmt_streamer_init_writer|function|mgmt_streamer_init_writer(struct mgmt_streamer *streamer, void *buf)
+DECL|mgmt_streamer_reset_buf|function|mgmt_streamer_reset_buf(struct mgmt_streamer *streamer, void *buf)
+DECL|mgmt_streamer_trim_front|function|mgmt_streamer_trim_front(struct mgmt_streamer *streamer, void *buf, size_t len)
+DECL|mgmt_streamer_write_at|function|mgmt_streamer_write_at(struct mgmt_streamer *streamer, size_t offset, const void *data, int len)
+DECL|mgmt_write_rsp_status|function|mgmt_write_rsp_status(struct mgmt_ctxt *ctxt, int errcode)

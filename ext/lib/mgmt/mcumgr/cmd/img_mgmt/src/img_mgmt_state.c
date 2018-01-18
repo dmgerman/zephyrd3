@@ -1,0 +1,12 @@
+DECL|IMG_MGMT_STATE_F_ACTIVE|macro|IMG_MGMT_STATE_F_ACTIVE
+DECL|IMG_MGMT_STATE_F_CONFIRMED|macro|IMG_MGMT_STATE_F_CONFIRMED
+DECL|IMG_MGMT_STATE_F_PENDING|macro|IMG_MGMT_STATE_F_PENDING
+DECL|IMG_MGMT_STATE_F_PERMANENT|macro|IMG_MGMT_STATE_F_PERMANENT
+DECL|IMG_MGMT_VER_MAX_STR_LEN|macro|IMG_MGMT_VER_MAX_STR_LEN
+DECL|img_mgmt_slot_in_use|function|img_mgmt_slot_in_use(int slot)
+DECL|img_mgmt_state_any_pending|function|img_mgmt_state_any_pending(void)
+DECL|img_mgmt_state_confirm|function|img_mgmt_state_confirm(void)
+DECL|img_mgmt_state_flags|function|img_mgmt_state_flags(int query_slot)
+DECL|img_mgmt_state_read|function|img_mgmt_state_read(struct mgmt_ctxt *ctxt)
+DECL|img_mgmt_state_set_pending|function|img_mgmt_state_set_pending(int slot, int permanent)
+DECL|img_mgmt_state_write|function|img_mgmt_state_write(struct mgmt_ctxt *ctxt)

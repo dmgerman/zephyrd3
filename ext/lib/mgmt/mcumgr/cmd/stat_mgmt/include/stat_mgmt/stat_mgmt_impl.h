@@ -1,0 +1,2 @@
+DECL|H_STAT_MGMT_IMPL_|macro|H_STAT_MGMT_IMPL_
+DECL|stat_mgmt_foreach_entry_fn|typedef|typedef int stat_mgmt_foreach_entry_fn(struct stat_mgmt_entry *entry,

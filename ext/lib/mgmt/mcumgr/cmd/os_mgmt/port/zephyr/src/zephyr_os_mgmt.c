@@ -1,0 +1,5 @@
+DECL|os_mgmt_impl_reset|function|os_mgmt_impl_reset(unsigned int delay_ms)
+DECL|os_mgmt_impl_task_info|function|os_mgmt_impl_task_info(int idx, struct os_mgmt_task_info *out_info)
+DECL|zephyr_os_mgmt_reset_cb|function|zephyr_os_mgmt_reset_cb(struct k_timer *timer)
+DECL|zephyr_os_mgmt_reset_work_handler|function|zephyr_os_mgmt_reset_work_handler(struct k_work *work)
+DECL|zephyr_os_mgmt_task_at|function|zephyr_os_mgmt_task_at(int idx)
