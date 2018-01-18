@@ -1,0 +1,1 @@
+DECL|H_SMP_BT_|macro|H_SMP_BT_
