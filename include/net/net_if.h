@@ -41,8 +41,8 @@ DECL|if_dev|member|struct net_if_dev *if_dev;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
-DECL|ipv4|member|struct net_if_ipv4 ipv4;
-DECL|ipv6|member|struct net_if_ipv6 ipv6;
+DECL|ipv4|member|struct net_if_ipv4 *ipv4;
+DECL|ipv6|member|struct net_if_ipv6 *ipv6;
 DECL|ip|member|struct net_if_ip ip;
 DECL|is_default|member|bool is_default;
 DECL|is_infinite|member|bool is_infinite;
@@ -94,7 +94,7 @@ DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_se
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
 DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6_set_base_reachable_time(struct net_if *iface, u32_t reachable_time)
-DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if *iface)
+DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if_ipv6 *ipv6)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, u32_t retrans_timer)
 DECL|net_if_ipv6|struct|struct net_if_ipv6 {
 DECL|net_if_ip|struct|struct net_if_ip {

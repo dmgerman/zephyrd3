@@ -14,13 +14,19 @@ DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline u8_t get_length(struct in6_addr *src, struct in6_addr *dst)
 DECL|iface_tx_cb|function|static void iface_tx_cb(struct net_if *iface, void *user_data)
+DECL|iface|member|struct net_if *iface;
+DECL|iface|member|struct net_if *iface;
 DECL|init_iface|function|static inline void init_iface(struct net_if *iface)
 DECL|ipv4_addr_find|function|static struct net_if_addr *ipv4_addr_find(struct net_if *iface, struct in_addr *addr)
+DECL|ipv4_addresses|variable|ipv4_addresses
 DECL|ipv4_maddr_find|function|static struct net_if_mcast_addr *ipv4_maddr_find(struct net_if *iface, bool is_used, const struct in_addr *addr)
+DECL|ipv4|member|struct net_if_ipv4 ipv4;
 DECL|ipv6_addr_expired|function|static void ipv6_addr_expired(struct k_work *work)
 DECL|ipv6_addr_find|function|static struct net_if_addr *ipv6_addr_find(struct net_if *iface, struct in6_addr *addr)
+DECL|ipv6_addresses|variable|ipv6_addresses
 DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_find(struct net_if *iface, struct in6_addr *prefix, u8_t prefix_len)
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
+DECL|ipv6|member|struct net_if_ipv6 ipv6;
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|join_mcast_allnodes|function|static void join_mcast_allnodes(struct net_if *iface)
 DECL|join_mcast_allnodes|macro|join_mcast_allnodes
@@ -38,6 +44,10 @@ DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct 
 DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
 DECL|net_if_carrier_down|function|void net_if_carrier_down(struct net_if *iface)
+DECL|net_if_config_ipv4_get|function|int net_if_config_ipv4_get(struct net_if *iface, struct net_if_ipv4 **ipv4)
+DECL|net_if_config_ipv4_put|function|int net_if_config_ipv4_put(struct net_if *iface)
+DECL|net_if_config_ipv6_get|function|int net_if_config_ipv6_get(struct net_if *iface, struct net_if_ipv6 **ipv6)
+DECL|net_if_config_ipv6_put|function|int net_if_config_ipv6_put(struct net_if *iface)
 DECL|net_if_down|function|int net_if_down(struct net_if *iface)
 DECL|net_if_flush_tx|function|static void net_if_flush_tx(struct net_if *iface)
 DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
@@ -61,7 +71,7 @@ DECL|net_if_ipv6_addr_lookup|function|struct net_if_addr *net_if_ipv6_addr_looku
 DECL|net_if_ipv6_addr_onlink|function|bool net_if_ipv6_addr_onlink(struct net_if **iface, struct in6_addr *addr)
 DECL|net_if_ipv6_addr_rm|function|bool net_if_ipv6_addr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_addr_update_lifetime|function|void net_if_ipv6_addr_update_lifetime(struct net_if_addr *ifaddr, u32_t vlifetime)
-DECL|net_if_ipv6_calc_reachable_time|function|u32_t net_if_ipv6_calc_reachable_time(struct net_if *iface)
+DECL|net_if_ipv6_calc_reachable_time|function|u32_t net_if_ipv6_calc_reachable_time(struct net_if_ipv6 *ipv6)
 DECL|net_if_ipv6_dad_failed|function|void net_if_ipv6_dad_failed(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_get_best_match|function|static inline struct in6_addr *net_if_ipv6_get_best_match(struct net_if *iface, struct in6_addr *dst, u8_t *best_so_far)
 DECL|net_if_ipv6_get_global_addr|function|struct in6_addr *net_if_ipv6_get_global_addr(struct net_if **iface)
