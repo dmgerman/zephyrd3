@@ -116,13 +116,27 @@ DECL|net_pkt_set_ll_reserve|function|static inline void net_pkt_set_ll_reserve(s
 DECL|net_pkt_set_next_hdr|function|static inline void net_pkt_set_next_hdr(struct net_pkt *pkt, u8_t *hdr)
 DECL|net_pkt_set_orig_iface|function|static inline void net_pkt_set_orig_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_priority|function|static inline void net_pkt_set_priority(struct net_pkt *pkt,u8_t priority)
-DECL|net_pkt_set_priority|function|static inline void net_pkt_set_priority(struct net_pkt *pkt,u8_t priority)
 DECL|net_pkt_set_queued|function|static inline void net_pkt_set_queued(struct net_pkt *pkt, bool send)
 DECL|net_pkt_set_sent|function|static inline void net_pkt_set_sent(struct net_pkt *pkt, bool sent)
 DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_addr(struct net_pkt *pkt)
 DECL|net_pkt_set_token|function|static inline void net_pkt_set_token(struct net_pkt *pkt, void *token)
+DECL|net_pkt_set_vlan_dei|function|static inline void net_pkt_set_vlan_dei(struct net_pkt *pkt, bool dei)
+DECL|net_pkt_set_vlan_dei|function|static inline void net_pkt_set_vlan_dei(struct net_pkt *pkt, bool dei)
+DECL|net_pkt_set_vlan_priority|function|static inline void net_pkt_set_vlan_priority(struct net_pkt *pkt, u8_t priority)
+DECL|net_pkt_set_vlan_tag|function|static inline void net_pkt_set_vlan_tag(struct net_pkt *pkt, u16_t tag)
+DECL|net_pkt_set_vlan_tag|function|static inline void net_pkt_set_vlan_tag(struct net_pkt *pkt, u16_t tag)
+DECL|net_pkt_set_vlan_tci|function|static inline void net_pkt_set_vlan_tci(struct net_pkt *pkt, u16_t tci)
+DECL|net_pkt_set_vlan_tci|function|static inline void net_pkt_set_vlan_tci(struct net_pkt *pkt, u16_t tci)
 DECL|net_pkt_token|function|static inline void *net_pkt_token(struct net_pkt *pkt)
 DECL|net_pkt_unref|macro|net_pkt_unref
+DECL|net_pkt_vlan_dei|function|static inline bool net_pkt_vlan_dei(struct net_pkt *pkt)
+DECL|net_pkt_vlan_dei|function|static inline bool net_pkt_vlan_dei(struct net_pkt *pkt)
+DECL|net_pkt_vlan_priority|function|static inline u8_t net_pkt_vlan_priority(struct net_pkt *pkt)
+DECL|net_pkt_vlan_priority|function|static inline u8_t net_pkt_vlan_priority(struct net_pkt *pkt)
+DECL|net_pkt_vlan_tag|function|static inline u16_t net_pkt_vlan_tag(struct net_pkt *pkt)
+DECL|net_pkt_vlan_tag|function|static inline u16_t net_pkt_vlan_tag(struct net_pkt *pkt)
+DECL|net_pkt_vlan_tci|function|static inline u16_t net_pkt_vlan_tci(struct net_pkt *pkt)
+DECL|net_pkt_vlan_tci|function|static inline u16_t net_pkt_vlan_tci(struct net_pkt *pkt)
 DECL|net_pkt_work|function|static inline struct k_work *net_pkt_work(struct net_pkt *pkt)
 DECL|net_pkt_write_be16|function|static inline struct net_buf *net_pkt_write_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u16_t data)
 DECL|net_pkt_write_be32|function|static inline struct net_buf *net_pkt_write_be32(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u32_t data)
@@ -138,4 +152,5 @@ DECL|sent_or_eof|member|u8_t sent_or_eof: 1; /* For outgoing packet: is this sen
 DECL|slab|member|struct k_mem_slab *slab;
 DECL|token|member|void *token;
 DECL|total_pkt_len|member|u16_t total_pkt_len;
+DECL|vlan_tci|member|u16_t vlan_tci;
 DECL|work|member|struct k_work work;
