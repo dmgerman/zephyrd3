@@ -16,7 +16,6 @@ DECL|radio_ccm_tx_pkt_set|function|void *radio_ccm_tx_pkt_set(struct ccm *ccm, v
 DECL|radio_crc_configure|function|void radio_crc_configure(u32_t polynomial, u32_t iv)
 DECL|radio_crc_is_valid|function|u32_t radio_crc_is_valid(void)
 DECL|radio_disable|function|void radio_disable(void)
-DECL|radio_enable_on_timer_tick|function|static inline void radio_enable_on_timer_tick(u8_t trx)
 DECL|radio_filter_configure|function|void radio_filter_configure(u8_t bitmask_enable, u8_t bitmask_addr_type, u8_t *bdaddr)
 DECL|radio_filter_disable|function|void radio_filter_disable(void)
 DECL|radio_filter_has_match|function|u32_t radio_filter_has_match(void)
