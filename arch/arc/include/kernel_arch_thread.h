@@ -10,6 +10,8 @@ DECL|_kernel_arch_thread__h_|macro|_kernel_arch_thread__h_
 DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
 DECL|_thread_arch|struct|struct _thread_arch {
 DECL|intlock_key|member|u32_t intlock_key;
+DECL|priv_stack_size|member|u32_t priv_stack_size;
+DECL|priv_stack_start|member|u32_t priv_stack_start;
 DECL|relinquish_cause|member|int relinquish_cause;
 DECL|return_value|member|unsigned int return_value;
 DECL|sp|member|u32_t sp; /* r28 */

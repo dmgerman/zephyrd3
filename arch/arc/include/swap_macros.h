@@ -50,6 +50,10 @@ DECL|r13|variable|r13
 DECL|r13|variable|r13
 DECL|r13|variable|r13
 DECL|r13|variable|r13
+DECL|r13|variable|r13
+DECL|r13|variable|r13
+DECL|r13|variable|r13
+DECL|r13|variable|r13
 DECL|r14|variable|r14
 DECL|r14|variable|r14
 DECL|r15|variable|r15

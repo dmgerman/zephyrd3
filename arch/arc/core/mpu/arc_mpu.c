@@ -26,6 +26,7 @@ DECL|_region_init|function|static inline void _region_init(u32_t index, u32_t re
 DECL|arc_core_mpu_buffer_validate|function|int arc_core_mpu_buffer_validate(void *addr, size_t size, int write)
 DECL|arc_core_mpu_configure_mem_domain|function|void arc_core_mpu_configure_mem_domain(struct k_mem_domain *mem_domain)
 DECL|arc_core_mpu_configure_mem_partition|function|void arc_core_mpu_configure_mem_partition(u32_t part_index, struct k_mem_partition *part)
+DECL|arc_core_mpu_configure_user_context|function|void arc_core_mpu_configure_user_context(struct k_thread *thread)
 DECL|arc_core_mpu_configure|function|void arc_core_mpu_configure(u8_t type, u32_t base, u32_t size)
 DECL|arc_core_mpu_default|function|void arc_core_mpu_default(u32_t region_attr)
 DECL|arc_core_mpu_disable|function|void arc_core_mpu_disable(void)

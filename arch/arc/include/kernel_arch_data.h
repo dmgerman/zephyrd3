@@ -81,3 +81,4 @@ DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
 DECL|sec_stat|member|u32_t sec_stat;
 DECL|status32|member|u32_t status32;
 DECL|status32|member|u32_t status32;
+DECL|user_sp|member|u32_t user_sp;
