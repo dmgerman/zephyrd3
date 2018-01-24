@@ -18,6 +18,7 @@ DECL|cfg_descr|member|struct usb_cfg_descriptor cfg_descr;
 DECL|common_desc|variable|common_desc
 DECL|dev_common_descriptor|struct|struct dev_common_descriptor {
 DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
+DECL|hid_cfg|member|} __packed hid_cfg;
 DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
 DECL|iad|member|struct usb_association_descriptor iad;
 DECL|iad|member|struct usb_association_descriptor iad;
@@ -28,7 +29,9 @@ DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;
 DECL|if0_header|member|struct cdc_header_descriptor if0_header;
 DECL|if0_header|member|struct cdc_header_descriptor if0_header;
 DECL|if0_header|member|struct cdc_header_descriptor if0_header;
+DECL|if0_hid|member|struct usb_hid_descriptor if0_hid;
 DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
@@ -37,6 +40,7 @@ DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
@@ -65,9 +69,11 @@ DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
 DECL|usb_fix_unicode_string|function|void usb_fix_unicode_string(int idx_max, int asci_idx_max, u8_t *buf)
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
+DECL|usb_hid_config|struct|struct usb_hid_config {
 DECL|usb_mass_config|struct|struct usb_mass_config {
 DECL|usb_mfr_descriptor|struct|struct usb_mfr_descriptor {
 DECL|usb_product_descriptor|struct|struct usb_product_descriptor {
 DECL|usb_rndis_config|struct|struct usb_rndis_config {
+DECL|usb_set_hid_report_size|function|void usb_set_hid_report_size(u16_t report_desc_size)
 DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {
 DECL|usb_string_desription|struct|struct usb_string_desription {
