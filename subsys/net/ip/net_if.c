@@ -1,3 +1,4 @@
+DECL|CONFIG_NET_PKT_TIMESTAMP_STACK_SIZE|macro|CONFIG_NET_PKT_TIMESTAMP_STACK_SIZE
 DECL|DAD_TIMEOUT|macro|DAD_TIMEOUT
 DECL|MAX_RANDOM_DENOM|macro|MAX_RANDOM_DENOM
 DECL|MAX_RANDOM_NUMER|macro|MAX_RANDOM_NUMER
@@ -44,8 +45,10 @@ DECL|link_callbacks|variable|link_callbacks
 DECL|mcast_monitor_callbacks|variable|mcast_monitor_callbacks
 DECL|need_calc_checksum|function|static bool need_calc_checksum(struct net_if *iface, enum ethernet_hw_caps caps)
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
+DECL|net_if_add_tx_timestamp|function|void net_if_add_tx_timestamp(struct net_pkt *pkt)
 DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
+DECL|net_if_call_timestamp_cb|function|void net_if_call_timestamp_cb(struct net_pkt *pkt)
 DECL|net_if_carrier_down|function|void net_if_carrier_down(struct net_if *iface)
 DECL|net_if_config_ipv4_get|function|int net_if_config_ipv4_get(struct net_if *iface, struct net_if_ipv4 **ipv4)
 DECL|net_if_config_ipv4_put|function|int net_if_config_ipv4_put(struct net_if *iface)
@@ -109,14 +112,20 @@ DECL|net_if_need_calc_tx_checksum|function|bool net_if_need_calc_tx_checksum(str
 DECL|net_if_post_init|function|void net_if_post_init(void)
 DECL|net_if_queue_tx|function|void net_if_queue_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if_link_cb *link, net_if_link_callback_t cb)
+DECL|net_if_register_timestamp_cb|function|void net_if_register_timestamp_cb(struct net_if_timestamp_cb *handle, struct net_if *iface, net_if_timestamp_callback_t cb)
 DECL|net_if_router_init|function|static inline void net_if_router_init(struct net_if_router *router, struct net_if *iface, struct in6_addr *addr, u16_t lifetime)
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)
 DECL|net_if_start_rs|function|void net_if_start_rs(struct net_if *iface)
 DECL|net_if_tx|function|static bool net_if_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_unregister_link_cb|function|void net_if_unregister_link_cb(struct net_if_link_cb *link)
+DECL|net_if_unregister_timestamp_cb|function|void net_if_unregister_timestamp_cb(struct net_if_timestamp_cb *handle)
 DECL|net_if_up|function|int net_if_up(struct net_if *iface)
+DECL|net_tx_ts_thread|function|static void net_tx_ts_thread(void)
 DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
 DECL|process_tx_packet|function|static void process_tx_packet(struct k_work *work)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct k_work *work)
+DECL|timestamp_callbacks|variable|timestamp_callbacks
+DECL|tx_thread_ts|variable|tx_thread_ts
+DECL|tx_ts_queue|variable|tx_ts_queue

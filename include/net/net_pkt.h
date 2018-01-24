@@ -120,6 +120,8 @@ DECL|net_pkt_set_priority|macro|net_pkt_set_priority
 DECL|net_pkt_set_queued|function|static inline void net_pkt_set_queued(struct net_pkt *pkt, bool send)
 DECL|net_pkt_set_sent|function|static inline void net_pkt_set_sent(struct net_pkt *pkt, bool sent)
 DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_addr(struct net_pkt *pkt)
+DECL|net_pkt_set_timestamp|function|static inline void net_pkt_set_timestamp(struct net_pkt *pkt, struct net_ptp_time *timestamp)
+DECL|net_pkt_set_timestamp|function|static inline void net_pkt_set_timestamp(struct net_pkt *pkt, struct net_ptp_time *timestamp)
 DECL|net_pkt_set_token|function|static inline void net_pkt_set_token(struct net_pkt *pkt, void *token)
 DECL|net_pkt_set_vlan_dei|function|static inline void net_pkt_set_vlan_dei(struct net_pkt *pkt, bool dei)
 DECL|net_pkt_set_vlan_dei|function|static inline void net_pkt_set_vlan_dei(struct net_pkt *pkt, bool dei)
@@ -128,6 +130,8 @@ DECL|net_pkt_set_vlan_tag|function|static inline void net_pkt_set_vlan_tag(struc
 DECL|net_pkt_set_vlan_tag|function|static inline void net_pkt_set_vlan_tag(struct net_pkt *pkt, u16_t tag)
 DECL|net_pkt_set_vlan_tci|function|static inline void net_pkt_set_vlan_tci(struct net_pkt *pkt, u16_t tci)
 DECL|net_pkt_set_vlan_tci|function|static inline void net_pkt_set_vlan_tci(struct net_pkt *pkt, u16_t tci)
+DECL|net_pkt_timestamp|function|static inline struct net_ptp_time *net_pkt_timestamp(struct net_pkt *pkt)
+DECL|net_pkt_timestamp|function|static inline struct net_ptp_time *net_pkt_timestamp(struct net_pkt *pkt)
 DECL|net_pkt_token|function|static inline void *net_pkt_token(struct net_pkt *pkt)
 DECL|net_pkt_unref|macro|net_pkt_unref
 DECL|net_pkt_vlan_dei|function|static inline bool net_pkt_vlan_dei(struct net_pkt *pkt)
@@ -151,6 +155,7 @@ DECL|ref|member|u8_t ref;
 DECL|sent_list|member|sys_snode_t sent_list;
 DECL|sent_or_eof|member|u8_t sent_or_eof: 1; /* For outgoing packet: is this sent or not
 DECL|slab|member|struct k_mem_slab *slab;
+DECL|timestamp|member|struct net_ptp_time timestamp;
 DECL|token|member|void *token;
 DECL|total_pkt_len|member|u16_t total_pkt_len;
 DECL|vlan_tci|member|u16_t vlan_tci;

@@ -31,6 +31,7 @@ DECL|attempts|member|u8_t attempts;
 DECL|base_reachable_time|member|u32_t base_reachable_time;
 DECL|cb|member|net_if_link_callback_t cb;
 DECL|cb|member|net_if_mcast_callback_t cb;
+DECL|cb|member|net_if_timestamp_callback_t cb;
 DECL|config|member|struct net_if_config config;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_count|member|u8_t dad_count;
@@ -40,6 +41,7 @@ DECL|dhcpv4|member|struct net_if_dhcpv4 dhcpv4;
 DECL|gw|member|struct in_addr gw;
 DECL|hop_limit|member|u8_t hop_limit;
 DECL|if_dev|member|struct net_if_dev *if_dev;
+DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
@@ -115,10 +117,13 @@ DECL|net_if_router|struct|struct net_if_router {
 DECL|net_if_set_link_addr|function|static inline int net_if_set_link_addr(struct net_if *iface, u8_t *addr, u8_t len, enum net_link_type type)
 DECL|net_if_set_mtu|function|static inline void net_if_set_mtu(struct net_if *iface, u16_t mtu)
 DECL|net_if_start_dad|macro|net_if_start_dad
+DECL|net_if_timestamp_callback_t|typedef|typedef void (*net_if_timestamp_callback_t)(struct net_pkt *pkt);
+DECL|net_if_timestamp_cb|struct|struct net_if_timestamp_cb {
 DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, u8_t hop_limit)
 DECL|net_traffic_class|struct|struct net_traffic_class {
 DECL|netmask|member|struct in_addr netmask;
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|offload|member|struct net_offload *offload;
