@@ -5,6 +5,8 @@ DECL|net_calc_chksum_icmpv4|function|static inline u16_t net_calc_chksum_icmpv4(
 DECL|net_calc_chksum_icmpv6|function|static inline u16_t net_calc_chksum_icmpv6(struct net_pkt *pkt)
 DECL|net_calc_chksum_tcp|function|static inline u16_t net_calc_chksum_tcp(struct net_pkt *pkt)
 DECL|net_calc_chksum_udp|function|static inline u16_t net_calc_chksum_udp(struct net_pkt *pkt)
+DECL|net_gptp_init|macro|net_gptp_init
+DECL|net_gptp_recv|macro|net_gptp_recv
 DECL|net_hexdump_frags|function|static inline void net_hexdump_frags(const char *str, struct net_pkt *pkt, bool full)
 DECL|net_hexdump_frags|macro|net_hexdump_frags
 DECL|net_hexdump|function|static inline void net_hexdump(const char *str, const u8_t *packet, size_t length)

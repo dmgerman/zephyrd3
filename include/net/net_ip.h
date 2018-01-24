@@ -87,6 +87,7 @@ DECL|family|member|sa_family_t family;
 DECL|flags|member|u8_t flags;
 DECL|flow|member|u16_t flow;
 DECL|hop_limit|member|u8_t hop_limit;
+DECL|htonll|macro|htonll
 DECL|htonl|macro|htonl
 DECL|htons|macro|htons
 DECL|id|member|u32_t id;
@@ -151,6 +152,7 @@ DECL|net_udp_hdr|struct|struct net_udp_hdr {
 DECL|net_vlan2priority|function|static inline enum net_priority net_vlan2priority(u8_t priority)
 DECL|nexthdr|member|u8_t nexthdr;
 DECL|nexthdr|member|u8_t nexthdr;
+DECL|ntohll|macro|ntohll
 DECL|ntohl|macro|ntohl
 DECL|ntohs|macro|ntohs
 DECL|offset|member|u16_t offset;

@@ -19,6 +19,7 @@ DECL|NET_ETH_MINIMAL_FRAME_SIZE|macro|NET_ETH_MINIMAL_FRAME_SIZE
 DECL|NET_ETH_PTYPE_ARP|macro|NET_ETH_PTYPE_ARP
 DECL|NET_ETH_PTYPE_IPV6|macro|NET_ETH_PTYPE_IPV6
 DECL|NET_ETH_PTYPE_IP|macro|NET_ETH_PTYPE_IP
+DECL|NET_ETH_PTYPE_PTP|macro|NET_ETH_PTYPE_PTP
 DECL|NET_ETH_PTYPE_VLAN|macro|NET_ETH_PTYPE_VLAN
 DECL|NET_VLAN_MAX_COUNT|macro|NET_VLAN_MAX_COUNT
 DECL|NET_VLAN_MAX_COUNT|macro|NET_VLAN_MAX_COUNT
@@ -50,14 +51,17 @@ DECL|l|member|} l;
 DECL|mac_address|member|struct net_eth_addr mac_address;
 DECL|net_eth_addr|struct|struct net_eth_addr {
 DECL|net_eth_get_hw_capabilities|function|enum ethernet_hw_caps net_eth_get_hw_capabilities(struct net_if *iface)
+DECL|net_eth_get_ptp_port|function|static inline int net_eth_get_ptp_port(struct net_if *iface)
 DECL|net_eth_get_vlan_iface|function|struct net_if *net_eth_get_vlan_iface(struct net_if *iface, u16_t tag)
 DECL|net_eth_get_vlan_tag|function|static inline u16_t net_eth_get_vlan_tag(struct net_if *iface)
 DECL|net_eth_hdr|struct|struct net_eth_hdr {
 DECL|net_eth_is_addr_broadcast|function|static inline bool net_eth_is_addr_broadcast(struct net_eth_addr *addr)
+DECL|net_eth_is_addr_lldp_multicast|function|static inline bool net_eth_is_addr_lldp_multicast(struct net_eth_addr *addr)
 DECL|net_eth_is_addr_multicast|function|static inline bool net_eth_is_addr_multicast(struct net_eth_addr *addr)
 DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
+DECL|port|member|int port;
 DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
