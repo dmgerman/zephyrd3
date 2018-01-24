@@ -11,6 +11,7 @@ DECL|ETHERNET_L2_CTX_TYPE|macro|ETHERNET_L2_CTX_TYPE
 DECL|ETHERNET_LINK_1000BASE_T|enumerator|ETHERNET_LINK_1000BASE_T = BIT(6),
 DECL|ETHERNET_LINK_100BASE_T|enumerator|ETHERNET_LINK_100BASE_T = BIT(5),
 DECL|ETHERNET_LINK_10BASE_T|enumerator|ETHERNET_LINK_10BASE_T = BIT(4),
+DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|NET_ETH_HDR|macro|NET_ETH_HDR
@@ -37,6 +38,7 @@ DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
+DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *eth_dev);
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
