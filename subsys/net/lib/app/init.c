@@ -16,3 +16,4 @@ DECL|setup_ipv4|function|static void setup_ipv4(struct net_if *iface)
 DECL|setup_ipv4|macro|setup_ipv4
 DECL|setup_ipv6|function|static void setup_ipv6(struct net_if *iface, u32_t flags)
 DECL|setup_ipv6|macro|setup_ipv6
+DECL|syslog_net_init|function|static inline void syslog_net_init(void)
