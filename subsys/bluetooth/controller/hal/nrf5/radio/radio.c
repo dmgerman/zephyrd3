@@ -1,5 +1,7 @@
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
+DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
+DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
 DECL|isr_radio|function|void isr_radio(void)
 DECL|radio_aa_set|function|void radio_aa_set(u8_t *aa)
 DECL|radio_ar_configure|function|void radio_ar_configure(u32_t nirk, void *irk)
