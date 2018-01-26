@@ -14,8 +14,8 @@ DECL|flash_dev|variable|flash_dev
 DECL|flash_drivers_map|variable|flash_drivers_map
 DECL|flash_map_init|function|static int flash_map_init(struct device *dev)
 DECL|flash_map|variable|flash_map
-DECL|get_flah_dev_from_id|function|static struct device *get_flah_dev_from_id(u8_t id)
 DECL|get_flash_area_from_id|function|struct flash_area const *get_flash_area_from_id(int idx)
+DECL|get_flash_dev_from_id|function|static struct device *get_flash_dev_from_id(u8_t id)
 DECL|get_sectors_cb|function|static bool get_sectors_cb(const struct flash_pages_info *info, void *datav)
 DECL|id|member|u8_t id;
 DECL|is_in_flash_area_bounds|function|static inline bool is_in_flash_area_bounds(const struct flash_area *fa, off_t off, size_t len)
