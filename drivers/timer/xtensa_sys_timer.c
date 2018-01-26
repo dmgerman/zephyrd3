@@ -47,5 +47,6 @@ DECL|idle_original_ticks|variable|idle_original_ticks
 DECL|last_timer_value|variable|last_timer_value
 DECL|max_load_value|variable|max_load_value
 DECL|max_system_ticks|variable|max_system_ticks
+DECL|smp_timer_init|function|void smp_timer_init(void)
 DECL|tickless_idle_init|function|static ALWAYS_INLINE void tickless_idle_init(void)
 DECL|timer_mode|variable|timer_mode
