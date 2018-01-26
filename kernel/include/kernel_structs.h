@@ -9,6 +9,9 @@ DECL|_THREAD_PENDING|macro|_THREAD_PENDING
 DECL|_THREAD_POLLING|macro|_THREAD_POLLING
 DECL|_THREAD_PRESTART|macro|_THREAD_PRESTART
 DECL|_THREAD_SUSPENDED|macro|_THREAD_SUSPENDED
+DECL|_cpu_t|typedef|typedef struct _cpu _cpu_t;
+DECL|_cpu|struct|struct _cpu {
+DECL|_current|macro|_current
 DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
 DECL|_kernel_t|typedef|typedef struct _kernel _kernel_t;
@@ -23,10 +26,14 @@ DECL|_threads|macro|_threads
 DECL|_timeout_q|macro|_timeout_q
 DECL|arch|member|struct _kernel_arch arch;
 DECL|cache|member|struct k_thread *cache;
+DECL|cpus|member|struct _cpu cpus[CONFIG_MP_NUM_CPUS];
 DECL|current_fp|member|struct k_thread *current_fp;
+DECL|current|member|struct k_thread *current;
 DECL|current|member|struct k_thread *current;
 DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
 DECL|irq_stack|member|char *irq_stack;
+DECL|irq_stack|member|char *irq_stack;
+DECL|nested|member|u32_t nested;
 DECL|nested|member|u32_t nested;
 DECL|prio_bmap|member|u32_t prio_bmap[K_NUM_PRIO_BITMAPS];
 DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
