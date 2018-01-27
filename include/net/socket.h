@@ -10,7 +10,7 @@ DECL|ZSOCK_POLLOUT|macro|ZSOCK_POLLOUT
 DECL|__NET_SOCKET_H|macro|__NET_SOCKET_H
 DECL|_ai_addr|member|struct sockaddr _ai_addr;
 DECL|_ai_canonname|member|char _ai_canonname[DNS_MAX_NAME_SIZE + 1];
-DECL|accept|macro|accept
+DECL|accept|function|static inline int accept(int sock, struct sockaddr *addr, socklen_t *addrlen)
 DECL|addrinfo|macro|addrinfo
 DECL|ai_addrlen|member|socklen_t ai_addrlen;
 DECL|ai_addr|member|struct sockaddr *ai_addr;
@@ -20,23 +20,23 @@ DECL|ai_flags|member|int ai_flags;
 DECL|ai_next|member|struct zsock_addrinfo *ai_next;
 DECL|ai_protocol|member|int ai_protocol;
 DECL|ai_socktype|member|int ai_socktype;
-DECL|bind|macro|bind
-DECL|close|macro|close
-DECL|connect|macro|connect
+DECL|bind|function|static inline int bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
+DECL|close|function|static inline int close(int sock)
+DECL|connect|function|static inline int connect(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|events|member|short events;
 DECL|fcntl|macro|fcntl
 DECL|fd|member|int fd;
-DECL|getaddrinfo|macro|getaddrinfo
-DECL|inet_ntop|macro|inet_ntop
-DECL|inet_pton|macro|inet_pton
-DECL|listen|macro|listen
+DECL|getaddrinfo|function|static inline int getaddrinfo(const char *host, const char *service, const struct zsock_addrinfo *hints, struct zsock_addrinfo **res)
+DECL|inet_ntop|function|static inline char *inet_ntop(sa_family_t family, const void *src, char *dst, size_t size)
+DECL|inet_pton|function|static inline int inet_pton(sa_family_t family, const char *src, void *dst)
+DECL|listen|function|static inline int listen(int sock, int backlog)
 DECL|pollfd|macro|pollfd
-DECL|poll|macro|poll
-DECL|recvfrom|macro|recvfrom
-DECL|recv|macro|recv
+DECL|poll|function|static inline int poll(struct zsock_pollfd *fds, int nfds, int timeout)
+DECL|recvfrom|function|static inline ssize_t recvfrom(int sock, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
+DECL|recv|function|static inline ssize_t recv(int sock, void *buf, size_t max_len, int flags)
 DECL|revents|member|short revents;
-DECL|sendto|macro|sendto
-DECL|send|macro|send
-DECL|socket|macro|socket
+DECL|sendto|function|static inline ssize_t sendto(int sock, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
+DECL|send|function|static inline ssize_t send(int sock, const void *buf, size_t len, int flags)
+DECL|socket|function|static inline int socket(int family, int type, int proto)
 DECL|zsock_addrinfo|struct|struct zsock_addrinfo {
 DECL|zsock_pollfd|struct|struct zsock_pollfd {
