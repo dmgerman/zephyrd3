@@ -8,7 +8,6 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
 DECL|SEG_HDR|macro|SEG_HDR
 DECL|SEG_RETRANSMIT_ATTEMPTS|macro|SEG_RETRANSMIT_ATTEMPTS
-DECL|SEG_RETRANSMIT_TIMEOUT|macro|SEG_RETRANSMIT_TIMEOUT
 DECL|SEG|macro|SEG
 DECL|SEQ_AUTH|macro|SEQ_AUTH
 DECL|UNSEG_HDR|macro|UNSEG_HDR
@@ -79,4 +78,5 @@ DECL|trans_ack|function|static int trans_ack(struct bt_mesh_net_rx *rx, u8_t hdr
 DECL|trans_heartbeat|function|static int trans_heartbeat(struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|trans_seg|function|static int trans_seg(struct net_buf_simple *buf, struct bt_mesh_net_rx *net_rx, enum bt_mesh_friend_pdu_type *pdu_type, u64_t *seq_auth)
 DECL|trans_unseg|function|static int trans_unseg(struct net_buf_simple *buf, struct bt_mesh_net_rx *rx, u64_t *seq_auth)
+DECL|ttl|member|u8_t ttl;
 DECL|ttl|member|u8_t ttl;
