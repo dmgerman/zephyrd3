@@ -54,7 +54,7 @@ DECL|seg_retransmit|function|static void seg_retransmit(struct k_work *work)
 DECL|seg_rx_alloc|function|static struct seg_rx *seg_rx_alloc(struct bt_mesh_net_rx *net_rx, const u8_t *hdr, const u64_t *seq_auth, u8_t seg_n)
 DECL|seg_rx_find|function|static struct seg_rx *seg_rx_find(struct bt_mesh_net_rx *net_rx, const u64_t *seq_auth)
 DECL|seg_rx_is_valid|function|static bool seg_rx_is_valid(struct seg_rx *rx, struct bt_mesh_net_rx *net_rx, const u8_t *hdr, u8_t seg_n)
-DECL|seg_rx_reset|function|static void seg_rx_reset(struct seg_rx *rx)
+DECL|seg_rx_reset|function|static void seg_rx_reset(struct seg_rx *rx, bool full_reset)
 DECL|seg_rx|struct|static struct seg_rx {
 DECL|seg_rx|variable|seg_rx
 DECL|seg_send_start|function|static void seg_send_start(u16_t duration, int err, void *user_data)
