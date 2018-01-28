@@ -45,7 +45,7 @@ DECL|net_tcp_trace|macro|net_tcp_trace
 DECL|net_tcp_validate_seq|function|bool net_tcp_validate_seq(struct net_tcp *tcp, struct net_pkt *pkt)
 DECL|options|member|void *options;
 DECL|optlen|member|u8_t optlen;
-DECL|prepare_segment|function|static struct net_pkt *prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt)
+DECL|prepare_segment|function|static int prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt, struct net_pkt **out_pkt)
 DECL|restart_timer|function|static void restart_timer(struct net_tcp *tcp)
 DECL|retry_timeout|function|static inline u32_t retry_timeout(const struct net_tcp *tcp)
 DECL|retry_timer_cancel|function|static void retry_timer_cancel(struct net_tcp *tcp)
