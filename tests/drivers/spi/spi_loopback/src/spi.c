@@ -1,32 +1,11 @@
 DECL|BUF_SIZE|macro|BUF_SIZE
 DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
 DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|CS_CTRL_GPIO_DRV_NAME|macro|CS_CTRL_GPIO_DRV_NAME
-DECL|MIN_FREQ|macro|MIN_FREQ
-DECL|MIN_FREQ|macro|MIN_FREQ
-DECL|MIN_FREQ|macro|MIN_FREQ
-DECL|SPI_CS|macro|SPI_CS
-DECL|SPI_CS|macro|SPI_CS
-DECL|SPI_CS|macro|SPI_CS
-DECL|SPI_CS|macro|SPI_CS
-DECL|SPI_CS|macro|SPI_CS
+DECL|FAST_FREQ|macro|FAST_FREQ
+DECL|SLOW_FREQ|macro|SLOW_FREQ
 DECL|SPI_CS|macro|SPI_CS
 DECL|SPI_CS|macro|SPI_CS
 DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
-DECL|SPI_SLAVE|macro|SPI_SLAVE
-DECL|SPI_SLAVE|macro|SPI_SLAVE
-DECL|SPI_SLAVE|macro|SPI_SLAVE
-DECL|SPI_SLAVE|macro|SPI_SLAVE
-DECL|SPI_SLAVE|macro|SPI_SLAVE
 DECL|SPI_SLAVE|macro|SPI_SLAVE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|async_evt|variable|async_evt
@@ -41,9 +20,6 @@ DECL|result|variable|result
 DECL|spi_async_call_cb|function|static void spi_async_call_cb(struct k_poll_event *async_evt, struct k_sem *caller_sem, void *unused)
 DECL|spi_async_call|function|static int spi_async_call(struct spi_config *spi_conf)
 DECL|spi_complete_loop|function|static int spi_complete_loop(struct spi_config *spi_conf)
-DECL|spi_cs|variable|spi_cs
-DECL|spi_cs|variable|spi_cs
-DECL|spi_cs|variable|spi_cs
 DECL|spi_cs|variable|spi_cs
 DECL|spi_fast|variable|spi_fast
 DECL|spi_resource_lock_test|function|static int spi_resource_lock_test(struct spi_config *spi_conf_lock, struct spi_config *spi_conf_try)
