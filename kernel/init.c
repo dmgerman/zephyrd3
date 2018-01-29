@@ -13,6 +13,12 @@ DECL|__main_time_stamp|variable|__main_time_stamp
 DECL|__start_time_stamp|variable|__start_time_stamp
 DECL|_bss_zero|function|void _bss_zero(void)
 DECL|_data_copy|function|void _data_copy(void)
+DECL|_idle_thread1_s|variable|_idle_thread1_s
+DECL|_idle_thread1|variable|_idle_thread1
+DECL|_idle_thread2_s|variable|_idle_thread2_s
+DECL|_idle_thread2|variable|_idle_thread2
+DECL|_idle_thread3_s|variable|_idle_thread3_s
+DECL|_idle_thread3|variable|_idle_thread3
 DECL|_idle_thread_s|variable|_idle_thread_s
 DECL|_idle_thread|variable|_idle_thread
 DECL|_main_thread_s|variable|_main_thread_s
@@ -22,6 +28,7 @@ DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay
 DECL|build_timestamp|variable|build_timestamp
+DECL|init_idle_thread|function|static void init_idle_thread(struct k_thread *thr, k_thread_stack_t *stack)
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|k_call_stacks_analyze|function|void k_call_stacks_analyze(void)
