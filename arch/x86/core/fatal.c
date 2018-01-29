@@ -15,6 +15,7 @@ DECL|IV_OVERFLOW|variable|IV_OVERFLOW
 DECL|IV_SEGMENT_NOT_PRESENT|variable|IV_SEGMENT_NOT_PRESENT
 DECL|IV_STACK_FAULT|variable|IV_STACK_FAULT
 DECL|IV_X87_FPU_FP_ERROR|variable|IV_X87_FPU_FP_ERROR
+DECL|MAX_STACK_FRAMES|macro|MAX_STACK_FRAMES
 DECL|PK|macro|PK
 DECL|PRESENT|macro|PRESENT
 DECL|RSVD|macro|RSVD
@@ -35,10 +36,15 @@ DECL|_df_stack|variable|_df_stack
 DECL|_df_tss|variable|_df_tss
 DECL|_do_kernel_oops|function|FUNC_NORETURN void _do_kernel_oops(const struct oops_esf *esf)
 DECL|_main_tss|variable|_main_tss
+DECL|args|member|u32_t args;
 DECL|dump_entry_flags|function|static void dump_entry_flags(x86_page_entry_data_t flags)
 DECL|dump_mmu_flags|function|static void dump_mmu_flags(void *addr)
 DECL|generic_exc_handle|function|static FUNC_NORETURN void generic_exc_handle(unsigned int vector, const NANO_ESF *pEsf)
 DECL|nano_esf|member|NANO_ESF nano_esf;
+DECL|next|member|u32_t next;
 DECL|oops_esf|struct|struct oops_esf {
 DECL|page_fault_handler|function|FUNC_NORETURN void page_fault_handler(const NANO_ESF *pEsf)
 DECL|reason|member|unsigned int reason;
+DECL|ret_addr|member|u32_t ret_addr;
+DECL|stack_frame|struct|struct stack_frame {
+DECL|unwind_stack|function|static void unwind_stack(u32_t base_ptr)
