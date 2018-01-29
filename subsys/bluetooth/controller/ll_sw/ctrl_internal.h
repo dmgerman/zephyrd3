@@ -70,6 +70,7 @@ DECL|data_chan_sel|member|u8_t data_chan_sel:1;
 DECL|data_chan_use|member|u8_t data_chan_use;
 DECL|default_tx_octets|member|u16_t default_tx_octets;
 DECL|default_tx_time|member|u16_t default_tx_time;
+DECL|disabled|member|u8_t disabled:1;
 DECL|ediv|member|u8_t ediv[2];
 DECL|empty|member|u8_t empty:1;
 DECL|enc_rx|member|u8_t enc_rx:1;
