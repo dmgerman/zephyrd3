@@ -220,6 +220,7 @@ DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
+DECL|active|member|u8_t active;
 DECL|arch|member|struct _thread_arch arch;
 DECL|attr|member|k_mem_partition_attr_t attr;
 DECL|base|member|struct _thread_base base;
@@ -237,6 +238,7 @@ DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
 DECL|callee_saved|member|struct _callee_saved callee_saved;
 DECL|caller_saved|member|struct _caller_saved caller_saved;
 DECL|count|member|unsigned int count;
+DECL|cpu|member|u8_t cpu;
 DECL|custom_data|member|void *custom_data;
 DECL|data_q|member|sys_slist_t data_q;
 DECL|data|member|char data;
@@ -274,6 +276,7 @@ DECL|init_prio|member|int init_prio;
 DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|k_thread_stack_t *init_stack;
 DECL|init_thread|member|struct k_thread *init_thread;
+DECL|is_idle|member|u8_t is_idle;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
 DECL|k_cycle_get_32|macro|k_cycle_get_32

@@ -31,6 +31,7 @@ DECL|current_fp|member|struct k_thread *current_fp;
 DECL|current|member|struct k_thread *current;
 DECL|current|member|struct k_thread *current;
 DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
+DECL|id|member|int id;
 DECL|irq_stack|member|char *irq_stack;
 DECL|irq_stack|member|char *irq_stack;
 DECL|nested|member|u32_t nested;
