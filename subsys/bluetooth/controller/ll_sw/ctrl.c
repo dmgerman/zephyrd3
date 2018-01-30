@@ -231,6 +231,7 @@ DECL|packet_tx_enqueue|function|static void packet_tx_enqueue(u8_t max)
 DECL|packet_tx_first|member|u8_t volatile packet_tx_first;
 DECL|packet_tx_last|member|u8_t packet_tx_last;
 DECL|pause_enc_rsp_send|function|static u8_t pause_enc_rsp_send(struct connection *conn, u8_t req)
+DECL|pdu_len_cmp|function|static inline bool pdu_len_cmp(u8_t opcode, u8_t len)
 DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,struct radio_pdu_node_tx *node_tx)
 DECL|phy_p|member|u8_t phy_p:3;
 DECL|phy_rsp_send|function|static u8_t phy_rsp_send(struct connection *conn, struct pdu_data *pdu_data_rx)
