@@ -6,3 +6,4 @@ DECL|apa102_update_channels|function|static int apa102_update_channels(struct de
 DECL|apa102_update_rgb|function|static int apa102_update_rgb(struct device *dev, struct led_rgb *pixels, size_t count)
 DECL|apa102_update|function|static int apa102_update(struct device *dev, void *buf, size_t size)
 DECL|cfg|member|struct spi_config cfg;
+DECL|spi|member|struct device *spi;

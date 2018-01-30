@@ -10,8 +10,9 @@ DECL|WHT_OFFSET|macro|WHT_OFFSET
 DECL|WHT_OFFSET|macro|WHT_OFFSET
 DECL|ZERO_FRAME|macro|ZERO_FRAME
 DECL|config|member|struct spi_config config;
+DECL|spi|member|struct device *spi;
 DECL|ws2812_data|struct|struct ws2812_data {
-DECL|ws2812_reset_strip|function|static int ws2812_reset_strip(struct spi_config *config)
+DECL|ws2812_reset_strip|function|static int ws2812_reset_strip(struct ws2812_data *data)
 DECL|ws2812_serialize_color|function|static inline void ws2812_serialize_color(u8_t buf[8], u8_t color)
 DECL|ws2812_serialize_pixel|function|static size_t ws2812_serialize_pixel(u8_t px[32], struct led_rgb *pixel)
 DECL|ws2812_strip_api|variable|ws2812_strip_api

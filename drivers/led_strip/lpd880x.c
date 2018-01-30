@@ -8,3 +8,4 @@ DECL|lpd880x_strip_init|function|static int lpd880x_strip_init(struct device *de
 DECL|lpd880x_strip_update_channels|function|static int lpd880x_strip_update_channels(struct device *dev, u8_t *channels, size_t num_channels)
 DECL|lpd880x_strip_update_rgb|function|static int lpd880x_strip_update_rgb(struct device *dev, struct led_rgb *pixels, size_t num_pixels)
 DECL|lpd880x_update|function|static int lpd880x_update(struct device *dev, void *data, size_t size)
+DECL|spi|member|struct device *spi;
