@@ -145,13 +145,13 @@ DECL|isr_rx_conn_enc_unexpected|function|static inline bool isr_rx_conn_enc_unex
 DECL|isr_rx_conn_phy_tx_time_set|function|static inline void isr_rx_conn_phy_tx_time_set(void)
 DECL|isr_rx_conn_pkt_ack|function|static inline u8_t isr_rx_conn_pkt_ack(struct pdu_data *pdu_data_tx, struct radio_pdu_node_tx **node_tx)
 DECL|isr_rx_conn_pkt_ctrl_dle|function|static inline u8_t isr_rx_conn_pkt_ctrl_dle(struct pdu_data *pdu_data_rx, u8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl_rej_conn_upd|function|isr_rx_conn_pkt_ctrl_rej_conn_upd(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl_rej_dle|function|isr_rx_conn_pkt_ctrl_rej_dle(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl_rej_phy_upd|function|isr_rx_conn_pkt_ctrl_rej_phy_upd(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl_rej|function|isr_rx_conn_pkt_ctrl_rej(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
-DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx *radio_pdu_node_rx, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl_rej_conn_upd|function|isr_rx_conn_pkt_ctrl_rej_conn_upd(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl_rej_dle|function|isr_rx_conn_pkt_ctrl_rej_dle(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl_rej_phy_upd|function|isr_rx_conn_pkt_ctrl_rej_phy_upd(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl_rej|function|isr_rx_conn_pkt_ctrl_rej(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt_ctrl|function|isr_rx_conn_pkt_ctrl(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
 DECL|isr_rx_conn_pkt_release|function|isr_rx_conn_pkt_release(struct radio_pdu_node_tx *node_tx)
-DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *radio_pdu_node_rx,struct radio_pdu_node_tx **tx_release, u8_t *rx_enqueue)
+DECL|isr_rx_conn_pkt|function|isr_rx_conn_pkt(struct radio_pdu_node_rx *node_rx,struct radio_pdu_node_tx **tx_release, u8_t *rx_enqueue)
 DECL|isr_rx_conn|function|static inline void isr_rx_conn(u8_t crc_ok, u8_t trx_done, u8_t rssi_ready)
 DECL|isr_rx_scan_check|function|static inline bool isr_rx_scan_check(u8_t irkmatch_ok, u8_t devmatch_ok, u8_t rl_idx)
 DECL|isr_rx_scan_report|function|static u32_t isr_rx_scan_report(u8_t rssi_ready, u8_t rl_idx, bool dir_report)
@@ -235,7 +235,7 @@ DECL|pause_enc_rsp_send|function|static u8_t pause_enc_rsp_send(struct connectio
 DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,struct radio_pdu_node_tx *node_tx)
 DECL|phy_p|member|u8_t phy_p:3;
 DECL|phy_rsp_send|function|static u8_t phy_rsp_send(struct connection *conn, struct pdu_data *pdu_data_rx)
-DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *radio_pdu_node_rx,u8_t *rx_enqueue)
+DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *node_rx,u8_t *rx_enqueue)
 DECL|phy|member|u8_t phy:3;
 DECL|ping_resp_send|function|static u8_t ping_resp_send(struct connection *conn)
 DECL|pkt_release|member|struct pdu_data_q_tx *pkt_release;
