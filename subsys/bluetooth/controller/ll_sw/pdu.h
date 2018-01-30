@@ -90,6 +90,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|aa|member|u32_t aa;
 DECL|access_addr|member|u8_t access_addr[4];
 DECL|addr|member|u8_t addr[BDADDR_SIZE];
@@ -162,8 +163,8 @@ DECL|latency|member|u16_t latency;
 DECL|latency|member|u16_t latency;
 DECL|latency|member|u16_t latency;
 DECL|lcur|member|u8_t lcur;
-DECL|length_req|member|struct pdu_data_llctrl_length_req_rsp length_req;
-DECL|length_rsp|member|struct pdu_data_llctrl_length_req_rsp length_rsp;
+DECL|length_req|member|struct pdu_data_llctrl_length_req length_req;
+DECL|length_rsp|member|struct pdu_data_llctrl_length_rsp length_rsp;
 DECL|len|member|u8_t len:8;
 DECL|len|member|u8_t len:8;
 DECL|ll_id|member|u8_t ll_id:2;
@@ -174,8 +175,12 @@ DECL|lmax|member|u8_t lmax;
 DECL|lmin|member|u8_t lmin;
 DECL|m_to_s_phy|member|u8_t m_to_s_phy;
 DECL|max_rx_octets|member|u16_t max_rx_octets;
+DECL|max_rx_octets|member|u16_t max_rx_octets;
+DECL|max_rx_time|member|u16_t max_rx_time;
 DECL|max_rx_time|member|u16_t max_rx_time;
 DECL|max_tx_octets|member|u16_t max_tx_octets;
+DECL|max_tx_octets|member|u16_t max_tx_octets;
+DECL|max_tx_time|member|u16_t max_tx_time;
 DECL|max_tx_time|member|u16_t max_tx_time;
 DECL|max|member|u8_t max;
 DECL|md|member|u8_t md:1;
@@ -217,7 +222,8 @@ DECL|pdu_data_llctrl_enc_req|struct|struct pdu_data_llctrl_enc_req {
 DECL|pdu_data_llctrl_enc_rsp|struct|struct pdu_data_llctrl_enc_rsp {
 DECL|pdu_data_llctrl_feature_req|struct|struct pdu_data_llctrl_feature_req {
 DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
-DECL|pdu_data_llctrl_length_req_rsp|struct|struct pdu_data_llctrl_length_req_rsp {
+DECL|pdu_data_llctrl_length_req|struct|struct pdu_data_llctrl_length_req {
+DECL|pdu_data_llctrl_length_rsp|struct|struct pdu_data_llctrl_length_rsp {
 DECL|pdu_data_llctrl_min_used_chans_ind|struct|struct pdu_data_llctrl_min_used_chans_ind {
 DECL|pdu_data_llctrl_phy_req_rsp|struct|struct pdu_data_llctrl_phy_req_rsp {
 DECL|pdu_data_llctrl_phy_upd_ind|struct|struct pdu_data_llctrl_phy_upd_ind {
