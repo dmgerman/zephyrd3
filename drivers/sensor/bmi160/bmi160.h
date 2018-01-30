@@ -18,7 +18,6 @@ DECL|BMI160_CMD_PMU_GYR|macro|BMI160_CMD_PMU_GYR
 DECL|BMI160_CMD_PMU_MAG|macro|BMI160_CMD_PMU_MAG
 DECL|BMI160_CMD_SOFT_RESET|macro|BMI160_CMD_SOFT_RESET
 DECL|BMI160_CMD_START_FOC|macro|BMI160_CMD_START_FOC
-DECL|BMI160_DATA_OFS|macro|BMI160_DATA_OFS
 DECL|BMI160_DEFAULT_ODR_ACC|macro|BMI160_DEFAULT_ODR_ACC
 DECL|BMI160_DEFAULT_ODR_ACC|macro|BMI160_DEFAULT_ODR_ACC
 DECL|BMI160_DEFAULT_ODR_ACC|macro|BMI160_DEFAULT_ODR_ACC
@@ -291,8 +290,6 @@ DECL|res|member|u8_t res : 2;
 DECL|sample|member|union bmi160_sample sample;
 DECL|scale|member|struct bmi160_scale scale;
 DECL|sem|member|struct k_sem sem;
-DECL|spi_freq|member|u32_t spi_freq;
-DECL|spi_port|member|const char *spi_port;
-DECL|spi_slave|member|u8_t spi_slave;
+DECL|spi_cfg|member|struct spi_config spi_cfg;
 DECL|spi|member|struct device *spi;
 DECL|work|member|struct k_work work;
