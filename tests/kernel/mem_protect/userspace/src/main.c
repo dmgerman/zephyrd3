@@ -1,7 +1,10 @@
+DECL|BYTES_TO_READ_WRITE|macro|BYTES_TO_READ_WRITE
 DECL|INFO|macro|INFO
+DECL|PIPE_LEN|macro|PIPE_LEN
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|_SysFatalErrorHandler|function|void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
 DECL|access_after_revoke|function|static void access_after_revoke(void)
+DECL|bytes_written_read|variable|bytes_written_read
 DECL|disable_mmu_mpu|function|static void disable_mmu_mpu(void)
 DECL|give_uthread_end_sem|variable|give_uthread_end_sem
 DECL|is_usermode|function|static void is_usermode(void)
@@ -14,6 +17,7 @@ DECL|ptr|variable|ptr
 DECL|read_kernel_data|function|static void read_kernel_data(void)
 DECL|read_kernel_stack|function|static void read_kernel_stack(void)
 DECL|read_kernram|function|static void read_kernram(void)
+DECL|read_kobject_user_pipe|function|static void read_kobject_user_pipe(void)
 DECL|read_other_stack|function|static void read_other_stack(void)
 DECL|revoke_from_parent|function|static void revoke_from_parent(k_tid_t parentThread)
 DECL|revoke_noperms_object|function|static void revoke_noperms_object(void)
@@ -35,4 +39,5 @@ DECL|write_kernel_stack|function|static void write_kernel_stack(void)
 DECL|write_kernram|function|static void write_kernram(void)
 DECL|write_kernro|function|static void write_kernro(void)
 DECL|write_kerntext|function|static void write_kerntext(void)
+DECL|write_kobject_user_pipe|function|static void write_kobject_user_pipe(void)
 DECL|write_other_stack|function|static void write_other_stack(void)
