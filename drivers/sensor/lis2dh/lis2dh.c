@@ -12,6 +12,7 @@ DECL|lis2dh_freq_to_odr_val|function|static int lis2dh_freq_to_odr_val(u16_t fre
 DECL|lis2dh_init|function|int lis2dh_init(struct device *dev)
 DECL|lis2dh_odr_map|variable|lis2dh_odr_map
 DECL|lis2dh_range_to_reg_val|function|static int lis2dh_range_to_reg_val(u16_t range)
-DECL|lis2dh_reg_field_update|function|int lis2dh_reg_field_update(struct device *bus, u8_t reg_addr, u8_t pos, u8_t mask, u8_t val)
+DECL|lis2dh_reg_field_update|function|int lis2dh_reg_field_update(struct device *dev, u8_t reg_addr, u8_t pos, u8_t mask, u8_t val)
 DECL|lis2dh_sample_fetch|function|static int lis2dh_sample_fetch(struct device *dev, enum sensor_channel chan)
+DECL|lis2dh_spi_access|function|int lis2dh_spi_access(struct lis2dh_data *ctx, u8_t cmd, void *data, size_t length)
 DECL|word_le32|member|u32_t word_le32;

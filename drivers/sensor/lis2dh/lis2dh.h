@@ -98,7 +98,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__SENSOR_LIS2DH_H__|macro|__SENSOR_LIS2DH_H__
 DECL|__packed|member|} __packed;
-DECL|bus|member|struct device *bus;
 DECL|chan_drdy|member|enum sensor_channel chan_drdy;
 DECL|dev|member|struct device *dev;
 DECL|dummy|member|u8_t dummy;
@@ -108,16 +107,18 @@ DECL|gpio_sem|member|struct k_sem gpio_sem;
 DECL|gpio|member|struct device *gpio;
 DECL|handler_anymotion|member|sensor_trigger_handler_t handler_anymotion;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
-DECL|lis2dh_burst_read|function|static inline int lis2dh_burst_read(struct device *bus, u8_t start_addr, u8_t *buf, u8_t num_bytes)
+DECL|lis2dh_burst_read|function|static inline int lis2dh_burst_read(struct device *dev, u8_t start_addr, u8_t *buf, u8_t num_bytes)
 DECL|lis2dh_burst_write|function|static inline int lis2dh_burst_write(struct device *bus, u8_t start_addr, u8_t *buf, u8_t num_bytes)
-DECL|lis2dh_bus_configure|function|static inline int lis2dh_bus_configure(struct device *bus)
+DECL|lis2dh_bus_configure|function|static inline int lis2dh_bus_configure(struct device *dev)
 DECL|lis2dh_data|struct|struct lis2dh_data {
-DECL|lis2dh_reg_read_byte|function|static inline int lis2dh_reg_read_byte(struct device *bus, u8_t reg_addr, u8_t *value)
-DECL|lis2dh_reg_write_byte|function|static inline int lis2dh_reg_write_byte(struct device *bus, u8_t reg_addr,u8_t value)
+DECL|lis2dh_reg_read_byte|function|static inline int lis2dh_reg_read_byte(struct device *dev, u8_t reg_addr, u8_t *value)
+DECL|lis2dh_reg_write_byte|function|static inline int lis2dh_reg_write_byte(struct device *dev, u8_t reg_addr,u8_t value)
 DECL|lis2dh_sample|union|union lis2dh_sample {
 DECL|raw|member|u8_t raw[LIS2DH_BUF_SZ];
 DECL|sample|member|union lis2dh_sample sample;
 DECL|scale|member|u16_t scale;
+DECL|spi_cfg|member|struct spi_config spi_cfg;
+DECL|spi|member|struct device *spi;
 DECL|status|member|u8_t status;
 DECL|thread|member|struct k_thread thread;
 DECL|trig_flags|member|atomic_t trig_flags;
