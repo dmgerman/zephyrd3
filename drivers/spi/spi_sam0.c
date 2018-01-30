@@ -1,12 +1,9 @@
 DECL|SPI_SAM0_DEFINE_CONFIG|macro|SPI_SAM0_DEFINE_CONFIG
 DECL|SPI_SAM0_DEVICE_INIT|macro|SPI_SAM0_DEVICE_INIT
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|ctrla|member|u32_t ctrla;
 DECL|ctx|member|struct spi_context ctx;
 DECL|gclk_clkctrl_id|member|u16_t gclk_clkctrl_id;
-DECL|pin_miso|member|struct soc_gpio_pin pin_miso;
-DECL|pin_mosi|member|struct soc_gpio_pin pin_mosi;
-DECL|pin_sck|member|struct soc_gpio_pin pin_sck;
+DECL|pads|member|u32_t pads;
 DECL|pm_apbcmask|member|u32_t pm_apbcmask;
 DECL|regs|member|SercomSpi *regs;
 DECL|spi_sam0_configure|function|static int spi_sam0_configure(struct spi_config *config)

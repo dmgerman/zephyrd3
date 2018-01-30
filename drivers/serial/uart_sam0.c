@@ -10,11 +10,9 @@ DECL|UART_SAM0_IRQ_HANDLER|macro|UART_SAM0_IRQ_HANDLER
 DECL|UART_SAM0_IRQ_HANDLER|macro|UART_SAM0_IRQ_HANDLER
 DECL|baudrate|member|u32_t baudrate;
 DECL|cb|member|uart_irq_callback_t cb;
-DECL|ctrla|member|u32_t ctrla;
 DECL|gclk_clkctrl_id|member|u16_t gclk_clkctrl_id;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
-DECL|pin_rx|member|struct soc_gpio_pin pin_rx;
-DECL|pin_tx|member|struct soc_gpio_pin pin_tx;
+DECL|pads|member|u32_t pads;
 DECL|pm_apbcmask|member|u32_t pm_apbcmask;
 DECL|regs|member|SercomUsart *regs;
 DECL|uart_sam0_dev_cfg|struct|struct uart_sam0_dev_cfg {

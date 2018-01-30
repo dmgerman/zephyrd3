@@ -11,7 +11,3 @@ DECL|SOC_ATMEL_SAM0_MCK_FREQ_HZ|macro|SOC_ATMEL_SAM0_MCK_FREQ_HZ
 DECL|SOC_ATMEL_SAM0_OSC8M_FREQ_HZ|macro|SOC_ATMEL_SAM0_OSC8M_FREQ_HZ
 DECL|SOC_ATMEL_SAM0_XOSC32K_FREQ_HZ|macro|SOC_ATMEL_SAM0_XOSC32K_FREQ_HZ
 DECL|_ATMEL_SAMD_SOC_H_|macro|_ATMEL_SAMD_SOC_H_
-DECL|group|member|u8_t group;
-DECL|mux|member|u8_t mux;
-DECL|pin|member|u8_t pin;
-DECL|soc_gpio_pin|struct|struct soc_gpio_pin {
