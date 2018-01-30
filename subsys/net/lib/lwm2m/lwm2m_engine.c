@@ -141,7 +141,7 @@ DECL|pmax|member|s32_t pmax;
 DECL|pmin|member|s32_t pmin;
 DECL|print_attr|function|static int print_attr(struct net_pkt *pkt, char *buf, u16_t buflen, sys_slist_t *attr_list)
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
-DECL|select_reader|function|static u16_t select_reader(struct lwm2m_input_context *in, u16_t format)
+DECL|select_reader|function|static int select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static u16_t select_writer(struct lwm2m_output_context *out, u16_t accept)
 DECL|service_fn|member|void (*service_fn)(void);
 DECL|service_node_data|variable|service_node_data
