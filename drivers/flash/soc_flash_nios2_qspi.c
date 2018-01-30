@@ -1,0 +1,30 @@
+DECL|ALTERA_QSPI_CONTROLLER2_FLAG_STATUS_REG|macro|ALTERA_QSPI_CONTROLLER2_FLAG_STATUS_REG
+DECL|FLAG_STATUS_CONTROLLER_READY|macro|FLAG_STATUS_CONTROLLER_READY
+DECL|FLAG_STATUS_ERASE_ERROR|macro|FLAG_STATUS_ERASE_ERROR
+DECL|FLAG_STATUS_ERASE_SUSPENDED|macro|FLAG_STATUS_ERASE_SUSPENDED
+DECL|FLAG_STATUS_PROGRAM_ERROR|macro|FLAG_STATUS_PROGRAM_ERROR
+DECL|FLAG_STATUS_PROGRAM_SUSPENDED|macro|FLAG_STATUS_PROGRAM_SUSPENDED
+DECL|FLAG_STATUS_PROTECTION_ERROR|macro|FLAG_STATUS_PROTECTION_ERROR
+DECL|MEM_OP_ERASE_CMD|macro|MEM_OP_ERASE_CMD
+DECL|MEM_OP_LOCK_ALL_SECTORS|macro|MEM_OP_LOCK_ALL_SECTORS
+DECL|MEM_OP_SECTOR_OFFSET_BIT_POS|macro|MEM_OP_SECTOR_OFFSET_BIT_POS
+DECL|MEM_OP_UNLOCK_ALL_SECTORS|macro|MEM_OP_UNLOCK_ALL_SECTORS
+DECL|MEM_OP_WRITE_EN_CMD|macro|MEM_OP_WRITE_EN_CMD
+DECL|NIOS2_QSPI_BLANK_WORD|macro|NIOS2_QSPI_BLANK_WORD
+DECL|NIOS2_WRITE_BLOCK_SIZE|macro|NIOS2_WRITE_BLOCK_SIZE
+DECL|STATUS_PROTECTION_DIS_VAL|macro|STATUS_PROTECTION_DIS_VAL
+DECL|STATUS_PROTECTION_EN_VAL|macro|STATUS_PROTECTION_EN_VAL
+DECL|STATUS_PROTECTION_MASK|macro|STATUS_PROTECTION_MASK
+DECL|STATUS_PROTECTION_POS|macro|STATUS_PROTECTION_POS
+DECL|USEC_TO_MSEC|macro|USEC_TO_MSEC
+DECL|flash_cfg|variable|flash_cfg
+DECL|flash_nios2_qspi_api|variable|flash_nios2_qspi_api
+DECL|flash_nios2_qspi_config|struct|struct flash_nios2_qspi_config {
+DECL|flash_nios2_qspi_erase|function|static int flash_nios2_qspi_erase(struct device *dev, off_t offset, size_t len)
+DECL|flash_nios2_qspi_init|function|static int flash_nios2_qspi_init(struct device *dev)
+DECL|flash_nios2_qspi_read|function|static int flash_nios2_qspi_read(struct device *dev, off_t offset, void *data, size_t len)
+DECL|flash_nios2_qspi_write_block|function|static int flash_nios2_qspi_write_block(struct device *dev, int block_offset,int mem_offset, const void *data, size_t len)
+DECL|flash_nios2_qspi_write_protection|function|static int flash_nios2_qspi_write_protection(struct device *dev, bool enable)
+DECL|flash_nios2_qspi_write|function|static int flash_nios2_qspi_write(struct device *dev, off_t offset, const void *data, size_t len)
+DECL|qspi_dev|member|alt_qspi_controller2_dev qspi_dev;
+DECL|sem_lock|member|struct k_sem sem_lock;
