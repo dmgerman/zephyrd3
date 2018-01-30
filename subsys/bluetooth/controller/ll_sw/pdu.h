@@ -91,6 +91,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|aa|member|u32_t aa;
 DECL|access_addr|member|u8_t access_addr[4];
 DECL|addr|member|u8_t addr[BDADDR_SIZE];
@@ -225,7 +226,8 @@ DECL|pdu_data_llctrl_feature_rsp|struct|struct pdu_data_llctrl_feature_rsp {
 DECL|pdu_data_llctrl_length_req|struct|struct pdu_data_llctrl_length_req {
 DECL|pdu_data_llctrl_length_rsp|struct|struct pdu_data_llctrl_length_rsp {
 DECL|pdu_data_llctrl_min_used_chans_ind|struct|struct pdu_data_llctrl_min_used_chans_ind {
-DECL|pdu_data_llctrl_phy_req_rsp|struct|struct pdu_data_llctrl_phy_req_rsp {
+DECL|pdu_data_llctrl_phy_req|struct|struct pdu_data_llctrl_phy_req {
+DECL|pdu_data_llctrl_phy_rsp|struct|struct pdu_data_llctrl_phy_rsp {
 DECL|pdu_data_llctrl_phy_upd_ind|struct|struct pdu_data_llctrl_phy_upd_ind {
 DECL|pdu_data_llctrl_reject_ext_ind|struct|struct pdu_data_llctrl_reject_ext_ind {
 DECL|pdu_data_llctrl_reject_ind|struct|struct pdu_data_llctrl_reject_ind {
@@ -236,8 +238,8 @@ DECL|pdu_data_llctrl_version_ind|struct|struct pdu_data_llctrl_version_ind {
 DECL|pdu_data_llctrl|struct|struct pdu_data_llctrl {
 DECL|pdu_data_llid|enum|enum pdu_data_llid {
 DECL|pdu_data|struct|struct pdu_data {
-DECL|phy_req|member|struct pdu_data_llctrl_phy_req_rsp phy_req;
-DECL|phy_rsp|member|struct pdu_data_llctrl_phy_req_rsp phy_rsp;
+DECL|phy_req|member|struct pdu_data_llctrl_phy_req phy_req;
+DECL|phy_rsp|member|struct pdu_data_llctrl_phy_rsp phy_rsp;
 DECL|phy_upd_ind|member|struct pdu_data_llctrl_phy_upd_ind phy_upd_ind;
 DECL|phys|member|u8_t phys;
 DECL|phy|member|u16_t phy:3;
@@ -259,6 +261,7 @@ DECL|rfu|member|u8_t rfu:1;
 DECL|rfu|member|u8_t rfu:3;
 DECL|rssi|member|u8_t rssi;
 DECL|rx_addr|member|u8_t rx_addr:1;
+DECL|rx_phys|member|u8_t rx_phys;
 DECL|rx_phys|member|u8_t rx_phys;
 DECL|s_to_m_phy|member|u8_t s_to_m_phy;
 DECL|sca_chm|member|u8_t sca_chm[5];
@@ -282,6 +285,7 @@ DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
 DECL|timeout|member|u16_t timeout;
 DECL|tx_addr|member|u8_t tx_addr:1;
+DECL|tx_phys|member|u8_t tx_phys;
 DECL|tx_phys|member|u8_t tx_phys;
 DECL|tx_pwr|member|u8_t tx_pwr:1;
 DECL|type|member|u8_t type:4;
