@@ -122,6 +122,6 @@ DECL|acc_y|member|s32_t acc_y;
 DECL|acc_z|member|s32_t acc_z;
 DECL|adxl362_data|struct|struct adxl362_data {
 DECL|selected_range|member|u8_t selected_range;
-DECL|spi_slave|member|u8_t spi_slave;
+DECL|spi_cfg|member|struct spi_config spi_cfg;
 DECL|spi|member|struct device *spi;
 DECL|temp|member|s32_t temp;
