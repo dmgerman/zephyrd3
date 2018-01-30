@@ -58,6 +58,10 @@ DECL|PDU_DATA_LLID_DATA_START|enumerator|PDU_DATA_LLID_DATA_START = 0x02,
 DECL|PDU_DATA_LLID_RESV|enumerator|PDU_DATA_LLID_RESV = 0x00,
 DECL|PDU_EM_SIZE_MAX|macro|PDU_EM_SIZE_MAX
 DECL|_PDU_H_|macro|_PDU_H_
+DECL|__packed|member|} __packed;
+DECL|__packed|member|} __packed;
+DECL|__packed|member|} __packed;
+DECL|__packed|member|} __packed;
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -125,7 +129,6 @@ DECL|conn_update_ind|member|struct pdu_data_llctrl_conn_update_ind conn_update_i
 DECL|connect_ind|member|struct pdu_adv_connect_ind connect_ind;
 DECL|crc_init|member|u8_t crc_init[3];
 DECL|crc_init|member|u8_t crc_init[3];
-DECL|ctrldata|member|} __packed ctrldata;
 DECL|cur|member|u8_t cur;
 DECL|data|member|u8_t data[31];
 DECL|data|member|u8_t data[31];
@@ -178,8 +181,7 @@ DECL|len|member|u8_t len:8;
 DECL|len|member|u8_t len:8;
 DECL|ll_id|member|u8_t ll_id:2;
 DECL|llctrl|member|struct pdu_data_llctrl llctrl;
-DECL|lldata|member|u8_t lldata[1];
-DECL|lldata|member|} __packed lldata;
+DECL|lldata|member|u8_t lldata[0];
 DECL|lmax|member|u8_t lmax;
 DECL|lmin|member|u8_t lmin;
 DECL|m_to_s_phy|member|u8_t m_to_s_phy;
@@ -215,8 +217,7 @@ DECL|offs|member|u16_t offs:13;
 DECL|opcode|member|u8_t opcode;
 DECL|pause_enc_req|member|struct pdu_data_llctrl_pause_enc_req pause_enc_req;
 DECL|pause_enc_rsp|member|struct pdu_data_llctrl_pause_enc_rsp pause_enc_rsp;
-DECL|payload|member|} __packed payload;
-DECL|payload|member|} __packed payload;
+DECL|payload|member|u8_t payload[0];
 DECL|pdu_adv_adv_ind|struct|struct pdu_adv_adv_ind {
 DECL|pdu_adv_com_ext_adv|struct|struct pdu_adv_com_ext_adv {
 DECL|pdu_adv_connect_ind|struct|struct pdu_adv_connect_ind {
