@@ -79,3 +79,4 @@ DECL|radio_whiten_iv_set|function|void radio_whiten_iv_set(u32_t iv)
 DECL|sfp_radio_isr|variable|sfp_radio_isr
 DECL|sw_switch|function|static void sw_switch(u8_t dir, u8_t phy_curr, u8_t flags_curr, u8_t phy_next, u8_t flags_next)
 DECL|sw_tifs_toggle|variable|sw_tifs_toggle
+DECL|tmr_sample_val|variable|tmr_sample_val
