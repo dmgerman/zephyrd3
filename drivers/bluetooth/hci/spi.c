@@ -32,7 +32,7 @@ DECL|bt_spi_open|function|static int bt_spi_open(void)
 DECL|bt_spi_rx_thread|function|static void bt_spi_rx_thread(void)
 DECL|bt_spi_send|function|static int bt_spi_send(struct net_buf *buf)
 DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(const void *tx, u32_t tx_len, void *rx, u32_t rx_len)
-DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(const void *tx, u32_t tx_len, void *rx, u32_t rx_len)
+DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(void *tx, u32_t tx_len, void *rx, u32_t rx_len)
 DECL|cs_dev|variable|cs_dev
 DECL|drv|variable|drv
 DECL|gpio_cb|variable|gpio_cb
@@ -46,5 +46,7 @@ DECL|spi_dev|variable|spi_dev
 DECL|spi_dump_message|function|static inline void spi_dump_message(const u8_t *pre, u8_t *buf, u8_t size)
 DECL|spi_dump_message|function|void spi_dump_message(const u8_t *pre, u8_t *buf, u8_t size) {}
 DECL|spi_rx_buf|variable|spi_rx_buf
+DECL|spi_rx|variable|spi_rx
 DECL|spi_tx_buf|variable|spi_tx_buf
+DECL|spi_tx|variable|spi_tx
 DECL|txmsg|variable|txmsg
