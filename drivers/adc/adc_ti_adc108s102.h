@@ -14,12 +14,8 @@ DECL|cmd_buffer|member|u16_t cmd_buffer[ADC108S102_CMD_BUFFER_SIZE];
 DECL|sampling_buf_len|member|u8_t sampling_buf_len;
 DECL|sampling_buffer|member|u16_t sampling_buffer[ADC108S102_SAMPLING_BUFFER_SIZE];
 DECL|seq_table|member|struct adc_seq_table *seq_table;
-DECL|spi_config_flags|member|u32_t spi_config_flags;
-DECL|spi_freq|member|u32_t spi_freq;
-DECL|spi_port|member|const char *spi_port;
-DECL|spi_slave|member|u32_t spi_slave;
+DECL|spi_cfg|member|struct spi_config spi_cfg;
 DECL|spi|member|struct device *spi;
 DECL|stride|member|u8_t stride[2];
 DECL|ti_adc108s102_chan|struct|struct ti_adc108s102_chan {
-DECL|ti_adc108s102_config|struct|struct ti_adc108s102_config {
 DECL|ti_adc108s102_data|struct|struct ti_adc108s102_data {
