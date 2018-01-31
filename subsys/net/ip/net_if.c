@@ -65,6 +65,7 @@ DECL|net_if_ipv4_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv4_mad
 DECL|net_if_ipv4_maddr_rm|function|bool net_if_ipv4_maddr_rm(struct net_if *iface, const struct in_addr *addr)
 DECL|net_if_ipv4_router_add|function|struct net_if_router *net_if_ipv4_router_add(struct net_if *iface, struct in_addr *addr, bool is_default, u16_t lifetime)
 DECL|net_if_ipv4_router_lookup|function|struct net_if_router *net_if_ipv4_router_lookup(struct net_if *iface,struct in_addr *addr)
+DECL|net_if_ipv4_select_src_iface|function|struct net_if *net_if_ipv4_select_src_iface(struct in_addr *dst)
 DECL|net_if_ipv6_addr_add|function|struct net_if_addr *net_if_ipv6_addr_add(struct net_if *iface, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_ipv6_addr_lookup|function|struct net_if_addr *net_if_ipv6_addr_lookup(const struct in6_addr *addr, struct net_if **ret)
 DECL|net_if_ipv6_addr_onlink|function|bool net_if_ipv6_addr_onlink(struct net_if **iface, struct in6_addr *addr)
