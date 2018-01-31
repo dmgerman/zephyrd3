@@ -3,6 +3,7 @@ DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
 DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
 DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
 DECL|isr_radio|function|void isr_radio(void)
+DECL|last_pdu_end_us|variable|last_pdu_end_us
 DECL|radio_aa_set|function|void radio_aa_set(u8_t *aa)
 DECL|radio_ar_configure|function|void radio_ar_configure(u32_t nirk, void *irk)
 DECL|radio_ar_has_match|function|u32_t radio_ar_has_match(void)
@@ -31,6 +32,7 @@ DECL|radio_gpio_pa_lna_disable|function|void radio_gpio_pa_lna_disable(void)
 DECL|radio_gpio_pa_lna_enable|function|void radio_gpio_pa_lna_enable(u32_t trx_us)
 DECL|radio_gpio_pa_setup|function|void radio_gpio_pa_setup(void)
 DECL|radio_has_disabled|function|u32_t radio_has_disabled(void)
+DECL|radio_is_done|function|u32_t radio_is_done(void)
 DECL|radio_is_done|function|u32_t radio_is_done(void)
 DECL|radio_is_idle|function|u32_t radio_is_idle(void)
 DECL|radio_is_ready|function|u32_t radio_is_ready(void)
