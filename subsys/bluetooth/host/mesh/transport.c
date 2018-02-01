@@ -8,6 +8,7 @@ DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
 DECL|SEG_HDR|macro|SEG_HDR
 DECL|SEG_RETRANSMIT_ATTEMPTS|macro|SEG_RETRANSMIT_ATTEMPTS
+DECL|SEG_RETRANSMIT_TIMEOUT|macro|SEG_RETRANSMIT_TIMEOUT
 DECL|SEG|macro|SEG
 DECL|SEQ_AUTH|macro|SEQ_AUTH
 DECL|UNSEG_HDR|macro|UNSEG_HDR
@@ -45,6 +46,7 @@ DECL|retransmit|member|struct k_delayed_work retransmit; /* Retransmit timer */
 DECL|sdu_len_is_ok|function|static inline bool sdu_len_is_ok(bool ctl, u8_t seg_n)
 DECL|sdu_recv|function|static int sdu_recv(struct bt_mesh_net_rx *rx, u8_t hdr, u8_t aszmic, struct net_buf_simple *buf)
 DECL|seg_ack|function|static void seg_ack(struct k_work *work)
+DECL|seg_first_send_start|function|static void seg_first_send_start(u16_t duration, int err, void *user_data)
 DECL|seg_len|function|static inline u8_t seg_len(bool ctl)
 DECL|seg_n|member|u8_t seg_n:5,
 DECL|seg_n|member|u8_t seg_n:5, /* Last segment index */
