@@ -2,6 +2,8 @@ DECL|BOOT_FLAG_COPY_DONE|macro|BOOT_FLAG_COPY_DONE
 DECL|BOOT_FLAG_IMAGE_OK|macro|BOOT_FLAG_IMAGE_OK
 DECL|BOOT_FLAG_SET|macro|BOOT_FLAG_SET
 DECL|BOOT_FLAG_UNSET|macro|BOOT_FLAG_UNSET
+DECL|BOOT_HEADER_MAGIC_V1|macro|BOOT_HEADER_MAGIC_V1
+DECL|BOOT_HEADER_SIZE_V1|macro|BOOT_HEADER_SIZE_V1
 DECL|BOOT_MAGIC_BAD|macro|BOOT_MAGIC_BAD
 DECL|BOOT_MAGIC_GOOD|macro|BOOT_MAGIC_GOOD
 DECL|BOOT_MAGIC_SZ|macro|BOOT_MAGIC_SZ
@@ -15,6 +17,7 @@ DECL|FLASH_MIN_WRITE_SIZE|macro|FLASH_MIN_WRITE_SIZE
 DECL|FLASH_STATE_OFFSET|macro|FLASH_STATE_OFFSET
 DECL|IMAGE_OK_OFFS|macro|IMAGE_OK_OFFS
 DECL|MAGIC_OFFS|macro|MAGIC_OFFS
+DECL|__packed|variable|__packed
 DECL|boot_erase_img_bank|function|int boot_erase_img_bank(u32_t bank_offset)
 DECL|boot_flag_offs|function|static int boot_flag_offs(int flag, u32_t bank_offs, u32_t *offs)
 DECL|boot_flag_read|function|static int boot_flag_read(int flag, u32_t bank_offs)
@@ -26,6 +29,21 @@ DECL|boot_img_magic|variable|boot_img_magic
 DECL|boot_init|function|static int boot_init(struct device *dev)
 DECL|boot_is_img_confirmed|function|bool boot_is_img_confirmed(void)
 DECL|boot_magic_write|function|static int boot_magic_write(u32_t bank_offs)
+DECL|boot_read_bank_header|function|int boot_read_bank_header(u32_t bank_offset, struct mcuboot_img_header *header, size_t header_size)
+DECL|boot_read_v1_header|function|static int boot_read_v1_header(u32_t bank_offset, struct mcuboot_v1_raw_header *v1_raw)
 DECL|boot_request_upgrade|function|int boot_request_upgrade(int permanent)
 DECL|boot_write_img_confirmed|function|int boot_write_img_confirmed(void)
+DECL|build_num|member|u32_t build_num;
 DECL|flash_dev|variable|flash_dev
+DECL|header_magic|member|u32_t header_magic;
+DECL|header_size|member|u16_t header_size;
+DECL|image_flags|member|u32_t image_flags;
+DECL|image_load_address|member|u32_t image_load_address;
+DECL|image_size|member|u32_t image_size;
+DECL|major|member|u8_t major;
+DECL|mcuboot_v1_raw_header|struct|struct mcuboot_v1_raw_header {
+DECL|minor|member|u8_t minor;
+DECL|pad2|member|u32_t pad2;
+DECL|pad|member|u16_t pad;
+DECL|revision|member|u16_t revision;
+DECL|version|member|} version;
