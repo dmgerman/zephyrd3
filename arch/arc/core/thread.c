@@ -6,4 +6,5 @@ DECL|r0|member|u32_t r0;
 DECL|r1|member|u32_t r1;
 DECL|r2|member|u32_t r2;
 DECL|r3|member|u32_t r3;
+DECL|sec_stat|member|u32_t sec_stat;
 DECL|status32|member|u32_t status32;

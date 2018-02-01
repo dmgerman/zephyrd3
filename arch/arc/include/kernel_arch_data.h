@@ -22,6 +22,7 @@ DECL|fpu_status|member|u32_t fpu_status;
 DECL|fp|member|u32_t fp; /* r27 */
 DECL|jli_base|member|u32_t jli_base;
 DECL|jli_base|member|u32_t jli_base;
+DECL|kernel_sp|member|u32_t kernel_sp;
 DECL|ldi_base|member|u32_t ldi_base;
 DECL|ldi_base|member|u32_t ldi_base;
 DECL|lp_count|member|u32_t lp_count;
@@ -81,4 +82,5 @@ DECL|rirq_sp|member|char *rirq_sp; /* regular IRQ stack pointer base */
 DECL|sec_stat|member|u32_t sec_stat;
 DECL|status32|member|u32_t status32;
 DECL|status32|member|u32_t status32;
+DECL|user_sp|member|u32_t user_sp;
 DECL|user_sp|member|u32_t user_sp;
