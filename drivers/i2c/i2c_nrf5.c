@@ -24,6 +24,8 @@ DECL|i2c_nrf5_transfer|function|static int i2c_nrf5_transfer(struct device *dev,
 DECL|i2c_nrf5_write|function|static int i2c_nrf5_write(struct device *dev, struct i2c_msg *msg)
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
 DECL|rxd|member|u32_t rxd:1;
+DECL|scl_pin|member|u32_t scl_pin;
+DECL|sda_pin|member|u32_t sda_pin;
 DECL|sem|member|struct k_sem sem;
 DECL|stopped|member|u32_t stopped:1;
 DECL|txd|member|u32_t txd:1;
