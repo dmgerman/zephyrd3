@@ -128,3 +128,5 @@ DECL|HAL_TRIGGER_RATEOVERRIDE_PPI|macro|HAL_TRIGGER_RATEOVERRIDE_PPI
 DECL|SW_SWITCH_TIMER_EVTS_COMP|macro|SW_SWITCH_TIMER_EVTS_COMP
 DECL|SW_SWITCH_TIMER_TASK_GROUP|macro|SW_SWITCH_TIMER_TASK_GROUP
 DECL|hal_radio_enable_on_tick_ppi_config_and_enable|function|static inline void hal_radio_enable_on_tick_ppi_config_and_enable(u8_t trx)
+DECL|hal_radio_rxen_on_sw_switch|function|static inline void hal_radio_rxen_on_sw_switch(u8_t ppi)
+DECL|hal_radio_txen_on_sw_switch|function|static inline void hal_radio_txen_on_sw_switch(u8_t ppi)
