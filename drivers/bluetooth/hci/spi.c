@@ -22,16 +22,19 @@ DECL|SPI_WRITE|macro|SPI_WRITE
 DECL|STATUS_HEADER_READY|macro|STATUS_HEADER_READY
 DECL|STATUS_HEADER_TOREAD|macro|STATUS_HEADER_TOREAD
 DECL|_bt_spi_init|function|static int _bt_spi_init(struct device *unused)
-DECL|bt_spi_dev_configure|function|static inline int bt_spi_dev_configure(void)
-DECL|bt_spi_dev_configure|function|static inline int bt_spi_dev_configure(void)
+DECL|bt_spi_configure_cs|function|static int bt_spi_configure_cs(void)
+DECL|bt_spi_configure_cs|macro|bt_spi_configure_cs
 DECL|bt_spi_get_cmd|function|static inline u16_t bt_spi_get_cmd(u8_t *txmsg)
 DECL|bt_spi_get_evt|function|static inline u16_t bt_spi_get_evt(u8_t *rxmsg)
 DECL|bt_spi_handle_vendor_evt|function|static void bt_spi_handle_vendor_evt(u8_t *rxmsg)
-DECL|bt_spi_isr|function|static void bt_spi_isr(struct device *unused1, struct gpio_callback *unused2,unsigned int unused3)
+DECL|bt_spi_isr|function|static void bt_spi_isr(struct device *unused1, struct gpio_callback *unused2, unsigned int unused3)
+DECL|bt_spi_kick_cs|function|static void bt_spi_kick_cs(void)
+DECL|bt_spi_kick_cs|macro|bt_spi_kick_cs
 DECL|bt_spi_open|function|static int bt_spi_open(void)
+DECL|bt_spi_release_cs|function|static void bt_spi_release_cs(void)
+DECL|bt_spi_release_cs|macro|bt_spi_release_cs
 DECL|bt_spi_rx_thread|function|static void bt_spi_rx_thread(void)
 DECL|bt_spi_send|function|static int bt_spi_send(struct net_buf *buf)
-DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(const void *tx, u32_t tx_len, void *rx, u32_t rx_len)
 DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(void *tx, u32_t tx_len, void *rx, u32_t rx_len)
 DECL|cs_dev|variable|cs_dev
 DECL|drv|variable|drv
@@ -40,7 +43,6 @@ DECL|irq_dev|variable|irq_dev
 DECL|rst_dev|variable|rst_dev
 DECL|rx_thread_data|variable|rx_thread_data
 DECL|rxmsg|variable|rxmsg
-DECL|spi_conf|variable|spi_conf
 DECL|spi_conf|variable|spi_conf
 DECL|spi_dev|variable|spi_dev
 DECL|spi_dump_message|function|static inline void spi_dump_message(const u8_t *pre, u8_t *buf, u8_t size)
