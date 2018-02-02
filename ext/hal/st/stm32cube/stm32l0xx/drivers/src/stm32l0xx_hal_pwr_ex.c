@@ -1,0 +1,8 @@
+DECL|HAL_PWREx_DisableFastWakeUp|function|void HAL_PWREx_DisableFastWakeUp(void)
+DECL|HAL_PWREx_DisableLowPowerRunMode|function|HAL_StatusTypeDef HAL_PWREx_DisableLowPowerRunMode(void)
+DECL|HAL_PWREx_DisableUltraLowPower|function|void HAL_PWREx_DisableUltraLowPower(void)
+DECL|HAL_PWREx_EnableFastWakeUp|function|void HAL_PWREx_EnableFastWakeUp(void)
+DECL|HAL_PWREx_EnableLowPowerRunMode|function|void HAL_PWREx_EnableLowPowerRunMode(void)
+DECL|HAL_PWREx_EnableUltraLowPower|function|void HAL_PWREx_EnableUltraLowPower(void)
+DECL|HAL_PWREx_GetVoltageRange|function|uint32_t HAL_PWREx_GetVoltageRange(void)
+DECL|PWR_FLAG_SETTING_DELAY_US|macro|PWR_FLAG_SETTING_DELAY_US

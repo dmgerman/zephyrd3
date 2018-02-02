@@ -1,0 +1,1 @@
+DECL|HAL_CRYPEx_ComputationCpltCallback|function|__weak void HAL_CRYPEx_ComputationCpltCallback(CRYP_HandleTypeDef *hcryp)

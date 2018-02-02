@@ -1,0 +1,2 @@
+DECL|HAL_TIMEx_MasterConfigSynchronization|function|HAL_StatusTypeDef HAL_TIMEx_MasterConfigSynchronization(TIM_HandleTypeDef *htim, TIM_MasterConfigTypeDef * sMasterConfig)
+DECL|HAL_TIMEx_RemapConfig|function|HAL_StatusTypeDef HAL_TIMEx_RemapConfig(TIM_HandleTypeDef *htim, uint32_t Remap)

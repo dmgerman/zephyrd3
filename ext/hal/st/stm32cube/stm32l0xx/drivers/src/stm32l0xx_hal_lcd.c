@@ -1,0 +1,11 @@
+DECL|HAL_LCD_Clear|function|HAL_StatusTypeDef HAL_LCD_Clear(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_DeInit|function|HAL_StatusTypeDef HAL_LCD_DeInit(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_GetError|function|uint32_t HAL_LCD_GetError(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_GetState|function|HAL_LCD_StateTypeDef HAL_LCD_GetState(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_Init|function|HAL_StatusTypeDef HAL_LCD_Init(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_MspDeInit|function|__weak void HAL_LCD_MspDeInit(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_MspInit|function|__weak void HAL_LCD_MspInit(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_UpdateDisplayRequest|function|HAL_StatusTypeDef HAL_LCD_UpdateDisplayRequest(LCD_HandleTypeDef *hlcd)
+DECL|HAL_LCD_Write|function|HAL_StatusTypeDef HAL_LCD_Write(LCD_HandleTypeDef *hlcd, uint32_t RAMRegisterIndex, uint32_t RAMRegisterMask, uint32_t Data)
+DECL|LCD_TIMEOUT_VALUE|macro|LCD_TIMEOUT_VALUE
+DECL|LCD_WaitForSynchro|function|HAL_StatusTypeDef LCD_WaitForSynchro(LCD_HandleTypeDef *hlcd)

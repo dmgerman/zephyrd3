@@ -1,0 +1,8 @@
+DECL|FLASHRAM_SetErrorCode|function|static __RAM_FUNC FLASHRAM_SetErrorCode(void)
+DECL|FLASHRAM_WaitForLastOperation|function|static __RAM_FUNC FLASHRAM_WaitForLastOperation(uint32_t Timeout)
+DECL|HAL_FLASHEx_DisableRunPowerDown|function|__RAM_FUNC HAL_FLASHEx_DisableRunPowerDown(void)
+DECL|HAL_FLASHEx_EnableRunPowerDown|function|__RAM_FUNC HAL_FLASHEx_EnableRunPowerDown(void)
+DECL|HAL_FLASHEx_EraseParallelPage|function|__RAM_FUNC HAL_FLASHEx_EraseParallelPage(uint32_t Page_Address1, uint32_t Page_Address2)
+DECL|HAL_FLASHEx_GetError|function|__RAM_FUNC HAL_FLASHEx_GetError(uint32_t * Error)
+DECL|HAL_FLASHEx_HalfPageProgram|function|__RAM_FUNC HAL_FLASHEx_HalfPageProgram(uint32_t Address, uint32_t* pBuffer)
+DECL|HAL_FLASHEx_ProgramParallelHalfPage|function|__RAM_FUNC HAL_FLASHEx_ProgramParallelHalfPage(uint32_t Address1, uint32_t* pBuffer1, uint32_t Address2, uint32_t* pBuffer2)

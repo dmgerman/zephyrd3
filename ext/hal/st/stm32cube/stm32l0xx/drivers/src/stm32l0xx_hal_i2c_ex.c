@@ -1,0 +1,6 @@
+DECL|HAL_I2CEx_ConfigAnalogFilter|function|HAL_StatusTypeDef HAL_I2CEx_ConfigAnalogFilter(I2C_HandleTypeDef *hi2c, uint32_t AnalogFilter)
+DECL|HAL_I2CEx_ConfigDigitalFilter|function|HAL_StatusTypeDef HAL_I2CEx_ConfigDigitalFilter(I2C_HandleTypeDef *hi2c, uint32_t DigitalFilter)
+DECL|HAL_I2CEx_DisableFastModePlus|function|void HAL_I2CEx_DisableFastModePlus(uint32_t ConfigFastModePlus)
+DECL|HAL_I2CEx_DisableWakeUp|function|HAL_StatusTypeDef HAL_I2CEx_DisableWakeUp(I2C_HandleTypeDef *hi2c)
+DECL|HAL_I2CEx_EnableFastModePlus|function|void HAL_I2CEx_EnableFastModePlus(uint32_t ConfigFastModePlus)
+DECL|HAL_I2CEx_EnableWakeUp|function|HAL_StatusTypeDef HAL_I2CEx_EnableWakeUp(I2C_HandleTypeDef *hi2c)
