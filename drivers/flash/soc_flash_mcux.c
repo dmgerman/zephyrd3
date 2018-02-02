@@ -9,3 +9,4 @@ DECL|flash_mcux_read|function|static int flash_mcux_read(struct device *dev, off
 DECL|flash_mcux_write_protection|function|static int flash_mcux_write_protection(struct device *dev, bool enable)
 DECL|flash_mcux_write|function|static int flash_mcux_write(struct device *dev, off_t offset,const void *data, size_t len)
 DECL|flash_priv|struct|struct flash_priv {
+DECL|write_lock|member|struct k_sem write_lock;
