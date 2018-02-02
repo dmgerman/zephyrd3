@@ -1,3 +1,4 @@
+DECL|BARRIER|macro|BARRIER
 DECL|BYTES_TO_READ_WRITE|macro|BYTES_TO_READ_WRITE
 DECL|INFO|macro|INFO
 DECL|PIPE_LEN|macro|PIPE_LEN
@@ -6,6 +7,7 @@ DECL|_SysFatalErrorHandler|function|void _SysFatalErrorHandler(unsigned int reas
 DECL|access_after_revoke|function|static void access_after_revoke(void)
 DECL|bytes_written_read|variable|bytes_written_read
 DECL|disable_mmu_mpu|function|static void disable_mmu_mpu(void)
+DECL|expect_fault|variable|expect_fault
 DECL|give_uthread_end_sem|variable|give_uthread_end_sem
 DECL|is_usermode|function|static void is_usermode(void)
 DECL|kernel_data|variable|kernel_data
