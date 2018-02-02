@@ -1,0 +1,1 @@
+DECL|test_config_save_one_file|function|void test_config_save_one_file(void)

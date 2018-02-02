@@ -1,0 +1,1 @@
+DECL|test_config_getset_int64|function|void test_config_getset_int64(void)

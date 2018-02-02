@@ -1,0 +1,1 @@
+DECL|test_config_empty_file|function|void test_config_empty_file(void)

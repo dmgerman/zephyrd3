@@ -1,0 +1,1 @@
+DECL|test_config_small_file|function|void test_config_small_file(void)

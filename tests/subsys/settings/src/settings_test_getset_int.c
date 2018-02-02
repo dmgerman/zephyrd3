@@ -1,0 +1,1 @@
+DECL|test_config_getset_int|function|void test_config_getset_int(void)
