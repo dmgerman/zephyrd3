@@ -10,6 +10,8 @@ DECL|APSR_Z_Msk|macro|APSR_Z_Msk
 DECL|APSR_Z_Pos|macro|APSR_Z_Pos
 DECL|CALIB|member|__IM uint32_t CALIB; /*!< Offset: 0x00C (R/ ) SysTick Calibration Register */
 DECL|CCR|member|__IOM uint32_t CCR; /*!< Offset: 0x014 (R/W) Configuration Control Register */
+DECL|CMSIS_NVIC_VIRTUAL_HEADER_FILE|macro|CMSIS_NVIC_VIRTUAL_HEADER_FILE
+DECL|CMSIS_VECTAB_VIRTUAL_HEADER_FILE|macro|CMSIS_VECTAB_VIRTUAL_HEADER_FILE
 DECL|CONTROL_SPSEL_Msk|macro|CONTROL_SPSEL_Msk
 DECL|CONTROL_SPSEL_Pos|macro|CONTROL_SPSEL_Pos
 DECL|CONTROL_Type|typedef|} CONTROL_Type;
@@ -30,15 +32,19 @@ DECL|ISR|member|uint32_t ISR:9; /*!< bit: 0.. 8 Exception number */
 DECL|ISR|member|uint32_t ISR:9; /*!< bit: 0.. 8 Exception number */
 DECL|LOAD|member|__IOM uint32_t LOAD; /*!< Offset: 0x004 (R/W) SysTick Reload Value Register */
 DECL|NVIC_BASE|macro|NVIC_BASE
-DECL|NVIC_ClearPendingIRQ|function|__STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
-DECL|NVIC_DisableIRQ|function|__STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
-DECL|NVIC_EnableIRQ|function|__STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
-DECL|NVIC_GetPendingIRQ|function|__STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
-DECL|NVIC_GetPriority|function|__STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
-DECL|NVIC_SetPendingIRQ|function|__STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
-DECL|NVIC_SetPriority|function|__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
-DECL|NVIC_SystemReset|function|__STATIC_INLINE void NVIC_SystemReset(void)
+DECL|NVIC_ClearPendingIRQ|macro|NVIC_ClearPendingIRQ
+DECL|NVIC_DisableIRQ|macro|NVIC_DisableIRQ
+DECL|NVIC_EnableIRQ|macro|NVIC_EnableIRQ
+DECL|NVIC_GetEnableIRQ|macro|NVIC_GetEnableIRQ
+DECL|NVIC_GetPendingIRQ|macro|NVIC_GetPendingIRQ
+DECL|NVIC_GetPriority|macro|NVIC_GetPriority
+DECL|NVIC_GetVector|macro|NVIC_GetVector
+DECL|NVIC_SetPendingIRQ|macro|NVIC_SetPendingIRQ
+DECL|NVIC_SetPriority|macro|NVIC_SetPriority
+DECL|NVIC_SetVector|macro|NVIC_SetVector
+DECL|NVIC_SystemReset|macro|NVIC_SystemReset
 DECL|NVIC_Type|typedef|} NVIC_Type;
+DECL|NVIC_USER_IRQ_OFFSET|macro|NVIC_USER_IRQ_OFFSET
 DECL|NVIC|macro|NVIC
 DECL|N|member|uint32_t N:1; /*!< bit: 31 Negative condition code flag */
 DECL|N|member|uint32_t N:1; /*!< bit: 31 Negative condition code flag */
@@ -74,6 +80,7 @@ DECL|SCB_CPUID_REVISION_Msk|macro|SCB_CPUID_REVISION_Msk
 DECL|SCB_CPUID_REVISION_Pos|macro|SCB_CPUID_REVISION_Pos
 DECL|SCB_CPUID_VARIANT_Msk|macro|SCB_CPUID_VARIANT_Msk
 DECL|SCB_CPUID_VARIANT_Pos|macro|SCB_CPUID_VARIANT_Pos
+DECL|SCB_GetFPUType|function|__STATIC_INLINE uint32_t SCB_GetFPUType(void)
 DECL|SCB_ICSR_ISRPENDING_Msk|macro|SCB_ICSR_ISRPENDING_Msk
 DECL|SCB_ICSR_ISRPENDING_Pos|macro|SCB_ICSR_ISRPENDING_Pos
 DECL|SCB_ICSR_ISRPREEMPT_Msk|macro|SCB_ICSR_ISRPREEMPT_Msk
@@ -140,13 +147,6 @@ DECL|_FLD2VAL|macro|_FLD2VAL
 DECL|_IP_IDX|macro|_IP_IDX
 DECL|_SHP_IDX|macro|_SHP_IDX
 DECL|_VAL2FLD|macro|_VAL2FLD
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
 DECL|__CM0_CMSIS_VERSION_MAIN|macro|__CM0_CMSIS_VERSION_MAIN
 DECL|__CM0_CMSIS_VERSION_SUB|macro|__CM0_CMSIS_VERSION_SUB
 DECL|__CM0_CMSIS_VERSION|macro|__CM0_CMSIS_VERSION
@@ -156,28 +156,25 @@ DECL|__CORE_CM0_H_GENERIC|macro|__CORE_CM0_H_GENERIC
 DECL|__CORTEX_M|macro|__CORTEX_M
 DECL|__FPU_USED|macro|__FPU_USED
 DECL|__IM|macro|__IM
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
 DECL|__IOM|macro|__IOM
 DECL|__IO|macro|__IO
 DECL|__I|macro|__I
 DECL|__I|macro|__I
+DECL|__NVIC_ClearPendingIRQ|function|__STATIC_INLINE void __NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_DisableIRQ|function|__STATIC_INLINE void __NVIC_DisableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_EnableIRQ|function|__STATIC_INLINE void __NVIC_EnableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetEnableIRQ|function|__STATIC_INLINE uint32_t __NVIC_GetEnableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetPendingIRQ|function|__STATIC_INLINE uint32_t __NVIC_GetPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetPriority|function|__STATIC_INLINE uint32_t __NVIC_GetPriority(IRQn_Type IRQn)
+DECL|__NVIC_GetVector|function|__STATIC_INLINE uint32_t __NVIC_GetVector(IRQn_Type IRQn)
 DECL|__NVIC_PRIO_BITS|macro|__NVIC_PRIO_BITS
+DECL|__NVIC_SetPendingIRQ|function|__STATIC_INLINE void __NVIC_SetPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_SetPriority|function|__STATIC_INLINE void __NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+DECL|__NVIC_SetVector|function|__STATIC_INLINE void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
+DECL|__NVIC_SystemReset|function|__STATIC_INLINE void __NVIC_SystemReset(void)
 DECL|__OM|macro|__OM
 DECL|__O|macro|__O
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
 DECL|__Vendor_SysTickConfig|macro|__Vendor_SysTickConfig
-DECL|__packed|macro|__packed
 DECL|_reserved0|member|uint32_t _reserved0:15; /*!< bit: 9..23 Reserved */
 DECL|_reserved0|member|uint32_t _reserved0:1; /*!< bit: 0 Reserved */
 DECL|_reserved0|member|uint32_t _reserved0:23; /*!< bit: 9..31 Reserved */

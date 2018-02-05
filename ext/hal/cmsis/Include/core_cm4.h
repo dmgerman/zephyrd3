@@ -26,6 +26,8 @@ DECL|CID2|member|__IM uint32_t CID2; /*!< Offset: 0xFF8 (R/ ) ITM Component Iden
 DECL|CID3|member|__IM uint32_t CID3; /*!< Offset: 0xFFC (R/ ) ITM Component Identification Register #3 */
 DECL|CLAIMCLR|member|__IOM uint32_t CLAIMCLR; /*!< Offset: 0xFA4 (R/W) Claim tag clear */
 DECL|CLAIMSET|member|__IOM uint32_t CLAIMSET; /*!< Offset: 0xFA0 (R/W) Claim tag set */
+DECL|CMSIS_NVIC_VIRTUAL_HEADER_FILE|macro|CMSIS_NVIC_VIRTUAL_HEADER_FILE
+DECL|CMSIS_VECTAB_VIRTUAL_HEADER_FILE|macro|CMSIS_VECTAB_VIRTUAL_HEADER_FILE
 DECL|COMP0|member|__IOM uint32_t COMP0; /*!< Offset: 0x020 (R/W) Comparator Register 0 */
 DECL|COMP1|member|__IOM uint32_t COMP1; /*!< Offset: 0x030 (R/W) Comparator Register 1 */
 DECL|COMP2|member|__IOM uint32_t COMP2; /*!< Offset: 0x040 (R/W) Comparator Register 2 */
@@ -256,6 +258,8 @@ DECL|GE|member|uint32_t GE:4; /*!< bit: 16..19 Greater than or Equal flags */
 DECL|HFSR|member|__IOM uint32_t HFSR; /*!< Offset: 0x02C (R/W) HardFault Status Register */
 DECL|IABR|member|__IOM uint32_t IABR[8U]; /*!< Offset: 0x200 (R/W) Interrupt Active bit Register */
 DECL|ICER|member|__IOM uint32_t ICER[8U]; /*!< Offset: 0x080 (R/W) Interrupt Clear Enable Register */
+DECL|ICI_IT_1|member|uint32_t ICI_IT_1:6; /*!< bit: 10..15 ICI/IT part 1 */
+DECL|ICI_IT_2|member|uint32_t ICI_IT_2:2; /*!< bit: 25..26 ICI/IT part 2 */
 DECL|ICPR|member|__IOM uint32_t ICPR[8U]; /*!< Offset: 0x180 (R/W) Interrupt Clear Pending Register */
 DECL|ICSR|member|__IOM uint32_t ICSR; /*!< Offset: 0x004 (R/W) Interrupt Control and State Register */
 DECL|ICTR|member|__IM uint32_t ICTR; /*!< Offset: 0x004 (R/ ) Interrupt Controller Type Register */
@@ -312,7 +316,6 @@ DECL|ITM_TPR_PRIVMASK_Msk|macro|ITM_TPR_PRIVMASK_Msk
 DECL|ITM_TPR_PRIVMASK_Pos|macro|ITM_TPR_PRIVMASK_Pos
 DECL|ITM_Type|typedef|} ITM_Type;
 DECL|ITM|macro|ITM
-DECL|IT|member|uint32_t IT:2; /*!< bit: 25..26 saved IT state (read 0) */
 DECL|IWR|member|__OM uint32_t IWR; /*!< Offset: 0xEF8 ( /W) ITM Integration Write Register */
 DECL|LAR|member|__OM uint32_t LAR; /*!< Offset: 0xFB0 ( /W) ITM Lock Access Register */
 DECL|LOAD|member|__IOM uint32_t LOAD; /*!< Offset: 0x004 (R/W) SysTick Reload Value Register */
@@ -363,6 +366,7 @@ DECL|MPU_TYPE_DREGION_Msk|macro|MPU_TYPE_DREGION_Msk
 DECL|MPU_TYPE_DREGION_Pos|macro|MPU_TYPE_DREGION_Pos
 DECL|MPU_TYPE_IREGION_Msk|macro|MPU_TYPE_IREGION_Msk
 DECL|MPU_TYPE_IREGION_Pos|macro|MPU_TYPE_IREGION_Pos
+DECL|MPU_TYPE_RALIASES|macro|MPU_TYPE_RALIASES
 DECL|MPU_TYPE_SEPARATE_Msk|macro|MPU_TYPE_SEPARATE_Msk
 DECL|MPU_TYPE_SEPARATE_Pos|macro|MPU_TYPE_SEPARATE_Pos
 DECL|MPU_Type|typedef|} MPU_Type;
@@ -370,22 +374,26 @@ DECL|MPU|macro|MPU
 DECL|MVFR0|member|__IM uint32_t MVFR0; /*!< Offset: 0x010 (R/ ) Media and FP Feature Register 0 */
 DECL|MVFR1|member|__IM uint32_t MVFR1; /*!< Offset: 0x014 (R/ ) Media and FP Feature Register 1 */
 DECL|NVIC_BASE|macro|NVIC_BASE
-DECL|NVIC_ClearPendingIRQ|function|__STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+DECL|NVIC_ClearPendingIRQ|macro|NVIC_ClearPendingIRQ
 DECL|NVIC_DecodePriority|function|__STATIC_INLINE void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t* const pPreemptPriority, uint32_t* const pSubPriority)
-DECL|NVIC_DisableIRQ|function|__STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
-DECL|NVIC_EnableIRQ|function|__STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+DECL|NVIC_DisableIRQ|macro|NVIC_DisableIRQ
+DECL|NVIC_EnableIRQ|macro|NVIC_EnableIRQ
 DECL|NVIC_EncodePriority|function|__STATIC_INLINE uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)
-DECL|NVIC_GetActive|function|__STATIC_INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
-DECL|NVIC_GetPendingIRQ|function|__STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
-DECL|NVIC_GetPriorityGrouping|function|__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
-DECL|NVIC_GetPriority|function|__STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+DECL|NVIC_GetActive|macro|NVIC_GetActive
+DECL|NVIC_GetEnableIRQ|macro|NVIC_GetEnableIRQ
+DECL|NVIC_GetPendingIRQ|macro|NVIC_GetPendingIRQ
+DECL|NVIC_GetPriorityGrouping|macro|NVIC_GetPriorityGrouping
+DECL|NVIC_GetPriority|macro|NVIC_GetPriority
+DECL|NVIC_GetVector|macro|NVIC_GetVector
 DECL|NVIC_STIR_INTID_Msk|macro|NVIC_STIR_INTID_Msk
 DECL|NVIC_STIR_INTID_Pos|macro|NVIC_STIR_INTID_Pos
-DECL|NVIC_SetPendingIRQ|function|__STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
-DECL|NVIC_SetPriorityGrouping|function|__STATIC_INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
-DECL|NVIC_SetPriority|function|__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
-DECL|NVIC_SystemReset|function|__STATIC_INLINE void NVIC_SystemReset(void)
+DECL|NVIC_SetPendingIRQ|macro|NVIC_SetPendingIRQ
+DECL|NVIC_SetPriorityGrouping|macro|NVIC_SetPriorityGrouping
+DECL|NVIC_SetPriority|macro|NVIC_SetPriority
+DECL|NVIC_SetVector|macro|NVIC_SetVector
+DECL|NVIC_SystemReset|macro|NVIC_SystemReset
 DECL|NVIC_Type|typedef|} NVIC_Type;
+DECL|NVIC_USER_IRQ_OFFSET|macro|NVIC_USER_IRQ_OFFSET
 DECL|NVIC|macro|NVIC
 DECL|N|member|uint32_t N:1; /*!< bit: 31 Negative condition code flag */
 DECL|N|member|uint32_t N:1; /*!< bit: 31 Negative condition code flag */
@@ -463,10 +471,48 @@ DECL|SCB_CCR_UNALIGN_TRP_Msk|macro|SCB_CCR_UNALIGN_TRP_Msk
 DECL|SCB_CCR_UNALIGN_TRP_Pos|macro|SCB_CCR_UNALIGN_TRP_Pos
 DECL|SCB_CCR_USERSETMPEND_Msk|macro|SCB_CCR_USERSETMPEND_Msk
 DECL|SCB_CCR_USERSETMPEND_Pos|macro|SCB_CCR_USERSETMPEND_Pos
+DECL|SCB_CFSR_BFARVALID_Msk|macro|SCB_CFSR_BFARVALID_Msk
+DECL|SCB_CFSR_BFARVALID_Pos|macro|SCB_CFSR_BFARVALID_Pos
 DECL|SCB_CFSR_BUSFAULTSR_Msk|macro|SCB_CFSR_BUSFAULTSR_Msk
 DECL|SCB_CFSR_BUSFAULTSR_Pos|macro|SCB_CFSR_BUSFAULTSR_Pos
+DECL|SCB_CFSR_DACCVIOL_Msk|macro|SCB_CFSR_DACCVIOL_Msk
+DECL|SCB_CFSR_DACCVIOL_Pos|macro|SCB_CFSR_DACCVIOL_Pos
+DECL|SCB_CFSR_DIVBYZERO_Msk|macro|SCB_CFSR_DIVBYZERO_Msk
+DECL|SCB_CFSR_DIVBYZERO_Pos|macro|SCB_CFSR_DIVBYZERO_Pos
+DECL|SCB_CFSR_IACCVIOL_Msk|macro|SCB_CFSR_IACCVIOL_Msk
+DECL|SCB_CFSR_IACCVIOL_Pos|macro|SCB_CFSR_IACCVIOL_Pos
+DECL|SCB_CFSR_IBUSERR_Msk|macro|SCB_CFSR_IBUSERR_Msk
+DECL|SCB_CFSR_IBUSERR_Pos|macro|SCB_CFSR_IBUSERR_Pos
+DECL|SCB_CFSR_IMPRECISERR_Msk|macro|SCB_CFSR_IMPRECISERR_Msk
+DECL|SCB_CFSR_IMPRECISERR_Pos|macro|SCB_CFSR_IMPRECISERR_Pos
+DECL|SCB_CFSR_INVPC_Msk|macro|SCB_CFSR_INVPC_Msk
+DECL|SCB_CFSR_INVPC_Pos|macro|SCB_CFSR_INVPC_Pos
+DECL|SCB_CFSR_INVSTATE_Msk|macro|SCB_CFSR_INVSTATE_Msk
+DECL|SCB_CFSR_INVSTATE_Pos|macro|SCB_CFSR_INVSTATE_Pos
+DECL|SCB_CFSR_LSPERR_Msk|macro|SCB_CFSR_LSPERR_Msk
+DECL|SCB_CFSR_LSPERR_Pos|macro|SCB_CFSR_LSPERR_Pos
 DECL|SCB_CFSR_MEMFAULTSR_Msk|macro|SCB_CFSR_MEMFAULTSR_Msk
 DECL|SCB_CFSR_MEMFAULTSR_Pos|macro|SCB_CFSR_MEMFAULTSR_Pos
+DECL|SCB_CFSR_MLSPERR_Msk|macro|SCB_CFSR_MLSPERR_Msk
+DECL|SCB_CFSR_MLSPERR_Pos|macro|SCB_CFSR_MLSPERR_Pos
+DECL|SCB_CFSR_MMARVALID_Msk|macro|SCB_CFSR_MMARVALID_Msk
+DECL|SCB_CFSR_MMARVALID_Pos|macro|SCB_CFSR_MMARVALID_Pos
+DECL|SCB_CFSR_MSTKERR_Msk|macro|SCB_CFSR_MSTKERR_Msk
+DECL|SCB_CFSR_MSTKERR_Pos|macro|SCB_CFSR_MSTKERR_Pos
+DECL|SCB_CFSR_MUNSTKERR_Msk|macro|SCB_CFSR_MUNSTKERR_Msk
+DECL|SCB_CFSR_MUNSTKERR_Pos|macro|SCB_CFSR_MUNSTKERR_Pos
+DECL|SCB_CFSR_NOCP_Msk|macro|SCB_CFSR_NOCP_Msk
+DECL|SCB_CFSR_NOCP_Pos|macro|SCB_CFSR_NOCP_Pos
+DECL|SCB_CFSR_PRECISERR_Msk|macro|SCB_CFSR_PRECISERR_Msk
+DECL|SCB_CFSR_PRECISERR_Pos|macro|SCB_CFSR_PRECISERR_Pos
+DECL|SCB_CFSR_STKERR_Msk|macro|SCB_CFSR_STKERR_Msk
+DECL|SCB_CFSR_STKERR_Pos|macro|SCB_CFSR_STKERR_Pos
+DECL|SCB_CFSR_UNALIGNED_Msk|macro|SCB_CFSR_UNALIGNED_Msk
+DECL|SCB_CFSR_UNALIGNED_Pos|macro|SCB_CFSR_UNALIGNED_Pos
+DECL|SCB_CFSR_UNDEFINSTR_Msk|macro|SCB_CFSR_UNDEFINSTR_Msk
+DECL|SCB_CFSR_UNDEFINSTR_Pos|macro|SCB_CFSR_UNDEFINSTR_Pos
+DECL|SCB_CFSR_UNSTKERR_Msk|macro|SCB_CFSR_UNSTKERR_Msk
+DECL|SCB_CFSR_UNSTKERR_Pos|macro|SCB_CFSR_UNSTKERR_Pos
 DECL|SCB_CFSR_USGFAULTSR_Msk|macro|SCB_CFSR_USGFAULTSR_Msk
 DECL|SCB_CFSR_USGFAULTSR_Pos|macro|SCB_CFSR_USGFAULTSR_Pos
 DECL|SCB_CPUID_ARCHITECTURE_Msk|macro|SCB_CPUID_ARCHITECTURE_Msk
@@ -489,6 +535,7 @@ DECL|SCB_DFSR_HALTED_Msk|macro|SCB_DFSR_HALTED_Msk
 DECL|SCB_DFSR_HALTED_Pos|macro|SCB_DFSR_HALTED_Pos
 DECL|SCB_DFSR_VCATCH_Msk|macro|SCB_DFSR_VCATCH_Msk
 DECL|SCB_DFSR_VCATCH_Pos|macro|SCB_DFSR_VCATCH_Pos
+DECL|SCB_GetFPUType|function|__STATIC_INLINE uint32_t SCB_GetFPUType(void)
 DECL|SCB_HFSR_DEBUGEVT_Msk|macro|SCB_HFSR_DEBUGEVT_Msk
 DECL|SCB_HFSR_DEBUGEVT_Pos|macro|SCB_HFSR_DEBUGEVT_Pos
 DECL|SCB_HFSR_FORCED_Msk|macro|SCB_HFSR_FORCED_Msk
@@ -674,7 +721,7 @@ DECL|TPI|macro|TPI
 DECL|TPR|member|__IOM uint32_t TPR; /*!< Offset: 0xE40 (R/W) ITM Trace Privilege Register */
 DECL|TRIGGER|member|__IM uint32_t TRIGGER; /*!< Offset: 0xEE8 (R/ ) TRIGGER */
 DECL|TYPE|member|__IM uint32_t TYPE; /*!< Offset: 0x000 (R/ ) MPU Type Register */
-DECL|T|member|uint32_t T:1; /*!< bit: 24 Thumb bit (read 0) */
+DECL|T|member|uint32_t T:1; /*!< bit: 24 Thumb bit */
 DECL|VAL|member|__IOM uint32_t VAL; /*!< Offset: 0x008 (R/W) SysTick Current Value Register */
 DECL|VTOR|member|__IOM uint32_t VTOR; /*!< Offset: 0x008 (R/W) Vector Table Offset Register */
 DECL|V|member|uint32_t V:1; /*!< bit: 28 Overflow condition code flag */
@@ -683,13 +730,6 @@ DECL|Z|member|uint32_t Z:1; /*!< bit: 30 Zero condition code flag */
 DECL|Z|member|uint32_t Z:1; /*!< bit: 30 Zero condition code flag */
 DECL|_FLD2VAL|macro|_FLD2VAL
 DECL|_VAL2FLD|macro|_VAL2FLD
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
-DECL|__ASM|macro|__ASM
 DECL|__CM4_CMSIS_VERSION_MAIN|macro|__CM4_CMSIS_VERSION_MAIN
 DECL|__CM4_CMSIS_VERSION_SUB|macro|__CM4_CMSIS_VERSION_SUB
 DECL|__CM4_CMSIS_VERSION|macro|__CM4_CMSIS_VERSION
@@ -720,33 +760,33 @@ DECL|__FPU_USED|macro|__FPU_USED
 DECL|__FPU_USED|macro|__FPU_USED
 DECL|__FPU_USED|macro|__FPU_USED
 DECL|__IM|macro|__IM
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
-DECL|__INLINE|macro|__INLINE
 DECL|__IOM|macro|__IOM
 DECL|__IO|macro|__IO
 DECL|__I|macro|__I
 DECL|__I|macro|__I
 DECL|__MPU_PRESENT|macro|__MPU_PRESENT
+DECL|__NVIC_ClearPendingIRQ|function|__STATIC_INLINE void __NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_DisableIRQ|function|__STATIC_INLINE void __NVIC_DisableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_EnableIRQ|function|__STATIC_INLINE void __NVIC_EnableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetActive|function|__STATIC_INLINE uint32_t __NVIC_GetActive(IRQn_Type IRQn)
+DECL|__NVIC_GetEnableIRQ|function|__STATIC_INLINE uint32_t __NVIC_GetEnableIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetPendingIRQ|function|__STATIC_INLINE uint32_t __NVIC_GetPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_GetPriorityGrouping|function|__STATIC_INLINE uint32_t __NVIC_GetPriorityGrouping(void)
+DECL|__NVIC_GetPriority|function|__STATIC_INLINE uint32_t __NVIC_GetPriority(IRQn_Type IRQn)
+DECL|__NVIC_GetVector|function|__STATIC_INLINE uint32_t __NVIC_GetVector(IRQn_Type IRQn)
 DECL|__NVIC_PRIO_BITS|macro|__NVIC_PRIO_BITS
+DECL|__NVIC_SetPendingIRQ|function|__STATIC_INLINE void __NVIC_SetPendingIRQ(IRQn_Type IRQn)
+DECL|__NVIC_SetPriorityGrouping|function|__STATIC_INLINE void __NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+DECL|__NVIC_SetPriority|function|__STATIC_INLINE void __NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+DECL|__NVIC_SetVector|function|__STATIC_INLINE void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
+DECL|__NVIC_SystemReset|function|__STATIC_INLINE void __NVIC_SystemReset(void)
 DECL|__OM|macro|__OM
 DECL|__O|macro|__O
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
-DECL|__STATIC_INLINE|macro|__STATIC_INLINE
 DECL|__Vendor_SysTickConfig|macro|__Vendor_SysTickConfig
-DECL|__packed|macro|__packed
 DECL|_reserved0|member|uint32_t _reserved0:16; /*!< bit: 0..15 Reserved */
+DECL|_reserved0|member|uint32_t _reserved0:1; /*!< bit: 9 Reserved */
 DECL|_reserved0|member|uint32_t _reserved0:23; /*!< bit: 9..31 Reserved */
 DECL|_reserved0|member|uint32_t _reserved0:29; /*!< bit: 3..31 Reserved */
-DECL|_reserved0|member|uint32_t _reserved0:7; /*!< bit: 9..15 Reserved */
 DECL|_reserved1|member|uint32_t _reserved1:4; /*!< bit: 20..23 Reserved */
 DECL|_reserved1|member|uint32_t _reserved1:7; /*!< bit: 20..26 Reserved */
 DECL|b|member|} b; /*!< Structure used for bit access */
@@ -765,10 +805,12 @@ DECL|xPSR_C_Msk|macro|xPSR_C_Msk
 DECL|xPSR_C_Pos|macro|xPSR_C_Pos
 DECL|xPSR_GE_Msk|macro|xPSR_GE_Msk
 DECL|xPSR_GE_Pos|macro|xPSR_GE_Pos
+DECL|xPSR_ICI_IT_1_Msk|macro|xPSR_ICI_IT_1_Msk
+DECL|xPSR_ICI_IT_1_Pos|macro|xPSR_ICI_IT_1_Pos
+DECL|xPSR_ICI_IT_2_Msk|macro|xPSR_ICI_IT_2_Msk
+DECL|xPSR_ICI_IT_2_Pos|macro|xPSR_ICI_IT_2_Pos
 DECL|xPSR_ISR_Msk|macro|xPSR_ISR_Msk
 DECL|xPSR_ISR_Pos|macro|xPSR_ISR_Pos
-DECL|xPSR_IT_Msk|macro|xPSR_IT_Msk
-DECL|xPSR_IT_Pos|macro|xPSR_IT_Pos
 DECL|xPSR_N_Msk|macro|xPSR_N_Msk
 DECL|xPSR_N_Pos|macro|xPSR_N_Pos
 DECL|xPSR_Q_Msk|macro|xPSR_Q_Msk

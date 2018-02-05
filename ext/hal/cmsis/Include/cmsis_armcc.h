@@ -1,9 +1,15 @@
+DECL|__ALIGNED|macro|__ALIGNED
+DECL|__ARM_ARCH_6M__|macro|__ARM_ARCH_6M__
+DECL|__ARM_ARCH_7EM__|macro|__ARM_ARCH_7EM__
+DECL|__ARM_ARCH_7M__|macro|__ARM_ARCH_7M__
+DECL|__ASM|macro|__ASM
 DECL|__BKPT|macro|__BKPT
 DECL|__CLREX|macro|__CLREX
 DECL|__CLZ|macro|__CLZ
 DECL|__CMSIS_ARMCC_H|macro|__CMSIS_ARMCC_H
 DECL|__DMB|macro|__DMB
 DECL|__DSB|macro|__DSB
+DECL|__INLINE|macro|__INLINE
 DECL|__ISB|macro|__ISB
 DECL|__LDRBT|macro|__LDRBT
 DECL|__LDREXB|macro|__LDREXB
@@ -15,6 +21,10 @@ DECL|__LDREXW|macro|__LDREXW
 DECL|__LDRHT|macro|__LDRHT
 DECL|__LDRT|macro|__LDRT
 DECL|__NOP|macro|__NOP
+DECL|__NO_RETURN|macro|__NO_RETURN
+DECL|__PACKED_STRUCT|macro|__PACKED_STRUCT
+DECL|__PACKED_UNION|macro|__PACKED_UNION
+DECL|__PACKED|macro|__PACKED
 DECL|__PKHBT|macro|__PKHBT
 DECL|__PKHTB|macro|__PKHTB
 DECL|__QADD16|macro|__QADD16
@@ -27,8 +37,9 @@ DECL|__QSUB8|macro|__QSUB8
 DECL|__QSUB|macro|__QSUB
 DECL|__RBIT|function|__attribute__((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t value)
 DECL|__RBIT|macro|__RBIT
+DECL|__RESTRICT|macro|__RESTRICT
 DECL|__REV16|function|__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
-DECL|__REVSH|function|__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+DECL|__REVSH|function|__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int16_t __REVSH(int16_t value)
 DECL|__REV|macro|__REV
 DECL|__ROR|macro|__ROR
 DECL|__RRX|function|__attribute__((section(".rrx_text"))) __STATIC_INLINE __ASM uint32_t __RRX(uint32_t value)
@@ -57,10 +68,12 @@ DECL|__SMUAD|macro|__SMUAD
 DECL|__SMUSDX|macro|__SMUSDX
 DECL|__SMUSD|macro|__SMUSD
 DECL|__SSAT16|macro|__SSAT16
+DECL|__SSAT|function|__attribute__((always_inline)) __STATIC_INLINE int32_t __SSAT(int32_t val, uint32_t sat)
 DECL|__SSAT|macro|__SSAT
 DECL|__SSAX|macro|__SSAX
 DECL|__SSUB16|macro|__SSUB16
 DECL|__SSUB8|macro|__SSUB8
+DECL|__STATIC_INLINE|macro|__STATIC_INLINE
 DECL|__STRBT|macro|__STRBT
 DECL|__STREXB|macro|__STREXB
 DECL|__STREXB|macro|__STREXB
@@ -81,6 +94,11 @@ DECL|__UHASX|macro|__UHASX
 DECL|__UHSAX|macro|__UHSAX
 DECL|__UHSUB16|macro|__UHSUB16
 DECL|__UHSUB8|macro|__UHSUB8
+DECL|__UNALIGNED_UINT16_READ|macro|__UNALIGNED_UINT16_READ
+DECL|__UNALIGNED_UINT16_WRITE|macro|__UNALIGNED_UINT16_WRITE
+DECL|__UNALIGNED_UINT32_READ|macro|__UNALIGNED_UINT32_READ
+DECL|__UNALIGNED_UINT32_WRITE|macro|__UNALIGNED_UINT32_WRITE
+DECL|__UNALIGNED_UINT32|macro|__UNALIGNED_UINT32
 DECL|__UQADD16|macro|__UQADD16
 DECL|__UQADD8|macro|__UQADD8
 DECL|__UQASX|macro|__UQASX
@@ -90,12 +108,15 @@ DECL|__UQSUB8|macro|__UQSUB8
 DECL|__USAD8|macro|__USAD8
 DECL|__USADA8|macro|__USADA8
 DECL|__USAT16|macro|__USAT16
+DECL|__USAT|function|__attribute__((always_inline)) __STATIC_INLINE uint32_t __USAT(int32_t val, uint32_t sat)
 DECL|__USAT|macro|__USAT
 DECL|__USAX|macro|__USAX
+DECL|__USED|macro|__USED
 DECL|__USUB16|macro|__USUB16
 DECL|__USUB8|macro|__USUB8
 DECL|__UXTAB16|macro|__UXTAB16
 DECL|__UXTB16|macro|__UXTB16
+DECL|__WEAK|macro|__WEAK
 DECL|__WFE|macro|__WFE
 DECL|__WFI|macro|__WFI
 DECL|__disable_fault_irq|macro|__disable_fault_irq
