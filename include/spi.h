@@ -26,7 +26,7 @@ DECL|_impl_spi_transceive|function|static inline int _impl_spi_transceive(struct
 DECL|buffers|member|const struct spi_buf *buffers;
 DECL|buf|member|void *buf;
 DECL|count|member|size_t count;
-DECL|cs|member|struct spi_cs_control *cs;
+DECL|cs|member|const struct spi_cs_control *cs;
 DECL|delay|member|u32_t delay;
 DECL|frequency|member|u32_t frequency;
 DECL|gpio_dev|member|struct device *gpio_dev;

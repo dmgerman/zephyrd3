@@ -14,7 +14,7 @@ DECL|buffer_print_rx|variable|buffer_print_rx
 DECL|buffer_print_tx|variable|buffer_print_tx
 DECL|buffer_rx|variable|buffer_rx
 DECL|buffer_tx|variable|buffer_tx
-DECL|cs_ctrl_gpio_config|function|static int cs_ctrl_gpio_config(struct spi_cs_control *cs)
+DECL|cs_ctrl_gpio_config|function|static int cs_ctrl_gpio_config(void)
 DECL|main|function|void main(void)
 DECL|result|variable|result
 DECL|spi_async_call_cb|function|static void spi_async_call_cb(struct k_poll_event *async_evt, struct k_sem *caller_sem, void *unused)
