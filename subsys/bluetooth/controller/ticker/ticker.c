@@ -79,7 +79,7 @@ DECL|ticker_next_slot_get|function|u32_t ticker_next_slot_get(u8_t instance_inde
 DECL|ticker_node|struct|struct ticker_node {
 DECL|ticker_remainder_dec|function|static u8_t ticker_remainder_dec(struct ticker_node *ticker)
 DECL|ticker_remainder_inc|function|static u8_t ticker_remainder_inc(struct ticker_node *ticker)
-DECL|ticker_start|function|u32_t ticker_start(u8_t instance_index, u8_t user_id, u8_t ticker_id, u32_t ticks_anchor, u32_t ticks_first, u32_t ticks_periodic, u32_t remainder_periodic, u16_t lazy, u16_t ticks_slot, ticker_timeout_func fp_timeout_func, void *context, ticker_op_func fp_op_func, void *op_context)
+DECL|ticker_start|function|u32_t ticker_start(u8_t instance_index, u8_t user_id, u8_t ticker_id, u32_t ticks_anchor, u32_t ticks_first, u32_t ticks_periodic, u32_t remainder_periodic, u16_t lazy, u32_t ticks_slot, ticker_timeout_func fp_timeout_func, void *context, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_stop|function|u32_t ticker_stop(u8_t instance_index, u8_t user_id, u8_t ticker_id, ticker_op_func fp_op_func, void *op_context)
 DECL|ticker_ticks_diff_get|function|u32_t ticker_ticks_diff_get(u32_t ticks_now, u32_t ticks_old)
 DECL|ticker_ticks_now_get|function|u32_t ticker_ticks_now_get(void)
@@ -105,10 +105,10 @@ DECL|ticks_periodic|member|u32_t ticks_periodic;
 DECL|ticks_periodic|member|u32_t ticks_periodic;
 DECL|ticks_slot_minus|member|u16_t ticks_slot_minus;
 DECL|ticks_slot_plus|member|u16_t ticks_slot_plus;
-DECL|ticks_slot_previous|member|u16_t ticks_slot_previous;
-DECL|ticks_slot|member|u16_t ticks_slot;
-DECL|ticks_slot|member|u16_t ticks_slot;
-DECL|ticks_to_expire_minus|member|u16_t ticks_to_expire_minus;
+DECL|ticks_slot_previous|member|u32_t ticks_slot_previous;
+DECL|ticks_slot|member|u32_t ticks_slot;
+DECL|ticks_slot|member|u32_t ticks_slot;
+DECL|ticks_to_expire_minus|member|u32_t ticks_to_expire_minus;
 DECL|ticks_to_expire_prep|function|static void ticks_to_expire_prep(struct ticker_node *ticker, u32_t ticks_current, u32_t ticks_at_start)
 DECL|ticks_to_expire|member|u32_t *ticks_to_expire;
 DECL|ticks_to_expire|member|u32_t ticks_to_expire;
