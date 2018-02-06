@@ -167,6 +167,7 @@ DECL|link_rx_free|member|void *link_rx_free;
 DECL|link_rx_head|member|memq_link_t *link_rx_head;
 DECL|link_rx_pool|member|void *link_rx_pool;
 DECL|link_rx_tail|member|memq_link_t *volatile link_rx_tail;
+DECL|ll_adv_is_enabled|function|u32_t ll_adv_is_enabled(void)
 DECL|ll_adv_scan_state_cb|function|void __weak ll_adv_scan_state_cb(u8_t bm)
 DECL|ll_apto_get|function|u32_t ll_apto_get(u16_t handle, u16_t *apto)
 DECL|ll_apto_set|function|u32_t ll_apto_set(u16_t handle, u16_t apto)
@@ -190,6 +191,7 @@ DECL|ll_rssi_get|function|u32_t ll_rssi_get(u16_t handle, u8_t *rssi)
 DECL|ll_rx_dequeue|function|void ll_rx_dequeue(void)
 DECL|ll_rx_get|function|u8_t ll_rx_get(void **node_rx, u16_t *handle)
 DECL|ll_rx_mem_release|function|void ll_rx_mem_release(void **node_rx)
+DECL|ll_scan_is_enabled|function|u32_t ll_scan_is_enabled(void)
 DECL|ll_start_enc_req_send|function|u32_t ll_start_enc_req_send(u16_t handle, u8_t error_code, u8_t const *const ltk)
 DECL|ll_terminate_ind_send|function|u32_t ll_terminate_ind_send(u16_t handle, u8_t reason)
 DECL|ll_tx_mem_acquire|function|void *ll_tx_mem_acquire(void)
@@ -255,7 +257,6 @@ DECL|radio_adv_data_get|function|struct radio_adv_data *radio_adv_data_get(void)
 DECL|radio_adv_disable|function|u32_t radio_adv_disable(void)
 DECL|radio_adv_enable|function|u32_t radio_adv_enable(u8_t phy_p, u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx) #else /* !CONFIG_BT_CTLR_ADV_EXT */ u32_t radio_adv_enable(u16_t interval, u8_t chan_map, u8_t filter_policy, u8_t rl_idx)
 DECL|radio_adv_filter_pol_get|function|u32_t radio_adv_filter_pol_get(void)
-DECL|radio_adv_is_enabled|function|u32_t radio_adv_is_enabled(void)
 DECL|radio_connect_enable|function|u32_t radio_connect_enable(u8_t adv_addr_type, u8_t *adv_addr, u16_t interval, u16_t latency, u16_t timeout)
 DECL|radio_event_adv_prepare|function|void radio_event_adv_prepare(u32_t ticks_at_expire, u32_t remainder, u16_t lazy, void *context)
 DECL|radio_hf_clock_get|function|struct device *radio_hf_clock_get(void)
@@ -266,7 +267,6 @@ DECL|radio_scan_data_get|function|struct radio_adv_data *radio_scan_data_get(voi
 DECL|radio_scan_disable|function|u32_t radio_scan_disable(void)
 DECL|radio_scan_enable|function|u32_t radio_scan_enable(u8_t type, u8_t init_addr_type, u8_t *init_addr,u16_t interval, u16_t window, u8_t filter_policy, u8_t rpa_gen, u8_t rl_idx)
 DECL|radio_scan_filter_pol_get|function|u32_t radio_scan_filter_pol_get(void)
-DECL|radio_scan_is_enabled|function|u32_t radio_scan_is_enabled(void)
 DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_set(u32_t ticks_active_to_start)
 DECL|reject_ext_ind_send|function|static u8_t reject_ext_ind_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
