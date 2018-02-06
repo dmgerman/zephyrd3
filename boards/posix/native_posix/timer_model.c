@@ -4,8 +4,10 @@ DECL|hw_timer_tick_timer|variable|hw_timer_tick_timer
 DECL|hw_timer_timer|variable|hw_timer_timer
 DECL|hwtimer_awake_timer_reached|function|static void hwtimer_awake_timer_reached(void)
 DECL|hwtimer_cleanup|function|void hwtimer_cleanup(void)
+DECL|hwtimer_enable|function|void hwtimer_enable(u64_t period)
+DECL|hwtimer_get_pending_silent_ticks|function|s64_t hwtimer_get_pending_silent_ticks(void)
 DECL|hwtimer_init|function|void hwtimer_init(void)
-DECL|hwtimer_set_silent_ticks|function|void hwtimer_set_silent_ticks(int sys_ticks)
+DECL|hwtimer_set_silent_ticks|function|void hwtimer_set_silent_ticks(s64_t sys_ticks)
 DECL|hwtimer_tick_timer_reached|function|static void hwtimer_tick_timer_reached(void)
 DECL|hwtimer_timer_reached|function|void hwtimer_timer_reached(void)
 DECL|hwtimer_update_timer|function|static void hwtimer_update_timer(void)
