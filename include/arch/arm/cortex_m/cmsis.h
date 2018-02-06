@@ -65,6 +65,8 @@ DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10,
 DECL|_CMSIS__H_|macro|_CMSIS__H_
 DECL|__CM0PLUS_REV|macro|__CM0PLUS_REV
 DECL|__CM0_REV|macro|__CM0_REV
+DECL|__CM23_REV|macro|__CM23_REV
+DECL|__CM33_REV|macro|__CM33_REV
 DECL|__CM3_REV|macro|__CM3_REV
 DECL|__CM4_REV|macro|__CM4_REV
 DECL|__CM7_REV|macro|__CM7_REV
