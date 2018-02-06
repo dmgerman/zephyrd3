@@ -1,3 +1,4 @@
+DECL|FCB_ENTRY_FA_DATA_OFF|macro|FCB_ENTRY_FA_DATA_OFF
 DECL|FCB_ERR_ARGS|macro|FCB_ERR_ARGS
 DECL|FCB_ERR_CRC|macro|FCB_ERR_CRC
 DECL|FCB_ERR_FLASH|macro|FCB_ERR_FLASH
@@ -17,12 +18,16 @@ DECL|f_mtx|member|struct k_mutex f_mtx; /* Locking for accessing the FCB data */
 DECL|f_oldest|member|struct flash_sector *f_oldest;
 DECL|f_scratch_cnt|member|u8_t f_scratch_cnt; /* How many sectors should be kept empty */
 DECL|f_sector_cnt|member|u8_t f_sector_cnt; /* Number of elements in sector array */
-DECL|f_sectors|member|struct flash_sector *f_sectors; /* Array of sectors, must be contiguous */
+DECL|f_sectors|member|struct flash_sector *f_sectors; /* Array of sectors, */
 DECL|f_version|member|u8_t f_version; /* Current version number of the data */
+DECL|fap|member|const struct flash_area *fap;
+DECL|fap|member|const struct flash_area *fap; /* Flash area used by the fcb instance */
+DECL|fcb_entry_ctx|struct|struct fcb_entry_ctx {
 DECL|fcb_entry|struct|struct fcb_entry {
-DECL|fcb_walk_cb|typedef|typedef int (*fcb_walk_cb)(struct fcb_entry *loc, void *arg);
+DECL|fcb_walk_cb|typedef|typedef int (*fcb_walk_cb)(struct fcb_entry_ctx *loc_ctx, void *arg);
 DECL|fcb|struct|struct fcb {
 DECL|fe_data_len|member|u16_t fe_data_len; /* size of data area */
 DECL|fe_data_off|member|u32_t fe_data_off; /* start of data */
 DECL|fe_elem_off|member|u32_t fe_elem_off; /* start of entry */
-DECL|fe_sector|member|struct flash_sector *fe_sector; /* ptr to sector within fcb->f_sectors */
+DECL|fe_sector|member|struct flash_sector *fe_sector; /* ptr to sector */
+DECL|loc|member|struct fcb_entry loc;
