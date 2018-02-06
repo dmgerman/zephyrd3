@@ -27,6 +27,11 @@ DECL|data_ref|function|static u8_t *data_ref(struct net_buf *buf, u8_t *data)
 DECL|data_unref|function|static void data_unref(struct net_buf *buf, u8_t *data)
 DECL|fixed_data_alloc|function|static u8_t *fixed_data_alloc(struct net_buf *buf, size_t *size, s32_t timeout)
 DECL|fixed_data_unref|function|static void fixed_data_unref(struct net_buf *buf, u8_t *data)
+DECL|generic_data_ref|function|static u8_t *generic_data_ref(struct net_buf *buf, u8_t *data)
+DECL|heap_data_alloc|function|static u8_t *heap_data_alloc(struct net_buf *buf, size_t *size, s32_t timeout)
+DECL|heap_data_unref|function|static void heap_data_unref(struct net_buf *buf, u8_t *data)
+DECL|mem_pool_data_alloc|function|static u8_t *mem_pool_data_alloc(struct net_buf *buf, size_t *size, s32_t timeout)
+DECL|mem_pool_data_unref|function|static void mem_pool_data_unref(struct net_buf *buf, u8_t *data)
 DECL|net_buf_alloc_fixed_debug|function|struct net_buf *net_buf_alloc_fixed_debug(struct net_buf_pool *pool, s32_t timeout, const char *func, int line)
 DECL|net_buf_alloc_fixed|function|struct net_buf *net_buf_alloc_fixed(struct net_buf_pool *pool, s32_t timeout)
 DECL|net_buf_alloc_len_debug|function|struct net_buf *net_buf_alloc_len_debug(struct net_buf_pool *pool, size_t size,s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_alloc_len(struct net_buf_pool *pool, size_t size,
@@ -37,6 +42,8 @@ DECL|net_buf_frag_del_debug|function|struct net_buf *net_buf_frag_del_debug(stru
 DECL|net_buf_frag_insert|function|void net_buf_frag_insert(struct net_buf *parent, struct net_buf *frag)
 DECL|net_buf_frag_last|function|struct net_buf *net_buf_frag_last(struct net_buf *buf)
 DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo *fifo, s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_get(struct k_fifo *fifo, s32_t timeout) #endif
+DECL|net_buf_heap_alloc|variable|net_buf_heap_alloc
+DECL|net_buf_heap_cb|variable|net_buf_heap_cb
 DECL|net_buf_id|function|int net_buf_id(struct net_buf *buf)
 DECL|net_buf_pool_get|function|struct net_buf_pool *net_buf_pool_get(int id)
 DECL|net_buf_put|function|void net_buf_put(struct k_fifo *fifo, struct net_buf *buf)
@@ -65,5 +72,6 @@ DECL|net_buf_simple_tailroom|function|size_t net_buf_simple_tailroom(struct net_
 DECL|net_buf_slist_get|function|struct net_buf *net_buf_slist_get(sys_slist_t *list)
 DECL|net_buf_slist_put|function|void net_buf_slist_put(sys_slist_t *list, struct net_buf *buf)
 DECL|net_buf_unref_debug|function|void net_buf_unref_debug(struct net_buf *buf, const char *func, int line)
+DECL|net_buf_var_cb|variable|net_buf_var_cb
 DECL|pool_get_uninit|function|static inline struct net_buf *pool_get_uninit(struct net_buf_pool *pool, u16_t uninit_count)
 DECL|pool_id|function|static int pool_id(struct net_buf_pool *pool)
