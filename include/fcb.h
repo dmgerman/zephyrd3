@@ -12,7 +12,6 @@ DECL|__FCB_H_|macro|__FCB_H_
 DECL|f_active_id|member|u16_t f_active_id;
 DECL|f_active|member|struct fcb_entry f_active;
 DECL|f_align|member|u8_t f_align; /* writes to flash have to aligned to this */
-DECL|f_area_id|member|int f_area_id;
 DECL|f_magic|member|u32_t f_magic; /* As placed on the disk */
 DECL|f_mtx|member|struct k_mutex f_mtx; /* Locking for accessing the FCB data */
 DECL|f_oldest|member|struct flash_sector *f_oldest;
