@@ -16,4 +16,5 @@ DECL|hwm_signal_end_handler|function|void hwm_signal_end_handler(int sig)
 DECL|hwm_sleep_until_next_timer|function|static void hwm_sleep_until_next_timer(void)
 DECL|next_timer_index|variable|next_timer_index
 DECL|next_timer_time|variable|next_timer_time
+DECL|posix_get_hw_cycle|function|u64_t posix_get_hw_cycle(void)
 DECL|signaled_end|variable|signaled_end
