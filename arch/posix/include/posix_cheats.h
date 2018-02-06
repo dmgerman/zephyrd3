@@ -70,6 +70,13 @@ DECL|sched_get_priority_max|macro|sched_get_priority_max
 DECL|sched_get_priority_min|macro|sched_get_priority_min
 DECL|sched_param|macro|sched_param
 DECL|sched_yield|macro|sched_yield
+DECL|sem_destroy|macro|sem_destroy
+DECL|sem_getvalue|macro|sem_getvalue
+DECL|sem_init|macro|sem_init
+DECL|sem_post|macro|sem_post
+DECL|sem_timedwait|macro|sem_timedwait
+DECL|sem_trywait|macro|sem_trywait
+DECL|sem_wait|macro|sem_wait
 DECL|sigevent|macro|sigevent
 DECL|sigval|macro|sigval
 DECL|sleep|macro|sleep

@@ -1,0 +1,8 @@
+DECL|sem_destroy|function|int sem_destroy(sem_t *semaphore)
+DECL|sem_getvalue|function|int sem_getvalue(sem_t *semaphore, int *value)
+DECL|sem_init|function|int sem_init(sem_t *semaphore, int pshared, unsigned int value)
+DECL|sem_post|function|int sem_post(sem_t *semaphore)
+DECL|sem_timedwait|function|int sem_timedwait(sem_t *semaphore, struct timespec *abstime)
+DECL|sem_trywait|function|int sem_trywait(sem_t *semaphore)
+DECL|sem_wait|function|int sem_wait(sem_t *semaphore)
+DECL|take_and_convert|function|static int take_and_convert(sem_t *semaphore, s32_t timeout)

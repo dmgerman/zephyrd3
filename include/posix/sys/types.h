@@ -28,6 +28,7 @@ DECL|pthread_t|typedef|typedef void *pthread_t;
 DECL|rd_sem|member|struct k_sem rd_sem;
 DECL|reader_active|member|struct k_sem reader_active;/* blocks WR till reader has acquired lock */
 DECL|schedpolicy|member|u32_t schedpolicy;
+DECL|sem_t|typedef|typedef struct k_sem sem_t;
 DECL|sem|member|struct k_sem *sem;
 DECL|stacksize|member|size_t stacksize;
 DECL|stack|member|void *stack;
