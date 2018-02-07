@@ -4,7 +4,6 @@ DECL|NET_IF_CONFIG_INIT|macro|NET_IF_CONFIG_INIT
 DECL|NET_IF_DEV_GET_NAME|macro|NET_IF_DEV_GET_NAME
 DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
 DECL|NET_IF_DHCPV4_INIT|macro|NET_IF_DHCPV4_INIT
-DECL|NET_IF_EVENT_GET_NAME|macro|NET_IF_EVENT_GET_NAME
 DECL|NET_IF_GET_NAME|macro|NET_IF_GET_NAME
 DECL|NET_IF_GET|macro|NET_IF_GET
 DECL|NET_IF_INIT|macro|NET_IF_INIT
@@ -78,7 +77,6 @@ DECL|net_if_get_ieee802154|function|static inline struct net_if *net_if_get_ieee
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
 DECL|net_if_get_ll_reserve|function|static inline u16_t net_if_get_ll_reserve(struct net_if *iface, const struct in6_addr *dst_ip6)
 DECL|net_if_get_mtu|function|static inline u16_t net_if_get_mtu(struct net_if *iface)
-DECL|net_if_get_queue_tx|function|static inline struct k_fifo *net_if_get_queue_tx(struct net_if *iface)
 DECL|net_if_ipv4_get_ttl|function|static inline u8_t net_if_ipv4_get_ttl(struct net_if *iface)
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
@@ -108,7 +106,6 @@ DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_mcast_callback_t|typedef|typedef void (*net_if_mcast_callback_t)(struct net_if *iface,
 DECL|net_if_mcast_monitor|struct|struct net_if_mcast_monitor {
 DECL|net_if_offload|function|static inline struct net_offload *net_if_offload(struct net_if *iface)
-DECL|net_if_queue_tx|function|static inline void net_if_queue_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_pkt *pkt)
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
 DECL|net_if_router|struct|struct net_if_router {
@@ -117,6 +114,7 @@ DECL|net_if_set_mtu|function|static inline void net_if_set_mtu(struct net_if *if
 DECL|net_if_start_dad|macro|net_if_start_dad
 DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, u8_t hop_limit)
+DECL|net_traffic_class|struct|struct net_traffic_class {
 DECL|netmask|member|struct in_addr netmask;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
@@ -132,12 +130,14 @@ DECL|rs_count|member|u8_t rs_count;
 DECL|rs_timer|member|struct k_delayed_work rs_timer;
 DECL|send|member|int (*send)(struct net_if *iface, struct net_pkt *pkt);
 DECL|server_id|member|struct in_addr server_id;
+DECL|stack|member|k_thread_stack_t *stack;
 DECL|state|member|enum net_dhcpv4_state state;
 DECL|t1_timer|member|struct k_delayed_work t1_timer;
 DECL|t2_timer|member|struct k_delayed_work t2_timer;
+DECL|tc|member|int tc;
 DECL|timer|member|struct k_delayed_work timer;
 DECL|ttl|member|u8_t ttl;
-DECL|tx_queue|member|struct k_fifo tx_queue;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
+DECL|work_q|member|struct k_work_q work_q;
 DECL|xid|member|u32_t xid;

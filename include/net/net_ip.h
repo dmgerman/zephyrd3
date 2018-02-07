@@ -40,6 +40,14 @@ DECL|NET_IPV6_NEXTHDR_FRAG|macro|NET_IPV6_NEXTHDR_FRAG
 DECL|NET_IPV6_NEXTHDR_HBHO|macro|NET_IPV6_NEXTHDR_HBHO
 DECL|NET_IPV6_NEXTHDR_NONE|macro|NET_IPV6_NEXTHDR_NONE
 DECL|NET_IPV6_NEXTHDR_ROUTING|macro|NET_IPV6_NEXTHDR_ROUTING
+DECL|NET_PRIORITY_BE|enumerator|NET_PRIORITY_BE = 1, /* Best effort (default) */
+DECL|NET_PRIORITY_BK|enumerator|NET_PRIORITY_BK = 0, /* Background (lowest) */
+DECL|NET_PRIORITY_CA|enumerator|NET_PRIORITY_CA = 3, /* Critical applications (highest) */
+DECL|NET_PRIORITY_EE|enumerator|NET_PRIORITY_EE = 2, /* Excellent effort */
+DECL|NET_PRIORITY_IC|enumerator|NET_PRIORITY_IC = 6, /* Internetwork control */
+DECL|NET_PRIORITY_NC|enumerator|NET_PRIORITY_NC = 7 /* Network control */
+DECL|NET_PRIORITY_VI|enumerator|NET_PRIORITY_VI = 4, /* Video, < 100 ms latency and jitter */
+DECL|NET_PRIORITY_VO|enumerator|NET_PRIORITY_VO = 5, /* Voice, < 10 ms latency and jitter */
 DECL|NET_SOCKADDR_MAX_SIZE|macro|NET_SOCKADDR_MAX_SIZE
 DECL|NET_SOCKADDR_MAX_SIZE|macro|NET_SOCKADDR_MAX_SIZE
 DECL|NET_SOCKADDR_MAX_SIZE|macro|NET_SOCKADDR_MAX_SIZE
@@ -126,6 +134,7 @@ DECL|net_is_ipv6_prefix|function|static inline bool net_is_ipv6_prefix(const u8_
 DECL|net_is_my_ipv4_addr|function|static inline bool net_is_my_ipv4_addr(const struct in_addr *addr)
 DECL|net_is_my_ipv6_addr|function|static inline bool net_is_my_ipv6_addr(struct in6_addr *addr)
 DECL|net_is_my_ipv6_maddr|function|static inline bool net_is_my_ipv6_maddr(struct in6_addr *maddr)
+DECL|net_priority|enum|enum net_priority {
 DECL|net_sin6_ptr|function|struct sockaddr_in6_ptr *net_sin6_ptr(const struct sockaddr_ptr *addr)
 DECL|net_sin6|function|static inline struct sockaddr_in6 *net_sin6(const struct sockaddr *addr)
 DECL|net_sin_ptr|function|struct sockaddr_in_ptr *net_sin_ptr(const struct sockaddr_ptr *addr)
