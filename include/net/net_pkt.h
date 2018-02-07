@@ -137,4 +137,5 @@ DECL|sent_list|member|sys_snode_t sent_list;
 DECL|sent_or_eof|member|u8_t sent_or_eof: 1; /* For outgoing packet: is this sent or not
 DECL|slab|member|struct k_mem_slab *slab;
 DECL|token|member|void *token;
+DECL|total_pkt_len|member|u16_t total_pkt_len;
 DECL|work|member|struct k_work work;

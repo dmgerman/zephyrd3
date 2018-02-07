@@ -12,6 +12,7 @@ DECL|check_global_addr|function|static inline struct in6_addr *check_global_addr
 DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
+DECL|debug_check_packet|macro|debug_check_packet
 DECL|get_length|function|static inline u8_t get_length(struct in6_addr *src, struct in6_addr *dst)
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;

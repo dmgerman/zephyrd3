@@ -32,6 +32,8 @@ DECL|_NET_STATS_CODE|macro|_NET_STATS_CODE
 DECL|_NET_STATS_LAYER|macro|_NET_STATS_LAYER
 DECL|__NET_STATS_H|macro|__NET_STATS_H
 DECL|ackerr|member|net_stats_t ackerr;
+DECL|bytes|member|net_stats_t bytes;
+DECL|bytes|member|net_stats_t bytes;
 DECL|bytes|member|struct net_stats_bytes bytes;
 DECL|bytes|member|struct net_stats_bytes bytes;
 DECL|chkerr|member|net_stats_t chkerr;
@@ -86,10 +88,15 @@ DECL|net_stats_rpl_dio|struct|struct net_stats_rpl_dio {
 DECL|net_stats_rpl_dis|struct|struct net_stats_rpl_dis {
 DECL|net_stats_rpl|struct|struct net_stats_rpl {
 DECL|net_stats_tcp|struct|struct net_stats_tcp {
+DECL|net_stats_tc|struct|struct net_stats_tc {
 DECL|net_stats_t|typedef|typedef u32_t net_stats_t;
 DECL|net_stats_udp|struct|struct net_stats_udp {
 DECL|net_stats|struct|struct net_stats {
 DECL|parent_switch|member|u16_t parent_switch;
+DECL|pkts|member|net_stats_t pkts;
+DECL|pkts|member|net_stats_t pkts;
+DECL|priority|member|u8_t priority;
+DECL|priority|member|u8_t priority;
 DECL|processing_error|member|net_stats_t processing_error;
 DECL|protoerr|member|net_stats_t protoerr;
 DECL|received|member|u32_t received;
@@ -103,6 +110,7 @@ DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
 DECL|recv|member|net_stats_t recv;
+DECL|recv|member|} recv[NET_TC_RX_COUNT];
 DECL|resent|member|net_stats_t resent;
 DECL|resets|member|u16_t resets;
 DECL|rexmit|member|net_stats_t rexmit;
@@ -121,7 +129,9 @@ DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|net_stats_t sent;
 DECL|sent|member|u32_t sent;
+DECL|sent|member|} sent[NET_TC_TX_COUNT];
 DECL|tcp|member|struct net_stats_tcp tcp;
+DECL|tc|member|struct net_stats_tc tc;
 DECL|typeerr|member|net_stats_t typeerr;
 DECL|udp|member|struct net_stats_udp udp;
 DECL|vhlerr|member|net_stats_t vhlerr;
