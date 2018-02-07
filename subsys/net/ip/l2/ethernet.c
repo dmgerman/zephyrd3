@@ -25,4 +25,5 @@ DECL|print_ll_addrs|macro|print_ll_addrs
 DECL|print_ll_addrs|macro|print_ll_addrs
 DECL|print_vlan_ll_addrs|macro|print_vlan_ll_addrs
 DECL|print_vlan_ll_addrs|macro|print_vlan_ll_addrs
+DECL|set_vlan_priority|function|static void set_vlan_priority(struct ethernet_context *ctx, struct net_pkt *pkt)
 DECL|set_vlan_tag|function|static enum net_verdict set_vlan_tag(struct ethernet_context *ctx, struct net_if *iface, struct net_pkt *pkt)
