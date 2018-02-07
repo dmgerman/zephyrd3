@@ -14,6 +14,8 @@ DECL|MBEDTLS_ERR_ENTROPY_MAX_SOURCES|macro|MBEDTLS_ERR_ENTROPY_MAX_SOURCES
 DECL|MBEDTLS_ERR_ENTROPY_NO_SOURCES_DEFINED|macro|MBEDTLS_ERR_ENTROPY_NO_SOURCES_DEFINED
 DECL|MBEDTLS_ERR_ENTROPY_NO_STRONG_SOURCE|macro|MBEDTLS_ERR_ENTROPY_NO_STRONG_SOURCE
 DECL|MBEDTLS_ERR_ENTROPY_SOURCE_FAILED|macro|MBEDTLS_ERR_ENTROPY_SOURCE_FAILED
+DECL|accumulator_started|member|int accumulator_started;
+DECL|accumulator|member|mbedtls_sha256_context accumulator;
 DECL|accumulator|member|mbedtls_sha512_context accumulator;
 DECL|f_source|member|mbedtls_entropy_f_source_ptr f_source; /**< The entropy source callback */
 DECL|havege_data|member|mbedtls_havege_state havege_data;

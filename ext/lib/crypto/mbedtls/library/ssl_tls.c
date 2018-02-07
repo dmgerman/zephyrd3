@@ -1,9 +1,9 @@
 DECL|MAC_CIPHERTEXT|macro|MAC_CIPHERTEXT
 DECL|MAC_NONE|macro|MAC_NONE
 DECL|MAC_PLAINTEXT|macro|MAC_PLAINTEXT
+DECL|SSL_MAC_MAX_BYTES|macro|SSL_MAC_MAX_BYTES
 DECL|SSL_MAX_HASH_LEN|macro|SSL_MAX_HASH_LEN
 DECL|SSL_MAX_HASH_LEN|macro|SSL_MAX_HASH_LEN
-DECL|SSL_MAX_MAC_SIZE|macro|SSL_MAX_MAC_SIZE
 DECL|SSL_SOME_MODES_USE_MAC|macro|SSL_SOME_MODES_USE_MAC
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
@@ -22,6 +22,7 @@ DECL|mbedtls_ssl_conf_ciphersuites_for_version|function|void mbedtls_ssl_conf_ci
 DECL|mbedtls_ssl_conf_ciphersuites|function|void mbedtls_ssl_conf_ciphersuites( mbedtls_ssl_config *conf, const int *ciphersuites )
 DECL|mbedtls_ssl_conf_curves|function|void mbedtls_ssl_conf_curves( mbedtls_ssl_config *conf, const mbedtls_ecp_group_id *curve_list )
 DECL|mbedtls_ssl_conf_dbg|function|void mbedtls_ssl_conf_dbg( mbedtls_ssl_config *conf, void (*f_dbg)(void *, int, const char *, int, const char *), void *p_dbg )
+DECL|mbedtls_ssl_conf_dh_param_bin|function|int mbedtls_ssl_conf_dh_param_bin( mbedtls_ssl_config *conf, const unsigned char *dhm_P, size_t P_len, const unsigned char *dhm_G, size_t G_len )
 DECL|mbedtls_ssl_conf_dh_param_ctx|function|int mbedtls_ssl_conf_dh_param_ctx( mbedtls_ssl_config *conf, mbedtls_dhm_context *dhm_ctx )
 DECL|mbedtls_ssl_conf_dh_param|function|int mbedtls_ssl_conf_dh_param( mbedtls_ssl_config *conf, const char *dhm_P, const char *dhm_G )
 DECL|mbedtls_ssl_conf_dhm_min_bitlen|function|void mbedtls_ssl_conf_dhm_min_bitlen( mbedtls_ssl_config *conf, unsigned int bitlen )
@@ -65,6 +66,8 @@ DECL|mbedtls_ssl_free|function|void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_alpn_protocol|function|const char *mbedtls_ssl_get_alpn_protocol( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_bytes_avail|function|size_t mbedtls_ssl_get_bytes_avail( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_ciphersuite|function|const char *mbedtls_ssl_get_ciphersuite( const mbedtls_ssl_context *ssl )
+DECL|mbedtls_ssl_get_key_exchange_md_ssl_tls|function|int mbedtls_ssl_get_key_exchange_md_ssl_tls( mbedtls_ssl_context *ssl, unsigned char *output, unsigned char *data, size_t data_len )
+DECL|mbedtls_ssl_get_key_exchange_md_tls1_2|function|int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl, unsigned char *output, unsigned char *data, size_t data_len, mbedtls_md_type_t md_alg )
 DECL|mbedtls_ssl_get_max_frag_len|function|size_t mbedtls_ssl_get_max_frag_len( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_peer_cert|function|const mbedtls_x509_crt *mbedtls_ssl_get_peer_cert( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_record_expansion|function|int mbedtls_ssl_get_record_expansion( const mbedtls_ssl_context *ssl )
@@ -166,7 +169,7 @@ DECL|ssl_handshake_params_init|function|static void ssl_handshake_params_init( m
 DECL|ssl_handshake_wrapup_free_hs_transform|function|static void ssl_handshake_wrapup_free_hs_transform( mbedtls_ssl_context *ssl )
 DECL|ssl_key_cert_free|function|static void ssl_key_cert_free( mbedtls_ssl_key_cert *key_cert )
 DECL|ssl_load_six_bytes|function|static inline uint64_t ssl_load_six_bytes( unsigned char *buf )
-DECL|ssl_mac|function|static void ssl_mac( mbedtls_md_context_t *md_ctx, unsigned char *secret, unsigned char *buf, size_t len, unsigned char *ctr, int type )
+DECL|ssl_mac|function|static void ssl_mac( mbedtls_md_context_t *md_ctx, const unsigned char *secret, const unsigned char *buf, size_t len, const unsigned char *ctr, int type, unsigned char out[SSL_MAC_MAX_BYTES] )
 DECL|ssl_parse_record_header|function|static int ssl_parse_record_header( mbedtls_ssl_context *ssl )
 DECL|ssl_prepare_record_content|function|static int ssl_prepare_record_content( mbedtls_ssl_context *ssl )
 DECL|ssl_preset_default_hashes|variable|ssl_preset_default_hashes

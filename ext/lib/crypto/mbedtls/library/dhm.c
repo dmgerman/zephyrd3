@@ -14,6 +14,7 @@ DECL|mbedtls_dhm_parse_dhm|function|int mbedtls_dhm_parse_dhm( mbedtls_dhm_conte
 DECL|mbedtls_dhm_read_params|function|int mbedtls_dhm_read_params( mbedtls_dhm_context *ctx, unsigned char **p, const unsigned char *end )
 DECL|mbedtls_dhm_read_public|function|int mbedtls_dhm_read_public( mbedtls_dhm_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_dhm_self_test|function|int mbedtls_dhm_self_test( int verbose )
+DECL|mbedtls_dhm_set_group|function|int mbedtls_dhm_set_group( mbedtls_dhm_context *ctx, const mbedtls_mpi *P, const mbedtls_mpi *G )
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_test_dhm_params_len|variable|mbedtls_test_dhm_params_len

@@ -28,6 +28,7 @@ DECL|mbedtls_platform_win32_snprintf|function|int mbedtls_platform_win32_snprint
 DECL|mbedtls_printf|variable|mbedtls_printf
 DECL|mbedtls_snprintf|variable|mbedtls_snprintf
 DECL|mbedtls_time|variable|mbedtls_time
+DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|platform_calloc_uninit|function|static void *platform_calloc_uninit( size_t n, size_t size )
 DECL|platform_exit_uninit|function|static void platform_exit_uninit( int status )
 DECL|platform_fprintf_uninit|function|static int platform_fprintf_uninit( FILE *stream, const char *format, ... )

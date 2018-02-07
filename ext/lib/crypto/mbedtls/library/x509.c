@@ -23,7 +23,7 @@ DECL|mbedtls_x509_time_is_future|function|int mbedtls_x509_time_is_future( const
 DECL|mbedtls_x509_time_is_past|function|int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
 DECL|mbedtls_x509_time_is_past|function|int mbedtls_x509_time_is_past( const mbedtls_x509_time *to )
 DECL|x509_check_time|function|static int x509_check_time( const mbedtls_x509_time *before, const mbedtls_x509_time *after )
-DECL|x509_date_is_valid|function|static int x509_date_is_valid(const mbedtls_x509_time *t)
+DECL|x509_date_is_valid|function|static int x509_date_is_valid(const mbedtls_x509_time *t )
 DECL|x509_get_attr_type_value|function|static int x509_get_attr_type_value( unsigned char **p, const unsigned char *end, mbedtls_x509_name *cur )
 DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )
 DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )

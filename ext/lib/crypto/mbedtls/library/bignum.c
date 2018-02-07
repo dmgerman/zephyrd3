@@ -56,6 +56,7 @@ DECL|mbedtls_mpi_write_file|function|int mbedtls_mpi_write_file( const char *p, 
 DECL|mbedtls_mpi_write_string|function|int mbedtls_mpi_write_string( const mbedtls_mpi *X, int radix, char *buf, size_t buflen, size_t *olen )
 DECL|mbedtls_mpi_zeroize|function|static void mbedtls_mpi_zeroize( mbedtls_mpi_uint *v, size_t n ) {
 DECL|mbedtls_printf|macro|mbedtls_printf
+DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|mpi_check_small_factors|function|static int mpi_check_small_factors( const mbedtls_mpi *X )
 DECL|mpi_get_digit|function|static int mpi_get_digit( mbedtls_mpi_uint *d, int radix, char c )
 DECL|mpi_miller_rabin|function|static int mpi_miller_rabin( const mbedtls_mpi *X, int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )

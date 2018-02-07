@@ -15,7 +15,7 @@ DECL|pk_group_from_specified|function|static int pk_group_from_specified( const 
 DECL|pk_group_id_from_group|function|static int pk_group_id_from_group( const mbedtls_ecp_group *grp, mbedtls_ecp_group_id *grp_id )
 DECL|pk_group_id_from_specified|function|static int pk_group_id_from_specified( const mbedtls_asn1_buf *params, mbedtls_ecp_group_id *grp_id )
 DECL|pk_parse_key_pkcs1_der|function|static int pk_parse_key_pkcs1_der( mbedtls_rsa_context *rsa, const unsigned char *key, size_t keylen )
-DECL|pk_parse_key_pkcs8_encrypted_der|function|static int pk_parse_key_pkcs8_encrypted_der( mbedtls_pk_context *pk, const unsigned char *key, size_t keylen, const unsigned char *pwd, size_t pwdlen )
+DECL|pk_parse_key_pkcs8_encrypted_der|function|static int pk_parse_key_pkcs8_encrypted_der( mbedtls_pk_context *pk, unsigned char *key, size_t keylen, const unsigned char *pwd, size_t pwdlen )
 DECL|pk_parse_key_pkcs8_unencrypted_der|function|static int pk_parse_key_pkcs8_unencrypted_der( mbedtls_pk_context *pk, const unsigned char* key, size_t keylen )
 DECL|pk_parse_key_sec1_der|function|static int pk_parse_key_sec1_der( mbedtls_ecp_keypair *eck, const unsigned char *key, size_t keylen )
 DECL|pk_use_ecparams|function|static int pk_use_ecparams( const mbedtls_asn1_buf *params, mbedtls_ecp_group *grp )
