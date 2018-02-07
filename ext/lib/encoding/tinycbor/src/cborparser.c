@@ -1,14 +1,15 @@
-DECL|IterateFunction|typedef|typedef uintptr_t (*IterateFunction)(char *, const uint8_t *, size_t);
+DECL|IterateFunction|typedef|typedef uintptr_t (*IterateFunction)(struct cbor_decoder_reader *d, char *dst, int src_offset, size_t len);
 DECL|_BSD_SOURCE|macro|_BSD_SOURCE
 DECL|_DEFAULT_SOURCE|macro|_DEFAULT_SOURCE
 DECL|__STDC_LIMIT_MACROS|macro|__STDC_LIMIT_MACROS
 DECL|_cbor_value_copy_string|function|CborError _cbor_value_copy_string(const CborValue *value, void *buffer, size_t *buflen, CborValue *next)
 DECL|_cbor_value_decode_int64_internal|function|uint64_t _cbor_value_decode_int64_internal(const CborValue *value)
-DECL|_cbor_value_extract_number|function|CBOR_INTERNAL_API_CC CborError _cbor_value_extract_number(const uint8_t **ptr, const uint8_t *end, uint64_t *len)
+DECL|_cbor_value_extract_number|function|CBOR_INTERNAL_API_CC CborError _cbor_value_extract_number(const CborParser *p, int *offset, uint64_t *len)
 DECL|_cbor_value_get_string_chunk|function|CborError _cbor_value_get_string_chunk(const CborValue *value, const void **bufferptr, size_t *len, CborValue *next)
 DECL|_cbor_value_prepare_string_iteration|function|CBOR_INTERNAL_API_CC CborError _cbor_value_prepare_string_iteration(CborValue *it)
 DECL|advance_internal|function|static CborError advance_internal(CborValue *it)
 DECL|advance_recursive|function|static CborError advance_recursive(CborValue *it, int nestingLevel)
+DECL|cbor_parser_cust_reader_init|function|CborError cbor_parser_cust_reader_init(struct cbor_decoder_reader *r, int flags, CborParser *parser, CborValue *it)
 DECL|cbor_parser_init|function|CborError cbor_parser_init(const uint8_t *buffer, size_t size, int flags, CborParser *parser, CborValue *it)
 DECL|cbor_value_advance_fixed|function|CborError cbor_value_advance_fixed(CborValue *it)
 DECL|cbor_value_advance|function|CborError cbor_value_advance(CborValue *it)
@@ -22,15 +23,11 @@ DECL|cbor_value_map_find_value|function|CborError cbor_value_map_find_value(cons
 DECL|cbor_value_skip_tag|function|CborError cbor_value_skip_tag(CborValue *it)
 DECL|cbor_value_text_string_equals|function|CborError cbor_value_text_string_equals(const CborValue *value, const char *string, bool *result)
 DECL|cbor_value_validate_basic|function|CborError cbor_value_validate_basic(const CborValue *it)
-DECL|extract_length|function|static CborError extract_length(const CborParser *parser, const uint8_t **ptr, size_t *len)
-DECL|get16|function|static inline uint16_t get16(const uint8_t *ptr)
-DECL|get32|function|static inline uint32_t get32(const uint8_t *ptr)
-DECL|get64|function|static inline uint64_t get64(const uint8_t *ptr)
+DECL|extract_length|function|static CborError extract_length(const CborParser *parser, int *offset, size_t *len)
+DECL|get_string_chunk_update|function|get_string_chunk_update(CborValue *it, const void **bufferptr, size_t *len)
 DECL|get_string_chunk|function|static CborError get_string_chunk(CborValue *it, const void **bufferptr, size_t *len)
 DECL|is_fixed_type|function|static bool is_fixed_type(uint8_t type)
-DECL|iterate_memcmp|function|static uintptr_t iterate_memcmp(char *s1, const uint8_t *s2, size_t len)
-DECL|iterate_memcpy|function|static uintptr_t iterate_memcpy(char *dest, const uint8_t *src, size_t len)
-DECL|iterate_noop|function|static uintptr_t iterate_noop(char *dest, const uint8_t *src, size_t len)
+DECL|iterate_noop|function|static uintptr_t iterate_noop(struct cbor_decoder_reader *d, char *dst, int src_offset, size_t len)
 DECL|iterate_string_chunks|function|static CborError iterate_string_chunks(const CborValue *value, char *buffer, size_t *buflen, bool *result, CborValue *next, IterateFunction func)
 DECL|prepare_string_iteration|function|static inline void prepare_string_iteration(CborValue *it)
 DECL|preparse_next_value|function|static CborError preparse_next_value(CborValue *it)

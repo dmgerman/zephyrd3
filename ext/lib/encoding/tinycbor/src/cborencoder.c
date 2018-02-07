@@ -1,7 +1,6 @@
 DECL|_BSD_SOURCE|macro|_BSD_SOURCE
 DECL|_DEFAULT_SOURCE|macro|_DEFAULT_SOURCE
 DECL|__STDC_LIMIT_MACROS|macro|__STDC_LIMIT_MACROS
-DECL|advance_ptr|function|static inline void advance_ptr(CborEncoder *encoder, size_t n)
 DECL|append_byte_to_buffer|function|static inline CborError append_byte_to_buffer(CborEncoder *encoder, uint8_t byte)
 DECL|append_to_buffer|function|static inline CborError append_to_buffer(CborEncoder *encoder, const void *data, size_t len)
 DECL|cbor_encode_byte_string|function|CborError cbor_encode_byte_string(CborEncoder *encoder, const uint8_t *string, size_t length)
@@ -15,6 +14,7 @@ DECL|cbor_encode_uint|function|CborError cbor_encode_uint(CborEncoder *encoder, 
 DECL|cbor_encoder_close_container|function|CborError cbor_encoder_close_container(CborEncoder *encoder, const CborEncoder *containerEncoder)
 DECL|cbor_encoder_create_array|function|CborError cbor_encoder_create_array(CborEncoder *encoder, CborEncoder *arrayEncoder, size_t length)
 DECL|cbor_encoder_create_map|function|CborError cbor_encoder_create_map(CborEncoder *encoder, CborEncoder *mapEncoder, size_t length)
+DECL|cbor_encoder_cust_writer_init|function|void cbor_encoder_cust_writer_init(CborEncoder *encoder, struct cbor_encoder_writer *w, int flags)
 DECL|cbor_encoder_init|function|void cbor_encoder_init(CborEncoder *encoder, uint8_t *buffer, size_t size, int flags)
 DECL|create_container|function|static CborError create_container(CborEncoder *encoder, CborEncoder *container, size_t length, uint8_t shiftedMajorType)
 DECL|encode_number_no_update|function|static inline CborError encode_number_no_update(CborEncoder *encoder, uint64_t ui, uint8_t shiftedMajorType)
@@ -25,4 +25,3 @@ DECL|put16|function|static inline void put16(void *where, uint16_t v)
 DECL|put32|function|static inline void put32(void *where, uint32_t v)
 DECL|put64|function|static inline void put64(void *where, uint64_t v)
 DECL|saturated_decrement|function|static inline void saturated_decrement(CborEncoder *encoder)
-DECL|would_overflow|function|static inline bool would_overflow(CborEncoder *encoder, size_t len)

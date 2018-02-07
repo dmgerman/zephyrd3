@@ -154,18 +154,16 @@ DECL|CborValue|struct|struct CborValue
 DECL|CborValue|typedef|typedef struct CborValue CborValue;
 DECL|SIZE_MAX|macro|SIZE_MAX
 DECL|TINYCBOR_VERSION|macro|TINYCBOR_VERSION
-DECL|_cbor_encoder_get_buffer_pointer|function|CBOR_INLINE_API uint8_t *_cbor_encoder_get_buffer_pointer(const CborEncoder *encoder)
 DECL|_cbor_value_extract_int64_helper|function|CBOR_INLINE_API uint64_t _cbor_value_extract_int64_helper(const CborValue *value)
-DECL|bytes_needed|member|ptrdiff_t bytes_needed;
+DECL|br|member|struct cbor_buf_reader br;
 DECL|cbor_encode_boolean|function|CBOR_INLINE_API CborError cbor_encode_boolean(CborEncoder *encoder, bool value)
+DECL|cbor_encode_bytes_written|function|CBOR_INLINE_API int cbor_encode_bytes_written(CborEncoder *encoder)
 DECL|cbor_encode_double|function|CBOR_INLINE_API CborError cbor_encode_double(CborEncoder *encoder, double value)
 DECL|cbor_encode_float|function|CBOR_INLINE_API CborError cbor_encode_float(CborEncoder *encoder, float value)
 DECL|cbor_encode_half_float|function|CBOR_INLINE_API CborError cbor_encode_half_float(CborEncoder *encoder, const void *value)
 DECL|cbor_encode_null|function|CBOR_INLINE_API CborError cbor_encode_null(CborEncoder *encoder)
 DECL|cbor_encode_text_stringz|function|CBOR_INLINE_API CborError cbor_encode_text_stringz(CborEncoder *encoder, const char *string)
 DECL|cbor_encode_undefined|function|CBOR_INLINE_API CborError cbor_encode_undefined(CborEncoder *encoder)
-DECL|cbor_encoder_get_buffer_size|function|CBOR_INLINE_API size_t cbor_encoder_get_buffer_size(const CborEncoder *encoder, const uint8_t *buffer)
-DECL|cbor_encoder_get_extra_bytes_needed|function|CBOR_INLINE_API size_t cbor_encoder_get_extra_bytes_needed(const CborEncoder *encoder)
 DECL|cbor_value_at_end|function|CBOR_INLINE_API bool cbor_value_at_end(const CborValue *it)
 DECL|cbor_value_copy_byte_string|function|CBOR_INLINE_API CborError cbor_value_copy_byte_string(const CborValue *value, uint8_t *buffer, size_t *buflen, CborValue *next)
 DECL|cbor_value_copy_text_string|function|CBOR_INLINE_API CborError cbor_value_copy_text_string(const CborValue *value, char *buffer, size_t *buflen, CborValue *next)
@@ -179,7 +177,6 @@ DECL|cbor_value_get_float|function|CBOR_INLINE_API CborError cbor_value_get_floa
 DECL|cbor_value_get_int64|function|CBOR_INLINE_API CborError cbor_value_get_int64(const CborValue *value, int64_t *result)
 DECL|cbor_value_get_int|function|CBOR_INLINE_API CborError cbor_value_get_int(const CborValue *value, int *result)
 DECL|cbor_value_get_map_length|function|CBOR_INLINE_API CborError cbor_value_get_map_length(const CborValue *value, size_t *length)
-DECL|cbor_value_get_next_byte|function|CBOR_INLINE_API const uint8_t *cbor_value_get_next_byte(const CborValue *it)
 DECL|cbor_value_get_raw_integer|function|CBOR_INLINE_API CborError cbor_value_get_raw_integer(const CborValue *value, uint64_t *result)
 DECL|cbor_value_get_simple_type|function|CBOR_INLINE_API CborError cbor_value_get_simple_type(const CborValue *value, uint8_t *result)
 DECL|cbor_value_get_string_length|function|CBOR_INLINE_API CborError cbor_value_get_string_length(const CborValue *value, size_t *length)
@@ -206,16 +203,18 @@ DECL|cbor_value_is_undefined|function|CBOR_INLINE_API bool cbor_value_is_undefin
 DECL|cbor_value_is_unsigned_integer|function|CBOR_INLINE_API bool cbor_value_is_unsigned_integer(const CborValue *value)
 DECL|cbor_value_is_valid|function|CBOR_INLINE_API bool cbor_value_is_valid(const CborValue *value)
 DECL|cbor_value_to_pretty|function|CBOR_INLINE_API CborError cbor_value_to_pretty(FILE *out, const CborValue *value)
-DECL|data|member|} data;
-DECL|end|member|const uint8_t *end;
-DECL|end|member|const uint8_t *end;
+DECL|d|member|struct cbor_decoder_reader *d;
+DECL|end|member|int end;
 DECL|extra|member|uint16_t extra;
 DECL|flags|member|int flags;
 DECL|flags|member|int flags;
 DECL|flags|member|uint8_t flags;
+DECL|offset|member|int offset;
 DECL|parser|member|const CborParser *parser;
-DECL|ptr|member|const uint8_t *ptr;
-DECL|ptr|member|uint8_t *ptr;
+DECL|remainingclen|member|uint32_t remainingclen;
 DECL|remaining|member|size_t remaining;
 DECL|remaining|member|uint32_t remaining;
 DECL|type|member|uint8_t type;
+DECL|writer_arg|member|void *writer_arg;
+DECL|writer|member|cbor_encoder_writer *writer;
+DECL|wr|member|struct cbor_buf_writer wr;

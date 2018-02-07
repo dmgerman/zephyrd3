@@ -1,0 +1,7 @@
+DECL|_cbor_encoder_get_buffer_pointer|function|uint8_t *_cbor_encoder_get_buffer_pointer(const CborEncoder *encoder)
+DECL|cbor_buf_writer_buffer_size|function|cbor_buf_writer_buffer_size(struct cbor_buf_writer *cb, const uint8_t *buffer)
+DECL|cbor_buf_writer_init|function|cbor_buf_writer_init(struct cbor_buf_writer *cb, uint8_t *buffer, size_t size)
+DECL|cbor_buf_writer|function|cbor_buf_writer(struct cbor_encoder_writer *arg, const char *data, int len)
+DECL|cbor_encoder_get_buffer_size|function|size_t cbor_encoder_get_buffer_size(const CborEncoder *encoder, const uint8_t *buffer)
+DECL|cbor_encoder_get_extra_bytes_needed|function|size_t cbor_encoder_get_extra_bytes_needed(const CborEncoder *encoder)
+DECL|would_overflow|function|would_overflow(struct cbor_buf_writer *cb, size_t len)
