@@ -43,6 +43,7 @@ DECL|net_app_close2|function|int net_app_close2(struct net_app_ctx *ctx, struct 
 DECL|net_app_close|function|int net_app_close(struct net_app_ctx *ctx)
 DECL|net_app_foreach|function|static void net_app_foreach(net_app_ctx_cb_t cb, enum net_app_type type, void *user_data)
 DECL|net_app_get_net_buf|function|struct net_buf *net_app_get_net_buf(struct net_app_ctx *ctx, struct net_pkt *pkt, s32_t timeout)
+DECL|net_app_get_net_pkt_with_dst|function|struct net_pkt *net_app_get_net_pkt_with_dst(struct net_app_ctx *ctx, const struct sockaddr *dst, s32_t timeout)
 DECL|net_app_get_net_pkt|function|struct net_pkt *net_app_get_net_pkt(struct net_app_ctx *ctx, sa_family_t family, s32_t timeout)
 DECL|net_app_release|function|int net_app_release(struct net_app_ctx *ctx)
 DECL|net_app_send_buf|function|int net_app_send_buf(struct net_app_ctx *ctx, u8_t *buf, size_t buf_len, const struct sockaddr *dst, socklen_t dst_len,
