@@ -35,6 +35,7 @@ DECL|mem_pool_data_unref|function|static void mem_pool_data_unref(struct net_buf
 DECL|net_buf_alloc_fixed_debug|function|struct net_buf *net_buf_alloc_fixed_debug(struct net_buf_pool *pool, s32_t timeout, const char *func, int line)
 DECL|net_buf_alloc_fixed|function|struct net_buf *net_buf_alloc_fixed(struct net_buf_pool *pool, s32_t timeout)
 DECL|net_buf_alloc_len_debug|function|struct net_buf *net_buf_alloc_len_debug(struct net_buf_pool *pool, size_t size,s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_alloc_len(struct net_buf_pool *pool, size_t size,
+DECL|net_buf_alloc_with_data_debug|function|struct net_buf *net_buf_alloc_with_data_debug(struct net_buf_pool *pool, void *data, size_t size, s32_t timeout, const char *func, int line) #else
 DECL|net_buf_clone|function|struct net_buf *net_buf_clone(struct net_buf *buf, s32_t timeout)
 DECL|net_buf_fixed_cb|variable|net_buf_fixed_cb
 DECL|net_buf_frag_add|function|struct net_buf *net_buf_frag_add(struct net_buf *head, struct net_buf *frag)

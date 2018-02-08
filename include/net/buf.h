@@ -1,3 +1,4 @@
+DECL|NET_BUF_EXTERNAL_DATA|macro|NET_BUF_EXTERNAL_DATA
 DECL|NET_BUF_FRAGS|macro|NET_BUF_FRAGS
 DECL|NET_BUF_POOL_DEFINE|macro|NET_BUF_POOL_DEFINE
 DECL|NET_BUF_POOL_FIXED_DEFINE|macro|NET_BUF_POOL_FIXED_DEFINE
@@ -42,6 +43,7 @@ DECL|net_buf_add_u8|macro|net_buf_add_u8
 DECL|net_buf_add|macro|net_buf_add
 DECL|net_buf_alloc_fixed|macro|net_buf_alloc_fixed
 DECL|net_buf_alloc_len|macro|net_buf_alloc_len
+DECL|net_buf_alloc_with_data|macro|net_buf_alloc_with_data
 DECL|net_buf_alloc|macro|net_buf_alloc
 DECL|net_buf_data_alloc|struct|struct net_buf_data_alloc {
 DECL|net_buf_data_cb|struct|struct net_buf_data_cb {
