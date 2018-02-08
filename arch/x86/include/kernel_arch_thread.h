@@ -14,7 +14,6 @@ DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
 DECL|cs|member|unsigned short cs; /* 2 : x87 FPU instruction pointer selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
 DECL|ds|member|unsigned short ds; /* 2 : x87 FPU instr operand ptr selector */
-DECL|esf|member|void *esf;
 DECL|esp|member|unsigned long esp;
 DECL|excNestCount|member|unsigned excNestCount; /* nested exception count */
 DECL|fcw|member|unsigned short fcw; /* 2 : x87 FPU control word */
