@@ -15,7 +15,7 @@ DECL|_net_app_print_info|function|void _net_app_print_info(struct net_app_ctx *c
 DECL|_net_app_received|function|void _net_app_received(struct net_context *net_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|_net_app_register|function|void _net_app_register(struct net_app_ctx *ctx)
 DECL|_net_app_select_net_ctx_debug|function|struct net_context *_net_app_select_net_ctx_debug(struct net_app_ctx *ctx, const struct sockaddr *dst, const char *caller, int line) #else
-DECL|_net_app_set_local_addr|function|int _net_app_set_local_addr(struct sockaddr *addr, const char *myaddr, u16_t port)
+DECL|_net_app_set_local_addr|function|int _net_app_set_local_addr(struct net_app_ctx *ctx, struct sockaddr *addr, const char *myaddr, u16_t port)
 DECL|_net_app_set_net_ctx|function|int _net_app_set_net_ctx(struct net_app_ctx *ctx, struct net_context *net_ctx, struct sockaddr *addr, socklen_t socklen, enum net_ip_protocol proto)
 DECL|_net_app_sprint_ipaddr|function|char *_net_app_sprint_ipaddr(char *buf, int buflen, const struct sockaddr *addr)
 DECL|_net_app_ssl_mainloop|function|int _net_app_ssl_mainloop(struct net_app_ctx *ctx)
