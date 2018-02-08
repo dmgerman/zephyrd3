@@ -9,6 +9,7 @@ DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|abort_connection|function|static void abort_connection(struct net_tcp *tcp)
 DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack|member|u32_t ack;
+DECL|copy_sockaddr_to_sockaddr_ptr|function|static inline void copy_sockaddr_to_sockaddr_ptr(struct net_tcp *tcp, const struct sockaddr *local, struct sockaddr_ptr *addr)
 DECL|do_ref_if_needed|macro|do_ref_if_needed
 DECL|dst_addr|member|const struct sockaddr *dst_addr;
 DECL|fin_timer_cancel|function|static void fin_timer_cancel(struct net_tcp *tcp)
@@ -30,7 +31,7 @@ DECL|net_tcp_get_recv_wnd|function|u32_t net_tcp_get_recv_wnd(const struct net_t
 DECL|net_tcp_init|function|void net_tcp_init(void)
 DECL|net_tcp_parse_opts|function|int net_tcp_parse_opts(struct net_pkt *pkt, int opt_totlen, struct net_tcp_options *opts)
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_pkt **pkt)
-DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
+DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *local, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, u8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
 DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)

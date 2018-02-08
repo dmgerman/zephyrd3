@@ -52,7 +52,7 @@ DECL|send_ack|function|static int send_ack(struct net_context *context, struct s
 DECL|send_ack|member|u32_t send_ack;
 DECL|send_data|function|static int send_data(struct net_context *context, struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token,
 DECL|send_mss|member|u16_t send_mss;
-DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *remote)
+DECL|send_reset|function|static int send_reset(struct net_context *context, struct sockaddr *local, struct sockaddr *remote)
 DECL|send_seq|member|u32_t send_seq;
 DECL|send_syn_ack|function|static inline int send_syn_ack(struct net_context *context, struct sockaddr_ptr *local, struct sockaddr *remote)
 DECL|send_syn_segment|function|static inline int send_syn_segment(struct net_context *context, const struct sockaddr_ptr *local, const struct sockaddr *remote, int flags, const char *msg)
