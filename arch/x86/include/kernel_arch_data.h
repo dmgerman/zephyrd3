@@ -304,4 +304,3 @@ DECL|_INT_OR_EXC_MASK|macro|_INT_OR_EXC_MASK
 DECL|_kernel_arch_data__h_|macro|_kernel_arch_data__h_
 DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
 DECL|_kernel_arch|struct|struct _kernel_arch {
-DECL|isf|member|NANO_ISF *isf; /* ptr to interrupt stack frame */
