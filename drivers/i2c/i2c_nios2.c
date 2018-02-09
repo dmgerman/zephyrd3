@@ -1,5 +1,6 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|NIOS2_I2C_TIMEOUT_USEC|macro|NIOS2_I2C_TIMEOUT_USEC
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|i2c_dev|member|ALT_AVALON_I2C_DEV_t i2c_dev;
 DECL|i2c_nios2_cfg|variable|i2c_nios2_cfg
 DECL|i2c_nios2_configure|function|static int i2c_nios2_configure(struct device *dev, u32_t dev_config)
