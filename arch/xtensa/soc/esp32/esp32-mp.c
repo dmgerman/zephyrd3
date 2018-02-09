@@ -20,10 +20,6 @@ DECL|appcpu_top|variable|appcpu_top
 DECL|arg|member|void *arg;
 DECL|cpustart_rec|struct|struct cpustart_rec {
 DECL|cpu|member|int cpu;
-DECL|esp32rom_Cache_Flush|variable|esp32rom_Cache_Flush
-DECL|esp32rom_Cache_Read_Enable|variable|esp32rom_Cache_Read_Enable
-DECL|esp32rom_call_t|typedef|typedef void (*esp32rom_call_t)(int);
-DECL|esp32rom_ets_set_appcpu_boot_addr|variable|esp32rom_ets_set_appcpu_boot_addr
 DECL|fn|member|void (*fn)(int, void *);
 DECL|stack_top|member|char *stack_top;
 DECL|start_rec|variable|start_rec
