@@ -2,6 +2,8 @@ DECL|MEMORY_TO_MEMORY|enumerator|MEMORY_TO_MEMORY = 0x0,
 DECL|MEMORY_TO_PERIPHERAL|enumerator|MEMORY_TO_PERIPHERAL,
 DECL|PERIPHERAL_TO_MEMORY|enumerator|PERIPHERAL_TO_MEMORY
 DECL|_DMA_H_|macro|_DMA_H_
+DECL|_impl_dma_start|function|static inline int _impl_dma_start(struct device *dev, u32_t channel)
+DECL|_impl_dma_stop|function|static inline int _impl_dma_stop(struct device *dev, u32_t channel)
 DECL|block_count|member|u32_t block_count;
 DECL|block_size|member|u32_t block_size;
 DECL|channel_direction|member|u32_t channel_direction : 3;
@@ -29,8 +31,6 @@ DECL|dma_config|function|static inline int dma_config(struct device *dev, u32_t 
 DECL|dma_config|struct|struct dma_config {
 DECL|dma_driver_api|struct|struct dma_driver_api {
 DECL|dma_slot|member|u32_t dma_slot : 6;
-DECL|dma_start|function|static inline int dma_start(struct device *dev, u32_t channel)
-DECL|dma_stop|function|static inline int dma_stop(struct device *dev, u32_t channel)
 DECL|dma_width_index|function|static inline u32_t dma_width_index(u32_t size)
 DECL|error_callback_en|member|u32_t error_callback_en : 1;
 DECL|fifo_mode_control|member|u16_t fifo_mode_control : 4;
