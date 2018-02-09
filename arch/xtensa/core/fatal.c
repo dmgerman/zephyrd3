@@ -1,7 +1,7 @@
-DECL|FatalErrorHandler|function|FUNC_NORETURN void FatalErrorHandler(void)
-DECL|ReservedInterruptHandler|function|FUNC_NORETURN void ReservedInterruptHandler(unsigned int intNo)
-DECL|_NanoFatalErrorHandler|function|FUNC_NORETURN void _NanoFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
-DECL|_SysFatalErrorHandler|function|FUNC_NORETURN __weak void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
+DECL|FatalErrorHandler|function|XTENSA_ERR_NORET void FatalErrorHandler(void)
+DECL|ReservedInterruptHandler|function|XTENSA_ERR_NORET void ReservedInterruptHandler(unsigned int intNo)
+DECL|_NanoFatalErrorHandler|function|XTENSA_ERR_NORET void _NanoFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
+DECL|_SysFatalErrorHandler|function|XTENSA_ERR_NORET __weak void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
 DECL|_default_esf|variable|_default_esf
 DECL|cause_str|function|static char *cause_str(unsigned int cause_code)
 DECL|dump_exc_state|function|static void dump_exc_state(void)
