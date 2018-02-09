@@ -1,5 +1,7 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
 DECL|CONN_TIMEOUT|macro|CONN_TIMEOUT
+DECL|FRAG_SIZE|macro|FRAG_SIZE
+DECL|FRAG_SIZE|macro|FRAG_SIZE
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
 DECL|LEGACY|enumerator|LEGACY, /* Legacy (pre-SSP) pairing */
 DECL|PASSKEY_CONFIRM|enumerator|PASSKEY_CONFIRM, /* Passkey confirm */
