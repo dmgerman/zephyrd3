@@ -25,7 +25,6 @@ DECL|bt_mesh_trans_resend|function|int bt_mesh_trans_resend(struct bt_mesh_net_t
 DECL|bt_mesh_trans_send|function|int bt_mesh_trans_send(struct bt_mesh_net_tx *tx, struct net_buf_simple *msg, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_tx_in_progress|function|bool bt_mesh_tx_in_progress(void)
 DECL|bt_mesh_tx_reset|function|void bt_mesh_tx_reset(void)
-DECL|buf_data|member|u8_t buf_data[CONFIG_BT_MESH_RX_SDU_MAX];
 DECL|buf|member|struct net_buf_simple buf;
 DECL|cb_data|member|void *cb_data;
 DECL|cb|member|const struct bt_mesh_send_cb *cb;
@@ -51,6 +50,7 @@ DECL|seg_n|member|u8_t seg_n:5,
 DECL|seg_n|member|u8_t seg_n:5, /* Last segment index */
 DECL|seg_retransmit|function|static void seg_retransmit(struct k_work *work)
 DECL|seg_rx_alloc|function|static struct seg_rx *seg_rx_alloc(struct bt_mesh_net_rx *net_rx, const u8_t *hdr, const u64_t *seq_auth, u8_t seg_n)
+DECL|seg_rx_buf_data|variable|seg_rx_buf_data
 DECL|seg_rx_find|function|static struct seg_rx *seg_rx_find(struct bt_mesh_net_rx *net_rx, const u64_t *seq_auth)
 DECL|seg_rx_is_valid|function|static bool seg_rx_is_valid(struct seg_rx *rx, struct bt_mesh_net_rx *net_rx, const u8_t *hdr, u8_t seg_n)
 DECL|seg_rx_reset|function|static void seg_rx_reset(struct seg_rx *rx, bool full_reset)

@@ -156,7 +156,6 @@ DECL|rand|member|u8_t rand[16]; /* Local Random */
 DECL|require_link|member|const u8_t require_link;
 DECL|reset_link|function|static void reset_link(void)
 DECL|retransmit|member|struct k_delayed_work retransmit;
-DECL|rx_buf|variable|rx_buf
 DECL|rx|member|} rx;
 DECL|seg|member|u8_t seg; /* Bit-field of unreceived segments */
 DECL|send_confirm|function|static void send_confirm(void)

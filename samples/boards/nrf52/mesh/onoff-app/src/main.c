@@ -21,19 +21,10 @@ DECL|dev_uuid|variable|dev_uuid
 DECL|elements|variable|elements
 DECL|gen_onoff_cli_op|variable|gen_onoff_cli_op
 DECL|gen_onoff_get|function|static void gen_onoff_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|gen_onoff_pub_cli_s_0|variable|gen_onoff_pub_cli_s_0
-DECL|gen_onoff_pub_cli_s_1|variable|gen_onoff_pub_cli_s_1
-DECL|gen_onoff_pub_cli_s_2|variable|gen_onoff_pub_cli_s_2
-DECL|gen_onoff_pub_cli|variable|gen_onoff_pub_cli
-DECL|gen_onoff_pub_srv_s_0|variable|gen_onoff_pub_srv_s_0
-DECL|gen_onoff_pub_srv_s_1|variable|gen_onoff_pub_srv_s_1
-DECL|gen_onoff_pub_srv_s_2|variable|gen_onoff_pub_srv_s_2
-DECL|gen_onoff_pub_srv|variable|gen_onoff_pub_srv
 DECL|gen_onoff_set_unack|function|static void gen_onoff_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_set|function|static void gen_onoff_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_srv_op|variable|gen_onoff_srv_op
 DECL|gen_onoff_status|function|static void gen_onoff_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|health_pub|variable|health_pub
 DECL|health_srv|variable|health_srv
 DECL|init_led|function|void init_led(u8_t dev, const char *port, u32_t pin_num)
 DECL|last_time|variable|last_time

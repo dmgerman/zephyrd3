@@ -73,7 +73,6 @@ DECL|hb_sub_print|function|static void hb_sub_print(struct bt_mesh_cfg_hb_sub *s
 DECL|hb_sub_set|function|static int hb_sub_set(int argc, char *argv[])
 DECL|health_cli|variable|health_cli
 DECL|health_current_status|function|static void health_current_status(struct bt_mesh_health_cli *cli, u16_t addr, u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
-DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
 DECL|hex2bin|function|static size_t hex2bin(const char *hex, u8_t *bin, size_t bin_len)

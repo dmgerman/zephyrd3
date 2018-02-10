@@ -10,7 +10,6 @@ DECL|fault_get_cur|function|static int fault_get_cur(struct bt_mesh_model *model
 DECL|fault_get_reg|function|static int fault_get_reg(struct bt_mesh_model *model, u16_t company_id, u8_t *test_id, u8_t *faults, u8_t *fault_count)
 DECL|fault_test|function|static int fault_test(struct bt_mesh_model *model, uint8_t test_id, uint16_t company_id)
 DECL|has_reg_fault|variable|has_reg_fault
-DECL|health_pub|variable|health_pub
 DECL|health_srv_cb|variable|health_srv_cb
 DECL|health_srv|variable|health_srv
 DECL|main|function|void main(void)
@@ -20,6 +19,4 @@ DECL|prov|variable|prov
 DECL|root_models|variable|root_models
 DECL|vnd_models|variable|vnd_models
 DECL|vnd_ops|variable|vnd_ops
-DECL|vnd_pub2|variable|vnd_pub2
 DECL|vnd_publish|function|static int vnd_publish(struct bt_mesh_model *mod)
-DECL|vnd_pub|variable|vnd_pub
