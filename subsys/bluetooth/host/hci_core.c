@@ -59,6 +59,7 @@ DECL|bt_storage|variable|bt_storage
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, u8_t evtype)
 DECL|clock_offset|member|u16_t clock_offset;
 DECL|cmd_data|struct|struct cmd_data {
+DECL|cmd_data|variable|cmd_data
 DECL|cmd|macro|cmd
 DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
@@ -174,7 +175,6 @@ DECL|status|member|u8_t status;
 DECL|synchronous_conn_complete|function|static void synchronous_conn_complete(struct net_buf *buf)
 DECL|sync|member|struct k_sem *sync;
 DECL|tx_thread_data|variable|tx_thread_data
-DECL|type|member|u8_t type;
 DECL|type|member|u8_t type;
 DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)
 DECL|update_pending_id|function|static void update_pending_id(struct bt_keys *keys)
