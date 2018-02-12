@@ -9,6 +9,7 @@ DECL|USB_DC_EP_INTERRUPT|enumerator|USB_DC_EP_INTERRUPT /* Interrupt type endpoi
 DECL|USB_DC_EP_ISOCHRONOUS|enumerator|USB_DC_EP_ISOCHRONOUS, /* Isochronous type endpoint */
 DECL|USB_DC_EP_SETUP|enumerator|USB_DC_EP_SETUP, /* SETUP received */
 DECL|USB_DC_ERROR|enumerator|USB_DC_ERROR, /* USB error reported by the controller */
+DECL|USB_DC_INTERFACE|enumerator|USB_DC_INTERFACE, /* USB interface selected */
 DECL|USB_DC_RESET|enumerator|USB_DC_RESET, /* USB reset */
 DECL|USB_DC_RESUME|enumerator|USB_DC_RESUME, /* USB connection resumed by the HOST */
 DECL|USB_DC_SUSPEND|enumerator|USB_DC_SUSPEND, /* USB connection suspended by the HOST */
