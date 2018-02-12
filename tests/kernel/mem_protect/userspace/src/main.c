@@ -4,6 +4,8 @@ DECL|INFO|macro|INFO
 DECL|PIPE_LEN|macro|PIPE_LEN
 DECL|REASON_HW_EXCEPTION|macro|REASON_HW_EXCEPTION
 DECL|REASON_HW_EXCEPTION|macro|REASON_HW_EXCEPTION
+DECL|REASON_HW_EXCEPTION|macro|REASON_HW_EXCEPTION
+DECL|REASON_KERNEL_OOPS|macro|REASON_KERNEL_OOPS
 DECL|REASON_KERNEL_OOPS|macro|REASON_KERNEL_OOPS
 DECL|REASON_KERNEL_OOPS|macro|REASON_KERNEL_OOPS
 DECL|STACKSIZE|macro|STACKSIZE
@@ -30,6 +32,7 @@ DECL|revoke_from_parent|function|static void revoke_from_parent(k_tid_t parentTh
 DECL|revoke_noperms_object|function|static void revoke_noperms_object(void)
 DECL|revoke_other_thread|function|static void revoke_other_thread(void)
 DECL|sem|variable|sem
+DECL|size|variable|size
 DECL|size|variable|size
 DECL|start_kernel_thread|function|static void start_kernel_thread(void)
 DECL|test_main|function|void test_main(void)
