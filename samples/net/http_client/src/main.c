@@ -21,7 +21,7 @@ DECL|do_sync_reqs|function|static inline int do_sync_reqs(struct http_ctx *ctx, 
 DECL|echo_apps_cert_der|variable|echo_apps_cert_der
 DECL|header_len|member|size_t header_len;
 DECL|http_ctx|variable|http_ctx
-DECL|http_received|function|static void http_received(struct http_ctx *ctx, struct net_pkt *pkt, int status, u32_t flags, void *user_data)
+DECL|http_received|function|static void http_received(struct http_ctx *ctx, struct net_pkt *pkt, int status, u32_t flags, const struct sockaddr *dst,
 DECL|https_result_buf|variable|https_result_buf
 DECL|main|function|void main(void)
 DECL|response|function|void response(struct http_ctx *ctx, u8_t *data, size_t buflen, size_t datalen, enum http_final_call data_end, void *user_data)

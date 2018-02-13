@@ -18,7 +18,6 @@ DECL|HTTP_VERDICT_DROP|enumerator|HTTP_VERDICT_DROP,
 DECL|WS_CONNECTION|enumerator|WS_CONNECTION,
 DECL|ZEPHYR_USER_AGENT|macro|ZEPHYR_USER_AGENT
 DECL|__HTTP_H__|macro|__HTTP_H__
-DECL|addr|member|struct sockaddr *addr;
 DECL|app_ctx|member|struct net_app_ctx app_ctx;
 DECL|body_found|member|u8_t body_found:1;
 DECL|body_start|member|u8_t *body_start;
@@ -88,7 +87,6 @@ DECL|parser|member|struct http_parser parser;
 DECL|payload_size|member|u16_t payload_size;
 DECL|payload|member|const char *payload;
 DECL|pending|member|struct net_pkt *pending;
-DECL|port|member|u16_t port;
 DECL|processed|member|size_t processed;
 DECL|protocol|member|const char *protocol;
 DECL|recv|member|http_recv_cb_t recv;
