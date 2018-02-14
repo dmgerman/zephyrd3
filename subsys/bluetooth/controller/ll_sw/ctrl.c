@@ -27,6 +27,7 @@ DECL|STATE_NONE|enumerator|STATE_NONE,
 DECL|STATE_RX|enumerator|STATE_RX,
 DECL|STATE_STOP|enumerator|STATE_STOP,
 DECL|STATE_TX|enumerator|STATE_TX,
+DECL|XON_BITMASK|macro|XON_BITMASK
 DECL|_radio|variable|_radio
 DECL|access_addr_get|function|static u32_t access_addr_get(void)
 DECL|addr_us_get|function|static inline u32_t addr_us_get(u8_t phy)
