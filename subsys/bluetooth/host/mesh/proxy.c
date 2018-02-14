@@ -44,8 +44,8 @@ DECL|bt_mesh_proxy_prov_disable|function|int bt_mesh_proxy_prov_disable(void)
 DECL|bt_mesh_proxy_prov_enable|function|int bt_mesh_proxy_prov_enable(void)
 DECL|bt_mesh_proxy_relay|function|bool bt_mesh_proxy_relay(struct net_buf_simple *buf, u16_t dst)
 DECL|bt_mesh_proxy_send|function|int bt_mesh_proxy_send(struct bt_conn *conn, u8_t type, struct net_buf_simple *msg)
-DECL|buf_data|member|u8_t buf_data[CLIENT_BUF_SIZE];
 DECL|buf|member|struct net_buf_simple buf;
+DECL|client_buf_data|variable|client_buf_data
 DECL|client_filter_match|function|static bool client_filter_match(struct bt_mesh_proxy_client *client,u16_t addr)
 DECL|clients|variable|clients
 DECL|conn_callbacks|variable|conn_callbacks
