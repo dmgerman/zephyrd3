@@ -121,6 +121,7 @@ DECL|feature_rsp_send|function|static u8_t feature_rsp_send(struct connection *c
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|filter_policy|member|u8_t filter_policy:2;
 DECL|gc_lookup_ppm|variable|gc_lookup_ppm
+DECL|hdr_conn_get|function|static inline struct shdr *hdr_conn_get(u8_t ticker_id,struct connection **conn)
 DECL|hdr|member|struct shdr hdr;
 DECL|hdr|member|struct shdr hdr;
 DECL|hf_clock|member|struct device *hf_clock;
