@@ -11,16 +11,16 @@ DECL|DEADBEEF|macro|DEADBEEF
 DECL|PRINTF_MAX_STRING_LENGTH|macro|PRINTF_MAX_STRING_LENGTH
 DECL|REALLY_LONG_STRING|macro|REALLY_LONG_STRING
 DECL|d|member|double d;
-DECL|main|function|void main(void)
 DECL|raw_double_u|union|union raw_double_u {
-DECL|snprintf_test|function|int snprintf_test(void)
-DECL|sprintf_double_test|function|int sprintf_double_test(void)
-DECL|sprintf_integer_test|function|int sprintf_integer_test(void)
-DECL|sprintf_misc_test|function|int sprintf_misc_test(void)
-DECL|sprintf_stringtest|function|int sprintf_stringtest(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_snprintf|function|void test_snprintf(void)
+DECL|test_sprintf_double|function|void test_sprintf_double(void)
+DECL|test_sprintf_integer|function|void test_sprintf_integer(void)
+DECL|test_sprintf_misc|function|void test_sprintf_misc(void)
+DECL|test_sprintf_string|function|void test_sprintf_string(void)
+DECL|test_vsnprintf|function|void test_vsnprintf(void)
+DECL|test_vsprintf|function|void test_vsprintf(void)
 DECL|tvsnprintf|function|int tvsnprintf(char *s, size_t len, const char *format, ...)
 DECL|tvsprintf|function|int tvsprintf(char *s, const char *format, ...)
 DECL|u1|member|u32_t u1; /* This part contains the exponent */
 DECL|u2|member|u32_t u2; /* This part contains the fraction */
-DECL|vsnprintf_test|function|int vsnprintf_test(void)
-DECL|vsprintf_test|function|int vsprintf_test(void)
