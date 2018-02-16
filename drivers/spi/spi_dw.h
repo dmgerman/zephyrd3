@@ -65,33 +65,16 @@ DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
 DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|__SPI_DW_H__|macro|__SPI_DW_H__
-DECL|_spi_config_cs|function|static inline void _spi_config_cs(struct device *dev)
-DECL|_spi_config_cs|macro|_spi_config_cs
-DECL|_spi_control_cs|function|static inline void _spi_control_cs(struct device *dev, int on)
-DECL|_spi_control_cs|macro|_spi_control_cs
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_unused|member|u16_t _unused;
-DECL|_unused|member|u32_t _unused:1;
 DECL|clock_data|member|void *clock_data;
-DECL|clock|member|struct device *clock;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
 DECL|ctx|member|struct spi_context ctx;
-DECL|device_sync_sem|member|struct k_sem device_sync_sem;
-DECL|dfs|member|u32_t dfs:3; /* dfs in bytes: 1,2 or 4 */
 DECL|dfs|member|u8_t dfs; /* dfs in bytes: 1,2 or 4 */
-DECL|error|member|u32_t error:1;
-DECL|fifo_diff|member|u32_t fifo_diff:9; /* cannot be bigger than FIFO depth */
 DECL|fifo_diff|member|u8_t fifo_diff; /* cannot be bigger than FIFO depth */
-DECL|last_tx|member|u32_t last_tx:1;
 DECL|regs|member|u32_t regs;
-DECL|rx_buf_len|member|u32_t rx_buf_len;
-DECL|rx_buf|member|u8_t *rx_buf;
-DECL|slave|member|u32_t slave:17; /* up 16 slaves */
 DECL|spi_dw_config_t|typedef|typedef void (*spi_dw_config_t)(void);
 DECL|spi_dw_config|struct|struct spi_dw_config {
 DECL|spi_dw_data|struct|struct spi_dw_data {
-DECL|spi_dw_data|struct|struct spi_dw_data {
-DECL|tx_buf_len|member|u32_t tx_buf_len;
-DECL|tx_buf|member|const u8_t *tx_buf;
