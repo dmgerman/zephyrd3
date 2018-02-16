@@ -1,1 +1,1 @@
-DECL|intmath_test|function|void intmath_test(void)
+DECL|test_intmath|function|void test_intmath(void)

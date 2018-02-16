@@ -1,11 +1,11 @@
 DECL|container_node|struct|struct container_node {
 DECL|node|member|sys_snode_t node;
-DECL|slist_test|function|void slist_test(void)
 DECL|test_list|variable|test_list
 DECL|test_node_1|variable|test_node_1
 DECL|test_node_2|variable|test_node_2
 DECL|test_node_3|variable|test_node_3
 DECL|test_node_4|variable|test_node_4
+DECL|test_slist|function|void test_slist(void)
 DECL|unused|member|int unused;
 DECL|verify_content_amount|function|static inline bool verify_content_amount(sys_slist_t *list, int amount)
 DECL|verify_emptyness|function|static inline bool verify_emptyness(sys_slist_t *list)

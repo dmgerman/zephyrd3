@@ -1,6 +1,6 @@
 DECL|container_node|struct|struct container_node {
-DECL|dlist_test|function|void dlist_test(void)
 DECL|node|member|sys_dnode_t node;
+DECL|test_dlist|function|void test_dlist(void)
 DECL|test_list|variable|test_list
 DECL|test_node_1|variable|test_node_1
 DECL|test_node_2|variable|test_node_2

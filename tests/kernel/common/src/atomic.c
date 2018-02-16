@@ -1,1 +1,1 @@
-DECL|atomic_test|function|void atomic_test(void)
+DECL|test_atomic|function|void test_atomic(void)
