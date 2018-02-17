@@ -1,7 +1,5 @@
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
 DECL|_ASSERT_VALID_PRIO|macro|_ASSERT_VALID_PRIO
-DECL|_VALID_PRIO|macro|_VALID_PRIO
-DECL|_VALID_PRIO|macro|_VALID_PRIO
 DECL|_find_first_thread_to_unpend|function|_find_first_thread_to_unpend(_wait_q_t *wait_q, struct k_thread *from)
 DECL|_get_highest_ready_prio|function|static inline int _get_highest_ready_prio(void)
 DECL|_get_new_prio_with_ceiling|function|static inline int _get_new_prio_with_ceiling(int prio)
@@ -35,6 +33,8 @@ DECL|_is_thread_timeout_active|function|static inline int _is_thread_timeout_act
 DECL|_is_thread_timeout_expired|function|static ALWAYS_INLINE int _is_thread_timeout_expired(struct k_thread *thread)
 DECL|_is_thread_user|function|static inline int _is_thread_user(void)
 DECL|_is_under_prio_ceiling|function|static inline int _is_under_prio_ceiling(int prio)
+DECL|_is_valid_prio|function|static inline int _is_valid_prio(int prio, void *entry_point)
+DECL|_is_valid_prio|function|static inline int _is_valid_prio(int prio, void *entry_point)
 DECL|_ksched__h_|macro|_ksched__h_
 DECL|_mark_thread_as_not_pending|function|static inline void _mark_thread_as_not_pending(struct k_thread *thread)
 DECL|_mark_thread_as_not_polling|function|static inline void _mark_thread_as_not_polling(struct k_thread *thread)
