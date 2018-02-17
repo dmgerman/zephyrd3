@@ -15,8 +15,8 @@ DECL|task_sem|variable|task_sem
 DECL|test_failure|variable|test_failure
 DECL|test_main|function|void test_main(void)
 DECL|test_objects_init|function|static void test_objects_init(void)
+DECL|test_sleep|function|void test_sleep(void)
 DECL|test_thread_data|variable|test_thread_data
 DECL|test_thread_id|variable|test_thread_id
 DECL|test_thread_sem|variable|test_thread_sem
 DECL|test_thread|function|static void test_thread(int arg1, int arg2)
-DECL|testing_sleep|function|void testing_sleep(void)
