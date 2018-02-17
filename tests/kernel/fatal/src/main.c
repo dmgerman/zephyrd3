@@ -16,5 +16,5 @@ DECL|overflow_stack|variable|overflow_stack
 DECL|rv|variable|rv
 DECL|stack_thread1|function|void stack_thread1(void)
 DECL|stack_thread2|function|void stack_thread2(void)
+DECL|test_fatal|function|void test_fatal(void)
 DECL|test_main|function|void test_main(void)
-DECL|testing_fatal|function|void testing_fatal(void)
