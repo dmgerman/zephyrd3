@@ -36,13 +36,13 @@ DECL|sem_thread|variable|sem_thread
 DECL|test_busy_wait|function|static void test_busy_wait(void *mseconds, void *arg2, void *arg3)
 DECL|test_context|function|void test_context(void)
 DECL|test_k_yield|function|static int test_k_yield(void)
-DECL|test_kernel_cpu_idle|function|static int test_kernel_cpu_idle(int atomic)
-DECL|test_kernel_ctx_task|function|static int test_kernel_ctx_task(void)
-DECL|test_kernel_interrupts|function|static int test_kernel_interrupts(disable_int_func disable_int, enable_int_func enable_int, int irq)
+DECL|test_kernel_cpu_idle|function|static void test_kernel_cpu_idle(int atomic)
+DECL|test_kernel_ctx_task|function|static void test_kernel_ctx_task(void)
+DECL|test_kernel_interrupts|function|static void test_kernel_interrupts(disable_int_func disable_int, enable_int_func enable_int, int irq)
 DECL|test_kernel_thread|function|static int test_kernel_thread(k_tid_t task_thread_id)
 DECL|test_main|function|void test_main(void)
 DECL|test_thread_sleep|function|static void test_thread_sleep(void *delta, void *arg2, void *arg3)
-DECL|test_timeout|function|static int test_timeout(void)
+DECL|test_timeout|function|static void test_timeout(void)
 DECL|thread_data1|variable|thread_data1
 DECL|thread_data2|variable|thread_data2
 DECL|thread_detected_error|variable|thread_detected_error
