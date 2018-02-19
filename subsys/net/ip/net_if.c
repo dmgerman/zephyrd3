@@ -35,6 +35,7 @@ DECL|mcast_monitor_callbacks|variable|mcast_monitor_callbacks
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
+DECL|net_if_carrier_down|function|void net_if_carrier_down(struct net_if *iface)
 DECL|net_if_down|function|int net_if_down(struct net_if *iface)
 DECL|net_if_flush_tx|function|static void net_if_flush_tx(struct net_if *iface)
 DECL|net_if_foreach|function|void net_if_foreach(net_if_cb_t cb, void *user_data)
