@@ -18,10 +18,8 @@ DECL|FLASH_MIN_WRITE_SIZE|macro|FLASH_MIN_WRITE_SIZE
 DECL|FLASH_STATE_OFFSET|macro|FLASH_STATE_OFFSET
 DECL|IMAGE_OK_OFFS|macro|IMAGE_OK_OFFS
 DECL|MAGIC_OFFS|macro|MAGIC_OFFS
-DECL|VERSION_OFFSET|macro|VERSION_OFFSET
 DECL|__packed|variable|__packed
 DECL|boot_copy_done_read|function|static int boot_copy_done_read(u32_t bank_offs)
-DECL|boot_current_image_version|function|int boot_current_image_version(struct image_version *out_ver)
 DECL|boot_erase_img_bank|function|int boot_erase_img_bank(u32_t bank_offset)
 DECL|boot_flag_offs|function|static int boot_flag_offs(int flag, u32_t bank_offs, u32_t *offs)
 DECL|boot_flag_read|function|static int boot_flag_read(int flag, u32_t bank_offs)
@@ -43,7 +41,6 @@ DECL|boot_swap_state|struct|struct boot_swap_state {
 DECL|boot_swap_tables|variable|boot_swap_tables
 DECL|boot_swap_table|struct|struct boot_swap_table {
 DECL|boot_swap_type|function|int boot_swap_type(void)
-DECL|boot_version_read|function|static int boot_version_read(u32_t bank_offs, struct image_version *out_ver)
 DECL|boot_write_img_confirmed|function|int boot_write_img_confirmed(void)
 DECL|build_num|member|u32_t build_num;
 DECL|copy_done_slot0|member|u8_t copy_done_slot0;

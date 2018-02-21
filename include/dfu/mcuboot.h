@@ -8,11 +8,6 @@ DECL|__MCUBOOT_H__|macro|__MCUBOOT_H__
 DECL|build_num|member|u32_t build_num;
 DECL|h|member|} h;
 DECL|image_size|member|u32_t image_size;
-DECL|image_version|struct|struct image_version {
-DECL|iv_build_num|member|u32_t iv_build_num;
-DECL|iv_major|member|u8_t iv_major;
-DECL|iv_minor|member|u8_t iv_minor;
-DECL|iv_revision|member|u16_t iv_revision;
 DECL|major|member|u8_t major;
 DECL|mcuboot_img_header_v1|struct|struct mcuboot_img_header_v1 {
 DECL|mcuboot_img_header|struct|struct mcuboot_img_header {
