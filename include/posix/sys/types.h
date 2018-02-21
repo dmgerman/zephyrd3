@@ -26,6 +26,7 @@ DECL|schedpolicy|member|u32_t schedpolicy;
 DECL|sem|member|struct k_sem *sem;
 DECL|stacksize|member|size_t stacksize;
 DECL|stack|member|void *stack;
+DECL|timer_t|typedef|typedef unsigned long timer_t;
 DECL|useconds_t|typedef|typedef unsigned long useconds_t;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
