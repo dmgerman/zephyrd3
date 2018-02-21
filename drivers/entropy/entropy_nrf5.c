@@ -10,7 +10,7 @@ DECL|entropy_nrf5_dev_data|struct|struct entropy_nrf5_dev_data {
 DECL|entropy_nrf5_get_entropy|function|static int entropy_nrf5_get_entropy(struct device *device, u8_t *buf, u16_t len)
 DECL|entropy_nrf5_init|function|static int entropy_nrf5_init(struct device *device)
 DECL|first|member|u8_t first;
-DECL|get|function|static u8_t get(struct rand *rng, u8_t octets, u8_t *rand)
+DECL|get|function|static inline u8_t get(struct rand *rng, u8_t octets, u8_t *rand)
 DECL|init|function|static void init(struct rand *rng, u8_t len, u8_t threshold)
 DECL|isr_rand|function|static void isr_rand(void *arg)
 DECL|isr|function|static int isr(struct rand *rng, bool store)
