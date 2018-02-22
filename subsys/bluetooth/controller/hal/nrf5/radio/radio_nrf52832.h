@@ -63,6 +63,7 @@ DECL|SW_SWITCH_TIMER|macro|SW_SWITCH_TIMER
 DECL|SW_SWITCH_TIMER|macro|SW_SWITCH_TIMER
 DECL|hal_radio_phy_mode_get|function|static inline u32_t hal_radio_phy_mode_get(u8_t phy, u8_t flags)
 DECL|hal_radio_ram_prio_setup|function|static inline void hal_radio_ram_prio_setup(void)
+DECL|hal_radio_reset|function|static inline void hal_radio_reset(void)
 DECL|hal_radio_rx_chain_delay_ns_get|function|static inline u32_t hal_radio_rx_chain_delay_ns_get(u8_t phy, u8_t flags)
 DECL|hal_radio_rx_chain_delay_us_get|function|static inline u32_t hal_radio_rx_chain_delay_us_get(u8_t phy, u8_t flags)
 DECL|hal_radio_rx_ready_delay_ns_get|function|static inline u32_t hal_radio_rx_ready_delay_ns_get(u8_t phy, u8_t flags)
