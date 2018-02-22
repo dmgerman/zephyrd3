@@ -547,12 +547,17 @@ DECL|__SENSOR_LSM6DSL_H__|macro|__SENSOR_LSM6DSL_H__
 DECL|accel_sample_x|member|int accel_sample_x;
 DECL|accel_sample_y|member|int accel_sample_y;
 DECL|accel_sample_z|member|int accel_sample_z;
+DECL|comm_master_dev_name|member|char *comm_master_dev_name;
+DECL|comm_master|member|struct device *comm_master;
 DECL|gyro_sample_x|member|int gyro_sample_x;
 DECL|gyro_sample_y|member|int gyro_sample_y;
 DECL|gyro_sample_z|member|int gyro_sample_z;
-DECL|i2c_master_dev_name|member|char *i2c_master_dev_name;
-DECL|i2c_master|member|struct device *i2c_master;
-DECL|i2c_slave_addr|member|u16_t i2c_slave_addr;
+DECL|hw_tf|member|const struct lsm6dsl_transfer_function *hw_tf;
 DECL|lsm6dsl_config|struct|struct lsm6dsl_config {
 DECL|lsm6dsl_data|struct|struct lsm6dsl_data {
+DECL|lsm6dsl_transfer_function|struct|struct lsm6dsl_transfer_function {
+DECL|read_data|member|int (*read_data)(struct lsm6dsl_data *data, u8_t reg_addr,
+DECL|read_reg|member|int (*read_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
 DECL|temp_sample|member|int temp_sample;
+DECL|update_reg|member|int (*update_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
+DECL|write_data|member|int (*write_data)(struct lsm6dsl_data *data, u8_t reg_addr,
