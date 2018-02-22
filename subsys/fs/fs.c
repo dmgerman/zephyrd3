@@ -1,0 +1,26 @@
+DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|fs_closedir|function|int fs_closedir(struct fs_dir_t *zdp)
+DECL|fs_close|function|int fs_close(struct fs_file_t *zfp)
+DECL|fs_init|function|static int fs_init(struct device *dev)
+DECL|fs_map|variable|fs_map
+DECL|fs_mkdir|function|int fs_mkdir(const char *abs_path)
+DECL|fs_mnt_list|variable|fs_mnt_list
+DECL|fs_mount|function|int fs_mount(struct fs_mount_t *mp)
+DECL|fs_opendir|function|int fs_opendir(struct fs_dir_t *zdp, const char *abs_path)
+DECL|fs_open|function|int fs_open(struct fs_file_t *zfp, const char *file_name)
+DECL|fs_readdir|function|int fs_readdir(struct fs_dir_t *zdp, struct fs_dirent *entry)
+DECL|fs_read|function|ssize_t fs_read(struct fs_file_t *zfp, void *ptr, size_t size)
+DECL|fs_register|function|int fs_register(enum fs_type type, struct fs_file_system_t *fs)
+DECL|fs_rename|function|int fs_rename(const char *from, const char *to)
+DECL|fs_seek|function|int fs_seek(struct fs_file_t *zfp, off_t offset, int whence)
+DECL|fs_statvfs|function|int fs_statvfs(const char *abs_path, struct fs_statvfs *stat)
+DECL|fs_stat|function|int fs_stat(const char *abs_path, struct fs_dirent *entry)
+DECL|fs_sync|function|int fs_sync(struct fs_file_t *zfp)
+DECL|fs_tell|function|off_t fs_tell(struct fs_file_t *zfp)
+DECL|fs_truncate|function|int fs_truncate(struct fs_file_t *zfp, off_t length)
+DECL|fs_unlink|function|int fs_unlink(const char *abs_path)
+DECL|fs_unmount|function|int fs_unmount(struct fs_mount_t *mp)
+DECL|fs_unregister|function|int fs_unregister(enum fs_type type, struct fs_file_system_t *fs)
+DECL|fs_write|function|ssize_t fs_write(struct fs_file_t *zfp, const void *ptr, size_t size)
+DECL|get_mnt_point|function|int get_mnt_point(struct fs_mount_t **mnt_pntp, const char *name, size_t *match_len)
+DECL|mutex|variable|mutex
