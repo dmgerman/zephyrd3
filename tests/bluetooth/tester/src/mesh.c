@@ -64,6 +64,7 @@ DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
 DECL|provision_node|function|static void provision_node(u8_t *data, u16_t len)
 DECL|prov|variable|prov
+DECL|proxy_identity_enable|function|static void proxy_identity_enable(u8_t *data, u16_t len)
 DECL|reg_faults|variable|reg_faults
 DECL|reset|function|static void reset(u8_t *data, u16_t len)
 DECL|root_models|variable|root_models
