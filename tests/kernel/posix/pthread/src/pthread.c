@@ -11,5 +11,6 @@ DECL|curr_bounce_thread|variable|curr_bounce_thread
 DECL|cvar0|variable|cvar0
 DECL|cvar1|variable|cvar1
 DECL|lock|variable|lock
-DECL|main|function|void main(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_pthread|function|void test_pthread(void)
 DECL|thread_top|function|void *thread_top(void *p1)
