@@ -6,6 +6,7 @@ DECL|convert_port|function|static bool convert_port(const char *buf, u16_t *port
 DECL|net_addr_ntop|function|char *net_addr_ntop(sa_family_t family, const void *src, char *dst, size_t size)
 DECL|net_addr_pton|function|int net_addr_pton(sa_family_t family, const char *src, void *dst)
 DECL|net_byte_to_hex|function|char *net_byte_to_hex(char *ptr, u8_t byte, char base, bool pad)
+DECL|net_bytes_from_str|function|int net_bytes_from_str(u8_t *buf, int buf_len, const char *src)
 DECL|net_calc_chksum_ipv4|function|u16_t net_calc_chksum_ipv4(struct net_pkt *pkt)
 DECL|net_calc_chksum|function|u16_t net_calc_chksum(struct net_pkt *pkt, u8_t proto)
 DECL|net_header_fits|function|bool net_header_fits(struct net_pkt *pkt, u8_t *hdr, size_t hdr_size)
