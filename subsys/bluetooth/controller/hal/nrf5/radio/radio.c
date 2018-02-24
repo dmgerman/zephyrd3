@@ -1,7 +1,5 @@
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
 DECL|RADIO_PDU_LEN_MAX|macro|RADIO_PDU_LEN_MAX
-DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
-DECL|SIM_SIDE_EFFECTS_MISSING|macro|SIM_SIDE_EFFECTS_MISSING
 DECL|isr_radio|function|void isr_radio(void)
 DECL|last_pdu_end_us|variable|last_pdu_end_us
 DECL|radio_aa_set|function|void radio_aa_set(u8_t *aa)
