@@ -15,7 +15,6 @@ DECL|cdc_acm_dev_data|variable|cdc_acm_dev_data
 DECL|cdc_acm_dev_status_cb|function|static void cdc_acm_dev_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|cdc_acm_dev|variable|cdc_acm_dev
 DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api
-DECL|cdc_acm_driver_api|variable|cdc_acm_driver_api
 DECL|cdc_acm_ep_data|variable|cdc_acm_ep_data
 DECL|cdc_acm_fifo_fill|function|static int cdc_acm_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|cdc_acm_fifo_read|function|static int cdc_acm_fifo_read(struct device *dev, u8_t *rx_data, const int size)
