@@ -10,6 +10,7 @@ DECL|ecm_bulk_out|function|static void ecm_bulk_out(u8_t ep, enum usb_dc_ep_cb_s
 DECL|ecm_class_handler|function|static int ecm_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|ecm_ep_data|variable|ecm_ep_data
 DECL|ecm_function|variable|ecm_function
+DECL|ecm_have_payload|function|static bool ecm_have_payload(struct net_pkt *pkt)
 DECL|ecm_int_in|function|static void ecm_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|ecm_send|function|static int ecm_send(struct net_pkt *pkt)
 DECL|in_pkt|variable|in_pkt
