@@ -2,6 +2,8 @@ DECL|FAULT_DUMP|macro|FAULT_DUMP
 DECL|FAULT_DUMP|macro|FAULT_DUMP
 DECL|PR_EXC|macro|PR_EXC
 DECL|PR_EXC|macro|PR_EXC
+DECL|STORE_xFAR|macro|STORE_xFAR
+DECL|STORE_xFAR|macro|STORE_xFAR
 DECL|_BusFault|function|static void _BusFault(const NANO_ESF *esf, int fromHardFault)
 DECL|_DebugMonitor|function|static void _DebugMonitor(const NANO_ESF *esf)
 DECL|_FaultDump|function|static void _FaultDump(const NANO_ESF *esf, int fault)
