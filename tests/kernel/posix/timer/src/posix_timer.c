@@ -5,4 +5,5 @@ DECL|PERIOD_SECS|macro|PERIOD_SECS
 DECL|SECS_TO_SLEEP|macro|SECS_TO_SLEEP
 DECL|exp_count|variable|exp_count
 DECL|handler|function|void handler(union sigval val)
-DECL|main|function|void main(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_timer|function|void test_timer(void)
