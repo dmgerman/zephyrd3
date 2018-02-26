@@ -1,4 +1,5 @@
 DECL|H_NFFS_TEST_UTILS_|macro|H_NFFS_TEST_UTILS_
+DECL|NFFS_MNTP|macro|NFFS_MNTP
 DECL|children|member|struct nffs_test_file_desc *children;
 DECL|contents_len|member|int contents_len;
 DECL|contents|member|const char *contents;
