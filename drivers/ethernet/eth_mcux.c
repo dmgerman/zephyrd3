@@ -15,7 +15,7 @@ DECL|eth_0_init|function|static int eth_0_init(struct device *dev)
 DECL|eth_callback|function|static void eth_callback(ENET_Type *base, enet_handle_t *handle, enet_event_t event, void *param)
 DECL|eth_context|member|struct eth_context *eth_context;
 DECL|eth_context|struct|struct eth_context {
-DECL|eth_get_ptp_data|function|static bool eth_get_ptp_data(struct net_pkt *pkt, enet_ptp_time_data_t *ptpTsData)
+DECL|eth_get_ptp_data|function|static bool eth_get_ptp_data(struct net_if *iface, struct net_pkt *pkt, enet_ptp_time_data_t *ptpTsData)
 DECL|eth_iface_init|function|static void eth_iface_init(struct net_if *iface)
 DECL|eth_mcux_decode_duplex_and_speed|function|static void eth_mcux_decode_duplex_and_speed(u32_t status, phy_duplex_t *p_phy_duplex, phy_speed_t *p_phy_speed)
 DECL|eth_mcux_delayed_phy_work|function|static void eth_mcux_delayed_phy_work(struct k_work *item)
