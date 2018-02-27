@@ -25,7 +25,4 @@ DECL|DW_SPI_REG_TXFLR|macro|DW_SPI_REG_TXFLR
 DECL|DW_SPI_REG_TXFTLR|macro|DW_SPI_REG_TXFTLR
 DECL|DW_SPI_REG_TXOICR|macro|DW_SPI_REG_TXOICR
 DECL|__SPI_DW_REGS_H__|macro|__SPI_DW_REGS_H__
-DECL|_clock_config|function|static inline void _clock_config(struct device *dev)
-DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
-DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
 DECL|clear_interrupts|macro|clear_interrupts

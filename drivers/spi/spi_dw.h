@@ -65,10 +65,14 @@ DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
 DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|__SPI_DW_H__|macro|__SPI_DW_H__
+DECL|_clock_config|function|static inline int _clock_config(struct device *dev)
+DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
+DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_unused|member|u16_t _unused;
 DECL|clock_data|member|void *clock_data;
+DECL|clock_name|member|const char *clock_name;
 DECL|clock|member|struct device *clock;
 DECL|config_func|member|spi_dw_config_t config_func;
 DECL|ctx|member|struct spi_context ctx;
