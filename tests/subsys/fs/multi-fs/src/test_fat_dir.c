@@ -1,0 +1,6 @@
+DECL|test_fat_mkdir|function|void test_fat_mkdir(void)
+DECL|test_fat_readdir|function|void test_fat_readdir(void)
+DECL|test_fat_rmdir|function|void test_fat_rmdir(void)
+DECL|test_lsdir|function|static int test_lsdir(const char *path)
+DECL|test_mkdir|function|static int test_mkdir(void)
+DECL|test_rmdir|function|static int test_rmdir(void)
