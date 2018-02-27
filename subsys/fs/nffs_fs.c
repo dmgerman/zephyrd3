@@ -20,6 +20,7 @@ DECL|nffs_os_mempool_get|function|void *nffs_os_mempool_get(nffs_os_mempool_t *p
 DECL|nffs_os_mempool_init|function|int nffs_os_mempool_init(void)
 DECL|nffs_readdir|function|static int nffs_readdir(struct fs_dir_t *zdp, struct fs_dirent *entry)
 DECL|nffs_read|function|static ssize_t nffs_read(struct fs_file_t *zfp, void *ptr, size_t size)
+DECL|nffs_rename|function|static int nffs_rename(struct fs_mount_t *mountp, const char *from, const char *to)
 DECL|nffs_seek|function|static int nffs_seek(struct fs_file_t *zfp, off_t offset, int whence)
 DECL|nffs_statvfs|function|static int nffs_statvfs(struct fs_mount_t *mountp,const char *path, struct fs_statvfs *stat)
 DECL|nffs_stat|function|static int nffs_stat(struct fs_mount_t *mountp, const char *path, struct fs_dirent *entry)
