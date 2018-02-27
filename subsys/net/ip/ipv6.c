@@ -77,7 +77,6 @@ DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_pkt *pk
 DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_pkt *pkt)
 DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx, u16_t *last_hdr_idx)
 DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)
-DECL|net_ipv6_get_nbr_by_index|function|struct net_ipv6_nbr_data *net_ipv6_get_nbr_by_index(u8_t idx)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, u8_t idx)
 DECL|net_ipv6_init|function|void net_ipv6_init(void)
 DECL|net_ipv6_mld_join|function|int net_ipv6_mld_join(struct net_if *iface, const struct in6_addr *addr)
