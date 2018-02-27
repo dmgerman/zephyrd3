@@ -75,7 +75,7 @@ DECL|prepare_message|function|static struct net_pkt *prepare_message(struct net_
 DECL|secs|member|u16_t secs; /* Seconds elapsed since client began address
 DECL|send_discover|function|static void send_discover(struct net_if *iface)
 DECL|send_request|function|static void send_request(struct net_if *iface)
-DECL|setup_header|function|static void setup_header(struct net_pkt *pkt, const struct in_addr *server_addr)
+DECL|setup_header|function|static bool setup_header(struct net_pkt *pkt, const struct in_addr *server_addr)
 DECL|siaddr|member|u8_t siaddr[4]; /* IP address of next server to use in bootstrap
 DECL|xid|member|u32_t xid; /* Transaction ID, random number */
 DECL|yiaddr|member|u8_t yiaddr[4]; /* your (client) IP address */
