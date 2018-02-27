@@ -12,12 +12,18 @@ DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
 DECL|spi_config_0_irq|function|void spi_config_0_irq(void)
 DECL|spi_config_1_irq|function|void spi_config_1_irq(void)
+DECL|spi_config_2_irq|function|void spi_config_2_irq(void)
+DECL|spi_config_3_irq|function|void spi_config_3_irq(void)
 DECL|spi_dw_compute_ndf|function|static uint32_t spi_dw_compute_ndf(const struct spi_buf *rx_bufs, size_t rx_count, u8_t dfs)
 DECL|spi_dw_config_0|variable|spi_dw_config_0
 DECL|spi_dw_config_1|variable|spi_dw_config_1
+DECL|spi_dw_config_2|variable|spi_dw_config_2
+DECL|spi_dw_config_3|variable|spi_dw_config_3
 DECL|spi_dw_configure|function|static int spi_dw_configure(const struct spi_dw_config *info, struct spi_dw_data *spi, const struct spi_config *config)
 DECL|spi_dw_data_port_0|variable|spi_dw_data_port_0
 DECL|spi_dw_data_port_1|variable|spi_dw_data_port_1
+DECL|spi_dw_data_port_2|variable|spi_dw_data_port_2
+DECL|spi_dw_data_port_3|variable|spi_dw_data_port_3
 DECL|spi_dw_init|function|int spi_dw_init(struct device *dev)
 DECL|spi_dw_isr|function|void spi_dw_isr(struct device *dev)
 DECL|spi_dw_release|function|static int spi_dw_release(struct device *dev, const struct spi_config *config)

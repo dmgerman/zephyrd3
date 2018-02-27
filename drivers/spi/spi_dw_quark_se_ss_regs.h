@@ -23,9 +23,8 @@ DECL|DW_SPI_REG_SR|macro|DW_SPI_REG_SR
 DECL|DW_SPI_REG_SSIENR|macro|DW_SPI_REG_SSIENR
 DECL|DW_SPI_REG_TXFLR|macro|DW_SPI_REG_TXFLR
 DECL|__SPI_DW_QUARK_SE_SS_H__|macro|__SPI_DW_QUARK_SE_SS_H__
-DECL|_clock_config|macro|_clock_config
-DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
-DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
+DECL|_extra_clock_off|function|static inline void _extra_clock_off(struct device *dev)
+DECL|_extra_clock_on|function|static inline void _extra_clock_on(struct device *dev)
 DECL|clear_interrupts|function|static inline void clear_interrupts(u32_t addr)
 DECL|read_ctrlr0|function|static inline u32_t read_ctrlr0(u32_t addr)
 DECL|read_dr|function|static inline u32_t read_dr(u32_t addr)

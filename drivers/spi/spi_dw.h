@@ -68,6 +68,8 @@ DECL|__SPI_DW_H__|macro|__SPI_DW_H__
 DECL|_clock_config|function|static inline int _clock_config(struct device *dev)
 DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
 DECL|_clock_on|function|static inline void _clock_on(struct device *dev)
+DECL|_extra_clock_off|macro|_extra_clock_off
+DECL|_extra_clock_on|macro|_extra_clock_on
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_spi_int_unmask|macro|_spi_int_unmask
 DECL|_unused|member|u16_t _unused;
