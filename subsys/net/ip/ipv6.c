@@ -47,7 +47,7 @@ DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct n
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_pkt *pkt)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_pkt *pkt, struct net_icmpv6_na_hdr *na_hdr, u16_t tllao_offset)
 DECL|handle_ns_input|function|static enum net_verdict handle_ns_input(struct net_pkt *pkt)
-DECL|handle_ns_neighbor|function|static inline void handle_ns_neighbor(struct net_pkt *pkt, u8_t ll_len, u16_t sllao_offset)
+DECL|handle_ns_neighbor|function|static inline struct net_nbr *handle_ns_neighbor(struct net_pkt *pkt, u8_t ll_len, u16_t sllao_offset)
 DECL|handle_prefix_autonomous|function|static inline void handle_prefix_autonomous(struct net_pkt *pkt,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
 DECL|handle_prefix_onlink|function|static inline void handle_prefix_onlink(struct net_pkt *pkt,struct net_icmpv6_nd_opt_prefix_info *prefix_info)
 DECL|handle_ra_6co|function|static inline struct net_buf *handle_ra_6co(struct net_pkt *pkt, struct net_buf *frag, u8_t len, u16_t offset, u16_t *pos)
