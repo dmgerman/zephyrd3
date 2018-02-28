@@ -9,3 +9,7 @@ DECL|CLOCK_CONTROL_NRF5_K32SRC_ACCURACY|macro|CLOCK_CONTROL_NRF5_K32SRC_ACCURACY
 DECL|CLOCK_CONTROL_NRF5_K32SRC|macro|CLOCK_CONTROL_NRF5_K32SRC
 DECL|CLOCK_CONTROL_NRF5_K32SRC|macro|CLOCK_CONTROL_NRF5_K32SRC
 DECL|_NRF5_CLOCK_CONTROL_H_|macro|_NRF5_CLOCK_CONTROL_H_
+DECL|outrdy_get|member|bool (*outrdy_get)(void);
+DECL|usb_power_int_enable|member|void (*usb_power_int_enable)(bool enable);
+DECL|usbd_power_nrf5_api|struct|struct usbd_power_nrf5_api {
+DECL|vbusdet_get|member|bool (*vbusdet_get)(void);
