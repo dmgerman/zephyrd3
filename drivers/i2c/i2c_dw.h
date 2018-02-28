@@ -27,6 +27,7 @@ DECL|IC_ENABLE_BIT|macro|IC_ENABLE_BIT
 DECL|__DRIVERS_I2C_DW_H|macro|__DRIVERS_I2C_DW_H
 DECL|app_config|member|u32_t app_config;
 DECL|base_address|member|u32_t base_address;
+DECL|bitrate|member|u32_t bitrate;
 DECL|config_func|member|i2c_isr_cb_t config_func;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|hcnt|member|u16_t hcnt;
