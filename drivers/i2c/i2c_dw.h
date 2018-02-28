@@ -33,8 +33,6 @@ DECL|hcnt|member|u16_t hcnt;
 DECL|i2c_dw_dev_config|struct|struct i2c_dw_dev_config {
 DECL|i2c_dw_rom_config|struct|struct i2c_dw_rom_config {
 DECL|i2c_isr_cb_t|typedef|typedef void (*i2c_isr_cb_t)(struct device *port);
-DECL|interrupt_mask|member|u32_t interrupt_mask;
-DECL|irq_num|member|u32_t irq_num;
 DECL|lcnt|member|u16_t lcnt;
 DECL|pci_dev|member|struct pci_dev_info pci_dev;
 DECL|request_bytes|member|u8_t request_bytes;
