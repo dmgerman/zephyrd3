@@ -1,10 +1,10 @@
 DECL|GET_CONTROLLER_INSTANCE|macro|GET_CONTROLLER_INSTANCE
 DECL|GET_DRIVER_DATA|macro|GET_DRIVER_DATA
 DECL|api|variable|api
+DECL|bitrate|member|u32_t bitrate;
 DECL|clock_gate|member|clk_periph_t clock_gate;
 DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
-DECL|default_cfg|member|u32_t default_cfg;
 DECL|device_power_state|member|u32_t device_power_state;
 DECL|device_sync_sem|member|struct k_sem device_sync_sem;
 DECL|driver_data_0|variable|driver_data_0
