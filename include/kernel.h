@@ -368,7 +368,7 @@ DECL|next_thread|member|struct k_thread *next_thread;
 DECL|next|member|u32_t *base, *next, *top;
 DECL|node|member|sys_dnode_t node;
 DECL|num_blocks|member|u32_t num_blocks;
-DECL|num_partitions|member|u32_t num_partitions;
+DECL|num_partitions|member|u8_t num_partitions;
 DECL|num_used|member|u32_t num_used;
 DECL|objects|member|void * const *objects;
 DECL|obj|member|void *obj;
