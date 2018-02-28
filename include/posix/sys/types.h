@@ -21,12 +21,20 @@ DECL|pthread_mutex_t|typedef|} pthread_mutex_t;
 DECL|pthread_mutexattr_t|typedef|} pthread_mutexattr_t;
 DECL|pthread_mutexattr|struct|typedef struct pthread_mutexattr {
 DECL|pthread_mutex|struct|typedef struct pthread_mutex {
+DECL|pthread_rwlock_obj|struct|typedef struct pthread_rwlock_obj {
+DECL|pthread_rwlock_t|typedef|} pthread_rwlock_t;
+DECL|pthread_rwlockattr_t|typedef|typedef u32_t pthread_rwlockattr_t;
 DECL|pthread_t|typedef|typedef void *pthread_t;
+DECL|rd_sem|member|struct k_sem rd_sem;
+DECL|reader_active|member|struct k_sem reader_active;/* blocks WR till reader has acquired lock */
 DECL|schedpolicy|member|u32_t schedpolicy;
 DECL|sem|member|struct k_sem *sem;
 DECL|stacksize|member|size_t stacksize;
 DECL|stack|member|void *stack;
+DECL|status|member|s32_t status;
 DECL|timer_t|typedef|typedef unsigned long timer_t;
 DECL|useconds_t|typedef|typedef unsigned long useconds_t;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
+DECL|wr_owner|member|k_tid_t wr_owner;
+DECL|wr_sem|member|struct k_sem wr_sem;

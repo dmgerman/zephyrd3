@@ -32,6 +32,8 @@ DECL|pthread_mutex_timedlock|function|static inline int pthread_mutex_timedlock(
 DECL|pthread_mutex_unlock|function|static inline int pthread_mutex_unlock(pthread_mutex_t *m)
 DECL|pthread_mutexattr_destroy|function|static inline int pthread_mutexattr_destroy(pthread_mutexattr_t *m)
 DECL|pthread_mutexattr_init|function|static inline int pthread_mutexattr_init(pthread_mutexattr_t *m)
+DECL|pthread_rwlockattr_destroy|function|static inline int pthread_rwlockattr_destroy(pthread_rwlockattr_t *attr)
+DECL|pthread_rwlockattr_init|function|static inline int pthread_rwlockattr_init(pthread_rwlockattr_t *attr)
 DECL|pthread_self|function|static inline pthread_t pthread_self(void)
 DECL|pthread_state|enum|enum pthread_state {
 DECL|retval|member|void *retval;
