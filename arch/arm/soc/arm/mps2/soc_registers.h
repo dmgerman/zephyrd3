@@ -19,17 +19,11 @@ DECL|button|member|volatile u32_t button;
 DECL|clk100hz|member|volatile u32_t clk100hz;
 DECL|clk1hz|member|volatile u32_t clk1hz;
 DECL|counter|member|volatile u32_t counter;
-DECL|emictrl|member|volatile u32_t emictrl;
 DECL|led0|member|volatile u32_t led0;
 DECL|misc|member|volatile u32_t misc;
 DECL|mps2_fpgaio|struct|struct mps2_fpgaio {
-DECL|mps2_syscon|struct|struct mps2_syscon {
-DECL|pmuctrl|member|volatile u32_t pmuctrl;
 DECL|prescale|member|volatile u32_t prescale;
 DECL|pscntr|member|volatile u32_t pscntr;
-DECL|remap|member|volatile u32_t remap;
 DECL|reserved1|member|volatile u32_t reserved1;
 DECL|reserved2|member|volatile u32_t reserved2;
 DECL|reserved3|member|volatile u32_t reserved3[10];
-DECL|resetop|member|volatile u32_t resetop;
-DECL|rstinfo|member|volatile u32_t rstinfo;
