@@ -14,5 +14,5 @@ DECL|i2c_stm32_irq_config_func_1|function|static void i2c_stm32_irq_config_func_
 DECL|i2c_stm32_irq_config_func_2|function|static void i2c_stm32_irq_config_func_2(struct device *dev)
 DECL|i2c_stm32_irq_config_func_3|function|static void i2c_stm32_irq_config_func_3(struct device *dev)
 DECL|i2c_stm32_irq_config_func_4|function|static void i2c_stm32_irq_config_func_4(struct device *dev)
-DECL|i2c_stm32_runtime_configure|function|static int i2c_stm32_runtime_configure(struct device *dev, u32_t config)
+DECL|i2c_stm32_runtime_configure|function|int i2c_stm32_runtime_configure(struct device *dev, u32_t config)
 DECL|i2c_stm32_transfer|function|static int i2c_stm32_transfer(struct device *dev, struct i2c_msg *msg, u8_t num_msgs, u16_t slave)
