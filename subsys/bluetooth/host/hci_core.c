@@ -124,6 +124,7 @@ DECL|le_read_buffer_size_complete|function|static void le_read_buffer_size_compl
 DECL|le_read_supp_states_complete|function|static void le_read_supp_states_complete(struct net_buf *buf)
 DECL|le_remote_feat_complete|function|static void le_remote_feat_complete(struct net_buf *buf)
 DECL|le_set_event_mask|function|static int le_set_event_mask(void)
+DECL|le_set_privacy_mode|function|static int le_set_privacy_mode(const bt_addr_le_t *addr, u8_t mode)
 DECL|le_set_private_addr|function|static int le_set_private_addr(void)
 DECL|le_set_private_addr|function|static int le_set_private_addr(void)
 DECL|link_encr|function|static void link_encr(const u16_t handle)
