@@ -130,6 +130,7 @@ DECL|init_addr_type|member|u8_t init_addr_type:1;
 DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_enabled|member|u8_t is_enabled:1;
+DECL|is_hdcd|member|u8_t is_hdcd:1;
 DECL|isr_adv_ci_adva_check|function|static inline bool isr_adv_ci_adva_check(struct pdu_adv *adv, struct pdu_adv *ci)
 DECL|isr_adv_ci_check|function|static inline bool isr_adv_ci_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t devmatch_ok, u8_t *rl_idx)
 DECL|isr_adv_ci_tgta_check|function|static inline bool isr_adv_ci_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
@@ -273,7 +274,7 @@ DECL|radio_scan_filter_pol_get|function|u32_t radio_scan_filter_pol_get(void)
 DECL|radio_ticks_active_to_start_set|function|void radio_ticks_active_to_start_set(u32_t ticks_active_to_start)
 DECL|reject_ext_ind_send|function|static u8_t reject_ext_ind_send(struct connection *conn,u8_t reject_opcode, u8_t error_code)
 DECL|remainder_anchor|member|u32_t remainder_anchor;
-DECL|rfu|member|u8_t rfu:4;
+DECL|rfu|member|u8_t rfu:3;
 DECL|rfu|member|u8_t rfu:4;
 DECL|rl_idx|member|u8_t rl_idx;
 DECL|rl_idx|member|u8_t rl_idx;
