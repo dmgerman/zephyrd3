@@ -38,7 +38,7 @@ DECL|NET_TCP_TIME_WAIT|enumerator|NET_TCP_TIME_WAIT,
 DECL|NET_TCP_URG|macro|NET_TCP_URG
 DECL|NET_TCP_WINDOW_SCALE_OPT|macro|NET_TCP_WINDOW_SCALE_OPT
 DECL|NET_TCP_WINDOW_SCALE_SIZE|macro|NET_TCP_WINDOW_SCALE_SIZE
-DECL|__TCP_H|macro|__TCP_H
+DECL|__TCP_INTERNAL_H|macro|__TCP_INTERNAL_H
 DECL|_padding|member|u32_t _padding : 13;
 DECL|accept_cb|member|net_tcp_accept_cb_t accept_cb;
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
