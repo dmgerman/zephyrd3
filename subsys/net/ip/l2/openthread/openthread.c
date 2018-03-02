@@ -18,6 +18,6 @@ DECL|openthread_send|function|enum net_verdict openthread_send(struct net_if *if
 DECL|otPlatRadioGetIeeeEui64|function|void otPlatRadioGetIeeeEui64(otInstance *instance, uint8_t *ieee_eui64)
 DECL|otTaskletsSignalPending|function|void otTaskletsSignalPending(otInstance *instance)
 DECL|ot_receive_handler|function|void ot_receive_handler(otMessage *aMessage, void *context)
-DECL|ot_state_changed_handler|function|void ot_state_changed_handler(u32_t flags, void *context)
+DECL|ot_state_changed_handler|function|void ot_state_changed_handler(uint32_t flags, void *context)
 DECL|ot_thread_data|variable|ot_thread_data
 DECL|ot_tid|variable|ot_tid
