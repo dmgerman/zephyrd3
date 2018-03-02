@@ -423,7 +423,6 @@ DECL|BACKKEY6|member|__I uint8_t BACKKEY6; /**< Backdoor Comparison Key 6., offs
 DECL|BACKKEY7|member|__I uint8_t BACKKEY7; /**< Backdoor Comparison Key 7., offset: 0x4 */
 DECL|BALUN_RX|member|__IO uint32_t BALUN_RX; /**< RF Analog Balun RX Mode Control, offset: 0x2C */
 DECL|BALUN_TX|member|__IO uint32_t BALUN_TX; /**< RF Analog Balun TX Mode Control, offset: 0x28 */
-DECL|BASE|member|__I uint32_t BASE; /**< MTB Base Register, offset: 0xC */
 DECL|BAUD|member|__IO uint32_t BAUD; /**< LPUART Baud Rate Register, offset: 0x0 */
 DECL|BBA_RES_TUNE_LIN_VAL_10_8|member|__IO uint32_t BBA_RES_TUNE_LIN_VAL_10_8; /**< BBA Resistor Tune Values 10..8, offset: 0x7C */
 DECL|BBA_RES_TUNE_LIN_VAL_3_0|member|__IO uint32_t BBA_RES_TUNE_LIN_VAL_3_0; /**< BBA Resistor Tune Values 3..0, offset: 0x74 */
@@ -9234,6 +9233,7 @@ DECL|ZLL_TMR_PRESCALE_TMR_PRESCALE_SHIFT|macro|ZLL_TMR_PRESCALE_TMR_PRESCALE_SHI
 DECL|ZLL_TMR_PRESCALE_TMR_PRESCALE|macro|ZLL_TMR_PRESCALE_TMR_PRESCALE
 DECL|ZLL_Type|typedef|} ZLL_Type;
 DECL|ZLL|macro|ZLL
+DECL|_BASE|member|__I uint32_t _BASE; /**< MTB Base Register, offset: 0xC */
 DECL|_MKW41Z4_H_|macro|_MKW41Z4_H_
 DECL|__CM0PLUS_REV|macro|__CM0PLUS_REV
 DECL|__MPU_PRESENT|macro|__MPU_PRESENT
