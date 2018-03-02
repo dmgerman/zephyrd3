@@ -1,4 +1,3 @@
-DECL|CID_INTEL|macro|CID_INTEL
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp

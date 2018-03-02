@@ -1,4 +1,3 @@
-DECL|CID_LOCAL|macro|CID_LOCAL
 DECL|CID_NVAL|macro|CID_NVAL
 DECL|CUR_FAULTS_MAX|macro|CUR_FAULTS_MAX
 DECL|app_idx|member|u16_t app_idx;

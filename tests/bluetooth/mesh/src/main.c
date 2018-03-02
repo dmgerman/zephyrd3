@@ -1,4 +1,3 @@
-DECL|CID_INTEL|macro|CID_INTEL
 DECL|MAX_FAULT|macro|MAX_FAULT
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|cfg_srv|variable|cfg_srv
