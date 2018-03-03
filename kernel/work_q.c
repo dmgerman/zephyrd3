@@ -1,3 +1,4 @@
+DECL|WORKQUEUE_THREAD_NAME|macro|WORKQUEUE_THREAD_NAME
 DECL|k_delayed_work_cancel|function|int k_delayed_work_cancel(struct k_delayed_work *work)
 DECL|k_delayed_work_init|function|void k_delayed_work_init(struct k_delayed_work *work, k_work_handler_t handler)
 DECL|k_delayed_work_submit_to_queue|function|int k_delayed_work_submit_to_queue(struct k_work_q *work_q, struct k_delayed_work *work, s32_t delay)
