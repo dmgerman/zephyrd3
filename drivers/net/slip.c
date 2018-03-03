@@ -20,8 +20,10 @@ DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|_SLIP_MTU|macro|_SLIP_MTU
 DECL|buf|member|u8_t buf[1]; /* SLIP data is read into this buf */
+DECL|eth_capabilities|function|static enum eth_hw_caps eth_capabilities(struct device *dev)
 DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|u16_t garbage;
+DECL|get_iface|function|static inline struct net_if *get_iface(struct slip_context *context, u16_t vlan_tag)
 DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length, size_t ll_reserve)
 DECL|hexdump|macro|hexdump
 DECL|iface|member|struct net_if *iface;
