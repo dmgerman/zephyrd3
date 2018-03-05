@@ -29,10 +29,10 @@ DECL|_MACACKWAITDURATION|macro|_MACACKWAITDURATION
 DECL|_MAX_PKT_TX_DURATION|macro|_MAX_PKT_TX_DURATION
 DECL|_irqsts1_event|function|static inline bool _irqsts1_event(struct mcr20a_context *mcr20a, u8_t *dregs)
 DECL|_irqsts3_event|function|static inline bool _irqsts3_event(struct mcr20a_context *mcr20a, u8_t *dregs)
-DECL|_mcr20a_read_burst|function|bool _mcr20a_read_burst(struct mcr20a_spi *spi, bool dreg, u16_t addr,u8_t *data_buf, u8_t len)
-DECL|_mcr20a_read_reg|function|u8_t _mcr20a_read_reg(struct mcr20a_spi *spi, bool dreg, u8_t addr)
-DECL|_mcr20a_write_burst|function|bool _mcr20a_write_burst(struct mcr20a_spi *spi, bool dreg, u16_t addr, u8_t *data_buf, u8_t len)
-DECL|_mcr20a_write_reg|function|bool _mcr20a_write_reg(struct mcr20a_spi *spi, bool dreg, u8_t addr, u8_t value)
+DECL|_mcr20a_read_burst|function|bool _mcr20a_read_burst(struct mcr20a_context *dev, bool dreg, u16_t addr,u8_t *data_buf, u8_t len)
+DECL|_mcr20a_read_reg|function|u8_t _mcr20a_read_reg(struct mcr20a_context *dev, bool dreg, u8_t addr)
+DECL|_mcr20a_write_burst|function|bool _mcr20a_write_burst(struct mcr20a_context *dev, bool dreg, u16_t addr, u8_t *data_buf, u8_t len)
+DECL|_mcr20a_write_reg|function|bool _mcr20a_write_reg(struct mcr20a_context *dev, bool dreg, u8_t addr, u8_t value)
 DECL|_usleep|macro|_usleep
 DECL|_xcvseq_wait_until_idle|function|static inline void _xcvseq_wait_until_idle(struct mcr20a_context *mcr20a)
 DECL|configure_gpios|function|static inline int configure_gpios(struct device *dev)
@@ -71,7 +71,7 @@ DECL|pll_frac_lt|variable|pll_frac_lt
 DECL|pll_int_lt|variable|pll_int_lt
 DECL|pow_lt|variable|pow_lt
 DECL|power_on_and_setup|function|static int power_on_and_setup(struct device *dev)
-DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct mcr20a_spi *spi, struct net_buf *buf, u8_t len)
+DECL|read_rxfifo_content|function|static inline bool read_rxfifo_content(struct mcr20a_context *dev, struct net_buf *buf, u8_t len)
 DECL|set_reset|function|static inline void set_reset(struct device *dev, u32_t value)
 DECL|setup_gpio_callbacks|function|static inline void setup_gpio_callbacks(struct mcr20a_context *mcr20a)
-DECL|write_txfifo_content|function|static inline bool write_txfifo_content(struct mcr20a_spi *spi,struct net_pkt *pkt, struct net_buf *frag)
+DECL|write_txfifo_content|function|static inline bool write_txfifo_content(struct mcr20a_context *dev,struct net_pkt *pkt, struct net_buf *frag)
