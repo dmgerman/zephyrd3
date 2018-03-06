@@ -1,0 +1,6 @@
+DECL|lsm6dsl_gpio_callback|function|static void lsm6dsl_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
+DECL|lsm6dsl_init_interrupt|function|int lsm6dsl_init_interrupt(struct device *dev)
+DECL|lsm6dsl_thread_cb|function|static void lsm6dsl_thread_cb(void *arg)
+DECL|lsm6dsl_thread|function|static void lsm6dsl_thread(int dev_ptr, int unused)
+DECL|lsm6dsl_trigger_set|function|int lsm6dsl_trigger_set(struct device *dev,const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
+DECL|lsm6dsl_work_cb|function|static void lsm6dsl_work_cb(struct k_work *work)

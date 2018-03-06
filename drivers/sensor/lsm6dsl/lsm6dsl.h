@@ -549,6 +549,12 @@ DECL|accel_sample_y|member|int accel_sample_y;
 DECL|accel_sample_z|member|int accel_sample_z;
 DECL|comm_master_dev_name|member|char *comm_master_dev_name;
 DECL|comm_master|member|struct device *comm_master;
+DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
+DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
+DECL|dev|member|struct device *dev;
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
+DECL|gpio_sem|member|struct k_sem gpio_sem;
+DECL|gpio|member|struct device *gpio;
 DECL|gyro_sample_x|member|int gyro_sample_x;
 DECL|gyro_sample_y|member|int gyro_sample_y;
 DECL|gyro_sample_z|member|int gyro_sample_z;
@@ -559,5 +565,7 @@ DECL|lsm6dsl_transfer_function|struct|struct lsm6dsl_transfer_function {
 DECL|read_data|member|int (*read_data)(struct lsm6dsl_data *data, u8_t reg_addr,
 DECL|read_reg|member|int (*read_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
 DECL|temp_sample|member|int temp_sample;
+DECL|thread|member|struct k_thread thread;
 DECL|update_reg|member|int (*update_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
+DECL|work|member|struct k_work work;
 DECL|write_data|member|int (*write_data)(struct lsm6dsl_data *data, u8_t reg_addr,
