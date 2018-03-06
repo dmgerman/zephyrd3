@@ -23,7 +23,7 @@ DECL|_idle_thread_s|variable|_idle_thread_s
 DECL|_idle_thread|variable|_idle_thread
 DECL|_main_thread_s|variable|_main_thread_s
 DECL|_main_thread|variable|_main_thread
-DECL|_main|function|static void _main(void *unused1, void *unused2, void *unused3)
+DECL|bg_thread_main|function|static void bg_thread_main(void *unused1, void *unused2, void *unused3)
 DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay

@@ -1,7 +1,5 @@
 DECL|MAX_THREAD_BITS|macro|MAX_THREAD_BITS
 DECL|_dump_object_error|function|void _dump_object_error(int retval, void *obj, struct _k_object *ko,enum k_objects otype)
-DECL|_handler_bad_syscall|function|static u32_t _handler_bad_syscall(u32_t bad_id, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
-DECL|_handler_no_syscall|function|static u32_t _handler_no_syscall(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|_impl_k_object_access_grant|function|void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_object_access_revoke|function|void _impl_k_object_access_revoke(void *object, struct k_thread *thread)
 DECL|_k_object_init|function|void _k_object_init(void *object)
@@ -14,6 +12,8 @@ DECL|_thread_perms_set|function|void _thread_perms_set(struct _k_object *ko, str
 DECL|child_id|member|int child_id;
 DECL|clear_perms_cb|function|static void clear_perms_cb(struct _k_object *ko, void *ctx_ptr)
 DECL|dump_permission_error|function|static void dump_permission_error(struct _k_object *ko)
+DECL|handler_bad_syscall|function|static u32_t handler_bad_syscall(u32_t bad_id, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
+DECL|handler_no_syscall|function|static u32_t handler_no_syscall(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|k_object_access_all_grant|function|void k_object_access_all_grant(void *object)
 DECL|otype_to_str|function|const char *otype_to_str(enum k_objects otype)
 DECL|parent_id|member|int parent_id;
