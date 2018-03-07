@@ -118,7 +118,6 @@ DECL|K_WORK_DEFINE|macro|K_WORK_DEFINE
 DECL|K_WORK_INITIALIZER|macro|K_WORK_INITIALIZER
 DECL|K_WORK_STATE_PENDING|enumerator|K_WORK_STATE_PENDING, /* Work item pending state */
 DECL|MEM_PARTITION_ENTRY|macro|MEM_PARTITION_ENTRY
-DECL|_ALIGN4|macro|_ALIGN4
 DECL|_EXPIRED|macro|_EXPIRED
 DECL|_INACTIVE|macro|_INACTIVE
 DECL|_INIT_OBJ_POLL_EVENT|macro|_INIT_OBJ_POLL_EVENT
@@ -136,13 +135,6 @@ DECL|_K_SEM_INITIALIZER|macro|_K_SEM_INITIALIZER
 DECL|_K_STACK_INITIALIZER|macro|_K_STACK_INITIALIZER
 DECL|_K_TIMER_INITIALIZER|macro|_K_TIMER_INITIALIZER
 DECL|_K_WORK_INITIALIZER|macro|_K_WORK_INITIALIZER
-DECL|_MPOOL_BITS_SIZE|macro|_MPOOL_BITS_SIZE
-DECL|_MPOOL_HAVE_LVL|macro|_MPOOL_HAVE_LVL
-DECL|_MPOOL_LBIT_BYTES|macro|_MPOOL_LBIT_BYTES
-DECL|_MPOOL_LBIT_WORDS_UNCLAMPED|macro|_MPOOL_LBIT_WORDS_UNCLAMPED
-DECL|_MPOOL_LBIT_WORDS|macro|_MPOOL_LBIT_WORDS
-DECL|_MPOOL_LVLS|macro|_MPOOL_LVLS
-DECL|_MPOOL_MINBLK|macro|_MPOOL_MINBLK
 DECL|_NON_OPTIMIZED_TICKS_PER_SEC|macro|_NON_OPTIMIZED_TICKS_PER_SEC
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
@@ -176,7 +168,6 @@ DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
-DECL|__MPOOL_LVLS|macro|__MPOOL_LVLS
 DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
@@ -224,16 +215,14 @@ DECL|active|member|u8_t active;
 DECL|arch|member|struct _thread_arch arch;
 DECL|attr|member|k_mem_partition_attr_t attr;
 DECL|base|member|struct _thread_base base;
+DECL|base|member|struct sys_mem_pool_base base;
 DECL|base|member|u32_t *base, *next, *top;
-DECL|bits_p|member|u32_t *bits_p;
-DECL|bits|member|u32_t bits;
 DECL|block_size|member|size_t block_size;
 DECL|block|member|u32_t block : 20;
 DECL|buffer_end|member|char *buffer_end;
 DECL|buffer_start|member|char *buffer_start;
 DECL|buffer|member|char *buffer;
 DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
-DECL|buf|member|void *buf;
 DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
 DECL|callee_saved|member|struct _callee_saved callee_saved;
 DECL|caller_saved|member|struct _caller_saved caller_saved;
@@ -258,7 +247,6 @@ DECL|flags|member|atomic_t flags[1];
 DECL|flags|member|u8_t flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
-DECL|free_list|member|sys_dlist_t free_list;
 DECL|func|member|_timeout_func_t func;
 DECL|handler|member|k_alert_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
@@ -307,7 +295,6 @@ DECL|k_mem_block_id|struct|struct k_mem_block_id {
 DECL|k_mem_block|struct|struct k_mem_block {
 DECL|k_mem_domain|struct|struct k_mem_domain {
 DECL|k_mem_partition|struct|struct k_mem_partition {
-DECL|k_mem_pool_lvl|struct|struct k_mem_pool_lvl {
 DECL|k_mem_pool|struct|struct k_mem_pool {
 DECL|k_mem_slab_num_free_get|function|static inline u32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
 DECL|k_mem_slab_num_used_get|function|static inline u32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
@@ -345,14 +332,11 @@ DECL|k_work_q|struct|struct k_work_q {
 DECL|k_work_submit_to_queue|function|static inline void k_work_submit_to_queue(struct k_work_q *work_q, struct k_work *work)
 DECL|k_work_submit|function|static inline void k_work_submit(struct k_work *work)
 DECL|k_work|struct|struct k_work {
-DECL|levels|member|struct k_mem_pool_lvl *levels;
 DECL|level|member|u32_t level : 4;
 DECL|limit|member|unsigned int limit;
 DECL|lock_count|member|u32_t lock_count;
-DECL|max_inline_level|member|u8_t max_inline_level;
 DECL|max_msgs|member|u32_t max_msgs;
 DECL|max_msgs|member|u32_t max_msgs;
-DECL|max_sz|member|size_t max_sz;
 DECL|mem_domain_info|member|struct _mem_domain_info mem_domain_info;
 DECL|mem_domain_q_node|member|sys_dnode_t mem_domain_q_node;
 DECL|mem_domain_q|member|sys_dlist_t mem_domain_q;
@@ -360,8 +344,6 @@ DECL|mem_domain|member|struct k_mem_domain *mem_domain;
 DECL|mode|member|u32_t mode:1;
 DECL|msg_size|member|size_t msg_size;
 DECL|msg_size|member|size_t msg_size;
-DECL|n_levels|member|u8_t n_levels;
-DECL|n_max|member|u16_t n_max;
 DECL|name|member|char *name;
 DECL|new|function|inline void *operator new(size_t size)
 DECL|new|function|inline void *operator new(size_t size, void *ptr)
