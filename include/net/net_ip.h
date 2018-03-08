@@ -146,6 +146,7 @@ DECL|net_tcp_seq_cmp|function|static inline s32_t net_tcp_seq_cmp(u32_t seq1, u3
 DECL|net_tcp_seq_greater|function|static inline bool net_tcp_seq_greater(u32_t seq1, u32_t seq2)
 DECL|net_tuple|struct|struct net_tuple {
 DECL|net_udp_hdr|struct|struct net_udp_hdr {
+DECL|net_vlan2priority|function|static inline enum net_priority net_vlan2priority(u8_t priority)
 DECL|nexthdr|member|u8_t nexthdr;
 DECL|nexthdr|member|u8_t nexthdr;
 DECL|ntohl|macro|ntohl
