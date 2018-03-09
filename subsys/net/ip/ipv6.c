@@ -91,6 +91,7 @@ DECL|net_ipv6_nbr_lookup|function|struct net_nbr *net_ipv6_nbr_lookup(struct net
 DECL|net_ipv6_nbr_rm|function|bool net_ipv6_nbr_rm(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_set_reachable_timer|function|void net_ipv6_nbr_set_reachable_timer(struct net_if *iface, struct net_nbr *nbr)
 DECL|net_ipv6_nbr_state2str|function|const char *net_ipv6_nbr_state2str(enum net_ipv6_nbr_state state)
+DECL|net_ipv6_nbr_state2str|function|const char *net_ipv6_nbr_state2str(enum net_ipv6_nbr_state state)
 DECL|net_ipv6_prepare_for_send|function|struct net_pkt *net_ipv6_prepare_for_send(struct net_pkt *pkt)
 DECL|net_ipv6_process_pkt|function|enum net_verdict net_ipv6_process_pkt(struct net_pkt *pkt)
 DECL|net_ipv6_send_fragmented_pkt|function|int net_ipv6_send_fragmented_pkt(struct net_if *iface, struct net_pkt *pkt, u16_t pkt_len)
