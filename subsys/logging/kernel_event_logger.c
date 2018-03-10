@@ -12,6 +12,7 @@ DECL|_sys_k_event_logger_thread_exit|function|void _sys_k_event_logger_thread_ex
 DECL|_sys_k_event_logger_thread_pend|function|void _sys_k_event_logger_thread_pend(struct k_thread *thread)
 DECL|_sys_k_event_logger_thread_ready|function|void _sys_k_event_logger_thread_ready(struct k_thread *thread)
 DECL|_sys_k_get_time|variable|_sys_k_get_time
+DECL|initialized|variable|initialized
 DECL|log_thread_event|function|static void log_thread_event(enum sys_k_event_logger_thread_event event, struct k_thread *thread)
 DECL|sys_k_event_logger_put_timed|function|void sys_k_event_logger_put_timed(u16_t event_id)
 DECL|sys_k_event_logger_register_as_collector|function|void sys_k_event_logger_register_as_collector(void)
