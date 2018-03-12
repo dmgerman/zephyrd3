@@ -1,7 +1,6 @@
 DECL|BM_ZLL_IRQSTS_TMRxMSK|macro|BM_ZLL_IRQSTS_TMRxMSK
 DECL|KW40Z_POST_SEQ_WAIT_TIME|macro|KW40Z_POST_SEQ_WAIT_TIME
 DECL|KW41Z_ACK_WAIT_TIME|macro|KW41Z_ACK_WAIT_TIME
-DECL|KW41Z_AUTOACK_ENABLED|macro|KW41Z_AUTOACK_ENABLED
 DECL|KW41Z_CCA_ED|enumerator|KW41Z_CCA_ED, /* Energy detect */
 DECL|KW41Z_CCA_MODE1|enumerator|KW41Z_CCA_MODE1, /* Energy above threshold */
 DECL|KW41Z_CCA_MODE2|enumerator|KW41Z_CCA_MODE2, /* Carrier sense only */
@@ -75,5 +74,6 @@ DECL|rx_warmup_time|member|u32_t rx_warmup_time;
 DECL|seq_retval|member|atomic_t seq_retval;
 DECL|seq_state|member|u32_t seq_state;
 DECL|seq_sync|member|struct k_sem seq_sync;
+DECL|time|member|u32_t time;
 DECL|tx_warmup_time|member|u32_t tx_warmup_time;
 DECL|type|member|u8_t type;
