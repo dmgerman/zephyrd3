@@ -562,8 +562,14 @@ DECL|hw_tf|member|const struct lsm6dsl_transfer_function *hw_tf;
 DECL|lsm6dsl_config|struct|struct lsm6dsl_config {
 DECL|lsm6dsl_data|struct|struct lsm6dsl_data {
 DECL|lsm6dsl_transfer_function|struct|struct lsm6dsl_transfer_function {
+DECL|magn_sample_x|member|int magn_sample_x;
+DECL|magn_sample_y|member|int magn_sample_y;
+DECL|magn_sample_z|member|int magn_sample_z;
+DECL|magn_sensitivity|member|float magn_sensitivity;
 DECL|read_data|member|int (*read_data)(struct lsm6dsl_data *data, u8_t reg_addr,
 DECL|read_reg|member|int (*read_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
+DECL|sample_press|member|int sample_press;
+DECL|sample_temp|member|int sample_temp;
 DECL|temp_sample|member|int temp_sample;
 DECL|thread|member|struct k_thread thread;
 DECL|update_reg|member|int (*update_reg)(struct lsm6dsl_data *data, u8_t reg_addr,
