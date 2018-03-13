@@ -9,7 +9,7 @@ DECL|cb|member|usb_dc_ep_callback cb;/* Endpoint callback function */
 DECL|data_len|member|u32_t data_len;
 DECL|ep_ena|member|u8_t ep_ena;
 DECL|fifo_num|member|u8_t fifo_num;
-DECL|fifo_size|member|u8_t fifo_size;
+DECL|fifo_size|member|u32_t fifo_size;
 DECL|in_ep_ctrl|member|struct usb_ep_ctrl_prv in_ep_ctrl[USB_DW_IN_EP_NUM];
 DECL|mps|member|u16_t mps; /* Max ep pkt size */
 DECL|n_tx_fifos|member|int n_tx_fifos;
