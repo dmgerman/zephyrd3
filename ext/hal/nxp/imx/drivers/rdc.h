@@ -1,0 +1,13 @@
+DECL|RDC_ClearStatusFlag|function|static inline void RDC_ClearStatusFlag(RDC_Type * base)
+DECL|RDC_ClearViolationStatus|function|static inline void RDC_ClearViolationStatus(RDC_Type * base, uint32_t mr)
+DECL|RDC_GetDomainID|function|static inline uint32_t RDC_GetDomainID(RDC_Type * base, uint32_t mda)
+DECL|RDC_GetPdapAccess|function|static inline uint8_t RDC_GetPdapAccess(RDC_Type * base, uint32_t pdap)
+DECL|RDC_GetSelfDomainID|function|static inline uint32_t RDC_GetSelfDomainID(RDC_Type * base)
+DECL|RDC_IsIntPending|function|static inline bool RDC_IsIntPending(RDC_Type * base)
+DECL|RDC_IsMemPowered|function|static inline bool RDC_IsMemPowered(RDC_Type * base)
+DECL|RDC_IsMrEnabled|function|static inline bool RDC_IsMrEnabled(RDC_Type * base, uint32_t mr)
+DECL|RDC_IsPdapSemaphoreRequired|function|static inline bool RDC_IsPdapSemaphoreRequired(RDC_Type * base, uint32_t pdap)
+DECL|RDC_SetDomainID|function|static inline void RDC_SetDomainID(RDC_Type * base, uint32_t mda, uint32_t domainId, bool lock)
+DECL|RDC_SetIntCmd|function|static inline void RDC_SetIntCmd(RDC_Type * base, bool enable)
+DECL|RDC_SetPdapAccess|function|static inline void RDC_SetPdapAccess(RDC_Type * base, uint32_t pdap, uint8_t perm, bool sreq, bool lock)
+DECL|__RDC_H__|macro|__RDC_H__

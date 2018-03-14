@@ -1,0 +1,6 @@
+DECL|ECSPI_Init|function|void ECSPI_Init(ECSPI_Type* base, const ecspi_init_config_t* initConfig)
+DECL|ECSPI_SetBaudRate|function|uint32_t ECSPI_SetBaudRate(ECSPI_Type* base, uint32_t sourceClockInHz, uint32_t bitsPerSec)
+DECL|ECSPI_SetDMACmd|function|void ECSPI_SetDMACmd(ECSPI_Type* base, uint32_t source, bool enable)
+DECL|ECSPI_SetFIFOThreshold|function|void ECSPI_SetFIFOThreshold(ECSPI_Type* base, uint32_t fifo, uint32_t threshold)
+DECL|ECSPI_SetIntCmd|function|void ECSPI_SetIntCmd(ECSPI_Type* base, uint32_t flags, bool enable)
+DECL|ECSPI_SetSampClockSource|function|void ECSPI_SetSampClockSource(ECSPI_Type* base, uint32_t source)

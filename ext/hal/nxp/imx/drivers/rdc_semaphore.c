@@ -1,0 +1,8 @@
+DECL|RDC_SEMAPHORE_GetGate|function|static RDC_SEMAPHORE_Type *RDC_SEMAPHORE_GetGate(uint32_t *pdap)
+DECL|RDC_SEMAPHORE_GetLockDomainID|function|uint32_t RDC_SEMAPHORE_GetLockDomainID(uint32_t pdap)
+DECL|RDC_SEMAPHORE_GetLockMaster|function|uint32_t RDC_SEMAPHORE_GetLockMaster(uint32_t pdap)
+DECL|RDC_SEMAPHORE_Lock|function|void RDC_SEMAPHORE_Lock(uint32_t pdap)
+DECL|RDC_SEMAPHORE_ResetAll|function|void RDC_SEMAPHORE_ResetAll(RDC_SEMAPHORE_Type *base)
+DECL|RDC_SEMAPHORE_Reset|function|void RDC_SEMAPHORE_Reset(uint32_t pdap)
+DECL|RDC_SEMAPHORE_TryLock|function|rdc_semaphore_status_t RDC_SEMAPHORE_TryLock(uint32_t pdap)
+DECL|RDC_SEMAPHORE_Unlock|function|void RDC_SEMAPHORE_Unlock(uint32_t pdap)

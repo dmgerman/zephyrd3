@@ -1,0 +1,62 @@
+DECL|FLEXCAN_BYTE_DATA_FIELD_MASK|macro|FLEXCAN_BYTE_DATA_FIELD_MASK
+DECL|FLEXCAN_ClearErrStatusFlag|function|void FLEXCAN_ClearErrStatusFlag(CAN_Type* base, uint32_t errorType)
+DECL|FLEXCAN_ClearMsgBufStatusFlag|function|void FLEXCAN_ClearMsgBufStatusFlag(CAN_Type* base, uint32_t msgBufIdx)
+DECL|FLEXCAN_Deinit|function|void FLEXCAN_Deinit(CAN_Type* base)
+DECL|FLEXCAN_DisableRxFifo|function|void FLEXCAN_DisableRxFifo(CAN_Type* base)
+DECL|FLEXCAN_Disable|function|void FLEXCAN_Disable(CAN_Type* base)
+DECL|FLEXCAN_EnableRxFifo|function|void FLEXCAN_EnableRxFifo(CAN_Type* base, uint8_t numOfFilters)
+DECL|FLEXCAN_Enable|function|void FLEXCAN_Enable(CAN_Type* base)
+DECL|FLEXCAN_EnterFreezeMode|function|static void FLEXCAN_EnterFreezeMode(CAN_Type* base)
+DECL|FLEXCAN_ExitFreezeMode|function|static void FLEXCAN_ExitFreezeMode(CAN_Type* base)
+DECL|FLEXCAN_GetErrCounter|function|void FLEXCAN_GetErrCounter(CAN_Type* base, uint8_t* txError, uint8_t* rxError)
+DECL|FLEXCAN_GetErrStatusFlag|function|uint32_t FLEXCAN_GetErrStatusFlag(CAN_Type* base, uint32_t errFlags)
+DECL|FLEXCAN_GetMsgBufPtr|function|flexcan_msgbuf_t* FLEXCAN_GetMsgBufPtr(CAN_Type* base, uint8_t msgBufIdx)
+DECL|FLEXCAN_GetMsgBufStatusFlag|function|bool FLEXCAN_GetMsgBufStatusFlag(CAN_Type* base, uint8_t msgBufIdx)
+DECL|FLEXCAN_GetRxFifoInfo|function|uint16_t FLEXCAN_GetRxFifoInfo(CAN_Type* base)
+DECL|FLEXCAN_GetRxFifoPtr|function|flexcan_msgbuf_t* FLEXCAN_GetRxFifoPtr(CAN_Type* base)
+DECL|FLEXCAN_Init|function|void FLEXCAN_Init(CAN_Type* base, const flexcan_init_config_t* initConfig)
+DECL|FLEXCAN_LockRxMsgBuf|function|bool FLEXCAN_LockRxMsgBuf(CAN_Type* base, uint8_t msgBufIdx)
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATAB_IDE_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATAB_IDE_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATAB_RTR_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATAB_RTR_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_EXT_MASK|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_EXT_MASK
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_EXT_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_EXT_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_STD_MASK|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_STD_MASK
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_STD_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATA_STD_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_MASK|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_MASK
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_SHIFT1|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_SHIFT1
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_SHIFT2|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_EXT_SHIFT2
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_IDE_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_IDE_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_RTR_SHIFT|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_RTR_SHIFT
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_MASK|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_MASK
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_SHIFT1|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_SHIFT1
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_SHIFT2|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATB_STD_SHIFT2
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_MASK|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_MASK
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT1|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT1
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT2|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT2
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT3|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT3
+DECL|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT4|macro|FLEXCAN_RX_FIFO_ID_FILTER_FORMATC_SHIFT4
+DECL|FLEXCAN_SetAbortCmd|function|void FLEXCAN_SetAbortCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetAutoBusOffRecoverCmd|function|void FLEXCAN_SetAutoBusOffRecoverCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetAutoRemoteResponseCmd|function|void FLEXCAN_SetAutoRemoteResponseCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetErrIntCmd|function|void FLEXCAN_SetErrIntCmd(CAN_Type* base, uint32_t errorType, bool enable)
+DECL|FLEXCAN_SetLocalPrioCmd|function|void FLEXCAN_SetLocalPrioCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetMatchPrioCmd|function|void FLEXCAN_SetMatchPrioCmd(CAN_Type* base, bool priority)
+DECL|FLEXCAN_SetMaxMsgBufNum|function|void FLEXCAN_SetMaxMsgBufNum(CAN_Type* base, uint32_t bufNum)
+DECL|FLEXCAN_SetMsgBufIntCmd|function|void FLEXCAN_SetMsgBufIntCmd(CAN_Type* base, uint8_t msgBufIdx, bool enable)
+DECL|FLEXCAN_SetOperatingMode|function|void FLEXCAN_SetOperatingMode(CAN_Type* base, uint8_t mode)
+DECL|FLEXCAN_SetRxFifoFilterNum|function|void FLEXCAN_SetRxFifoFilterNum(CAN_Type* base, uint32_t numOfFilters)
+DECL|FLEXCAN_SetRxFifoFilter|function|void FLEXCAN_SetRxFifoFilter(CAN_Type* base, uint32_t idFormat, flexcan_id_table_t *idFilterTable)
+DECL|FLEXCAN_SetRxFifoGlobalMask|function|void FLEXCAN_SetRxFifoGlobalMask(CAN_Type* base, uint32_t mask)
+DECL|FLEXCAN_SetRxGlobalMask|function|void FLEXCAN_SetRxGlobalMask(CAN_Type* base, uint32_t mask)
+DECL|FLEXCAN_SetRxIndividualMask|function|void FLEXCAN_SetRxIndividualMask(CAN_Type* base, uint32_t msgBufIdx, uint32_t mask)
+DECL|FLEXCAN_SetRxMaskMode|function|void FLEXCAN_SetRxMaskMode(CAN_Type* base, uint32_t mode)
+DECL|FLEXCAN_SetRxMaskRtrCmd|function|void FLEXCAN_SetRxMaskRtrCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetRxMsgBuff14Mask|function|void FLEXCAN_SetRxMsgBuff14Mask(CAN_Type* base, uint32_t mask)
+DECL|FLEXCAN_SetRxMsgBuff15Mask|function|void FLEXCAN_SetRxMsgBuff15Mask(CAN_Type* base, uint32_t mask)
+DECL|FLEXCAN_SetRxVoteCmd|function|void FLEXCAN_SetRxVoteCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetSelfReceptionCmd|function|void FLEXCAN_SetSelfReceptionCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetSelfWakeUpCmd|function|void FLEXCAN_SetSelfWakeUpCmd(CAN_Type* base, bool lpfEnable, bool enable)
+DECL|FLEXCAN_SetTimeSyncCmd|function|void FLEXCAN_SetTimeSyncCmd(CAN_Type* base, bool enable)
+DECL|FLEXCAN_SetTiming|function|void FLEXCAN_SetTiming(CAN_Type* base, const flexcan_timing_t* timing)
+DECL|FLEXCAN_UnlockAllRxMsgBuf|function|uint16_t FLEXCAN_UnlockAllRxMsgBuf(CAN_Type* base)
+DECL|RxFifoFilterElementNum|macro|RxFifoFilterElementNum

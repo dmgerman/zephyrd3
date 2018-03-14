@@ -1,0 +1,7 @@
+DECL|CCM_ANALOG_GetArmPllFreq|function|uint32_t CCM_ANALOG_GetArmPllFreq(CCM_ANALOG_Type * base)
+DECL|CCM_ANALOG_GetAudioPllFreq|function|uint32_t CCM_ANALOG_GetAudioPllFreq(CCM_ANALOG_Type * base)
+DECL|CCM_ANALOG_GetDdrPllFreq|function|uint32_t CCM_ANALOG_GetDdrPllFreq(CCM_ANALOG_Type * base)
+DECL|CCM_ANALOG_GetEnetPllFreq|function|uint32_t CCM_ANALOG_GetEnetPllFreq(CCM_ANALOG_Type * base)
+DECL|CCM_ANALOG_GetPfdFreq|function|uint32_t CCM_ANALOG_GetPfdFreq(CCM_ANALOG_Type * base, uint32_t pfdFrac)
+DECL|CCM_ANALOG_GetSysPllFreq|function|uint32_t CCM_ANALOG_GetSysPllFreq(CCM_ANALOG_Type * base)
+DECL|CCM_ANALOG_GetVideoPllFreq|function|uint32_t CCM_ANALOG_GetVideoPllFreq(CCM_ANALOG_Type * base)

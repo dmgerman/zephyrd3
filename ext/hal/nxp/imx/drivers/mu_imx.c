@@ -1,0 +1,7 @@
+DECL|MU_ReceiveMsg|function|void MU_ReceiveMsg(MU_Type * base, uint32_t regIndex, uint32_t *msg)
+DECL|MU_SendMsg|function|void MU_SendMsg(MU_Type * base, uint32_t regIndex, uint32_t msg)
+DECL|MU_SetFlags|function|void MU_SetFlags(MU_Type * base, uint32_t flags)
+DECL|MU_TriggerGeneralInt|function|mu_status_t MU_TriggerGeneralInt(MU_Type * base, uint32_t index)
+DECL|MU_TryReceiveMsg|function|mu_status_t MU_TryReceiveMsg(MU_Type * base, uint32_t regIndex, uint32_t *msg)
+DECL|MU_TrySendMsg|function|mu_status_t MU_TrySendMsg(MU_Type * base, uint32_t regIndex, uint32_t msg)
+DECL|MU_TrySetFlags|function|mu_status_t MU_TrySetFlags(MU_Type * base, uint32_t flags)
