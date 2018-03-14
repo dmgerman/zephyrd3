@@ -58,15 +58,15 @@ DECL|string_descr|member|} __packed string_descr;
 DECL|term_descr|member|struct usb_desc_header term_descr;
 DECL|tx_irq_ena|member|u8_t tx_irq_ena; /* Tx interrupt enable status */
 DECL|tx_ready|member|u8_t tx_ready;
-DECL|unicode_mfr|member|} __packed unicode_mfr;
-DECL|unicode_product|member|} __packed unicode_product;
-DECL|unicode_sn|member|} __packed unicode_sn;
 DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_mfr_descriptor|struct|struct usb_mfr_descriptor {
 DECL|usb_product_descriptor|struct|struct usb_product_descriptor {
 DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
 DECL|usb_string_desription|struct|struct usb_string_desription {
+DECL|utf16le_mfr|member|} __packed utf16le_mfr;
+DECL|utf16le_product|member|} __packed utf16le_product;
+DECL|utf16le_sn|member|} __packed utf16le_sn;
 DECL|webusb_register_request_handlers|function|void webusb_register_request_handlers(struct webusb_req_handlers *handlers)
 DECL|webusb_serial_baudrate_set|function|static void webusb_serial_baudrate_set(struct device *dev, u32_t baudrate)
 DECL|webusb_serial_bulk_in|function|static void webusb_serial_bulk_in(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)

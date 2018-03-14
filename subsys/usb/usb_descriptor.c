@@ -1,5 +1,6 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
+DECL|ascii7_to_utf16le|function|void ascii7_to_utf16le(int idx_max, int asci_idx_max, u8_t *buf)
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
@@ -60,14 +61,9 @@ DECL|mass_cfg|member|} __packed mass_cfg;
 DECL|rndis_cfg|member|} __packed rndis_cfg;
 DECL|string_descr|member|} __packed string_descr;
 DECL|term_descr|member|struct usb_desc_header term_descr;
-DECL|unicode_mac|member|} __packed unicode_mac;
-DECL|unicode_mfr|member|} __packed unicode_mfr;
-DECL|unicode_product|member|} __packed unicode_product;
-DECL|unicode_sn|member|} __packed unicode_sn;
 DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
-DECL|usb_fix_unicode_string|function|void usb_fix_unicode_string(int idx_max, int asci_idx_max, u8_t *buf)
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
 DECL|usb_hid_config|struct|struct usb_hid_config {
 DECL|usb_mass_config|struct|struct usb_mass_config {
@@ -77,3 +73,7 @@ DECL|usb_rndis_config|struct|struct usb_rndis_config {
 DECL|usb_set_hid_report_size|function|void usb_set_hid_report_size(u16_t report_desc_size)
 DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {
 DECL|usb_string_desription|struct|struct usb_string_desription {
+DECL|utf16le_mac|member|} __packed utf16le_mac;
+DECL|utf16le_mfr|member|} __packed utf16le_mfr;
+DECL|utf16le_product|member|} __packed utf16le_product;
+DECL|utf16le_sn|member|} __packed utf16le_sn;
