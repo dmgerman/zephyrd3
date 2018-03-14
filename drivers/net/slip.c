@@ -37,6 +37,7 @@ DECL|slip_context_data|variable|slip_context_data
 DECL|slip_context|struct|struct slip_context {
 DECL|slip_get_mac|function|static inline struct net_linkaddr *slip_get_mac(struct slip_context *slip)
 DECL|slip_if_api|variable|slip_if_api
+DECL|slip_if_api|variable|slip_if_api
 DECL|slip_iface_init|function|static void slip_iface_init(struct net_if *iface)
 DECL|slip_init|function|static int slip_init(struct device *dev)
 DECL|slip_input_byte|function|static inline int slip_input_byte(struct slip_context *slip, unsigned char c)
