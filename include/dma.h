@@ -1,3 +1,6 @@
+DECL|DMA_ADDR_ADJ_DECREMENT|enumerator|DMA_ADDR_ADJ_DECREMENT,
+DECL|DMA_ADDR_ADJ_INCREMENT|enumerator|DMA_ADDR_ADJ_INCREMENT,
+DECL|DMA_ADDR_ADJ_NO_CHANGE|enumerator|DMA_ADDR_ADJ_NO_CHANGE,
 DECL|MEMORY_TO_MEMORY|enumerator|MEMORY_TO_MEMORY = 0x0,
 DECL|MEMORY_TO_PERIPHERAL|enumerator|MEMORY_TO_PERIPHERAL,
 DECL|PERIPHERAL_TO_MEMORY|enumerator|PERIPHERAL_TO_MEMORY
@@ -20,6 +23,7 @@ DECL|dest_reload_en|member|u16_t dest_reload_en : 1;
 DECL|dest_scatter_count|member|u16_t dest_scatter_count;
 DECL|dest_scatter_en|member|u16_t dest_scatter_en : 1;
 DECL|dest_scatter_interval|member|u32_t dest_scatter_interval;
+DECL|dma_addr_adj|enum|enum dma_addr_adj {
 DECL|dma_api_config|typedef|typedef int (*dma_api_config)(struct device *dev, u32_t channel,
 DECL|dma_api_start|typedef|typedef int (*dma_api_start)(struct device *dev, u32_t channel);
 DECL|dma_api_stop|typedef|typedef int (*dma_api_stop)(struct device *dev, u32_t channel);
