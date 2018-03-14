@@ -23,6 +23,7 @@ DECL|__CLZ|macro|__CLZ
 DECL|__CMSIS_ICCARM_H__|macro|__CMSIS_ICCARM_H__
 DECL|__DMB|macro|__DMB
 DECL|__DSB|macro|__DSB
+DECL|__FORCEINLINE|macro|__FORCEINLINE
 DECL|__IAR_FT|macro|__IAR_FT
 DECL|__IAR_FT|macro|__IAR_FT
 DECL|__IAR_M0_FAMILY|macro|__IAR_M0_FAMILY
@@ -115,6 +116,7 @@ DECL|__SSAT|macro|__SSAT
 DECL|__SSAX|macro|__SSAX
 DECL|__SSUB16|macro|__SSUB16
 DECL|__SSUB8|macro|__SSUB8
+DECL|__STATIC_FORCEINLINE|macro|__STATIC_FORCEINLINE
 DECL|__STATIC_INLINE|macro|__STATIC_INLINE
 DECL|__STLB|function|__IAR_FT void __STLB(uint8_t value, volatile uint8_t *ptr)
 DECL|__STLEXB|function|__IAR_FT uint32_t __STLEXB(uint8_t value, volatile uint8_t *ptr)

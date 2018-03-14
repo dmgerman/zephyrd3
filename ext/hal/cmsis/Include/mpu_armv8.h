@@ -32,5 +32,4 @@ DECL|ARM_MPU_SetRegion_NS|function|__STATIC_INLINE void ARM_MPU_SetRegion_NS(uin
 DECL|ARM_MPU_SetRegion|function|__STATIC_INLINE void ARM_MPU_SetRegion(uint32_t rnr, uint32_t rbar, uint32_t rlar)
 DECL|RBAR|member|uint32_t RBAR; /*!< Region Base Address Register value */
 DECL|RLAR|member|uint32_t RLAR; /*!< Region Limit Address Register value */
-DECL|_ARM_MPU_Region_t|struct|typedef struct _ARM_MPU_Region_t {
 DECL|orderedCpy|function|__STATIC_INLINE void orderedCpy(volatile uint32_t* dst, const uint32_t* __RESTRICT src, uint32_t len)

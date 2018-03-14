@@ -44,5 +44,4 @@ DECL|ARM_MPU_SetRegionEx|function|__STATIC_INLINE void ARM_MPU_SetRegionEx(uint3
 DECL|ARM_MPU_SetRegion|function|__STATIC_INLINE void ARM_MPU_SetRegion(uint32_t rbar, uint32_t rasr)
 DECL|RASR|member|uint32_t RASR; //!< The region attribute and size register value (RASR) \ref MPU_RASR
 DECL|RBAR|member|uint32_t RBAR; //!< The region base address register value (RBAR)
-DECL|_ARM_MPU_Region_t|struct|typedef struct _ARM_MPU_Region_t {
 DECL|orderedCpy|function|__STATIC_INLINE void orderedCpy(volatile uint32_t* dst, const uint32_t* __RESTRICT src, uint32_t len)
