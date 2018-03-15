@@ -21,7 +21,8 @@ DECL|zsock_inet_pton|function|int zsock_inet_pton(sa_family_t family, const char
 DECL|zsock_listen|function|int zsock_listen(int sock, int backlog)
 DECL|zsock_poll|function|int zsock_poll(struct zsock_pollfd *fds, int nfds, int timeout)
 DECL|zsock_received_cb|function|static void zsock_received_cb(struct net_context *ctx, struct net_pkt *pkt, int status, void *user_data)
-DECL|zsock_recv_stream|function|static inline ssize_t zsock_recv_stream(struct net_context *ctx,void *buf, size_t max_len)
+DECL|zsock_recv_dgram|function|static inline ssize_t zsock_recv_dgram(struct net_context *ctx, void *buf, size_t max_len, int flags, struct sockaddr *src_addr,
+DECL|zsock_recv_stream|function|static inline ssize_t zsock_recv_stream(struct net_context *ctx,void *buf, size_t max_len, int flags)
 DECL|zsock_recvfrom|function|ssize_t zsock_recvfrom(int sock, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
 DECL|zsock_recv|function|ssize_t zsock_recv(int sock, void *buf, size_t max_len, int flags)
 DECL|zsock_sendto|function|ssize_t zsock_sendto(int sock, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
