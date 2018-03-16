@@ -1,3 +1,4 @@
+DECL|IEEE802154_AR_FLAG_SET|macro|IEEE802154_AR_FLAG_SET
 DECL|IEEE802154_FILTER_TYPE_IEEE_ADDR|enumerator|IEEE802154_FILTER_TYPE_IEEE_ADDR,
 DECL|IEEE802154_FILTER_TYPE_PAN_ID|enumerator|IEEE802154_FILTER_TYPE_PAN_ID,
 DECL|IEEE802154_FILTER_TYPE_SHORT_ADDR|enumerator|IEEE802154_FILTER_TYPE_SHORT_ADDR,
@@ -17,6 +18,7 @@ DECL|ieee802154_filter_type|enum|enum ieee802154_filter_type {
 DECL|ieee802154_filter|struct|struct ieee802154_filter {
 DECL|ieee802154_hw_caps|enum|enum ieee802154_hw_caps {
 DECL|ieee802154_init|macro|ieee802154_init
+DECL|ieee802154_is_ar_flag_set|function|static inline bool ieee802154_is_ar_flag_set(struct net_pkt *pkt)
 DECL|ieee802154_radio_api|struct|struct ieee802154_radio_api {
 DECL|ieee802154_radio_handle_ack|function|static inline enum net_verdict ieee802154_radio_handle_ack(struct net_if *iface, struct net_pkt *pkt)
 DECL|ieee802154_radio_send|function|static inline int ieee802154_radio_send(struct net_if *iface,struct net_pkt *pkt)
