@@ -27,4 +27,4 @@ DECL|device|struct|struct device {
 DECL|driver_api|member|const void *driver_api;
 DECL|driver_data|member|void *driver_data;
 DECL|init|member|int (*init)(struct device *device);
-DECL|name|member|char *name;
+DECL|name|member|const char *name;
