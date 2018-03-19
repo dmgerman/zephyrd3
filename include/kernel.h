@@ -312,6 +312,7 @@ DECL|k_mem_pool|struct|struct k_mem_pool {
 DECL|k_mem_slab_num_free_get|function|static inline u32_t k_mem_slab_num_free_get(struct k_mem_slab *slab)
 DECL|k_mem_slab_num_used_get|function|static inline u32_t k_mem_slab_num_used_get(struct k_mem_slab *slab)
 DECL|k_mem_slab|struct|struct k_mem_slab {
+DECL|k_msgq_attrs|struct|struct k_msgq_attrs {
 DECL|k_msgq|struct|struct k_msgq {
 DECL|k_mutex|struct|struct k_mutex {
 DECL|k_object_access_all_grant|function|static inline void k_object_access_all_grant(void *object)
@@ -350,12 +351,14 @@ DECL|limit|member|unsigned int limit;
 DECL|lock_count|member|u32_t lock_count;
 DECL|max_inline_level|member|u8_t max_inline_level;
 DECL|max_msgs|member|u32_t max_msgs;
+DECL|max_msgs|member|u32_t max_msgs;
 DECL|max_sz|member|size_t max_sz;
 DECL|mem_domain_info|member|struct _mem_domain_info mem_domain_info;
 DECL|mem_domain_q_node|member|sys_dnode_t mem_domain_q_node;
 DECL|mem_domain_q|member|sys_dlist_t mem_domain_q;
 DECL|mem_domain|member|struct k_mem_domain *mem_domain;
 DECL|mode|member|u32_t mode:1;
+DECL|msg_size|member|size_t msg_size;
 DECL|msg_size|member|size_t msg_size;
 DECL|n_levels|member|u8_t n_levels;
 DECL|n_max|member|u16_t n_max;
@@ -432,6 +435,7 @@ DECL|tx_target_thread|member|k_tid_t tx_target_thread;
 DECL|type|member|u32_t type:_POLL_NUM_TYPES;
 DECL|type|member|u8_t type;
 DECL|unused|member|u32_t unused:_POLL_EVENT_NUM_UNUSED_BITS;
+DECL|used_msgs|member|u32_t used_msgs;
 DECL|used_msgs|member|u32_t used_msgs;
 DECL|user_data|member|void *user_data;
 DECL|user_options|member|u8_t user_options;
