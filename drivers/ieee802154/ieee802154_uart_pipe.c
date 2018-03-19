@@ -18,13 +18,13 @@ DECL|received_dest_addr_matched|function|static bool received_dest_addr_matched(
 DECL|upipe_cca|function|static int upipe_cca(struct device *dev)
 DECL|upipe_context_data|variable|upipe_context_data
 DECL|upipe_dev|variable|upipe_dev
+DECL|upipe_filter|function|static int upipe_filter(struct device *dev,bool set, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|upipe_get_capabilities|function|static enum ieee802154_hw_caps upipe_get_capabilities(struct device *dev)
 DECL|upipe_iface_init|function|static void upipe_iface_init(struct net_if *iface)
 DECL|upipe_init|function|static int upipe_init(struct device *dev)
 DECL|upipe_radio_api|variable|upipe_radio_api
 DECL|upipe_rx|function|static u8_t *upipe_rx(u8_t *buf, size_t *off)
 DECL|upipe_set_channel|function|static int upipe_set_channel(struct device *dev, u16_t channel)
-DECL|upipe_set_filter|function|static int upipe_set_filter(struct device *dev, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|upipe_set_ieee_addr|function|static int upipe_set_ieee_addr(struct device *dev, const u8_t *ieee_addr)
 DECL|upipe_set_pan_id|function|static int upipe_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|upipe_set_short_addr|function|static int upipe_set_short_addr(struct device *dev, u16_t short_addr)

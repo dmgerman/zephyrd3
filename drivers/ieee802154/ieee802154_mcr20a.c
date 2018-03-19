@@ -43,6 +43,7 @@ DECL|irqb_int_handler|function|static inline void irqb_int_handler(struct device
 DECL|mcr20a_abort_sequence|function|static inline int mcr20a_abort_sequence(struct mcr20a_context *mcr20a,bool force)
 DECL|mcr20a_cca|function|static int mcr20a_cca(struct device *dev)
 DECL|mcr20a_context_data|variable|mcr20a_context_data
+DECL|mcr20a_filter|function|static int mcr20a_filter(struct device *dev, bool set, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|mcr20a_get_capabilities|function|static enum ieee802154_hw_caps mcr20a_get_capabilities(struct device *dev)
 DECL|mcr20a_get_rssi|function|static inline u32_t mcr20a_get_rssi(u32_t lqi)
 DECL|mcr20a_iface_init|function|static void mcr20a_iface_init(struct net_if *iface)
@@ -52,7 +53,6 @@ DECL|mcr20a_radio_api|variable|mcr20a_radio_api
 DECL|mcr20a_rx|function|static inline void mcr20a_rx(struct mcr20a_context *mcr20a, u8_t len)
 DECL|mcr20a_set_cca_mode|function|static int mcr20a_set_cca_mode(struct device *dev, u8_t mode)
 DECL|mcr20a_set_channel|function|static int mcr20a_set_channel(struct device *dev, u16_t channel)
-DECL|mcr20a_set_filter|function|static int mcr20a_set_filter(struct device *dev, enum ieee802154_filter_type type, const struct ieee802154_filter *filter)
 DECL|mcr20a_set_ieee_addr|function|static int mcr20a_set_ieee_addr(struct device *dev, const u8_t *ieee_addr)
 DECL|mcr20a_set_pan_id|function|static int mcr20a_set_pan_id(struct device *dev, u16_t pan_id)
 DECL|mcr20a_set_sequence|function|static inline int mcr20a_set_sequence(struct mcr20a_context *mcr20a, u8_t seq)
