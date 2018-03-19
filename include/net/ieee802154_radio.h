@@ -14,6 +14,7 @@ DECL|IEEE802154_HW_TX_RX_ACK|enumerator|IEEE802154_HW_TX_RX_ACK = BIT(5), /* Han
 DECL|__IEEE802154_RADIO_H__|macro|__IEEE802154_RADIO_H__
 DECL|__packed|variable|__packed
 DECL|cca|member|int (*cca)(struct device *dev);
+DECL|ed_scan|member|int (*ed_scan)(struct device *dev,
 DECL|filter|member|int (*filter)(struct device *dev,
 DECL|get_capabilities|member|enum ieee802154_hw_caps (*get_capabilities)(struct device *dev);
 DECL|get_subg_channel_count|member|u16_t (*get_subg_channel_count)(struct device *dev);
