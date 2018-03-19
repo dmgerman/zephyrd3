@@ -43,11 +43,12 @@ DECL|bt_mesh_cfg_relay_get|function|int bt_mesh_cfg_relay_get(u16_t net_idx, u16
 DECL|bt_mesh_cfg_relay_set|function|int bt_mesh_cfg_relay_set(u16_t net_idx, u16_t addr, u8_t new_relay, u8_t new_transmit, u8_t *status, u8_t *transmit)
 DECL|bt_mesh_cfg_ttl_get|function|int bt_mesh_cfg_ttl_get(u16_t net_idx, u16_t addr, u8_t *ttl)
 DECL|bt_mesh_cfg_ttl_set|function|int bt_mesh_cfg_ttl_set(u16_t net_idx, u16_t addr, u8_t val, u8_t *ttl)
-DECL|check_cli|function|static int check_cli(void)
 DECL|cid|member|u16_t cid;
 DECL|cid|member|u16_t cid;
 DECL|cid|member|u16_t cid;
-DECL|cli_wait|function|static int cli_wait(void *param, u32_t op)
+DECL|cli_prepare|function|static int cli_prepare(void *param, u32_t op)
+DECL|cli_reset|function|static void cli_reset(void)
+DECL|cli_wait|function|static int cli_wait(void)
 DECL|cli|variable|cli
 DECL|comp_data_status|function|static void comp_data_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|comp_data|struct|struct comp_data {
