@@ -1,7 +1,6 @@
 DECL|CONCURRENT_READER_LIMIT|macro|CONCURRENT_READER_LIMIT
 DECL|INITIALIZED|macro|INITIALIZED
 DECL|NOT_INITIALIZED|macro|NOT_INITIALIZED
-DECL|calculate_timeout|function|static s64_t calculate_timeout(const struct timespec *abstime)
 DECL|pthread_rwlock_destroy|function|int pthread_rwlock_destroy(pthread_rwlock_t *rwlock)
 DECL|pthread_rwlock_init|function|int pthread_rwlock_init(pthread_rwlock_t *rwlock,const pthread_rwlockattr_t *attr)
 DECL|pthread_rwlock_rdlock|function|int pthread_rwlock_rdlock(pthread_rwlock_t *rwlock)
