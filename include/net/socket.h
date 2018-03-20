@@ -30,6 +30,7 @@ DECL|connect|function|static inline int connect(int sock, const struct sockaddr 
 DECL|events|member|short events;
 DECL|fcntl|macro|fcntl
 DECL|fd|member|int fd;
+DECL|freeaddrinfo|function|static inline void freeaddrinfo(struct zsock_addrinfo *ai)
 DECL|getaddrinfo|function|static inline int getaddrinfo(const char *host, const char *service, const struct zsock_addrinfo *hints, struct zsock_addrinfo **res)
 DECL|inet_ntop|function|static inline char *inet_ntop(sa_family_t family, const void *src, char *dst, size_t size)
 DECL|inet_pton|function|static inline int inet_pton(sa_family_t family, const char *src, void *dst)
