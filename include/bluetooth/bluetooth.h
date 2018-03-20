@@ -40,7 +40,6 @@ DECL|interval|member|u16_t interval;
 DECL|length|member|u8_t length;
 DECL|limited|member|bool limited;
 DECL|options|member|u8_t options;
-DECL|own_addr|member|const bt_addr_t *own_addr;
 DECL|rssi|member|s8_t rssi;
 DECL|type|member|u8_t type;
 DECL|type|member|u8_t type;
