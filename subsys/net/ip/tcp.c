@@ -1,4 +1,5 @@
 DECL|ALLOC_TIMEOUT|macro|ALLOC_TIMEOUT
+DECL|FIN_TIMEOUT|macro|FIN_TIMEOUT
 DECL|NET_IP_MAX_OPTIONS|macro|NET_IP_MAX_OPTIONS
 DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
@@ -33,6 +34,7 @@ DECL|net_tcp_parse_opts|function|int net_tcp_parse_opts(struct net_pkt *pkt, int
 DECL|net_tcp_prepare_ack|function|int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote,struct net_pkt **pkt)
 DECL|net_tcp_prepare_reset|function|int net_tcp_prepare_reset(struct net_tcp *tcp, const struct sockaddr *local, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_segment|function|int net_tcp_prepare_segment(struct net_tcp *tcp, u8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
+DECL|net_tcp_put|function|int net_tcp_put(struct net_context *context)
 DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_recv|function|int net_tcp_recv(struct net_context *context, net_context_recv_cb_t cb, void *user_data)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
@@ -48,6 +50,7 @@ DECL|net_tcp_validate_seq|function|bool net_tcp_validate_seq(struct net_tcp *tcp
 DECL|options|member|void *options;
 DECL|optlen|member|u8_t optlen;
 DECL|prepare_segment|function|static int prepare_segment(struct net_tcp *tcp, struct tcp_segment *segment, struct net_pkt *pkt, struct net_pkt **out_pkt)
+DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
 DECL|restart_timer|function|static void restart_timer(struct net_tcp *tcp)
 DECL|retry_timeout|function|static inline u32_t retry_timeout(const struct net_tcp *tcp)
 DECL|retry_timer_cancel|function|static void retry_timer_cancel(struct net_tcp *tcp)

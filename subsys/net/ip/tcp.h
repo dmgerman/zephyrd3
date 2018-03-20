@@ -66,6 +66,7 @@ DECL|net_tcp_options|struct|struct net_tcp_options {
 DECL|net_tcp_prepare_ack|function|static inline int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_reset|function|static inline int net_tcp_prepare_reset(struct net_tcp *tcp,const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_segment|function|static inline int net_tcp_prepare_segment(struct net_tcp *tcp, u8_t flags, void *options, size_t optlen, const struct sockaddr_ptr *local, const struct sockaddr *remote, struct net_pkt **send_pkt)
+DECL|net_tcp_put|function|static inline int net_tcp_put(struct net_context *context)
 DECL|net_tcp_queue_data|function|static inline int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_recv|function|static inline int net_tcp_recv(struct net_context *context, net_context_recv_cb_t cb, void *user_data)
 DECL|net_tcp_register|function|static inline int net_tcp_register(const struct sockaddr *remote_addr, const struct sockaddr *local_addr, u16_t remote_port, u16_t local_port, net_conn_cb_t cb,

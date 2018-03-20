@@ -48,7 +48,6 @@ DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|packet_received|function|static enum net_verdict packet_received(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
 DECL|pkt_get_sockaddr|function|static void pkt_get_sockaddr(sa_family_t family, struct net_pkt *pkt, struct sockaddr_ptr *addr)
 DECL|print_send_info|function|static void print_send_info(struct net_pkt *pkt, const char *msg)
-DECL|queue_fin|function|static void queue_fin(struct net_context *ctx)
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, s32_t timeout, void *user_data)
 DECL|remote|member|struct sockaddr remote;
 DECL|send_ack|function|static int send_ack(struct net_context *context, struct sockaddr *remote, bool force)
