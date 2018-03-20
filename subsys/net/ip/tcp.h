@@ -62,6 +62,7 @@ DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_sta
 DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
+DECL|net_tcp_listen|function|static inline int net_tcp_listen(struct net_context *context)
 DECL|net_tcp_options|struct|struct net_tcp_options {
 DECL|net_tcp_prepare_ack|function|static inline int net_tcp_prepare_ack(struct net_tcp *tcp, const struct sockaddr *remote, struct net_pkt **pkt)
 DECL|net_tcp_prepare_reset|function|static inline int net_tcp_prepare_reset(struct net_tcp *tcp,const struct sockaddr *remote, struct net_pkt **pkt)
