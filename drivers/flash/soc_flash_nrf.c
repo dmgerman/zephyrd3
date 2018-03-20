@@ -15,19 +15,19 @@ DECL|erase_in_timeslice|function|static int erase_in_timeslice(u32_t addr, u32_t
 DECL|erase_op|function|static int erase_op(void *context)
 DECL|erase|function|static int erase(u32_t addr, u32_t size)
 DECL|flash_addr|member|u32_t flash_addr; /* Address off the 1st page to erase */
-DECL|flash_nrf5_api|variable|flash_nrf5_api
-DECL|flash_nrf5_erase|function|static int flash_nrf5_erase(struct device *dev, off_t addr, size_t size)
-DECL|flash_nrf5_pages_layout|function|static void flash_nrf5_pages_layout(struct device *dev, const struct flash_pages_layout **layout, size_t *layout_size)
-DECL|flash_nrf5_read|function|static int flash_nrf5_read(struct device *dev, off_t addr, void *data, size_t len)
-DECL|flash_nrf5_write_protection|function|static int flash_nrf5_write_protection(struct device *dev, bool enable)
-DECL|flash_nrf5_write|function|static int flash_nrf5_write(struct device *dev, off_t addr, const void *data, size_t len)
+DECL|flash_nrf_api|variable|flash_nrf_api
+DECL|flash_nrf_erase|function|static int flash_nrf_erase(struct device *dev, off_t addr, size_t size)
+DECL|flash_nrf_pages_layout|function|static void flash_nrf_pages_layout(struct device *dev, const struct flash_pages_layout **layout, size_t *layout_size)
+DECL|flash_nrf_read|function|static int flash_nrf_read(struct device *dev, off_t addr, void *data, size_t len)
+DECL|flash_nrf_write_protection|function|static int flash_nrf_write_protection(struct device *dev, bool enable)
+DECL|flash_nrf_write|function|static int flash_nrf_write(struct device *dev, off_t addr, const void *data, size_t len)
 DECL|flash_op_desc|struct|struct flash_op_desc {
 DECL|flash_op_handler_t|typedef|typedef int (*flash_op_handler_t) (void *context);
 DECL|handler|member|flash_op_handler_t handler;
 DECL|is_addr_valid|function|static inline bool is_addr_valid(off_t addr, size_t len)
 DECL|is_aligned_32|function|static inline bool is_aligned_32(u32_t data)
 DECL|len|member|u32_t len; /* Size off data to write [B] */
-DECL|nrf5_flash_init|function|static int nrf5_flash_init(struct device *dev)
+DECL|nrf_flash_init|function|static int nrf_flash_init(struct device *dev)
 DECL|nvmc_wait_ready|function|static void nvmc_wait_ready(void)
 DECL|result|member|int result;
 DECL|sem_lock|variable|sem_lock
