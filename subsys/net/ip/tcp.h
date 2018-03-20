@@ -78,6 +78,7 @@ DECL|net_tcp_set_chksum|function|static inline struct net_buf *net_tcp_set_chksu
 DECL|net_tcp_set_hdr|function|static inline struct net_tcp_hdr *net_tcp_set_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_state|enum|enum net_tcp_state {
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
+DECL|net_tcp_update_recv_wnd|function|static inline int net_tcp_update_recv_wnd(struct net_context *context, s32_t delta)
 DECL|net_tcp_validate_seq|function|static inline bool net_tcp_validate_seq(struct net_tcp *tcp,struct net_pkt *pkt)
 DECL|net_tcp|struct|struct net_tcp {
 DECL|recv_user_data|member|void *recv_user_data;
