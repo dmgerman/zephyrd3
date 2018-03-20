@@ -69,5 +69,4 @@ DECL|tcp_backlog_find|function|static int tcp_backlog_find(struct net_pkt *pkt, 
 DECL|tcp_backlog_rst|function|static int tcp_backlog_rst(struct net_pkt *pkt)
 DECL|tcp_backlog_syn|function|static int tcp_backlog_syn(struct net_pkt *pkt, struct net_context *context, u16_t send_mss)
 DECL|tcp_backlog|variable|tcp_backlog
-DECL|tcp_hdr_len|function|static int tcp_hdr_len(struct net_pkt *pkt)
 DECL|tcp|member|struct net_tcp *tcp;

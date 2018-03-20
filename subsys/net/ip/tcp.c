@@ -53,6 +53,7 @@ DECL|retry_timer_cancel|function|static void retry_timer_cancel(struct net_tcp *
 DECL|seq|member|u32_t seq;
 DECL|src_addr|member|struct sockaddr_ptr *src_addr;
 DECL|tcp_context|variable|tcp_context
+DECL|tcp_hdr_len|function|int tcp_hdr_len(struct net_pkt *pkt)
 DECL|tcp_retry_expired|function|static void tcp_retry_expired(struct k_work *work)
 DECL|tcp_segment|struct|struct tcp_segment {
 DECL|timewait_timer_cancel|function|static void timewait_timer_cancel(struct net_tcp *tcp)
