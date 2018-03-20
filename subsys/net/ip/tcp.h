@@ -70,7 +70,7 @@ DECL|net_tcp_queue_data|function|static inline int net_tcp_queue_data(struct net
 DECL|net_tcp_recv|function|static inline int net_tcp_recv(struct net_context *context, net_context_recv_cb_t cb, void *user_data)
 DECL|net_tcp_register|function|static inline int net_tcp_register(const struct sockaddr *remote_addr, const struct sockaddr *local_addr, u16_t remote_port, u16_t local_port, net_conn_cb_t cb,
 DECL|net_tcp_release|function|static inline int net_tcp_release(struct net_tcp *tcp)
-DECL|net_tcp_send_data|function|static inline int net_tcp_send_data(struct net_context *context)
+DECL|net_tcp_send_data|function|static inline int net_tcp_send_data(struct net_context *context, net_context_send_cb_t cb, void *token, void *user_data)
 DECL|net_tcp_send_pkt|function|static inline int net_tcp_send_pkt(struct net_pkt *pkt)
 DECL|net_tcp_set_chksum|function|static inline struct net_buf *net_tcp_set_chksum(struct net_pkt *pkt, struct net_buf *frag)
 DECL|net_tcp_set_hdr|function|static inline struct net_tcp_hdr *net_tcp_set_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
