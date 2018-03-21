@@ -6,11 +6,13 @@ DECL|eth0_config|variable|eth0_config
 DECL|eth0_data|variable|eth0_data
 DECL|eth0_iface_init|function|static void eth0_iface_init(struct net_if *iface)
 DECL|eth0_irq_config|function|static void eth0_irq_config(void)
+DECL|eth_capabilities|function|static enum eth_hw_caps eth_capabilities(struct device *dev)
 DECL|eth_initialize|function|static int eth_initialize(struct device *dev)
 DECL|eth_rx|function|static void eth_rx(struct gmac_queue *queue)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_get|function|static struct net_pkt *frame_get(struct gmac_queue *queue)
 DECL|free_rx_bufs|function|static void free_rx_bufs(struct ring_buf *rx_frag_list)
+DECL|get_iface|function|static inline struct net_if *get_iface(struct eth_sam_dev_data *ctx, u16_t vlan_tag)
 DECL|get_mac_addr_from_i2c_eeprom|function|void get_mac_addr_from_i2c_eeprom(u8_t mac_addr[6])
 DECL|get_mck_clock_divisor|function|static int get_mck_clock_divisor(u32_t mck)
 DECL|gmac_init|function|static int gmac_init(Gmac *gmac, u32_t gmac_ncfgr_val)
