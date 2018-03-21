@@ -49,10 +49,12 @@ DECL|fin_sent|member|u32_t fin_sent : 1;
 DECL|fin_timer|member|struct k_delayed_work fin_timer;
 DECL|flags|member|u32_t flags : 8;
 DECL|mss|member|u16_t mss;
+DECL|net_tcp_accept|function|static inline int net_tcp_accept(struct net_context *context, net_tcp_accept_cb_t cb, void *user_data)
 DECL|net_tcp_ack_received|function|static inline bool net_tcp_ack_received(struct net_context *ctx, u32_t ack)
 DECL|net_tcp_alloc|function|static inline struct net_tcp *net_tcp_alloc(struct net_context *context)
 DECL|net_tcp_cb_t|typedef|typedef void (*net_tcp_cb_t)(struct net_tcp *tcp, void *user_data);
 DECL|net_tcp_change_state|macro|net_tcp_change_state
+DECL|net_tcp_connect|function|static inline int net_tcp_connect(struct net_context *context, const struct sockaddr *addr, struct sockaddr *laddr, u16_t rport, u16_t lport, s32_t timeout, net_context_connect_cb_t cb, void *user_data)
 DECL|net_tcp_foreach|function|static inline void net_tcp_foreach(net_tcp_cb_t cb, void *user_data)
 DECL|net_tcp_get_chksum|function|static inline u16_t net_tcp_get_chksum(struct net_pkt *pkt, struct net_buf *frag)
 DECL|net_tcp_get_hdr|function|static inline struct net_tcp_hdr *net_tcp_get_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
@@ -60,6 +62,7 @@ DECL|net_tcp_get_recv_mss|function|static inline u16_t net_tcp_get_recv_mss(cons
 DECL|net_tcp_get_recv_wnd|function|static inline u32_t net_tcp_get_recv_wnd(const struct net_tcp *tcp)
 DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
 DECL|net_tcp_get_state|function|static inline enum net_tcp_state net_tcp_get_state(const struct net_tcp *tcp)
+DECL|net_tcp_get|function|static inline int net_tcp_get(struct net_context *context)
 DECL|net_tcp_init|macro|net_tcp_init
 DECL|net_tcp_is_used|function|static inline bool net_tcp_is_used(struct net_tcp *tcp)
 DECL|net_tcp_listen|function|static inline int net_tcp_listen(struct net_context *context)
@@ -77,6 +80,7 @@ DECL|net_tcp_send_pkt|function|static inline int net_tcp_send_pkt(struct net_pkt
 DECL|net_tcp_set_chksum|function|static inline struct net_buf *net_tcp_set_chksum(struct net_pkt *pkt, struct net_buf *frag)
 DECL|net_tcp_set_hdr|function|static inline struct net_tcp_hdr *net_tcp_set_hdr(struct net_pkt *pkt, struct net_tcp_hdr *hdr)
 DECL|net_tcp_state|enum|enum net_tcp_state {
+DECL|net_tcp_unref|function|static inline int net_tcp_unref(struct net_context *context)
 DECL|net_tcp_unregister|function|static inline int net_tcp_unregister(struct net_conn_handle *handle)
 DECL|net_tcp_update_recv_wnd|function|static inline int net_tcp_update_recv_wnd(struct net_context *context, s32_t delta)
 DECL|net_tcp_validate_seq|function|static inline bool net_tcp_validate_seq(struct net_tcp *tcp,struct net_pkt *pkt)
