@@ -15,7 +15,7 @@ DECL|_is_thread_time_slicing|function|int _is_thread_time_slicing(struct k_threa
 DECL|_kernel|variable|_kernel
 DECL|_move_thread_to_end_of_prio_q|function|void _move_thread_to_end_of_prio_q(struct k_thread *thread)
 DECL|_ms_to_ticks|function|s32_t _ms_to_ticks(s32_t ms)
-DECL|_pend_current_thread|function|void _pend_current_thread(_wait_q_t *wait_q, s32_t timeout)
+DECL|_pend_current_thread|function|int _pend_current_thread(int key, _wait_q_t *wait_q, s32_t timeout)
 DECL|_pend_thread|function|void _pend_thread(struct k_thread *thread, _wait_q_t *wait_q, s32_t timeout)
 DECL|_remove_thread_from_ready_q|function|void _remove_thread_from_ready_q(struct k_thread *thread)
 DECL|_reschedule_noyield|function|int _reschedule_noyield(int key)
