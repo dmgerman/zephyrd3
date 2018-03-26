@@ -1,4 +1,4 @@
-DECL|_handle_obj_poll_events|function|int _handle_obj_poll_events(sys_dlist_t *events, u32_t state)
+DECL|_handle_obj_poll_events|function|void _handle_obj_poll_events(sys_dlist_t *events, u32_t state)
 DECL|add_event|function|static inline void add_event(sys_dlist_t *events, struct k_poll_event *event, struct _poller *poller)
 DECL|clear_event_registrations|function|static inline void clear_event_registrations(struct k_poll_event *events, int last_registered, unsigned int key)
 DECL|clear_event_registration|function|static inline void clear_event_registration(struct k_poll_event *event)
@@ -12,4 +12,4 @@ DECL|k_poll|function|int k_poll(struct k_poll_event *events, int num_events, s32
 DECL|register_event|function|static inline int register_event(struct k_poll_event *event, struct _poller *poller)
 DECL|set_event_ready|function|static inline void set_event_ready(struct k_poll_event *event, u32_t state)
 DECL|set_polling_state|function|static inline void set_polling_state(struct k_thread *thread)
-DECL|signal_poll_event|function|static int signal_poll_event(struct k_poll_event *event, u32_t state, int *must_reschedule)
+DECL|signal_poll_event|function|static int signal_poll_event(struct k_poll_event *event, u32_t state)

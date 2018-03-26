@@ -3,4 +3,3 @@ DECL|pthread_cond_broadcast|function|int pthread_cond_broadcast(pthread_cond_t *
 DECL|pthread_cond_signal|function|int pthread_cond_signal(pthread_cond_t *cv)
 DECL|pthread_cond_timedwait|function|int pthread_cond_timedwait(pthread_cond_t *cv, pthread_mutex_t *mut, const struct timespec *to)
 DECL|pthread_cond_wait|function|int pthread_cond_wait(pthread_cond_t *cv, pthread_mutex_t *mut)
-DECL|swap_or_unlock|function|static void swap_or_unlock(int key)

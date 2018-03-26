@@ -1,5 +1,5 @@
 DECL|_trace_list_k_queue|variable|_trace_list_k_queue
-DECL|handle_poll_events|function|static inline int handle_poll_events(struct k_queue *queue, u32_t state)
+DECL|handle_poll_events|function|static inline void handle_poll_events(struct k_queue *queue, u32_t state)
 DECL|init_queue_module|function|static int init_queue_module(struct device *dev)
 DECL|k_queue_append_list|function|void k_queue_append_list(struct k_queue *queue, void *head, void *tail)
 DECL|k_queue_append|function|void k_queue_append(struct k_queue *queue, void *data)

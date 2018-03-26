@@ -43,7 +43,6 @@ DECL|_mark_thread_as_pending|function|static inline void _mark_thread_as_pending
 DECL|_mark_thread_as_polling|function|static inline void _mark_thread_as_polling(struct k_thread *thread)
 DECL|_mark_thread_as_started|function|static inline void _mark_thread_as_started(struct k_thread *thread)
 DECL|_mark_thread_as_suspended|function|static inline void _mark_thread_as_suspended(struct k_thread *thread)
-DECL|_must_switch_threads|function|static inline int _must_switch_threads(void)
 DECL|_peek_first_pending_thread|function|static inline struct k_thread *_peek_first_pending_thread(_wait_q_t *wait_q)
 DECL|_ready_thread|function|static inline void _ready_thread(struct k_thread *thread)
 DECL|_reset_thread_states|function|static inline void _reset_thread_states(struct k_thread *thread,u32_t states)
