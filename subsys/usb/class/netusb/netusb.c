@@ -3,11 +3,11 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|VERBOSE_DEBUG|macro|VERBOSE_DEBUG
 DECL|__netusb|struct|static struct __netusb {
-DECL|api_funcs|variable|api_funcs
 DECL|enabled|member|bool enabled;
 DECL|func|member|struct netusb_function *func;
 DECL|iface|member|struct net_if *iface;
 DECL|interface_data|variable|interface_data
+DECL|netusb_api_funcs|variable|netusb_api_funcs
 DECL|netusb_class_handler|function|static int netusb_class_handler(struct usb_setup_packet *setup,s32_t *len, u8_t **data)
 DECL|netusb_config|variable|netusb_config
 DECL|netusb_connect_media|function|static int netusb_connect_media(void)
