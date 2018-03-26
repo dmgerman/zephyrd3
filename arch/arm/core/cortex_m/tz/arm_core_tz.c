@@ -3,6 +3,7 @@ DECL|configure_nonsecure_msp|function|static void configure_nonsecure_msp(u32_t 
 DECL|configure_nonsecure_psp|function|static void configure_nonsecure_psp(u32_t psp_ns)
 DECL|configure_nonsecure_vtor_offset|function|static void configure_nonsecure_vtor_offset(u32_t vtor_ns)
 DECL|tz_nbanked_exception_target_state_set|function|void tz_nbanked_exception_target_state_set(int secure_state)
+DECL|tz_nonsecure_exception_prio_config|function|void tz_nonsecure_exception_prio_config(int secure_boost)
 DECL|tz_nonsecure_msplim_set|function|void tz_nonsecure_msplim_set(u32_t val)
 DECL|tz_nonsecure_psplim_set|function|void tz_nonsecure_psplim_set(u32_t val)
 DECL|tz_nonsecure_state_setup|function|void tz_nonsecure_state_setup(const tz_nonsecure_setup_conf_t *p_ns_conf)
