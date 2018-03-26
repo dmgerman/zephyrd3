@@ -49,7 +49,6 @@ DECL|USBD_EPSTATUS_EPOUT_MASK|macro|USBD_EPSTATUS_EPOUT_MASK
 DECL|USBD_INT_CNT|macro|USBD_INT_CNT
 DECL|USBD_POWERED|enumerator|USBD_POWERED,
 DECL|USBD_SUSPENDED|enumerator|USBD_SUSPENDED,
-DECL|access_fault_handler|function|static void access_fault_handler(u32_t pos)
 DECL|address_set|member|bool address_set;
 DECL|addr|member|u8_t addr;
 DECL|alloc_ep_usb_event|function|static inline struct ep_usb_event *alloc_ep_usb_event(void)
