@@ -1,4 +1,8 @@
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(_zephyr_fputc, c, stream)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(_zephyr_fwrite, ptr, size, nitems, stream)
 DECL|__stdout_hook_install|function|void __stdout_hook_install(int (*hook)(int))
+DECL|_impl__zephyr_fputc|function|int _impl__zephyr_fputc(int c, FILE *stream)
+DECL|_impl__zephyr_fwrite|function|size_t _impl__zephyr_fwrite(const void *_MLIBC_RESTRICT ptr, size_t size, size_t nitems, FILE *_MLIBC_RESTRICT stream)
 DECL|_stdout_hook_default|function|static int _stdout_hook_default(int c)
 DECL|_stdout_hook|variable|_stdout_hook
 DECL|fputc|function|int fputc(int c, FILE *stream)
