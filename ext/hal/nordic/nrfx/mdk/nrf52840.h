@@ -19,13 +19,13 @@ DECL|ACL|member|ACL_ACL_Type ACL[8]; /*!< Unspecified */
 DECL|ADDRCONF|member|__IO uint32_t ADDRCONF; /*!< Extended address configuration. */
 DECL|ADDRESS|member|__IO uint32_t ADDRESS; /*!< Address used in the TWI transfer */
 DECL|ADDRESS|member|__IO uint32_t ADDRESS; /*!< Address used in the TWI transfer */
-DECL|ADDRESS|member|__IO uint32_t ADDRESS[2]; /*!< Description collection[0]: TWI slave address 0 */
+DECL|ADDRESS|member|__IO uint32_t ADDRESS[2]; /*!< Description collection[n]: TWI slave address n */
 DECL|ADDRPTR|member|__IO uint32_t ADDRPTR; /*!< Pointer to the resolvable address */
-DECL|ADDR|member|__IO uint32_t ADDR; /*!< Description cluster[0]: Configure the word-aligned start address
+DECL|ADDR|member|__IO uint32_t ADDR; /*!< Description cluster[n]: Configure the word-aligned start address
 DECL|ALIGN|member|__IO uint32_t ALIGN; /*!< Alignment of sample within a frame. */
-DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Description cluster[0]: Number of bytes transferred in the last
-DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Description cluster[0]: Number of bytes transferred in the last
-DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of buffer words transferred since last START */
+DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Description cluster[n]: Number of bytes transferred in the last
+DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Description cluster[n]: Number of bytes transferred in the last
+DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of 16-bit samples written to output RAM buffer since
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes received in last granted transaction */
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes transferred in the last RXD transaction */
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes transferred in the last TXD transaction */
@@ -41,6 +41,7 @@ DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Number of bytes transmitted in last
 DECL|AMOUNT|member|__I uint32_t AMOUNT; /*!< Size of last incoming frame */
 DECL|AMOUNT|member|__IO uint32_t AMOUNT; /*!< Size of outgoing frame */
 DECL|ANADETECT|member|__IO uint32_t ANADETECT; /*!< Analog detect configuration */
+DECL|APCUTOFF|member|__I uint32_t APCUTOFF; /*!< Adaptive proportion cutoff */
 DECL|APPROTECT|member|__IO uint32_t APPROTECT; /*!< Access port protection */
 DECL|AUTOCOLRESCONFIG|member|__IO uint32_t AUTOCOLRESCONFIG; /*!< Controls the auto collision resolution function. This setting
 DECL|A|member|__IO uint32_t A; /*!< Pin select for A signal */
@@ -64,18 +65,18 @@ DECL|BCC|member|__IO uint32_t BCC; /*!< Bit counter compare */
 DECL|BITMODE|member|__IO uint32_t BITMODE; /*!< Configure the number of bits used by the TIMER */
 DECL|BMREQUESTTYPE|member|__I uint32_t BMREQUESTTYPE; /*!< SETUP data, byte 0, bmRequestType */
 DECL|BREQUEST|member|__I uint32_t BREQUEST; /*!< SETUP data, byte 1, bRequest */
-DECL|BUSSTATE|member|__I uint32_t BUSSTATE; /*!< Provides the logic state of the D+ and D- lines */
+DECL|BYTES|member|__I uint32_t BYTES; /*!< Amount of bytes for the required entropy bits */
 DECL|BusFault_IRQn|enumerator|BusFault_IRQn = -11, /*!< 5 Bus Fault, Pre-Fetch-, Memory Access Fault, other address/memory
 DECL|B|member|__IO uint32_t B; /*!< Pin select for B signal */
-DECL|CCACTRL|member|__IO uint32_t CCACTRL; /*!< IEEE 802.15.4 Clear Channel Assessment Control */
+DECL|CCACTRL|member|__IO uint32_t CCACTRL; /*!< IEEE 802.15.4 clear channel assessment control */
 DECL|CCM_AAR_IRQn|enumerator|CCM_AAR_IRQn = 15, /*!< 15 CCM_AAR */
-DECL|CC|member|__IO uint32_t CC[4]; /*!< Description collection[0]: Compare register 0 */
-DECL|CC|member|__IO uint32_t CC[6]; /*!< Description collection[0]: Capture/Compare register 0 */
+DECL|CC|member|__IO uint32_t CC[4]; /*!< Description collection[n]: Compare register n */
+DECL|CC|member|__IO uint32_t CC[6]; /*!< Description collection[n]: Capture/Compare register n */
 DECL|CHANNELS|member|__IO uint32_t CHANNELS; /*!< Enable channels. */
 DECL|CHENCLR|member|__IO uint32_t CHENCLR; /*!< Channel enable clear register */
 DECL|CHENSET|member|__IO uint32_t CHENSET; /*!< Channel enable set register */
 DECL|CHEN|member|__IO uint32_t CHEN; /*!< Channel enable register */
-DECL|CHG|member|__IO uint32_t CHG[6]; /*!< Description collection[0]: Channel group 0 */
+DECL|CHG|member|__IO uint32_t CHG[6]; /*!< Description collection[n]: Channel group n */
 DECL|CH|member|PPI_CH_Type CH[20]; /*!< PPI Channel */
 DECL|CH|member|SAADC_CH_Type CH[8]; /*!< Unspecified */
 DECL|CINSTRCONF|member|__IO uint32_t CINSTRCONF; /*!< Custom instruction configuration register. */
@@ -83,7 +84,7 @@ DECL|CINSTRDAT0|member|__IO uint32_t CINSTRDAT0; /*!< Custom instruction data re
 DECL|CINSTRDAT1|member|__IO uint32_t CINSTRDAT1; /*!< Custom instruction data register 1. */
 DECL|CLK|member|__IO uint32_t CLK; /*!< Pin number configuration for PDM CLK signal */
 DECL|CNFPTR|member|__IO uint32_t CNFPTR; /*!< Pointer to data structure holding AES key and NONCE vector */
-DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in this
+DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[n]: Number of values (duty cycles) in this
 DECL|CNT|member|__IO uint32_t CNT; /*!< Read transfer length */
 DECL|CNT|member|__IO uint32_t CNT; /*!< Write transfer length */
 DECL|CODEPAGESIZE|member|__I uint32_t CODEPAGESIZE; /*!< Code memory page size */
@@ -99,8 +100,8 @@ DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Configuration register */
 DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Configuration register */
 DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Configuration register */
 DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Configuration register for the address match mechanism */
-DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Description cluster[0]: Input configuration for CH[0] */
-DECL|CONFIG|member|__IO uint32_t CONFIG[8]; /*!< Description collection[0]: Configuration for OUT[n], SET[n]
+DECL|CONFIG|member|__IO uint32_t CONFIG; /*!< Description cluster[n]: Input configuration for CH[n] */
+DECL|CONFIG|member|__IO uint32_t CONFIG[8]; /*!< Description collection[n]: Configuration for OUT[n], SET[n]
 DECL|COUNTERTOP|member|__IO uint32_t COUNTERTOP; /*!< Value up to which the pulse generator counter counts */
 DECL|COUNTER|member|__I uint32_t COUNTER; /*!< Current COUNTER value */
 DECL|CRCCNF|member|__IO uint32_t CRCCNF; /*!< CRC configuration */
@@ -117,14 +118,13 @@ DECL|CSN|member|__IO uint32_t CSN; /*!< Pin select for chip select signal CSN. *
 DECL|CTIV|member|__IO uint32_t CTIV; /*!< Calibration timer interval */
 DECL|CTS|member|__IO uint32_t CTS; /*!< Pin select for CTS */
 DECL|CTS|member|__IO uint32_t CTS; /*!< Pin select for CTS signal */
-DECL|CUSTOMER|member|__IO uint32_t CUSTOMER[32]; /*!< Description collection[0]: Reserved for customer */
-DECL|DAB|member|__IO uint32_t DAB[8]; /*!< Description collection[0]: Device address base segment 0 */
+DECL|CUSTOMER|member|__IO uint32_t CUSTOMER[32]; /*!< Description collection[n]: Reserved for customer */
+DECL|DAB|member|__IO uint32_t DAB[8]; /*!< Description collection[n]: Device address base segment n */
 DECL|DACNF|member|__IO uint32_t DACNF; /*!< Device address match configuration */
 DECL|DAI|member|__I uint32_t DAI; /*!< Device address match index */
-DECL|DAP|member|__IO uint32_t DAP[8]; /*!< Description collection[0]: Device address prefix 0 */
+DECL|DAP|member|__IO uint32_t DAP[8]; /*!< Description collection[n]: Device address prefix n */
 DECL|DATAWHITEIV|member|__IO uint32_t DATAWHITEIV; /*!< Data whitening initial value */
 DECL|DBFEN|member|__IO uint32_t DBFEN; /*!< Enable input debounce filters */
-DECL|DCDCDRIVE0|member|__IO uint32_t DCDCDRIVE0; /*!< Set drive level for REG0 DCDC mode. Using high drive will slightly
 DECL|DCDCEN0|member|__IO uint32_t DCDCEN0; /*!< Enable DC/DC converter for REG0 stage. */
 DECL|DCDCEN|member|__IO uint32_t DCDCEN; /*!< Enable DC/DC converter for REG1 stage. */
 DECL|DCXCNT|member|__IO uint32_t DCXCNT; /*!< DCX configuration */
@@ -133,28 +133,28 @@ DECL|DECODER|member|__IO uint32_t DECODER; /*!< Configuration of the decoder */
 DECL|DEF|member|__IO uint32_t DEF; /*!< Default character. Character clocked out in case of an ignored
 DECL|DETECTMODE|member|__IO uint32_t DETECTMODE; /*!< Select between default DETECT signal behaviour and LDETECT mode */
 DECL|DEVICEADDRTYPE|member|__I uint32_t DEVICEADDRTYPE; /*!< Device address type */
-DECL|DEVICEADDR|member|__I uint32_t DEVICEADDR[2]; /*!< Description collection[0]: Device address 0 */
-DECL|DEVICEID|member|__I uint32_t DEVICEID[2]; /*!< Description collection[0]: Device identifier */
+DECL|DEVICEADDR|member|__I uint32_t DEVICEADDR[2]; /*!< Description collection[n]: Device address n */
+DECL|DEVICEID|member|__I uint32_t DEVICEID[2]; /*!< Description collection[n]: Device identifier */
 DECL|DIN|member|__IO uint32_t DIN; /*!< Pin number configuration for PDM DIN signal */
 DECL|DIRCLR|member|__IO uint32_t DIRCLR; /*!< DIR clear register */
 DECL|DIRSET|member|__IO uint32_t DIRSET; /*!< DIR set register */
 DECL|DIR|member|__IO uint32_t DIR; /*!< Direction of GPIO pins */
-DECL|DIS|member|__O uint32_t DIS; /*!< Description cluster[0]: Disable channel group 0 */
-DECL|DPDMVALUE|member|__IO uint32_t DPDMVALUE; /*!< State at which the DPDMDRIVE task will force D+ and D-. The
+DECL|DIS|member|__O uint32_t DIS; /*!< Description cluster[n]: Disable channel group n */
+DECL|DPDMVALUE|member|__IO uint32_t DPDMVALUE; /*!< State D+ and D- lines will be forced into by the DPDMDRIVE task.
 DECL|DPMDUR|member|__IO uint32_t DPMDUR; /*!< Set the duration required to enter/exit deep power-down mode
 DECL|DST|member|__IO uint32_t DST; /*!< Flash destination address */
 DECL|DST|member|__IO uint32_t DST; /*!< RAM destination address */
-DECL|DTOGGLE|member|__IO uint32_t DTOGGLE; /*!< Data toggle control and status. */
+DECL|DTOGGLE|member|__IO uint32_t DTOGGLE; /*!< Data toggle control and status */
 DECL|DebugMonitor_IRQn|enumerator|DebugMonitor_IRQn = -4, /*!< 12 Debug Monitor */
 DECL|ECBDATAPTR|member|__IO uint32_t ECBDATAPTR; /*!< ECB block encrypt memory pointers */
 DECL|ECB_IRQn|enumerator|ECB_IRQn = 14, /*!< 14 ECB */
-DECL|EDCNT|member|__IO uint32_t EDCNT; /*!< IEEE 802.15.4 Energy Detect Loop Count */
-DECL|EDSAMPLE|member|__IO uint32_t EDSAMPLE; /*!< IEEE 802.15.4 Energy Detect Level */
-DECL|EEP|member|__IO uint32_t EEP; /*!< Description cluster[0]: Channel 0 event end-point */
+DECL|EDCNT|member|__IO uint32_t EDCNT; /*!< IEEE 802.15.4 energy detect loop count */
+DECL|EDSAMPLE|member|__IO uint32_t EDSAMPLE; /*!< IEEE 802.15.4 energy detect level */
+DECL|EEP|member|__IO uint32_t EEP; /*!< Description cluster[n]: Channel n event end-point */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< COMP enable */
-DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Control power and clock for CRYPTOCELL subsystem */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable AAR */
+DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable CRYPTOCELL subsystem */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable I2S module. */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable LPCOMP */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable QSPI peripheral and acquire the pins selected in PSELn
@@ -167,25 +167,27 @@ DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable TWIS */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable UART */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable UART */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable USB */
-DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable or disable ADC */
+DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable or disable SAADC */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< Enable the quadrature decoder */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< PDM module enable register */
 DECL|ENABLE|member|__IO uint32_t ENABLE; /*!< PWM module enable register */
-DECL|ENDDELAY|member|__IO uint32_t ENDDELAY; /*!< Description cluster[0]: Time added after the sequence */
-DECL|END|member|__I uint32_t END; /*!< Description cluster[0]: Reserved for future use */
-DECL|END|member|__IO uint32_t END; /*!< Description cluster[0]: End address of region 0 */
-DECL|EN|member|__O uint32_t EN; /*!< Description cluster[0]: Enable channel group 0 */
+DECL|ENDDELAY|member|__IO uint32_t ENDDELAY; /*!< Description cluster[n]: Time added after the sequence */
+DECL|END|member|__I uint32_t END; /*!< Description cluster[n]: Reserved for future use */
+DECL|END|member|__IO uint32_t END; /*!< Description cluster[n]: End address of region n */
+DECL|EN|member|__O uint32_t EN; /*!< Description cluster[n]: Enable channel group n */
 DECL|EPDATASTATUS|member|__IO uint32_t EPDATASTATUS; /*!< Provides information on which endpoint(s) an acknowledged data
 DECL|EPINEN|member|__IO uint32_t EPINEN; /*!< Endpoint IN enable */
 DECL|EPIN|member|USBD_EPIN_Type EPIN[8]; /*!< Unspecified */
-DECL|EPIN|member|__I uint32_t EPIN[8]; /*!< Description collection[0]: IN endpoint halted status. Can be
+DECL|EPIN|member|__I uint32_t EPIN[8]; /*!< Description collection[n]: IN endpoint halted status. Can be
 DECL|EPOUTEN|member|__IO uint32_t EPOUTEN; /*!< Endpoint OUT enable */
 DECL|EPOUT|member|USBD_EPOUT_Type EPOUT[8]; /*!< Unspecified */
-DECL|EPOUT|member|__I uint32_t EPOUT[8]; /*!< Description collection[0]: OUT endpoint halted status. Can be
-DECL|EPOUT|member|__IO uint32_t EPOUT[8]; /*!< Description collection[0]: Amount of bytes received last in
+DECL|EPOUT|member|__I uint32_t EPOUT[8]; /*!< Description collection[n]: OUT endpoint halted status. Can be
+DECL|EPOUT|member|__IO uint32_t EPOUT[8]; /*!< Description collection[n]: Number of bytes received last in
 DECL|EPSTALL|member|__O uint32_t EPSTALL; /*!< STALL endpoints */
 DECL|EPSTATUS|member|__IO uint32_t EPSTATUS; /*!< Provides information on which endpoint's EasyDMA registers have
 DECL|ERASEALL|member|__IO uint32_t ERASEALL; /*!< Register for erasing all non-volatile user memory */
+DECL|ERASEPAGEPARTIALCFG|member|__IO uint32_t ERASEPAGEPARTIALCFG; /*!< Register for partial erase configuration */
+DECL|ERASEPAGEPARTIAL|member|__IO uint32_t ERASEPAGEPARTIAL; /*!< Register for partial erase of a page in code area */
 DECL|ERASEPAGE|member|__IO uint32_t ERASEPAGE; /*!< Register for erasing a page in code area */
 DECL|ERASEPCR0|member|__IO uint32_t ERASEPCR0; /*!< Deprecated register - Register for erasing a page in code area.
 DECL|ERASEPCR1|member|__IO uint32_t ERASEPCR1; /*!< Deprecated register - Register for erasing a page in code area.
@@ -197,23 +199,22 @@ DECL|ERRORSRC|member|__IO uint32_t ERRORSRC; /*!< Error source */
 DECL|ERRORSRC|member|__IO uint32_t ERRORSRC; /*!< Error source */
 DECL|ERRORSRC|member|__IO uint32_t ERRORSRC; /*!< Error source Note : this register is read / write one to clear. */
 DECL|ERRORSTATUS|member|__IO uint32_t ERRORSTATUS; /*!< NFC Error Status register */
-DECL|ER|member|__I uint32_t ER[4]; /*!< Description collection[0]: Encryption root, word 0 */
-DECL|EVENTCAUSE|member|__IO uint32_t EVENTCAUSE; /*!< Details on event that caused the USBEVENT event */
-DECL|EVENTS_ACCESSFAULT|member|__IO uint32_t EVENTS_ACCESSFAULT; /*!< Access to an unavailable USB register has been attempted (software
+DECL|ER|member|__I uint32_t ER[4]; /*!< Description collection[n]: Encryption root, word n */
+DECL|EVENTCAUSE|member|__IO uint32_t EVENTCAUSE; /*!< Details on what caused the USBEVENT event */
 DECL|EVENTS_ACCOF|member|__IO uint32_t EVENTS_ACCOF; /*!< ACC or ACCDBL register overflow */
 DECL|EVENTS_ACQUIRED|member|__IO uint32_t EVENTS_ACQUIRED; /*!< Semaphore acquired */
 DECL|EVENTS_ADDRESS|member|__IO uint32_t EVENTS_ADDRESS; /*!< Address sent or received */
 DECL|EVENTS_AUTOCOLRESSTARTED|member|__IO uint32_t EVENTS_AUTOCOLRESSTARTED; /*!< Auto collision resolution process has started */
 DECL|EVENTS_BB|member|__IO uint32_t EVENTS_BB; /*!< TWI byte boundary, generated before each byte that is sent or
-DECL|EVENTS_BCMATCH|member|__IO uint32_t EVENTS_BCMATCH; /*!< Bit counter reached bit count value. */
+DECL|EVENTS_BCMATCH|member|__IO uint32_t EVENTS_BCMATCH; /*!< Bit counter reached bit count value */
 DECL|EVENTS_CALIBRATEDONE|member|__IO uint32_t EVENTS_CALIBRATEDONE; /*!< Calibration is complete */
 DECL|EVENTS_CCABUSY|member|__IO uint32_t EVENTS_CCABUSY; /*!< Wireless medium busy - do not send */
 DECL|EVENTS_CCAIDLE|member|__IO uint32_t EVENTS_CCAIDLE; /*!< Wireless medium in idle - clear to send */
 DECL|EVENTS_CCASTOPPED|member|__IO uint32_t EVENTS_CCASTOPPED; /*!< The CCA has stopped */
 DECL|EVENTS_CH|member|SAADC_EVENTS_CH_Type EVENTS_CH[8]; /*!< Unspecified */
 DECL|EVENTS_COLLISION|member|__IO uint32_t EVENTS_COLLISION; /*!< NFC auto collision resolution error reported. */
-DECL|EVENTS_COMPARE|member|__IO uint32_t EVENTS_COMPARE[4]; /*!< Description collection[0]: Compare event on CC[0] match */
-DECL|EVENTS_COMPARE|member|__IO uint32_t EVENTS_COMPARE[6]; /*!< Description collection[0]: Compare event on CC[0] match */
+DECL|EVENTS_COMPARE|member|__IO uint32_t EVENTS_COMPARE[4]; /*!< Description collection[n]: Compare event on CC[n] match */
+DECL|EVENTS_COMPARE|member|__IO uint32_t EVENTS_COMPARE[6]; /*!< Description collection[n]: Compare event on CC[n] match */
 DECL|EVENTS_CRCERROR|member|__IO uint32_t EVENTS_CRCERROR; /*!< Packet received with CRC error */
 DECL|EVENTS_CRCOK|member|__IO uint32_t EVENTS_CRCOK; /*!< Packet received with CRC ok */
 DECL|EVENTS_CROSS|member|__IO uint32_t EVENTS_CROSS; /*!< Downward or upward crossing */
@@ -228,16 +229,16 @@ DECL|EVENTS_DBLRDY|member|__IO uint32_t EVENTS_DBLRDY; /*!< Double displacement(
 DECL|EVENTS_DEVMATCH|member|__IO uint32_t EVENTS_DEVMATCH; /*!< A device address match occurred on the last received packet */
 DECL|EVENTS_DEVMISS|member|__IO uint32_t EVENTS_DEVMISS; /*!< No device address match occurred on the last received packet */
 DECL|EVENTS_DISABLED|member|__IO uint32_t EVENTS_DISABLED; /*!< RADIO has been disabled */
-DECL|EVENTS_DONE|member|__IO uint32_t EVENTS_DONE; /*!< A conversion task has been completed. Depending on the mode,
-DECL|EVENTS_DONE|member|__IO uint32_t EVENTS_DONE; /*!< Calibration of LFCLK RC oscillator complete event */
+DECL|EVENTS_DONE|member|__IO uint32_t EVENTS_DONE; /*!< A conversion task has been completed. Depending on the configuration,
+DECL|EVENTS_DONE|member|__IO uint32_t EVENTS_DONE; /*!< Calibration of LFRC completed */
 DECL|EVENTS_DOWN|member|__IO uint32_t EVENTS_DOWN; /*!< Downward crossing */
 DECL|EVENTS_DOWN|member|__IO uint32_t EVENTS_DOWN; /*!< Downward crossing */
-DECL|EVENTS_EDEND|member|__IO uint32_t EVENTS_EDEND; /*!< Sampling of Energy Detection complete. A new ED sample is ready
-DECL|EVENTS_EDSTOPPED|member|__IO uint32_t EVENTS_EDSTOPPED; /*!< The sampling of Energy Detection has stopped */
+DECL|EVENTS_EDEND|member|__IO uint32_t EVENTS_EDEND; /*!< Sampling of energy detection complete. A new ED sample is ready
+DECL|EVENTS_EDSTOPPED|member|__IO uint32_t EVENTS_EDSTOPPED; /*!< The sampling of energy detection has stopped */
 DECL|EVENTS_ENDCRYPT|member|__IO uint32_t EVENTS_ENDCRYPT; /*!< Encrypt/decrypt complete */
 DECL|EVENTS_ENDECB|member|__IO uint32_t EVENTS_ENDECB; /*!< ECB block encrypt complete */
-DECL|EVENTS_ENDEPIN|member|__IO uint32_t EVENTS_ENDEPIN[8]; /*!< Description collection[0]: The whole EPIN[0] buffer has been
-DECL|EVENTS_ENDEPOUT|member|__IO uint32_t EVENTS_ENDEPOUT[8]; /*!< Description collection[0]: The whole EPOUT[0] buffer has been
+DECL|EVENTS_ENDEPIN|member|__IO uint32_t EVENTS_ENDEPIN[8]; /*!< Description collection[n]: The whole EPIN[n] buffer has been
+DECL|EVENTS_ENDEPOUT|member|__IO uint32_t EVENTS_ENDEPOUT[8]; /*!< Description collection[n]: The whole EPOUT[n] buffer has been
 DECL|EVENTS_ENDISOIN|member|__IO uint32_t EVENTS_ENDISOIN; /*!< The whole ISOIN buffer has been consumed. The RAM buffer can
 DECL|EVENTS_ENDISOOUT|member|__IO uint32_t EVENTS_ENDISOOUT; /*!< The whole ISOOUT buffer has been consumed. The RAM buffer can
 DECL|EVENTS_ENDKSGEN|member|__IO uint32_t EVENTS_ENDKSGEN; /*!< Key-stream generation complete */
@@ -252,8 +253,8 @@ DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< Address resolution procedu
 DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< End of RXD buffer and TXD buffer reached */
 DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< Granted transaction completed */
 DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< Packet sent or received */
-DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< The ADC has filled up the Result buffer */
 DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< The PDM has written the last sample specified by SAMPLE.MAXCNT
+DECL|EVENTS_END|member|__IO uint32_t EVENTS_END; /*!< The SAADC has filled up the result buffer */
 DECL|EVENTS_EP0DATADONE|member|__IO uint32_t EVENTS_EP0DATADONE; /*!< An acknowledged data transfer has taken place on the control
 DECL|EVENTS_EP0SETUP|member|__IO uint32_t EVENTS_EP0SETUP; /*!< A valid SETUP token has been received (and acknowledged) on
 DECL|EVENTS_EPDATA|member|__IO uint32_t EVENTS_EPDATA; /*!< A data transfer has occurred on a data endpoint, indicated by
@@ -268,13 +269,13 @@ DECL|EVENTS_ERROR|member|__IO uint32_t EVENTS_ERROR; /*!< TWI error */
 DECL|EVENTS_FIELDDETECTED|member|__IO uint32_t EVENTS_FIELDDETECTED; /*!< Remote NFC field detected */
 DECL|EVENTS_FIELDLOST|member|__IO uint32_t EVENTS_FIELDLOST; /*!< Remote NFC field lost */
 DECL|EVENTS_FRAMESTART|member|__IO uint32_t EVENTS_FRAMESTART; /*!< IEEE 802.15.4 length field received */
-DECL|EVENTS_HFCLKSTARTED|member|__IO uint32_t EVENTS_HFCLKSTARTED; /*!< HFCLK oscillator started */
-DECL|EVENTS_IN|member|__IO uint32_t EVENTS_IN[8]; /*!< Description collection[0]: Event generated from pin specified
+DECL|EVENTS_HFCLKSTARTED|member|__IO uint32_t EVENTS_HFCLKSTARTED; /*!< HFXO crystal oscillator started */
+DECL|EVENTS_IN|member|__IO uint32_t EVENTS_IN[8]; /*!< Description collection[n]: Event generated from pin specified
 DECL|EVENTS_LASTRX|member|__IO uint32_t EVENTS_LASTRX; /*!< Byte boundary, starting to receive the last byte */
 DECL|EVENTS_LASTTX|member|__IO uint32_t EVENTS_LASTTX; /*!< Byte boundary, starting to transmit the last byte */
 DECL|EVENTS_LFCLKSTARTED|member|__IO uint32_t EVENTS_LFCLKSTARTED; /*!< LFCLK started */
 DECL|EVENTS_LOOPSDONE|member|__IO uint32_t EVENTS_LOOPSDONE; /*!< Concatenated sequences have been played the amount of times
-DECL|EVENTS_MHRMATCH|member|__IO uint32_t EVENTS_MHRMATCH; /*!< MAC Header match found. */
+DECL|EVENTS_MHRMATCH|member|__IO uint32_t EVENTS_MHRMATCH; /*!< MAC header match found */
 DECL|EVENTS_NCTS|member|__IO uint32_t EVENTS_NCTS; /*!< CTS is deactivated (set high). Not Clear To Send. */
 DECL|EVENTS_NCTS|member|__IO uint32_t EVENTS_NCTS; /*!< CTS is deactivated (set high). Not Clear To Send. */
 DECL|EVENTS_NOTRESOLVED|member|__IO uint32_t EVENTS_NOTRESOLVED; /*!< Address not resolved */
@@ -296,8 +297,8 @@ DECL|EVENTS_READ|member|__IO uint32_t EVENTS_READ; /*!< Read command received */
 DECL|EVENTS_REGION|member|MWU_EVENTS_REGION_Type EVENTS_REGION[4]; /*!< Unspecified */
 DECL|EVENTS_REPORTRDY|member|__IO uint32_t EVENTS_REPORTRDY; /*!< Non-null report ready */
 DECL|EVENTS_RESOLVED|member|__IO uint32_t EVENTS_RESOLVED; /*!< Address resolved */
-DECL|EVENTS_RESULTDONE|member|__IO uint32_t EVENTS_RESULTDONE; /*!< A result is ready to get transferred to RAM. */
-DECL|EVENTS_RSSIEND|member|__IO uint32_t EVENTS_RSSIEND; /*!< Sampling of receive signal strength complete. */
+DECL|EVENTS_RESULTDONE|member|__IO uint32_t EVENTS_RESULTDONE; /*!< Result ready for transfer to RAM */
+DECL|EVENTS_RSSIEND|member|__IO uint32_t EVENTS_RSSIEND; /*!< Sampling of receive signal strength complete */
 DECL|EVENTS_RXDRDY|member|__IO uint32_t EVENTS_RXDRDY; /*!< Data received in RXD (but potentially not yet transferred to
 DECL|EVENTS_RXDRDY|member|__IO uint32_t EVENTS_RXDRDY; /*!< Data received in RXD */
 DECL|EVENTS_RXDREADY|member|__IO uint32_t EVENTS_RXDREADY; /*!< TWI RXD byte received */
@@ -313,15 +314,15 @@ DECL|EVENTS_RXTO|member|__IO uint32_t EVENTS_RXTO; /*!< Receiver timeout */
 DECL|EVENTS_RXTO|member|__IO uint32_t EVENTS_RXTO; /*!< Receiver timeout */
 DECL|EVENTS_SAMPLERDY|member|__IO uint32_t EVENTS_SAMPLERDY; /*!< Event being generated for every new sample value written to
 DECL|EVENTS_SELECTED|member|__IO uint32_t EVENTS_SELECTED; /*!< NFC auto collision resolution successfully completed */
-DECL|EVENTS_SEQEND|member|__IO uint32_t EVENTS_SEQEND[2]; /*!< Description collection[0]: Emitted at end of every sequence
-DECL|EVENTS_SEQSTARTED|member|__IO uint32_t EVENTS_SEQSTARTED[2]; /*!< Description collection[0]: First PWM period started on sequence
+DECL|EVENTS_SEQEND|member|__IO uint32_t EVENTS_SEQEND[2]; /*!< Description collection[n]: Emitted at end of every sequence
+DECL|EVENTS_SEQSTARTED|member|__IO uint32_t EVENTS_SEQSTARTED[2]; /*!< Description collection[n]: First PWM period started on sequence
 DECL|EVENTS_SLEEPENTER|member|__IO uint32_t EVENTS_SLEEPENTER; /*!< CPU entered WFI/WFE sleep */
 DECL|EVENTS_SLEEPEXIT|member|__IO uint32_t EVENTS_SLEEPEXIT; /*!< CPU exited WFI/WFE sleep */
 DECL|EVENTS_SOF|member|__IO uint32_t EVENTS_SOF; /*!< Signals that a SOF (start of frame) condition has been detected
-DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< Confirms that the EPIN[n].PTR, EPIN[n].MAXCNT, EPIN[n].CONFIG,
+DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< Confirms that the EPIN[n].PTR and EPIN[n].MAXCNT, or EPOUT[n].PTR
 DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< EasyDMA is ready to receive or send frames. */
 DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< PDM transfer has started */
-DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< The ADC has started */
+DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< The SAADC has started */
 DECL|EVENTS_STARTED|member|__IO uint32_t EVENTS_STARTED; /*!< Transaction started */
 DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< I2S transfer stopped. */
 DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< PDM transfer has finished */
@@ -331,12 +332,12 @@ DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< SPI transaction ha
 DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< TWI stopped */
 DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< TWI stopped */
 DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< TWI stopped */
-DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< The ADC has stopped */
+DECL|EVENTS_STOPPED|member|__IO uint32_t EVENTS_STOPPED; /*!< The SAADC has stopped */
 DECL|EVENTS_SUSPENDED|member|__IO uint32_t EVENTS_SUSPENDED; /*!< Last byte has been sent out after the SUSPEND task has been
 DECL|EVENTS_SUSPENDED|member|__IO uint32_t EVENTS_SUSPENDED; /*!< TWI entered the suspended state */
 DECL|EVENTS_TICK|member|__IO uint32_t EVENTS_TICK; /*!< Event on COUNTER increment */
 DECL|EVENTS_TIMEOUT|member|__IO uint32_t EVENTS_TIMEOUT; /*!< Watchdog timeout */
-DECL|EVENTS_TRIGGERED|member|__IO uint32_t EVENTS_TRIGGERED[16]; /*!< Description collection[0]: Event number 0 generated by triggering
+DECL|EVENTS_TRIGGERED|member|__IO uint32_t EVENTS_TRIGGERED[16]; /*!< Description collection[n]: Event number n generated by triggering
 DECL|EVENTS_TXDRDY|member|__IO uint32_t EVENTS_TXDRDY; /*!< Data sent from TXD */
 DECL|EVENTS_TXDRDY|member|__IO uint32_t EVENTS_TXDRDY; /*!< Data sent from TXD */
 DECL|EVENTS_TXDSENT|member|__IO uint32_t EVENTS_TXDSENT; /*!< TWI TXD byte sent */
@@ -351,10 +352,10 @@ DECL|EVENTS_TXSTOPPED|member|__IO uint32_t EVENTS_TXSTOPPED; /*!< Transmitter st
 DECL|EVENTS_UP|member|__IO uint32_t EVENTS_UP; /*!< Upward crossing */
 DECL|EVENTS_UP|member|__IO uint32_t EVENTS_UP; /*!< Upward crossing */
 DECL|EVENTS_USBDETECTED|member|__IO uint32_t EVENTS_USBDETECTED; /*!< Voltage supply detected on VBUS */
-DECL|EVENTS_USBEVENT|member|__IO uint32_t EVENTS_USBEVENT; /*!< An event or an error not covered by specific events has occurred,
+DECL|EVENTS_USBEVENT|member|__IO uint32_t EVENTS_USBEVENT; /*!< An event or an error not covered by specific events has occurred.
 DECL|EVENTS_USBPWRRDY|member|__IO uint32_t EVENTS_USBPWRRDY; /*!< USB 3.3 V supply ready */
 DECL|EVENTS_USBREMOVED|member|__IO uint32_t EVENTS_USBREMOVED; /*!< Voltage supply removed from VBUS */
-DECL|EVENTS_USBRESET|member|__IO uint32_t EVENTS_USBRESET; /*!< Signals that a USB reset condition has been detected on the
+DECL|EVENTS_USBRESET|member|__IO uint32_t EVENTS_USBRESET; /*!< Signals that a USB reset condition has been detected on USB
 DECL|EVENTS_VALRDY|member|__IO uint32_t EVENTS_VALRDY; /*!< Event being generated for every new random number written to
 DECL|EVENTS_WRITE|member|__IO uint32_t EVENTS_WRITE; /*!< Write command received */
 DECL|EVTENCLR|member|__IO uint32_t EVTENCLR; /*!< Disable event routing */
@@ -365,6 +366,7 @@ DECL|EXTREFSEL|member|__IO uint32_t EXTREFSEL; /*!< External reference select */
 DECL|FICR_INFO_Type|typedef|} FICR_INFO_Type;
 DECL|FICR_NFC_Type|typedef|} FICR_NFC_Type;
 DECL|FICR_TEMP_Type|typedef|} FICR_TEMP_Type;
+DECL|FICR_TRNG90B_Type|typedef|} FICR_TRNG90B_Type;
 DECL|FIELDPRESENT|member|__I uint32_t FIELDPRESENT; /*!< Indicates the presence or not of a valid field */
 DECL|FLASH|member|__I uint32_t FLASH; /*!< Flash variant */
 DECL|FORK|member|PPI_FORK_Type FORK[32]; /*!< Fork */
@@ -391,6 +393,13 @@ DECL|HALTED|member|USBD_HALTED_Type HALTED; /*!< Unspecified */
 DECL|HFCLKRUN|member|__I uint32_t HFCLKRUN; /*!< Status indicating that HFCLKSTART task has been triggered */
 DECL|HFCLKSTAT|member|__I uint32_t HFCLKSTAT; /*!< HFCLK status */
 DECL|HFXODEBOUNCE|member|__IO uint32_t HFXODEBOUNCE; /*!< HFXO debounce time. The HFXO is started by triggering the TASKS_HFCLKSTART
+DECL|HOST_CRYPTOKEY_SEL|member|__IO uint32_t HOST_CRYPTOKEY_SEL; /*!< AES hardware key select */
+DECL|HOST_IOT_KDR0|member|__IO uint32_t HOST_IOT_KDR0; /*!< This register holds bits 31:0 of K_DR. The value of this register
+DECL|HOST_IOT_KDR1|member|__O uint32_t HOST_IOT_KDR1; /*!< This register holds bits 63:32 of K_DR. The value of this register
+DECL|HOST_IOT_KDR2|member|__O uint32_t HOST_IOT_KDR2; /*!< This register holds bits 95:64 of K_DR. The value of this register
+DECL|HOST_IOT_KDR3|member|__O uint32_t HOST_IOT_KDR3; /*!< This register holds bits 127:96 of K_DR. The value of this register
+DECL|HOST_IOT_KPRTL_LOCK|member|__IO uint32_t HOST_IOT_KPRTL_LOCK; /*!< This write-once register is the K_PRTL lock register. When this
+DECL|HOST_IOT_LCS|member|__IO uint32_t HOST_IOT_LCS; /*!< Controls lifecycle state (LCS) for CRYPTOCELL subsystem */
 DECL|HYST|member|__IO uint32_t HYST; /*!< Comparator hysteresis enable */
 DECL|HYST|member|__IO uint32_t HYST; /*!< Comparator hysteresis enable */
 DECL|HardFault_IRQn|enumerator|HardFault_IRQn = -13, /*!< 3 Hard Fault, all classes of Fault */
@@ -493,11 +502,11 @@ DECL|IO2|member|__IO uint32_t IO2; /*!< Pin select for serial data IO2. */
 DECL|IO3|member|__IO uint32_t IO3; /*!< Pin select for serial data IO3. */
 DECL|IRKPTR|member|__IO uint32_t IRKPTR; /*!< Pointer to IRK data structure */
 DECL|IRQn_Type|typedef|} IRQn_Type;
-DECL|IR|member|__I uint32_t IR[4]; /*!< Description collection[0]: Identity Root, word 0 */
+DECL|IR|member|__I uint32_t IR[4]; /*!< Description collection[n]: Identity Root, word n */
 DECL|ISOINCONFIG|member|__IO uint32_t ISOINCONFIG; /*!< Controls the response of the ISO IN endpoint to an IN token
 DECL|ISOIN|member|USBD_ISOIN_Type ISOIN; /*!< Unspecified */
 DECL|ISOOUT|member|USBD_ISOOUT_Type ISOOUT; /*!< Unspecified */
-DECL|ISOOUT|member|__I uint32_t ISOOUT; /*!< Amount of bytes received last on this iso OUT data endpoint */
+DECL|ISOOUT|member|__I uint32_t ISOOUT; /*!< Number of bytes received last on this ISO OUT data endpoint */
 DECL|ISOSPLIT|member|__IO uint32_t ISOSPLIT; /*!< Controls the split of ISO buffers */
 DECL|LATCH|member|__IO uint32_t LATCH; /*!< Latch register indicating what GPIO pins that have met the criteria
 DECL|LEDPOL|member|__IO uint32_t LEDPOL; /*!< LED output pin polarity */
@@ -509,21 +518,21 @@ DECL|LFCLKSRCCOPY|member|__I uint32_t LFCLKSRCCOPY; /*!< Copy of LFCLKSRC regist
 DECL|LFCLKSRC|member|__IO uint32_t LFCLKSRC; /*!< Clock source for the LFCLK */
 DECL|LFCLKSTAT|member|__I uint32_t LFCLKSTAT; /*!< LFCLK status */
 DECL|LFRCMODE|member|__IO uint32_t LFRCMODE; /*!< LFRC mode configuration */
-DECL|LIMITH|member|__IO uint32_t LIMITH; /*!< Description cluster[0]: Last results is equal or above CH[0].LIMIT.HIGH */
-DECL|LIMITL|member|__IO uint32_t LIMITL; /*!< Description cluster[0]: Last results is equal or below CH[0].LIMIT.LOW */
-DECL|LIMIT|member|__IO uint32_t LIMIT; /*!< Description cluster[0]: High/low limits for event monitoring
+DECL|LIMITH|member|__IO uint32_t LIMITH; /*!< Description cluster[n]: Last result is equal or above CH[n].LIMIT.HIGH */
+DECL|LIMITL|member|__IO uint32_t LIMITL; /*!< Description cluster[n]: Last result is equal or below CH[n].LIMIT.LOW */
+DECL|LIMIT|member|__IO uint32_t LIMIT; /*!< Description cluster[n]: High/low limits for event monitoring
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
-DECL|LOOP|member|__IO uint32_t LOOP; /*!< Amount of playback of a loop */
-DECL|LOWPOWER|member|__IO uint32_t LOWPOWER; /*!< Controls USBD peripheral low-power mode during USB suspend */
+DECL|LOOP|member|__IO uint32_t LOOP; /*!< Number of playbacks of a loop */
+DECL|LOWPOWER|member|__IO uint32_t LOWPOWER; /*!< Controls USBD peripheral low power mode during USB suspend */
 DECL|LRCK|member|__IO uint32_t LRCK; /*!< Pin select for LRCK signal. */
 DECL|MAINREGSTATUS|member|__I uint32_t MAINREGSTATUS; /*!< Main supply status */
 DECL|MATCH|member|__I uint32_t MATCH; /*!< Status register indicating which address had a match */
-DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Description cluster[0]: Maximum number of bytes to transfer */
-DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Description cluster[0]: Maximum number of bytes to transfer */
-DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of buffer words to transfer */
+DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Description cluster[n]: Maximum number of bytes to transfer */
+DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Description cluster[n]: Maximum number of bytes to transfer */
+DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of 16-bit samples to be written to output RAM
 DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of bytes in RXD buffer */
 DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of bytes in TXD buffer */
 DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of bytes in receive buffer */
@@ -543,7 +552,7 @@ DECL|MAXPACKETSIZE|member|__IO uint32_t MAXPACKETSIZE; /*!< Length of key-stream
 DECL|MCKEN|member|__IO uint32_t MCKEN; /*!< Master clock generator enable. */
 DECL|MCKFREQ|member|__IO uint32_t MCKFREQ; /*!< Master clock generator frequency. */
 DECL|MCK|member|__IO uint32_t MCK; /*!< Pin select for MCK signal. */
-DECL|MHRMATCHCONF|member|__IO uint32_t MHRMATCHCONF; /*!< Search Pattern Configuration */
+DECL|MHRMATCHCONF|member|__IO uint32_t MHRMATCHCONF; /*!< Search pattern configuration */
 DECL|MHRMATCHMAS|member|__IO uint32_t MHRMATCHMAS; /*!< Pattern mask */
 DECL|MICSTATUS|member|__I uint32_t MICSTATUS; /*!< MIC check result */
 DECL|MISO|member|__IO uint32_t MISO; /*!< Pin select for MISO signal */
@@ -582,8 +591,8 @@ DECL|NMIENCLR|member|__IO uint32_t NMIENCLR; /*!< Disable non-maskable interrupt
 DECL|NMIENSET|member|__IO uint32_t NMIENSET; /*!< Enable non-maskable interrupt */
 DECL|NMIEN|member|__IO uint32_t NMIEN; /*!< Enable or disable non-maskable interrupt */
 DECL|NRF52840_H|macro|NRF52840_H
-DECL|NRFFW|member|__IO uint32_t NRFFW[15]; /*!< Description collection[0]: Reserved for Nordic firmware design */
-DECL|NRFHW|member|__IO uint32_t NRFHW[12]; /*!< Description collection[0]: Reserved for Nordic hardware design */
+DECL|NRFFW|member|__IO uint32_t NRFFW[15]; /*!< Description collection[n]: Reserved for Nordic firmware design */
+DECL|NRFHW|member|__IO uint32_t NRFHW[12]; /*!< Description collection[n]: Reserved for Nordic hardware design */
 DECL|NRF_AAR_BASE|macro|NRF_AAR_BASE
 DECL|NRF_AAR_Type|typedef|} NRF_AAR_Type;
 DECL|NRF_AAR|macro|NRF_AAR
@@ -593,6 +602,9 @@ DECL|NRF_ACL|macro|NRF_ACL
 DECL|NRF_CCM_BASE|macro|NRF_CCM_BASE
 DECL|NRF_CCM_Type|typedef|} NRF_CCM_Type;
 DECL|NRF_CCM|macro|NRF_CCM
+DECL|NRF_CC_HOST_RGF_BASE|macro|NRF_CC_HOST_RGF_BASE
+DECL|NRF_CC_HOST_RGF_Type|typedef|} NRF_CC_HOST_RGF_Type;
+DECL|NRF_CC_HOST_RGF|macro|NRF_CC_HOST_RGF
 DECL|NRF_CLOCK_BASE|macro|NRF_CLOCK_BASE
 DECL|NRF_CLOCK_Type|typedef|} NRF_CLOCK_Type;
 DECL|NRF_CLOCK|macro|NRF_CLOCK
@@ -777,8 +789,8 @@ DECL|OUTCLR|member|__IO uint32_t OUTCLR; /*!< Clear individual bits in GPIO port
 DECL|OUTPTR|member|__IO uint32_t OUTPTR; /*!< Output pointer */
 DECL|OUTSET|member|__IO uint32_t OUTSET; /*!< Set individual bits in GPIO port */
 DECL|OUT|member|__IO uint32_t OUT; /*!< Write GPIO port */
-DECL|OUT|member|__IO uint32_t OUT[4]; /*!< Description collection[0]: Output pin select for PWM channel
-DECL|OVERSAMPLE|member|__IO uint32_t OVERSAMPLE; /*!< Oversampling configuration. OVERSAMPLE should not be combined
+DECL|OUT|member|__IO uint32_t OUT[4]; /*!< Description collection[n]: Output pin select for PWM channel
+DECL|OVERSAMPLE|member|__IO uint32_t OVERSAMPLE; /*!< Oversampling configuration. The RESOLUTION is applied before
 DECL|PACKAGE|member|__I uint32_t PACKAGE; /*!< Package option */
 DECL|PACKETPTR|member|__IO uint32_t PACKETPTR; /*!< Packet pointer */
 DECL|PACKETPTR|member|__IO uint32_t PACKETPTR; /*!< Packet pointer for TXD and RXD data storage in Data RAM */
@@ -790,15 +802,15 @@ DECL|PDM_IRQn|enumerator|PDM_IRQn = 29, /*!< 29 PDM */
 DECL|PDM_PSEL_Type|typedef|} PDM_PSEL_Type;
 DECL|PDM_SAMPLE_Type|typedef|} PDM_SAMPLE_Type;
 DECL|PDUSTAT|member|__I uint32_t PDUSTAT; /*!< Payload status */
-DECL|PERM|member|__IO uint32_t PERM; /*!< Description cluster[0]: Access permissions for region 0 as defined
+DECL|PERM|member|__IO uint32_t PERM; /*!< Description cluster[n]: Access permissions for region n as defined
 DECL|PERREGION|member|MWU_PERREGION_Type PERREGION[2]; /*!< Unspecified */
-DECL|PIN_CNF|member|__IO uint32_t PIN_CNF[32]; /*!< Description collection[0]: Configuration of GPIO pins */
-DECL|POFCON|member|__IO uint32_t POFCON; /*!< Power failure comparator configuration */
-DECL|POWERCLR|member|__O uint32_t POWERCLR; /*!< Description cluster[0]: RAM0 power control clear register */
-DECL|POWERSET|member|__O uint32_t POWERSET; /*!< Description cluster[0]: RAM0 power control set register */
+DECL|PIN_CNF|member|__IO uint32_t PIN_CNF[32]; /*!< Description collection[n]: Configuration of GPIO pins */
+DECL|POFCON|member|__IO uint32_t POFCON; /*!< Power-fail comparator configuration */
+DECL|POWERCLR|member|__O uint32_t POWERCLR; /*!< Description cluster[n]: RAMn power control clear register */
+DECL|POWERSET|member|__O uint32_t POWERSET; /*!< Description cluster[n]: RAMn power control set register */
 DECL|POWER_CLOCK_IRQn|enumerator|POWER_CLOCK_IRQn = 0, /*!< 0 POWER_CLOCK */
 DECL|POWER_RAM_Type|typedef|} POWER_RAM_Type;
-DECL|POWER|member|__IO uint32_t POWER; /*!< Description cluster[0]: RAM0 power control register */
+DECL|POWER|member|__IO uint32_t POWER; /*!< Description cluster[n]: RAMn power control register */
 DECL|POWER|member|__IO uint32_t POWER; /*!< Peripheral power control */
 DECL|PPI_CH_Type|typedef|} PPI_CH_Type;
 DECL|PPI_FORK_Type|typedef|} PPI_FORK_Type;
@@ -809,10 +821,11 @@ DECL|PREGION|member|MWU_PREGION_Type PREGION[2]; /*!< Unspecified */
 DECL|PRESCALER|member|__IO uint32_t PRESCALER; /*!< 12 bit prescaler for COUNTER frequency (32768/(PRESCALER+1)).Must
 DECL|PRESCALER|member|__IO uint32_t PRESCALER; /*!< Configuration for PWM_CLK */
 DECL|PRESCALER|member|__IO uint32_t PRESCALER; /*!< Timer prescaler register */
+DECL|PRODTEST|member|__I uint32_t PRODTEST[3]; /*!< Description collection[n]: Production test signature n */
 DECL|PSELDCX|member|__IO uint32_t PSELDCX; /*!< Pin select for DCX signal */
-DECL|PSELN|member|__IO uint32_t PSELN; /*!< Description cluster[0]: Input negative pin selection for CH[0] */
-DECL|PSELP|member|__IO uint32_t PSELP; /*!< Description cluster[0]: Input positive pin selection for CH[0] */
-DECL|PSELRESET|member|__IO uint32_t PSELRESET[2]; /*!< Description collection[0]: Mapping of the nRESET function */
+DECL|PSELN|member|__IO uint32_t PSELN; /*!< Description cluster[n]: Input negative pin selection for CH[n] */
+DECL|PSELP|member|__IO uint32_t PSELP; /*!< Description cluster[n]: Input positive pin selection for CH[n] */
+DECL|PSELRESET|member|__IO uint32_t PSELRESET[2]; /*!< Description collection[n]: Mapping of the nRESET function */
 DECL|PSEL|member|I2S_PSEL_Type PSEL; /*!< Unspecified */
 DECL|PSEL|member|PDM_PSEL_Type PSEL; /*!< Unspecified */
 DECL|PSEL|member|PWM_PSEL_Type PSEL; /*!< Unspecified */
@@ -837,9 +850,9 @@ DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of this
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Data pointer */
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Data pointer */
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[n]: Beginning address in RAM of this sequence */
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[n]: Data pointer */
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[n]: Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RAM address pointer to write samples to with EasyDMA */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD data pointer */
@@ -869,12 +882,13 @@ DECL|RAM|member|__I uint32_t RAM; /*!< RAM variant */
 DECL|RATEOVERRIDE|member|__IO uint32_t RATEOVERRIDE; /*!< Data rate override setting. */
 DECL|RATIO|member|__IO uint32_t RATIO; /*!< MCK / LRCK ratio. */
 DECL|RATIO|member|__IO uint32_t RATIO; /*!< Selects the ratio between PDM_CLK and output sample rate. Change
-DECL|RA|member|__IO uint32_t RA; /*!< Description cluster[0]: Read access to peripheral region 0 detected */
-DECL|RA|member|__IO uint32_t RA; /*!< Description cluster[0]: Read access to region 0 detected */
+DECL|RA|member|__IO uint32_t RA; /*!< Description cluster[n]: Read access to peripheral region n detected */
+DECL|RA|member|__IO uint32_t RA; /*!< Description cluster[n]: Read access to region n detected */
+DECL|RCCUTOFF|member|__I uint32_t RCCUTOFF; /*!< Repetition counter cutoff */
 DECL|READYNEXT|member|__I uint32_t READYNEXT; /*!< Ready flag */
 DECL|READY|member|__I uint32_t READY; /*!< Ready flag */
 DECL|READ|member|QSPI_READ_Type READ; /*!< Unspecified */
-DECL|REFRESH|member|__IO uint32_t REFRESH; /*!< Description cluster[0]: Amount of additional PWM periods between
+DECL|REFRESH|member|__IO uint32_t REFRESH; /*!< Description cluster[n]: Number of additional PWM periods between
 DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference select */
 DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference source select for single-ended mode */
 DECL|REGIONENCLR|member|__IO uint32_t REGIONENCLR; /*!< Disable regions watch */
@@ -892,6 +906,7 @@ DECL|RESERVED0|member|__I uint32_t RESERVED0;
 DECL|RESERVED0|member|__I uint32_t RESERVED0;
 DECL|RESERVED0|member|__I uint32_t RESERVED0;
 DECL|RESERVED0|member|__I uint32_t RESERVED0[11];
+DECL|RESERVED0|member|__I uint32_t RESERVED0[1678];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[256];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[308];
 DECL|RESERVED0|member|__I uint32_t RESERVED0[30];
@@ -927,12 +942,12 @@ DECL|RESERVED0|member|__I uint32_t RESERVED0[9];
 DECL|RESERVED10|member|__I uint32_t RESERVED10;
 DECL|RESERVED10|member|__I uint32_t RESERVED10;
 DECL|RESERVED10|member|__I uint32_t RESERVED10[10];
-DECL|RESERVED10|member|__I uint32_t RESERVED10[10];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[110];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[14];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[21];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[21];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[31];
+DECL|RESERVED10|member|__I uint32_t RESERVED10[3];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[51];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[63];
 DECL|RESERVED10|member|__I uint32_t RESERVED10[7];
@@ -946,20 +961,21 @@ DECL|RESERVED11|member|__I uint32_t RESERVED11[14];
 DECL|RESERVED11|member|__I uint32_t RESERVED11[17];
 DECL|RESERVED11|member|__I uint32_t RESERVED11[21];
 DECL|RESERVED11|member|__I uint32_t RESERVED11[2];
-DECL|RESERVED11|member|__I uint32_t RESERVED11[49];
+DECL|RESERVED11|member|__I uint32_t RESERVED11[6];
 DECL|RESERVED12|member|__I uint32_t RESERVED12;
 DECL|RESERVED12|member|__I uint32_t RESERVED12;
-DECL|RESERVED12|member|__I uint32_t RESERVED12[26];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[39];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[3];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[3];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[47];
+DECL|RESERVED12|member|__I uint32_t RESERVED12[49];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[5];
 DECL|RESERVED12|member|__I uint32_t RESERVED12[9];
 DECL|RESERVED13|member|__I uint32_t RESERVED13;
 DECL|RESERVED13|member|__I uint32_t RESERVED13;
 DECL|RESERVED13|member|__I uint32_t RESERVED13;
 DECL|RESERVED13|member|__I uint32_t RESERVED13[175];
+DECL|RESERVED13|member|__I uint32_t RESERVED13[26];
 DECL|RESERVED13|member|__I uint32_t RESERVED13[2];
 DECL|RESERVED13|member|__I uint32_t RESERVED13[3];
 DECL|RESERVED13|member|__I uint32_t RESERVED13[3];
@@ -1003,6 +1019,7 @@ DECL|RESERVED1|member|__I uint32_t RESERVED1[34];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[40];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[4];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[4];
+DECL|RESERVED1|member|__I uint32_t RESERVED1[4];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[52];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[54];
 DECL|RESERVED1|member|__I uint32_t RESERVED1[56];
@@ -1033,15 +1050,15 @@ DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[2];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[32];
-DECL|RESERVED2|member|__I uint32_t RESERVED2[38];
+DECL|RESERVED2|member|__I uint32_t RESERVED2[39];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[3];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[42];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[4];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[53];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[56];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[56];
-DECL|RESERVED2|member|__I uint32_t RESERVED2[59];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[5];
+DECL|RESERVED2|member|__I uint32_t RESERVED2[60];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[61];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[61];
 DECL|RESERVED2|member|__I uint32_t RESERVED2[62];
@@ -1054,7 +1071,6 @@ DECL|RESERVED2|member|__I uint32_t RESERVED2[6];
 DECL|RESERVED3|member|__I uint32_t RESERVED3;
 DECL|RESERVED3|member|__I uint32_t RESERVED3;
 DECL|RESERVED3|member|__I uint32_t RESERVED3;
-DECL|RESERVED3|member|__I uint32_t RESERVED3[10];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[117];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[119];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[125];
@@ -1085,6 +1101,7 @@ DECL|RESERVED3|member|__I uint32_t RESERVED3[63];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[63];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[63];
 DECL|RESERVED3|member|__I uint32_t RESERVED3[64];
+DECL|RESERVED3|member|__I uint32_t RESERVED3[8];
 DECL|RESERVED4|member|__I uint32_t RESERVED4;
 DECL|RESERVED4|member|__I uint32_t RESERVED4;
 DECL|RESERVED4|member|__I uint32_t RESERVED4;
@@ -1093,7 +1110,7 @@ DECL|RESERVED4|member|__I uint32_t RESERVED4;
 DECL|RESERVED4|member|__I uint32_t RESERVED4[110];
 DECL|RESERVED4|member|__I uint32_t RESERVED4[125];
 DECL|RESERVED4|member|__I uint32_t RESERVED4[126];
-DECL|RESERVED4|member|__I uint32_t RESERVED4[185];
+DECL|RESERVED4|member|__I uint32_t RESERVED4[140];
 DECL|RESERVED4|member|__I uint32_t RESERVED4[2];
 DECL|RESERVED4|member|__I uint32_t RESERVED4[36];
 DECL|RESERVED4|member|__I uint32_t RESERVED4[3];
@@ -1131,16 +1148,16 @@ DECL|RESERVED5|member|__I uint32_t RESERVED5[24];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[2];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[2];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[2];
-DECL|RESERVED5|member|__I uint32_t RESERVED5[2];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[3];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[3];
+DECL|RESERVED5|member|__I uint32_t RESERVED5[42];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[46];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[4];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[64];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[64];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[64];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[6];
-DECL|RESERVED5|member|__I uint32_t RESERVED5[6];
+DECL|RESERVED5|member|__I uint32_t RESERVED5[7];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[8];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[8];
 DECL|RESERVED5|member|__I uint32_t RESERVED5[9];
@@ -1151,6 +1168,7 @@ DECL|RESERVED6|member|__I uint32_t RESERVED6[10];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[11];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[11];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[12];
+DECL|RESERVED6|member|__I uint32_t RESERVED6[2];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[2];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[2];
 DECL|RESERVED6|member|__I uint32_t RESERVED6[3];
@@ -1177,6 +1195,7 @@ DECL|RESERVED7|member|__I uint32_t RESERVED7[3];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[3];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[41];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[44];
+DECL|RESERVED7|member|__I uint32_t RESERVED7[488];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[49];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[63];
 DECL|RESERVED7|member|__I uint32_t RESERVED7[93];
@@ -1210,8 +1229,12 @@ DECL|RESULT|member|SAADC_RESULT_Type RESULT; /*!< RESULT EasyDMA channel */
 DECL|RESULT|member|__I uint32_t RESULT; /*!< Compare result */
 DECL|RESULT|member|__I uint32_t RESULT; /*!< Compare result */
 DECL|RNG_IRQn|enumerator|RNG_IRQn = 13, /*!< 13 RNG */
+DECL|ROSC1|member|__I uint32_t ROSC1; /*!< Sample count for ring oscillator 1 */
+DECL|ROSC2|member|__I uint32_t ROSC2; /*!< Sample count for ring oscillator 2 */
+DECL|ROSC3|member|__I uint32_t ROSC3; /*!< Sample count for ring oscillator 3 */
+DECL|ROSC4|member|__I uint32_t ROSC4; /*!< Sample count for ring oscillator 4 */
 DECL|RREN|member|__IO uint32_t RREN; /*!< Enable register for reload request registers */
-DECL|RR|member|__O uint32_t RR[8]; /*!< Description collection[0]: Reload request 0 */
+DECL|RR|member|__O uint32_t RR[8]; /*!< Description collection[n]: Reload request n */
 DECL|RSSISAMPLE|member|__I uint32_t RSSISAMPLE; /*!< RSSI sample */
 DECL|RTC0_IRQn|enumerator|RTC0_IRQn = 11, /*!< 11 RTC0 */
 DECL|RTC1_IRQn|enumerator|RTC1_IRQn = 17, /*!< 17 RTC1 */
@@ -1266,7 +1289,7 @@ DECL|SELRES|member|__IO uint32_t SELRES; /*!< NFC-A SEL_RES auto-response settin
 DECL|SEMSTAT|member|__I uint32_t SEMSTAT; /*!< Semaphore status register */
 DECL|SENSRES|member|__IO uint32_t SENSRES; /*!< NFC-A SENS_RES auto-response settings */
 DECL|SEQ|member|PWM_SEQ_Type SEQ[2]; /*!< Unspecified */
-DECL|SFD|member|__IO uint32_t SFD; /*!< IEEE 802.15.4 Start of Frame Delimiter */
+DECL|SFD|member|__IO uint32_t SFD; /*!< IEEE 802.15.4 start of frame delimiter */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
@@ -1285,7 +1308,8 @@ DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SHORTS|member|__IO uint32_t SHORTS; /*!< Shortcut register */
 DECL|SIZE|member|USBD_SIZE_Type SIZE; /*!< Unspecified */
-DECL|SIZE|member|__IO uint32_t SIZE; /*!< Description cluster[0]: Size of region to protect counting from
+DECL|SIZE|member|__IO uint32_t SIZE; /*!< Description cluster[n]: Size of region to protect counting from
+DECL|SLEEPSTATE|member|__I uint32_t SLEEPSTATE; /*!< Sleep state during automatic collision resolution */
 DECL|SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQn|enumerator|SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQn= 3, /*!< 3 SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0 */
 DECL|SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQn|enumerator|SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQn= 4, /*!< 4 SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1 */
 DECL|SPIM2_SPIS2_SPI2_IRQn|enumerator|SPIM2_SPIS2_SPI2_IRQn = 35, /*!< 35 SPIM2_SPIS2_SPI2 */
@@ -1301,16 +1325,17 @@ DECL|SPI_PSEL_Type|typedef|} SPI_PSEL_Type;
 DECL|SRC|member|__IO uint32_t SRC; /*!< Flash memory source address */
 DECL|SRC|member|__IO uint32_t SRC; /*!< RAM source address */
 DECL|STALLSTAT|member|__IO uint32_t STALLSTAT; /*!< Stall status for EasyDMA RAM accesses. The fields in this register
-DECL|START|member|__I uint32_t START; /*!< Description cluster[0]: Reserved for future use */
-DECL|START|member|__IO uint32_t START; /*!< Description cluster[0]: Start address for region 0 */
+DECL|STARTUP|member|__I uint32_t STARTUP; /*!< Amount of bytes for the startup tests */
+DECL|START|member|__I uint32_t START; /*!< Description cluster[n]: Reserved for future use */
+DECL|START|member|__IO uint32_t START; /*!< Description cluster[n]: Start address for region n */
 DECL|STATE|member|__I uint32_t STATE; /*!< Current radio state */
 DECL|STATUS|member|__I uint32_t STATUS; /*!< Resolution status */
 DECL|STATUS|member|__I uint32_t STATUS; /*!< Status */
 DECL|STATUS|member|__I uint32_t STATUS; /*!< Status register. */
 DECL|STATUS|member|__IO uint32_t STATUS; /*!< Status from last transaction */
-DECL|SUBSTATRA|member|__IO uint32_t SUBSTATRA; /*!< Description cluster[0]: Source of event/interrupt in region
-DECL|SUBSTATWA|member|__IO uint32_t SUBSTATWA; /*!< Description cluster[0]: Source of event/interrupt in region
-DECL|SUBS|member|__IO uint32_t SUBS; /*!< Description cluster[0]: Subregions of region 0 */
+DECL|SUBSTATRA|member|__IO uint32_t SUBSTATRA; /*!< Description cluster[n]: Source of event/interrupt in region
+DECL|SUBSTATWA|member|__IO uint32_t SUBSTATWA; /*!< Description cluster[n]: Source of event/interrupt in region
+DECL|SUBS|member|__IO uint32_t SUBS; /*!< Description cluster[n]: Subregions of region n */
 DECL|SVCall_IRQn|enumerator|SVCall_IRQn = -5, /*!< 11 System Service Call via SVC instruction */
 DECL|SWI0_EGU0_IRQn|enumerator|SWI0_EGU0_IRQn = 20, /*!< 20 SWI0_EGU0 */
 DECL|SWI1_EGU1_IRQn|enumerator|SWI1_EGU1_IRQn = 21, /*!< 21 SWI1_EGU1 */
@@ -1341,14 +1366,14 @@ DECL|TASKS_ACTIVATE|member|__O uint32_t TASKS_ACTIVATE; /*!< Activate QSPI inter
 DECL|TASKS_BCSTART|member|__O uint32_t TASKS_BCSTART; /*!< Start the bit counter */
 DECL|TASKS_BCSTOP|member|__O uint32_t TASKS_BCSTOP; /*!< Stop the bit counter */
 DECL|TASKS_CALIBRATEOFFSET|member|__O uint32_t TASKS_CALIBRATEOFFSET; /*!< Starts offset auto-calibration */
-DECL|TASKS_CAL|member|__O uint32_t TASKS_CAL; /*!< Start calibration of LFRC or LFULP oscillator */
-DECL|TASKS_CAPTURE|member|__O uint32_t TASKS_CAPTURE[6]; /*!< Description collection[0]: Capture Timer value to CC[0] register */
-DECL|TASKS_CCASTART|member|__O uint32_t TASKS_CCASTART; /*!< Start the Clear Channel Assessment used in IEEE 802.15.4 mode */
-DECL|TASKS_CCASTOP|member|__O uint32_t TASKS_CCASTOP; /*!< Stop the Clear Channel Assessment */
+DECL|TASKS_CAL|member|__O uint32_t TASKS_CAL; /*!< Start calibration of LFRC */
+DECL|TASKS_CAPTURE|member|__O uint32_t TASKS_CAPTURE[6]; /*!< Description collection[n]: Capture Timer value to CC[n] register */
+DECL|TASKS_CCASTART|member|__O uint32_t TASKS_CCASTART; /*!< Start the clear channel assessment used in IEEE 802.15.4 mode */
+DECL|TASKS_CCASTOP|member|__O uint32_t TASKS_CCASTOP; /*!< Stop the clear channel assessment */
 DECL|TASKS_CHG|member|PPI_TASKS_CHG_Type TASKS_CHG[6]; /*!< Channel group tasks */
 DECL|TASKS_CLEAR|member|__O uint32_t TASKS_CLEAR; /*!< Clear RTC COUNTER */
 DECL|TASKS_CLEAR|member|__O uint32_t TASKS_CLEAR; /*!< Clear time */
-DECL|TASKS_CLR|member|__O uint32_t TASKS_CLR[8]; /*!< Description collection[0]: Task for writing to pin specified
+DECL|TASKS_CLR|member|__O uint32_t TASKS_CLR[8]; /*!< Description collection[n]: Task for writing to pin specified
 DECL|TASKS_CONSTLAT|member|__O uint32_t TASKS_CONSTLAT; /*!< Enable constant latency mode */
 DECL|TASKS_COUNT|member|__O uint32_t TASKS_COUNT; /*!< Increment Timer (Counter mode only) */
 DECL|TASKS_CRYPT|member|__O uint32_t TASKS_CRYPT; /*!< Start encryption/decryption. This operation will stop by itself
@@ -1357,26 +1382,26 @@ DECL|TASKS_CTSTOP|member|__O uint32_t TASKS_CTSTOP; /*!< Stop calibration timer 
 DECL|TASKS_DEACTIVATE|member|__O uint32_t TASKS_DEACTIVATE; /*!< Deactivate QSPI interface */
 DECL|TASKS_DISABLE|member|__O uint32_t TASKS_DISABLE; /*!< Disable NFCT peripheral */
 DECL|TASKS_DISABLE|member|__O uint32_t TASKS_DISABLE; /*!< Disable RADIO */
-DECL|TASKS_DPDMDRIVE|member|__O uint32_t TASKS_DPDMDRIVE; /*!< Forces D+ and D-lines to the state defined in the DPDMVALUE
-DECL|TASKS_DPDMNODRIVE|member|__O uint32_t TASKS_DPDMNODRIVE; /*!< Stops forcing D+ and D- lines to any state (USB engine takes
-DECL|TASKS_EDSTART|member|__O uint32_t TASKS_EDSTART; /*!< Start the Energy Detect measurement used in IEEE 802.15.4 mode */
-DECL|TASKS_EDSTOP|member|__O uint32_t TASKS_EDSTOP; /*!< Stop the Energy Detect measurement */
+DECL|TASKS_DPDMDRIVE|member|__O uint32_t TASKS_DPDMDRIVE; /*!< Forces D+ and D- lines into the state defined in the DPDMVALUE
+DECL|TASKS_DPDMNODRIVE|member|__O uint32_t TASKS_DPDMNODRIVE; /*!< Stops forcing D+ and D- lines into any state (USB engine takes
+DECL|TASKS_EDSTART|member|__O uint32_t TASKS_EDSTART; /*!< Start the energy detect measurement used in IEEE 802.15.4 mode */
+DECL|TASKS_EDSTOP|member|__O uint32_t TASKS_EDSTOP; /*!< Stop the energy detect measurement */
 DECL|TASKS_ENABLERXDATA|member|__O uint32_t TASKS_ENABLERXDATA; /*!< Initializes the EasyDMA for receive. */
 DECL|TASKS_EP0RCVOUT|member|__O uint32_t TASKS_EP0RCVOUT; /*!< Allows OUT data stage on control endpoint 0 */
-DECL|TASKS_EP0STALL|member|__O uint32_t TASKS_EP0STALL; /*!< STALLs data and status stage on control endpoint 0 */
+DECL|TASKS_EP0STALL|member|__O uint32_t TASKS_EP0STALL; /*!< Stalls data and status stage on control endpoint 0 */
 DECL|TASKS_EP0STATUS|member|__O uint32_t TASKS_EP0STATUS; /*!< Allows status stage on control endpoint 0 */
 DECL|TASKS_ERASESTART|member|__O uint32_t TASKS_ERASESTART; /*!< Start external flash memory erase operation */
 DECL|TASKS_FLUSHRX|member|__O uint32_t TASKS_FLUSHRX; /*!< Flush RX FIFO into RX buffer */
 DECL|TASKS_GOIDLE|member|__O uint32_t TASKS_GOIDLE; /*!< Force state machine to IDLE state */
 DECL|TASKS_GOSLEEP|member|__O uint32_t TASKS_GOSLEEP; /*!< Force state machine to SLEEP_A state */
-DECL|TASKS_HFCLKSTART|member|__O uint32_t TASKS_HFCLKSTART; /*!< Start HFCLK crystal oscillator */
-DECL|TASKS_HFCLKSTOP|member|__O uint32_t TASKS_HFCLKSTOP; /*!< Stop HFCLK crystal oscillator */
+DECL|TASKS_HFCLKSTART|member|__O uint32_t TASKS_HFCLKSTART; /*!< Start HFXO crystal oscillator */
+DECL|TASKS_HFCLKSTOP|member|__O uint32_t TASKS_HFCLKSTOP; /*!< Stop HFXO crystal oscillator */
 DECL|TASKS_KSGEN|member|__O uint32_t TASKS_KSGEN; /*!< Start generation of key-stream. This operation will stop by
-DECL|TASKS_LFCLKSTART|member|__O uint32_t TASKS_LFCLKSTART; /*!< Start LFCLK source */
-DECL|TASKS_LFCLKSTOP|member|__O uint32_t TASKS_LFCLKSTOP; /*!< Stop LFCLK source */
+DECL|TASKS_LFCLKSTART|member|__O uint32_t TASKS_LFCLKSTART; /*!< Start LFCLK */
+DECL|TASKS_LFCLKSTOP|member|__O uint32_t TASKS_LFCLKSTOP; /*!< Stop LFCLK */
 DECL|TASKS_LOWPWR|member|__O uint32_t TASKS_LOWPWR; /*!< Enable low power mode (variable latency) */
 DECL|TASKS_NEXTSTEP|member|__O uint32_t TASKS_NEXTSTEP; /*!< Steps by one value in the current sequence on all enabled channels
-DECL|TASKS_OUT|member|__O uint32_t TASKS_OUT[8]; /*!< Description collection[0]: Task for writing to pin specified
+DECL|TASKS_OUT|member|__O uint32_t TASKS_OUT[8]; /*!< Description collection[n]: Task for writing to pin specified
 DECL|TASKS_PREPARERX|member|__O uint32_t TASKS_PREPARERX; /*!< Prepare the TWI slave to respond to a write command */
 DECL|TASKS_PREPARETX|member|__O uint32_t TASKS_PREPARETX; /*!< Prepare the TWI slave to respond to a read command */
 DECL|TASKS_RATEOVERRIDE|member|__O uint32_t TASKS_RATEOVERRIDE; /*!< Override DATARATE setting in MODE register with the contents
@@ -1394,16 +1419,16 @@ DECL|TASKS_RSSISTOP|member|__O uint32_t TASKS_RSSISTOP; /*!< Stop the RSSI measu
 DECL|TASKS_RXEN|member|__O uint32_t TASKS_RXEN; /*!< Enable RADIO in RX mode */
 DECL|TASKS_SAMPLE|member|__O uint32_t TASKS_SAMPLE; /*!< Sample comparator value */
 DECL|TASKS_SAMPLE|member|__O uint32_t TASKS_SAMPLE; /*!< Sample comparator value */
-DECL|TASKS_SAMPLE|member|__O uint32_t TASKS_SAMPLE; /*!< Take one ADC sample, if scan is enabled all channels are sampled */
+DECL|TASKS_SAMPLE|member|__O uint32_t TASKS_SAMPLE; /*!< Takes one SAADC sample */
 DECL|TASKS_SENSE|member|__O uint32_t TASKS_SENSE; /*!< Enable NFC sense field mode, change state to sense mode */
-DECL|TASKS_SEQSTART|member|__O uint32_t TASKS_SEQSTART[2]; /*!< Description collection[0]: Loads the first PWM value on all
-DECL|TASKS_SET|member|__O uint32_t TASKS_SET[8]; /*!< Description collection[0]: Task for writing to pin specified
+DECL|TASKS_SEQSTART|member|__O uint32_t TASKS_SEQSTART[2]; /*!< Description collection[n]: Loads the first PWM value on all
+DECL|TASKS_SET|member|__O uint32_t TASKS_SET[8]; /*!< Description collection[n]: Task for writing to pin specified
 DECL|TASKS_SHUTDOWN|member|__O uint32_t TASKS_SHUTDOWN; /*!< Deprecated register - Shut down timer */
 DECL|TASKS_STARTECB|member|__O uint32_t TASKS_STARTECB; /*!< Start ECB block encrypt */
-DECL|TASKS_STARTEPIN|member|__O uint32_t TASKS_STARTEPIN[8]; /*!< Description collection[0]: Captures the EPIN[0].PTR, EPIN[0].MAXCNT
-DECL|TASKS_STARTEPOUT|member|__O uint32_t TASKS_STARTEPOUT[8]; /*!< Description collection[0]: Captures the EPOUT[0].PTR, EPOUT[0].MAXCNT
-DECL|TASKS_STARTISOIN|member|__O uint32_t TASKS_STARTISOIN; /*!< Captures the ISOIN.PTR, ISOIN.MAXCNT and ISOIN.CONFIG registers
-DECL|TASKS_STARTISOOUT|member|__O uint32_t TASKS_STARTISOOUT; /*!< Captures the ISOOUT.PTR, ISOOUT.MAXCNT and ISOOUT.CONFIG registers
+DECL|TASKS_STARTEPIN|member|__O uint32_t TASKS_STARTEPIN[8]; /*!< Description collection[n]: Captures the EPIN[n].PTR and EPIN[n].MAXCNT
+DECL|TASKS_STARTEPOUT|member|__O uint32_t TASKS_STARTEPOUT[8]; /*!< Description collection[n]: Captures the EPOUT[n].PTR and EPOUT[n].MAXCNT
+DECL|TASKS_STARTISOIN|member|__O uint32_t TASKS_STARTISOIN; /*!< Captures the ISOIN.PTR and ISOIN.MAXCNT registers values, and
+DECL|TASKS_STARTISOOUT|member|__O uint32_t TASKS_STARTISOOUT; /*!< Captures the ISOOUT.PTR and ISOOUT.MAXCNT registers values,
 DECL|TASKS_STARTRX|member|__O uint32_t TASKS_STARTRX; /*!< Start TWI receive sequence */
 DECL|TASKS_STARTRX|member|__O uint32_t TASKS_STARTRX; /*!< Start TWI receive sequence */
 DECL|TASKS_STARTRX|member|__O uint32_t TASKS_STARTRX; /*!< Start UART receiver */
@@ -1421,10 +1446,10 @@ DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start comparator */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start comparator */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start resolving addresses based on IRKs specified in the IRK
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start temperature measurement */
-DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start the ADC and prepare the result buffer in RAM */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Start the watchdog */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Starts continuous I2S transfer. Also starts MCK generator when
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Starts continuous PDM transfer */
+DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Starts the SAADC and prepares the result buffer in RAM */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Task starting the quadrature decoder */
 DECL|TASKS_START|member|__O uint32_t TASKS_START; /*!< Task starting the random number generator */
 DECL|TASKS_STOPECB|member|__O uint32_t TASKS_STOPECB; /*!< Abort a possible executing ECB operation */
@@ -1444,10 +1469,10 @@ DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stop comparator */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stop encryption/decryption */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stop resolving addresses */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stop temperature measurement */
-DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stop the ADC and terminate any on-going conversion */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stops I2S transfer. Also stops MCK generator. Triggering this
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stops PDM transfer */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stops PWM pulse generation on all channels at the end of current
+DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Stops the SAADC and terminates all on-going conversions */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Task stopping the quadrature decoder */
 DECL|TASKS_STOP|member|__O uint32_t TASKS_STOP; /*!< Task stopping the random number generator */
 DECL|TASKS_SUSPEND|member|__O uint32_t TASKS_SUSPEND; /*!< Suspend SPI transaction */
@@ -1455,23 +1480,24 @@ DECL|TASKS_SUSPEND|member|__O uint32_t TASKS_SUSPEND; /*!< Suspend TWI transacti
 DECL|TASKS_SUSPEND|member|__O uint32_t TASKS_SUSPEND; /*!< Suspend TWI transaction */
 DECL|TASKS_SUSPEND|member|__O uint32_t TASKS_SUSPEND; /*!< Suspend TWI transaction */
 DECL|TASKS_SUSPEND|member|__O uint32_t TASKS_SUSPEND; /*!< Suspend UART */
-DECL|TASKS_TRIGGER|member|__O uint32_t TASKS_TRIGGER[16]; /*!< Description collection[0]: Trigger 0 for triggering the corresponding
+DECL|TASKS_TRIGGER|member|__O uint32_t TASKS_TRIGGER[16]; /*!< Description collection[n]: Trigger n for triggering the corresponding
 DECL|TASKS_TRIGOVRFLW|member|__O uint32_t TASKS_TRIGOVRFLW; /*!< Set COUNTER to 0xFFFFF0 */
 DECL|TASKS_TXEN|member|__O uint32_t TASKS_TXEN; /*!< Enable RADIO in TX mode */
 DECL|TASKS_WRITESTART|member|__O uint32_t TASKS_WRITESTART; /*!< Start transfer from internal RAM to external flash memory */
 DECL|TEMP_IRQn|enumerator|TEMP_IRQn = 12, /*!< 12 TEMP */
 DECL|TEMP|member|FICR_TEMP_Type TEMP; /*!< Registers storing factory TEMP module linearization coefficients */
 DECL|TEMP|member|__I int32_t TEMP; /*!< Temperature in degC (0.25deg steps) */
-DECL|TEP|member|__IO uint32_t TEP; /*!< Description cluster[0]: Channel 0 task end-point */
-DECL|TEP|member|__IO uint32_t TEP; /*!< Description cluster[0]: Channel 0 task end-point */
+DECL|TEP|member|__IO uint32_t TEP; /*!< Description cluster[n]: Channel n task end-point */
+DECL|TEP|member|__IO uint32_t TEP; /*!< Description cluster[n]: Channel n task end-point */
 DECL|TH|member|__IO uint32_t TH; /*!< Threshold configuration for hysteresis unit */
-DECL|TIFS|member|__IO uint32_t TIFS; /*!< Inter Frame Spacing in us */
+DECL|TIFS|member|__IO uint32_t TIFS; /*!< Interframe spacing in us */
 DECL|TIMER0_IRQn|enumerator|TIMER0_IRQn = 8, /*!< 8 TIMER0 */
 DECL|TIMER1_IRQn|enumerator|TIMER1_IRQn = 9, /*!< 9 TIMER1 */
 DECL|TIMER2_IRQn|enumerator|TIMER2_IRQn = 10, /*!< 10 TIMER2 */
 DECL|TIMER3_IRQn|enumerator|TIMER3_IRQn = 26, /*!< 26 TIMER3 */
 DECL|TIMER4_IRQn|enumerator|TIMER4_IRQn = 27, /*!< 27 TIMER4 */
-DECL|TRACECONFIG|member|__IO uint32_t TRACECONFIG; /*!< Clocking options for the Trace Port debug interface */
+DECL|TRACECONFIG|member|__IO uint32_t TRACECONFIG; /*!< Clocking options for the trace port debug interface */
+DECL|TRNG90B|member|FICR_TRNG90B_Type TRNG90B; /*!< NIST800-90B RNG calibration data */
 DECL|TWIM_PSEL_Type|typedef|} TWIM_PSEL_Type;
 DECL|TWIM_RXD_Type|typedef|} TWIM_RXD_Type;
 DECL|TWIM_TXD_Type|typedef|} TWIM_TXD_Type;
@@ -1502,10 +1528,10 @@ DECL|UARTE_TXD_Type|typedef|} UARTE_TXD_Type;
 DECL|UART_PSEL_Type|typedef|} UART_PSEL_Type;
 DECL|UNUSED0|member|__IO uint32_t UNUSED0; /*!< Unspecified */
 DECL|UNUSED0|member|__IO uint32_t UNUSED0; /*!< Unspecified */
-DECL|UNUSED0|member|__IO uint32_t UNUSED0[3]; /*!< Description collection[0]: Unspecified */
 DECL|UNUSED1|member|__IO uint32_t UNUSED1; /*!< Unspecified */
 DECL|UNUSED2|member|__IO uint32_t UNUSED2; /*!< Unspecified */
 DECL|UNUSED3|member|__IO uint32_t UNUSED3; /*!< Unspecified */
+DECL|UNUSED8|member|__IO uint32_t UNUSED8[3]; /*!< Unspecified */
 DECL|UNUSED|member|__I uint32_t UNUSED; /*!< Unused. */
 DECL|UNUSED|member|__I uint32_t UNUSED; /*!< Unused. */
 DECL|USBADDR|member|__I uint32_t USBADDR; /*!< Device USB address */
@@ -1520,9 +1546,9 @@ DECL|USBPULLUP|member|__IO uint32_t USBPULLUP; /*!< Control of the USB pull-up *
 DECL|USBREGSTATUS|member|__I uint32_t USBREGSTATUS; /*!< USB supply status */
 DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10, /*!< 6 Usage Fault, i.e. Undef Instruction, Illegal State Transition */
 DECL|VALUE|member|__I uint32_t VALUE; /*!< Output random number */
-DECL|VARIANT|member|__I uint32_t VARIANT; /*!< Part variant (hardware version and production configuration) */
-DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[0]: Write access to peripheral region 0
-DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[0]: Write access to region 0 detected */
+DECL|VARIANT|member|__I uint32_t VARIANT; /*!< Build code (hardware version and production configuration) */
+DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[n]: Write access to peripheral region n
+DECL|WA|member|__IO uint32_t WA; /*!< Description cluster[n]: Write access to region n detected */
 DECL|WDT_IRQn|enumerator|WDT_IRQn = 16, /*!< 16 WDT */
 DECL|WINDEXH|member|__I uint32_t WINDEXH; /*!< SETUP data, byte 5, MSB of wIndex */
 DECL|WINDEXL|member|__I uint32_t WINDEXL; /*!< SETUP data, byte 4, LSB of wIndex */

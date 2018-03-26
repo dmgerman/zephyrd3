@@ -1,6 +1,7 @@
+DECL|QSPI_DEF_WAIT_ATTEMPTS|macro|QSPI_DEF_WAIT_ATTEMPTS
+DECL|QSPI_DEF_WAIT_TIME_US|macro|QSPI_DEF_WAIT_TIME_US
 DECL|QSPI_MEM_STATUSREG_WIP_Pos|macro|QSPI_MEM_STATUSREG_WIP_Pos
 DECL|QSPI_STD_CMD_RDSR|macro|QSPI_STD_CMD_RDSR
-DECL|QSPI_WAIT_READY|macro|QSPI_WAIT_READY
 DECL|handler|member|nrfx_qspi_handler_t handler; /**< Handler. */
 DECL|interrupt_driven|member|volatile bool interrupt_driven; /**< Information if the current operation is performed and is interrupt-driven. */
 DECL|m_cb|variable|m_cb

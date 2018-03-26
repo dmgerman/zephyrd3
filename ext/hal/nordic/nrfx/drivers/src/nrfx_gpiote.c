@@ -13,6 +13,7 @@ DECL|channel_free|function|static void channel_free(uint8_t channel_id)
 DECL|channel_handler_get|function|__STATIC_INLINE nrfx_gpiote_evt_handler_t channel_handler_get(uint32_t channel)
 DECL|channel_port_alloc|function|static int8_t channel_port_alloc(uint32_t pin, nrfx_gpiote_evt_handler_t handler, bool channel)
 DECL|channel_port_get|function|__STATIC_INLINE int8_t channel_port_get(uint32_t pin)
+DECL|configured_pins|member|uint8_t configured_pins[((NUMBER_OF_PINS)+7) / 8];
 DECL|gpiote_control_block_t|typedef|} gpiote_control_block_t;
 DECL|handlers|member|nrfx_gpiote_evt_handler_t handlers[GPIOTE_CH_NUM + NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS];
 DECL|m_cb|variable|m_cb
@@ -41,6 +42,9 @@ DECL|nrfx_gpiote_set_task_addr_get|function|uint32_t nrfx_gpiote_set_task_addr_g
 DECL|nrfx_gpiote_set_task_trigger|function|void nrfx_gpiote_set_task_trigger(nrfx_gpiote_pin_t pin)
 DECL|nrfx_gpiote_uninit|function|void nrfx_gpiote_uninit(void)
 DECL|pin_assignments|member|int8_t pin_assignments[NUMBER_OF_PINS];
+DECL|pin_configured_check|function|__STATIC_INLINE bool pin_configured_check(uint32_t pin)
+DECL|pin_configured_clear|function|__STATIC_INLINE void pin_configured_clear(uint32_t pin)
+DECL|pin_configured_set|function|__STATIC_INLINE void pin_configured_set(uint32_t pin)
 DECL|pin_in_use_as_non_task_out|function|__STATIC_INLINE bool pin_in_use_as_non_task_out(uint32_t pin)
 DECL|pin_in_use_by_gpiote|function|__STATIC_INLINE bool pin_in_use_by_gpiote(uint32_t pin)
 DECL|pin_in_use_by_port|function|__STATIC_INLINE bool pin_in_use_by_port(uint32_t pin)

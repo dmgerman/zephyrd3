@@ -6,6 +6,7 @@ DECL|finish_transfer|function|static void finish_transfer(spi_control_block_t * 
 DECL|handler|member|nrfx_spi_evt_handler_t handler;
 DECL|irq_handler|function|static void irq_handler(NRF_SPI_Type * p_spi, spi_control_block_t * p_cb)
 DECL|m_cb|variable|m_cb
+DECL|miso_pin|member|uint8_t miso_pin;
 DECL|nrfx_spi_0_irq_handler|function|void nrfx_spi_0_irq_handler(void)
 DECL|nrfx_spi_1_irq_handler|function|void nrfx_spi_1_irq_handler(void)
 DECL|nrfx_spi_2_irq_handler|function|void nrfx_spi_2_irq_handler(void)

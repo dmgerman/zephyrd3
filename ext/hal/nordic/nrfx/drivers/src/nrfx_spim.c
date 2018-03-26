@@ -9,11 +9,15 @@ DECL|SPIM3_LENGTH_VALIDATE|macro|SPIM3_LENGTH_VALIDATE
 DECL|SPIM3_LENGTH_VALIDATE|macro|SPIM3_LENGTH_VALIDATE
 DECL|SPIMX_LENGTH_VALIDATE|macro|SPIMX_LENGTH_VALIDATE
 DECL|SPIM_LENGTH_VALIDATE|macro|SPIM_LENGTH_VALIDATE
+DECL|anomaly_198_disable|function|static void anomaly_198_disable(void)
+DECL|anomaly_198_enable|function|static void anomaly_198_enable(uint8_t const * p_buffer, size_t buf_len)
 DECL|evt|member|nrfx_spim_evt_t evt; // Keep the struct that is ready for event handler. Less memcpy.
 DECL|finish_transfer|function|static void finish_transfer(spim_control_block_t * p_cb)
 DECL|handler|member|nrfx_spim_evt_handler_t handler;
 DECL|irq_handler|function|static void irq_handler(NRF_SPIM_Type * p_spim, spim_control_block_t * p_cb)
+DECL|m_anomaly_198_preserved_value|variable|m_anomaly_198_preserved_value
 DECL|m_cb|variable|m_cb
+DECL|miso_pin|member|uint8_t miso_pin;
 DECL|nrfx_spim_0_irq_handler|function|void nrfx_spim_0_irq_handler(void)
 DECL|nrfx_spim_1_irq_handler|function|void nrfx_spim_1_irq_handler(void)
 DECL|nrfx_spim_2_irq_handler|function|void nrfx_spim_2_irq_handler(void)

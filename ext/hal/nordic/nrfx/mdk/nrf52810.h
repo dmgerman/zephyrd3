@@ -60,7 +60,7 @@ DECL|CH|member|PPI_CH_Type CH[20]; /*!< PPI Channel */
 DECL|CH|member|SAADC_CH_Type CH[8]; /*!< Unspecified */
 DECL|CLK|member|__IO uint32_t CLK; /*!< Pin number configuration for PDM CLK signal */
 DECL|CNFPTR|member|__IO uint32_t CNFPTR; /*!< Pointer to data structure holding AES key and NONCE vector */
-DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Amount of values (duty cycles) in this
+DECL|CNT|member|__IO uint32_t CNT; /*!< Description cluster[0]: Number of values (duty cycles) in this
 DECL|CODEPAGESIZE|member|__I uint32_t CODEPAGESIZE; /*!< Code memory page size */
 DECL|CODESIZE|member|__I uint32_t CODESIZE; /*!< Code memory size */
 DECL|COMP_IRQn|enumerator|COMP_IRQn = 19, /*!< 19 COMP */
@@ -319,7 +319,7 @@ DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
 DECL|LIST|member|__IO uint32_t LIST; /*!< EasyDMA list type */
-DECL|LOOP|member|__IO uint32_t LOOP; /*!< Amount of playback of a loop */
+DECL|LOOP|member|__IO uint32_t LOOP; /*!< Number of playbacks of a loop */
 DECL|MATCH|member|__I uint32_t MATCH; /*!< Status register indicating which address had a match */
 DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of buffer words to transfer */
 DECL|MAXCNT|member|__IO uint32_t MAXCNT; /*!< Maximum number of bytes in RXD buffer */
@@ -513,7 +513,7 @@ DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< Data pointer */
-DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in Data RAM of this
+DECL|PTR|member|__IO uint32_t PTR; /*!< Description cluster[0]: Beginning address in RAM of this sequence */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RAM address pointer to write samples to with EasyDMA */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD Data pointer */
 DECL|PTR|member|__IO uint32_t PTR; /*!< RXD data pointer */
@@ -530,7 +530,7 @@ DECL|RAM|member|POWER_RAM_Type RAM[8]; /*!< Unspecified */
 DECL|RAM|member|__I uint32_t RAM; /*!< RAM variant */
 DECL|RATEOVERRIDE|member|__IO uint32_t RATEOVERRIDE; /*!< Data rate override setting. */
 DECL|READY|member|__I uint32_t READY; /*!< Ready flag */
-DECL|REFRESH|member|__IO uint32_t REFRESH; /*!< Description cluster[0]: Amount of additional PWM periods between
+DECL|REFRESH|member|__IO uint32_t REFRESH; /*!< Description cluster[0]: Number of additional PWM periods between
 DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference source select for single-ended mode */
 DECL|REPORTPER|member|__IO uint32_t REPORTPER; /*!< Number of samples to be taken before REPORTRDY and DBLRDY events
 DECL|REQSTATUS|member|__I uint32_t REQSTATUS; /*!< Request status */

@@ -45,6 +45,7 @@ DECL|NRF_QSPI_READOC_READ2O|enumerator|NRF_QSPI_READOC_READ2O = QSPI_IFCONFIG0_R
 DECL|NRF_QSPI_READOC_READ4IO|enumerator|NRF_QSPI_READOC_READ4IO = QSPI_IFCONFIG0_READOC_READ4IO /**< Quad data line SPI. READ4IO (opcode 0xEB). */
 DECL|NRF_QSPI_READOC_READ4O|enumerator|NRF_QSPI_READOC_READ4O = QSPI_IFCONFIG0_READOC_READ4O, /**< Quad data line SPI. READ4O (opcode 0x6B). */
 DECL|NRF_QSPI_TASK_ACTIVATE|enumerator|NRF_QSPI_TASK_ACTIVATE = offsetof(NRF_QSPI_Type, TASKS_ACTIVATE), /**< Activate the QSPI interface. */
+DECL|NRF_QSPI_TASK_DEACTIVATE|enumerator|NRF_QSPI_TASK_DEACTIVATE = offsetof(NRF_QSPI_Type, TASKS_DEACTIVATE), /**< Deactivate the QSPI interface. */
 DECL|NRF_QSPI_TASK_ERASESTART|enumerator|NRF_QSPI_TASK_ERASESTART = offsetof(NRF_QSPI_Type, TASKS_ERASESTART), /**< Start external flash memory erase operation. */
 DECL|NRF_QSPI_TASK_READSTART|enumerator|NRF_QSPI_TASK_READSTART = offsetof(NRF_QSPI_Type, TASKS_READSTART), /**< Start transfer from external flash memory to internal RAM. */
 DECL|NRF_QSPI_TASK_WRITESTART|enumerator|NRF_QSPI_TASK_WRITESTART = offsetof(NRF_QSPI_Type, TASKS_WRITESTART), /**< Start transfer from internal RAM to external flash memory. */

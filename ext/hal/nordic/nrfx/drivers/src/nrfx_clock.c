@@ -13,8 +13,11 @@ DECL|NRF_CLOCK_LFCLK_Synth|macro|NRF_CLOCK_LFCLK_Synth
 DECL|NRF_CLOCK_LFCLK_Synth|macro|NRF_CLOCK_LFCLK_Synth
 DECL|NRF_CLOCK_LFCLK_Xtal|macro|NRF_CLOCK_LFCLK_Xtal
 DECL|NRF_CLOCK_LFCLK_Xtal|macro|NRF_CLOCK_LFCLK_Xtal
+DECL|USE_WORKAROUND_FOR_ANOMALY_192|macro|USE_WORKAROUND_FOR_ANOMALY_192
+DECL|USE_WORKAROUND_FOR_ANOMALY_201|macro|USE_WORKAROUND_FOR_ANOMALY_201
 DECL|cal_state|member|volatile nrfx_clock_cal_state_t cal_state;
 DECL|event_handler|member|nrfx_clock_event_handler_t event_handler;
+DECL|hfclk_started|member|bool hfclk_started; /*< Anomaly 201 workaround. */
 DECL|m_clock_cb|variable|m_clock_cb
 DECL|module_initialized|member|bool module_initialized; /*< Indicate the state of module */
 DECL|nrfx_clock_anomaly_132|function|static void nrfx_clock_anomaly_132(void)

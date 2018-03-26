@@ -9,6 +9,7 @@ DECL|NRFX_DRV_STATE_POWERED_ON|enumerator|NRFX_DRV_STATE_POWERED_ON, ///< Initia
 DECL|NRFX_DRV_STATE_UNINITIALIZED|enumerator|NRFX_DRV_STATE_UNINITIALIZED, ///< Uninitialized.
 DECL|NRFX_EASYDMA_LENGTH_VALIDATE|macro|NRFX_EASYDMA_LENGTH_VALIDATE
 DECL|NRFX_ROUNDED_DIV|macro|NRFX_ROUNDED_DIV
+DECL|NRFX_WAIT_FOR|macro|NRFX_WAIT_FOR
 DECL|nrfx_bitpos_to_event|function|__STATIC_INLINE uint32_t nrfx_bitpos_to_event(uint32_t bit)
 DECL|nrfx_drv_state_t|typedef|} nrfx_drv_state_t;
 DECL|nrfx_event_to_bitpos|function|__STATIC_INLINE uint32_t nrfx_event_to_bitpos(uint32_t event)

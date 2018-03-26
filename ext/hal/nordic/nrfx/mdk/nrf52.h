@@ -740,7 +740,7 @@ DECL|RA|member|__IO uint32_t RA; /*!< Description cluster[0]: Read access to reg
 DECL|READY|member|__I uint32_t READY; /*!< Ready flag */
 DECL|REFRESH|member|__IO uint32_t REFRESH; /*!< Description cluster[0]: Amount of additional PWM periods between
 DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference select */
-DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference source select */
+DECL|REFSEL|member|__IO uint32_t REFSEL; /*!< Reference source select for single-ended mode */
 DECL|REGIONENCLR|member|__IO uint32_t REGIONENCLR; /*!< Disable regions watch */
 DECL|REGIONENSET|member|__IO uint32_t REGIONENSET; /*!< Enable regions watch */
 DECL|REGIONEN|member|__IO uint32_t REGIONEN; /*!< Enable/disable regions watch */

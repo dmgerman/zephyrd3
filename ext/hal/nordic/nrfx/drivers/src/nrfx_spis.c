@@ -4,7 +4,6 @@ DECL|EVT_TO_STR|macro|EVT_TO_STR
 DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
 DECL|SPIS0_LENGTH_VALIDATE|macro|SPIS0_LENGTH_VALIDATE
 DECL|SPIS0_LENGTH_VALIDATE|macro|SPIS0_LENGTH_VALIDATE
-DECL|SPIS1_EASYDMA_MAXCNT_SIZE|macro|SPIS1_EASYDMA_MAXCNT_SIZE
 DECL|SPIS1_LENGTH_VALIDATE|macro|SPIS1_LENGTH_VALIDATE
 DECL|SPIS1_LENGTH_VALIDATE|macro|SPIS1_LENGTH_VALIDATE
 DECL|SPIS2_LENGTH_VALIDATE|macro|SPIS2_LENGTH_VALIDATE
@@ -23,9 +22,10 @@ DECL|nrfx_spis_0_irq_handler|function|void nrfx_spis_0_irq_handler(void)
 DECL|nrfx_spis_1_irq_handler|function|void nrfx_spis_1_irq_handler(void)
 DECL|nrfx_spis_2_irq_handler|function|void nrfx_spis_2_irq_handler(void)
 DECL|nrfx_spis_buffers_set|function|nrfx_err_t nrfx_spis_buffers_set(nrfx_spis_t const * const p_instance, uint8_t const * p_tx_buffer, size_t tx_buffer_length, uint8_t * p_rx_buffer, size_t rx_buffer_length)
-DECL|nrfx_spis_init|function|nrfx_err_t nrfx_spis_init(nrfx_spis_t const * const p_instance, nrfx_spis_config_t const * p_config, nrfx_spis_event_handler_t event_handler)
+DECL|nrfx_spis_init|function|nrfx_err_t nrfx_spis_init(nrfx_spis_t const * const p_instance, nrfx_spis_config_t const * p_config, nrfx_spis_event_handler_t event_handler, void * p_context)
 DECL|nrfx_spis_state_t|typedef|} nrfx_spis_state_t;
 DECL|nrfx_spis_uninit|function|void nrfx_spis_uninit(nrfx_spis_t const * const p_instance)
+DECL|p_context|member|void * p_context; //!< Context set on initialization.
 DECL|rx_buffer_size|member|volatile uint32_t rx_buffer_size; //!< SPI slave RX buffer size in bytes.
 DECL|rx_buffer|member|volatile uint8_t * rx_buffer; //!< SPI slave RX buffer.
 DECL|spi_state|member|volatile nrfx_spis_state_t spi_state; //!< SPI slave state.

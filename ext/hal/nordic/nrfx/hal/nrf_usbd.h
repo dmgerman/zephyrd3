@@ -1,13 +1,3 @@
-DECL|NRF_USBD_BUSSTATE_DM_MASK|enumerator|NRF_USBD_BUSSTATE_DM_MASK = USBD_BUSSTATE_DM_Msk, /**< Negative line mask */
-DECL|NRF_USBD_BUSSTATE_DPDM_HH|enumerator|NRF_USBD_BUSSTATE_DPDM_HH = (USBD_BUSSTATE_DM_High << USBD_BUSSTATE_DM_Pos) | (USBD_BUSSTATE_DP_High << USBD_BUSSTATE_DP_Pos),
-DECL|NRF_USBD_BUSSTATE_DPDM_HL|enumerator|NRF_USBD_BUSSTATE_DPDM_HL = (USBD_BUSSTATE_DM_Low << USBD_BUSSTATE_DM_Pos) | (USBD_BUSSTATE_DP_High << USBD_BUSSTATE_DP_Pos),
-DECL|NRF_USBD_BUSSTATE_DPDM_LH|enumerator|NRF_USBD_BUSSTATE_DPDM_LH = (USBD_BUSSTATE_DM_High << USBD_BUSSTATE_DM_Pos) | (USBD_BUSSTATE_DP_Low << USBD_BUSSTATE_DP_Pos),
-DECL|NRF_USBD_BUSSTATE_DPDM_LL|enumerator|NRF_USBD_BUSSTATE_DPDM_LL = (USBD_BUSSTATE_DM_Low << USBD_BUSSTATE_DM_Pos) | (USBD_BUSSTATE_DP_Low << USBD_BUSSTATE_DP_Pos),
-DECL|NRF_USBD_BUSSTATE_DP_MASK|enumerator|NRF_USBD_BUSSTATE_DP_MASK = USBD_BUSSTATE_DP_Msk, /**< Positive line mask */
-DECL|NRF_USBD_BUSSTATE_J|enumerator|NRF_USBD_BUSSTATE_J = NRF_USBD_BUSSTATE_DPDM_HL,
-DECL|NRF_USBD_BUSSTATE_K|enumerator|NRF_USBD_BUSSTATE_K = NRF_USBD_BUSSTATE_DPDM_LH,
-DECL|NRF_USBD_BUSSTATE_SE0|enumerator|NRF_USBD_BUSSTATE_SE0 = NRF_USBD_BUSSTATE_DPDM_LL,
-DECL|NRF_USBD_BUSSTATE_SE1|enumerator|NRF_USBD_BUSSTATE_SE1 = NRF_USBD_BUSSTATE_DPDM_HH
 DECL|NRF_USBD_DPDMVALUE_J|enumerator|NRF_USBD_DPDMVALUE_J = USBD_DPDMVALUE_STATE_J,
 DECL|NRF_USBD_DPDMVALUE_RESUME|enumerator|NRF_USBD_DPDMVALUE_RESUME = USBD_DPDMVALUE_STATE_Resume,
 DECL|NRF_USBD_DPMVALUE_K|enumerator|NRF_USBD_DPMVALUE_K = USBD_DPDMVALUE_STATE_K
@@ -63,7 +53,6 @@ DECL|NRF_USBD_EVENTCAUSE_READY_MASK|enumerator|NRF_USBD_EVENTCAUSE_READY_MASK = 
 DECL|NRF_USBD_EVENTCAUSE_RESUME_MASK|enumerator|NRF_USBD_EVENTCAUSE_RESUME_MASK = USBD_EVENTCAUSE_RESUME_Msk , /**< Signals that a RESUME condition (K state or activity restart) has been detected on the USB lines. */
 DECL|NRF_USBD_EVENTCAUSE_SUSPEND_MASK|enumerator|NRF_USBD_EVENTCAUSE_SUSPEND_MASK = USBD_EVENTCAUSE_SUSPEND_Msk , /**< Signals that the USB lines have been seen idle long enough for the device to enter suspend. */
 DECL|NRF_USBD_EVENTCAUSE_WUREQ_MASK|enumerator|NRF_USBD_EVENTCAUSE_WUREQ_MASK = (1U << 10) /**< The USBD peripheral has exited Low Power mode */
-DECL|NRF_USBD_EVENT_ACCESSFAULT|enumerator|NRF_USBD_EVENT_ACCESSFAULT = offsetof(NRF_USBD_Type, EVENTS_ACCESSFAULT), /**< >Access to an unavailable USB register has been attempted (software or EasyDMA) */
 DECL|NRF_USBD_EVENT_DATAEP|enumerator|NRF_USBD_EVENT_DATAEP = offsetof(NRF_USBD_Type, EVENTS_EPDATA ), /**< A data transfer has occurred on a data endpoint, indicated by the EPDATASTATUS register */
 DECL|NRF_USBD_EVENT_ENDEPIN0|enumerator|NRF_USBD_EVENT_ENDEPIN0 = offsetof(NRF_USBD_Type, EVENTS_ENDEPIN[0] ), /**< The whole EPIN[0] buffer has been consumed. The RAM buffer can be accessed safely by software. */
 DECL|NRF_USBD_EVENT_ENDEPIN1|enumerator|NRF_USBD_EVENT_ENDEPIN1 = offsetof(NRF_USBD_Type, EVENTS_ENDEPIN[1] ), /**< The whole EPIN[1] buffer has been consumed. The RAM buffer can be accessed safely by software. */
@@ -91,7 +80,6 @@ DECL|NRF_USBD_EVENT_USBEVENT|enumerator|NRF_USBD_EVENT_USBEVENT = offsetof(NRF_U
 DECL|NRF_USBD_EVENT_USBRESET|enumerator|NRF_USBD_EVENT_USBRESET = offsetof(NRF_USBD_Type, EVENTS_USBRESET ), /**< Signals that a USB reset condition has been detected on the USB lines */
 DECL|NRF_USBD_FRAMECNTR_SIZE|macro|NRF_USBD_FRAMECNTR_SIZE
 DECL|NRF_USBD_H__|macro|NRF_USBD_H__
-DECL|NRF_USBD_INT_ACCESSFAULT_MASK|enumerator|NRF_USBD_INT_ACCESSFAULT_MASK = USBD_INTEN_ACCESSFAULT_Msk, /**< Enable or disable interrupt for ACCESSFAULT event */
 DECL|NRF_USBD_INT_DATAEP_MASK|enumerator|NRF_USBD_INT_DATAEP_MASK = USBD_INTEN_EPDATA_Msk , /**< Enable or disable interrupt for EPDATA event */
 DECL|NRF_USBD_INT_ENDEPIN0_MASK|enumerator|NRF_USBD_INT_ENDEPIN0_MASK = USBD_INTEN_ENDEPIN0_Msk , /**< Enable or disable interrupt for ENDEPIN[0] event */
 DECL|NRF_USBD_INT_ENDEPIN1_MASK|enumerator|NRF_USBD_INT_ENDEPIN1_MASK = USBD_INTEN_ENDEPIN1_Msk , /**< Enable or disable interrupt for ENDEPIN[1] event */
@@ -147,8 +135,6 @@ DECL|NRF_USBD_TASK_STARTEPOUT6|enumerator|NRF_USBD_TASK_STARTEPOUT6 = offsetof(N
 DECL|NRF_USBD_TASK_STARTEPOUT7|enumerator|NRF_USBD_TASK_STARTEPOUT7 = offsetof(NRF_USBD_Type, TASKS_STARTEPOUT[7]), /**< Captures the EPOUT[7].PTR, EPOUT[7].MAXCNT and EPOUT[7].CONFIG registers values, and enables data endpoint 7 to respond to traffic from host */
 DECL|NRF_USBD_TASK_STARTISOIN|enumerator|NRF_USBD_TASK_STARTISOIN = offsetof(NRF_USBD_Type, TASKS_STARTISOIN ), /**< Captures the ISOIN.PTR, ISOIN.MAXCNT and ISOIN.CONFIG registers values, and enables sending data on iso endpoint 8 */
 DECL|NRF_USBD_TASK_STARTISOOUT|enumerator|NRF_USBD_TASK_STARTISOOUT = offsetof(NRF_USBD_Type, TASKS_STARTISOOUT ), /**< Captures the ISOOUT.PTR, ISOOUT.MAXCNT and ISOOUT.CONFIG registers values, and enables receiving of data on iso endpoint 8 */
-DECL|nrf_usbd_busstate_get|function|nrf_usbd_busstate_t nrf_usbd_busstate_get(void)
-DECL|nrf_usbd_busstate_t|typedef|}nrf_usbd_busstate_t;
 DECL|nrf_usbd_dataepstatus_mask_t|typedef|}nrf_usbd_dataepstatus_mask_t;
 DECL|nrf_usbd_disable|function|void nrf_usbd_disable(void)
 DECL|nrf_usbd_dpdmvalue_set|function|void nrf_usbd_dpdmvalue_set(nrf_usbd_dpdmvalue_t val)
