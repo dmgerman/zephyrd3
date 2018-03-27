@@ -1,14 +1,14 @@
 DECL|MODULO_INC|macro|MODULO_INC
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|eth0_api|variable|eth0_api
 DECL|eth0_config|variable|eth0_config
 DECL|eth0_data|variable|eth0_data
 DECL|eth0_iface_init|function|static void eth0_iface_init(struct net_if *iface)
 DECL|eth0_irq_config|function|static void eth0_irq_config(void)
-DECL|eth_capabilities|function|static enum eth_hw_caps eth_capabilities(struct device *dev)
+DECL|eth_api|variable|eth_api
 DECL|eth_initialize|function|static int eth_initialize(struct device *dev)
 DECL|eth_rx|function|static void eth_rx(struct gmac_queue *queue)
+DECL|eth_sam_gmac_get_capabilities|function|static enum eth_hw_caps eth_sam_gmac_get_capabilities(struct device *dev)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_get|function|static struct net_pkt *frame_get(struct gmac_queue *queue)
 DECL|free_rx_bufs|function|static void free_rx_bufs(struct ring_buf *rx_frag_list)

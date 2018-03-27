@@ -15,6 +15,7 @@ DECL|eth_if_count|member|int eth_if_count;
 DECL|eth_iface_init|function|static void eth_iface_init(struct net_if *iface)
 DECL|eth_init|function|static int eth_init(struct device *dev)
 DECL|eth_interfaces|variable|eth_interfaces
+DECL|eth_offloading_disabled|function|static enum eth_hw_caps eth_offloading_disabled(struct device *dev)
 DECL|eth_offloading_enabled|function|static enum eth_hw_caps eth_offloading_enabled(struct device *dev)
 DECL|eth_setup|function|static void eth_setup(void)
 DECL|eth_tx_offloading_disabled|function|static int eth_tx_offloading_disabled(struct net_if *iface, struct net_pkt *pkt)
