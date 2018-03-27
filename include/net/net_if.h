@@ -18,6 +18,7 @@ DECL|NET_IF_POINTOPOINT|enumerator|NET_IF_POINTOPOINT,
 DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
+DECL|__net_if_align|variable|__net_if_align
 DECL|_unused|member|u8_t _unused : 6;
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
