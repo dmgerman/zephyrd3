@@ -36,3 +36,9 @@ DECL|uart_gecko_irq_update|function|static int uart_gecko_irq_update(struct devi
 DECL|uart_gecko_isr|function|static void uart_gecko_isr(void *arg)
 DECL|uart_gecko_poll_in|function|static int uart_gecko_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_gecko_poll_out|function|static unsigned char uart_gecko_poll_out(struct device *dev, unsigned char c)
+DECL|usart_gecko_0_config|variable|usart_gecko_0_config
+DECL|usart_gecko_0_data|variable|usart_gecko_0_data
+DECL|usart_gecko_1_config|variable|usart_gecko_1_config
+DECL|usart_gecko_1_data|variable|usart_gecko_1_data
+DECL|usart_gecko_config_func_0|function|static void usart_gecko_config_func_0(struct device *dev)
+DECL|usart_gecko_config_func_1|function|static void usart_gecko_config_func_1(struct device *dev)
