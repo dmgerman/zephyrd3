@@ -7,7 +7,6 @@ DECL|NET_ETH_PTYPE_IPV6|macro|NET_ETH_PTYPE_IPV6
 DECL|NET_ETH_PTYPE_IP|macro|NET_ETH_PTYPE_IP
 DECL|__ETHERNET_H|macro|__ETHERNET_H
 DECL|__packed|variable|__packed
-DECL|__packed|variable|__packed
 DECL|addr|member|u8_t addr[6];
 DECL|dst|member|struct net_eth_addr dst;
 DECL|eth_hw_caps|enum|enum eth_hw_caps {
