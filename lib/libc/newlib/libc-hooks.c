@@ -11,6 +11,8 @@ DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(_zephyr_read, buf, nbytes)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(_zephyr_write, buf, nbytes)
 DECL|__errno|function|int *__errno(void)
 DECL|__stdin_hook_install|function|void __stdin_hook_install(unsigned char (*hook)(void))
 DECL|__stdout_hook_install|function|void __stdout_hook_install(int (*hook)(int))
@@ -18,6 +20,8 @@ DECL|_close|function|int _close(int file)
 DECL|_exit|function|void _exit(int status)
 DECL|_fstat|function|int _fstat(int file, struct stat *st)
 DECL|_getpid|function|int _getpid(void)
+DECL|_impl__zephyr_read|function|int _impl__zephyr_read(char *buf, int nbytes)
+DECL|_impl__zephyr_write|function|int _impl__zephyr_write(char *buf, int nbytes)
 DECL|_isatty|function|int _isatty(int file)
 DECL|_kill|function|int _kill(int i, int j)
 DECL|_lseek|function|int _lseek(int file, int ptr, int dir)
