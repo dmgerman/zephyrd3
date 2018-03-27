@@ -60,7 +60,8 @@ DECL|net_shell_cmd_stacks|function|int net_shell_cmd_stacks(int argc, char *argv
 DECL|net_shell_cmd_stats|function|int net_shell_cmd_stats(int argc, char *argv[])
 DECL|net_shell_cmd_tcp|function|int net_shell_cmd_tcp(int argc, char *argv[])
 DECL|net_shell_cmd_vlan|function|int net_shell_cmd_vlan(int argc, char *argv[])
-DECL|net_shell_print_statistics|function|static inline void net_shell_print_statistics(void)
+DECL|net_shell_print_statistics_all|function|static void net_shell_print_statistics_all(void)
+DECL|net_shell_print_statistics|function|static void net_shell_print_statistics(struct net_if *iface, void *user_data)
 DECL|ping4_handler|variable|ping4_handler
 DECL|ping6_handler|variable|ping6_handler
 DECL|pos|member|int pos;

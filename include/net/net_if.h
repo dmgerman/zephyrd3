@@ -133,6 +133,7 @@ DECL|send|member|int (*send)(struct net_if *iface, struct net_pkt *pkt);
 DECL|server_id|member|struct in_addr server_id;
 DECL|stack|member|k_thread_stack_t *stack;
 DECL|state|member|enum net_dhcpv4_state state;
+DECL|stats|member|struct net_stats stats;
 DECL|t1_timer|member|struct k_delayed_work t1_timer;
 DECL|t2_timer|member|struct k_delayed_work t2_timer;
 DECL|tc|member|int tc;

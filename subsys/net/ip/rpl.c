@@ -30,7 +30,7 @@ DECL|NET_RPL_ZERO_LIFETIME|macro|NET_RPL_ZERO_LIFETIME
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|acceptable_rank|function|static int acceptable_rank(struct net_rpl_dag *dag, u16_t rank)
 DECL|add_rpl_opt|function|static inline int add_rpl_opt(struct net_pkt *pkt, u16_t offset)
-DECL|alloc_dag|function|static struct net_rpl_dag *alloc_dag(u8_t instance_id, struct in6_addr *dag_id)
+DECL|alloc_dag|function|static struct net_rpl_dag *alloc_dag(struct net_if *iface, u8_t instance_id, struct in6_addr *dag_id)
 DECL|best_parent|function|static struct net_rpl_parent *best_parent(struct net_if *iface, struct net_rpl_dag *dag)
 DECL|check_prefix|function|static void check_prefix(struct net_if *iface, struct net_rpl_prefix *last_prefix, struct net_rpl_prefix *new_prefix)
 DECL|create_linklocal_rplnodes_mcast|function|static inline void create_linklocal_rplnodes_mcast(struct in6_addr *addr)
