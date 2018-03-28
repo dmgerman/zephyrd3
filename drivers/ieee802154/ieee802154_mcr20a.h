@@ -21,5 +21,4 @@ DECL|reset_gpio|member|struct device *reset_gpio;
 DECL|seq_retval|member|atomic_t seq_retval;
 DECL|seq_sync|member|struct k_sem seq_sync;
 DECL|spi_cfg|member|struct spi_config spi_cfg;
-DECL|spi_sem|member|struct k_sem spi_sem;
 DECL|spi|member|struct device *spi;
