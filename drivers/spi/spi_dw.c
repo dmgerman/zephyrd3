@@ -6,7 +6,7 @@ DECL|DBG_COUNTER_RESULT|macro|DBG_COUNTER_RESULT
 DECL|DBG_COUNTER_RESULT|macro|DBG_COUNTER_RESULT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|completed|function|static void completed(struct device *dev, u8_t error)
+DECL|completed|function|static void completed(struct device *dev, int error)
 DECL|dw_spi_api|variable|dw_spi_api
 DECL|pull_data|function|static void pull_data(struct device *dev)
 DECL|push_data|function|static void push_data(struct device *dev)
