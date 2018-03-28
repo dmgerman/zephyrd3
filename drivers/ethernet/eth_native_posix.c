@@ -26,4 +26,5 @@ DECL|read_data|function|static int read_data(struct eth_context *ctx, int fd)
 DECL|recv|member|u8_t recv[_ETH_MTU + ETH_HDR_LEN];
 DECL|rx_thread_data|variable|rx_thread_data
 DECL|send|member|u8_t send[_ETH_MTU + ETH_HDR_LEN];
+DECL|stats|member|struct net_stats_eth stats;
 DECL|status|member|bool status;
