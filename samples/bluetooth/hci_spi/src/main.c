@@ -25,7 +25,12 @@ DECL|bt_tx_thread|function|static void bt_tx_thread(void *p1, void *p2, void *p3
 DECL|gpio_dev|variable|gpio_dev
 DECL|hci_spi_init|function|static int hci_spi_init(struct device *unused)
 DECL|main|function|void main(void)
+DECL|rx_bufs|variable|rx_bufs
 DECL|rxmsg|variable|rxmsg
+DECL|rx|variable|rx
+DECL|spi_cfg|variable|spi_cfg
 DECL|spi_hci_dev|variable|spi_hci_dev
 DECL|spi_send|function|static inline int spi_send(struct net_buf *buf)
+DECL|tx_bufs|variable|tx_bufs
 DECL|txmsg|variable|txmsg
+DECL|tx|variable|tx
