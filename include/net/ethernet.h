@@ -57,6 +57,7 @@ DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
 DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
+DECL|stats|member|struct net_stats_eth *stats;
 DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */

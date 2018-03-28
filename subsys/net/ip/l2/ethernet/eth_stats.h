@@ -1,0 +1,17 @@
+DECL|__ETH_STATS_H__|macro|__ETH_STATS_H__
+DECL|eth_stats_update_broadcast_rx|function|static inline void eth_stats_update_broadcast_rx(struct net_if *iface)
+DECL|eth_stats_update_broadcast_rx|macro|eth_stats_update_broadcast_rx
+DECL|eth_stats_update_broadcast_tx|function|static inline void eth_stats_update_broadcast_tx(struct net_if *iface)
+DECL|eth_stats_update_broadcast_tx|macro|eth_stats_update_broadcast_tx
+DECL|eth_stats_update_bytes_rx|function|static inline void eth_stats_update_bytes_rx(struct net_if *iface, u32_t bytes)
+DECL|eth_stats_update_bytes_rx|macro|eth_stats_update_bytes_rx
+DECL|eth_stats_update_bytes_tx|function|static inline void eth_stats_update_bytes_tx(struct net_if *iface, u32_t bytes)
+DECL|eth_stats_update_bytes_tx|macro|eth_stats_update_bytes_tx
+DECL|eth_stats_update_multicast_rx|function|static inline void eth_stats_update_multicast_rx(struct net_if *iface)
+DECL|eth_stats_update_multicast_rx|macro|eth_stats_update_multicast_rx
+DECL|eth_stats_update_multicast_tx|function|static inline void eth_stats_update_multicast_tx(struct net_if *iface)
+DECL|eth_stats_update_multicast_tx|macro|eth_stats_update_multicast_tx
+DECL|eth_stats_update_pkts_rx|function|static inline void eth_stats_update_pkts_rx(struct net_if *iface)
+DECL|eth_stats_update_pkts_rx|macro|eth_stats_update_pkts_rx
+DECL|eth_stats_update_pkts_tx|function|static inline void eth_stats_update_pkts_tx(struct net_if *iface)
+DECL|eth_stats_update_pkts_tx|macro|eth_stats_update_pkts_tx
