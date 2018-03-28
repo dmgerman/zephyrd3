@@ -166,7 +166,6 @@ DECL|spi_cs_port|member|const char *spi_cs_port;
 DECL|spi_cs|member|struct spi_cs_control spi_cs;
 DECL|spi_freq|member|u32_t spi_freq;
 DECL|spi_port|member|const char *spi_port;
-DECL|spi_sem|member|struct k_sem spi_sem;
 DECL|spi_slave|member|u8_t spi_slave;
 DECL|spi|member|struct device *spi;
 DECL|thread|member|struct k_thread thread;
