@@ -18,7 +18,7 @@ DECL|cb_recv|function|static void cb_recv(struct net_context *net_ctx, struct ne
 DECL|dns_default_ctx|variable|dns_default_ctx
 DECL|dns_init_resolver|function|void dns_init_resolver(void)
 DECL|dns_postprocess_server|function|static void dns_postprocess_server(struct dns_resolve_context *ctx, int idx)
-DECL|dns_read|function|static int dns_read(struct dns_resolve_context *ctx, struct net_pkt *pkt, struct net_buf *dns_data, u16_t *dns_id, struct net_buf *dns_cname,
+DECL|dns_read|function|static int dns_read(struct dns_resolve_context *ctx, struct net_pkt *pkt, struct net_buf *dns_data, u16_t *dns_id, struct net_buf *dns_cname)
 DECL|dns_resolve_cancel|function|int dns_resolve_cancel(struct dns_resolve_context *ctx, u16_t dns_id)
 DECL|dns_resolve_close|function|int dns_resolve_close(struct dns_resolve_context *ctx)
 DECL|dns_resolve_get_default|function|struct dns_resolve_context *dns_resolve_get_default(void)
