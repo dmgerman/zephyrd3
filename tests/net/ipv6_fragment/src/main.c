@@ -7,9 +7,6 @@ DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|add_nbr|function|static void add_nbr(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr)
-DECL|find_last_ipv6_fragment_hbho_frag|function|static void find_last_ipv6_fragment_hbho_frag(void)
-DECL|find_last_ipv6_fragment_hbho_udp|function|static void find_last_ipv6_fragment_hbho_udp(void)
-DECL|find_last_ipv6_fragment_udp|function|static void find_last_ipv6_fragment_udp(void)
 DECL|frag_count|variable|frag_count
 DECL|idx|member|u8_t idx;
 DECL|iface1|variable|iface1
@@ -35,13 +32,16 @@ DECL|net_iface_get_mac|function|static u8_t *net_iface_get_mac(struct device *de
 DECL|net_iface_init|function|static void net_iface_init(struct net_if *iface)
 DECL|pkt_data_len|variable|pkt_data_len
 DECL|pkt_recv_data_len|variable|pkt_recv_data_len
-DECL|recv_ipv6_fragment|function|static void recv_ipv6_fragment(void)
-DECL|send_ipv6_fragment|function|static void send_ipv6_fragment(void)
 DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_pkt *pkt)
 DECL|setup_udp_handler|function|static void setup_udp_handler(const struct in6_addr *raddr, const struct in6_addr *laddr, u16_t remote_port, u16_t local_port)
-DECL|setup|function|static void setup(void)
 DECL|test_failed|variable|test_failed
+DECL|test_find_last_ipv6_fragment_hbho_frag|function|static void test_find_last_ipv6_fragment_hbho_frag(void)
+DECL|test_find_last_ipv6_fragment_hbho_udp|function|static void test_find_last_ipv6_fragment_hbho_udp(void)
+DECL|test_find_last_ipv6_fragment_udp|function|static void test_find_last_ipv6_fragment_udp(void)
 DECL|test_main|function|void test_main(void)
+DECL|test_recv_ipv6_fragment|function|static void test_recv_ipv6_fragment(void)
+DECL|test_send_ipv6_fragment|function|static void test_send_ipv6_fragment(void)
+DECL|test_setup|function|static void test_setup(void)
 DECL|test_started|variable|test_started
 DECL|udp_data_received|function|static enum net_verdict udp_data_received(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
 DECL|verify_fragment|function|static int verify_fragment(struct net_pkt *pkt)
