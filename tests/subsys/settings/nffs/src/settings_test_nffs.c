@@ -13,7 +13,7 @@ DECL|settings_test_file_strstr|function|int settings_test_file_strstr(const char
 DECL|test_commit_called|variable|test_commit_called
 DECL|test_export_block|variable|test_export_block
 DECL|test_get_called|variable|test_get_called
-DECL|test_main|function|void test_main(void *p1, void *p2, void *p3)
+DECL|test_main|function|void test_main(void)
 DECL|test_set_called|variable|test_set_called
 DECL|val64|variable|val64
 DECL|val8|variable|val8

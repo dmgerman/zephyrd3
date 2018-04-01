@@ -20,7 +20,7 @@ DECL|test_commit_called|variable|test_commit_called
 DECL|test_config_fill_area|function|test_config_fill_area(char test_value[SETTINGS_TEST_FCB_VAL_STR_CNT] [SETTINGS_MAX_VAL_LEN], int iteration)
 DECL|test_export_block|variable|test_export_block
 DECL|test_get_called|variable|test_get_called
-DECL|test_main|function|void test_main(void *p1, void *p2, void *p3)
+DECL|test_main|function|void test_main(void)
 DECL|test_ref_value|variable|test_ref_value
 DECL|test_set_called|variable|test_set_called
 DECL|val32|variable|val32

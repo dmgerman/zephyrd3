@@ -9,4 +9,4 @@ DECL|fcb_test_wipe|function|void fcb_test_wipe(void)
 DECL|teardown_nothing|function|void teardown_nothing(void)
 DECL|test_fcb_sector|variable|test_fcb_sector
 DECL|test_fcb|variable|test_fcb
-DECL|test_main|function|void test_main(void *p1, void *p2, void *p3)
+DECL|test_main|function|void test_main(void)
