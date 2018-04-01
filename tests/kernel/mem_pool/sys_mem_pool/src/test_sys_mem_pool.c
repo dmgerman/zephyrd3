@@ -1,0 +1,13 @@
+DECL|BLK_ALIGN|macro|BLK_ALIGN
+DECL|BLK_NUM_MAX|macro|BLK_NUM_MAX
+DECL|BLK_SIZE_EXCLUDE_DESC|macro|BLK_SIZE_EXCLUDE_DESC
+DECL|BLK_SIZE_MAX|macro|BLK_SIZE_MAX
+DECL|BLK_SIZE_MIN|macro|BLK_SIZE_MIN
+DECL|DESC_SIZE|macro|DESC_SIZE
+DECL|TOTAL_MIN_BLKS|macro|TOTAL_MIN_BLKS
+DECL|TOTAL_POOL_SIZE|macro|TOTAL_POOL_SIZE
+DECL|pool_mutex|variable|pool_mutex
+DECL|test_main|function|void test_main(void)
+DECL|test_sys_mem_pool_alloc_align4|function|void test_sys_mem_pool_alloc_align4(void)
+DECL|test_sys_mem_pool_alloc_free|function|void test_sys_mem_pool_alloc_free(void)
+DECL|test_sys_mem_pool_min_block_size|function|void test_sys_mem_pool_min_block_size(void)
