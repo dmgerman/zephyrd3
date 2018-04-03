@@ -20,6 +20,8 @@ DECL|_thread_entry|function|FUNC_NORETURN void _thread_entry(k_thread_entry_t en
 DECL|_thread_essential_clear|function|void _thread_essential_clear(void)
 DECL|_thread_essential_set|function|void _thread_essential_set(void)
 DECL|_thread_monitor_exit|function|void _thread_monitor_exit(struct k_thread *thread)
+DECL|adjust_stack_size|function|static inline size_t adjust_stack_size(size_t stack_size)
+DECL|adjust_stack_size|function|static inline size_t adjust_stack_size(size_t stack_size)
 DECL|grant_static_access|function|static void grant_static_access(void)
 DECL|k_busy_wait|function|void k_busy_wait(u32_t usec_to_wait)
 DECL|k_is_in_isr|function|int k_is_in_isr(void)
