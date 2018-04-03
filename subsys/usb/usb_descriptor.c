@@ -15,12 +15,14 @@ DECL|bString|member|u8_t bString[PRODUCT_DESC_LENGTH - 2];
 DECL|bString|member|u8_t bString[SN_DESC_LENGTH - 2];
 DECL|cdc_acm_cfg|member|} __packed cdc_acm_cfg;
 DECL|cdc_ecm_cfg|member|} __packed cdc_ecm_cfg;
+DECL|cdc_eem_cfg|member|} __packed cdc_eem_cfg;
 DECL|cfg_descr|member|struct usb_cfg_descriptor cfg_descr;
 DECL|common_desc|variable|common_desc
 DECL|dev_common_descriptor|struct|struct dev_common_descriptor {
 DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
 DECL|hid_cfg|member|} __packed hid_cfg;
 DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
+DECL|iad|member|struct usb_association_descriptor iad;
 DECL|iad|member|struct usb_association_descriptor iad;
 DECL|iad|member|struct usb_association_descriptor iad;
 DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
@@ -32,15 +34,18 @@ DECL|if0_header|member|struct cdc_header_descriptor if0_header;
 DECL|if0_header|member|struct cdc_header_descriptor if0_header;
 DECL|if0_hid|member|struct usb_hid_descriptor if0_hid;
 DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_netfun_ecm|member|struct cdc_ecm_descriptor if0_netfun_ecm;
 DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
+DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
@@ -64,6 +69,7 @@ DECL|term_descr|member|struct usb_desc_header term_descr;
 DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
+DECL|usb_cdc_eem_config|struct|struct usb_cdc_eem_config {
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
 DECL|usb_hid_config|struct|struct usb_hid_config {
 DECL|usb_mass_config|struct|struct usb_mass_config {
