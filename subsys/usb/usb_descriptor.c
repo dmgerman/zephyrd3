@@ -82,6 +82,7 @@ DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
 DECL|usb_cdc_eem_config|struct|struct usb_cdc_eem_config {
 DECL|usb_dfu_config|struct|struct usb_dfu_config {
+DECL|usb_fix_descriptor|function|static void usb_fix_descriptor(struct usb_desc_header *head)
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
 DECL|usb_hid_config|struct|struct usb_hid_config {
 DECL|usb_mass_config|struct|struct usb_mass_config {
