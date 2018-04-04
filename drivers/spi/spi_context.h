@@ -8,6 +8,7 @@ DECL|config|member|const struct spi_config *config;
 DECL|current_rx|member|const struct spi_buf *current_rx;
 DECL|current_tx|member|const struct spi_buf *current_tx;
 DECL|lock|member|struct k_sem lock;
+DECL|recv_frames|member|int recv_frames;
 DECL|rx_buf|member|u8_t *rx_buf;
 DECL|rx_count|member|size_t rx_count;
 DECL|rx_len|member|size_t rx_len;
