@@ -1,1 +1,5 @@
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(rtc_disable, dev)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(rtc_enable, dev)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(rtc_get_pending_int, dev)
+DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(rtc_read, dev)
 DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(rtc_set_alarm, dev, alarm_val)

@@ -1,5 +1,1 @@
 DECL|COUNTER_HANDLER|macro|COUNTER_HANDLER
-DECL|counter_get_pending_int|variable|counter_get_pending_int
-DECL|counter_read|variable|counter_read
-DECL|counter_start|variable|counter_start
-DECL|counter_stop|variable|counter_stop
