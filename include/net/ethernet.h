@@ -49,6 +49,6 @@ DECL|tpid|member|u16_t tpid; /* tag protocol id */
 DECL|type|member|u16_t type;
 DECL|type|member|u16_t type;
 DECL|vlan_enabled|member|s8_t vlan_enabled;
-DECL|vlan_setup|member|int (*vlan_setup)(struct net_if *iface, u16_t tag, bool enable);
+DECL|vlan_setup|member|int (*vlan_setup)(struct device *dev, struct net_if *iface,
 DECL|vlan|member|struct ethernet_vlan vlan[NET_VLAN_MAX_COUNT];
 DECL|vlan|member|} vlan;
