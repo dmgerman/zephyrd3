@@ -18,6 +18,7 @@ DECL|THREAD_OP_READ_QUEUED|macro|THREAD_OP_READ_QUEUED
 DECL|THREAD_OP_WRITE_DONE|macro|THREAD_OP_WRITE_DONE
 DECL|THREAD_OP_WRITE_QUEUED|macro|THREAD_OP_WRITE_QUEUED
 DECL|WAIT_CSW|enumerator|WAIT_CSW /* wait that a CSW has been effectively sent */
+DECL|__packed|variable|__packed
 DECL|addr|variable|addr
 DECL|block_count|variable|block_count
 DECL|cbw|variable|cbw
@@ -26,6 +27,9 @@ DECL|defered_wr_sz|variable|defered_wr_sz
 DECL|disk_pdrv|variable|disk_pdrv
 DECL|disk_wait_sem|variable|disk_wait_sem
 DECL|fail|function|static void fail(void)
+DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|infoTransfer|function|static bool infoTransfer(void)
 DECL|inquiryRequest|function|static bool inquiryRequest(void)
 DECL|interface_data|variable|interface_data
@@ -58,4 +62,5 @@ DECL|testUnitReady|function|static void testUnitReady(void)
 DECL|thread_memory_read_done|function|static void thread_memory_read_done(void)
 DECL|thread_memory_write_done|function|static void thread_memory_write_done(void)
 DECL|thread_op|variable|thread_op
+DECL|usb_mass_config|struct|struct usb_mass_config {
 DECL|write|function|static bool write(u8_t *buf, u16_t size)

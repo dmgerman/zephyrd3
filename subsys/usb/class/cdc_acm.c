@@ -4,6 +4,7 @@ DECL|CDC_CLASS_REQ_MAX_DATA_SIZE|macro|CDC_CLASS_REQ_MAX_DATA_SIZE
 DECL|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US|macro|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|__packed|variable|__packed
 DECL|cb|member|uart_irq_callback_t cb;
 DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct device *dev, u32_t baudrate)
 DECL|cdc_acm_bulk_in|function|static void cdc_acm_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
@@ -34,6 +35,16 @@ DECL|cdc_acm_line_ctrl_set|function|static int cdc_acm_line_ctrl_set(struct devi
 DECL|cdc_acm_poll_in|function|static int cdc_acm_poll_in(struct device *dev, unsigned char *c)
 DECL|cdc_acm_poll_out|function|static unsigned char cdc_acm_poll_out(struct device *dev, unsigned char c)
 DECL|cdc_acm_send_notification|function|static int cdc_acm_send_notification(struct device *dev, u16_t serial_state)
+DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
+DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
+DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;
+DECL|if0_header|member|struct cdc_header_descriptor if0_header;
+DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
+DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
+DECL|if1_in_ep|member|struct usb_ep_descriptor if1_in_ep;
+DECL|if1_out_ep|member|struct usb_ep_descriptor if1_out_ep;
+DECL|if1|member|struct usb_if_descriptor if1;
 DECL|interface_data|member|u8_t interface_data[CDC_CLASS_REQ_MAX_DATA_SIZE];
 DECL|line_coding|member|struct cdc_acm_line_coding line_coding;
 DECL|line_state|member|u8_t line_state;
@@ -47,4 +58,5 @@ DECL|rx_ready|member|u8_t rx_ready; /* Rx ready status */
 DECL|serial_state|member|u8_t serial_state;
 DECL|tx_irq_ena|member|u8_t tx_irq_ena; /* Tx interrupt enable status */
 DECL|tx_ready|member|u8_t tx_ready;
+DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
