@@ -14,7 +14,7 @@ DECL|api_funcs|variable|api_funcs
 DECL|dst_addr|variable|dst_addr
 DECL|dummy_if_count|member|int dummy_if_count;
 DECL|dummy_interfaces|variable|dummy_interfaces
-DECL|eth_capabilities|function|static enum eth_hw_caps eth_capabilities(struct device *dev)
+DECL|eth_capabilities|function|static enum ethernet_hw_caps eth_capabilities(struct device *dev)
 DECL|eth_context|struct|struct eth_context {
 DECL|eth_if_count|member|int eth_if_count;
 DECL|eth_init|function|static int eth_init(struct device *dev)

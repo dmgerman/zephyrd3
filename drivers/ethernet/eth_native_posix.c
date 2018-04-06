@@ -12,7 +12,7 @@ DECL|eth_get_mac|function|static struct net_linkaddr *eth_get_mac(struct eth_con
 DECL|eth_if_api|variable|eth_if_api
 DECL|eth_iface_init|function|static void eth_iface_init(struct net_if *iface)
 DECL|eth_init|function|static int eth_init(struct device *dev)
-DECL|eth_posix_native_get_capabilities|function|static enum eth_hw_caps eth_posix_native_get_capabilities(struct device *dev)
+DECL|eth_posix_native_get_capabilities|function|enum ethernet_hw_caps eth_posix_native_get_capabilities(struct device *dev)
 DECL|eth_rx|function|static void eth_rx(struct eth_context *ctx)
 DECL|eth_send|function|static int eth_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|get_context|function|static struct eth_context *get_context(struct net_if *iface)

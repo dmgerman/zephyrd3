@@ -5,7 +5,7 @@ DECL|api_funcs|variable|api_funcs
 DECL|eth_0_runtime|variable|eth_0_runtime
 DECL|eth_config_0_irq|function|static void eth_config_0_irq(struct device *port)
 DECL|eth_config_0|variable|eth_config_0
-DECL|eth_dw_get_capabilities|function|static enum eth_hw_caps eth_dw_get_capabilities(struct device *dev)
+DECL|eth_dw_get_capabilities|function|static enum ethernet_hw_caps eth_dw_get_capabilities(struct device *dev)
 DECL|eth_dw_isr|function|static void eth_dw_isr(struct device *port)
 DECL|eth_initialize_internal|function|static int eth_initialize_internal(struct net_if *iface)
 DECL|eth_initialize|function|static void eth_initialize(struct net_if *iface)

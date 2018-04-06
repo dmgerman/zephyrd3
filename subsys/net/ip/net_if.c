@@ -39,7 +39,7 @@ DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|link_callbacks|variable|link_callbacks
 DECL|mcast_monitor_callbacks|variable|mcast_monitor_callbacks
-DECL|need_calc_checksum|function|static bool need_calc_checksum(struct net_if *iface, enum eth_hw_caps caps)
+DECL|need_calc_checksum|function|static bool need_calc_checksum(struct net_if *iface, enum ethernet_hw_caps caps)
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_call_link_cb|function|void net_if_call_link_cb(struct net_if *iface, struct net_linkaddr *lladdr, int status)
