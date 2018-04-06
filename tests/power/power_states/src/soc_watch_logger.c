@@ -1,4 +1,0 @@
-DECL|STSIZE|macro|STSIZE
-DECL|soc_watch_data_collector|function|void soc_watch_data_collector(void)
-DECL|soc_watch_event_logger_data|variable|soc_watch_event_logger_data
-DECL|soc_watch_logger_thread_start|function|void soc_watch_logger_thread_start(void)
