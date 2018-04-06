@@ -36,7 +36,7 @@ DECL|rename|member|int (*rename)(struct fs_mount_t *mountp, const char *from,
 DECL|size|member|size_t size;
 DECL|statvfs|member|int (*statvfs)(struct fs_mount_t *mountp, const char *path,
 DECL|stat|member|int (*stat)(struct fs_mount_t *mountp, const char *path,
-DECL|storage_dev|member|struct device *storage_dev;
+DECL|storage_dev|member|void *storage_dev;
 DECL|sync|member|int (*sync)(struct fs_file_t *filp);
 DECL|tell|member|off_t (*tell)(struct fs_file_t *filp);
 DECL|truncate|member|int (*truncate)(struct fs_file_t *filp, off_t length);

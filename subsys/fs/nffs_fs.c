@@ -1,4 +1,5 @@
 DECL|NFFS_MAX_FILE_NAME|macro|NFFS_MAX_FILE_NAME
+DECL|descs|variable|descs
 DECL|flash_dev|variable|flash_dev
 DECL|inode_to_dirent|function|static int inode_to_dirent(struct nffs_inode_entry *inode, struct fs_dirent *entry)
 DECL|nffs_closedir|function|static int nffs_closedir(struct fs_dir_t *zdp)
