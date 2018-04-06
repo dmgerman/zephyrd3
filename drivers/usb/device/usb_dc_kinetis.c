@@ -71,6 +71,7 @@ DECL|tok_pid|member|u32_t tok_pid : 4;
 DECL|type|member|u8_t type;
 DECL|usb_dc_attach|function|int usb_dc_attach(void)
 DECL|usb_dc_detach|function|int usb_dc_detach(void)
+DECL|usb_dc_ep_check_cap|function|int usb_dc_ep_check_cap(const struct usb_dc_ep_cfg_data * const cfg)
 DECL|usb_dc_ep_clear_stall|function|int usb_dc_ep_clear_stall(const u8_t ep)
 DECL|usb_dc_ep_configure|function|int usb_dc_ep_configure(const struct usb_dc_ep_cfg_data * const cfg)
 DECL|usb_dc_ep_disable|function|int usb_dc_ep_disable(const u8_t ep)

@@ -17,6 +17,7 @@ DECL|out_ep_ctrl|member|struct usb_ep_ctrl_prv out_ep_ctrl[USB_DW_OUT_EP_NUM];
 DECL|status_cb|member|usb_dc_status_callback status_cb;
 DECL|usb_dc_attach|function|int usb_dc_attach(void)
 DECL|usb_dc_detach|function|int usb_dc_detach(void)
+DECL|usb_dc_ep_check_cap|function|int usb_dc_ep_check_cap(const struct usb_dc_ep_cfg_data * const cfg)
 DECL|usb_dc_ep_clear_stall|function|int usb_dc_ep_clear_stall(const u8_t ep)
 DECL|usb_dc_ep_configure|function|int usb_dc_ep_configure(const struct usb_dc_ep_cfg_data * const ep_cfg)
 DECL|usb_dc_ep_disable|function|int usb_dc_ep_disable(const u8_t ep)
