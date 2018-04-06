@@ -1,6 +1,8 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|USB_BSTRING_ASCII_IDX_MAX|macro|USB_BSTRING_ASCII_IDX_MAX
+DECL|USB_BSTRING_UTF16LE_IDX_MAX|macro|USB_BSTRING_UTF16LE_IDX_MAX
 DECL|__packed|variable|__packed
-DECL|ascii7_to_utf16le|function|void ascii7_to_utf16le(int idx_max, int asci_idx_max, u8_t *buf)
+DECL|ascii7_to_utf16le|function|static void ascii7_to_utf16le(void *descriptor)
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
@@ -9,10 +11,10 @@ DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
-DECL|bString|member|u8_t bString[ECM_MAC_DESC_LENGTH - 2];
-DECL|bString|member|u8_t bString[MFR_DESC_LENGTH - 2];
-DECL|bString|member|u8_t bString[PRODUCT_DESC_LENGTH - 2];
-DECL|bString|member|u8_t bString[SN_DESC_LENGTH - 2];
+DECL|bString|member|u8_t bString[USB_BSTRING_LENGTH(
+DECL|bString|member|u8_t bString[USB_BSTRING_LENGTH(
+DECL|bString|member|u8_t bString[USB_BSTRING_LENGTH(
+DECL|bString|member|u8_t bString[USB_BSTRING_LENGTH(CONFIG_USB_DEVICE_SN)];
 DECL|bluetooth_cfg|member|} __packed bluetooth_cfg;
 DECL|cdc_acm_cfg|member|} __packed cdc_acm_cfg;
 DECL|cdc_ecm_cfg|member|} __packed cdc_ecm_cfg;
