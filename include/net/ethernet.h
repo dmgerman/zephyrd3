@@ -1,4 +1,8 @@
 DECL|ETHERNET_AUTO_NEGOTIATION_SET|enumerator|ETHERNET_AUTO_NEGOTIATION_SET = BIT(3),
+DECL|ETHERNET_CONFIG_TYPE_AUTO_NEG|enumerator|ETHERNET_CONFIG_TYPE_AUTO_NEG,
+DECL|ETHERNET_CONFIG_TYPE_DUPLEX|enumerator|ETHERNET_CONFIG_TYPE_DUPLEX,
+DECL|ETHERNET_CONFIG_TYPE_LINK|enumerator|ETHERNET_CONFIG_TYPE_LINK,
+DECL|ETHERNET_CONFIG_TYPE_MAC_ADDRESS|enumerator|ETHERNET_CONFIG_TYPE_MAC_ADDRESS,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
 DECL|ETHERNET_HW_RX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_RX_CHKSUM_OFFLOAD = BIT(1),
 DECL|ETHERNET_HW_TX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_TX_CHKSUM_OFFLOAD = BIT(0),
@@ -21,16 +25,25 @@ DECL|__ETHERNET_H|macro|__ETHERNET_H
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|addr|member|u8_t addr[6];
+DECL|auto_negotiation|member|bool auto_negotiation;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|ethernet_api|struct|struct ethernet_api {
+DECL|ethernet_config_type|enum|enum ethernet_config_type {
+DECL|ethernet_config|struct|struct ethernet_config {
 DECL|ethernet_context|struct|struct ethernet_context {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
+DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
 DECL|is_init|member|bool is_init;
+DECL|link_1000bt|member|bool link_1000bt;
+DECL|link_100bt|member|bool link_100bt;
+DECL|link_10bt|member|bool link_10bt;
+DECL|l|member|} l;
+DECL|mac_address|member|struct net_eth_addr mac_address;
 DECL|net_eth_addr|struct|struct net_eth_addr {
 DECL|net_eth_get_hw_capabilities|function|enum ethernet_hw_caps net_eth_get_hw_capabilities(struct net_if *iface)
 DECL|net_eth_get_vlan_iface|function|struct net_if *net_eth_get_vlan_iface(struct net_if *iface, u16_t tag)
@@ -41,6 +54,7 @@ DECL|net_eth_is_addr_multicast|function|static inline bool net_eth_is_addr_multi
 DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
+DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
 DECL|tag|member|u16_t tag;
