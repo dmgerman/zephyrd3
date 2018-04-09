@@ -1,4 +1,3 @@
-DECL|NRF_SPI_IRQ_NUMBER|macro|NRF_SPI_IRQ_NUMBER
 DECL|SPI_NRFX_SPI_DEVICE|macro|SPI_NRFX_SPI_DEVICE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
@@ -13,7 +12,6 @@ DECL|get_nrf_spi_bit_order|function|static inline nrf_spi_bit_order_t get_nrf_sp
 DECL|get_nrf_spi_frequency|function|static inline nrf_spi_frequency_t get_nrf_spi_frequency(u32_t frequency)
 DECL|get_nrf_spi_mode|function|static inline nrf_spi_mode_t get_nrf_spi_mode(u16_t operation)
 DECL|init_spi|function|static int init_spi(struct device *dev, const nrfx_spi_config_t *config)
-DECL|spi_isr|function|static void spi_isr(void *irq_handler)
 DECL|spi_nrfx_config|struct|struct spi_nrfx_config {
 DECL|spi_nrfx_data|struct|struct spi_nrfx_data {
 DECL|spi_nrfx_driver_api|variable|spi_nrfx_driver_api
