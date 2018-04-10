@@ -9,7 +9,6 @@ DECL|VLAN_TAG_4|macro|VLAN_TAG_4
 DECL|VLAN_TAG_5|macro|VLAN_TAG_5
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|add_neighbor|function|static bool add_neighbor(struct net_if *iface, struct in6_addr *addr)
-DECL|address_setup|function|static void address_setup(void)
 DECL|api_funcs|variable|api_funcs
 DECL|dst_addr|variable|dst_addr
 DECL|dummy_if_count|member|int dummy_if_count;
@@ -45,17 +44,18 @@ DECL|net_iface_dev_init|function|static int net_iface_dev_init(struct device *de
 DECL|net_iface_get_mac|function|static u8_t *net_iface_get_mac(struct device *dev)
 DECL|net_iface_init|function|static void net_iface_init(struct net_if *iface)
 DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_pkt *pkt)
+DECL|test_address_setup|function|static void test_address_setup(void)
 DECL|test_data|variable|test_data
 DECL|test_failed|variable|test_failed
 DECL|test_main|function|void test_main(void)
 DECL|test_started|variable|test_started
+DECL|test_vlan_disable_all|function|static void test_vlan_disable_all(void)
+DECL|test_vlan_disable|function|static void test_vlan_disable(void)
+DECL|test_vlan_enable_all|function|static void test_vlan_enable_all(void)
+DECL|test_vlan_enable|function|static void test_vlan_enable(void)
+DECL|test_vlan_send_data|function|static void test_vlan_send_data(void)
+DECL|test_vlan_setup|function|static void test_vlan_setup(void)
+DECL|test_vlan_tci|function|static void test_vlan_tci(void)
 DECL|total_if_count|member|int total_if_count;
 DECL|udp_v6_ctx|variable|udp_v6_ctx
 DECL|user_data|struct|struct user_data {
-DECL|vlan_disable_all_test|function|static void vlan_disable_all_test(void)
-DECL|vlan_disable_test|function|static void vlan_disable_test(void)
-DECL|vlan_enable_all_test|function|static void vlan_enable_all_test(void)
-DECL|vlan_enable_test|function|static void vlan_enable_test(void)
-DECL|vlan_send_data_test|function|static void vlan_send_data_test(void)
-DECL|vlan_setup|function|static void vlan_setup(void)
-DECL|vlan_tci_test|function|static void vlan_tci_test(void)
