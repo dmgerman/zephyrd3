@@ -1,10 +1,10 @@
 DECL|BOOT_BANNER|macro|BOOT_BANNER
+DECL|BOOT_BANNER|macro|BOOT_BANNER
 DECL|BOOT_DELAY_BANNER|macro|BOOT_DELAY_BANNER
 DECL|BOOT_DELAY_BANNER|macro|BOOT_DELAY_BANNER
 DECL|BUILD_TIMESTAMP|macro|BUILD_TIMESTAMP
 DECL|IDLE_STACK_SIZE|macro|IDLE_STACK_SIZE
 DECL|MAIN_STACK_SIZE|macro|MAIN_STACK_SIZE
-DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|PRINT_BOOT_BANNER|macro|PRINT_BOOT_BANNER
 DECL|_Cstart|function|FUNC_NORETURN void _Cstart(void)
@@ -26,8 +26,6 @@ DECL|_main_thread|variable|_main_thread
 DECL|bg_thread_main|function|static void bg_thread_main(void *unused1, void *unused2, void *unused3)
 DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay
-DECL|boot_delay|variable|boot_delay
-DECL|build_timestamp|variable|build_timestamp
 DECL|init_idle_thread|function|static void init_idle_thread(struct k_thread *thr, k_thread_stack_t *stack)
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
