@@ -26,9 +26,7 @@ DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|DEVICE_RELNUM|macro|DEVICE_RELNUM
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|HIGH_BYTE|macro|HIGH_BYTE
-DECL|INTEL_VENDOR_ID|macro|INTEL_VENDOR_ID
 DECL|LOW_BYTE|macro|LOW_BYTE
-DECL|PRODUCT_ID|macro|PRODUCT_ID
 DECL|btusb_bulk_in|function|static void btusb_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_bulk_out|function|static void btusb_bulk_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|btusb_class_handler|function|static int btusb_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
