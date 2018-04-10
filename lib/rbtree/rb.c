@@ -14,6 +14,7 @@ DECL|get_side|function|static int get_side(struct rbnode *parent, struct rbnode 
 DECL|is_black|function|static int is_black(struct rbnode *n)
 DECL|is_red|function|static int is_red(struct rbnode *n)
 DECL|rb_color|enum|enum rb_color { RED = 0, BLACK = 1 };
+DECL|rb_contains|function|int rb_contains(struct rbtree *tree, struct rbnode *node)
 DECL|rb_insert|function|void rb_insert(struct rbtree *tree, struct rbnode *node)
 DECL|rb_remove|function|void rb_remove(struct rbtree *tree, struct rbnode *node)
 DECL|rotate|function|static void rotate(struct rbnode **stack, int stacksz)
