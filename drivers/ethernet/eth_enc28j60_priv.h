@@ -159,7 +159,6 @@ DECL|gpio|member|struct device *gpio;
 DECL|iface|member|struct net_if *iface;
 DECL|int_sem|member|struct k_sem int_sem;
 DECL|mac_address|member|u8_t mac_address[6];
-DECL|mem_buf|member|u8_t mem_buf[MAX_BUFFER_LENGTH + 1];
 DECL|rx_rsv|member|u8_t rx_rsv[RSV_SIZE];
 DECL|spi_cfg|member|struct spi_config spi_cfg;
 DECL|spi_cs_pin|member|u8_t spi_cs_pin;
