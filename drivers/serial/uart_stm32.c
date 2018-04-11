@@ -28,5 +28,7 @@ DECL|uart_stm32_irq_tx_enable|function|static void uart_stm32_irq_tx_enable(stru
 DECL|uart_stm32_irq_tx_ready|function|static int uart_stm32_irq_tx_ready(struct device *dev)
 DECL|uart_stm32_irq_update|function|static int uart_stm32_irq_update(struct device *dev)
 DECL|uart_stm32_isr|function|static void uart_stm32_isr(void *arg)
+DECL|uart_stm32_lpuart_set_baud_rate|function|static void uart_stm32_lpuart_set_baud_rate(struct device *dev, u32_t clock_rate, u32_t baud_rate)
 DECL|uart_stm32_poll_in|function|static int uart_stm32_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_stm32_poll_out|function|static unsigned char uart_stm32_poll_out(struct device *dev,unsigned char c)
+DECL|uart_stm32_usart_set_baud_rate|function|static void uart_stm32_usart_set_baud_rate(struct device *dev, u32_t clock_rate, u32_t baud_rate)
