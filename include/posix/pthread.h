@@ -12,6 +12,7 @@ DECL|PTHREAD_MUTEX_DEFINE|macro|PTHREAD_MUTEX_DEFINE
 DECL|PTHREAD_MUTEX_ERRORCHECK|macro|PTHREAD_MUTEX_ERRORCHECK
 DECL|PTHREAD_MUTEX_NORMAL|macro|PTHREAD_MUTEX_NORMAL
 DECL|PTHREAD_MUTEX_RECURSIVE|macro|PTHREAD_MUTEX_RECURSIVE
+DECL|PTHREAD_ONCE_INIT|macro|PTHREAD_ONCE_INIT
 DECL|PTHREAD_PRIO_NONE|macro|PTHREAD_PRIO_NONE
 DECL|PTHREAD_TERMINATED|enumerator|PTHREAD_TERMINATED
 DECL|_PTHREAD_CANCEL_POS|macro|_PTHREAD_CANCEL_POS
@@ -19,6 +20,7 @@ DECL|__PTHREAD_H__|macro|__PTHREAD_H__
 DECL|cancel_lock|member|pthread_mutex_t cancel_lock;
 DECL|cancel_pending|member|int cancel_pending;
 DECL|cancel_state|member|int cancel_state;
+DECL|key_list|member|sys_slist_t key_list;
 DECL|posix_thread|struct|struct posix_thread {
 DECL|pthread_barrier_destroy|function|static inline int pthread_barrier_destroy(pthread_barrier_t *b)
 DECL|pthread_barrier_init|function|static inline int pthread_barrier_init(pthread_barrier_t *b, const pthread_barrierattr_t *attr, unsigned int count)

@@ -60,7 +60,11 @@ DECL|pthread_detach|macro|pthread_detach
 DECL|pthread_equal|macro|pthread_equal
 DECL|pthread_exit|macro|pthread_exit
 DECL|pthread_getschedparam|macro|pthread_getschedparam
+DECL|pthread_getspecific|macro|pthread_getspecific
 DECL|pthread_join|macro|pthread_join
+DECL|pthread_key_create|macro|pthread_key_create
+DECL|pthread_key_delete|macro|pthread_key_delete
+DECL|pthread_key_t|macro|pthread_key_t
 DECL|pthread_mutex_destroy|macro|pthread_mutex_destroy
 DECL|pthread_mutex_init|macro|pthread_mutex_init
 DECL|pthread_mutex_lock|macro|pthread_mutex_lock
@@ -71,6 +75,8 @@ DECL|pthread_mutex_unlock|macro|pthread_mutex_unlock
 DECL|pthread_mutexattr_destroy|macro|pthread_mutexattr_destroy
 DECL|pthread_mutexattr_init|macro|pthread_mutexattr_init
 DECL|pthread_mutexattr_t|macro|pthread_mutexattr_t
+DECL|pthread_once_t|macro|pthread_once_t
+DECL|pthread_once|macro|pthread_once
 DECL|pthread_rwlock_destroy|macro|pthread_rwlock_destroy
 DECL|pthread_rwlock_init|macro|pthread_rwlock_init
 DECL|pthread_rwlock_obj|macro|pthread_rwlock_obj
@@ -87,6 +93,7 @@ DECL|pthread_rwlockattr_t|macro|pthread_rwlockattr_t
 DECL|pthread_self|macro|pthread_self
 DECL|pthread_setcancelstate|macro|pthread_setcancelstate
 DECL|pthread_setschedparam|macro|pthread_setschedparam
+DECL|pthread_setspecific|macro|pthread_setspecific
 DECL|readdir|macro|readdir
 DECL|read|macro|read
 DECL|rename|macro|rename

@@ -21,6 +21,8 @@ DECL|pthread_detach|function|int pthread_detach(pthread_t thread)
 DECL|pthread_exit|function|void pthread_exit(void *retval)
 DECL|pthread_getschedparam|function|int pthread_getschedparam(pthread_t pthread, int *policy, struct sched_param *param)
 DECL|pthread_join|function|int pthread_join(pthread_t thread, void **status)
+DECL|pthread_key_lock|variable|pthread_key_lock
+DECL|pthread_once|function|int pthread_once(pthread_once_t *once, void (*init_func)(void))
 DECL|pthread_setcancelstate|function|int pthread_setcancelstate(int state, int *oldstate)
 DECL|pthread_setschedparam|function|int pthread_setschedparam(pthread_t pthread, int policy, const struct sched_param *param)
 DECL|zephyr_thread_wrapper|function|static void zephyr_thread_wrapper(void *arg1, void *arg2, void *arg3)
