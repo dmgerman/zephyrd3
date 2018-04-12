@@ -8,4 +8,5 @@ DECL|k_mem_pool_alloc|function|int k_mem_pool_alloc(struct k_mem_pool *p, struct
 DECL|k_mem_pool_free_id|function|void k_mem_pool_free_id(struct k_mem_block_id *id)
 DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_mem_block *block)
 DECL|k_mem_pool_init|function|static void k_mem_pool_init(struct k_mem_pool *p)
+DECL|k_mem_pool_malloc|function|void *k_mem_pool_malloc(struct k_mem_pool *pool, size_t size)
 DECL|pool_id|function|static int pool_id(struct k_mem_pool *pool)
