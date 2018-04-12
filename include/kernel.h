@@ -222,6 +222,7 @@ DECL|flags|member|u8_t flags;
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
+DECL|global_lock_count|member|u8_t global_lock_count;
 DECL|handler|member|k_alert_handler_t handler;
 DECL|handler|member|k_work_handler_t handler;
 DECL|id|member|struct k_mem_block_id id;
