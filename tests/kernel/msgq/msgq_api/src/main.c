@@ -1,2 +1,9 @@
+DECL|dummy_test|macro|dummy_test
 DECL|test_main|function|void test_main(void)
+DECL|test_msgq_user_attrs_get|variable|test_msgq_user_attrs_get
+DECL|test_msgq_user_get_fail|variable|test_msgq_user_get_fail
+DECL|test_msgq_user_purge_when_put|variable|test_msgq_user_purge_when_put
+DECL|test_msgq_user_put_fail|variable|test_msgq_user_put_fail
+DECL|test_msgq_user_thread_overflow|variable|test_msgq_user_thread_overflow
+DECL|test_msgq_user_thread|variable|test_msgq_user_thread
 DECL|tstack|variable|tstack

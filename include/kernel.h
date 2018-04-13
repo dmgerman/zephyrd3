@@ -35,6 +35,7 @@ DECL|K_MEM_SLAB_INITIALIZER|macro|K_MEM_SLAB_INITIALIZER
 DECL|K_MINUTES|macro|K_MINUTES
 DECL|K_MSEC|macro|K_MSEC
 DECL|K_MSGQ_DEFINE|macro|K_MSGQ_DEFINE
+DECL|K_MSGQ_FLAG_ALLOC|macro|K_MSGQ_FLAG_ALLOC
 DECL|K_MSGQ_INITIALIZER|macro|K_MSGQ_INITIALIZER
 DECL|K_MUTEX_DEFINE|macro|K_MUTEX_DEFINE
 DECL|K_MUTEX_INITIALIZER|macro|K_MUTEX_INITIALIZER
@@ -221,6 +222,7 @@ DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
 DECL|flags|member|atomic_t flags[1];
+DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags; /* Flags */
 DECL|fn_abort|member|void (*fn_abort)(void);
