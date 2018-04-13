@@ -37,6 +37,7 @@ DECL|parent|member|struct k_thread *parent;
 DECL|perm_ctx|struct|struct perm_ctx {
 DECL|thread_index_get|function|static int thread_index_get(struct k_thread *t)
 DECL|thread_perms_test|function|static int thread_perms_test(struct _k_object *ko)
+DECL|unref_check|function|static void unref_check(struct _k_object *ko)
 DECL|visit_ctx|struct|struct visit_ctx {
 DECL|visit_fn|function|static void visit_fn(struct rbnode *node, void *context)
 DECL|wordlist_cb|function|static void wordlist_cb(struct _k_object *ko, void *ctx_ptr)
