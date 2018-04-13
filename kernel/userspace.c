@@ -1,7 +1,7 @@
 DECL|MAX_THREAD_BITS|macro|MAX_THREAD_BITS
 DECL|_dump_object_error|function|void _dump_object_error(int retval, void *obj, struct _k_object *ko,enum k_objects otype)
 DECL|_impl_k_object_access_grant|function|void _impl_k_object_access_grant(void *object, struct k_thread *thread)
-DECL|_impl_k_object_access_revoke|function|void _impl_k_object_access_revoke(void *object, struct k_thread *thread)
+DECL|_impl_k_object_release|function|void _impl_k_object_release(void *object)
 DECL|_k_object_find|function|struct _k_object *_k_object_find(void *obj)
 DECL|_k_object_init|function|void _k_object_init(void *object)
 DECL|_k_object_uninit|function|void _k_object_uninit(void *object)
@@ -21,6 +21,7 @@ DECL|func|member|_wordlist_cb_func_t func;
 DECL|handler_bad_syscall|function|static u32_t handler_bad_syscall(u32_t bad_id, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|handler_no_syscall|function|static u32_t handler_no_syscall(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|k_object_access_all_grant|function|void k_object_access_all_grant(void *object)
+DECL|k_object_access_revoke|function|void k_object_access_revoke(void *object, struct k_thread *thread)
 DECL|k_object_alloc|function|void *k_object_alloc(enum k_objects otype)
 DECL|k_object_free|function|void k_object_free(void *obj)
 DECL|kobj|member|struct _k_object kobj;

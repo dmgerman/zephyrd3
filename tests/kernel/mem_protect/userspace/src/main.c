@@ -28,9 +28,7 @@ DECL|read_kernram|function|static void read_kernram(void)
 DECL|read_kobject_user_pipe|function|static void read_kobject_user_pipe(void)
 DECL|read_other_stack|function|static void read_other_stack(void)
 DECL|read_priv_stack|function|static void read_priv_stack(void)
-DECL|revoke_from_parent|function|static void revoke_from_parent(k_tid_t parentThread)
 DECL|revoke_noperms_object|function|static void revoke_noperms_object(void)
-DECL|revoke_other_thread|function|static void revoke_other_thread(void)
 DECL|sem|variable|sem
 DECL|size|variable|size
 DECL|size|variable|size

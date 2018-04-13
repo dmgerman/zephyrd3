@@ -69,7 +69,7 @@ DECL|test_kobject_access_invalid_kobject|function|void test_kobject_access_inval
 DECL|test_kobject_grant_access_kobj_invalid|function|void test_kobject_grant_access_kobj_invalid(void *p1, void *p2, void *p3)
 DECL|test_kobject_grant_access_kobj|function|void test_kobject_grant_access_kobj(void *p1, void *p2, void *p3)
 DECL|test_kobject_reinitialize_thread_kobj|function|void test_kobject_reinitialize_thread_kobj(void *p1, void *p2, void *p3)
-DECL|test_kobject_revoke_access_from_user|function|void test_kobject_revoke_access_from_user(void *p1, void *p2, void *p3)
+DECL|test_kobject_release_from_user|function|void test_kobject_release_from_user(void *p1, void *p2, void *p3)
 DECL|test_kobject_revoke_access|function|void test_kobject_revoke_access(void *p1, void *p2, void *p3)
 DECL|test_syscall_invalid_kobject|function|void test_syscall_invalid_kobject(void *p1, void *p2, void *p3)
 DECL|test_thread_has_residual_permissions|function|void test_thread_has_residual_permissions(void *p1, void *p2, void *p3)
