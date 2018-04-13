@@ -45,6 +45,7 @@ DECL|K_OBJ_FLAG_INITIALIZED|macro|K_OBJ_FLAG_INITIALIZED
 DECL|K_OBJ_FLAG_PUBLIC|macro|K_OBJ_FLAG_PUBLIC
 DECL|K_OBJ_LAST|enumerator|K_OBJ_LAST
 DECL|K_PIPE_DEFINE|macro|K_PIPE_DEFINE
+DECL|K_PIPE_FLAG_ALLOC|macro|K_PIPE_FLAG_ALLOC
 DECL|K_PIPE_INITIALIZER|macro|K_PIPE_INITIALIZER
 DECL|K_POLL_EVENT_INITIALIZER|macro|K_POLL_EVENT_INITIALIZER
 DECL|K_POLL_EVENT_STATIC_INITIALIZER|macro|K_POLL_EVENT_STATIC_INITIALIZER
@@ -221,6 +222,7 @@ DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
 DECL|flags|member|atomic_t flags[1];
 DECL|flags|member|u8_t flags;
+DECL|flags|member|u8_t flags; /* Flags */
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;

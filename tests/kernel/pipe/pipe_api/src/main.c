@@ -1,1 +1,6 @@
+DECL|dummy_test|macro|dummy_test
 DECL|test_main|function|void test_main(void)
+DECL|test_pipe_user_get_fail|variable|test_pipe_user_get_fail
+DECL|test_pipe_user_put_fail|variable|test_pipe_user_put_fail
+DECL|test_pipe_user_thread2thread|variable|test_pipe_user_thread2thread
+DECL|test_resource_pool_auto_free|variable|test_resource_pool_auto_free
