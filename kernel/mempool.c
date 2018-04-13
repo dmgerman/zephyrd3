@@ -9,4 +9,6 @@ DECL|k_mem_pool_free_id|function|void k_mem_pool_free_id(struct k_mem_block_id *
 DECL|k_mem_pool_free|function|void k_mem_pool_free(struct k_mem_block *block)
 DECL|k_mem_pool_init|function|static void k_mem_pool_init(struct k_mem_pool *p)
 DECL|k_mem_pool_malloc|function|void *k_mem_pool_malloc(struct k_mem_pool *pool, size_t size)
+DECL|k_thread_system_pool_assign|function|void k_thread_system_pool_assign(struct k_thread *thread)
 DECL|pool_id|function|static int pool_id(struct k_mem_pool *pool)
+DECL|z_thread_malloc|function|void *z_thread_malloc(size_t size)

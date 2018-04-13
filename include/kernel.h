@@ -295,6 +295,7 @@ DECL|k_queue|struct|struct k_queue {
 DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
+DECL|k_thread_resource_pool_assign|function|static inline void k_thread_resource_pool_assign(struct k_thread *thread, struct k_mem_pool *pool)
 DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element k_thread_stack_t;
 DECL|k_thread_user_cb_t|typedef|typedef void (*k_thread_user_cb_t)(const struct k_thread *thread,
 DECL|k_thread|struct|struct k_thread {
@@ -353,6 +354,7 @@ DECL|queue|member|struct k_queue queue;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
 DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
+DECL|resource_pool|member|struct k_mem_pool *resource_pool;
 DECL|result|member|int result;
 DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
 DECL|rx_source_thread|member|k_tid_t rx_source_thread;
