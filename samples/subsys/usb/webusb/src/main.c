@@ -5,6 +5,8 @@ DECL|data_buf|variable|data_buf
 DECL|data_transmitted|variable|data_transmitted
 DECL|interrupt_handler|function|static void interrupt_handler(struct device *dev)
 DECL|main|function|void main(void)
+DECL|msos1_compatid_descriptor|variable|msos1_compatid_descriptor
+DECL|msos1_string_descriptor|variable|msos1_string_descriptor
 DECL|msos2_descriptor|variable|msos2_descriptor
 DECL|read_and_echo_data|function|static void read_and_echo_data(struct device *dev, int *bytes_read)
 DECL|req_handlers|variable|req_handlers
