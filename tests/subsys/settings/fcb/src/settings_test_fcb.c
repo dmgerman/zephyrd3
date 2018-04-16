@@ -1,13 +1,13 @@
 DECL|c1_handle_commit|function|int c1_handle_commit(void)
-DECL|c1_handle_export|function|int c1_handle_export(void (*cb)(char *name, char *value),enum settings_export_tgt tgt)
+DECL|c1_handle_export|function|int c1_handle_export(int (*cb)(const char *name, char *value),enum settings_export_tgt tgt)
 DECL|c1_handle_get|function|char *c1_handle_get(int argc, char **argv, char *val, int val_len_max)
 DECL|c1_handle_set|function|int c1_handle_set(int argc, char **argv, char *val)
-DECL|c2_handle_export|function|int c2_handle_export(void (*cb)(char *name, char *value), enum settings_export_tgt tgt)
+DECL|c2_handle_export|function|int c2_handle_export(int (*cb)(const char *name, char *value), enum settings_export_tgt tgt)
 DECL|c2_handle_get|function|char *c2_handle_get(int argc, char **argv, char *val, int val_len_max)
 DECL|c2_handle_set|function|int c2_handle_set(int argc, char **argv, char *val)
 DECL|c2_var_count|variable|c2_var_count
 DECL|c2_var_find|function|char *c2_var_find(char *name)
-DECL|c3_handle_export|function|int c3_handle_export(void (*cb)(char *name, char *value), enum settings_export_tgt tgt)
+DECL|c3_handle_export|function|int c3_handle_export(int (*cb)(const char *name, char *value), enum settings_export_tgt tgt)
 DECL|c3_handle_get|function|char *c3_handle_get(int argc, char **argv, char *val, int val_len_max)
 DECL|c3_handle_set|function|int c3_handle_set(int argc, char **argv, char *val)
 DECL|c_test_handlers|variable|c_test_handlers

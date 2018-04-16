@@ -1,5 +1,5 @@
 DECL|c1_handle_commit|function|int c1_handle_commit(void)
-DECL|c1_handle_export|function|int c1_handle_export(void (*cb)(char *name, char *value),enum settings_export_tgt tgt)
+DECL|c1_handle_export|function|int c1_handle_export(int (*cb)(const char *name, char *value),enum settings_export_tgt tgt)
 DECL|c1_handle_get|function|char *c1_handle_get(int argc, char **argv, char *val, int val_len_max)
 DECL|c1_handle_set|function|int c1_handle_set(int argc, char **argv, char *val)
 DECL|c2_var_count|variable|c2_var_count

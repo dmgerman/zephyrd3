@@ -11,5 +11,4 @@ DECL|settings_save_one|function|int settings_save_one(const char *name, char *va
 DECL|settings_save|function|int settings_save(void)
 DECL|settings_src_register|function|void settings_src_register(struct settings_store *cs)
 DECL|settings_store_init|function|void settings_store_init(void)
-DECL|settings_store_one|function|static void settings_store_one(char *name, char *value)
 DECL|val|member|const char *val;

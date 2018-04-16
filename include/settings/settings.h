@@ -22,7 +22,7 @@ DECL|__SETTINGS_H_|macro|__SETTINGS_H_
 DECL|cs_itf|member|const struct settings_store_itf *cs_itf;
 DECL|cs_next|member|sys_snode_t cs_next;
 DECL|h_commit|member|int (*h_commit)(void);
-DECL|h_export|member|int (*h_export)(void (*export_func)(char *name, char *val),
+DECL|h_export|member|int (*h_export)(int (*export_func)(const char *name, char *val),
 DECL|h_get|member|char *(*h_get)(int argc, char **argv, char *val, int val_len_max);
 DECL|h_set|member|int (*h_set)(int argc, char **argv, char *val);
 DECL|name|member|char *name;
