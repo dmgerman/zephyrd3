@@ -1,6 +1,7 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|fs_closedir|function|int fs_closedir(struct fs_dir_t *zdp)
 DECL|fs_close|function|int fs_close(struct fs_file_t *zfp)
+DECL|fs_get_mnt_point|function|int fs_get_mnt_point(struct fs_mount_t **mnt_pntp, const char *name, size_t *match_len)
 DECL|fs_init|function|static int fs_init(struct device *dev)
 DECL|fs_map|variable|fs_map
 DECL|fs_mkdir|function|int fs_mkdir(const char *abs_path)
@@ -22,5 +23,4 @@ DECL|fs_unlink|function|int fs_unlink(const char *abs_path)
 DECL|fs_unmount|function|int fs_unmount(struct fs_mount_t *mp)
 DECL|fs_unregister|function|int fs_unregister(enum fs_type type, struct fs_file_system_t *fs)
 DECL|fs_write|function|ssize_t fs_write(struct fs_file_t *zfp, const void *ptr, size_t size)
-DECL|get_mnt_point|function|int get_mnt_point(struct fs_mount_t **mnt_pntp, const char *name, size_t *match_len)
 DECL|mutex|variable|mutex
