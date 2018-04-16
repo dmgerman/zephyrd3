@@ -1,6 +1,7 @@
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|base|member|SPI_Type *base;
-DECL|clock_source|member|clock_name_t clock_source;
+DECL|clock_name|member|char *clock_name;
+DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|ctx|member|struct spi_context ctx;
 DECL|handle|member|dspi_master_handle_t handle;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
