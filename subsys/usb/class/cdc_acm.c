@@ -1,3 +1,6 @@
+DECL|ACM_INT_EP_IDX|macro|ACM_INT_EP_IDX
+DECL|ACM_IN_EP_IDX|macro|ACM_IN_EP_IDX
+DECL|ACM_OUT_EP_IDX|macro|ACM_OUT_EP_IDX
 DECL|CDC_ACM_BUFFER_SIZE|macro|CDC_ACM_BUFFER_SIZE
 DECL|CDC_ACM_DEFAUL_BAUDRATE|macro|CDC_ACM_DEFAUL_BAUDRATE
 DECL|CDC_CLASS_REQ_MAX_DATA_SIZE|macro|CDC_CLASS_REQ_MAX_DATA_SIZE
@@ -10,7 +13,6 @@ DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct devic
 DECL|cdc_acm_bulk_in|function|static void cdc_acm_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|cdc_acm_bulk_out|function|static void cdc_acm_bulk_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|cdc_acm_class_handle_req|function|int cdc_acm_class_handle_req(struct usb_setup_packet *pSetup, s32_t *len, u8_t **data)
-DECL|cdc_acm_config|variable|cdc_acm_config
 DECL|cdc_acm_dev_data_t|struct|struct cdc_acm_dev_data_t {
 DECL|cdc_acm_dev_data|variable|cdc_acm_dev_data
 DECL|cdc_acm_dev_status_cb|function|static void cdc_acm_dev_status_cb(enum usb_dc_status_code status, u8_t *param)

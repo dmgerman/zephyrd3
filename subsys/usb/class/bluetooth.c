@@ -1,12 +1,14 @@
 DECL|BT_BUF_ACL_SIZE|macro|BT_BUF_ACL_SIZE
 DECL|BT_L2CAP_MTU|macro|BT_L2CAP_MTU
 DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
+DECL|HCI_INT_EP_IDX|macro|HCI_INT_EP_IDX
+DECL|HCI_IN_EP_IDX|macro|HCI_IN_EP_IDX
+DECL|HCI_OUT_EP_IDX|macro|HCI_OUT_EP_IDX
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
 DECL|acl_read_cb|function|static void acl_read_cb(u8_t ep, int size, void *priv)
 DECL|bluetooth_class_handler|function|static int bluetooth_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
-DECL|bluetooth_config|variable|bluetooth_config
 DECL|bluetooth_ep_data|variable|bluetooth_ep_data
 DECL|bluetooth_init|function|static int bluetooth_init(struct device *dev)
 DECL|bluetooth_status_cb|function|static void bluetooth_status_cb(enum usb_dc_status_code status, u8_t *param)

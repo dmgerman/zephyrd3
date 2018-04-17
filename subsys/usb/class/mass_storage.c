@@ -7,6 +7,8 @@ DECL|DISK_THREAD_PRIO|macro|DISK_THREAD_PRIO
 DECL|DISK_THREAD_STACK_SZ|macro|DISK_THREAD_STACK_SZ
 DECL|ERROR|enumerator|ERROR, /* error */
 DECL|MAX_PACKET|macro|MAX_PACKET
+DECL|MSD_IN_EP_IDX|macro|MSD_IN_EP_IDX
+DECL|MSD_OUT_EP_IDX|macro|MSD_OUT_EP_IDX
 DECL|PROCESS_CBW|enumerator|PROCESS_CBW, /* process a CBW request */
 DECL|READ_CBW|enumerator|READ_CBW, /* wait a CBW */
 DECL|SEND_CSW|enumerator|SEND_CSW, /* send a CSW */
@@ -38,7 +40,6 @@ DECL|mass_ep_data|variable|mass_ep_data
 DECL|mass_storage_bulk_in|function|static void mass_storage_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|mass_storage_bulk_out|function|static void mass_storage_bulk_out(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)
 DECL|mass_storage_class_handle_req|function|static int mass_storage_class_handle_req(struct usb_setup_packet *pSetup,s32_t *len, u8_t **data)
-DECL|mass_storage_config|variable|mass_storage_config
 DECL|mass_storage_init|function|static int mass_storage_init(struct device *dev)
 DECL|mass_storage_status_cb|function|static void mass_storage_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|mass_thread_data|variable|mass_thread_data

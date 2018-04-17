@@ -2,7 +2,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
 DECL|hid_class_handle_req|function|static int hid_class_handle_req(struct usb_setup_packet *setup,s32_t *len, u8_t **data)
-DECL|hid_config|variable|hid_config
 DECL|hid_custom_handle_req|function|static int hid_custom_handle_req(struct usb_setup_packet *setup,s32_t *len, u8_t **data)
 DECL|hid_device_info|struct|static struct hid_device_info {
 DECL|hid_device|variable|hid_device
