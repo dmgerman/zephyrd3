@@ -1,18 +1,32 @@
 DECL|lps22hb_press_convert|function|static inline void lps22hb_press_convert(struct sensor_value *val, s32_t raw_val)
 DECL|lps22hb_temp_convert|function|static inline void lps22hb_temp_convert(struct sensor_value *val,s16_t raw_val)
 DECL|lsm6dsl_accel_channel_get|function|static int lsm6dsl_accel_channel_get(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_accel_config|function|static int lsm6dsl_accel_config(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm6dsl_accel_convert|function|static inline void lsm6dsl_accel_convert(struct sensor_value *val, int raw_val, float sensitivity)
+DECL|lsm6dsl_accel_fs_map|variable|lsm6dsl_accel_fs_map
+DECL|lsm6dsl_accel_fs_sens|variable|lsm6dsl_accel_fs_sens
 DECL|lsm6dsl_accel_get_channel|function|static inline int lsm6dsl_accel_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data, float sensitivity)
+DECL|lsm6dsl_accel_odr_set|function|static int lsm6dsl_accel_odr_set(struct device *dev, u16_t freq)
+DECL|lsm6dsl_accel_range_set|function|static int lsm6dsl_accel_range_set(struct device *dev, s32_t range)
+DECL|lsm6dsl_accel_range_to_fs_val|function|static int lsm6dsl_accel_range_to_fs_val(s32_t range)
 DECL|lsm6dsl_accel_set_fs_raw|function|static int lsm6dsl_accel_set_fs_raw(struct device *dev, u8_t fs)
 DECL|lsm6dsl_accel_set_odr_raw|function|static int lsm6dsl_accel_set_odr_raw(struct device *dev, u8_t odr)
 DECL|lsm6dsl_api_funcs|variable|lsm6dsl_api_funcs
+DECL|lsm6dsl_attr_set|function|static int lsm6dsl_attr_set(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm6dsl_channel_get|function|static int lsm6dsl_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|lsm6dsl_config|variable|lsm6dsl_config
 DECL|lsm6dsl_data|variable|lsm6dsl_data
+DECL|lsm6dsl_freq_to_odr_val|function|static int lsm6dsl_freq_to_odr_val(u16_t freq)
 DECL|lsm6dsl_gyro_channel_get_temp|function|static void lsm6dsl_gyro_channel_get_temp(struct sensor_value *val, struct lsm6dsl_data *data)
 DECL|lsm6dsl_gyro_channel_get|function|static int lsm6dsl_gyro_channel_get(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_gyro_config|function|static int lsm6dsl_gyro_config(struct device *dev, enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|lsm6dsl_gyro_convert|function|static inline void lsm6dsl_gyro_convert(struct sensor_value *val, int raw_val,float sensitivity)
+DECL|lsm6dsl_gyro_fs_map|variable|lsm6dsl_gyro_fs_map
+DECL|lsm6dsl_gyro_fs_sens|variable|lsm6dsl_gyro_fs_sens
 DECL|lsm6dsl_gyro_get_channel|function|static inline int lsm6dsl_gyro_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data, float sensitivity)
+DECL|lsm6dsl_gyro_odr_set|function|static int lsm6dsl_gyro_odr_set(struct device *dev, u16_t freq)
+DECL|lsm6dsl_gyro_range_set|function|static int lsm6dsl_gyro_range_set(struct device *dev, s32_t range)
+DECL|lsm6dsl_gyro_range_to_fs_val|function|static int lsm6dsl_gyro_range_to_fs_val(s32_t range)
 DECL|lsm6dsl_gyro_set_fs_raw|function|static int lsm6dsl_gyro_set_fs_raw(struct device *dev, u8_t fs)
 DECL|lsm6dsl_gyro_set_odr_raw|function|static int lsm6dsl_gyro_set_odr_raw(struct device *dev, u8_t odr)
 DECL|lsm6dsl_init_chip|function|static int lsm6dsl_init_chip(struct device *dev)
@@ -20,6 +34,8 @@ DECL|lsm6dsl_init|function|static int lsm6dsl_init(struct device *dev)
 DECL|lsm6dsl_magn_channel_get|function|static int lsm6dsl_magn_channel_get(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
 DECL|lsm6dsl_magn_convert|function|static inline void lsm6dsl_magn_convert(struct sensor_value *val, int raw_val,float sensitivity)
 DECL|lsm6dsl_magn_get_channel|function|static inline int lsm6dsl_magn_get_channel(enum sensor_channel chan, struct sensor_value *val, struct lsm6dsl_data *data)
+DECL|lsm6dsl_odr_map|variable|lsm6dsl_odr_map
+DECL|lsm6dsl_odr_to_freq_val|function|static int lsm6dsl_odr_to_freq_val(u16_t odr)
 DECL|lsm6dsl_reboot|function|static inline int lsm6dsl_reboot(struct device *dev)
 DECL|lsm6dsl_sample_fetch_accel|function|static int lsm6dsl_sample_fetch_accel(struct device *dev)
 DECL|lsm6dsl_sample_fetch_gyro|function|static int lsm6dsl_sample_fetch_gyro(struct device *dev)

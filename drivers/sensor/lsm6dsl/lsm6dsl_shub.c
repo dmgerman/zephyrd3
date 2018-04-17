@@ -43,6 +43,7 @@ DECL|lsm6dsl_shub_read_slave_reg|function|static int lsm6dsl_shub_read_slave_reg
 DECL|lsm6dsl_shub_sens_list|struct|static struct lsm6dsl_shub_sens_list {
 DECL|lsm6dsl_shub_sens_list|variable|lsm6dsl_shub_sens_list
 DECL|lsm6dsl_shub_set_data_channel|function|static int lsm6dsl_shub_set_data_channel(struct lsm6dsl_data *data)
+DECL|lsm6dsl_shub_wait_completed|function|static inline void lsm6dsl_shub_wait_completed(struct lsm6dsl_data *data)
 DECL|lsm6dsl_shub_write_embedded_regs|function|static int lsm6dsl_shub_write_embedded_regs(struct lsm6dsl_data *data, u8_t reg_addr, u8_t *value, u8_t len)
 DECL|lsm6dsl_shub_write_slave_reg|function|static int lsm6dsl_shub_write_slave_reg(struct lsm6dsl_data *data,u8_t slv_addr, u8_t slv_reg, u8_t *value, u16_t len)
 DECL|out_data_addr|member|u8_t out_data_addr;
