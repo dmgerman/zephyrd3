@@ -18,6 +18,7 @@ DECL|custom_handler|member|usb_request_handler custom_handler;
 DECL|endpoint|member|struct usb_ep_cfg_data *endpoint;
 DECL|ep_addr|member|u8_t ep_addr;
 DECL|ep_cb|member|usb_ep_callback ep_cb;
+DECL|interface_descriptor|member|const void *interface_descriptor;
 DECL|interface|member|struct usb_interface_cfg_data interface;
 DECL|num_endpoints|member|u8_t num_endpoints;
 DECL|payload_data|member|u8_t *payload_data;
