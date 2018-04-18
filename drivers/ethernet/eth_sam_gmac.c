@@ -1,6 +1,7 @@
 DECL|MODULO_INC|macro|MODULO_INC
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|check_gptp_msg|function|static struct gptp_hdr *check_gptp_msg(struct net_if *iface, struct net_pkt *pkt)
 DECL|dcache_clean|function|static inline void dcache_clean(u32_t addr, u32_t size)
 DECL|dcache_enabled|variable|dcache_enabled
 DECL|dcache_invalidate|function|static inline void dcache_invalidate(u32_t addr, u32_t size)
@@ -9,9 +10,11 @@ DECL|eth0_data|variable|eth0_data
 DECL|eth0_iface_init|function|static void eth0_iface_init(struct net_if *iface)
 DECL|eth0_irq_config|function|static void eth0_irq_config(void)
 DECL|eth_api|variable|eth_api
+DECL|eth_dev|member|struct device *eth_dev;
 DECL|eth_initialize|function|static int eth_initialize(struct device *dev)
 DECL|eth_rx|function|static void eth_rx(struct gmac_queue *queue)
 DECL|eth_sam_gmac_get_capabilities|function|static enum ethernet_hw_caps eth_sam_gmac_get_capabilities(struct device *dev)
+DECL|eth_sam_gmac_get_ptp_clock|function|static struct device *eth_sam_gmac_get_ptp_clock(struct device *dev)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_get|function|static struct net_pkt *frame_get(struct gmac_queue *queue)
 DECL|free_rx_bufs|function|static void free_rx_bufs(struct ring_buf *rx_frag_list)
@@ -27,8 +30,17 @@ DECL|gmac_desc_set_w1|function|static inline void gmac_desc_set_w1(struct gmac_d
 DECL|gmac_init|function|static int gmac_init(Gmac *gmac, u32_t gmac_ncfgr_val)
 DECL|link_configure|function|static void link_configure(Gmac *gmac, u32_t flags)
 DECL|mac_addr_set|function|static void mac_addr_set(Gmac *gmac, u8_t index, u8_t mac_addr[6])
+DECL|need_timestamping|function|static bool need_timestamping(struct gptp_hdr *hdr)
 DECL|pins_eth0|variable|pins_eth0
 DECL|priority_queue_init_as_idle|function|static int priority_queue_init_as_idle(Gmac *gmac, struct gmac_queue *queue)
+DECL|ptp_api|variable|ptp_api
+DECL|ptp_clock_sam_gmac_adjust|function|static int ptp_clock_sam_gmac_adjust(struct device *dev, int increment)
+DECL|ptp_clock_sam_gmac_get|function|static int ptp_clock_sam_gmac_get(struct device *dev, struct net_ptp_time *tm)
+DECL|ptp_clock_sam_gmac_rate_adjust|function|static int ptp_clock_sam_gmac_rate_adjust(struct device *dev, float ratio)
+DECL|ptp_clock_sam_gmac_set|function|static int ptp_clock_sam_gmac_set(struct device *dev, struct net_ptp_time *tm)
+DECL|ptp_context|struct|struct ptp_context {
+DECL|ptp_gmac_0_context|variable|ptp_gmac_0_context
+DECL|ptp_gmac_init|function|static int ptp_gmac_init(struct device *port)
 DECL|queue0_isr|function|static void queue0_isr(void *arg)
 DECL|queue_init|function|static int queue_init(Gmac *gmac, struct gmac_queue *queue)
 DECL|ring_buf_get|function|static u32_t ring_buf_get(struct ring_buf *rb)
@@ -41,3 +53,4 @@ DECL|tx_completed|function|static void tx_completed(Gmac *gmac, struct gmac_queu
 DECL|tx_descriptors_init|function|static void tx_descriptors_init(Gmac *gmac, struct gmac_queue *queue)
 DECL|tx_error_handler|function|static void tx_error_handler(Gmac *gmac, struct gmac_queue *queue)
 DECL|tx_frame_list_que0|variable|tx_frame_list_que0
+DECL|update_pkt_priority|function|static void update_pkt_priority(struct gptp_hdr *hdr, struct net_pkt *pkt)

@@ -64,6 +64,7 @@ DECL|periph_id|member|u32_t periph_id;
 DECL|phy|member|struct phy_sam_gmac_dev phy;
 DECL|pin_list_size|member|u32_t pin_list_size;
 DECL|pin_list|member|const struct soc_gpio_pin *pin_list;
+DECL|ptp_clock|member|struct device *ptp_clock;
 DECL|que_idx|member|enum queue_idx que_idx;
 DECL|queue_idx|enum|enum queue_idx {
 DECL|queue_list|member|struct gmac_queue queue_list[GMAC_QUEUE_NO];
