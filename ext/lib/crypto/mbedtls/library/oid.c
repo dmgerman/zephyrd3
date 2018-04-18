@@ -17,12 +17,14 @@ DECL|descriptor|member|mbedtls_oid_descriptor_t descriptor;
 DECL|descriptor|member|mbedtls_oid_descriptor_t descriptor;
 DECL|descriptor|member|mbedtls_oid_descriptor_t descriptor;
 DECL|descriptor|member|mbedtls_oid_descriptor_t descriptor;
+DECL|descriptor|member|mbedtls_oid_descriptor_t descriptor;
 DECL|ext_type|member|int ext_type;
 DECL|grp_id|member|mbedtls_ecp_group_id grp_id;
 DECL|mbedtls_snprintf|macro|mbedtls_snprintf
 DECL|md_alg|member|mbedtls_md_type_t md_alg;
 DECL|md_alg|member|mbedtls_md_type_t md_alg;
 DECL|md_alg|member|mbedtls_md_type_t md_alg;
+DECL|md_hmac|member|mbedtls_md_type_t md_hmac;
 DECL|oid_cipher_alg_t|typedef|} oid_cipher_alg_t;
 DECL|oid_cipher_alg|variable|oid_cipher_alg
 DECL|oid_ecp_grp_t|typedef|} oid_ecp_grp_t;
@@ -30,6 +32,8 @@ DECL|oid_ecp_grp|variable|oid_ecp_grp
 DECL|oid_ext_key_usage|variable|oid_ext_key_usage
 DECL|oid_md_alg_t|typedef|} oid_md_alg_t;
 DECL|oid_md_alg|variable|oid_md_alg
+DECL|oid_md_hmac_t|typedef|} oid_md_hmac_t;
+DECL|oid_md_hmac|variable|oid_md_hmac
 DECL|oid_pk_alg_t|typedef|} oid_pk_alg_t;
 DECL|oid_pk_alg|variable|oid_pk_alg
 DECL|oid_pkcs12_pbe_alg_t|typedef|} oid_pkcs12_pbe_alg_t;
