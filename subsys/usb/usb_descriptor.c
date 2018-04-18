@@ -13,6 +13,7 @@ DECL|bString|member|u8_t bString[ECM_MAC_DESC_LENGTH - 2];
 DECL|bString|member|u8_t bString[MFR_DESC_LENGTH - 2];
 DECL|bString|member|u8_t bString[PRODUCT_DESC_LENGTH - 2];
 DECL|bString|member|u8_t bString[SN_DESC_LENGTH - 2];
+DECL|bluetooth_cfg|member|} __packed bluetooth_cfg;
 DECL|cdc_acm_cfg|member|} __packed cdc_acm_cfg;
 DECL|cdc_ecm_cfg|member|} __packed cdc_ecm_cfg;
 DECL|cdc_eem_cfg|member|} __packed cdc_eem_cfg;
@@ -35,6 +36,8 @@ DECL|if0_header|member|struct cdc_header_descriptor if0_header;
 DECL|if0_hid|member|struct usb_hid_descriptor if0_hid;
 DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
 DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
@@ -42,9 +45,11 @@ DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;
 DECL|if0_netfun_ecm|member|struct cdc_ecm_descriptor if0_netfun_ecm;
 DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
 DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
+DECL|if0_out_ep|member|struct usb_ep_descriptor if0_out_ep;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
 DECL|if0_union|member|struct cdc_union_descriptor if0_union;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
 DECL|if0|member|struct usb_if_descriptor if0;
@@ -66,6 +71,7 @@ DECL|mass_cfg|member|} __packed mass_cfg;
 DECL|rndis_cfg|member|} __packed rndis_cfg;
 DECL|string_descr|member|} __packed string_descr;
 DECL|term_descr|member|struct usb_desc_header term_descr;
+DECL|usb_bluetooth_config|struct|struct usb_bluetooth_config {
 DECL|usb_cdc_acm_config|struct|struct usb_cdc_acm_config {
 DECL|usb_cdc_ecm_config|struct|struct usb_cdc_ecm_config {
 DECL|usb_cdc_ecm_mac_descriptor|struct|struct usb_cdc_ecm_mac_descriptor {
