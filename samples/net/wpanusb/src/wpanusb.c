@@ -21,13 +21,11 @@ DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|interface_data|member|u8_t interface_data[WPANUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
 DECL|net_recv_data|function|int net_recv_data(struct net_if *iface, struct net_pkt *pkt)
-DECL|notification_sent|member|u8_t notification_sent;
 DECL|radio_api|variable|radio_api
 DECL|set_channel|function|static int set_channel(void *data, int len)
 DECL|set_ieee_addr|function|static int set_ieee_addr(void *data, int len)
 DECL|set_pan_id|function|static int set_pan_id(void *data, int len)
 DECL|set_short_addr|function|static int set_short_addr(void *data, int len)
-DECL|shell_cmd_help|function|static int shell_cmd_help(int argc, char *argv[])
 DECL|start|function|static int start(void)
 DECL|stop|function|static int stop(void)
 DECL|try_write|function|static int try_write(u8_t ep, u8_t *data, u16_t len)
