@@ -1,4 +1,5 @@
 DECL|DEV_DATA|macro|DEV_DATA
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|WPANUSB_BULK_EP_MPS|macro|WPANUSB_BULK_EP_MPS
@@ -13,8 +14,6 @@ DECL|configuration_descr|member|struct usb_cfg_descriptor configuration_descr;
 DECL|dev_common_descriptor|struct|static const struct dev_common_descriptor {
 DECL|device_configuration|member|} __packed device_configuration;
 DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
-DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
-DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
 DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
 DECL|if0|member|struct usb_if_descriptor if0;
