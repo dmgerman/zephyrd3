@@ -1,0 +1,5 @@
+DECL|metal_default_log_handler|function|void metal_default_log_handler(enum metal_log_level level, const char *format, ...)
+DECL|metal_get_log_handler|function|metal_log_handler metal_get_log_handler(void)
+DECL|metal_get_log_level|function|enum metal_log_level metal_get_log_level(void)
+DECL|metal_set_log_handler|function|void metal_set_log_handler(metal_log_handler handler)
+DECL|metal_set_log_level|function|void metal_set_log_level(enum metal_log_level level)

@@ -1,0 +1,2 @@
+DECL|__METAL_FREERTOS_ASSERT__H__|macro|__METAL_FREERTOS_ASSERT__H__
+DECL|metal_sys_assert|macro|metal_sys_assert

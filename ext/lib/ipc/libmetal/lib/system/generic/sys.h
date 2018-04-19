@@ -1,0 +1,4 @@
+DECL|METAL_MAX_DEVICE_REGIONS|macro|METAL_MAX_DEVICE_REGIONS
+DECL|__METAL_GENERIC_SYS__H__|macro|__METAL_GENERIC_SYS__H__
+DECL|common|member|struct metal_common_state common;
+DECL|metal_state|struct|struct metal_state {

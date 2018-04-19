@@ -1,0 +1,1 @@
+DECL|__METAL_ALLOC__H__|macro|__METAL_ALLOC__H__

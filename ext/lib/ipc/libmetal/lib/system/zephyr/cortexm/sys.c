@@ -1,0 +1,1 @@
+DECL|metal_generic_default_poll|function|void metal_weak metal_generic_default_poll(void)

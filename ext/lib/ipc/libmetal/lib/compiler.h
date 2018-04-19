@@ -1,0 +1,1 @@
+DECL|__METAL_COMPILER__H__|macro|__METAL_COMPILER__H__

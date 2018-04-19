@@ -1,0 +1,1 @@
+DECL|__METAL_LINUX_LOG__H__|macro|__METAL_LINUX_LOG__H__

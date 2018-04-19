@@ -1,0 +1,49 @@
+DECL|ATOMIC_FLAG_INIT|macro|ATOMIC_FLAG_INIT
+DECL|ATOMIC_VAR_INIT|macro|ATOMIC_VAR_INIT
+DECL|__METAL_GCC_ATOMIC__H__|macro|__METAL_GCC_ATOMIC__H__
+DECL|atomic_char|typedef|typedef char atomic_char;
+DECL|atomic_compare_exchange_strong_explicit|macro|atomic_compare_exchange_strong_explicit
+DECL|atomic_compare_exchange_strong|macro|atomic_compare_exchange_strong
+DECL|atomic_compare_exchange_weak_explicit|macro|atomic_compare_exchange_weak_explicit
+DECL|atomic_compare_exchange_weak|macro|atomic_compare_exchange_weak
+DECL|atomic_exchange_explicit|macro|atomic_exchange_explicit
+DECL|atomic_exchange|macro|atomic_exchange
+DECL|atomic_fetch_add_explicit|macro|atomic_fetch_add_explicit
+DECL|atomic_fetch_add|macro|atomic_fetch_add
+DECL|atomic_fetch_and_explicit|macro|atomic_fetch_and_explicit
+DECL|atomic_fetch_and|macro|atomic_fetch_and
+DECL|atomic_fetch_or_explicit|macro|atomic_fetch_or_explicit
+DECL|atomic_fetch_or|macro|atomic_fetch_or
+DECL|atomic_fetch_sub_explicit|macro|atomic_fetch_sub_explicit
+DECL|atomic_fetch_sub|macro|atomic_fetch_sub
+DECL|atomic_fetch_xor_explicit|macro|atomic_fetch_xor_explicit
+DECL|atomic_fetch_xor|macro|atomic_fetch_xor
+DECL|atomic_flag_clear_explicit|macro|atomic_flag_clear_explicit
+DECL|atomic_flag_clear|macro|atomic_flag_clear
+DECL|atomic_flag_test_and_set_explicit|macro|atomic_flag_test_and_set_explicit
+DECL|atomic_flag_test_and_set|macro|atomic_flag_test_and_set
+DECL|atomic_flag|typedef|typedef int atomic_flag;
+DECL|atomic_init|macro|atomic_init
+DECL|atomic_int|typedef|typedef int atomic_int;
+DECL|atomic_is_lock_free|macro|atomic_is_lock_free
+DECL|atomic_llong|typedef|typedef long long atomic_llong;
+DECL|atomic_load_explicit|macro|atomic_load_explicit
+DECL|atomic_load|macro|atomic_load
+DECL|atomic_long|typedef|typedef long atomic_long;
+DECL|atomic_short|typedef|typedef short atomic_short;
+DECL|atomic_signal_fence|macro|atomic_signal_fence
+DECL|atomic_store_explicit|macro|atomic_store_explicit
+DECL|atomic_store|macro|atomic_store
+DECL|atomic_thread_fence|macro|atomic_thread_fence
+DECL|atomic_uchar|typedef|typedef unsigned char atomic_uchar;
+DECL|atomic_uint|typedef|typedef unsigned int atomic_uint;
+DECL|atomic_ullong|typedef|typedef unsigned long long atomic_ullong;
+DECL|atomic_ulong|typedef|typedef unsigned long atomic_ulong;
+DECL|atomic_ushort|typedef|typedef unsigned short atomic_ushort;
+DECL|memory_order_acq_rel|enumerator|memory_order_acq_rel,
+DECL|memory_order_acquire|enumerator|memory_order_acquire,
+DECL|memory_order_consume|enumerator|memory_order_consume,
+DECL|memory_order_relaxed|enumerator|memory_order_relaxed,
+DECL|memory_order_release|enumerator|memory_order_release,
+DECL|memory_order_seq_cst|enumerator|memory_order_seq_cst,
+DECL|memory_order|typedef|} memory_order;

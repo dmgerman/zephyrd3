@@ -1,0 +1,5 @@
+DECL|METAL_INIT_DEFAULTS|macro|METAL_INIT_DEFAULTS
+DECL|METAL_MAX_DEVICE_REGIONS|macro|METAL_MAX_DEVICE_REGIONS
+DECL|__METAL_ZEPHYR_SYS__H__|macro|__METAL_ZEPHYR_SYS__H__
+DECL|common|member|struct metal_common_state common;
+DECL|metal_state|struct|struct metal_state {

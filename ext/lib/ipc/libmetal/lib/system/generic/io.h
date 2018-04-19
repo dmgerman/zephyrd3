@@ -1,0 +1,1 @@
+DECL|__METAL_GENERIC_IO__H__|macro|__METAL_GENERIC_IO__H__

@@ -1,0 +1,2 @@
+DECL|__METAL_LINUX_IO__H__|macro|__METAL_LINUX_IO__H__
+DECL|metal_sys_io_mem_map|macro|metal_sys_io_mem_map

@@ -1,0 +1,1 @@
+DECL|__METAL_ZEPHYR_IRQ__H__|macro|__METAL_ZEPHYR_IRQ__H__

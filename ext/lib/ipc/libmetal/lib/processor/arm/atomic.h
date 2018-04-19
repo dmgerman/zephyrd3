@@ -1,0 +1,1 @@
+DECL|__METAL_ARM_ATOMIC__H__|macro|__METAL_ARM_ATOMIC__H__
