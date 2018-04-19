@@ -21,17 +21,17 @@ DECL|JSON_TOK_OBJECT_START|enumerator|JSON_TOK_OBJECT_START = '{',
 DECL|JSON_TOK_STRING|enumerator|JSON_TOK_STRING = '"',
 DECL|JSON_TOK_TRUE|enumerator|JSON_TOK_TRUE = 't',
 DECL|__JSON_H|macro|__JSON_H
-DECL|alignment|member|size_t alignment;
+DECL|alignment|member|u32_t alignment : 2;
 DECL|array|member|} array;
 DECL|element_descr|member|const struct json_obj_descr *element_descr;
-DECL|field_name_len|member|size_t field_name_len;
+DECL|field_name_len|member|u32_t field_name_len : 7;
 DECL|field_name|member|const char *field_name;
 DECL|json_append_bytes_t|typedef|typedef int (*json_append_bytes_t)(const char *bytes, size_t len,
 DECL|json_obj_descr|struct|struct json_obj_descr {
 DECL|json_tokens|enum|enum json_tokens {
 DECL|n_elements|member|size_t n_elements;
 DECL|object|member|} object;
-DECL|offset|member|size_t offset;
+DECL|offset|member|u32_t offset : 16;
 DECL|sub_descr_len|member|size_t sub_descr_len;
 DECL|sub_descr|member|const struct json_obj_descr *sub_descr;
-DECL|type|member|enum json_tokens type;
+DECL|type|member|u32_t type : 7;
