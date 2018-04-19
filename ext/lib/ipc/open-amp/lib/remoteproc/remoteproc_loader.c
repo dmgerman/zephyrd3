@@ -1,0 +1,7 @@
+DECL|remoteproc_get_load_address|function|void *remoteproc_get_load_address(struct remoteproc_loader *loader)
+DECL|remoteproc_loader_attach_firmware|function|int remoteproc_loader_attach_firmware(struct remoteproc_loader *loader, void *firmware_image)
+DECL|remoteproc_loader_delete|function|int remoteproc_loader_delete(struct remoteproc_loader *loader)
+DECL|remoteproc_loader_init|function|struct remoteproc_loader *remoteproc_loader_init(enum loader_type type)
+DECL|remoteproc_loader_load_remote_firmware|function|int remoteproc_loader_load_remote_firmware(struct remoteproc_loader *loader)
+DECL|remoteproc_loader_retrieve_entry_point|function|void *remoteproc_loader_retrieve_entry_point(struct remoteproc_loader *loader)
+DECL|remoteproc_loader_retrieve_resource_section|function|void *remoteproc_loader_retrieve_resource_section(struct remoteproc_loader *loader, unsigned int *size)

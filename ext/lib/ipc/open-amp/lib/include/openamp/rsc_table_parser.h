@@ -1,0 +1,5 @@
+DECL|RSC_TABLE_PARSER_H|macro|RSC_TABLE_PARSER_H
+DECL|RSC_TAB_HEADER_SIZE|macro|RSC_TAB_HEADER_SIZE
+DECL|RSC_TAB_MAX_VRINGS|macro|RSC_TAB_MAX_VRINGS
+DECL|RSC_TAB_SUPPORTED_VERSION|macro|RSC_TAB_SUPPORTED_VERSION
+DECL|rsc_handler|typedef|typedef int (*rsc_handler) (struct remote_proc * rproc, void *rsc);

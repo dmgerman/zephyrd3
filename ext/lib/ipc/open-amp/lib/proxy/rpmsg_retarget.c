@@ -1,0 +1,11 @@
+DECL|_close|function|int _close(int fd)
+DECL|_open|function|int _open(const char *filename, int flags, int mode)
+DECL|_read|function|int _read(int fd, char *buffer, int buflen)
+DECL|_write|function|int _write(int fd, const char *ptr, int len)
+DECL|rpc_cb|function|void rpc_cb(struct rpmsg_channel *rtl_rp_chnl, void *data, int len, void *priv, unsigned long src)
+DECL|rpc_data|variable|rpc_data
+DECL|rpmsg_retarget_deinit|function|int rpmsg_retarget_deinit(struct rpmsg_channel *rp_chnl)
+DECL|rpmsg_retarget_init|function|int rpmsg_retarget_init(struct rpmsg_channel *rp_chnl, rpc_shutdown_cb cb)
+DECL|rpmsg_retarget_send|function|int rpmsg_retarget_send(void *data, int len)
+DECL|rpmsg_retarget_wait|function|static inline void rpmsg_retarget_wait(struct _rpc_data *rpc)
+DECL|send_rpc|function|int send_rpc(void *data, int len)
