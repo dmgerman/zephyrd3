@@ -1,27 +1,23 @@
-DECL|DEVICE_RELNUM|macro|DEVICE_RELNUM
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|HIGH_BYTE|macro|HIGH_BYTE
-DECL|LOW_BYTE|macro|LOW_BYTE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|WPANUSB_BUFFER_SIZE|macro|WPANUSB_BUFFER_SIZE
 DECL|WPANUSB_BULK_EP_MPS|macro|WPANUSB_BULK_EP_MPS
 DECL|WPANUSB_CLASS_MAX_DATA_SIZE|macro|WPANUSB_CLASS_MAX_DATA_SIZE
-DECL|WPANUSB_CONF_SIZE|macro|WPANUSB_CONF_SIZE
 DECL|WPANUSB_ENDP_BULK_IN|macro|WPANUSB_ENDP_BULK_IN
-DECL|WPANUSB_IF1_NUM_EP|macro|WPANUSB_IF1_NUM_EP
-DECL|WPANUSB_INTERRUPT_EP_MPS|macro|WPANUSB_INTERRUPT_EP_MPS
-DECL|WPANUSB_NUM_CONF|macro|WPANUSB_NUM_CONF
-DECL|WPANUSB_NUM_EP|macro|WPANUSB_NUM_EP
-DECL|WPANUSB_NUM_ITF|macro|WPANUSB_NUM_ITF
 DECL|WPANUSB_PROTOCOL|macro|WPANUSB_PROTOCOL
 DECL|WPANUSB_SUBCLASS|macro|WPANUSB_SUBCLASS
 DECL|__dev|variable|__dev
 DECL|buffer|variable|buffer
 DECL|commands|variable|commands
+DECL|configuration_descr|member|struct usb_cfg_descriptor configuration_descr;
+DECL|dev_common_descriptor|struct|static const struct dev_common_descriptor {
+DECL|device_configuration|member|} __packed device_configuration;
+DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
 DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
 DECL|hexdump|macro|hexdump
 DECL|ieee802154_dev|variable|ieee802154_dev
+DECL|if0_in_ep|member|struct usb_ep_descriptor if0_in_ep;
+DECL|if0|member|struct usb_if_descriptor if0;
 DECL|init_tx_queue|function|static void init_tx_queue(void)
 DECL|interface_data|member|u8_t interface_data[WPANUSB_CLASS_MAX_DATA_SIZE];
 DECL|main|function|void main(void)
@@ -40,6 +36,7 @@ DECL|tx_queue|variable|tx_queue
 DECL|tx_thread_data|variable|tx_thread_data
 DECL|tx_thread|function|static void tx_thread(void)
 DECL|tx|function|static int tx(struct net_pkt *pkt)
+DECL|usb_device_config|struct|struct usb_device_config {
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
 DECL|wpanusb_bulk_in|function|static void wpanusb_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|wpanusb_class_handler|function|static int wpanusb_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
