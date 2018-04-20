@@ -36,9 +36,7 @@ DECL|tx|function|static int tx(struct net_pkt *pkt)
 DECL|usb_device_config|struct|struct usb_device_config {
 DECL|usb_status|member|enum usb_dc_status_code usb_status;
 DECL|wpanusb_bulk_in|function|static void wpanusb_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|wpanusb_class_handler|function|static int wpanusb_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|wpanusb_config|variable|wpanusb_config
-DECL|wpanusb_custom_handler|function|static int wpanusb_custom_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|wpanusb_desc|variable|wpanusb_desc
 DECL|wpanusb_dev_data_t|struct|struct wpanusb_dev_data_t {
 DECL|wpanusb_dev_data|variable|wpanusb_dev_data
