@@ -22,7 +22,7 @@ DECL|SCB_BFSR|macro|SCB_BFSR
 DECL|SCB_MMFSR|macro|SCB_MMFSR
 DECL|SCB_UFSR|macro|SCB_UFSR
 DECL|SVCall_IRQn|enumerator|SVCall_IRQn = -5,
-DECL|SecureFault_IRQn|enumerator|SecureFault_IRQn = -7,
+DECL|SecureFault_IRQn|enumerator|SecureFault_IRQn = -9,
 DECL|SysTick_IRQn|enumerator|SysTick_IRQn = -1,
 DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10,
 DECL|_CMSIS__H_|macro|_CMSIS__H_
