@@ -39,8 +39,6 @@ DECL|_SEGMENTATION_H|macro|_SEGMENTATION_H
 DECL|_SEGMENT_AND_OFFSET|macro|_SEGMENT_AND_OFFSET
 DECL|_SYS_DESC|macro|_SYS_DESC
 DECL|__packed|macro|__packed
-DECL|_far_call|function|static inline void _far_call(u16_t sel, void *offset)
-DECL|_far_jump|function|static inline void _far_jump(u16_t sel, void *offset)
 DECL|_get_cs|function|static inline u16_t _get_cs(void)
 DECL|_get_ds|function|static inline u16_t _get_ds(void)
 DECL|_get_gdt|function|static inline void _get_gdt(struct pseudo_descriptor *gdt)
