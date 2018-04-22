@@ -27,4 +27,5 @@ DECL|ztest_test_fail|function|void ztest_test_fail(void)
 DECL|ztest_test_fail|function|void ztest_test_fail(void)
 DECL|ztest_test_pass|function|void ztest_test_pass(void)
 DECL|ztest_test_pass|function|void ztest_test_pass(void)
+DECL|ztest_test_skip|function|void ztest_test_skip(void)
 DECL|ztest_thread|variable|ztest_thread
