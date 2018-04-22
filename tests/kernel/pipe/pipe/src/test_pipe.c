@@ -35,6 +35,7 @@ DECL|size|member|u32_t size;
 DECL|test_pipe_forever_timeout|function|void test_pipe_forever_timeout(void)
 DECL|test_pipe_forever_wait|function|void test_pipe_forever_wait(void)
 DECL|test_pipe_get_invalid_size|function|void test_pipe_get_invalid_size(void)
+DECL|test_pipe_get_invalid_size|function|void test_pipe_get_invalid_size(void)
 DECL|test_pipe_get_on_empty_pipe|function|void test_pipe_get_on_empty_pipe(void)
 DECL|test_pipe_get_timeout|function|void test_pipe_get_timeout(void)
 DECL|test_pipe_on_multiple_elements|function|void test_pipe_on_multiple_elements(void)
