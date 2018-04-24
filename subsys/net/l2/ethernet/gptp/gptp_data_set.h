@@ -135,6 +135,7 @@ DECL|nb_ports|member|u8_t nb_ports;
 DECL|neighbor_prop_delay_exceeded|member|u32_t neighbor_prop_delay_exceeded;
 DECL|neighbor_prop_delay_thresh|member|double neighbor_prop_delay_thresh;
 DECL|neighbor_prop_delay|member|double neighbor_prop_delay;
+DECL|neighbor_rate_ratio_valid|member|bool neighbor_rate_ratio_valid : 1;
 DECL|neighbor_rate_ratio|member|double neighbor_rate_ratio;
 DECL|offset_from_master|member|s64_t offset_from_master;
 DECL|parent_ds|member|struct gptp_parent_ds parent_ds;
