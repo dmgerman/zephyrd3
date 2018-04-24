@@ -44,7 +44,7 @@ DECL|new_key|member|new_key:1; /* New/old key */
 DECL|obo|member|obo:1;
 DECL|retransmit|member|struct k_delayed_work retransmit; /* Retransmit timer */
 DECL|sdu_len_is_ok|function|static inline bool sdu_len_is_ok(bool ctl, u8_t seg_n)
-DECL|sdu_recv|function|static int sdu_recv(struct bt_mesh_net_rx *rx, u8_t hdr, u8_t aszmic, struct net_buf_simple *buf)
+DECL|sdu_recv|function|static int sdu_recv(struct bt_mesh_net_rx *rx, u32_t seq, u8_t hdr, u8_t aszmic, struct net_buf_simple *buf)
 DECL|seg_ack|function|static void seg_ack(struct k_work *work)
 DECL|seg_first_send_start|function|static void seg_first_send_start(u16_t duration, int err, void *user_data)
 DECL|seg_len|function|static inline u8_t seg_len(bool ctl)
