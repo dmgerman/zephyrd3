@@ -1,6 +1,7 @@
 DECL|MAX_THREAD_BITS|macro|MAX_THREAD_BITS
 DECL|_dump_object_error|function|void _dump_object_error(int retval, void *obj, struct _k_object *ko,enum k_objects otype)
 DECL|_impl_k_object_access_grant|function|void _impl_k_object_access_grant(void *object, struct k_thread *thread)
+DECL|_impl_k_object_alloc|function|void *_impl_k_object_alloc(enum k_objects otype)
 DECL|_impl_k_object_release|function|void _impl_k_object_release(void *object)
 DECL|_k_object_find|function|struct _k_object *_k_object_find(void *obj)
 DECL|_k_object_init|function|void _k_object_init(void *object)
@@ -17,20 +18,19 @@ DECL|data|member|u8_t data[]; /* The object itself */
 DECL|dump_permission_error|function|static void dump_permission_error(struct _k_object *ko)
 DECL|dyn_object_find|function|static struct dyn_obj *dyn_object_find(void *obj)
 DECL|dyn_obj|struct|struct dyn_obj {
-DECL|func|member|_wordlist_cb_func_t func;
 DECL|handler_bad_syscall|function|static u32_t handler_bad_syscall(u32_t bad_id, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|handler_no_syscall|function|static u32_t handler_no_syscall(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, void *ssf)
 DECL|k_object_access_all_grant|function|void k_object_access_all_grant(void *object)
 DECL|k_object_access_revoke|function|void k_object_access_revoke(void *object, struct k_thread *thread)
-DECL|k_object_alloc|function|void *k_object_alloc(enum k_objects otype)
 DECL|k_object_free|function|void k_object_free(void *obj)
 DECL|kobj|member|struct _k_object kobj;
 DECL|node_lessthan|function|static int node_lessthan(struct rbnode *a, struct rbnode *b)
 DECL|node_to_dyn_obj|function|static inline struct dyn_obj *node_to_dyn_obj(struct rbnode *node)
 DECL|node|member|struct rbnode node; /* must be immediately before data member */
+DECL|obj_list|member|sys_dnode_t obj_list;
+DECL|obj_list|variable|obj_list
 DECL|obj_rb_tree|variable|obj_rb_tree
 DECL|obj_size_get|function|static size_t obj_size_get(enum k_objects otype)
-DECL|original_context|member|void *original_context;
 DECL|otype_to_str|function|const char *otype_to_str(enum k_objects otype)
 DECL|parent_id|member|int parent_id;
 DECL|parent|member|struct k_thread *parent;
@@ -38,6 +38,4 @@ DECL|perm_ctx|struct|struct perm_ctx {
 DECL|thread_index_get|function|static int thread_index_get(struct k_thread *t)
 DECL|thread_perms_test|function|static int thread_perms_test(struct _k_object *ko)
 DECL|unref_check|function|static void unref_check(struct _k_object *ko)
-DECL|visit_ctx|struct|struct visit_ctx {
-DECL|visit_fn|function|static void visit_fn(struct rbnode *node, void *context)
 DECL|wordlist_cb|function|static void wordlist_cb(struct _k_object *ko, void *ctx_ptr)
