@@ -1,0 +1,210 @@
+DECL|BaudRate|member|uint32_t BaudRate; /*!< This field defines expected Usart communication baud rate.
+DECL|ClockOutput|member|uint32_t ClockOutput; /*!< Specifies whether the USART clock is enabled or disabled.
+DECL|ClockPhase|member|uint32_t ClockPhase; /*!< Specifies the clock transition on which the bit capture is made.
+DECL|ClockPolarity|member|uint32_t ClockPolarity; /*!< Specifies the steady state of the serial clock.
+DECL|DataWidth|member|uint32_t DataWidth; /*!< Specifies the number of data bits transmitted or received in a frame.
+DECL|HardwareFlowControl|member|uint32_t HardwareFlowControl; /*!< Specifies whether the hardware flow control mode is enabled or disabled.
+DECL|LL_USART_CLOCK_DISABLE|macro|LL_USART_CLOCK_DISABLE
+DECL|LL_USART_CLOCK_ENABLE|macro|LL_USART_CLOCK_ENABLE
+DECL|LL_USART_CR1_IDLEIE|macro|LL_USART_CR1_IDLEIE
+DECL|LL_USART_CR1_PEIE|macro|LL_USART_CR1_PEIE
+DECL|LL_USART_CR1_RXNEIE|macro|LL_USART_CR1_RXNEIE
+DECL|LL_USART_CR1_TCIE|macro|LL_USART_CR1_TCIE
+DECL|LL_USART_CR1_TXEIE|macro|LL_USART_CR1_TXEIE
+DECL|LL_USART_CR2_LBDIE|macro|LL_USART_CR2_LBDIE
+DECL|LL_USART_CR3_CTSIE|macro|LL_USART_CR3_CTSIE
+DECL|LL_USART_CR3_EIE|macro|LL_USART_CR3_EIE
+DECL|LL_USART_ClearFlag_FE|function|__STATIC_INLINE void LL_USART_ClearFlag_FE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_IDLE|function|__STATIC_INLINE void LL_USART_ClearFlag_IDLE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_LBD|function|__STATIC_INLINE void LL_USART_ClearFlag_LBD(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_NE|function|__STATIC_INLINE void LL_USART_ClearFlag_NE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_ORE|function|__STATIC_INLINE void LL_USART_ClearFlag_ORE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_PE|function|__STATIC_INLINE void LL_USART_ClearFlag_PE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_RXNE|function|__STATIC_INLINE void LL_USART_ClearFlag_RXNE(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_TC|function|__STATIC_INLINE void LL_USART_ClearFlag_TC(USART_TypeDef *USARTx)
+DECL|LL_USART_ClearFlag_nCTS|function|__STATIC_INLINE void LL_USART_ClearFlag_nCTS(USART_TypeDef *USARTx)
+DECL|LL_USART_ClockInitTypeDef|typedef|} LL_USART_ClockInitTypeDef;
+DECL|LL_USART_ConfigAsyncMode|function|__STATIC_INLINE void LL_USART_ConfigAsyncMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigCharacter|function|__STATIC_INLINE void LL_USART_ConfigCharacter(USART_TypeDef *USARTx, uint32_t DataWidth, uint32_t Parity, uint32_t StopBits)
+DECL|LL_USART_ConfigClock|function|__STATIC_INLINE void LL_USART_ConfigClock(USART_TypeDef *USARTx, uint32_t Phase, uint32_t Polarity, uint32_t LBCPOutput)
+DECL|LL_USART_ConfigHalfDuplexMode|function|__STATIC_INLINE void LL_USART_ConfigHalfDuplexMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigIrdaMode|function|__STATIC_INLINE void LL_USART_ConfigIrdaMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigLINMode|function|__STATIC_INLINE void LL_USART_ConfigLINMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigMultiProcessMode|function|__STATIC_INLINE void LL_USART_ConfigMultiProcessMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigSmartcardMode|function|__STATIC_INLINE void LL_USART_ConfigSmartcardMode(USART_TypeDef *USARTx)
+DECL|LL_USART_ConfigSyncMode|function|__STATIC_INLINE void LL_USART_ConfigSyncMode(USART_TypeDef *USARTx)
+DECL|LL_USART_DATAWIDTH_8B|macro|LL_USART_DATAWIDTH_8B
+DECL|LL_USART_DATAWIDTH_9B|macro|LL_USART_DATAWIDTH_9B
+DECL|LL_USART_DIRECTION_NONE|macro|LL_USART_DIRECTION_NONE
+DECL|LL_USART_DIRECTION_RX|macro|LL_USART_DIRECTION_RX
+DECL|LL_USART_DIRECTION_TX_RX|macro|LL_USART_DIRECTION_TX_RX
+DECL|LL_USART_DIRECTION_TX|macro|LL_USART_DIRECTION_TX
+DECL|LL_USART_DMA_GetRegAddr|function|__STATIC_INLINE uint32_t LL_USART_DMA_GetRegAddr(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableCTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_DisableCTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableDMAReq_RX|function|__STATIC_INLINE void LL_USART_DisableDMAReq_RX(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableDMAReq_TX|function|__STATIC_INLINE void LL_USART_DisableDMAReq_TX(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableDirectionRx|function|__STATIC_INLINE void LL_USART_DisableDirectionRx(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableDirectionTx|function|__STATIC_INLINE void LL_USART_DisableDirectionTx(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableHalfDuplex|function|__STATIC_INLINE void LL_USART_DisableHalfDuplex(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_CTS|function|__STATIC_INLINE void LL_USART_DisableIT_CTS(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_ERROR|function|__STATIC_INLINE void LL_USART_DisableIT_ERROR(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_IDLE|function|__STATIC_INLINE void LL_USART_DisableIT_IDLE(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_LBD|function|__STATIC_INLINE void LL_USART_DisableIT_LBD(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_PE|function|__STATIC_INLINE void LL_USART_DisableIT_PE(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_RXNE|function|__STATIC_INLINE void LL_USART_DisableIT_RXNE(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_TC|function|__STATIC_INLINE void LL_USART_DisableIT_TC(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIT_TXE|function|__STATIC_INLINE void LL_USART_DisableIT_TXE(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableIrda|function|__STATIC_INLINE void LL_USART_DisableIrda(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableLIN|function|__STATIC_INLINE void LL_USART_DisableLIN(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableOneBitSamp|function|__STATIC_INLINE void LL_USART_DisableOneBitSamp(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableRTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_DisableRTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableSCLKOutput|function|__STATIC_INLINE void LL_USART_DisableSCLKOutput(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableSmartcardNACK|function|__STATIC_INLINE void LL_USART_DisableSmartcardNACK(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableSmartcard|function|__STATIC_INLINE void LL_USART_DisableSmartcard(USART_TypeDef *USARTx)
+DECL|LL_USART_Disable|function|__STATIC_INLINE void LL_USART_Disable(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableCTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_EnableCTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableDMAReq_RX|function|__STATIC_INLINE void LL_USART_EnableDMAReq_RX(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableDMAReq_TX|function|__STATIC_INLINE void LL_USART_EnableDMAReq_TX(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableDirectionRx|function|__STATIC_INLINE void LL_USART_EnableDirectionRx(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableDirectionTx|function|__STATIC_INLINE void LL_USART_EnableDirectionTx(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableHalfDuplex|function|__STATIC_INLINE void LL_USART_EnableHalfDuplex(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_CTS|function|__STATIC_INLINE void LL_USART_EnableIT_CTS(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_ERROR|function|__STATIC_INLINE void LL_USART_EnableIT_ERROR(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_IDLE|function|__STATIC_INLINE void LL_USART_EnableIT_IDLE(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_LBD|function|__STATIC_INLINE void LL_USART_EnableIT_LBD(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_PE|function|__STATIC_INLINE void LL_USART_EnableIT_PE(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_RXNE|function|__STATIC_INLINE void LL_USART_EnableIT_RXNE(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_TC|function|__STATIC_INLINE void LL_USART_EnableIT_TC(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIT_TXE|function|__STATIC_INLINE void LL_USART_EnableIT_TXE(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableIrda|function|__STATIC_INLINE void LL_USART_EnableIrda(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableLIN|function|__STATIC_INLINE void LL_USART_EnableLIN(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableOneBitSamp|function|__STATIC_INLINE void LL_USART_EnableOneBitSamp(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableRTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_EnableRTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableSCLKOutput|function|__STATIC_INLINE void LL_USART_EnableSCLKOutput(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableSmartcardNACK|function|__STATIC_INLINE void LL_USART_EnableSmartcardNACK(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableSmartcard|function|__STATIC_INLINE void LL_USART_EnableSmartcard(USART_TypeDef *USARTx)
+DECL|LL_USART_Enable|function|__STATIC_INLINE void LL_USART_Enable(USART_TypeDef *USARTx)
+DECL|LL_USART_GetBaudRate|function|__STATIC_INLINE uint32_t LL_USART_GetBaudRate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t OverSampling)
+DECL|LL_USART_GetClockPhase|function|__STATIC_INLINE uint32_t LL_USART_GetClockPhase(USART_TypeDef *USARTx)
+DECL|LL_USART_GetClockPolarity|function|__STATIC_INLINE uint32_t LL_USART_GetClockPolarity(USART_TypeDef *USARTx)
+DECL|LL_USART_GetDataWidth|function|__STATIC_INLINE uint32_t LL_USART_GetDataWidth(USART_TypeDef *USARTx)
+DECL|LL_USART_GetHWFlowCtrl|function|__STATIC_INLINE uint32_t LL_USART_GetHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_GetIrdaPowerMode|function|__STATIC_INLINE uint32_t LL_USART_GetIrdaPowerMode(USART_TypeDef *USARTx)
+DECL|LL_USART_GetIrdaPrescaler|function|__STATIC_INLINE uint32_t LL_USART_GetIrdaPrescaler(USART_TypeDef *USARTx)
+DECL|LL_USART_GetLINBrkDetectionLen|function|__STATIC_INLINE uint32_t LL_USART_GetLINBrkDetectionLen(USART_TypeDef *USARTx)
+DECL|LL_USART_GetLastClkPulseOutput|function|__STATIC_INLINE uint32_t LL_USART_GetLastClkPulseOutput(USART_TypeDef *USARTx)
+DECL|LL_USART_GetNodeAddress|function|__STATIC_INLINE uint32_t LL_USART_GetNodeAddress(USART_TypeDef *USARTx)
+DECL|LL_USART_GetOverSampling|function|__STATIC_INLINE uint32_t LL_USART_GetOverSampling(USART_TypeDef *USARTx)
+DECL|LL_USART_GetParity|function|__STATIC_INLINE uint32_t LL_USART_GetParity(USART_TypeDef *USARTx)
+DECL|LL_USART_GetSmartcardGuardTime|function|__STATIC_INLINE uint32_t LL_USART_GetSmartcardGuardTime(USART_TypeDef *USARTx)
+DECL|LL_USART_GetSmartcardPrescaler|function|__STATIC_INLINE uint32_t LL_USART_GetSmartcardPrescaler(USART_TypeDef *USARTx)
+DECL|LL_USART_GetStopBitsLength|function|__STATIC_INLINE uint32_t LL_USART_GetStopBitsLength(USART_TypeDef *USARTx)
+DECL|LL_USART_GetTransferDirection|function|__STATIC_INLINE uint32_t LL_USART_GetTransferDirection(USART_TypeDef *USARTx)
+DECL|LL_USART_GetWakeUpMethod|function|__STATIC_INLINE uint32_t LL_USART_GetWakeUpMethod(USART_TypeDef *USARTx)
+DECL|LL_USART_HWCONTROL_CTS|macro|LL_USART_HWCONTROL_CTS
+DECL|LL_USART_HWCONTROL_NONE|macro|LL_USART_HWCONTROL_NONE
+DECL|LL_USART_HWCONTROL_RTS_CTS|macro|LL_USART_HWCONTROL_RTS_CTS
+DECL|LL_USART_HWCONTROL_RTS|macro|LL_USART_HWCONTROL_RTS
+DECL|LL_USART_IRDA_POWER_LOW|macro|LL_USART_IRDA_POWER_LOW
+DECL|LL_USART_IRDA_POWER_NORMAL|macro|LL_USART_IRDA_POWER_NORMAL
+DECL|LL_USART_InitTypeDef|typedef|} LL_USART_InitTypeDef;
+DECL|LL_USART_IsActiveFlag_FE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_FE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_IDLE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_IDLE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_LBD|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_LBD(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_NE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_NE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_ORE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_ORE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_PE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_PE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_RWU|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_RWU(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_RXNE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_RXNE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_SBK|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_SBK(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_TC|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_TC(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_TXE|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_TXE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsActiveFlag_nCTS|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_nCTS(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledDMAReq_RX|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledDMAReq_RX(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledDMAReq_TX|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledDMAReq_TX(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledHalfDuplex|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledHalfDuplex(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_CTS|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_CTS(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_ERROR|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_ERROR(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_IDLE|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_IDLE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_LBD|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_LBD(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_PE|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_PE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_RXNE|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_RXNE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_TC|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_TC(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIT_TXE|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIT_TXE(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledIrda|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledIrda(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledLIN|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledLIN(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledOneBitSamp|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledOneBitSamp(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledSCLKOutput|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSCLKOutput(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledSmartcardNACK|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSmartcardNACK(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledSmartcard|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSmartcard(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabled|function|__STATIC_INLINE uint32_t LL_USART_IsEnabled(USART_TypeDef *USARTx)
+DECL|LL_USART_LASTCLKPULSE_NO_OUTPUT|macro|LL_USART_LASTCLKPULSE_NO_OUTPUT
+DECL|LL_USART_LASTCLKPULSE_OUTPUT|macro|LL_USART_LASTCLKPULSE_OUTPUT
+DECL|LL_USART_LINBREAK_DETECT_10B|macro|LL_USART_LINBREAK_DETECT_10B
+DECL|LL_USART_LINBREAK_DETECT_11B|macro|LL_USART_LINBREAK_DETECT_11B
+DECL|LL_USART_OVERSAMPLING_16|macro|LL_USART_OVERSAMPLING_16
+DECL|LL_USART_OVERSAMPLING_8|macro|LL_USART_OVERSAMPLING_8
+DECL|LL_USART_PARITY_EVEN|macro|LL_USART_PARITY_EVEN
+DECL|LL_USART_PARITY_NONE|macro|LL_USART_PARITY_NONE
+DECL|LL_USART_PARITY_ODD|macro|LL_USART_PARITY_ODD
+DECL|LL_USART_PHASE_1EDGE|macro|LL_USART_PHASE_1EDGE
+DECL|LL_USART_PHASE_2EDGE|macro|LL_USART_PHASE_2EDGE
+DECL|LL_USART_POLARITY_HIGH|macro|LL_USART_POLARITY_HIGH
+DECL|LL_USART_POLARITY_LOW|macro|LL_USART_POLARITY_LOW
+DECL|LL_USART_ReadReg|macro|LL_USART_ReadReg
+DECL|LL_USART_ReceiveData8|function|__STATIC_INLINE uint8_t LL_USART_ReceiveData8(USART_TypeDef *USARTx)
+DECL|LL_USART_ReceiveData9|function|__STATIC_INLINE uint16_t LL_USART_ReceiveData9(USART_TypeDef *USARTx)
+DECL|LL_USART_RequestBreakSending|function|__STATIC_INLINE void LL_USART_RequestBreakSending(USART_TypeDef *USARTx)
+DECL|LL_USART_RequestEnterMuteMode|function|__STATIC_INLINE void LL_USART_RequestEnterMuteMode(USART_TypeDef *USARTx)
+DECL|LL_USART_RequestExitMuteMode|function|__STATIC_INLINE void LL_USART_RequestExitMuteMode(USART_TypeDef *USARTx)
+DECL|LL_USART_SR_CTS|macro|LL_USART_SR_CTS
+DECL|LL_USART_SR_FE|macro|LL_USART_SR_FE
+DECL|LL_USART_SR_IDLE|macro|LL_USART_SR_IDLE
+DECL|LL_USART_SR_LBD|macro|LL_USART_SR_LBD
+DECL|LL_USART_SR_NE|macro|LL_USART_SR_NE
+DECL|LL_USART_SR_ORE|macro|LL_USART_SR_ORE
+DECL|LL_USART_SR_PE|macro|LL_USART_SR_PE
+DECL|LL_USART_SR_RXNE|macro|LL_USART_SR_RXNE
+DECL|LL_USART_SR_TC|macro|LL_USART_SR_TC
+DECL|LL_USART_SR_TXE|macro|LL_USART_SR_TXE
+DECL|LL_USART_STOPBITS_0_5|macro|LL_USART_STOPBITS_0_5
+DECL|LL_USART_STOPBITS_1_5|macro|LL_USART_STOPBITS_1_5
+DECL|LL_USART_STOPBITS_1|macro|LL_USART_STOPBITS_1
+DECL|LL_USART_STOPBITS_2|macro|LL_USART_STOPBITS_2
+DECL|LL_USART_SetBaudRate|function|__STATIC_INLINE void LL_USART_SetBaudRate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t OverSampling, uint32_t BaudRate)
+DECL|LL_USART_SetClockPhase|function|__STATIC_INLINE void LL_USART_SetClockPhase(USART_TypeDef *USARTx, uint32_t ClockPhase)
+DECL|LL_USART_SetClockPolarity|function|__STATIC_INLINE void LL_USART_SetClockPolarity(USART_TypeDef *USARTx, uint32_t ClockPolarity)
+DECL|LL_USART_SetDataWidth|function|__STATIC_INLINE void LL_USART_SetDataWidth(USART_TypeDef *USARTx, uint32_t DataWidth)
+DECL|LL_USART_SetHWFlowCtrl|function|__STATIC_INLINE void LL_USART_SetHWFlowCtrl(USART_TypeDef *USARTx, uint32_t HardwareFlowControl)
+DECL|LL_USART_SetIrdaPowerMode|function|__STATIC_INLINE void LL_USART_SetIrdaPowerMode(USART_TypeDef *USARTx, uint32_t PowerMode)
+DECL|LL_USART_SetIrdaPrescaler|function|__STATIC_INLINE void LL_USART_SetIrdaPrescaler(USART_TypeDef *USARTx, uint32_t PrescalerValue)
+DECL|LL_USART_SetLINBrkDetectionLen|function|__STATIC_INLINE void LL_USART_SetLINBrkDetectionLen(USART_TypeDef *USARTx, uint32_t LINBDLength)
+DECL|LL_USART_SetLastClkPulseOutput|function|__STATIC_INLINE void LL_USART_SetLastClkPulseOutput(USART_TypeDef *USARTx, uint32_t LastBitClockPulse)
+DECL|LL_USART_SetNodeAddress|function|__STATIC_INLINE void LL_USART_SetNodeAddress(USART_TypeDef *USARTx, uint32_t NodeAddress)
+DECL|LL_USART_SetOverSampling|function|__STATIC_INLINE void LL_USART_SetOverSampling(USART_TypeDef *USARTx, uint32_t OverSampling)
+DECL|LL_USART_SetParity|function|__STATIC_INLINE void LL_USART_SetParity(USART_TypeDef *USARTx, uint32_t Parity)
+DECL|LL_USART_SetSmartcardGuardTime|function|__STATIC_INLINE void LL_USART_SetSmartcardGuardTime(USART_TypeDef *USARTx, uint32_t GuardTime)
+DECL|LL_USART_SetSmartcardPrescaler|function|__STATIC_INLINE void LL_USART_SetSmartcardPrescaler(USART_TypeDef *USARTx, uint32_t PrescalerValue)
+DECL|LL_USART_SetStopBitsLength|function|__STATIC_INLINE void LL_USART_SetStopBitsLength(USART_TypeDef *USARTx, uint32_t StopBits)
+DECL|LL_USART_SetTransferDirection|function|__STATIC_INLINE void LL_USART_SetTransferDirection(USART_TypeDef *USARTx, uint32_t TransferDirection)
+DECL|LL_USART_SetWakeUpMethod|function|__STATIC_INLINE void LL_USART_SetWakeUpMethod(USART_TypeDef *USARTx, uint32_t Method)
+DECL|LL_USART_TransmitData8|function|__STATIC_INLINE void LL_USART_TransmitData8(USART_TypeDef *USARTx, uint8_t Value)
+DECL|LL_USART_TransmitData9|function|__STATIC_INLINE void LL_USART_TransmitData9(USART_TypeDef *USARTx, uint16_t Value)
+DECL|LL_USART_WAKEUP_ADDRESSMARK|macro|LL_USART_WAKEUP_ADDRESSMARK
+DECL|LL_USART_WAKEUP_IDLELINE|macro|LL_USART_WAKEUP_IDLELINE
+DECL|LL_USART_WriteReg|macro|LL_USART_WriteReg
+DECL|LastBitClockPulse|member|uint32_t LastBitClockPulse; /*!< Specifies whether the clock pulse corresponding to the last transmitted
+DECL|OverSampling|member|uint32_t OverSampling; /*!< Specifies whether USART oversampling mode is 16 or 8.
+DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
+DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
+DECL|TransferDirection|member|uint32_t TransferDirection; /*!< Specifies whether the Receive and/or Transmit mode is enabled or disabled.
+DECL|USART_POSITION_GTPR_GT|macro|USART_POSITION_GTPR_GT
+DECL|__LL_USART_DIVFRAQ_SAMPLING16|macro|__LL_USART_DIVFRAQ_SAMPLING16
+DECL|__LL_USART_DIVFRAQ_SAMPLING8|macro|__LL_USART_DIVFRAQ_SAMPLING8
+DECL|__LL_USART_DIVMANT_SAMPLING16|macro|__LL_USART_DIVMANT_SAMPLING16
+DECL|__LL_USART_DIVMANT_SAMPLING8|macro|__LL_USART_DIVMANT_SAMPLING8
+DECL|__LL_USART_DIV_SAMPLING16_100|macro|__LL_USART_DIV_SAMPLING16_100
+DECL|__LL_USART_DIV_SAMPLING16|macro|__LL_USART_DIV_SAMPLING16
+DECL|__LL_USART_DIV_SAMPLING8_100|macro|__LL_USART_DIV_SAMPLING8_100
+DECL|__LL_USART_DIV_SAMPLING8|macro|__LL_USART_DIV_SAMPLING8
+DECL|__STM32F2xx_LL_USART_H|macro|__STM32F2xx_LL_USART_H

@@ -1,0 +1,10 @@
+DECL|IS_LL_GPIO_ALTERNATE|macro|IS_LL_GPIO_ALTERNATE
+DECL|IS_LL_GPIO_MODE|macro|IS_LL_GPIO_MODE
+DECL|IS_LL_GPIO_OUTPUT_TYPE|macro|IS_LL_GPIO_OUTPUT_TYPE
+DECL|IS_LL_GPIO_PIN|macro|IS_LL_GPIO_PIN
+DECL|IS_LL_GPIO_PULL|macro|IS_LL_GPIO_PULL
+DECL|IS_LL_GPIO_SPEED|macro|IS_LL_GPIO_SPEED
+DECL|LL_GPIO_DeInit|function|ErrorStatus LL_GPIO_DeInit(GPIO_TypeDef *GPIOx)
+DECL|LL_GPIO_Init|function|ErrorStatus LL_GPIO_Init(GPIO_TypeDef *GPIOx, LL_GPIO_InitTypeDef *GPIO_InitStruct)
+DECL|LL_GPIO_StructInit|function|void LL_GPIO_StructInit(LL_GPIO_InitTypeDef *GPIO_InitStruct)
+DECL|assert_param|macro|assert_param

@@ -1,0 +1,66 @@
+DECL|LL_EXTI_ClearFlag_0_31|function|__STATIC_INLINE void LL_EXTI_ClearFlag_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_DisableEvent_0_31|function|__STATIC_INLINE void LL_EXTI_DisableEvent_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_DisableFallingTrig_0_31|function|__STATIC_INLINE void LL_EXTI_DisableFallingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_DisableIT_0_31|function|__STATIC_INLINE void LL_EXTI_DisableIT_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_DisableRisingTrig_0_31|function|__STATIC_INLINE void LL_EXTI_DisableRisingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_EnableEvent_0_31|function|__STATIC_INLINE void LL_EXTI_EnableEvent_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_EnableFallingTrig_0_31|function|__STATIC_INLINE void LL_EXTI_EnableFallingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_EnableIT_0_31|function|__STATIC_INLINE void LL_EXTI_EnableIT_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_EnableRisingTrig_0_31|function|__STATIC_INLINE void LL_EXTI_EnableRisingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_GenerateSWI_0_31|function|__STATIC_INLINE void LL_EXTI_GenerateSWI_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_InitTypeDef|typedef|} LL_EXTI_InitTypeDef;
+DECL|LL_EXTI_IsActiveFlag_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_IsActiveFlag_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_IsEnabledEvent_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_IsEnabledEvent_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_IsEnabledFallingTrig_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_IsEnabledFallingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_IsEnabledIT_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_IsEnabledIT_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_IsEnabledRisingTrig_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_IsEnabledRisingTrig_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_LINE_0|macro|LL_EXTI_LINE_0
+DECL|LL_EXTI_LINE_10|macro|LL_EXTI_LINE_10
+DECL|LL_EXTI_LINE_11|macro|LL_EXTI_LINE_11
+DECL|LL_EXTI_LINE_12|macro|LL_EXTI_LINE_12
+DECL|LL_EXTI_LINE_13|macro|LL_EXTI_LINE_13
+DECL|LL_EXTI_LINE_14|macro|LL_EXTI_LINE_14
+DECL|LL_EXTI_LINE_15|macro|LL_EXTI_LINE_15
+DECL|LL_EXTI_LINE_16|macro|LL_EXTI_LINE_16
+DECL|LL_EXTI_LINE_17|macro|LL_EXTI_LINE_17
+DECL|LL_EXTI_LINE_18|macro|LL_EXTI_LINE_18
+DECL|LL_EXTI_LINE_19|macro|LL_EXTI_LINE_19
+DECL|LL_EXTI_LINE_1|macro|LL_EXTI_LINE_1
+DECL|LL_EXTI_LINE_20|macro|LL_EXTI_LINE_20
+DECL|LL_EXTI_LINE_21|macro|LL_EXTI_LINE_21
+DECL|LL_EXTI_LINE_22|macro|LL_EXTI_LINE_22
+DECL|LL_EXTI_LINE_23|macro|LL_EXTI_LINE_23
+DECL|LL_EXTI_LINE_24|macro|LL_EXTI_LINE_24
+DECL|LL_EXTI_LINE_25|macro|LL_EXTI_LINE_25
+DECL|LL_EXTI_LINE_26|macro|LL_EXTI_LINE_26
+DECL|LL_EXTI_LINE_27|macro|LL_EXTI_LINE_27
+DECL|LL_EXTI_LINE_28|macro|LL_EXTI_LINE_28
+DECL|LL_EXTI_LINE_29|macro|LL_EXTI_LINE_29
+DECL|LL_EXTI_LINE_2|macro|LL_EXTI_LINE_2
+DECL|LL_EXTI_LINE_30|macro|LL_EXTI_LINE_30
+DECL|LL_EXTI_LINE_31|macro|LL_EXTI_LINE_31
+DECL|LL_EXTI_LINE_3|macro|LL_EXTI_LINE_3
+DECL|LL_EXTI_LINE_4|macro|LL_EXTI_LINE_4
+DECL|LL_EXTI_LINE_5|macro|LL_EXTI_LINE_5
+DECL|LL_EXTI_LINE_6|macro|LL_EXTI_LINE_6
+DECL|LL_EXTI_LINE_7|macro|LL_EXTI_LINE_7
+DECL|LL_EXTI_LINE_8|macro|LL_EXTI_LINE_8
+DECL|LL_EXTI_LINE_9|macro|LL_EXTI_LINE_9
+DECL|LL_EXTI_LINE_ALL_0_31|macro|LL_EXTI_LINE_ALL_0_31
+DECL|LL_EXTI_LINE_ALL|macro|LL_EXTI_LINE_ALL
+DECL|LL_EXTI_LINE_NONE|macro|LL_EXTI_LINE_NONE
+DECL|LL_EXTI_MODE_EVENT|macro|LL_EXTI_MODE_EVENT
+DECL|LL_EXTI_MODE_IT_EVENT|macro|LL_EXTI_MODE_IT_EVENT
+DECL|LL_EXTI_MODE_IT|macro|LL_EXTI_MODE_IT
+DECL|LL_EXTI_ReadFlag_0_31|function|__STATIC_INLINE uint32_t LL_EXTI_ReadFlag_0_31(uint32_t ExtiLine)
+DECL|LL_EXTI_ReadReg|macro|LL_EXTI_ReadReg
+DECL|LL_EXTI_TRIGGER_FALLING|macro|LL_EXTI_TRIGGER_FALLING
+DECL|LL_EXTI_TRIGGER_NONE|macro|LL_EXTI_TRIGGER_NONE
+DECL|LL_EXTI_TRIGGER_RISING_FALLING|macro|LL_EXTI_TRIGGER_RISING_FALLING
+DECL|LL_EXTI_TRIGGER_RISING|macro|LL_EXTI_TRIGGER_RISING
+DECL|LL_EXTI_WriteReg|macro|LL_EXTI_WriteReg
+DECL|LineCommand|member|FunctionalState LineCommand; /*!< Specifies the new state of the selected EXTI lines.
+DECL|Line_0_31|member|uint32_t Line_0_31; /*!< Specifies the EXTI lines to be enabled or disabled for Lines in range 0 to 31
+DECL|Mode|member|uint8_t Mode; /*!< Specifies the mode for the EXTI lines.
+DECL|Trigger|member|uint8_t Trigger; /*!< Specifies the trigger signal active edge for the EXTI lines.
+DECL|__STM32F2xx_LL_EXTI_H|macro|__STM32F2xx_LL_EXTI_H

@@ -1,0 +1,50 @@
+DECL|LL_PWR_CR_CSBF|macro|LL_PWR_CR_CSBF
+DECL|LL_PWR_CR_CWUF|macro|LL_PWR_CR_CWUF
+DECL|LL_PWR_CSR_EWUP1|macro|LL_PWR_CSR_EWUP1
+DECL|LL_PWR_CSR_PVDO|macro|LL_PWR_CSR_PVDO
+DECL|LL_PWR_CSR_SBF|macro|LL_PWR_CSR_SBF
+DECL|LL_PWR_CSR_WUF|macro|LL_PWR_CSR_WUF
+DECL|LL_PWR_ClearFlag_SB|function|__STATIC_INLINE void LL_PWR_ClearFlag_SB(void)
+DECL|LL_PWR_ClearFlag_WU|function|__STATIC_INLINE void LL_PWR_ClearFlag_WU(void)
+DECL|LL_PWR_DisableBkUpAccess|function|__STATIC_INLINE void LL_PWR_DisableBkUpAccess(void)
+DECL|LL_PWR_DisableBkUpRegulator|function|__STATIC_INLINE void LL_PWR_DisableBkUpRegulator(void)
+DECL|LL_PWR_DisableFlashPowerDown|function|__STATIC_INLINE void LL_PWR_DisableFlashPowerDown(void)
+DECL|LL_PWR_DisablePVD|function|__STATIC_INLINE void LL_PWR_DisablePVD(void)
+DECL|LL_PWR_DisableWakeUpPin|function|__STATIC_INLINE void LL_PWR_DisableWakeUpPin(uint32_t WakeUpPin)
+DECL|LL_PWR_EnableBkUpAccess|function|__STATIC_INLINE void LL_PWR_EnableBkUpAccess(void)
+DECL|LL_PWR_EnableBkUpRegulator|function|__STATIC_INLINE void LL_PWR_EnableBkUpRegulator(void)
+DECL|LL_PWR_EnableFlashPowerDown|function|__STATIC_INLINE void LL_PWR_EnableFlashPowerDown(void)
+DECL|LL_PWR_EnablePVD|function|__STATIC_INLINE void LL_PWR_EnablePVD(void)
+DECL|LL_PWR_EnableWakeUpPin|function|__STATIC_INLINE void LL_PWR_EnableWakeUpPin(uint32_t WakeUpPin)
+DECL|LL_PWR_GetPVDLevel|function|__STATIC_INLINE uint32_t LL_PWR_GetPVDLevel(void)
+DECL|LL_PWR_GetPowerMode|function|__STATIC_INLINE uint32_t LL_PWR_GetPowerMode(void)
+DECL|LL_PWR_GetRegulModeDS|function|__STATIC_INLINE uint32_t LL_PWR_GetRegulModeDS(void)
+DECL|LL_PWR_IsActiveFlag_BRR|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_BRR(void)
+DECL|LL_PWR_IsActiveFlag_PVDO|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_PVDO(void)
+DECL|LL_PWR_IsActiveFlag_SB|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_SB(void)
+DECL|LL_PWR_IsActiveFlag_WU|function|__STATIC_INLINE uint32_t LL_PWR_IsActiveFlag_WU(void)
+DECL|LL_PWR_IsEnabledBkUpAccess|function|__STATIC_INLINE uint32_t LL_PWR_IsEnabledBkUpAccess(void)
+DECL|LL_PWR_IsEnabledBkUpRegulator|function|__STATIC_INLINE uint32_t LL_PWR_IsEnabledBkUpRegulator(void)
+DECL|LL_PWR_IsEnabledFlashPowerDown|function|__STATIC_INLINE uint32_t LL_PWR_IsEnabledFlashPowerDown(void)
+DECL|LL_PWR_IsEnabledPVD|function|__STATIC_INLINE uint32_t LL_PWR_IsEnabledPVD(void)
+DECL|LL_PWR_IsEnabledWakeUpPin|function|__STATIC_INLINE uint32_t LL_PWR_IsEnabledWakeUpPin(uint32_t WakeUpPin)
+DECL|LL_PWR_MODE_STANDBY|macro|LL_PWR_MODE_STANDBY
+DECL|LL_PWR_MODE_STOP_LPREGU|macro|LL_PWR_MODE_STOP_LPREGU
+DECL|LL_PWR_MODE_STOP_MAINREGU|macro|LL_PWR_MODE_STOP_MAINREGU
+DECL|LL_PWR_PVDLEVEL_0|macro|LL_PWR_PVDLEVEL_0
+DECL|LL_PWR_PVDLEVEL_1|macro|LL_PWR_PVDLEVEL_1
+DECL|LL_PWR_PVDLEVEL_2|macro|LL_PWR_PVDLEVEL_2
+DECL|LL_PWR_PVDLEVEL_3|macro|LL_PWR_PVDLEVEL_3
+DECL|LL_PWR_PVDLEVEL_4|macro|LL_PWR_PVDLEVEL_4
+DECL|LL_PWR_PVDLEVEL_5|macro|LL_PWR_PVDLEVEL_5
+DECL|LL_PWR_PVDLEVEL_6|macro|LL_PWR_PVDLEVEL_6
+DECL|LL_PWR_PVDLEVEL_7|macro|LL_PWR_PVDLEVEL_7
+DECL|LL_PWR_REGU_DSMODE_LOW_POWER|macro|LL_PWR_REGU_DSMODE_LOW_POWER
+DECL|LL_PWR_REGU_DSMODE_MAIN|macro|LL_PWR_REGU_DSMODE_MAIN
+DECL|LL_PWR_ReadReg|macro|LL_PWR_ReadReg
+DECL|LL_PWR_SetPVDLevel|function|__STATIC_INLINE void LL_PWR_SetPVDLevel(uint32_t PVDLevel)
+DECL|LL_PWR_SetPowerMode|function|__STATIC_INLINE void LL_PWR_SetPowerMode(uint32_t PDMode)
+DECL|LL_PWR_SetRegulModeDS|function|__STATIC_INLINE void LL_PWR_SetRegulModeDS(uint32_t RegulMode)
+DECL|LL_PWR_WAKEUP_PIN1|macro|LL_PWR_WAKEUP_PIN1
+DECL|LL_PWR_WriteReg|macro|LL_PWR_WriteReg
+DECL|__STM32F2xx_LL_PWR_H|macro|__STM32F2xx_LL_PWR_H
