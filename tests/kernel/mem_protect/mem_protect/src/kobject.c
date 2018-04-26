@@ -57,6 +57,8 @@ DECL|test_create_new_higher_prio_thread_from_user|function|void test_create_new_
 DECL|test_create_new_invalid_prio_thread_from_user|function|void test_create_new_invalid_prio_thread_from_user(void *p1, void *p2, void *p3)
 DECL|test_create_new_supervisor_thread_from_user|function|void test_create_new_supervisor_thread_from_user(void *p1, void *p2, void *p3)
 DECL|test_create_new_thread_from_user_huge_stacksize|function|void test_create_new_thread_from_user_huge_stacksize(void *p1, void *p2, void *p3)
+DECL|test_create_new_thread_from_user_huge_stacksize|function|void test_create_new_thread_from_user_huge_stacksize(void *p1, void *p2, void *p3)
+DECL|test_create_new_thread_from_user_invalid_stacksize|function|void test_create_new_thread_from_user_invalid_stacksize(void *p1,void *p2, void *p3)
 DECL|test_create_new_thread_from_user_invalid_stacksize|function|void test_create_new_thread_from_user_invalid_stacksize(void *p1,void *p2, void *p3)
 DECL|test_create_new_thread_from_user_no_access_stack|function|void test_create_new_thread_from_user_no_access_stack(void *p1, void *p2, void *p3)
 DECL|test_create_new_thread_from_user|function|void test_create_new_thread_from_user(void *p1, void *p2, void *p3)
