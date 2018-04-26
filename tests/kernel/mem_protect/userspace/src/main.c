@@ -11,6 +11,7 @@ DECL|REASON_KERNEL_OOPS|macro|REASON_KERNEL_OOPS
 DECL|STACKSIZE|macro|STACKSIZE
 DECL|_SysFatalErrorHandler|function|void _SysFatalErrorHandler(unsigned int reason, const NANO_ESF *pEsf)
 DECL|access_after_revoke|function|static void access_after_revoke(void)
+DECL|access_other_memdomain|function|static void access_other_memdomain(void)
 DECL|bytes_written_read|variable|bytes_written_read
 DECL|disable_mmu_mpu|function|static void disable_mmu_mpu(void)
 DECL|expect_fault|variable|expect_fault
@@ -22,7 +23,6 @@ DECL|ksem|variable|ksem
 DECL|kthread_thread|variable|kthread_thread
 DECL|pass_noperms_object|function|static void pass_noperms_object(void)
 DECL|pass_user_object|function|static void pass_user_object(void)
-DECL|priv_stack_ptr|variable|priv_stack_ptr
 DECL|read_kernel_data|function|static void read_kernel_data(void)
 DECL|read_kernram|function|static void read_kernram(void)
 DECL|read_kobject_user_pipe|function|static void read_kobject_user_pipe(void)
@@ -30,7 +30,7 @@ DECL|read_other_stack|function|static void read_other_stack(void)
 DECL|read_priv_stack|function|static void read_priv_stack(void)
 DECL|revoke_noperms_object|function|static void revoke_noperms_object(void)
 DECL|sem|variable|sem
-DECL|size|variable|size
+DECL|shared_mem_thread|function|static void shared_mem_thread(void)
 DECL|size|variable|size
 DECL|start_kernel_thread|function|static void start_kernel_thread(void)
 DECL|test_main|function|void test_main(void)

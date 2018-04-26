@@ -2,6 +2,7 @@ DECL|ARRAY_SIZE|macro|ARRAY_SIZE
 DECL|BIT_MASK|macro|BIT_MASK
 DECL|BIT|macro|BIT
 DECL|CONTAINER_OF|macro|CONTAINER_OF
+DECL|FOR_EACH|macro|FOR_EACH
 DECL|GB|macro|GB
 DECL|INLINE|macro|INLINE
 DECL|INLINE|macro|INLINE
@@ -135,11 +136,23 @@ DECL|UTIL_REPEAT_INDIRECT|macro|UTIL_REPEAT_INDIRECT
 DECL|UTIL_REPEAT|macro|UTIL_REPEAT
 DECL|UTIL_WHEN|macro|UTIL_WHEN
 DECL|ZERO_OR_COMPILE_ERROR|macro|ZERO_OR_COMPILE_ERROR
+DECL|_GET_ARG|macro|_GET_ARG
 DECL|_IS_ENABLED1|macro|_IS_ENABLED1
 DECL|_IS_ENABLED2|macro|_IS_ENABLED2
 DECL|_IS_ENABLED3|macro|_IS_ENABLED3
 DECL|_UTIL__H_|macro|_UTIL__H_
 DECL|_XXXX1|macro|_XXXX1
+DECL|_for_0|macro|_for_0
+DECL|_for_10|macro|_for_10
+DECL|_for_1|macro|_for_1
+DECL|_for_2|macro|_for_2
+DECL|_for_3|macro|_for_3
+DECL|_for_4|macro|_for_4
+DECL|_for_5|macro|_for_5
+DECL|_for_6|macro|_for_6
+DECL|_for_7|macro|_for_7
+DECL|_for_8|macro|_for_8
+DECL|_for_9|macro|_for_9
 DECL|arithmetic_shift_right|function|static inline s64_t arithmetic_shift_right(s64_t value, u8_t shift)
 DECL|ceiling_fraction|macro|ceiling_fraction
 DECL|is_power_of_two|function|static inline int is_power_of_two(unsigned int x)

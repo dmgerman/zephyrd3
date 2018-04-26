@@ -1,3 +1,7 @@
+DECL|APPBMEMP0|macro|APPBMEMP0
+DECL|APPBMEMP0|macro|APPBMEMP0
+DECL|APPDMEMP0|macro|APPDMEMP0
+DECL|APPDMEMP0|macro|APPDMEMP0
 DECL|__ZTEST_TEST_H__|macro|__ZTEST_TEST_H__
 DECL|name|member|const char *name;
 DECL|setup|member|void (*setup)(void);
