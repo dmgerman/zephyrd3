@@ -50,6 +50,7 @@ DECL|dns_unpack_header_id|function|static inline int dns_unpack_header_id(u8_t *
 DECL|dns_unpack_header_qdcount|function|static inline int dns_unpack_header_qdcount(u8_t *header)
 DECL|dns_unpack_query_qclass|function|static inline int dns_unpack_query_qclass(const u8_t *question)
 DECL|dns_unpack_query_qtype|function|static inline int dns_unpack_query_qtype(const u8_t *question)
+DECL|llmnr_unpack_query_header|function|static inline int llmnr_unpack_query_header(struct dns_msg_t *msg, u16_t *src_id)
 DECL|msg_size|member|u16_t msg_size;
 DECL|msg|member|u8_t *msg;
 DECL|query_offset|member|u16_t query_offset;
