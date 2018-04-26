@@ -9,6 +9,7 @@ DECL|iface|member|struct net_if *iface;
 DECL|interface_data|variable|interface_data
 DECL|netusb_api_funcs|variable|netusb_api_funcs
 DECL|netusb_class_handler|function|static int netusb_class_handler(struct usb_setup_packet *setup,s32_t *len, u8_t **data)
+DECL|netusb_configure|function|static void netusb_configure(void)
 DECL|netusb_config|variable|netusb_config
 DECL|netusb_connect_media|function|static int netusb_connect_media(void)
 DECL|netusb_disconnect_media|function|static int netusb_disconnect_media(void)
