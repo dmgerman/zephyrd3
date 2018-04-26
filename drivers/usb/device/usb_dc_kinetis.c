@@ -48,6 +48,7 @@ DECL|get_bdt_idx|function|static inline u8_t get_bdt_idx(u8_t ep, u8_t odd)
 DECL|in_data1|member|u16_t in_data1 : 1;
 DECL|in_enabled|member|u16_t in_enabled : 1;
 DECL|in_odd|member|u16_t in_odd : 1;
+DECL|in_stalled|member|u16_t in_stalled : 1;
 DECL|kinetis_usb_init|function|static int kinetis_usb_init(void)
 DECL|mblock_in|member|struct k_mem_block mblock_in;
 DECL|mblock_out|member|struct k_mem_block mblock_out;
@@ -56,6 +57,7 @@ DECL|mps_out|member|u16_t mps_out;
 DECL|out_data1|member|u16_t out_data1 : 1;
 DECL|out_enabled|member|u16_t out_enabled : 1;
 DECL|out_odd|member|u16_t out_odd : 1;
+DECL|out_stalled|member|u16_t out_stalled : 1;
 DECL|own|member|u32_t own : 1;
 DECL|reenable_all_endpoints|function|static inline void reenable_all_endpoints(void)
 DECL|reserved_15_8|member|u32_t reserved_15_8 : 8;
