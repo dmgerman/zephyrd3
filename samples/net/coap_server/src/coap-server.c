@@ -37,7 +37,7 @@ DECL|obs_notify|function|static void obs_notify(struct coap_resource *resource, 
 DECL|obs_path|variable|obs_path
 DECL|observer_work|variable|observer_work
 DECL|observers|variable|observers
-DECL|payload_dump|function|static void payload_dump(const char *s, u8_t *data,unsigned int len, unsigned int payloadlen)
+DECL|payload_dump|function|static void payload_dump(const char *s, struct net_buf *frag, u16_t offset, u16_t len)
 DECL|pendings|variable|pendings
 DECL|piggyback_get|function|static int piggyback_get(struct coap_resource *resource, struct coap_packet *request)
 DECL|plain_text_format|variable|plain_text_format
