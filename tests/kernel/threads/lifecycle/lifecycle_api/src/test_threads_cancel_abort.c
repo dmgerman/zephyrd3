@@ -3,8 +3,10 @@ DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|abort_called|variable|abort_called
 DECL|abort_function|function|static void abort_function(void)
 DECL|block|variable|block
+DECL|delayed_thread_entry|function|static void delayed_thread_entry(void *p1, void *p2, void *p3)
 DECL|execute_flag|variable|execute_flag
 DECL|test_abort_handler|function|void test_abort_handler(void)
+DECL|test_delayed_thread_abort|function|void test_delayed_thread_abort(void)
 DECL|test_threads_abort_others|function|void test_threads_abort_others(void)
 DECL|test_threads_abort_repeat|function|void test_threads_abort_repeat(void)
 DECL|test_threads_abort_self|function|void test_threads_abort_self(void)
