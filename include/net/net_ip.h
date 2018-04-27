@@ -125,6 +125,7 @@ DECL|net_ipv6_hdr|struct|struct net_ipv6_hdr {
 DECL|net_is_ipv4_addr_loopback|function|static inline bool net_is_ipv4_addr_loopback(struct in_addr *addr)
 DECL|net_is_ipv4_addr_mcast|function|static inline bool net_is_ipv4_addr_mcast(const struct in_addr *addr)
 DECL|net_is_ipv4_addr_unspecified|function|static inline bool net_is_ipv4_addr_unspecified(const struct in_addr *addr)
+DECL|net_is_ipv4_ll_addr|function|static inline bool net_is_ipv4_ll_addr(const struct in_addr *addr)
 DECL|net_is_ipv6_addr_loopback|function|static inline bool net_is_ipv6_addr_loopback(struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast_global|function|static inline bool net_is_ipv6_addr_mcast_global(const struct in6_addr *addr)
 DECL|net_is_ipv6_addr_mcast|function|static inline bool net_is_ipv6_addr_mcast(const struct in6_addr *addr)

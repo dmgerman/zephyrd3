@@ -13,7 +13,9 @@ DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
-DECL|get_length|function|static inline u8_t get_length(struct in6_addr *src, struct in6_addr *dst)
+DECL|get_diff_ipv4|function|static u8_t get_diff_ipv4(const struct in_addr *src, const struct in_addr *dst)
+DECL|get_diff_ipv6|function|static u8_t get_diff_ipv6(const struct in6_addr *src, const struct in6_addr *dst)
+DECL|get_ipaddr_diff|function|static u8_t get_ipaddr_diff(const u8_t *src, const u8_t *dst, int addr_len)
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|init_iface|function|static inline void init_iface(struct net_if *iface)
@@ -27,6 +29,7 @@ DECL|ipv6_addresses|variable|ipv6_addresses
 DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_find(struct net_if *iface, struct in6_addr *prefix, u8_t prefix_len)
 DECL|ipv6_router_expired|function|static void ipv6_router_expired(struct k_work *work)
 DECL|ipv6|member|struct net_if_ipv6 ipv6;
+DECL|is_proper_ipv4_address|function|static inline bool is_proper_ipv4_address(struct net_if_addr *addr)
 DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(struct net_if_addr *addr)
 DECL|join_mcast_allnodes|function|static void join_mcast_allnodes(struct net_if *iface)
 DECL|join_mcast_allnodes|macro|join_mcast_allnodes
@@ -60,11 +63,14 @@ DECL|net_if_ipv4_addr_add|function|struct net_if_addr *net_if_ipv4_addr_add(stru
 DECL|net_if_ipv4_addr_lookup|function|struct net_if_addr *net_if_ipv4_addr_lookup(const struct in_addr *addr, struct net_if **ret)
 DECL|net_if_ipv4_addr_mask_cmp|function|bool net_if_ipv4_addr_mask_cmp(struct net_if *iface, struct in_addr *addr)
 DECL|net_if_ipv4_addr_rm|function|bool net_if_ipv4_addr_rm(struct net_if *iface, struct in_addr *addr)
+DECL|net_if_ipv4_get_best_match|function|static struct in_addr *net_if_ipv4_get_best_match(struct net_if *iface, struct in_addr *dst, u8_t *best_so_far)
+DECL|net_if_ipv4_get_ll|function|struct in_addr *net_if_ipv4_get_ll(struct net_if *iface, enum net_addr_state addr_state)
 DECL|net_if_ipv4_maddr_add|function|struct net_if_mcast_addr *net_if_ipv4_maddr_add(struct net_if *iface,const struct in_addr *addr)
 DECL|net_if_ipv4_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv4_maddr_lookup(const struct in_addr *maddr, struct net_if **ret)
 DECL|net_if_ipv4_maddr_rm|function|bool net_if_ipv4_maddr_rm(struct net_if *iface, const struct in_addr *addr)
 DECL|net_if_ipv4_router_add|function|struct net_if_router *net_if_ipv4_router_add(struct net_if *iface, struct in_addr *addr, bool is_default, u16_t lifetime)
 DECL|net_if_ipv4_router_lookup|function|struct net_if_router *net_if_ipv4_router_lookup(struct net_if *iface,struct in_addr *addr)
+DECL|net_if_ipv4_select_src_addr|function|const struct in_addr *net_if_ipv4_select_src_addr(struct net_if *dst_iface, struct in_addr *dst)
 DECL|net_if_ipv4_select_src_iface|function|struct net_if *net_if_ipv4_select_src_iface(struct in_addr *dst)
 DECL|net_if_ipv6_addr_add|function|struct net_if_addr *net_if_ipv6_addr_add(struct net_if *iface, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)
 DECL|net_if_ipv6_addr_lookup|function|struct net_if_addr *net_if_ipv6_addr_lookup(const struct in6_addr *addr, struct net_if **ret)
