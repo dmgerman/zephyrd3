@@ -73,7 +73,6 @@ DECL|discov_a2src|variable|discov_a2src
 DECL|discov_hfpag|variable|discov_hfpag
 DECL|discov|variable|discov
 DECL|hexdump|function|static void hexdump(const u8_t *data, size_t len)
-DECL|id_addr|variable|id_addr
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
@@ -108,8 +107,5 @@ DECL|security_changed|function|static void security_changed(struct bt_conn *conn
 DECL|server|variable|server
 DECL|spp_attrs|variable|spp_attrs
 DECL|spp_rec|variable|spp_rec
-DECL|storage_clear|function|static int storage_clear(const bt_addr_le_t *addr)
-DECL|storage_read|function|static ssize_t storage_read(const bt_addr_le_t *addr, u16_t key, void *data, size_t length)
-DECL|storage_write|function|static ssize_t storage_write(const bt_addr_le_t *addr, u16_t key, const void *data, size_t length)
 DECL|str2bt_addr_le|function|static int str2bt_addr_le(const char *str, const char *type, bt_addr_le_t *addr)
 DECL|str2bt_addr|function|static int str2bt_addr(const char *str, bt_addr_t *addr)
