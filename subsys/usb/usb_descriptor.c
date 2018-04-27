@@ -20,6 +20,7 @@ DECL|lang_descr|member|struct usb_string_descriptor lang_descr;
 DECL|usb_fix_descriptor|function|static int usb_fix_descriptor(struct usb_desc_header *head)
 DECL|usb_get_cfg_data|function|static struct usb_cfg_data *usb_get_cfg_data(struct usb_if_descriptor *iface)
 DECL|usb_get_device_descriptor|function|u8_t *usb_get_device_descriptor(void)
+DECL|usb_get_str_descriptor_idx|function|int usb_get_str_descriptor_idx(void *ptr)
 DECL|usb_mfr_descriptor|struct|struct usb_mfr_descriptor {
 DECL|usb_product_descriptor|struct|struct usb_product_descriptor {
 DECL|usb_sn_descriptor|struct|struct usb_sn_descriptor {

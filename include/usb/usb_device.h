@@ -18,6 +18,7 @@ DECL|custom_handler|member|usb_request_handler custom_handler;
 DECL|endpoint|member|struct usb_ep_cfg_data *endpoint;
 DECL|ep_addr|member|u8_t ep_addr;
 DECL|ep_cb|member|usb_ep_callback ep_cb;
+DECL|interface_config|member|usb_interface_config interface_config;
 DECL|interface_descriptor|member|const void *interface_descriptor;
 DECL|interface|member|struct usb_interface_cfg_data interface;
 DECL|num_endpoints|member|u8_t num_endpoints;
@@ -27,6 +28,7 @@ DECL|usb_device_description|member|const u8_t *usb_device_description;
 DECL|usb_ep_callback|typedef|typedef void (*usb_ep_callback)(u8_t ep,
 DECL|usb_ep_cfg_data|struct|struct usb_ep_cfg_data {
 DECL|usb_interface_cfg_data|struct|struct usb_interface_cfg_data {
+DECL|usb_interface_config|typedef|typedef void (*usb_interface_config)(u8_t bInterfaceNumber);
 DECL|usb_request_handler|typedef|typedef int (*usb_request_handler) (struct usb_setup_packet *detup,
 DECL|usb_setup_packet|struct|struct usb_setup_packet {
 DECL|usb_status_callback|typedef|typedef void (*usb_status_callback)(enum usb_dc_status_code status_code,
