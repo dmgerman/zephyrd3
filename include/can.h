@@ -23,7 +23,7 @@ DECL|__DRIVERS_CAN_H|macro|__DRIVERS_CAN_H
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|_impl_can_attach_isr|function|static inline int _impl_can_attach_isr(struct device *dev, can_rx_callback_t isr, const struct can_filter *filter)
-DECL|_impl_can_attach_msgq|function|static inline int _impl_can_attach_msgq(struct device *dev,struct k_msgq *msg_q, struct can_filter *filter)
+DECL|_impl_can_attach_msgq|function|static inline int _impl_can_attach_msgq(struct device *dev,struct k_msgq *msg_q, const struct can_filter *filter)
 DECL|_impl_can_configure|function|static inline int _impl_can_configure(struct device *dev, enum can_mode mode, u32_t bitrate)
 DECL|_impl_can_detach|function|static inline void _impl_can_detach(struct device *dev, int filter_id)
 DECL|_impl_can_send|function|static inline int _impl_can_send(struct device *dev, struct can_msg *msg, s32_t timeout, can_tx_callback_t callback_isr)
