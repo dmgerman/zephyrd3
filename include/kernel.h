@@ -295,6 +295,7 @@ DECL|k_sem|struct|struct k_sem {
 DECL|k_stack|struct|struct k_stack {
 DECL|k_thread_entry_t|typedef|typedef void (*k_thread_entry_t)(void *p1, void *p2, void *p3);
 DECL|k_thread_stack_t|typedef|typedef struct _k_thread_stack_element k_thread_stack_t;
+DECL|k_thread_user_cb_t|typedef|typedef void (*k_thread_user_cb_t)(const struct k_thread *thread,
 DECL|k_thread|struct|struct k_thread {
 DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|k_timer_expiry_t|typedef|typedef void (*k_timer_expiry_t)(struct k_timer *timer);
