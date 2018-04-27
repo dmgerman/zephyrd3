@@ -1,6 +1,7 @@
 DECL|FCS_SIZE|macro|FCS_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|channel|variable|channel
 DECL|dataInit|function|static void dataInit(void)
 DECL|otPlatRadioAddSrcMatchExtEntry|function|otError otPlatRadioAddSrcMatchExtEntry(otInstance *aInstance, const otExtAddress *aExtAddress)
 DECL|otPlatRadioAddSrcMatchShortEntry|function|otError otPlatRadioAddSrcMatchShortEntry(otInstance *aInstance, const u16_t aShortAddress)
@@ -27,6 +28,7 @@ DECL|otPlatRadioSetShortAddress|function|void otPlatRadioSetShortAddress(otInsta
 DECL|otPlatRadioSetTransmitPower|function|otError otPlatRadioSetTransmitPower(otInstance *aInstance, int8_t aPower)
 DECL|otPlatRadioSleep|function|otError otPlatRadioSleep(otInstance *aInstance)
 DECL|otPlatRadioTransmit|function|otError otPlatRadioTransmit(otInstance *aInstance, otRadioFrame *aPacket)
+DECL|platformRadioChannelGet|function|uint16_t platformRadioChannelGet(otInstance *aInstance)
 DECL|platformRadioInit|function|void platformRadioInit(void)
 DECL|platformRadioProcess|function|void platformRadioProcess(otInstance *aInstance)
 DECL|radio_api|variable|radio_api
