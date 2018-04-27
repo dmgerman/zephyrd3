@@ -37,7 +37,7 @@ DECL|bt_conn_identity_resolved|function|void bt_conn_identity_resolved(struct bt
 DECL|bt_conn_init|function|int bt_conn_init(void)
 DECL|bt_conn_le_conn_update|function|int bt_conn_le_conn_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
 DECL|bt_conn_le_param_update|function|int bt_conn_le_param_update(struct bt_conn *conn, const struct bt_le_conn_param *param)
-DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, u64_t rand,u16_t ediv, const u8_t *ltk, size_t len)
+DECL|bt_conn_le_start_encryption|function|int bt_conn_le_start_encryption(struct bt_conn *conn, u8_t rand[8], u16_t ediv,const u8_t *ltk, size_t len)
 DECL|bt_conn_lookup_addr_br|function|struct bt_conn *bt_conn_lookup_addr_br(const bt_addr_t *peer)
 DECL|bt_conn_lookup_addr_le|function|struct bt_conn *bt_conn_lookup_addr_le(const bt_addr_le_t *peer)
 DECL|bt_conn_lookup_addr_sco|function|struct bt_conn *bt_conn_lookup_addr_sco(const bt_addr_t *peer)
