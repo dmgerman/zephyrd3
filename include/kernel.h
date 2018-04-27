@@ -155,6 +155,9 @@ DECL|_impl_k_msgq_num_used_get|function|static inline u32_t _impl_k_msgq_num_use
 DECL|_impl_k_object_access_grant|function|static inline void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_object_alloc|function|static inline void *_impl_k_object_alloc(enum k_objects otype)
 DECL|_impl_k_object_release|function|static inline void _impl_k_object_release(void *object)
+DECL|_impl_k_queue_is_empty|function|static inline int _impl_k_queue_is_empty(struct k_queue *queue)
+DECL|_impl_k_queue_peek_head|function|static inline void *_impl_k_queue_peek_head(struct k_queue *queue)
+DECL|_impl_k_queue_peek_tail|function|static inline void *_impl_k_queue_peek_tail(struct k_queue *queue)
 DECL|_impl_k_sem_count_get|function|static inline unsigned int _impl_k_sem_count_get(struct k_sem *sem)
 DECL|_impl_k_sem_reset|function|static inline void _impl_k_sem_reset(struct k_sem *sem)
 DECL|_impl_k_timer_remaining_get|function|static inline s32_t _impl_k_timer_remaining_get(struct k_timer *timer)
@@ -208,7 +211,7 @@ DECL|caller_saved|member|struct _caller_saved caller_saved;
 DECL|count|member|unsigned int count;
 DECL|cpu|member|u8_t cpu;
 DECL|custom_data|member|void *custom_data;
-DECL|data_q|member|sys_slist_t data_q;
+DECL|data_q|member|sys_sflist_t data_q;
 DECL|data|member|char data;
 DECL|data|member|u32_t data;
 DECL|data|member|void *data;
@@ -258,6 +261,7 @@ DECL|k_disable_sys_clock_always_on|function|static inline void k_disable_sys_clo
 DECL|k_disable_sys_clock_always_on|macro|k_disable_sys_clock_always_on
 DECL|k_enable_sys_clock_always_on|function|static inline int k_enable_sys_clock_always_on(void)
 DECL|k_enable_sys_clock_always_on|macro|k_enable_sys_clock_always_on
+DECL|k_fifo_alloc_put|macro|k_fifo_alloc_put
 DECL|k_fifo_cancel_wait|macro|k_fifo_cancel_wait
 DECL|k_fifo_get|macro|k_fifo_get
 DECL|k_fifo_init|macro|k_fifo_init
@@ -268,6 +272,7 @@ DECL|k_fifo_put_list|macro|k_fifo_put_list
 DECL|k_fifo_put_slist|macro|k_fifo_put_slist
 DECL|k_fifo_put|macro|k_fifo_put
 DECL|k_fifo|struct|struct k_fifo {
+DECL|k_lifo_alloc_put|macro|k_lifo_alloc_put
 DECL|k_lifo_get|macro|k_lifo_get
 DECL|k_lifo_init|macro|k_lifo_init
 DECL|k_lifo_put|macro|k_lifo_put
@@ -296,9 +301,6 @@ DECL|k_poll_event|struct|struct k_poll_event {
 DECL|k_poll_modes|enum|enum k_poll_modes {
 DECL|k_poll_signal|struct|struct k_poll_signal {
 DECL|k_q_node|member|sys_dnode_t k_q_node;
-DECL|k_queue_is_empty|function|static inline int k_queue_is_empty(struct k_queue *queue)
-DECL|k_queue_peek_head|function|static inline void *k_queue_peek_head(struct k_queue *queue)
-DECL|k_queue_peek_tail|function|static inline void *k_queue_peek_tail(struct k_queue *queue)
 DECL|k_queue_remove|function|static inline bool k_queue_remove(struct k_queue *queue, void *data)
 DECL|k_queue|struct|struct k_queue {
 DECL|k_sem|struct|struct k_sem {
