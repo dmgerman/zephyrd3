@@ -11,7 +11,7 @@ DECL|alert_handler0|function|static int alert_handler0(struct k_alert *alt)
 DECL|alert_handler1|function|static int alert_handler1(struct k_alert *alt)
 DECL|alert_recv|function|static void alert_recv(void)
 DECL|alert_send|function|static void alert_send(void)
-DECL|eventHandler|function|int eventHandler(struct k_alert *alt)
+DECL|event_handler|function|int event_handler(struct k_alert *alt)
 DECL|handle_type|enum|enum handle_type {
 DECL|handler_executed|variable|handler_executed
 DECL|handler_val|variable|handler_val
