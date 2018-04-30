@@ -7,5 +7,6 @@ DECL|tz_nonsecure_exception_prio_config|function|void tz_nonsecure_exception_pri
 DECL|tz_nonsecure_msplim_set|function|void tz_nonsecure_msplim_set(u32_t val)
 DECL|tz_nonsecure_psplim_set|function|void tz_nonsecure_psplim_set(u32_t val)
 DECL|tz_nonsecure_state_setup|function|void tz_nonsecure_state_setup(const tz_nonsecure_setup_conf_t *p_ns_conf)
+DECL|tz_nonsecure_system_reset_req_block|function|void tz_nonsecure_system_reset_req_block(int block)
 DECL|tz_sau_configure|function|void tz_sau_configure(int enable, int allns)
 DECL|tz_sau_number_of_regions_get|function|u32_t tz_sau_number_of_regions_get(void)
