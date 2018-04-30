@@ -35,7 +35,6 @@ DECL|do_read_op|function|static int do_read_op(struct lwm2m_engine_obj *obj, str
 DECL|do_write_op|function|static int do_write_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t format)
 DECL|engine_add_observer|function|static int engine_add_observer(struct lwm2m_message *msg, const u8_t *token, u8_t tkl, struct lwm2m_obj_path *path, u16_t format)
 DECL|engine_clear_context|function|static void engine_clear_context(struct lwm2m_engine_context *context)
-DECL|engine_get_resource|function|static int engine_get_resource(struct lwm2m_obj_path *path, struct lwm2m_engine_res_inst **res)
 DECL|engine_next_service_timeout_ms|function|s32_t engine_next_service_timeout_ms(u32_t max_timeout)
 DECL|engine_obj_inst_list|variable|engine_obj_inst_list
 DECL|engine_obj_list|variable|engine_obj_list
@@ -136,6 +135,7 @@ DECL|notification_attrs|struct|struct notification_attrs {
 DECL|notify_message_reply_cb|function|static int notify_message_reply_cb(const struct coap_packet *response, struct coap_reply *reply, const struct sockaddr *from)
 DECL|observe_node_data|variable|observe_node_data
 DECL|observe_node|struct|struct observe_node {
+DECL|path_to_objs|function|static int path_to_objs(const struct lwm2m_obj_path *path,struct lwm2m_engine_obj_inst **obj_inst, struct lwm2m_engine_obj_field **obj_field, struct lwm2m_engine_res_inst **res)
 DECL|path|member|struct lwm2m_obj_path path;
 DECL|pmax|member|s32_t pmax;
 DECL|pmin|member|s32_t pmin;
