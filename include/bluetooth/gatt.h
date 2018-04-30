@@ -125,7 +125,6 @@ DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|const struct bt_uuid *uuid;
 DECL|uuid|member|struct bt_uuid *uuid;
-DECL|valid|member|u8_t valid;
 DECL|value_handle|member|u16_t value_handle;
 DECL|value|member|u16_t value;
 DECL|value|member|u16_t value;
