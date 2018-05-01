@@ -110,6 +110,7 @@ DECL|id|member|u32_t id; /* Link ID */
 DECL|id|member|u8_t id;
 DECL|id|member|u8_t id; /* Transaction ID */
 DECL|input_action|function|static bt_mesh_input_action_t input_action(u8_t action)
+DECL|is_pb_gatt|function|static inline bool is_pb_gatt(void)
 DECL|last_seg|function|static u8_t last_seg(u8_t len)
 DECL|last_seg|member|u8_t last_seg; /* Last segment (to check length) */
 DECL|len|member|u16_t len;
