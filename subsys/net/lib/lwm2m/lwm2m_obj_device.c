@@ -5,6 +5,7 @@ DECL|DEVICE_CURRENT_TIME_ID|macro|DEVICE_CURRENT_TIME_ID
 DECL|DEVICE_ERROR_CODE_ID|macro|DEVICE_ERROR_CODE_ID
 DECL|DEVICE_ERROR_CODE_MAX|macro|DEVICE_ERROR_CODE_MAX
 DECL|DEVICE_ERROR_CODE_MAX|macro|DEVICE_ERROR_CODE_MAX
+DECL|DEVICE_EXT_DEV_INFO_ID|macro|DEVICE_EXT_DEV_INFO_ID
 DECL|DEVICE_FACTORY_DEFAULT_ID|macro|DEVICE_FACTORY_DEFAULT_ID
 DECL|DEVICE_FIRMWARE_VERSION_ID|macro|DEVICE_FIRMWARE_VERSION_ID
 DECL|DEVICE_HARDWARE_VERSION_ID|macro|DEVICE_HARDWARE_VERSION_ID
@@ -22,7 +23,6 @@ DECL|DEVICE_RESET_ERROR_CODE_ID|macro|DEVICE_RESET_ERROR_CODE_ID
 DECL|DEVICE_SERIAL_NUMBER_ID|macro|DEVICE_SERIAL_NUMBER_ID
 DECL|DEVICE_SERVICE_INTERVAL|macro|DEVICE_SERVICE_INTERVAL
 DECL|DEVICE_SOFTWARE_VERSION_ID|macro|DEVICE_SOFTWARE_VERSION_ID
-DECL|DEVICE_STRING_LONG|macro|DEVICE_STRING_LONG
 DECL|DEVICE_STRING_SHORT|macro|DEVICE_STRING_SHORT
 DECL|DEVICE_SUPPORTED_BINDING_MODES_ID|macro|DEVICE_SUPPORTED_BINDING_MODES_ID
 DECL|DEVICE_TIMEZONE_ID|macro|DEVICE_TIMEZONE_ID
@@ -38,14 +38,11 @@ DECL|current_time_pre_write_cb|function|static void *current_time_pre_write_cb(u
 DECL|current_time_read_cb|function|static void *current_time_read_cb(u16_t obj_inst_id, size_t *data_len)
 DECL|device_create|function|static struct lwm2m_engine_obj_inst *device_create(u16_t obj_inst_id)
 DECL|device_periodic_service|function|static void device_periodic_service(void)
-DECL|device_type|variable|device_type
 DECL|device|variable|device
 DECL|error_code_count|variable|error_code_count
 DECL|error_code_list|variable|error_code_list
 DECL|factory_default_cb|function|static int factory_default_cb(u16_t obj_inst_id)
 DECL|fields|variable|fields
-DECL|firmware_version|variable|firmware_version
-DECL|hardware_version|variable|hardware_version
 DECL|inst|variable|inst
 DECL|lwm2m_device_add_err|function|int lwm2m_device_add_err(u8_t error_code)
 DECL|lwm2m_device_add_pwrsrc|function|int lwm2m_device_add_pwrsrc(u8_t pwrsrc_type)
@@ -53,10 +50,8 @@ DECL|lwm2m_device_init|function|static int lwm2m_device_init(struct device *dev)
 DECL|lwm2m_device_remove_pwrsrc|function|int lwm2m_device_remove_pwrsrc(int index)
 DECL|lwm2m_device_set_pwrsrc_current_ma|function|int lwm2m_device_set_pwrsrc_current_ma(int index, int current_ma)
 DECL|lwm2m_device_set_pwrsrc_voltage_mv|function|int lwm2m_device_set_pwrsrc_voltage_mv(int index, int voltage_mv)
-DECL|manufacturer|variable|manufacturer
 DECL|mem_free_kb|variable|mem_free_kb
 DECL|mem_total_kb|variable|mem_total_kb
-DECL|model_no|variable|model_no
 DECL|pwrsrc_available|variable|pwrsrc_available
 DECL|pwrsrc_count|variable|pwrsrc_count
 DECL|pwrsrc_current_ma|variable|pwrsrc_current_ma
@@ -64,7 +59,5 @@ DECL|pwrsrc_voltage_mv|variable|pwrsrc_voltage_mv
 DECL|reboot_cb|function|static int reboot_cb(u16_t obj_inst_id)
 DECL|reset_error_list_cb|function|static int reset_error_list_cb(u16_t obj_inst_id)
 DECL|res|variable|res
-DECL|serial_no|variable|serial_no
-DECL|software_version|variable|software_version
 DECL|time_offset|variable|time_offset
 DECL|time_temp|variable|time_temp
