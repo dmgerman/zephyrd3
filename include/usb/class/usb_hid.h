@@ -69,6 +69,7 @@ DECL|hid_cb_t|typedef|typedef int (*hid_cb_t)(struct usb_setup_packet *setup, s3
 DECL|hid_int_ready_callback|typedef|typedef void (*hid_int_ready_callback)(void);
 DECL|hid_ops|struct|struct hid_ops {
 DECL|int_in_ready|member|hid_int_ready_callback int_in_ready;
+DECL|int_out_ready|member|hid_int_ready_callback int_out_ready;
 DECL|set_idle|member|hid_cb_t set_idle;
 DECL|set_protocol|member|hid_cb_t set_protocol;
 DECL|set_report|member|hid_cb_t set_report;
