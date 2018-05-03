@@ -147,6 +147,7 @@ DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_WAIT_Q_INIT|macro|_WAIT_Q_INIT
+DECL|_WAIT_Q_INIT|macro|_WAIT_Q_INIT
 DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
@@ -195,7 +196,7 @@ DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|} _wait_q_t;
-DECL|active|member|u8_t active;
+DECL|_wait_q_t|typedef|} _wait_q_t;
 DECL|arch|member|struct _thread_arch arch;
 DECL|attr|member|k_mem_partition_attr_t attr;
 DECL|base|member|struct _thread_base base;
@@ -302,7 +303,6 @@ DECL|k_pipe|struct|struct k_pipe {
 DECL|k_poll_event|struct|struct k_poll_event {
 DECL|k_poll_modes|enum|enum k_poll_modes {
 DECL|k_poll_signal|struct|struct k_poll_signal {
-DECL|k_q_node|member|sys_dnode_t k_q_node;
 DECL|k_queue_remove|function|static inline bool k_queue_remove(struct k_queue *queue, void *data)
 DECL|k_queue|struct|struct k_queue {
 DECL|k_sem|struct|struct k_sem {
@@ -348,6 +348,7 @@ DECL|num_partitions|member|u8_t num_partitions;
 DECL|num_used|member|u32_t num_used;
 DECL|objects|member|void * const *objects;
 DECL|obj|member|void *obj;
+DECL|order_key|member|u32_t order_key;
 DECL|owner_orig_prio|member|int owner_orig_prio;
 DECL|owner|member|struct k_thread *owner;
 DECL|pEntry|member|k_thread_entry_t pEntry;
@@ -355,6 +356,7 @@ DECL|parameter1|member|void *parameter1;
 DECL|parameter2|member|void *parameter2;
 DECL|parameter3|member|void *parameter3;
 DECL|partitions|member|struct k_mem_partition partitions[CONFIG_MAX_DOMAIN_PARTITIONS];
+DECL|pended_on|member|_wait_q_t *pended_on;
 DECL|period|member|s32_t period;
 DECL|perms|member|u8_t perms[CONFIG_MAX_THREAD_BYTES];
 DECL|poll_events|member|sys_dlist_t poll_events;
@@ -362,6 +364,8 @@ DECL|poller|member|struct _poller *poller;
 DECL|pool|member|u32_t pool : 8;
 DECL|preempt|member|u16_t preempt;
 DECL|prio|member|s8_t prio;
+DECL|qnode_dlist|member|sys_dlist_t qnode_dlist;
+DECL|qnode_rb|member|struct rbnode qnode_rb;
 DECL|queue|member|struct k_queue *queue;
 DECL|queue|member|struct k_queue queue;
 DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
@@ -423,6 +427,7 @@ DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|sys_dlist_t *wait_q;
 DECL|wait_q|member|} wait_q;
+DECL|waitq|member|struct _priq_rb waitq;
 DECL|waitq|member|sys_dlist_t waitq;
 DECL|work_item|member|struct k_work work_item;
 DECL|work_q|member|struct k_work_q *work_q;

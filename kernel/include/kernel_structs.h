@@ -8,9 +8,12 @@ DECL|_THREAD_DUMMY|macro|_THREAD_DUMMY
 DECL|_THREAD_PENDING|macro|_THREAD_PENDING
 DECL|_THREAD_POLLING|macro|_THREAD_POLLING
 DECL|_THREAD_PRESTART|macro|_THREAD_PRESTART
+DECL|_THREAD_QUEUED|macro|_THREAD_QUEUED
 DECL|_THREAD_SUSPENDED|macro|_THREAD_SUSPENDED
 DECL|_cpu_t|typedef|typedef struct _cpu _cpu_t;
 DECL|_cpu|struct|struct _cpu {
+DECL|_current_cpu|macro|_current_cpu
+DECL|_current_cpu|macro|_current_cpu
 DECL|_current|macro|_current
 DECL|_current|macro|_current
 DECL|_kernel_structs__h_|macro|_kernel_structs__h_
@@ -30,15 +33,16 @@ DECL|cpus|member|struct _cpu cpus[CONFIG_MP_NUM_CPUS];
 DECL|current_fp|member|struct k_thread *current_fp;
 DECL|current|member|struct k_thread *current;
 DECL|current|member|struct k_thread *current;
+DECL|idle_thread|member|struct k_thread *idle_thread;
 DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
 DECL|id|member|int id;
 DECL|irq_stack|member|char *irq_stack;
 DECL|irq_stack|member|char *irq_stack;
 DECL|nested|member|u32_t nested;
 DECL|nested|member|u32_t nested;
-DECL|prio_bmap|member|u32_t prio_bmap[K_NUM_PRIO_BITMAPS];
-DECL|q|member|sys_dlist_t q[K_NUM_PRIORITIES];
 DECL|ready_q|member|struct _ready_q ready_q;
+DECL|runq|member|struct _priq_rb runq;
+DECL|runq|member|sys_dlist_t runq;
 DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
 DECL|thread_monitor_init|macro|thread_monitor_init
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL threads */
