@@ -28,6 +28,7 @@ DECL|_stdin_hook|variable|_stdin_hook
 DECL|_stdout_hook_default|function|static int _stdout_hook_default(int c)
 DECL|_stdout_hook|variable|_stdout_hook
 DECL|_write|function|int _write(int fd, char *buf, int nbytes)
+DECL|_write|macro|_write
 DECL|heap_base|variable|heap_base
 DECL|heap_sz|variable|heap_sz
 DECL|z_newlib_get_heap_bounds|function|void z_newlib_get_heap_bounds(void **base, size_t *size)

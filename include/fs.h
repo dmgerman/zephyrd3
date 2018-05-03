@@ -7,6 +7,8 @@ DECL|FS_SEEK_END|macro|FS_SEEK_END
 DECL|FS_SEEK_SET|macro|FS_SEEK_SET
 DECL|FS_TYPE_END|enumerator|FS_TYPE_END,
 DECL|_FS_H_|macro|_FS_H_
+DECL|__off_t_defined|macro|__off_t_defined
+DECL|__ssize_t_defined|macro|__ssize_t_defined
 DECL|closedir|member|int (*closedir)(struct fs_dir_t *dirp);
 DECL|close|member|int (*close)(struct fs_file_t *filp);
 DECL|f_bfree|member|unsigned long f_bfree;
@@ -28,12 +30,15 @@ DECL|mountp_len|member|size_t mountp_len;
 DECL|mount|member|int (*mount)(struct fs_mount_t *mountp);
 DECL|name|member|char name[MAX_FILE_NAME + 1];
 DECL|node|member|sys_dnode_t node;
+DECL|off_t|typedef|typedef long int off_t;
+DECL|off_t|typedef|typedef long long int off_t;
 DECL|opendir|member|int (*opendir)(struct fs_dir_t *dirp, const char *fs_path);
 DECL|open|member|int (*open)(struct fs_file_t *filp, const char *fs_path);
 DECL|readdir|member|int (*readdir)(struct fs_dir_t *dirp, struct fs_dirent *entry);
 DECL|read|member|ssize_t (*read)(struct fs_file_t *filp, void *dest, size_t nbytes);
 DECL|rename|member|int (*rename)(struct fs_mount_t *mountp, const char *from,
 DECL|size|member|size_t size;
+DECL|ssize_t|typedef|typedef __SIZE_TYPE__ ssize_t;
 DECL|statvfs|member|int (*statvfs)(struct fs_mount_t *mountp, const char *path,
 DECL|stat|member|int (*stat)(struct fs_mount_t *mountp, const char *path,
 DECL|storage_dev|member|void *storage_dev;
