@@ -73,6 +73,7 @@ DECL|K_SEM_DEFINE|macro|K_SEM_DEFINE
 DECL|K_SEM_INITIALIZER|macro|K_SEM_INITIALIZER
 DECL|K_SSE_REGS|macro|K_SSE_REGS
 DECL|K_STACK_DEFINE|macro|K_STACK_DEFINE
+DECL|K_STACK_FLAG_ALLOC|macro|K_STACK_FLAG_ALLOC
 DECL|K_STACK_INITIALIZER|macro|K_STACK_INITIALIZER
 DECL|K_THREAD_ACCESS_GRANT|macro|K_THREAD_ACCESS_GRANT
 DECL|K_THREAD_ACCESS_GRANT|macro|K_THREAD_ACCESS_GRANT
@@ -222,6 +223,7 @@ DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
 DECL|fifo|member|struct k_fifo *fifo;
 DECL|flags|member|atomic_t flags[1];
+DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags; /* Flags */

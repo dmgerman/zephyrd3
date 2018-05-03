@@ -1,2 +1,5 @@
+DECL|dummy_test|macro|dummy_test
 DECL|test_main|function|void test_main(void)
+DECL|test_stack_user_pop_fail|variable|test_stack_user_pop_fail
+DECL|test_stack_user_thread2thread|variable|test_stack_user_thread2thread
 DECL|threadstack|variable|threadstack
