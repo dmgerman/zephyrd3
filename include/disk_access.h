@@ -7,3 +7,13 @@ DECL|DISK_STATUS_OK|macro|DISK_STATUS_OK
 DECL|DISK_STATUS_UNINIT|macro|DISK_STATUS_UNINIT
 DECL|DISK_STATUS_WR_PROTECT|macro|DISK_STATUS_WR_PROTECT
 DECL|_DISK_ACCESS_H_|macro|_DISK_ACCESS_H_
+DECL|disk_info|struct|struct disk_info {
+DECL|disk_operations|struct|struct disk_operations {
+DECL|init|member|int (*init)(struct disk_info *disk);
+DECL|ioctl|member|int (*ioctl)(struct disk_info *disk, u8_t cmd, void *buff);
+DECL|name|member|char *name;
+DECL|node|member|sys_dnode_t node;
+DECL|ops|member|const struct disk_operations *ops;
+DECL|read|member|int (*read)(struct disk_info *disk, u8_t *data_buf,
+DECL|status|member|int (*status)(struct disk_info *disk);
+DECL|write|member|int (*write)(struct disk_info *disk, const u8_t *data_buf,

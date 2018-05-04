@@ -23,6 +23,7 @@ DECL|block_count|variable|block_count
 DECL|cbw|variable|cbw
 DECL|csw|variable|csw
 DECL|defered_wr_sz|variable|defered_wr_sz
+DECL|disk_pdrv|variable|disk_pdrv
 DECL|disk_wait_sem|variable|disk_wait_sem
 DECL|fail|function|static void fail(void)
 DECL|infoTransfer|function|static bool infoTransfer(void)
