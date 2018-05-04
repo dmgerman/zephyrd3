@@ -1,6 +1,6 @@
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_thread_create, new_thread_p, stack_p, stack_size, entry, p1, more_args)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_thread_custom_data_set, data)
 DECL|_FOREACH_STATIC_THREAD|macro|_FOREACH_STATIC_THREAD
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_thread_create, new_thread_p, stack_p, stack_size, entry, p1, more_args)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_thread_custom_data_set, data)
 DECL|_check_stack_sentinel|function|void _check_stack_sentinel(void)
 DECL|_impl_k_thread_cancel|function|int _impl_k_thread_cancel(k_tid_t tid)
 DECL|_impl_k_thread_create|function|k_tid_t _impl_k_thread_create(struct k_thread *new_thread, k_thread_stack_t *stack, size_t stack_size, k_thread_entry_t entry, void *p1, void *p2, void *p3, int prio, u32_t options, s32_t delay)

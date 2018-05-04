@@ -2,5 +2,5 @@ DECL|UART_SIMPLE_VOID|function|UART_SIMPLE_VOID(irq_tx_enable)
 DECL|UART_SIMPLE_VOID|macro|UART_SIMPLE_VOID
 DECL|UART_SIMPLE|function|UART_SIMPLE(err_check)
 DECL|UART_SIMPLE|macro|UART_SIMPLE
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(uart_drv_cmd, dev, cmd, p)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(uart_poll_out, dev, out_char)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(uart_drv_cmd, dev, cmd, p)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(uart_poll_out, dev, out_char)

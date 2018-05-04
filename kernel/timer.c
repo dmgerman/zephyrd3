@@ -1,5 +1,5 @@
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_timer_start, timer, duration_p, period_p)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_timer_user_data_set, timer, user_data)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_timer_start, timer, duration_p, period_p)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_timer_user_data_set, timer, user_data)
 DECL|_impl_k_timer_start|function|void _impl_k_timer_start(struct k_timer *timer, s32_t duration, s32_t period)
 DECL|_impl_k_timer_status_get|function|u32_t _impl_k_timer_status_get(struct k_timer *timer)
 DECL|_impl_k_timer_status_sync|function|u32_t _impl_k_timer_status_sync(struct k_timer *timer)

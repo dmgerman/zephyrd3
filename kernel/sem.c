@@ -1,5 +1,5 @@
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_sem_init, sem, initial_count, limit)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_sem_take, sem, timeout)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_sem_init, sem, initial_count, limit)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_sem_take, sem, timeout)
 DECL|_impl_k_sem_give|function|void _impl_k_sem_give(struct k_sem *sem)
 DECL|_impl_k_sem_init|function|void _impl_k_sem_init(struct k_sem *sem, unsigned int initial_count, unsigned int limit)
 DECL|_impl_k_sem_take|function|int _impl_k_sem_take(struct k_sem *sem, s32_t timeout)

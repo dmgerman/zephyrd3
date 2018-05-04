@@ -1,5 +1,5 @@
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_sleep, duration)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_thread_priority_set, thread_p, prio)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_sleep, duration)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_thread_priority_set, thread_p, prio)
 DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct k_thread *thread)
 DECL|_find_first_thread_to_unpend|function|struct k_thread *_find_first_thread_to_unpend(_wait_q_t *wait_q, struct k_thread *from)
 DECL|_get_highest_ready_prio|function|int _get_highest_ready_prio(void)

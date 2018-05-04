@@ -2,7 +2,7 @@ DECL|PAD_NONE|enumerator|PAD_NONE,
 DECL|PAD_SPACE_AFTER|enumerator|PAD_SPACE_AFTER,
 DECL|PAD_SPACE_BEFORE|enumerator|PAD_SPACE_BEFORE,
 DECL|PAD_ZERO_BEFORE|enumerator|PAD_ZERO_BEFORE,
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(k_str_out, c, n)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_str_out, c, n)
 DECL|__printk_get_hook|function|void *__printk_get_hook(void)
 DECL|__printk_hook_install|function|void __printk_hook_install(int (*fn)(int))
 DECL|_char_out|variable|_char_out

@@ -1,2 +1,2 @@
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(dma_start, dev, channel)
-DECL|_SYSCALL_HANDLER|function|_SYSCALL_HANDLER(dma_stop, dev, channel)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(dma_start, dev, channel)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(dma_stop, dev, channel)
