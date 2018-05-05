@@ -32,7 +32,6 @@ DECL|recv_lock|variable|recv_lock
 DECL|remote_addr|member|const struct sockaddr *remote_addr;
 DECL|remote_port|member|u16_t remote_port;
 DECL|returned_ud|variable|returned_ud
-DECL|run_tests|function|void run_tests(void)
 DECL|send_ipv4_udp_msg|function|static bool send_ipv4_udp_msg(struct net_if *iface, struct in_addr *src, struct in_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_ipv6_udp_long_msg|function|static bool send_ipv6_udp_long_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
 DECL|send_ipv6_udp_msg|function|static bool send_ipv6_udp_msg(struct net_if *iface, struct in6_addr *src, struct in6_addr *dst, u16_t src_port, u16_t dst_port,
@@ -45,6 +44,7 @@ DECL|test_failed|variable|test_failed
 DECL|test_fail|function|static enum net_verdict test_fail(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
 DECL|test_main|function|void test_main(void)
 DECL|test_ok|function|static enum net_verdict test_ok(struct net_conn *conn,struct net_pkt *pkt, void *user_data)
+DECL|test_udp|function|void test_udp(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|test|member|char *test;
 DECL|ud|struct|struct ud {

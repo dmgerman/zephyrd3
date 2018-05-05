@@ -46,11 +46,11 @@ DECL|pkt3|variable|pkt3
 DECL|pkt4|variable|pkt4
 DECL|pkt5|variable|pkt5
 DECL|pton|member|bool pton;
-DECL|run_tests|function|void run_tests(void)
 DECL|test_addr_parse|function|void test_addr_parse(void)
 DECL|test_main|function|void test_main(void)
 DECL|test_net_addr|function|void test_net_addr(void)
 DECL|test_net_pkt_addr_parse|function|void test_net_pkt_addr_parse(void)
+DECL|test_utils|function|void test_utils(void)
 DECL|tests|variable|tests
 DECL|v4_tcp_pkt1|variable|v4_tcp_pkt1
 DECL|v4_udp_pkt1|variable|v4_udp_pkt1

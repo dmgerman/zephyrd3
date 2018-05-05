@@ -19,8 +19,8 @@ DECL|pending_pkt|variable|pending_pkt
 DECL|prepare_arp_reply|function|static inline struct net_pkt *prepare_arp_reply(struct net_if *iface,struct net_pkt *req, struct net_eth_addr *addr)
 DECL|prepare_arp_request|function|static inline struct net_pkt *prepare_arp_request(struct net_if *iface, struct net_pkt *req, struct net_eth_addr *addr)
 DECL|req_test|variable|req_test
-DECL|run_tests|function|void run_tests(void)
 DECL|send_status|variable|send_status
 DECL|setup_eth_header|function|static void setup_eth_header(struct net_if *iface, struct net_pkt *pkt, struct net_eth_addr *hwaddr, u16_t type)
+DECL|test_arp|function|void test_arp(void)
 DECL|test_main|function|void test_main(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)

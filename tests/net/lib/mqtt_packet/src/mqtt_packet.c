@@ -82,7 +82,6 @@ DECL|pubrec1|variable|pubrec1
 DECL|pubrel1|variable|pubrel1
 DECL|qos|member|enum mqtt_qos qos[MAX_TOPICS];
 DECL|qos|member|enum mqtt_qos qos[MAX_TOPICS];
-DECL|run_tests|function|void run_tests(void)
 DECL|suback1|variable|suback1
 DECL|suback2|variable|suback2
 DECL|suback3|variable|suback3
@@ -90,6 +89,7 @@ DECL|subscribe1|variable|subscribe1
 DECL|subscribe2|variable|subscribe2
 DECL|subscribe3|variable|subscribe3
 DECL|test_main|function|void test_main(void)
+DECL|test_mqtt_packet|function|void test_mqtt_packet(void)
 DECL|test_name|member|const char *test_name;
 DECL|test_strlen|function|static size_t test_strlen(const char *str)
 DECL|topics|member|const char *topics[MAX_TOPICS];

@@ -9,9 +9,9 @@ DECL|buffer|variable|buffer
 DECL|data|variable|data
 DECL|length|member|u8_t length;
 DECL|pbuf|variable|pbuf
-DECL|ring_buffer_main_test|function|void ring_buffer_main_test(void)
 DECL|ringbuf|variable|ringbuf
 DECL|test_main|function|void test_main(void)
+DECL|test_ring_buffer_main|function|void test_ring_buffer_main(void)
 DECL|test_ringbuffer_declare_pow2|function|void test_ringbuffer_declare_pow2(void)
 DECL|test_ringbuffer_declare_size|function|void test_ringbuffer_declare_size(void)
 DECL|test_ringbuffer_init|function|void test_ringbuffer_init(void)
