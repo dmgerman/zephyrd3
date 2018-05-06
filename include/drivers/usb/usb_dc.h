@@ -1,3 +1,4 @@
+DECL|USB_DC_CLEAR_HALT|enumerator|USB_DC_CLEAR_HALT, /* Clear Feature ENDPOINT_HALT received */
 DECL|USB_DC_CONFIGURED|enumerator|USB_DC_CONFIGURED, /* USB configuration done */
 DECL|USB_DC_CONNECTED|enumerator|USB_DC_CONNECTED,
 DECL|USB_DC_DISCONNECTED|enumerator|USB_DC_DISCONNECTED, /* USB connection lost */
@@ -12,6 +13,7 @@ DECL|USB_DC_ERROR|enumerator|USB_DC_ERROR, /* USB error reported by the controll
 DECL|USB_DC_INTERFACE|enumerator|USB_DC_INTERFACE, /* USB interface selected */
 DECL|USB_DC_RESET|enumerator|USB_DC_RESET, /* USB reset */
 DECL|USB_DC_RESUME|enumerator|USB_DC_RESUME, /* USB connection resumed by the HOST */
+DECL|USB_DC_SET_HALT|enumerator|USB_DC_SET_HALT, /* Set Feature ENDPOINT_HALT received */
 DECL|USB_DC_SUSPEND|enumerator|USB_DC_SUSPEND, /* USB connection suspended by the HOST */
 DECL|USB_DC_UNKNOWN|enumerator|USB_DC_UNKNOWN /* Initial USB connection status */
 DECL|USB_EP_DIR_IN|macro|USB_EP_DIR_IN
