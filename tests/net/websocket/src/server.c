@@ -25,10 +25,10 @@ DECL|http_ctx|variable|http_ctx
 DECL|http_urls|variable|http_urls
 DECL|result|variable|result
 DECL|setup_cert|function|static int setup_cert(struct net_app_ctx *ctx, mbedtls_x509_crt *cert, mbedtls_pk_context *pkey)
-DECL|test_websocket_cleanup_server|function|void test_websocket_cleanup_server(void)
 DECL|test_websocket_init_server|function|void test_websocket_init_server(void)
 DECL|tx_tcp_slab|function|static struct k_mem_slab *tx_tcp_slab(void)
 DECL|tx_tcp_slab|macro|tx_tcp_slab
+DECL|websocket_cleanup_server|function|void websocket_cleanup_server(void)
 DECL|ws_closed|function|static void ws_closed(struct http_ctx *ctx, int status, void *user_data)
 DECL|ws_connected|function|static void ws_connected(struct http_ctx *ctx, enum http_connection_type type, const struct sockaddr *dst, void *user_data)
 DECL|ws_ctx|variable|ws_ctx
