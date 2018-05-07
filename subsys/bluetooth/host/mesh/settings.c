@@ -6,6 +6,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|app_key_set|function|static int app_key_set(int argc, char **argv, char *val)
 DECL|app_key_val|struct|struct app_key_val {
+DECL|bt_mesh_settings_init|function|void bt_mesh_settings_init(void)
 DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *app)
 DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
 DECL|bt_mesh_store_net|function|void bt_mesh_store_net(u16_t primary_addr, const u8_t dev_key[16])
@@ -34,11 +35,14 @@ DECL|primary_addr|member|u16_t primary_addr;
 DECL|rpl_alloc|function|static struct bt_mesh_rpl *rpl_alloc(u16_t src)
 DECL|rpl_find|function|static struct bt_mesh_rpl *rpl_find(u16_t src)
 DECL|rpl_set|function|static int rpl_set(int argc, char **argv, char *val)
+DECL|rpl_store_timeout|function|static void rpl_store_timeout(struct k_work *work)
+DECL|rpl_store|variable|rpl_store
 DECL|rpl_val|struct|struct rpl_val {
 DECL|seq_set|function|static int seq_set(int argc, char **argv, char *val)
 DECL|seq_val|struct|struct seq_val {
 DECL|seq|member|u32_t seq:24,
 DECL|settings|variable|settings
+DECL|store_rpl|function|static void store_rpl(struct bt_mesh_rpl *entry)
 DECL|subnet_init|function|static int subnet_init(struct bt_mesh_subnet *sub)
 DECL|updated|member|bool updated;
 DECL|val|member|u8_t val[2][16];

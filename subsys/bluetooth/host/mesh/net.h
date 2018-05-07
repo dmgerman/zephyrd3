@@ -147,6 +147,7 @@ DECL|src|member|u16_t src;
 DECL|src|member|u16_t src;
 DECL|start|member|u32_t start; /* Clear Procedure start */
 DECL|state|member|} state;
+DECL|store|member|bool store;
 DECL|sub_list|member|u16_t sub_list[FRIEND_SUB_LIST_SIZE];
 DECL|sub|member|struct bt_mesh_subnet *sub;
 DECL|sub|member|struct bt_mesh_subnet *sub;
