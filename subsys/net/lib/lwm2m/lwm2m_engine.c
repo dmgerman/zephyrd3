@@ -26,6 +26,7 @@ DECL|atof32|function|static int atof32(const char *input, float32_value_t *out)
 DECL|atou16|function|static u16_t atou16(u8_t *buf, u16_t buflen, u16_t *len)
 DECL|block1_contexts|variable|block1_contexts
 DECL|block_context|struct|struct block_context {
+DECL|clear_attrs|function|static void clear_attrs(void *ref)
 DECL|coap_options_to_path|function|static int coap_options_to_path(struct coap_option *opt, int options_count,struct lwm2m_obj_path *path)
 DECL|counter|member|u32_t counter;
 DECL|ctx|member|struct coap_block_context ctx;
@@ -139,7 +140,7 @@ DECL|path_to_objs|function|static int path_to_objs(const struct lwm2m_obj_path *
 DECL|path|member|struct lwm2m_obj_path path;
 DECL|pmax|member|s32_t pmax;
 DECL|pmin|member|s32_t pmin;
-DECL|print_attr|function|static int print_attr(struct net_pkt *pkt, char *buf, u16_t buflen, sys_slist_t *attr_list)
+DECL|print_attr|function|static int print_attr(struct net_pkt *pkt, char *buf, u16_t buflen, void *ref)
 DECL|retransmit_request|function|static void retransmit_request(struct k_work *work)
 DECL|select_reader|function|static int select_reader(struct lwm2m_input_context *in, u16_t format)
 DECL|select_writer|function|static int select_writer(struct lwm2m_output_context *out, u16_t accept)
@@ -157,6 +158,6 @@ DECL|to_hex_digit|function|static u8_t to_hex_digit(u8_t digit)
 DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
-DECL|update_attrs|function|static int update_attrs(sys_slist_t *list, struct notification_attrs *out)
+DECL|update_attrs|function|static int update_attrs(void *ref, struct notification_attrs *out)
 DECL|used|member|bool used;
 DECL|write_attr_pool|variable|write_attr_pool

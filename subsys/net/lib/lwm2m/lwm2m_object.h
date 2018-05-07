@@ -49,9 +49,6 @@ DECL|OBJ_FIELD_MULTI_DATA|macro|OBJ_FIELD_MULTI_DATA
 DECL|OBJ_FIELD|macro|OBJ_FIELD
 DECL|WRITER_OUTPUT_VALUE|macro|WRITER_OUTPUT_VALUE
 DECL|WRITER_RESOURCE_INSTANCE|macro|WRITER_RESOURCE_INSTANCE
-DECL|attr_list|member|sys_slist_t attr_list;
-DECL|attr_list|member|sys_slist_t attr_list;
-DECL|attr_list|member|sys_slist_t attr_list;
 DECL|create_cb|member|lwm2m_engine_obj_create_cb_t create_cb;
 DECL|data_len|member|u16_t data_len;
 DECL|data_ptr|member|void *data_ptr;
@@ -115,7 +112,6 @@ DECL|multi_count_var|member|u8_t *multi_count_var;
 DECL|multi_max_count|member|u8_t multi_max_count;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
-DECL|node|member|sys_snode_t node;
 DECL|obj_id|member|u16_t obj_id;
 DECL|obj_id|member|u16_t obj_id;
 DECL|obj_inst_id|member|u16_t obj_inst_id;
@@ -147,6 +143,7 @@ DECL|put_s8|member|size_t (*put_s8)(struct lwm2m_output_context *out,
 DECL|put_string|member|size_t (*put_string)(struct lwm2m_output_context *out,
 DECL|read_cb|member|lwm2m_engine_get_data_cb_t read_cb;
 DECL|reader|member|const struct lwm2m_reader *reader;
+DECL|ref|member|void *ref;
 DECL|res_id|member|u16_t res_id;
 DECL|res_id|member|u16_t res_id;
 DECL|res_id|member|u16_t res_id;
@@ -154,6 +151,5 @@ DECL|res_inst_id|member|u16_t res_inst_id;
 DECL|resource_count|member|u16_t resource_count;
 DECL|resources|member|struct lwm2m_engine_res_inst *resources;
 DECL|type|member|u8_t type;
-DECL|used|member|bool used;
 DECL|writer_flags|member|u8_t writer_flags;
 DECL|writer|member|const struct lwm2m_writer *writer;
