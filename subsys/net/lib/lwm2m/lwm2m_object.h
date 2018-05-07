@@ -53,7 +53,7 @@ DECL|attr_list|member|sys_slist_t attr_list;
 DECL|attr_list|member|sys_slist_t attr_list;
 DECL|attr_list|member|sys_slist_t attr_list;
 DECL|create_cb|member|lwm2m_engine_obj_create_cb_t create_cb;
-DECL|data_len|member|size_t data_len;
+DECL|data_len|member|u16_t data_len;
 DECL|data_ptr|member|void *data_ptr;
 DECL|data_type|member|u8_t data_type;
 DECL|delete_cb|member|lwm2m_engine_obj_delete_cb_t delete_cb;
