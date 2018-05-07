@@ -3,12 +3,10 @@ DECL|DEFAULT_TTL|macro|DEFAULT_TTL
 DECL|IDX_LEN|macro|IDX_LEN
 DECL|KEY_LIST_LEN|macro|KEY_LIST_LEN
 DECL|__packed|variable|__packed
-DECL|_app_key_del|function|static void _app_key_del(struct bt_mesh_app_key *key)
 DECL|_mod_pub_set|function|static u8_t _mod_pub_set(struct bt_mesh_model *model, u16_t pub_addr, u16_t app_idx, u8_t cred_flag, u8_t ttl, u8_t period, u8_t retransmit)
 DECL|_mod_unbind|function|static void _mod_unbind(struct bt_mesh_model *mod, struct bt_mesh_elem *elem,bool vnd, bool primary, void *user_data)
 DECL|addr|member|u16_t addr;
 DECL|app_key_add|function|static void app_key_add(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|app_key_alloc|function|static struct bt_mesh_app_key *app_key_alloc(u16_t app_idx)
 DECL|app_key_del|function|static void app_key_del(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|app_key_get|function|static void app_key_get(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|app_key_is_valid|function|static bool app_key_is_valid(u16_t app_idx)
@@ -16,6 +14,8 @@ DECL|app_key_set|function|static u8_t app_key_set(u16_t net_idx, u16_t app_idx, 
 DECL|app_key_update|function|static void app_key_update(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|beacon_get|function|static void beacon_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|beacon_set|function|static void beacon_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|bt_mesh_app_key_alloc|function|struct bt_mesh_app_key *bt_mesh_app_key_alloc(u16_t app_idx)
+DECL|bt_mesh_app_key_del|function|void bt_mesh_app_key_del(struct bt_mesh_app_key *key)
 DECL|bt_mesh_beacon_get|function|u8_t bt_mesh_beacon_get(void)
 DECL|bt_mesh_cfg_reset|function|void bt_mesh_cfg_reset(void)
 DECL|bt_mesh_cfg_srv_init|function|int bt_mesh_cfg_srv_init(struct bt_mesh_model *model, bool primary)
@@ -28,6 +28,7 @@ DECL|bt_mesh_label_uuid_get|function|u8_t *bt_mesh_label_uuid_get(u16_t addr)
 DECL|bt_mesh_net_transmit_get|function|u8_t bt_mesh_net_transmit_get(void)
 DECL|bt_mesh_relay_get|function|u8_t bt_mesh_relay_get(void)
 DECL|bt_mesh_relay_retransmit_get|function|u8_t bt_mesh_relay_retransmit_get(void)
+DECL|bt_mesh_subnet_del|function|void bt_mesh_subnet_del(struct bt_mesh_subnet *sub)
 DECL|comp_add_elem|function|static int comp_add_elem(struct net_buf_simple *buf, struct bt_mesh_elem *elem, bool primary)
 DECL|comp_get_page_0|function|static int comp_get_page_0(struct net_buf_simple *buf)
 DECL|conf_is_valid|function|static bool conf_is_valid(struct bt_mesh_cfg_srv *cfg)
