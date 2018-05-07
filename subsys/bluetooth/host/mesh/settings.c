@@ -6,6 +6,12 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|app_key_set|function|static int app_key_set(int argc, char **argv, char *val)
 DECL|app_key_val|struct|struct app_key_val {
+DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *app)
+DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
+DECL|bt_mesh_store_net|function|void bt_mesh_store_net(u16_t primary_addr, const u8_t dev_key[16])
+DECL|bt_mesh_store_rpl|function|void bt_mesh_store_rpl(struct bt_mesh_rpl *entry)
+DECL|bt_mesh_store_seq|function|void bt_mesh_store_seq(void)
+DECL|bt_mesh_store_subnet|function|void bt_mesh_store_subnet(struct bt_mesh_subnet *sub)
 DECL|dev_key|member|u8_t dev_key[16];
 DECL|func|member|int (*func)(int argc, char **argv, char *val);
 DECL|iv_index|member|u32_t iv_index;
