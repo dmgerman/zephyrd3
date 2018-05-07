@@ -127,8 +127,6 @@ DECL|opaque_len|member|u16_t opaque_len;
 DECL|operation|member|u8_t operation;
 DECL|out_cpkt|member|struct coap_packet *out_cpkt;
 DECL|out|member|struct lwm2m_output_context *out;
-DECL|path|member|char path[MAX_RESOURCE_LEN]; /* 3/0 */
-DECL|path|member|char path[MAX_RESOURCE_LEN]; /* 3/0/0 */
 DECL|path|member|struct lwm2m_obj_path *path;
 DECL|payload_len|member|u16_t payload_len;
 DECL|permissions|member|u8_t permissions;
