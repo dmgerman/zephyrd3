@@ -13,6 +13,7 @@ DECL|no_wait_signal|variable|no_wait_signal
 DECL|poll_wait_helper_thread|variable|poll_wait_helper_thread
 DECL|poll_wait_helper|function|static void poll_wait_helper(void *use_fifo, void *p2, void *p3)
 DECL|private|member|void *private;
+DECL|test_poll_grant_access|function|void test_poll_grant_access(void)
 DECL|test_poll_multi|function|void test_poll_multi(void)
 DECL|test_poll_no_wait|function|void test_poll_no_wait(void)
 DECL|test_poll_wait|function|void test_poll_wait(void)

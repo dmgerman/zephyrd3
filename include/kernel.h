@@ -155,6 +155,7 @@ DECL|_impl_k_msgq_num_used_get|function|static inline u32_t _impl_k_msgq_num_use
 DECL|_impl_k_object_access_grant|function|static inline void _impl_k_object_access_grant(void *object, struct k_thread *thread)
 DECL|_impl_k_object_alloc|function|static inline void *_impl_k_object_alloc(enum k_objects otype)
 DECL|_impl_k_object_release|function|static inline void _impl_k_object_release(void *object)
+DECL|_impl_k_poll_signal_reset|function|static inline void _impl_k_poll_signal_reset(struct k_poll_signal *signal)
 DECL|_impl_k_queue_is_empty|function|static inline int _impl_k_queue_is_empty(struct k_queue *queue)
 DECL|_impl_k_queue_peek_head|function|static inline void *_impl_k_queue_peek_head(struct k_queue *queue)
 DECL|_impl_k_queue_peek_tail|function|static inline void *_impl_k_queue_peek_tail(struct k_queue *queue)
