@@ -11,13 +11,13 @@ DECL|PINMUX_OUTPUT_ENABLED|macro|PINMUX_OUTPUT_ENABLED
 DECL|PINMUX_PULLUP_DISABLE|macro|PINMUX_PULLUP_DISABLE
 DECL|PINMUX_PULLUP_ENABLE|macro|PINMUX_PULLUP_ENABLE
 DECL|__INCLUDE_PINMUX_H|macro|__INCLUDE_PINMUX_H
-DECL|_impl_pinmux_pin_get|function|static inline int _impl_pinmux_pin_get(struct device *dev, u32_t pin, u32_t *func)
-DECL|_impl_pinmux_pin_input_enable|function|static inline int _impl_pinmux_pin_input_enable(struct device *dev,u32_t pin, u8_t func)
-DECL|_impl_pinmux_pin_pullup|function|static inline int _impl_pinmux_pin_pullup(struct device *dev, u32_t pin, u8_t func)
-DECL|_impl_pinmux_pin_set|function|static inline int _impl_pinmux_pin_set(struct device *dev, u32_t pin, u32_t func)
 DECL|get|member|pmux_get get;
 DECL|input|member|pmux_input input;
 DECL|pinmux_driver_api|struct|struct pinmux_driver_api {
+DECL|pinmux_pin_get|function|static inline int pinmux_pin_get(struct device *dev, u32_t pin, u32_t *func)
+DECL|pinmux_pin_input_enable|function|static inline int pinmux_pin_input_enable(struct device *dev, u32_t pin, u8_t func)
+DECL|pinmux_pin_pullup|function|static inline int pinmux_pin_pullup(struct device *dev, u32_t pin, u8_t func)
+DECL|pinmux_pin_set|function|static inline int pinmux_pin_set(struct device *dev, u32_t pin, u32_t func)
 DECL|pmux_get|typedef|typedef int (*pmux_get)(struct device *dev, u32_t pin, u32_t *func);
 DECL|pmux_input|typedef|typedef int (*pmux_input)(struct device *dev, u32_t pin, u8_t func);
 DECL|pmux_pullup|typedef|typedef int (*pmux_pullup)(struct device *dev, u32_t pin, u8_t func);
