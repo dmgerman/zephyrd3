@@ -63,6 +63,8 @@ DECL|EFC_INST_NUM|macro|EFC_INST_NUM
 DECL|EFC_IRQn|enumerator|EFC_IRQn = 6 , /**< 6 SAME70Q21 Embedded Flash Controller (EFC) */
 DECL|EFC|macro|EFC
 DECL|EFC|macro|EFC
+DECL|GMACQ1_IRQn|enumerator|GMACQ1_IRQn = 66 , /**< 66 SAME70Q21 Priority Queue 1 (GMAC) */
+DECL|GMACQ2_IRQn|enumerator|GMACQ2_IRQn = 67 , /**< 67 SAME70Q21 Priority Queue 2 (GMAC) */
 DECL|GMAC_INSTS|macro|GMAC_INSTS
 DECL|GMAC_INST_NUM|macro|GMAC_INST_NUM
 DECL|GMAC_IRQn|enumerator|GMAC_IRQn = 39 , /**< 39 SAME70Q21 Gigabit Ethernet MAC (GMAC) */
@@ -190,7 +192,7 @@ DECL|NUM_IRQ|macro|NUM_IRQ
 DECL|NonMaskableInt_IRQn|enumerator|NonMaskableInt_IRQn = -14, /**< 2 Non Maskable Interrupt */
 DECL|PERIPHERALS_ADDR|macro|PERIPHERALS_ADDR
 DECL|PERIPHERALS_SIZE|macro|PERIPHERALS_SIZE
-DECL|PERIPH_COUNT_IRQn|enumerator|PERIPH_COUNT_IRQn = 64 /**< Number of peripheral IDs */
+DECL|PERIPH_COUNT_IRQn|enumerator|PERIPH_COUNT_IRQn /**< Number of peripheral IDs */
 DECL|PIOA_IRQn|enumerator|PIOA_IRQn = 10 , /**< 10 SAME70Q21 Parallel Input/Output Controller (PIOA) */
 DECL|PIOA|macro|PIOA
 DECL|PIOA|macro|PIOA
