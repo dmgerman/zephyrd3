@@ -30,6 +30,7 @@ DECL|bt_mesh_net_resend|function|int bt_mesh_net_resend(struct bt_mesh_subnet *s
 DECL|bt_mesh_net_revoke_keys|function|void bt_mesh_net_revoke_keys(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_sec_update|function|void bt_mesh_net_sec_update(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_net_send|function|int bt_mesh_net_send(struct bt_mesh_net_tx *tx, struct net_buf *buf, const struct bt_mesh_send_cb *cb, void *cb_data)
+DECL|bt_mesh_next_seq|function|u32_t bt_mesh_next_seq(void)
 DECL|bt_mesh_rpl_reset|function|void bt_mesh_rpl_reset(void)
 DECL|bt_mesh_subnet_find|function|struct bt_mesh_subnet *bt_mesh_subnet_find(const u8_t net_id[8], u8_t flags, u32_t iv_index, const u8_t auth[8], bool *new_key)
 DECL|bt_mesh_subnet_get|function|struct bt_mesh_subnet *bt_mesh_subnet_get(u16_t net_idx)
