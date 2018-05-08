@@ -8,7 +8,7 @@ DECL|bcdVersion|member|u16_t bcdVersion;
 DECL|bos|member|struct usb_bos_descriptor bos;
 DECL|capability_data_msos|member|struct usb_bos_capability_msos capability_data_msos;
 DECL|capability_data_webusb|member|struct usb_bos_capability_webusb capability_data_webusb;
-DECL|custom_handle_req|function|int custom_handle_req(struct usb_setup_packet *pSetup,s32_t *len, u8_t **data)
+DECL|custom_handle_req|function|int custom_handle_req(struct usb_setup_packet *pSetup, s32_t *len, u8_t **data)
 DECL|data_arrived|variable|data_arrived
 DECL|data_buf|variable|data_buf
 DECL|data_transmitted|variable|data_transmitted
