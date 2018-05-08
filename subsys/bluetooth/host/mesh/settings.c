@@ -6,6 +6,10 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|app_key_set|function|static int app_key_set(int argc, char **argv, char *val)
 DECL|app_key_val|struct|struct app_key_val {
+DECL|bt_mesh_clear_app_key|function|void bt_mesh_clear_app_key(struct bt_mesh_app_key *key)
+DECL|bt_mesh_clear_net|function|void bt_mesh_clear_net(void)
+DECL|bt_mesh_clear_rpl|function|void bt_mesh_clear_rpl(void)
+DECL|bt_mesh_clear_subnet|function|void bt_mesh_clear_subnet(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_settings_init|function|void bt_mesh_settings_init(void)
 DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *app)
 DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
