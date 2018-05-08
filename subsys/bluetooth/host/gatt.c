@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|CCC_STORE_MAX|macro|CCC_STORE_MAX
 DECL|SC_INDICATE_PENDING|enumerator|SC_INDICATE_PENDING, /* SC indicate pending */
 DECL|SC_NUM_FLAGS|enumerator|SC_NUM_FLAGS,
 DECL|SC_RANGE_CHANGED|enumerator|SC_RANGE_CHANGED, /* SC range changed */
@@ -6,6 +7,8 @@ DECL|SC_TIMEOUT|macro|SC_TIMEOUT
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|add_subscriptions|function|static void add_subscriptions(struct bt_conn *conn)
+DECL|addr|member|bt_addr_le_t addr;
+DECL|addr|member|const bt_addr_le_t *addr;
 DECL|attr|member|const struct bt_gatt_attr *attr;
 DECL|bt_gatt_attr_next|function|struct bt_gatt_attr *bt_gatt_attr_next(const struct bt_gatt_attr *attr)
 DECL|bt_gatt_attr_read_ccc|function|ssize_t bt_gatt_attr_read_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
@@ -18,6 +21,7 @@ DECL|bt_gatt_attr_read_service|function|ssize_t bt_gatt_attr_read_service(struct
 DECL|bt_gatt_attr_read|function|ssize_t bt_gatt_attr_read(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t buf_len, u16_t offset, const void *value, u16_t value_len)
 DECL|bt_gatt_attr_write_ccc|function|ssize_t bt_gatt_attr_write_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|bt_gatt_cancel|function|void bt_gatt_cancel(struct bt_conn *conn, void *params)
+DECL|bt_gatt_clear_ccc|function|int bt_gatt_clear_ccc(const bt_addr_le_t *addr)
 DECL|bt_gatt_connected|function|void bt_gatt_connected(struct bt_conn *conn)
 DECL|bt_gatt_disconnected|function|void bt_gatt_disconnected(struct bt_conn *conn)
 DECL|bt_gatt_discover|function|int bt_gatt_discover(struct bt_conn *conn, struct bt_gatt_discover_params *params)
@@ -31,17 +35,29 @@ DECL|bt_gatt_notify|function|int bt_gatt_notify(struct bt_conn *conn, const stru
 DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|bt_gatt_service_register|function|int bt_gatt_service_register(struct bt_gatt_service *svc)
 DECL|bt_gatt_service_unregister|function|int bt_gatt_service_unregister(struct bt_gatt_service *svc)
+DECL|bt_gatt_store_ccc|function|int bt_gatt_store_ccc(const bt_addr_le_t *addr)
 DECL|bt_gatt_subscribe|function|int bt_gatt_subscribe(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn,struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(struct bt_conn *conn, u16_t handle, const void *data, u16_t length, bool sign)
 DECL|bt_gatt_write|function|int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
+DECL|ccc_clear|function|static void ccc_clear(struct _bt_gatt_ccc *ccc, bt_addr_le_t *addr)
+DECL|ccc_find_cfg|function|static struct bt_gatt_ccc_cfg *ccc_find_cfg(struct _bt_gatt_ccc *ccc, const bt_addr_le_t *addr)
+DECL|ccc_load|function|static u8_t ccc_load(const struct bt_gatt_attr *attr, void *user_data)
+DECL|ccc_load|struct|struct ccc_load {
+DECL|ccc_save|function|static u8_t ccc_save(const struct bt_gatt_attr *attr, void *user_data)
+DECL|ccc_save|struct|struct ccc_save {
+DECL|ccc_set|function|static int ccc_set(int argc, char **argv, char *val)
+DECL|ccc_store|struct|struct ccc_store {
 DECL|connected_cb|function|static u8_t connected_cb(const struct bt_gatt_attr *attr, void *user_data)
+DECL|count|member|size_t count;
+DECL|count|member|size_t count;
 DECL|data|member|const void *data;
 DECL|db|variable|db
 DECL|disconnected_cb|function|static u8_t disconnected_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|end_handle|member|u16_t end_handle;
 DECL|end|member|u16_t end;
 DECL|end|member|u16_t end;
+DECL|entry|member|struct ccc_store *entry;
 DECL|err|member|int err;
 DECL|find_next|function|static u8_t find_next(const struct bt_gatt_attr *attr, void *user_data)
 DECL|gap_appearance|variable|gap_appearance
@@ -81,6 +97,7 @@ DECL|gatt_write_ccc_rsp|function|static void gatt_write_ccc_rsp(struct bt_conn *
 DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value, bt_att_func_t func, struct bt_gatt_subscribe_params *params)
 DECL|gatt_write_rsp|function|static void gatt_write_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|get_service_handles|function|static u8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
+DECL|handle|member|u16_t handle;
 DECL|len|member|u16_t len;
 DECL|notify_cb|function|static u8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
@@ -105,6 +122,7 @@ DECL|sc_save|function|static void sc_save(struct bt_gatt_ccc_cfg *cfg, struct bt
 DECL|start_handle|member|u16_t start_handle;
 DECL|start|member|u16_t start;
 DECL|start|member|u16_t start;
+DECL|store|member|struct ccc_store store[CCC_STORE_MAX];
 DECL|subscriptions|variable|subscriptions
 DECL|type|member|u16_t type;
 DECL|update_range|function|static bool update_range(u16_t *start, u16_t *end, u16_t new_start, u16_t new_end)
@@ -113,4 +131,5 @@ DECL|uuid16|member|u16_t uuid16;
 DECL|uuid16|member|u16_t uuid16;
 DECL|uuid|member|u8_t uuid[16];
 DECL|value_handle|member|u16_t value_handle;
+DECL|value|member|u16_t value;
 DECL|work|member|struct k_delayed_work work;
