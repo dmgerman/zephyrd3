@@ -59,6 +59,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|announce_itv|member|s8_t announce_itv;
 DECL|clk_quality|member|struct gptp_clock_quality clk_quality;
 DECL|clock_accuracy|member|u8_t clock_accuracy;
@@ -72,6 +73,7 @@ DECL|gm_time_base_indicator|member|u16_t gm_time_base_indicator;
 DECL|gptp_announce|struct|struct gptp_announce {
 DECL|gptp_clock_quality|struct|struct gptp_clock_quality {
 DECL|gptp_data|function|static inline u8_t *gptp_data(struct net_pkt *pkt)
+DECL|gptp_follow_up_tlv_hdr|struct|struct gptp_follow_up_tlv_hdr {
 DECL|gptp_follow_up_tlv|struct|struct gptp_follow_up_tlv {
 DECL|gptp_follow_up|struct|struct gptp_follow_up {
 DECL|gptp_message_itv_req_tlv|struct|struct gptp_message_itv_req_tlv {
@@ -119,6 +121,7 @@ DECL|steps_removed|member|u16_t steps_removed;
 DECL|target_port_id|member|struct gptp_port_identity target_port_id;
 DECL|time_source|member|u8_t time_source;
 DECL|time_sync_itv|member|s8_t time_sync_itv;
+DECL|tlv_hdr|member|struct gptp_follow_up_tlv_hdr tlv_hdr;
 DECL|tlv|member|struct gptp_follow_up_tlv tlv;
 DECL|tlv|member|struct gptp_message_itv_req_tlv tlv;
 DECL|tlv|member|struct gptp_path_trace_tlv tlv;
