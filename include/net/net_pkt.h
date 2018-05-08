@@ -5,7 +5,7 @@ DECL|NET_PKT_SLAB_DEFINE|macro|NET_PKT_SLAB_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
 DECL|__NET_PKT_H__|macro|__NET_PKT_H__
 DECL|_reserved|member|int _reserved;
-DECL|_unused|member|u8_t _unused : 3;
+DECL|_unused|member|u8_t _unused : 1;
 DECL|appdatalen|member|u16_t appdatalen;
 DECL|appdata|member|u8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
