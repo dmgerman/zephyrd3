@@ -35,17 +35,18 @@ DECL|net_key_val|struct|struct net_key_val {
 DECL|net_set|function|static int net_set(int argc, char **argv, char *val)
 DECL|net_val|struct|struct net_val {
 DECL|old_iv|member|old_iv:1;
+DECL|pending_store|variable|pending_store
 DECL|primary_addr|member|u16_t primary_addr;
 DECL|rpl_alloc|function|static struct bt_mesh_rpl *rpl_alloc(u16_t src)
 DECL|rpl_find|function|static struct bt_mesh_rpl *rpl_find(u16_t src)
 DECL|rpl_set|function|static int rpl_set(int argc, char **argv, char *val)
-DECL|rpl_store_timeout|function|static void rpl_store_timeout(struct k_work *work)
-DECL|rpl_store|variable|rpl_store
 DECL|rpl_val|struct|struct rpl_val {
 DECL|seq_set|function|static int seq_set(int argc, char **argv, char *val)
 DECL|seq_val|struct|struct seq_val {
 DECL|seq|member|u32_t seq:24,
 DECL|settings|variable|settings
+DECL|store_pending_rpl|function|static void store_pending_rpl(void)
+DECL|store_pending|function|static void store_pending(struct k_work *work)
 DECL|store_rpl|function|static void store_rpl(struct bt_mesh_rpl *entry)
 DECL|subnet_init|function|static int subnet_init(struct bt_mesh_subnet *sub)
 DECL|updated|member|bool updated;
