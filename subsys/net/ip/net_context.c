@@ -29,6 +29,5 @@ DECL|net_context_set_option|function|int net_context_set_option(struct net_conte
 DECL|net_context_unref|function|int net_context_unref(struct net_context *context)
 DECL|net_context_update_recv_wnd|function|int net_context_update_recv_wnd(struct net_context *context,s32_t delta)
 DECL|recv_udp|function|static int recv_udp(struct net_context *context, net_context_recv_cb_t cb, s32_t timeout, void *user_data)
-DECL|send_data|function|static int send_data(struct net_context *context, struct net_pkt *pkt, net_context_send_cb_t cb, s32_t timeout, void *token,
 DECL|sendto|function|static int sendto(struct net_pkt *pkt, const struct sockaddr *dst_addr, socklen_t addrlen, net_context_send_cb_t cb, s32_t timeout,
 DECL|set_context_priority|function|static int set_context_priority(struct net_context *context,const void *value, size_t len)
