@@ -96,9 +96,10 @@ DECL|company|member|u16_t company;
 DECL|count|member|count:3; /**< Retransmissions left. */
 DECL|cred|member|cred:1, /**< Friendship Credentials Flag. */
 DECL|elem_count|member|size_t elem_count;
-DECL|elem|member|struct bt_mesh_elem *elem;
+DECL|elem_idx|member|u8_t elem_idx; /* Belongs to Nth element */
 DECL|elem|member|struct bt_mesh_elem *elem;
 DECL|end|member|void (*end)(int err, void *cb_data);
+DECL|flags|member|u16_t flags; /* Information about what has changed */
 DECL|func|member|void (*const func)(struct bt_mesh_model *model,
 DECL|groups|member|u16_t groups[CONFIG_BT_MESH_MODEL_GROUP_COUNT];
 DECL|id|member|const u16_t id;
@@ -107,6 +108,7 @@ DECL|keys|member|u16_t keys[CONFIG_BT_MESH_MODEL_KEY_COUNT];
 DECL|key|member|u16_t key; /**< Publish AppKey Index. */
 DECL|loc|member|const u16_t loc;
 DECL|min_len|member|const size_t min_len;
+DECL|mod_idx|member|u8_t mod_idx; /* Is the Nth model in the element */
 DECL|model_count|member|const u8_t model_count;
 DECL|models|member|struct bt_mesh_model * const models;
 DECL|mod|member|struct bt_mesh_model *mod;
