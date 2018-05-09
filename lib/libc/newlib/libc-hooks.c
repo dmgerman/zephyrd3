@@ -4,6 +4,7 @@ DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
+DECL|MAX_HEAP_SIZE|macro|MAX_HEAP_SIZE
 DECL|USED_RAM_END_ADDR|macro|USED_RAM_END_ADDR
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
 DECL|USED_RAM_SIZE|macro|USED_RAM_SIZE
@@ -29,4 +30,4 @@ DECL|_stdout_hook|variable|_stdout_hook
 DECL|_write|function|int _write(int fd, char *buf, int nbytes)
 DECL|heap_base|variable|heap_base
 DECL|heap_sz|variable|heap_sz
-DECL|newlib_mmu_prepare|function|static int newlib_mmu_prepare(struct device *unused)
+DECL|z_newlib_get_heap_bounds|function|void z_newlib_get_heap_bounds(void **base, size_t *size)
