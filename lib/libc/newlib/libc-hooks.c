@@ -29,3 +29,4 @@ DECL|_stdout_hook|variable|_stdout_hook
 DECL|_write|function|int _write(int fd, char *buf, int nbytes)
 DECL|heap_base|variable|heap_base
 DECL|heap_sz|variable|heap_sz
+DECL|newlib_mmu_prepare|function|static int newlib_mmu_prepare(struct device *unused)
