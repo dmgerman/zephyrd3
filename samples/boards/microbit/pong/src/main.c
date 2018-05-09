@@ -40,6 +40,7 @@ DECL|ended|variable|ended
 DECL|game_ended|function|static void game_ended(bool won)
 DECL|game_init|function|static void game_init(bool initiator)
 DECL|game_refresh|function|static void game_refresh(struct k_work *work)
+DECL|game_stack_dump|function|static void game_stack_dump(const struct k_thread *thread, void *user_data)
 DECL|main|function|void main(void)
 DECL|mode_choice|variable|mode_choice
 DECL|mode_selected|function|static void mode_selected(int val)
