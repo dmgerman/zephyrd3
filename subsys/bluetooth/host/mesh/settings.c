@@ -15,6 +15,7 @@ DECL|bt_mesh_settings_init|function|void bt_mesh_settings_init(void)
 DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *key)
 DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
 DECL|bt_mesh_store_mod_bind|function|void bt_mesh_store_mod_bind(struct bt_mesh_model *mod)
+DECL|bt_mesh_store_mod_sub|function|void bt_mesh_store_mod_sub(struct bt_mesh_model *mod)
 DECL|bt_mesh_store_net|function|void bt_mesh_store_net(void)
 DECL|bt_mesh_store_rpl|function|void bt_mesh_store_rpl(struct bt_mesh_rpl *entry)
 DECL|bt_mesh_store_seq|function|void bt_mesh_store_seq(void)
@@ -42,6 +43,7 @@ DECL|mesh_commit|function|static int mesh_commit(void)
 DECL|mesh_setting|struct|const struct mesh_setting {
 DECL|mesh_set|function|static int mesh_set(int argc, char **argv, char *val)
 DECL|mod_set_bind|function|static int mod_set_bind(struct bt_mesh_model *mod, char *val)
+DECL|mod_set_sub|function|static int mod_set_sub(struct bt_mesh_model *mod, char *val)
 DECL|mod_set|function|static int mod_set(bool vnd, int argc, char **argv, char *val)
 DECL|name|member|const char *name;
 DECL|net_idx|member|u16_t net_idx;
@@ -67,6 +69,7 @@ DECL|store_net_key|function|static void store_net_key(struct bt_mesh_subnet *sub
 DECL|store_pending_iv|function|static void store_pending_iv(void)
 DECL|store_pending_keys|function|static void store_pending_keys(void)
 DECL|store_pending_mod_bind|function|static void store_pending_mod_bind(struct bt_mesh_model *mod, bool vnd)
+DECL|store_pending_mod_sub|function|static void store_pending_mod_sub(struct bt_mesh_model *mod, bool vnd)
 DECL|store_pending_mod|function|static void store_pending_mod(struct bt_mesh_model *mod, struct bt_mesh_elem *elem, bool vnd, bool primary, void *user_data)
 DECL|store_pending_net|function|static void store_pending_net(void)
 DECL|store_pending_rpl|function|static void store_pending_rpl(void)

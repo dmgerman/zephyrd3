@@ -71,6 +71,7 @@ DECL|mod_pub_get|function|static void mod_pub_get(struct bt_mesh_model *model,st
 DECL|mod_pub_set|function|static void mod_pub_set(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_pub_va_set|function|static void mod_pub_va_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_pub_va_set|function|static void mod_pub_va_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|mod_reset|function|static void mod_reset(struct bt_mesh_model *mod, struct bt_mesh_elem *elem, bool vnd, bool primary, void *user_data)
 DECL|mod_sub_add|function|static void mod_sub_add(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_del_all|function|static void mod_sub_del_all(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_del|function|static void mod_sub_del(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
