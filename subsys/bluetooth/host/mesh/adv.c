@@ -13,6 +13,7 @@ DECL|adv_pool|variable|adv_pool
 DECL|adv_send_end|function|static inline void adv_send_end(int err, const struct bt_mesh_send_cb *cb,void *cb_data)
 DECL|adv_send_start|function|static inline void adv_send_start(u16_t duration, int err, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|adv_send|function|static inline void adv_send(struct net_buf *buf)
+DECL|adv_stack_dump|function|static void adv_stack_dump(const struct k_thread *thread, void *user_data)
 DECL|adv_thread_data|variable|adv_thread_data
 DECL|adv_thread|function|static void adv_thread(void *p1, void *p2, void *p3)
 DECL|adv_type|variable|adv_type

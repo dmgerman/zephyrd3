@@ -97,6 +97,7 @@ DECL|hci_le_set_phy|function|static int hci_le_set_phy(struct bt_conn *conn)
 DECL|hci_num_completed_packets|function|static void hci_num_completed_packets(struct net_buf *buf)
 DECL|hci_reset_complete|function|static void hci_reset_complete(struct net_buf *buf)
 DECL|hci_rx_thread|function|static void hci_rx_thread(void)
+DECL|hci_stack_dump|function|static void hci_stack_dump(const struct k_thread *thread, void *user_data)
 DECL|hci_tx_thread|function|static void hci_tx_thread(void *p1, void *p2, void *p3)
 DECL|hci_vs_init|function|static void hci_vs_init(void)
 DECL|id|member|u8_t id;
