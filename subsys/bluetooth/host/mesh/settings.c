@@ -19,7 +19,10 @@ DECL|bt_mesh_store_rpl|function|void bt_mesh_store_rpl(struct bt_mesh_rpl *entry
 DECL|bt_mesh_store_seq|function|void bt_mesh_store_seq(void)
 DECL|bt_mesh_store_subnet|function|void bt_mesh_store_subnet(struct bt_mesh_subnet *sub)
 DECL|clear_app_key|function|static void clear_app_key(u16_t app_idx)
+DECL|clear_iv|function|static void clear_iv(void)
 DECL|clear_net_key|function|static void clear_net_key(u16_t net_idx)
+DECL|clear_net|function|static void clear_net(void)
+DECL|clear_rpl|function|static void clear_rpl(void)
 DECL|clear|member|clear:1; /* 1 if key needs clearing, 0 if storing */
 DECL|dev_key|member|u8_t dev_key[16];
 DECL|func|member|int (*func)(int argc, char **argv, char *val);
