@@ -153,6 +153,7 @@ DECL|st|member|float32_value_t st;
 DECL|timestamp|member|s64_t timestamp;
 DECL|tkl|member|u8_t tkl;
 DECL|tkl|member|u8_t tkl;
+DECL|to_hex_digit|function|static u8_t to_hex_digit(u8_t digit)
 DECL|token|member|u8_t token[8];
 DECL|token|member|u8_t token[MAX_TOKEN_LEN];
 DECL|udp_receive|function|static void udp_receive(struct net_app_ctx *app_ctx, struct net_pkt *pkt,int status, void *user_data)
