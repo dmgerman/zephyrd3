@@ -6,5 +6,4 @@ DECL|_sw_isr_table|variable|_sw_isr_table
 DECL|handler_ptr|member|void *handler_ptr;
 DECL|int_list_header|struct|struct int_list_header {
 DECL|offset|member|u32_t offset;
-DECL|spurious_ptr|member|void *spurious_ptr;
 DECL|table_size|member|u32_t table_size;
