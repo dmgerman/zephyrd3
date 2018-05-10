@@ -66,7 +66,6 @@ DECL|ctx|member|struct bt_mesh_msg_ctx *ctx;
 DECL|ctx|member|struct bt_mesh_msg_ctx ctx;
 DECL|dev_key|member|u8_t dev_key[16];
 DECL|disable|member|disable:1, /* Disable LPN after clearing */
-DECL|dst|member|u16_t dst; /* Destination address */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|enc|member|u8_t enc[16]; /* EncKey */
 DECL|established|member|established:1, /* Friendship established */

@@ -119,6 +119,7 @@ DECL|period_start|member|u32_t period_start; /**< Start of the current period. *
 DECL|period|member|u8_t period; /**< Publish Period. */
 DECL|pid|member|u16_t pid;
 DECL|pub|member|struct bt_mesh_model_pub * const pub;
+DECL|recv_dst|member|u16_t recv_dst;
 DECL|recv_ttl|member|u8_t recv_ttl:7;
 DECL|retransmit|member|u8_t retransmit; /**< Retransmit Count & Interval Steps. */
 DECL|send_rel|member|u8_t send_rel:1;
