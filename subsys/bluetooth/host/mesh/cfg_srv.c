@@ -23,6 +23,7 @@ DECL|bt_mesh_cfg_srv_op|variable|bt_mesh_cfg_srv_op
 DECL|bt_mesh_default_ttl_get|function|u8_t bt_mesh_default_ttl_get(void)
 DECL|bt_mesh_friend_get|function|u8_t bt_mesh_friend_get(void)
 DECL|bt_mesh_gatt_proxy_get|function|u8_t bt_mesh_gatt_proxy_get(void)
+DECL|bt_mesh_hb_pub_get|function|struct bt_mesh_hb_pub *bt_mesh_hb_pub_get(void)
 DECL|bt_mesh_heartbeat|function|void bt_mesh_heartbeat(u16_t src, u16_t dst, u8_t hops, u16_t feat)
 DECL|bt_mesh_label_uuid_get|function|u8_t *bt_mesh_label_uuid_get(u16_t addr)
 DECL|bt_mesh_net_transmit_get|function|u8_t bt_mesh_net_transmit_get(void)

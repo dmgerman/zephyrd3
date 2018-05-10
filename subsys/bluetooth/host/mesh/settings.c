@@ -14,6 +14,7 @@ DECL|bt_mesh_clear_rpl|function|void bt_mesh_clear_rpl(void)
 DECL|bt_mesh_clear_subnet|function|void bt_mesh_clear_subnet(struct bt_mesh_subnet *sub)
 DECL|bt_mesh_settings_init|function|void bt_mesh_settings_init(void)
 DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *key)
+DECL|bt_mesh_store_hb_pub|function|void bt_mesh_store_hb_pub(void)
 DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
 DECL|bt_mesh_store_mod_bind|function|void bt_mesh_store_mod_bind(struct bt_mesh_model *mod)
 DECL|bt_mesh_store_mod_pub|function|void bt_mesh_store_mod_pub(struct bt_mesh_model *mod)
@@ -31,8 +32,13 @@ DECL|clear|member|clear:1; /* 1 if key needs clearing, 0 if storing */
 DECL|commit_mod|function|static void commit_mod(struct bt_mesh_model *mod, struct bt_mesh_elem *elem, bool vnd, bool primary, void *user_data)
 DECL|cred|member|cred:1;
 DECL|dev_key|member|u8_t dev_key[16];
+DECL|dst|member|u16_t dst;
 DECL|encode_mod_path|function|static void encode_mod_path(struct bt_mesh_model *mod, bool vnd, const char *key, char *path, size_t path_len)
+DECL|feat|member|u16_t feat;
 DECL|func|member|int (*func)(int argc, char **argv, char *val);
+DECL|hb_pub_set|function|static int hb_pub_set(int argc, char **argv, char *val)
+DECL|hb_pub_val|struct|struct hb_pub_val {
+DECL|indefinite|member|indefinite:1;
 DECL|iv_index|member|u32_t iv_index;
 DECL|iv_set|function|static int iv_set(int argc, char **argv, char *val)
 DECL|iv_update|member|bool iv_update;
@@ -53,6 +59,7 @@ DECL|mod_set_pub|function|static int mod_set_pub(struct bt_mesh_model *mod, char
 DECL|mod_set_sub|function|static int mod_set_sub(struct bt_mesh_model *mod, char *val)
 DECL|mod_set|function|static int mod_set(bool vnd, int argc, char **argv, char *val)
 DECL|name|member|const char *name;
+DECL|net_idx|member|u16_t net_idx:12,
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_set|function|static int net_key_set(int argc, char **argv, char *val)
 DECL|net_key_val|struct|struct net_key_val {
@@ -61,6 +68,7 @@ DECL|net_val|struct|struct net_val {
 DECL|old_iv|member|old_iv:1;
 DECL|pending_store|variable|pending_store
 DECL|period_div|member|u8_t period_div:4,
+DECL|period|member|u8_t period;
 DECL|period|member|u8_t period;
 DECL|primary_addr|member|u16_t primary_addr;
 DECL|retransmit|member|u8_t retransmit;
@@ -76,6 +84,7 @@ DECL|settings|variable|settings
 DECL|sig_mod_set|function|static int sig_mod_set(int argc, char **argv, char *val)
 DECL|store_app_key|function|static void store_app_key(struct bt_mesh_app_key *app)
 DECL|store_net_key|function|static void store_net_key(struct bt_mesh_subnet *sub)
+DECL|store_pending_hb_pub|function|static void store_pending_hb_pub(void)
 DECL|store_pending_iv|function|static void store_pending_iv(void)
 DECL|store_pending_keys|function|static void store_pending_keys(void)
 DECL|store_pending_mod_bind|function|static void store_pending_mod_bind(struct bt_mesh_model *mod, bool vnd)
@@ -88,6 +97,7 @@ DECL|store_pending_seq|function|static void store_pending_seq(void)
 DECL|store_pending|function|static void store_pending(struct k_work *work)
 DECL|store_rpl|function|static void store_rpl(struct bt_mesh_rpl *entry)
 DECL|subnet_init|function|static int subnet_init(struct bt_mesh_subnet *sub)
+DECL|ttl|member|u8_t ttl;
 DECL|ttl|member|u8_t ttl;
 DECL|updated|member|bool updated;
 DECL|valid|member|valid:1, /* 1 if this entry is valid, 0 if not */
