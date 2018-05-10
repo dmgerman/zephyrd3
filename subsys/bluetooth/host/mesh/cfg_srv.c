@@ -17,6 +17,7 @@ DECL|beacon_set|function|static void beacon_set(struct bt_mesh_model *model, str
 DECL|bt_mesh_app_key_alloc|function|struct bt_mesh_app_key *bt_mesh_app_key_alloc(u16_t app_idx)
 DECL|bt_mesh_app_key_del|function|void bt_mesh_app_key_del(struct bt_mesh_app_key *key)
 DECL|bt_mesh_beacon_get|function|u8_t bt_mesh_beacon_get(void)
+DECL|bt_mesh_cfg_get|function|struct bt_mesh_cfg_srv *bt_mesh_cfg_get(void)
 DECL|bt_mesh_cfg_reset|function|void bt_mesh_cfg_reset(void)
 DECL|bt_mesh_cfg_srv_init|function|int bt_mesh_cfg_srv_init(struct bt_mesh_model *model, bool primary)
 DECL|bt_mesh_cfg_srv_op|variable|bt_mesh_cfg_srv_op
