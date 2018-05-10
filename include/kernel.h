@@ -146,6 +146,7 @@ DECL|_POLL_TYPE_SIGNAL|enumerator|_POLL_TYPE_SIGNAL,
 DECL|_THREAD_INITIALIZER|macro|_THREAD_INITIALIZER
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
+DECL|_WAIT_Q_INIT|macro|_WAIT_Q_INIT
 DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
@@ -193,7 +194,7 @@ DECL|_thread_stack_info|struct|struct _thread_stack_info {
 DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
-DECL|_wait_q_t|typedef|typedef sys_dlist_t _wait_q_t;
+DECL|_wait_q_t|typedef|} _wait_q_t;
 DECL|active|member|u8_t active;
 DECL|arch|member|struct _thread_arch arch;
 DECL|attr|member|k_mem_partition_attr_t attr;
@@ -422,6 +423,7 @@ DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|sys_dlist_t *wait_q;
 DECL|wait_q|member|} wait_q;
+DECL|waitq|member|sys_dlist_t waitq;
 DECL|work_item|member|struct k_work work_item;
 DECL|work_q|member|struct k_work_q *work_q;
 DECL|work|member|struct k_work work;
