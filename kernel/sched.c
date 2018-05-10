@@ -29,6 +29,7 @@ DECL|_pend_thread|function|void _pend_thread(struct k_thread *thread, _wait_q_t 
 DECL|_remove_thread_from_ready_q|function|void _remove_thread_from_ready_q(struct k_thread *thread)
 DECL|_reschedule|function|int _reschedule(int key)
 DECL|_thread_priority_set|function|void _thread_priority_set(struct k_thread *thread, int prio)
+DECL|_unpend_all|function|void _unpend_all(_wait_q_t *waitq)
 DECL|_unpend_first_thread|function|struct k_thread *_unpend_first_thread(_wait_q_t *wait_q)
 DECL|_unpend_thread_no_timeout|function|void _unpend_thread_no_timeout(struct k_thread *thread)
 DECL|_unpend_thread|function|void _unpend_thread(struct k_thread *thread)
