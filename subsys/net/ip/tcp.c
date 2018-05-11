@@ -11,9 +11,6 @@ DECL|NET_IP_MAX_PACKET|macro|NET_IP_MAX_PACKET
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_MAX_TCP_CONTEXT|macro|NET_MAX_TCP_CONTEXT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|TIMEWAIT_TIMEOUT|macro|TIMEWAIT_TIMEOUT
-DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
-DECL|TIME_WAIT_MS|macro|TIME_WAIT_MS
 DECL|abort_connection|function|static void abort_connection(struct net_tcp *tcp)
 DECL|ack_timer_cancel|function|static void ack_timer_cancel(struct net_tcp *tcp)
 DECL|ack_timer|member|struct k_delayed_work ack_timer;
