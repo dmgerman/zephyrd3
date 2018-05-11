@@ -1,5 +1,6 @@
 DECL|CHECK|macro|CHECK
 DECL|MAX_NODES|macro|MAX_NODES
+DECL|_check_tree|function|void _check_tree(int size, int use_foreach)
 DECL|check_rbnode|function|void check_rbnode(struct rbnode *node, int blacks_above)
 DECL|check_rb|function|void check_rb(void)
 DECL|check_tree|function|void check_tree(int size)
