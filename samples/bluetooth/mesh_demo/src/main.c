@@ -28,7 +28,6 @@ DECL|net_idx|variable|net_idx
 DECL|net_key|variable|net_key
 DECL|prov|variable|prov
 DECL|root_models|variable|root_models
-DECL|seq|variable|seq
 DECL|target|variable|target
 DECL|tune_sem|variable|tune_sem
 DECL|tune_str|variable|tune_str
