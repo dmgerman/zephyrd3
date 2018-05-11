@@ -69,7 +69,6 @@ DECL|reg_faults|variable|reg_faults
 DECL|reset|function|static void reset(u8_t *data, u16_t len)
 DECL|root_models|variable|root_models
 DECL|rpl_clear|function|static void rpl_clear(u8_t *data, u16_t len)
-DECL|seq_num|variable|seq_num
 DECL|show_faults|function|void show_faults(u8_t test_id, u16_t cid, u8_t *faults, size_t fault_count)
 DECL|static_auth|variable|static_auth
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)
