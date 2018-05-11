@@ -49,6 +49,7 @@ DECL|_unpend_first_thread|function|struct k_thread *_unpend_first_thread(_wait_q
 DECL|_unpend_thread_no_timeout|function|void _unpend_thread_no_timeout(struct k_thread *thread)
 DECL|_unpend_thread|function|void _unpend_thread(struct k_thread *thread)
 DECL|_update_time_slice_before_swap|function|void _update_time_slice_before_swap(void)
+DECL|is_metairq|function|static inline int is_metairq(struct k_thread *thread)
 DECL|k_current_get|variable|k_current_get
 DECL|k_is_preempt_thread|variable|k_is_preempt_thread
 DECL|k_sched_lock|function|void k_sched_lock(void)
