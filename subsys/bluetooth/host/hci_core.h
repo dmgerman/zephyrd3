@@ -54,7 +54,6 @@ DECL|random_addr|member|bt_addr_le_t random_addr;
 DECL|rl_entries|member|u8_t rl_entries;
 DECL|rl_size|member|u8_t rl_size;
 DECL|rpa_update|member|struct k_delayed_work rpa_update;
-DECL|rx_prio_queue|member|struct k_fifo rx_prio_queue;
 DECL|rx_queue|member|struct k_fifo rx_queue;
 DECL|sent_cmd|member|struct net_buf *sent_cmd;
 DECL|states|member|u64_t states;
