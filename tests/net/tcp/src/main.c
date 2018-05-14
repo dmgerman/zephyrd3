@@ -28,10 +28,8 @@ DECL|get_recv_wnd|function|static inline u32_t get_recv_wnd(struct net_tcp *tcp)
 DECL|handle|member|struct net_conn_handle *handle;
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
 DECL|ipv6_hop_by_hop_ext_hdr|variable|ipv6_hop_by_hop_ext_hdr
-DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|u16_t local_port;
-DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|main|function|void main(void)
 DECL|my_v4_addr|variable|my_v4_addr
 DECL|my_v4_inaddr|variable|my_v4_inaddr
@@ -42,7 +40,6 @@ DECL|net_tcp_context_data_peer|variable|net_tcp_context_data_peer
 DECL|net_tcp_context_data|variable|net_tcp_context_data
 DECL|net_tcp_context|struct|struct net_tcp_context {
 DECL|net_tcp_dev_init|function|int net_tcp_dev_init(struct device *dev)
-DECL|net_tcp_get_mac|function|static u8_t *net_tcp_get_mac(struct device *dev)
 DECL|net_tcp_if_api_peer|variable|net_tcp_if_api_peer
 DECL|net_tcp_if_api|variable|net_tcp_if_api
 DECL|net_tcp_iface_init|function|static void net_tcp_iface_init(struct net_if *iface)
