@@ -12,5 +12,7 @@ DECL|ecm_function|variable|ecm_function
 DECL|ecm_int_in|function|static void ecm_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|ecm_read_cb|function|static void ecm_read_cb(u8_t ep, int size, void *priv)
 DECL|ecm_send|function|static int ecm_send(struct net_pkt *pkt)
+DECL|ecm_status_cb|function|static void ecm_status_cb(enum usb_dc_status_code status, u8_t *param)
+DECL|ecm_status_interface|function|static inline void ecm_status_interface(u8_t *iface)
 DECL|rx_buf|variable|rx_buf
 DECL|tx_buf|variable|tx_buf
