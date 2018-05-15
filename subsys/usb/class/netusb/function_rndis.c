@@ -54,6 +54,7 @@ DECL|rndis_send_media_status|function|static int rndis_send_media_status(u32_t m
 DECL|rndis_send_zero_frame|function|static void rndis_send_zero_frame(void)
 DECL|rndis_send|function|static int rndis_send(struct net_pkt *pkt)
 DECL|rndis_set_handle|function|static int rndis_set_handle(u8_t *data, u32_t len)
+DECL|rndis_status_cb|function|static void rndis_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|rndis_tx_queue|variable|rndis_tx_queue
 DECL|rndis|variable|rndis
 DECL|rx_err|member|u32_t rx_err;
