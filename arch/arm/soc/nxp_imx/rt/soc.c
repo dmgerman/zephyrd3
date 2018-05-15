@@ -1,4 +1,3 @@
-DECL|BOARD_BootClockGate|function|static void BOARD_BootClockGate(void)
 DECL|armPllConfig|variable|armPllConfig
 DECL|clkInit|function|static ALWAYS_INLINE void clkInit(void)
 DECL|imxrt_init|function|static int imxrt_init(struct device *arg)
