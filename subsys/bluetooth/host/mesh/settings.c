@@ -17,7 +17,7 @@ DECL|bt_mesh_settings_init|function|void bt_mesh_settings_init(void)
 DECL|bt_mesh_store_app_key|function|void bt_mesh_store_app_key(struct bt_mesh_app_key *key)
 DECL|bt_mesh_store_cfg|function|void bt_mesh_store_cfg(void)
 DECL|bt_mesh_store_hb_pub|function|void bt_mesh_store_hb_pub(void)
-DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(void)
+DECL|bt_mesh_store_iv|function|void bt_mesh_store_iv(bool only_duration)
 DECL|bt_mesh_store_mod_bind|function|void bt_mesh_store_mod_bind(struct bt_mesh_model *mod)
 DECL|bt_mesh_store_mod_pub|function|void bt_mesh_store_mod_pub(struct bt_mesh_model *mod)
 DECL|bt_mesh_store_mod_sub|function|void bt_mesh_store_mod_sub(struct bt_mesh_model *mod)
@@ -48,9 +48,10 @@ DECL|gatt_proxy|member|u8_t gatt_proxy;
 DECL|hb_pub_set|function|static int hb_pub_set(int argc, char **argv, char *val)
 DECL|hb_pub_val|struct|struct hb_pub_val {
 DECL|indefinite|member|indefinite:1;
+DECL|iv_duration|member|iv_duration:7;
 DECL|iv_index|member|u32_t iv_index;
 DECL|iv_set|function|static int iv_set(int argc, char **argv, char *val)
-DECL|iv_update|member|bool iv_update;
+DECL|iv_update|member|u8_t iv_update:1,
 DECL|iv_val|struct|struct iv_val {
 DECL|key_idx|member|u16_t key_idx:12, /* AppKey or NetKey Index */
 DECL|key_update_find|function|static struct key_update *key_update_find(bool app_key, u16_t key_idx, struct key_update **free_slot)

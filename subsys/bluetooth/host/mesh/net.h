@@ -1,6 +1,9 @@
 DECL|BT_MESH_CFG_PENDING|enumerator|BT_MESH_CFG_PENDING,
 DECL|BT_MESH_FLAG_COUNT|enumerator|BT_MESH_FLAG_COUNT,
 DECL|BT_MESH_HB_PUB_PENDING|enumerator|BT_MESH_HB_PUB_PENDING,
+DECL|BT_MESH_IVU_HOURS|macro|BT_MESH_IVU_HOURS
+DECL|BT_MESH_IVU_MIN_HOURS|macro|BT_MESH_IVU_MIN_HOURS
+DECL|BT_MESH_IVU_TIMEOUT|macro|BT_MESH_IVU_TIMEOUT
 DECL|BT_MESH_IV_PENDING|enumerator|BT_MESH_IV_PENDING,
 DECL|BT_MESH_IV_UPDATE|macro|BT_MESH_IV_UPDATE
 DECL|BT_MESH_KEYS_PENDING|enumerator|BT_MESH_KEYS_PENDING,
@@ -28,9 +31,6 @@ DECL|BT_MESH_NET_IF_PROXY_CFG|enumerator|BT_MESH_NET_IF_PROXY_CFG,
 DECL|BT_MESH_NET_IF_PROXY|enumerator|BT_MESH_NET_IF_PROXY,
 DECL|BT_MESH_NET_IVI_RX|macro|BT_MESH_NET_IVI_RX
 DECL|BT_MESH_NET_IVI_TX|macro|BT_MESH_NET_IVI_TX
-DECL|BT_MESH_NET_IVU_TIMEOUT|macro|BT_MESH_NET_IVU_TIMEOUT
-DECL|BT_MESH_NET_IVU_TIMEOUT|macro|BT_MESH_NET_IVU_TIMEOUT
-DECL|BT_MESH_NET_IVU_UNKNOWN|macro|BT_MESH_NET_IVU_UNKNOWN
 DECL|BT_MESH_NET_PENDING|enumerator|BT_MESH_NET_PENDING,
 DECL|BT_MESH_RPL_PENDING|enumerator|BT_MESH_RPL_PENDING,
 DECL|BT_MESH_SEQ_PENDING|enumerator|BT_MESH_SEQ_PENDING,
@@ -95,14 +95,15 @@ DECL|identity|member|u8_t identity[16]; /* IdentityKey */
 DECL|id|member|u8_t id;
 DECL|iv_index|member|u32_t iv_index; /* Current IV Index */
 DECL|iv_update|member|iv_update:1, /* 1 if IV Update in Progress */
-DECL|ivu_complete|member|struct k_delayed_work ivu_complete;
+DECL|ivu_duration|member|u8_t ivu_duration;
 DECL|ivu_initiator|member|ivu_initiator:1, /* IV Update initiated by us */
 DECL|ivu_test|member|ivu_test:1, /* IV Update test mode */
+DECL|ivu_timer|member|struct k_delayed_work ivu_timer;
+DECL|ivu_unknown|member|ivu_unknown:1, /* Set to 1 right after provisioning */
 DECL|keys|member|} keys[2];
 DECL|keys|member|} keys[2];
 DECL|kr_flag|member|bool kr_flag; /* Key Refresh Flag */
 DECL|kr_phase|member|u8_t kr_phase; /* Key Refresh Phase */
-DECL|last_update|member|s64_t last_update; /* Time since last IV Update change */
 DECL|last|member|struct net_buf *last;
 DECL|local_match|member|local_match:1, /* Matched a local element */
 DECL|local_queue|member|sys_slist_t local_queue;

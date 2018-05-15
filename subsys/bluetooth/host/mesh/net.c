@@ -49,7 +49,7 @@ DECL|friend_cred_set|function|int friend_cred_set(struct friend_cred *cred, u8_t
 DECL|friend_cred_update|function|int friend_cred_update(struct bt_mesh_subnet *sub)
 DECL|friend_cred|variable|friend_cred
 DECL|friend_decrypt|function|static int friend_decrypt(struct bt_mesh_subnet *sub, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
-DECL|ivu_complete|function|static void ivu_complete(struct k_work *work)
+DECL|ivu_refresh|function|static void ivu_refresh(struct k_work *work)
 DECL|msg_cache_match|function|static bool msg_cache_match(struct bt_mesh_net_rx *rx, struct net_buf_simple *pdu)
 DECL|msg_cache_next|variable|msg_cache_next
 DECL|msg_cache|variable|msg_cache
@@ -57,4 +57,3 @@ DECL|msg_hash|function|static u64_t msg_hash(struct bt_mesh_net_rx *rx, struct n
 DECL|net_decrypt|function|static int net_decrypt(struct bt_mesh_subnet *sub, const u8_t *enc, const u8_t *priv, const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|net_find_and_decrypt|function|static bool net_find_and_decrypt(const u8_t *data, size_t data_len, struct bt_mesh_net_rx *rx, struct net_buf_simple *buf)
 DECL|relay_to_adv|function|static bool relay_to_adv(enum bt_mesh_net_if net_if)
-DECL|update_ivu_timestamp|function|static void update_ivu_timestamp(void)
