@@ -12,3 +12,4 @@ DECL|netusb_function|struct|struct netusb_function {
 DECL|num_ep|member|int num_ep;
 DECL|rndis_function|variable|rndis_function
 DECL|send_pkt|member|int (*send_pkt)(struct net_pkt *pkt);
+DECL|status_cb|member|void (*status_cb)(enum usb_dc_status_code status, u8_t *param);
