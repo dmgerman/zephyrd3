@@ -12,7 +12,6 @@ DECL|_is_prio1_lower_than_or_equal_to_prio2|function|static inline int _is_prio1
 DECL|_is_prio_higher_or_equal|function|static inline int _is_prio_higher_or_equal(int prio1, int prio2)
 DECL|_is_prio_higher|function|static inline int _is_prio_higher(int prio, int test_prio)
 DECL|_is_prio_lower_or_equal|function|static inline int _is_prio_lower_or_equal(int prio1, int prio2)
-DECL|_is_t1_higher_prio_than_t2|function|static inline int _is_t1_higher_prio_than_t2(struct k_thread *t1, struct k_thread *t2)
 DECL|_is_thread_pending|function|static inline int _is_thread_pending(struct k_thread *thread)
 DECL|_is_thread_polling|function|static inline int _is_thread_polling(struct k_thread *thread)
 DECL|_is_thread_prevented_from_running|function|static inline int _is_thread_prevented_from_running(struct k_thread *thread)

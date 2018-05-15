@@ -363,6 +363,7 @@ DECL|poll_events|member|sys_dlist_t poll_events;
 DECL|poller|member|struct _poller *poller;
 DECL|pool|member|u32_t pool : 8;
 DECL|preempt|member|u16_t preempt;
+DECL|prio_deadline|member|int prio_deadline;
 DECL|prio|member|s8_t prio;
 DECL|qnode_dlist|member|sys_dlist_t qnode_dlist;
 DECL|qnode_rb|member|struct rbnode qnode_rb;

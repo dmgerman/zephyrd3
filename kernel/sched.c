@@ -1,5 +1,6 @@
 DECL|LOCKED|macro|LOCKED
 DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_sleep, duration)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_thread_deadline_set, thread_p, deadline)
 DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_thread_priority_set, thread_p, prio)
 DECL|_add_thread_to_ready_q|function|void _add_thread_to_ready_q(struct k_thread *thread)
 DECL|_find_first_thread_to_unpend|function|struct k_thread *_find_first_thread_to_unpend(_wait_q_t *wait_q, struct k_thread *from)
@@ -8,12 +9,14 @@ DECL|_get_next_switch_handle|function|void *_get_next_switch_handle(void *interr
 DECL|_impl_k_current_get|function|k_tid_t _impl_k_current_get(void)
 DECL|_impl_k_is_preempt_thread|function|int _impl_k_is_preempt_thread(void)
 DECL|_impl_k_sleep|function|void _impl_k_sleep(s32_t duration)
+DECL|_impl_k_thread_deadline_set|function|void _impl_k_thread_deadline_set(k_tid_t tid, int deadline)
 DECL|_impl_k_thread_priority_get|function|int _impl_k_thread_priority_get(k_tid_t thread)
 DECL|_impl_k_thread_priority_set|function|void _impl_k_thread_priority_set(k_tid_t tid, int prio)
 DECL|_impl_k_wakeup|function|void _impl_k_wakeup(k_tid_t thread)
 DECL|_impl_k_yield|function|void _impl_k_yield(void)
 DECL|_is_idle|function|static inline int _is_idle(struct k_thread *thread)
 DECL|_is_preempt|function|static inline int _is_preempt(struct k_thread *thread)
+DECL|_is_t1_higher_prio_than_t2|function|int _is_t1_higher_prio_than_t2(struct k_thread *t1, struct k_thread *t2)
 DECL|_is_thread_dummy|function|static inline int _is_thread_dummy(struct k_thread *thread)
 DECL|_is_thread_time_slicing|function|int _is_thread_time_slicing(struct k_thread *thread)
 DECL|_kernel|variable|_kernel
