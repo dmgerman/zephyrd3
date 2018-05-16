@@ -4,6 +4,8 @@ DECL|_check_tree|function|void _check_tree(int size, int use_foreach)
 DECL|check_rbnode|function|void check_rbnode(struct rbnode *node, int blacks_above)
 DECL|check_rb|function|void check_rb(void)
 DECL|check_tree|function|void check_tree(int size)
+DECL|checked_insert|function|void checked_insert(struct rbtree *tree, struct rbnode *node)
+DECL|current_insertee|variable|current_insertee
 DECL|get_node_mask|function|int get_node_mask(int node)
 DECL|last_black_height|variable|last_black_height
 DECL|next_rand_mod|function|static unsigned int next_rand_mod(unsigned int mod)
