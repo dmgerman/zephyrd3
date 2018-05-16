@@ -3,6 +3,8 @@ DECL|ETHERNET_CONFIG_TYPE_AUTO_NEG|enumerator|ETHERNET_CONFIG_TYPE_AUTO_NEG,
 DECL|ETHERNET_CONFIG_TYPE_DUPLEX|enumerator|ETHERNET_CONFIG_TYPE_DUPLEX,
 DECL|ETHERNET_CONFIG_TYPE_LINK|enumerator|ETHERNET_CONFIG_TYPE_LINK,
 DECL|ETHERNET_CONFIG_TYPE_MAC_ADDRESS|enumerator|ETHERNET_CONFIG_TYPE_MAC_ADDRESS,
+DECL|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH|enumerator|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH,
+DECL|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE|enumerator|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
 DECL|ETHERNET_HW_RX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_RX_CHKSUM_OFFLOAD = BIT(1),
 DECL|ETHERNET_HW_TX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_TX_CHKSUM_OFFLOAD = BIT(0),
@@ -12,6 +14,7 @@ DECL|ETHERNET_LINK_1000BASE_T|enumerator|ETHERNET_LINK_1000BASE_T = BIT(6),
 DECL|ETHERNET_LINK_100BASE_T|enumerator|ETHERNET_LINK_100BASE_T = BIT(5),
 DECL|ETHERNET_LINK_10BASE_T|enumerator|ETHERNET_LINK_10BASE_T = BIT(4),
 DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
+DECL|ETHERNET_QAV|enumerator|ETHERNET_QAV = BIT(9),
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|NET_ETH_HDR|macro|NET_ETH_HDR
@@ -29,6 +32,7 @@ DECL|__packed|variable|__packed
 DECL|addr|member|u8_t addr[6];
 DECL|auto_negotiation|member|bool auto_negotiation;
 DECL|carrier_mgmt|member|} carrier_mgmt;
+DECL|delta_bandwidth|member|unsigned int delta_bandwidth;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|ethernet_api|struct|struct ethernet_api {
@@ -36,10 +40,12 @@ DECL|ethernet_config_type|enum|enum ethernet_config_type {
 DECL|ethernet_config|struct|struct ethernet_config {
 DECL|ethernet_context|struct|struct ethernet_context {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
+DECL|ethernet_qav_queue_param|struct|struct ethernet_qav_queue_param {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
 DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *dev);
+DECL|idle_slope|member|unsigned int idle_slope;
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
@@ -63,6 +69,8 @@ DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
 DECL|port|member|int port;
+DECL|qav_queue_param|member|struct ethernet_qav_queue_param qav_queue_param;
+DECL|queue_id|member|int queue_id;
 DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
