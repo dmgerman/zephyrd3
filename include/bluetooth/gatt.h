@@ -51,7 +51,7 @@ DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
 DECL|_req|member|struct bt_att_req _req;
-DECL|attr_count|member|u16_t attr_count;
+DECL|attr_count|member|size_t attr_count;
 DECL|attr_handle|member|u16_t attr_handle;
 DECL|attrs|member|struct bt_gatt_attr *attrs;
 DECL|attr|member|const struct bt_gatt_attr *attr;
