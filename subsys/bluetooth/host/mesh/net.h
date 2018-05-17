@@ -99,7 +99,6 @@ DECL|ivu_duration|member|u8_t ivu_duration;
 DECL|ivu_initiator|member|ivu_initiator:1, /* IV Update initiated by us */
 DECL|ivu_test|member|ivu_test:1, /* IV Update test mode */
 DECL|ivu_timer|member|struct k_delayed_work ivu_timer;
-DECL|ivu_unknown|member|ivu_unknown:1, /* Set to 1 right after provisioning */
 DECL|keys|member|} keys[2];
 DECL|keys|member|} keys[2];
 DECL|kr_flag|member|bool kr_flag; /* Key Refresh Flag */
