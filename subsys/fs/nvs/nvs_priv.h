@@ -9,8 +9,6 @@ DECL|__NVS_PRIV_H_|macro|__NVS_PRIV_H_
 DECL|_nvs_data_hdr|struct|struct _nvs_data_hdr {
 DECL|_nvs_data_slt|struct|struct _nvs_data_slt {
 DECL|_nvs_sector_hdr|struct|struct _nvs_sector_hdr {
-DECL|_pad|member|u16_t _pad;
-DECL|_pad|member|u16_t _pad;
 DECL|crc16|member|u16_t crc16;
 DECL|data_addr|member|off_t data_addr; /* address in flash to write data */
 DECL|fd_id|member|u16_t fd_id;
