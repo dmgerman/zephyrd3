@@ -1,3 +1,5 @@
+DECL|I2S_MNVAL_MASK|macro|I2S_MNVAL_MASK
+DECL|I2S_MNVAL|macro|I2S_MNVAL
 DECL|SSCR0_ACS|macro|SSCR0_ACS
 DECL|SSCR0_DSIZE|macro|SSCR0_DSIZE
 DECL|SSCR0_DSS_MASK|macro|SSCR0_DSS_MASK
@@ -73,7 +75,10 @@ DECL|SSSR_TNF|macro|SSSR_TNF
 DECL|SSTSA_TTSA|macro|SSTSA_TTSA
 DECL|SSTSA_TXEN|macro|SSTSA_TXEN
 DECL|_I2S_CAVS_H_|macro|_I2S_CAVS_H_
+DECL|i2s_cavs_mn_div|struct|struct i2s_cavs_mn_div {
 DECL|i2s_cavs_ssp|struct|struct i2s_cavs_ssp {
+DECL|mval|member|u32_t mval; /* 0x00 - M value */
+DECL|nval|member|u32_t nval; /* 0x04 - N value */
 DECL|reserved0|member|u32_t reserved0[5];
 DECL|reserved1|member|u32_t reserved1;
 DECL|ssc0|member|u32_t ssc0; /* 0x00 - Control0 */

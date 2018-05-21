@@ -23,6 +23,7 @@ DECL|i2s1_cavs_config|variable|i2s1_cavs_config
 DECL|i2s1_cavs_data|variable|i2s1_cavs_data
 DECL|i2s1_cavs_initialize|function|static int i2s1_cavs_initialize(struct device *dev)
 DECL|i2s1_irq_config|function|static void i2s1_irq_config(void)
+DECL|i2s1_ring_buf|variable|i2s1_ring_buf
 DECL|i2s_cavs_configure|function|static int i2s_cavs_configure(struct device *dev, enum i2s_dir dir, struct i2s_config *i2s_cfg)
 DECL|i2s_cavs_config|struct|struct i2s_cavs_config {
 DECL|i2s_cavs_dev_data|struct|struct i2s_cavs_dev_data {
@@ -37,6 +38,7 @@ DECL|len|member|u16_t len;
 DECL|mem_block_queue|member|struct ring_buf mem_block_queue;
 DECL|mem_block|member|void *mem_block;
 DECL|mem_block|member|void *mem_block;
+DECL|mn_regs|member|struct i2s_cavs_mn_div *mn_regs;
 DECL|modulo_inc|function|static inline u16_t modulo_inc(u16_t val, u16_t max)
 DECL|queue_drop|member|void (*queue_drop)(struct stream *);
 DECL|queue_get|function|static int queue_get(struct ring_buf *rb, u8_t mode, void **mem_block,size_t *size)
@@ -48,12 +50,11 @@ DECL|sem|member|struct k_sem sem;
 DECL|size|member|size_t size;
 DECL|start_dma|function|static int start_dma(struct device *dev_dma, u32_t channel, struct dma_config *cfg, void *src, void *dst, u32_t blk_size)
 DECL|state|member|s32_t state;
-DECL|stream_disable|member|void (*stream_disable)(struct stream *, struct i2s_cavs_ssp *const,
-DECL|stream_start|member|int (*stream_start)(struct stream *, struct i2s_cavs_ssp *const,
+DECL|stream_disable|member|void (*stream_disable)(struct stream *,
+DECL|stream_start|member|int (*stream_start)(struct stream *,
 DECL|stream|struct|struct stream {
 DECL|tail|member|u16_t tail;
-DECL|tx_0_ring_buf|variable|tx_0_ring_buf
 DECL|tx_queue_drop|function|static void tx_queue_drop(struct stream *strm)
-DECL|tx_stream_disable|function|static void tx_stream_disable(struct stream *strm, struct i2s_cavs_ssp *const ssp, struct device *dev_dma)
-DECL|tx_stream_start|function|static int tx_stream_start(struct stream *strm, struct i2s_cavs_ssp *const ssp, struct device *dev_dma)
+DECL|tx_stream_disable|function|static void tx_stream_disable(struct stream *strm, volatile struct i2s_cavs_ssp *const ssp, struct device *dev_dma)
+DECL|tx_stream_start|function|static int tx_stream_start(struct stream *strm, volatile struct i2s_cavs_ssp *const ssp, struct device *dev_dma)
 DECL|tx|member|struct stream tx;
