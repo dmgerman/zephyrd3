@@ -14,6 +14,7 @@ DECL|nvs_append_close|function|int nvs_append_close(struct nvs_fs *fs, const str
 DECL|nvs_append|function|int nvs_append(struct nvs_fs *fs, struct nvs_entry *entry)
 DECL|nvs_check_crc|function|int nvs_check_crc(struct nvs_fs *fs, struct nvs_entry *entry)
 DECL|nvs_clear|function|int nvs_clear(struct nvs_fs *fs)
+DECL|nvs_compute_crc|function|int nvs_compute_crc(struct nvs_fs *fs, const struct nvs_entry *entry, u16_t *crc16)
 DECL|nvs_delete|function|int nvs_delete(struct nvs_fs *fs, u16_t id)
 DECL|nvs_flash_read|function|int nvs_flash_read(struct nvs_fs *fs, off_t offset, void *data, size_t len)
 DECL|nvs_flash_write|function|int nvs_flash_write(struct nvs_fs *fs, off_t offset, const void *data,size_t len)
