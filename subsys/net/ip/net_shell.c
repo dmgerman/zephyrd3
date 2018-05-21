@@ -7,6 +7,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|TCP_CONNECT_TIMEOUT|macro|TCP_CONNECT_TIMEOUT
 DECL|TCP_TIMEOUT|macro|TCP_TIMEOUT
+DECL|USCALED_NS_TO_NS|macro|USCALED_NS_TO_NS
 DECL|_handle_ipv4_echo_reply|function|static enum net_verdict _handle_ipv4_echo_reply(struct net_pkt *pkt)
 DECL|_handle_ipv6_echo_reply|function|static enum net_verdict _handle_ipv6_echo_reply(struct net_pkt *pkt)
 DECL|_ping_ipv4|function|static int _ping_ipv4(char *host)
@@ -87,6 +88,7 @@ DECL|pss_send2str|function|static const char *pss_send2str(enum gptp_pss_send_st
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
 DECL|route_mcast_cb|function|static void route_mcast_cb(struct net_route_entry_mcast *entry, void *user_data)
 DECL|rpl_parent|function|static void rpl_parent(struct net_rpl_parent *parent, void *user_data)
+DECL|selected_role_str|function|static const char *selected_role_str(int port)
 DECL|site_sync2str|function|static const char *site_sync2str(enum gptp_site_sync_sync_states state)
 DECL|slab_pool_found_already|function|static bool slab_pool_found_already(struct ctx_info *info, struct k_mem_slab *slab, struct net_buf_pool *pool)
 DECL|sync_rcv2str|function|static const char *sync_rcv2str(enum gptp_sync_rcv_states state)
