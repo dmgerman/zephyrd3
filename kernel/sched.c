@@ -59,4 +59,4 @@ DECL|next_up|function|static struct k_thread *next_up(void)
 DECL|pended_on|function|static _wait_q_t *pended_on(struct k_thread *thread)
 DECL|pend|function|static void pend(struct k_thread *thread, _wait_q_t *wait_q, s32_t timeout)
 DECL|sched_lock|variable|sched_lock
-DECL|update_cache|function|static void update_cache(void)
+DECL|update_cache|function|static void update_cache(int preempt_ok)
