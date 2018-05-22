@@ -51,7 +51,6 @@ DECL|segments_path|variable|segments_path
 DECL|send_notification_packet|function|static int send_notification_packet(const struct sockaddr *addr, u16_t age, socklen_t addrlen, u16_t id, const u8_t *token, u8_t tkl, bool is_response)
 DECL|separate_get|function|static int separate_get(struct coap_resource *resource,struct coap_packet *request)
 DECL|separate_path|variable|separate_path
-DECL|strip_headers|function|static void strip_headers(struct net_pkt *pkt)
 DECL|test_del|function|static int test_del(struct coap_resource *resource, struct coap_packet *request)
 DECL|test_path|variable|test_path
 DECL|test_post|function|static int test_post(struct coap_resource *resource, struct coap_packet *request)
