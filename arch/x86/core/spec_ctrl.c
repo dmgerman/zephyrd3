@@ -1,0 +1,5 @@
+DECL|CPUID_EXTENDED_FEATURES_LVL|macro|CPUID_EXTENDED_FEATURES_LVL
+DECL|CPUID_SPEC_CTRL|macro|CPUID_SPEC_CTRL
+DECL|SPEC_CTRL_SSBD|macro|SPEC_CTRL_SSBD
+DECL|cpu_has_spec_ctrl|function|cpu_has_spec_ctrl(void)
+DECL|disable_ssbd_if_needed|function|disable_ssbd_if_needed(struct device *dev)
