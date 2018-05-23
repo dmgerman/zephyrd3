@@ -9,5 +9,8 @@ DECL|it_interval|member|struct timespec it_interval; /* Timer interval */
 DECL|it_value|member|struct timespec it_value; /* Timer expiration */
 DECL|itimerspec|struct|struct itimerspec {
 DECL|timespec|struct|struct timespec {
+DECL|timeval|struct|struct timeval {
 DECL|tv_nsec|member|signed int tv_nsec;
 DECL|tv_sec|member|signed int tv_sec;
+DECL|tv_sec|member|signed int tv_sec;
+DECL|tv_usec|member|signed int tv_usec;

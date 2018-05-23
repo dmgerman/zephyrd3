@@ -6,6 +6,7 @@ DECL|clockid_t|macro|clockid_t
 DECL|closedir|macro|closedir
 DECL|close|macro|close
 DECL|dirent|macro|dirent
+DECL|gettimeofday|macro|gettimeofday
 DECL|itimerspe|macro|itimerspe
 DECL|lseek|macro|lseek
 DECL|main|macro|main
@@ -118,6 +119,7 @@ DECL|timer_gettime|macro|timer_gettime
 DECL|timer_settime|macro|timer_settime
 DECL|timer_t|macro|timer_t
 DECL|timespec|macro|timespec
+DECL|timeval|macro|timeval
 DECL|unlink|macro|unlink
 DECL|usleep|macro|usleep
 DECL|write|macro|write
