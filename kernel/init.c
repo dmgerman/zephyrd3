@@ -21,6 +21,7 @@ DECL|_idle_thread3_s|variable|_idle_thread3_s
 DECL|_idle_thread3|variable|_idle_thread3
 DECL|_idle_thread_s|variable|_idle_thread_s
 DECL|_idle_thread|variable|_idle_thread
+DECL|_initialize_stack_canaries|function|static inline void _initialize_stack_canaries(void)
 DECL|_main_thread_s|variable|_main_thread_s
 DECL|_main_thread|variable|_main_thread
 DECL|bg_thread_main|function|static void bg_thread_main(void *unused1, void *unused2, void *unused3)
