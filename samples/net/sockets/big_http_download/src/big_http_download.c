@@ -3,7 +3,7 @@ DECL|SSTRLEN|macro|SSTRLEN
 DECL|cur_bytes|variable|cur_bytes
 DECL|download_hash|variable|download_hash
 DECL|download_url|variable|download_url
-DECL|download|function|void download(struct addrinfo *ai)
+DECL|download|function|void download(struct addrinfo *ai, bool is_tls)
 DECL|dump_addrinfo|function|void dump_addrinfo(const struct addrinfo *ai)
 DECL|fatal|function|void fatal(const char *msg)
 DECL|hash_ctx|variable|hash_ctx
