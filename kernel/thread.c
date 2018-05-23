@@ -30,3 +30,4 @@ DECL|k_thread_foreach|function|void k_thread_foreach(k_thread_user_cb_t user_cb,
 DECL|k_thread_foreach|function|void k_thread_foreach(k_thread_user_cb_t user_cb, void *user_data) { }
 DECL|k_thread_user_mode_enter|function|FUNC_NORETURN void k_thread_user_mode_enter(k_thread_entry_t entry, void *p1, void *p2, void *p3)
 DECL|schedule_new_thread|function|static void schedule_new_thread(struct k_thread *thread, s32_t delay)
+DECL|z_stack_adjust_initialized|variable|z_stack_adjust_initialized
