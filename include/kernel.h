@@ -206,8 +206,8 @@ DECL|block|member|u32_t block : 20;
 DECL|buffer_end|member|char *buffer_end;
 DECL|buffer_start|member|char *buffer_start;
 DECL|buffer|member|char *buffer;
-DECL|buffer|member|unsigned char *buffer; /* Pipe buffer: may be NULL */
-DECL|bytes_used|member|size_t bytes_used; /* # bytes used in buffer */
+DECL|buffer|member|unsigned char *buffer; /**< Pipe buffer: may be NULL */
+DECL|bytes_used|member|size_t bytes_used; /**< # bytes used in buffer */
 DECL|callee_saved|member|struct _callee_saved callee_saved;
 DECL|caller_saved|member|struct _caller_saved caller_saved;
 DECL|count|member|unsigned int count;
@@ -231,7 +231,7 @@ DECL|flags|member|atomic_t flags[1];
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
-DECL|flags|member|u8_t flags; /* Flags */
+DECL|flags|member|u8_t flags; /**< Flags */
 DECL|fn_abort|member|void (*fn_abort)(void);
 DECL|free_list|member|char *free_list;
 DECL|func|member|_timeout_func_t func;
@@ -368,9 +368,9 @@ DECL|qnode_dlist|member|sys_dlist_t qnode_dlist;
 DECL|qnode_rb|member|struct rbnode qnode_rb;
 DECL|queue|member|struct k_queue *queue;
 DECL|queue|member|struct k_queue queue;
-DECL|read_index|member|size_t read_index; /* Where in buffer to read from */
+DECL|read_index|member|size_t read_index; /**< Where in buffer to read from */
 DECL|read_ptr|member|char *read_ptr;
-DECL|readers|member|_wait_q_t readers; /* Reader wait queue */
+DECL|readers|member|_wait_q_t readers; /**< Reader wait queue */
 DECL|resource_pool|member|struct k_mem_pool *resource_pool;
 DECL|result|member|int result;
 DECL|rx_msg_queue|member|_wait_q_t rx_msg_queue;
@@ -382,7 +382,7 @@ DECL|send_count|member|atomic_t send_count;
 DECL|signaled|member|unsigned int signaled;
 DECL|signal|member|struct k_poll_signal *signal;
 DECL|size|member|size_t size;
-DECL|size|member|size_t size; /* Buffer size */
+DECL|size|member|size_t size; /**< Buffer size */
 DECL|size|member|u32_t size;
 DECL|size|member|u32_t size;
 DECL|stack_info|member|struct _thread_stack_info stack_info;
@@ -432,6 +432,6 @@ DECL|waitq|member|sys_dlist_t waitq;
 DECL|work_item|member|struct k_work work_item;
 DECL|work_q|member|struct k_work_q *work_q;
 DECL|work|member|struct k_work work;
-DECL|write_index|member|size_t write_index; /* Where in buffer to write */
+DECL|write_index|member|size_t write_index; /**< Where in buffer to write */
 DECL|write_ptr|member|char *write_ptr;
-DECL|writers|member|_wait_q_t writers; /* Writer wait queue */
+DECL|writers|member|_wait_q_t writers; /**< Writer wait queue */
