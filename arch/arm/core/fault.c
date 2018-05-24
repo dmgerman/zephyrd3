@@ -36,7 +36,7 @@ DECL|STORE_xFAR|macro|STORE_xFAR
 DECL|_BusFault|function|static void _BusFault(const NANO_ESF *esf, int fromHardFault)
 DECL|_DebugMonitor|function|static void _DebugMonitor(const NANO_ESF *esf)
 DECL|_FaultDump|function|static void _FaultDump(const NANO_ESF *esf, int fault)
-DECL|_FaultDump|function|void _FaultDump(const NANO_ESF *esf, int fault)
+DECL|_FaultDump|function|u32_t _FaultDump(const NANO_ESF *esf, int fault)
 DECL|_FaultInit|function|void _FaultInit(void)
 DECL|_FaultThreadShow|function|static void _FaultThreadShow(const NANO_ESF *esf)
 DECL|_Fault|function|void _Fault(const NANO_ESF *esf, u32_t exc_return)
