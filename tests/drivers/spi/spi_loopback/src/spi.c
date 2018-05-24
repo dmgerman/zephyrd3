@@ -15,7 +15,6 @@ DECL|buffer_print_tx|variable|buffer_print_tx
 DECL|buffer_rx|variable|buffer_rx
 DECL|buffer_tx|variable|buffer_tx
 DECL|cs_ctrl_gpio_config|function|static int cs_ctrl_gpio_config(void)
-DECL|main|function|void main(void)
 DECL|result|variable|result
 DECL|spi_async_call_cb|function|static void spi_async_call_cb(struct k_poll_event *async_evt, struct k_sem *caller_sem, void *unused)
 DECL|spi_async_call|function|static int spi_async_call(struct device *dev, struct spi_config *spi_conf)
@@ -27,4 +26,6 @@ DECL|spi_resource_lock_test|function|static int spi_resource_lock_test(struct de
 DECL|spi_rx_every_4|function|static int spi_rx_every_4(struct device *dev, struct spi_config *spi_conf)
 DECL|spi_rx_half_end|function|static int spi_rx_half_end(struct device *dev, struct spi_config *spi_conf)
 DECL|spi_rx_half_start|function|static int spi_rx_half_start(struct device *dev, struct spi_config *spi_conf)
+DECL|test_main|function|void test_main(void)
+DECL|testing_spi|function|void testing_spi(void)
 DECL|to_display_format|function|static void to_display_format(const u8_t *src, size_t size, char *dst)
