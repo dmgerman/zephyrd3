@@ -12,6 +12,7 @@ DECL|BYTES_TO_T_UINT_4|macro|BYTES_TO_T_UINT_4
 DECL|BYTES_TO_T_UINT_4|macro|BYTES_TO_T_UINT_4
 DECL|BYTES_TO_T_UINT_8|macro|BYTES_TO_T_UINT_8
 DECL|BYTES_TO_T_UINT_8|macro|BYTES_TO_T_UINT_8
+DECL|DIV_ROUND_UP|macro|DIV_ROUND_UP
 DECL|INIT|macro|INIT
 DECL|INIT|macro|INIT
 DECL|LAST|macro|LAST
@@ -31,7 +32,11 @@ DECL|NEXT|macro|NEXT
 DECL|NEXT|macro|NEXT
 DECL|NIST_MODP|macro|NIST_MODP
 DECL|NIST_MODP|macro|NIST_MODP
+DECL|P224_UNUSED_BITS|macro|P224_UNUSED_BITS
+DECL|P224_WIDTH_MAX|macro|P224_WIDTH_MAX
+DECL|P224_WIDTH_MIN|macro|P224_WIDTH_MIN
 DECL|P255_WIDTH|macro|P255_WIDTH
+DECL|P448_WIDTH|macro|P448_WIDTH
 DECL|P521_MASK|macro|P521_MASK
 DECL|P521_MASK|macro|P521_MASK
 DECL|P521_WIDTH|macro|P521_WIDTH
@@ -75,10 +80,12 @@ DECL|ecp_mod_p255|function|static int ecp_mod_p255( mbedtls_mpi *N )
 DECL|ecp_mod_p256k1|function|static int ecp_mod_p256k1( mbedtls_mpi *N )
 DECL|ecp_mod_p256|function|static int ecp_mod_p256( mbedtls_mpi *N )
 DECL|ecp_mod_p384|function|static int ecp_mod_p384( mbedtls_mpi *N )
+DECL|ecp_mod_p448|function|static int ecp_mod_p448( mbedtls_mpi *N )
 DECL|ecp_mod_p521|function|static int ecp_mod_p521( mbedtls_mpi *N )
 DECL|ecp_mpi_load|function|static inline void ecp_mpi_load( mbedtls_mpi *X, const mbedtls_mpi_uint *p, size_t len )
 DECL|ecp_mpi_set1|function|static inline void ecp_mpi_set1( mbedtls_mpi *X )
 DECL|ecp_use_curve25519|function|static int ecp_use_curve25519( mbedtls_ecp_group *grp )
+DECL|ecp_use_curve448|function|static int ecp_use_curve448( mbedtls_ecp_group *grp )
 DECL|fix_negative|function|static inline int fix_negative( mbedtls_mpi *N, signed char c, mbedtls_mpi *C, size_t bits )
 DECL|inline|macro|inline
 DECL|mbedtls_ecp_group_load|function|int mbedtls_ecp_group_load( mbedtls_ecp_group *grp, mbedtls_ecp_group_id id )

@@ -1,6 +1,6 @@
 DECL|MBEDTLS_ECDH_H|macro|MBEDTLS_ECDH_H
-DECL|MBEDTLS_ECDH_OURS|enumerator|MBEDTLS_ECDH_OURS,
-DECL|MBEDTLS_ECDH_THEIRS|enumerator|MBEDTLS_ECDH_THEIRS,
+DECL|MBEDTLS_ECDH_OURS|enumerator|MBEDTLS_ECDH_OURS, /**< Our key. */
+DECL|MBEDTLS_ECDH_THEIRS|enumerator|MBEDTLS_ECDH_THEIRS, /**< The key of the peer. */
 DECL|Qp|member|mbedtls_ecp_point Qp; /*!< The value of the public key of the peer. */
 DECL|Q|member|mbedtls_ecp_point Q; /*!< The public key. */
 DECL|Vf|member|mbedtls_ecp_point Vf; /*!< The unblinding value. */

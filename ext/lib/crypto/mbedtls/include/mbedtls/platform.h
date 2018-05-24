@@ -16,7 +16,7 @@ DECL|MBEDTLS_PLATFORM_STD_PRINTF|macro|MBEDTLS_PLATFORM_STD_PRINTF
 DECL|MBEDTLS_PLATFORM_STD_SNPRINTF|macro|MBEDTLS_PLATFORM_STD_SNPRINTF
 DECL|MBEDTLS_PLATFORM_STD_SNPRINTF|macro|MBEDTLS_PLATFORM_STD_SNPRINTF
 DECL|MBEDTLS_PLATFORM_STD_TIME|macro|MBEDTLS_PLATFORM_STD_TIME
-DECL|dummy|member|char dummy; /**< Placeholder member, as empty structs are not portable. */
+DECL|dummy|member|char dummy; /**< A placeholder member, as empty structs are not portable. */
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_exit|macro|mbedtls_exit

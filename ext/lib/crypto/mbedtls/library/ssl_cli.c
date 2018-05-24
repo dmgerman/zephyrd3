@@ -25,6 +25,7 @@ DECL|ssl_parse_session_ticket_ext|function|static int ssl_parse_session_ticket_e
 DECL|ssl_parse_signature_algorithm|function|static int ssl_parse_signature_algorithm( mbedtls_ssl_context *ssl, unsigned char **p, unsigned char *end, mbedtls_md_type_t *md_alg, mbedtls_pk_type_t *pk_alg )
 DECL|ssl_parse_supported_point_formats_ext|function|static int ssl_parse_supported_point_formats_ext( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
 DECL|ssl_parse_truncated_hmac_ext|function|static int ssl_parse_truncated_hmac_ext( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
+DECL|ssl_validate_ciphersuite|function|static int ssl_validate_ciphersuite( const mbedtls_ssl_ciphersuite_t * suite_info, const mbedtls_ssl_context * ssl, int min_minor_ver, int max_minor_ver )
 DECL|ssl_write_alpn_ext|function|static void ssl_write_alpn_ext( mbedtls_ssl_context *ssl, unsigned char *buf, size_t *olen )
 DECL|ssl_write_certificate_verify|function|static int ssl_write_certificate_verify( mbedtls_ssl_context *ssl )
 DECL|ssl_write_certificate_verify|function|static int ssl_write_certificate_verify( mbedtls_ssl_context *ssl )

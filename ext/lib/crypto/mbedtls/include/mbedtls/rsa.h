@@ -1,5 +1,5 @@
-DECL|DP|member|mbedtls_mpi DP; /*!< \p D % (P - 1) */
-DECL|DQ|member|mbedtls_mpi DQ; /*!< \p D % (Q - 1) */
+DECL|DP|member|mbedtls_mpi DP; /*!< <code>D % (P - 1)</code>. */
+DECL|DQ|member|mbedtls_mpi DQ; /*!< <code>D % (Q - 1)</code>. */
 DECL|D|member|mbedtls_mpi D; /*!< The private exponent. */
 DECL|E|member|mbedtls_mpi E; /*!< The public exponent. */
 DECL|MBEDTLS_ERR_RSA_BAD_INPUT_DATA|macro|MBEDTLS_ERR_RSA_BAD_INPUT_DATA
@@ -23,11 +23,11 @@ DECL|MBEDTLS_RSA_SALT_LEN_ANY|macro|MBEDTLS_RSA_SALT_LEN_ANY
 DECL|MBEDTLS_RSA_SIGN|macro|MBEDTLS_RSA_SIGN
 DECL|N|member|mbedtls_mpi N; /*!< The public modulus. */
 DECL|P|member|mbedtls_mpi P; /*!< The first prime factor. */
-DECL|QP|member|mbedtls_mpi QP; /*!< 1 / (Q % P) */
+DECL|QP|member|mbedtls_mpi QP; /*!< <code>1 / (Q % P)</code>. */
 DECL|Q|member|mbedtls_mpi Q; /*!< The second prime factor. */
-DECL|RN|member|mbedtls_mpi RN; /*!< cached R^2 mod \p N */
-DECL|RP|member|mbedtls_mpi RP; /*!< cached R^2 mod \p P */
-DECL|RQ|member|mbedtls_mpi RQ; /*!< cached R^2 mod \p Q */
+DECL|RN|member|mbedtls_mpi RN; /*!< cached <code>R^2 mod N</code>. */
+DECL|RP|member|mbedtls_mpi RP; /*!< cached <code>R^2 mod P</code>. */
+DECL|RQ|member|mbedtls_mpi RQ; /*!< cached <code>R^2 mod Q</code>. */
 DECL|Vf|member|mbedtls_mpi Vf; /*!< The cached un-blinding value. */
 DECL|Vi|member|mbedtls_mpi Vi; /*!< The cached blinding value. */
 DECL|hash_id|member|int hash_id; /*!< Hash identifier of mbedtls_md_type_t type,

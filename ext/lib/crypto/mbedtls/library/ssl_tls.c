@@ -9,6 +9,7 @@ DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_ssl_check_cert_usage|function|int mbedtls_ssl_check_cert_usage( const mbedtls_x509_crt *cert, const mbedtls_ssl_ciphersuite_t *ciphersuite, int cert_endpoint, uint32_t *flags )
 DECL|mbedtls_ssl_check_curve|function|int mbedtls_ssl_check_curve( const mbedtls_ssl_context *ssl, mbedtls_ecp_group_id grp_id )
+DECL|mbedtls_ssl_check_pending|function|int mbedtls_ssl_check_pending( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_check_sig_hash|function|int mbedtls_ssl_check_sig_hash( const mbedtls_ssl_context *ssl, mbedtls_md_type_t md )
 DECL|mbedtls_ssl_close_notify|function|int mbedtls_ssl_close_notify( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_conf_alpn_protocols|function|int mbedtls_ssl_conf_alpn_protocols( mbedtls_ssl_config *conf, const char **protos )

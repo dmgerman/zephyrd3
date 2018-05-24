@@ -23,6 +23,7 @@ DECL|MBEDTLS_ERR_SSL_CERTIFICATE_TOO_LARGE|macro|MBEDTLS_ERR_SSL_CERTIFICATE_TOO
 DECL|MBEDTLS_ERR_SSL_CLIENT_RECONNECT|macro|MBEDTLS_ERR_SSL_CLIENT_RECONNECT
 DECL|MBEDTLS_ERR_SSL_COMPRESSION_FAILED|macro|MBEDTLS_ERR_SSL_COMPRESSION_FAILED
 DECL|MBEDTLS_ERR_SSL_CONN_EOF|macro|MBEDTLS_ERR_SSL_CONN_EOF
+DECL|MBEDTLS_ERR_SSL_CONTINUE_PROCESSING|macro|MBEDTLS_ERR_SSL_CONTINUE_PROCESSING
 DECL|MBEDTLS_ERR_SSL_COUNTER_WRAPPING|macro|MBEDTLS_ERR_SSL_COUNTER_WRAPPING
 DECL|MBEDTLS_ERR_SSL_FATAL_ALERT_MESSAGE|macro|MBEDTLS_ERR_SSL_FATAL_ALERT_MESSAGE
 DECL|MBEDTLS_ERR_SSL_FEATURE_UNAVAILABLE|macro|MBEDTLS_ERR_SSL_FEATURE_UNAVAILABLE
@@ -342,10 +343,10 @@ DECL|p_timer|member|void *p_timer; /*!< context for the timer callbacks */
 DECL|p_vrfy|member|void *p_vrfy; /*!< context for X.509 verify calllback */
 DECL|peer_cert|member|mbedtls_x509_crt *peer_cert; /*!< peer X.509 cert chain */
 DECL|peer_verify_data|member|char peer_verify_data[MBEDTLS_SSL_VERIFY_DATA_MAX_LEN]; /*!< previous handshake verify data */
-DECL|psk_identity_len|member|size_t psk_identity_len;/*!< length of identity */
-DECL|psk_identity|member|unsigned char *psk_identity; /*!< identity for PSK negotiation */
-DECL|psk_len|member|size_t psk_len; /*!< length of the pre-shared key */
-DECL|psk|member|unsigned char *psk; /*!< pre-shared key */
+DECL|psk_identity_len|member|size_t psk_identity_len;/*!< length of identity. This field should
+DECL|psk_identity|member|unsigned char *psk_identity; /*!< identity for PSK negotiation. This
+DECL|psk_len|member|size_t psk_len; /*!< length of the pre-shared key. This
+DECL|psk|member|unsigned char *psk; /*!< pre-shared key. This field should
 DECL|read_timeout|member|uint32_t read_timeout; /*!< timeout for mbedtls_ssl_read (ms) */
 DECL|renego_max_records|member|int renego_max_records; /*!< grace period for renegotiation */
 DECL|renego_period|member|unsigned char renego_period[8]; /*!< value of the record counters
