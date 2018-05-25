@@ -1,4 +1,5 @@
 DECL|_get_num_regions|function|static inline u8_t _get_num_regions(void)
+DECL|_get_num_usable_regions|function|static inline u8_t _get_num_usable_regions(void)
 DECL|_get_region_attr_by_type|function|static inline u32_t _get_region_attr_by_type(u32_t type)
 DECL|_get_region_index_by_type|function|static inline u32_t _get_region_index_by_type(u32_t type)
 DECL|_is_enabled_region|function|static inline int _is_enabled_region(u32_t r_index)

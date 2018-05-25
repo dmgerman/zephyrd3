@@ -1,5 +1,4 @@
 DECL|ARM_MPU_DEV|macro|ARM_MPU_DEV
-DECL|_arm_mpu_config|function|static void _arm_mpu_config(void)
 DECL|_disable_region|function|static inline void _disable_region(u32_t r_index)
 DECL|_get_num_regions|function|static inline u8_t _get_num_regions(void)
 DECL|_get_region_attr_by_type|function|static inline u32_t _get_region_attr_by_type(u32_t type, u32_t size)
