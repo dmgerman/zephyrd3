@@ -65,6 +65,7 @@ DECL|usb_handle_standard_request|function|static int usb_handle_standard_request
 DECL|usb_handle_std_device_req|function|static bool usb_handle_std_device_req(struct usb_setup_packet *setup,s32_t *len, u8_t **data_buf)
 DECL|usb_handle_std_endpoint_req|function|static bool usb_handle_std_endpoint_req(struct usb_setup_packet *setup,s32_t *len, u8_t **data_buf)
 DECL|usb_handle_std_interface_req|function|static bool usb_handle_std_interface_req(struct usb_setup_packet *setup,s32_t *len, u8_t **data_buf)
+DECL|usb_handle_vendor_request|function|static int usb_handle_vendor_request(struct usb_setup_packet *setup, s32_t *len, u8_t **data_buf)
 DECL|usb_print_setup|function|static void usb_print_setup(struct usb_setup_packet *setup)
 DECL|usb_read|function|int usb_read(u8_t ep, u8_t *data, u32_t max_data_len,u32_t *ret_bytes)
 DECL|usb_register_custom_req_handler|function|static void usb_register_custom_req_handler(usb_request_handler handler)
@@ -84,4 +85,5 @@ DECL|usb_transfer|function|int usb_transfer(u8_t ep, u8_t *data, size_t dlen, un
 DECL|usb_vbus_set|function|static int usb_vbus_set(bool on)
 DECL|usb_write|function|int usb_write(u8_t ep, const u8_t *data, u32_t data_len,u32_t *bytes_ret)
 DECL|vendor_handler|function|static int vendor_handler(struct usb_setup_packet *pSetup, s32_t *len, u8_t **data)
+DECL|vendor_req_handler|member|usb_request_handler vendor_req_handler;
 DECL|work|member|struct k_work work;
