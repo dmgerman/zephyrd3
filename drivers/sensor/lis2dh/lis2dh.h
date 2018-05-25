@@ -108,7 +108,7 @@ DECL|gpio|member|struct device *gpio;
 DECL|handler_anymotion|member|sensor_trigger_handler_t handler_anymotion;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;
 DECL|lis2dh_burst_read|function|static inline int lis2dh_burst_read(struct device *dev, u8_t start_addr, u8_t *buf, u8_t num_bytes)
-DECL|lis2dh_burst_write|function|static inline int lis2dh_burst_write(struct device *bus, u8_t start_addr, u8_t *buf, u8_t num_bytes)
+DECL|lis2dh_burst_write|function|static inline int lis2dh_burst_write(struct device *dev, u8_t start_addr, u8_t *buf, u8_t num_bytes)
 DECL|lis2dh_bus_configure|function|static inline int lis2dh_bus_configure(struct device *dev)
 DECL|lis2dh_data|struct|struct lis2dh_data {
 DECL|lis2dh_reg_read_byte|function|static inline int lis2dh_reg_read_byte(struct device *dev, u8_t reg_addr, u8_t *value)
