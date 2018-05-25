@@ -148,7 +148,6 @@ DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_TICK_ALIGN|macro|_TICK_ALIGN
 DECL|_WAIT_Q_INIT|macro|_WAIT_Q_INIT
 DECL|_WAIT_Q_INIT|macro|_WAIT_Q_INIT
-DECL|__packed|variable|__packed
 DECL|__thread_entry|struct|struct __thread_entry {
 DECL|__ticks_to_ms|function|static inline s64_t __ticks_to_ms(s64_t ticks)
 DECL|_async_sem|member|struct k_sem *_async_sem;
