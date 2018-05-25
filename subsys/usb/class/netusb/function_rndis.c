@@ -3,10 +3,14 @@ DECL|CFG_RNDIS_CMD_BUF_SIZE|macro|CFG_RNDIS_CMD_BUF_SIZE
 DECL|CFG_RNDIS_TX_BUF_COUNT|macro|CFG_RNDIS_TX_BUF_COUNT
 DECL|CFG_RNDIS_TX_BUF_SIZE|macro|CFG_RNDIS_TX_BUF_SIZE
 DECL|INITIALIZED|enumerator|INITIALIZED,
+DECL|MSOS_STRING_LENGTH|macro|MSOS_STRING_LENGTH
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|RNDIS_INT_EP_IDX|macro|RNDIS_INT_EP_IDX
 DECL|RNDIS_IN_EP_IDX|macro|RNDIS_IN_EP_IDX
 DECL|RNDIS_OUT_EP_IDX|macro|RNDIS_OUT_EP_IDX
+DECL|Reserved1|member|u8_t Reserved1;
+DECL|Reserved2|member|u8_t Reserved2[6];
+DECL|Reserved|member|u8_t Reserved[7];
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|UNINITIALIZED|enumerator|UNINITIALIZED,
@@ -14,10 +18,23 @@ DECL|VERBOSE_DEBUG|macro|VERBOSE_DEBUG
 DECL|__packed|variable|__packed
 DECL|__rndis|struct|static struct __rndis {
 DECL|append_bytes|function|static int append_bytes(u8_t *out_buf, u16_t buf_len, u8_t *data,u16_t len, u16_t remaining)
+DECL|bCount|member|u8_t bCount;
+DECL|bDescriptorType|member|u8_t bDescriptorType;
+DECL|bFirstInterfaceNumber|member|u8_t bFirstInterfaceNumber;
+DECL|bLength|member|u8_t bLength;
+DECL|bMS_VendorCode|member|u8_t bMS_VendorCode;
+DECL|bPad|member|u8_t bPad;
+DECL|bString|member|u8_t bString[MSOS_STRING_LENGTH - 4];
+DECL|bcdVersion|member|u16_t bcdVersion;
 DECL|cmd_thread_data|variable|cmd_thread_data
 DECL|cmd_thread|function|static void cmd_thread(void)
+DECL|compat_id_desc|struct|static struct compat_id_desc {
+DECL|compat_id_func|struct|struct compat_id_func {
+DECL|compatibleID|member|u8_t compatibleID[8];
 DECL|data|member|u8_t data[];
 DECL|drv_version|variable|drv_version
+DECL|dwLength|member|u32_t dwLength;
+DECL|func|member|} __packed func[1];
 DECL|handle_encapsulated_cmd|function|static int handle_encapsulated_cmd(u8_t *data, u32_t len)
 DECL|handle_encapsulated_rsp|function|static int handle_encapsulated_rsp(u8_t **data, u32_t *len)
 DECL|in_pkt_len|member|int in_pkt_len; /* Packet length to be assembled */
@@ -26,11 +43,14 @@ DECL|len|member|u32_t len;
 DECL|mac|member|u8_t mac[6];
 DECL|manufacturer|variable|manufacturer
 DECL|media_status|member|u8_t media_status;
+DECL|msosv1_compatid_descriptor|variable|msosv1_compatid_descriptor
+DECL|msosv1_string_descriptor|variable|msosv1_string_descriptor
 DECL|mtu|member|u16_t mtu;
 DECL|net_filter|member|u32_t net_filter;
 DECL|notify_count|member|atomic_t notify_count;
 DECL|notify_work|variable|notify_work
 DECL|object_id_supported|variable|object_id_supported
+DECL|os_desc|variable|os_desc
 DECL|parse_rndis_header|function|static int parse_rndis_header(const u8_t *buffer, u32_t buf_len)
 DECL|queue_encapsulated_cmd|function|static int queue_encapsulated_cmd(u8_t *data, u32_t len)
 DECL|rndis_bulk_in|function|static void rndis_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
@@ -65,6 +85,9 @@ DECL|rx_no_buf|member|u32_t rx_no_buf;
 DECL|skip_bytes|member|int skip_bytes; /* In case of low memory, skip bytes */
 DECL|speed|member|u16_t speed; /* TODO: Calculate right speed */
 DECL|state|member|} state;
+DECL|string_desc|struct|static struct string_desc {
+DECL|subCompatibleID|member|u8_t subCompatibleID[8];
 DECL|tlv|struct|struct tlv {
 DECL|tx_err|member|u32_t tx_err;
 DECL|type|member|u32_t type;
+DECL|wIndex|member|u16_t wIndex;
