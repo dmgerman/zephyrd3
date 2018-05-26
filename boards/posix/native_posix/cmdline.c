@@ -1,6 +1,8 @@
 DECL|args|variable|args
 DECL|bt_dev_index|variable|bt_dev_index
 DECL|cmd_bt_dev_found|function|static void cmd_bt_dev_found(char *argv, int offset)
+DECL|cmd_no_realtime_found|function|static void cmd_no_realtime_found(char *argv, int offset)
+DECL|cmd_realtime_found|function|static void cmd_realtime_found(char *argv, int offset)
 DECL|cmd_seed_found|function|static void cmd_seed_found(char *argv, int offset)
 DECL|cmd_stop_at_found|function|static void cmd_stop_at_found(char *argv, int offset)
 DECL|native_get_cmd_line_args|function|void native_get_cmd_line_args(int *argc, char ***argv)
