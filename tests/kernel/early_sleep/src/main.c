@@ -8,7 +8,7 @@ DECL|helper_thread|function|static void helper_thread(void *p1, void *p2, void *
 DECL|helper_ttid|variable|helper_ttid
 DECL|test_early_sleep_app|function|static int test_early_sleep_app(struct device *unused)
 DECL|test_early_sleep_post_kernel|function|static int test_early_sleep_post_kernel(struct device *unused)
+DECL|test_early_sleep|function|static void test_early_sleep(void)
 DECL|test_failure|variable|test_failure
 DECL|test_main|function|void test_main(void)
 DECL|ticks_to_sleep|function|static int ticks_to_sleep(int ticks)
-DECL|verify_early_sleep|function|static void verify_early_sleep(void)
