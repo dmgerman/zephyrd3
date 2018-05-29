@@ -22,6 +22,7 @@ DECL|CAN_NUMBER_OF_FILTER_BANKS|macro|CAN_NUMBER_OF_FILTER_BANKS
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|_STM32_CAN_H_|macro|_STM32_CAN_H_
+DECL|bs2|member|u8_t bs2;
 DECL|bus_speed|member|u32_t bus_speed;
 DECL|can_filter_type|enum|enum can_filter_type {
 DECL|can_mailbox|struct|struct can_mailbox {
@@ -35,9 +36,11 @@ DECL|mb0|member|struct can_mailbox mb0;
 DECL|mb1|member|struct can_mailbox mb1;
 DECL|mb2|member|struct can_mailbox mb2;
 DECL|pclken|member|struct stm32_pclken pclken;
+DECL|prop_bs1|member|u8_t prop_bs1;
 DECL|response_type|member|u64_t response_type;
 DECL|rx_response|member|void *rx_response[CONFIG_CAN_MAX_FILTER];
 DECL|set_filter_mutex|member|struct k_mutex set_filter_mutex;
+DECL|swj|member|u8_t swj;
 DECL|tx_callback|member|can_tx_callback_t tx_callback;
 DECL|tx_int_sem|member|struct k_sem tx_int_sem;
 DECL|tx_int_sem|member|struct k_sem tx_int_sem;
