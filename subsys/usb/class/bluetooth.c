@@ -9,6 +9,8 @@ DECL|bluetooth_config|variable|bluetooth_config
 DECL|bluetooth_ep_data|variable|bluetooth_ep_data
 DECL|bluetooth_init|function|static int bluetooth_init(struct device *dev)
 DECL|bluetooth_status_cb|function|static void bluetooth_status_cb(enum usb_dc_status_code status, u8_t *param)
-DECL|bluetooth_thread_data|variable|bluetooth_thread_data
-DECL|bluetooth_thread|function|static void bluetooth_thread(void)
+DECL|hci_rx_thread|function|static void hci_rx_thread(void)
+DECL|hci_tx_thread|function|static void hci_tx_thread(void)
 DECL|interface_data|variable|interface_data
+DECL|rx_thread_data|variable|rx_thread_data
+DECL|tx_thread_data|variable|tx_thread_data
