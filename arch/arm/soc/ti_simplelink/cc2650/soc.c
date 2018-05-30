@@ -4,7 +4,6 @@ DECL|clkloadctl|variable|clkloadctl
 DECL|gpioclkgr|variable|gpioclkgr
 DECL|pdctl0|variable|pdctl0
 DECL|pdstat0|variable|pdstat0
-DECL|secdmaclkgr|variable|secdmaclkgr
 DECL|setup_modules_prcm|function|static void setup_modules_prcm(void)
 DECL|ti_cc2650|function|static int ti_cc2650(struct device *dev)
 DECL|ti_ccfg|variable|ti_ccfg
