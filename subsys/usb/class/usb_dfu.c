@@ -32,13 +32,13 @@ DECL|device_descriptor|member|struct usb_device_descriptor device_descriptor;
 DECL|dfu_check_app_state|function|static bool dfu_check_app_state(void)
 DECL|dfu_class_handle_req|function|static int dfu_class_handle_req(struct usb_setup_packet *pSetup,s32_t *data_len, u8_t **data)
 DECL|dfu_config|variable|dfu_config
-DECL|dfu_config|variable|dfu_config
 DECL|dfu_custom_handle_req|function|static int dfu_custom_handle_req(struct usb_setup_packet *pSetup,s32_t *data_len, u8_t **data)
 DECL|dfu_data_t|struct|struct dfu_data_t {
 DECL|dfu_data|variable|dfu_data
 DECL|dfu_descr|member|struct dfu_runtime_descriptor dfu_descr;
 DECL|dfu_descr|member|struct dfu_runtime_descriptor dfu_descr;
 DECL|dfu_flash_write|function|static void dfu_flash_write(u8_t *data, size_t len)
+DECL|dfu_interface_config|function|static void dfu_interface_config(u8_t bInterfaceNumber)
 DECL|dfu_reset_counters|function|static void dfu_reset_counters(void)
 DECL|dfu_status_cb|function|static void dfu_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|flash_addr|member|u32_t flash_addr;

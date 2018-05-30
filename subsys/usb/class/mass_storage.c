@@ -37,6 +37,7 @@ DECL|inquiryRequest|function|static bool inquiryRequest(void)
 DECL|interface_data|variable|interface_data
 DECL|length|variable|length
 DECL|mass_ep_data|variable|mass_ep_data
+DECL|mass_interface_config|function|static void mass_interface_config(u8_t bInterfaceNumber)
 DECL|mass_storage_bulk_in|function|static void mass_storage_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|mass_storage_bulk_out|function|static void mass_storage_bulk_out(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)
 DECL|mass_storage_class_handle_req|function|static int mass_storage_class_handle_req(struct usb_setup_packet *pSetup,s32_t *len, u8_t **data)

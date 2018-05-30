@@ -1,3 +1,4 @@
+DECL|ACM_IF0_STRING|macro|ACM_IF0_STRING
 DECL|ACM_INT_EP_IDX|macro|ACM_INT_EP_IDX
 DECL|ACM_IN_EP_IDX|macro|ACM_IN_EP_IDX
 DECL|ACM_OUT_EP_IDX|macro|ACM_OUT_EP_IDX
@@ -37,6 +38,7 @@ DECL|cdc_acm_line_ctrl_set|function|static int cdc_acm_line_ctrl_set(struct devi
 DECL|cdc_acm_poll_in|function|static int cdc_acm_poll_in(struct device *dev, unsigned char *c)
 DECL|cdc_acm_poll_out|function|static unsigned char cdc_acm_poll_out(struct device *dev, unsigned char c)
 DECL|cdc_acm_send_notification|function|static int cdc_acm_send_notification(struct device *dev, u16_t serial_state)
+DECL|cdc_interface_config|function|static void cdc_interface_config(u8_t bInterfaceNumber)
 DECL|iad_cdc|member|struct usb_association_descriptor iad_cdc;
 DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
 DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;

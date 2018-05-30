@@ -14,7 +14,6 @@ DECL|enabled|member|bool enabled;
 DECL|func|member|struct netusb_function *func;
 DECL|iad|member|struct usb_association_descriptor iad;
 DECL|iad|member|struct usb_association_descriptor iad;
-DECL|iad|member|struct usb_association_descriptor iad;
 DECL|if0_acm|member|struct cdc_acm_descriptor if0_acm;
 DECL|if0_cm|member|struct cdc_cm_descriptor if0_cm;
 DECL|if0_header|member|struct cdc_header_descriptor if0_header;
@@ -44,8 +43,10 @@ DECL|netusb_connect_media|function|static int netusb_connect_media(void)
 DECL|netusb_disable|function|void netusb_disable(void)
 DECL|netusb_disconnect_media|function|static int netusb_disconnect_media(void)
 DECL|netusb_enable|function|void netusb_enable(void)
+DECL|netusb_get_first_iface_number|function|u8_t netusb_get_first_iface_number(void)
 DECL|netusb_init_dev|function|static int netusb_init_dev(struct device *dev)
 DECL|netusb_init|function|static void netusb_init(struct net_if *iface)
+DECL|netusb_interface_config|function|static void netusb_interface_config(u8_t bInterfaceNumber)
 DECL|netusb_recv|function|void netusb_recv(struct net_pkt *pkt)
 DECL|netusb_send|function|static int netusb_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|netusb|variable|netusb

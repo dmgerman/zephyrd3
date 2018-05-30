@@ -7,6 +7,7 @@ DECL|hid_device_info|struct|static struct hid_device_info {
 DECL|hid_device|variable|hid_device
 DECL|hid_ep_data|variable|hid_ep_data
 DECL|hid_int_in|function|static void hid_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
+DECL|hid_interface_config|function|static void hid_interface_config(u8_t bInterfaceNumber)
 DECL|hid_status_cb|function|static void hid_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|if0_hid|member|struct usb_hid_descriptor if0_hid;
 DECL|if0_int_ep|member|struct usb_ep_descriptor if0_int_ep;

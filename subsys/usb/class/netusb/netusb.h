@@ -1,6 +1,3 @@
-DECL|NETUSB_IFACE_IDX|macro|NETUSB_IFACE_IDX
-DECL|NETUSB_IFACE_IDX|macro|NETUSB_IFACE_IDX
-DECL|NETUSB_IFACE_IDX|macro|NETUSB_IFACE_IDX
 DECL|NETUSB_MTU|macro|NETUSB_MTU
 DECL|class_handler|member|int (*class_handler)(struct usb_setup_packet *setup, s32_t *len,
 DECL|connect_media|member|int (*connect_media)(bool status);

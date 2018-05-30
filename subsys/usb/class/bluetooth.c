@@ -11,6 +11,7 @@ DECL|acl_read_cb|function|static void acl_read_cb(u8_t ep, int size, void *priv)
 DECL|bluetooth_class_handler|function|static int bluetooth_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|bluetooth_ep_data|variable|bluetooth_ep_data
 DECL|bluetooth_init|function|static int bluetooth_init(struct device *dev)
+DECL|bluetooth_interface_config|function|static void bluetooth_interface_config(u8_t bInterfaceNumber)
 DECL|bluetooth_status_cb|function|static void bluetooth_status_cb(enum usb_dc_status_code status, u8_t *param)
 DECL|hci_rx_thread|function|static void hci_rx_thread(void)
 DECL|hci_tx_thread|function|static void hci_tx_thread(void)
