@@ -35,7 +35,7 @@ DECL|current|member|struct k_thread *current;
 DECL|current|member|struct k_thread *current;
 DECL|idle_thread|member|struct k_thread *idle_thread;
 DECL|idle|member|s32_t idle; /* Number of ticks for kernel idling */
-DECL|id|member|int id;
+DECL|id|member|u8_t id;
 DECL|irq_stack|member|char *irq_stack;
 DECL|irq_stack|member|char *irq_stack;
 DECL|nested|member|u32_t nested;
@@ -43,6 +43,7 @@ DECL|nested|member|u32_t nested;
 DECL|ready_q|member|struct _ready_q ready_q;
 DECL|runq|member|struct _priq_rb runq;
 DECL|runq|member|sys_dlist_t runq;
+DECL|swap_ok|member|u8_t swap_ok;
 DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
 DECL|thread_monitor_init|macro|thread_monitor_init
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL threads */
