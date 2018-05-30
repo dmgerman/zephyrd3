@@ -3,7 +3,7 @@ DECL|BT_L2CAP_MTU|macro|BT_L2CAP_MTU
 DECL|CMD_BUF_SIZE|macro|CMD_BUF_SIZE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|bluetooth_bulk_out_callback|function|static void bluetooth_bulk_out_callback(u8_t ep,enum usb_dc_ep_cb_status_code ep_status)
+DECL|acl_read_cb|function|static void acl_read_cb(u8_t ep, int size, void *priv)
 DECL|bluetooth_class_handler|function|static int bluetooth_class_handler(struct usb_setup_packet *setup, s32_t *len, u8_t **data)
 DECL|bluetooth_config|variable|bluetooth_config
 DECL|bluetooth_ep_data|variable|bluetooth_ep_data
