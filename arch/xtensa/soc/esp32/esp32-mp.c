@@ -21,6 +21,8 @@ DECL|arg|member|void *arg;
 DECL|cpustart_rec|struct|struct cpustart_rec {
 DECL|cpu|member|int cpu;
 DECL|fn|member|void (*fn)(int, void *);
+DECL|loglock|variable|loglock
+DECL|smp_log|function|void smp_log(const char *msg)
 DECL|stack_top|member|char *stack_top;
 DECL|start_rec|variable|start_rec
 DECL|vecbase|member|int vecbase;
