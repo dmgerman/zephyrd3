@@ -1,0 +1,7 @@
+DECL|my_string|variable|my_string
+DECL|test_log_hexdump_data_get_multiple_chunks|function|void test_log_hexdump_data_get_multiple_chunks(void)
+DECL|test_log_hexdump_data_get_single_chunk|function|void test_log_hexdump_data_get_single_chunk(void)
+DECL|test_log_hexdump_data_get_two_chunks|function|void test_log_hexdump_data_get_two_chunks(void)
+DECL|test_log_hexdump_msg|function|void test_log_hexdump_msg(void)
+DECL|test_log_std_msg|function|void test_log_std_msg(void)
+DECL|test_main|function|void test_main(void)
