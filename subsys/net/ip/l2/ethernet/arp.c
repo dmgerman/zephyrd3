@@ -1,6 +1,8 @@
+DECL|ARP_REQUEST_TIMEOUT|macro|ARP_REQUEST_TIMEOUT
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|arp_request_timeout|function|static void arp_request_timeout(struct k_work *work)
 DECL|arp_table|variable|arp_table
 DECL|arp_update|function|static inline void arp_update(struct net_if *iface, struct in_addr *src, struct net_eth_addr *hwaddr)
 DECL|find_entry|function|static inline struct arp_entry *find_entry(struct net_if *iface, struct in_addr *dst, struct arp_entry **free_entry, struct arp_entry **non_pending)

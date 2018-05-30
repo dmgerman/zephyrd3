@@ -5,6 +5,7 @@ DECL|NET_ARP_REQUEST|macro|NET_ARP_REQUEST
 DECL|__ARP_H|macro|__ARP_H
 DECL|__packed|variable|__packed
 DECL|arp_entry|struct|struct arp_entry {
+DECL|arp_request_timer|member|struct k_delayed_work arp_request_timer;
 DECL|dst_hwaddr|member|struct net_eth_addr dst_hwaddr; /* THA */
 DECL|dst_ipaddr|member|struct in_addr dst_ipaddr; /* TPA */
 DECL|eth|member|struct net_eth_addr eth;
@@ -22,4 +23,3 @@ DECL|protocol|member|u16_t protocol; /* PTYPE */
 DECL|protolen|member|u8_t protolen; /* PLEN */
 DECL|src_hwaddr|member|struct net_eth_addr src_hwaddr; /* SHA */
 DECL|src_ipaddr|member|struct in_addr src_ipaddr; /* SPA */
-DECL|time|member|u32_t time; /* FIXME - implement timeout functionality */
