@@ -63,7 +63,9 @@ DECL|handle_offer|function|static inline void handle_offer(struct net_if *iface)
 DECL|hlen|member|u8_t hlen; /* Hardware Address length */
 DECL|hops|member|u8_t hops; /* used by relay agents when booting via relay
 DECL|htype|member|u8_t htype; /* Hardware Address Type */
+DECL|iface_event_handler|function|static void iface_event_handler(struct net_mgmt_event_callback *cb,u32_t mgmt_event, struct net_if *iface)
 DECL|magic_cookie|variable|magic_cookie
+DECL|mgmt4_cb|variable|mgmt4_cb
 DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct net_conn *conn, struct net_pkt *pkt, void *user_data)
 DECL|net_dhcpv4_msg_type_name|function|net_dhcpv4_msg_type_name(enum dhcpv4_msg_type msg_type)
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
