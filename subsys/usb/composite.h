@@ -1,1 +1,0 @@
-DECL|__USB_COMPOSITE__|macro|__USB_COMPOSITE__
