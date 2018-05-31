@@ -8,6 +8,7 @@ DECL|map_size|member|u8_t map_size;
 DECL|map|member|struct chan_map map[];
 DECL|period_cycles|member|u32_t period_cycles;
 DECL|ppi_base|member|u8_t ppi_base;
+DECL|prescaler|member|u8_t prescaler;
 DECL|pulse_cycles|member|u32_t pulse_cycles;
 DECL|pwm_channel_map|function|static u8_t pwm_channel_map(struct pwm_data *data, u8_t map_size, u32_t pwm)
 DECL|pwm_config|struct|struct pwm_config {
