@@ -1,6 +1,7 @@
 DECL|ETHERNET_AUTO_NEGOTIATION_SET|enumerator|ETHERNET_AUTO_NEGOTIATION_SET = BIT(3),
 DECL|ETHERNET_CONFIG_TYPE_AUTO_NEG|enumerator|ETHERNET_CONFIG_TYPE_AUTO_NEG,
 DECL|ETHERNET_CONFIG_TYPE_DUPLEX|enumerator|ETHERNET_CONFIG_TYPE_DUPLEX,
+DECL|ETHERNET_CONFIG_TYPE_FILTER|enumerator|ETHERNET_CONFIG_TYPE_FILTER,
 DECL|ETHERNET_CONFIG_TYPE_LINK|enumerator|ETHERNET_CONFIG_TYPE_LINK,
 DECL|ETHERNET_CONFIG_TYPE_MAC_ADDRESS|enumerator|ETHERNET_CONFIG_TYPE_MAC_ADDRESS,
 DECL|ETHERNET_CONFIG_TYPE_PRIORITY_QUEUES_NUM|enumerator|ETHERNET_CONFIG_TYPE_PRIORITY_QUEUES_NUM,
@@ -8,6 +9,9 @@ DECL|ETHERNET_CONFIG_TYPE_PROMISC_MODE|enumerator|ETHERNET_CONFIG_TYPE_PROMISC_M
 DECL|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH|enumerator|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH,
 DECL|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE|enumerator|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
+DECL|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS,
+DECL|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS,
+DECL|ETHERNET_HW_FILTERING|enumerator|ETHERNET_HW_FILTERING = BIT(12),
 DECL|ETHERNET_HW_RX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_RX_CHKSUM_OFFLOAD = BIT(1),
 DECL|ETHERNET_HW_TX_CHKSUM_OFFLOAD|enumerator|ETHERNET_HW_TX_CHKSUM_OFFLOAD = BIT(0),
 DECL|ETHERNET_HW_VLAN|enumerator|ETHERNET_HW_VLAN = BIT(2),
@@ -43,9 +47,12 @@ DECL|ethernet_api|struct|struct ethernet_api {
 DECL|ethernet_config_type|enum|enum ethernet_config_type {
 DECL|ethernet_config|struct|struct ethernet_config {
 DECL|ethernet_context|struct|struct ethernet_context {
+DECL|ethernet_filter_type|enum|enum ethernet_filter_type {
+DECL|ethernet_filter|struct|struct ethernet_filter {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
 DECL|ethernet_qav_queue_param|struct|struct ethernet_qav_queue_param {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
+DECL|filter|member|struct ethernet_filter filter;
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
 DECL|get_config|member|int (*get_config)(struct device *dev,
@@ -60,6 +67,7 @@ DECL|link_1000bt|member|bool link_1000bt;
 DECL|link_100bt|member|bool link_100bt;
 DECL|link_10bt|member|bool link_10bt;
 DECL|l|member|} l;
+DECL|mac_address|member|struct net_eth_addr mac_address;
 DECL|mac_address|member|struct net_eth_addr mac_address;
 DECL|net_eth_addr|struct|struct net_eth_addr {
 DECL|net_eth_get_hw_capabilities|function|enum ethernet_hw_caps net_eth_get_hw_capabilities(struct net_if *iface)
@@ -80,11 +88,13 @@ DECL|promisc_mode|member|bool promisc_mode;
 DECL|qav_queue_param|member|struct ethernet_qav_queue_param qav_queue_param;
 DECL|queue_id|member|int queue_id;
 DECL|set_config|member|int (*set_config)(struct device *dev,
+DECL|set|member|bool set;
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
 DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
+DECL|type|member|enum ethernet_filter_type type;
 DECL|type|member|u16_t type;
 DECL|type|member|u16_t type;
 DECL|vlan_enabled|member|s8_t vlan_enabled;
