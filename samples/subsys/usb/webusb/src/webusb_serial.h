@@ -1,4 +1,3 @@
-DECL|DESCRIPTOR_TYPE_BOS|macro|DESCRIPTOR_TYPE_BOS
 DECL|WEBUSB_SERIAL_PORT_NAME|macro|WEBUSB_SERIAL_PORT_NAME
 DECL|__WEBUSB_SERIAL_H__|macro|__WEBUSB_SERIAL_H__
 DECL|custom_handler|member|usb_request_handler custom_handler;
