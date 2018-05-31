@@ -253,6 +253,7 @@ DECL|init_stack_size|member|unsigned int init_stack_size;
 DECL|init_stack|member|k_thread_stack_t *init_stack;
 DECL|init_thread|member|struct k_thread *init_thread;
 DECL|is_idle|member|u8_t is_idle;
+DECL|is_polling|member|volatile int is_polling;
 DECL|k_alert_handler_t|typedef|typedef int (*k_alert_handler_t)(struct k_alert *alert);
 DECL|k_alert|struct|struct k_alert {
 DECL|k_cycle_get_32|macro|k_cycle_get_32
