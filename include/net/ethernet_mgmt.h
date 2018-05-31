@@ -20,6 +20,8 @@ DECL|_NET_ETHERNET_EVENT|macro|_NET_ETHERNET_EVENT
 DECL|_NET_ETHERNET_LAYER|macro|_NET_ETHERNET_LAYER
 DECL|__ETHERNET_MGMT_H_|macro|__ETHERNET_MGMT_H_
 DECL|auto_negotiation|member|bool auto_negotiation;
+DECL|ethernet_mgmt_raise_carrier_off_event|function|static inline void ethernet_mgmt_raise_carrier_off_event(struct net_if *iface)
+DECL|ethernet_mgmt_raise_carrier_on_event|function|static inline void ethernet_mgmt_raise_carrier_on_event(struct net_if *iface)
 DECL|ethernet_req_params|struct|struct ethernet_req_params {
 DECL|full_duplex|member|bool full_duplex;
 DECL|link_1000bt|member|bool link_1000bt;
