@@ -11,6 +11,9 @@ DECL|irq_offload|function|void irq_offload(irq_offload_routine_t routine, void *
 DECL|irq_vector_table|variable|irq_vector_table
 DECL|isr_table_entry_t|typedef|typedef struct _isr_list isr_table_entry_t;
 DECL|normal_irq_f_ptr|typedef|typedef void (*normal_irq_f_ptr)(void *);
+DECL|off_parameter|variable|off_parameter
+DECL|off_routine|variable|off_routine
+DECL|offload_sw_irq_handler|function|static void offload_sw_irq_handler(void *a)
 DECL|posix_get_current_irq|function|int posix_get_current_irq(void)
 DECL|posix_irq_full_unlock|function|void posix_irq_full_unlock(void)
 DECL|posix_irq_handler_im_from_sw|function|void posix_irq_handler_im_from_sw(void)
