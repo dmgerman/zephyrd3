@@ -21,7 +21,6 @@ DECL|MISC_CLASS|macro|MISC_CLASS
 DECL|MISC_ETHERNET_PROTOCOL|macro|MISC_ETHERNET_PROTOCOL
 DECL|MISC_RNDIS_SUBCLASS|macro|MISC_RNDIS_SUBCLASS
 DECL|MOUSE_PROTOCOL|macro|MOUSE_PROTOCOL
-DECL|PlatformCapabilityUUID|member|u8_t PlatformCapabilityUUID[16];
 DECL|RF_SUBCLASS|macro|RF_SUBCLASS
 DECL|SCSI_TRANSPARENT_SUBCLASS|macro|SCSI_TRANSPARENT_SUBCLASS
 DECL|USB_1_1|macro|USB_1_1
@@ -29,7 +28,6 @@ DECL|USB_2_0|macro|USB_2_0
 DECL|USB_2_1|macro|USB_2_1
 DECL|USB_ASSOCIATION_DESC|macro|USB_ASSOCIATION_DESC
 DECL|USB_BINARY_OBJECT_STORE_DESC|macro|USB_BINARY_OBJECT_STORE_DESC
-DECL|USB_BOS_CAPABILITY_PLATFORM|macro|USB_BOS_CAPABILITY_PLATFORM
 DECL|USB_COMMON_H_|macro|USB_COMMON_H_
 DECL|USB_CONFIGURATION_ATTRIBUTES|macro|USB_CONFIGURATION_ATTRIBUTES
 DECL|USB_CONFIGURATION_DESC_SIZE|macro|USB_CONFIGURATION_DESC_SIZE
@@ -60,8 +58,6 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
-DECL|__packed|variable|__packed
-DECL|__packed|variable|__packed
 DECL|bAlternateSetting|member|u8_t bAlternateSetting;
 DECL|bConfigurationValue|member|u8_t bConfigurationValue;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
@@ -70,9 +66,6 @@ DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
 DECL|bDescriptorType|member|u8_t bDescriptorType;
-DECL|bDescriptorType|member|u8_t bDescriptorType;
-DECL|bDescriptorType|member|u8_t bDescriptorType;
-DECL|bDevCapabilityType|member|u8_t bDevCapabilityType;
 DECL|bDeviceClass|member|u8_t bDeviceClass;
 DECL|bDeviceProtocol|member|u8_t bDeviceProtocol;
 DECL|bDeviceSubClass|member|u8_t bDeviceSubClass;
@@ -93,15 +86,11 @@ DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
 DECL|bLength|member|u8_t bLength;
-DECL|bLength|member|u8_t bLength;
-DECL|bLength|member|u8_t bLength;
 DECL|bMaxPacketSize0|member|u8_t bMaxPacketSize0;
 DECL|bMaxPower|member|u8_t bMaxPower;
 DECL|bNumConfigurations|member|u8_t bNumConfigurations;
-DECL|bNumDeviceCaps|member|u8_t bNumDeviceCaps;
 DECL|bNumEndpoints|member|u8_t bNumEndpoints;
 DECL|bNumInterfaces|member|u8_t bNumInterfaces;
-DECL|bReserved|member|u8_t bReserved;
 DECL|bString|member|u16_t bString;
 DECL|bcdDevice|member|u16_t bcdDevice;
 DECL|bcdUSB|member|u16_t bcdUSB;
@@ -116,13 +105,10 @@ DECL|iSerialNumber|member|u8_t iSerialNumber;
 DECL|idProduct|member|u16_t idProduct;
 DECL|idVendor|member|u16_t idVendor;
 DECL|usb_association_descriptor|struct|struct usb_association_descriptor {
-DECL|usb_bos_descriptor|struct|struct usb_bos_descriptor {
-DECL|usb_bos_platform_descriptor|struct|struct usb_bos_platform_descriptor {
 DECL|usb_cfg_descriptor|struct|struct usb_cfg_descriptor {
 DECL|usb_device_descriptor|struct|struct usb_device_descriptor {
 DECL|usb_ep_descriptor|struct|struct usb_ep_descriptor {
 DECL|usb_if_descriptor|struct|struct usb_if_descriptor {
 DECL|usb_string_descriptor|struct|struct usb_string_descriptor {
 DECL|wMaxPacketSize|member|u16_t wMaxPacketSize;
-DECL|wTotalLength|member|u16_t wTotalLength;
 DECL|wTotalLength|member|u16_t wTotalLength;
