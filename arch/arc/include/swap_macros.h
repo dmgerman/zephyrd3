@@ -104,6 +104,13 @@ DECL|r30|variable|r30
 DECL|r30|variable|r30
 DECL|r3|variable|r3
 DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
+DECL|r3|variable|r3
 DECL|r4|variable|r4
 DECL|r4|variable|r4
 DECL|r58|variable|r58
