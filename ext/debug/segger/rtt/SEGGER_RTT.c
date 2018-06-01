@@ -2,7 +2,6 @@ DECL|BUFFER_SIZE_DOWN|macro|BUFFER_SIZE_DOWN
 DECL|BUFFER_SIZE_UP|macro|BUFFER_SIZE_UP
 DECL|INIT|macro|INIT
 DECL|MAX|macro|MAX
-DECL|MEMCPY|macro|MEMCPY
 DECL|MIN|macro|MIN
 DECL|NULL|macro|NULL
 DECL|PRAGMA|macro|PRAGMA
@@ -23,12 +22,16 @@ DECL|SEGGER_RTT_CB_ALIGN|macro|SEGGER_RTT_CB_ALIGN
 DECL|SEGGER_RTT_ConfigDownBuffer|function|int SEGGER_RTT_ConfigDownBuffer(unsigned BufferIndex, const char* sName, void* pBuffer, unsigned BufferSize, unsigned Flags) {
 DECL|SEGGER_RTT_ConfigUpBuffer|function|int SEGGER_RTT_ConfigUpBuffer(unsigned BufferIndex, const char* sName, void* pBuffer, unsigned BufferSize, unsigned Flags) {
 DECL|SEGGER_RTT_GetKey|function|int SEGGER_RTT_GetKey(void) {
+DECL|SEGGER_RTT_HasDataUp|function|unsigned SEGGER_RTT_HasDataUp(unsigned BufferIndex) {
 DECL|SEGGER_RTT_HasData|function|unsigned SEGGER_RTT_HasData(unsigned BufferIndex) {
 DECL|SEGGER_RTT_HasKey|function|int SEGGER_RTT_HasKey(void) {
 DECL|SEGGER_RTT_Init|function|void SEGGER_RTT_Init (void) {
 DECL|SEGGER_RTT_LOCK|macro|SEGGER_RTT_LOCK
 DECL|SEGGER_RTT_MAX_NUM_DOWN_BUFFERS|macro|SEGGER_RTT_MAX_NUM_DOWN_BUFFERS
 DECL|SEGGER_RTT_MAX_NUM_UP_BUFFERS|macro|SEGGER_RTT_MAX_NUM_UP_BUFFERS
+DECL|SEGGER_RTT_MEMCPY_USE_BYTELOOP|macro|SEGGER_RTT_MEMCPY_USE_BYTELOOP
+DECL|SEGGER_RTT_MEMCPY|macro|SEGGER_RTT_MEMCPY
+DECL|SEGGER_RTT_MEMCPY|macro|SEGGER_RTT_MEMCPY
 DECL|SEGGER_RTT_MODE_DEFAULT|macro|SEGGER_RTT_MODE_DEFAULT
 DECL|SEGGER_RTT_PUT_BUFFER_SECTION|macro|SEGGER_RTT_PUT_BUFFER_SECTION
 DECL|SEGGER_RTT_PUT_BUFFER_SECTION|macro|SEGGER_RTT_PUT_BUFFER_SECTION
@@ -38,6 +41,9 @@ DECL|SEGGER_RTT_PUT_SECTION|macro|SEGGER_RTT_PUT_SECTION
 DECL|SEGGER_RTT_PUT_SECTION|macro|SEGGER_RTT_PUT_SECTION
 DECL|SEGGER_RTT_PUT_SECTION|macro|SEGGER_RTT_PUT_SECTION
 DECL|SEGGER_RTT_PUT_SECTION|macro|SEGGER_RTT_PUT_SECTION
+DECL|SEGGER_RTT_PutCharSkipNoLock|function|unsigned SEGGER_RTT_PutCharSkipNoLock(unsigned BufferIndex, char c) {
+DECL|SEGGER_RTT_PutCharSkip|function|unsigned SEGGER_RTT_PutCharSkip(unsigned BufferIndex, char c) {
+DECL|SEGGER_RTT_PutChar|function|unsigned SEGGER_RTT_PutChar(unsigned BufferIndex, char c) {
 DECL|SEGGER_RTT_ReadNoLock|function|unsigned SEGGER_RTT_ReadNoLock(unsigned BufferIndex, void* pData, unsigned BufferSize) {
 DECL|SEGGER_RTT_Read|function|unsigned SEGGER_RTT_Read(unsigned BufferIndex, void* pBuffer, unsigned BufferSize) {
 DECL|SEGGER_RTT_SetFlagsDownBuffer|function|int SEGGER_RTT_SetFlagsDownBuffer(unsigned BufferIndex, unsigned Flags) {
