@@ -70,5 +70,6 @@ DECL|hal_radio_rx_ready_delay_ns_get|function|static inline u32_t hal_radio_rx_r
 DECL|hal_radio_rx_ready_delay_us_get|function|static inline u32_t hal_radio_rx_ready_delay_us_get(u8_t phy, u8_t flags)
 DECL|hal_radio_tx_chain_delay_ns_get|function|static inline u32_t hal_radio_tx_chain_delay_ns_get(u8_t phy, u8_t flags)
 DECL|hal_radio_tx_chain_delay_us_get|function|static inline u32_t hal_radio_tx_chain_delay_us_get(u8_t phy, u8_t flags)
+DECL|hal_radio_tx_power_max_get|function|static inline u32_t hal_radio_tx_power_max_get(void)
 DECL|hal_radio_tx_ready_delay_ns_get|function|static inline u32_t hal_radio_tx_ready_delay_ns_get(u8_t phy, u8_t flags)
 DECL|hal_radio_tx_ready_delay_us_get|function|static inline u32_t hal_radio_tx_ready_delay_us_get(u8_t phy, u8_t flags)
