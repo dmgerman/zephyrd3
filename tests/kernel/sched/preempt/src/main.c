@@ -6,6 +6,8 @@ DECL|PRI|macro|PRI
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|do_irq|variable|do_irq
 DECL|do_lock|variable|do_lock
+DECL|do_sleep|variable|do_sleep
+DECL|do_yield|variable|do_yield
 DECL|irq_waker|function|void irq_waker(void *p)
 DECL|last_thread|variable|last_thread
 DECL|manager_thread|variable|manager_thread
