@@ -26,6 +26,7 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|addr|member|u8_t addr[6];
 DECL|auto_negotiation|member|bool auto_negotiation;
+DECL|carrier_mgmt|member|} carrier_mgmt;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|ethernet_api|struct|struct ethernet_api {
@@ -37,6 +38,7 @@ DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
 DECL|iface_api|member|struct net_if_api iface_api;
+DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|is_init|member|bool is_init;
 DECL|link_1000bt|member|bool link_1000bt;
@@ -67,3 +69,4 @@ DECL|vlan_enabled|member|s8_t vlan_enabled;
 DECL|vlan_setup|member|int (*vlan_setup)(struct device *dev, struct net_if *iface,
 DECL|vlan|member|struct ethernet_vlan vlan[NET_VLAN_MAX_COUNT];
 DECL|vlan|member|} vlan;
+DECL|work|member|struct k_work work;

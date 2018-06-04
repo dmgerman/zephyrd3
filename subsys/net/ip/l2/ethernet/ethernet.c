@@ -1,6 +1,8 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|broadcast_eth_addr|variable|broadcast_eth_addr
+DECL|carrier_off|function|static void carrier_off(struct k_work *work)
+DECL|carrier_on|function|static void carrier_on(struct k_work *work)
 DECL|check_if_dst_is_broadcast_or_mcast|function|static inline bool check_if_dst_is_broadcast_or_mcast(struct net_if *iface, struct net_pkt *pkt)
 DECL|disable_vlan_iface|function|static bool disable_vlan_iface(struct ethernet_context *ctx, struct net_if *iface)
 DECL|enable_vlan_iface|function|static bool enable_vlan_iface(struct ethernet_context *ctx, struct net_if *iface)
@@ -11,9 +13,12 @@ DECL|ethernet_reserve|function|static inline u16_t ethernet_reserve(struct net_i
 DECL|ethernet_send|function|static enum net_verdict ethernet_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|ethernet_update_length|function|static inline void ethernet_update_length(struct net_if *iface, struct net_pkt *pkt)
 DECL|get_vlan|function|static struct ethernet_vlan *get_vlan(struct ethernet_context *ctx, struct net_if *iface, u16_t vlan_tag)
+DECL|handle_carrier|function|static void handle_carrier(struct ethernet_context *ctx, struct net_if *iface, k_work_handler_t handler)
 DECL|is_vlan_enabled_for_iface|function|static bool is_vlan_enabled_for_iface(struct ethernet_context *ctx, struct net_if *iface)
 DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_eth_broadcast_addr|function|const struct net_eth_addr *net_eth_broadcast_addr(void)
+DECL|net_eth_carrier_off|function|void net_eth_carrier_off(struct net_if *iface)
+DECL|net_eth_carrier_on|function|void net_eth_carrier_on(struct net_if *iface)
 DECL|net_eth_fill_header|function|struct net_eth_hdr *net_eth_fill_header(struct ethernet_context *ctx,struct net_pkt *pkt, struct net_buf *frag, u32_t ptype, u8_t *src,
 DECL|net_eth_get_vlan_iface|function|struct net_if *net_eth_get_vlan_iface(struct net_if *iface, u16_t tag)
 DECL|net_eth_get_vlan_tag|function|u16_t net_eth_get_vlan_tag(struct net_if *iface)
