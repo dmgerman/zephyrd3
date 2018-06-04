@@ -18,4 +18,4 @@ DECL|relinquish_cause|member|int relinquish_cause;
 DECL|return_value|member|unsigned int return_value;
 DECL|sp|member|u32_t sp; /* r28 */
 DECL|u_stack_base|member|u32_t u_stack_base;
-DECL|u_stack_top|member|u32_t u_stack_top ;
+DECL|u_stack_top|member|u32_t u_stack_top;
