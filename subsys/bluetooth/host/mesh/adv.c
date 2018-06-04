@@ -17,8 +17,8 @@ DECL|adv_stack_dump|function|static void adv_stack_dump(const struct k_thread *t
 DECL|adv_thread_data|variable|adv_thread_data
 DECL|adv_thread|function|static void adv_thread(void *p1, void *p2, void *p3)
 DECL|adv_type|variable|adv_type
-DECL|bt_mesh_adv_create_from_pool|function|struct net_buf *bt_mesh_adv_create_from_pool(struct net_buf_pool *pool, bt_mesh_adv_alloc_t get_id, enum bt_mesh_adv_type type, u8_t xmit_count, u8_t xmit_int, s32_t timeout)
-DECL|bt_mesh_adv_create|function|struct net_buf *bt_mesh_adv_create(enum bt_mesh_adv_type type, u8_t xmit_count, u8_t xmit_int, s32_t timeout)
+DECL|bt_mesh_adv_create_from_pool|function|struct net_buf *bt_mesh_adv_create_from_pool(struct net_buf_pool *pool, bt_mesh_adv_alloc_t get_id, enum bt_mesh_adv_type type, u8_t xmit, s32_t timeout)
+DECL|bt_mesh_adv_create|function|struct net_buf *bt_mesh_adv_create(enum bt_mesh_adv_type type, u8_t xmit, s32_t timeout)
 DECL|bt_mesh_adv_init|function|void bt_mesh_adv_init(void)
 DECL|bt_mesh_adv_send|function|void bt_mesh_adv_send(struct net_buf *buf, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|bt_mesh_adv_update|function|void bt_mesh_adv_update(void)
