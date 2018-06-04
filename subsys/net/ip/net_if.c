@@ -112,7 +112,7 @@ DECL|net_if_need_calc_tx_checksum|function|bool net_if_need_calc_tx_checksum(str
 DECL|net_if_post_init|function|void net_if_post_init(void)
 DECL|net_if_queue_tx|function|void net_if_queue_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if_link_cb *link, net_if_link_callback_t cb)
-DECL|net_if_register_timestamp_cb|function|void net_if_register_timestamp_cb(struct net_if_timestamp_cb *handle, struct net_if *iface, net_if_timestamp_callback_t cb)
+DECL|net_if_register_timestamp_cb|function|void net_if_register_timestamp_cb(struct net_if_timestamp_cb *handle, struct net_pkt *pkt, struct net_if *iface, net_if_timestamp_callback_t cb)
 DECL|net_if_router_init|function|static inline void net_if_router_init(struct net_if_router *router, struct net_if *iface, struct in6_addr *addr, u16_t lifetime)
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)

@@ -127,6 +127,7 @@ DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|offload|member|struct net_offload *offload;
+DECL|pkt|member|struct net_pkt *pkt;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
 DECL|reachable_time|member|u32_t reachable_time;
