@@ -1,4 +1,5 @@
 DECL|_CMSIS_OS_H|macro|_CMSIS_OS_H
+DECL|cm_thread|member|struct k_thread *cm_thread; ///< pointer to k_thread structure
 DECL|def|member|} def; ///< event definition
 DECL|dummy|member|uint32_t dummy; ///< dummy value.
 DECL|dummy|member|uint32_t dummy; ///< dummy value.
@@ -105,6 +106,7 @@ DECL|p|member|void *p; ///< message or mail as void pointer
 DECL|queue_sz|member|uint32_t queue_sz; ///< number of elements in the queue
 DECL|queue_sz|member|uint32_t queue_sz; ///< number of elements in the queue
 DECL|signals|member|int32_t signals; ///< signal flags
+DECL|stack_mem|member|void *stack_mem; ///< pointer to array of stack memory
 DECL|stacksize|member|uint32_t stacksize; ///< stack size requirements in bytes; 0 is default stack size
 DECL|status|member|osStatus status; ///< status code: event or error information
 DECL|tpriority|member|osPriority tpriority; ///< initial thread priority
