@@ -75,7 +75,7 @@ DECL|net_buf_simple|struct|struct net_buf_simple {
 DECL|net_buf_tailroom|macro|net_buf_tailroom
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf_unref|macro|net_buf_unref
-DECL|net_buf_user_data|function|static inline void *net_buf_user_data(struct net_buf *buf)
+DECL|net_buf_user_data|function|static inline void *net_buf_user_data(const struct net_buf *buf)
 DECL|net_buf|struct|struct net_buf {
 DECL|node|member|sys_snode_t node;
 DECL|offset|member|u16_t offset;
