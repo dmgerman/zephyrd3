@@ -44,7 +44,5 @@ DECL|ready_q|member|struct _ready_q ready_q;
 DECL|runq|member|struct _priq_rb runq;
 DECL|runq|member|sys_dlist_t runq;
 DECL|swap_ok|member|u8_t swap_ok;
-DECL|thread_monitor_init|function|static ALWAYS_INLINE void thread_monitor_init(struct k_thread *thread)
-DECL|thread_monitor_init|macro|thread_monitor_init
 DECL|threads|member|struct k_thread *threads; /* singly linked list of ALL threads */
 DECL|timeout_q|member|sys_dlist_t timeout_q;

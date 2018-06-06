@@ -222,7 +222,7 @@ DECL|delete|function|inline void operator delete(void *ptr1, void *ptr2)
 DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|s32_t delta_ticks_from_prev;
-DECL|entry|member|struct __thread_entry *entry;
+DECL|entry|member|struct __thread_entry entry;
 DECL|errno_var|member|int errno_var;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
