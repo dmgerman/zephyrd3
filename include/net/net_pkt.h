@@ -116,6 +116,7 @@ DECL|net_pkt_set_ll_reserve|function|static inline void net_pkt_set_ll_reserve(s
 DECL|net_pkt_set_next_hdr|function|static inline void net_pkt_set_next_hdr(struct net_pkt *pkt, u8_t *hdr)
 DECL|net_pkt_set_orig_iface|function|static inline void net_pkt_set_orig_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_priority|function|static inline void net_pkt_set_priority(struct net_pkt *pkt,u8_t priority)
+DECL|net_pkt_set_priority|macro|net_pkt_set_priority
 DECL|net_pkt_set_queued|function|static inline void net_pkt_set_queued(struct net_pkt *pkt, bool send)
 DECL|net_pkt_set_sent|function|static inline void net_pkt_set_sent(struct net_pkt *pkt, bool sent)
 DECL|net_pkt_set_src_ipv6_addr|function|static inline void net_pkt_set_src_ipv6_addr(struct net_pkt *pkt)
