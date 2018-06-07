@@ -4,7 +4,6 @@ DECL|RTC_COUNTER|macro|RTC_COUNTER
 DECL|RTC_HALF|macro|RTC_HALF
 DECL|RTC_MASK|macro|RTC_MASK
 DECL|RTC_MIN_DELTA|macro|RTC_MIN_DELTA
-DECL|RTC_TICKS_PER_SYS_TICK|macro|RTC_TICKS_PER_SYS_TICK
 DECL|SYS_CLOCK_RTC|macro|SYS_CLOCK_RTC
 DECL|_enable_sys_clock|function|void _enable_sys_clock(void)
 DECL|_get_elapsed_clock_time|function|u64_t _get_elapsed_clock_time(void)
