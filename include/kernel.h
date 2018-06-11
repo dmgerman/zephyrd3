@@ -115,6 +115,8 @@ DECL|_K_SEM_INITIALIZER|macro|_K_SEM_INITIALIZER
 DECL|_K_STACK_INITIALIZER|macro|_K_STACK_INITIALIZER
 DECL|_K_TIMER_INITIALIZER|macro|_K_TIMER_INITIALIZER
 DECL|_K_WORK_INITIALIZER|macro|_K_WORK_INITIALIZER
+DECL|_NEED_PRECISE_TICK_MS_CONVERSION|macro|_NEED_PRECISE_TICK_MS_CONVERSION
+DECL|_NEED_PRECISE_TICK_MS_CONVERSION|macro|_NEED_PRECISE_TICK_MS_CONVERSION
 DECL|_NON_OPTIMIZED_TICKS_PER_SEC|macro|_NON_OPTIMIZED_TICKS_PER_SEC
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
 DECL|_NUM_COOP_PRIO|macro|_NUM_COOP_PRIO
@@ -177,7 +179,6 @@ DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
 DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
 DECL|_mem_domain_info|struct|struct _mem_domain_info {
-DECL|_ms_per_tick|macro|_ms_per_tick
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE s32_t _ms_to_ticks(s32_t ms)
 DECL|_node|member|sys_dnode_t _node;
 DECL|_poll_states_bits|enum|enum _poll_states_bits {
