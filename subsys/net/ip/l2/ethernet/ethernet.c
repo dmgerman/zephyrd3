@@ -19,7 +19,7 @@ DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_eth_broadcast_addr|function|const struct net_eth_addr *net_eth_broadcast_addr(void)
 DECL|net_eth_carrier_off|function|void net_eth_carrier_off(struct net_if *iface)
 DECL|net_eth_carrier_on|function|void net_eth_carrier_on(struct net_if *iface)
-DECL|net_eth_fill_header|function|struct net_eth_hdr *net_eth_fill_header(struct ethernet_context *ctx,struct net_pkt *pkt, struct net_buf *frag, u32_t ptype, u8_t *src,
+DECL|net_eth_fill_header|function|struct net_eth_hdr *net_eth_fill_header(struct ethernet_context *ctx,struct net_pkt *pkt, u32_t ptype, u8_t *src, u8_t *dst)
 DECL|net_eth_get_vlan_iface|function|struct net_if *net_eth_get_vlan_iface(struct net_if *iface, u16_t tag)
 DECL|net_eth_get_vlan_tag|function|u16_t net_eth_get_vlan_tag(struct net_if *iface)
 DECL|net_eth_ipv6_mcast_to_mac_addr|function|void net_eth_ipv6_mcast_to_mac_addr(const struct in6_addr *ipv6_addr, struct net_eth_addr *mac_addr)
