@@ -1,0 +1,1 @@
+DECL|_STM32F7_SOC_H_|macro|_STM32F7_SOC_H_
