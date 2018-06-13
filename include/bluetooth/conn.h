@@ -39,7 +39,9 @@ DECL|latency|member|u16_t latency; /** Connection slave latency */
 DECL|le_param_req|member|bool (*le_param_req)(struct bt_conn *conn,
 DECL|le_param_updated|member|void (*le_param_updated)(struct bt_conn *conn, u16_t interval,
 DECL|le|member|struct bt_conn_le_info le;
+DECL|pairing_complete|member|void (*pairing_complete)(struct bt_conn *conn, bool bonded);
 DECL|pairing_confirm|member|void (*pairing_confirm)(struct bt_conn *conn);
+DECL|pairing_failed|member|void (*pairing_failed)(struct bt_conn *conn);
 DECL|passkey_confirm|member|void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_display|member|void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
 DECL|passkey_entry|member|void (*passkey_entry)(struct bt_conn *conn);
