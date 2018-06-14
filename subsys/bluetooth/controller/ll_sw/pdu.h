@@ -57,7 +57,6 @@ DECL|PDU_DATA_LLID_DATA_CONTINUE|enumerator|PDU_DATA_LLID_DATA_CONTINUE = 0x01,
 DECL|PDU_DATA_LLID_DATA_START|enumerator|PDU_DATA_LLID_DATA_START = 0x02,
 DECL|PDU_DATA_LLID_RESV|enumerator|PDU_DATA_LLID_RESV = 0x00,
 DECL|PDU_EM_SIZE_MAX|macro|PDU_EM_SIZE_MAX
-DECL|_PDU_H_|macro|_PDU_H_
 DECL|__packed|member|} __packed;
 DECL|__packed|member|} __packed;
 DECL|__packed|member|} __packed;

@@ -15,7 +15,6 @@ DECL|TICKER_STATUS_FAILURE|macro|TICKER_STATUS_FAILURE
 DECL|TICKER_STATUS_SUCCESS|macro|TICKER_STATUS_SUCCESS
 DECL|TICKER_USER_OP_T_SIZE|macro|TICKER_USER_OP_T_SIZE
 DECL|TICKER_USER_T_SIZE|macro|TICKER_USER_T_SIZE
-DECL|_TICKER_H_|macro|_TICKER_H_
 DECL|ticker_caller_id_get_cb_t|typedef|typedef u8_t (*ticker_caller_id_get_cb_t)(u8_t user_id);
 DECL|ticker_op_func|typedef|typedef void (*ticker_op_func) (u32_t status, void *op_context);
 DECL|ticker_sched_cb_t|typedef|typedef void (*ticker_sched_cb_t)(u8_t caller_id, u8_t callee_id, u8_t chain,

@@ -1,4 +1,3 @@
-DECL|_CCM_H_|macro|_CCM_H_
 DECL|__packed|variable|__packed
 DECL|ccm|struct|struct ccm {
 DECL|counter|member|u64_t counter;

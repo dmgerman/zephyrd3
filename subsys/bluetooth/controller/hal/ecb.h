@@ -1,4 +1,3 @@
-DECL|_ECB_H_|macro|_ECB_H_
 DECL|context|member|void *context;
 DECL|ecb_fp|typedef|typedef void (*ecb_fp) (u32_t status, u8_t *cipher_be, void *context);
 DECL|ecb|struct|struct ecb {
