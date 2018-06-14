@@ -1,0 +1,5 @@
+DECL|test_fs_fat_mount|function|void test_fs_fat_mount(void)
+DECL|test_fs_help|function|void test_fs_help(void)
+DECL|test_fs_nffs_mount|function|void test_fs_nffs_mount(void)
+DECL|test_fs_shell_exit|function|void test_fs_shell_exit(void)
+DECL|test_shell_exec|function|static void test_shell_exec(const char *line, int result)
