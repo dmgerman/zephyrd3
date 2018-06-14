@@ -19,9 +19,14 @@ DECL|eth_tx_timeout_work|function|static void eth_tx_timeout_work(struct k_work 
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
 DECL|frame_get|function|static struct net_pkt *frame_get(struct gmac_queue *queue)
 DECL|free_rx_bufs|function|static void free_rx_bufs(struct ring_buf *rx_frag_list)
+DECL|get_current_ts|function|static inline struct net_ptp_time get_current_ts(Gmac *gmac)
 DECL|get_iface|function|static inline struct net_if *get_iface(struct eth_sam_dev_data *ctx, u16_t vlan_tag)
 DECL|get_mac_addr_from_i2c_eeprom|function|void get_mac_addr_from_i2c_eeprom(u8_t mac_addr[6])
 DECL|get_mck_clock_divisor|function|static int get_mck_clock_divisor(u32_t mck)
+DECL|get_ptp_event_rx_ts|function|static inline struct net_ptp_time get_ptp_event_rx_ts(Gmac *gmac)
+DECL|get_ptp_event_tx_ts|function|static inline struct net_ptp_time get_ptp_event_tx_ts(Gmac *gmac)
+DECL|get_ptp_peer_event_rx_ts|function|static inline struct net_ptp_time get_ptp_peer_event_rx_ts(Gmac *gmac)
+DECL|get_ptp_peer_event_tx_ts|function|static inline struct net_ptp_time get_ptp_peer_event_tx_ts(Gmac *gmac)
 DECL|gmac_desc_append_w0|function|static inline void gmac_desc_append_w0(struct gmac_desc *desc, u32_t value)
 DECL|gmac_desc_append_w1|function|static inline void gmac_desc_append_w1(struct gmac_desc *desc, u32_t value)
 DECL|gmac_desc_get_w0|function|static inline u32_t gmac_desc_get_w0(struct gmac_desc *desc)
@@ -58,6 +63,8 @@ DECL|rx_error_handler|function|static void rx_error_handler(Gmac *gmac, struct g
 DECL|rx_frag_list_que0|variable|rx_frag_list_que0
 DECL|rx_frag_list_que1|variable|rx_frag_list_que1
 DECL|rx_frag_list_que2|variable|rx_frag_list_que2
+DECL|timestamp_rx_pkt|function|static inline void timestamp_rx_pkt(Gmac *gmac, struct gptp_hdr *hdr, struct net_pkt *pkt)
+DECL|timestamp_tx_pkt|function|static inline void timestamp_tx_pkt(Gmac *gmac, struct gptp_hdr *hdr, struct net_pkt *pkt)
 DECL|tx_completed|function|static void tx_completed(Gmac *gmac, struct gmac_queue *queue)
 DECL|tx_descriptors_init|function|static void tx_descriptors_init(Gmac *gmac, struct gmac_queue *queue)
 DECL|tx_error_handler|function|static void tx_error_handler(Gmac *gmac, struct gmac_queue *queue)
