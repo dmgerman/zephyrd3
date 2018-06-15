@@ -3,7 +3,6 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|check_ip_addr|function|static inline int check_ip_addr(struct net_pkt *pkt)
 DECL|check_ip_addr|macro|check_ip_addr
 DECL|init_rx_queues|function|static void init_rx_queues(void)
-DECL|l2_init|function|static inline void l2_init(void)
 DECL|l3_init|function|static inline void l3_init(void)
 DECL|net_init|function|static int net_init(struct device *unused)
 DECL|net_post_init|function|static void net_post_init(void)
