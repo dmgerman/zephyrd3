@@ -105,6 +105,8 @@ DECL|NRF_USBD_INT_SOF_MASK|enumerator|NRF_USBD_INT_SOF_MASK = USBD_INTEN_SOF_Msk
 DECL|NRF_USBD_INT_STARTED_MASK|enumerator|NRF_USBD_INT_STARTED_MASK = USBD_INTEN_STARTED_Msk , /**< Enable or disable interrupt for STARTED event */
 DECL|NRF_USBD_INT_USBEVENT_MASK|enumerator|NRF_USBD_INT_USBEVENT_MASK = USBD_INTEN_USBEVENT_Msk , /**< Enable or disable interrupt for USBEVENT event */
 DECL|NRF_USBD_INT_USBRESET_MASK|enumerator|NRF_USBD_INT_USBRESET_MASK = USBD_INTEN_USBRESET_Msk , /**< Enable or disable interrupt for USBRESET event */
+DECL|NRF_USBD_ISOINCONFIG_NORESP|enumerator|NRF_USBD_ISOINCONFIG_NORESP = USBD_ISOINCONFIG_RESPONSE_NoResp, /**< Endpoint does not respond to an ISO IN token when no data is ready */
+DECL|NRF_USBD_ISOINCONFIG_ZERODATA|enumerator|NRF_USBD_ISOINCONFIG_ZERODATA = USBD_ISOINCONFIG_RESPONSE_ZeroData, /**< Endpoint responds with a zero-length data packet to an ISO IN token when no data is ready */
 DECL|NRF_USBD_ISOSPLIT_Half|enumerator|NRF_USBD_ISOSPLIT_Half = USBD_ISOSPLIT_SPLIT_HalfIN, /**< Buffer divided in half */
 DECL|NRF_USBD_ISOSPLIT_OneDir|enumerator|NRF_USBD_ISOSPLIT_OneDir = USBD_ISOSPLIT_SPLIT_OneDir, /**< Full buffer dedicated to either iso IN or OUT */
 DECL|NRF_USBD_SHORT_ENDEPOUT0_EP0RCVOUT_MASK|enumerator|NRF_USBD_SHORT_ENDEPOUT0_EP0RCVOUT_MASK = USBD_SHORTS_ENDEPOUT0_EP0RCVOUT_Msk , /**< Shortcut between ENDEPOUT[0] event and EP0RCVOUT task */
@@ -180,6 +182,9 @@ DECL|nrf_usbd_int_enable_check|function|bool nrf_usbd_int_enable_check(uint32_t 
 DECL|nrf_usbd_int_enable_get|function|uint32_t nrf_usbd_int_enable_get(void)
 DECL|nrf_usbd_int_enable|function|void nrf_usbd_int_enable(uint32_t int_mask)
 DECL|nrf_usbd_int_mask_t|typedef|}nrf_usbd_int_mask_t;
+DECL|nrf_usbd_isoinconfig_get|function|nrf_usbd_isoinconfig_t nrf_usbd_isoinconfig_get(void)
+DECL|nrf_usbd_isoinconfig_set|function|void nrf_usbd_isoinconfig_set(nrf_usbd_isoinconfig_t config)
+DECL|nrf_usbd_isoinconfig_t|typedef|}nrf_usbd_isoinconfig_t;
 DECL|nrf_usbd_isosplit_get|function|nrf_usbd_isosplit_t nrf_usbd_isosplit_get(void)
 DECL|nrf_usbd_isosplit_set|function|void nrf_usbd_isosplit_set(nrf_usbd_isosplit_t split)
 DECL|nrf_usbd_isosplit_t|typedef|}nrf_usbd_isosplit_t;

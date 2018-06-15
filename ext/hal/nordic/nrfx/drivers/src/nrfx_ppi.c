@@ -1,4 +1,4 @@
-DECL|NRFX_LOG_MODULE_NAME|macro|NRFX_LOG_MODULE_NAME
+DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
 DECL|are_app_channels|function|__STATIC_INLINE bool are_app_channels(uint32_t channel_mask)
 DECL|channel_allocated_clr_all|function|__STATIC_INLINE void channel_allocated_clr_all(void)
 DECL|channel_allocated_clr|function|__STATIC_INLINE void channel_allocated_clr(nrf_ppi_channel_t channel)

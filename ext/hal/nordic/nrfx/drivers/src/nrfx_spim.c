@@ -9,6 +9,7 @@ DECL|SPIM3_LENGTH_VALIDATE|macro|SPIM3_LENGTH_VALIDATE
 DECL|SPIM3_LENGTH_VALIDATE|macro|SPIM3_LENGTH_VALIDATE
 DECL|SPIMX_LENGTH_VALIDATE|macro|SPIMX_LENGTH_VALIDATE
 DECL|SPIM_LENGTH_VALIDATE|macro|SPIM_LENGTH_VALIDATE
+DECL|USE_WORKAROUND_FOR_ANOMALY_195|macro|USE_WORKAROUND_FOR_ANOMALY_195
 DECL|anomaly_198_disable|function|static void anomaly_198_disable(void)
 DECL|anomaly_198_enable|function|static void anomaly_198_enable(uint8_t const * p_buffer, size_t buf_len)
 DECL|evt|member|nrfx_spim_evt_t evt; // Keep the struct that is ready for event handler. Less memcpy.

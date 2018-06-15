@@ -5,8 +5,8 @@ DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
 DECL|TRANSFER_TO_STR|macro|TRANSFER_TO_STR
 DECL|TWI_PIN_INIT|macro|TWI_PIN_INIT
 DECL|busy|member|volatile bool busy;
-DECL|bytes_transferred|member|uint8_t bytes_transferred;
-DECL|curr_length|member|uint8_t curr_length;
+DECL|bytes_transferred|member|size_t bytes_transferred;
+DECL|curr_length|member|size_t curr_length;
 DECL|curr_no_stop|member|bool curr_no_stop;
 DECL|error|member|bool error;
 DECL|flags|member|uint32_t flags;
@@ -33,10 +33,10 @@ DECL|state|member|nrfx_drv_state_t state;
 DECL|twi_control_block_t|typedef|} twi_control_block_t;
 DECL|twi_irq_handler|function|static void twi_irq_handler(NRF_TWI_Type * p_twi, twi_control_block_t * p_cb)
 DECL|twi_process_error|function|static nrfx_err_t twi_process_error(uint32_t errorsrc)
-DECL|twi_receive_byte|function|static void twi_receive_byte(NRF_TWI_Type * p_twi, uint8_t * p_data, uint8_t length, uint8_t * p_bytes_transferred)
-DECL|twi_rx_start_transfer|function|static nrfx_err_t twi_rx_start_transfer(twi_control_block_t * p_cb, NRF_TWI_Type * p_twi, uint8_t const * p_data, uint8_t length)
-DECL|twi_send_byte|function|static bool twi_send_byte(NRF_TWI_Type * p_twi, uint8_t const * p_data, uint8_t length, uint8_t * p_bytes_transferred, bool no_stop)
-DECL|twi_transfer|function|static bool twi_transfer(NRF_TWI_Type * p_twi, bool * p_error, uint8_t * p_bytes_transferred, uint8_t * p_data, uint8_t length,
-DECL|twi_tx_start_transfer|function|static nrfx_err_t twi_tx_start_transfer(twi_control_block_t * p_cb, NRF_TWI_Type * p_twi, uint8_t const * p_data, uint8_t length, bool no_stop)
+DECL|twi_receive_byte|function|static void twi_receive_byte(NRF_TWI_Type * p_twi, uint8_t * p_data, size_t length, size_t * p_bytes_transferred)
+DECL|twi_rx_start_transfer|function|static nrfx_err_t twi_rx_start_transfer(twi_control_block_t * p_cb, NRF_TWI_Type * p_twi, uint8_t const * p_data, size_t length)
+DECL|twi_send_byte|function|static bool twi_send_byte(NRF_TWI_Type * p_twi, uint8_t const * p_data, size_t length, size_t * p_bytes_transferred, bool no_stop)
+DECL|twi_transfer|function|static bool twi_transfer(NRF_TWI_Type * p_twi, bool * p_error, size_t * p_bytes_transferred, uint8_t * p_data, size_t length,
+DECL|twi_tx_start_transfer|function|static nrfx_err_t twi_tx_start_transfer(twi_control_block_t * p_cb, NRF_TWI_Type * p_twi, uint8_t const * p_data, size_t length, bool no_stop)
 DECL|twi_xfer|function|__STATIC_INLINE nrfx_err_t twi_xfer(twi_control_block_t * p_cb, NRF_TWI_Type * p_twi, nrfx_twi_xfer_desc_t const * p_xfer_desc, uint32_t flags)
 DECL|xfer_desc|member|nrfx_twi_xfer_desc_t xfer_desc;

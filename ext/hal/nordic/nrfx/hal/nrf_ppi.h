@@ -68,6 +68,7 @@ DECL|nrf_ppi_channel_include_t|typedef|} nrf_ppi_channel_include_t;
 DECL|nrf_ppi_channel_remove_from_group|function|__STATIC_INLINE void nrf_ppi_channel_remove_from_group(nrf_ppi_channel_t channel, nrf_ppi_channel_group_t channel_group)
 DECL|nrf_ppi_channel_t|typedef|} nrf_ppi_channel_t;
 DECL|nrf_ppi_channels_disable|function|__STATIC_INLINE void nrf_ppi_channels_disable(uint32_t mask)
+DECL|nrf_ppi_channels_enable|function|__STATIC_INLINE void nrf_ppi_channels_enable(uint32_t mask)
 DECL|nrf_ppi_channels_include_in_group|function|__STATIC_INLINE void nrf_ppi_channels_include_in_group(uint32_t channel_mask, nrf_ppi_channel_group_t channel_group)
 DECL|nrf_ppi_channels_remove_from_group|function|__STATIC_INLINE void nrf_ppi_channels_remove_from_group(uint32_t channel_mask, nrf_ppi_channel_group_t channel_group)
 DECL|nrf_ppi_fork_endpoint_setup|function|__STATIC_INLINE void nrf_ppi_fork_endpoint_setup(nrf_ppi_channel_t channel, uint32_t fork_tep)

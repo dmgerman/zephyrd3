@@ -106,13 +106,16 @@ DECL|gain|member|nrf_saadc_gain_t gain;
 DECL|mode|member|nrf_saadc_mode_t mode;
 DECL|nrf_saadc_acqtime_t|typedef|} nrf_saadc_acqtime_t;
 DECL|nrf_saadc_amount_get|function|__STATIC_INLINE uint16_t nrf_saadc_amount_get(void)
-DECL|nrf_saadc_buffer_init|function|__STATIC_INLINE void nrf_saadc_buffer_init(nrf_saadc_value_t * buffer, uint32_t num)
+DECL|nrf_saadc_buffer_init|function|__STATIC_INLINE void nrf_saadc_buffer_init(nrf_saadc_value_t * p_buffer, uint32_t size)
+DECL|nrf_saadc_buffer_pointer_get|function|__STATIC_INLINE nrf_saadc_value_t * nrf_saadc_buffer_pointer_get(void)
+DECL|nrf_saadc_buffer_pointer_set|function|__STATIC_INLINE void nrf_saadc_buffer_pointer_set(nrf_saadc_value_t * p_buffer)
 DECL|nrf_saadc_burst_t|typedef|} nrf_saadc_burst_t;
 DECL|nrf_saadc_busy_check|function|__STATIC_INLINE bool nrf_saadc_busy_check(void)
 DECL|nrf_saadc_channel_config_t|typedef|} nrf_saadc_channel_config_t;
 DECL|nrf_saadc_channel_init|function|__STATIC_INLINE void nrf_saadc_channel_init(uint8_t channel, nrf_saadc_channel_config_t const * const config)
 DECL|nrf_saadc_channel_input_set|function|__STATIC_INLINE void nrf_saadc_channel_input_set(uint8_t channel, nrf_saadc_input_t pselp, nrf_saadc_input_t pseln)
 DECL|nrf_saadc_channel_limits_set|function|__STATIC_INLINE void nrf_saadc_channel_limits_set(uint8_t channel, int16_t low, int16_t high)
+DECL|nrf_saadc_channel_pos_input_set|function|__STATIC_INLINE void nrf_saadc_channel_pos_input_set(uint8_t channel, nrf_saadc_input_t pselp)
 DECL|nrf_saadc_config_t|typedef|} nrf_saadc_config_t;
 DECL|nrf_saadc_disable|function|__STATIC_INLINE void nrf_saadc_disable(void)
 DECL|nrf_saadc_enable_check|function|__STATIC_INLINE bool nrf_saadc_enable_check(void)

@@ -32,6 +32,7 @@ DECL|nrf_gpio_cfg|function|__STATIC_INLINE void nrf_gpio_cfg( uint32_t pin_numbe
 DECL|nrf_gpio_input_disconnect|function|__STATIC_INLINE void nrf_gpio_input_disconnect(uint32_t pin_number)
 DECL|nrf_gpio_latches_read|function|__STATIC_INLINE void nrf_gpio_latches_read(uint32_t start_port, uint32_t length, uint32_t * p_masks)
 DECL|nrf_gpio_pin_clear|function|__STATIC_INLINE void nrf_gpio_pin_clear(uint32_t pin_number)
+DECL|nrf_gpio_pin_dir_get|function|__STATIC_INLINE nrf_gpio_pin_dir_t nrf_gpio_pin_dir_get(uint32_t pin_number)
 DECL|nrf_gpio_pin_dir_set|function|__STATIC_INLINE void nrf_gpio_pin_dir_set(uint32_t pin_number, nrf_gpio_pin_dir_t direction)
 DECL|nrf_gpio_pin_dir_t|typedef|} nrf_gpio_pin_dir_t;
 DECL|nrf_gpio_pin_drive_t|typedef|} nrf_gpio_pin_drive_t;

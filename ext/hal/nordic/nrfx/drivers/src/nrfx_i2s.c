@@ -1,5 +1,6 @@
 DECL|EVT_TO_STR|macro|EVT_TO_STR
 DECL|NRFX_LOG_MODULE|macro|NRFX_LOG_MODULE
+DECL|USE_WORKAROUND_FOR_ANOMALY_194|macro|USE_WORKAROUND_FOR_ANOMALY_194
 DECL|buffer_size|member|uint16_t buffer_size;
 DECL|buffers_needed|member|bool buffers_needed : 1;
 DECL|buffers_reused|member|bool buffers_reused : 1;

@@ -11,7 +11,9 @@ DECL|NRF_CLOCK_INT_DONE_MASK|enumerator|NRF_CLOCK_INT_DONE_MASK = CLOCK_INTENSET
 DECL|NRF_CLOCK_INT_HF_STARTED_MASK|enumerator|NRF_CLOCK_INT_HF_STARTED_MASK = CLOCK_INTENSET_HFCLKSTARTED_Msk, /**< Interrupt on HFCLKSTARTED event. */
 DECL|NRF_CLOCK_INT_LF_STARTED_MASK|enumerator|NRF_CLOCK_INT_LF_STARTED_MASK = CLOCK_INTENSET_LFCLKSTARTED_Msk, /**< Interrupt on LFCLKSTARTED event. */
 DECL|NRF_CLOCK_LFCLK_RC|enumerator|NRF_CLOCK_LFCLK_RC = CLOCK_LFCLKSRC_SRC_RC, /**< Internal 32 kHz RC oscillator. */
-DECL|NRF_CLOCK_LFCLK_Synth|enumerator|NRF_CLOCK_LFCLK_Synth = CLOCK_LFCLKSRC_SRC_Synth /**< Internal 32 kHz synthesizer from HFCLK system clock. */
+DECL|NRF_CLOCK_LFCLK_Synth|enumerator|NRF_CLOCK_LFCLK_Synth = CLOCK_LFCLKSRC_SRC_Synth, /**< Internal 32 kHz synthesizer from HFCLK system clock. */
+DECL|NRF_CLOCK_LFCLK_Xtal_Full_Swing|enumerator|NRF_CLOCK_LFCLK_Xtal_Full_Swing = (CLOCK_LFCLKSRC_SRC_Xtal |
+DECL|NRF_CLOCK_LFCLK_Xtal_Low_Swing|enumerator|NRF_CLOCK_LFCLK_Xtal_Low_Swing = (CLOCK_LFCLKSRC_SRC_Xtal |
 DECL|NRF_CLOCK_LFCLK_Xtal|enumerator|NRF_CLOCK_LFCLK_Xtal = CLOCK_LFCLKSRC_SRC_Xtal, /**< External 32 kHz crystal. */
 DECL|NRF_CLOCK_START_TASK_NOT_TRIGGERED|enumerator|NRF_CLOCK_START_TASK_NOT_TRIGGERED = CLOCK_LFCLKRUN_STATUS_NotTriggered, /**< Task LFCLKSTART/HFCLKSTART has not been triggered. */
 DECL|NRF_CLOCK_START_TASK_TRIGGERED|enumerator|NRF_CLOCK_START_TASK_TRIGGERED = CLOCK_LFCLKRUN_STATUS_Triggered /**< Task LFCLKSTART/HFCLKSTART has been triggered. */
@@ -23,6 +25,7 @@ DECL|NRF_CLOCK_TASK_HFCLKSTOP|enumerator|NRF_CLOCK_TASK_HFCLKSTOP = offsetof(NRF
 DECL|NRF_CLOCK_TASK_LFCLKSTART|enumerator|NRF_CLOCK_TASK_LFCLKSTART = offsetof(NRF_CLOCK_Type, TASKS_LFCLKSTART), /**< Start LFCLK clock source.*/
 DECL|NRF_CLOCK_TASK_LFCLKSTOP|enumerator|NRF_CLOCK_TASK_LFCLKSTOP = offsetof(NRF_CLOCK_Type, TASKS_LFCLKSTOP), /**< Stop LFCLK clock source.*/
 DECL|NRF_CLOCK_TASK_TRIGGER|macro|NRF_CLOCK_TASK_TRIGGER
+DECL|NRF_CLOCK_USE_EXTERNAL_LFCLK_SOURCES|macro|NRF_CLOCK_USE_EXTERNAL_LFCLK_SOURCES
 DECL|nrf_clock_cal_timer_timeout_set|function|__STATIC_INLINE void nrf_clock_cal_timer_timeout_set(uint32_t interval)
 DECL|nrf_clock_event_address_get|function|__STATIC_INLINE uint32_t nrf_clock_event_address_get(nrf_clock_event_t event)
 DECL|nrf_clock_event_check|function|__STATIC_INLINE bool nrf_clock_event_check(nrf_clock_event_t event)
