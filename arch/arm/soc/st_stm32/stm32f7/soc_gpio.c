@@ -1,0 +1,5 @@
+DECL|stm32_gpio_configure|function|int stm32_gpio_configure(u32_t *base_addr, int pin, int conf, int altf)
+DECL|stm32_gpio_enable_int|function|int stm32_gpio_enable_int(int port, int pin)
+DECL|stm32_gpio_flags_to_conf|function|int stm32_gpio_flags_to_conf(int flags, int *pincfg)
+DECL|stm32_gpio_get|function|int stm32_gpio_get(u32_t *base, int pin)
+DECL|stm32_gpio_set|function|int stm32_gpio_set(u32_t *base, int pin, int value)
