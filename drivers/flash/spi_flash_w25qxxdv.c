@@ -1,3 +1,9 @@
+DECL|SYNC_INIT|macro|SYNC_INIT
+DECL|SYNC_INIT|macro|SYNC_INIT
+DECL|SYNC_LOCK|macro|SYNC_LOCK
+DECL|SYNC_LOCK|macro|SYNC_LOCK
+DECL|SYNC_UNLOCK|macro|SYNC_UNLOCK
+DECL|SYNC_UNLOCK|macro|SYNC_UNLOCK
 DECL|spi_flash_api|variable|spi_flash_api
 DECL|spi_flash_init|function|static int spi_flash_init(struct device *dev)
 DECL|spi_flash_memory_data|variable|spi_flash_memory_data
