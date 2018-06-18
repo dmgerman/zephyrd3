@@ -1,5 +1,3 @@
-DECL|CONFIG_USB_NUM_IN_ENDPOINTS|macro|CONFIG_USB_NUM_IN_ENDPOINTS
-DECL|CONFIG_USB_NUM_OUT_ENDPOINTS|macro|CONFIG_USB_NUM_OUT_ENDPOINTS
 DECL|EP0_IDX|macro|EP0_IDX
 DECL|EP0_IN|macro|EP0_IN
 DECL|EP0_MPS|macro|EP0_MPS
@@ -26,19 +24,16 @@ DECL|HAL_PCD_ResetCallback|function|void HAL_PCD_ResetCallback(PCD_HandleTypeDef
 DECL|HAL_PCD_ResumeCallback|function|void HAL_PCD_ResumeCallback(PCD_HandleTypeDef *hpcd)
 DECL|HAL_PCD_SetupStageCallback|function|void HAL_PCD_SetupStageCallback(PCD_HandleTypeDef *hpcd)
 DECL|HAL_PCD_SuspendCallback|function|void HAL_PCD_SuspendCallback(PCD_HandleTypeDef *hpcd)
-DECL|NUM_BIDIR_EP|macro|NUM_BIDIR_EP
-DECL|NUM_IN_EP|macro|NUM_IN_EP
-DECL|NUM_OUT_EP|macro|NUM_OUT_EP
 DECL|SETUP_SIZE|macro|SETUP_SIZE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|USB_BTABLE_SIZE|macro|USB_BTABLE_SIZE
 DECL|cb|member|usb_dc_ep_callback cb; /** Endpoint callback function */
-DECL|ep_buf|member|u8_t ep_buf[NUM_OUT_EP][EP_MPS];
+DECL|ep_buf|member|u8_t ep_buf[CONFIG_USB_NUM_BIDIR_ENDPOINTS][EP_MPS];
 DECL|ep_mps|member|u16_t ep_mps; /** Endpoint max packet size */
 DECL|ep_stalled|member|u8_t ep_stalled; /** Endpoint stall flag */
 DECL|ep_type|member|u8_t ep_type; /** Endpoint type (STM32 HAL enum) */
-DECL|in_ep_state|member|struct usb_dc_stm32_ep_state in_ep_state[NUM_IN_EP];
-DECL|out_ep_state|member|struct usb_dc_stm32_ep_state out_ep_state[NUM_OUT_EP];
+DECL|in_ep_state|member|struct usb_dc_stm32_ep_state in_ep_state[CONFIG_USB_NUM_BIDIR_ENDPOINTS];
+DECL|out_ep_state|member|struct usb_dc_stm32_ep_state out_ep_state[CONFIG_USB_NUM_BIDIR_ENDPOINTS];
 DECL|pcd|member|PCD_HandleTypeDef pcd; /* Storage for the HAL_PCD api */
 DECL|pma_offset|member|u32_t pma_offset;
 DECL|read_count|member|u32_t read_count; /** Number of bytes in read buffer */
