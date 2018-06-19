@@ -1,3 +1,1 @@
-DECL|charmap|variable|charmap
-DECL|size_t|macro|size_t
-DECL|strncasecmp|function|strncasecmp(s1, s2, n)
+DECL|strncasecmp|function|strncasecmp(const char *s1, const char *s2, size_t n)
