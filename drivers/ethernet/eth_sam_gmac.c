@@ -2,9 +2,8 @@ DECL|MODULO_INC|macro|MODULO_INC
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|dcache_clean|function|static inline void dcache_clean(u32_t addr, u32_t size)
-DECL|dcache_clean|macro|dcache_clean
+DECL|dcache_enabled|variable|dcache_enabled
 DECL|dcache_invalidate|function|static inline void dcache_invalidate(u32_t addr, u32_t size)
-DECL|dcache_invalidate|macro|dcache_invalidate
 DECL|eth0_config|variable|eth0_config
 DECL|eth0_data|variable|eth0_data
 DECL|eth0_iface_init|function|static void eth0_iface_init(struct net_if *iface)
