@@ -1,4 +1,3 @@
-DECL|ARM_MPU_BASE|macro|ARM_MPU_BASE
 DECL|DEVICE_NON_SHAREABLE|macro|DEVICE_NON_SHAREABLE
 DECL|DEVICE_SHAREABLE|macro|DEVICE_SHAREABLE
 DECL|FULL_ACCESS|macro|FULL_ACCESS
@@ -65,20 +64,8 @@ DECL|SUB_REGION_7_DISABLED|macro|SUB_REGION_7_DISABLED
 DECL|_ARM_MPU_H_|macro|_ARM_MPU_H_
 DECL|arm_mpu_config|struct|struct arm_mpu_config {
 DECL|arm_mpu_region|struct|struct arm_mpu_region {
-DECL|arm_mpu|struct|struct arm_mpu {
 DECL|attr|member|u32_t attr;
 DECL|base|member|u32_t base;
-DECL|ctrl|member|volatile u32_t ctrl;
 DECL|mpu_regions|member|struct arm_mpu_region *mpu_regions;
 DECL|name|member|const char *name;
 DECL|num_regions|member|u32_t num_regions;
-DECL|rasr_a1|member|volatile u32_t rasr_a1;
-DECL|rasr_a2|member|volatile u32_t rasr_a2;
-DECL|rasr_a3|member|volatile u32_t rasr_a3;
-DECL|rasr|member|volatile u32_t rasr;
-DECL|rbar_a1|member|volatile u32_t rbar_a1;
-DECL|rbar_a2|member|volatile u32_t rbar_a2;
-DECL|rbar_a3|member|volatile u32_t rbar_a3;
-DECL|rbar|member|volatile u32_t rbar;
-DECL|rnr|member|volatile u32_t rnr;
-DECL|type|member|volatile u32_t type;
