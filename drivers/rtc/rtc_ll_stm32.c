@@ -2,6 +2,8 @@ DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|DEV_SEM|macro|DEV_SEM
 DECL|EPOCH_OFFSET|macro|EPOCH_OFFSET
+DECL|EXTI_LINE|macro|EXTI_LINE
+DECL|EXTI_LINE|macro|EXTI_LINE
 DECL|cb_fn|member|void (*cb_fn)(struct device *dev);
 DECL|ll_rtc_config|member|LL_RTC_InitTypeDef ll_rtc_config;
 DECL|pclken|member|struct stm32_pclken pclken;
