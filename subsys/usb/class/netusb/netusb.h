@@ -1,4 +1,12 @@
+DECL|CDC_ECM_INT_EP_ADDR|macro|CDC_ECM_INT_EP_ADDR
+DECL|CDC_ECM_IN_EP_ADDR|macro|CDC_ECM_IN_EP_ADDR
+DECL|CDC_ECM_OUT_EP_ADDR|macro|CDC_ECM_OUT_EP_ADDR
+DECL|CDC_EEM_IN_EP_ADDR|macro|CDC_EEM_IN_EP_ADDR
+DECL|CDC_EEM_OUT_EP_ADDR|macro|CDC_EEM_OUT_EP_ADDR
 DECL|NETUSB_MTU|macro|NETUSB_MTU
+DECL|RNDIS_INT_EP_ADDR|macro|RNDIS_INT_EP_ADDR
+DECL|RNDIS_IN_EP_ADDR|macro|RNDIS_IN_EP_ADDR
+DECL|RNDIS_OUT_EP_ADDR|macro|RNDIS_OUT_EP_ADDR
 DECL|class_handler|member|int (*class_handler)(struct usb_setup_packet *setup, s32_t *len,
 DECL|connect_media|member|int (*connect_media)(bool status);
 DECL|ecm_function|variable|ecm_function
