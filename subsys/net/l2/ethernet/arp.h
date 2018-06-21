@@ -17,6 +17,7 @@ DECL|net_arp_cb_t|typedef|typedef void (*net_arp_cb_t)(struct arp_entry *entry,
 DECL|net_arp_clear_cache|macro|net_arp_clear_cache
 DECL|net_arp_hdr|struct|struct net_arp_hdr {
 DECL|net_arp_init|macro|net_arp_init
+DECL|node|member|sys_snode_t node;
 DECL|opcode|member|u16_t opcode;
 DECL|pending|member|struct net_pkt *pending;
 DECL|protocol|member|u16_t protocol; /* PTYPE */
