@@ -15,6 +15,7 @@ DECL|arp_entry_register_pending|function|static void arp_entry_register_pending(
 DECL|arp_free_entries|variable|arp_free_entries
 DECL|arp_pending_entries|variable|arp_pending_entries
 DECL|arp_request_timeout|function|static void arp_request_timeout(struct k_work *work)
+DECL|arp_request_timer|variable|arp_request_timer
 DECL|arp_table|variable|arp_table
 DECL|arp_update|function|static inline void arp_update(struct net_if *iface, struct in_addr *src, struct net_eth_addr *hwaddr)
 DECL|if_get_addr|function|static inline struct in_addr *if_get_addr(struct net_if *iface)
