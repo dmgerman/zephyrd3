@@ -4,7 +4,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|arp_cache_initialized|variable|arp_cache_initialized
 DECL|arp_entries|variable|arp_entries
-DECL|arp_entry_cleanup|function|static void arp_entry_cleanup(struct arp_entry *entry)
+DECL|arp_entry_cleanup|function|static void arp_entry_cleanup(struct arp_entry *entry, bool pending)
 DECL|arp_entry_find_move_first|function|static inline struct arp_entry *arp_entry_find_move_first(struct net_if *iface, struct in_addr *dst)
 DECL|arp_entry_find_pending|function|struct arp_entry *arp_entry_find_pending(struct net_if *iface, struct in_addr *dst)
 DECL|arp_entry_find|function|static struct arp_entry *arp_entry_find(sys_slist_t *list,struct net_if *iface, struct in_addr *dst, sys_snode_t **previous)
