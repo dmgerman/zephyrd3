@@ -84,6 +84,7 @@ DECL|gatt_prepare_write|function|static int gatt_prepare_write(struct bt_conn *c
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|gatt_read_multiple_rsp|function|static void gatt_read_multiple_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_read_multiple|function|static int gatt_read_multiple(struct bt_conn *conn, struct bt_gatt_read_params *params)
+DECL|gatt_read_multiple|function|static int gatt_read_multiple(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|gatt_read_rsp|function|static void gatt_read_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_read_type_rsp|function|static void gatt_read_type_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_read_type|function|static int gatt_read_type(struct bt_conn *conn, struct bt_gatt_discover_params *params)
