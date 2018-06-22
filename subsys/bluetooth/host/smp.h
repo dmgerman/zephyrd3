@@ -76,7 +76,7 @@ DECL|bt_smp_security_request|struct|struct bt_smp_security_request {
 DECL|bt_smp_signing_info|struct|struct bt_smp_signing_info {
 DECL|code|member|u8_t code;
 DECL|csrk|member|u8_t csrk[16];
-DECL|ediv|member|u16_t ediv;
+DECL|ediv|member|u8_t ediv[2];
 DECL|e|member|u8_t e[16];
 DECL|init_key_dist|member|u8_t init_key_dist;
 DECL|io_capability|member|u8_t io_capability;
@@ -84,7 +84,7 @@ DECL|irk|member|u8_t irk[16];
 DECL|ltk|member|u8_t ltk[16];
 DECL|max_key_size|member|u8_t max_key_size;
 DECL|oob_flag|member|u8_t oob_flag;
-DECL|rand|member|u64_t rand;
+DECL|rand|member|u8_t rand[8];
 DECL|reason|member|u8_t reason;
 DECL|resp_key_dist|member|u8_t resp_key_dist;
 DECL|val|member|u8_t val[16];

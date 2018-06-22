@@ -23,7 +23,7 @@ DECL|bt_keys_store|function|static inline int bt_keys_store(struct bt_keys *keys
 DECL|bt_keys|struct|struct bt_keys {
 DECL|bt_ltk|struct|struct bt_ltk {
 DECL|cnt|member|u32_t cnt;
-DECL|ediv|member|u16_t ediv;
+DECL|ediv|member|u8_t ediv[2];
 DECL|enc_size|member|u8_t enc_size;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
