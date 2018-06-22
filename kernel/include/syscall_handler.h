@@ -39,3 +39,4 @@ DECL|_obj_init_check|enum|enum _obj_init_check {
 DECL|_obj_validation_check|function|static inline int _obj_validation_check(struct _k_object *ko,void *obj, enum k_objects otype, enum _obj_init_check init)
 DECL|_wordlist_cb_func_t|typedef|typedef void (*_wordlist_cb_func_t)(struct _k_object *ko, void *context);
 DECL|z_syscall_verify_msg|function|bool z_syscall_verify_msg(bool expr, const char *fmt, ...)
+DECL|z_user_string_nlen|function|static inline size_t z_user_string_nlen(const char *src, size_t maxlen,int *err)
