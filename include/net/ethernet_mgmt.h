@@ -18,7 +18,7 @@ DECL|_NET_ETHERNET_BASE|macro|_NET_ETHERNET_BASE
 DECL|_NET_ETHERNET_CODE|macro|_NET_ETHERNET_CODE
 DECL|_NET_ETHERNET_EVENT|macro|_NET_ETHERNET_EVENT
 DECL|_NET_ETHERNET_LAYER|macro|_NET_ETHERNET_LAYER
-DECL|__ETHERNET_MGMT_H_|macro|__ETHERNET_MGMT_H_
+DECL|__ETHERNET_MGMT_H__|macro|__ETHERNET_MGMT_H__
 DECL|auto_negotiation|member|bool auto_negotiation;
 DECL|ethernet_mgmt_raise_carrier_off_event|function|static inline void ethernet_mgmt_raise_carrier_off_event(struct net_if *iface)
 DECL|ethernet_mgmt_raise_carrier_on_event|function|static inline void ethernet_mgmt_raise_carrier_on_event(struct net_if *iface)
