@@ -37,17 +37,19 @@ DECL|SECURE_STACK_DUMP|macro|SECURE_STACK_DUMP
 DECL|SECURE_STACK_DUMP|macro|SECURE_STACK_DUMP
 DECL|STORE_xFAR|macro|STORE_xFAR
 DECL|STORE_xFAR|macro|STORE_xFAR
-DECL|_BusFault|function|static void _BusFault(const NANO_ESF *esf, int fromHardFault)
+DECL|_BusFault|function|static int _BusFault(NANO_ESF *esf, int fromHardFault)
 DECL|_DebugMonitor|function|static void _DebugMonitor(const NANO_ESF *esf)
-DECL|_FaultHandle|function|static u32_t _FaultHandle(const NANO_ESF *esf, int fault)
+DECL|_FaultHandle|function|static u32_t _FaultHandle(NANO_ESF *esf, int fault)
 DECL|_FaultInit|function|void _FaultInit(void)
 DECL|_FaultShow|function|static void _FaultShow(const NANO_ESF *esf, int fault)
 DECL|_FaultShow|function|static void _FaultShow(const NANO_ESF *esf, int fault)
 DECL|_Fault|function|void _Fault(NANO_ESF *esf, u32_t exc_return)
-DECL|_HardFault|function|static u32_t _HardFault(const NANO_ESF *esf)
-DECL|_MpuFaultIsRecoverable|function|static int _MpuFaultIsRecoverable(const NANO_ESF *esf)
-DECL|_MpuFault|function|static u32_t _MpuFault(const NANO_ESF *esf, int fromHardFault)
+DECL|_HardFault|function|static u32_t _HardFault(NANO_ESF *esf)
+DECL|_MemoryFaultIsRecoverable|function|static int _MemoryFaultIsRecoverable(NANO_ESF *esf)
+DECL|_MpuFault|function|static u32_t _MpuFault(NANO_ESF *esf, int fromHardFault)
 DECL|_ReservedException|function|static void _ReservedException(const NANO_ESF *esf, int fault)
 DECL|_SecureFault|function|static void _SecureFault(const NANO_ESF *esf)
 DECL|_SecureStackDump|function|static void _SecureStackDump(const NANO_ESF *secure_esf)
 DECL|_UsageFault|function|static u32_t _UsageFault(const NANO_ESF *esf)
+DECL|exceptions|variable|exceptions
+DECL|z_arch_user_string_nlen|variable|z_arch_user_string_nlen
