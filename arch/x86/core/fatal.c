@@ -39,12 +39,14 @@ DECL|_main_tss|variable|_main_tss
 DECL|args|member|u32_t args;
 DECL|dump_entry_flags|function|static void dump_entry_flags(x86_page_entry_data_t flags)
 DECL|dump_mmu_flags|function|static void dump_mmu_flags(void *addr)
+DECL|exceptions|variable|exceptions
 DECL|generic_exc_handle|function|static FUNC_NORETURN void generic_exc_handle(unsigned int vector, const NANO_ESF *pEsf)
 DECL|nano_esf|member|NANO_ESF nano_esf;
 DECL|next|member|u32_t next;
 DECL|oops_esf|struct|struct oops_esf {
-DECL|page_fault_handler|function|FUNC_NORETURN void page_fault_handler(const NANO_ESF *pEsf)
+DECL|page_fault_handler|function|void page_fault_handler(NANO_ESF *pEsf)
 DECL|reason|member|unsigned int reason;
 DECL|ret_addr|member|u32_t ret_addr;
 DECL|stack_frame|struct|struct stack_frame {
 DECL|unwind_stack|function|static void unwind_stack(u32_t base_ptr)
+DECL|z_arch_user_string_nlen|variable|z_arch_user_string_nlen
