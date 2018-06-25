@@ -1,14 +1,15 @@
-DECL|ACTUAL|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
+DECL|ACTUAL|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
 DECL|CID_ZEPHYR|macro|CID_ZEPHYR
-DECL|CTL_t|enumerator|enum temperature { ONOFF_t = 0x01, LEVEL_t, CTL_t, IGNORE_t = 0xFF };
-DECL|CTL|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
-DECL|IGNORE_t|enumerator|enum temperature { ONOFF_t = 0x01, LEVEL_t, CTL_t, IGNORE_t = 0xFF };
-DECL|IGNORE|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
-DECL|LEVEL_t|enumerator|enum temperature { ONOFF_t = 0x01, LEVEL_t, CTL_t, IGNORE_t = 0xFF };
-DECL|LEVEL|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
-DECL|LINEAR|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
-DECL|ONOFF_t|enumerator|enum temperature { ONOFF_t = 0x01, LEVEL_t, CTL_t, IGNORE_t = 0xFF };
-DECL|ONOFF|enumerator|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
+DECL|CTL_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP};
+DECL|CTL|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
+DECL|IGNORE_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP};
+DECL|IGNORE|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
+DECL|LEVEL_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP};
+DECL|LEVEL|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
+DECL|LINEAR|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
+DECL|ONOFF_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP};
+DECL|ONOFF|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
+DECL|ONPOWERUP|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
 DECL|_DEVICE_COMPOSITION_H|macro|_DEVICE_COMPOSITION_H
 DECL|actual|member|u16_t actual;
 DECL|current|member|int current;
@@ -37,7 +38,7 @@ DECL|light_lightness_state|struct|struct light_lightness_state {
 DECL|lightness_def|member|u16_t lightness_def;
 DECL|lightness_range_max|member|u16_t lightness_range_max;
 DECL|lightness_range_min|member|u16_t lightness_range_min;
-DECL|lightness|enum|enum lightness { ONOFF = 0x01, LEVEL, ACTUAL, LINEAR, CTL, IGNORE = 0xFF };
+DECL|lightness|enum|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE};
 DECL|lightness|member|u16_t lightness;
 DECL|linear|member|u16_t linear;
 DECL|model_instance|member|u8_t model_instance;
@@ -47,12 +48,13 @@ DECL|model_instance|member|u8_t model_instance;
 DECL|onoff|member|u8_t onoff;
 DECL|onpowerup|member|u8_t onpowerup;
 DECL|previous|member|int previous;
+DECL|previous|member|u8_t previous;
 DECL|status_code|member|u8_t status_code;
 DECL|status_code|member|u8_t status_code;
 DECL|temp_def|member|u16_t temp_def;
 DECL|temp_last|member|u16_t temp_last;
 DECL|temp_range_max|member|u16_t temp_range_max;
 DECL|temp_range_min|member|u16_t temp_range_min;
-DECL|temperature|enum|enum temperature { ONOFF_t = 0x01, LEVEL_t, CTL_t, IGNORE_t = 0xFF };
+DECL|temperature|enum|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP};
 DECL|temp|member|u16_t temp;
 DECL|vendor_state|struct|struct vendor_state {
