@@ -18,6 +18,7 @@ DECL|_timer_cycle_get_32|function|u32_t _timer_cycle_get_32(void)
 DECL|_timer_idle_enter|function|void _timer_idle_enter(s32_t sys_ticks)
 DECL|_timer_idle_exit|function|void _timer_idle_exit(void)
 DECL|expected_sys_ticks|variable|expected_sys_ticks
+DECL|program_max_cycles|function|static inline void program_max_cycles(void)
 DECL|rtc1_nrf5_isr|function|void rtc1_nrf5_isr(void *arg)
 DECL|rtc_announce_set_next|function|static void rtc_announce_set_next(void)
 DECL|rtc_compare_set|function|static void rtc_compare_set(u32_t rtc_ticks)
