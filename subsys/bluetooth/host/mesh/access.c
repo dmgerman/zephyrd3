@@ -21,7 +21,7 @@ DECL|bt_mesh_model_send|function|int bt_mesh_model_send(struct bt_mesh_model *mo
 DECL|bt_mesh_primary_addr|function|u16_t bt_mesh_primary_addr(void)
 DECL|dev_comp|variable|dev_comp
 DECL|dev_primary_addr|variable|dev_primary_addr
-DECL|find_op|function|static const struct bt_mesh_model_op *find_op(struct bt_mesh_model *models, u8_t model_count, u16_t app_idx, u32_t opcode, struct bt_mesh_model **model)
+DECL|find_op|function|static const struct bt_mesh_model_op *find_op(struct bt_mesh_model *models, u8_t model_count, u16_t dst, u16_t app_idx, u32_t opcode, struct bt_mesh_model **model)
 DECL|get_opcode|function|static int get_opcode(struct net_buf_simple *buf, u32_t *opcode)
 DECL|id|member|const u16_t id;
 DECL|init|member|int (*const init)(struct bt_mesh_model *model, bool primary);
