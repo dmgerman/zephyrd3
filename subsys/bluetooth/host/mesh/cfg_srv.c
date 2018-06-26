@@ -3,9 +3,10 @@ DECL|DEFAULT_TTL|macro|DEFAULT_TTL
 DECL|IDX_LEN|macro|IDX_LEN
 DECL|KEY_LIST_LEN|macro|KEY_LIST_LEN
 DECL|__packed|variable|__packed
-DECL|_mod_pub_set|function|static u8_t _mod_pub_set(struct bt_mesh_model *model, u16_t pub_addr, u16_t app_idx, u8_t cred_flag, u8_t ttl, u8_t period, u8_t retransmit)
+DECL|_mod_pub_set|function|static u8_t _mod_pub_set(struct bt_mesh_model *model, u16_t pub_addr, u16_t app_idx, u8_t cred_flag, u8_t ttl, u8_t period, u8_t retransmit, bool store)
 DECL|_mod_unbind|function|static void _mod_unbind(struct bt_mesh_model *mod, struct bt_mesh_elem *elem,bool vnd, bool primary, void *user_data)
 DECL|addr|member|u16_t addr;
+DECL|app_idx|member|u16_t app_idx;
 DECL|app_key_add|function|static void app_key_add(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|app_key_del|function|static void app_key_del(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|app_key_get|function|static void app_key_get(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -15,7 +16,7 @@ DECL|app_key_update|function|static void app_key_update(struct bt_mesh_model *mo
 DECL|beacon_get|function|static void beacon_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|beacon_set|function|static void beacon_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|bt_mesh_app_key_alloc|function|struct bt_mesh_app_key *bt_mesh_app_key_alloc(u16_t app_idx)
-DECL|bt_mesh_app_key_del|function|void bt_mesh_app_key_del(struct bt_mesh_app_key *key)
+DECL|bt_mesh_app_key_del|function|void bt_mesh_app_key_del(struct bt_mesh_app_key *key, bool store)
 DECL|bt_mesh_beacon_get|function|u8_t bt_mesh_beacon_get(void)
 DECL|bt_mesh_cfg_get|function|struct bt_mesh_cfg_srv *bt_mesh_cfg_get(void)
 DECL|bt_mesh_cfg_reset|function|void bt_mesh_cfg_reset(void)
@@ -30,7 +31,7 @@ DECL|bt_mesh_label_uuid_get|function|u8_t *bt_mesh_label_uuid_get(u16_t addr)
 DECL|bt_mesh_net_transmit_get|function|u8_t bt_mesh_net_transmit_get(void)
 DECL|bt_mesh_relay_get|function|u8_t bt_mesh_relay_get(void)
 DECL|bt_mesh_relay_retransmit_get|function|u8_t bt_mesh_relay_retransmit_get(void)
-DECL|bt_mesh_subnet_del|function|void bt_mesh_subnet_del(struct bt_mesh_subnet *sub)
+DECL|bt_mesh_subnet_del|function|void bt_mesh_subnet_del(struct bt_mesh_subnet *sub, bool store)
 DECL|comp_add_elem|function|static int comp_add_elem(struct net_buf_simple *buf, struct bt_mesh_elem *elem, bool primary)
 DECL|comp_get_page_0|function|static int comp_get_page_0(struct net_buf_simple *buf)
 DECL|conf_is_valid|function|static bool conf_is_valid(struct bt_mesh_cfg_srv *cfg)
@@ -88,7 +89,7 @@ DECL|mod_sub_va_del|function|static void mod_sub_va_del(struct bt_mesh_model *mo
 DECL|mod_sub_va_del|function|static void mod_sub_va_del(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_va_overwrite|function|static void mod_sub_va_overwrite(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|mod_sub_va_overwrite|function|static void mod_sub_va_overwrite(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|mod_unbind|function|static u8_t mod_unbind(struct bt_mesh_model *model, u16_t key_idx)
+DECL|mod_unbind|function|static u8_t mod_unbind(struct bt_mesh_model *model, u16_t key_idx, bool store)
 DECL|net_idx|member|u16_t net_idx;
 DECL|net_key_add|function|static void net_key_add(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|net_key_del|function|static void net_key_del(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -109,7 +110,9 @@ DECL|send_krp_status|function|static void send_krp_status(struct bt_mesh_model *
 DECL|send_mod_pub_status|function|static void send_mod_pub_status(struct bt_mesh_model *cfg_mod,struct bt_mesh_msg_ctx *ctx, u16_t elem_addr, u16_t pub_addr, bool vnd, struct bt_mesh_model *mod, u8_t status, u8_t *mod_id)
 DECL|send_mod_sub_status|function|static void send_mod_sub_status(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, u8_t status, u16_t elem_addr, u16_t sub_addr, u8_t *mod_id, bool vnd)
 DECL|send_net_key_status|function|static void send_net_key_status(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, u16_t idx, u8_t status)
+DECL|store|member|bool store;
 DECL|ttl|member|u8_t ttl;
+DECL|unbind_data|struct|struct unbind_data {
 DECL|uuid|member|u8_t uuid[16];
 DECL|va_add|function|static u8_t va_add(u8_t *label_uuid, u16_t *addr)
 DECL|va_del|function|static u8_t va_del(u8_t *label_uuid, u16_t *addr)
