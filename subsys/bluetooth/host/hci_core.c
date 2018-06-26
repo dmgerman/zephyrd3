@@ -29,6 +29,7 @@ DECL|bt_br_set_discoverable|function|int bt_br_set_discoverable(bool enable)
 DECL|bt_buf_get_cmd_complete|function|struct net_buf *bt_buf_get_cmd_complete(s32_t timeout)
 DECL|bt_buf_get_rx|function|struct net_buf *bt_buf_get_rx(enum bt_buf_type type, s32_t timeout)
 DECL|bt_clear_all_pairings|function|static int bt_clear_all_pairings(void)
+DECL|bt_data_parse|function|void bt_data_parse(struct net_buf_simple *ad, bool (*func)(struct bt_data *data, void *user_data), void *user_data)
 DECL|bt_dev_show_info|function|void bt_dev_show_info(void)
 DECL|bt_dev_show_info|function|void bt_dev_show_info(void)
 DECL|bt_dev|variable|bt_dev
