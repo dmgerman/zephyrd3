@@ -6,6 +6,7 @@ DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HELP_ADDR_LE|macro|HELP_ADDR_LE
 DECL|HELP_NONE|macro|HELP_NONE
+DECL|NAME_LEN|macro|NAME_LEN
 DECL|SDP_CLIENT_USER_BUF_LEN|macro|SDP_CLIENT_USER_BUF_LEN
 DECL|ad_discov|variable|ad_discov
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
@@ -66,6 +67,7 @@ DECL|conn_callbacks|variable|conn_callbacks
 DECL|connected|function|static void connected(struct bt_conn *conn, u8_t err)
 DECL|current_prompt|function|static const char *current_prompt(void)
 DECL|current_prompt|function|static const char *current_prompt(void)
+DECL|data_cb|function|static bool data_cb(struct bt_data *data, void *user_data)
 DECL|default_conn|variable|default_conn
 DECL|device_found|function|static void device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype, struct net_buf_simple *buf)
 DECL|disconnected|function|static void disconnected(struct bt_conn *conn, u8_t reason)
