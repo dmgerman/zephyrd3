@@ -47,7 +47,7 @@ DECL|test_ptp_clock_iface_2|function|static void test_ptp_clock_iface_2(void)
 DECL|test_ptp_clock_iface|function|static void test_ptp_clock_iface(int idx)
 DECL|test_ptp_clock_interfaces|function|static void test_ptp_clock_interfaces(void)
 DECL|test_started|variable|test_started
-DECL|timestamp_to_nsec|function|u64_t timestamp_to_nsec(struct net_ptp_time *ts)
+DECL|timestamp_to_nsec|function|static u64_t timestamp_to_nsec(struct net_ptp_time *ts)
 DECL|time|member|struct net_ptp_time time;
 DECL|total_if_count|member|int total_if_count;
 DECL|user_data|struct|struct user_data {
