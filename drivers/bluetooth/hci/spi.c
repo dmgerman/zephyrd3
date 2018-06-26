@@ -14,6 +14,7 @@ DECL|HCI_ACL|macro|HCI_ACL
 DECL|HCI_CMD|macro|HCI_CMD
 DECL|HCI_EVT|macro|HCI_EVT
 DECL|HCI_SCO|macro|HCI_SCO
+DECL|IRQ_HIGH_MAX_READ|macro|IRQ_HIGH_MAX_READ
 DECL|PACKET_TYPE|macro|PACKET_TYPE
 DECL|READY_NOW|macro|READY_NOW
 DECL|SPI_MAX_MSG_LEN|macro|SPI_MAX_MSG_LEN
@@ -22,24 +23,31 @@ DECL|SPI_WRITE|macro|SPI_WRITE
 DECL|STATUS_HEADER_READY|macro|STATUS_HEADER_READY
 DECL|STATUS_HEADER_TOREAD|macro|STATUS_HEADER_TOREAD
 DECL|_bt_spi_init|function|static int _bt_spi_init(struct device *unused)
-DECL|bt_spi_configure_cs|function|static int bt_spi_configure_cs(void)
-DECL|bt_spi_configure_cs|macro|bt_spi_configure_cs
+DECL|attempts|variable|attempts
 DECL|bt_spi_get_cmd|function|static inline u16_t bt_spi_get_cmd(u8_t *txmsg)
 DECL|bt_spi_get_evt|function|static inline u16_t bt_spi_get_evt(u8_t *rxmsg)
 DECL|bt_spi_handle_vendor_evt|function|static void bt_spi_handle_vendor_evt(u8_t *rxmsg)
 DECL|bt_spi_isr|function|static void bt_spi_isr(struct device *unused1, struct gpio_callback *unused2, unsigned int unused3)
-DECL|bt_spi_kick_cs|function|static void bt_spi_kick_cs(void)
-DECL|bt_spi_kick_cs|macro|bt_spi_kick_cs
 DECL|bt_spi_open|function|static int bt_spi_open(void)
-DECL|bt_spi_release_cs|function|static void bt_spi_release_cs(void)
-DECL|bt_spi_release_cs|macro|bt_spi_release_cs
 DECL|bt_spi_rx_thread|function|static void bt_spi_rx_thread(void)
 DECL|bt_spi_send|function|static int bt_spi_send(struct net_buf *buf)
 DECL|bt_spi_transceive|function|static inline int bt_spi_transceive(void *tx, u32_t tx_len, void *rx, u32_t rx_len)
+DECL|configure_cs|function|static int configure_cs(void)
+DECL|configure_cs|macro|configure_cs
 DECL|cs_dev|variable|cs_dev
 DECL|drv|variable|drv
+DECL|exit_irq_high_loop|function|static bool exit_irq_high_loop(void)
+DECL|exit_irq_high_loop|macro|exit_irq_high_loop
 DECL|gpio_cb|variable|gpio_cb
+DECL|init_irq_high_loop|function|static void init_irq_high_loop(void)
+DECL|init_irq_high_loop|macro|init_irq_high_loop
 DECL|irq_dev|variable|irq_dev
+DECL|irq_pin_high|function|static bool irq_pin_high(void)
+DECL|irq_pin_high|macro|irq_pin_high
+DECL|kick_cs|function|static void kick_cs(void)
+DECL|kick_cs|macro|kick_cs
+DECL|release_cs|function|static void release_cs(void)
+DECL|release_cs|macro|release_cs
 DECL|rst_dev|variable|rst_dev
 DECL|rx_thread_data|variable|rx_thread_data
 DECL|rxmsg|variable|rxmsg
