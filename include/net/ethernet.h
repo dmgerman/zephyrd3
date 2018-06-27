@@ -38,7 +38,7 @@ DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
-DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *eth_dev);
+DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *dev);
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
