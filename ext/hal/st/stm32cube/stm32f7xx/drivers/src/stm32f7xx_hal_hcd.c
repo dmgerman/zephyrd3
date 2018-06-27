@@ -15,6 +15,8 @@ DECL|HAL_HCD_IRQHandler|function|void HAL_HCD_IRQHandler(HCD_HandleTypeDef *hhcd
 DECL|HAL_HCD_Init|function|HAL_StatusTypeDef HAL_HCD_Init(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_MspDeInit|function|__weak void HAL_HCD_MspDeInit(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_MspInit|function|__weak void HAL_HCD_MspInit(HCD_HandleTypeDef *hhcd)
+DECL|HAL_HCD_PortDisabled_Callback|function|__weak void HAL_HCD_PortDisabled_Callback(HCD_HandleTypeDef *hhcd)
+DECL|HAL_HCD_PortEnabled_Callback|function|__weak void HAL_HCD_PortEnabled_Callback(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_ResetPort|function|HAL_StatusTypeDef HAL_HCD_ResetPort(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_SOF_Callback|function|__weak void HAL_HCD_SOF_Callback(HCD_HandleTypeDef *hhcd)
 DECL|HAL_HCD_Start|function|HAL_StatusTypeDef HAL_HCD_Start(HCD_HandleTypeDef *hhcd)

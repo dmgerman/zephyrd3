@@ -1,4 +1,7 @@
 DECL|AutoReloadPreload|member|uint32_t AutoReloadPreload; /*!< Specifies the auto-reload preload.
+DECL|Base_MspDeInitCallback|member|void (* Base_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Base Msp DeInit Callback */
+DECL|Base_MspInitCallback|member|void (* Base_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Base Msp Init Callback */
+DECL|BreakCallback|member|void (* BreakCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Break Callback */
 DECL|Channel|member|HAL_TIM_ActiveChannel Channel; /*!< Active channel */
 DECL|ClearInputFilter|member|uint32_t ClearInputFilter; /*!< TIM Clear Input filter.
 DECL|ClearInputPolarity|member|uint32_t ClearInputPolarity; /*!< TIM Clear Input polarity.
@@ -10,20 +13,49 @@ DECL|ClockFilter|member|uint32_t ClockFilter; /*!< TIM clock filter.
 DECL|ClockPolarity|member|uint32_t ClockPolarity; /*!< TIM clock polarity.
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< TIM clock prescaler.
 DECL|ClockSource|member|uint32_t ClockSource; /*!< TIM clock sources.
+DECL|CommutationCallback|member|void (* CommutationCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Commutation Callback */
 DECL|CounterMode|member|uint32_t CounterMode; /*!< Specifies the counter mode.
 DECL|EncoderMode|member|uint32_t EncoderMode; /*!< Specifies the active edge of the input signal.
+DECL|Encoder_MspDeInitCallback|member|void (* Encoder_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Encoder Msp DeInit Callback */
+DECL|Encoder_MspInitCallback|member|void (* Encoder_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Encoder Msp Init Callback */
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Error Callback */
 DECL|HAL_TIM_ACTIVE_CHANNEL_1|enumerator|HAL_TIM_ACTIVE_CHANNEL_1 = 0x01U, /*!< The active channel is 1 */
 DECL|HAL_TIM_ACTIVE_CHANNEL_2|enumerator|HAL_TIM_ACTIVE_CHANNEL_2 = 0x02U, /*!< The active channel is 2 */
 DECL|HAL_TIM_ACTIVE_CHANNEL_3|enumerator|HAL_TIM_ACTIVE_CHANNEL_3 = 0x04U, /*!< The active channel is 3 */
 DECL|HAL_TIM_ACTIVE_CHANNEL_4|enumerator|HAL_TIM_ACTIVE_CHANNEL_4 = 0x08U, /*!< The active channel is 4 */
 DECL|HAL_TIM_ACTIVE_CHANNEL_CLEARED|enumerator|HAL_TIM_ACTIVE_CHANNEL_CLEARED = 0x00U /*!< All active channels cleared */
 DECL|HAL_TIM_ActiveChannel|typedef|}HAL_TIM_ActiveChannel;
+DECL|HAL_TIM_BASE_MSPDEINIT_CB_ID|enumerator|HAL_TIM_BASE_MSPDEINIT_CB_ID = 0x01U, /*!< TIM Base MspDeInit Callback ID */
+DECL|HAL_TIM_BASE_MSPINIT_CB_ID|enumerator|HAL_TIM_BASE_MSPINIT_CB_ID = 0x00U, /*!< TIM Base MspInit Callback ID */
+DECL|HAL_TIM_BREAK_CB_ID|enumerator|HAL_TIM_BREAK_CB_ID = 0x15U /*!< TIM Break Callback ID */
+DECL|HAL_TIM_COMMUTATION_CB_ID|enumerator|HAL_TIM_COMMUTATION_CB_ID = 0x14U, /*!< TIM Commutation Callback ID */
+DECL|HAL_TIM_CallbackIDTypeDef|typedef|}HAL_TIM_CallbackIDTypeDef;
+DECL|HAL_TIM_ENCODER_MSPDEINIT_CB_ID|enumerator|HAL_TIM_ENCODER_MSPDEINIT_CB_ID = 0x0BU, /*!< TIM Encoder MspDeInit Callback ID */
+DECL|HAL_TIM_ENCODER_MSPINIT_CB_ID|enumerator|HAL_TIM_ENCODER_MSPINIT_CB_ID = 0x0AU, /*!< TIM Encoder MspInit Callback ID */
+DECL|HAL_TIM_ERROR_CB_ID|enumerator|HAL_TIM_ERROR_CB_ID = 0x13U, /*!< TIM Error Callback ID */
+DECL|HAL_TIM_HALL_SENSOR_MSPDEINIT_CB_ID|enumerator|HAL_TIM_HALL_SENSOR_MSPDEINIT_CB_ID = 0x0DU, /*!< TIM Encoder MspDeInit Callback ID */
+DECL|HAL_TIM_HALL_SENSOR_MSPINIT_CB_ID|enumerator|HAL_TIM_HALL_SENSOR_MSPINIT_CB_ID = 0x0CU, /*!< TIM Encoder MspDeInit Callback ID */
+DECL|HAL_TIM_IC_CAPTURE_CB_ID|enumerator|HAL_TIM_IC_CAPTURE_CB_ID = 0x10U, /*!< TIM Input Capture Callback ID */
+DECL|HAL_TIM_IC_MSPDEINIT_CB_ID|enumerator|HAL_TIM_IC_MSPDEINIT_CB_ID = 0x03U, /*!< TIM IC MspDeInit Callback ID */
+DECL|HAL_TIM_IC_MSPINIT_CB_ID|enumerator|HAL_TIM_IC_MSPINIT_CB_ID = 0x02U, /*!< TIM IC MspInit Callback ID */
+DECL|HAL_TIM_OC_DELAY_ELAPSED_CB_ID|enumerator|HAL_TIM_OC_DELAY_ELAPSED_CB_ID = 0x11U, /*!< TIM Output Compare Delay Elapsed Callback ID */
+DECL|HAL_TIM_OC_MSPDEINIT_CB_ID|enumerator|HAL_TIM_OC_MSPDEINIT_CB_ID = 0x05U, /*!< TIM OC MspDeInit Callback ID */
+DECL|HAL_TIM_OC_MSPINIT_CB_ID|enumerator|HAL_TIM_OC_MSPINIT_CB_ID = 0x04U, /*!< TIM OC MspInit Callback ID */
+DECL|HAL_TIM_ONE_PULSE_MSPDEINIT_CB_ID|enumerator|HAL_TIM_ONE_PULSE_MSPDEINIT_CB_ID = 0x09U, /*!< TIM One Pulse MspDeInit Callback ID */
+DECL|HAL_TIM_ONE_PULSE_MSPINIT_CB_ID|enumerator|HAL_TIM_ONE_PULSE_MSPINIT_CB_ID = 0x08U, /*!< TIM One Pulse MspInit Callback ID */
+DECL|HAL_TIM_PERIOD_ELAPSED_CB_ID|enumerator|HAL_TIM_PERIOD_ELAPSED_CB_ID = 0x0EU, /*!< TIM Period Elapsed Callback ID */
+DECL|HAL_TIM_PWM_MSPDEINIT_CB_ID|enumerator|HAL_TIM_PWM_MSPDEINIT_CB_ID = 0x07U, /*!< TIM PWM MspDeInit Callback ID */
+DECL|HAL_TIM_PWM_MSPINIT_CB_ID|enumerator|HAL_TIM_PWM_MSPINIT_CB_ID = 0x06U, /*!< TIM PWM MspInit Callback ID */
+DECL|HAL_TIM_PWM_PULSE_FINISHED_CB_ID|enumerator|HAL_TIM_PWM_PULSE_FINISHED_CB_ID = 0x12U, /*!< TIM PWM Pulse Finished Callback ID */
 DECL|HAL_TIM_STATE_BUSY|enumerator|HAL_TIM_STATE_BUSY = 0x02U, /*!< An internal process is ongoing */
 DECL|HAL_TIM_STATE_ERROR|enumerator|HAL_TIM_STATE_ERROR = 0x04U /*!< Reception process is ongoing */
 DECL|HAL_TIM_STATE_READY|enumerator|HAL_TIM_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_TIM_STATE_RESET|enumerator|HAL_TIM_STATE_RESET = 0x00U, /*!< Peripheral not yet initialized or disabled */
 DECL|HAL_TIM_STATE_TIMEOUT|enumerator|HAL_TIM_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_TIM_StateTypeDef|typedef|}HAL_TIM_StateTypeDef;
+DECL|HAL_TIM_TRIGGER_CB_ID|enumerator|HAL_TIM_TRIGGER_CB_ID = 0x0FU, /*!< TIM Trigger Callback ID */
+DECL|HallSensor_MspDeInitCallback|member|void (* HallSensor_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Hall Sensor Msp DeInit Callback */
+DECL|HallSensor_MspInitCallback|member|void (* HallSensor_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Hall Sensor Msp Init Callback */
 DECL|IC1Filter|member|uint32_t IC1Filter; /*!< Specifies the input capture filter.
 DECL|IC1Polarity|member|uint32_t IC1Polarity; /*!< Specifies the active edge of the input signal.
 DECL|IC1Prescaler|member|uint32_t IC1Prescaler; /*!< Specifies the Input Capture Prescaler.
@@ -39,6 +71,9 @@ DECL|ICPolarity|member|uint32_t ICPolarity; /*!< Specifies the active edge of th
 DECL|ICPrescaler|member|uint32_t ICPrescaler; /*!< Specifies the Input Capture Prescaler.
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
 DECL|ICSelection|member|uint32_t ICSelection; /*!< Specifies the input.
+DECL|IC_CaptureCallback|member|void (* IC_CaptureCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Input Capture Callback */
+DECL|IC_MspDeInitCallback|member|void (* IC_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM IC Msp DeInit Callback */
+DECL|IC_MspInitCallback|member|void (* IC_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM IC Msp Init Callback */
 DECL|IS_TIM_AUTOMATIC_OUTPUT_STATE|macro|IS_TIM_AUTOMATIC_OUTPUT_STATE
 DECL|IS_TIM_AUTORELOAD_PRELOAD|macro|IS_TIM_AUTORELOAD_PRELOAD
 DECL|IS_TIM_BREAK_POLARITY|macro|IS_TIM_BREAK_POLARITY
@@ -99,6 +134,15 @@ DECL|OCNPolarity|member|uint32_t OCNPolarity; /*!< Specifies the complementary o
 DECL|OCNPolarity|member|uint32_t OCNPolarity; /*!< Specifies the complementary output polarity.
 DECL|OCPolarity|member|uint32_t OCPolarity; /*!< Specifies the output polarity.
 DECL|OCPolarity|member|uint32_t OCPolarity; /*!< Specifies the output polarity.
+DECL|OC_DelayElapsedCallback|member|void (* OC_DelayElapsedCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Output Compare Delay Elapsed Callback */
+DECL|OC_MspDeInitCallback|member|void (* OC_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM OC Msp DeInit Callback */
+DECL|OC_MspInitCallback|member|void (* OC_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM OC Msp Init Callback */
+DECL|OnePulse_MspDeInitCallback|member|void (* OnePulse_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM One Pulse Msp DeInit Callback */
+DECL|OnePulse_MspInitCallback|member|void (* OnePulse_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM One Pulse Msp Init Callback */
+DECL|PWM_MspDeInitCallback|member|void (* PWM_MspDeInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM PWM Msp DeInit Callback */
+DECL|PWM_MspInitCallback|member|void (* PWM_MspInitCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM PWM Msp Init Callback */
+DECL|PWM_PulseFinishedCallback|member|void (* PWM_PulseFinishedCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM PWM Pulse Finished Callback */
+DECL|PeriodElapsedCallback|member|void (* PeriodElapsedCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Period Elapsed Callback */
 DECL|Period|member|uint32_t Period; /*!< Specifies the period value to be loaded into the active
 DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the prescaler value used to divide the TIM clock.
 DECL|Pulse|member|uint32_t Pulse; /*!< Specifies the pulse value to be loaded into the Capture Compare Register.
@@ -326,6 +370,7 @@ DECL|TIM_TS_NONE|macro|TIM_TS_NONE
 DECL|TIM_TS_TI1FP1|macro|TIM_TS_TI1FP1
 DECL|TIM_TS_TI1F_ED|macro|TIM_TS_TI1F_ED
 DECL|TIM_TS_TI2FP2|macro|TIM_TS_TI2FP2
+DECL|TriggerCallback|member|void (* TriggerCallback) (struct __TIM_HandleTypeDef *htim); /*!< TIM Trigger Callback */
 DECL|TriggerFilter|member|uint32_t TriggerFilter; /*!< Input trigger filter
 DECL|TriggerPolarity|member|uint32_t TriggerPolarity; /*!< Input Trigger polarity
 DECL|TriggerPrescaler|member|uint32_t TriggerPrescaler; /*!< Input trigger prescaler
@@ -356,4 +401,6 @@ DECL|__HAL_TIM_SET_PRESCALER|macro|__HAL_TIM_SET_PRESCALER
 DECL|__HAL_TIM_URS_DISABLE|macro|__HAL_TIM_URS_DISABLE
 DECL|__HAL_TIM_URS_ENABLE|macro|__HAL_TIM_URS_ENABLE
 DECL|__STM32F7xx_HAL_TIM_H|macro|__STM32F7xx_HAL_TIM_H
+DECL|__TIM_HandleTypeDef|struct|typedef struct __TIM_HandleTypeDef
 DECL|hdma|member|DMA_HandleTypeDef *hdma[7]; /*!< DMA Handlers array
+DECL|pTIM_CallbackTypeDef|typedef|typedef void (*pTIM_CallbackTypeDef)(TIM_HandleTypeDef * htim); /*!< pointer to the TIM callback function */

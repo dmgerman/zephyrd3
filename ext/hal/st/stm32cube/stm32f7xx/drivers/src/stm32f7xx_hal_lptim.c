@@ -29,6 +29,7 @@ DECL|HAL_LPTIM_PWM_Stop|function|HAL_StatusTypeDef HAL_LPTIM_PWM_Stop(LPTIM_Hand
 DECL|HAL_LPTIM_ReadAutoReload|function|uint32_t HAL_LPTIM_ReadAutoReload(LPTIM_HandleTypeDef *hlptim)
 DECL|HAL_LPTIM_ReadCompare|function|uint32_t HAL_LPTIM_ReadCompare(LPTIM_HandleTypeDef *hlptim)
 DECL|HAL_LPTIM_ReadCounter|function|uint32_t HAL_LPTIM_ReadCounter(LPTIM_HandleTypeDef *hlptim)
+DECL|HAL_LPTIM_RegisterCallback|function|HAL_StatusTypeDef HAL_LPTIM_RegisterCallback(LPTIM_HandleTypeDef *hlptim, HAL_LPTIM_CallbackIDTypeDef CallbackID, pLPTIM_CallbackTypeDef pCallback)
 DECL|HAL_LPTIM_SetOnce_Start_IT|function|HAL_StatusTypeDef HAL_LPTIM_SetOnce_Start_IT(LPTIM_HandleTypeDef *hlptim, uint32_t Period, uint32_t Pulse)
 DECL|HAL_LPTIM_SetOnce_Start|function|HAL_StatusTypeDef HAL_LPTIM_SetOnce_Start(LPTIM_HandleTypeDef *hlptim, uint32_t Period, uint32_t Pulse)
 DECL|HAL_LPTIM_SetOnce_Stop_IT|function|HAL_StatusTypeDef HAL_LPTIM_SetOnce_Stop_IT(LPTIM_HandleTypeDef *hlptim)
@@ -38,3 +39,4 @@ DECL|HAL_LPTIM_TimeOut_Start|function|HAL_StatusTypeDef HAL_LPTIM_TimeOut_Start(
 DECL|HAL_LPTIM_TimeOut_Stop_IT|function|HAL_StatusTypeDef HAL_LPTIM_TimeOut_Stop_IT(LPTIM_HandleTypeDef *hlptim)
 DECL|HAL_LPTIM_TimeOut_Stop|function|HAL_StatusTypeDef HAL_LPTIM_TimeOut_Stop(LPTIM_HandleTypeDef *hlptim)
 DECL|HAL_LPTIM_TriggerCallback|function|__weak void HAL_LPTIM_TriggerCallback(LPTIM_HandleTypeDef *hlptim)
+DECL|HAL_LPTIM_UnRegisterCallback|function|HAL_StatusTypeDef HAL_LPTIM_UnRegisterCallback(LPTIM_HandleTypeDef *hlptim, HAL_LPTIM_CallbackIDTypeDef CallbackID)

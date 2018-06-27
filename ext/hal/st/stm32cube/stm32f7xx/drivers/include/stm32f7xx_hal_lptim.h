@@ -1,12 +1,28 @@
 DECL|ActiveEdge|member|uint32_t ActiveEdge; /*!< Selects the Trigger active edge.
+DECL|AutoReloadMatchCallback|member|void (* AutoReloadMatchCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Auto Reload Match Callback */
+DECL|AutoReloadWriteCallback|member|void (* AutoReloadWriteCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Auto Reload Write Callback */
 DECL|Clock|member|LPTIM_ClockConfigTypeDef Clock; /*!< Specifies the clock parameters */
+DECL|CompareMatchCallback|member|void (* CompareMatchCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Compare Match Callback */
+DECL|CompareWriteCallback|member|void (* CompareWriteCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Compare Write Callback */
 DECL|CounterSource|member|uint32_t CounterSource; /*!< Specifies whether the counter is incremented each internal event
+DECL|DirectionDownCallback|member|void (* DirectionDownCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Direction Down Callback */
+DECL|DirectionUpCallback|member|void (* DirectionUpCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Direction Up Callback */
+DECL|HAL_LPTIM_AUTO_RELOAD_MATCH_CB_ID|enumerator|HAL_LPTIM_AUTO_RELOAD_MATCH_CB_ID = 0x03U, /*!< LPTIM Auto Reload Match Callback ID */
+DECL|HAL_LPTIM_AUTO_RELOAD_WRITE_CB_ID|enumerator|HAL_LPTIM_AUTO_RELOAD_WRITE_CB_ID = 0x06U, /*!< LPTIM Auto Reload Write Callback ID */
+DECL|HAL_LPTIM_COMPARE_MATCH_CB_ID|enumerator|HAL_LPTIM_COMPARE_MATCH_CB_ID = 0x02U, /*!< LPTIM Compare Match Callback ID */
+DECL|HAL_LPTIM_COMPARE_WRITE_CB_ID|enumerator|HAL_LPTIM_COMPARE_WRITE_CB_ID = 0x05U, /*!< LPTIM Compare Write Callback ID */
+DECL|HAL_LPTIM_CallbackIDTypeDef|typedef|}HAL_LPTIM_CallbackIDTypeDef;
+DECL|HAL_LPTIM_DIRECTION_DOWN_CB_ID|enumerator|HAL_LPTIM_DIRECTION_DOWN_CB_ID = 0x08U, /*!< LPTIM Direction Down Callback ID */
+DECL|HAL_LPTIM_DIRECTION_UP_CB_ID|enumerator|HAL_LPTIM_DIRECTION_UP_CB_ID = 0x07U, /*!< LPTIM Direction Up Callback ID */
+DECL|HAL_LPTIM_MSPDEINIT_CB_ID|enumerator|HAL_LPTIM_MSPDEINIT_CB_ID = 0x01U, /*!< LPTIM MspDeInit Callback ID */
+DECL|HAL_LPTIM_MSPINIT_CB_ID|enumerator|HAL_LPTIM_MSPINIT_CB_ID = 0x00U, /*!< LPTIM MspInit Callback ID */
 DECL|HAL_LPTIM_STATE_BUSY|enumerator|HAL_LPTIM_STATE_BUSY = 0x02U, /*!< An internal process is ongoing */
 DECL|HAL_LPTIM_STATE_ERROR|enumerator|HAL_LPTIM_STATE_ERROR = 0x04U /*!< Internal Process is ongoing */
 DECL|HAL_LPTIM_STATE_READY|enumerator|HAL_LPTIM_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_LPTIM_STATE_RESET|enumerator|HAL_LPTIM_STATE_RESET = 0x00U, /*!< Peripheral not yet initialized or disabled */
 DECL|HAL_LPTIM_STATE_TIMEOUT|enumerator|HAL_LPTIM_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_LPTIM_StateTypeDef|typedef|}HAL_LPTIM_StateTypeDef;
+DECL|HAL_LPTIM_TRIGGER_CB_ID|enumerator|HAL_LPTIM_TRIGGER_CB_ID = 0x04U, /*!< LPTIM Trigger Callback ID */
 DECL|IS_LPTIM_AUTORELOAD|macro|IS_LPTIM_AUTORELOAD
 DECL|IS_LPTIM_CLOCK_POLARITY|macro|IS_LPTIM_CLOCK_POLARITY
 DECL|IS_LPTIM_CLOCK_PRESCALERDIV1|macro|IS_LPTIM_CLOCK_PRESCALERDIV1
@@ -82,6 +98,8 @@ DECL|LPTIM_ULPClockConfigTypeDef|typedef|}LPTIM_ULPClockConfigTypeDef;
 DECL|LPTIM_UPDATE_ENDOFPERIOD|macro|LPTIM_UPDATE_ENDOFPERIOD
 DECL|LPTIM_UPDATE_IMMEDIATE|macro|LPTIM_UPDATE_IMMEDIATE
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< LPTIM locking object */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Msp DeInit Callback */
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Msp Init Callback */
 DECL|OutputPolarity|member|uint32_t OutputPolarity; /*!< Specifies the Output polarity.
 DECL|Polarity|member|uint32_t Polarity; /*!< Selects the polarity of the active edge for the counter unit
 DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the counter clock Prescaler.
@@ -91,6 +109,7 @@ DECL|Source|member|uint32_t Source; /*!< Selects the Trigger source.
 DECL|Source|member|uint32_t Source; /*!< Selects the clock source.
 DECL|State|member|__IO HAL_LPTIM_StateTypeDef State; /*!< LPTIM peripheral state */
 DECL|Status|member|HAL_StatusTypeDef Status; /*!< LPTIM peripheral status */
+DECL|TriggerCallback|member|void (* TriggerCallback) (struct __LPTIM_HandleTypeDef *hlptim); /*!< LPTIM Trigger Callback */
 DECL|Trigger|member|LPTIM_TriggerConfigTypeDef Trigger; /*!< Specifies the Trigger parameters */
 DECL|UltraLowPowerClock|member|LPTIM_ULPClockConfigTypeDef UltraLowPowerClock; /*!< Specifies the Ultra Low Power clock parameters */
 DECL|UpdateMode|member|uint32_t UpdateMode; /*!< Specifies whether the update of the autorelaod and the compare
@@ -120,4 +139,6 @@ DECL|__HAL_LPTIM_WAKEUPTIMER_EXTI_ENABLE_RISING_EDGE|macro|__HAL_LPTIM_WAKEUPTIM
 DECL|__HAL_LPTIM_WAKEUPTIMER_EXTI_ENABLE_RISING_FALLING_EDGE|macro|__HAL_LPTIM_WAKEUPTIMER_EXTI_ENABLE_RISING_FALLING_EDGE
 DECL|__HAL_LPTIM_WAKEUPTIMER_EXTI_GENERATE_SWIT|macro|__HAL_LPTIM_WAKEUPTIMER_EXTI_GENERATE_SWIT
 DECL|__HAL_LPTIM_WAKEUPTIMER_EXTI_GET_FLAG|macro|__HAL_LPTIM_WAKEUPTIMER_EXTI_GET_FLAG
+DECL|__LPTIM_HandleTypeDef|struct|typedef struct __LPTIM_HandleTypeDef
 DECL|__STM32F7xx_HAL_LPTIM_H|macro|__STM32F7xx_HAL_LPTIM_H
+DECL|pLPTIM_CallbackTypeDef|typedef|typedef void (*pLPTIM_CallbackTypeDef)(LPTIM_HandleTypeDef * hlptim); /*!< pointer to the LPTIM callback function */

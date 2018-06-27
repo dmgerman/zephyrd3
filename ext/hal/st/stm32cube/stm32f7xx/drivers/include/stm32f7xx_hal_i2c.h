@@ -15,7 +15,7 @@ DECL|HAL_I2C_MODE_MASTER|enumerator|HAL_I2C_MODE_MASTER = 0x10U, /*!< I2C commun
 DECL|HAL_I2C_MODE_MEM|enumerator|HAL_I2C_MODE_MEM = 0x40U /*!< I2C communication is in Memory Mode */
 DECL|HAL_I2C_MODE_NONE|enumerator|HAL_I2C_MODE_NONE = 0x00U, /*!< No I2C communication on going */
 DECL|HAL_I2C_MODE_SLAVE|enumerator|HAL_I2C_MODE_SLAVE = 0x20U, /*!< I2C communication is in Slave Mode */
-DECL|HAL_I2C_ModeTypeDef|typedef|}HAL_I2C_ModeTypeDef;
+DECL|HAL_I2C_ModeTypeDef|typedef|} HAL_I2C_ModeTypeDef;
 DECL|HAL_I2C_STATE_ABORT|enumerator|HAL_I2C_STATE_ABORT = 0x60U, /*!< Abort user request ongoing */
 DECL|HAL_I2C_STATE_BUSY_RX_LISTEN|enumerator|HAL_I2C_STATE_BUSY_RX_LISTEN = 0x2AU, /*!< Address Listen Mode and Data Reception
 DECL|HAL_I2C_STATE_BUSY_RX|enumerator|HAL_I2C_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
@@ -27,7 +27,7 @@ DECL|HAL_I2C_STATE_LISTEN|enumerator|HAL_I2C_STATE_LISTEN = 0x28U, /*!< Address 
 DECL|HAL_I2C_STATE_READY|enumerator|HAL_I2C_STATE_READY = 0x20U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_I2C_STATE_RESET|enumerator|HAL_I2C_STATE_RESET = 0x00U, /*!< Peripheral is not yet Initialized */
 DECL|HAL_I2C_STATE_TIMEOUT|enumerator|HAL_I2C_STATE_TIMEOUT = 0xA0U, /*!< Timeout state */
-DECL|HAL_I2C_StateTypeDef|typedef|}HAL_I2C_StateTypeDef;
+DECL|HAL_I2C_StateTypeDef|typedef|} HAL_I2C_StateTypeDef;
 DECL|I2C_ADDRESSINGMODE_10BIT|macro|I2C_ADDRESSINGMODE_10BIT
 DECL|I2C_ADDRESSINGMODE_7BIT|macro|I2C_ADDRESSINGMODE_7BIT
 DECL|I2C_AUTOEND_MODE|macro|I2C_AUTOEND_MODE
@@ -65,7 +65,7 @@ DECL|I2C_GET_DIR|macro|I2C_GET_DIR
 DECL|I2C_GET_OWN_ADDRESS1|macro|I2C_GET_OWN_ADDRESS1
 DECL|I2C_GET_OWN_ADDRESS2|macro|I2C_GET_OWN_ADDRESS2
 DECL|I2C_GET_STOP_MODE|macro|I2C_GET_STOP_MODE
-DECL|I2C_HandleTypeDef|typedef|}I2C_HandleTypeDef;
+DECL|I2C_HandleTypeDef|typedef|} I2C_HandleTypeDef;
 DECL|I2C_IT_ADDRI|macro|I2C_IT_ADDRI
 DECL|I2C_IT_ERRI|macro|I2C_IT_ERRI
 DECL|I2C_IT_NACKI|macro|I2C_IT_NACKI
@@ -73,7 +73,8 @@ DECL|I2C_IT_RXI|macro|I2C_IT_RXI
 DECL|I2C_IT_STOPI|macro|I2C_IT_STOPI
 DECL|I2C_IT_TCI|macro|I2C_IT_TCI
 DECL|I2C_IT_TXI|macro|I2C_IT_TXI
-DECL|I2C_InitTypeDef|typedef|}I2C_InitTypeDef;
+DECL|I2C_InitTypeDef|typedef|} I2C_InitTypeDef;
+DECL|I2C_LAST_FRAME_NO_STOP|macro|I2C_LAST_FRAME_NO_STOP
 DECL|I2C_LAST_FRAME|macro|I2C_LAST_FRAME
 DECL|I2C_MEMADD_SIZE_16BIT|macro|I2C_MEMADD_SIZE_16BIT
 DECL|I2C_MEMADD_SIZE_8BIT|macro|I2C_MEMADD_SIZE_8BIT
@@ -117,7 +118,7 @@ DECL|PreviousState|member|__IO uint32_t PreviousState; /*!< I2C communication Pr
 DECL|State|member|__IO HAL_I2C_StateTypeDef State; /*!< I2C communication state */
 DECL|Timing|member|uint32_t Timing; /*!< Specifies the I2C_TIMINGR_register value.
 DECL|XferCount|member|__IO uint16_t XferCount; /*!< I2C transfer counter */
-DECL|XferISR|member|HAL_StatusTypeDef (*XferISR)(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources); /*!< I2C transfer IRQ handler function pointer */
+DECL|XferISR|member|HAL_StatusTypeDef(*XferISR)(struct __I2C_HandleTypeDef *hi2c, uint32_t ITFlags, uint32_t ITSources); /*!< I2C transfer IRQ handler function pointer */
 DECL|XferOptions|member|__IO uint32_t XferOptions; /*!< I2C sequantial transfer options, this parameter can
 DECL|XferSize|member|uint16_t XferSize; /*!< I2C transfer size */
 DECL|__HAL_I2C_CLEAR_FLAG|macro|__HAL_I2C_CLEAR_FLAG
