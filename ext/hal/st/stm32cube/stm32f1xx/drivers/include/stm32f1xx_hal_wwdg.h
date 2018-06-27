@@ -10,9 +10,9 @@ DECL|Prescaler|member|uint32_t Prescaler; /*!< Specifies the prescaler value of 
 DECL|WWDG_EWI_DISABLE|macro|WWDG_EWI_DISABLE
 DECL|WWDG_EWI_ENABLE|macro|WWDG_EWI_ENABLE
 DECL|WWDG_FLAG_EWIF|macro|WWDG_FLAG_EWIF
-DECL|WWDG_HandleTypeDef|typedef|}WWDG_HandleTypeDef;
+DECL|WWDG_HandleTypeDef|typedef|} WWDG_HandleTypeDef;
 DECL|WWDG_IT_EWI|macro|WWDG_IT_EWI
-DECL|WWDG_InitTypeDef|typedef|}WWDG_InitTypeDef;
+DECL|WWDG_InitTypeDef|typedef|} WWDG_InitTypeDef;
 DECL|WWDG_PRESCALER_1|macro|WWDG_PRESCALER_1
 DECL|WWDG_PRESCALER_2|macro|WWDG_PRESCALER_2
 DECL|WWDG_PRESCALER_4|macro|WWDG_PRESCALER_4

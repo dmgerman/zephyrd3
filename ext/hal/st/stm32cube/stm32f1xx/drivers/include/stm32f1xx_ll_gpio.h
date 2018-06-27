@@ -1,3 +1,5 @@
+DECL|GPIO_PIN_MASK_POS|macro|GPIO_PIN_MASK_POS
+DECL|GPIO_PIN_NB|macro|GPIO_PIN_NB
 DECL|LL_GPIO_AF_ConfigEventout|function|__STATIC_INLINE void LL_GPIO_AF_ConfigEventout(uint32_t LL_GPIO_PortSource, uint32_t LL_GPIO_PinSource)
 DECL|LL_GPIO_AF_Connect_FSMCNADV|function|__STATIC_INLINE void LL_GPIO_AF_Connect_FSMCNADV(void)
 DECL|LL_GPIO_AF_DisableEventout|function|__STATIC_INLINE void LL_GPIO_AF_DisableEventout(void)
@@ -160,7 +162,7 @@ DECL|LL_GPIO_GetPinMode|function|__STATIC_INLINE uint32_t LL_GPIO_GetPinMode(GPI
 DECL|LL_GPIO_GetPinOutputType|function|__STATIC_INLINE uint32_t LL_GPIO_GetPinOutputType(GPIO_TypeDef *GPIOx, uint32_t Pin)
 DECL|LL_GPIO_GetPinPull|function|__STATIC_INLINE uint32_t LL_GPIO_GetPinPull(GPIO_TypeDef *GPIOx, uint32_t Pin)
 DECL|LL_GPIO_GetPinSpeed|function|__STATIC_INLINE uint32_t LL_GPIO_GetPinSpeed(GPIO_TypeDef *GPIOx, uint32_t Pin)
-DECL|LL_GPIO_InitTypeDef|typedef|}LL_GPIO_InitTypeDef;
+DECL|LL_GPIO_InitTypeDef|typedef|} LL_GPIO_InitTypeDef;
 DECL|LL_GPIO_IsAnyPinLocked|function|__STATIC_INLINE uint32_t LL_GPIO_IsAnyPinLocked(GPIO_TypeDef *GPIOx)
 DECL|LL_GPIO_IsInputPinSet|function|__STATIC_INLINE uint32_t LL_GPIO_IsInputPinSet(GPIO_TypeDef *GPIOx, uint32_t PinMask)
 DECL|LL_GPIO_IsOutputPinSet|function|__STATIC_INLINE uint32_t LL_GPIO_IsOutputPinSet(GPIO_TypeDef *GPIOx, uint32_t PinMask)

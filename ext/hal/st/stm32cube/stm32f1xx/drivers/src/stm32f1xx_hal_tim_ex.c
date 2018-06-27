@@ -30,7 +30,7 @@ DECL|HAL_TIMEx_PWMN_Start_DMA|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Start_DM
 DECL|HAL_TIMEx_PWMN_Start_IT|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Start_IT(TIM_HandleTypeDef *htim, uint32_t Channel)
 DECL|HAL_TIMEx_PWMN_Start|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Start(TIM_HandleTypeDef *htim, uint32_t Channel)
 DECL|HAL_TIMEx_PWMN_Stop_DMA|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Stop_DMA(TIM_HandleTypeDef *htim, uint32_t Channel)
-DECL|HAL_TIMEx_PWMN_Stop_IT|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Stop_IT (TIM_HandleTypeDef *htim, uint32_t Channel)
+DECL|HAL_TIMEx_PWMN_Stop_IT|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Stop_IT(TIM_HandleTypeDef *htim, uint32_t Channel)
 DECL|HAL_TIMEx_PWMN_Stop|function|HAL_StatusTypeDef HAL_TIMEx_PWMN_Stop(TIM_HandleTypeDef *htim, uint32_t Channel)
 DECL|TIMEx_DMACommutationCplt|function|void TIMEx_DMACommutationCplt(DMA_HandleTypeDef *hdma)
 DECL|TIM_CCxNChannelCmd|function|static void TIM_CCxNChannelCmd(TIM_TypeDef* TIMx, uint32_t Channel, uint32_t ChannelNState)

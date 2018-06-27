@@ -1,6 +1,6 @@
 DECL|HAL_RCC_CSSCallback|function|__weak void HAL_RCC_CSSCallback(void)
 DECL|HAL_RCC_ClockConfig|function|HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t FLatency)
-DECL|HAL_RCC_DeInit|function|void HAL_RCC_DeInit(void)
+DECL|HAL_RCC_DeInit|function|HAL_StatusTypeDef HAL_RCC_DeInit(void)
 DECL|HAL_RCC_DisableCSS|function|void HAL_RCC_DisableCSS(void)
 DECL|HAL_RCC_EnableCSS|function|void HAL_RCC_EnableCSS(void)
 DECL|HAL_RCC_GetClockConfig|function|void HAL_RCC_GetClockConfig(RCC_ClkInitTypeDef *RCC_ClkInitStruct, uint32_t *pFLatency)

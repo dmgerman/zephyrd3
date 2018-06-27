@@ -352,7 +352,7 @@ DECL|HAL_ETH_STATE_ERROR|enumerator|HAL_ETH_STATE_ERROR = 0x04U /*!< Reception p
 DECL|HAL_ETH_STATE_READY|enumerator|HAL_ETH_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_ETH_STATE_RESET|enumerator|HAL_ETH_STATE_RESET = 0x00U, /*!< Peripheral not yet Initialized or disabled */
 DECL|HAL_ETH_STATE_TIMEOUT|enumerator|HAL_ETH_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
-DECL|HAL_ETH_StateTypeDef|typedef|}HAL_ETH_StateTypeDef;
+DECL|HAL_ETH_StateTypeDef|typedef|} HAL_ETH_StateTypeDef;
 DECL|HashTableHigh|member|uint32_t HashTableHigh; /*!< This field holds the higher 32 bits of Hash table.
 DECL|HashTableLow|member|uint32_t HashTableLow; /*!< This field holds the lower 32 bits of Hash table.
 DECL|IS_ETH_ADDRESS_ALIGNED_BEATS|macro|IS_ETH_ADDRESS_ALIGNED_BEATS

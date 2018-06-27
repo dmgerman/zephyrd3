@@ -1,4 +1,4 @@
-DECL|HAL_InitTick|function|HAL_StatusTypeDef HAL_InitTick (uint32_t TickPriority)
+DECL|HAL_InitTick|function|HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 DECL|HAL_RTC_AlarmAEventCallback|function|void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 DECL|HAL_ResumeTick|function|void HAL_ResumeTick(void)
 DECL|HAL_SuspendTick|function|void HAL_SuspendTick(void)
