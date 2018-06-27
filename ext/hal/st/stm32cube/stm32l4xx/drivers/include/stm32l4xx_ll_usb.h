@@ -59,6 +59,7 @@ DECL|HPRT0_PRTSPD_FULL_SPEED|macro|HPRT0_PRTSPD_FULL_SPEED
 DECL|HPRT0_PRTSPD_HIGH_SPEED|macro|HPRT0_PRTSPD_HIGH_SPEED
 DECL|HPRT0_PRTSPD_LOW_SPEED|macro|HPRT0_PRTSPD_LOW_SPEED
 DECL|Host_channels|member|uint32_t Host_channels; /*!< Host Channels number.
+DECL|PMA_ACCESS|macro|PMA_ACCESS
 DECL|STS_DATA_UPDT|macro|STS_DATA_UPDT
 DECL|STS_GOUT_NAK|macro|STS_GOUT_NAK
 DECL|STS_SETUP_COMP|macro|STS_SETUP_COMP
@@ -78,22 +79,21 @@ DECL|USB_DRD_MODE|enumerator|USB_DRD_MODE = 2
 DECL|USB_EPTypeDef|typedef|} USB_EPTypeDef;
 DECL|USB_HOST_MODE|enumerator|USB_HOST_MODE = 1,
 DECL|USB_MASK_INTERRUPT|macro|USB_MASK_INTERRUPT
-DECL|USB_ModeTypeDef|typedef|}USB_ModeTypeDef;
-DECL|USB_OTG_CfgTypeDef|typedef|}USB_OTG_CfgTypeDef;
+DECL|USB_ModeTypeDef|typedef|} USB_ModeTypeDef;
+DECL|USB_OTG_CfgTypeDef|typedef|} USB_OTG_CfgTypeDef;
 DECL|USB_OTG_EMBEDDED_PHY|macro|USB_OTG_EMBEDDED_PHY
-DECL|USB_OTG_EPTypeDef|typedef|}USB_OTG_EPTypeDef;
+DECL|USB_OTG_EPTypeDef|typedef|} USB_OTG_EPTypeDef;
 DECL|USB_OTG_FS_MAX_PACKET_SIZE|macro|USB_OTG_FS_MAX_PACKET_SIZE
-DECL|USB_OTG_HCStateTypeDef|typedef|}USB_OTG_HCStateTypeDef;
-DECL|USB_OTG_HCTypeDef|typedef|}USB_OTG_HCTypeDef;
+DECL|USB_OTG_HCStateTypeDef|typedef|} USB_OTG_HCStateTypeDef;
+DECL|USB_OTG_HCTypeDef|typedef|} USB_OTG_HCTypeDef;
 DECL|USB_OTG_MAX_EP0_SIZE|macro|USB_OTG_MAX_EP0_SIZE
 DECL|USB_OTG_MODE_DEVICE|macro|USB_OTG_MODE_DEVICE
 DECL|USB_OTG_MODE_DRD|macro|USB_OTG_MODE_DRD
 DECL|USB_OTG_MODE_HOST|macro|USB_OTG_MODE_HOST
 DECL|USB_OTG_SPEED_FULL|macro|USB_OTG_SPEED_FULL
-DECL|USB_OTG_SPEED_HIGH_IN_FULL|macro|USB_OTG_SPEED_HIGH_IN_FULL
-DECL|USB_OTG_SPEED_HIGH|macro|USB_OTG_SPEED_HIGH
 DECL|USB_OTG_SPEED_LOW|macro|USB_OTG_SPEED_LOW
-DECL|USB_OTG_URBStateTypeDef|typedef|}USB_OTG_URBStateTypeDef;
+DECL|USB_OTG_ULPI_PHY|macro|USB_OTG_ULPI_PHY
+DECL|USB_OTG_URBStateTypeDef|typedef|} USB_OTG_URBStateTypeDef;
 DECL|USB_UNMASK_INTERRUPT|macro|USB_UNMASK_INTERRUPT
 DECL|USBx_DEVICE|macro|USBx_DEVICE
 DECL|USBx_DFIFO|macro|USBx_DFIFO
@@ -108,14 +108,14 @@ DECL|battery_charging_enable|member|uint32_t battery_charging_enable; /*!< Enabl
 DECL|battery_charging_enable|member|uint32_t battery_charging_enable; /*!< Enable or disable Battery charging. */
 DECL|ch_num|member|uint8_t ch_num; /*!< Host channel number.
 DECL|data_pid_start|member|uint8_t data_pid_start; /*!< Initial data PID
+DECL|data_pid_start|member|uint8_t data_pid_start; /*!< Initial data PID
 DECL|data_pid|member|uint8_t data_pid; /*!< Initial data PID.
 DECL|dev_addr|member|uint8_t dev_addr ; /*!< USB device address.
 DECL|dev_endpoints|member|uint32_t dev_endpoints; /*!< Device Endpoints number.
 DECL|dev_endpoints|member|uint32_t dev_endpoints; /*!< Device Endpoints number.
 DECL|dma_addr|member|uint32_t dma_addr; /*!< 32 bits aligned transfer buffer address */
 DECL|dma_addr|member|uint32_t dma_addr; /*!< 32 bits aligned transfer buffer address. */
-DECL|dma_enable|member|uint32_t dma_enable; /*!< Enable or disable of the USB embedded DMA. */
-DECL|dma_enable|member|uint32_t dma_enable; /*!< Enable or disable of the USB embedded DMA. */
+DECL|dma_enable|member|uint32_t dma_enable; /*!< Enable or disable of the USB embedded DMA used only for OTG HS. */
 DECL|do_ping|member|uint8_t do_ping; /*!< Enable or disable the use of the PING protocol for HS mode. */
 DECL|doublebuffer|member|uint8_t doublebuffer; /*!< Double buffer enable
 DECL|ep0_mps|member|uint32_t ep0_mps; /*!< Set the Endpoint 0 Max Packet size.
@@ -131,7 +131,7 @@ DECL|is_stall|member|uint8_t is_stall; /*!< Endpoint stall condition
 DECL|low_power_enable|member|uint32_t low_power_enable; /*!< Enable or disable Low Power mode */
 DECL|low_power_enable|member|uint32_t low_power_enable; /*!< Enable or disable the low power mode. */
 DECL|lpm_enable|member|uint32_t lpm_enable; /*!< Enable or disable Battery charging. */
-DECL|lpm_enable|member|uint32_t lpm_enable; /*!< Enable or disable Battery charging. */
+DECL|lpm_enable|member|uint32_t lpm_enable; /*!< Enable or disable Link Power Management. */
 DECL|max_packet|member|uint16_t max_packet; /*!< Endpoint Max packet size.
 DECL|maxpacket|member|uint32_t maxpacket; /*!< Endpoint Max packet size
 DECL|maxpacket|member|uint32_t maxpacket; /*!< Endpoint Max packet size

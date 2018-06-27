@@ -1,18 +1,28 @@
+DECL|AbortCpltCallback|member|void (* AbortCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Abort Complete Callback */
 DECL|BaudRate|member|uint32_t BaudRate; /*!< This member configures the Usart communication baud rate.
 DECL|CLKLastBit|member|uint32_t CLKLastBit; /*!< Specifies whether the clock pulse corresponding to the last transmitted
 DECL|CLKPhase|member|uint32_t CLKPhase; /*!< Specifies the clock transition on which the bit capture is made.
 DECL|CLKPolarity|member|uint32_t CLKPolarity; /*!< Specifies the steady state of the serial clock.
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Specifies the prescaler value used to divide the USART clock source.
+DECL|ErrorCallback|member|void (* ErrorCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Error Callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< USART Error code */
-DECL|FifoMode|member|uint32_t FifoMode; /*!< Specifies if the FIFO mode is being used.
-DECL|HAL_USART_ERROR_DMA|enumerator|HAL_USART_ERROR_DMA = 0x10U, /*!< DMA transfer error */
-DECL|HAL_USART_ERROR_FE|enumerator|HAL_USART_ERROR_FE = 0x04U, /*!< frame error */
-DECL|HAL_USART_ERROR_NE|enumerator|HAL_USART_ERROR_NE = 0x02U, /*!< Noise error */
-DECL|HAL_USART_ERROR_NONE|enumerator|HAL_USART_ERROR_NONE = 0x00U, /*!< No error */
-DECL|HAL_USART_ERROR_ORE|enumerator|HAL_USART_ERROR_ORE = 0x08U, /*!< Overrun error */
-DECL|HAL_USART_ERROR_PE|enumerator|HAL_USART_ERROR_PE = 0x01U, /*!< Parity error */
-DECL|HAL_USART_ERROR_UDR|enumerator|HAL_USART_ERROR_UDR = 0x20U /*!< SPI slave underrun error */
-DECL|HAL_USART_ErrorTypeDef|typedef|}HAL_USART_ErrorTypeDef;
+DECL|FifoMode|member|uint32_t FifoMode; /*!< Specifies if the FIFO mode will be used. This parameter can be a value
+DECL|HAL_USART_ABORT_COMPLETE_CB_ID|enumerator|HAL_USART_ABORT_COMPLETE_CB_ID = 0x06U, /*!< USART Abort Complete Callback ID */
+DECL|HAL_USART_CallbackIDTypeDef|typedef|} HAL_USART_CallbackIDTypeDef;
+DECL|HAL_USART_ERROR_CB_ID|enumerator|HAL_USART_ERROR_CB_ID = 0x05U, /*!< USART Error Callback ID */
+DECL|HAL_USART_ERROR_DMA|macro|HAL_USART_ERROR_DMA
+DECL|HAL_USART_ERROR_FE|macro|HAL_USART_ERROR_FE
+DECL|HAL_USART_ERROR_INVALID_CALLBACK|macro|HAL_USART_ERROR_INVALID_CALLBACK
+DECL|HAL_USART_ERROR_NE|macro|HAL_USART_ERROR_NE
+DECL|HAL_USART_ERROR_NONE|macro|HAL_USART_ERROR_NONE
+DECL|HAL_USART_ERROR_ORE|macro|HAL_USART_ERROR_ORE
+DECL|HAL_USART_ERROR_PE|macro|HAL_USART_ERROR_PE
+DECL|HAL_USART_ERROR_UDR|macro|HAL_USART_ERROR_UDR
+DECL|HAL_USART_MSPDEINIT_CB_ID|enumerator|HAL_USART_MSPDEINIT_CB_ID = 0x0AU /*!< USART MspDeInit callback ID */
+DECL|HAL_USART_MSPINIT_CB_ID|enumerator|HAL_USART_MSPINIT_CB_ID = 0x09U, /*!< USART MspInit callback ID */
+DECL|HAL_USART_RX_COMPLETE_CB_ID|enumerator|HAL_USART_RX_COMPLETE_CB_ID = 0x03U, /*!< USART Rx Complete Callback ID */
+DECL|HAL_USART_RX_FIFO_FULL_CB_ID|enumerator|HAL_USART_RX_FIFO_FULL_CB_ID = 0x07U, /*!< USART Rx Fifo Full Callback ID */
+DECL|HAL_USART_RX_HALFCOMPLETE_CB_ID|enumerator|HAL_USART_RX_HALFCOMPLETE_CB_ID = 0x02U, /*!< USART Rx Half Complete Callback ID */
 DECL|HAL_USART_STATE_BUSY_RX|enumerator|HAL_USART_STATE_BUSY_RX = 0x22U, /*!< Data Reception process is ongoing */
 DECL|HAL_USART_STATE_BUSY_TX_RX|enumerator|HAL_USART_STATE_BUSY_TX_RX = 0x32U, /*!< Data Transmission Reception process is ongoing */
 DECL|HAL_USART_STATE_BUSY_TX|enumerator|HAL_USART_STATE_BUSY_TX = 0x12U, /*!< Data Transmission process is ongoing */
@@ -21,7 +31,11 @@ DECL|HAL_USART_STATE_ERROR|enumerator|HAL_USART_STATE_ERROR = 0x04U /*!< Error *
 DECL|HAL_USART_STATE_READY|enumerator|HAL_USART_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_USART_STATE_RESET|enumerator|HAL_USART_STATE_RESET = 0x00U, /*!< Peripheral is not initialized */
 DECL|HAL_USART_STATE_TIMEOUT|enumerator|HAL_USART_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
-DECL|HAL_USART_StateTypeDef|typedef|}HAL_USART_StateTypeDef;
+DECL|HAL_USART_StateTypeDef|typedef|} HAL_USART_StateTypeDef;
+DECL|HAL_USART_TX_COMPLETE_CB_ID|enumerator|HAL_USART_TX_COMPLETE_CB_ID = 0x01U, /*!< USART Tx Complete Callback ID */
+DECL|HAL_USART_TX_FIFO_EMPTY_CB_ID|enumerator|HAL_USART_TX_FIFO_EMPTY_CB_ID = 0x08U, /*!< USART Tx Fifo Empty Callback ID */
+DECL|HAL_USART_TX_HALFCOMPLETE_CB_ID|enumerator|HAL_USART_TX_HALFCOMPLETE_CB_ID = 0x00U, /*!< USART Tx Half Complete Callback ID */
+DECL|HAL_USART_TX_RX_COMPLETE_CB_ID|enumerator|HAL_USART_TX_RX_COMPLETE_CB_ID = 0x04U, /*!< USART Tx Rx Complete Callback ID */
 DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_BAUDRATE|macro|IS_USART_BAUDRATE
 DECL|IS_USART_CLOCK|macro|IS_USART_CLOCK
@@ -39,19 +53,27 @@ DECL|Instance|member|USART_TypeDef *Instance; /*!< USART registers base address 
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mask|member|uint16_t Mask; /*!< USART Rx RDR register mask */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies whether the Receive or Transmit mode is enabled or disabled.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Msp Init callback */
 DECL|NbRxDataToProcess|member|uint16_t NbRxDataToProcess; /*!< Number of data to process during RX ISR execution */
 DECL|NbTxDataToProcess|member|uint16_t NbTxDataToProcess; /*!< Number of data to process during TX ISR execution */
 DECL|Parity|member|uint32_t Parity; /*!< Specifies the parity mode.
+DECL|RxCpltCallback|member|void (* RxCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Rx Complete Callback */
+DECL|RxFifoFullCallback|member|void (* RxFifoFullCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Rx Fifo Full Callback */
+DECL|RxHalfCpltCallback|member|void (* RxHalfCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Rx Half Complete Callback */
 DECL|RxISR|member|void (*RxISR)(struct __USART_HandleTypeDef *husart); /*!< Function pointer on Rx IRQ handler */
 DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< USART Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< USART Rx Transfer size */
-DECL|SlaveMode|member|uint32_t SlaveMode; /*!< Specifies if the UART SPI Slave mode is being used.
+DECL|SlaveMode|member|uint32_t SlaveMode; /*!< Enable/Disable UART SPI Slave Mode. This parameter can be a value
 DECL|State|member|__IO HAL_USART_StateTypeDef State; /*!< USART communication state */
 DECL|StopBits|member|uint32_t StopBits; /*!< Specifies the number of stop bits transmitted.
+DECL|TxCpltCallback|member|void (* TxCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Tx Complete Callback */
+DECL|TxFifoEmptyCallback|member|void (* TxFifoEmptyCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Tx Fifo Empty Callback */
+DECL|TxHalfCpltCallback|member|void (* TxHalfCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Tx Half Complete Callback */
 DECL|TxISR|member|void (*TxISR)(struct __USART_HandleTypeDef *husart); /*!< Function pointer on Tx IRQ handler */
+DECL|TxRxCpltCallback|member|void (* TxRxCpltCallback)(struct __USART_HandleTypeDef *husart); /*!< USART Tx Rx Complete Callback */
 DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< USART Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< USART Tx Transfer size */
-DECL|USARTPrescTable|variable|USARTPrescTable
 DECL|USART_CLEAR_FEF|macro|USART_CLEAR_FEF
 DECL|USART_CLEAR_IDLEF|macro|USART_CLEAR_IDLEF
 DECL|USART_CLEAR_NEF|macro|USART_CLEAR_NEF
@@ -68,7 +90,7 @@ DECL|USART_CLOCKSOURCE_SYSCLK|enumerator|USART_CLOCKSOURCE_SYSCLK = 0x04U, /*!< 
 DECL|USART_CLOCKSOURCE_UNDEFINED|enumerator|USART_CLOCKSOURCE_UNDEFINED = 0x10U /*!< Undefined clock source */
 DECL|USART_CLOCK_DISABLE|macro|USART_CLOCK_DISABLE
 DECL|USART_CLOCK_ENABLE|macro|USART_CLOCK_ENABLE
-DECL|USART_ClockSourceTypeDef|typedef|}USART_ClockSourceTypeDef;
+DECL|USART_ClockSourceTypeDef|typedef|} USART_ClockSourceTypeDef;
 DECL|USART_DIV_SAMPLING8|macro|USART_DIV_SAMPLING8
 DECL|USART_DIV_SAMPLING8|macro|USART_DIV_SAMPLING8
 DECL|USART_FLAG_BUSY|macro|USART_FLAG_BUSY
@@ -91,7 +113,8 @@ DECL|USART_FLAG_TXFE|macro|USART_FLAG_TXFE
 DECL|USART_FLAG_TXFNF|macro|USART_FLAG_TXFNF
 DECL|USART_FLAG_TXFT|macro|USART_FLAG_TXFT
 DECL|USART_FLAG_UDR|macro|USART_FLAG_UDR
-DECL|USART_HandleTypeDef|typedef|}USART_HandleTypeDef;
+DECL|USART_GET_DIV_FACTOR|macro|USART_GET_DIV_FACTOR
+DECL|USART_HandleTypeDef|typedef|} USART_HandleTypeDef;
 DECL|USART_IT_ERR|macro|USART_IT_ERR
 DECL|USART_IT_FE|macro|USART_IT_FE
 DECL|USART_IT_IDLE|macro|USART_IT_IDLE
@@ -108,7 +131,7 @@ DECL|USART_IT_TXE|macro|USART_IT_TXE
 DECL|USART_IT_TXFE|macro|USART_IT_TXFE
 DECL|USART_IT_TXFNF|macro|USART_IT_TXFNF
 DECL|USART_IT_TXFT|macro|USART_IT_TXFT
-DECL|USART_InitTypeDef|typedef|}USART_InitTypeDef;
+DECL|USART_InitTypeDef|typedef|} USART_InitTypeDef;
 DECL|USART_LASTBIT_DISABLE|macro|USART_LASTBIT_DISABLE
 DECL|USART_LASTBIT_ENABLE|macro|USART_LASTBIT_ENABLE
 DECL|USART_MODE_RX|macro|USART_MODE_RX
@@ -161,6 +184,7 @@ DECL|__HAL_USART_GET_IT|macro|__HAL_USART_GET_IT
 DECL|__HAL_USART_ONE_BIT_SAMPLE_DISABLE|macro|__HAL_USART_ONE_BIT_SAMPLE_DISABLE
 DECL|__HAL_USART_ONE_BIT_SAMPLE_ENABLE|macro|__HAL_USART_ONE_BIT_SAMPLE_ENABLE
 DECL|__HAL_USART_RESET_HANDLE_STATE|macro|__HAL_USART_RESET_HANDLE_STATE
+DECL|__HAL_USART_RESET_HANDLE_STATE|macro|__HAL_USART_RESET_HANDLE_STATE
 DECL|__HAL_USART_SEND_REQ|macro|__HAL_USART_SEND_REQ
 DECL|__STM32L4xx_HAL_USART_H|macro|__STM32L4xx_HAL_USART_H
 DECL|__USART_HandleTypeDef|struct|typedef struct __USART_HandleTypeDef
@@ -168,3 +192,4 @@ DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< USART Rx DMA Handle parameter
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< USART Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to USART Rx transfer Buffer */
 DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to USART Tx transfer Buffer */
+DECL|pUSART_CallbackTypeDef|typedef|typedef void (*pUSART_CallbackTypeDef)(USART_HandleTypeDef *husart); /*!< pointer to an USART callback function */

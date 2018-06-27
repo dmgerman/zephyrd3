@@ -170,19 +170,19 @@ DECL|HAL_DMA_ERROR_REQGEN|macro|HAL_DMA_ERROR_REQGEN
 DECL|HAL_DMA_ERROR_SYNC|macro|HAL_DMA_ERROR_SYNC
 DECL|HAL_DMA_ERROR_TE|macro|HAL_DMA_ERROR_TE
 DECL|HAL_DMA_ERROR_TIMEOUT|macro|HAL_DMA_ERROR_TIMEOUT
-DECL|HAL_DMA_FULL_TRANSFER|enumerator|HAL_DMA_FULL_TRANSFER = 0x00, /*!< Full transfer */
-DECL|HAL_DMA_HALF_TRANSFER|enumerator|HAL_DMA_HALF_TRANSFER = 0x01 /*!< Half Transfer */
+DECL|HAL_DMA_FULL_TRANSFER|enumerator|HAL_DMA_FULL_TRANSFER = 0x00U, /*!< Full transfer */
+DECL|HAL_DMA_HALF_TRANSFER|enumerator|HAL_DMA_HALF_TRANSFER = 0x01U /*!< Half Transfer */
 DECL|HAL_DMA_LevelCompleteTypeDef|typedef|}HAL_DMA_LevelCompleteTypeDef;
-DECL|HAL_DMA_STATE_BUSY|enumerator|HAL_DMA_STATE_BUSY = 0x02, /*!< DMA process is ongoing */
-DECL|HAL_DMA_STATE_READY|enumerator|HAL_DMA_STATE_READY = 0x01, /*!< DMA initialized and ready for use */
-DECL|HAL_DMA_STATE_RESET|enumerator|HAL_DMA_STATE_RESET = 0x00, /*!< DMA not yet initialized or disabled */
-DECL|HAL_DMA_STATE_TIMEOUT|enumerator|HAL_DMA_STATE_TIMEOUT = 0x03, /*!< DMA timeout state */
+DECL|HAL_DMA_STATE_BUSY|enumerator|HAL_DMA_STATE_BUSY = 0x02U, /*!< DMA process is ongoing */
+DECL|HAL_DMA_STATE_READY|enumerator|HAL_DMA_STATE_READY = 0x01U, /*!< DMA initialized and ready for use */
+DECL|HAL_DMA_STATE_RESET|enumerator|HAL_DMA_STATE_RESET = 0x00U, /*!< DMA not yet initialized or disabled */
+DECL|HAL_DMA_STATE_TIMEOUT|enumerator|HAL_DMA_STATE_TIMEOUT = 0x03U, /*!< DMA timeout state */
 DECL|HAL_DMA_StateTypeDef|typedef|}HAL_DMA_StateTypeDef;
-DECL|HAL_DMA_XFER_ABORT_CB_ID|enumerator|HAL_DMA_XFER_ABORT_CB_ID = 0x03, /*!< Abort */
-DECL|HAL_DMA_XFER_ALL_CB_ID|enumerator|HAL_DMA_XFER_ALL_CB_ID = 0x04 /*!< All */
-DECL|HAL_DMA_XFER_CPLT_CB_ID|enumerator|HAL_DMA_XFER_CPLT_CB_ID = 0x00, /*!< Full transfer */
-DECL|HAL_DMA_XFER_ERROR_CB_ID|enumerator|HAL_DMA_XFER_ERROR_CB_ID = 0x02, /*!< Error */
-DECL|HAL_DMA_XFER_HALFCPLT_CB_ID|enumerator|HAL_DMA_XFER_HALFCPLT_CB_ID = 0x01, /*!< Half transfer */
+DECL|HAL_DMA_XFER_ABORT_CB_ID|enumerator|HAL_DMA_XFER_ABORT_CB_ID = 0x03U, /*!< Abort */
+DECL|HAL_DMA_XFER_ALL_CB_ID|enumerator|HAL_DMA_XFER_ALL_CB_ID = 0x04U /*!< All */
+DECL|HAL_DMA_XFER_CPLT_CB_ID|enumerator|HAL_DMA_XFER_CPLT_CB_ID = 0x00U, /*!< Full transfer */
+DECL|HAL_DMA_XFER_ERROR_CB_ID|enumerator|HAL_DMA_XFER_ERROR_CB_ID = 0x02U, /*!< Error */
+DECL|HAL_DMA_XFER_HALFCPLT_CB_ID|enumerator|HAL_DMA_XFER_HALFCPLT_CB_ID = 0x01U, /*!< Half transfer */
 DECL|IS_DMA_ALL_REQUEST|macro|IS_DMA_ALL_REQUEST
 DECL|IS_DMA_ALL_REQUEST|macro|IS_DMA_ALL_REQUEST
 DECL|IS_DMA_BUFFER_SIZE|macro|IS_DMA_BUFFER_SIZE

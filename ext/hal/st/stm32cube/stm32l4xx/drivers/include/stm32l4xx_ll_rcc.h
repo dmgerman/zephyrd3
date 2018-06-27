@@ -1,3 +1,5 @@
+DECL|EXTERNAL_SAI1_CLOCK_VALUE|macro|EXTERNAL_SAI1_CLOCK_VALUE
+DECL|EXTERNAL_SAI2_CLOCK_VALUE|macro|EXTERNAL_SAI2_CLOCK_VALUE
 DECL|HCLK_Frequency|member|uint32_t HCLK_Frequency; /*!< HCLK clock frequency */
 DECL|HSE_VALUE|macro|HSE_VALUE
 DECL|HSI48_VALUE|macro|HSI48_VALUE
@@ -152,6 +154,7 @@ DECL|LL_RCC_HSI_EnableInStopMode|function|__STATIC_INLINE void LL_RCC_HSI_Enable
 DECL|LL_RCC_HSI_Enable|function|__STATIC_INLINE void LL_RCC_HSI_Enable(void)
 DECL|LL_RCC_HSI_GetCalibTrimming|function|__STATIC_INLINE uint32_t LL_RCC_HSI_GetCalibTrimming(void)
 DECL|LL_RCC_HSI_GetCalibration|function|__STATIC_INLINE uint32_t LL_RCC_HSI_GetCalibration(void)
+DECL|LL_RCC_HSI_IsEnabledInStopMode|function|__STATIC_INLINE uint32_t LL_RCC_HSI_IsEnabledInStopMode(void)
 DECL|LL_RCC_HSI_IsReady|function|__STATIC_INLINE uint32_t LL_RCC_HSI_IsReady(void)
 DECL|LL_RCC_HSI_SetCalibTrimming|function|__STATIC_INLINE void LL_RCC_HSI_SetCalibTrimming(uint32_t Value)
 DECL|LL_RCC_I2C1_CLKSOURCE_HSI|macro|LL_RCC_I2C1_CLKSOURCE_HSI
@@ -536,6 +539,7 @@ DECL|LL_RCC_PLL_GetP|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetP(void)
 DECL|LL_RCC_PLL_GetQ|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetQ(void)
 DECL|LL_RCC_PLL_GetR|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetR(void)
 DECL|LL_RCC_PLL_IsReady|function|__STATIC_INLINE uint32_t LL_RCC_PLL_IsReady(void)
+DECL|LL_RCC_PLL_SetMainSource|function|__STATIC_INLINE void LL_RCC_PLL_SetMainSource(uint32_t PLLSource)
 DECL|LL_RCC_RNG_CLKSOURCE_HSI48|macro|LL_RCC_RNG_CLKSOURCE_HSI48
 DECL|LL_RCC_RNG_CLKSOURCE_MSI|macro|LL_RCC_RNG_CLKSOURCE_MSI
 DECL|LL_RCC_RNG_CLKSOURCE_NONE|macro|LL_RCC_RNG_CLKSOURCE_NONE

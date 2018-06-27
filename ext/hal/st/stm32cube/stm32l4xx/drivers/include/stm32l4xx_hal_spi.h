@@ -1,3 +1,4 @@
+DECL|AbortCpltCallback|member|void (* AbortCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Abort callback */
 DECL|BaudRatePrescaler|member|uint32_t BaudRatePrescaler; /*!< Specifies the Baud Rate prescaler value which will be
 DECL|CLKPhase|member|uint32_t CLKPhase; /*!< Specifies the clock active edge for the bit capture.
 DECL|CLKPolarity|member|uint32_t CLKPolarity; /*!< Specifies the serial clock steady state.
@@ -7,16 +8,25 @@ DECL|CRCPolynomial|member|uint32_t CRCPolynomial; /*!< Specifies the polynomial 
 DECL|CRCSize|member|uint32_t CRCSize; /*!< SPI CRC size used for the transfer */
 DECL|DataSize|member|uint32_t DataSize; /*!< Specifies the SPI data size.
 DECL|Direction|member|uint32_t Direction; /*!< Specifies the SPI bidirectional mode state.
+DECL|ErrorCallback|member|void (* ErrorCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< SPI Error code */
 DECL|FirstBit|member|uint32_t FirstBit; /*!< Specifies whether data transfers start from MSB or LSB bit.
+DECL|HAL_SPI_ABORT_CB_ID|enumerator|HAL_SPI_ABORT_CB_ID = 0x07U, /*!< SPI Abort callback ID */
+DECL|HAL_SPI_CallbackIDTypeDef|typedef|} HAL_SPI_CallbackIDTypeDef;
 DECL|HAL_SPI_ERROR_ABORT|macro|HAL_SPI_ERROR_ABORT
+DECL|HAL_SPI_ERROR_CB_ID|enumerator|HAL_SPI_ERROR_CB_ID = 0x06U, /*!< SPI Error callback ID */
 DECL|HAL_SPI_ERROR_CRC|macro|HAL_SPI_ERROR_CRC
 DECL|HAL_SPI_ERROR_DMA|macro|HAL_SPI_ERROR_DMA
 DECL|HAL_SPI_ERROR_FLAG|macro|HAL_SPI_ERROR_FLAG
 DECL|HAL_SPI_ERROR_FRE|macro|HAL_SPI_ERROR_FRE
+DECL|HAL_SPI_ERROR_INVALID_CALLBACK|macro|HAL_SPI_ERROR_INVALID_CALLBACK
 DECL|HAL_SPI_ERROR_MODF|macro|HAL_SPI_ERROR_MODF
 DECL|HAL_SPI_ERROR_NONE|macro|HAL_SPI_ERROR_NONE
 DECL|HAL_SPI_ERROR_OVR|macro|HAL_SPI_ERROR_OVR
+DECL|HAL_SPI_MSPDEINIT_CB_ID|enumerator|HAL_SPI_MSPDEINIT_CB_ID = 0x09U /*!< SPI Msp DeInit callback ID */
+DECL|HAL_SPI_MSPINIT_CB_ID|enumerator|HAL_SPI_MSPINIT_CB_ID = 0x08U, /*!< SPI Msp Init callback ID */
+DECL|HAL_SPI_RX_COMPLETE_CB_ID|enumerator|HAL_SPI_RX_COMPLETE_CB_ID = 0x01U, /*!< SPI Rx Completed callback ID */
+DECL|HAL_SPI_RX_HALF_COMPLETE_CB_ID|enumerator|HAL_SPI_RX_HALF_COMPLETE_CB_ID = 0x04U, /*!< SPI Rx Half Completed callback ID */
 DECL|HAL_SPI_STATE_ABORT|enumerator|HAL_SPI_STATE_ABORT = 0x07U /*!< SPI abort is ongoing */
 DECL|HAL_SPI_STATE_BUSY_RX|enumerator|HAL_SPI_STATE_BUSY_RX = 0x04U, /*!< Data Reception process is ongoing */
 DECL|HAL_SPI_STATE_BUSY_TX_RX|enumerator|HAL_SPI_STATE_BUSY_TX_RX = 0x05U, /*!< Data Transmission and Reception process is ongoing */
@@ -26,6 +36,10 @@ DECL|HAL_SPI_STATE_ERROR|enumerator|HAL_SPI_STATE_ERROR = 0x06U, /*!< SPI error 
 DECL|HAL_SPI_STATE_READY|enumerator|HAL_SPI_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
 DECL|HAL_SPI_STATE_RESET|enumerator|HAL_SPI_STATE_RESET = 0x00U, /*!< Peripheral not Initialized */
 DECL|HAL_SPI_StateTypeDef|typedef|} HAL_SPI_StateTypeDef;
+DECL|HAL_SPI_TX_COMPLETE_CB_ID|enumerator|HAL_SPI_TX_COMPLETE_CB_ID = 0x00U, /*!< SPI Tx Completed callback ID */
+DECL|HAL_SPI_TX_HALF_COMPLETE_CB_ID|enumerator|HAL_SPI_TX_HALF_COMPLETE_CB_ID = 0x03U, /*!< SPI Tx Half Completed callback ID */
+DECL|HAL_SPI_TX_RX_COMPLETE_CB_ID|enumerator|HAL_SPI_TX_RX_COMPLETE_CB_ID = 0x02U, /*!< SPI TxRx Completed callback ID */
+DECL|HAL_SPI_TX_RX_HALF_COMPLETE_CB_ID|enumerator|HAL_SPI_TX_RX_HALF_COMPLETE_CB_ID = 0x05U, /*!< SPI TxRx Half Completed callback ID */
 DECL|IS_SPI_BAUDRATE_PRESCALER|macro|IS_SPI_BAUDRATE_PRESCALER
 DECL|IS_SPI_CPHA|macro|IS_SPI_CPHA
 DECL|IS_SPI_CPOL|macro|IS_SPI_CPOL
@@ -46,8 +60,12 @@ DECL|Init|member|SPI_InitTypeDef Init; /*!< SPI communication parameters */
 DECL|Instance|member|SPI_TypeDef *Instance; /*!< SPI registers base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies the SPI operating mode.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Msp Init callback */
 DECL|NSSPMode|member|uint32_t NSSPMode; /*!< Specifies whether the NSSP signal is enabled or not .
 DECL|NSS|member|uint32_t NSS; /*!< Specifies whether the NSS signal is managed by
+DECL|RxCpltCallback|member|void (* RxCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Rx Completed callback */
+DECL|RxHalfCpltCallback|member|void (* RxHalfCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Rx Half Completed callback */
 DECL|RxISR|member|void (*RxISR)(struct __SPI_HandleTypeDef *hspi); /*!< function pointer on Rx ISR */
 DECL|RxXferCount|member|__IO uint16_t RxXferCount; /*!< SPI Rx Transfer Counter */
 DECL|RxXferSize|member|uint16_t RxXferSize; /*!< SPI Rx Transfer size */
@@ -125,7 +143,11 @@ DECL|SPI_TIMODE_DISABLE|macro|SPI_TIMODE_DISABLE
 DECL|SPI_TIMODE_ENABLE|macro|SPI_TIMODE_ENABLE
 DECL|State|member|__IO HAL_SPI_StateTypeDef State; /*!< SPI communication state */
 DECL|TIMode|member|uint32_t TIMode; /*!< Specifies if the TI mode is enabled or not.
+DECL|TxCpltCallback|member|void (* TxCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Tx Completed callback */
+DECL|TxHalfCpltCallback|member|void (* TxHalfCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI Tx Half Completed callback */
 DECL|TxISR|member|void (*TxISR)(struct __SPI_HandleTypeDef *hspi); /*!< function pointer on Tx ISR */
+DECL|TxRxCpltCallback|member|void (* TxRxCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI TxRx Completed callback */
+DECL|TxRxHalfCpltCallback|member|void (* TxRxHalfCpltCallback)(struct __SPI_HandleTypeDef *hspi); /*!< SPI TxRx Half Completed callback */
 DECL|TxXferCount|member|__IO uint16_t TxXferCount; /*!< SPI Tx Transfer Counter */
 DECL|TxXferSize|member|uint16_t TxXferSize; /*!< SPI Tx Transfer size */
 DECL|__HAL_SPI_CLEAR_CRCERRFLAG|macro|__HAL_SPI_CLEAR_CRCERRFLAG
@@ -139,9 +161,11 @@ DECL|__HAL_SPI_ENABLE|macro|__HAL_SPI_ENABLE
 DECL|__HAL_SPI_GET_FLAG|macro|__HAL_SPI_GET_FLAG
 DECL|__HAL_SPI_GET_IT_SOURCE|macro|__HAL_SPI_GET_IT_SOURCE
 DECL|__HAL_SPI_RESET_HANDLE_STATE|macro|__HAL_SPI_RESET_HANDLE_STATE
+DECL|__HAL_SPI_RESET_HANDLE_STATE|macro|__HAL_SPI_RESET_HANDLE_STATE
 DECL|__SPI_HandleTypeDef|struct|typedef struct __SPI_HandleTypeDef
 DECL|__STM32L4xx_HAL_SPI_H|macro|__STM32L4xx_HAL_SPI_H
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SPI Rx DMA Handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SPI Tx DMA Handle parameters */
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to SPI Rx transfer Buffer */
+DECL|pSPI_CallbackTypeDef|typedef|typedef void (*pSPI_CallbackTypeDef)(SPI_HandleTypeDef *hspi); /*!< pointer to an SPI callback function */
 DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to SPI Tx transfer Buffer */

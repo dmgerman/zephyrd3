@@ -1,4 +1,4 @@
-DECL|HAL_USART_AbortCpltCallback|function|__weak void HAL_USART_AbortCpltCallback (USART_HandleTypeDef *husart)
+DECL|HAL_USART_AbortCpltCallback|function|__weak void HAL_USART_AbortCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_Abort_IT|function|HAL_StatusTypeDef HAL_USART_Abort_IT(USART_HandleTypeDef *husart)
 DECL|HAL_USART_Abort|function|HAL_StatusTypeDef HAL_USART_Abort(USART_HandleTypeDef *husart)
 DECL|HAL_USART_DMAPause|function|HAL_StatusTypeDef HAL_USART_DMAPause(USART_HandleTypeDef *husart)
@@ -15,6 +15,7 @@ DECL|HAL_USART_MspInit|function|__weak void HAL_USART_MspInit(USART_HandleTypeDe
 DECL|HAL_USART_Receive_DMA|function|HAL_StatusTypeDef HAL_USART_Receive_DMA(USART_HandleTypeDef *husart, uint8_t *pRxData, uint16_t Size)
 DECL|HAL_USART_Receive_IT|function|HAL_StatusTypeDef HAL_USART_Receive_IT(USART_HandleTypeDef *husart, uint8_t *pRxData, uint16_t Size)
 DECL|HAL_USART_Receive|function|HAL_StatusTypeDef HAL_USART_Receive(USART_HandleTypeDef *husart, uint8_t *pRxData, uint16_t Size, uint32_t Timeout)
+DECL|HAL_USART_RegisterCallback|function|HAL_StatusTypeDef HAL_USART_RegisterCallback(USART_HandleTypeDef *husart, HAL_USART_CallbackIDTypeDef CallbackID, pUSART_CallbackTypeDef pCallback)
 DECL|HAL_USART_RxCpltCallback|function|__weak void HAL_USART_RxCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_RxHalfCpltCallback|function|__weak void HAL_USART_RxHalfCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_TransmitReceive_DMA|function|HAL_StatusTypeDef HAL_USART_TransmitReceive_DMA(USART_HandleTypeDef *husart, uint8_t *pTxData, uint8_t *pRxData, uint16_t Size)
@@ -26,6 +27,8 @@ DECL|HAL_USART_Transmit|function|HAL_StatusTypeDef HAL_USART_Transmit(USART_Hand
 DECL|HAL_USART_TxCpltCallback|function|__weak void HAL_USART_TxCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_TxHalfCpltCallback|function|__weak void HAL_USART_TxHalfCpltCallback(USART_HandleTypeDef *husart)
 DECL|HAL_USART_TxRxCpltCallback|function|__weak void HAL_USART_TxRxCpltCallback(USART_HandleTypeDef *husart)
+DECL|HAL_USART_UnRegisterCallback|function|HAL_StatusTypeDef HAL_USART_UnRegisterCallback(USART_HandleTypeDef *husart, HAL_USART_CallbackIDTypeDef CallbackID)
+DECL|USART_BRR_MAX|macro|USART_BRR_MAX
 DECL|USART_BRR_MIN|macro|USART_BRR_MIN
 DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
 DECL|USART_CR1_FIELDS|macro|USART_CR1_FIELDS
@@ -44,6 +47,7 @@ DECL|USART_DMATxHalfCplt|function|static void USART_DMATxHalfCplt(DMA_HandleType
 DECL|USART_DUMMY_DATA|macro|USART_DUMMY_DATA
 DECL|USART_EndTransfer|function|static void USART_EndTransfer(USART_HandleTypeDef *husart)
 DECL|USART_EndTransmit_IT|function|static void USART_EndTransmit_IT(USART_HandleTypeDef *husart)
+DECL|USART_InitCallbacksToDefault|function|void USART_InitCallbacksToDefault(USART_HandleTypeDef *husart)
 DECL|USART_RxISR_16BIT_FIFOEN|function|static void USART_RxISR_16BIT_FIFOEN(USART_HandleTypeDef *husart)
 DECL|USART_RxISR_16BIT|function|static void USART_RxISR_16BIT(USART_HandleTypeDef *husart)
 DECL|USART_RxISR_8BIT_FIFOEN|function|static void USART_RxISR_8BIT_FIFOEN(USART_HandleTypeDef *husart)

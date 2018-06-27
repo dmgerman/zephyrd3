@@ -76,6 +76,7 @@ DECL|LL_USART_DMA_REG_DATA_RECEIVE|macro|LL_USART_DMA_REG_DATA_RECEIVE
 DECL|LL_USART_DMA_REG_DATA_TRANSMIT|macro|LL_USART_DMA_REG_DATA_TRANSMIT
 DECL|LL_USART_DisableAutoBaudRate|function|__STATIC_INLINE void LL_USART_DisableAutoBaudRate(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableCTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_DisableCTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableClockInStopMode|function|__STATIC_INLINE void LL_USART_DisableClockInStopMode(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableDEMode|function|__STATIC_INLINE void LL_USART_DisableDEMode(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableDMADeactOnRxErr|function|__STATIC_INLINE void LL_USART_DisableDMADeactOnRxErr(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableDMAReq_RX|function|__STATIC_INLINE void LL_USART_DisableDMAReq_RX(USART_TypeDef *USARTx)
@@ -114,13 +115,14 @@ DECL|LL_USART_DisableOverrunDetect|function|__STATIC_INLINE void LL_USART_Disabl
 DECL|LL_USART_DisableRTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_DisableRTSHWFlowCtrl(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableRxTimeout|function|__STATIC_INLINE void LL_USART_DisableRxTimeout(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableSCLKOutput|function|__STATIC_INLINE void LL_USART_DisableSCLKOutput(USART_TypeDef *USARTx)
-DECL|LL_USART_DisableSPISlaveSelect|function|__STATIC_INLINE void LL_USART_DisableSPISlaveSelect(USART_TypeDef* USARTx)
-DECL|LL_USART_DisableSPISlave|function|__STATIC_INLINE void LL_USART_DisableSPISlave(USART_TypeDef* USARTx)
+DECL|LL_USART_DisableSPISlaveSelect|function|__STATIC_INLINE void LL_USART_DisableSPISlaveSelect(USART_TypeDef *USARTx)
+DECL|LL_USART_DisableSPISlave|function|__STATIC_INLINE void LL_USART_DisableSPISlave(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableSmartcardNACK|function|__STATIC_INLINE void LL_USART_DisableSmartcardNACK(USART_TypeDef *USARTx)
 DECL|LL_USART_DisableSmartcard|function|__STATIC_INLINE void LL_USART_DisableSmartcard(USART_TypeDef *USARTx)
 DECL|LL_USART_Disable|function|__STATIC_INLINE void LL_USART_Disable(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableAutoBaudRate|function|__STATIC_INLINE void LL_USART_EnableAutoBaudRate(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableCTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_EnableCTSHWFlowCtrl(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableClockInStopMode|function|__STATIC_INLINE void LL_USART_EnableClockInStopMode(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableDEMode|function|__STATIC_INLINE void LL_USART_EnableDEMode(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableDMADeactOnRxErr|function|__STATIC_INLINE void LL_USART_EnableDMADeactOnRxErr(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableDMAReq_RX|function|__STATIC_INLINE void LL_USART_EnableDMAReq_RX(USART_TypeDef *USARTx)
@@ -159,8 +161,8 @@ DECL|LL_USART_EnableOverrunDetect|function|__STATIC_INLINE void LL_USART_EnableO
 DECL|LL_USART_EnableRTSHWFlowCtrl|function|__STATIC_INLINE void LL_USART_EnableRTSHWFlowCtrl(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableRxTimeout|function|__STATIC_INLINE void LL_USART_EnableRxTimeout(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableSCLKOutput|function|__STATIC_INLINE void LL_USART_EnableSCLKOutput(USART_TypeDef *USARTx)
-DECL|LL_USART_EnableSPISlaveSelect|function|__STATIC_INLINE void LL_USART_EnableSPISlaveSelect(USART_TypeDef* USARTx)
-DECL|LL_USART_EnableSPISlave|function|__STATIC_INLINE void LL_USART_EnableSPISlave(USART_TypeDef* USARTx)
+DECL|LL_USART_EnableSPISlaveSelect|function|__STATIC_INLINE void LL_USART_EnableSPISlaveSelect(USART_TypeDef *USARTx)
+DECL|LL_USART_EnableSPISlave|function|__STATIC_INLINE void LL_USART_EnableSPISlave(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableSmartcardNACK|function|__STATIC_INLINE void LL_USART_EnableSmartcardNACK(USART_TypeDef *USARTx)
 DECL|LL_USART_EnableSmartcard|function|__STATIC_INLINE void LL_USART_EnableSmartcard(USART_TypeDef *USARTx)
 DECL|LL_USART_Enable|function|__STATIC_INLINE void LL_USART_Enable(USART_TypeDef *USARTx)
@@ -214,7 +216,7 @@ DECL|LL_USART_ICR_EOBCF|macro|LL_USART_ICR_EOBCF
 DECL|LL_USART_ICR_FECF|macro|LL_USART_ICR_FECF
 DECL|LL_USART_ICR_IDLECF|macro|LL_USART_ICR_IDLECF
 DECL|LL_USART_ICR_LBDCF|macro|LL_USART_ICR_LBDCF
-DECL|LL_USART_ICR_NCF|macro|LL_USART_ICR_NCF
+DECL|LL_USART_ICR_NECF|macro|LL_USART_ICR_NECF
 DECL|LL_USART_ICR_ORECF|macro|LL_USART_ICR_ORECF
 DECL|LL_USART_ICR_PECF|macro|LL_USART_ICR_PECF
 DECL|LL_USART_ICR_RTOCF|macro|LL_USART_ICR_RTOCF
@@ -288,6 +290,7 @@ DECL|LL_USART_IsActiveFlag_TXFT|function|__STATIC_INLINE uint32_t LL_USART_IsAct
 DECL|LL_USART_IsActiveFlag_UDR|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_UDR(USART_TypeDef *USARTx)
 DECL|LL_USART_IsActiveFlag_WKUP|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_WKUP(USART_TypeDef *USARTx)
 DECL|LL_USART_IsActiveFlag_nCTS|function|__STATIC_INLINE uint32_t LL_USART_IsActiveFlag_nCTS(USART_TypeDef *USARTx)
+DECL|LL_USART_IsClockEnabledInStopMode|function|__STATIC_INLINE uint32_t LL_USART_IsClockEnabledInStopMode(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledAutoBaud|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledAutoBaud(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledDEMode|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledDEMode(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledDMADeactOnRxErr|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledDMADeactOnRxErr(USART_TypeDef *USARTx)
@@ -324,8 +327,8 @@ DECL|LL_USART_IsEnabledOneBitSamp|function|__STATIC_INLINE uint32_t LL_USART_IsE
 DECL|LL_USART_IsEnabledOverrunDetect|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledOverrunDetect(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledRxTimeout|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledRxTimeout(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledSCLKOutput|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSCLKOutput(USART_TypeDef *USARTx)
-DECL|LL_USART_IsEnabledSPISlaveSelect|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSPISlaveSelect(USART_TypeDef* USARTx)
-DECL|LL_USART_IsEnabledSPISlave|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSPISlave(USART_TypeDef* USARTx)
+DECL|LL_USART_IsEnabledSPISlaveSelect|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSPISlaveSelect(USART_TypeDef *USARTx)
+DECL|LL_USART_IsEnabledSPISlave|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSPISlave(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledSmartcardNACK|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSmartcardNACK(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabledSmartcard|function|__STATIC_INLINE uint32_t LL_USART_IsEnabledSmartcard(USART_TypeDef *USARTx)
 DECL|LL_USART_IsEnabled|function|__STATIC_INLINE uint32_t LL_USART_IsEnabled(USART_TypeDef *USARTx)

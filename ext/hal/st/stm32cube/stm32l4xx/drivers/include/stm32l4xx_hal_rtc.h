@@ -1,3 +1,5 @@
+DECL|AlarmAEventCallback|member|void (* AlarmAEventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Alarm A Event callback */
+DECL|AlarmBEventCallback|member|void (* AlarmBEventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Alarm B Event callback */
 DECL|AlarmDateWeekDaySel|member|uint32_t AlarmDateWeekDaySel; /*!< Specifies the RTC Alarm is on Date or WeekDay.
 DECL|AlarmDateWeekDay|member|uint8_t AlarmDateWeekDay; /*!< Specifies the RTC Alarm Date/WeekDay.
 DECL|AlarmMask|member|uint32_t AlarmMask; /*!< Specifies the RTC Alarm Masks.
@@ -8,11 +10,21 @@ DECL|AsynchPrediv|member|uint32_t AsynchPrediv; /*!< Specifies the RTC Asynchron
 DECL|Date|member|uint8_t Date; /*!< Specifies the RTC Date.
 DECL|DayLightSaving|member|uint32_t DayLightSaving; /*!< Specifies RTC_DayLightSaveOperation: the value of hour adjustment.
 DECL|HAL_RTCStateTypeDef|typedef|}HAL_RTCStateTypeDef;
+DECL|HAL_RTC_ALARM_A_EVENT_CB_ID|enumerator|HAL_RTC_ALARM_A_EVENT_CB_ID = 0x00U, /*!< RTC Alarm A Event Callback ID */
+DECL|HAL_RTC_ALARM_B_EVENT_CB_ID|enumerator|HAL_RTC_ALARM_B_EVENT_CB_ID = 0x01U, /*!< RTC Alarm B Event Callback ID */
+DECL|HAL_RTC_CallbackIDTypeDef|typedef|}HAL_RTC_CallbackIDTypeDef;
+DECL|HAL_RTC_MSPDEINIT_CB_ID|enumerator|HAL_RTC_MSPDEINIT_CB_ID = 0x0FU /*!< RTC Msp DeInit callback ID */
+DECL|HAL_RTC_MSPINIT_CB_ID|enumerator|HAL_RTC_MSPINIT_CB_ID = 0x0EU, /*!< RTC Msp Init callback ID */
 DECL|HAL_RTC_STATE_BUSY|enumerator|HAL_RTC_STATE_BUSY = 0x02, /*!< RTC process is ongoing */
 DECL|HAL_RTC_STATE_ERROR|enumerator|HAL_RTC_STATE_ERROR = 0x04 /*!< RTC error state */
 DECL|HAL_RTC_STATE_READY|enumerator|HAL_RTC_STATE_READY = 0x01, /*!< RTC initialized and ready for use */
 DECL|HAL_RTC_STATE_RESET|enumerator|HAL_RTC_STATE_RESET = 0x00, /*!< RTC not yet initialized or disabled */
 DECL|HAL_RTC_STATE_TIMEOUT|enumerator|HAL_RTC_STATE_TIMEOUT = 0x03, /*!< RTC timeout state */
+DECL|HAL_RTC_TAMPER1_EVENT_CB_ID|enumerator|HAL_RTC_TAMPER1_EVENT_CB_ID = 0x04U, /*!< RTC Tamper 1 Callback ID */
+DECL|HAL_RTC_TAMPER2_EVENT_CB_ID|enumerator|HAL_RTC_TAMPER2_EVENT_CB_ID = 0x05U, /*!< RTC Tamper 2 Callback ID */
+DECL|HAL_RTC_TAMPER3_EVENT_CB_ID|enumerator|HAL_RTC_TAMPER3_EVENT_CB_ID = 0x06U, /*!< RTC Tamper 3 Callback ID */
+DECL|HAL_RTC_TIMESTAMP_EVENT_CB_ID|enumerator|HAL_RTC_TIMESTAMP_EVENT_CB_ID = 0x02U, /*!< RTC TimeStamp Event Callback ID */
+DECL|HAL_RTC_WAKEUPTIMER_EVENT_CB_ID|enumerator|HAL_RTC_WAKEUPTIMER_EVENT_CB_ID = 0x03U, /*!< RTC WakeUp Timer Event Callback ID */
 DECL|HourFormat|member|uint32_t HourFormat; /*!< Specifies the RTC Hour Format.
 DECL|Hours|member|uint8_t Hours; /*!< Specifies the RTC Time Hour.
 DECL|IS_RTC_ALARM_DATE_WEEKDAY_DATE|macro|IS_RTC_ALARM_DATE_WEEKDAY_DATE
@@ -45,6 +57,8 @@ DECL|Instance|member|RTC_TypeDef *Instance; /*!< Register base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< RTC locking object */
 DECL|Minutes|member|uint8_t Minutes; /*!< Specifies the RTC Time Minutes.
 DECL|Month|member|uint8_t Month; /*!< Specifies the RTC Date Month (in BCD format).
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Msp Init callback */
 DECL|OutPutPolarity|member|uint32_t OutPutPolarity; /*!< Specifies the polarity of the output signal.
 DECL|OutPutRemap|member|uint32_t OutPutRemap; /*!< Specifies the remap for RTC output.
 DECL|OutPutType|member|uint32_t OutPutType; /*!< Specifies the RTC Output Pin mode.
@@ -153,7 +167,12 @@ DECL|State|member|__IO HAL_RTCStateTypeDef State; /*!< Time communication state 
 DECL|StoreOperation|member|uint32_t StoreOperation; /*!< Specifies RTC_StoreOperation value to be written in the BCK bit
 DECL|SubSeconds|member|uint32_t SubSeconds; /*!< Specifies the RTC_SSR RTC Sub Second register content.
 DECL|SynchPrediv|member|uint32_t SynchPrediv; /*!< Specifies the RTC Synchronous Predivider value.
+DECL|Tamper1EventCallback|member|void (* Tamper1EventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Tamper 1 Event callback */
+DECL|Tamper2EventCallback|member|void (* Tamper2EventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Tamper 2 Event callback */
+DECL|Tamper3EventCallback|member|void (* Tamper3EventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC Tamper 3 Event callback */
 DECL|TimeFormat|member|uint8_t TimeFormat; /*!< Specifies the RTC AM/PM Time.
+DECL|TimeStampEventCallback|member|void (* TimeStampEventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC TimeStamp Event callback */
+DECL|WakeUpTimerEventCallback|member|void (* WakeUpTimerEventCallback) ( struct __RTC_HandleTypeDef * hrtc); /*!< RTC WakeUpTimer Event callback */
 DECL|WeekDay|member|uint8_t WeekDay; /*!< Specifies the RTC Date WeekDay.
 DECL|Year|member|uint8_t Year; /*!< Specifies the RTC Date Year.
 DECL|__HAL_RTC_ALARMA_DISABLE|macro|__HAL_RTC_ALARMA_DISABLE
@@ -180,6 +199,9 @@ DECL|__HAL_RTC_ALARM_GET_FLAG|macro|__HAL_RTC_ALARM_GET_FLAG
 DECL|__HAL_RTC_ALARM_GET_IT_SOURCE|macro|__HAL_RTC_ALARM_GET_IT_SOURCE
 DECL|__HAL_RTC_ALARM_GET_IT|macro|__HAL_RTC_ALARM_GET_IT
 DECL|__HAL_RTC_RESET_HANDLE_STATE|macro|__HAL_RTC_RESET_HANDLE_STATE
+DECL|__HAL_RTC_RESET_HANDLE_STATE|macro|__HAL_RTC_RESET_HANDLE_STATE
 DECL|__HAL_RTC_WRITEPROTECTION_DISABLE|macro|__HAL_RTC_WRITEPROTECTION_DISABLE
 DECL|__HAL_RTC_WRITEPROTECTION_ENABLE|macro|__HAL_RTC_WRITEPROTECTION_ENABLE
+DECL|__RTC_HandleTypeDef|struct|typedef struct __RTC_HandleTypeDef
 DECL|__STM32L4xx_HAL_RTC_H|macro|__STM32L4xx_HAL_RTC_H
+DECL|pRTC_CallbackTypeDef|typedef|typedef void (*pRTC_CallbackTypeDef)(RTC_HandleTypeDef * hrtc); /*!< pointer to an RTC callback function */

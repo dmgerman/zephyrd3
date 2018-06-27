@@ -23,6 +23,7 @@ DECL|HAL_OSPI_MspInit|function|__weak void HAL_OSPI_MspInit(OSPI_HandleTypeDef *
 DECL|HAL_OSPI_Receive_DMA|function|HAL_StatusTypeDef HAL_OSPI_Receive_DMA(OSPI_HandleTypeDef *hospi, uint8_t *pData)
 DECL|HAL_OSPI_Receive_IT|function|HAL_StatusTypeDef HAL_OSPI_Receive_IT(OSPI_HandleTypeDef *hospi, uint8_t *pData)
 DECL|HAL_OSPI_Receive|function|HAL_StatusTypeDef HAL_OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
+DECL|HAL_OSPI_RegisterCallback|function|HAL_StatusTypeDef HAL_OSPI_RegisterCallback (OSPI_HandleTypeDef *hospi, HAL_OSPI_CallbackIDTypeDef CallbackID, pOSPI_CallbackTypeDef pCallback)
 DECL|HAL_OSPI_RxCpltCallback|function|__weak void HAL_OSPI_RxCpltCallback(OSPI_HandleTypeDef *hospi)
 DECL|HAL_OSPI_RxHalfCpltCallback|function|__weak void HAL_OSPI_RxHalfCpltCallback(OSPI_HandleTypeDef *hospi)
 DECL|HAL_OSPI_SetFifoThreshold|function|HAL_StatusTypeDef HAL_OSPI_SetFifoThreshold(OSPI_HandleTypeDef *hospi, uint32_t Threshold)
@@ -34,6 +35,7 @@ DECL|HAL_OSPI_Transmit_IT|function|HAL_StatusTypeDef HAL_OSPI_Transmit_IT(OSPI_H
 DECL|HAL_OSPI_Transmit|function|HAL_StatusTypeDef HAL_OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
 DECL|HAL_OSPI_TxCpltCallback|function|__weak void HAL_OSPI_TxCpltCallback(OSPI_HandleTypeDef *hospi)
 DECL|HAL_OSPI_TxHalfCpltCallback|function|__weak void HAL_OSPI_TxHalfCpltCallback(OSPI_HandleTypeDef *hospi)
+DECL|HAL_OSPI_UnRegisterCallback|function|HAL_StatusTypeDef HAL_OSPI_UnRegisterCallback (OSPI_HandleTypeDef *hospi, HAL_OSPI_CallbackIDTypeDef CallbackID)
 DECL|IS_OSPI_FUNCTIONAL_MODE|macro|IS_OSPI_FUNCTIONAL_MODE
 DECL|OSPIM_GetConfig|function|static HAL_StatusTypeDef OSPIM_GetConfig(uint8_t instance_nb, OSPIM_CfgTypeDef *cfg)
 DECL|OSPI_BUSY_STATE_MASK|macro|OSPI_BUSY_STATE_MASK

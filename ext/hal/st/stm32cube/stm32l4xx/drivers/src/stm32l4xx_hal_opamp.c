@@ -5,9 +5,11 @@ DECL|HAL_OPAMP_Init|function|HAL_StatusTypeDef HAL_OPAMP_Init(OPAMP_HandleTypeDe
 DECL|HAL_OPAMP_Lock|function|HAL_StatusTypeDef HAL_OPAMP_Lock(OPAMP_HandleTypeDef *hopamp)
 DECL|HAL_OPAMP_MspDeInit|function|__weak void HAL_OPAMP_MspDeInit(OPAMP_HandleTypeDef *hopamp)
 DECL|HAL_OPAMP_MspInit|function|__weak void HAL_OPAMP_MspInit(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_RegisterCallback|function|HAL_StatusTypeDef HAL_OPAMP_RegisterCallback (OPAMP_HandleTypeDef *hopamp, HAL_OPAMP_CallbackIDTypeDef CallbackID, pOPAMP_CallbackTypeDef pCallback)
 DECL|HAL_OPAMP_SelfCalibrate|function|HAL_StatusTypeDef HAL_OPAMP_SelfCalibrate(OPAMP_HandleTypeDef *hopamp)
 DECL|HAL_OPAMP_Start|function|HAL_StatusTypeDef HAL_OPAMP_Start(OPAMP_HandleTypeDef *hopamp)
 DECL|HAL_OPAMP_Stop|function|HAL_StatusTypeDef HAL_OPAMP_Stop(OPAMP_HandleTypeDef *hopamp)
+DECL|HAL_OPAMP_UnRegisterCallback|function|HAL_StatusTypeDef HAL_OPAMP_UnRegisterCallback (OPAMP_HandleTypeDef *hopamp, HAL_OPAMP_CallbackIDTypeDef CallbackID)
 DECL|OPAMP_CSR_INIT_MASK_FOLLOWER|macro|OPAMP_CSR_INIT_MASK_FOLLOWER
 DECL|OPAMP_CSR_INIT_MASK_PGA|macro|OPAMP_CSR_INIT_MASK_PGA
 DECL|OPAMP_CSR_INIT_MASK_STANDALONE|macro|OPAMP_CSR_INIT_MASK_STANDALONE

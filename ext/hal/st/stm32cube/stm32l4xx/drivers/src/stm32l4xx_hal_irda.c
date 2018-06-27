@@ -1,8 +1,8 @@
-DECL|HAL_IRDA_AbortCpltCallback|function|__weak void HAL_IRDA_AbortCpltCallback (IRDA_HandleTypeDef *hirda)
-DECL|HAL_IRDA_AbortReceiveCpltCallback|function|__weak void HAL_IRDA_AbortReceiveCpltCallback (IRDA_HandleTypeDef *hirda)
+DECL|HAL_IRDA_AbortCpltCallback|function|__weak void HAL_IRDA_AbortCpltCallback(IRDA_HandleTypeDef *hirda)
+DECL|HAL_IRDA_AbortReceiveCpltCallback|function|__weak void HAL_IRDA_AbortReceiveCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_AbortReceive_IT|function|HAL_StatusTypeDef HAL_IRDA_AbortReceive_IT(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_AbortReceive|function|HAL_StatusTypeDef HAL_IRDA_AbortReceive(IRDA_HandleTypeDef *hirda)
-DECL|HAL_IRDA_AbortTransmitCpltCallback|function|__weak void HAL_IRDA_AbortTransmitCpltCallback (IRDA_HandleTypeDef *hirda)
+DECL|HAL_IRDA_AbortTransmitCpltCallback|function|__weak void HAL_IRDA_AbortTransmitCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_AbortTransmit_IT|function|HAL_StatusTypeDef HAL_IRDA_AbortTransmit_IT(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_AbortTransmit|function|HAL_StatusTypeDef HAL_IRDA_AbortTransmit(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_Abort_IT|function|HAL_StatusTypeDef HAL_IRDA_Abort_IT(IRDA_HandleTypeDef *hirda)
@@ -21,6 +21,7 @@ DECL|HAL_IRDA_MspInit|function|__weak void HAL_IRDA_MspInit(IRDA_HandleTypeDef *
 DECL|HAL_IRDA_Receive_DMA|function|HAL_StatusTypeDef HAL_IRDA_Receive_DMA(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size)
 DECL|HAL_IRDA_Receive_IT|function|HAL_StatusTypeDef HAL_IRDA_Receive_IT(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size)
 DECL|HAL_IRDA_Receive|function|HAL_StatusTypeDef HAL_IRDA_Receive(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+DECL|HAL_IRDA_RegisterCallback|function|HAL_StatusTypeDef HAL_IRDA_RegisterCallback(IRDA_HandleTypeDef *hirda, HAL_IRDA_CallbackIDTypeDef CallbackID, pIRDA_CallbackTypeDef pCallback)
 DECL|HAL_IRDA_RxCpltCallback|function|__weak void HAL_IRDA_RxCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_RxHalfCpltCallback|function|__weak void HAL_IRDA_RxHalfCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_Transmit_DMA|function|HAL_StatusTypeDef HAL_IRDA_Transmit_DMA(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size)
@@ -28,6 +29,7 @@ DECL|HAL_IRDA_Transmit_IT|function|HAL_StatusTypeDef HAL_IRDA_Transmit_IT(IRDA_H
 DECL|HAL_IRDA_Transmit|function|HAL_StatusTypeDef HAL_IRDA_Transmit(IRDA_HandleTypeDef *hirda, uint8_t *pData, uint16_t Size, uint32_t Timeout)
 DECL|HAL_IRDA_TxCpltCallback|function|__weak void HAL_IRDA_TxCpltCallback(IRDA_HandleTypeDef *hirda)
 DECL|HAL_IRDA_TxHalfCpltCallback|function|__weak void HAL_IRDA_TxHalfCpltCallback(IRDA_HandleTypeDef *hirda)
+DECL|HAL_IRDA_UnRegisterCallback|function|HAL_StatusTypeDef HAL_IRDA_UnRegisterCallback(IRDA_HandleTypeDef *hirda, HAL_IRDA_CallbackIDTypeDef CallbackID)
 DECL|IRDAPrescTable|variable|IRDAPrescTable
 DECL|IRDA_CR1_FIELDS|macro|IRDA_CR1_FIELDS
 DECL|IRDA_CheckIdleState|function|static HAL_StatusTypeDef IRDA_CheckIdleState(IRDA_HandleTypeDef *hirda)
@@ -46,6 +48,7 @@ DECL|IRDA_DMATxOnlyAbortCallback|function|static void IRDA_DMATxOnlyAbortCallbac
 DECL|IRDA_EndRxTransfer|function|static void IRDA_EndRxTransfer(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_EndTransmit_IT|function|static void IRDA_EndTransmit_IT(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_EndTxTransfer|function|static void IRDA_EndTxTransfer(IRDA_HandleTypeDef *hirda)
+DECL|IRDA_InitCallbacksToDefault|function|void IRDA_InitCallbacksToDefault(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_Receive_IT|function|static HAL_StatusTypeDef IRDA_Receive_IT(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_SetConfig|function|static HAL_StatusTypeDef IRDA_SetConfig(IRDA_HandleTypeDef *hirda)
 DECL|IRDA_TEACK_REACK_TIMEOUT|macro|IRDA_TEACK_REACK_TIMEOUT

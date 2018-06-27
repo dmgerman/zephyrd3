@@ -13,3 +13,5 @@ DECL|HAL_GFXMMU_Init|function|HAL_StatusTypeDef HAL_GFXMMU_Init(GFXMMU_HandleTyp
 DECL|HAL_GFXMMU_ModifyBuffers|function|HAL_StatusTypeDef HAL_GFXMMU_ModifyBuffers(GFXMMU_HandleTypeDef *hgfxmmu, GFXMMU_BuffersTypeDef *Buffers)
 DECL|HAL_GFXMMU_MspDeInit|function|__weak void HAL_GFXMMU_MspDeInit(GFXMMU_HandleTypeDef *hgfxmmu)
 DECL|HAL_GFXMMU_MspInit|function|__weak void HAL_GFXMMU_MspInit(GFXMMU_HandleTypeDef *hgfxmmu)
+DECL|HAL_GFXMMU_RegisterCallback|function|HAL_StatusTypeDef HAL_GFXMMU_RegisterCallback(GFXMMU_HandleTypeDef *hgfxmmu, HAL_GFXMMU_CallbackIDTypeDef CallbackID, pGFXMMU_CallbackTypeDef pCallback)
+DECL|HAL_GFXMMU_UnRegisterCallback|function|HAL_StatusTypeDef HAL_GFXMMU_UnRegisterCallback(GFXMMU_HandleTypeDef *hgfxmmu, HAL_GFXMMU_CallbackIDTypeDef CallbackID)

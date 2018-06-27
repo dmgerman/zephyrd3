@@ -1,10 +1,10 @@
 DECL|CRCLength|member|uint32_t CRCLength; /*!< This parameter is a value of @ref CRC_Polynomial_Sizes and indicates CRC length.
-DECL|CRC_HandleTypeDef|typedef|}CRC_HandleTypeDef;
+DECL|CRC_HandleTypeDef|typedef|} CRC_HandleTypeDef;
 DECL|CRC_INPUTDATA_FORMAT_BYTES|macro|CRC_INPUTDATA_FORMAT_BYTES
 DECL|CRC_INPUTDATA_FORMAT_HALFWORDS|macro|CRC_INPUTDATA_FORMAT_HALFWORDS
 DECL|CRC_INPUTDATA_FORMAT_UNDEFINED|macro|CRC_INPUTDATA_FORMAT_UNDEFINED
 DECL|CRC_INPUTDATA_FORMAT_WORDS|macro|CRC_INPUTDATA_FORMAT_WORDS
-DECL|CRC_InitTypeDef|typedef|}CRC_InitTypeDef;
+DECL|CRC_InitTypeDef|typedef|} CRC_InitTypeDef;
 DECL|CRC_POLYLENGTH_16B|macro|CRC_POLYLENGTH_16B
 DECL|CRC_POLYLENGTH_32B|macro|CRC_POLYLENGTH_32B
 DECL|CRC_POLYLENGTH_7B|macro|CRC_POLYLENGTH_7B
@@ -24,12 +24,12 @@ DECL|HAL_CRC_LENGTH_32B|macro|HAL_CRC_LENGTH_32B
 DECL|HAL_CRC_LENGTH_7B|macro|HAL_CRC_LENGTH_7B
 DECL|HAL_CRC_LENGTH_8B|macro|HAL_CRC_LENGTH_8B
 DECL|HAL_CRC_Output_Data_Reverse|macro|HAL_CRC_Output_Data_Reverse
-DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02, /*!< CRC internal process is ongoing */
-DECL|HAL_CRC_STATE_ERROR|enumerator|HAL_CRC_STATE_ERROR = 0x04 /*!< CRC error state */
-DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01, /*!< CRC initialized and ready for use */
-DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00, /*!< CRC not yet initialized or disabled */
-DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03, /*!< CRC timeout state */
-DECL|HAL_CRC_StateTypeDef|typedef|}HAL_CRC_StateTypeDef;
+DECL|HAL_CRC_STATE_BUSY|enumerator|HAL_CRC_STATE_BUSY = 0x02U, /*!< CRC internal process is ongoing */
+DECL|HAL_CRC_STATE_ERROR|enumerator|HAL_CRC_STATE_ERROR = 0x04U /*!< CRC error state */
+DECL|HAL_CRC_STATE_READY|enumerator|HAL_CRC_STATE_READY = 0x01U, /*!< CRC initialized and ready for use */
+DECL|HAL_CRC_STATE_RESET|enumerator|HAL_CRC_STATE_RESET = 0x00U, /*!< CRC not yet initialized or disabled */
+DECL|HAL_CRC_STATE_TIMEOUT|enumerator|HAL_CRC_STATE_TIMEOUT = 0x03U, /*!< CRC timeout state */
+DECL|HAL_CRC_StateTypeDef|typedef|} HAL_CRC_StateTypeDef;
 DECL|IS_CRC_INPUTDATA_FORMAT|macro|IS_CRC_INPUTDATA_FORMAT
 DECL|IS_CRC_POL_LENGTH|macro|IS_CRC_POL_LENGTH
 DECL|IS_DEFAULT_INIT_VALUE|macro|IS_DEFAULT_INIT_VALUE

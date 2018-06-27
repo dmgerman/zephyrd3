@@ -307,6 +307,7 @@ DECL|SDMMC_WAIT_NO|macro|SDMMC_WAIT_NO
 DECL|SDMMC_WAIT_PEND|macro|SDMMC_WAIT_PEND
 DECL|SDMMC_WIDE_BUS_SUPPORT|macro|SDMMC_WIDE_BUS_SUPPORT
 DECL|SD_SWITCH_1_8V_CAPACITY|macro|SD_SWITCH_1_8V_CAPACITY
+DECL|STM32L4xx_LL_SDMMC_H|macro|STM32L4xx_LL_SDMMC_H
 DECL|Transceiver|member|uint32_t Transceiver; /*!< Specifies whether external Transceiver is enabled or disabled.
 DECL|TransferDir|member|uint32_t TransferDir; /*!< Specifies the data transfer direction, whether the transfer
 DECL|TransferMode|member|uint32_t TransferMode; /*!< Specifies whether data transfer is in stream or block mode.
@@ -333,4 +334,3 @@ DECL|__SDMMC_SUSPEND_CMD_DISABLE|macro|__SDMMC_SUSPEND_CMD_DISABLE
 DECL|__SDMMC_SUSPEND_CMD_DISABLE|macro|__SDMMC_SUSPEND_CMD_DISABLE
 DECL|__SDMMC_SUSPEND_CMD_ENABLE|macro|__SDMMC_SUSPEND_CMD_ENABLE
 DECL|__SDMMC_SUSPEND_CMD_ENABLE|macro|__SDMMC_SUSPEND_CMD_ENABLE
-DECL|__STM32L4xx_LL_SDMMC_H|macro|__STM32L4xx_LL_SDMMC_H

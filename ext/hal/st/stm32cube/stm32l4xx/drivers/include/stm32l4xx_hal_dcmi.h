@@ -1,5 +1,5 @@
-DECL|ByteSelectMode|member|uint32_t ByteSelectMode; /*!< Specifies the data to be captured by the interface.
-DECL|ByteSelectStart|member|uint32_t ByteSelectStart; /*!< Specifies if the data to be captured by the interface is even or odd.
+DECL|ByteSelectMode|member|uint32_t ByteSelectMode; /*!< Specifies the data to be captured by the interface
+DECL|ByteSelectStart|member|uint32_t ByteSelectStart; /*!< Specifies if the data to be captured by the interface is even or odd
 DECL|CaptureRate|member|uint32_t CaptureRate; /*!< Specifies the frequency of frame capture: All, 1/2 or 1/4.
 DECL|DCMI_BSM_ALL|macro|DCMI_BSM_ALL
 DECL|DCMI_BSM_ALTERNATE_2|macro|DCMI_BSM_ALTERNATE_2
@@ -58,17 +58,26 @@ DECL|DCMI_WINDOW_COORDINATE|macro|DCMI_WINDOW_COORDINATE
 DECL|DCMI_WINDOW_HEIGHT|macro|DCMI_WINDOW_HEIGHT
 DECL|DMAM2M_Handle|member|DMA_HandleTypeDef *DMAM2M_Handle; /*!< Pointer to DMA handler for memory to memory copy
 DECL|DMA_Handle|member|DMA_HandleTypeDef *DMA_Handle; /*!< Pointer to DMA handler */
+DECL|ErrorCallback|member|void (* ErrorCallback) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Error Callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DCMI Error code */
 DECL|ExtendedDataMode|member|uint32_t ExtendedDataMode; /*!< Specifies the data width: 8-bit, 10-bit, 12-bit or 14-bit.
 DECL|FrameEndCode|member|uint8_t FrameEndCode; /*!< Specifies the code of the frame end delimiter. */
 DECL|FrameEndUnmask|member|uint8_t FrameEndUnmask; /*!< Specifies the frame end delimiter unmask. */
+DECL|FrameEventCallback|member|void (* FrameEventCallback) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Frame Event Callback */
 DECL|FrameStartCode|member|uint8_t FrameStartCode; /*!< Specifies the code of the frame start delimiter. */
 DECL|FrameStartUnmask|member|uint8_t FrameStartUnmask; /*!< Specifies the frame start delimiter unmask. */
+DECL|HAL_DCMI_CallbackIDTypeDef|typedef|}HAL_DCMI_CallbackIDTypeDef;
+DECL|HAL_DCMI_ERROR_CB_ID|enumerator|HAL_DCMI_ERROR_CB_ID = 0x03U, /*!< DCMI Error Callback ID */
 DECL|HAL_DCMI_ERROR_DMA|macro|HAL_DCMI_ERROR_DMA
+DECL|HAL_DCMI_ERROR_INVALID_CALLBACK|macro|HAL_DCMI_ERROR_INVALID_CALLBACK
 DECL|HAL_DCMI_ERROR_NONE|macro|HAL_DCMI_ERROR_NONE
 DECL|HAL_DCMI_ERROR_OVR|macro|HAL_DCMI_ERROR_OVR
 DECL|HAL_DCMI_ERROR_SYNC|macro|HAL_DCMI_ERROR_SYNC
 DECL|HAL_DCMI_ERROR_TIMEOUT|macro|HAL_DCMI_ERROR_TIMEOUT
+DECL|HAL_DCMI_FRAME_EVENT_CB_ID|enumerator|HAL_DCMI_FRAME_EVENT_CB_ID = 0x00U, /*!< DCMI Frame Event Callback ID */
+DECL|HAL_DCMI_LINE_EVENT_CB_ID|enumerator|HAL_DCMI_LINE_EVENT_CB_ID = 0x02U, /*!< DCMI Line Event Callback ID */
+DECL|HAL_DCMI_MSPDEINIT_CB_ID|enumerator|HAL_DCMI_MSPDEINIT_CB_ID = 0x05U /*!< DCMI MspDeInit callback ID */
+DECL|HAL_DCMI_MSPINIT_CB_ID|enumerator|HAL_DCMI_MSPINIT_CB_ID = 0x04U, /*!< DCMI MspInit callback ID */
 DECL|HAL_DCMI_STATE_BUSY|enumerator|HAL_DCMI_STATE_BUSY = 0x02U, /*!< DCMI internal processing is ongoing */
 DECL|HAL_DCMI_STATE_ERROR|enumerator|HAL_DCMI_STATE_ERROR = 0x04U, /*!< DCMI error state */
 DECL|HAL_DCMI_STATE_READY|enumerator|HAL_DCMI_STATE_READY = 0x01U, /*!< DCMI initialized and ready for use */
@@ -76,6 +85,7 @@ DECL|HAL_DCMI_STATE_RESET|enumerator|HAL_DCMI_STATE_RESET = 0x00U, /*!< DCMI not
 DECL|HAL_DCMI_STATE_SUSPENDED|enumerator|HAL_DCMI_STATE_SUSPENDED = 0x05U /*!< DCMI suspend state */
 DECL|HAL_DCMI_STATE_TIMEOUT|enumerator|HAL_DCMI_STATE_TIMEOUT = 0x03U, /*!< DCMI timeout state */
 DECL|HAL_DCMI_StateTypeDef|typedef|}HAL_DCMI_StateTypeDef;
+DECL|HAL_DCMI_VSYNC_EVENT_CB_ID|enumerator|HAL_DCMI_VSYNC_EVENT_CB_ID = 0x01U, /*!< DCMI Vsync Event Callback ID */
 DECL|HSPolarity|member|uint32_t HSPolarity; /*!< Specifies the Horizontal synchronization polarity: High or Low.
 DECL|HalfCopyLength|member|uint32_t HalfCopyLength; /*!< Intermediate copies length
 DECL|IS_DCMI_BYTE_SELECT_MODE|macro|IS_DCMI_BYTE_SELECT_MODE
@@ -84,7 +94,6 @@ DECL|IS_DCMI_CAPTURE_MODE|macro|IS_DCMI_CAPTURE_MODE
 DECL|IS_DCMI_CAPTURE_RATE|macro|IS_DCMI_CAPTURE_RATE
 DECL|IS_DCMI_EXTENDED_DATA|macro|IS_DCMI_EXTENDED_DATA
 DECL|IS_DCMI_HSPOLARITY|macro|IS_DCMI_HSPOLARITY
-DECL|IS_DCMI_INTERRUPTS|macro|IS_DCMI_INTERRUPTS
 DECL|IS_DCMI_LINE_SELECT_MODE|macro|IS_DCMI_LINE_SELECT_MODE
 DECL|IS_DCMI_LINE_SELECT_START|macro|IS_DCMI_LINE_SELECT_START
 DECL|IS_DCMI_MODE_JPEG|macro|IS_DCMI_MODE_JPEG
@@ -98,18 +107,23 @@ DECL|Instance|member|DCMI_TypeDef *Instance; /*!< DCMI Register base address */
 DECL|JPEGMode|member|uint32_t JPEGMode; /*!< Enable or Disable the JPEG mode.
 DECL|LineEndCode|member|uint8_t LineEndCode; /*!< Specifies the code of the line end delimiter. */
 DECL|LineEndUnmask|member|uint8_t LineEndUnmask; /*!< Specifies the line end delimiter unmask. */
-DECL|LineSelectMode|member|uint32_t LineSelectMode; /*!< Specifies the data line to be captured by the interface.
-DECL|LineSelectStart|member|uint32_t LineSelectStart; /*!< Specifies if the data line to be captured by the interface is even or odd.
+DECL|LineEventCallback|member|void (* LineEventCallback ) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Line Event Callback */
+DECL|LineSelectMode|member|uint32_t LineSelectMode; /*!< Specifies the line of data to be captured by the interface
+DECL|LineSelectStart|member|uint32_t LineSelectStart; /*!< Specifies if the line of data to be captured by the interface is even or odd
 DECL|LineStartCode|member|uint8_t LineStartCode; /*!< Specifies the code of the line start delimiter. */
 DECL|LineStartUnmask|member|uint8_t LineStartUnmask; /*!< Specifies the line start delimiter unmask. */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< DCMI locking object */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Msp Init callback */
 DECL|PCKPolarity|member|uint32_t PCKPolarity; /*!< Specifies the Pixel clock polarity: Falling or Rising.
 DECL|State|member|__IO HAL_DCMI_StateTypeDef State; /*!< DCMI state */
 DECL|SynchroCode|member|DCMI_CodesInitTypeDef SynchroCode; /*!< Specifies the frame start delimiter codes. */
 DECL|SynchroMode|member|uint32_t SynchroMode; /*!< Specifies the Synchronization Mode: Hardware or Embedded.
 DECL|VSPolarity|member|uint32_t VSPolarity; /*!< Specifies the Vertical synchronization polarity: High or Low.
+DECL|VsyncEventCallback|member|void (* VsyncEventCallback) ( struct __DCMI_HandleTypeDef *hdcmi); /*!< DCMI Vsync Event Callback */
 DECL|XferCount|member|__IO uint32_t XferCount; /*!< DMA transfers counter */
 DECL|XferSize|member|__IO uint32_t XferSize; /*!< DMA transfer size */
+DECL|__DCMI_HandleTypeDef|struct|typedef struct __DCMI_HandleTypeDef
 DECL|__HAL_DCMI_CLEAR_FLAG|macro|__HAL_DCMI_CLEAR_FLAG
 DECL|__HAL_DCMI_DISABLE_IT|macro|__HAL_DCMI_DISABLE_IT
 DECL|__HAL_DCMI_DISABLE|macro|__HAL_DCMI_DISABLE
@@ -118,6 +132,8 @@ DECL|__HAL_DCMI_ENABLE|macro|__HAL_DCMI_ENABLE
 DECL|__HAL_DCMI_GET_FLAG|macro|__HAL_DCMI_GET_FLAG
 DECL|__HAL_DCMI_GET_IT_SOURCE|macro|__HAL_DCMI_GET_IT_SOURCE
 DECL|__HAL_DCMI_RESET_HANDLE_STATE|macro|__HAL_DCMI_RESET_HANDLE_STATE
+DECL|__HAL_DCMI_RESET_HANDLE_STATE|macro|__HAL_DCMI_RESET_HANDLE_STATE
 DECL|__STM32L4xx_HAL_DCMI_H|macro|__STM32L4xx_HAL_DCMI_H
 DECL|pBuffPtr|member|uint32_t pBuffPtr; /*!< Pointer to DMA output buffer */
 DECL|pCircularBuffer|member|uint32_t pCircularBuffer; /*!< Pointer to intermediate copy buffer
+DECL|pDCMI_CallbackTypeDef|typedef|typedef void (*pDCMI_CallbackTypeDef)(DCMI_HandleTypeDef *hdcmi);

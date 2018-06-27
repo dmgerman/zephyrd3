@@ -1,3 +1,4 @@
+DECL|AbortCpltCallback|member|void (* AbortCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|AccessTime|member|uint32_t AccessTime; /* It indicates the number of cycles for the device acces time.
 DECL|AddressDtrMode|member|uint32_t AddressDtrMode; /* It enables or not the DTR mode for the address phase.
 DECL|AddressMode|member|uint32_t AddressMode; /* It indicates the mode of the address.
@@ -16,6 +17,7 @@ DECL|ChipSelectHighTime|member|uint32_t ChipSelectHighTime; /* It defines the mi
 DECL|ClkPort|member|uint32_t ClkPort; /* It indicates which port of the OSPI IO Manager is used for the CLK pins.
 DECL|ClockMode|member|uint32_t ClockMode; /* It indicates the level of clock when the chip select is released.
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /* It specifies the prescaler factor used for generating
+DECL|CmdCpltCallback|member|void (* CmdCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|DQSMode|member|uint32_t DQSMode; /* It enables or not the data strobe management.
 DECL|DQSMode|member|uint32_t DQSMode; /* It enables or not the data strobe management.
 DECL|DQSPort|member|uint32_t DQSPort; /* It indicates which port of the OSPI IO Manager is used for the DQS pin.
@@ -25,7 +27,9 @@ DECL|DelayHoldQuarterCycle|member|uint32_t DelayHoldQuarterCycle; /* It allows t
 DECL|DeviceSize|member|uint32_t DeviceSize; /* It defines the size of the external device connected to the OSPI,
 DECL|DualQuad|member|uint32_t DualQuad; /* It enables or not the dual-quad mode which allow to access up to
 DECL|DummyCycles|member|uint32_t DummyCycles; /* It indicates the number of dummy cycles inserted before data phase.
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /* Error code in case of HAL driver internal error */
+DECL|FifoThresholdCallback|member|void (* FifoThresholdCallback)(struct __OSPI_HandleTypeDef *hospi);
 DECL|FifoThreshold|member|uint32_t FifoThreshold; /* This is the threshold used byt the IP to generate the interrupt
 DECL|FlashId|member|uint32_t FlashId; /* It indicates which external device is selected for this command (it
 DECL|FreeRunningClock|member|uint32_t FreeRunningClock; /* It enables or not the free running clock.
@@ -33,18 +37,7 @@ DECL|HAL_OSPIM_IOPORT_1_HIGH|macro|HAL_OSPIM_IOPORT_1_HIGH
 DECL|HAL_OSPIM_IOPORT_1_LOW|macro|HAL_OSPIM_IOPORT_1_LOW
 DECL|HAL_OSPIM_IOPORT_2_HIGH|macro|HAL_OSPIM_IOPORT_2_HIGH
 DECL|HAL_OSPIM_IOPORT_2_LOW|macro|HAL_OSPIM_IOPORT_2_LOW
-DECL|HAL_OSPIM_IOPORT_3_HIGH|macro|HAL_OSPIM_IOPORT_3_HIGH
-DECL|HAL_OSPIM_IOPORT_3_LOW|macro|HAL_OSPIM_IOPORT_3_LOW
-DECL|HAL_OSPIM_IOPORT_4_HIGH|macro|HAL_OSPIM_IOPORT_4_HIGH
-DECL|HAL_OSPIM_IOPORT_4_LOW|macro|HAL_OSPIM_IOPORT_4_LOW
-DECL|HAL_OSPIM_IOPORT_5_HIGH|macro|HAL_OSPIM_IOPORT_5_HIGH
-DECL|HAL_OSPIM_IOPORT_5_LOW|macro|HAL_OSPIM_IOPORT_5_LOW
-DECL|HAL_OSPIM_IOPORT_6_HIGH|macro|HAL_OSPIM_IOPORT_6_HIGH
-DECL|HAL_OSPIM_IOPORT_6_LOW|macro|HAL_OSPIM_IOPORT_6_LOW
-DECL|HAL_OSPIM_IOPORT_7_HIGH|macro|HAL_OSPIM_IOPORT_7_HIGH
-DECL|HAL_OSPIM_IOPORT_7_LOW|macro|HAL_OSPIM_IOPORT_7_LOW
-DECL|HAL_OSPIM_IOPORT_8_HIGH|macro|HAL_OSPIM_IOPORT_8_HIGH
-DECL|HAL_OSPIM_IOPORT_8_LOW|macro|HAL_OSPIM_IOPORT_8_LOW
+DECL|HAL_OSPI_ABORT_CB_ID|enumerator|HAL_OSPI_ABORT_CB_ID = 0x01U, /*!< OSPI Abort Callback ID */
 DECL|HAL_OSPI_ADDRESS_16_BITS|macro|HAL_OSPI_ADDRESS_16_BITS
 DECL|HAL_OSPI_ADDRESS_1_LINE|macro|HAL_OSPI_ADDRESS_1_LINE
 DECL|HAL_OSPI_ADDRESS_24_BITS|macro|HAL_OSPI_ADDRESS_24_BITS
@@ -71,6 +64,8 @@ DECL|HAL_OSPI_AUTOMATIC_STOP_DISABLE|macro|HAL_OSPI_AUTOMATIC_STOP_DISABLE
 DECL|HAL_OSPI_AUTOMATIC_STOP_ENABLE|macro|HAL_OSPI_AUTOMATIC_STOP_ENABLE
 DECL|HAL_OSPI_CLOCK_MODE_0|macro|HAL_OSPI_CLOCK_MODE_0
 DECL|HAL_OSPI_CLOCK_MODE_3|macro|HAL_OSPI_CLOCK_MODE_3
+DECL|HAL_OSPI_CMD_CPLT_CB_ID|enumerator|HAL_OSPI_CMD_CPLT_CB_ID = 0x03U, /*!< OSPI Command Complete Callback ID */
+DECL|HAL_OSPI_CallbackIDTypeDef|typedef|}HAL_OSPI_CallbackIDTypeDef;
 DECL|HAL_OSPI_DATA_1_LINE|macro|HAL_OSPI_DATA_1_LINE
 DECL|HAL_OSPI_DATA_2_LINES|macro|HAL_OSPI_DATA_2_LINES
 DECL|HAL_OSPI_DATA_4_LINES|macro|HAL_OSPI_DATA_4_LINES
@@ -84,12 +79,15 @@ DECL|HAL_OSPI_DQS_DISABLE|macro|HAL_OSPI_DQS_DISABLE
 DECL|HAL_OSPI_DQS_ENABLE|macro|HAL_OSPI_DQS_ENABLE
 DECL|HAL_OSPI_DUALQUAD_DISABLE|macro|HAL_OSPI_DUALQUAD_DISABLE
 DECL|HAL_OSPI_DUALQUAD_ENABLE|macro|HAL_OSPI_DUALQUAD_ENABLE
+DECL|HAL_OSPI_ERROR_CB_ID|enumerator|HAL_OSPI_ERROR_CB_ID = 0x00U, /*!< OSPI Error Callback ID */
 DECL|HAL_OSPI_ERROR_DMA|macro|HAL_OSPI_ERROR_DMA
+DECL|HAL_OSPI_ERROR_INVALID_CALLBACK|macro|HAL_OSPI_ERROR_INVALID_CALLBACK
 DECL|HAL_OSPI_ERROR_INVALID_PARAM|macro|HAL_OSPI_ERROR_INVALID_PARAM
 DECL|HAL_OSPI_ERROR_INVALID_SEQUENCE|macro|HAL_OSPI_ERROR_INVALID_SEQUENCE
 DECL|HAL_OSPI_ERROR_NONE|macro|HAL_OSPI_ERROR_NONE
 DECL|HAL_OSPI_ERROR_TIMEOUT|macro|HAL_OSPI_ERROR_TIMEOUT
 DECL|HAL_OSPI_ERROR_TRANSFER|macro|HAL_OSPI_ERROR_TRANSFER
+DECL|HAL_OSPI_FIFO_THRESHOLD_CB_ID|enumerator|HAL_OSPI_FIFO_THRESHOLD_CB_ID = 0x02U, /*!< OSPI FIFO Threshold Callback ID */
 DECL|HAL_OSPI_FIXED_LATENCY|macro|HAL_OSPI_FIXED_LATENCY
 DECL|HAL_OSPI_FLAG_BUSY|macro|HAL_OSPI_FLAG_BUSY
 DECL|HAL_OSPI_FLAG_FT|macro|HAL_OSPI_FLAG_FT
@@ -125,11 +123,15 @@ DECL|HAL_OSPI_MEMTYPE_HYPERBUS|macro|HAL_OSPI_MEMTYPE_HYPERBUS
 DECL|HAL_OSPI_MEMTYPE_MACRONIX_RAM|macro|HAL_OSPI_MEMTYPE_MACRONIX_RAM
 DECL|HAL_OSPI_MEMTYPE_MACRONIX|macro|HAL_OSPI_MEMTYPE_MACRONIX
 DECL|HAL_OSPI_MEMTYPE_MICRON|macro|HAL_OSPI_MEMTYPE_MICRON
+DECL|HAL_OSPI_MSP_DEINIT_CB_ID|enumerator|HAL_OSPI_MSP_DEINIT_CB_ID = 0x0BU /*!< OSPI MspDeInit Callback ID */
+DECL|HAL_OSPI_MSP_INIT_CB_ID|enumerator|HAL_OSPI_MSP_INIT_CB_ID = 0x0AU, /*!< OSPI MspInit Callback ID */
 DECL|HAL_OSPI_NO_LATENCY_ON_WRITE|macro|HAL_OSPI_NO_LATENCY_ON_WRITE
 DECL|HAL_OSPI_OPTYPE_COMMON_CFG|macro|HAL_OSPI_OPTYPE_COMMON_CFG
 DECL|HAL_OSPI_OPTYPE_READ_CFG|macro|HAL_OSPI_OPTYPE_READ_CFG
 DECL|HAL_OSPI_OPTYPE_WRITE_CFG|macro|HAL_OSPI_OPTYPE_WRITE_CFG
 DECL|HAL_OSPI_REGISTER_ADDRESS_SPACE|macro|HAL_OSPI_REGISTER_ADDRESS_SPACE
+DECL|HAL_OSPI_RX_CPLT_CB_ID|enumerator|HAL_OSPI_RX_CPLT_CB_ID = 0x04U, /*!< OSPI Rx Complete Callback ID */
+DECL|HAL_OSPI_RX_HALF_CPLT_CB_ID|enumerator|HAL_OSPI_RX_HALF_CPLT_CB_ID = 0x06U, /*!< OSPI Rx Half Complete Callback ID */
 DECL|HAL_OSPI_SAMPLE_SHIFTING_HALFCYCLE|macro|HAL_OSPI_SAMPLE_SHIFTING_HALFCYCLE
 DECL|HAL_OSPI_SAMPLE_SHIFTING_NONE|macro|HAL_OSPI_SAMPLE_SHIFTING_NONE
 DECL|HAL_OSPI_SIOO_INST_EVERY_CMD|macro|HAL_OSPI_SIOO_INST_EVERY_CMD
@@ -147,9 +149,13 @@ DECL|HAL_OSPI_STATE_READY|macro|HAL_OSPI_STATE_READY
 DECL|HAL_OSPI_STATE_READ_CMD_CFG|macro|HAL_OSPI_STATE_READ_CMD_CFG
 DECL|HAL_OSPI_STATE_RESET|macro|HAL_OSPI_STATE_RESET
 DECL|HAL_OSPI_STATE_WRITE_CMD_CFG|macro|HAL_OSPI_STATE_WRITE_CMD_CFG
+DECL|HAL_OSPI_STATUS_MATCH_CB_ID|enumerator|HAL_OSPI_STATUS_MATCH_CB_ID = 0x08U, /*!< OSPI Status Match Callback ID */
+DECL|HAL_OSPI_TIMEOUT_CB_ID|enumerator|HAL_OSPI_TIMEOUT_CB_ID = 0x09U, /*!< OSPI Timeout Callback ID */
 DECL|HAL_OSPI_TIMEOUT_COUNTER_DISABLE|macro|HAL_OSPI_TIMEOUT_COUNTER_DISABLE
 DECL|HAL_OSPI_TIMEOUT_COUNTER_ENABLE|macro|HAL_OSPI_TIMEOUT_COUNTER_ENABLE
 DECL|HAL_OSPI_TIMEOUT_DEFAULT_VALUE|macro|HAL_OSPI_TIMEOUT_DEFAULT_VALUE
+DECL|HAL_OSPI_TX_CPLT_CB_ID|enumerator|HAL_OSPI_TX_CPLT_CB_ID = 0x05U, /*!< OSPI Tx Complete Callback ID */
+DECL|HAL_OSPI_TX_HALF_CPLT_CB_ID|enumerator|HAL_OSPI_TX_HALF_CPLT_CB_ID = 0x07U, /*!< OSPI Tx Half Complete Callback ID */
 DECL|HAL_OSPI_VARIABLE_LATENCY|macro|HAL_OSPI_VARIABLE_LATENCY
 DECL|HAL_OSPI_WRAP_128_BYTES|macro|HAL_OSPI_WRAP_128_BYTES
 DECL|HAL_OSPI_WRAP_16_BYTES|macro|HAL_OSPI_WRAP_16_BYTES
@@ -212,6 +218,8 @@ DECL|Mask|member|uint32_t Mask; /* Specifies the mask to be applied to the statu
 DECL|MatchMode|member|uint32_t MatchMode; /* Specifies the method used for determining a match.
 DECL|Match|member|uint32_t Match; /* Specifies the value to be compared with the masked status register to get a match.
 DECL|MemoryType|member|uint32_t MemoryType; /* It indicates the external device type connected to the OSPI.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __OSPI_HandleTypeDef *hospi);
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|NCSPort|member|uint32_t NCSPort; /* It indicates which port of the OSPI IO Manager is used for the NCS pin.
 DECL|NbData|member|uint32_t NbData; /* It indicates the number of data transferred with this command.
 DECL|NbData|member|uint32_t NbData; /* It indicates the number of data transferred with this command.
@@ -225,12 +233,19 @@ DECL|OSPI_MemoryMappedTypeDef|typedef|}OSPI_MemoryMappedTypeDef;
 DECL|OSPI_RegularCmdTypeDef|typedef|}OSPI_RegularCmdTypeDef;
 DECL|OperationType|member|uint32_t OperationType; /* It indicates if the configuration applies to the common regsiters or
 DECL|RWRecoveryTime|member|uint32_t RWRecoveryTime; /* It indicates the number of cycles for the device read write recovery time.
+DECL|RxCpltCallback|member|void (* RxCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
+DECL|RxHalfCpltCallback|member|void (* RxHalfCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|SIOOMode|member|uint32_t SIOOMode; /* It enables or not the SIOO mode.
+DECL|STM32L4xx_HAL_OSPI_H|macro|STM32L4xx_HAL_OSPI_H
 DECL|SampleShifting|member|uint32_t SampleShifting; /* It allows to delay to 1/2 cycle the data sampling in order
 DECL|State|member|__IO uint32_t State; /* Internal state of the OSPI HAL driver */
+DECL|StatusMatchCallback|member|void (* StatusMatchCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|TimeOutActivation|member|uint32_t TimeOutActivation; /* Specifies if the timeout counter is enabled to release the chip select.
+DECL|TimeOutCallback|member|void (* TimeOutCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|TimeOutPeriod|member|uint32_t TimeOutPeriod; /* Specifies the number of clock to wait when the FIFO is full before to release the chip select.
 DECL|Timeout|member|uint32_t Timeout; /* Timeout used for the OSPI external device access */
+DECL|TxCpltCallback|member|void (* TxCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
+DECL|TxHalfCpltCallback|member|void (* TxHalfCpltCallback) (struct __OSPI_HandleTypeDef *hospi);
 DECL|WrapSize|member|uint32_t WrapSize; /* It indicates the wrap-size corresponding the external device configuration.
 DECL|WriteZeroLatency|member|uint32_t WriteZeroLatency; /* It enables or not the latency for the write access.
 DECL|XferCount|member|__IO uint32_t XferCount; /* Counter of data transferred */
@@ -243,6 +258,8 @@ DECL|__HAL_OSPI_ENABLE|macro|__HAL_OSPI_ENABLE
 DECL|__HAL_OSPI_GET_FLAG|macro|__HAL_OSPI_GET_FLAG
 DECL|__HAL_OSPI_GET_IT_SOURCE|macro|__HAL_OSPI_GET_IT_SOURCE
 DECL|__HAL_OSPI_RESET_HANDLE_STATE|macro|__HAL_OSPI_RESET_HANDLE_STATE
-DECL|__STM32L4xx_HAL_OSPI_H|macro|__STM32L4xx_HAL_OSPI_H
+DECL|__HAL_OSPI_RESET_HANDLE_STATE|macro|__HAL_OSPI_RESET_HANDLE_STATE
+DECL|__OSPI_HandleTypeDef|struct|typedef struct __OSPI_HandleTypeDef
 DECL|hdma|member|DMA_HandleTypeDef *hdma; /* Handle of the DMA channel used for the transfer */
 DECL|pBuffPtr|member|uint8_t *pBuffPtr; /* Address of the OSPI buffer for transfer */
+DECL|pOSPI_CallbackTypeDef|typedef|typedef void (*pOSPI_CallbackTypeDef)(OSPI_HandleTypeDef *hospi);

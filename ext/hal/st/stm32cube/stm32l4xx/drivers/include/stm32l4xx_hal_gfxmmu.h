@@ -6,6 +6,7 @@ DECL|Buf2Address|member|uint32_t Buf2Address; /*!< Physical address of buffer 2.
 DECL|Buf3Address|member|uint32_t Buf3Address; /*!< Physical address of buffer 3. */
 DECL|Buffers|member|GFXMMU_BuffersTypeDef Buffers; /*!< Physical buffers addresses. */
 DECL|DefaultValue|member|uint32_t DefaultValue; /*!< Value returned when virtual memory location not physically mapped. */
+DECL|ErrorCallback|member|void (*ErrorCallback) (struct __GFXMMU_HandleTypeDef *hgfxmmu); /*!< GFXMMU error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< GFXMMU error code */
 DECL|FirstVisibleBlock|member|uint32_t FirstVisibleBlock; /*!< First visible block on this line.
 DECL|GFXMMU_192BLOCKS|macro|GFXMMU_192BLOCKS
@@ -21,6 +22,7 @@ DECL|GFXMMU_ERROR_BUFFER0_OVERFLOW|macro|GFXMMU_ERROR_BUFFER0_OVERFLOW
 DECL|GFXMMU_ERROR_BUFFER1_OVERFLOW|macro|GFXMMU_ERROR_BUFFER1_OVERFLOW
 DECL|GFXMMU_ERROR_BUFFER2_OVERFLOW|macro|GFXMMU_ERROR_BUFFER2_OVERFLOW
 DECL|GFXMMU_ERROR_BUFFER3_OVERFLOW|macro|GFXMMU_ERROR_BUFFER3_OVERFLOW
+DECL|GFXMMU_ERROR_INVALID_CALLBACK|macro|GFXMMU_ERROR_INVALID_CALLBACK
 DECL|GFXMMU_ERROR_NONE|macro|GFXMMU_ERROR_NONE
 DECL|GFXMMU_HandleTypeDef|typedef|}GFXMMU_HandleTypeDef;
 DECL|GFXMMU_InitTypeDef|typedef|}GFXMMU_InitTypeDef;
@@ -28,6 +30,10 @@ DECL|GFXMMU_InterruptsTypeDef|typedef|}GFXMMU_InterruptsTypeDef;
 DECL|GFXMMU_LUT_LINE_DISABLE|macro|GFXMMU_LUT_LINE_DISABLE
 DECL|GFXMMU_LUT_LINE_ENABLE|macro|GFXMMU_LUT_LINE_ENABLE
 DECL|GFXMMU_LutLineTypeDef|typedef|}GFXMMU_LutLineTypeDef;
+DECL|HAL_GFXMMU_CallbackIDTypeDef|typedef|}HAL_GFXMMU_CallbackIDTypeDef;
+DECL|HAL_GFXMMU_ERROR_CB_ID|enumerator|HAL_GFXMMU_ERROR_CB_ID = 0x00U, /*!< GFXMMU error callback ID */
+DECL|HAL_GFXMMU_MSPDEINIT_CB_ID|enumerator|HAL_GFXMMU_MSPDEINIT_CB_ID = 0x02U /*!< GFXMMU MSP de-init callback ID */
+DECL|HAL_GFXMMU_MSPINIT_CB_ID|enumerator|HAL_GFXMMU_MSPINIT_CB_ID = 0x01U, /*!< GFXMMU MSP init callback ID */
 DECL|HAL_GFXMMU_STATE_READY|enumerator|HAL_GFXMMU_STATE_READY = 0x01U, /*!< GFXMMU initialized and ready for use */
 DECL|HAL_GFXMMU_STATE_RESET|enumerator|HAL_GFXMMU_STATE_RESET = 0x00U, /*!< GFXMMU not initialized */
 DECL|HAL_GFXMMU_StateTypeDef|typedef|}HAL_GFXMMU_StateTypeDef;
@@ -46,7 +52,12 @@ DECL|LastVisibleBlock|member|uint32_t LastVisibleBlock; /*!< Last visible block 
 DECL|LineNumber|member|uint32_t LineNumber; /*!< LUT line number.
 DECL|LineOffset|member|int32_t LineOffset; /*!< Offset of block 0 of the current line in physical buffer.
 DECL|LineStatus|member|uint32_t LineStatus; /*!< LUT line enable/disable.
+DECL|MspDeInitCallback|member|void (*MspDeInitCallback) (struct __GFXMMU_HandleTypeDef *hgfxmmu); /*!< GFXMMU MSP de-init callback */
+DECL|MspInitCallback|member|void (*MspInitCallback) (struct __GFXMMU_HandleTypeDef *hgfxmmu); /*!< GFXMMU MSP init callback */
+DECL|STM32L4xx_HAL_GFXMMU_H|macro|STM32L4xx_HAL_GFXMMU_H
 DECL|State|member|HAL_GFXMMU_StateTypeDef State; /*!< GFXMMU state */
 DECL|UsedInterrupts|member|uint32_t UsedInterrupts; /*!< Interrupts used.
+DECL|__GFXMMU_HandleTypeDef|struct|typedef struct __GFXMMU_HandleTypeDef
 DECL|__HAL_GFXMMU_RESET_HANDLE_STATE|macro|__HAL_GFXMMU_RESET_HANDLE_STATE
-DECL|__STM32L4xx_HAL_GFXMMU_H|macro|__STM32L4xx_HAL_GFXMMU_H
+DECL|__HAL_GFXMMU_RESET_HANDLE_STATE|macro|__HAL_GFXMMU_RESET_HANDLE_STATE
+DECL|pGFXMMU_CallbackTypeDef|typedef|typedef void (*pGFXMMU_CallbackTypeDef)(GFXMMU_HandleTypeDef *hgfxmmu);

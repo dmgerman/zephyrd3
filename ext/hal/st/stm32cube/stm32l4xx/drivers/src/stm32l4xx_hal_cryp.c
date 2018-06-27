@@ -29,3 +29,5 @@ DECL|HAL_CRYP_Init|function|HAL_StatusTypeDef HAL_CRYP_Init(CRYP_HandleTypeDef *
 DECL|HAL_CRYP_MspDeInit|function|__weak void HAL_CRYP_MspDeInit(CRYP_HandleTypeDef *hcryp)
 DECL|HAL_CRYP_MspInit|function|__weak void HAL_CRYP_MspInit(CRYP_HandleTypeDef *hcryp)
 DECL|HAL_CRYP_OutCpltCallback|function|__weak void HAL_CRYP_OutCpltCallback(CRYP_HandleTypeDef *hcryp)
+DECL|HAL_CRYP_RegisterCallback|function|HAL_StatusTypeDef HAL_CRYP_RegisterCallback(CRYP_HandleTypeDef *hcryp, HAL_CRYP_CallbackIDTypeDef CallbackID, pCRYP_CallbackTypeDef pCallback)
+DECL|HAL_CRYP_UnRegisterCallback|function|HAL_StatusTypeDef HAL_CRYP_UnRegisterCallback(CRYP_HandleTypeDef *hcryp, HAL_CRYP_CallbackIDTypeDef CallbackID)

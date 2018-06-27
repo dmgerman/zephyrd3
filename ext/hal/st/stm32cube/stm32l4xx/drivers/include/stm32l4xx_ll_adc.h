@@ -762,6 +762,7 @@ DECL|TEMPSENSOR_CAL1_ADDR|macro|TEMPSENSOR_CAL1_ADDR
 DECL|TEMPSENSOR_CAL1_TEMP|macro|TEMPSENSOR_CAL1_TEMP
 DECL|TEMPSENSOR_CAL2_ADDR|macro|TEMPSENSOR_CAL2_ADDR
 DECL|TEMPSENSOR_CAL2_TEMP|macro|TEMPSENSOR_CAL2_TEMP
+DECL|TEMPSENSOR_CAL2_TEMP|macro|TEMPSENSOR_CAL2_TEMP
 DECL|TEMPSENSOR_CAL_VREFANALOG|macro|TEMPSENSOR_CAL_VREFANALOG
 DECL|TrigAuto|member|uint32_t TrigAuto; /*!< Set ADC group injected conversion trigger: independent or from ADC group regular.
 DECL|TriggerSource|member|uint32_t TriggerSource; /*!< Set ADC group injected conversion trigger source: internal (SW start) or from external IP (timer event, external interrupt line).

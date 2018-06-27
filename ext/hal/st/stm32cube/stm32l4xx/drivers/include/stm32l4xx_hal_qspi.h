@@ -1,3 +1,4 @@
+DECL|AbortCpltCallback|member|void (* AbortCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|AddressMode|member|uint32_t AddressMode; /* Specifies the Address Mode
 DECL|AddressSize|member|uint32_t AddressSize; /* Specifies the Address Size
 DECL|Address|member|uint32_t Address; /* Specifies the Address to be sent (Size from 1 to 4 bytes according AddressSize)
@@ -8,31 +9,48 @@ DECL|AutomaticStop|member|uint32_t AutomaticStop; /* Specifies if automatic poll
 DECL|ChipSelectHighTime|member|uint32_t ChipSelectHighTime; /* Specifies the Chip Select High Time. ChipSelectHighTime+1 defines the minimum number
 DECL|ClockMode|member|uint32_t ClockMode; /* Specifies the Clock Mode. It indicates the level that clock takes between commands.
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /* Specifies the prescaler factor for generating clock based on the AHB clock.
+DECL|CmdCpltCallback|member|void (* CmdCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|DataMode|member|uint32_t DataMode; /* Specifies the Data Mode (used for dummy cycles and data phases)
-DECL|DdrHoldHalfCycle|member|uint32_t DdrHoldHalfCycle; /* Specifies the DDR hold half cycle. It delays the data output by one half of
+DECL|DdrHoldHalfCycle|member|uint32_t DdrHoldHalfCycle; /* Specifies if the DDR hold is enabled. When enabled it delays the data
 DECL|DdrMode|member|uint32_t DdrMode; /* Specifies the double data rate mode for address, alternate byte and data phase
 DECL|DualFlash|member|uint32_t DualFlash; /* Specifies the Dual Flash Mode State
 DECL|DummyCycles|member|uint32_t DummyCycles; /* Specifies the Number of Dummy Cycles.
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /* QSPI Error code */
+DECL|FifoThresholdCallback|member|void (* FifoThresholdCallback)(struct __QSPI_HandleTypeDef *hqspi);
 DECL|FifoThreshold|member|uint32_t FifoThreshold; /* Specifies the threshold number of bytes in the FIFO (used only in indirect mode)
 DECL|FlashID|member|uint32_t FlashID; /* Specifies the Flash which will be used,
 DECL|FlashSize|member|uint32_t FlashSize; /* Specifies the Flash Size. FlashSize+1 is effectively the number of address bits
 DECL|HAL_QPSI_TIMEOUT_DEFAULT_VALUE|macro|HAL_QPSI_TIMEOUT_DEFAULT_VALUE
+DECL|HAL_QSPI_ABORT_CB_ID|enumerator|HAL_QSPI_ABORT_CB_ID = 0x01U, /*!< QSPI Abort Callback ID */
+DECL|HAL_QSPI_CMD_CPLT_CB_ID|enumerator|HAL_QSPI_CMD_CPLT_CB_ID = 0x03U, /*!< QSPI Command Complete Callback ID */
+DECL|HAL_QSPI_CallbackIDTypeDef|typedef|}HAL_QSPI_CallbackIDTypeDef;
+DECL|HAL_QSPI_ERROR_CB_ID|enumerator|HAL_QSPI_ERROR_CB_ID = 0x00U, /*!< QSPI Error Callback ID */
 DECL|HAL_QSPI_ERROR_DMA|macro|HAL_QSPI_ERROR_DMA
+DECL|HAL_QSPI_ERROR_INVALID_CALLBACK|macro|HAL_QSPI_ERROR_INVALID_CALLBACK
 DECL|HAL_QSPI_ERROR_INVALID_PARAM|macro|HAL_QSPI_ERROR_INVALID_PARAM
 DECL|HAL_QSPI_ERROR_NONE|macro|HAL_QSPI_ERROR_NONE
 DECL|HAL_QSPI_ERROR_TIMEOUT|macro|HAL_QSPI_ERROR_TIMEOUT
 DECL|HAL_QSPI_ERROR_TRANSFER|macro|HAL_QSPI_ERROR_TRANSFER
-DECL|HAL_QSPI_STATE_ABORT|enumerator|HAL_QSPI_STATE_ABORT = 0x08, /*!< Peripheral with abort request ongoing */
-DECL|HAL_QSPI_STATE_BUSY_AUTO_POLLING|enumerator|HAL_QSPI_STATE_BUSY_AUTO_POLLING = 0x42, /*!< Peripheral in auto polling mode ongoing */
-DECL|HAL_QSPI_STATE_BUSY_INDIRECT_RX|enumerator|HAL_QSPI_STATE_BUSY_INDIRECT_RX = 0x22, /*!< Peripheral in indirect mode with reception ongoing */
-DECL|HAL_QSPI_STATE_BUSY_INDIRECT_TX|enumerator|HAL_QSPI_STATE_BUSY_INDIRECT_TX = 0x12, /*!< Peripheral in indirect mode with transmission ongoing */
-DECL|HAL_QSPI_STATE_BUSY_MEM_MAPPED|enumerator|HAL_QSPI_STATE_BUSY_MEM_MAPPED = 0x82, /*!< Peripheral in memory mapped mode ongoing */
-DECL|HAL_QSPI_STATE_BUSY|enumerator|HAL_QSPI_STATE_BUSY = 0x02, /*!< Peripheral in indirect mode and busy */
-DECL|HAL_QSPI_STATE_ERROR|enumerator|HAL_QSPI_STATE_ERROR = 0x04 /*!< Peripheral in error */
-DECL|HAL_QSPI_STATE_READY|enumerator|HAL_QSPI_STATE_READY = 0x01, /*!< Peripheral initialized and ready for use */
-DECL|HAL_QSPI_STATE_RESET|enumerator|HAL_QSPI_STATE_RESET = 0x00, /*!< Peripheral not initialized */
+DECL|HAL_QSPI_FIFO_THRESHOLD_CB_ID|enumerator|HAL_QSPI_FIFO_THRESHOLD_CB_ID = 0x02U, /*!< QSPI FIFO Threshold Callback ID */
+DECL|HAL_QSPI_MSP_DEINIT_CB_ID|enumerator|HAL_QSPI_MSP_DEINIT_CB_ID = 0x0B0 /*!< QSPI MspDeInit Callback ID */
+DECL|HAL_QSPI_MSP_INIT_CB_ID|enumerator|HAL_QSPI_MSP_INIT_CB_ID = 0x0AU, /*!< QSPI MspInit Callback ID */
+DECL|HAL_QSPI_RX_CPLT_CB_ID|enumerator|HAL_QSPI_RX_CPLT_CB_ID = 0x04U, /*!< QSPI Rx Complete Callback ID */
+DECL|HAL_QSPI_RX_HALF_CPLT_CB_ID|enumerator|HAL_QSPI_RX_HALF_CPLT_CB_ID = 0x06U, /*!< QSPI Rx Half Complete Callback ID */
+DECL|HAL_QSPI_STATE_ABORT|enumerator|HAL_QSPI_STATE_ABORT = 0x08U, /*!< Peripheral with abort request ongoing */
+DECL|HAL_QSPI_STATE_BUSY_AUTO_POLLING|enumerator|HAL_QSPI_STATE_BUSY_AUTO_POLLING = 0x42U, /*!< Peripheral in auto polling mode ongoing */
+DECL|HAL_QSPI_STATE_BUSY_INDIRECT_RX|enumerator|HAL_QSPI_STATE_BUSY_INDIRECT_RX = 0x22U, /*!< Peripheral in indirect mode with reception ongoing */
+DECL|HAL_QSPI_STATE_BUSY_INDIRECT_TX|enumerator|HAL_QSPI_STATE_BUSY_INDIRECT_TX = 0x12U, /*!< Peripheral in indirect mode with transmission ongoing */
+DECL|HAL_QSPI_STATE_BUSY_MEM_MAPPED|enumerator|HAL_QSPI_STATE_BUSY_MEM_MAPPED = 0x82U, /*!< Peripheral in memory mapped mode ongoing */
+DECL|HAL_QSPI_STATE_BUSY|enumerator|HAL_QSPI_STATE_BUSY = 0x02U, /*!< Peripheral in indirect mode and busy */
+DECL|HAL_QSPI_STATE_ERROR|enumerator|HAL_QSPI_STATE_ERROR = 0x04U /*!< Peripheral in error */
+DECL|HAL_QSPI_STATE_READY|enumerator|HAL_QSPI_STATE_READY = 0x01U, /*!< Peripheral initialized and ready for use */
+DECL|HAL_QSPI_STATE_RESET|enumerator|HAL_QSPI_STATE_RESET = 0x00U, /*!< Peripheral not initialized */
+DECL|HAL_QSPI_STATUS_MATCH_CB_ID|enumerator|HAL_QSPI_STATUS_MATCH_CB_ID = 0x08U, /*!< QSPI Status Match Callback ID */
 DECL|HAL_QSPI_StateTypeDef|typedef|}HAL_QSPI_StateTypeDef;
+DECL|HAL_QSPI_TIMEOUT_CB_ID|enumerator|HAL_QSPI_TIMEOUT_CB_ID = 0x09U, /*!< QSPI Timeout Callback ID */
+DECL|HAL_QSPI_TX_CPLT_CB_ID|enumerator|HAL_QSPI_TX_CPLT_CB_ID = 0x05U, /*!< QSPI Tx Complete Callback ID */
+DECL|HAL_QSPI_TX_HALF_CPLT_CB_ID|enumerator|HAL_QSPI_TX_HALF_CPLT_CB_ID = 0x07U, /*!< QSPI Tx Half Complete Callback ID */
 DECL|IS_QSPI_ADDRESS_MODE|macro|IS_QSPI_ADDRESS_MODE
 DECL|IS_QSPI_ADDRESS_SIZE|macro|IS_QSPI_ADDRESS_SIZE
 DECL|IS_QSPI_ALTERNATE_BYTES_MODE|macro|IS_QSPI_ALTERNATE_BYTES_MODE
@@ -68,6 +86,8 @@ DECL|Lock|member|__IO HAL_LockTypeDef Lock; /* Locking object */
 DECL|Mask|member|uint32_t Mask; /* Specifies the mask to be applied to the status bytes received.
 DECL|MatchMode|member|uint32_t MatchMode; /* Specifies the method used for determining a match.
 DECL|Match|member|uint32_t Match; /* Specifies the value to be compared with the masked status register to get a match.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __QSPI_HandleTypeDef *hqspi);
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|NbData|member|uint32_t NbData; /* Specifies the number of data to transfer. (This is the number of bytes)
 DECL|QSPI_ADDRESS_16_BITS|macro|QSPI_ADDRESS_16_BITS
 DECL|QSPI_ADDRESS_1_LINE|macro|QSPI_ADDRESS_1_LINE
@@ -137,15 +157,22 @@ DECL|QSPI_SIOO_INST_EVERY_CMD|macro|QSPI_SIOO_INST_EVERY_CMD
 DECL|QSPI_SIOO_INST_ONLY_FIRST_CMD|macro|QSPI_SIOO_INST_ONLY_FIRST_CMD
 DECL|QSPI_TIMEOUT_COUNTER_DISABLE|macro|QSPI_TIMEOUT_COUNTER_DISABLE
 DECL|QSPI_TIMEOUT_COUNTER_ENABLE|macro|QSPI_TIMEOUT_COUNTER_ENABLE
+DECL|RxCpltCallback|member|void (* RxCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
+DECL|RxHalfCpltCallback|member|void (* RxHalfCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|RxXferCount|member|__IO uint32_t RxXferCount; /* QSPI Rx Transfer Counter */
 DECL|RxXferSize|member|__IO uint32_t RxXferSize; /* QSPI Rx Transfer size */
 DECL|SIOOMode|member|uint32_t SIOOMode; /* Specifies the send instruction only once mode
+DECL|STM32L4xx_HAL_QSPI_H|macro|STM32L4xx_HAL_QSPI_H
 DECL|SampleShifting|member|uint32_t SampleShifting; /* Specifies the Sample Shift. The data is sampled 1/2 clock cycle delay later to
 DECL|State|member|__IO HAL_QSPI_StateTypeDef State; /* QSPI communication state */
 DECL|StatusBytesSize|member|uint32_t StatusBytesSize; /* Specifies the size of the status bytes received.
+DECL|StatusMatchCallback|member|void (* StatusMatchCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|TimeOutActivation|member|uint32_t TimeOutActivation; /* Specifies if the timeout counter is enabled to release the chip select.
+DECL|TimeOutCallback|member|void (* TimeOutCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|TimeOutPeriod|member|uint32_t TimeOutPeriod; /* Specifies the number of clock to wait when the FIFO is full before to release the chip select.
 DECL|Timeout|member|uint32_t Timeout; /* Timeout for the QSPI memory access */
+DECL|TxCpltCallback|member|void (* TxCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
+DECL|TxHalfCpltCallback|member|void (* TxHalfCpltCallback) (struct __QSPI_HandleTypeDef *hqspi);
 DECL|TxXferCount|member|__IO uint32_t TxXferCount; /* QSPI Tx Transfer Counter */
 DECL|TxXferSize|member|__IO uint32_t TxXferSize; /* QSPI Tx Transfer size */
 DECL|__HAL_QSPI_CLEAR_FLAG|macro|__HAL_QSPI_CLEAR_FLAG
@@ -156,7 +183,9 @@ DECL|__HAL_QSPI_ENABLE|macro|__HAL_QSPI_ENABLE
 DECL|__HAL_QSPI_GET_FLAG|macro|__HAL_QSPI_GET_FLAG
 DECL|__HAL_QSPI_GET_IT_SOURCE|macro|__HAL_QSPI_GET_IT_SOURCE
 DECL|__HAL_QSPI_RESET_HANDLE_STATE|macro|__HAL_QSPI_RESET_HANDLE_STATE
-DECL|__STM32L4xx_HAL_QSPI_H|macro|__STM32L4xx_HAL_QSPI_H
+DECL|__HAL_QSPI_RESET_HANDLE_STATE|macro|__HAL_QSPI_RESET_HANDLE_STATE
+DECL|__QSPI_HandleTypeDef|struct|typedef struct __QSPI_HandleTypeDef
 DECL|hdma|member|DMA_HandleTypeDef *hdma; /* QSPI Rx/Tx DMA Handle parameters */
+DECL|pQSPI_CallbackTypeDef|typedef|typedef void (*pQSPI_CallbackTypeDef)(QSPI_HandleTypeDef *hqspi);
 DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /* Pointer to QSPI Rx transfer Buffer */
 DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /* Pointer to QSPI Tx transfer Buffer */

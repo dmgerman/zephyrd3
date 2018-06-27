@@ -1,3 +1,4 @@
+DECL|AbortCpltCallback|member|void (* AbortCpltCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|AllocationUnitSize|member|__IO uint8_t AllocationUnitSize; /*!< Carries information about the card's allocation unit size */
 DECL|BLOCKSIZE|macro|BLOCKSIZE
 DECL|BlockNbr|member|uint32_t BlockNbr; /*!< Specifies the Card Capacity in blocks */
@@ -28,15 +29,18 @@ DECL|DSRImpl|member|__IO uint8_t DSRImpl; /*!< DSR implemented */
 DECL|DataBusWidth|member|__IO uint8_t DataBusWidth; /*!< Shows the currently defined data bus width */
 DECL|DeviceSizeMul|member|__IO uint8_t DeviceSizeMul; /*!< Device size multiplier */
 DECL|DeviceSize|member|__IO uint32_t DeviceSize; /*!< Device Size */
+DECL|DriveTransceiver_1_8V_Callback|member|void (* DriveTransceiver_1_8V_Callback) (FlagStatus status);
 DECL|ECC|member|__IO uint8_t ECC; /*!< ECC code */
 DECL|EraseGrMul|member|__IO uint8_t EraseGrMul; /*!< Erase group size multiplier */
 DECL|EraseGrSize|member|__IO uint8_t EraseGrSize; /*!< Erase group size */
 DECL|EraseOffset|member|__IO uint8_t EraseOffset; /*!< Carries information about the erase offset */
 DECL|EraseSize|member|__IO uint16_t EraseSize; /*!< Determines the number of AUs to be erased in one operation */
 DECL|EraseTimeout|member|__IO uint8_t EraseTimeout; /*!< Determines the timeout for any number of AU erase */
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< SD Card Error codes */
-DECL|FileFormatGrouop|member|__IO uint8_t FileFormatGrouop; /*!< File format group */
+DECL|FileFormatGroup|member|__IO uint8_t FileFormatGroup; /*!< File format group */
 DECL|FileFormat|member|__IO uint8_t FileFormat; /*!< File format */
+DECL|HAL_SD_ABORT_CB_ID|enumerator|HAL_SD_ABORT_CB_ID = 0x03U, /*!< SD Abort Callback ID */
 DECL|HAL_SD_CARD_DISCONNECTED|enumerator|HAL_SD_CARD_DISCONNECTED = ((uint32_t)0x00000008U), /*!< Card is disconnected */
 DECL|HAL_SD_CARD_ERROR|enumerator|HAL_SD_CARD_ERROR = ((uint32_t)0x000000FFU) /*!< Card response Error */
 DECL|HAL_SD_CARD_IDENTIFICATION|enumerator|HAL_SD_CARD_IDENTIFICATION = ((uint32_t)0x00000002U), /*!< Card is in identification state */
@@ -46,6 +50,7 @@ DECL|HAL_SD_CARD_RECEIVING|enumerator|HAL_SD_CARD_RECEIVING = ((uint32_t)0x00000
 DECL|HAL_SD_CARD_SENDING|enumerator|HAL_SD_CARD_SENDING = ((uint32_t)0x00000005U), /*!< Card is sending an operation */
 DECL|HAL_SD_CARD_STANDBY|enumerator|HAL_SD_CARD_STANDBY = ((uint32_t)0x00000003U), /*!< Card is in standby state */
 DECL|HAL_SD_CARD_TRANSFER|enumerator|HAL_SD_CARD_TRANSFER = ((uint32_t)0x00000004U), /*!< Card is in transfer state */
+DECL|HAL_SD_CallbackIDTypeDef|typedef|}HAL_SD_CallbackIDTypeDef;
 DECL|HAL_SD_CardCIDTypedef|typedef|}HAL_SD_CardCIDTypedef;
 DECL|HAL_SD_CardCSDTypedef|typedef|}HAL_SD_CardCSDTypedef;
 DECL|HAL_SD_CardInfoTypeDef|typedef|}HAL_SD_CardInfoTypeDef;
@@ -59,6 +64,7 @@ DECL|HAL_SD_ERROR_BLOCK_LEN_ERR|macro|HAL_SD_ERROR_BLOCK_LEN_ERR
 DECL|HAL_SD_ERROR_BUSY|macro|HAL_SD_ERROR_BUSY
 DECL|HAL_SD_ERROR_CARD_ECC_DISABLED|macro|HAL_SD_ERROR_CARD_ECC_DISABLED
 DECL|HAL_SD_ERROR_CARD_ECC_FAILED|macro|HAL_SD_ERROR_CARD_ECC_FAILED
+DECL|HAL_SD_ERROR_CB_ID|enumerator|HAL_SD_ERROR_CB_ID = 0x02U, /*!< SD Error Callback ID */
 DECL|HAL_SD_ERROR_CC_ERR|macro|HAL_SD_ERROR_CC_ERR
 DECL|HAL_SD_ERROR_CID_CSD_OVERWRITE|macro|HAL_SD_ERROR_CID_CSD_OVERWRITE
 DECL|HAL_SD_ERROR_CMD_CRC_FAIL|macro|HAL_SD_ERROR_CMD_CRC_FAIL
@@ -71,6 +77,7 @@ DECL|HAL_SD_ERROR_ERASE_RESET|macro|HAL_SD_ERROR_ERASE_RESET
 DECL|HAL_SD_ERROR_ERASE_SEQ_ERR|macro|HAL_SD_ERROR_ERASE_SEQ_ERR
 DECL|HAL_SD_ERROR_GENERAL_UNKNOWN_ERR|macro|HAL_SD_ERROR_GENERAL_UNKNOWN_ERR
 DECL|HAL_SD_ERROR_ILLEGAL_CMD|macro|HAL_SD_ERROR_ILLEGAL_CMD
+DECL|HAL_SD_ERROR_INVALID_CALLBACK|macro|HAL_SD_ERROR_INVALID_CALLBACK
 DECL|HAL_SD_ERROR_INVALID_VOLTRANGE|macro|HAL_SD_ERROR_INVALID_VOLTRANGE
 DECL|HAL_SD_ERROR_LOCK_UNLOCK_FAILED|macro|HAL_SD_ERROR_LOCK_UNLOCK_FAILED
 DECL|HAL_SD_ERROR_NONE|macro|HAL_SD_ERROR_NONE
@@ -84,6 +91,11 @@ DECL|HAL_SD_ERROR_TX_UNDERRUN|macro|HAL_SD_ERROR_TX_UNDERRUN
 DECL|HAL_SD_ERROR_UNSUPPORTED_FEATURE|macro|HAL_SD_ERROR_UNSUPPORTED_FEATURE
 DECL|HAL_SD_ERROR_WP_ERASE_SKIP|macro|HAL_SD_ERROR_WP_ERASE_SKIP
 DECL|HAL_SD_ERROR_WRITE_PROT_VIOLATION|macro|HAL_SD_ERROR_WRITE_PROT_VIOLATION
+DECL|HAL_SD_MSP_DEINIT_CB_ID|enumerator|HAL_SD_MSP_DEINIT_CB_ID = 0x11U /*!< SD MspDeInit Callback ID */
+DECL|HAL_SD_MSP_INIT_CB_ID|enumerator|HAL_SD_MSP_INIT_CB_ID = 0x10U, /*!< SD MspInit Callback ID */
+DECL|HAL_SD_READ_DMA_DBL_BUF0_CPLT_CB_ID|enumerator|HAL_SD_READ_DMA_DBL_BUF0_CPLT_CB_ID = 0x04U, /*!< SD Rx DMA Double Buffer 0 Complete Callback ID */
+DECL|HAL_SD_READ_DMA_DBL_BUF1_CPLT_CB_ID|enumerator|HAL_SD_READ_DMA_DBL_BUF1_CPLT_CB_ID = 0x05U, /*!< SD Rx DMA Double Buffer 1 Complete Callback ID */
+DECL|HAL_SD_RX_CPLT_CB_ID|enumerator|HAL_SD_RX_CPLT_CB_ID = 0x01U, /*!< SD Rx Complete Callback ID */
 DECL|HAL_SD_STATE_BUSY|enumerator|HAL_SD_STATE_BUSY = ((uint32_t)0x00000003U), /*!< SD process ongoing */
 DECL|HAL_SD_STATE_ERROR|enumerator|HAL_SD_STATE_ERROR = ((uint32_t)0x0000000FU) /*!< SD is in error state */
 DECL|HAL_SD_STATE_PROGRAMMING|enumerator|HAL_SD_STATE_PROGRAMMING = ((uint32_t)0x00000004U), /*!< SD Programming State */
@@ -93,6 +105,9 @@ DECL|HAL_SD_STATE_RESET|enumerator|HAL_SD_STATE_RESET = ((uint32_t)0x00000000U),
 DECL|HAL_SD_STATE_TIMEOUT|enumerator|HAL_SD_STATE_TIMEOUT = ((uint32_t)0x00000002U), /*!< SD Timeout state */
 DECL|HAL_SD_STATE_TRANSFER|enumerator|HAL_SD_STATE_TRANSFER = ((uint32_t)0x00000006U), /*!< SD Transfert State */
 DECL|HAL_SD_StateTypeDef|typedef|}HAL_SD_StateTypeDef;
+DECL|HAL_SD_TX_CPLT_CB_ID|enumerator|HAL_SD_TX_CPLT_CB_ID = 0x00U, /*!< SD Tx Complete Callback ID */
+DECL|HAL_SD_WRITE_DMA_DBL_BUF0_CPLT_CB_ID|enumerator|HAL_SD_WRITE_DMA_DBL_BUF0_CPLT_CB_ID = 0x06U, /*!< SD Tx DMA Double Buffer 0 Complete Callback ID */
+DECL|HAL_SD_WRITE_DMA_DBL_BUF1_CPLT_CB_ID|enumerator|HAL_SD_WRITE_DMA_DBL_BUF1_CPLT_CB_ID = 0x07U, /*!< SD Tx DMA Double Buffer 1 Complete Callback ID */
 DECL|Init|member|SD_InitTypeDef Init; /*!< SD required parameters */
 DECL|Instance|member|SD_TypeDef *Instance; /*!< SD registers base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< SD locking object */
@@ -107,6 +122,8 @@ DECL|MaxRdCurrentVDDMin|member|__IO uint8_t MaxRdCurrentVDDMin; /*!< Max. read c
 DECL|MaxWrBlockLen|member|__IO uint8_t MaxWrBlockLen; /*!< Max. write data block length */
 DECL|MaxWrCurrentVDDMax|member|__IO uint8_t MaxWrCurrentVDDMax; /*!< Max. write current @ VDD max */
 DECL|MaxWrCurrentVDDMin|member|__IO uint8_t MaxWrCurrentVDDMin; /*!< Max. write current @ VDD min */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __SD_HandleTypeDef *hsd);
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|NSAC|member|__IO uint8_t NSAC; /*!< Data read access time 2 in CLK cycles */
 DECL|OEM_AppliID|member|__IO uint16_t OEM_AppliID; /*!< OEM/Application ID */
 DECL|PartBlockRead|member|__IO uint8_t PartBlockRead; /*!< Partial blocks for read allowed */
@@ -119,6 +136,8 @@ DECL|ProdSN|member|__IO uint32_t ProdSN; /*!< Product Serial Number */
 DECL|ProtectedAreaSize|member|__IO uint32_t ProtectedAreaSize; /*!< Carries information about the capacity of protected area */
 DECL|RdBlockLen|member|__IO uint8_t RdBlockLen; /*!< Max. read data block length */
 DECL|RdBlockMisalign|member|__IO uint8_t RdBlockMisalign; /*!< Read block misalignment */
+DECL|Read_DMADblBuf0CpltCallback|member|void (* Read_DMADblBuf0CpltCallback) (struct __SD_HandleTypeDef *hsd);
+DECL|Read_DMADblBuf1CpltCallback|member|void (* Read_DMADblBuf1CpltCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|RelCardAdd|member|uint32_t RelCardAdd; /*!< Specifies the Relative Card Address */
 DECL|Reserved1|member|__IO uint8_t Reserved1; /*!< Reserved */
 DECL|Reserved1|member|__IO uint8_t Reserved1; /*!< Reserved1 */
@@ -126,6 +145,7 @@ DECL|Reserved2|member|__IO uint8_t Reserved2; /*!< Always 1 */
 DECL|Reserved2|member|__IO uint8_t Reserved2; /*!< Reserved */
 DECL|Reserved3|member|__IO uint8_t Reserved3; /*!< Reserved */
 DECL|Reserved4|member|__IO uint8_t Reserved4; /*!< Always 1 */
+DECL|RxCpltCallback|member|void (* RxCpltCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|RxXferSize|member|uint32_t RxXferSize; /*!< SD Rx Transfer size */
 DECL|SD_CONTEXT_DMA|macro|SD_CONTEXT_DMA
 DECL|SD_CONTEXT_IT|macro|SD_CONTEXT_IT
@@ -137,6 +157,7 @@ DECL|SD_CONTEXT_WRITE_SINGLE_BLOCK|macro|SD_CONTEXT_WRITE_SINGLE_BLOCK
 DECL|SD_HandleTypeDef|typedef|}SD_HandleTypeDef;
 DECL|SD_InitTypeDef|macro|SD_InitTypeDef
 DECL|SD_TypeDef|macro|SD_TypeDef
+DECL|STM32L4xx_HAL_SD_H|macro|STM32L4xx_HAL_SD_H
 DECL|SdCard|member|HAL_SD_CardInfoTypeDef SdCard; /*!< SD Card information */
 DECL|SecuredMode|member|__IO uint8_t SecuredMode; /*!< Card is in secured mode of operation */
 DECL|SpeedClass|member|__IO uint8_t SpeedClass; /*!< Carries information about the speed class of the card */
@@ -144,12 +165,15 @@ DECL|State|member|__IO HAL_SD_StateTypeDef State; /*!< SD card State */
 DECL|SysSpecVersion|member|__IO uint8_t SysSpecVersion; /*!< System specification version */
 DECL|TAAC|member|__IO uint8_t TAAC; /*!< Data read access time 1 */
 DECL|TempWrProtect|member|__IO uint8_t TempWrProtect; /*!< Temporary write protection */
+DECL|TxCpltCallback|member|void (* TxCpltCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|TxXferSize|member|uint32_t TxXferSize; /*!< SD Tx Transfer size */
 DECL|WrBlockMisalign|member|__IO uint8_t WrBlockMisalign; /*!< Write block misalignment */
 DECL|WrProtectGrEnable|member|__IO uint8_t WrProtectGrEnable; /*!< Write protect group enable */
 DECL|WrProtectGrSize|member|__IO uint8_t WrProtectGrSize; /*!< Write protect group size */
 DECL|WrSpeedFact|member|__IO uint8_t WrSpeedFact; /*!< Write speed factor */
 DECL|WriteBlockPaPartial|member|__IO uint8_t WriteBlockPaPartial; /*!< Partial blocks for write allowed */
+DECL|Write_DMADblBuf0CpltCallback|member|void (* Write_DMADblBuf0CpltCallback) (struct __SD_HandleTypeDef *hsd);
+DECL|Write_DMADblBuf1CpltCallback|member|void (* Write_DMADblBuf1CpltCallback) (struct __SD_HandleTypeDef *hsd);
 DECL|__HAL_SD_CLEAR_FLAG|macro|__HAL_SD_CLEAR_FLAG
 DECL|__HAL_SD_CLEAR_IT|macro|__HAL_SD_CLEAR_IT
 DECL|__HAL_SD_DISABLE_IT|macro|__HAL_SD_DISABLE_IT
@@ -160,8 +184,12 @@ DECL|__HAL_SD_ENABLE_IT|macro|__HAL_SD_ENABLE_IT
 DECL|__HAL_SD_ENABLE|macro|__HAL_SD_ENABLE
 DECL|__HAL_SD_GET_FLAG|macro|__HAL_SD_GET_FLAG
 DECL|__HAL_SD_GET_IT|macro|__HAL_SD_GET_IT
-DECL|__STM32L4xx_HAL_SD_H|macro|__STM32L4xx_HAL_SD_H
+DECL|__HAL_SD_RESET_HANDLE_STATE|macro|__HAL_SD_RESET_HANDLE_STATE
+DECL|__HAL_SD_RESET_HANDLE_STATE|macro|__HAL_SD_RESET_HANDLE_STATE
+DECL|__SD_HandleTypeDef|struct|typedef struct __SD_HandleTypeDef
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SD Rx DMA handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SD Tx DMA handle parameters */
-DECL|pRxBuffPtr|member|uint32_t *pRxBuffPtr; /*!< Pointer to SD Rx transfer Buffer */
-DECL|pTxBuffPtr|member|uint32_t *pTxBuffPtr; /*!< Pointer to SD Tx transfer Buffer */
+DECL|pRxBuffPtr|member|uint8_t *pRxBuffPtr; /*!< Pointer to SD Rx transfer Buffer */
+DECL|pSD_CallbackTypeDef|typedef|typedef void (*pSD_CallbackTypeDef) (SD_HandleTypeDef *hsd);
+DECL|pSD_TransceiverCallbackTypeDef|typedef|typedef void (*pSD_TransceiverCallbackTypeDef)(FlagStatus status);
+DECL|pTxBuffPtr|member|uint8_t *pTxBuffPtr; /*!< Pointer to SD Tx transfer Buffer */

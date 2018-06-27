@@ -45,14 +45,24 @@ DECL|CRYP_KEY_WRITE_DISABLE|macro|CRYP_KEY_WRITE_DISABLE
 DECL|CRYP_KEY_WRITE_ENABLE|macro|CRYP_KEY_WRITE_ENABLE
 DECL|CRYP_PAYLOAD_PHASE|macro|CRYP_PAYLOAD_PHASE
 DECL|ChainingMode|member|uint32_t ChainingMode; /*!< AES chaining mode.
+DECL|CompCpltCallback|member|void (* CompCpltCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP computation completion callback */
 DECL|CrypInCount|member|uint32_t CrypInCount; /*!< Input data size in bytes or, after suspension, the remaining
 DECL|CrypOutCount|member|uint32_t CrypOutCount; /*!< Output data size in bytes */
 DECL|DataType|member|uint32_t DataType; /*!< 32-bit data, 16-bit data, 8-bit data or 1-bit string.
+DECL|ErrorCallback|member|void (* ErrorCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< CRYP peripheral error code */
 DECL|GCMCMACPhase|member|uint32_t GCMCMACPhase; /*!< Indicates the processing phase of the Galois Counter Mode (GCM),
 DECL|HAL_CRYP_BUSY_ERROR|macro|HAL_CRYP_BUSY_ERROR
+DECL|HAL_CRYP_COMPCPLT_CB_ID|enumerator|HAL_CRYP_COMPCPLT_CB_ID = 0x03U, /*!< CRYP computation completion callback ID */
+DECL|HAL_CRYP_CallbackIDTypeDef|typedef|}HAL_CRYP_CallbackIDTypeDef;
 DECL|HAL_CRYP_DMA_ERROR|macro|HAL_CRYP_DMA_ERROR
+DECL|HAL_CRYP_ERROR_CB_ID|enumerator|HAL_CRYP_ERROR_CB_ID = 0x04U, /*!< CRYP error callback ID */
+DECL|HAL_CRYP_ERROR_INVALID_CALLBACK|macro|HAL_CRYP_ERROR_INVALID_CALLBACK
 DECL|HAL_CRYP_ERROR_NONE|macro|HAL_CRYP_ERROR_NONE
+DECL|HAL_CRYP_INPUTCPLT_CB_ID|enumerator|HAL_CRYP_INPUTCPLT_CB_ID = 0x01U, /*!< CRYP input DMA transfer completion callback ID */
+DECL|HAL_CRYP_MSPDEINIT_CB_ID|enumerator|HAL_CRYP_MSPDEINIT_CB_ID = 0x06U, /*!< CRYP MspDeInit callback ID */
+DECL|HAL_CRYP_MSPINIT_CB_ID|enumerator|HAL_CRYP_MSPINIT_CB_ID = 0x05U, /*!< CRYP MspInit callback ID */
+DECL|HAL_CRYP_OUTPUTCPLT_CB_ID|enumerator|HAL_CRYP_OUTPUTCPLT_CB_ID = 0x02U, /*!< CRYP output DMA transfer completion callback ID */
 DECL|HAL_CRYP_PHASE_FINAL_OVER|enumerator|HAL_CRYP_PHASE_FINAL_OVER = 0x07, /*!< GCM/GMAC(/CMAC)(/CCM) final phase has been carried out */
 DECL|HAL_CRYP_PHASE_HEADER_OVER|enumerator|HAL_CRYP_PHASE_HEADER_OVER = 0x05, /*!< GCM/GMAC(/CMAC)(/CCM) header phase has been carried out */
 DECL|HAL_CRYP_PHASE_HEADER_SUSPENDED|enumerator|HAL_CRYP_PHASE_HEADER_SUSPENDED = 0x08, /*!< GCM/GMAC(/CMAC)(/CCM) header phase has been suspended */
@@ -88,15 +98,20 @@ DECL|IS_CRYP_DMAOUT|macro|IS_CRYP_DMAOUT
 DECL|IS_CRYP_GCMCMAC_PHASE|macro|IS_CRYP_GCMCMAC_PHASE
 DECL|IS_CRYP_KEYSIZE|macro|IS_CRYP_KEYSIZE
 DECL|IS_CRYP_WRITE|macro|IS_CRYP_WRITE
+DECL|InCpltCallback|member|void (* InCpltCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP input DMA transfer completion callback */
 DECL|Init|member|CRYP_InitTypeDef Init; /*!< CRYP initialization parameters */
 DECL|Instance|member|AES_TypeDef *Instance; /*!< Register base address */
 DECL|KeySize|member|uint32_t KeySize; /*!< 128 or 256-bit key length.
 DECL|KeyWriteFlag|member|uint32_t KeyWriteFlag; /*!< Allows to bypass or not key write-up before decryption.
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< CRYP locking object */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP Msp Init callback */
 DECL|OperatingMode|member|uint32_t OperatingMode; /*!< AES operating mode.
+DECL|OutCpltCallback|member|void (* OutCpltCallback)( struct __CRYP_HandleTypeDef * hcryp); /*!< CRYP output DMA transfer completion callback */
 DECL|Phase|member|HAL_PhaseTypeDef Phase; /*!< CRYP peripheral processing phase for GCM, GMAC, CMAC (when applicable)
 DECL|State|member|__IO HAL_CRYP_STATETypeDef State; /*!< CRYP peripheral state */
 DECL|SuspendRequest|member|HAL_SuspendTypeDef SuspendRequest; /*!< CRYP peripheral suspension request flag */
+DECL|__CRYP_HandleTypeDef|struct|typedef struct __CRYP_HandleTypeDef
 DECL|__HAL_CRYP_CLEAR_FLAG|macro|__HAL_CRYP_CLEAR_FLAG
 DECL|__HAL_CRYP_CLEAR_IT|macro|__HAL_CRYP_CLEAR_IT
 DECL|__HAL_CRYP_DISABLE_IT|macro|__HAL_CRYP_DISABLE_IT
@@ -107,11 +122,13 @@ DECL|__HAL_CRYP_GET_FLAG|macro|__HAL_CRYP_GET_FLAG
 DECL|__HAL_CRYP_GET_IT_SOURCE|macro|__HAL_CRYP_GET_IT_SOURCE
 DECL|__HAL_CRYP_GET_IT|macro|__HAL_CRYP_GET_IT
 DECL|__HAL_CRYP_RESET_HANDLE_STATE|macro|__HAL_CRYP_RESET_HANDLE_STATE
+DECL|__HAL_CRYP_RESET_HANDLE_STATE|macro|__HAL_CRYP_RESET_HANDLE_STATE
 DECL|__HAL_CRYP_SET_CHAININGMODE|macro|__HAL_CRYP_SET_CHAININGMODE
 DECL|__HAL_CRYP_SET_OPERATINGMODE|macro|__HAL_CRYP_SET_OPERATINGMODE
 DECL|__STM32L4xx_HAL_CRYP_H|macro|__STM32L4xx_HAL_CRYP_H
 DECL|hdmain|member|DMA_HandleTypeDef *hdmain; /*!< CRYP peripheral Input DMA handle parameters */
 DECL|hdmaout|member|DMA_HandleTypeDef *hdmaout; /*!< CRYP peripheral Output DMA handle parameters */
+DECL|pCRYP_CallbackTypeDef|typedef|typedef void (*pCRYP_CallbackTypeDef)(CRYP_HandleTypeDef * hcryp); /*!< pointer to a CRYP common callback functions */
 DECL|pCrypInBuffPtr|member|uint8_t *pCrypInBuffPtr; /*!< Pointer to CRYP processing (encryption, decryption,...) input buffer */
 DECL|pCrypOutBuffPtr|member|uint8_t *pCrypOutBuffPtr; /*!< Pointer to CRYP processing (encryption, decryption,...) output buffer */
 DECL|pInitVect|member|uint8_t* pInitVect; /*!< Initialization Vector used for CTR, CBC, GCM/GMAC, CMAC (when applicable)

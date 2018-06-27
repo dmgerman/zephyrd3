@@ -23,6 +23,7 @@ DECL|HAL_LTDC_LineEventCallback|function|__weak void HAL_LTDC_LineEventCallback(
 DECL|HAL_LTDC_MspDeInit|function|__weak void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* hltdc)
 DECL|HAL_LTDC_MspInit|function|__weak void HAL_LTDC_MspInit(LTDC_HandleTypeDef* hltdc)
 DECL|HAL_LTDC_ProgramLineEvent|function|HAL_StatusTypeDef HAL_LTDC_ProgramLineEvent(LTDC_HandleTypeDef *hltdc, uint32_t Line)
+DECL|HAL_LTDC_RegisterCallback|function|HAL_StatusTypeDef HAL_LTDC_RegisterCallback(LTDC_HandleTypeDef *hltdc, HAL_LTDC_CallbackIDTypeDef CallbackID, pLTDC_CallbackTypeDef pCallback)
 DECL|HAL_LTDC_ReloadEventCallback|function|__weak void HAL_LTDC_ReloadEventCallback(LTDC_HandleTypeDef *hltdc)
 DECL|HAL_LTDC_Reload|function|HAL_StatusTypeDef HAL_LTDC_Reload(LTDC_HandleTypeDef *hltdc, uint32_t ReloadType)
 DECL|HAL_LTDC_SetAddress_NoReload|function|HAL_StatusTypeDef HAL_LTDC_SetAddress_NoReload(LTDC_HandleTypeDef *hltdc, uint32_t Address, uint32_t LayerIdx)
@@ -37,4 +38,5 @@ DECL|HAL_LTDC_SetWindowPosition_NoReload|function|HAL_StatusTypeDef HAL_LTDC_Set
 DECL|HAL_LTDC_SetWindowPosition|function|HAL_StatusTypeDef HAL_LTDC_SetWindowPosition(LTDC_HandleTypeDef *hltdc, uint32_t X0, uint32_t Y0, uint32_t LayerIdx)
 DECL|HAL_LTDC_SetWindowSize_NoReload|function|HAL_StatusTypeDef HAL_LTDC_SetWindowSize_NoReload(LTDC_HandleTypeDef *hltdc, uint32_t XSize, uint32_t YSize, uint32_t LayerIdx)
 DECL|HAL_LTDC_SetWindowSize|function|HAL_StatusTypeDef HAL_LTDC_SetWindowSize(LTDC_HandleTypeDef *hltdc, uint32_t XSize, uint32_t YSize, uint32_t LayerIdx)
+DECL|HAL_LTDC_UnRegisterCallback|function|HAL_StatusTypeDef HAL_LTDC_UnRegisterCallback(LTDC_HandleTypeDef *hltdc, HAL_LTDC_CallbackIDTypeDef CallbackID)
 DECL|LTDC_SetConfig|function|static void LTDC_SetConfig(LTDC_HandleTypeDef *hltdc, LTDC_LayerCfgTypeDef *pLayerCfg, uint32_t LayerIdx)

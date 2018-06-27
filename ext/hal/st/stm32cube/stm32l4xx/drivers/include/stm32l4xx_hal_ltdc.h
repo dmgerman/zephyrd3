@@ -10,13 +10,21 @@ DECL|BlendingFactor1|member|uint32_t BlendingFactor1; /*!< Select the blending f
 DECL|BlendingFactor2|member|uint32_t BlendingFactor2; /*!< Select the blending factor 2.
 DECL|Blue|member|uint8_t Blue; /*!< Configures the blue value.
 DECL|DEPolarity|member|uint32_t DEPolarity; /*!< configures the data enable polarity.
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __LTDC_HandleTypeDef *hltdc); /*!< LTDC Error Callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< LTDC Error code */
 DECL|FBStartAdress|member|uint32_t FBStartAdress; /*!< Configures the color frame buffer address */
 DECL|Green|member|uint8_t Green; /*!< Configures the green value.
+DECL|HAL_LTDC_CallbackIDTypeDef|typedef|}HAL_LTDC_CallbackIDTypeDef;
+DECL|HAL_LTDC_ERROR_CB_ID|enumerator|HAL_LTDC_ERROR_CB_ID = 0x04U /*!< LTDC Error Callback ID */
 DECL|HAL_LTDC_ERROR_FU|macro|HAL_LTDC_ERROR_FU
+DECL|HAL_LTDC_ERROR_INVALID_CALLBACK|macro|HAL_LTDC_ERROR_INVALID_CALLBACK
 DECL|HAL_LTDC_ERROR_NONE|macro|HAL_LTDC_ERROR_NONE
 DECL|HAL_LTDC_ERROR_TE|macro|HAL_LTDC_ERROR_TE
 DECL|HAL_LTDC_ERROR_TIMEOUT|macro|HAL_LTDC_ERROR_TIMEOUT
+DECL|HAL_LTDC_LINE_EVENT_CB_ID|enumerator|HAL_LTDC_LINE_EVENT_CB_ID = 0x02U, /*!< LTDC Line Event Callback ID */
+DECL|HAL_LTDC_MSPDEINIT_CB_ID|enumerator|HAL_LTDC_MSPDEINIT_CB_ID = 0x01U, /*!< LTDC MspDeInit callback ID */
+DECL|HAL_LTDC_MSPINIT_CB_ID|enumerator|HAL_LTDC_MSPINIT_CB_ID = 0x00U, /*!< LTDC MspInit callback ID */
+DECL|HAL_LTDC_RELOAD_EVENT_CB_ID|enumerator|HAL_LTDC_RELOAD_EVENT_CB_ID = 0x03U, /*!< LTDC Reload Callback ID */
 DECL|HAL_LTDC_STATE_BUSY|enumerator|HAL_LTDC_STATE_BUSY = 0x02U, /*!< LTDC internal process is ongoing */
 DECL|HAL_LTDC_STATE_ERROR|enumerator|HAL_LTDC_STATE_ERROR = 0x04U /*!< LTDC state error */
 DECL|HAL_LTDC_STATE_READY|enumerator|HAL_LTDC_STATE_READY = 0x01U, /*!< LTDC initialized and ready for use */
@@ -104,12 +112,17 @@ DECL|LTDC_VERTICALSYNC|macro|LTDC_VERTICALSYNC
 DECL|LTDC_VSPOLARITY_AH|macro|LTDC_VSPOLARITY_AH
 DECL|LTDC_VSPOLARITY_AL|macro|LTDC_VSPOLARITY_AL
 DECL|LayerCfg|member|LTDC_LayerCfgTypeDef LayerCfg[MAX_LAYER]; /*!< LTDC Layers parameters */
+DECL|LineEventCallback|member|void (* LineEventCallback) (struct __LTDC_HandleTypeDef *hltdc); /*!< LTDC Line Event Callback */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< LTDC Lock */
 DECL|MAX_LAYER|macro|MAX_LAYER
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __LTDC_HandleTypeDef *hltdc); /*!< LTDC Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __LTDC_HandleTypeDef *hltdc); /*!< LTDC Msp Init callback */
 DECL|PCPolarity|member|uint32_t PCPolarity; /*!< configures the pixel clock polarity.
 DECL|PixelFormat|member|uint32_t PixelFormat; /*!< Specifies the pixel format.
 DECL|Red|member|uint8_t Red; /*!< Configures the red value.
+DECL|ReloadEventCallback|member|void (* ReloadEventCallback)(struct __LTDC_HandleTypeDef *hltdc); /*!< LTDC Reload Event Callback */
 DECL|Reserved|member|uint8_t Reserved; /*!< Reserved 0xFF */
+DECL|STM32L4xx_HAL_LTDC_H|macro|STM32L4xx_HAL_LTDC_H
 DECL|State|member|__IO HAL_LTDC_StateTypeDef State; /*!< LTDC state */
 DECL|TotalHeigh|member|uint32_t TotalHeigh; /*!< configures the total height.
 DECL|TotalWidth|member|uint32_t TotalWidth; /*!< configures the total width.
@@ -130,5 +143,7 @@ DECL|__HAL_LTDC_LAYER_DISABLE|macro|__HAL_LTDC_LAYER_DISABLE
 DECL|__HAL_LTDC_LAYER_ENABLE|macro|__HAL_LTDC_LAYER_ENABLE
 DECL|__HAL_LTDC_RELOAD_IMMEDIATE_CONFIG|macro|__HAL_LTDC_RELOAD_IMMEDIATE_CONFIG
 DECL|__HAL_LTDC_RESET_HANDLE_STATE|macro|__HAL_LTDC_RESET_HANDLE_STATE
+DECL|__HAL_LTDC_RESET_HANDLE_STATE|macro|__HAL_LTDC_RESET_HANDLE_STATE
 DECL|__HAL_LTDC_VERTICAL_BLANKING_RELOAD_CONFIG|macro|__HAL_LTDC_VERTICAL_BLANKING_RELOAD_CONFIG
-DECL|__STM32L4xx_HAL_LTDC_H|macro|__STM32L4xx_HAL_LTDC_H
+DECL|__LTDC_HandleTypeDef|struct|typedef struct __LTDC_HandleTypeDef
+DECL|pLTDC_CallbackTypeDef|typedef|typedef void (*pLTDC_CallbackTypeDef)(LTDC_HandleTypeDef * hltdc); /*!< pointer to an LTDC callback function */

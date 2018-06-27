@@ -186,20 +186,37 @@ DECL|Channel|member|uint32_t Channel; /*!< Specify the channel to configure into
 DECL|ClockPrescaler|member|uint32_t ClockPrescaler; /*!< Select ADC clock source (synchronous clock derived from APB clock or asynchronous clock derived from system clock or PLL (Refer to reference manual for list of clocks available)) and clock prescaler.
 DECL|ContextQueue|member|uint32_t ContextQueue; /*!< Injected channel configuration context: build-up over each
 DECL|ContinuousConvMode|member|uint32_t ContinuousConvMode; /*!< Specify whether the conversion is performed in single mode (one conversion) or continuous mode for ADC group regular,
+DECL|ConvCpltCallback|member|void (* ConvCpltCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC conversion complete callback */
+DECL|ConvHalfCpltCallback|member|void (* ConvHalfCpltCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC conversion DMA half-transfer callback */
 DECL|DFSDMConfig|member|uint32_t DFSDMConfig; /*!< Specify whether ADC conversion data is sent directly to DFSDM.
 DECL|DMAContinuousRequests|member|uint32_t DMAContinuousRequests; /*!< Specify whether the DMA requests are performed in one shot mode (DMA transfer stops when number of conversions is reached)
 DECL|DMA_Handle|member|DMA_HandleTypeDef *DMA_Handle; /*!< Pointer DMA Handler */
 DECL|DataAlign|member|uint32_t DataAlign; /*!< Specify ADC data alignment in conversion data register (right or left).
 DECL|DiscontinuousConvMode|member|uint32_t DiscontinuousConvMode; /*!< Specify whether the conversions sequence of ADC group regular is performed in Complete-sequence/Discontinuous-sequence
 DECL|EOCSelection|member|uint32_t EOCSelection; /*!< Specify which EOC (End Of Conversion) flag is used for conversion by polling and interruption: end of unitary conversion or end of sequence conversions.
+DECL|EndOfSamplingCallback|member|void (* EndOfSamplingCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC end of sampling callback */
+DECL|ErrorCallback|member|void (* ErrorCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< ADC Error code */
 DECL|ExternalTrigConvEdge|member|uint32_t ExternalTrigConvEdge; /*!< Select the external event edge used to trigger ADC group regular conversion start.
 DECL|ExternalTrigConv|member|uint32_t ExternalTrigConv; /*!< Select the external event source used to trigger ADC group regular conversion start.
+DECL|HAL_ADC_CONVERSION_COMPLETE_CB_ID|enumerator|HAL_ADC_CONVERSION_COMPLETE_CB_ID = 0x00U, /*!< ADC conversion complete callback ID */
+DECL|HAL_ADC_CONVERSION_HALF_CB_ID|enumerator|HAL_ADC_CONVERSION_HALF_CB_ID = 0x01U, /*!< ADC conversion DMA half-transfer callback ID */
+DECL|HAL_ADC_CallbackIDTypeDef|typedef|} HAL_ADC_CallbackIDTypeDef;
+DECL|HAL_ADC_END_OF_SAMPLING_CB_ID|enumerator|HAL_ADC_END_OF_SAMPLING_CB_ID = 0x08U, /*!< ADC end of sampling callback ID */
+DECL|HAL_ADC_ERROR_CB_ID|enumerator|HAL_ADC_ERROR_CB_ID = 0x03U, /*!< ADC error callback ID */
 DECL|HAL_ADC_ERROR_DMA|macro|HAL_ADC_ERROR_DMA
 DECL|HAL_ADC_ERROR_INTERNAL|macro|HAL_ADC_ERROR_INTERNAL
+DECL|HAL_ADC_ERROR_INVALID_CALLBACK|macro|HAL_ADC_ERROR_INVALID_CALLBACK
 DECL|HAL_ADC_ERROR_JQOVF|macro|HAL_ADC_ERROR_JQOVF
 DECL|HAL_ADC_ERROR_NONE|macro|HAL_ADC_ERROR_NONE
 DECL|HAL_ADC_ERROR_OVR|macro|HAL_ADC_ERROR_OVR
+DECL|HAL_ADC_INJ_CONVERSION_COMPLETE_CB_ID|enumerator|HAL_ADC_INJ_CONVERSION_COMPLETE_CB_ID = 0x04U, /*!< ADC group injected conversion complete callback ID */
+DECL|HAL_ADC_INJ_QUEUE_OVEFLOW_CB_ID|enumerator|HAL_ADC_INJ_QUEUE_OVEFLOW_CB_ID = 0x05U, /*!< ADC group injected context queue overflow callback ID */
+DECL|HAL_ADC_LEVEL_OUT_OF_WINDOW_1_CB_ID|enumerator|HAL_ADC_LEVEL_OUT_OF_WINDOW_1_CB_ID = 0x02U, /*!< ADC analog watchdog 1 callback ID */
+DECL|HAL_ADC_LEVEL_OUT_OF_WINDOW_2_CB_ID|enumerator|HAL_ADC_LEVEL_OUT_OF_WINDOW_2_CB_ID = 0x06U, /*!< ADC analog watchdog 2 callback ID */
+DECL|HAL_ADC_LEVEL_OUT_OF_WINDOW_3_CB_ID|enumerator|HAL_ADC_LEVEL_OUT_OF_WINDOW_3_CB_ID = 0x07U, /*!< ADC analog watchdog 3 callback ID */
+DECL|HAL_ADC_MSPDEINIT_CB_ID|enumerator|HAL_ADC_MSPDEINIT_CB_ID = 0x0AU /*!< ADC Msp DeInit callback ID */
+DECL|HAL_ADC_MSPINIT_CB_ID|enumerator|HAL_ADC_MSPINIT_CB_ID = 0x09U, /*!< ADC Msp Init callback ID */
 DECL|HAL_ADC_STATE_AWD1|macro|HAL_ADC_STATE_AWD1
 DECL|HAL_ADC_STATE_AWD2|macro|HAL_ADC_STATE_AWD2
 DECL|HAL_ADC_STATE_AWD3|macro|HAL_ADC_STATE_AWD3
@@ -236,11 +253,18 @@ DECL|IS_ADC_SAMPLE_TIME|macro|IS_ADC_SAMPLE_TIME
 DECL|IS_ADC_SCAN_MODE|macro|IS_ADC_SCAN_MODE
 DECL|ITMode|member|uint32_t ITMode; /*!< Specify whether the analog watchdog is configured in interrupt or polling mode.
 DECL|Init|member|ADC_InitTypeDef Init; /*!< ADC initialization parameters and regular conversions setting */
+DECL|InjectedConvCpltCallback|member|void (* InjectedConvCpltCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC group injected conversion complete callback */
+DECL|InjectedQueueOverflowCallback|member|void (* InjectedQueueOverflowCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC group injected context queue overflow callback */
 DECL|InjectionConfig|member|ADC_InjectionConfigTypeDef InjectionConfig ; /*!< ADC injected channel configuration build-up structure */
 DECL|Instance|member|ADC_TypeDef *Instance; /*!< Register base address */
+DECL|LevelOutOfWindow2Callback|member|void (* LevelOutOfWindow2Callback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC analog watchdog 2 callback */
+DECL|LevelOutOfWindow3Callback|member|void (* LevelOutOfWindow3Callback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC analog watchdog 3 callback */
+DECL|LevelOutOfWindowCallback|member|void (* LevelOutOfWindowCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC analog watchdog 1 callback */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< ADC locking object */
 DECL|LowPowerAutoWait|member|uint32_t LowPowerAutoWait; /*!< Select the dynamic low power Auto Delay: new conversion start only when the previous
 DECL|LowThreshold|member|uint32_t LowThreshold; /*!< Configures the ADC analog watchdog Low threshold value.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)(struct __ADC_HandleTypeDef *hadc); /*!< ADC Msp Init callback */
 DECL|NbrOfConversion|member|uint32_t NbrOfConversion; /*!< Specify the number of ranks that will be converted within the regular group sequencer.
 DECL|NbrOfDiscConversion|member|uint32_t NbrOfDiscConversion; /*!< Specifies the number of discontinuous conversions in which the main sequence of ADC group regular (parameter NbrOfConversion) will be subdivided.
 DECL|OffsetNumber|member|uint32_t OffsetNumber; /*!< Select the offset number
@@ -260,6 +284,7 @@ DECL|State|member|__IO uint32_t State; /*!< ADC communication state (bitmap of A
 DECL|TriggeredMode|member|uint32_t TriggeredMode; /*!< Selects the regular triggered oversampling mode.
 DECL|WatchdogMode|member|uint32_t WatchdogMode; /*!< Configure the ADC analog watchdog mode: single/all/none channels.
 DECL|WatchdogNumber|member|uint32_t WatchdogNumber; /*!< Select which ADC analog watchdog is monitoring the selected channel.
+DECL|__ADC_HandleTypeDef|struct|typedef struct __ADC_HandleTypeDef
 DECL|__HAL_ADC_CALC_DATA_TO_VOLTAGE|macro|__HAL_ADC_CALC_DATA_TO_VOLTAGE
 DECL|__HAL_ADC_CALC_TEMPERATURE_TYP_PARAMS|macro|__HAL_ADC_CALC_TEMPERATURE_TYP_PARAMS
 DECL|__HAL_ADC_CALC_TEMPERATURE|macro|__HAL_ADC_CALC_TEMPERATURE
@@ -280,4 +305,6 @@ DECL|__HAL_ADC_IS_CHANNEL_INTERNAL|macro|__HAL_ADC_IS_CHANNEL_INTERNAL
 DECL|__HAL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE|macro|__HAL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE
 DECL|__HAL_ADC_MULTI_CONV_DATA_MASTER_SLAVE|macro|__HAL_ADC_MULTI_CONV_DATA_MASTER_SLAVE
 DECL|__HAL_ADC_RESET_HANDLE_STATE|macro|__HAL_ADC_RESET_HANDLE_STATE
+DECL|__HAL_ADC_RESET_HANDLE_STATE|macro|__HAL_ADC_RESET_HANDLE_STATE
 DECL|__STM32L4xx_HAL_ADC_H|macro|__STM32L4xx_HAL_ADC_H
+DECL|pADC_CallbackTypeDef|typedef|typedef void (*pADC_CallbackTypeDef)(ADC_HandleTypeDef *hadc); /*!< pointer to a ADC callback function */

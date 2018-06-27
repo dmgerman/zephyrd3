@@ -1,17 +1,30 @@
+DECL|AddrCallback|member|void (* AddrCallback)(struct __SMBUS_HandleTypeDef *hsmbus, uint8_t TransferDirection, uint16_t AddrMatchCode); /*!< SMBUS Slave Address Match callback */
 DECL|AddressingMode|member|uint32_t AddressingMode; /*!< Specifies if 7-bit or 10-bit addressing mode for master is selected.
 DECL|AnalogFilter|member|uint32_t AnalogFilter; /*!< Specifies if Analog Filter is enable or not.
 DECL|DualAddressMode|member|uint32_t DualAddressMode; /*!< Specifies if dual addressing mode is selected.
+DECL|ErrorCallback|member|void (* ErrorCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< SMBUS Error code */
 DECL|GeneralCallMode|member|uint32_t GeneralCallMode; /*!< Specifies if general call mode is selected.
+DECL|HAL_SMBUS_CallbackIDTypeDef|typedef|} HAL_SMBUS_CallbackIDTypeDef;
 DECL|HAL_SMBUS_ERROR_ACKF|macro|HAL_SMBUS_ERROR_ACKF
 DECL|HAL_SMBUS_ERROR_ALERT|macro|HAL_SMBUS_ERROR_ALERT
 DECL|HAL_SMBUS_ERROR_ARLO|macro|HAL_SMBUS_ERROR_ARLO
 DECL|HAL_SMBUS_ERROR_BERR|macro|HAL_SMBUS_ERROR_BERR
 DECL|HAL_SMBUS_ERROR_BUSTIMEOUT|macro|HAL_SMBUS_ERROR_BUSTIMEOUT
+DECL|HAL_SMBUS_ERROR_CB_ID|enumerator|HAL_SMBUS_ERROR_CB_ID = 0x05U, /*!< SMBUS Error callback ID */
 DECL|HAL_SMBUS_ERROR_HALTIMEOUT|macro|HAL_SMBUS_ERROR_HALTIMEOUT
+DECL|HAL_SMBUS_ERROR_INVALID_CALLBACK|macro|HAL_SMBUS_ERROR_INVALID_CALLBACK
+DECL|HAL_SMBUS_ERROR_INVALID_PARAM|macro|HAL_SMBUS_ERROR_INVALID_PARAM
 DECL|HAL_SMBUS_ERROR_NONE|macro|HAL_SMBUS_ERROR_NONE
 DECL|HAL_SMBUS_ERROR_OVR|macro|HAL_SMBUS_ERROR_OVR
 DECL|HAL_SMBUS_ERROR_PECERR|macro|HAL_SMBUS_ERROR_PECERR
+DECL|HAL_SMBUS_LISTEN_COMPLETE_CB_ID|enumerator|HAL_SMBUS_LISTEN_COMPLETE_CB_ID = 0x04U, /*!< SMBUS Listen Complete callback ID */
+DECL|HAL_SMBUS_MASTER_RX_COMPLETE_CB_ID|enumerator|HAL_SMBUS_MASTER_RX_COMPLETE_CB_ID = 0x01U, /*!< SMBUS Master Rx Transfer completed callback ID */
+DECL|HAL_SMBUS_MASTER_TX_COMPLETE_CB_ID|enumerator|HAL_SMBUS_MASTER_TX_COMPLETE_CB_ID = 0x00U, /*!< SMBUS Master Tx Transfer completed callback ID */
+DECL|HAL_SMBUS_MSPDEINIT_CB_ID|enumerator|HAL_SMBUS_MSPDEINIT_CB_ID = 0x07U /*!< SMBUS Msp DeInit callback ID */
+DECL|HAL_SMBUS_MSPINIT_CB_ID|enumerator|HAL_SMBUS_MSPINIT_CB_ID = 0x06U, /*!< SMBUS Msp Init callback ID */
+DECL|HAL_SMBUS_SLAVE_RX_COMPLETE_CB_ID|enumerator|HAL_SMBUS_SLAVE_RX_COMPLETE_CB_ID = 0x03U, /*!< SMBUS Slave Rx Transfer completed callback ID */
+DECL|HAL_SMBUS_SLAVE_TX_COMPLETE_CB_ID|enumerator|HAL_SMBUS_SLAVE_TX_COMPLETE_CB_ID = 0x02U, /*!< SMBUS Slave Tx Transfer completed callback ID */
 DECL|HAL_SMBUS_STATE_BUSY|macro|HAL_SMBUS_STATE_BUSY
 DECL|HAL_SMBUS_STATE_ERROR|macro|HAL_SMBUS_STATE_ERROR
 DECL|HAL_SMBUS_STATE_LISTEN|macro|HAL_SMBUS_STATE_LISTEN
@@ -39,7 +52,12 @@ DECL|IS_SMBUS_TRANSFER_OTHER_OPTIONS_REQUEST|macro|IS_SMBUS_TRANSFER_OTHER_OPTIO
 DECL|IS_SMBUS_TRANSFER_REQUEST|macro|IS_SMBUS_TRANSFER_REQUEST
 DECL|Init|member|SMBUS_InitTypeDef Init; /*!< SMBUS communication parameters */
 DECL|Instance|member|I2C_TypeDef *Instance; /*!< SMBUS registers base address */
+DECL|ListenCpltCallback|member|void (* ListenCpltCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Listen Complete callback */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< SMBUS locking object */
+DECL|MasterRxCpltCallback|member|void (* MasterRxCpltCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Master Rx Transfer completed callback */
+DECL|MasterTxCpltCallback|member|void (* MasterTxCpltCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Master Tx Transfer completed callback */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Msp Init callback */
 DECL|NoStretchMode|member|uint32_t NoStretchMode; /*!< Specifies if nostretch mode is selected.
 DECL|OwnAddress1|member|uint32_t OwnAddress1; /*!< Specifies the first device own address.
 DECL|OwnAddress2Masks|member|uint32_t OwnAddress2Masks; /*!< Specifies the acknoledge mask address second device own address if dual addressing mode is selected
@@ -129,6 +147,9 @@ DECL|SMBUS_RESET_CR2|macro|SMBUS_RESET_CR2
 DECL|SMBUS_SENDPEC_MODE|macro|SMBUS_SENDPEC_MODE
 DECL|SMBUS_SOFTEND_MODE|macro|SMBUS_SOFTEND_MODE
 DECL|SMBusTimeout|member|uint32_t SMBusTimeout; /*!< Specifies the content of the 32 Bits SMBUS_TIMEOUT_register value.
+DECL|STM32L4xx_HAL_SMBUS_H|macro|STM32L4xx_HAL_SMBUS_H
+DECL|SlaveRxCpltCallback|member|void (* SlaveRxCpltCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Slave Rx Transfer completed callback */
+DECL|SlaveTxCpltCallback|member|void (* SlaveTxCpltCallback)(struct __SMBUS_HandleTypeDef *hsmbus); /*!< SMBUS Slave Tx Transfer completed callback */
 DECL|State|member|__IO uint32_t State; /*!< SMBUS communication state */
 DECL|Timing|member|uint32_t Timing; /*!< Specifies the SMBUS_TIMINGR_register value.
 DECL|XferCount|member|__IO uint16_t XferCount; /*!< SMBUS transfer counter */
@@ -143,5 +164,8 @@ DECL|__HAL_SMBUS_GENERATE_NACK|macro|__HAL_SMBUS_GENERATE_NACK
 DECL|__HAL_SMBUS_GET_FLAG|macro|__HAL_SMBUS_GET_FLAG
 DECL|__HAL_SMBUS_GET_IT_SOURCE|macro|__HAL_SMBUS_GET_IT_SOURCE
 DECL|__HAL_SMBUS_RESET_HANDLE_STATE|macro|__HAL_SMBUS_RESET_HANDLE_STATE
-DECL|__STM32L4xx_HAL_SMBUS_H|macro|__STM32L4xx_HAL_SMBUS_H
+DECL|__HAL_SMBUS_RESET_HANDLE_STATE|macro|__HAL_SMBUS_RESET_HANDLE_STATE
+DECL|__SMBUS_HandleTypeDef|struct|typedef struct __SMBUS_HandleTypeDef
 DECL|pBuffPtr|member|uint8_t *pBuffPtr; /*!< Pointer to SMBUS transfer buffer */
+DECL|pSMBUS_AddrCallbackTypeDef|typedef|typedef void (*pSMBUS_AddrCallbackTypeDef)(SMBUS_HandleTypeDef *hsmbus, uint8_t TransferDirection, uint16_t AddrMatchCode); /*!< pointer to an SMBUS Address Match callback function */
+DECL|pSMBUS_CallbackTypeDef|typedef|typedef void (*pSMBUS_CallbackTypeDef)(SMBUS_HandleTypeDef *hsmbus); /*!< pointer to an SMBUS callback function */

@@ -6,6 +6,7 @@ DECL|ClockEnable|member|uint32_t ClockEnable; /*!< Specifies which clock must be
 DECL|ClockStrobing|member|uint32_t ClockStrobing; /*!< Specifies the SAI Block clock strobing edge sensitivity.
 DECL|CompandingMode|member|uint32_t CompandingMode; /*!< Specifies the companding mode type.
 DECL|DataSize|member|uint32_t DataSize; /*!< Specifies the SAI Block data size.
+DECL|ErrorCallback|member|void (*ErrorCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI error callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< SAI Error code */
 DECL|FIFOThreshold|member|uint32_t FIFOThreshold; /*!< Specifies SAI Block FIFO threshold.
 DECL|FSDefinition|member|uint32_t FSDefinition; /*!< Specifies the Frame synchronization definition.
@@ -15,21 +16,30 @@ DECL|FirstBitOffset|member|uint32_t FirstBitOffset; /*!< Specifies the position 
 DECL|FirstBit|member|uint32_t FirstBit; /*!< Specifies whether data transfers start from MSB or LSB bit.
 DECL|FrameInit|member|SAI_FrameInitTypeDef FrameInit; /*!< SAI Frame configuration parameters */
 DECL|FrameLength|member|uint32_t FrameLength; /*!< Specifies the Frame length, the number of SCK clocks for each audio frame.
+DECL|HAL_SAI_CallbackIDTypeDef|typedef|} HAL_SAI_CallbackIDTypeDef;
 DECL|HAL_SAI_ERROR_AFSDET|macro|HAL_SAI_ERROR_AFSDET
+DECL|HAL_SAI_ERROR_CB_ID|enumerator|HAL_SAI_ERROR_CB_ID = 0x04U, /*!< SAI error callback ID */
 DECL|HAL_SAI_ERROR_CNREADY|macro|HAL_SAI_ERROR_CNREADY
 DECL|HAL_SAI_ERROR_DMA|macro|HAL_SAI_ERROR_DMA
+DECL|HAL_SAI_ERROR_INVALID_CALLBACK|macro|HAL_SAI_ERROR_INVALID_CALLBACK
 DECL|HAL_SAI_ERROR_LFSDET|macro|HAL_SAI_ERROR_LFSDET
 DECL|HAL_SAI_ERROR_NONE|macro|HAL_SAI_ERROR_NONE
 DECL|HAL_SAI_ERROR_OVR|macro|HAL_SAI_ERROR_OVR
 DECL|HAL_SAI_ERROR_TIMEOUT|macro|HAL_SAI_ERROR_TIMEOUT
 DECL|HAL_SAI_ERROR_UDR|macro|HAL_SAI_ERROR_UDR
 DECL|HAL_SAI_ERROR_WCKCFG|macro|HAL_SAI_ERROR_WCKCFG
+DECL|HAL_SAI_MSPDEINIT_CB_ID|enumerator|HAL_SAI_MSPDEINIT_CB_ID = 0x06U /*!< SAI MSP de-init callback ID */
+DECL|HAL_SAI_MSPINIT_CB_ID|enumerator|HAL_SAI_MSPINIT_CB_ID = 0x05U, /*!< SAI MSP init callback ID */
+DECL|HAL_SAI_RX_COMPLETE_CB_ID|enumerator|HAL_SAI_RX_COMPLETE_CB_ID = 0x00U, /*!< SAI receive complete callback ID */
+DECL|HAL_SAI_RX_HALFCOMPLETE_CB_ID|enumerator|HAL_SAI_RX_HALFCOMPLETE_CB_ID = 0x01U, /*!< SAI receive half complete callback ID */
 DECL|HAL_SAI_STATE_BUSY_RX|enumerator|HAL_SAI_STATE_BUSY_RX = 0x22U, /*!< Data reception process is ongoing */
 DECL|HAL_SAI_STATE_BUSY_TX|enumerator|HAL_SAI_STATE_BUSY_TX = 0x12U, /*!< Data transmission process is ongoing */
 DECL|HAL_SAI_STATE_BUSY|enumerator|HAL_SAI_STATE_BUSY = 0x02U, /*!< SAI internal process is ongoing */
 DECL|HAL_SAI_STATE_READY|enumerator|HAL_SAI_STATE_READY = 0x01U, /*!< SAI initialized and ready for use */
 DECL|HAL_SAI_STATE_RESET|enumerator|HAL_SAI_STATE_RESET = 0x00U, /*!< SAI not yet initialized or disabled */
-DECL|HAL_SAI_StateTypeDef|typedef|}HAL_SAI_StateTypeDef;
+DECL|HAL_SAI_StateTypeDef|typedef|} HAL_SAI_StateTypeDef;
+DECL|HAL_SAI_TX_COMPLETE_CB_ID|enumerator|HAL_SAI_TX_COMPLETE_CB_ID = 0x02U, /*!< SAI transmit complete callback ID */
+DECL|HAL_SAI_TX_HALFCOMPLETE_CB_ID|enumerator|HAL_SAI_TX_HALFCOMPLETE_CB_ID = 0x03U, /*!< SAI transmit half complete callback ID */
 DECL|IS_SAI_AUDIO_FREQUENCY|macro|IS_SAI_AUDIO_FREQUENCY
 DECL|IS_SAI_BLOCK_ACTIVE_FRAME|macro|IS_SAI_BLOCK_ACTIVE_FRAME
 DECL|IS_SAI_BLOCK_CLOCK_STROBING|macro|IS_SAI_BLOCK_CLOCK_STROBING
@@ -69,10 +79,14 @@ DECL|MckOverSampling|member|uint32_t MckOverSampling; /*!< Specifies the master 
 DECL|Mckdiv|member|uint32_t Mckdiv; /*!< Specifies the master clock divider, the parameter will be used if for
 DECL|MicPairsNbr|member|uint32_t MicPairsNbr; /*!< Specifies the number of microphone pairs used.
 DECL|MonoStereoMode|member|uint32_t MonoStereoMode; /*!< Specifies if the mono or stereo mode is selected.
+DECL|MspDeInitCallback|member|void (*MspDeInitCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI MSP de-init callback */
+DECL|MspInitCallback|member|void (*MspInitCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI MSP init callback */
 DECL|NoDivider|member|uint32_t NoDivider; /*!< Specifies whether master clock will be divided or not.
 DECL|OutputDrive|member|uint32_t OutputDrive; /*!< Specifies when SAI Block outputs are driven.
 DECL|PdmInit|member|SAI_PdmInitTypeDef PdmInit; /*!< Specifies the PDM configuration. */
 DECL|Protocol|member|uint32_t Protocol; /*!< Specifies the SAI Block protocol.
+DECL|RxCpltCallback|member|void (*RxCpltCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI receive complete callback */
+DECL|RxHalfCpltCallback|member|void (*RxHalfCpltCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI receive half complete callback */
 DECL|SAI_AC97_PROTOCOL|macro|SAI_AC97_PROTOCOL
 DECL|SAI_ALAW_1CPL_COMPANDING|macro|SAI_ALAW_1CPL_COMPANDING
 DECL|SAI_ALAW_2CPL_COMPANDING|macro|SAI_ALAW_2CPL_COMPANDING
@@ -122,8 +136,8 @@ DECL|SAI_FS_BEFOREFIRSTBIT|macro|SAI_FS_BEFOREFIRSTBIT
 DECL|SAI_FS_CHANNEL_IDENTIFICATION|macro|SAI_FS_CHANNEL_IDENTIFICATION
 DECL|SAI_FS_FIRSTBIT|macro|SAI_FS_FIRSTBIT
 DECL|SAI_FS_STARTFRAME|macro|SAI_FS_STARTFRAME
-DECL|SAI_FrameInitTypeDef|typedef|}SAI_FrameInitTypeDef;
-DECL|SAI_HandleTypeDef|typedef|}SAI_HandleTypeDef;
+DECL|SAI_FrameInitTypeDef|typedef|} SAI_FrameInitTypeDef;
+DECL|SAI_HandleTypeDef|typedef|} SAI_HandleTypeDef;
 DECL|SAI_I2S_LSBJUSTIFIED|macro|SAI_I2S_LSBJUSTIFIED
 DECL|SAI_I2S_MSBJUSTIFIED|macro|SAI_I2S_MSBJUSTIFIED
 DECL|SAI_I2S_STANDARD|macro|SAI_I2S_STANDARD
@@ -134,7 +148,7 @@ DECL|SAI_IT_LFSDET|macro|SAI_IT_LFSDET
 DECL|SAI_IT_MUTEDET|macro|SAI_IT_MUTEDET
 DECL|SAI_IT_OVRUDR|macro|SAI_IT_OVRUDR
 DECL|SAI_IT_WCKCFG|macro|SAI_IT_WCKCFG
-DECL|SAI_InitTypeDef|typedef|}SAI_InitTypeDef;
+DECL|SAI_InitTypeDef|typedef|} SAI_InitTypeDef;
 DECL|SAI_LAST_SENT_VALUE|macro|SAI_LAST_SENT_VALUE
 DECL|SAI_MASTERDIVIDER_DISABLE|macro|SAI_MASTERDIVIDER_DISABLE
 DECL|SAI_MASTERDIVIDER_DISABLE|macro|SAI_MASTERDIVIDER_DISABLE
@@ -159,7 +173,7 @@ DECL|SAI_PROTOCOL_DATASIZE_16BITEXTENDED|macro|SAI_PROTOCOL_DATASIZE_16BITEXTEND
 DECL|SAI_PROTOCOL_DATASIZE_16BIT|macro|SAI_PROTOCOL_DATASIZE_16BIT
 DECL|SAI_PROTOCOL_DATASIZE_24BIT|macro|SAI_PROTOCOL_DATASIZE_24BIT
 DECL|SAI_PROTOCOL_DATASIZE_32BIT|macro|SAI_PROTOCOL_DATASIZE_32BIT
-DECL|SAI_PdmInitTypeDef|typedef|}SAI_PdmInitTypeDef;
+DECL|SAI_PdmInitTypeDef|typedef|} SAI_PdmInitTypeDef;
 DECL|SAI_SLOTACTIVE_0|macro|SAI_SLOTACTIVE_0
 DECL|SAI_SLOTACTIVE_10|macro|SAI_SLOTACTIVE_10
 DECL|SAI_SLOTACTIVE_11|macro|SAI_SLOTACTIVE_11
@@ -189,11 +203,12 @@ DECL|SAI_SYNCEXT_OUTBLOCKB_ENABLE|macro|SAI_SYNCEXT_OUTBLOCKB_ENABLE
 DECL|SAI_SYNCHRONOUS_EXT_SAI1|macro|SAI_SYNCHRONOUS_EXT_SAI1
 DECL|SAI_SYNCHRONOUS_EXT_SAI2|macro|SAI_SYNCHRONOUS_EXT_SAI2
 DECL|SAI_SYNCHRONOUS|macro|SAI_SYNCHRONOUS
-DECL|SAI_SlotInitTypeDef|typedef|}SAI_SlotInitTypeDef;
+DECL|SAI_SlotInitTypeDef|typedef|} SAI_SlotInitTypeDef;
 DECL|SAI_ULAW_1CPL_COMPANDING|macro|SAI_ULAW_1CPL_COMPANDING
 DECL|SAI_ULAW_2CPL_COMPANDING|macro|SAI_ULAW_2CPL_COMPANDING
 DECL|SAI_ZERO_VALUE|macro|SAI_ZERO_VALUE
 DECL|SAIcallback|typedef|typedef void (*SAIcallback)(void);
+DECL|STM32L4xx_HAL_SAI_H|macro|STM32L4xx_HAL_SAI_H
 DECL|SlotActive|member|uint32_t SlotActive; /*!< Specifies the slots in audio frame that will be activated.
 DECL|SlotInit|member|SAI_SlotInitTypeDef SlotInit; /*!< SAI Slot configuration parameters */
 DECL|SlotNumber|member|uint32_t SlotNumber; /*!< Specifies the number of slot in the audio frame.
@@ -202,6 +217,8 @@ DECL|State|member|__IO HAL_SAI_StateTypeDef State; /*!< SAI communication state 
 DECL|SynchroExt|member|uint32_t SynchroExt; /*!< Specifies SAI external output synchronization, this setup is common
 DECL|Synchro|member|uint32_t Synchro; /*!< Specifies SAI Block synchronization
 DECL|TriState|member|uint32_t TriState; /*!< Specifies the companding mode type.
+DECL|TxCpltCallback|member|void (*TxCpltCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI transmit complete callback */
+DECL|TxHalfCpltCallback|member|void (*TxHalfCpltCallback)(struct __SAI_HandleTypeDef *hsai); /*!< SAI transmit half complete callback */
 DECL|XferCount|member|uint16_t XferCount; /*!< SAI transfer counter */
 DECL|XferSize|member|uint16_t XferSize; /*!< SAI transfer size */
 DECL|__HAL_SAI_CLEAR_FLAG|macro|__HAL_SAI_CLEAR_FLAG
@@ -212,9 +229,10 @@ DECL|__HAL_SAI_ENABLE|macro|__HAL_SAI_ENABLE
 DECL|__HAL_SAI_GET_FLAG|macro|__HAL_SAI_GET_FLAG
 DECL|__HAL_SAI_GET_IT_SOURCE|macro|__HAL_SAI_GET_IT_SOURCE
 DECL|__HAL_SAI_RESET_HANDLE_STATE|macro|__HAL_SAI_RESET_HANDLE_STATE
+DECL|__HAL_SAI_RESET_HANDLE_STATE|macro|__HAL_SAI_RESET_HANDLE_STATE
 DECL|__SAI_HandleTypeDef|struct|typedef struct __SAI_HandleTypeDef
-DECL|__STM32L4xx_HAL_SAI_H|macro|__STM32L4xx_HAL_SAI_H
 DECL|hdmarx|member|DMA_HandleTypeDef *hdmarx; /*!< SAI Rx DMA handle parameters */
 DECL|hdmatx|member|DMA_HandleTypeDef *hdmatx; /*!< SAI Tx DMA handle parameters */
 DECL|mutecallback|member|SAIcallback mutecallback; /*!< SAI mute callback */
 DECL|pBuffPtr|member|uint8_t *pBuffPtr; /*!< Pointer to SAI transfer Buffer */
+DECL|pSAI_CallbackTypeDef|typedef|typedef void (*pSAI_CallbackTypeDef)(SAI_HandleTypeDef *hsai);

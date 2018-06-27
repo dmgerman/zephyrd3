@@ -1,3 +1,7 @@
+DECL|HAL_OPAMP_ALL_CB_ID|enumerator|HAL_OPAMP_ALL_CB_ID = 0x03U /*!< OPAMP All ID */
+DECL|HAL_OPAMP_CallbackIDTypeDef|typedef|}HAL_OPAMP_CallbackIDTypeDef;
+DECL|HAL_OPAMP_MSP_DEINIT_CB_ID|enumerator|HAL_OPAMP_MSP_DEINIT_CB_ID = 0x02U, /*!< OPAMP MspDeInit Callback ID */
+DECL|HAL_OPAMP_MSP_INIT_CB_ID|enumerator|HAL_OPAMP_MSP_INIT_CB_ID = 0x01U, /*!< OPAMP MspInit Callback ID */
 DECL|HAL_OPAMP_STATE_BUSYLOCKED|enumerator|HAL_OPAMP_STATE_BUSYLOCKED = 0x00000005 /*!< OPAMP is locked
 DECL|HAL_OPAMP_STATE_BUSY|enumerator|HAL_OPAMP_STATE_BUSY = 0x00000004, /*!< OPAMP is enabled and running in normal mode */
 DECL|HAL_OPAMP_STATE_CALIBBUSY|enumerator|HAL_OPAMP_STATE_CALIBBUSY = 0x00000002, /*!< OPAMP is enabled in auto calibration mode */
@@ -22,6 +26,8 @@ DECL|Instance|member|OPAMP_TypeDef *Instance; /*!< OPAMP instance's registers ba
 DECL|InvertingInput|member|uint32_t InvertingInput; /*!< Specifies the inverting input in Standalone & PGA modes
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mode|member|uint32_t Mode; /*!< Specifies the OPAMP mode
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __OPAMP_HandleTypeDef *hopamp);
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __OPAMP_HandleTypeDef *hopamp);
 DECL|NonInvertingInput|member|uint32_t NonInvertingInput; /*!< Specifies the non inverting input of the opamp:
 DECL|OPAMP_FACTORYTRIMMING_DUMMY|macro|OPAMP_FACTORYTRIMMING_DUMMY
 DECL|OPAMP_FACTORYTRIMMING_N|macro|OPAMP_FACTORYTRIMMING_N
@@ -59,4 +65,7 @@ DECL|TrimmingValuePLowPower|member|uint32_t TrimmingValuePLowPower; /*!< Specifi
 DECL|TrimmingValueP|member|uint32_t TrimmingValueP; /*!< Specifies the offset trimming value (PMOS)
 DECL|UserTrimming|member|uint32_t UserTrimming; /*!< Specifies the trimming mode
 DECL|__HAL_OPAMP_RESET_HANDLE_STATE|macro|__HAL_OPAMP_RESET_HANDLE_STATE
+DECL|__HAL_OPAMP_RESET_HANDLE_STATE|macro|__HAL_OPAMP_RESET_HANDLE_STATE
+DECL|__OPAMP_HandleTypeDef|struct|typedef struct __OPAMP_HandleTypeDef
 DECL|__STM32L4xx_HAL_OPAMP_H|macro|__STM32L4xx_HAL_OPAMP_H
+DECL|pOPAMP_CallbackTypeDef|typedef|typedef void (*pOPAMP_CallbackTypeDef)(OPAMP_HandleTypeDef *hopamp);

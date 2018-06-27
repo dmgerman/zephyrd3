@@ -4,7 +4,9 @@ DECL|AlphaMode|member|uint32_t AlphaMode; /*!< Configures the DMA2D foreground o
 DECL|Blue|member|uint32_t Blue; /*!< Configures the blue value.
 DECL|BytesSwap|member|uint32_t BytesSwap; /*!< Select byte regular mode or bytes swap mode (two by two).
 DECL|CLUTColorMode|member|uint32_t CLUTColorMode; /*!< Configures the DMA2D CLUT color mode.
+DECL|CLUTLoadingCpltCallback|member|void (* CLUTLoadingCpltCallback)( struct __DMA2D_HandleTypeDef * hdma2d); /*!< DMA2D CLUT loading completion callback. */
 DECL|ColorMode|member|uint32_t ColorMode; /*!< Configures the color format of the output image.
+DECL|DMA2D_BACKGROUND_LAYER|macro|DMA2D_BACKGROUND_LAYER
 DECL|DMA2D_BYTES_REGULAR|macro|DMA2D_BYTES_REGULAR
 DECL|DMA2D_BYTES_SWAP|macro|DMA2D_BYTES_SWAP
 DECL|DMA2D_CCM_ARGB8888|macro|DMA2D_CCM_ARGB8888
@@ -20,6 +22,7 @@ DECL|DMA2D_FLAG_CTC|macro|DMA2D_FLAG_CTC
 DECL|DMA2D_FLAG_TC|macro|DMA2D_FLAG_TC
 DECL|DMA2D_FLAG_TE|macro|DMA2D_FLAG_TE
 DECL|DMA2D_FLAG_TW|macro|DMA2D_FLAG_TW
+DECL|DMA2D_FOREGROUND_LAYER|macro|DMA2D_FOREGROUND_LAYER
 DECL|DMA2D_HandleTypeDef|typedef|} DMA2D_HandleTypeDef;
 DECL|DMA2D_INPUT_A4|macro|DMA2D_INPUT_A4
 DECL|DMA2D_INPUT_A8|macro|DMA2D_INPUT_A8
@@ -66,12 +69,18 @@ DECL|DMA2D_REGULAR_ALPHA|macro|DMA2D_REGULAR_ALPHA
 DECL|DMA2D_REPLACE_ALPHA|macro|DMA2D_REPLACE_ALPHA
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DMA2D error code. */
 DECL|Green|member|uint32_t Green; /*!< Configures the green value.
+DECL|HAL_DMA2D_CLUTLOADINGCPLT_CB_ID|enumerator|HAL_DMA2D_CLUTLOADINGCPLT_CB_ID = 0x05U, /*!< DMA2D CLUT loading completion callback ID */
+DECL|HAL_DMA2D_CallbackIDTypeDef|typedef|}HAL_DMA2D_CallbackIDTypeDef;
 DECL|HAL_DMA2D_DisableCLUT|macro|HAL_DMA2D_DisableCLUT
 DECL|HAL_DMA2D_ERROR_CAE|macro|HAL_DMA2D_ERROR_CAE
 DECL|HAL_DMA2D_ERROR_CE|macro|HAL_DMA2D_ERROR_CE
+DECL|HAL_DMA2D_ERROR_INVALID_CALLBACK|macro|HAL_DMA2D_ERROR_INVALID_CALLBACK
 DECL|HAL_DMA2D_ERROR_NONE|macro|HAL_DMA2D_ERROR_NONE
 DECL|HAL_DMA2D_ERROR_TE|macro|HAL_DMA2D_ERROR_TE
 DECL|HAL_DMA2D_ERROR_TIMEOUT|macro|HAL_DMA2D_ERROR_TIMEOUT
+DECL|HAL_DMA2D_LINEEVENT_CB_ID|enumerator|HAL_DMA2D_LINEEVENT_CB_ID = 0x04U, /*!< DMA2D line event callback ID */
+DECL|HAL_DMA2D_MSPDEINIT_CB_ID|enumerator|HAL_DMA2D_MSPDEINIT_CB_ID = 0x01U, /*!< DMA2D MspDeInit callback ID */
+DECL|HAL_DMA2D_MSPINIT_CB_ID|enumerator|HAL_DMA2D_MSPINIT_CB_ID = 0x00U, /*!< DMA2D MspInit callback ID */
 DECL|HAL_DMA2D_STATE_BUSY|enumerator|HAL_DMA2D_STATE_BUSY = 0x02U, /*!< An internal process is ongoing */
 DECL|HAL_DMA2D_STATE_ERROR|enumerator|HAL_DMA2D_STATE_ERROR = 0x04U, /*!< DMA2D state error */
 DECL|HAL_DMA2D_STATE_READY|enumerator|HAL_DMA2D_STATE_READY = 0x01U, /*!< Peripheral Initialized and ready for use */
@@ -79,6 +88,8 @@ DECL|HAL_DMA2D_STATE_RESET|enumerator|HAL_DMA2D_STATE_RESET = 0x00U, /*!< DMA2D 
 DECL|HAL_DMA2D_STATE_SUSPEND|enumerator|HAL_DMA2D_STATE_SUSPEND = 0x05U /*!< DMA2D process is suspended */
 DECL|HAL_DMA2D_STATE_TIMEOUT|enumerator|HAL_DMA2D_STATE_TIMEOUT = 0x03U, /*!< Timeout state */
 DECL|HAL_DMA2D_StateTypeDef|typedef|}HAL_DMA2D_StateTypeDef;
+DECL|HAL_DMA2D_TRANSFERCOMPLETE_CB_ID|enumerator|HAL_DMA2D_TRANSFERCOMPLETE_CB_ID = 0x02U, /*!< DMA2D transfer complete callback ID */
+DECL|HAL_DMA2D_TRANSFERERROR_CB_ID|enumerator|HAL_DMA2D_TRANSFERERROR_CB_ID = 0x03U, /*!< DMA2D transfer error callback ID */
 DECL|IS_DMA2D_ALPHA_INVERTED|macro|IS_DMA2D_ALPHA_INVERTED
 DECL|IS_DMA2D_ALPHA_MODE|macro|IS_DMA2D_ALPHA_MODE
 DECL|IS_DMA2D_BYTES_SWAP|macro|IS_DMA2D_BYTES_SWAP
@@ -104,14 +115,18 @@ DECL|InputColorMode|member|uint32_t InputColorMode; /*!< Configures the DMA2D fo
 DECL|InputOffset|member|uint32_t InputOffset; /*!< Configures the DMA2D foreground or background offset.
 DECL|Instance|member|DMA2D_TypeDef *Instance; /*!< DMA2D register base address. */
 DECL|LayerCfg|member|DMA2D_LayerCfgTypeDef LayerCfg[MAX_DMA2D_LAYER]; /*!< DMA2D Layers parameters */
+DECL|LineEventCallback|member|void (* LineEventCallback)( struct __DMA2D_HandleTypeDef * hdma2d); /*!< DMA2D line event callback. */
 DECL|LineOffsetMode|member|uint32_t LineOffsetMode; /*!< Configures how is expressed the line offset for the foreground, background and output.
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< DMA2D lock. */
 DECL|MAX_DMA2D_LAYER|macro|MAX_DMA2D_LAYER
 DECL|Mode|member|uint32_t Mode; /*!< Configures the DMA2D transfer mode.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)( struct __DMA2D_HandleTypeDef * hdma2d); /*!< DMA2D Msp DeInit callback. */
+DECL|MspInitCallback|member|void (* MspInitCallback)( struct __DMA2D_HandleTypeDef * hdma2d); /*!< DMA2D Msp Init callback. */
 DECL|OutputOffset|member|uint32_t OutputOffset; /*!< Specifies the Offset value.
 DECL|RedBlueSwap|member|uint32_t RedBlueSwap; /*!< Select regular mode (RGB or ARGB) or swap mode (BGR or ABGR)
 DECL|RedBlueSwap|member|uint32_t RedBlueSwap; /*!< Select regular mode (RGB or ARGB) or swap mode (BGR or ABGR).
 DECL|Red|member|uint32_t Red; /*!< Configures the red value.
+DECL|STM32L4xx_HAL_DMA2D_H|macro|STM32L4xx_HAL_DMA2D_H
 DECL|Size|member|uint32_t Size; /*!< Configures the DMA2D CLUT size.
 DECL|State|member|__IO HAL_DMA2D_StateTypeDef State; /*!< DMA2D transfer state. */
 DECL|XferCpltCallback|member|void (* XferCpltCallback)(struct __DMA2D_HandleTypeDef * hdma2d); /*!< DMA2D transfer complete callback. */
@@ -124,5 +139,6 @@ DECL|__HAL_DMA2D_ENABLE|macro|__HAL_DMA2D_ENABLE
 DECL|__HAL_DMA2D_GET_FLAG|macro|__HAL_DMA2D_GET_FLAG
 DECL|__HAL_DMA2D_GET_IT_SOURCE|macro|__HAL_DMA2D_GET_IT_SOURCE
 DECL|__HAL_DMA2D_RESET_HANDLE_STATE|macro|__HAL_DMA2D_RESET_HANDLE_STATE
-DECL|__STM32L4xx_HAL_DMA2D_H|macro|__STM32L4xx_HAL_DMA2D_H
+DECL|__HAL_DMA2D_RESET_HANDLE_STATE|macro|__HAL_DMA2D_RESET_HANDLE_STATE
 DECL|pCLUT|member|uint32_t *pCLUT; /*!< Configures the DMA2D CLUT memory address.*/
+DECL|pDMA2D_CallbackTypeDef|typedef|typedef void (*pDMA2D_CallbackTypeDef)(DMA2D_HandleTypeDef * hdma2d); /*!< Pointer to a DMA2D common callback function */

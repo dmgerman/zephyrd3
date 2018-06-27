@@ -1,5 +1,7 @@
-DECL|HAL_WWDG_EarlyWakeupCallback|function|__weak void HAL_WWDG_EarlyWakeupCallback(WWDG_HandleTypeDef* hwwdg)
+DECL|HAL_WWDG_EarlyWakeupCallback|function|__weak void HAL_WWDG_EarlyWakeupCallback(WWDG_HandleTypeDef *hwwdg)
 DECL|HAL_WWDG_IRQHandler|function|void HAL_WWDG_IRQHandler(WWDG_HandleTypeDef *hwwdg)
 DECL|HAL_WWDG_Init|function|HAL_StatusTypeDef HAL_WWDG_Init(WWDG_HandleTypeDef *hwwdg)
 DECL|HAL_WWDG_MspInit|function|__weak void HAL_WWDG_MspInit(WWDG_HandleTypeDef *hwwdg)
 DECL|HAL_WWDG_Refresh|function|HAL_StatusTypeDef HAL_WWDG_Refresh(WWDG_HandleTypeDef *hwwdg)
+DECL|HAL_WWDG_RegisterCallback|function|HAL_StatusTypeDef HAL_WWDG_RegisterCallback(WWDG_HandleTypeDef *hwwdg, HAL_WWDG_CallbackIDTypeDef CallbackID, pWWDG_CallbackTypeDef pCallback)
+DECL|HAL_WWDG_UnRegisterCallback|function|HAL_StatusTypeDef HAL_WWDG_UnRegisterCallback(WWDG_HandleTypeDef *hwwdg, HAL_WWDG_CallbackIDTypeDef CallbackID)

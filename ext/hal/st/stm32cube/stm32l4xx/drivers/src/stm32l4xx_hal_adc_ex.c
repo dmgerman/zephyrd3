@@ -1,7 +1,5 @@
 DECL|ADC_CALIBRATION_TIMEOUT|macro|ADC_CALIBRATION_TIMEOUT
-DECL|ADC_CFGR2_INJ_FIELDS|macro|ADC_CFGR2_INJ_FIELDS
 DECL|ADC_JSQR_FIELDS|macro|ADC_JSQR_FIELDS
-DECL|ADC_OFR_INJ_FIELDS|macro|ADC_OFR_INJ_FIELDS
 DECL|HAL_ADCEx_Calibration_GetValue|function|uint32_t HAL_ADCEx_Calibration_GetValue(ADC_HandleTypeDef* hadc, uint32_t SingleDiff)
 DECL|HAL_ADCEx_Calibration_SetValue|function|HAL_StatusTypeDef HAL_ADCEx_Calibration_SetValue(ADC_HandleTypeDef* hadc, uint32_t SingleDiff, uint32_t CalibrationFactor)
 DECL|HAL_ADCEx_Calibration_Start|function|HAL_StatusTypeDef HAL_ADCEx_Calibration_Start(ADC_HandleTypeDef* hadc, uint32_t SingleDiff)

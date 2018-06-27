@@ -4492,7 +4492,7 @@ DECL|CHCFGR2|member|__IO uint32_t CHCFGR2; /*!< DFSDM channel configuration regi
 DECL|CHDATINR|member|__IO uint32_t CHDATINR; /*!< DFSDM channel data input register, Address offset: 0x10 */
 DECL|CHWDATAR|member|__IO uint32_t CHWDATAR; /*!< DFSDM channel watchdog filter data register, Address offset: 0x0C */
 DECL|CICR|member|__IO uint32_t CICR; /*!< RCC clock interrupt clear register, Address offset: 0x20 */
-DECL|CID|member|__IO uint32_t CID; /* User ID Register 03Ch*/
+DECL|CID|member|__IO uint32_t CID; /*!< User ID Register 03Ch*/
 DECL|CIER|member|__IO uint32_t CIER; /*!< RCC clock interrupt enable register, Address offset: 0x18 */
 DECL|CIFR|member|__IO uint32_t CIFR; /*!< RCC clock interrupt flag register, Address offset: 0x1C */
 DECL|CLKCR|member|__IO uint32_t CLKCR; /*!< SDMMC clock control register, Address offset: 0x04 */
@@ -5152,9 +5152,9 @@ DECL|DFSDM_FLTICR_CLRJOVRF|macro|DFSDM_FLTICR_CLRJOVRF
 DECL|DFSDM_FLTICR_CLRROVRF_Msk|macro|DFSDM_FLTICR_CLRROVRF_Msk
 DECL|DFSDM_FLTICR_CLRROVRF_Pos|macro|DFSDM_FLTICR_CLRROVRF_Pos
 DECL|DFSDM_FLTICR_CLRROVRF|macro|DFSDM_FLTICR_CLRROVRF
-DECL|DFSDM_FLTICR_CLRSCSDF_Msk|macro|DFSDM_FLTICR_CLRSCSDF_Msk
-DECL|DFSDM_FLTICR_CLRSCSDF_Pos|macro|DFSDM_FLTICR_CLRSCSDF_Pos
-DECL|DFSDM_FLTICR_CLRSCSDF|macro|DFSDM_FLTICR_CLRSCSDF
+DECL|DFSDM_FLTICR_CLRSCDF_Msk|macro|DFSDM_FLTICR_CLRSCDF_Msk
+DECL|DFSDM_FLTICR_CLRSCDF_Pos|macro|DFSDM_FLTICR_CLRSCDF_Pos
+DECL|DFSDM_FLTICR_CLRSCDF|macro|DFSDM_FLTICR_CLRSCDF
 DECL|DFSDM_FLTISR_AWDF_Msk|macro|DFSDM_FLTISR_AWDF_Msk
 DECL|DFSDM_FLTISR_AWDF_Pos|macro|DFSDM_FLTISR_AWDF_Pos
 DECL|DFSDM_FLTISR_AWDF|macro|DFSDM_FLTISR_AWDF
@@ -5221,7 +5221,7 @@ DECL|DIEPINT|member|__IO uint32_t DIEPINT; /* dev IN Endpoint Itr Reg 900h + (ep
 DECL|DIEPMSK|member|__IO uint32_t DIEPMSK; /* dev IN Endpoint Mask 810h*/
 DECL|DIEPTSIZ|member|__IO uint32_t DIEPTSIZ; /* IN Endpoint Txfer Size 900h + (ep_num * 20h) + 10h*/
 DECL|DIEPTXF0_HNPTXFSIZ|member|__IO uint32_t DIEPTXF0_HNPTXFSIZ; /*!< EP0 / Non Periodic Tx FIFO Size Register 028h*/
-DECL|DIEPTXF|member|__IO uint32_t DIEPTXF[0x0F]; /* dev Periodic Transmit FIFO */
+DECL|DIEPTXF|member|__IO uint32_t DIEPTXF[0x0F]; /*!< dev Periodic Transmit FIFO */
 DECL|DIER|member|__IO uint32_t DIER; /*!< TIM DMA/interrupt enable register, Address offset: 0x0C */
 DECL|DIFSEL|member|__IO uint32_t DIFSEL; /*!< ADC differential mode selection register, Address offset: 0xB0 */
 DECL|DINEP1MSK|member|__IO uint32_t DINEP1MSK; /* dedicated EP mask 844h*/
@@ -6709,17 +6709,17 @@ DECL|FW_VDSL_LENG|macro|FW_VDSL_LENG
 DECL|FW_VDSSA_ADD_Msk|macro|FW_VDSSA_ADD_Msk
 DECL|FW_VDSSA_ADD_Pos|macro|FW_VDSSA_ADD_Pos
 DECL|FW_VDSSA_ADD|macro|FW_VDSSA_ADD
-DECL|GADPCTL|member|__IO uint32_t GADPCTL; /* ADP Timer, Control and Status Register 60Ch*/
+DECL|GADPCTL|member|__IO uint32_t GADPCTL; /*!< ADP Timer, Control and Status Register 060h*/
 DECL|GAHBCFG|member|__IO uint32_t GAHBCFG; /*!< Core AHB Configuration Register 008h*/
-DECL|GCCFG|member|__IO uint32_t GCCFG; /* General Purpose IO Register 038h*/
+DECL|GCCFG|member|__IO uint32_t GCCFG; /*!< General Purpose IO Register 038h*/
 DECL|GCR|member|__IO uint32_t GCR; /*!< SAI global configuration register, Address offset: 0x00 */
-DECL|GDFIFOCFG|member|__IO uint32_t GDFIFOCFG; /* DFIFO Software Config Register 05Ch*/
-DECL|GHWCFG1|member|__IO uint32_t GHWCFG1; /* User HW config1 044h*/
-DECL|GHWCFG2|member|__IO uint32_t GHWCFG2; /* User HW config2 048h*/
-DECL|GHWCFG3|member|__IO uint32_t GHWCFG3; /* User HW config3 04Ch*/
+DECL|GDFIFOCFG|member|__IO uint32_t GDFIFOCFG; /*!< DFIFO Software Config Register 05Ch*/
+DECL|GHWCFG1|member|__IO uint32_t GHWCFG1; /*!< User HW config1 044h*/
+DECL|GHWCFG2|member|__IO uint32_t GHWCFG2; /*!< User HW config2 048h*/
+DECL|GHWCFG3|member|__IO uint32_t GHWCFG3; /*!< User HW config3 04Ch*/
 DECL|GINTMSK|member|__IO uint32_t GINTMSK; /*!< Core Interrupt Mask Register 018h*/
 DECL|GINTSTS|member|__IO uint32_t GINTSTS; /*!< Core Interrupt Register 014h*/
-DECL|GLPMCFG|member|__IO uint32_t GLPMCFG; /* LPM Register 054h*/
+DECL|GLPMCFG|member|__IO uint32_t GLPMCFG; /*!< LPM Register 054h*/
 DECL|GOTGCTL|member|__IO uint32_t GOTGCTL; /*!< USB_OTG Control and Status Register 000h*/
 DECL|GOTGINT|member|__IO uint32_t GOTGINT; /*!< USB_OTG Interrupt Register 004h*/
 DECL|GPIOA_BASE|macro|GPIOA_BASE
@@ -7782,12 +7782,12 @@ DECL|GPIO_PUPDR_PUPDR9_0|macro|GPIO_PUPDR_PUPDR9_0
 DECL|GPIO_PUPDR_PUPDR9_1|macro|GPIO_PUPDR_PUPDR9_1
 DECL|GPIO_PUPDR_PUPDR9|macro|GPIO_PUPDR_PUPDR9
 DECL|GPIO_TypeDef|typedef|} GPIO_TypeDef;
-DECL|GPWRDN|member|__IO uint32_t GPWRDN; /* Power Down Register 058h*/
+DECL|GPWRDN|member|__IO uint32_t GPWRDN; /*!< Power Down Register 058h*/
 DECL|GRSTCTL|member|__IO uint32_t GRSTCTL; /*!< Core Reset Register 010h*/
-DECL|GRXFSIZ|member|__IO uint32_t GRXFSIZ; /* Receive FIFO Size Register 024h*/
+DECL|GRXFSIZ|member|__IO uint32_t GRXFSIZ; /*!< Receive FIFO Size Register 024h*/
 DECL|GRXSTSP|member|__IO uint32_t GRXSTSP; /*!< Receive Sts Q Read & POP Register 020h*/
 DECL|GRXSTSR|member|__IO uint32_t GRXSTSR; /*!< Receive Sts Q Read Register 01Ch*/
-DECL|GSNPSID|member|__IO uint32_t GSNPSID; /* USB_OTG core ID 040h*/
+DECL|GSNPSID|member|__IO uint32_t GSNPSID; /*!< USB_OTG core ID 040h*/
 DECL|GTPR|member|__IO uint16_t GTPR; /*!< USART Guard time and prescaler register, Address offset: 0x10 */
 DECL|GUSBCFG|member|__IO uint32_t GUSBCFG; /*!< Core USB Configuration Register 00Ch*/
 DECL|HAINTMSK|member|__IO uint32_t HAINTMSK; /* Host All Channels Interrupt Mask 418h*/
@@ -7804,7 +7804,7 @@ DECL|HCTSIZ|member|__IO uint32_t HCTSIZ;
 DECL|HFIR|member|__IO uint32_t HFIR; /* Host Frame Interval Register 404h*/
 DECL|HFNUM|member|__IO uint32_t HFNUM; /* Host Frame Nbr/Frame Remaining 408h*/
 DECL|HNPTXSTS|member|__IO uint32_t HNPTXSTS; /*!< Non Periodic Tx FIFO/Queue Sts reg 02Ch*/
-DECL|HPTXFSIZ|member|__IO uint32_t HPTXFSIZ; /* Host Periodic Tx FIFO Size Reg 100h*/
+DECL|HPTXFSIZ|member|__IO uint32_t HPTXFSIZ; /*!< Host Periodic Tx FIFO Size Reg 100h*/
 DECL|HPTXSTS|member|__IO uint32_t HPTXSTS; /* Host Periodic Tx FIFO/ Queue Status 410h*/
 DECL|HardFault_IRQn|enumerator|HardFault_IRQn = -13, /*!< 3 Cortex-M4 Hard Fault Interrupt */
 DECL|I2C1_BASE|macro|I2C1_BASE
@@ -10805,7 +10805,6 @@ DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x08 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x18 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x1C */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x14 */
-DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x1C */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x34 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved1, Address offset: 0x18 */
 DECL|RESERVED1|member|uint32_t RESERVED1[12]; /*!< Reserved, 0x1D0 - 0x1FF */
@@ -10816,7 +10815,6 @@ DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x1C */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x208 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x2C */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x1C */
-DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x20 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x44 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved2, Address offset: 0x1C */
 DECL|RESERVED2|member|uint32_t RESERVED2[4]; /*!< Reserved2, Address offset: 0x34-0x40 */
@@ -11553,13 +11551,13 @@ DECL|Reserved0C|member|uint32_t Reserved0C; /* Reserved B00h + (ep_num * 20h) + 
 DECL|Reserved18|member|uint32_t Reserved18; /* Reserved 900h+(ep_num*20h)+1Ch-900h+ (ep_num * 20h) + 1Ch*/
 DECL|Reserved18|member|uint32_t Reserved18[2]; /* Reserved B00h + (ep_num * 20h) + 18h - B00h + (ep_num * 20h) + 1Ch*/
 DECL|Reserved20|member|uint32_t Reserved20; /* Reserved 820h*/
-DECL|Reserved30|member|uint32_t Reserved30[2]; /* Reserved 030h*/
+DECL|Reserved24|member|uint32_t Reserved24; /* Reserved 824h*/
+DECL|Reserved30|member|uint32_t Reserved30[2]; /*!< Reserved 030h*/
 DECL|Reserved40C|member|uint32_t Reserved40C; /* Reserved 40Ch*/
-DECL|Reserved40|member|uint32_t Reserved40; /* dedicated EP mask 840h*/
-DECL|Reserved43|member|uint32_t Reserved43[39]; /* Reserved 058h-0FFh*/
-DECL|Reserved44|member|uint32_t Reserved44[15]; /* Reserved 844-87Ch*/
-DECL|Reserved6|member|uint32_t Reserved6; /* Reserved 050h*/
-DECL|Reserved9|member|uint32_t Reserved9; /* Reserved 824h*/
+DECL|Reserved40|member|uint32_t Reserved40; /* Reserved 840h*/
+DECL|Reserved43|member|uint32_t Reserved43[39]; /*!< Reserved 064h-0FFh*/
+DECL|Reserved44|member|uint32_t Reserved44[15]; /* Reserved 848-880h*/
+DECL|Reserved6|member|uint32_t Reserved6; /*!< Reserved 050h*/
 DECL|Reserved|member|uint32_t Reserved[2];
 DECL|SAI1_BASE|macro|SAI1_BASE
 DECL|SAI1_Block_A_BASE|macro|SAI1_Block_A_BASE
@@ -14309,6 +14307,9 @@ DECL|USART_CR3_SCARCNT|macro|USART_CR3_SCARCNT
 DECL|USART_CR3_SCEN_Msk|macro|USART_CR3_SCEN_Msk
 DECL|USART_CR3_SCEN_Pos|macro|USART_CR3_SCEN_Pos
 DECL|USART_CR3_SCEN|macro|USART_CR3_SCEN
+DECL|USART_CR3_UCESM_Msk|macro|USART_CR3_UCESM_Msk
+DECL|USART_CR3_UCESM_Pos|macro|USART_CR3_UCESM_Pos
+DECL|USART_CR3_UCESM|macro|USART_CR3_UCESM
 DECL|USART_CR3_WUFIE_Msk|macro|USART_CR3_WUFIE_Msk
 DECL|USART_CR3_WUFIE_Pos|macro|USART_CR3_WUFIE_Pos
 DECL|USART_CR3_WUFIE|macro|USART_CR3_WUFIE
@@ -14458,24 +14459,14 @@ DECL|USART_TDR_TDR|macro|USART_TDR_TDR
 DECL|USART_TypeDef|typedef|} USART_TypeDef;
 DECL|USBOTG_BASE|macro|USBOTG_BASE
 DECL|USB_OTG_BCNT_Msk|macro|USB_OTG_BCNT_Msk
-DECL|USB_OTG_BCNT_Msk|macro|USB_OTG_BCNT_Msk
-DECL|USB_OTG_BCNT_Pos|macro|USB_OTG_BCNT_Pos
 DECL|USB_OTG_BCNT_Pos|macro|USB_OTG_BCNT_Pos
 DECL|USB_OTG_BCNT|macro|USB_OTG_BCNT
-DECL|USB_OTG_BCNT|macro|USB_OTG_BCNT
-DECL|USB_OTG_CHNUM_0|macro|USB_OTG_CHNUM_0
 DECL|USB_OTG_CHNUM_0|macro|USB_OTG_CHNUM_0
 DECL|USB_OTG_CHNUM_1|macro|USB_OTG_CHNUM_1
-DECL|USB_OTG_CHNUM_1|macro|USB_OTG_CHNUM_1
-DECL|USB_OTG_CHNUM_2|macro|USB_OTG_CHNUM_2
 DECL|USB_OTG_CHNUM_2|macro|USB_OTG_CHNUM_2
 DECL|USB_OTG_CHNUM_3|macro|USB_OTG_CHNUM_3
-DECL|USB_OTG_CHNUM_3|macro|USB_OTG_CHNUM_3
-DECL|USB_OTG_CHNUM_Msk|macro|USB_OTG_CHNUM_Msk
 DECL|USB_OTG_CHNUM_Msk|macro|USB_OTG_CHNUM_Msk
 DECL|USB_OTG_CHNUM_Pos|macro|USB_OTG_CHNUM_Pos
-DECL|USB_OTG_CHNUM_Pos|macro|USB_OTG_CHNUM_Pos
-DECL|USB_OTG_CHNUM|macro|USB_OTG_CHNUM
 DECL|USB_OTG_CHNUM|macro|USB_OTG_CHNUM
 DECL|USB_OTG_CID_PRODUCT_ID_Msk|macro|USB_OTG_CID_PRODUCT_ID_Msk
 DECL|USB_OTG_CID_PRODUCT_ID_Pos|macro|USB_OTG_CID_PRODUCT_ID_Pos
@@ -14838,14 +14829,9 @@ DECL|USB_OTG_DOEPTSIZ_XFRSIZ_Msk|macro|USB_OTG_DOEPTSIZ_XFRSIZ_Msk
 DECL|USB_OTG_DOEPTSIZ_XFRSIZ_Pos|macro|USB_OTG_DOEPTSIZ_XFRSIZ_Pos
 DECL|USB_OTG_DOEPTSIZ_XFRSIZ|macro|USB_OTG_DOEPTSIZ_XFRSIZ
 DECL|USB_OTG_DPID_0|macro|USB_OTG_DPID_0
-DECL|USB_OTG_DPID_0|macro|USB_OTG_DPID_0
-DECL|USB_OTG_DPID_1|macro|USB_OTG_DPID_1
 DECL|USB_OTG_DPID_1|macro|USB_OTG_DPID_1
 DECL|USB_OTG_DPID_Msk|macro|USB_OTG_DPID_Msk
-DECL|USB_OTG_DPID_Msk|macro|USB_OTG_DPID_Msk
 DECL|USB_OTG_DPID_Pos|macro|USB_OTG_DPID_Pos
-DECL|USB_OTG_DPID_Pos|macro|USB_OTG_DPID_Pos
-DECL|USB_OTG_DPID|macro|USB_OTG_DPID
 DECL|USB_OTG_DPID|macro|USB_OTG_DPID
 DECL|USB_OTG_DSTS_EERR_Msk|macro|USB_OTG_DSTS_EERR_Msk
 DECL|USB_OTG_DSTS_EERR_Pos|macro|USB_OTG_DSTS_EERR_Pos
@@ -14908,35 +14894,21 @@ DECL|USB_OTG_DVBUSPULSE_DVBUSP_Pos|macro|USB_OTG_DVBUSPULSE_DVBUSP_Pos
 DECL|USB_OTG_DVBUSPULSE_DVBUSP|macro|USB_OTG_DVBUSPULSE_DVBUSP
 DECL|USB_OTG_DeviceTypeDef|typedef|} USB_OTG_DeviceTypeDef;
 DECL|USB_OTG_EPNUM_0|macro|USB_OTG_EPNUM_0
-DECL|USB_OTG_EPNUM_0|macro|USB_OTG_EPNUM_0
-DECL|USB_OTG_EPNUM_1|macro|USB_OTG_EPNUM_1
 DECL|USB_OTG_EPNUM_1|macro|USB_OTG_EPNUM_1
 DECL|USB_OTG_EPNUM_2|macro|USB_OTG_EPNUM_2
-DECL|USB_OTG_EPNUM_2|macro|USB_OTG_EPNUM_2
-DECL|USB_OTG_EPNUM_3|macro|USB_OTG_EPNUM_3
 DECL|USB_OTG_EPNUM_3|macro|USB_OTG_EPNUM_3
 DECL|USB_OTG_EPNUM_Msk|macro|USB_OTG_EPNUM_Msk
-DECL|USB_OTG_EPNUM_Msk|macro|USB_OTG_EPNUM_Msk
 DECL|USB_OTG_EPNUM_Pos|macro|USB_OTG_EPNUM_Pos
-DECL|USB_OTG_EPNUM_Pos|macro|USB_OTG_EPNUM_Pos
-DECL|USB_OTG_EPNUM|macro|USB_OTG_EPNUM
 DECL|USB_OTG_EPNUM|macro|USB_OTG_EPNUM
 DECL|USB_OTG_EP_REG_SIZE|macro|USB_OTG_EP_REG_SIZE
 DECL|USB_OTG_FIFO_BASE|macro|USB_OTG_FIFO_BASE
 DECL|USB_OTG_FIFO_SIZE|macro|USB_OTG_FIFO_SIZE
 DECL|USB_OTG_FRMNUM_0|macro|USB_OTG_FRMNUM_0
-DECL|USB_OTG_FRMNUM_0|macro|USB_OTG_FRMNUM_0
-DECL|USB_OTG_FRMNUM_1|macro|USB_OTG_FRMNUM_1
 DECL|USB_OTG_FRMNUM_1|macro|USB_OTG_FRMNUM_1
 DECL|USB_OTG_FRMNUM_2|macro|USB_OTG_FRMNUM_2
-DECL|USB_OTG_FRMNUM_2|macro|USB_OTG_FRMNUM_2
-DECL|USB_OTG_FRMNUM_3|macro|USB_OTG_FRMNUM_3
 DECL|USB_OTG_FRMNUM_3|macro|USB_OTG_FRMNUM_3
 DECL|USB_OTG_FRMNUM_Msk|macro|USB_OTG_FRMNUM_Msk
-DECL|USB_OTG_FRMNUM_Msk|macro|USB_OTG_FRMNUM_Msk
 DECL|USB_OTG_FRMNUM_Pos|macro|USB_OTG_FRMNUM_Pos
-DECL|USB_OTG_FRMNUM_Pos|macro|USB_OTG_FRMNUM_Pos
-DECL|USB_OTG_FRMNUM|macro|USB_OTG_FRMNUM
 DECL|USB_OTG_FRMNUM|macro|USB_OTG_FRMNUM
 DECL|USB_OTG_FS_PERIPH_BASE|macro|USB_OTG_FS_PERIPH_BASE
 DECL|USB_OTG_FS|macro|USB_OTG_FS
@@ -15167,6 +15139,9 @@ DECL|USB_OTG_GLPMCFG_ENBESL|macro|USB_OTG_GLPMCFG_ENBESL
 DECL|USB_OTG_GLPMCFG_L1DSEN_Msk|macro|USB_OTG_GLPMCFG_L1DSEN_Msk
 DECL|USB_OTG_GLPMCFG_L1DSEN_Pos|macro|USB_OTG_GLPMCFG_L1DSEN_Pos
 DECL|USB_OTG_GLPMCFG_L1DSEN|macro|USB_OTG_GLPMCFG_L1DSEN
+DECL|USB_OTG_GLPMCFG_L1RSMOK_Msk|macro|USB_OTG_GLPMCFG_L1RSMOK_Msk
+DECL|USB_OTG_GLPMCFG_L1RSMOK_Pos|macro|USB_OTG_GLPMCFG_L1RSMOK_Pos
+DECL|USB_OTG_GLPMCFG_L1RSMOK|macro|USB_OTG_GLPMCFG_L1RSMOK
 DECL|USB_OTG_GLPMCFG_L1ResumeOK_Msk|macro|USB_OTG_GLPMCFG_L1ResumeOK_Msk
 DECL|USB_OTG_GLPMCFG_L1ResumeOK_Pos|macro|USB_OTG_GLPMCFG_L1ResumeOK_Pos
 DECL|USB_OTG_GLPMCFG_L1ResumeOK|macro|USB_OTG_GLPMCFG_L1ResumeOK
@@ -15658,12 +15633,18 @@ DECL|USB_OTG_PCGCCTL_BASE|macro|USB_OTG_PCGCCTL_BASE
 DECL|USB_OTG_PCGCCTL_GATECLK_Msk|macro|USB_OTG_PCGCCTL_GATECLK_Msk
 DECL|USB_OTG_PCGCCTL_GATECLK_Pos|macro|USB_OTG_PCGCCTL_GATECLK_Pos
 DECL|USB_OTG_PCGCCTL_GATECLK|macro|USB_OTG_PCGCCTL_GATECLK
+DECL|USB_OTG_PCGCCTL_GATEHCLK_Msk|macro|USB_OTG_PCGCCTL_GATEHCLK_Msk
+DECL|USB_OTG_PCGCCTL_GATEHCLK_Pos|macro|USB_OTG_PCGCCTL_GATEHCLK_Pos
+DECL|USB_OTG_PCGCCTL_GATEHCLK|macro|USB_OTG_PCGCCTL_GATEHCLK
 DECL|USB_OTG_PCGCCTL_PHYSUSP_Msk|macro|USB_OTG_PCGCCTL_PHYSUSP_Msk
 DECL|USB_OTG_PCGCCTL_PHYSUSP_Pos|macro|USB_OTG_PCGCCTL_PHYSUSP_Pos
 DECL|USB_OTG_PCGCCTL_PHYSUSP|macro|USB_OTG_PCGCCTL_PHYSUSP
 DECL|USB_OTG_PCGCCTL_STOPCLK_Msk|macro|USB_OTG_PCGCCTL_STOPCLK_Msk
 DECL|USB_OTG_PCGCCTL_STOPCLK_Pos|macro|USB_OTG_PCGCCTL_STOPCLK_Pos
 DECL|USB_OTG_PCGCCTL_STOPCLK|macro|USB_OTG_PCGCCTL_STOPCLK
+DECL|USB_OTG_PCGCCTL_STPPCLK_Msk|macro|USB_OTG_PCGCCTL_STPPCLK_Msk
+DECL|USB_OTG_PCGCCTL_STPPCLK_Pos|macro|USB_OTG_PCGCCTL_STPPCLK_Pos
+DECL|USB_OTG_PCGCCTL_STPPCLK|macro|USB_OTG_PCGCCTL_STPPCLK
 DECL|USB_OTG_PCGCR_GATEHCLK_Msk|macro|USB_OTG_PCGCR_GATEHCLK_Msk
 DECL|USB_OTG_PCGCR_GATEHCLK_Pos|macro|USB_OTG_PCGCR_GATEHCLK_Pos
 DECL|USB_OTG_PCGCR_GATEHCLK|macro|USB_OTG_PCGCR_GATEHCLK
@@ -15674,18 +15655,11 @@ DECL|USB_OTG_PCGCR_STPPCLK_Msk|macro|USB_OTG_PCGCR_STPPCLK_Msk
 DECL|USB_OTG_PCGCR_STPPCLK_Pos|macro|USB_OTG_PCGCR_STPPCLK_Pos
 DECL|USB_OTG_PCGCR_STPPCLK|macro|USB_OTG_PCGCR_STPPCLK
 DECL|USB_OTG_PKTSTS_0|macro|USB_OTG_PKTSTS_0
-DECL|USB_OTG_PKTSTS_0|macro|USB_OTG_PKTSTS_0
-DECL|USB_OTG_PKTSTS_1|macro|USB_OTG_PKTSTS_1
 DECL|USB_OTG_PKTSTS_1|macro|USB_OTG_PKTSTS_1
 DECL|USB_OTG_PKTSTS_2|macro|USB_OTG_PKTSTS_2
-DECL|USB_OTG_PKTSTS_2|macro|USB_OTG_PKTSTS_2
-DECL|USB_OTG_PKTSTS_3|macro|USB_OTG_PKTSTS_3
 DECL|USB_OTG_PKTSTS_3|macro|USB_OTG_PKTSTS_3
 DECL|USB_OTG_PKTSTS_Msk|macro|USB_OTG_PKTSTS_Msk
-DECL|USB_OTG_PKTSTS_Msk|macro|USB_OTG_PKTSTS_Msk
 DECL|USB_OTG_PKTSTS_Pos|macro|USB_OTG_PKTSTS_Pos
-DECL|USB_OTG_PKTSTS_Pos|macro|USB_OTG_PKTSTS_Pos
-DECL|USB_OTG_PKTSTS|macro|USB_OTG_PKTSTS
 DECL|USB_OTG_PKTSTS|macro|USB_OTG_PKTSTS
 DECL|USB_OTG_TX0FD_Msk|macro|USB_OTG_TX0FD_Msk
 DECL|USB_OTG_TX0FD_Pos|macro|USB_OTG_TX0FD_Pos

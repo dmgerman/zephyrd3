@@ -39,6 +39,7 @@ DECL|HAL_DSI_PatternGeneratorStart|function|HAL_StatusTypeDef HAL_DSI_PatternGen
 DECL|HAL_DSI_PatternGeneratorStop|function|HAL_StatusTypeDef HAL_DSI_PatternGeneratorStop(DSI_HandleTypeDef *hdsi)
 DECL|HAL_DSI_Read|function|HAL_StatusTypeDef HAL_DSI_Read(DSI_HandleTypeDef *hdsi, uint32_t ChannelNbr, uint8_t* Array, uint32_t Size, uint32_t Mode,
 DECL|HAL_DSI_Refresh|function|HAL_StatusTypeDef HAL_DSI_Refresh(DSI_HandleTypeDef *hdsi)
+DECL|HAL_DSI_RegisterCallback|function|HAL_StatusTypeDef HAL_DSI_RegisterCallback(DSI_HandleTypeDef *hdsi, HAL_DSI_CallbackIDTypeDef CallbackID, pDSI_CallbackTypeDef pCallback)
 DECL|HAL_DSI_SetContentionDetectionOff|function|HAL_StatusTypeDef HAL_DSI_SetContentionDetectionOff(DSI_HandleTypeDef *hdsi, FunctionalState State)
 DECL|HAL_DSI_SetGenericVCID|function|HAL_StatusTypeDef HAL_DSI_SetGenericVCID(DSI_HandleTypeDef *hdsi, uint32_t VirtualChannelID)
 DECL|HAL_DSI_SetLanePinsConfiguration|function|HAL_StatusTypeDef HAL_DSI_SetLanePinsConfiguration(DSI_HandleTypeDef *hdsi, uint32_t CustomLane, uint32_t Lane, FunctionalState State)
@@ -52,3 +53,4 @@ DECL|HAL_DSI_Shutdown|function|HAL_StatusTypeDef HAL_DSI_Shutdown(DSI_HandleType
 DECL|HAL_DSI_Start|function|HAL_StatusTypeDef HAL_DSI_Start(DSI_HandleTypeDef *hdsi)
 DECL|HAL_DSI_Stop|function|HAL_StatusTypeDef HAL_DSI_Stop(DSI_HandleTypeDef *hdsi)
 DECL|HAL_DSI_TearingEffectCallback|function|__weak void HAL_DSI_TearingEffectCallback(DSI_HandleTypeDef *hdsi)
+DECL|HAL_DSI_UnRegisterCallback|function|HAL_StatusTypeDef HAL_DSI_UnRegisterCallback(DSI_HandleTypeDef *hdsi, HAL_DSI_CallbackIDTypeDef CallbackID)

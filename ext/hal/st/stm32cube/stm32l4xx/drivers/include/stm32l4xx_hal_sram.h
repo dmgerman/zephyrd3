@@ -1,9 +1,9 @@
 DECL|Extended|member|FMC_NORSRAM_EXTENDED_TypeDef *Extended; /*!< Extended mode register base address */
-DECL|HAL_SRAM_STATE_BUSY|enumerator|HAL_SRAM_STATE_BUSY = 0x02, /*!< SRAM internal process is ongoing */
-DECL|HAL_SRAM_STATE_ERROR|enumerator|HAL_SRAM_STATE_ERROR = 0x03, /*!< SRAM error state */
-DECL|HAL_SRAM_STATE_PROTECTED|enumerator|HAL_SRAM_STATE_PROTECTED = 0x04 /*!< SRAM peripheral NORSRAM device write protected */
-DECL|HAL_SRAM_STATE_READY|enumerator|HAL_SRAM_STATE_READY = 0x01, /*!< SRAM initialized and ready for use */
-DECL|HAL_SRAM_STATE_RESET|enumerator|HAL_SRAM_STATE_RESET = 0x00, /*!< SRAM not yet initialized or disabled */
+DECL|HAL_SRAM_STATE_BUSY|enumerator|HAL_SRAM_STATE_BUSY = 0x02U, /*!< SRAM internal process is ongoing */
+DECL|HAL_SRAM_STATE_ERROR|enumerator|HAL_SRAM_STATE_ERROR = 0x03U, /*!< SRAM error state */
+DECL|HAL_SRAM_STATE_PROTECTED|enumerator|HAL_SRAM_STATE_PROTECTED = 0x04U /*!< SRAM peripheral NORSRAM device write protected */
+DECL|HAL_SRAM_STATE_READY|enumerator|HAL_SRAM_STATE_READY = 0x01U, /*!< SRAM initialized and ready for use */
+DECL|HAL_SRAM_STATE_RESET|enumerator|HAL_SRAM_STATE_RESET = 0x00U, /*!< SRAM not yet initialized or disabled */
 DECL|HAL_SRAM_StateTypeDef|typedef|}HAL_SRAM_StateTypeDef;
 DECL|Init|member|FMC_NORSRAM_InitTypeDef Init; /*!< SRAM device control configuration parameters */
 DECL|Instance|member|FMC_NORSRAM_TypeDef *Instance; /*!< Register base address */

@@ -1,4 +1,3 @@
-DECL|ADC_CFGR2_FIELDS|macro|ADC_CFGR2_FIELDS
 DECL|ADC_CFGR_FIELDS_1|macro|ADC_CFGR_FIELDS_1
 DECL|ADC_CONVERSION_TIME_MAX_CPU_CYCLES|macro|ADC_CONVERSION_TIME_MAX_CPU_CYCLES
 DECL|ADC_ConversionStop|function|HAL_StatusTypeDef ADC_ConversionStop(ADC_HandleTypeDef* hadc, uint32_t ConversionGroup)
@@ -25,9 +24,11 @@ DECL|HAL_ADC_MspDeInit|function|__weak void HAL_ADC_MspDeInit(ADC_HandleTypeDef*
 DECL|HAL_ADC_MspInit|function|__weak void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
 DECL|HAL_ADC_PollForConversion|function|HAL_StatusTypeDef HAL_ADC_PollForConversion(ADC_HandleTypeDef* hadc, uint32_t Timeout)
 DECL|HAL_ADC_PollForEvent|function|HAL_StatusTypeDef HAL_ADC_PollForEvent(ADC_HandleTypeDef* hadc, uint32_t EventType, uint32_t Timeout)
+DECL|HAL_ADC_RegisterCallback|function|HAL_StatusTypeDef HAL_ADC_RegisterCallback(ADC_HandleTypeDef *hadc, HAL_ADC_CallbackIDTypeDef CallbackID, pADC_CallbackTypeDef pCallback)
 DECL|HAL_ADC_Start_DMA|function|HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t Length)
 DECL|HAL_ADC_Start_IT|function|HAL_StatusTypeDef HAL_ADC_Start_IT(ADC_HandleTypeDef* hadc)
 DECL|HAL_ADC_Start|function|HAL_StatusTypeDef HAL_ADC_Start(ADC_HandleTypeDef* hadc)
 DECL|HAL_ADC_Stop_DMA|function|HAL_StatusTypeDef HAL_ADC_Stop_DMA(ADC_HandleTypeDef* hadc)
 DECL|HAL_ADC_Stop_IT|function|HAL_StatusTypeDef HAL_ADC_Stop_IT(ADC_HandleTypeDef* hadc)
 DECL|HAL_ADC_Stop|function|HAL_StatusTypeDef HAL_ADC_Stop(ADC_HandleTypeDef* hadc)
+DECL|HAL_ADC_UnRegisterCallback|function|HAL_StatusTypeDef HAL_ADC_UnRegisterCallback(ADC_HandleTypeDef *hadc, HAL_ADC_CallbackIDTypeDef CallbackID)

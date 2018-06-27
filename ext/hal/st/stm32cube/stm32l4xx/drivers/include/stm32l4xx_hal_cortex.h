@@ -2,8 +2,6 @@ DECL|AccessPermission|member|uint8_t AccessPermission; /*!< Specifies the region
 DECL|BaseAddress|member|uint32_t BaseAddress; /*!< Specifies the base address of the region to protect. */
 DECL|DisableExec|member|uint8_t DisableExec; /*!< Specifies the instruction access status.
 DECL|Enable|member|uint8_t Enable; /*!< Specifies the status of the region.
-DECL|HAL_MPU_Disable|function|__STATIC_INLINE void HAL_MPU_Disable(void)
-DECL|HAL_MPU_Enable|function|__STATIC_INLINE void HAL_MPU_Enable(uint32_t MPU_Control)
 DECL|IS_MPU_ACCESS_BUFFERABLE|macro|IS_MPU_ACCESS_BUFFERABLE
 DECL|IS_MPU_ACCESS_CACHEABLE|macro|IS_MPU_ACCESS_CACHEABLE
 DECL|IS_MPU_ACCESS_SHAREABLE|macro|IS_MPU_ACCESS_SHAREABLE

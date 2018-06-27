@@ -206,4 +206,4 @@ DECL|OutputSwapMode|member|uint32_t OutputSwapMode; /*!< Specifies the output sw
 DECL|RBSwapMode|member|uint32_t RBSwapMode; /*!< Specifies the foreground or background Red Blue swap mode.
 DECL|RBSwapMode|member|uint32_t RBSwapMode; /*!< Specifies the output Red Blue swap mode.
 DECL|Red|member|uint32_t Red; /*!< Specifies the foreground or background Red color value.
-DECL|__STM32L4xx_LL_DMA2D_H|macro|__STM32L4xx_LL_DMA2D_H
+DECL|STM32L4xx_LL_DMA2D_H|macro|STM32L4xx_LL_DMA2D_H

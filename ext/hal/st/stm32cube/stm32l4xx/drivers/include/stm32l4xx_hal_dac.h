@@ -1,3 +1,7 @@
+DECL|ConvCpltCallbackCh1|member|void (* ConvCpltCallbackCh1) (struct __DAC_HandleTypeDef *hdac);
+DECL|ConvCpltCallbackCh2|member|void (* ConvCpltCallbackCh2) (struct __DAC_HandleTypeDef* hdac);
+DECL|ConvHalfCpltCallbackCh1|member|void (* ConvHalfCpltCallbackCh1) (struct __DAC_HandleTypeDef *hdac);
+DECL|ConvHalfCpltCallbackCh2|member|void (* ConvHalfCpltCallbackCh2) (struct __DAC_HandleTypeDef* hdac);
 DECL|DAC_ALIGN_12B_L|macro|DAC_ALIGN_12B_L
 DECL|DAC_ALIGN_12B_R|macro|DAC_ALIGN_12B_R
 DECL|DAC_ALIGN_8B_R|macro|DAC_ALIGN_8B_R
@@ -68,14 +72,31 @@ DECL|DAC_TRIMMING_USER|macro|DAC_TRIMMING_USER
 DECL|DAC_Trigger|member|uint32_t DAC_Trigger; /*!< Specifies the external trigger for the selected DAC channel.
 DECL|DAC_TrimmingValue|member|uint32_t DAC_TrimmingValue; /*!< Specifies the offset trimming value
 DECL|DAC_UserTrimming|member|uint32_t DAC_UserTrimming; /*!< Specifies the trimming mode
+DECL|DMAUnderrunCallbackCh1|member|void (* DMAUnderrunCallbackCh1) (struct __DAC_HandleTypeDef *hdac);
+DECL|DMAUnderrunCallbackCh2|member|void (* DMAUnderrunCallbackCh2) (struct __DAC_HandleTypeDef* hdac);
 DECL|DMA_Handle1|member|DMA_HandleTypeDef *DMA_Handle1; /*!< Pointer DMA handler for channel 1 */
 DECL|DMA_Handle2|member|DMA_HandleTypeDef *DMA_Handle2; /*!< Pointer DMA handler for channel 2 */
+DECL|ErrorCallbackCh1|member|void (* ErrorCallbackCh1) (struct __DAC_HandleTypeDef *hdac);
+DECL|ErrorCallbackCh2|member|void (* ErrorCallbackCh2) (struct __DAC_HandleTypeDef* hdac);
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DAC Error code */
+DECL|HAL_DAC_ALL_CB_ID|enumerator|HAL_DAC_ALL_CB_ID = 0x0AU /*!< DAC All ID */
+DECL|HAL_DAC_CH1_COMPLETE_CB_ID|enumerator|HAL_DAC_CH1_COMPLETE_CB_ID = 0x00U, /*!< DAC CH1 Complete Callback ID */
+DECL|HAL_DAC_CH1_ERROR_ID|enumerator|HAL_DAC_CH1_ERROR_ID = 0x02U, /*!< DAC CH1 error Callback ID */
+DECL|HAL_DAC_CH1_HALF_COMPLETE_CB_ID|enumerator|HAL_DAC_CH1_HALF_COMPLETE_CB_ID = 0x01U, /*!< DAC CH1 half Complete Callback ID */
+DECL|HAL_DAC_CH1_UNDERRUN_CB_ID|enumerator|HAL_DAC_CH1_UNDERRUN_CB_ID = 0x03U, /*!< DAC CH1 underrun Callback ID */
+DECL|HAL_DAC_CH2_COMPLETE_CB_ID|enumerator|HAL_DAC_CH2_COMPLETE_CB_ID = 0x04U, /*!< DAC CH2 Complete Callback ID */
+DECL|HAL_DAC_CH2_ERROR_ID|enumerator|HAL_DAC_CH2_ERROR_ID = 0x06U, /*!< DAC CH2 error Callback ID */
+DECL|HAL_DAC_CH2_HALF_COMPLETE_CB_ID|enumerator|HAL_DAC_CH2_HALF_COMPLETE_CB_ID = 0x05U, /*!< DAC CH2 half Complete Callback ID */
+DECL|HAL_DAC_CH2_UNDERRUN_CB_ID|enumerator|HAL_DAC_CH2_UNDERRUN_CB_ID = 0x07U, /*!< DAC CH2 underrun Callback ID */
+DECL|HAL_DAC_CallbackIDTypeDef|typedef|}HAL_DAC_CallbackIDTypeDef;
 DECL|HAL_DAC_ERROR_DMAUNDERRUNCH1|macro|HAL_DAC_ERROR_DMAUNDERRUNCH1
 DECL|HAL_DAC_ERROR_DMAUNDERRUNCH2|macro|HAL_DAC_ERROR_DMAUNDERRUNCH2
 DECL|HAL_DAC_ERROR_DMA|macro|HAL_DAC_ERROR_DMA
+DECL|HAL_DAC_ERROR_INVALID_CALLBACK|macro|HAL_DAC_ERROR_INVALID_CALLBACK
 DECL|HAL_DAC_ERROR_NONE|macro|HAL_DAC_ERROR_NONE
 DECL|HAL_DAC_ERROR_TIMEOUT|macro|HAL_DAC_ERROR_TIMEOUT
+DECL|HAL_DAC_MSP_DEINIT_CB_ID|enumerator|HAL_DAC_MSP_DEINIT_CB_ID = 0x09U, /*!< DAC MspDeInit Callback ID */
+DECL|HAL_DAC_MSP_INIT_CB_ID|enumerator|HAL_DAC_MSP_INIT_CB_ID = 0x08U, /*!< DAC MspInit Callback ID */
 DECL|HAL_DAC_STATE_BUSY|enumerator|HAL_DAC_STATE_BUSY = 0x02, /*!< DAC internal processing is ongoing */
 DECL|HAL_DAC_STATE_ERROR|enumerator|HAL_DAC_STATE_ERROR = 0x04 /*!< DAC error state */
 DECL|HAL_DAC_STATE_READY|enumerator|HAL_DAC_STATE_READY = 0x01, /*!< DAC initialized and ready for use */
@@ -90,7 +111,10 @@ DECL|IS_DAC_OUTPUT_BUFFER_STATE|macro|IS_DAC_OUTPUT_BUFFER_STATE
 DECL|IS_DAC_REFRESHTIME|macro|IS_DAC_REFRESHTIME
 DECL|Instance|member|DAC_TypeDef *Instance; /*!< Register base address */
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< DAC locking object */
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback ) (struct __DAC_HandleTypeDef *hdac);
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __DAC_HandleTypeDef *hdac);
 DECL|State|member|__IO HAL_DAC_StateTypeDef State; /*!< DAC communication state */
+DECL|__DAC_HandleTypeDef|struct|typedef struct __DAC_HandleTypeDef
 DECL|__HAL_DAC_CLEAR_FLAG|macro|__HAL_DAC_CLEAR_FLAG
 DECL|__HAL_DAC_DISABLE_IT|macro|__HAL_DAC_DISABLE_IT
 DECL|__HAL_DAC_DISABLE|macro|__HAL_DAC_DISABLE
@@ -99,4 +123,6 @@ DECL|__HAL_DAC_ENABLE|macro|__HAL_DAC_ENABLE
 DECL|__HAL_DAC_GET_FLAG|macro|__HAL_DAC_GET_FLAG
 DECL|__HAL_DAC_GET_IT_SOURCE|macro|__HAL_DAC_GET_IT_SOURCE
 DECL|__HAL_DAC_RESET_HANDLE_STATE|macro|__HAL_DAC_RESET_HANDLE_STATE
+DECL|__HAL_DAC_RESET_HANDLE_STATE|macro|__HAL_DAC_RESET_HANDLE_STATE
 DECL|__STM32L4xx_HAL_DAC_H|macro|__STM32L4xx_HAL_DAC_H
+DECL|pDAC_CallbackTypeDef|typedef|typedef void (*pDAC_CallbackTypeDef)(DAC_HandleTypeDef *hdac);

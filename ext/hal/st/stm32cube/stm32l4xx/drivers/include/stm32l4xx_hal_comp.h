@@ -6,6 +6,7 @@ DECL|COMP_BLANKINGSRC_TIM2_OC3_COMP1|macro|COMP_BLANKINGSRC_TIM2_OC3_COMP1
 DECL|COMP_BLANKINGSRC_TIM3_OC3_COMP1|macro|COMP_BLANKINGSRC_TIM3_OC3_COMP1
 DECL|COMP_BLANKINGSRC_TIM3_OC4_COMP2|macro|COMP_BLANKINGSRC_TIM3_OC4_COMP2
 DECL|COMP_BLANKINGSRC_TIM8_OC5_COMP2|macro|COMP_BLANKINGSRC_TIM8_OC5_COMP2
+DECL|COMP_CLEAR_ERRORCODE|macro|COMP_CLEAR_ERRORCODE
 DECL|COMP_EXTI_EVENT|macro|COMP_EXTI_EVENT
 DECL|COMP_EXTI_FALLING|macro|COMP_EXTI_FALLING
 DECL|COMP_EXTI_IT|macro|COMP_EXTI_IT
@@ -50,6 +51,12 @@ DECL|COMP_TRIGGERMODE_IT_RISING|macro|COMP_TRIGGERMODE_IT_RISING
 DECL|COMP_TRIGGERMODE_NONE|macro|COMP_TRIGGERMODE_NONE
 DECL|COMP_WINDOWMODE_COMP1_INPUT_PLUS_COMMON|macro|COMP_WINDOWMODE_COMP1_INPUT_PLUS_COMMON
 DECL|COMP_WINDOWMODE_DISABLE|macro|COMP_WINDOWMODE_DISABLE
+DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< COMP error code */
+DECL|HAL_COMP_CallbackIDTypeDef|typedef|} HAL_COMP_CallbackIDTypeDef;
+DECL|HAL_COMP_ERROR_INVALID_CALLBACK|macro|HAL_COMP_ERROR_INVALID_CALLBACK
+DECL|HAL_COMP_ERROR_NONE|macro|HAL_COMP_ERROR_NONE
+DECL|HAL_COMP_MSPDEINIT_CB_ID|enumerator|HAL_COMP_MSPDEINIT_CB_ID = 0x02U /*!< COMP Msp DeInit callback ID */
+DECL|HAL_COMP_MSPINIT_CB_ID|enumerator|HAL_COMP_MSPINIT_CB_ID = 0x01U, /*!< COMP Msp Init callback ID */
 DECL|HAL_COMP_STATE_BUSY_LOCKED|enumerator|HAL_COMP_STATE_BUSY_LOCKED = (HAL_COMP_STATE_BUSY | COMP_STATE_BITFIELD_LOCK) /*!< COMP is running and configuration is locked */
 DECL|HAL_COMP_STATE_BUSY|enumerator|HAL_COMP_STATE_BUSY = 0x02U, /*!< COMP is running */
 DECL|HAL_COMP_STATE_READY_LOCKED|enumerator|HAL_COMP_STATE_READY_LOCKED = (HAL_COMP_STATE_READY | COMP_STATE_BITFIELD_LOCK), /*!< COMP initialized but configuration is locked */
@@ -57,6 +64,7 @@ DECL|HAL_COMP_STATE_READY|enumerator|HAL_COMP_STATE_READY = 0x01U, /*!< COMP ini
 DECL|HAL_COMP_STATE_RESET_LOCKED|enumerator|HAL_COMP_STATE_RESET_LOCKED = (HAL_COMP_STATE_RESET | COMP_STATE_BITFIELD_LOCK), /*!< COMP not yet initialized and configuration is locked */
 DECL|HAL_COMP_STATE_RESET|enumerator|HAL_COMP_STATE_RESET = 0x00U, /*!< COMP not yet initialized */
 DECL|HAL_COMP_StateTypeDef|typedef|}HAL_COMP_StateTypeDef;
+DECL|HAL_COMP_TRIGGER_CB_ID|enumerator|HAL_COMP_TRIGGER_CB_ID = 0x00U, /*!< COMP trigger callback ID */
 DECL|Hysteresis|member|uint32_t Hysteresis; /*!< Set comparator hysteresis mode of the input minus.
 DECL|IS_COMP_BLANKINGSRCE|macro|IS_COMP_BLANKINGSRCE
 DECL|IS_COMP_BLANKINGSRC_INSTANCE|macro|IS_COMP_BLANKINGSRC_INSTANCE
@@ -77,11 +85,15 @@ DECL|Instance|member|COMP_TypeDef *Instance; /*!< Register base address */
 DECL|InvertingInput|member|uint32_t InvertingInput; /*!< Set comparator input minus (inverting input).
 DECL|Lock|member|HAL_LockTypeDef Lock; /*!< Locking object */
 DECL|Mode|member|uint32_t Mode; /*!< Set comparator operating mode to adjust power and speed.
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback)(struct __COMP_HandleTypeDef *hcomp); /*!< COMP Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback)(struct __COMP_HandleTypeDef *hcomp); /*!< COMP Msp Init callback */
 DECL|NonInvertingInput|member|uint32_t NonInvertingInput; /*!< Set comparator input plus (non-inverting input).
 DECL|OutputPol|member|uint32_t OutputPol; /*!< Set comparator output polarity.
 DECL|State|member|__IO HAL_COMP_StateTypeDef State; /*!< COMP communication state */
+DECL|TriggerCallback|member|void (* TriggerCallback)(struct __COMP_HandleTypeDef *hcomp); /*!< COMP trigger callback */
 DECL|TriggerMode|member|uint32_t TriggerMode; /*!< Set the comparator output triggering External Interrupt Line (EXTI).
 DECL|WindowMode|member|uint32_t WindowMode; /*!< Set window mode of a pair of comparators instances
+DECL|__COMP_HandleTypeDef|struct|typedef struct __COMP_HandleTypeDef
 DECL|__HAL_COMP_COMP1_EXTI_CLEAR_FLAG|macro|__HAL_COMP_COMP1_EXTI_CLEAR_FLAG
 DECL|__HAL_COMP_COMP1_EXTI_DISABLE_EVENT|macro|__HAL_COMP_COMP1_EXTI_DISABLE_EVENT
 DECL|__HAL_COMP_COMP1_EXTI_DISABLE_FALLING_EDGE|macro|__HAL_COMP_COMP1_EXTI_DISABLE_FALLING_EDGE
@@ -113,4 +125,6 @@ DECL|__HAL_COMP_ENABLE|macro|__HAL_COMP_ENABLE
 DECL|__HAL_COMP_IS_LOCKED|macro|__HAL_COMP_IS_LOCKED
 DECL|__HAL_COMP_LOCK|macro|__HAL_COMP_LOCK
 DECL|__HAL_COMP_RESET_HANDLE_STATE|macro|__HAL_COMP_RESET_HANDLE_STATE
+DECL|__HAL_COMP_RESET_HANDLE_STATE|macro|__HAL_COMP_RESET_HANDLE_STATE
 DECL|__STM32L4xx_HAL_COMP_H|macro|__STM32L4xx_HAL_COMP_H
+DECL|pCOMP_CallbackTypeDef|typedef|typedef void (*pCOMP_CallbackTypeDef)(COMP_HandleTypeDef *hcomp); /*!< pointer to a COMP callback function */

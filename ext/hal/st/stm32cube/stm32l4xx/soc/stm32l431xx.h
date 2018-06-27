@@ -9428,7 +9428,6 @@ DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x08 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x18 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, 0x1C */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x14 */
-DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x1C */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x34 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: 0x48 */
 DECL|RESERVED1|member|uint32_t RESERVED1; /*!< Reserved, Address offset: ADC1 base address + 0x300 */
@@ -9441,7 +9440,6 @@ DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x1C */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x208 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, 0x2C */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x1C */
-DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x20 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x44 */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: 0x4C */
 DECL|RESERVED2|member|uint32_t RESERVED2; /*!< Reserved, Address offset: ADC1 base address + 0x304 */
@@ -12640,6 +12638,9 @@ DECL|USART_CR3_SCEN|macro|USART_CR3_SCEN
 DECL|USART_CR3_TCBGTIE_Msk|macro|USART_CR3_TCBGTIE_Msk
 DECL|USART_CR3_TCBGTIE_Pos|macro|USART_CR3_TCBGTIE_Pos
 DECL|USART_CR3_TCBGTIE|macro|USART_CR3_TCBGTIE
+DECL|USART_CR3_UCESM_Msk|macro|USART_CR3_UCESM_Msk
+DECL|USART_CR3_UCESM_Pos|macro|USART_CR3_UCESM_Pos
+DECL|USART_CR3_UCESM|macro|USART_CR3_UCESM
 DECL|USART_CR3_WUFIE_Msk|macro|USART_CR3_WUFIE_Msk
 DECL|USART_CR3_WUFIE_Pos|macro|USART_CR3_WUFIE_Pos
 DECL|USART_CR3_WUFIE|macro|USART_CR3_WUFIE

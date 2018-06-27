@@ -201,26 +201,35 @@ DECL|DSI_WRITE_MEMORY_START|macro|DSI_WRITE_MEMORY_START
 DECL|DataLaneHS2LPTime|member|uint32_t DataLaneHS2LPTime; /*!< The maximum time that the D-PHY data lanes takes to go from high-speed
 DECL|DataLaneLP2HSTime|member|uint32_t DataLaneLP2HSTime; /*!< The maximum time that the D-PHY data lanes takes to go from low-power
 DECL|DataLaneMaxReadTime|member|uint32_t DataLaneMaxReadTime; /*!< The maximum time required to perform a read command */
+DECL|EndOfRefreshCallback|member|void (* EndOfRefreshCallback) (struct __DSI_HandleTypeDef *hdsi); /*!< DSI End Of Refresh Callback */
+DECL|ErrorCallback|member|void (* ErrorCallback) (struct __DSI_HandleTypeDef *hdsi); /*!< DSI Error Callback */
 DECL|ErrorCode|member|__IO uint32_t ErrorCode; /*!< DSI Error code */
 DECL|ErrorMsk|member|uint32_t ErrorMsk; /*!< DSI Error monitoring mask */
 DECL|FrameBTAAcknowledgeEnable|member|uint32_t FrameBTAAcknowledgeEnable; /*!< Frame bus-turn-around acknowledge enable
+DECL|HAL_DSI_CallbackIDTypeDef|typedef|}HAL_DSI_CallbackIDTypeDef;
+DECL|HAL_DSI_ENDOF_REFRESH_CB_ID|enumerator|HAL_DSI_ENDOF_REFRESH_CB_ID = 0x03U, /*!< DSI End Of Refresh Callback ID */
 DECL|HAL_DSI_ERROR_ACK|macro|HAL_DSI_ERROR_ACK
+DECL|HAL_DSI_ERROR_CB_ID|enumerator|HAL_DSI_ERROR_CB_ID = 0x04U /*!< DSI Error Callback ID */
 DECL|HAL_DSI_ERROR_CRC|macro|HAL_DSI_ERROR_CRC
 DECL|HAL_DSI_ERROR_ECC|macro|HAL_DSI_ERROR_ECC
 DECL|HAL_DSI_ERROR_EOT|macro|HAL_DSI_ERROR_EOT
 DECL|HAL_DSI_ERROR_GEN|macro|HAL_DSI_ERROR_GEN
+DECL|HAL_DSI_ERROR_INVALID_CALLBACK|macro|HAL_DSI_ERROR_INVALID_CALLBACK
 DECL|HAL_DSI_ERROR_NONE|macro|HAL_DSI_ERROR_NONE
 DECL|HAL_DSI_ERROR_OVF|macro|HAL_DSI_ERROR_OVF
 DECL|HAL_DSI_ERROR_PHY|macro|HAL_DSI_ERROR_PHY
 DECL|HAL_DSI_ERROR_PSE|macro|HAL_DSI_ERROR_PSE
 DECL|HAL_DSI_ERROR_RX|macro|HAL_DSI_ERROR_RX
 DECL|HAL_DSI_ERROR_TX|macro|HAL_DSI_ERROR_TX
+DECL|HAL_DSI_MSPDEINIT_CB_ID|enumerator|HAL_DSI_MSPDEINIT_CB_ID = 0x01U, /*!< DSI MspDeInit callback ID */
+DECL|HAL_DSI_MSPINIT_CB_ID|enumerator|HAL_DSI_MSPINIT_CB_ID = 0x00U, /*!< DSI MspInit callback ID */
 DECL|HAL_DSI_STATE_BUSY|enumerator|HAL_DSI_STATE_BUSY = 0x03U,
 DECL|HAL_DSI_STATE_ERROR|enumerator|HAL_DSI_STATE_ERROR = 0x02U,
 DECL|HAL_DSI_STATE_READY|enumerator|HAL_DSI_STATE_READY = 0x01U,
 DECL|HAL_DSI_STATE_RESET|enumerator|HAL_DSI_STATE_RESET = 0x00U,
 DECL|HAL_DSI_STATE_TIMEOUT|enumerator|HAL_DSI_STATE_TIMEOUT = 0x04U
 DECL|HAL_DSI_StateTypeDef|typedef|}HAL_DSI_StateTypeDef;
+DECL|HAL_DSI_TEARING_EFFECT_CB_ID|enumerator|HAL_DSI_TEARING_EFFECT_CB_ID = 0x02U, /*!< DSI Tearing Effect Callback ID */
 DECL|HSPolarity|member|uint32_t HSPolarity; /*!< HSYNC pin polarity
 DECL|HSPolarity|member|uint32_t HSPolarity; /*!< HSYNC pin polarity
 DECL|HighSpeedReadTimeout|member|uint32_t HighSpeedReadTimeout; /*!< High-speed read time-out */
@@ -307,6 +316,8 @@ DECL|LowPowerReadTimeout|member|uint32_t LowPowerReadTimeout; /*!< Low-power rea
 DECL|LowPowerReceptionTimeout|member|uint32_t LowPowerReceptionTimeout; /*!< Low-power reception time-out */
 DECL|LowPowerWriteTimeout|member|uint32_t LowPowerWriteTimeout; /*!< Low-speed write time-out */
 DECL|Mode|member|uint32_t Mode; /*!< Video mode type
+DECL|MspDeInitCallback|member|void (* MspDeInitCallback) (struct __DSI_HandleTypeDef *hdsi); /*!< DSI Msp DeInit callback */
+DECL|MspInitCallback|member|void (* MspInitCallback) (struct __DSI_HandleTypeDef *hdsi); /*!< DSI Msp Init callback */
 DECL|NullPacketSize|member|uint32_t NullPacketSize; /*!< Null packet size */
 DECL|NumberOfChunks|member|uint32_t NumberOfChunks; /*!< Number of chunks */
 DECL|NumberOfLanes|member|uint32_t NumberOfLanes; /*!< Number of lanes
@@ -314,10 +325,12 @@ DECL|PLLIDF|member|uint32_t PLLIDF; /*!< PLL Input Division Factor
 DECL|PLLNDIV|member|uint32_t PLLNDIV; /*!< PLL Loop Division Factor
 DECL|PLLODF|member|uint32_t PLLODF; /*!< PLL Output Division Factor
 DECL|PacketSize|member|uint32_t PacketSize; /*!< Video packet size */
+DECL|STM32L4xx_HAL_DSI_H|macro|STM32L4xx_HAL_DSI_H
 DECL|State|member|__IO HAL_DSI_StateTypeDef State; /*!< DSI communication state */
 DECL|StopWaitTime|member|uint32_t StopWaitTime; /*!< The minimum wait period to request a High-Speed transmission after the
 DECL|TEAcknowledgeRequest|member|uint32_t TEAcknowledgeRequest; /*!< Tearing Effect Acknowledge Request Enable
 DECL|TXEscapeCkdiv|member|uint32_t TXEscapeCkdiv; /*!< TX Escape clock division
+DECL|TearingEffectCallback|member|void (* TearingEffectCallback)(struct __DSI_HandleTypeDef *hdsi); /*!< DSI Tearing Effect Callback */
 DECL|TearingEffectPolarity|member|uint32_t TearingEffectPolarity; /*!< Tearing effect pin polarity
 DECL|TearingEffectSource|member|uint32_t TearingEffectSource; /*!< Tearing effect source
 DECL|TimeoutCkdiv|member|uint32_t TimeoutCkdiv; /*!< Time-out clock division */
@@ -330,6 +343,7 @@ DECL|VerticalFrontPorch|member|uint32_t VerticalFrontPorch; /*!< Vertical front-
 DECL|VerticalSyncActive|member|uint32_t VerticalSyncActive; /*!< Vertical synchronism active duration */
 DECL|VirtualChannelID|member|uint32_t VirtualChannelID; /*!< Virtual channel ID */
 DECL|VirtualChannelID|member|uint32_t VirtualChannelID; /*!< Virtual channel ID */
+DECL|__DSI_HandleTypeDef|struct|typedef struct __DSI_HandleTypeDef
 DECL|__HAL_DSI_CLEAR_FLAG|macro|__HAL_DSI_CLEAR_FLAG
 DECL|__HAL_DSI_DISABLE_IT|macro|__HAL_DSI_DISABLE_IT
 DECL|__HAL_DSI_DISABLE|macro|__HAL_DSI_DISABLE
@@ -342,6 +356,7 @@ DECL|__HAL_DSI_PLL_ENABLE|macro|__HAL_DSI_PLL_ENABLE
 DECL|__HAL_DSI_REG_DISABLE|macro|__HAL_DSI_REG_DISABLE
 DECL|__HAL_DSI_REG_ENABLE|macro|__HAL_DSI_REG_ENABLE
 DECL|__HAL_DSI_RESET_HANDLE_STATE|macro|__HAL_DSI_RESET_HANDLE_STATE
+DECL|__HAL_DSI_RESET_HANDLE_STATE|macro|__HAL_DSI_RESET_HANDLE_STATE
 DECL|__HAL_DSI_WRAPPER_DISABLE|macro|__HAL_DSI_WRAPPER_DISABLE
 DECL|__HAL_DSI_WRAPPER_ENABLE|macro|__HAL_DSI_WRAPPER_ENABLE
-DECL|__STM32L4xx_HAL_DSI_H|macro|__STM32L4xx_HAL_DSI_H
+DECL|pDSI_CallbackTypeDef|typedef|typedef void (*pDSI_CallbackTypeDef)(DSI_HandleTypeDef * hdsi); /*!< pointer to an DSI callback function */
