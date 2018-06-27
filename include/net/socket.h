@@ -56,3 +56,5 @@ DECL|setsockopt|function|static inline int setsockopt(int sock, int level, int o
 DECL|socket|function|static inline int socket(int family, int type, int proto)
 DECL|zsock_addrinfo|struct|struct zsock_addrinfo {
 DECL|zsock_pollfd|struct|struct zsock_pollfd {
+DECL|zsock_recv|function|static inline ssize_t zsock_recv(int sock, void *buf, size_t max_len, int flags)
+DECL|zsock_send|function|static inline ssize_t zsock_send(int sock, const void *buf, size_t len, int flags)
