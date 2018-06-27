@@ -1,5 +1,6 @@
 DECL|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH|macro|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
+DECL|buffered_cnt|variable|buffered_cnt
 DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
 DECL|initialized|variable|initialized
 DECL|list|variable|list
@@ -23,10 +24,12 @@ DECL|log_process|function|bool log_process(bool bypass)
 DECL|log_set_timestamp_func|function|int log_set_timestamp_func(timestamp_get_t timestamp_getter, u32_t freq)
 DECL|log_source_name_get|function|const char *log_source_name_get(u32_t domain_id, u32_t src_id)
 DECL|log_src_cnt_get|function|u32_t log_src_cnt_get(u32_t domain_id)
+DECL|log_thread_set|function|void log_thread_set(k_tid_t process_tid)
 DECL|max_filter_get|function|static u32_t max_filter_get(u32_t filters)
 DECL|msg_filter_check|function|static bool msg_filter_check(struct log_backend const *backend, struct log_msg *msg)
 DECL|msg_finalize|function|static inline void msg_finalize(struct log_msg *msg,struct log_msg_ids src_level)
 DECL|msg_process|function|static void msg_process(struct log_msg *msg, bool bypass)
 DECL|panic_mode|variable|panic_mode
+DECL|proc_tid|variable|proc_tid
 DECL|timestamp_func|variable|timestamp_func
 DECL|timestamp_get|function|static u32_t timestamp_get(void)
