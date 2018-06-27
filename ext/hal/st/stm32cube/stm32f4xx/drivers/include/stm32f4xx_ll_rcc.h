@@ -774,6 +774,7 @@ DECL|LL_RCC_PLL_GetR|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetR(void)
 DECL|LL_RCC_PLL_GetSpreadSelection|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetSpreadSelection(void)
 DECL|LL_RCC_PLL_GetStepIncrementation|function|__STATIC_INLINE uint32_t LL_RCC_PLL_GetStepIncrementation(void)
 DECL|LL_RCC_PLL_IsReady|function|__STATIC_INLINE uint32_t LL_RCC_PLL_IsReady(void)
+DECL|LL_RCC_PLL_SetMainSource|function|__STATIC_INLINE void LL_RCC_PLL_SetMainSource(uint32_t PLLSource)
 DECL|LL_RCC_PLL_SpreadSpectrum_Disable|function|__STATIC_INLINE void LL_RCC_PLL_SpreadSpectrum_Disable(void)
 DECL|LL_RCC_PLL_SpreadSpectrum_Enable|function|__STATIC_INLINE void LL_RCC_PLL_SpreadSpectrum_Enable(void)
 DECL|LL_RCC_RNG_CLKSOURCE_PLLI2S|macro|LL_RCC_RNG_CLKSOURCE_PLLI2S
