@@ -1,0 +1,36 @@
+DECL|CY_CFG_PWR_ENABLED|macro|CY_CFG_PWR_ENABLED
+DECL|CY_CFG_PWR_LDO_VOLTAGE|macro|CY_CFG_PWR_LDO_VOLTAGE
+DECL|CY_CFG_PWR_USING_LDO|macro|CY_CFG_PWR_USING_LDO
+DECL|CY_CFG_PWR_USING_PMIC|macro|CY_CFG_PWR_USING_PMIC
+DECL|CY_CFG_PWR_USING_ULP|macro|CY_CFG_PWR_USING_ULP
+DECL|CY_CFG_PWR_VDDA_MV|macro|CY_CFG_PWR_VDDA_MV
+DECL|CY_CFG_SYSCLK_CLKFAST_ENABLED|macro|CY_CFG_SYSCLK_CLKFAST_ENABLED
+DECL|CY_CFG_SYSCLK_CLKHF0_ENABLED|macro|CY_CFG_SYSCLK_CLKHF0_ENABLED
+DECL|CY_CFG_SYSCLK_CLKHF0_FREQ_MHZ|macro|CY_CFG_SYSCLK_CLKHF0_FREQ_MHZ
+DECL|CY_CFG_SYSCLK_CLKLF_ENABLED|macro|CY_CFG_SYSCLK_CLKLF_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPATH0_ENABLED|macro|CY_CFG_SYSCLK_CLKPATH0_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPATH1_ENABLED|macro|CY_CFG_SYSCLK_CLKPATH1_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPATH2_ENABLED|macro|CY_CFG_SYSCLK_CLKPATH2_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPATH3_ENABLED|macro|CY_CFG_SYSCLK_CLKPATH3_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPATH4_ENABLED|macro|CY_CFG_SYSCLK_CLKPATH4_ENABLED
+DECL|CY_CFG_SYSCLK_CLKPERI_ENABLED|macro|CY_CFG_SYSCLK_CLKPERI_ENABLED
+DECL|CY_CFG_SYSCLK_CLKSLOW_ENABLED|macro|CY_CFG_SYSCLK_CLKSLOW_ENABLED
+DECL|CY_CFG_SYSCLK_FLL_ENABLED|macro|CY_CFG_SYSCLK_FLL_ENABLED
+DECL|CY_CFG_SYSCLK_ILO_ENABLED|macro|CY_CFG_SYSCLK_ILO_ENABLED
+DECL|CY_CFG_SYSCLK_IMO_ENABLED|macro|CY_CFG_SYSCLK_IMO_ENABLED
+DECL|Cy_SysClk_ClkFastInit|function|static inline void Cy_SysClk_ClkFastInit(void)
+DECL|Cy_SysClk_ClkHf0Init|function|static inline void Cy_SysClk_ClkHf0Init(void)
+DECL|Cy_SysClk_ClkLfInit|function|static inline void Cy_SysClk_ClkLfInit(void)
+DECL|Cy_SysClk_ClkPath0Init|function|static inline void Cy_SysClk_ClkPath0Init(void)
+DECL|Cy_SysClk_ClkPath1Init|function|static inline void Cy_SysClk_ClkPath1Init(void)
+DECL|Cy_SysClk_ClkPath2Init|function|static inline void Cy_SysClk_ClkPath2Init(void)
+DECL|Cy_SysClk_ClkPath3Init|function|static inline void Cy_SysClk_ClkPath3Init(void)
+DECL|Cy_SysClk_ClkPath4Init|function|static inline void Cy_SysClk_ClkPath4Init(void)
+DECL|Cy_SysClk_ClkPeriInit|function|static inline void Cy_SysClk_ClkPeriInit(void)
+DECL|Cy_SysClk_ClkSlowInit|function|static inline void Cy_SysClk_ClkSlowInit(void)
+DECL|Cy_SysClk_FllInit|function|static inline void Cy_SysClk_FllInit(void)
+DECL|Cy_SysClk_IloInit|function|static inline void Cy_SysClk_IloInit(void)
+DECL|Cy_SystemInit|function|void Cy_SystemInit(void)
+DECL|init_cycfg_platform_wraper|function|static int init_cycfg_platform_wraper(struct device *arg)
+DECL|init_cycfg_platform|function|static void init_cycfg_platform(void)
+DECL|srss_0__clock_0__fll_0__fllConfig|variable|srss_0__clock_0__fll_0__fllConfig
