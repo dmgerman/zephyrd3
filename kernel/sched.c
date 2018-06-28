@@ -27,14 +27,20 @@ DECL|_pend_thread|function|void _pend_thread(struct k_thread *thread, _wait_q_t 
 DECL|_priq_dumb_add|function|void _priq_dumb_add(sys_dlist_t *pq, struct k_thread *thread)
 DECL|_priq_dumb_best|function|struct k_thread *_priq_dumb_best(sys_dlist_t *pq)
 DECL|_priq_dumb_remove|function|void _priq_dumb_remove(sys_dlist_t *pq, struct k_thread *thread)
+DECL|_priq_mq_add|function|void _priq_mq_add(struct _priq_mq *pq, struct k_thread *thread)
+DECL|_priq_mq_best|function|struct k_thread *_priq_mq_best(struct _priq_mq *pq)
+DECL|_priq_mq_remove|function|void _priq_mq_remove(struct _priq_mq *pq, struct k_thread *thread)
 DECL|_priq_rb_add|function|void _priq_rb_add(struct _priq_rb *pq, struct k_thread *thread)
 DECL|_priq_rb_best|function|struct k_thread *_priq_rb_best(struct _priq_rb *pq)
 DECL|_priq_rb_lessthan|function|int _priq_rb_lessthan(struct rbnode *a, struct rbnode *b)
 DECL|_priq_rb_remove|function|void _priq_rb_remove(struct _priq_rb *pq, struct k_thread *thread)
 DECL|_priq_run_add|macro|_priq_run_add
 DECL|_priq_run_add|macro|_priq_run_add
+DECL|_priq_run_add|macro|_priq_run_add
 DECL|_priq_run_best|macro|_priq_run_best
 DECL|_priq_run_best|macro|_priq_run_best
+DECL|_priq_run_best|macro|_priq_run_best
+DECL|_priq_run_remove|macro|_priq_run_remove
 DECL|_priq_run_remove|macro|_priq_run_remove
 DECL|_priq_run_remove|macro|_priq_run_remove
 DECL|_priq_wait_add|macro|_priq_wait_add

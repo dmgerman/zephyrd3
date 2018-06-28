@@ -40,6 +40,7 @@ DECL|irq_stack|member|char *irq_stack;
 DECL|nested|member|u32_t nested;
 DECL|nested|member|u32_t nested;
 DECL|ready_q|member|struct _ready_q ready_q;
+DECL|runq|member|struct _priq_mq runq;
 DECL|runq|member|struct _priq_rb runq;
 DECL|runq|member|sys_dlist_t runq;
 DECL|swap_ok|member|u8_t swap_ok;
