@@ -1,4 +1,5 @@
 DECL|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH|macro|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH
+DECL|STACKSIZE|macro|STACKSIZE
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
 DECL|buffered_cnt|variable|buffered_cnt
 DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
@@ -20,6 +21,7 @@ DECL|log_init|function|void log_init(void)
 DECL|log_n|function|void log_n(const char *str, u32_t *args, u32_t narg, struct log_msg_ids src_level)
 DECL|log_panic|function|void log_panic(void)
 DECL|log_printk|function|int log_printk(const char *fmt, va_list ap)
+DECL|log_process_thread_func|function|static void log_process_thread_func(void *dummy1, void *dummy2, void *dummy3)
 DECL|log_process|function|bool log_process(bool bypass)
 DECL|log_set_timestamp_func|function|int log_set_timestamp_func(timestamp_get_t timestamp_getter, u32_t freq)
 DECL|log_source_name_get|function|const char *log_source_name_get(u32_t domain_id, u32_t src_id)
