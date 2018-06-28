@@ -1,6 +1,5 @@
 DECL|MAX_BIN_SIZE|macro|MAX_BIN_SIZE
 DECL|MAX_EXPECTED_STRING|macro|MAX_EXPECTED_STRING
-DECL|RC_STR|macro|RC_STR
 DECL|ai1|variable|ai1
 DECL|ai2|variable|ai2
 DECL|char_to_nibble|function|static u8_t char_to_nibble(char c)

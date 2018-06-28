@@ -1,4 +1,3 @@
-DECL|RC_STR|macro|RC_STR
 DECL|is_connect|member|int is_connect;
 DECL|name|member|const char *name;
 DECL|rv|member|int rv;
