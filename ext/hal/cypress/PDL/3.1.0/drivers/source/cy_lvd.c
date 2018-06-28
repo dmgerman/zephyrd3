@@ -1,0 +1,1 @@
+DECL|Cy_LVD_DeepSleepCallback|function|cy_en_syspm_status_t Cy_LVD_DeepSleepCallback(cy_stc_syspm_callback_params_t * callbackParams)

@@ -1,0 +1,2 @@
+DECL|CY_CRYPTO_SERVER_H|macro|CY_CRYPTO_SERVER_H
+DECL|Cy_Crypto_Server_Start|macro|Cy_Crypto_Server_Start

@@ -1,0 +1,11 @@
+DECL|Cy_LPComp_DeepSleepCallback|function|cy_en_syspm_status_t Cy_LPComp_DeepSleepCallback(cy_stc_syspm_callback_params_t *callbackParams)
+DECL|Cy_LPComp_Disable|function|void Cy_LPComp_Disable(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel)
+DECL|Cy_LPComp_Enable|function|void Cy_LPComp_Enable(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel)
+DECL|Cy_LPComp_HibernateCallback|function|cy_en_syspm_status_t Cy_LPComp_HibernateCallback(cy_stc_syspm_callback_params_t *callbackParams)
+DECL|Cy_LPComp_Init|function|cy_en_lpcomp_status_t Cy_LPComp_Init(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, const cy_stc_lpcomp_config_t* config)
+DECL|Cy_LPComp_SetHysteresis|function|void Cy_LPComp_SetHysteresis(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, cy_en_lpcomp_hyst_t hysteresis)
+DECL|Cy_LPComp_SetInputs|function|void Cy_LPComp_SetInputs(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, cy_en_lpcomp_inputs_t inputP, cy_en_lpcomp_inputs_t inputN)
+DECL|Cy_LPComp_SetInterruptTriggerMode|function|void Cy_LPComp_SetInterruptTriggerMode(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, cy_en_lpcomp_int_t intType)
+DECL|Cy_LPComp_SetOutputMode|function|void Cy_LPComp_SetOutputMode(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, cy_en_lpcomp_out_t outType)
+DECL|Cy_LPComp_SetPower|function|void Cy_LPComp_SetPower(LPCOMP_Type* base, cy_en_lpcomp_channel_t channel, cy_en_lpcomp_pwr_t power)
+DECL|cy_lpcomp_context|variable|cy_lpcomp_context

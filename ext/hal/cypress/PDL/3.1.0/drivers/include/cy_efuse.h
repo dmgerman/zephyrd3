@@ -1,0 +1,12 @@
+DECL|CY_EFUSE_BAD_PARAM|enumerator|CY_EFUSE_BAD_PARAM = CY_EFUSE_ID | CY_PDL_STATUS_ERROR | 0x03UL, /**< One or more invalid parameters */
+DECL|CY_EFUSE_BITS_PER_BYTE|macro|CY_EFUSE_BITS_PER_BYTE
+DECL|CY_EFUSE_DRV_VERSION_MAJOR|macro|CY_EFUSE_DRV_VERSION_MAJOR
+DECL|CY_EFUSE_DRV_VERSION_MINOR|macro|CY_EFUSE_DRV_VERSION_MINOR
+DECL|CY_EFUSE_ERR_UNC|enumerator|CY_EFUSE_ERR_UNC = CY_EFUSE_ID | CY_PDL_STATUS_ERROR | 0xFFUL /**< Unknown error code. See Cy_EFUSE_GetExternalStatus() */
+DECL|CY_EFUSE_H|macro|CY_EFUSE_H
+DECL|CY_EFUSE_ID|macro|CY_EFUSE_ID
+DECL|CY_EFUSE_INVALID_FUSE_ADDR|enumerator|CY_EFUSE_INVALID_FUSE_ADDR = CY_EFUSE_ID | CY_PDL_STATUS_ERROR | 0x02UL, /**< Invalid eFuse address */
+DECL|CY_EFUSE_INVALID_PROTECTION|enumerator|CY_EFUSE_INVALID_PROTECTION = CY_EFUSE_ID | CY_PDL_STATUS_ERROR | 0x01UL, /**< Invalid access in the current protection state */
+DECL|CY_EFUSE_IPC_BUSY|enumerator|CY_EFUSE_IPC_BUSY = CY_EFUSE_ID | CY_PDL_STATUS_ERROR | 0x04UL, /**< The IPC structure is already locked by another process */
+DECL|CY_EFUSE_SUCCESS|enumerator|CY_EFUSE_SUCCESS = 0x00UL, /**< Success */
+DECL|cy_en_efuse_status_t|typedef|} cy_en_efuse_status_t;

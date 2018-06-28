@@ -1,0 +1,4 @@
+DECL|Cy_SysAnalog_Fast_External|variable|Cy_SysAnalog_Fast_External
+DECL|Cy_SysAnalog_Fast_Local|variable|Cy_SysAnalog_Fast_Local
+DECL|Cy_SysAnalog_Fast_SRSS|variable|Cy_SysAnalog_Fast_SRSS
+DECL|Cy_SysAnalog_Init|function|cy_en_sysanalog_status_t Cy_SysAnalog_Init(const cy_stc_sysanalog_config_t *config)

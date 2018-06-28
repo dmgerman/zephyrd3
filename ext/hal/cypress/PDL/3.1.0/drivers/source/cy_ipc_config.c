@@ -1,0 +1,4 @@
+DECL|CY_CYPIPE_DEFAULT_CONFIG|macro|CY_CYPIPE_DEFAULT_CONFIG
+DECL|Cy_IPC_SystemPipeInit|function|void Cy_IPC_SystemPipeInit(void)
+DECL|Cy_IPC_SystemPipeIsr|function|static void Cy_IPC_SystemPipeIsr(void)
+DECL|Cy_IPC_SystemSemaInit|function|void Cy_IPC_SystemSemaInit(void)

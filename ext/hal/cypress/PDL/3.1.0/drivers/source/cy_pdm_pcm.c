@@ -1,0 +1,5 @@
+DECL|Cy_PDM_PCM_DeInit|function|void Cy_PDM_PCM_DeInit(PDM_Type * base)
+DECL|Cy_PDM_PCM_DeepSleepCallback|function|cy_en_syspm_status_t Cy_PDM_PCM_DeepSleepCallback(cy_stc_syspm_callback_params_t * callbackParams)
+DECL|Cy_PDM_PCM_GetGain|function|cy_en_pdm_pcm_gain_t Cy_PDM_PCM_GetGain(PDM_Type const * base, cy_en_pdm_pcm_chan_select_t chan)
+DECL|Cy_PDM_PCM_Init|function|cy_en_pdm_pcm_status_t Cy_PDM_PCM_Init(PDM_Type * base, cy_stc_pdm_pcm_config_t const * config)
+DECL|Cy_PDM_PCM_SetGain|function|void Cy_PDM_PCM_SetGain(PDM_Type * base, cy_en_pdm_pcm_chan_select_t chan, cy_en_pdm_pcm_gain_t gain)

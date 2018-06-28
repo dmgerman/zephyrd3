@@ -1,0 +1,9 @@
+DECL|Cy_SysTick_Callbacks|variable|Cy_SysTick_Callbacks
+DECL|Cy_SysTick_Disable|function|void Cy_SysTick_Disable(void)
+DECL|Cy_SysTick_Enable|function|void Cy_SysTick_Enable(void)
+DECL|Cy_SysTick_GetCallback|function|Cy_SysTick_Callback Cy_SysTick_GetCallback(uint32_t number)
+DECL|Cy_SysTick_GetClockSource|function|cy_en_systick_clock_source_t Cy_SysTick_GetClockSource(void)
+DECL|Cy_SysTick_Init|function|void Cy_SysTick_Init(cy_en_systick_clock_source_t clockSource, uint32_t interval)
+DECL|Cy_SysTick_ServiceCallbacks|function|static void Cy_SysTick_ServiceCallbacks(void)
+DECL|Cy_SysTick_SetCallback|function|Cy_SysTick_Callback Cy_SysTick_SetCallback(uint32_t number, Cy_SysTick_Callback function)
+DECL|Cy_SysTick_SetClockSource|function|void Cy_SysTick_SetClockSource(cy_en_systick_clock_source_t clockSource)

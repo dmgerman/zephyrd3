@@ -1,0 +1,8 @@
+DECL|Cy_DMA_Channel_DeInit|function|void Cy_DMA_Channel_DeInit(DW_Type * base, uint32_t channel)
+DECL|Cy_DMA_Channel_Init|function|cy_en_dma_status_t Cy_DMA_Channel_Init(DW_Type * base, uint32_t channel, cy_stc_dma_channel_config_t const * channelConfig)
+DECL|Cy_DMA_Crc_Init|function|cy_en_dma_status_t Cy_DMA_Crc_Init(DW_Type * base, cy_stc_dma_crc_config_t const * crcConfig)
+DECL|Cy_DMA_Descriptor_DeInit|function|void Cy_DMA_Descriptor_DeInit(cy_stc_dma_descriptor_t * descriptor)
+DECL|Cy_DMA_Descriptor_GetNextDescriptor|function|cy_stc_dma_descriptor_t * Cy_DMA_Descriptor_GetNextDescriptor(cy_stc_dma_descriptor_t const * descriptor)
+DECL|Cy_DMA_Descriptor_Init|function|cy_en_dma_status_t Cy_DMA_Descriptor_Init(cy_stc_dma_descriptor_t * descriptor, const cy_stc_dma_descriptor_config_t * config)
+DECL|Cy_DMA_Descriptor_SetDescriptorType|function|void Cy_DMA_Descriptor_SetDescriptorType(cy_stc_dma_descriptor_t * descriptor, cy_en_dma_descriptor_type_t descriptorType)
+DECL|Cy_DMA_Descriptor_SetNextDescriptor|function|void Cy_DMA_Descriptor_SetNextDescriptor(cy_stc_dma_descriptor_t * descriptor, cy_stc_dma_descriptor_t const * nextDescriptor)

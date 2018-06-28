@@ -1,0 +1,3 @@
+DECL|cy_deviceIpBlockCfg1|variable|cy_deviceIpBlockCfg1
+DECL|cy_deviceIpBlockCfg2|variable|cy_deviceIpBlockCfg2
+DECL|cy_device|variable|cy_device

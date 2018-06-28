@@ -1,0 +1,14 @@
+DECL|CY_EFUSE_IPC_NOTIFY_STRUCT0|macro|CY_EFUSE_IPC_NOTIFY_STRUCT0
+DECL|CY_EFUSE_IPC_STRUCT|macro|CY_EFUSE_IPC_STRUCT
+DECL|CY_EFUSE_OPCODE_DATA_Msk|macro|CY_EFUSE_OPCODE_DATA_Msk
+DECL|CY_EFUSE_OPCODE_INV_ADDR|macro|CY_EFUSE_OPCODE_INV_ADDR
+DECL|CY_EFUSE_OPCODE_INV_PROT|macro|CY_EFUSE_OPCODE_INV_PROT
+DECL|CY_EFUSE_OPCODE_OFFSET_Pos|macro|CY_EFUSE_OPCODE_OFFSET_Pos
+DECL|CY_EFUSE_OPCODE_READ_FUSE_BYTE|macro|CY_EFUSE_OPCODE_READ_FUSE_BYTE
+DECL|CY_EFUSE_OPCODE_STS_Msk|macro|CY_EFUSE_OPCODE_STS_Msk
+DECL|CY_EFUSE_OPCODE_SUCCESS|macro|CY_EFUSE_OPCODE_SUCCESS
+DECL|Cy_EFUSE_GetEfuseBit|function|cy_en_efuse_status_t Cy_EFUSE_GetEfuseBit(uint32_t bitNum, bool *bitVal)
+DECL|Cy_EFUSE_GetEfuseByte|function|cy_en_efuse_status_t Cy_EFUSE_GetEfuseByte(uint32_t offset, uint8_t *byteVal)
+DECL|Cy_EFUSE_GetExternalStatus|function|uint32_t Cy_EFUSE_GetExternalStatus(void)
+DECL|ProcessOpcode|function|static cy_en_efuse_status_t ProcessOpcode(void)
+DECL|opcode|variable|opcode

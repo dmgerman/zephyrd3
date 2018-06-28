@@ -1,0 +1,7 @@
+DECL|Cy_SysInt_GetInterruptActive|function|cy_en_intr_t Cy_SysInt_GetInterruptActive(IRQn_Type intrSrc)
+DECL|Cy_SysInt_GetInterruptSource|function|cy_en_intr_t Cy_SysInt_GetInterruptSource(IRQn_Type intrSrc)
+DECL|Cy_SysInt_GetNvicConnection|function|IRQn_Type Cy_SysInt_GetNvicConnection(cy_en_intr_t devIntrSrc)
+DECL|Cy_SysInt_GetVector|function|cy_israddress Cy_SysInt_GetVector(IRQn_Type intrSrc)
+DECL|Cy_SysInt_Init|function|cy_en_sysint_status_t Cy_SysInt_Init(const cy_stc_sysint_t* config, cy_israddress userIsr)
+DECL|Cy_SysInt_SetInterruptSource|function|void Cy_SysInt_SetInterruptSource(IRQn_Type intrSrc, cy_en_intr_t devIntrSrc)
+DECL|Cy_SysInt_SetVector|function|cy_israddress Cy_SysInt_SetVector(IRQn_Type intrSrc, cy_israddress userIsr)

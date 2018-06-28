@@ -1,0 +1,25 @@
+DECL|CY_TCPWM_QUADDEC_CTRL_QUADDEC_MODE|macro|CY_TCPWM_QUADDEC_CTRL_QUADDEC_MODE
+DECL|CY_TCPWM_QUADDEC_H|macro|CY_TCPWM_QUADDEC_H
+DECL|CY_TCPWM_QUADDEC_STATUS_COUNTER_RUNNING|macro|CY_TCPWM_QUADDEC_STATUS_COUNTER_RUNNING
+DECL|CY_TCPWM_QUADDEC_STATUS_DOWN_COUNTING|macro|CY_TCPWM_QUADDEC_STATUS_DOWN_COUNTING
+DECL|CY_TCPWM_QUADDEC_STATUS_UP_COUNTING|macro|CY_TCPWM_QUADDEC_STATUS_UP_COUNTING
+DECL|CY_TCPWM_QUADDEC_X1|macro|CY_TCPWM_QUADDEC_X1
+DECL|CY_TCPWM_QUADDEC_X2|macro|CY_TCPWM_QUADDEC_X2
+DECL|CY_TCPWM_QUADDEC_X4|macro|CY_TCPWM_QUADDEC_X4
+DECL|Cy_TCPWM_QuadDec_Disable|function|__STATIC_INLINE void Cy_TCPWM_QuadDec_Disable(TCPWM_Type *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_Enable|function|__STATIC_INLINE void Cy_TCPWM_QuadDec_Enable(TCPWM_Type *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_GetCaptureBuf|function|__STATIC_INLINE uint32_t Cy_TCPWM_QuadDec_GetCaptureBuf(TCPWM_Type const *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_GetCapture|function|__STATIC_INLINE uint32_t Cy_TCPWM_QuadDec_GetCapture(TCPWM_Type const *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_GetCounter|function|__STATIC_INLINE uint32_t Cy_TCPWM_QuadDec_GetCounter(TCPWM_Type const *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_GetStatus|function|__STATIC_INLINE uint32_t Cy_TCPWM_QuadDec_GetStatus(TCPWM_Type const *base, uint32_t cntNum)
+DECL|Cy_TCPWM_QuadDec_SetCounter|function|__STATIC_INLINE void Cy_TCPWM_QuadDec_SetCounter(TCPWM_Type *base, uint32_t cntNum, uint32_t count)
+DECL|cy_stc_tcpwm_quaddec_config_t|typedef|}cy_stc_tcpwm_quaddec_config_t;
+DECL|cy_stc_tcpwm_quaddec_config|struct|typedef struct cy_stc_tcpwm_quaddec_config
+DECL|indexInputMode|member|uint32_t indexInputMode;
+DECL|indexInput|member|uint32_t indexInput;
+DECL|interruptSources|member|uint32_t interruptSources;
+DECL|phiAInput|member|uint32_t phiAInput;
+DECL|phiBInput|member|uint32_t phiBInput;
+DECL|resolution|member|uint32_t resolution;
+DECL|stopInputMode|member|uint32_t stopInputMode;
+DECL|stopInput|member|uint32_t stopInput;

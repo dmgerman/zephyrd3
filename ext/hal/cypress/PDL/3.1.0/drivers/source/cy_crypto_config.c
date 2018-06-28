@@ -1,0 +1,1 @@
+DECL|cryptoConfig|variable|cryptoConfig

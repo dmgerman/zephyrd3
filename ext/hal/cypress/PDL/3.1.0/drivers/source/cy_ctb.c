@@ -1,0 +1,33 @@
+DECL|Cy_CTB_CompGetConfig|function|uint32_t Cy_CTB_CompGetConfig(const CTBM_Type *base, cy_en_ctb_opamp_sel_t compNum)
+DECL|Cy_CTB_CompGetStatus|function|uint32_t Cy_CTB_CompGetStatus(const CTBM_Type *base, cy_en_ctb_opamp_sel_t compNum)
+DECL|Cy_CTB_CompSetConfig|function|void Cy_CTB_CompSetConfig(CTBM_Type *base, cy_en_ctb_opamp_sel_t compNum, cy_en_ctb_comp_level_t level, cy_en_ctb_comp_bypass_t bypass, cy_en_ctb_comp_hyst_t hyst)
+DECL|Cy_CTB_CompSetInterruptEdgeType|function|void Cy_CTB_CompSetInterruptEdgeType(CTBM_Type *base, cy_en_ctb_opamp_sel_t compNum, cy_en_ctb_comp_edge_t edge)
+DECL|Cy_CTB_DACSampleAndHold|function|void Cy_CTB_DACSampleAndHold(CTBM_Type *base, cy_en_ctb_sample_hold_mode_t mode)
+DECL|Cy_CTB_DeInit|function|cy_en_ctb_status_t Cy_CTB_DeInit(CTBM_Type *base, bool deInitRouting)
+DECL|Cy_CTB_FastInit|function|cy_en_ctb_status_t Cy_CTB_FastInit(CTBM_Type *base, const cy_stc_ctb_fast_config_oa0_t *config0, const cy_stc_ctb_fast_config_oa1_t *config1)
+DECL|Cy_CTB_Fast_Opamp0_Comp|variable|Cy_CTB_Fast_Opamp0_Comp
+DECL|Cy_CTB_Fast_Opamp0_Diffamp|variable|Cy_CTB_Fast_Opamp0_Diffamp
+DECL|Cy_CTB_Fast_Opamp0_Opamp10x|variable|Cy_CTB_Fast_Opamp0_Opamp10x
+DECL|Cy_CTB_Fast_Opamp0_Opamp1x|variable|Cy_CTB_Fast_Opamp0_Opamp1x
+DECL|Cy_CTB_Fast_Opamp0_Unused|variable|Cy_CTB_Fast_Opamp0_Unused
+DECL|Cy_CTB_Fast_Opamp0_Vdac_Out_SH|variable|Cy_CTB_Fast_Opamp0_Vdac_Out_SH
+DECL|Cy_CTB_Fast_Opamp0_Vdac_Out|variable|Cy_CTB_Fast_Opamp0_Vdac_Out
+DECL|Cy_CTB_Fast_Opamp1_Comp|variable|Cy_CTB_Fast_Opamp1_Comp
+DECL|Cy_CTB_Fast_Opamp1_Diffamp|variable|Cy_CTB_Fast_Opamp1_Diffamp
+DECL|Cy_CTB_Fast_Opamp1_Opamp10x|variable|Cy_CTB_Fast_Opamp1_Opamp10x
+DECL|Cy_CTB_Fast_Opamp1_Opamp1x|variable|Cy_CTB_Fast_Opamp1_Opamp1x
+DECL|Cy_CTB_Fast_Opamp1_Unused|variable|Cy_CTB_Fast_Opamp1_Unused
+DECL|Cy_CTB_Fast_Opamp1_Vdac_Ref_Aref|variable|Cy_CTB_Fast_Opamp1_Vdac_Ref_Aref
+DECL|Cy_CTB_Fast_Opamp1_Vdac_Ref_Pin5|variable|Cy_CTB_Fast_Opamp1_Vdac_Ref_Pin5
+DECL|Cy_CTB_GetAnalogSwitch|function|uint32_t Cy_CTB_GetAnalogSwitch(const CTBM_Type *base, cy_en_ctb_switch_register_sel_t switchSelect)
+DECL|Cy_CTB_Init|function|cy_en_ctb_status_t Cy_CTB_Init(CTBM_Type *base, const cy_stc_ctb_config_t *config)
+DECL|Cy_CTB_OpampGetOffset|function|uint32_t Cy_CTB_OpampGetOffset(const CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum)
+DECL|Cy_CTB_OpampGetSlope|function|uint32_t Cy_CTB_OpampGetSlope(const CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum)
+DECL|Cy_CTB_OpampInit|function|cy_en_ctb_status_t Cy_CTB_OpampInit(CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum, const cy_stc_ctb_opamp_config_t *config)
+DECL|Cy_CTB_OpampSetOffset|function|void Cy_CTB_OpampSetOffset(CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum, uint32_t trim)
+DECL|Cy_CTB_OpampSetSlope|function|void Cy_CTB_OpampSetSlope(CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum, uint32_t trim)
+DECL|Cy_CTB_SetAnalogSwitch|function|void Cy_CTB_SetAnalogSwitch(CTBM_Type *base, cy_en_ctb_switch_register_sel_t switchSelect, uint32_t switchMask, cy_en_ctb_switch_state_t state)
+DECL|Cy_CTB_SetCurrentMode|function|void Cy_CTB_SetCurrentMode(CTBM_Type *base, cy_en_ctb_current_mode_t currentMode)
+DECL|Cy_CTB_SetDeepSleepMode|function|void Cy_CTB_SetDeepSleepMode(CTBM_Type *base, cy_en_ctb_deep_sleep_t deepSleep)
+DECL|Cy_CTB_SetOutputMode|function|void Cy_CTB_SetOutputMode(CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum, cy_en_ctb_mode_t mode)
+DECL|Cy_CTB_SetPower|function|void Cy_CTB_SetPower(CTBM_Type *base, cy_en_ctb_opamp_sel_t opampNum, cy_en_ctb_power_t power, cy_en_ctb_pump_t pump)
