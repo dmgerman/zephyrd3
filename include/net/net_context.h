@@ -24,6 +24,7 @@ DECL|local|member|struct sockaddr_ptr local;
 DECL|net_app|member|void *net_app;
 DECL|net_context_cb_t|typedef|typedef void (*net_context_cb_t)(struct net_context *context, void *user_data);
 DECL|net_context_connect_cb_t|typedef|typedef void (*net_context_connect_cb_t)(struct net_context *context,
+DECL|net_context_create_ipv4|function|struct net_pkt *net_context_create_ipv4(struct net_context *context,struct net_pkt *pkt, const struct in_addr *src, const struct in_addr *dst)
 DECL|net_context_get_family|function|static inline sa_family_t net_context_get_family(struct net_context *context)
 DECL|net_context_get_iface|function|struct net_if *net_context_get_iface(struct net_context *context)
 DECL|net_context_get_ip_proto|function|enum net_ip_protocol net_context_get_ip_proto(struct net_context *context)
