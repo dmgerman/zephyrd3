@@ -32,6 +32,7 @@ DECL|server_notify_callback|function|static void server_notify_callback(struct c
 DECL|server_resource_1_get|function|static int server_resource_1_get(struct coap_resource *resource, struct coap_packet *request)
 DECL|server_resource_1_path|variable|server_resource_1_path
 DECL|server_resources|variable|server_resources
+DECL|test_block_2_size|function|static int test_block_2_size(void)
 DECL|test_block_size|function|static int test_block_size(void)
 DECL|test_build_empty_pdu|function|static int test_build_empty_pdu(void)
 DECL|test_build_simple_pdu|function|static int test_build_simple_pdu(void)
