@@ -35,14 +35,18 @@ DECL|length|member|u16_t length : LOG_MSG_HEXDUMP_LENGTH_BITS;
 DECL|level|member|u16_t level : 3; /*!< Severity. */
 DECL|log_msg_chunk_alloc|function|static inline union log_msg_chunk *log_msg_chunk_alloc(void)
 DECL|log_msg_chunk|union|union log_msg_chunk {
+DECL|log_msg_cont_data|union|union log_msg_cont_data {
 DECL|log_msg_cont|struct|struct log_msg_cont {
 DECL|log_msg_create_0|function|static inline struct log_msg *log_msg_create_0(const char *str)
 DECL|log_msg_create_1|function|static inline struct log_msg *log_msg_create_1(const char *str, u32_t arg1)
 DECL|log_msg_create_2|function|static inline struct log_msg *log_msg_create_2(const char *str, u32_t arg1, u32_t arg2)
 DECL|log_msg_create_3|function|static inline struct log_msg *log_msg_create_3(const char *str, u32_t arg1, u32_t arg2, u32_t arg3)
+DECL|log_msg_data|union|union log_msg_data {
 DECL|log_msg_domain_id_get|function|static inline u32_t log_msg_domain_id_get(struct log_msg *msg)
+DECL|log_msg_ext_head_data_data|union|union log_msg_ext_head_data_data {
 DECL|log_msg_ext_head_data|struct|struct log_msg_ext_head_data {
 DECL|log_msg_generic_hdr|struct|struct log_msg_generic_hdr {
+DECL|log_msg_hdr_params|union|union log_msg_hdr_params {
 DECL|log_msg_hdr|struct|struct log_msg_hdr {
 DECL|log_msg_head_data|union|union log_msg_head_data {
 DECL|log_msg_hexdump_hdr|struct|struct log_msg_hexdump_hdr {
