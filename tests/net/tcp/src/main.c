@@ -31,6 +31,7 @@ DECL|ipv6_hop_by_hop_ext_hdr|variable|ipv6_hop_by_hop_ext_hdr
 DECL|local_addr|member|const struct sockaddr *local_addr;
 DECL|local_port|member|u16_t local_port;
 DECL|main|function|void main(void)
+DECL|my_iface|variable|my_iface
 DECL|my_v4_addr|variable|my_v4_addr
 DECL|my_v4_inaddr|variable|my_v4_inaddr
 DECL|my_v6_addr|variable|my_v6_addr
@@ -43,6 +44,7 @@ DECL|net_tcp_dev_init|function|int net_tcp_dev_init(struct device *dev)
 DECL|net_tcp_if_api_peer|variable|net_tcp_if_api_peer
 DECL|net_tcp_if_api|variable|net_tcp_if_api
 DECL|net_tcp_iface_init|function|static void net_tcp_iface_init(struct net_if *iface)
+DECL|peer_iface|variable|peer_iface
 DECL|peer_v4_addr|variable|peer_v4_addr
 DECL|peer_v4_inaddr|variable|peer_v4_inaddr
 DECL|peer_v6_addr|variable|peer_v6_addr
