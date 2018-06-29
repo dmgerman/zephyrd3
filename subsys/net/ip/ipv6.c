@@ -74,10 +74,8 @@ DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struc
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
 DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
-DECL|net_ipv6_create_raw|function|struct net_pkt *net_ipv6_create_raw(struct net_pkt *pkt, const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, u8_t next_header)
-DECL|net_ipv6_create|function|struct net_pkt *net_ipv6_create(struct net_context *context,struct net_pkt *pkt, const struct in6_addr *src, const struct in6_addr *dst)
-DECL|net_ipv6_finalize_raw|function|int net_ipv6_finalize_raw(struct net_pkt *pkt, u8_t next_header)
-DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_context *context, struct net_pkt *pkt)
+DECL|net_ipv6_create|function|struct net_pkt *net_ipv6_create(struct net_pkt *pkt,const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, u8_t next_header_proto)
+DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_pkt *pkt, u8_t next_header_proto)
 DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx, u16_t *last_hdr_idx)
 DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)
 DECL|net_ipv6_get_nbr|function|struct net_nbr *net_ipv6_get_nbr(struct net_if *iface, u8_t idx)

@@ -14,6 +14,7 @@ DECL|net_context_accept|function|int net_context_accept(struct net_context *cont
 DECL|net_context_bind|function|int net_context_bind(struct net_context *context, const struct sockaddr *addr, socklen_t addrlen)
 DECL|net_context_connect|function|int net_context_connect(struct net_context *context,const struct sockaddr *addr, socklen_t addrlen, net_context_connect_cb_t cb, s32_t timeout,
 DECL|net_context_create_ipv4|function|struct net_pkt *net_context_create_ipv4(struct net_context *context,struct net_pkt *pkt, const struct in_addr *src, const struct in_addr *dst)
+DECL|net_context_create_ipv6|function|struct net_pkt *net_context_create_ipv6(struct net_context *context,struct net_pkt *pkt, const struct in6_addr *src, const struct in6_addr *dst)
 DECL|net_context_foreach|function|void net_context_foreach(net_context_cb_t cb, void *user_data)
 DECL|net_context_get_option|function|int net_context_get_option(struct net_context *context, enum net_context_option option, void *value, size_t *len)
 DECL|net_context_get|function|int net_context_get(sa_family_t family, enum net_sock_type type, enum net_ip_protocol ip_proto, struct net_context **context)
