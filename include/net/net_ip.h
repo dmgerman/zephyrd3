@@ -9,6 +9,9 @@ DECL|INET6_ADDRSTRLEN|macro|INET6_ADDRSTRLEN
 DECL|IPPROTO_ICMPV6|enumerator|IPPROTO_ICMPV6 = 58,
 DECL|IPPROTO_ICMP|enumerator|IPPROTO_ICMP = 1,
 DECL|IPPROTO_TCP|enumerator|IPPROTO_TCP = 6,
+DECL|IPPROTO_TLS_1_0|enumerator|IPPROTO_TLS_1_0 = 256,
+DECL|IPPROTO_TLS_1_1|enumerator|IPPROTO_TLS_1_1 = 257,
+DECL|IPPROTO_TLS_1_2|enumerator|IPPROTO_TLS_1_2 = 258,
 DECL|IPPROTO_UDP|enumerator|IPPROTO_UDP = 17,
 DECL|NET_ADDR_ANY_STATE|enumerator|NET_ADDR_ANY_STATE = -1,
 DECL|NET_ADDR_ANY|enumerator|NET_ADDR_ANY = 0,
@@ -110,6 +113,7 @@ DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_a
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
+DECL|net_ip_protocol_secure|enum|enum net_ip_protocol_secure {
 DECL|net_ip_protocol|enum|enum net_ip_protocol {
 DECL|net_ipaddr_copy|macro|net_ipaddr_copy
 DECL|net_ipv4_addr_cmp|function|static inline bool net_ipv4_addr_cmp(const struct in_addr *addr1, const struct in_addr *addr2)

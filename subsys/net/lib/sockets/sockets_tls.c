@@ -1,3 +1,15 @@
+DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|config|member|mbedtls_ssl_config config;
+DECL|context_lock|variable|context_lock
+DECL|is_used|member|bool is_used;
+DECL|ssl|member|mbedtls_ssl_context ssl;
+DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
+DECL|tls_contexts|variable|tls_contexts
+DECL|tls_context|struct|struct tls_context {
+DECL|tls_init|function|static int tls_init(struct device *unused)
+DECL|tls_release|function|static int tls_release(struct tls_context *tls)
+DECL|tls_version|member|enum net_ip_protocol_secure tls_version;
 DECL|ztls_accept|function|int ztls_accept(int sock, struct sockaddr *addr, socklen_t *addrlen)
 DECL|ztls_bind|function|int ztls_bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|ztls_close|function|int ztls_close(int sock)

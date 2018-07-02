@@ -56,5 +56,6 @@ DECL|refcount|member|atomic_t refcount;
 DECL|remote|member|struct sockaddr remote;
 DECL|send_cb|member|net_context_send_cb_t send_cb;
 DECL|tcp|member|struct net_tcp *tcp;
+DECL|tls|member|struct tls_context *tls;
 DECL|tx_slab|member|net_pkt_get_slab_func_t tx_slab;
 DECL|user_data|member|void *user_data;
