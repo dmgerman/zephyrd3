@@ -1,5 +1,6 @@
 DECL|_disable_region|function|static inline void _disable_region(u32_t r_index)
 DECL|_get_num_regions|function|static inline u8_t _get_num_regions(void)
+DECL|_get_region_attr_by_conf|function|static inline u32_t _get_region_attr_by_conf(u32_t attr, u32_t size)
 DECL|_get_region_attr_by_type|function|static inline u32_t _get_region_attr_by_type(u32_t type, u32_t size)
 DECL|_get_region_attr|function|static inline u32_t _get_region_attr(u32_t xn, u32_t ap, u32_t tex, u32_t c, u32_t b, u32_t s, u32_t srd, u32_t size)
 DECL|_get_region_index_by_type|function|static inline u32_t _get_region_index_by_type(u32_t type)
