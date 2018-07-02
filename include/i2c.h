@@ -30,12 +30,12 @@ DECL|flags|member|u8_t flags;
 DECL|i2c_addr|member|u16_t i2c_addr;
 DECL|i2c_api_configure_t|typedef|typedef int (*i2c_api_configure_t)(struct device *dev,
 DECL|i2c_api_full_io_t|typedef|typedef int (*i2c_api_full_io_t)(struct device *dev,
-DECL|i2c_burst_read16|function|static inline int i2c_burst_read16(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u8_t num_bytes)
-DECL|i2c_burst_read_addr|function|static inline int i2c_burst_read_addr(struct device *dev, u16_t dev_addr, u8_t *start_addr, const u8_t addr_size, u8_t *buf, u8_t num_bytes)
-DECL|i2c_burst_read|function|static inline int i2c_burst_read(struct device *dev, u16_t dev_addr, u8_t start_addr, u8_t *buf, u8_t num_bytes)
-DECL|i2c_burst_write16|function|static inline int i2c_burst_write16(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u8_t num_bytes)
-DECL|i2c_burst_write_addr|function|static inline int i2c_burst_write_addr(struct device *dev, u16_t dev_addr, u8_t *start_addr, const u8_t addr_size, u8_t *buf, u8_t num_bytes)
-DECL|i2c_burst_write|function|static inline int i2c_burst_write(struct device *dev, u16_t dev_addr, u8_t start_addr, u8_t *buf, u8_t num_bytes)
+DECL|i2c_burst_read16|function|static inline int i2c_burst_read16(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u32_t num_bytes)
+DECL|i2c_burst_read_addr|function|static inline int i2c_burst_read_addr(struct device *dev, u16_t dev_addr, u8_t *start_addr, const u8_t addr_size, u8_t *buf, u32_t num_bytes)
+DECL|i2c_burst_read|function|static inline int i2c_burst_read(struct device *dev, u16_t dev_addr, u8_t start_addr, u8_t *buf, u32_t num_bytes)
+DECL|i2c_burst_write16|function|static inline int i2c_burst_write16(struct device *dev, u16_t dev_addr, u16_t start_addr, u8_t *buf, u32_t num_bytes)
+DECL|i2c_burst_write_addr|function|static inline int i2c_burst_write_addr(struct device *dev, u16_t dev_addr, u8_t *start_addr, const u8_t addr_size, u8_t *buf, u32_t num_bytes)
+DECL|i2c_burst_write|function|static inline int i2c_burst_write(struct device *dev, u16_t dev_addr, u8_t start_addr, u8_t *buf, u32_t num_bytes)
 DECL|i2c_client_config|struct|struct i2c_client_config {
 DECL|i2c_driver_api|struct|struct i2c_driver_api {
 DECL|i2c_master|member|char *i2c_master;
