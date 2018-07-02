@@ -6,7 +6,7 @@ DECL|_get_region_index_by_type|function|static inline u32_t _get_region_index_by
 DECL|_is_enabled_region|function|static inline int _is_enabled_region(u32_t r_index)
 DECL|_is_in_region|function|static inline int _is_in_region(u32_t r_index, u32_t start, u32_t size)
 DECL|_is_user_accessible_region|function|static inline int _is_user_accessible_region(u32_t r_index, int write)
-DECL|_region_init|function|static void _region_init(u32_t index, u32_t region_addr, u32_t region_attr)
+DECL|_region_init|function|static void _region_init(u32_t index, struct arm_mpu_region *region_conf)
 DECL|_size_to_mpu_rasr_size|function|static inline u32_t _size_to_mpu_rasr_size(u32_t size)
 DECL|arm_core_mpu_buffer_validate|function|int arm_core_mpu_buffer_validate(void *addr, size_t size, int write)
 DECL|arm_core_mpu_configure_mem_domain|function|void arm_core_mpu_configure_mem_domain(struct k_mem_domain *mem_domain)
