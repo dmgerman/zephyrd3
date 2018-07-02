@@ -1,0 +1,11 @@
+DECL|MPU_USER_READ_ACCESSIBLE_Msk|macro|MPU_USER_READ_ACCESSIBLE_Msk
+DECL|_get_mpu_ram_region_attr|function|static inline void _get_mpu_ram_region_attr(arm_mpu_region_attr_t *p_attr,u32_t ap, u32_t base, u32_t size)
+DECL|_get_ram_region_attr_by_conf|function|static inline void _get_ram_region_attr_by_conf(arm_mpu_region_attr_t *p_attr,u32_t attr, u32_t base, u32_t size)
+DECL|_get_region_ap|function|static inline u32_t _get_region_ap(u32_t r_index)
+DECL|_get_region_attr|function|static inline u32_t _get_region_attr(u32_t xn, u32_t ap, u32_t tex, u32_t c, u32_t b, u32_t s, u32_t srd, u32_t region_size)
+DECL|_is_enabled_region|function|static inline int _is_enabled_region(u32_t r_index)
+DECL|_is_in_region|function|static inline int _is_in_region(u32_t r_index, u32_t start, u32_t size)
+DECL|_is_user_accessible_region|function|static inline int _is_user_accessible_region(u32_t r_index, int write)
+DECL|_mpu_buffer_validate|function|static inline int _mpu_buffer_validate(void *addr, size_t size, int write)
+DECL|_region_init|function|static void _region_init(u32_t index, struct arm_mpu_region *region_conf)
+DECL|_size_to_mpu_rasr_size|function|static inline u32_t _size_to_mpu_rasr_size(u32_t size)
