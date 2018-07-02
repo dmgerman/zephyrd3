@@ -5,4 +5,3 @@ DECL|net_ipv4_create|function|struct net_pkt *net_ipv4_create(struct net_pkt *pk
 DECL|net_ipv4_finalize|function|int net_ipv4_finalize(struct net_pkt *pkt, u8_t next_header_proto)
 DECL|net_ipv4_process_pkt|function|enum net_verdict net_ipv4_process_pkt(struct net_pkt *pkt)
 DECL|net_ipv4_unspecified_address|function|const struct in_addr *net_ipv4_unspecified_address(void)
-DECL|process_icmpv4_pkt|function|static inline enum net_verdict process_icmpv4_pkt(struct net_pkt *pkt, struct net_ipv4_hdr *ipv4)
