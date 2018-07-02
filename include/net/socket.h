@@ -29,6 +29,7 @@ DECL|close|function|static inline int close(int sock)
 DECL|connect|function|static inline int connect(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|events|member|short events;
 DECL|fcntl|macro|fcntl
+DECL|fcntl|macro|fcntl
 DECL|fd|member|int fd;
 DECL|freeaddrinfo|function|static inline void freeaddrinfo(struct zsock_addrinfo *ai)
 DECL|getaddrinfo|function|static inline int getaddrinfo(const char *host, const char *service, const struct zsock_addrinfo *hints, struct zsock_addrinfo **res)
