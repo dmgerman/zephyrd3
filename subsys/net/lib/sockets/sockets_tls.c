@@ -7,6 +7,9 @@ DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
 DECL|tls_contexts|variable|tls_contexts
 DECL|tls_context|struct|struct tls_context {
+DECL|tls_ctr_drbg|variable|tls_ctr_drbg
+DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned char *buf, size_t len)
+DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned char *buf, size_t len)
 DECL|tls_init|function|static int tls_init(struct device *unused)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
 DECL|tls_version|member|enum net_ip_protocol_secure tls_version;
