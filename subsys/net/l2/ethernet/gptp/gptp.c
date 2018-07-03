@@ -3,6 +3,7 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|PRINT_INFO|macro|PRINT_INFO
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cb|member|gptp_port_cb_t cb;
+DECL|disable_port|function|static void disable_port(int port)
 DECL|gptp_add_port|function|static void gptp_add_port(struct net_if *iface, void *user_data)
 DECL|gptp_compute_clock_identity|function|static void gptp_compute_clock_identity(int port)
 DECL|gptp_domain|variable|gptp_domain
@@ -26,9 +27,20 @@ DECL|gptp_update_announce_interval|function|void gptp_update_announce_interval(i
 DECL|gptp_update_pdelay_req_interval|function|void gptp_update_pdelay_req_interval(int port, s8_t log_val)
 DECL|gptp_update_sync_interval|function|void gptp_update_sync_interval(int port, s8_t log_val)
 DECL|gptp_uscaled_ns_to_timer_ms|function|s32_t gptp_uscaled_ns_to_timer_ms(struct gptp_uscaled_ns *usns)
+DECL|iface|member|struct net_if *iface;
+DECL|init_ports|function|static void init_ports(void)
 DECL|net_gptp_init|function|void net_gptp_init(void)
 DECL|net_gptp_recv|function|enum net_verdict net_gptp_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|port_user_data|struct|struct port_user_data {
+DECL|setup_vlan_events_listener|function|static void setup_vlan_events_listener(void)
+DECL|tid|variable|tid
 DECL|timer_get_remaining_and_stop|function|static s32_t timer_get_remaining_and_stop(struct k_timer *timer)
 DECL|update_itv|function|static s32_t update_itv(struct gptp_uscaled_ns *itv, s8_t *cur_log_itv, s8_t *ini_log_itv, s8_t new_log_itv, s8_t correction_log_itv)
 DECL|user_data|member|void *user_data;
+DECL|vlan_cb|variable|vlan_cb
+DECL|vlan_disabled|function|static void vlan_disabled(struct k_work *work)
+DECL|vlan_enabled|function|static void vlan_enabled(struct k_work *work)
+DECL|vlan_event_handler|function|static void vlan_event_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
+DECL|vlan_work|struct|struct vlan_work {
+DECL|vlan|variable|vlan
+DECL|work|member|struct k_work work;

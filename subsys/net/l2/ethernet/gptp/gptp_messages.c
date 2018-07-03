@@ -24,6 +24,7 @@ DECL|gptp_send_pdelay_resp|function|void gptp_send_pdelay_resp(int port, struct 
 DECL|gptp_send_sync|function|void gptp_send_sync(int port, struct net_pkt *pkt)
 DECL|gptp_sync_timestamp_callback|function|static void gptp_sync_timestamp_callback(struct net_pkt *pkt)
 DECL|pdelay_response_timestamp_cb|variable|pdelay_response_timestamp_cb
+DECL|setup_ethernet_frame|function|static struct net_buf *setup_ethernet_frame(struct net_pkt *pkt, struct net_if *iface)
 DECL|sync_cb_registered|variable|sync_cb_registered
 DECL|sync_timestamp_cb|variable|sync_timestamp_cb
 DECL|ts_cb_registered|variable|ts_cb_registered
