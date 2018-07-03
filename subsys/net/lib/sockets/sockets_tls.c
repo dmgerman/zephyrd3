@@ -8,6 +8,7 @@ DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
 DECL|tls_contexts|variable|tls_contexts
 DECL|tls_context|struct|struct tls_context {
 DECL|tls_ctr_drbg|variable|tls_ctr_drbg
+DECL|tls_debug|function|static void tls_debug(void *ctx, int level, const char *file, int line, const char *str)
 DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned char *buf, size_t len)
 DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned char *buf, size_t len)
 DECL|tls_init|function|static int tls_init(struct device *unused)
