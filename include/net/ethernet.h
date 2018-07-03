@@ -53,6 +53,7 @@ DECL|net_eth_addr|struct|struct net_eth_addr {
 DECL|net_eth_get_hw_capabilities|function|enum ethernet_hw_caps net_eth_get_hw_capabilities(struct net_if *iface)
 DECL|net_eth_get_ptp_port|function|static inline int net_eth_get_ptp_port(struct net_if *iface)
 DECL|net_eth_get_vlan_iface|function|struct net_if *net_eth_get_vlan_iface(struct net_if *iface, u16_t tag)
+DECL|net_eth_get_vlan_status|function|static inline bool net_eth_get_vlan_status(struct net_if *iface)
 DECL|net_eth_get_vlan_tag|function|static inline u16_t net_eth_get_vlan_tag(struct net_if *iface)
 DECL|net_eth_hdr|struct|struct net_eth_hdr {
 DECL|net_eth_is_addr_broadcast|function|static inline bool net_eth_is_addr_broadcast(struct net_eth_addr *addr)
