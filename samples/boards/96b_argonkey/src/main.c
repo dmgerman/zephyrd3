@@ -1,3 +1,5 @@
+DECL|DELAY_TIME|macro|DELAY_TIME
+DECL|NUM_LEDS|macro|NUM_LEDS
 DECL|WHOAMI_ALT_REG|macro|WHOAMI_ALT_REG
 DECL|WHOAMI_REG|macro|WHOAMI_REG
 DECL|lsm6dsl_trig_cnt|variable|lsm6dsl_trig_cnt
