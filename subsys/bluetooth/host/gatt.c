@@ -22,7 +22,7 @@ DECL|bt_gatt_attr_read_service|function|ssize_t bt_gatt_attr_read_service(struct
 DECL|bt_gatt_attr_read|function|ssize_t bt_gatt_attr_read(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t buf_len, u16_t offset, const void *value, u16_t value_len)
 DECL|bt_gatt_attr_write_ccc|function|ssize_t bt_gatt_attr_write_ccc(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|bt_gatt_cancel|function|void bt_gatt_cancel(struct bt_conn *conn, void *params)
-DECL|bt_gatt_clear_ccc|function|int bt_gatt_clear_ccc(const bt_addr_le_t *addr)
+DECL|bt_gatt_clear_ccc|function|int bt_gatt_clear_ccc(u8_t id, const bt_addr_le_t *addr)
 DECL|bt_gatt_connected|function|void bt_gatt_connected(struct bt_conn *conn)
 DECL|bt_gatt_disconnected|function|void bt_gatt_disconnected(struct bt_conn *conn)
 DECL|bt_gatt_discover|function|int bt_gatt_discover(struct bt_conn *conn, struct bt_gatt_discover_params *params)
@@ -36,7 +36,7 @@ DECL|bt_gatt_notify|function|int bt_gatt_notify(struct bt_conn *conn, const stru
 DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|bt_gatt_service_register|function|int bt_gatt_service_register(struct bt_gatt_service *svc)
 DECL|bt_gatt_service_unregister|function|int bt_gatt_service_unregister(struct bt_gatt_service *svc)
-DECL|bt_gatt_store_ccc|function|int bt_gatt_store_ccc(const bt_addr_le_t *addr)
+DECL|bt_gatt_store_ccc|function|int bt_gatt_store_ccc(u8_t id, const bt_addr_le_t *addr)
 DECL|bt_gatt_subscribe|function|int bt_gatt_subscribe(struct bt_conn *conn, struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_unsubscribe|function|int bt_gatt_unsubscribe(struct bt_conn *conn,struct bt_gatt_subscribe_params *params)
 DECL|bt_gatt_write_without_response|function|int bt_gatt_write_without_response(struct bt_conn *conn, u16_t handle, const void *data, u16_t length, bool sign)
@@ -99,6 +99,7 @@ DECL|gatt_write_ccc|function|static int gatt_write_ccc(struct bt_conn *conn, u16
 DECL|gatt_write_rsp|function|static void gatt_write_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|get_service_handles|function|static u8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|handle|member|u16_t handle;
+DECL|id|member|u8_t id;
 DECL|len|member|u16_t len;
 DECL|notify_cb|function|static u8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {

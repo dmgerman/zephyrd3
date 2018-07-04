@@ -28,6 +28,7 @@ DECL|LE_CONN_LATENCY|macro|LE_CONN_LATENCY
 DECL|LE_CONN_TIMEOUT|macro|LE_CONN_TIMEOUT
 DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
 DECL|LMP_FEAT_PAGES_COUNT|macro|LMP_FEAT_PAGES_COUNT
+DECL|adv_id|member|u8_t adv_id;
 DECL|br|member|struct bt_dev_br br;
 DECL|bt_dev_br|struct|struct bt_dev_br {
 DECL|bt_dev_le|struct|struct bt_dev_le {
@@ -39,9 +40,10 @@ DECL|features|member|u8_t features[8];
 DECL|features|member|u8_t features[LMP_FEAT_PAGES_COUNT][8];
 DECL|hci_revision|member|u16_t hci_revision;
 DECL|hci_version|member|u8_t hci_version;
-DECL|id_addr|member|bt_addr_le_t id_addr;
+DECL|id_addr|member|bt_addr_le_t id_addr[CONFIG_BT_ID_MAX];
+DECL|id_count|member|u8_t id_count;
 DECL|init|member|struct k_work init;
-DECL|irk|member|u8_t irk[16];
+DECL|irk|member|u8_t irk[CONFIG_BT_ID_MAX][16];
 DECL|le|member|struct bt_dev_le le;
 DECL|lmp_subversion|member|u16_t lmp_subversion;
 DECL|lmp_version|member|u8_t lmp_version;

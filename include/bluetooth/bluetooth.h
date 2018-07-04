@@ -2,6 +2,7 @@ DECL|BT_ADDR_LE_STR_LEN|macro|BT_ADDR_LE_STR_LEN
 DECL|BT_ADDR_STR_LEN|macro|BT_ADDR_STR_LEN
 DECL|BT_DATA_BYTES|macro|BT_DATA_BYTES
 DECL|BT_DATA|macro|BT_DATA
+DECL|BT_ID_DEFAULT|macro|BT_ID_DEFAULT
 DECL|BT_LE_ADV_CONN_NAME|macro|BT_LE_ADV_CONN_NAME
 DECL|BT_LE_ADV_CONN|macro|BT_LE_ADV_CONN
 DECL|BT_LE_ADV_NCONN_NAME|macro|BT_LE_ADV_NCONN_NAME
@@ -37,6 +38,7 @@ DECL|data_len|member|u8_t data_len;
 DECL|data|member|const u8_t *data;
 DECL|eir|member|u8_t eir[240];
 DECL|filter_dup|member|u8_t filter_dup;
+DECL|id|member|u8_t id;
 DECL|interval_max|member|u16_t interval_max;
 DECL|interval_min|member|u16_t interval_min;
 DECL|interval|member|u16_t interval;

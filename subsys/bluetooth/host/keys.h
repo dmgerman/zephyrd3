@@ -27,6 +27,7 @@ DECL|ediv|member|u8_t ediv[2];
 DECL|enc_size|member|u8_t enc_size;
 DECL|flags|member|u8_t flags;
 DECL|flags|member|u8_t flags;
+DECL|id|member|u8_t id;
 DECL|irk|member|struct bt_irk irk;
 DECL|keys|member|u16_t keys;
 DECL|local_csrk|member|struct bt_csrk local_csrk;

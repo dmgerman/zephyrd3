@@ -32,6 +32,7 @@ DECL|disconnected|member|void (*disconnected)(struct bt_conn *conn, u8_t reason)
 DECL|dst|member|const bt_addr_le_t *dst; /** Destination Address */
 DECL|dst|member|const bt_addr_t *dst; /** Destination BR/EDR address */
 DECL|identity_resolved|member|void (*identity_resolved)(struct bt_conn *conn,
+DECL|id|member|u8_t id;
 DECL|interval_max|member|u16_t interval_max;
 DECL|interval_min|member|u16_t interval_min;
 DECL|interval|member|u16_t interval; /** Connection interval */

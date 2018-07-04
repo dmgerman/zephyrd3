@@ -101,6 +101,7 @@ DECL|handles|member|u16_t *handles;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
 DECL|handle|member|u16_t handle;
+DECL|id|member|u8_t id;
 DECL|length|member|u16_t length;
 DECL|len|member|u16_t len;
 DECL|name_space|member|u8_t name_space;

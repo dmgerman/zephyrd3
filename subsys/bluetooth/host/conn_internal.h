@@ -35,6 +35,7 @@ DECL|err|member|u8_t err;
 DECL|features|member|u8_t features[8];
 DECL|features|member|u8_t features[LMP_MAX_PAGES][8];
 DECL|handle|member|u16_t handle;
+DECL|id|member|u8_t id;
 DECL|init_addr|member|bt_addr_le_t init_addr;
 DECL|interval_max|member|u16_t interval_max;
 DECL|interval_min|member|u16_t interval_min;
