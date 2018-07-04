@@ -9,7 +9,12 @@ DECL|K_MEM_PARTITION_P_RW_U_NA|macro|K_MEM_PARTITION_P_RW_U_NA
 DECL|K_MEM_PARTITION_P_RW_U_RO|macro|K_MEM_PARTITION_P_RW_U_RO
 DECL|K_MEM_PARTITION_P_RW_U_RW|macro|K_MEM_PARTITION_P_RW_U_RW
 DECL|K_MEM_PARTITION_P_RX_U_RX|macro|K_MEM_PARTITION_P_RX_U_RX
+DECL|MPU_REGION_ENTRY|macro|MPU_REGION_ENTRY
 DECL|_ARM_MPU_H_|macro|_ARM_MPU_H_
 DECL|arm_mpu_config|struct|struct arm_mpu_config {
+DECL|arm_mpu_region|struct|struct arm_mpu_region {
+DECL|attr|member|arm_mpu_region_attr_t attr;
+DECL|base|member|u32_t base;
 DECL|mpu_regions|member|struct arm_mpu_region *mpu_regions;
+DECL|name|member|const char *name;
 DECL|num_regions|member|u32_t num_regions;
