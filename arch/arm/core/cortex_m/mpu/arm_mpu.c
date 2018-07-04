@@ -1,10 +1,11 @@
 DECL|MPU_USER_READ_ACCESSIBLE_Msk|macro|MPU_USER_READ_ACCESSIBLE_Msk
 DECL|_disable_region|function|static inline void _disable_region(u32_t r_index)
+DECL|_get_mpu_ram_region_attr|function|static inline void _get_mpu_ram_region_attr(arm_mpu_region_attr_t *p_attr,u32_t ap, u32_t base, u32_t size)
 DECL|_get_num_regions|function|static inline u8_t _get_num_regions(void)
 DECL|_get_region_ap|function|static inline u32_t _get_region_ap(u32_t r_index)
 DECL|_get_region_attr_by_conf|function|static inline u32_t _get_region_attr_by_conf(u32_t attr, u32_t size)
-DECL|_get_region_attr_by_type|function|static inline u32_t _get_region_attr_by_type(u32_t type, u32_t size)
-DECL|_get_region_attr|function|static inline u32_t _get_region_attr(u32_t xn, u32_t ap, u32_t tex, u32_t c, u32_t b, u32_t s, u32_t srd, u32_t size)
+DECL|_get_region_attr_by_type|function|static inline int _get_region_attr_by_type(arm_mpu_region_attr_t *p_attr,u32_t type, u32_t base, u32_t size)
+DECL|_get_region_attr|function|static inline u32_t _get_region_attr(u32_t xn, u32_t ap, u32_t tex, u32_t c, u32_t b, u32_t s, u32_t srd, u32_t region_size)
 DECL|_get_region_index_by_type|function|static inline u32_t _get_region_index_by_type(u32_t type)
 DECL|_is_enabled_region|function|static inline int _is_enabled_region(u32_t r_index)
 DECL|_is_in_region|function|static inline int _is_in_region(u32_t r_index, u32_t start, u32_t size)
