@@ -79,7 +79,10 @@ DECL|root_models|variable|root_models
 DECL|s0_models|variable|s0_models
 DECL|sqrt|function|static float sqrt(float square)
 DECL|state_binding|function|static void state_binding(u8_t lightness, u8_t temperature)
+DECL|vnd_get|function|static void vnd_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|vnd_models|variable|vnd_models
-DECL|vnd_msg_handler|function|static void vnd_msg_handler(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|vnd_ops|variable|vnd_ops
+DECL|vnd_set_unack|function|static void vnd_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|vnd_set|function|static void vnd_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|vnd_status|function|static void vnd_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|vnd_user_data|variable|vnd_user_data

@@ -49,6 +49,7 @@ DECL|onoff|member|u8_t onoff;
 DECL|onpowerup|member|u8_t onpowerup;
 DECL|previous|member|int previous;
 DECL|previous|member|u8_t previous;
+DECL|response|member|u32_t response;
 DECL|status_code|member|u8_t status_code;
 DECL|status_code|member|u8_t status_code;
 DECL|temp_def|member|u16_t temp_def;
