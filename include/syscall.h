@@ -11,6 +11,7 @@ DECL|_syscall_invoke8|function|static inline u32_t _syscall_invoke8(u32_t arg1, 
 DECL|_syscall_invoke9|function|static inline u32_t _syscall_invoke9(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, u32_t arg7, u32_t arg8, u32_t arg9, u32_t call_id)
 DECL|_syscall_ret64_invoke0|function|static inline u64_t _syscall_ret64_invoke0(u32_t call_id)
 DECL|_syscall_ret64_invoke1|function|static inline u64_t _syscall_ret64_invoke1(u32_t arg1, u32_t call_id)
+DECL|_syscall_ret64_invoke2|function|static inline u64_t _syscall_ret64_invoke2(u32_t arg1, u32_t arg2, u32_t call_id)
 DECL|arg10|member|u32_t arg10;
 DECL|arg6|member|u32_t arg6;
 DECL|arg6|member|u32_t arg6;
