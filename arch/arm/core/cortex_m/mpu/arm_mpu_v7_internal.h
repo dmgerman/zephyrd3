@@ -7,5 +7,6 @@ DECL|_is_enabled_region|function|static inline int _is_enabled_region(u32_t r_in
 DECL|_is_in_region|function|static inline int _is_in_region(u32_t r_index, u32_t start, u32_t size)
 DECL|_is_user_accessible_region|function|static inline int _is_user_accessible_region(u32_t r_index, int write)
 DECL|_mpu_buffer_validate|function|static inline int _mpu_buffer_validate(void *addr, size_t size, int write)
+DECL|_mpu_init|function|static void _mpu_init(void)
 DECL|_region_init|function|static void _region_init(u32_t index, struct arm_mpu_region *region_conf)
 DECL|_size_to_mpu_rasr_size|function|static inline u32_t _size_to_mpu_rasr_size(u32_t size)
