@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|check_ip_addr|function|static inline int check_ip_addr(struct net_pkt *pkt)
 DECL|check_ip_addr|macro|check_ip_addr
 DECL|init_rx_queues|function|static void init_rx_queues(void)

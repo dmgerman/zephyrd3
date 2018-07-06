@@ -1,7 +1,7 @@
 DECL|CONFIG_NET_GPTP_STACK_SIZE|macro|CONFIG_NET_GPTP_STACK_SIZE
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PRINT_INFO|macro|PRINT_INFO
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cb|member|gptp_port_cb_t cb;
 DECL|disable_port|function|static void disable_port(int port)
 DECL|gptp_add_port|function|static void gptp_add_port(struct net_if *iface, void *user_data)

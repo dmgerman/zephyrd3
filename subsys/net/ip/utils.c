@@ -1,6 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NBUFS|macro|NBUFS
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|calc_chksum_pkt|function|static inline u16_t calc_chksum_pkt(u16_t sum, struct net_pkt *pkt, u16_t upper_layer_len)
 DECL|calc_chksum|function|static u16_t calc_chksum(u16_t sum, const u8_t *ptr, u16_t len)
 DECL|convert_port|function|static bool convert_port(const char *buf, u16_t *port)

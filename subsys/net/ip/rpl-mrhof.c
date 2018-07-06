@@ -1,10 +1,10 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MRHOF_ETX_ALPHA|macro|MRHOF_ETX_ALPHA
 DECL|MRHOF_ETX_SCALE|macro|MRHOF_ETX_SCALE
 DECL|MRHOF_MAX_LINK_METRIC|macro|MRHOF_MAX_LINK_METRIC
 DECL|MRHOF_MAX_PATH_COST|macro|MRHOF_MAX_PATH_COST
 DECL|MRHOF_PARENT_SWITCH_THRESHOLD_DIV|macro|MRHOF_PARENT_SWITCH_THRESHOLD_DIV
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|calculate_path_metric|function|static u16_t calculate_path_metric(struct net_rpl_parent *parent)
 DECL|net_rpl_mrhof_best_dag|function|static struct net_rpl_dag *net_rpl_mrhof_best_dag(struct net_rpl_dag *dag1, struct net_rpl_dag *dag2)
 DECL|net_rpl_mrhof_best_dag|variable|net_rpl_mrhof_best_dag

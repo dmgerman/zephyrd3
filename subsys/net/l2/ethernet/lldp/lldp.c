@@ -1,6 +1,6 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|cb|variable|cb
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|iface_event_handler|function|static void iface_event_handler(struct net_mgmt_event_callback *cb,u32_t mgmt_event, struct net_if *iface)

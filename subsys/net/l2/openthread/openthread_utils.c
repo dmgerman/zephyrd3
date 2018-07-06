@@ -1,6 +1,5 @@
-DECL|NET_DOMAIN|macro|NET_DOMAIN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|add_ipv6_addr_to_ot|function|void add_ipv6_addr_to_ot(struct openthread_context *context)
 DECL|add_ipv6_addr_to_zephyr|function|void add_ipv6_addr_to_zephyr(struct openthread_context *context)
 DECL|add_ipv6_maddr_to_ot|function|void add_ipv6_maddr_to_ot(struct openthread_context *context)

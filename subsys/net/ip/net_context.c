@@ -1,7 +1,7 @@
 DECL|EPFNOSUPPORT|macro|EPFNOSUPPORT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|NET_MAX_CONTEXT|macro|NET_MAX_CONTEXT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|bind_default|function|static int bind_default(struct net_context *context)
 DECL|check_used_port|function|static int check_used_port(enum net_ip_protocol ip_proto, u16_t local_port, const struct sockaddr *local_addr)
 DECL|contexts_lock|variable|contexts_lock

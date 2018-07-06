@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|gptp_md_compute_pdelay_rate_ratio|function|static void gptp_md_compute_pdelay_rate_ratio(int port)
 DECL|gptp_md_compute_prop_time|function|static void gptp_md_compute_prop_time(int port)
 DECL|gptp_md_follow_up_prepare|function|static void gptp_md_follow_up_prepare(struct net_pkt *pkt, struct gptp_md_sync_info *sync_send, int port_number)

@@ -1,6 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|NET_ROUTE_EXTRA_DATA_SIZE|macro|NET_ROUTE_EXTRA_DATA_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
 DECL|get_nexthop_nbr|function|static inline struct net_nbr *get_nexthop_nbr(struct net_nbr *start, int idx)
 DECL|get_nexthop_route|function|static struct net_nbr *get_nexthop_route(void)
@@ -21,7 +21,6 @@ DECL|net_route_get_info|function|bool net_route_get_info(struct net_if *iface,st
 DECL|net_route_get_nbr|function|struct net_nbr *net_route_get_nbr(struct net_route_entry *route)
 DECL|net_route_get_nexthop|function|struct in6_addr *net_route_get_nexthop(struct net_route_entry *route)
 DECL|net_route_info|macro|net_route_info
-DECL|net_route_info|macro|net_route_info
 DECL|net_route_init|function|void net_route_init(void)
 DECL|net_route_lookup|function|struct net_route_entry *net_route_lookup(struct net_if *iface, struct in6_addr *dst)
 DECL|net_route_mcast_add|function|struct net_route_entry_mcast *net_route_mcast_add(struct net_if *iface, struct in6_addr *group)
@@ -31,7 +30,6 @@ DECL|net_route_mcast_lookup|function|net_route_mcast_lookup(struct in6_addr *gro
 DECL|net_route_nexthop_remove|function|static void net_route_nexthop_remove(struct net_nbr *nbr)
 DECL|net_route_packet|function|int net_route_packet(struct net_pkt *pkt, struct in6_addr *nexthop)
 DECL|net_routes_print|function|void net_routes_print(void)
-DECL|net_routes_print|macro|net_routes_print
 DECL|route_mcast_entries|variable|route_mcast_entries
 DECL|routes|variable|routes
 DECL|update_route_access|function|static inline void update_route_access(struct net_route_entry *route)

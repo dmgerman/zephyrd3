@@ -3,8 +3,8 @@ DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
 DECL|EC|macro|EC
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_HTTP_OUTPUT_LEN|macro|MAX_HTTP_OUTPUT_LEN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
 DECL|TCP_CONNECT_TIMEOUT|macro|TCP_CONNECT_TIMEOUT
 DECL|TCP_TIMEOUT|macro|TCP_TIMEOUT
@@ -38,8 +38,10 @@ DECL|dns_result_cb|function|static void dns_result_cb(enum dns_resolve_status st
 DECL|eth_hw_caps|variable|eth_hw_caps
 DECL|ethernet_capabilities|struct|struct ethernet_capabilities {
 DECL|get_addresses|function|static void get_addresses(struct net_context *context, char addr_local[], int local_len, char addr_remote[], int remote_len)
+DECL|get_frees|function|static s16_t get_frees(struct net_buf_pool *pool)
 DECL|get_my_ipv4_addr|function|static void get_my_ipv4_addr(struct net_if *iface, struct sockaddr *myaddr)
 DECL|get_my_ipv6_addr|function|static void get_my_ipv6_addr(struct net_if *iface, struct sockaddr *myaddr)
+DECL|get_name|function|static const char *get_name(struct net_buf_pool *pool)
 DECL|gptp_port_cb|function|static void gptp_port_cb(int port, struct net_if *iface, void *user_data)
 DECL|gptp_print_port_info|function|static void gptp_print_port_info(int port)
 DECL|http_server_cb|function|static void http_server_cb(struct http_ctx *entry, void *user_data)
@@ -53,7 +55,6 @@ DECL|iface_vlan_del_cb|function|static void iface_vlan_del_cb(struct net_if *ifa
 DECL|ipv6_frag_cb|function|static void ipv6_frag_cb(struct net_ipv6_reassembly *reass, void *user_data)
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
 DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data)
-DECL|net_app_cb|function|static void net_app_cb(struct net_app_ctx *ctx, void *user_data) {}
 DECL|net_commands|variable|net_commands
 DECL|net_shell_cmd_allocs|function|int net_shell_cmd_allocs(int argc, char *argv[])
 DECL|net_shell_cmd_app|function|int net_shell_cmd_app(int argc, char *argv[])

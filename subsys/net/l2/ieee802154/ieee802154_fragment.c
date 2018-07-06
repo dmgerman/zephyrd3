@@ -1,8 +1,8 @@
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
 DECL|FRAG_REASSEMBLY_TIMEOUT|macro|FRAG_REASSEMBLY_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|REASS_CACHE_SIZE|macro|REASS_CACHE_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|add_frag_to_cache|function|static inline enum net_verdict add_frag_to_cache(struct net_pkt *pkt, bool first)
 DECL|cache|variable|cache
 DECL|calc_max_payload|function|static inline u8_t calc_max_payload(struct net_pkt *pkt, struct net_buf *frag, u8_t offset)

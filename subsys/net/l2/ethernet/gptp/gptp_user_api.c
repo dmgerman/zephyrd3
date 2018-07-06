@@ -1,4 +1,5 @@
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|gptp_call_phase_dis_cb|function|void gptp_call_phase_dis_cb(void)
 DECL|gptp_clk_src_time_invoke|function|void gptp_clk_src_time_invoke(struct gptp_clk_src_time_invoke_params *arg)
 DECL|gptp_event_capture|function|int gptp_event_capture(struct net_ptp_time *slave_time, bool *gm_present)

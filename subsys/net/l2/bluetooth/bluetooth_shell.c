@@ -1,4 +1,6 @@
 DECL|BT_SHELL_MODULE|macro|BT_SHELL_MODULE
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|bt_commands|variable|bt_commands
 DECL|char2hex|function|static int char2hex(const char *c, u8_t *x)
 DECL|shell_cmd_advertise|function|static int shell_cmd_advertise(int argc, char *argv[])

@@ -1,9 +1,9 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_REACHABLE_TIME|macro|MAX_REACHABLE_TIME
 DECL|ND_NET_BUF_TIMEOUT|macro|ND_NET_BUF_TIMEOUT
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|add_route|function|static struct net_route_entry *add_route(struct net_if *iface, struct in6_addr *addr, u8_t prefix_len)
 DECL|check_unknown_option|function|static inline struct net_pkt *check_unknown_option(struct net_pkt *pkt, u8_t opt_type, u16_t length)
 DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t len, u16_t offset,

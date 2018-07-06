@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|announce_periodic_timer_handler|function|static void announce_periodic_timer_handler(struct k_timer *timer)
 DECL|announce_timer_handler|function|static void announce_timer_handler(struct k_timer *timer)
 DECL|compare_priority_vectors|function|static enum gptp_received_info compare_priority_vectors(struct gptp_priority_vector *vector, struct net_pkt *pkt, int port)

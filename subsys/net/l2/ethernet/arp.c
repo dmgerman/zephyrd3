@@ -1,7 +1,7 @@
 DECL|ARP_REQUEST_TIMEOUT|macro|ARP_REQUEST_TIMEOUT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|arp_cache_initialized|variable|arp_cache_initialized
 DECL|arp_entries|variable|arp_entries
 DECL|arp_entry_cleanup|function|static void arp_entry_cleanup(struct arp_entry *entry, bool pending)

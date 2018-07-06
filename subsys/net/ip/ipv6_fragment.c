@@ -2,10 +2,9 @@ DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|FRAG_BUF_WAIT|macro|FRAG_BUF_WAIT
 DECL|IPV6_REASSEMBLY_TIMEOUT|macro|IPV6_REASSEMBLY_TIMEOUT
 DECL|IPV6_REASSEMBLY_TIMEOUT|macro|IPV6_REASSEMBLY_TIMEOUT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
-DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|fragment_verify|function|static bool fragment_verify(struct net_ipv6_reassembly *reass)
 DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx, u16_t *last_hdr_idx)
 DECL|net_ipv6_frag_foreach|function|void net_ipv6_frag_foreach(net_ipv6_frag_cb_t cb, void *user_data)

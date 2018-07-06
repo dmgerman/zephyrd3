@@ -4,8 +4,8 @@ DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|L2CAP_IPSP_MTU|macro|L2CAP_IPSP_MTU
 DECL|L2CAP_IPSP_PSM|macro|L2CAP_IPSP_PSM
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|UNKNOWN_APPEARANCE|macro|UNKNOWN_APPEARANCE
 DECL|ad_parse|function|static bool ad_parse(struct net_buf_simple *ad, bool (*func)(u8_t type, const u8_t *data, u8_t data_len, void *user_data), void *user_data)
 DECL|ad|variable|ad

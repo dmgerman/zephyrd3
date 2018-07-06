@@ -1,4 +1,6 @@
 DECL|IEEE802154_SHELL_MODULE|macro|IEEE802154_SHELL_MODULE
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|ieee802154_commands|variable|ieee802154_commands
 DECL|ieee802154_shell_init|function|void ieee802154_shell_init(void)
 DECL|params|variable|params

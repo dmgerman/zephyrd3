@@ -1,6 +1,6 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|ipv4_autoconf_check_timeout|function|static bool ipv4_autoconf_check_timeout(s64_t start, u32_t time, s64_t timeout)
 DECL|ipv4_autoconf_get_timeout|function|static u32_t ipv4_autoconf_get_timeout(struct net_if_ipv4_autoconf *ipv4auto)
 DECL|ipv4_autoconf_manage_timeouts|function|static u32_t ipv4_autoconf_manage_timeouts(struct net_if_ipv4_autoconf *ipv4auto, s64_t timeout)

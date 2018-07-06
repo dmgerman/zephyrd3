@@ -1,6 +1,7 @@
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
 DECL|DIO_TIMEOUT|macro|DIO_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|NET_RPL_DAO_EXPIRATION_TIMEOUT|macro|NET_RPL_DAO_EXPIRATION_TIMEOUT
 DECL|NET_RPL_DAO_RETRANSMIT_TIMEOUT|macro|NET_RPL_DAO_RETRANSMIT_TIMEOUT
 DECL|NET_RPL_DIO_GROUNDED|macro|NET_RPL_DIO_GROUNDED
@@ -28,7 +29,6 @@ DECL|NET_RPL_PARENT_FLAG_UPDATED|macro|NET_RPL_PARENT_FLAG_UPDATED
 DECL|NET_RPL_PROBING_EXPIRATION_TIME|macro|NET_RPL_PROBING_EXPIRATION_TIME
 DECL|NET_RPL_PROBING_INTERVAL|macro|NET_RPL_PROBING_INTERVAL
 DECL|NET_RPL_ZERO_LIFETIME|macro|NET_RPL_ZERO_LIFETIME
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|acceptable_rank|function|static int acceptable_rank(struct net_rpl_dag *dag, u16_t rank)
 DECL|add_rpl_opt|function|static inline int add_rpl_opt(struct net_pkt *pkt, u16_t offset)
 DECL|alloc_dag|function|static struct net_rpl_dag *alloc_dag(struct net_if *iface, u8_t instance_id, struct in6_addr *dag_id)
@@ -76,7 +76,6 @@ DECL|net_rpl_add_route|function|struct net_route_entry *net_rpl_add_route(struct
 DECL|net_rpl_alloc_instance|function|static struct net_rpl_instance *net_rpl_alloc_instance(u8_t instance_id)
 DECL|net_rpl_cancel_dao|function|static inline void net_rpl_cancel_dao(struct net_rpl_instance *instance)
 DECL|net_rpl_dao_info|macro|net_rpl_dao_info
-DECL|net_rpl_dao_info|macro|net_rpl_dao_info
 DECL|net_rpl_dao_send|function|int net_rpl_dao_send(struct net_if *iface, struct net_rpl_parent *parent, struct in6_addr *prefix, u8_t lifetime)
 DECL|net_rpl_dio_reset_timer|function|static void net_rpl_dio_reset_timer(struct net_rpl_instance *instance)
 DECL|net_rpl_dio_send|function|int net_rpl_dio_send(struct net_if *iface, struct net_rpl_instance *instance, struct in6_addr *src, struct in6_addr *dst)
@@ -92,7 +91,6 @@ DECL|net_rpl_get_mode|function|enum net_rpl_mode net_rpl_get_mode(void)
 DECL|net_rpl_get_nbr|function|struct net_nbr *net_rpl_get_nbr(struct net_rpl_parent *data)
 DECL|net_rpl_get_parent_addr|function|struct in6_addr *net_rpl_get_parent_addr(struct net_if *iface, struct net_rpl_parent *parent)
 DECL|net_rpl_global_repair|function|void net_rpl_global_repair(struct net_route_entry *route)
-DECL|net_rpl_info|macro|net_rpl_info
 DECL|net_rpl_info|macro|net_rpl_info
 DECL|net_rpl_init_timers|function|static inline void net_rpl_init_timers(void)
 DECL|net_rpl_init|function|void net_rpl_init(void)

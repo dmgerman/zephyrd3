@@ -1,6 +1,6 @@
 DECL|CHECK_IMIN|macro|CHECK_IMIN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|TICK_MAX|macro|TICK_MAX
 DECL|double_interval_timeout|function|static void double_interval_timeout(struct k_work *work)
 DECL|get_end|function|static inline u32_t get_end(struct net_trickle *trickle)

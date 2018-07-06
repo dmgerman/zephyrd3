@@ -1,6 +1,6 @@
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|cfi_to_fs_settings|function|static inline bool cfi_to_fs_settings(enum ieee802154_cfi cfi, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|data_addr_to_fs_settings|function|bool data_addr_to_fs_settings(struct net_linkaddr *dst, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|dbg_print_fs|macro|dbg_print_fs

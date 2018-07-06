@@ -1,7 +1,7 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_GPTP_INFO|macro|NET_GPTP_INFO
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|gptp_handle_follow_up|function|int gptp_handle_follow_up(int port, struct net_pkt *pkt)
 DECL|gptp_handle_pdelay_follow_up|function|int gptp_handle_pdelay_follow_up(int port, struct net_pkt *pkt)
 DECL|gptp_handle_pdelay_req|function|void gptp_handle_pdelay_req(int port, struct net_pkt *pkt)

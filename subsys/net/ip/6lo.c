@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|__packed|variable|__packed
 DECL|cid|member|u8_t cid : 4;
 DECL|compress_IPHC_header|function|static inline bool compress_IPHC_header(struct net_pkt *pkt,fragment_handler_t fragment)

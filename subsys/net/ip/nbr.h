@@ -17,7 +17,6 @@ DECL|nbr_count|member|const u16_t nbr_count;
 DECL|nbr|member|struct net_nbr *nbr;
 DECL|net_nbr_extra_data|function|static inline void *net_nbr_extra_data(struct net_nbr *nbr)
 DECL|net_nbr_lladdr|struct|struct net_nbr_lladdr {
-DECL|net_nbr_print|macro|net_nbr_print
 DECL|net_nbr_ref|macro|net_nbr_ref
 DECL|net_nbr_table|struct|struct net_nbr_table {
 DECL|net_nbr_unref|macro|net_nbr_unref

@@ -1,6 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|dhcph4_manage_timers|function|static u32_t dhcph4_manage_timers(struct net_if *iface, s64_t timeout)
 DECL|dhcpv4_add_cookie|function|static inline bool dhcpv4_add_cookie(struct net_pkt *pkt)
 DECL|dhcpv4_add_end|function|static inline bool dhcpv4_add_end(struct net_pkt *pkt)

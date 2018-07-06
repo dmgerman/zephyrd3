@@ -1,3 +1,4 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_IP_PROTO_LEN|macro|MAX_IP_PROTO_LEN
 DECL|MAX_IP_PROTO_LEN|macro|MAX_IP_PROTO_LEN
 DECL|MAX_NET_PKT_ALLOCS|macro|MAX_NET_PKT_ALLOCS
@@ -5,13 +6,13 @@ DECL|MAX_NEXT_PROTO_LEN|macro|MAX_NEXT_PROTO_LEN
 DECL|MAX_NEXT_PROTO_LEN|macro|MAX_NEXT_PROTO_LEN
 DECL|MAX_NEXT_PROTO_LEN|macro|MAX_NEXT_PROTO_LEN
 DECL|NET_FRAG_CHECK_IF_NOT_IN_USE|macro|NET_FRAG_CHECK_IF_NOT_IN_USE
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|STRING2|macro|STRING2
 DECL|STRING2|macro|STRING2
 DECL|STRING|macro|STRING
 DECL|STRING|macro|STRING
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_pkt_get_data_debug|function|static struct net_buf *_pkt_get_data_debug(struct net_buf_pool *pool, struct net_context *context, s32_t timeout, const char *caller, int line) #else
 DECL|adjust_insert_offset|function|static inline struct net_buf *adjust_insert_offset(struct net_buf *frag, u16_t offset, u16_t *pos)
 DECL|adjust_offset|function|static inline struct net_buf *adjust_offset(struct net_buf *frag, u16_t offset, u16_t *pos)
@@ -24,6 +25,8 @@ DECL|func_free|member|const char *func_free;
 DECL|get_data_pool|function|static inline struct net_buf_pool *get_data_pool(struct net_context *context)
 DECL|get_data_pool|macro|get_data_pool
 DECL|get_frees|function|static inline s16_t get_frees(struct net_buf_pool *pool)
+DECL|get_name|function|static inline const char *get_name(struct net_buf_pool *pool)
+DECL|get_size|function|static inline s16_t get_size(struct net_buf_pool *pool)
 DECL|get_tx_slab|function|static inline struct k_mem_slab *get_tx_slab(struct net_context *context)
 DECL|get_tx_slab|macro|get_tx_slab
 DECL|in_use|member|u8_t in_use;
@@ -53,8 +56,8 @@ DECL|net_pkt_copy|function|struct net_buf *net_pkt_copy(struct net_pkt *pkt, siz
 DECL|net_pkt_frag_add_debug|function|void net_pkt_frag_add_debug(struct net_pkt *pkt, struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_add(struct net_pkt *pkt, struct net_buf *frag) #endif
 DECL|net_pkt_frag_del_debug|function|struct net_buf *net_pkt_frag_del_debug(struct net_pkt *pkt, struct net_buf *parent, struct net_buf *frag, const char *caller, int line) #else
 DECL|net_pkt_frag_insert_debug|function|void net_pkt_frag_insert_debug(struct net_pkt *pkt, struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_insert(struct net_pkt *pkt, struct net_buf *frag) #endif
-DECL|net_pkt_frag_ref_debug|function|struct net_buf *net_pkt_frag_ref_debug(struct net_buf *frag, const char *caller, int line) #else struct net_buf *net_pkt_frag_ref(struct net_buf *frag) #endif /* CONFIG_NET_DEBUG_NET_PKT */
-DECL|net_pkt_frag_unref_debug|function|void net_pkt_frag_unref_debug(struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_unref(struct net_buf *frag) #endif /* CONFIG_NET_DEBUG_NET_PKT */
+DECL|net_pkt_frag_ref_debug|function|struct net_buf *net_pkt_frag_ref_debug(struct net_buf *frag, const char *caller, int line) #else struct net_buf *net_pkt_frag_ref(struct net_buf *frag) #endif /* CONFIG_NET_PKT_LOG_LEVEL >= LOG_LEVEL_DBG */
+DECL|net_pkt_frag_unref_debug|function|void net_pkt_frag_unref_debug(struct net_buf *frag, const char *caller, int line) #else void net_pkt_frag_unref(struct net_buf *frag) #endif /* CONFIG_NET_PKT_LOG_LEVEL >= LOG_LEVEL_DBG */
 DECL|net_pkt_get_addr|function|static int net_pkt_get_addr(struct net_pkt *pkt, bool is_src, struct sockaddr *addr, socklen_t addrlen)
 DECL|net_pkt_get_data_debug|function|struct net_buf *net_pkt_get_data_debug(struct net_context *context, s32_t timeout, const char *caller, int line)
 DECL|net_pkt_get_data|function|struct net_buf *net_pkt_get_data(struct net_context *context, s32_t timeout)
@@ -85,7 +88,7 @@ DECL|net_pkt_pool2str|function|const char *net_pkt_pool2str(struct net_buf_pool 
 DECL|net_pkt_print_frags|function|void net_pkt_print_frags(struct net_pkt *pkt)
 DECL|net_pkt_print|function|void net_pkt_print(void)
 DECL|net_pkt_pull|function|int net_pkt_pull(struct net_pkt *pkt, u16_t offset, u16_t len)
-DECL|net_pkt_ref_debug|function|struct net_pkt *net_pkt_ref_debug(struct net_pkt *pkt, const char *caller, int line) #else struct net_pkt *net_pkt_ref(struct net_pkt *pkt) #endif /* CONFIG_NET_DEBUG_NET_PKT */
+DECL|net_pkt_ref_debug|function|struct net_pkt *net_pkt_ref_debug(struct net_pkt *pkt, const char *caller, int line) #else struct net_pkt *net_pkt_ref(struct net_pkt *pkt) #endif /* CONFIG_NET_PKT_LOG_LEVEL >= LOG_LEVEL_DBG */
 DECL|net_pkt_set_appdata_values|function|void net_pkt_set_appdata_values(struct net_pkt *pkt, enum net_ip_protocol proto)
 DECL|net_pkt_slab2str|function|const char *net_pkt_slab2str(struct k_mem_slab *slab)
 DECL|net_pkt_split|function|int net_pkt_split(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, struct net_buf **rest, s32_t timeout)

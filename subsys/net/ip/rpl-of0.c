@@ -1,7 +1,7 @@
 DECL|DEFAULT_RANK_INCREMENT|macro|DEFAULT_RANK_INCREMENT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MIN_DIFFERENCE|macro|MIN_DIFFERENCE
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|net_rpl_of0_best_dag|function|static struct net_rpl_dag *net_rpl_of0_best_dag(struct net_rpl_dag *dag1,struct net_rpl_dag *dag2)
 DECL|net_rpl_of0_best_dag|variable|net_rpl_of0_best_dag
 DECL|net_rpl_of0_best_parent|function|net_rpl_of0_best_parent(struct net_if *iface,struct net_rpl_parent *parent1, struct net_rpl_parent *parent2)

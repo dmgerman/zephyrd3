@@ -1,14 +1,14 @@
 DECL|CONFIG_NET_PKT_TIMESTAMP_STACK_SIZE|macro|CONFIG_NET_PKT_TIMESTAMP_STACK_SIZE
 DECL|DAD_TIMEOUT|macro|DAD_TIMEOUT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_RANDOM_DENOM|macro|MAX_RANDOM_DENOM
 DECL|MAX_RANDOM_NUMER|macro|MAX_RANDOM_NUMER
 DECL|MIN_RANDOM_DENOM|macro|MIN_RANDOM_DENOM
 DECL|MIN_RANDOM_NUMER|macro|MIN_RANDOM_NUMER
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|REACHABLE_TIME|macro|REACHABLE_TIME
 DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|active_address_lifetime_timers|variable|active_address_lifetime_timers
 DECL|active_prefix_lifetime_timers|variable|active_prefix_lifetime_timers
 DECL|address_expired|function|static void address_expired(struct net_if_addr *ifaddr)

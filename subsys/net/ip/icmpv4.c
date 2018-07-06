@@ -1,6 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|append|macro|append
 DECL|echo_request_handler|variable|echo_request_handler
 DECL|handlers|variable|handlers

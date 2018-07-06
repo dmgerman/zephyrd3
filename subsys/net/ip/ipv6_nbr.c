@@ -1,4 +1,5 @@
 DECL|DELAY_FIRST_PROBE_TIME|macro|DELAY_FIRST_PROBE_TIME
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_IPV6_MTU|macro|MAX_IPV6_MTU
 DECL|MAX_MULTICAST_SOLICIT|macro|MAX_MULTICAST_SOLICIT
 DECL|MAX_REACHABLE_TIME|macro|MAX_REACHABLE_TIME
@@ -7,10 +8,9 @@ DECL|MIN_IPV6_MTU|macro|MIN_IPV6_MTU
 DECL|ND_NET_BUF_TIMEOUT|macro|ND_NET_BUF_TIMEOUT
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
 DECL|RETRANS_TIMER|macro|RETRANS_TIMER
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
 DECL|append_all|macro|append_all
 DECL|append|macro|append
@@ -18,21 +18,13 @@ DECL|cb|member|net_nbr_cb_t cb;
 DECL|check_route|function|static struct in6_addr *check_route(struct net_if *iface, struct in6_addr *dst, bool *try_route)
 DECL|dad_failed|function|static inline bool dad_failed(struct net_if *iface, struct in6_addr *addr)
 DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
-DECL|dbg_addr_recv_tgt|macro|dbg_addr_recv_tgt
-DECL|dbg_addr_recv|macro|dbg_addr_recv
 DECL|dbg_addr_recv|macro|dbg_addr_recv
 DECL|dbg_addr_sent_tgt|macro|dbg_addr_sent_tgt
-DECL|dbg_addr_sent_tgt|macro|dbg_addr_sent_tgt
-DECL|dbg_addr_sent|macro|dbg_addr_sent
 DECL|dbg_addr_sent|macro|dbg_addr_sent
 DECL|dbg_addr_with_tgt|macro|dbg_addr_with_tgt
-DECL|dbg_addr_with_tgt|macro|dbg_addr_with_tgt
 DECL|dbg_addr|macro|dbg_addr
-DECL|dbg_addr|macro|dbg_addr
-DECL|dbg_update_neighbor_lladdr_raw|function|static inline void dbg_update_neighbor_lladdr_raw(u8_t *new_lladdr,struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
-DECL|dbg_update_neighbor_lladdr_raw|macro|dbg_update_neighbor_lladdr_raw
-DECL|dbg_update_neighbor_lladdr|function|static inline void dbg_update_neighbor_lladdr(struct net_linkaddr *new_lladdr,struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
-DECL|dbg_update_neighbor_lladdr|macro|dbg_update_neighbor_lladdr
+DECL|dbg_update_neighbor_lladdr_raw|function|static void dbg_update_neighbor_lladdr_raw(u8_t *new_lladdr, struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
+DECL|dbg_update_neighbor_lladdr|function|static void dbg_update_neighbor_lladdr(struct net_linkaddr *new_lladdr, struct net_linkaddr_storage *old_lladdr, struct in6_addr *addr)
 DECL|get_llao_len|function|static inline u8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)

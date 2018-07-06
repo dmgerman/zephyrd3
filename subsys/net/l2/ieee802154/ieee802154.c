@@ -1,9 +1,8 @@
 DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PKT_TITLE|macro|PKT_TITLE
 DECL|RX_PKT_TITLE|macro|RX_PKT_TITLE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TX_PKT_TITLE|macro|TX_PKT_TITLE
 DECL|ieee802154_acknowledge|function|static inline void ieee802154_acknowledge(struct net_if *iface, struct ieee802154_mpdu *mpdu)
 DECL|ieee802154_acknowledge|macro|ieee802154_acknowledge

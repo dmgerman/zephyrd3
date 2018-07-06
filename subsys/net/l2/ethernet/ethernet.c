@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|broadcast_eth_addr|variable|broadcast_eth_addr
 DECL|carrier_off|function|static void carrier_off(struct k_work *work)
 DECL|carrier_on|function|static void carrier_on(struct k_work *work)
@@ -37,8 +37,6 @@ DECL|net_eth_unset_lldpdu|function|void net_eth_unset_lldpdu(struct net_if *ifac
 DECL|net_eth_vlan_disable|function|int net_eth_vlan_disable(struct net_if *iface, u16_t tag)
 DECL|net_eth_vlan_enable|function|int net_eth_vlan_enable(struct net_if *iface, u16_t tag)
 DECL|print_ll_addrs|macro|print_ll_addrs
-DECL|print_ll_addrs|macro|print_ll_addrs
-DECL|print_vlan_ll_addrs|macro|print_vlan_ll_addrs
 DECL|print_vlan_ll_addrs|macro|print_vlan_ll_addrs
 DECL|set_vlan_priority|function|static void set_vlan_priority(struct ethernet_context *ctx, struct net_pkt *pkt)
 DECL|set_vlan_tag|function|static enum net_verdict set_vlan_tag(struct ethernet_context *ctx, struct net_if *iface, struct net_pkt *pkt)

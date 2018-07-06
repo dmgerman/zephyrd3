@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|ieee802154_associate|function|static int ieee802154_associate(u32_t mgmt_request, struct net_if *iface,void *data, size_t len)
 DECL|ieee802154_cancel_scan|function|static int ieee802154_cancel_scan(u32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|ieee802154_disassociate|function|static int ieee802154_disassociate(u32_t mgmt_request, struct net_if *iface, void *data, size_t len)

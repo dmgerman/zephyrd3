@@ -1,7 +1,7 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PRINT_STATISTICS_INTERVAL|macro|PRINT_STATISTICS_INTERVAL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cmp_val|function|static inline s64_t cmp_val(u64_t val1, u64_t val2)
 DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_data)
 DECL|net_print_statistics_all|function|void net_print_statistics_all(void)
