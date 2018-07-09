@@ -1,8 +1,9 @@
 DECL|ETH_HDR_LEN|macro|ETH_HDR_LEN
 DECL|ETH_HDR_LEN|macro|ETH_HDR_LEN
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_ETH_MTU|macro|_ETH_MTU
 DECL|api|variable|api
 DECL|check_gptp_msg|function|static struct gptp_hdr *check_gptp_msg(struct net_if *iface, struct net_pkt *pkt)

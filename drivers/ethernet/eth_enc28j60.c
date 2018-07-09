@@ -1,6 +1,7 @@
 DECL|D10D24S|macro|D10D24S
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|api_funcs|variable|api_funcs
 DECL|eth_enc28j60_0_config|variable|eth_enc28j60_0_config
 DECL|eth_enc28j60_0_runtime|variable|eth_enc28j60_0_runtime

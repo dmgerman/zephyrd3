@@ -1,6 +1,7 @@
 DECL|HAL_ETH_RxCpltCallback|function|void HAL_ETH_RxCpltCallback(ETH_HandleTypeDef *heth_handle)
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|disable_mcast_filter|function|static inline void disable_mcast_filter(ETH_HandleTypeDef *heth)
 DECL|eth0_config|variable|eth0_config
 DECL|eth0_data|variable|eth0_data

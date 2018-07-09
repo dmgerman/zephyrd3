@@ -1,6 +1,7 @@
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|MODULO_INC|macro|MODULO_INC
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|check_gptp_msg|function|static struct gptp_hdr *check_gptp_msg(struct net_if *iface, struct net_pkt *pkt)
 DECL|dcache_clean|function|static inline void dcache_clean(u32_t addr, u32_t size)
 DECL|dcache_enabled|variable|dcache_enabled

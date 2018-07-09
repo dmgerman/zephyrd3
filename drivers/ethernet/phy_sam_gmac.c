@@ -1,6 +1,7 @@
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|PHY_AUTONEG_TIMEOUT_MS|macro|PHY_AUTONEG_TIMEOUT_MS
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|mdio_bus_disable|function|static void mdio_bus_disable(Gmac *gmac)
 DECL|mdio_bus_enable|function|static void mdio_bus_enable(Gmac *gmac)
 DECL|mdio_bus_send|function|static int mdio_bus_send(Gmac *gmac, u8_t phy_addr, u8_t reg_addr, u8_t rw, u16_t data)
