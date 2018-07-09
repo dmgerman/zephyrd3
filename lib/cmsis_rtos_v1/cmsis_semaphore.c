@@ -1,0 +1,4 @@
+DECL|osSemaphoreCreate|function|osSemaphoreId osSemaphoreCreate(const osSemaphoreDef_t *semaphore_def,int32_t count)
+DECL|osSemaphoreDelete|function|osStatus osSemaphoreDelete(osSemaphoreId semaphore_id)
+DECL|osSemaphoreRelease|function|osStatus osSemaphoreRelease(osSemaphoreId semaphore_id)
+DECL|osSemaphoreWait|function|int32_t osSemaphoreWait(osSemaphoreId semaphore_id, uint32_t timeout)
