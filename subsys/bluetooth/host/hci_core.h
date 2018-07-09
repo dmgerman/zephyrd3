@@ -47,6 +47,7 @@ DECL|lmp_version|member|u8_t lmp_version;
 DECL|manufacturer|member|u16_t manufacturer;
 DECL|mtu|member|u16_t mtu;
 DECL|mtu|member|u16_t mtu;
+DECL|name|member|char name[CONFIG_BT_DEVICE_NAME_MAX];
 DECL|ncmd_sem|member|struct k_sem ncmd_sem;
 DECL|pkts|member|struct k_sem pkts;
 DECL|pkts|member|struct k_sem pkts;
