@@ -63,7 +63,6 @@ DECL|err|member|int err;
 DECL|find_next|function|static u8_t find_next(const struct bt_gatt_attr *attr, void *user_data)
 DECL|gap_appearance|variable|gap_appearance
 DECL|gap_attrs|variable|gap_attrs
-DECL|gap_name|variable|gap_name
 DECL|gap_svc|variable|gap_svc
 DECL|gatt_attrs|variable|gatt_attrs
 DECL|gatt_ccc_changed|function|static void gatt_ccc_changed(const struct bt_gatt_attr *attr, struct _bt_gatt_ccc *ccc)
@@ -135,3 +134,4 @@ DECL|uuid|member|u8_t uuid[16];
 DECL|value_handle|member|u16_t value_handle;
 DECL|value|member|u16_t value;
 DECL|work|member|struct k_delayed_work work;
+DECL|write_name|function|static ssize_t write_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
