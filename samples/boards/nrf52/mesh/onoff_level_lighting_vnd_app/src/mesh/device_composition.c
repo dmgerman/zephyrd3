@@ -75,6 +75,8 @@ DECL|light_lightness_set|function|static void light_lightness_set(struct bt_mesh
 DECL|light_lightness_srv_op|variable|light_lightness_srv_op
 DECL|light_lightness_srv_user_data|variable|light_lightness_srv_user_data
 DECL|light_lightness_status|function|static void light_lightness_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|onoff_set_unack|function|static bool onoff_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|onpowerup_set_unack|function|static bool onpowerup_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|root_models|variable|root_models
 DECL|s0_models|variable|s0_models
 DECL|sqrt|function|static float sqrt(float square)
