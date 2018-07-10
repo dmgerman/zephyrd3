@@ -13,5 +13,6 @@ DECL|posix_halt_cpu|function|void posix_halt_cpu(void)
 DECL|posix_interrupt_raised|function|void posix_interrupt_raised(void)
 DECL|posix_is_cpu_running|function|int posix_is_cpu_running(void)
 DECL|posix_soc_clean_up|function|void posix_soc_clean_up(void)
+DECL|run_native_exit_tasks|function|static void run_native_exit_tasks(void)
 DECL|soc_terminate|variable|soc_terminate
 DECL|zephyr_wrapper|function|static void *zephyr_wrapper(void *a)
