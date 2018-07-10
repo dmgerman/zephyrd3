@@ -1,5 +1,6 @@
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|otPlatAlarmMilliGetNow|function|uint32_t otPlatAlarmMilliGetNow(void)
 DECL|otPlatAlarmMilliStartAt|function|void otPlatAlarmMilliStartAt(otInstance *aInstance, uint32_t t0, uint32_t dt)
 DECL|otPlatAlarmMilliStop|function|void otPlatAlarmMilliStop(otInstance *aInstance)

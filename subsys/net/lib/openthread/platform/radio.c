@@ -1,6 +1,7 @@
 DECL|FCS_SIZE|macro|FCS_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|channel|variable|channel
 DECL|dataInit|function|static void dataInit(void)
 DECL|otPlatRadioAddSrcMatchExtEntry|function|otError otPlatRadioAddSrcMatchExtEntry(otInstance *aInstance, const otExtAddress *aExtAddress)
