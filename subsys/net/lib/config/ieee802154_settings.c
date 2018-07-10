@@ -1,1 +1,3 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|_net_config_ieee802154_setup|function|int _net_config_ieee802154_setup(void)
