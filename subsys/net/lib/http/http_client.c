@@ -5,13 +5,12 @@ DECL|HTTP_CONT_LEN_SIZE|macro|HTTP_CONT_LEN_SIZE
 DECL|HTTP_EOF|macro|HTTP_EOF
 DECL|HTTP_HOST|macro|HTTP_HOST
 DECL|HTTP_NETWORK_TIMEOUT|macro|HTTP_NETWORK_TIMEOUT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_NUM_DIGITS|macro|MAX_NUM_DIGITS
 DECL|MAX_OUTPUT_LEN|macro|MAX_OUTPUT_LEN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RC_STR|macro|RC_STR
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|client_reset|function|int client_reset(struct http_ctx *ctx)
 DECL|http_client_init|function|int http_client_init(struct http_ctx *ctx, const char *server, u16_t server_port, struct sockaddr *server_addr, s32_t timeout)
 DECL|http_client_send_req|function|int http_client_send_req(struct http_ctx *ctx, struct http_request *req, http_response_cb_t cb, u8_t *response_buf, size_t response_buf_len,

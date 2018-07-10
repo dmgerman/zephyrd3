@@ -4,13 +4,12 @@ DECL|HTTPS_DEFAULT_PORT|macro|HTTPS_DEFAULT_PORT
 DECL|HTTP_DEFAULT_PORT|macro|HTTP_DEFAULT_PORT
 DECL|HTTP_STATUS_400_BR|macro|HTTP_STATUS_400_BR
 DECL|HTTP_STATUS_500_BR|macro|HTTP_STATUS_500_BR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PORT_LEN|macro|PORT_LEN
 DECL|PORT_STR|macro|PORT_STR
 DECL|RC_STR|macro|RC_STR
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_http_change_state|function|void _http_change_state(struct http_ctx *ctx,enum http_state new_state, const char *func, int line)
 DECL|ctx_mon|variable|ctx_mon
 DECL|get_server_ctx|function|static struct net_context *get_server_ctx(struct net_app_ctx *ctx, const struct sockaddr *dst)

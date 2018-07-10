@@ -1,6 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|_http_add_header|function|static int _http_add_header(struct http_ctx *ctx, s32_t timeout, const char *name, const char *value, const struct sockaddr *dst, void *user_send_data)
 DECL|get_net_pkt|function|static inline struct net_pkt *get_net_pkt(struct http_ctx *ctx, const struct sockaddr *dst)
 DECL|http_add_header_field|function|int http_add_header_field(struct http_ctx *ctx, const char *name, const char *value, const struct sockaddr *dst, void *user_send_data)
