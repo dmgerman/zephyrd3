@@ -1,4 +1,8 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|DRV_NAME|macro|DRV_NAME
+DECL|DRV_NAME|macro|DRV_NAME
+DECL|K32SRC|macro|K32SRC
+DECL|K32SRC|macro|K32SRC
 DECL|OFFSET_M_MAX|macro|OFFSET_M_MAX
 DECL|OFFSET_S_MAX|macro|OFFSET_S_MAX
 DECL|RADIO_CONN_EVENTS|macro|RADIO_CONN_EVENTS
@@ -132,6 +136,7 @@ DECL|init_addr|member|u8_t init_addr[BDADDR_SIZE];
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_enabled|member|u8_t is_enabled:1;
 DECL|is_hdcd|member|u8_t is_hdcd:1;
+DECL|is_k32src_stable|member|u8_t is_k32src_stable;
 DECL|isr_adv_ci_adva_check|function|static inline bool isr_adv_ci_adva_check(struct pdu_adv *adv, struct pdu_adv *ci)
 DECL|isr_adv_ci_check|function|static inline bool isr_adv_ci_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t devmatch_ok, u8_t *rl_idx)
 DECL|isr_adv_ci_tgta_check|function|static inline bool isr_adv_ci_tgta_check(struct pdu_adv *adv, struct pdu_adv *ci, u8_t rl_idx)
@@ -166,6 +171,7 @@ DECL|isr_scan_rsp_adva_matches|function|static inline bool isr_scan_rsp_adva_mat
 DECL|isr_scan_tgta_check|function|static inline bool isr_scan_tgta_check(bool init, struct pdu_adv *pdu, u8_t rl_idx, bool *dir_report)
 DECL|isr_scan_tgta_rpa_check|function|static inline bool isr_scan_tgta_rpa_check(struct pdu_adv *pdu, bool *dir_report)
 DECL|isr|function|static void isr(void)
+DECL|k32src_wait|function|static void k32src_wait(void)
 DECL|length_resp_send|function|static void length_resp_send(struct connection *conn, struct radio_pdu_node_tx *node_tx, u16_t eff_rx_octets, u16_t eff_tx_octets) #else /* CONFIG_BT_CTLR_PHY */ static void length_resp_send(struct connection *conn,
 DECL|link_rx_data_quota|member|u8_t link_rx_data_quota;
 DECL|link_rx_free|member|void *link_rx_free;
