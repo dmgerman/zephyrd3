@@ -1,7 +1,7 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_BLOCK_WISE_TRANSFER_SIZE|macro|MAX_BLOCK_WISE_TRANSFER_SIZE
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_coap_match_path_uri|function|bool _coap_match_path_uri(const char * const *path, const char *uri, u16_t len)
 DECL|append_to_net_pkt|function|static bool append_to_net_pkt(struct net_pkt *pkt, const char *str, u16_t len, u16_t *remaining, size_t *offset, size_t current)
 DECL|clear_more_flag|function|int clear_more_flag(struct coap_packet *cpkt)

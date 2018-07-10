@@ -10,12 +10,12 @@ DECL|GET_BLOCK_SIZE|macro|GET_BLOCK_SIZE
 DECL|GET_MORE|macro|GET_MORE
 DECL|GET_NUM|macro|GET_NUM
 DECL|INIT_ACK_TIMEOUT|macro|INIT_ACK_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
 DECL|SET_BLOCK_SIZE|macro|SET_BLOCK_SIZE
 DECL|SET_MORE|macro|SET_MORE
 DECL|SET_NUM|macro|SET_NUM
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|__coap_header_get_code|function|static u8_t __coap_header_get_code(const struct coap_packet *cpkt)
 DECL|append_all|macro|append_all
 DECL|append|macro|append
