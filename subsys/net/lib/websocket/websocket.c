@@ -1,8 +1,7 @@
 DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|HTTP_CRLF|macro|HTTP_CRLF
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|WS_MAGIC|macro|WS_MAGIC
 DECL|check_ws_headers|function|static bool check_ws_headers(struct http_ctx *ctx, struct http_parser *parser, int *ws_sec_key, int *host, int *subprotocol)
 DECL|field_contains|function|static bool field_contains(const char *field, int field_len, const char *str, int str_len)
