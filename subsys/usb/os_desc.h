@@ -1,4 +1,5 @@
 DECL|USB_OSDESC_EXTENDED_COMPAT_ID|macro|USB_OSDESC_EXTENDED_COMPAT_ID
+DECL|USB_OSDESC_STRING_DESC_INDEX|macro|USB_OSDESC_STRING_DESC_INDEX
 DECL|compat_id_len|member|size_t compat_id_len;
 DECL|compat_id|member|u8_t *compat_id;
 DECL|string_len|member|size_t string_len;
