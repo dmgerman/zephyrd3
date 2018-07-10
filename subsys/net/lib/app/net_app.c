@@ -1,11 +1,10 @@
 DECL|DTLS_TIMEOUT|macro|DTLS_TIMEOUT
 DECL|DTLS_TIMEOUT|macro|DTLS_TIMEOUT
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MBEDTLS_PRINT|macro|MBEDTLS_PRINT
 DECL|MBEDTLS_PRINT|macro|MBEDTLS_PRINT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PORT_STR_LEN|macro|PORT_STR_LEN
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_app_send|function|static void _app_send(struct net_context *net_ctx, int status, void *token, void *user_data)
 DECL|_net_app_config_local_ctx|function|int _net_app_config_local_ctx(struct net_app_ctx *ctx, enum net_sock_type sock_type, enum net_ip_protocol proto, struct sockaddr *addr)
 DECL|_net_app_dtls_established|function|enum net_verdict _net_app_dtls_established(struct net_conn *conn, struct net_pkt *pkt, void *user_data)

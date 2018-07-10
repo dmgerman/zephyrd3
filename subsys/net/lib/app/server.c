@@ -1,8 +1,7 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|PORT_STR|macro|PORT_STR
 DECL|PORT_STR|macro|PORT_STR
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TLS_STARTUP_TIMEOUT|macro|TLS_STARTUP_TIMEOUT
 DECL|_net_app_accept_cb|function|void _net_app_accept_cb(struct net_context *net_ctx,struct sockaddr *addr, socklen_t addrlen, int status, void *data)
 DECL|_net_app_server_tls_disable|function|bool _net_app_server_tls_disable(struct net_app_ctx *ctx)

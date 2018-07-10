@@ -6,7 +6,6 @@ DECL|RX_EXTRA_DEBUG|macro|RX_EXTRA_DEBUG
 DECL|_net_app_dir|enum|enum _net_app_dir {
 DECL|_net_app_print_error|macro|_net_app_print_error
 DECL|_net_app_print_error|macro|_net_app_print_error
-DECL|_net_app_print_info|macro|_net_app_print_info
 DECL|_net_app_register|macro|_net_app_register
 DECL|_net_app_select_net_ctx|macro|_net_app_select_net_ctx
 DECL|_net_app_unregister|macro|_net_app_unregister
