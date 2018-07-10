@@ -10,8 +10,6 @@ DECL|BLE_DISCONNECTED|enumerator|BLE_DISCONNECTED,
 DECL|BLE_LOST|enumerator|BLE_LOST = 0x01,
 DECL|BLE_SCAN_START|enumerator|BLE_SCAN_START,
 DECL|BLE_SCAN|enumerator|BLE_SCAN,
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|PONG_CHR_UUID|macro|PONG_CHR_UUID
 DECL|PONG_SVC_UUID|macro|PONG_SVC_UUID
 DECL|SCAN_TIMEOUT|macro|SCAN_TIMEOUT
@@ -54,7 +52,6 @@ DECL|pong_svc|variable|pong_svc
 DECL|pong_uuid_match|function|static bool pong_uuid_match(const u8_t *data, u8_t len)
 DECL|remote_handle|variable|remote_handle
 DECL|remote_ready|variable|remote_ready
-DECL|sd|variable|sd
 DECL|subscribe_param|variable|subscribe_param
 DECL|x_pos|member|s8_t x_pos;
 DECL|x_vel|member|s8_t x_vel;

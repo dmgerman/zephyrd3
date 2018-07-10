@@ -22,8 +22,6 @@ DECL|CSC_LOC_RIGHT_PEDAL|macro|CSC_LOC_RIGHT_PEDAL
 DECL|CSC_LOC_TOP_OF_SHOE|macro|CSC_LOC_TOP_OF_SHOE
 DECL|CSC_SUPPORTED_LOCATIONS|macro|CSC_SUPPORTED_LOCATIONS
 DECL|CSC_WHEEL_REV_DATA_PRESENT|macro|CSC_WHEEL_REV_DATA_PRESENT
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|SC_CP_OP_CALIBRATION|macro|SC_CP_OP_CALIBRATION
 DECL|SC_CP_OP_REQ_SUPP_LOC|macro|SC_CP_OP_REQ_SUPP_LOC
 DECL|SC_CP_OP_RESPONSE|macro|SC_CP_OP_RESPONSE
@@ -76,7 +74,6 @@ DECL|read_csc_feature|function|static ssize_t read_csc_feature(struct bt_conn *c
 DECL|read_location|function|static ssize_t read_location(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|req_op|member|u8_t req_op;
 DECL|sc_ctrl_point_ind|struct|struct sc_ctrl_point_ind {
-DECL|sd|variable|sd
 DECL|sensor_location|variable|sensor_location
 DECL|status|member|u8_t status;
 DECL|supported_locations|variable|supported_locations

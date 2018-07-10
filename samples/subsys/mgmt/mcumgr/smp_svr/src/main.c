@@ -1,5 +1,3 @@
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|STATS_NAME_END|variable|STATS_NAME_END
 DECL|advertise|function|static void advertise(void)
 DECL|ad|variable|ad
@@ -10,4 +8,3 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn, u8_t r
 DECL|flash_desc|variable|flash_desc
 DECL|main|function|void main(void)
 DECL|nffs_mnt|variable|nffs_mnt
-DECL|sd|variable|sd

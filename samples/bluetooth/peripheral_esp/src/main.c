@@ -1,5 +1,3 @@
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|ESS_EQUAL_TO_REF_VALUE|macro|ESS_EQUAL_TO_REF_VALUE
 DECL|ESS_ERR_COND_NOT_SUPP|macro|ESS_ERR_COND_NOT_SUPP
 DECL|ESS_ERR_WRITE_REJECT|macro|ESS_ERR_WRITE_REJECT
@@ -65,7 +63,6 @@ DECL|ref_val|member|s16_t ref_val;
 DECL|ref_val|member|s16_t ref_val; /* Reference temperature */
 DECL|sampling_function|member|u8_t sampling_function;
 DECL|sampling_func|member|u8_t sampling_func;
-DECL|sd|variable|sd
 DECL|seconds|member|u32_t seconds;
 DECL|sec|member|u8_t sec[3];
 DECL|sensor_1|variable|sensor_1

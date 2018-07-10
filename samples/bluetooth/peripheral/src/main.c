@@ -1,5 +1,3 @@
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|ad|variable|ad
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
@@ -16,7 +14,6 @@ DECL|main|function|void main(void)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_signed|function|static ssize_t read_signed(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_vnd|function|static ssize_t read_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, u16_t len, u16_t offset)
-DECL|sd|variable|sd
 DECL|signed_value|variable|signed_value
 DECL|simulate_vnd|variable|simulate_vnd
 DECL|vnd_attrs|variable|vnd_attrs

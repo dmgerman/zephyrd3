@@ -1,5 +1,3 @@
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|EDS_IDLE_TIMEOUT|macro|EDS_IDLE_TIMEOUT
 DECL|EDS_LOCKED|enumerator|EDS_LOCKED = 0x00,
 DECL|EDS_SLOT_EID|enumerator|EDS_SLOT_EID = sys_cpu_to_be16(BIT(3)),
@@ -67,7 +65,6 @@ DECL|read_lock|function|static ssize_t read_lock(struct bt_conn *conn, const str
 DECL|read_slot|function|static ssize_t read_slot(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_tx_power|function|static ssize_t read_tx_power(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_unlock|function|static ssize_t read_unlock(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
-DECL|sd|variable|sd
 DECL|slot_types|member|u16_t slot_types;
 DECL|slots|member|u8_t slots;
 DECL|state|member|u8_t state;

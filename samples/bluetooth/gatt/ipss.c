@@ -1,5 +1,3 @@
-DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
-DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|UNKNOWN_APPEARANCE|macro|UNKNOWN_APPEARANCE
 DECL|ad|variable|ad
 DECL|attrs|variable|attrs
@@ -9,4 +7,3 @@ DECL|disconnected|function|static void disconnected(struct bt_conn *conn, u8_t r
 DECL|ipss_advertise|function|int ipss_advertise(void)
 DECL|ipss_init|function|void ipss_init(void)
 DECL|ipss_svc|variable|ipss_svc
-DECL|sd|variable|sd
