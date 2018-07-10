@@ -1,5 +1,4 @@
 DECL|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH|macro|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH
-DECL|STACKSIZE|macro|STACKSIZE
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
 DECL|buffered_cnt|variable|buffered_cnt
 DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
@@ -12,6 +11,7 @@ DECL|log_3|function|void log_3(const char *str, u32_t arg0, u32_t arg1, u32_t ar
 DECL|log_backend_disable|function|void log_backend_disable(struct log_backend const *const backend)
 DECL|log_backend_enable|function|void log_backend_enable(struct log_backend const *const backend,void *ctx, u32_t level)
 DECL|log_backend_uart|variable|log_backend_uart
+DECL|log_buffered_cnt|function|u32_t log_buffered_cnt(void)
 DECL|log_core_init|function|void log_core_init(void)
 DECL|log_filter_get|function|u32_t log_filter_get(struct log_backend const *const backend, u32_t domain_id, u32_t src_id, bool runtime)
 DECL|log_filter_set|function|void log_filter_set(struct log_backend const *const backend, u32_t domain_id, u32_t src_id, u32_t level)
@@ -33,5 +33,6 @@ DECL|msg_finalize|function|static inline void msg_finalize(struct log_msg *msg,s
 DECL|msg_process|function|static void msg_process(struct log_msg *msg, bool bypass)
 DECL|panic_mode|variable|panic_mode
 DECL|proc_tid|variable|proc_tid
+DECL|thread_set|function|static void thread_set(k_tid_t process_tid)
 DECL|timestamp_func|variable|timestamp_func
 DECL|timestamp_get|function|static u32_t timestamp_get(void)
