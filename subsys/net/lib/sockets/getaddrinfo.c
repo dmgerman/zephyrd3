@@ -1,6 +1,6 @@
 DECL|AI_ARR_MAX|macro|AI_ARR_MAX
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(z_zsock_getaddrinfo_internal, host, service, hints, res)
 DECL|_impl_z_zsock_getaddrinfo_internal|function|int _impl_z_zsock_getaddrinfo_internal(const char *host, const char *service, const struct zsock_addrinfo *hints, struct zsock_addrinfo *res)
 DECL|ai_arr|member|struct zsock_addrinfo *ai_arr;

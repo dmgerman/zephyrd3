@@ -1,6 +1,6 @@
 DECL|IS_LISTENING|macro|IS_LISTENING
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|ca_chain|member|mbedtls_x509_crt ca_chain;
 DECL|ciphersuites|member|int ciphersuites[CONFIG_NET_SOCKETS_TLS_MAX_CIPHERSUITES + 1];
 DECL|config|member|mbedtls_ssl_config config;
