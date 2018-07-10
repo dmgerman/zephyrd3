@@ -47,6 +47,7 @@ DECL|net_context|struct|struct net_context {
 DECL|net_pkt_get_pool_func_t|typedef|typedef struct net_buf_pool *(*net_pkt_get_pool_func_t)(void);
 DECL|net_pkt_get_slab_func_t|typedef|typedef struct k_mem_slab *(*net_pkt_get_slab_func_t)(void);
 DECL|net_tcp_accept_cb_t|typedef|typedef void (*net_tcp_accept_cb_t)(struct net_context *new_context,
+DECL|offload_context|member|void *offload_context;
 DECL|options|member|} options;
 DECL|priority|member|u8_t priority;
 DECL|recv_cb|member|net_context_recv_cb_t recv_cb;
