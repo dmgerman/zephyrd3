@@ -1,5 +1,5 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|OFFSET_1970_JAN_1|macro|OFFSET_1970_JAN_1
 DECL|SNTP_CTX_SRV_SOCKADDR|macro|SNTP_CTX_SRV_SOCKADDR
 DECL|SNTP_LI_MAX|macro|SNTP_LI_MAX
@@ -7,7 +7,6 @@ DECL|SNTP_MODE_CLIENT|macro|SNTP_MODE_CLIENT
 DECL|SNTP_MODE_SERVER|macro|SNTP_MODE_SERVER
 DECL|SNTP_STRATUM_KOD|macro|SNTP_STRATUM_KOD
 DECL|SNTP_VERSION_NUMBER|macro|SNTP_VERSION_NUMBER
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_uptime_in_sec|function|static u32_t get_uptime_in_sec(void)
 DECL|parse_response|function|static s32_t parse_response(u8_t *data, u16_t len, u32_t orig_ts,u64_t *epoch_time)
 DECL|sntp_close|function|void sntp_close(struct sntp_ctx *ctx)
