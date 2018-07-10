@@ -11,11 +11,11 @@ DECL|DNS_RESOLVER_MIN_BUF|macro|DNS_RESOLVER_MIN_BUF
 DECL|DNS_SERVER_COUNT|macro|DNS_SERVER_COUNT
 DECL|LLMNR_IPV4_ADDR|macro|LLMNR_IPV4_ADDR
 DECL|LLMNR_IPV6_ADDR|macro|LLMNR_IPV6_ADDR
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MDNS_IPV4_ADDR|macro|MDNS_IPV4_ADDR
 DECL|MDNS_IPV6_ADDR|macro|MDNS_IPV6_ADDR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|SERVER_COUNT|macro|SERVER_COUNT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|cb_recv|function|static void cb_recv(struct net_context *net_ctx, struct net_pkt *pkt, int status, void *user_data)
 DECL|dns_default_ctx|variable|dns_default_ctx
 DECL|dns_init_resolver|function|void dns_init_resolver(void)

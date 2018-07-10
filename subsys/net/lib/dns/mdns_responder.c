@@ -2,10 +2,10 @@ DECL|BUF_ALLOC_TIMEOUT|macro|BUF_ALLOC_TIMEOUT
 DECL|DNS_RESOLVER_BUF_CTR|macro|DNS_RESOLVER_BUF_CTR
 DECL|DNS_RESOLVER_MAX_BUF_SIZE|macro|DNS_RESOLVER_MAX_BUF_SIZE
 DECL|DNS_RESOLVER_MIN_BUF|macro|DNS_RESOLVER_MIN_BUF
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MDNS_LISTEN_PORT|macro|MDNS_LISTEN_PORT
 DECL|MDNS_TTL|macro|MDNS_TTL
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|add_answer|function|static int add_answer(struct net_pkt *pkt, enum dns_rr_type qtype, struct net_buf *query, u32_t ttl, u16_t addr_len, u8_t *addr)
 DECL|append_all|macro|append_all
 DECL|append|macro|append

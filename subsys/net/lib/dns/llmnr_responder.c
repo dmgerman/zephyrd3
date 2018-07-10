@@ -4,8 +4,8 @@ DECL|DNS_RESOLVER_MAX_BUF_SIZE|macro|DNS_RESOLVER_MAX_BUF_SIZE
 DECL|DNS_RESOLVER_MIN_BUF|macro|DNS_RESOLVER_MIN_BUF
 DECL|LLMNR_LISTEN_PORT|macro|LLMNR_LISTEN_PORT
 DECL|LLMNR_TTL|macro|LLMNR_TTL
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|add_answer|function|static int add_answer(struct net_pkt *pkt, enum dns_rr_type qtype, struct net_buf *query, u32_t ttl, u16_t addr_len, const u8_t *addr)
 DECL|add_question|function|static int add_question(struct net_pkt *pkt, enum dns_rr_type qtype,struct net_buf *query)
 DECL|append_all|macro|append_all
