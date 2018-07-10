@@ -1,7 +1,6 @@
-DECL|COLOR_OFF|macro|COLOR_OFF
-DECL|COLOR_OFF|macro|COLOR_OFF
-DECL|COLOR_YELLOW|macro|COLOR_YELLOW
-DECL|COLOR_YELLOW|macro|COLOR_YELLOW
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|SLIP_END|macro|SLIP_END
 DECL|SLIP_ESC_END|macro|SLIP_ESC_END
 DECL|SLIP_ESC_ESC|macro|SLIP_ESC_ESC
@@ -11,8 +10,6 @@ DECL|SLIP_STATS|macro|SLIP_STATS
 DECL|STATE_ESC|enumerator|STATE_ESC,
 DECL|STATE_GARBAGE|enumerator|STATE_GARBAGE,
 DECL|STATE_OK|enumerator|STATE_OK,
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|_SLIP_L2_CTX_TYPE|macro|_SLIP_L2_CTX_TYPE
 DECL|_SLIP_L2_CTX_TYPE|macro|_SLIP_L2_CTX_TYPE
 DECL|_SLIP_L2_LAYER|macro|_SLIP_L2_LAYER
@@ -24,8 +21,6 @@ DECL|eth_capabilities|function|static enum ethernet_hw_caps eth_capabilities(str
 DECL|first|member|bool first; /* SLIP received it's byte or not after
 DECL|garbage|member|u16_t garbage;
 DECL|get_iface|function|static inline struct net_if *get_iface(struct slip_context *context, u16_t vlan_tag)
-DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length, size_t ll_reserve)
-DECL|hexdump|macro|hexdump
 DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|last|member|struct net_buf *last; /* Pointer to last fragment in the list */
