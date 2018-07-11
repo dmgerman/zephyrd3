@@ -8,11 +8,19 @@ DECL|IGNORE_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CT
 DECL|IGNORE|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
 DECL|LEVEL_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP };
 DECL|LEVEL|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
+DECL|LIGHTNESS_MAX|macro|LIGHTNESS_MAX
+DECL|LIGHTNESS_MIN|macro|LIGHTNESS_MIN
 DECL|LINEAR|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
 DECL|ONOFF_TEMP|enumerator|enum temperature { ONOFF_TEMP = 0x01, LEVEL_TEMP, CTL_TEMP, IGNORE_TEMP };
 DECL|ONOFF|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
 DECL|ONPOWERUP|enumerator|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
 DECL|RANGE_SUCCESSFULLY_UPDATED|macro|RANGE_SUCCESSFULLY_UPDATED
+DECL|STATE_DEFAULT|macro|STATE_DEFAULT
+DECL|STATE_OFF|macro|STATE_OFF
+DECL|STATE_ON|macro|STATE_ON
+DECL|STATE_RESTORE|macro|STATE_RESTORE
+DECL|TEMP_MAX|macro|TEMP_MAX
+DECL|TEMP_MIN|macro|TEMP_MIN
 DECL|_DEVICE_COMPOSITION_H|macro|_DEVICE_COMPOSITION_H
 DECL|actual|member|u16_t actual;
 DECL|current|member|int current;
@@ -46,9 +54,6 @@ DECL|lightness_range_min|member|u16_t lightness_range_min;
 DECL|lightness|enum|enum lightness { ONPOWERUP = 0x01, ONOFF, LEVEL, ACTUAL, LINEAR, CTL, IGNORE };
 DECL|lightness|member|u16_t lightness;
 DECL|linear|member|u16_t linear;
-DECL|model_instance|member|u8_t model_instance;
-DECL|model_instance|member|u8_t model_instance;
-DECL|model_instance|member|u8_t model_instance;
 DECL|onoff|member|u8_t onoff;
 DECL|onpowerup|member|u8_t onpowerup;
 DECL|response|member|u32_t response;

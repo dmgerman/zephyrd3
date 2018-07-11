@@ -2,6 +2,7 @@ DECL|MINDIFF|macro|MINDIFF
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|elements|variable|elements
+DECL|elements|variable|elements
 DECL|gen_delta_set_unack|function|static void gen_delta_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_delta_set|function|static void gen_delta_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_level_cli_op|variable|gen_level_cli_op
