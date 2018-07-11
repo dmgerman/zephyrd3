@@ -1,10 +1,6 @@
 DECL|CONFIG|member|__IO u32_t CONFIG[8];
-DECL|DETECTMODE|member|__IO u32_t DETECTMODE;
 DECL|DEV_GPIO_CFG|macro|DEV_GPIO_CFG
 DECL|DEV_GPIO_DATA|macro|DEV_GPIO_DATA
-DECL|DIRCLR|member|__IO u32_t DIRCLR;
-DECL|DIRSET|member|__IO u32_t DIRSET;
-DECL|DIR|member|__IO u32_t DIR;
 DECL|EVENTS_IN|member|__IO u32_t EVENTS_IN[8];
 DECL|EVENTS_PORT|member|__IO u32_t EVENTS_PORT;
 DECL|GPIOTE_CFG_EVT|macro|GPIOTE_CFG_EVT
@@ -43,15 +39,7 @@ DECL|GPIO_SENSE_LOW|macro|GPIO_SENSE_LOW
 DECL|GPIO_STRUCT|macro|GPIO_STRUCT
 DECL|INTENCLR|member|__IO u32_t INTENCLR;
 DECL|INTENSET|member|__IO u32_t INTENSET;
-DECL|IN|member|__I u32_t IN;
-DECL|LATCH|member|__IO u32_t LATCH;
-DECL|OUTCLR|member|__IO u32_t OUTCLR;
-DECL|OUTSET|member|__IO u32_t OUTSET;
-DECL|OUT|member|__IO u32_t OUT;
-DECL|PIN_CNF|member|__IO u32_t PIN_CNF[32];
-DECL|RESERVED0|member|__I u32_t RESERVED0[321];
 DECL|RESERVED0|member|__I u32_t RESERVED0[4];
-DECL|RESERVED1|member|__I u32_t RESERVED1[118];
 DECL|RESERVED1|member|__I u32_t RESERVED1[4];
 DECL|RESERVED2|member|__I u32_t RESERVED2[32];
 DECL|RESERVED3|member|__I u32_t RESERVED3[23];
@@ -61,7 +49,6 @@ DECL|TASKS_CLR|member|__O u32_t TASKS_CLR[8];
 DECL|TASKS_OUT|member|__O u32_t TASKS_OUT[8];
 DECL|TASKS_SET|member|__O u32_t TASKS_SET[8];
 DECL|_gpiote|struct|struct _gpiote {
-DECL|_gpio|struct|struct _gpio {
 DECL|callbacks|member|sys_slist_t callbacks;
 DECL|gpio_base_addr|member|u32_t gpio_base_addr;
 DECL|gpio_data_P0|variable|gpio_data_P0
