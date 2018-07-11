@@ -10,6 +10,8 @@ DECL|log_msg_hexdump_data_op|function|static void log_msg_hexdump_data_op(struct
 DECL|log_msg_hexdump_data_put|function|void log_msg_hexdump_data_put(struct log_msg *msg, u8_t *data, size_t *length, size_t offset)
 DECL|log_msg_nargs_get|function|u32_t log_msg_nargs_get(struct log_msg *msg)
 DECL|log_msg_no_space_handle|function|union log_msg_chunk *log_msg_no_space_handle(void)
+DECL|log_msg_pool_init|function|void log_msg_pool_init(void)
+DECL|log_msg_pool|variable|log_msg_pool
 DECL|log_msg_put|function|void log_msg_put(struct log_msg *msg)
 DECL|log_msg_str_get|function|const char *log_msg_str_get(struct log_msg *msg)
 DECL|msg_free|function|static void msg_free(struct log_msg *msg)

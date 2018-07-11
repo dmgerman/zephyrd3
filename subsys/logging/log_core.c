@@ -1,5 +1,6 @@
 DECL|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH|macro|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
+DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
 DECL|initialized|variable|initialized
 DECL|list|variable|list
 DECL|log_0|function|void log_0(const char *str, struct log_msg_ids src_level)
@@ -9,11 +10,12 @@ DECL|log_3|function|void log_3(const char *str, u32_t arg0, u32_t arg1, u32_t ar
 DECL|log_backend_disable|function|void log_backend_disable(struct log_backend const *const backend)
 DECL|log_backend_enable|function|void log_backend_enable(struct log_backend const *const backend,void *ctx, u32_t level)
 DECL|log_backend_uart|variable|log_backend_uart
+DECL|log_core_init|function|void log_core_init(void)
 DECL|log_filter_get|function|u32_t log_filter_get(struct log_backend const *const backend, u32_t domain_id, u32_t src_id, bool runtime)
 DECL|log_filter_set|function|void log_filter_set(struct log_backend const *const backend, u32_t domain_id, u32_t src_id, u32_t level)
 DECL|log_generic|function|void log_generic(struct log_msg_ids src_level, const char *fmt, va_list ap)
 DECL|log_hexdump|function|void log_hexdump(const u8_t *data, u32_t length, struct log_msg_ids src_level)
-DECL|log_init|function|int log_init(void)
+DECL|log_init|function|void log_init(void)
 DECL|log_n|function|void log_n(const char *str, u32_t *args, u32_t narg, struct log_msg_ids src_level)
 DECL|log_panic|function|void log_panic(void)
 DECL|log_printk|function|int log_printk(const char *fmt, va_list ap)
