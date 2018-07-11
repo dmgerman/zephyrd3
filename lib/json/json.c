@@ -40,12 +40,12 @@ DECL|lexer_string|function|static void *lexer_string(struct lexer *lexer)
 DECL|lexer|member|struct lexer lexer;
 DECL|lexer|struct|struct lexer {
 DECL|measure_bytes|function|static int measure_bytes(const char *bytes, size_t len, void *data)
-DECL|next|function|static char next(struct lexer *lexer)
+DECL|next|function|static int next(struct lexer *lexer)
 DECL|num_encode|function|static int num_encode(const s32_t *num, json_append_bytes_t append_bytes, void *data)
 DECL|obj_init|function|static int obj_init(struct json_obj *json, char *data, size_t len)
 DECL|obj_next|function|static int obj_next(struct json_obj *json, struct json_obj_key_value *kv)
 DECL|obj_parse|function|static int obj_parse(struct json_obj *obj, const struct json_obj_descr *descr, size_t descr_len, void *val)
-DECL|peek|function|static char peek(struct lexer *lexer)
+DECL|peek|function|static int peek(struct lexer *lexer)
 DECL|pos|member|char *pos;
 DECL|size|member|size_t size;
 DECL|start|member|char *start;
