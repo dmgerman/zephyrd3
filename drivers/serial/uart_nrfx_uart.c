@@ -2,6 +2,7 @@ DECL|baudrate_set|function|static int baudrate_set(struct device *dev, u32_t bau
 DECL|event_txdrdy_check|function|static bool event_txdrdy_check(void)
 DECL|event_txdrdy_clear|function|static void event_txdrdy_clear(void)
 DECL|irq_callback|variable|irq_callback
+DECL|uart0_addr|variable|uart0_addr
 DECL|uart_nrfx_err_check|function|static int uart_nrfx_err_check(struct device *dev)
 DECL|uart_nrfx_fifo_fill|function|static int uart_nrfx_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|uart_nrfx_fifo_read|function|static int uart_nrfx_fifo_read(struct device *dev, u8_t *rx_data, const int size)
