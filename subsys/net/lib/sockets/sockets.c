@@ -4,7 +4,6 @@ DECL|SOCK_EOF|macro|SOCK_EOF
 DECL|SOCK_NONBLOCK|macro|SOCK_NONBLOCK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|_k_fifo_wait_non_empty|function|static inline int _k_fifo_wait_non_empty(struct k_fifo *fifo, int32_t timeout)
-DECL|poll_events|variable|poll_events
 DECL|sock_get_flag|function|static inline u32_t sock_get_flag(struct net_context *ctx, u32_t mask)
 DECL|sock_is_eof|macro|sock_is_eof
 DECL|sock_is_nonblock|macro|sock_is_nonblock
