@@ -87,7 +87,7 @@ DECL|lwm2m_engine_get_u64|function|int lwm2m_engine_get_u64(char *pathstr, u64_t
 DECL|lwm2m_engine_get_u8|function|int lwm2m_engine_get_u8(char *pathstr, u8_t *value)
 DECL|lwm2m_engine_get|function|static int lwm2m_engine_get(char *pathstr, void *buf, u16_t buflen)
 DECL|lwm2m_engine_init|function|static int lwm2m_engine_init(struct device *dev)
-DECL|lwm2m_engine_register_exec_callback|function|int lwm2m_engine_register_exec_callback(char *pathstr,lwm2m_engine_exec_cb_t cb)
+DECL|lwm2m_engine_register_exec_callback|function|int lwm2m_engine_register_exec_callback(char *pathstr,lwm2m_engine_user_cb_t cb)
 DECL|lwm2m_engine_register_post_write_callback|function|int lwm2m_engine_register_post_write_callback(char *pathstr, lwm2m_engine_set_data_cb_t cb)
 DECL|lwm2m_engine_register_pre_write_callback|function|int lwm2m_engine_register_pre_write_callback(char *pathstr, lwm2m_engine_get_data_cb_t cb)
 DECL|lwm2m_engine_register_read_callback|function|int lwm2m_engine_register_read_callback(char *pathstr,lwm2m_engine_get_data_cb_t cb)

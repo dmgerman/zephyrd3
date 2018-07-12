@@ -77,9 +77,9 @@ DECL|float64_value_t|typedef|} float64_value_t;
 DECL|float64_value|struct|typedef struct float64_value {
 DECL|lwm2m_ctx_event_cb_t|typedef|typedef void (*lwm2m_ctx_event_cb_t)(struct lwm2m_ctx *ctx,
 DECL|lwm2m_ctx|struct|struct lwm2m_ctx {
-DECL|lwm2m_engine_exec_cb_t|typedef|typedef int (*lwm2m_engine_exec_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_engine_get_data_cb_t|typedef|typedef void *(*lwm2m_engine_get_data_cb_t)(u16_t obj_inst_id,
 DECL|lwm2m_engine_set_data_cb_t|typedef|typedef int (*lwm2m_engine_set_data_cb_t)(u16_t obj_inst_id,
+DECL|lwm2m_engine_user_cb_t|typedef|typedef int (*lwm2m_engine_user_cb_t)(u16_t obj_inst_id);
 DECL|lwm2m_rd_client_event|enum|enum lwm2m_rd_client_event {
 DECL|net_app_ctx|member|struct net_app_ctx net_app_ctx;
 DECL|net_init_timeout|member|s32_t net_init_timeout;

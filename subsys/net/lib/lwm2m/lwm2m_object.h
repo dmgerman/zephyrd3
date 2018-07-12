@@ -81,7 +81,7 @@ DECL|engine_put_s32|function|static inline size_t engine_put_s32(struct lwm2m_ou
 DECL|engine_put_s64|function|static inline size_t engine_put_s64(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s64_t value)
 DECL|engine_put_s8|function|static inline size_t engine_put_s8(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s8_t value)
 DECL|engine_put_string|function|static inline size_t engine_put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
-DECL|execute_cb|member|lwm2m_engine_exec_cb_t execute_cb;
+DECL|execute_cb|member|lwm2m_engine_user_cb_t execute_cb;
 DECL|field_count|member|u16_t field_count;
 DECL|fields|member|struct lwm2m_engine_obj_field *fields;
 DECL|float_val|member|float32_value_t float_val;

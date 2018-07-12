@@ -20,12 +20,12 @@ DECL|firmware_create|function|static struct lwm2m_engine_obj_inst *firmware_crea
 DECL|firmware_update_cb|function|static int firmware_update_cb(u16_t obj_inst_id)
 DECL|firmware|variable|firmware
 DECL|inst|variable|inst
-DECL|lwm2m_firmware_get_update_cb|function|lwm2m_engine_exec_cb_t lwm2m_firmware_get_update_cb(void)
+DECL|lwm2m_firmware_get_update_cb|function|lwm2m_engine_user_cb_t lwm2m_firmware_get_update_cb(void)
 DECL|lwm2m_firmware_get_update_result|function|u8_t lwm2m_firmware_get_update_result(void)
 DECL|lwm2m_firmware_get_update_state|function|u8_t lwm2m_firmware_get_update_state(void)
 DECL|lwm2m_firmware_get_write_cb|function|lwm2m_engine_set_data_cb_t lwm2m_firmware_get_write_cb(void)
 DECL|lwm2m_firmware_init|function|static int lwm2m_firmware_init(struct device *dev)
-DECL|lwm2m_firmware_set_update_cb|function|void lwm2m_firmware_set_update_cb(lwm2m_engine_exec_cb_t cb)
+DECL|lwm2m_firmware_set_update_cb|function|void lwm2m_firmware_set_update_cb(lwm2m_engine_user_cb_t cb)
 DECL|lwm2m_firmware_set_update_result|function|void lwm2m_firmware_set_update_result(u8_t result)
 DECL|lwm2m_firmware_set_update_state|function|void lwm2m_firmware_set_update_state(u8_t state)
 DECL|lwm2m_firmware_set_write_cb|function|void lwm2m_firmware_set_write_cb(lwm2m_engine_set_data_cb_t cb)
