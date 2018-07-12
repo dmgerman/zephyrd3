@@ -4,6 +4,7 @@ DECL|OMA_TLV_TYPE_RESOURCE_INSTANCE|enumerator|OMA_TLV_TYPE_RESOURCE_INSTANCE = 
 DECL|OMA_TLV_TYPE_RESOURCE|enumerator|OMA_TLV_TYPE_RESOURCE = 3
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|do_write_op_tlv_dummy_read|function|static int do_write_op_tlv_dummy_read(struct lwm2m_engine_context *context)
 DECL|do_write_op_tlv_item|function|static int do_write_op_tlv_item(struct lwm2m_engine_context *context)
 DECL|do_write_op_tlv|function|int do_write_op_tlv(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|get_bool|function|static size_t get_bool(struct lwm2m_input_context *in, bool *value)
