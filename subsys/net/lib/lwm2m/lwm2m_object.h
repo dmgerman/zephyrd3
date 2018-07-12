@@ -158,5 +158,7 @@ DECL|res_inst_id|member|u16_t res_inst_id;
 DECL|resource_count|member|u16_t resource_count;
 DECL|resources|member|struct lwm2m_engine_res_inst *resources;
 DECL|type|member|u8_t type;
+DECL|user_create_cb|member|lwm2m_engine_user_cb_t user_create_cb;
+DECL|user_delete_cb|member|lwm2m_engine_user_cb_t user_delete_cb;
 DECL|writer_flags|member|u8_t writer_flags;
 DECL|writer|member|const struct lwm2m_writer *writer;
