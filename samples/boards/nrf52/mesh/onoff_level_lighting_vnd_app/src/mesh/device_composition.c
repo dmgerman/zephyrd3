@@ -35,10 +35,12 @@ DECL|health_srv|variable|health_srv
 DECL|light_ctl_cli_op|variable|light_ctl_cli_op
 DECL|light_ctl_default_get|function|static void light_ctl_default_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_default_set_unack|function|static void light_ctl_default_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|light_ctl_default_setunack|function|static bool light_ctl_default_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_default_set|function|static void light_ctl_default_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_default_status|function|static void light_ctl_default_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_get|function|static void light_ctl_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_set_unack|function|static void light_ctl_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|light_ctl_setunack|function|static bool light_ctl_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_setup_srv_op|variable|light_ctl_setup_srv_op
 DECL|light_ctl_set|function|static void light_ctl_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_srv_op|variable|light_ctl_srv_op
@@ -50,6 +52,7 @@ DECL|light_ctl_temp_range_set_unack|function|static void light_ctl_temp_range_se
 DECL|light_ctl_temp_range_set|function|static void light_ctl_temp_range_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_range_status|function|static void light_ctl_temp_range_status(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_set_unack|function|static void light_ctl_temp_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|light_ctl_temp_setunack|function|static bool light_ctl_temp_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_set|function|static void light_ctl_temp_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_srv_op|variable|light_ctl_temp_srv_op
 DECL|light_ctl_temp_status|function|static void light_ctl_temp_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
