@@ -32,7 +32,7 @@ DECL|generic_level_state|struct|struct generic_level_state {
 DECL|generic_onoff_state|struct|struct generic_onoff_state {
 DECL|generic_onpowerup_state|struct|struct generic_onpowerup_state {
 DECL|last_delta|member|s32_t last_delta;
-DECL|last_level|member|int last_level;
+DECL|last_level|member|s16_t last_level;
 DECL|last_tid|member|u8_t last_tid;
 DECL|last_tid|member|u8_t last_tid;
 DECL|last_tid|member|u8_t last_tid;
@@ -46,7 +46,7 @@ DECL|last_tx_addr|member|u16_t last_tx_addr;
 DECL|last_tx_addr|member|u16_t last_tx_addr;
 DECL|last_tx_addr|member|u16_t last_tx_addr;
 DECL|last|member|u16_t last;
-DECL|level|member|int level;
+DECL|level|member|s16_t level;
 DECL|light_ctl_state|struct|struct light_ctl_state {
 DECL|light_lightness_state|struct|struct light_lightness_state {
 DECL|lightness_def|member|u16_t lightness_def;
