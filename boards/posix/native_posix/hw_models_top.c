@@ -3,7 +3,6 @@ DECL|IRQCNT|enumerator|static enum { HWTIMER = 0, IRQCNT, NUMBER_OF_TIMERS, NONE
 DECL|NONE|enumerator|static enum { HWTIMER = 0, IRQCNT, NUMBER_OF_TIMERS, NONE }
 DECL|NUMBER_OF_TIMERS|enumerator|static enum { HWTIMER = 0, IRQCNT, NUMBER_OF_TIMERS, NONE }
 DECL|Timer_list|variable|Timer_list
-DECL|device_time|variable|device_time
 DECL|end_of_time|variable|end_of_time
 DECL|hwm_cleanup|function|void hwm_cleanup(void)
 DECL|hwm_find_next_timer|function|void hwm_find_next_timer(void)
@@ -18,3 +17,4 @@ DECL|next_timer_index|variable|next_timer_index
 DECL|next_timer_time|variable|next_timer_time
 DECL|posix_get_hw_cycle|function|u64_t posix_get_hw_cycle(void)
 DECL|signaled_end|variable|signaled_end
+DECL|simu_time|variable|simu_time
