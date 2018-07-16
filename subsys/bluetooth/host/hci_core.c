@@ -21,6 +21,7 @@ DECL|br_start_inquiry|function|static int br_start_inquiry(const struct bt_br_di
 DECL|bt_addr_le_create_nrpa|function|int bt_addr_le_create_nrpa(bt_addr_le_t *addr)
 DECL|bt_addr_le_create_static|function|int bt_addr_le_create_static(bt_addr_le_t *addr)
 DECL|bt_addr_le_is_bonded|function|bool bt_addr_le_is_bonded(const bt_addr_le_t *addr)
+DECL|bt_ad|struct|struct bt_ad {
 DECL|bt_br_discovery_start|function|int bt_br_discovery_start(const struct bt_br_discovery_param *param, struct bt_br_discovery_result *results, size_t cnt, bt_br_discovery_cb_t cb)
 DECL|bt_br_discovery_stop|function|int bt_br_discovery_stop(void)
 DECL|bt_br_oob_get_local|function|int bt_br_oob_get_local(struct bt_br_oob *oob)
@@ -70,6 +71,7 @@ DECL|common_init|function|static int common_init(void)
 DECL|conn_complete|function|static void conn_complete(struct net_buf *buf)
 DECL|conn_req|function|static void conn_req(struct net_buf *buf)
 DECL|create_random_addr|function|static inline int create_random_addr(bt_addr_le_t *addr)
+DECL|data|member|const struct bt_data *data;
 DECL|device_supported_pkt_type|function|void device_supported_pkt_type(void)
 DECL|dh_key_cb|variable|dh_key_cb
 DECL|discovery_cb|variable|discovery_cb
@@ -133,6 +135,7 @@ DECL|le_set_event_mask|function|static int le_set_event_mask(void)
 DECL|le_set_privacy_mode|function|static int le_set_privacy_mode(const bt_addr_le_t *addr, u8_t mode)
 DECL|le_set_private_addr|function|static int le_set_private_addr(void)
 DECL|le_set_private_addr|function|static int le_set_private_addr(void)
+DECL|len|member|size_t len;
 DECL|link_encr|function|static void link_encr(const u16_t handle)
 DECL|link_key_neg_reply|function|static void link_key_neg_reply(const bt_addr_t *bdaddr)
 DECL|link_key_notify|function|static void link_key_notify(struct net_buf *buf)
@@ -168,7 +171,7 @@ DECL|rx_thread_data|variable|rx_thread_data
 DECL|scan_dev_found_cb|variable|scan_dev_found_cb
 DECL|send_cmd|function|static void send_cmd(void)
 DECL|set_advertise_enable|function|static int set_advertise_enable(bool enable)
-DECL|set_ad|function|static int set_ad(u16_t hci_op, const struct bt_data *ad, size_t ad_len)
+DECL|set_ad|function|static int set_ad(u16_t hci_op, const struct bt_ad *ad, size_t ad_len)
 DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|set_le_scan_enable|function|static int set_le_scan_enable(u8_t enable)
