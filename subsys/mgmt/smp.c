@@ -12,8 +12,8 @@ DECL|zephyr_smp_process_packet|function|zephyr_smp_process_packet(struct zephyr_
 DECL|zephyr_smp_reset_buf|function|zephyr_smp_reset_buf(void *buf, void *arg)
 DECL|zephyr_smp_reset_buf|variable|zephyr_smp_reset_buf
 DECL|zephyr_smp_rx_req|function|zephyr_smp_rx_req(struct zephyr_smp_transport *zst, struct net_buf *nb)
-DECL|zephyr_smp_split_frag|function|zephyr_smp_split_frag(struct net_buf **nb, u16_t mtu)
-DECL|zephyr_smp_transport_init|function|zephyr_smp_transport_init(struct zephyr_smp_transport *zst, zephyr_smp_transport_out_fn *output_func, zephyr_smp_transport_get_mtu_fn *get_mtu_func)
+DECL|zephyr_smp_split_frag|function|zephyr_smp_split_frag(struct net_buf **nb, void *arg, u16_t mtu)
+DECL|zephyr_smp_transport_init|function|zephyr_smp_transport_init(struct zephyr_smp_transport *zst, zephyr_smp_transport_out_fn *output_func, zephyr_smp_transport_get_mtu_fn *get_mtu_func, zephyr_smp_transport_ud_copy_fn *ud_copy_func, zephyr_smp_transport_ud_free_fn *ud_free_func)
 DECL|zephyr_smp_trim_front|function|zephyr_smp_trim_front(void *buf, size_t len, void *arg)
 DECL|zephyr_smp_trim_front|variable|zephyr_smp_trim_front
 DECL|zephyr_smp_tx_rsp|function|zephyr_smp_tx_rsp(struct smp_streamer *ns, void *rsp, void *arg)
