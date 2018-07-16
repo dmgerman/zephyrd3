@@ -62,7 +62,7 @@ DECL|bt_recv|function|int bt_recv(struct net_buf *buf)
 DECL|bt_send|function|int bt_send(struct net_buf *buf)
 DECL|bt_set_id_addr|function|int bt_set_id_addr(const bt_addr_le_t *addr)
 DECL|bt_set_name|function|int bt_set_name(const char *name)
-DECL|bt_set_static_addr|function|int bt_set_static_addr(void)
+DECL|bt_set_static_addr|function|int bt_set_static_addr(const bt_addr_le_t *addr)
 DECL|bt_unpair|function|int bt_unpair(u8_t id, const bt_addr_le_t *addr)
 DECL|check_pending_conn|function|static void check_pending_conn(const bt_addr_le_t *id_addr, const bt_addr_le_t *addr, u8_t evtype)
 DECL|clock_offset|member|u16_t clock_offset;
