@@ -52,6 +52,10 @@ DECL|cmd_connect_le|function|static int cmd_connect_le(int argc, char *argv[])
 DECL|cmd_disconnect|function|static int cmd_disconnect(int argc, char *argv[])
 DECL|cmd_fixed_passkey|function|static int cmd_fixed_passkey(int argc, char *argv[])
 DECL|cmd_hci_cmd|function|static int cmd_hci_cmd(int argc, char *argv[])
+DECL|cmd_id_create|function|static int cmd_id_create(int argc, char *argv[])
+DECL|cmd_id_reset|function|static int cmd_id_reset(int argc, char *argv[])
+DECL|cmd_id_select|function|static int cmd_id_select(int argc, char *argv[])
+DECL|cmd_id_show|function|static int cmd_id_show(int argc, char *argv[])
 DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_l2cap_connect|function|static int cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_disconnect|function|static int cmd_l2cap_disconnect(int argc, char *argv[])
@@ -111,6 +115,7 @@ DECL|rfcomm_server|variable|rfcomm_server
 DECL|sdp_a2src_user|function|static u8_t sdp_a2src_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sdp_hfp_ag_user|function|static u8_t sdp_hfp_ag_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
+DECL|selected_id|variable|selected_id
 DECL|server|variable|server
 DECL|spp_attrs|variable|spp_attrs
 DECL|spp_rec|variable|spp_rec
