@@ -4,6 +4,8 @@ DECL|GET_CONTROLLER_INSTANCE|macro|GET_CONTROLLER_INSTANCE
 DECL|IIR_IID_NO_INTERRUPT_PENDING|macro|IIR_IID_NO_INTERRUPT_PENDING
 DECL|api|variable|api
 DECL|baud_divisor|member|u32_t baud_divisor;
+DECL|cb_data|member|void *cb_data;
+DECL|cb_data|member|void *cb_data;
 DECL|clock_gate|member|clk_periph_t clock_gate;
 DECL|config_info_0|variable|config_info_0
 DECL|config_info_1|variable|config_info_1
@@ -30,7 +32,7 @@ DECL|uart_qmsi_fifo_fill|function|static int uart_qmsi_fifo_fill(struct device *
 DECL|uart_qmsi_fifo_read|function|static int uart_qmsi_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_qmsi_get_power_state|function|static u32_t uart_qmsi_get_power_state(struct device *dev)
 DECL|uart_qmsi_init|function|static int uart_qmsi_init(struct device *dev)
-DECL|uart_qmsi_irq_callback_set|function|static void uart_qmsi_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_qmsi_irq_callback_set|function|static void uart_qmsi_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_qmsi_irq_err_disable|function|static void uart_qmsi_irq_err_disable(struct device *dev)
 DECL|uart_qmsi_irq_err_enable|function|static void uart_qmsi_irq_err_enable(struct device *dev)
 DECL|uart_qmsi_irq_is_pending|function|static int uart_qmsi_irq_is_pending(struct device *dev)
@@ -50,5 +52,5 @@ DECL|uart_qmsi_set_power_state|function|static void uart_qmsi_set_power_state(st
 DECL|uart_qmsi_set_power_state|macro|uart_qmsi_set_power_state
 DECL|uart_resume_device_from_suspend|function|static int uart_resume_device_from_suspend(struct device *dev)
 DECL|uart_suspend_device|function|static int uart_suspend_device(struct device *dev)
-DECL|user_cb|member|uart_irq_callback_t user_cb;
-DECL|user_cb|member|uart_irq_callback_t user_cb;
+DECL|user_cb|member|uart_irq_callback_user_data_t user_cb;
+DECL|user_cb|member|uart_irq_callback_user_data_t user_cb;

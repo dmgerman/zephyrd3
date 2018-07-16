@@ -1,6 +1,7 @@
 DECL|base|member|LPUART_Type *base;
 DECL|baud_rate|member|u32_t baud_rate;
-DECL|callback|member|uart_irq_callback_t callback;
+DECL|callback|member|uart_irq_callback_user_data_t callback;
+DECL|cb_data|member|void *cb_data;
 DECL|clock_name|member|char *clock_name;
 DECL|clock_subsys|member|clock_control_subsys_t clock_subsys;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
@@ -17,7 +18,7 @@ DECL|mcux_lpuart_err_check|function|static int mcux_lpuart_err_check(struct devi
 DECL|mcux_lpuart_fifo_fill|function|static int mcux_lpuart_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|mcux_lpuart_fifo_read|function|static int mcux_lpuart_fifo_read(struct device *dev, u8_t *rx_data, const int len)
 DECL|mcux_lpuart_init|function|static int mcux_lpuart_init(struct device *dev)
-DECL|mcux_lpuart_irq_callback_set|function|static void mcux_lpuart_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|mcux_lpuart_irq_callback_set|function|static void mcux_lpuart_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|mcux_lpuart_irq_err_disable|function|static void mcux_lpuart_irq_err_disable(struct device *dev)
 DECL|mcux_lpuart_irq_err_enable|function|static void mcux_lpuart_irq_err_enable(struct device *dev)
 DECL|mcux_lpuart_irq_is_pending|function|static int mcux_lpuart_irq_is_pending(struct device *dev)

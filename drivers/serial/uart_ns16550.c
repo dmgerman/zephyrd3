@@ -87,7 +87,8 @@ DECL|THR|macro|THR
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|UART_REG_ADDR_INTERVAL|macro|UART_REG_ADDR_INTERVAL
 DECL|baud_rate|member|u32_t baud_rate; /**< Baud rate */
-DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
+DECL|cb_data|member|void *cb_data; /**< Callback function arg */
+DECL|cb|member|uart_irq_callback_user_data_t cb; /**< Callback function pointer */
 DECL|dlf|member|u8_t dlf; /**< DLF value */
 DECL|iir_cache|member|u8_t iir_cache; /**< cache of IIR since it clears when read */
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
@@ -120,7 +121,7 @@ DECL|uart_ns16550_err_check|function|static int uart_ns16550_err_check(struct de
 DECL|uart_ns16550_fifo_fill|function|static int uart_ns16550_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
 DECL|uart_ns16550_fifo_read|function|static int uart_ns16550_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_ns16550_init|function|static int uart_ns16550_init(struct device *dev)
-DECL|uart_ns16550_irq_callback_set|function|static void uart_ns16550_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_ns16550_irq_callback_set|function|static void uart_ns16550_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_ns16550_irq_err_disable|function|static void uart_ns16550_irq_err_disable(struct device *dev)
 DECL|uart_ns16550_irq_err_enable|function|static void uart_ns16550_irq_err_enable(struct device *dev)
 DECL|uart_ns16550_irq_is_pending|function|static int uart_ns16550_irq_is_pending(struct device *dev)

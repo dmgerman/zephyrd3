@@ -1,6 +1,7 @@
 DECL|base|member|USART_TypeDef *base;
 DECL|baud_rate|member|u32_t baud_rate;
-DECL|callback|member|uart_irq_callback_t callback;
+DECL|callback|member|uart_irq_callback_user_data_t callback;
+DECL|cb_data|member|void *cb_data;
 DECL|clock|member|CMU_Clock_TypeDef clock;
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
 DECL|loc|member|unsigned int loc;
@@ -20,7 +21,7 @@ DECL|uart_gecko_fifo_fill|function|static int uart_gecko_fifo_fill(struct device
 DECL|uart_gecko_fifo_read|function|static int uart_gecko_fifo_read(struct device *dev, u8_t *rx_data, const int len)
 DECL|uart_gecko_init_pins|function|static void uart_gecko_init_pins(struct device *dev)
 DECL|uart_gecko_init|function|static int uart_gecko_init(struct device *dev)
-DECL|uart_gecko_irq_callback_set|function|static void uart_gecko_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_gecko_irq_callback_set|function|static void uart_gecko_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_gecko_irq_err_disable|function|static void uart_gecko_irq_err_disable(struct device *dev)
 DECL|uart_gecko_irq_err_enable|function|static void uart_gecko_irq_err_enable(struct device *dev)
 DECL|uart_gecko_irq_is_pending|function|static int uart_gecko_irq_is_pending(struct device *dev)

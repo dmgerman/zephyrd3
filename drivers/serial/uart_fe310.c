@@ -10,7 +10,8 @@ DECL|RXDATA_MASK|macro|RXDATA_MASK
 DECL|TXCTRL_TXEN|macro|TXCTRL_TXEN
 DECL|TXDATA_FULL|macro|TXDATA_FULL
 DECL|baud_rate|member|u32_t baud_rate;
-DECL|callback|member|uart_irq_callback_t callback;
+DECL|callback|member|uart_irq_callback_user_data_t callback;
+DECL|cb_data|member|void *cb_data;
 DECL|cfg_func|member|irq_cfg_func_t cfg_func;
 DECL|div|member|u32_t div;
 DECL|ie|member|u32_t ie;
@@ -34,7 +35,7 @@ DECL|uart_fe310_driver_api|variable|uart_fe310_driver_api
 DECL|uart_fe310_fifo_fill|function|static int uart_fe310_fifo_fill(struct device *dev,const u8_t *tx_data, int size)
 DECL|uart_fe310_fifo_read|function|static int uart_fe310_fifo_read(struct device *dev,u8_t *rx_data, const int size)
 DECL|uart_fe310_init|function|static int uart_fe310_init(struct device *dev)
-DECL|uart_fe310_irq_callback_set|function|static void uart_fe310_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
+DECL|uart_fe310_irq_callback_set|function|static void uart_fe310_irq_callback_set(struct device *dev,uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_fe310_irq_cfg_func_0|function|static void uart_fe310_irq_cfg_func_0(void)
 DECL|uart_fe310_irq_cfg_func_1|function|static void uart_fe310_irq_cfg_func_1(void)
 DECL|uart_fe310_irq_err_disable|function|static void uart_fe310_irq_err_disable(struct device *dev)

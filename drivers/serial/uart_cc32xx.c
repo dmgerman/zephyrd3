@@ -1,6 +1,7 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
+DECL|cb_data|member|void *cb_data; /**< Callback function arg */
+DECL|cb|member|uart_irq_callback_user_data_t cb; /**< Callback function pointer */
 DECL|uart_cc32xx_dev_cfg_0|variable|uart_cc32xx_dev_cfg_0
 DECL|uart_cc32xx_dev_data_0|variable|uart_cc32xx_dev_data_0
 DECL|uart_cc32xx_dev_data_t|struct|struct uart_cc32xx_dev_data_t {
@@ -9,7 +10,7 @@ DECL|uart_cc32xx_err_check|function|static int uart_cc32xx_err_check(struct devi
 DECL|uart_cc32xx_fifo_fill|function|static int uart_cc32xx_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
 DECL|uart_cc32xx_fifo_read|function|static int uart_cc32xx_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_cc32xx_init|function|static int uart_cc32xx_init(struct device *dev)
-DECL|uart_cc32xx_irq_callback_set|function|static void uart_cc32xx_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_cc32xx_irq_callback_set|function|static void uart_cc32xx_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_cc32xx_irq_err_disable|function|static void uart_cc32xx_irq_err_disable(struct device *dev)
 DECL|uart_cc32xx_irq_err_enable|function|static void uart_cc32xx_irq_err_enable(struct device *dev)
 DECL|uart_cc32xx_irq_is_pending|function|static int uart_cc32xx_irq_is_pending(struct device *dev)

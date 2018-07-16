@@ -12,7 +12,8 @@ DECL|CDC_CONTROL_SERIAL_STATE_TIMEOUT_US|macro|CDC_CONTROL_SERIAL_STATE_TIMEOUT_
 DECL|DEV_DATA|macro|DEV_DATA
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__packed|variable|__packed
-DECL|cb|member|uart_irq_callback_t cb;
+DECL|cb_data|member|void *cb_data;
+DECL|cb|member|uart_irq_callback_user_data_t cb;
 DECL|cdc_acm_baudrate_set|function|static void cdc_acm_baudrate_set(struct device *dev, u32_t baudrate)
 DECL|cdc_acm_bulk_in|function|static void cdc_acm_bulk_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
 DECL|cdc_acm_bulk_out|function|static void cdc_acm_bulk_out(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
@@ -27,7 +28,7 @@ DECL|cdc_acm_fifo_fill|function|static int cdc_acm_fifo_fill(struct device *dev,
 DECL|cdc_acm_fifo_read|function|static int cdc_acm_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|cdc_acm_init|function|static int cdc_acm_init(struct device *dev)
 DECL|cdc_acm_int_in|function|static void cdc_acm_int_in(u8_t ep, enum usb_dc_ep_cb_status_code ep_status)
-DECL|cdc_acm_irq_callback_set|function|static void cdc_acm_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|cdc_acm_irq_callback_set|function|static void cdc_acm_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|cdc_acm_irq_is_pending|function|static int cdc_acm_irq_is_pending(struct device *dev)
 DECL|cdc_acm_irq_rx_disable|function|static void cdc_acm_irq_rx_disable(struct device *dev)
 DECL|cdc_acm_irq_rx_enable|function|static void cdc_acm_irq_rx_enable(struct device *dev)

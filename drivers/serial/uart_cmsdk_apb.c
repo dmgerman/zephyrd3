@@ -23,7 +23,8 @@ DECL|ctrl|member|volatile u32_t ctrl;
 DECL|data|member|volatile u32_t data;
 DECL|intclear|member|volatile u32_t intclear;
 DECL|intstatus|member|volatile u32_t intstatus;
-DECL|irq_cb|member|uart_irq_callback_t irq_cb;
+DECL|irq_cb_data|member|void *irq_cb_data;
+DECL|irq_cb|member|uart_irq_callback_user_data_t irq_cb;
 DECL|state|member|volatile u32_t state;
 DECL|uart_cc_as|member|const struct arm_clock_control_t uart_cc_as;
 DECL|uart_cc_dss|member|const struct arm_clock_control_t uart_cc_dss;
@@ -44,7 +45,7 @@ DECL|uart_cmsdk_apb_driver_api|variable|uart_cmsdk_apb_driver_api
 DECL|uart_cmsdk_apb_fifo_fill|function|static int uart_cmsdk_apb_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|uart_cmsdk_apb_fifo_read|function|static int uart_cmsdk_apb_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_cmsdk_apb_init|function|static int uart_cmsdk_apb_init(struct device *dev)
-DECL|uart_cmsdk_apb_irq_callback_set|function|static void uart_cmsdk_apb_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_cmsdk_apb_irq_callback_set|function|static void uart_cmsdk_apb_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_cmsdk_apb_irq_config_func_0|function|static void uart_cmsdk_apb_irq_config_func_0(struct device *dev)
 DECL|uart_cmsdk_apb_irq_config_func_0|function|static void uart_cmsdk_apb_irq_config_func_0(struct device *dev)
 DECL|uart_cmsdk_apb_irq_config_func_1|function|static void uart_cmsdk_apb_irq_config_func_1(struct device *dev)

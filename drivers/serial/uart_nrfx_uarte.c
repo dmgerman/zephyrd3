@@ -37,7 +37,8 @@ DECL|UARTE_TX_BUFFER_SIZE|macro|UARTE_TX_BUFFER_SIZE
 DECL|UART_NRF_UARTE_DEVICE|macro|UART_NRF_UARTE_DEVICE
 DECL|baudrate_set|function|static int baudrate_set(struct device *dev, u32_t baudrate)
 DECL|baudrate|member|nrf_uarte_baudrate_t baudrate;
-DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
+DECL|cb_data|member|void *cb_data; /**< Callback function arg */
+DECL|cb|member|uart_irq_callback_user_data_t cb; /**< Callback function pointer */
 DECL|get_dev_config|function|static inline const struct uarte_nrfx_config *get_dev_config(struct device *dev)
 DECL|get_dev_data|function|static inline struct uarte_nrfx_data *get_dev_data(struct device *dev)
 DECL|get_uarte_instance|function|static inline NRF_UARTE_Type *get_uarte_instance(struct device *dev)
@@ -58,7 +59,7 @@ DECL|uarte_nrfx_data|struct|struct uarte_nrfx_data {
 DECL|uarte_nrfx_err_check|function|static int uarte_nrfx_err_check(struct device *dev)
 DECL|uarte_nrfx_fifo_fill|function|static int uarte_nrfx_fifo_fill(struct device *dev,const u8_t *tx_data, int len)
 DECL|uarte_nrfx_fifo_read|function|static int uarte_nrfx_fifo_read(struct device *dev,u8_t *rx_data, const int size)
-DECL|uarte_nrfx_irq_callback_set|function|static void uarte_nrfx_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
+DECL|uarte_nrfx_irq_callback_set|function|static void uarte_nrfx_irq_callback_set(struct device *dev,uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uarte_nrfx_irq_err_disable|function|static void uarte_nrfx_irq_err_disable(struct device *dev)
 DECL|uarte_nrfx_irq_err_enable|function|static void uarte_nrfx_irq_err_enable(struct device *dev)
 DECL|uarte_nrfx_irq_is_pending|function|static int uarte_nrfx_irq_is_pending(struct device *dev)

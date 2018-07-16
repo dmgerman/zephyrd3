@@ -56,7 +56,8 @@ DECL|_sr|member|u32_t _sr;
 DECL|_uart|struct|struct _uart {
 DECL|baud_rate|member|u32_t baud_rate; /* Baud rate */
 DECL|baudrate_set|function|static void baudrate_set(struct device *dev, u32_t baudrate, u32_t sys_clk_freq_hz)
-DECL|cb|member|uart_irq_callback_t cb; /**< Callback function pointer */
+DECL|cb_data|member|void *cb_data; /**< Callback function arg */
+DECL|cb|member|uart_irq_callback_user_data_t cb; /**< Callback function pointer */
 DECL|cr|macro|cr
 DECL|ctl|member|u32_t ctl;
 DECL|disable|function|static inline void disable(struct device *dev)
@@ -103,7 +104,7 @@ DECL|uart_stellaris_driver_api|variable|uart_stellaris_driver_api
 DECL|uart_stellaris_fifo_fill|function|static int uart_stellaris_fifo_fill(struct device *dev, const u8_t *tx_data, int len)
 DECL|uart_stellaris_fifo_read|function|static int uart_stellaris_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_stellaris_init|function|static int uart_stellaris_init(struct device *dev)
-DECL|uart_stellaris_irq_callback_set|function|static void uart_stellaris_irq_callback_set(struct device *dev, uart_irq_callback_t cb)
+DECL|uart_stellaris_irq_callback_set|function|static void uart_stellaris_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_stellaris_irq_err_disable|function|static void uart_stellaris_irq_err_disable(struct device *dev)
 DECL|uart_stellaris_irq_err_enable|function|static void uart_stellaris_irq_err_enable(struct device *dev)
 DECL|uart_stellaris_irq_is_pending|function|static int uart_stellaris_irq_is_pending(struct device *dev)

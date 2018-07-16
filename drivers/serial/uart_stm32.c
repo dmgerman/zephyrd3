@@ -15,7 +15,7 @@ DECL|uart_stm32_driver_api|variable|uart_stm32_driver_api
 DECL|uart_stm32_fifo_fill|function|static int uart_stm32_fifo_fill(struct device *dev, const u8_t *tx_data, int size)
 DECL|uart_stm32_fifo_read|function|static int uart_stm32_fifo_read(struct device *dev, u8_t *rx_data, const int size)
 DECL|uart_stm32_init|function|static int uart_stm32_init(struct device *dev)
-DECL|uart_stm32_irq_callback_set|function|static void uart_stm32_irq_callback_set(struct device *dev,uart_irq_callback_t cb)
+DECL|uart_stm32_irq_callback_set|function|static void uart_stm32_irq_callback_set(struct device *dev,uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_stm32_irq_err_disable|function|static void uart_stm32_irq_err_disable(struct device *dev)
 DECL|uart_stm32_irq_err_enable|function|static void uart_stm32_irq_err_enable(struct device *dev)
 DECL|uart_stm32_irq_is_pending|function|static int uart_stm32_irq_is_pending(struct device *dev)
