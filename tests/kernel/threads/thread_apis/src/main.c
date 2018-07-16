@@ -8,3 +8,6 @@ DECL|test_customdata_get_set_preempt|function|void test_customdata_get_set_preem
 DECL|test_main|function|void test_main(void)
 DECL|test_systhreads_idle|function|void test_systhreads_idle(void)
 DECL|test_systhreads_main|function|void test_systhreads_main(void)
+DECL|test_user_mode|function|void test_user_mode(void)
+DECL|test_user_mode|function|void test_user_mode(void)
+DECL|umode_entry|function|static void umode_entry(void *thread_id, void *p2, void *p3)
