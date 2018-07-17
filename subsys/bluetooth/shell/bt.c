@@ -104,7 +104,6 @@ DECL|rfcomm_dlc|variable|rfcomm_dlc
 DECL|rfcomm_server|variable|rfcomm_server
 DECL|sdp_a2src_user|function|static u8_t sdp_a2src_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sdp_hfp_ag_user|function|static u8_t sdp_hfp_ag_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
-DECL|sd|variable|sd
 DECL|security_changed|function|static void security_changed(struct bt_conn *conn, bt_security_t level)
 DECL|server|variable|server
 DECL|spp_attrs|variable|spp_attrs
