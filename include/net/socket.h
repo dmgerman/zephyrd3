@@ -33,6 +33,7 @@ DECL|fcntl|macro|fcntl
 DECL|fd|member|int fd;
 DECL|freeaddrinfo|function|static inline void freeaddrinfo(struct zsock_addrinfo *ai)
 DECL|getaddrinfo|function|static inline int getaddrinfo(const char *host, const char *service, const struct zsock_addrinfo *hints, struct zsock_addrinfo **res)
+DECL|getsockopt|function|static inline int getsockopt(int sock, int level, int optname, void *optval, socklen_t *optlen)
 DECL|inet_ntop|function|static inline char *inet_ntop(sa_family_t family, const void *src, char *dst, size_t size)
 DECL|inet_pton|function|static inline int inet_pton(sa_family_t family, const char *src, void *dst)
 DECL|listen|function|static inline int listen(int sock, int backlog)
@@ -43,6 +44,7 @@ DECL|recv|function|static inline ssize_t recv(int sock, void *buf, size_t max_le
 DECL|revents|member|short revents;
 DECL|sendto|function|static inline ssize_t sendto(int sock, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
 DECL|send|function|static inline ssize_t send(int sock, const void *buf, size_t len, int flags)
+DECL|setsockopt|function|static inline int setsockopt(int sock, int level, int optname, const void *optval, socklen_t optlen)
 DECL|socket|function|static inline int socket(int family, int type, int proto)
 DECL|zsock_addrinfo|struct|struct zsock_addrinfo {
 DECL|zsock_pollfd|struct|struct zsock_pollfd {
