@@ -30,6 +30,7 @@ DECL|tls_mbedtls_init|function|static int tls_mbedtls_init(struct net_context *c
 DECL|tls_mbedtls_set_credentials|function|static int tls_mbedtls_set_credentials(struct tls_context *tls)
 DECL|tls_opt_ciphersuite_list_get|function|static int tls_opt_ciphersuite_list_get(struct net_context *context,void *optval, socklen_t *optlen)
 DECL|tls_opt_ciphersuite_list_set|function|static int tls_opt_ciphersuite_list_set(struct net_context *context,const void *optval, socklen_t optlen)
+DECL|tls_opt_ciphersuite_used_get|function|static int tls_opt_ciphersuite_used_get(struct net_context *context,void *optval, socklen_t *optlen)
 DECL|tls_opt_hostname_set|function|static int tls_opt_hostname_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
