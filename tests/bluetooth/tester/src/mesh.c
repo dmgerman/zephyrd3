@@ -58,7 +58,7 @@ DECL|net_key|variable|net_key
 DECL|net_recv_ev|function|void net_recv_ev(u8_t ttl, u8_t ctl, u16_t src, u16_t dst, const void *payload, size_t payload_len)
 DECL|net_send|function|static void net_send(u8_t *data, u16_t len)
 DECL|net|variable|net
-DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
+DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, u32_t number)
 DECL|output_string|function|static int output_string(const char *str)
 DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
