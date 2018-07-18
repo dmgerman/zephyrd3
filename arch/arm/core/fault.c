@@ -33,6 +33,8 @@ DECL|INTEGRITY_SIGNATURE_STD|macro|INTEGRITY_SIGNATURE_STD
 DECL|INTEGRITY_SIGNATURE|macro|INTEGRITY_SIGNATURE
 DECL|PR_EXC|macro|PR_EXC
 DECL|PR_EXC|macro|PR_EXC
+DECL|SECURE_STACK_DUMP|macro|SECURE_STACK_DUMP
+DECL|SECURE_STACK_DUMP|macro|SECURE_STACK_DUMP
 DECL|STORE_xFAR|macro|STORE_xFAR
 DECL|STORE_xFAR|macro|STORE_xFAR
 DECL|_BusFault|function|static void _BusFault(const NANO_ESF *esf, int fromHardFault)
@@ -41,9 +43,10 @@ DECL|_FaultDump|function|static u32_t _FaultDump(const NANO_ESF *esf, int fault)
 DECL|_FaultDump|function|u32_t _FaultDump(const NANO_ESF *esf, int fault)
 DECL|_FaultInit|function|void _FaultInit(void)
 DECL|_FaultThreadShow|function|static void _FaultThreadShow(const NANO_ESF *esf)
-DECL|_Fault|function|void _Fault(const NANO_ESF *esf, u32_t exc_return)
+DECL|_Fault|function|void _Fault(NANO_ESF *esf, u32_t exc_return)
 DECL|_HardFault|function|static u32_t _HardFault(const NANO_ESF *esf)
 DECL|_MpuFault|function|static u32_t _MpuFault(const NANO_ESF *esf, int fromHardFault)
 DECL|_ReservedException|function|static void _ReservedException(const NANO_ESF *esf, int fault)
 DECL|_SecureFault|function|static void _SecureFault(const NANO_ESF *esf)
+DECL|_SecureStackDump|function|static void _SecureStackDump(const NANO_ESF *secure_esf)
 DECL|_UsageFault|function|static u32_t _UsageFault(const NANO_ESF *esf)
