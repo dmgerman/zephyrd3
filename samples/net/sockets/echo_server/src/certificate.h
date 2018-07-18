@@ -1,0 +1,4 @@
+DECL|SERVER_CERTIFICATE_TAG|macro|SERVER_CERTIFICATE_TAG
+DECL|__CERTIFICATE_H__|macro|__CERTIFICATE_H__
+DECL|private_key|variable|private_key
+DECL|server_certificate|variable|server_certificate

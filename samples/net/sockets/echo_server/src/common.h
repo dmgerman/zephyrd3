@@ -1,6 +1,7 @@
 DECL|MY_PORT|macro|MY_PORT
 DECL|RECV_BUFFER_SIZE|macro|RECV_BUFFER_SIZE
 DECL|STACK_SIZE|macro|STACK_SIZE
+DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|THREAD_PRIORITY|macro|THREAD_PRIORITY
 DECL|configs|struct|struct configs {
 DECL|counter|member|u32_t counter;

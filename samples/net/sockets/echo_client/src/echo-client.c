@@ -4,6 +4,7 @@ DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|conf|variable|conf
 DECL|fds|variable|fds
+DECL|init_app|function|static void init_app(void)
 DECL|ipsum_len|variable|ipsum_len
 DECL|lorem_ipsum|variable|lorem_ipsum
 DECL|main|function|void main(void)
