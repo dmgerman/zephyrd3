@@ -9,10 +9,23 @@ DECL|LOG_CURRENT_MODULE_ID|macro|LOG_CURRENT_MODULE_ID
 DECL|LOG_CURRENT_MODULE_ID|macro|LOG_CURRENT_MODULE_ID
 DECL|LOG_DYNAMIC_ID_GET|macro|LOG_DYNAMIC_ID_GET
 DECL|LOG_DYNAMIC_ID_GET|macro|LOG_DYNAMIC_ID_GET
+DECL|LOG_FILTERS_NUM_OF_SLOTS|macro|LOG_FILTERS_NUM_OF_SLOTS
+DECL|LOG_FILTER_AGGR_SLOT_GET|macro|LOG_FILTER_AGGR_SLOT_GET
+DECL|LOG_FILTER_AGGR_SLOT_IDX|macro|LOG_FILTER_AGGR_SLOT_IDX
+DECL|LOG_FILTER_FIRST_BACKEND_SLOT_IDX|macro|LOG_FILTER_FIRST_BACKEND_SLOT_IDX
+DECL|LOG_FILTER_SLOT_GET|macro|LOG_FILTER_SLOT_GET
+DECL|LOG_FILTER_SLOT_MASK|macro|LOG_FILTER_SLOT_MASK
+DECL|LOG_FILTER_SLOT_SET|macro|LOG_FILTER_SLOT_SET
+DECL|LOG_FILTER_SLOT_SHIFT|macro|LOG_FILTER_SLOT_SHIFT
+DECL|LOG_FILTER_SLOT_SIZE|macro|LOG_FILTER_SLOT_SIZE
 DECL|LOG_FRONTEND_H|macro|LOG_FRONTEND_H
+DECL|LOG_INSTANCE_DYNAMIC_DATA|macro|LOG_INSTANCE_DYNAMIC_DATA
+DECL|LOG_ITEM_DYNAMIC_DATA|macro|LOG_ITEM_DYNAMIC_DATA
 DECL|LOG_LEVEL_BITS|macro|LOG_LEVEL_BITS
 DECL|LOG_MODULE_PRESENT|macro|LOG_MODULE_PRESENT
 DECL|LOG_MODULE_PRESENT|macro|LOG_MODULE_PRESENT
+DECL|LOG_RUNTIME_FILTER|macro|LOG_RUNTIME_FILTER
+DECL|LOG_RUNTIME_FILTER|macro|LOG_RUNTIME_FILTER
 DECL|_LOG_CONST_LEVEL_CHECK|macro|_LOG_CONST_LEVEL_CHECK
 DECL|_LOG_HEXDUMP_INSTANCE|macro|_LOG_HEXDUMP_INSTANCE
 DECL|_LOG_HEXDUMP|macro|_LOG_HEXDUMP
@@ -45,4 +58,10 @@ DECL|__LOG_INTERNAL|macro|__LOG_INTERNAL
 DECL|__LOG_RESOLVED_LEVEL2|macro|__LOG_RESOLVED_LEVEL2
 DECL|__LOG_RESOLVED_LEVEL3|macro|__LOG_RESOLVED_LEVEL3
 DECL|__LOG|macro|__LOG
+DECL|log_compiled_level_get|function|static inline u8_t log_compiled_level_get(u32_t source_id)
+DECL|log_const_source_id|function|static inline u32_t log_const_source_id(const struct log_source_const_data *data)
+DECL|log_dynamic_filters_get|function|static inline u32_t *log_dynamic_filters_get(u32_t source_id)
+DECL|log_dynamic_source_id|function|static inline u32_t log_dynamic_source_id(struct log_source_dynamic_data *data)
+DECL|log_name_get|function|static inline const char *log_name_get(u32_t source_id)
 DECL|log_printf_arg_checker|function|void log_printf_arg_checker(const char *fmt, ...)
+DECL|log_sources_count|function|static inline u32_t log_sources_count(void)
