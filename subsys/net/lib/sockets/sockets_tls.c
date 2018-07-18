@@ -1,6 +1,7 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|ca_chain|member|mbedtls_x509_crt ca_chain;
+DECL|ciphersuites|member|int ciphersuites[CONFIG_NET_SOCKETS_TLS_MAX_CIPHERSUITES + 1];
 DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
 DECL|flags|member|int flags;
@@ -27,6 +28,8 @@ DECL|tls_init|function|static int tls_init(struct device *unused)
 DECL|tls_mbedtls_handshake|function|static int tls_mbedtls_handshake(struct net_context *context)
 DECL|tls_mbedtls_init|function|static int tls_mbedtls_init(struct net_context *context, bool is_server)
 DECL|tls_mbedtls_set_credentials|function|static int tls_mbedtls_set_credentials(struct tls_context *tls)
+DECL|tls_opt_ciphersuite_list_get|function|static int tls_opt_ciphersuite_list_get(struct net_context *context,void *optval, socklen_t *optlen)
+DECL|tls_opt_ciphersuite_list_set|function|static int tls_opt_ciphersuite_list_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_hostname_set|function|static int tls_opt_hostname_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
