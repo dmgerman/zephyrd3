@@ -88,7 +88,7 @@ DECL|mod_pub_get|function|static int mod_pub_get(u16_t addr, u16_t mod_id, u16_t
 DECL|mod_pub_set|function|static int mod_pub_set(u16_t addr, u16_t mod_id, u16_t cid, char *argv[])
 DECL|net_idx|member|u16_t net_idx;
 DECL|net|variable|net
-DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
+DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, u32_t number)
 DECL|output_string|function|static int output_string(const char *str)
 DECL|prov_complete|function|static void prov_complete(u16_t net_idx, u16_t addr)
 DECL|prov_reset|function|static void prov_reset(void)
