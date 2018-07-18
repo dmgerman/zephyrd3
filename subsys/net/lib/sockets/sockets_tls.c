@@ -4,6 +4,11 @@ DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
 DECL|flags|member|int flags;
 DECL|is_used|member|bool is_used;
+DECL|options|member|} options;
+DECL|sec_tag_count|member|int sec_tag_count;
+DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
+DECL|sec_tag_list|struct|struct sec_tag_list {
+DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
 DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
 DECL|tls_clone|function|static struct tls_context *tls_clone(struct tls_context *source_tls)
@@ -17,6 +22,8 @@ DECL|tls_init|function|static int tls_init(struct device *unused)
 DECL|tls_mbedtls_handshake|function|static int tls_mbedtls_handshake(struct net_context *context)
 DECL|tls_mbedtls_init|function|static int tls_mbedtls_init(struct net_context *context, bool is_server)
 DECL|tls_mbedtls_set_credentials|function|static int tls_mbedtls_set_credentials(struct tls_context *tls)
+DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
+DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
 DECL|tls_rx|function|static int tls_rx(void *ctx, unsigned char *buf, size_t len)
 DECL|tls_tx|function|static int tls_tx(void *ctx, const unsigned char *buf, size_t len)
