@@ -13,7 +13,7 @@ DECL|ss_gpio_0_config|variable|ss_gpio_0_config
 DECL|ss_gpio_0_runtime|variable|ss_gpio_0_runtime
 DECL|ss_gpio_1_config|variable|ss_gpio_1_config
 DECL|ss_gpio_isr|function|void ss_gpio_isr(void *arg)
-DECL|ss_gpio_qmsi_callback|function|static void ss_gpio_qmsi_callback(void *data, u32_t status)
+DECL|ss_gpio_qmsi_callback|function|static void ss_gpio_qmsi_callback(void *data, uint32_t status)
 DECL|ss_gpio_qmsi_config|function|static inline int ss_gpio_qmsi_config(struct device *port, int access_op, u32_t pin, int flags)
 DECL|ss_gpio_qmsi_config|struct|struct ss_gpio_qmsi_config {
 DECL|ss_gpio_qmsi_device_ctrl|function|static int ss_gpio_qmsi_device_ctrl(struct device *port, u32_t ctrl_command, void *context)
@@ -29,6 +29,6 @@ DECL|ss_gpio_qmsi_set_power_state|macro|ss_gpio_qmsi_set_power_state
 DECL|ss_gpio_qmsi_write|function|static inline int ss_gpio_qmsi_write(struct device *port, int access_op, u32_t pin, u32_t value)
 DECL|ss_gpio_resume_device_from_suspend|function|static int ss_gpio_resume_device_from_suspend(struct device *dev)
 DECL|ss_gpio_suspend_device|function|static int ss_gpio_suspend_device(struct device *dev)
-DECL|ss_qmsi_pin_config|function|static inline void ss_qmsi_pin_config(struct device *port, u32_t pin, int flags)
+DECL|ss_qmsi_pin_config|function|static inline void ss_qmsi_pin_config(struct device *port, u8_t pin, int flags)
 DECL|ss_qmsi_port_config|function|static inline void ss_qmsi_port_config(struct device *port, int flags)
 DECL|ss_qmsi_write_bit|function|static void ss_qmsi_write_bit(u32_t *target, u8_t bit, u8_t value)
