@@ -1,0 +1,3 @@
+DECL|CA_CERTIFICATE_TAG|macro|CA_CERTIFICATE_TAG
+DECL|__CA_CERTIFICATE_H__|macro|__CA_CERTIFICATE_H__
+DECL|ca_certificate|variable|ca_certificate
