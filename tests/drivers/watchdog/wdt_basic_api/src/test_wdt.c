@@ -11,6 +11,7 @@ DECL|m_cfg_wdt1|variable|m_cfg_wdt1
 DECL|m_state|variable|m_state
 DECL|m_testcase_index|variable|m_testcase_index
 DECL|m_testvalue|variable|m_testvalue
+DECL|test_wdt_bad_window_max|function|static int test_wdt_bad_window_max(void)
 DECL|test_wdt_callback_1|function|static int test_wdt_callback_1(void)
 DECL|test_wdt_callback_2|function|static int test_wdt_callback_2(void)
 DECL|test_wdt_no_callback|function|static int test_wdt_no_callback(void)
