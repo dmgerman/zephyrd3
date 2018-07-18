@@ -9,7 +9,7 @@ DECL|board_heartbeat|function|void board_heartbeat(u8_t hops, u16_t feat)
 DECL|board_init|function|void board_init(u16_t *addr)
 DECL|board_other_dev_pressed|function|void board_other_dev_pressed(u16_t addr)
 DECL|board_play_tune|function|void board_play_tune(const char *str)
-DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, uint32_t pins)
+DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t pins)
 DECL|button_send_pressed|function|static void button_send_pressed(struct k_work *work)
 DECL|button_work|variable|button_work
 DECL|configure_button|function|static void configure_button(void)

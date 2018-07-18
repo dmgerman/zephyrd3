@@ -9,7 +9,7 @@ DECL|button_cb|variable|button_cb
 DECL|button_cnt_timer|function|static void button_cnt_timer(struct k_timer *work)
 DECL|button_press_cnt|variable|button_press_cnt
 DECL|button_pressed_worker|function|static void button_pressed_worker(struct k_work *work)
-DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, uint32_t pin_pos)
+DECL|button_pressed|function|static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t pin_pos)
 DECL|button_timer|member|struct k_timer button_timer;
 DECL|button_work|member|struct k_work button_work;
 DECL|cfg_cli|variable|cfg_cli
@@ -36,7 +36,7 @@ DECL|mod_srv_sw|variable|mod_srv_sw
 DECL|onoff_state|member|u8_t onoff_state;
 DECL|onoff_state|struct|struct onoff_state {
 DECL|onoff_state|variable|onoff_state
-DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, uint32_t number)
+DECL|output_number|function|static int output_number(bt_mesh_output_action_t action, u32_t number)
 DECL|output_string|function|static int output_string(const char *str)
 DECL|pin_to_sw|function|static uint8_t pin_to_sw(uint32_t pin_pos)
 DECL|previous|member|u8_t previous;

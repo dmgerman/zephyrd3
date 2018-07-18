@@ -7,7 +7,7 @@ DECL|dtls_server|function|void dtls_server(void)
 DECL|dtls_thread|variable|dtls_thread
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|int dtls_timing_get_delay(void *data)
-DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, u32_t int_ms, u32_t fin_ms)
+DECL|dtls_timing_set_delay|function|void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
 DECL|ecjpake_pw|variable|ecjpake_pw
 DECL|entropy_source|function|static int entropy_source(void *data, unsigned char *output, size_t len, size_t *olen)
 DECL|fin_ms|member|u32_t fin_ms;
