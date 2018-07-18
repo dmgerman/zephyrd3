@@ -1,15 +1,19 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|ca_chain|member|mbedtls_x509_crt ca_chain;
 DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
 DECL|flags|member|int flags;
 DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
+DECL|own_cert|member|mbedtls_x509_crt own_cert;
+DECL|priv_key|member|mbedtls_pk_context priv_key;
 DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
 DECL|sec_tag_list|struct|struct sec_tag_list {
 DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
 DECL|ssl|member|mbedtls_ssl_context ssl;
+DECL|tls_add_ca_certificate|function|static int tls_add_ca_certificate(struct tls_context *tls, struct tls_credential *ca_cert)
 DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
 DECL|tls_clone|function|static struct tls_context *tls_clone(struct tls_context *source_tls)
 DECL|tls_contexts|variable|tls_contexts
@@ -26,6 +30,10 @@ DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struc
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
 DECL|tls_rx|function|static int tls_rx(void *ctx, unsigned char *buf, size_t len)
+DECL|tls_set_ca_chain|function|static void tls_set_ca_chain(struct tls_context *tls)
+DECL|tls_set_credential|function|static int tls_set_credential(struct tls_context *tls, struct tls_credential *cred)
+DECL|tls_set_own_cert|function|static int tls_set_own_cert(struct tls_context *tls, struct tls_credential *own_cert, struct tls_credential *priv_key)
+DECL|tls_set_psk|function|static int tls_set_psk(struct tls_context *tls, struct tls_credential *psk, struct tls_credential *psk_id)
 DECL|tls_tx|function|static int tls_tx(void *ctx, const unsigned char *buf, size_t len)
 DECL|tls_version|member|enum net_ip_protocol_secure tls_version;
 DECL|ztls_accept|function|int ztls_accept(int sock, struct sockaddr *addr, socklen_t *addrlen)
