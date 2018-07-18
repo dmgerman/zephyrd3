@@ -32,6 +32,7 @@ DECL|tls_opt_ciphersuite_list_get|function|static int tls_opt_ciphersuite_list_g
 DECL|tls_opt_ciphersuite_list_set|function|static int tls_opt_ciphersuite_list_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_ciphersuite_used_get|function|static int tls_opt_ciphersuite_used_get(struct net_context *context,void *optval, socklen_t *optlen)
 DECL|tls_opt_hostname_set|function|static int tls_opt_hostname_set(struct net_context *context,const void *optval, socklen_t optlen)
+DECL|tls_opt_peer_verify_set|function|static int tls_opt_peer_verify_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
@@ -42,6 +43,7 @@ DECL|tls_set_own_cert|function|static int tls_set_own_cert(struct tls_context *t
 DECL|tls_set_psk|function|static int tls_set_psk(struct tls_context *tls, struct tls_credential *psk, struct tls_credential *psk_id)
 DECL|tls_tx|function|static int tls_tx(void *ctx, const unsigned char *buf, size_t len)
 DECL|tls_version|member|enum net_ip_protocol_secure tls_version;
+DECL|verify_level|member|s8_t verify_level;
 DECL|ztls_accept|function|int ztls_accept(int sock, struct sockaddr *addr, socklen_t *addrlen)
 DECL|ztls_bind|function|int ztls_bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|ztls_close|function|int ztls_close(int sock)
