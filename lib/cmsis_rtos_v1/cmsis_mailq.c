@@ -1,0 +1,6 @@
+DECL|osMailAlloc|function|void *osMailAlloc(osMailQId queue_id, uint32_t millisec)
+DECL|osMailCAlloc|function|void *osMailCAlloc(osMailQId queue_id, uint32_t millisec)
+DECL|osMailCreate|function|osMailQId osMailCreate(const osMailQDef_t *queue_def, osThreadId thread_id)
+DECL|osMailFree|function|osStatus osMailFree(osMailQId queue_id, void *mail)
+DECL|osMailGet|function|osEvent osMailGet(osMailQId queue_id, uint32_t millisec)
+DECL|osMailPut|function|osStatus osMailPut(osMailQId queue_id, void *mail)

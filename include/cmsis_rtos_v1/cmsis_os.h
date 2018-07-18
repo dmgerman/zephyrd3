@@ -8,6 +8,7 @@ DECL|item_sz|member|uint32_t item_sz; ///< size of an item
 DECL|item_sz|member|uint32_t item_sz; ///< size of an item
 DECL|item_sz|member|uint32_t item_sz; ///< size of an item
 DECL|mail_id|member|osMailQId mail_id; ///< mail id obtained by \ref osMailCreate
+DECL|mbox|member|struct k_mbox *mbox;
 DECL|message_id|member|osMessageQId message_id; ///< message id obtained by \ref osMessageCreate
 DECL|osCMSIS_KERNEL|macro|osCMSIS_KERNEL
 DECL|osCMSIS|macro|osCMSIS
