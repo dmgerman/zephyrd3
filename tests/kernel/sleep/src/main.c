@@ -1,9 +1,9 @@
 DECL|HELPER_THREAD_PRIORITY|macro|HELPER_THREAD_PRIORITY
+DECL|ONE_SECOND_ALIGNED|macro|ONE_SECOND_ALIGNED
 DECL|ONE_SECOND|macro|ONE_SECOND
 DECL|TEST_THREAD_PRIORITY|macro|TEST_THREAD_PRIORITY
 DECL|THREAD_STACK|macro|THREAD_STACK
 DECL|THREAD_STACK|macro|THREAD_STACK
-DECL|TICKS_PER_MS|macro|TICKS_PER_MS
 DECL|align_to_tick_boundary|function|static void align_to_tick_boundary(void)
 DECL|helper_thread_data|variable|helper_thread_data
 DECL|helper_thread_id|variable|helper_thread_id
