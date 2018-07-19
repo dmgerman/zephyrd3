@@ -18,9 +18,9 @@ DECL|ieee802154_rssi|member|u8_t ieee802154_rssi; /* Received Signal Strength In
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|u8_t ip_hdr_len; /* pre-filled in order to avoid func call */
 DECL|ipv4_ttl|member|u8_t ipv4_ttl;
-DECL|ipv6_ext_len|member|u8_t ipv6_ext_len; /* length of extension headers */
+DECL|ipv6_ext_len|member|u16_t ipv6_ext_len; /* length of extension headers */
 DECL|ipv6_ext_opt_len|member|u8_t ipv6_ext_opt_len; /* IPv6 ND option length */
-DECL|ipv6_frag_hdr_start|member|u8_t *ipv6_frag_hdr_start; /* Where starts the fragment header */
+DECL|ipv6_frag_hdr_start|member|u16_t ipv6_frag_hdr_start; /* Where starts the fragment header */
 DECL|ipv6_fragment_id|member|u32_t ipv6_fragment_id; /* Fragment id */
 DECL|ipv6_fragment_offset|member|u16_t ipv6_fragment_offset; /* Fragment offset of this packet */
 DECL|ipv6_hop_limit|member|u8_t ipv6_hop_limit;
@@ -69,12 +69,12 @@ DECL|net_pkt_insert_u8|function|static inline bool net_pkt_insert_u8(struct net_
 DECL|net_pkt_ip_data|function|static inline u8_t *net_pkt_ip_data(struct net_pkt *pkt)
 DECL|net_pkt_ip_hdr_len|function|static inline u8_t net_pkt_ip_hdr_len(struct net_pkt *pkt)
 DECL|net_pkt_ipv4_ttl|function|static inline u8_t net_pkt_ipv4_ttl(struct net_pkt *pkt)
-DECL|net_pkt_ipv6_ext_len|function|static inline u8_t net_pkt_ipv6_ext_len(struct net_pkt *pkt)
+DECL|net_pkt_ipv6_ext_len|function|static inline u16_t net_pkt_ipv6_ext_len(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_ext_len|macro|net_pkt_ipv6_ext_len
 DECL|net_pkt_ipv6_ext_opt_len|function|static inline u8_t net_pkt_ipv6_ext_opt_len(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_fragment_id|function|static inline u32_t net_pkt_ipv6_fragment_id(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_fragment_offset|function|static inline u16_t net_pkt_ipv6_fragment_offset(struct net_pkt *pkt)
-DECL|net_pkt_ipv6_fragment_start|function|static inline u8_t *net_pkt_ipv6_fragment_start(struct net_pkt *pkt)
+DECL|net_pkt_ipv6_fragment_start|function|static inline u16_t net_pkt_ipv6_fragment_start(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_hdr_prev|function|static inline u16_t net_pkt_ipv6_hdr_prev(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_hop_limit|function|static inline u8_t net_pkt_ipv6_hop_limit(struct net_pkt *pkt)
 DECL|net_pkt_ll_clear|function|static inline void net_pkt_ll_clear(struct net_pkt *pkt)
@@ -104,12 +104,12 @@ DECL|net_pkt_set_ieee802154_rssi|function|static inline void net_pkt_set_ieee802
 DECL|net_pkt_set_iface|function|static inline void net_pkt_set_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_ip_hdr_len|function|static inline void net_pkt_set_ip_hdr_len(struct net_pkt *pkt, u8_t len)
 DECL|net_pkt_set_ipv4_ttl|function|static inline void net_pkt_set_ipv4_ttl(struct net_pkt *pkt,u8_t ttl)
-DECL|net_pkt_set_ipv6_ext_len|function|static inline void net_pkt_set_ipv6_ext_len(struct net_pkt *pkt, u8_t len)
+DECL|net_pkt_set_ipv6_ext_len|function|static inline void net_pkt_set_ipv6_ext_len(struct net_pkt *pkt, u16_t len)
 DECL|net_pkt_set_ipv6_ext_len|macro|net_pkt_set_ipv6_ext_len
 DECL|net_pkt_set_ipv6_ext_opt_len|function|static inline void net_pkt_set_ipv6_ext_opt_len(struct net_pkt *pkt,u8_t len)
 DECL|net_pkt_set_ipv6_fragment_id|function|static inline void net_pkt_set_ipv6_fragment_id(struct net_pkt *pkt,u32_t id)
 DECL|net_pkt_set_ipv6_fragment_offset|function|static inline void net_pkt_set_ipv6_fragment_offset(struct net_pkt *pkt, u16_t offset)
-DECL|net_pkt_set_ipv6_fragment_start|function|static inline void net_pkt_set_ipv6_fragment_start(struct net_pkt *pkt, u8_t *start)
+DECL|net_pkt_set_ipv6_fragment_start|function|static inline void net_pkt_set_ipv6_fragment_start(struct net_pkt *pkt, u16_t start)
 DECL|net_pkt_set_ipv6_hdr_prev|function|static inline void net_pkt_set_ipv6_hdr_prev(struct net_pkt *pkt, u16_t offset)
 DECL|net_pkt_set_ipv6_hop_limit|function|static inline void net_pkt_set_ipv6_hop_limit(struct net_pkt *pkt, u8_t hop_limit)
 DECL|net_pkt_set_ll_reserve|function|static inline void net_pkt_set_ll_reserve(struct net_pkt *pkt, u8_t len)

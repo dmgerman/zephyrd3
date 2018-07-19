@@ -12,10 +12,16 @@ DECL|idx|member|u8_t idx;
 DECL|iface1|variable|iface1
 DECL|iface2|variable|iface2
 DECL|ipv6_first_frag|variable|ipv6_first_frag
+DECL|ipv6_hbho_1|variable|ipv6_hbho_1
+DECL|ipv6_hbho_2|variable|ipv6_hbho_2
+DECL|ipv6_hbho_3|variable|ipv6_hbho_3
+DECL|ipv6_hbho_frag_1|variable|ipv6_hbho_frag_1
 DECL|ipv6_hbho_frag|variable|ipv6_hbho_frag
 DECL|ipv6_hbho|variable|ipv6_hbho
+DECL|ipv6_large_hbho|variable|ipv6_large_hbho
 DECL|ipv6_second_frag|variable|ipv6_second_frag
 DECL|ipv6_udp|variable|ipv6_udp
+DECL|large_hbho|variable|large_hbho
 DECL|ll_addr2|variable|ll_addr2
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|ll_addr|variable|ll_addr
@@ -35,11 +41,16 @@ DECL|pkt_recv_data_len|variable|pkt_recv_data_len
 DECL|sender_iface|function|static int sender_iface(struct net_if *iface, struct net_pkt *pkt)
 DECL|setup_udp_handler|function|static void setup_udp_handler(const struct in6_addr *raddr, const struct in6_addr *laddr, u16_t remote_port, u16_t local_port)
 DECL|test_failed|variable|test_failed
+DECL|test_find_last_ipv6_fragment_hbho_1|function|static void test_find_last_ipv6_fragment_hbho_1(void)
+DECL|test_find_last_ipv6_fragment_hbho_2|function|static void test_find_last_ipv6_fragment_hbho_2(void)
+DECL|test_find_last_ipv6_fragment_hbho_3|function|static void test_find_last_ipv6_fragment_hbho_3(void)
+DECL|test_find_last_ipv6_fragment_hbho_frag_1|function|static void test_find_last_ipv6_fragment_hbho_frag_1(void)
 DECL|test_find_last_ipv6_fragment_hbho_frag|function|static void test_find_last_ipv6_fragment_hbho_frag(void)
 DECL|test_find_last_ipv6_fragment_hbho_udp|function|static void test_find_last_ipv6_fragment_hbho_udp(void)
 DECL|test_find_last_ipv6_fragment_udp|function|static void test_find_last_ipv6_fragment_udp(void)
 DECL|test_main|function|void test_main(void)
 DECL|test_recv_ipv6_fragment|function|static void test_recv_ipv6_fragment(void)
+DECL|test_send_ipv6_fragment_large_hbho|function|static void test_send_ipv6_fragment_large_hbho(void)
 DECL|test_send_ipv6_fragment|function|static void test_send_ipv6_fragment(void)
 DECL|test_setup|function|static void test_setup(void)
 DECL|test_started|variable|test_started

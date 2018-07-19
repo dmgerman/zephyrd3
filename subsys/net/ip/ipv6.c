@@ -43,9 +43,8 @@ DECL|fragment_verify|function|static bool fragment_verify(struct net_ipv6_reasse
 DECL|get_llao_len|function|static inline u8_t get_llao_len(struct net_if *iface)
 DECL|get_nbr_from_data|function|static inline struct net_nbr *get_nbr_from_data(struct net_ipv6_nbr_data *data)
 DECL|get_nbr|function|static inline struct net_nbr *get_nbr(int idx)
-DECL|get_next_hdr|function|static int get_next_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx,u16_t *last_hdr_idx, u8_t *next_hdr)
 DECL|handle_ext_hdr_options|function|static inline struct net_buf *handle_ext_hdr_options(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t len, u16_t offset,
-DECL|handle_fragment_hdr|function|static enum net_verdict handle_fragment_hdr(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t buf_offset)
+DECL|handle_fragment_hdr|function|static enum net_verdict handle_fragment_hdr(struct net_pkt *pkt, struct net_buf *frag, int total_len, u16_t buf_offset, u16_t *loc,
 DECL|handle_mld_query|function|static enum net_verdict handle_mld_query(struct net_pkt *pkt)
 DECL|handle_na_input|function|static enum net_verdict handle_na_input(struct net_pkt *pkt)
 DECL|handle_na_neighbor|function|static inline bool handle_na_neighbor(struct net_pkt *pkt, struct net_icmpv6_na_hdr *na_hdr, u16_t tllao_offset)
@@ -119,7 +118,7 @@ DECL|reassembly_timeout|function|static void reassembly_timeout(struct k_work *w
 DECL|reassembly|variable|reassembly
 DECL|remaining|function|static inline u32_t remaining(struct k_delayed_work *work)
 DECL|route_ipv6_packet|function|static enum net_verdict route_ipv6_packet(struct net_pkt *pkt, struct net_ipv6_hdr *hdr)
-DECL|send_ipv6_fragment|function|static int send_ipv6_fragment(struct net_if *iface, struct net_pkt *pkt, struct net_buf *orig, struct net_buf *prev, struct net_buf *frag,
+DECL|send_ipv6_fragment|function|static int send_ipv6_fragment(struct net_if *iface, struct net_pkt *pkt, struct net_buf **rest, u16_t ipv6_hdrs_len, u16_t fit_len,
 DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
 DECL|send_mldv2_raw|function|static int send_mldv2_raw(struct net_if *iface, struct net_buf *frags)
 DECL|send_mldv2|function|static int send_mldv2(struct net_if *iface, const struct in6_addr *addr, u8_t mode)

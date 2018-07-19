@@ -1,12 +1,9 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
-DECL|FRAGA|macro|FRAGA
-DECL|FRAGB|macro|FRAGB
 DECL|FRAG_COUNT|macro|FRAG_COUNT
 DECL|LL_RESERVE|macro|LL_RESERVE
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|TEST_FRAG_COUNT|macro|TEST_FRAG_COUNT
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
@@ -29,6 +26,7 @@ DECL|len|member|u8_t len[2];
 DECL|linearize|function|static void linearize(struct net_pkt *pkt, char *buffer, int len)
 DECL|net_pkt_is_compact|function|static bool net_pkt_is_compact(struct net_pkt *pkt)
 DECL|nexthdr|member|u8_t nexthdr;
+DECL|pull_test_data|variable|pull_test_data
 DECL|sample_data|variable|sample_data
 DECL|src_port|member|u16_t src_port;
 DECL|src|member|struct in6_addr src;
@@ -39,6 +37,7 @@ DECL|test_fragment_copy|function|static void test_fragment_copy(void)
 DECL|test_fragment_split|function|static void test_fragment_split(void)
 DECL|test_ipv6_multi_frags|function|static void test_ipv6_multi_frags(void)
 DECL|test_main|function|void test_main(void)
+DECL|test_pkt_pull|function|static void test_pkt_pull(void)
 DECL|test_pkt_read_append|function|static void test_pkt_read_append(void)
 DECL|test_pkt_read_write_insert|function|static void test_pkt_read_write_insert(void)
 DECL|test_rw_long|variable|test_rw_long

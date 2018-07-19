@@ -10,6 +10,9 @@ DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
 DECL|icmpv6_ns_invalid|variable|icmpv6_ns_invalid
 DECL|icmpv6_ns_no_sllao|variable|icmpv6_ns_no_sllao
 DECL|icmpv6_ra|variable|icmpv6_ra
+DECL|ipv6_hbho_1|variable|ipv6_hbho_1
+DECL|ipv6_hbho_2|variable|ipv6_hbho_2
+DECL|ipv6_hbho_3|variable|ipv6_hbho_3
 DECL|ipv6_hbho|variable|ipv6_hbho
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
@@ -27,6 +30,9 @@ DECL|test_add_neighbor|function|static void test_add_neighbor(void)
 DECL|test_change_ll_addr|function|static void test_change_ll_addr(void)
 DECL|test_cmp_prefix|function|static void test_cmp_prefix(void)
 DECL|test_failed|variable|test_failed
+DECL|test_hbho_message_1|function|static void test_hbho_message_1(void)
+DECL|test_hbho_message_2|function|static void test_hbho_message_2(void)
+DECL|test_hbho_message_3|function|static void test_hbho_message_3(void)
 DECL|test_hbho_message|function|static void test_hbho_message(void)
 DECL|test_init|function|static void test_init(void)
 DECL|test_main|function|void test_main(void)
