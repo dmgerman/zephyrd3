@@ -21,6 +21,7 @@ DECL|eth_rx|function|static void eth_rx(struct eth_context *ctx)
 DECL|eth_send|function|static int eth_send(struct net_if *iface, struct net_pkt *pkt)
 DECL|get_context|function|static struct eth_context *get_context(struct net_if *iface)
 DECL|get_iface|function|static inline struct net_if *get_iface(struct eth_context *ctx, u16_t vlan_tag)
+DECL|get_stats|function|static struct net_stats_eth *get_stats(struct net_if *iface)
 DECL|if_name|member|const char *if_name;
 DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;

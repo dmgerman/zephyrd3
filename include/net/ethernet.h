@@ -45,6 +45,7 @@ DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
 DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *dev);
+DECL|get_stats|member|struct net_stats_eth *(*get_stats)(struct net_if *iface);
 DECL|idle_slope|member|unsigned int idle_slope;
 DECL|iface_api|member|struct net_if_api iface_api;
 DECL|iface|member|struct net_if *iface;
@@ -74,7 +75,6 @@ DECL|queue_id|member|int queue_id;
 DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
-DECL|stats|member|struct net_stats_eth *stats;
 DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
