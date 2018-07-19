@@ -93,6 +93,7 @@ DECL|iir_cache|member|u8_t iir_cache; /**< cache of IIR since it clears when rea
 DECL|irq_config_func_0|function|static void irq_config_func_0(struct device *dev)
 DECL|irq_config_func_1|function|static void irq_config_func_1(struct device *dev)
 DECL|irq_config_func_2|function|static void irq_config_func_2(struct device *dev)
+DECL|irq_config_func_3|function|static void irq_config_func_3(struct device *dev)
 DECL|irq_config_func|member|uart_irq_config_func_t irq_config_func;
 DECL|ns16550_pci_uart_scan|function|static inline int ns16550_pci_uart_scan(struct device *dev)
 DECL|ns16550_pci_uart_scan|macro|ns16550_pci_uart_scan
@@ -105,9 +106,11 @@ DECL|sys_clk_freq|member|u32_t sys_clk_freq;
 DECL|uart_ns16550_dev_cfg_0|variable|uart_ns16550_dev_cfg_0
 DECL|uart_ns16550_dev_cfg_1|variable|uart_ns16550_dev_cfg_1
 DECL|uart_ns16550_dev_cfg_2|variable|uart_ns16550_dev_cfg_2
+DECL|uart_ns16550_dev_cfg_3|variable|uart_ns16550_dev_cfg_3
 DECL|uart_ns16550_dev_data_0|variable|uart_ns16550_dev_data_0
 DECL|uart_ns16550_dev_data_1|variable|uart_ns16550_dev_data_1
 DECL|uart_ns16550_dev_data_2|variable|uart_ns16550_dev_data_2
+DECL|uart_ns16550_dev_data_3|variable|uart_ns16550_dev_data_3
 DECL|uart_ns16550_dev_data_t|struct|struct uart_ns16550_dev_data_t {
 DECL|uart_ns16550_device_config|struct|struct uart_ns16550_device_config {
 DECL|uart_ns16550_driver_api|variable|uart_ns16550_driver_api
