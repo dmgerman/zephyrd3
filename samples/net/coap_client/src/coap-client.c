@@ -1,7 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|context|variable|context
 DECL|dump_payload|function|static int dump_payload(const struct coap_packet *response)
 DECL|init_app|function|static int init_app(void)

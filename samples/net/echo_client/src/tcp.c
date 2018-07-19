@@ -1,10 +1,9 @@
 DECL|CONFIG_NET_APP_TLS_STACK_SIZE|macro|CONFIG_NET_APP_TLS_STACK_SIZE
 DECL|HOSTNAME|macro|HOSTNAME
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|VERIFY_CERTS|macro|VERIFY_CERTS
 DECL|compare_tcp_data|function|static bool compare_tcp_data(struct net_pkt *pkt, int expecting_len, int received_len)
 DECL|connect_tcp|function|static int connect_tcp(struct net_app_ctx *ctx, const char *peer, void *user_data, u8_t *result_buf, size_t result_buf_len, k_thread_stack_t *stack, size_t stack_size)
