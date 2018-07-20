@@ -3,6 +3,7 @@ DECL|ETHERNET_CONFIG_TYPE_AUTO_NEG|enumerator|ETHERNET_CONFIG_TYPE_AUTO_NEG,
 DECL|ETHERNET_CONFIG_TYPE_DUPLEX|enumerator|ETHERNET_CONFIG_TYPE_DUPLEX,
 DECL|ETHERNET_CONFIG_TYPE_LINK|enumerator|ETHERNET_CONFIG_TYPE_LINK,
 DECL|ETHERNET_CONFIG_TYPE_MAC_ADDRESS|enumerator|ETHERNET_CONFIG_TYPE_MAC_ADDRESS,
+DECL|ETHERNET_CONFIG_TYPE_PROMISC_MODE|enumerator|ETHERNET_CONFIG_TYPE_PROMISC_MODE,
 DECL|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH|enumerator|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH,
 DECL|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE|enumerator|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
@@ -13,6 +14,7 @@ DECL|ETHERNET_L2_CTX_TYPE|macro|ETHERNET_L2_CTX_TYPE
 DECL|ETHERNET_LINK_1000BASE_T|enumerator|ETHERNET_LINK_1000BASE_T = BIT(6),
 DECL|ETHERNET_LINK_100BASE_T|enumerator|ETHERNET_LINK_100BASE_T = BIT(5),
 DECL|ETHERNET_LINK_10BASE_T|enumerator|ETHERNET_LINK_10BASE_T = BIT(4),
+DECL|ETHERNET_PROMISC_MODE|enumerator|ETHERNET_PROMISC_MODE = BIT(10),
 DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
 DECL|ETHERNET_QAV|enumerator|ETHERNET_QAV = BIT(9),
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
@@ -70,6 +72,7 @@ DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
 DECL|port|member|int port;
+DECL|promisc_mode|member|bool promisc_mode;
 DECL|qav_queue_param|member|struct ethernet_qav_queue_param qav_queue_param;
 DECL|queue_id|member|int queue_id;
 DECL|set_config|member|int (*set_config)(struct device *dev,
