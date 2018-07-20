@@ -10,6 +10,7 @@ DECL|item_sz|member|uint32_t item_sz; ///< size of an item
 DECL|mail_id|member|osMailQId mail_id; ///< mail id obtained by \ref osMailCreate
 DECL|mbox|member|struct k_mbox *mbox;
 DECL|message_id|member|osMessageQId message_id; ///< message id obtained by \ref osMessageCreate
+DECL|msgq|member|struct k_msgq *msgq;
 DECL|osCMSIS_KERNEL|macro|osCMSIS_KERNEL
 DECL|osCMSIS|macro|osCMSIS
 DECL|osErrorISRRecursive|enumerator|osErrorISRRecursive = 0x83, ///< function called multiple times from ISR with same object.
