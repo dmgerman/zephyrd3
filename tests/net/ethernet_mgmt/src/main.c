@@ -14,14 +14,19 @@ DECL|link_10bt|member|bool link_10bt;
 DECL|mac_addr_change|variable|mac_addr_change
 DECL|mac_addr_init|variable|mac_addr_init
 DECL|mac_address|member|u8_t mac_address[6];
+DECL|promisc_mode|member|bool promisc_mode;
 DECL|test_change_auto_neg|function|static void test_change_auto_neg(void)
 DECL|test_change_duplex|function|static void test_change_duplex(void)
 DECL|test_change_link|function|static void test_change_link(void)
 DECL|test_change_mac_when_down|function|static void test_change_mac_when_down(void)
 DECL|test_change_mac_when_up|function|static void test_change_mac_when_up(void)
+DECL|test_change_promisc_mode_off|function|static void test_change_promisc_mode_off(void)
+DECL|test_change_promisc_mode_on|function|static void test_change_promisc_mode_on(void)
+DECL|test_change_promisc_mode|function|static void test_change_promisc_mode(bool mode)
 DECL|test_change_qav_params|function|static void test_change_qav_params(void)
 DECL|test_change_same_duplex|function|static void test_change_same_duplex(void)
 DECL|test_change_same_link|function|static void test_change_same_link(void)
 DECL|test_change_to_same_auto_neg|function|static void test_change_to_same_auto_neg(void)
+DECL|test_change_to_same_promisc_mode|function|static void test_change_to_same_promisc_mode(void)
 DECL|test_change_unsupported_link|function|static void test_change_unsupported_link(void)
 DECL|test_main|function|void test_main(void)
