@@ -28,6 +28,7 @@ DECL|init_done|member|bool init_done;
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
 DECL|mac_addr|member|u8_t mac_addr[6];
 DECL|need_timestamping|function|static bool need_timestamping(struct gptp_hdr *hdr)
+DECL|promisc_mode|member|bool promisc_mode;
 DECL|ptp_0_context|variable|ptp_0_context
 DECL|ptp_clock_adjust_native_posix|function|static int ptp_clock_adjust_native_posix(struct device *clk, int increment)
 DECL|ptp_clock_get_native_posix|function|static int ptp_clock_get_native_posix(struct device *clk, struct net_ptp_time *tm)
@@ -40,6 +41,7 @@ DECL|read_data|function|static int read_data(struct eth_context *ctx, int fd)
 DECL|recv|member|u8_t recv[_ETH_MTU + ETH_HDR_LEN];
 DECL|rx_thread_data|variable|rx_thread_data
 DECL|send|member|u8_t send[_ETH_MTU + ETH_HDR_LEN];
+DECL|set_config|function|static int set_config(struct device *dev, enum ethernet_config_type type, const struct ethernet_config *config)
 DECL|stats|member|struct net_stats_eth stats;
 DECL|status|member|bool status;
 DECL|update_gptp|function|static void update_gptp(struct net_if *iface, struct net_pkt *pkt,bool send)
