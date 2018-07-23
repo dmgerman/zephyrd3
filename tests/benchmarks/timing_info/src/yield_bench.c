@@ -1,4 +1,3 @@
-DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|count|variable|count
 DECL|thread_end_time|variable|thread_end_time
 DECL|thread_sleep_end_time|variable|thread_sleep_end_time

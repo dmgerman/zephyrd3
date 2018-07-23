@@ -1,0 +1,28 @@
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_dummy_syscall)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(userspace_read_timer_value)
+DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(validation_overhead_syscall)
+DECL|_impl_k_dummy_syscall|function|int _impl_k_dummy_syscall(void)
+DECL|_impl_userspace_read_timer_value|function|u32_t _impl_userspace_read_timer_value(void)
+DECL|_impl_validation_overhead_syscall|function|int _impl_validation_overhead_syscall(void)
+DECL|drop_to_user_mode_end_time|variable|drop_to_user_mode_end_time
+DECL|drop_to_user_mode_start_time|variable|drop_to_user_mode_start_time
+DECL|drop_to_user_mode_thread|function|void drop_to_user_mode_thread(void *p1, void *p2, void *p3)
+DECL|drop_to_user_mode|function|void drop_to_user_mode(void)
+DECL|my_stack_area_0|variable|my_stack_area_0
+DECL|my_stack_area|variable|my_stack_area
+DECL|my_thread_user|variable|my_thread_user
+DECL|syscall_overhead_end_time|variable|syscall_overhead_end_time
+DECL|syscall_overhead_start_time|variable|syscall_overhead_start_time
+DECL|syscall_overhead_user_thread|function|void syscall_overhead_user_thread(void *p1, void *p2, void *p3)
+DECL|syscall_overhead|function|void syscall_overhead(void)
+DECL|test_drop_to_user_mode_1|function|void test_drop_to_user_mode_1(void *p1, void *p2, void *p3)
+DECL|user_thread_creation_end_time|variable|user_thread_creation_end_time
+DECL|user_thread_creation_start_time|variable|user_thread_creation_start_time
+DECL|user_thread_creation|function|void user_thread_creation(void)
+DECL|userspace_bench|function|void userspace_bench(void)
+DECL|validation_overhead_obj_end_time|variable|validation_overhead_obj_end_time
+DECL|validation_overhead_obj_init_end_time|variable|validation_overhead_obj_init_end_time
+DECL|validation_overhead_obj_init_start_time|variable|validation_overhead_obj_init_start_time
+DECL|validation_overhead_obj_start_time|variable|validation_overhead_obj_start_time
+DECL|validation_overhead_user_thread|function|void validation_overhead_user_thread(void *p1, void *p2, void *p3)
+DECL|validation_overhead|function|void validation_overhead(void)

@@ -1,4 +1,3 @@
-DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|mutex0|variable|mutex0
 DECL|mutex_bench|function|void mutex_bench(void)
 DECL|sem0_tid|variable|sem0_tid

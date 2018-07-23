@@ -1,5 +1,4 @@
 DECL|DISABLE_OVERHEAD_MEASUREMENT|macro|DISABLE_OVERHEAD_MEASUREMENT
-DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|__read_swap_end_time_value_test|variable|__read_swap_end_time_value_test
 DECL|benchmarking_overhead_swap|function|u32_t benchmarking_overhead_swap(void)
 DECL|consumer_tid|variable|consumer_tid
