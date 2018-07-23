@@ -112,7 +112,6 @@ DECL|net_if_mcast_addr|struct|struct net_if_mcast_addr {
 DECL|net_if_mcast_callback_t|typedef|typedef void (*net_if_mcast_callback_t)(struct net_if *iface,
 DECL|net_if_mcast_monitor|struct|struct net_if_mcast_monitor {
 DECL|net_if_offload|function|static inline struct net_offload *net_if_offload(struct net_if *iface)
-DECL|net_if_recv_data|function|static inline enum net_verdict net_if_recv_data(struct net_if *iface,struct net_pkt *pkt)
 DECL|net_if_router_rm|function|static inline void net_if_router_rm(struct net_if_router *router)
 DECL|net_if_router|struct|struct net_if_router {
 DECL|net_if_set_link_addr|function|static inline int net_if_set_link_addr(struct net_if *iface, u8_t *addr, u8_t len, enum net_link_type type)
