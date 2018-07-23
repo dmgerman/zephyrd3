@@ -67,7 +67,7 @@ DECL|seg_tx_reset|function|static void seg_tx_reset(struct seg_tx *tx)
 DECL|seg_tx_send_unacked|function|static void seg_tx_send_unacked(struct seg_tx *tx)
 DECL|seg_tx|struct|static struct seg_tx {
 DECL|seg_tx|variable|seg_tx
-DECL|seg|member|struct net_buf *seg[BT_MESH_TX_SEG_COUNT];
+DECL|seg|member|struct net_buf *seg[CONFIG_BT_MESH_TX_SEG_MAX];
 DECL|send_ack|function|static int send_ack(struct bt_mesh_subnet *sub, u16_t src, u16_t dst, u8_t ttl, u64_t *seq_auth, u32_t block, u8_t obo)
 DECL|send_seg|function|static int send_seg(struct bt_mesh_net_tx *net_tx, struct net_buf_simple *sdu, const struct bt_mesh_send_cb *cb, void *cb_data)
 DECL|send_unseg|function|static int send_unseg(struct bt_mesh_net_tx *tx, struct net_buf_simple *sdu, const struct bt_mesh_send_cb *cb, void *cb_data)
