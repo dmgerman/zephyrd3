@@ -3,3 +3,6 @@ DECL|timestamp_serialize|function|static inline void timestamp_serialize(void)
 DECL|timestamp_serialize|function|static inline void timestamp_serialize(void)
 DECL|timestamp_serialize|macro|timestamp_serialize
 DECL|timestamp_serialize|macro|timestamp_serialize
+DECL|timestamp_serialize|macro|timestamp_serialize
+DECL|timestamp_serialize|macro|timestamp_serialize
+DECL|timestamp_serialize|macro|timestamp_serialize
