@@ -2,9 +2,9 @@ DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|echo_request_handler|variable|echo_request_handler
-DECL|handle_echo_request|function|static inline enum net_verdict handle_echo_request(struct net_pkt *pkt)
 DECL|handlers|variable|handlers
 DECL|icmpv4_create|function|static void icmpv4_create(struct net_pkt *pkt, u8_t icmp_type, u8_t icmp_code)
+DECL|icmpv4_handle_echo_request|function|static inline enum net_verdict icmpv4_handle_echo_request(struct net_pkt *pkt)
 DECL|net_icmpv4_get_hdr|function|struct net_icmp_hdr *net_icmpv4_get_hdr(struct net_pkt *pkt,struct net_icmp_hdr *hdr)
 DECL|net_icmpv4_init|function|void net_icmpv4_init(void)
 DECL|net_icmpv4_input|function|enum net_verdict net_icmpv4_input(struct net_pkt *pkt)
