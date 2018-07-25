@@ -1,6 +1,7 @@
 DECL|CMP_INTERRUPT_PIN|macro|CMP_INTERRUPT_PIN
 DECL|GPIO_INTERRUPT_PIN|macro|GPIO_INTERRUPT_PIN
 DECL|MAX_SUSPEND_DEVICE_COUNT|macro|MAX_SUSPEND_DEVICE_COUNT
+DECL|MAX_SYS_PM_STATES|macro|MAX_SYS_PM_STATES
 DECL|MIN_TIME_TO_SUSPEND|macro|MIN_TIME_TO_SUSPEND
 DECL|NB_STATES|macro|NB_STATES
 DECL|TICKS_TO_SECONDS_MULTIPLIER|macro|TICKS_TO_SECONDS_MULTIPLIER
@@ -31,3 +32,4 @@ DECL|state_to_string|function|static const char *state_to_string(int state)
 DECL|states_list|variable|states_list
 DECL|suspend_device_count|variable|suspend_device_count
 DECL|suspend_devices|variable|suspend_devices
+DECL|test_complete|variable|test_complete
