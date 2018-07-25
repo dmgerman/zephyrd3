@@ -1,6 +1,7 @@
 DECL|ALARM|macro|ALARM
 DECL|DEVICE_POLICY_MAX|macro|DEVICE_POLICY_MAX
 DECL|GPIO_IN_PIN|macro|GPIO_IN_PIN
+DECL|MAX_SYS_PM_STATES|macro|MAX_SYS_PM_STATES
 DECL|MIN_TIME_TO_SUSPEND|macro|MIN_TIME_TO_SUSPEND
 DECL|SECONDS_TO_SLEEP|macro|SECONDS_TO_SLEEP
 DECL|TICKS_TO_SECONDS_MULTIPLIER|macro|TICKS_TO_SECONDS_MULTIPLIER
@@ -30,3 +31,4 @@ DECL|rtc_interrupt_fn|function|static void rtc_interrupt_fn(struct device *rtc_d
 DECL|setup_rtc|function|static void setup_rtc(void)
 DECL|start_time|variable|start_time
 DECL|suspend_devices|function|static void suspend_devices(void)
+DECL|test_complete|variable|test_complete
