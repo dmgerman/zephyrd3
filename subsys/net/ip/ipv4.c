@@ -1,3 +1,4 @@
+DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|net_ipv4_broadcast_address|function|const struct in_addr *net_ipv4_broadcast_address(void)

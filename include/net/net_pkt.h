@@ -34,9 +34,13 @@ DECL|net_pkt_allocs_cb_t|typedef|typedef void (*net_pkt_allocs_cb_t)(struct net_
 DECL|net_pkt_appdatalen|function|static inline u16_t net_pkt_appdatalen(struct net_pkt *pkt)
 DECL|net_pkt_appdata|function|static inline u8_t *net_pkt_appdata(struct net_pkt *pkt)
 DECL|net_pkt_append_all|function|static inline bool net_pkt_append_all(struct net_pkt *pkt, u16_t len, const u8_t *data, s32_t timeout)
+DECL|net_pkt_append_be16_timeout|function|static inline bool net_pkt_append_be16_timeout(struct net_pkt *pkt, u16_t data, s32_t timeout)
 DECL|net_pkt_append_be16|function|static inline bool net_pkt_append_be16(struct net_pkt *pkt, u16_t data)
+DECL|net_pkt_append_be32_timeout|function|static inline bool net_pkt_append_be32_timeout(struct net_pkt *pkt, u32_t data, s32_t timeout)
 DECL|net_pkt_append_be32|function|static inline bool net_pkt_append_be32(struct net_pkt *pkt, u32_t data)
+DECL|net_pkt_append_le32_timeout|function|static inline bool net_pkt_append_le32_timeout(struct net_pkt *pkt, u32_t data, s32_t timeout)
 DECL|net_pkt_append_le32|function|static inline bool net_pkt_append_le32(struct net_pkt *pkt, u32_t data)
+DECL|net_pkt_append_u8_timeout|function|static inline bool net_pkt_append_u8_timeout(struct net_pkt *pkt, u8_t data, s32_t timeout)
 DECL|net_pkt_append_u8|function|static inline bool net_pkt_append_u8(struct net_pkt *pkt, u8_t data)
 DECL|net_pkt_context|function|static inline struct net_context *net_pkt_context(struct net_pkt *pkt)
 DECL|net_pkt_copy_all|function|static inline struct net_buf *net_pkt_copy_all(struct net_pkt *pkt, size_t reserve, s32_t timeout)
@@ -63,8 +67,11 @@ DECL|net_pkt_get_tx|macro|net_pkt_get_tx
 DECL|net_pkt_ieee802154_lqi|function|static inline u8_t net_pkt_ieee802154_lqi(struct net_pkt *pkt)
 DECL|net_pkt_ieee802154_rssi|function|static inline u8_t net_pkt_ieee802154_rssi(struct net_pkt *pkt)
 DECL|net_pkt_iface|function|static inline struct net_if *net_pkt_iface(struct net_pkt *pkt)
+DECL|net_pkt_insert_be16_timeout|function|static inline bool net_pkt_insert_be16_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t data, s32_t timeout)
 DECL|net_pkt_insert_be16|function|static inline bool net_pkt_insert_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t data)
+DECL|net_pkt_insert_be32_timeout|function|static inline bool net_pkt_insert_be32_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u32_t data, s32_t timeout)
 DECL|net_pkt_insert_be32|function|static inline bool net_pkt_insert_be32(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u32_t data)
+DECL|net_pkt_insert_u8_timeout|function|static inline bool net_pkt_insert_u8_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u8_t data, s32_t timeout)
 DECL|net_pkt_insert_u8|function|static inline bool net_pkt_insert_u8(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u8_t data)
 DECL|net_pkt_ip_data|function|static inline u8_t *net_pkt_ip_data(struct net_pkt *pkt)
 DECL|net_pkt_ip_hdr_len|function|static inline u8_t net_pkt_ip_hdr_len(struct net_pkt *pkt)
@@ -145,8 +152,11 @@ DECL|net_pkt_vlan_tag|function|static inline u16_t net_pkt_vlan_tag(struct net_p
 DECL|net_pkt_vlan_tci|function|static inline u16_t net_pkt_vlan_tci(struct net_pkt *pkt)
 DECL|net_pkt_vlan_tci|function|static inline u16_t net_pkt_vlan_tci(struct net_pkt *pkt)
 DECL|net_pkt_work|function|static inline struct k_work *net_pkt_work(struct net_pkt *pkt)
+DECL|net_pkt_write_be16_timeout|function|static inline struct net_buf *net_pkt_write_be16_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u16_t data,
 DECL|net_pkt_write_be16|function|static inline struct net_buf *net_pkt_write_be16(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u16_t data)
+DECL|net_pkt_write_be32_timeout|function|static inline struct net_buf *net_pkt_write_be32_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u32_t data,
 DECL|net_pkt_write_be32|function|static inline struct net_buf *net_pkt_write_be32(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u32_t data)
+DECL|net_pkt_write_u8_timeout|function|static inline struct net_buf *net_pkt_write_u8_timeout(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u8_t data,
 DECL|net_pkt_write_u8|function|static inline struct net_buf *net_pkt_write_u8(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u16_t *pos, u8_t data)
 DECL|net_pkt|struct|struct net_pkt {
 DECL|next_hdr|member|u8_t *next_hdr; /* where is the next header */

@@ -1,9 +1,10 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|append|macro|append
 DECL|echo_request_handler|variable|echo_request_handler
 DECL|handlers|variable|handlers
-DECL|icmpv4_create|function|static void icmpv4_create(struct net_pkt *pkt, u8_t icmp_type, u8_t icmp_code)
+DECL|icmpv4_create|function|static struct net_buf *icmpv4_create(struct net_pkt *pkt, u8_t icmp_type, u8_t icmp_code)
 DECL|icmpv4_handle_echo_request|function|static inline enum net_verdict icmpv4_handle_echo_request(struct net_pkt *pkt)
 DECL|net_icmpv4_get_hdr|function|int net_icmpv4_get_hdr(struct net_pkt *pkt, struct net_icmp_hdr *hdr)
 DECL|net_icmpv4_init|function|void net_icmpv4_init(void)

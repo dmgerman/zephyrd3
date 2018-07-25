@@ -1,3 +1,4 @@
+DECL|BUF_TIMEOUT|macro|BUF_TIMEOUT
 DECL|DIO_TIMEOUT|macro|DIO_TIMEOUT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_RPL_DAO_EXPIRATION_TIMEOUT|macro|NET_RPL_DAO_EXPIRATION_TIMEOUT
@@ -31,6 +32,8 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|acceptable_rank|function|static int acceptable_rank(struct net_rpl_dag *dag, u16_t rank)
 DECL|add_rpl_opt|function|static inline int add_rpl_opt(struct net_pkt *pkt, u16_t offset)
 DECL|alloc_dag|function|static struct net_rpl_dag *alloc_dag(struct net_if *iface, u8_t instance_id, struct in6_addr *dag_id)
+DECL|append_all|macro|append_all
+DECL|append|macro|append
 DECL|best_parent|function|static struct net_rpl_parent *best_parent(struct net_if *iface, struct net_rpl_dag *dag)
 DECL|check_prefix|function|static void check_prefix(struct net_if *iface, struct net_rpl_prefix *last_prefix, struct net_rpl_prefix *new_prefix)
 DECL|create_linklocal_rplnodes_mcast|function|static inline void create_linklocal_rplnodes_mcast(struct in6_addr *addr)
@@ -151,5 +154,6 @@ DECL|send_mcast_dao_cb|function|static void send_mcast_dao_cb(struct net_route_e
 DECL|send_mcast_dao|function|static void send_mcast_dao(struct net_rpl_instance *instance)
 DECL|set_dao_lifetime_timer|function|static void set_dao_lifetime_timer(struct net_rpl_instance *instance)
 DECL|set_ip_from_prefix|function|static inline void set_ip_from_prefix(struct net_linkaddr *lladdr, struct net_rpl_prefix *prefix, struct in6_addr *addr)
-DECL|setup_icmpv6_hdr|function|static inline void setup_icmpv6_hdr(struct net_pkt *pkt, u8_t type, u8_t code)
+DECL|setup_icmpv6_hdr|function|static inline int setup_icmpv6_hdr(struct net_pkt *pkt, u8_t type, u8_t code)
 DECL|should_send_dao|function|static int should_send_dao(struct net_rpl_instance *instance, struct net_rpl_dio *dio, struct net_rpl_parent *parent)
+DECL|write_pkt|macro|write_pkt

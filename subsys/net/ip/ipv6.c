@@ -10,6 +10,7 @@ DECL|MAX_UNICAST_SOLICIT|macro|MAX_UNICAST_SOLICIT
 DECL|MIN_IPV6_MTU|macro|MIN_IPV6_MTU
 DECL|MLDv2_LEN|macro|MLDv2_LEN
 DECL|ND_NET_BUF_TIMEOUT|macro|ND_NET_BUF_TIMEOUT
+DECL|NET_BUF_TIMEOUT|macro|NET_BUF_TIMEOUT
 DECL|NET_DEBUG_NBR|macro|NET_DEBUG_NBR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NS_REPLY_TIMEOUT|macro|NS_REPLY_TIMEOUT
@@ -18,6 +19,8 @@ DECL|ROUTER_ALERT_LEN|macro|ROUTER_ALERT_LEN
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TWO_HOURS|macro|TWO_HOURS
 DECL|add_route|function|static struct net_route_entry *add_route(struct net_if *iface, struct in6_addr *addr, u8_t prefix_len)
+DECL|append_all|macro|append_all
+DECL|append|macro|append
 DECL|cb|member|net_nbr_cb_t cb;
 DECL|check_route|function|static struct in6_addr *check_route(struct net_if *iface, struct in6_addr *dst, bool *try_route)
 DECL|check_unknown_option|function|static inline struct net_pkt *check_unknown_option(struct net_pkt *pkt, u8_t opt_type, u16_t length)
