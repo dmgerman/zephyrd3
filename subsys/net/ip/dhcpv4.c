@@ -1,5 +1,6 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|dhcph4_manage_timers|function|static u32_t dhcph4_manage_timers(struct net_if *iface, s64_t timeout)
 DECL|dhcpv4_add_cookie|function|static inline bool dhcpv4_add_cookie(struct net_pkt *pkt)
 DECL|dhcpv4_add_end|function|static inline bool dhcpv4_add_end(struct net_pkt *pkt)
 DECL|dhcpv4_add_file|function|static inline bool dhcpv4_add_file(struct net_pkt *pkt)
@@ -9,6 +10,7 @@ DECL|dhcpv4_add_req_ipaddr|function|static bool dhcpv4_add_req_ipaddr(struct net
 DECL|dhcpv4_add_req_options|function|static bool dhcpv4_add_req_options(struct net_pkt *pkt)
 DECL|dhcpv4_add_server_id|function|static bool dhcpv4_add_server_id(struct net_pkt *pkt, const struct in_addr *addr)
 DECL|dhcpv4_add_sname|function|static inline bool dhcpv4_add_sname(struct net_pkt *pkt)
+DECL|dhcpv4_check_timeout|function|static bool dhcpv4_check_timeout(s64_t start, u32_t time, s64_t timeout)
 DECL|dhcpv4_enter_bound|function|static void dhcpv4_enter_bound(struct net_if *iface)
 DECL|dhcpv4_enter_requesting|function|static void dhcpv4_enter_requesting(struct net_if *iface)
 DECL|dhcpv4_enter_selecting|function|static void dhcpv4_enter_selecting(struct net_if *iface)
@@ -17,15 +19,18 @@ DECL|dhcpv4_handle_msg_nak|function|static void dhcpv4_handle_msg_nak(struct net
 DECL|dhcpv4_handle_msg_offer|function|static inline void dhcpv4_handle_msg_offer(struct net_if *iface)
 DECL|dhcpv4_handle_reply|function|static void dhcpv4_handle_reply(struct net_if *iface,enum dhcpv4_msg_type msg_type)
 DECL|dhcpv4_iface_event_handler|function|static void dhcpv4_iface_event_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
+DECL|dhcpv4_ifaces|variable|dhcpv4_ifaces
 DECL|dhcpv4_msg_type_name|function|static const char *dhcpv4_msg_type_name(enum dhcpv4_msg_type msg_type)
 DECL|dhcpv4_parse_options|function|static enum net_verdict dhcpv4_parse_options(struct net_if *iface, struct net_buf *frag, u16_t offset, enum dhcpv4_msg_type *msg_type)
 DECL|dhcpv4_prepare_message|function|static struct net_pkt *dhcpv4_prepare_message(struct net_if *iface, u8_t type, const struct in_addr *ciaddr, const struct in_addr *server_addr)
-DECL|dhcpv4_send_discover|function|static void dhcpv4_send_discover(struct net_if *iface)
-DECL|dhcpv4_send_request|function|static void dhcpv4_send_request(struct net_if *iface)
+DECL|dhcpv4_rebinding_timedout|function|static bool dhcpv4_rebinding_timedout(struct net_if *iface, s64_t timeout)
+DECL|dhcpv4_renewal_timedout|function|static bool dhcpv4_renewal_timedout(struct net_if *iface, s64_t timeout)
+DECL|dhcpv4_request_timedout|function|static bool dhcpv4_request_timedout(struct net_if *iface, s64_t timeout)
+DECL|dhcpv4_send_discover|function|static u32_t dhcpv4_send_discover(struct net_if *iface)
+DECL|dhcpv4_send_request|function|static u32_t dhcpv4_send_request(struct net_if *iface)
 DECL|dhcpv4_setup_udp_header|function|static bool dhcpv4_setup_udp_header(struct net_pkt *pkt)
-DECL|dhcpv4_t1_timeout|function|static void dhcpv4_t1_timeout(struct k_work *work)
-DECL|dhcpv4_t2_timeout|function|static void dhcpv4_t2_timeout(struct k_work *work)
 DECL|dhcpv4_timeout|function|static void dhcpv4_timeout(struct k_work *work)
+DECL|dhcpv4_update_timeout_work|function|static void dhcpv4_update_timeout_work(u32_t timeout)
 DECL|magic_cookie|variable|magic_cookie
 DECL|mgmt4_cb|variable|mgmt4_cb
 DECL|net_dhcpv4_init|function|int net_dhcpv4_init(void)
@@ -33,3 +38,4 @@ DECL|net_dhcpv4_input|function|static enum net_verdict net_dhcpv4_input(struct n
 DECL|net_dhcpv4_start|function|void net_dhcpv4_start(struct net_if *iface)
 DECL|net_dhcpv4_state_name|function|const char *net_dhcpv4_state_name(enum net_dhcpv4_state state)
 DECL|net_dhcpv4_stop|function|void net_dhcpv4_stop(struct net_if *iface)
+DECL|timeout_work|variable|timeout_work
