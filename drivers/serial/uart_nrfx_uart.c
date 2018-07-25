@@ -19,8 +19,10 @@ DECL|uart_nrfx_irq_tx_enable|function|static void uart_nrfx_irq_tx_enable(struct
 DECL|uart_nrfx_irq_tx_ready_complete|function|static int uart_nrfx_irq_tx_ready_complete(struct device *dev)
 DECL|uart_nrfx_irq_update|function|static int uart_nrfx_irq_update(struct device *dev)
 DECL|uart_nrfx_isr|function|static void uart_nrfx_isr(void *arg)
+DECL|uart_nrfx_pm_control|function|static int uart_nrfx_pm_control(struct device *dev,u32_t ctrl_command, void *context)
 DECL|uart_nrfx_poll_in|function|static int uart_nrfx_poll_in(struct device *dev, unsigned char *c)
 DECL|uart_nrfx_poll_out|function|static unsigned char uart_nrfx_poll_out(struct device *dev,unsigned char c)
+DECL|uart_nrfx_set_power_state|function|static void uart_nrfx_set_power_state(u32_t new_state)
 DECL|uart_nrfx_uart0|variable|uart_nrfx_uart0
 DECL|uart_nrfx_uart_driver_api|variable|uart_nrfx_uart_driver_api
 DECL|uart_sw_event_txdrdy|variable|uart_sw_event_txdrdy
