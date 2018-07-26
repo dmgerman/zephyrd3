@@ -19,5 +19,5 @@ DECL|object_monitor|function|static void object_monitor(void)
 DECL|phil_data|variable|phil_data
 DECL|phil_entry|function|static void phil_entry(void)
 DECL|test_main|function|void test_main(void)
+DECL|test_philosophers_tracing|function|void test_philosophers_tracing(void)
 DECL|test_thread_monitor|function|static inline int test_thread_monitor(void)
-DECL|test_tracing|function|void test_tracing(void)
