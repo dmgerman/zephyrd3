@@ -17,6 +17,8 @@ DECL|SET_MORE|macro|SET_MORE
 DECL|SET_NUM|macro|SET_NUM
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|__coap_header_get_code|function|static u8_t __coap_header_get_code(const struct coap_packet *cpkt)
+DECL|append_all|macro|append_all
+DECL|append|macro|append
 DECL|check_frag_read_status|function|static int check_frag_read_status(const struct net_buf *frag, u16_t offset)
 DECL|coap_append_block1_option|function|int coap_append_block1_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
 DECL|coap_append_block2_option|function|int coap_append_block2_option(struct coap_packet *cpkt, struct coap_block_context *ctx)
