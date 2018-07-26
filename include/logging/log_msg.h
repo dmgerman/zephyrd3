@@ -70,11 +70,6 @@ DECL|raw|member|u16_t raw;
 DECL|ref_cnt|member|atomic_t ref_cnt; /*!< Reference counter for tracking message users. */
 DECL|reserved|member|u16_t reserved : 10;
 DECL|reserved|member|u16_t reserved : 14;
-DECL|sizeof|variable|sizeof
-DECL|sizeof|variable|sizeof
-DECL|sizeof|variable|sizeof
-DECL|sizeof|variable|sizeof
-DECL|sizeof|variable|sizeof
 DECL|source_id|member|u16_t source_id : 10; /*!< Source ID. */
 DECL|std|member|struct log_msg_std_ext_head_data std;
 DECL|std|member|struct log_msg_std_hdr std;
