@@ -1,4 +1,5 @@
 DECL|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH|macro|CONFIG_LOG_PRINTK_MAX_STRING_LENGTH
+DECL|backend_filter_init|function|static void backend_filter_init(struct log_backend const *const backend)
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
 DECL|buffered_cnt|variable|buffered_cnt
 DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
