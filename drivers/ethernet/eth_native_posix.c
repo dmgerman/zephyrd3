@@ -26,6 +26,9 @@ DECL|if_name|member|const char *if_name;
 DECL|iface|member|struct net_if *iface;
 DECL|init_done|member|bool init_done;
 DECL|ll_addr|member|struct net_linkaddr ll_addr;
+DECL|lldpdu_ptr|macro|lldpdu_ptr
+DECL|lldpdu_ptr|macro|lldpdu_ptr
+DECL|lldpdu|variable|lldpdu
 DECL|mac_addr|member|u8_t mac_addr[6];
 DECL|need_timestamping|function|static bool need_timestamping(struct gptp_hdr *hdr)
 DECL|promisc_mode|member|bool promisc_mode;
@@ -47,3 +50,4 @@ DECL|status|member|bool status;
 DECL|update_gptp|function|static void update_gptp(struct net_if *iface, struct net_pkt *pkt,bool send)
 DECL|update_gptp|macro|update_gptp
 DECL|update_pkt_priority|function|static void update_pkt_priority(struct gptp_hdr *hdr, struct net_pkt *pkt)
+DECL|vlan_setup|function|static int vlan_setup(struct device *dev, struct net_if *iface, u16_t tag, bool enable)
