@@ -1,5 +1,6 @@
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|ethernet_get_config|function|static int ethernet_get_config(u32_t mgmt_request, struct net_if *iface, void *data, size_t len)
 DECL|ethernet_mgmt_raise_carrier_off_event|function|void ethernet_mgmt_raise_carrier_off_event(struct net_if *iface)
 DECL|ethernet_mgmt_raise_carrier_on_event|function|void ethernet_mgmt_raise_carrier_on_event(struct net_if *iface)
 DECL|ethernet_mgmt_raise_vlan_disabled_event|function|void ethernet_mgmt_raise_vlan_disabled_event(struct net_if *iface, u16_t tag)
