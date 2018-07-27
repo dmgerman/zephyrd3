@@ -3,6 +3,7 @@ DECL|eth_fake_api_funcs|variable|eth_fake_api_funcs
 DECL|eth_fake_context|struct|struct eth_fake_context {
 DECL|eth_fake_data|variable|eth_fake_data
 DECL|eth_fake_get_capabilities|function|static enum ethernet_hw_caps eth_fake_get_capabilities(struct device *dev)
+DECL|eth_fake_get_config|function|static int eth_fake_get_config(struct device *dev, enum ethernet_config_type type, struct ethernet_config *config)
 DECL|eth_fake_iface_init|function|static void eth_fake_iface_init(struct net_if *iface)
 DECL|eth_fake_init|function|static int eth_fake_init(struct device *dev)
 DECL|eth_fake_send|function|static int eth_fake_send(struct net_if *iface, struct net_pkt *pkt)
@@ -14,6 +15,7 @@ DECL|link_10bt|member|bool link_10bt;
 DECL|mac_addr_change|variable|mac_addr_change
 DECL|mac_addr_init|variable|mac_addr_init
 DECL|mac_address|member|u8_t mac_address[6];
+DECL|priority_queues_num|member|int priority_queues_num;
 DECL|promisc_mode|member|bool promisc_mode;
 DECL|test_change_auto_neg|function|static void test_change_auto_neg(void)
 DECL|test_change_duplex|function|static void test_change_duplex(void)
