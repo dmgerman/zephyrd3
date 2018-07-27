@@ -46,6 +46,7 @@ DECL|ethernet_qav_queue_param|struct|struct ethernet_qav_queue_param {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|full_duplex|member|bool full_duplex;
 DECL|get_capabilities|member|enum ethernet_hw_caps (*get_capabilities)(struct device *dev);
+DECL|get_config|member|int (*get_config)(struct device *dev,
 DECL|get_ptp_clock|member|struct device *(*get_ptp_clock)(struct device *dev);
 DECL|get_stats|member|struct net_stats_eth *(*get_stats)(struct device *dev);
 DECL|idle_slope|member|unsigned int idle_slope;
