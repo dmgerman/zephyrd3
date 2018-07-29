@@ -1,6 +1,14 @@
 DECL|DEBUG_NP_TIMER|macro|DEBUG_NP_TIMER
+DECL|args|variable|args
 DECL|boot_time|variable|boot_time
 DECL|clock_ratio|variable|clock_ratio
+DECL|cmd_no_realtime_found|function|static void cmd_no_realtime_found(char *argv, int offset)
+DECL|cmd_realtime_found|function|static void cmd_realtime_found(char *argv, int offset)
+DECL|cmd_rt_drift_found|function|static void cmd_rt_drift_found(char *argv, int offset)
+DECL|cmd_rt_ratio_found|function|static void cmd_rt_ratio_found(char *argv, int offset)
+DECL|cmd_rtcoffset_found|function|static void cmd_rtcoffset_found(char *argv, int offset)
+DECL|cmd_rtcreset_found|function|static void cmd_rtcreset_found(char *argv, int offset)
+DECL|cmd_stop_at_found|function|static void cmd_stop_at_found(char *argv, int offset)
 DECL|get_host_us_time|function|u64_t get_host_us_time(void)
 DECL|host_clock_gettime|function|static inline void host_clock_gettime(struct timespec *tv)
 DECL|hw_timer_awake_timer|variable|hw_timer_awake_timer
@@ -27,9 +35,14 @@ DECL|hwtimer_wake_in_time|function|void hwtimer_wake_in_time(u64_t time)
 DECL|last_drift_offset|variable|last_drift_offset
 DECL|last_radj_rtime|variable|last_radj_rtime
 DECL|last_radj_stime|variable|last_radj_stime
+DECL|native_add_time_options|function|static void native_add_time_options(void)
 DECL|real_time_mode|variable|real_time_mode
 DECL|reset_rtc|variable|reset_rtc
+DECL|rt_drift|member|double rt_drift;
+DECL|rt_ratio|member|double rt_ratio;
+DECL|rtc_offset|member|double rtc_offset;
 DECL|rtc_offset|variable|rtc_offset
 DECL|silent_ticks|variable|silent_ticks
+DECL|stop_at|member|double stop_at;
 DECL|tick_p|variable|tick_p
 DECL|us_time_to_str|function|static char *us_time_to_str(char *dest, u64_t time)

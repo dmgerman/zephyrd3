@@ -7,6 +7,10 @@ DECL|H4_SCO|macro|H4_SCO
 DECL|HCI_CHANNEL_USER|macro|HCI_CHANNEL_USER
 DECL|SOL_HCI|macro|SOL_HCI
 DECL|_bt_uc_init|function|static int _bt_uc_init(struct device *unused)
+DECL|add_btuserchan_arg|function|static void add_btuserchan_arg(void)
+DECL|bt_dev_index|variable|bt_dev_index
+DECL|btuserchan_check_arg|function|static void btuserchan_check_arg(void)
+DECL|cmd_bt_dev_found|function|static void cmd_bt_dev_found(char *argv, int offset)
 DECL|drv|variable|drv
 DECL|get_rx|function|static struct net_buf *get_rx(const u8_t *buf)
 DECL|hci_channel|member|unsigned short hci_channel;
