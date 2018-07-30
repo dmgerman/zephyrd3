@@ -8,6 +8,7 @@ DECL|ETHERNET_CONFIG_TYPE_PRIORITY_QUEUES_NUM|enumerator|ETHERNET_CONFIG_TYPE_PR
 DECL|ETHERNET_CONFIG_TYPE_PROMISC_MODE|enumerator|ETHERNET_CONFIG_TYPE_PROMISC_MODE,
 DECL|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH|enumerator|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH,
 DECL|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE|enumerator|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE,
+DECL|ETHERNET_CONFIG_TYPE_QAV_STATUS|enumerator|ETHERNET_CONFIG_TYPE_QAV_STATUS,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
 DECL|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS,
 DECL|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS,
@@ -43,6 +44,7 @@ DECL|carrier_mgmt|member|} carrier_mgmt;
 DECL|delta_bandwidth|member|unsigned int delta_bandwidth;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|dst|member|struct net_eth_addr dst;
+DECL|enabled|member|bool enabled;
 DECL|ethernet_api|struct|struct ethernet_api {
 DECL|ethernet_config_type|enum|enum ethernet_config_type {
 DECL|ethernet_config|struct|struct ethernet_config {
