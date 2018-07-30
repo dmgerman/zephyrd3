@@ -20,10 +20,7 @@ DECL|bytes|member|u8_t bytes[HEXDUMP_BYTES_CONT_MSG];
 DECL|bytes|member|u8_t bytes[LOG_MSG_HEXDUMP_BYTES_HEAD_CHUNK];
 DECL|bytes|member|u8_t bytes[LOG_MSG_HEXDUMP_BYTES_SINGLE_CHUNK];
 DECL|cont|member|struct log_msg_cont cont;
-DECL|data|member|union log_msg_head_data data;
 DECL|data|member|} data;
-DECL|data|member|} data;
-DECL|data|member|} data; /*!< Message data. */
 DECL|domain_id|member|u16_t domain_id : 3; /*!< Originating domain. */
 DECL|ext|member|struct log_msg_ext_head_data ext;
 DECL|generic|member|struct log_msg_generic_hdr generic;
@@ -55,9 +52,7 @@ DECL|log_msg_is_raw_string|function|static inline bool log_msg_is_raw_string(str
 DECL|log_msg_is_std|function|static inline bool log_msg_is_std(struct log_msg *msg)
 DECL|log_msg_level_get|function|static inline u32_t log_msg_level_get(struct log_msg *msg)
 DECL|log_msg_source_id_get|function|static inline u32_t log_msg_source_id_get(struct log_msg *msg)
-DECL|log_msg_std_ext_head_data|struct|struct log_msg_std_ext_head_data {
 DECL|log_msg_std_hdr|struct|struct log_msg_std_hdr {
-DECL|log_msg_std_head_data|struct|struct log_msg_std_head_data {
 DECL|log_msg_timestamp_get|function|static inline u32_t log_msg_timestamp_get(struct log_msg *msg)
 DECL|log_msg|struct|struct log_msg {
 DECL|nargs|member|u16_t nargs : 4;
@@ -65,15 +60,15 @@ DECL|next|member|struct log_msg *next; /*!< Used by logger core list.*/
 DECL|next|member|struct log_msg_cont *next;
 DECL|next|member|struct log_msg_cont *next; /*!< Pointer to the next chunk. */
 DECL|params|member|} params;
+DECL|payload|member|} payload;
+DECL|payload|member|} payload; /*!< Message data. */
 DECL|raw_string|member|u16_t raw_string : 1;
 DECL|raw|member|u16_t raw;
 DECL|ref_cnt|member|atomic_t ref_cnt; /*!< Reference counter for tracking message users. */
 DECL|reserved|member|u16_t reserved : 10;
 DECL|reserved|member|u16_t reserved : 14;
+DECL|single|member|union log_msg_head_data single;
 DECL|source_id|member|u16_t source_id : 10; /*!< Source ID. */
-DECL|std|member|struct log_msg_std_ext_head_data std;
 DECL|std|member|struct log_msg_std_hdr std;
-DECL|std|member|struct log_msg_std_head_data std;
-DECL|str|member|const char *str;
 DECL|str|member|const char *str;
 DECL|timestamp|member|u32_t timestamp; /*!< Timestamp. */
