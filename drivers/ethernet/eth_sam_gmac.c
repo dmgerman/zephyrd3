@@ -14,6 +14,7 @@ DECL|eth_dev|member|struct device *eth_dev;
 DECL|eth_initialize|function|static int eth_initialize(struct device *dev)
 DECL|eth_rx|function|static void eth_rx(struct gmac_queue *queue)
 DECL|eth_sam_gmac_get_capabilities|function|static enum ethernet_hw_caps eth_sam_gmac_get_capabilities(struct device *dev)
+DECL|eth_sam_gmac_get_config|function|static int eth_sam_gmac_get_config(struct device *dev, enum ethernet_config_type type, struct ethernet_config *config)
 DECL|eth_sam_gmac_get_ptp_clock|function|static struct device *eth_sam_gmac_get_ptp_clock(struct device *dev)
 DECL|eth_tx_timeout_work|function|static void eth_tx_timeout_work(struct k_work *item)
 DECL|eth_tx|function|static int eth_tx(struct net_if *iface, struct net_pkt *pkt)
