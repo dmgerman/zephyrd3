@@ -15,8 +15,9 @@ DECL|link_10bt|member|bool link_10bt;
 DECL|mac_addr_change|variable|mac_addr_change
 DECL|mac_addr_init|variable|mac_addr_init
 DECL|mac_address|member|u8_t mac_address[6];
-DECL|priority_queues_num|member|int priority_queues_num;
+DECL|priority_queues|member|} priority_queues[2];
 DECL|promisc_mode|member|bool promisc_mode;
+DECL|qav_enabled|member|bool qav_enabled;
 DECL|test_change_auto_neg|function|static void test_change_auto_neg(void)
 DECL|test_change_duplex|function|static void test_change_duplex(void)
 DECL|test_change_link|function|static void test_change_link(void)
