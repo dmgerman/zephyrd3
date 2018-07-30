@@ -28,12 +28,15 @@ DECL|addr_type|member|enum net_addr_type addr_type;
 DECL|address|member|struct net_addr address;
 DECL|address|member|struct net_addr address;
 DECL|address|member|struct net_addr address;
+DECL|announce_cnt|member|u8_t announce_cnt;
 DECL|attempts|member|u8_t attempts;
 DECL|base_reachable_time|member|u32_t base_reachable_time;
 DECL|cb|member|net_if_link_callback_t cb;
 DECL|cb|member|net_if_mcast_callback_t cb;
 DECL|cb|member|net_if_timestamp_callback_t cb;
 DECL|config|member|struct net_if_config config;
+DECL|conflict_cnt|member|u8_t conflict_cnt;
+DECL|current_ip|member|struct in_addr current_ip;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_count|member|u8_t dad_count;
 DECL|dad_timer|member|struct k_delayed_work dad_timer;
@@ -45,7 +48,9 @@ DECL|if_dev|member|struct net_if_dev *if_dev;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
+DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
+DECL|ipv4auto|member|struct net_if_ipv4_autoconf ipv4auto;
 DECL|ipv4|member|struct net_if_ipv4 *ipv4;
 DECL|ipv6|member|struct net_if_ipv6 *ipv6;
 DECL|ip|member|struct net_if_ip ip;
@@ -83,6 +88,7 @@ DECL|net_if_get_ieee802154|function|static inline struct net_if *net_if_get_ieee
 DECL|net_if_get_link_addr|function|static inline struct net_linkaddr *net_if_get_link_addr(struct net_if *iface)
 DECL|net_if_get_ll_reserve|function|static inline u16_t net_if_get_ll_reserve(struct net_if *iface, const struct in6_addr *dst_ip6)
 DECL|net_if_get_mtu|function|static inline u16_t net_if_get_mtu(struct net_if *iface)
+DECL|net_if_ipv4_autoconf|struct|struct net_if_ipv4_autoconf {
 DECL|net_if_ipv4_get_ttl|function|static inline u8_t net_if_ipv4_get_ttl(struct net_if *iface)
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
@@ -127,14 +133,17 @@ DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
+DECL|node|member|sys_snode_t node;
 DECL|offload|member|struct net_offload *offload;
 DECL|pkt|member|struct net_pkt *pkt;
 DECL|prefix|member|struct in6_addr prefix;
 DECL|prefix|member|struct net_if_ipv6_prefix prefix[NET_IF_MAX_IPV6_PREFIX];
+DECL|probe_cnt|member|u8_t probe_cnt;
 DECL|reachable_time|member|u32_t reachable_time;
 DECL|rebinding_time|member|u32_t rebinding_time;
 DECL|renewal_time|member|u32_t renewal_time;
 DECL|request_time|member|u32_t request_time;
+DECL|requested_ip|member|struct in_addr requested_ip;
 DECL|requested_ip|member|struct in_addr requested_ip;
 DECL|retrans_timer|member|u32_t retrans_timer;
 DECL|rs_count|member|u8_t rs_count;
@@ -143,9 +152,12 @@ DECL|send|member|int (*send)(struct net_if *iface, struct net_pkt *pkt);
 DECL|server_id|member|struct in_addr server_id;
 DECL|stack|member|k_thread_stack_t *stack;
 DECL|state|member|enum net_dhcpv4_state state;
+DECL|state|member|enum net_ipv4_autoconf_state state;
 DECL|stats|member|struct net_stats stats;
 DECL|tc|member|int tc;
 DECL|timer_start|member|s64_t timer_start;
+DECL|timer_start|member|s64_t timer_start;
+DECL|timer_timeout|member|u32_t timer_timeout;
 DECL|ttl|member|u8_t ttl;
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV4_ADDR];
 DECL|unicast|member|struct net_if_addr unicast[NET_IF_MAX_IPV6_ADDR];
