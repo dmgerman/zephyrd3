@@ -6,6 +6,7 @@ DECL|BT_SMP_AUTH_DEFAULT|macro|BT_SMP_AUTH_DEFAULT
 DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK_SC|macro|BT_SMP_AUTH_MASK_SC
 DECL|BT_SMP_AUTH_MASK|macro|BT_SMP_AUTH_MASK
+DECL|DISPLAY_FIXED|macro|DISPLAY_FIXED
 DECL|ID_DIST|macro|ID_DIST
 DECL|ID_DIST|macro|ID_DIST
 DECL|JUST_WORKS|enumerator|JUST_WORKS, /* JustWorks pairing */
@@ -48,6 +49,7 @@ DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|br_handlers|variable|br_handlers
 DECL|br_sc_supported|function|static bool br_sc_supported(void)
+DECL|bt_passkey_set|function|int bt_passkey_set(unsigned int passkey)
 DECL|bt_smp_accept|function|static int bt_smp_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|bt_smp_aes_cmac|function|static int bt_smp_aes_cmac(const u8_t *key, const u8_t *in, size_t len, u8_t *out)
 DECL|bt_smp_auth_cancel|function|int bt_smp_auth_cancel(struct bt_conn *conn)
@@ -90,6 +92,7 @@ DECL|enc_key_size|member|u8_t enc_key_size;
 DECL|expect_len|member|u8_t expect_len;
 DECL|expect_len|member|u8_t expect_len;
 DECL|e|member|u8_t e[16];
+DECL|fixed_passkey|variable|fixed_passkey
 DECL|func|member|u8_t (*func)(struct bt_smp *smp, struct net_buf *buf);
 DECL|func|member|u8_t (*func)(struct bt_smp_br *smp, struct net_buf *buf);
 DECL|gen_method_legacy|variable|gen_method_legacy
