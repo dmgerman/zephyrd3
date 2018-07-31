@@ -14,7 +14,9 @@ DECL|auth_cb_all|variable|auth_cb_all
 DECL|auth_cb_display_yes_no|variable|auth_cb_display_yes_no
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_cb_input|variable|auth_cb_input
+DECL|auth_pairing_complete|function|static void auth_pairing_complete(struct bt_conn *conn, bool bonded)
 DECL|auth_pairing_confirm|function|static void auth_pairing_confirm(struct bt_conn *conn)
+DECL|auth_pairing_failed|function|static void auth_pairing_failed(struct bt_conn *conn)
 DECL|auth_passkey_confirm|function|static void auth_passkey_confirm(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_display|function|static void auth_passkey_display(struct bt_conn *conn, unsigned int passkey)
 DECL|auth_passkey_entry|function|static void auth_passkey_entry(struct bt_conn *conn)
