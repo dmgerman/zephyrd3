@@ -11,6 +11,7 @@ DECL|SDP_CLIENT_USER_BUF_LEN|macro|SDP_CLIENT_USER_BUF_LEN
 DECL|ad_discov|variable|ad_discov
 DECL|auth_cancel|function|static void auth_cancel(struct bt_conn *conn)
 DECL|auth_cb_all|variable|auth_cb_all
+DECL|auth_cb_confirm|variable|auth_cb_confirm
 DECL|auth_cb_display_yes_no|variable|auth_cb_display_yes_no
 DECL|auth_cb_display|variable|auth_cb_display
 DECL|auth_cb_input|variable|auth_cb_input
