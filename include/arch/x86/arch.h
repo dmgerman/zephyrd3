@@ -13,8 +13,6 @@ DECL|SYS_X86_RST_CNT_CPU_RST|macro|SYS_X86_RST_CNT_CPU_RST
 DECL|SYS_X86_RST_CNT_FULL_RST|macro|SYS_X86_RST_CNT_FULL_RST
 DECL|SYS_X86_RST_CNT_REG|macro|SYS_X86_RST_CNT_REG
 DECL|SYS_X86_RST_CNT_SYS_RST|macro|SYS_X86_RST_CNT_SYS_RST
-DECL|USER_CODE_SEG|macro|USER_CODE_SEG
-DECL|USER_DATA_SEG|macro|USER_DATA_SEG
 DECL|X86_MMU_PDPT|macro|X86_MMU_PDPT
 DECL|X86_MMU_PD|macro|X86_MMU_PD
 DECL|_ARCH_EXCEPT|macro|_ARCH_EXCEPT
@@ -55,15 +53,7 @@ DECL|_VECTOR_ARG|macro|_VECTOR_ARG
 DECL|_X86_IDT_TSS_REGISTER|macro|_X86_IDT_TSS_REGISTER
 DECL|_arch_irq_lock|function|static ALWAYS_INLINE unsigned int _arch_irq_lock(void)
 DECL|_arch_irq_unlock|function|static ALWAYS_INLINE void _arch_irq_unlock(unsigned int key)
-DECL|_arch_is_user_context|function|static inline int _arch_is_user_context(void)
 DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32
-DECL|_arch_syscall_invoke0|function|static inline u32_t _arch_syscall_invoke0(u32_t call_id)
-DECL|_arch_syscall_invoke1|function|static inline u32_t _arch_syscall_invoke1(u32_t arg1, u32_t call_id)
-DECL|_arch_syscall_invoke2|function|static inline u32_t _arch_syscall_invoke2(u32_t arg1, u32_t arg2, u32_t call_id)
-DECL|_arch_syscall_invoke3|function|static inline u32_t _arch_syscall_invoke3(u32_t arg1, u32_t arg2, u32_t arg3, u32_t call_id)
-DECL|_arch_syscall_invoke4|function|static inline u32_t _arch_syscall_invoke4(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t call_id)
-DECL|_arch_syscall_invoke5|function|static inline u32_t _arch_syscall_invoke5(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t call_id)
-DECL|_arch_syscall_invoke6|function|static inline u32_t _arch_syscall_invoke6(u32_t arg1, u32_t arg2, u32_t arg3, u32_t arg4, u32_t arg5, u32_t arg6, u32_t call_id)
 DECL|_int_latency_start|macro|_int_latency_start
 DECL|_int_latency_stop|macro|_int_latency_stop
 DECL|_x86_syscall_stack_frame|struct|struct _x86_syscall_stack_frame {

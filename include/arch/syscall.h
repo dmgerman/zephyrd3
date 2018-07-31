@@ -1,0 +1,1 @@
+DECL|__ARCHSYSCALL_H__|macro|__ARCHSYSCALL_H__
