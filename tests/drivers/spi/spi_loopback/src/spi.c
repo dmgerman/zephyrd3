@@ -7,6 +7,7 @@ DECL|SPI_CS|macro|SPI_CS
 DECL|SPI_CS|macro|SPI_CS
 DECL|SPI_DRV_NAME|macro|SPI_DRV_NAME
 DECL|SPI_SLAVE|macro|SPI_SLAVE
+DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|async_evt|variable|async_evt
 DECL|async_sig|variable|async_sig
