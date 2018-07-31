@@ -5,6 +5,7 @@ DECL|_impl_k_object_alloc|function|void *_impl_k_object_alloc(enum k_objects oty
 DECL|_impl_k_object_release|function|void _impl_k_object_release(void *object)
 DECL|_k_object_find|function|struct _k_object *_k_object_find(void *obj)
 DECL|_k_object_init|function|void _k_object_init(void *object)
+DECL|_k_object_recycle|function|void _k_object_recycle(void *object)
 DECL|_k_object_uninit|function|void _k_object_uninit(void *object)
 DECL|_k_object_validate|function|int _k_object_validate(struct _k_object *ko, enum k_objects otype, enum _obj_init_check init)
 DECL|_k_object_wordlist_foreach|function|void _k_object_wordlist_foreach(_wordlist_cb_func_t func, void *context)
