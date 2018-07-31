@@ -2,6 +2,7 @@ DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|ADDR_LEN|macro|ADDR_LEN
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
+DECL|EC|macro|EC
 DECL|MAX_HTTP_OUTPUT_LEN|macro|MAX_HTTP_OUTPUT_LEN
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_SHELL_MODULE|macro|NET_SHELL_MODULE
@@ -23,6 +24,7 @@ DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_
 DECL|allocs_cb|function|static void allocs_cb(struct net_pkt *pkt, struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free,
 DECL|are_external_pools|member|bool are_external_pools;
 DECL|arp_cb|function|static void arp_cb(struct arp_entry *entry, void *user_data)
+DECL|capability|member|enum ethernet_hw_caps capability;
 DECL|clk_slave2str|function|static const char *clk_slave2str(enum gptp_clk_slave_sync_states state)
 DECL|cms_rcv2str|function|static const char *cms_rcv2str(enum gptp_cms_rcv_states state)
 DECL|conn_handler_cb|function|static void conn_handler_cb(struct net_conn *conn, void *user_data)
@@ -30,7 +32,10 @@ DECL|context_cb|function|static void context_cb(struct net_context *context, voi
 DECL|context_info|function|static void context_info(struct net_context *context, void *user_data)
 DECL|ctx_info|struct|struct ctx_info {
 DECL|data_pools|member|struct net_buf_pool *data_pools[CONFIG_NET_MAX_CONTEXTS];
+DECL|description|member|const char * const description;
 DECL|dns_result_cb|function|static void dns_result_cb(enum dns_resolve_status status, struct dns_addrinfo *info, void *user_data)
+DECL|eth_hw_caps|variable|eth_hw_caps
+DECL|ethernet_capabilities|struct|struct ethernet_capabilities {
 DECL|get_addresses|function|static void get_addresses(struct net_context *context, char addr_local[], int local_len, char addr_remote[], int remote_len)
 DECL|get_my_ipv4_addr|function|static void get_my_ipv4_addr(struct net_if *iface, struct sockaddr *myaddr)
 DECL|get_my_ipv6_addr|function|static void get_my_ipv6_addr(struct net_if *iface, struct sockaddr *myaddr)
@@ -82,6 +87,7 @@ DECL|print_app_sec_info|function|static void print_app_sec_info(struct net_app_c
 DECL|print_connect_info|function|static void print_connect_info(int family, struct sockaddr *myaddr, struct sockaddr *addr)
 DECL|print_dns_info|function|static void print_dns_info(struct dns_resolve_context *ctx)
 DECL|print_eth_stats|function|static void print_eth_stats(struct net_if *iface, struct net_stats_eth *data)
+DECL|print_supported_ethernet_capabilities|function|static void print_supported_ethernet_capabilities(struct net_if *iface)
 DECL|priority2str|function|static const char *priority2str(enum net_priority priority)
 DECL|pss_rcv2str|function|static const char *pss_rcv2str(enum gptp_pss_rcv_states state)
 DECL|pss_send2str|function|static const char *pss_send2str(enum gptp_pss_send_states state)
