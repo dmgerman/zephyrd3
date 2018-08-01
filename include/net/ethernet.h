@@ -6,9 +6,7 @@ DECL|ETHERNET_CONFIG_TYPE_LINK|enumerator|ETHERNET_CONFIG_TYPE_LINK,
 DECL|ETHERNET_CONFIG_TYPE_MAC_ADDRESS|enumerator|ETHERNET_CONFIG_TYPE_MAC_ADDRESS,
 DECL|ETHERNET_CONFIG_TYPE_PRIORITY_QUEUES_NUM|enumerator|ETHERNET_CONFIG_TYPE_PRIORITY_QUEUES_NUM,
 DECL|ETHERNET_CONFIG_TYPE_PROMISC_MODE|enumerator|ETHERNET_CONFIG_TYPE_PROMISC_MODE,
-DECL|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH|enumerator|ETHERNET_CONFIG_TYPE_QAV_DELTA_BANDWIDTH,
-DECL|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE|enumerator|ETHERNET_CONFIG_TYPE_QAV_IDLE_SLOPE,
-DECL|ETHERNET_CONFIG_TYPE_QAV_STATUS|enumerator|ETHERNET_CONFIG_TYPE_QAV_STATUS,
+DECL|ETHERNET_CONFIG_TYPE_QAV_PARAM|enumerator|ETHERNET_CONFIG_TYPE_QAV_PARAM,
 DECL|ETHERNET_DUPLEX_SET|enumerator|ETHERNET_DUPLEX_SET = BIT(7),
 DECL|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_DST_MAC_ADDRESS,
 DECL|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS|enumerator|ETHERNET_FILTER_TYPE_SRC_MAC_ADDRESS,
@@ -23,6 +21,9 @@ DECL|ETHERNET_LINK_10BASE_T|enumerator|ETHERNET_LINK_10BASE_T = BIT(4),
 DECL|ETHERNET_PRIORITY_QUEUES|enumerator|ETHERNET_PRIORITY_QUEUES = BIT(11),
 DECL|ETHERNET_PROMISC_MODE|enumerator|ETHERNET_PROMISC_MODE = BIT(10),
 DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
+DECL|ETHERNET_QAV_PARAM_TYPE_DELTA_BANDWIDTH|enumerator|ETHERNET_QAV_PARAM_TYPE_DELTA_BANDWIDTH,
+DECL|ETHERNET_QAV_PARAM_TYPE_IDLE_SLOPE|enumerator|ETHERNET_QAV_PARAM_TYPE_IDLE_SLOPE,
+DECL|ETHERNET_QAV_PARAM_TYPE_STATUS|enumerator|ETHERNET_QAV_PARAM_TYPE_STATUS,
 DECL|ETHERNET_QAV|enumerator|ETHERNET_QAV = BIT(9),
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
@@ -52,7 +53,8 @@ DECL|ethernet_context|struct|struct ethernet_context {
 DECL|ethernet_filter_type|enum|enum ethernet_filter_type {
 DECL|ethernet_filter|struct|struct ethernet_filter {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
-DECL|ethernet_qav_queue_param|struct|struct ethernet_qav_queue_param {
+DECL|ethernet_qav_param_type|enum|enum ethernet_qav_param_type {
+DECL|ethernet_qav_param|struct|struct ethernet_qav_param {
 DECL|ethernet_vlan|struct|struct ethernet_vlan {
 DECL|filter|member|struct ethernet_filter filter;
 DECL|full_duplex|member|bool full_duplex;
@@ -87,7 +89,7 @@ DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
 DECL|port|member|int port;
 DECL|priority_queues_num|member|int priority_queues_num;
 DECL|promisc_mode|member|bool promisc_mode;
-DECL|qav_queue_param|member|struct ethernet_qav_queue_param qav_queue_param;
+DECL|qav_param|member|struct ethernet_qav_param qav_param;
 DECL|queue_id|member|int queue_id;
 DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|set|member|bool set;
@@ -97,6 +99,7 @@ DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
 DECL|type|member|enum ethernet_filter_type type;
+DECL|type|member|enum ethernet_qav_param_type type;
 DECL|type|member|u16_t type;
 DECL|type|member|u16_t type;
 DECL|vlan_enabled|member|s8_t vlan_enabled;
