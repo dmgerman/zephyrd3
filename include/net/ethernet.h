@@ -23,7 +23,9 @@ DECL|ETHERNET_PROMISC_MODE|enumerator|ETHERNET_PROMISC_MODE = BIT(10),
 DECL|ETHERNET_PTP|enumerator|ETHERNET_PTP = BIT(8),
 DECL|ETHERNET_QAV_PARAM_TYPE_DELTA_BANDWIDTH|enumerator|ETHERNET_QAV_PARAM_TYPE_DELTA_BANDWIDTH,
 DECL|ETHERNET_QAV_PARAM_TYPE_IDLE_SLOPE|enumerator|ETHERNET_QAV_PARAM_TYPE_IDLE_SLOPE,
+DECL|ETHERNET_QAV_PARAM_TYPE_OPER_IDLE_SLOPE|enumerator|ETHERNET_QAV_PARAM_TYPE_OPER_IDLE_SLOPE,
 DECL|ETHERNET_QAV_PARAM_TYPE_STATUS|enumerator|ETHERNET_QAV_PARAM_TYPE_STATUS,
+DECL|ETHERNET_QAV_PARAM_TYPE_TRAFFIC_CLASS|enumerator|ETHERNET_QAV_PARAM_TYPE_TRAFFIC_CLASS,
 DECL|ETHERNET_QAV|enumerator|ETHERNET_QAV = BIT(9),
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
 DECL|ETH_NET_DEVICE_INIT|macro|ETH_NET_DEVICE_INIT
@@ -86,6 +88,7 @@ DECL|net_eth_is_addr_multicast|function|static inline bool net_eth_is_addr_multi
 DECL|net_eth_vlan_disable|function|static inline int net_eth_vlan_disable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_enable|function|static inline int net_eth_vlan_enable(struct net_if *iface, u16_t vlan_tag)
 DECL|net_eth_vlan_hdr|struct|struct net_eth_vlan_hdr {
+DECL|oper_idle_slope|member|unsigned int oper_idle_slope;
 DECL|port|member|int port;
 DECL|priority_queues_num|member|int priority_queues_num;
 DECL|promisc_mode|member|bool promisc_mode;
@@ -98,6 +101,7 @@ DECL|src|member|struct net_eth_addr src;
 DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
+DECL|traffic_class|member|unsigned int traffic_class;
 DECL|type|member|enum ethernet_filter_type type;
 DECL|type|member|enum ethernet_qav_param_type type;
 DECL|type|member|u16_t type;
