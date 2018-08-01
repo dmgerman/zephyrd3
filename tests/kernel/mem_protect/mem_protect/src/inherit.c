@@ -1,6 +1,6 @@
 DECL|access_test|function|void access_test(void)
-DECL|dummy_end|function|static inline void dummy_end(struct k_timer *timer) { ARG_UNUSED(timer); }
-DECL|dummy_start|function|static inline void dummy_start(struct k_timer *timer) { ARG_UNUSED(timer); }
+DECL|dummy_end|function|static inline void dummy_end(struct k_timer *timer)
+DECL|dummy_start|function|static inline void dummy_start(struct k_timer *timer)
 DECL|inherit_buf|variable|inherit_buf
 DECL|inherit_mem_domain|variable|inherit_mem_domain
 DECL|inherit_memory_partition_array|variable|inherit_memory_partition_array
