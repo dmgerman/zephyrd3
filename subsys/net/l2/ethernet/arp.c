@@ -15,7 +15,7 @@ DECL|arp_entry_register_pending|function|static void arp_entry_register_pending(
 DECL|arp_free_entries|variable|arp_free_entries
 DECL|arp_pending_entries|variable|arp_pending_entries
 DECL|arp_prepare_reply|function|static inline struct net_pkt *arp_prepare_reply(struct net_if *iface,struct net_pkt *req)
-DECL|arp_prepare|function|static inline struct net_pkt *arp_prepare(struct net_if *iface, struct in_addr *next_addr, struct arp_entry *entry, struct net_pkt *pending, struct in_addr *request_ip,
+DECL|arp_prepare|function|static inline struct net_pkt *arp_prepare(struct net_if *iface, struct in_addr *next_addr, struct arp_entry *entry, struct net_pkt *pending, struct in_addr *current_ip)
 DECL|arp_request_timeout|function|static void arp_request_timeout(struct k_work *work)
 DECL|arp_request_timer|variable|arp_request_timer
 DECL|arp_table|variable|arp_table
