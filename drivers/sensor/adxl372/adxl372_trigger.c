@@ -1,0 +1,6 @@
+DECL|adxl372_gpio_callback|function|static void adxl372_gpio_callback(struct device *dev, struct gpio_callback *cb, u32_t pins)
+DECL|adxl372_init_interrupt|function|int adxl372_init_interrupt(struct device *dev)
+DECL|adxl372_thread_cb|function|static void adxl372_thread_cb(void *arg)
+DECL|adxl372_thread|function|static void adxl372_thread(int dev_ptr, int unused)
+DECL|adxl372_trigger_set|function|int adxl372_trigger_set(struct device *dev,const struct sensor_trigger *trig, sensor_trigger_handler_t handler)
+DECL|adxl372_work_cb|function|static void adxl372_work_cb(struct k_work *work)
