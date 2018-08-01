@@ -109,6 +109,7 @@ DECL|hci_stack_dump|function|static void hci_stack_dump(const struct k_thread *t
 DECL|hci_tx_thread|function|static void hci_tx_thread(void *p1, void *p2, void *p3)
 DECL|hci_vs_init|function|static void hci_vs_init(void)
 DECL|id_create|function|static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
+DECL|id_find|function|static int id_find(const bt_addr_le_t *addr)
 DECL|id|member|u8_t id;
 DECL|init_work|function|static void init_work(struct k_work *work)
 DECL|inquiry_complete|function|static void inquiry_complete(struct net_buf *buf)
