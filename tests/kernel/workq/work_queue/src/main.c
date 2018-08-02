@@ -1,6 +1,7 @@
 DECL|NUM_TEST_ITEMS|macro|NUM_TEST_ITEMS
 DECL|STACK_SIZE|macro|STACK_SIZE
 DECL|SUBMIT_WAIT|macro|SUBMIT_WAIT
+DECL|WORK_ITEM_WAIT_ALIGNED|macro|WORK_ITEM_WAIT_ALIGNED
 DECL|WORK_ITEM_WAIT|macro|WORK_ITEM_WAIT
 DECL|check_results|function|static void check_results(int num_tests)
 DECL|co_op_data|variable|co_op_data
