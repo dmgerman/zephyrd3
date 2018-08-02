@@ -98,6 +98,8 @@ DECL|os_status_reserved|enumerator|os_status_reserved = 0x7FFFFFFF ///< prevent 
 DECL|os_thread_def|struct|typedef struct os_thread_def {
 DECL|os_timer_def|struct|typedef struct os_timer_def {
 DECL|os_timer_type|typedef|} os_timer_type;
+DECL|poll_event|member|struct k_poll_event *poll_event;
+DECL|poll_signal|member|struct k_poll_signal *poll_signal;
 DECL|pool_sz|member|uint32_t pool_sz; ///< number of items (elements) in the pool
 DECL|pool|member|void *pool; ///< memory array for mail
 DECL|pool|member|void *pool; ///< memory array for messages
@@ -107,6 +109,7 @@ DECL|ptimer|member|os_ptimer ptimer; ///< start address of a timer function
 DECL|p|member|void *p; ///< message or mail as void pointer
 DECL|queue_sz|member|uint32_t queue_sz; ///< number of elements in the queue
 DECL|queue_sz|member|uint32_t queue_sz; ///< number of elements in the queue
+DECL|signal_results|member|int32_t signal_results;
 DECL|signals|member|int32_t signals; ///< signal flags
 DECL|stack_mem|member|void *stack_mem; ///< pointer to array of stack memory
 DECL|stacksize|member|uint32_t stacksize; ///< stack size requirements in bytes; 0 is default stack size
