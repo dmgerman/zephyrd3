@@ -85,6 +85,7 @@ DECL|ipv4|member|struct net_stats_ip ipv4;
 DECL|ipv6_mld|member|struct net_stats_ipv6_mld ipv6_mld;
 DECL|ipv6_nd|member|struct net_stats_ipv6_nd ipv6_nd;
 DECL|ipv6|member|struct net_stats_ip ipv6;
+DECL|key|member|const char * const key;
 DECL|lblenerr|member|net_stats_t lblenerr;
 DECL|local_repairs|member|u16_t local_repairs;
 DECL|loop_errors|member|u16_t loop_errors;
@@ -98,6 +99,7 @@ DECL|net_stats_eth_csum|struct|struct net_stats_eth_csum {
 DECL|net_stats_eth_errors|struct|struct net_stats_eth_errors {
 DECL|net_stats_eth_flow|struct|struct net_stats_eth_flow {
 DECL|net_stats_eth_hw_timestamp|struct|struct net_stats_eth_hw_timestamp {
+DECL|net_stats_eth_vendor|struct|struct net_stats_eth_vendor {
 DECL|net_stats_eth|struct|struct net_stats_eth {
 DECL|net_stats_icmp|struct|struct net_stats_icmp {
 DECL|net_stats_ip_errors|struct|struct net_stats_ip_errors {
@@ -190,4 +192,6 @@ DECL|tx|member|net_stats_t tx;
 DECL|typeerr|member|net_stats_t typeerr;
 DECL|udp|member|struct net_stats_udp udp;
 DECL|uncorr_ecc_errors|member|net_stats_t uncorr_ecc_errors;
+DECL|value|member|u32_t value;
+DECL|vendor|member|struct net_stats_eth_vendor *vendor;
 DECL|vhlerr|member|net_stats_t vhlerr;
