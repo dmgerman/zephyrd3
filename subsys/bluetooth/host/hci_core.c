@@ -45,6 +45,7 @@ DECL|bt_hci_driver_register|function|int bt_hci_driver_register(const struct bt_
 DECL|bt_hci_get_cmd_opcode|function|u16_t bt_hci_get_cmd_opcode(struct net_buf *buf)
 DECL|bt_id_add|function|void bt_id_add(struct bt_keys *keys)
 DECL|bt_id_create|function|int bt_id_create(bt_addr_le_t *addr, u8_t *irk)
+DECL|bt_id_delete|function|int bt_id_delete(u8_t id)
 DECL|bt_id_del|function|void bt_id_del(struct bt_keys *keys)
 DECL|bt_id_get|function|void bt_id_get(bt_addr_le_t *addrs, size_t *count)
 DECL|bt_id_reset|function|int bt_id_reset(u8_t id, bt_addr_le_t *addr, u8_t *irk)
