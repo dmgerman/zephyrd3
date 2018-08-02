@@ -7,6 +7,7 @@ DECL|WAIT_TIME_LONG|macro|WAIT_TIME_LONG
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
+DECL|expecting_ra|variable|expecting_ra
 DECL|icmpv6_ns_invalid|variable|icmpv6_ns_invalid
 DECL|icmpv6_ns_no_sllao|variable|icmpv6_ns_no_sllao
 DECL|icmpv6_ra|variable|icmpv6_ra
@@ -40,6 +41,7 @@ DECL|test_nbr_lookup_fail|function|static void test_nbr_lookup_fail(void)
 DECL|test_nbr_lookup_ok|function|static void test_nbr_lookup_ok(void)
 DECL|test_prefix_timeout|function|static void test_prefix_timeout(void)
 DECL|test_ra_message|function|static void test_ra_message(void)
+DECL|test_rs_message|function|static void test_rs_message(void)
 DECL|test_send_ns_extra_options|function|static void test_send_ns_extra_options(void)
 DECL|test_send_ns_no_options|function|static void test_send_ns_no_options(void)
 DECL|tester_send|function|static int tester_send(struct net_if *iface, struct net_pkt *pkt)
