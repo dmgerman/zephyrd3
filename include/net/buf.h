@@ -44,6 +44,7 @@ DECL|net_buf_add|macro|net_buf_add
 DECL|net_buf_alloc_fixed|macro|net_buf_alloc_fixed
 DECL|net_buf_alloc_len|macro|net_buf_alloc_len
 DECL|net_buf_alloc_with_data|macro|net_buf_alloc_with_data
+DECL|net_buf_allocator_cb|typedef|typedef struct net_buf *(*net_buf_allocator_cb)(s32_t timeout, void *user_data);
 DECL|net_buf_alloc|macro|net_buf_alloc
 DECL|net_buf_data_alloc|struct|struct net_buf_data_alloc {
 DECL|net_buf_data_cb|struct|struct net_buf_data_cb {
@@ -72,6 +73,7 @@ DECL|net_buf_simple_save|function|static inline void net_buf_simple_save(struct 
 DECL|net_buf_simple_state|struct|struct net_buf_simple_state {
 DECL|net_buf_simple_tail|function|static inline u8_t *net_buf_simple_tail(struct net_buf_simple *buf)
 DECL|net_buf_simple|struct|struct net_buf_simple {
+DECL|net_buf_skip|function|static inline struct net_buf *net_buf_skip(struct net_buf *buf, u16_t len)
 DECL|net_buf_tailroom|macro|net_buf_tailroom
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf_unref|macro|net_buf_unref
