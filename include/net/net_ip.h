@@ -43,8 +43,8 @@ DECL|NET_IPV6_NEXTHDR_FRAG|macro|NET_IPV6_NEXTHDR_FRAG
 DECL|NET_IPV6_NEXTHDR_HBHO|macro|NET_IPV6_NEXTHDR_HBHO
 DECL|NET_IPV6_NEXTHDR_NONE|macro|NET_IPV6_NEXTHDR_NONE
 DECL|NET_IPV6_NEXTHDR_ROUTING|macro|NET_IPV6_NEXTHDR_ROUTING
-DECL|NET_PRIORITY_BE|enumerator|NET_PRIORITY_BE = 1, /* Best effort (default) */
-DECL|NET_PRIORITY_BK|enumerator|NET_PRIORITY_BK = 0, /* Background (lowest) */
+DECL|NET_PRIORITY_BE|enumerator|NET_PRIORITY_BE = 0, /* Best effort (default) */
+DECL|NET_PRIORITY_BK|enumerator|NET_PRIORITY_BK = 1, /* Background (lowest) */
 DECL|NET_PRIORITY_CA|enumerator|NET_PRIORITY_CA = 3, /* Critical applications (highest) */
 DECL|NET_PRIORITY_EE|enumerator|NET_PRIORITY_EE = 2, /* Excellent effort */
 DECL|NET_PRIORITY_IC|enumerator|NET_PRIORITY_IC = 6, /* Internetwork control */
