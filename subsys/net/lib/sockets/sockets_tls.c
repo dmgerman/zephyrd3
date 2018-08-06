@@ -5,6 +5,11 @@ DECL|ciphersuites|member|int ciphersuites[CONFIG_NET_SOCKETS_TLS_MAX_CIPHERSUITE
 DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
 DECL|cookie|member|mbedtls_ssl_cookie_ctx cookie;
+DECL|dtls_is_peer_addr_valid|function|static bool dtls_is_peer_addr_valid(struct net_context *context, const struct sockaddr *peer_addr, socklen_t addrlen)
+DECL|dtls_peer_address_get|function|static void dtls_peer_address_get(struct net_context *context, struct sockaddr *peer_addr, socklen_t *addrlen)
+DECL|dtls_peer_address_set|function|static void dtls_peer_address_set(struct net_context *context, const struct sockaddr *peer_addr, socklen_t addrlen)
+DECL|dtls_peer_addrlen|member|socklen_t dtls_peer_addrlen;
+DECL|dtls_peer_addr|member|struct sockaddr dtls_peer_addr;
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|static int dtls_timing_get_delay(void *data)
 DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
