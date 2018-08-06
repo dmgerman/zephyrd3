@@ -6,6 +6,7 @@ DECL|flash_area_align|function|u8_t flash_area_align(const struct flash_area *fa
 DECL|flash_area_close|function|void flash_area_close(const struct flash_area *fa)
 DECL|flash_area_erase|function|int flash_area_erase(const struct flash_area *fa, off_t off, size_t len)
 DECL|flash_area_get_sectors|function|int flash_area_get_sectors(int idx, u32_t *cnt, struct flash_sector *ret)
+DECL|flash_area_has_driver|function|int flash_area_has_driver(const struct flash_area *fa)
 DECL|flash_area_layout|function|static int flash_area_layout(int idx, u32_t *cnt, void *ret,flash_page_cb cb, struct layout_data *cb_data)
 DECL|flash_area_open|function|int flash_area_open(u8_t id, const struct flash_area **fap)
 DECL|flash_area_read|function|int flash_area_read(const struct flash_area *fa, off_t off, void *dst, size_t len)
