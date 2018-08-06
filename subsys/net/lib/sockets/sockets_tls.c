@@ -4,6 +4,7 @@ DECL|ca_chain|member|mbedtls_x509_crt ca_chain;
 DECL|ciphersuites|member|int ciphersuites[CONFIG_NET_SOCKETS_TLS_MAX_CIPHERSUITES + 1];
 DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
+DECL|cookie|member|mbedtls_ssl_cookie_ctx cookie;
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|static int dtls_timing_get_delay(void *data)
 DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
