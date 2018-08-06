@@ -36,6 +36,7 @@ DECL|ipsp_disconnected|function|static void ipsp_disconnected(struct bt_l2cap_ch
 DECL|ipsp_ops|variable|ipsp_ops
 DECL|ipsp_recv|function|static void ipsp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|net_bt_enable|function|static int net_bt_enable(struct net_if *iface, bool state)
+DECL|net_bt_flags|function|static enum net_l2_flags net_bt_flags(struct net_if *iface)
 DECL|net_bt_init|function|static int net_bt_init(struct device *dev)
 DECL|net_bt_recv|function|static enum net_verdict net_bt_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_bt_reserve|function|static inline u16_t net_bt_reserve(struct net_if *iface, void *unused)

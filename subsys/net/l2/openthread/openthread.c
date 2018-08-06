@@ -10,6 +10,7 @@ DECL|ieee802154_radio_send|function|int ieee802154_radio_send(struct net_if *ifa
 DECL|ip6_addr_cb|variable|ip6_addr_cb
 DECL|ipv6_addr_event_handler|function|static void ipv6_addr_event_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
 DECL|ll_addr|variable|ll_addr
+DECL|openthread_flags|function|static enum net_l2_flags openthread_flags(struct net_if *iface)
 DECL|openthread_init|function|static int openthread_init(struct net_if *iface)
 DECL|openthread_process|function|static void openthread_process(void *context, void *arg2, void *arg3)
 DECL|openthread_recv|function|static enum net_verdict openthread_recv(struct net_if *iface,struct net_pkt *pkt)

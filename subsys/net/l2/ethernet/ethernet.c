@@ -7,6 +7,7 @@ DECL|check_if_dst_is_broadcast_or_mcast|function|static inline bool check_if_dst
 DECL|disable_vlan_iface|function|static bool disable_vlan_iface(struct ethernet_context *ctx, struct net_if *iface)
 DECL|enable_vlan_iface|function|static bool enable_vlan_iface(struct ethernet_context *ctx, struct net_if *iface)
 DECL|ethernet_enable|function|static inline int ethernet_enable(struct net_if *iface, bool state)
+DECL|ethernet_flags|function|enum net_l2_flags ethernet_flags(struct net_if *iface)
 DECL|ethernet_init|function|void ethernet_init(struct net_if *iface)
 DECL|ethernet_recv|function|static enum net_verdict ethernet_recv(struct net_if *iface, struct net_pkt *pkt)
 DECL|ethernet_reserve|function|static inline u16_t ethernet_reserve(struct net_if *iface, void *unused)

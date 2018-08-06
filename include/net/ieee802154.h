@@ -16,6 +16,7 @@ DECL|dec|member|struct cipher_ctx dec;
 DECL|enc|member|struct cipher_ctx enc;
 DECL|ext_addr|member|u8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
 DECL|ext_addr|member|u8_t ext_addr[IEEE802154_MAX_ADDR_LENGTH];
+DECL|flags|member|enum net_l2_flags flags;
 DECL|frame_counter|member|u32_t frame_counter;
 DECL|ieee802154_context|struct|struct ieee802154_context {
 DECL|ieee802154_security_ctx|struct|struct ieee802154_security_ctx {

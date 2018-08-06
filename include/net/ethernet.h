@@ -57,6 +57,7 @@ DECL|ethernet_context|struct|struct ethernet_context {
 DECL|ethernet_filter_type|enum|enum ethernet_filter_type {
 DECL|ethernet_filter|struct|struct ethernet_filter {
 DECL|ethernet_hw_caps|enum|enum ethernet_hw_caps {
+DECL|ethernet_l2_flags|member|enum net_l2_flags ethernet_l2_flags;
 DECL|ethernet_lldp|struct|struct ethernet_lldp {
 DECL|ethernet_qav_param_type|enum|enum ethernet_qav_param_type {
 DECL|ethernet_qav_param|struct|struct ethernet_qav_param {

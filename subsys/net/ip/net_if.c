@@ -35,6 +35,8 @@ DECL|is_proper_ipv6_address|function|static inline bool is_proper_ipv6_address(s
 DECL|join_mcast_allnodes|function|static void join_mcast_allnodes(struct net_if *iface)
 DECL|join_mcast_allnodes|macro|join_mcast_allnodes
 DECL|join_mcast_allnodes|macro|join_mcast_allnodes
+DECL|join_mcast_nodes|function|static void join_mcast_nodes(struct net_if *iface, struct in6_addr *addr)
+DECL|join_mcast_nodes|macro|join_mcast_nodes
 DECL|join_mcast_solicit_node|function|static void join_mcast_solicit_node(struct net_if *iface, struct in6_addr *my_addr)
 DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
 DECL|join_mcast_solicit_node|macro|join_mcast_solicit_node
