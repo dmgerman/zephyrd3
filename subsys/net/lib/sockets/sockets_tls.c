@@ -20,6 +20,7 @@ DECL|fin_ms|member|u32_t fin_ms;
 DECL|flags|member|int flags;
 DECL|int_ms|member|u32_t int_ms;
 DECL|is_hostname_set|member|bool is_hostname_set;
+DECL|is_initialized|member|bool is_initialized;
 DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
 DECL|own_cert|member|mbedtls_x509_crt own_cert;
@@ -29,6 +30,9 @@ DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
 DECL|sec_tag_list|struct|struct sec_tag_list {
 DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
+DECL|sendto_dtls_client|function|static ssize_t sendto_dtls_client(struct net_context *context, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
+DECL|sendto_dtls_server|function|static ssize_t sendto_dtls_server(struct net_context *context, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
+DECL|sendto_tls|function|static ssize_t sendto_tls(struct net_context *context, const void *buf, size_t len, int flags)
 DECL|snapshot|member|u32_t snapshot;
 DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|time_left|function|static inline int time_left(u32_t start, u32_t timeout)
