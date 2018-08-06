@@ -10,10 +10,12 @@ DECL|dtls_peer_address_get|function|static void dtls_peer_address_get(struct net
 DECL|dtls_peer_address_set|function|static void dtls_peer_address_set(struct net_context *context, const struct sockaddr *peer_addr, socklen_t addrlen)
 DECL|dtls_peer_addrlen|member|socklen_t dtls_peer_addrlen;
 DECL|dtls_peer_addr|member|struct sockaddr dtls_peer_addr;
+DECL|dtls_rx|function|static int dtls_rx(void *ctx, unsigned char *buf, size_t len, uint32_t timeout)
 DECL|dtls_timing_context|struct|struct dtls_timing_context {
 DECL|dtls_timing_get_delay|function|static int dtls_timing_get_delay(void *data)
 DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
 DECL|dtls_timing|member|struct dtls_timing_context dtls_timing;
+DECL|dtls_tx|function|static int dtls_tx(void *ctx, const unsigned char *buf, size_t len)
 DECL|fin_ms|member|u32_t fin_ms;
 DECL|flags|member|int flags;
 DECL|int_ms|member|u32_t int_ms;
@@ -29,6 +31,7 @@ DECL|sec_tag_list|struct|struct sec_tag_list {
 DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
 DECL|snapshot|member|u32_t snapshot;
 DECL|ssl|member|mbedtls_ssl_context ssl;
+DECL|time_left|function|static inline int time_left(u32_t start, u32_t timeout)
 DECL|tls_add_ca_certificate|function|static int tls_add_ca_certificate(struct tls_context *tls, struct tls_credential *ca_cert)
 DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
 DECL|tls_clone|function|static struct tls_context *tls_clone(struct tls_context *source_tls)
