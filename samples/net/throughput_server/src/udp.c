@@ -1,7 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|STATS_CHECK|macro|STATS_CHECK
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|TYPE_SEQ_NUM|macro|TYPE_SEQ_NUM
 DECL|__packed|variable|__packed
 DECL|data_udp_pool|function|static struct net_buf_pool *data_udp_pool(void)
