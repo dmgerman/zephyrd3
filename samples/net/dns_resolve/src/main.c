@@ -1,7 +1,6 @@
 DECL|DNS_TIMEOUT|macro|DNS_TIMEOUT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|dns_result_cb|function|void dns_result_cb(enum dns_resolve_status status, struct dns_addrinfo *info, void *user_data)
 DECL|do_ipv4_lookup|function|static void do_ipv4_lookup(struct k_work *work)
 DECL|do_ipv6_lookup|function|static void do_ipv6_lookup(void)
