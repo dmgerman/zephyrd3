@@ -10,6 +10,7 @@ DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
 DECL|own_cert|member|mbedtls_x509_crt own_cert;
 DECL|priv_key|member|mbedtls_pk_context priv_key;
+DECL|role|member|s8_t role;
 DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
 DECL|sec_tag_list|struct|struct sec_tag_list {
@@ -33,6 +34,7 @@ DECL|tls_opt_ciphersuite_list_set|function|static int tls_opt_ciphersuite_list_s
 DECL|tls_opt_ciphersuite_used_get|function|static int tls_opt_ciphersuite_used_get(struct net_context *context,void *optval, socklen_t *optlen)
 DECL|tls_opt_hostname_set|function|static int tls_opt_hostname_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_peer_verify_set|function|static int tls_opt_peer_verify_set(struct net_context *context, const void *optval, socklen_t optlen)
+DECL|tls_opt_role_set|function|static int tls_opt_role_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
