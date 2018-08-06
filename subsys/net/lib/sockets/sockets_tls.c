@@ -25,6 +25,9 @@ DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
 DECL|own_cert|member|mbedtls_x509_crt own_cert;
 DECL|priv_key|member|mbedtls_pk_context priv_key;
+DECL|recvfrom_dtls_client|function|static ssize_t recvfrom_dtls_client(struct net_context *context, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
+DECL|recvfrom_dtls_server|function|static ssize_t recvfrom_dtls_server(struct net_context *context, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
+DECL|recvfrom_tls|function|static ssize_t recvfrom_tls(struct net_context *context, void *buf, size_t max_len, int flags)
 DECL|role|member|s8_t role;
 DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
