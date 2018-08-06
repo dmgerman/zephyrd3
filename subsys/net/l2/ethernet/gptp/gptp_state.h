@@ -68,12 +68,12 @@ DECL|ann_send_periodic_timer|member|struct k_timer ann_send_periodic_timer;
 DECL|ann_time_source|member|enum gptp_time_source ann_time_source;
 DECL|ann_trigger|member|bool ann_trigger;
 DECL|announce_interval|member|struct gptp_uscaled_ns announce_interval;
-DECL|clk_master_sync_receive|member|struct gptp_clk_master_sync_state clk_master_sync_receive;
+DECL|clk_master_sync_receive|member|struct gptp_clk_master_sync_rcv_state clk_master_sync_receive;
 DECL|clk_slave_sync|member|struct gptp_clk_slave_sync_state clk_slave_sync;
 DECL|follow_up_discard_timer|member|struct k_timer follow_up_discard_timer;
 DECL|follow_up_receipt_timeout|member|u64_t follow_up_receipt_timeout;
 DECL|follow_up_timeout_expired|member|bool follow_up_timeout_expired;
-DECL|gptp_clk_master_sync_state|struct|struct gptp_clk_master_sync_state {
+DECL|gptp_clk_master_sync_rcv_state|struct|struct gptp_clk_master_sync_rcv_state {
 DECL|gptp_clk_slave_sync_states|enum|enum gptp_clk_slave_sync_states {
 DECL|gptp_clk_slave_sync_state|struct|struct gptp_clk_slave_sync_state {
 DECL|gptp_cms_rcv_states|enum|enum gptp_cms_rcv_states {
