@@ -4,7 +4,13 @@ DECL|ca_chain|member|mbedtls_x509_crt ca_chain;
 DECL|ciphersuites|member|int ciphersuites[CONFIG_NET_SOCKETS_TLS_MAX_CIPHERSUITES + 1];
 DECL|config|member|mbedtls_ssl_config config;
 DECL|context_lock|variable|context_lock
+DECL|dtls_timing_context|struct|struct dtls_timing_context {
+DECL|dtls_timing_get_delay|function|static int dtls_timing_get_delay(void *data)
+DECL|dtls_timing_set_delay|function|static void dtls_timing_set_delay(void *data, uint32_t int_ms, uint32_t fin_ms)
+DECL|dtls_timing|member|struct dtls_timing_context dtls_timing;
+DECL|fin_ms|member|u32_t fin_ms;
 DECL|flags|member|int flags;
+DECL|int_ms|member|u32_t int_ms;
 DECL|is_hostname_set|member|bool is_hostname_set;
 DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
@@ -15,6 +21,7 @@ DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
 DECL|sec_tag_list|struct|struct sec_tag_list {
 DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
+DECL|snapshot|member|u32_t snapshot;
 DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|tls_add_ca_certificate|function|static int tls_add_ca_certificate(struct tls_context *tls, struct tls_credential *ca_cert)
 DECL|tls_alloc|function|static struct tls_context *tls_alloc(void)
