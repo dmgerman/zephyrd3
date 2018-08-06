@@ -8,12 +8,11 @@ DECL|HTTP_MAX_BODY_STR_SIZE|macro|HTTP_MAX_BODY_STR_SIZE
 DECL|HTTP_STATUS_200_OK_GZ|macro|HTTP_STATUS_200_OK_GZ
 DECL|HTTP_STATUS_200_OK|macro|HTTP_STATUS_200_OK
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|RX_FIFO_DEPTH|macro|RX_FIFO_DEPTH
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|data_pool|function|static struct net_buf_pool *data_pool(void)
 DECL|data_pool|macro|data_pool
 DECL|default_handler|function|static enum http_verdict default_handler(struct http_ctx *ctx, enum http_connection_type type, const struct sockaddr *dst)
