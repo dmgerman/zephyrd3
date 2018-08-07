@@ -51,7 +51,7 @@ DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned c
 DECL|tls_entropy_func|function|static int tls_entropy_func(void *ctx, unsigned char *buf, size_t len)
 DECL|tls_established|member|bool tls_established;
 DECL|tls_init|function|static int tls_init(struct device *unused)
-DECL|tls_mbedtls_handshake|function|static int tls_mbedtls_handshake(struct net_context *context)
+DECL|tls_mbedtls_handshake|function|static int tls_mbedtls_handshake(struct net_context *context, bool block)
 DECL|tls_mbedtls_init|function|static int tls_mbedtls_init(struct net_context *context, bool is_server)
 DECL|tls_mbedtls_reset|function|static int tls_mbedtls_reset(struct net_context *context)
 DECL|tls_mbedtls_set_credentials|function|static int tls_mbedtls_set_credentials(struct tls_context *tls)
