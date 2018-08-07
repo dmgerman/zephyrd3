@@ -103,6 +103,7 @@ DECL|net_if_ipv6_maddr_leave|function|static inline void net_if_ipv6_maddr_leave
 DECL|net_if_ipv6_prefix_set_lf|function|static inline void net_if_ipv6_prefix_set_lf(struct net_if_ipv6_prefix *prefix, bool is_infinite)
 DECL|net_if_ipv6_prefix|struct|struct net_if_ipv6_prefix {
 DECL|net_if_ipv6_select_src_addr|macro|net_if_ipv6_select_src_addr
+DECL|net_if_ipv6_select_src_iface|macro|net_if_ipv6_select_src_iface
 DECL|net_if_ipv6_set_base_reachable_time|function|static inline void net_if_ipv6_set_base_reachable_time(struct net_if *iface, u32_t reachable_time)
 DECL|net_if_ipv6_set_reachable_time|function|static inline void net_if_ipv6_set_reachable_time(struct net_if_ipv6 *ipv6)
 DECL|net_if_ipv6_set_retrans_timer|function|static inline void net_if_ipv6_set_retrans_timer(struct net_if *iface, u32_t retrans_timer)
