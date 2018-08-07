@@ -31,6 +31,7 @@ DECL|mac_addr|member|u8_t mac_addr[sizeof(struct net_eth_addr)];
 DECL|my_addr1|variable|my_addr1
 DECL|my_addr2|variable|my_addr2
 DECL|my_addr3|variable|my_addr3
+DECL|my_ipv4_addr1|variable|my_ipv4_addr1
 DECL|net_if_test|struct|struct net_if_test {
 DECL|net_iface1_data|variable|net_iface1_data
 DECL|net_iface2_data|variable|net_iface2_data
