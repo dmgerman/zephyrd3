@@ -94,7 +94,6 @@ DECL|net_if_ipv4_select_src_iface|macro|net_if_ipv4_select_src_iface
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
 DECL|net_if_ipv4|struct|struct net_if_ipv4 {
-DECL|net_if_ipv6_addr_lookup_by_iface|function|struct net_if_addr *net_if_ipv6_addr_lookup_by_iface(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_get_hop_limit|function|static inline u8_t net_if_ipv6_get_hop_limit(struct net_if *iface)
 DECL|net_if_ipv6_get_reachable_time|function|static inline u32_t net_if_ipv6_get_reachable_time(struct net_if *iface)
 DECL|net_if_ipv6_get_retrans_timer|function|static inline u32_t net_if_ipv6_get_retrans_timer(struct net_if *iface)
