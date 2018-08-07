@@ -40,6 +40,7 @@ DECL|net_iface_dev_init|function|static int net_iface_dev_init(struct device *de
 DECL|net_iface_get_mac|function|static u8_t *net_iface_get_mac(struct device *dev)
 DECL|net_iface_init|function|static void net_iface_init(struct net_if *iface)
 DECL|promisc_mode|member|bool promisc_mode;
+DECL|select_src_iface|function|static void select_src_iface(void)
 DECL|send_iface1_down|function|static void send_iface1_down(void)
 DECL|send_iface1_up|function|static void send_iface1_up(void)
 DECL|send_iface1|function|static void send_iface1(void)
