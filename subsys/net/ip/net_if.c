@@ -119,6 +119,7 @@ DECL|net_if_recv_data|function|enum net_verdict net_if_recv_data(struct net_if *
 DECL|net_if_register_link_cb|function|void net_if_register_link_cb(struct net_if_link_cb *link, net_if_link_callback_t cb)
 DECL|net_if_register_timestamp_cb|function|void net_if_register_timestamp_cb(struct net_if_timestamp_cb *handle, struct net_pkt *pkt, struct net_if *iface, net_if_timestamp_callback_t cb)
 DECL|net_if_router_init|function|static inline void net_if_router_init(struct net_if_router *router, struct net_if *iface, struct in6_addr *addr, u16_t lifetime)
+DECL|net_if_select_src_iface|function|struct net_if *net_if_select_src_iface(const struct sockaddr *dst)
 DECL|net_if_send_data|function|enum net_verdict net_if_send_data(struct net_if *iface, struct net_pkt *pkt)
 DECL|net_if_set_promisc|function|int net_if_set_promisc(struct net_if *iface)
 DECL|net_if_start_dad|function|void net_if_start_dad(struct net_if *iface)

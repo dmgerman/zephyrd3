@@ -90,6 +90,7 @@ DECL|net_if_get_ll_reserve|function|static inline u16_t net_if_get_ll_reserve(st
 DECL|net_if_get_mtu|function|static inline u16_t net_if_get_mtu(struct net_if *iface)
 DECL|net_if_ipv4_autoconf|struct|struct net_if_ipv4_autoconf {
 DECL|net_if_ipv4_get_ttl|function|static inline u8_t net_if_ipv4_get_ttl(struct net_if *iface)
+DECL|net_if_ipv4_select_src_iface|macro|net_if_ipv4_select_src_iface
 DECL|net_if_ipv4_set_gw|function|static inline void net_if_ipv4_set_gw(struct net_if *iface, struct in_addr *gw)
 DECL|net_if_ipv4_set_netmask|function|static inline void net_if_ipv4_set_netmask(struct net_if *iface, struct in_addr *netmask)
 DECL|net_if_ipv4|struct|struct net_if_ipv4 {
