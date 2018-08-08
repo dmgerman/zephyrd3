@@ -101,7 +101,7 @@ DECL|in_addr|member|struct in_addr in_addr;
 DECL|in_addr|struct|struct in_addr {
 DECL|ip_proto|member|enum net_ip_protocol ip_proto;
 DECL|len|member|u16_t len;
-DECL|len|member|u8_t len[2];
+DECL|len|member|u16_t len;
 DECL|len|member|u8_t len[2];
 DECL|local_addr|member|struct net_addr *local_addr;
 DECL|local_port|member|u16_t local_port;
