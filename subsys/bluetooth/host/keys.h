@@ -17,7 +17,6 @@ DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|bt_csrk|struct|struct bt_csrk {
 DECL|bt_irk|struct|struct bt_irk {
-DECL|bt_keys_func_t|typedef|typedef void (*bt_keys_func_t)(struct bt_keys *keys);
 DECL|bt_keys_link_key|struct|struct bt_keys_link_key {
 DECL|bt_keys_store|function|static inline int bt_keys_store(struct bt_keys *keys)
 DECL|bt_keys|struct|struct bt_keys {

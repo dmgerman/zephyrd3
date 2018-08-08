@@ -9,6 +9,7 @@ DECL|bt_keys_foreach|function|void bt_keys_foreach(int type, void (*func)(struct
 DECL|bt_keys_get_addr|function|struct bt_keys *bt_keys_get_addr(u8_t id, const bt_addr_le_t *addr)
 DECL|bt_keys_get_type|function|struct bt_keys *bt_keys_get_type(int type, u8_t id, const bt_addr_le_t *addr)
 DECL|bt_keys_store|function|int bt_keys_store(struct bt_keys *keys)
+DECL|id_add|function|static void id_add(struct bt_keys *keys, void *user_data)
 DECL|key_pool|variable|key_pool
 DECL|keys_clear_id|function|static void keys_clear_id(struct bt_keys *keys, void *data)
 DECL|keys_commit|function|static int keys_commit(void)
