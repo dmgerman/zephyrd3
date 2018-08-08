@@ -31,7 +31,7 @@ DECL|uart_sam_err_check|function|static int uart_sam_err_check(struct device *de
 DECL|uart_sam_fifo_fill|function|static int uart_sam_fifo_fill(struct device *dev, const uint8_t *tx_data, int size)
 DECL|uart_sam_fifo_read|function|static int uart_sam_fifo_read(struct device *dev, uint8_t *rx_data, const int size)
 DECL|uart_sam_init|function|static int uart_sam_init(struct device *dev)
-DECL|uart_sam_irq_callback_set|function|static void uart_sam_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *data)
+DECL|uart_sam_irq_callback_set|function|static void uart_sam_irq_callback_set(struct device *dev, uart_irq_callback_user_data_t cb, void *cb_data)
 DECL|uart_sam_irq_err_disable|function|static void uart_sam_irq_err_disable(struct device *dev)
 DECL|uart_sam_irq_err_enable|function|static void uart_sam_irq_err_enable(struct device *dev)
 DECL|uart_sam_irq_is_pending|function|static int uart_sam_irq_is_pending(struct device *dev)
