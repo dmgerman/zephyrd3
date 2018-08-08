@@ -15,6 +15,8 @@ DECL|ethernet_send|function|static enum net_verdict ethernet_send(struct net_if 
 DECL|ethernet_update_length|function|static inline void ethernet_update_length(struct net_if *iface, struct net_pkt *pkt)
 DECL|get_vlan|function|static struct ethernet_vlan *get_vlan(struct ethernet_context *ctx, struct net_if *iface, u16_t vlan_tag)
 DECL|handle_carrier|function|static void handle_carrier(struct ethernet_context *ctx, struct net_if *iface, k_work_handler_t handler)
+DECL|is_ipv4_auto_arp_msg|function|static inline bool is_ipv4_auto_arp_msg(struct net_pkt *pkt)
+DECL|is_ipv4_auto_arp_msg|macro|is_ipv4_auto_arp_msg
 DECL|is_vlan_enabled_for_iface|function|static bool is_vlan_enabled_for_iface(struct ethernet_context *ctx, struct net_if *iface)
 DECL|multicast_eth_addr|variable|multicast_eth_addr
 DECL|net_eth_broadcast_addr|function|const struct net_eth_addr *net_eth_broadcast_addr(void)

@@ -5,7 +5,6 @@ DECL|NET_PKT_SLAB_DEFINE|macro|NET_PKT_SLAB_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
 DECL|__NET_PKT_H__|macro|__NET_PKT_H__
 DECL|_reserved|member|int _reserved;
-DECL|_unused|member|u8_t _unused : 1;
 DECL|appdatalen|member|u16_t appdatalen;
 DECL|appdata|member|u8_t *appdata; /* application data starts here */
 DECL|context|member|struct net_context *context;
@@ -17,6 +16,7 @@ DECL|ieee802154_lqi|member|u8_t ieee802154_lqi; /* Link Quality Indicator */
 DECL|ieee802154_rssi|member|u8_t ieee802154_rssi; /* Received Signal Strength Indication */
 DECL|iface|member|struct net_if *iface;
 DECL|ip_hdr_len|member|u8_t ip_hdr_len; /* pre-filled in order to avoid func call */
+DECL|ipv4_auto_arp_msg|member|u8_t ipv4_auto_arp_msg : 1; /* Is this pkt IPv4 autoconf ARP message.
 DECL|ipv4_ttl|member|u8_t ipv4_ttl;
 DECL|ipv6_ext_len|member|u16_t ipv6_ext_len; /* length of extension headers */
 DECL|ipv6_ext_opt_len|member|u8_t ipv6_ext_opt_len; /* IPv6 ND option length */
@@ -68,6 +68,7 @@ DECL|net_pkt_insert_be32|function|static inline bool net_pkt_insert_be32(struct 
 DECL|net_pkt_insert_u8|function|static inline bool net_pkt_insert_u8(struct net_pkt *pkt, struct net_buf *frag, u16_t offset, u8_t data)
 DECL|net_pkt_ip_data|function|static inline u8_t *net_pkt_ip_data(struct net_pkt *pkt)
 DECL|net_pkt_ip_hdr_len|function|static inline u8_t net_pkt_ip_hdr_len(struct net_pkt *pkt)
+DECL|net_pkt_ipv4_auto|function|static inline bool net_pkt_ipv4_auto(struct net_pkt *pkt)
 DECL|net_pkt_ipv4_ttl|function|static inline u8_t net_pkt_ipv4_ttl(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_ext_len|function|static inline u16_t net_pkt_ipv6_ext_len(struct net_pkt *pkt)
 DECL|net_pkt_ipv6_ext_len|macro|net_pkt_ipv6_ext_len
@@ -103,6 +104,7 @@ DECL|net_pkt_set_ieee802154_lqi|function|static inline void net_pkt_set_ieee8021
 DECL|net_pkt_set_ieee802154_rssi|function|static inline void net_pkt_set_ieee802154_rssi(struct net_pkt *pkt, u8_t rssi)
 DECL|net_pkt_set_iface|function|static inline void net_pkt_set_iface(struct net_pkt *pkt, struct net_if *iface)
 DECL|net_pkt_set_ip_hdr_len|function|static inline void net_pkt_set_ip_hdr_len(struct net_pkt *pkt, u8_t len)
+DECL|net_pkt_set_ipv4_auto|function|static inline void net_pkt_set_ipv4_auto(struct net_pkt *pkt, bool is_auto_arp_msg)
 DECL|net_pkt_set_ipv4_ttl|function|static inline void net_pkt_set_ipv4_ttl(struct net_pkt *pkt,u8_t ttl)
 DECL|net_pkt_set_ipv6_ext_len|function|static inline void net_pkt_set_ipv6_ext_len(struct net_pkt *pkt, u16_t len)
 DECL|net_pkt_set_ipv6_ext_len|macro|net_pkt_set_ipv6_ext_len
