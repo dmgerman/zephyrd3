@@ -1,0 +1,12 @@
+DECL|STACKSIZE|macro|STACKSIZE
+DECL|create_dynamic_thread|function|static void create_dynamic_thread(void)
+DECL|create_dynamic_thread|function|static void create_dynamic_thread(void)
+DECL|dyn_thread_entry|function|static void dyn_thread_entry(void *p1, void *p2, void *p3)
+DECL|permission_test|function|static void permission_test(void)
+DECL|prep|function|static void prep(void)
+DECL|prep|function|static void prep(void)
+DECL|test_dyn_thread_perms|function|static void test_dyn_thread_perms(void)
+DECL|test_dyn_thread_perms|function|static void test_dyn_thread_perms(void)
+DECL|test_kernel_create_dyn_user_thread|function|static void test_kernel_create_dyn_user_thread(void)
+DECL|test_main|function|void test_main(void)
+DECL|test_user_create_dyn_user_thread|function|static void test_user_create_dyn_user_thread(void)
