@@ -37,11 +37,14 @@ DECL|I2S_TRIGGER_PREPARE|enumerator|I2S_TRIGGER_PREPARE,
 DECL|I2S_TRIGGER_START|enumerator|I2S_TRIGGER_START,
 DECL|I2S_TRIGGER_STOP|enumerator|I2S_TRIGGER_STOP,
 DECL|__I2S_H__|macro|__I2S_H__
+DECL|_impl_i2s_trigger|function|static inline int _impl_i2s_trigger(struct device *dev, enum i2s_dir dir, enum i2s_trigger_cmd cmd)
 DECL|block_size|member|size_t block_size;
 DECL|channels|member|u8_t channels;
+DECL|config_get|member|struct i2s_config *(*config_get)(struct device *dev,
 DECL|configure|member|int (*configure)(struct device *dev, enum i2s_dir dir,
 DECL|format|member|i2s_fmt_t format;
 DECL|frame_clk_freq|member|u32_t frame_clk_freq;
+DECL|i2s_config_get|function|static inline struct i2s_config *i2s_config_get(struct device *dev,enum i2s_dir dir)
 DECL|i2s_configure|function|static inline int i2s_configure(struct device *dev, enum i2s_dir dir,struct i2s_config *cfg)
 DECL|i2s_config|struct|struct i2s_config {
 DECL|i2s_dir|enum|enum i2s_dir {
@@ -51,7 +54,6 @@ DECL|i2s_opt_t|typedef|typedef u8_t i2s_opt_t;
 DECL|i2s_read|function|static inline int i2s_read(struct device *dev, void **mem_block, size_t *size)
 DECL|i2s_state|enum|enum i2s_state {
 DECL|i2s_trigger_cmd|enum|enum i2s_trigger_cmd {
-DECL|i2s_trigger|function|static inline int i2s_trigger(struct device *dev, enum i2s_dir dir, enum i2s_trigger_cmd cmd)
 DECL|i2s_write|function|static inline int i2s_write(struct device *dev, void *mem_block, size_t size)
 DECL|mem_slab|member|struct k_mem_slab *mem_slab;
 DECL|options|member|i2s_opt_t options;

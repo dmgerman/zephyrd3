@@ -25,6 +25,7 @@ DECL|i2s0_pins|variable|i2s0_pins
 DECL|i2s0_sam_config|variable|i2s0_sam_config
 DECL|i2s0_sam_data|variable|i2s0_sam_data
 DECL|i2s0_sam_irq_config|function|static void i2s0_sam_irq_config(void)
+DECL|i2s_sam_config_get|function|static struct i2s_config *i2s_sam_config_get(struct device *dev, enum i2s_dir dir)
 DECL|i2s_sam_configure|function|static int i2s_sam_configure(struct device *dev, enum i2s_dir dir, struct i2s_config *i2s_cfg)
 DECL|i2s_sam_dev_cfg|struct|struct i2s_sam_dev_cfg {
 DECL|i2s_sam_dev_data|struct|struct i2s_sam_dev_data {
