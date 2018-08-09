@@ -48,6 +48,7 @@ DECL|flags|member|struct shell_flags flags;
 DECL|fprintf_ctx|member|const struct shell_fprintf *fprintf_ctx;
 DECL|handler|member|shell_cmd_handler handler; /*!< Command handler. */
 DECL|help|member|const char *help; /*!< Command help string. */
+DECL|history|member|struct shell_history *history;
 DECL|iface|member|const struct shell_transport *iface; /*!< Transport interface.*/
 DECL|init|member|int (*init)(const struct shell_transport *transport,
 DECL|insert_mode|member|u32_t insert_mode :1; /*!< Controls insert mode for text introduction.*/
