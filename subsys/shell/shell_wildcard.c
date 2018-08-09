@@ -1,0 +1,7 @@
+DECL|command_add|function|static enum shell_wildcard_status command_add(char *buff, u16_t *buff_len, char const *cmd, char const *pattern)
+DECL|commands_expand|function|static enum shell_wildcard_status commands_expand(const struct shell *shell, const struct shell_cmd_entry *cmd, const char *pattern)
+DECL|shell_wildcard_character_exist|function|bool shell_wildcard_character_exist(const char *str)
+DECL|shell_wildcard_finalize|function|void shell_wildcard_finalize(const struct shell *shell)
+DECL|shell_wildcard_prepare|function|void shell_wildcard_prepare(const struct shell *shell)
+DECL|shell_wildcard_process|function|enum shell_wildcard_status shell_wildcard_process(const struct shell *shell, const struct shell_cmd_entry *cmd, const char *pattern)
+DECL|subcmd_get|function|static void subcmd_get(const struct shell_cmd_entry *cmd, size_t idx, const struct shell_static_entry **entry, struct shell_static_entry *d_entry)
