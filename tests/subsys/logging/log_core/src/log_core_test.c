@@ -1,4 +1,5 @@
 DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|backend1_cb|variable|backend1_cb
 DECL|backend2_cb|variable|backend2_cb
 DECL|backend_cb|struct|struct backend_cb {
