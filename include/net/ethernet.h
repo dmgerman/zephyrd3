@@ -108,6 +108,8 @@ DECL|set_config|member|int (*set_config)(struct device *dev,
 DECL|set|member|bool set;
 DECL|src|member|struct net_eth_addr src;
 DECL|src|member|struct net_eth_addr src;
+DECL|start|member|int (*start)(struct device *dev);
+DECL|stop|member|int (*stop)(struct device *dev);
 DECL|tag|member|u16_t tag;
 DECL|tci|member|u16_t tci; /* tag control info */
 DECL|tpid|member|u16_t tpid; /* tag protocol id */
