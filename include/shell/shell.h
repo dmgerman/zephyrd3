@@ -20,6 +20,7 @@ DECL|SHELL_RECEIVE_TILDE_EXP|enumerator|SHELL_RECEIVE_TILDE_EXP
 DECL|SHELL_RX_BUFF_SIZE|macro|SHELL_RX_BUFF_SIZE
 DECL|SHELL_SIGNALS|enumerator|SHELL_SIGNALS
 DECL|SHELL_SIGNAL_KILL|enumerator|SHELL_SIGNAL_KILL,
+DECL|SHELL_SIGNAL_LOG_MSG|enumerator|SHELL_SIGNAL_LOG_MSG,
 DECL|SHELL_SIGNAL_RXRDY|enumerator|SHELL_SIGNAL_RXRDY,
 DECL|SHELL_SIGNAL_TXDONE|enumerator|SHELL_SIGNAL_TXDONE,
 DECL|SHELL_STATE_ACTIVE|enumerator|SHELL_STATE_ACTIVE,
@@ -27,6 +28,10 @@ DECL|SHELL_STATE_INITIALIZED|enumerator|SHELL_STATE_INITIALIZED,
 DECL|SHELL_STATE_PANIC_MODE_ACTIVE|enumerator|SHELL_STATE_PANIC_MODE_ACTIVE, /*!< Panic activated.*/
 DECL|SHELL_STATE_PANIC_MODE_INACTIVE|enumerator|SHELL_STATE_PANIC_MODE_INACTIVE /*!< Panic requested, not supported.*/
 DECL|SHELL_STATE_UNINITIALIZED|enumerator|SHELL_STATE_UNINITIALIZED,
+DECL|SHELL_STATS_DEFINE|macro|SHELL_STATS_DEFINE
+DECL|SHELL_STATS_DEFINE|macro|SHELL_STATS_DEFINE
+DECL|SHELL_STATS_PTR|macro|SHELL_STATS_PTR
+DECL|SHELL_STATS_PTR|macro|SHELL_STATS_PTR
 DECL|SHELL_SUBCMD_SET_END|macro|SHELL_SUBCMD_SET_END
 DECL|SHELL_TRANSPORT_EVT_RX_RDY|enumerator|SHELL_TRANSPORT_EVT_RX_RDY,
 DECL|SHELL_TRANSPORT_EVT_TX_RDY|enumerator|SHELL_TRANSPORT_EVT_TX_RDY
@@ -54,6 +59,8 @@ DECL|init|member|int (*init)(const struct shell_transport *transport,
 DECL|insert_mode|member|u32_t insert_mode :1; /*!< Controls insert mode for text introduction.*/
 DECL|internal|member|volatile union shell_internal internal; /*!< Internal shell data.*/
 DECL|is_dynamic|member|bool is_dynamic;
+DECL|log_backend|member|const struct shell_log_backend *log_backend;
+DECL|log_lost_cnt|member|u32_t log_lost_cnt; /*!< Lost log counter.*/
 DECL|mode_delete|member|u32_t mode_delete :1; /*!< Operation mode of backspace key */
 DECL|name|member|const char *const name; /*!< Terminal name. */
 DECL|newline_char|member|const char newline_char;
@@ -76,6 +83,7 @@ DECL|shell_receive_state|enum|enum shell_receive_state {
 DECL|shell_signal|enum|enum shell_signal {
 DECL|shell_state|enum|enum shell_state {
 DECL|shell_static_entry|struct|struct shell_static_entry {
+DECL|shell_stats|struct|struct shell_stats {
 DECL|shell_transport_api|struct|struct shell_transport_api {
 DECL|shell_transport_evt|enum|enum shell_transport_evt {
 DECL|shell_transport_handler_t|typedef|typedef void (*shell_transport_handler_t)(enum shell_transport_evt evt,
@@ -86,6 +94,7 @@ DECL|signals|member|struct k_poll_signal signals[SHELL_SIGNALS];
 DECL|sizeof|variable|sizeof
 DECL|stack|member|k_thread_stack_t *stack;
 DECL|state|member|enum shell_state state; /*!< Internal module state.*/
+DECL|stats|member|struct shell_stats *stats;
 DECL|subcmd|member|const struct shell_cmd_entry *subcmd; /*!< Pointer to subcommand. */
 DECL|syntax|member|const char *syntax; /*!< Command syntax strings. */
 DECL|temp_buff|member|char temp_buff[CONFIG_SHELL_CMD_BUFF_SIZE];

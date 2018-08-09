@@ -1,0 +1,18 @@
+DECL|SHELL_LOG_BACKEND_DEFINE|macro|SHELL_LOG_BACKEND_DEFINE
+DECL|SHELL_LOG_BACKEND_DEFINE|macro|SHELL_LOG_BACKEND_DEFINE
+DECL|SHELL_LOG_BACKEND_DISABLED|enumerator|SHELL_LOG_BACKEND_DISABLED,
+DECL|SHELL_LOG_BACKEND_ENABLED|enumerator|SHELL_LOG_BACKEND_ENABLED,
+DECL|SHELL_LOG_BACKEND_H__|macro|SHELL_LOG_BACKEND_H__
+DECL|SHELL_LOG_BACKEND_PANIC|enumerator|SHELL_LOG_BACKEND_PANIC,
+DECL|SHELL_LOG_BACKEND_PTR|macro|SHELL_LOG_BACKEND_PTR
+DECL|SHELL_LOG_BACKEND_PTR|macro|SHELL_LOG_BACKEND_PTR
+DECL|SHELL_LOG_BACKEND_UNINIT|enumerator|SHELL_LOG_BACKEND_UNINIT,
+DECL|backend|member|const struct log_backend *backend;
+DECL|cnt|member|atomic_t cnt;
+DECL|control_block|member|struct shell_log_backend_control_block *control_block;
+DECL|fifo|member|struct k_fifo *fifo;
+DECL|log_output|member|const struct log_output *log_output;
+DECL|shell_log_backend_control_block|struct|struct shell_log_backend_control_block {
+DECL|shell_log_backend_state|enum|enum shell_log_backend_state {
+DECL|shell_log_backend|struct|struct shell_log_backend {
+DECL|state|member|enum shell_log_backend_state state;
