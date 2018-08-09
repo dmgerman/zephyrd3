@@ -26,6 +26,8 @@ DECL|sys_dlist_peek_head_not_empty|function|static inline sys_dnode_t *sys_dlist
 DECL|sys_dlist_peek_head|function|static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
 DECL|sys_dlist_peek_next_no_check|function|static inline sys_dnode_t *sys_dlist_peek_next_no_check(sys_dlist_t *list,sys_dnode_t *node)
 DECL|sys_dlist_peek_next|function|static inline sys_dnode_t *sys_dlist_peek_next(sys_dlist_t *list, sys_dnode_t *node)
+DECL|sys_dlist_peek_prev_no_check|function|static inline sys_dnode_t *sys_dlist_peek_prev_no_check(sys_dlist_t *list,sys_dnode_t *node)
+DECL|sys_dlist_peek_prev|function|static inline sys_dnode_t *sys_dlist_peek_prev(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_peek_tail|function|static inline sys_dnode_t *sys_dlist_peek_tail(sys_dlist_t *list)
 DECL|sys_dlist_prepend|function|static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
 DECL|sys_dlist_remove|function|static inline void sys_dlist_remove(sys_dnode_t *node)
