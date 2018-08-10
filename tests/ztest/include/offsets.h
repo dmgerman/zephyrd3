@@ -1,0 +1,1 @@
+DECL|__GEN_OFFSETS_H__|macro|__GEN_OFFSETS_H__
