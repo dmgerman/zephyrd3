@@ -37,3 +37,5 @@ DECL|proc_tid|variable|proc_tid
 DECL|thread_set|function|static void thread_set(k_tid_t process_tid)
 DECL|timestamp_func|variable|timestamp_func
 DECL|timestamp_get|function|static u32_t timestamp_get(void)
+DECL|uart_backend|variable|uart_backend
+DECL|uart_backend|variable|uart_backend
