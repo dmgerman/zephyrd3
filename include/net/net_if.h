@@ -22,6 +22,9 @@ DECL|NET_IF_UP|enumerator|NET_IF_UP,
 DECL|__NET_IF_H__|macro|__NET_IF_H__
 DECL|__net_if_align|macro|__net_if_align
 DECL|__net_if_align|variable|__net_if_align
+DECL|_unused|member|u8_t _unused : 5;
+DECL|_unused|member|u8_t _unused : 6;
+DECL|_unused|member|u8_t _unused : 6;
 DECL|_unused|member|u8_t _unused : 6;
 DECL|addr_state|member|enum net_addr_state addr_state;
 DECL|addr_type|member|enum net_addr_type addr_type;
@@ -54,14 +57,14 @@ DECL|ipv4auto|member|struct net_if_ipv4_autoconf ipv4auto;
 DECL|ipv4|member|struct net_if_ipv4 *ipv4;
 DECL|ipv6|member|struct net_if_ipv6 *ipv6;
 DECL|ip|member|struct net_if_ip ip;
-DECL|is_default|member|bool is_default;
-DECL|is_infinite|member|bool is_infinite;
-DECL|is_infinite|member|bool is_infinite;
-DECL|is_infinite|member|bool is_infinite;
+DECL|is_default|member|u8_t is_default : 1;
+DECL|is_infinite|member|u8_t is_infinite : 1;
+DECL|is_infinite|member|u8_t is_infinite : 1;
+DECL|is_infinite|member|u8_t is_infinite : 1;
 DECL|is_joined|member|u8_t is_joined : 1;
-DECL|is_used|member|bool is_used;
-DECL|is_used|member|bool is_used;
-DECL|is_used|member|bool is_used;
+DECL|is_used|member|u8_t is_used : 1;
+DECL|is_used|member|u8_t is_used : 1;
+DECL|is_used|member|u8_t is_used : 1;
 DECL|is_used|member|u8_t is_used : 1;
 DECL|l2_data|member|void *l2_data;
 DECL|l2|member|const struct net_l2 * const l2;
