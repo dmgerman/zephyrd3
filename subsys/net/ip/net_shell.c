@@ -19,6 +19,7 @@ DECL|_remove_ipv4_ping_handler|function|static inline void _remove_ipv4_ping_han
 DECL|_remove_ipv4_ping_handler|macro|_remove_ipv4_ping_handler
 DECL|_remove_ipv6_ping_handler|function|static inline void _remove_ipv6_ping_handler(void)
 DECL|_remove_ipv6_ping_handler|macro|_remove_ipv6_ping_handler
+DECL|address_lifetime_cb|function|static void address_lifetime_cb(struct net_if *iface, void *user_data)
 DECL|addrstate2str|function|static inline const char *addrstate2str(enum net_addr_state addr_state)
 DECL|addrtype2str|function|static inline const char *addrtype2str(enum net_addr_type addr_type)
 DECL|allocs_cb|function|static void allocs_cb(struct net_pkt *pkt, struct net_buf *buf, const char *func_alloc, int line_alloc, const char *func_free,
@@ -62,6 +63,7 @@ DECL|net_shell_cmd_dns|function|int net_shell_cmd_dns(int argc, char *argv[])
 DECL|net_shell_cmd_gptp|function|int net_shell_cmd_gptp(int argc, char *argv[])
 DECL|net_shell_cmd_http|function|int net_shell_cmd_http(int argc, char *argv[])
 DECL|net_shell_cmd_iface|function|int net_shell_cmd_iface(int argc, char *argv[])
+DECL|net_shell_cmd_ipv6|function|int net_shell_cmd_ipv6(int argc, char *argv[])
 DECL|net_shell_cmd_mem|function|int net_shell_cmd_mem(int argc, char *argv[])
 DECL|net_shell_cmd_nbr|function|int net_shell_cmd_nbr(int argc, char *argv[])
 DECL|net_shell_cmd_ping|function|int net_shell_cmd_ping(int argc, char *argv[])
@@ -105,4 +107,5 @@ DECL|tcp_connect|function|static int tcp_connect(char *host, u16_t port, struct 
 DECL|tcp_ctx|variable|tcp_ctx
 DECL|tcp_sent_cb|function|static void tcp_sent_cb(struct net_context *context,int status, void *token, void *user_data)
 DECL|tcp_sent_list_cb|function|static void tcp_sent_list_cb(struct net_tcp *tcp, void *user_data)
+DECL|time_diff|function|static u32_t time_diff(u32_t time1, u32_t time2)
 DECL|tx_slabs|member|struct k_mem_slab *tx_slabs[CONFIG_NET_MAX_CONTEXTS];
