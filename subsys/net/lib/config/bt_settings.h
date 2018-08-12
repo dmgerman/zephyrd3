@@ -1,1 +1,1 @@
-DECL|_net_app_bt_setup|macro|_net_app_bt_setup
+DECL|_net_config_bt_setup|macro|_net_config_bt_setup

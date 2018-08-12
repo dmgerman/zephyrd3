@@ -1,1 +1,1 @@
-DECL|_net_app_ieee802154_setup|macro|_net_app_ieee802154_setup
+DECL|_net_config_ieee802154_setup|macro|_net_config_ieee802154_setup
