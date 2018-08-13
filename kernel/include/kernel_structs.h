@@ -24,7 +24,6 @@ DECL|_ready_q|macro|_ready_q
 DECL|_ready_q|struct|struct _ready_q {
 DECL|_set_thread_return_value_with_data|function|_set_thread_return_value_with_data(struct k_thread *thread, unsigned int value, void *data)
 DECL|_set_thread_return_value|function|_set_thread_return_value(struct k_thread *thread, unsigned int value)
-DECL|_threads|macro|_threads
 DECL|_timeout_q|macro|_timeout_q
 DECL|arch|member|struct _kernel_arch arch;
 DECL|cache|member|struct k_thread *cache;
