@@ -265,9 +265,7 @@ DECL|k_delayed_work_remaining_get|function|static inline s32_t k_delayed_work_re
 DECL|k_delayed_work_submit|function|static inline int k_delayed_work_submit(struct k_delayed_work *work,s32_t delay)
 DECL|k_delayed_work|struct|struct k_delayed_work {
 DECL|k_disable_sys_clock_always_on|function|static inline void k_disable_sys_clock_always_on(void)
-DECL|k_disable_sys_clock_always_on|macro|k_disable_sys_clock_always_on
 DECL|k_enable_sys_clock_always_on|function|static inline int k_enable_sys_clock_always_on(void)
-DECL|k_enable_sys_clock_always_on|macro|k_enable_sys_clock_always_on
 DECL|k_fifo_alloc_put|macro|k_fifo_alloc_put
 DECL|k_fifo_cancel_wait|macro|k_fifo_cancel_wait
 DECL|k_fifo_get|macro|k_fifo_get
