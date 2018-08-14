@@ -1,4 +1,3 @@
-DECL|MINDIFF|macro|MINDIFF
 DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|elements|variable|elements
@@ -56,7 +55,6 @@ DECL|light_ctl_temp_setunack|function|static bool light_ctl_temp_setunack(struct
 DECL|light_ctl_temp_set|function|static void light_ctl_temp_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_srv_op|variable|light_ctl_temp_srv_op
 DECL|light_ctl_temp_status|function|static void light_ctl_temp_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|light_default_status_init|function|void light_default_status_init(void)
 DECL|light_lightness_cli_op|variable|light_lightness_cli_op
 DECL|light_lightness_default_get|function|static void light_lightness_default_get(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_default_set_unack|function|static void light_lightness_default_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -83,8 +81,6 @@ DECL|onoff_set_unack|function|static bool onoff_set_unack(struct bt_mesh_model *
 DECL|onpowerup_set_unack|function|static bool onpowerup_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|root_models|variable|root_models
 DECL|s0_models|variable|s0_models
-DECL|sqrt|function|static float sqrt(float square)
-DECL|state_binding|function|static void state_binding(u8_t lightness, u8_t temperature)
 DECL|vnd_get|function|static void vnd_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|vnd_models|variable|vnd_models
 DECL|vnd_ops|variable|vnd_ops

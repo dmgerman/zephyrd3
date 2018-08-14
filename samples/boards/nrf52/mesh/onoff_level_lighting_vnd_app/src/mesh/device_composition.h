@@ -49,9 +49,9 @@ DECL|last|member|u16_t last;
 DECL|level|member|s16_t level;
 DECL|light_ctl_state|struct|struct light_ctl_state {
 DECL|light_lightness_state|struct|struct light_lightness_state {
+DECL|light_range_max|member|u16_t light_range_max;
+DECL|light_range_min|member|u16_t light_range_min;
 DECL|lightness_def|member|u16_t lightness_def;
-DECL|lightness_range_max|member|u16_t lightness_range_max;
-DECL|lightness_range_min|member|u16_t lightness_range_min;
 DECL|lightness|enum|enum lightness {
 DECL|lightness|member|u16_t lightness;
 DECL|linear|member|u16_t linear;
