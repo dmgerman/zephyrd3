@@ -1,4 +1,5 @@
 DECL|STACKSZ|macro|STACKSZ
+DECL|osPriorityDeadline|variable|osPriorityDeadline
 DECL|test_thread_apis|function|void test_thread_apis(void)
 DECL|test_thread_prio|function|void test_thread_prio(void)
 DECL|thread1|function|void thread1(void const *argument)
