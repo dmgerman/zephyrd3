@@ -2,6 +2,14 @@ DECL|cfg_srv|variable|cfg_srv
 DECL|comp|variable|comp
 DECL|elements|variable|elements
 DECL|elements|variable|elements
+DECL|gen_def_trans_time_cli_op|variable|gen_def_trans_time_cli_op
+DECL|gen_def_trans_time_get|function|static void gen_def_trans_time_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_def_trans_time_set_unack|function|static void gen_def_trans_time_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_def_trans_time_setunack|function|static bool gen_def_trans_time_setunack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_def_trans_time_set|function|static void gen_def_trans_time_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_def_trans_time_srv_op|variable|gen_def_trans_time_srv_op
+DECL|gen_def_trans_time_srv_user_data|variable|gen_def_trans_time_srv_user_data
+DECL|gen_def_trans_time_status|function|static void gen_def_trans_time_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_delta_set_unack|function|static void gen_delta_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_delta_set|function|static void gen_delta_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_level_cli_op|variable|gen_level_cli_op
@@ -25,7 +33,7 @@ DECL|gen_onoff_srv_s0_user_data|variable|gen_onoff_srv_s0_user_data
 DECL|gen_onoff_status|function|static void gen_onoff_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_get|function|static void gen_onpowerup_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_set_unack|function|static void gen_onpowerup_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|gen_onpowerup_setunack|function|static bool gen_onpowerup_setunack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_onpowerup_setunack|function|static bool gen_onpowerup_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_set|function|static void gen_onpowerup_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_status|function|static void gen_onpowerup_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_power_onoff_cli_op|variable|gen_power_onoff_cli_op

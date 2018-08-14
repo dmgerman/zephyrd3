@@ -1,0 +1,22 @@
+DECL|DEVICE_SPECIFIC_RESOLUTION|macro|DEVICE_SPECIFIC_RESOLUTION
+DECL|DISABLE_TRANSITION|enumerator|DISABLE_TRANSITION = 0x00,
+DECL|LEVEL_TEMP_TT_DELTA|enumerator|LEVEL_TEMP_TT_DELTA,
+DECL|LEVEL_TEMP_TT_MOVE|enumerator|LEVEL_TEMP_TT_MOVE,
+DECL|LEVEL_TEMP_TT|enumerator|LEVEL_TEMP_TT,
+DECL|LEVEL_TT_DELTA|enumerator|LEVEL_TT_DELTA,
+DECL|LEVEL_TT_MOVE|enumerator|LEVEL_TT_MOVE,
+DECL|LEVEL_TT|enumerator|LEVEL_TT,
+DECL|LIGHT_CTL_TEMP_TT|enumerator|LIGHT_CTL_TEMP_TT
+DECL|LIGTH_CTL_TT|enumerator|LIGTH_CTL_TT,
+DECL|LIGTH_LIGHTNESS_ACTUAL_TT|enumerator|LIGTH_LIGHTNESS_ACTUAL_TT,
+DECL|LIGTH_LIGHTNESS_LINEAR_TT|enumerator|LIGTH_LIGHTNESS_LINEAR_TT,
+DECL|ONOFF_TT|enumerator|ONOFF_TT = 0x01,
+DECL|_TRANSITION_H|macro|_TRANSITION_H
+DECL|level_lightness_transition_timer|variable|level_lightness_transition_timer
+DECL|level_temp_transition_timer|variable|level_temp_transition_timer
+DECL|light_ctl_temp_transition_timer|variable|light_ctl_temp_transition_timer
+DECL|light_ctl_transition_timer|variable|light_ctl_transition_timer
+DECL|light_lightness_actual_transition_timer|variable|light_lightness_actual_transition_timer
+DECL|light_lightness_linear_transition_timer|variable|light_lightness_linear_transition_timer
+DECL|onoff_transition_timer|variable|onoff_transition_timer
+DECL|transition_time|enum|enum transition_time {

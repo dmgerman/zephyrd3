@@ -1,4 +1,5 @@
 DECL|GENERIC_LEVEL|macro|GENERIC_LEVEL
+DECL|ONOFF|macro|ONOFF
 DECL|button_read|function|static u32_t button_read(struct device *port, u32_t pin)
 DECL|is_randomization_of_TIDs_done|variable|is_randomization_of_TIDs_done
 DECL|publish|function|void publish(struct k_work *work)
