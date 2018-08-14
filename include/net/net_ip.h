@@ -72,6 +72,9 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|ack|member|u8_t ack[4];
 DECL|chksum|member|u16_t chksum;
 DECL|chksum|member|u16_t chksum;

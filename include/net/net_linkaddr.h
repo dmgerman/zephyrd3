@@ -6,6 +6,7 @@ DECL|NET_LINK_ETHERNET|enumerator|NET_LINK_ETHERNET,
 DECL|NET_LINK_IEEE802154|enumerator|NET_LINK_IEEE802154,
 DECL|NET_LINK_UNKNOWN|enumerator|NET_LINK_UNKNOWN = 0,
 DECL|__NET_LINKADDR_H__|macro|__NET_LINKADDR_H__
+DECL|__packed|variable|__packed
 DECL|addr|member|u8_t *addr;
 DECL|addr|member|u8_t addr[NET_LINK_ADDR_MAX_LENGTH];
 DECL|len|member|u8_t len;

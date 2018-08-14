@@ -18,6 +18,8 @@ DECL|HTTP_VERDICT_DROP|enumerator|HTTP_VERDICT_DROP,
 DECL|WS_CONNECTION|enumerator|WS_CONNECTION,
 DECL|ZEPHYR_USER_AGENT|macro|ZEPHYR_USER_AGENT
 DECL|__HTTP_H__|macro|__HTTP_H__
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|app_ctx|member|struct net_app_ctx app_ctx;
 DECL|body_found|member|u8_t body_found:1;
 DECL|body_start|member|u8_t *body_start;

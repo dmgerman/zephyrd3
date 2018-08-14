@@ -20,6 +20,7 @@ DECL|NET_L2_PROMISC_MODE|enumerator|NET_L2_PROMISC_MODE = BIT(2),
 DECL|OPENTHREAD_L2|macro|OPENTHREAD_L2
 DECL|OPENTHREAD_L2|variable|OPENTHREAD_L2
 DECL|__NET_L2_H__|macro|__NET_L2_H__
+DECL|__packed|variable|__packed
 DECL|enable|member|int (*enable)(struct net_if *iface, bool state);
 DECL|get_flags|member|enum net_l2_flags (*get_flags)(struct net_if *iface);
 DECL|net_l2_flags|enum|enum net_l2_flags {

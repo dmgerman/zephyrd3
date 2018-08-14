@@ -6,4 +6,5 @@ DECL|NET_DHCPV4_RENEWING|enumerator|NET_DHCPV4_RENEWING,
 DECL|NET_DHCPV4_REQUESTING|enumerator|NET_DHCPV4_REQUESTING,
 DECL|NET_DHCPV4_SELECTING|enumerator|NET_DHCPV4_SELECTING,
 DECL|__DHCPV4_H|macro|__DHCPV4_H
+DECL|__packed|variable|__packed
 DECL|net_dhcpv4_state|enum|enum net_dhcpv4_state {

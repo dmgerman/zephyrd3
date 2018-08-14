@@ -5,6 +5,7 @@ DECL|NET_APP_SERVER|enumerator|NET_APP_SERVER,
 DECL|NET_APP_TLS_POOL_DEFINE|macro|NET_APP_TLS_POOL_DEFINE
 DECL|NET_APP_UNSPEC|enumerator|NET_APP_UNSPEC = 0,
 DECL|__NET_APP_H|macro|__NET_APP_H
+DECL|__packed|variable|__packed
 DECL|_padding|member|u8_t _padding : 5;
 DECL|app_type|member|enum net_app_type app_type;
 DECL|block|member|struct k_mem_block block;
