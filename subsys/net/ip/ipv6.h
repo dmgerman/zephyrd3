@@ -51,7 +51,7 @@ DECL|ns_count|member|u8_t ns_count;
 DECL|pending|member|struct net_pkt *pending;
 DECL|pkt|member|struct net_pkt *pkt[NET_IPV6_FRAGMENTS_MAX_PKT];
 DECL|reachable|member|struct k_delayed_work reachable;
-DECL|send_ns|member|struct k_delayed_work send_ns;
+DECL|send_ns|member|s64_t send_ns;
 DECL|src|member|struct in6_addr src;
 DECL|state|member|enum net_ipv6_nbr_state state;
 DECL|timer|member|struct k_delayed_work timer;

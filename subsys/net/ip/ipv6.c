@@ -64,6 +64,8 @@ DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_dat
 DECL|in6addr_any|variable|in6addr_any
 DECL|in6addr_loopback|variable|in6addr_loopback
 DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
+DECL|ipv6_ns_reply_timeout|function|static void ipv6_ns_reply_timeout(struct k_work *work)
+DECL|ipv6_ns_reply_timer|variable|ipv6_ns_reply_timer
 DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(u8_t proto)
 DECL|mld_query_input_handler|variable|mld_query_input_handler
 DECL|na_input_handler|variable|na_input_handler
@@ -108,7 +110,6 @@ DECL|net_neighbor_data_remove|function|void net_neighbor_data_remove(struct net_
 DECL|net_neighbor_table_clear|function|void net_neighbor_table_clear(struct net_nbr_table *table)
 DECL|no_route_info|function|static void no_route_info(struct net_pkt *pkt, struct in6_addr *src, struct in6_addr *dst)
 DECL|ns_input_handler|variable|ns_input_handler
-DECL|ns_reply_timeout|function|static void ns_reply_timeout(struct k_work *work)
 DECL|ns_routing_info|function|static void ns_routing_info(struct net_pkt *pkt, struct in6_addr *nexthop, struct in6_addr *tgt)
 DECL|process_icmpv6_pkt|function|static inline enum net_verdict process_icmpv6_pkt(struct net_pkt *pkt, struct net_ipv6_hdr *ipv6)
 DECL|ra_input_handler|variable|ra_input_handler
