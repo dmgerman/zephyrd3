@@ -64,6 +64,8 @@ DECL|iface_cb|function|static void iface_cb(struct net_if *iface, void *user_dat
 DECL|in6addr_any|variable|in6addr_any
 DECL|in6addr_loopback|variable|in6addr_loopback
 DECL|ipv6_nbr_set_state|function|static void ipv6_nbr_set_state(struct net_nbr *nbr, enum net_ipv6_nbr_state new_state)
+DECL|ipv6_nd_reachable_timeout|function|static void ipv6_nd_reachable_timeout(struct k_work *work)
+DECL|ipv6_nd_reachable_timer|variable|ipv6_nd_reachable_timer
 DECL|ipv6_ns_reply_timeout|function|static void ipv6_ns_reply_timeout(struct k_work *work)
 DECL|ipv6_ns_reply_timer|variable|ipv6_ns_reply_timer
 DECL|is_upper_layer_protocol_header|function|static inline bool is_upper_layer_protocol_header(u8_t proto)
@@ -77,7 +79,6 @@ DECL|nbr_lookup|function|static struct net_nbr *nbr_lookup(struct net_nbr_table 
 DECL|nbr_new|function|static struct net_nbr *nbr_new(struct net_if *iface, struct in6_addr *addr, bool is_router, enum net_ipv6_nbr_state state)
 DECL|nbr_print|function|void nbr_print(void)
 DECL|nbr_print|macro|nbr_print
-DECL|nd_reachable_timeout|function|static void nd_reachable_timeout(struct k_work *work)
 DECL|net_ipv6_create|function|struct net_pkt *net_ipv6_create(struct net_pkt *pkt,const struct in6_addr *src, const struct in6_addr *dst, struct net_if *iface, u8_t next_header_proto)
 DECL|net_ipv6_finalize|function|int net_ipv6_finalize(struct net_pkt *pkt, u8_t next_header_proto)
 DECL|net_ipv6_find_last_ext_hdr|function|int net_ipv6_find_last_ext_hdr(struct net_pkt *pkt, u16_t *next_hdr_idx, u16_t *last_hdr_idx)
