@@ -17,6 +17,7 @@ DECL|gen_move_set|function|static void gen_move_set(struct bt_mesh_model *model,
 DECL|gen_onoff_cli_op|variable|gen_onoff_cli_op
 DECL|gen_onoff_get|function|static void gen_onoff_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_set_unack|function|static void gen_onoff_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_onoff_setunack|function|static bool gen_onoff_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_set|function|static void gen_onoff_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onoff_srv_op|variable|gen_onoff_srv_op
 DECL|gen_onoff_srv_root_user_data|variable|gen_onoff_srv_root_user_data
@@ -24,6 +25,7 @@ DECL|gen_onoff_srv_s0_user_data|variable|gen_onoff_srv_s0_user_data
 DECL|gen_onoff_status|function|static void gen_onoff_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_get|function|static void gen_onpowerup_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_set_unack|function|static void gen_onpowerup_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|gen_onpowerup_setunack|function|static bool gen_onpowerup_setunack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_set|function|static void gen_onpowerup_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_onpowerup_status|function|static void gen_onpowerup_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|gen_power_onoff_cli_op|variable|gen_power_onoff_cli_op
@@ -48,6 +50,7 @@ DECL|light_ctl_status|function|static void light_ctl_status(struct bt_mesh_model
 DECL|light_ctl_temp_get|function|static void light_ctl_temp_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_range_get|function|static void light_ctl_temp_range_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_range_set_unack|function|static void light_ctl_temp_range_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|light_ctl_temp_range_setunack|function|static bool light_ctl_temp_range_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_range_set|function|static void light_ctl_temp_range_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_range_status|function|static void light_ctl_temp_range_status(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_ctl_temp_set_unack|function|static void light_ctl_temp_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -69,6 +72,7 @@ DECL|light_lightness_linear_set|function|static void light_lightness_linear_set(
 DECL|light_lightness_linear_status|function|static void light_lightness_linear_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_range_get|function|static void light_lightness_range_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_range_set_unack|function|static void light_lightness_range_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
+DECL|light_lightness_range_setunack|function|static bool light_lightness_range_setunack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_range_set|function|static void light_lightness_range_set(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_range_status|function|static void light_lightness_range_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|light_lightness_set_unack|function|static void light_lightness_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
@@ -77,8 +81,6 @@ DECL|light_lightness_set|function|static void light_lightness_set(struct bt_mesh
 DECL|light_lightness_srv_op|variable|light_lightness_srv_op
 DECL|light_lightness_srv_user_data|variable|light_lightness_srv_user_data
 DECL|light_lightness_status|function|static void light_lightness_status(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|onoff_set_unack|function|static bool onoff_set_unack(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
-DECL|onpowerup_set_unack|function|static bool onpowerup_set_unack(struct bt_mesh_model *model,struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)
 DECL|root_models|variable|root_models
 DECL|s0_models|variable|s0_models
 DECL|vnd_get|function|static void vnd_get(struct bt_mesh_model *model, struct bt_mesh_msg_ctx *ctx, struct net_buf_simple *buf)

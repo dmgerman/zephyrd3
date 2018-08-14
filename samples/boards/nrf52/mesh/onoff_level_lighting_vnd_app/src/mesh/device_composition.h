@@ -33,6 +33,11 @@ DECL|generic_onoff_state|struct|struct generic_onoff_state {
 DECL|generic_onpowerup_state|struct|struct generic_onpowerup_state {
 DECL|last_delta|member|s32_t last_delta;
 DECL|last_level|member|s16_t last_level;
+DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
+DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
+DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
+DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
+DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
 DECL|last_tid|member|u8_t last_tid;
 DECL|last_tid|member|u8_t last_tid;
 DECL|last_tid|member|u8_t last_tid;
