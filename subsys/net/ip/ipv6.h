@@ -39,6 +39,7 @@ DECL|net_ipv6_nbr_add|function|static inline struct net_nbr *net_ipv6_nbr_add(st
 DECL|net_ipv6_nbr_data|function|static inline struct net_ipv6_nbr_data *net_ipv6_nbr_data(struct net_nbr *nbr)
 DECL|net_ipv6_nbr_data|struct|struct net_ipv6_nbr_data {
 DECL|net_ipv6_nbr_foreach|function|static inline void net_ipv6_nbr_foreach(net_nbr_cb_t cb, void *user_data)
+DECL|net_ipv6_nbr_init|macro|net_ipv6_nbr_init
 DECL|net_ipv6_nbr_lookup_by_index|function|struct in6_addr *net_ipv6_nbr_lookup_by_index(struct net_if *iface, u8_t idx)
 DECL|net_ipv6_nbr_lookup|function|static inline struct net_nbr *net_ipv6_nbr_lookup(struct net_if *iface, struct in6_addr *addr)
 DECL|net_ipv6_nbr_rm|function|static inline bool net_ipv6_nbr_rm(struct net_if *iface, struct in6_addr *addr)
