@@ -1,9 +1,9 @@
 DECL|ILI9340_CMD_DATA_PIN_COMMAND|macro|ILI9340_CMD_DATA_PIN_COMMAND
 DECL|ILI9340_CMD_DATA_PIN_DATA|macro|ILI9340_CMD_DATA_PIN_DATA
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
 DECL|command_data_gpio|member|struct device *command_data_gpio;
 DECL|cs_ctrl|member|struct spi_cs_control cs_ctrl;
+DECL|display|variable|display
 DECL|ili9340_data|struct|struct ili9340_data {
 DECL|ili9340_data|variable|ili9340_data
 DECL|ili9340_display_off|function|void ili9340_display_off(struct device *dev)
