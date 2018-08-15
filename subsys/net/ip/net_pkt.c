@@ -46,6 +46,7 @@ DECL|net_pkt_allocs_foreach|function|void net_pkt_allocs_foreach(net_pkt_allocs_
 DECL|net_pkt_allocs|variable|net_pkt_allocs
 DECL|net_pkt_alloc|struct|struct net_pkt_alloc {
 DECL|net_pkt_append_allocator|function|static inline struct net_buf *net_pkt_append_allocator(s32_t timeout, void *user_data)
+DECL|net_pkt_append_memset|function|u16_t net_pkt_append_memset(struct net_pkt *pkt, u16_t len, const u8_t data, s32_t timeout)
 DECL|net_pkt_append|function|u16_t net_pkt_append(struct net_pkt *pkt, u16_t len, const u8_t *data, s32_t timeout)
 DECL|net_pkt_clone|function|struct net_pkt *net_pkt_clone(struct net_pkt *pkt, s32_t timeout)
 DECL|net_pkt_compact|function|bool net_pkt_compact(struct net_pkt *pkt)
