@@ -33,6 +33,7 @@ DECL|is_router|member|bool is_router;
 DECL|link_metric|member|u16_t link_metric;
 DECL|net_ipv6_frag_cb_t|typedef|typedef void (*net_ipv6_frag_cb_t)(struct net_ipv6_reassembly *reass,
 DECL|net_ipv6_init|macro|net_ipv6_init
+DECL|net_ipv6_mld_init|macro|net_ipv6_mld_init
 DECL|net_ipv6_mld_join|macro|net_ipv6_mld_join
 DECL|net_ipv6_mld_leave|macro|net_ipv6_mld_leave
 DECL|net_ipv6_nbr_add|function|static inline struct net_nbr *net_ipv6_nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr, bool is_router, enum net_ipv6_nbr_state state)
