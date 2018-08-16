@@ -15,7 +15,6 @@ DECL|net_icmp_header_fits|function|struct net_icmp_hdr *net_icmp_header_fits(str
 DECL|net_print_frags|function|static inline void net_print_frags(const char *str, struct net_pkt *pkt)
 DECL|net_print_frags|macro|net_print_frags
 DECL|net_sprint_ip_addr|function|static inline char *net_sprint_ip_addr(const struct net_addr *addr)
-DECL|net_sprint_ip_addr|function|static inline char *net_sprint_ip_addr(const struct net_addr *addr)
 DECL|net_sprint_ipv4_addr|function|static inline char *net_sprint_ipv4_addr(const struct in_addr *addr)
 DECL|net_sprint_ipv4_addr|function|static inline char *net_sprint_ipv4_addr(const struct in_addr *addr)
 DECL|net_sprint_ipv6_addr|function|static inline char *net_sprint_ipv6_addr(const struct in6_addr *addr)
