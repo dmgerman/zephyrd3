@@ -195,6 +195,7 @@ DECL|_thread_base|struct|struct _thread_base {
 DECL|_thread_stack_info_t|typedef|typedef struct _thread_stack_info _thread_stack_info_t;
 DECL|_thread_stack_info|struct|struct _thread_stack_info {
 DECL|_thread_t|typedef|typedef struct k_thread _thread_t;
+DECL|_thread_userspace_local_data|struct|struct _thread_userspace_local_data {
 DECL|_timeout_func_t|typedef|typedef void (*_timeout_func_t)(struct _timeout *t);
 DECL|_timeout|struct|struct _timeout {
 DECL|_wait_q_t|typedef|} _wait_q_t;
@@ -226,7 +227,7 @@ DECL|delete|function|inline void operator delete[](void *ptr)
 DECL|delete|function|inline void operator delete[](void *ptr1, void *ptr2)
 DECL|delta_ticks_from_prev|member|s32_t delta_ticks_from_prev;
 DECL|entry|member|struct __thread_entry entry;
-DECL|errno_location|member|int *errno_location;
+DECL|errno_var|member|int errno_var;
 DECL|errno_var|member|int errno_var;
 DECL|execution_context_types|enum|enum execution_context_types {
 DECL|expiry_fn|member|void (*expiry_fn)(struct k_timer *);
@@ -420,6 +421,7 @@ DECL|used_msgs|member|u32_t used_msgs;
 DECL|used_msgs|member|u32_t used_msgs;
 DECL|user_data|member|void *user_data;
 DECL|user_options|member|u8_t user_options;
+DECL|userspace_local_data|member|struct _thread_userspace_local_data *userspace_local_data;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
 DECL|wait_q|member|_wait_q_t wait_q;
