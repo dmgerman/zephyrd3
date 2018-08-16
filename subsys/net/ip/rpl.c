@@ -70,15 +70,11 @@ DECL|lollipop_greater_than|function|static int lollipop_greater_than(int a, int 
 DECL|nbr_add|function|static struct net_nbr *nbr_add(struct net_if *iface, struct in6_addr *addr, struct net_linkaddr *lladdr)
 DECL|nbr_data|function|static inline struct net_rpl_parent *nbr_data(struct net_nbr *nbr)
 DECL|nbr_free|function|static inline void nbr_free(struct net_nbr *nbr)
-DECL|net_route_info|macro|net_route_info
-DECL|net_route_info|macro|net_route_info
 DECL|net_rpl_add_dag|function|static void net_rpl_add_dag(struct net_if *iface, struct in6_addr *from, struct net_rpl_dio *dio)
 DECL|net_rpl_add_parent|function|static struct net_rpl_parent *net_rpl_add_parent(struct net_if *iface, struct net_rpl_dag *dag, struct net_rpl_dio *dio, struct in6_addr *addr)
 DECL|net_rpl_add_route|function|struct net_route_entry *net_rpl_add_route(struct net_rpl_dag *dag, struct net_if *iface, struct in6_addr *addr, int prefix_len, struct in6_addr *nexthop)
 DECL|net_rpl_alloc_instance|function|static struct net_rpl_instance *net_rpl_alloc_instance(u8_t instance_id)
 DECL|net_rpl_cancel_dao|function|static inline void net_rpl_cancel_dao(struct net_rpl_instance *instance)
-DECL|net_rpl_dao_ack_info|macro|net_rpl_dao_ack_info
-DECL|net_rpl_dao_ack_info|macro|net_rpl_dao_ack_info
 DECL|net_rpl_dao_info|macro|net_rpl_dao_info
 DECL|net_rpl_dao_info|macro|net_rpl_dao_info
 DECL|net_rpl_dao_send|function|int net_rpl_dao_send(struct net_if *iface, struct net_rpl_parent *parent, struct in6_addr *prefix, u8_t lifetime)
