@@ -1,3 +1,4 @@
+DECL|NBUFS|macro|NBUFS
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|calc_chksum_pkt|function|static inline u16_t calc_chksum_pkt(u16_t sum, struct net_pkt *pkt, u16_t upper_layer_len)
@@ -12,6 +13,7 @@ DECL|net_calc_chksum|function|u16_t net_calc_chksum(struct net_pkt *pkt, u8_t pr
 DECL|net_header_fits|function|bool net_header_fits(struct net_pkt *pkt, u8_t *hdr, size_t hdr_size)
 DECL|net_ipaddr_parse|function|bool net_ipaddr_parse(const char *str, size_t str_len, struct sockaddr *addr)
 DECL|net_proto2str|function|const char *net_proto2str(enum net_ip_protocol proto)
+DECL|net_sprint_addr|function|char *net_sprint_addr(sa_family_t af, const void *addr)
 DECL|net_sprint_ll_addr_buf|function|char *net_sprint_ll_addr_buf(const u8_t *ll, u8_t ll_len, char *buf, int buflen)
 DECL|net_value_to_udec|function|static int net_value_to_udec(char *buf, u32_t value, int precision)
 DECL|parse_ipv4|function|static bool parse_ipv4(const char *str, size_t str_len, struct sockaddr *addr, bool has_port)
