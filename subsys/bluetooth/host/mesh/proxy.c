@@ -60,6 +60,7 @@ DECL|filter_set|function|static int filter_set(struct bt_mesh_proxy_client *clie
 DECL|filter_type|member|} filter_type;
 DECL|filter|member|u16_t filter[CONFIG_BT_MESH_PROXY_FILTER_SIZE];
 DECL|find_client|function|static struct bt_mesh_proxy_client *find_client(struct bt_conn *conn)
+DECL|gatt_prov_adv_create|function|static size_t gatt_prov_adv_create(struct bt_data prov_sd[2])
 DECL|gatt_proxy_advertise|function|static s32_t gatt_proxy_advertise(struct bt_mesh_subnet *sub)
 DECL|gatt_svc|variable|gatt_svc
 DECL|msg_type|member|u8_t msg_type;
@@ -75,8 +76,6 @@ DECL|prov_ccc_read|function|static ssize_t prov_ccc_read(struct bt_conn *conn, c
 DECL|prov_ccc_val|variable|prov_ccc_val
 DECL|prov_ccc_write|function|static ssize_t prov_ccc_write(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *buf, u16_t len, u16_t offset, u8_t flags)
 DECL|prov_fast_adv|variable|prov_fast_adv
-DECL|prov_sd_len|variable|prov_sd_len
-DECL|prov_sd|variable|prov_sd
 DECL|prov_svc_data|variable|prov_svc_data
 DECL|prov_svc|variable|prov_svc
 DECL|proxy_adv_enabled|variable|proxy_adv_enabled
