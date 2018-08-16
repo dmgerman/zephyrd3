@@ -26,17 +26,17 @@ DECL|is_used|member|bool is_used;
 DECL|options|member|} options;
 DECL|own_cert|member|mbedtls_x509_crt own_cert;
 DECL|priv_key|member|mbedtls_pk_context priv_key;
+DECL|recv_tls|function|static ssize_t recv_tls(struct net_context *context, void *buf,size_t max_len, int flags)
 DECL|recvfrom_dtls_client|function|static ssize_t recvfrom_dtls_client(struct net_context *context, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
 DECL|recvfrom_dtls_server|function|static ssize_t recvfrom_dtls_server(struct net_context *context, void *buf, size_t max_len, int flags, struct sockaddr *src_addr, socklen_t *addrlen)
-DECL|recvfrom_tls|function|static ssize_t recvfrom_tls(struct net_context *context, void *buf, size_t max_len, int flags)
 DECL|role|member|s8_t role;
 DECL|sec_tag_count|member|int sec_tag_count;
 DECL|sec_tag_list|member|struct sec_tag_list sec_tag_list;
 DECL|sec_tag_list|struct|struct sec_tag_list {
 DECL|sec_tags|member|sec_tag_t sec_tags[CONFIG_NET_SOCKETS_TLS_MAX_CREDENTIALS];
+DECL|send_tls|function|static ssize_t send_tls(struct net_context *context, const void *buf,size_t len, int flags)
 DECL|sendto_dtls_client|function|static ssize_t sendto_dtls_client(struct net_context *context, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
 DECL|sendto_dtls_server|function|static ssize_t sendto_dtls_server(struct net_context *context, const void *buf, size_t len, int flags, const struct sockaddr *dest_addr, socklen_t addrlen)
-DECL|sendto_tls|function|static ssize_t sendto_tls(struct net_context *context, const void *buf, size_t len, int flags)
 DECL|snapshot|member|u32_t snapshot;
 DECL|ssl|member|mbedtls_ssl_context ssl;
 DECL|time_left|function|static inline int time_left(u32_t start, u32_t timeout)
@@ -58,9 +58,9 @@ DECL|tls_mbedtls_set_credentials|function|static int tls_mbedtls_set_credentials
 DECL|tls_opt_ciphersuite_list_get|function|static int tls_opt_ciphersuite_list_get(struct net_context *context,void *optval, socklen_t *optlen)
 DECL|tls_opt_ciphersuite_list_set|function|static int tls_opt_ciphersuite_list_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_ciphersuite_used_get|function|static int tls_opt_ciphersuite_used_get(struct net_context *context,void *optval, socklen_t *optlen)
+DECL|tls_opt_dtls_role_set|function|static int tls_opt_dtls_role_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_opt_hostname_set|function|static int tls_opt_hostname_set(struct net_context *context,const void *optval, socklen_t optlen)
 DECL|tls_opt_peer_verify_set|function|static int tls_opt_peer_verify_set(struct net_context *context, const void *optval, socklen_t optlen)
-DECL|tls_opt_role_set|function|static int tls_opt_role_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_opt_sec_tag_list_get|function|static int tls_opt_sec_tag_list_get(struct net_context *context, void *optval, socklen_t *optlen)
 DECL|tls_opt_sec_tag_list_set|function|static int tls_opt_sec_tag_list_set(struct net_context *context, const void *optval, socklen_t optlen)
 DECL|tls_release|function|static int tls_release(struct tls_context *tls)
