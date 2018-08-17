@@ -42,6 +42,7 @@ DECL|ADC_STATE_SAMPLING|macro|ADC_STATE_SAMPLING
 DECL|ADC_VREF|macro|ADC_VREF
 DECL|BUFS_NUM|macro|BUFS_NUM
 DECL|DW_ADC_H_|macro|DW_ADC_H_
+DECL|DW_CHANNEL_COUNT|macro|DW_CHANNEL_COUNT
 DECL|ENABLE_ADC|macro|ENABLE_ADC
 DECL|ENABLE_SSS_INTERRUPTS|macro|ENABLE_SSS_INTERRUPTS
 DECL|FLUSH_ADC_ERRORS|macro|FLUSH_ADC_ERRORS
@@ -65,16 +66,21 @@ DECL|IO_ADC_SET_SEQ_STOP|macro|IO_ADC_SET_SEQ_STOP
 DECL|IO_ADC_SET_SEQ_TABLE|macro|IO_ADC_SET_SEQ_TABLE
 DECL|RESUME_ADC_CAPTURE|macro|RESUME_ADC_CAPTURE
 DECL|START_ADC_SEQ|macro|START_ADC_SEQ
+DECL|active_channels|member|u32_t active_channels;
 DECL|adc_config|struct|struct adc_config {
 DECL|adc_dw_config_t|typedef|typedef void (*adc_dw_config_t)(void);
 DECL|adc_info|struct|struct adc_info {
+DECL|buffer|member|u16_t *buffer;
 DECL|calibration_value|member|u8_t calibration_value;
 DECL|capture_mode|member|u8_t capture_mode;
+DECL|channel_id|member|u32_t channel_id;
+DECL|channels|member|u32_t channels;
 DECL|clock_ratio|member|u32_t clock_ratio;
 DECL|config_func|member|adc_dw_config_t config_func;
-DECL|device_sync_sem|member|struct k_sem device_sync_sem;
+DECL|ctx|member|struct adc_context ctx;
+DECL|dev|member|struct device *dev;
 DECL|dummy_conversion|member|u8_t dummy_conversion;
-DECL|entries|member|struct adc_seq_entry *entries;
+DECL|entries|member|const struct adc_sequence *entries;
 DECL|index|member|u8_t index[BUFS_NUM];
 DECL|out_mode|member|u8_t out_mode;
 DECL|padding|member|u8_t padding[3];
