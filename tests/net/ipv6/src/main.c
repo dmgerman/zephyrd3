@@ -7,6 +7,8 @@ DECL|WAIT_TIME_LONG|macro|WAIT_TIME_LONG
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_ETH_L2_CTX_TYPE|macro|_ETH_L2_CTX_TYPE
 DECL|_ETH_L2_LAYER|macro|_ETH_L2_LAYER
+DECL|dad_time|variable|dad_time
+DECL|expecting_dad|variable|expecting_dad
 DECL|expecting_ra|variable|expecting_ra
 DECL|icmpv6_ns_invalid|variable|icmpv6_ns_invalid
 DECL|icmpv6_ns_no_sllao|variable|icmpv6_ns_no_sllao
@@ -30,6 +32,7 @@ DECL|prepare_ra_message|function|static struct net_pkt *prepare_ra_message(void)
 DECL|test_add_neighbor|function|static void test_add_neighbor(void)
 DECL|test_change_ll_addr|function|static void test_change_ll_addr(void)
 DECL|test_cmp_prefix|function|static void test_cmp_prefix(void)
+DECL|test_dad_timeout|function|static void test_dad_timeout(void)
 DECL|test_failed|variable|test_failed
 DECL|test_hbho_message_1|function|static void test_hbho_message_1(void)
 DECL|test_hbho_message_2|function|static void test_hbho_message_2(void)
