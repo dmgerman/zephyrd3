@@ -65,7 +65,7 @@ DECL|conn_latency|member|u16_t conn_latency;
 DECL|conn_pool|member|void *conn_pool;
 DECL|conn_timeout|member|u16_t conn_timeout;
 DECL|conn_update_req|function|static u32_t conn_update_req(struct connection *conn)
-DECL|conn_update|function|static u32_t conn_update(struct connection *conn, struct pdu_data *pdu_data_rx)
+DECL|conn_update|function|static u8_t conn_update(struct connection *conn, struct pdu_data *pdu_data_rx)
 DECL|conn_upd|member|struct connection *conn_upd;
 DECL|connection_configure|function|static void connection_configure(struct connection *conn)
 DECL|connection_count|member|u8_t connection_count;
