@@ -10,15 +10,14 @@ DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|active_address_lifetime_timers|variable|active_address_lifetime_timers
-DECL|address_check_timeout|function|static bool address_check_timeout(s64_t start, u32_t time, s64_t timeout)
 DECL|address_expired|function|static void address_expired(struct net_if_addr *ifaddr)
 DECL|address_lifetime_timeout|function|static void address_lifetime_timeout(struct k_work *work)
 DECL|address_lifetime_timer|variable|address_lifetime_timer
-DECL|address_manage_timeouts|function|static u32_t address_manage_timeouts(struct net_if_addr *ifaddr, s64_t timeout)
+DECL|address_manage_timeout|function|static bool address_manage_timeout(struct net_if_addr *ifaddr, u32_t current_time, u32_t *next_wakeup)
 DECL|address_start_timer|function|static void address_start_timer(struct net_if_addr *ifaddr, u32_t vlifetime)
-DECL|address_submit_work|function|static void address_submit_work(u32_t timeout)
-DECL|address_timedout|function|static bool address_timedout(struct net_if_addr *ifaddr, s64_t timeout)
+DECL|address_submit_work|function|static void address_submit_work(struct net_if_addr *ifaddr)
 DECL|check_global_addr|function|static inline struct in6_addr *check_global_addr(struct net_if *iface)
+DECL|check_timeout|function|static bool check_timeout(u32_t start, s32_t timeout, u32_t counter, u32_t current_time)
 DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
 DECL|debug_check_packet|macro|debug_check_packet
@@ -54,6 +53,7 @@ DECL|leave_mcast_all|macro|leave_mcast_all
 DECL|link_callbacks|variable|link_callbacks
 DECL|mcast_monitor_callbacks|variable|mcast_monitor_callbacks
 DECL|need_calc_checksum|function|static bool need_calc_checksum(struct net_if *iface, enum ethernet_hw_caps caps)
+DECL|net_address_lifetime_timeout|function|void net_address_lifetime_timeout(void)
 DECL|net_context_send_cb|function|static inline void net_context_send_cb(struct net_context *context, void *token, int status)
 DECL|net_if_add_tx_timestamp|function|void net_if_add_tx_timestamp(struct net_pkt *pkt)
 DECL|net_if_addr_init|function|static inline void net_if_addr_init(struct net_if_addr *ifaddr, struct in6_addr *addr, enum net_addr_type addr_type, u32_t vlifetime)

@@ -89,5 +89,6 @@ DECL|ra_input_handler|variable|ra_input_handler
 DECL|remaining_lifetime|function|static inline u32_t remaining_lifetime(struct net_if_addr *ifaddr)
 DECL|set_llao|function|static inline void set_llao(struct net_linkaddr *lladdr, u8_t *llao, u8_t llao_len, u8_t type)
 DECL|setup_headers|function|static void setup_headers(struct net_pkt *pkt, u8_t nd6_len, u8_t icmp_type)
+DECL|time_diff|function|static u32_t time_diff(u32_t time1, u32_t time2)
 DECL|update_ll_reserve|function|static struct net_pkt *update_ll_reserve(struct net_pkt *pkt, struct in6_addr *addr)
 DECL|user_data|member|void *user_data;
