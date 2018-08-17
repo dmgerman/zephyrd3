@@ -248,7 +248,7 @@ DECL|pdu_len_cmp|function|static inline bool pdu_len_cmp(u8_t opcode, u8_t len)
 DECL|pdu_node_tx_release|function|static void pdu_node_tx_release(u16_t handle,struct radio_pdu_node_tx *node_tx)
 DECL|phy_p|member|u8_t phy_p:3;
 DECL|phy_rsp_send|function|static u8_t phy_rsp_send(struct connection *conn, struct pdu_data *pdu_data_rx)
-DECL|phy_upd_ind|function|static inline u32_t phy_upd_ind(struct radio_pdu_node_rx *node_rx,u8_t *rx_enqueue)
+DECL|phy_upd_ind_recv|function|static inline u8_t phy_upd_ind_recv(struct radio_pdu_node_rx *node_rx, u8_t *rx_enqueue)
 DECL|phy|member|u8_t phy:3;
 DECL|ping_resp_send|function|static u8_t ping_resp_send(struct connection *conn)
 DECL|pkt_release|member|struct pdu_data_q_tx *pkt_release;
