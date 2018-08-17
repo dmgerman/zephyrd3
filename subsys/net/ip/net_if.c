@@ -101,7 +101,7 @@ DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(const struct in6_addr *maddr, struct net_if **ret)
 DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_prefix_add|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_add(struct net_if *iface, struct in6_addr *prefix, u8_t len, u32_t lifetime)
-DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if_ipv6_prefix *prefix, struct in6_addr *addr, u8_t len, u32_t lifetime)
+DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if *iface, struct net_if_ipv6_prefix *prefix, struct in6_addr *addr, u8_t len, u32_t lifetime)
 DECL|net_if_ipv6_prefix_lookup|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_lookup(struct net_if *iface, struct in6_addr *addr, u8_t len)
 DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *iface, struct in6_addr *addr, u8_t len)
 DECL|net_if_ipv6_prefix_set_timer|function|void net_if_ipv6_prefix_set_timer(struct net_if_ipv6_prefix *prefix, u32_t lifetime)
@@ -141,6 +141,7 @@ DECL|net_if_up|function|int net_if_up(struct net_if *iface)
 DECL|net_tx_ts_thread|function|static void net_tx_ts_thread(void)
 DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
 DECL|process_tx_packet|function|static void process_tx_packet(struct k_work *work)
+DECL|remove_prefix_addresses|function|static void remove_prefix_addresses(struct net_if *iface, struct net_if_ipv6 *ipv6, struct in6_addr *addr, u8_t len)
 DECL|routers|variable|routers
 DECL|rs_timeout|function|static void rs_timeout(struct k_work *work)
 DECL|timestamp_callbacks|variable|timestamp_callbacks

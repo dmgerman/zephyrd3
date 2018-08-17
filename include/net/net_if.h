@@ -52,6 +52,7 @@ DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
 DECL|iface|member|struct net_if *iface;
+DECL|iface|member|struct net_if *iface;
 DECL|init|member|void (*init)(struct net_if *iface);
 DECL|ipv4auto|member|struct net_if_ipv4_autoconf ipv4auto;
 DECL|ipv4|member|struct net_if_ipv4 *ipv4;
