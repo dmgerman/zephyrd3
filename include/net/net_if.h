@@ -70,7 +70,8 @@ DECL|l2_data|member|void *l2_data;
 DECL|l2|member|const struct net_l2 * const l2;
 DECL|lease_time|member|u32_t lease_time;
 DECL|len|member|u8_t len;
-DECL|lifetime|member|struct k_delayed_work lifetime;
+DECL|lifetime_timer_start|member|s64_t lifetime_timer_start;
+DECL|lifetime_timer_timeout|member|u32_t lifetime_timer_timeout;
 DECL|lifetime|member|struct k_delayed_work lifetime;
 DECL|lifetime|member|struct k_delayed_work lifetime;
 DECL|link_addr|member|struct net_linkaddr link_addr;
@@ -133,6 +134,7 @@ DECL|net_if|struct|struct net_if {
 DECL|net_ipv6_set_hop_limit|function|static inline void net_ipv6_set_hop_limit(struct net_if *iface, u8_t hop_limit)
 DECL|net_traffic_class|struct|struct net_traffic_class {
 DECL|netmask|member|struct in_addr netmask;
+DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;

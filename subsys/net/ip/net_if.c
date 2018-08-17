@@ -9,6 +9,15 @@ DECL|REACHABLE_TIME|macro|REACHABLE_TIME
 DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|active_address_lifetime_timers|variable|active_address_lifetime_timers
+DECL|address_check_timeout|function|static bool address_check_timeout(s64_t start, u32_t time, s64_t timeout)
+DECL|address_expired|function|static void address_expired(struct net_if_addr *ifaddr)
+DECL|address_lifetime_timeout|function|static void address_lifetime_timeout(struct k_work *work)
+DECL|address_lifetime_timer|variable|address_lifetime_timer
+DECL|address_manage_timeouts|function|static u32_t address_manage_timeouts(struct net_if_addr *ifaddr, s64_t timeout)
+DECL|address_start_timer|function|static void address_start_timer(struct net_if_addr *ifaddr, u32_t vlifetime)
+DECL|address_submit_work|function|static void address_submit_work(u32_t timeout)
+DECL|address_timedout|function|static bool address_timedout(struct net_if_addr *ifaddr, s64_t timeout)
 DECL|check_global_addr|function|static inline struct in6_addr *check_global_addr(struct net_if *iface)
 DECL|dad_timeout|function|static void dad_timeout(struct k_work *work)
 DECL|debug_check_packet|macro|debug_check_packet
@@ -24,7 +33,6 @@ DECL|ipv4_addr_find|function|static struct net_if_addr *ipv4_addr_find(struct ne
 DECL|ipv4_addresses|variable|ipv4_addresses
 DECL|ipv4_maddr_find|function|static struct net_if_mcast_addr *ipv4_maddr_find(struct net_if *iface, bool is_used, const struct in_addr *addr)
 DECL|ipv4|member|struct net_if_ipv4 ipv4;
-DECL|ipv6_addr_expired|function|static void ipv6_addr_expired(struct k_work *work)
 DECL|ipv6_addr_find|function|static struct net_if_addr *ipv6_addr_find(struct net_if *iface, struct in6_addr *addr)
 DECL|ipv6_addresses|variable|ipv6_addresses
 DECL|ipv6_prefix_find|function|static struct net_if_ipv6_prefix *ipv6_prefix_find(struct net_if *iface, struct in6_addr *prefix, u8_t prefix_len)

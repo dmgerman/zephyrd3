@@ -87,6 +87,7 @@ DECL|mode2str|function|static const char *mode2str(enum net_rpl_mode mode)
 DECL|msg_count|member|int msg_count;
 DECL|nbr_cb|function|static void nbr_cb(struct net_nbr *nbr, void *user_data)
 DECL|nbr_count|member|int nbr_count;
+DECL|remaining_lifetime|function|static inline u32_t remaining_lifetime(struct net_if_addr *ifaddr)
 DECL|result|variable|result
 DECL|route_cb|function|static void route_cb(struct net_route_entry *entry, void *user_data)
 DECL|route_count|member|int route_count;

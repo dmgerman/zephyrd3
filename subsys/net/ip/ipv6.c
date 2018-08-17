@@ -119,7 +119,7 @@ DECL|reassembly_info|function|static void reassembly_info(char *str, struct net_
 DECL|reassembly_init_done|variable|reassembly_init_done
 DECL|reassembly_timeout|function|static void reassembly_timeout(struct k_work *work)
 DECL|reassembly|variable|reassembly
-DECL|remaining|function|static inline u32_t remaining(struct k_delayed_work *work)
+DECL|remaining_lifetime|function|static inline u32_t remaining_lifetime(struct net_if_addr *ifaddr)
 DECL|route_ipv6_packet|function|static enum net_verdict route_ipv6_packet(struct net_pkt *pkt, struct net_ipv6_hdr *hdr)
 DECL|send_ipv6_fragment|function|static int send_ipv6_fragment(struct net_if *iface, struct net_pkt *pkt, struct net_buf **rest, u16_t ipv6_hdrs_len, u16_t fit_len,
 DECL|send_mld_report|function|static void send_mld_report(struct net_if *iface)
