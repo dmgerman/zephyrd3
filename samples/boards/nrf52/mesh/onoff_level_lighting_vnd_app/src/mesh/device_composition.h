@@ -24,10 +24,6 @@ DECL|TEMP_MAX|macro|TEMP_MAX
 DECL|TEMP_MIN|macro|TEMP_MIN
 DECL|_DEVICE_COMPOSITION_H|macro|_DEVICE_COMPOSITION_H
 DECL|actual|member|u16_t actual;
-DECL|cal_tt|member|u32_t cal_tt;
-DECL|cal_tt|member|u32_t cal_tt;
-DECL|cal_tt|member|u32_t cal_tt;
-DECL|cal_tt|member|u32_t cal_tt;
 DECL|current|member|int current;
 DECL|def|member|u16_t def;
 DECL|delay|member|u8_t delay;
@@ -40,10 +36,10 @@ DECL|gen_def_trans_time_state|struct|struct gen_def_trans_time_state {
 DECL|generic_level_state|struct|struct generic_level_state {
 DECL|generic_onoff_state|struct|struct generic_onoff_state {
 DECL|generic_onpowerup_state|struct|struct generic_onpowerup_state {
-DECL|is_optional_para_available|member|u8_t is_optional_para_available;
-DECL|is_optional_para_available|member|u8_t is_optional_para_available;
-DECL|is_optional_para_available|member|u8_t is_optional_para_available;
-DECL|is_optional_para_available|member|u8_t is_optional_para_available;
+DECL|is_new_transition_start|member|bool is_new_transition_start;
+DECL|is_new_transition_start|member|bool is_new_transition_start;
+DECL|is_new_transition_start|member|bool is_new_transition_start;
+DECL|is_new_transition_start|member|bool is_new_transition_start;
 DECL|last_delta|member|s32_t last_delta;
 DECL|last_level|member|s16_t last_level;
 DECL|last_msg_timestamp|member|s64_t last_msg_timestamp;
@@ -75,7 +71,15 @@ DECL|lightness|member|u16_t lightness;
 DECL|linear|member|u16_t linear;
 DECL|onoff|member|u8_t onoff;
 DECL|onpowerup|member|u8_t onpowerup;
+DECL|quo_tt|member|u32_t quo_tt;
+DECL|quo_tt|member|u32_t quo_tt;
+DECL|quo_tt|member|u32_t quo_tt;
+DECL|quo_tt|member|u32_t quo_tt;
 DECL|response|member|u32_t response;
+DECL|rt|member|u8_t rt;
+DECL|rt|member|u8_t rt;
+DECL|rt|member|u8_t rt;
+DECL|rt|member|u8_t rt;
 DECL|status_code|member|u8_t status_code;
 DECL|status_code|member|u8_t status_code;
 DECL|target_actual|member|u16_t target_actual;
@@ -91,10 +95,16 @@ DECL|temp_range_max|member|u16_t temp_range_max;
 DECL|temp_range_min|member|u16_t temp_range_min;
 DECL|temperature|enum|enum temperature {
 DECL|temp|member|u16_t temp;
+DECL|total_transition_duration|member|u32_t total_transition_duration;
+DECL|total_transition_duration|member|u32_t total_transition_duration;
+DECL|total_transition_duration|member|u32_t total_transition_duration;
+DECL|total_transition_duration|member|u32_t total_transition_duration;
+DECL|transition_start_timestamp|member|s64_t transition_start_timestamp;
+DECL|transition_start_timestamp|member|s64_t transition_start_timestamp;
+DECL|transition_start_timestamp|member|s64_t transition_start_timestamp;
+DECL|transition_start_timestamp|member|s64_t transition_start_timestamp;
 DECL|tt_counter_actual|member|u32_t tt_counter_actual;
-DECL|tt_counter_delta|member|u32_t tt_counter_delta;
 DECL|tt_counter_linear|member|u32_t tt_counter_linear;
-DECL|tt_counter_move|member|u32_t tt_counter_move;
 DECL|tt_counter_temp|member|u32_t tt_counter_temp;
 DECL|tt_counter|member|u32_t tt_counter;
 DECL|tt_counter|member|u32_t tt_counter;
