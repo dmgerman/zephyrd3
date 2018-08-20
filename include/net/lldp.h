@@ -30,6 +30,7 @@ DECL|chassis_id|member|struct net_lldp_chassis_tlv chassis_id; /* Mandatory TLV 
 DECL|end_lldpdu_tlv|member|const uint16_t end_lldpdu_tlv;
 DECL|net_lldp_chassis_tlv|struct|struct net_lldp_chassis_tlv {
 DECL|net_lldp_port_tlv|struct|struct net_lldp_port_tlv {
+DECL|net_lldp_recv_cb_t|typedef|typedef enum net_verdict (*net_lldp_recv_cb_t)(struct net_if *iface,
 DECL|net_lldp_time_to_live_tlv|struct|struct net_lldp_time_to_live_tlv {
 DECL|net_lldp_tlv_type|enum|enum net_lldp_tlv_type {
 DECL|net_lldpdu|struct|struct net_lldpdu {

@@ -18,3 +18,5 @@ DECL|lldp_tx_timeout|function|static void lldp_tx_timeout(struct k_work *work)
 DECL|lldp_tx_timer|variable|lldp_tx_timer
 DECL|net_lldp_config|function|int net_lldp_config(struct net_if *iface, const struct net_lldpdu *lldpdu)
 DECL|net_lldp_init|function|void net_lldp_init(void)
+DECL|net_lldp_recv|function|enum net_verdict net_lldp_recv(struct net_if *iface, struct net_pkt *pkt)
+DECL|net_lldp_register_callback|function|int net_lldp_register_callback(struct net_if *iface, net_lldp_recv_cb_t cb)

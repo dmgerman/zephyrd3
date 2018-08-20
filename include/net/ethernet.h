@@ -46,6 +46,7 @@ DECL|__packed|variable|__packed
 DECL|addr|member|u8_t addr[6];
 DECL|auto_negotiation|member|bool auto_negotiation;
 DECL|carrier_mgmt|member|} carrier_mgmt;
+DECL|cb|member|net_lldp_recv_cb_t cb;
 DECL|delta_bandwidth|member|unsigned int delta_bandwidth;
 DECL|dst|member|struct net_eth_addr dst;
 DECL|dst|member|struct net_eth_addr dst;
