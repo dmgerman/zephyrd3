@@ -172,7 +172,7 @@ DECL|sync_receipt_local_time|member|u64_t sync_receipt_local_time;
 DECL|sync_receipt_timeout_count|member|u32_t sync_receipt_timeout_count;
 DECL|sync_receipt_timeout_time_itv|member|u64_t sync_receipt_timeout_time_itv;
 DECL|sync_receipt_timeout|member|u8_t sync_receipt_timeout;
-DECL|sync_receipt_time|member|struct net_ptp_time sync_receipt_time;
+DECL|sync_receipt_time|member|struct net_ptp_extended_time sync_receipt_time;
 DECL|sync_seq_id|member|u16_t sync_seq_id;
 DECL|sys_current_utc_offset|member|s16_t sys_current_utc_offset;
 DECL|sys_flags|member|struct gptp_flags sys_flags;
