@@ -102,6 +102,7 @@ DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(const struct in6_addr *maddr, struct net_if **ret)
 DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_prefix_add|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_add(struct net_if *iface, struct in6_addr *prefix, u8_t len, u32_t lifetime)
+DECL|net_if_ipv6_prefix_get|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_get(struct net_if *iface, struct in6_addr *addr)
 DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if *iface, struct net_if_ipv6_prefix *ifprefix, struct in6_addr *addr, u8_t len, u32_t lifetime)
 DECL|net_if_ipv6_prefix_lookup|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_lookup(struct net_if *iface, struct in6_addr *addr, u8_t len)
 DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *iface, struct in6_addr *addr, u8_t len)
