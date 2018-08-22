@@ -85,7 +85,7 @@ DECL|bt_att_disconnected|function|static void bt_att_disconnected(struct bt_l2ca
 DECL|bt_att_encrypt_change|function|static void bt_att_encrypt_change(struct bt_l2cap_chan *chan, u8_t hci_status)
 DECL|bt_att_get_mtu|function|u16_t bt_att_get_mtu(struct bt_conn *conn)
 DECL|bt_att_init|function|void bt_att_init(void)
-DECL|bt_att_recv|function|static void bt_att_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_att_recv|function|static int bt_att_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_att_req_cancel|function|void bt_att_req_cancel(struct bt_conn *conn, struct bt_att_req *req)
 DECL|bt_att_req_send|function|int bt_att_req_send(struct bt_conn *conn, struct bt_att_req *req)
 DECL|bt_att_send|function|int bt_att_send(struct bt_conn *conn, struct net_buf *buf)

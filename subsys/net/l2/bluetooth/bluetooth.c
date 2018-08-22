@@ -35,7 +35,7 @@ DECL|ipsp_chan|member|struct bt_l2cap_le_chan ipsp_chan;
 DECL|ipsp_connected|function|static void ipsp_connected(struct bt_l2cap_chan *chan)
 DECL|ipsp_disconnected|function|static void ipsp_disconnected(struct bt_l2cap_chan *chan)
 DECL|ipsp_ops|variable|ipsp_ops
-DECL|ipsp_recv|function|static void ipsp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|ipsp_recv|function|static int ipsp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|net_bt_enable|function|static int net_bt_enable(struct net_if *iface, bool state)
 DECL|net_bt_flags|function|static enum net_l2_flags net_bt_flags(struct net_if *iface)
 DECL|net_bt_init|function|static int net_bt_init(struct device *dev)

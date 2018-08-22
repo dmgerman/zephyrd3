@@ -18,7 +18,7 @@ DECL|l2cap_ops|variable|l2cap_ops
 DECL|le|member|struct bt_l2cap_le_chan le;
 DECL|listen|function|static void listen(u8_t *data, u16_t len)
 DECL|recv_cb_buf|variable|recv_cb_buf
-DECL|recv_cb|function|static void recv_cb(struct bt_l2cap_chan *l2cap_chan, struct net_buf *buf)
+DECL|recv_cb|function|static int recv_cb(struct bt_l2cap_chan *l2cap_chan, struct net_buf *buf)
 DECL|send_data|function|static void send_data(u8_t *data, u16_t len)
 DECL|servers|variable|servers
 DECL|supported_commands|function|static void supported_commands(u8_t *data, u16_t len)

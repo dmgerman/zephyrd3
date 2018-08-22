@@ -99,14 +99,14 @@ DECL|l2cap_bredr_chan|variable|l2cap_bredr_chan
 DECL|l2cap_bredr_connected|function|static void l2cap_bredr_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_bredr_disconnected|function|static void l2cap_bredr_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_bredr_ops|variable|l2cap_bredr_ops
-DECL|l2cap_bredr_recv|function|static void l2cap_bredr_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2cap_bredr_recv|function|static int l2cap_bredr_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_chan|variable|l2cap_chan
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_rate|variable|l2cap_rate
-DECL|l2cap_recv_metrics|function|static void l2cap_recv_metrics(struct bt_l2cap_chan *chan, struct net_buf *buf)
-DECL|l2cap_recv|function|static void l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2cap_recv_metrics|function|static int l2cap_recv_metrics(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2cap_recv|function|static int l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|le_param_req|function|static bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|le_param_updated|function|static void le_param_updated(struct bt_conn *conn, u16_t interval, u16_t latency, u16_t timeout)
 DECL|pairing_conn|variable|pairing_conn

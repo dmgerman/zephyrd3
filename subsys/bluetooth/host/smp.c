@@ -66,7 +66,7 @@ DECL|bt_smp_br_accept|function|static int bt_smp_br_accept(struct bt_conn *conn,
 DECL|bt_smp_br_connected|function|static void bt_smp_br_connected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_br_disconnected|function|static void bt_smp_br_disconnected(struct bt_l2cap_chan *chan)
 DECL|bt_smp_br_pool|variable|bt_smp_br_pool
-DECL|bt_smp_br_recv|function|static void bt_smp_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_smp_br_recv|function|static int bt_smp_br_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_smp_br_send_pairing_req|function|int bt_smp_br_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp_br|struct|struct bt_smp_br {
 DECL|bt_smp_connected|function|static void bt_smp_connected(struct bt_l2cap_chan *chan)
@@ -78,7 +78,7 @@ DECL|bt_smp_get_tk|function|bool bt_smp_get_tk(struct bt_conn *conn, u8_t *tk)
 DECL|bt_smp_init|function|int bt_smp_init(void)
 DECL|bt_smp_pkey_ready|function|static void bt_smp_pkey_ready(const u8_t *pkey)
 DECL|bt_smp_pool|variable|bt_smp_pool
-DECL|bt_smp_recv|function|static void bt_smp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_smp_recv|function|static int bt_smp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_smp_send_pairing_req|function|int bt_smp_send_pairing_req(struct bt_conn *conn)
 DECL|bt_smp_send_security_req|function|int bt_smp_send_security_req(struct bt_conn *conn)
 DECL|bt_smp_sign_verify|function|int bt_smp_sign_verify(struct bt_conn *conn, struct net_buf *buf)

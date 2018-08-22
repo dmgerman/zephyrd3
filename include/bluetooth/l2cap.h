@@ -43,7 +43,7 @@ DECL|node|member|sys_snode_t node;
 DECL|ops|member|struct bt_l2cap_chan_ops *ops;
 DECL|psm|member|u16_t psm;
 DECL|psm|member|u16_t psm;
-DECL|recv|member|void (*recv)(struct bt_l2cap_chan *chan, struct net_buf *buf);
+DECL|recv|member|int (*recv)(struct bt_l2cap_chan *chan, struct net_buf *buf);
 DECL|required_sec_level|member|bt_security_t required_sec_level;
 DECL|rtx_work|member|struct k_delayed_work rtx_work;
 DECL|rx|member|struct bt_l2cap_br_endpoint rx;

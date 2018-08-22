@@ -40,7 +40,7 @@ DECL|bt_sdp_get_profile_version|function|int bt_sdp_get_profile_version(const st
 DECL|bt_sdp_get_proto_param|function|int bt_sdp_get_proto_param(const struct net_buf *buf, enum bt_sdp_proto proto, u16_t *param)
 DECL|bt_sdp_init|function|void bt_sdp_init(void)
 DECL|bt_sdp_pool|variable|bt_sdp_pool
-DECL|bt_sdp_recv|function|static void bt_sdp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|bt_sdp_recv|function|static int bt_sdp_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|bt_sdp_register_service|function|int bt_sdp_register_service(struct bt_sdp_record *service)
 DECL|bt_sdp_send|function|static void bt_sdp_send(struct bt_l2cap_chan *chan, struct net_buf *buf,u8_t op, u16_t tid)
 DECL|bt_sdp_svc_func_t|typedef|typedef u8_t (*bt_sdp_svc_func_t)(struct bt_sdp_record *rec,
@@ -89,7 +89,7 @@ DECL|sdp_client_get_total|function|static u16_t sdp_client_get_total(struct bt_s
 DECL|sdp_client_new_session|function|static struct bt_sdp_client *sdp_client_new_session(struct bt_conn *conn)
 DECL|sdp_client_notify_result|function|static void sdp_client_notify_result(struct bt_sdp_client *session, enum uuid_state state)
 DECL|sdp_client_params_iterator|function|static void sdp_client_params_iterator(struct bt_sdp_client *session)
-DECL|sdp_client_receive|function|static void sdp_client_receive(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|sdp_client_receive|function|static int sdp_client_receive(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|sdp_client_ssa_search|function|static int sdp_client_ssa_search(struct bt_sdp_client *session)
 DECL|sdp_get_attr_value_len|function|static ssize_t sdp_get_attr_value_len(const u8_t *data, size_t len)
 DECL|sdp_get_int_len|function|static inline ssize_t sdp_get_int_len(const u8_t *data, size_t len)
