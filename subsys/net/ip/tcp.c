@@ -55,6 +55,7 @@ DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|net_tcp_print_send_info|macro|net_tcp_print_send_info
 DECL|net_tcp_put|function|int net_tcp_put(struct net_context *context)
 DECL|net_tcp_queue_data|function|int net_tcp_queue_data(struct net_context *context, struct net_pkt *pkt)
+DECL|net_tcp_queue_pkt|function|static int net_tcp_queue_pkt(struct net_context *context, struct net_pkt *pkt)
 DECL|net_tcp_recv|function|int net_tcp_recv(struct net_context *context, net_context_recv_cb_t cb, void *user_data)
 DECL|net_tcp_release|function|int net_tcp_release(struct net_tcp *tcp)
 DECL|net_tcp_send_data|function|int net_tcp_send_data(struct net_context *context, net_context_send_cb_t cb, void *token, void *user_data)
