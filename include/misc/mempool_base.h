@@ -16,7 +16,7 @@ DECL|buf|member|void *buf;
 DECL|flags|member|u8_t flags;
 DECL|free_list|member|sys_dlist_t free_list;
 DECL|levels|member|struct sys_mem_pool_lvl *levels;
-DECL|max_inline_level|member|u8_t max_inline_level;
+DECL|max_inline_level|member|s8_t max_inline_level;
 DECL|max_sz|member|size_t max_sz;
 DECL|n_levels|member|u8_t n_levels;
 DECL|n_max|member|u16_t n_max;
