@@ -48,6 +48,7 @@ DECL|_priq_wait_best|macro|_priq_wait_best
 DECL|_priq_wait_best|macro|_priq_wait_best
 DECL|_priq_wait_remove|macro|_priq_wait_remove
 DECL|_priq_wait_remove|macro|_priq_wait_remove
+DECL|_ready_thread|function|void _ready_thread(struct k_thread *thread)
 DECL|_remove_thread_from_ready_q|function|void _remove_thread_from_ready_q(struct k_thread *thread)
 DECL|_reschedule|function|int _reschedule(int key)
 DECL|_sched_init|function|void _sched_init(void)
