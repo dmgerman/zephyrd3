@@ -70,3 +70,4 @@ DECL|pend|function|static void pend(struct k_thread *thread, _wait_q_t *wait_q, 
 DECL|sched_lock|variable|sched_lock
 DECL|should_preempt|function|static int should_preempt(struct k_thread *th, int preempt_ok)
 DECL|update_cache|function|static void update_cache(int preempt_ok)
+DECL|z_reset_timeslice|function|void z_reset_timeslice(void)
