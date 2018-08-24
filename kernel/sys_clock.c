@@ -1,6 +1,5 @@
 DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_uptime_get, ret_p)
 DECL|Z_SYSCALL_HANDLER|function|Z_SYSCALL_HANDLER(k_uptime_get_32)
-DECL|_handling_timeouts|variable|_handling_timeouts
 DECL|_impl_k_uptime_get_32|function|u32_t _impl_k_uptime_get_32(void)
 DECL|_impl_k_uptime_get|function|s64_t _impl_k_uptime_get(void)
 DECL|_nano_sys_clock_tick_announce|function|void _nano_sys_clock_tick_announce(s32_t ticks)
