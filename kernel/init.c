@@ -26,6 +26,7 @@ DECL|_main_thread|variable|_main_thread
 DECL|bg_thread_main|function|static void bg_thread_main(void *unused1, void *unused2, void *unused3)
 DECL|boot_delay|variable|boot_delay
 DECL|boot_delay|variable|boot_delay
+DECL|enable_interrupts|function|static void enable_interrupts(void)
 DECL|init_idle_thread|function|static void init_idle_thread(struct k_thread *thr, k_thread_stack_t *stack)
 DECL|initialize_timeouts|macro|initialize_timeouts
 DECL|initialize_timeouts|macro|initialize_timeouts
