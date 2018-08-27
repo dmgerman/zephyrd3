@@ -1,3 +1,4 @@
+DECL|MBOX_CHECK|macro|MBOX_CHECK
 DECL|__mbox_sync_get_state|variable|__mbox_sync_get_state
 DECL|__mbox_sync_put_state|variable|__mbox_sync_put_state
 DECL|__msg_q_get_state|variable|__msg_q_get_state
