@@ -4,6 +4,7 @@ DECL|check_result|function|int check_result(int i, u32_t t)
 DECL|init_output|function|void init_output(int *continuously)
 DECL|kbhit|function|int kbhit(void)
 DECL|main|function|void main(void)
+DECL|number_of_loops|variable|number_of_loops
 DECL|output_close|function|void output_close(void)
 DECL|output_file|variable|output_file
 DECL|sz_fail|variable|sz_fail
