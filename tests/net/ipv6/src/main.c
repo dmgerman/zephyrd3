@@ -1,3 +1,4 @@
+DECL|FIFTY_DAYS|macro|FIFTY_DAYS
 DECL|MY_PORT|macro|MY_PORT
 DECL|NET_ICMP_HDR|macro|NET_ICMP_HDR
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
@@ -30,6 +31,7 @@ DECL|net_test_ipv6|struct|struct net_test_ipv6 {
 DECL|peer_addr|variable|peer_addr
 DECL|prepare_ra_message|function|static struct net_pkt *prepare_ra_message(void)
 DECL|test_add_neighbor|function|static void test_add_neighbor(void)
+DECL|test_address_lifetime|function|static void test_address_lifetime(void)
 DECL|test_change_ll_addr|function|static void test_change_ll_addr(void)
 DECL|test_cmp_prefix|function|static void test_cmp_prefix(void)
 DECL|test_dad_timeout|function|static void test_dad_timeout(void)
