@@ -72,7 +72,7 @@ DECL|l2|member|const struct net_l2 * const l2;
 DECL|lease_time|member|u32_t lease_time;
 DECL|len|member|u8_t len;
 DECL|lifetime|member|struct k_delayed_work lifetime;
-DECL|lifetime|member|struct k_delayed_work lifetime;
+DECL|lifetime|member|struct net_timeout lifetime;
 DECL|lifetime|member|struct net_timeout lifetime;
 DECL|link_addr|member|struct net_linkaddr link_addr;
 DECL|mcast|member|struct net_if_mcast_addr mcast[NET_IF_MAX_IPV4_MADDR];

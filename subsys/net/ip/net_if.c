@@ -10,6 +10,7 @@ DECL|RS_COUNT|macro|RS_COUNT
 DECL|RS_TIMEOUT|macro|RS_TIMEOUT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|active_address_lifetime_timers|variable|active_address_lifetime_timers
+DECL|active_prefix_lifetime_timers|variable|active_prefix_lifetime_timers
 DECL|address_expired|function|static void address_expired(struct net_if_addr *ifaddr)
 DECL|address_lifetime_timeout|function|static void address_lifetime_timeout(struct k_work *work)
 DECL|address_lifetime_timer|variable|address_lifetime_timer
@@ -101,7 +102,7 @@ DECL|net_if_ipv6_maddr_add|function|struct net_if_mcast_addr *net_if_ipv6_maddr_
 DECL|net_if_ipv6_maddr_lookup|function|struct net_if_mcast_addr *net_if_ipv6_maddr_lookup(const struct in6_addr *maddr, struct net_if **ret)
 DECL|net_if_ipv6_maddr_rm|function|bool net_if_ipv6_maddr_rm(struct net_if *iface, const struct in6_addr *addr)
 DECL|net_if_ipv6_prefix_add|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_add(struct net_if *iface, struct in6_addr *prefix, u8_t len, u32_t lifetime)
-DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if *iface, struct net_if_ipv6_prefix *prefix, struct in6_addr *addr, u8_t len, u32_t lifetime)
+DECL|net_if_ipv6_prefix_init|function|static void net_if_ipv6_prefix_init(struct net_if *iface, struct net_if_ipv6_prefix *ifprefix, struct in6_addr *addr, u8_t len, u32_t lifetime)
 DECL|net_if_ipv6_prefix_lookup|function|struct net_if_ipv6_prefix *net_if_ipv6_prefix_lookup(struct net_if *iface, struct in6_addr *addr, u8_t len)
 DECL|net_if_ipv6_prefix_rm|function|bool net_if_ipv6_prefix_rm(struct net_if *iface, struct in6_addr *addr, u8_t len)
 DECL|net_if_ipv6_prefix_set_timer|function|void net_if_ipv6_prefix_set_timer(struct net_if_ipv6_prefix *prefix, u32_t lifetime)
@@ -139,7 +140,13 @@ DECL|net_if_unregister_timestamp_cb|function|void net_if_unregister_timestamp_cb
 DECL|net_if_unset_promisc|function|void net_if_unset_promisc(struct net_if *iface)
 DECL|net_if_up|function|int net_if_up(struct net_if *iface)
 DECL|net_tx_ts_thread|function|static void net_tx_ts_thread(void)
-DECL|prefix_lf_timeout|function|static inline void prefix_lf_timeout(struct k_work *work)
+DECL|prefix_lifetime_expired|function|static void prefix_lifetime_expired(struct net_if_ipv6_prefix *ifprefix)
+DECL|prefix_lifetime_timeout|function|static void prefix_lifetime_timeout(struct k_work *work)
+DECL|prefix_lifetime_timer|variable|prefix_lifetime_timer
+DECL|prefix_manage_timeout|function|static bool prefix_manage_timeout(struct net_if_ipv6_prefix *ifprefix, u32_t current_time, u32_t *next_wakeup)
+DECL|prefix_start_timer|function|static void prefix_start_timer(struct net_if_ipv6_prefix *ifprefix, u32_t lifetime)
+DECL|prefix_submit_work|function|static void prefix_submit_work(struct net_if_ipv6_prefix *ifprefix)
+DECL|prefix_timer_remove|function|static void prefix_timer_remove(struct net_if_ipv6_prefix *ifprefix)
 DECL|process_tx_packet|function|static void process_tx_packet(struct k_work *work)
 DECL|remove_prefix_addresses|function|static void remove_prefix_addresses(struct net_if *iface, struct net_if_ipv6 *ipv6, struct in6_addr *addr, u8_t len)
 DECL|routers|variable|routers
