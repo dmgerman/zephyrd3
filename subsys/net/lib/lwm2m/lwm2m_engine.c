@@ -130,7 +130,7 @@ DECL|max_period_sec|member|u32_t max_period_sec;
 DECL|messages|variable|messages
 DECL|min_call_period|member|u32_t min_call_period;
 DECL|min_period_sec|member|u32_t min_period_sec;
-DECL|next_engine_obj_inst|function|next_engine_obj_inst(struct lwm2m_engine_obj_inst *last, int obj_id, int obj_inst_id)
+DECL|next_engine_obj_inst|function|next_engine_obj_inst(int obj_id, int obj_inst_id)
 DECL|node|member|sys_snode_t node;
 DECL|node|member|sys_snode_t node;
 DECL|notification_attrs|struct|struct notification_attrs {
