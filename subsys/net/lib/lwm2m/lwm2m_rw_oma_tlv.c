@@ -28,8 +28,10 @@ DECL|oma_tlv_reader|variable|oma_tlv_reader
 DECL|oma_tlv_writer|variable|oma_tlv_writer
 DECL|oma_tlv|struct|struct oma_tlv {
 DECL|put_begin_ri|function|static size_t put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
+DECL|put_begin_tlv|function|static size_t put_begin_tlv(struct lwm2m_output_context *out, struct net_buf **mark_frag, u16_t *mark_pos, u8_t *writer_flags, int writer_flag)
 DECL|put_bool|function|static size_t put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
 DECL|put_end_ri|function|static size_t put_end_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
+DECL|put_end_tlv|function|static size_t put_end_tlv(struct lwm2m_output_context *out, struct net_buf *mark_frag, u16_t mark_pos, u8_t *writer_flags, u8_t writer_flag, int tlv_type, int tlv_id)
 DECL|put_float32fix|function|static size_t put_float32fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float32_value_t *value)
 DECL|put_float64fix|function|static size_t put_float64fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float64_value_t *value)
 DECL|put_s16|function|static size_t put_s16(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s16_t value)
