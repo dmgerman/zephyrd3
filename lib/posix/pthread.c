@@ -3,6 +3,7 @@ DECL|PTHREAD_CANCELED|macro|PTHREAD_CANCELED
 DECL|PTHREAD_INIT_FLAGS|macro|PTHREAD_INIT_FLAGS
 DECL|init_pthread_attrs|variable|init_pthread_attrs
 DECL|is_posix_prio_valid|function|static bool is_posix_prio_valid(u32_t priority, int policy)
+DECL|posix_thread_pool|variable|posix_thread_pool
 DECL|posix_to_zephyr_priority|function|static s32_t posix_to_zephyr_priority(u32_t priority, int policy)
 DECL|pthread_attr_destroy|function|int pthread_attr_destroy(pthread_attr_t *attr)
 DECL|pthread_attr_getdetachstate|function|int pthread_attr_getdetachstate(const pthread_attr_t *attr, int *detachstate)
@@ -22,6 +23,7 @@ DECL|pthread_exit|function|void pthread_exit(void *retval)
 DECL|pthread_getschedparam|function|int pthread_getschedparam(pthread_t pthread, int *policy, struct sched_param *param)
 DECL|pthread_join|function|int pthread_join(pthread_t thread, void **status)
 DECL|pthread_key_lock|variable|pthread_key_lock
+DECL|pthread_num|variable|pthread_num
 DECL|pthread_once|function|int pthread_once(pthread_once_t *once, void (*init_func)(void))
 DECL|pthread_setcancelstate|function|int pthread_setcancelstate(int state, int *oldstate)
 DECL|pthread_setschedparam|function|int pthread_setschedparam(pthread_t pthread, int policy, const struct sched_param *param)
