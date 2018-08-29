@@ -1,8 +1,12 @@
 DECL|GPTP_CLK_SLAVE_SYNC_INITIALIZING|enumerator|GPTP_CLK_SLAVE_SYNC_INITIALIZING,
 DECL|GPTP_CLK_SLAVE_SYNC_SEND_SYNC_IND|enumerator|GPTP_CLK_SLAVE_SYNC_SEND_SYNC_IND,
+DECL|GPTP_CMS_OFFSET_INDICATION|enumerator|GPTP_CMS_OFFSET_INDICATION,
+DECL|GPTP_CMS_OFFSET_INITIALIZING|enumerator|GPTP_CMS_OFFSET_INITIALIZING,
 DECL|GPTP_CMS_RCV_INITIALIZING|enumerator|GPTP_CMS_RCV_INITIALIZING,
 DECL|GPTP_CMS_RCV_SOURCE_TIME|enumerator|GPTP_CMS_RCV_SOURCE_TIME,
 DECL|GPTP_CMS_RCV_WAITING|enumerator|GPTP_CMS_RCV_WAITING,
+DECL|GPTP_CMS_SND_INDICATION|enumerator|GPTP_CMS_SND_INDICATION,
+DECL|GPTP_CMS_SND_INITIALIZING|enumerator|GPTP_CMS_SND_INITIALIZING,
 DECL|GPTP_INFO_IS_AGED|enumerator|GPTP_INFO_IS_AGED,
 DECL|GPTP_INFO_IS_DISABLED|enumerator|GPTP_INFO_IS_DISABLED,
 DECL|GPTP_INFO_IS_MINE|enumerator|GPTP_INFO_IS_MINE,
@@ -74,6 +78,8 @@ DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|ann_current_utc_offset|member|s16_t ann_current_utc_offset;
 DECL|ann_expired|member|bool ann_expired;
 DECL|ann_flags|member|struct gptp_flags ann_flags;
@@ -83,15 +89,21 @@ DECL|ann_send_periodic_timer|member|struct k_timer ann_send_periodic_timer;
 DECL|ann_time_source|member|enum gptp_time_source ann_time_source;
 DECL|ann_trigger|member|bool ann_trigger;
 DECL|announce_interval|member|struct gptp_uscaled_ns announce_interval;
+DECL|clk_master_sync_offset|member|struct gptp_clk_master_sync_offset_state clk_master_sync_offset;
 DECL|clk_master_sync_receive|member|struct gptp_clk_master_sync_rcv_state clk_master_sync_receive;
+DECL|clk_master_sync_send|member|struct gptp_clk_master_sync_snd_state clk_master_sync_send;
 DECL|clk_slave_sync|member|struct gptp_clk_slave_sync_state clk_slave_sync;
 DECL|follow_up_discard_timer|member|struct k_timer follow_up_discard_timer;
 DECL|follow_up_receipt_timeout|member|u64_t follow_up_receipt_timeout;
 DECL|follow_up_timeout_expired|member|bool follow_up_timeout_expired;
+DECL|gptp_clk_master_sync_offset_state|struct|struct gptp_clk_master_sync_offset_state {
 DECL|gptp_clk_master_sync_rcv_state|struct|struct gptp_clk_master_sync_rcv_state {
+DECL|gptp_clk_master_sync_snd_state|struct|struct gptp_clk_master_sync_snd_state {
 DECL|gptp_clk_slave_sync_states|enum|enum gptp_clk_slave_sync_states {
 DECL|gptp_clk_slave_sync_state|struct|struct gptp_clk_slave_sync_state {
+DECL|gptp_cms_offset_states|enum|enum gptp_cms_offset_states {
 DECL|gptp_cms_rcv_states|enum|enum gptp_cms_rcv_states {
+DECL|gptp_cms_snd_states|enum|enum gptp_cms_snd_states {
 DECL|gptp_info_is|enum|enum gptp_info_is {
 DECL|gptp_pa_info_states|enum|enum gptp_pa_info_states {
 DECL|gptp_pa_rcv_states|enum|enum gptp_pa_rcv_states {
@@ -159,6 +171,7 @@ DECL|pss_rcv_ptr|member|struct gptp_mi_port_sync_sync *pss_rcv_ptr;
 DECL|pss_rcv|member|struct gptp_pss_rcv_state pss_rcv;
 DECL|pss_send|member|struct gptp_mi_port_sync_sync pss_send;
 DECL|pss_send|member|struct gptp_pss_send_state pss_send;
+DECL|pss_snd|member|struct gptp_mi_port_sync_sync pss_snd;
 DECL|pss_sync_ptr|member|struct gptp_mi_port_sync_sync *pss_sync_ptr;
 DECL|pss|member|struct gptp_mi_port_sync_sync pss;
 DECL|rate_ratio|member|double rate_ratio;
@@ -166,6 +179,7 @@ DECL|rcv_sync_receipt_timeout_timer_expired|member|bool rcv_sync_receipt_timeout
 DECL|rcv_sync_receipt_timeout_timer|member|struct k_timer rcv_sync_receipt_timeout_timer;
 DECL|rcvd_announce_ptr|member|struct net_pkt *rcvd_announce_ptr;
 DECL|rcvd_announce|member|bool rcvd_announce;
+DECL|rcvd_clk_src_req|member|struct gptp_clk_src_time_invoke_params rcvd_clk_src_req;
 DECL|rcvd_clock_source_req|member|bool rcvd_clock_source_req;
 DECL|rcvd_follow_up_ptr|member|struct net_pkt *rcvd_follow_up_ptr;
 DECL|rcvd_follow_up|member|bool rcvd_follow_up;
@@ -182,6 +196,7 @@ DECL|rcvd_pss_sync|member|bool rcvd_pss_sync;
 DECL|rcvd_pss|member|bool rcvd_pss;
 DECL|rcvd_pss|member|bool rcvd_pss;
 DECL|rcvd_sync_ptr|member|struct net_pkt *rcvd_sync_ptr;
+DECL|rcvd_sync_receipt_time|member|bool rcvd_sync_receipt_time;
 DECL|rcvd_sync|member|bool rcvd_sync;
 DECL|root_system_id|member|struct gptp_root_system_identity root_system_id;
 DECL|send_sync_receipt_timeout_timer_expired|member|bool send_sync_receipt_timeout_timer_expired;
@@ -189,7 +204,9 @@ DECL|send_sync_receipt_timeout_timer|member|struct k_timer send_sync_receipt_tim
 DECL|site_ss|member|struct gptp_site_sync_sync_state site_ss;
 DECL|src_port_id|member|struct gptp_port_identity src_port_id;
 DECL|state|member|enum gptp_clk_slave_sync_states state;
+DECL|state|member|enum gptp_cms_offset_states state;
 DECL|state|member|enum gptp_cms_rcv_states state;
+DECL|state|member|enum gptp_cms_snd_states state;
 DECL|state|member|enum gptp_pa_info_states state;
 DECL|state|member|enum gptp_pa_rcv_states state;
 DECL|state|member|enum gptp_pa_transmit_states state;
@@ -207,6 +224,7 @@ DECL|sync_ptr|member|struct net_pkt *sync_ptr;
 DECL|sync_rcv|member|struct gptp_md_sync_info sync_rcv;
 DECL|sync_rcv|member|struct gptp_sync_rcv_state sync_rcv;
 DECL|sync_send_ptr|member|struct gptp_md_sync_info *sync_send_ptr;
+DECL|sync_send_time|member|struct gptp_uscaled_ns sync_send_time;
 DECL|sync_send|member|struct gptp_md_sync_info sync_send;
 DECL|sync_send|member|struct gptp_sync_send_state sync_send;
 DECL|tx_pdelay_req_ptr|member|struct net_pkt *tx_pdelay_req_ptr;
