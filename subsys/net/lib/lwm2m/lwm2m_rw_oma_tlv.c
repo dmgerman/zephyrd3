@@ -19,7 +19,9 @@ DECL|get_s64|function|static size_t get_s64(struct lwm2m_input_context *in, s64_
 DECL|get_string|function|static size_t get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
 DECL|id|member|u16_t id; /* can be 8-bit or 16-bit when serialized */
 DECL|length|member|u32_t length;
+DECL|mark_frag_oi|member|struct net_buf *mark_frag_oi;
 DECL|mark_frag_ri|member|struct net_buf *mark_frag_ri;
+DECL|mark_pos_oi|member|u16_t mark_pos_oi;
 DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|oma_tlv_get|function|static size_t oma_tlv_get(struct oma_tlv *tlv, struct lwm2m_input_context *in, bool dont_advance)
 DECL|oma_tlv_put_u8|function|static int oma_tlv_put_u8(struct lwm2m_output_context *out, u8_t value, bool insert)
@@ -27,9 +29,11 @@ DECL|oma_tlv_put|function|static size_t oma_tlv_put(const struct oma_tlv *tlv, s
 DECL|oma_tlv_reader|variable|oma_tlv_reader
 DECL|oma_tlv_writer|variable|oma_tlv_writer
 DECL|oma_tlv|struct|struct oma_tlv {
+DECL|put_begin_oi|function|static size_t put_begin_oi(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_begin_ri|function|static size_t put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_begin_tlv|function|static size_t put_begin_tlv(struct lwm2m_output_context *out, struct net_buf **mark_frag, u16_t *mark_pos, u8_t *writer_flags, int writer_flag)
 DECL|put_bool|function|static size_t put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
+DECL|put_end_oi|function|static size_t put_end_oi(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_end_ri|function|static size_t put_end_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_end_tlv|function|static size_t put_end_tlv(struct lwm2m_output_context *out, struct net_buf *mark_frag, u16_t mark_pos, u8_t *writer_flags, u8_t writer_flag, int tlv_type, int tlv_id)
 DECL|put_float32fix|function|static size_t put_float32fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float32_value_t *value)
