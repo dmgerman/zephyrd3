@@ -19,6 +19,8 @@ DECL|get_s64|function|static size_t get_s64(struct lwm2m_input_context *in, s64_
 DECL|get_string|function|static size_t get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
 DECL|id|member|u16_t id; /* can be 8-bit or 16-bit when serialized */
 DECL|length|member|u32_t length;
+DECL|mark_frag_ri|member|struct net_buf *mark_frag_ri;
+DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|oma_tlv_get|function|static size_t oma_tlv_get(struct oma_tlv *tlv, struct lwm2m_input_context *in, bool dont_advance)
 DECL|oma_tlv_put_u8|function|static int oma_tlv_put_u8(struct lwm2m_output_context *out, u8_t value, bool insert)
 DECL|oma_tlv_put|function|static size_t oma_tlv_put(const struct oma_tlv *tlv, struct lwm2m_output_context *out, u8_t *value, bool insert)
@@ -37,5 +39,7 @@ DECL|put_s8|function|static size_t put_s8(struct lwm2m_output_context *out, stru
 DECL|put_string|function|static size_t put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
 DECL|tlv_calc_id|function|static u16_t tlv_calc_id(u8_t flags, struct lwm2m_obj_path *path)
 DECL|tlv_calc_type|function|static u8_t tlv_calc_type(u8_t flags)
+DECL|tlv_out_formatter_data|struct|struct tlv_out_formatter_data {
 DECL|tlv_setup|function|static void tlv_setup(struct oma_tlv *tlv, u8_t type, u16_t id, u32_t buflen)
 DECL|type|member|u8_t type;
+DECL|writer_flags|member|u8_t writer_flags;
