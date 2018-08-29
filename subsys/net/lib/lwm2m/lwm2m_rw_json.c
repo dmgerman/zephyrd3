@@ -25,6 +25,7 @@ DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|name_len|member|u8_t name_len;
 DECL|name|member|u8_t name[TOKEN_BUF_LEN];
 DECL|parse_path|function|static int parse_path(const u8_t *buf, u16_t buflen, struct lwm2m_obj_path *path)
+DECL|path_level|member|u8_t path_level;
 DECL|put_begin_ri|function|static size_t put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|put_begin|function|static size_t put_begin(struct lwm2m_output_context *out,struct lwm2m_obj_path *path)
 DECL|put_bool|function|static size_t put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
