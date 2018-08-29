@@ -115,8 +115,6 @@ DECL|lwm2m_obj_path|struct|struct lwm2m_obj_path {
 DECL|lwm2m_output_context|struct|struct lwm2m_output_context {
 DECL|lwm2m_reader|struct|struct lwm2m_reader {
 DECL|lwm2m_writer|struct|struct lwm2m_writer {
-DECL|mark_frag_ri|member|struct net_buf *mark_frag_ri;
-DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|max_instance_count|member|u16_t max_instance_count;
 DECL|multi_count_var|member|u8_t *multi_count_var;
 DECL|multi_max_count|member|u8_t multi_max_count;
@@ -164,5 +162,4 @@ DECL|type|member|u8_t type;
 DECL|user_create_cb|member|lwm2m_engine_user_cb_t user_create_cb;
 DECL|user_data|member|void *user_data;
 DECL|user_delete_cb|member|lwm2m_engine_user_cb_t user_delete_cb;
-DECL|writer_flags|member|u8_t writer_flags;
 DECL|writer|member|const struct lwm2m_writer *writer;
