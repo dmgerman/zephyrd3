@@ -61,10 +61,12 @@ DECL|data_len|member|u16_t data_len;
 DECL|data_ptr|member|void *data_ptr;
 DECL|data_type|member|u8_t data_type;
 DECL|delete_cb|member|lwm2m_engine_obj_delete_cb_t delete_cb;
+DECL|engine_clear_out_user_data|function|engine_clear_out_user_data(struct lwm2m_output_context *out)
 DECL|engine_get_bool|function|static inline size_t engine_get_bool(struct lwm2m_input_context *in, bool *value)
 DECL|engine_get_float32fix|function|static inline size_t engine_get_float32fix(struct lwm2m_input_context *in, float32_value_t *value)
 DECL|engine_get_float64fix|function|static inline size_t engine_get_float64fix(struct lwm2m_input_context *in, float64_value_t *value)
 DECL|engine_get_opaque|function|static inline size_t engine_get_opaque(struct lwm2m_input_context *in, u8_t *buf, size_t buflen, bool *last_block)
+DECL|engine_get_out_user_data|function|static inline void *engine_get_out_user_data(struct lwm2m_output_context *out)
 DECL|engine_get_s32|function|static inline size_t engine_get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|engine_get_s64|function|static inline size_t engine_get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|engine_get_string|function|static inline size_t engine_get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
@@ -81,6 +83,7 @@ DECL|engine_put_s32|function|static inline size_t engine_put_s32(struct lwm2m_ou
 DECL|engine_put_s64|function|static inline size_t engine_put_s64(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s64_t value)
 DECL|engine_put_s8|function|static inline size_t engine_put_s8(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, s8_t value)
 DECL|engine_put_string|function|static inline size_t engine_put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
+DECL|engine_set_out_user_data|function|static inline void engine_set_out_user_data(struct lwm2m_output_context *out, void *user_data)
 DECL|execute_cb|member|lwm2m_engine_user_cb_t execute_cb;
 DECL|field_count|member|u16_t field_count;
 DECL|fields|member|struct lwm2m_engine_obj_field *fields;
@@ -159,6 +162,7 @@ DECL|resource_count|member|u16_t resource_count;
 DECL|resources|member|struct lwm2m_engine_res_inst *resources;
 DECL|type|member|u8_t type;
 DECL|user_create_cb|member|lwm2m_engine_user_cb_t user_create_cb;
+DECL|user_data|member|void *user_data;
 DECL|user_delete_cb|member|lwm2m_engine_user_cb_t user_delete_cb;
 DECL|writer_flags|member|u8_t writer_flags;
 DECL|writer|member|const struct lwm2m_writer *writer;
