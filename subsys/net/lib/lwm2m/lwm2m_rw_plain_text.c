@@ -1,5 +1,6 @@
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|do_read_op_plain_text|function|int do_read_op_plain_text(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, int content_format)
 DECL|do_write_op_plain_text|function|int do_write_op_plain_text(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|get_bool|function|static size_t get_bool(struct lwm2m_input_context *in, bool *value)
 DECL|get_float32fix|function|static size_t get_float32fix(struct lwm2m_input_context *in, float32_value_t *value)

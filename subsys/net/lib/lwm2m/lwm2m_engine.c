@@ -116,6 +116,7 @@ DECL|lwm2m_get_rd_data|function|u16_t lwm2m_get_rd_data(u8_t *client_data, u16_t
 DECL|lwm2m_init_message|function|int lwm2m_init_message(struct lwm2m_message *msg)
 DECL|lwm2m_notify_observer_path|function|int lwm2m_notify_observer_path(struct lwm2m_obj_path *path)
 DECL|lwm2m_notify_observer|function|int lwm2m_notify_observer(u16_t obj_id, u16_t obj_inst_id, u16_t res_id)
+DECL|lwm2m_perform_read_op|function|int lwm2m_perform_read_op(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, u16_t content_format)
 DECL|lwm2m_read_handler|function|static int lwm2m_read_handler(struct lwm2m_engine_obj_inst *obj_inst, struct lwm2m_engine_res_inst *res, struct lwm2m_engine_obj_field *obj_field, struct lwm2m_engine_context *context)
 DECL|lwm2m_register_obj|function|void lwm2m_register_obj(struct lwm2m_engine_obj *obj)
 DECL|lwm2m_reset_message|function|void lwm2m_reset_message(struct lwm2m_message *msg, bool release)

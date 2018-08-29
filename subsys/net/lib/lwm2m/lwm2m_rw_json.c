@@ -12,6 +12,7 @@ DECL|T_OBJ|macro|T_OBJ
 DECL|T_STRING_B|macro|T_STRING_B
 DECL|T_STRING|macro|T_STRING
 DECL|T_VAL|macro|T_VAL
+DECL|do_read_op_json|function|int do_read_op_json(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, int content_format)
 DECL|do_write_op_json|function|int do_write_op_json(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context)
 DECL|json_add_char|function|static void json_add_char(struct json_data *json, u8_t c, u8_t json_type)
 DECL|json_buffer|variable|json_buffer
