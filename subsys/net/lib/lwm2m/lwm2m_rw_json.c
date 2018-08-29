@@ -18,7 +18,10 @@ DECL|json_add_char|function|static void json_add_char(struct json_data *json, u8
 DECL|json_buffer|variable|json_buffer
 DECL|json_data|struct|struct json_data {
 DECL|json_next_token|function|static int json_next_token(struct lwm2m_input_context *in, struct json_data *json)
+DECL|json_out_formatter_data|struct|struct json_out_formatter_data {
 DECL|json_writer|variable|json_writer
+DECL|mark_frag_ri|member|struct net_buf *mark_frag_ri;
+DECL|mark_pos_ri|member|u16_t mark_pos_ri;
 DECL|name_len|member|u8_t name_len;
 DECL|name|member|u8_t name[TOKEN_BUF_LEN];
 DECL|parse_path|function|static int parse_path(const u8_t *buf, u16_t buflen, struct lwm2m_obj_path *path)
@@ -39,3 +42,4 @@ DECL|put_s8|function|static size_t put_s8(struct lwm2m_output_context *out, stru
 DECL|put_string|function|static size_t put_string(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, char *buf, size_t buflen)
 DECL|value_len|member|u8_t value_len;
 DECL|value|member|u8_t value[TOKEN_BUF_LEN];
+DECL|writer_flags|member|u8_t writer_flags;
