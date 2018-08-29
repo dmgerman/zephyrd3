@@ -70,10 +70,14 @@ DECL|engine_get_out_user_data|function|static inline void *engine_get_out_user_d
 DECL|engine_get_s32|function|static inline size_t engine_get_s32(struct lwm2m_input_context *in, s32_t *value)
 DECL|engine_get_s64|function|static inline size_t engine_get_s64(struct lwm2m_input_context *in, s64_t *value)
 DECL|engine_get_string|function|static inline size_t engine_get_string(struct lwm2m_input_context *in, u8_t *buf, size_t buflen)
+DECL|engine_put_begin_oi|function|static inline size_t engine_put_begin_oi(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_begin_ri|function|static inline size_t engine_put_begin_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
+DECL|engine_put_begin_r|function|static inline size_t engine_put_begin_r(struct lwm2m_output_context *out,struct lwm2m_obj_path *path)
 DECL|engine_put_begin|function|static inline size_t engine_put_begin(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_bool|function|static inline size_t engine_put_bool(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, bool value)
+DECL|engine_put_end_oi|function|static inline size_t engine_put_end_oi(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_end_ri|function|static inline size_t engine_put_end_ri(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
+DECL|engine_put_end_r|function|static inline size_t engine_put_end_r(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_end|function|static inline size_t engine_put_end(struct lwm2m_output_context *out, struct lwm2m_obj_path *path)
 DECL|engine_put_float32fix|function|static inline size_t engine_put_float32fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float32_value_t *value)
 DECL|engine_put_float64fix|function|static inline size_t engine_put_float64fix(struct lwm2m_output_context *out, struct lwm2m_obj_path *path, float64_value_t *value)
@@ -136,10 +140,14 @@ DECL|payload_len|member|u16_t payload_len;
 DECL|permissions|member|u8_t permissions;
 DECL|post_write_cb|member|lwm2m_engine_set_data_cb_t post_write_cb;
 DECL|pre_write_cb|member|lwm2m_engine_get_data_cb_t pre_write_cb;
+DECL|put_begin_oi|member|size_t (*put_begin_oi)(struct lwm2m_output_context *out,
 DECL|put_begin_ri|member|size_t (*put_begin_ri)(struct lwm2m_output_context *out,
+DECL|put_begin_r|member|size_t (*put_begin_r)(struct lwm2m_output_context *out,
 DECL|put_begin|member|size_t (*put_begin)(struct lwm2m_output_context *out,
 DECL|put_bool|member|size_t (*put_bool)(struct lwm2m_output_context *out,
+DECL|put_end_oi|member|size_t (*put_end_oi)(struct lwm2m_output_context *out,
 DECL|put_end_ri|member|size_t (*put_end_ri)(struct lwm2m_output_context *out,
+DECL|put_end_r|member|size_t (*put_end_r)(struct lwm2m_output_context *out,
 DECL|put_end|member|size_t (*put_end)(struct lwm2m_output_context *out,
 DECL|put_float32fix|member|size_t (*put_float32fix)(struct lwm2m_output_context *out,
 DECL|put_float64fix|member|size_t (*put_float64fix)(struct lwm2m_output_context *out,
