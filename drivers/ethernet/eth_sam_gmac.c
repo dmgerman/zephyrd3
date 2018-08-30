@@ -45,6 +45,7 @@ DECL|gmac_desc_get_w1|function|static inline u32_t gmac_desc_get_w1(struct gmac_
 DECL|gmac_desc_set_w0|function|static inline void gmac_desc_set_w0(struct gmac_desc *desc, u32_t value)
 DECL|gmac_desc_set_w1|function|static inline void gmac_desc_set_w1(struct gmac_desc *desc, u32_t value)
 DECL|gmac_init|function|static int gmac_init(Gmac *gmac, u32_t gmac_ncfgr_val)
+DECL|gmac_setup_ptp_clock_divisors|function|static void gmac_setup_ptp_clock_divisors(Gmac *gmac)
 DECL|link_configure|function|static void link_configure(Gmac *gmac, u32_t flags)
 DECL|mac_addr_set|function|static void mac_addr_set(Gmac *gmac, u8_t index, u8_t mac_addr[6])
 DECL|need_timestamping|function|static bool need_timestamping(struct gptp_hdr *hdr)
