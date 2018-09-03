@@ -1,6 +1,5 @@
 DECL|NET_EVENT_INFO_MAX_SIZE|macro|NET_EVENT_INFO_MAX_SIZE
 DECL|NET_EVENT_INFO_MAX_SIZE|macro|NET_EVENT_INFO_MAX_SIZE
-DECL|_hexdump|function|static inline void _hexdump(const u8_t *packet, size_t length, u8_t reserve)
 DECL|net_calc_chksum_icmpv4|function|static inline u16_t net_calc_chksum_icmpv4(struct net_pkt *pkt)
 DECL|net_calc_chksum_icmpv6|function|static inline u16_t net_calc_chksum_icmpv6(struct net_pkt *pkt)
 DECL|net_calc_chksum_tcp|function|static inline u16_t net_calc_chksum_tcp(struct net_pkt *pkt)
