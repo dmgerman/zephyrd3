@@ -4,7 +4,6 @@ DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|cfi_to_fs_settings|function|static inline bool cfi_to_fs_settings(enum ieee802154_cfi cfi, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|data_addr_to_fs_settings|function|bool data_addr_to_fs_settings(struct net_linkaddr *dst, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params)
 DECL|dbg_print_fs|macro|dbg_print_fs
-DECL|dbg_print_fs|macro|dbg_print_fs
 DECL|generate_addressing_fields|function|u8_t *generate_addressing_fields(struct ieee802154_context *ctx, struct ieee802154_fcf_seq *fs, struct ieee802154_frame_params *params, u8_t *p_buf)
 DECL|generate_aux_security_hdr|function|u8_t *generate_aux_security_hdr(struct ieee802154_security_ctx *sec_ctx,u8_t *p_buf)
 DECL|generate_fcf_grounds|function|static inline struct ieee802154_fcf_seq *generate_fcf_grounds(u8_t **p_buf, bool ack)
