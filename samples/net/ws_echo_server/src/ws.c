@@ -7,14 +7,13 @@ DECL|HTML_HEADER|macro|HTML_HEADER
 DECL|HTTP_STATUS_200_OK_GZ_CSS|macro|HTTP_STATUS_200_OK_GZ_CSS
 DECL|HTTP_STATUS_200_OK|macro|HTTP_STATUS_200_OK
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_BUF_LEN|macro|MAX_BUF_LEN
 DECL|MAX_URL_LEN|macro|MAX_URL_LEN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|RX_FIFO_DEPTH|macro|RX_FIFO_DEPTH
 DECL|SEND_TIMEOUT|macro|SEND_TIMEOUT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|append_and_send_data|function|static int append_and_send_data(struct http_ctx *http_ctx,const struct sockaddr *dst, bool final, const char *fmt, ...)
 DECL|buf|variable|buf
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
