@@ -1,3 +1,6 @@
+DECL|ADMA_FLEXCAN0_INT_DriverIRQHandler|function|void ADMA_FLEXCAN0_INT_DriverIRQHandler(void)
+DECL|ADMA_FLEXCAN1_INT_DriverIRQHandler|function|void ADMA_FLEXCAN1_INT_DriverIRQHandler(void)
+DECL|ADMA_FLEXCAN2_INT_DriverIRQHandler|function|void ADMA_FLEXCAN2_INT_DriverIRQHandler(void)
 DECL|CAN0_DriverIRQHandler|function|void CAN0_DriverIRQHandler(void)
 DECL|CAN1_DriverIRQHandler|function|void CAN1_DriverIRQHandler(void)
 DECL|CAN2_DriverIRQHandler|function|void CAN2_DriverIRQHandler(void)
@@ -10,8 +13,9 @@ DECL|FLEXCAN_Deinit|function|void FLEXCAN_Deinit(CAN_Type *base)
 DECL|FLEXCAN_EnableRxFifoDMA|function|void FLEXCAN_EnableRxFifoDMA(CAN_Type *base, bool enable)
 DECL|FLEXCAN_EnterFreezeMode|function|static void FLEXCAN_EnterFreezeMode(CAN_Type *base)
 DECL|FLEXCAN_ExitFreezeMode|function|static void FLEXCAN_ExitFreezeMode(CAN_Type *base)
-DECL|FLEXCAN_FDEnable|function|void FLEXCAN_FDEnable(CAN_Type *base, flexcan_mb_size_t dataSize, bool brs)
+DECL|FLEXCAN_FDInit|function|void FLEXCAN_FDInit(CAN_Type *base, const flexcan_config_t *config, uint32_t sourceClock_Hz, flexcan_mb_size_t dataSize, bool brs)
 DECL|FLEXCAN_GetDefaultConfig|function|void FLEXCAN_GetDefaultConfig(flexcan_config_t *config)
+DECL|FLEXCAN_GetFDMailboxOffset|function|static uint32_t FLEXCAN_GetFDMailboxOffset(CAN_Type *base, uint8_t mbIdx)
 DECL|FLEXCAN_GetFirstValidMb|function|static uint32_t FLEXCAN_GetFirstValidMb(CAN_Type *base)
 DECL|FLEXCAN_GetInstance|function|uint32_t FLEXCAN_GetInstance(CAN_Type *base)
 DECL|FLEXCAN_Init|function|void FLEXCAN_Init(CAN_Type *base, const flexcan_config_t *config, uint32_t sourceClock_Hz)
@@ -21,8 +25,8 @@ DECL|FLEXCAN_ReadFDRxMb|function|status_t FLEXCAN_ReadFDRxMb(CAN_Type *base, uin
 DECL|FLEXCAN_ReadRxFifo|function|status_t FLEXCAN_ReadRxFifo(CAN_Type *base, flexcan_frame_t *rxFrame)
 DECL|FLEXCAN_ReadRxMb|function|status_t FLEXCAN_ReadRxMb(CAN_Type *base, uint8_t mbIdx, flexcan_frame_t *rxFrame)
 DECL|FLEXCAN_Reset|function|static void FLEXCAN_Reset(CAN_Type *base)
-DECL|FLEXCAN_SetBaudRate|function|static void FLEXCAN_SetBaudRate(CAN_Type *base, uint32_t sourceClock_Hz, uint32_t baudRate_Bps)
-DECL|FLEXCAN_SetFDBaudRate|function|static void FLEXCAN_SetFDBaudRate(CAN_Type *base, uint32_t sourceClock_Hz, uint32_t baudRateFD_Bps)
+DECL|FLEXCAN_SetBaudRate|function|static void FLEXCAN_SetBaudRate(CAN_Type *base, uint32_t sourceClock_Hz, uint32_t baudRate_Bps, flexcan_timing_config_t timingConfig)
+DECL|FLEXCAN_SetFDBaudRate|function|static void FLEXCAN_SetFDBaudRate(CAN_Type *base, uint32_t sourceClock_Hz, uint32_t baudRateFD_Bps, flexcan_timing_config_t timingConfig)
 DECL|FLEXCAN_SetFDRxMbConfig|function|void FLEXCAN_SetFDRxMbConfig(CAN_Type *base, uint8_t mbIdx, const flexcan_rx_mb_config_t *config, bool enable)
 DECL|FLEXCAN_SetFDTimingConfig|function|void FLEXCAN_SetFDTimingConfig(CAN_Type *base, const flexcan_timing_config_t *config)
 DECL|FLEXCAN_SetFDTxMbConfig|function|void FLEXCAN_SetFDTxMbConfig(CAN_Type *base, uint8_t mbIdx, bool enable)
@@ -33,7 +37,6 @@ DECL|FLEXCAN_SetRxMbConfig|function|void FLEXCAN_SetRxMbConfig(CAN_Type *base, u
 DECL|FLEXCAN_SetRxMbGlobalMask|function|void FLEXCAN_SetRxMbGlobalMask(CAN_Type *base, uint32_t mask)
 DECL|FLEXCAN_SetTimingConfig|function|void FLEXCAN_SetTimingConfig(CAN_Type *base, const flexcan_timing_config_t *config)
 DECL|FLEXCAN_SetTxMbConfig|function|void FLEXCAN_SetTxMbConfig(CAN_Type *base, uint8_t mbIdx, bool enable)
-DECL|FLEXCAN_TIME_QUANTA_NUM|macro|FLEXCAN_TIME_QUANTA_NUM
 DECL|FLEXCAN_TransferAbortReceiveFifo|function|void FLEXCAN_TransferAbortReceiveFifo(CAN_Type *base, flexcan_handle_t *handle)
 DECL|FLEXCAN_TransferAbortReceive|function|void FLEXCAN_TransferAbortReceive(CAN_Type *base, flexcan_handle_t *handle, uint8_t mbIdx)
 DECL|FLEXCAN_TransferAbortSend|function|void FLEXCAN_TransferAbortSend(CAN_Type *base, flexcan_handle_t *handle, uint8_t mbIdx)
@@ -53,6 +56,7 @@ DECL|FLEXCAN_TransferSendBlocking|function|status_t FLEXCAN_TransferSendBlocking
 DECL|FLEXCAN_TransferSendNonBlocking|function|status_t FLEXCAN_TransferSendNonBlocking(CAN_Type *base, flexcan_handle_t *handle, flexcan_mb_transfer_t *xfer)
 DECL|FLEXCAN_WriteFDTxMb|function|status_t FLEXCAN_WriteFDTxMb(CAN_Type *base, uint8_t mbIdx, const flexcan_fd_frame_t *txFrame)
 DECL|FLEXCAN_WriteTxMb|function|status_t FLEXCAN_WriteTxMb(CAN_Type *base, uint8_t mbIdx, const flexcan_frame_t *txFrame)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexcan_mb_code_rx|enum|enum _flexcan_mb_code_rx
 DECL|_flexcan_mb_code_tx|enum|enum _flexcan_mb_code_tx
 DECL|_flexcan_state|enum|enum _flexcan_state

@@ -1,3 +1,4 @@
+DECL|FSL_LPI2C_EDMA_DRIVER_VERSION|macro|FSL_LPI2C_EDMA_DRIVER_VERSION
 DECL|_FSL_LPI2C_EDMA_H_|macro|_FSL_LPI2C_EDMA_H_
 DECL|_lpi2c_master_edma_handle|struct|struct _lpi2c_master_edma_handle
 DECL|base|member|LPI2C_Type *base; /*!< LPI2C base pointer. */

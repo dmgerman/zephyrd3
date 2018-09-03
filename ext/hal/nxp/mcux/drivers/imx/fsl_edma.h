@@ -3,7 +3,7 @@ DECL|BITER|member|__IO uint16_t BITER; /*!< BITER register, begin minor loop cou
 DECL|CITER|member|__IO uint16_t CITER; /*!< CITER register, current minor loop numbers, for unfinished minor loop.*/
 DECL|CSR|member|__IO uint16_t CSR; /*!< CSR register, for TCD control status */
 DECL|DADDR|member|__IO uint32_t DADDR; /*!< DADDR register, used for destination address */
-DECL|DLAST_SGA|member|__IO uint32_t DLAST_SGA; /*!< DLASTSGA register, next stcd address used in scatter-gather mode */
+DECL|DLAST_SGA|member|__IO uint32_t DLAST_SGA; /*!< DLASTSGA register, next tcd address used in scatter-gather mode */
 DECL|DMA_DCHPRI_INDEX|macro|DMA_DCHPRI_INDEX
 DECL|DMA_DCHPRIn|macro|DMA_DCHPRIn
 DECL|DOFF|member|__IO uint16_t DOFF; /*!< DOFF register, used for destination offset */
@@ -133,6 +133,7 @@ DECL|kEDMA_TransferSize1Bytes|enumerator|kEDMA_TransferSize1Bytes = 0x0U, /*!< S
 DECL|kEDMA_TransferSize2Bytes|enumerator|kEDMA_TransferSize2Bytes = 0x1U, /*!< Source/Destination data transfer size is 2 bytes every time */
 DECL|kEDMA_TransferSize32Bytes|enumerator|kEDMA_TransferSize32Bytes = 0x5U, /*!< Source/Destination data transfer size is 32 bytes every time */
 DECL|kEDMA_TransferSize4Bytes|enumerator|kEDMA_TransferSize4Bytes = 0x2U, /*!< Source/Destination data transfer size is 4 bytes every time */
+DECL|kEDMA_TransferSize8Bytes|enumerator|kEDMA_TransferSize8Bytes = 0x3U, /*!< Source/Destination data transfer size is 8 bytes every time */
 DECL|kEDMA_ValidFlag|enumerator|kEDMA_ValidFlag = DMA_ES_VLD_MASK, /*!< No error occurred, this bit is 0. Otherwise, it is 1. */
 DECL|kStatus_EDMA_Busy|enumerator|kStatus_EDMA_Busy = MAKE_STATUS(kStatusGroup_EDMA, 1), /*!< Channel is busy and can't handle the
 DECL|kStatus_EDMA_QueueFull|enumerator|kStatus_EDMA_QueueFull = MAKE_STATUS(kStatusGroup_EDMA, 0), /*!< TCD queue is full. */

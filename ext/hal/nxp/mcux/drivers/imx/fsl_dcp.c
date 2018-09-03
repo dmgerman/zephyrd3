@@ -16,6 +16,7 @@ DECL|DCP_HASH_Update|function|status_t DCP_HASH_Update(DCP_Type *base, dcp_hash_
 DECL|DCP_HASH|function|status_t DCP_HASH(DCP_Type *base, dcp_handle_t *handle, dcp_hash_algo_t algo, const uint8_t *input, size_t inputSize,
 DECL|DCP_Init|function|void DCP_Init(DCP_Type *base, const dcp_config_t *config)
 DECL|DCP_WaitForChannelComplete|function|status_t DCP_WaitForChannelComplete(DCP_Type *base, dcp_handle_t *handle)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_dcp_hash_algo_state|enum|typedef enum _dcp_hash_algo_state
 DECL|_dcp_hash_block|union|typedef union _dcp_hash_block
 DECL|_dcp_hash_ctx_internal|struct|typedef struct _dcp_hash_ctx_internal

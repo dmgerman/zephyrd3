@@ -1,6 +1,7 @@
 DECL|FLEXIO_SPI_SlaveTransferAbortEDMA|function|static inline void FLEXIO_SPI_SlaveTransferAbortEDMA(FLEXIO_SPI_Type *base, flexio_spi_slave_edma_handle_t *handle)
 DECL|FLEXIO_SPI_SlaveTransferCreateHandleEDMA|function|static inline void FLEXIO_SPI_SlaveTransferCreateHandleEDMA(FLEXIO_SPI_Type *base, flexio_spi_slave_edma_handle_t *handle, flexio_spi_slave_edma_transfer_callback_t callback, void *userData, edma_handle_t *txHandle,
 DECL|FLEXIO_SPI_SlaveTransferGetCountEDMA|function|static inline status_t FLEXIO_SPI_SlaveTransferGetCountEDMA(FLEXIO_SPI_Type *base, flexio_spi_slave_edma_handle_t *handle, size_t *count)
+DECL|FSL_FLEXIO_SPI_EDMA_DRIVER_VERSION|macro|FSL_FLEXIO_SPI_EDMA_DRIVER_VERSION
 DECL|_FSL_FLEXIO_SPI_EDMA_H_|macro|_FSL_FLEXIO_SPI_EDMA_H_
 DECL|_flexio_spi_master_edma_handle|struct|struct _flexio_spi_master_edma_handle
 DECL|callback|member|flexio_spi_master_edma_transfer_callback_t callback; /*!< Callback for SPI DMA transfer */

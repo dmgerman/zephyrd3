@@ -1,12 +1,13 @@
+DECL|FSL_LPSPI_EDMA_DRIVER_VERSION|macro|FSL_LPSPI_EDMA_DRIVER_VERSION
 DECL|_FSL_LPSPI_EDMA_H_|macro|_FSL_LPSPI_EDMA_H_
 DECL|_lpspi_master_edma_handle|struct|struct _lpspi_master_edma_handle
 DECL|_lpspi_slave_edma_handle|struct|struct _lpspi_slave_edma_handle
-DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR . */
-DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR . */
-DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR . */
-DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR . */
-DECL|bytesLastRead|member|volatile uint8_t bytesLastRead; /*!< Bytes for last read RDR . */
-DECL|bytesLastRead|member|volatile uint8_t bytesLastRead; /*!< Bytes for last read RDR . */
+DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR. */
+DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR. */
+DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR. */
+DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR. */
+DECL|bytesLastRead|member|volatile uint8_t bytesLastRead; /*!< Bytes for last read RDR. */
+DECL|bytesLastRead|member|volatile uint8_t bytesLastRead; /*!< Bytes for last read RDR. */
 DECL|callback|member|lpspi_master_edma_transfer_callback_t callback; /*!< Completion callback. */
 DECL|callback|member|lpspi_slave_edma_transfer_callback_t callback; /*!< Completion callback. */
 DECL|edmaRxRegToRxDataHandle|member|edma_handle_t *edmaRxRegToRxDataHandle; /*!<edma_handle_t handle point used for RxReg to RxData buff*/
@@ -21,15 +22,15 @@ DECL|isByteSwap|member|volatile bool isByteSwap; /*!< A flag that whether should
 DECL|isPcsContinuous|member|volatile bool isPcsContinuous; /*!< Is PCS continuous in transfer. */
 DECL|isThereExtraRxBytes|member|volatile uint8_t isThereExtraRxBytes; /*!< Is there extra RX byte. */
 DECL|isThereExtraRxBytes|member|volatile uint8_t isThereExtraRxBytes; /*!< Is there extra RX byte. */
-DECL|lpspiSoftwareTCD|member|edma_tcd_t lpspiSoftwareTCD[2]; /*!<SoftwareTCD , internal used*/
-DECL|lpspiSoftwareTCD|member|edma_tcd_t lpspiSoftwareTCD[3]; /*!<SoftwareTCD , internal used*/
+DECL|lpspiSoftwareTCD|member|edma_tcd_t lpspiSoftwareTCD[2]; /*!<SoftwareTCD, internal used*/
+DECL|lpspiSoftwareTCD|member|edma_tcd_t lpspiSoftwareTCD[3]; /*!<SoftwareTCD, internal used*/
 DECL|lpspi_master_edma_handle_t|typedef|typedef struct _lpspi_master_edma_handle lpspi_master_edma_handle_t;
 DECL|lpspi_master_edma_transfer_callback_t|typedef|typedef void (*lpspi_master_edma_transfer_callback_t)(LPSPI_Type *base,
 DECL|lpspi_slave_edma_handle_t|typedef|typedef struct _lpspi_slave_edma_handle lpspi_slave_edma_handle_t;
 DECL|lpspi_slave_edma_transfer_callback_t|typedef|typedef void (*lpspi_slave_edma_transfer_callback_t)(LPSPI_Type *base,
 DECL|nbytes|member|uint8_t nbytes; /*!< eDMA minor byte transfer count initially configured. */
 DECL|nbytes|member|uint8_t nbytes; /*!< eDMA minor byte transfer count initially configured. */
-DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times . */
+DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times. */
 DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times. */
 DECL|rxBuffIfNull|member|uint32_t rxBuffIfNull; /*!< Used if there is not rxData for DMA purpose.*/
 DECL|rxBuffIfNull|member|uint32_t rxBuffIfNull; /*!< Used if there is not rxData for DMA purpose.*/
@@ -52,5 +53,5 @@ DECL|txRemainingByteCount|member|volatile size_t txRemainingByteCount; /*!< Numb
 DECL|txRemainingByteCount|member|volatile size_t txRemainingByteCount; /*!< Number of bytes remaining to send.*/
 DECL|userData|member|void *userData; /*!< Callback user data. */
 DECL|userData|member|void *userData; /*!< Callback user data. */
-DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times . */
+DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times. */
 DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times. */

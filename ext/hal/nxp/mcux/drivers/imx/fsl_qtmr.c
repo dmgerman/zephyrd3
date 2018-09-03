@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|QTMR_ClearStatusFlags|function|void QTMR_ClearStatusFlags(TMR_Type *base, qtmr_channel_selection_t channel, uint32_t mask)
 DECL|QTMR_Deinit|function|void QTMR_Deinit(TMR_Type *base, qtmr_channel_selection_t channel)
 DECL|QTMR_DisableDma|function|void QTMR_DisableDma(TMR_Type *base, qtmr_channel_selection_t channel, uint32_t mask)

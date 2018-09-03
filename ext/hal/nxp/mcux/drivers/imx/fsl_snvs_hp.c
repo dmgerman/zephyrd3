@@ -1,4 +1,5 @@
 DECL|DAYS_IN_A_YEAR|macro|DAYS_IN_A_YEAR
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|SECONDS_IN_A_DAY|macro|SECONDS_IN_A_DAY
 DECL|SECONDS_IN_A_HOUR|macro|SECONDS_IN_A_HOUR
 DECL|SECONDS_IN_A_MINUTE|macro|SECONDS_IN_A_MINUTE
@@ -8,11 +9,10 @@ DECL|SNVS_HPSR_PI_MASK|macro|SNVS_HPSR_PI_MASK
 DECL|SNVS_HP_CheckDatetimeFormat|function|static bool SNVS_HP_CheckDatetimeFormat(const snvs_hp_rtc_datetime_t *datetime)
 DECL|SNVS_HP_ConvertDatetimeToSeconds|function|static uint32_t SNVS_HP_ConvertDatetimeToSeconds(const snvs_hp_rtc_datetime_t *datetime)
 DECL|SNVS_HP_ConvertSecondsToDatetime|function|static void SNVS_HP_ConvertSecondsToDatetime(uint32_t seconds, snvs_hp_rtc_datetime_t *datetime)
+DECL|SNVS_HP_Deinit|function|void SNVS_HP_Deinit(SNVS_Type *base)
 DECL|SNVS_HP_GetInstance|function|static uint32_t SNVS_HP_GetInstance(SNVS_Type *base)
-DECL|SNVS_HP_RTC_ClearStatusFlags|function|void SNVS_HP_RTC_ClearStatusFlags(SNVS_Type *base, uint32_t mask)
+DECL|SNVS_HP_Init|function|void SNVS_HP_Init(SNVS_Type *base)
 DECL|SNVS_HP_RTC_Deinit|function|void SNVS_HP_RTC_Deinit(SNVS_Type *base)
-DECL|SNVS_HP_RTC_DisableInterrupts|function|void SNVS_HP_RTC_DisableInterrupts(SNVS_Type *base, uint32_t mask)
-DECL|SNVS_HP_RTC_EnableInterrupts|function|void SNVS_HP_RTC_EnableInterrupts(SNVS_Type *base, uint32_t mask)
 DECL|SNVS_HP_RTC_GetAlarm|function|void SNVS_HP_RTC_GetAlarm(SNVS_Type *base, snvs_hp_rtc_datetime_t *datetime)
 DECL|SNVS_HP_RTC_GetDatetime|function|void SNVS_HP_RTC_GetDatetime(SNVS_Type *base, snvs_hp_rtc_datetime_t *datetime)
 DECL|SNVS_HP_RTC_GetDefaultConfig|function|void SNVS_HP_RTC_GetDefaultConfig(snvs_hp_rtc_config_t *config)

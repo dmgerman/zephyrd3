@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|PWM_ClearStatusFlags|function|void PWM_ClearStatusFlags(PWM_Type *base, pwm_submodule_t subModule, uint32_t mask)
 DECL|PWM_Deinit|function|void PWM_Deinit(PWM_Type *base, pwm_submodule_t subModule)
 DECL|PWM_DisableInterrupts|function|void PWM_DisableInterrupts(PWM_Type *base, pwm_submodule_t subModule, uint32_t mask)

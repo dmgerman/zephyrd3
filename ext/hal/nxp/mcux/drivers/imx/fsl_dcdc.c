@@ -15,5 +15,6 @@ DECL|DCDC_SetInternalRegulatorConfig|function|void DCDC_SetInternalRegulatorConf
 DECL|DCDC_SetLoopControlConfig|function|void DCDC_SetLoopControlConfig(DCDC_Type *base, const dcdc_loop_control_config_t *config)
 DECL|DCDC_SetLowPowerConfig|function|void DCDC_SetLowPowerConfig(DCDC_Type *base, const dcdc_low_power_config_t *config)
 DECL|DCDC_SetMinPowerConfig|function|void DCDC_SetMinPowerConfig(DCDC_Type *base, const dcdc_min_power_config_t *config)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|s_dcdcBases|variable|s_dcdcBases
 DECL|s_dcdcClocks|variable|s_dcdcClocks

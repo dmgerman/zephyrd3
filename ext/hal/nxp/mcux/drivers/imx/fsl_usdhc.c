@@ -1,14 +1,17 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|USDHC0_DriverIRQHandler|function|void USDHC0_DriverIRQHandler(void)
 DECL|USDHC1_DriverIRQHandler|function|void USDHC1_DriverIRQHandler(void)
 DECL|USDHC2_DriverIRQHandler|function|void USDHC2_DriverIRQHandler(void)
 DECL|USDHC_AdjustDelayForManualTuning|function|status_t USDHC_AdjustDelayForManualTuning(USDHC_Type *base, uint32_t delay)
 DECL|USDHC_Deinit|function|void USDHC_Deinit(USDHC_Type *base)
 DECL|USDHC_EnableAutoTuningForCmdAndData|function|void USDHC_EnableAutoTuningForCmdAndData(USDHC_Type *base)
+DECL|USDHC_EnableDDRMode|function|void USDHC_EnableDDRMode(USDHC_Type *base, bool enable, uint32_t nibblePos)
 DECL|USDHC_EnableManualTuning|function|void USDHC_EnableManualTuning(USDHC_Type *base, bool enable)
 DECL|USDHC_EnableStandardTuning|function|void USDHC_EnableStandardTuning(USDHC_Type *base, uint32_t tuningStartTap, uint32_t step, bool enable)
 DECL|USDHC_GetCapability|function|void USDHC_GetCapability(USDHC_Type *base, usdhc_capability_t *capability)
 DECL|USDHC_GetInstance|function|static uint32_t USDHC_GetInstance(USDHC_Type *base)
 DECL|USDHC_Init|function|void USDHC_Init(USDHC_Type *base, const usdhc_config_t *config)
+DECL|USDHC_MAX_CLKFS|macro|USDHC_MAX_CLKFS
 DECL|USDHC_MAX_DVS|macro|USDHC_MAX_DVS
 DECL|USDHC_PREV_CLKFS|macro|USDHC_PREV_CLKFS
 DECL|USDHC_PREV_DVS|macro|USDHC_PREV_DVS

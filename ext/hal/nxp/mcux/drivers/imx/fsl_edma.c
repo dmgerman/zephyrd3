@@ -123,6 +123,7 @@ DECL|EDMA_TcdSetChannelLink|function|void EDMA_TcdSetChannelLink(edma_tcd_t *tcd
 DECL|EDMA_TcdSetMinorOffsetConfig|function|void EDMA_TcdSetMinorOffsetConfig(edma_tcd_t *tcd, const edma_minor_offset_config_t *config)
 DECL|EDMA_TcdSetModulo|function|void EDMA_TcdSetModulo(edma_tcd_t *tcd, edma_modulo_t srcModulo, edma_modulo_t destModulo)
 DECL|EDMA_TcdSetTransferConfig|function|void EDMA_TcdSetTransferConfig(edma_tcd_t *tcd, const edma_transfer_config_t *config, edma_tcd_t *nextTcd)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|Get_StartInstance|function|static uint8_t Get_StartInstance(void)
 DECL|s_EDMAHandle|variable|s_EDMAHandle
 DECL|s_edmaBases|variable|s_edmaBases

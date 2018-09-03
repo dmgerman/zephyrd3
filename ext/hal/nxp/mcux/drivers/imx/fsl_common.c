@@ -1,5 +1,6 @@
 DECL|DisableDeepSleepIRQ|function|void DisableDeepSleepIRQ(IRQn_Type interrupt)
 DECL|EnableDeepSleepIRQ|function|void EnableDeepSleepIRQ(IRQn_Type interrupt)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|InstallIRQHandler|function|uint32_t InstallIRQHandler(IRQn_Type irq, uint32_t irqHandler)
 DECL|SDK_Free|function|void SDK_Free(void *ptr)
 DECL|SDK_MEM_MAGIC_NUMBER|macro|SDK_MEM_MAGIC_NUMBER
@@ -10,4 +11,4 @@ DECL|__VECTOR_TABLE|macro|__VECTOR_TABLE
 DECL|_mem_align_control_block|struct|typedef struct _mem_align_control_block
 DECL|identifier|member|uint16_t identifier; /*!< Identifier for the memory control block. */
 DECL|mem_align_cb_t|typedef|} mem_align_cb_t;
-DECL|offset|member|uint16_t offset; /*!< offset from aligned adress to real address */
+DECL|offset|member|uint16_t offset; /*!< offset from aligned address to real address */

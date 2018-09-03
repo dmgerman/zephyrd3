@@ -1,8 +1,13 @@
-DECL|DMA_UART0_INT_IRQHandler|function|void DMA_UART0_INT_IRQHandler(void)
-DECL|DMA_UART1_INT_IRQHandler|function|void DMA_UART1_INT_IRQHandler(void)
-DECL|DMA_UART2_INT_IRQHandler|function|void DMA_UART2_INT_IRQHandler(void)
-DECL|DMA_UART3_INT_IRQHandler|function|void DMA_UART3_INT_IRQHandler(void)
-DECL|DMA_UART4_INT_IRQHandler|function|void DMA_UART4_INT_IRQHandler(void)
+DECL|ADMA_UART0_INT_DriverIRQHandler|function|void ADMA_UART0_INT_DriverIRQHandler(void)
+DECL|ADMA_UART1_INT_DriverIRQHandler|function|void ADMA_UART1_INT_DriverIRQHandler(void)
+DECL|ADMA_UART2_INT_DriverIRQHandler|function|void ADMA_UART2_INT_DriverIRQHandler(void)
+DECL|ADMA_UART3_INT_DriverIRQHandler|function|void ADMA_UART3_INT_DriverIRQHandler(void)
+DECL|DMA_UART0_INT_DriverIRQHandler|function|void DMA_UART0_INT_DriverIRQHandler(void)
+DECL|DMA_UART1_INT_DriverIRQHandler|function|void DMA_UART1_INT_DriverIRQHandler(void)
+DECL|DMA_UART2_INT_DriverIRQHandler|function|void DMA_UART2_INT_DriverIRQHandler(void)
+DECL|DMA_UART3_INT_DriverIRQHandler|function|void DMA_UART3_INT_DriverIRQHandler(void)
+DECL|DMA_UART4_INT_DriverIRQHandler|function|void DMA_UART4_INT_DriverIRQHandler(void)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|LPUART0_DriverIRQHandler|function|void LPUART0_DriverIRQHandler(void)
 DECL|LPUART0_LPUART1_DriverIRQHandler|function|void LPUART0_LPUART1_DriverIRQHandler(void)
 DECL|LPUART0_LPUART1_RX_DriverIRQHandler|function|void LPUART0_LPUART1_RX_DriverIRQHandler(void)
@@ -62,6 +67,7 @@ DECL|LPUART_WriteBlocking|function|void LPUART_WriteBlocking(LPUART_Type *base, 
 DECL|LPUART_WriteNonBlocking|function|static void LPUART_WriteNonBlocking(LPUART_Type *base, const uint8_t *data, size_t length)
 DECL|M4_0_LPUART_DriverIRQHandler|function|void M4_0_LPUART_DriverIRQHandler(void)
 DECL|M4_1_LPUART_DriverIRQHandler|function|void M4_1_LPUART_DriverIRQHandler(void)
+DECL|M4_LPUART_DriverIRQHandler|function|void M4_LPUART_DriverIRQHandler(void)
 DECL|_lpuart_transfer_states|enum|enum _lpuart_transfer_states
 DECL|kLPUART_RxBusy|enumerator|kLPUART_RxBusy /*!< RX busy. */
 DECL|kLPUART_RxIdle|enumerator|kLPUART_RxIdle, /*!< RX idle. */

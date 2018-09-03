@@ -14,17 +14,20 @@ DECL|TSC1triggerPriority|member|uint32_t TSC1triggerPriority; /* External TSC1 t
 DECL|XBARtriggerMask|member|uint32_t XBARtriggerMask; /* Enable the corresponding trigger source. Available range is trigger0:0x01 to
 DECL|_FSL_ADC_ETC_H_|macro|_FSL_ADC_ETC_H_
 DECL|_adc_etc_config|struct|typedef struct _adc_etc_config
+DECL|_adc_etc_dma_mode_selection|enum|typedef enum _adc_etc_dma_mode_selection
 DECL|_adc_etc_external_trigger_source|enum|typedef enum _adc_etc_external_trigger_source
 DECL|_adc_etc_interrupt_enable|enum|typedef enum _adc_etc_interrupt_enable
 DECL|_adc_etc_status_flag_mask|enum|enum _adc_etc_status_flag_mask
 DECL|_adc_etc_trigger_chain_config|struct|typedef struct _adc_etc_trigger_chain_config
 DECL|_adc_etc_trigger_config|struct|typedef struct _adc_etc_trigger_config
 DECL|adc_etc_config_t|typedef|} adc_etc_config_t;
+DECL|adc_etc_dma_mode_selection_t|typedef|} adc_etc_dma_mode_selection_t;
 DECL|adc_etc_external_trigger_source_t|typedef|} adc_etc_external_trigger_source_t;
 DECL|adc_etc_interrupt_enable_t|typedef|} adc_etc_interrupt_enable_t;
 DECL|adc_etc_trigger_chain_config_t|typedef|} adc_etc_trigger_chain_config_t;
 DECL|adc_etc_trigger_config_t|typedef|} adc_etc_trigger_config_t;
 DECL|clockPreDivider|member|uint32_t clockPreDivider; /* Pre-divider for trig delay and interval. Available range is 0-255.
+DECL|dmaMode|member|adc_etc_dma_mode_selection_t dmaMode; /* Select the ADC_ETC DMA mode. */
 DECL|enableB2BMode|member|bool enableB2BMode; /* Enable ADC_ETC BackToBack mode. when not enabled B2B mode,
 DECL|enableSWTriggerMode|member|bool enableSWTriggerMode; /* Enable the sofware trigger mode. */
 DECL|enableSyncMode|member|bool enableSyncMode; /* Enable the sync Mode, In SyncMode ADC1 and ADC2 are controlled by the same trigger source.
@@ -50,6 +53,8 @@ DECL|kADC_ETC_Trg4TriggerSource|enumerator|kADC_ETC_Trg4TriggerSource = 4U, /* E
 DECL|kADC_ETC_Trg5TriggerSource|enumerator|kADC_ETC_Trg5TriggerSource = 5U, /* External XBAR trigger5 source. */
 DECL|kADC_ETC_Trg6TriggerSource|enumerator|kADC_ETC_Trg6TriggerSource = 6U, /* External XBAR trigger6 source. */
 DECL|kADC_ETC_Trg7TriggerSource|enumerator|kADC_ETC_Trg7TriggerSource = 7U, /* External XBAR trigger7 source. */
+DECL|kADC_ETC_TrigDMAWithLatchedSignal|enumerator|kADC_ETC_TrigDMAWithLatchedSignal =
+DECL|kADC_ETC_TrigDMAWithPulsedSignal|enumerator|kADC_ETC_TrigDMAWithPulsedSignal = 1U, /* Trig DMA_REQ with pulsed signal, REQ will be cleared by ACK only. */
 DECL|sampleIntervalDelay|member|uint32_t sampleIntervalDelay; /* Set sampling interval delay. */
 DECL|triggerChainLength|member|uint32_t triggerChainLength; /* TRIG chain length to the ADC. 0: Trig length is 1. ... 7: Trig length is 8. */
 DECL|triggerPriority|member|uint32_t triggerPriority; /* External trigger priority, 7 is highest, 0 is lowest. */

@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|XBARB_Deinit|function|void XBARB_Deinit(XBARB_Type *base)
 DECL|XBARB_GetInstance|function|static uint32_t XBARB_GetInstance(XBARB_Type *base)
 DECL|XBARB_Init|function|void XBARB_Init(XBARB_Type *base)

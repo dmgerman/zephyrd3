@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|WDOG_ClearInterruptStatus|function|void WDOG_ClearInterruptStatus(WDOG_Type *base, uint16_t mask)
 DECL|WDOG_Deinit|function|void WDOG_Deinit(WDOG_Type *base)
 DECL|WDOG_GetDefaultConfig|function|void WDOG_GetDefaultConfig(wdog_config_t *config)

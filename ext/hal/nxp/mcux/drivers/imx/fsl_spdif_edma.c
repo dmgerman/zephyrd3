@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|SPDIF_RxEDMACallback|function|static void SPDIF_RxEDMACallback(edma_handle_t *handle, void *userData, bool done, uint32_t tcds)
 DECL|SPDIF_SubmitTransfer|function|static status_t SPDIF_SubmitTransfer(edma_handle_t *handle, const edma_transfer_config_t *config, uint32_t rightChannel)
 DECL|SPDIF_TransferAbortReceiveEDMA|function|void SPDIF_TransferAbortReceiveEDMA(SPDIF_Type *base, spdif_edma_handle_t *handle)

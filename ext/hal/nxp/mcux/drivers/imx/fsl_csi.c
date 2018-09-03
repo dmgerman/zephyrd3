@@ -22,6 +22,7 @@ DECL|CSI_TransferLoadBufferToDevice|function|static void CSI_TransferLoadBufferT
 DECL|CSI_TransferStart|function|status_t CSI_TransferStart(CSI_Type *base, csi_handle_t *handle)
 DECL|CSI_TransferStop|function|status_t CSI_TransferStop(CSI_Type *base, csi_handle_t *handle)
 DECL|CSI_TransferSubmitEmptyBuffer|function|status_t CSI_TransferSubmitEmptyBuffer(CSI_Type *base, csi_handle_t *handle, uint32_t frameBuffer)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|csi_isr_t|typedef|typedef void (*csi_isr_t)(CSI_Type *base, csi_handle_t *handle);
 DECL|s_csiBases|variable|s_csiBases
 DECL|s_csiClocks|variable|s_csiClocks

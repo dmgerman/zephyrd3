@@ -84,7 +84,7 @@ DECL|_enet_idle_slope|enum|typedef enum _enet_idle_slope
 DECL|_enet_intcoalesce_config|struct|typedef struct _enet_intcoalesce_config
 DECL|_enet_interrupt_enable|enum|typedef enum _enet_interrupt_enable
 DECL|_enet_mii_duplex|enum|typedef enum _enet_mii_duplex
-DECL|_enet_mii_extend_opcode|enum|typedef enum _enet_mii_extend_opcode {
+DECL|_enet_mii_extend_opcode|enum|typedef enum _enet_mii_extend_opcode
 DECL|_enet_mii_mode|enum|typedef enum _enet_mii_mode
 DECL|_enet_mii_read|enum|typedef enum _enet_mii_read
 DECL|_enet_mii_speed|enum|typedef enum _enet_mii_speed
@@ -298,7 +298,7 @@ DECL|rxAccelerConfig|member|uint8_t rxAccelerConfig; /*!< Receive accelerator, A
 DECL|rxBdBase|member|*rxBdBase[FSL_FEATURE_ENET_QUEUE]; /*!< Receive buffer descriptor base address pointer. */
 DECL|rxBdCurrent|member|*rxBdCurrent[FSL_FEATURE_ENET_QUEUE]; /*!< The current available receive buffer descriptor pointer. */
 DECL|rxBdNumber|member|uint16_t rxBdNumber; /*!< Receive buffer descriptor number. */
-DECL|rxBdStartAddrAlign|member|volatile enet_rx_bd_struct_t *rxBdStartAddrAlign; /*!< Aligned receive buffer descriptor start address: should be non-cacheable. */
+DECL|rxBdStartAddrAlign|member|*rxBdStartAddrAlign; /*!< Aligned receive buffer descriptor start address: should be non-cacheable. */
 DECL|rxBuffSizeAlign|member|uint32_t rxBuffSizeAlign; /*!< Aligned receive data buffer size. */
 DECL|rxBuffSizeAlign|member|uint32_t rxBuffSizeAlign[FSL_FEATURE_ENET_QUEUE]; /*!< Receive buffer size alignment. */
 DECL|rxBufferAlign|member|uint8_t *rxBufferAlign; /*!< Receive data buffer start address. */
@@ -341,7 +341,7 @@ DECL|txBdCurrent|member|*txBdCurrent[FSL_FEATURE_ENET_QUEUE]; /*!< The current a
 DECL|txBdDirtyStatic|member|*txBdDirtyStatic[FSL_FEATURE_ENET_QUEUE]; /*!< The dirty transmit buffer descriptor for error static update. */
 DECL|txBdDirtyTime|member|*txBdDirtyTime[FSL_FEATURE_ENET_QUEUE]; /*!< The dirty transmit buffer descriptor for time stamp update. */
 DECL|txBdNumber|member|uint16_t txBdNumber; /*!< Transmit buffer descriptor number. */
-DECL|txBdStartAddrAlign|member|volatile enet_tx_bd_struct_t *txBdStartAddrAlign; /*!< Aligned transmit buffer descriptor start address: should be non-cacheable. */
+DECL|txBdStartAddrAlign|member|*txBdStartAddrAlign; /*!< Aligned transmit buffer descriptor start address: should be non-cacheable. */
 DECL|txBuffSizeAlign|member|uint32_t txBuffSizeAlign; /*!< Aligned transmit data buffer size. */
 DECL|txBuffSizeAlign|member|uint32_t txBuffSizeAlign[FSL_FEATURE_ENET_QUEUE]; /*!< Transmit buffer size alignment. */
 DECL|txBufferAlign|member|uint8_t *txBufferAlign; /*!< Transmit data buffer start address. */

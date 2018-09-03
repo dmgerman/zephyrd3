@@ -1,6 +1,5 @@
 DECL|FLEXCAN_ClearMbStatusFlags|function|static inline void FLEXCAN_ClearMbStatusFlags(CAN_Type *base, uint64_t mask)
 DECL|FLEXCAN_ClearStatusFlags|function|static inline void FLEXCAN_ClearStatusFlags(CAN_Type *base, uint32_t mask)
-DECL|FLEXCAN_DRIVER_VERSION|macro|FLEXCAN_DRIVER_VERSION
 DECL|FLEXCAN_DisableInterrupts|function|static inline void FLEXCAN_DisableInterrupts(CAN_Type *base, uint32_t mask)
 DECL|FLEXCAN_DisableMbInterrupts|function|static inline void FLEXCAN_DisableMbInterrupts(CAN_Type *base, uint64_t mask)
 DECL|FLEXCAN_EnableInterrupts|function|static inline void FLEXCAN_EnableInterrupts(CAN_Type *base, uint32_t mask)
@@ -42,6 +41,7 @@ DECL|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_HIGH|macro|FLEXCAN_RX_FIFO_STD_MASK_TYP
 DECL|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_LOW|macro|FLEXCAN_RX_FIFO_STD_MASK_TYPE_C_MID_LOW
 DECL|FLEXCAN_RX_MB_EXT_MASK|macro|FLEXCAN_RX_MB_EXT_MASK
 DECL|FLEXCAN_RX_MB_STD_MASK|macro|FLEXCAN_RX_MB_STD_MASK
+DECL|FSL_FLEXCAN_DRIVER_VERSION|macro|FSL_FLEXCAN_DRIVER_VERSION
 DECL|_FSL_FLEXCAN_H_|macro|_FSL_FLEXCAN_H_
 DECL|_flexcan_clock_source|enum|typedef enum _flexcan_clock_source
 DECL|_flexcan_config|struct|typedef struct _flexcan_config
@@ -93,6 +93,7 @@ DECL|enableDoze|member|bool enableDoze; /*!< Enable or Disable Doze Mode. */
 DECL|enableIndividMask|member|bool enableIndividMask; /*!< Enable or Disable Rx Individual Mask. */
 DECL|enableLoopBack|member|bool enableLoopBack; /*!< Enable or Disable Loop Back Self Test Mode. */
 DECL|enableSelfWakeup|member|bool enableSelfWakeup; /*!< Enable or Disable Self Wakeup Mode. */
+DECL|enableTimerSync|member|bool enableTimerSync; /*!< Enable or Disable Timer Synchronization. */
 DECL|esi|member|uint32_t esi : 1; /*!< Error State Indicator. */
 DECL|flexcan_clock_source_t|typedef|} flexcan_clock_source_t;
 DECL|flexcan_config_t|typedef|} flexcan_config_t;
@@ -113,6 +114,11 @@ DECL|flexcan_transfer_callback_t|typedef|typedef void (*flexcan_transfer_callbac
 DECL|format|member|flexcan_frame_format_t format; /*!< CAN Frame Identifier format(Standard of Extend). */
 DECL|format|member|uint32_t format : 1; /*!< CAN Frame Identifier(STD or EXT format). */
 DECL|format|member|uint32_t format : 1; /*!< CAN Frame Identifier(STD or EXT format). */
+DECL|fphaseSeg1|member|uint8_t fphaseSeg1; /*!< Fast Phase Segment 1. */
+DECL|fphaseSeg2|member|uint8_t fphaseSeg2; /*!< Fast Phase Segment 2. */
+DECL|fpreDivider|member|uint16_t fpreDivider; /*!< Fast Clock Pre-scaler Division Factor. */
+DECL|fpropSeg|member|uint8_t fpropSeg; /*!< Fast Propagation Segment. */
+DECL|frJumpwidth|member|uint8_t frJumpwidth; /*!< Fast Re-sync Jump Width. */
 DECL|framefd|member|flexcan_fd_frame_t *framefd;
 DECL|frame|member|flexcan_frame_t *frame; /*!< The buffer of CAN Message to be received from Rx FIFO. */
 DECL|frame|member|flexcan_frame_t *frame; /*!< The buffer of CAN Message to be transfer. */
@@ -204,6 +210,7 @@ DECL|rxFifoState|member|volatile uint8_t rxFifoState; /*!< Rx FIFO transfer stat
 DECL|srr|member|uint32_t srr : 1; /*!< Substitute Remote request. */
 DECL|timestamp|member|uint32_t timestamp : 16; /*!< FlexCAN internal Free-Running Counter Time Stamp. */
 DECL|timestamp|member|uint32_t timestamp : 16; /*!< FlexCAN internal Free-Running Counter Time Stamp. */
+DECL|timingConfig|member|flexcan_timing_config_t timingConfig; /* Protocol timing . */
 DECL|type|member|flexcan_frame_type_t type; /*!< CAN Frame Type(Data or Remote). */
 DECL|type|member|uint32_t type : 1; /*!< CAN Frame Type(DATA or REMOTE). */
 DECL|type|member|uint32_t type : 1; /*!< CAN Frame Type(DATA or REMOTE). */

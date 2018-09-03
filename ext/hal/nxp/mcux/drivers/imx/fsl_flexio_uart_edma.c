@@ -8,6 +8,7 @@ DECL|FLEXIO_UART_TransferReceiveEDMACallback|function|static void FLEXIO_UART_Tr
 DECL|FLEXIO_UART_TransferReceiveEDMA|function|status_t FLEXIO_UART_TransferReceiveEDMA(FLEXIO_UART_Type *base, flexio_uart_edma_handle_t *handle, flexio_uart_transfer_t *xfer)
 DECL|FLEXIO_UART_TransferSendEDMACallback|function|static void FLEXIO_UART_TransferSendEDMACallback(edma_handle_t *handle, void *param, bool transferDone, uint32_t tcds)
 DECL|FLEXIO_UART_TransferSendEDMA|function|status_t FLEXIO_UART_TransferSendEDMA(FLEXIO_UART_Type *base, flexio_uart_edma_handle_t *handle, flexio_uart_transfer_t *xfer)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexio_uart_edma_private_handle|struct|typedef struct _flexio_uart_edma_private_handle
 DECL|_flexio_uart_edma_tansfer_states|enum|enum _flexio_uart_edma_tansfer_states
 DECL|base|member|FLEXIO_UART_Type *base;

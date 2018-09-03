@@ -2,7 +2,7 @@ DECL|FLEXIO_SPI_ClearStatusFlags|function|void FLEXIO_SPI_ClearStatusFlags(FLEXI
 DECL|FLEXIO_SPI_DisableInterrupts|function|void FLEXIO_SPI_DisableInterrupts(FLEXIO_SPI_Type *base, uint32_t mask)
 DECL|FLEXIO_SPI_EnableDMA|function|void FLEXIO_SPI_EnableDMA(FLEXIO_SPI_Type *base, uint32_t mask, bool enable)
 DECL|FLEXIO_SPI_EnableInterrupts|function|void FLEXIO_SPI_EnableInterrupts(FLEXIO_SPI_Type *base, uint32_t mask)
-DECL|FLEXIO_SPI_GetInstance|function|uint32_t FLEXIO_SPI_GetInstance(FLEXIO_SPI_Type *base)
+DECL|FLEXIO_SPI_GetInstance|function|static uint32_t FLEXIO_SPI_GetInstance(FLEXIO_SPI_Type *base)
 DECL|FLEXIO_SPI_GetStatusFlags|function|uint32_t FLEXIO_SPI_GetStatusFlags(FLEXIO_SPI_Type *base)
 DECL|FLEXIO_SPI_MasterDeinit|function|void FLEXIO_SPI_MasterDeinit(FLEXIO_SPI_Type *base)
 DECL|FLEXIO_SPI_MasterGetDefaultConfig|function|void FLEXIO_SPI_MasterGetDefaultConfig(flexio_spi_master_config_t *masterConfig)
@@ -24,6 +24,7 @@ DECL|FLEXIO_SPI_SlaveTransferNonBlocking|function|status_t FLEXIO_SPI_SlaveTrans
 DECL|FLEXIO_SPI_TransferReceiveTransaction|function|static void FLEXIO_SPI_TransferReceiveTransaction(FLEXIO_SPI_Type *base, flexio_spi_master_handle_t *handle)
 DECL|FLEXIO_SPI_TransferSendTransaction|function|static void FLEXIO_SPI_TransferSendTransaction(FLEXIO_SPI_Type *base, flexio_spi_master_handle_t *handle)
 DECL|FLEXIO_SPI_WriteBlocking|function|void FLEXIO_SPI_WriteBlocking(FLEXIO_SPI_Type *base, flexio_spi_shift_direction_t direction, const uint8_t *buffer, size_t size)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexio_spi_transfer_states|enum|enum _flexio_spi_transfer_states
 DECL|kFLEXIO_SPI_Busy|enumerator|kFLEXIO_SPI_Busy, /*!< Transmiter/Receive's queue is not finished. */
 DECL|kFLEXIO_SPI_Idle|enumerator|kFLEXIO_SPI_Idle = 0x0U, /*!< Nothing in the transmitter/receiver's queue. */

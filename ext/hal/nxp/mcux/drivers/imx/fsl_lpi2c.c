@@ -1,12 +1,19 @@
+DECL|ADMA_I2C0_INT_DriverIRQHandler|function|void ADMA_I2C0_INT_DriverIRQHandler(void)
+DECL|ADMA_I2C1_INT_DriverIRQHandler|function|void ADMA_I2C1_INT_DriverIRQHandler(void)
+DECL|ADMA_I2C2_INT_DriverIRQHandler|function|void ADMA_I2C2_INT_DriverIRQHandler(void)
+DECL|ADMA_I2C3_INT_DriverIRQHandler|function|void ADMA_I2C3_INT_DriverIRQHandler(void)
+DECL|ADMA_I2C4_INT_DriverIRQHandler|function|void ADMA_I2C4_INT_DriverIRQHandler(void)
 DECL|DMA_I2C0_INT_DriverIRQHandler|function|void DMA_I2C0_INT_DriverIRQHandler(void)
 DECL|DMA_I2C1_INT_DriverIRQHandler|function|void DMA_I2C1_INT_DriverIRQHandler(void)
 DECL|DMA_I2C2_INT_DriverIRQHandler|function|void DMA_I2C2_INT_DriverIRQHandler(void)
 DECL|DMA_I2C3_INT_DriverIRQHandler|function|void DMA_I2C3_INT_DriverIRQHandler(void)
 DECL|DMA_I2C4_INT_DriverIRQHandler|function|void DMA_I2C4_INT_DriverIRQHandler(void)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|LPI2C0_DriverIRQHandler|function|void LPI2C0_DriverIRQHandler(void)
 DECL|LPI2C1_DriverIRQHandler|function|void LPI2C1_DriverIRQHandler(void)
 DECL|LPI2C2_DriverIRQHandler|function|void LPI2C2_DriverIRQHandler(void)
 DECL|LPI2C3_DriverIRQHandler|function|void LPI2C3_DriverIRQHandler(void)
+DECL|LPI2C4_DriverIRQHandler|function|void LPI2C4_DriverIRQHandler(void)
 DECL|LPI2C_CheckForBusyBus|function|status_t LPI2C_CheckForBusyBus(LPI2C_Type *base)
 DECL|LPI2C_CommonIRQHandler|function|static void LPI2C_CommonIRQHandler(LPI2C_Type *base, uint32_t instance)
 DECL|LPI2C_GetCyclesForWidth|function|static uint32_t LPI2C_GetCyclesForWidth(uint32_t sourceClock_Hz, uint32_t width_ns, uint32_t maxCycles, uint32_t prescaler)
@@ -43,6 +50,7 @@ DECL|LPI2C_SlaveTransferHandleIRQ|function|void LPI2C_SlaveTransferHandleIRQ(LPI
 DECL|LPI2C_SlaveTransferNonBlocking|function|status_t LPI2C_SlaveTransferNonBlocking(LPI2C_Type *base, lpi2c_slave_handle_t *handle, uint32_t eventMask)
 DECL|M4_0_LPI2C_DriverIRQHandler|function|void M4_0_LPI2C_DriverIRQHandler(void)
 DECL|M4_1_LPI2C_DriverIRQHandler|function|void M4_1_LPI2C_DriverIRQHandler(void)
+DECL|M4_LPI2C_DriverIRQHandler|function|void M4_LPI2C_DriverIRQHandler(void)
 DECL|_lpi2c_default_watermarks|enum|enum _lpi2c_default_watermarks
 DECL|_lpi2c_flag_constants|enum|enum _lpi2c_flag_constants
 DECL|_lpi2c_master_fifo_cmd|enum|enum _lpi2c_master_fifo_cmd

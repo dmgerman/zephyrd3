@@ -17,6 +17,7 @@ DECL|_dcp_hash_algo_t|enum|typedef enum _dcp_hash_algo_t
 DECL|_dcp_hash_ctx_t|struct|typedef struct _dcp_hash_ctx_t
 DECL|_dcp_key_slot|enum|typedef enum _dcp_key_slot
 DECL|_dcp_status|enum|enum _dcp_status
+DECL|_dcp_swap|enum|typedef enum _dcp_swap
 DECL|_dcp_work_packet|struct|typedef struct _dcp_work_packet
 DECL|bufferSize|member|uint32_t bufferSize;
 DECL|channel|member|dcp_channel_t channel; /*!< Specify DCP channel. */
@@ -29,6 +30,7 @@ DECL|dcp_handle_t|typedef|} dcp_handle_t;
 DECL|dcp_hash_algo_t|typedef|} dcp_hash_algo_t;
 DECL|dcp_hash_ctx_t|typedef|} dcp_hash_ctx_t;
 DECL|dcp_key_slot_t|typedef|} dcp_key_slot_t;
+DECL|dcp_swap_t|typedef|} dcp_swap_t;
 DECL|dcp_work_packet_t|typedef|} dcp_work_packet_t;
 DECL|destinationBufferAddress|member|uint32_t destinationBufferAddress;
 DECL|enableChannelInterrupt|member|uint8_t enableChannelInterrupt; /*!< Per-channel interrupt enable. */
@@ -42,12 +44,19 @@ DECL|kDCP_Channel1|enumerator|kDCP_Channel1 = (1u << 17), /*!< DCP channel 1. */
 DECL|kDCP_Channel2|enumerator|kDCP_Channel2 = (1u << 18), /*!< DCP channel 2. */
 DECL|kDCP_Channel3|enumerator|kDCP_Channel3 = (1u << 19), /*!< DCP channel 3. */
 DECL|kDCP_Crc32|enumerator|kDCP_Crc32, /*!< CRC_32 */
+DECL|kDCP_InputByteSwap|enumerator|kDCP_InputByteSwap = 0x100000U,
+DECL|kDCP_InputWordSwap|enumerator|kDCP_InputWordSwap = 0x200000U,
+DECL|kDCP_KeyByteSwap|enumerator|kDCP_KeyByteSwap = 0x40000U,
 DECL|kDCP_KeySlot0|enumerator|kDCP_KeySlot0 = 0U, /*!< DCP key slot 0. */
 DECL|kDCP_KeySlot1|enumerator|kDCP_KeySlot1 = 1U, /*!< DCP key slot 1. */
 DECL|kDCP_KeySlot2|enumerator|kDCP_KeySlot2 = 2U, /*!< DCP key slot 2.*/
 DECL|kDCP_KeySlot3|enumerator|kDCP_KeySlot3 = 3U, /*!< DCP key slot 3. */
+DECL|kDCP_KeyWordSwap|enumerator|kDCP_KeyWordSwap = 0x80000U,
+DECL|kDCP_NoSwap|enumerator|kDCP_NoSwap = 0x0U,
 DECL|kDCP_OtpKey|enumerator|kDCP_OtpKey = 4U, /*!< DCP OTP key. */
 DECL|kDCP_OtpUniqueKey|enumerator|kDCP_OtpUniqueKey = 5U, /*!< DCP unique OTP key. */
+DECL|kDCP_OutputByteSwap|enumerator|kDCP_OutputByteSwap = 0x400000U,
+DECL|kDCP_OutputWordSwap|enumerator|kDCP_OutputWordSwap = 0x800000U,
 DECL|kDCP_PayloadKey|enumerator|kDCP_PayloadKey = 6U, /*!< DCP payload key. */
 DECL|kDCP_Sha1|enumerator|kDCP_Sha1, /*!< SHA_1 */
 DECL|kDCP_Sha256|enumerator|kDCP_Sha256, /*!< SHA_256 */
@@ -69,5 +78,6 @@ DECL|nextCmdAddress|member|uint32_t nextCmdAddress;
 DECL|payloadPointer|member|uint32_t payloadPointer;
 DECL|sourceBufferAddress|member|uint32_t sourceBufferAddress;
 DECL|status|member|uint32_t status;
+DECL|swapConfig|member|uint32_t swapConfig; /*!< For configuration of key, input, output byte/word swap options */
 DECL|x|member|uint32_t x[208 / sizeof(uint32_t)];
 DECL|x|member|uint32_t x[DCP_HASH_CTX_SIZE];

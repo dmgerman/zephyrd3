@@ -1,7 +1,12 @@
+DECL|ADMA_SPI0_INT_DriverIRQHandler|function|void ADMA_SPI0_INT_DriverIRQHandler(void)
+DECL|ADMA_SPI1_INT_DriverIRQHandler|function|void ADMA_SPI1_INT_DriverIRQHandler(void)
+DECL|ADMA_SPI2_INT_DriverIRQHandler|function|void ADMA_SPI2_INT_DriverIRQHandler(void)
+DECL|ADMA_SPI3_INT_DriverIRQHandler|function|void ADMA_SPI3_INT_DriverIRQHandler(void)
 DECL|DMA_SPI0_INT_DriverIRQHandler|function|void DMA_SPI0_INT_DriverIRQHandler(void)
 DECL|DMA_SPI1_INT_DriverIRQHandler|function|void DMA_SPI1_INT_DriverIRQHandler(void)
 DECL|DMA_SPI2_INT_DriverIRQHandler|function|void DMA_SPI2_INT_DriverIRQHandler(void)
 DECL|DMA_SPI3_INT_DriverIRQHandler|function|void DMA_SPI3_INT_DriverIRQHandler(void)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|LPSPI0_DriverIRQHandler|function|void LPSPI0_DriverIRQHandler(void)
 DECL|LPSPI1_DriverIRQHandler|function|void LPSPI1_DriverIRQHandler(void)
 DECL|LPSPI2_DriverIRQHandler|function|void LPSPI2_DriverIRQHandler(void)
@@ -40,13 +45,13 @@ DECL|LPSPI_SlaveTransferGetCount|function|status_t LPSPI_SlaveTransferGetCount(L
 DECL|LPSPI_SlaveTransferHandleIRQ|function|void LPSPI_SlaveTransferHandleIRQ(LPSPI_Type *base, lpspi_slave_handle_t *handle)
 DECL|LPSPI_SlaveTransferNonBlocking|function|status_t LPSPI_SlaveTransferNonBlocking(LPSPI_Type *base, lpspi_slave_handle_t *handle, lpspi_transfer_t *transfer)
 DECL|_lpspi_default_watermarks|enum|enum _lpspi_default_watermarks
+DECL|g_lpspiDummyData|variable|g_lpspiDummyData
 DECL|kLpspiDefaultRxWatermark|enumerator|kLpspiDefaultRxWatermark = 0,
 DECL|kLpspiDefaultTxWatermark|enumerator|kLpspiDefaultTxWatermark = 0,
 DECL|lpspi_master_isr_t|typedef|typedef void (*lpspi_master_isr_t)(LPSPI_Type *base, lpspi_master_handle_t *handle);
 DECL|lpspi_slave_isr_t|typedef|typedef void (*lpspi_slave_isr_t)(LPSPI_Type *base, lpspi_slave_handle_t *handle);
 DECL|s_LpspiPeriphClocks|variable|s_LpspiPeriphClocks
 DECL|s_baudratePrescaler|variable|s_baudratePrescaler
-DECL|s_dummyData|variable|s_dummyData
 DECL|s_lpspiBases|variable|s_lpspiBases
 DECL|s_lpspiClocks|variable|s_lpspiClocks
 DECL|s_lpspiHandle|variable|s_lpspiHandle

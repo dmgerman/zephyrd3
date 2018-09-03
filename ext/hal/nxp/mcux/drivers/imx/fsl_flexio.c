@@ -1,6 +1,7 @@
 DECL|FLEXIO0_DriverIRQHandler|function|void FLEXIO0_DriverIRQHandler(void)
 DECL|FLEXIO1_DriverIRQHandler|function|void FLEXIO1_DriverIRQHandler(void)
 DECL|FLEXIO2_DriverIRQHandler|function|void FLEXIO2_DriverIRQHandler(void)
+DECL|FLEXIO3_DriverIRQHandler|function|void FLEXIO3_DriverIRQHandler(void)
 DECL|FLEXIO_CommonIRQHandler|function|void FLEXIO_CommonIRQHandler(void)
 DECL|FLEXIO_Deinit|function|void FLEXIO_Deinit(FLEXIO_Type *base)
 DECL|FLEXIO_DriverIRQHandler|function|void FLEXIO_DriverIRQHandler(void)
@@ -14,6 +15,7 @@ DECL|FLEXIO_Reset|function|void FLEXIO_Reset(FLEXIO_Type *base)
 DECL|FLEXIO_SetShifterConfig|function|void FLEXIO_SetShifterConfig(FLEXIO_Type *base, uint8_t index, const flexio_shifter_config_t *shifterConfig)
 DECL|FLEXIO_SetTimerConfig|function|void FLEXIO_SetTimerConfig(FLEXIO_Type *base, uint8_t index, const flexio_timer_config_t *timerConfig)
 DECL|FLEXIO_UnregisterHandleIRQ|function|status_t FLEXIO_UnregisterHandleIRQ(void *base)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|UART2_FLEXIO_DriverIRQHandler|function|void UART2_FLEXIO_DriverIRQHandler(void)
 DECL|s_flexioBases|variable|s_flexioBases
 DECL|s_flexioClocks|variable|s_flexioClocks

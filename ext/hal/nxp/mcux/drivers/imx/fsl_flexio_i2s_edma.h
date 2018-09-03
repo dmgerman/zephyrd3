@@ -1,3 +1,4 @@
+DECL|FSL_FLEXIO_I2S_EDMA_DRIVER_VERSION|macro|FSL_FLEXIO_I2S_EDMA_DRIVER_VERSION
 DECL|_FSL_FLEXIO_I2S_EDMA_H_|macro|_FSL_FLEXIO_I2S_EDMA_H_
 DECL|_flexio_i2s_edma_handle|struct|struct _flexio_i2s_edma_handle
 DECL|bytesPerFrame|member|uint8_t bytesPerFrame; /*!< Bytes in a frame */

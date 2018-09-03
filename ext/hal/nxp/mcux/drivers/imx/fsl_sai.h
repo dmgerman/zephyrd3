@@ -6,17 +6,21 @@ DECL|SAI_RxEnableDMA|function|static inline void SAI_RxEnableDMA(I2S_Type *base,
 DECL|SAI_RxEnableInterrupts|function|static inline void SAI_RxEnableInterrupts(I2S_Type *base, uint32_t mask)
 DECL|SAI_RxGetDataRegisterAddress|function|static inline uint32_t SAI_RxGetDataRegisterAddress(I2S_Type *base, uint32_t channel)
 DECL|SAI_RxGetStatusFlag|function|static inline uint32_t SAI_RxGetStatusFlag(I2S_Type *base)
+DECL|SAI_RxSetFIFOErrorContinue|function|static inline void SAI_RxSetFIFOErrorContinue(I2S_Type *base, bool isEnabled)
 DECL|SAI_TxClearStatusFlags|function|static inline void SAI_TxClearStatusFlags(I2S_Type *base, uint32_t mask)
 DECL|SAI_TxDisableInterrupts|function|static inline void SAI_TxDisableInterrupts(I2S_Type *base, uint32_t mask)
 DECL|SAI_TxEnableDMA|function|static inline void SAI_TxEnableDMA(I2S_Type *base, uint32_t mask, bool enable)
 DECL|SAI_TxEnableInterrupts|function|static inline void SAI_TxEnableInterrupts(I2S_Type *base, uint32_t mask)
 DECL|SAI_TxGetDataRegisterAddress|function|static inline uint32_t SAI_TxGetDataRegisterAddress(I2S_Type *base, uint32_t channel)
 DECL|SAI_TxGetStatusFlag|function|static inline uint32_t SAI_TxGetStatusFlag(I2S_Type *base)
+DECL|SAI_TxSetFIFOErrorContinue|function|static inline void SAI_TxSetFIFOErrorContinue(I2S_Type *base, bool isEnabled)
 DECL|SAI_WriteData|function|static inline void SAI_WriteData(I2S_Type *base, uint32_t channel, uint32_t data)
 DECL|SAI_XFER_QUEUE_SIZE|macro|SAI_XFER_QUEUE_SIZE
 DECL|_FSL_SAI_H_|macro|_FSL_SAI_H_
 DECL|_sai_bclk_source|enum|typedef enum _sai_bclk_source
+DECL|_sai_clock_polarity|enum|typedef enum _sai_clock_polarity
 DECL|_sai_config|struct|typedef struct _sai_config
+DECL|_sai_data_order|enum|typedef enum _sai_data_order
 DECL|_sai_dma_enable_t|enum|enum _sai_dma_enable_t
 DECL|_sai_fifo_packing|enum|typedef enum _sai_fifo_packing
 DECL|_sai_flags|enum|enum _sai_flags
@@ -33,6 +37,7 @@ DECL|_sai_sync_mode|enum|typedef enum _sai_sync_mode
 DECL|_sai_transfer_format|struct|typedef struct _sai_transfer_format
 DECL|_sai_transfer|struct|typedef struct _sai_transfer
 DECL|_sai_word_width|enum|typedef enum _sai_word_width
+DECL|base|member|I2S_Type *base; /*!< base address */
 DECL|bclkSource|member|sai_bclk_source_t bclkSource; /*!< Bit Clock source */
 DECL|bitWidth|member|uint32_t bitWidth; /*!< Data length of audio data, usually 8/16/24/32 bits */
 DECL|bitWidth|member|uint8_t bitWidth; /*!< Bit width for transfer, 8/16/24/32 bits */
@@ -51,6 +56,8 @@ DECL|kSAI_BusLeftJustified|enumerator|kSAI_BusLeftJustified = 0x0U, /*!< Uses le
 DECL|kSAI_BusPCMA|enumerator|kSAI_BusPCMA, /*!< Uses I2S PCM A format.*/
 DECL|kSAI_BusPCMB|enumerator|kSAI_BusPCMB /*!< Uses I2S PCM B format. */
 DECL|kSAI_BusRightJustified|enumerator|kSAI_BusRightJustified, /*!< Uses right justified format. */
+DECL|kSAI_DataLSB|enumerator|kSAI_DataLSB = 0x0U, /*!< LSB bit transferred first */
+DECL|kSAI_DataMSB|enumerator|kSAI_DataMSB /*!< MSB bit transferred first */
 DECL|kSAI_FIFOErrorFlag|enumerator|kSAI_FIFOErrorFlag = I2S_TCSR_FEF_MASK, /*!< FIFO error flag */
 DECL|kSAI_FIFOErrorInterruptEnable|enumerator|kSAI_FIFOErrorInterruptEnable = I2S_TCSR_FEIE_MASK, /*!< FIFO error flag */
 DECL|kSAI_FIFORequestDMAEnable|enumerator|kSAI_FIFORequestDMAEnable = I2S_TCSR_FRDE_MASK, /*!< FIFO request caused by the DMA request */
@@ -73,19 +80,23 @@ DECL|kSAI_ModeSyncWithOtherTx|enumerator|kSAI_ModeSyncWithOtherTx, /*!< Synchron
 DECL|kSAI_ModeSync|enumerator|kSAI_ModeSync, /*!< Synchronous mode (with receiver or transmit) */
 DECL|kSAI_MonoLeft|enumerator|kSAI_MonoLeft /*!< Only left channel have sound. */
 DECL|kSAI_MonoRight|enumerator|kSAI_MonoRight, /*!< Only Right channel have sound. */
+DECL|kSAI_PolarityActiveHigh|enumerator|kSAI_PolarityActiveHigh = 0x0U, /*!< Clock active high */
+DECL|kSAI_PolarityActiveLow|enumerator|kSAI_PolarityActiveLow /*!< Clock active low */
 DECL|kSAI_ResetAll|enumerator|kSAI_ResetAll = I2S_TCSR_SR_MASK | I2S_TCSR_FR_MASK /*!< All reset. */
 DECL|kSAI_ResetTypeFIFO|enumerator|kSAI_ResetTypeFIFO = I2S_TCSR_FR_MASK, /*!< FIFO reset, reset the FIFO read and write pointer */
 DECL|kSAI_ResetTypeSoftware|enumerator|kSAI_ResetTypeSoftware = I2S_TCSR_SR_MASK, /*!< Software reset, reset the logic state */
 DECL|kSAI_SampleRate11025Hz|enumerator|kSAI_SampleRate11025Hz = 11025U, /*!< Sample rate 11025 Hz */
 DECL|kSAI_SampleRate12KHz|enumerator|kSAI_SampleRate12KHz = 12000U, /*!< Sample rate 12000 Hz */
 DECL|kSAI_SampleRate16KHz|enumerator|kSAI_SampleRate16KHz = 16000U, /*!< Sample rate 16000 Hz */
+DECL|kSAI_SampleRate192KHz|enumerator|kSAI_SampleRate192KHz = 192000U, /*!< Sample rate 192000 Hz */
 DECL|kSAI_SampleRate22050Hz|enumerator|kSAI_SampleRate22050Hz = 22050U, /*!< Sample rate 22050 Hz */
 DECL|kSAI_SampleRate24KHz|enumerator|kSAI_SampleRate24KHz = 24000U, /*!< Sample rate 24000 Hz */
 DECL|kSAI_SampleRate32KHz|enumerator|kSAI_SampleRate32KHz = 32000U, /*!< Sample rate 32000 Hz */
+DECL|kSAI_SampleRate384KHz|enumerator|kSAI_SampleRate384KHz = 384000U, /*!< Sample rate 384000 Hz */
 DECL|kSAI_SampleRate44100Hz|enumerator|kSAI_SampleRate44100Hz = 44100U, /*!< Sample rate 44100 Hz */
 DECL|kSAI_SampleRate48KHz|enumerator|kSAI_SampleRate48KHz = 48000U, /*!< Sample rate 48000 Hz */
 DECL|kSAI_SampleRate8KHz|enumerator|kSAI_SampleRate8KHz = 8000U, /*!< Sample rate 8000 Hz */
-DECL|kSAI_SampleRate96KHz|enumerator|kSAI_SampleRate96KHz = 96000U /*!< Sample rate 96000 Hz */
+DECL|kSAI_SampleRate96KHz|enumerator|kSAI_SampleRate96KHz = 96000U, /*!< Sample rate 96000 Hz */
 DECL|kSAI_Slave|enumerator|kSAI_Slave = 0x1U /*!< Slave mode */
 DECL|kSAI_Stereo|enumerator|kSAI_Stereo = 0x0U, /*!< Stereo sound. */
 DECL|kSAI_SyncErrorFlag|enumerator|kSAI_SyncErrorFlag = I2S_TCSR_SEF_MASK, /*!< Sync error flag, means the sync error is detected */
@@ -113,7 +124,9 @@ DECL|queueDriver|member|volatile uint8_t queueDriver; /*!< Index for driver to g
 DECL|queueUser|member|volatile uint8_t queueUser; /*!< Index for user to queue transfer */
 DECL|saiQueue|member|sai_transfer_t saiQueue[SAI_XFER_QUEUE_SIZE]; /*!< Transfer queue storing queued transfer */
 DECL|sai_bclk_source_t|typedef|} sai_bclk_source_t;
+DECL|sai_clock_polarity_t|typedef|} sai_clock_polarity_t;
 DECL|sai_config_t|typedef|} sai_config_t;
+DECL|sai_data_order_t|typedef|} sai_data_order_t;
 DECL|sai_fifo_packing_t|typedef|} sai_fifo_packing_t;
 DECL|sai_handle_t|typedef|typedef struct _sai_handle sai_handle_t;
 DECL|sai_master_slave_t|typedef|} sai_master_slave_t;

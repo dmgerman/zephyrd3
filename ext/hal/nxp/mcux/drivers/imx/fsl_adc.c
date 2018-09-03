@@ -8,5 +8,6 @@ DECL|ADC_SetChannelConfig|function|void ADC_SetChannelConfig(ADC_Type *base, uin
 DECL|ADC_SetHardwareAverageConfig|function|void ADC_SetHardwareAverageConfig(ADC_Type *base, adc_hardware_average_mode_t mode)
 DECL|ADC_SetHardwareCompareConfig|function|void ADC_SetHardwareCompareConfig(ADC_Type *base, const adc_hardware_compare_config_t *config)
 DECL|ADC_SetOffsetConfig|function|void ADC_SetOffsetConfig(ADC_Type *base, const adc_offest_config_t *config)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|s_adcBases|variable|s_adcBases
 DECL|s_adcClocks|variable|s_adcClocks

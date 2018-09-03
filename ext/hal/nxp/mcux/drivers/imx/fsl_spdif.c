@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|SPDIF_Deinit|function|void SPDIF_Deinit(SPDIF_Type *base)
 DECL|SPDIF_DriverIRQHandler|function|void SPDIF_DriverIRQHandler(void)
 DECL|SPDIF_GetDefaultConfig|function|void SPDIF_GetDefaultConfig(spdif_config_t *config)

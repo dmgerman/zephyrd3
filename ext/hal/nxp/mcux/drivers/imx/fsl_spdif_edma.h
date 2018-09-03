@@ -1,3 +1,4 @@
+DECL|FSL_SPDIF_EDMA_DRIVER_VERSION|macro|FSL_SPDIF_EDMA_DRIVER_VERSION
 DECL|_FSL_SPDIF_EDMA_H_|macro|_FSL_SPDIF_EDMA_H_
 DECL|_spdif_edma_handle|struct|struct _spdif_edma_handle
 DECL|_spdif_edma_transfer|struct|typedef struct _spdif_edma_transfer

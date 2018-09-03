@@ -7,6 +7,7 @@ DECL|FLEXIO_SPI_MasterTransferGetCountEDMA|function|status_t FLEXIO_SPI_MasterTr
 DECL|FLEXIO_SPI_RxEDMACallback|function|static void FLEXIO_SPI_RxEDMACallback(edma_handle_t *handle, void *param, bool transferDone, uint32_t tcds)
 DECL|FLEXIO_SPI_SlaveTransferEDMA|function|status_t FLEXIO_SPI_SlaveTransferEDMA(FLEXIO_SPI_Type *base, flexio_spi_slave_edma_handle_t *handle, flexio_spi_transfer_t *xfer)
 DECL|FLEXIO_SPI_TxEDMACallback|function|static void FLEXIO_SPI_TxEDMACallback(edma_handle_t *handle, void *param, bool transferDone, uint32_t tcds)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexio_spi_master_edma_private_handle|struct|typedef struct _flexio_spi_master_edma_private_handle
 DECL|base|member|FLEXIO_SPI_Type *base;
 DECL|flexio_spi_master_edma_private_handle_t|typedef|} flexio_spi_master_edma_private_handle_t;

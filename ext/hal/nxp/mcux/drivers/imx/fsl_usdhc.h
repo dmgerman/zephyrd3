@@ -28,7 +28,6 @@ DECL|USDHC_DetectCardInsert|function|static inline bool USDHC_DetectCardInsert(U
 DECL|USDHC_DisableInterruptSignal|function|static inline void USDHC_DisableInterruptSignal(USDHC_Type *base, uint32_t mask)
 DECL|USDHC_DisableInterruptStatus|function|static inline void USDHC_DisableInterruptStatus(USDHC_Type *base, uint32_t mask)
 DECL|USDHC_EnableAutoTuning|function|static inline void USDHC_EnableAutoTuning(USDHC_Type *base, bool enable)
-DECL|USDHC_EnableDDRMode|function|static inline void USDHC_EnableDDRMode(USDHC_Type *base, bool enable, uint32_t nibblePos)
 DECL|USDHC_EnableHS400Mode|function|static inline void USDHC_EnableHS400Mode(USDHC_Type *base, bool enable)
 DECL|USDHC_EnableInternalDMA|function|static inline void USDHC_EnableInternalDMA(USDHC_Type *base, bool enable)
 DECL|USDHC_EnableInterruptSignal|function|static inline void USDHC_EnableInterruptSignal(USDHC_Type *base, uint32_t mask)
@@ -60,7 +59,7 @@ DECL|_usdhc_adma1_descriptor_flag|enum|enum _usdhc_adma1_descriptor_flag
 DECL|_usdhc_adma2_descriptor_flag|enum|enum _usdhc_adma2_descriptor_flag
 DECL|_usdhc_adma2_descriptor|struct|typedef struct _usdhc_adma2_descriptor
 DECL|_usdhc_adma_config|struct|typedef struct _usdhc_adma_config
-DECL|_usdhc_adma_error_state|enum|typedef enum _usdhc_adma_error_state
+DECL|_usdhc_adma_error_state|enum|enum _usdhc_adma_error_state
 DECL|_usdhc_adma_error_status_flag|enum|enum _usdhc_adma_error_status_flag
 DECL|_usdhc_adma_flag|enum|enum _usdhc_adma_flag
 DECL|_usdhc_auto_command12_error_status_flag|enum|enum _usdhc_auto_command12_error_status_flag
@@ -141,6 +140,7 @@ DECL|kCARD_ResponseTypeR6|enumerator|kCARD_ResponseTypeR6 = 8U, /*!< Response ty
 DECL|kCARD_ResponseTypeR7|enumerator|kCARD_ResponseTypeR7 = 9U, /*!< Response type: R7 */
 DECL|kStatus_USDHC_BusyTransferring|enumerator|kStatus_USDHC_BusyTransferring = MAKE_STATUS(kStatusGroup_USDHC, 0U), /*!< Transfer is on-going */
 DECL|kStatus_USDHC_DMADataAddrNotAlign|enumerator|kStatus_USDHC_DMADataAddrNotAlign = MAKE_STATUS(kStatusGroup_USDHC, 4U), /*!< data address not align */
+DECL|kStatus_USDHC_NotSupport|enumerator|kStatus_USDHC_NotSupport = MAKE_STATUS(kStatusGroup_USDHC, 7U), /*!< not support */
 DECL|kStatus_USDHC_PrepareAdmaDescriptorFailed|enumerator|kStatus_USDHC_PrepareAdmaDescriptorFailed = MAKE_STATUS(kStatusGroup_USDHC, 1U), /*!< Set DMA descriptor failed */
 DECL|kStatus_USDHC_ReTuningRequest|enumerator|kStatus_USDHC_ReTuningRequest = MAKE_STATUS(kStatusGroup_USDHC, 5U), /*!< re-tuning request */
 DECL|kStatus_USDHC_SendCommandFailed|enumerator|kStatus_USDHC_SendCommandFailed = MAKE_STATUS(kStatusGroup_USDHC, 2U), /*!< Send command failed */
@@ -167,10 +167,13 @@ DECL|kUSDHC_Adma2DescriptorValidFlag|enumerator|kUSDHC_Adma2DescriptorValidFlag 
 DECL|kUSDHC_AdmaDescriptorErrorFlag|enumerator|kUSDHC_AdmaDescriptorErrorFlag = USDHC_ADMA_ERR_STATUS_ADMADCE_MASK, /*!< Descriptor error */
 DECL|kUSDHC_AdmaDescriptorMultipleFlag|enumerator|kUSDHC_AdmaDescriptorMultipleFlag = 1U, /*!< create multiple ADMA descriptor within the ADMA table, this is used for
 DECL|kUSDHC_AdmaDescriptorSingleFlag|enumerator|kUSDHC_AdmaDescriptorSingleFlag =
-DECL|kUSDHC_AdmaErrorStateChangeAddress|enumerator|kUSDHC_AdmaErrorStateChangeAddress = 0x02U, /*!< Change address */
-DECL|kUSDHC_AdmaErrorStateFetchDescriptor|enumerator|kUSDHC_AdmaErrorStateFetchDescriptor = 0x01U, /*!< Fetch descriptor */
-DECL|kUSDHC_AdmaErrorStateStopDma|enumerator|kUSDHC_AdmaErrorStateStopDma = 0x00U, /*!< Stop DMA */
-DECL|kUSDHC_AdmaErrorStateTransferData|enumerator|kUSDHC_AdmaErrorStateTransferData = 0x03U, /*!< Transfer data */
+DECL|kUSDHC_AdmaErrorStateChangeAddress|enumerator|kUSDHC_AdmaErrorStateChangeAddress = 0x02U, /*!< Change address, no DMA error is occured */
+DECL|kUSDHC_AdmaErrorStateFetchDescriptor|enumerator|kUSDHC_AdmaErrorStateFetchDescriptor =
+DECL|kUSDHC_AdmaErrorStateInvalidDescriptor|enumerator|kUSDHC_AdmaErrorStateInvalidDescriptor = 0x08U, /*!< Invalid descriptor fetched by ADMA */
+DECL|kUSDHC_AdmaErrorStateInvalidLength|enumerator|kUSDHC_AdmaErrorStateInvalidLength = 0x04U, /*!< Invalid length in ADMA descriptor */
+DECL|kUSDHC_AdmaErrorStateStopDma|enumerator|kUSDHC_AdmaErrorStateStopDma =
+DECL|kUSDHC_AdmaErrorStateTransferData|enumerator|kUSDHC_AdmaErrorStateTransferData =
+DECL|kUSDHC_AdmaErrorState|enumerator|kUSDHC_AdmaErrorState = kUSDHC_AdmaErrorStateInvalidLength | kUSDHC_AdmaErrorStateInvalidDescriptor |
 DECL|kUSDHC_AdmaLenghMismatchFlag|enumerator|kUSDHC_AdmaLenghMismatchFlag = USDHC_ADMA_ERR_STATUS_ADMALME_MASK, /*!< Length mismatch error */
 DECL|kUSDHC_AllInterruptFlags|enumerator|kUSDHC_AllInterruptFlags = (kUSDHC_BlockGapEventFlag | kUSDHC_CardInterruptFlag | kUSDHC_CommandFlag |
 DECL|kUSDHC_AutoCommand12CrcErrorFlag|enumerator|kUSDHC_AutoCommand12CrcErrorFlag = USDHC_AUTOCMD12_ERR_STATUS_AC12CE_MASK, /*!< CRC error */
@@ -325,7 +328,6 @@ DECL|type|member|usdhc_card_command_type_t type; /*!< Command type */
 DECL|usdhc_adma1_descriptor_t|typedef|typedef uint32_t usdhc_adma1_descriptor_t;
 DECL|usdhc_adma2_descriptor_t|typedef|} usdhc_adma2_descriptor_t;
 DECL|usdhc_adma_config_t|typedef|} usdhc_adma_config_t;
-DECL|usdhc_adma_error_state_t|typedef|} usdhc_adma_error_state_t;
 DECL|usdhc_boot_config_t|typedef|} usdhc_boot_config_t;
 DECL|usdhc_boot_mode_t|typedef|} usdhc_boot_mode_t;
 DECL|usdhc_burst_len_t|typedef|} usdhc_burst_len_t;

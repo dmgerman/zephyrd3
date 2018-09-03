@@ -20,6 +20,9 @@ DECL|FLEXSPI_TransferNonBlocking|function|status_t FLEXSPI_TransferNonBlocking(F
 DECL|FLEXSPI_UpdateLUT|function|void FLEXSPI_UpdateLUT(FLEXSPI_Type *base, uint32_t index, const uint32_t *cmd, uint32_t count)
 DECL|FLEXSPI_WriteBlocking|function|status_t FLEXSPI_WriteBlocking(FLEXSPI_Type *base, uint32_t *buffer, size_t size)
 DECL|FREQ_1MHz|macro|FREQ_1MHz
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
+DECL|LSIO_OCTASPI0_INT_DriverIRQHandler|function|void LSIO_OCTASPI0_INT_DriverIRQHandler(void)
+DECL|LSIO_OCTASPI1_INT_DriverIRQHandler|function|void LSIO_OCTASPI1_INT_DriverIRQHandler(void)
 DECL|_flexspi_flag_constants|enum|enum _flexspi_flag_constants
 DECL|_flexspi_transfer_state|enum|enum _flexspi_transfer_state
 DECL|flexspi_isr_t|typedef|typedef void (*flexspi_isr_t)(FLEXSPI_Type *base, void *flexspiHandle);

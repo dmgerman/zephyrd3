@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|SEMC_BMCR0_TYPICAL_WAGE|macro|SEMC_BMCR0_TYPICAL_WAGE
 DECL|SEMC_BMCR0_TYPICAL_WQOS|macro|SEMC_BMCR0_TYPICAL_WQOS
 DECL|SEMC_BMCR0_TYPICAL_WRWS|macro|SEMC_BMCR0_TYPICAL_WRWS
@@ -47,3 +48,4 @@ DECL|SEMC_STARTADDRESS|macro|SEMC_STARTADDRESS
 DECL|SEMC_SendIPCommand|function|status_t SEMC_SendIPCommand( SEMC_Type *base, semc_mem_type_t type, uint32_t address, uint16_t command, uint32_t write, uint32_t *read)
 DECL|s_semcBases|variable|s_semcBases
 DECL|s_semcClock|variable|s_semcClock
+DECL|s_semcExtClock|variable|s_semcExtClock

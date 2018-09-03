@@ -7,45 +7,48 @@ DECL|SEMC_GetStatusFlag|function|static inline bool SEMC_GetStatusFlag(SEMC_Type
 DECL|SEMC_IsInIdle|function|static inline bool SEMC_IsInIdle(SEMC_Type *base)
 DECL|SEMC_IsNandReady|function|static inline bool SEMC_IsNandReady(SEMC_Type *base)
 DECL|_FSL_SEMC_H_|macro|_FSL_SEMC_H_
-DECL|_semc_addr_mode|enum|typedef enum _semc_addr_mode {
-DECL|_semc_adv_polarity|enum|typedef enum _semc_adv_polarity {
+DECL|_semc_addr_mode|enum|typedef enum _semc_addr_mode
+DECL|_semc_adv_polarity|enum|typedef enum _semc_adv_polarity
 DECL|_semc_axi_queueweight|struct|typedef struct _semc_axi_queueweight
-DECL|_semc_caslatency|enum|typedef enum _semc_caslatency {
+DECL|_semc_caslatency|enum|typedef enum _semc_caslatency
 DECL|_semc_config_t|struct|typedef struct _semc_config_t
-DECL|_semc_dbi_burst_len|enum|typedef enum _semc_dbi_burst_len {
-DECL|_semc_dbi_column_bit_num|enum|typedef enum _semc_dbi_column_bit_num {
+DECL|_semc_dbi_burst_len|enum|typedef enum _semc_dbi_burst_len
+DECL|_semc_dbi_column_bit_num|enum|typedef enum _semc_dbi_column_bit_num
 DECL|_semc_dbi_config|struct|typedef struct _semc_dbi_config
-DECL|_semc_dqs_mode|enum|typedef enum _semc_dqs_mode {
-DECL|_semc_interrupt_enable|enum|typedef enum _semc_interrupt_enable {
-DECL|_semc_iomux_nora27_pin|enum|typedef enum _semc_iomux_nora27_pin {
-DECL|_semc_iomux_pin|enum|typedef enum _semc_iomux_pin {
-DECL|_semc_ipcmd_datasize|enum|typedef enum _semc_ipcmd_datasize {
-DECL|_semc_ipcmd_nand_addrmode|enum|typedef enum _semc_ipcmd_nand_addrmode {
-DECL|_semc_ipcmd_nand_cmdmode|enum|typedef enum _semc_ipcmd_nand_cmdmode {
-DECL|_semc_ipcmd_nor_dbi|enum|typedef enum _semc_ipcmd_nor_dbi {
-DECL|_semc_ipcmd_sdram|enum|typedef enum _semc_ipcmd_sdram {
-DECL|_semc_ipcmd_sram|enum|typedef enum _semc_ipcmd_sram {
-DECL|_semc_mem_type|enum|typedef enum _semc_mem_type {
-DECL|_semc_nand_address_option|enum|typedef enum _semc_nand_address_option {
-DECL|_semc_nand_burst_len|enum|typedef enum _semc_nand_burst_len {
-DECL|_semc_nand_column_bit_num|enum|typedef enum _semc_nand_column_bit_num {
+DECL|_semc_dqs_mode|enum|typedef enum _semc_dqs_mode
+DECL|_semc_interrupt_enable|enum|typedef enum _semc_interrupt_enable
+DECL|_semc_iomux_nora27_pin|enum|typedef enum _semc_iomux_nora27_pin
+DECL|_semc_iomux_pin|enum|typedef enum _semc_iomux_pin
+DECL|_semc_ipcmd_datasize|enum|typedef enum _semc_ipcmd_datasize
+DECL|_semc_ipcmd_nand_addrmode|enum|typedef enum _semc_ipcmd_nand_addrmode
+DECL|_semc_ipcmd_nand_cmdmode|enum|typedef enum _semc_ipcmd_nand_cmdmode
+DECL|_semc_ipcmd_nor_dbi|enum|typedef enum _semc_ipcmd_nor_dbi
+DECL|_semc_ipcmd_sdram|enum|typedef enum _semc_ipcmd_sdram
+DECL|_semc_ipcmd_sram|enum|typedef enum _semc_ipcmd_sram
+DECL|_semc_mem_type|enum|typedef enum _semc_mem_type
+DECL|_semc_nand_access_type|enum|typedef enum _semc_nand_access_type
+DECL|_semc_nand_address_option|enum|typedef enum _semc_nand_address_option
+DECL|_semc_nand_burst_len|enum|typedef enum _semc_nand_burst_len
+DECL|_semc_nand_column_bit_num|enum|typedef enum _semc_nand_column_bit_num
 DECL|_semc_nand_config|struct|typedef struct _semc_nand_config
-DECL|_semc_nand_type|enum|typedef enum _semc_nand_type {
+DECL|_semc_nand_timing_config|struct|typedef struct _semc_nand_timing_config
 DECL|_semc_nor_config|struct|typedef struct _semc_nor_config
-DECL|_semc_norsram_burst_len|enum|typedef enum _semc_norsram_burst_len {
-DECL|_semc_norsram_column_bit_num|enum|typedef enum _semc_norsram_column_bit_num {
-DECL|_semc_port_size|enum|typedef enum _semc_port_size {
-DECL|_semc_queuea_weight|struct|typedef struct _semc_queuea_weight
-DECL|_semc_queueb_weight|struct|typedef struct _semc_queueb_weight
-DECL|_semc_rdy_polarity|enum|typedef enum _semc_rdy_polarity {
-DECL|_semc_refresh_time|enum|typedef enum _semc_refresh_time {
-DECL|_semc_sdram_burst_len|enum|typedef enum _semc_sdram_burst_len {
-DECL|_semc_sdram_column_bit_num|enum|typedef enum _semc_sdram_column_bit_num {
+DECL|_semc_norsram_burst_len|enum|typedef enum _semc_norsram_burst_len
+DECL|_semc_norsram_column_bit_num|enum|typedef enum _semc_norsram_column_bit_num
+DECL|_semc_port_size|enum|typedef enum _semc_port_size
+DECL|_semc_queuea_weight_struct|struct|typedef struct _semc_queuea_weight_struct
+DECL|_semc_queuea_weight|union|typedef union _semc_queuea_weight
+DECL|_semc_queueb_weight_struct|struct|typedef struct _semc_queueb_weight_struct
+DECL|_semc_queueb_weight|union|typedef union _semc_queueb_weight
+DECL|_semc_rdy_polarity|enum|typedef enum _semc_rdy_polarity
+DECL|_semc_refresh_time|enum|typedef enum _semc_refresh_time
+DECL|_semc_sdram_burst_len|enum|typedef enum _semc_sdram_burst_len
+DECL|_semc_sdram_column_bit_num|enum|typedef enum _semc_sdram_column_bit_num
 DECL|_semc_sdram_config|struct|typedef struct _semc_sdram_config
-DECL|_semc_sdram_cs|enum|typedef enum _semc_sdram_cs {
+DECL|_semc_sdram_cs|enum|typedef enum _semc_sdram_cs
 DECL|_semc_sram_config|struct|typedef struct _semc_sram_config
 DECL|_semc_status|enum|enum _semc_status
-DECL|_semc_waitready_polarity|enum|typedef enum _semc_waitready_polarity {
+DECL|_semc_waitready_polarity|enum|typedef enum _semc_waitready_polarity
 DECL|addr27|member|semc_iomux_nora27_pin addr27; /*!< The Addr bit 27 pin mux setting. */
 DECL|addr27|member|semc_iomux_nora27_pin addr27; /*!< The Addr bit 27 pin mux setting. */
 DECL|addrMode|member|semc_addr_mode_t addrMode; /*!< Address mode. */
@@ -141,8 +144,6 @@ DECL|kSEMC_NANDAM_ColumnRow|enumerator|kSEMC_NANDAM_ColumnRow = 0x0U, /*!< Addre
 DECL|kSEMC_NANDAM_RawRA0RA1RA2|enumerator|kSEMC_NANDAM_RawRA0RA1RA2 /*!< Address mode: row address only(3 Byte-RA0). */
 DECL|kSEMC_NANDAM_RawRA0RA1|enumerator|kSEMC_NANDAM_RawRA0RA1, /*!< Address mode: row address only(2 Byte-RA0/RA1). */
 DECL|kSEMC_NANDAM_RawRA0|enumerator|kSEMC_NANDAM_RawRA0, /*!< Address mode: row address only(1 Byte-RA0). */
-DECL|kSEMC_NANDCM_AXICmdAddrRead|enumerator|kSEMC_NANDCM_AXICmdAddrRead = 0x0U, /*!< For AXI read. */
-DECL|kSEMC_NANDCM_AXICmdAddrWrite|enumerator|kSEMC_NANDCM_AXICmdAddrWrite, /*!< For AXI write. */
 DECL|kSEMC_NANDCM_CommandAddressHold|enumerator|kSEMC_NANDCM_CommandAddressHold, /*!< Command address hold. */
 DECL|kSEMC_NANDCM_CommandAddressRead|enumerator|kSEMC_NANDCM_CommandAddressRead, /*!< Command address read. */
 DECL|kSEMC_NANDCM_CommandAddressWrite|enumerator|kSEMC_NANDCM_CommandAddressWrite, /*!< Command address write. */
@@ -150,11 +151,11 @@ DECL|kSEMC_NANDCM_CommandAddress|enumerator|kSEMC_NANDCM_CommandAddress, /*!< Co
 DECL|kSEMC_NANDCM_CommandHold|enumerator|kSEMC_NANDCM_CommandHold, /*!< Command hold. */
 DECL|kSEMC_NANDCM_CommandRead|enumerator|kSEMC_NANDCM_CommandRead, /*!< Command read. */
 DECL|kSEMC_NANDCM_CommandWrite|enumerator|kSEMC_NANDCM_CommandWrite, /*!< Command write. */
-DECL|kSEMC_NANDCM_Command|enumerator|kSEMC_NANDCM_Command, /*!< command. */
+DECL|kSEMC_NANDCM_Command|enumerator|kSEMC_NANDCM_Command = 0x2U, /*!< command. */
 DECL|kSEMC_NANDCM_Read|enumerator|kSEMC_NANDCM_Read, /*!< Read. */
 DECL|kSEMC_NANDCM_Write|enumerator|kSEMC_NANDCM_Write /*!< Write. */
-DECL|kSEMC_NAND_AXI|enumerator|kSEMC_NAND_AXI = 0,
-DECL|kSEMC_NAND_IP|enumerator|kSEMC_NAND_IP,
+DECL|kSEMC_NAND_ACCESS_BY_AXI|enumerator|kSEMC_NAND_ACCESS_BY_AXI = 0,
+DECL|kSEMC_NAND_ACCESS_BY_IPCMD|enumerator|kSEMC_NAND_ACCESS_BY_IPCMD,
 DECL|kSEMC_NORA27_MUXCSX3|enumerator|kSEMC_NORA27_MUXCSX3 = SEMC_IOCR_MUX_CSX3_SHIFT, /*!< MUX CSX3 Pin. */
 DECL|kSEMC_NORA27_MUXRDY|enumerator|kSEMC_NORA27_MUXRDY = SEMC_IOCR_MUX_RDY_SHIFT /*!< MUX RDY pin. */
 DECL|kSEMC_NORDBICM_Read|enumerator|kSEMC_NORDBICM_Read = 0x2U, /*!< NOR read. */
@@ -255,8 +256,12 @@ DECL|portSize|member|smec_port_size_t portSize; /*!< Port size. */
 DECL|qos|member|uint32_t qos : 4; /*!< weight of qos for queue 0 . */
 DECL|qos|member|uint32_t qos : 4; /*!< weight of qos for queue 1. */
 DECL|queueWeight|member|semc_axi_queueweight_t queueWeight; /*!< AXI queue weight. */
-DECL|queueaWeight|member|semc_queuea_weight_t *queueaWeight; /*!< Weight settings for queue a. */
-DECL|queuebWeight|member|semc_queueb_weight_t *queuebWeight; /*!< Weight settings for queue b. */
+DECL|queueaConfig|member|semc_queuea_weight_struct_t queueaConfig; /*!< Structure configuration for queueA. */
+DECL|queueaValue|member|uint32_t queueaValue; /*!< Configuration value for queueA which could directly write to the reg. */
+DECL|queueaWeight|member|semc_queuea_weight_t queueaWeight; /*!< Weight settings for queue a. */
+DECL|queuebConfig|member|semc_queueb_weight_struct_t queuebConfig; /*!< Structure configuration for queueB. */
+DECL|queuebValue|member|uint32_t queuebValue; /*!< Configuration value for queueB which could directly write to the reg. */
+DECL|queuebWeight|member|semc_queueb_weight_t queuebWeight; /*!< Weight settings for queue b. */
 DECL|rdyactivePolarity|member|semc_rdy_polarity_t rdyactivePolarity; /*!< Wait ready polarity. */
 DECL|rdyactivePolarity|member|semc_rdy_polarity_t rdyactivePolarity; /*!< Wait ready polarity. */
 DECL|readCycle|member|uint8_t readCycle; /*!< Read cycle time for sync mode. */
@@ -286,13 +291,16 @@ DECL|semc_ipcmd_nor_dbi_t|typedef|} semc_ipcmd_nor_dbi_t;
 DECL|semc_ipcmd_sdram_t|typedef|} semc_ipcmd_sdram_t;
 DECL|semc_ipcmd_sram_t|typedef|} semc_ipcmd_sram_t;
 DECL|semc_mem_type_t|typedef|} semc_mem_type_t;
+DECL|semc_nand_access_type_t|typedef|} semc_nand_access_type_t;
 DECL|semc_nand_address_option_t|typedef|} semc_nand_address_option_t;
 DECL|semc_nand_column_bit_num_t|typedef|} semc_nand_column_bit_num_t;
 DECL|semc_nand_config_t|typedef|} semc_nand_config_t;
-DECL|semc_nand_type_t|typedef|} semc_nand_type_t;
+DECL|semc_nand_timing_config_t|typedef|} semc_nand_timing_config_t;
 DECL|semc_nor_config_t|typedef|} semc_nor_config_t;
 DECL|semc_norsram_column_bit_num_t|typedef|} semc_norsram_column_bit_num_t;
+DECL|semc_queuea_weight_struct_t|typedef|} semc_queuea_weight_struct_t;
 DECL|semc_queuea_weight_t|typedef|} semc_queuea_weight_t;
+DECL|semc_queueb_weight_struct_t|typedef|} semc_queueb_weight_struct_t;
 DECL|semc_queueb_weight_t|typedef|} semc_queueb_weight_t;
 DECL|semc_rdy_polarity_t|typedef|} semc_rdy_polarity_t;
 DECL|semc_refresh_time_t|typedef|} semc_refresh_time_t;
@@ -307,7 +315,7 @@ DECL|slaveHitSwith|member|uint32_t slaveHitSwith : 8; /*!< weight of read/write 
 DECL|smec_port_size_t|typedef|} smec_port_size_t;
 DECL|tAct2Act_Ns|member|uint8_t tAct2Act_Ns; /*!< Active to active wait time in unit of nanosecond. */
 DECL|tAct2Prechage_Ns|member|uint8_t tAct2Prechage_Ns; /*!< Active to precharge in unit of nanosecond. */
-DECL|tAct2ReadWrtie_Ns|member|uint8_t tAct2ReadWrtie_Ns; /*!< Act to read/write wait time in unit of nanosecond. */
+DECL|tAct2ReadWrite_Ns|member|uint8_t tAct2ReadWrite_Ns; /*!< Act to read/write wait time in unit of nanosecond. */
 DECL|tAddr2WriteHold_Ns|member|uint8_t tAddr2WriteHold_Ns; /*!< Address to write data hold time for async mode. */
 DECL|tAddr2WriteHold_Ns|member|uint8_t tAddr2WriteHold_Ns; /*!< Address to write data hold time for async mode. */
 DECL|tAddrHold_Ns|member|uint8_t tAddrHold_Ns; /*!< The address hold time. */
@@ -362,4 +370,5 @@ DECL|tWriteHold_Ns|member|uint8_t tWriteHold_Ns; /*!< Write hold time for sync m
 DECL|tWriteRecovery_Ns|member|uint8_t tWriteRecovery_Ns; /*!< write recovery time in unit of nanosecond. */
 DECL|tWriteSetup_Ns|member|uint8_t tWriteSetup_Ns; /*!< Write data setup time for sync mode.*/
 DECL|tWriteSetup_Ns|member|uint8_t tWriteSetup_Ns; /*!< Write data setup time for sync mode.*/
+DECL|timingConfig|member|semc_nand_timing_config_t *timingConfig; /*!< SEMC nand timing configuration. */
 DECL|weightPagehit|member|uint32_t weightPagehit : 8; /*!< weight of page hit for queue 1 only .*/

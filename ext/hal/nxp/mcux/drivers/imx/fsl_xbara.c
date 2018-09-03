@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|XBARA_ClearStatusFlags|function|void XBARA_ClearStatusFlags(XBARA_Type *base, uint32_t mask)
 DECL|XBARA_Deinit|function|void XBARA_Deinit(XBARA_Type *base)
 DECL|XBARA_GetInstance|function|static uint32_t XBARA_GetInstance(XBARA_Type *base)

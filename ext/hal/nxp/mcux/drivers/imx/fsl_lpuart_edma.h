@@ -1,3 +1,4 @@
+DECL|FSL_LPUART_EDMA_DRIVER_VERSION|macro|FSL_LPUART_EDMA_DRIVER_VERSION
 DECL|_FSL_LPUART_EDMA_H_|macro|_FSL_LPUART_EDMA_H_
 DECL|_lpuart_edma_handle|struct|struct _lpuart_edma_handle
 DECL|callback|member|lpuart_edma_transfer_callback_t callback; /*!< Callback function. */

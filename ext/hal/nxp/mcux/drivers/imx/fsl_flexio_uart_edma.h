@@ -1,3 +1,4 @@
+DECL|FSL_FLEXIO_UART_EDMA_DRIVER_VERSION|macro|FSL_FLEXIO_UART_EDMA_DRIVER_VERSION
 DECL|_FSL_FLEXIO_UART_EDMA_H_|macro|_FSL_FLEXIO_UART_EDMA_H_
 DECL|_flexio_uart_edma_handle|struct|struct _flexio_uart_edma_handle
 DECL|callback|member|flexio_uart_edma_transfer_callback_t callback; /*!< Callback function. */

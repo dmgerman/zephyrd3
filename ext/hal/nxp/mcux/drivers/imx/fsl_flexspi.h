@@ -54,7 +54,7 @@ DECL|_flexspi_transfer|struct|typedef struct _flexspi_transfer
 DECL|ahbBusTimeoutCycle|member|uint16_t ahbBusTimeoutCycle; /*!< Timeout wait cycle for AHB read/write access,
 DECL|ahbConfig|member|} ahbConfig;
 DECL|ahbGrantTimeoutCycle|member|uint8_t ahbGrantTimeoutCycle; /*!< Timeout wait cycle for AHB command grant,
-DECL|bufferSize|member|uint16_t bufferSize;
+DECL|bufferSize|member|uint16_t bufferSize; /*!< AHB buffer size in byte. */
 DECL|buffer|member|flexspi_ahbBuffer_config_t buffer[FSL_FEATURE_FLEXSPI_AHB_BUFFER_COUNT]; /*!< AHB buffer size. */
 DECL|cmdType|member|flexspi_command_type_t cmdType; /*!< Execution command type. */
 DECL|columnspace|member|uint8_t columnspace; /*!< Column space size. */
@@ -74,6 +74,8 @@ DECL|enableClearAHBBufferOpt|member|bool enableClearAHBBufferOpt; /*!< Enable/di
 DECL|enableCombination|member|bool enableCombination; /*!< Enable/disable combining PORT A and B Data Pins
 DECL|enableDoze|member|bool enableDoze; /*!< Enable/disable doze mode support. */
 DECL|enableHalfSpeedAccess|member|bool enableHalfSpeedAccess; /*!< Enable/disable divide by 2 of the clock for half
+DECL|enablePrefetch|member|bool enablePrefetch; /*!< AHB Read Prefetch Enable for current AHB RX Buffer corresponding Master, allows
+DECL|enableReadAddressOpt|member|bool enableReadAddressOpt; /*!< Enable/disable remove AHB read burst start address alignment limitation.
 DECL|enableSameConfigForAll|member|bool enableSameConfigForAll; /*!< Enable/disable same configuration for all connected devices
 DECL|enableSckBDiffOpt|member|bool enableSckBDiffOpt; /*!< Enable/disable SCKB pad use as SCKA differential clock
 DECL|enableSckFreeRunning|member|bool enableSckFreeRunning; /*!< Enable/disable SCK output free-running. */
@@ -187,9 +189,9 @@ DECL|kStatus_FLEXSPI_Busy|enumerator|kStatus_FLEXSPI_Busy = MAKE_STATUS(kStatusG
 DECL|kStatus_FLEXSPI_IpCommandGrantTimeout|enumerator|kStatus_FLEXSPI_IpCommandGrantTimeout = MAKE_STATUS(kStatusGroup_FLEXSPI, 3), /*!< IP command grant timeout error
 DECL|kStatus_FLEXSPI_IpCommandSequenceError|enumerator|kStatus_FLEXSPI_IpCommandSequenceError = MAKE_STATUS(kStatusGroup_FLEXSPI, 2), /*!< IP command Sequence execution
 DECL|kStatus_FLEXSPI_SequenceExecutionTimeout|enumerator|kStatus_FLEXSPI_SequenceExecutionTimeout = MAKE_STATUS(kStatusGroup_FLEXSPI, 1), /*!< Sequence execution timeout
-DECL|masterIndex|member|uint8_t masterIndex;
+DECL|masterIndex|member|uint8_t masterIndex; /*!< AHB Master ID the AHB RX Buffer is assigned. */
 DECL|port|member|flexspi_port_t port; /*!< Operation port. */
-DECL|priority|member|uint8_t priority;
+DECL|priority|member|uint8_t priority; /*!< This priority for AHB Master Read which this AHB RX Buffer is assigned. */
 DECL|resumeWaitCycle|member|uint8_t resumeWaitCycle; /*!< Wait cycle for idle state before suspended command sequence
 DECL|rxSampleClock|member|flexspi_read_sample_clock_t rxSampleClock; /*!< Sample Clock source selection for Flash Reading. */
 DECL|rxWatermark|member|uint8_t rxWatermark; /*!< FLEXSPI receive watermark value. */

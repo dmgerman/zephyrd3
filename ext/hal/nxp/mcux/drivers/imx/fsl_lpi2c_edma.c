@@ -1,4 +1,5 @@
 DECL|ALIGN_32_MASK|macro|ALIGN_32_MASK
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|LPI2C_GenerateCommands|function|static uint32_t LPI2C_GenerateCommands(lpi2c_master_edma_handle_t *handle)
 DECL|LPI2C_MasterCreateEDMAHandle|function|void LPI2C_MasterCreateEDMAHandle(LPI2C_Type *base, lpi2c_master_edma_handle_t *handle, edma_handle_t *rxDmaHandle, edma_handle_t *txDmaHandle, lpi2c_master_edma_transfer_callback_t callback,
 DECL|LPI2C_MasterEDMACallback|function|static void LPI2C_MasterEDMACallback(edma_handle_t *dmaHandle, void *userData, bool isTransferDone, uint32_t tcds)

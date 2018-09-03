@@ -98,6 +98,7 @@ DECL|ENET_TransmitIRQHandler|function|void ENET_TransmitIRQHandler(ENET_Type *ba
 DECL|ENET_Transmit_IRQHandler|function|void ENET_Transmit_IRQHandler(void)
 DECL|ENET_UDPVERSION|macro|ENET_UDPVERSION
 DECL|ENET_UpdateReadBuffers|function|static void ENET_UpdateReadBuffers(ENET_Type *base, enet_handle_t *handle, uint32_t ringId)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_enet_ring_number|enum|enum _enet_ring_number
 DECL|enet_isr_ring_t|typedef|typedef void (*enet_isr_ring_t)(ENET_Type *base, enet_handle_t *handle, uint32_t ringId);
 DECL|enet_isr_t|typedef|typedef void (*enet_isr_t)(ENET_Type *base, enet_handle_t *handle);

@@ -55,10 +55,10 @@ DECL|baudRate|member|uint32_t baudRate; /*!< Baud Rate for LPSPI. */
 DECL|betweenTransferDelayInNanoSec|member|betweenTransferDelayInNanoSec; /*!< After the SCK delay time with nanoseconds, setting to 0 sets the minimum
 DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Bits per frame, minimum 8, maximum 4096.*/
 DECL|bitsPerFrame|member|uint32_t bitsPerFrame; /*!< Bits per frame, minimum 8, maximum 4096.*/
-DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR . */
-DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR . */
-DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR . */
-DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR . */
+DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR. */
+DECL|bytesEachRead|member|volatile uint8_t bytesEachRead; /*!< Bytes for each read RDR. */
+DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR. */
+DECL|bytesEachWrite|member|volatile uint8_t bytesEachWrite; /*!< Bytes for each write TDR. */
 DECL|callback|member|lpspi_master_transfer_callback_t callback; /*!< Completion callback. */
 DECL|callback|member|lpspi_slave_transfer_callback_t callback; /*!< Completion callback. */
 DECL|configFlags|member|configFlags; /*!< Transfer transfer configuration flags. Set from _lpspi_transfer_config_flag_for_master if the
@@ -181,8 +181,8 @@ DECL|pcsActiveHighOrLow|member|lpspi_pcs_polarity_config_t pcsActiveHighOrLow; /
 DECL|pcsToSckDelayInNanoSec|member|uint32_t pcsToSckDelayInNanoSec; /*!< PCS to SCK delay time in nanoseconds, setting to 0 sets the minimum delay.
 DECL|pinCfg|member|lpspi_pin_config_t pinCfg; /*!< Configures which pins are used for input and output data
 DECL|pinCfg|member|lpspi_pin_config_t pinCfg; /*!< Configures which pins are used for input and output data
-DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times . */
-DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times . */
+DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times. */
+DECL|readRegRemainingTimes|member|volatile uint32_t readRegRemainingTimes; /*!< Read RDR register remaining times. */
 DECL|rxData|member|uint8_t *rxData; /*!< Receive buffer. */
 DECL|rxData|member|uint8_t *volatile rxData; /*!< Receive buffer. */
 DECL|rxData|member|uint8_t *volatile rxData; /*!< Receive buffer. */
@@ -204,6 +204,6 @@ DECL|userData|member|void *userData; /*!< Callback user data. */
 DECL|userData|member|void *userData; /*!< Callback user data. */
 DECL|whichPcs|member|lpspi_which_pcs_t whichPcs; /*!< Desired Peripheral Chip Select (PCS). */
 DECL|whichPcs|member|lpspi_which_pcs_t whichPcs; /*!< Desired Peripheral Chip Select (pcs) */
-DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times . */
-DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times . */
+DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times. */
+DECL|writeRegRemainingTimes|member|volatile uint32_t writeRegRemainingTimes; /*!< Write TDR register remaining times. */
 DECL|writeTcrInIsr|member|volatile bool writeTcrInIsr; /*!< A flag that whether should write TCR in ISR. */

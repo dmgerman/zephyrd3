@@ -1,6 +1,7 @@
 DECL|DCACHE_CleanByRange|function|void DCACHE_CleanByRange(uint32_t address, uint32_t size_byte)
 DECL|DCACHE_CleanInvalidateByRange|function|void DCACHE_CleanInvalidateByRange(uint32_t address, uint32_t size_byte)
 DECL|DCACHE_InvalidateByRange|function|void DCACHE_InvalidateByRange(uint32_t address, uint32_t size_byte)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|ICACHE_InvalidateByRange|function|void ICACHE_InvalidateByRange(uint32_t address, uint32_t size_byte)
 DECL|L1CACHE_InvalidateICacheByRange|function|void L1CACHE_InvalidateICacheByRange(uint32_t address, uint32_t size_byte)
 DECL|L2CACHE_16WAYS_MASK|macro|L2CACHE_16WAYS_MASK

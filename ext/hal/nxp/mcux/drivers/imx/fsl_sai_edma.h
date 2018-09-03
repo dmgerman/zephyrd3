@@ -1,3 +1,4 @@
+DECL|FSL_SAI_EDMA_DRIVER_VERSION|macro|FSL_SAI_EDMA_DRIVER_VERSION
 DECL|_FSL_SAI_EDMA_H_|macro|_FSL_SAI_EDMA_H_
 DECL|_sai_edma_handle|struct|struct _sai_edma_handle
 DECL|bytesPerFrame|member|uint8_t bytesPerFrame; /*!< Bytes in a frame */
@@ -12,6 +13,6 @@ DECL|saiQueue|member|sai_transfer_t saiQueue[SAI_XFER_QUEUE_SIZE]; /*!< Transfer
 DECL|sai_edma_callback_t|typedef|typedef void (*sai_edma_callback_t)(I2S_Type *base, sai_edma_handle_t *handle, status_t status, void *userData);
 DECL|sai_edma_handle_t|typedef|typedef struct _sai_edma_handle sai_edma_handle_t;
 DECL|state|member|uint32_t state; /*!< Internal state for SAI eDMA transfer */
-DECL|tcd|member|edma_tcd_t tcd[SAI_XFER_QUEUE_SIZE + 1U]; /*!< TCD pool for eDMA transfer. */
+DECL|tcd|member|uint8_t tcd[(SAI_XFER_QUEUE_SIZE + 1U) * sizeof(edma_tcd_t)]; /*!< TCD pool for eDMA transfer. */
 DECL|transferSize|member|size_t transferSize[SAI_XFER_QUEUE_SIZE]; /*!< Data bytes need to transfer */
 DECL|userData|member|void *userData; /*!< User callback parameter */

@@ -15,5 +15,6 @@ DECL|ENC_GetStatusFlags|function|uint32_t ENC_GetStatusFlags(ENC_Type *base)
 DECL|ENC_Init|function|void ENC_Init(ENC_Type *base, const enc_config_t *config)
 DECL|ENC_SetInitialPositionValue|function|void ENC_SetInitialPositionValue(ENC_Type *base, uint32_t value)
 DECL|ENC_SetSelfTestConfig|function|void ENC_SetSelfTestConfig(ENC_Type *base, const enc_self_test_config_t *config)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|s_encBases|variable|s_encBases
 DECL|s_encClocks|variable|s_encClocks

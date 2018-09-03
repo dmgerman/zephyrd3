@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|KPP_Deinit|function|void KPP_Deinit(KPP_Type *base)
 DECL|KPP_GetInstance|function|static uint32_t KPP_GetInstance(KPP_Type *base)
 DECL|KPP_Init|function|void KPP_Init(KPP_Type *base, kpp_config_t *configure)

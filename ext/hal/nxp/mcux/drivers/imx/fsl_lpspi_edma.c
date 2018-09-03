@@ -1,5 +1,7 @@
 DECL|EDMA_LpspiMasterCallback|function|static void EDMA_LpspiMasterCallback(edma_handle_t *edmaHandle, void *g_lpspiEdmaPrivateHandle, bool transferDone, uint32_t tcds)
 DECL|EDMA_LpspiSlaveCallback|function|static void EDMA_LpspiSlaveCallback(edma_handle_t *edmaHandle, void *g_lpspiEdmaPrivateHandle, bool transferDone, uint32_t tcds)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
+DECL|LPSPI_GetInstance|function|static uint32_t LPSPI_GetInstance(LPSPI_Type *base)
 DECL|LPSPI_MasterTransferAbortEDMA|function|void LPSPI_MasterTransferAbortEDMA(LPSPI_Type *base, lpspi_master_edma_handle_t *handle)
 DECL|LPSPI_MasterTransferCreateHandleEDMA|function|void LPSPI_MasterTransferCreateHandleEDMA(LPSPI_Type *base, lpspi_master_edma_handle_t *handle, lpspi_master_edma_transfer_callback_t callback, void *userData, edma_handle_t *edmaRxRegToRxDataHandle,
 DECL|LPSPI_MasterTransferEDMA|function|status_t LPSPI_MasterTransferEDMA(LPSPI_Type *base, lpspi_master_edma_handle_t *handle, lpspi_transfer_t *transfer)
@@ -17,5 +19,6 @@ DECL|handle|member|lpspi_master_edma_handle_t *handle; /*!< lpspi_master_edma_ha
 DECL|handle|member|lpspi_slave_edma_handle_t *handle; /*!< lpspi_slave_edma_handle_t handle */
 DECL|lpspi_master_edma_private_handle_t|typedef|} lpspi_master_edma_private_handle_t;
 DECL|lpspi_slave_edma_private_handle_t|typedef|} lpspi_slave_edma_private_handle_t;
+DECL|s_lpspiBases|variable|s_lpspiBases
 DECL|s_lpspiMasterEdmaPrivateHandle|variable|s_lpspiMasterEdmaPrivateHandle
 DECL|s_lpspiSlaveEdmaPrivateHandle|variable|s_lpspiSlaveEdmaPrivateHandle

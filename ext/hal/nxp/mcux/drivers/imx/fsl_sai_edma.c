@@ -1,3 +1,5 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
+DECL|SAI_GetInstance|function|static uint32_t SAI_GetInstance(I2S_Type *base)
 DECL|SAI_RxEDMACallback|function|static void SAI_RxEDMACallback(edma_handle_t *handle, void *userData, bool done, uint32_t tcds)
 DECL|SAI_TransferAbortReceiveEDMA|function|void SAI_TransferAbortReceiveEDMA(I2S_Type *base, sai_edma_handle_t *handle)
 DECL|SAI_TransferAbortSendEDMA|function|void SAI_TransferAbortSendEDMA(I2S_Type *base, sai_edma_handle_t *handle)
@@ -20,4 +22,5 @@ DECL|handle|member|sai_edma_handle_t *handle;
 DECL|kSAI_Busy|enumerator|kSAI_Busy = 0x0U, /*!< SAI is busy */
 DECL|kSAI_Idle|enumerator|kSAI_Idle, /*!< Transfer is done. */
 DECL|s_edmaPrivateHandle|variable|s_edmaPrivateHandle
+DECL|s_saiBases|variable|s_saiBases
 DECL|sai_edma_private_handle_t|typedef|} sai_edma_private_handle_t;

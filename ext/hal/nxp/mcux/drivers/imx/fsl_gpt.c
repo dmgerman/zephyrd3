@@ -1,3 +1,4 @@
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|GPT_Deinit|function|void GPT_Deinit(GPT_Type *base)
 DECL|GPT_GetDefaultConfig|function|void GPT_GetDefaultConfig(gpt_config_t *config)
 DECL|GPT_GetInstance|function|static uint32_t GPT_GetInstance(GPT_Type *base)

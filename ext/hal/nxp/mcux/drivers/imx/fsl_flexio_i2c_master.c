@@ -1,4 +1,4 @@
-DECL|FLEXIO_I2C_GetInstance|function|uint32_t FLEXIO_I2C_GetInstance(FLEXIO_I2C_Type *base)
+DECL|FLEXIO_I2C_GetInstance|function|static uint32_t FLEXIO_I2C_GetInstance(FLEXIO_I2C_Type *base)
 DECL|FLEXIO_I2C_MasterAbortStop|function|void FLEXIO_I2C_MasterAbortStop(FLEXIO_I2C_Type *base)
 DECL|FLEXIO_I2C_MasterClearStatusFlags|function|void FLEXIO_I2C_MasterClearStatusFlags(FLEXIO_I2C_Type *base, uint32_t mask)
 DECL|FLEXIO_I2C_MasterDeinit|function|void FLEXIO_I2C_MasterDeinit(FLEXIO_I2C_Type *base)
@@ -24,6 +24,7 @@ DECL|FLEXIO_I2C_MasterTransferInitStateMachine|function|static status_t FLEXIO_I
 DECL|FLEXIO_I2C_MasterTransferNonBlocking|function|status_t FLEXIO_I2C_MasterTransferNonBlocking(FLEXIO_I2C_Type *base, flexio_i2c_master_handle_t *handle, flexio_i2c_master_transfer_t *xfer)
 DECL|FLEXIO_I2C_MasterTransferRunStateMachine|function|static status_t FLEXIO_I2C_MasterTransferRunStateMachine(FLEXIO_I2C_Type *base, flexio_i2c_master_handle_t *handle, uint32_t statusFlags)
 DECL|FLEXIO_I2C_MasterWriteBlocking|function|status_t FLEXIO_I2C_MasterWriteBlocking(FLEXIO_I2C_Type *base, const uint8_t *txBuff, uint8_t txSize)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexio_i2c_master_transfer_states|enum|enum _flexio_i2c_master_transfer_states
 DECL|kFLEXIO_I2C_CheckAddress|enumerator|kFLEXIO_I2C_CheckAddress = 0x1U, /*!< 7-bit address check state */
 DECL|kFLEXIO_I2C_Idle|enumerator|kFLEXIO_I2C_Idle = 0x0U, /*!< I2C bus idle */

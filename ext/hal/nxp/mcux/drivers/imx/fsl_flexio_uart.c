@@ -3,7 +3,7 @@ DECL|FLEXIO_UART_Deinit|function|void FLEXIO_UART_Deinit(FLEXIO_UART_Type *base)
 DECL|FLEXIO_UART_DisableInterrupts|function|void FLEXIO_UART_DisableInterrupts(FLEXIO_UART_Type *base, uint32_t mask)
 DECL|FLEXIO_UART_EnableInterrupts|function|void FLEXIO_UART_EnableInterrupts(FLEXIO_UART_Type *base, uint32_t mask)
 DECL|FLEXIO_UART_GetDefaultConfig|function|void FLEXIO_UART_GetDefaultConfig(flexio_uart_config_t *userConfig)
-DECL|FLEXIO_UART_GetInstance|function|uint32_t FLEXIO_UART_GetInstance(FLEXIO_UART_Type *base)
+DECL|FLEXIO_UART_GetInstance|function|static uint32_t FLEXIO_UART_GetInstance(FLEXIO_UART_Type *base)
 DECL|FLEXIO_UART_GetStatusFlags|function|uint32_t FLEXIO_UART_GetStatusFlags(FLEXIO_UART_Type *base)
 DECL|FLEXIO_UART_Init|function|status_t FLEXIO_UART_Init(FLEXIO_UART_Type *base, const flexio_uart_config_t *userConfig, uint32_t srcClock_Hz)
 DECL|FLEXIO_UART_ReadBlocking|function|void FLEXIO_UART_ReadBlocking(FLEXIO_UART_Type *base, uint8_t *rxData, size_t rxSize)
@@ -20,6 +20,7 @@ DECL|FLEXIO_UART_TransferSendNonBlocking|function|status_t FLEXIO_UART_TransferS
 DECL|FLEXIO_UART_TransferStartRingBuffer|function|void FLEXIO_UART_TransferStartRingBuffer(FLEXIO_UART_Type *base, flexio_uart_handle_t *handle, uint8_t *ringBuffer, size_t ringBufferSize)
 DECL|FLEXIO_UART_TransferStopRingBuffer|function|void FLEXIO_UART_TransferStopRingBuffer(FLEXIO_UART_Type *base, flexio_uart_handle_t *handle)
 DECL|FLEXIO_UART_WriteBlocking|function|void FLEXIO_UART_WriteBlocking(FLEXIO_UART_Type *base, const uint8_t *txData, size_t txSize)
+DECL|FSL_COMPONENT_ID|macro|FSL_COMPONENT_ID
 DECL|_flexio_uart_transfer_states|enum|enum _flexio_uart_transfer_states
 DECL|kFLEXIO_UART_RxBusy|enumerator|kFLEXIO_UART_RxBusy /* RX busy. */
 DECL|kFLEXIO_UART_RxIdle|enumerator|kFLEXIO_UART_RxIdle, /* RX idle. */
