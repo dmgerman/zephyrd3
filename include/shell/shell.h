@@ -1,5 +1,7 @@
 DECL|SHELL_REGISTER_COMMAND|macro|SHELL_REGISTER_COMMAND
 DECL|SHELL_REGISTER_COMMAND|macro|SHELL_REGISTER_COMMAND
+DECL|SHELL_REGISTER_WITH_LINE2ARGV|macro|SHELL_REGISTER_WITH_LINE2ARGV
+DECL|SHELL_REGISTER_WITH_PROMPT_AND_LINE2ARGV|macro|SHELL_REGISTER_WITH_PROMPT_AND_LINE2ARGV
 DECL|SHELL_REGISTER_WITH_PROMPT|macro|SHELL_REGISTER_WITH_PROMPT
 DECL|SHELL_REGISTER_WITH_PROMPT|macro|SHELL_REGISTER_WITH_PROMPT
 DECL|SHELL_REGISTER|macro|SHELL_REGISTER
@@ -10,10 +12,12 @@ DECL|cmd_name|member|const char *cmd_name;
 DECL|commands|member|const struct shell_cmd *commands;
 DECL|desc|member|const char *desc;
 DECL|help|member|const char *help;
+DECL|line2argv|member|shell_line2argv_function_t line2argv;
 DECL|module_name|member|const char *module_name;
 DECL|prompt|member|shell_prompt_function_t prompt;
 DECL|shell_cmd_function_t|typedef|typedef int (*shell_cmd_function_t)(int argc, char *argv[]);
 DECL|shell_cmd|struct|struct shell_cmd {
+DECL|shell_line2argv_function_t|typedef|typedef size_t (*shell_line2argv_function_t)(char *str, char *argv[],
 DECL|shell_mcumgr_function_t|typedef|typedef int (*shell_mcumgr_function_t)(const char *line, void *arg);
 DECL|shell_module|struct|struct shell_module {
 DECL|shell_prompt_function_t|typedef|typedef const char *(*shell_prompt_function_t)(void);
