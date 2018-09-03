@@ -1,3 +1,5 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|none|member|void *none;
 DECL|offload_context_data|variable|offload_context_data
 DECL|offload_context|struct|static struct offload_context {

@@ -7,14 +7,13 @@ DECL|HTML_HEADER|macro|HTML_HEADER
 DECL|HTTP_STATUS_200_OK_CSS|macro|HTTP_STATUS_200_OK_CSS
 DECL|HTTP_STATUS_200_OK|macro|HTTP_STATUS_200_OK
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_BUF_LEN|macro|MAX_BUF_LEN
 DECL|MAX_URL_LEN|macro|MAX_URL_LEN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|RX_FIFO_DEPTH|macro|RX_FIFO_DEPTH
 DECL|SEND_TIMEOUT|macro|SEND_TIMEOUT
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|data_tcp_pool|function|static struct net_buf_pool *data_tcp_pool(void)
 DECL|data_tcp_pool|macro|data_tcp_pool
 DECL|default_handler|function|static enum http_verdict default_handler(struct http_ctx *ctx, enum http_connection_type type, const struct sockaddr *dst)

@@ -1,6 +1,8 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|_recv_data|function|static void _recv_data(struct net_if *iface, struct net_pkt **pkt)
 DECL|_set_promisc_mode_off_again|function|static void _set_promisc_mode_off_again(struct net_if *iface)

@@ -1,4 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|addr|member|struct in6_addr addr;
 DECL|addr|member|struct in_addr addr;
 DECL|c_addr|member|char c_addr[16];

@@ -1,7 +1,9 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_NUM_INTERFACES|macro|MAX_NUM_INTERFACES
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|address_setup|function|static void address_setup(void)
 DECL|api_funcs|variable|api_funcs

@@ -1,3 +1,5 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|auto_negotiation|member|bool auto_negotiation;
 DECL|delta_bandwidth|member|int delta_bandwidth;
 DECL|eth_fake_api_funcs|variable|eth_fake_api_funcs

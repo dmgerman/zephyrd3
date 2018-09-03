@@ -1,4 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|add_count|variable|add_count
 DECL|clear_called|variable|clear_called
 DECL|hwaddr1|variable|hwaddr1

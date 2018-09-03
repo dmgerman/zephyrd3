@@ -1,3 +1,5 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|TEST_MSG|macro|TEST_MSG
 DECL|handle_test_msg|function|static enum net_verdict handle_test_msg(struct net_pkt *pkt)
 DECL|handler_called|variable|handler_called

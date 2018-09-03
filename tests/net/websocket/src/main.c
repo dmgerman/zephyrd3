@@ -1,6 +1,8 @@
 DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|WAIT_TIME|macro|WAIT_TIME
 DECL|app_ctx_v4|variable|app_ctx_v4
 DECL|app_ctx_v6|variable|app_ctx_v6

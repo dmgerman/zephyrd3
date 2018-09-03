@@ -1,5 +1,7 @@
 DECL|DEBUG|macro|DEBUG
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|__packed|variable|__packed
 DECL|compare_data|function|static bool compare_data(struct net_pkt *pkt, struct net_fragment_data *data)
 DECL|create_pkt|function|static struct net_pkt *create_pkt(struct net_fragment_data *data)

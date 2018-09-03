@@ -2,8 +2,10 @@ DECL|DBG|macro|DBG
 DECL|DBG|macro|DBG
 DECL|FRAG_COUNT|macro|FRAG_COUNT
 DECL|LL_RESERVE|macro|LL_RESERVE
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
