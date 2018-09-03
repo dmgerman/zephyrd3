@@ -1,8 +1,9 @@
 DECL|CC2520_AUTOMATISM|macro|CC2520_AUTOMATISM
 DECL|CC2520_FCS_LENGTH|macro|CC2520_FCS_LENGTH
 DECL|CC2520_TX_THRESHOLD|macro|CC2520_TX_THRESHOLD
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|_cc2520_access|function|bool _cc2520_access(struct cc2520_context *ctx, bool read, u8_t ins, u16_t addr, void *data, size_t length)
 DECL|_cc2520_crypto_ccm|function|static int _cc2520_crypto_ccm(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, u8_t *ccm_nonce)
 DECL|_cc2520_crypto_uccm|function|static int _cc2520_crypto_uccm(struct cipher_ctx *ctx, struct cipher_aead_pkt *apkt, u8_t *ccm_nonce)

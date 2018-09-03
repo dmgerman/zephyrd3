@@ -3,12 +3,13 @@ DECL|L2_CTX_TYPE|macro|L2_CTX_TYPE
 DECL|L2_CTX_TYPE|macro|L2_CTX_TYPE
 DECL|L2|macro|L2
 DECL|L2|macro|L2
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|MTU|macro|MTU
 DECL|MTU|macro|MTU
 DECL|NRF5_802154_CFG|macro|NRF5_802154_CFG
 DECL|NRF5_802154_DATA|macro|NRF5_802154_DATA
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|irq_config_func|member|void (*irq_config_func)(struct device *dev);
 DECL|nrf5_802154_config|struct|struct nrf5_802154_config {
 DECL|nrf5_cca|function|static int nrf5_cca(struct device *dev)

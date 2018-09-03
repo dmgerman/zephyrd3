@@ -1,11 +1,11 @@
 DECL|CC1200_IOCFG0|macro|CC1200_IOCFG0
 DECL|CC1200_IOCFG2|macro|CC1200_IOCFG2
 DECL|CC1200_IOCFG3|macro|CC1200_IOCFG3
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|_cc1200_access_reg|function|bool _cc1200_access_reg(struct cc1200_context *ctx, bool read, u8_t addr,void *data, size_t length, bool extended, bool burst)
 DECL|_cc1200_print_status|function|static void _cc1200_print_status(u8_t status)
-DECL|_cc1200_print_status|macro|_cc1200_print_status
 DECL|cc1200_cca|function|static int cc1200_cca(struct device *dev)
 DECL|cc1200_context_data|variable|cc1200_context_data
 DECL|cc1200_get_capabilities|function|static enum ieee802154_hw_caps cc1200_get_capabilities(struct device *dev)

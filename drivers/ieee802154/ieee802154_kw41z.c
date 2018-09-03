@@ -33,11 +33,12 @@ DECL|L2_CTX_TYPE|macro|L2_CTX_TYPE
 DECL|L2_CTX_TYPE|macro|L2_CTX_TYPE
 DECL|L2|macro|L2
 DECL|L2|macro|L2
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|MTU|macro|MTU
 DECL|MTU|macro|MTU
 DECL|RADIO_0_IRQ_PRIO|macro|RADIO_0_IRQ_PRIO
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|get_mac|function|static inline u8_t *get_mac(struct device *dev)
 DECL|iface|member|struct net_if *iface;
 DECL|irqsts|member|u32_t irqsts;
