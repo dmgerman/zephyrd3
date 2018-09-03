@@ -1,7 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MCAST_IP6ADDR|macro|MCAST_IP6ADDR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|ipv4_addr_add_handler|function|static void ipv4_addr_add_handler(struct net_mgmt_event_callback *cb, u32_t mgmt_event, struct net_if *iface)
 DECL|main|function|void main(void)
 DECL|mgmt_cb|variable|mgmt_cb
