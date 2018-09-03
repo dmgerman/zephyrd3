@@ -1,7 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RECV_BUF_SIZE|macro|RECV_BUF_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|UDP_SLEEP|macro|UDP_SLEEP
 DECL|UDP_WAIT|macro|UDP_WAIT
 DECL|compare_udp_data|function|static int compare_udp_data(struct data *data, const char *buf, u32_t received)

@@ -1,7 +1,6 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_CLIENT_QUEUE|macro|MAX_CLIENT_QUEUE
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|process_tcp4|function|static void process_tcp4(void)
 DECL|process_tcp6|function|static void process_tcp6(void)
 DECL|process_tcp|function|static int process_tcp(struct data *data)

@@ -1,7 +1,6 @@
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RECV_BUF_SIZE|macro|RECV_BUF_SIZE
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|compare_tcp_data|function|static int compare_tcp_data(struct data *data, const char *buf, u32_t received)
 DECL|process_tcp_proto|function|static int process_tcp_proto(struct data *data)
 DECL|process_tcp|function|int process_tcp(void)
