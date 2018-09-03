@@ -1,6 +1,8 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MQTT_BUF_CTR|macro|MQTT_BUF_CTR
 DECL|MQTT_PUBLISHER_MIN_MSG_SIZE|macro|MQTT_PUBLISHER_MIN_MSG_SIZE
 DECL|MSG_SIZE|macro|MSG_SIZE
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|TLS_HS_DEFAULT_TIMEOUT|macro|TLS_HS_DEFAULT_TIMEOUT
 DECL|app_connected|function|void app_connected(struct net_app_ctx *ctx, int status, void *data)
 DECL|app_recv|function|void app_recv(struct net_app_ctx *ctx, struct net_pkt *pkt, int status, void *data)
