@@ -62,6 +62,7 @@ DECL|l2cap_chan_send_credits|function|static void l2cap_chan_send_credits(struct
 DECL|l2cap_chan_send_req|function|static void l2cap_chan_send_req(struct bt_l2cap_le_chan *chan,struct net_buf *buf, s32_t timeout)
 DECL|l2cap_chan_tx_give_credits|function|static void l2cap_chan_tx_give_credits(struct bt_l2cap_le_chan *chan, u16_t credits)
 DECL|l2cap_chan_tx_init|function|static void l2cap_chan_tx_init(struct bt_l2cap_le_chan *chan)
+DECL|l2cap_chan_update_credits|function|static void l2cap_chan_update_credits(struct bt_l2cap_le_chan *chan, struct net_buf *buf)
 DECL|l2cap_change_security|function|static int l2cap_change_security(struct bt_l2cap_le_chan *chan, u16_t err)
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_create_le_sig_pdu|function|static struct net_buf *l2cap_create_le_sig_pdu(struct net_buf *buf, u8_t code, u8_t ident, u16_t len)
