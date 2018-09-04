@@ -13,13 +13,12 @@ DECL|HTTP_STATUS_200_OK|macro|HTTP_STATUS_200_OK
 DECL|HTTP_STATUS_301_RE|macro|HTTP_STATUS_301_RE
 DECL|INSTANCE_INFO|macro|INSTANCE_INFO
 DECL|JSON_COAP_PREFIX|macro|JSON_COAP_PREFIX
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_BUF_LEN|macro|MAX_BUF_LEN
 DECL|MAX_PAYLOAD_LEN|macro|MAX_PAYLOAD_LEN
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RESULT_BUF_SIZE|macro|RESULT_BUF_SIZE
 DECL|RX_FIFO_DEPTH|macro|RX_FIFO_DEPTH
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|WS_HTTP_STACK_SIZE|macro|WS_HTTP_STACK_SIZE
 DECL|_add_int|function|static int _add_int(struct user_data *data, const char *name, int value, bool first, bool add_block)
 DECL|_add_string|function|static int _add_string(struct user_data *data, const char *name, const char *value, bool first, bool add_block)
