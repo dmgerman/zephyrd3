@@ -4,14 +4,13 @@ DECL|LED0_GPIO_CONTROLLER|macro|LED0_GPIO_CONTROLLER
 DECL|LED0_GPIO_PIN|macro|LED0_GPIO_PIN
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|NUM_OBSERVERS|macro|NUM_OBSERVERS
 DECL|NUM_PENDINGS|macro|NUM_PENDINGS
 DECL|PKT_WAIT_TIME|macro|PKT_WAIT_TIME
 DECL|RPL_MAX_REPLY|macro|RPL_MAX_REPLY
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|append_rpl_parent|function|static int append_rpl_parent(struct coap_packet *response)
 DECL|context|variable|context
 DECL|get_from_ip_addr|function|static void get_from_ip_addr(struct coap_packet *cpkt, struct sockaddr_in6 *from)
