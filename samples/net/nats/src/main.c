@@ -6,6 +6,7 @@ DECL|LED0_GPIO_CONTROLLER|macro|LED0_GPIO_CONTROLLER
 DECL|LED0_GPIO_PIN|macro|LED0_GPIO_PIN
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|NATS_AF_INET|macro|NATS_AF_INET
 DECL|NATS_AF_INET|macro|NATS_AF_INET
 DECL|NATS_LOCAL_IP_ADDR|macro|NATS_LOCAL_IP_ADDR
@@ -18,6 +19,7 @@ DECL|NATS_PEER_IP_ADDR|macro|NATS_PEER_IP_ADDR
 DECL|NATS_PEER_IP_ADDR|macro|NATS_PEER_IP_ADDR
 DECL|NATS_SOCKADDR_IN|macro|NATS_SOCKADDR_IN
 DECL|NATS_SOCKADDR_IN|macro|NATS_SOCKADDR_IN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|connect|function|static int connect(struct nats *nats, u16_t port)
 DECL|fake_led|variable|fake_led
 DECL|in_addr_set|function|static int in_addr_set(sa_family_t family, const char *ip_addr, int port, struct sockaddr *_sockaddr)
