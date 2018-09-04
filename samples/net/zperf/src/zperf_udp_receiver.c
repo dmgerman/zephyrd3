@@ -1,6 +1,8 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MAX_DBG_PRINT|macro|MAX_DBG_PRINT
 DECL|MY_SRC_PORT|macro|MY_SRC_PORT
 DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|RX_THREAD_STACK_SIZE|macro|RX_THREAD_STACK_SIZE
 DECL|TAG|macro|TAG
 DECL|build_reply_pkt|function|static inline struct net_pkt *build_reply_pkt(struct net_context *context, struct net_pkt *pkt, struct zperf_udp_datagram *hdr, struct zperf_server_hdr *stat)

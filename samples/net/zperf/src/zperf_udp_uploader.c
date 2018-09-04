@@ -1,3 +1,5 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|TAG|macro|TAG
 DECL|sample_packet|variable|sample_packet
 DECL|stat_received|function|static void stat_received(struct net_context *context, struct net_pkt *pkt, int status, void *user_data)
