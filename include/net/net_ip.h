@@ -111,8 +111,8 @@ DECL|len|member|u16_t len;
 DECL|local_addr|member|struct net_addr *local_addr;
 DECL|local_port|member|u16_t local_port;
 DECL|net_addr_state|enum|enum net_addr_state {
-DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_addr_type type)
-DECL|net_addr_type2str|function|static inline char *net_addr_type2str(enum net_addr_type type)
+DECL|net_addr_type2str|function|static inline const char *net_addr_type2str(enum net_addr_type type)
+DECL|net_addr_type2str|function|static inline const char *net_addr_type2str(enum net_addr_type type)
 DECL|net_addr_type|enum|enum net_addr_type {
 DECL|net_addr|struct|struct net_addr {
 DECL|net_icmp_hdr|struct|struct net_icmp_hdr {
