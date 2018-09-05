@@ -1,8 +1,0 @@
-DECL|_sys_event_logger_put_non_preemptible|function|void _sys_event_logger_put_non_preemptible(struct event_logger *logger, u16_t event_id, u32_t *event_data, u8_t data_size)
-DECL|event_logger_get|function|static int event_logger_get(struct event_logger *logger, u16_t *event_id, u8_t *dropped_event_count, u32_t *buffer, u8_t *buffer_size)
-DECL|event_logger_put|function|static void event_logger_put(struct event_logger *logger, u16_t event_id, u32_t *event_data, u8_t data_size, void (*sem_give_fn)(struct k_sem *))
-DECL|sys_event_logger_get_wait_timeout|function|int sys_event_logger_get_wait_timeout(struct event_logger *logger, u16_t *event_id, u8_t *dropped_event_count, u32_t *buffer, u8_t *buffer_size, u32_t timeout)
-DECL|sys_event_logger_get_wait|function|int sys_event_logger_get_wait(struct event_logger *logger, u16_t *event_id, u8_t *dropped_event_count, u32_t *buffer, u8_t *buffer_size)
-DECL|sys_event_logger_get|function|int sys_event_logger_get(struct event_logger *logger, u16_t *event_id, u8_t *dropped_event_count, u32_t *buffer, u8_t *buffer_size)
-DECL|sys_event_logger_init|function|void sys_event_logger_init(struct event_logger *logger, u32_t *logger_buffer, u32_t buffer_size)
-DECL|sys_event_logger_put|function|void sys_event_logger_put(struct event_logger *logger, u16_t event_id, u32_t *event_data, u8_t data_size)
