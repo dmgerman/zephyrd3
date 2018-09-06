@@ -28,7 +28,6 @@ DECL|mbedtls_md4_update_ret|function|int mbedtls_md4_update_ret( mbedtls_md4_con
 DECL|mbedtls_md4_update|function|void mbedtls_md4_update( mbedtls_md4_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_md4|function|void mbedtls_md4( const unsigned char *input, size_t ilen, unsigned char output[16] )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|md4_padding|variable|md4_padding
 DECL|md4_test_strlen|variable|md4_test_strlen
 DECL|md4_test_str|variable|md4_test_str

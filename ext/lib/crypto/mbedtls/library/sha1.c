@@ -34,8 +34,6 @@ DECL|mbedtls_sha1_starts|function|void mbedtls_sha1_starts( mbedtls_sha1_context
 DECL|mbedtls_sha1_update_ret|function|int mbedtls_sha1_update_ret( mbedtls_sha1_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha1_update|function|void mbedtls_sha1_update( mbedtls_sha1_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha1|function|void mbedtls_sha1( const unsigned char *input, size_t ilen, unsigned char output[20] )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
-DECL|sha1_padding|variable|sha1_padding
 DECL|sha1_test_buflen|variable|sha1_test_buflen
 DECL|sha1_test_buf|variable|sha1_test_buf
 DECL|sha1_test_sum|variable|sha1_test_sum

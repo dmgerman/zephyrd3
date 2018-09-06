@@ -1,7 +1,6 @@
 DECL|MUTEX_INIT|macro|MUTEX_INIT
 DECL|MUTEX_INIT|macro|MUTEX_INIT
 DECL|MUTEX_INIT|variable|MUTEX_INIT
-DECL|MUTEX_INIT|variable|MUTEX_INIT
 DECL|mbedtls_mutex_free|variable|mbedtls_mutex_free
 DECL|mbedtls_mutex_free|variable|mbedtls_mutex_free
 DECL|mbedtls_mutex_init|variable|mbedtls_mutex_init

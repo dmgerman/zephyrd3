@@ -29,8 +29,6 @@ DECL|mbedtls_sha512_starts|function|void mbedtls_sha512_starts( mbedtls_sha512_c
 DECL|mbedtls_sha512_update_ret|function|int mbedtls_sha512_update_ret( mbedtls_sha512_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha512_update|function|void mbedtls_sha512_update( mbedtls_sha512_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha512|function|void mbedtls_sha512( const unsigned char *input, size_t ilen, unsigned char output[64], int is384 )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
-DECL|sha512_padding|variable|sha512_padding
 DECL|sha512_test_buflen|variable|sha512_test_buflen
 DECL|sha512_test_buf|variable|sha512_test_buf
 DECL|sha512_test_sum|variable|sha512_test_sum

@@ -9,5 +9,4 @@ DECL|mbedtls_x509_csr_init|function|void mbedtls_x509_csr_init( mbedtls_x509_csr
 DECL|mbedtls_x509_csr_parse_der|function|int mbedtls_x509_csr_parse_der( mbedtls_x509_csr *csr, const unsigned char *buf, size_t buflen )
 DECL|mbedtls_x509_csr_parse_file|function|int mbedtls_x509_csr_parse_file( mbedtls_x509_csr *csr, const char *path )
 DECL|mbedtls_x509_csr_parse|function|int mbedtls_x509_csr_parse( mbedtls_x509_csr *csr, const unsigned char *buf, size_t buflen )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|x509_csr_get_version|function|static int x509_csr_get_version( unsigned char **p, const unsigned char *end, int *ver )

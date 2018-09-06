@@ -1,5 +1,7 @@
 DECL|CHECK_RANGE|macro|CHECK_RANGE
 DECL|CHECK|macro|CHECK
+DECL|_POSIX_C_SOURCE|macro|_POSIX_C_SOURCE
+DECL|_POSIX_C_SOURCE|macro|_POSIX_C_SOURCE
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
@@ -25,7 +27,6 @@ DECL|mbedtls_x509_time_is_past|function|int mbedtls_x509_time_is_past( const mbe
 DECL|x509_check_time|function|static int x509_check_time( const mbedtls_x509_time *before, const mbedtls_x509_time *after )
 DECL|x509_date_is_valid|function|static int x509_date_is_valid(const mbedtls_x509_time *t )
 DECL|x509_get_attr_type_value|function|static int x509_get_attr_type_value( unsigned char **p, const unsigned char *end, mbedtls_x509_name *cur )
-DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )
 DECL|x509_get_current_time|function|static int x509_get_current_time( mbedtls_x509_time *now )
 DECL|x509_get_hash_alg|function|static int x509_get_hash_alg( const mbedtls_x509_buf *alg, mbedtls_md_type_t *md_alg )
 DECL|x509_parse_int|function|static int x509_parse_int( unsigned char **p, size_t n, int *res )

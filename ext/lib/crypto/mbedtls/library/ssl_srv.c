@@ -3,9 +3,9 @@ DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_ssl_conf_dtls_cookies|function|void mbedtls_ssl_conf_dtls_cookies( mbedtls_ssl_config *conf, mbedtls_ssl_cookie_write_t *f_cookie_write, mbedtls_ssl_cookie_check_t *f_cookie_check, void *p_cookie )
 DECL|mbedtls_ssl_handshake_server_step|function|int mbedtls_ssl_handshake_server_step( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_set_client_transport_id|function|int mbedtls_ssl_set_client_transport_id( mbedtls_ssl_context *ssl, const unsigned char *info, size_t ilen )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|ssl_check_key_curve|function|static int ssl_check_key_curve( mbedtls_pk_context *pk, const mbedtls_ecp_curve_info **curves )
 DECL|ssl_ciphersuite_match|function|static int ssl_ciphersuite_match( mbedtls_ssl_context *ssl, int suite_id, const mbedtls_ssl_ciphersuite_t **ciphersuite_info )
+DECL|ssl_decrypt_encrypted_pms|function|static int ssl_decrypt_encrypted_pms( mbedtls_ssl_context *ssl, const unsigned char *p, const unsigned char *end, unsigned char *peer_pms, size_t *peer_pmslen,
 DECL|ssl_get_ecdh_params_from_cert|function|static int ssl_get_ecdh_params_from_cert( mbedtls_ssl_context *ssl )
 DECL|ssl_parse_alpn_ext|function|static int ssl_parse_alpn_ext( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
 DECL|ssl_parse_certificate_verify|function|static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl )
@@ -28,6 +28,9 @@ DECL|ssl_parse_supported_elliptic_curves|function|static int ssl_parse_supported
 DECL|ssl_parse_supported_point_formats|function|static int ssl_parse_supported_point_formats( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
 DECL|ssl_parse_truncated_hmac_ext|function|static int ssl_parse_truncated_hmac_ext( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
 DECL|ssl_pick_cert|function|static int ssl_pick_cert( mbedtls_ssl_context *ssl, const mbedtls_ssl_ciphersuite_t * ciphersuite_info )
+DECL|ssl_prepare_server_key_exchange|function|static int ssl_prepare_server_key_exchange( mbedtls_ssl_context *ssl, size_t *signature_len )
+DECL|ssl_resume_decrypt_pms|function|static int ssl_resume_decrypt_pms( mbedtls_ssl_context *ssl, unsigned char *peer_pms, size_t *peer_pmslen, size_t peer_pmssize )
+DECL|ssl_resume_server_key_exchange|function|static int ssl_resume_server_key_exchange( mbedtls_ssl_context *ssl, size_t *signature_len )
 DECL|ssl_write_alpn_ext|function|static void ssl_write_alpn_ext( mbedtls_ssl_context *ssl, unsigned char *buf, size_t *olen )
 DECL|ssl_write_certificate_request|function|static int ssl_write_certificate_request( mbedtls_ssl_context *ssl )
 DECL|ssl_write_certificate_request|function|static int ssl_write_certificate_request( mbedtls_ssl_context *ssl )

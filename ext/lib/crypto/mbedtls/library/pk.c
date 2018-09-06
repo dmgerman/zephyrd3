@@ -14,5 +14,4 @@ DECL|mbedtls_pk_setup|function|int mbedtls_pk_setup( mbedtls_pk_context *ctx, co
 DECL|mbedtls_pk_sign|function|int mbedtls_pk_sign( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg, const unsigned char *hash, size_t hash_len, unsigned char *sig, size_t *sig_len, int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
 DECL|mbedtls_pk_verify_ext|function|int mbedtls_pk_verify_ext( mbedtls_pk_type_t type, const void *options, mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg, const unsigned char *hash, size_t hash_len, const unsigned char *sig, size_t sig_len )
 DECL|mbedtls_pk_verify|function|int mbedtls_pk_verify( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg, const unsigned char *hash, size_t hash_len, const unsigned char *sig, size_t sig_len )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|pk_hashlen_helper|function|static inline int pk_hashlen_helper( mbedtls_md_type_t md_alg, size_t *hash_len )

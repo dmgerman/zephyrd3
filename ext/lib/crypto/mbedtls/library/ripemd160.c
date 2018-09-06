@@ -64,7 +64,6 @@ DECL|mbedtls_ripemd160_starts|function|void mbedtls_ripemd160_starts( mbedtls_ri
 DECL|mbedtls_ripemd160_update_ret|function|int mbedtls_ripemd160_update_ret( mbedtls_ripemd160_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_ripemd160_update|function|void mbedtls_ripemd160_update( mbedtls_ripemd160_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_ripemd160|function|void mbedtls_ripemd160( const unsigned char *input, size_t ilen, unsigned char output[20] )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|ripemd160_padding|variable|ripemd160_padding
 DECL|ripemd160_test_md|variable|ripemd160_test_md
 DECL|ripemd160_test_strlen|variable|ripemd160_test_strlen

@@ -19,4 +19,3 @@ DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
 DECL|mbedtls_test_dhm_params_len|variable|mbedtls_test_dhm_params_len
 DECL|mbedtls_test_dhm_params|variable|mbedtls_test_dhm_params
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {

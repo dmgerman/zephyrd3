@@ -14,6 +14,7 @@ DECL|mbedtls_ssl_check_sig_hash|function|int mbedtls_ssl_check_sig_hash( const m
 DECL|mbedtls_ssl_close_notify|function|int mbedtls_ssl_close_notify( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_conf_alpn_protocols|function|int mbedtls_ssl_conf_alpn_protocols( mbedtls_ssl_config *conf, const char **protos )
 DECL|mbedtls_ssl_conf_arc4_support|function|void mbedtls_ssl_conf_arc4_support( mbedtls_ssl_config *conf, char arc4 )
+DECL|mbedtls_ssl_conf_async_private_cb|function|void mbedtls_ssl_conf_async_private_cb( mbedtls_ssl_config *conf, mbedtls_ssl_async_sign_t *f_async_sign, mbedtls_ssl_async_decrypt_t *f_async_decrypt, mbedtls_ssl_async_resume_t *f_async_resume,
 DECL|mbedtls_ssl_conf_authmode|function|void mbedtls_ssl_conf_authmode( mbedtls_ssl_config *conf, int authmode )
 DECL|mbedtls_ssl_conf_ca_chain|function|void mbedtls_ssl_conf_ca_chain( mbedtls_ssl_config *conf, mbedtls_x509_crt *ca_chain, mbedtls_x509_crl *ca_crl )
 DECL|mbedtls_ssl_conf_cbc_record_splitting|function|void mbedtls_ssl_conf_cbc_record_splitting( mbedtls_ssl_config *conf, char split )
@@ -34,6 +35,7 @@ DECL|mbedtls_ssl_conf_endpoint|function|void mbedtls_ssl_conf_endpoint( mbedtls_
 DECL|mbedtls_ssl_conf_export_keys_cb|function|void mbedtls_ssl_conf_export_keys_cb( mbedtls_ssl_config *conf, mbedtls_ssl_export_keys_t *f_export_keys, void *p_export_keys )
 DECL|mbedtls_ssl_conf_extended_master_secret|function|void mbedtls_ssl_conf_extended_master_secret( mbedtls_ssl_config *conf, char ems )
 DECL|mbedtls_ssl_conf_fallback|function|void mbedtls_ssl_conf_fallback( mbedtls_ssl_config *conf, char fallback )
+DECL|mbedtls_ssl_conf_get_async_config_data|function|void *mbedtls_ssl_conf_get_async_config_data( const mbedtls_ssl_config *conf )
 DECL|mbedtls_ssl_conf_handshake_timeout|function|void mbedtls_ssl_conf_handshake_timeout( mbedtls_ssl_config *conf, uint32_t min, uint32_t max )
 DECL|mbedtls_ssl_conf_legacy_renegotiation|function|void mbedtls_ssl_conf_legacy_renegotiation( mbedtls_ssl_config *conf, int allow_legacy )
 DECL|mbedtls_ssl_conf_max_frag_len|function|int mbedtls_ssl_conf_max_frag_len( mbedtls_ssl_config *conf, unsigned char mfl_code )
@@ -65,10 +67,11 @@ DECL|mbedtls_ssl_fetch_input|function|int mbedtls_ssl_fetch_input( mbedtls_ssl_c
 DECL|mbedtls_ssl_flush_output|function|int mbedtls_ssl_flush_output( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_free|function|void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_alpn_protocol|function|const char *mbedtls_ssl_get_alpn_protocol( const mbedtls_ssl_context *ssl )
+DECL|mbedtls_ssl_get_async_operation_data|function|void *mbedtls_ssl_get_async_operation_data( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_bytes_avail|function|size_t mbedtls_ssl_get_bytes_avail( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_ciphersuite|function|const char *mbedtls_ssl_get_ciphersuite( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_key_exchange_md_ssl_tls|function|int mbedtls_ssl_get_key_exchange_md_ssl_tls( mbedtls_ssl_context *ssl, unsigned char *output, unsigned char *data, size_t data_len )
-DECL|mbedtls_ssl_get_key_exchange_md_tls1_2|function|int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl, unsigned char *output, unsigned char *data, size_t data_len, mbedtls_md_type_t md_alg )
+DECL|mbedtls_ssl_get_key_exchange_md_tls1_2|function|int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl, unsigned char *hash, size_t *hashlen, unsigned char *data, size_t data_len, mbedtls_md_type_t md_alg )
 DECL|mbedtls_ssl_get_max_frag_len|function|size_t mbedtls_ssl_get_max_frag_len( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_peer_cert|function|const mbedtls_x509_crt *mbedtls_ssl_get_peer_cert( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_record_expansion|function|int mbedtls_ssl_get_record_expansion( const mbedtls_ssl_context *ssl )
@@ -76,7 +79,7 @@ DECL|mbedtls_ssl_get_session|function|int mbedtls_ssl_get_session( const mbedtls
 DECL|mbedtls_ssl_get_verify_result|function|uint32_t mbedtls_ssl_get_verify_result( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_get_version|function|const char *mbedtls_ssl_get_version( const mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_handle_message_type|function|int mbedtls_ssl_handle_message_type( mbedtls_ssl_context *ssl )
-DECL|mbedtls_ssl_handshake_free|function|void mbedtls_ssl_handshake_free( mbedtls_ssl_handshake_params *handshake )
+DECL|mbedtls_ssl_handshake_free|function|void mbedtls_ssl_handshake_free( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_handshake_step|function|int mbedtls_ssl_handshake_step( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_handshake_wrapup|function|void mbedtls_ssl_handshake_wrapup( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_handshake|function|int mbedtls_ssl_handshake( mbedtls_ssl_context *ssl )
@@ -111,6 +114,7 @@ DECL|mbedtls_ssl_send_flight_completed|function|void mbedtls_ssl_send_flight_com
 DECL|mbedtls_ssl_session_free|function|void mbedtls_ssl_session_free( mbedtls_ssl_session *session )
 DECL|mbedtls_ssl_session_init|function|void mbedtls_ssl_session_init( mbedtls_ssl_session *session )
 DECL|mbedtls_ssl_session_reset|function|int mbedtls_ssl_session_reset( mbedtls_ssl_context *ssl )
+DECL|mbedtls_ssl_set_async_operation_data|function|void mbedtls_ssl_set_async_operation_data( mbedtls_ssl_context *ssl, void *ctx )
 DECL|mbedtls_ssl_set_bio|function|void mbedtls_ssl_set_bio( mbedtls_ssl_context *ssl, void *p_bio, mbedtls_ssl_send_t *f_send, mbedtls_ssl_recv_t *f_recv, mbedtls_ssl_recv_timeout_t *f_recv_timeout )
 DECL|mbedtls_ssl_set_calc_verify_md|function|int mbedtls_ssl_set_calc_verify_md( mbedtls_ssl_context *ssl, int md )
 DECL|mbedtls_ssl_set_hostname|function|int mbedtls_ssl_set_hostname( mbedtls_ssl_context *ssl, const char *hostname )
@@ -136,8 +140,6 @@ DECL|mbedtls_ssl_write_finished|function|int mbedtls_ssl_write_finished( mbedtls
 DECL|mbedtls_ssl_write_record|function|int mbedtls_ssl_write_record( mbedtls_ssl_context *ssl )
 DECL|mbedtls_ssl_write_version|function|void mbedtls_ssl_write_version( int major, int minor, int transport, unsigned char ver[2] )
 DECL|mbedtls_ssl_write|function|int mbedtls_ssl_write( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
-DECL|mfl_code_to_length|variable|mfl_code_to_length
 DECL|ssl3_prf|function|static int ssl3_prf( const unsigned char *secret, size_t slen, const char *label, const unsigned char *random, size_t rlen, unsigned char *dstbuf, size_t dlen )
 DECL|ssl_append_key_cert|function|static int ssl_append_key_cert( mbedtls_ssl_key_cert **head, mbedtls_x509_crt *cert, mbedtls_pk_context *key )
 DECL|ssl_bitmask_check|function|static int ssl_bitmask_check( unsigned char *mask, size_t len )
@@ -171,12 +173,14 @@ DECL|ssl_handshake_wrapup_free_hs_transform|function|static void ssl_handshake_w
 DECL|ssl_key_cert_free|function|static void ssl_key_cert_free( mbedtls_ssl_key_cert *key_cert )
 DECL|ssl_load_six_bytes|function|static inline uint64_t ssl_load_six_bytes( unsigned char *buf )
 DECL|ssl_mac|function|static void ssl_mac( mbedtls_md_context_t *md_ctx, const unsigned char *secret, const unsigned char *buf, size_t len, const unsigned char *ctr, int type, unsigned char out[SSL_MAC_MAX_BYTES] )
+DECL|ssl_mfl_code_to_length|function|static unsigned int ssl_mfl_code_to_length( int mfl )
 DECL|ssl_parse_record_header|function|static int ssl_parse_record_header( mbedtls_ssl_context *ssl )
 DECL|ssl_prepare_record_content|function|static int ssl_prepare_record_content( mbedtls_ssl_context *ssl )
 DECL|ssl_preset_default_hashes|variable|ssl_preset_default_hashes
 DECL|ssl_preset_suiteb_ciphersuites|variable|ssl_preset_suiteb_ciphersuites
 DECL|ssl_preset_suiteb_curves|variable|ssl_preset_suiteb_curves
 DECL|ssl_preset_suiteb_hashes|variable|ssl_preset_suiteb_hashes
+DECL|ssl_read_memory|function|static void ssl_read_memory( unsigned char *p, size_t len )
 DECL|ssl_reassemble_dtls_handshake|function|static int ssl_reassemble_dtls_handshake( mbedtls_ssl_context *ssl )
 DECL|ssl_resend_hello_request|function|static int ssl_resend_hello_request( mbedtls_ssl_context *ssl )
 DECL|ssl_reset_retransmit_timeout|function|static void ssl_reset_retransmit_timeout( mbedtls_ssl_context *ssl )

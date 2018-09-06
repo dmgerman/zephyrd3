@@ -42,7 +42,6 @@ DECL|mbedtls_rsa_rsassa_pss_verify|function|int mbedtls_rsa_rsassa_pss_verify( m
 DECL|mbedtls_rsa_self_test|function|int mbedtls_rsa_self_test( int verbose )
 DECL|mbedtls_rsa_set_padding|function|void mbedtls_rsa_set_padding( mbedtls_rsa_context *ctx, int padding, int hash_id )
 DECL|mbedtls_safer_memcmp|function|static inline int mbedtls_safer_memcmp( const void *a, const void *b, size_t n )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|mgf_mask|function|static int mgf_mask( unsigned char *dst, size_t dlen, unsigned char *src, size_t slen, mbedtls_md_context_t *md_ctx )
 DECL|myrand|function|static int myrand( void *rng_state, unsigned char *output, size_t len )
 DECL|rsa_check_context|function|static int rsa_check_context( mbedtls_rsa_context const *ctx, int is_priv, int blinding_needed )

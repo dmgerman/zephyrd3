@@ -13,4 +13,3 @@ DECL|mbedtls_asn1_get_sequence_of|function|int mbedtls_asn1_get_sequence_of( uns
 DECL|mbedtls_asn1_get_tag|function|int mbedtls_asn1_get_tag( unsigned char **p, const unsigned char *end, size_t *len, int tag )
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {

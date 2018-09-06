@@ -13,4 +13,3 @@ DECL|mbedtls_blowfish_crypt_ecb|function|int mbedtls_blowfish_crypt_ecb( mbedtls
 DECL|mbedtls_blowfish_free|function|void mbedtls_blowfish_free( mbedtls_blowfish_context *ctx )
 DECL|mbedtls_blowfish_init|function|void mbedtls_blowfish_init( mbedtls_blowfish_context *ctx )
 DECL|mbedtls_blowfish_setkey|function|int mbedtls_blowfish_setkey( mbedtls_blowfish_context *ctx, const unsigned char *key, unsigned int keybits )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {

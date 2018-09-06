@@ -23,7 +23,6 @@ DECL|mbedtls_gcm_setkey|function|int mbedtls_gcm_setkey( mbedtls_gcm_context *ct
 DECL|mbedtls_gcm_starts|function|int mbedtls_gcm_starts( mbedtls_gcm_context *ctx, int mode, const unsigned char *iv, size_t iv_len, const unsigned char *add,
 DECL|mbedtls_gcm_update|function|int mbedtls_gcm_update( mbedtls_gcm_context *ctx, size_t length, const unsigned char *input, unsigned char *output )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|pt_index|variable|pt_index
 DECL|pt_len|variable|pt_len
 DECL|pt|variable|pt

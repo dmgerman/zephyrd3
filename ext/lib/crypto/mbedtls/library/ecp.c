@@ -72,5 +72,4 @@ DECL|mbedtls_ecp_tls_write_group|function|int mbedtls_ecp_tls_write_group( const
 DECL|mbedtls_ecp_tls_write_point|function|int mbedtls_ecp_tls_write_point( const mbedtls_ecp_group *grp, const mbedtls_ecp_point *pt, int format, size_t *olen, unsigned char *buf, size_t blen )
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|mul_count|variable|mul_count

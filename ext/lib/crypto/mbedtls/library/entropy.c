@@ -16,4 +16,3 @@ DECL|mbedtls_entropy_update_nv_seed|function|int mbedtls_entropy_update_nv_seed(
 DECL|mbedtls_entropy_update_seed_file|function|int mbedtls_entropy_update_seed_file( mbedtls_entropy_context *ctx, const char *path )
 DECL|mbedtls_entropy_write_seed_file|function|int mbedtls_entropy_write_seed_file( mbedtls_entropy_context *ctx, const char *path )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {

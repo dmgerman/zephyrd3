@@ -44,6 +44,5 @@ DECL|mbedtls_camellia_self_test|function|int mbedtls_camellia_self_test( int ver
 DECL|mbedtls_camellia_setkey_dec|function|int mbedtls_camellia_setkey_dec( mbedtls_camellia_context *ctx, const unsigned char *key, unsigned int keybits )
 DECL|mbedtls_camellia_setkey_enc|function|int mbedtls_camellia_setkey_enc( mbedtls_camellia_context *ctx, const unsigned char *key, unsigned int keybits )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|shifts|variable|shifts
 DECL|transposes|variable|transposes

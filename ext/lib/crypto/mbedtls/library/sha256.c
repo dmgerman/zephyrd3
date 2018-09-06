@@ -28,8 +28,6 @@ DECL|mbedtls_sha256_starts|function|void mbedtls_sha256_starts( mbedtls_sha256_c
 DECL|mbedtls_sha256_update_ret|function|int mbedtls_sha256_update_ret( mbedtls_sha256_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha256_update|function|void mbedtls_sha256_update( mbedtls_sha256_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_sha256|function|void mbedtls_sha256( const unsigned char *input, size_t ilen, unsigned char output[32], int is224 )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
-DECL|sha256_padding|variable|sha256_padding
 DECL|sha256_test_buflen|variable|sha256_test_buflen
 DECL|sha256_test_buf|variable|sha256_test_buf
 DECL|sha256_test_sum|variable|sha256_test_sum

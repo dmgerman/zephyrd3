@@ -19,7 +19,6 @@ DECL|mbedtls_ctr_drbg_update_seed_file|function|int mbedtls_ctr_drbg_update_seed
 DECL|mbedtls_ctr_drbg_update|function|void mbedtls_ctr_drbg_update( mbedtls_ctr_drbg_context *ctx, const unsigned char *additional, size_t add_len )
 DECL|mbedtls_ctr_drbg_write_seed_file|function|int mbedtls_ctr_drbg_write_seed_file( mbedtls_ctr_drbg_context *ctx, const char *path )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|nonce_pers_nopr|variable|nonce_pers_nopr
 DECL|nonce_pers_pr|variable|nonce_pers_pr
 DECL|result_nopr|variable|result_nopr

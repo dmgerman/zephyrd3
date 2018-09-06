@@ -18,5 +18,4 @@ DECL|mbedtls_x509write_crt_set_subject_key|function|void mbedtls_x509write_crt_s
 DECL|mbedtls_x509write_crt_set_subject_name|function|int mbedtls_x509write_crt_set_subject_name( mbedtls_x509write_cert *ctx, const char *subject_name )
 DECL|mbedtls_x509write_crt_set_validity|function|int mbedtls_x509write_crt_set_validity( mbedtls_x509write_cert *ctx, const char *not_before, const char *not_after )
 DECL|mbedtls_x509write_crt_set_version|function|void mbedtls_x509write_crt_set_version( mbedtls_x509write_cert *ctx, int version )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|x509_write_time|function|static int x509_write_time( unsigned char **p, unsigned char *start, const char *t, size_t size )

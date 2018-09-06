@@ -37,6 +37,5 @@ DECL|mbedtls_cipher_cmac|function|int mbedtls_cipher_cmac( const mbedtls_cipher_
 DECL|mbedtls_cmac_self_test|function|int mbedtls_cmac_self_test( int verbose )
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|test_aes128_cmac_prf|function|static int test_aes128_cmac_prf( int verbose )
 DECL|test_message|variable|test_message

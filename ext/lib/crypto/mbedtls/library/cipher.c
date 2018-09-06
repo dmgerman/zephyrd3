@@ -1,4 +1,3 @@
-DECL|MBEDTLS_CIPHER_MODE_STREAM|macro|MBEDTLS_CIPHER_MODE_STREAM
 DECL|add_one_and_zeros_padding|function|static void add_one_and_zeros_padding( unsigned char *output, size_t output_len, size_t data_len )
 DECL|add_pkcs_padding|function|static void add_pkcs_padding( unsigned char *output, size_t output_len, size_t data_len )
 DECL|add_zeros_and_len_padding|function|static void add_zeros_and_len_padding( unsigned char *output, size_t output_len, size_t data_len )
@@ -28,6 +27,6 @@ DECL|mbedtls_cipher_setup|function|int mbedtls_cipher_setup( mbedtls_cipher_cont
 DECL|mbedtls_cipher_update_ad|function|int mbedtls_cipher_update_ad( mbedtls_cipher_context_t *ctx, const unsigned char *ad, size_t ad_len )
 DECL|mbedtls_cipher_update|function|int mbedtls_cipher_update( mbedtls_cipher_context_t *ctx, const unsigned char *input, size_t ilen, unsigned char *output, size_t *olen )
 DECL|mbedtls_cipher_write_tag|function|int mbedtls_cipher_write_tag( mbedtls_cipher_context_t *ctx, unsigned char *tag, size_t tag_len )
+DECL|mbedtls_constant_time_memcmp|function|static int mbedtls_constant_time_memcmp( const void *v1, const void *v2, size_t len )
 DECL|mbedtls_free|macro|mbedtls_free
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|supported_init|variable|supported_init

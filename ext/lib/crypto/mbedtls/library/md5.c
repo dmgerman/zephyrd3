@@ -25,8 +25,6 @@ DECL|mbedtls_md5_update_ret|function|int mbedtls_md5_update_ret( mbedtls_md5_con
 DECL|mbedtls_md5_update|function|void mbedtls_md5_update( mbedtls_md5_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_md5|function|void mbedtls_md5( const unsigned char *input, size_t ilen, unsigned char output[16] )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
-DECL|md5_padding|variable|md5_padding
 DECL|md5_test_buflen|variable|md5_test_buflen
 DECL|md5_test_buf|variable|md5_test_buf
 DECL|md5_test_sum|variable|md5_test_sum

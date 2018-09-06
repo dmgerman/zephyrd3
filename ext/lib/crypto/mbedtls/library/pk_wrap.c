@@ -19,7 +19,6 @@ DECL|mbedtls_eckeydh_info|variable|mbedtls_eckeydh_info
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_rsa_alt_info|variable|mbedtls_rsa_alt_info
 DECL|mbedtls_rsa_info|variable|mbedtls_rsa_info
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|rsa_alloc_wrap|function|static void *rsa_alloc_wrap( void )
 DECL|rsa_alt_alloc_wrap|function|static void *rsa_alt_alloc_wrap( void )
 DECL|rsa_alt_can_do|function|static int rsa_alt_can_do( mbedtls_pk_type_t type )

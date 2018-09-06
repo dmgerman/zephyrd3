@@ -34,7 +34,6 @@ DECL|mbedtls_memory_buffer_alloc_self_test|function|int mbedtls_memory_buffer_al
 DECL|mbedtls_memory_buffer_alloc_status|function|void mbedtls_memory_buffer_alloc_status( void )
 DECL|mbedtls_memory_buffer_alloc_verify|function|int mbedtls_memory_buffer_alloc_verify( void )
 DECL|mbedtls_memory_buffer_set_verify|function|void mbedtls_memory_buffer_set_verify( int verify )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|memory_header|typedef|typedef struct _memory_header memory_header;
 DECL|mutex|member|mbedtls_threading_mutex_t mutex;
 DECL|next_free|member|memory_header *next_free;

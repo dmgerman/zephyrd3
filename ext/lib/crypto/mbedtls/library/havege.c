@@ -8,4 +8,3 @@ DECL|havege_fill|function|static void havege_fill( mbedtls_havege_state *hs )
 DECL|mbedtls_havege_free|function|void mbedtls_havege_free( mbedtls_havege_state *hs )
 DECL|mbedtls_havege_init|function|void mbedtls_havege_init( mbedtls_havege_state *hs )
 DECL|mbedtls_havege_random|function|int mbedtls_havege_random( void *p_rng, unsigned char *buf, size_t len )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {

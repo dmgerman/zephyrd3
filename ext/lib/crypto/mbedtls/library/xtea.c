@@ -7,7 +7,6 @@ DECL|mbedtls_xtea_free|function|void mbedtls_xtea_free( mbedtls_xtea_context *ct
 DECL|mbedtls_xtea_init|function|void mbedtls_xtea_init( mbedtls_xtea_context *ctx )
 DECL|mbedtls_xtea_self_test|function|int mbedtls_xtea_self_test( int verbose )
 DECL|mbedtls_xtea_setup|function|void mbedtls_xtea_setup( mbedtls_xtea_context *ctx, const unsigned char key[16] )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|xtea_test_ct|variable|xtea_test_ct
 DECL|xtea_test_key|variable|xtea_test_key
 DECL|xtea_test_pt|variable|xtea_test_pt

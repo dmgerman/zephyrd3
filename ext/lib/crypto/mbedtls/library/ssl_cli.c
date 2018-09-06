@@ -1,7 +1,6 @@
 DECL|mbedtls_calloc|macro|mbedtls_calloc
 DECL|mbedtls_free|macro|mbedtls_free
 DECL|mbedtls_ssl_handshake_client_step|function|int mbedtls_ssl_handshake_client_step( mbedtls_ssl_context *ssl )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|ssl_check_server_ecdh_params|function|static int ssl_check_server_ecdh_params( const mbedtls_ssl_context *ssl )
 DECL|ssl_generate_random|function|static int ssl_generate_random( mbedtls_ssl_context *ssl )
 DECL|ssl_get_ecdh_params_from_cert|function|static int ssl_get_ecdh_params_from_cert( mbedtls_ssl_context *ssl )

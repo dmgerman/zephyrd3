@@ -6,7 +6,6 @@ DECL|mbedtls_pk_parse_key|function|int mbedtls_pk_parse_key( mbedtls_pk_context 
 DECL|mbedtls_pk_parse_public_keyfile|function|int mbedtls_pk_parse_public_keyfile( mbedtls_pk_context *ctx, const char *path )
 DECL|mbedtls_pk_parse_public_key|function|int mbedtls_pk_parse_public_key( mbedtls_pk_context *ctx, const unsigned char *key, size_t keylen )
 DECL|mbedtls_pk_parse_subpubkey|function|int mbedtls_pk_parse_subpubkey( unsigned char **p, const unsigned char *end, mbedtls_pk_context *pk )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|pk_get_ecparams|function|static int pk_get_ecparams( unsigned char **p, const unsigned char *end, mbedtls_asn1_buf *params )
 DECL|pk_get_ecpubkey|function|static int pk_get_ecpubkey( unsigned char **p, const unsigned char *end, mbedtls_ecp_keypair *key )
 DECL|pk_get_pk_alg|function|static int pk_get_pk_alg( unsigned char **p, const unsigned char *end, mbedtls_pk_type_t *pk_alg, mbedtls_asn1_buf *params )

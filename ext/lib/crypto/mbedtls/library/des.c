@@ -44,6 +44,5 @@ DECL|mbedtls_des_setkey_dec|function|int mbedtls_des_setkey_dec( mbedtls_des_con
 DECL|mbedtls_des_setkey_enc|function|int mbedtls_des_setkey_enc( mbedtls_des_context *ctx, const unsigned char key[MBEDTLS_DES_KEY_SIZE] )
 DECL|mbedtls_des_setkey|function|void mbedtls_des_setkey( uint32_t SK[32], const unsigned char key[MBEDTLS_DES_KEY_SIZE] )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|odd_parity_table|variable|odd_parity_table
 DECL|weak_key_table|variable|weak_key_table

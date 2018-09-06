@@ -14,7 +14,6 @@ DECL|mbedtls_md2_update_ret|function|int mbedtls_md2_update_ret( mbedtls_md2_con
 DECL|mbedtls_md2_update|function|void mbedtls_md2_update( mbedtls_md2_context *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_md2|function|void mbedtls_md2( const unsigned char *input, size_t ilen, unsigned char output[16] )
 DECL|mbedtls_printf|macro|mbedtls_printf
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|md2_test_strlen|variable|md2_test_strlen
 DECL|md2_test_str|variable|md2_test_str
 DECL|md2_test_sum|variable|md2_test_sum

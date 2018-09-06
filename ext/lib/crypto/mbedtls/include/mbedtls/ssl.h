@@ -1,6 +1,7 @@
 DECL|MBEDTLS_DEPRECATED|macro|MBEDTLS_DEPRECATED
 DECL|MBEDTLS_DEPRECATED|macro|MBEDTLS_DEPRECATED
 DECL|MBEDTLS_ERR_SSL_ALLOC_FAILED|macro|MBEDTLS_ERR_SSL_ALLOC_FAILED
+DECL|MBEDTLS_ERR_SSL_ASYNC_IN_PROGRESS|macro|MBEDTLS_ERR_SSL_ASYNC_IN_PROGRESS
 DECL|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_REQUEST|macro|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_REQUEST
 DECL|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_VERIFY|macro|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE_VERIFY
 DECL|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE|macro|MBEDTLS_ERR_SSL_BAD_HS_CERTIFICATE
@@ -139,6 +140,7 @@ DECL|MBEDTLS_SSL_HS_SERVER_HELLO_DONE|macro|MBEDTLS_SSL_HS_SERVER_HELLO_DONE
 DECL|MBEDTLS_SSL_HS_SERVER_HELLO|macro|MBEDTLS_SSL_HS_SERVER_HELLO
 DECL|MBEDTLS_SSL_HS_SERVER_KEY_EXCHANGE|macro|MBEDTLS_SSL_HS_SERVER_KEY_EXCHANGE
 DECL|MBEDTLS_SSL_H|macro|MBEDTLS_SSL_H
+DECL|MBEDTLS_SSL_IN_CONTENT_LEN|macro|MBEDTLS_SSL_IN_CONTENT_LEN
 DECL|MBEDTLS_SSL_IS_CLIENT|macro|MBEDTLS_SSL_IS_CLIENT
 DECL|MBEDTLS_SSL_IS_FALLBACK|macro|MBEDTLS_SSL_IS_FALLBACK
 DECL|MBEDTLS_SSL_IS_NOT_FALLBACK|macro|MBEDTLS_SSL_IS_NOT_FALLBACK
@@ -164,6 +166,7 @@ DECL|MBEDTLS_SSL_MSG_ALERT|macro|MBEDTLS_SSL_MSG_ALERT
 DECL|MBEDTLS_SSL_MSG_APPLICATION_DATA|macro|MBEDTLS_SSL_MSG_APPLICATION_DATA
 DECL|MBEDTLS_SSL_MSG_CHANGE_CIPHER_SPEC|macro|MBEDTLS_SSL_MSG_CHANGE_CIPHER_SPEC
 DECL|MBEDTLS_SSL_MSG_HANDSHAKE|macro|MBEDTLS_SSL_MSG_HANDSHAKE
+DECL|MBEDTLS_SSL_OUT_CONTENT_LEN|macro|MBEDTLS_SSL_OUT_CONTENT_LEN
 DECL|MBEDTLS_SSL_PRESET_DEFAULT|macro|MBEDTLS_SSL_PRESET_DEFAULT
 DECL|MBEDTLS_SSL_PRESET_SUITEB|macro|MBEDTLS_SSL_PRESET_SUITEB
 DECL|MBEDTLS_SSL_RENEGOTIATION_DISABLED|macro|MBEDTLS_SSL_RENEGOTIATION_DISABLED
@@ -246,6 +249,10 @@ DECL|encrypt_then_mac|member|int encrypt_then_mac; /*!< flag for EtM activation 
 DECL|encrypt_then_mac|member|unsigned int encrypt_then_mac : 1 ; /*!< negotiate encrypt-then-mac? */
 DECL|endpoint|member|unsigned int endpoint : 1; /*!< 0: client, 1: server */
 DECL|extended_ms|member|unsigned int extended_ms : 1; /*!< negotiate extended master secret? */
+DECL|f_async_cancel|member|mbedtls_ssl_async_cancel_t *f_async_cancel; /*!< cancel asynchronous operation */
+DECL|f_async_decrypt_start|member|mbedtls_ssl_async_decrypt_t *f_async_decrypt_start; /*!< start asynchronous decryption operation */
+DECL|f_async_resume|member|mbedtls_ssl_async_resume_t *f_async_resume; /*!< resume asynchronous operation */
+DECL|f_async_sign_start|member|mbedtls_ssl_async_sign_t *f_async_sign_start; /*!< start asynchronous signature operation */
 DECL|f_cookie_check|member|int (*f_cookie_check)( void *, const unsigned char *, size_t,
 DECL|f_cookie_write|member|int (*f_cookie_write)( void *, unsigned char **, unsigned char *,
 DECL|f_dbg|member|void (*f_dbg)(void *, int, const char *, int, const char *);
@@ -290,6 +297,10 @@ DECL|major_ver|member|int major_ver; /*!< equal to MBEDTLS_SSL_MAJOR_VERSION_3 *
 DECL|master|member|unsigned char master[48]; /*!< the master secret */
 DECL|max_major_ver|member|unsigned char max_major_ver; /*!< max. major version used */
 DECL|max_minor_ver|member|unsigned char max_minor_ver; /*!< max. minor version used */
+DECL|mbedtls_ssl_async_cancel_t|typedef|typedef void mbedtls_ssl_async_cancel_t( mbedtls_ssl_context *ssl );
+DECL|mbedtls_ssl_async_decrypt_t|typedef|typedef int mbedtls_ssl_async_decrypt_t( mbedtls_ssl_context *ssl,
+DECL|mbedtls_ssl_async_resume_t|typedef|typedef int mbedtls_ssl_async_resume_t( mbedtls_ssl_context *ssl,
+DECL|mbedtls_ssl_async_sign_t|typedef|typedef int mbedtls_ssl_async_sign_t( mbedtls_ssl_context *ssl,
 DECL|mbedtls_ssl_config|struct|struct mbedtls_ssl_config
 DECL|mbedtls_ssl_config|typedef|typedef struct mbedtls_ssl_config mbedtls_ssl_config;
 DECL|mbedtls_ssl_context|struct|struct mbedtls_ssl_context
@@ -330,6 +341,7 @@ DECL|out_msglen|member|size_t out_msglen; /*!< record header: message length */
 DECL|out_msgtype|member|int out_msgtype; /*!< record header: message type */
 DECL|out_msg|member|unsigned char *out_msg; /*!< message contents (out_iv+ivlen) */
 DECL|own_verify_data|member|char own_verify_data[MBEDTLS_SSL_VERIFY_DATA_MAX_LEN]; /*!< previous handshake verify data */
+DECL|p_async_config_data|member|void *p_async_config_data; /*!< Configuration data set by mbedtls_ssl_conf_async_private_cb(). */
 DECL|p_bio|member|void *p_bio; /*!< context for I/O operations */
 DECL|p_cache|member|void *p_cache; /*!< context for cache callbacks */
 DECL|p_cookie|member|void *p_cookie; /*!< context for the cookie callbacks */

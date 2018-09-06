@@ -22,5 +22,4 @@ DECL|mbedtls_md_setup|function|int mbedtls_md_setup( mbedtls_md_context_t *ctx, 
 DECL|mbedtls_md_starts|function|int mbedtls_md_starts( mbedtls_md_context_t *ctx )
 DECL|mbedtls_md_update|function|int mbedtls_md_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen )
 DECL|mbedtls_md|function|int mbedtls_md( const mbedtls_md_info_t *md_info, const unsigned char *input, size_t ilen, unsigned char *output )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
 DECL|supported_digests|variable|supported_digests

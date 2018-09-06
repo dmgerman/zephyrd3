@@ -10,4 +10,3 @@ DECL|mbedtls_x509write_csr_set_key|function|void mbedtls_x509write_csr_set_key( 
 DECL|mbedtls_x509write_csr_set_md_alg|function|void mbedtls_x509write_csr_set_md_alg( mbedtls_x509write_csr *ctx, mbedtls_md_type_t md_alg )
 DECL|mbedtls_x509write_csr_set_ns_cert_type|function|int mbedtls_x509write_csr_set_ns_cert_type( mbedtls_x509write_csr *ctx, unsigned char ns_cert_type )
 DECL|mbedtls_x509write_csr_set_subject_name|function|int mbedtls_x509write_csr_set_subject_name( mbedtls_x509write_csr *ctx, const char *subject_name )
-DECL|mbedtls_zeroize|function|static void mbedtls_zeroize( void *v, size_t n ) {
