@@ -100,6 +100,7 @@ DECL|gatt_write_rsp|function|static void gatt_write_rsp(struct bt_conn *conn, u8
 DECL|get_service_handles|function|static u8_t get_service_handles(const struct bt_gatt_attr *attr, void *user_data)
 DECL|handle|member|u16_t handle;
 DECL|id|member|u8_t id;
+DECL|init|variable|init
 DECL|len|member|u16_t len;
 DECL|notify_cb|function|static u8_t notify_cb(const struct bt_gatt_attr *attr, void *user_data)
 DECL|notify_data|struct|struct notify_data {
