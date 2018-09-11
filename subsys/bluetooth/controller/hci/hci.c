@@ -12,6 +12,7 @@ DECL|ST_SLA|macro|ST_SLA
 DECL|_opcode|variable|_opcode
 DECL|addr|member|bt_addr_le_t addr;
 DECL|auth_payload_timeout_exp|function|static void auth_payload_timeout_exp(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
+DECL|bt_read_static_addr|function|uint8_t bt_read_static_addr(bt_addr_le_t *addr)
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf **buf, u8_t plen)
 DECL|cmd_status|function|static struct net_buf *cmd_status(u8_t status)
 DECL|conn_count|variable|conn_count
