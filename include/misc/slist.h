@@ -13,8 +13,6 @@ DECL|_slist|struct|struct _slist {
 DECL|_snode|struct|struct _snode {
 DECL|head|member|sys_snode_t *head;
 DECL|next|member|struct _snode *next;
-DECL|slist|variable|slist
-DECL|slist|variable|slist
 DECL|sys_slist_init|function|static inline void sys_slist_init(sys_slist_t *list)
 DECL|sys_slist_peek_head|function|static inline sys_snode_t *sys_slist_peek_head(sys_slist_t *list)
 DECL|sys_slist_peek_tail|function|static inline sys_snode_t *sys_slist_peek_tail(sys_slist_t *list)

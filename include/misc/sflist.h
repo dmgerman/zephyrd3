@@ -14,8 +14,6 @@ DECL|_sflist|struct|struct _sflist {
 DECL|_sfnode|struct|struct _sfnode {
 DECL|head|member|sys_sfnode_t *head;
 DECL|next_and_flags|member|unative_t next_and_flags;
-DECL|sflist|variable|sflist
-DECL|sflist|variable|sflist
 DECL|sys_sflist_init|function|static inline void sys_sflist_init(sys_sflist_t *list)
 DECL|sys_sflist_peek_head|function|static inline sys_sfnode_t *sys_sflist_peek_head(sys_sflist_t *list)
 DECL|sys_sflist_peek_tail|function|static inline sys_sfnode_t *sys_sflist_peek_tail(sys_sflist_t *list)
