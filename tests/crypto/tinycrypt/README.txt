@@ -49,10 +49,10 @@ Performing CCM test #6 (RFC 3610 test vector #9):
 PASS - do_test.
 Performing CCM test #7 (no associated data):
 ===================================================================
-PASS - test_vector_7.
+PASS - test_ccm_vector_7.
 Performing CCM test #8 (no payload data):
 ===================================================================
-PASS - test_vector_8.
+PASS - test_ccm_vector_8.
 All CCM tests succeeded!
 ===================================================================
 PASS - main.

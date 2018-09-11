@@ -14,11 +14,11 @@ DECL|M_LEN8|macro|M_LEN8
 DECL|NONCE_LEN|macro|NONCE_LEN
 DECL|NUM_NIST_KEYS|macro|NUM_NIST_KEYS
 DECL|do_test|function|u32_t do_test(const u8_t *key, u8_t *nonce, size_t nlen, const u8_t *hdr, size_t hlen, const u8_t *data, size_t dlen, const u8_t *expected, size_t elen,
-DECL|test_vector_1|function|void test_vector_1(void)
-DECL|test_vector_2|function|void test_vector_2(void)
-DECL|test_vector_3|function|void test_vector_3(void)
-DECL|test_vector_4|function|void test_vector_4(void)
-DECL|test_vector_5|function|void test_vector_5(void)
-DECL|test_vector_6|function|void test_vector_6(void)
-DECL|test_vector_7|function|void test_vector_7(void)
-DECL|test_vector_8|function|void test_vector_8(void)
+DECL|test_ccm_vector_1|function|void test_ccm_vector_1(void)
+DECL|test_ccm_vector_2|function|void test_ccm_vector_2(void)
+DECL|test_ccm_vector_3|function|void test_ccm_vector_3(void)
+DECL|test_ccm_vector_4|function|void test_ccm_vector_4(void)
+DECL|test_ccm_vector_5|function|void test_ccm_vector_5(void)
+DECL|test_ccm_vector_6|function|void test_ccm_vector_6(void)
+DECL|test_ccm_vector_7|function|void test_ccm_vector_7(void)
+DECL|test_ccm_vector_8|function|void test_ccm_vector_8(void)

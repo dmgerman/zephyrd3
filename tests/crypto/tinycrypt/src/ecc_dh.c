@@ -1,7 +1,6 @@
 DECL|cavp_ecdh|function|int cavp_ecdh(bool verbose)
 DECL|cavp_keygen|function|int cavp_keygen(bool verbose)
 DECL|cavp_pkv|function|int cavp_pkv(bool verbose)
-DECL|default_CSPRNG|function|int default_CSPRNG(u8_t *dest, unsigned int size)
 DECL|ecdh_vectors|function|int ecdh_vectors(char **qx_vec, char **qy_vec, char **d_vec, char **z_vec, int tests, int verbose)
 DECL|montecarlo_ecdh|function|int montecarlo_ecdh(int num_tests, bool verbose)
 DECL|pkv_vectors|function|int pkv_vectors(char **qx_vec, char **qy_vec, int res_vec[], int tests,bool verbose)

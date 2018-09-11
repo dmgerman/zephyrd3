@@ -11,9 +11,9 @@ DECL|hex_str_to_num|function|static void hex_str_to_num(u8_t *buf, char *in)
 DECL|personal|member|char *personal; /* may be null */
 DECL|per|variable|per
 DECL|prng_vector|struct|struct prng_vector {
+DECL|test_ctr_prng_reseed|function|void test_ctr_prng_reseed(void)
+DECL|test_ctr_prng_robustness|function|void test_ctr_prng_robustness(void)
+DECL|test_ctr_prng_uninstantiate|function|void test_ctr_prng_uninstantiate(void)
 DECL|test_ctr_prng_vector|function|void test_ctr_prng_vector(void)
 DECL|test_prng_vector|function|static int test_prng_vector(struct prng_vector *v)
-DECL|test_reseed|function|void test_reseed(void)
-DECL|test_robustness|function|void test_robustness(void)
-DECL|test_uninstantiate|function|void test_uninstantiate(void)
 DECL|vectors|variable|vectors
