@@ -29,7 +29,7 @@ DECL|usb_ep_callback|typedef|typedef void (*usb_ep_callback)(u8_t ep,
 DECL|usb_ep_cfg_data|struct|struct usb_ep_cfg_data {
 DECL|usb_interface_cfg_data|struct|struct usb_interface_cfg_data {
 DECL|usb_interface_config|typedef|typedef void (*usb_interface_config)(u8_t bInterfaceNumber);
-DECL|usb_request_handler|typedef|typedef int (*usb_request_handler) (struct usb_setup_packet *detup,
+DECL|usb_request_handler|typedef|typedef int (*usb_request_handler)(struct usb_setup_packet *setup,
 DECL|usb_setup_packet|struct|struct usb_setup_packet {
 DECL|usb_status_callback|typedef|typedef void (*usb_status_callback)(enum usb_dc_status_code status_code,
 DECL|usb_transfer_callback|typedef|typedef void (*usb_transfer_callback)(u8_t ep, int tsize, void *priv);
