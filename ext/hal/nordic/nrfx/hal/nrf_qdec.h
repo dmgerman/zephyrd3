@@ -9,6 +9,7 @@ DECL|NRF_QDEC_H__|macro|NRF_QDEC_H__
 DECL|NRF_QDEC_INT_ACCOF_MASK|enumerator|NRF_QDEC_INT_ACCOF_MASK = QDEC_INTENSET_ACCOF_Msk /**< Mask for enabling or disabling an interrupt on ACCOF event. */
 DECL|NRF_QDEC_INT_REPORTRDY_MASK|enumerator|NRF_QDEC_INT_REPORTRDY_MASK = QDEC_INTENSET_REPORTRDY_Msk, /**< Mask for enabling or disabling an interrupt on REPORTRDY event. */
 DECL|NRF_QDEC_INT_SAMPLERDY_MASK|enumerator|NRF_QDEC_INT_SAMPLERDY_MASK = QDEC_INTENSET_SAMPLERDY_Msk, /**< Mask for enabling or disabling an interrupt on SAMPLERDY event. */
+DECL|NRF_QDEC_LED_NOT_CONNECTED|macro|NRF_QDEC_LED_NOT_CONNECTED
 DECL|NRF_QDEC_LEPOL_ACTIVE_HIGH|enumerator|NRF_QDEC_LEPOL_ACTIVE_HIGH = QDEC_LEDPOL_LEDPOL_ActiveHigh /**< QDEC LED active on output pin high. */
 DECL|NRF_QDEC_LEPOL_ACTIVE_LOW|enumerator|NRF_QDEC_LEPOL_ACTIVE_LOW = QDEC_LEDPOL_LEDPOL_ActiveLow, /**< QDEC LED active on output pin low. */
 DECL|NRF_QDEC_REPORTPER_10|enumerator|NRF_QDEC_REPORTPER_10 = QDEC_REPORTPER_REPORTPER_10Smpl, /**< QDEC report period 10 samples. */

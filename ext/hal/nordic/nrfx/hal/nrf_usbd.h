@@ -50,9 +50,9 @@ DECL|NRF_USBD_EP_NR_GET|macro|NRF_USBD_EP_NR_GET
 DECL|NRF_USBD_EP_VALIDATE|macro|NRF_USBD_EP_VALIDATE
 DECL|NRF_USBD_EVENTCAUSE_ISOOUTCRC_MASK|enumerator|NRF_USBD_EVENTCAUSE_ISOOUTCRC_MASK = USBD_EVENTCAUSE_ISOOUTCRC_Msk, /**< CRC error was detected on isochronous OUT endpoint 8. */
 DECL|NRF_USBD_EVENTCAUSE_READY_MASK|enumerator|NRF_USBD_EVENTCAUSE_READY_MASK = USBD_EVENTCAUSE_READY_Msk, /**< MAC is ready for normal operation, rised few us after USBD enabling */
-DECL|NRF_USBD_EVENTCAUSE_RESUME_MASK|enumerator|NRF_USBD_EVENTCAUSE_RESUME_MASK = USBD_EVENTCAUSE_RESUME_Msk , /**< Signals that a RESUME condition (K state or activity restart) has been detected on the USB lines. */
-DECL|NRF_USBD_EVENTCAUSE_SUSPEND_MASK|enumerator|NRF_USBD_EVENTCAUSE_SUSPEND_MASK = USBD_EVENTCAUSE_SUSPEND_Msk , /**< Signals that the USB lines have been seen idle long enough for the device to enter suspend. */
-DECL|NRF_USBD_EVENTCAUSE_WUREQ_MASK|enumerator|NRF_USBD_EVENTCAUSE_WUREQ_MASK = (1U << 10) /**< The USBD peripheral has exited Low Power mode */
+DECL|NRF_USBD_EVENTCAUSE_RESUME_MASK|enumerator|NRF_USBD_EVENTCAUSE_RESUME_MASK = USBD_EVENTCAUSE_RESUME_Msk, /**< Signals that a RESUME condition (K state or activity restart) has been detected on the USB lines. */
+DECL|NRF_USBD_EVENTCAUSE_SUSPEND_MASK|enumerator|NRF_USBD_EVENTCAUSE_SUSPEND_MASK = USBD_EVENTCAUSE_SUSPEND_Msk, /**< Signals that the USB lines have been seen idle long enough for the device to enter suspend. */
+DECL|NRF_USBD_EVENTCAUSE_WUREQ_MASK|enumerator|NRF_USBD_EVENTCAUSE_WUREQ_MASK = USBD_EVENTCAUSE_USBWUALLOWED_Msk, /**< The USBD peripheral has exited Low Power mode */
 DECL|NRF_USBD_EVENT_DATAEP|enumerator|NRF_USBD_EVENT_DATAEP = offsetof(NRF_USBD_Type, EVENTS_EPDATA ), /**< A data transfer has occurred on a data endpoint, indicated by the EPDATASTATUS register */
 DECL|NRF_USBD_EVENT_ENDEPIN0|enumerator|NRF_USBD_EVENT_ENDEPIN0 = offsetof(NRF_USBD_Type, EVENTS_ENDEPIN[0] ), /**< The whole EPIN[0] buffer has been consumed. The RAM buffer can be accessed safely by software. */
 DECL|NRF_USBD_EVENT_ENDEPIN1|enumerator|NRF_USBD_EVENT_ENDEPIN1 = offsetof(NRF_USBD_Type, EVENTS_ENDEPIN[1] ), /**< The whole EPIN[1] buffer has been consumed. The RAM buffer can be accessed safely by software. */
@@ -107,8 +107,8 @@ DECL|NRF_USBD_INT_USBEVENT_MASK|enumerator|NRF_USBD_INT_USBEVENT_MASK = USBD_INT
 DECL|NRF_USBD_INT_USBRESET_MASK|enumerator|NRF_USBD_INT_USBRESET_MASK = USBD_INTEN_USBRESET_Msk , /**< Enable or disable interrupt for USBRESET event */
 DECL|NRF_USBD_ISOINCONFIG_NORESP|enumerator|NRF_USBD_ISOINCONFIG_NORESP = USBD_ISOINCONFIG_RESPONSE_NoResp, /**< Endpoint does not respond to an ISO IN token when no data is ready */
 DECL|NRF_USBD_ISOINCONFIG_ZERODATA|enumerator|NRF_USBD_ISOINCONFIG_ZERODATA = USBD_ISOINCONFIG_RESPONSE_ZeroData, /**< Endpoint responds with a zero-length data packet to an ISO IN token when no data is ready */
-DECL|NRF_USBD_ISOSPLIT_Half|enumerator|NRF_USBD_ISOSPLIT_Half = USBD_ISOSPLIT_SPLIT_HalfIN, /**< Buffer divided in half */
-DECL|NRF_USBD_ISOSPLIT_OneDir|enumerator|NRF_USBD_ISOSPLIT_OneDir = USBD_ISOSPLIT_SPLIT_OneDir, /**< Full buffer dedicated to either iso IN or OUT */
+DECL|NRF_USBD_ISOSPLIT_HALF|enumerator|NRF_USBD_ISOSPLIT_HALF = USBD_ISOSPLIT_SPLIT_HalfIN, /**< Buffer divided in half */
+DECL|NRF_USBD_ISOSPLIT_ONEDIR|enumerator|NRF_USBD_ISOSPLIT_ONEDIR = USBD_ISOSPLIT_SPLIT_OneDir, /**< Full buffer dedicated to either iso IN or OUT */
 DECL|NRF_USBD_SHORT_ENDEPOUT0_EP0RCVOUT_MASK|enumerator|NRF_USBD_SHORT_ENDEPOUT0_EP0RCVOUT_MASK = USBD_SHORTS_ENDEPOUT0_EP0RCVOUT_Msk , /**< Shortcut between ENDEPOUT[0] event and EP0RCVOUT task */
 DECL|NRF_USBD_SHORT_ENDEPOUT0_EP0STATUS_MASK|enumerator|NRF_USBD_SHORT_ENDEPOUT0_EP0STATUS_MASK = USBD_SHORTS_ENDEPOUT0_EP0STATUS_Msk , /**< Shortcut between ENDEPOUT[0] event and EP0STATUS task */
 DECL|NRF_USBD_SHORT_EP0DATADONE_EP0STATUS_MASK|enumerator|NRF_USBD_SHORT_EP0DATADONE_EP0STATUS_MASK = USBD_SHORTS_EP0DATADONE_EP0STATUS_Msk , /**< Shortcut between EP0DATADONE event and EP0STATUS task */

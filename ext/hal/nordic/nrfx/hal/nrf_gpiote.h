@@ -74,3 +74,4 @@ DECL|nrf_gpiote_task_force|function|__STATIC_INLINE void nrf_gpiote_task_force(u
 DECL|nrf_gpiote_task_set|function|__STATIC_INLINE void nrf_gpiote_task_set(nrf_gpiote_tasks_t task)
 DECL|nrf_gpiote_tasks_t|typedef|} nrf_gpiote_tasks_t;
 DECL|nrf_gpiote_te_default|function|__STATIC_INLINE void nrf_gpiote_te_default(uint32_t idx)
+DECL|nrf_gpiote_te_is_enabled|function|__STATIC_INLINE bool nrf_gpiote_te_is_enabled(uint32_t idx)

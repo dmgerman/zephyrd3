@@ -41,6 +41,7 @@ DECL|nrf_gpio_pin_latch_clear|function|__STATIC_INLINE void nrf_gpio_pin_latch_c
 DECL|nrf_gpio_pin_latch_get|function|__STATIC_INLINE uint32_t nrf_gpio_pin_latch_get(uint32_t pin_number)
 DECL|nrf_gpio_pin_out_read|function|__STATIC_INLINE uint32_t nrf_gpio_pin_out_read(uint32_t pin_number)
 DECL|nrf_gpio_pin_port_decode|function|__STATIC_INLINE NRF_GPIO_Type * nrf_gpio_pin_port_decode(uint32_t * p_pin)
+DECL|nrf_gpio_pin_pull_get|function|__STATIC_INLINE nrf_gpio_pin_pull_t nrf_gpio_pin_pull_get(uint32_t pin_number)
 DECL|nrf_gpio_pin_pull_t|typedef|} nrf_gpio_pin_pull_t;
 DECL|nrf_gpio_pin_read|function|__STATIC_INLINE uint32_t nrf_gpio_pin_read(uint32_t pin_number)
 DECL|nrf_gpio_pin_sense_get|function|__STATIC_INLINE nrf_gpio_pin_sense_t nrf_gpio_pin_sense_get(uint32_t pin_number)
