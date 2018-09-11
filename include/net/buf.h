@@ -73,7 +73,7 @@ DECL|net_buf_simple_save|function|static inline void net_buf_simple_save(struct 
 DECL|net_buf_simple_state|struct|struct net_buf_simple_state {
 DECL|net_buf_simple_tail|function|static inline u8_t *net_buf_simple_tail(struct net_buf_simple *buf)
 DECL|net_buf_simple|struct|struct net_buf_simple {
-DECL|net_buf_skip|function|static inline struct net_buf *net_buf_skip(struct net_buf *buf, u16_t len)
+DECL|net_buf_skip|function|static inline struct net_buf *net_buf_skip(struct net_buf *buf, size_t len)
 DECL|net_buf_tailroom|macro|net_buf_tailroom
 DECL|net_buf_tail|macro|net_buf_tail
 DECL|net_buf_unref|macro|net_buf_unref

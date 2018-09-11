@@ -36,7 +36,7 @@ DECL|net_buf_alloc_fixed_debug|function|struct net_buf *net_buf_alloc_fixed_debu
 DECL|net_buf_alloc_fixed|function|struct net_buf *net_buf_alloc_fixed(struct net_buf_pool *pool, s32_t timeout)
 DECL|net_buf_alloc_len_debug|function|struct net_buf *net_buf_alloc_len_debug(struct net_buf_pool *pool, size_t size,s32_t timeout, const char *func, int line) #else struct net_buf *net_buf_alloc_len(struct net_buf_pool *pool, size_t size,
 DECL|net_buf_alloc_with_data_debug|function|struct net_buf *net_buf_alloc_with_data_debug(struct net_buf_pool *pool, void *data, size_t size, s32_t timeout, const char *func, int line) #else
-DECL|net_buf_append_bytes|function|u16_t net_buf_append_bytes(struct net_buf *buf, u16_t len, const void *value, s32_t timeout, net_buf_allocator_cb allocate_cb, void *user_data)
+DECL|net_buf_append_bytes|function|size_t net_buf_append_bytes(struct net_buf *buf, size_t len, const void *value, s32_t timeout, net_buf_allocator_cb allocate_cb, void *user_data)
 DECL|net_buf_clone|function|struct net_buf *net_buf_clone(struct net_buf *buf, s32_t timeout)
 DECL|net_buf_fixed_cb|variable|net_buf_fixed_cb
 DECL|net_buf_frag_add|function|struct net_buf *net_buf_frag_add(struct net_buf *head, struct net_buf *frag)
@@ -47,7 +47,7 @@ DECL|net_buf_get_debug|function|struct net_buf *net_buf_get_debug(struct k_fifo 
 DECL|net_buf_heap_alloc|variable|net_buf_heap_alloc
 DECL|net_buf_heap_cb|variable|net_buf_heap_cb
 DECL|net_buf_id|function|int net_buf_id(struct net_buf *buf)
-DECL|net_buf_linearize|function|int net_buf_linearize(void *dst, size_t dst_len, struct net_buf *src, u16_t offset, u16_t len)
+DECL|net_buf_linearize|function|int net_buf_linearize(void *dst, size_t dst_len, struct net_buf *src, size_t offset, size_t len)
 DECL|net_buf_pool_get|function|struct net_buf_pool *net_buf_pool_get(int id)
 DECL|net_buf_put|function|void net_buf_put(struct k_fifo *fifo, struct net_buf *buf)
 DECL|net_buf_ref|function|struct net_buf *net_buf_ref(struct net_buf *buf)
