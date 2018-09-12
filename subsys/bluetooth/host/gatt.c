@@ -32,7 +32,7 @@ DECL|bt_gatt_get_mtu|function|u16_t bt_gatt_get_mtu(struct bt_conn *conn)
 DECL|bt_gatt_indicate|function|int bt_gatt_indicate(struct bt_conn *conn, struct bt_gatt_indicate_params *params)
 DECL|bt_gatt_init|function|void bt_gatt_init(void)
 DECL|bt_gatt_notification|function|void bt_gatt_notification(struct bt_conn *conn, u16_t handle, const void *data, u16_t length)
-DECL|bt_gatt_notify|function|int bt_gatt_notify(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *data, u16_t len)
+DECL|bt_gatt_notify_cb|function|int bt_gatt_notify_cb(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *data, u16_t len, bt_gatt_notify_complete_func_t func)
 DECL|bt_gatt_read|function|int bt_gatt_read(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|bt_gatt_service_register|function|int bt_gatt_service_register(struct bt_gatt_service *svc)
 DECL|bt_gatt_service_unregister|function|int bt_gatt_service_unregister(struct bt_gatt_service *svc)
@@ -61,6 +61,7 @@ DECL|end|member|u16_t end;
 DECL|entry|member|struct ccc_store *entry;
 DECL|err|member|int err;
 DECL|find_next|function|static u8_t find_next(const struct bt_gatt_attr *attr, void *user_data)
+DECL|func|member|bt_gatt_notify_complete_func_t func;
 DECL|gap_appearance|variable|gap_appearance
 DECL|gap_attrs|variable|gap_attrs
 DECL|gap_svc|variable|gap_svc
@@ -77,7 +78,7 @@ DECL|gatt_incl|struct|struct gatt_incl {
 DECL|gatt_indicate_rsp|function|static void gatt_indicate_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_indicate|function|static int gatt_indicate(struct bt_conn *conn, struct bt_gatt_indicate_params *params)
 DECL|gatt_mtu_rsp|function|static void gatt_mtu_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
-DECL|gatt_notify|function|static int gatt_notify(struct bt_conn *conn, u16_t handle, const void *data, size_t len)
+DECL|gatt_notify|function|static int gatt_notify(struct bt_conn *conn, u16_t handle, const void *data, size_t len, bt_gatt_notify_complete_func_t cb)
 DECL|gatt_prepare_write_rsp|function|static void gatt_prepare_write_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_prepare_write|function|static int gatt_prepare_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, struct bt_gatt_read_params *params)

@@ -68,7 +68,9 @@ DECL|bt_gatt_exchange_params|struct|struct bt_gatt_exchange_params {
 DECL|bt_gatt_include|struct|struct bt_gatt_include {
 DECL|bt_gatt_indicate_func_t|typedef|typedef void (*bt_gatt_indicate_func_t)(struct bt_conn *conn,
 DECL|bt_gatt_indicate_params|struct|struct bt_gatt_indicate_params {
+DECL|bt_gatt_notify_complete_func_t|typedef|typedef void (*bt_gatt_notify_complete_func_t) (struct bt_conn *conn);
 DECL|bt_gatt_notify_func_t|typedef|typedef u8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
+DECL|bt_gatt_notify|function|static inline int bt_gatt_notify(struct bt_conn *conn, const struct bt_gatt_attr *attr, const void *data, u16_t len)
 DECL|bt_gatt_read_func_t|typedef|typedef u8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, u8_t err,
 DECL|bt_gatt_read_params|struct|struct bt_gatt_read_params {
 DECL|bt_gatt_service_val|struct|struct bt_gatt_service_val {
