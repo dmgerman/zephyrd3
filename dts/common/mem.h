@@ -1,0 +1,3 @@
+DECL|DT_SIZE_K|macro|DT_SIZE_K
+DECL|DT_SIZE_M|macro|DT_SIZE_M
+DECL|__DT_MEM_H|macro|__DT_MEM_H
