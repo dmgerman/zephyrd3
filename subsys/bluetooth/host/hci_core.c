@@ -59,6 +59,7 @@ DECL|bt_le_oob_get_local|function|int bt_le_oob_get_local(u8_t id, struct bt_le_
 DECL|bt_le_scan_start|function|int bt_le_scan_start(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb)
 DECL|bt_le_scan_stop|function|int bt_le_scan_stop(void)
 DECL|bt_le_scan_update|function|int bt_le_scan_update(bool fast_scan)
+DECL|bt_le_set_chan_map|function|int bt_le_set_chan_map(u8_t chan_map[5])
 DECL|bt_pub_key_gen|function|int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
 DECL|bt_pub_key_get|function|const u8_t *bt_pub_key_get(void)
 DECL|bt_read_static_addr|function|static uint8_t bt_read_static_addr(bt_addr_le_t *addr)
