@@ -1,6 +1,7 @@
 DECL|K_NUM_PRIORITIES|macro|K_NUM_PRIORITIES
 DECL|K_NUM_PRIO_BITMAPS|macro|K_NUM_PRIO_BITMAPS
 DECL|STACK_SENTINEL|macro|STACK_SENTINEL
+DECL|ZEPHYR_KERNEL_INCLUDE_KERNEL_STRUCTS_H_|macro|ZEPHYR_KERNEL_INCLUDE_KERNEL_STRUCTS_H_
 DECL|_NON_PREEMPT_THRESHOLD|macro|_NON_PREEMPT_THRESHOLD
 DECL|_PREEMPT_THRESHOLD|macro|_PREEMPT_THRESHOLD
 DECL|_THREAD_DEAD|macro|_THREAD_DEAD
@@ -15,7 +16,6 @@ DECL|_current_cpu|macro|_current_cpu
 DECL|_current_cpu|macro|_current_cpu
 DECL|_current|macro|_current
 DECL|_current|macro|_current
-DECL|_kernel_structs__h_|macro|_kernel_structs__h_
 DECL|_kernel_t|typedef|typedef struct _kernel _kernel_t;
 DECL|_kernel|struct|struct _kernel {
 DECL|_new_thread_init|function|static ALWAYS_INLINE void _new_thread_init(struct k_thread *thread, char *pStack, size_t stackSize, int prio, unsigned int options)

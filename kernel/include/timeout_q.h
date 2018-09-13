@@ -1,3 +1,4 @@
+DECL|ZEPHYR_KERNEL_INCLUDE_TIMEOUT_Q_H_|macro|ZEPHYR_KERNEL_INCLUDE_TIMEOUT_Q_H_
 DECL|_abort_thread_timeout|function|static inline int _abort_thread_timeout(struct k_thread *thread)
 DECL|_abort_timeout|function|static inline int _abort_timeout(struct _timeout *timeout)
 DECL|_add_thread_timeout|function|static inline void _add_thread_timeout(struct k_thread *thread, _wait_q_t *wait_q, s32_t timeout_in_ticks)
@@ -9,5 +10,4 @@ DECL|_handle_expired_timeouts|function|static inline void _handle_expired_timeou
 DECL|_handle_one_expired_timeout|function|static inline void _handle_one_expired_timeout(struct _timeout *timeout)
 DECL|_init_thread_timeout|function|_init_thread_timeout(struct _thread_base *thread_base)
 DECL|_init_timeout|function|static inline void _init_timeout(struct _timeout *t, _timeout_func_t func)
-DECL|_kernel_include_timeout_q__h_|macro|_kernel_include_timeout_q__h_
 DECL|_unpend_thread_timing_out|function|static inline void _unpend_thread_timing_out(struct k_thread *thread, struct _timeout *timeout_obj)

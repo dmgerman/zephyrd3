@@ -1,4 +1,4 @@
-DECL|_KSWAP_H|macro|_KSWAP_H
+DECL|ZEPHYR_KERNEL_INCLUDE_KSWAP_H_|macro|ZEPHYR_KERNEL_INCLUDE_KSWAP_H_
 DECL|_Swap|function|static inline int _Swap(unsigned int key)
 DECL|_Swap|function|static inline int _Swap(unsigned int key)
 DECL|_check_stack_sentinel|macro|_check_stack_sentinel

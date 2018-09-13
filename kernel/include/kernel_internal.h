@@ -1,3 +1,3 @@
-DECL|_NANO_INTERNAL__H_|macro|_NANO_INTERNAL__H_
+DECL|ZEPHYR_KERNEL_INCLUDE_KERNEL_INTERNAL_H_|macro|ZEPHYR_KERNEL_INCLUDE_KERNEL_INTERNAL_H_
 DECL|_data_copy|function|static inline void _data_copy(void)
 DECL|_thread_monitor_exit|macro|_thread_monitor_exit
