@@ -46,6 +46,7 @@ DECL|cmd_bredr_l2cap_register|function|static int cmd_bredr_l2cap_register(int a
 DECL|cmd_bredr_oob|function|static int cmd_bredr_oob(int argc, char *argv[])
 DECL|cmd_bredr_rfcomm_register|function|static int cmd_bredr_rfcomm_register(int argc, char *argv[])
 DECL|cmd_bredr_sdp_find_record|function|static int cmd_bredr_sdp_find_record(int argc, char *argv[])
+DECL|cmd_chan_map|function|static int cmd_chan_map(int argc, char *argv[])
 DECL|cmd_clear|function|static int cmd_clear(int argc, char *argv[])
 DECL|cmd_conn_update|function|static int cmd_conn_update(int argc, char *argv[])
 DECL|cmd_connect_bredr|function|static int cmd_connect_bredr(int argc, char *argv[])
@@ -88,6 +89,7 @@ DECL|discov_a2src|variable|discov_a2src
 DECL|discov_hfpag|variable|discov_hfpag
 DECL|discov|variable|discov
 DECL|hexdump|function|static void hexdump(const u8_t *data, size_t len)
+DECL|hexstr2array|function|static int hexstr2array(const char *str, u8_t *array, u8_t size)
 DECL|identity_resolved|function|static void identity_resolved(struct bt_conn *conn, const bt_addr_le_t *rpa, const bt_addr_le_t *identity)
 DECL|l2cap_accept|function|static int l2cap_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 DECL|l2cap_alloc_buf|function|static struct net_buf *l2cap_alloc_buf(struct bt_l2cap_chan *chan)
