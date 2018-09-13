@@ -162,6 +162,11 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|ZEPHYR_DRIVERS_SENSOR_APDS9960_APDS9960_H_|macro|ZEPHYR_DRIVERS_SENSOR_APDS9960_APDS9960_H_
 DECL|apds9960_data|struct|struct apds9960_data {
+DECL|data_sem|member|struct k_sem data_sem;
+DECL|dev|member|struct device *dev;
+DECL|gpio_cb|member|struct gpio_callback gpio_cb;
+DECL|gpio|member|struct device *gpio;
 DECL|i2c|member|struct device *i2c;
 DECL|pdata|member|u8_t pdata;
 DECL|sample_crgb|member|u16_t sample_crgb[4];
+DECL|work|member|struct k_work work;
