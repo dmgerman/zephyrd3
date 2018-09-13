@@ -1,7 +1,8 @@
 DECL|EEM_IN_EP_IDX|macro|EEM_IN_EP_IDX
 DECL|EEM_OUT_EP_IDX|macro|EEM_OUT_EP_IDX
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|eem_connect|function|static int eem_connect(bool connected)
 DECL|eem_ep_data|variable|eem_ep_data
 DECL|eem_function|variable|eem_function
