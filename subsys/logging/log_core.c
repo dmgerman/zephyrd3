@@ -32,6 +32,8 @@ DECL|max_filter_get|function|static u32_t max_filter_get(u32_t filters)
 DECL|msg_filter_check|function|static bool msg_filter_check(struct log_backend const *backend, struct log_msg *msg)
 DECL|msg_finalize|function|static inline void msg_finalize(struct log_msg *msg,struct log_msg_ids src_level)
 DECL|msg_process|function|static void msg_process(struct log_msg *msg, bool bypass)
+DECL|native_posix_backend|macro|native_posix_backend
+DECL|native_posix_backend|variable|native_posix_backend
 DECL|panic_mode|variable|panic_mode
 DECL|proc_tid|variable|proc_tid
 DECL|thread_set|function|static void thread_set(k_tid_t process_tid)
