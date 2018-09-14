@@ -3,6 +3,7 @@ DECL|backend_filter_init|function|static void backend_filter_init(struct log_bac
 DECL|backend_filter_set|function|static void backend_filter_set(struct log_backend const *const backend, u32_t level)
 DECL|buffered_cnt|variable|buffered_cnt
 DECL|dummy_timestamp|function|static u32_t dummy_timestamp(void)
+DECL|enable_logger|function|static int enable_logger(struct device *arg)
 DECL|initialized|variable|initialized
 DECL|list|variable|list
 DECL|log_0|function|void log_0(const char *str, struct log_msg_ids src_level)
