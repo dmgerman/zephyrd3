@@ -1,3 +1,10 @@
+DECL|decide_about_color|function|static void decide_about_color(void)
+DECL|is_a_tty|variable|is_a_tty
+DECL|native_add_tracing_options|function|void native_add_tracing_options(void)
 DECL|posix_print_error_and_exit|function|void posix_print_error_and_exit(const char *format, ...)
 DECL|posix_print_trace|function|void posix_print_trace(const char *format, ...)
 DECL|posix_print_warning|function|void posix_print_warning(const char *format, ...)
+DECL|posix_trace_over_tty|function|int posix_trace_over_tty(int file_number)
+DECL|trace_disable_color|function|void trace_disable_color(char *argv, int offset)
+DECL|trace_enable_color|function|void trace_enable_color(char *argv, int offset)
+DECL|trace_force_color|function|void trace_force_color(char *argv, int offset)
