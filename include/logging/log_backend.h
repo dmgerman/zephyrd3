@@ -5,6 +5,7 @@ DECL|api|member|const struct log_backend_api *api;
 DECL|cb|member|struct log_backend_control_block *cb;
 DECL|ctx|member|void *ctx;
 DECL|id|member|u8_t id;
+DECL|init|member|void (*init)(void);
 DECL|log_backend_activate|function|static inline void log_backend_activate(const struct log_backend *const backend,void *ctx)
 DECL|log_backend_api|struct|struct log_backend_api {
 DECL|log_backend_control_block|struct|struct log_backend_control_block {
