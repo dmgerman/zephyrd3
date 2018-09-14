@@ -4,7 +4,7 @@ DECL|NET_APP_CLIENT|enumerator|NET_APP_CLIENT,
 DECL|NET_APP_SERVER|enumerator|NET_APP_SERVER,
 DECL|NET_APP_TLS_POOL_DEFINE|macro|NET_APP_TLS_POOL_DEFINE
 DECL|NET_APP_UNSPEC|enumerator|NET_APP_UNSPEC = 0,
-DECL|__NET_APP_H|macro|__NET_APP_H
+DECL|ZEPHYR_INCLUDE_NET_NET_APP_H_|macro|ZEPHYR_INCLUDE_NET_NET_APP_H_
 DECL|__packed|variable|__packed
 DECL|_padding|member|u8_t _padding : 5;
 DECL|app_type|member|enum net_app_type app_type;

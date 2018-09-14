@@ -1,4 +1,4 @@
-DECL|_cache__h_|macro|_cache__h_
+DECL|ZEPHYR_INCLUDE_CACHE_H_|macro|ZEPHYR_INCLUDE_CACHE_H_
 DECL|_sys_cache_flush_sig|function|static inline _sys_cache_flush_sig(sys_cache_flush)
 DECL|_sys_cache_flush_sig|macro|_sys_cache_flush_sig
 DECL|_sys_cache_flush_t|typedef|typedef _sys_cache_flush_sig(_sys_cache_flush_t);

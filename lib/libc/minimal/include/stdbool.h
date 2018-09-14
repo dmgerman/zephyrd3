@@ -1,4 +1,4 @@
-DECL|__INC_stdbool_h__|macro|__INC_stdbool_h__
+DECL|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_STDBOOL_H_|macro|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_STDBOOL_H_
 DECL|__bool_true_false_are_defined|macro|__bool_true_false_are_defined
 DECL|bool|macro|bool
 DECL|false|macro|false

@@ -5,7 +5,7 @@ DECL|DEFINE_SREG_READ|macro|DEFINE_SREG_READ
 DECL|DEFINE_SREG_WRITE|macro|DEFINE_SREG_WRITE
 DECL|DEFINE_STROBE_INSTRUCTION|macro|DEFINE_STROBE_INSTRUCTION
 DECL|DEFINE_STROBE_SNOP_INSTRUCTION|macro|DEFINE_STROBE_SNOP_INSTRUCTION
-DECL|__IEEE802154_CC2520_H__|macro|__IEEE802154_CC2520_H__
+DECL|ZEPHYR_DRIVERS_IEEE802154_IEEE802154_CC2520_H_|macro|ZEPHYR_DRIVERS_IEEE802154_IEEE802154_CC2520_H_
 DECL|_cc2520_command_strobe_snop|function|static inline bool _cc2520_command_strobe_snop(struct cc2520_context *ctx, u8_t instruction)
 DECL|_cc2520_command_strobe|function|static inline bool _cc2520_command_strobe(struct cc2520_context *ctx, u8_t instruction)
 DECL|access_lock|member|struct k_sem access_lock;

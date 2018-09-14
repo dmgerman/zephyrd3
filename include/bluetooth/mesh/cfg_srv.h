@@ -1,5 +1,5 @@
 DECL|BT_MESH_MODEL_CFG_SRV|macro|BT_MESH_MODEL_CFG_SRV
-DECL|__BT_MESH_CFG_SRV_H|macro|__BT_MESH_CFG_SRV_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_MESH_CFG_SRV_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_MESH_CFG_SRV_H_
 DECL|beacon|member|u8_t beacon; /* Secure Network Beacon state */
 DECL|bt_mesh_cfg_srv|struct|struct bt_mesh_cfg_srv {
 DECL|bt_mesh_hb_pub|struct|struct bt_mesh_hb_pub {

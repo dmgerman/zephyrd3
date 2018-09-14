@@ -44,7 +44,7 @@ DECL|AMG88XX_WAIT_INITIAL_RESET_US|macro|AMG88XX_WAIT_INITIAL_RESET_US
 DECL|AMG88XX_WAIT_MODE_CHANGE_US|macro|AMG88XX_WAIT_MODE_CHANGE_US
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|_SENSOR_AMG88XX|macro|_SENSOR_AMG88XX
+DECL|ZEPHYR_DRIVERS_SENSOR_AMG88XX_AMG88XX_H_|macro|ZEPHYR_DRIVERS_SENSOR_AMG88XX_AMG88XX_H_
 DECL|amg88xx_data|struct|struct amg88xx_data {
 DECL|amg88xx_reg_read|function|static inline int amg88xx_reg_read(struct amg88xx_data *drv_data, u8_t reg, u8_t *val)
 DECL|amg88xx_reg_update|function|static inline int amg88xx_reg_update(struct amg88xx_data *drv_data, u8_t reg, u8_t mask, u8_t val)

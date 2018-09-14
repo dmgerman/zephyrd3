@@ -52,7 +52,7 @@ DECL|LIS3MDL_TEMP_EN_MASK|macro|LIS3MDL_TEMP_EN_MASK
 DECL|LIS3MDL_TEMP_EN_SHIFT|macro|LIS3MDL_TEMP_EN_SHIFT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_LIS3MDL_H__|macro|__SENSOR_LIS3MDL_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_LIS3MDL_LIS3MDL_H_|macro|ZEPHYR_DRIVERS_SENSOR_LIS3MDL_LIS3MDL_H_
 DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
 DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;

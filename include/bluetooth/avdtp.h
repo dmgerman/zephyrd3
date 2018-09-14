@@ -1,4 +1,4 @@
-DECL|__BT_AVDTP_H|macro|__BT_AVDTP_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_AVDTP_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_AVDTP_H_
 DECL|__packed|variable|__packed
 DECL|bt_avdtp_seid_info|struct|struct bt_avdtp_seid_info {
 DECL|bt_avdtp_seid_lsep|struct|struct bt_avdtp_seid_lsep {

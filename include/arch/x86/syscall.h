@@ -1,6 +1,6 @@
 DECL|USER_CODE_SEG|macro|USER_CODE_SEG
 DECL|USER_DATA_SEG|macro|USER_DATA_SEG
-DECL|_X86_SYSCALL__H_|macro|_X86_SYSCALL__H_
+DECL|ZEPHYR_INCLUDE_ARCH_X86_SYSCALL_H_|macro|ZEPHYR_INCLUDE_ARCH_X86_SYSCALL_H_
 DECL|_arch_is_user_context|function|static inline int _arch_is_user_context(void)
 DECL|_arch_syscall_invoke0|function|static inline u32_t _arch_syscall_invoke0(u32_t call_id)
 DECL|_arch_syscall_invoke1|function|static inline u32_t _arch_syscall_invoke1(u32_t arg1, u32_t call_id)

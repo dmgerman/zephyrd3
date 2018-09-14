@@ -1,12 +1,12 @@
 DECL|STACK_ALIGN_SIZE|macro|STACK_ALIGN_SIZE
 DECL|STACK_ROUND_DOWN|macro|STACK_ROUND_DOWN
 DECL|STACK_ROUND_UP|macro|STACK_ROUND_UP
+DECL|ZEPHYR_ARCH_ARC_INCLUDE_KERNEL_ARCH_DATA_H_|macro|ZEPHYR_ARCH_ARC_INCLUDE_KERNEL_ARCH_DATA_H_
 DECL|_callee_saved_stack_t|typedef|typedef struct _callee_saved_stack _callee_saved_stack_t;
 DECL|_callee_saved_stack|struct|struct _callee_saved_stack {
 DECL|_irq_stack_frame|struct|struct _irq_stack_frame {
 DECL|_irq_stack_frame|struct|struct _irq_stack_frame {
 DECL|_isf_t|typedef|typedef struct _irq_stack_frame _isf_t;
-DECL|_kernel_arch_data__h_|macro|_kernel_arch_data__h_
 DECL|_kernel_arch_t|typedef|typedef struct _kernel_arch _kernel_arch_t;
 DECL|_kernel_arch|struct|struct _kernel_arch {
 DECL|blink|member|u32_t blink;

@@ -10,7 +10,7 @@ DECL|GPIO_PIN_DISABLE|macro|GPIO_PIN_DISABLE
 DECL|GPIO_PIN_ENABLE|macro|GPIO_PIN_ENABLE
 DECL|GPIO_PIN_IDX|macro|GPIO_PIN_IDX
 DECL|GPIO_PIN|macro|GPIO_PIN
-DECL|__GPIO_H__|macro|__GPIO_H__
+DECL|ZEPHYR_INCLUDE_GPIO_H_|macro|ZEPHYR_INCLUDE_GPIO_H_
 DECL|_impl_gpio_config|function|static inline int _impl_gpio_config(struct device *port, int access_op, u32_t pin, int flags)
 DECL|_impl_gpio_disable_callback|function|static inline int _impl_gpio_disable_callback(struct device *port, int access_op, u32_t pin)
 DECL|_impl_gpio_enable_callback|function|static inline int _impl_gpio_enable_callback(struct device *port, int access_op, u32_t pin)

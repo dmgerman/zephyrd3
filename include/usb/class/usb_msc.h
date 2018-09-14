@@ -38,6 +38,6 @@ DECL|Tag|member|u32_t Tag;
 DECL|VERIFY10|macro|VERIFY10
 DECL|WRITE10|macro|WRITE10
 DECL|WRITE12|macro|WRITE12
-DECL|__USB_MSC_H__|macro|__USB_MSC_H__
+DECL|ZEPHYR_INCLUDE_USB_CLASS_USB_MSC_H_|macro|ZEPHYR_INCLUDE_USB_CLASS_USB_MSC_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed

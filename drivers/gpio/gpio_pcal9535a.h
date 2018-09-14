@@ -1,4 +1,4 @@
-DECL|_GPIO_PCAL9535A_H_|macro|_GPIO_PCAL9535A_H_
+DECL|ZEPHYR_DRIVERS_GPIO_GPIO_PCAL9535A_H_|macro|ZEPHYR_DRIVERS_GPIO_GPIO_PCAL9535A_H_
 DECL|all|member|u16_t all;
 DECL|byte|member|u8_t byte[2];
 DECL|dir|member|union gpio_pcal9535a_port_data dir;

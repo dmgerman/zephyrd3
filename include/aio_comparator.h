@@ -2,7 +2,7 @@ DECL|AIO_CMP_POL_FALL|enumerator|AIO_CMP_POL_FALL, /**< Match on falling edge. *
 DECL|AIO_CMP_POL_RISE|enumerator|AIO_CMP_POL_RISE, /**< Match on rising edge. */
 DECL|AIO_CMP_REF_A|enumerator|AIO_CMP_REF_A, /**< Use reference A. */
 DECL|AIO_CMP_REF_B|enumerator|AIO_CMP_REF_B, /**< Use reference B. */
-DECL|_AIO_COMPARATOR_H_|macro|_AIO_COMPARATOR_H_
+DECL|ZEPHYR_INCLUDE_AIO_COMPARATOR_H_|macro|ZEPHYR_INCLUDE_AIO_COMPARATOR_H_
 DECL|_impl_aio_cmp_disable|function|static inline int _impl_aio_cmp_disable(struct device *dev, u8_t index)
 DECL|_impl_aio_cmp_get_pending_int|function|static inline int _impl_aio_cmp_get_pending_int(struct device *dev)
 DECL|aio_cmp_api_configure|typedef|typedef int (*aio_cmp_api_configure)(struct device *dev, u8_t index,

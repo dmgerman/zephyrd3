@@ -1,4 +1,4 @@
-DECL|_SHIRQ_H_|macro|_SHIRQ_H_
+DECL|ZEPHYR_INCLUDE_SHARED_IRQ_H_|macro|ZEPHYR_INCLUDE_SHARED_IRQ_H_
 DECL|client_count|member|u32_t client_count;
 DECL|client|member|struct shared_irq_client client[CONFIG_SHARED_IRQ_NUM_CLIENTS];
 DECL|config|member|shared_irq_config_irq_t config;

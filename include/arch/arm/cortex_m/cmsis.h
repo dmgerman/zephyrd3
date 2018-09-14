@@ -25,7 +25,7 @@ DECL|SVCall_IRQn|enumerator|SVCall_IRQn = -5,
 DECL|SecureFault_IRQn|enumerator|SecureFault_IRQn = -9,
 DECL|SysTick_IRQn|enumerator|SysTick_IRQn = -1,
 DECL|UsageFault_IRQn|enumerator|UsageFault_IRQn = -10,
-DECL|_CMSIS__H_|macro|_CMSIS__H_
+DECL|ZEPHYR_INCLUDE_ARCH_ARM_CORTEX_M_CMSIS_H_|macro|ZEPHYR_INCLUDE_ARCH_ARM_CORTEX_M_CMSIS_H_
 DECL|__CM0PLUS_REV|macro|__CM0PLUS_REV
 DECL|__CM0_REV|macro|__CM0_REV
 DECL|__CM23_REV|macro|__CM23_REV

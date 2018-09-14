@@ -10,7 +10,7 @@ DECL|K_MEM_PARTITION_P_RW_U_RO|macro|K_MEM_PARTITION_P_RW_U_RO
 DECL|K_MEM_PARTITION_P_RW_U_RW|macro|K_MEM_PARTITION_P_RW_U_RW
 DECL|K_MEM_PARTITION_P_RX_U_RX|macro|K_MEM_PARTITION_P_RX_U_RX
 DECL|MPU_REGION_ENTRY|macro|MPU_REGION_ENTRY
-DECL|_ARM_MPU_H_|macro|_ARM_MPU_H_
+DECL|ZEPHYR_INCLUDE_ARCH_ARM_CORTEX_M_MPU_ARM_MPU_H_|macro|ZEPHYR_INCLUDE_ARCH_ARM_CORTEX_M_MPU_ARM_MPU_H_
 DECL|arm_mpu_config|struct|struct arm_mpu_config {
 DECL|arm_mpu_region|struct|struct arm_mpu_region {
 DECL|attr|member|arm_mpu_region_attr_t attr;

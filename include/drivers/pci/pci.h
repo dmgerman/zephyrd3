@@ -4,7 +4,7 @@ DECL|PCI_BAR_ANY|macro|PCI_BAR_ANY
 DECL|PCI_FUNCTION_ANY|macro|PCI_FUNCTION_ANY
 DECL|PCI_MAX_BARS|macro|PCI_MAX_BARS
 DECL|PCI_MAX_FUNCTIONS|macro|PCI_MAX_FUNCTIONS
-DECL|_PCI_H_|macro|_PCI_H_
+DECL|ZEPHYR_INCLUDE_DRIVERS_PCI_PCI_H_|macro|ZEPHYR_INCLUDE_DRIVERS_PCI_PCI_H_
 DECL|_reserved|member|u32_t _reserved:3;
 DECL|addr|member|u32_t addr; /* I/O or memory region address */
 DECL|bar|member|u32_t bar:3;

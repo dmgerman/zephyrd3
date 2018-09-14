@@ -1,4 +1,4 @@
-DECL|_HTTP_PARSER_STATE_H_|macro|_HTTP_PARSER_STATE_H_
+DECL|ZEPHYR_INCLUDE_NET_HTTP_PARSER_STATE_H_|macro|ZEPHYR_INCLUDE_NET_HTTP_PARSER_STATE_H_
 DECL|s_body_identity_eof|enumerator|s_body_identity_eof,
 DECL|s_body_identity|enumerator|s_body_identity,
 DECL|s_chunk_data_almost_done|enumerator|s_chunk_data_almost_done,

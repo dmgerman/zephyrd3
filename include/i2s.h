@@ -36,7 +36,7 @@ DECL|I2S_TRIGGER_DROP|enumerator|I2S_TRIGGER_DROP,
 DECL|I2S_TRIGGER_PREPARE|enumerator|I2S_TRIGGER_PREPARE,
 DECL|I2S_TRIGGER_START|enumerator|I2S_TRIGGER_START,
 DECL|I2S_TRIGGER_STOP|enumerator|I2S_TRIGGER_STOP,
-DECL|__I2S_H__|macro|__I2S_H__
+DECL|ZEPHYR_INCLUDE_I2S_H_|macro|ZEPHYR_INCLUDE_I2S_H_
 DECL|_impl_i2s_trigger|function|static inline int _impl_i2s_trigger(struct device *dev, enum i2s_dir dir, enum i2s_trigger_cmd cmd)
 DECL|block_size|member|size_t block_size;
 DECL|channels|member|u8_t channels;

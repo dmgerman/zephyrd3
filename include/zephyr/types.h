@@ -1,4 +1,4 @@
-DECL|__Z_TYPES_H__|macro|__Z_TYPES_H__
+DECL|ZEPHYR_INCLUDE_ZEPHYR_TYPES_H_|macro|ZEPHYR_INCLUDE_ZEPHYR_TYPES_H_
 DECL|s16_t|typedef|typedef signed short s16_t;
 DECL|s32_t|typedef|typedef signed int s32_t;
 DECL|s64_t|typedef|typedef signed long long s64_t;

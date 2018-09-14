@@ -1,4 +1,4 @@
-DECL|_STM32_UART_H_|macro|_STM32_UART_H_
+DECL|ZEPHYR_DRIVERS_SERIAL_UART_STM32_H_|macro|ZEPHYR_DRIVERS_SERIAL_UART_STM32_H_
 DECL|baud_rate|member|u32_t baud_rate;
 DECL|clock|member|struct device *clock;
 DECL|pclken|member|struct stm32_pclken pclken;

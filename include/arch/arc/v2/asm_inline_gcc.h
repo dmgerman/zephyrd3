@@ -1,4 +1,4 @@
-DECL|__ASM_INLINE_GCC_H__|macro|__ASM_INLINE_GCC_H__
+DECL|ZEPHYR_INCLUDE_ARCH_ARC_V2_ASM_INLINE_GCC_H_|macro|ZEPHYR_INCLUDE_ARCH_ARC_V2_ASM_INLINE_GCC_H_
 DECL|sys_bitfield_clear_bit|function|void sys_bitfield_clear_bit(mem_addr_t addr, unsigned int bit)
 DECL|sys_bitfield_set_bit|function|void sys_bitfield_set_bit(mem_addr_t addr, unsigned int bit)
 DECL|sys_bitfield_test_and_clear_bit|function|int sys_bitfield_test_and_clear_bit(mem_addr_t addr, unsigned int bit)

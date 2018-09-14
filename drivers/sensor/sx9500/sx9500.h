@@ -7,7 +7,7 @@ DECL|SX9500_REG_PROX_CTRL1|macro|SX9500_REG_PROX_CTRL1
 DECL|SX9500_REG_STAT|macro|SX9500_REG_STAT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_SX9500_H__|macro|__SENSOR_SX9500_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_SX9500_SX9500_H_|macro|ZEPHYR_DRIVERS_SENSOR_SX9500_SX9500_H_
 DECL|dev|member|struct device *dev;
 DECL|gpio_cb|member|struct gpio_callback gpio_cb;
 DECL|handler_drdy|member|sensor_trigger_handler_t handler_drdy;

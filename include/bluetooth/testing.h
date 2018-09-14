@@ -1,4 +1,4 @@
-DECL|__BT_TESTING_H|macro|__BT_TESTING_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_TESTING_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_TESTING_H_
 DECL|bt_test_cb|struct|struct bt_test_cb {
 DECL|mesh_model_bound|member|void (*mesh_model_bound)(u16_t addr, struct bt_mesh_model *model,
 DECL|mesh_model_unbound|member|void (*mesh_model_unbound)(u16_t addr, struct bt_mesh_model *model,

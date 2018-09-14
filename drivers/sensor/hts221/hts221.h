@@ -12,7 +12,7 @@ DECL|HTS221_REG_DATA_START|macro|HTS221_REG_DATA_START
 DECL|HTS221_REG_WHO_AM_I|macro|HTS221_REG_WHO_AM_I
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_HTS221_H__|macro|__SENSOR_HTS221_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_HTS221_HTS221_H_|macro|ZEPHYR_DRIVERS_SENSOR_HTS221_HTS221_H_
 DECL|data_ready_handler|member|sensor_trigger_handler_t data_ready_handler;
 DECL|data_ready_trigger|member|struct sensor_trigger data_ready_trigger;
 DECL|dev|member|struct device *dev;

@@ -2,7 +2,7 @@ DECL|RTC_ALARM_DAY|macro|RTC_ALARM_DAY
 DECL|RTC_ALARM_HOUR|macro|RTC_ALARM_HOUR
 DECL|RTC_ALARM_MINUTE|macro|RTC_ALARM_MINUTE
 DECL|RTC_ALARM_SECOND|macro|RTC_ALARM_SECOND
-DECL|_RTC_H_|macro|_RTC_H_
+DECL|ZEPHYR_INCLUDE_RTC_H_|macro|ZEPHYR_INCLUDE_RTC_H_
 DECL|_impl_rtc_disable|function|static inline void _impl_rtc_disable(struct device *dev)
 DECL|_impl_rtc_enable|function|static inline void _impl_rtc_enable(struct device *dev)
 DECL|_impl_rtc_get_pending_int|function|static inline int _impl_rtc_get_pending_int(struct device *dev)

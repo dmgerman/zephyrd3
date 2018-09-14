@@ -10,7 +10,7 @@ DECL|DMIC_TRIGGER_START|enumerator|DMIC_TRIGGER_START, /* start stream */
 DECL|DMIC_TRIGGER_STOP|enumerator|DMIC_TRIGGER_STOP, /* stop stream */
 DECL|PDM_CHAN_LEFT|enumerator|PDM_CHAN_LEFT,
 DECL|PDM_CHAN_RIGHT|enumerator|PDM_CHAN_RIGHT,
-DECL|__AUDIO_DMIC_H__|macro|__AUDIO_DMIC_H__
+DECL|ZEPHYR_INCLUDE_AUDIO_DMIC_H_|macro|ZEPHYR_INCLUDE_AUDIO_DMIC_H_
 DECL|_dmic_ops|struct|struct _dmic_ops {
 DECL|act_chan_map_hi|member|u32_t act_chan_map_hi; /* Channels 8 to 15 */
 DECL|act_chan_map_lo|member|u32_t act_chan_map_lo; /* Channels 0 to 7 */

@@ -1,4 +1,4 @@
-DECL|__FLASH_IMG_H__|macro|__FLASH_IMG_H__
+DECL|ZEPHYR_INCLUDE_DFU_FLASH_IMG_H_|macro|ZEPHYR_INCLUDE_DFU_FLASH_IMG_H_
 DECL|buf_bytes|member|u16_t buf_bytes;
 DECL|buf|member|u8_t buf[CONFIG_IMG_BLOCK_BUF_SIZE];
 DECL|bytes_written|member|size_t bytes_written;

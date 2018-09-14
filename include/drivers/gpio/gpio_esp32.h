@@ -1,2 +1,2 @@
-DECL|__GPIO_ESP32_H__|macro|__GPIO_ESP32_H__
+DECL|ZEPHYR_INCLUDE_DRIVERS_GPIO_GPIO_ESP32_H_|macro|ZEPHYR_INCLUDE_DRIVERS_GPIO_GPIO_ESP32_H_
 DECL|gpio_esp32_get_gpio_for_pin|function|static const char *gpio_esp32_get_gpio_for_pin(int pin)

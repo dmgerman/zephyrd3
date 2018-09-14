@@ -4,7 +4,7 @@ DECL|Imin|member|u32_t Imin; /* Min interval size in ms */
 DECL|Istart|member|u32_t Istart; /* Start of the interval in ms */
 DECL|I|member|u32_t I; /* Current interval size */
 DECL|NET_TRICKLE_INFINITE_REDUNDANCY|macro|NET_TRICKLE_INFINITE_REDUNDANCY
-DECL|__TRICKLE_H|macro|__TRICKLE_H
+DECL|ZEPHYR_INCLUDE_NET_TRICKLE_H_|macro|ZEPHYR_INCLUDE_NET_TRICKLE_H_
 DECL|cb|member|net_trickle_cb_t cb; /* Callback to be called when timer expires */
 DECL|c|member|u8_t c; /* Consistency counter */
 DECL|k|member|u8_t k; /* Redundancy constant */

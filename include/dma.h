@@ -4,7 +4,7 @@ DECL|DMA_ADDR_ADJ_NO_CHANGE|enumerator|DMA_ADDR_ADJ_NO_CHANGE,
 DECL|MEMORY_TO_MEMORY|enumerator|MEMORY_TO_MEMORY = 0x0,
 DECL|MEMORY_TO_PERIPHERAL|enumerator|MEMORY_TO_PERIPHERAL,
 DECL|PERIPHERAL_TO_MEMORY|enumerator|PERIPHERAL_TO_MEMORY
-DECL|_DMA_H_|macro|_DMA_H_
+DECL|ZEPHYR_INCLUDE_DMA_H_|macro|ZEPHYR_INCLUDE_DMA_H_
 DECL|_impl_dma_start|function|static inline int _impl_dma_start(struct device *dev, u32_t channel)
 DECL|_impl_dma_stop|function|static inline int _impl_dma_stop(struct device *dev, u32_t channel)
 DECL|block_count|member|u32_t block_count;

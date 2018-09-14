@@ -6,7 +6,7 @@ DECL|FS_SEEK_CUR|macro|FS_SEEK_CUR
 DECL|FS_SEEK_END|macro|FS_SEEK_END
 DECL|FS_SEEK_SET|macro|FS_SEEK_SET
 DECL|FS_TYPE_END|enumerator|FS_TYPE_END,
-DECL|_FS_H_|macro|_FS_H_
+DECL|ZEPHYR_INCLUDE_FS_H_|macro|ZEPHYR_INCLUDE_FS_H_
 DECL|__off_t_defined|macro|__off_t_defined
 DECL|__ssize_t_defined|macro|__ssize_t_defined
 DECL|closedir|member|int (*closedir)(struct fs_dir_t *dirp);

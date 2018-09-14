@@ -1,4 +1,4 @@
-DECL|__BYTEORDER_H__|macro|__BYTEORDER_H__
+DECL|ZEPHYR_INCLUDE_MISC_BYTEORDER_H_|macro|ZEPHYR_INCLUDE_MISC_BYTEORDER_H_
 DECL|__bswap_16|macro|__bswap_16
 DECL|__bswap_32|macro|__bswap_32
 DECL|__bswap_64|macro|__bswap_64

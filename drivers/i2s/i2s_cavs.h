@@ -74,7 +74,7 @@ DECL|SSSR_TFS|macro|SSSR_TFS
 DECL|SSSR_TNF|macro|SSSR_TNF
 DECL|SSTSA_TTSA|macro|SSTSA_TTSA
 DECL|SSTSA_TXEN|macro|SSTSA_TXEN
-DECL|_I2S_CAVS_H_|macro|_I2S_CAVS_H_
+DECL|ZEPHYR_DRIVERS_I2S_I2S_CAVS_H_|macro|ZEPHYR_DRIVERS_I2S_I2S_CAVS_H_
 DECL|i2s_cavs_mn_div|struct|struct i2s_cavs_mn_div {
 DECL|i2s_cavs_ssp|struct|struct i2s_cavs_ssp {
 DECL|mval|member|u32_t mval; /* 0x00 - M value */

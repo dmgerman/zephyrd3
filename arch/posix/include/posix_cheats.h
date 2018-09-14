@@ -1,5 +1,5 @@
 DECL|DIR|macro|DIR
-DECL|_POSIX_CHEATS_H|macro|_POSIX_CHEATS_H
+DECL|ZEPHYR_ARCH_POSIX_INCLUDE_POSIX_CHEATS_H_|macro|ZEPHYR_ARCH_POSIX_INCLUDE_POSIX_CHEATS_H_
 DECL|clock_gettime|macro|clock_gettime
 DECL|clock_settime|macro|clock_settime
 DECL|clockid_t|macro|clockid_t

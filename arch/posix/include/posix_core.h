@@ -1,4 +1,4 @@
-DECL|_POSIX_CORE_H|macro|_POSIX_CORE_H
+DECL|ZEPHYR_ARCH_POSIX_INCLUDE_POSIX_CORE_H_|macro|ZEPHYR_ARCH_POSIX_INCLUDE_POSIX_CORE_H_
 DECL|aborted|member|int aborted;
 DECL|arg1|member|void *arg1;
 DECL|arg2|member|void *arg2;

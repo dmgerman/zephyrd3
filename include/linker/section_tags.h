@@ -1,3 +1,4 @@
+DECL|ZEPHYR_INCLUDE_LINKER_SECTION_TAGS_H_|macro|ZEPHYR_INCLUDE_LINKER_SECTION_TAGS_H_
 DECL|__ccm_bss_section|macro|__ccm_bss_section
 DECL|__ccm_data_section|macro|__ccm_data_section
 DECL|__ccm_noinit_section|macro|__ccm_noinit_section
@@ -6,4 +7,3 @@ DECL|__kinetis_flash_config_section|macro|__kinetis_flash_config_section
 DECL|__noinit|macro|__noinit
 DECL|__sw_isr_table|macro|__sw_isr_table
 DECL|__ti_ccfg_section|macro|__ti_ccfg_section
-DECL|_section_tags__h_|macro|_section_tags__h_

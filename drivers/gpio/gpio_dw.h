@@ -1,4 +1,4 @@
-DECL|_GPIO_DW_H_|macro|_GPIO_DW_H_
+DECL|ZEPHYR_DRIVERS_GPIO_GPIO_DW_H_|macro|ZEPHYR_DRIVERS_GPIO_GPIO_DW_H_
 DECL|base_addr|member|u32_t base_addr;
 DECL|bits|member|u32_t bits;
 DECL|callbacks|member|sys_slist_t callbacks;

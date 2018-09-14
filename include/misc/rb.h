@@ -1,7 +1,7 @@
 DECL|RB_FOR_EACH_CONTAINER|macro|RB_FOR_EACH_CONTAINER
 DECL|RB_FOR_EACH|macro|RB_FOR_EACH
+DECL|ZEPHYR_INCLUDE_MISC_RB_H_|macro|ZEPHYR_INCLUDE_MISC_RB_H_
 DECL|_RB_FOREACH_INIT|macro|_RB_FOREACH_INIT
-DECL|_RB_H|macro|_RB_H
 DECL|_rb_foreach|struct|struct _rb_foreach {
 DECL|alloca|macro|alloca
 DECL|children|member|struct rbnode *children[2];

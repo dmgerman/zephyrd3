@@ -18,7 +18,7 @@ DECL|SETTINGS_NONE|enumerator|SETTINGS_NONE = 0,
 DECL|SETTINGS_STRING|enumerator|SETTINGS_STRING,
 DECL|SETTINGS_STR_FROM_BYTES_LEN|macro|SETTINGS_STR_FROM_BYTES_LEN
 DECL|SETTINGS_VALUE_SET|macro|SETTINGS_VALUE_SET
-DECL|__SETTINGS_H_|macro|__SETTINGS_H_
+DECL|ZEPHYR_INCLUDE_SETTINGS_SETTINGS_H_|macro|ZEPHYR_INCLUDE_SETTINGS_SETTINGS_H_
 DECL|cs_itf|member|const struct settings_store_itf *cs_itf;
 DECL|cs_next|member|sys_snode_t cs_next;
 DECL|h_commit|member|int (*h_commit)(void);

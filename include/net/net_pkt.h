@@ -3,7 +3,7 @@ DECL|NET_IPV6_HDR|macro|NET_IPV6_HDR
 DECL|NET_PKT_DATA_POOL_DEFINE|macro|NET_PKT_DATA_POOL_DEFINE
 DECL|NET_PKT_SLAB_DEFINE|macro|NET_PKT_SLAB_DEFINE
 DECL|NET_PKT_TX_SLAB_DEFINE|macro|NET_PKT_TX_SLAB_DEFINE
-DECL|__NET_PKT_H__|macro|__NET_PKT_H__
+DECL|ZEPHYR_INCLUDE_NET_NET_PKT_H_|macro|ZEPHYR_INCLUDE_NET_NET_PKT_H_
 DECL|_reserved|member|int _reserved;
 DECL|appdatalen|member|u16_t appdatalen;
 DECL|appdata|member|u8_t *appdata; /* application data starts here */

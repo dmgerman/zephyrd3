@@ -21,7 +21,7 @@ DECL|JSON_TOK_OBJECT_END|enumerator|JSON_TOK_OBJECT_END = '}',
 DECL|JSON_TOK_OBJECT_START|enumerator|JSON_TOK_OBJECT_START = '{',
 DECL|JSON_TOK_STRING|enumerator|JSON_TOK_STRING = '"',
 DECL|JSON_TOK_TRUE|enumerator|JSON_TOK_TRUE = 't',
-DECL|__JSON_H|macro|__JSON_H
+DECL|ZEPHYR_INCLUDE_JSON_H_|macro|ZEPHYR_INCLUDE_JSON_H_
 DECL|alignment|member|u32_t alignment : 2;
 DECL|array|member|} array;
 DECL|element_descr|member|const struct json_obj_descr *element_descr;

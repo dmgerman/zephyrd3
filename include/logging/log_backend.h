@@ -1,5 +1,5 @@
 DECL|LOG_BACKEND_DEFINE|macro|LOG_BACKEND_DEFINE
-DECL|LOG_BACKEND_H|macro|LOG_BACKEND_H
+DECL|ZEPHYR_INCLUDE_LOGGING_LOG_BACKEND_H_|macro|ZEPHYR_INCLUDE_LOGGING_LOG_BACKEND_H_
 DECL|active|member|bool active;
 DECL|api|member|const struct log_backend_api *api;
 DECL|cb|member|struct log_backend_control_block *cb;

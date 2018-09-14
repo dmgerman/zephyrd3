@@ -1,4 +1,4 @@
-DECL|_SWAPSTK_H|macro|_SWAPSTK_H
+DECL|ZEPHYR_ARCH_X86_INCLUDE_SWAPSTK_H_|macro|ZEPHYR_ARCH_X86_INCLUDE_SWAPSTK_H_
 DECL|eax|member|unsigned int eax; /* EAX register */
 DECL|ebp|member|unsigned int ebp; /* EBP register */
 DECL|ebx|member|unsigned int ebx; /* EBX register */

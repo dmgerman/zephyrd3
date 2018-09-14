@@ -24,7 +24,7 @@ DECL|AUDIO_PCM_WIDTH_24_BITS|enumerator|AUDIO_PCM_WIDTH_24_BITS = 24,
 DECL|AUDIO_PCM_WIDTH_32_BITS|enumerator|AUDIO_PCM_WIDTH_32_BITS = 32,
 DECL|AUDIO_PROPERTY_OUTPUT_MUTE|enumerator|AUDIO_PROPERTY_OUTPUT_MUTE,
 DECL|AUDIO_PROPERTY_OUTPUT_VOLUME|enumerator|AUDIO_PROPERTY_OUTPUT_VOLUME,
-DECL|__AUDIO_CODEC_H__|macro|__AUDIO_CODEC_H__
+DECL|ZEPHYR_INCLUDE_AUDIO_CODEC_H_|macro|ZEPHYR_INCLUDE_AUDIO_CODEC_H_
 DECL|apply_properties|member|int (*apply_properties)(struct device *dev);
 DECL|audio_channel_t|typedef|} audio_channel_t;
 DECL|audio_codec_api|struct|struct audio_codec_api {

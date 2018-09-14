@@ -66,7 +66,7 @@ DECL|PF_INET|macro|PF_INET
 DECL|PF_UNSPEC|macro|PF_UNSPEC
 DECL|SOCK_DGRAM|enumerator|SOCK_DGRAM,
 DECL|SOCK_STREAM|enumerator|SOCK_STREAM = 1,
-DECL|__NET_IP_H|macro|__NET_IP_H
+DECL|ZEPHYR_INCLUDE_NET_NET_IP_H_|macro|ZEPHYR_INCLUDE_NET_NET_IP_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed

@@ -7,8 +7,8 @@ DECL|SYS_DLIST_ITERATE_FROM_NODE|macro|SYS_DLIST_ITERATE_FROM_NODE
 DECL|SYS_DLIST_PEEK_HEAD_CONTAINER|macro|SYS_DLIST_PEEK_HEAD_CONTAINER
 DECL|SYS_DLIST_PEEK_NEXT_CONTAINER|macro|SYS_DLIST_PEEK_NEXT_CONTAINER
 DECL|SYS_DLIST_STATIC_INIT|macro|SYS_DLIST_STATIC_INIT
+DECL|ZEPHYR_INCLUDE_MISC_DLIST_H_|macro|ZEPHYR_INCLUDE_MISC_DLIST_H_
 DECL|_dnode|struct|struct _dnode {
-DECL|_misc_dlist__h_|macro|_misc_dlist__h_
 DECL|head|member|struct _dnode *head; /* ptr to head of list (sys_dlist_t) */
 DECL|next|member|struct _dnode *next; /* ptr to next node (sys_dnode_t) */
 DECL|prev|member|struct _dnode *prev; /* ptr to previous node (sys_dnode_t) */

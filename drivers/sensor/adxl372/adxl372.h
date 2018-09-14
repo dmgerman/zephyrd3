@@ -190,7 +190,7 @@ DECL|ADXL372_Z_THRESH_INACT_L|macro|ADXL372_Z_THRESH_INACT_L
 DECL|GENMASK|macro|GENMASK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_ADXL372_H__|macro|__SENSOR_ADXL372_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_ADXL372_ADXL372_H_|macro|ZEPHYR_DRIVERS_SENSOR_ADXL372_ADXL372_H_
 DECL|act_proc_mode|member|enum adxl372_act_proc_mode act_proc_mode;
 DECL|activity2_th|member|struct adxl372_activity_threshold activity2_th;
 DECL|activity_th|member|struct adxl372_activity_threshold activity_th;

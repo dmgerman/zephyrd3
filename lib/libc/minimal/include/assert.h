@@ -1,4 +1,4 @@
-DECL|__INC_assert_h__|macro|__INC_assert_h__
+DECL|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_ASSERT_H_|macro|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_ASSERT_H_
 DECL|assert|macro|assert
 DECL|assert|macro|assert
 DECL|static_assert|macro|static_assert

@@ -17,7 +17,7 @@ DECL|MQTT_SUBACK|enumerator|MQTT_SUBACK,
 DECL|MQTT_SUBSCRIBE|enumerator|MQTT_SUBSCRIBE,
 DECL|MQTT_UNSUBACK|enumerator|MQTT_UNSUBACK,
 DECL|MQTT_UNSUBSCRIBE|enumerator|MQTT_UNSUBSCRIBE,
-DECL|_MQTT_TYPES_H_|macro|_MQTT_TYPES_H_
+DECL|ZEPHYR_INCLUDE_NET_MQTT_TYPES_H_|macro|ZEPHYR_INCLUDE_NET_MQTT_TYPES_H_
 DECL|clean_session|member|u8_t clean_session:1;
 DECL|client_id_len|member|u16_t client_id_len;
 DECL|client_id|member|char *client_id;

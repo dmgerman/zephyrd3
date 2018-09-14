@@ -1,4 +1,4 @@
-DECL|__NET_OFFLOAD_H__|macro|__NET_OFFLOAD_H__
+DECL|ZEPHYR_INCLUDE_NET_NET_OFFLOAD_H_|macro|ZEPHYR_INCLUDE_NET_NET_OFFLOAD_H_
 DECL|accept|member|int (*accept)(struct net_context *context,
 DECL|bind|member|int (*bind)(struct net_context *context,
 DECL|connect|member|int (*connect)(struct net_context *context,

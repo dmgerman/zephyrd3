@@ -1,5 +1,5 @@
 DECL|BT_MESH_MODEL_HEALTH_CLI|macro|BT_MESH_MODEL_HEALTH_CLI
-DECL|__BT_MESH_HEALTH_CLI_H|macro|__BT_MESH_HEALTH_CLI_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_MESH_HEALTH_CLI_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_MESH_HEALTH_CLI_H_
 DECL|bt_mesh_health_cli|struct|struct bt_mesh_health_cli {
 DECL|current_status|member|void (*current_status)(struct bt_mesh_health_cli *cli, u16_t addr,
 DECL|model|member|struct bt_mesh_model *model;

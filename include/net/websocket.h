@@ -10,6 +10,6 @@ DECL|WS_OPCODE_DATA_BINARY|enumerator|WS_OPCODE_DATA_BINARY = 0x02,
 DECL|WS_OPCODE_DATA_TEXT|enumerator|WS_OPCODE_DATA_TEXT = 0x01,
 DECL|WS_OPCODE_PING|enumerator|WS_OPCODE_PING = 0x09,
 DECL|WS_OPCODE_PONG|enumerator|WS_OPCODE_PONG = 0x0A,
-DECL|__WEBSOCKET_H__|macro|__WEBSOCKET_H__
+DECL|ZEPHYR_INCLUDE_NET_WEBSOCKET_H_|macro|ZEPHYR_INCLUDE_NET_WEBSOCKET_H_
 DECL|ws_opcode|enum|enum ws_opcode {
 DECL|ws_send_msg_to_client|function|static inline int ws_send_msg_to_client(struct http_ctx *ctx,u8_t *payload, size_t payload_len, enum ws_opcode opcode, bool final,

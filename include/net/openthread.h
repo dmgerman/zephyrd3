@@ -1,5 +1,5 @@
 DECL|OPENTHREAD_L2_CTX_TYPE|macro|OPENTHREAD_L2_CTX_TYPE
-DECL|__NET_OPENTHREAD_H_|macro|__NET_OPENTHREAD_H_
+DECL|ZEPHYR_INCLUDE_NET_OPENTHREAD_H_|macro|ZEPHYR_INCLUDE_NET_OPENTHREAD_H_
 DECL|iface|member|struct net_if *iface;
 DECL|instance|member|otInstance *instance;
 DECL|openthread_context|struct|struct openthread_context {

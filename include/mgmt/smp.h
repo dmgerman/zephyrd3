@@ -1,4 +1,4 @@
-DECL|H_ZEPHYR_SMP_|macro|H_ZEPHYR_SMP_
+DECL|ZEPHYR_INCLUDE_MGMT_SMP_H_|macro|ZEPHYR_INCLUDE_MGMT_SMP_H_
 DECL|zephyr_smp_transport_get_mtu_fn|typedef|typedef uint16_t zephyr_smp_transport_get_mtu_fn(const struct net_buf *nb);
 DECL|zephyr_smp_transport_out_fn|typedef|typedef int zephyr_smp_transport_out_fn(struct zephyr_smp_transport *zst,
 DECL|zephyr_smp_transport_ud_copy_fn|typedef|typedef int zephyr_smp_transport_ud_copy_fn(struct net_buf *dst,

@@ -1,4 +1,4 @@
-DECL|_ASM_INLINE_GCC_PUBLIC_GCC_H_INCLUDE_ARCH_POSIX|macro|_ASM_INLINE_GCC_PUBLIC_GCC_H_INCLUDE_ARCH_POSIX
+DECL|ZEPHYR_INCLUDE_ARCH_POSIX_ASM_INLINE_GCC_H_|macro|ZEPHYR_INCLUDE_ARCH_POSIX_ASM_INLINE_GCC_H_
 DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(u32_t op)
 DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(u32_t op)
 DECL|sys_bitfield_clear_bit|function|void sys_bitfield_clear_bit(mem_addr_t addr, unsigned int bit)

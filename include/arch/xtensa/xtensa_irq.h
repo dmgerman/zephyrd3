@@ -1,7 +1,7 @@
 DECL|CONFIG_GEN_IRQ_START_VECTOR|macro|CONFIG_GEN_IRQ_START_VECTOR
 DECL|CONFIG_NUM_IRQS|macro|CONFIG_NUM_IRQS
 DECL|CONFIG_NUM_IRQS|macro|CONFIG_NUM_IRQS
-DECL|XTENSA_IRQ_H|macro|XTENSA_IRQ_H
+DECL|ZEPHYR_INCLUDE_ARCH_XTENSA_XTENSA_IRQ_H_|macro|ZEPHYR_INCLUDE_ARCH_XTENSA_XTENSA_IRQ_H_
 DECL|_arch_irq_disable|macro|_arch_irq_disable
 DECL|_arch_irq_disable|macro|_arch_irq_disable
 DECL|_arch_irq_enable|macro|_arch_irq_enable

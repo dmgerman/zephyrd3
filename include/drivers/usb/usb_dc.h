@@ -19,7 +19,7 @@ DECL|USB_DC_UNKNOWN|enumerator|USB_DC_UNKNOWN
 DECL|USB_EP_DIR_IN|macro|USB_EP_DIR_IN
 DECL|USB_EP_DIR_MASK|macro|USB_EP_DIR_MASK
 DECL|USB_EP_DIR_OUT|macro|USB_EP_DIR_OUT
-DECL|__USB_DC_H__|macro|__USB_DC_H__
+DECL|ZEPHYR_INCLUDE_DRIVERS_USB_USB_DC_H_|macro|ZEPHYR_INCLUDE_DRIVERS_USB_USB_DC_H_
 DECL|ep_addr|member|u8_t ep_addr;
 DECL|ep_mps|member|u16_t ep_mps;
 DECL|ep_type|member|enum usb_dc_ep_type ep_type;

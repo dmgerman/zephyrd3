@@ -24,7 +24,7 @@ DECL|GDB_UNKNOWN_BP_TYPE|enumerator|GDB_UNKNOWN_BP_TYPE = -1 /* unknown breakpoi
 DECL|NOT_DEBUGGING|macro|NOT_DEBUGGING
 DECL|SINGLE_STEP|macro|SINGLE_STEP
 DECL|STOP_RUNNING|macro|STOP_RUNNING
-DECL|__MISC_DEBUG_GDB_SERVER__H_|macro|__MISC_DEBUG_GDB_SERVER__H_
+DECL|ZEPHYR_INCLUDE_DEBUG_GDB_SERVER_H_|macro|ZEPHYR_INCLUDE_DEBUG_GDB_SERVER_H_
 DECL|gdb_bp_type|enum|enum gdb_bp_type {
 DECL|gdb_error_code|enum|enum gdb_error_code {
 DECL|gdb_exc_mode|enum|enum gdb_exc_mode {

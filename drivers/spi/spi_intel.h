@@ -4,7 +4,7 @@ DECL|DEFINE_MM_REG_WRITE|macro|DEFINE_MM_REG_WRITE
 DECL|DEFINE_SET_BIT_OP|macro|DEFINE_SET_BIT_OP
 DECL|DEFINE_TEST_BIT_OP|macro|DEFINE_TEST_BIT_OP
 DECL|SPI_WS_TO_DFS|macro|SPI_WS_TO_DFS
-DECL|__SPI_INTEL_H__|macro|__SPI_INTEL_H__
+DECL|ZEPHYR_DRIVERS_SPI_SPI_INTEL_H_|macro|ZEPHYR_DRIVERS_SPI_SPI_INTEL_H_
 DECL|config_func|member|spi_intel_config_t config_func;
 DECL|ctx|member|struct spi_context ctx;
 DECL|device_power_state|member|u32_t device_power_state;

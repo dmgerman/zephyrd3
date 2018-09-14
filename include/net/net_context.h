@@ -13,7 +13,7 @@ DECL|NET_CONTEXT_STATE_SHIFT|macro|NET_CONTEXT_STATE_SHIFT
 DECL|NET_CONTEXT_TYPE|macro|NET_CONTEXT_TYPE
 DECL|NET_CONTEXT_UNCONNECTED|enumerator|NET_CONTEXT_UNCONNECTED = 0,
 DECL|NET_OPT_PRIORITY|enumerator|NET_OPT_PRIORITY = 1,
-DECL|__NET_CONTEXT_H|macro|__NET_CONTEXT_H
+DECL|ZEPHYR_INCLUDE_NET_NET_CONTEXT_H_|macro|ZEPHYR_INCLUDE_NET_NET_CONTEXT_H_
 DECL|accept_q|member|struct k_fifo accept_q;
 DECL|conn_handler|member|struct net_conn_handle *conn_handler;
 DECL|connect_cb|member|net_context_connect_cb_t connect_cb;

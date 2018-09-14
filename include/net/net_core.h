@@ -37,7 +37,7 @@ DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__NET_CORE_H|macro|__NET_CORE_H
+DECL|ZEPHYR_INCLUDE_NET_NET_CORE_H_|macro|ZEPHYR_INCLUDE_NET_NET_CORE_H_
 DECL|idx|member|int idx;
 DECL|name|member|const char *name;
 DECL|net_analyze_stack_get_values|function|static inline void net_analyze_stack_get_values(const char *stack,size_t size, unsigned *pcnt, unsigned *unused)

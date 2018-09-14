@@ -1,3 +1,3 @@
-DECL|_ASM_INLINE_GCC_H|macro|_ASM_INLINE_GCC_H
+DECL|ZEPHYR_INCLUDE_ARCH_RISCV32_RISCV_PRIVILEGE_ASM_INLINE_GCC_H_|macro|ZEPHYR_INCLUDE_ARCH_RISCV32_RISCV_PRIVILEGE_ASM_INLINE_GCC_H_
 DECL|find_lsb_set|function|static ALWAYS_INLINE unsigned int find_lsb_set(u32_t op)
 DECL|find_msb_set|function|static ALWAYS_INLINE unsigned int find_msb_set(u32_t op)

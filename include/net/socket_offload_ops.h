@@ -1,4 +1,4 @@
-DECL|__SOCKET_OFFLOAD_OPS_H__|macro|__SOCKET_OFFLOAD_OPS_H__
+DECL|ZEPHYR_INCLUDE_NET_SOCKET_OFFLOAD_OPS_H_|macro|ZEPHYR_INCLUDE_NET_SOCKET_OFFLOAD_OPS_H_
 DECL|accept|member|int (*accept)(int sock, struct sockaddr *addr, socklen_t *addrlen);
 DECL|bind|member|int (*bind)(int sock, const struct sockaddr *addr, socklen_t addrlen);
 DECL|close|member|int (*close)(int sock);

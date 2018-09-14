@@ -1,5 +1,5 @@
 DECL|CLOCK_CONTROL_SUBSYS_ALL|macro|CLOCK_CONTROL_SUBSYS_ALL
-DECL|__CLOCK_CONTROL_H__|macro|__CLOCK_CONTROL_H__
+DECL|ZEPHYR_INCLUDE_CLOCK_CONTROL_H_|macro|ZEPHYR_INCLUDE_CLOCK_CONTROL_H_
 DECL|clock_control_driver_api|struct|struct clock_control_driver_api {
 DECL|clock_control_get_rate|function|static inline int clock_control_get_rate(struct device *dev, clock_control_subsys_t sys, u32_t *rate)
 DECL|clock_control_get|typedef|typedef int (*clock_control_get)(struct device *dev,

@@ -52,7 +52,7 @@ DECL|SENSOR_TRIG_NEAR_FAR|enumerator|SENSOR_TRIG_NEAR_FAR,
 DECL|SENSOR_TRIG_TAP|enumerator|SENSOR_TRIG_TAP,
 DECL|SENSOR_TRIG_THRESHOLD|enumerator|SENSOR_TRIG_THRESHOLD,
 DECL|SENSOR_TRIG_TIMER|enumerator|SENSOR_TRIG_TIMER,
-DECL|__SENSOR_H__|macro|__SENSOR_H__
+DECL|ZEPHYR_INCLUDE_SENSOR_H_|macro|ZEPHYR_INCLUDE_SENSOR_H_
 DECL|_impl_sensor_attr_set|function|static inline int _impl_sensor_attr_set(struct device *dev,enum sensor_channel chan, enum sensor_attribute attr, const struct sensor_value *val)
 DECL|_impl_sensor_channel_get|function|static inline int _impl_sensor_channel_get(struct device *dev, enum sensor_channel chan, struct sensor_value *val)
 DECL|_impl_sensor_sample_fetch_chan|function|static inline int _impl_sensor_sample_fetch_chan(struct device *dev, enum sensor_channel type)

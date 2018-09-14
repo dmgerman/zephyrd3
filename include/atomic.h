@@ -3,7 +3,7 @@ DECL|ATOMIC_DEFINE|macro|ATOMIC_DEFINE
 DECL|ATOMIC_ELEM|macro|ATOMIC_ELEM
 DECL|ATOMIC_INIT|macro|ATOMIC_INIT
 DECL|ATOMIC_MASK|macro|ATOMIC_MASK
-DECL|__ATOMIC_H__|macro|__ATOMIC_H__
+DECL|ZEPHYR_INCLUDE_ATOMIC_H_|macro|ZEPHYR_INCLUDE_ATOMIC_H_
 DECL|atomic_add|function|static inline atomic_val_t atomic_add(atomic_t *target, atomic_val_t value)
 DECL|atomic_and|function|static inline atomic_val_t atomic_and(atomic_t *target, atomic_val_t value)
 DECL|atomic_cas|function|static inline int atomic_cas(atomic_t *target, atomic_val_t old_value, atomic_val_t new_value)

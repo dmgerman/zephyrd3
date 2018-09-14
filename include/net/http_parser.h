@@ -80,7 +80,7 @@ DECL|HTTP_UNBIND|enumerator|HTTP_UNBIND = 18,
 DECL|HTTP_UNLINK|enumerator|HTTP_UNLINK = 32
 DECL|HTTP_UNLOCK|enumerator|HTTP_UNLOCK = 15,
 DECL|HTTP_UNSUBSCRIBE|enumerator|HTTP_UNSUBSCRIBE = 27,
-DECL|_HTTP_PARSER_H_|macro|_HTTP_PARSER_H_
+DECL|ZEPHYR_INCLUDE_NET_HTTP_PARSER_H_|macro|ZEPHYR_INCLUDE_NET_HTTP_PARSER_H_
 DECL|addr|member|const struct sockaddr *addr;
 DECL|content_length|member|u64_t content_length; /* # bytes in body (0 if no Content-Length
 DECL|data|member|void *data; /* A pointer to get hook to the "connection" or "socket"

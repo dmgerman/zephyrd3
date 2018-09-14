@@ -205,7 +205,7 @@ DECL|BT_SDP_VIDEO_SINK_SVCLASS|macro|BT_SDP_VIDEO_SINK_SVCLASS
 DECL|BT_SDP_VIDEO_SOURCE_SVCLASS|macro|BT_SDP_VIDEO_SOURCE_SVCLASS
 DECL|BT_SDP_WAP_CLIENT_SVCLASS|macro|BT_SDP_WAP_CLIENT_SVCLASS
 DECL|BT_SDP_WAP_SVCLASS|macro|BT_SDP_WAP_SVCLASS
-DECL|__BT_SDP_H|macro|__BT_SDP_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_SDP_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_SDP_H_
 DECL|_node|member|sys_snode_t _node;
 DECL|attr_count|member|size_t attr_count; /* Number of attributes */
 DECL|attrs|member|struct bt_sdp_attribute *attrs; /* Base addr of attr array */

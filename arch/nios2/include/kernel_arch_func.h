@@ -1,6 +1,6 @@
+DECL|ZEPHYR_ARCH_NIOS2_INCLUDE_KERNEL_ARCH_FUNC_H_|macro|ZEPHYR_ARCH_NIOS2_INCLUDE_KERNEL_ARCH_FUNC_H_
 DECL|_IntLibInit|function|static inline void _IntLibInit(void)
 DECL|_is_in_isr|macro|_is_in_isr
-DECL|_kernel_arch_func__h_|macro|_kernel_arch_func__h_
 DECL|_nios2_dcache_flush_all|macro|_nios2_dcache_flush_all
 DECL|_nios2_dcache_flush_no_writeback|macro|_nios2_dcache_flush_no_writeback
 DECL|_nios2_icache_flush_all|macro|_nios2_icache_flush_all

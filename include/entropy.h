@@ -1,5 +1,5 @@
 DECL|ENTROPY_BUSYWAIT|macro|ENTROPY_BUSYWAIT
-DECL|__ENTROPY_H__|macro|__ENTROPY_H__
+DECL|ZEPHYR_INCLUDE_ENTROPY_H_|macro|ZEPHYR_INCLUDE_ENTROPY_H_
 DECL|_impl_entropy_get_entropy|function|static inline int _impl_entropy_get_entropy(struct device *dev, u8_t *buffer, u16_t length)
 DECL|entropy_driver_api|struct|struct entropy_driver_api {
 DECL|entropy_get_entropy_isr_t|typedef|typedef int (*entropy_get_entropy_isr_t)(struct device *dev,

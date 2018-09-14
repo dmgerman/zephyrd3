@@ -39,7 +39,7 @@ DECL|REGION_ALL_ATTR|macro|REGION_ALL_ATTR
 DECL|REGION_FLASH_ATTR|macro|REGION_FLASH_ATTR
 DECL|REGION_IO_ATTR|macro|REGION_IO_ATTR
 DECL|REGION_RAM_ATTR|macro|REGION_RAM_ATTR
-DECL|_ARC_MPU_H_|macro|_ARC_MPU_H_
+DECL|ZEPHYR_INCLUDE_ARCH_ARC_V2_MPU_ARC_MPU_H_|macro|ZEPHYR_INCLUDE_ARCH_ARC_V2_MPU_ARC_MPU_H_
 DECL|arc_mpu_config|struct|struct arc_mpu_config {
 DECL|arc_mpu_region|struct|struct arc_mpu_region {
 DECL|attr|member|u32_t attr;

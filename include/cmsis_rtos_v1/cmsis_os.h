@@ -1,4 +1,4 @@
-DECL|_CMSIS_OS_H|macro|_CMSIS_OS_H
+DECL|ZEPHYR_INCLUDE_CMSIS_RTOS_V1_CMSIS_OS_H_|macro|ZEPHYR_INCLUDE_CMSIS_RTOS_V1_CMSIS_OS_H_
 DECL|cm_thread|member|struct k_thread *cm_thread; ///< pointer to k_thread structure
 DECL|def|member|} def; ///< event definition
 DECL|dummy|member|uint32_t dummy; ///< dummy value.

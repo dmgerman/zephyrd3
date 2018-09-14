@@ -1,4 +1,4 @@
-DECL|_ZEPHYR_LED_H|macro|_ZEPHYR_LED_H
+DECL|ZEPHYR_INCLUDE_LED_H_|macro|ZEPHYR_INCLUDE_LED_H_
 DECL|_impl_led_blink|function|static inline int _impl_led_blink(struct device *dev, u32_t led, u32_t delay_on, u32_t delay_off)
 DECL|_impl_led_off|function|static inline int _impl_led_off(struct device *dev, u32_t led)
 DECL|_impl_led_on|function|static inline int _impl_led_on(struct device *dev, u32_t led)

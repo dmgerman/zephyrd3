@@ -55,6 +55,7 @@ DECL|DW_SPI_TXFTLR_DFLT|macro|DW_SPI_TXFTLR_DFLT
 DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
 DECL|SPI_DW_CLK_DIVIDER|macro|SPI_DW_CLK_DIVIDER
 DECL|SPI_WS_TO_DFS|macro|SPI_WS_TO_DFS
+DECL|ZEPHYR_DRIVERS_SPI_SPI_DW_H_|macro|ZEPHYR_DRIVERS_SPI_SPI_DW_H_
 DECL|_INT_UNMASK|macro|_INT_UNMASK
 DECL|_INT_UNMASK|macro|_INT_UNMASK
 DECL|_REG_CLEAR_BIT|macro|_REG_CLEAR_BIT
@@ -67,7 +68,6 @@ DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
 DECL|_REG_TEST_BIT|macro|_REG_TEST_BIT
 DECL|_REG_WRITE|macro|_REG_WRITE
 DECL|_REG_WRITE|macro|_REG_WRITE
-DECL|__SPI_DW_H__|macro|__SPI_DW_H__
 DECL|_clock_config|function|static inline int _clock_config(struct device *dev)
 DECL|_clock_off|function|static inline void _clock_off(struct device *dev)
 DECL|_clock_on|function|static inline void _clock_on(struct device *dev)

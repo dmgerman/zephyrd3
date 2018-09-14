@@ -1,4 +1,4 @@
-DECL|__COUNTER_H__|macro|__COUNTER_H__
+DECL|ZEPHYR_INCLUDE_COUNTER_H_|macro|ZEPHYR_INCLUDE_COUNTER_H_
 DECL|_impl_counter_get_pending_int|function|static inline int _impl_counter_get_pending_int(struct device *dev)
 DECL|_impl_counter_read|function|static inline u32_t _impl_counter_read(struct device *dev)
 DECL|_impl_counter_start|function|static inline int _impl_counter_start(struct device *dev)

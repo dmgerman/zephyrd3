@@ -19,7 +19,7 @@ DECL|BT_ATT_ERR_UNLIKELY|macro|BT_ATT_ERR_UNLIKELY
 DECL|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE|macro|BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE
 DECL|BT_ATT_ERR_WRITE_NOT_PERMITTED|macro|BT_ATT_ERR_WRITE_NOT_PERMITTED
 DECL|BT_ATT_ERR_WRITE_REQ_REJECTED|macro|BT_ATT_ERR_WRITE_REQ_REJECTED
-DECL|__BT_ATT_H|macro|__BT_ATT_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_ATT_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_ATT_H_
 DECL|bt_att_destroy_t|typedef|typedef void (*bt_att_destroy_t)(void *user_data);
 DECL|bt_att_func_t|typedef|typedef void (*bt_att_func_t)(struct bt_conn *conn, u8_t err,
 DECL|bt_att_req|struct|struct bt_att_req {

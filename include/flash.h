@@ -1,4 +1,4 @@
-DECL|__FLASH_H__|macro|__FLASH_H__
+DECL|ZEPHYR_INCLUDE_FLASH_H_|macro|ZEPHYR_INCLUDE_FLASH_H_
 DECL|_impl_flash_erase|function|static inline int _impl_flash_erase(struct device *dev, off_t offset, size_t size)
 DECL|_impl_flash_get_write_block_size|function|static inline size_t _impl_flash_get_write_block_size(struct device *dev)
 DECL|_impl_flash_read|function|static inline int _impl_flash_read(struct device *dev, off_t offset, void *data, size_t len)

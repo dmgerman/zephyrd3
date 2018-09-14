@@ -1,7 +1,7 @@
 DECL|ADC_CONTEXT_INIT_LOCK|macro|ADC_CONTEXT_INIT_LOCK
 DECL|ADC_CONTEXT_INIT_SYNC|macro|ADC_CONTEXT_INIT_SYNC
 DECL|ADC_CONTEXT_INIT_TIMER|macro|ADC_CONTEXT_INIT_TIMER
-DECL|__ADC_CONTEXT_H__|macro|__ADC_CONTEXT_H__
+DECL|ZEPHYR_DRIVERS_ADC_ADC_CONTEXT_H_|macro|ZEPHYR_DRIVERS_ADC_ADC_CONTEXT_H_
 DECL|adc_context_complete|function|static inline void adc_context_complete(struct adc_context *ctx, int status)
 DECL|adc_context_disable_timer|function|static inline void adc_context_disable_timer(struct adc_context *ctx)
 DECL|adc_context_enable_timer|function|static inline void adc_context_enable_timer(struct adc_context *ctx)

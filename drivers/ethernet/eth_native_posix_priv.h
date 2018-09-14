@@ -1,2 +1,2 @@
-DECL|_ETH_NATIVE_POSIX_PRIV_H|macro|_ETH_NATIVE_POSIX_PRIV_H
+DECL|ZEPHYR_DRIVERS_ETHERNET_ETH_NATIVE_POSIX_PRIV_H_|macro|ZEPHYR_DRIVERS_ETHERNET_ETH_NATIVE_POSIX_PRIV_H_
 DECL|eth_promisc_mode|function|static inline int eth_promisc_mode(const char *if_name, bool enable)

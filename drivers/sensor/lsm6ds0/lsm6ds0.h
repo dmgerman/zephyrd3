@@ -326,7 +326,7 @@ DECL|SENSOR_G_DOUBLE|macro|SENSOR_G_DOUBLE
 DECL|SENSOR_PI_DOUBLE|macro|SENSOR_PI_DOUBLE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_LSM6DS0_H__|macro|__SENSOR_LSM6DS0_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_LSM6DS0_LSM6DS0_H_|macro|ZEPHYR_DRIVERS_SENSOR_LSM6DS0_LSM6DS0_H_
 DECL|accel_sample_x|member|int accel_sample_x;
 DECL|accel_sample_y|member|int accel_sample_y;
 DECL|accel_sample_z|member|int accel_sample_z;

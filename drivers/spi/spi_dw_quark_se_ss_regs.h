@@ -22,7 +22,7 @@ DECL|DW_SPI_REG_RXFTLR|macro|DW_SPI_REG_RXFTLR
 DECL|DW_SPI_REG_SR|macro|DW_SPI_REG_SR
 DECL|DW_SPI_REG_SSIENR|macro|DW_SPI_REG_SSIENR
 DECL|DW_SPI_REG_TXFLR|macro|DW_SPI_REG_TXFLR
-DECL|__SPI_DW_QUARK_SE_SS_H__|macro|__SPI_DW_QUARK_SE_SS_H__
+DECL|ZEPHYR_DRIVERS_SPI_SPI_DW_QUARK_SE_SS_REGS_H_|macro|ZEPHYR_DRIVERS_SPI_SPI_DW_QUARK_SE_SS_REGS_H_
 DECL|_extra_clock_off|function|static inline void _extra_clock_off(struct device *dev)
 DECL|_extra_clock_on|function|static inline void _extra_clock_on(struct device *dev)
 DECL|clear_interrupts|function|static inline void clear_interrupts(u32_t addr)

@@ -50,7 +50,7 @@ DECL|ATAES_VOLATILE_LEGACYOK|macro|ATAES_VOLATILE_LEGACYOK
 DECL|ATAES_VOLATILE_RNDNNC|macro|ATAES_VOLATILE_RNDNNC
 DECL|ATAES_ZONECFG_REG|macro|ATAES_ZONECFG_REG
 DECL|CRC16_POLY|macro|CRC16_POLY
-DECL|_ATAES132A_PRIV_|macro|_ATAES132A_PRIV_
+DECL|ZEPHYR_DRIVERS_CRYPTO_CRYPTO_ATAES132A_PRIV_H_|macro|ZEPHYR_DRIVERS_CRYPTO_CRYPTO_ATAES132A_PRIV_H_
 DECL|ataes132a_atmel_crc|function|void ataes132a_atmel_crc(u8_t *input, u8_t length, u8_t *output)
 DECL|ataes132a_device_config|struct|struct ataes132a_device_config {
 DECL|ataes132a_device_data|struct|struct ataes132a_device_data {

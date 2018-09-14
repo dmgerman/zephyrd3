@@ -8,7 +8,7 @@ DECL|GPIO_SCH_REG_GSMI|macro|GPIO_SCH_REG_GSMI
 DECL|GPIO_SCH_REG_GTNE|macro|GPIO_SCH_REG_GTNE
 DECL|GPIO_SCH_REG_GTPE|macro|GPIO_SCH_REG_GTPE
 DECL|GPIO_SCH_REG_GTS|macro|GPIO_SCH_REG_GTS
-DECL|__GPIO_SCH_H__|macro|__GPIO_SCH_H__
+DECL|ZEPHYR_DRIVERS_GPIO_GPIO_SCH_H_|macro|ZEPHYR_DRIVERS_GPIO_GPIO_SCH_H_
 DECL|bits|member|u8_t bits;
 DECL|callbacks|member|sys_slist_t callbacks;
 DECL|cb_enabled|member|u32_t cb_enabled;

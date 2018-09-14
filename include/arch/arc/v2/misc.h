@@ -1,2 +1,2 @@
-DECL|_ARCH_ARC_V2_MISC_H_|macro|_ARCH_ARC_V2_MISC_H_
+DECL|ZEPHYR_INCLUDE_ARCH_ARC_V2_MISC_H_|macro|ZEPHYR_INCLUDE_ARCH_ARC_V2_MISC_H_
 DECL|_arch_k_cycle_get_32|macro|_arch_k_cycle_get_32

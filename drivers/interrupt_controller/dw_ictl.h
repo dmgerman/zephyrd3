@@ -18,7 +18,7 @@ DECL|Reserved6|member|u32_t Reserved6; /* offset 64 */
 DECL|Reserved7|member|u32_t Reserved7; /* offset 6c */
 DECL|Reserved8|member|u32_t Reserved8; /* offset 74 */
 DECL|Reserved9|member|u32_t Reserved9; /* offset 7c */
-DECL|_DW_ICTL_H_|macro|_DW_ICTL_H_
+DECL|ZEPHYR_DRIVERS_INTERRUPT_CONTROLLER_DW_ICTL_H_|macro|ZEPHYR_DRIVERS_INTERRUPT_CONTROLLER_DW_ICTL_H_
 DECL|base_addr|member|u32_t base_addr;
 DECL|config_func|member|dw_ictl_config_irq_t config_func;
 DECL|dw_ictl_config_irq_t|typedef|typedef void (*dw_ictl_config_irq_t)(struct device *port);

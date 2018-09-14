@@ -1,6 +1,6 @@
 DECL|DEV_CFG|macro|DEV_CFG
 DECL|DEV_DATA|macro|DEV_DATA
-DECL|_STM32_I2C_H_|macro|_STM32_I2C_H_
+DECL|ZEPHYR_DRIVERS_I2C_I2C_LL_STM32_H_|macro|ZEPHYR_DRIVERS_I2C_I2C_LL_STM32_H_
 DECL|bitrate|member|u32_t bitrate;
 DECL|buf|member|u8_t *buf;
 DECL|current|member|} current;

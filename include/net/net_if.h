@@ -19,7 +19,7 @@ DECL|NET_IF_OFFLOAD_INIT|macro|NET_IF_OFFLOAD_INIT
 DECL|NET_IF_POINTOPOINT|enumerator|NET_IF_POINTOPOINT,
 DECL|NET_IF_PROMISC|enumerator|NET_IF_PROMISC,
 DECL|NET_IF_UP|enumerator|NET_IF_UP,
-DECL|__NET_IF_H__|macro|__NET_IF_H__
+DECL|ZEPHYR_INCLUDE_NET_NET_IF_H_|macro|ZEPHYR_INCLUDE_NET_NET_IF_H_
 DECL|__net_if_align|macro|__net_if_align
 DECL|__net_if_align|variable|__net_if_align
 DECL|_unused|member|u8_t _unused : 5;

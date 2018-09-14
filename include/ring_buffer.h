@@ -1,7 +1,7 @@
 DECL|SIZE32_OF|macro|SIZE32_OF
 DECL|SYS_RING_BUF_DECLARE_POW2|macro|SYS_RING_BUF_DECLARE_POW2
 DECL|SYS_RING_BUF_DECLARE_SIZE|macro|SYS_RING_BUF_DECLARE_SIZE
-DECL|__RING_BUFFER_H__|macro|__RING_BUFFER_H__
+DECL|ZEPHYR_INCLUDE_RING_BUFFER_H_|macro|ZEPHYR_INCLUDE_RING_BUFFER_H_
 DECL|buf|member|u32_t *buf; /**< Memory region for stored entries */
 DECL|dropped_put_count|member|u32_t dropped_put_count; /**< Running tally of the number of failed
 DECL|head|member|u32_t head; /**< Index in buf for the head element */

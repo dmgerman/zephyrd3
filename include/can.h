@@ -19,7 +19,7 @@ DECL|CAN_TX_BUS_OFF|macro|CAN_TX_BUS_OFF
 DECL|CAN_TX_ERR|macro|CAN_TX_ERR
 DECL|CAN_TX_OK|macro|CAN_TX_OK
 DECL|CAN_TX_UNKNOWN|macro|CAN_TX_UNKNOWN
-DECL|__DRIVERS_CAN_H|macro|__DRIVERS_CAN_H
+DECL|ZEPHYR_INCLUDE_CAN_H_|macro|ZEPHYR_INCLUDE_CAN_H_
 DECL|__packed|variable|__packed
 DECL|__packed|variable|__packed
 DECL|_impl_can_attach_isr|function|static inline int _impl_can_attach_isr(struct device *dev, can_rx_callback_t isr, const struct can_filter *filter)

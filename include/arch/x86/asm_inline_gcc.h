@@ -1,4 +1,4 @@
-DECL|_ASM_INLINE_GCC_PUBLIC_GCC_H|macro|_ASM_INLINE_GCC_PUBLIC_GCC_H
+DECL|ZEPHYR_INCLUDE_ARCH_X86_ASM_INLINE_GCC_H_|macro|ZEPHYR_INCLUDE_ARCH_X86_ASM_INLINE_GCC_H_
 DECL|_do_irq_lock|function|static ALWAYS_INLINE unsigned int _do_irq_lock(void)
 DECL|_do_irq_unlock|function|static ALWAYS_INLINE void _do_irq_unlock(void)
 DECL|_do_read_cpu_timestamp32|function|u32_t _do_read_cpu_timestamp32(void)

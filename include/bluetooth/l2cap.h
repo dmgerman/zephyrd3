@@ -7,7 +7,7 @@ DECL|BT_L2CAP_DISCONNECTED|enumerator|BT_L2CAP_DISCONNECTED,
 DECL|BT_L2CAP_DISCONNECT|enumerator|BT_L2CAP_DISCONNECT,
 DECL|BT_L2CAP_HDR_SIZE|macro|BT_L2CAP_HDR_SIZE
 DECL|BT_L2CAP_LE_CHAN|macro|BT_L2CAP_LE_CHAN
-DECL|__BT_L2CAP_H|macro|__BT_L2CAP_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_L2CAP_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_L2CAP_H_
 DECL|_sdu_len|member|u16_t _sdu_len;
 DECL|_sdu|member|struct net_buf *_sdu;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_l2cap_chan **chan);

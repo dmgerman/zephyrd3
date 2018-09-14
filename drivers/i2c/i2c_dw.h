@@ -24,7 +24,7 @@ DECL|I2C_STD_HCNT|macro|I2C_STD_HCNT
 DECL|I2C_STD_LCNT|macro|I2C_STD_LCNT
 DECL|IC_ACTIVITY|macro|IC_ACTIVITY
 DECL|IC_ENABLE_BIT|macro|IC_ENABLE_BIT
-DECL|__DRIVERS_I2C_DW_H|macro|__DRIVERS_I2C_DW_H
+DECL|ZEPHYR_DRIVERS_I2C_I2C_DW_H_|macro|ZEPHYR_DRIVERS_I2C_I2C_DW_H_
 DECL|app_config|member|u32_t app_config;
 DECL|base_address|member|u32_t base_address;
 DECL|bitrate|member|u32_t bitrate;

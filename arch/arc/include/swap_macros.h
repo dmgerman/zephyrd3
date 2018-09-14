@@ -1,4 +1,4 @@
-DECL|_SWAP_MACROS__H_|macro|_SWAP_MACROS__H_
+DECL|ZEPHYR_ARCH_ARC_INCLUDE_SWAP_MACROS_H_|macro|ZEPHYR_ARCH_ARC_INCLUDE_SWAP_MACROS_H_
 DECL|blink|variable|blink
 DECL|fp|variable|fp
 DECL|fp|variable|fp

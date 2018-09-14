@@ -29,7 +29,7 @@ DECL|ADC_REF_VDD_1_2|enumerator|ADC_REF_VDD_1_2, /**< VDD/2. */
 DECL|ADC_REF_VDD_1_3|enumerator|ADC_REF_VDD_1_3, /**< VDD/3. */
 DECL|ADC_REF_VDD_1_4|enumerator|ADC_REF_VDD_1_4, /**< VDD/4. */
 DECL|ADC_REF_VDD_1|enumerator|ADC_REF_VDD_1, /**< VDD. */
-DECL|__INCLUDE_ADC_H__|macro|__INCLUDE_ADC_H__
+DECL|ZEPHYR_INCLUDE_ADC_H_|macro|ZEPHYR_INCLUDE_ADC_H_
 DECL|acquisition_time|member|u16_t acquisition_time;
 DECL|adc_action|enum|enum adc_action {
 DECL|adc_api_channel_setup|typedef|typedef int (*adc_api_channel_setup)(struct device *dev,

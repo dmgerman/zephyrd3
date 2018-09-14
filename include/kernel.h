@@ -99,6 +99,7 @@ DECL|K_WORK_DEFINE|macro|K_WORK_DEFINE
 DECL|K_WORK_INITIALIZER|macro|K_WORK_INITIALIZER
 DECL|K_WORK_STATE_PENDING|enumerator|K_WORK_STATE_PENDING, /* Work item pending state */
 DECL|MEM_PARTITION_ENTRY|macro|MEM_PARTITION_ENTRY
+DECL|ZEPHYR_INCLUDE_KERNEL_H_|macro|ZEPHYR_INCLUDE_KERNEL_H_
 DECL|_EXPIRED|macro|_EXPIRED
 DECL|_INACTIVE|macro|_INACTIVE
 DECL|_INIT_OBJ_POLL_EVENT|macro|_INIT_OBJ_POLL_EVENT
@@ -178,7 +179,6 @@ DECL|_k_object_assignment|struct|struct _k_object_assignment {
 DECL|_k_object_init|function|static inline void _k_object_init(void *obj)
 DECL|_k_object|struct|struct _k_object {
 DECL|_k_thread_stack_element|struct|struct __packed _k_thread_stack_element {
-DECL|_kernel__h_|macro|_kernel__h_
 DECL|_mailbox|member|u32_t _mailbox;
 DECL|_mem_domain_info|struct|struct _mem_domain_info {
 DECL|_ms_to_ticks|function|static ALWAYS_INLINE s32_t _ms_to_ticks(s32_t ms)

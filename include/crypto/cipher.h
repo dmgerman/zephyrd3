@@ -1,4 +1,4 @@
-DECL|__CRYPTO_CIPHER_H__|macro|__CRYPTO_CIPHER_H__
+DECL|ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_|macro|ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_
 DECL|begin_session|member|int (*begin_session)(struct device *dev, struct cipher_ctx *ctx,
 DECL|cipher_begin_session|function|static inline int cipher_begin_session(struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op optype)
 DECL|cipher_block_op|function|static inline int cipher_block_op(struct cipher_ctx *ctx, struct cipher_pkt *pkt)

@@ -17,7 +17,7 @@ DECL|S_IWUSR|macro|S_IWUSR
 DECL|S_IXGRP|macro|S_IXGRP
 DECL|S_IXOTH|macro|S_IXOTH
 DECL|S_IXUSR|macro|S_IXUSR
-DECL|__POSIX_STAT_H__|macro|__POSIX_STAT_H__
+DECL|ZEPHYR_INCLUDE_POSIX_SYS_STAT_H_|macro|ZEPHYR_INCLUDE_POSIX_SYS_STAT_H_
 DECL|st_blksize|member|unsigned long st_blksize;
 DECL|st_blocks|member|unsigned long st_blocks;
 DECL|st_size|member|unsigned long st_size;

@@ -1,4 +1,4 @@
-DECL|_offsets_short_arch__h_|macro|_offsets_short_arch__h_
+DECL|ZEPHYR_ARCH_RISCV32_INCLUDE_OFFSETS_SHORT_ARCH_H_|macro|ZEPHYR_ARCH_RISCV32_INCLUDE_OFFSETS_SHORT_ARCH_H_
 DECL|_thread_offset_to_s0|macro|_thread_offset_to_s0
 DECL|_thread_offset_to_s10|macro|_thread_offset_to_s10
 DECL|_thread_offset_to_s11|macro|_thread_offset_to_s11

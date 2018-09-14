@@ -1,2 +1,2 @@
-DECL|__KERNEL_TRACING_H__|macro|__KERNEL_TRACING_H__
+DECL|ZEPHYR_ARCH_ARC_INCLUDE_TRACING_ARCH_H_|macro|ZEPHYR_ARCH_ARC_INCLUDE_TRACING_ARCH_H_
 DECL|_sys_current_irq_key_get|function|int _sys_current_irq_key_get(void)

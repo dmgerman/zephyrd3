@@ -1,4 +1,4 @@
-DECL|__INCipmh|macro|__INCipmh
+DECL|ZEPHYR_INCLUDE_IPM_H_|macro|ZEPHYR_INCLUDE_IPM_H_
 DECL|_impl_ipm_max_data_size_get|function|static inline int _impl_ipm_max_data_size_get(struct device *ipmdev)
 DECL|_impl_ipm_max_id_val_get|function|static inline u32_t _impl_ipm_max_id_val_get(struct device *ipmdev)
 DECL|_impl_ipm_send|function|static inline int _impl_ipm_send(struct device *ipmdev, int wait, u32_t id, const void *data, int size)

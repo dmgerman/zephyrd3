@@ -8,7 +8,7 @@ DECL|BT_HCI_DRIVER_BUS_UART|enumerator|BT_HCI_DRIVER_BUS_UART = 3,
 DECL|BT_HCI_DRIVER_BUS_USB|enumerator|BT_HCI_DRIVER_BUS_USB = 1,
 DECL|BT_HCI_DRIVER_BUS_VIRTUAL|enumerator|BT_HCI_DRIVER_BUS_VIRTUAL = 0,
 DECL|BT_QUIRK_NO_RESET|enumerator|BT_QUIRK_NO_RESET = BIT(0),
-DECL|__BT_HCI_DRIVER_H|macro|__BT_HCI_DRIVER_H
+DECL|ZEPHYR_INCLUDE_DRIVERS_BLUETOOTH_HCI_DRIVER_H_|macro|ZEPHYR_INCLUDE_DRIVERS_BLUETOOTH_HCI_DRIVER_H_
 DECL|bt_hci_driver_bus|enum|enum bt_hci_driver_bus {
 DECL|bt_hci_driver|struct|struct bt_hci_driver {
 DECL|bt_hci_evt_is_prio|function|static inline bool bt_hci_evt_is_prio(u8_t evt)

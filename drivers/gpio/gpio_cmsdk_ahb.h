@@ -1,4 +1,4 @@
-DECL|_DRIVERS_GPIO_CMSDK_AHB_|macro|_DRIVERS_GPIO_CMSDK_AHB_
+DECL|ZEPHYR_DRIVERS_GPIO_GPIO_CMSDK_AHB_H_|macro|ZEPHYR_DRIVERS_GPIO_GPIO_CMSDK_AHB_H_
 DECL|altfuncclr|member|volatile u32_t altfuncclr;
 DECL|altfuncset|member|volatile u32_t altfuncset;
 DECL|dataout|member|volatile u32_t dataout;

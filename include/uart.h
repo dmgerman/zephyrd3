@@ -8,7 +8,7 @@ DECL|UART_ERROR_FRAMING|macro|UART_ERROR_FRAMING
 DECL|UART_ERROR_OVERRUN|macro|UART_ERROR_OVERRUN
 DECL|UART_ERROR_PARITY|macro|UART_ERROR_PARITY
 DECL|UART_OPTION_AFCE|macro|UART_OPTION_AFCE
-DECL|__INCuarth|macro|__INCuarth
+DECL|ZEPHYR_INCLUDE_UART_H_|macro|ZEPHYR_INCLUDE_UART_H_
 DECL|_impl_uart_drv_cmd|function|static inline int _impl_uart_drv_cmd(struct device *dev, u32_t cmd, u32_t p)
 DECL|_impl_uart_err_check|function|static inline int _impl_uart_err_check(struct device *dev)
 DECL|_impl_uart_irq_err_disable|function|static inline void _impl_uart_irq_err_disable(struct device *dev)

@@ -5,7 +5,7 @@ DECL|BT_RFCOMM_CHAN_HSP_HS|enumerator|BT_RFCOMM_CHAN_HSP_HS,
 DECL|BT_RFCOMM_CHAN_SPP|enumerator|BT_RFCOMM_CHAN_SPP,
 DECL|BT_RFCOMM_ROLE_ACCEPTOR|enumerator|BT_RFCOMM_ROLE_ACCEPTOR,
 DECL|BT_RFCOMM_ROLE_INITIATOR|enumerator|BT_RFCOMM_ROLE_INITIATOR
-DECL|__BT_RFCOMM_H|macro|__BT_RFCOMM_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_RFCOMM_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_RFCOMM_H_
 DECL|_next|member|struct bt_rfcomm_dlc *_next;
 DECL|_next|member|struct bt_rfcomm_server *_next;
 DECL|accept|member|int (*accept)(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc);

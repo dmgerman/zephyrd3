@@ -1,4 +1,4 @@
-DECL|_ZEPHYR_LED_STRIP_H|macro|_ZEPHYR_LED_STRIP_H
+DECL|ZEPHYR_INCLUDE_LED_STRIP_H_|macro|ZEPHYR_INCLUDE_LED_STRIP_H_
 DECL|b|member|u8_t b;
 DECL|g|member|u8_t g;
 DECL|led_api_update_channels|typedef|typedef int (*led_api_update_channels)(struct device *dev, u8_t *channels,

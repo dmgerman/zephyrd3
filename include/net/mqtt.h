@@ -2,7 +2,7 @@ DECL|MQTT_APP_PUBLISHER_SUBSCRIBER|enumerator|MQTT_APP_PUBLISHER_SUBSCRIBER,
 DECL|MQTT_APP_PUBLISHER|enumerator|MQTT_APP_PUBLISHER,
 DECL|MQTT_APP_SERVER|enumerator|MQTT_APP_SERVER
 DECL|MQTT_APP_SUBSCRIBER|enumerator|MQTT_APP_SUBSCRIBER,
-DECL|_MQTT_H_|macro|_MQTT_H_
+DECL|ZEPHYR_INCLUDE_NET_MQTT_H_|macro|ZEPHYR_INCLUDE_NET_MQTT_H_
 DECL|app_type|member|u8_t app_type;
 DECL|cert_cb|member|net_app_ca_cert_cb_t cert_cb;
 DECL|cert_host|member|char *cert_host;

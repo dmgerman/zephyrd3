@@ -1,4 +1,4 @@
-DECL|_STM32_SPI_H_|macro|_STM32_SPI_H_
+DECL|ZEPHYR_DRIVERS_SPI_SPI_LL_STM32_H_|macro|ZEPHYR_DRIVERS_SPI_SPI_LL_STM32_H_
 DECL|ctx|member|struct spi_context ctx;
 DECL|irq_config_func_t|typedef|typedef void (*irq_config_func_t)(struct device *port);
 DECL|irq_config|member|irq_config_func_t irq_config;

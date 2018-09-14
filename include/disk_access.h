@@ -6,7 +6,7 @@ DECL|DISK_STATUS_NOMEDIA|macro|DISK_STATUS_NOMEDIA
 DECL|DISK_STATUS_OK|macro|DISK_STATUS_OK
 DECL|DISK_STATUS_UNINIT|macro|DISK_STATUS_UNINIT
 DECL|DISK_STATUS_WR_PROTECT|macro|DISK_STATUS_WR_PROTECT
-DECL|_DISK_ACCESS_H_|macro|_DISK_ACCESS_H_
+DECL|ZEPHYR_INCLUDE_DISK_ACCESS_H_|macro|ZEPHYR_INCLUDE_DISK_ACCESS_H_
 DECL|disk_info|struct|struct disk_info {
 DECL|disk_operations|struct|struct disk_operations {
 DECL|init|member|int (*init)(struct disk_info *disk);

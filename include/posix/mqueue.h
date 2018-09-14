@@ -7,7 +7,7 @@ DECL|O_NONBLOCK|macro|O_NONBLOCK
 DECL|O_RDONLY|macro|O_RDONLY
 DECL|O_RDWR|macro|O_RDWR
 DECL|O_WRONLY|macro|O_WRONLY
-DECL|__MQUEUE_H__|macro|__MQUEUE_H__
+DECL|ZEPHYR_INCLUDE_POSIX_MQUEUE_H_|macro|ZEPHYR_INCLUDE_POSIX_MQUEUE_H_
 DECL|mode_t|typedef|typedef unsigned int mode_t;
 DECL|mq_attr|struct|typedef struct mq_attr {
 DECL|mq_attr|typedef|} mq_attr;

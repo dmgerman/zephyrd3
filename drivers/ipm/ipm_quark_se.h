@@ -20,7 +20,7 @@ DECL|QUARK_SE_IPM_OUTBOUND|macro|QUARK_SE_IPM_OUTBOUND
 DECL|QUARK_SE_IPM_STS_IRQ_BIT|macro|QUARK_SE_IPM_STS_IRQ_BIT
 DECL|QUARK_SE_IPM_STS_STS_BIT|macro|QUARK_SE_IPM_STS_STS_BIT
 DECL|QUARK_SE_IPM|macro|QUARK_SE_IPM
-DECL|__INCquark_se_mailboxh|macro|__INCquark_se_mailboxh
+DECL|ZEPHYR_DRIVERS_IPM_IPM_QUARK_SE_H_|macro|ZEPHYR_DRIVERS_IPM_IPM_QUARK_SE_H_
 DECL|callback_ctx|member|void *callback_ctx;
 DECL|callback|member|ipm_callback_t callback;
 DECL|channel|member|int channel;

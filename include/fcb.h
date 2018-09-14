@@ -8,7 +8,7 @@ DECL|FCB_ERR_NOSPACE|macro|FCB_ERR_NOSPACE
 DECL|FCB_ERR_NOVAR|macro|FCB_ERR_NOVAR
 DECL|FCB_MAX_LEN|macro|FCB_MAX_LEN
 DECL|FCB_OK|macro|FCB_OK
-DECL|__FCB_H_|macro|__FCB_H_
+DECL|ZEPHYR_INCLUDE_FCB_H_|macro|ZEPHYR_INCLUDE_FCB_H_
 DECL|f_active_id|member|u16_t f_active_id;
 DECL|f_active|member|struct fcb_entry f_active;
 DECL|f_align|member|u8_t f_align; /* writes to flash have to aligned to this */

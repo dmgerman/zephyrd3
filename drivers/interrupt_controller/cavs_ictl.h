@@ -1,4 +1,4 @@
-DECL|_CAVS_ICTL_H_|macro|_CAVS_ICTL_H_
+DECL|ZEPHYR_DRIVERS_INTERRUPT_CONTROLLER_CAVS_ICTL_H_|macro|ZEPHYR_DRIVERS_INTERRUPT_CONTROLLER_CAVS_ICTL_H_
 DECL|base_addr|member|u32_t base_addr;
 DECL|cavs_ictl_config_irq_t|typedef|typedef void (*cavs_ictl_config_irq_t)(struct device *port);
 DECL|cavs_ictl_config|struct|struct cavs_ictl_config {

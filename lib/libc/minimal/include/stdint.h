@@ -16,7 +16,7 @@ DECL|UINT32_MAX|macro|UINT32_MAX
 DECL|UINT64_MAX|macro|UINT64_MAX
 DECL|UINT8_MAX|macro|UINT8_MAX
 DECL|UINTPTR_MAX|macro|UINTPTR_MAX
-DECL|__INC_stdint_h__|macro|__INC_stdint_h__
+DECL|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_STDINT_H_|macro|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_STDINT_H_
 DECL|int16_t|typedef|typedef signed short int16_t;
 DECL|int32_t|typedef|typedef signed int int32_t;
 DECL|int64_t|typedef|typedef signed long long int64_t;

@@ -1,5 +1,5 @@
-DECL|SYS_MEMPOOL_H|macro|SYS_MEMPOOL_H
 DECL|SYS_MEM_POOL_DEFINE|macro|SYS_MEM_POOL_DEFINE
+DECL|ZEPHYR_INCLUDE_MISC_MEMPOOL_H_|macro|ZEPHYR_INCLUDE_MISC_MEMPOOL_H_
 DECL|base|member|struct sys_mem_pool_base base;
 DECL|block|member|u32_t block : 28;
 DECL|level|member|u32_t level : 4;

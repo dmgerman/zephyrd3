@@ -4,7 +4,7 @@ DECL|ISR_DIRECT_DECLARE|macro|ISR_DIRECT_DECLARE
 DECL|ISR_DIRECT_FOOTER|macro|ISR_DIRECT_FOOTER
 DECL|ISR_DIRECT_HEADER|macro|ISR_DIRECT_HEADER
 DECL|ISR_DIRECT_PM|macro|ISR_DIRECT_PM
-DECL|_IRQ_H_|macro|_IRQ_H_
+DECL|ZEPHYR_INCLUDE_IRQ_H_|macro|ZEPHYR_INCLUDE_IRQ_H_
 DECL|irq_disable|macro|irq_disable
 DECL|irq_enable|macro|irq_enable
 DECL|irq_is_enabled|macro|irq_is_enabled

@@ -59,7 +59,7 @@ DECL|STATE_DOWNLOADED|macro|STATE_DOWNLOADED
 DECL|STATE_DOWNLOADING|macro|STATE_DOWNLOADING
 DECL|STATE_IDLE|macro|STATE_IDLE
 DECL|STATE_UPDATING|macro|STATE_UPDATING
-DECL|__LWM2M_H__|macro|__LWM2M_H__
+DECL|ZEPHYR_INCLUDE_NET_LWM2M_H_|macro|ZEPHYR_INCLUDE_NET_LWM2M_H_
 DECL|cert_host|member|char *cert_host;
 DECL|client_psk_id_len|member|size_t client_psk_id_len;
 DECL|client_psk_id|member|char *client_psk_id;

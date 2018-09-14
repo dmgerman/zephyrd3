@@ -1,4 +1,4 @@
-DECL|__INC_ctype_h__|macro|__INC_ctype_h__
+DECL|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_CTYPE_H_|macro|ZEPHYR_LIB_LIBC_MINIMAL_INCLUDE_CTYPE_H_
 DECL|isalnum|function|static inline int isalnum(int chr)
 DECL|isalpha|function|static inline int isalpha(int c)
 DECL|isdigit|function|static inline int isdigit(int a)

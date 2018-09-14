@@ -108,7 +108,7 @@ DECL|BMG160_SCALE_TO_RANGE|macro|BMG160_SCALE_TO_RANGE
 DECL|BMG160_THRES_MASK|macro|BMG160_THRES_MASK
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|_BMG160_H_|macro|_BMG160_H_
+DECL|ZEPHYR_DRIVERS_SENSOR_BMG160_BMG160_H_|macro|ZEPHYR_DRIVERS_SENSOR_BMG160_BMG160_H_
 DECL|anymotion_handler|member|sensor_trigger_handler_t anymotion_handler;
 DECL|bmg160_device_config|struct|struct bmg160_device_config {
 DECL|bmg160_device_data|struct|struct bmg160_device_data {

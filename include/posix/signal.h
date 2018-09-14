@@ -1,7 +1,7 @@
 DECL|SIGEV_NONE|macro|SIGEV_NONE
 DECL|SIGEV_SIGNAL|macro|SIGEV_SIGNAL
 DECL|SIGEV_THREAD|macro|SIGEV_THREAD
-DECL|__POSIX_SIGNAL_H__|macro|__POSIX_SIGNAL_H__
+DECL|ZEPHYR_INCLUDE_POSIX_SIGNAL_H_|macro|ZEPHYR_INCLUDE_POSIX_SIGNAL_H_
 DECL|sigev_notify_attributes|member|pthread_attr_t *sigev_notify_attributes;
 DECL|sigev_notify_function|member|void (*sigev_notify_function)(sigval val);
 DECL|sigev_notify|member|int sigev_notify;

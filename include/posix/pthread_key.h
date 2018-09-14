@@ -1,4 +1,4 @@
-DECL|__POSIX_THREAD_KEY_H__|macro|__POSIX_THREAD_KEY_H__
+DECL|ZEPHYR_INCLUDE_POSIX_PTHREAD_KEY_H_|macro|ZEPHYR_INCLUDE_POSIX_PTHREAD_KEY_H_
 DECL|destructor|member|void (*destructor)(void *);
 DECL|key_data_l|member|sys_slist_t key_data_l;
 DECL|key|member|pthread_key_obj *key;

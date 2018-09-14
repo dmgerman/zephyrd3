@@ -98,7 +98,7 @@ DECL|USB_DW_OUT_EP_NUM|enumerator|USB_DW_OUT_EP_NUM
 DECL|USB_DW_PLL_TIMEOUT_US|macro|USB_DW_PLL_TIMEOUT_US
 DECL|USB_DW|enum|enum USB_DW { USB_DW_0 = 0, USB_DW_NUM };
 DECL|USB_DW|macro|USB_DW
-DECL|__USB_DW_REGISTERS_H__|macro|__USB_DW_REGISTERS_H__
+DECL|ZEPHYR_DRIVERS_USB_DEVICE_USB_DW_REGISTERS_H_|macro|ZEPHYR_DRIVERS_USB_DEVICE_USB_DW_REGISTERS_H_
 DECL|daintmsk|member|volatile u32_t daintmsk;
 DECL|daint|member|volatile u32_t daint;
 DECL|dcfg|member|volatile u32_t dcfg;

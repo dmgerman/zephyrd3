@@ -1,6 +1,6 @@
 DECL|CC1200_GPIO_IDX_GPIO0|enumerator|CC1200_GPIO_IDX_GPIO0,
 DECL|CC1200_GPIO_IDX_MAX|enumerator|CC1200_GPIO_IDX_MAX,
-DECL|__CC1200_H__|macro|__CC1200_H__
+DECL|ZEPHYR_INCLUDE_DRIVERS_IEEE802154_CC1200_H_|macro|ZEPHYR_INCLUDE_DRIVERS_IEEE802154_CC1200_H_
 DECL|cc1200_gpio_configuration|struct|struct cc1200_gpio_configuration {
 DECL|cc1200_gpio_index|enum|enum cc1200_gpio_index {
 DECL|cc1200_rf_registers_set|struct|struct cc1200_rf_registers_set {

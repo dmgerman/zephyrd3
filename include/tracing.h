@@ -5,7 +5,7 @@ DECL|SYS_TRACE_ID_OFFSET|macro|SYS_TRACE_ID_OFFSET
 DECL|SYS_TRACE_ID_SEMA_GIVE|macro|SYS_TRACE_ID_SEMA_GIVE
 DECL|SYS_TRACE_ID_SEMA_INIT|macro|SYS_TRACE_ID_SEMA_INIT
 DECL|SYS_TRACE_ID_SEMA_TAKE|macro|SYS_TRACE_ID_SEMA_TAKE
-DECL|_KERNEL_TRACE_H|macro|_KERNEL_TRACE_H
+DECL|ZEPHYR_INCLUDE_TRACING_H_|macro|ZEPHYR_INCLUDE_TRACING_H_
 DECL|sys_trace_end_call|macro|sys_trace_end_call
 DECL|sys_trace_isr_enter|macro|sys_trace_isr_enter
 DECL|sys_trace_isr_exit_to_scheduler|macro|sys_trace_isr_exit_to_scheduler

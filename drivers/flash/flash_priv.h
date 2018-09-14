@@ -1,2 +1,2 @@
-DECL|__FLASH_PRIV_H__|macro|__FLASH_PRIV_H__
+DECL|ZEPHYR_DRIVERS_FLASH_FLASH_PRIV_H_|macro|ZEPHYR_DRIVERS_FLASH_FLASH_PRIV_H_
 DECL|flash_page_layout_not_implemented|function|static inline void flash_page_layout_not_implemented(void)

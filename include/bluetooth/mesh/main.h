@@ -43,7 +43,7 @@ DECL|BT_MESH_RELAY_ENABLED|macro|BT_MESH_RELAY_ENABLED
 DECL|BT_MESH_RELAY_NOT_SUPPORTED|macro|BT_MESH_RELAY_NOT_SUPPORTED
 DECL|BT_MESH_TWIST|enumerator|BT_MESH_TWIST = BIT(1),
 DECL|BT_MESH_VIBRATE|enumerator|BT_MESH_VIBRATE = BIT(2),
-DECL|__BT_MESH_MAIN_H|macro|__BT_MESH_MAIN_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_MESH_MAIN_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_MESH_MAIN_H_
 DECL|bt_mesh_input_action_t|typedef|} bt_mesh_input_action_t;
 DECL|bt_mesh_output_action_t|typedef|} bt_mesh_output_action_t;
 DECL|bt_mesh_prov_bearer_t|typedef|} bt_mesh_prov_bearer_t;

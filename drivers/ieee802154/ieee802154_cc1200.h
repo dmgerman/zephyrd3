@@ -1,7 +1,7 @@
 DECL|DEFINE_REG_READ|macro|DEFINE_REG_READ
 DECL|DEFINE_REG_WRITE|macro|DEFINE_REG_WRITE
 DECL|DEFINE_STROBE_INSTRUCTION|macro|DEFINE_STROBE_INSTRUCTION
-DECL|__IEEE802154_CC1200_H__|macro|__IEEE802154_CC1200_H__
+DECL|ZEPHYR_DRIVERS_IEEE802154_IEEE802154_CC1200_H_|macro|ZEPHYR_DRIVERS_IEEE802154_IEEE802154_CC1200_H_
 DECL|_cc1200_instruct|function|static inline bool _cc1200_instruct(struct cc1200_context *ctx, u8_t addr)
 DECL|_cc1200_read_single_reg|function|static inline u8_t _cc1200_read_single_reg(struct cc1200_context *ctx, u8_t addr, bool extended)
 DECL|_cc1200_write_single_reg|function|static inline bool _cc1200_write_single_reg(struct cc1200_context *ctx, u8_t addr, u8_t val, bool extended)

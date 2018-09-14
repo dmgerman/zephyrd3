@@ -1,4 +1,4 @@
-DECL|__NVS_H_|macro|__NVS_H_
+DECL|ZEPHYR_INCLUDE_NVS_NVS_H_|macro|ZEPHYR_INCLUDE_NVS_NVS_H_
 DECL|ate_wra|member|u32_t ate_wra; /* next alloc table entry write address */
 DECL|data_wra|member|u32_t data_wra; /* next data write address */
 DECL|flash_device|member|struct device *flash_device;

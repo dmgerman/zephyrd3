@@ -58,7 +58,7 @@ DECL|BMA280_THREAD_PRIORITY|macro|BMA280_THREAD_PRIORITY
 DECL|BMA280_THREAD_STACKSIZE_UNIT|macro|BMA280_THREAD_STACKSIZE_UNIT
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|__SENSOR_BMA280_H__|macro|__SENSOR_BMA280_H__
+DECL|ZEPHYR_DRIVERS_SENSOR_BMA280_BMA280_H_|macro|ZEPHYR_DRIVERS_SENSOR_BMA280_BMA280_H_
 DECL|any_motion_handler|member|sensor_trigger_handler_t any_motion_handler;
 DECL|any_motion_trigger|member|struct sensor_trigger any_motion_trigger;
 DECL|bma280_data|struct|struct bma280_data {

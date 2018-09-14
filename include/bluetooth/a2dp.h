@@ -10,7 +10,7 @@ DECL|BT_A2DP_VENDOR|enumerator|BT_A2DP_VENDOR = 0xff
 DECL|BT_A2DP_VIDEO|enumerator|BT_A2DP_VIDEO = 0x01,
 DECL|MEDIA_TYPE|enum|enum MEDIA_TYPE {
 DECL|ROLE_TYPE|enum|enum ROLE_TYPE {
-DECL|__BT_A2DP_H|macro|__BT_A2DP_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_A2DP_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_A2DP_H_
 DECL|bt_a2dp_codec_id|enum|enum bt_a2dp_codec_id {
 DECL|bt_a2dp_endpoint|struct|struct bt_a2dp_endpoint {
 DECL|bt_a2dp_preset|struct|struct bt_a2dp_preset {

@@ -58,7 +58,7 @@ DECL|COAP_TYPE_ACK|enumerator|COAP_TYPE_ACK = 2,
 DECL|COAP_TYPE_CON|enumerator|COAP_TYPE_CON = 0,
 DECL|COAP_TYPE_NON_CON|enumerator|COAP_TYPE_NON_CON = 1,
 DECL|COAP_TYPE_RESET|enumerator|COAP_TYPE_RESET = 3
-DECL|__COAP_H__|macro|__COAP_H__
+DECL|ZEPHYR_INCLUDE_NET_COAP_H_|macro|ZEPHYR_INCLUDE_NET_COAP_H_
 DECL|addr|member|struct sockaddr addr;
 DECL|addr|member|struct sockaddr addr;
 DECL|age|member|int age;

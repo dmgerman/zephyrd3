@@ -1,4 +1,4 @@
-DECL|__POSIX_TYPES_H__|macro|__POSIX_TYPES_H__
+DECL|ZEPHYR_INCLUDE_POSIX_SYS_TYPES_H_|macro|ZEPHYR_INCLUDE_POSIX_SYS_TYPES_H_
 DECL|clockid_t|typedef|typedef u32_t clockid_t;
 DECL|count|member|int count;
 DECL|delayedstart|member|u32_t delayedstart;

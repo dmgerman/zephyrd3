@@ -1,3 +1,4 @@
+DECL|ZEPHYR_ARCH_ARC_INCLUDE_KERNEL_ARCH_THREAD_H_|macro|ZEPHYR_ARCH_ARC_INCLUDE_KERNEL_ARCH_THREAD_H_
 DECL|_CAUSE_COOP|macro|_CAUSE_COOP
 DECL|_CAUSE_FIRQ|macro|_CAUSE_FIRQ
 DECL|_CAUSE_NONE|macro|_CAUSE_NONE
@@ -6,7 +7,6 @@ DECL|_callee_saved_t|typedef|typedef struct _callee_saved _callee_saved_t;
 DECL|_callee_saved|struct|struct _callee_saved {
 DECL|_caller_saved_t|typedef|typedef struct _caller_saved _caller_saved_t;
 DECL|_caller_saved|struct|struct _caller_saved {
-DECL|_kernel_arch_thread__h_|macro|_kernel_arch_thread__h_
 DECL|_thread_arch_t|typedef|typedef struct _thread_arch _thread_arch_t;
 DECL|_thread_arch|struct|struct _thread_arch {
 DECL|intlock_key|member|u32_t intlock_key;

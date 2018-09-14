@@ -1,4 +1,4 @@
-DECL|_MODEM_RECEIVER_H_|macro|_MODEM_RECEIVER_H_
+DECL|ZEPHYR_INCLUDE_DRIVERS_MODEM_MODEM_RECEIVER_H_|macro|ZEPHYR_INCLUDE_DRIVERS_MODEM_MODEM_RECEIVER_H_
 DECL|data_imei|member|char *data_imei;
 DECL|data_manufacturer|member|char *data_manufacturer;
 DECL|data_model|member|char *data_model;

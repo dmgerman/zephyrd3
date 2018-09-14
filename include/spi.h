@@ -21,7 +21,7 @@ DECL|SPI_WORD_SET|macro|SPI_WORD_SET
 DECL|SPI_WORD_SIZE_GET|macro|SPI_WORD_SIZE_GET
 DECL|SPI_WORD_SIZE_MASK|macro|SPI_WORD_SIZE_MASK
 DECL|SPI_WORD_SIZE_SHIFT|macro|SPI_WORD_SIZE_SHIFT
-DECL|__SPI_H__|macro|__SPI_H__
+DECL|ZEPHYR_INCLUDE_SPI_H_|macro|ZEPHYR_INCLUDE_SPI_H_
 DECL|_impl_spi_release|function|static inline int _impl_spi_release(struct device *dev, const struct spi_config *config)
 DECL|_impl_spi_transceive|function|static inline int _impl_spi_transceive(struct device *dev, const struct spi_config *config, const struct spi_buf_set *tx_bufs, const struct spi_buf_set *rx_bufs)
 DECL|buffers|member|const struct spi_buf *buffers;

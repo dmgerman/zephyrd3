@@ -1,6 +1,6 @@
 DECL|SOC_FLASH_0_ID|macro|SOC_FLASH_0_ID
 DECL|SPI_FLASH_0_ID|macro|SPI_FLASH_0_ID
-DECL|__FLASH_MAP_H__|macro|__FLASH_MAP_H__
+DECL|ZEPHYR_INCLUDE_FLASH_MAP_H_|macro|ZEPHYR_INCLUDE_FLASH_MAP_H_
 DECL|fa_device_id|member|u8_t fa_device_id;
 DECL|fa_id|member|u8_t fa_id;
 DECL|fa_off|member|off_t fa_off;

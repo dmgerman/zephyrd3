@@ -26,7 +26,7 @@ DECL|WDT_MODE|macro|WDT_MODE
 DECL|WDT_OPT_PAUSE_HALTED_BY_DBG|macro|WDT_OPT_PAUSE_HALTED_BY_DBG
 DECL|WDT_OPT_PAUSE_IN_SLEEP|macro|WDT_OPT_PAUSE_IN_SLEEP
 DECL|WDT_TIMEOUT_MASK|macro|WDT_TIMEOUT_MASK
-DECL|_WDT_H_|macro|_WDT_H_
+DECL|ZEPHYR_INCLUDE_WATCHDOG_H_|macro|ZEPHYR_INCLUDE_WATCHDOG_H_
 DECL|callback|member|wdt_callback_t callback;
 DECL|disable|member|wdt_api_disable disable;
 DECL|enable|member|wdt_api_enable enable;

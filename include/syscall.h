@@ -1,4 +1,4 @@
-DECL|_ZEPHYR_SYSCALL_H_|macro|_ZEPHYR_SYSCALL_H_
+DECL|ZEPHYR_INCLUDE_SYSCALL_H_|macro|ZEPHYR_INCLUDE_SYSCALL_H_
 DECL|_is_user_context|function|static inline int _is_user_context(void)
 DECL|_k_syscall_handler_t|typedef|typedef u32_t (*_k_syscall_handler_t)(u32_t arg1, u32_t arg2, u32_t arg3,
 DECL|_syscall_10_args|struct|struct _syscall_10_args {

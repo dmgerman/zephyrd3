@@ -1,4 +1,4 @@
-DECL|_offsets_short_arch__h_|macro|_offsets_short_arch__h_
+DECL|ZEPHYR_ARCH_NIOS2_INCLUDE_OFFSETS_SHORT_ARCH_H_|macro|ZEPHYR_ARCH_NIOS2_INCLUDE_OFFSETS_SHORT_ARCH_H_
 DECL|_thread_offset_to_key|macro|_thread_offset_to_key
 DECL|_thread_offset_to_r16|macro|_thread_offset_to_r16
 DECL|_thread_offset_to_r17|macro|_thread_offset_to_r17

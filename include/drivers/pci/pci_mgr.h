@@ -661,7 +661,7 @@ DECL|SYS_PCI_REQUEST_READ_ADDR|macro|SYS_PCI_REQUEST_READ_ADDR
 DECL|SYS_PCI_REQUEST_READ_DATA|macro|SYS_PCI_REQUEST_READ_DATA
 DECL|SYS_PCI_REQUEST_WRITE_ADDR|macro|SYS_PCI_REQUEST_WRITE_ADDR
 DECL|SYS_PCI_REQUEST_WRITE_DATA|macro|SYS_PCI_REQUEST_WRITE_DATA
-DECL|__inc_pci_mgr_h|macro|__inc_pci_mgr_h
+DECL|ZEPHYR_INCLUDE_DRIVERS_PCI_PCI_MGR_H_|macro|ZEPHYR_INCLUDE_DRIVERS_PCI_PCI_MGR_H_
 DECL|_pci_msi_hdr|struct|struct _pci_msi_hdr {
 DECL|addr_high|member|u32_t addr_high; /* message address register
 DECL|addr_low|member|u32_t addr_low; /* message address register

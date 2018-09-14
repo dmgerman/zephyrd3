@@ -19,7 +19,7 @@ DECL|I2C_SPEED_SET|macro|I2C_SPEED_SET
 DECL|I2C_SPEED_SHIFT|macro|I2C_SPEED_SHIFT
 DECL|I2C_SPEED_STANDARD|macro|I2C_SPEED_STANDARD
 DECL|I2C_SPEED_ULTRA|macro|I2C_SPEED_ULTRA
-DECL|__DRIVERS_I2C_H|macro|__DRIVERS_I2C_H
+DECL|ZEPHYR_INCLUDE_I2C_H_|macro|ZEPHYR_INCLUDE_I2C_H_
 DECL|__bits|struct|struct __bits {
 DECL|_impl_i2c_configure|function|static inline int _impl_i2c_configure(struct device *dev, u32_t dev_config)
 DECL|_impl_i2c_slave_driver_register|function|static inline int _impl_i2c_slave_driver_register(struct device *dev)

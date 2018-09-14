@@ -1,5 +1,5 @@
 DECL|BT_MESH_MODEL_CFG_CLI|macro|BT_MESH_MODEL_CFG_CLI
-DECL|__BT_MESH_CFG_CLI_H|macro|__BT_MESH_CFG_CLI_H
+DECL|ZEPHYR_INCLUDE_BLUETOOTH_MESH_CFG_CLI_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_MESH_CFG_CLI_H_
 DECL|addr|member|u16_t addr;
 DECL|app_idx|member|u16_t app_idx;
 DECL|bt_mesh_cfg_cli|struct|struct bt_mesh_cfg_cli {
