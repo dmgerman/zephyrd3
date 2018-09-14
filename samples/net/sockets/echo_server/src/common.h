@@ -7,6 +7,7 @@ DECL|configs|struct|struct configs {
 DECL|counter|member|u32_t counter;
 DECL|counter|member|u32_t counter;
 DECL|data|struct|struct data {
+DECL|init_vlan|function|static inline int init_vlan(void)
 DECL|ipv4|member|struct data ipv4;
 DECL|ipv6|member|struct data ipv6;
 DECL|proto|member|const char *proto;
