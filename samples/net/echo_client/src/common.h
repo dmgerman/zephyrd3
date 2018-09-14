@@ -8,6 +8,7 @@ DECL|configs|struct|struct configs {
 DECL|data|struct|struct data {
 DECL|expecting_tcp|member|u32_t expecting_tcp;
 DECL|expecting_udp|member|u32_t expecting_udp;
+DECL|init_vlan|function|static inline int init_vlan(void)
 DECL|ipv4|member|struct data ipv4;
 DECL|ipv6|member|struct data ipv6;
 DECL|proto|member|const char *proto;
