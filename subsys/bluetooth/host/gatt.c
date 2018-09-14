@@ -82,6 +82,8 @@ DECL|gatt_notify|function|static int gatt_notify(struct bt_conn *conn, u16_t han
 DECL|gatt_prepare_write_rsp|function|static void gatt_prepare_write_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_prepare_write|function|static int gatt_prepare_write(struct bt_conn *conn, struct bt_gatt_write_params *params)
 DECL|gatt_read_blob|function|static int gatt_read_blob(struct bt_conn *conn, struct bt_gatt_read_params *params)
+DECL|gatt_read_group_rsp|function|static void gatt_read_group_rsp(struct bt_conn *conn, u8_t err,const void *pdu, u16_t length, void *user_data)
+DECL|gatt_read_group|function|static int gatt_read_group(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|gatt_read_multiple_rsp|function|static void gatt_read_multiple_rsp(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|gatt_read_multiple|function|static int gatt_read_multiple(struct bt_conn *conn, struct bt_gatt_read_params *params)
 DECL|gatt_read_multiple|function|static int gatt_read_multiple(struct bt_conn *conn, struct bt_gatt_read_params *params)
@@ -109,6 +111,7 @@ DECL|params|member|struct bt_gatt_indicate_params *params;
 DECL|params|member|struct bt_gatt_indicate_params params;
 DECL|parse_characteristic|function|static u16_t parse_characteristic(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, u16_t length)
 DECL|parse_include|function|static u16_t parse_include(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, u16_t length)
+DECL|parse_service|function|static u16_t parse_service(struct bt_conn *conn, const void *pdu, struct bt_gatt_discover_params *params, u16_t length)
 DECL|properties|member|u8_t properties;
 DECL|read_appearance|function|static ssize_t read_appearance(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_central_addr_res|function|static ssize_t read_central_addr_res(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)

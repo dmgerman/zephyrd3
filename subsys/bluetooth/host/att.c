@@ -37,6 +37,7 @@ DECL|att_handle_find_info_rsp|function|static u8_t att_handle_find_info_rsp(stru
 DECL|att_handle_find_type_rsp|function|static u8_t att_handle_find_type_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_prepare_write_rsp|function|static u8_t att_handle_prepare_write_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_read_blob_rsp|function|static u8_t att_handle_read_blob_rsp(struct bt_att *att, struct net_buf *buf)
+DECL|att_handle_read_group_rsp|function|static u8_t att_handle_read_group_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_read_mult_rsp|function|static u8_t att_handle_read_mult_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_read_rsp|function|static u8_t att_handle_read_rsp(struct bt_att *att, struct net_buf *buf)
 DECL|att_handle_read_type_rsp|function|static u8_t att_handle_read_type_rsp(struct bt_att *att, struct net_buf *buf)
