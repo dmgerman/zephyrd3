@@ -12,7 +12,6 @@ DECL|log_2|function|void log_2(const char *str, u32_t arg0, u32_t arg1, struct l
 DECL|log_3|function|void log_3(const char *str, u32_t arg0, u32_t arg1, u32_t arg2, struct log_msg_ids src_level)
 DECL|log_backend_disable|function|void log_backend_disable(struct log_backend const *const backend)
 DECL|log_backend_enable|function|void log_backend_enable(struct log_backend const *const backend,void *ctx, u32_t level)
-DECL|log_backend_uart|variable|log_backend_uart
 DECL|log_buffered_cnt|function|u32_t log_buffered_cnt(void)
 DECL|log_core_init|function|void log_core_init(void)
 DECL|log_filter_get|function|u32_t log_filter_get(struct log_backend const *const backend, u32_t domain_id, u32_t src_id, bool runtime)
@@ -38,5 +37,3 @@ DECL|proc_tid|variable|proc_tid
 DECL|thread_set|function|static void thread_set(k_tid_t process_tid)
 DECL|timestamp_func|variable|timestamp_func
 DECL|timestamp_get|function|static u32_t timestamp_get(void)
-DECL|uart_backend|variable|uart_backend
-DECL|uart_backend|variable|uart_backend
