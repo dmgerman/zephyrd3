@@ -6,6 +6,7 @@ DECL|NVS_STATUS_NOSPACE|macro|NVS_STATUS_NOSPACE
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__NVS_PRIV_H_|macro|__NVS_PRIV_H_
+DECL|__packed|variable|__packed
 DECL|crc8|member|u8_t crc8; /* crc8 check of the entry */
 DECL|id|member|u16_t id; /* data id */
 DECL|len|member|u16_t len; /* data len within sector */
