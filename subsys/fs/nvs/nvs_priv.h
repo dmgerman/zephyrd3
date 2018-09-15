@@ -8,7 +8,7 @@ DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|__NVS_PRIV_H_|macro|__NVS_PRIV_H_
 DECL|crc8|member|u8_t crc8; /* crc8 check of the entry */
 DECL|id|member|u16_t id; /* data id */
-DECL|len|member|u16_t len; /* data len in sector */
+DECL|len|member|u16_t len; /* data len within sector */
 DECL|nvs_ate|struct|struct nvs_ate {
-DECL|offset|member|u16_t offset; /* data offset in sector */
+DECL|offset|member|u16_t offset; /* data offset within sector */
 DECL|part|member|u8_t part; /* part of a multipart data - future extension */
