@@ -1,5 +1,5 @@
 DECL|_nvs_al_size|function|static inline size_t _nvs_al_size(struct nvs_fs *fs, size_t len)
-DECL|_nvs_ate_crc8_check|function|static int _nvs_ate_crc8_check(struct nvs_ate *entry)
+DECL|_nvs_ate_crc8_check|function|static int _nvs_ate_crc8_check(const struct nvs_ate *entry)
 DECL|_nvs_ate_crc8_update|function|static void _nvs_ate_crc8_update(struct nvs_ate *entry)
 DECL|_nvs_flash_al_wrt|function|static int _nvs_flash_al_wrt(struct nvs_fs *fs, u32_t addr, const void *data, size_t len)
 DECL|_nvs_flash_ate_rd|function|static int _nvs_flash_ate_rd(struct nvs_fs *fs, u32_t addr, struct nvs_ate *entry)
