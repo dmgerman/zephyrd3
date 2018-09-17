@@ -1,0 +1,7 @@
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|pm_policy|variable|pm_policy
+DECL|pm_state|member|enum power_states pm_state;
+DECL|power|variable|power
+DECL|sys_pm_policy_next_state|function|int sys_pm_policy_next_state(s32_t ticks, enum power_states *pm_state)
+DECL|sys_soc_pm_policy|struct|struct sys_soc_pm_policy {
+DECL|sys_state|member|int sys_state;
