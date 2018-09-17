@@ -239,15 +239,15 @@ DECL|WoReg8|typedef|typedef volatile uint32_t WoReg8; /**< Write only 8-bit regi
 DECL|WoReg|typedef|typedef volatile uint32_t WoReg; /**< Write only 32-bit register (volatile unsigned int) */
 DECL|_DeviceVectors|struct|typedef struct _DeviceVectors
 DECL|_L|macro|_L
-DECL|_L|macro|_L
 DECL|_SAMD21J18A_|macro|_SAMD21J18A_
 DECL|_UL|macro|_UL
 DECL|_UL|macro|_UL
 DECL|_U|macro|_U
-DECL|_U|macro|_U
 DECL|__CM0PLUS_REV|macro|__CM0PLUS_REV
+DECL|__L|macro|__L
 DECL|__MPU_PRESENT|macro|__MPU_PRESENT
 DECL|__NVIC_PRIO_BITS|macro|__NVIC_PRIO_BITS
+DECL|__U|macro|__U
 DECL|__VTOR_PRESENT|macro|__VTOR_PRESENT
 DECL|__Vendor_SysTickConfig|macro|__Vendor_SysTickConfig
 DECL|pfnAC_Handler|member|void* pfnAC_Handler; /* 24 Analog Comparators */
