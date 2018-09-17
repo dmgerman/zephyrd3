@@ -1,3 +1,5 @@
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|SLIP_END|macro|SLIP_END
 DECL|SLIP_ESC_END|macro|SLIP_ESC_END
 DECL|SLIP_ESC_ESC|macro|SLIP_ESC_ESC
@@ -5,7 +7,6 @@ DECL|SLIP_ESC|macro|SLIP_ESC
 DECL|STATE_ESC|enumerator|STATE_ESC,
 DECL|STATE_GARBAGE|enumerator|STATE_GARBAGE,
 DECL|STATE_OK|enumerator|STATE_OK,
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|get_ieee_addr|function|static void get_ieee_addr(void)
 DECL|get_mac|function|static u8_t *get_mac(struct device *dev)
 DECL|hexdump|function|static void hexdump(const char *str, const u8_t *packet, size_t length)
