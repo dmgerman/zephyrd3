@@ -6,6 +6,9 @@ DECL|DEVICE_NAME_LEN|macro|DEVICE_NAME_LEN
 DECL|DEVICE_NAME|macro|DEVICE_NAME
 DECL|HELP_ADDR_LE|macro|HELP_ADDR_LE
 DECL|HELP_NONE|macro|HELP_NONE
+DECL|L2CAP_CHAN|macro|L2CAP_CHAN
+DECL|L2CH_CHAN|macro|L2CH_CHAN
+DECL|L2CH_WORK|macro|L2CH_WORK
 DECL|NAME_LEN|macro|NAME_LEN
 DECL|SDP_CLIENT_USER_BUF_LEN|macro|SDP_CLIENT_USER_BUF_LEN
 DECL|ad_discov|variable|ad_discov
@@ -29,6 +32,7 @@ DECL|br_server|variable|br_server
 DECL|bt_commands|variable|bt_commands
 DECL|bt_ready|function|static void bt_ready(int err)
 DECL|char2hex|function|static int char2hex(const char *c, u8_t *x)
+DECL|ch|member|struct bt_l2cap_le_chan ch;
 DECL|cmd_active_scan_on|function|static void cmd_active_scan_on(int dups)
 DECL|cmd_advertise|function|static int cmd_advertise(int argc, char *argv[])
 DECL|cmd_auth_cancel|function|static int cmd_auth_cancel(int argc, char *argv[])
@@ -64,6 +68,7 @@ DECL|cmd_init|function|static int cmd_init(int argc, char *argv[])
 DECL|cmd_l2cap_connect|function|static int cmd_l2cap_connect(int argc, char *argv[])
 DECL|cmd_l2cap_disconnect|function|static int cmd_l2cap_disconnect(int argc, char *argv[])
 DECL|cmd_l2cap_metrics|function|static int cmd_l2cap_metrics(int argc, char *argv[])
+DECL|cmd_l2cap_recv|function|static int cmd_l2cap_recv(int argc, char *argv[])
 DECL|cmd_l2cap_register|function|static int cmd_l2cap_register(int argc, char *argv[])
 DECL|cmd_l2cap_send|function|static int cmd_l2cap_send(int argc, char *argv[])
 DECL|cmd_name|function|static int cmd_name(int argc, char *argv[])
@@ -100,16 +105,20 @@ DECL|l2cap_bredr_connected|function|static void l2cap_bredr_connected(struct bt_
 DECL|l2cap_bredr_disconnected|function|static void l2cap_bredr_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_bredr_ops|variable|l2cap_bredr_ops
 DECL|l2cap_bredr_recv|function|static int l2cap_bredr_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
-DECL|l2cap_chan|variable|l2cap_chan
 DECL|l2cap_connected|function|static void l2cap_connected(struct bt_l2cap_chan *chan)
 DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_chan *chan)
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_rate|variable|l2cap_rate
+DECL|l2cap_recv_cb|function|static void l2cap_recv_cb(struct k_work *work)
+DECL|l2cap_recv_delay|variable|l2cap_recv_delay
 DECL|l2cap_recv_metrics|function|static int l2cap_recv_metrics(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|l2cap_recv|function|static int l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
+DECL|l2ch_chan|variable|l2ch_chan
+DECL|l2ch|struct|struct l2ch {
 DECL|le_param_req|function|static bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|le_param_updated|function|static void le_param_updated(struct bt_conn *conn, u16_t interval, u16_t latency, u16_t timeout)
 DECL|pairing_conn|variable|pairing_conn
+DECL|recv_work|member|struct k_delayed_work recv_work;
 DECL|rfcomm_bredr_accept|function|static int rfcomm_bredr_accept(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc)
 DECL|rfcomm_bredr_connected|function|static void rfcomm_bredr_connected(struct bt_rfcomm_dlc *dlci)
 DECL|rfcomm_bredr_disconnected|function|static void rfcomm_bredr_disconnected(struct bt_rfcomm_dlc *dlci)
