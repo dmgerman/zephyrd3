@@ -38,6 +38,7 @@ DECL|cmd_auth_passkey|function|static int cmd_auth_passkey(int argc, char *argv[
 DECL|cmd_auth_pincode|function|static int cmd_auth_pincode(int argc, char *argv[])
 DECL|cmd_auth|function|static int cmd_auth(int argc, char *argv[])
 DECL|cmd_auto_conn|function|static int cmd_auto_conn(int argc, char *argv[])
+DECL|cmd_bondable|function|static int cmd_bondable(int argc, char *argv[])
 DECL|cmd_bredr_connectable|function|static int cmd_bredr_connectable(int argc, char *argv[])
 DECL|cmd_bredr_discoverable|function|static int cmd_bredr_discoverable(int argc, char *argv[])
 DECL|cmd_bredr_discovery|function|static int cmd_bredr_discovery(int argc, char *argv[])
