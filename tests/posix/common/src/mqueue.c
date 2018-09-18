@@ -8,5 +8,4 @@ DECL|queue|variable|queue
 DECL|receiver_thread|function|void *receiver_thread(void *p1)
 DECL|send_data|variable|send_data
 DECL|sender_thread|function|void *sender_thread(void *p1)
-DECL|test_main|function|void test_main(void)
-DECL|test_mqueue|function|void test_mqueue(void)
+DECL|test_posix_mqueue|function|void test_posix_mqueue(void)
