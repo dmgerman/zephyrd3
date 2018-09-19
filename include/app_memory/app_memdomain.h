@@ -15,4 +15,9 @@ DECL|dmem_size|member|u32_t dmem_size;
 DECL|dmem_start|member|char *dmem_start;
 DECL|lnode|member|sys_dnode_t lnode;
 DECL|partition|member|struct k_mem_partition *partition;
+DECL|smem_size_assign|macro|smem_size_assign
+DECL|smem_size_assign|macro|smem_size_assign
+DECL|smem_size_declare|macro|smem_size_declare
+DECL|smem_size_declare|macro|smem_size_declare
+DECL|smem_size|member|char *smem_size;
 DECL|smem_size|member|u32_t smem_size;
