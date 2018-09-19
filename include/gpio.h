@@ -51,5 +51,6 @@ DECL|handler|member|gpio_callback_handler_t handler;
 DECL|manage_callback|member|gpio_manage_callback_t manage_callback;
 DECL|node|member|sys_snode_t node;
 DECL|pin_mask|member|u32_t pin_mask;
+DECL|pin|member|u32_t pin;
 DECL|read|member|gpio_read_t read;
 DECL|write|member|gpio_write_t write;
