@@ -1,9 +1,10 @@
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|OMA_TLV_TYPE_MULTI_RESOURCE|enumerator|OMA_TLV_TYPE_MULTI_RESOURCE = 2,
 DECL|OMA_TLV_TYPE_OBJECT_INSTANCE|enumerator|OMA_TLV_TYPE_OBJECT_INSTANCE = 0,
 DECL|OMA_TLV_TYPE_RESOURCE_INSTANCE|enumerator|OMA_TLV_TYPE_RESOURCE_INSTANCE = 1,
 DECL|OMA_TLV_TYPE_RESOURCE|enumerator|OMA_TLV_TYPE_RESOURCE = 3
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|do_read_op_tlv|function|int do_read_op_tlv(struct lwm2m_engine_obj *obj, struct lwm2m_engine_context *context, int content_format)
 DECL|do_write_op_tlv_dummy_read|function|static int do_write_op_tlv_dummy_read(struct lwm2m_engine_context *context)
 DECL|do_write_op_tlv_item|function|static int do_write_op_tlv_item(struct lwm2m_engine_context *context)
