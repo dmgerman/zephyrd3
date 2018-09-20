@@ -10,7 +10,7 @@ DECL|get_node_mask|function|int get_node_mask(int node)
 DECL|last_black_height|variable|last_black_height
 DECL|next_rand_mod|function|static unsigned int next_rand_mod(unsigned int mod)
 DECL|node_index|function|int node_index(struct rbnode *n)
-DECL|node_lessthan|function|int node_lessthan(struct rbnode *a, struct rbnode *b)
+DECL|node_lessthan|function|bool node_lessthan(struct rbnode *a, struct rbnode *b)
 DECL|node_mask|variable|node_mask
 DECL|nodes|variable|nodes
 DECL|set_node_mask|function|void set_node_mask(int node, int val)

@@ -16,7 +16,7 @@ DECL|_impl_k_wakeup|function|void _impl_k_wakeup(k_tid_t thread)
 DECL|_impl_k_yield|function|void _impl_k_yield(void)
 DECL|_is_idle|function|static inline int _is_idle(struct k_thread *thread)
 DECL|_is_preempt|function|static inline int _is_preempt(struct k_thread *thread)
-DECL|_is_t1_higher_prio_than_t2|function|int _is_t1_higher_prio_than_t2(struct k_thread *t1, struct k_thread *t2)
+DECL|_is_t1_higher_prio_than_t2|function|bool _is_t1_higher_prio_than_t2(struct k_thread *t1, struct k_thread *t2)
 DECL|_is_thread_dummy|function|static inline int _is_thread_dummy(struct k_thread *thread)
 DECL|_is_thread_time_slicing|function|int _is_thread_time_slicing(struct k_thread *thread)
 DECL|_kernel|variable|_kernel
@@ -31,7 +31,7 @@ DECL|_priq_mq_best|function|struct k_thread *_priq_mq_best(struct _priq_mq *pq)
 DECL|_priq_mq_remove|function|void _priq_mq_remove(struct _priq_mq *pq, struct k_thread *thread)
 DECL|_priq_rb_add|function|void _priq_rb_add(struct _priq_rb *pq, struct k_thread *thread)
 DECL|_priq_rb_best|function|struct k_thread *_priq_rb_best(struct _priq_rb *pq)
-DECL|_priq_rb_lessthan|function|int _priq_rb_lessthan(struct rbnode *a, struct rbnode *b)
+DECL|_priq_rb_lessthan|function|bool _priq_rb_lessthan(struct rbnode *a, struct rbnode *b)
 DECL|_priq_rb_remove|function|void _priq_rb_remove(struct _priq_rb *pq, struct k_thread *thread)
 DECL|_priq_run_add|macro|_priq_run_add
 DECL|_priq_run_add|macro|_priq_run_add

@@ -27,7 +27,7 @@ DECL|k_object_access_all_grant|function|void k_object_access_all_grant(void *obj
 DECL|k_object_access_revoke|function|void k_object_access_revoke(void *object, struct k_thread *thread)
 DECL|k_object_free|function|void k_object_free(void *obj)
 DECL|kobj|member|struct _k_object kobj;
-DECL|node_lessthan|function|static int node_lessthan(struct rbnode *a, struct rbnode *b)
+DECL|node_lessthan|function|static bool node_lessthan(struct rbnode *a, struct rbnode *b)
 DECL|node_to_dyn_obj|function|static inline struct dyn_obj *node_to_dyn_obj(struct rbnode *node)
 DECL|node|member|struct rbnode node; /* must be immediately before data member */
 DECL|obj_list|member|sys_dnode_t obj_list;
