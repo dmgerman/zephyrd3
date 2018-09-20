@@ -7,6 +7,7 @@ DECL|inst2|variable|inst2
 DECL|instance_logging_showcase|function|static void instance_logging_showcase(void)
 DECL|log_demo_thread|function|void log_demo_thread(void *dummy1, void *dummy2, void *dummy3)
 DECL|log_source_id_get|function|static int log_source_id_get(const char *name)
+DECL|log_strdup_showcase|function|static void log_strdup_showcase(void)
 DECL|main|variable|main
 DECL|module_logging_showcase|function|static void module_logging_showcase(void)
 DECL|performance_showcase|function|static void performance_showcase(void)
