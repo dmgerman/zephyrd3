@@ -46,6 +46,7 @@ DECL|SMP_FLAG_TIMEOUT|enumerator|SMP_FLAG_TIMEOUT, /* if SMP timeout occurred */
 DECL|SMP_FLAG_USER|enumerator|SMP_FLAG_USER, /* if waiting for user input */
 DECL|SMP_NUM_FLAGS|enumerator|SMP_NUM_FLAGS,
 DECL|SMP_TIMEOUT|macro|SMP_TIMEOUT
+DECL|_smp_init|function|static int _smp_init(struct bt_smp *smp)
 DECL|aes_test|function|static int aes_test(const char *prefix, const u8_t *key, const u8_t *m, u16_t len, const u8_t *mac)
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
 DECL|allowed_cmds|member|atomic_t allowed_cmds;
@@ -186,7 +187,6 @@ DECL|smp_h7_test|function|static int smp_h7_test(void)
 DECL|smp_h7|function|static int smp_h7(const u8_t salt[16], const u8_t w[16], u8_t res[16])
 DECL|smp_ident_addr_info|function|static u8_t smp_ident_addr_info(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_ident_info|function|static u8_t smp_ident_info(struct bt_smp *smp, struct net_buf *buf)
-DECL|smp_init|function|static int smp_init(struct bt_smp *smp)
 DECL|smp_master_ident|function|static u8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_master_ident|function|static u8_t smp_master_ident(struct bt_smp *smp, struct net_buf *buf)
 DECL|smp_pairing_br_complete|function|static void smp_pairing_br_complete(struct bt_smp_br *smp, u8_t status)
