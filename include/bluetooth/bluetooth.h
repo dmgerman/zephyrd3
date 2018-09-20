@@ -22,10 +22,12 @@ DECL|BT_LE_SCAN_PASSIVE|macro|BT_LE_SCAN_PASSIVE
 DECL|ZEPHYR_INCLUDE_BLUETOOTH_BLUETOOTH_H_|macro|ZEPHYR_INCLUDE_BLUETOOTH_BLUETOOTH_H_
 DECL|_priv|member|u8_t _priv[4];
 DECL|addr|member|bt_addr_le_t addr;
+DECL|addr|member|bt_addr_le_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|addr|member|bt_addr_t addr;
 DECL|bt_addr_le_to_str|function|static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str, size_t len)
 DECL|bt_addr_to_str|function|static inline int bt_addr_to_str(const bt_addr_t *addr, char *str, size_t len)
+DECL|bt_bond_info|struct|struct bt_bond_info {
 DECL|bt_br_discovery_cb_t|typedef|typedef void bt_br_discovery_cb_t(struct bt_br_discovery_result *results,
 DECL|bt_br_discovery_param|struct|struct bt_br_discovery_param {
 DECL|bt_br_discovery_result|struct|struct bt_br_discovery_result {

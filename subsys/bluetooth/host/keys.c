@@ -1,4 +1,5 @@
 DECL|BT_DBG_ENABLED|macro|BT_DBG_ENABLED
+DECL|bt_foreach_bond|function|void bt_foreach_bond(u8_t id, void (*func)(const struct bt_bond_info *info, void *user_data), void *user_data)
 DECL|bt_keys_add_type|function|void bt_keys_add_type(struct bt_keys *keys, int type)
 DECL|bt_keys_clear_all|function|void bt_keys_clear_all(u8_t id)
 DECL|bt_keys_clear|function|void bt_keys_clear(struct bt_keys *keys)
