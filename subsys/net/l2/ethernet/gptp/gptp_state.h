@@ -146,7 +146,6 @@ DECL|last_precise_orig_ts|member|struct net_ptp_time last_precise_orig_ts;
 DECL|last_rate_ratio|member|double last_rate_ratio;
 DECL|last_rcvd_port_num|member|u16_t last_rcvd_port_num;
 DECL|last_src_port_id|member|struct gptp_port_identity last_src_port_id;
-DECL|last_sync_receipt_timeout_time|member|u64_t last_sync_receipt_timeout_time;
 DECL|last_upstream_tx_time|member|u64_t last_upstream_tx_time;
 DECL|lost_responses|member|u16_t lost_responses;
 DECL|master_priority|member|struct gptp_priority_vector master_priority;
