@@ -1,7 +1,6 @@
 DECL|ADC_CONTEXT_USES_KERNEL_TIMER|macro|ADC_CONTEXT_USES_KERNEL_TIMER
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|_nrf_saadc_burst_set|function|static void _nrf_saadc_burst_set(uint8_t channel, nrf_saadc_burst_t burst)
 DECL|adc_0|variable|adc_0
 DECL|adc_context_start_sampling|function|static void adc_context_start_sampling(struct adc_context *ctx)
 DECL|adc_context_update_buffer_pointer|function|static void adc_context_update_buffer_pointer(struct adc_context *ctx, bool repeat)
