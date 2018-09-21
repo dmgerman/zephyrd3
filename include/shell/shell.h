@@ -62,13 +62,13 @@ DECL|is_dynamic|member|bool is_dynamic;
 DECL|log_backend|member|const struct shell_log_backend *log_backend;
 DECL|log_lost_cnt|member|u32_t log_lost_cnt; /*!< Lost log counter.*/
 DECL|mode_delete|member|u32_t mode_delete :1; /*!< Operation mode of backspace key */
-DECL|name|member|const char *const name; /*!< Terminal name. */
 DECL|newline_char|member|const char newline_char;
 DECL|optname_help|member|const char *optname_help; /*!< Option help string.*/
 DECL|optname_short|member|const char *optname_short; /*!< Option short name.*/
 DECL|optname|member|const char *optname; /*!< Option long name.*/
 DECL|printf_buff|member|char printf_buff[CONFIG_SHELL_PRINTF_BUFF_SIZE];
 DECL|processing|member|u32_t processing :1; /*!< Shell is executing process function.*/
+DECL|prompt|member|char *const prompt; /*!< shell prompt. */
 DECL|read|member|int (*read)(const struct shell_transport *transport,
 DECL|receive_state|member|enum shell_receive_state receive_state;/*!< Escape sequence indicator.*/
 DECL|shell_cmd_entry|struct|struct shell_cmd_entry {

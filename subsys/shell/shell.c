@@ -44,6 +44,7 @@ DECL|shell_instance_uninit|function|static int shell_instance_uninit(const struc
 DECL|shell_log_process|function|static void shell_log_process(const struct shell *shell)
 DECL|shell_print_stream|function|void shell_print_stream(const void *user_ctx, const char *data,size_t data_len)
 DECL|shell_process|function|void shell_process(const struct shell *shell)
+DECL|shell_prompt_change|function|int shell_prompt_change(const struct shell *shell, char *prompt)
 DECL|shell_root_cmd_count|function|static inline u32_t shell_root_cmd_count(void)
 DECL|shell_root_cmd_get|function|static inline const struct shell_cmd_entry *shell_root_cmd_get(u32_t id)
 DECL|shell_start|function|int shell_start(const struct shell *shell)
