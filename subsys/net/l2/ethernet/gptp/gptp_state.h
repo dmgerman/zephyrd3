@@ -59,6 +59,21 @@ DECL|GPTP_TS_TERRESTRIAL_AUDIO|enumerator|GPTP_TS_TERRESTRIAL_AUDIO = 0x30,
 DECL|GPTS_TS_PTP|enumerator|GPTS_TS_PTP = 0x40,
 DECL|__GPTP_STATE_H|macro|__GPTP_STATE_H
 DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
+DECL|__packed|variable|__packed
 DECL|ann_current_utc_offset|member|s16_t ann_current_utc_offset;
 DECL|ann_expired|member|bool ann_expired;
 DECL|ann_flags|member|struct gptp_flags ann_flags;
