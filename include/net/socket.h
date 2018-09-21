@@ -3,6 +3,7 @@ DECL|EAI_BADFLAGS|macro|EAI_BADFLAGS
 DECL|EAI_FAIL|macro|EAI_FAIL
 DECL|EAI_NODATA|macro|EAI_NODATA
 DECL|EAI_NONAME|macro|EAI_NONAME
+DECL|EAI_SYSTEM|macro|EAI_SYSTEM
 DECL|MSG_DONTWAIT|macro|MSG_DONTWAIT
 DECL|MSG_PEEK|macro|MSG_PEEK
 DECL|POLLERR|macro|POLLERR
@@ -25,13 +26,22 @@ DECL|_ai_addr|member|struct sockaddr _ai_addr;
 DECL|_ai_canonname|member|char _ai_canonname[DNS_MAX_NAME_SIZE + 1];
 DECL|accept|function|static inline int accept(int sock, struct sockaddr *addr, socklen_t *addrlen)
 DECL|addrinfo|macro|addrinfo
+DECL|addrinfo|struct|struct addrinfo {
+DECL|ai_addrlen|member|socklen_t ai_addrlen;
 DECL|ai_addrlen|member|socklen_t ai_addrlen;
 DECL|ai_addr|member|struct sockaddr *ai_addr;
+DECL|ai_addr|member|struct sockaddr *ai_addr;
+DECL|ai_canonname|member|char *ai_canonname;
 DECL|ai_canonname|member|char *ai_canonname;
 DECL|ai_family|member|int ai_family;
+DECL|ai_family|member|int ai_family;
 DECL|ai_flags|member|int ai_flags;
+DECL|ai_flags|member|int ai_flags;
+DECL|ai_next|member|struct addrinfo *ai_next;
 DECL|ai_next|member|struct zsock_addrinfo *ai_next;
 DECL|ai_protocol|member|int ai_protocol;
+DECL|ai_protocol|member|int ai_protocol;
+DECL|ai_socktype|member|int ai_socktype;
 DECL|ai_socktype|member|int ai_socktype;
 DECL|bind|function|static inline int bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|close|function|static inline int close(int sock)

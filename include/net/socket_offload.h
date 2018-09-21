@@ -3,6 +3,8 @@ DECL|accept|function|static inline int accept(int sock, struct sockaddr *addr, s
 DECL|bind|function|static inline int bind(int sock, const struct sockaddr *addr, socklen_t addrlen)
 DECL|close|function|static inline int close(int sock)
 DECL|connect|function|static inline int connect(int sock, const struct sockaddr *addr, socklen_t addrlen)
+DECL|freeaddrinfo|function|static inline void freeaddrinfo(struct addrinfo *res)
+DECL|getaddrinfo|function|static inline int getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res)
 DECL|getsockopt|function|static inline int getsockopt(int sock, int level, int optname, void *optval, socklen_t *optlen)
 DECL|listen|function|static inline int listen(int sock, int backlog)
 DECL|poll|function|static inline int poll(struct pollfd *fds, int nfds, int timeout)

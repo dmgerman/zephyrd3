@@ -8,6 +8,8 @@ DECL|simplelink_accept|function|static int simplelink_accept(int sd, struct sock
 DECL|simplelink_bind|function|static int simplelink_bind(int sd, const struct sockaddr *addr, socklen_t addrlen)
 DECL|simplelink_close|function|static int simplelink_close(int sd)
 DECL|simplelink_connect|function|static int simplelink_connect(int sd, const struct sockaddr *addr, socklen_t addrlen)
+DECL|simplelink_freeaddrinfo|function|static void simplelink_freeaddrinfo(struct addrinfo *res)
+DECL|simplelink_getaddrinfo|function|static int simplelink_getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res)
 DECL|simplelink_getsockopt|function|static int simplelink_getsockopt(int sd, int level, int optname, void *optval, socklen_t *optlen)
 DECL|simplelink_listen|function|static int simplelink_listen(int sd, int backlog)
 DECL|simplelink_ops|variable|simplelink_ops

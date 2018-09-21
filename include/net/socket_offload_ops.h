@@ -3,6 +3,8 @@ DECL|accept|member|int (*accept)(int sock, struct sockaddr *addr, socklen_t *add
 DECL|bind|member|int (*bind)(int sock, const struct sockaddr *addr, socklen_t addrlen);
 DECL|close|member|int (*close)(int sock);
 DECL|connect|member|int (*connect)(int sock, const struct sockaddr *addr,
+DECL|freeaddrinfo|member|void (*freeaddrinfo)(struct addrinfo *res);
+DECL|getaddrinfo|member|int (*getaddrinfo)(const char *node, const char *service,
 DECL|getsockopt|member|int (*getsockopt)(int sock, int level, int optname, void *optval,
 DECL|listen|member|int (*listen)(int sock, int backlog);
 DECL|poll|member|int (*poll)(struct pollfd *fds, int nfds, int timeout);
