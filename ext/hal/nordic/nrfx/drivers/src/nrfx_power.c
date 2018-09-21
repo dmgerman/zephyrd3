@@ -2,6 +2,7 @@ DECL|m_initialized|macro|m_initialized
 DECL|m_pofwarn_handler|variable|m_pofwarn_handler
 DECL|m_sleepevt_handler|variable|m_sleepevt_handler
 DECL|m_usbevt_handler|variable|m_usbevt_handler
+DECL|nrfx_power_clock_irq_handler|function|void nrfx_power_clock_irq_handler(void)
 DECL|nrfx_power_init|function|nrfx_err_t nrfx_power_init(nrfx_power_config_t const * p_config)
 DECL|nrfx_power_irq_enabled|variable|nrfx_power_irq_enabled
 DECL|nrfx_power_irq_handler|function|void nrfx_power_irq_handler(void)

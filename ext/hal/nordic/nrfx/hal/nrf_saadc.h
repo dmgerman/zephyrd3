@@ -109,6 +109,7 @@ DECL|nrf_saadc_amount_get|function|__STATIC_INLINE uint16_t nrf_saadc_amount_get
 DECL|nrf_saadc_buffer_init|function|__STATIC_INLINE void nrf_saadc_buffer_init(nrf_saadc_value_t * p_buffer, uint32_t size)
 DECL|nrf_saadc_buffer_pointer_get|function|__STATIC_INLINE nrf_saadc_value_t * nrf_saadc_buffer_pointer_get(void)
 DECL|nrf_saadc_buffer_pointer_set|function|__STATIC_INLINE void nrf_saadc_buffer_pointer_set(nrf_saadc_value_t * p_buffer)
+DECL|nrf_saadc_burst_set|function|__STATIC_INLINE void nrf_saadc_burst_set(uint8_t channel, nrf_saadc_burst_t burst)
 DECL|nrf_saadc_burst_t|typedef|} nrf_saadc_burst_t;
 DECL|nrf_saadc_busy_check|function|__STATIC_INLINE bool nrf_saadc_busy_check(void)
 DECL|nrf_saadc_channel_config_t|typedef|} nrf_saadc_channel_config_t;

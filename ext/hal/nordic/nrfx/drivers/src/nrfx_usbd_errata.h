@@ -1,0 +1,14 @@
+DECL|NRFX_USBD_ERRATA_ENABLE|macro|NRFX_USBD_ERRATA_ENABLE
+DECL|NRFX_USBD_ERRATA_H__|macro|NRFX_USBD_ERRATA_H__
+DECL|nrfx_usbd_errata_104|function|static inline bool nrfx_usbd_errata_104(void)
+DECL|nrfx_usbd_errata_154|function|static inline bool nrfx_usbd_errata_154(void)
+DECL|nrfx_usbd_errata_166|function|static inline bool nrfx_usbd_errata_166(void)
+DECL|nrfx_usbd_errata_171|function|static inline bool nrfx_usbd_errata_171(void)
+DECL|nrfx_usbd_errata_187|function|static inline bool nrfx_usbd_errata_187(void)
+DECL|nrfx_usbd_errata_199|function|static inline bool nrfx_usbd_errata_199(void)
+DECL|nrfx_usbd_errata_200|function|static inline bool nrfx_usbd_errata_200(void)
+DECL|nrfx_usbd_errata_type_52840_eng_a|function|static inline bool nrfx_usbd_errata_type_52840_eng_a(void)
+DECL|nrfx_usbd_errata_type_52840_eng_b|function|static inline bool nrfx_usbd_errata_type_52840_eng_b(void)
+DECL|nrfx_usbd_errata_type_52840_eng_c|function|static inline bool nrfx_usbd_errata_type_52840_eng_c(void)
+DECL|nrfx_usbd_errata_type_52840_eng_d|function|static inline bool nrfx_usbd_errata_type_52840_eng_d(void)
+DECL|nrfx_usbd_errata_type_52840|function|static inline bool nrfx_usbd_errata_type_52840(void)

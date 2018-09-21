@@ -1,1 +1,0 @@
-DECL|nrfx_power_clock_irq_handler|function|void nrfx_power_clock_irq_handler(void)
