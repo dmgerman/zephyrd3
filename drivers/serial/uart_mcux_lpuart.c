@@ -9,8 +9,14 @@ DECL|mcux_lpuart_0_config|variable|mcux_lpuart_0_config
 DECL|mcux_lpuart_0_data|variable|mcux_lpuart_0_data
 DECL|mcux_lpuart_1_config|variable|mcux_lpuart_1_config
 DECL|mcux_lpuart_1_data|variable|mcux_lpuart_1_data
+DECL|mcux_lpuart_2_config|variable|mcux_lpuart_2_config
+DECL|mcux_lpuart_2_data|variable|mcux_lpuart_2_data
+DECL|mcux_lpuart_3_config|variable|mcux_lpuart_3_config
+DECL|mcux_lpuart_3_data|variable|mcux_lpuart_3_data
 DECL|mcux_lpuart_config_func_0|function|static void mcux_lpuart_config_func_0(struct device *dev)
 DECL|mcux_lpuart_config_func_1|function|static void mcux_lpuart_config_func_1(struct device *dev)
+DECL|mcux_lpuart_config_func_2|function|static void mcux_lpuart_config_func_2(struct device *dev)
+DECL|mcux_lpuart_config_func_3|function|static void mcux_lpuart_config_func_3(struct device *dev)
 DECL|mcux_lpuart_config|struct|struct mcux_lpuart_config {
 DECL|mcux_lpuart_data|struct|struct mcux_lpuart_data {
 DECL|mcux_lpuart_driver_api|variable|mcux_lpuart_driver_api
