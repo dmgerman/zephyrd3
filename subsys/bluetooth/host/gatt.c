@@ -118,6 +118,7 @@ DECL|read_central_addr_res|function|static ssize_t read_central_addr_res(struct 
 DECL|read_included_uuid_cb|function|static void read_included_uuid_cb(struct bt_conn *conn, u8_t err, const void *pdu, u16_t length, void *user_data)
 DECL|read_included_uuid|function|static int read_included_uuid(struct bt_conn *conn, struct bt_gatt_discover_params *params)
 DECL|read_name|function|static ssize_t read_name(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
+DECL|read_ppcp|function|static ssize_t read_ppcp(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|remove_subscriptions|function|static void remove_subscriptions(struct bt_conn *conn)
 DECL|sc_ccc_cfg_changed|function|static void sc_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 DECL|sc_ccc_cfg|variable|sc_ccc_cfg
