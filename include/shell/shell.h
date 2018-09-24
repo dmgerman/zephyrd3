@@ -1,6 +1,5 @@
 DECL|CONFIG_SHELL_CMD_BUFF_SIZE|macro|CONFIG_SHELL_CMD_BUFF_SIZE
 DECL|CONFIG_SHELL_PRINTF_BUFF_SIZE|macro|CONFIG_SHELL_PRINTF_BUFF_SIZE
-DECL|SHELL_CMD_NAME|macro|SHELL_CMD_NAME
 DECL|SHELL_CMD_REGISTER|macro|SHELL_CMD_REGISTER
 DECL|SHELL_CMD_ROOT_LVL|macro|SHELL_CMD_ROOT_LVL
 DECL|SHELL_CMD|macro|SHELL_CMD
@@ -91,7 +90,6 @@ DECL|shell_transport|struct|struct shell_transport {
 DECL|shell|struct|struct shell {
 DECL|show_help|member|u32_t show_help :1; /*!< Shows help if -h or --help option present.*/
 DECL|signals|member|struct k_poll_signal signals[SHELL_SIGNALS];
-DECL|sizeof|variable|sizeof
 DECL|stack|member|k_thread_stack_t *stack;
 DECL|state|member|enum shell_state state; /*!< Internal module state.*/
 DECL|stats|member|struct shell_stats *stats;
@@ -101,6 +99,7 @@ DECL|temp_buff|member|char temp_buff[CONFIG_SHELL_CMD_BUFF_SIZE];
 DECL|thread|member|struct k_thread *thread;
 DECL|tx_rdy|member|u32_t tx_rdy :1;
 DECL|uninit|member|int (*uninit)(const struct shell_transport *transport);
+DECL|union_cmd_entry|union|union union_cmd_entry {
 DECL|use_colors|member|u32_t use_colors :1; /*!< Controls colored syntax.*/
 DECL|u|member|} u;
 DECL|value|member|u32_t value;
