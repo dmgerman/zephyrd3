@@ -1,17 +1,17 @@
 DECL|CHAR_SIZE_MAX|macro|CHAR_SIZE_MAX
 DECL|MAX_DATA|macro|MAX_DATA
-DECL|cmd_gatt_discover|function|int cmd_gatt_discover(int argc, char *argv[])
-DECL|cmd_gatt_exchange_mtu|function|int cmd_gatt_exchange_mtu(int argc, char *argv[])
-DECL|cmd_gatt_mread|function|int cmd_gatt_mread(int argc, char *argv[])
-DECL|cmd_gatt_read|function|int cmd_gatt_read(int argc, char *argv[])
-DECL|cmd_gatt_register_test_svc|function|int cmd_gatt_register_test_svc(int argc, char *argv[])
-DECL|cmd_gatt_show_db|function|int cmd_gatt_show_db(int argc, char *argv[])
-DECL|cmd_gatt_subscribe|function|int cmd_gatt_subscribe(int argc, char *argv[])
-DECL|cmd_gatt_unregister_test_svc|function|int cmd_gatt_unregister_test_svc(int argc, char *argv[])
-DECL|cmd_gatt_unsubscribe|function|int cmd_gatt_unsubscribe(int argc, char *argv[])
-DECL|cmd_gatt_write_cmd_metrics|function|int cmd_gatt_write_cmd_metrics(int argc, char *argv[])
-DECL|cmd_gatt_write_without_rsp|function|int cmd_gatt_write_without_rsp(int argc, char *argv[])
-DECL|cmd_gatt_write|function|int cmd_gatt_write(int argc, char *argv[])
+DECL|cmd_gatt_discover|function|void cmd_gatt_discover(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_exchange_mtu|function|void cmd_gatt_exchange_mtu(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_mread|function|void cmd_gatt_mread(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_read|function|void cmd_gatt_read(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_register_test_svc|function|void cmd_gatt_register_test_svc(const struct shell *shell,size_t argc, char *argv[])
+DECL|cmd_gatt_show_db|function|void cmd_gatt_show_db(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_subscribe|function|void cmd_gatt_subscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_unregister_test_svc|function|void cmd_gatt_unregister_test_svc(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_unsubscribe|function|void cmd_gatt_unsubscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt_write_cmd_metrics|function|void cmd_gatt_write_cmd_metrics(const struct shell *shell,size_t argc, char *argv[])
+DECL|cmd_gatt_write_without_rsp|function|void cmd_gatt_write_without_rsp(const struct shell *shell,size_t argc, char *argv[])
+DECL|cmd_gatt_write|function|void cmd_gatt_write(const struct shell *shell, size_t argc, char *argv[])
 DECL|discover_func|function|static u8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|echo_enabled|variable|echo_enabled
@@ -25,7 +25,7 @@ DECL|met_svc_uuid|variable|met_svc_uuid
 DECL|met_svc|variable|met_svc
 DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
 DECL|print_attr|function|static u8_t print_attr(const struct bt_gatt_attr *attr, void *user_data)
-DECL|print_chrc_props|function|static void print_chrc_props(u8_t properties)
+DECL|print_chrc_props|function|static void print_chrc_props(const struct shell *shell, u8_t properties)
 DECL|read_func|function|static u8_t read_func(struct bt_conn *conn, u8_t err, struct bt_gatt_read_params *params, const void *data, u16_t length)
 DECL|read_long_vnd|function|static ssize_t read_long_vnd(struct bt_conn *conn, const struct bt_gatt_attr *attr, void *buf, u16_t len, u16_t offset)
 DECL|read_met|function|static ssize_t read_met(struct bt_conn *conn, const struct bt_gatt_attr *attr,void *buf, u16_t len, u16_t offset)
