@@ -68,6 +68,7 @@ DECL|cb|member|bt_conn_tx_cb_t cb;
 DECL|conn_auth|function|static int conn_auth(struct bt_conn *conn)
 DECL|conn_change|variable|conn_change
 DECL|conn_cleanup|function|static void conn_cleanup(struct bt_conn *conn)
+DECL|conn_le_update_timeout|function|static void conn_le_update_timeout(struct k_work *work)
 DECL|conn_mtu|function|static inline u16_t conn_mtu(struct bt_conn *conn)
 DECL|conn_new|function|static struct bt_conn *conn_new(void)
 DECL|conn_tx_cb|struct|struct conn_tx_cb {
@@ -76,7 +77,6 @@ DECL|conn_tx|variable|conn_tx
 DECL|conns|variable|conns
 DECL|create_frag|function|static struct net_buf *create_frag(struct bt_conn *conn, struct net_buf *buf)
 DECL|free_tx|variable|free_tx
-DECL|le_conn_update|function|static void le_conn_update(struct k_work *work)
 DECL|le_param_req|function|bool le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 DECL|notify_connected|function|static void notify_connected(struct bt_conn *conn)
 DECL|notify_disconnected|function|static void notify_disconnected(struct bt_conn *conn)
@@ -90,6 +90,7 @@ DECL|remove_pending_tx|function|static void remove_pending_tx(struct bt_conn *co
 DECL|sco_conn_new|function|static struct bt_conn *sco_conn_new(void)
 DECL|sco_conns|variable|sco_conns
 DECL|send_buf|function|static bool send_buf(struct bt_conn *conn, struct net_buf *buf)
+DECL|send_conn_le_param_update|function|static int send_conn_le_param_update(struct bt_conn *conn,const struct bt_le_conn_param *param)
 DECL|send_frag|function|static bool send_frag(struct bt_conn *conn, struct net_buf *buf, u8_t flags, bool always_consume)
 DECL|ssp_confirm_neg_reply|function|static int ssp_confirm_neg_reply(struct bt_conn *conn)
 DECL|ssp_confirm_reply|function|static int ssp_confirm_reply(struct bt_conn *conn)

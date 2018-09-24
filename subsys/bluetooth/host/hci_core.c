@@ -187,6 +187,7 @@ DECL|set_event_mask|function|static int set_event_mask(void)
 DECL|set_flow_control|function|static int set_flow_control(void)
 DECL|set_le_scan_enable|function|static int set_le_scan_enable(u8_t enable)
 DECL|set_random_address|function|static int set_random_address(const bt_addr_t *addr)
+DECL|slave_update_conn_param|function|static void slave_update_conn_param(struct bt_conn *conn)
 DECL|ssp_complete|function|static void ssp_complete(struct net_buf *buf)
 DECL|start_le_scan|function|static int start_le_scan(u8_t scan_type, u16_t interval, u16_t window)
 DECL|status|member|u8_t status;
@@ -194,7 +195,6 @@ DECL|synchronous_conn_complete|function|static void synchronous_conn_complete(st
 DECL|sync|member|struct k_sem *sync;
 DECL|tx_thread_data|variable|tx_thread_data
 DECL|type|member|u8_t type;
-DECL|update_conn_param|function|static void update_conn_param(struct bt_conn *conn)
 DECL|update_pending_id|function|static void update_pending_id(struct bt_keys *keys, void *data)
 DECL|update_sec_level_br|function|static void update_sec_level_br(struct bt_conn *conn)
 DECL|update_sec_level|function|static void update_sec_level(struct bt_conn *conn)
