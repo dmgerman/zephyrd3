@@ -15,10 +15,6 @@ DECL|cmd_discoverable|function|static void cmd_discoverable(const struct shell *
 DECL|cmd_discovery|function|static void cmd_discovery(const struct shell *shell, size_t argc, char *argv[])
 DECL|cmd_l2cap_register|function|static void cmd_l2cap_register(const struct shell *shell, size_t argc, char *argv[])
 DECL|cmd_oob|function|static void cmd_oob(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_rfcomm_connect|function|static void cmd_rfcomm_connect(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_rfcomm_disconnect|function|static void cmd_rfcomm_disconnect(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_rfcomm_register|function|static void cmd_rfcomm_register(const struct shell *shell,size_t argc, char *argv[])
-DECL|cmd_rfcomm_send|function|static void cmd_rfcomm_send(const struct shell *shell, size_t argc, char *argv[])
 DECL|cmd_sdp_find_record|function|static void cmd_sdp_find_record(const struct shell *shell,size_t argc, char *argv[])
 DECL|discov_a2src|variable|discov_a2src
 DECL|discov_hfpag|variable|discov_hfpag
@@ -31,14 +27,5 @@ DECL|l2cap_disconnected|function|static void l2cap_disconnected(struct bt_l2cap_
 DECL|l2cap_ops|variable|l2cap_ops
 DECL|l2cap_recv|function|static int l2cap_recv(struct bt_l2cap_chan *chan, struct net_buf *buf)
 DECL|pairing_conn|variable|pairing_conn
-DECL|rfcomm_accept|function|static int rfcomm_accept(struct bt_conn *conn, struct bt_rfcomm_dlc **dlc)
-DECL|rfcomm_connected|function|static void rfcomm_connected(struct bt_rfcomm_dlc *dlci)
-DECL|rfcomm_disconnected|function|static void rfcomm_disconnected(struct bt_rfcomm_dlc *dlci)
-DECL|rfcomm_dlc|variable|rfcomm_dlc
-DECL|rfcomm_ops|variable|rfcomm_ops
-DECL|rfcomm_recv|function|static void rfcomm_recv(struct bt_rfcomm_dlc *dlci, struct net_buf *buf)
-DECL|rfcomm_server|variable|rfcomm_server
 DECL|sdp_a2src_user|function|static u8_t sdp_a2src_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
 DECL|sdp_hfp_ag_user|function|static u8_t sdp_hfp_ag_user(struct bt_conn *conn, struct bt_sdp_client_result *result)
-DECL|spp_attrs|variable|spp_attrs
-DECL|spp_rec|variable|spp_rec
