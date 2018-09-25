@@ -83,7 +83,6 @@ DECL|esp|member|u32_t esp;
 DECL|esp|member|unsigned int esp;
 DECL|fnc|member|void *fnc;
 DECL|irq|member|unsigned int irq;
-DECL|k_tid_t|typedef|typedef struct k_thread *k_tid_t;
 DECL|nanoEsf|struct|typedef struct nanoEsf {
 DECL|nanoIsf|struct|typedef struct nanoIsf {
 DECL|priority|member|unsigned int priority;
