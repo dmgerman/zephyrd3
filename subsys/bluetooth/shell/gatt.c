@@ -1,17 +1,20 @@
 DECL|CHAR_SIZE_MAX|macro|CHAR_SIZE_MAX
+DECL|HELP_NONE|macro|HELP_NONE
 DECL|MAX_DATA|macro|MAX_DATA
-DECL|cmd_gatt_discover|function|void cmd_gatt_discover(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_exchange_mtu|function|void cmd_gatt_exchange_mtu(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_mread|function|void cmd_gatt_mread(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_read|function|void cmd_gatt_read(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_register_test_svc|function|void cmd_gatt_register_test_svc(const struct shell *shell,size_t argc, char *argv[])
-DECL|cmd_gatt_show_db|function|void cmd_gatt_show_db(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_subscribe|function|void cmd_gatt_subscribe(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_unregister_test_svc|function|void cmd_gatt_unregister_test_svc(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_unsubscribe|function|void cmd_gatt_unsubscribe(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt_write_cmd_metrics|function|void cmd_gatt_write_cmd_metrics(const struct shell *shell,size_t argc, char *argv[])
-DECL|cmd_gatt_write_without_rsp|function|void cmd_gatt_write_without_rsp(const struct shell *shell,size_t argc, char *argv[])
-DECL|cmd_gatt_write|function|void cmd_gatt_write(const struct shell *shell, size_t argc, char *argv[])
+DECL|SHELL_CREATE_STATIC_SUBCMD_SET|function|SHELL_CREATE_STATIC_SUBCMD_SET(gatt_cmds) {
+DECL|cmd_discover|function|static void cmd_discover(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_exchange_mtu|function|static void cmd_exchange_mtu(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt|function|static void cmd_gatt(const struct shell *shell, size_t argc, char **argv)
+DECL|cmd_metrics|function|static void cmd_metrics(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_mread|function|static void cmd_mread(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_read|function|static void cmd_read(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_register_test_svc|function|static void cmd_register_test_svc(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_show_db|function|static void cmd_show_db(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_subscribe|function|static void cmd_subscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_unregister_test_svc|function|static void cmd_unregister_test_svc(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_unsubscribe|function|static void cmd_unsubscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_write_without_rsp|function|static void cmd_write_without_rsp(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_write|function|static void cmd_write(const struct shell *shell, size_t argc, char *argv[])
 DECL|discover_func|function|static u8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|echo_enabled|variable|echo_enabled
