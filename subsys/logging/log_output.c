@@ -15,7 +15,7 @@ DECL|colors|variable|colors
 DECL|freq|variable|freq
 DECL|hexdump_line_print|function|static u32_t hexdump_line_print(struct log_msg *msg,const struct log_output *log_output, int prefix_offset, u32_t offset)
 DECL|hexdump_print|function|static void hexdump_print(struct log_msg *msg, const struct log_output *log_output, int prefix_offset)
-DECL|ids_print|function|static int ids_print(struct log_msg *msg, const struct log_output *log_output)
+DECL|ids_print|function|static int ids_print(struct log_msg *msg, const struct log_output *log_output, bool level_on)
 DECL|log_output_flush|function|void log_output_flush(const struct log_output *log_output)
 DECL|log_output_msg_process|function|void log_output_msg_process(const struct log_output *log_output, struct log_msg *msg, u32_t flags)
 DECL|log_output_timestamp_freq_set|function|void log_output_timestamp_freq_set(u32_t frequency)
