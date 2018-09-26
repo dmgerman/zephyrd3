@@ -132,6 +132,7 @@ DECL|packet_tx_head_len|member|u8_t packet_tx_head_len;
 DECL|packet_tx_head_offset|member|u8_t packet_tx_head_offset;
 DECL|pause_rx|member|u8_t pause_rx:1;
 DECL|pause_tx|member|u8_t pause_tx:1;
+DECL|pause_tx|member|u8_t pause_tx:1;
 DECL|pdu_data_q_tx|struct|struct pdu_data_q_tx {
 DECL|pdu_win_offset0|member|u16_t *pdu_win_offset0;
 DECL|pdu_win_offset|member|u16_t *pdu_win_offset;
