@@ -60,7 +60,7 @@ DECL|shell_transport_evt_handler|function|static void shell_transport_evt_handle
 DECL|shell_uninit|function|int shell_uninit(const struct shell *shell)
 DECL|shell_write|function|static void shell_write(const struct shell *shell, const void *data,size_t length)
 DECL|tab_item_print|function|static void tab_item_print(const struct shell *shell, const char *option, u16_t longest_option)
-DECL|tab_options_print|function|static void tab_options_print(const struct shell *shell, const struct shell_static_entry *cmd, size_t first, size_t cnt, u16_t longest)
+DECL|tab_options_print|function|static void tab_options_print(const struct shell *shell, const struct shell_static_entry *cmd, const char *str, size_t first, size_t cnt, u16_t longest)
 DECL|transport_buffer_flush|function|static inline void transport_buffer_flush(const struct shell *shell)
 DECL|vt100_bgcolor_set|function|static void vt100_bgcolor_set(const struct shell *shell, enum shell_vt100_color bgcolor)
 DECL|vt100_color_set|function|static void vt100_color_set(const struct shell *shell, enum shell_vt100_color color)
