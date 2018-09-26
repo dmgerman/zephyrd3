@@ -1,0 +1,5 @@
+DECL|tty_getchar|function|u8_t tty_getchar(struct tty_serial *tty)
+DECL|tty_init|function|void tty_init(struct tty_serial *tty, struct device *uart_dev, u8_t *rxbuf, u16_t rxbuf_sz, u8_t *txbuf, u16_t txbuf_sz)
+DECL|tty_irq_input_hook|function|static int tty_irq_input_hook(struct tty_serial *tty, u8_t c)
+DECL|tty_putchar|function|int tty_putchar(struct tty_serial *tty, u8_t c)
+DECL|tty_uart_isr|function|static void tty_uart_isr(void *user_data)
