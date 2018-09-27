@@ -99,10 +99,8 @@ DECL|htonl|macro|htonl
 DECL|htons|macro|htons
 DECL|id|member|u32_t id;
 DECL|id|member|u8_t id[2];
-DECL|in4_u|member|} in4_u;
 DECL|in6_addr|member|struct in6_addr in6_addr;
 DECL|in6_addr|struct|struct in6_addr {
-DECL|in6_u|member|} in6_u;
 DECL|in_addr|member|struct in_addr in_addr;
 DECL|in_addr|struct|struct in_addr {
 DECL|ip_proto|member|enum net_ip_protocol ip_proto;
@@ -171,13 +169,13 @@ DECL|proto|member|u8_t proto;
 DECL|remote_addr|member|struct net_addr *remote_addr;
 DECL|remote_port|member|u16_t remote_port;
 DECL|reserved|member|u8_t reserved;
-DECL|s4_addr16|macro|s4_addr16
-DECL|s4_addr32|macro|s4_addr32
-DECL|s4_addr|macro|s4_addr
-DECL|s6_addr16|macro|s6_addr16
-DECL|s6_addr32|macro|s6_addr32
-DECL|s6_addr|macro|s6_addr
-DECL|s_addr|macro|s_addr
+DECL|s4_addr16|member|u16_t s4_addr16[2]; /* In big endian */
+DECL|s4_addr32|member|u32_t s4_addr32[1]; /* In big endian */
+DECL|s4_addr|member|u8_t s4_addr[4];
+DECL|s6_addr16|member|u16_t s6_addr16[8]; /* In big endian */
+DECL|s6_addr32|member|u32_t s6_addr32[4]; /* In big endian */
+DECL|s6_addr|member|u8_t s6_addr[16];
+DECL|s_addr|member|u32_t s_addr; /* In big endian, for POSIX compatibility. */
 DECL|sa_family_t|typedef|typedef unsigned short int sa_family_t;
 DECL|sa_family|member|sa_family_t sa_family;
 DECL|seq|member|u8_t seq[4];
@@ -212,12 +210,6 @@ DECL|tcflow|member|u8_t tcflow;
 DECL|tos|member|u8_t tos;
 DECL|ttl|member|u8_t ttl;
 DECL|type|member|u8_t type;
-DECL|u4_addr16|member|u16_t u4_addr16[2]; /* In big endian */
-DECL|u4_addr32|member|u32_t u4_addr32[1]; /* In big endian */
-DECL|u4_addr8|member|u8_t u4_addr8[4];
-DECL|u6_addr16|member|u16_t u6_addr16[8]; /* In big endian */
-DECL|u6_addr32|member|u32_t u6_addr32[4]; /* In big endian */
-DECL|u6_addr8|member|u8_t u6_addr8[16];
 DECL|urg|member|u8_t urg[2];
 DECL|vhl|member|u8_t vhl;
 DECL|vtc|member|u8_t vtc;
