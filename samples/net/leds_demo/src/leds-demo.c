@@ -4,11 +4,10 @@ DECL|LED0_GPIO_CONTROLLER|macro|LED0_GPIO_CONTROLLER
 DECL|LED0_GPIO_PIN|macro|LED0_GPIO_PIN
 DECL|LED_GPIO_NAME|macro|LED_GPIO_NAME
 DECL|LED_PIN|macro|LED_PIN
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
 DECL|MY_COAP_PORT|macro|MY_COAP_PORT
 DECL|MY_IP6ADDR|macro|MY_IP6ADDR
-DECL|NET_LOG_ENABLED|macro|NET_LOG_ENABLED
-DECL|NET_SYS_LOG_LEVEL|macro|NET_SYS_LOG_LEVEL
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
+DECL|NET_LOG_LEVEL|macro|NET_LOG_LEVEL
 DECL|context|variable|context
 DECL|dummy_attributes|variable|dummy_attributes
 DECL|dummy_get|function|static int dummy_get(struct coap_resource *resource, struct coap_packet *request)
