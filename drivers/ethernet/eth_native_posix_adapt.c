@@ -1,6 +1,5 @@
 DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
 DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
-DECL|_DEFAULT_SOURCE|macro|_DEFAULT_SOURCE
 DECL|eth_clock_gettime|function|int eth_clock_gettime(struct net_ptp_time *time)
 DECL|eth_if_down|function|int eth_if_down(const char *if_name)
 DECL|eth_if_up|function|int eth_if_up(const char *if_name)
