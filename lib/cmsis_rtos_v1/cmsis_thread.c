@@ -1,3 +1,4 @@
+DECL|TOTAL_CMSIS_THREAD_PRIORITIES|macro|TOTAL_CMSIS_THREAD_PRIORITIES
 DECL|_is_thread_cmsis_inactive|function|static inline int _is_thread_cmsis_inactive(struct k_thread *thread)
 DECL|cmsis_to_zephyr_priority|function|static inline u32_t cmsis_to_zephyr_priority(s32_t c_prio)
 DECL|osThreadCreate|function|osThreadId osThreadCreate(const osThreadDef_t *thread_def, void *arg)
