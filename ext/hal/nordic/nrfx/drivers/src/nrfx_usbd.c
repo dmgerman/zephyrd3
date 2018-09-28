@@ -100,7 +100,7 @@ DECL|nrfx_usbd_ep_max_packet_size_set|function|void nrfx_usbd_ep_max_packet_size
 DECL|nrfx_usbd_ep_stall_check|function|bool nrfx_usbd_ep_stall_check(nrfx_usbd_ep_t ep)
 DECL|nrfx_usbd_ep_stall_clear|function|void nrfx_usbd_ep_stall_clear(nrfx_usbd_ep_t ep)
 DECL|nrfx_usbd_ep_stall|function|void nrfx_usbd_ep_stall(nrfx_usbd_ep_t ep)
-DECL|nrfx_usbd_ep_status_get|function|nrfx_err_t nrfx_usbd_ep_status_get(nrfx_usbd_ep_t ep, size_t * p_size)
+DECL|nrfx_usbd_ep_status_get|function|nrfx_usbd_ep_status_t nrfx_usbd_ep_status_get(nrfx_usbd_ep_t ep, size_t * p_size)
 DECL|nrfx_usbd_ep_to_endevent|function|static inline nrf_usbd_event_t nrfx_usbd_ep_to_endevent(nrfx_usbd_ep_t ep)
 DECL|nrfx_usbd_ep_to_int|function|static inline uint32_t nrfx_usbd_ep_to_int(nrfx_usbd_ep_t ep)
 DECL|nrfx_usbd_ep_transfer|function|nrfx_err_t nrfx_usbd_ep_transfer( nrfx_usbd_ep_t ep, nrfx_usbd_transfer_t const * p_transfer)

@@ -20,7 +20,8 @@ DECL|NRFX_USBD_EPOUT8|enumerator|NRFX_USBD_EPOUT8 = NRF_USBD_EPOUT(8), /**< Endp
 DECL|NRFX_USBD_EPOUT|macro|NRFX_USBD_EPOUT
 DECL|NRFX_USBD_EPSIZE|macro|NRFX_USBD_EPSIZE
 DECL|NRFX_USBD_EP_ABORTED|enumerator|NRFX_USBD_EP_ABORTED, /**< EP0 transfer can be aborted when new setup comes.
-DECL|NRFX_USBD_EP_OK|enumerator|NRFX_USBD_EP_OK, /**< No error */
+DECL|NRFX_USBD_EP_BUSY|enumerator|NRFX_USBD_EP_BUSY, /**< A transfer is in progress. */
+DECL|NRFX_USBD_EP_OK|enumerator|NRFX_USBD_EP_OK, /**< No error occured. */
 DECL|NRFX_USBD_EP_OVERLOAD|enumerator|NRFX_USBD_EP_OVERLOAD, /**< Received number of bytes cannot fit given buffer.
 DECL|NRFX_USBD_EP_WAITING|enumerator|NRFX_USBD_EP_WAITING, /**< Data received, no buffer prepared already - waiting for configured transfer. */
 DECL|NRFX_USBD_EVT_CNT|enumerator|NRFX_USBD_EVT_CNT /**< Number of defined events. */
