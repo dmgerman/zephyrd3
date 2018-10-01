@@ -15,7 +15,7 @@ DECL|bt_read_static_addr|function|uint8_t bt_read_static_addr(bt_addr_le_t *addr
 DECL|cmd_complete|function|static void *cmd_complete(struct net_buf **buf, u8_t plen)
 DECL|cmd_status|function|static struct net_buf *cmd_status(u8_t status)
 DECL|conn_count|variable|conn_count
-DECL|controller_cmd_handle|function|static int controller_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
+DECL|controller_cmd_handle|function|static int controller_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt, void **node_rx)
 DECL|ctrl_bb_cmd_handle|function|static int ctrl_bb_cmd_handle(u16_t ocf, struct net_buf *cmd, struct net_buf **evt)
 DECL|data_buf_overflow|function|static void data_buf_overflow(struct net_buf **buf)
 DECL|disconn_complete|function|static void disconn_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
@@ -35,7 +35,7 @@ DECL|evt_create|function|static void evt_create(struct net_buf *buf, u8_t evt, u
 DECL|hbuf_signal|variable|hbuf_signal
 DECL|hci_acl_encode|function|void hci_acl_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_acl_handle|function|int hci_acl_handle(struct net_buf *buf, struct net_buf **evt)
-DECL|hci_cmd_handle|function|struct net_buf *hci_cmd_handle(struct net_buf *cmd)
+DECL|hci_cmd_handle|function|struct net_buf *hci_cmd_handle(struct net_buf *cmd, void **node_rx)
 DECL|hci_evt_encode|function|void hci_evt_encode(struct radio_pdu_node_rx *node_rx, struct net_buf *buf)
 DECL|hci_get_class|function|s8_t hci_get_class(struct radio_pdu_node_rx *node_rx)
 DECL|hci_hbuf_acked|variable|hci_hbuf_acked
@@ -63,7 +63,7 @@ DECL|le_conn_param_req_reply|function|static void le_conn_param_req_reply(struct
 DECL|le_conn_param_req|function|static void le_conn_param_req(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_conn_update_complete|function|static void le_conn_update_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_conn_update|function|static void le_conn_update(struct net_buf *buf, struct net_buf **evt)
-DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(struct net_buf *buf, struct net_buf **evt)
+DECL|le_create_conn_cancel|function|static void le_create_conn_cancel(struct net_buf *buf, struct net_buf **evt, void **node_rx)
 DECL|le_create_connection|function|static void le_create_connection(struct net_buf *buf, struct net_buf **evt)
 DECL|le_data_len_change|function|static void le_data_len_change(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_encrypt|function|static void le_encrypt(struct net_buf *buf, struct net_buf **evt)
