@@ -71,7 +71,7 @@ DECL|prompt|member|char *const prompt; /*!< shell prompt. */
 DECL|read|member|int (*read)(const struct shell_transport *transport,
 DECL|receive_state|member|enum shell_receive_state receive_state;/*!< Escape sequence indicator.*/
 DECL|shell_cmd_entry|struct|struct shell_cmd_entry {
-DECL|shell_cmd_handler|typedef|typedef void (*shell_cmd_handler)(const struct shell *shell,
+DECL|shell_cmd_handler|typedef|typedef int (*shell_cmd_handler)(const struct shell *shell,
 DECL|shell_ctx|struct|struct shell_ctx {
 DECL|shell_dynamic_get|typedef|typedef void (*shell_dynamic_get)(size_t idx,
 DECL|shell_flags|struct|struct shell_flags {

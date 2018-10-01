@@ -7,15 +7,15 @@ DECL|br_device_found|function|static void br_device_found(const bt_addr_t *addr,
 DECL|br_discovery_complete|function|static void br_discovery_complete(struct bt_br_discovery_result *results, size_t count)
 DECL|br_discovery_results|variable|br_discovery_results
 DECL|br_server|variable|br_server
-DECL|cmd_auth_pincode|function|static void cmd_auth_pincode(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_br|function|static void cmd_br(const struct shell *shell, size_t argc, char **argv)
-DECL|cmd_connectable|function|static void cmd_connectable(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_connect|function|static void cmd_connect(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_discoverable|function|static void cmd_discoverable(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_discovery|function|static void cmd_discovery(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_l2cap_register|function|static void cmd_l2cap_register(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_oob|function|static void cmd_oob(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_sdp_find_record|function|static void cmd_sdp_find_record(const struct shell *shell,size_t argc, char *argv[])
+DECL|cmd_auth_pincode|function|static int cmd_auth_pincode(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_br|function|static int cmd_br(const struct shell *shell, size_t argc, char **argv)
+DECL|cmd_connectable|function|static int cmd_connectable(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_connect|function|static int cmd_connect(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_discoverable|function|static int cmd_discoverable(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_discovery|function|static int cmd_discovery(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_l2cap_register|function|static int cmd_l2cap_register(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_oob|function|static int cmd_oob(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_sdp_find_record|function|static int cmd_sdp_find_record(const struct shell *shell, size_t argc, char *argv[])
 DECL|discov_a2src|variable|discov_a2src
 DECL|discov_hfpag|variable|discov_hfpag
 DECL|discov|variable|discov

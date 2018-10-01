@@ -2,19 +2,19 @@ DECL|CHAR_SIZE_MAX|macro|CHAR_SIZE_MAX
 DECL|HELP_NONE|macro|HELP_NONE
 DECL|MAX_DATA|macro|MAX_DATA
 DECL|SHELL_CREATE_STATIC_SUBCMD_SET|function|SHELL_CREATE_STATIC_SUBCMD_SET(gatt_cmds) {
-DECL|cmd_discover|function|static void cmd_discover(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_exchange_mtu|function|static void cmd_exchange_mtu(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_gatt|function|static void cmd_gatt(const struct shell *shell, size_t argc, char **argv)
-DECL|cmd_metrics|function|static void cmd_metrics(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_mread|function|static void cmd_mread(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_read|function|static void cmd_read(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_register_test_svc|function|static void cmd_register_test_svc(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_show_db|function|static void cmd_show_db(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_subscribe|function|static void cmd_subscribe(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_unregister_test_svc|function|static void cmd_unregister_test_svc(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_unsubscribe|function|static void cmd_unsubscribe(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_write_without_rsp|function|static void cmd_write_without_rsp(const struct shell *shell, size_t argc, char *argv[])
-DECL|cmd_write|function|static void cmd_write(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_discover|function|static int cmd_discover(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_exchange_mtu|function|static int cmd_exchange_mtu(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_gatt|function|static int cmd_gatt(const struct shell *shell, size_t argc, char **argv)
+DECL|cmd_metrics|function|static int cmd_metrics(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_mread|function|static int cmd_mread(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_read|function|static int cmd_read(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_register_test_svc|function|static int cmd_register_test_svc(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_show_db|function|static int cmd_show_db(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_subscribe|function|static int cmd_subscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_unregister_test_svc|function|static int cmd_unregister_test_svc(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_unsubscribe|function|static int cmd_unsubscribe(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_write_without_rsp|function|static int cmd_write_without_rsp(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_write|function|static int cmd_write(const struct shell *shell, size_t argc, char *argv[])
 DECL|discover_func|function|static u8_t discover_func(struct bt_conn *conn, const struct bt_gatt_attr *attr, struct bt_gatt_discover_params *params)
 DECL|discover_params|variable|discover_params
 DECL|echo_enabled|variable|echo_enabled
@@ -26,7 +26,7 @@ DECL|met_char_uuid|variable|met_char_uuid
 DECL|met_char_value|variable|met_char_value
 DECL|met_svc_uuid|variable|met_svc_uuid
 DECL|met_svc|variable|met_svc
-DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn, struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
+DECL|notify_func|function|static u8_t notify_func(struct bt_conn *conn,struct bt_gatt_subscribe_params *params, const void *data, u16_t length)
 DECL|print_attr|function|static u8_t print_attr(const struct bt_gatt_attr *attr, void *user_data)
 DECL|print_chrc_props|function|static void print_chrc_props(const struct shell *shell, u8_t properties)
 DECL|read_func|function|static u8_t read_func(struct bt_conn *conn, u8_t err, struct bt_gatt_read_params *params, const void *data, u16_t length)
