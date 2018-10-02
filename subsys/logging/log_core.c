@@ -34,7 +34,7 @@ DECL|log_source_name_get|function|const char *log_source_name_get(u32_t domain_i
 DECL|log_src_cnt_get|function|u32_t log_src_cnt_get(u32_t domain_id)
 DECL|log_strdup_fail_msg|variable|log_strdup_fail_msg
 DECL|log_strdup_pool|variable|log_strdup_pool
-DECL|log_strdup|function|char *log_strdup(char *str)
+DECL|log_strdup|function|char *log_strdup(const char *str)
 DECL|log_thread_set|function|void log_thread_set(k_tid_t process_tid)
 DECL|max_filter_get|function|static u32_t max_filter_get(u32_t filters)
 DECL|msg_filter_check|function|static bool msg_filter_check(struct log_backend const *backend, struct log_msg *msg)
