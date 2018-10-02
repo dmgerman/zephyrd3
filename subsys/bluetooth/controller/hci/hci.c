@@ -57,7 +57,7 @@ DECL|le_advertising_report|function|static void le_advertising_report(struct pdu
 DECL|le_chan_sel_algo|function|static void le_chan_sel_algo(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_clear_rl|function|static void le_clear_rl(struct net_buf *buf, struct net_buf **evt)
 DECL|le_clear_wl|function|static void le_clear_wl(struct net_buf *buf, struct net_buf **evt)
-DECL|le_conn_complete|function|static void le_conn_complete(u8_t status, struct radio_le_conn_cmplt *radio_cc, u16_t handle, struct net_buf *buf)
+DECL|le_conn_complete|function|static void le_conn_complete(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
 DECL|le_conn_param_req_neg_reply|function|static void le_conn_param_req_neg_reply(struct net_buf *buf,struct net_buf **evt)
 DECL|le_conn_param_req_reply|function|static void le_conn_param_req_reply(struct net_buf *buf, struct net_buf **evt)
 DECL|le_conn_param_req|function|static void le_conn_param_req(struct pdu_data *pdu_data, u16_t handle, struct net_buf *buf)
