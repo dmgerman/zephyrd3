@@ -35,6 +35,7 @@ DECL|shell_cmd_buffer_clear|function|static void shell_cmd_buffer_clear(const st
 DECL|shell_cmd_precheck|function|bool shell_cmd_precheck(const struct shell *shell,bool arg_cnt_ok, const struct shell_getopt_option *opt, size_t opt_len)
 DECL|shell_current_command_erase|function|static void shell_current_command_erase(const struct shell *shell)
 DECL|shell_current_command_print|function|static void shell_current_command_print(const struct shell *shell)
+DECL|shell_execute_cmd|function|int shell_execute_cmd(const struct shell *shell, const char *cmd)
 DECL|shell_execute|function|static int shell_execute(const struct shell *shell)
 DECL|shell_fprintf|function|void shell_fprintf(const struct shell *shell, enum shell_vt100_color color, const char *p_fmt, ...)
 DECL|shell_help_print|function|void shell_help_print(const struct shell *shell, const struct shell_getopt_option *opt, size_t opt_len)
