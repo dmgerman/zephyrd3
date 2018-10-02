@@ -61,7 +61,6 @@ DECL|is_dynamic|member|bool is_dynamic;
 DECL|log_backend|member|const struct shell_log_backend *log_backend;
 DECL|log_lost_cnt|member|u32_t log_lost_cnt; /*!< Lost log counter.*/
 DECL|mode_delete|member|u32_t mode_delete :1; /*!< Operation mode of backspace key */
-DECL|newline_char|member|const char newline_char;
 DECL|optname_help|member|const char *optname_help; /*!< Option help string.*/
 DECL|optname_short|member|const char *optname_short; /*!< Option short name.*/
 DECL|optname|member|const char *optname; /*!< Option long name.*/
