@@ -14,8 +14,8 @@ DECL|SCAN_INTERVAL|macro|SCAN_INTERVAL
 DECL|SCAN_OWN_ADDR_TYPE|macro|SCAN_OWN_ADDR_TYPE
 DECL|SCAN_REQ_NOT|macro|SCAN_REQ_NOT
 DECL|SCAN_WINDOW|macro|SCAN_WINDOW
-DECL|cmd_advx|function|int cmd_advx(int argc, char *argv[])
-DECL|cmd_scanx|function|int cmd_scanx(int argc, char *argv[])
-DECL|cmd_test_end|function|int cmd_test_end(int argc, char *argv[])
-DECL|cmd_test_rx|function|int cmd_test_rx(int argc, char *argv[])
-DECL|cmd_test_tx|function|int cmd_test_tx(int argc, char *argv[])
+DECL|cmd_advx|function|int cmd_advx(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_scanx|function|int cmd_scanx(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_test_end|function|int cmd_test_end(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_test_rx|function|int cmd_test_rx(const struct shell *shell, size_t argc, char *argv[])
+DECL|cmd_test_tx|function|int cmd_test_tx(const struct shell *shell, size_t argc, char *argv[])
