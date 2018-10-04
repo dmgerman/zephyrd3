@@ -1,9 +1,3 @@
-DECL|LED0_GPIO_PIN|macro|LED0_GPIO_PIN
-DECL|LED0_GPIO_PORT|macro|LED0_GPIO_PORT
-DECL|LED1_GPIO_PIN|macro|LED1_GPIO_PIN
-DECL|LED1_GPIO_PORT|macro|LED1_GPIO_PORT
-DECL|LED2_GPIO_PIN|macro|LED2_GPIO_PIN
-DECL|LED2_GPIO_PORT|macro|LED2_GPIO_PORT
 DECL|__INC_BOARD_H|macro|__INC_BOARD_H
 DECL|uart_sifive_port_0_clk_freq|macro|uart_sifive_port_0_clk_freq
 DECL|uart_sifive_port_1_clk_freq|macro|uart_sifive_port_1_clk_freq
