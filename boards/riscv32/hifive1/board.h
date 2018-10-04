@@ -1,3 +1,1 @@
 DECL|__INC_BOARD_H|macro|__INC_BOARD_H
-DECL|uart_sifive_port_0_clk_freq|macro|uart_sifive_port_0_clk_freq
-DECL|uart_sifive_port_1_clk_freq|macro|uart_sifive_port_1_clk_freq
