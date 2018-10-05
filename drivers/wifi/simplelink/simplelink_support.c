@@ -4,6 +4,9 @@ DECL|CHANNEL_MASK_ALL|macro|CHANNEL_MASK_ALL
 DECL|CLR_STATUS_BIT|macro|CLR_STATUS_BIT
 DECL|DEVICE_ERROR|macro|DEVICE_ERROR
 DECL|GET_STATUS_BIT|macro|GET_STATUS_BIT
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|NETAPP_ERROR|macro|NETAPP_ERROR
 DECL|RSSI_TH_MAX|macro|RSSI_TH_MAX
 DECL|SET_STATUS_BIT|macro|SET_STATUS_BIT
@@ -13,8 +16,6 @@ DECL|STATUS_BIT_IPV6_ACQUIRED|enumerator|STATUS_BIT_IPV6_ACQUIRED,
 DECL|STATUS_BIT_IP_ACQUIRED|enumerator|STATUS_BIT_IP_ACQUIRED,
 DECL|STATUS_BIT_IP_LEASED|enumerator|STATUS_BIT_IP_LEASED,
 DECL|STATUS_BIT_NWP_INIT|enumerator|STATUS_BIT_NWP_INIT = 0,
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|SimpleLinkFatalErrorEventHandler|function|void SimpleLinkFatalErrorEventHandler(SlDeviceFatal_t *fatal_err_event)
 DECL|SimpleLinkGeneralEventHandler|function|void SimpleLinkGeneralEventHandler(SlDeviceEvent_t *dev_event)
 DECL|SimpleLinkHttpServerEventHandler|function|void SimpleLinkHttpServerEventHandler(SlNetAppHttpServerEvent_t *http_event, SlNetAppHttpServerResponse_t *http_resp)

@@ -1,6 +1,7 @@
+DECL|LOG_LEVEL|macro|LOG_LEVEL
+DECL|LOG_MODULE_NAME|macro|LOG_MODULE_NAME
+DECL|LOG_MODULE_NAME|variable|LOG_MODULE_NAME
 DECL|SCAN_RETRY_DELAY|macro|SCAN_RETRY_DELAY
-DECL|SYS_LOG_DOMAIN|macro|SYS_LOG_DOMAIN
-DECL|SYS_LOG_LEVEL|macro|SYS_LOG_LEVEL
 DECL|cb|member|scan_result_cb_t cb;
 DECL|iface|member|struct net_if *iface;
 DECL|mac|member|unsigned char mac[6];
